@@ -1,13 +1,12 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreStrings.element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ELEMENT_MARKER extends StObject {
   
-  var marker: element
+  var marker: "element"
 }
 object ELEMENT_MARKER {
   
@@ -18,6 +17,6 @@ object ELEMENT_MARKER {
   
   extension [Self <: ELEMENT_MARKER](x: Self) {
     
-    inline def setMarker(value: element): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: "element"): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
   }
 }

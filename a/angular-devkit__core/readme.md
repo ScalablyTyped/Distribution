@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular-devkit__core
 
-Typings are for version 14.2.6
+Typings are for version 14.2.9
 
 ## Library description:
 Angular DevKit - Core Utility Library
@@ -10,9 +10,9 @@ Angular DevKit - Core Utility Library
 | ------------------ | :-------------: |
 | Full name          | @angular-devkit/core |
 | Keywords           | angular, Angular CLI, devkit, sdk, Angular DevKit, core |
-| # releases         | 217 |
+| # releases         | 216 |
 | # dependents       | 0.0 |
-| # downloads        | 2.8321548333333332E7 |
+| # downloads        | 2.8536961E7 |
 | # stars            | ? |
 
 ## Links

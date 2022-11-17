@@ -1,11 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`background-tab`
-import typings.electron.electronStrings.`foreground-tab`
-import typings.electron.electronStrings.`new-window`
-import typings.electron.electronStrings.`save-to-disk`
-import typings.electron.electronStrings.default
-import typings.electron.electronStrings.other
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +10,7 @@ trait HandlerDetails extends StObject {
     * Can be `default`, `foreground-tab`, `background-tab`, `new-window`,
     * `save-to-disk` or `other`.
     */
-  var disposition: default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other
+  var disposition: "default" | "foreground-tab" | "background-tab" | "new-window" | "save-to-disk" | "other"
   
   /**
     * Comma separated list of window features provided to `window.open()`.
@@ -52,7 +46,7 @@ trait HandlerDetails extends StObject {
 object HandlerDetails {
   
   inline def apply(
-    disposition: default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other,
+    disposition: "default" | "foreground-tab" | "background-tab" | "new-window" | "save-to-disk" | "other",
     features: String,
     frameName: String,
     referrer: Referrer,
@@ -64,7 +58,7 @@ object HandlerDetails {
   
   extension [Self <: HandlerDetails](x: Self) {
     
-    inline def setDisposition(value: default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
+    inline def setDisposition(value: "default" | "foreground-tab" | "background-tab" | "new-window" | "save-to-disk" | "other"): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
     
     inline def setFeatures(value: String): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

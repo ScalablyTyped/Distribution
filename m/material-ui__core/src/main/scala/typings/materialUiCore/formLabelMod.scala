@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.formLabelFormLabelMod.FormLabelTypeMap
-import typings.materialUiCore.materialUiCoreStrings.label
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,10 +23,10 @@ object formLabelMod extends Shortcut {
     */
   @JSImport("@material-ui/core/FormLabel", JSImport.Default)
   @js.native
-  val default: OverridableComponent[FormLabelTypeMap[js.Object, label]] = js.native
+  val default: OverridableComponent[FormLabelTypeMap[js.Object, "label"]] = js.native
   
-  type _To = OverridableComponent[FormLabelTypeMap[js.Object, label]]
+  type _To = OverridableComponent[FormLabelTypeMap[js.Object, "label"]]
   
   /* This means you don't have to write `default`, but can instead just say `formLabelMod.foo` */
-  override def _to: OverridableComponent[FormLabelTypeMap[js.Object, label]] = default
+  override def _to: OverridableComponent[FormLabelTypeMap[js.Object, "label"]] = default
 }

@@ -32,30 +32,6 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNative.mod.ViewabilityConfig
 import typings.reactNative.mod.ViewabilityConfigCallbackPair
 import typings.reactNative.mod.ViewabilityConfigCallbackPairs
-import typings.styledComponents.styledComponentsStrings.`box-none`
-import typings.styledComponents.styledComponentsStrings.`box-only`
-import typings.styledComponents.styledComponentsStrings.`no-hide-descendants`
-import typings.styledComponents.styledComponentsStrings.`on-drag`
-import typings.styledComponents.styledComponentsStrings.always
-import typings.styledComponents.styledComponentsStrings.assertive
-import typings.styledComponents.styledComponentsStrings.auto
-import typings.styledComponents.styledComponentsStrings.automatic
-import typings.styledComponents.styledComponentsStrings.black
-import typings.styledComponents.styledComponentsStrings.center
-import typings.styledComponents.styledComponentsStrings.default
-import typings.styledComponents.styledComponentsStrings.end
-import typings.styledComponents.styledComponentsStrings.fast
-import typings.styledComponents.styledComponentsStrings.handled
-import typings.styledComponents.styledComponentsStrings.interactive
-import typings.styledComponents.styledComponentsStrings.never
-import typings.styledComponents.styledComponentsStrings.no
-import typings.styledComponents.styledComponentsStrings.none
-import typings.styledComponents.styledComponentsStrings.normal
-import typings.styledComponents.styledComponentsStrings.polite
-import typings.styledComponents.styledComponentsStrings.scrollableAxes
-import typings.styledComponents.styledComponentsStrings.start
-import typings.styledComponents.styledComponentsStrings.white
-import typings.styledComponents.styledComponentsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,7 +71,7 @@ trait ReadonlySectionListPropsa extends StObject {
   
   val accessibilityLanguage: js.UndefOr[String] = js.undefined
   
-  val accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+  val accessibilityLiveRegion: js.UndefOr["none" | "polite" | "assertive"] = js.undefined
   
   val accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
@@ -133,7 +109,7 @@ trait ReadonlySectionListPropsa extends StObject {
   
   val contentInset: js.UndefOr[Insets] = js.undefined
   
-  val contentInsetAdjustmentBehavior: js.UndefOr[automatic | scrollableAxes | never | always] = js.undefined
+  val contentInsetAdjustmentBehavior: js.UndefOr["automatic" | "scrollableAxes" | "never" | "always"] = js.undefined
   
   val contentOffset: js.UndefOr[PointProp] = js.undefined
   
@@ -141,7 +117,7 @@ trait ReadonlySectionListPropsa extends StObject {
   
   val debug: js.UndefOr[Boolean] = js.undefined
   
-  val decelerationRate: js.UndefOr[fast | normal | Double] = js.undefined
+  val decelerationRate: js.UndefOr["fast" | "normal" | Double] = js.undefined
   
   val directionalLockEnabled: js.UndefOr[Boolean] = js.undefined
   
@@ -188,9 +164,9 @@ trait ReadonlySectionListPropsa extends StObject {
   
   val horizontal: js.UndefOr[Boolean | Null] = js.undefined
   
-  val importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+  val importantForAccessibility: js.UndefOr["auto" | "yes" | "no" | "no-hide-descendants"] = js.undefined
   
-  val indicatorStyle: js.UndefOr[default | black | white] = js.undefined
+  val indicatorStyle: js.UndefOr["default" | "black" | "white"] = js.undefined
   
   val initialNumToRender: js.UndefOr[Double] = js.undefined
   
@@ -210,9 +186,9 @@ trait ReadonlySectionListPropsa extends StObject {
     ]
   ] = js.undefined
   
-  val keyboardDismissMode: js.UndefOr[none | interactive | `on-drag`] = js.undefined
+  val keyboardDismissMode: js.UndefOr["none" | "interactive" | "on-drag"] = js.undefined
   
-  val keyboardShouldPersistTaps: js.UndefOr[Boolean | always | never | handled] = js.undefined
+  val keyboardShouldPersistTaps: js.UndefOr[Boolean | "always" | "never" | "handled"] = js.undefined
   
   val legacyImplementation: js.UndefOr[Boolean] = js.undefined
   
@@ -326,7 +302,7 @@ trait ReadonlySectionListPropsa extends StObject {
   
   val onViewableItemsChanged: js.UndefOr[(js.Function1[/* info */ Changed, Unit]) | Null] = js.undefined
   
-  val overScrollMode: js.UndefOr[auto | always | never] = js.undefined
+  val overScrollMode: js.UndefOr["auto" | "always" | "never"] = js.undefined
   
   val pagingEnabled: js.UndefOr[Boolean] = js.undefined
   
@@ -334,7 +310,7 @@ trait ReadonlySectionListPropsa extends StObject {
   
   val pinchGestureEnabled: js.UndefOr[Boolean] = js.undefined
   
-  val pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
+  val pointerEvents: js.UndefOr["box-none" | "none" | "box-only" | "auto"] = js.undefined
   
   val progressViewOffset: js.UndefOr[Double] = js.undefined
   
@@ -400,7 +376,7 @@ trait ReadonlySectionListPropsa extends StObject {
   
   val showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.undefined
   
-  val snapToAlignment: js.UndefOr[start | center | end] = js.undefined
+  val snapToAlignment: js.UndefOr["start" | "center" | "end"] = js.undefined
   
   val snapToEnd: js.UndefOr[Boolean] = js.undefined
   
@@ -488,7 +464,7 @@ object ReadonlySectionListPropsa {
     
     inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
     
-    inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLiveRegion(value: "none" | "polite" | "assertive"): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
     
@@ -568,7 +544,7 @@ object ReadonlySectionListPropsa {
     
     inline def setContentInset(value: Insets): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
     
-    inline def setContentInsetAdjustmentBehavior(value: automatic | scrollableAxes | never | always): Self = StObject.set(x, "contentInsetAdjustmentBehavior", value.asInstanceOf[js.Any])
+    inline def setContentInsetAdjustmentBehavior(value: "automatic" | "scrollableAxes" | "never" | "always"): Self = StObject.set(x, "contentInsetAdjustmentBehavior", value.asInstanceOf[js.Any])
     
     inline def setContentInsetAdjustmentBehaviorUndefined: Self = StObject.set(x, "contentInsetAdjustmentBehavior", js.undefined)
     
@@ -586,7 +562,7 @@ object ReadonlySectionListPropsa {
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    inline def setDecelerationRate(value: fast | normal | Double): Self = StObject.set(x, "decelerationRate", value.asInstanceOf[js.Any])
+    inline def setDecelerationRate(value: "fast" | "normal" | Double): Self = StObject.set(x, "decelerationRate", value.asInstanceOf[js.Any])
     
     inline def setDecelerationRateUndefined: Self = StObject.set(x, "decelerationRate", js.undefined)
     
@@ -657,11 +633,11 @@ object ReadonlySectionListPropsa {
     
     inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
-    inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+    inline def setImportantForAccessibility(value: "auto" | "yes" | "no" | "no-hide-descendants"): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
-    inline def setIndicatorStyle(value: default | black | white): Self = StObject.set(x, "indicatorStyle", value.asInstanceOf[js.Any])
+    inline def setIndicatorStyle(value: "default" | "black" | "white"): Self = StObject.set(x, "indicatorStyle", value.asInstanceOf[js.Any])
     
     inline def setIndicatorStyleUndefined: Self = StObject.set(x, "indicatorStyle", js.undefined)
     
@@ -701,11 +677,11 @@ object ReadonlySectionListPropsa {
     
     inline def setKeyExtractorUndefined: Self = StObject.set(x, "keyExtractor", js.undefined)
     
-    inline def setKeyboardDismissMode(value: none | interactive | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+    inline def setKeyboardDismissMode(value: "none" | "interactive" | "on-drag"): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
     
     inline def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
     
-    inline def setKeyboardShouldPersistTaps(value: Boolean | always | never | handled): Self = StObject.set(x, "keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
+    inline def setKeyboardShouldPersistTaps(value: Boolean | "always" | "never" | "handled"): Self = StObject.set(x, "keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
     
     inline def setKeyboardShouldPersistTapsUndefined: Self = StObject.set(x, "keyboardShouldPersistTaps", js.undefined)
     
@@ -973,7 +949,7 @@ object ReadonlySectionListPropsa {
     
     inline def setOnViewableItemsChangedUndefined: Self = StObject.set(x, "onViewableItemsChanged", js.undefined)
     
-    inline def setOverScrollMode(value: auto | always | never): Self = StObject.set(x, "overScrollMode", value.asInstanceOf[js.Any])
+    inline def setOverScrollMode(value: "auto" | "always" | "never"): Self = StObject.set(x, "overScrollMode", value.asInstanceOf[js.Any])
     
     inline def setOverScrollModeUndefined: Self = StObject.set(x, "overScrollMode", js.undefined)
     
@@ -989,7 +965,7 @@ object ReadonlySectionListPropsa {
     
     inline def setPinchGestureEnabledUndefined: Self = StObject.set(x, "pinchGestureEnabled", js.undefined)
     
-    inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    inline def setPointerEvents(value: "box-none" | "none" | "box-only" | "auto"): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     
@@ -1104,7 +1080,7 @@ object ReadonlySectionListPropsa {
     
     inline def setShowsVerticalScrollIndicatorUndefined: Self = StObject.set(x, "showsVerticalScrollIndicator", js.undefined)
     
-    inline def setSnapToAlignment(value: start | center | end): Self = StObject.set(x, "snapToAlignment", value.asInstanceOf[js.Any])
+    inline def setSnapToAlignment(value: "start" | "center" | "end"): Self = StObject.set(x, "snapToAlignment", value.asInstanceOf[js.Any])
     
     inline def setSnapToAlignmentUndefined: Self = StObject.set(x, "snapToAlignment", js.undefined)
     

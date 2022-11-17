@@ -5,8 +5,6 @@ import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.Renderer2
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
-import typings.angularForms.angularFormsStrings.option
 import typings.angularForms.anon.HostOptional
 import typings.angularForms.anon.NgValue
 import org.scalablytyped.runtime.StObject
@@ -64,24 +62,26 @@ object NgSelectOption {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     NgSelectOption, 
-    option, 
+    "option", 
     scala.Nothing, 
     NgValue, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       NgSelectOption, 
-      option, 
+      "option", 
       scala.Nothing, 
       NgValue, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `false`
+      false, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

@@ -1,6 +1,5 @@
 package typings.zoneJs
 
-import typings.zoneJs.zoneJsStrings.eventTask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait EventTask
      with Task {
   
   @JSName("type")
-  var type_EventTask: eventTask
+  var type_EventTask: "eventTask"
 }
 object EventTask {
   
@@ -30,6 +29,6 @@ object EventTask {
   
   extension [Self <: EventTask](x: Self) {
     
-    inline def setType(value: eventTask): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "eventTask"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

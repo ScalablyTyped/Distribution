@@ -3,7 +3,6 @@ package typings.typescript.anon
 import typings.typescript.mod.CompletionEntry
 import typings.typescript.mod.CompletionInfoFlags
 import typings.typescript.mod.TextSpan
-import typings.typescript.typescriptBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ trait WithMetadataCompletionInf extends StObject {
   /**
     * Indicates to client to continue requesting completions on subsequent keystrokes.
     */
-  var isIncomplete: js.UndefOr[`true`] = js.undefined
+  var isIncomplete: js.UndefOr[true] = js.undefined
   
   var isMemberCompletion: Boolean
   
@@ -64,7 +63,7 @@ object WithMetadataCompletionInf {
     
     inline def setIsGlobalCompletion(value: Boolean): Self = StObject.set(x, "isGlobalCompletion", value.asInstanceOf[js.Any])
     
-    inline def setIsIncomplete(value: `true`): Self = StObject.set(x, "isIncomplete", value.asInstanceOf[js.Any])
+    inline def setIsIncomplete(value: true): Self = StObject.set(x, "isIncomplete", value.asInstanceOf[js.Any])
     
     inline def setIsIncompleteUndefined: Self = StObject.set(x, "isIncomplete", js.undefined)
     

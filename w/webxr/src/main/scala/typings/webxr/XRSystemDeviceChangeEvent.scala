@@ -1,7 +1,6 @@
 package typings.webxr
 
 import typings.std.Event
-import typings.webxr.webxrStrings.devicechange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,5 +11,5 @@ trait XRSystemDeviceChangeEvent
      with Event {
   
   @JSName("type")
-  var type_XRSystemDeviceChangeEvent: devicechange = js.native
+  var type_XRSystemDeviceChangeEvent: "devicechange" = js.native
 }

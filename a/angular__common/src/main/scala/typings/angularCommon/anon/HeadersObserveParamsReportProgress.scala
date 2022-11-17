@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCommon.angularCommonStrings.response
-import typings.angularCommon.angularCommonStrings.text
 import typings.angularCommon.httpMod.HttpContext
 import typings.angularCommon.httpMod.HttpHeaders
 import typings.angularCommon.httpMod.HttpParams
@@ -18,7 +16,7 @@ trait HeadersObserveParamsReportProgress extends StObject {
   
   var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.undefined
   
-  var observe: response
+  var observe: "response"
   
   var params: js.UndefOr[
     HttpParams | (StringDictionary[String | Double | Boolean | (js.Array[String | Double | Boolean])])
@@ -26,7 +24,7 @@ trait HeadersObserveParamsReportProgress extends StObject {
   
   var reportProgress: js.UndefOr[Boolean] = js.undefined
   
-  var responseType: text
+  var responseType: "text"
   
   var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
@@ -53,7 +51,7 @@ object HeadersObserveParamsReportProgress {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setObserve(value: response): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
+    inline def setObserve(value: "response"): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
     
     inline def setParams(
       value: HttpParams | (StringDictionary[String | Double | Boolean | (js.Array[String | Double | Boolean])])
@@ -65,7 +63,7 @@ object HeadersObserveParamsReportProgress {
     
     inline def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
     
-    inline def setResponseType(value: text): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: "text"): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     

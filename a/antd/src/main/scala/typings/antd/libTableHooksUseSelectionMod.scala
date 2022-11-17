@@ -1,11 +1,9 @@
 package typings.antd
 
-import typings.antd.antdStrings.SELECT_ALL
-import typings.antd.antdStrings.SELECT_INVERT
-import typings.antd.antdStrings.SELECT_NONE
 import typings.antd.libTableInterfaceMod.ExpandType
 import typings.antd.libTableInterfaceMod.GetPopupContainer
 import typings.antd.libTableInterfaceMod.Key
+import typings.antd.libTableInterfaceMod.SelectionItem
 import typings.antd.libTableInterfaceMod.TableLocale
 import typings.antd.libTableInterfaceMod.TableRowSelection
 import typings.antd.libTableInterfaceMod.TransformColumns
@@ -27,23 +25,17 @@ object libTableHooksUseSelectionMod {
   
   @JSImport("antd/lib/table/hooks/useSelection", "SELECTION_ALL")
   @js.native
-  val SELECTION_ALL: SELECT_ALL = js.native
+  val SELECTION_ALL: "SELECT_ALL" = js.native
   
   @JSImport("antd/lib/table/hooks/useSelection", "SELECTION_INVERT")
   @js.native
-  val SELECTION_INVERT: SELECT_INVERT = js.native
+  val SELECTION_INVERT: "SELECT_INVERT" = js.native
   
   @JSImport("antd/lib/table/hooks/useSelection", "SELECTION_NONE")
   @js.native
-  val SELECTION_NONE: SELECT_NONE = js.native
+  val SELECTION_NONE: "SELECT_NONE" = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.libTableInterfaceMod.SelectionItem
-    - typings.antd.antdStrings.SELECT_ALL
-    - typings.antd.antdStrings.SELECT_INVERT
-    - typings.antd.antdStrings.SELECT_NONE
-  */
-  trait INTERNAL_SELECTION_ITEM extends StObject
+  type INTERNAL_SELECTION_ITEM = SelectionItem | "SELECT_ALL" | "SELECT_INVERT" | "SELECT_NONE"
   
   trait UseSelectionConfig[RecordType] extends StObject {
     

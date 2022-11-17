@@ -1,13 +1,10 @@
 package typings.reactNative.anon
 
-import typings.reactNative.mod.ShareContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Title
-  extends StObject
-     with ShareContent {
+trait Title extends StObject {
   
   var title: js.UndefOr[String] = js.undefined
   

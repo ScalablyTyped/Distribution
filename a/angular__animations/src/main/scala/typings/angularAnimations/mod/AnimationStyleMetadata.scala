@@ -1,7 +1,6 @@
 package typings.angularAnimations.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularAnimations.angularAnimationsStrings.Asterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,12 +17,12 @@ trait AnimationStyleMetadata
   /**
     * A set of CSS style properties.
     */
-  var styles: Asterisk | (StringDictionary[String | Double]) | (js.Array[(StringDictionary[String | Double]) | Asterisk])
+  var styles: "*" | (StringDictionary[String | Double]) | (js.Array[(StringDictionary[String | Double]) | "*"])
 }
 object AnimationStyleMetadata {
   
   inline def apply(
-    styles: Asterisk | (StringDictionary[String | Double]) | (js.Array[(StringDictionary[String | Double]) | Asterisk]),
+    styles: "*" | (StringDictionary[String | Double]) | (js.Array[(StringDictionary[String | Double]) | "*"]),
     `type`: AnimationMetadataType
   ): AnimationStyleMetadata = {
     val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any], offset = null)
@@ -38,9 +37,9 @@ object AnimationStyleMetadata {
     inline def setOffsetNull: Self = StObject.set(x, "offset", null)
     
     inline def setStyles(
-      value: Asterisk | (StringDictionary[String | Double]) | (js.Array[(StringDictionary[String | Double]) | Asterisk])
+      value: "*" | (StringDictionary[String | Double]) | (js.Array[(StringDictionary[String | Double]) | "*"])
     ): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    inline def setStylesVarargs(value: ((StringDictionary[String | Double]) | Asterisk)*): Self = StObject.set(x, "styles", js.Array(value*))
+    inline def setStylesVarargs(value: ((StringDictionary[String | Double]) | "*")*): Self = StObject.set(x, "styles", js.Array(value*))
   }
 }

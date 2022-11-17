@@ -8,10 +8,6 @@ import typings.rcTable.libInterfaceMod.DataIndex
 import typings.rcTable.libInterfaceMod.DefaultRecordType
 import typings.rcTable.libInterfaceMod.RenderedCell
 import typings.rcTable.libInterfaceMod.ScopeType
-import typings.rcTable.rcTableBooleans.`false`
-import typings.rcTable.rcTableStrings.body
-import typings.rcTable.rcTableStrings.footer
-import typings.rcTable.rcTableStrings.header
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
@@ -57,9 +53,9 @@ object libCellMod extends Shortcut {
     
     var firstFixRight: js.UndefOr[Boolean] = js.undefined
     
-    var fixLeft: js.UndefOr[Double | `false`] = js.undefined
+    var fixLeft: js.UndefOr[Double | false] = js.undefined
     
-    var fixRight: js.UndefOr[Double | `false`] = js.undefined
+    var fixRight: js.UndefOr[Double | false] = js.undefined
     
     var hovering: js.UndefOr[Boolean] = js.undefined
     
@@ -88,7 +84,7 @@ object libCellMod extends Shortcut {
     
     var rowSpan: js.UndefOr[Double] = js.undefined
     
-    var rowType: js.UndefOr[header | body | footer] = js.undefined
+    var rowType: js.UndefOr["header" | "body" | "footer"] = js.undefined
     
     var scope: js.UndefOr[ScopeType] = js.undefined
     
@@ -157,11 +153,11 @@ object libCellMod extends Shortcut {
       
       inline def setFirstFixRightUndefined: Self = StObject.set(x, "firstFixRight", js.undefined)
       
-      inline def setFixLeft(value: Double | `false`): Self = StObject.set(x, "fixLeft", value.asInstanceOf[js.Any])
+      inline def setFixLeft(value: Double | false): Self = StObject.set(x, "fixLeft", value.asInstanceOf[js.Any])
       
       inline def setFixLeftUndefined: Self = StObject.set(x, "fixLeft", js.undefined)
       
-      inline def setFixRight(value: Double | `false`): Self = StObject.set(x, "fixRight", value.asInstanceOf[js.Any])
+      inline def setFixRight(value: Double | false): Self = StObject.set(x, "fixRight", value.asInstanceOf[js.Any])
       
       inline def setFixRightUndefined: Self = StObject.set(x, "fixRight", js.undefined)
       
@@ -207,7 +203,7 @@ object libCellMod extends Shortcut {
       
       inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
       
-      inline def setRowType(value: header | body | footer): Self = StObject.set(x, "rowType", value.asInstanceOf[js.Any])
+      inline def setRowType(value: "header" | "body" | "footer"): Self = StObject.set(x, "rowType", value.asInstanceOf[js.Any])
       
       inline def setRowTypeUndefined: Self = StObject.set(x, "rowType", js.undefined)
       
@@ -252,9 +248,9 @@ object libCellMod extends Shortcut {
     
     var firstFixRight: js.UndefOr[Boolean] = js.undefined
     
-    var fixLeft: js.UndefOr[Double | `false`] = js.undefined
+    var fixLeft: js.UndefOr[Double | false] = js.undefined
     
-    var fixRight: js.UndefOr[Double | `false`] = js.undefined
+    var fixRight: js.UndefOr[Double | false] = js.undefined
     
     var hovering: js.UndefOr[Boolean] = js.undefined
     
@@ -287,7 +283,7 @@ object libCellMod extends Shortcut {
     
     var rowSpan: js.UndefOr[Double] = js.undefined
     
-    var rowType: js.UndefOr[header | body | footer] = js.undefined
+    var rowType: js.UndefOr["header" | "body" | "footer"] = js.undefined
     
     var scope: js.UndefOr[ScopeType] = js.undefined
     
@@ -356,11 +352,11 @@ object libCellMod extends Shortcut {
       
       inline def setFirstFixRightUndefined: Self = StObject.set(x, "firstFixRight", js.undefined)
       
-      inline def setFixLeft(value: Double | `false`): Self = StObject.set(x, "fixLeft", value.asInstanceOf[js.Any])
+      inline def setFixLeft(value: Double | false): Self = StObject.set(x, "fixLeft", value.asInstanceOf[js.Any])
       
       inline def setFixLeftUndefined: Self = StObject.set(x, "fixLeft", js.undefined)
       
-      inline def setFixRight(value: Double | `false`): Self = StObject.set(x, "fixRight", value.asInstanceOf[js.Any])
+      inline def setFixRight(value: Double | false): Self = StObject.set(x, "fixRight", value.asInstanceOf[js.Any])
       
       inline def setFixRightUndefined: Self = StObject.set(x, "fixRight", js.undefined)
       
@@ -408,7 +404,7 @@ object libCellMod extends Shortcut {
       
       inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
       
-      inline def setRowType(value: header | body | footer): Self = StObject.set(x, "rowType", value.asInstanceOf[js.Any])
+      inline def setRowType(value: "header" | "body" | "footer"): Self = StObject.set(x, "rowType", value.asInstanceOf[js.Any])
       
       inline def setRowTypeUndefined: Self = StObject.set(x, "rowType", js.undefined)
       

@@ -1,8 +1,6 @@
 package typings.reactNativeGestureHandler.anon
 
 import typings.hammerjs.HammerPoint
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`8`
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -32,7 +30,7 @@ trait HammerInputExtdeltaRotati extends StObject {
   
   var distance: Double
   
-  var eventType: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2` | `4` | `8`
+  var eventType: 1 | 2 | 4 | 8
   
   var isFinal: Boolean
   
@@ -84,7 +82,7 @@ object HammerInputExtdeltaRotati {
     deltaY: Double,
     direction: Double,
     distance: Double,
-    eventType: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2` | `4` | `8`,
+    eventType: 1 | 2 | 4 | 8,
     isFinal: Boolean,
     isFirst: Boolean,
     maxPointers: Double,
@@ -132,9 +130,7 @@ object HammerInputExtdeltaRotati {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    inline def setEventType(
-      value: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2` | `4` | `8`
-    ): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: 1 | 2 | 4 | 8): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     inline def setIsFinal(value: Boolean): Self = StObject.set(x, "isFinal", value.asInstanceOf[js.Any])
     

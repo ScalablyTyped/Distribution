@@ -5,7 +5,6 @@ import typings.rcTree.esInterfaceMod.BasicDataNode
 import typings.rcTree.esInterfaceMod.DataEntity
 import typings.rcTree.esInterfaceMod.GetCheckDisabled
 import typings.rcTree.esInterfaceMod.Key
-import typings.rcTree.rcTreeBooleans.`true`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,6 +16,15 @@ object esUtilsConductUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @scala.annotation.targetName("conductCheck_true")
+  inline def conductCheck[TreeDataType /* <: BasicDataNode */](keyList: js.Array[Key], checked: true, keyEntities: Record[Key, DataEntity[TreeDataType]]): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]
+  @scala.annotation.targetName("conductCheck_true")
+  inline def conductCheck[TreeDataType /* <: BasicDataNode */](
+    keyList: js.Array[Key],
+    checked: true,
+    keyEntities: Record[Key, DataEntity[TreeDataType]],
+    getCheckDisabled: GetCheckDisabled[TreeDataType]
+  ): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any], getCheckDisabled.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]
   inline def conductCheck[TreeDataType /* <: BasicDataNode */](
     keyList: js.Array[Key],
     checked: HalfCheckedKeys,
@@ -25,14 +33,6 @@ object esUtilsConductUtilMod {
   inline def conductCheck[TreeDataType /* <: BasicDataNode */](
     keyList: js.Array[Key],
     checked: HalfCheckedKeys,
-    keyEntities: Record[Key, DataEntity[TreeDataType]],
-    getCheckDisabled: GetCheckDisabled[TreeDataType]
-  ): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any], getCheckDisabled.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]
-  
-  inline def conductCheck_true[TreeDataType /* <: BasicDataNode */](keyList: js.Array[Key], checked: `true`, keyEntities: Record[Key, DataEntity[TreeDataType]]): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]
-  inline def conductCheck_true[TreeDataType /* <: BasicDataNode */](
-    keyList: js.Array[Key],
-    checked: `true`,
     keyEntities: Record[Key, DataEntity[TreeDataType]],
     getCheckDisabled: GetCheckDisabled[TreeDataType]
   ): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any], getCheckDisabled.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]

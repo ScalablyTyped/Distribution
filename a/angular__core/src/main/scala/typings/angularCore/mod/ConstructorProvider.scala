@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConstructorProvider
   extends StObject
-     with ConstructorSansProvider
-     with _Provider
-     with _StaticProvider {
+     with ConstructorSansProvider {
   
   /**
     * When true, injector returns an array of instances. This is useful to allow multiple

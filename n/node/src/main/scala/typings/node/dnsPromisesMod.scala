@@ -17,20 +17,6 @@ import typings.node.dnsMod.ResolveWithTtlOptions
 import typings.node.dnsMod.ResolverOptions
 import typings.node.dnsMod.SoaRecord
 import typings.node.dnsMod.SrvRecord
-import typings.node.nodeStrings.A
-import typings.node.nodeStrings.AAAA
-import typings.node.nodeStrings.ANY
-import typings.node.nodeStrings.CAA
-import typings.node.nodeStrings.CNAME
-import typings.node.nodeStrings.MX
-import typings.node.nodeStrings.NAPTR
-import typings.node.nodeStrings.NS
-import typings.node.nodeStrings.PTR
-import typings.node.nodeStrings.SOA
-import typings.node.nodeStrings.SRV
-import typings.node.nodeStrings.TXT
-import typings.node.nodeStrings.ipv4first
-import typings.node.nodeStrings.verbatim
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,6 +39,42 @@ object dnsPromisesMod {
     var getServers_Original: js.Function0[js.Array[String]] = js.native
     
     def resolve(hostname: String): js.Promise[js.Array[String]] = js.native
+    @JSName("resolve")
+    @scala.annotation.targetName("resolve_A")
+    def resolve(hostname: String, rrtype: "A"): js.Promise[js.Array[String]] = js.native
+    @JSName("resolve")
+    @scala.annotation.targetName("resolve_ANY")
+    def resolve(hostname: String, rrtype: "ANY"): js.Promise[js.Array[AnyRecord]] = js.native
+    @JSName("resolve")
+    @scala.annotation.targetName("resolve_NS")
+    def resolve(hostname: String, rrtype: "NS"): js.Promise[js.Array[String]] = js.native
+    @JSName("resolve")
+    @scala.annotation.targetName("resolve_CAA")
+    def resolve(hostname: String, rrtype: "CAA"): js.Promise[js.Array[CaaRecord]] = js.native
+    @JSName("resolve")
+    @scala.annotation.targetName("resolve_SRV")
+    def resolve(hostname: String, rrtype: "SRV"): js.Promise[js.Array[SrvRecord]] = js.native
+    @JSName("resolve")
+    @scala.annotation.targetName("resolve_TXT")
+    def resolve(hostname: String, rrtype: "TXT"): js.Promise[js.Array[js.Array[String]]] = js.native
+    @JSName("resolve")
+    @scala.annotation.targetName("resolve_PTR")
+    def resolve(hostname: String, rrtype: "PTR"): js.Promise[js.Array[String]] = js.native
+    @JSName("resolve")
+    @scala.annotation.targetName("resolve_NAPTR")
+    def resolve(hostname: String, rrtype: "NAPTR"): js.Promise[js.Array[NaptrRecord]] = js.native
+    @JSName("resolve")
+    @scala.annotation.targetName("resolve_AAAA")
+    def resolve(hostname: String, rrtype: "AAAA"): js.Promise[js.Array[String]] = js.native
+    @JSName("resolve")
+    @scala.annotation.targetName("resolve_CNAME")
+    def resolve(hostname: String, rrtype: "CNAME"): js.Promise[js.Array[String]] = js.native
+    @JSName("resolve")
+    @scala.annotation.targetName("resolve_SOA")
+    def resolve(hostname: String, rrtype: "SOA"): js.Promise[SoaRecord] = js.native
+    @JSName("resolve")
+    @scala.annotation.targetName("resolve_MX")
+    def resolve(hostname: String, rrtype: "MX"): js.Promise[js.Array[MxRecord]] = js.native
     def resolve(hostname: String, rrtype: String): js.Promise[
         (js.Array[AnyRecord | js.Array[String] | MxRecord | NaptrRecord | SrvRecord | String]) | SoaRecord
       ] = js.native
@@ -106,31 +128,7 @@ object dnsPromisesMod {
     var resolveTxt_Original: js.Function1[/* hostname */ String, js.Promise[js.Array[js.Array[String]]]] = js.native
     
     @JSName("resolve")
-    def resolve_A(hostname: String, rrtype: A): js.Promise[js.Array[String]] = js.native
-    @JSName("resolve")
-    def resolve_AAAA(hostname: String, rrtype: AAAA): js.Promise[js.Array[String]] = js.native
-    @JSName("resolve")
-    def resolve_ANY(hostname: String, rrtype: ANY): js.Promise[js.Array[AnyRecord]] = js.native
-    @JSName("resolve")
-    def resolve_CAA(hostname: String, rrtype: CAA): js.Promise[js.Array[CaaRecord]] = js.native
-    @JSName("resolve")
-    def resolve_CNAME(hostname: String, rrtype: CNAME): js.Promise[js.Array[String]] = js.native
-    @JSName("resolve")
-    def resolve_MX(hostname: String, rrtype: MX): js.Promise[js.Array[MxRecord]] = js.native
-    @JSName("resolve")
-    def resolve_NAPTR(hostname: String, rrtype: NAPTR): js.Promise[js.Array[NaptrRecord]] = js.native
-    @JSName("resolve")
-    def resolve_NS(hostname: String, rrtype: NS): js.Promise[js.Array[String]] = js.native
-    @JSName("resolve")
     var resolve_Original: FnCallHostnameRrtype = js.native
-    @JSName("resolve")
-    def resolve_PTR(hostname: String, rrtype: PTR): js.Promise[js.Array[String]] = js.native
-    @JSName("resolve")
-    def resolve_SOA(hostname: String, rrtype: SOA): js.Promise[SoaRecord] = js.native
-    @JSName("resolve")
-    def resolve_SRV(hostname: String, rrtype: SRV): js.Promise[js.Array[SrvRecord]] = js.native
-    @JSName("resolve")
-    def resolve_TXT(hostname: String, rrtype: TXT): js.Promise[js.Array[js.Array[String]]] = js.native
     
     def reverse(ip: String): js.Promise[js.Array[String]] = js.native
     @JSName("reverse")
@@ -247,6 +245,30 @@ object dnsPromisesMod {
     * @param [rrtype='A'] Resource record type.
     */
   inline def resolve(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.annotation.targetName("resolve_A")
+  inline def resolve(hostname: String, rrtype: "A"): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.annotation.targetName("resolve_ANY")
+  inline def resolve(hostname: String, rrtype: "ANY"): js.Promise[js.Array[AnyRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[AnyRecord]]]
+  @scala.annotation.targetName("resolve_NS")
+  inline def resolve(hostname: String, rrtype: "NS"): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.annotation.targetName("resolve_CAA")
+  inline def resolve(hostname: String, rrtype: "CAA"): js.Promise[js.Array[CaaRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[CaaRecord]]]
+  @scala.annotation.targetName("resolve_SRV")
+  inline def resolve(hostname: String, rrtype: "SRV"): js.Promise[js.Array[SrvRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[SrvRecord]]]
+  @scala.annotation.targetName("resolve_TXT")
+  inline def resolve(hostname: String, rrtype: "TXT"): js.Promise[js.Array[js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Array[String]]]]
+  @scala.annotation.targetName("resolve_PTR")
+  inline def resolve(hostname: String, rrtype: "PTR"): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.annotation.targetName("resolve_NAPTR")
+  inline def resolve(hostname: String, rrtype: "NAPTR"): js.Promise[js.Array[NaptrRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NaptrRecord]]]
+  @scala.annotation.targetName("resolve_AAAA")
+  inline def resolve(hostname: String, rrtype: "AAAA"): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.annotation.targetName("resolve_CNAME")
+  inline def resolve(hostname: String, rrtype: "CNAME"): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.annotation.targetName("resolve_SOA")
+  inline def resolve(hostname: String, rrtype: "SOA"): js.Promise[SoaRecord] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SoaRecord]]
+  @scala.annotation.targetName("resolve_MX")
+  inline def resolve(hostname: String, rrtype: "MX"): js.Promise[js.Array[MxRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[MxRecord]]]
   inline def resolve(hostname: String, rrtype: String): js.Promise[
     (js.Array[AnyRecord | js.Array[String] | MxRecord | NaptrRecord | SrvRecord | String]) | SoaRecord
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
@@ -423,30 +445,6 @@ object dnsPromisesMod {
     */
   inline def resolveTxt(hostname: String): js.Promise[js.Array[js.Array[String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveTxt")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Array[String]]]]
   
-  inline def resolve_A(hostname: String, rrtype: A): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
-  
-  inline def resolve_AAAA(hostname: String, rrtype: AAAA): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
-  
-  inline def resolve_ANY(hostname: String, rrtype: ANY): js.Promise[js.Array[AnyRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[AnyRecord]]]
-  
-  inline def resolve_CAA(hostname: String, rrtype: CAA): js.Promise[js.Array[CaaRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[CaaRecord]]]
-  
-  inline def resolve_CNAME(hostname: String, rrtype: CNAME): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
-  
-  inline def resolve_MX(hostname: String, rrtype: MX): js.Promise[js.Array[MxRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[MxRecord]]]
-  
-  inline def resolve_NAPTR(hostname: String, rrtype: NAPTR): js.Promise[js.Array[NaptrRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NaptrRecord]]]
-  
-  inline def resolve_NS(hostname: String, rrtype: NS): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
-  
-  inline def resolve_PTR(hostname: String, rrtype: PTR): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
-  
-  inline def resolve_SOA(hostname: String, rrtype: SOA): js.Promise[SoaRecord] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SoaRecord]]
-  
-  inline def resolve_SRV(hostname: String, rrtype: SRV): js.Promise[js.Array[SrvRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[SrvRecord]]]
-  
-  inline def resolve_TXT(hostname: String, rrtype: TXT): js.Promise[js.Array[js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Array[String]]]]
-  
   /**
     * Performs a reverse DNS query that resolves an IPv4 or IPv6 address to an
     * array of host names.
@@ -468,7 +466,8 @@ object dnsPromisesMod {
     * @since v16.4.0, v14.18.0
     * @param order must be `'ipv4first'` or `'verbatim'`.
     */
-  inline def setDefaultResultOrder(order: ipv4first | verbatim): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultResultOrder")(order.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.annotation.targetName("setDefaultResultOrder_ipv4first_verbatim")
+  inline def setDefaultResultOrder(order: "ipv4first" | "verbatim"): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultResultOrder")(order.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Sets the IP address and port of servers to be used when performing DNS

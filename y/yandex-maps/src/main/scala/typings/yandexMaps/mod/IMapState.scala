@@ -3,9 +3,6 @@ package typings.yandexMaps.mod
 import typings.yandexMaps.mod.control.RulerControl
 import typings.yandexMaps.mod.control.TypeSelector
 import typings.yandexMaps.mod.control.ZoomControl
-import typings.yandexMaps.yandexMapsStrings.yandexNumbersignhybrid
-import typings.yandexMaps.yandexMapsStrings.yandexNumbersignmap
-import typings.yandexMaps.yandexMapsStrings.yandexNumbersignsatellite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +19,7 @@ trait IMapState extends StObject {
   
   var margin: js.UndefOr[js.Array[js.Array[Double] | Double]] = js.undefined
   
-  var `type`: js.UndefOr[yandexNumbersignmap | yandexNumbersignsatellite | yandexNumbersignhybrid] = js.undefined
+  var `type`: js.UndefOr["yandex#map" | "yandex#satellite" | "yandex#hybrid"] = js.undefined
   
   var zoom: js.UndefOr[Double] = js.undefined
 }
@@ -65,7 +62,7 @@ object IMapState {
     
     inline def setMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "margin", js.Array(value*))
     
-    inline def setType(value: yandexNumbersignmap | yandexNumbersignsatellite | yandexNumbersignhybrid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "yandex#map" | "yandex#satellite" | "yandex#hybrid"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

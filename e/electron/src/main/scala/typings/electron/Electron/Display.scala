@@ -1,8 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.available
-import typings.electron.electronStrings.unavailable
-import typings.electron.electronStrings.unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +10,7 @@ trait Display extends StObject {
   /**
     * Can be `available`, `unavailable`, `unknown`.
     */
-  var accelerometerSupport: available | unavailable | unknown_
+  var accelerometerSupport: "available" | "unavailable" | "unknown"
   
   /**
     * the bounds of the display in DIP points.
@@ -71,7 +68,7 @@ trait Display extends StObject {
   /**
     * Can be `available`, `unavailable`, `unknown`.
     */
-  var touchSupport: available | unavailable | unknown_
+  var touchSupport: "available" | "unavailable" | "unknown"
   
   /**
     * the work area of the display in DIP points.
@@ -83,7 +80,7 @@ trait Display extends StObject {
 object Display {
   
   inline def apply(
-    accelerometerSupport: available | unavailable | unknown_,
+    accelerometerSupport: "available" | "unavailable" | "unknown",
     bounds: Rectangle,
     colorDepth: Double,
     colorSpace: String,
@@ -95,7 +92,7 @@ object Display {
     rotation: Double,
     scaleFactor: Double,
     size: Size,
-    touchSupport: available | unavailable | unknown_,
+    touchSupport: "available" | "unavailable" | "unknown",
     workArea: Rectangle,
     workAreaSize: Size
   ): Display = {
@@ -105,7 +102,7 @@ object Display {
   
   extension [Self <: Display](x: Self) {
     
-    inline def setAccelerometerSupport(value: available | unavailable | unknown_): Self = StObject.set(x, "accelerometerSupport", value.asInstanceOf[js.Any])
+    inline def setAccelerometerSupport(value: "available" | "unavailable" | "unknown"): Self = StObject.set(x, "accelerometerSupport", value.asInstanceOf[js.Any])
     
     inline def setBounds(value: Rectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
@@ -129,7 +126,7 @@ object Display {
     
     inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setTouchSupport(value: available | unavailable | unknown_): Self = StObject.set(x, "touchSupport", value.asInstanceOf[js.Any])
+    inline def setTouchSupport(value: "available" | "unavailable" | "unknown"): Self = StObject.set(x, "touchSupport", value.asInstanceOf[js.Any])
     
     inline def setWorkArea(value: Rectangle): Self = StObject.set(x, "workArea", value.asInstanceOf[js.Any])
     

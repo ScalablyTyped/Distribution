@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/router", "ActivationStart")
 @js.native
-open class ActivationStart protected ()
-  extends StObject
-     with Event2 {
+open class ActivationStart protected () extends StObject {
   def this(/** @docsNotRequired */
   snapshot: ActivatedRouteSnapshot) = this()
   

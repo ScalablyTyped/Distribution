@@ -1,21 +1,17 @@
 package typings.yandexMaps.anon
 
 import typings.yandexMaps.mod.IProjection
-import typings.yandexMaps.yandexMapsStrings.jumpy
-import typings.yandexMaps.yandexMapsStrings.shortestPath
-import typings.yandexMaps.yandexMapsStrings.static
-import typings.yandexMaps.yandexMapsStrings.straightPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CoordRendering extends StObject {
   
-  var coordRendering: js.UndefOr[shortestPath | straightPath] = js.undefined
+  var coordRendering: js.UndefOr["shortestPath" | "straightPath"] = js.undefined
   
   var geodesic: js.UndefOr[Boolean] = js.undefined
   
-  var pixelRendering: js.UndefOr[jumpy | static] = js.undefined
+  var pixelRendering: js.UndefOr["jumpy" | "static"] = js.undefined
   
   var projection: js.UndefOr[IProjection] = js.undefined
   
@@ -30,7 +26,7 @@ object CoordRendering {
   
   extension [Self <: CoordRendering](x: Self) {
     
-    inline def setCoordRendering(value: shortestPath | straightPath): Self = StObject.set(x, "coordRendering", value.asInstanceOf[js.Any])
+    inline def setCoordRendering(value: "shortestPath" | "straightPath"): Self = StObject.set(x, "coordRendering", value.asInstanceOf[js.Any])
     
     inline def setCoordRenderingUndefined: Self = StObject.set(x, "coordRendering", js.undefined)
     
@@ -38,7 +34,7 @@ object CoordRendering {
     
     inline def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
     
-    inline def setPixelRendering(value: jumpy | static): Self = StObject.set(x, "pixelRendering", value.asInstanceOf[js.Any])
+    inline def setPixelRendering(value: "jumpy" | "static"): Self = StObject.set(x, "pixelRendering", value.asInstanceOf[js.Any])
     
     inline def setPixelRenderingUndefined: Self = StObject.set(x, "pixelRendering", js.undefined)
     

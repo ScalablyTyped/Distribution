@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SyntheticDecorator
   extends StObject
-     with BaseDecorator
-     with Decorator {
+     with BaseDecorator {
   
   @JSName("identifier")
   var identifier_SyntheticDecorator: Null

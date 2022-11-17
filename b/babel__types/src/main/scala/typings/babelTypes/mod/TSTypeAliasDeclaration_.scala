@@ -1,17 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSTypeAliasDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSTypeAliasDeclaration_
+trait TSTypeAliasDeclaration_
   extends StObject
-     with BaseNode
-     with Declaration
-     with Statement
-     with TypeScript {
+     with BaseNode {
   
   var declare: Boolean | Null
   
@@ -22,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var typeParameters: TSTypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_TSTypeAliasDeclaration_ : TSTypeAliasDeclaration
+  var type_TSTypeAliasDeclaration_ : "TSTypeAliasDeclaration"
 }
 object TSTypeAliasDeclaration_ {
   
@@ -40,7 +35,7 @@ object TSTypeAliasDeclaration_ {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSTypeAliasDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSTypeAliasDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

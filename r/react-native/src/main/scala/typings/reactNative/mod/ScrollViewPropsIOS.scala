@@ -1,16 +1,6 @@
 package typings.reactNative.mod
 
 import typings.reactNative.anon.AutoscrollToTopThreshold
-import typings.reactNative.reactNativeStrings.always
-import typings.reactNative.reactNativeStrings.automatic
-import typings.reactNative.reactNativeStrings.black
-import typings.reactNative.reactNativeStrings.center
-import typings.reactNative.reactNativeStrings.default
-import typings.reactNative.reactNativeStrings.end
-import typings.reactNative.reactNativeStrings.never
-import typings.reactNative.reactNativeStrings.scrollableAxes
-import typings.reactNative.reactNativeStrings.start
-import typings.reactNative.reactNativeStrings.white
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,7 +80,7 @@ trait ScrollViewPropsIOS extends StObject {
     * This property specifies how the safe area insets are used to modify the content area of the scroll view.
     * The default value of this property must be 'automatic'. But the default value is 'never' until RN@0.51.
     */
-  var contentInsetAdjustmentBehavior: js.UndefOr[automatic | scrollableAxes | never | always] = js.undefined
+  var contentInsetAdjustmentBehavior: js.UndefOr["automatic" | "scrollableAxes" | "never" | "always"] = js.undefined
   
   // zeros
   /**
@@ -113,7 +103,7 @@ trait ScrollViewPropsIOS extends StObject {
     * - white, scroll indicator is white. This style is good against
     *   a black content background.
     */
-  var indicatorStyle: js.UndefOr[default | black | white] = js.undefined
+  var indicatorStyle: js.UndefOr["default" | "black" | "white"] = js.undefined
   
   /**
     * When set, the scroll view will adjust the scroll position so that the first child
@@ -202,7 +192,7 @@ trait ScrollViewPropsIOS extends StObject {
     *      - `center` will align the snap in the center
     *      - `end` will align the snap at the right (horizontal) or bottom (vertical)
     */
-  var snapToAlignment: js.UndefOr[start | center | end] = js.undefined
+  var snapToAlignment: js.UndefOr["start" | "center" | "end"] = js.undefined
   
   /**
     * The current scale of the scroll view content. The default value is 1.0.
@@ -256,7 +246,7 @@ object ScrollViewPropsIOS {
     
     inline def setContentInset(value: Insets): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
     
-    inline def setContentInsetAdjustmentBehavior(value: automatic | scrollableAxes | never | always): Self = StObject.set(x, "contentInsetAdjustmentBehavior", value.asInstanceOf[js.Any])
+    inline def setContentInsetAdjustmentBehavior(value: "automatic" | "scrollableAxes" | "never" | "always"): Self = StObject.set(x, "contentInsetAdjustmentBehavior", value.asInstanceOf[js.Any])
     
     inline def setContentInsetAdjustmentBehaviorUndefined: Self = StObject.set(x, "contentInsetAdjustmentBehavior", js.undefined)
     
@@ -270,7 +260,7 @@ object ScrollViewPropsIOS {
     
     inline def setDirectionalLockEnabledUndefined: Self = StObject.set(x, "directionalLockEnabled", js.undefined)
     
-    inline def setIndicatorStyle(value: default | black | white): Self = StObject.set(x, "indicatorStyle", value.asInstanceOf[js.Any])
+    inline def setIndicatorStyle(value: "default" | "black" | "white"): Self = StObject.set(x, "indicatorStyle", value.asInstanceOf[js.Any])
     
     inline def setIndicatorStyleUndefined: Self = StObject.set(x, "indicatorStyle", js.undefined)
     
@@ -316,7 +306,7 @@ object ScrollViewPropsIOS {
     
     inline def setScrollsToTopUndefined: Self = StObject.set(x, "scrollsToTop", js.undefined)
     
-    inline def setSnapToAlignment(value: start | center | end): Self = StObject.set(x, "snapToAlignment", value.asInstanceOf[js.Any])
+    inline def setSnapToAlignment(value: "start" | "center" | "end"): Self = StObject.set(x, "snapToAlignment", value.asInstanceOf[js.Any])
     
     inline def setSnapToAlignmentUndefined: Self = StObject.set(x, "snapToAlignment", js.undefined)
     

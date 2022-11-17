@@ -1,7 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngPlural]`
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import org.scalablytyped.runtime.StObject
@@ -42,24 +40,26 @@ object NgPlural {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     NgPlural, 
-    `[ngPlural]`, 
+    "[ngPlural]", 
     scala.Nothing, 
     typings.angularCommon.anon.NgPlural, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       NgPlural, 
-      `[ngPlural]`, 
+      "[ngPlural]", 
       scala.Nothing, 
       typings.angularCommon.anon.NgPlural, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      true, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

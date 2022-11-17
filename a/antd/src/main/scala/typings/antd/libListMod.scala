@@ -1,6 +1,5 @@
 package typings.antd
 
-import typings.antd.antdBooleans.`false`
 import typings.antd.libListItemMod.ListItemTypeProps
 import typings.antd.libPaginationPaginationMod.PaginationConfig
 import typings.antd.libSpinMod.SpinProps
@@ -40,35 +39,25 @@ object libListMod {
   
   type ColumnCount = Double
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.gutter
-    - typings.antd.antdStrings.column
-    - typings.antd.antdStrings.xs
-    - typings.antd.antdStrings.sm
-    - typings.antd.antdStrings.md
-    - typings.antd.antdStrings.lg
-    - typings.antd.antdStrings.xl
-    - typings.antd.antdStrings.xxl
-  */
-  trait ColumnType extends StObject
   object ColumnType {
     
-    inline def column: typings.antd.antdStrings.column = "column".asInstanceOf[typings.antd.antdStrings.column]
+    inline def column: "column" = "column".asInstanceOf["column"]
     
-    inline def gutter: typings.antd.antdStrings.gutter = "gutter".asInstanceOf[typings.antd.antdStrings.gutter]
+    inline def gutter: "gutter" = "gutter".asInstanceOf["gutter"]
     
-    inline def lg: typings.antd.antdStrings.lg = "lg".asInstanceOf[typings.antd.antdStrings.lg]
+    inline def lg: "lg" = "lg".asInstanceOf["lg"]
     
-    inline def md: typings.antd.antdStrings.md = "md".asInstanceOf[typings.antd.antdStrings.md]
+    inline def md: "md" = "md".asInstanceOf["md"]
     
-    inline def sm: typings.antd.antdStrings.sm = "sm".asInstanceOf[typings.antd.antdStrings.sm]
+    inline def sm: "sm" = "sm".asInstanceOf["sm"]
     
-    inline def xl: typings.antd.antdStrings.xl = "xl".asInstanceOf[typings.antd.antdStrings.xl]
+    inline def xl: "xl" = "xl".asInstanceOf["xl"]
     
-    inline def xs: typings.antd.antdStrings.xs = "xs".asInstanceOf[typings.antd.antdStrings.xs]
+    inline def xs: "xs" = "xs".asInstanceOf["xs"]
     
-    inline def xxl: typings.antd.antdStrings.xxl = "xxl".asInstanceOf[typings.antd.antdStrings.xxl]
+    inline def xxl: "xxl" = "xxl".asInstanceOf["xxl"]
   }
+  type ColumnType = "gutter" | "column" | "xs" | "sm" | "md" | "lg" | "xl" | "xxl"
   
   trait ListConsumerProps extends StObject {
     
@@ -156,17 +145,13 @@ object libListMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.horizontal
-    - typings.antd.antdStrings.vertical
-  */
-  trait ListItemLayout extends StObject
   object ListItemLayout {
     
-    inline def horizontal: typings.antd.antdStrings.horizontal = "horizontal".asInstanceOf[typings.antd.antdStrings.horizontal]
+    inline def horizontal: "horizontal" = "horizontal".asInstanceOf["horizontal"]
     
-    inline def vertical: typings.antd.antdStrings.vertical = "vertical".asInstanceOf[typings.antd.antdStrings.vertical]
+    inline def vertical: "vertical" = "vertical".asInstanceOf["vertical"]
   }
+  type ListItemLayout = "horizontal" | "vertical"
   
   trait ListLocale extends StObject {
     
@@ -215,7 +200,7 @@ object libListMod {
     
     var locale: js.UndefOr[ListLocale] = js.undefined
     
-    var pagination: js.UndefOr[PaginationConfig | `false`] = js.undefined
+    var pagination: js.UndefOr[PaginationConfig | false] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -292,7 +277,7 @@ object libListMod {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setPagination(value: PaginationConfig | `false`): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+      inline def setPagination(value: PaginationConfig | false): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
       
       inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
       
@@ -324,18 +309,13 @@ object libListMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.small
-    - typings.antd.antdStrings.default
-    - typings.antd.antdStrings.large
-  */
-  trait ListSize extends StObject
   object ListSize {
     
-    inline def default: typings.antd.antdStrings.default = "default".asInstanceOf[typings.antd.antdStrings.default]
+    inline def default: "default" = "default".asInstanceOf["default"]
     
-    inline def large: typings.antd.antdStrings.large = "large".asInstanceOf[typings.antd.antdStrings.large]
+    inline def large: "large" = "large".asInstanceOf["large"]
     
-    inline def small: typings.antd.antdStrings.small = "small".asInstanceOf[typings.antd.antdStrings.small]
+    inline def small: "small" = "small".asInstanceOf["small"]
   }
+  type ListSize = "small" | "default" | "large"
 }

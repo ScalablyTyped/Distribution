@@ -1,8 +1,5 @@
 package typings.std.global
 
-import typings.std.AddEventListenerOptions
-import typings.std.EventListenerOptions
-import typings.std.EventListenerOrEventListenerObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,17 +14,6 @@ open class Image ()
   def this(width: Double) = this()
   def this(width: Double, height: Double) = this()
   def this(width: Unit, height: Double) = this()
-  
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(
-    `type`: java.lang.String,
-    callback: EventListenerOrEventListenerObject,
-    options: AddEventListenerOptions
-  ): Unit = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -218,17 +204,6 @@ open class Image ()
   /* standard dom */
   /* CompleteClass */
   override val previousElementSibling: typings.std.Element | Null = js.native
-  
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(
-    `type`: java.lang.String,
-    callback: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
-  ): Unit = js.native
   
   /* standard dom */
   /* CompleteClass */

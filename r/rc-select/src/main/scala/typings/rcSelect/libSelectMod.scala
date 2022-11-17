@@ -10,9 +10,6 @@ import typings.rcSelect.anon.`0`
 import typings.rcSelect.libBaseSelectMod.BaseSelectPropsWithoutPrivate
 import typings.rcSelect.libBaseSelectMod.DisplayValueType
 import typings.rcSelect.libBaseSelectMod.RenderNode
-import typings.rcSelect.rcSelectStrings.combobox
-import typings.rcSelect.rcSelectStrings.multiple
-import typings.rcSelect.rcSelectStrings.tags
 import typings.react.mod.Key
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -93,14 +90,7 @@ object libSelectMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcSelect.libSelectMod.RawValueType
-    - typings.rcSelect.libSelectMod.LabelInValueType
-    - typings.rcSelect.libBaseSelectMod.DisplayValueType
-    - js.Array[
-  typings.rcSelect.libSelectMod.RawValueType | typings.rcSelect.libSelectMod.LabelInValueType | typings.rcSelect.libBaseSelectMod.DisplayValueType]
-  */
-  type DraftValueType = _DraftValueType | (js.Array[RawValueType | LabelInValueType | DisplayValueType]) | RawValueType
+  type DraftValueType = RawValueType | LabelInValueType | DisplayValueType | (js.Array[RawValueType | LabelInValueType | DisplayValueType])
   
   trait FieldNames extends StObject {
     
@@ -135,9 +125,7 @@ object libSelectMod extends Shortcut {
   
   type FilterFunc[OptionType] = js.Function2[/* inputValue */ String, /* option */ js.UndefOr[OptionType], Boolean]
   
-  trait LabelInValueType
-    extends StObject
-       with _DraftValueType {
+  trait LabelInValueType extends StObject {
     
     /** @deprecated `key` is useless since it should always same as `value` */
     var key: js.UndefOr[Key] = js.undefined
@@ -218,7 +206,7 @@ object libSelectMod extends Shortcut {
     var menuItemSelectedIcon: js.UndefOr[RenderNode] = js.undefined
     
     @JSName("mode")
-    var mode_SelectProps: js.UndefOr[combobox | multiple | tags] = js.undefined
+    var mode_SelectProps: js.UndefOr["combobox" | "multiple" | "tags"] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function2[/* value */ ValueType, /* option */ OptionType | js.Array[OptionType], Unit]
@@ -315,7 +303,7 @@ object libSelectMod extends Shortcut {
       
       inline def setMenuItemSelectedIconUndefined: Self = StObject.set(x, "menuItemSelectedIcon", js.undefined)
       
-      inline def setMode(value: combobox | multiple | tags): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: "combobox" | "multiple" | "tags"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
@@ -366,20 +354,6 @@ object libSelectMod extends Shortcut {
       inline def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
       
       inline def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
-    }
-  }
-  
-  trait _DraftValueType extends StObject
-  object _DraftValueType {
-    
-    inline def DisplayValueType(): typings.rcSelect.libBaseSelectMod.DisplayValueType = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.rcSelect.libBaseSelectMod.DisplayValueType]
-    }
-    
-    inline def LabelInValueType(value: RawValueType): typings.rcSelect.libSelectMod.LabelInValueType = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.rcSelect.libSelectMod.LabelInValueType]
     }
   }
   

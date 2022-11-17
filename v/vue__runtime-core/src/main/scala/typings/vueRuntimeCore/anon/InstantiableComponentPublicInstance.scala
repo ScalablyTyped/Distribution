@@ -3,7 +3,6 @@ package typings.vueRuntimeCore.anon
 import org.scalablytyped.runtime.Instantiable0
 import typings.vueRuntimeCore.mod.ComponentOptionsBase
 import typings.vueRuntimeCore.mod.ComponentPublicInstance
-import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait InstantiableComponentPublicInstance
         js.Object, 
         js.Object, 
         js.Object, 
-        `false`, 
+        false, 
         ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
         js.Object
       ]

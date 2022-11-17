@@ -1,16 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TaggedTemplateExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TaggedTemplateExpression_
+trait TaggedTemplateExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with Standardized {
+     with BaseNode {
   
   var quasi: TemplateLiteral_
   
@@ -19,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var typeParameters: TypeParameterInstantiation_ | TSTypeParameterInstantiation_ | Null
   
   @JSName("type")
-  var type_TaggedTemplateExpression_ : TaggedTemplateExpression
+  var type_TaggedTemplateExpression_ : "TaggedTemplateExpression"
 }
 object TaggedTemplateExpression_ {
   
@@ -35,7 +31,7 @@ object TaggedTemplateExpression_ {
     
     inline def setTag(value: Expression): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TaggedTemplateExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TaggedTemplateExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TypeParameterInstantiation_ | TSTypeParameterInstantiation_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

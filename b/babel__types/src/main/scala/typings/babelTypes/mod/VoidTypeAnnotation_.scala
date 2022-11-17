@@ -1,20 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.VoidTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait VoidTypeAnnotation_
+trait VoidTypeAnnotation_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowBaseAnnotation
-     with FlowType {
+     with BaseNode {
   
   @JSName("type")
-  var type_VoidTypeAnnotation_ : VoidTypeAnnotation
+  var type_VoidTypeAnnotation_ : "VoidTypeAnnotation"
 }
 object VoidTypeAnnotation_ {
   
@@ -26,6 +21,6 @@ object VoidTypeAnnotation_ {
   
   extension [Self <: VoidTypeAnnotation_](x: Self) {
     
-    inline def setType(value: VoidTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "VoidTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

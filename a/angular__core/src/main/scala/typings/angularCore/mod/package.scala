@@ -1,15 +1,6 @@
 package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCore.angularCoreBooleans.`false`
-import typings.angularCore.angularCoreStrings.Asterisk
-import typings.angularCore.angularCoreStrings.BrowserAnimations
-import typings.angularCore.angularCoreStrings.HTML
-import typings.angularCore.angularCoreStrings.NoopAnimations
-import typings.angularCore.angularCoreStrings.ResourceURL
-import typings.angularCore.angularCoreStrings.Script
-import typings.angularCore.angularCoreStrings.Style
-import typings.angularCore.angularCoreStrings.URL
 import typings.angularCore.anon.AppProviders
 import typings.angularCore.anon.Bootstrap
 import typings.angularCore.anon.Call
@@ -25,6 +16,9 @@ import typings.angularCore.anon.FnCallValue
 import typings.angularCore.anon.Imports
 import typings.angularCore.anon.InjectOptionsoptionalfals
 import typings.angularCore.anon.Pure
+import typings.angularCore.anon.R3DeclareDirectiveDepende
+import typings.angularCore.anon.R3DeclareNgModuleDependen
+import typings.angularCore.anon.R3DeclarePipeDependencyFa
 import typings.angularCore.anon.RElementownerDocumentDocu
 import typings.angularCore.anon.Text
 import typings.angularCore.anon.Token
@@ -46,7 +40,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def ANALYZE_FOR_ENTRY_COMPONENTS: InjectionToken[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("ANALYZE_FOR_ENTRY_COMPONENTS").asInstanceOf[InjectionToken[Any]]
 
-inline def ANIMATION_MODULE_TYPE: InjectionToken[NoopAnimations | BrowserAnimations] = ^.asInstanceOf[js.Dynamic].selectDynamic("ANIMATION_MODULE_TYPE").asInstanceOf[InjectionToken[NoopAnimations | BrowserAnimations]]
+inline def ANIMATION_MODULE_TYPE: InjectionToken["NoopAnimations" | "BrowserAnimations"] = ^.asInstanceOf[js.Dynamic].selectDynamic("ANIMATION_MODULE_TYPE").asInstanceOf[InjectionToken["NoopAnimations" | "BrowserAnimations"]]
 
 inline def APP_BOOTSTRAP_LISTENER: InjectionToken[js.Array[js.Function1[/* compRef */ ComponentRef[Any], Unit]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("APP_BOOTSTRAP_LISTENER").asInstanceOf[InjectionToken[js.Array[js.Function1[/* compRef */ ComponentRef[Any], Unit]]]]
 
@@ -98,9 +92,9 @@ inline def assertPlatform(requiredToken: Any): PlatformRef = ^.asInstanceOf[js.D
 
 inline def createComponent[C](component: Type[C], options: ElementInjector): ComponentRef[C] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ComponentRef[C]]
 
-inline def createEnvironmentInjector(providers: js.Array[ImportedNgModuleProviders | Provider], parent: EnvironmentInjector): EnvironmentInjector = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvironmentInjector")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[EnvironmentInjector]
+inline def createEnvironmentInjector(providers: js.Array[EnvironmentProviders | Provider], parent: EnvironmentInjector): EnvironmentInjector = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvironmentInjector")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[EnvironmentInjector]
 inline def createEnvironmentInjector(
-  providers: js.Array[Provider | ImportedNgModuleProviders],
+  providers: js.Array[Provider | EnvironmentProviders],
   parent: EnvironmentInjector,
   debugName: String
 ): EnvironmentInjector = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvironmentInjector")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], debugName.asInstanceOf[js.Any])).asInstanceOf[EnvironmentInjector]
@@ -144,7 +138,7 @@ inline def getNgModuleById[T](id: String): Type[T] = ^.asInstanceOf[js.Dynamic].
 
 inline def getPlatform(): PlatformRef | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")().asInstanceOf[PlatformRef | Null]
 
-inline def importProvidersFrom(sources: ImportProvidersSource*): ImportedNgModuleProviders = ^.asInstanceOf[js.Dynamic].applyDynamic("importProvidersFrom")(sources.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ImportedNgModuleProviders]
+inline def importProvidersFrom(sources: ImportProvidersSource*): EnvironmentProviders = ^.asInstanceOf[js.Dynamic].applyDynamic("importProvidersFrom")(sources.asInstanceOf[Seq[js.Any]]*).asInstanceOf[EnvironmentProviders]
 
 inline def inject[T](token: ProviderToken[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T | Null]
 inline def inject[T](token: ProviderToken[T], flags: InjectFlags): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | Null]
@@ -154,6 +148,8 @@ inline def inject[T](token: ProviderToken[T], options: InjectOptions): T | Null 
 inline def inject_T_T[T](token: ProviderToken[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
 
 inline def isDevMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDevMode")().asInstanceOf[Boolean]
+
+inline def makeEnvironmentProviders(providers: js.Array[Provider]): EnvironmentProviders = ^.asInstanceOf[js.Dynamic].applyDynamic("makeEnvironmentProviders")(providers.asInstanceOf[js.Any]).asInstanceOf[EnvironmentProviders]
 
 inline def platformCore(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformCore")().asInstanceOf[PlatformRef]
 inline def platformCore(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformCore")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
@@ -194,17 +190,17 @@ inline def ɵTESTABILITY: InjectionToken[Testability] = ^.asInstanceOf[js.Dynami
 
 inline def ɵTESTABILITYGETTER: InjectionToken[GetTestability] = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275TESTABILITY_GETTER").asInstanceOf[InjectionToken[GetTestability]]
 
+@scala.annotation.targetName("\u0275allowSanitizationBypassAndThrow_Script")
+inline def ɵallowSanitizationBypassAndThrow(value: Any, `type`: "Script"): /* is @angular/core.@angular/core.ɵSafeScript */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeScript */ Boolean]
+@scala.annotation.targetName("\u0275allowSanitizationBypassAndThrow_HTML")
+inline def ɵallowSanitizationBypassAndThrow(value: Any, `type`: "HTML"): /* is @angular/core.@angular/core.ɵSafeHtml */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeHtml */ Boolean]
+@scala.annotation.targetName("\u0275allowSanitizationBypassAndThrow_URL")
+inline def ɵallowSanitizationBypassAndThrow(value: Any, `type`: "URL"): /* is @angular/core.@angular/core.ɵSafeUrl */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeUrl */ Boolean]
+@scala.annotation.targetName("\u0275allowSanitizationBypassAndThrow_ResourceURL")
+inline def ɵallowSanitizationBypassAndThrow(value: Any, `type`: "ResourceURL"): /* is @angular/core.@angular/core.ɵSafeResourceUrl */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeResourceUrl */ Boolean]
+@scala.annotation.targetName("\u0275allowSanitizationBypassAndThrow_Style")
+inline def ɵallowSanitizationBypassAndThrow(value: Any, `type`: "Style"): /* is @angular/core.@angular/core.ɵSafeStyle */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeStyle */ Boolean]
 inline def ɵallowSanitizationBypassAndThrow(value: Any, `type`: ɵBypassType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-
-inline def ɵallowSanitizationBypassAndThrow_HTML(value: Any, `type`: HTML): /* is @angular/core.@angular/core.ɵSafeHtml */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeHtml */ Boolean]
-
-inline def ɵallowSanitizationBypassAndThrow_ResourceURL(value: Any, `type`: ResourceURL): /* is @angular/core.@angular/core.ɵSafeResourceUrl */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeResourceUrl */ Boolean]
-
-inline def ɵallowSanitizationBypassAndThrow_Script(value: Any, `type`: Script): /* is @angular/core.@angular/core.ɵSafeScript */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeScript */ Boolean]
-
-inline def ɵallowSanitizationBypassAndThrow_Style(value: Any, `type`: Style): /* is @angular/core.@angular/core.ɵSafeStyle */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeStyle */ Boolean]
-
-inline def ɵallowSanitizationBypassAndThrow_URL(value: Any, `type`: URL): /* is @angular/core.@angular/core.ɵSafeUrl */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeUrl */ Boolean]
 
 inline def ɵbypassSanitizationTrustHtml(trustedHtml: String): ɵSafeHtml = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275bypassSanitizationTrustHtml")(trustedHtml.asInstanceOf[js.Any]).asInstanceOf[ɵSafeHtml]
 
@@ -235,6 +231,10 @@ inline def ɵcompileNgModuleFactory[M](injector: Injector, options: CompilerOpti
 
 inline def ɵcompilePipe(`type`: Type[Any], meta: Pipe): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compilePipe")(`type`.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+inline def ɵconvertToBitFlags(): js.UndefOr[InjectFlags] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275convertToBitFlags")().asInstanceOf[js.UndefOr[InjectFlags]]
+inline def ɵconvertToBitFlags(flags: InjectFlags): js.UndefOr[InjectFlags] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275convertToBitFlags")(flags.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[InjectFlags]]
+inline def ɵconvertToBitFlags(flags: InjectOptions): js.UndefOr[InjectFlags] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275convertToBitFlags")(flags.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[InjectFlags]]
+
 inline def ɵcreateInjector(defType: Any): Injector = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any]).asInstanceOf[Injector]
 inline def ɵcreateInjector(defType: Any, parent: Null, additionalProviders: js.Array[StaticProvider]): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any])).asInstanceOf[Injector]
 inline def ɵcreateInjector(defType: Any, parent: Null, additionalProviders: js.Array[StaticProvider], name: String): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Injector]
@@ -263,9 +263,9 @@ inline def ɵfindLocaleData(locale: String): Any = ^.asInstanceOf[js.Dynamic].ap
 inline def ɵflushModuleScopingQueueAsMuchAsPossible(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275flushModuleScopingQueueAsMuchAsPossible")().asInstanceOf[Unit]
 
 inline def ɵformatRuntimeError[T /* <: Double */](code: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275formatRuntimeError")(code.asInstanceOf[js.Any]).asInstanceOf[String]
+@scala.annotation.targetName("\u0275formatRuntimeError_false")
+inline def ɵformatRuntimeError[T /* <: Double */](code: T, message: false): String = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275formatRuntimeError")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[String]
 inline def ɵformatRuntimeError[T /* <: Double */](code: T, message: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275formatRuntimeError")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[String]
-
-inline def ɵformatRuntimeError_false[T /* <: Double */](code: T, message: `false`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275formatRuntimeError")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[String]
 
 /**
   * @publicApi
@@ -301,6 +301,9 @@ inline def ɵinternalCreateApplication(config: AppProviders): js.Promise[Applica
 inline def ɵisBoundToModule[C](cf: ComponentFactory[C]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isBoundToModule")(cf.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
 inline def ɵisDefaultChangeDetectionStrategy(changeDetectionStrategy: ChangeDetectionStrategy): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isDefaultChangeDetectionStrategy")(changeDetectionStrategy.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+inline def ɵisEnvironmentProviders(value: Provider): /* is @angular/core.@angular/core.ɵInternalEnvironmentProviders */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isEnvironmentProviders")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/core.@angular/core.ɵInternalEnvironmentProviders */ Boolean]
+inline def ɵisEnvironmentProviders(value: ɵInternalEnvironmentProviders): /* is @angular/core.@angular/core.ɵInternalEnvironmentProviders */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isEnvironmentProviders")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/core.@angular/core.ɵInternalEnvironmentProviders */ Boolean]
 
 inline def ɵisInjectable(`type`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isInjectable")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
@@ -475,6 +478,9 @@ inline def ɵunwrapSafeValue[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyD
 
 inline def ɵɵCopyDefinitionFeature(definition: ɵComponentDef[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275CopyDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def ɵɵCopyDefinitionFeature(definition: ɵDirectiveDef[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275CopyDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def ɵɵHostDirectivesFeature(rawHostDirectives: js.Array[HostDirectiveConfig]): js.Function1[/* definition */ ɵDirectiveDef[Any], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275HostDirectivesFeature")(rawHostDirectives.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* definition */ ɵDirectiveDef[Any], Unit]]
+inline def ɵɵHostDirectivesFeature(rawHostDirectives: js.Function0[js.Array[HostDirectiveConfig]]): js.Function1[/* definition */ ɵDirectiveDef[Any], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275HostDirectivesFeature")(rawHostDirectives.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* definition */ ɵDirectiveDef[Any], Unit]]
 
 inline def ɵɵInheritDefinitionFeature(definition: ɵComponentDef[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275InheritDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def ɵɵInheritDefinitionFeature(definition: ɵDirectiveDef[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275InheritDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -4407,6 +4413,8 @@ inline def ɵɵtrustConstantHtml(html: TemplateStringsArray): TrustedHTML | Stri
 
 inline def ɵɵtrustConstantResourceUrl(url: TemplateStringsArray): TrustedScriptURL | String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275trustConstantResourceUrl")(url.asInstanceOf[js.Any]).asInstanceOf[TrustedScriptURL | String]
 
+inline def ɵɵvalidateIframeAttribute(attrValue: Any, tagName: String, attrName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275validateIframeAttribute")(attrValue.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any])).asInstanceOf[Any]
+
 inline def ɵɵviewQuery[T](predicate: js.Array[String], flags: QueryFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def ɵɵviewQuery[T](predicate: js.Array[String], flags: QueryFlags, read: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def ɵɵviewQuery[T](predicate: ProviderToken[Any], flags: QueryFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -4498,6 +4506,16 @@ type DirectiveDefListOrFactory = js.Function0[DirectiveDefList] | DirectiveDefLi
 
 type ForwardRefFn = js.Function0[Any]
 
+/**
+  * The goal here is to make sure that the browser DOM API is the Renderer.
+  * We do this by defining a subset of DOM API to be the renderer and then
+  * use that at runtime for rendering.
+  *
+  * At runtime we can then use the DOM api directly, in server or web-worker
+  * it will be easy to implement such API.
+  */
+type GlobalTargetName = "document" | "window" | "body"
+
 type GlobalTargetResolver = js.Function1[/* element */ Any, EventTarget]
 
 /**
@@ -4525,6 +4543,27 @@ type HookFn = js.Function0[Unit]
 
 type HostBindingsFunction[T] = js.Function2[/* rf */ ɵRenderFlags, /* ctx */ T, Unit]
 
+/**
+  * Mapping between the public aliases of directive bindings and the underlying inputs/outputs that
+  * they represent. Also serves as an allowlist of the inputs/outputs from the host directive that
+  * the author has decided to expose.
+  */
+type HostDirectiveBindingMap = StringDictionary[String]
+
+/** Values that can be used to define a host directive through the `HostDirectivesFeature`. */
+type HostDirectiveConfig = Type[Any] | typings.angularCore.anon.Directive
+
+/**
+  * Mapping between a directive that was used as a host directive
+  * and the configuration that was used to define it as such.
+  */
+type HostDirectiveDefs = Map[ɵDirectiveDef[Any], HostDirectiveDef[Any]]
+
+/**
+  * Defines the ICU type of `select` or `plural`
+  */
+type IcuType = 0 | 1
+
 /** 
 NOTE: Rewritten from type alias:
 {{{
@@ -4534,6 +4573,8 @@ to avoid circular code involving:
 - @angular/core.@angular/core.ImportProvidersSource
 */
 type ImportProvidersSource = Type[Any] | ModuleWithProviders[Any] | js.Array[Any]
+
+type ImportedNgModuleProviders = EnvironmentProviders
 
 /**
   * This array contains information about input properties that
@@ -4567,10 +4608,17 @@ type InitialInputData = js.Array[InitialInputs | Null]
   */
 type InitialInputs = js.Array[String]
 
+type InjectableProvider = ValueSansProvider | ExistingSansProvider | StaticClassSansProvider | ConstructorSansProvider | FactorySansProvider | ClassSansProvider
+
+type InjectorScope = "root" | "platform" | "environment"
+
 /**
   * See `TNode.insertBeforeIndex`
   */
 type InsertBeforeIndex = Null | Double | js.Array[Double]
+
+/** Flags associated with an LView (saved in LView[FLAGS]) */
+type LViewFlags = 1 | 3 | 4 | 8 | 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | 11 | 2047
 
 /**
   * Type for a function that extracts a value for a local refs.
@@ -4593,6 +4641,9 @@ type PipeDefList = js.Array[ɵPipeDef[Any]]
   */
 type PipeDefListOrFactory = js.Function0[PipeDefList] | PipeDefList
 
+/** More flags associated with an LView (saved in LView[PREORDER_HOOK_FLAGS]) */
+type PreOrderHookFlags = 65535 | 65536 | 16 | 4294901760d
+
 type Predicate[T] = js.Function1[/* value */ T, Boolean]
 
 /**
@@ -4609,7 +4660,7 @@ type ProcessProvidersFunction = js.Function1[/* providers */ js.Array[Provider],
   * using {@link ViewContainerRef#createComponent}. The last slot that specifies the
   * wildcard selector will retrieve all projectable nodes which do not match any selector.
   */
-type ProjectionSlots = js.Array[ɵCssSelectorList | Asterisk]
+type ProjectionSlots = js.Array[ɵCssSelectorList | "*"]
 
 /**
   * Store the runtime input or output names for all the directives.
@@ -4633,23 +4684,30 @@ type PropertyAliasValue = js.Array[Double | String]
   */
 type PropertyAliases = StringDictionary[PropertyAliasValue]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.angularCore.mod.TypeProvider
-  - typings.angularCore.mod.ValueProvider
-  - typings.angularCore.mod.ClassProvider
-  - typings.angularCore.mod.ConstructorProvider
-  - typings.angularCore.mod.ExistingProvider
-  - typings.angularCore.mod.FactoryProvider
-  - js.Array[scala.Any]
-*/
-type Provider = _Provider | js.Array[Any] | TypeProvider
+type Provider = TypeProvider | ValueProvider | ClassProvider | ConstructorProvider | ExistingProvider | FactoryProvider | js.Array[Any]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.angularCore.mod.Type[T]
-  - typings.angularCore.mod.AbstractType[T]
-  - typings.angularCore.mod.InjectionToken[T]
-*/
-type ProviderToken[T] = _ProviderToken[T] | AbstractType[T]
+type ProviderToken[T] = Type[T] | AbstractType[T] | InjectionToken[T]
+
+/**
+  * A set of flags to be used with Queries.
+  *
+  * NOTE: Ensure changes here are reflected in `packages/compiler/src/render3/view/compiler.ts`
+  */
+type QueryFlags = 0 | 1 | 2 | 4
+
+type R3DeclareTemplateDependencyFacade = R3DeclareDirectiveDepende | R3DeclarePipeDependencyFa | R3DeclareNgModuleDependen
+
+/**
+  * The list of error codes used in runtime code of the `core` package.
+  * Reserved error code range: 100-999.
+  *
+  * Note: the minus sign denotes the fact that a particular code has a detailed guide on
+  * angular.io. This extra annotation is needed to avoid introducing a separate set to store
+  * error codes which have guides, which might leak into runtime code.
+  *
+  * Full list of available error guides can be found at https://angular.io/errors.
+  */
+type RuntimeErrorCode = -100 | 101 | -200 | -201 | 202 | -203 | 204 | 205 | 207 | 208 | 209 | -300 | -301 | -302 | 303 | 304 | 305 | 306 | 307 | 308 | 309 | 310 | 311 | 312 | 400 | 401 | 402 | 403 | 404 | 405 | 406 | 407 | 700 | 701 | 800 | 900 | 901 | 902 | 903 | 904 | 905 | 906 | 907 | 908 | 909 | -910
 
 /**
   * Function used to sanitize the value before writing it into the renderer.
@@ -4660,17 +4718,12 @@ type SanitizerFn = js.Function3[
 /* propName */ js.UndefOr[String], 
 String | TrustedHTML | TrustedScript | TrustedScriptURL]
 
+/** Flags used to build up CssSelectors */
+type SelectorFlags = 1 | 2 | 4 | 8
+
 type SimpleChanges = StringDictionary[SimpleChange]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.angularCore.mod.ValueProvider
-  - typings.angularCore.mod.ExistingProvider
-  - typings.angularCore.mod.StaticClassProvider
-  - typings.angularCore.mod.ConstructorProvider
-  - typings.angularCore.mod.FactoryProvider
-  - js.Array[scala.Any]
-*/
-type StaticProvider = _StaticProvider | js.Array[Any]
+type StaticProvider = ValueProvider | ExistingProvider | StaticClassProvider | ConstructorProvider | FactoryProvider | js.Array[Any]
 
 /**
   * A combination of:
@@ -4733,6 +4786,35 @@ type TData = js.Array[
 TNode | ɵPipeDef[Any] | ɵDirectiveDef[Any] | ɵComponentDef[Any] | Double | TStylingRange | TStylingKey | ProviderToken[Any] | TI18n | I18nUpdateOpCodes | TIcu | Null | String]
 
 /**
+  * Corresponds to the TNode.flags property.
+  */
+type TNodeFlags = 1 | 2 | 4 | 8 | 16 | 32 | 64
+
+/**
+  * Corresponds to the TNode.providerIndexes property.
+  */
+type TNodeProviderIndexes = 1048575 | 20 | 1048576
+
+/**
+  * TNodeType corresponds to the {@link TNode} `type` property.
+  *
+  * NOTE: type IDs are such that we use each bit to denote a type. This is done so that we can easily
+  * check if the `TNode` is of more than one type.
+  *
+  * `if (tNode.type === TNodeType.Text || tNode.type === TNode.Element)`
+  * can be written as:
+  * `if (tNode.type & (TNodeType.Text | TNodeType.Element))`
+  *
+  * However any given `TNode` can only be of one type.
+  */
+type TNodeType = 1 | 2 | 4 | 8 | 16 | 32 | 64 | 3 | 12
+
+/**
+  * Type representing a set of TNodes that can have local refs (`#foo`) placed on them.
+  */
+type TNodeWithLocalRefs = TContainerNode | TElementNode | TElementContainerNode
+
+/**
   * Value stored in the `TData` which is needed to re-concatenate the styling.
   *
   * See: `TStylingKeyPrimitive` and `TStylingStatic`
@@ -4749,7 +4831,7 @@ type TStylingKey = TStylingKeyPrimitive | TStylingStatic
   *   is combined with directive which shadows its input `@Input('class')`. That way the binding
   *   should not participate in the styling resolution.
   */
-type TStylingKeyPrimitive = String | Null | `false`
+type TStylingKeyPrimitive = String | Null | false
 
 /**
   * Store the static values for the styling binding.
@@ -4813,6 +4895,16 @@ type TStylingKeyPrimitive = String | Null | `false`
   */
 type TStylingStatic = KeyValueArray[Any]
 
+/**
+  * Explicitly marks `TView` as a specific type in `ngDevMode`
+  *
+  * It is useful to know conceptually what time of `TView` we are dealing with when
+  * debugging an application (even if the runtime does not need it.) For this reason
+  * we store this information in the `ngDevMode` `TView` and than use it for
+  * better debugging experience.
+  */
+type TViewType = 0 | 1 | 2
+
 type TrackByFunction[T] = js.Function2[/* index */ Double, /* item */ T, Any]
 
 type Type2 = js.Function
@@ -4828,13 +4920,25 @@ type ViewQueriesFunction[T] = js.Function2[/* rf */ ɵRenderFlags, /* ctx */ T, 
 
 type viewEngineChangeDetectorRefInterface = ChangeDetectorRef
 
+type ɵAttributeMarker = -1 | 0 | 1 | 2 | 3 | 4 | 5 | 6
+
+type ɵBypassType = "URL" | "HTML" | "ResourceURL" | "Script" | "Style"
+
 type ɵCssSelectorList = js.Array[CssSelector]
+
+type ɵCurrencyIndex = 0 | 1 | 2
+
+type ɵExtraLocaleDataIndex = 0 | 1 | 2
 
 type ɵProfiler = js.Function3[
 /* event */ ɵProfilerEvent, 
 /* instance */ js.Object | Null, 
 /* hookOrListener */ js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Any]], 
 Unit]
+
+type ɵProfilerEvent = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+
+type ɵRenderFlags = 1 | 2
 
 type ɵSafeHtml = ɵSafeValue
 
@@ -4846,9 +4950,9 @@ type ɵSafeStyle = ɵSafeValue
 
 type ɵSafeUrl = ɵSafeValue
 
-type ɵɵComponentDeclaration[T, Selector /* <: String */, ExportAs /* <: js.Array[String] */, InputMap /* <: StringDictionary[String] */, OutputMap /* <: StringDictionary[String] */, QueryFields /* <: js.Array[String] */, NgContentSelectors /* <: js.Array[String] */, IsStandalone /* <: Boolean */] = Any
+type ɵɵComponentDeclaration[T, Selector /* <: String */, ExportAs /* <: js.Array[String] */, InputMap /* <: StringDictionary[String] */, OutputMap /* <: StringDictionary[String] */, QueryFields /* <: js.Array[String] */, NgContentSelectors /* <: js.Array[String] */, IsStandalone /* <: Boolean */, HostDirectives] = Any
 
-type ɵɵDirectiveDeclaration[T, Selector /* <: String */, ExportAs /* <: js.Array[String] */, InputMap /* <: StringDictionary[String] */, OutputMap /* <: StringDictionary[String] */, QueryFields /* <: js.Array[String] */, NgContentSelectors /* <: scala.Nothing */, IsStandalone /* <: Boolean */] = Any
+type ɵɵDirectiveDeclaration[T, Selector /* <: String */, ExportAs /* <: js.Array[String] */, InputMap /* <: StringDictionary[String] */, OutputMap /* <: StringDictionary[String] */, QueryFields /* <: js.Array[String] */, NgContentSelectors /* <: scala.Nothing */, IsStandalone /* <: Boolean */, HostDirectives] = Any
 
 type ɵɵFactoryDeclaration[T, CtorDependencies /* <: js.Array[CtorDependency] */] = Any
 

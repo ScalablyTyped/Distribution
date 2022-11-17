@@ -1,11 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliStrings.`process-task`
-import typings.angularCompilerCli.angularCompilerCliStrings.`task-completed`
-import typings.angularCompilerCli.angularCompilerCliStrings.`transformed-files`
-import typings.angularCompilerCli.angularCompilerCliStrings.`update-package-json`
-import typings.angularCompilerCli.angularCompilerCliStrings.error
-import typings.angularCompilerCli.angularCompilerCliStrings.ready
 import typings.angularCompilerCli.ngccSrcExecutionTasksApiMod.Task
 import typings.angularCompilerCli.ngccSrcExecutionTasksApiMod.TaskProcessingOutcome
 import typings.angularCompilerCli.ngccSrcUtilsMod.JsonObject
@@ -19,12 +13,11 @@ object ngccSrcExecutionClusterApiMod {
   
   trait ErrorMessage
     extends StObject
-       with JsonObject
-       with MessageFromWorker {
+       with JsonObject {
     
     var error: String
     
-    var `type`: error
+    var `type`: "error"
   }
   object ErrorMessage {
     
@@ -38,50 +31,11 @@ object ngccSrcExecutionClusterApiMod {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "error"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.ReadyMessage
-    - typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.ErrorMessage
-    - typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.TaskCompletedMessage
-    - typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.TransformedFilesMessage
-    - typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.UpdatePackageJsonMessage
-  */
-  trait MessageFromWorker extends StObject
-  object MessageFromWorker {
-    
-    inline def ErrorMessage(error: String): typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.ErrorMessage = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("error")
-      __obj.asInstanceOf[typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.ErrorMessage]
-    }
-    
-    inline def ReadyMessage(): typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.ReadyMessage = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("ready")
-      __obj.asInstanceOf[typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.ReadyMessage]
-    }
-    
-    inline def TaskCompletedMessage(outcome: TaskProcessingOutcome): typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.TaskCompletedMessage = {
-      val __obj = js.Dynamic.literal(outcome = outcome.asInstanceOf[js.Any], message = null)
-      __obj.updateDynamic("type")("task-completed")
-      __obj.asInstanceOf[typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.TaskCompletedMessage]
-    }
-    
-    inline def TransformedFilesMessage(files: js.Array[AbsoluteFsPath]): typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.TransformedFilesMessage = {
-      val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("transformed-files")
-      __obj.asInstanceOf[typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.TransformedFilesMessage]
-    }
-    
-    inline def UpdatePackageJsonMessage(changes: js.Array[PackageJsonChange], packageJsonPath: AbsoluteFsPath): typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.UpdatePackageJsonMessage = {
-      val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], packageJsonPath = packageJsonPath.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("update-package-json")
-      __obj.asInstanceOf[typings.angularCompilerCli.ngccSrcExecutionClusterApiMod.UpdatePackageJsonMessage]
-    }
-  }
+  type MessageFromWorker = ReadyMessage | ErrorMessage | TaskCompletedMessage | TransformedFilesMessage | UpdatePackageJsonMessage
   
   type MessageToWorker = ProcessTaskMessage
   
@@ -91,7 +45,7 @@ object ngccSrcExecutionClusterApiMod {
     
     var task: Task
     
-    var `type`: `process-task`
+    var `type`: "process-task"
   }
   object ProcessTaskMessage {
     
@@ -105,16 +59,15 @@ object ngccSrcExecutionClusterApiMod {
       
       inline def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
       
-      inline def setType(value: `process-task`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "process-task"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait ReadyMessage
     extends StObject
-       with JsonObject
-       with MessageFromWorker {
+       with JsonObject {
     
-    var `type`: ready
+    var `type`: "ready"
   }
   object ReadyMessage {
     
@@ -126,20 +79,19 @@ object ngccSrcExecutionClusterApiMod {
     
     extension [Self <: ReadyMessage](x: Self) {
       
-      inline def setType(value: ready): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "ready"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait TaskCompletedMessage
     extends StObject
-       with JsonObject
-       with MessageFromWorker {
+       with JsonObject {
     
     var message: String | Null
     
     var outcome: TaskProcessingOutcome
     
-    var `type`: `task-completed`
+    var `type`: "task-completed"
   }
   object TaskCompletedMessage {
     
@@ -157,18 +109,17 @@ object ngccSrcExecutionClusterApiMod {
       
       inline def setOutcome(value: TaskProcessingOutcome): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
       
-      inline def setType(value: `task-completed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "task-completed"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait TransformedFilesMessage
     extends StObject
-       with JsonObject
-       with MessageFromWorker {
+       with JsonObject {
     
     var files: js.Array[AbsoluteFsPath]
     
-    var `type`: `transformed-files`
+    var `type`: "transformed-files"
   }
   object TransformedFilesMessage {
     
@@ -184,20 +135,19 @@ object ngccSrcExecutionClusterApiMod {
       
       inline def setFilesVarargs(value: AbsoluteFsPath*): Self = StObject.set(x, "files", js.Array(value*))
       
-      inline def setType(value: `transformed-files`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "transformed-files"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait UpdatePackageJsonMessage
     extends StObject
-       with JsonObject
-       with MessageFromWorker {
+       with JsonObject {
     
     var changes: js.Array[PackageJsonChange]
     
     var packageJsonPath: AbsoluteFsPath
     
-    var `type`: `update-package-json`
+    var `type`: "update-package-json"
   }
   object UpdatePackageJsonMessage {
     
@@ -215,7 +165,7 @@ object ngccSrcExecutionClusterApiMod {
       
       inline def setPackageJsonPath(value: AbsoluteFsPath): Self = StObject.set(x, "packageJsonPath", value.asInstanceOf[js.Any])
       
-      inline def setType(value: `update-package-json`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "update-package-json"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -1,20 +1,17 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TextNode
   extends StObject
-     with Node2
-     with TemplateChildNode
-     with TemplateTextChildNode {
+     with Node2 {
   
   var content: String
   
   @JSName("type")
-  var type_TextNode: `2`
+  var type_TextNode: 2
 }
 object TextNode {
   
@@ -28,6 +25,6 @@ object TextNode {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `2`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

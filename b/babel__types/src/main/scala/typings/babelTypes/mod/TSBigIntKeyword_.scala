@@ -1,20 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSBigIntKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSBigIntKeyword_
+trait TSBigIntKeyword_
   extends StObject
-     with BaseNode
-     with TSBaseType
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   @JSName("type")
-  var type_TSBigIntKeyword_ : TSBigIntKeyword
+  var type_TSBigIntKeyword_ : "TSBigIntKeyword"
 }
 object TSBigIntKeyword_ {
   
@@ -26,6 +21,6 @@ object TSBigIntKeyword_ {
   
   extension [Self <: TSBigIntKeyword_](x: Self) {
     
-    inline def setType(value: TSBigIntKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSBigIntKeyword"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

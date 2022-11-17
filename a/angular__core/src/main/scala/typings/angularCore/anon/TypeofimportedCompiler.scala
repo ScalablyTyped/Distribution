@@ -12,7 +12,6 @@ import org.scalablytyped.runtime.Instantiable7
 import org.scalablytyped.runtime.Instantiable8
 import org.scalablytyped.runtime.Instantiable9
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCompiler.anon.Directive
 import typings.angularCompiler.anon.Key
 import typings.angularCompiler.mod.AST
 import typings.angularCompiler.mod.ASTWithSource
@@ -553,7 +552,7 @@ trait TypeofimportedCompiler extends StObject {
     ], 
     /* references */ Map[
       TmplAstBoundAttribute | TmplAstBoundEvent | TmplAstReference | TmplAstTextAttribute, 
-      (Directive[/* import warning: RewrittenClass.unapply cls was tparam DirectiveT */ Any]) | TmplAstElement | TmplAstTemplate
+      (typings.angularCompiler.anon.Directive[/* import warning: RewrittenClass.unapply cls was tparam DirectiveT */ Any]) | TmplAstElement | TmplAstTemplate
     ], 
     /* exprTargets */ Map[AST, TmplAstReference | TmplAstVariable], 
     /* symbols */ Map[TmplAstReference | TmplAstVariable, TmplAstTemplate], 
@@ -566,7 +565,9 @@ trait TypeofimportedCompiler extends StObject {
   var R3Identifiers: TypeofR3Identifiers = js.native
   
   var R3TargetBinder: Instantiable1[
-    /* directiveMatcher */ SelectorMatcher[/* import warning: RewrittenClass.unapply cls was tparam DirectiveT */ Any], 
+    /* directiveMatcher */ SelectorMatcher[
+      js.Array[/* import warning: RewrittenClass.unapply cls was tparam DirectiveT */ Any]
+    ], 
     typings.angularCompiler.mod.R3TargetBinder[DirectiveMeta]
   ] = js.native
   

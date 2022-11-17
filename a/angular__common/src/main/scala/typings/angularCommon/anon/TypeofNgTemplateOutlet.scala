@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngTemplateOutlet]`
 import typings.angularCore.mod.ViewContainerRef
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
@@ -20,13 +18,14 @@ trait TypeofNgTemplateOutlet
   
   var ɵdir: ɵɵDirectiveDeclaration[
     typings.angularCommon.mod.NgTemplateOutlet, 
-    `[ngTemplateOutlet]`, 
+    "[ngTemplateOutlet]", 
     scala.Nothing, 
     NgTemplateOutlet, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[typings.angularCommon.mod.NgTemplateOutlet, scala.Nothing] = js.native

@@ -1,19 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.Browser
-import typings.electron.electronStrings.GPU
-import typings.electron.electronStrings.Tab
-import typings.electron.electronStrings.Unknown
-import typings.electron.electronStrings.Utility
-import typings.electron.electronStrings.Zygote
-import typings.electron.electronStrings.`Pepper Plugin Broker`
-import typings.electron.electronStrings.`Pepper Plugin`
-import typings.electron.electronStrings.`Sandbox helper`
-import typings.electron.electronStrings.high
-import typings.electron.electronStrings.low
-import typings.electron.electronStrings.medium
-import typings.electron.electronStrings.unknown_
-import typings.electron.electronStrings.untrusted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +25,7 @@ trait ProcessMetric extends StObject {
     *
     * @platform win32
     */
-  var integrityLevel: js.UndefOr[untrusted | low | medium | high | unknown_] = js.undefined
+  var integrityLevel: js.UndefOr["untrusted" | "low" | "medium" | "high" | "unknown"] = js.undefined
   
   /**
     * Memory information for the process.
@@ -72,7 +58,7 @@ trait ProcessMetric extends StObject {
   /**
     * Process type. One of the following values:
     */
-  var `type`: Browser | Tab | Utility | Zygote | (`Sandbox helper`) | GPU | (`Pepper Plugin`) | (`Pepper Plugin Broker`) | Unknown
+  var `type`: "Browser" | "Tab" | "Utility" | "Zygote" | ("Sandbox helper") | "GPU" | ("Pepper Plugin") | ("Pepper Plugin Broker") | "Unknown"
 }
 object ProcessMetric {
   
@@ -81,7 +67,7 @@ object ProcessMetric {
     creationTime: Double,
     memory: MemoryInfo,
     pid: Double,
-    `type`: Browser | Tab | Utility | Zygote | (`Sandbox helper`) | GPU | (`Pepper Plugin`) | (`Pepper Plugin Broker`) | Unknown
+    `type`: "Browser" | "Tab" | "Utility" | "Zygote" | ("Sandbox helper") | "GPU" | ("Pepper Plugin") | ("Pepper Plugin Broker") | "Unknown"
   ): ProcessMetric = {
     val __obj = js.Dynamic.literal(cpu = cpu.asInstanceOf[js.Any], creationTime = creationTime.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -94,7 +80,7 @@ object ProcessMetric {
     
     inline def setCreationTime(value: Double): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    inline def setIntegrityLevel(value: untrusted | low | medium | high | unknown_): Self = StObject.set(x, "integrityLevel", value.asInstanceOf[js.Any])
+    inline def setIntegrityLevel(value: "untrusted" | "low" | "medium" | "high" | "unknown"): Self = StObject.set(x, "integrityLevel", value.asInstanceOf[js.Any])
     
     inline def setIntegrityLevelUndefined: Self = StObject.set(x, "integrityLevel", js.undefined)
     
@@ -115,7 +101,7 @@ object ProcessMetric {
     inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
     inline def setType(
-      value: Browser | Tab | Utility | Zygote | (`Sandbox helper`) | GPU | (`Pepper Plugin`) | (`Pepper Plugin Broker`) | Unknown
+      value: "Browser" | "Tab" | "Utility" | "Zygote" | ("Sandbox helper") | "GPU" | ("Pepper Plugin") | ("Pepper Plugin Broker") | "Unknown"
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

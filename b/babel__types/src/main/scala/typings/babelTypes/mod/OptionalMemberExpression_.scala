@@ -1,16 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.OptionalMemberExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait OptionalMemberExpression_
+trait OptionalMemberExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with Standardized {
+     with BaseNode {
   
   var computed: Boolean
   
@@ -21,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var property: Expression | Identifier_
   
   @JSName("type")
-  var type_OptionalMemberExpression_ : OptionalMemberExpression
+  var type_OptionalMemberExpression_ : "OptionalMemberExpression"
 }
 object OptionalMemberExpression_ {
   
@@ -42,6 +38,6 @@ object OptionalMemberExpression_ {
     
     inline def setProperty(value: Expression | Identifier_): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    inline def setType(value: OptionalMemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "OptionalMemberExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`prevent-app-suspension`
-import typings.electron.electronStrings.`prevent-display-sleep`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +27,9 @@ trait PowerSaveBlocker extends StObject {
     * calling B requests for `prevent-display-sleep`. `prevent-display-sleep` will be
     * used until B stops its request. After that, `prevent-app-suspension` is used.
     */
-  def start(`type`: `prevent-app-suspension` | `prevent-display-sleep`): Double
+  @JSName("start")
+  @scala.annotation.targetName("start_preventappsuspension_preventdisplaysleep")
+  def start(`type`: "prevent-app-suspension" | "prevent-display-sleep"): Double
   
   /**
     * Stops the specified power save blocker.
@@ -40,7 +40,7 @@ object PowerSaveBlocker {
   
   inline def apply(
     isStarted: Double => Boolean,
-    start: `prevent-app-suspension` | `prevent-display-sleep` => Double,
+    start: "prevent-app-suspension" | "prevent-display-sleep" => Double,
     stop: Double => Unit
   ): PowerSaveBlocker = {
     val __obj = js.Dynamic.literal(isStarted = js.Any.fromFunction1(isStarted), start = js.Any.fromFunction1(start), stop = js.Any.fromFunction1(stop))
@@ -51,7 +51,7 @@ object PowerSaveBlocker {
     
     inline def setIsStarted(value: Double => Boolean): Self = StObject.set(x, "isStarted", js.Any.fromFunction1(value))
     
-    inline def setStart(value: `prevent-app-suspension` | `prevent-display-sleep` => Double): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: "prevent-app-suspension" | "prevent-display-sleep" => Double): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     inline def setStop(value: Double => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
   }

@@ -5,8 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +42,7 @@ object distCommonjsModulesDropdownDropdownMenuMod extends Shortcut {
     var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A dropdown menu can open to the left or to the right. */
-    var direction: js.UndefOr[left | right] = js.undefined
+    var direction: js.UndefOr["left" | "right"] = js.undefined
     
     /** Whether or not the dropdown menu is displayed. */
     var open: js.UndefOr[Boolean] = js.undefined
@@ -77,7 +75,7 @@ object distCommonjsModulesDropdownDropdownMenuMod extends Shortcut {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setDirection(value: left | right): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "left" | "right"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       

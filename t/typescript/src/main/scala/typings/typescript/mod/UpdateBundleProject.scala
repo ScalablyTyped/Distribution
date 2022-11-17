@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UpdateBundleProject[T /* <: BuilderProgram */]
   extends StObject
-     with InvalidatedProjectBase
-     with InvalidatedProject[T] {
+     with InvalidatedProjectBase {
   
   def emit(): js.UndefOr[EmitResult | BuildInvalidedProject[T]] = js.native
   def emit(writeFile: Unit, customTransformers: CustomTransformers): js.UndefOr[EmitResult | BuildInvalidedProject[T]] = js.native

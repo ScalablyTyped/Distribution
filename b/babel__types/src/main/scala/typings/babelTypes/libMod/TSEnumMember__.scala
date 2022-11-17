@@ -1,22 +1,19 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSEnumMember
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSEnumMember__
   extends StObject
-     with BaseNode
-     with Node
-     with TypeScript {
+     with BaseNode {
   
   var id: Identifier_ | StringLiteral_
   
   var initializer: js.UndefOr[Expression | Null] = js.undefined
   
   @JSName("type")
-  var type_TSEnumMember__ : TSEnumMember
+  var type_TSEnumMember__ : "TSEnumMember"
 }
 object TSEnumMember__ {
   
@@ -36,6 +33,6 @@ object TSEnumMember__ {
     
     inline def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
     
-    inline def setType(value: TSEnumMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSEnumMember"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.DisableGutters
-import typings.materialUiCore.materialUiCoreStrings.div
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -24,37 +23,27 @@ object containerContainerMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Container/Container", JSImport.Default)
   @js.native
-  val default: OverridableComponent[ContainerTypeMap[js.Object, div]] = js.native
+  val default: OverridableComponent[ContainerTypeMap[js.Object, "div"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.disableGutters
-    - typings.materialUiCore.materialUiCoreStrings.fixed
-    - typings.materialUiCore.materialUiCoreStrings.maxWidthXs
-    - typings.materialUiCore.materialUiCoreStrings.maxWidthSm
-    - typings.materialUiCore.materialUiCoreStrings.maxWidthMd
-    - typings.materialUiCore.materialUiCoreStrings.maxWidthLg
-    - typings.materialUiCore.materialUiCoreStrings.maxWidthXl
-  */
-  trait ContainerClassKey extends StObject
   object ContainerClassKey {
     
-    inline def disableGutters: typings.materialUiCore.materialUiCoreStrings.disableGutters = "disableGutters".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disableGutters]
+    inline def disableGutters: "disableGutters" = "disableGutters".asInstanceOf["disableGutters"]
     
-    inline def fixed: typings.materialUiCore.materialUiCoreStrings.fixed = "fixed".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.fixed]
+    inline def fixed: "fixed" = "fixed".asInstanceOf["fixed"]
     
-    inline def maxWidthLg: typings.materialUiCore.materialUiCoreStrings.maxWidthLg = "maxWidthLg".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.maxWidthLg]
+    inline def maxWidthLg: "maxWidthLg" = "maxWidthLg".asInstanceOf["maxWidthLg"]
     
-    inline def maxWidthMd: typings.materialUiCore.materialUiCoreStrings.maxWidthMd = "maxWidthMd".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.maxWidthMd]
+    inline def maxWidthMd: "maxWidthMd" = "maxWidthMd".asInstanceOf["maxWidthMd"]
     
-    inline def maxWidthSm: typings.materialUiCore.materialUiCoreStrings.maxWidthSm = "maxWidthSm".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.maxWidthSm]
+    inline def maxWidthSm: "maxWidthSm" = "maxWidthSm".asInstanceOf["maxWidthSm"]
     
-    inline def maxWidthXl: typings.materialUiCore.materialUiCoreStrings.maxWidthXl = "maxWidthXl".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.maxWidthXl]
+    inline def maxWidthXl: "maxWidthXl" = "maxWidthXl".asInstanceOf["maxWidthXl"]
     
-    inline def maxWidthXs: typings.materialUiCore.materialUiCoreStrings.maxWidthXs = "maxWidthXs".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.maxWidthXs]
+    inline def maxWidthXs: "maxWidthXs" = "maxWidthXs".asInstanceOf["maxWidthXs"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
   }
+  type ContainerClassKey = "root" | "disableGutters" | "fixed" | "maxWidthXs" | "maxWidthSm" | "maxWidthMd" | "maxWidthLg" | "maxWidthXl"
   
   type ContainerProps[D /* <: ElementType[Any] */, P] = OverrideProps[ContainerTypeMap[P, D], D]
   
@@ -83,8 +72,8 @@ object containerContainerMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[ContainerTypeMap[js.Object, div]]
+  type _To = OverridableComponent[ContainerTypeMap[js.Object, "div"]]
   
   /* This means you don't have to write `default`, but can instead just say `containerContainerMod.foo` */
-  override def _to: OverridableComponent[ContainerTypeMap[js.Object, div]] = default
+  override def _to: OverridableComponent[ContainerTypeMap[js.Object, "div"]] = default
 }

@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Dense
-import typings.materialUiCore.materialUiCoreStrings.ul
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -25,25 +24,19 @@ object listListMod extends Shortcut {
     */
   @JSImport("@material-ui/core/List/List", JSImport.Default)
   @js.native
-  val default: OverridableComponent[ListTypeMap[js.Object, ul]] = js.native
+  val default: OverridableComponent[ListTypeMap[js.Object, "ul"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.padding
-    - typings.materialUiCore.materialUiCoreStrings.dense
-    - typings.materialUiCore.materialUiCoreStrings.subheader
-  */
-  trait ListClassKey extends StObject
   object ListClassKey {
     
-    inline def dense: typings.materialUiCore.materialUiCoreStrings.dense = "dense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dense]
+    inline def dense: "dense" = "dense".asInstanceOf["dense"]
     
-    inline def padding: typings.materialUiCore.materialUiCoreStrings.padding = "padding".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.padding]
+    inline def padding: "padding" = "padding".asInstanceOf["padding"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def subheader: typings.materialUiCore.materialUiCoreStrings.subheader = "subheader".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subheader]
+    inline def subheader: "subheader" = "subheader".asInstanceOf["subheader"]
   }
+  type ListClassKey = "root" | "padding" | "dense" | "subheader"
   
   type ListProps[D /* <: ElementType[Any] */, P] = OverrideProps[ListTypeMap[P, D], D]
   
@@ -72,8 +65,8 @@ object listListMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[ListTypeMap[js.Object, ul]]
+  type _To = OverridableComponent[ListTypeMap[js.Object, "ul"]]
   
   /* This means you don't have to write `default`, but can instead just say `listListMod.foo` */
-  override def _to: OverridableComponent[ListTypeMap[js.Object, ul]] = default
+  override def _to: OverridableComponent[ListTypeMap[js.Object, "ul"]] = default
 }

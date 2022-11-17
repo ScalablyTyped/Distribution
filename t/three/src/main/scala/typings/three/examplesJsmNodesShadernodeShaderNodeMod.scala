@@ -249,11 +249,7 @@ object examplesJsmNodesShadernodeShaderNodeMod {
   @js.native
   trait NodeObjects_[T] extends StObject
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.three.examplesJsmNodesNodesMod.Node
-    - typings.three.examplesJsmNodesCoreConstantsMod.NodeTypeOption
-  */
-  trait NodeOrType extends StObject
+  type NodeOrType = Node | NodeTypeOption
   
   type NodeRepresentation[T /* <: Node */] = Double | Boolean | Node | Swizzable[T]
   

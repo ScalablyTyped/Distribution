@@ -2,7 +2,6 @@ package typings.node.childProcessMod
 
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.BufferEncoding
-import typings.node.nodeStrings.buffer_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait SpawnSyncOptions
   extends StObject
      with CommonSpawnOptions {
   
-  var encoding: js.UndefOr[BufferEncoding | buffer_ | Null] = js.undefined
+  var encoding: js.UndefOr[BufferEncoding | "buffer" | Null] = js.undefined
   
   var input: js.UndefOr[String | ArrayBufferView] = js.undefined
   
@@ -26,7 +25,7 @@ object SpawnSyncOptions {
   
   extension [Self <: SpawnSyncOptions](x: Self) {
     
-    inline def setEncoding(value: BufferEncoding | buffer_): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: BufferEncoding | "buffer"): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
     

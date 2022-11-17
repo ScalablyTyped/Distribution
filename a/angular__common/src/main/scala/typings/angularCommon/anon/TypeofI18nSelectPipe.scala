@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.i18nSelect
 import typings.angularCommon.mod.I18nSelectPipe
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
@@ -17,5 +15,5 @@ trait TypeofI18nSelectPipe
   
   var ɵfac: ɵɵFactoryDeclaration[I18nSelectPipe, scala.Nothing] = js.native
   
-  var ɵpipe: ɵɵPipeDeclaration[I18nSelectPipe, i18nSelect, `true`] = js.native
+  var ɵpipe: ɵɵPipeDeclaration[I18nSelectPipe, "i18nSelect", true] = js.native
 }

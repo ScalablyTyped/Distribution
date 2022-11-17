@@ -1,10 +1,6 @@
 package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNative.reactNativeStrings.`force-cache`
-import typings.reactNative.reactNativeStrings.`only-if-cached`
-import typings.reactNative.reactNativeStrings.default
-import typings.reactNative.reactNativeStrings.reload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +41,7 @@ trait ImageURISource extends StObject {
     *
     * @platform ios
     */
-  var cache: js.UndefOr[default | reload | `force-cache` | `only-if-cached`] = js.undefined
+  var cache: js.UndefOr["default" | "reload" | "force-cache" | "only-if-cached"] = js.undefined
   
   /**
     * `headers` is an object representing the HTTP headers to send along with the
@@ -97,7 +93,7 @@ object ImageURISource {
     
     inline def setBundleUndefined: Self = StObject.set(x, "bundle", js.undefined)
     
-    inline def setCache(value: default | reload | `force-cache` | `only-if-cached`): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: "default" | "reload" | "force-cache" | "only-if-cached"): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     

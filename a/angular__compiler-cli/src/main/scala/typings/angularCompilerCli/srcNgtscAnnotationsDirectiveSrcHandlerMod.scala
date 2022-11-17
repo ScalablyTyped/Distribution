@@ -3,7 +3,6 @@ package typings.angularCompilerCli
 import typings.angularCompiler.mod.ConstantPool
 import typings.angularCompiler.mod.R3ClassMetadata
 import typings.angularCompiler.mod.R3DirectiveMetadata
-import typings.angularCompilerCli.angularCompilerCliStrings.dynamic
 import typings.angularCompilerCli.anon.ReadonlyDirectiveHandlerD
 import typings.angularCompilerCli.srcNgtscAnnotationsDirectiveSrcSymbolMod.DirectiveSymbol
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
@@ -116,7 +115,7 @@ object srcNgtscAnnotationsDirectiveSrcHandlerMod {
   
   trait DirectiveHandlerData extends StObject {
     
-    var baseClass: Reference[ClassDeclaration[DeclarationNode]] | dynamic | Null
+    var baseClass: Reference[ClassDeclaration[DeclarationNode]] | "dynamic" | Null
     
     var classMetadata: R3ClassMetadata | Null
     
@@ -152,7 +151,7 @@ object srcNgtscAnnotationsDirectiveSrcHandlerMod {
     
     extension [Self <: DirectiveHandlerData](x: Self) {
       
-      inline def setBaseClass(value: Reference[ClassDeclaration[DeclarationNode]] | dynamic): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
+      inline def setBaseClass(value: Reference[ClassDeclaration[DeclarationNode]] | "dynamic"): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
       
       inline def setBaseClassNull: Self = StObject.set(x, "baseClass", null)
       

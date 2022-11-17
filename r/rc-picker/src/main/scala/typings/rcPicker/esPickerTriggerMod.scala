@@ -1,7 +1,5 @@
 package typings.rcPicker
 
-import typings.rcPicker.rcPickerStrings.ltr
-import typings.rcPicker.rcPickerStrings.rtl
 import typings.rcTrigger.esInterfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
@@ -23,7 +21,7 @@ object esPickerTriggerMod {
     
     var children: ReactElement
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var dropdownAlign: js.UndefOr[AlignType] = js.undefined
     
@@ -56,7 +54,7 @@ object esPickerTriggerMod {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -96,21 +94,15 @@ object esPickerTriggerMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcPicker.rcPickerStrings.bottomLeft
-    - typings.rcPicker.rcPickerStrings.bottomRight
-    - typings.rcPicker.rcPickerStrings.topLeft
-    - typings.rcPicker.rcPickerStrings.topRight
-  */
-  trait Placement extends StObject
   object Placement {
     
-    inline def bottomLeft: typings.rcPicker.rcPickerStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.rcPicker.rcPickerStrings.bottomLeft]
+    inline def bottomLeft: "bottomLeft" = "bottomLeft".asInstanceOf["bottomLeft"]
     
-    inline def bottomRight: typings.rcPicker.rcPickerStrings.bottomRight = "bottomRight".asInstanceOf[typings.rcPicker.rcPickerStrings.bottomRight]
+    inline def bottomRight: "bottomRight" = "bottomRight".asInstanceOf["bottomRight"]
     
-    inline def topLeft: typings.rcPicker.rcPickerStrings.topLeft = "topLeft".asInstanceOf[typings.rcPicker.rcPickerStrings.topLeft]
+    inline def topLeft: "topLeft" = "topLeft".asInstanceOf["topLeft"]
     
-    inline def topRight: typings.rcPicker.rcPickerStrings.topRight = "topRight".asInstanceOf[typings.rcPicker.rcPickerStrings.topRight]
+    inline def topRight: "topRight" = "topRight".asInstanceOf["topRight"]
   }
+  type Placement = "bottomLeft" | "bottomRight" | "topLeft" | "topRight"
 }

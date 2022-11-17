@@ -1,13 +1,12 @@
 package typings.angularForms.anon
 
-import typings.angularForms.angularFormsStrings.compareWith
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CompareWith extends StObject {
   
-  var compareWith: typings.angularForms.angularFormsStrings.compareWith
+  var compareWith: "compareWith"
 }
 object CompareWith {
   
@@ -18,6 +17,6 @@ object CompareWith {
   
   extension [Self <: CompareWith](x: Self) {
     
-    inline def setCompareWith(value: compareWith): Self = StObject.set(x, "compareWith", value.asInstanceOf[js.Any])
+    inline def setCompareWith(value: "compareWith"): Self = StObject.set(x, "compareWith", value.asInstanceOf[js.Any])
   }
 }

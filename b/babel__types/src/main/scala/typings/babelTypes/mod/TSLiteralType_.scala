@@ -1,22 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSLiteralType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSLiteralType_
+trait TSLiteralType_
   extends StObject
-     with BaseNode
-     with TSBaseType
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   var literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_ | TemplateLiteral_ | UnaryExpression_
   
   @JSName("type")
-  var type_TSLiteralType_ : TSLiteralType
+  var type_TSLiteralType_ : "TSLiteralType"
 }
 object TSLiteralType_ {
   
@@ -34,6 +29,6 @@ object TSLiteralType_ {
       value: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_ | TemplateLiteral_ | UnaryExpression_
     ): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSLiteralType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSLiteralType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

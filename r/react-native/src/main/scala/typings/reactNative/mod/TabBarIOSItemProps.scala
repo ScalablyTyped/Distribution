@@ -1,17 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.`most-recent`
-import typings.reactNative.reactNativeStrings.`most-viewed`
-import typings.reactNative.reactNativeStrings.`top-rated`
-import typings.reactNative.reactNativeStrings.bookmarks
-import typings.reactNative.reactNativeStrings.contacts
-import typings.reactNative.reactNativeStrings.downloads
-import typings.reactNative.reactNativeStrings.favorites
-import typings.reactNative.reactNativeStrings.featured
-import typings.reactNative.reactNativeStrings.history
-import typings.reactNative.reactNativeStrings.more
-import typings.reactNative.reactNativeStrings.recents
-import typings.reactNative.reactNativeStrings.search
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,7 +53,7 @@ trait TabBarIOSItemProps
     *  enum('bookmarks', 'contacts', 'downloads', 'favorites', 'featured', 'history', 'more', 'most-recent', 'most-viewed', 'recents', 'search', 'top-rated')
     */
   var systemIcon: js.UndefOr[
-    bookmarks | contacts | downloads | favorites | featured | history | more | `most-recent` | `most-viewed` | recents | search | `top-rated`
+    "bookmarks" | "contacts" | "downloads" | "favorites" | "featured" | "history" | "more" | "most-recent" | "most-viewed" | "recents" | "search" | "top-rated"
   ] = js.undefined
   
   /**
@@ -111,7 +99,7 @@ object TabBarIOSItemProps {
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     inline def setSystemIcon(
-      value: bookmarks | contacts | downloads | favorites | featured | history | more | `most-recent` | `most-viewed` | recents | search | `top-rated`
+      value: "bookmarks" | "contacts" | "downloads" | "favorites" | "featured" | "history" | "more" | "most-recent" | "most-viewed" | "recents" | "search" | "top-rated"
     ): Self = StObject.set(x, "systemIcon", value.asInstanceOf[js.Any])
     
     inline def setSystemIconUndefined: Self = StObject.set(x, "systemIcon", js.undefined)

@@ -1,8 +1,6 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.materialUiCoreStrings.div
-import typings.materialUiCore.materialUiCoreStrings.root
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverridableTypeMap
 import typings.materialUiCore.overridableComponentMod.OverrideProps
@@ -25,9 +23,9 @@ object tableContainerTableContainerMod extends Shortcut {
     */
   @JSImport("@material-ui/core/TableContainer/TableContainer", JSImport.Default)
   @js.native
-  val default: OverridableComponent[TableContainerTypeMap[js.Object, div]] = js.native
+  val default: OverridableComponent[TableContainerTypeMap[js.Object, "div"]] = js.native
   
-  type TableContainerClassKey = root
+  type TableContainerClassKey = "root"
   
   type TableContainerProps[D /* <: ElementType[Any] */, P /* <: js.Object */] = OverrideProps[TableContainerTypeMap[P, D], D]
   
@@ -60,8 +58,8 @@ object tableContainerTableContainerMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[TableContainerTypeMap[js.Object, div]]
+  type _To = OverridableComponent[TableContainerTypeMap[js.Object, "div"]]
   
   /* This means you don't have to write `default`, but can instead just say `tableContainerTableContainerMod.foo` */
-  override def _to: OverridableComponent[TableContainerTypeMap[js.Object, div]] = default
+  override def _to: OverridableComponent[TableContainerTypeMap[js.Object, "div"]] = default
 }

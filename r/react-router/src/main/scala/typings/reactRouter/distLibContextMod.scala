@@ -4,8 +4,6 @@ import typings.react.mod.Context
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.reactRouter.anon.Children
-import typings.reactRouter.reactRouterBooleans.`false`
-import typings.reactRouter.reactRouterBooleans.`true`
 import typings.remixRunRouter.anon.ActionResult
 import typings.remixRunRouter.distHistoryMod.Action
 import typings.remixRunRouter.distHistoryMod.Location
@@ -82,9 +80,7 @@ object distLibContextMod {
     }
   }
   
-  trait IndexRouteObject
-    extends StObject
-       with RouteObject {
+  trait IndexRouteObject extends StObject {
     
     var action: js.UndefOr[ActionFunction] = js.undefined
     
@@ -102,7 +98,7 @@ object distLibContextMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var index: `true`
+    var index: true
     
     var loader: js.UndefOr[LoaderFunction] = js.undefined
     
@@ -153,7 +149,7 @@ object distLibContextMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setIndex(value: `true`): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: true): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setLoader(value: /* args */ LoaderFunctionArgs => (js.Promise[Any | Response]) | Response | Any): Self = StObject.set(x, "loader", js.Any.fromFunction1(value))
       
@@ -270,9 +266,7 @@ object distLibContextMod {
     def replace(to: To, state: Unit, opts: NavigateOptions): Unit = js.native
   }
   
-  trait NonIndexRouteObject
-    extends StObject
-       with RouteObject {
+  trait NonIndexRouteObject extends StObject {
     
     var action: js.UndefOr[ActionFunction] = js.undefined
     
@@ -290,7 +284,7 @@ object distLibContextMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var index: js.UndefOr[`false`] = js.undefined
+    var index: js.UndefOr[false] = js.undefined
     
     var loader: js.UndefOr[LoaderFunction] = js.undefined
     
@@ -345,7 +339,7 @@ object distLibContextMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setIndex(value: `false`): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: false): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
@@ -363,17 +357,13 @@ object distLibContextMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactRouter.reactRouterStrings.route
-    - typings.reactRouter.reactRouterStrings.path
-  */
-  trait RelativeRoutingType extends StObject
   object RelativeRoutingType {
     
-    inline def path: typings.reactRouter.reactRouterStrings.path = "path".asInstanceOf[typings.reactRouter.reactRouterStrings.path]
+    inline def path: "path" = "path".asInstanceOf["path"]
     
-    inline def route: typings.reactRouter.reactRouterStrings.route = "route".asInstanceOf[typings.reactRouter.reactRouterStrings.route]
+    inline def route: "route" = "route".asInstanceOf["route"]
   }
+  type RelativeRoutingType = "route" | "path"
   
   trait RouteContextObject extends StObject {
     
@@ -402,21 +392,5 @@ object distLibContextMod {
   
   type RouteMatch[ParamKey /* <: String */, RouteObjectType /* <: RouteObject */] = AgnosticRouteMatch[ParamKey, RouteObjectType]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactRouter.distLibContextMod.IndexRouteObject
-    - typings.reactRouter.distLibContextMod.NonIndexRouteObject
-  */
-  trait RouteObject extends StObject
-  object RouteObject {
-    
-    inline def IndexRouteObject(children: Unit): typings.reactRouter.distLibContextMod.IndexRouteObject = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], index = true)
-      __obj.asInstanceOf[typings.reactRouter.distLibContextMod.IndexRouteObject]
-    }
-    
-    inline def NonIndexRouteObject(): typings.reactRouter.distLibContextMod.NonIndexRouteObject = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.reactRouter.distLibContextMod.NonIndexRouteObject]
-    }
-  }
+  type RouteObject = IndexRouteObject | NonIndexRouteObject
 }

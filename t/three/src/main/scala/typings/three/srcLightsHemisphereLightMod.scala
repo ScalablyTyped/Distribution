@@ -3,7 +3,6 @@ package typings.three
 import typings.three.srcLightsLightMod.Light
 import typings.three.srcMathColorMod.Color
 import typings.three.srcUtilsMod.ColorRepresentation
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,6 +27,6 @@ object srcLightsHemisphereLightMod {
     
     var groundColor: Color = js.native
     
-    val isHemisphereLight: `true` = js.native
+    val isHemisphereLight: true = js.native
   }
 }

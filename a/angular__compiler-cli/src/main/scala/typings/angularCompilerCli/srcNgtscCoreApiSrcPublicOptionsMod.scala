@@ -1,8 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliStrings.full
-import typings.angularCompilerCli.angularCompilerCliStrings.ngtsc
-import typings.angularCompilerCli.angularCompilerCliStrings.partial
 import typings.angularCompilerCli.anon.Checks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -372,7 +369,7 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
       * `true` - run the ngtsc compiler instead of the normal ngc compiler
       * `ngtsc` - alias for `true`
       */
-    var enableIvy: js.UndefOr[Boolean | ngtsc] = js.undefined
+    var enableIvy: js.UndefOr[Boolean | "ngtsc"] = js.undefined
     
     /**
       * Controls whether ngtsc will emit `.ngfactory.js` shims for each compiled `.ts` file.
@@ -400,7 +397,7 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
     
     extension [Self <: NgcCompatibilityOptions](x: Self) {
       
-      inline def setEnableIvy(value: Boolean | ngtsc): Self = StObject.set(x, "enableIvy", value.asInstanceOf[js.Any])
+      inline def setEnableIvy(value: Boolean | "ngtsc"): Self = StObject.set(x, "enableIvy", value.asInstanceOf[js.Any])
       
       inline def setEnableIvyUndefined: Self = StObject.set(x, "enableIvy", js.undefined)
       
@@ -608,7 +605,7 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
       *
       * The default value is 'full'.
       */
-    var compilationMode: js.UndefOr[full | partial] = js.undefined
+    var compilationMode: js.UndefOr["full" | "partial"] = js.undefined
   }
   object TargetOptions {
     
@@ -619,7 +616,7 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
     
     extension [Self <: TargetOptions](x: Self) {
       
-      inline def setCompilationMode(value: full | partial): Self = StObject.set(x, "compilationMode", value.asInstanceOf[js.Any])
+      inline def setCompilationMode(value: "full" | "partial"): Self = StObject.set(x, "compilationMode", value.asInstanceOf[js.Any])
       
       inline def setCompilationModeUndefined: Self = StObject.set(x, "compilationMode", js.undefined)
     }

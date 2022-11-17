@@ -1,10 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.default
-import typings.materialUiCore.materialUiCoreStrings.inherit
-import typings.materialUiCore.materialUiCoreStrings.medium
-import typings.materialUiCore.materialUiCoreStrings.outlined
-import typings.materialUiCore.materialUiCoreStrings.small
 import typings.react.mod.EventHandler
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -38,7 +33,7 @@ trait Clickable extends StObject {
   /**
     * The color of the component. It supports those theme colors that make sense for this component.
     */
-  var color: js.UndefOr[Exclude[typings.materialUiCore.mod.PropTypes.Color, inherit]] = js.undefined
+  var color: js.UndefOr[Exclude[typings.materialUiCore.mod.PropTypes.Color, "inherit"]] = js.undefined
   
   /**
     * Override the default delete icon element. Shown only if `onDelete` is set.
@@ -69,12 +64,12 @@ trait Clickable extends StObject {
   /**
     * The size of the chip.
     */
-  var size: js.UndefOr[small | medium] = js.undefined
+  var size: js.UndefOr["small" | "medium"] = js.undefined
   
   /**
     * The variant to use.
     */
-  var variant: js.UndefOr[default | outlined] = js.undefined
+  var variant: js.UndefOr["default" | "outlined"] = js.undefined
 }
 object Clickable {
   
@@ -93,7 +88,7 @@ object Clickable {
     
     inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
     
-    inline def setColor(value: Exclude[typings.materialUiCore.mod.PropTypes.Color, inherit]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Exclude[typings.materialUiCore.mod.PropTypes.Color, "inherit"]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
@@ -117,11 +112,11 @@ object Clickable {
     
     inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
     
-    inline def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "small" | "medium"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setVariant(value: default | outlined): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "default" | "outlined"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

@@ -1,9 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.down
-import typings.materialUiCore.materialUiCoreStrings.left
-import typings.materialUiCore.materialUiCoreStrings.right
-import typings.materialUiCore.materialUiCoreStrings.up
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
@@ -19,7 +15,7 @@ trait PartialSlideProps extends StObject {
   
   var children: js.UndefOr[ReactElement] = js.undefined
   
-  var direction: js.UndefOr[left | right | up | down] = js.undefined
+  var direction: js.UndefOr["left" | "right" | "up" | "down"] = js.undefined
   
   var enter: js.UndefOr[Boolean] = js.undefined
   
@@ -70,7 +66,7 @@ object PartialSlideProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setDirection(value: left | right | up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: "left" | "right" | "up" | "down"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     

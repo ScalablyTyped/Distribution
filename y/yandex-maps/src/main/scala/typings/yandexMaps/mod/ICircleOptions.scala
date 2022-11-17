@@ -1,7 +1,5 @@
 package typings.yandexMaps.mod
 
-import typings.yandexMaps.yandexMapsStrings.stretch
-import typings.yandexMaps.yandexMapsStrings.tile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +25,7 @@ trait ICircleOptions extends StObject {
   
   var fillImageHref: js.UndefOr[String] = js.undefined
   
-  var fillMethod: js.UndefOr[stretch | tile] = js.undefined
+  var fillMethod: js.UndefOr["stretch" | "tile"] = js.undefined
   
   var fillOpacity: js.UndefOr[Double] = js.undefined
   
@@ -121,7 +119,7 @@ object ICircleOptions {
     
     inline def setFillImageHrefUndefined: Self = StObject.set(x, "fillImageHref", js.undefined)
     
-    inline def setFillMethod(value: stretch | tile): Self = StObject.set(x, "fillMethod", value.asInstanceOf[js.Any])
+    inline def setFillMethod(value: "stretch" | "tile"): Self = StObject.set(x, "fillMethod", value.asInstanceOf[js.Any])
     
     inline def setFillMethodUndefined: Self = StObject.set(x, "fillMethod", js.undefined)
     

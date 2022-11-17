@@ -1,18 +1,15 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.Noop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Noop_
   extends StObject
-     with BaseNode
-     with Miscellaneous
-     with Node {
+     with BaseNode {
   
   @JSName("type")
-  var type_Noop_ : Noop
+  var type_Noop_ : "Noop"
 }
 object Noop_ {
   
@@ -24,6 +21,6 @@ object Noop_ {
   
   extension [Self <: Noop_](x: Self) {
     
-    inline def setType(value: Noop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Noop"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,58 +1,9 @@
 package typings.rcVirtualList
 
+import typings.rcVirtualList.anon.Align
 import typings.rcVirtualList.anon.Ref
 import typings.rcVirtualList.anon.Style
 import typings.rcVirtualList.esInterfaceMod.RenderFunc
-import typings.rcVirtualList.rcVirtualListStrings.`additions removals`
-import typings.rcVirtualList.rcVirtualListStrings.`additions text`
-import typings.rcVirtualList.rcVirtualListStrings.`inline`
-import typings.rcVirtualList.rcVirtualListStrings.`removals additions`
-import typings.rcVirtualList.rcVirtualListStrings.`removals text`
-import typings.rcVirtualList.rcVirtualListStrings.`text additions`
-import typings.rcVirtualList.rcVirtualListStrings.`text removals`
-import typings.rcVirtualList.rcVirtualListStrings.additions
-import typings.rcVirtualList.rcVirtualListStrings.all
-import typings.rcVirtualList.rcVirtualListStrings.ascending
-import typings.rcVirtualList.rcVirtualListStrings.assertive
-import typings.rcVirtualList.rcVirtualListStrings.both
-import typings.rcVirtualList.rcVirtualListStrings.copy
-import typings.rcVirtualList.rcVirtualListStrings.date
-import typings.rcVirtualList.rcVirtualListStrings.decimal
-import typings.rcVirtualList.rcVirtualListStrings.descending
-import typings.rcVirtualList.rcVirtualListStrings.dialog
-import typings.rcVirtualList.rcVirtualListStrings.email
-import typings.rcVirtualList.rcVirtualListStrings.execute
-import typings.rcVirtualList.rcVirtualListStrings.grammar
-import typings.rcVirtualList.rcVirtualListStrings.grid
-import typings.rcVirtualList.rcVirtualListStrings.horizontal
-import typings.rcVirtualList.rcVirtualListStrings.inherit
-import typings.rcVirtualList.rcVirtualListStrings.link
-import typings.rcVirtualList.rcVirtualListStrings.list
-import typings.rcVirtualList.rcVirtualListStrings.listbox
-import typings.rcVirtualList.rcVirtualListStrings.location
-import typings.rcVirtualList.rcVirtualListStrings.menu
-import typings.rcVirtualList.rcVirtualListStrings.mixed
-import typings.rcVirtualList.rcVirtualListStrings.move
-import typings.rcVirtualList.rcVirtualListStrings.no
-import typings.rcVirtualList.rcVirtualListStrings.none
-import typings.rcVirtualList.rcVirtualListStrings.numeric
-import typings.rcVirtualList.rcVirtualListStrings.off
-import typings.rcVirtualList.rcVirtualListStrings.on
-import typings.rcVirtualList.rcVirtualListStrings.other
-import typings.rcVirtualList.rcVirtualListStrings.page
-import typings.rcVirtualList.rcVirtualListStrings.polite
-import typings.rcVirtualList.rcVirtualListStrings.popup
-import typings.rcVirtualList.rcVirtualListStrings.removals
-import typings.rcVirtualList.rcVirtualListStrings.search
-import typings.rcVirtualList.rcVirtualListStrings.spelling
-import typings.rcVirtualList.rcVirtualListStrings.step
-import typings.rcVirtualList.rcVirtualListStrings.tel
-import typings.rcVirtualList.rcVirtualListStrings.text
-import typings.rcVirtualList.rcVirtualListStrings.time
-import typings.rcVirtualList.rcVirtualListStrings.tree
-import typings.rcVirtualList.rcVirtualListStrings.url
-import typings.rcVirtualList.rcVirtualListStrings.vertical
-import typings.rcVirtualList.rcVirtualListStrings.yes
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -121,11 +72,11 @@ object esListMod {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -135,7 +86,7 @@ object esListMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -143,7 +94,7 @@ object esListMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -153,11 +104,11 @@ object esListMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -167,7 +118,7 @@ object esListMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -175,7 +126,7 @@ object esListMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -183,12 +134,12 @@ object esListMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -205,7 +156,7 @@ object esListMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -229,7 +180,7 @@ object esListMod {
     
     var component: js.UndefOr[String | FC[Any] | (ComponentClass[Any, ComponentState])] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -258,7 +209,7 @@ object esListMod {
     
     var inlist: js.UndefOr[Any] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
     
@@ -475,11 +426,11 @@ object esListMod {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
     /** Set `false` will always use real scroll instead of virtual one */
     var virtual: js.UndefOr[Boolean] = js.undefined
@@ -515,7 +466,7 @@ object esListMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -523,7 +474,7 @@ object esListMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -543,7 +494,7 @@ object esListMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -559,7 +510,7 @@ object esListMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -579,7 +530,7 @@ object esListMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -587,7 +538,7 @@ object esListMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -607,7 +558,7 @@ object esListMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -623,7 +574,7 @@ object esListMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -639,7 +590,7 @@ object esListMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -648,7 +599,7 @@ object esListMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -681,7 +632,7 @@ object esListMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -727,7 +678,7 @@ object esListMod {
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -785,7 +736,7 @@ object esListMod {
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -1217,7 +1168,7 @@ object esListMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
@@ -1225,7 +1176,7 @@ object esListMod {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
@@ -1256,38 +1207,17 @@ object esListMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcVirtualList.rcVirtualListStrings.top
-    - typings.rcVirtualList.rcVirtualListStrings.bottom
-    - typings.rcVirtualList.rcVirtualListStrings.auto
-  */
-  trait ScrollAlign extends StObject
   object ScrollAlign {
     
-    inline def auto: typings.rcVirtualList.rcVirtualListStrings.auto = "auto".asInstanceOf[typings.rcVirtualList.rcVirtualListStrings.auto]
+    inline def auto: "auto" = "auto".asInstanceOf["auto"]
     
-    inline def bottom: typings.rcVirtualList.rcVirtualListStrings.bottom = "bottom".asInstanceOf[typings.rcVirtualList.rcVirtualListStrings.bottom]
+    inline def bottom: "bottom" = "bottom".asInstanceOf["bottom"]
     
-    inline def top: typings.rcVirtualList.rcVirtualListStrings.top = "top".asInstanceOf[typings.rcVirtualList.rcVirtualListStrings.top]
+    inline def top: "top" = "top".asInstanceOf["top"]
   }
+  type ScrollAlign = "top" | "bottom" | "auto"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcVirtualList.anon.Align
-    - typings.rcVirtualList.anon.Key
-  */
-  trait ScrollConfig extends StObject
-  object ScrollConfig {
-    
-    inline def Align(index: Double): typings.rcVirtualList.anon.Align = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.rcVirtualList.anon.Align]
-    }
-    
-    inline def Key(key: typings.react.mod.Key): typings.rcVirtualList.anon.Key = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.rcVirtualList.anon.Key]
-    }
-  }
+  type ScrollConfig = Align | typings.rcVirtualList.anon.Key
   
   type ScrollTo = js.Function1[/* arg */ Double | ScrollConfig, Unit]
 }

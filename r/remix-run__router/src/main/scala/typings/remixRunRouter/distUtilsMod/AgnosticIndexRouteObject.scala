@@ -1,18 +1,16 @@
 package typings.remixRunRouter.distUtilsMod
 
-import typings.remixRunRouter.remixRunRouterBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AgnosticIndexRouteObject
   extends StObject
-     with AgnosticBaseRouteObject
-     with AgnosticRouteObject {
+     with AgnosticBaseRouteObject {
   
   var children: Unit
   
-  var index: `true`
+  var index: true
 }
 object AgnosticIndexRouteObject {
   
@@ -25,6 +23,6 @@ object AgnosticIndexRouteObject {
     
     inline def setChildren(value: Unit): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setIndex(value: `true`): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: true): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Arialabel
-import typings.materialUiCore.materialUiCoreStrings.span
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -28,7 +27,7 @@ object sliderSliderMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Slider/Slider", JSImport.Default)
   @js.native
-  val default: OverridableComponent[SliderTypeMap[js.Object, span]] = js.native
+  val default: OverridableComponent[SliderTypeMap[js.Object, "span"]] = js.native
   
   trait Mark extends StObject {
     
@@ -53,71 +52,49 @@ object sliderSliderMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.colorPrimary
-    - typings.materialUiCore.materialUiCoreStrings.colorSecondary
-    - typings.materialUiCore.materialUiCoreStrings.marked
-    - typings.materialUiCore.materialUiCoreStrings.vertical
-    - typings.materialUiCore.materialUiCoreStrings.disabled
-    - typings.materialUiCore.materialUiCoreStrings.rail
-    - typings.materialUiCore.materialUiCoreStrings.track
-    - typings.materialUiCore.materialUiCoreStrings.trackFalse
-    - typings.materialUiCore.materialUiCoreStrings.trackInverted
-    - typings.materialUiCore.materialUiCoreStrings.thumb
-    - typings.materialUiCore.materialUiCoreStrings.thumbColorPrimary
-    - typings.materialUiCore.materialUiCoreStrings.thumbColorSecondary
-    - typings.materialUiCore.materialUiCoreStrings.active
-    - typings.materialUiCore.materialUiCoreStrings.focusVisible
-    - typings.materialUiCore.materialUiCoreStrings.valueLabel
-    - typings.materialUiCore.materialUiCoreStrings.mark
-    - typings.materialUiCore.materialUiCoreStrings.markActive
-    - typings.materialUiCore.materialUiCoreStrings.markLabel
-    - typings.materialUiCore.materialUiCoreStrings.markLabelActive
-  */
-  trait SliderClassKey extends StObject
   object SliderClassKey {
     
-    inline def active: typings.materialUiCore.materialUiCoreStrings.active = "active".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.active]
+    inline def active: "active" = "active".asInstanceOf["active"]
     
-    inline def colorPrimary: typings.materialUiCore.materialUiCoreStrings.colorPrimary = "colorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorPrimary]
+    inline def colorPrimary: "colorPrimary" = "colorPrimary".asInstanceOf["colorPrimary"]
     
-    inline def colorSecondary: typings.materialUiCore.materialUiCoreStrings.colorSecondary = "colorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorSecondary]
+    inline def colorSecondary: "colorSecondary" = "colorSecondary".asInstanceOf["colorSecondary"]
     
-    inline def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
+    inline def disabled: "disabled" = "disabled".asInstanceOf["disabled"]
     
-    inline def focusVisible: typings.materialUiCore.materialUiCoreStrings.focusVisible = "focusVisible".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.focusVisible]
+    inline def focusVisible: "focusVisible" = "focusVisible".asInstanceOf["focusVisible"]
     
-    inline def mark: typings.materialUiCore.materialUiCoreStrings.mark = "mark".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.mark]
+    inline def mark: "mark" = "mark".asInstanceOf["mark"]
     
-    inline def markActive: typings.materialUiCore.materialUiCoreStrings.markActive = "markActive".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.markActive]
+    inline def markActive: "markActive" = "markActive".asInstanceOf["markActive"]
     
-    inline def markLabel: typings.materialUiCore.materialUiCoreStrings.markLabel = "markLabel".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.markLabel]
+    inline def markLabel: "markLabel" = "markLabel".asInstanceOf["markLabel"]
     
-    inline def markLabelActive: typings.materialUiCore.materialUiCoreStrings.markLabelActive = "markLabelActive".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.markLabelActive]
+    inline def markLabelActive: "markLabelActive" = "markLabelActive".asInstanceOf["markLabelActive"]
     
-    inline def marked: typings.materialUiCore.materialUiCoreStrings.marked = "marked".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.marked]
+    inline def marked: "marked" = "marked".asInstanceOf["marked"]
     
-    inline def rail: typings.materialUiCore.materialUiCoreStrings.rail = "rail".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.rail]
+    inline def rail: "rail" = "rail".asInstanceOf["rail"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def thumb: typings.materialUiCore.materialUiCoreStrings.thumb = "thumb".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.thumb]
+    inline def thumb: "thumb" = "thumb".asInstanceOf["thumb"]
     
-    inline def thumbColorPrimary: typings.materialUiCore.materialUiCoreStrings.thumbColorPrimary = "thumbColorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.thumbColorPrimary]
+    inline def thumbColorPrimary: "thumbColorPrimary" = "thumbColorPrimary".asInstanceOf["thumbColorPrimary"]
     
-    inline def thumbColorSecondary: typings.materialUiCore.materialUiCoreStrings.thumbColorSecondary = "thumbColorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.thumbColorSecondary]
+    inline def thumbColorSecondary: "thumbColorSecondary" = "thumbColorSecondary".asInstanceOf["thumbColorSecondary"]
     
-    inline def track: typings.materialUiCore.materialUiCoreStrings.track = "track".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.track]
+    inline def track: "track" = "track".asInstanceOf["track"]
     
-    inline def trackFalse: typings.materialUiCore.materialUiCoreStrings.trackFalse = "trackFalse".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.trackFalse]
+    inline def trackFalse: "trackFalse" = "trackFalse".asInstanceOf["trackFalse"]
     
-    inline def trackInverted: typings.materialUiCore.materialUiCoreStrings.trackInverted = "trackInverted".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.trackInverted]
+    inline def trackInverted: "trackInverted" = "trackInverted".asInstanceOf["trackInverted"]
     
-    inline def valueLabel: typings.materialUiCore.materialUiCoreStrings.valueLabel = "valueLabel".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.valueLabel]
+    inline def valueLabel: "valueLabel" = "valueLabel".asInstanceOf["valueLabel"]
     
-    inline def vertical: typings.materialUiCore.materialUiCoreStrings.vertical = "vertical".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.vertical]
+    inline def vertical: "vertical" = "vertical".asInstanceOf["vertical"]
   }
+  type SliderClassKey = "root" | "colorPrimary" | "colorSecondary" | "marked" | "vertical" | "disabled" | "rail" | "track" | "trackFalse" | "trackInverted" | "thumb" | "thumbColorPrimary" | "thumbColorSecondary" | "active" | "focusVisible" | "valueLabel" | "mark" | "markActive" | "markLabel" | "markLabelActive"
   
   type SliderProps[D /* <: ElementType[Any] */, P] = OverrideProps[SliderTypeMap[P, D], D]
   
@@ -174,8 +151,8 @@ object sliderSliderMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[SliderTypeMap[js.Object, span]]
+  type _To = OverridableComponent[SliderTypeMap[js.Object, "span"]]
   
   /* This means you don't have to write `default`, but can instead just say `sliderSliderMod.foo` */
-  override def _to: OverridableComponent[SliderTypeMap[js.Object, span]] = default
+  override def _to: OverridableComponent[SliderTypeMap[js.Object, "span"]] = default
 }

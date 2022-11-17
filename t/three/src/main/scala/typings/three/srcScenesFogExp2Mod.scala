@@ -2,7 +2,6 @@ package typings.three
 
 import typings.three.srcMathColorMod.Color
 import typings.three.srcScenesFogMod.FogBase
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object srcScenesFogExp2Mod {
       */
     var density: Double = js.native
     
-    val isFogExp2: `true` = js.native
+    val isFogExp2: true = js.native
     
     /* CompleteClass */
     var name: String = js.native

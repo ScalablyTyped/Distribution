@@ -1,9 +1,6 @@
 package typings.angularCompilerCli
 
 import typings.angularCompiler.mod.Expression
-import typings.angularCompilerCli.angularCompilerCliInts.`0`
-import typings.angularCompilerCli.angularCompilerCliInts.`1`
-import typings.angularCompilerCli.angularCompilerCliStrings.unknown
 import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.UnifiedModulesHost
 import typings.angularCompilerCli.srcNgtscFileSystemMod.LogicalFileSystem
 import typings.angularCompilerCli.srcNgtscImportsSrcReferencesMod.Reference
@@ -250,9 +247,7 @@ object srcNgtscImportsSrcEmitterMod {
   
   inline def assertSuccessfulReferenceEmit(result: ReferenceEmitResult, origin: Node, typeKind: String): /* asserts result is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(angular,compiler-cli), TsIdentModule(Some(angular),List(compiler-cli, src, ngtsc, imports, src, emitter)), TsIdentSimple(EmittedReference))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("assertSuccessfulReferenceEmit")(result.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], typeKind.asInstanceOf[js.Any])).asInstanceOf[/* asserts result is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(angular,compiler-cli), TsIdentModule(Some(angular),List(compiler-cli, src, ngtsc, imports, src, emitter)), TsIdentSimple(EmittedReference))),IArray())*/ Boolean]
   
-  trait EmittedReference
-    extends StObject
-       with ReferenceEmitResult {
+  trait EmittedReference extends StObject {
     
     /**
       * The expression that refers to `Reference`.
@@ -267,7 +262,7 @@ object srcNgtscImportsSrcEmitterMod {
       */
     var importedFile: ImportedFile
     
-    var kind: `0`
+    var kind: 0
   }
   object EmittedReference {
     
@@ -284,20 +279,18 @@ object srcNgtscImportsSrcEmitterMod {
       
       inline def setImportedFileNull: Self = StObject.set(x, "importedFile", null)
       
-      inline def setKind(value: `0`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: 0): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }
   }
   
-  trait FailedEmitResult
-    extends StObject
-       with ReferenceEmitResult {
+  trait FailedEmitResult extends StObject {
     
     /**
       * The source file into which the reference was requested to be emitted.
       */
     var context: SourceFile
     
-    var kind: `1`
+    var kind: 1
     
     /**
       * Describes why the reference could not be emitted. This may be shown in a diagnostic.
@@ -320,7 +313,7 @@ object srcNgtscImportsSrcEmitterMod {
       
       inline def setContext(value: SourceFile): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      inline def setKind(value: `1`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: 1): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
@@ -328,7 +321,7 @@ object srcNgtscImportsSrcEmitterMod {
     }
   }
   
-  type ImportedFile = SourceFile | unknown | Null
+  type ImportedFile = SourceFile | "unknown" | Null
   
   /**
     * Represents the exported declarations from a module source file.
@@ -364,35 +357,15 @@ object srcNgtscImportsSrcEmitterMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliInts.`0`
-    - typings.angularCompilerCli.angularCompilerCliInts.`1`
-  */
-  trait ReferenceEmitKind extends StObject
   object ReferenceEmitKind {
     
-    inline def Failed: `1` = 1.asInstanceOf[`1`]
+    inline def Failed: 1 = 1.asInstanceOf[1]
     
-    inline def Success: `0` = 0.asInstanceOf[`0`]
+    inline def Success: 0 = 0.asInstanceOf[0]
   }
+  type ReferenceEmitKind = 0 | 1
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.srcNgtscImportsSrcEmitterMod.EmittedReference
-    - typings.angularCompilerCli.srcNgtscImportsSrcEmitterMod.FailedEmitResult
-  */
-  trait ReferenceEmitResult extends StObject
-  object ReferenceEmitResult {
-    
-    inline def EmittedReference(expression: Expression): typings.angularCompilerCli.srcNgtscImportsSrcEmitterMod.EmittedReference = {
-      val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], kind = 0, importedFile = null)
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscImportsSrcEmitterMod.EmittedReference]
-    }
-    
-    inline def FailedEmitResult(context: SourceFile, reason: String, ref: Reference[Node]): typings.angularCompilerCli.srcNgtscImportsSrcEmitterMod.FailedEmitResult = {
-      val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], kind = 1, reason = reason.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscImportsSrcEmitterMod.FailedEmitResult]
-    }
-  }
+  type ReferenceEmitResult = EmittedReference | FailedEmitResult
   
   trait ReferenceEmitStrategy extends StObject {
     

@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import typings.materialUiCore.formControlFormControlMod.FormControlTypeMap
 import typings.materialUiCore.formControlUseFormControlMod.FormControlState
-import typings.materialUiCore.materialUiCoreStrings.div
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -49,7 +48,7 @@ object formControlMod {
     */
   @JSImport("@material-ui/core/FormControl", JSImport.Default)
   @js.native
-  val default: OverridableComponent[FormControlTypeMap[js.Object, div]] = js.native
+  val default: OverridableComponent[FormControlTypeMap[js.Object, "div"]] = js.native
   
   inline def useFormControl(): js.UndefOr[FormControlState] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFormControl")().asInstanceOf[js.UndefOr[FormControlState]]
 }

@@ -3,9 +3,6 @@ package typings.three
 import typings.three.srcConstantsMod.TextureDataType
 import typings.three.srcThreeMod.WebGLRenderTarget
 import typings.three.srcThreeMod.WebGLRenderer
-import typings.three.threeInts.`0`
-import typings.three.threeInts.`2`
-import typings.three.threeInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,15 +19,15 @@ object examplesJsmExportersExrexporterMod {
   
   @JSImport("three/examples/jsm/exporters/EXRExporter", "NO_COMPRESSION")
   @js.native
-  val NO_COMPRESSION: `0` = js.native
+  val NO_COMPRESSION: 0 = js.native
   
   @JSImport("three/examples/jsm/exporters/EXRExporter", "ZIPS_COMPRESSION")
   @js.native
-  val ZIPS_COMPRESSION: `2` = js.native
+  val ZIPS_COMPRESSION: 2 = js.native
   
   @JSImport("three/examples/jsm/exporters/EXRExporter", "ZIP_COMPRESSION")
   @js.native
-  val ZIP_COMPRESSION: `3` = js.native
+  val ZIP_COMPRESSION: 3 = js.native
   
   trait EXRExporterParseOptions extends StObject {
     

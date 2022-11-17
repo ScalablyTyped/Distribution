@@ -19,15 +19,6 @@ import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandCollectio
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticWIDTHS
-import typings.semanticUiReact.semanticUiReactStrings.bottom
-import typings.semanticUiReact.semanticUiReactStrings.center
-import typings.semanticUiReact.semanticUiReactStrings.internally
-import typings.semanticUiReact.semanticUiReactStrings.large
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.right
-import typings.semanticUiReact.semanticUiReactStrings.small
-import typings.semanticUiReact.semanticUiReactStrings.top
-import typings.semanticUiReact.semanticUiReactStrings.very
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,13 +35,13 @@ object distCommonjsCollectionsTableTableMod extends Shortcut {
     var as: js.UndefOr[Any] = js.undefined
     
     /** Attach table to other content */
-    var attached: js.UndefOr[Boolean | top | bottom] = js.undefined
+    var attached: js.UndefOr[Boolean | "top" | "bottom"] = js.undefined
     
     /** A table can reduce its complexity to increase readability. */
-    var basic: js.UndefOr[Boolean | very] = js.undefined
+    var basic: js.UndefOr[Boolean | "very"] = js.undefined
     
     /** A table may be divided into individual cells. */
-    var celled: js.UndefOr[Boolean | internally] = js.undefined
+    var celled: js.UndefOr[Boolean | "internally"] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -68,7 +59,7 @@ object distCommonjsCollectionsTableTableMod extends Shortcut {
     var columns: js.UndefOr[SemanticWIDTHS] = js.undefined
     
     /** A table may sometimes need to be more compact to make more rows visible at a time. */
-    var compact: js.UndefOr[Boolean | very] = js.undefined
+    var compact: js.UndefOr[Boolean | "very"] = js.undefined
     
     /** A table may be formatted to emphasize a first column that defines a rows content. */
     var definition: js.UndefOr[Boolean] = js.undefined
@@ -91,7 +82,7 @@ object distCommonjsCollectionsTableTableMod extends Shortcut {
     var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** A table may sometimes need to be more padded for legibility. */
-    var padded: js.UndefOr[Boolean | very] = js.undefined
+    var padded: js.UndefOr[Boolean | "very"] = js.undefined
     
     /**
       * Mapped over `tableData` and should return shorthand for each Table.Row to be placed within Table.Body.
@@ -109,7 +100,7 @@ object distCommonjsCollectionsTableTableMod extends Shortcut {
     var singleLine: js.UndefOr[Boolean] = js.undefined
     
     /** A table can also be small or large. */
-    var size: js.UndefOr[small | large] = js.undefined
+    var size: js.UndefOr["small" | "large"] = js.undefined
     
     /** A table may allow a user to sort contents by clicking on a table header. */
     var sortable: js.UndefOr[Boolean] = js.undefined
@@ -127,7 +118,7 @@ object distCommonjsCollectionsTableTableMod extends Shortcut {
     var tableData: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** A table can adjust its text alignment. */
-    var textAlign: js.UndefOr[center | left | right] = js.undefined
+    var textAlign: js.UndefOr["center" | "left" | "right"] = js.undefined
     
     /** A table can specify how it stacks table content responsively. */
     var unstackable: js.UndefOr[Boolean] = js.undefined
@@ -148,15 +139,15 @@ object distCommonjsCollectionsTableTableMod extends Shortcut {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAttached(value: Boolean | top | bottom): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: Boolean | "top" | "bottom"): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
       inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       
-      inline def setBasic(value: Boolean | very): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
+      inline def setBasic(value: Boolean | "very"): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
       
       inline def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
       
-      inline def setCelled(value: Boolean | internally): Self = StObject.set(x, "celled", value.asInstanceOf[js.Any])
+      inline def setCelled(value: Boolean | "internally"): Self = StObject.set(x, "celled", value.asInstanceOf[js.Any])
       
       inline def setCelledUndefined: Self = StObject.set(x, "celled", js.undefined)
       
@@ -180,7 +171,7 @@ object distCommonjsCollectionsTableTableMod extends Shortcut {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setCompact(value: Boolean | very): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean | "very"): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
       inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
@@ -218,7 +209,7 @@ object distCommonjsCollectionsTableTableMod extends Shortcut {
       
       inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
       
-      inline def setPadded(value: Boolean | very): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
+      inline def setPadded(value: Boolean | "very"): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
       
       inline def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
       
@@ -234,7 +225,7 @@ object distCommonjsCollectionsTableTableMod extends Shortcut {
       
       inline def setSingleLineUndefined: Self = StObject.set(x, "singleLine", js.undefined)
       
-      inline def setSize(value: small | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "small" | "large"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -260,7 +251,7 @@ object distCommonjsCollectionsTableTableMod extends Shortcut {
       
       inline def setTableDataVarargs(value: Any*): Self = StObject.set(x, "tableData", js.Array(value*))
       
-      inline def setTextAlign(value: center | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: "center" | "left" | "right"): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
       inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       

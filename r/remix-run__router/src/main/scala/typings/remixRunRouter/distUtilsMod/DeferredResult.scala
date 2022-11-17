@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeferredResult
-  extends StObject
-     with DataResult {
+trait DeferredResult extends StObject {
   
   var deferredData: DeferredData
   

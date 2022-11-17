@@ -1,16 +1,11 @@
 package typings.mobx.anon
 
-import typings.mobx.distTypesObservablesetMod.ISetDidChange
 import typings.mobx.distTypesObservablesetMod.ObservableSet
-import typings.mobx.mobxStrings.add
-import typings.mobx.mobxStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DebugObjectNameNewValue[T]
-  extends StObject
-     with ISetDidChange[T] {
+trait DebugObjectNameNewValue[T] extends StObject {
   
   var debugObjectName: String
   
@@ -18,9 +13,9 @@ trait DebugObjectNameNewValue[T]
   
   var `object`: ObservableSet[T]
   
-  var observableKind: set
+  var observableKind: "set"
   
-  var `type`: add
+  var `type`: "add"
 }
 object DebugObjectNameNewValue {
   
@@ -39,8 +34,8 @@ object DebugObjectNameNewValue {
     
     inline def setObject(value: ObservableSet[T]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    inline def setObservableKind(value: set): Self = StObject.set(x, "observableKind", value.asInstanceOf[js.Any])
+    inline def setObservableKind(value: "set"): Self = StObject.set(x, "observableKind", value.asInstanceOf[js.Any])
     
-    inline def setType(value: add): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "add"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

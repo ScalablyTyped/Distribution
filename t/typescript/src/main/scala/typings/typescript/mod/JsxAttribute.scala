@@ -7,10 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JsxAttribute
   extends StObject
-     with ObjectLiteralElement
-     with HasInitializer
-     with JsxAttributeLike
-     with VariableLikeDeclaration {
+     with ObjectLiteralElement {
   
   val initializer: js.UndefOr[JsxAttributeValue] = js.native
   

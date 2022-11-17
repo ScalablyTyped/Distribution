@@ -1,23 +1,19 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.EnumBooleanMember
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait EnumBooleanMember_
+trait EnumBooleanMember_
   extends StObject
-     with BaseNode
-     with EnumMember
-     with Flow {
+     with BaseNode {
   
   var id: Identifier_
   
   var init: BooleanLiteral_
   
   @JSName("type")
-  var type_EnumBooleanMember_ : EnumBooleanMember
+  var type_EnumBooleanMember_ : "EnumBooleanMember"
 }
 object EnumBooleanMember_ {
   
@@ -33,6 +29,6 @@ object EnumBooleanMember_ {
     
     inline def setInit(value: BooleanLiteral_): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    inline def setType(value: EnumBooleanMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "EnumBooleanMember"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

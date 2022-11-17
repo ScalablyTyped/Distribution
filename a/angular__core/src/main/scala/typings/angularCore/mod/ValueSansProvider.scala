@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ValueSansProvider
-  extends StObject
-     with InjectableProvider {
+trait ValueSansProvider extends StObject {
   
   /**
     * The value to inject.

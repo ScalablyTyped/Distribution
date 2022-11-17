@@ -4,17 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.reactNative.reactNativeStrings.All
-  - typings.reactNative.reactNativeStrings.Videos
-  - typings.reactNative.reactNativeStrings.Photos
-*/
-trait CameraRollAssetType extends StObject
 object CameraRollAssetType {
   
-  inline def All: typings.reactNative.reactNativeStrings.All = "All".asInstanceOf[typings.reactNative.reactNativeStrings.All]
+  inline def All: "All" = "All".asInstanceOf["All"]
   
-  inline def Photos: typings.reactNative.reactNativeStrings.Photos = "Photos".asInstanceOf[typings.reactNative.reactNativeStrings.Photos]
+  inline def Photos: "Photos" = "Photos".asInstanceOf["Photos"]
   
-  inline def Videos: typings.reactNative.reactNativeStrings.Videos = "Videos".asInstanceOf[typings.reactNative.reactNativeStrings.Videos]
+  inline def Videos: "Videos" = "Videos".asInstanceOf["Videos"]
 }

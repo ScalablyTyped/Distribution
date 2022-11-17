@@ -14,10 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.typescript.mod.ClassElement because var conflicts: _declarationBrand. Inlined _classElementBrand */ @js.native
 trait IndexSignatureDeclaration
   extends StObject
-     with SignatureDeclarationBase
-     with HasJSDoc
-     with HasModifiers
-     with SignatureDeclaration {
+     with SignatureDeclarationBase {
   
   var _classElementBrand: Any = js.native
   

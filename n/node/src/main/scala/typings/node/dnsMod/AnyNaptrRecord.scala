@@ -1,16 +1,14 @@
 package typings.node.dnsMod
 
-import typings.node.nodeStrings.NAPTR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AnyNaptrRecord
   extends StObject
-     with NaptrRecord
-     with AnyRecord {
+     with NaptrRecord {
   
-  var `type`: NAPTR
+  var `type`: "NAPTR"
 }
 object AnyNaptrRecord {
   
@@ -29,6 +27,6 @@ object AnyNaptrRecord {
   
   extension [Self <: AnyNaptrRecord](x: Self) {
     
-    inline def setType(value: NAPTR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "NAPTR"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

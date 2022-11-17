@@ -5,6 +5,7 @@ import typings.angularCommon.mod.Location
 import typings.angularCommon.mod.LocationStrategy
 import typings.angularCommon.mod.PlatformLocation
 import typings.angularCore.mod.InjectionToken
+import typings.angularCore.mod.Provider
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectableDeclaration
 import org.scalablytyped.runtime.StObject
@@ -12,6 +13,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testingMod {
+  
+  @JSImport("@angular/common/testing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/common/testing", "MOCK_PLATFORM_LOCATION_CONFIG")
   @js.native
@@ -133,6 +138,8 @@ object testingMod {
     def ɵprov: ɵɵInjectableDeclaration[SpyLocation] = js.native
     inline def ɵprov_=(x: ɵɵInjectableDeclaration[SpyLocation]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
   }
+  
+  inline def provideLocationMocks(): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideLocationMocks")().asInstanceOf[js.Array[Provider]]
   
   trait MockPlatformLocationConfig extends StObject {
     

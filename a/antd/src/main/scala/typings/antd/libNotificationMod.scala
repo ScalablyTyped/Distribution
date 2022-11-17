@@ -240,23 +240,17 @@ object libNotificationMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.success
-    - typings.antd.antdStrings.info
-    - typings.antd.antdStrings.error
-    - typings.antd.antdStrings.warning
-  */
-  trait IconType extends StObject
   object IconType {
     
-    inline def error: typings.antd.antdStrings.error = "error".asInstanceOf[typings.antd.antdStrings.error]
+    inline def error: "error" = "error".asInstanceOf["error"]
     
-    inline def info: typings.antd.antdStrings.info = "info".asInstanceOf[typings.antd.antdStrings.info]
+    inline def info: "info" = "info".asInstanceOf["info"]
     
-    inline def success: typings.antd.antdStrings.success = "success".asInstanceOf[typings.antd.antdStrings.success]
+    inline def success: "success" = "success".asInstanceOf["success"]
     
-    inline def warning: typings.antd.antdStrings.warning = "warning".asInstanceOf[typings.antd.antdStrings.warning]
+    inline def warning: "warning" = "warning".asInstanceOf["warning"]
   }
+  type IconType = "success" | "info" | "error" | "warning"
   
   trait NotificationApi
     extends StObject
@@ -343,29 +337,21 @@ object libNotificationMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.top
-    - typings.antd.antdStrings.topLeft
-    - typings.antd.antdStrings.topRight
-    - typings.antd.antdStrings.bottom
-    - typings.antd.antdStrings.bottomLeft
-    - typings.antd.antdStrings.bottomRight
-  */
-  trait NotificationPlacement extends StObject
   object NotificationPlacement {
     
-    inline def bottom: typings.antd.antdStrings.bottom = "bottom".asInstanceOf[typings.antd.antdStrings.bottom]
+    inline def bottom: "bottom" = "bottom".asInstanceOf["bottom"]
     
-    inline def bottomLeft: typings.antd.antdStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.antd.antdStrings.bottomLeft]
+    inline def bottomLeft: "bottomLeft" = "bottomLeft".asInstanceOf["bottomLeft"]
     
-    inline def bottomRight: typings.antd.antdStrings.bottomRight = "bottomRight".asInstanceOf[typings.antd.antdStrings.bottomRight]
+    inline def bottomRight: "bottomRight" = "bottomRight".asInstanceOf["bottomRight"]
     
-    inline def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
+    inline def top: "top" = "top".asInstanceOf["top"]
     
-    inline def topLeft: typings.antd.antdStrings.topLeft = "topLeft".asInstanceOf[typings.antd.antdStrings.topLeft]
+    inline def topLeft: "topLeft" = "topLeft".asInstanceOf["topLeft"]
     
-    inline def topRight: typings.antd.antdStrings.topRight = "topRight".asInstanceOf[typings.antd.antdStrings.topRight]
+    inline def topRight: "topRight" = "topRight".asInstanceOf["topRight"]
   }
+  type NotificationPlacement = "top" | "topLeft" | "topRight" | "bottom" | "bottomLeft" | "bottomRight"
   
   type _To = NotificationApi
   

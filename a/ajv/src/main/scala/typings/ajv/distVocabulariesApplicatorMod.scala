@@ -1,6 +1,5 @@
 package typings.ajv
 
-import typings.ajv.ajvStrings.`false schema`
 import typings.ajv.distTypesMod.ErrorNoParams
 import typings.ajv.distTypesMod.Vocabulary
 import typings.ajv.distVocabulariesApplicatorAdditionalItemsMod.AdditionalItemsError
@@ -26,5 +25,5 @@ object distVocabulariesApplicatorMod {
   inline def default(): Vocabulary = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Vocabulary]
   inline def default(draft2020: Boolean): Vocabulary = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(draft2020.asInstanceOf[js.Any]).asInstanceOf[Vocabulary]
   
-  type ApplicatorKeywordError = (ErrorNoParams[`false schema`, Any]) | AdditionalItemsError | ItemsError | ContainsError | AdditionalPropertiesError | DependenciesError | IfKeywordError | AnyOfError | OneOfError | NotKeywordError | PropertyNamesError
+  type ApplicatorKeywordError = (ErrorNoParams["false schema", Any]) | AdditionalItemsError | ItemsError | ContainsError | AdditionalPropertiesError | DependenciesError | IfKeywordError | AnyOfError | OneOfError | NotKeywordError | PropertyNamesError
 }

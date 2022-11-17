@@ -21,51 +21,6 @@ import typings.rcTreeSelect.esTreeSelectMod.LegacyDataNode
 import typings.rcTreeSelect.esTreeSelectMod.RawValueType
 import typings.rcTreeSelect.esTreeSelectMod.SimpleModeConfig
 import typings.rcTreeSelect.esUtilsStrategyUtilMod.CheckedStrategy
-import typings.rcTreeSelect.rcTreeSelectStrings.`additions removals`
-import typings.rcTreeSelect.rcTreeSelectStrings.`additions text`
-import typings.rcTreeSelect.rcTreeSelectStrings.`inline`
-import typings.rcTreeSelect.rcTreeSelectStrings.`removals additions`
-import typings.rcTreeSelect.rcTreeSelectStrings.`removals text`
-import typings.rcTreeSelect.rcTreeSelectStrings.`text additions`
-import typings.rcTreeSelect.rcTreeSelectStrings.`text removals`
-import typings.rcTreeSelect.rcTreeSelectStrings.additions
-import typings.rcTreeSelect.rcTreeSelectStrings.all
-import typings.rcTreeSelect.rcTreeSelectStrings.ascending
-import typings.rcTreeSelect.rcTreeSelectStrings.assertive
-import typings.rcTreeSelect.rcTreeSelectStrings.both
-import typings.rcTreeSelect.rcTreeSelectStrings.click
-import typings.rcTreeSelect.rcTreeSelectStrings.copy
-import typings.rcTreeSelect.rcTreeSelectStrings.date
-import typings.rcTreeSelect.rcTreeSelectStrings.descending
-import typings.rcTreeSelect.rcTreeSelectStrings.dialog
-import typings.rcTreeSelect.rcTreeSelectStrings.execute
-import typings.rcTreeSelect.rcTreeSelectStrings.focus
-import typings.rcTreeSelect.rcTreeSelectStrings.grammar
-import typings.rcTreeSelect.rcTreeSelectStrings.grid
-import typings.rcTreeSelect.rcTreeSelectStrings.horizontal
-import typings.rcTreeSelect.rcTreeSelectStrings.link
-import typings.rcTreeSelect.rcTreeSelectStrings.list
-import typings.rcTreeSelect.rcTreeSelectStrings.listbox
-import typings.rcTreeSelect.rcTreeSelectStrings.location
-import typings.rcTreeSelect.rcTreeSelectStrings.ltr
-import typings.rcTreeSelect.rcTreeSelectStrings.menu
-import typings.rcTreeSelect.rcTreeSelectStrings.mixed
-import typings.rcTreeSelect.rcTreeSelectStrings.move
-import typings.rcTreeSelect.rcTreeSelectStrings.none
-import typings.rcTreeSelect.rcTreeSelectStrings.off
-import typings.rcTreeSelect.rcTreeSelectStrings.other
-import typings.rcTreeSelect.rcTreeSelectStrings.page
-import typings.rcTreeSelect.rcTreeSelectStrings.polite
-import typings.rcTreeSelect.rcTreeSelectStrings.popup
-import typings.rcTreeSelect.rcTreeSelectStrings.removals
-import typings.rcTreeSelect.rcTreeSelectStrings.responsive
-import typings.rcTreeSelect.rcTreeSelectStrings.rtl
-import typings.rcTreeSelect.rcTreeSelectStrings.spelling
-import typings.rcTreeSelect.rcTreeSelectStrings.step
-import typings.rcTreeSelect.rcTreeSelectStrings.text
-import typings.rcTreeSelect.rcTreeSelectStrings.time
-import typings.rcTreeSelect.rcTreeSelectStrings.tree
-import typings.rcTreeSelect.rcTreeSelectStrings.vertical
 import typings.rcTrigger.esInterfaceMod.AlignType
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
@@ -275,11 +230,11 @@ object anon {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -289,7 +244,7 @@ object anon {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -297,7 +252,7 @@ object anon {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -307,11 +262,11 @@ object anon {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -321,7 +276,7 @@ object anon {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -329,7 +284,7 @@ object anon {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -337,12 +292,12 @@ object anon {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -359,7 +314,7 @@ object anon {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -383,7 +338,7 @@ object anon {
     
     var defaultValue: js.UndefOr[Any] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -428,7 +383,7 @@ object anon {
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
-    var maxTagCount: js.UndefOr[Double | responsive] = js.undefined
+    var maxTagCount: js.UndefOr[Double | "responsive"] = js.undefined
     
     var maxTagPlaceholder: js.UndefOr[
         ReactNode | (js.Function1[/* omittedValues */ js.Array[DisplayValueType], ReactNode])
@@ -497,7 +452,7 @@ object anon {
     
     var searchValue: js.UndefOr[String] = js.undefined
     
-    var showAction: js.UndefOr[js.Array[focus | click]] = js.undefined
+    var showAction: js.UndefOr[js.Array["focus" | "click"]] = js.undefined
     
     var showArrow: js.UndefOr[Boolean] = js.undefined
     
@@ -576,7 +531,7 @@ object anon {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -584,7 +539,7 @@ object anon {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -604,7 +559,7 @@ object anon {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -620,7 +575,7 @@ object anon {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -640,7 +595,7 @@ object anon {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -648,7 +603,7 @@ object anon {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -668,7 +623,7 @@ object anon {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -684,7 +639,7 @@ object anon {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -700,7 +655,7 @@ object anon {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -709,7 +664,7 @@ object anon {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -742,7 +697,7 @@ object anon {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -792,7 +747,7 @@ object anon {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -882,7 +837,7 @@ object anon {
       
       inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      inline def setMaxTagCount(value: Double | responsive): Self = StObject.set(x, "maxTagCount", value.asInstanceOf[js.Any])
+      inline def setMaxTagCount(value: Double | "responsive"): Self = StObject.set(x, "maxTagCount", value.asInstanceOf[js.Any])
       
       inline def setMaxTagCountUndefined: Self = StObject.set(x, "maxTagCount", js.undefined)
       
@@ -1012,11 +967,11 @@ object anon {
       
       inline def setSearchValueUndefined: Self = StObject.set(x, "searchValue", js.undefined)
       
-      inline def setShowAction(value: js.Array[focus | click]): Self = StObject.set(x, "showAction", value.asInstanceOf[js.Any])
+      inline def setShowAction(value: js.Array["focus" | "click"]): Self = StObject.set(x, "showAction", value.asInstanceOf[js.Any])
       
       inline def setShowActionUndefined: Self = StObject.set(x, "showAction", js.undefined)
       
-      inline def setShowActionVarargs(value: (focus | click)*): Self = StObject.set(x, "showAction", js.Array(value*))
+      inline def setShowActionVarargs(value: ("focus" | "click")*): Self = StObject.set(x, "showAction", js.Array(value*))
       
       inline def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
       

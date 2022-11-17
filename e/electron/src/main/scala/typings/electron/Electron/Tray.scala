@@ -1,22 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`balloon-click`
-import typings.electron.electronStrings.`balloon-closed`
-import typings.electron.electronStrings.`balloon-show`
-import typings.electron.electronStrings.`double-click`
-import typings.electron.electronStrings.`drag-end`
-import typings.electron.electronStrings.`drag-enter`
-import typings.electron.electronStrings.`drag-leave`
-import typings.electron.electronStrings.`drop-files`
-import typings.electron.electronStrings.`drop-text`
-import typings.electron.electronStrings.`mouse-down`
-import typings.electron.electronStrings.`mouse-enter`
-import typings.electron.electronStrings.`mouse-leave`
-import typings.electron.electronStrings.`mouse-move`
-import typings.electron.electronStrings.`mouse-up`
-import typings.electron.electronStrings.`right-click`
-import typings.electron.electronStrings.click
-import typings.electron.electronStrings.drop
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,53 +9,70 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Tray extends EventEmitter {
   
   @JSName("addListener")
-  def addListener_balloonclick(event: `balloon-click`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("addListener_dragleave")
+  def addListener(event: "drag-leave", listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_balloonclosed(event: `balloon-closed`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("addListener_dragend")
+  def addListener(event: "drag-end", listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_balloonshow(event: `balloon-show`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("addListener_drop")
+  def addListener(event: "drop", listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_click(
-    event: click,
+  @scala.annotation.targetName("addListener_balloonclosed")
+  def addListener(event: "balloon-closed", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_dragenter")
+  def addListener(event: "drag-enter", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_balloonshow")
+  def addListener(event: "balloon-show", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_balloonclick")
+  def addListener(event: "balloon-click", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_dropfiles")
+  def addListener(event: "drop-files", listener: js.Function2[/* event */ Event, /* files */ js.Array[String], Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_mousedown")
+  def addListener(event: "mouse-down", listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_mouseleave")
+  def addListener(
+    event: "mouse-leave",
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_doubleclick")
+  def addListener(
+    event: "double-click",
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_mouseenter")
+  def addListener(
+    event: "mouse-enter",
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_mousemove")
+  def addListener(event: "mouse-move", listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_mouseup")
+  def addListener(event: "mouse-up", listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_droptext")
+  def addListener(event: "drop-text", listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_rightclick")
+  def addListener(
+    event: "right-click",
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_click")
+  def addListener(
+    event: "click",
     listener: js.Function3[/* event */ KeyboardEvent, /* bounds */ Rectangle, /* position */ Point, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_doubleclick(
-    event: `double-click`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_dragend(event: `drag-end`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_dragenter(event: `drag-enter`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_dragleave(event: `drag-leave`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_drop(event: drop, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_dropfiles(event: `drop-files`, listener: js.Function2[/* event */ Event, /* files */ js.Array[String], Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_mousedown(event: `mouse-down`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_mouseenter(
-    event: `mouse-enter`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_mouseleave(
-    event: `mouse-leave`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_mouseup(event: `mouse-up`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_rightclick(
-    event: `right-click`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
   ): this.type = js.native
   
   /**
@@ -130,14 +130,6 @@ trait Tray extends EventEmitter {
     */
   def isDestroyed(): Boolean = js.native
   
-  // Docs: https://electronjs.org/docs/api/tray
-  /**
-    * Emitted when the tray balloon is clicked.
-    *
-    * @platform win32
-    */
-  @JSName("on")
-  def on_balloonclick(event: `balloon-click`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the tray balloon is closed because of timeout or user manually
     * closes it.
@@ -145,108 +137,76 @@ trait Tray extends EventEmitter {
     * @platform win32
     */
   @JSName("on")
-  def on_balloonclosed(event: `balloon-closed`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_balloonclosed")
+  def on(event: "balloon-closed", listener: js.Function): this.type = js.native
   /**
     * Emitted when the tray balloon shows.
     *
     * @platform win32
     */
   @JSName("on")
-  def on_balloonshow(event: `balloon-show`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the tray icon is clicked.
-    */
-  @JSName("on")
-  def on_click(
-    event: click,
-    listener: js.Function3[/* event */ KeyboardEvent, /* bounds */ Rectangle, /* position */ Point, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when the tray icon is double clicked.
-    *
-    * @platform darwin,win32
-    */
-  @JSName("on")
-  def on_doubleclick(
-    event: `double-click`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when a drag operation ends on the tray or ends at another location.
-    *
-    * @platform darwin
-    */
-  @JSName("on")
-  def on_dragend(event: `drag-end`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_balloonshow")
+  def on(event: "balloon-show", listener: js.Function): this.type = js.native
   /**
     * Emitted when a drag operation enters the tray icon.
     *
     * @platform darwin
     */
   @JSName("on")
-  def on_dragenter(event: `drag-enter`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_dragenter")
+  def on(event: "drag-enter", listener: js.Function): this.type = js.native
   /**
     * Emitted when a drag operation exits the tray icon.
     *
     * @platform darwin
     */
   @JSName("on")
-  def on_dragleave(event: `drag-leave`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_dragleave")
+  def on(event: "drag-leave", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when a drag operation ends on the tray or ends at another location.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_dragend")
+  def on(event: "drag-end", listener: js.Function): this.type = js.native
+  // Docs: https://electronjs.org/docs/api/tray
+  /**
+    * Emitted when the tray balloon is clicked.
+    *
+    * @platform win32
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_balloonclick")
+  def on(event: "balloon-click", listener: js.Function): this.type = js.native
   /**
     * Emitted when any dragged items are dropped on the tray icon.
     *
     * @platform darwin
     */
   @JSName("on")
-  def on_drop(event: drop, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_drop")
+  def on(event: "drop", listener: js.Function): this.type = js.native
   /**
     * Emitted when dragged files are dropped in the tray icon.
     *
     * @platform darwin
     */
   @JSName("on")
-  def on_dropfiles(event: `drop-files`, listener: js.Function2[/* event */ Event, /* files */ js.Array[String], Unit]): this.type = js.native
+  @scala.annotation.targetName("on_dropfiles")
+  def on(event: "drop-files", listener: js.Function2[/* event */ Event, /* files */ js.Array[String], Unit]): this.type = js.native
   /**
-    * Emitted when dragged text is dropped in the tray icon.
-    *
-    * @platform darwin
-    */
-  @JSName("on")
-  def on_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
-  /**
-    * Emitted when the mouse clicks the tray icon.
-    *
-    * @platform darwin
-    */
-  @JSName("on")
-  def on_mousedown(event: `mouse-down`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
-  /**
-    * Emitted when the mouse enters the tray icon.
-    *
-    * @platform darwin
-    */
-  @JSName("on")
-  def on_mouseenter(
-    event: `mouse-enter`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when the mouse exits the tray icon.
-    *
-    * @platform darwin
-    */
-  @JSName("on")
-  def on_mouseleave(
-    event: `mouse-leave`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when the mouse moves in the tray icon.
+    * Emitted when the tray icon is double clicked.
     *
     * @platform darwin,win32
     */
   @JSName("on")
-  def on_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_doubleclick")
+  def on(
+    event: "double-click",
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
   /**
     * Emitted when the mouse is released from clicking the tray icon.
     *
@@ -256,66 +216,140 @@ trait Tray extends EventEmitter {
     * @platform darwin
     */
   @JSName("on")
-  def on_mouseup(event: `mouse-up`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_mouseup")
+  def on(event: "mouse-up", listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  /**
+    * Emitted when the mouse enters the tray icon.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_mouseenter")
+  def on(
+    event: "mouse-enter",
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when the mouse moves in the tray icon.
+    *
+    * @platform darwin,win32
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_mousemove")
+  def on(event: "mouse-move", listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  /**
+    * Emitted when the mouse exits the tray icon.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_mouseleave")
+  def on(
+    event: "mouse-leave",
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
   /**
     * Emitted when the tray icon is right clicked.
     *
     * @platform darwin,win32
     */
   @JSName("on")
-  def on_rightclick(
-    event: `right-click`,
+  @scala.annotation.targetName("on_rightclick")
+  def on(
+    event: "right-click",
     listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when dragged text is dropped in the tray icon.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_droptext")
+  def on(event: "drop-text", listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
+  /**
+    * Emitted when the mouse clicks the tray icon.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_mousedown")
+  def on(event: "mouse-down", listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  /**
+    * Emitted when the tray icon is clicked.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_click")
+  def on(
+    event: "click",
+    listener: js.Function3[/* event */ KeyboardEvent, /* bounds */ Rectangle, /* position */ Point, Unit]
   ): this.type = js.native
   
   @JSName("once")
-  def once_balloonclick(event: `balloon-click`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_dragend")
+  def once(event: "drag-end", listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_balloonclosed(event: `balloon-closed`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_dragleave")
+  def once(event: "drag-leave", listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_balloonshow(event: `balloon-show`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_dragenter")
+  def once(event: "drag-enter", listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_click(
-    event: click,
+  @scala.annotation.targetName("once_balloonclosed")
+  def once(event: "balloon-closed", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_balloonshow")
+  def once(event: "balloon-show", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_balloonclick")
+  def once(event: "balloon-click", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_drop")
+  def once(event: "drop", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_mousemove")
+  def once(event: "mouse-move", listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_droptext")
+  def once(event: "drop-text", listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_mousedown")
+  def once(event: "mouse-down", listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_doubleclick")
+  def once(
+    event: "double-click",
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_mouseenter")
+  def once(
+    event: "mouse-enter",
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_mouseleave")
+  def once(
+    event: "mouse-leave",
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_mouseup")
+  def once(event: "mouse-up", listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_dropfiles")
+  def once(event: "drop-files", listener: js.Function2[/* event */ Event, /* files */ js.Array[String], Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_rightclick")
+  def once(
+    event: "right-click",
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_click")
+  def once(
+    event: "click",
     listener: js.Function3[/* event */ KeyboardEvent, /* bounds */ Rectangle, /* position */ Point, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_doubleclick(
-    event: `double-click`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_dragend(event: `drag-end`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_dragenter(event: `drag-enter`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_dragleave(event: `drag-leave`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_drop(event: drop, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_dropfiles(event: `drop-files`, listener: js.Function2[/* event */ Event, /* files */ js.Array[String], Unit]): this.type = js.native
-  @JSName("once")
-  def once_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
-  @JSName("once")
-  def once_mousedown(event: `mouse-down`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
-  @JSName("once")
-  def once_mouseenter(
-    event: `mouse-enter`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_mouseleave(
-    event: `mouse-leave`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
-  @JSName("once")
-  def once_mouseup(event: `mouse-up`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
-  @JSName("once")
-  def once_rightclick(
-    event: `right-click`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
   ): this.type = js.native
   
   /**
@@ -339,53 +373,70 @@ trait Tray extends EventEmitter {
   def removeBalloon(): Unit = js.native
   
   @JSName("removeListener")
-  def removeListener_balloonclick(event: `balloon-click`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("removeListener_balloonclick")
+  def removeListener(event: "balloon-click", listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_balloonclosed(event: `balloon-closed`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("removeListener_dragenter")
+  def removeListener(event: "drag-enter", listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_balloonshow(event: `balloon-show`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("removeListener_balloonclosed")
+  def removeListener(event: "balloon-closed", listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_click(
-    event: click,
+  @scala.annotation.targetName("removeListener_dragleave")
+  def removeListener(event: "drag-leave", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_balloonshow")
+  def removeListener(event: "balloon-show", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_drop")
+  def removeListener(event: "drop", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_dragend")
+  def removeListener(event: "drag-end", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_droptext")
+  def removeListener(event: "drop-text", listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_rightclick")
+  def removeListener(
+    event: "right-click",
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_mousemove")
+  def removeListener(event: "mouse-move", listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_mouseenter")
+  def removeListener(
+    event: "mouse-enter",
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_dropfiles")
+  def removeListener(event: "drop-files", listener: js.Function2[/* event */ Event, /* files */ js.Array[String], Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_doubleclick")
+  def removeListener(
+    event: "double-click",
+    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_mouseleave")
+  def removeListener(
+    event: "mouse-leave",
+    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_mousedown")
+  def removeListener(event: "mouse-down", listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_mouseup")
+  def removeListener(event: "mouse-up", listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_click")
+  def removeListener(
+    event: "click",
     listener: js.Function3[/* event */ KeyboardEvent, /* bounds */ Rectangle, /* position */ Point, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_doubleclick(
-    event: `double-click`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_dragend(event: `drag-end`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_dragenter(event: `drag-enter`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_dragleave(event: `drag-leave`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_drop(event: drop, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_dropfiles(event: `drop-files`, listener: js.Function2[/* event */ Event, /* files */ js.Array[String], Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_mousedown(event: `mouse-down`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_mouseenter(
-    event: `mouse-enter`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_mouseleave(
-    event: `mouse-leave`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_mouseup(event: `mouse-up`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_rightclick(
-    event: `right-click`,
-    listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
   ): this.type = js.native
   
   /**

@@ -1,17 +1,5 @@
 package typings.angularCommon.httpMod
 
-import typings.angularCommon.angularCommonStrings.DELETE
-import typings.angularCommon.angularCommonStrings.GET
-import typings.angularCommon.angularCommonStrings.HEAD
-import typings.angularCommon.angularCommonStrings.JSONP
-import typings.angularCommon.angularCommonStrings.OPTIONS
-import typings.angularCommon.angularCommonStrings.PATCH
-import typings.angularCommon.angularCommonStrings.POST
-import typings.angularCommon.angularCommonStrings.PUT
-import typings.angularCommon.angularCommonStrings.arraybuffer
-import typings.angularCommon.angularCommonStrings.blob
-import typings.angularCommon.angularCommonStrings.json
-import typings.angularCommon.angularCommonStrings.text
 import typings.angularCommon.anon.HeadersParams
 import typings.angularCommon.anon.Method
 import typings.angularCommon.anon.SetHeaders
@@ -24,15 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular/common/http", "HttpRequest")
 @js.native
 open class HttpRequest[T] protected () extends StObject {
-  def this(method: DELETE | GET | HEAD | JSONP | OPTIONS | PATCH | POST | PUT, url: String) = this()
-  def this(method: String, url: String) = this()
-  def this(method: POST | PUT | PATCH, url: String, body: T) = this()
-  def this(method: DELETE | GET | HEAD | JSONP | OPTIONS, url: String, init: HeadersParams) = this()
-  def this(method: String, url: String, body: T) = this()
-  def this(method: POST | PUT | PATCH, url: String, body: T, init: HeadersParams) = this()
-  def this(method: POST | PUT | PATCH, url: String, body: Null, init: HeadersParams) = this()
-  def this(method: String, url: String, body: T, init: HeadersParams) = this()
-  def this(method: String, url: String, body: Null, init: HeadersParams) = this()
+  def this(
+    method: "DELETE" | "GET" | "HEAD" | "JSONP" | "OPTIONS" | "POST" | "PUT" | "PATCH" | String,
+    url: String
+  ) = this()
+  def this(method: "POST" | "PUT" | "PATCH" | String, url: String, body: T) = this()
+  def this(method: "DELETE" | "GET" | "HEAD" | "JSONP" | "OPTIONS", url: String, init: HeadersParams) = this()
+  def this(method: "POST" | "PUT" | "PATCH" | String, url: String, body: T, init: HeadersParams) = this()
+  def this(method: "POST" | "PUT" | "PATCH" | String, url: String, body: Null, init: HeadersParams) = this()
   
   /**
     * The request body, or `null` if one isn't set.
@@ -95,7 +82,7 @@ open class HttpRequest[T] protected () extends StObject {
     * This is used to parse the response appropriately before returning it to
     * the requestee.
     */
-  val responseType: arraybuffer | blob | json | text = js.native
+  val responseType: "arraybuffer" | "blob" | "json" | "text" = js.native
   
   /**
     * Transform the free-form body into a serialized format suitable for

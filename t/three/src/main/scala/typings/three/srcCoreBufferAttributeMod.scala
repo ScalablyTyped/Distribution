@@ -6,7 +6,6 @@ import typings.three.anon.Count
 import typings.three.srcConstantsMod.Usage
 import typings.three.srcMathMatrix3Mod.Matrix3
 import typings.three.srcMathMatrix4Mod.Matrix4
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +45,7 @@ object srcCoreBufferAttributeMod {
     
     def getZ(index: Double): Double = js.native
     
-    val isBufferAttribute: `true` = js.native
+    val isBufferAttribute: true = js.native
     
     var itemSize: Double = js.native
     

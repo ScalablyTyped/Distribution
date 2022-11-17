@@ -8,7 +8,6 @@ import typings.rxjs.distTypesInternalTypesMod.OperatorFunction
 import typings.rxjs.distTypesInternalTypesMod.Subscribable
 import typings.rxjs.distTypesInternalTypesMod.TeardownLogic
 import typings.rxjs.distTypesInternalTypesMod.Unsubscribable
-import typings.rxjs.distTypesInternalTypesMod._ObservableInput
 import typings.std.Partial
 import typings.std.PromiseConstructor
 import typings.std.PromiseConstructorLike
@@ -29,8 +28,7 @@ object distTypesInternalObservableMod {
     */
   open class Observable[T] ()
     extends StObject
-       with Subscribable[T]
-       with _ObservableInput[T] {
+       with Subscribable[T] {
     def this(subscribe: js.ThisFunction1[/* this */ Observable[T], /* subscriber */ Subscriber[T], TeardownLogic]) = this()
     
     /**

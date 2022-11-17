@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IpcNetConnectOpts
   extends StObject
      with IpcSocketConnectOpts
-     with SocketConstructorOpts
-     with NetConnectOpts {
+     with SocketConstructorOpts {
   
   var timeout: js.UndefOr[Double] = js.undefined
 }

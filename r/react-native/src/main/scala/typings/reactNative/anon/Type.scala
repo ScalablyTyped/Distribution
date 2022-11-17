@@ -1,14 +1,11 @@
 package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNative.FormDataPart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Type
-  extends StObject
-     with FormDataPart {
+trait Type extends StObject {
   
   var headers: StringDictionary[String]
   

@@ -2,14 +2,6 @@ package typings.reactNative.mod
 
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
-import typings.reactNative.reactNativeStrings.`on-drag`
-import typings.reactNative.reactNativeStrings.always
-import typings.reactNative.reactNativeStrings.fast
-import typings.reactNative.reactNativeStrings.handled
-import typings.reactNative.reactNativeStrings.interactive
-import typings.reactNative.reactNativeStrings.never
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.normal_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +47,7 @@ trait ScrollViewProps
     *  - `'normal'`: 0.998 on iOS, 0.985 on Android (the default)
     *  - `'fast'`: 0.99 on iOS, 0.9 on Android
     */
-  var decelerationRate: js.UndefOr[fast | normal_ | Double] = js.undefined
+  var decelerationRate: js.UndefOr["fast" | "normal" | Double] = js.undefined
   
   /**
     * When true, the scroll view stops on the next index (in relation to scroll position at release)
@@ -93,7 +85,7 @@ trait ScrollViewProps
     *     and moves in synchrony with the touch; dragging upwards cancels the
     *     dismissal.
     */
-  var keyboardDismissMode: js.UndefOr[none | interactive | `on-drag`] = js.undefined
+  var keyboardDismissMode: js.UndefOr["none" | "interactive" | "on-drag"] = js.undefined
   
   /**
     * Determines when the keyboard should stay visible after a tap.
@@ -103,7 +95,7 @@ trait ScrollViewProps
     * - false, deprecated, use 'never' instead
     * - true, deprecated, use 'always' instead
     */
-  var keyboardShouldPersistTaps: js.UndefOr[Boolean | always | never | handled] = js.undefined
+  var keyboardShouldPersistTaps: js.UndefOr[Boolean | "always" | "never" | "handled"] = js.undefined
   
   /**
     * Called when scrollable content view of the ScrollView changes.
@@ -226,7 +218,7 @@ object ScrollViewProps {
     
     inline def setContentContainerStyleUndefined: Self = StObject.set(x, "contentContainerStyle", js.undefined)
     
-    inline def setDecelerationRate(value: fast | normal_ | Double): Self = StObject.set(x, "decelerationRate", value.asInstanceOf[js.Any])
+    inline def setDecelerationRate(value: "fast" | "normal" | Double): Self = StObject.set(x, "decelerationRate", value.asInstanceOf[js.Any])
     
     inline def setDecelerationRateUndefined: Self = StObject.set(x, "decelerationRate", js.undefined)
     
@@ -248,11 +240,11 @@ object ScrollViewProps {
     
     inline def setInvertStickyHeadersUndefined: Self = StObject.set(x, "invertStickyHeaders", js.undefined)
     
-    inline def setKeyboardDismissMode(value: none | interactive | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+    inline def setKeyboardDismissMode(value: "none" | "interactive" | "on-drag"): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
     
     inline def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
     
-    inline def setKeyboardShouldPersistTaps(value: Boolean | always | never | handled): Self = StObject.set(x, "keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
+    inline def setKeyboardShouldPersistTaps(value: Boolean | "always" | "never" | "handled"): Self = StObject.set(x, "keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
     
     inline def setKeyboardShouldPersistTapsUndefined: Self = StObject.set(x, "keyboardShouldPersistTaps", js.undefined)
     

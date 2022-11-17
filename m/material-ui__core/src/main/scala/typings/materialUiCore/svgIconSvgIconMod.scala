@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.HtmlColor
-import typings.materialUiCore.materialUiCoreStrings.svg
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -25,40 +24,29 @@ object svgIconSvgIconMod extends Shortcut {
     */
   @JSImport("@material-ui/core/SvgIcon/SvgIcon", JSImport.Default)
   @js.native
-  val default: OverridableComponent[SvgIconTypeMap[js.Object, svg]] = js.native
+  val default: OverridableComponent[SvgIconTypeMap[js.Object, "svg"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.colorSecondary
-    - typings.materialUiCore.materialUiCoreStrings.colorAction
-    - typings.materialUiCore.materialUiCoreStrings.colorDisabled
-    - typings.materialUiCore.materialUiCoreStrings.colorError
-    - typings.materialUiCore.materialUiCoreStrings.colorPrimary
-    - typings.materialUiCore.materialUiCoreStrings.fontSizeInherit
-    - typings.materialUiCore.materialUiCoreStrings.fontSizeSmall
-    - typings.materialUiCore.materialUiCoreStrings.fontSizeLarge
-  */
-  trait SvgIconClassKey extends StObject
   object SvgIconClassKey {
     
-    inline def colorAction: typings.materialUiCore.materialUiCoreStrings.colorAction = "colorAction".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorAction]
+    inline def colorAction: "colorAction" = "colorAction".asInstanceOf["colorAction"]
     
-    inline def colorDisabled: typings.materialUiCore.materialUiCoreStrings.colorDisabled = "colorDisabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorDisabled]
+    inline def colorDisabled: "colorDisabled" = "colorDisabled".asInstanceOf["colorDisabled"]
     
-    inline def colorError: typings.materialUiCore.materialUiCoreStrings.colorError = "colorError".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorError]
+    inline def colorError: "colorError" = "colorError".asInstanceOf["colorError"]
     
-    inline def colorPrimary: typings.materialUiCore.materialUiCoreStrings.colorPrimary = "colorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorPrimary]
+    inline def colorPrimary: "colorPrimary" = "colorPrimary".asInstanceOf["colorPrimary"]
     
-    inline def colorSecondary: typings.materialUiCore.materialUiCoreStrings.colorSecondary = "colorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorSecondary]
+    inline def colorSecondary: "colorSecondary" = "colorSecondary".asInstanceOf["colorSecondary"]
     
-    inline def fontSizeInherit: typings.materialUiCore.materialUiCoreStrings.fontSizeInherit = "fontSizeInherit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.fontSizeInherit]
+    inline def fontSizeInherit: "fontSizeInherit" = "fontSizeInherit".asInstanceOf["fontSizeInherit"]
     
-    inline def fontSizeLarge: typings.materialUiCore.materialUiCoreStrings.fontSizeLarge = "fontSizeLarge".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.fontSizeLarge]
+    inline def fontSizeLarge: "fontSizeLarge" = "fontSizeLarge".asInstanceOf["fontSizeLarge"]
     
-    inline def fontSizeSmall: typings.materialUiCore.materialUiCoreStrings.fontSizeSmall = "fontSizeSmall".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.fontSizeSmall]
+    inline def fontSizeSmall: "fontSizeSmall" = "fontSizeSmall".asInstanceOf["fontSizeSmall"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
   }
+  type SvgIconClassKey = "root" | "colorSecondary" | "colorAction" | "colorDisabled" | "colorError" | "colorPrimary" | "fontSizeInherit" | "fontSizeSmall" | "fontSizeLarge"
   
   type SvgIconProps[D /* <: ElementType[Any] */, P] = OverrideProps[SvgIconTypeMap[P, D], D]
   
@@ -87,8 +75,8 @@ object svgIconSvgIconMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[SvgIconTypeMap[js.Object, svg]]
+  type _To = OverridableComponent[SvgIconTypeMap[js.Object, "svg"]]
   
   /* This means you don't have to write `default`, but can instead just say `svgIconSvgIconMod.foo` */
-  override def _to: OverridableComponent[SvgIconTypeMap[js.Object, svg]] = default
+  override def _to: OverridableComponent[SvgIconTypeMap[js.Object, "svg"]] = default
 }

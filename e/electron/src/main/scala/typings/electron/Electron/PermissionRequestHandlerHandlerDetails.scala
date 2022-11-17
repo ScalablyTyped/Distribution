@@ -1,7 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.audio
-import typings.electron.electronStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +19,7 @@ trait PermissionRequestHandlerHandlerDetails extends StObject {
   /**
     * The types of media access being requested, elements can be `video` or `audio`
     */
-  var mediaTypes: js.UndefOr[js.Array[video | audio]] = js.undefined
+  var mediaTypes: js.UndefOr[js.Array["video" | "audio"]] = js.undefined
   
   /**
     * The last URL the requesting frame loaded
@@ -48,11 +46,11 @@ object PermissionRequestHandlerHandlerDetails {
     
     inline def setIsMainFrame(value: Boolean): Self = StObject.set(x, "isMainFrame", value.asInstanceOf[js.Any])
     
-    inline def setMediaTypes(value: js.Array[video | audio]): Self = StObject.set(x, "mediaTypes", value.asInstanceOf[js.Any])
+    inline def setMediaTypes(value: js.Array["video" | "audio"]): Self = StObject.set(x, "mediaTypes", value.asInstanceOf[js.Any])
     
     inline def setMediaTypesUndefined: Self = StObject.set(x, "mediaTypes", js.undefined)
     
-    inline def setMediaTypesVarargs(value: (video | audio)*): Self = StObject.set(x, "mediaTypes", js.Array(value*))
+    inline def setMediaTypesVarargs(value: ("video" | "audio")*): Self = StObject.set(x, "mediaTypes", js.Array(value*))
     
     inline def setRequestingUrl(value: String): Self = StObject.set(x, "requestingUrl", value.asInstanceOf[js.Any])
     

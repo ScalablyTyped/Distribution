@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticWIDTHS
-import typings.semanticUiReact.semanticUiReactStrings.equal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +48,7 @@ object distCommonjsCollectionsFormFormGroupMod extends Shortcut {
     var unstackable: js.UndefOr[Boolean] = js.undefined
     
     /** Fields Groups can specify their width in grid columns or automatically divide fields to be equal width. */
-    var widths: js.UndefOr[SemanticWIDTHS | equal] = js.undefined
+    var widths: js.UndefOr[SemanticWIDTHS | "equal"] = js.undefined
   }
   object StrictFormGroupProps {
     
@@ -84,7 +83,7 @@ object distCommonjsCollectionsFormFormGroupMod extends Shortcut {
       
       inline def setUnstackableUndefined: Self = StObject.set(x, "unstackable", js.undefined)
       
-      inline def setWidths(value: SemanticWIDTHS | equal): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
+      inline def setWidths(value: SemanticWIDTHS | "equal"): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
       
       inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
     }

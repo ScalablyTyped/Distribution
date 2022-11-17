@@ -5,7 +5,6 @@ import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Color
 import typings.three.srcThreeMod.Mesh
 import typings.three.srcThreeMod.Texture
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object examplesJsmObjectsLensflareMod {
     
     def dispose(): Unit = js.native
     
-    val isLensflare: `true` = js.native
+    val isLensflare: true = js.native
   }
   
   @JSImport("three/examples/jsm/objects/Lensflare", "LensflareElement")

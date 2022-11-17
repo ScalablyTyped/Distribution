@@ -1,23 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSNonNullExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSNonNullExpression_
+trait TSNonNullExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with LVal
-     with PatternLike
-     with TypeScript {
+     with BaseNode {
   
   var expression: Expression
   
   @JSName("type")
-  var type_TSNonNullExpression_ : TSNonNullExpression
+  var type_TSNonNullExpression_ : "TSNonNullExpression"
 }
 object TSNonNullExpression_ {
   
@@ -31,6 +25,6 @@ object TSNonNullExpression_ {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSNonNullExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSNonNullExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

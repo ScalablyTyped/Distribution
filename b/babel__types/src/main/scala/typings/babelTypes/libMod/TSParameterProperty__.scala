@@ -1,21 +1,14 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSParameterProperty
-import typings.babelTypes.babelTypesStrings.`protected`
-import typings.babelTypes.babelTypesStrings.private_
-import typings.babelTypes.babelTypesStrings.public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSParameterProperty__
   extends StObject
-     with BaseNode
-     with LVal
-     with Node
-     with TypeScript {
+     with BaseNode {
   
-  var accessibility: js.UndefOr[public | private_ | `protected` | Null] = js.undefined
+  var accessibility: js.UndefOr["public" | "private" | "protected" | Null] = js.undefined
   
   var decorators: js.UndefOr[js.Array[Decorator_] | Null] = js.undefined
   
@@ -26,7 +19,7 @@ trait TSParameterProperty__
   var readonly: js.UndefOr[Boolean | Null] = js.undefined
   
   @JSName("type")
-  var type_TSParameterProperty__ : TSParameterProperty
+  var type_TSParameterProperty__ : "TSParameterProperty"
 }
 object TSParameterProperty__ {
   
@@ -38,7 +31,7 @@ object TSParameterProperty__ {
   
   extension [Self <: TSParameterProperty__](x: Self) {
     
-    inline def setAccessibility(value: public | private_ | `protected`): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: "public" | "private" | "protected"): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityNull: Self = StObject.set(x, "accessibility", null)
     
@@ -66,6 +59,6 @@ object TSParameterProperty__ {
     
     inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
-    inline def setType(value: TSParameterProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSParameterProperty"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

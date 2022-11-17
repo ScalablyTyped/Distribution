@@ -1,13 +1,10 @@
 package typings.angularCompilerCli.srcNgtscReflectionSrcHostMod
 
-import typings.angularCompilerCli.angularCompilerCliInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImportedTypeValueReference
-  extends StObject
-     with TypeValueReference {
+trait ImportedTypeValueReference extends StObject {
   
   /**
     * The name of the top-level symbol that is imported from `moduleName`. If `nestedPath` is also
@@ -15,7 +12,7 @@ trait ImportedTypeValueReference
     */
   var importedName: String
   
-  var kind: `1`
+  var kind: 1
   
   /**
     * The module specifier from which the `importedName` symbol should be imported.
@@ -41,7 +38,7 @@ object ImportedTypeValueReference {
     
     inline def setImportedName(value: String): Self = StObject.set(x, "importedName", value.asInstanceOf[js.Any])
     
-    inline def setKind(value: `1`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: 1): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
     

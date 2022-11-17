@@ -1,7 +1,5 @@
 package typings.rcFieldForm.esInterfaceMod
 
-import typings.rcFieldForm.rcFieldFormBooleans.`false`
-import typings.rcFieldForm.rcFieldFormBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +19,7 @@ trait InternalFormInstance extends StObject {
   var getFieldsError: js.Function1[/* nameList */ js.UndefOr[js.Array[NamePath]], js.Array[FieldError]]
   
   var getFieldsValue: js.Function0[Any] & (js.Function2[
-    /* nameList */ js.Array[NamePath] | `true`, 
+    /* nameList */ js.Array[NamePath] | true, 
     /* filterFunc */ js.UndefOr[js.Function1[/* meta */ Meta, Boolean]], 
     Any
   ])
@@ -61,7 +59,7 @@ trait InternalFormInstance extends StObject {
   
   var validateFields: InternalValidateFields[Any]
   
-  var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
+  var validateTrigger: js.UndefOr[String | js.Array[String] | false] = js.undefined
 }
 object InternalFormInstance {
   
@@ -71,7 +69,7 @@ object InternalFormInstance {
     getFieldWarning: /* name */ NamePath => js.Array[String],
     getFieldsError: /* nameList */ js.UndefOr[js.Array[NamePath]] => js.Array[FieldError],
     getFieldsValue: js.Function0[Any] & (js.Function2[
-      /* nameList */ js.Array[NamePath] | `true`, 
+      /* nameList */ js.Array[NamePath] | true, 
       /* filterFunc */ js.UndefOr[js.Function1[/* meta */ Meta, Boolean]], 
       Any
     ]),
@@ -107,7 +105,7 @@ object InternalFormInstance {
     
     inline def setGetFieldsValue(
       value: js.Function0[Any] & (js.Function2[
-          /* nameList */ js.Array[NamePath] | `true`, 
+          /* nameList */ js.Array[NamePath] | true, 
           /* filterFunc */ js.UndefOr[js.Function1[/* meta */ Meta, Boolean]], 
           Any
         ])
@@ -149,7 +147,7 @@ object InternalFormInstance {
       value: (/* nameList */ js.UndefOr[js.Array[NamePath]], /* options */ js.UndefOr[ValidateOptions]) => js.Promise[Any]
     ): Self = StObject.set(x, "validateFields", js.Any.fromFunction2(value))
     
-    inline def setValidateTrigger(value: String | js.Array[String] | `false`): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
+    inline def setValidateTrigger(value: String | js.Array[String] | false): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
     
     inline def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
     

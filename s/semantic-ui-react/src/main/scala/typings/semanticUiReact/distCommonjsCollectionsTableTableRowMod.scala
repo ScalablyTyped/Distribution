@@ -8,9 +8,6 @@ import typings.semanticUiReact.distCommonjsCollectionsTableTableCellMod.TableCel
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandCollection
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
-import typings.semanticUiReact.semanticUiReactStrings.center
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,7 +51,7 @@ object distCommonjsCollectionsTableTableRowMod extends Shortcut {
     var positive: js.UndefOr[Boolean] = js.undefined
     
     /** A table row can adjust its text alignment. */
-    var textAlign: js.UndefOr[center | left | right] = js.undefined
+    var textAlign: js.UndefOr["center" | "left" | "right"] = js.undefined
     
     /** A table row can adjust its vertical alignment. */
     var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.undefined
@@ -113,7 +110,7 @@ object distCommonjsCollectionsTableTableRowMod extends Shortcut {
       
       inline def setPositiveUndefined: Self = StObject.set(x, "positive", js.undefined)
       
-      inline def setTextAlign(value: center | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: "center" | "left" | "right"): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
       inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       

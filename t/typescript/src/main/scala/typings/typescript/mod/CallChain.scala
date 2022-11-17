@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CallChain
   extends StObject
-     with CallExpression
-     with OptionalChain {
+     with CallExpression {
   
   var _optionalChainBrand: Any = js.native
 }

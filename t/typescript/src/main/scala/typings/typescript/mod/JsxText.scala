@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JsxText
   extends StObject
-     with LiteralLikeNode
-     with JsxChild
-     with LiteralToken {
+     with LiteralLikeNode {
   
   val containsOnlyTriviaWhiteSpaces: Boolean = js.native
   

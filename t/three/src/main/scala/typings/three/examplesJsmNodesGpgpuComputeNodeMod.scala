@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object examplesJsmNodesGpgpuComputeNodeMod {
     
     var dispatchCount: Double = js.native
     
-    var isComputeNode: `true` = js.native
+    var isComputeNode: true = js.native
     
     var workgroupSize: js.Array[Double] = js.native
   }

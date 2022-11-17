@@ -1,9 +1,6 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.materialUiCoreStrings.filled
-import typings.materialUiCore.materialUiCoreStrings.outlined
-import typings.materialUiCore.materialUiCoreStrings.standard
 import typings.react.mod.ComponentType
 import typings.react.mod.ElementType
 import typings.react.mod.Ref
@@ -27,7 +24,7 @@ object nativeSelectNativeSelectInputMod extends Shortcut {
     
     var inputRef: js.UndefOr[Ref[HTMLSelectElement]] = js.undefined
     
-    var variant: js.UndefOr[standard | outlined | filled] = js.undefined
+    var variant: js.UndefOr["standard" | "outlined" | "filled"] = js.undefined
   }
   object NativeSelectInputProps {
     
@@ -50,7 +47,7 @@ object nativeSelectNativeSelectInputMod extends Shortcut {
       
       inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      inline def setVariant(value: standard | outlined | filled): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "standard" | "outlined" | "filled"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     }

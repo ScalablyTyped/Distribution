@@ -2,8 +2,6 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.popperjsCore.libEnumsMod.Placement
-import typings.popperjsCore.libTypesMod.Rect
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
@@ -21,23 +19,6 @@ import typings.semanticUiReact.distCommonjsAddonsPortalPortalMod.StrictPortalPro
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
 import typings.semanticUiReact.distCommonjsModulesPopupPopupContentMod.PopupContentProps
 import typings.semanticUiReact.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps
-import typings.semanticUiReact.semanticUiReactStrings.`bottom center`
-import typings.semanticUiReact.semanticUiReactStrings.`bottom left`
-import typings.semanticUiReact.semanticUiReactStrings.`bottom right`
-import typings.semanticUiReact.semanticUiReactStrings.`left center`
-import typings.semanticUiReact.semanticUiReactStrings.`right center`
-import typings.semanticUiReact.semanticUiReactStrings.`top center`
-import typings.semanticUiReact.semanticUiReactStrings.`top left`
-import typings.semanticUiReact.semanticUiReactStrings.`top right`
-import typings.semanticUiReact.semanticUiReactStrings.click
-import typings.semanticUiReact.semanticUiReactStrings.focus
-import typings.semanticUiReact.semanticUiReactStrings.hover
-import typings.semanticUiReact.semanticUiReactStrings.huge
-import typings.semanticUiReact.semanticUiReactStrings.large
-import typings.semanticUiReact.semanticUiReactStrings.mini
-import typings.semanticUiReact.semanticUiReactStrings.small
-import typings.semanticUiReact.semanticUiReactStrings.tiny
-import typings.semanticUiReact.semanticUiReactStrings.very
 import typings.std.Document
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -66,26 +47,36 @@ object distCommonjsModulesPopupPopupMod extends Shortcut {
   
   trait PopperOffsetsFunctionParams extends StObject {
     
-    var placement: Placement
+    var placement: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Placement */ Any
     
-    var popper: Rect
+    var popper: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Rect */ Any
     
-    var reference: Rect
+    var reference: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Rect */ Any
   }
   object PopperOffsetsFunctionParams {
     
-    inline def apply(placement: Placement, popper: Rect, reference: Rect): PopperOffsetsFunctionParams = {
+    inline def apply(
+      placement: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Placement */ Any,
+      popper: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Rect */ Any,
+      reference: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Rect */ Any
+    ): PopperOffsetsFunctionParams = {
       val __obj = js.Dynamic.literal(placement = placement.asInstanceOf[js.Any], popper = popper.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopperOffsetsFunctionParams]
     }
     
     extension [Self <: PopperOffsetsFunctionParams](x: Self) {
       
-      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Placement */ Any
+      ): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      inline def setPopper(value: Rect): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+      inline def setPopper(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Rect */ Any
+      ): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
       
-      inline def setReference(value: Rect): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+      inline def setReference(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Rect */ Any
+      ): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,7 +153,7 @@ object distCommonjsModulesPopupPopupMod extends Shortcut {
     var offset: js.UndefOr[(js.Tuple2[Double, js.UndefOr[Double]]) | PopperOffsetsFunction] = js.undefined
     
     /** Events triggering the popup. */
-    var on: js.UndefOr[hover | click | focus | (js.Array[hover | click | focus])] = js.undefined
+    var on: js.UndefOr["hover" | "click" | "focus" | (js.Array["hover" | "click" | "focus"])] = js.undefined
     
     /**
       * Called when a close event happens.
@@ -218,20 +209,20 @@ object distCommonjsModulesPopupPopupMod extends Shortcut {
     
     /** Position for the popover. */
     var position: js.UndefOr[
-        (`top left`) | (`top right`) | (`bottom right`) | (`bottom left`) | (`right center`) | (`left center`) | (`top center`) | (`bottom center`)
+        ("top left") | ("top right") | ("bottom right") | ("bottom left") | ("right center") | ("left center") | ("top center") | ("bottom center")
       ] = js.undefined
     
     /** Tells `Popper.js` to use the `position: fixed` strategy to position the popover. */
     var positionFixed: js.UndefOr[Boolean] = js.undefined
     
     /** Popup size. */
-    var size: js.UndefOr[mini | tiny | small | large | huge] = js.undefined
+    var size: js.UndefOr["mini" | "tiny" | "small" | "large" | "huge"] = js.undefined
     
     /** Custom Popup style. */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     /** Popup width. */
-    var wide: js.UndefOr[Boolean | very] = js.undefined
+    var wide: js.UndefOr[Boolean | "very"] = js.undefined
   }
   object StrictPopupProps {
     
@@ -306,7 +297,7 @@ object distCommonjsModulesPopupPopupMod extends Shortcut {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOn(value: hover | click | focus | (js.Array[hover | click | focus])): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: "hover" | "click" | "focus" | (js.Array["hover" | "click" | "focus"])): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
       inline def setOnClose(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PopupProps) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
       
@@ -326,7 +317,7 @@ object distCommonjsModulesPopupPopupMod extends Shortcut {
       
       inline def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
       
-      inline def setOnVarargs(value: (hover | click | focus)*): Self = StObject.set(x, "on", js.Array(value*))
+      inline def setOnVarargs(value: ("hover" | "click" | "focus")*): Self = StObject.set(x, "on", js.Array(value*))
       
       inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
       
@@ -353,7 +344,7 @@ object distCommonjsModulesPopupPopupMod extends Shortcut {
       inline def setPopperUndefined: Self = StObject.set(x, "popper", js.undefined)
       
       inline def setPosition(
-        value: (`top left`) | (`top right`) | (`bottom right`) | (`bottom left`) | (`right center`) | (`left center`) | (`top center`) | (`bottom center`)
+        value: ("top left") | ("top right") | ("bottom right") | ("bottom left") | ("right center") | ("left center") | ("top center") | ("bottom center")
       ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionFixed(value: Boolean): Self = StObject.set(x, "positionFixed", value.asInstanceOf[js.Any])
@@ -362,7 +353,7 @@ object distCommonjsModulesPopupPopupMod extends Shortcut {
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setSize(value: mini | tiny | small | large | huge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "mini" | "tiny" | "small" | "large" | "huge"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -370,7 +361,7 @@ object distCommonjsModulesPopupPopupMod extends Shortcut {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setWide(value: Boolean | very): Self = StObject.set(x, "wide", value.asInstanceOf[js.Any])
+      inline def setWide(value: Boolean | "very"): Self = StObject.set(x, "wide", value.asInstanceOf[js.Any])
       
       inline def setWideUndefined: Self = StObject.set(x, "wide", js.undefined)
     }

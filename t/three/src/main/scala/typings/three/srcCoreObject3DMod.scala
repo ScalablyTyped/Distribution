@@ -20,7 +20,6 @@ import typings.three.srcMathVector3Mod.Vector3
 import typings.three.srcObjectsGroupMod.Group
 import typings.three.srcRenderersWebGLRendererMod.WebGLRenderer
 import typings.three.srcScenesSceneMod.Scene
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -135,7 +134,7 @@ object srcCoreObject3DMod {
       * Used to check whether this or derived classes are Object3Ds. Default is true.
       * You should not change this, as it is used internally for optimisation.
       */
-    val isObject3D: `true` = js.native
+    val isObject3D: true = js.native
     
     /**
       * @default new THREE.Layers()

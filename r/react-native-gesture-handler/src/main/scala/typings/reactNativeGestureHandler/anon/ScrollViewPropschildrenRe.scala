@@ -27,30 +27,6 @@ import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerComm
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HitSlop
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.UserSelect
 import typings.reactNativeGestureHandler.libTypescriptHandlersNativeViewGestureHandlerMod.NativeViewGestureHandlerPayload
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`box-none`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`box-only`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`no-hide-descendants`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`on-drag`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.always
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.assertive
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.auto
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.automatic
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.black
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.center
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.default
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.end
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.fast
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.handled
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.interactive
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.never
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.no
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.none
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.normal
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.polite
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.scrollableAxes
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.start
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.white
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.yes
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -116,7 +92,7 @@ trait ScrollViewPropschildrenRe extends StObject {
     * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
     * @platform android
     */
-  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+  var accessibilityLiveRegion: js.UndefOr["none" | "polite" | "assertive"] = js.undefined
   
   /**
     * Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on Android the type of element that is focused on.
@@ -247,7 +223,7 @@ trait ScrollViewPropschildrenRe extends StObject {
     * This property specifies how the safe area insets are used to modify the content area of the scroll view.
     * The default value of this property must be 'automatic'. But the default value is 'never' until RN@0.51.
     */
-  var contentInsetAdjustmentBehavior: js.UndefOr[automatic | scrollableAxes | never | always] = js.undefined
+  var contentInsetAdjustmentBehavior: js.UndefOr["automatic" | "scrollableAxes" | "never" | "always"] = js.undefined
   
   // zeros
   /**
@@ -266,7 +242,7 @@ trait ScrollViewPropschildrenRe extends StObject {
     *  - `'normal'`: 0.998 on iOS, 0.985 on Android (the default)
     *  - `'fast'`: 0.99 on iOS, 0.9 on Android
     */
-  var decelerationRate: js.UndefOr[fast | normal | Double] = js.undefined
+  var decelerationRate: js.UndefOr["fast" | "normal" | Double] = js.undefined
   
   /**
     * When true the ScrollView will try to lock to only vertical or horizontal
@@ -362,7 +338,7 @@ trait ScrollViewPropschildrenRe extends StObject {
     *      'no' - The view is not important for accessibility.
     *      'no-hide-descendants' - The view is not important for accessibility, nor are any of its descendant views.
     */
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+  var importantForAccessibility: js.UndefOr["auto" | "yes" | "no" | "no-hide-descendants"] = js.undefined
   
   /**
     * The style of the scroll indicators.
@@ -372,7 +348,7 @@ trait ScrollViewPropschildrenRe extends StObject {
     * - white, scroll indicator is white. This style is good against
     *   a black content background.
     */
-  var indicatorStyle: js.UndefOr[default | black | white] = js.undefined
+  var indicatorStyle: js.UndefOr["default" | "black" | "white"] = js.undefined
   
   /**
     * If sticky headers should stick at the bottom instead of the top of the
@@ -398,7 +374,7 @@ trait ScrollViewPropschildrenRe extends StObject {
     *     and moves in synchrony with the touch; dragging upwards cancels the
     *     dismissal.
     */
-  var keyboardDismissMode: js.UndefOr[none | interactive | `on-drag`] = js.undefined
+  var keyboardDismissMode: js.UndefOr["none" | "interactive" | "on-drag"] = js.undefined
   
   /**
     * Determines when the keyboard should stay visible after a tap.
@@ -408,7 +384,7 @@ trait ScrollViewPropschildrenRe extends StObject {
     * - false, deprecated, use 'never' instead
     * - true, deprecated, use 'always' instead
     */
-  var keyboardShouldPersistTaps: js.UndefOr[Boolean | always | never | handled] = js.undefined
+  var keyboardShouldPersistTaps: js.UndefOr[Boolean | "always" | "never" | "handled"] = js.undefined
   
   /**
     * When set, the scroll view will adjust the scroll position so that the first child
@@ -690,7 +666,7 @@ trait ScrollViewPropschildrenRe extends StObject {
     *   - 'always' - Always allow a user to over-scroll this view.
     *   - 'never' - Never allow a user to over-scroll this view.
     */
-  var overScrollMode: js.UndefOr[auto | always | never] = js.undefined
+  var overScrollMode: js.UndefOr["auto" | "always" | "never"] = js.undefined
   
   /**
     * When true the scroll view stops on multiples of the scroll view's size
@@ -733,7 +709,7 @@ trait ScrollViewPropschildrenRe extends StObject {
     * But since pointerEvents does not affect layout/appearance, and we are already deviating from the spec by adding additional modes,
     * we opt to not include pointerEvents on style. On some platforms, we would need to implement it as a className anyways. Using style or not is an implementation detail of the platform.
     */
-  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
+  var pointerEvents: js.UndefOr["box-none" | "none" | "box-only" | "auto"] = js.undefined
   
   var ref: js.UndefOr[Ref[ComponentType[Any]]] = js.undefined
   
@@ -845,7 +821,7 @@ trait ScrollViewPropschildrenRe extends StObject {
     *      - `center` will align the snap in the center
     *      - `end` will align the snap at the right (horizontal) or bottom (vertical)
     */
-  var snapToAlignment: js.UndefOr[start | center | end] = js.undefined
+  var snapToAlignment: js.UndefOr["start" | "center" | "end"] = js.undefined
   
   /**
     * Use in conjunction with `snapToOffsets`. By default, the end of the list counts as a snap
@@ -986,7 +962,7 @@ object ScrollViewPropschildrenRe {
     
     inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
     
-    inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLiveRegion(value: "none" | "polite" | "assertive"): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
     
@@ -1066,7 +1042,7 @@ object ScrollViewPropschildrenRe {
     
     inline def setContentInset(value: Insets): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
     
-    inline def setContentInsetAdjustmentBehavior(value: automatic | scrollableAxes | never | always): Self = StObject.set(x, "contentInsetAdjustmentBehavior", value.asInstanceOf[js.Any])
+    inline def setContentInsetAdjustmentBehavior(value: "automatic" | "scrollableAxes" | "never" | "always"): Self = StObject.set(x, "contentInsetAdjustmentBehavior", value.asInstanceOf[js.Any])
     
     inline def setContentInsetAdjustmentBehaviorUndefined: Self = StObject.set(x, "contentInsetAdjustmentBehavior", js.undefined)
     
@@ -1076,7 +1052,7 @@ object ScrollViewPropschildrenRe {
     
     inline def setContentOffsetUndefined: Self = StObject.set(x, "contentOffset", js.undefined)
     
-    inline def setDecelerationRate(value: fast | normal | Double): Self = StObject.set(x, "decelerationRate", value.asInstanceOf[js.Any])
+    inline def setDecelerationRate(value: "fast" | "normal" | Double): Self = StObject.set(x, "decelerationRate", value.asInstanceOf[js.Any])
     
     inline def setDecelerationRateUndefined: Self = StObject.set(x, "decelerationRate", js.undefined)
     
@@ -1128,11 +1104,11 @@ object ScrollViewPropschildrenRe {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+    inline def setImportantForAccessibility(value: "auto" | "yes" | "no" | "no-hide-descendants"): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
-    inline def setIndicatorStyle(value: default | black | white): Self = StObject.set(x, "indicatorStyle", value.asInstanceOf[js.Any])
+    inline def setIndicatorStyle(value: "default" | "black" | "white"): Self = StObject.set(x, "indicatorStyle", value.asInstanceOf[js.Any])
     
     inline def setIndicatorStyleUndefined: Self = StObject.set(x, "indicatorStyle", js.undefined)
     
@@ -1150,11 +1126,11 @@ object ScrollViewPropschildrenRe {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setKeyboardDismissMode(value: none | interactive | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+    inline def setKeyboardDismissMode(value: "none" | "interactive" | "on-drag"): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
     
     inline def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
     
-    inline def setKeyboardShouldPersistTaps(value: Boolean | always | never | handled): Self = StObject.set(x, "keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
+    inline def setKeyboardShouldPersistTaps(value: Boolean | "always" | "never" | "handled"): Self = StObject.set(x, "keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
     
     inline def setKeyboardShouldPersistTapsUndefined: Self = StObject.set(x, "keyboardShouldPersistTaps", js.undefined)
     
@@ -1380,7 +1356,7 @@ object ScrollViewPropschildrenRe {
     
     inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
-    inline def setOverScrollMode(value: auto | always | never): Self = StObject.set(x, "overScrollMode", value.asInstanceOf[js.Any])
+    inline def setOverScrollMode(value: "auto" | "always" | "never"): Self = StObject.set(x, "overScrollMode", value.asInstanceOf[js.Any])
     
     inline def setOverScrollModeUndefined: Self = StObject.set(x, "overScrollMode", js.undefined)
     
@@ -1396,7 +1372,7 @@ object ScrollViewPropschildrenRe {
     
     inline def setPinchGestureEnabledUndefined: Self = StObject.set(x, "pinchGestureEnabled", js.undefined)
     
-    inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    inline def setPointerEvents(value: "box-none" | "none" | "box-only" | "auto"): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     
@@ -1474,7 +1450,7 @@ object ScrollViewPropschildrenRe {
     
     inline def setSimultaneousHandlersVarargs(value: Ref[Any]*): Self = StObject.set(x, "simultaneousHandlers", js.Array(value*))
     
-    inline def setSnapToAlignment(value: start | center | end): Self = StObject.set(x, "snapToAlignment", value.asInstanceOf[js.Any])
+    inline def setSnapToAlignment(value: "start" | "center" | "end"): Self = StObject.set(x, "snapToAlignment", value.asInstanceOf[js.Any])
     
     inline def setSnapToAlignmentUndefined: Self = StObject.set(x, "snapToAlignment", js.undefined)
     

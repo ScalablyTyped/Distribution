@@ -1,8 +1,5 @@
 package typings.antd
 
-import typings.antd.antdStrings.dark
-import typings.antd.antdStrings.group
-import typings.antd.antdStrings.light
 import typings.rcMenu.anon.DomEvent
 import typings.rcMenu.esInterfaceMod.MenuClickEventHandler
 import typings.rcMenu.esInterfaceMod.MenuHoverEventHandler
@@ -27,19 +24,11 @@ object libMenuHooksUseItemsMod {
   inline def default(): js.UndefOr[js.Array[Element | Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.UndefOr[js.Array[Element | Null]]]
   inline def default(items: js.Array[ItemType]): js.UndefOr[js.Array[Element | Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(items.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Element | Null]]]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.libMenuHooksUseItemsMod.MenuItemType
-    - typings.antd.libMenuHooksUseItemsMod.SubMenuType
-    - typings.antd.libMenuHooksUseItemsMod.MenuItemGroupType
-    - typings.antd.libMenuHooksUseItemsMod.MenuDividerType
-    - scala.Null
-  */
-  type ItemType = _ItemType | Null
+  type ItemType = MenuItemType | SubMenuType | MenuItemGroupType | MenuDividerType | Null
   
   trait MenuDividerType
     extends StObject
-       with typings.rcMenu.esInterfaceMod.MenuDividerType
-       with _ItemType {
+       with typings.rcMenu.esInterfaceMod.MenuDividerType {
     
     var dashed: js.UndefOr[Boolean] = js.undefined
     
@@ -66,9 +55,7 @@ object libMenuHooksUseItemsMod {
   }
   
   /* Inlined parent std.Omit<rc-menu.rc-menu/es/interface.MenuItemGroupType, 'children'> */
-  trait MenuItemGroupType
-    extends StObject
-       with _ItemType {
+  trait MenuItemGroupType extends StObject {
     
     var children: js.UndefOr[js.Array[ItemType]] = js.undefined
     
@@ -80,7 +67,7 @@ object libMenuHooksUseItemsMod {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: group
+    var `type`: "group"
   }
   object MenuItemGroupType {
     
@@ -114,14 +101,13 @@ object libMenuHooksUseItemsMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setType(value: group): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "group"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait MenuItemType
     extends StObject
-       with typings.rcMenu.esInterfaceMod.MenuItemType
-       with _ItemType {
+       with typings.rcMenu.esInterfaceMod.MenuItemType {
     
     var danger: js.UndefOr[Boolean] = js.undefined
     
@@ -153,9 +139,7 @@ object libMenuHooksUseItemsMod {
   }
   
   /* Inlined parent std.Omit<rc-menu.rc-menu/es/interface.SubMenuType, 'children'> */
-  trait SubMenuType
-    extends StObject
-       with _ItemType {
+  trait SubMenuType extends StObject {
     
     var children: js.Array[ItemType]
     
@@ -193,7 +177,7 @@ object libMenuHooksUseItemsMod {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var theme: js.UndefOr[dark | light] = js.undefined
+    var theme: js.UndefOr["dark" | "light"] = js.undefined
   }
   object SubMenuType {
     
@@ -280,35 +264,9 @@ object libMenuHooksUseItemsMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTheme(value: dark | light): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: "dark" | "light"): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
-    }
-  }
-  
-  trait _ItemType extends StObject
-  object _ItemType {
-    
-    inline def MenuDividerType(): typings.antd.libMenuHooksUseItemsMod.MenuDividerType = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("divider")
-      __obj.asInstanceOf[typings.antd.libMenuHooksUseItemsMod.MenuDividerType]
-    }
-    
-    inline def MenuItemGroupType(): typings.antd.libMenuHooksUseItemsMod.MenuItemGroupType = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("group")
-      __obj.asInstanceOf[typings.antd.libMenuHooksUseItemsMod.MenuItemGroupType]
-    }
-    
-    inline def MenuItemType(key: Key): typings.antd.libMenuHooksUseItemsMod.MenuItemType = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.antd.libMenuHooksUseItemsMod.MenuItemType]
-    }
-    
-    inline def SubMenuType(children: js.Array[ItemType], key: String): typings.antd.libMenuHooksUseItemsMod.SubMenuType = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.antd.libMenuHooksUseItemsMod.SubMenuType]
     }
   }
 }

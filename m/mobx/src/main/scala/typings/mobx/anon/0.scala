@@ -1,12 +1,5 @@
 package typings.mobx.anon
 
-import typings.mobx.mobxStrings.`Expecting some object`
-import typings.mobx.mobxStrings.`Intercept handlers should return nothing or a change object`
-import typings.mobx.mobxStrings.`Invalid annotation`
-import typings.mobx.mobxStrings.`It is not possible to get index atoms from arrays`
-import typings.mobx.mobxStrings.`invalid action stackDot did you forget to finish an actionQuestionmark`
-import typings.mobx.mobxStrings.`missing option for computedColon get`
-import typings.mobx.mobxStrings.`please specify a property`
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,11 +15,11 @@ trait `0` extends StObject {
   
   val `11`: /* 'get()' can only be used on observable objects, arrays and maps */ String
   
-  val `12`: `Invalid annotation`
+  val `12`: "Invalid annotation"
   
   val `13`: /* Dynamic observable objects cannot be frozen. If you're passing observables to 3rd party component/function that calls Object.freeze, pass copy instead: toJS(observable) */ String
   
-  val `14`: `Intercept handlers should return nothing or a change object`
+  val `14`: "Intercept handlers should return nothing or a change object"
   
   val `15`: /* Observable arrays cannot be frozen. If you're passing observables to 3rd party component/function that calls Object.freeze, pass copy instead: toJS(observable) */ String
   
@@ -44,23 +37,23 @@ trait `0` extends StObject {
   
   val `22`: /* mobx.set requires Set polyfill for the current browser. Check babel-polyfill or core-js/es6/set.js */ String
   
-  val `23`: `It is not possible to get index atoms from arrays`
+  val `23`: "It is not possible to get index atoms from arrays"
   
   def `24`(thing: Any): String
   
   def `25`(property: Any, name: Any): String
   
-  val `26`: `please specify a property`
+  val `26`: "please specify a property"
   
   def `27`(property: Any, name: Any): String
   
   def `28`(thing: Any): String
   
-  val `29`: `Expecting some object`
+  val `29`: "Expecting some object"
   
-  val `30`: `invalid action stackDot did you forget to finish an actionQuestionmark`
+  val `30`: "invalid action stack. did you forget to finish an action?"
   
-  val `31`: `missing option for computedColon get`
+  val `31`: "missing option for computed: get"
   
   def `32`(name: Any, derivation: Any): String
   
@@ -158,13 +151,13 @@ object `0` {
     
     inline def set11(value: /* 'get()' can only be used on observable objects, arrays and maps */ String): Self = StObject.set(x, "11", value.asInstanceOf[js.Any])
     
-    inline def set12(value: `Invalid annotation`): Self = StObject.set(x, "12", value.asInstanceOf[js.Any])
+    inline def set12(value: "Invalid annotation"): Self = StObject.set(x, "12", value.asInstanceOf[js.Any])
     
     inline def set13(
       value: /* Dynamic observable objects cannot be frozen. If you're passing observables to 3rd party component/function that calls Object.freeze, pass copy instead: toJS(observable) */ String
     ): Self = StObject.set(x, "13", value.asInstanceOf[js.Any])
     
-    inline def set14(value: `Intercept handlers should return nothing or a change object`): Self = StObject.set(x, "14", value.asInstanceOf[js.Any])
+    inline def set14(value: "Intercept handlers should return nothing or a change object"): Self = StObject.set(x, "14", value.asInstanceOf[js.Any])
     
     inline def set15(
       value: /* Observable arrays cannot be frozen. If you're passing observables to 3rd party component/function that calls Object.freeze, pass copy instead: toJS(observable) */ String
@@ -190,23 +183,23 @@ object `0` {
       value: /* mobx.set requires Set polyfill for the current browser. Check babel-polyfill or core-js/es6/set.js */ String
     ): Self = StObject.set(x, "22", value.asInstanceOf[js.Any])
     
-    inline def set23(value: `It is not possible to get index atoms from arrays`): Self = StObject.set(x, "23", value.asInstanceOf[js.Any])
+    inline def set23(value: "It is not possible to get index atoms from arrays"): Self = StObject.set(x, "23", value.asInstanceOf[js.Any])
     
     inline def set24(value: Any => String): Self = StObject.set(x, "24", js.Any.fromFunction1(value))
     
     inline def set25(value: (Any, Any) => String): Self = StObject.set(x, "25", js.Any.fromFunction2(value))
     
-    inline def set26(value: `please specify a property`): Self = StObject.set(x, "26", value.asInstanceOf[js.Any])
+    inline def set26(value: "please specify a property"): Self = StObject.set(x, "26", value.asInstanceOf[js.Any])
     
     inline def set27(value: (Any, Any) => String): Self = StObject.set(x, "27", js.Any.fromFunction2(value))
     
     inline def set28(value: Any => String): Self = StObject.set(x, "28", js.Any.fromFunction1(value))
     
-    inline def set29(value: `Expecting some object`): Self = StObject.set(x, "29", value.asInstanceOf[js.Any])
+    inline def set29(value: "Expecting some object"): Self = StObject.set(x, "29", value.asInstanceOf[js.Any])
     
-    inline def set30(value: `invalid action stackDot did you forget to finish an actionQuestionmark`): Self = StObject.set(x, "30", value.asInstanceOf[js.Any])
+    inline def set30(value: "invalid action stack. did you forget to finish an action?"): Self = StObject.set(x, "30", value.asInstanceOf[js.Any])
     
-    inline def set31(value: `missing option for computedColon get`): Self = StObject.set(x, "31", value.asInstanceOf[js.Any])
+    inline def set31(value: "missing option for computed: get"): Self = StObject.set(x, "31", value.asInstanceOf[js.Any])
     
     inline def set32(value: (Any, Any) => String): Self = StObject.set(x, "32", js.Any.fromFunction2(value))
     

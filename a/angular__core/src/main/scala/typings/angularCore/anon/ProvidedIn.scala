@@ -1,8 +1,5 @@
 package typings.angularCore.anon
 
-import typings.angularCore.angularCoreStrings.any
-import typings.angularCore.angularCoreStrings.platform
-import typings.angularCore.angularCoreStrings.root
 import typings.angularCore.mod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ProvidedIn extends StObject {
   
-  var providedIn: Type[Any] | root | platform | any | Null
+  var providedIn: Type[Any] | "root" | "platform" | "any" | Null
 }
 object ProvidedIn {
   
@@ -21,7 +18,7 @@ object ProvidedIn {
   
   extension [Self <: ProvidedIn](x: Self) {
     
-    inline def setProvidedIn(value: Type[Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    inline def setProvidedIn(value: Type[Any] | "root" | "platform" | "any"): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
     inline def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
   }

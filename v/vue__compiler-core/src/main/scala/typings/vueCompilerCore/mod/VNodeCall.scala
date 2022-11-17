@@ -1,15 +1,12 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`13`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait VNodeCall
   extends StObject
-     with Node2
-     with BlockCodegenNode
-     with JSChildNode {
+     with Node2 {
   
   var children: js.UndefOr[
     js.Array[TemplateChildNode] | TemplateTextChildNode | SlotsExpression | ForRenderListExpression | SimpleExpressionNode
@@ -32,7 +29,7 @@ trait VNodeCall
   var tag: String | js.Symbol | CallExpression
   
   @JSName("type")
-  var type_VNodeCall: `13`
+  var type_VNodeCall: 13
 }
 object VNodeCall {
   
@@ -82,6 +79,6 @@ object VNodeCall {
     
     inline def setTag(value: String | js.Symbol | CallExpression): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `13`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 13): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

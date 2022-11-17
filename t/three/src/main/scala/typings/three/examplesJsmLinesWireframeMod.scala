@@ -5,7 +5,6 @@ import typings.three.examplesJsmLinesLineSegmentsGeometryMod.LineSegmentsGeometr
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Mesh
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +21,6 @@ object examplesJsmLinesWireframeMod {
     
     def computeLineDistances(): this.type = js.native
     
-    val isWireframe: `true` = js.native
+    val isWireframe: true = js.native
   }
 }

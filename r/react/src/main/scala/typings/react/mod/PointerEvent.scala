@@ -1,8 +1,5 @@
 package typings.react.mod
 
-import typings.react.reactStrings.mouse
-import typings.react.reactStrings.pen
-import typings.react.reactStrings.touch
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +15,7 @@ trait PointerEvent[T]
   
   var pointerId: Double
   
-  var pointerType: mouse | pen | touch
+  var pointerType: "mouse" | "pen" | "touch"
   
   var pressure: Double
   
@@ -61,7 +58,7 @@ object PointerEvent {
     pageY: Double,
     persist: () => Unit,
     pointerId: Double,
-    pointerType: mouse | pen | touch,
+    pointerType: "mouse" | "pen" | "touch",
     pressure: Double,
     preventDefault: () => Unit,
     screenX: Double,
@@ -91,7 +88,7 @@ object PointerEvent {
     
     inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
     
-    inline def setPointerType(value: mouse | pen | touch): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+    inline def setPointerType(value: "mouse" | "pen" | "touch"): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
     
     inline def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
     

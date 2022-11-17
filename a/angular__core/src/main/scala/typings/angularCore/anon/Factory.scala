@@ -1,8 +1,5 @@
 package typings.angularCore.anon
 
-import typings.angularCore.angularCoreStrings.any
-import typings.angularCore.angularCoreStrings.platform
-import typings.angularCore.angularCoreStrings.root
 import typings.angularCore.mod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +9,7 @@ trait Factory[T] extends StObject {
   
   def factory(): T
   
-  var providedIn: js.UndefOr[Type[Any] | root | platform | any | Null] = js.undefined
+  var providedIn: js.UndefOr[Type[Any] | "root" | "platform" | "any" | Null] = js.undefined
 }
 object Factory {
   
@@ -25,7 +22,7 @@ object Factory {
     
     inline def setFactory(value: () => T): Self = StObject.set(x, "factory", js.Any.fromFunction0(value))
     
-    inline def setProvidedIn(value: Type[Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    inline def setProvidedIn(value: Type[Any] | "root" | "platform" | "any"): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
     inline def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
     

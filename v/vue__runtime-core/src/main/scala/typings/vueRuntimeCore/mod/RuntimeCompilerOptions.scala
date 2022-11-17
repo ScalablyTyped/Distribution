@@ -1,7 +1,5 @@
 package typings.vueRuntimeCore.mod
 
-import typings.vueRuntimeCore.vueRuntimeCoreStrings.condense
-import typings.vueRuntimeCore.vueRuntimeCoreStrings.preserve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +12,7 @@ trait RuntimeCompilerOptions extends StObject {
   
   var isCustomElement: js.UndefOr[js.Function1[/* tag */ String, Boolean]] = js.undefined
   
-  var whitespace: js.UndefOr[preserve | condense] = js.undefined
+  var whitespace: js.UndefOr["preserve" | "condense"] = js.undefined
 }
 object RuntimeCompilerOptions {
   
@@ -37,7 +35,7 @@ object RuntimeCompilerOptions {
     
     inline def setIsCustomElementUndefined: Self = StObject.set(x, "isCustomElement", js.undefined)
     
-    inline def setWhitespace(value: preserve | condense): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
+    inline def setWhitespace(value: "preserve" | "condense"): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
     
     inline def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
   }

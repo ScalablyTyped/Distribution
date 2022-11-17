@@ -4,8 +4,6 @@ import typings.std.HTMLElement
 import typings.yandexMaps.anon.CheckContextMenu
 import typings.yandexMaps.anon.Css
 import typings.yandexMaps.anon.Margin
-import typings.yandexMaps.yandexMapsStrings.hidden
-import typings.yandexMaps.yandexMapsStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +30,7 @@ object pane {
     override def getMap(): Map_ = js.native
     
     /* CompleteClass */
-    override def getOverflow(): visible | hidden = js.native
+    override def getOverflow(): "visible" | "hidden" = js.native
     
     /* CompleteClass */
     override def getZIndex(): Double = js.native
@@ -61,7 +59,7 @@ object pane {
     override def getMap(): Map_ = js.native
     
     /* CompleteClass */
-    override def getOverflow(): visible | hidden = js.native
+    override def getOverflow(): "visible" | "hidden" = js.native
     
     /* CompleteClass */
     override def getZIndex(): Double = js.native
@@ -96,7 +94,7 @@ object pane {
     override def getMap(): Map_ = js.native
     
     /* CompleteClass */
-    override def getOverflow(): visible | hidden = js.native
+    override def getOverflow(): "visible" | "hidden" = js.native
     
     /* CompleteClass */
     override def getZIndex(): Double = js.native

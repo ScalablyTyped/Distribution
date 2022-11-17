@@ -1,7 +1,5 @@
 package typings.angularRouter.mod
 
-import typings.angularRouter.angularRouterStrings.corrected
-import typings.angularRouter.angularRouterStrings.legacy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,42 +57,6 @@ trait ExtraOptions
   var preloadingStrategy: js.UndefOr[Any] = js.undefined
   
   /**
-    * Enables a bug fix that corrects relative link resolution in components with empty paths.
-    * Example:
-    *
-    * ```
-    * const routes = [
-    *   {
-    *     path: '',
-    *     component: ContainerComponent,
-    *     children: [
-    *       { path: 'a', component: AComponent },
-    *       { path: 'b', component: BComponent },
-    *     ]
-    *   }
-    * ];
-    * ```
-    *
-    * From the `ContainerComponent`, you should be able to navigate to `AComponent` using
-    * the following `routerLink`, but it will not work if `relativeLinkResolution` is set
-    * to `'legacy'`:
-    *
-    * `<a [routerLink]="['./a']">Link to A</a>`
-    *
-    * However, this will work:
-    *
-    * `<a [routerLink]="['../a']">Link to A</a>`
-    *
-    * In other words, you're required to use `../` rather than `./` when the relative link
-    * resolution is set to `'legacy'`.
-    *
-    * The default in v11 is `corrected`.
-    *
-    * @deprecated
-    */
-  var relativeLinkResolution: js.UndefOr[legacy | corrected] = js.undefined
-  
-  /**
     * Configures the scroll offset the router will use when scrolling to an element.
     *
     * When given a tuple with x and y position value,
@@ -138,10 +100,6 @@ object ExtraOptions {
     inline def setPreloadingStrategy(value: Any): Self = StObject.set(x, "preloadingStrategy", value.asInstanceOf[js.Any])
     
     inline def setPreloadingStrategyUndefined: Self = StObject.set(x, "preloadingStrategy", js.undefined)
-    
-    inline def setRelativeLinkResolution(value: legacy | corrected): Self = StObject.set(x, "relativeLinkResolution", value.asInstanceOf[js.Any])
-    
-    inline def setRelativeLinkResolutionUndefined: Self = StObject.set(x, "relativeLinkResolution", js.undefined)
     
     inline def setScrollOffset(value: (js.Tuple2[Double, Double]) | (js.Function0[js.Tuple2[Double, Double]])): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
     

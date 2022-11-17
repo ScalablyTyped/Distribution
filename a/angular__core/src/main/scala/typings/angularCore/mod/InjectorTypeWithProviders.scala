@@ -18,7 +18,7 @@ trait InjectorTypeWithProviders[T] extends StObject {
   
   var providers: js.UndefOr[
     js.Array[
-      Type[Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[Any]
+      Type[Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | EnvironmentProviders | js.Array[Any]
     ]
   ] = js.undefined
 }
@@ -35,14 +35,14 @@ object InjectorTypeWithProviders {
     
     inline def setProviders(
       value: js.Array[
-          Type[Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[Any]
+          Type[Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | EnvironmentProviders | js.Array[Any]
         ]
     ): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
     inline def setProvidersVarargs(
-      value: (Type[Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[Any])*
+      value: (Type[Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | EnvironmentProviders | js.Array[Any])*
     ): Self = StObject.set(x, "providers", js.Array(value*))
   }
 }

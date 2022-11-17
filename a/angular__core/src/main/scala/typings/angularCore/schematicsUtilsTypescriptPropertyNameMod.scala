@@ -15,23 +15,17 @@ object schematicsUtilsTypescriptPropertyNameMod {
   
   inline def hasPropertyNameText(node: PropertyName): /* is @angular/core.@angular/core/schematics/utils/typescript/property_name.PropertyNameWithText */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasPropertyNameText")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/core.@angular/core/schematics/utils/typescript/property_name.PropertyNameWithText */ Boolean]
   
-  /** Type that describes a property name with an obtainable text. */
-  /* Inlined std.Exclude<typescript.typescript.PropertyName, typescript.typescript.ComputedPropertyName> */
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCore.angularCoreStrings.escapedText
-    - typings.angularCore.angularCoreStrings.text
-    - typings.angularCore.angularCoreStrings.originalKeywordKind
-    - typings.angularCore.angularCoreStrings.isInJSDocNamespace
-  */
-  trait PropertyNameWithText extends StObject
   object PropertyNameWithText {
     
-    inline def escapedText: typings.angularCore.angularCoreStrings.escapedText = "escapedText".asInstanceOf[typings.angularCore.angularCoreStrings.escapedText]
+    inline def escapedText: "escapedText" = "escapedText".asInstanceOf["escapedText"]
     
-    inline def isInJSDocNamespace: typings.angularCore.angularCoreStrings.isInJSDocNamespace = "isInJSDocNamespace".asInstanceOf[typings.angularCore.angularCoreStrings.isInJSDocNamespace]
+    inline def isInJSDocNamespace: "isInJSDocNamespace" = "isInJSDocNamespace".asInstanceOf["isInJSDocNamespace"]
     
-    inline def originalKeywordKind: typings.angularCore.angularCoreStrings.originalKeywordKind = "originalKeywordKind".asInstanceOf[typings.angularCore.angularCoreStrings.originalKeywordKind]
+    inline def originalKeywordKind: "originalKeywordKind" = "originalKeywordKind".asInstanceOf["originalKeywordKind"]
     
-    inline def text: typings.angularCore.angularCoreStrings.text = "text".asInstanceOf[typings.angularCore.angularCoreStrings.text]
+    inline def text: "text" = "text".asInstanceOf["text"]
   }
+  /** Type that describes a property name with an obtainable text. */
+  /* Inlined std.Exclude<typescript.typescript.PropertyName, typescript.typescript.ComputedPropertyName> */
+  type PropertyNameWithText = "escapedText" | "text" | "originalKeywordKind" | "isInJSDocNamespace"
 }

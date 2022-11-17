@@ -3,14 +3,6 @@ package typings.antd
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.Download
 import typings.antd.anon.UploadPropsanyheightnumbe
-import typings.antd.antdStrings.PATCH
-import typings.antd.antdStrings.POST
-import typings.antd.antdStrings.PUT
-import typings.antd.antdStrings.environment
-import typings.antd.antdStrings.patch_
-import typings.antd.antdStrings.post_
-import typings.antd.antdStrings.put_
-import typings.antd.antdStrings.user
 import typings.antd.libUploadInterfaceMod.BeforeUploadValueType
 import typings.antd.libUploadInterfaceMod.HttpRequestHeader
 import typings.antd.libUploadInterfaceMod.ItemRender
@@ -60,7 +52,7 @@ object libUploadDraggerMod extends Shortcut {
         ]
       ] = js.undefined
     
-    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
+    var capture: js.UndefOr[Boolean | "user" | "environment"] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
@@ -104,7 +96,7 @@ object libUploadDraggerMod extends Shortcut {
     /** Config max count of `fileList`. Will replace current one when `maxCount` is 1 */
     var maxCount: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[POST | PUT | PATCH | post_ | put_ | patch_] = js.undefined
+    var method: js.UndefOr["POST" | "PUT" | "PATCH" | "post" | "put" | "patch"] = js.undefined
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
@@ -168,7 +160,7 @@ object libUploadDraggerMod extends Shortcut {
       
       inline def setBeforeUploadUndefined: Self = StObject.set(x, "beforeUpload", js.undefined)
       
-      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | "user" | "environment"): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -253,7 +245,7 @@ object libUploadDraggerMod extends Shortcut {
       
       inline def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
       
-      inline def setMethod(value: POST | PUT | PATCH | post_ | put_ | patch_): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: "POST" | "PUT" | "PATCH" | "post" | "put" | "patch"): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       

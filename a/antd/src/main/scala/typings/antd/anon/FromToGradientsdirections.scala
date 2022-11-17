@@ -1,14 +1,11 @@
 package typings.antd.anon
 
-import typings.antd.libProgressProgressMod.ProgressGradient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined antd.antd/lib/progress/progress.FromToGradients & {  direction :string | undefined} */
-trait FromToGradientsdirections
-  extends StObject
-     with ProgressGradient {
+trait FromToGradientsdirections extends StObject {
   
   var direction: js.UndefOr[String] = js.undefined
   

@@ -2,7 +2,6 @@ package typings.three
 
 import typings.three.examplesJsmNodesNodesMod.Node
 import typings.three.srcThreeMod.Texture
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object examplesJsmNodesAccessorsTextureNodeMod {
   trait TextureNode
     extends typings.three.examplesJsmNodesCoreUniformNodeMod.default {
     
-    var isTextureNode: `true` = js.native
+    var isTextureNode: true = js.native
     
     var levelNode: Node | Null = js.native
     

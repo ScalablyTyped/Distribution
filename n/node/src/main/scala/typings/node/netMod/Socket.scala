@@ -2,13 +2,6 @@ package typings.node.netMod
 
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
-import typings.node.nodeStrings.close
-import typings.node.nodeStrings.data
-import typings.node.nodeStrings.drain
-import typings.node.nodeStrings.end
-import typings.node.nodeStrings.error
-import typings.node.nodeStrings.lookup
-import typings.node.nodeStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,6 +25,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Socket () extends StObject {
   def this(options: SocketConstructorOpts) = this()
   
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_drain")
+  def addListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_timeout")
+  def addListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_ready")
+  def addListener(event: "ready", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_end")
+  def addListener(event: "end", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_connect")
+  def addListener(event: "connect", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_error")
+  def addListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_data")
+  def addListener(event: "data", listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_close")
+  def addListener(event: "close", listener: js.Function1[/* hadError */ Boolean, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_lookup")
+  def addListener(
+    event: "lookup",
+    listener: js.Function4[
+      /* err */ js.Error, 
+      /* address */ String, 
+      /* family */ String | Double, 
+      /* host */ String, 
+      Unit
+    ]
+  ): this.type = js.native
   /**
     * events.EventEmitter
     *   1. close
@@ -45,33 +74,6 @@ open class Socket () extends StObject {
     *   9. timeout
     */
   def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_close(event: close, listener: js.Function1[/* hadError */ Boolean, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_connect(event: typings.node.nodeStrings.connect, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_data(event: data, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_lookup(
-    event: lookup,
-    listener: js.Function4[
-      /* err */ js.Error, 
-      /* address */ String, 
-      /* family */ String | Double, 
-      /* host */ String, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_timeout(event: typings.node.nodeStrings.timeout, listener: js.Function0[Unit]): this.type = js.native
   
   /**
     * Returns the bound `address`, the address `family` name and `port` of the
@@ -153,28 +155,38 @@ open class Socket () extends StObject {
     */
   val destroyed: Boolean = js.native
   
+  @JSName("emit")
+  @scala.annotation.targetName("emit_ready")
+  def emit(event: "ready"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_timeout")
+  def emit(event: "timeout"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_drain")
+  def emit(event: "drain"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_connect")
+  def emit(event: "connect"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_end")
+  def emit(event: "end"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_data")
+  def emit(event: "data", data: Buffer): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_error")
+  def emit(event: "error", err: js.Error): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_lookup")
+  def emit(event: "lookup", err: js.Error, address: String, family: String, host: String): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_lookup")
+  def emit(event: "lookup", err: js.Error, address: String, family: Double, host: String): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_close")
+  def emit(event: "close", hadError: Boolean): Boolean = js.native
   def emit(event: String, args: Any*): Boolean = js.native
   def emit(event: js.Symbol, args: Any*): Boolean = js.native
-  @JSName("emit")
-  def emit_close(event: close, hadError: Boolean): Boolean = js.native
-  @JSName("emit")
-  def emit_connect(event: typings.node.nodeStrings.connect): Boolean = js.native
-  @JSName("emit")
-  def emit_data(event: data, data: Buffer): Boolean = js.native
-  @JSName("emit")
-  def emit_drain(event: drain): Boolean = js.native
-  @JSName("emit")
-  def emit_end(event: end): Boolean = js.native
-  @JSName("emit")
-  def emit_error(event: error, err: js.Error): Boolean = js.native
-  @JSName("emit")
-  def emit_lookup(event: lookup, err: js.Error, address: String, family: String, host: String): Boolean = js.native
-  @JSName("emit")
-  def emit_lookup(event: lookup, err: js.Error, address: String, family: Double, host: String): Boolean = js.native
-  @JSName("emit")
-  def emit_ready(event: ready): Boolean = js.native
-  @JSName("emit")
-  def emit_timeout(event: typings.node.nodeStrings.timeout): Boolean = js.native
   
   /**
     * Half-closes the socket. i.e., it sends a FIN packet. It is possible the
@@ -219,51 +231,72 @@ open class Socket () extends StObject {
     */
   val localPort: js.UndefOr[Double] = js.native
   
+  @JSName("on")
+  @scala.annotation.targetName("on_timeout")
+  def on(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_end")
+  def on(event: "end", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_connect")
+  def on(event: "connect", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_ready")
+  def on(event: "ready", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_drain")
+  def on(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_error")
+  def on(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_data")
+  def on(event: "data", listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_close")
+  def on(event: "close", listener: js.Function1[/* hadError */ Boolean, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_lookup")
+  def on(
+    event: "lookup",
+    listener: js.Function4[
+      /* err */ js.Error, 
+      /* address */ String, 
+      /* family */ String | Double, 
+      /* host */ String, 
+      Unit
+    ]
+  ): this.type = js.native
   def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("on")
-  def on_close(event: close, listener: js.Function1[/* hadError */ Boolean, Unit]): this.type = js.native
-  @JSName("on")
-  def on_connect(event: typings.node.nodeStrings.connect, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_data(event: data, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
-  @JSName("on")
-  def on_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("on")
-  def on_lookup(
-    event: lookup,
-    listener: js.Function4[
-      /* err */ js.Error, 
-      /* address */ String, 
-      /* family */ String | Double, 
-      /* host */ String, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("on")
-  def on_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_timeout(event: typings.node.nodeStrings.timeout, listener: js.Function0[Unit]): this.type = js.native
   
-  def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("once")
-  def once_close(event: close, listener: js.Function1[/* hadError */ Boolean, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_connect")
+  def once(event: "connect", listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
-  def once_connect(event: typings.node.nodeStrings.connect, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("once_end")
+  def once(event: "end", listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
-  def once_data(event: data, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_drain")
+  def once(event: "drain", listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
-  def once_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("once_timeout")
+  def once(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
-  def once_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("once_ready")
+  def once(event: "ready", listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
-  def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_close")
+  def once(event: "close", listener: js.Function1[/* hadError */ Boolean, Unit]): this.type = js.native
   @JSName("once")
-  def once_lookup(
-    event: lookup,
+  @scala.annotation.targetName("once_error")
+  def once(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_data")
+  def once(event: "data", listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_lookup")
+  def once(
+    event: "lookup",
     listener: js.Function4[
       /* err */ js.Error, 
       /* address */ String, 
@@ -272,10 +305,7 @@ open class Socket () extends StObject {
       Unit
     ]
   ): this.type = js.native
-  @JSName("once")
-  def once_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_timeout(event: typings.node.nodeStrings.timeout, listener: js.Function0[Unit]): this.type = js.native
+  def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   
   /**
     * Pauses the reading of data. That is, `'data'` events will not be emitted.
@@ -284,51 +314,72 @@ open class Socket () extends StObject {
     */
   def pause(): this.type = js.native
   
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_timeout")
+  def prependListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_ready")
+  def prependListener(event: "ready", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_connect")
+  def prependListener(event: "connect", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_drain")
+  def prependListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_end")
+  def prependListener(event: "end", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_close")
+  def prependListener(event: "close", listener: js.Function1[/* hadError */ Boolean, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_data")
+  def prependListener(event: "data", listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_error")
+  def prependListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_lookup")
+  def prependListener(
+    event: "lookup",
+    listener: js.Function4[
+      /* err */ js.Error, 
+      /* address */ String, 
+      /* family */ String | Double, 
+      /* host */ String, 
+      Unit
+    ]
+  ): this.type = js.native
   def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_close(event: close, listener: js.Function1[/* hadError */ Boolean, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_connect(event: typings.node.nodeStrings.connect, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_data(event: data, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_lookup(
-    event: lookup,
-    listener: js.Function4[
-      /* err */ js.Error, 
-      /* address */ String, 
-      /* family */ String | Double, 
-      /* host */ String, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_timeout(event: typings.node.nodeStrings.timeout, listener: js.Function0[Unit]): this.type = js.native
   
-  def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_close(event: close, listener: js.Function1[/* hadError */ Boolean, Unit]): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_connect")
+  def prependOnceListener(event: "connect", listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_connect(event: typings.node.nodeStrings.connect, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_drain")
+  def prependOnceListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_data(event: data, listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_end")
+  def prependOnceListener(event: "end", listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_ready")
+  def prependOnceListener(event: "ready", listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_timeout")
+  def prependOnceListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_close")
+  def prependOnceListener(event: "close", listener: js.Function1[/* hadError */ Boolean, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_lookup(
-    event: lookup,
+  @scala.annotation.targetName("prependOnceListener_data")
+  def prependOnceListener(event: "data", listener: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_error")
+  def prependOnceListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_lookup")
+  def prependOnceListener(
+    event: "lookup",
     listener: js.Function4[
       /* err */ js.Error, 
       /* address */ String, 
@@ -337,10 +388,7 @@ open class Socket () extends StObject {
       Unit
     ]
   ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_timeout(event: typings.node.nodeStrings.timeout, listener: js.Function0[Unit]): this.type = js.native
+  def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   
   /**
     * This property represents the state of the connection as a string.

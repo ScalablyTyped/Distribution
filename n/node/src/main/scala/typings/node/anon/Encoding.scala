@@ -1,16 +1,12 @@
 package typings.node.anon
 
-import typings.node.fsMod.BufferEncodingOption
-import typings.node.nodeStrings.buffer_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Encoding
-  extends StObject
-     with BufferEncodingOption {
+trait Encoding extends StObject {
   
-  var encoding: buffer_
+  var encoding: "buffer"
 }
 object Encoding {
   
@@ -21,6 +17,6 @@ object Encoding {
   
   extension [Self <: Encoding](x: Self) {
     
-    inline def setEncoding(value: buffer_): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: "buffer"): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
   }
 }

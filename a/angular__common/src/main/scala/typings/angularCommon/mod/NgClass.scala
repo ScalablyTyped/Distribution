@@ -1,8 +1,6 @@
 package typings.angularCommon.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngClass]`
 import typings.angularCommon.anon.Klass
 import typings.angularCore.mod.DoCheck
 import typings.angularCore.mod.ElementRef
@@ -89,9 +87,29 @@ object NgClass {
   
   @JSImport("@angular/common", "NgClass.\u0275dir")
   @js.native
-  def ɵdir: ɵɵDirectiveDeclaration[NgClass, `[ngClass]`, scala.Nothing, Klass, js.Object, scala.Nothing, scala.Nothing, `true`] = js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    NgClass, 
+    "[ngClass]", 
+    scala.Nothing, 
+    Klass, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    true, 
+    scala.Nothing
+  ] = js.native
   inline def ɵdir_=(
-    x: ɵɵDirectiveDeclaration[NgClass, `[ngClass]`, scala.Nothing, Klass, js.Object, scala.Nothing, scala.Nothing, `true`]
+    x: ɵɵDirectiveDeclaration[
+      NgClass, 
+      "[ngClass]", 
+      scala.Nothing, 
+      Klass, 
+      js.Object, 
+      scala.Nothing, 
+      scala.Nothing, 
+      true, 
+      scala.Nothing
+    ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/common", "NgClass.\u0275fac")

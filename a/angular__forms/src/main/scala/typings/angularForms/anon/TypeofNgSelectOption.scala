@@ -5,8 +5,6 @@ import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.Renderer2
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
-import typings.angularForms.angularFormsStrings.option
 import typings.angularForms.mod.NgSelectOption
 import typings.angularForms.mod.SelectControlValueAccessor
 import org.scalablytyped.runtime.StObject
@@ -25,13 +23,14 @@ trait TypeofNgSelectOption
   
   var ɵdir: ɵɵDirectiveDeclaration[
     NgSelectOption, 
-    option, 
+    "option", 
     scala.Nothing, 
     NgValue, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NgSelectOption, js.Tuple3[Null, Null, HostOptional]] = js.native

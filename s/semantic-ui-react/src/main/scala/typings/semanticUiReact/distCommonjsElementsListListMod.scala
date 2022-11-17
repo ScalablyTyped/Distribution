@@ -19,7 +19,6 @@ import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandCollectio
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
-import typings.semanticUiReact.semanticUiReactStrings.very
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -120,7 +119,7 @@ object distCommonjsElementsListListMod extends Shortcut {
     var ordered: js.UndefOr[Boolean] = js.undefined
     
     /** A list can relax its padding to provide more negative space. */
-    var relaxed: js.UndefOr[Boolean | very] = js.undefined
+    var relaxed: js.UndefOr[Boolean | "very"] = js.undefined
     
     /** A selection list formats list items as possible choices. */
     var selection: js.UndefOr[Boolean] = js.undefined
@@ -204,7 +203,7 @@ object distCommonjsElementsListListMod extends Shortcut {
       
       inline def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
       
-      inline def setRelaxed(value: Boolean | very): Self = StObject.set(x, "relaxed", value.asInstanceOf[js.Any])
+      inline def setRelaxed(value: Boolean | "very"): Self = StObject.set(x, "relaxed", value.asInstanceOf[js.Any])
       
       inline def setRelaxedUndefined: Self = StObject.set(x, "relaxed", js.undefined)
       

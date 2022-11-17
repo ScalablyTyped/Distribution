@@ -1,10 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.dashed
-import typings.reactNative.reactNativeStrings.dotted
-import typings.reactNative.reactNativeStrings.hidden
-import typings.reactNative.reactNativeStrings.solid
-import typings.reactNative.reactNativeStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +10,7 @@ trait ViewStyle
      with ShadowStyleIOS
      with TransformsStyle {
   
-  var backfaceVisibility: js.UndefOr[visible | hidden] = js.undefined
+  var backfaceVisibility: js.UndefOr["visible" | "hidden"] = js.undefined
   
   var backgroundColor: js.UndefOr[ColorValue] = js.undefined
   
@@ -41,7 +36,7 @@ trait ViewStyle
   
   var borderStartColor: js.UndefOr[ColorValue] = js.undefined
   
-  var borderStyle: js.UndefOr[solid | dotted | dashed] = js.undefined
+  var borderStyle: js.UndefOr["solid" | "dotted" | "dashed"] = js.undefined
   
   var borderTopColor: js.UndefOr[ColorValue] = js.undefined
   
@@ -76,7 +71,7 @@ object ViewStyle {
   
   extension [Self <: ViewStyle](x: Self) {
     
-    inline def setBackfaceVisibility(value: visible | hidden): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
+    inline def setBackfaceVisibility(value: "visible" | "hidden"): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
     
     inline def setBackfaceVisibilityUndefined: Self = StObject.set(x, "backfaceVisibility", js.undefined)
     
@@ -128,7 +123,7 @@ object ViewStyle {
     
     inline def setBorderStartColorUndefined: Self = StObject.set(x, "borderStartColor", js.undefined)
     
-    inline def setBorderStyle(value: solid | dotted | dashed): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+    inline def setBorderStyle(value: "solid" | "dotted" | "dashed"): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
     

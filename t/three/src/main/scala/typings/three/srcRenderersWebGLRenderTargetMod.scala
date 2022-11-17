@@ -9,7 +9,6 @@ import typings.three.srcCoreEventDispatcherMod.EventDispatcher
 import typings.three.srcMathVector4Mod.Vector4
 import typings.three.srcTexturesDepthTextureMod.DepthTexture
 import typings.three.srcTexturesTextureMod.Texture
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,7 +59,7 @@ object srcRenderersWebGLRenderTargetMod {
     
     var height: Double = js.native
     
-    val isWebGLRenderTarget: `true` = js.native
+    val isWebGLRenderTarget: true = js.native
     
     /**
       * @deprecated Use {@link Texture#magFilter texture.magFilter} instead.

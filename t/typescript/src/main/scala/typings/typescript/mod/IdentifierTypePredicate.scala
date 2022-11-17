@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IdentifierTypePredicate
   extends StObject
-     with TypePredicateBase
-     with TypePredicate {
+     with TypePredicateBase {
   
   @JSName("kind")
   var kind_IdentifierTypePredicate: typings.typescript.mod.TypePredicateKind.Identifier

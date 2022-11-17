@@ -1,6 +1,5 @@
 package typings.node.anon
 
-import typings.node.nodeBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined node.fs.WatchFileOptions & {  bigint :false | undefined} */
 trait WatchFileOptionsbigintfal extends StObject {
   
-  var bigint: js.UndefOr[Boolean] & js.UndefOr[`false`]
+  var bigint: js.UndefOr[Boolean] & js.UndefOr[false]
   
   var interval: js.UndefOr[Double] = js.undefined
   
@@ -16,14 +15,14 @@ trait WatchFileOptionsbigintfal extends StObject {
 }
 object WatchFileOptionsbigintfal {
   
-  inline def apply(bigint: js.UndefOr[Boolean] & js.UndefOr[`false`]): WatchFileOptionsbigintfal = {
+  inline def apply(bigint: js.UndefOr[Boolean] & js.UndefOr[false]): WatchFileOptionsbigintfal = {
     val __obj = js.Dynamic.literal(bigint = bigint.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchFileOptionsbigintfal]
   }
   
   extension [Self <: WatchFileOptionsbigintfal](x: Self) {
     
-    inline def setBigint(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+    inline def setBigint(value: js.UndefOr[Boolean] & js.UndefOr[false]): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
     
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

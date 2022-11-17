@@ -401,7 +401,7 @@ trait Uint32Array
   
   /* standard es2015.symbol.wellknown */
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: typings.std.stdStrings.Uint32Array = js.native
+  val toStringTag: "Uint32Array" = js.native
   
   /**
     * Returns an list of values in the array

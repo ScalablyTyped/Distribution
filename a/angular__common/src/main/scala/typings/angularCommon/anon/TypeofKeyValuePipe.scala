@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.keyvalue
 import typings.angularCommon.mod.KeyValuePipe
 import typings.angularCore.mod.KeyValueDiffers
 import typings.angularCore.mod.ɵɵFactoryDeclaration
@@ -18,5 +16,5 @@ trait TypeofKeyValuePipe
   
   var ɵfac: ɵɵFactoryDeclaration[KeyValuePipe, scala.Nothing] = js.native
   
-  var ɵpipe: ɵɵPipeDeclaration[KeyValuePipe, keyvalue, `true`] = js.native
+  var ɵpipe: ɵɵPipeDeclaration[KeyValuePipe, "keyvalue", true] = js.native
 }

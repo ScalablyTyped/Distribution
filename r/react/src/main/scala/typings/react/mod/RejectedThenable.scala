@@ -1,6 +1,5 @@
 package typings.react.mod
 
-import typings.react.reactStrings.rejected
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ trait RejectedThenable[T]
   
   var reason: Any
   
-  var status: rejected
+  var status: "rejected"
 }
 object RejectedThenable {
   
@@ -29,6 +28,6 @@ object RejectedThenable {
     
     inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    inline def setStatus(value: rejected): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: "rejected"): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

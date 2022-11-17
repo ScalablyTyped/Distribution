@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeAssertion
   extends StObject
-     with UnaryExpression
-     with AssertionExpression {
+     with UnaryExpression {
   
   val expression: UnaryExpression = js.native
   

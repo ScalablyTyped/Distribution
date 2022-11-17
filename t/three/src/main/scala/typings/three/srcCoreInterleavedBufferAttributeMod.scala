@@ -6,7 +6,6 @@ import typings.three.srcCoreBufferAttributeMod.BufferAttribute
 import typings.three.srcCoreInterleavedBufferMod.InterleavedBuffer
 import typings.three.srcMathMatrix3Mod.Matrix
 import typings.three.srcMathMatrix4Mod.Matrix4
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +38,7 @@ object srcCoreInterleavedBufferAttributeMod {
     
     def getZ(index: Double): Double = js.native
     
-    val isInterleavedBufferAttribute: `true` = js.native
+    val isInterleavedBufferAttribute: true = js.native
     
     var itemSize: Double = js.native
     

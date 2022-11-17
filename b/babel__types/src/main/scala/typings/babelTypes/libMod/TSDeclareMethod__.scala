@@ -1,28 +1,18 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSDeclareMethod
-import typings.babelTypes.babelTypesStrings.`protected`
-import typings.babelTypes.babelTypesStrings.constructor
-import typings.babelTypes.babelTypesStrings.get
-import typings.babelTypes.babelTypesStrings.method_
-import typings.babelTypes.babelTypesStrings.private_
-import typings.babelTypes.babelTypesStrings.public
-import typings.babelTypes.babelTypesStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSDeclareMethod__
   extends StObject
-     with BaseNode
-     with Node
-     with TypeScript {
+     with BaseNode {
   
   var `abstract`: js.UndefOr[Boolean | Null] = js.undefined
   
-  var access: js.UndefOr[public | private_ | `protected` | Null] = js.undefined
+  var access: js.UndefOr["public" | "private" | "protected" | Null] = js.undefined
   
-  var accessibility: js.UndefOr[public | private_ | `protected` | Null] = js.undefined
+  var accessibility: js.UndefOr["public" | "private" | "protected" | Null] = js.undefined
   
   var async: js.UndefOr[Boolean] = js.undefined
   
@@ -34,7 +24,7 @@ trait TSDeclareMethod__
   
   var key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression
   
-  var kind: js.UndefOr[get | set | method_ | constructor] = js.undefined
+  var kind: js.UndefOr["get" | "set" | "method" | "constructor"] = js.undefined
   
   var optional: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -49,7 +39,7 @@ trait TSDeclareMethod__
   var typeParameters: js.UndefOr[TSTypeParameterDeclaration__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
-  var type_TSDeclareMethod__ : TSDeclareMethod
+  var type_TSDeclareMethod__ : "TSDeclareMethod"
 }
 object TSDeclareMethod__ {
   
@@ -70,13 +60,13 @@ object TSDeclareMethod__ {
     
     inline def setAbstractUndefined: Self = StObject.set(x, "abstract", js.undefined)
     
-    inline def setAccess(value: public | private_ | `protected`): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: "public" | "private" | "protected"): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
     inline def setAccessNull: Self = StObject.set(x, "access", null)
     
     inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
-    inline def setAccessibility(value: public | private_ | `protected`): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: "public" | "private" | "protected"): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityNull: Self = StObject.set(x, "accessibility", null)
     
@@ -104,7 +94,7 @@ object TSDeclareMethod__ {
     
     inline def setKey(value: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setKind(value: get | set | method_ | constructor): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "get" | "set" | "method" | "constructor"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -132,7 +122,7 @@ object TSDeclareMethod__ {
     
     inline def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
     
-    inline def setType(value: TSDeclareMethod): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSDeclareMethod"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TSTypeParameterDeclaration__ | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

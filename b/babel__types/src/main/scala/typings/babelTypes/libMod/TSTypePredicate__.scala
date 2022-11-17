@@ -1,16 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSTypePredicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSTypePredicate__
   extends StObject
-     with BaseNode
-     with Node
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   var asserts: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -19,7 +15,7 @@ trait TSTypePredicate__
   var typeAnnotation: js.UndefOr[TSTypeAnnotation__ | Null] = js.undefined
   
   @JSName("type")
-  var type_TSTypePredicate__ : TSTypePredicate
+  var type_TSTypePredicate__ : "TSTypePredicate"
 }
 object TSTypePredicate__ {
   
@@ -39,7 +35,7 @@ object TSTypePredicate__ {
     
     inline def setParameterName(value: Identifier_ | TSThisType__): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSTypePredicate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSTypePredicate"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TSTypeAnnotation__): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

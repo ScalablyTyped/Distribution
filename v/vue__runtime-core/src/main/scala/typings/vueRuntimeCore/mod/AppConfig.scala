@@ -1,7 +1,6 @@
 package typings.vueRuntimeCore.mod
 
 import typings.std.Record
-import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ trait AppConfig extends StObject {
         js.Object, 
         js.Object, 
         js.Object, 
-        `false`, 
+        false, 
         ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
         js.Object
       ]) | Null, 
@@ -66,7 +65,7 @@ trait AppConfig extends StObject {
         js.Object, 
         js.Object, 
         js.Object, 
-        `false`, 
+        false, 
         ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
         js.Object
       ]) | Null, 
@@ -101,7 +100,7 @@ object AppConfig {
           js.Object, 
           js.Object, 
           js.Object, 
-          `false`, 
+          false, 
           ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
           js.Object
         ]) | Null, /* info */ String) => Unit
@@ -137,7 +136,7 @@ object AppConfig {
           js.Object, 
           js.Object, 
           js.Object, 
-          `false`, 
+          false, 
           ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
           js.Object
         ]) | Null, /* trace */ String) => Unit

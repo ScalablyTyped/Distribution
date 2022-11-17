@@ -1,15 +1,6 @@
 package typings.reactNative.mod
 
 import typings.react.mod.ReactNode
-import typings.reactNative.reactNativeStrings.`box-none`
-import typings.reactNative.reactNativeStrings.`box-only`
-import typings.reactNative.reactNativeStrings.`no-hide-descendants`
-import typings.reactNative.reactNativeStrings.assertive
-import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.no
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.polite
-import typings.reactNative.reactNativeStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,7 +58,7 @@ trait PressableProps extends StObject {
     * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
     * @platform android
     */
-  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+  var accessibilityLiveRegion: js.UndefOr["none" | "polite" | "assertive"] = js.undefined
   
   /**
     * Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on Android the type of element that is focused on.
@@ -163,7 +154,7 @@ trait PressableProps extends StObject {
     *      'no' - The view is not important for accessibility.
     *      'no-hide-descendants' - The view is not important for accessibility, nor are any of its descendant views.
     */
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+  var importantForAccessibility: js.UndefOr["auto" | "yes" | "no" | "no-hide-descendants"] = js.undefined
   
   var isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
@@ -296,7 +287,7 @@ trait PressableProps extends StObject {
   
   var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
+  var pointerEvents: js.UndefOr["box-none" | "none" | "box-only" | "auto"] = js.undefined
   
   /**
     * Additional distance outside of this view in which a touch is considered a
@@ -381,7 +372,7 @@ object PressableProps {
     
     inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
     
-    inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLiveRegion(value: "none" | "polite" | "assertive"): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
     
@@ -471,7 +462,7 @@ object PressableProps {
     
     inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
     
-    inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+    inline def setImportantForAccessibility(value: "auto" | "yes" | "no" | "no-hide-descendants"): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
@@ -671,7 +662,7 @@ object PressableProps {
     
     inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
-    inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    inline def setPointerEvents(value: "box-none" | "none" | "box-only" | "auto"): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     

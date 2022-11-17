@@ -223,21 +223,15 @@ object examplesJsmControlsArcballControlsMod {
     /* "ZOOM" */ val ZOOM: typings.three.examplesJsmControlsArcballControlsMod.ArcballControlsMouseActionOperations.ZOOM & String = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.three.threeInts.`0`
-    - typings.three.threeInts.`1`
-    - typings.three.threeInts.`2`
-    - typings.three.threeStrings.WHEEL
-  */
-  trait ArcballControlsMouseActionMouse extends StObject
   object ArcballControlsMouseActionMouse {
     
-    inline def `0`: typings.three.threeInts.`0` = 0.asInstanceOf[typings.three.threeInts.`0`]
+    inline def `0`: 0 = 0.asInstanceOf[0]
     
-    inline def `1`: typings.three.threeInts.`1` = 1.asInstanceOf[typings.three.threeInts.`1`]
+    inline def `1`: 1 = 1.asInstanceOf[1]
     
-    inline def `2`: typings.three.threeInts.`2` = 2.asInstanceOf[typings.three.threeInts.`2`]
+    inline def `2`: 2 = 2.asInstanceOf[2]
     
-    inline def WHEEL: typings.three.threeStrings.WHEEL = "WHEEL".asInstanceOf[typings.three.threeStrings.WHEEL]
+    inline def WHEEL: "WHEEL" = "WHEEL".asInstanceOf["WHEEL"]
   }
+  type ArcballControlsMouseActionMouse = 0 | 1 | 2 | "WHEEL"
 }

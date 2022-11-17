@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JSDocNamespaceDeclaration
   extends StObject
-     with ModuleDeclaration
-     with JSDocNamespaceBody {
+     with ModuleDeclaration {
   
   @JSName("body")
   val body_JSDocNamespaceDeclaration: js.UndefOr[JSDocNamespaceBody] = js.native

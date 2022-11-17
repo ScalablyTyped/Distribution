@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.required
 import typings.ajv.anon.Data
 import typings.ajv.anon.MissingPropertyString
 import typings.ajv.distTypesMod.CodeKeywordDefinition
@@ -16,7 +15,7 @@ object distVocabulariesValidationRequiredMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type RequiredError = ErrorObject[required, MissingPropertyString, js.Array[String] | Data]
+  type RequiredError = ErrorObject["required", MissingPropertyString, js.Array[String] | Data]
   
   type _To = CodeKeywordDefinition
   

@@ -1,16 +1,14 @@
 package typings.node.dnsMod
 
-import typings.node.nodeStrings.SRV
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AnySrvRecord
   extends StObject
-     with SrvRecord
-     with AnyRecord {
+     with SrvRecord {
   
-  var `type`: SRV
+  var `type`: "SRV"
 }
 object AnySrvRecord {
   
@@ -22,6 +20,6 @@ object AnySrvRecord {
   
   extension [Self <: AnySrvRecord](x: Self) {
     
-    inline def setType(value: SRV): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "SRV"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

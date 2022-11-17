@@ -1,7 +1,6 @@
 package typings.vueRuntimeCore.mod
 
 import typings.vueRuntimeCore.anon.`1`
-import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ object Suspense {
   
   @JSImport("@vue/runtime-core", "Suspense.__isSuspense")
   @js.native
-  def isSuspense: `true` = js.native
+  def isSuspense: true = js.native
   
-  inline def isSuspense_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__isSuspense")(x.asInstanceOf[js.Any])
+  inline def isSuspense_=(x: true): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__isSuspense")(x.asInstanceOf[js.Any])
 }

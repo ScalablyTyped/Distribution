@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.NullLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `245` extends StObject {
   
-  var `type`: NullLiteral
+  var `type`: "NullLiteral"
 }
 object `245` {
   
@@ -19,6 +18,6 @@ object `245` {
   
   extension [Self <: `245`](x: Self) {
     
-    inline def setType(value: NullLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "NullLiteral"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

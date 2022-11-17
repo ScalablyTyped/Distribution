@@ -1,10 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.auto_detect
-import typings.electron.electronStrings.direct
-import typings.electron.electronStrings.fixed_servers
-import typings.electron.electronStrings.pac_script
-import typings.electron.electronStrings.system
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +11,7 @@ trait Config extends StObject {
     * `fixed_servers` or `system`. If it's unspecified, it will be automatically
     * determined based on other specified options.
     */
-  var mode: js.UndefOr[direct | auto_detect | pac_script | fixed_servers | system] = js.undefined
+  var mode: js.UndefOr["direct" | "auto_detect" | "pac_script" | "fixed_servers" | "system"] = js.undefined
   
   /**
     * The URL associated with the PAC file.
@@ -42,7 +37,7 @@ object Config {
   
   extension [Self <: Config](x: Self) {
     
-    inline def setMode(value: direct | auto_detect | pac_script | fixed_servers | system): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: "direct" | "auto_detect" | "pac_script" | "fixed_servers" | "system"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     

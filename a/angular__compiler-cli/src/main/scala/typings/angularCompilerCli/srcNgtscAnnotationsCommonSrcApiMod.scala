@@ -1,7 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliStrings.style
-import typings.angularCompilerCli.angularCompilerCliStrings.template
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,11 +107,11 @@ object srcNgtscAnnotationsCommonSrcApiMod {
       * * Resources referenced via a component's `template` or `templateUrl` properties are of type
       * `template`.
       */
-    var `type`: style | template
+    var `type`: "style" | "template"
   }
   object ResourceLoaderContext {
     
-    inline def apply(containingFile: String, `type`: style | template): ResourceLoaderContext = {
+    inline def apply(containingFile: String, `type`: "style" | "template"): ResourceLoaderContext = {
       val __obj = js.Dynamic.literal(containingFile = containingFile.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceLoaderContext]
@@ -123,7 +121,7 @@ object srcNgtscAnnotationsCommonSrcApiMod {
       
       inline def setContainingFile(value: String): Self = StObject.set(x, "containingFile", value.asInstanceOf[js.Any])
       
-      inline def setType(value: style | template): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "style" | "template"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

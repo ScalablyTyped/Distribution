@@ -5,13 +5,6 @@ import typings.node.NodeJS.WritableStream
 import typings.node.anon.AutoCommit
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.Abortable
-import typings.node.nodeStrings.SIGCONT
-import typings.node.nodeStrings.SIGINT
-import typings.node.nodeStrings.SIGTSTP
-import typings.node.nodeStrings.close
-import typings.node.nodeStrings.history
-import typings.node.nodeStrings.pause
-import typings.node.nodeStrings.resume
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,6 +48,30 @@ object readlineMod {
     /* protected */ def this(input: ReadableStream, output: WritableStream, completer: AsyncCompleter, terminal: Boolean) = this()
     /* protected */ def this(input: ReadableStream, output: WritableStream, completer: Completer, terminal: Boolean) = this()
     
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_SIGTSTP")
+    def addListener(event: "SIGTSTP", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_resume")
+    def addListener(event: "resume", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_SIGCONT")
+    def addListener(event: "SIGCONT", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_pause")
+    def addListener(event: "pause", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_SIGINT")
+    def addListener(event: "SIGINT", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_close")
+    def addListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_line")
+    def addListener(event: "line", listener: js.Function1[/* input */ String, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_history")
+    def addListener(event: "history", listener: js.Function1[/* history */ js.Array[String], Unit]): this.type = js.native
     /**
       * events.EventEmitter
       * 1. close
@@ -67,22 +84,6 @@ object readlineMod {
       * 8. history
       */
     def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_SIGCONT(event: SIGCONT, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_SIGINT(event: SIGINT, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_SIGTSTP(event: SIGTSTP, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_history(event: history, listener: js.Function1[/* history */ js.Array[String], Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_line(event: typings.node.nodeStrings.line, listener: js.Function1[/* input */ String, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     
     /**
       * The `rl.close()` method closes the `readline.Interface` instance and
@@ -106,24 +107,32 @@ object readlineMod {
       */
     val cursor: Double = js.native
     
+    @JSName("emit")
+    @scala.annotation.targetName("emit_close")
+    def emit(event: "close"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_SIGTSTP")
+    def emit(event: "SIGTSTP"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_resume")
+    def emit(event: "resume"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_SIGINT")
+    def emit(event: "SIGINT"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_SIGCONT")
+    def emit(event: "SIGCONT"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_pause")
+    def emit(event: "pause"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_history")
+    def emit(event: "history", history: js.Array[String]): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_line")
+    def emit(event: "line", input: String): Boolean = js.native
     def emit(event: String, args: Any*): Boolean = js.native
     def emit(event: js.Symbol, args: Any*): Boolean = js.native
-    @JSName("emit")
-    def emit_SIGCONT(event: SIGCONT): Boolean = js.native
-    @JSName("emit")
-    def emit_SIGINT(event: SIGINT): Boolean = js.native
-    @JSName("emit")
-    def emit_SIGTSTP(event: SIGTSTP): Boolean = js.native
-    @JSName("emit")
-    def emit_close(event: close): Boolean = js.native
-    @JSName("emit")
-    def emit_history(event: history, history: js.Array[String]): Boolean = js.native
-    @JSName("emit")
-    def emit_line(event: typings.node.nodeStrings.line, input: String): Boolean = js.native
-    @JSName("emit")
-    def emit_pause(event: pause): Boolean = js.native
-    @JSName("emit")
-    def emit_resume(event: resume): Boolean = js.native
     
     /**
       * Returns the real position of the cursor in relation to the input
@@ -172,41 +181,57 @@ object readlineMod {
       */
     val line: String = js.native
     
+    @JSName("on")
+    @scala.annotation.targetName("on_resume")
+    def on(event: "resume", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_pause")
+    def on(event: "pause", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_close")
+    def on(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_SIGCONT")
+    def on(event: "SIGCONT", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_SIGINT")
+    def on(event: "SIGINT", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_SIGTSTP")
+    def on(event: "SIGTSTP", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_history")
+    def on(event: "history", listener: js.Function1[/* history */ js.Array[String], Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_line")
+    def on(event: "line", listener: js.Function1[/* input */ String, Unit]): this.type = js.native
     def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_SIGCONT(event: SIGCONT, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_SIGINT(event: SIGINT, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_SIGTSTP(event: SIGTSTP, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_history(event: history, listener: js.Function1[/* history */ js.Array[String], Unit]): this.type = js.native
-    @JSName("on")
-    def on_line(event: typings.node.nodeStrings.line, listener: js.Function1[/* input */ String, Unit]): this.type = js.native
-    @JSName("on")
-    def on_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     
+    @JSName("once")
+    @scala.annotation.targetName("once_pause")
+    def once(event: "pause", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_SIGCONT")
+    def once(event: "SIGCONT", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_SIGTSTP")
+    def once(event: "SIGTSTP", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_SIGINT")
+    def once(event: "SIGINT", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_resume")
+    def once(event: "resume", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_close")
+    def once(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_history")
+    def once(event: "history", listener: js.Function1[/* history */ js.Array[String], Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_line")
+    def once(event: "line", listener: js.Function1[/* input */ String, Unit]): this.type = js.native
     def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_SIGCONT(event: SIGCONT, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_SIGINT(event: SIGINT, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_SIGTSTP(event: SIGTSTP, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_history(event: history, listener: js.Function1[/* history */ js.Array[String], Unit]): this.type = js.native
-    @JSName("once")
-    def once_line(event: typings.node.nodeStrings.line, listener: js.Function1[/* input */ String, Unit]): this.type = js.native
-    @JSName("once")
-    def once_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     
     /**
       * The `rl.pause()` method pauses the `input` stream, allowing it to be resumed
@@ -217,41 +242,57 @@ object readlineMod {
       */
     def pause(): this.type = js.native
     
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_SIGCONT")
+    def prependListener(event: "SIGCONT", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_close")
+    def prependListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_pause")
+    def prependListener(event: "pause", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_SIGINT")
+    def prependListener(event: "SIGINT", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_resume")
+    def prependListener(event: "resume", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_SIGTSTP")
+    def prependListener(event: "SIGTSTP", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_line")
+    def prependListener(event: "line", listener: js.Function1[/* input */ String, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_history")
+    def prependListener(event: "history", listener: js.Function1[/* history */ js.Array[String], Unit]): this.type = js.native
     def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_SIGCONT(event: SIGCONT, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_SIGINT(event: SIGINT, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_SIGTSTP(event: SIGTSTP, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_history(event: history, listener: js.Function1[/* history */ js.Array[String], Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_line(event: typings.node.nodeStrings.line, listener: js.Function1[/* input */ String, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_SIGTSTP")
+    def prependOnceListener(event: "SIGTSTP", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_resume")
+    def prependOnceListener(event: "resume", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_SIGINT")
+    def prependOnceListener(event: "SIGINT", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_close")
+    def prependOnceListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_SIGCONT")
+    def prependOnceListener(event: "SIGCONT", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_pause")
+    def prependOnceListener(event: "pause", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_line")
+    def prependOnceListener(event: "line", listener: js.Function1[/* input */ String, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_history")
+    def prependOnceListener(event: "history", listener: js.Function1[/* history */ js.Array[String], Unit]): this.type = js.native
     def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_SIGCONT(event: SIGCONT, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_SIGINT(event: SIGINT, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_SIGTSTP(event: SIGTSTP, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_history(event: history, listener: js.Function1[/* history */ js.Array[String], Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_line(event: typings.node.nodeStrings.line, listener: js.Function1[/* input */ String, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     
     /**
       * The `rl.prompt()` method writes the `readline.Interface` instances configured`prompt` to a new line in `output` in order to provide a user with a new
@@ -555,20 +596,15 @@ object readlineMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.node.nodeInts.`-1`
-    - typings.node.nodeInts.`0`
-    - typings.node.nodeInts.`1`
-  */
-  trait Direction extends StObject
   object Direction {
     
-    inline def `-1`: typings.node.nodeInts.`-1` = -1.asInstanceOf[typings.node.nodeInts.`-1`]
+    inline def `-1`: -1 = -1.asInstanceOf[-1]
     
-    inline def `0`: typings.node.nodeInts.`0` = 0.asInstanceOf[typings.node.nodeInts.`0`]
+    inline def `0`: 0 = 0.asInstanceOf[0]
     
-    inline def `1`: typings.node.nodeInts.`1` = 1.asInstanceOf[typings.node.nodeInts.`1`]
+    inline def `1`: 1 = 1.asInstanceOf[1]
   }
+  type Direction = -1 | 0 | 1
   
   trait Key extends StObject {
     

@@ -1,10 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCommon.angularCommonStrings.arraybuffer
-import typings.angularCommon.angularCommonStrings.blob
-import typings.angularCommon.angularCommonStrings.json
-import typings.angularCommon.angularCommonStrings.text
 import typings.angularCommon.httpMod.HttpContext
 import typings.angularCommon.httpMod.HttpHeaders
 import typings.angularCommon.httpMod.HttpParams
@@ -26,7 +22,7 @@ trait Method[T] extends StObject {
   
   var reportProgress: js.UndefOr[Boolean] = js.undefined
   
-  var responseType: js.UndefOr[arraybuffer | blob | json | text] = js.undefined
+  var responseType: js.UndefOr["arraybuffer" | "blob" | "json" | "text"] = js.undefined
   
   var setHeaders: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
   
@@ -71,7 +67,7 @@ object Method {
     
     inline def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
     
-    inline def setResponseType(value: arraybuffer | blob | json | text): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: "arraybuffer" | "blob" | "json" | "text"): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     

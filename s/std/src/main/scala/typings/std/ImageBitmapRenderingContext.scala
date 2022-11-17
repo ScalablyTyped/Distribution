@@ -5,10 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageBitmapRenderingContext
-  extends StObject
-     with OffscreenRenderingContext
-     with RenderingContext {
+trait ImageBitmapRenderingContext extends StObject {
   
   /** Returns the canvas element that the context is bound to. */
   /* standard dom */

@@ -1,10 +1,6 @@
 package typings.hammerjs
 
 import org.scalablytyped.runtime.Shortcut
-import typings.hammerjs.hammerjsInts.`1`
-import typings.hammerjs.hammerjsInts.`2`
-import typings.hammerjs.hammerjsInts.`4`
-import typings.hammerjs.hammerjsInts.`8`
 import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.MouseEvent
@@ -158,7 +154,7 @@ object global {
     
     /** Event type, matches the INPUT constants. */
     /* CompleteClass */
-    var eventType: `1` | `2` | `4` | `8` = js.native
+    var eventType: 1 | 2 | 4 | 8 = js.native
     
     /* CompleteClass */
     override def handler(): Unit = js.native
@@ -284,7 +280,7 @@ object global {
     
     /** Event type, matches the INPUT constants. */
     /* CompleteClass */
-    var eventType: `1` | `2` | `4` | `8` = js.native
+    var eventType: 1 | 2 | 4 | 8 = js.native
     
     /* CompleteClass */
     override def handler(): Unit = js.native
@@ -410,7 +406,7 @@ object global {
     
     /** Event type, matches the INPUT constants. */
     /* CompleteClass */
-    var eventType: `1` | `2` | `4` | `8` = js.native
+    var eventType: 1 | 2 | 4 | 8 = js.native
     
     /* CompleteClass */
     override def handler(): Unit = js.native
@@ -536,7 +532,7 @@ object global {
     
     /** Event type, matches the INPUT constants. */
     /* CompleteClass */
-    var eventType: `1` | `2` | `4` | `8` = js.native
+    var eventType: 1 | 2 | 4 | 8 = js.native
     
     /* CompleteClass */
     override def handler(): Unit = js.native
@@ -685,7 +681,7 @@ object global {
     
     /** Event type, matches the INPUT constants. */
     /* CompleteClass */
-    var eventType: `1` | `2` | `4` | `8` = js.native
+    var eventType: 1 | 2 | 4 | 8 = js.native
     
     /* CompleteClass */
     override def handler(): Unit = js.native
@@ -811,7 +807,7 @@ object global {
     
     /** Event type, matches the INPUT constants. */
     /* CompleteClass */
-    var eventType: `1` | `2` | `4` | `8` = js.native
+    var eventType: 1 | 2 | 4 | 8 = js.native
     
     /* CompleteClass */
     override def handler(): Unit = js.native

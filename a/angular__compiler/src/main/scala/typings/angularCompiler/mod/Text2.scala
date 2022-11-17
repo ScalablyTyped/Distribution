@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Text2
-  extends NodeWithI18n
-     with Node2 {
+trait Text2 extends NodeWithI18n {
   
   var tokens: js.Array[InterpolatedTextToken] = js.native
   

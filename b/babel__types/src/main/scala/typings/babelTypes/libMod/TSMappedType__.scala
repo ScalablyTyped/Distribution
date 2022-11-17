@@ -1,33 +1,25 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesBooleans.`false`
-import typings.babelTypes.babelTypesBooleans.`true`
-import typings.babelTypes.babelTypesStrings.Plussign
-import typings.babelTypes.babelTypesStrings.TSMappedType
-import typings.babelTypes.babelTypesStrings.`-_`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSMappedType__
   extends StObject
-     with BaseNode
-     with Node
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   var nameType: js.UndefOr[TSType | Null] = js.undefined
   
-  var optional: js.UndefOr[`true` | `false` | Plussign | `-_` | Null] = js.undefined
+  var optional: js.UndefOr[true | false | "+" | "-" | Null] = js.undefined
   
-  var readonly: js.UndefOr[`true` | `false` | Plussign | `-_` | Null] = js.undefined
+  var readonly: js.UndefOr[true | false | "+" | "-" | Null] = js.undefined
   
   var typeAnnotation: js.UndefOr[TSType | Null] = js.undefined
   
   var typeParameter: TSTypeParameter__
   
   @JSName("type")
-  var type_TSMappedType__ : TSMappedType
+  var type_TSMappedType__ : "TSMappedType"
 }
 object TSMappedType__ {
   
@@ -45,19 +37,19 @@ object TSMappedType__ {
     
     inline def setNameTypeUndefined: Self = StObject.set(x, "nameType", js.undefined)
     
-    inline def setOptional(value: `true` | `false` | Plussign | `-_`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: true | false | "+" | "-"): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     inline def setOptionalNull: Self = StObject.set(x, "optional", null)
     
     inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    inline def setReadonly(value: `true` | `false` | Plussign | `-_`): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    inline def setReadonly(value: true | false | "+" | "-"): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     inline def setReadonlyNull: Self = StObject.set(x, "readonly", null)
     
     inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
-    inline def setType(value: TSMappedType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSMappedType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

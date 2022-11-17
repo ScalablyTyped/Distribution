@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.expoVectorIcons.buildCreateIconSetMod.Icon
 import typings.expoVectorIcons.buildCreateIconSetMod.IconButtonProps
 import typings.expoVectorIcons.buildCreateIconSetMod.IconProps
-import typings.expoVectorIcons.expoVectorIconsStrings.`material-community`
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
@@ -19,13 +18,13 @@ object buildMaterialCommunityIconsMod {
   open class default protected ()
     extends Component[
           IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ], 
           js.Object, 
           Any
         ] {
     def this(props: IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with typings.expoVectorIcons.expoVectorIconsStrings.symbol, typings.expoVectorIcons.expoVectorIconsStrings.function, typings.expoVectorIcons.expoVectorIconsStrings.head */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with "symbol", "function", "head" */ String
           ]) = this()
   }
   object default extends Shortcut {
@@ -33,8 +32,8 @@ object buildMaterialCommunityIconsMod {
     @JSImport("@expo/vector-icons/build/MaterialCommunityIcons", JSImport.Default)
     @js.native
     val ^ : Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with typings.expoVectorIcons.expoVectorIconsStrings.symbol, typings.expoVectorIcons.expoVectorIconsStrings.function, typings.expoVectorIcons.expoVectorIconsStrings.head */ Any, 
-        `material-community`
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with "symbol", "function", "head" */ String, 
+        "material-community"
       ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -43,31 +42,31 @@ object buildMaterialCommunityIconsMod {
     open class Button protected ()
       extends Component[
               IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ], 
               ComponentState, 
               Any
             ] {
       def this(props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with typings.expoVectorIcons.expoVectorIconsStrings.symbol, typings.expoVectorIcons.expoVectorIconsStrings.function, typings.expoVectorIcons.expoVectorIconsStrings.head */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with "symbol", "function", "head" */ String
               ]) = this()
       def this(
         props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with typings.expoVectorIcons.expoVectorIconsStrings.symbol, typings.expoVectorIcons.expoVectorIconsStrings.function, typings.expoVectorIcons.expoVectorIconsStrings.head */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with "symbol", "function", "head" */ String
               ],
         context: Any
       ) = this()
     }
     
     type _To = Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with typings.expoVectorIcons.expoVectorIconsStrings.symbol, typings.expoVectorIcons.expoVectorIconsStrings.function, typings.expoVectorIcons.expoVectorIconsStrings.head */ Any, 
-        `material-community`
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with "symbol", "function", "head" */ String, 
+        "material-community"
       ]
     
     /* This means you don't have to write `^`, but can instead just say `default.foo` */
     override def _to: Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with typings.expoVectorIcons.expoVectorIconsStrings.symbol, typings.expoVectorIcons.expoVectorIconsStrings.function, typings.expoVectorIcons.expoVectorIconsStrings.head */ Any, 
-        `material-community`
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with "symbol", "function", "head" */ String, 
+        "material-community"
       ] = ^
   }
 }

@@ -1,15 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.action
-import typings.materialUiCore.materialUiCoreStrings.default
-import typings.materialUiCore.materialUiCoreStrings.disabled
-import typings.materialUiCore.materialUiCoreStrings.error
-import typings.materialUiCore.materialUiCoreStrings.inherit
-import typings.materialUiCore.materialUiCoreStrings.large
-import typings.materialUiCore.materialUiCoreStrings.medium
-import typings.materialUiCore.materialUiCoreStrings.primary
-import typings.materialUiCore.materialUiCoreStrings.secondary
-import typings.materialUiCore.materialUiCoreStrings.small
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,12 +16,12 @@ trait HtmlColor extends StObject {
     * The color of the component. It supports those theme colors that make sense for this component.
     * You can use the `htmlColor` prop to apply a color attribute to the SVG element.
     */
-  var color: js.UndefOr[inherit | primary | secondary | action | disabled | error] = js.undefined
+  var color: js.UndefOr["inherit" | "primary" | "secondary" | "action" | "disabled" | "error"] = js.undefined
   
   /**
     * The fontSize applied to the icon. Defaults to 24px, but can be configure to inherit font size.
     */
-  var fontSize: js.UndefOr[default | inherit | large | medium | small] = js.undefined
+  var fontSize: js.UndefOr["default" | "inherit" | "large" | "medium" | "small"] = js.undefined
   
   /**
     * Applies a color attribute to the SVG element.
@@ -73,11 +63,11 @@ object HtmlColor {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setColor(value: inherit | primary | secondary | action | disabled | error): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: "inherit" | "primary" | "secondary" | "action" | "disabled" | "error"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setFontSize(value: default | inherit | large | medium | small): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: "default" | "inherit" | "large" | "medium" | "small"): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     

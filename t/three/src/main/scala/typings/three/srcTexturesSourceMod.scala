@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object srcTexturesSourceMod {
       */
     var data: Any = js.native
     
-    val isTexture: `true` = js.native
+    val isTexture: true = js.native
     
     /**
       * Set this to **true** to trigger a data upload to the GPU next time the source is used.

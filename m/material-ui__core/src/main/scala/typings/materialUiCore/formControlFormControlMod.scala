@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Error
-import typings.materialUiCore.materialUiCoreStrings.div
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -47,25 +46,19 @@ object formControlFormControlMod extends Shortcut {
     */
   @JSImport("@material-ui/core/FormControl/FormControl", JSImport.Default)
   @js.native
-  val default: OverridableComponent[FormControlTypeMap[js.Object, div]] = js.native
+  val default: OverridableComponent[FormControlTypeMap[js.Object, "div"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.marginNormal
-    - typings.materialUiCore.materialUiCoreStrings.marginDense
-    - typings.materialUiCore.materialUiCoreStrings.fullWidth
-  */
-  trait FormControlClassKey extends StObject
   object FormControlClassKey {
     
-    inline def fullWidth: typings.materialUiCore.materialUiCoreStrings.fullWidth = "fullWidth".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.fullWidth]
+    inline def fullWidth: "fullWidth" = "fullWidth".asInstanceOf["fullWidth"]
     
-    inline def marginDense: typings.materialUiCore.materialUiCoreStrings.marginDense = "marginDense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.marginDense]
+    inline def marginDense: "marginDense" = "marginDense".asInstanceOf["marginDense"]
     
-    inline def marginNormal: typings.materialUiCore.materialUiCoreStrings.marginNormal = "marginNormal".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.marginNormal]
+    inline def marginNormal: "marginNormal" = "marginNormal".asInstanceOf["marginNormal"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
   }
+  type FormControlClassKey = "root" | "marginNormal" | "marginDense" | "fullWidth"
   
   type FormControlProps[D /* <: ElementType[Any] */, P] = OverrideProps[FormControlTypeMap[P, D], D]
   
@@ -94,8 +87,8 @@ object formControlFormControlMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[FormControlTypeMap[js.Object, div]]
+  type _To = OverridableComponent[FormControlTypeMap[js.Object, "div"]]
   
   /* This means you don't have to write `default`, but can instead just say `formControlFormControlMod.foo` */
-  override def _to: OverridableComponent[FormControlTypeMap[js.Object, div]] = default
+  override def _to: OverridableComponent[FormControlTypeMap[js.Object, "div"]] = default
 }

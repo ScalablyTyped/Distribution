@@ -1,7 +1,6 @@
 package typings.rcUtil
 
 import typings.rcUtil.anon.Nonce
-import typings.rcUtil.rcUtilStrings.queue
 import typings.std.Element
 import typings.std.HTMLStyleElement
 import org.scalablytyped.runtime.StObject
@@ -23,20 +22,15 @@ object libDomDynamicCSSMod {
   inline def updateCSS(css: String, key: String): HTMLStyleElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCSS")(css.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[HTMLStyleElement]
   inline def updateCSS(css: String, key: String, option: Options): HTMLStyleElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCSS")(css.asInstanceOf[js.Any], key.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[HTMLStyleElement]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcUtil.rcUtilStrings.prependQueue
-    - typings.rcUtil.rcUtilStrings.append
-    - typings.rcUtil.rcUtilStrings.prepend
-  */
-  trait AppendType extends StObject
   object AppendType {
     
-    inline def append: typings.rcUtil.rcUtilStrings.append = "append".asInstanceOf[typings.rcUtil.rcUtilStrings.append]
+    inline def append: "append" = "append".asInstanceOf["append"]
     
-    inline def prepend: typings.rcUtil.rcUtilStrings.prepend = "prepend".asInstanceOf[typings.rcUtil.rcUtilStrings.prepend]
+    inline def prepend: "prepend" = "prepend".asInstanceOf["prepend"]
     
-    inline def prependQueue: typings.rcUtil.rcUtilStrings.prependQueue = "prependQueue".asInstanceOf[typings.rcUtil.rcUtilStrings.prependQueue]
+    inline def prependQueue: "prependQueue" = "prependQueue".asInstanceOf["prependQueue"]
   }
+  type AppendType = "prependQueue" | "append" | "prepend"
   
   trait Options extends StObject {
     
@@ -75,5 +69,5 @@ object libDomDynamicCSSMod {
     }
   }
   
-  type Prepend = Boolean | queue
+  type Prepend = Boolean | "queue"
 }

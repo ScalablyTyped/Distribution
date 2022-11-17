@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object examplesJsmNodesFogFogRangeNodeMod {
     
     var farNode: typings.three.examplesJsmNodesCoreNodeMod.default = js.native
     
-    var isFogRangeNode: `true` = js.native
+    var isFogRangeNode: true = js.native
     
     var nearNode: typings.three.examplesJsmNodesCoreNodeMod.default = js.native
   }

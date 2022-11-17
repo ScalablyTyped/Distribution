@@ -6,7 +6,6 @@ import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferConstructor
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.cryptoMod.BinaryLike
-import typings.node.workerThreadsMod._TransferListItem
 import typings.std.SharedArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,8 +20,7 @@ object nodeColonbufferMod {
   @JSImport("node:buffer", "Blob")
   @js.native
   open class Blob protected ()
-    extends typings.node.bufferMod.Blob
-       with _TransferListItem {
+    extends typings.node.bufferMod.Blob {
     /**
       * Creates a new `Blob` object containing a concatenation of the given sources.
       *

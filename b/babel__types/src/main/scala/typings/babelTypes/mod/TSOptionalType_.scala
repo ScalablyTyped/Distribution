@@ -1,21 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSOptionalType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSOptionalType_
+trait TSOptionalType_
   extends StObject
-     with BaseNode
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   var typeAnnotation: TSType
   
   @JSName("type")
-  var type_TSOptionalType_ : TSOptionalType
+  var type_TSOptionalType_ : "TSOptionalType"
 }
 object TSOptionalType_ {
   
@@ -27,7 +23,7 @@ object TSOptionalType_ {
   
   extension [Self <: TSOptionalType_](x: Self) {
     
-    inline def setType(value: TSOptionalType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSOptionalType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }

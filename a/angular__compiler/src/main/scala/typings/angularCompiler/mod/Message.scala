@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Message
-  extends StObject
-     with I18nMeta2 {
+trait Message extends StObject {
   
   var customId: String
   

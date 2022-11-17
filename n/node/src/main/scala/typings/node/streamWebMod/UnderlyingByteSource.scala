@@ -1,6 +1,5 @@
 package typings.node.streamWebMod
 
-import typings.node.nodeStrings.bytes
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,7 @@ trait UnderlyingByteSource extends StObject {
   
   var start: js.UndefOr[ReadableByteStreamControllerCallback] = js.undefined
   
-  var `type`: bytes
+  var `type`: "bytes"
 }
 object UnderlyingByteSource {
   
@@ -44,6 +43,6 @@ object UnderlyingByteSource {
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    inline def setType(value: bytes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "bytes"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

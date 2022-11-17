@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.oneOf
 import typings.ajv.anon.PassingSchemas
 import typings.ajv.distTypesMod.AnySchema
 import typings.ajv.distTypesMod.CodeKeywordDefinition
@@ -16,7 +15,7 @@ object distVocabulariesApplicatorOneOfMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type OneOfError = ErrorObject[oneOf, PassingSchemas, js.Array[AnySchema]]
+  type OneOfError = ErrorObject["oneOf", PassingSchemas, js.Array[AnySchema]]
   
   type _To = CodeKeywordDefinition
   

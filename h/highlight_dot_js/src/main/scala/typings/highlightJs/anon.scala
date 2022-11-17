@@ -1,7 +1,5 @@
 package typings.highlightJs
 
-import typings.highlightJs.highlightJsStrings.second_best
-import typings.highlightJs.highlightJsStrings.self
 import typings.highlightJs.mod.CallbackResponse
 import typings.highlightJs.mod.CompiledMode
 import typings.highlightJs.mod.Emitter
@@ -202,7 +200,7 @@ object anon {
     
     var relevance: Double
     
-    var secondBest: js.UndefOr[Omit[HighlightResult, second_best]] = js.undefined
+    var secondBest: js.UndefOr[Omit[HighlightResult, "second_best"]] = js.undefined
     
     var value: String
   }
@@ -231,7 +229,7 @@ object anon {
       
       inline def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
       
-      inline def setSecondBest(value: Omit[HighlightResult, second_best]): Self = StObject.set(x, "secondBest", value.asInstanceOf[js.Any])
+      inline def setSecondBest(value: Omit[HighlightResult, "second_best"]): Self = StObject.set(x, "secondBest", value.asInstanceOf[js.Any])
       
       inline def setSecondBestUndefined: Self = StObject.set(x, "secondBest", js.undefined)
       
@@ -330,7 +328,7 @@ object anon {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var contains: js.UndefOr[js.Array[self | Mode]] = js.undefined
+    var contains: js.UndefOr[js.Array["self" | Mode]] = js.undefined
     
     var end: js.UndefOr[js.RegExp | String | (js.Array[js.RegExp | String])] = js.undefined
     
@@ -419,11 +417,11 @@ object anon {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setContains(value: js.Array[self | Mode]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+      inline def setContains(value: js.Array["self" | Mode]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       
       inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
       
-      inline def setContainsVarargs(value: (self | Mode)*): Self = StObject.set(x, "contains", js.Array(value*))
+      inline def setContainsVarargs(value: ("self" | Mode)*): Self = StObject.set(x, "contains", js.Array(value*))
       
       inline def setEnd(value: js.RegExp | String | (js.Array[js.RegExp | String])): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

@@ -11,6 +11,8 @@ trait Segment extends StObject {
   var loop: Boolean
   
   var start: Double
+  
+  var style: js.UndefOr[Any] = js.undefined
 }
 object Segment {
   
@@ -26,5 +28,9 @@ object Segment {
     inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

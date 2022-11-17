@@ -1,10 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdStrings.icon_
-import typings.antd.antdStrings.textSlashhtml
-import typings.antd.antdStrings.textSlashplain
-import typings.antd.antdStrings.text_
 import typings.antd.libTooltipMod.TooltipProps
 import typings.antd.libTypographyTypographyMod.TypographyProps
 import typings.rcTextarea.esResizableTextAreaMod.AutoSizeType
@@ -26,29 +22,23 @@ object libTypographyBaseMod extends Shortcut {
   @js.native
   val default: ForwardRefExoticComponent[
     (BlockProps[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String
     ]) & RefAttributes[HTMLElement]
   ] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.secondary
-    - typings.antd.antdStrings.success
-    - typings.antd.antdStrings.warning
-    - typings.antd.antdStrings.danger
-  */
-  trait BaseType extends StObject
   object BaseType {
     
-    inline def danger: typings.antd.antdStrings.danger = "danger".asInstanceOf[typings.antd.antdStrings.danger]
+    inline def danger: "danger" = "danger".asInstanceOf["danger"]
     
-    inline def secondary: typings.antd.antdStrings.secondary = "secondary".asInstanceOf[typings.antd.antdStrings.secondary]
+    inline def secondary: "secondary" = "secondary".asInstanceOf["secondary"]
     
-    inline def success: typings.antd.antdStrings.success = "success".asInstanceOf[typings.antd.antdStrings.success]
+    inline def success: "success" = "success".asInstanceOf["success"]
     
-    inline def warning: typings.antd.antdStrings.warning = "warning".asInstanceOf[typings.antd.antdStrings.warning]
+    inline def warning: "warning" = "warning".asInstanceOf["warning"]
   }
+  type BaseType = "secondary" | "success" | "warning" | "danger"
   
-  trait BlockProps[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */]
+  trait BlockProps[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String */]
     extends StObject
        with TypographyProps[C] {
     
@@ -78,12 +68,12 @@ object libTypographyBaseMod extends Shortcut {
   }
   object BlockProps {
     
-    inline def apply[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](): BlockProps[C] = {
+    inline def apply[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String */](): BlockProps[C] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BlockProps[C]]
     }
     
-    extension [Self <: BlockProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](x: Self & BlockProps[C]) {
+    extension [Self <: BlockProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String */](x: Self & BlockProps[C]) {
       
       inline def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -137,7 +127,7 @@ object libTypographyBaseMod extends Shortcut {
   
   trait CopyConfig extends StObject {
     
-    var format: js.UndefOr[textSlashplain | textSlashhtml] = js.undefined
+    var format: js.UndefOr["text/plain" | "text/html"] = js.undefined
     
     var icon: js.UndefOr[ReactNode] = js.undefined
     
@@ -158,7 +148,7 @@ object libTypographyBaseMod extends Shortcut {
     
     extension [Self <: CopyConfig](x: Self) {
       
-      inline def setFormat(value: textSlashplain | textSlashhtml): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: "text/plain" | "text/html"): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
@@ -204,7 +194,7 @@ object libTypographyBaseMod extends Shortcut {
     
     var tooltip: js.UndefOr[Boolean | ReactNode] = js.undefined
     
-    var triggerType: js.UndefOr[js.Array[icon_ | text_]] = js.undefined
+    var triggerType: js.UndefOr[js.Array["icon" | "text"]] = js.undefined
   }
   object EditConfig {
     
@@ -259,11 +249,11 @@ object libTypographyBaseMod extends Shortcut {
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      inline def setTriggerType(value: js.Array[icon_ | text_]): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+      inline def setTriggerType(value: js.Array["icon" | "text"]): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
       
       inline def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
       
-      inline def setTriggerTypeVarargs(value: (icon_ | text_)*): Self = StObject.set(x, "triggerType", js.Array(value*))
+      inline def setTriggerTypeVarargs(value: ("icon" | "text")*): Self = StObject.set(x, "triggerType", js.Array(value*))
     }
   }
   
@@ -324,14 +314,14 @@ object libTypographyBaseMod extends Shortcut {
   
   type _To = ForwardRefExoticComponent[
     (BlockProps[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String
     ]) & RefAttributes[HTMLElement]
   ]
   
   /* This means you don't have to write `default`, but can instead just say `libTypographyBaseMod.foo` */
   override def _to: ForwardRefExoticComponent[
     (BlockProps[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String
     ]) & RefAttributes[HTMLElement]
   ] = default
 }

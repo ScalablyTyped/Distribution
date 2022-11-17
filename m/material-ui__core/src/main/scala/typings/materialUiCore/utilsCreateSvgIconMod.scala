@@ -1,6 +1,5 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.materialUiCoreStrings.svg
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.svgIconSvgIconMod.SvgIconTypeMap
 import typings.react.mod.ReactNode
@@ -14,5 +13,5 @@ object utilsCreateSvgIconMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(path: ReactNode, displayName: String): OverridableComponent[SvgIconTypeMap[js.Object, svg]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[OverridableComponent[SvgIconTypeMap[js.Object, svg]]]
+  inline def default(path: ReactNode, displayName: String): OverridableComponent[SvgIconTypeMap[js.Object, "svg"]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[OverridableComponent[SvgIconTypeMap[js.Object, "svg"]]]
 }

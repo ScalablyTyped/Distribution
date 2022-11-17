@@ -1,53 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.`birthdate-day`
-import typings.reactNative.reactNativeStrings.`birthdate-full`
-import typings.reactNative.reactNativeStrings.`birthdate-month`
-import typings.reactNative.reactNativeStrings.`birthdate-year`
-import typings.reactNative.reactNativeStrings.`cc-csc`
-import typings.reactNative.reactNativeStrings.`cc-exp-day`
-import typings.reactNative.reactNativeStrings.`cc-exp-month`
-import typings.reactNative.reactNativeStrings.`cc-exp-year`
-import typings.reactNative.reactNativeStrings.`cc-exp`
-import typings.reactNative.reactNativeStrings.`cc-number`
-import typings.reactNative.reactNativeStrings.`name-family`
-import typings.reactNative.reactNativeStrings.`name-given`
-import typings.reactNative.reactNativeStrings.`name-middle-initial`
-import typings.reactNative.reactNativeStrings.`name-middle`
-import typings.reactNative.reactNativeStrings.`name-prefix`
-import typings.reactNative.reactNativeStrings.`name-suffix`
-import typings.reactNative.reactNativeStrings.`password-new`
-import typings.reactNative.reactNativeStrings.`postal-address-country`
-import typings.reactNative.reactNativeStrings.`postal-address-extended-postal-code`
-import typings.reactNative.reactNativeStrings.`postal-address-extended`
-import typings.reactNative.reactNativeStrings.`postal-address-locality`
-import typings.reactNative.reactNativeStrings.`postal-address-region`
-import typings.reactNative.reactNativeStrings.`postal-address`
-import typings.reactNative.reactNativeStrings.`postal-code`
-import typings.reactNative.reactNativeStrings.`sms-otp`
-import typings.reactNative.reactNativeStrings.`street-address`
-import typings.reactNative.reactNativeStrings.`tel-country-code`
-import typings.reactNative.reactNativeStrings.`tel-device`
-import typings.reactNative.reactNativeStrings.`tel-national`
-import typings.reactNative.reactNativeStrings.`username-new`
-import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.balanced
-import typings.reactNative.reactNativeStrings.bottom
-import typings.reactNative.reactNativeStrings.center
-import typings.reactNative.reactNativeStrings.email
-import typings.reactNative.reactNativeStrings.gender
-import typings.reactNative.reactNativeStrings.highQuality
-import typings.reactNative.reactNativeStrings.name
-import typings.reactNative.reactNativeStrings.no
-import typings.reactNative.reactNativeStrings.noExcludeDescendants
-import typings.reactNative.reactNativeStrings.off
-import typings.reactNative.reactNativeStrings.password
-import typings.reactNative.reactNativeStrings.simple
-import typings.reactNative.reactNativeStrings.tel
-import typings.reactNative.reactNativeStrings.top
-import typings.reactNative.reactNativeStrings.username
-import typings.reactNative.reactNativeStrings.yes
-import typings.reactNative.reactNativeStrings.yesExcludeDescendants
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,7 +53,7 @@ trait TextInputAndroidProps extends StObject {
     * - `off`
     */
   var autoComplete: js.UndefOr[
-    `birthdate-day` | `birthdate-full` | `birthdate-month` | `birthdate-year` | `cc-csc` | `cc-exp` | `cc-exp-day` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | gender | name | `name-family` | `name-given` | `name-middle` | `name-middle-initial` | `name-prefix` | `name-suffix` | password | `password-new` | `postal-address` | `postal-address-country` | `postal-address-extended` | `postal-address-extended-postal-code` | `postal-address-locality` | `postal-address-region` | `postal-code` | `street-address` | `sms-otp` | tel | `tel-country-code` | `tel-national` | `tel-device` | username | `username-new` | off
+    "birthdate-day" | "birthdate-full" | "birthdate-month" | "birthdate-year" | "cc-csc" | "cc-exp" | "cc-exp-day" | "cc-exp-month" | "cc-exp-year" | "cc-number" | "email" | "gender" | "name" | "name-family" | "name-given" | "name-middle" | "name-middle-initial" | "name-prefix" | "name-suffix" | "password" | "password-new" | "postal-address" | "postal-address-country" | "postal-address-extended" | "postal-address-extended-postal-code" | "postal-address-locality" | "postal-address-region" | "postal-code" | "street-address" | "sms-otp" | "tel" | "tel-country-code" | "tel-national" | "tel-device" | "username" | "username-new" | "off"
   ] = js.undefined
   
   /**
@@ -135,7 +87,7 @@ trait TextInputAndroidProps extends StObject {
     * - `yes` - is important for autofill
     * - `yesExcludeDescendants` - this view is important for autofill but its children aren't
     */
-  var importantForAutofill: js.UndefOr[auto | no | noExcludeDescendants | yes | yesExcludeDescendants] = js.undefined
+  var importantForAutofill: js.UndefOr["auto" | "no" | "noExcludeDescendants" | "yes" | "yesExcludeDescendants"] = js.undefined
   
   /**
     * If defined, the provided image resource will be rendered on the left.
@@ -167,13 +119,13 @@ trait TextInputAndroidProps extends StObject {
   /**
     * Vertically align text when `multiline` is set to true
     */
-  var textAlignVertical: js.UndefOr[auto | top | bottom | center] = js.undefined
+  var textAlignVertical: js.UndefOr["auto" | "top" | "bottom" | "center"] = js.undefined
   
   /**
     * Set text break strategy on Android API Level 23+, possible values are simple, highQuality, balanced
     * The default value is simple.
     */
-  var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
+  var textBreakStrategy: js.UndefOr["simple" | "highQuality" | "balanced"] = js.undefined
   
   /**
     * The color of the textInput underline.
@@ -190,7 +142,7 @@ object TextInputAndroidProps {
   extension [Self <: TextInputAndroidProps](x: Self) {
     
     inline def setAutoComplete(
-      value: `birthdate-day` | `birthdate-full` | `birthdate-month` | `birthdate-year` | `cc-csc` | `cc-exp` | `cc-exp-day` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | gender | name | `name-family` | `name-given` | `name-middle` | `name-middle-initial` | `name-prefix` | `name-suffix` | password | `password-new` | `postal-address` | `postal-address-country` | `postal-address-extended` | `postal-address-extended-postal-code` | `postal-address-locality` | `postal-address-region` | `postal-code` | `street-address` | `sms-otp` | tel | `tel-country-code` | `tel-national` | `tel-device` | username | `username-new` | off
+      value: "birthdate-day" | "birthdate-full" | "birthdate-month" | "birthdate-year" | "cc-csc" | "cc-exp" | "cc-exp-day" | "cc-exp-month" | "cc-exp-year" | "cc-number" | "email" | "gender" | "name" | "name-family" | "name-given" | "name-middle" | "name-middle-initial" | "name-prefix" | "name-suffix" | "password" | "password-new" | "postal-address" | "postal-address-country" | "postal-address-extended" | "postal-address-extended-postal-code" | "postal-address-locality" | "postal-address-region" | "postal-code" | "street-address" | "sms-otp" | "tel" | "tel-country-code" | "tel-national" | "tel-device" | "username" | "username-new" | "off"
     ): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
     inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
@@ -205,7 +157,7 @@ object TextInputAndroidProps {
     
     inline def setDisableFullscreenUIUndefined: Self = StObject.set(x, "disableFullscreenUI", js.undefined)
     
-    inline def setImportantForAutofill(value: auto | no | noExcludeDescendants | yes | yesExcludeDescendants): Self = StObject.set(x, "importantForAutofill", value.asInstanceOf[js.Any])
+    inline def setImportantForAutofill(value: "auto" | "no" | "noExcludeDescendants" | "yes" | "yesExcludeDescendants"): Self = StObject.set(x, "importantForAutofill", value.asInstanceOf[js.Any])
     
     inline def setImportantForAutofillUndefined: Self = StObject.set(x, "importantForAutofill", js.undefined)
     
@@ -229,11 +181,11 @@ object TextInputAndroidProps {
     
     inline def setShowSoftInputOnFocusUndefined: Self = StObject.set(x, "showSoftInputOnFocus", js.undefined)
     
-    inline def setTextAlignVertical(value: auto | top | bottom | center): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
+    inline def setTextAlignVertical(value: "auto" | "top" | "bottom" | "center"): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
     
     inline def setTextAlignVerticalUndefined: Self = StObject.set(x, "textAlignVertical", js.undefined)
     
-    inline def setTextBreakStrategy(value: simple | highQuality | balanced): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
+    inline def setTextBreakStrategy(value: "simple" | "highQuality" | "balanced"): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
     
     inline def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
     

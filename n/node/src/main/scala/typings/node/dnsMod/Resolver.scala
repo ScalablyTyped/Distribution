@@ -3,17 +3,6 @@ package typings.node.dnsMod
 import typings.node.NodeJS.ErrnoException
 import typings.node.anon.FnCallHostnameOptionsCallback
 import typings.node.anon.FnCallHostnameRrtypeCallback
-import typings.node.nodeStrings.A
-import typings.node.nodeStrings.AAAA
-import typings.node.nodeStrings.ANY
-import typings.node.nodeStrings.CNAME
-import typings.node.nodeStrings.MX
-import typings.node.nodeStrings.NAPTR
-import typings.node.nodeStrings.NS
-import typings.node.nodeStrings.PTR
-import typings.node.nodeStrings.SOA
-import typings.node.nodeStrings.SRV
-import typings.node.nodeStrings.TXT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,6 +26,83 @@ open class Resolver () extends StObject {
   def resolve(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
+  ): Unit = js.native
+  @JSName("resolve")
+  @scala.annotation.targetName("resolve_CNAME")
+  def resolve(
+    hostname: String,
+    rrtype: "CNAME",
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
+  ): Unit = js.native
+  @JSName("resolve")
+  @scala.annotation.targetName("resolve_ANY")
+  def resolve(
+    hostname: String,
+    rrtype: "ANY",
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[AnyRecord], Unit]
+  ): Unit = js.native
+  @JSName("resolve")
+  @scala.annotation.targetName("resolve_PTR")
+  def resolve(
+    hostname: String,
+    rrtype: "PTR",
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
+  ): Unit = js.native
+  @JSName("resolve")
+  @scala.annotation.targetName("resolve_A")
+  def resolve(
+    hostname: String,
+    rrtype: "A",
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
+  ): Unit = js.native
+  @JSName("resolve")
+  @scala.annotation.targetName("resolve_NAPTR")
+  def resolve(
+    hostname: String,
+    rrtype: "NAPTR",
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[NaptrRecord], Unit]
+  ): Unit = js.native
+  @JSName("resolve")
+  @scala.annotation.targetName("resolve_SOA")
+  def resolve(
+    hostname: String,
+    rrtype: "SOA",
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ SoaRecord, Unit]
+  ): Unit = js.native
+  @JSName("resolve")
+  @scala.annotation.targetName("resolve_AAAA")
+  def resolve(
+    hostname: String,
+    rrtype: "AAAA",
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
+  ): Unit = js.native
+  @JSName("resolve")
+  @scala.annotation.targetName("resolve_SRV")
+  def resolve(
+    hostname: String,
+    rrtype: "SRV",
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[SrvRecord], Unit]
+  ): Unit = js.native
+  @JSName("resolve")
+  @scala.annotation.targetName("resolve_TXT")
+  def resolve(
+    hostname: String,
+    rrtype: "TXT",
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[js.Array[String]], Unit]
+  ): Unit = js.native
+  @JSName("resolve")
+  @scala.annotation.targetName("resolve_NS")
+  def resolve(
+    hostname: String,
+    rrtype: "NS",
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
+  ): Unit = js.native
+  @JSName("resolve")
+  @scala.annotation.targetName("resolve_MX")
+  def resolve(
+    hostname: String,
+    rrtype: "MX",
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[MxRecord], Unit]
   ): Unit = js.native
   def resolve(
     hostname: String,
@@ -190,73 +256,7 @@ open class Resolver () extends StObject {
   ] = js.native
   
   @JSName("resolve")
-  def resolve_A(
-    hostname: String,
-    rrtype: A,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSName("resolve")
-  def resolve_AAAA(
-    hostname: String,
-    rrtype: AAAA,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSName("resolve")
-  def resolve_ANY(
-    hostname: String,
-    rrtype: ANY,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[AnyRecord], Unit]
-  ): Unit = js.native
-  @JSName("resolve")
-  def resolve_CNAME(
-    hostname: String,
-    rrtype: CNAME,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSName("resolve")
-  def resolve_MX(
-    hostname: String,
-    rrtype: MX,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[MxRecord], Unit]
-  ): Unit = js.native
-  @JSName("resolve")
-  def resolve_NAPTR(
-    hostname: String,
-    rrtype: NAPTR,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[NaptrRecord], Unit]
-  ): Unit = js.native
-  @JSName("resolve")
-  def resolve_NS(
-    hostname: String,
-    rrtype: NS,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSName("resolve")
   var resolve_Original: FnCallHostnameRrtypeCallback = js.native
-  @JSName("resolve")
-  def resolve_PTR(
-    hostname: String,
-    rrtype: PTR,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSName("resolve")
-  def resolve_SOA(
-    hostname: String,
-    rrtype: SOA,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ SoaRecord, Unit]
-  ): Unit = js.native
-  @JSName("resolve")
-  def resolve_SRV(
-    hostname: String,
-    rrtype: SRV,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[SrvRecord], Unit]
-  ): Unit = js.native
-  @JSName("resolve")
-  def resolve_TXT(
-    hostname: String,
-    rrtype: TXT,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[js.Array[String]], Unit]
-  ): Unit = js.native
   
   def reverse(
     ip: String,

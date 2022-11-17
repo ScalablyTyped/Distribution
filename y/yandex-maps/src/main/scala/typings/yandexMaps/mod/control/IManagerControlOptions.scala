@@ -1,16 +1,13 @@
 package typings.yandexMaps.mod.control
 
 import typings.yandexMaps.anon.Bottom
-import typings.yandexMaps.yandexMapsStrings.left
-import typings.yandexMaps.yandexMapsStrings.none
-import typings.yandexMaps.yandexMapsStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IManagerControlOptions extends StObject {
   
-  var float: js.UndefOr[none | left | right] = js.undefined
+  var float: js.UndefOr["none" | "left" | "right"] = js.undefined
   
   var floatIndex: js.UndefOr[Double] = js.undefined
   
@@ -25,7 +22,7 @@ object IManagerControlOptions {
   
   extension [Self <: IManagerControlOptions](x: Self) {
     
-    inline def setFloat(value: none | left | right): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+    inline def setFloat(value: "none" | "left" | "right"): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
     
     inline def setFloatIndex(value: Double): Self = StObject.set(x, "floatIndex", value.asInstanceOf[js.Any])
     

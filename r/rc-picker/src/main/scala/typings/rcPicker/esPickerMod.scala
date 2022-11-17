@@ -12,52 +12,6 @@ import typings.rcPicker.esInterfaceMod.PickerMode
 import typings.rcPicker.esPanelsDatePanelDateBodyMod.DateRender
 import typings.rcPicker.esPanelsMonthPanelMonthBodyMod.MonthCellRender
 import typings.rcPicker.esPanelsTimePanelMod.SharedTimeProps
-import typings.rcPicker.rcPickerStrings.`additions removals`
-import typings.rcPicker.rcPickerStrings.`additions text`
-import typings.rcPicker.rcPickerStrings.`inline`
-import typings.rcPicker.rcPickerStrings.`removals additions`
-import typings.rcPicker.rcPickerStrings.`removals text`
-import typings.rcPicker.rcPickerStrings.`text additions`
-import typings.rcPicker.rcPickerStrings.`text removals`
-import typings.rcPicker.rcPickerStrings.additions
-import typings.rcPicker.rcPickerStrings.all
-import typings.rcPicker.rcPickerStrings.ascending
-import typings.rcPicker.rcPickerStrings.assertive
-import typings.rcPicker.rcPickerStrings.both
-import typings.rcPicker.rcPickerStrings.copy
-import typings.rcPicker.rcPickerStrings.date
-import typings.rcPicker.rcPickerStrings.descending
-import typings.rcPicker.rcPickerStrings.dialog
-import typings.rcPicker.rcPickerStrings.execute
-import typings.rcPicker.rcPickerStrings.grammar
-import typings.rcPicker.rcPickerStrings.grid
-import typings.rcPicker.rcPickerStrings.hideHeader
-import typings.rcPicker.rcPickerStrings.horizontal
-import typings.rcPicker.rcPickerStrings.link
-import typings.rcPicker.rcPickerStrings.list
-import typings.rcPicker.rcPickerStrings.listbox
-import typings.rcPicker.rcPickerStrings.location
-import typings.rcPicker.rcPickerStrings.ltr
-import typings.rcPicker.rcPickerStrings.menu
-import typings.rcPicker.rcPickerStrings.mixed
-import typings.rcPicker.rcPickerStrings.move
-import typings.rcPicker.rcPickerStrings.none
-import typings.rcPicker.rcPickerStrings.off
-import typings.rcPicker.rcPickerStrings.onChange
-import typings.rcPicker.rcPickerStrings.onPickerValueChange
-import typings.rcPicker.rcPickerStrings.other
-import typings.rcPicker.rcPickerStrings.page
-import typings.rcPicker.rcPickerStrings.pickerValue
-import typings.rcPicker.rcPickerStrings.polite
-import typings.rcPicker.rcPickerStrings.popup
-import typings.rcPicker.rcPickerStrings.removals
-import typings.rcPicker.rcPickerStrings.rtl
-import typings.rcPicker.rcPickerStrings.spelling
-import typings.rcPicker.rcPickerStrings.step
-import typings.rcPicker.rcPickerStrings.text
-import typings.rcPicker.rcPickerStrings.time
-import typings.rcPicker.rcPickerStrings.tree
-import typings.rcPicker.rcPickerStrings.vertical
 import typings.rcTrigger.esInterfaceMod.AlignType
 import typings.react.mod.AriaAttributes
 import typings.react.mod.Booleanish
@@ -89,7 +43,7 @@ object esPickerMod {
   @js.native
   open class default[DateType] () extends Picker[DateType]
   
-  type OmitPanelProps[Props] = Omit[Props, onChange | hideHeader | pickerValue | onPickerValueChange]
+  type OmitPanelProps[Props] = Omit[Props, "onChange" | "hideHeader" | "pickerValue" | "onPickerValueChange"]
   
   @js.native
   trait Picker[DateType]
@@ -103,9 +57,7 @@ object esPickerMod {
   }
   
   /* Inlined {} & rc-picker.rc-picker/es/Picker.PickerSharedProps<DateType> & rc-picker.rc-picker/es/Picker.OmitPanelProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelBaseProps<DateType>> */
-  trait PickerBaseProps[DateType]
-    extends StObject
-       with PickerProps[DateType] {
+  trait PickerBaseProps[DateType] extends StObject {
     
     var allowClear: js.UndefOr[Boolean] = js.undefined
     
@@ -119,7 +71,7 @@ object esPickerMod {
       * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
       * presented if they are made.
       */
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
@@ -128,7 +80,7 @@ object esPickerMod {
       * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
       * @see aria-pressed @see aria-selected.
       */
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     /**
       * Defines the total number of columns in a table, grid, or treegrid.
@@ -155,7 +107,7 @@ object esPickerMod {
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
     /** Indicates the element that represents the current item within a container or set of related elements. */
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     /**
       * Identifies the element (or elements) that describes the object.
@@ -179,7 +131,7 @@ object esPickerMod {
       * Indicates what functions can be performed when a dragged object is released on the drop target.
       * @deprecated in ARIA 1.1
       */
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     /**
       * Identifies the element that provides an error message for the object.
@@ -203,7 +155,7 @@ object esPickerMod {
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     /**
       * Indicates whether the element is exposed to an accessibility API.
@@ -215,7 +167,7 @@ object esPickerMod {
       * Indicates the entered value does not conform to the format expected by the application.
       * @see aria-errormessage.
       */
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     /** Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element. */
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
@@ -236,7 +188,7 @@ object esPickerMod {
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
     /** Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region. */
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     /** Indicates whether an element is modal when displayed. */
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
@@ -248,7 +200,7 @@ object esPickerMod {
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     /**
       * Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship
@@ -273,7 +225,7 @@ object esPickerMod {
       * Indicates the current "pressed" state of toggle buttons.
       * @see aria-checked @see aria-selected.
       */
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     /**
       * Indicates that the element is not editable, but is otherwise operable.
@@ -286,7 +238,7 @@ object esPickerMod {
       * @see aria-atomic.
       */
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     /** Indicates that user input is required on the element before a form may be submitted. */
@@ -326,7 +278,7 @@ object esPickerMod {
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
     /** Indicates if items in a table or grid are sorted in ascending or descending order. */
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     /** Defines the maximum allowed value for a range widget. */
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
@@ -361,7 +313,7 @@ object esPickerMod {
     
     var defaultValue: js.UndefOr[DateType] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -432,7 +384,7 @@ object esPickerMod {
     
     var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.undefined
     
-    var picker: Exclude[PickerMode, date | time]
+    var picker: Exclude[PickerMode, "date" | "time"]
     
     /** @private Internal usage, do not use in production mode!!! */
     var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.undefined
@@ -465,7 +417,11 @@ object esPickerMod {
   }
   object PickerBaseProps {
     
-    inline def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale, picker: Exclude[PickerMode, date | time]): PickerBaseProps[DateType] = {
+    inline def apply[DateType](
+      generateConfig: GenerateConfig[DateType],
+      locale: Locale,
+      picker: Exclude[PickerMode, "date" | "time"]
+    ): PickerBaseProps[DateType] = {
       val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickerBaseProps[DateType]]
     }
@@ -484,7 +440,7 @@ object esPickerMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -492,7 +448,7 @@ object esPickerMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -512,7 +468,7 @@ object esPickerMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -528,7 +484,7 @@ object esPickerMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -548,7 +504,7 @@ object esPickerMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -556,7 +512,7 @@ object esPickerMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -576,7 +532,7 @@ object esPickerMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -592,7 +548,7 @@ object esPickerMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -608,7 +564,7 @@ object esPickerMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -617,7 +573,7 @@ object esPickerMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -650,7 +606,7 @@ object esPickerMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -706,7 +662,7 @@ object esPickerMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -836,7 +792,7 @@ object esPickerMod {
       
       inline def setPanelRenderUndefined: Self = StObject.set(x, "panelRender", js.undefined)
       
-      inline def setPicker(value: Exclude[PickerMode, date | time]): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: Exclude[PickerMode, "date" | "time"]): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
       inline def setPickerRef(value: MutableRefObject[PickerRefConfig]): Self = StObject.set(x, "pickerRef", value.asInstanceOf[js.Any])
       
@@ -899,9 +855,7 @@ object esPickerMod {
   }
   
   /* Inlined {} & rc-picker.rc-picker/es/Picker.PickerSharedProps<DateType> & rc-picker.rc-picker/es/Picker.OmitPanelProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelDateProps<DateType>> */
-  trait PickerDateProps[DateType]
-    extends StObject
-       with PickerProps[DateType] {
+  trait PickerDateProps[DateType] extends StObject {
     
     var allowClear: js.UndefOr[Boolean] = js.undefined
     
@@ -915,7 +869,7 @@ object esPickerMod {
       * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
       * presented if they are made.
       */
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
@@ -924,7 +878,7 @@ object esPickerMod {
       * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
       * @see aria-pressed @see aria-selected.
       */
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     /**
       * Defines the total number of columns in a table, grid, or treegrid.
@@ -951,7 +905,7 @@ object esPickerMod {
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
     /** Indicates the element that represents the current item within a container or set of related elements. */
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     /**
       * Identifies the element (or elements) that describes the object.
@@ -975,7 +929,7 @@ object esPickerMod {
       * Indicates what functions can be performed when a dragged object is released on the drop target.
       * @deprecated in ARIA 1.1
       */
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     /**
       * Identifies the element that provides an error message for the object.
@@ -999,7 +953,7 @@ object esPickerMod {
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     /**
       * Indicates whether the element is exposed to an accessibility API.
@@ -1011,7 +965,7 @@ object esPickerMod {
       * Indicates the entered value does not conform to the format expected by the application.
       * @see aria-errormessage.
       */
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     /** Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element. */
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
@@ -1032,7 +986,7 @@ object esPickerMod {
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
     /** Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region. */
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     /** Indicates whether an element is modal when displayed. */
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
@@ -1044,7 +998,7 @@ object esPickerMod {
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     /**
       * Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship
@@ -1069,7 +1023,7 @@ object esPickerMod {
       * Indicates the current "pressed" state of toggle buttons.
       * @see aria-checked @see aria-selected.
       */
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     /**
       * Indicates that the element is not editable, but is otherwise operable.
@@ -1082,7 +1036,7 @@ object esPickerMod {
       * @see aria-atomic.
       */
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     /** Indicates that user input is required on the element before a form may be submitted. */
@@ -1122,7 +1076,7 @@ object esPickerMod {
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
     /** Indicates if items in a table or grid are sorted in ascending or descending order. */
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     /** Defines the maximum allowed value for a range widget. */
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
@@ -1157,7 +1111,7 @@ object esPickerMod {
     
     var defaultValue: js.UndefOr[DateType] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -1230,7 +1184,7 @@ object esPickerMod {
     
     var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.undefined
     
-    var picker: js.UndefOr[date] = js.undefined
+    var picker: js.UndefOr["date"] = js.undefined
     
     /** @private Internal usage, do not use in production mode!!! */
     var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.undefined
@@ -1288,7 +1242,7 @@ object esPickerMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -1296,7 +1250,7 @@ object esPickerMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -1316,7 +1270,7 @@ object esPickerMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -1332,7 +1286,7 @@ object esPickerMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -1352,7 +1306,7 @@ object esPickerMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -1360,7 +1314,7 @@ object esPickerMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -1380,7 +1334,7 @@ object esPickerMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -1396,7 +1350,7 @@ object esPickerMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -1412,7 +1366,7 @@ object esPickerMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -1421,7 +1375,7 @@ object esPickerMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -1454,7 +1408,7 @@ object esPickerMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -1510,7 +1464,7 @@ object esPickerMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -1644,7 +1598,7 @@ object esPickerMod {
       
       inline def setPanelRenderUndefined: Self = StObject.set(x, "panelRender", js.undefined)
       
-      inline def setPicker(value: date): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: "date"): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
       inline def setPickerRef(value: MutableRefObject[PickerRefConfig]): Self = StObject.set(x, "pickerRef", value.asInstanceOf[js.Any])
       
@@ -1720,29 +1674,7 @@ object esPickerMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcPicker.esPickerMod.PickerBaseProps[DateType]
-    - typings.rcPicker.esPickerMod.PickerDateProps[DateType]
-    - typings.rcPicker.esPickerMod.PickerTimeProps[DateType]
-  */
-  trait PickerProps[DateType] extends StObject
-  object PickerProps {
-    
-    inline def PickerBaseProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale, picker: Exclude[PickerMode, date | time]): typings.rcPicker.esPickerMod.PickerBaseProps[DateType] = {
-      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.rcPicker.esPickerMod.PickerBaseProps[DateType]]
-    }
-    
-    inline def PickerDateProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): typings.rcPicker.esPickerMod.PickerDateProps[DateType] = {
-      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.rcPicker.esPickerMod.PickerDateProps[DateType]]
-    }
-    
-    inline def PickerTimeProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): typings.rcPicker.esPickerMod.PickerTimeProps[DateType] = {
-      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = "time")
-      __obj.asInstanceOf[typings.rcPicker.esPickerMod.PickerTimeProps[DateType]]
-    }
-  }
+  type PickerProps[DateType] = PickerBaseProps[DateType] | PickerDateProps[DateType] | PickerTimeProps[DateType]
   
   trait PickerRefConfig extends StObject {
     
@@ -1779,7 +1711,7 @@ object esPickerMod {
     
     var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -1884,7 +1816,7 @@ object esPickerMod {
       
       inline def setDefaultOpenUndefined: Self = StObject.set(x, "defaultOpen", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -2029,9 +1961,7 @@ object esPickerMod {
   }
   
   /* Inlined {  picker :'time',   defaultOpenValue :DateType | undefined} & rc-picker.rc-picker/es/Picker.PickerSharedProps<DateType> & std.Omit<rc-picker.rc-picker/es/Picker.OmitPanelProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelTimeProps<DateType>>, 'format'> */
-  trait PickerTimeProps[DateType]
-    extends StObject
-       with PickerProps[DateType] {
+  trait PickerTimeProps[DateType] extends StObject {
     
     var allowClear: js.UndefOr[Boolean] = js.undefined
     
@@ -2045,7 +1975,7 @@ object esPickerMod {
       * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
       * presented if they are made.
       */
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
@@ -2054,7 +1984,7 @@ object esPickerMod {
       * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
       * @see aria-pressed @see aria-selected.
       */
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     /**
       * Defines the total number of columns in a table, grid, or treegrid.
@@ -2081,7 +2011,7 @@ object esPickerMod {
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
     /** Indicates the element that represents the current item within a container or set of related elements. */
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     /**
       * Identifies the element (or elements) that describes the object.
@@ -2105,7 +2035,7 @@ object esPickerMod {
       * Indicates what functions can be performed when a dragged object is released on the drop target.
       * @deprecated in ARIA 1.1
       */
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     /**
       * Identifies the element that provides an error message for the object.
@@ -2129,7 +2059,7 @@ object esPickerMod {
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     /**
       * Indicates whether the element is exposed to an accessibility API.
@@ -2141,7 +2071,7 @@ object esPickerMod {
       * Indicates the entered value does not conform to the format expected by the application.
       * @see aria-errormessage.
       */
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     /** Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element. */
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
@@ -2162,7 +2092,7 @@ object esPickerMod {
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
     /** Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region. */
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     /** Indicates whether an element is modal when displayed. */
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
@@ -2174,7 +2104,7 @@ object esPickerMod {
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     /**
       * Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship
@@ -2199,7 +2129,7 @@ object esPickerMod {
       * Indicates the current "pressed" state of toggle buttons.
       * @see aria-checked @see aria-selected.
       */
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     /**
       * Indicates that the element is not editable, but is otherwise operable.
@@ -2212,7 +2142,7 @@ object esPickerMod {
       * @see aria-atomic.
       */
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     /** Indicates that user input is required on the element before a form may be submitted. */
@@ -2252,7 +2182,7 @@ object esPickerMod {
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
     /** Indicates if items in a table or grid are sorted in ascending or descending order. */
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     /** Defines the maximum allowed value for a range widget. */
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
@@ -2293,7 +2223,7 @@ object esPickerMod {
     
     var defaultValue: js.UndefOr[DateType] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -2378,7 +2308,7 @@ object esPickerMod {
     
     var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.undefined
     
-    var picker: time
+    var picker: "time"
     
     /** @private Internal usage, do not use in production mode!!! */
     var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.undefined
@@ -2442,7 +2372,7 @@ object esPickerMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -2450,7 +2380,7 @@ object esPickerMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -2470,7 +2400,7 @@ object esPickerMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -2486,7 +2416,7 @@ object esPickerMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -2506,7 +2436,7 @@ object esPickerMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -2514,7 +2444,7 @@ object esPickerMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -2534,7 +2464,7 @@ object esPickerMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -2550,7 +2480,7 @@ object esPickerMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -2566,7 +2496,7 @@ object esPickerMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -2575,7 +2505,7 @@ object esPickerMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -2608,7 +2538,7 @@ object esPickerMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -2668,7 +2598,7 @@ object esPickerMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -2826,7 +2756,7 @@ object esPickerMod {
       
       inline def setPanelRenderUndefined: Self = StObject.set(x, "panelRender", js.undefined)
       
-      inline def setPicker(value: time): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: "time"): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
       inline def setPickerRef(value: MutableRefObject[PickerRefConfig]): Self = StObject.set(x, "pickerRef", value.asInstanceOf[js.Any])
       

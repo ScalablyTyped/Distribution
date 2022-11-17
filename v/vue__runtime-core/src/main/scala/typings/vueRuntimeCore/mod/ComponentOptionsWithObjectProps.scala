@@ -1,9 +1,6 @@
 package typings.vueRuntimeCore.mod
 
 import typings.std.ThisType
-import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`false`
-import typings.vueRuntimeCore.vueRuntimeCoreStrings.B
-import typings.vueRuntimeCore.vueRuntimeCoreStrings.P
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +20,15 @@ trait ComponentOptionsWithObjectProps[PropsOptions, RawBindings, D, C /* <: Comp
         E, 
         Props, 
         Defaults, 
-        `false`, 
+        false, 
         I, 
         IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
-        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[RawBindings], 
-        (UnwrapMixinsType[
-          IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-          typings.vueRuntimeCore.vueRuntimeCoreStrings.D
-        ]) & EnsureNonVoid[D], 
-        (UnwrapMixinsType[
-          IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-          typings.vueRuntimeCore.vueRuntimeCoreStrings.C
-        ]) & EnsureNonVoid[C], 
-        (UnwrapMixinsType[
-          IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-          typings.vueRuntimeCore.vueRuntimeCoreStrings.M
-        ]) & EnsureNonVoid[M], 
-        (UnwrapMixinsType[
-          IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-          typings.vueRuntimeCore.vueRuntimeCoreStrings.Defaults
-        ]) & EnsureNonVoid[Defaults]
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "P"]) & EnsureNonVoid[Props], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "B"]) & EnsureNonVoid[RawBindings], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "D"]) & EnsureNonVoid[D], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "C"]) & EnsureNonVoid[C], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "M"]) & EnsureNonVoid[M], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "Defaults"]) & EnsureNonVoid[Defaults]
       ]
     ] {
   

@@ -13,26 +13,6 @@ import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextLayoutEventData
 import typings.reactNative.mod.TextStyle
-import typings.styledComponents.styledComponentsStrings.`no-hide-descendants`
-import typings.styledComponents.styledComponentsStrings.all
-import typings.styledComponents.styledComponentsStrings.assertive
-import typings.styledComponents.styledComponentsStrings.auto
-import typings.styledComponents.styledComponentsStrings.balanced
-import typings.styledComponents.styledComponentsStrings.clip
-import typings.styledComponents.styledComponentsStrings.email
-import typings.styledComponents.styledComponentsStrings.full
-import typings.styledComponents.styledComponentsStrings.head
-import typings.styledComponents.styledComponentsStrings.highQuality
-import typings.styledComponents.styledComponentsStrings.link
-import typings.styledComponents.styledComponentsStrings.middle
-import typings.styledComponents.styledComponentsStrings.no
-import typings.styledComponents.styledComponentsStrings.none
-import typings.styledComponents.styledComponentsStrings.normal
-import typings.styledComponents.styledComponentsStrings.phoneNumber
-import typings.styledComponents.styledComponentsStrings.polite
-import typings.styledComponents.styledComponentsStrings.simple
-import typings.styledComponents.styledComponentsStrings.tail
-import typings.styledComponents.styledComponentsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,7 +34,7 @@ trait ReadonlyTextProps extends StObject {
   
   val accessibilityLanguage: js.UndefOr[String] = js.undefined
   
-  val accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+  val accessibilityLiveRegion: js.UndefOr["none" | "polite" | "assertive"] = js.undefined
   
   val accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
@@ -70,19 +50,19 @@ trait ReadonlyTextProps extends StObject {
   
   val allowFontScaling: js.UndefOr[Boolean] = js.undefined
   
-  val android_hyphenationFrequency: js.UndefOr[normal | none | full] = js.undefined
+  val android_hyphenationFrequency: js.UndefOr["normal" | "none" | "full"] = js.undefined
   
   val children: js.UndefOr[ReactNode] = js.undefined
   
-  val dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all] = js.undefined
+  val dataDetectorType: js.UndefOr[Null | "phoneNumber" | "link" | "email" | "none" | "all"] = js.undefined
   
   val disabled: js.UndefOr[Boolean] = js.undefined
   
-  val ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
+  val ellipsizeMode: js.UndefOr["head" | "middle" | "tail" | "clip"] = js.undefined
   
-  val importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+  val importantForAccessibility: js.UndefOr["auto" | "yes" | "no" | "no-hide-descendants"] = js.undefined
   
-  val lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.undefined
+  val lineBreakMode: js.UndefOr["head" | "middle" | "tail" | "clip"] = js.undefined
   
   val maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.undefined
   
@@ -122,7 +102,7 @@ trait ReadonlyTextProps extends StObject {
   
   val testID: js.UndefOr[String] = js.undefined
   
-  val textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
+  val textBreakStrategy: js.UndefOr["simple" | "highQuality" | "balanced"] = js.undefined
 }
 object ReadonlyTextProps {
   
@@ -165,7 +145,7 @@ object ReadonlyTextProps {
     
     inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
     
-    inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLiveRegion(value: "none" | "polite" | "assertive"): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
     
@@ -197,7 +177,7 @@ object ReadonlyTextProps {
     
     inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
     
-    inline def setAndroid_hyphenationFrequency(value: normal | none | full): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
+    inline def setAndroid_hyphenationFrequency(value: "normal" | "none" | "full"): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
     
     inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
     
@@ -205,7 +185,7 @@ object ReadonlyTextProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setDataDetectorType(value: phoneNumber | link | email | none | all): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
+    inline def setDataDetectorType(value: "phoneNumber" | "link" | "email" | "none" | "all"): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
     
     inline def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
     
@@ -215,15 +195,15 @@ object ReadonlyTextProps {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
+    inline def setEllipsizeMode(value: "head" | "middle" | "tail" | "clip"): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
     
     inline def setEllipsizeModeUndefined: Self = StObject.set(x, "ellipsizeMode", js.undefined)
     
-    inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+    inline def setImportantForAccessibility(value: "auto" | "yes" | "no" | "no-hide-descendants"): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
-    inline def setLineBreakMode(value: head | middle | tail | clip): Self = StObject.set(x, "lineBreakMode", value.asInstanceOf[js.Any])
+    inline def setLineBreakMode(value: "head" | "middle" | "tail" | "clip"): Self = StObject.set(x, "lineBreakMode", value.asInstanceOf[js.Any])
     
     inline def setLineBreakModeUndefined: Self = StObject.set(x, "lineBreakMode", js.undefined)
     
@@ -307,7 +287,7 @@ object ReadonlyTextProps {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTextBreakStrategy(value: simple | highQuality | balanced): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
+    inline def setTextBreakStrategy(value: "simple" | "highQuality" | "balanced"): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
     
     inline def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
   }

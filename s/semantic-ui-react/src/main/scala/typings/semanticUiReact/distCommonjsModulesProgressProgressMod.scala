@@ -13,16 +13,6 @@ import typings.semanticUiReact.distCommonjsGenericMod.HtmlLabelProps
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
-import typings.semanticUiReact.semanticUiReactStrings.big
-import typings.semanticUiReact.semanticUiReactStrings.bottom
-import typings.semanticUiReact.semanticUiReactStrings.large
-import typings.semanticUiReact.semanticUiReactStrings.medium
-import typings.semanticUiReact.semanticUiReactStrings.percent
-import typings.semanticUiReact.semanticUiReactStrings.ratio
-import typings.semanticUiReact.semanticUiReactStrings.small
-import typings.semanticUiReact.semanticUiReactStrings.tiny
-import typings.semanticUiReact.semanticUiReactStrings.top
-import typings.semanticUiReact.semanticUiReactStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,7 +51,7 @@ object distCommonjsModulesProgressProgressMod extends Shortcut {
     var as: js.UndefOr[Any] = js.undefined
     
     /** A progress bar can attach to and show the progress of an element (i.e. Card or Segment). */
-    var attached: js.UndefOr[top | bottom] = js.undefined
+    var attached: js.UndefOr["top" | "bottom"] = js.undefined
     
     /** Whether success state should automatically trigger when progress completes. */
     var autoSuccess: js.UndefOr[Boolean] = js.undefined
@@ -100,10 +90,10 @@ object distCommonjsModulesProgressProgressMod extends Shortcut {
     var precision: js.UndefOr[Double] = js.undefined
     
     /** A progress bar can contain a text value indicating current progress. */
-    var progress: js.UndefOr[Boolean | percent | ratio | value] = js.undefined
+    var progress: js.UndefOr[Boolean | "percent" | "ratio" | "value"] = js.undefined
     
     /** A progress bar can vary in size. */
-    var size: js.UndefOr[tiny | small | medium | large | big] = js.undefined
+    var size: js.UndefOr["tiny" | "small" | "medium" | "large" | "big"] = js.undefined
     
     /** A progress bar can show a success state. */
     var success: js.UndefOr[Boolean] = js.undefined
@@ -134,7 +124,7 @@ object distCommonjsModulesProgressProgressMod extends Shortcut {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAttached(value: top | bottom): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: "top" | "bottom"): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
       inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       
@@ -190,11 +180,11 @@ object distCommonjsModulesProgressProgressMod extends Shortcut {
       
       inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      inline def setProgress(value: Boolean | percent | ratio | value): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Boolean | "percent" | "ratio" | "value"): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
       inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      inline def setSize(value: tiny | small | medium | large | big): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "tiny" | "small" | "medium" | "large" | "big"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

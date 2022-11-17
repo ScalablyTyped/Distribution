@@ -1,8 +1,5 @@
 package typings.yandexMaps.anon
 
-import typings.yandexMaps.yandexMapsStrings.auto
-import typings.yandexMaps.yandexMapsStrings.large
-import typings.yandexMaps.yandexMapsStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +10,7 @@ trait Size extends StObject {
   
   var position: js.UndefOr[Left] = js.undefined
   
-  var size: js.UndefOr[small | large | auto] = js.undefined
+  var size: js.UndefOr["small" | "large" | "auto"] = js.undefined
   
   var visible: js.UndefOr[Boolean] = js.undefined
   
@@ -38,7 +35,7 @@ object Size {
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setSize(value: small | large | auto): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "small" | "large" | "auto"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     

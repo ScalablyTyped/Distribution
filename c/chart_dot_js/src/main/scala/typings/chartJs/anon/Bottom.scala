@@ -13,10 +13,6 @@ trait Bottom extends StObject {
   var right: js.UndefOr[Double] = js.undefined
   
   var top: js.UndefOr[Double] = js.undefined
-  
-  var x: js.UndefOr[Double] = js.undefined
-  
-  var y: js.UndefOr[Double] = js.undefined
 }
 object Bottom {
   
@@ -42,13 +38,5 @@ object Bottom {
     inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
-    
-    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-    
-    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
-    
-    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
-    
-    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

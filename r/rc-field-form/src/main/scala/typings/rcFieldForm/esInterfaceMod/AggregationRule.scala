@@ -6,9 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined rc-field-form.rc-field-form/es/interface.BaseRule & std.Partial<rc-field-form.rc-field-form/es/interface.ValidatorRule> */
-trait AggregationRule
-  extends StObject
-     with RuleObject {
+trait AggregationRule extends StObject {
   
   var `enum`: js.UndefOr[js.Array[StoreValue]] = js.undefined
   

@@ -1,9 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.aborted
-import typings.electron.electronStrings.data
-import typings.electron.electronStrings.end
-import typings.electron.electronStrings.error
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.std.Record
@@ -15,13 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IncomingMessage extends EventEmitter {
   
   @JSName("addListener")
-  def addListener_aborted(event: aborted, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("addListener_error")
+  def addListener(event: "error", listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_data(event: data, listener: js.Function1[/* chunk */ Buffer, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_end")
+  def addListener(event: "end", listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_end(event: end, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("addListener_aborted")
+  def addListener(event: "aborted", listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: error, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("addListener_data")
+  def addListener(event: "data", listener: js.Function1[/* chunk */ Buffer, Unit]): this.type = js.native
   
   /**
     * A `Record<string, string | string[]>` representing the HTTP response headers.
@@ -56,23 +56,19 @@ trait IncomingMessage extends EventEmitter {
     */
   var httpVersionMinor: Double = js.native
   
+  /**
+    * Indicates that response body has ended. Must be placed before 'data' event.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_end")
+  def on(event: "end", listener: js.Function): this.type = js.native
   // Docs: https://electronjs.org/docs/api/incoming-message
   /**
     * Emitted when a request has been canceled during an ongoing HTTP transaction.
     */
   @JSName("on")
-  def on_aborted(event: aborted, listener: js.Function): this.type = js.native
-  /**
-    * The `data` event is the usual method of transferring response data into
-    * applicative code.
-    */
-  @JSName("on")
-  def on_data(event: data, listener: js.Function1[/* chunk */ Buffer, Unit]): this.type = js.native
-  /**
-    * Indicates that response body has ended. Must be placed before 'data' event.
-    */
-  @JSName("on")
-  def on_end(event: end, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_aborted")
+  def on(event: "aborted", listener: js.Function): this.type = js.native
   /**
     * Returns:
     *
@@ -84,16 +80,28 @@ trait IncomingMessage extends EventEmitter {
     * event will subsequently follow on the request object.
     */
   @JSName("on")
-  def on_error(event: error, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_error")
+  def on(event: "error", listener: js.Function): this.type = js.native
+  /**
+    * The `data` event is the usual method of transferring response data into
+    * applicative code.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_data")
+  def on(event: "data", listener: js.Function1[/* chunk */ Buffer, Unit]): this.type = js.native
   
   @JSName("once")
-  def once_aborted(event: aborted, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_error")
+  def once(event: "error", listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_data(event: data, listener: js.Function1[/* chunk */ Buffer, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_end")
+  def once(event: "end", listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_end(event: end, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_aborted")
+  def once(event: "aborted", listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_error(event: error, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_data")
+  def once(event: "data", listener: js.Function1[/* chunk */ Buffer, Unit]): this.type = js.native
   
   /**
     * A `string[]` containing the raw HTTP response headers exactly as they were
@@ -105,13 +113,17 @@ trait IncomingMessage extends EventEmitter {
   var rawHeaders: js.Array[String] = js.native
   
   @JSName("removeListener")
-  def removeListener_aborted(event: aborted, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("removeListener_error")
+  def removeListener(event: "error", listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_data(event: data, listener: js.Function1[/* chunk */ Buffer, Unit]): this.type = js.native
+  @scala.annotation.targetName("removeListener_end")
+  def removeListener(event: "end", listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_end(event: end, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("removeListener_aborted")
+  def removeListener(event: "aborted", listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_error(event: error, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("removeListener_data")
+  def removeListener(event: "data", listener: js.Function1[/* chunk */ Buffer, Unit]): this.type = js.native
   
   /**
     * An `Integer` indicating the HTTP response status code.

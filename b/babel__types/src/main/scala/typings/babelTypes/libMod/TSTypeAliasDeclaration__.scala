@@ -1,17 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSTypeAliasDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSTypeAliasDeclaration__
   extends StObject
-     with BaseNode
-     with Declaration
-     with Node
-     with Statement
-     with TypeScript {
+     with BaseNode {
   
   var declare: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -22,7 +17,7 @@ trait TSTypeAliasDeclaration__
   var typeParameters: js.UndefOr[TSTypeParameterDeclaration__ | Null] = js.undefined
   
   @JSName("type")
-  var type_TSTypeAliasDeclaration__ : TSTypeAliasDeclaration
+  var type_TSTypeAliasDeclaration__ : "TSTypeAliasDeclaration"
 }
 object TSTypeAliasDeclaration__ {
   
@@ -42,7 +37,7 @@ object TSTypeAliasDeclaration__ {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSTypeAliasDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSTypeAliasDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

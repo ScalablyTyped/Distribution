@@ -1,19 +1,17 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`21`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BlockStatement
   extends StObject
-     with Node2
-     with SSRCodegenNode {
+     with Node2 {
   
   var body: js.Array[JSChildNode | IfStatement]
   
   @JSName("type")
-  var type_BlockStatement: `21`
+  var type_BlockStatement: 21
 }
 object BlockStatement {
   
@@ -29,6 +27,6 @@ object BlockStatement {
     
     inline def setBodyVarargs(value: (JSChildNode | IfStatement)*): Self = StObject.set(x, "body", js.Array(value*))
     
-    inline def setType(value: `21`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 21): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,5 @@
 package typings.antd
 
-import typings.antd.antdBooleans.`false`
 import typings.antd.libTableInterfaceMod.ColumnTitleProps
 import typings.antd.libTableInterfaceMod.ColumnType
 import typings.antd.libTableInterfaceMod.ColumnsType
@@ -44,13 +43,13 @@ object libTableHooksUseSorterMod {
     
     var key: Key
     
-    var multiplePriority: Double | `false`
+    var multiplePriority: Double | false
     
     var sortOrder: SortOrder | Null
   }
   object SortState {
     
-    inline def apply[RecordType](column: ColumnType[RecordType], key: Key, multiplePriority: Double | `false`): SortState[RecordType] = {
+    inline def apply[RecordType](column: ColumnType[RecordType], key: Key, multiplePriority: Double | false): SortState[RecordType] = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], multiplePriority = multiplePriority.asInstanceOf[js.Any], sortOrder = null)
       __obj.asInstanceOf[SortState[RecordType]]
     }
@@ -61,7 +60,7 @@ object libTableHooksUseSorterMod {
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setMultiplePriority(value: Double | `false`): Self = StObject.set(x, "multiplePriority", value.asInstanceOf[js.Any])
+      inline def setMultiplePriority(value: Double | false): Self = StObject.set(x, "multiplePriority", value.asInstanceOf[js.Any])
       
       inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
       

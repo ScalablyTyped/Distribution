@@ -109,41 +109,6 @@ import typings.vueRuntimeDom.anon.Assign
 import typings.vueRuntimeDom.anon.Instantiable
 import typings.vueRuntimeDom.anon.Styles
 import typings.vueRuntimeDom.mod.^
-import typings.vueRuntimeDom.vueRuntimeDomBooleans.`false`
-import typings.vueRuntimeDom.vueRuntimeDomBooleans.`true`
-import typings.vueRuntimeDom.vueRuntimeDomStrings.at
-import typings.vueRuntimeDom.vueRuntimeDomStrings.concat
-import typings.vueRuntimeDom.vueRuntimeDomStrings.copyWithin
-import typings.vueRuntimeDom.vueRuntimeDomStrings.entries
-import typings.vueRuntimeDom.vueRuntimeDomStrings.every
-import typings.vueRuntimeDom.vueRuntimeDomStrings.fill
-import typings.vueRuntimeDom.vueRuntimeDomStrings.filter
-import typings.vueRuntimeDom.vueRuntimeDomStrings.find
-import typings.vueRuntimeDom.vueRuntimeDomStrings.findIndex
-import typings.vueRuntimeDom.vueRuntimeDomStrings.flat
-import typings.vueRuntimeDom.vueRuntimeDomStrings.flatMap
-import typings.vueRuntimeDom.vueRuntimeDomStrings.forEach
-import typings.vueRuntimeDom.vueRuntimeDomStrings.includes
-import typings.vueRuntimeDom.vueRuntimeDomStrings.indexOf
-import typings.vueRuntimeDom.vueRuntimeDomStrings.join
-import typings.vueRuntimeDom.vueRuntimeDomStrings.keys
-import typings.vueRuntimeDom.vueRuntimeDomStrings.lastIndexOf
-import typings.vueRuntimeDom.vueRuntimeDomStrings.length
-import typings.vueRuntimeDom.vueRuntimeDomStrings.map
-import typings.vueRuntimeDom.vueRuntimeDomStrings.pop
-import typings.vueRuntimeDom.vueRuntimeDomStrings.push
-import typings.vueRuntimeDom.vueRuntimeDomStrings.reduce
-import typings.vueRuntimeDom.vueRuntimeDomStrings.reduceRight
-import typings.vueRuntimeDom.vueRuntimeDomStrings.reverse
-import typings.vueRuntimeDom.vueRuntimeDomStrings.shift
-import typings.vueRuntimeDom.vueRuntimeDomStrings.slice
-import typings.vueRuntimeDom.vueRuntimeDomStrings.some
-import typings.vueRuntimeDom.vueRuntimeDomStrings.sort
-import typings.vueRuntimeDom.vueRuntimeDomStrings.splice
-import typings.vueRuntimeDom.vueRuntimeDomStrings.toLocaleString
-import typings.vueRuntimeDom.vueRuntimeDomStrings.toString
-import typings.vueRuntimeDom.vueRuntimeDomStrings.unshift
-import typings.vueRuntimeDom.vueRuntimeDomStrings.values
 import typings.vueShared.mod.NormalizedStyle
 import typings.vueShared.mod.ShapeFlags
 import org.scalablytyped.runtime.StObject
@@ -597,9 +562,9 @@ inline def defineEmits[TypeEmit](): TypeEmit = ^.asInstanceOf[js.Dynamic].applyD
 inline def defineEmits[E /* <: EmitsOptions */](emitOptions: E): EmitFn[E, /* keyof E */ String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineEmits")(emitOptions.asInstanceOf[js.Any]).asInstanceOf[EmitFn[E, /* keyof E */ String]]
 inline def defineEmits[EE /* <: String */](emitOptions: js.Array[EE]): EmitFn[
 js.Array[EE], 
-/* keyof std.Array<EE> */ length | toString | toLocaleString | pop | push | concat | join | reverse | shift | slice | sort | splice | unshift | indexOf | lastIndexOf | every | some | forEach | map | filter | reduce | reduceRight | find | findIndex | fill | copyWithin | entries | keys | values | includes | flatMap | flat | at] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineEmits")(emitOptions.asInstanceOf[js.Any]).asInstanceOf[EmitFn[
+/* keyof std.Array<EE> */ "length" | "toString" | "toLocaleString" | "pop" | "push" | "concat" | "join" | "reverse" | "shift" | "slice" | "sort" | "splice" | "unshift" | "indexOf" | "lastIndexOf" | "every" | "some" | "forEach" | "map" | "filter" | "reduce" | "reduceRight" | "find" | "findIndex" | "fill" | "copyWithin" | "entries" | "keys" | "values" | "includes" | "flatMap" | "flat" | "at"] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineEmits")(emitOptions.asInstanceOf[js.Any]).asInstanceOf[EmitFn[
 js.Array[EE], 
-/* keyof std.Array<EE> */ length | toString | toLocaleString | pop | push | concat | join | reverse | shift | slice | sort | splice | unshift | indexOf | lastIndexOf | every | some | forEach | map | filter | reduce | reduceRight | find | findIndex | fill | copyWithin | entries | keys | values | includes | flatMap | flat | at]]
+/* keyof std.Array<EE> */ "length" | "toString" | "toLocaleString" | "pop" | "push" | "concat" | "join" | "reverse" | "shift" | "slice" | "sort" | "splice" | "unshift" | "indexOf" | "lastIndexOf" | "every" | "some" | "forEach" | "map" | "filter" | "reduce" | "reduceRight" | "find" | "findIndex" | "fill" | "copyWithin" | "entries" | "keys" | "values" | "includes" | "flatMap" | "flat" | "at"]]
 
 inline def defineExpose[Exposed /* <: Record[String, Any] */](): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defineExpose")().asInstanceOf[Unit]
 inline def defineExpose[Exposed /* <: Record[String, Any] */](exposed: Exposed): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defineExpose")(exposed.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -1072,16 +1037,20 @@ inline def initCustomFormatter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic
 
 inline def inject[T](key: String): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
 inline def inject[T](key: String, defaultValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
+@scala.annotation.targetName("inject_false")
+inline def inject[T](key: String, defaultValue: T, treatDefaultAsFactory: false): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], treatDefaultAsFactory.asInstanceOf[js.Any])).asInstanceOf[T]
+@scala.annotation.targetName("inject_true")
+inline def inject[T](key: String, defaultValue: T, treatDefaultAsFactory: true): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], treatDefaultAsFactory.asInstanceOf[js.Any])).asInstanceOf[T]
+@scala.annotation.targetName("inject_true")
+inline def inject[T](key: String, defaultValue: js.Function0[T], treatDefaultAsFactory: true): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], treatDefaultAsFactory.asInstanceOf[js.Any])).asInstanceOf[T]
 inline def inject[T](key: InjectionKey[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
 inline def inject[T](key: InjectionKey[T], defaultValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def inject_false[T](key: String, defaultValue: T, treatDefaultAsFactory: `false`): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], treatDefaultAsFactory.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def inject_false[T](key: InjectionKey[T], defaultValue: T, treatDefaultAsFactory: `false`): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], treatDefaultAsFactory.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def inject_true[T](key: String, defaultValue: T, treatDefaultAsFactory: `true`): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], treatDefaultAsFactory.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def inject_true[T](key: String, defaultValue: js.Function0[T], treatDefaultAsFactory: `true`): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], treatDefaultAsFactory.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def inject_true[T](key: InjectionKey[T], defaultValue: T, treatDefaultAsFactory: `true`): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], treatDefaultAsFactory.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def inject_true[T](key: InjectionKey[T], defaultValue: js.Function0[T], treatDefaultAsFactory: `true`): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], treatDefaultAsFactory.asInstanceOf[js.Any])).asInstanceOf[T]
+@scala.annotation.targetName("inject_false")
+inline def inject[T](key: InjectionKey[T], defaultValue: T, treatDefaultAsFactory: false): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], treatDefaultAsFactory.asInstanceOf[js.Any])).asInstanceOf[T]
+@scala.annotation.targetName("inject_true")
+inline def inject[T](key: InjectionKey[T], defaultValue: T, treatDefaultAsFactory: true): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], treatDefaultAsFactory.asInstanceOf[js.Any])).asInstanceOf[T]
+@scala.annotation.targetName("inject_true")
+inline def inject[T](key: InjectionKey[T], defaultValue: js.Function0[T], treatDefaultAsFactory: true): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], treatDefaultAsFactory.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def isMemoSame(cached: VNode[RendererNode, RendererElement, StringDictionary[Any]], memo: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMemoSame")(cached.asInstanceOf[js.Any], memo.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
@@ -1117,14 +1086,14 @@ inline def normalizeStyle(value: Any): js.UndefOr[NormalizedStyle | String] = ^.
 inline def onActivated(hook: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onActivated")(hook.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def onActivated(hook: js.Function, target: ComponentInternalInstance): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onActivated")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def onBeforeMount(hook: js.Function0[Any]): js.UndefOr[`false` | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeMount")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`false` | js.Function]]
-inline def onBeforeMount(hook: js.Function0[Any], target: ComponentInternalInstance): js.UndefOr[`false` | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeMount")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`false` | js.Function]]
+inline def onBeforeMount(hook: js.Function0[Any]): js.UndefOr[false | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeMount")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[false | js.Function]]
+inline def onBeforeMount(hook: js.Function0[Any], target: ComponentInternalInstance): js.UndefOr[false | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeMount")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[false | js.Function]]
 
-inline def onBeforeUnmount(hook: js.Function0[Any]): js.UndefOr[`false` | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeUnmount")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`false` | js.Function]]
-inline def onBeforeUnmount(hook: js.Function0[Any], target: ComponentInternalInstance): js.UndefOr[`false` | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeUnmount")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`false` | js.Function]]
+inline def onBeforeUnmount(hook: js.Function0[Any]): js.UndefOr[false | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeUnmount")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[false | js.Function]]
+inline def onBeforeUnmount(hook: js.Function0[Any], target: ComponentInternalInstance): js.UndefOr[false | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeUnmount")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[false | js.Function]]
 
-inline def onBeforeUpdate(hook: js.Function0[Any]): js.UndefOr[`false` | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeUpdate")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`false` | js.Function]]
-inline def onBeforeUpdate(hook: js.Function0[Any], target: ComponentInternalInstance): js.UndefOr[`false` | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeUpdate")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`false` | js.Function]]
+inline def onBeforeUpdate(hook: js.Function0[Any]): js.UndefOr[false | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeUpdate")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[false | js.Function]]
+inline def onBeforeUpdate(hook: js.Function0[Any], target: ComponentInternalInstance): js.UndefOr[false | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeUpdate")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[false | js.Function]]
 
 inline def onDeactivated(hook: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDeactivated")(hook.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def onDeactivated(hook: js.Function, target: ComponentInternalInstance): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onDeactivated")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1132,25 +1101,25 @@ inline def onDeactivated(hook: js.Function, target: ComponentInternalInstance): 
 inline def onErrorCaptured[TError](hook: ErrorCapturedHook[TError]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onErrorCaptured")(hook.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def onErrorCaptured[TError](hook: ErrorCapturedHook[TError], target: ComponentInternalInstance): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onErrorCaptured")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def onMounted(hook: js.Function0[Any]): js.UndefOr[`false` | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onMounted")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`false` | js.Function]]
-inline def onMounted(hook: js.Function0[Any], target: ComponentInternalInstance): js.UndefOr[`false` | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onMounted")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`false` | js.Function]]
+inline def onMounted(hook: js.Function0[Any]): js.UndefOr[false | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onMounted")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[false | js.Function]]
+inline def onMounted(hook: js.Function0[Any], target: ComponentInternalInstance): js.UndefOr[false | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onMounted")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[false | js.Function]]
 
-inline def onRenderTracked(hook: DebuggerHook): js.UndefOr[`false` | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onRenderTracked")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`false` | js.Function]]
-inline def onRenderTracked(hook: DebuggerHook, target: ComponentInternalInstance): js.UndefOr[`false` | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onRenderTracked")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`false` | js.Function]]
+inline def onRenderTracked(hook: DebuggerHook): js.UndefOr[false | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onRenderTracked")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[false | js.Function]]
+inline def onRenderTracked(hook: DebuggerHook, target: ComponentInternalInstance): js.UndefOr[false | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onRenderTracked")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[false | js.Function]]
 
-inline def onRenderTriggered(hook: DebuggerHook): js.UndefOr[`false` | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onRenderTriggered")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`false` | js.Function]]
-inline def onRenderTriggered(hook: DebuggerHook, target: ComponentInternalInstance): js.UndefOr[`false` | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onRenderTriggered")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`false` | js.Function]]
+inline def onRenderTriggered(hook: DebuggerHook): js.UndefOr[false | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onRenderTriggered")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[false | js.Function]]
+inline def onRenderTriggered(hook: DebuggerHook, target: ComponentInternalInstance): js.UndefOr[false | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onRenderTriggered")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[false | js.Function]]
 
 inline def onScopeDispose(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onScopeDispose")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def onServerPrefetch(hook: js.Function0[Any]): js.UndefOr[`false` | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onServerPrefetch")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`false` | js.Function]]
-inline def onServerPrefetch(hook: js.Function0[Any], target: ComponentInternalInstance): js.UndefOr[`false` | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onServerPrefetch")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`false` | js.Function]]
+inline def onServerPrefetch(hook: js.Function0[Any]): js.UndefOr[false | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onServerPrefetch")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[false | js.Function]]
+inline def onServerPrefetch(hook: js.Function0[Any], target: ComponentInternalInstance): js.UndefOr[false | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onServerPrefetch")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[false | js.Function]]
 
-inline def onUnmounted(hook: js.Function0[Any]): js.UndefOr[`false` | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onUnmounted")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`false` | js.Function]]
-inline def onUnmounted(hook: js.Function0[Any], target: ComponentInternalInstance): js.UndefOr[`false` | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onUnmounted")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`false` | js.Function]]
+inline def onUnmounted(hook: js.Function0[Any]): js.UndefOr[false | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onUnmounted")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[false | js.Function]]
+inline def onUnmounted(hook: js.Function0[Any], target: ComponentInternalInstance): js.UndefOr[false | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onUnmounted")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[false | js.Function]]
 
-inline def onUpdated(hook: js.Function0[Any]): js.UndefOr[`false` | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onUpdated")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`false` | js.Function]]
-inline def onUpdated(hook: js.Function0[Any], target: ComponentInternalInstance): js.UndefOr[`false` | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onUpdated")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`false` | js.Function]]
+inline def onUpdated(hook: js.Function0[Any]): js.UndefOr[false | js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("onUpdated")(hook.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[false | js.Function]]
+inline def onUpdated(hook: js.Function0[Any], target: ComponentInternalInstance): js.UndefOr[false | js.Function] = (^.asInstanceOf[js.Dynamic].applyDynamic("onUpdated")(hook.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[false | js.Function]]
 
 inline def openBlock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openBlock")().asInstanceOf[Unit]
 inline def openBlock(disableTracking: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openBlock")(disableTracking.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -1327,6 +1296,60 @@ inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version")
 
 inline def warn(msg: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(scala.List(msg.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 
+@scala.annotation.targetName("watch_false")
+inline def watch[T /* <: ReadonlyMultiWatchSources */, Immediate /* <: Boolean */](source: T, cb: WatchCallback[MapSources[T, false], MapSources[T, Immediate]]): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
+@scala.annotation.targetName("watch_true")
+inline def watch[T /* <: js.Object */, Immediate /* <: Boolean */](
+  source: T,
+  cb: WatchCallback[
+  T, 
+  /* import warning: importer.ImportType#apply Failed type conversion: Immediate extends true ? T | undefined : T */ js.Any
+]
+): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
+@scala.annotation.targetName("watch_false")
+inline def watch[T /* <: ReadonlyMultiWatchSources */, Immediate /* <: Boolean */](
+  source: T,
+  cb: WatchCallback[MapSources[T, false], MapSources[T, Immediate]],
+  options: WatchOptions[Immediate]
+): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
+@scala.annotation.targetName("watch_true")
+inline def watch[T /* <: js.Object */, Immediate /* <: Boolean */](
+  source: T,
+  cb: WatchCallback[
+  T, 
+  /* import warning: importer.ImportType#apply Failed type conversion: Immediate extends true ? T | undefined : T */ js.Any
+],
+  options: WatchOptions[Immediate]
+): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
+@scala.annotation.targetName("watch_false")
+inline def watch[T /* <: MultiWatchSources */, Immediate /* <: Boolean */](
+  sources: /* import warning: importer.ImportType#apply c repeated non-array type: T */ js.Array[T],
+  cb: WatchCallback[MapSources[T, false], MapSources[T, Immediate]]
+): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(sources.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
+@scala.annotation.targetName("watch_false")
+inline def watch[T /* <: MultiWatchSources */, Immediate /* <: Boolean */](
+  sources: /* import warning: importer.ImportType#apply c repeated non-array type: T */ js.Array[T],
+  cb: WatchCallback[MapSources[T, false], MapSources[T, Immediate]],
+  options: WatchOptions[Immediate]
+): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(sources.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
+@scala.annotation.targetName("watch_true")
+inline def watch[T, Immediate /* <: Boolean */](
+  source: WatchSource[T],
+  cb: WatchCallback[
+  T, 
+  /* import warning: importer.ImportType#apply Failed type conversion: Immediate extends true ? T | undefined : T */ js.Any
+]
+): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
+@scala.annotation.targetName("watch_true")
+inline def watch[T, Immediate /* <: Boolean */](
+  source: WatchSource[T],
+  cb: WatchCallback[
+  T, 
+  /* import warning: importer.ImportType#apply Failed type conversion: Immediate extends true ? T | undefined : T */ js.Any
+],
+  options: WatchOptions[Immediate]
+): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
+
 inline def watchEffect(effect: WatchEffect_): WatchStopHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("watchEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[WatchStopHandle]
 inline def watchEffect(effect: WatchEffect_, options: WatchOptionsBase): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watchEffect")(effect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
 
@@ -1335,53 +1358,6 @@ inline def watchPostEffect(effect: WatchEffect_, options: DebuggerOptions): Watc
 
 inline def watchSyncEffect(effect: WatchEffect_): WatchStopHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("watchSyncEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[WatchStopHandle]
 inline def watchSyncEffect(effect: WatchEffect_, options: DebuggerOptions): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watchSyncEffect")(effect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
-
-inline def watch_false[T /* <: ReadonlyMultiWatchSources */, Immediate /* <: Boolean */](source: T, cb: WatchCallback[MapSources[T, `false`], MapSources[T, Immediate]]): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
-inline def watch_false[T /* <: ReadonlyMultiWatchSources */, Immediate /* <: Boolean */](
-  source: T,
-  cb: WatchCallback[MapSources[T, `false`], MapSources[T, Immediate]],
-  options: WatchOptions[Immediate]
-): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
-inline def watch_false[T /* <: MultiWatchSources */, Immediate /* <: Boolean */](
-  sources: /* import warning: importer.ImportType#apply c repeated non-array type: T */ js.Array[T],
-  cb: WatchCallback[MapSources[T, `false`], MapSources[T, Immediate]]
-): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(sources.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
-inline def watch_false[T /* <: MultiWatchSources */, Immediate /* <: Boolean */](
-  sources: /* import warning: importer.ImportType#apply c repeated non-array type: T */ js.Array[T],
-  cb: WatchCallback[MapSources[T, `false`], MapSources[T, Immediate]],
-  options: WatchOptions[Immediate]
-): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(sources.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
-
-inline def watch_true[T /* <: js.Object */, Immediate /* <: Boolean */](
-  source: T,
-  cb: WatchCallback[
-  T, 
-  /* import warning: importer.ImportType#apply Failed type conversion: Immediate extends true ? T | undefined : T */ js.Any
-]
-): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
-inline def watch_true[T /* <: js.Object */, Immediate /* <: Boolean */](
-  source: T,
-  cb: WatchCallback[
-  T, 
-  /* import warning: importer.ImportType#apply Failed type conversion: Immediate extends true ? T | undefined : T */ js.Any
-],
-  options: WatchOptions[Immediate]
-): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
-inline def watch_true[T, Immediate /* <: Boolean */](
-  source: WatchSource[T],
-  cb: WatchCallback[
-  T, 
-  /* import warning: importer.ImportType#apply Failed type conversion: Immediate extends true ? T | undefined : T */ js.Any
-]
-): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
-inline def watch_true[T, Immediate /* <: Boolean */](
-  source: WatchSource[T],
-  cb: WatchCallback[
-  T, 
-  /* import warning: importer.ImportType#apply Failed type conversion: Immediate extends true ? T | undefined : T */ js.Any
-],
-  options: WatchOptions[Immediate]
-): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
 
 inline def withCtx(fn: js.Function): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("withCtx")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function]
 inline def withCtx(fn: js.Function, ctx: Null, isNonScopedSlot: Boolean): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("withCtx")(fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], isNonScopedSlot.asInstanceOf[js.Any])).asInstanceOf[js.Function]

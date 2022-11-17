@@ -3,7 +3,6 @@ package typings.three
 import typings.three.srcCamerasCameraMod.Camera
 import typings.three.srcCamerasPerspectiveCameraMod.PerspectiveCamera
 import typings.three.srcLightsLightShadowMod.LightShadow
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +22,6 @@ object srcLightsSpotLightShadowMod {
       */
     var focus: Double = js.native
     
-    val isSpotLightShadow: `true` = js.native
+    val isSpotLightShadow: true = js.native
   }
 }

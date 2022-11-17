@@ -1,14 +1,9 @@
 package typings.chartJs.anon
 
-import typings.chartJs.chartJsStrings.category
-import typings.chartJs.chartJsStrings.linear
-import typings.chartJs.chartJsStrings.logarithmic
-import typings.chartJs.chartJsStrings.time
-import typings.chartJs.chartJsStrings.timeseries
-import typings.chartJs.mod.PieControllerChartOptions
-import typings.chartJs.mod.PieControllerDatasetOptions
-import typings.chartJs.mod.PieDataPoint
-import typings.chartJs.mod.PieMetaExtensions
+import typings.chartJs.distChunksHelpersDotcoreMod.PieControllerChartOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.PieControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.PieDataPoint
+import typings.chartJs.distChunksHelpersDotcoreMod.PieMetaExtensions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +20,7 @@ trait ParsedDataType extends StObject {
   
   var parsedDataType: Double
   
-  var scales: linear | logarithmic | category | time | timeseries
+  var scales: "linear" | "logarithmic" | "category" | "time" | "timeseries"
 }
 object ParsedDataType {
   
@@ -35,7 +30,7 @@ object ParsedDataType {
     defaultDataPoint: PieDataPoint,
     metaExtensions: PieMetaExtensions,
     parsedDataType: Double,
-    scales: linear | logarithmic | category | time | timeseries
+    scales: "linear" | "logarithmic" | "category" | "time" | "timeseries"
   ): ParsedDataType = {
     val __obj = js.Dynamic.literal(chartOptions = chartOptions.asInstanceOf[js.Any], datasetOptions = datasetOptions.asInstanceOf[js.Any], defaultDataPoint = defaultDataPoint.asInstanceOf[js.Any], metaExtensions = metaExtensions.asInstanceOf[js.Any], parsedDataType = parsedDataType.asInstanceOf[js.Any], scales = scales.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedDataType]
@@ -53,6 +48,6 @@ object ParsedDataType {
     
     inline def setParsedDataType(value: Double): Self = StObject.set(x, "parsedDataType", value.asInstanceOf[js.Any])
     
-    inline def setScales(value: linear | logarithmic | category | time | timeseries): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+    inline def setScales(value: "linear" | "logarithmic" | "category" | "time" | "timeseries"): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
   }
 }

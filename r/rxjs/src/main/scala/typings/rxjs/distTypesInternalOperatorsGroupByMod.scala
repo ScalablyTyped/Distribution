@@ -5,8 +5,6 @@ import typings.rxjs.distTypesInternalSubjectMod.Subject
 import typings.rxjs.distTypesInternalTypesMod.ObservableInput
 import typings.rxjs.distTypesInternalTypesMod.OperatorFunction
 import typings.rxjs.distTypesInternalTypesMod.SubjectLike
-import typings.rxjs.rxjsBooleans.`false`
-import typings.rxjs.rxjsBooleans.`true`
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +16,7 @@ object distTypesInternalOperatorsGroupByMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def groupBy[T, K /* <: T */](key: js.Function1[/* value */ T, (/* is K */ Boolean) | K]): OperatorFunction[T, GroupedObservable[`true` | `false`, (Exclude[T, K]) | K]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(key.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, GroupedObservable[`true` | `false`, (Exclude[T, K]) | K]]]
+  inline def groupBy[T, K /* <: T */](key: js.Function1[/* value */ T, (/* is K */ Boolean) | K]): OperatorFunction[T, GroupedObservable[true | false, (Exclude[T, K]) | K]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(key.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, GroupedObservable[true | false, (Exclude[T, K]) | K]]]
   inline def groupBy[T, K](
     key: js.Function1[/* value */ T, K],
     element: Unit,

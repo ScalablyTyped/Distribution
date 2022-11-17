@@ -6,80 +6,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object propTypes {
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUi.materialUiStrings.`bottom-left`
-    - typings.materialUi.materialUiStrings.`bottom-right`
-    - typings.materialUi.materialUiStrings.`top-left`
-    - typings.materialUi.materialUiStrings.`top-right`
-  */
-  trait corners extends StObject
   object corners {
     
-    inline def `bottom-left`: typings.materialUi.materialUiStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.materialUi.materialUiStrings.`bottom-left`]
+    inline def `bottom-left`: "bottom-left" = "bottom-left".asInstanceOf["bottom-left"]
     
-    inline def `bottom-right`: typings.materialUi.materialUiStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.materialUi.materialUiStrings.`bottom-right`]
+    inline def `bottom-right`: "bottom-right" = "bottom-right".asInstanceOf["bottom-right"]
     
-    inline def `top-left`: typings.materialUi.materialUiStrings.`top-left` = "top-left".asInstanceOf[typings.materialUi.materialUiStrings.`top-left`]
+    inline def `top-left`: "top-left" = "top-left".asInstanceOf["top-left"]
     
-    inline def `top-right`: typings.materialUi.materialUiStrings.`top-right` = "top-right".asInstanceOf[typings.materialUi.materialUiStrings.`top-right`]
+    inline def `top-right`: "top-right" = "top-right".asInstanceOf["top-right"]
   }
+  type corners = "bottom-left" | "bottom-right" | "top-left" | "top-right"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUi.materialUiStrings.`bottom-center`
-    - typings.materialUi.materialUiStrings.`bottom-left`
-    - typings.materialUi.materialUiStrings.`bottom-right`
-    - typings.materialUi.materialUiStrings.`top-center`
-    - typings.materialUi.materialUiStrings.`top-left`
-    - typings.materialUi.materialUiStrings.`top-right`
-  */
-  trait cornersAndCenter extends StObject
   object cornersAndCenter {
     
-    inline def `bottom-center`: typings.materialUi.materialUiStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.materialUi.materialUiStrings.`bottom-center`]
+    inline def `bottom-center`: "bottom-center" = "bottom-center".asInstanceOf["bottom-center"]
     
-    inline def `bottom-left`: typings.materialUi.materialUiStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.materialUi.materialUiStrings.`bottom-left`]
+    inline def `bottom-left`: "bottom-left" = "bottom-left".asInstanceOf["bottom-left"]
     
-    inline def `bottom-right`: typings.materialUi.materialUiStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.materialUi.materialUiStrings.`bottom-right`]
+    inline def `bottom-right`: "bottom-right" = "bottom-right".asInstanceOf["bottom-right"]
     
-    inline def `top-center`: typings.materialUi.materialUiStrings.`top-center` = "top-center".asInstanceOf[typings.materialUi.materialUiStrings.`top-center`]
+    inline def `top-center`: "top-center" = "top-center".asInstanceOf["top-center"]
     
-    inline def `top-left`: typings.materialUi.materialUiStrings.`top-left` = "top-left".asInstanceOf[typings.materialUi.materialUiStrings.`top-left`]
+    inline def `top-left`: "top-left" = "top-left".asInstanceOf["top-left"]
     
-    inline def `top-right`: typings.materialUi.materialUiStrings.`top-right` = "top-right".asInstanceOf[typings.materialUi.materialUiStrings.`top-right`]
+    inline def `top-right`: "top-right" = "top-right".asInstanceOf["top-right"]
   }
+  type cornersAndCenter = "bottom-center" | "bottom-left" | "bottom-right" | "top-center" | "top-left" | "top-right"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUi.materialUiStrings.left
-    - typings.materialUi.materialUiStrings.right
-    - typings.materialUi.materialUiStrings.up
-    - typings.materialUi.materialUiStrings.down
-  */
-  trait direction extends StObject
   object direction {
     
-    inline def down: typings.materialUi.materialUiStrings.down = "down".asInstanceOf[typings.materialUi.materialUiStrings.down]
+    inline def down: "down" = "down".asInstanceOf["down"]
     
-    inline def left: typings.materialUi.materialUiStrings.left = "left".asInstanceOf[typings.materialUi.materialUiStrings.left]
+    inline def left: "left" = "left".asInstanceOf["left"]
     
-    inline def right: typings.materialUi.materialUiStrings.right = "right".asInstanceOf[typings.materialUi.materialUiStrings.right]
+    inline def right: "right" = "right".asInstanceOf["right"]
     
-    inline def up: typings.materialUi.materialUiStrings.up = "up".asInstanceOf[typings.materialUi.materialUiStrings.up]
+    inline def up: "up" = "up".asInstanceOf["up"]
   }
+  type direction = "left" | "right" | "up" | "down"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUi.materialUiStrings.left
-    - typings.materialUi.materialUiStrings.middle
-    - typings.materialUi.materialUiStrings.right
-  */
-  trait horizontal extends StObject
   object horizontal {
     
-    inline def left: typings.materialUi.materialUiStrings.left = "left".asInstanceOf[typings.materialUi.materialUiStrings.left]
+    inline def left: "left" = "left".asInstanceOf["left"]
     
-    inline def middle: typings.materialUi.materialUiStrings.middle = "middle".asInstanceOf[typings.materialUi.materialUiStrings.middle]
+    inline def middle: "middle" = "middle".asInstanceOf["middle"]
     
-    inline def right: typings.materialUi.materialUiStrings.right = "right".asInstanceOf[typings.materialUi.materialUiStrings.right]
+    inline def right: "right" = "right".asInstanceOf["right"]
   }
+  type horizontal = "left" | "middle" | "right"
   
   trait origin extends StObject {
     
@@ -102,20 +77,15 @@ object propTypes {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUi.materialUiStrings.left
-    - typings.materialUi.materialUiStrings.center
-    - typings.materialUi.materialUiStrings.right
-  */
-  trait tooltipHorizontal extends StObject
   object tooltipHorizontal {
     
-    inline def center: typings.materialUi.materialUiStrings.center = "center".asInstanceOf[typings.materialUi.materialUiStrings.center]
+    inline def center: "center" = "center".asInstanceOf["center"]
     
-    inline def left: typings.materialUi.materialUiStrings.left = "left".asInstanceOf[typings.materialUi.materialUiStrings.left]
+    inline def left: "left" = "left".asInstanceOf["left"]
     
-    inline def right: typings.materialUi.materialUiStrings.right = "right".asInstanceOf[typings.materialUi.materialUiStrings.right]
+    inline def right: "right" = "right".asInstanceOf["right"]
   }
+  type tooltipHorizontal = "left" | "center" | "right"
   
   trait utils extends StObject {
     
@@ -171,18 +141,13 @@ object propTypes {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUi.materialUiStrings.top
-    - typings.materialUi.materialUiStrings.center
-    - typings.materialUi.materialUiStrings.bottom
-  */
-  trait vertical extends StObject
   object vertical {
     
-    inline def bottom: typings.materialUi.materialUiStrings.bottom = "bottom".asInstanceOf[typings.materialUi.materialUiStrings.bottom]
+    inline def bottom: "bottom" = "bottom".asInstanceOf["bottom"]
     
-    inline def center: typings.materialUi.materialUiStrings.center = "center".asInstanceOf[typings.materialUi.materialUiStrings.center]
+    inline def center: "center" = "center".asInstanceOf["center"]
     
-    inline def top: typings.materialUi.materialUiStrings.top = "top".asInstanceOf[typings.materialUi.materialUiStrings.top]
+    inline def top: "top" = "top".asInstanceOf["top"]
   }
+  type vertical = "top" | "center" | "bottom"
 }

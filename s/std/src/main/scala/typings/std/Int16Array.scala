@@ -401,7 +401,7 @@ trait Int16Array
   
   /* standard es2015.symbol.wellknown */
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: typings.std.stdStrings.Int16Array = js.native
+  val toStringTag: "Int16Array" = js.native
   
   /**
     * Returns an list of values in the array

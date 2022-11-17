@@ -3,7 +3,6 @@ package typings.three
 import typings.three.srcCamerasCameraMod.Camera
 import typings.three.srcCamerasOrthographicCameraMod.OrthographicCamera
 import typings.three.srcLightsLightShadowMod.LightShadow
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +17,6 @@ object srcLightsDirectionalLightShadowMod {
     @JSName("camera")
     var camera_DirectionalLightShadow: OrthographicCamera = js.native
     
-    val isDirectionalLightShadow: `true` = js.native
+    val isDirectionalLightShadow: true = js.native
   }
 }

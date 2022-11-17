@@ -1,16 +1,14 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashPOP_TO_TOP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NavigationPopToTopAction
   extends StObject
-     with NavigationPopToTopActionPayload
-     with NavigationStackAction {
+     with NavigationPopToTopActionPayload {
   
-  var `type`: NavigationSlashPOP_TO_TOP
+  var `type`: "Navigation/POP_TO_TOP"
 }
 object NavigationPopToTopAction {
   
@@ -22,6 +20,6 @@ object NavigationPopToTopAction {
   
   extension [Self <: NavigationPopToTopAction](x: Self) {
     
-    inline def setType(value: NavigationSlashPOP_TO_TOP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Navigation/POP_TO_TOP"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

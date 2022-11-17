@@ -3,7 +3,6 @@ package typings.angularForms.anon
 import org.scalablytyped.runtime.Instantiable1
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
 import typings.angularForms.mod.ControlContainer
 import typings.angularForms.mod.NgControlStatusGroup
 import org.scalablytyped.runtime.StObject
@@ -23,7 +22,8 @@ trait TypeofNgControlStatusGrou
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NgControlStatusGroup, js.Array[Self]] = js.native

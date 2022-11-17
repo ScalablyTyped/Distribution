@@ -67,6 +67,8 @@ type MaxDownloadRate = Double
 
 type MaxUploadRate = Double
 
+type Method = "get" | "GET" | "delete" | "DELETE" | "head" | "HEAD" | "options" | "OPTIONS" | "post" | "POST" | "put" | "PUT" | "patch" | "PATCH" | "purge" | "PURGE" | "link" | "LINK" | "unlink" | "UNLINK"
+
 type Milliseconds = Double
 
 type ParamEncoder = js.Function2[/* value */ Any, /* defaultEncoder */ js.Function1[/* value */ Any, Any], Any]
@@ -77,6 +79,8 @@ type RawAxiosRequestHeaders = Partial[RawAxiosHeaders & MethodsHeaders & CommonH
 
 type RawAxiosResponseHeaders = Partial[(Record[String, String]) & Setcookie]
 
+type ResponseType = "arraybuffer" | "blob" | "document" | "json" | "text" | "stream"
+
 type SerializerVisitor = js.ThisFunction4[
 /* this */ GenericFormData, 
 /* value */ Any, 
@@ -84,3 +88,5 @@ type SerializerVisitor = js.ThisFunction4[
 /* path */ Null | (js.Array[String | Double]), 
 /* helpers */ FormDataVisitorHelpers, 
 Boolean]
+
+type responseEncoding = "ascii" | "ASCII" | "ansi" | "ANSI" | "binary" | "BINARY" | "base64" | "BASE64" | "base64url" | "BASE64URL" | "hex" | "HEX" | "latin1" | "LATIN1" | "ucs-2" | "UCS-2" | "ucs2" | "UCS2" | "utf-8" | "UTF-8" | "utf8" | "UTF8" | "utf16le" | "UTF16LE"

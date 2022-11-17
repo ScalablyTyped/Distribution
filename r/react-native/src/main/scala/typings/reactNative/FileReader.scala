@@ -1,10 +1,5 @@
 package typings.reactNative
 
-import typings.reactNative.reactNativeStrings.abort
-import typings.reactNative.reactNativeStrings.load
-import typings.reactNative.reactNativeStrings.loadend
-import typings.reactNative.reactNativeStrings.loadstart
-import typings.reactNative.reactNativeStrings.progress
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,68 +19,80 @@ trait FileReader
   def abort(): Unit = js.native
   
   @JSName("addEventListener")
-  def addEventListener_abort(
-    `type`: abort,
+  @scala.annotation.targetName("addEventListener_progress")
+  def addEventListener(
+    `type`: "progress",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_abort(
-    `type`: abort,
+  @scala.annotation.targetName("addEventListener_error")
+  def addEventListener(
+    `type`: "error",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_loadend")
+  def addEventListener(
+    `type`: "loadend",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_abort")
+  def addEventListener(
+    `type`: "abort",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_load")
+  def addEventListener(
+    `type`: "load",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_loadstart")
+  def addEventListener(
+    `type`: "loadstart",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_loadend")
+  def addEventListener(
+    `type`: "loadend",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(
-    `type`: typings.reactNative.reactNativeStrings.error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_error(
-    `type`: typings.reactNative.reactNativeStrings.error,
+  @scala.annotation.targetName("addEventListener_load")
+  def addEventListener(
+    `type`: "load",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_load(
-    `type`: load,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_load(
-    `type`: load,
+  @scala.annotation.targetName("addEventListener_error")
+  def addEventListener(
+    `type`: "error",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadend(
-    `type`: loadend,
+  @scala.annotation.targetName("addEventListener_loadstart")
+  def addEventListener(
+    `type`: "loadstart",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loadstart(
-    `type`: loadstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadstart(
-    `type`: loadstart,
+  @scala.annotation.targetName("addEventListener_abort")
+  def addEventListener(
+    `type`: "abort",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_progress(
-    `type`: progress,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_progress(
-    `type`: progress,
+  @scala.annotation.targetName("addEventListener_progress")
+  def addEventListener(
+    `type`: "progress",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any],
     options: Boolean
   ): Unit = js.native
@@ -116,68 +123,80 @@ trait FileReader
   
   // addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
   @JSName("removeEventListener")
-  def removeEventListener_abort(
-    `type`: abort,
+  @scala.annotation.targetName("removeEventListener_abort")
+  def removeEventListener(
+    `type`: "abort",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_abort(
-    `type`: abort,
+  @scala.annotation.targetName("removeEventListener_progress")
+  def removeEventListener(
+    `type`: "progress",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_loadend")
+  def removeEventListener(
+    `type`: "loadend",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_loadstart")
+  def removeEventListener(
+    `type`: "loadstart",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_error")
+  def removeEventListener(
+    `type`: "error",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_load")
+  def removeEventListener(
+    `type`: "load",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_abort")
+  def removeEventListener(
+    `type`: "abort",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_error(
-    `type`: typings.reactNative.reactNativeStrings.error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_error(
-    `type`: typings.reactNative.reactNativeStrings.error,
+  @scala.annotation.targetName("removeEventListener_error")
+  def removeEventListener(
+    `type`: "error",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_load(
-    `type`: load,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_load(
-    `type`: load,
+  @scala.annotation.targetName("removeEventListener_progress")
+  def removeEventListener(
+    `type`: "progress",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_loadend(
-    `type`: loadend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadend(
-    `type`: loadend,
+  @scala.annotation.targetName("removeEventListener_load")
+  def removeEventListener(
+    `type`: "load",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_loadstart(
-    `type`: loadstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadstart(
-    `type`: loadstart,
+  @scala.annotation.targetName("removeEventListener_loadend")
+  def removeEventListener(
+    `type`: "loadend",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_progress(
-    `type`: progress,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_progress(
-    `type`: progress,
+  @scala.annotation.targetName("removeEventListener_loadstart")
+  def removeEventListener(
+    `type`: "loadstart",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], Any],
     options: Boolean
   ): Unit = js.native

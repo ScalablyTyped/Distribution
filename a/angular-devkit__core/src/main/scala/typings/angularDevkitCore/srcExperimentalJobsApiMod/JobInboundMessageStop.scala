@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JobInboundMessageStop
   extends StObject
-     with JobInboundMessageBase
-     with JobInboundMessage[Any] {
+     with JobInboundMessageBase {
   
   @JSName("kind")
   val kind_JobInboundMessageStop: Stop

@@ -44,6 +44,11 @@ object R3Identifiers {
   def FactoryTarget: ExternalReference = js.native
   inline def FactoryTarget_=(x: ExternalReference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FactoryTarget")(x.asInstanceOf[js.Any])
   
+  @JSImport("@angular/compiler", "R3Identifiers.HostDirectivesFeature")
+  @js.native
+  def HostDirectivesFeature: ExternalReference = js.native
+  inline def HostDirectivesFeature_=(x: ExternalReference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HostDirectivesFeature")(x.asInstanceOf[js.Any])
+  
   @JSImport("@angular/compiler", "R3Identifiers.InheritDefinitionFeature")
   @js.native
   def InheritDefinitionFeature: ExternalReference = js.native
@@ -884,6 +889,11 @@ object R3Identifiers {
   @js.native
   def trustConstantResourceUrl: ExternalReference = js.native
   inline def trustConstantResourceUrl_=(x: ExternalReference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trustConstantResourceUrl")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/compiler", "R3Identifiers.validateIframeAttribute")
+  @js.native
+  def validateIframeAttribute: ExternalReference = js.native
+  inline def validateIframeAttribute_=(x: ExternalReference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateIframeAttribute")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/compiler", "R3Identifiers.viewQuery")
   @js.native

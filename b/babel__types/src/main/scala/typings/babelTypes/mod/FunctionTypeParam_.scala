@@ -1,15 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.FunctionTypeParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait FunctionTypeParam_
+trait FunctionTypeParam_
   extends StObject
-     with BaseNode
-     with Flow {
+     with BaseNode {
   
   var name: Identifier_ | Null
   
@@ -18,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var typeAnnotation: FlowType
   
   @JSName("type")
-  var type_FunctionTypeParam_ : FunctionTypeParam
+  var type_FunctionTypeParam_ : "FunctionTypeParam"
 }
 object FunctionTypeParam_ {
   
@@ -38,7 +35,7 @@ object FunctionTypeParam_ {
     
     inline def setOptionalNull: Self = StObject.set(x, "optional", null)
     
-    inline def setType(value: FunctionTypeParam): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "FunctionTypeParam"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: FlowType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }

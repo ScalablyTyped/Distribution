@@ -1,31 +1,25 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesBooleans.`false`
-import typings.babelTypes.babelTypesBooleans.`true`
-import typings.babelTypes.babelTypesStrings.CallExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CallExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with Node
-     with Standardized {
+     with BaseNode {
   
   var arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_]
   
   var callee: Expression | Super_ | V8IntrinsicIdentifier_
   
-  var optional: js.UndefOr[`true` | `false` | Null] = js.undefined
+  var optional: js.UndefOr[true | false | Null] = js.undefined
   
   var typeArguments: js.UndefOr[TypeParameterInstantiation_ | Null] = js.undefined
   
   var typeParameters: js.UndefOr[TSTypeParameterInstantiation__ | Null] = js.undefined
   
   @JSName("type")
-  var type_CallExpression_ : CallExpression
+  var type_CallExpression_ : "CallExpression"
 }
 object CallExpression_ {
   
@@ -46,13 +40,13 @@ object CallExpression_ {
     
     inline def setCallee(value: Expression | Super_ | V8IntrinsicIdentifier_): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
-    inline def setOptional(value: `true` | `false`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: true | false): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     inline def setOptionalNull: Self = StObject.set(x, "optional", null)
     
     inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    inline def setType(value: CallExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "CallExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeArguments(value: TypeParameterInstantiation_): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
     

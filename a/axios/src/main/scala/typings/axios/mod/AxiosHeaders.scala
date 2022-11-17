@@ -1,6 +1,5 @@
 package typings.axios.mod
 
-import typings.axios.axiosBooleans.`true`
 import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,6 +25,9 @@ open class AxiosHeaders () extends StObject {
   def delete(header: js.Array[String], matcher: AxiosHeaderMatcher): Boolean = js.native
   
   def get(headerName: String): AxiosHeaderValue = js.native
+  @JSName("get")
+  @scala.annotation.targetName("get_true")
+  def get(headerName: String, matcher: true): AxiosHeaderValue = js.native
   def get(headerName: String, matcher: AxiosHeaderMatcher): AxiosHeaderValue = js.native
   def get(headerName: String, parser: js.RegExp): RegExpExecArray | Null = js.native
   
@@ -39,10 +41,10 @@ open class AxiosHeaders () extends StObject {
   
   var getUserAgent: AxiosHeaderGetter = js.native
   
-  @JSName("get")
-  def get_true(headerName: String, matcher: `true`): AxiosHeaderValue = js.native
-  
   def has(header: String): Boolean = js.native
+  @JSName("has")
+  @scala.annotation.targetName("has_true")
+  def has(header: String, matcher: true): Boolean = js.native
   def has(header: String, matcher: AxiosHeaderMatcher): Boolean = js.native
   
   def hasAccept(): Boolean = js.native
@@ -69,9 +71,6 @@ open class AxiosHeaders () extends StObject {
   def hasUserAgent(matcher: AxiosHeaderMatcher): Boolean = js.native
   @JSName("hasUserAgent")
   var hasUserAgent_Original: AxiosHeaderTester = js.native
-  
-  @JSName("has")
-  def has_true(header: String, matcher: `true`): Boolean = js.native
   
   def normalize(format: Boolean): AxiosHeaders = js.native
   

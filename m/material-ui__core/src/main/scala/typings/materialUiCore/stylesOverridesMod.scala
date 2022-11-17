@@ -165,7 +165,6 @@ import typings.materialUiCore.listItemSecondaryActionListItemSecondaryActionMod.
 import typings.materialUiCore.listItemTextListItemTextMod.ListItemTextClassKey
 import typings.materialUiCore.listListMod.ListClassKey
 import typings.materialUiCore.listSubheaderListSubheaderMod.ListSubheaderClassKey
-import typings.materialUiCore.materialUiCoreStrings.`@global`
 import typings.materialUiCore.menuItemMenuItemMod.MenuItemClassKey
 import typings.materialUiCore.menuMenuMod.MenuClassKey
 import typings.materialUiCore.mobileStepperMobileStepperMod.MobileStepperClassKey
@@ -264,7 +263,7 @@ object stylesOverridesMod {
     /**
       * @deprecated See CssBaseline.d.ts
       */
-    var MuiCssBaseline: `@global`
+    var MuiCssBaseline: "@global"
     
     var MuiDialog: DialogClassKey
     
@@ -418,6 +417,112 @@ object stylesOverridesMod {
   }
   object ComponentNameToClassKey {
     
+    inline def apply(
+      MuiAccordion: AccordionClassKey,
+      MuiAccordionActions: AccordionActionsClassKey,
+      MuiAccordionDetails: AccordionDetailsClassKey,
+      MuiAccordionSummary: AccordionSummaryClassKey,
+      MuiAppBar: AppBarClassKey,
+      MuiAvatar: AvatarClassKey,
+      MuiBackdrop: BackdropClassKey,
+      MuiBadge: BadgeClassKey,
+      MuiBottomNavigation: BottomNavigationClassKey,
+      MuiBottomNavigationAction: BottomNavigationActionClassKey,
+      MuiBreadcrumbs: BreadcrumbsClassKey,
+      MuiButton: ButtonClassKey,
+      MuiButtonBase: ButtonBaseClassKey,
+      MuiButtonGroup: ButtonGroupClassKey,
+      MuiCard: CardClassKey,
+      MuiCardActionArea: CardActionAreaClassKey,
+      MuiCardActions: CardActionsClassKey,
+      MuiCardContent: CardContentClassKey,
+      MuiCardHeader: CardHeaderClassKey,
+      MuiCardMedia: CardMediaClassKey,
+      MuiCheckbox: CheckboxClassKey,
+      MuiChip: ChipClassKey,
+      MuiCircularProgress: CircularProgressClassKey,
+      MuiCollapse: CollapseClassKey,
+      MuiContainer: ContainerClassKey,
+      MuiDialog: DialogClassKey,
+      MuiDialogActions: DialogActionsClassKey,
+      MuiDialogContent: DialogContentClassKey,
+      MuiDialogContentText: DialogContentTextClassKey,
+      MuiDialogTitle: DialogTitleClassKey,
+      MuiDivider: DividerClassKey,
+      MuiDrawer: DrawerClassKey,
+      MuiExpansionPanel: ExpansionPanelClassKey,
+      MuiExpansionPanelActions: ExpansionPanelActionsClassKey,
+      MuiExpansionPanelDetails: ExpansionPanelDetailsClassKey,
+      MuiExpansionPanelSummary: ExpansionPanelSummaryClassKey,
+      MuiFab: FabClassKey,
+      MuiFilledInput: FilledInputClassKey,
+      MuiFormControl: FormControlClassKey,
+      MuiFormControlLabel: FormControlLabelClassKey,
+      MuiFormGroup: FormGroupClassKey,
+      MuiFormHelperText: FormHelperTextClassKey,
+      MuiFormLabel: FormLabelClassKey,
+      MuiGrid: GridClassKey,
+      MuiIcon: IconClassKey,
+      MuiIconButton: IconButtonClassKey,
+      MuiImageList: ImageListClassKey,
+      MuiImageListItem: ImageListItemClassKey,
+      MuiImageListItemBar: ImageListItemBarClassKey,
+      MuiInput: InputClassKey,
+      MuiInputAdornment: InputAdornmentClassKey,
+      MuiInputBase: InputBaseClassKey,
+      MuiInputLabel: InputLabelClassKey,
+      MuiLinearProgress: LinearProgressClassKey,
+      MuiLink: LinkClassKey,
+      MuiList: ListClassKey,
+      MuiListItem: ListItemClassKey,
+      MuiListItemAvatar: ListItemAvatarClassKey,
+      MuiListItemIcon: ListItemIconClassKey,
+      MuiListItemSecondaryAction: ListItemSecondaryActionClassKey,
+      MuiListItemText: ListItemTextClassKey,
+      MuiListSubheader: ListSubheaderClassKey,
+      MuiMenu: MenuClassKey,
+      MuiMenuItem: MenuItemClassKey,
+      MuiMobileStepper: MobileStepperClassKey,
+      MuiNativeSelect: NativeSelectClassKey,
+      MuiOutlinedInput: OutlinedInputClassKey,
+      MuiPaper: PaperClassKey,
+      MuiPopover: PopoverClassKey,
+      MuiRadio: RadioClassKey,
+      MuiScopedCssBaseline: ScopedCssBaselineClassKey,
+      MuiSelect: SelectClassKey,
+      MuiSlider: SliderClassKey,
+      MuiSnackbar: SnackbarClassKey,
+      MuiSnackbarContent: SnackbarContentClassKey,
+      MuiStep: StepClasskey,
+      MuiStepButton: StepButtonClasskey,
+      MuiStepConnector: StepConnectorClasskey,
+      MuiStepContent: StepContentClasskey,
+      MuiStepIcon: StepIconClasskey,
+      MuiStepLabel: StepLabelClasskey,
+      MuiStepper: StepperClasskey,
+      MuiSvgIcon: SvgIconClassKey,
+      MuiSwitch: SwitchClassKey,
+      MuiTab: TabClassKey,
+      MuiTable: TableClassKey,
+      MuiTableBody: TableBodyClassKey,
+      MuiTableCell: TableCellClassKey,
+      MuiTableContainer: TableContainerClassKey,
+      MuiTableFooter: TableFooterClassKey,
+      MuiTableHead: TableHeadClassKey,
+      MuiTablePagination: TablePaginationClassKey,
+      MuiTableRow: TableRowClassKey,
+      MuiTableSortLabel: TableSortLabelClassKey,
+      MuiTabs: TabsClassKey,
+      MuiTextField: TextFieldClassKey,
+      MuiToolbar: ToolbarClassKey,
+      MuiTooltip: TooltipClassKey,
+      MuiTouchRipple: TouchRippleClassKey,
+      MuiTypography: TypographyClassKey
+    ): ComponentNameToClassKey = {
+      val __obj = js.Dynamic.literal(MuiAccordion = MuiAccordion.asInstanceOf[js.Any], MuiAccordionActions = MuiAccordionActions.asInstanceOf[js.Any], MuiAccordionDetails = MuiAccordionDetails.asInstanceOf[js.Any], MuiAccordionSummary = MuiAccordionSummary.asInstanceOf[js.Any], MuiAppBar = MuiAppBar.asInstanceOf[js.Any], MuiAvatar = MuiAvatar.asInstanceOf[js.Any], MuiBackdrop = MuiBackdrop.asInstanceOf[js.Any], MuiBadge = MuiBadge.asInstanceOf[js.Any], MuiBottomNavigation = MuiBottomNavigation.asInstanceOf[js.Any], MuiBottomNavigationAction = MuiBottomNavigationAction.asInstanceOf[js.Any], MuiBreadcrumbs = MuiBreadcrumbs.asInstanceOf[js.Any], MuiButton = MuiButton.asInstanceOf[js.Any], MuiButtonBase = MuiButtonBase.asInstanceOf[js.Any], MuiButtonGroup = MuiButtonGroup.asInstanceOf[js.Any], MuiCard = MuiCard.asInstanceOf[js.Any], MuiCardActionArea = MuiCardActionArea.asInstanceOf[js.Any], MuiCardActions = MuiCardActions.asInstanceOf[js.Any], MuiCardContent = MuiCardContent.asInstanceOf[js.Any], MuiCardHeader = MuiCardHeader.asInstanceOf[js.Any], MuiCardMedia = MuiCardMedia.asInstanceOf[js.Any], MuiCheckbox = MuiCheckbox.asInstanceOf[js.Any], MuiChip = MuiChip.asInstanceOf[js.Any], MuiCircularProgress = MuiCircularProgress.asInstanceOf[js.Any], MuiCollapse = MuiCollapse.asInstanceOf[js.Any], MuiContainer = MuiContainer.asInstanceOf[js.Any], MuiCssBaseline = "@global", MuiDialog = MuiDialog.asInstanceOf[js.Any], MuiDialogActions = MuiDialogActions.asInstanceOf[js.Any], MuiDialogContent = MuiDialogContent.asInstanceOf[js.Any], MuiDialogContentText = MuiDialogContentText.asInstanceOf[js.Any], MuiDialogTitle = MuiDialogTitle.asInstanceOf[js.Any], MuiDivider = MuiDivider.asInstanceOf[js.Any], MuiDrawer = MuiDrawer.asInstanceOf[js.Any], MuiExpansionPanel = MuiExpansionPanel.asInstanceOf[js.Any], MuiExpansionPanelActions = MuiExpansionPanelActions.asInstanceOf[js.Any], MuiExpansionPanelDetails = MuiExpansionPanelDetails.asInstanceOf[js.Any], MuiExpansionPanelSummary = MuiExpansionPanelSummary.asInstanceOf[js.Any], MuiFab = MuiFab.asInstanceOf[js.Any], MuiFilledInput = MuiFilledInput.asInstanceOf[js.Any], MuiFormControl = MuiFormControl.asInstanceOf[js.Any], MuiFormControlLabel = MuiFormControlLabel.asInstanceOf[js.Any], MuiFormGroup = MuiFormGroup.asInstanceOf[js.Any], MuiFormHelperText = MuiFormHelperText.asInstanceOf[js.Any], MuiFormLabel = MuiFormLabel.asInstanceOf[js.Any], MuiGrid = MuiGrid.asInstanceOf[js.Any], MuiIcon = MuiIcon.asInstanceOf[js.Any], MuiIconButton = MuiIconButton.asInstanceOf[js.Any], MuiImageList = MuiImageList.asInstanceOf[js.Any], MuiImageListItem = MuiImageListItem.asInstanceOf[js.Any], MuiImageListItemBar = MuiImageListItemBar.asInstanceOf[js.Any], MuiInput = MuiInput.asInstanceOf[js.Any], MuiInputAdornment = MuiInputAdornment.asInstanceOf[js.Any], MuiInputBase = MuiInputBase.asInstanceOf[js.Any], MuiInputLabel = MuiInputLabel.asInstanceOf[js.Any], MuiLinearProgress = MuiLinearProgress.asInstanceOf[js.Any], MuiLink = MuiLink.asInstanceOf[js.Any], MuiList = MuiList.asInstanceOf[js.Any], MuiListItem = MuiListItem.asInstanceOf[js.Any], MuiListItemAvatar = MuiListItemAvatar.asInstanceOf[js.Any], MuiListItemIcon = MuiListItemIcon.asInstanceOf[js.Any], MuiListItemSecondaryAction = MuiListItemSecondaryAction.asInstanceOf[js.Any], MuiListItemText = MuiListItemText.asInstanceOf[js.Any], MuiListSubheader = MuiListSubheader.asInstanceOf[js.Any], MuiMenu = MuiMenu.asInstanceOf[js.Any], MuiMenuItem = MuiMenuItem.asInstanceOf[js.Any], MuiMobileStepper = MuiMobileStepper.asInstanceOf[js.Any], MuiNativeSelect = MuiNativeSelect.asInstanceOf[js.Any], MuiOutlinedInput = MuiOutlinedInput.asInstanceOf[js.Any], MuiPaper = MuiPaper.asInstanceOf[js.Any], MuiPopover = MuiPopover.asInstanceOf[js.Any], MuiRadio = MuiRadio.asInstanceOf[js.Any], MuiScopedCssBaseline = MuiScopedCssBaseline.asInstanceOf[js.Any], MuiSelect = MuiSelect.asInstanceOf[js.Any], MuiSlider = MuiSlider.asInstanceOf[js.Any], MuiSnackbar = MuiSnackbar.asInstanceOf[js.Any], MuiSnackbarContent = MuiSnackbarContent.asInstanceOf[js.Any], MuiStep = MuiStep.asInstanceOf[js.Any], MuiStepButton = MuiStepButton.asInstanceOf[js.Any], MuiStepConnector = MuiStepConnector.asInstanceOf[js.Any], MuiStepContent = MuiStepContent.asInstanceOf[js.Any], MuiStepIcon = MuiStepIcon.asInstanceOf[js.Any], MuiStepLabel = MuiStepLabel.asInstanceOf[js.Any], MuiStepper = MuiStepper.asInstanceOf[js.Any], MuiSvgIcon = MuiSvgIcon.asInstanceOf[js.Any], MuiSwitch = MuiSwitch.asInstanceOf[js.Any], MuiTab = MuiTab.asInstanceOf[js.Any], MuiTable = MuiTable.asInstanceOf[js.Any], MuiTableBody = MuiTableBody.asInstanceOf[js.Any], MuiTableCell = MuiTableCell.asInstanceOf[js.Any], MuiTableContainer = MuiTableContainer.asInstanceOf[js.Any], MuiTableFooter = MuiTableFooter.asInstanceOf[js.Any], MuiTableHead = MuiTableHead.asInstanceOf[js.Any], MuiTablePagination = MuiTablePagination.asInstanceOf[js.Any], MuiTableRow = MuiTableRow.asInstanceOf[js.Any], MuiTableSortLabel = MuiTableSortLabel.asInstanceOf[js.Any], MuiTabs = MuiTabs.asInstanceOf[js.Any], MuiTextField = MuiTextField.asInstanceOf[js.Any], MuiToolbar = MuiToolbar.asInstanceOf[js.Any], MuiTooltip = MuiTooltip.asInstanceOf[js.Any], MuiTouchRipple = MuiTouchRipple.asInstanceOf[js.Any], MuiTypography = MuiTypography.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ComponentNameToClassKey]
+    }
+    
     extension [Self <: ComponentNameToClassKey](x: Self) {
       
       inline def setMuiAccordion(value: AccordionClassKey): Self = StObject.set(x, "MuiAccordion", value.asInstanceOf[js.Any])
@@ -470,7 +575,7 @@ object stylesOverridesMod {
       
       inline def setMuiContainer(value: ContainerClassKey): Self = StObject.set(x, "MuiContainer", value.asInstanceOf[js.Any])
       
-      inline def setMuiCssBaseline(value: `@global`): Self = StObject.set(x, "MuiCssBaseline", value.asInstanceOf[js.Any])
+      inline def setMuiCssBaseline(value: "@global"): Self = StObject.set(x, "MuiCssBaseline", value.asInstanceOf[js.Any])
       
       inline def setMuiDialog(value: DialogClassKey): Self = StObject.set(x, "MuiDialog", value.asInstanceOf[js.Any])
       

@@ -1,15 +1,12 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`11`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ForNode
   extends StObject
-     with Node2
-     with ParentNode2
-     with TemplateChildNode {
+     with Node2 {
   
   var children: js.Array[TemplateChildNode]
   
@@ -24,7 +21,7 @@ trait ForNode
   var source: ExpressionNode
   
   @JSName("type")
-  var type_ForNode: `11`
+  var type_ForNode: 11
   
   var valueAlias: js.UndefOr[ExpressionNode] = js.undefined
 }
@@ -63,7 +60,7 @@ object ForNode {
     
     inline def setSource(value: ExpressionNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `11`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 11): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValueAlias(value: ExpressionNode): Self = StObject.set(x, "valueAlias", value.asInstanceOf[js.Any])
     

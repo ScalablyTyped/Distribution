@@ -1,6 +1,5 @@
 package typings.expoFileSystem.buildFileSystemDottypesMod
 
-import typings.expoFileSystem.expoFileSystemStrings.ExponentFileSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +42,7 @@ trait ExponentFileSystemModule extends StObject {
   
   val moveAsync: js.UndefOr[PlatformMethod] = js.undefined
   
-  val name: ExponentFileSystem
+  val name: "ExponentFileSystem"
   
   val networkTaskCancelAsync: js.UndefOr[PlatformMethod] = js.undefined
   
@@ -146,7 +145,7 @@ object ExponentFileSystemModule {
     
     inline def setMoveAsyncUndefined: Self = StObject.set(x, "moveAsync", js.undefined)
     
-    inline def setName(value: ExponentFileSystem): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: "ExponentFileSystem"): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNetworkTaskCancelAsync(value: PlatformMethod): Self = StObject.set(x, "networkTaskCancelAsync", value.asInstanceOf[js.Any])
     

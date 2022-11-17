@@ -18,13 +18,6 @@ import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
 import typings.semanticUiReact.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps
 import typings.semanticUiReact.distCommonjsModulesSearchSearchResultMod.SearchResultProps
 import typings.semanticUiReact.distCommonjsModulesSearchSearchResultsMod.SearchResultsProps
-import typings.semanticUiReact.semanticUiReactStrings.big
-import typings.semanticUiReact.semanticUiReactStrings.huge
-import typings.semanticUiReact.semanticUiReactStrings.large
-import typings.semanticUiReact.semanticUiReactStrings.massive
-import typings.semanticUiReact.semanticUiReactStrings.mini
-import typings.semanticUiReact.semanticUiReactStrings.small
-import typings.semanticUiReact.semanticUiReactStrings.tiny
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.Record
@@ -269,7 +262,7 @@ object distCommonjsModulesSearchSearchMod {
     var showNoResults: js.UndefOr[Boolean] = js.undefined
     
     /** A search can have different sizes. */
-    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.undefined
+    var size: js.UndefOr["mini" | "tiny" | "small" | "large" | "big" | "huge" | "massive"] = js.undefined
     
     /** Current value of the search input. Creates a controlled component. */
     var value: js.UndefOr[String] = js.undefined
@@ -401,7 +394,7 @@ object distCommonjsModulesSearchSearchMod {
       
       inline def setShowNoResultsUndefined: Self = StObject.set(x, "showNoResults", js.undefined)
       
-      inline def setSize(value: mini | tiny | small | large | big | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "mini" | "tiny" | "small" | "large" | "big" | "huge" | "massive"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

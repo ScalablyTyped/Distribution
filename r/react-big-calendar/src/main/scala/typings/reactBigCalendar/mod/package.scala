@@ -41,6 +41,8 @@ type DateRangeFormatFunction = js.Function3[
 /* localizer */ js.UndefOr[DateLocalizer], 
 String]
 
+type DayLayoutAlgorithm = "overlap" | "no-overlap"
+
 type DayLayoutFunction[TEvent /* <: js.Object */] = js.Function1[/* _ */ Accessors[TEvent], js.Array[Style[TEvent]]]
 
 type DayPropGetter = js.Function2[
@@ -57,6 +59,8 @@ ClassName]
 
 type FormatInput = Double | String | js.Date
 
+type NavigateAction = "PREV" | "NEXT" | "TODAY" | "DATE"
+
 type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
 
 type SlotGroupPropGetter = js.Function0[HTMLAttributes[HTMLDivElement]]
@@ -65,6 +69,10 @@ type SlotPropGetter = js.Function2[
 /* date */ js.Date, 
 /* resourceId */ js.UndefOr[Double | String], 
 HTMLAttributes[HTMLDivElement]]
+
+type View = "month" | "week" | "work_week" | "day" | "agenda"
+
+type ViewKey = "MONTH" | "WEEK" | "WORK_WEEK" | "DAY" | "AGENDA"
 
 type ViewsProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] = js.Array[View] | Agenda
 

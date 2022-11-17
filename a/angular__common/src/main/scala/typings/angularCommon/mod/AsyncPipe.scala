@@ -1,7 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.async
 import typings.angularCore.mod.ChangeDetectorRef
 import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.PipeTransform
@@ -69,6 +67,6 @@ object AsyncPipe {
   
   @JSImport("@angular/common", "AsyncPipe.\u0275pipe")
   @js.native
-  def ɵpipe: ɵɵPipeDeclaration[AsyncPipe, async, `true`] = js.native
-  inline def ɵpipe_=(x: ɵɵPipeDeclaration[AsyncPipe, async, `true`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
+  def ɵpipe: ɵɵPipeDeclaration[AsyncPipe, "async", true] = js.native
+  inline def ɵpipe_=(x: ɵɵPipeDeclaration[AsyncPipe, "async", true]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
 }

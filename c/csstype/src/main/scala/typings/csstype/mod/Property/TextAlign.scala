@@ -4,47 +4,31 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.csstypeStrings.center
-  - typings.csstype.csstypeStrings.end
-  - typings.csstype.csstypeStrings.justify
-  - typings.csstype.csstypeStrings.left
-  - typings.csstype.csstypeStrings.`match-parent`
-  - typings.csstype.csstypeStrings.right
-  - typings.csstype.csstypeStrings.start
-  - typings.csstype.csstypeStrings.`-moz-initial`
-  - typings.csstype.csstypeStrings.inherit
-  - typings.csstype.csstypeStrings.initial
-  - typings.csstype.csstypeStrings.revert
-  - typings.csstype.csstypeStrings.`revert-layer`
-  - typings.csstype.csstypeStrings.unset
-*/
-trait TextAlign extends StObject
 object TextAlign {
   
-  inline def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def center: typings.csstype.csstypeStrings.center = "center".asInstanceOf[typings.csstype.csstypeStrings.center]
+  inline def center: "center" = "center".asInstanceOf["center"]
   
-  inline def end: typings.csstype.csstypeStrings.end = "end".asInstanceOf[typings.csstype.csstypeStrings.end]
+  inline def end: "end" = "end".asInstanceOf["end"]
   
-  inline def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def justify: typings.csstype.csstypeStrings.justify = "justify".asInstanceOf[typings.csstype.csstypeStrings.justify]
+  inline def justify: "justify" = "justify".asInstanceOf["justify"]
   
-  inline def left: typings.csstype.csstypeStrings.left = "left".asInstanceOf[typings.csstype.csstypeStrings.left]
+  inline def left: "left" = "left".asInstanceOf["left"]
   
-  inline def `match-parent`: typings.csstype.csstypeStrings.`match-parent` = "match-parent".asInstanceOf[typings.csstype.csstypeStrings.`match-parent`]
+  inline def `match-parent`: "match-parent" = "match-parent".asInstanceOf["match-parent"]
   
-  inline def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def `revert-layer`: typings.csstype.csstypeStrings.`revert-layer` = "revert-layer".asInstanceOf[typings.csstype.csstypeStrings.`revert-layer`]
+  inline def `revert-layer`: "revert-layer" = "revert-layer".asInstanceOf["revert-layer"]
   
-  inline def right: typings.csstype.csstypeStrings.right = "right".asInstanceOf[typings.csstype.csstypeStrings.right]
+  inline def right: "right" = "right".asInstanceOf["right"]
   
-  inline def start: typings.csstype.csstypeStrings.start = "start".asInstanceOf[typings.csstype.csstypeStrings.start]
+  inline def start: "start" = "start".asInstanceOf["start"]
   
-  inline def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
 }

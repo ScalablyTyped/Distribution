@@ -8,8 +8,6 @@ import typings.reactNavigation.mod.NavigationScreenProp
 import typings.reactNavigationDrawer.libTypescriptSrcTypesMod.DrawerContentComponentProps
 import typings.reactNavigationDrawer.libTypescriptSrcTypesMod.NavigationDrawerState
 import typings.reactNavigationDrawer.libTypescriptSrcTypesMod.SceneDescriptorMap
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.left
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.right
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -50,7 +48,7 @@ object libTypescriptSrcViewsDrawerSidebarMod {
     
     var drawerOpenProgress: Node
     
-    var drawerPosition: left | right
+    var drawerPosition: "left" | "right"
     
     var navigation: NavigationScreenProp[NavigationDrawerState, NavigationParams]
     
@@ -63,7 +61,7 @@ object libTypescriptSrcViewsDrawerSidebarMod {
     inline def apply(
       descriptors: SceneDescriptorMap,
       drawerOpenProgress: Node,
-      drawerPosition: left | right,
+      drawerPosition: "left" | "right",
       navigation: NavigationScreenProp[NavigationDrawerState, NavigationParams]
     ): Props = {
       val __obj = js.Dynamic.literal(descriptors = descriptors.asInstanceOf[js.Any], drawerOpenProgress = drawerOpenProgress.asInstanceOf[js.Any], drawerPosition = drawerPosition.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any])
@@ -84,7 +82,7 @@ object libTypescriptSrcViewsDrawerSidebarMod {
       
       inline def setDrawerOpenProgress(value: Node): Self = StObject.set(x, "drawerOpenProgress", value.asInstanceOf[js.Any])
       
-      inline def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
+      inline def setDrawerPosition(value: "left" | "right"): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
       
       inline def setNavigation(value: NavigationScreenProp[NavigationDrawerState, NavigationParams]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       

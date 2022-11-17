@@ -1,6 +1,5 @@
 package typings.typescript.mod
 
-import typings.typescript.typescriptStrings.invoked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Signals that the user manually requested signature help.
   * The language service will unconditionally attempt to provide a result.
   */
-trait SignatureHelpInvokedReason
-  extends StObject
-     with SignatureHelpTriggerReason {
+trait SignatureHelpInvokedReason extends StObject {
   
-  var kind: invoked
+  var kind: "invoked"
   
   var triggerCharacter: Unit
 }
@@ -26,7 +23,7 @@ object SignatureHelpInvokedReason {
   
   extension [Self <: SignatureHelpInvokedReason](x: Self) {
     
-    inline def setKind(value: invoked): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "invoked"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setTriggerCharacter(value: Unit): Self = StObject.set(x, "triggerCharacter", value.asInstanceOf[js.Any])
   }

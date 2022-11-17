@@ -1,6 +1,5 @@
 package typings.reactNative
 
-import typings.reactNative.reactNativeStrings.readystatechange
 import typings.std.Document
 import typings.std.Event
 import typings.std.EventTarget
@@ -27,7 +26,8 @@ trait XMLHttpRequest
   def abort(): Unit = js.native
   
   @JSName("addEventListener")
-  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_readystatechange")
+  def addEventListener(`type`: "readystatechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   
   def getAllResponseHeaders(): String = js.native
   
@@ -54,7 +54,8 @@ trait XMLHttpRequest
   
   //  addEventListener(type: string, listener: EventListenerOrEventListenerObject): void;
   @JSName("removeEventListener")
-  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_readystatechange")
+  def removeEventListener(`type`: "readystatechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   
   val response: Any = js.native
   

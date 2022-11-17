@@ -1,21 +1,17 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSTupleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSTupleType__
   extends StObject
-     with BaseNode
-     with Node
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   var elementTypes: js.Array[TSType | TSNamedTupleMember__]
   
   @JSName("type")
-  var type_TSTupleType__ : TSTupleType
+  var type_TSTupleType__ : "TSTupleType"
 }
 object TSTupleType__ {
   
@@ -31,6 +27,6 @@ object TSTupleType__ {
     
     inline def setElementTypesVarargs(value: (TSType | TSNamedTupleMember__)*): Self = StObject.set(x, "elementTypes", js.Array(value*))
     
-    inline def setType(value: TSTupleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSTupleType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

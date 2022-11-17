@@ -1,20 +1,18 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.angularCompilerInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InterpolationToken
   extends StObject
-     with TokenBase
-     with InterpolatedTextToken {
+     with TokenBase {
   
   @JSName("parts")
   var parts_InterpolationToken: (js.Tuple3[/* startMarker */ String, /* expression */ String, /* endMarker */ String]) | (js.Tuple2[/* startMarker */ String, /* expression */ String])
   
   @JSName("type")
-  var type_InterpolationToken: `8`
+  var type_InterpolationToken: 8
 }
 object InterpolationToken {
   
@@ -33,6 +31,6 @@ object InterpolationToken {
       value: (js.Tuple3[/* startMarker */ String, /* expression */ String, /* endMarker */ String]) | (js.Tuple2[/* startMarker */ String, /* expression */ String])
     ): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `8`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 8): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

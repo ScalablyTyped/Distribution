@@ -1,8 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.backward
-import typings.std.stdStrings.forward
-import typings.std.stdStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,7 +95,7 @@ trait HTMLTextAreaElement
   def select(): Unit = js.native
   
   /* standard dom */
-  var selectionDirection: forward | backward | none = js.native
+  var selectionDirection: "forward" | "backward" | "none" = js.native
   
   /** Gets or sets the end position or offset of a text selection. */
   /* standard dom */
@@ -131,11 +128,19 @@ trait HTMLTextAreaElement
   def setSelectionRange(): Unit = js.native
   def setSelectionRange(start: Double): Unit = js.native
   def setSelectionRange(start: Double, end: Double): Unit = js.native
-  def setSelectionRange(start: Double, end: Double, direction: forward | backward | none): Unit = js.native
-  def setSelectionRange(start: Double, end: Null, direction: forward | backward | none): Unit = js.native
+  @JSName("setSelectionRange")
+  @scala.annotation.targetName("setSelectionRange_forward_backward_none")
+  def setSelectionRange(start: Double, end: Double, direction: "forward" | "backward" | "none"): Unit = js.native
+  @JSName("setSelectionRange")
+  @scala.annotation.targetName("setSelectionRange_forward_backward_none")
+  def setSelectionRange(start: Double, end: Null, direction: "forward" | "backward" | "none"): Unit = js.native
   def setSelectionRange(start: Null, end: Double): Unit = js.native
-  def setSelectionRange(start: Null, end: Double, direction: forward | backward | none): Unit = js.native
-  def setSelectionRange(start: Null, end: Null, direction: forward | backward | none): Unit = js.native
+  @JSName("setSelectionRange")
+  @scala.annotation.targetName("setSelectionRange_forward_backward_none")
+  def setSelectionRange(start: Null, end: Double, direction: "forward" | "backward" | "none"): Unit = js.native
+  @JSName("setSelectionRange")
+  @scala.annotation.targetName("setSelectionRange_forward_backward_none")
+  def setSelectionRange(start: Null, end: Null, direction: "forward" | "backward" | "none"): Unit = js.native
   
   /* standard dom */
   val textLength: Double = js.native

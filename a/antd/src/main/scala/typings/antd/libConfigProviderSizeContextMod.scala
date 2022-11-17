@@ -43,15 +43,7 @@ object libConfigProviderSizeContextMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.small
-    - typings.antd.antdStrings.middle
-    - typings.antd.antdStrings.large
-    - scala.Unit
-  */
-  type SizeType = js.UndefOr[_SizeType]
-  
-  trait _SizeType extends StObject
+  type SizeType = js.UndefOr["small" | "middle" | "large"]
   
   type _To = Context[SizeType]
   

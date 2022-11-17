@@ -102,14 +102,7 @@ object mod {
     def apply(cssColorSpecifier: String): RGBColor | HSLColor | Null = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.d3Color.mod.RGBColor
-    - typings.d3Color.mod.HSLColor
-    - typings.d3Color.mod.LabColor
-    - typings.d3Color.mod.HCLColor
-    - typings.d3Color.mod.CubehelixColor
-  */
-  trait ColorSpaceObject extends StObject
+  type ColorSpaceObject = RGBColor | HSLColor | LabColor | HCLColor | CubehelixColor
   
   trait Color_ extends StObject {
     
@@ -184,8 +177,7 @@ object mod {
   @js.native
   trait CubehelixColor
     extends StObject
-       with Color_
-       with ColorSpaceObject {
+       with Color_ {
     
     /**
       * Returns a brighter copy of this color. If k is specified, it controls how much brighter the returned color should be.
@@ -283,8 +275,7 @@ object mod {
   @js.native
   trait HCLColor
     extends StObject
-       with Color_
-       with ColorSpaceObject {
+       with Color_ {
     
     /**
       * Returns a brighter copy of this color. If k is specified, it controls how much brighter the returned color should be.
@@ -375,8 +366,7 @@ object mod {
   @js.native
   trait HSLColor
     extends StObject
-       with Color_
-       with ColorSpaceObject {
+       with Color_ {
     
     /**
       * Returns a brighter copy of this color. If k is specified, it controls how much brighter the returned color should be.
@@ -504,8 +494,7 @@ object mod {
   @js.native
   trait LabColor
     extends StObject
-       with Color_
-       with ColorSpaceObject {
+       with Color_ {
     
     /**
       * Position between red/magenta and green typically in [-160, +160].
@@ -596,8 +585,7 @@ object mod {
   @js.native
   trait RGBColor
     extends StObject
-       with Color_
-       with ColorSpaceObject {
+       with Color_ {
     
     /**
       * Value of blue channel

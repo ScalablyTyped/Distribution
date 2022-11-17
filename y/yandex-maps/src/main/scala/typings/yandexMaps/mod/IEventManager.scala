@@ -19,102 +19,6 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
-import typings.yandexMaps.yandexMapsStrings.abort
-import typings.yandexMaps.yandexMapsStrings.animationcancel
-import typings.yandexMaps.yandexMapsStrings.animationend
-import typings.yandexMaps.yandexMapsStrings.animationiteration
-import typings.yandexMaps.yandexMapsStrings.animationstart
-import typings.yandexMaps.yandexMapsStrings.auxclick
-import typings.yandexMaps.yandexMapsStrings.beforeinput
-import typings.yandexMaps.yandexMapsStrings.blur
-import typings.yandexMaps.yandexMapsStrings.cancel
-import typings.yandexMaps.yandexMapsStrings.canplay
-import typings.yandexMaps.yandexMapsStrings.canplaythrough
-import typings.yandexMaps.yandexMapsStrings.change
-import typings.yandexMaps.yandexMapsStrings.click
-import typings.yandexMaps.yandexMapsStrings.close
-import typings.yandexMaps.yandexMapsStrings.compositionend
-import typings.yandexMaps.yandexMapsStrings.compositionstart
-import typings.yandexMaps.yandexMapsStrings.compositionupdate
-import typings.yandexMaps.yandexMapsStrings.contextmenu
-import typings.yandexMaps.yandexMapsStrings.cuechange
-import typings.yandexMaps.yandexMapsStrings.dblclick
-import typings.yandexMaps.yandexMapsStrings.drag
-import typings.yandexMaps.yandexMapsStrings.dragend
-import typings.yandexMaps.yandexMapsStrings.dragenter
-import typings.yandexMaps.yandexMapsStrings.dragleave
-import typings.yandexMaps.yandexMapsStrings.dragover
-import typings.yandexMaps.yandexMapsStrings.dragstart
-import typings.yandexMaps.yandexMapsStrings.drop
-import typings.yandexMaps.yandexMapsStrings.durationchange
-import typings.yandexMaps.yandexMapsStrings.emptied
-import typings.yandexMaps.yandexMapsStrings.ended
-import typings.yandexMaps.yandexMapsStrings.error
-import typings.yandexMaps.yandexMapsStrings.focus
-import typings.yandexMaps.yandexMapsStrings.focusin
-import typings.yandexMaps.yandexMapsStrings.focusout
-import typings.yandexMaps.yandexMapsStrings.formdata
-import typings.yandexMaps.yandexMapsStrings.gotpointercapture
-import typings.yandexMaps.yandexMapsStrings.input
-import typings.yandexMaps.yandexMapsStrings.invalid
-import typings.yandexMaps.yandexMapsStrings.keydown
-import typings.yandexMaps.yandexMapsStrings.keypress
-import typings.yandexMaps.yandexMapsStrings.keyup
-import typings.yandexMaps.yandexMapsStrings.load
-import typings.yandexMaps.yandexMapsStrings.loadeddata
-import typings.yandexMaps.yandexMapsStrings.loadedmetadata
-import typings.yandexMaps.yandexMapsStrings.loadstart
-import typings.yandexMaps.yandexMapsStrings.lostpointercapture
-import typings.yandexMaps.yandexMapsStrings.mousedown
-import typings.yandexMaps.yandexMapsStrings.mouseenter
-import typings.yandexMaps.yandexMapsStrings.mouseleave
-import typings.yandexMaps.yandexMapsStrings.mousemove
-import typings.yandexMaps.yandexMapsStrings.mouseout
-import typings.yandexMaps.yandexMapsStrings.mouseover
-import typings.yandexMaps.yandexMapsStrings.mouseup
-import typings.yandexMaps.yandexMapsStrings.pause
-import typings.yandexMaps.yandexMapsStrings.play
-import typings.yandexMaps.yandexMapsStrings.playing
-import typings.yandexMaps.yandexMapsStrings.pointercancel
-import typings.yandexMaps.yandexMapsStrings.pointerdown
-import typings.yandexMaps.yandexMapsStrings.pointerenter
-import typings.yandexMaps.yandexMapsStrings.pointerleave
-import typings.yandexMaps.yandexMapsStrings.pointermove
-import typings.yandexMaps.yandexMapsStrings.pointerout
-import typings.yandexMaps.yandexMapsStrings.pointerover
-import typings.yandexMaps.yandexMapsStrings.pointerup
-import typings.yandexMaps.yandexMapsStrings.progress
-import typings.yandexMaps.yandexMapsStrings.ratechange
-import typings.yandexMaps.yandexMapsStrings.reset
-import typings.yandexMaps.yandexMapsStrings.resize
-import typings.yandexMaps.yandexMapsStrings.scroll
-import typings.yandexMaps.yandexMapsStrings.securitypolicyviolation
-import typings.yandexMaps.yandexMapsStrings.seeked
-import typings.yandexMaps.yandexMapsStrings.seeking
-import typings.yandexMaps.yandexMapsStrings.select
-import typings.yandexMaps.yandexMapsStrings.selectionchange
-import typings.yandexMaps.yandexMapsStrings.selectstart
-import typings.yandexMaps.yandexMapsStrings.slotchange
-import typings.yandexMaps.yandexMapsStrings.stalled
-import typings.yandexMaps.yandexMapsStrings.submit
-import typings.yandexMaps.yandexMapsStrings.suspend
-import typings.yandexMaps.yandexMapsStrings.timeupdate
-import typings.yandexMaps.yandexMapsStrings.toggle
-import typings.yandexMaps.yandexMapsStrings.touchcancel
-import typings.yandexMaps.yandexMapsStrings.touchend
-import typings.yandexMaps.yandexMapsStrings.touchmove
-import typings.yandexMaps.yandexMapsStrings.touchstart
-import typings.yandexMaps.yandexMapsStrings.transitioncancel
-import typings.yandexMaps.yandexMapsStrings.transitionend
-import typings.yandexMaps.yandexMapsStrings.transitionrun
-import typings.yandexMaps.yandexMapsStrings.transitionstart
-import typings.yandexMaps.yandexMapsStrings.volumechange
-import typings.yandexMaps.yandexMapsStrings.waiting
-import typings.yandexMaps.yandexMapsStrings.webkitanimationend
-import typings.yandexMaps.yandexMapsStrings.webkitanimationiteration
-import typings.yandexMaps.yandexMapsStrings.webkitanimationstart
-import typings.yandexMaps.yandexMapsStrings.webkittransitionend
-import typings.yandexMaps.yandexMapsStrings.wheel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,6 +28,2580 @@ trait IEventManager[TargetGeometry]
   extends StObject
      with IEventTrigger {
   
+  @JSName("add")
+  @scala.annotation.targetName("add_dragenter")
+  def add(types: "dragenter", callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationiteration")
+  def add(
+    types: "animationiteration",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerover")
+  def add(
+    types: "pointerover",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragstart")
+  def add(types: "dragstart", callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_ended")
+  def add(types: "ended", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_focus")
+  def add(types: "focus", callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_beforeinput")
+  def add(types: "beforeinput", callback: js.Function1[/* event */ IEvent[InputEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_ratechange")
+  def add(types: "ratechange", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_compositionupdate")
+  def add(
+    types: "compositionupdate",
+    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_abort")
+  def add(types: "abort", callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_blur")
+  def add(types: "blur", callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_loadedmetadata")
+  def add(types: "loadedmetadata", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_drop")
+  def add(types: "drop", callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_submit")
+  def add(types: "submit", callback: js.Function1[/* event */ IEvent[SubmitEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointercancel")
+  def add(
+    types: "pointercancel",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_seeking")
+  def add(types: "seeking", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mousedown")
+  def add(types: "mousedown", callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_cuechange")
+  def add(types: "cuechange", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_toggle")
+  def add(types: "toggle", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_wheel")
+  def add(types: "wheel", callback: js.Function1[/* event */ IEvent[WheelEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pause")
+  def add(types: "pause", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationstart")
+  def add(
+    types: "animationstart",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_keyup")
+  def add(types: "keyup", callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_slotchange")
+  def add(types: "slotchange", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_contextmenu")
+  def add(types: "contextmenu", callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerleave")
+  def add(
+    types: "pointerleave",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerdown")
+  def add(
+    types: "pointerdown",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_canplay")
+  def add(types: "canplay", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_resize")
+  def add(types: "resize", callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_selectstart")
+  def add(types: "selectstart", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragover")
+  def add(types: "dragover", callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_volumechange")
+  def add(types: "volumechange", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mousemove")
+  def add(types: "mousemove", callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitionend")
+  def add(
+    types: "transitionend",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_compositionstart")
+  def add(
+    types: "compositionstart",
+    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitioncancel")
+  def add(
+    types: "transitioncancel",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_gotpointercapture")
+  def add(
+    types: "gotpointercapture",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragend")
+  def add(types: "dragend", callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseover")
+  def add(types: "mouseover", callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerout")
+  def add(
+    types: "pointerout",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_click")
+  def add(types: "click", callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_selectionchange")
+  def add(types: "selectionchange", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationend")
+  def add(
+    types: "animationend",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_input")
+  def add(types: "input", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitionrun")
+  def add(
+    types: "transitionrun",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseup")
+  def add(types: "mouseup", callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_keydown")
+  def add(types: "keydown", callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_error")
+  def add(types: "error", callback: js.Function1[/* event */ IEvent[ErrorEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_load")
+  def add(types: "load", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_progress")
+  def add(
+    types: "progress",
+    callback: js.Function1[/* event */ IEvent[ProgressEvent[EventTarget], TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_keypress")
+  def add(types: "keypress", callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkitanimationend")
+  def add(
+    types: "webkitanimationend",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragleave")
+  def add(types: "dragleave", callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_emptied")
+  def add(types: "emptied", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_change")
+  def add(types: "change", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_loadeddata")
+  def add(types: "loadeddata", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseout")
+  def add(types: "mouseout", callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkitanimationiteration")
+  def add(
+    types: "webkitanimationiteration",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchmove")
+  def add(types: "touchmove", callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseleave")
+  def add(types: "mouseleave", callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationcancel")
+  def add(
+    types: "animationcancel",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_reset")
+  def add(types: "reset", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_close")
+  def add(types: "close", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_scroll")
+  def add(types: "scroll", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_drag")
+  def add(types: "drag", callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_seeked")
+  def add(types: "seeked", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_playing")
+  def add(types: "playing", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_invalid")
+  def add(types: "invalid", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchstart")
+  def add(types: "touchstart", callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_cancel")
+  def add(types: "cancel", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitionstart")
+  def add(
+    types: "transitionstart",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_formdata")
+  def add(types: "formdata", callback: js.Function1[/* event */ IEvent[FormDataEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerenter")
+  def add(
+    types: "pointerenter",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_focusout")
+  def add(types: "focusout", callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkitanimationstart")
+  def add(
+    types: "webkitanimationstart",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkittransitionend")
+  def add(
+    types: "webkittransitionend",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerup")
+  def add(types: "pointerup", callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchend")
+  def add(types: "touchend", callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_loadstart")
+  def add(types: "loadstart", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_securitypolicyviolation")
+  def add(
+    types: "securitypolicyviolation",
+    callback: js.Function1[/* event */ IEvent[SecurityPolicyViolationEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_auxclick")
+  def add(types: "auxclick", callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_canplaythrough")
+  def add(types: "canplaythrough", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchcancel")
+  def add(types: "touchcancel", callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_stalled")
+  def add(types: "stalled", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_lostpointercapture")
+  def add(
+    types: "lostpointercapture",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_compositionend")
+  def add(
+    types: "compositionend",
+    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_focusin")
+  def add(types: "focusin", callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dblclick")
+  def add(types: "dblclick", callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_play")
+  def add(types: "play", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_suspend")
+  def add(types: "suspend", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_timeupdate")
+  def add(types: "timeupdate", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_select")
+  def add(types: "select", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_durationchange")
+  def add(types: "durationchange", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseenter")
+  def add(types: "mouseenter", callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_waiting")
+  def add(types: "waiting", callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointermove")
+  def add(
+    types: "pointermove",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_resize")
+  def add(
+    types: "resize",
+    callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_focusin")
+  def add(
+    types: "focusin",
+    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationend")
+  def add(
+    types: "animationend",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_seeked")
+  def add(
+    types: "seeked",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseup")
+  def add(
+    types: "mouseup",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkitanimationstart")
+  def add(
+    types: "webkitanimationstart",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_loadstart")
+  def add(
+    types: "loadstart",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_keypress")
+  def add(
+    types: "keypress",
+    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragover")
+  def add(
+    types: "dragover",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_drag")
+  def add(
+    types: "drag",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_cancel")
+  def add(
+    types: "cancel",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_toggle")
+  def add(
+    types: "toggle",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchstart")
+  def add(
+    types: "touchstart",
+    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_click")
+  def add(
+    types: "click",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseout")
+  def add(
+    types: "mouseout",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_stalled")
+  def add(
+    types: "stalled",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_change")
+  def add(
+    types: "change",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_gotpointercapture")
+  def add(
+    types: "gotpointercapture",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_error")
+  def add(
+    types: "error",
+    callback: js.Function1[/* event */ IEvent[ErrorEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationiteration")
+  def add(
+    types: "animationiteration",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_load")
+  def add(
+    types: "load",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitionstart")
+  def add(
+    types: "transitionstart",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_auxclick")
+  def add(
+    types: "auxclick",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_scroll")
+  def add(
+    types: "scroll",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_compositionupdate")
+  def add(
+    types: "compositionupdate",
+    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitionend")
+  def add(
+    types: "transitionend",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_progress")
+  def add(
+    types: "progress",
+    callback: js.Function1[/* event */ IEvent[ProgressEvent[EventTarget], TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_timeupdate")
+  def add(
+    types: "timeupdate",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_submit")
+  def add(
+    types: "submit",
+    callback: js.Function1[/* event */ IEvent[SubmitEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseleave")
+  def add(
+    types: "mouseleave",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_blur")
+  def add(
+    types: "blur",
+    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerenter")
+  def add(
+    types: "pointerenter",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchcancel")
+  def add(
+    types: "touchcancel",
+    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_waiting")
+  def add(
+    types: "waiting",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_wheel")
+  def add(
+    types: "wheel",
+    callback: js.Function1[/* event */ IEvent[WheelEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_loadeddata")
+  def add(
+    types: "loadeddata",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mousedown")
+  def add(
+    types: "mousedown",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_compositionend")
+  def add(
+    types: "compositionend",
+    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkitanimationend")
+  def add(
+    types: "webkitanimationend",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pause")
+  def add(
+    types: "pause",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_canplaythrough")
+  def add(
+    types: "canplaythrough",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkittransitionend")
+  def add(
+    types: "webkittransitionend",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_reset")
+  def add(
+    types: "reset",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_ratechange")
+  def add(
+    types: "ratechange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchend")
+  def add(
+    types: "touchend",
+    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_formdata")
+  def add(
+    types: "formdata",
+    callback: js.Function1[/* event */ IEvent[FormDataEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationcancel")
+  def add(
+    types: "animationcancel",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_abort")
+  def add(
+    types: "abort",
+    callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_play")
+  def add(
+    types: "play",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointercancel")
+  def add(
+    types: "pointercancel",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_seeking")
+  def add(
+    types: "seeking",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mousemove")
+  def add(
+    types: "mousemove",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_input")
+  def add(
+    types: "input",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragleave")
+  def add(
+    types: "dragleave",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitionrun")
+  def add(
+    types: "transitionrun",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragstart")
+  def add(
+    types: "dragstart",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_ended")
+  def add(
+    types: "ended",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_contextmenu")
+  def add(
+    types: "contextmenu",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerleave")
+  def add(
+    types: "pointerleave",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkitanimationiteration")
+  def add(
+    types: "webkitanimationiteration",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dblclick")
+  def add(
+    types: "dblclick",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_keydown")
+  def add(
+    types: "keydown",
+    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationstart")
+  def add(
+    types: "animationstart",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_invalid")
+  def add(
+    types: "invalid",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerout")
+  def add(
+    types: "pointerout",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_emptied")
+  def add(
+    types: "emptied",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerdown")
+  def add(
+    types: "pointerdown",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_playing")
+  def add(
+    types: "playing",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_compositionstart")
+  def add(
+    types: "compositionstart",
+    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitioncancel")
+  def add(
+    types: "transitioncancel",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_volumechange")
+  def add(
+    types: "volumechange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_select")
+  def add(
+    types: "select",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_lostpointercapture")
+  def add(
+    types: "lostpointercapture",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerup")
+  def add(
+    types: "pointerup",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_focusout")
+  def add(
+    types: "focusout",
+    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchmove")
+  def add(
+    types: "touchmove",
+    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragenter")
+  def add(
+    types: "dragenter",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_selectstart")
+  def add(
+    types: "selectstart",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_selectionchange")
+  def add(
+    types: "selectionchange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerover")
+  def add(
+    types: "pointerover",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_cuechange")
+  def add(
+    types: "cuechange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_suspend")
+  def add(
+    types: "suspend",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_canplay")
+  def add(
+    types: "canplay",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseenter")
+  def add(
+    types: "mouseenter",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_close")
+  def add(
+    types: "close",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_slotchange")
+  def add(
+    types: "slotchange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_durationchange")
+  def add(
+    types: "durationchange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointermove")
+  def add(
+    types: "pointermove",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_keyup")
+  def add(
+    types: "keyup",
+    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_loadedmetadata")
+  def add(
+    types: "loadedmetadata",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_securitypolicyviolation")
+  def add(
+    types: "securitypolicyviolation",
+    callback: js.Function1[/* event */ IEvent[SecurityPolicyViolationEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_drop")
+  def add(
+    types: "drop",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_beforeinput")
+  def add(
+    types: "beforeinput",
+    callback: js.Function1[/* event */ IEvent[InputEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragend")
+  def add(
+    types: "dragend",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_focus")
+  def add(
+    types: "focus",
+    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseover")
+  def add(
+    types: "mouseover",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkitanimationiteration")
+  def add(
+    types: "webkitanimationiteration",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseup")
+  def add(
+    types: "mouseup",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragstart")
+  def add(
+    types: "dragstart",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_ended")
+  def add(
+    types: "ended",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationstart")
+  def add(
+    types: "animationstart",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkitanimationend")
+  def add(
+    types: "webkitanimationend",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitionstart")
+  def add(
+    types: "transitionstart",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_formdata")
+  def add(
+    types: "formdata",
+    callback: js.Function1[/* event */ IEvent[FormDataEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_keypress")
+  def add(
+    types: "keypress",
+    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_focus")
+  def add(
+    types: "focus",
+    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_selectionchange")
+  def add(
+    types: "selectionchange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchmove")
+  def add(
+    types: "touchmove",
+    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_securitypolicyviolation")
+  def add(
+    types: "securitypolicyviolation",
+    callback: js.Function1[/* event */ IEvent[SecurityPolicyViolationEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mousedown")
+  def add(
+    types: "mousedown",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerup")
+  def add(
+    types: "pointerup",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_stalled")
+  def add(
+    types: "stalled",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchcancel")
+  def add(
+    types: "touchcancel",
+    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationiteration")
+  def add(
+    types: "animationiteration",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_keyup")
+  def add(
+    types: "keyup",
+    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_toggle")
+  def add(
+    types: "toggle",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_error")
+  def add(
+    types: "error",
+    callback: js.Function1[/* event */ IEvent[ErrorEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchstart")
+  def add(
+    types: "touchstart",
+    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_blur")
+  def add(
+    types: "blur",
+    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerdown")
+  def add(
+    types: "pointerdown",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_progress")
+  def add(
+    types: "progress",
+    callback: js.Function1[/* event */ IEvent[ProgressEvent[EventTarget], TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_suspend")
+  def add(
+    types: "suspend",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_play")
+  def add(
+    types: "play",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_click")
+  def add(
+    types: "click",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_playing")
+  def add(
+    types: "playing",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerout")
+  def add(
+    types: "pointerout",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_select")
+  def add(
+    types: "select",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_cancel")
+  def add(
+    types: "cancel",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_focusout")
+  def add(
+    types: "focusout",
+    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_ratechange")
+  def add(
+    types: "ratechange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerenter")
+  def add(
+    types: "pointerenter",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_scroll")
+  def add(
+    types: "scroll",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_gotpointercapture")
+  def add(
+    types: "gotpointercapture",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragover")
+  def add(
+    types: "dragover",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_loadeddata")
+  def add(
+    types: "loadeddata",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchend")
+  def add(
+    types: "touchend",
+    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationcancel")
+  def add(
+    types: "animationcancel",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_focusin")
+  def add(
+    types: "focusin",
+    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_auxclick")
+  def add(
+    types: "auxclick",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_canplay")
+  def add(
+    types: "canplay",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_selectstart")
+  def add(
+    types: "selectstart",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitioncancel")
+  def add(
+    types: "transitioncancel",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_compositionend")
+  def add(
+    types: "compositionend",
+    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_slotchange")
+  def add(
+    types: "slotchange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_change")
+  def add(
+    types: "change",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_canplaythrough")
+  def add(
+    types: "canplaythrough",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_seeked")
+  def add(
+    types: "seeked",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_timeupdate")
+  def add(
+    types: "timeupdate",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_submit")
+  def add(
+    types: "submit",
+    callback: js.Function1[/* event */ IEvent[SubmitEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointercancel")
+  def add(
+    types: "pointercancel",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_durationchange")
+  def add(
+    types: "durationchange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_cuechange")
+  def add(
+    types: "cuechange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_abort")
+  def add(
+    types: "abort",
+    callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseover")
+  def add(
+    types: "mouseover",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_beforeinput")
+  def add(
+    types: "beforeinput",
+    callback: js.Function1[/* event */ IEvent[InputEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerleave")
+  def add(
+    types: "pointerleave",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_input")
+  def add(
+    types: "input",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_load")
+  def add(
+    types: "load",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_drag")
+  def add(
+    types: "drag",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointermove")
+  def add(
+    types: "pointermove",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragenter")
+  def add(
+    types: "dragenter",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_volumechange")
+  def add(
+    types: "volumechange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_contextmenu")
+  def add(
+    types: "contextmenu",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dblclick")
+  def add(
+    types: "dblclick",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_compositionupdate")
+  def add(
+    types: "compositionupdate",
+    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitionrun")
+  def add(
+    types: "transitionrun",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_resize")
+  def add(
+    types: "resize",
+    callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_reset")
+  def add(
+    types: "reset",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mousemove")
+  def add(
+    types: "mousemove",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_lostpointercapture")
+  def add(
+    types: "lostpointercapture",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkittransitionend")
+  def add(
+    types: "webkittransitionend",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_seeking")
+  def add(
+    types: "seeking",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pause")
+  def add(
+    types: "pause",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_close")
+  def add(
+    types: "close",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_wheel")
+  def add(
+    types: "wheel",
+    callback: js.Function1[/* event */ IEvent[WheelEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseleave")
+  def add(
+    types: "mouseleave",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_compositionstart")
+  def add(
+    types: "compositionstart",
+    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_invalid")
+  def add(
+    types: "invalid",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitionend")
+  def add(
+    types: "transitionend",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseenter")
+  def add(
+    types: "mouseenter",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseout")
+  def add(
+    types: "mouseout",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragend")
+  def add(
+    types: "dragend",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerover")
+  def add(
+    types: "pointerover",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationend")
+  def add(
+    types: "animationend",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_loadstart")
+  def add(
+    types: "loadstart",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkitanimationstart")
+  def add(
+    types: "webkitanimationstart",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_drop")
+  def add(
+    types: "drop",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_loadedmetadata")
+  def add(
+    types: "loadedmetadata",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragleave")
+  def add(
+    types: "dragleave",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_emptied")
+  def add(
+    types: "emptied",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_keydown")
+  def add(
+    types: "keydown",
+    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_waiting")
+  def add(
+    types: "waiting",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_securitypolicyviolation")
+  def add(
+    types: "securitypolicyviolation",
+    callback: js.Function1[/* event */ IEvent[SecurityPolicyViolationEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_loadstart")
+  def add(
+    types: "loadstart",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragenter")
+  def add(
+    types: "dragenter",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_seeked")
+  def add(
+    types: "seeked",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_toggle")
+  def add(
+    types: "toggle",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_scroll")
+  def add(
+    types: "scroll",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationend")
+  def add(
+    types: "animationend",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_select")
+  def add(
+    types: "select",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragstart")
+  def add(
+    types: "dragstart",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitionstart")
+  def add(
+    types: "transitionstart",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointermove")
+  def add(
+    types: "pointermove",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitionrun")
+  def add(
+    types: "transitionrun",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_slotchange")
+  def add(
+    types: "slotchange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseenter")
+  def add(
+    types: "mouseenter",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_playing")
+  def add(
+    types: "playing",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_volumechange")
+  def add(
+    types: "volumechange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_waiting")
+  def add(
+    types: "waiting",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_drop")
+  def add(
+    types: "drop",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_keyup")
+  def add(
+    types: "keyup",
+    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_suspend")
+  def add(
+    types: "suspend",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_keypress")
+  def add(
+    types: "keypress",
+    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragleave")
+  def add(
+    types: "dragleave",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkitanimationend")
+  def add(
+    types: "webkitanimationend",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationstart")
+  def add(
+    types: "animationstart",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerleave")
+  def add(
+    types: "pointerleave",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseleave")
+  def add(
+    types: "mouseleave",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_compositionend")
+  def add(
+    types: "compositionend",
+    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkittransitionend")
+  def add(
+    types: "webkittransitionend",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_lostpointercapture")
+  def add(
+    types: "lostpointercapture",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_input")
+  def add(
+    types: "input",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_change")
+  def add(
+    types: "change",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseout")
+  def add(
+    types: "mouseout",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_reset")
+  def add(
+    types: "reset",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_submit")
+  def add(
+    types: "submit",
+    callback: js.Function1[/* event */ IEvent[SubmitEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_drag")
+  def add(
+    types: "drag",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationcancel")
+  def add(
+    types: "animationcancel",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_timeupdate")
+  def add(
+    types: "timeupdate",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_click")
+  def add(
+    types: "click",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_cancel")
+  def add(
+    types: "cancel",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_selectionchange")
+  def add(
+    types: "selectionchange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pause")
+  def add(
+    types: "pause",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_ratechange")
+  def add(
+    types: "ratechange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_wheel")
+  def add(
+    types: "wheel",
+    callback: js.Function1[/* event */ IEvent[WheelEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragover")
+  def add(
+    types: "dragover",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitionend")
+  def add(
+    types: "transitionend",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_contextmenu")
+  def add(
+    types: "contextmenu",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_animationiteration")
+  def add(
+    types: "animationiteration",
+    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerdown")
+  def add(
+    types: "pointerdown",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseover")
+  def add(
+    types: "mouseover",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_loadedmetadata")
+  def add(
+    types: "loadedmetadata",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_ended")
+  def add(
+    types: "ended",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchend")
+  def add(
+    types: "touchend",
+    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerout")
+  def add(
+    types: "pointerout",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkitanimationiteration")
+  def add(
+    types: "webkitanimationiteration",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mouseup")
+  def add(
+    types: "mouseup",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointercancel")
+  def add(
+    types: "pointercancel",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_webkitanimationstart")
+  def add(
+    types: "webkitanimationstart",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_canplay")
+  def add(
+    types: "canplay",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_cuechange")
+  def add(
+    types: "cuechange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_beforeinput")
+  def add(
+    types: "beforeinput",
+    callback: js.Function1[/* event */ IEvent[InputEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_compositionstart")
+  def add(
+    types: "compositionstart",
+    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_transitioncancel")
+  def add(
+    types: "transitioncancel",
+    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_close")
+  def add(
+    types: "close",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dblclick")
+  def add(
+    types: "dblclick",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_abort")
+  def add(
+    types: "abort",
+    callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchmove")
+  def add(
+    types: "touchmove",
+    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_durationchange")
+  def add(
+    types: "durationchange",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_auxclick")
+  def add(
+    types: "auxclick",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_load")
+  def add(
+    types: "load",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerup")
+  def add(
+    types: "pointerup",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_emptied")
+  def add(
+    types: "emptied",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchcancel")
+  def add(
+    types: "touchcancel",
+    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerover")
+  def add(
+    types: "pointerover",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_seeking")
+  def add(
+    types: "seeking",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_invalid")
+  def add(
+    types: "invalid",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_formdata")
+  def add(
+    types: "formdata",
+    callback: js.Function1[/* event */ IEvent[FormDataEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_canplaythrough")
+  def add(
+    types: "canplaythrough",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_blur")
+  def add(
+    types: "blur",
+    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mousemove")
+  def add(
+    types: "mousemove",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_focusout")
+  def add(
+    types: "focusout",
+    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_mousedown")
+  def add(
+    types: "mousedown",
+    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_compositionupdate")
+  def add(
+    types: "compositionupdate",
+    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_pointerenter")
+  def add(
+    types: "pointerenter",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_keydown")
+  def add(
+    types: "keydown",
+    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_loadeddata")
+  def add(
+    types: "loadeddata",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_selectstart")
+  def add(
+    types: "selectstart",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_play")
+  def add(
+    types: "play",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_progress")
+  def add(
+    types: "progress",
+    callback: js.Function1[/* event */ IEvent[ProgressEvent[EventTarget], TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_error")
+  def add(
+    types: "error",
+    callback: js.Function1[/* event */ IEvent[ErrorEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_focus")
+  def add(
+    types: "focus",
+    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_focusin")
+  def add(
+    types: "focusin",
+    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_touchstart")
+  def add(
+    types: "touchstart",
+    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_gotpointercapture")
+  def add(
+    types: "gotpointercapture",
+    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_dragend")
+  def add(
+    types: "dragend",
+    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_resize")
+  def add(
+    types: "resize",
+    callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  @scala.annotation.targetName("add_stalled")
+  def add(
+    types: "stalled",
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
   def add(types: String, callback: js.Function1[/* event */ IEvent[js.Object, js.Object], Unit]): this.type = js.native
   def add(
     types: String,
@@ -160,2181 +2638,6 @@ trait IEventManager[TargetGeometry]
   def add(
     types: js.Array[js.Array[String] | String],
     callback: js.Function1[/* event */ IEvent[js.Object, js.Object], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_abort(types: abort, callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_abort(
-    types: abort,
-    callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_abort(
-    types: abort,
-    callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_abort(
-    types: abort,
-    callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationcancel(
-    types: animationcancel,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationcancel(
-    types: animationcancel,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationcancel(
-    types: animationcancel,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationcancel(
-    types: animationcancel,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationend(
-    types: animationend,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationend(
-    types: animationend,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationend(
-    types: animationend,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationend(
-    types: animationend,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationiteration(
-    types: animationiteration,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationiteration(
-    types: animationiteration,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationiteration(
-    types: animationiteration,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationiteration(
-    types: animationiteration,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationstart(
-    types: animationstart,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationstart(
-    types: animationstart,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationstart(
-    types: animationstart,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_animationstart(
-    types: animationstart,
-    callback: js.Function1[/* event */ IEvent[AnimationEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_auxclick(types: auxclick, callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_auxclick(
-    types: auxclick,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_auxclick(
-    types: auxclick,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_auxclick(
-    types: auxclick,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_beforeinput(types: beforeinput, callback: js.Function1[/* event */ IEvent[InputEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_beforeinput(
-    types: beforeinput,
-    callback: js.Function1[/* event */ IEvent[InputEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_beforeinput(
-    types: beforeinput,
-    callback: js.Function1[/* event */ IEvent[InputEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_beforeinput(
-    types: beforeinput,
-    callback: js.Function1[/* event */ IEvent[InputEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_blur(types: blur, callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_blur(
-    types: blur,
-    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_blur(
-    types: blur,
-    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_blur(
-    types: blur,
-    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_cancel(types: cancel, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_cancel(
-    types: cancel,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_cancel(
-    types: cancel,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_cancel(
-    types: cancel,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_canplay(types: canplay, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_canplay(
-    types: canplay,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_canplay(
-    types: canplay,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_canplay(
-    types: canplay,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_canplaythrough(types: canplaythrough, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_canplaythrough(
-    types: canplaythrough,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_canplaythrough(
-    types: canplaythrough,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_canplaythrough(
-    types: canplaythrough,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_change(types: change, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_change(
-    types: change,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_change(
-    types: change,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_change(
-    types: change,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_click(types: click, callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_click(
-    types: click,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_click(
-    types: click,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_click(
-    types: click,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_close(types: close, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_close(
-    types: close,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_close(
-    types: close,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_close(
-    types: close,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_compositionend(
-    types: compositionend,
-    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_compositionend(
-    types: compositionend,
-    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_compositionend(
-    types: compositionend,
-    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_compositionend(
-    types: compositionend,
-    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_compositionstart(
-    types: compositionstart,
-    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_compositionstart(
-    types: compositionstart,
-    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_compositionstart(
-    types: compositionstart,
-    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_compositionstart(
-    types: compositionstart,
-    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_compositionupdate(
-    types: compositionupdate,
-    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_compositionupdate(
-    types: compositionupdate,
-    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_compositionupdate(
-    types: compositionupdate,
-    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_compositionupdate(
-    types: compositionupdate,
-    callback: js.Function1[/* event */ IEvent[CompositionEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_contextmenu(types: contextmenu, callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_contextmenu(
-    types: contextmenu,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_contextmenu(
-    types: contextmenu,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_contextmenu(
-    types: contextmenu,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_cuechange(types: cuechange, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_cuechange(
-    types: cuechange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_cuechange(
-    types: cuechange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_cuechange(
-    types: cuechange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_dblclick(types: dblclick, callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_dblclick(
-    types: dblclick,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_dblclick(
-    types: dblclick,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_dblclick(
-    types: dblclick,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_drag(types: drag, callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_drag(
-    types: drag,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_drag(
-    types: drag,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_drag(
-    types: drag,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragend(types: dragend, callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_dragend(
-    types: dragend,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragend(
-    types: dragend,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragend(
-    types: dragend,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragenter(types: dragenter, callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_dragenter(
-    types: dragenter,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragenter(
-    types: dragenter,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragenter(
-    types: dragenter,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragleave(types: dragleave, callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_dragleave(
-    types: dragleave,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragleave(
-    types: dragleave,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragleave(
-    types: dragleave,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragover(types: dragover, callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_dragover(
-    types: dragover,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragover(
-    types: dragover,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragover(
-    types: dragover,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragstart(types: dragstart, callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_dragstart(
-    types: dragstart,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragstart(
-    types: dragstart,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_dragstart(
-    types: dragstart,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_drop(types: drop, callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_drop(
-    types: drop,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_drop(
-    types: drop,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_drop(
-    types: drop,
-    callback: js.Function1[/* event */ IEvent[DragEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_durationchange(types: durationchange, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_durationchange(
-    types: durationchange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_durationchange(
-    types: durationchange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_durationchange(
-    types: durationchange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_emptied(types: emptied, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_emptied(
-    types: emptied,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_emptied(
-    types: emptied,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_emptied(
-    types: emptied,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_ended(types: ended, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_ended(
-    types: ended,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_ended(
-    types: ended,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_ended(
-    types: ended,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_error(types: error, callback: js.Function1[/* event */ IEvent[ErrorEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_error(
-    types: error,
-    callback: js.Function1[/* event */ IEvent[ErrorEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_error(
-    types: error,
-    callback: js.Function1[/* event */ IEvent[ErrorEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_error(
-    types: error,
-    callback: js.Function1[/* event */ IEvent[ErrorEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_focus(types: focus, callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_focus(
-    types: focus,
-    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_focus(
-    types: focus,
-    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_focus(
-    types: focus,
-    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_focusin(types: focusin, callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_focusin(
-    types: focusin,
-    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_focusin(
-    types: focusin,
-    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_focusin(
-    types: focusin,
-    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_focusout(types: focusout, callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_focusout(
-    types: focusout,
-    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_focusout(
-    types: focusout,
-    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_focusout(
-    types: focusout,
-    callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_formdata(types: formdata, callback: js.Function1[/* event */ IEvent[FormDataEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_formdata(
-    types: formdata,
-    callback: js.Function1[/* event */ IEvent[FormDataEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_formdata(
-    types: formdata,
-    callback: js.Function1[/* event */ IEvent[FormDataEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_formdata(
-    types: formdata,
-    callback: js.Function1[/* event */ IEvent[FormDataEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_gotpointercapture(
-    types: gotpointercapture,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_gotpointercapture(
-    types: gotpointercapture,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_gotpointercapture(
-    types: gotpointercapture,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_gotpointercapture(
-    types: gotpointercapture,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_input(types: input, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_input(
-    types: input,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_input(
-    types: input,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_input(
-    types: input,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_invalid(types: invalid, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_invalid(
-    types: invalid,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_invalid(
-    types: invalid,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_invalid(
-    types: invalid,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_keydown(types: keydown, callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_keydown(
-    types: keydown,
-    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_keydown(
-    types: keydown,
-    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_keydown(
-    types: keydown,
-    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_keypress(types: keypress, callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_keypress(
-    types: keypress,
-    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_keypress(
-    types: keypress,
-    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_keypress(
-    types: keypress,
-    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_keyup(types: keyup, callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_keyup(
-    types: keyup,
-    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_keyup(
-    types: keyup,
-    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_keyup(
-    types: keyup,
-    callback: js.Function1[/* event */ IEvent[KeyboardEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_load(types: load, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_load(
-    types: load,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_load(
-    types: load,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_load(
-    types: load,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_loadeddata(types: loadeddata, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_loadeddata(
-    types: loadeddata,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_loadeddata(
-    types: loadeddata,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_loadeddata(
-    types: loadeddata,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_loadedmetadata(types: loadedmetadata, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_loadedmetadata(
-    types: loadedmetadata,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_loadedmetadata(
-    types: loadedmetadata,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_loadedmetadata(
-    types: loadedmetadata,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_loadstart(types: loadstart, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_loadstart(
-    types: loadstart,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_loadstart(
-    types: loadstart,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_loadstart(
-    types: loadstart,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_lostpointercapture(
-    types: lostpointercapture,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_lostpointercapture(
-    types: lostpointercapture,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_lostpointercapture(
-    types: lostpointercapture,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_lostpointercapture(
-    types: lostpointercapture,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_mousedown(types: mousedown, callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_mousedown(
-    types: mousedown,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_mousedown(
-    types: mousedown,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_mousedown(
-    types: mousedown,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseenter(types: mouseenter, callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_mouseenter(
-    types: mouseenter,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseenter(
-    types: mouseenter,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseenter(
-    types: mouseenter,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseleave(types: mouseleave, callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_mouseleave(
-    types: mouseleave,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseleave(
-    types: mouseleave,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseleave(
-    types: mouseleave,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_mousemove(types: mousemove, callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_mousemove(
-    types: mousemove,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_mousemove(
-    types: mousemove,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_mousemove(
-    types: mousemove,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseout(types: mouseout, callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_mouseout(
-    types: mouseout,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseout(
-    types: mouseout,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseout(
-    types: mouseout,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseover(types: mouseover, callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_mouseover(
-    types: mouseover,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseover(
-    types: mouseover,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseover(
-    types: mouseover,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseup(types: mouseup, callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_mouseup(
-    types: mouseup,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseup(
-    types: mouseup,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_mouseup(
-    types: mouseup,
-    callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pause(types: pause, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_pause(
-    types: pause,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_pause(
-    types: pause,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pause(
-    types: pause,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_play(types: play, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_play(
-    types: play,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_play(
-    types: play,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_play(
-    types: play,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_playing(types: playing, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_playing(
-    types: playing,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_playing(
-    types: playing,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_playing(
-    types: playing,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointercancel(
-    types: pointercancel,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointercancel(
-    types: pointercancel,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointercancel(
-    types: pointercancel,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointercancel(
-    types: pointercancel,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerdown(types: pointerdown, callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_pointerdown(
-    types: pointerdown,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerdown(
-    types: pointerdown,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerdown(
-    types: pointerdown,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerenter(
-    types: pointerenter,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerenter(
-    types: pointerenter,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerenter(
-    types: pointerenter,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerenter(
-    types: pointerenter,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerleave(
-    types: pointerleave,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerleave(
-    types: pointerleave,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerleave(
-    types: pointerleave,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerleave(
-    types: pointerleave,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointermove(types: pointermove, callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_pointermove(
-    types: pointermove,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointermove(
-    types: pointermove,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointermove(
-    types: pointermove,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerout(types: pointerout, callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_pointerout(
-    types: pointerout,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerout(
-    types: pointerout,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerout(
-    types: pointerout,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerover(types: pointerover, callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_pointerover(
-    types: pointerover,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerover(
-    types: pointerover,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerover(
-    types: pointerover,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerup(types: pointerup, callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_pointerup(
-    types: pointerup,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerup(
-    types: pointerup,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_pointerup(
-    types: pointerup,
-    callback: js.Function1[/* event */ IEvent[PointerEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_progress(
-    types: progress,
-    callback: js.Function1[/* event */ IEvent[ProgressEvent[EventTarget], TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_progress(
-    types: progress,
-    callback: js.Function1[/* event */ IEvent[ProgressEvent[EventTarget], TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_progress(
-    types: progress,
-    callback: js.Function1[/* event */ IEvent[ProgressEvent[EventTarget], TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_progress(
-    types: progress,
-    callback: js.Function1[/* event */ IEvent[ProgressEvent[EventTarget], TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_ratechange(types: ratechange, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_ratechange(
-    types: ratechange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_ratechange(
-    types: ratechange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_ratechange(
-    types: ratechange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_reset(types: reset, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_reset(
-    types: reset,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_reset(
-    types: reset,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_reset(
-    types: reset,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_resize(types: resize, callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_resize(
-    types: resize,
-    callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_resize(
-    types: resize,
-    callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_resize(
-    types: resize,
-    callback: js.Function1[/* event */ IEvent[UIEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_scroll(types: scroll, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_scroll(
-    types: scroll,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_scroll(
-    types: scroll,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_scroll(
-    types: scroll,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_securitypolicyviolation(
-    types: securitypolicyviolation,
-    callback: js.Function1[/* event */ IEvent[SecurityPolicyViolationEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_securitypolicyviolation(
-    types: securitypolicyviolation,
-    callback: js.Function1[/* event */ IEvent[SecurityPolicyViolationEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_securitypolicyviolation(
-    types: securitypolicyviolation,
-    callback: js.Function1[/* event */ IEvent[SecurityPolicyViolationEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_securitypolicyviolation(
-    types: securitypolicyviolation,
-    callback: js.Function1[/* event */ IEvent[SecurityPolicyViolationEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_seeked(types: seeked, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_seeked(
-    types: seeked,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_seeked(
-    types: seeked,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_seeked(
-    types: seeked,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_seeking(types: seeking, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_seeking(
-    types: seeking,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_seeking(
-    types: seeking,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_seeking(
-    types: seeking,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_select(types: select, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_select(
-    types: select,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_select(
-    types: select,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_select(
-    types: select,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_selectionchange(types: selectionchange, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_selectionchange(
-    types: selectionchange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_selectionchange(
-    types: selectionchange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_selectionchange(
-    types: selectionchange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_selectstart(types: selectstart, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_selectstart(
-    types: selectstart,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_selectstart(
-    types: selectstart,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_selectstart(
-    types: selectstart,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_slotchange(types: slotchange, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_slotchange(
-    types: slotchange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_slotchange(
-    types: slotchange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_slotchange(
-    types: slotchange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_stalled(types: stalled, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_stalled(
-    types: stalled,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_stalled(
-    types: stalled,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_stalled(
-    types: stalled,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_submit(types: submit, callback: js.Function1[/* event */ IEvent[SubmitEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_submit(
-    types: submit,
-    callback: js.Function1[/* event */ IEvent[SubmitEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_submit(
-    types: submit,
-    callback: js.Function1[/* event */ IEvent[SubmitEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_submit(
-    types: submit,
-    callback: js.Function1[/* event */ IEvent[SubmitEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_suspend(types: suspend, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_suspend(
-    types: suspend,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_suspend(
-    types: suspend,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_suspend(
-    types: suspend,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_timeupdate(types: timeupdate, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_timeupdate(
-    types: timeupdate,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_timeupdate(
-    types: timeupdate,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_timeupdate(
-    types: timeupdate,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_toggle(types: toggle, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_toggle(
-    types: toggle,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_toggle(
-    types: toggle,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_toggle(
-    types: toggle,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_touchcancel(types: touchcancel, callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_touchcancel(
-    types: touchcancel,
-    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_touchcancel(
-    types: touchcancel,
-    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_touchcancel(
-    types: touchcancel,
-    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_touchend(types: touchend, callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_touchend(
-    types: touchend,
-    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_touchend(
-    types: touchend,
-    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_touchend(
-    types: touchend,
-    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_touchmove(types: touchmove, callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_touchmove(
-    types: touchmove,
-    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_touchmove(
-    types: touchmove,
-    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_touchmove(
-    types: touchmove,
-    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_touchstart(types: touchstart, callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_touchstart(
-    types: touchstart,
-    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_touchstart(
-    types: touchstart,
-    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_touchstart(
-    types: touchstart,
-    callback: js.Function1[/* event */ IEvent[TouchEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitioncancel(
-    types: transitioncancel,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitioncancel(
-    types: transitioncancel,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitioncancel(
-    types: transitioncancel,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitioncancel(
-    types: transitioncancel,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitionend(
-    types: transitionend,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitionend(
-    types: transitionend,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitionend(
-    types: transitionend,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitionend(
-    types: transitionend,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitionrun(
-    types: transitionrun,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitionrun(
-    types: transitionrun,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitionrun(
-    types: transitionrun,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitionrun(
-    types: transitionrun,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitionstart(
-    types: transitionstart,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitionstart(
-    types: transitionstart,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitionstart(
-    types: transitionstart,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_transitionstart(
-    types: transitionstart,
-    callback: js.Function1[/* event */ IEvent[TransitionEvent, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_volumechange(types: volumechange, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_volumechange(
-    types: volumechange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_volumechange(
-    types: volumechange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_volumechange(
-    types: volumechange,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_waiting(types: waiting, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_waiting(
-    types: waiting,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_waiting(
-    types: waiting,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_waiting(
-    types: waiting,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkitanimationend(types: webkitanimationend, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_webkitanimationend(
-    types: webkitanimationend,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkitanimationend(
-    types: webkitanimationend,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkitanimationend(
-    types: webkitanimationend,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkitanimationiteration(
-    types: webkitanimationiteration,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkitanimationiteration(
-    types: webkitanimationiteration,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkitanimationiteration(
-    types: webkitanimationiteration,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkitanimationiteration(
-    types: webkitanimationiteration,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkitanimationstart(
-    types: webkitanimationstart,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkitanimationstart(
-    types: webkitanimationstart,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkitanimationstart(
-    types: webkitanimationstart,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkitanimationstart(
-    types: webkitanimationstart,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkittransitionend(
-    types: webkittransitionend,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkittransitionend(
-    types: webkittransitionend,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkittransitionend(
-    types: webkittransitionend,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_webkittransitionend(
-    types: webkittransitionend,
-    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
-    context: Unit,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_wheel(types: wheel, callback: js.Function1[/* event */ IEvent[WheelEvent, TargetGeometry], Unit]): this.type = js.native
-  @JSName("add")
-  def add_wheel(
-    types: wheel,
-    callback: js.Function1[/* event */ IEvent[WheelEvent, TargetGeometry], Unit],
-    context: js.Object
-  ): this.type = js.native
-  @JSName("add")
-  def add_wheel(
-    types: wheel,
-    callback: js.Function1[/* event */ IEvent[WheelEvent, TargetGeometry], Unit],
-    context: js.Object,
-    priority: Double
-  ): this.type = js.native
-  @JSName("add")
-  def add_wheel(
-    types: wheel,
-    callback: js.Function1[/* event */ IEvent[WheelEvent, TargetGeometry], Unit],
     context: Unit,
     priority: Double
   ): this.type = js.native

@@ -1,14 +1,5 @@
 package typings.vueRuntimeDom.mod
 
-import typings.vueRuntimeDom.vueRuntimeDomStrings.baseline
-import typings.vueRuntimeDom.vueRuntimeDomStrings.bottom
-import typings.vueRuntimeDom.vueRuntimeDomStrings.center
-import typings.vueRuntimeDom.vueRuntimeDomStrings.char
-import typings.vueRuntimeDom.vueRuntimeDomStrings.justify
-import typings.vueRuntimeDom.vueRuntimeDomStrings.left
-import typings.vueRuntimeDom.vueRuntimeDomStrings.middle
-import typings.vueRuntimeDom.vueRuntimeDomStrings.right
-import typings.vueRuntimeDom.vueRuntimeDomStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +8,7 @@ trait TdHTMLAttributes
   extends StObject
      with HTMLAttributes {
   
-  var align: js.UndefOr[left | center | right | justify | char] = js.undefined
+  var align: js.UndefOr["left" | "center" | "right" | "justify" | "char"] = js.undefined
   
   var colspan: js.UndefOr[Numberish] = js.undefined
   
@@ -27,7 +18,7 @@ trait TdHTMLAttributes
   
   var scope: js.UndefOr[String] = js.undefined
   
-  var valign: js.UndefOr[top | middle | bottom | baseline] = js.undefined
+  var valign: js.UndefOr["top" | "middle" | "bottom" | "baseline"] = js.undefined
 }
 object TdHTMLAttributes {
   
@@ -38,7 +29,7 @@ object TdHTMLAttributes {
   
   extension [Self <: TdHTMLAttributes](x: Self) {
     
-    inline def setAlign(value: left | center | right | justify | char): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: "left" | "center" | "right" | "justify" | "char"): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
@@ -58,7 +49,7 @@ object TdHTMLAttributes {
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    inline def setValign(value: top | middle | bottom | baseline): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
+    inline def setValign(value: "top" | "middle" | "bottom" | "baseline"): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
     
     inline def setValignUndefined: Self = StObject.set(x, "valign", js.undefined)
   }

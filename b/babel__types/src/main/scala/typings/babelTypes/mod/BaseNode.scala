@@ -21,12 +21,12 @@ trait BaseNode extends StObject {
   
   var trailingComments: js.Array[Comment] | Null
   
-  var `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 249, starting with typings.babelTypes.babelTypesStrings.ClassAccessorProperty, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any
+  var `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 249, starting with "ClassAccessorProperty", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String
 }
 object BaseNode {
   
   inline def apply(
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 249, starting with typings.babelTypes.babelTypesStrings.ClassAccessorProperty, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 249, starting with "ClassAccessorProperty", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String
   ): BaseNode = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -70,7 +70,7 @@ object BaseNode {
     inline def setTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "trailingComments", js.Array(value*))
     
     inline def setType(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 249, starting with typings.babelTypes.babelTypesStrings.ClassAccessorProperty, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 249, starting with "ClassAccessorProperty", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

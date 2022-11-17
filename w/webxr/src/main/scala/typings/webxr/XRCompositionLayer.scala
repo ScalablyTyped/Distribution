@@ -2,7 +2,6 @@ package typings.webxr
 
 import typings.std.AddEventListenerOptions
 import typings.std.EventTarget
-import typings.webxr.webxrStrings.redraw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +12,15 @@ trait XRCompositionLayer
      with EventTarget {
   
   @JSName("addEventListener")
-  def addEventListener_redraw(`type`: redraw, callback: js.Function1[/* evt */ XRLayerEvent, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_redraw")
+  def addEventListener(`type`: "redraw", callback: js.Function1[/* evt */ XRLayerEvent, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_redraw(`type`: redraw, callback: js.Function1[/* evt */ XRLayerEvent, Any], options: Boolean): Unit = js.native
+  @scala.annotation.targetName("addEventListener_redraw")
+  def addEventListener(`type`: "redraw", callback: js.Function1[/* evt */ XRLayerEvent, Any], options: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_redraw(
-    `type`: redraw,
+  @scala.annotation.targetName("addEventListener_redraw")
+  def addEventListener(
+    `type`: "redraw",
     callback: js.Function1[/* evt */ XRLayerEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -39,7 +41,8 @@ trait XRCompositionLayer
   def onredraw(evt: XRLayerEvent): Any = js.native
   
   @JSName("removeEventListener")
-  def removeEventListener_redraw(`type`: redraw, callback: js.Function1[/* evt */ XRLayerEvent, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_redraw")
+  def removeEventListener(`type`: "redraw", callback: js.Function1[/* evt */ XRLayerEvent, Any]): Unit = js.native
   
   var space: XRSpace = js.native
 }

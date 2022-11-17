@@ -3,9 +3,6 @@ package typings.materialUiStyles
 import typings.materialUiStyles.anon.ClassName
 import typings.materialUiStyles.anon.ThemeTheme
 import typings.materialUiStyles.defaultThemeMod.DefaultTheme
-import typings.materialUiStyles.materialUiStylesStrings.className
-import typings.materialUiStyles.materialUiStylesStrings.classes
-import typings.materialUiStyles.materialUiStylesStrings.root
 import typings.materialUiStyles.withStylesWithStylesMod.CreateCSSProperties
 import typings.materialUiStyles.withStylesWithStylesMod.StyledComponentProps
 import typings.materialUiStyles.withStylesWithStylesMod.WithStylesOptions
@@ -37,8 +34,8 @@ object styledStyledMod {
     StyledComponent[
       (Omit[
         LibraryManagedAttributes[Component, ComponentProps[Component]], 
-        classes | className
-      ]) & StyledComponentProps[root] & (Overwrite[ComponentPropsWithoutRef[Component], ClassName[DefaultTheme]])
+        "classes" | "className"
+      ]) & StyledComponentProps["root"] & (Overwrite[ComponentPropsWithoutRef[Component], ClassName[DefaultTheme]])
     ]
   ]
   

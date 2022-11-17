@@ -1,7 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.resize
-import typings.std.stdStrings.scroll
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,30 +11,36 @@ trait VisualViewport
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_resize")
+  def addEventListener(`type`: "resize", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_resize(
-    `type`: resize,
+  @scala.annotation.targetName("addEventListener_scroll")
+  def addEventListener(`type`: "scroll", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_scroll")
+  def addEventListener(
+    `type`: "scroll",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_resize(
-    `type`: resize,
+  @scala.annotation.targetName("addEventListener_resize")
+  def addEventListener(
+    `type`: "resize",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_scroll")
+  def addEventListener(
+    `type`: "scroll",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_scroll(
-    `type`: scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_scroll(
-    `type`: scroll,
+  @scala.annotation.targetName("addEventListener_resize")
+  def addEventListener(
+    `type`: "resize",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -62,32 +66,38 @@ trait VisualViewport
   /* standard dom */
   val pageTop: Double = js.native
   
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_scroll")
+  def removeEventListener(`type`: "scroll", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_resize")
+  def removeEventListener(`type`: "resize", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_resize(
-    `type`: resize,
+  @scala.annotation.targetName("removeEventListener_scroll")
+  def removeEventListener(
+    `type`: "scroll",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_resize(
-    `type`: resize,
+  @scala.annotation.targetName("removeEventListener_resize")
+  def removeEventListener(
+    `type`: "resize",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_resize")
+  def removeEventListener(
+    `type`: "resize",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_scroll(
-    `type`: scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_scroll(
-    `type`: scroll,
+  @scala.annotation.targetName("removeEventListener_scroll")
+  def removeEventListener(
+    `type`: "scroll",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

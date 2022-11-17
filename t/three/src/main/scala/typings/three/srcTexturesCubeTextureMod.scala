@@ -7,7 +7,6 @@ import typings.three.srcConstantsMod.TextureEncoding
 import typings.three.srcConstantsMod.TextureFilter
 import typings.three.srcConstantsMod.Wrapping
 import typings.three.srcTexturesTextureMod.Texture
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,6 +44,6 @@ object srcTexturesCubeTextureMod {
     
     var images: Any = js.native
     
-    val isCubeTexture: `true` = js.native
+    val isCubeTexture: true = js.native
   }
 }

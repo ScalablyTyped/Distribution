@@ -4,17 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.complete
-  - typings.std.stdStrings.gathering
-  - typings.std.stdStrings.`new`
-*/
-trait RTCIceGatheringState extends StObject
 object RTCIceGatheringState {
   
-  inline def complete: typings.std.stdStrings.complete = "complete".asInstanceOf[typings.std.stdStrings.complete]
+  inline def complete: "complete" = "complete".asInstanceOf["complete"]
   
-  inline def gathering: typings.std.stdStrings.gathering = "gathering".asInstanceOf[typings.std.stdStrings.gathering]
+  inline def gathering: "gathering" = "gathering".asInstanceOf["gathering"]
   
-  inline def `new`: typings.std.stdStrings.`new` = "new".asInstanceOf[typings.std.stdStrings.`new`]
+  inline def `new`: "new" = "new".asInstanceOf["new"]
 }

@@ -1,8 +1,6 @@
 package typings.dayjs
 
 import org.scalablytyped.runtime.Shortcut
-import typings.dayjs.dayjsStrings.long
-import typings.dayjs.dayjsStrings.short
 import typings.dayjs.mod.ConfigType
 import typings.dayjs.mod.PluginFunc
 import org.scalablytyped.runtime.StObject
@@ -27,7 +25,9 @@ object pluginTimezoneMod extends Shortcut {
     trait Dayjs extends StObject {
       
       def offsetName(): js.UndefOr[String] = js.native
-      def offsetName(`type`: short | long): js.UndefOr[String] = js.native
+      @JSName("offsetName")
+      @scala.annotation.targetName("offsetName_short_long")
+      def offsetName(`type`: "short" | "long"): js.UndefOr[String] = js.native
       
       def tz(): Dayjs = js.native
       def tz(timezone: String): Dayjs = js.native

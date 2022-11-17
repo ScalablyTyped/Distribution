@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSNamespaceExportDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `90` extends StObject {
   
-  var `type`: TSNamespaceExportDeclaration
+  var `type`: "TSNamespaceExportDeclaration"
 }
 object `90` {
   
@@ -19,6 +18,6 @@ object `90` {
   
   extension [Self <: `90`](x: Self) {
     
-    inline def setType(value: TSNamespaceExportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSNamespaceExportDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

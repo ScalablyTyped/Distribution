@@ -1,6 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.web
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,5 +9,5 @@ trait PlatformWebStatic
   extends StObject
      with PlatformStatic {
   
-  var OS: web = js.native
+  var OS: "web" = js.native
 }

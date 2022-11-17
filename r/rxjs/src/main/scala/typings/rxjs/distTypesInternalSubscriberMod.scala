@@ -2,7 +2,6 @@ package typings.rxjs
 
 import typings.rxjs.distTypesInternalSubscriptionMod.Subscription
 import typings.rxjs.distTypesInternalTypesMod.Observer
-import typings.rxjs.rxjsBooleans.`true`
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,8 +18,8 @@ object distTypesInternalSubscriberMod {
     
     @JSImport("rxjs/dist/types/internal/Subscriber", "EMPTY_OBSERVER.closed")
     @js.native
-    def closed: `true` = js.native
-    inline def closed_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closed")(x.asInstanceOf[js.Any])
+    def closed: true = js.native
+    inline def closed_=(x: true): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closed")(x.asInstanceOf[js.Any])
     
     inline def complete(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("complete")().asInstanceOf[Unit]
     

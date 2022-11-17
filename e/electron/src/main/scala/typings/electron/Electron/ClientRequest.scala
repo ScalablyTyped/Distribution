@@ -1,12 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.abort
-import typings.electron.electronStrings.close
-import typings.electron.electronStrings.error
-import typings.electron.electronStrings.finish
-import typings.electron.electronStrings.login
-import typings.electron.electronStrings.redirect
-import typings.electron.electronStrings.response
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.std.Record
@@ -26,16 +19,24 @@ trait ClientRequest extends EventEmitter {
   def abort(): Unit = js.native
   
   @JSName("addListener")
-  def addListener_abort(event: abort, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("addListener_close")
+  def addListener(event: "close", listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_close(event: close, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("addListener_finish")
+  def addListener(event: "finish", listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_abort")
+  def addListener(event: "abort", listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_finish(event: finish, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("addListener_error")
+  def addListener(event: "error", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_login(
-    event: login,
+  @scala.annotation.targetName("addListener_response")
+  def addListener(event: "response", listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_login")
+  def addListener(
+    event: "login",
     listener: js.Function2[
       /* authInfo */ AuthInfo, 
       /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
@@ -43,8 +44,9 @@ trait ClientRequest extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_redirect(
-    event: redirect,
+  @scala.annotation.targetName("addListener_redirect")
+  def addListener(
+    event: "redirect",
     listener: js.Function4[
       /* statusCode */ Double, 
       /* method */ String, 
@@ -53,8 +55,6 @@ trait ClientRequest extends EventEmitter {
       Unit
     ]
   ): this.type = js.native
-  @JSName("addListener")
-  def addListener_response(event: response, listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
   
   /**
     * A `boolean` specifying whether the request will use HTTP chunked transfer
@@ -110,33 +110,40 @@ trait ClientRequest extends EventEmitter {
     */
   def getUploadProgress(): UploadProgress = js.native
   
-  // Docs: https://electronjs.org/docs/api/client-request
-  /**
-    * Emitted when the `request` is aborted. The `abort` event will not be fired if
-    * the `request` is already closed.
-    */
-  @JSName("on")
-  def on_abort(event: abort, listener: js.Function): this.type = js.native
   /**
     * Emitted as the last event in the HTTP request-response transaction. The `close`
     * event indicates that no more events will be emitted on either the `request` or
     * `response` objects.
     */
   @JSName("on")
-  def on_close(event: close, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_close")
+  def on(event: "close", listener: js.Function): this.type = js.native
+  /**
+    * Emitted just after the last chunk of the `request`'s data has been written into
+    * the `request` object.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_finish")
+  def on(event: "finish", listener: js.Function): this.type = js.native
+  // Docs: https://electronjs.org/docs/api/client-request
+  /**
+    * Emitted when the `request` is aborted. The `abort` event will not be fired if
+    * the `request` is already closed.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_abort")
+  def on(event: "abort", listener: js.Function): this.type = js.native
   /**
     * Emitted when the `net` module fails to issue a network request. Typically when
     * the `request` object emits an `error` event, a `close` event will subsequently
     * follow and no response object will be provided.
     */
   @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
-  /**
-    * Emitted just after the last chunk of the `request`'s data has been written into
-    * the `request` object.
-    */
+  @scala.annotation.targetName("on_error")
+  def on(event: "error", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
   @JSName("on")
-  def on_finish(event: finish, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_response")
+  def on(event: "response", listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
   /**
     * Emitted when an authenticating proxy is asking for user credentials.
     *
@@ -149,8 +156,9 @@ trait ClientRequest extends EventEmitter {
     * error on the response object:
     */
   @JSName("on")
-  def on_login(
-    event: login,
+  @scala.annotation.targetName("on_login")
+  def on(
+    event: "login",
     listener: js.Function2[
       /* authInfo */ AuthInfo, 
       /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
@@ -164,8 +172,9 @@ trait ClientRequest extends EventEmitter {
     * **synchronously**, otherwise the request will be cancelled.
     */
   @JSName("on")
-  def on_redirect(
-    event: redirect,
+  @scala.annotation.targetName("on_redirect")
+  def on(
+    event: "redirect",
     listener: js.Function4[
       /* statusCode */ Double, 
       /* method */ String, 
@@ -174,20 +183,26 @@ trait ClientRequest extends EventEmitter {
       Unit
     ]
   ): this.type = js.native
-  @JSName("on")
-  def on_response(event: response, listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
   
   @JSName("once")
-  def once_abort(event: abort, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_abort")
+  def once(event: "abort", listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_close(event: close, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_finish")
+  def once(event: "finish", listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_close")
+  def once(event: "close", listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_finish(event: finish, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_error")
+  def once(event: "error", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
   @JSName("once")
-  def once_login(
-    event: login,
+  @scala.annotation.targetName("once_response")
+  def once(event: "response", listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_login")
+  def once(
+    event: "login",
     listener: js.Function2[
       /* authInfo */ AuthInfo, 
       /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
@@ -195,8 +210,9 @@ trait ClientRequest extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def once_redirect(
-    event: redirect,
+  @scala.annotation.targetName("once_redirect")
+  def once(
+    event: "redirect",
     listener: js.Function4[
       /* statusCode */ Double, 
       /* method */ String, 
@@ -205,8 +221,6 @@ trait ClientRequest extends EventEmitter {
       Unit
     ]
   ): this.type = js.native
-  @JSName("once")
-  def once_response(event: response, listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
   
   /**
     * Removes a previously set extra header name. This method can be called only
@@ -215,16 +229,24 @@ trait ClientRequest extends EventEmitter {
   def removeHeader(name: String): Unit = js.native
   
   @JSName("removeListener")
-  def removeListener_abort(event: abort, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("removeListener_close")
+  def removeListener(event: "close", listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_close(event: close, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("removeListener_finish")
+  def removeListener(event: "finish", listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+  @scala.annotation.targetName("removeListener_abort")
+  def removeListener(event: "abort", listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_finish(event: finish, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("removeListener_error")
+  def removeListener(event: "error", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_login(
-    event: login,
+  @scala.annotation.targetName("removeListener_response")
+  def removeListener(event: "response", listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_login")
+  def removeListener(
+    event: "login",
     listener: js.Function2[
       /* authInfo */ AuthInfo, 
       /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
@@ -232,8 +254,9 @@ trait ClientRequest extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_redirect(
-    event: redirect,
+  @scala.annotation.targetName("removeListener_redirect")
+  def removeListener(
+    event: "redirect",
     listener: js.Function4[
       /* statusCode */ Double, 
       /* method */ String, 
@@ -242,8 +265,6 @@ trait ClientRequest extends EventEmitter {
       Unit
     ]
   ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_response(event: response, listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
   
   /**
     * Adds an extra HTTP header. The header name will be issued as-is without

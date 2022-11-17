@@ -1,6 +1,5 @@
 package typings.node.dnsMod
 
-import typings.node.nodeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait ResolveWithTtlOptions
      with ResolveOptions {
   
   @JSName("ttl")
-  var ttl_ResolveWithTtlOptions: `true`
+  var ttl_ResolveWithTtlOptions: true
 }
 object ResolveWithTtlOptions {
   
@@ -21,6 +20,6 @@ object ResolveWithTtlOptions {
   
   extension [Self <: ResolveWithTtlOptions](x: Self) {
     
-    inline def setTtl(value: `true`): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: true): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
   }
 }

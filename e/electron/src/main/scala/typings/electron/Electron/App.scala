@@ -1,62 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`accessibility-support-changed`
-import typings.electron.electronStrings.`activity-was-continued`
-import typings.electron.electronStrings.`before-quit`
-import typings.electron.electronStrings.`browser-window-blur`
-import typings.electron.electronStrings.`browser-window-created`
-import typings.electron.electronStrings.`browser-window-focus`
-import typings.electron.electronStrings.`certificate-error`
-import typings.electron.electronStrings.`child-process-gone`
-import typings.electron.electronStrings.`continue-activity-error`
-import typings.electron.electronStrings.`continue-activity`
-import typings.electron.electronStrings.`did-become-active`
-import typings.electron.electronStrings.`gpu-info-update`
-import typings.electron.electronStrings.`gpu-process-crashed`
-import typings.electron.electronStrings.`new-window-for-tab`
-import typings.electron.electronStrings.`open-file`
-import typings.electron.electronStrings.`open-url`
-import typings.electron.electronStrings.`render-process-gone`
-import typings.electron.electronStrings.`renderer-process-crashed`
-import typings.electron.electronStrings.`second-instance`
-import typings.electron.electronStrings.`select-client-certificate`
-import typings.electron.electronStrings.`session-created`
-import typings.electron.electronStrings.`update-activity-state`
-import typings.electron.electronStrings.`web-contents-created`
-import typings.electron.electronStrings.`will-continue-activity`
-import typings.electron.electronStrings.`will-finish-launching`
-import typings.electron.electronStrings.`will-quit`
-import typings.electron.electronStrings.`window-all-closed`
-import typings.electron.electronStrings.accessory
-import typings.electron.electronStrings.activate
-import typings.electron.electronStrings.appData
-import typings.electron.electronStrings.basic
-import typings.electron.electronStrings.complete
-import typings.electron.electronStrings.crashDumps
-import typings.electron.electronStrings.customCategoryAccessDeniedError
-import typings.electron.electronStrings.desktop
-import typings.electron.electronStrings.documents
-import typings.electron.electronStrings.downloads
-import typings.electron.electronStrings.error
-import typings.electron.electronStrings.exe
-import typings.electron.electronStrings.fileTypeRegistrationError
-import typings.electron.electronStrings.home
-import typings.electron.electronStrings.invalidSeparatorError
-import typings.electron.electronStrings.login
-import typings.electron.electronStrings.logs
-import typings.electron.electronStrings.module
-import typings.electron.electronStrings.music
-import typings.electron.electronStrings.ok
-import typings.electron.electronStrings.pictures
-import typings.electron.electronStrings.prohibited
-import typings.electron.electronStrings.quit
-import typings.electron.electronStrings.ready
-import typings.electron.electronStrings.recent
-import typings.electron.electronStrings.regular
-import typings.electron.electronStrings.sessionData
-import typings.electron.electronStrings.temp
-import typings.electron.electronStrings.userData
-import typings.electron.electronStrings.videos
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -87,37 +30,191 @@ trait App
   var accessibilitySupportEnabled: Boolean = js.native
   
   @JSName("addListener")
-  def addListener_accessibilitysupportchanged(
-    event: `accessibility-support-changed`,
+  @scala.annotation.targetName("addListener_windowallclosed")
+  def addListener(event: "window-all-closed", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_willfinishlaunching")
+  def addListener(event: "will-finish-launching", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_gpuinfoupdate")
+  def addListener(event: "gpu-info-update", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_newwindowfortab")
+  def addListener(event: "new-window-for-tab", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_beforequit")
+  def addListener(event: "before-quit", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_sessioncreated")
+  def addListener(event: "session-created", listener: js.Function1[/* session */ Session_, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_didbecomeactive")
+  def addListener(event: "did-become-active", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_willquit")
+  def addListener(event: "will-quit", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_childprocessgone")
+  def addListener(
+    event: "child-process-gone",
+    listener: js.Function2[/* event */ Event, /* details */ Details, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_willcontinueactivity")
+  def addListener(
+    event: "will-continue-activity",
+    listener: js.Function2[/* event */ Event, /* type */ String, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_browserwindowfocus")
+  def addListener(
+    event: "browser-window-focus",
+    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_browserwindowcreated")
+  def addListener(
+    event: "browser-window-created",
+    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_browserwindowblur")
+  def addListener(
+    event: "browser-window-blur",
+    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_activate")
+  def addListener(
+    event: "activate",
+    listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_accessibilitysupportchanged")
+  def addListener(
+    event: "accessibility-support-changed",
     listener: js.Function2[/* event */ Event, /* accessibilitySupportEnabled */ Boolean, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_activate(event: activate, listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ Boolean, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_openfile")
+  def addListener(event: "open-file", listener: js.Function2[/* event */ Event, /* path */ String, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_activitywascontinued(
-    event: `activity-was-continued`,
+  @scala.annotation.targetName("addListener_ready")
+  def addListener(
+    event: "ready",
+    listener: js.Function2[
+      /* event */ Event, 
+      /* launchInfo */ (Record[String, Any]) | NotificationResponse, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_openurl")
+  def addListener(event: "open-url", listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_gpuprocesscrashed")
+  def addListener(
+    event: "gpu-process-crashed",
+    listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_webcontentscreated")
+  def addListener(
+    event: "web-contents-created",
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_quit")
+  def addListener(event: "quit", listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_rendererprocesscrashed")
+  def addListener(
+    event: "renderer-process-crashed",
+    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_activitywascontinued")
+  def addListener(
+    event: "activity-was-continued",
     listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_beforequit(event: `before-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_browserwindowblur(
-    event: `browser-window-blur`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  @scala.annotation.targetName("addListener_renderprocessgone")
+  def addListener(
+    event: "render-process-gone",
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents_, 
+      /* details */ RenderProcessGoneDetails, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_browserwindowcreated(
-    event: `browser-window-created`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  @scala.annotation.targetName("addListener_updateactivitystate")
+  def addListener(
+    event: "update-activity-state",
+    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_browserwindowfocus(
-    event: `browser-window-focus`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  @scala.annotation.targetName("addListener_continueactivityerror")
+  def addListener(
+    event: "continue-activity-error",
+    listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_certificateerror(
-    event: `certificate-error`,
+  @scala.annotation.targetName("addListener_secondinstance")
+  def addListener(
+    event: "second-instance",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* argv */ js.Array[String], 
+      /* workingDirectory */ String, 
+      /* additionalData */ Any, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_continueactivity")
+  def addListener(
+    event: "continue-activity",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* type */ String, 
+      /* userInfo */ Any, 
+      /* details */ ContinueActivityDetails, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_selectclientcertificate")
+  def addListener(
+    event: "select-client-certificate",
+    listener: js.Function5[
+      /* event */ Event, 
+      /* webContents */ WebContents_, 
+      /* url */ String, 
+      /* certificateList */ js.Array[Certificate], 
+      /* callback */ js.Function1[/* certificate */ js.UndefOr[Certificate], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_login")
+  def addListener(
+    event: "login",
+    listener: js.Function5[
+      /* event */ Event, 
+      /* webContents */ WebContents_, 
+      /* authenticationResponseDetails */ AuthenticationResponseDetails, 
+      /* authInfo */ AuthInfo, 
+      /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_certificateerror")
+  def addListener(
+    event: "certificate-error",
     listener: js.Function7[
       /* event */ Event, 
       /* webContents */ WebContents_, 
@@ -129,126 +226,6 @@ trait App
       Unit
     ]
   ): this.type = js.native
-  @JSName("addListener")
-  def addListener_childprocessgone(
-    event: `child-process-gone`,
-    listener: js.Function2[/* event */ Event, /* details */ Details, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_continueactivity(
-    event: `continue-activity`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* type */ String, 
-      /* userInfo */ Any, 
-      /* details */ ContinueActivityDetails, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_continueactivityerror(
-    event: `continue-activity-error`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_didbecomeactive(event: `did-become-active`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_gpuinfoupdate(event: `gpu-info-update`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_gpuprocesscrashed(
-    event: `gpu-process-crashed`,
-    listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_login(
-    event: login,
-    listener: js.Function5[
-      /* event */ Event, 
-      /* webContents */ WebContents_, 
-      /* authenticationResponseDetails */ AuthenticationResponseDetails, 
-      /* authInfo */ AuthInfo, 
-      /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_newwindowfortab(event: `new-window-for-tab`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_openfile(event: `open-file`, listener: js.Function2[/* event */ Event, /* path */ String, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_openurl(event: `open-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_quit(event: quit, listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_ready(
-    event: ready,
-    listener: js.Function2[
-      /* event */ Event, 
-      /* launchInfo */ (Record[String, Any]) | NotificationResponse, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_rendererprocesscrashed(
-    event: `renderer-process-crashed`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_renderprocessgone(
-    event: `render-process-gone`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* webContents */ WebContents_, 
-      /* details */ RenderProcessGoneDetails, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_secondinstance(
-    event: `second-instance`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* argv */ js.Array[String], 
-      /* workingDirectory */ String, 
-      /* additionalData */ Any, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_selectclientcertificate(
-    event: `select-client-certificate`,
-    listener: js.Function5[
-      /* event */ Event, 
-      /* webContents */ WebContents_, 
-      /* url */ String, 
-      /* certificateList */ js.Array[Certificate], 
-      /* callback */ js.Function1[/* certificate */ js.UndefOr[Certificate], Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_sessioncreated(event: `session-created`, listener: js.Function1[/* session */ Session_, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_updateactivitystate(
-    event: `update-activity-state`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_webcontentscreated(
-    event: `web-contents-created`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_willcontinueactivity(
-    event: `will-continue-activity`,
-    listener: js.Function2[/* event */ Event, /* type */ String, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_willfinishlaunching(event: `will-finish-launching`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_willquit(event: `will-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_windowallclosed(event: `window-all-closed`, listener: js.Function): this.type = js.native
   
   /**
     * Adds `path` to the recent documents list.
@@ -456,7 +433,9 @@ trait App
     * Using `basic` should be preferred if only basic information like `vendorId` or
     * `deviceId` is needed.
     */
-  def getGPUInfo(infoType: basic | complete): js.Promise[Any] = js.native
+  @JSName("getGPUInfo")
+  @scala.annotation.targetName("getGPUInfo_basic_complete")
+  def getGPUInfo(infoType: "basic" | "complete"): js.Promise[Any] = js.native
   
   /**
     * * `minItems` Integer - The minimum number of items that will be shown in the
@@ -482,6 +461,9 @@ trait App
     * `locales` folder.
     *
     * **Note:** This API must be called after the `ready` event is emitted.
+    *
+    * **Note:** To see example return values of this API compared to other locale and
+    * language APIs, see `app.getPreferredSystemLanguages()`.
     */
   def getLocale(): String = js.native
   
@@ -549,15 +531,76 @@ trait App
     * called first, a default log directory will be created equivalent to calling
     * `app.setAppLogsPath()` without a `path` parameter.
     */
+  @JSName("getPath")
+  @scala.annotation.targetName("getPath_home_appData_userData_sessionData_temp_exe_module_desktop_documents_downloads_music_pictures_videos_recent_logs_crashDumps")
   def getPath(
-    name: home | appData | userData | sessionData | temp | exe | module | desktop | documents | downloads | music | pictures | videos | recent | logs | crashDumps
+    name: "home" | "appData" | "userData" | "sessionData" | "temp" | "exe" | "module" | "desktop" | "documents" | "downloads" | "music" | "pictures" | "videos" | "recent" | "logs" | "crashDumps"
   ): String = js.native
   
   /**
+    * The user's preferred system languages from most preferred to least preferred,
+    * including the country codes if applicable. A user can modify and add to this
+    * list on Windows or macOS through the Language and Region settings.
+    *
+    * The API uses `GlobalizationPreferences` (with a fallback to
+    * `GetSystemPreferredUILanguages`) on Windows, `\[NSLocale preferredLanguages\]`
+    * on macOS, and `g_get_language_names` on Linux.
+    *
+    * This API can be used for purposes such as deciding what language to present the
+    * application in.
+    *
+    * Here are some examples of return values of the various language and locale APIs
+    * with different configurations:
+    *
+    * * For Windows, where the application locale is German, the regional format is
+    * Finnish (Finland), and the preferred system languages from most to least
+    * preferred are French (Canada), English (US), Simplified Chinese (China),
+    * Finnish, and Spanish (Latin America):
+    *   * `app.getLocale()` returns `'de'`
+    *   * `app.getSystemLocale()` returns `'fi-FI'`
+    *   * `app.getPreferredSystemLanguages()` returns `['fr-CA', 'en-US',
+    * 'zh-Hans-CN', 'fi', 'es-419']`
+    * * On macOS, where the application locale is German, the region is Finland, and
+    * the preferred system languages from most to least preferred are French (Canada),
+    * English (US), Simplified Chinese, and Spanish (Latin America):
+    *   * `app.getLocale()` returns `'de'`
+    *   * `app.getSystemLocale()` returns `'fr-FI'`
+    *   * `app.getPreferredSystemLanguages()` returns `['fr-CA', 'en-US',
+    * 'zh-Hans-FI', 'es-419']`
+    *
+    * Both the available languages and regions and the possible return values differ
+    * between the two operating systems.
+    *
+    * As can be seen with the example above, on Windows, it is possible that a
+    * preferred system language has no country code, and that one of the preferred
+    * system languages corresponds with the language used for the regional format. On
+    * macOS, the region serves more as a default country code: the user doesn't need
+    * to have Finnish as a preferred language to use Finland as the region,and the
+    * country code `FI` is used as the country code for preferred system languages
+    * that do not have associated countries in the language name.
+    */
+  def getPreferredSystemLanguages(): js.Array[/* app.getLocale() */ String] = js.native
+  
+  /**
     * The current system locale. On Windows and Linux, it is fetched using Chromium's
-    * `i18n` library. On macOS, the `NSLocale` object is used instead.
+    * `i18n` library. On macOS, `[NSLocale currentLocale]` is used instead. To get the
+    * user's current system language, which is not always the same as the locale, it
+    * is better to use `app.getPreferredSystemLanguages()`.
+    *
+    * Different operating systems also use the regional data differently:
+    *
+    * * Windows 11 uses the regional format for numbers, dates, and times.
+    * * macOS Monterey uses the region for formatting numbers, dates, times, and for
+    * selecting the currency symbol to use.
+    *
+    * Therefore, this API can be used for purposes such as choosing a format for
+    * rendering dates and times in a calendar app, especially when the developer wants
+    * the format to be consistent with the OS.
     *
     * **Note:** This API must be called after the `ready` event is emitted.
+    *
+    * **Note:** To see example return values of this API compared to other locale and
+    * language APIs, see `app.getPreferredSystemLanguages()`.
     */
   def getSystemLocale(): String = js.native
   
@@ -725,41 +768,76 @@ trait App
     */
   var name: String = js.native
   
-  // Docs: https://electronjs.org/docs/api/app
   /**
-    * Emitted when Chrome's accessibility support changes. This event fires when
-    * assistive technologies, such as screen readers, are enabled or disabled. See
-    * https://www.chromium.org/developers/design-documents/accessibility for more
-    * details.
+    * Emitted when the application has finished basic startup. On Windows and Linux,
+    * the `will-finish-launching` event is the same as the `ready` event; on macOS,
+    * this event represents the `applicationWillFinishLaunching` notification of
+    * `NSApplication`. You would usually set up listeners for the `open-file` and
+    * `open-url` events here, and start the crash reporter and auto updater.
     *
-    * @platform darwin,win32
+    * In most cases, you should do everything in the `ready` event handler.
     */
   @JSName("on")
-  def on_accessibilitysupportchanged(
-    event: `accessibility-support-changed`,
-    listener: js.Function2[/* event */ Event, /* accessibilitySupportEnabled */ Boolean, Unit]
-  ): this.type = js.native
+  @scala.annotation.targetName("on_willfinishlaunching")
+  def on(event: "will-finish-launching", listener: js.Function): this.type = js.native
   /**
-    * Emitted when the application is activated. Various actions can trigger this
-    * event, such as launching the application for the first time, attempting to
-    * re-launch the application when it's already running, or clicking on the
-    * application's dock or taskbar icon.
+    * Emitted when all windows have been closed.
+    *
+    * If you do not subscribe to this event and all windows are closed, the default
+    * behavior is to quit the app; however, if you subscribe, you control whether the
+    * app quits or not. If the user pressed `Cmd + Q`, or the developer called
+    * `app.quit()`, Electron will first try to close all the windows and then emit the
+    * `will-quit` event, and in this case the `window-all-closed` event would not be
+    * emitted.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_windowallclosed")
+  def on(event: "window-all-closed", listener: js.Function): this.type = js.native
+  /**
+    * Emitted whenever there is a GPU info update.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_gpuinfoupdate")
+  def on(event: "gpu-info-update", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when all windows have been closed and the application will quit. Calling
+    * `event.preventDefault()` will prevent the default behavior, which is terminating
+    * the application.
+    *
+    * See the description of the `window-all-closed` event for the differences between
+    * the `will-quit` and `window-all-closed` events.
+    *
+    * **Note:** On Windows, this event will not be emitted if the app is closed due to
+    * a shutdown/restart of the system or a user logout.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_willquit")
+  def on(event: "will-quit", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  /**
+    * Emitted when mac application become active. Difference from `activate` event is
+    * that `did-become-active` is emitted every time the app becomes active, not only
+    * when Dock icon is clicked or application is re-launched.
     *
     * @platform darwin
     */
   @JSName("on")
-  def on_activate(event: activate, listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ Boolean, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_didbecomeactive")
+  def on(event: "did-become-active", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   /**
-    * Emitted during Handoff after an activity from this device was successfully
-    * resumed on another one.
+    * Emitted when the user clicks the native macOS new tab button. The new tab button
+    * is only visible if the current `BrowserWindow` has a `tabbingIdentifier`
     *
     * @platform darwin
     */
   @JSName("on")
-  def on_activitywascontinued(
-    event: `activity-was-continued`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
-  ): this.type = js.native
+  @scala.annotation.targetName("on_newwindowfortab")
+  def on(event: "new-window-for-tab", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  /**
+    * Emitted when Electron has created a new `session`.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_sessioncreated")
+  def on(event: "session-created", listener: js.Function1[/* session */ Session_, Unit]): this.type = js.native
   /**
     * Emitted before the application starts closing its windows. Calling
     * `event.preventDefault()` will prevent the default behavior, which is terminating
@@ -773,153 +851,67 @@ trait App
     * a shutdown/restart of the system or a user logout.
     */
   @JSName("on")
-  def on_beforequit(event: `before-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_beforequit")
+  def on(event: "before-quit", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   /**
-    * Emitted when a browserWindow gets blurred.
+    * Emitted when the application is activated. Various actions can trigger this
+    * event, such as launching the application for the first time, attempting to
+    * re-launch the application when it's already running, or clicking on the
+    * application's dock or taskbar icon.
+    *
+    * @platform darwin
     */
   @JSName("on")
-  def on_browserwindowblur(
-    event: `browser-window-blur`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when a new browserWindow is created.
-    */
-  @JSName("on")
-  def on_browserwindowcreated(
-    event: `browser-window-created`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when a browserWindow gets focused.
-    */
-  @JSName("on")
-  def on_browserwindowfocus(
-    event: `browser-window-focus`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when failed to verify the `certificate` for `url`, to trust the
-    * certificate you should prevent the default behavior with
-    * `event.preventDefault()` and call `callback(true)`.
-    */
-  @JSName("on")
-  def on_certificateerror(
-    event: `certificate-error`,
-    listener: js.Function7[
-      /* event */ Event, 
-      /* webContents */ WebContents_, 
-      /* url */ String, 
-      /* error */ String, 
-      /* certificate */ Certificate, 
-      /* callback */ js.Function1[/* isTrusted */ Boolean, Unit], 
-      /* isMainFrame */ Boolean, 
-      Unit
-    ]
+  @scala.annotation.targetName("on_activate")
+  def on(
+    event: "activate",
+    listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ Boolean, Unit]
   ): this.type = js.native
   /**
     * Emitted when the child process unexpectedly disappears. This is normally because
     * it was crashed or killed. It does not include renderer processes.
     */
   @JSName("on")
-  def on_childprocessgone(
-    event: `child-process-gone`,
+  @scala.annotation.targetName("on_childprocessgone")
+  def on(
+    event: "child-process-gone",
     listener: js.Function2[/* event */ Event, /* details */ Details, Unit]
   ): this.type = js.native
   /**
-    * Emitted during Handoff when an activity from a different device wants to be
-    * resumed. You should call `event.preventDefault()` if you want to handle this
-    * event.
+    * Emitted when the user wants to open a URL with the application. Your
+    * application's `Info.plist` file must define the URL scheme within the
+    * `CFBundleURLTypes` key, and set `NSPrincipalClass` to `AtomApplication`.
     *
-    * A user activity can be continued only in an app that has the same developer Team
-    * ID as the activity's source app and that supports the activity's type. Supported
-    * activity types are specified in the app's `Info.plist` under the
-    * `NSUserActivityTypes` key.
+    * You should call `event.preventDefault()` if you want to handle this event.
     *
-    * @platform darwin
-    */
-  @JSName("on")
-  def on_continueactivity(
-    event: `continue-activity`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* type */ String, 
-      /* userInfo */ Any, 
-      /* details */ ContinueActivityDetails, 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
-    * Emitted during Handoff when an activity from a different device fails to be
-    * resumed.
+    * As with the `open-file` event, be sure to register a listener for the `open-url`
+    * event early in your application startup to detect if the the application being
+    * is being opened to handle a URL. If you register the listener in response to a
+    * `ready` event, you'll miss URLs that trigger the launch of your application.
     *
     * @platform darwin
     */
   @JSName("on")
-  def on_continueactivityerror(
-    event: `continue-activity-error`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
+  @scala.annotation.targetName("on_openurl")
+  def on(event: "open-url", listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  /**
+    * Emitted when a new webContents is created.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_webcontentscreated")
+  def on(
+    event: "web-contents-created",
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   /**
-    * Emitted when mac application become active. Difference from `activate` event is
-    * that `did-become-active` is emitted every time the app becomes active, not only
-    * when Dock icon is clicked or application is re-launched.
-    *
-    * @platform darwin
+    * Emitted when a new browserWindow is created.
     */
   @JSName("on")
-  def on_didbecomeactive(event: `did-become-active`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  /**
-    * Emitted whenever there is a GPU info update.
-    */
-  @JSName("on")
-  def on_gpuinfoupdate(event: `gpu-info-update`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the GPU process crashes or is killed.
-    *
-    * **Deprecated:** This event is superceded by the `child-process-gone` event which
-    * contains more information about why the child process disappeared. It isn't
-    * always because it crashed. The `killed` boolean can be replaced by checking
-    * `reason === 'killed'` when you switch to that event.
-    *
-    * @deprecated
-    */
-  @JSName("on")
-  def on_gpuprocesscrashed(
-    event: `gpu-process-crashed`,
-    listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]
+  @scala.annotation.targetName("on_browserwindowcreated")
+  def on(
+    event: "browser-window-created",
+    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
   ): this.type = js.native
-  /**
-    * Emitted when `webContents` wants to do basic auth.
-    *
-    * The default behavior is to cancel all authentications. To override this you
-    * should prevent the default behavior with `event.preventDefault()` and call
-    * `callback(username, password)` with the credentials.
-    *
-    * If `callback` is called without a username or password, the authentication
-    * request will be cancelled and the authentication error will be returned to the
-    * page.
-    */
-  @JSName("on")
-  def on_login(
-    event: login,
-    listener: js.Function5[
-      /* event */ Event, 
-      /* webContents */ WebContents_, 
-      /* authenticationResponseDetails */ AuthenticationResponseDetails, 
-      /* authInfo */ AuthInfo, 
-      /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
-    * Emitted when the user clicks the native macOS new tab button. The new tab button
-    * is only visible if the current `BrowserWindow` has a `tabbingIdentifier`
-    *
-    * @platform darwin
-    */
-  @JSName("on")
-  def on_newwindowfortab(event: `new-window-for-tab`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   /**
     * Emitted when the user wants to open a file with the application. The `open-file`
     * event is usually emitted when the application is already open and the OS wants
@@ -936,31 +928,32 @@ trait App
     * @platform darwin
     */
   @JSName("on")
-  def on_openfile(event: `open-file`, listener: js.Function2[/* event */ Event, /* path */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_openfile")
+  def on(event: "open-file", listener: js.Function2[/* event */ Event, /* path */ String, Unit]): this.type = js.native
   /**
-    * Emitted when the user wants to open a URL with the application. Your
-    * application's `Info.plist` file must define the URL scheme within the
-    * `CFBundleURLTypes` key, and set `NSPrincipalClass` to `AtomApplication`.
-    *
-    * You should call `event.preventDefault()` if you want to handle this event.
-    *
-    * As with the `open-file` event, be sure to register a listener for the `open-url`
-    * event early in your application startup to detect if the the application being
-    * is being opened to handle a URL. If you register the listener in response to a
-    * `ready` event, you'll miss URLs that trigger the launch of your application.
-    *
-    * @platform darwin
+    * Emitted when a browserWindow gets blurred.
     */
   @JSName("on")
-  def on_openurl(event: `open-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_browserwindowblur")
+  def on(
+    event: "browser-window-blur",
+    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  ): this.type = js.native
+  // Docs: https://electronjs.org/docs/api/app
   /**
-    * Emitted when the application is quitting.
+    * Emitted when Chrome's accessibility support changes. This event fires when
+    * assistive technologies, such as screen readers, are enabled or disabled. See
+    * https://www.chromium.org/developers/design-documents/accessibility for more
+    * details.
     *
-    * **Note:** On Windows, this event will not be emitted if the app is closed due to
-    * a shutdown/restart of the system or a user logout.
+    * @platform darwin,win32
     */
   @JSName("on")
-  def on_quit(event: quit, listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_accessibilitysupportchanged")
+  def on(
+    event: "accessibility-support-changed",
+    listener: js.Function2[/* event */ Event, /* accessibilitySupportEnabled */ Boolean, Unit]
+  ): this.type = js.native
   /**
     * Emitted once, when Electron has finished initializing. On macOS, `launchInfo`
     * holds the `userInfo` of the `NSUserNotification` or information from
@@ -970,13 +963,100 @@ trait App
     * fulfilled when Electron is initialized.
     */
   @JSName("on")
-  def on_ready(
-    event: ready,
+  @scala.annotation.targetName("on_ready")
+  def on(
+    event: "ready",
     listener: js.Function2[
       /* event */ Event, 
       /* launchInfo */ (Record[String, Any]) | NotificationResponse, 
       Unit
     ]
+  ): this.type = js.native
+  /**
+    * Emitted when a browserWindow gets focused.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_browserwindowfocus")
+  def on(
+    event: "browser-window-focus",
+    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted during Handoff before an activity from a different device wants to be
+    * resumed. You should call `event.preventDefault()` if you want to handle this
+    * event.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_willcontinueactivity")
+  def on(
+    event: "will-continue-activity",
+    listener: js.Function2[/* event */ Event, /* type */ String, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when the GPU process crashes or is killed.
+    *
+    * **Deprecated:** This event is superceded by the `child-process-gone` event which
+    * contains more information about why the child process disappeared. It isn't
+    * always because it crashed. The `killed` boolean can be replaced by checking
+    * `reason === 'killed'` when you switch to that event.
+    *
+    * @deprecated
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_gpuprocesscrashed")
+  def on(
+    event: "gpu-process-crashed",
+    listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when the application is quitting.
+    *
+    * **Note:** On Windows, this event will not be emitted if the app is closed due to
+    * a shutdown/restart of the system or a user logout.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_quit")
+  def on(event: "quit", listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
+  /**
+    * Emitted when Handoff is about to be resumed on another device. If you need to
+    * update the state to be transferred, you should call `event.preventDefault()`
+    * immediately, construct a new `userInfo` dictionary and call
+    * `app.updateCurrentActivity()` in a timely manner. Otherwise, the operation will
+    * fail and `continue-activity-error` will be called.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_updateactivitystate")
+  def on(
+    event: "update-activity-state",
+    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted during Handoff when an activity from a different device fails to be
+    * resumed.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_continueactivityerror")
+  def on(
+    event: "continue-activity-error",
+    listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted during Handoff after an activity from this device was successfully
+    * resumed on another one.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_activitywascontinued")
+  def on(
+    event: "activity-was-continued",
+    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
   ): this.type = js.native
   /**
     * Emitted when the renderer process of `webContents` crashes or is killed.
@@ -989,8 +1069,9 @@ trait App
     * @deprecated
     */
   @JSName("on")
-  def on_rendererprocesscrashed(
-    event: `renderer-process-crashed`,
+  @scala.annotation.targetName("on_rendererprocesscrashed")
+  def on(
+    event: "renderer-process-crashed",
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
   ): this.type = js.native
   /**
@@ -998,12 +1079,37 @@ trait App
     * because it was crashed or killed.
     */
   @JSName("on")
-  def on_renderprocessgone(
-    event: `render-process-gone`,
+  @scala.annotation.targetName("on_renderprocessgone")
+  def on(
+    event: "render-process-gone",
     listener: js.Function3[
       /* event */ Event, 
       /* webContents */ WebContents_, 
       /* details */ RenderProcessGoneDetails, 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted during Handoff when an activity from a different device wants to be
+    * resumed. You should call `event.preventDefault()` if you want to handle this
+    * event.
+    *
+    * A user activity can be continued only in an app that has the same developer Team
+    * ID as the activity's source app and that supports the activity's type. Supported
+    * activity types are specified in the app's `Info.plist` under the
+    * `NSUserActivityTypes` key.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_continueactivity")
+  def on(
+    event: "continue-activity",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* type */ String, 
+      /* userInfo */ Any, 
+      /* details */ ContinueActivityDetails, 
       Unit
     ]
   ): this.type = js.native
@@ -1025,8 +1131,9 @@ trait App
     * `--original-process-start-time`.
     */
   @JSName("on")
-  def on_secondinstance(
-    event: `second-instance`,
+  @scala.annotation.targetName("on_secondinstance")
+  def on(
+    event: "second-instance",
     listener: js.Function4[
       /* event */ Event, 
       /* argv */ js.Array[String], 
@@ -1044,8 +1151,9 @@ trait App
     * certificate from the store.
     */
   @JSName("on")
-  def on_selectclientcertificate(
-    event: `select-client-certificate`,
+  @scala.annotation.targetName("on_selectclientcertificate")
+  def on(
+    event: "select-client-certificate",
     listener: js.Function5[
       /* event */ Event, 
       /* webContents */ WebContents_, 
@@ -1056,113 +1164,38 @@ trait App
     ]
   ): this.type = js.native
   /**
-    * Emitted when Electron has created a new `session`.
-    */
-  @JSName("on")
-  def on_sessioncreated(event: `session-created`, listener: js.Function1[/* session */ Session_, Unit]): this.type = js.native
-  /**
-    * Emitted when Handoff is about to be resumed on another device. If you need to
-    * update the state to be transferred, you should call `event.preventDefault()`
-    * immediately, construct a new `userInfo` dictionary and call
-    * `app.updateCurrentActivity()` in a timely manner. Otherwise, the operation will
-    * fail and `continue-activity-error` will be called.
+    * Emitted when `webContents` wants to do basic auth.
     *
-    * @platform darwin
+    * The default behavior is to cancel all authentications. To override this you
+    * should prevent the default behavior with `event.preventDefault()` and call
+    * `callback(username, password)` with the credentials.
+    *
+    * If `callback` is called without a username or password, the authentication
+    * request will be cancelled and the authentication error will be returned to the
+    * page.
     */
   @JSName("on")
-  def on_updateactivitystate(
-    event: `update-activity-state`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when a new webContents is created.
-    */
-  @JSName("on")
-  def on_webcontentscreated(
-    event: `web-contents-created`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+  @scala.annotation.targetName("on_login")
+  def on(
+    event: "login",
+    listener: js.Function5[
+      /* event */ Event, 
+      /* webContents */ WebContents_, 
+      /* authenticationResponseDetails */ AuthenticationResponseDetails, 
+      /* authInfo */ AuthInfo, 
+      /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
+      Unit
+    ]
   ): this.type = js.native
   /**
-    * Emitted during Handoff before an activity from a different device wants to be
-    * resumed. You should call `event.preventDefault()` if you want to handle this
-    * event.
-    *
-    * @platform darwin
+    * Emitted when failed to verify the `certificate` for `url`, to trust the
+    * certificate you should prevent the default behavior with
+    * `event.preventDefault()` and call `callback(true)`.
     */
   @JSName("on")
-  def on_willcontinueactivity(
-    event: `will-continue-activity`,
-    listener: js.Function2[/* event */ Event, /* type */ String, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when the application has finished basic startup. On Windows and Linux,
-    * the `will-finish-launching` event is the same as the `ready` event; on macOS,
-    * this event represents the `applicationWillFinishLaunching` notification of
-    * `NSApplication`. You would usually set up listeners for the `open-file` and
-    * `open-url` events here, and start the crash reporter and auto updater.
-    *
-    * In most cases, you should do everything in the `ready` event handler.
-    */
-  @JSName("on")
-  def on_willfinishlaunching(event: `will-finish-launching`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when all windows have been closed and the application will quit. Calling
-    * `event.preventDefault()` will prevent the default behavior, which is terminating
-    * the application.
-    *
-    * See the description of the `window-all-closed` event for the differences between
-    * the `will-quit` and `window-all-closed` events.
-    *
-    * **Note:** On Windows, this event will not be emitted if the app is closed due to
-    * a shutdown/restart of the system or a user logout.
-    */
-  @JSName("on")
-  def on_willquit(event: `will-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  /**
-    * Emitted when all windows have been closed.
-    *
-    * If you do not subscribe to this event and all windows are closed, the default
-    * behavior is to quit the app; however, if you subscribe, you control whether the
-    * app quits or not. If the user pressed `Cmd + Q`, or the developer called
-    * `app.quit()`, Electron will first try to close all the windows and then emit the
-    * `will-quit` event, and in this case the `window-all-closed` event would not be
-    * emitted.
-    */
-  @JSName("on")
-  def on_windowallclosed(event: `window-all-closed`, listener: js.Function): this.type = js.native
-  
-  @JSName("once")
-  def once_accessibilitysupportchanged(
-    event: `accessibility-support-changed`,
-    listener: js.Function2[/* event */ Event, /* accessibilitySupportEnabled */ Boolean, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_activate(event: activate, listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ Boolean, Unit]): this.type = js.native
-  @JSName("once")
-  def once_activitywascontinued(
-    event: `activity-was-continued`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_beforequit(event: `before-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("once")
-  def once_browserwindowblur(
-    event: `browser-window-blur`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_browserwindowcreated(
-    event: `browser-window-created`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_browserwindowfocus(
-    event: `browser-window-focus`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_certificateerror(
-    event: `certificate-error`,
+  @scala.annotation.targetName("on_certificateerror")
+  def on(
+    event: "certificate-error",
     listener: js.Function7[
       /* event */ Event, 
       /* webContents */ WebContents_, 
@@ -1174,14 +1207,155 @@ trait App
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("once")
-  def once_childprocessgone(
-    event: `child-process-gone`,
+  @scala.annotation.targetName("once_willfinishlaunching")
+  def once(event: "will-finish-launching", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_gpuinfoupdate")
+  def once(event: "gpu-info-update", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_windowallclosed")
+  def once(event: "window-all-closed", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_willquit")
+  def once(event: "will-quit", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_sessioncreated")
+  def once(event: "session-created", listener: js.Function1[/* session */ Session_, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_didbecomeactive")
+  def once(event: "did-become-active", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_beforequit")
+  def once(event: "before-quit", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_newwindowfortab")
+  def once(event: "new-window-for-tab", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_activate")
+  def once(
+    event: "activate",
+    listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_browserwindowcreated")
+  def once(
+    event: "browser-window-created",
+    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_childprocessgone")
+  def once(
+    event: "child-process-gone",
     listener: js.Function2[/* event */ Event, /* details */ Details, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_continueactivity(
-    event: `continue-activity`,
+  @scala.annotation.targetName("once_openfile")
+  def once(event: "open-file", listener: js.Function2[/* event */ Event, /* path */ String, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_ready")
+  def once(
+    event: "ready",
+    listener: js.Function2[
+      /* event */ Event, 
+      /* launchInfo */ (Record[String, Any]) | NotificationResponse, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_openurl")
+  def once(event: "open-url", listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_browserwindowblur")
+  def once(
+    event: "browser-window-blur",
+    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_accessibilitysupportchanged")
+  def once(
+    event: "accessibility-support-changed",
+    listener: js.Function2[/* event */ Event, /* accessibilitySupportEnabled */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_gpuprocesscrashed")
+  def once(
+    event: "gpu-process-crashed",
+    listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_webcontentscreated")
+  def once(
+    event: "web-contents-created",
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_browserwindowfocus")
+  def once(
+    event: "browser-window-focus",
+    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_willcontinueactivity")
+  def once(
+    event: "will-continue-activity",
+    listener: js.Function2[/* event */ Event, /* type */ String, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_quit")
+  def once(event: "quit", listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_rendererprocesscrashed")
+  def once(
+    event: "renderer-process-crashed",
+    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_updateactivitystate")
+  def once(
+    event: "update-activity-state",
+    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_continueactivityerror")
+  def once(
+    event: "continue-activity-error",
+    listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_activitywascontinued")
+  def once(
+    event: "activity-was-continued",
+    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_renderprocessgone")
+  def once(
+    event: "render-process-gone",
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents_, 
+      /* details */ RenderProcessGoneDetails, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_secondinstance")
+  def once(
+    event: "second-instance",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* argv */ js.Array[String], 
+      /* workingDirectory */ String, 
+      /* additionalData */ Any, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_continueactivity")
+  def once(
+    event: "continue-activity",
     listener: js.Function4[
       /* event */ Event, 
       /* type */ String, 
@@ -1191,22 +1365,9 @@ trait App
     ]
   ): this.type = js.native
   @JSName("once")
-  def once_continueactivityerror(
-    event: `continue-activity-error`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_didbecomeactive(event: `did-become-active`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("once")
-  def once_gpuinfoupdate(event: `gpu-info-update`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_gpuprocesscrashed(
-    event: `gpu-process-crashed`,
-    listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_login(
-    event: login,
+  @scala.annotation.targetName("once_login")
+  def once(
+    event: "login",
     listener: js.Function5[
       /* event */ Event, 
       /* webContents */ WebContents_, 
@@ -1217,51 +1378,9 @@ trait App
     ]
   ): this.type = js.native
   @JSName("once")
-  def once_newwindowfortab(event: `new-window-for-tab`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("once")
-  def once_openfile(event: `open-file`, listener: js.Function2[/* event */ Event, /* path */ String, Unit]): this.type = js.native
-  @JSName("once")
-  def once_openurl(event: `open-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
-  @JSName("once")
-  def once_quit(event: quit, listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
-  @JSName("once")
-  def once_ready(
-    event: ready,
-    listener: js.Function2[
-      /* event */ Event, 
-      /* launchInfo */ (Record[String, Any]) | NotificationResponse, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_rendererprocesscrashed(
-    event: `renderer-process-crashed`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_renderprocessgone(
-    event: `render-process-gone`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* webContents */ WebContents_, 
-      /* details */ RenderProcessGoneDetails, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_secondinstance(
-    event: `second-instance`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* argv */ js.Array[String], 
-      /* workingDirectory */ String, 
-      /* additionalData */ Any, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_selectclientcertificate(
-    event: `select-client-certificate`,
+  @scala.annotation.targetName("once_selectclientcertificate")
+  def once(
+    event: "select-client-certificate",
     listener: js.Function5[
       /* event */ Event, 
       /* webContents */ WebContents_, 
@@ -1272,28 +1391,20 @@ trait App
     ]
   ): this.type = js.native
   @JSName("once")
-  def once_sessioncreated(event: `session-created`, listener: js.Function1[/* session */ Session_, Unit]): this.type = js.native
-  @JSName("once")
-  def once_updateactivitystate(
-    event: `update-activity-state`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
+  @scala.annotation.targetName("once_certificateerror")
+  def once(
+    event: "certificate-error",
+    listener: js.Function7[
+      /* event */ Event, 
+      /* webContents */ WebContents_, 
+      /* url */ String, 
+      /* error */ String, 
+      /* certificate */ Certificate, 
+      /* callback */ js.Function1[/* isTrusted */ Boolean, Unit], 
+      /* isMainFrame */ Boolean, 
+      Unit
+    ]
   ): this.type = js.native
-  @JSName("once")
-  def once_webcontentscreated(
-    event: `web-contents-created`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_willcontinueactivity(
-    event: `will-continue-activity`,
-    listener: js.Function2[/* event */ Event, /* type */ String, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_willfinishlaunching(event: `will-finish-launching`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_willquit(event: `will-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("once")
-  def once_windowallclosed(event: `window-all-closed`, listener: js.Function): this.type = js.native
   
   /**
     * Try to close all windows. The `before-quit` event will be emitted first. If all
@@ -1346,37 +1457,191 @@ trait App
   def removeAsDefaultProtocolClient(protocol: String, path: Unit, args: js.Array[String]): Boolean = js.native
   
   @JSName("removeListener")
-  def removeListener_accessibilitysupportchanged(
-    event: `accessibility-support-changed`,
+  @scala.annotation.targetName("removeListener_windowallclosed")
+  def removeListener(event: "window-all-closed", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_gpuinfoupdate")
+  def removeListener(event: "gpu-info-update", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_willfinishlaunching")
+  def removeListener(event: "will-finish-launching", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_beforequit")
+  def removeListener(event: "before-quit", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_didbecomeactive")
+  def removeListener(event: "did-become-active", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_sessioncreated")
+  def removeListener(event: "session-created", listener: js.Function1[/* session */ Session_, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_willquit")
+  def removeListener(event: "will-quit", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_newwindowfortab")
+  def removeListener(event: "new-window-for-tab", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_willcontinueactivity")
+  def removeListener(
+    event: "will-continue-activity",
+    listener: js.Function2[/* event */ Event, /* type */ String, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_browserwindowcreated")
+  def removeListener(
+    event: "browser-window-created",
+    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_webcontentscreated")
+  def removeListener(
+    event: "web-contents-created",
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_activate")
+  def removeListener(
+    event: "activate",
+    listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_openfile")
+  def removeListener(event: "open-file", listener: js.Function2[/* event */ Event, /* path */ String, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_browserwindowblur")
+  def removeListener(
+    event: "browser-window-blur",
+    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_browserwindowfocus")
+  def removeListener(
+    event: "browser-window-focus",
+    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_quit")
+  def removeListener(event: "quit", listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_ready")
+  def removeListener(
+    event: "ready",
+    listener: js.Function2[
+      /* event */ Event, 
+      /* launchInfo */ (Record[String, Any]) | NotificationResponse, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_childprocessgone")
+  def removeListener(
+    event: "child-process-gone",
+    listener: js.Function2[/* event */ Event, /* details */ Details, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_accessibilitysupportchanged")
+  def removeListener(
+    event: "accessibility-support-changed",
     listener: js.Function2[/* event */ Event, /* accessibilitySupportEnabled */ Boolean, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_activate(event: activate, listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ Boolean, Unit]): this.type = js.native
+  @scala.annotation.targetName("removeListener_openurl")
+  def removeListener(event: "open-url", listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_activitywascontinued(
-    event: `activity-was-continued`,
+  @scala.annotation.targetName("removeListener_gpuprocesscrashed")
+  def removeListener(
+    event: "gpu-process-crashed",
+    listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_activitywascontinued")
+  def removeListener(
+    event: "activity-was-continued",
     listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_beforequit(event: `before-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_browserwindowblur(
-    event: `browser-window-blur`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  @scala.annotation.targetName("removeListener_updateactivitystate")
+  def removeListener(
+    event: "update-activity-state",
+    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_browserwindowcreated(
-    event: `browser-window-created`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  @scala.annotation.targetName("removeListener_rendererprocesscrashed")
+  def removeListener(
+    event: "renderer-process-crashed",
+    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_browserwindowfocus(
-    event: `browser-window-focus`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+  @scala.annotation.targetName("removeListener_continueactivityerror")
+  def removeListener(
+    event: "continue-activity-error",
+    listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_certificateerror(
-    event: `certificate-error`,
+  @scala.annotation.targetName("removeListener_renderprocessgone")
+  def removeListener(
+    event: "render-process-gone",
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents_, 
+      /* details */ RenderProcessGoneDetails, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_secondinstance")
+  def removeListener(
+    event: "second-instance",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* argv */ js.Array[String], 
+      /* workingDirectory */ String, 
+      /* additionalData */ Any, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_continueactivity")
+  def removeListener(
+    event: "continue-activity",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* type */ String, 
+      /* userInfo */ Any, 
+      /* details */ ContinueActivityDetails, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_selectclientcertificate")
+  def removeListener(
+    event: "select-client-certificate",
+    listener: js.Function5[
+      /* event */ Event, 
+      /* webContents */ WebContents_, 
+      /* url */ String, 
+      /* certificateList */ js.Array[Certificate], 
+      /* callback */ js.Function1[/* certificate */ js.UndefOr[Certificate], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_login")
+  def removeListener(
+    event: "login",
+    listener: js.Function5[
+      /* event */ Event, 
+      /* webContents */ WebContents_, 
+      /* authenticationResponseDetails */ AuthenticationResponseDetails, 
+      /* authInfo */ AuthInfo, 
+      /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_certificateerror")
+  def removeListener(
+    event: "certificate-error",
     listener: js.Function7[
       /* event */ Event, 
       /* webContents */ WebContents_, 
@@ -1388,126 +1653,6 @@ trait App
       Unit
     ]
   ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_childprocessgone(
-    event: `child-process-gone`,
-    listener: js.Function2[/* event */ Event, /* details */ Details, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_continueactivity(
-    event: `continue-activity`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* type */ String, 
-      /* userInfo */ Any, 
-      /* details */ ContinueActivityDetails, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_continueactivityerror(
-    event: `continue-activity-error`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_didbecomeactive(event: `did-become-active`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_gpuinfoupdate(event: `gpu-info-update`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_gpuprocesscrashed(
-    event: `gpu-process-crashed`,
-    listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_login(
-    event: login,
-    listener: js.Function5[
-      /* event */ Event, 
-      /* webContents */ WebContents_, 
-      /* authenticationResponseDetails */ AuthenticationResponseDetails, 
-      /* authInfo */ AuthInfo, 
-      /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_newwindowfortab(event: `new-window-for-tab`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_openfile(event: `open-file`, listener: js.Function2[/* event */ Event, /* path */ String, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_openurl(event: `open-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_quit(event: quit, listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_ready(
-    event: ready,
-    listener: js.Function2[
-      /* event */ Event, 
-      /* launchInfo */ (Record[String, Any]) | NotificationResponse, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_rendererprocesscrashed(
-    event: `renderer-process-crashed`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_renderprocessgone(
-    event: `render-process-gone`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* webContents */ WebContents_, 
-      /* details */ RenderProcessGoneDetails, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_secondinstance(
-    event: `second-instance`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* argv */ js.Array[String], 
-      /* workingDirectory */ String, 
-      /* additionalData */ Any, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_selectclientcertificate(
-    event: `select-client-certificate`,
-    listener: js.Function5[
-      /* event */ Event, 
-      /* webContents */ WebContents_, 
-      /* url */ String, 
-      /* certificateList */ js.Array[Certificate], 
-      /* callback */ js.Function1[/* certificate */ js.UndefOr[Certificate], Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_sessioncreated(event: `session-created`, listener: js.Function1[/* session */ Session_, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_updateactivitystate(
-    event: `update-activity-state`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_webcontentscreated(
-    event: `web-contents-created`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_willcontinueactivity(
-    event: `will-continue-activity`,
-    listener: js.Function2[/* event */ Event, /* type */ String, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_willfinishlaunching(event: `will-finish-launching`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_willquit(event: `will-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_windowallclosed(event: `window-all-closed`, listener: js.Function): this.type = js.native
   
   /**
     * The return value of this method indicates whether or not this instance of your
@@ -1609,7 +1754,9 @@ trait App
     *
     * @platform darwin
     */
-  def setActivationPolicy(policy: regular | accessory | prohibited): Unit = js.native
+  @JSName("setActivationPolicy")
+  @scala.annotation.targetName("setActivationPolicy_regular_accessory_prohibited")
+  def setActivationPolicy(policy: "regular" | "accessory" | "prohibited"): Unit = js.native
   
   /**
     * Sets or creates a directory your app's logs which can then be manipulated with
@@ -1712,8 +1859,8 @@ trait App
     *
     * @platform win32
     */
-  def setJumpList(): ok | error | invalidSeparatorError | fileTypeRegistrationError | customCategoryAccessDeniedError = js.native
-  def setJumpList(categories: js.Array[JumpListCategory]): ok | error | invalidSeparatorError | fileTypeRegistrationError | customCategoryAccessDeniedError = js.native
+  def setJumpList(): "ok" | "error" | "invalidSeparatorError" | "fileTypeRegistrationError" | "customCategoryAccessDeniedError" = js.native
+  def setJumpList(categories: js.Array[JumpListCategory]): "ok" | "error" | "invalidSeparatorError" | "fileTypeRegistrationError" | "customCategoryAccessDeniedError" = js.native
   
   /**
     * To work with Electron's `autoUpdater` on Windows, which uses Squirrel, you'll

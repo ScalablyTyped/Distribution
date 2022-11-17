@@ -10,10 +10,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReferenceSymbol
-  extends StObject
-     with Symbol
-     with TemplateDeclarationSymbol {
+trait ReferenceSymbol extends StObject {
   
   /**
     * The node in the `TemplateAst` where the symbol is declared. That is, node for the `#ref` or

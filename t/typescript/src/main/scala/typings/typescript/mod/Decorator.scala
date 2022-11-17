@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Decorator
   extends StObject
-     with Node
-     with CallLikeExpression {
+     with Node {
   
   val expression: LeftHandSideExpression = js.native
   

@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.AwaitExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `113` extends StObject {
   
-  var `type`: AwaitExpression
+  var `type`: "AwaitExpression"
 }
 object `113` {
   
@@ -19,6 +18,6 @@ object `113` {
   
   extension [Self <: `113`](x: Self) {
     
-    inline def setType(value: AwaitExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "AwaitExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -6,7 +6,6 @@ import typings.std.Record
 import typings.three.srcConstantsMod.ColorSpace
 import typings.three.srcCoreBufferAttributeMod.BufferAttribute
 import typings.three.srcUtilsMod.ColorRepresentation
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -108,7 +107,7 @@ object srcMathColorMod {
     def getStyle(): String = js.native
     def getStyle(colorSpace: ColorSpace): String = js.native
     
-    val isColor: `true` = js.native
+    val isColor: true = js.native
     
     @JSName(js.Symbol.iterator)
     var iterator: js.Function0[Generator[Double, Unit, Any]] = js.native

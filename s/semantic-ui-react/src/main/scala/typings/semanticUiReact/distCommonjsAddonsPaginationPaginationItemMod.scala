@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.semanticUiReact.semanticUiReactStrings.ellipsisItem
-import typings.semanticUiReact.semanticUiReactStrings.firstItem
-import typings.semanticUiReact.semanticUiReactStrings.lastItem
-import typings.semanticUiReact.semanticUiReactStrings.nextItem
-import typings.semanticUiReact.semanticUiReactStrings.pageItem
-import typings.semanticUiReact.semanticUiReactStrings.prevItem
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -73,7 +67,7 @@ object distCommonjsAddonsPaginationPaginationItemMod {
       ] = js.undefined
     
     /** A pagination should have a type. */
-    var `type`: js.UndefOr[ellipsisItem | firstItem | prevItem | pageItem | nextItem | lastItem] = js.undefined
+    var `type`: js.UndefOr["ellipsisItem" | "firstItem" | "prevItem" | "pageItem" | "nextItem" | "lastItem"] = js.undefined
   }
   object StrictPaginationItemProps {
     
@@ -104,7 +98,7 @@ object distCommonjsAddonsPaginationPaginationItemMod {
       
       inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      inline def setType(value: ellipsisItem | firstItem | prevItem | pageItem | nextItem | lastItem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "ellipsisItem" | "firstItem" | "prevItem" | "pageItem" | "nextItem" | "lastItem"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }

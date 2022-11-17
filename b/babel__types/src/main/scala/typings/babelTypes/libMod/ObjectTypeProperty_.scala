@@ -1,23 +1,16 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ObjectTypeProperty
-import typings.babelTypes.babelTypesStrings.get
-import typings.babelTypes.babelTypesStrings.init
-import typings.babelTypes.babelTypesStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ObjectTypeProperty_
   extends StObject
-     with BaseNode
-     with Flow
-     with Node
-     with UserWhitespacable {
+     with BaseNode {
   
   var key: Identifier_ | StringLiteral_
   
-  var kind: init | get | set
+  var kind: "init" | "get" | "set"
   
   var method: Boolean
   
@@ -28,7 +21,7 @@ trait ObjectTypeProperty_
   var static: Boolean
   
   @JSName("type")
-  var type_ObjectTypeProperty_ : ObjectTypeProperty
+  var type_ObjectTypeProperty_ : "ObjectTypeProperty"
   
   var value: FlowType
   
@@ -38,7 +31,7 @@ object ObjectTypeProperty_ {
   
   inline def apply(
     key: Identifier_ | StringLiteral_,
-    kind: init | get | set,
+    kind: "init" | "get" | "set",
     method: Boolean,
     optional: Boolean,
     proto: Boolean,
@@ -54,7 +47,7 @@ object ObjectTypeProperty_ {
     
     inline def setKey(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setKind(value: init | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "init" | "get" | "set"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
@@ -64,7 +57,7 @@ object ObjectTypeProperty_ {
     
     inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ObjectTypeProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ObjectTypeProperty"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: FlowType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

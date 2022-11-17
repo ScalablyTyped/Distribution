@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSLiteralType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `20` extends StObject {
   
-  var `type`: TSLiteralType
+  var `type`: "TSLiteralType"
 }
 object `20` {
   
@@ -19,6 +18,6 @@ object `20` {
   
   extension [Self <: `20`](x: Self) {
     
-    inline def setType(value: TSLiteralType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSLiteralType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

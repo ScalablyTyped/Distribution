@@ -1,11 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdStrings.center
-import typings.antd.antdStrings.horizontal
-import typings.antd.antdStrings.left
-import typings.antd.antdStrings.right
-import typings.antd.antdStrings.vertical
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
@@ -27,7 +22,7 @@ object libDividerMod extends Shortcut {
     
     var dashed: js.UndefOr[Boolean] = js.undefined
     
-    var orientation: js.UndefOr[left | right | center] = js.undefined
+    var orientation: js.UndefOr["left" | "right" | "center"] = js.undefined
     
     var orientationMargin: js.UndefOr[String | Double] = js.undefined
     
@@ -37,7 +32,7 @@ object libDividerMod extends Shortcut {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `type`: js.UndefOr["horizontal" | "vertical"] = js.undefined
   }
   object DividerProps {
     
@@ -60,7 +55,7 @@ object libDividerMod extends Shortcut {
       
       inline def setDashedUndefined: Self = StObject.set(x, "dashed", js.undefined)
       
-      inline def setOrientation(value: left | right | center): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: "left" | "right" | "center"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
       inline def setOrientationMargin(value: String | Double): Self = StObject.set(x, "orientationMargin", value.asInstanceOf[js.Any])
       
@@ -80,7 +75,7 @@ object libDividerMod extends Shortcut {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setType(value: horizontal | vertical): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "horizontal" | "vertical"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }

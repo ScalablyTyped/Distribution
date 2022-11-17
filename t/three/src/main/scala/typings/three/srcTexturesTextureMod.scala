@@ -14,7 +14,6 @@ import typings.three.srcCoreEventDispatcherMod.EventDispatcher
 import typings.three.srcMathMatrix3Mod.Matrix3
 import typings.three.srcMathVector2Mod.Vector2
 import typings.three.srcTexturesSourceMod.Source
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,7 +110,7 @@ object srcTexturesTextureMod {
       */
     var isRenderTargetTexture: Boolean = js.native
     
-    val isTexture: `true` = js.native
+    val isTexture: true = js.native
     
     /**
       * @default THREE.LinearFilter

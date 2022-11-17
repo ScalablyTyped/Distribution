@@ -1,8 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.`object`
-import typings.ajv.ajvStrings.values
 import typings.ajv.distTypesMod.CodeKeywordDefinition
 import typings.ajv.distTypesMod.SchemaObject
 import typings.ajv.distVocabulariesJtdErrorMod.JTDTypeError
@@ -16,7 +14,7 @@ object distVocabulariesJtdValuesMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type JTDValuesError = JTDTypeError[values, `object`, SchemaObject]
+  type JTDValuesError = JTDTypeError["values", "object", SchemaObject]
   
   type _To = CodeKeywordDefinition
   

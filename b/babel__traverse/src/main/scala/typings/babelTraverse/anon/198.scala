@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.EnumSymbolBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `198` extends StObject {
   
-  var `type`: EnumSymbolBody
+  var `type`: "EnumSymbolBody"
 }
 object `198` {
   
@@ -19,6 +18,6 @@ object `198` {
   
   extension [Self <: `198`](x: Self) {
     
-    inline def setType(value: EnumSymbolBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "EnumSymbolBody"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

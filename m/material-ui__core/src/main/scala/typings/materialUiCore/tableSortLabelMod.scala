@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
-import typings.materialUiCore.materialUiCoreStrings.span
 import typings.materialUiCore.tableSortLabelTableSortLabelMod.TableSortLabelTypeMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,10 +22,10 @@ object tableSortLabelMod extends Shortcut {
     */
   @JSImport("@material-ui/core/TableSortLabel", JSImport.Default)
   @js.native
-  val default: ExtendButtonBase[TableSortLabelTypeMap[js.Object, span]] = js.native
+  val default: ExtendButtonBase[TableSortLabelTypeMap[js.Object, "span"]] = js.native
   
-  type _To = ExtendButtonBase[TableSortLabelTypeMap[js.Object, span]]
+  type _To = ExtendButtonBase[TableSortLabelTypeMap[js.Object, "span"]]
   
   /* This means you don't have to write `default`, but can instead just say `tableSortLabelMod.foo` */
-  override def _to: ExtendButtonBase[TableSortLabelTypeMap[js.Object, span]] = default
+  override def _to: ExtendButtonBase[TableSortLabelTypeMap[js.Object, "span"]] = default
 }

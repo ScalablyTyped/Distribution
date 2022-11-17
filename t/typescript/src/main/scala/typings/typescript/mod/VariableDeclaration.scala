@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VariableDeclaration
   extends StObject
      with NamedDeclaration
-     with JSDocContainer
-     with HasExpressionInitializer
-     with HasJSDoc
-     with HasType
-     with VariableLikeDeclaration
-     with _BindingOrAssignmentElement {
+     with JSDocContainer {
   
   val exclamationToken: js.UndefOr[ExclamationToken] = js.native
   

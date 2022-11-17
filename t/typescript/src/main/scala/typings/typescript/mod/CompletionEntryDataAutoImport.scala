@@ -1,6 +1,5 @@
 package typings.typescript.mod
 
-import typings.typescript.typescriptBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait CompletionEntryDataAutoImport extends StObject {
   var fileName: js.UndefOr[java.lang.String] = js.undefined
   
   /** True if the export was found in the package.json AutoImportProvider */
-  var isPackageJsonImport: js.UndefOr[`true`] = js.undefined
+  var isPackageJsonImport: js.UndefOr[true] = js.undefined
   
   var moduleSpecifier: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -43,7 +42,7 @@ object CompletionEntryDataAutoImport {
     
     inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    inline def setIsPackageJsonImport(value: `true`): Self = StObject.set(x, "isPackageJsonImport", value.asInstanceOf[js.Any])
+    inline def setIsPackageJsonImport(value: true): Self = StObject.set(x, "isPackageJsonImport", value.asInstanceOf[js.Any])
     
     inline def setIsPackageJsonImportUndefined: Self = StObject.set(x, "isPackageJsonImport", js.undefined)
     

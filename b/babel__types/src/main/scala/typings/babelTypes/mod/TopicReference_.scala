@@ -1,18 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TopicReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TopicReference_
+trait TopicReference_
   extends StObject
-     with BaseNode
-     with Expression {
+     with BaseNode {
   
   @JSName("type")
-  var type_TopicReference_ : TopicReference
+  var type_TopicReference_ : "TopicReference"
 }
 object TopicReference_ {
   
@@ -24,6 +21,6 @@ object TopicReference_ {
   
   extension [Self <: TopicReference_](x: Self) {
     
-    inline def setType(value: TopicReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TopicReference"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

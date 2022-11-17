@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.OptionalIndexedAccessType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `146` extends StObject {
   
-  var `type`: OptionalIndexedAccessType
+  var `type`: "OptionalIndexedAccessType"
 }
 object `146` {
   
@@ -19,6 +18,6 @@ object `146` {
   
   extension [Self <: `146`](x: Self) {
     
-    inline def setType(value: OptionalIndexedAccessType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "OptionalIndexedAccessType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

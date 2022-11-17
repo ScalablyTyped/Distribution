@@ -3,30 +3,6 @@ package typings.antd
 import org.scalablytyped.runtime.StringDictionary
 import typings.antd.anon.Download
 import typings.antd.anon.PercentNumber
-import typings.antd.antdStrings.PATCH
-import typings.antd.antdStrings.POST
-import typings.antd.antdStrings.PUT
-import typings.antd.antdStrings._empty
-import typings.antd.antdStrings.`use-credentials`
-import typings.antd.antdStrings.active
-import typings.antd.antdStrings.anonymous
-import typings.antd.antdStrings.bottom
-import typings.antd.antdStrings.butt
-import typings.antd.antdStrings.environment
-import typings.antd.antdStrings.exception
-import typings.antd.antdStrings.left
-import typings.antd.antdStrings.normal
-import typings.antd.antdStrings.patch_
-import typings.antd.antdStrings.post_
-import typings.antd.antdStrings.put_
-import typings.antd.antdStrings.right
-import typings.antd.antdStrings.round
-import typings.antd.antdStrings.select_
-import typings.antd.antdStrings.square
-import typings.antd.antdStrings.success
-import typings.antd.antdStrings.text_
-import typings.antd.antdStrings.top
-import typings.antd.antdStrings.user
 import typings.antd.libProgressProgressMod.ProgressGradient
 import typings.antd.libProgressProgressMod.ProgressSize
 import typings.antd.libProgressProgressMod.SuccessProps
@@ -176,7 +152,7 @@ object libUploadInterfaceMod {
   
   trait UploadFile[T] extends StObject {
     
-    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
+    var crossOrigin: js.UndefOr["anonymous" | "use-credentials" | ""] = js.undefined
     
     var error: js.UndefOr[Any] = js.undefined
     
@@ -221,7 +197,7 @@ object libUploadInterfaceMod {
     
     extension [Self <: UploadFile[?], T](x: Self & UploadFile[T]) {
       
-      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: "anonymous" | "use-credentials" | ""): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -291,26 +267,19 @@ object libUploadInterfaceMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.error
-    - typings.antd.antdStrings.success
-    - typings.antd.antdStrings.done
-    - typings.antd.antdStrings.uploading
-    - typings.antd.antdStrings.removed
-  */
-  trait UploadFileStatus extends StObject
   object UploadFileStatus {
     
-    inline def done: typings.antd.antdStrings.done = "done".asInstanceOf[typings.antd.antdStrings.done]
+    inline def done: "done" = "done".asInstanceOf["done"]
     
-    inline def error: typings.antd.antdStrings.error = "error".asInstanceOf[typings.antd.antdStrings.error]
+    inline def error: "error" = "error".asInstanceOf["error"]
     
-    inline def removed: typings.antd.antdStrings.removed = "removed".asInstanceOf[typings.antd.antdStrings.removed]
+    inline def removed: "removed" = "removed".asInstanceOf["removed"]
     
-    inline def success: typings.antd.antdStrings.success = "success".asInstanceOf[typings.antd.antdStrings.success]
+    inline def success: "success" = "success".asInstanceOf["success"]
     
-    inline def uploading: typings.antd.antdStrings.uploading = "uploading".asInstanceOf[typings.antd.antdStrings.uploading]
+    inline def uploading: "uploading" = "uploading".asInstanceOf["uploading"]
   }
+  type UploadFileStatus = "error" | "success" | "done" | "uploading" | "removed"
   
   /* Inlined std.Omit<antd.antd/lib/progress.ProgressProps, 'percent' | 'type'> */
   trait UploadListProgressProps extends StObject {
@@ -325,7 +294,7 @@ object libUploadInterfaceMod {
     
     var gapDegree: js.UndefOr[Double] = js.undefined
     
-    var gapPosition: js.UndefOr[top | bottom | left | right] = js.undefined
+    var gapPosition: js.UndefOr["top" | "bottom" | "left" | "right"] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -333,13 +302,13 @@ object libUploadInterfaceMod {
     
     var size: js.UndefOr[ProgressSize] = js.undefined
     
-    var status: js.UndefOr[normal | exception | active | success] = js.undefined
+    var status: js.UndefOr["normal" | "exception" | "active" | "success"] = js.undefined
     
     var steps: js.UndefOr[Double] = js.undefined
     
     var strokeColor: js.UndefOr[String | js.Array[String] | ProgressGradient] = js.undefined
     
-    var strokeLinecap: js.UndefOr[butt | square | round] = js.undefined
+    var strokeLinecap: js.UndefOr["butt" | "square" | "round"] = js.undefined
     
     var strokeWidth: js.UndefOr[Double] = js.undefined
     
@@ -378,7 +347,7 @@ object libUploadInterfaceMod {
       
       inline def setGapDegreeUndefined: Self = StObject.set(x, "gapDegree", js.undefined)
       
-      inline def setGapPosition(value: top | bottom | left | right): Self = StObject.set(x, "gapPosition", value.asInstanceOf[js.Any])
+      inline def setGapPosition(value: "top" | "bottom" | "left" | "right"): Self = StObject.set(x, "gapPosition", value.asInstanceOf[js.Any])
       
       inline def setGapPositionUndefined: Self = StObject.set(x, "gapPosition", js.undefined)
       
@@ -394,7 +363,7 @@ object libUploadInterfaceMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setStatus(value: normal | exception | active | success): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: "normal" | "exception" | "active" | "success"): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
@@ -408,7 +377,7 @@ object libUploadInterfaceMod {
       
       inline def setStrokeColorVarargs(value: String*): Self = StObject.set(x, "strokeColor", js.Array(value*))
       
-      inline def setStrokeLinecap(value: butt | square | round): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+      inline def setStrokeLinecap(value: "butt" | "square" | "round"): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
       
       inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
       
@@ -581,20 +550,15 @@ object libUploadInterfaceMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.text_
-    - typings.antd.antdStrings.picture
-    - typings.antd.antdStrings.`picture-card`
-  */
-  trait UploadListType extends StObject
   object UploadListType {
     
-    inline def picture: typings.antd.antdStrings.picture = "picture".asInstanceOf[typings.antd.antdStrings.picture]
+    inline def picture: "picture" = "picture".asInstanceOf["picture"]
     
-    inline def `picture-card`: typings.antd.antdStrings.`picture-card` = "picture-card".asInstanceOf[typings.antd.antdStrings.`picture-card`]
+    inline def `picture-card`: "picture-card" = "picture-card".asInstanceOf["picture-card"]
     
-    inline def text: text_ = "text".asInstanceOf[text_]
+    inline def text: "text" = "text".asInstanceOf["text"]
   }
+  type UploadListType = "text" | "picture" | "picture-card"
   
   trait UploadLocale extends StObject {
     
@@ -654,7 +618,7 @@ object libUploadInterfaceMod {
         ]
       ] = js.undefined
     
-    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
+    var capture: js.UndefOr[Boolean | "user" | "environment"] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
@@ -696,7 +660,7 @@ object libUploadInterfaceMod {
     /** Config max count of `fileList`. Will replace current one when `maxCount` is 1 */
     var maxCount: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[POST | PUT | PATCH | post_ | put_ | patch_] = js.undefined
+    var method: js.UndefOr["POST" | "PUT" | "PATCH" | "post" | "put" | "patch"] = js.undefined
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
@@ -760,7 +724,7 @@ object libUploadInterfaceMod {
       
       inline def setBeforeUploadUndefined: Self = StObject.set(x, "beforeUpload", js.undefined)
       
-      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | "user" | "environment"): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -841,7 +805,7 @@ object libUploadInterfaceMod {
       
       inline def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
       
-      inline def setMethod(value: POST | PUT | PATCH | post_ | put_ | patch_): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: "POST" | "PUT" | "PATCH" | "post" | "put" | "patch"): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
@@ -938,15 +902,11 @@ object libUploadInterfaceMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.drag
-    - typings.antd.antdStrings.select_
-  */
-  trait UploadType extends StObject
   object UploadType {
     
-    inline def drag: typings.antd.antdStrings.drag = "drag".asInstanceOf[typings.antd.antdStrings.drag]
+    inline def drag: "drag" = "drag".asInstanceOf["drag"]
     
-    inline def select: select_ = "select".asInstanceOf[select_]
+    inline def select: "select" = "select".asInstanceOf["select"]
   }
+  type UploadType = "drag" | "select"
 }

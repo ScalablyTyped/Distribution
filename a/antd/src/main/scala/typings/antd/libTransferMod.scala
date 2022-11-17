@@ -227,17 +227,13 @@ object libTransferMod {
     ): Unit = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.left
-    - typings.antd.antdStrings.right
-  */
-  trait TransferDirection extends StObject
   object TransferDirection {
     
-    inline def left: typings.antd.antdStrings.left = "left".asInstanceOf[typings.antd.antdStrings.left]
+    inline def left: "left" = "left".asInstanceOf["left"]
     
-    inline def right: typings.antd.antdStrings.right = "right".asInstanceOf[typings.antd.antdStrings.right]
+    inline def right: "right" = "right".asInstanceOf["right"]
   }
+  type TransferDirection = "left" | "right"
   
   trait TransferItem
     extends StObject

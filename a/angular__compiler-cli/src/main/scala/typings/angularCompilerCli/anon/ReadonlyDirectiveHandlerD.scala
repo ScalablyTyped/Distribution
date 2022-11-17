@@ -2,7 +2,6 @@ package typings.angularCompilerCli.anon
 
 import typings.angularCompiler.mod.R3ClassMetadata
 import typings.angularCompiler.mod.R3DirectiveMetadata
-import typings.angularCompilerCli.angularCompilerCliStrings.dynamic
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscMetadataMod.ClassPropertyMapping
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.DirectiveTypeCheckMeta
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Readonly<@angular/compiler-cli.@angular/compiler-cli/src/ngtsc/annotations/directive/src/handler.DirectiveHandlerData> */
 trait ReadonlyDirectiveHandlerD extends StObject {
   
-  val baseClass: js.UndefOr[Reference[ClassDeclaration[DeclarationNode]] | dynamic | Null] = js.undefined
+  val baseClass: js.UndefOr[Reference[ClassDeclaration[DeclarationNode]] | "dynamic" | Null] = js.undefined
   
   val classMetadata: js.UndefOr[R3ClassMetadata | Null] = js.undefined
   
@@ -52,7 +51,7 @@ object ReadonlyDirectiveHandlerD {
   
   extension [Self <: ReadonlyDirectiveHandlerD](x: Self) {
     
-    inline def setBaseClass(value: Reference[ClassDeclaration[DeclarationNode]] | dynamic): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
+    inline def setBaseClass(value: Reference[ClassDeclaration[DeclarationNode]] | "dynamic"): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
     
     inline def setBaseClassNull: Self = StObject.set(x, "baseClass", null)
     

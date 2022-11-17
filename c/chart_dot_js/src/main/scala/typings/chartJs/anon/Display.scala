@@ -1,9 +1,9 @@
 package typings.chartJs.anon
 
-import typings.chartJs.mod.FontSpec
-import typings.chartJs.mod.ScriptableAndScriptableOptions
-import typings.chartJs.mod.ScriptableCartesianScaleContext
-import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.distChunksHelpersDotcoreMod.AnyObject
+import typings.chartJs.distChunksHelpersDotcoreMod.FontSpec
+import typings.chartJs.distChunksHelpersDotcoreMod.ScriptableAndScriptableOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.ScriptableCartesianScaleContext
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Display extends StObject {
   
   /** Alignment of the axis title. */
-  var align: typings.chartJs.mod.Align
+  var align: typings.chartJs.distChunksHelpersDotcoreMod.Align
   
   /** Color of the axis label. */
-  var color: typings.chartJs.typesColorMod.Color
+  var color: typings.chartJs.distChunksHelpersDotcoreMod.Color
   
   /** If true, displays the axis title. */
   var display: Boolean
@@ -32,8 +32,8 @@ trait Display extends StObject {
 object Display {
   
   inline def apply(
-    align: typings.chartJs.mod.Align,
-    color: typings.chartJs.typesColorMod.Color,
+    align: typings.chartJs.distChunksHelpersDotcoreMod.Align,
+    color: typings.chartJs.distChunksHelpersDotcoreMod.Color,
     display: Boolean,
     font: ScriptableAndScriptableOptions[Partial[FontSpec], ScriptableCartesianScaleContext],
     padding: Double | Top,
@@ -45,9 +45,9 @@ object Display {
   
   extension [Self <: Display](x: Self) {
     
-    inline def setAlign(value: typings.chartJs.mod.Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: typings.chartJs.distChunksHelpersDotcoreMod.Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: typings.chartJs.typesColorMod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.chartJs.distChunksHelpersDotcoreMod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

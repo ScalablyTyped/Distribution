@@ -4,8 +4,6 @@ import typings.three.examplesJsmWebxrXrhandmodelfactoryMod.XRHandModel
 import typings.three.examplesJsmWebxrXrhandmodelfactoryMod.XRHandModelHandedness
 import typings.three.srcThreeMod.Group
 import typings.three.srcThreeMod.Texture
-import typings.three.threeStrings.box
-import typings.three.threeStrings.sphere
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +34,7 @@ object examplesJsmWebxrXrhandprimitivemodelMod {
   
   trait XRHandPrimitiveModelOptions extends StObject {
     
-    var primitive: js.UndefOr[sphere | box] = js.undefined
+    var primitive: js.UndefOr["sphere" | "box"] = js.undefined
   }
   object XRHandPrimitiveModelOptions {
     
@@ -47,7 +45,7 @@ object examplesJsmWebxrXrhandprimitivemodelMod {
     
     extension [Self <: XRHandPrimitiveModelOptions](x: Self) {
       
-      inline def setPrimitive(value: sphere | box): Self = StObject.set(x, "primitive", value.asInstanceOf[js.Any])
+      inline def setPrimitive(value: "sphere" | "box"): Self = StObject.set(x, "primitive", value.asInstanceOf[js.Any])
       
       inline def setPrimitiveUndefined: Self = StObject.set(x, "primitive", js.undefined)
     }

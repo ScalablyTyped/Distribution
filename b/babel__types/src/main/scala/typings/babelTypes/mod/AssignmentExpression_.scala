@@ -1,16 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.AssignmentExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait AssignmentExpression_
+trait AssignmentExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with Standardized {
+     with BaseNode {
   
   var left: LVal
   
@@ -19,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var right: Expression
   
   @JSName("type")
-  var type_AssignmentExpression_ : AssignmentExpression
+  var type_AssignmentExpression_ : "AssignmentExpression"
 }
 object AssignmentExpression_ {
   
@@ -37,6 +33,6 @@ object AssignmentExpression_ {
     
     inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    inline def setType(value: AssignmentExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "AssignmentExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

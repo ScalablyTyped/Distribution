@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object examplesJsmNodesCoreNodeFunctionInputMod {
     var isConst: Boolean = js.native
     
     /* CompleteClass */
-    var isNodeFunctionInput: `true` = js.native
+    var isNodeFunctionInput: true = js.native
     
     /* CompleteClass */
     var qualifier: String = js.native
@@ -40,7 +39,7 @@ object examplesJsmNodesCoreNodeFunctionInputMod {
     
     var isConst: Boolean
     
-    var isNodeFunctionInput: `true`
+    var isNodeFunctionInput: true
     
     var qualifier: String
   }
@@ -59,7 +58,7 @@ object examplesJsmNodesCoreNodeFunctionInputMod {
       
       inline def setIsConst(value: Boolean): Self = StObject.set(x, "isConst", value.asInstanceOf[js.Any])
       
-      inline def setIsNodeFunctionInput(value: `true`): Self = StObject.set(x, "isNodeFunctionInput", value.asInstanceOf[js.Any])
+      inline def setIsNodeFunctionInput(value: true): Self = StObject.set(x, "isNodeFunctionInput", value.asInstanceOf[js.Any])
       
       inline def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
     }

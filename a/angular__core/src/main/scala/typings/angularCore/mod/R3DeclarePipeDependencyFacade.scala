@@ -1,13 +1,12 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreStrings.pipe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait R3DeclarePipeDependencyFacade extends StObject {
   
-  var kind: js.UndefOr[pipe] = js.undefined
+  var kind: js.UndefOr["pipe"] = js.undefined
   
   var name: String
   
@@ -23,7 +22,7 @@ object R3DeclarePipeDependencyFacade {
   
   extension [Self <: R3DeclarePipeDependencyFacade](x: Self) {
     
-    inline def setKind(value: pipe): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "pipe"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

@@ -1,46 +1,57 @@
 package typings.chartJs.anon
 
+import typings.chartJs.distChunksHelpersDotcoreMod.Chart4
+import typings.chartJs.distChunksHelpersDotcoreMod.ChartType
 import typings.std.CanvasRenderingContext2D
-import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Ctx extends StObject {
   
-  val canvas: HTMLCanvasElement
+  var chart: Chart4[
+    ChartType, 
+    typings.chartJs.distChunksHelpersDotcoreMod.DefaultDataPoint[ChartType], 
+    Any
+  ]
   
-  val ctx: CanvasRenderingContext2D
+  var ctx: CanvasRenderingContext2D
   
-  var currentDevicePixelRatio: Double
+  var id: String
   
-  val height: Double
-  
-  val width: Double
+  var `type`: String
 }
 object Ctx {
   
   inline def apply(
-    canvas: HTMLCanvasElement,
+    chart: Chart4[
+      ChartType, 
+      typings.chartJs.distChunksHelpersDotcoreMod.DefaultDataPoint[ChartType], 
+      Any
+    ],
     ctx: CanvasRenderingContext2D,
-    currentDevicePixelRatio: Double,
-    height: Double,
-    width: Double
+    id: String,
+    `type`: String
   ): Ctx = {
-    val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], currentDevicePixelRatio = currentDevicePixelRatio.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ctx]
   }
   
   extension [Self <: Ctx](x: Self) {
     
-    inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    inline def setChart(
+      value: Chart4[
+          ChartType, 
+          typings.chartJs.distChunksHelpersDotcoreMod.DefaultDataPoint[ChartType], 
+          Any
+        ]
+    ): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     inline def setCtx(value: CanvasRenderingContext2D): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    inline def setCurrentDevicePixelRatio(value: Double): Self = StObject.set(x, "currentDevicePixelRatio", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-    
-    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

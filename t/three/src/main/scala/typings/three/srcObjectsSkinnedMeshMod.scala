@@ -6,7 +6,6 @@ import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathVector3Mod.Vector3
 import typings.three.srcObjectsMeshMod.Mesh
 import typings.three.srcObjectsSkeletonMod.Skeleton
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +34,7 @@ object srcObjectsSkinnedMeshMod {
     
     def boneTransform(index: Double, target: Vector3): Vector3 = js.native
     
-    val isSkinnedMesh: `true` = js.native
+    val isSkinnedMesh: true = js.native
     
     def normalizeSkinWeights(): Unit = js.native
     

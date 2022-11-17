@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.breadcrumbsBreadcrumbsMod.BreadcrumbsTypeMap
-import typings.materialUiCore.materialUiCoreStrings.nav
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,10 +21,10 @@ object breadcrumbsMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Breadcrumbs", JSImport.Default)
   @js.native
-  val default: OverridableComponent[BreadcrumbsTypeMap[js.Object, nav]] = js.native
+  val default: OverridableComponent[BreadcrumbsTypeMap[js.Object, "nav"]] = js.native
   
-  type _To = OverridableComponent[BreadcrumbsTypeMap[js.Object, nav]]
+  type _To = OverridableComponent[BreadcrumbsTypeMap[js.Object, "nav"]]
   
   /* This means you don't have to write `default`, but can instead just say `breadcrumbsMod.foo` */
-  override def _to: OverridableComponent[BreadcrumbsTypeMap[js.Object, nav]] = default
+  override def _to: OverridableComponent[BreadcrumbsTypeMap[js.Object, "nav"]] = default
 }

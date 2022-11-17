@@ -1,9 +1,5 @@
 package typings.materialUi.MaterialUI
 
-import typings.materialUi.materialUiStrings.`x-reverse`
-import typings.materialUi.materialUiStrings.`y-reverse`
-import typings.materialUi.materialUiStrings.x
-import typings.materialUi.materialUiStrings.y
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
@@ -17,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SliderProps extends StObject {
   
-  var axis: js.UndefOr[x | `x-reverse` | y | `y-reverse`] = js.undefined
+  var axis: js.UndefOr["x" | "x-reverse" | "y" | "y-reverse"] = js.undefined
   
   var defaultValue: js.UndefOr[Double] = js.undefined
   
@@ -66,7 +62,7 @@ object SliderProps {
   
   extension [Self <: SliderProps](x: Self) {
     
-    inline def setAxis(value: typings.materialUi.materialUiStrings.x | `x-reverse` | y | `y-reverse`): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: "x" | "x-reverse" | "y" | "y-reverse"): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     

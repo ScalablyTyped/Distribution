@@ -7,9 +7,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ElementSymbol
-  extends StObject
-     with Symbol {
+trait ElementSymbol extends StObject {
   
   /** A list of directives applied to the element. */
   var directives: js.Array[DirectiveSymbol]

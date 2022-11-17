@@ -148,6 +148,6 @@ object srcAudioAudioMod {
     def stop(): this.type = js.native
     
     @JSName("type")
-    var type_Audio: typings.three.threeStrings.Audio = js.native
+    var type_Audio: "Audio" = js.native
   }
 }

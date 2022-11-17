@@ -1,9 +1,6 @@
 package typings.fluentuiReactComponentRef
 
 import typings.fluentuiReactComponentRef.anon.Kind
-import typings.fluentuiReactComponentRef.fluentuiReactComponentRefStrings.find
-import typings.fluentuiReactComponentRef.fluentuiReactComponentRefStrings.forward
-import typings.fluentuiReactComponentRef.fluentuiReactComponentRefStrings.self
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import typings.std.HTMLElement
@@ -86,7 +83,7 @@ object distEsRefMod {
   
   trait RefState extends StObject {
     
-    var kind: self | forward | find | Null
+    var kind: "self" | "forward" | "find" | Null
   }
   object RefState {
     
@@ -97,7 +94,7 @@ object distEsRefMod {
     
     extension [Self <: RefState](x: Self) {
       
-      inline def setKind(value: self | forward | find): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "self" | "forward" | "find"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
       inline def setKindNull: Self = StObject.set(x, "kind", null)
     }

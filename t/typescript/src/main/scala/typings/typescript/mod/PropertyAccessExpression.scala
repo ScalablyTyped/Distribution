@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PropertyAccessExpression
   extends StObject
      with MemberExpression
-     with NamedDeclaration
-     with AccessExpression
-     with BindingOrAssignmentElementTarget
-     with _ArrayBindingOrAssignmentElement {
+     with NamedDeclaration {
   
   val expression: LeftHandSideExpression = js.native
   

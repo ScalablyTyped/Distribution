@@ -1,16 +1,6 @@
 package typings.reactNative.mod
 
 import typings.react.mod.global.JSX.Element
-import typings.reactNative.reactNativeStrings.Dragging
-import typings.reactNative.reactNativeStrings.Idle
-import typings.reactNative.reactNativeStrings.Settling
-import typings.reactNative.reactNativeStrings.`locked-closed`
-import typings.reactNative.reactNativeStrings.`locked-open`
-import typings.reactNative.reactNativeStrings.`on-drag`
-import typings.reactNative.reactNativeStrings.left
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.right
-import typings.reactNative.reactNativeStrings.unlocked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,14 +34,14 @@ trait DrawerLayoutAndroidProps
     *   not respond to gestures. The drawer may still be opened and
     *   closed programmatically (openDrawer/closeDrawer).
     */
-  var drawerLockMode: js.UndefOr[unlocked | `locked-closed` | `locked-open`] = js.undefined
+  var drawerLockMode: js.UndefOr["unlocked" | "locked-closed" | "locked-open"] = js.undefined
   
   /**
     * Specifies the side of the screen from which the drawer will slide in.
     * - 'left' (the default)
     * - 'right'
     */
-  var drawerPosition: js.UndefOr[left | right] = js.undefined
+  var drawerPosition: js.UndefOr["left" | "right"] = js.undefined
   
   /**
     * Specifies the width of the drawer, more precisely the width of the
@@ -64,7 +54,7 @@ trait DrawerLayoutAndroidProps
     * - 'none' (the default), drags do not dismiss the keyboard.
     * - 'on-drag', the keyboard is dismissed when a drag begins.
     */
-  var keyboardDismissMode: js.UndefOr[none | `on-drag`] = js.undefined
+  var keyboardDismissMode: js.UndefOr["none" | "on-drag"] = js.undefined
   
   /**
     * Function called whenever the navigation view has been closed.
@@ -92,7 +82,7 @@ trait DrawerLayoutAndroidProps
     *   navigation view, and the navigation view is now finishing
     *   it's closing or opening animation
     */
-  var onDrawerStateChanged: js.UndefOr[js.Function1[/* event */ Idle | Dragging | Settling, Unit]] = js.undefined
+  var onDrawerStateChanged: js.UndefOr[js.Function1[/* event */ "Idle" | "Dragging" | "Settling", Unit]] = js.undefined
   
   /**
     * The navigation view that will be rendered to the side of the
@@ -120,11 +110,11 @@ object DrawerLayoutAndroidProps {
     
     inline def setDrawerBackgroundColorUndefined: Self = StObject.set(x, "drawerBackgroundColor", js.undefined)
     
-    inline def setDrawerLockMode(value: unlocked | `locked-closed` | `locked-open`): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
+    inline def setDrawerLockMode(value: "unlocked" | "locked-closed" | "locked-open"): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
     
     inline def setDrawerLockModeUndefined: Self = StObject.set(x, "drawerLockMode", js.undefined)
     
-    inline def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
+    inline def setDrawerPosition(value: "left" | "right"): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
     
     inline def setDrawerPositionUndefined: Self = StObject.set(x, "drawerPosition", js.undefined)
     
@@ -132,7 +122,7 @@ object DrawerLayoutAndroidProps {
     
     inline def setDrawerWidthUndefined: Self = StObject.set(x, "drawerWidth", js.undefined)
     
-    inline def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+    inline def setKeyboardDismissMode(value: "none" | "on-drag"): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
     
     inline def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
     
@@ -148,7 +138,7 @@ object DrawerLayoutAndroidProps {
     
     inline def setOnDrawerSlideUndefined: Self = StObject.set(x, "onDrawerSlide", js.undefined)
     
-    inline def setOnDrawerStateChanged(value: /* event */ Idle | Dragging | Settling => Unit): Self = StObject.set(x, "onDrawerStateChanged", js.Any.fromFunction1(value))
+    inline def setOnDrawerStateChanged(value: /* event */ "Idle" | "Dragging" | "Settling" => Unit): Self = StObject.set(x, "onDrawerStateChanged", js.Any.fromFunction1(value))
     
     inline def setOnDrawerStateChangedUndefined: Self = StObject.set(x, "onDrawerStateChanged", js.undefined)
     

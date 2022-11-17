@@ -3,7 +3,6 @@ package typings.d3Scale
 import typings.d3Scale.anon.Name
 import typings.d3Scale.anon.ToString
 import typings.d3Scale.anon.ValueOf
-import typings.d3Scale.d3ScaleStrings.`implicit`
 import typings.d3Time.mod.CountableTimeInterval
 import typings.d3Time.mod.TimeInterval_
 import org.scalablytyped.runtime.StObject
@@ -53,8 +52,8 @@ object mod {
     
     @JSImport("d3-scale", "scaleImplicit.name")
     @js.native
-    def name: `implicit` = js.native
-    inline def name_=(x: `implicit`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    def name: "implicit" = js.native
+    inline def name_=(x: "implicit"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
   }
   
   inline def scaleLinear[Range, Output, Unknown](): ScaleLinear_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")().asInstanceOf[ScaleLinear_[Range, Output, Unknown]]

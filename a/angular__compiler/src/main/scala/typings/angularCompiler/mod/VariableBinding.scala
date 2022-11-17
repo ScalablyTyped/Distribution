@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "VariableBinding")
 @js.native
-open class VariableBinding protected ()
-  extends StObject
-     with TemplateBinding {
+open class VariableBinding protected () extends StObject {
   /**
     * @param sourceSpan entire span of the binding.
     * @param key name of the LHS along with its span.

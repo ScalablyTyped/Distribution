@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined // ref
 {  ref :string} & {  nullable :boolean | undefined,   metadata :std.Record<string, unknown> | undefined,   definitions :std.Record<string, ajv.ajv/dist/types/jtd-schema.SomeJTDSchemaType> | undefined} */
-trait refstringnullablebooleanu
-  extends StObject
-     with SomeJTDSchemaType {
+trait refstringnullablebooleanu extends StObject {
   
   var definitions: js.UndefOr[Record[String, SomeJTDSchemaType]] = js.undefined
   

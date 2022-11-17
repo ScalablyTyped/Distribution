@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AgnosticDataIndexRouteObject
   extends StObject
-     with AgnosticIndexRouteObject
-     with AgnosticDataRouteObject {
+     with AgnosticIndexRouteObject {
   
   @JSName("id")
   var id_AgnosticDataIndexRouteObject: String

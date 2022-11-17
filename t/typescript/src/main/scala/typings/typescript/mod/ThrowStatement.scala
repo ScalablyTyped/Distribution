@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ThrowStatement
   extends StObject
-     with Statement
-     with HasJSDoc {
+     with Statement {
   
   val expression: Expression = js.native
   

@@ -201,58 +201,28 @@ inline def weekdaysShort(localeSorted: Boolean, format: String): js.Array[String
 inline def weekdaysShort(localeSorted: Boolean, format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
 inline def weekdaysShort(localeSorted: Boolean, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.moment.momentStrings.sameDay
-  - typings.moment.momentStrings.nextDay
-  - typings.moment.momentStrings.lastDay
-  - typings.moment.momentStrings.nextWeek
-  - typings.moment.momentStrings.lastWeek
-  - typings.moment.momentStrings.sameElse
-  - java.lang.String
-*/
-type CalendarKey = _CalendarKey | String
+type CalendarKey = "sameDay" | "nextDay" | "lastDay" | "nextWeek" | "lastWeek" | "sameElse" | String
 
 type CalendarSpecVal = String | (js.Function2[/* m */ js.UndefOr[MomentInput], /* now */ js.UndefOr[Moment], String])
 
-/* Rewritten from type alias, can be one of: 
-  - typings.moment.ts3Dot1TypingsMomentMod.Duration_
-  - scala.Double
-  - java.lang.String
-  - typings.moment.ts3Dot1TypingsMomentMod.FromTo
-  - typings.moment.ts3Dot1TypingsMomentMod.DurationInputObject
-  - scala.Null
-  - scala.Unit
-*/
-type DurationInputArg1 = js.UndefOr[_DurationInputArg1 | Double | String | Null]
+type DurationInputArg1 = js.UndefOr[Duration_ | Double | String | FromTo | DurationInputObject | Null]
 
 type DurationInputArg2 = DurationConstructor
 
-/* Rewritten from type alias, can be one of: 
-  - java.lang.String
-  - typings.moment.ts3Dot1TypingsMomentMod.Moment
-  - typings.moment.ts3Dot1TypingsMomentMod.Duration_
-  - js.Array[java.lang.String]
-  - scala.Boolean
-*/
-type LocaleSpecifier = _LocaleSpecifier | js.Array[String] | String | Boolean
+type LocaleSpecifier = String | Moment | Duration_ | js.Array[String] | Boolean
+
+type LongDateFormatKey = "LTS" | "LT" | "L" | "LL" | "LLL" | "LLLL" | "lts" | "lt" | "l" | "ll" | "lll" | "llll"
 
 type MomentFormatSpecification = String | MomentBuiltinFormat | (js.Array[String | MomentBuiltinFormat])
 
-/* Rewritten from type alias, can be one of: 
-  - typings.moment.ts3Dot1TypingsMomentMod.Moment
-  - js.Date
-  - java.lang.String
-  - scala.Double
-  - js.Array[scala.Double | java.lang.String]
-  - typings.moment.ts3Dot1TypingsMomentMod.MomentInputObject
-  - scala.Null
-  - scala.Unit
-*/
-type MomentInput = js.UndefOr[_MomentInput | (js.Array[Double | String]) | js.Date | String | Double | Null]
+type MomentInput = js.UndefOr[
+Moment | js.Date | String | Double | (js.Array[Double | String]) | MomentInputObject | Null]
 
 type MonthWeekdayFn = js.Function2[/* momentToFormat */ Moment, /* format */ js.UndefOr[String], String]
 
 type RelativeTimeFuturePastVal = String | (js.Function1[/* relTime */ String, String])
+
+type RelativeTimeKey = "s" | "ss" | "m" | "mm" | "h" | "hh" | "d" | "dd" | "w" | "ww" | "M" | "MM" | "y" | "yy"
 
 type RelativeTimeSpecVal = String | (js.Function4[
 /* n */ Double, 

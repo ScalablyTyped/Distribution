@@ -1,25 +1,19 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSAsExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSAsExpression__
   extends StObject
-     with BaseNode
-     with Expression
-     with LVal
-     with Node
-     with PatternLike
-     with TypeScript {
+     with BaseNode {
   
   var expression: Expression
   
   var typeAnnotation: TSType
   
   @JSName("type")
-  var type_TSAsExpression__ : TSAsExpression
+  var type_TSAsExpression__ : "TSAsExpression"
 }
 object TSAsExpression__ {
   
@@ -33,7 +27,7 @@ object TSAsExpression__ {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSAsExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSAsExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }

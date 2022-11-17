@@ -1,6 +1,5 @@
 package typings.node.dnsMod
 
-import typings.node.nodeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait LookupAllOptions
      with LookupOptions {
   
   @JSName("all")
-  var all_LookupAllOptions: `true`
+  var all_LookupAllOptions: true
 }
 object LookupAllOptions {
   
@@ -21,6 +20,6 @@ object LookupAllOptions {
   
   extension [Self <: LookupAllOptions](x: Self) {
     
-    inline def setAll(value: `true`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: true): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
   }
 }

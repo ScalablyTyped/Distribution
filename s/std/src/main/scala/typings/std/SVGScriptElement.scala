@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SVGScriptElement
   extends StObject
      with SVGElement
-     with SVGURIReference
-     with HTMLOrSVGScriptElement {
+     with SVGURIReference {
   
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native

@@ -1,8 +1,5 @@
 package typings.angularRouter.mod
 
-import typings.angularRouter.angularRouterStrings.disabled
-import typings.angularRouter.angularRouterStrings.enabled
-import typings.angularRouter.angularRouterStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +13,7 @@ trait InMemoryScrollingOptions extends StObject {
     * Anchor scrolling does not happen on 'popstate'. Instead, we restore the position
     * that we stored or scroll to the top.
     */
-  var anchorScrolling: js.UndefOr[disabled | enabled] = js.undefined
+  var anchorScrolling: js.UndefOr["disabled" | "enabled"] = js.undefined
   
   /**
     * Configures if the scroll position needs to be restored when navigating back.
@@ -52,7 +49,7 @@ trait InMemoryScrollingOptions extends StObject {
     * }
     * ```
     */
-  var scrollPositionRestoration: js.UndefOr[disabled | enabled | top] = js.undefined
+  var scrollPositionRestoration: js.UndefOr["disabled" | "enabled" | "top"] = js.undefined
 }
 object InMemoryScrollingOptions {
   
@@ -63,11 +60,11 @@ object InMemoryScrollingOptions {
   
   extension [Self <: InMemoryScrollingOptions](x: Self) {
     
-    inline def setAnchorScrolling(value: disabled | enabled): Self = StObject.set(x, "anchorScrolling", value.asInstanceOf[js.Any])
+    inline def setAnchorScrolling(value: "disabled" | "enabled"): Self = StObject.set(x, "anchorScrolling", value.asInstanceOf[js.Any])
     
     inline def setAnchorScrollingUndefined: Self = StObject.set(x, "anchorScrolling", js.undefined)
     
-    inline def setScrollPositionRestoration(value: disabled | enabled | top): Self = StObject.set(x, "scrollPositionRestoration", value.asInstanceOf[js.Any])
+    inline def setScrollPositionRestoration(value: "disabled" | "enabled" | "top"): Self = StObject.set(x, "scrollPositionRestoration", value.asInstanceOf[js.Any])
     
     inline def setScrollPositionRestorationUndefined: Self = StObject.set(x, "scrollPositionRestoration", js.undefined)
   }

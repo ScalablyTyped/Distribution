@@ -1,10 +1,13 @@
 package typings.chartJs.mod
 
+import typings.chartJs.distChunksHelpersDotcoreMod.Point1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArcProps extends StObject {
+trait ArcProps
+  extends StObject
+     with Point1 {
   
   var circumference: Double
   
@@ -15,10 +18,6 @@ trait ArcProps extends StObject {
   var outerRadius: Double
   
   var startAngle: Double
-  
-  var x: Double
-  
-  var y: Double
 }
 object ArcProps {
   
@@ -46,9 +45,5 @@ object ArcProps {
     inline def setOuterRadius(value: Double): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
     
     inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
-    
-    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-    
-    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

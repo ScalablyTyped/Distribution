@@ -1,18 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ClassExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ClassExpression_
   extends StObject
-     with BaseNode
-     with Class
-     with Expression
-     with Node
-     with Scopable
-     with Standardized {
+     with BaseNode {
   
   var body: ClassBody_
   
@@ -31,7 +25,7 @@ trait ClassExpression_
   var typeParameters: js.UndefOr[TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
-  var type_ClassExpression_ : ClassExpression
+  var type_ClassExpression_ : "ClassExpression"
 }
 object ClassExpression_ {
   
@@ -85,7 +79,7 @@ object ClassExpression_ {
     
     inline def setSuperTypeParametersUndefined: Self = StObject.set(x, "superTypeParameters", js.undefined)
     
-    inline def setType(value: ClassExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ClassExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NewExpression
   extends StObject
      with PrimaryExpression
-     with Declaration
-     with CallLikeExpression
-     with HasTypeArguments {
+     with Declaration {
   
   val arguments: js.UndefOr[NodeArray[Expression]] = js.native
   

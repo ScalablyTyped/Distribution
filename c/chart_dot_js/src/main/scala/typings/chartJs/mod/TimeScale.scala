@@ -1,59 +1,113 @@
 package typings.chartJs.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.anon.All
+import typings.chartJs.anon.IsoWeekday
+import typings.chartJs.distChunksHelpersDotcoreMod.S_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeScale[O /* <: TimeScaleOptions */] extends Scale[O] {
+trait TimeScale extends S_ {
   
-  def getDataTimestamps(): js.Array[Double] = js.native
+  var _adapter: DateAdapter = js.native
   
-  def getLabelTimestamps(): js.Array[String] = js.native
+  /** @type {{data: number[], labels: number[], all: number[]}} */
+  var _cache: All = js.native
   
-  def normalize(values: js.Array[Double]): js.Array[Double] = js.native
-}
-/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.TimeScale<chart.js.chart.js.TimeScaleOptions>, new <O extends chart.js.chart.js.TimeScaleOptions = chart.js.chart.js.TimeScaleOptions>(cfg : chart.js.chart.js/types/basic.AnyObject): chart.js.chart.js.TimeScale<O>} */
-object TimeScale {
+  /**
+    * Generates a maximum of `capacity` timestamps between min and max, rounded to the
+    * `minor` unit using the given scale time `options`.
+    * Important: this method can return ticks outside the min and max range, it's the
+    * responsibility of the calling code to clamp values if needed.
+    * @private
+    */
+  /* private */ var _generate: Any = js.native
   
-  @JSImport("chart.js", "TimeScale")
-  @js.native
-  val ^ : js.Any = js.native
+  /**
+    * @private
+    */
+  /* private */ var _getLabelBounds: Any = js.native
   
-  @JSImport("chart.js", "TimeScale.afterRegister")
-  @js.native
-  def afterRegister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def afterRegister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterRegister")(x.asInstanceOf[js.Any])
+  /**
+    * @param {number} exampleTime
+    * @return {number}
+    * @private
+    */
+  /* private */ var _getLabelCapacity: Any = js.native
   
-  @JSImport("chart.js", "TimeScale.afterUnregister")
-  @js.native
-  def afterUnregister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def afterUnregister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterUnregister")(x.asInstanceOf[js.Any])
+  /**
+    * @param {string} label
+    * @return {{w:number, h:number}}
+    * @private
+    */
+  /* private */ var _getLabelSize: Any = js.native
   
-  @JSImport("chart.js", "TimeScale.beforeRegister")
-  @js.native
-  def beforeRegister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def beforeRegister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeRegister")(x.asInstanceOf[js.Any])
+  /** @type {Unit=} */
+  var _majorUnit: js.UndefOr[Unit] = js.native
   
-  @JSImport("chart.js", "TimeScale.beforeUnregister")
-  @js.native
-  def beforeUnregister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def beforeUnregister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeUnregister")(x.asInstanceOf[js.Any])
+  var _normalized: Boolean = js.native
   
-  @JSImport("chart.js", "TimeScale.defaultRoutes")
-  @js.native
-  def defaultRoutes: js.UndefOr[StringDictionary[String]] = js.native
-  inline def defaultRoutes_=(x: js.UndefOr[StringDictionary[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultRoutes")(x.asInstanceOf[js.Any])
+  var _parseOpts: IsoWeekday = js.native
   
-  @JSImport("chart.js", "TimeScale.defaults")
-  @js.native
-  def defaults: js.UndefOr[AnyObject] = js.native
-  inline def defaults_=(x: js.UndefOr[AnyObject]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
+  /**
+    * Function to format an individual tick mark
+    * @param {number} time
+    * @param {number} index
+    * @param {object[]} ticks
+    * @param {string|undefined} [format]
+    * @return {string}
+    * @private
+    */
+  /* private */ var _tickFormatFunction: Any = js.native
   
-  @JSImport("chart.js", "TimeScale.id")
-  @js.native
-  def id: String = js.native
-  inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  /** @type {Unit} */
+  var _unit: Unit = js.native
+  
+  /**
+    * @protected
+    */
+  /* protected */ def getDataTimestamps(): Any = js.native
+  
+  /**
+    * @param {number} value - Milliseconds since epoch (1 January 1970 00:00:00 UTC)
+    * @return {number}
+    */
+  def getDecimalForValue(value: Double): Double = js.native
+  
+  /**
+    * @param {number} value
+    * @return {string}
+    */
+  def getLabelForValue(value: Double): String = js.native
+  
+  /**
+    * @protected
+    */
+  /* protected */ def getLabelTimestamps(): js.Array[Double] = js.native
+  
+  /**
+    * @param {number} value - Milliseconds since epoch (1 January 1970 00:00:00 UTC)
+    * @return {number}
+    */
+  def getPixelForValue(value: Double): Double = js.native
+  
+  def init(scaleOpts: Any, opts: js.Object): scala.Unit = js.native
+  
+  /**
+    * Returns the start and end offsets from edges in the form of {start, end}
+    * where each value is a relative width to the scale and ranges between 0 and 1.
+    * They add extra margins on the both sides by scaling down the original scale.
+    * Offsets are added when the `offset` option is true.
+    * @param {number[]} timestamps
+    * @protected
+    */
+  /* protected */ def initOffsets(): scala.Unit = js.native
+  /* protected */ def initOffsets(timestamps: js.Array[Double]): scala.Unit = js.native
+  
+  /**
+    * @param {number[]} values
+    * @protected
+    */
+  /* protected */ def normalize(values: js.Array[Double]): js.Array[Double] = js.native
 }

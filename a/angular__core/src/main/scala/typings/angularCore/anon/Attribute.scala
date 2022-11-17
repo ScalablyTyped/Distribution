@@ -1,6 +1,5 @@
 package typings.angularCore.anon
 
-import typings.angularCore.angularCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,22 +16,22 @@ trait Attribute extends StObject {
   /**
     * If `@Host` is used, this key is set to true.
     */
-  var host: js.UndefOr[`true`] = js.undefined
+  var host: js.UndefOr[true] = js.undefined
   
   /**
     * If `@Optional()` is used, this key is set to true.
     */
-  var optional: js.UndefOr[`true`] = js.undefined
+  var optional: js.UndefOr[true] = js.undefined
   
   /**
     * If `@Self` is used, this key is set to true.
     */
-  var self: js.UndefOr[`true`] = js.undefined
+  var self: js.UndefOr[true] = js.undefined
   
   /**
     * If `@SkipSelf` is used, this key is set to true.
     */
-  var skipSelf: js.UndefOr[`true`] = js.undefined
+  var skipSelf: js.UndefOr[true] = js.undefined
 }
 object Attribute {
   
@@ -47,19 +46,19 @@ object Attribute {
     
     inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
-    inline def setHost(value: `true`): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: true): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    inline def setOptional(value: `true`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: true): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    inline def setSelf(value: `true`): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+    inline def setSelf(value: true): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
     inline def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
     
-    inline def setSkipSelf(value: `true`): Self = StObject.set(x, "skipSelf", value.asInstanceOf[js.Any])
+    inline def setSkipSelf(value: true): Self = StObject.set(x, "skipSelf", value.asInstanceOf[js.Any])
     
     inline def setSkipSelfUndefined: Self = StObject.set(x, "skipSelf", js.undefined)
   }

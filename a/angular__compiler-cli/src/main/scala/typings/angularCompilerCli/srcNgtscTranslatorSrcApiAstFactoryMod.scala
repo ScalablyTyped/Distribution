@@ -1,6 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliStrings.`-_`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -225,62 +224,43 @@ object srcNgtscTranslatorSrcApiAstFactoryMod {
     def setSourceMapRange[T /* <: TStatement | TExpression */](node: T, sourceMapRange: SourceMapRange): T = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliStrings.AmpersandAmpersand
-    - typings.angularCompilerCli.angularCompilerCliStrings.Greaterthansign
-    - typings.angularCompilerCli.angularCompilerCliStrings.GreaterthansignEqualssign
-    - typings.angularCompilerCli.angularCompilerCliStrings.Ampersand
-    - typings.angularCompilerCli.angularCompilerCliStrings.Slash
-    - typings.angularCompilerCli.angularCompilerCliStrings.EqualssignEqualssign
-    - typings.angularCompilerCli.angularCompilerCliStrings.EqualssignEqualssignEqualssign
-    - typings.angularCompilerCli.angularCompilerCliStrings.Lessthansign
-    - typings.angularCompilerCli.angularCompilerCliStrings.LessthansignEqualssign
-    - typings.angularCompilerCli.angularCompilerCliStrings.`-_`
-    - typings.angularCompilerCli.angularCompilerCliStrings.Percentsign
-    - typings.angularCompilerCli.angularCompilerCliStrings.Asterisk
-    - typings.angularCompilerCli.angularCompilerCliStrings.ExclamationmarkEqualssign
-    - typings.angularCompilerCli.angularCompilerCliStrings.ExclamationmarkEqualssignEqualssign
-    - typings.angularCompilerCli.angularCompilerCliStrings.VerticallineVerticalline
-    - typings.angularCompilerCli.angularCompilerCliStrings.Plussign
-    - typings.angularCompilerCli.angularCompilerCliStrings.QuestionmarkQuestionmark
-  */
-  trait BinaryOperator extends StObject
   object BinaryOperator {
     
-    inline def Ampersand: typings.angularCompilerCli.angularCompilerCliStrings.Ampersand = "&".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.Ampersand]
+    inline def Ampersand: "&" = "&".asInstanceOf["&"]
     
-    inline def AmpersandAmpersand: typings.angularCompilerCli.angularCompilerCliStrings.AmpersandAmpersand = "&&".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.AmpersandAmpersand]
+    inline def AmpersandAmpersand: "&&" = "&&".asInstanceOf["&&"]
     
-    inline def Asterisk: typings.angularCompilerCli.angularCompilerCliStrings.Asterisk = "*".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.Asterisk]
+    inline def Asterisk: "*" = "*".asInstanceOf["*"]
     
-    inline def EqualssignEqualssign: typings.angularCompilerCli.angularCompilerCliStrings.EqualssignEqualssign = "==".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.EqualssignEqualssign]
+    inline def EqualssignEqualssign: "==" = "==".asInstanceOf["=="]
     
-    inline def EqualssignEqualssignEqualssign: typings.angularCompilerCli.angularCompilerCliStrings.EqualssignEqualssignEqualssign = "===".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.EqualssignEqualssignEqualssign]
+    inline def EqualssignEqualssignEqualssign: "===" = "===".asInstanceOf["==="]
     
-    inline def ExclamationmarkEqualssign: typings.angularCompilerCli.angularCompilerCliStrings.ExclamationmarkEqualssign = "!=".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.ExclamationmarkEqualssign]
+    inline def ExclamationmarkEqualssign: "!=" = "!=".asInstanceOf["!="]
     
-    inline def ExclamationmarkEqualssignEqualssign: typings.angularCompilerCli.angularCompilerCliStrings.ExclamationmarkEqualssignEqualssign = "!==".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.ExclamationmarkEqualssignEqualssign]
+    inline def ExclamationmarkEqualssignEqualssign: "!==" = "!==".asInstanceOf["!=="]
     
-    inline def Greaterthansign: typings.angularCompilerCli.angularCompilerCliStrings.Greaterthansign = ">".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.Greaterthansign]
+    inline def Greaterthansign: ">" = ">".asInstanceOf[">"]
     
-    inline def GreaterthansignEqualssign: typings.angularCompilerCli.angularCompilerCliStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.GreaterthansignEqualssign]
+    inline def GreaterthansignEqualssign: ">=" = ">=".asInstanceOf[">="]
     
-    inline def Lessthansign: typings.angularCompilerCli.angularCompilerCliStrings.Lessthansign = "<".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.Lessthansign]
+    inline def Lessthansign: "<" = "<".asInstanceOf["<"]
     
-    inline def LessthansignEqualssign: typings.angularCompilerCli.angularCompilerCliStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.LessthansignEqualssign]
+    inline def LessthansignEqualssign: "<=" = "<=".asInstanceOf["<="]
     
-    inline def Percentsign: typings.angularCompilerCli.angularCompilerCliStrings.Percentsign = "%".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.Percentsign]
+    inline def Percentsign: "%" = "%".asInstanceOf["%"]
     
-    inline def Plussign: typings.angularCompilerCli.angularCompilerCliStrings.Plussign = "+".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.Plussign]
+    inline def Plussign: "+" = "+".asInstanceOf["+"]
     
-    inline def QuestionmarkQuestionmark: typings.angularCompilerCli.angularCompilerCliStrings.QuestionmarkQuestionmark = "??".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.QuestionmarkQuestionmark]
+    inline def QuestionmarkQuestionmark: "??" = "??".asInstanceOf["??"]
     
-    inline def Slash: typings.angularCompilerCli.angularCompilerCliStrings.Slash = "/".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.Slash]
+    inline def Slash: "/" = "/".asInstanceOf["/"]
     
-    inline def VerticallineVerticalline: typings.angularCompilerCli.angularCompilerCliStrings.VerticallineVerticalline = "||".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.VerticallineVerticalline]
+    inline def VerticallineVerticalline: "||" = "||".asInstanceOf["||"]
     
-    inline def _dash: `-_` = "-".asInstanceOf[`-_`]
+    inline def _dash: "-" = "-".asInstanceOf["-"]
   }
+  type BinaryOperator = "&&" | ">" | ">=" | "&" | "/" | "==" | "===" | "<" | "<=" | "-" | "%" | "*" | "!=" | "!==" | "||" | "+" | "??"
   
   trait LeadingComment extends StObject {
     
@@ -449,33 +429,23 @@ object srcNgtscTranslatorSrcApiAstFactoryMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliStrings.Plussign
-    - typings.angularCompilerCli.angularCompilerCliStrings.`-_`
-    - typings.angularCompilerCli.angularCompilerCliStrings.Exclamationmark
-  */
-  trait UnaryOperator extends StObject
   object UnaryOperator {
     
-    inline def Exclamationmark: typings.angularCompilerCli.angularCompilerCliStrings.Exclamationmark = "!".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.Exclamationmark]
+    inline def Exclamationmark: "!" = "!".asInstanceOf["!"]
     
-    inline def Plussign: typings.angularCompilerCli.angularCompilerCliStrings.Plussign = "+".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.Plussign]
+    inline def Plussign: "+" = "+".asInstanceOf["+"]
     
-    inline def _dash: `-_` = "-".asInstanceOf[`-_`]
+    inline def _dash: "-" = "-".asInstanceOf["-"]
   }
+  type UnaryOperator = "+" | "-" | "!"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliStrings.const
-    - typings.angularCompilerCli.angularCompilerCliStrings.let
-    - typings.angularCompilerCli.angularCompilerCliStrings.`var`
-  */
-  trait VariableDeclarationType extends StObject
   object VariableDeclarationType {
     
-    inline def const: typings.angularCompilerCli.angularCompilerCliStrings.const = "const".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.const]
+    inline def const: "const" = "const".asInstanceOf["const"]
     
-    inline def let: typings.angularCompilerCli.angularCompilerCliStrings.let = "let".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.let]
+    inline def let: "let" = "let".asInstanceOf["let"]
     
-    inline def `var`: typings.angularCompilerCli.angularCompilerCliStrings.`var` = "var".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.`var`]
+    inline def `var`: "var" = "var".asInstanceOf["var"]
   }
+  type VariableDeclarationType = "const" | "let" | "var"
 }

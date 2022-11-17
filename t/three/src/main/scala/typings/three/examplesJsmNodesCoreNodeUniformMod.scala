@@ -1,7 +1,6 @@
 package typings.three
 
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeValueOption
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object examplesJsmNodesCoreNodeUniformMod {
     ) = this()
     
     /* CompleteClass */
-    var isNodeUniform: `true` = js.native
+    var isNodeUniform: true = js.native
     
     /* CompleteClass */
     var name: String = js.native
@@ -42,7 +41,7 @@ object examplesJsmNodesCoreNodeUniformMod {
   
   trait NodeUniform extends StObject {
     
-    var isNodeUniform: `true`
+    var isNodeUniform: true
     
     var name: String
     
@@ -70,7 +69,7 @@ object examplesJsmNodesCoreNodeUniformMod {
     
     extension [Self <: NodeUniform](x: Self) {
       
-      inline def setIsNodeUniform(value: `true`): Self = StObject.set(x, "isNodeUniform", value.asInstanceOf[js.Any])
+      inline def setIsNodeUniform(value: true): Self = StObject.set(x, "isNodeUniform", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -6,17 +6,6 @@ import typings.react.mod.RefAttributes
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeGestureHandler.libTypescriptHandlersPanGestureHandlerMod.PanGestureHandlerProps_
 import typings.reactNavigationDrawer.libTypescriptSrcTypesMod.DrawerContentComponentProps
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-closed`
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-open`
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`on-drag`
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.back
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.fade
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.front
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.left
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.none
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.right
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.slide
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.unlocked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,11 +19,11 @@ trait DrawerOptionscontentCompo extends StObject {
   
   var drawerBackgroundColor: js.UndefOr[String] = js.undefined
   
-  var drawerLockMode: js.UndefOr[unlocked | `locked-closed` | `locked-open`] = js.undefined
+  var drawerLockMode: js.UndefOr["unlocked" | "locked-closed" | "locked-open"] = js.undefined
   
-  var drawerPosition: left | right
+  var drawerPosition: "left" | "right"
   
-  var drawerType: front | back | slide
+  var drawerType: "front" | "back" | "slide"
   
   var drawerWidth: Double | js.Function0[Double]
   
@@ -44,7 +33,7 @@ trait DrawerOptionscontentCompo extends StObject {
   
   var hideStatusBar: js.UndefOr[Boolean] = js.undefined
   
-  var keyboardDismissMode: js.UndefOr[`on-drag` | none] = js.undefined
+  var keyboardDismissMode: js.UndefOr["on-drag" | "none"] = js.undefined
   
   var minSwipeDistance: js.UndefOr[Double] = js.undefined
   
@@ -56,7 +45,7 @@ trait DrawerOptionscontentCompo extends StObject {
   
   var sceneContainerStyle: js.UndefOr[ViewStyle] = js.undefined
   
-  var statusBarAnimation: slide | none | fade
+  var statusBarAnimation: "slide" | "none" | "fade"
   
   var style: js.UndefOr[ViewStyle] = js.undefined
   
@@ -65,11 +54,11 @@ trait DrawerOptionscontentCompo extends StObject {
 object DrawerOptionscontentCompo {
   
   inline def apply(
-    drawerPosition: left | right,
-    drawerType: front | back | slide,
+    drawerPosition: "left" | "right",
+    drawerType: "front" | "back" | "slide",
     drawerWidth: Double | js.Function0[Double],
     edgeWidth: Double,
-    statusBarAnimation: slide | none | fade
+    statusBarAnimation: "slide" | "none" | "fade"
   ): DrawerOptionscontentCompo = {
     val __obj = js.Dynamic.literal(drawerPosition = drawerPosition.asInstanceOf[js.Any], drawerType = drawerType.asInstanceOf[js.Any], drawerWidth = drawerWidth.asInstanceOf[js.Any], edgeWidth = edgeWidth.asInstanceOf[js.Any], statusBarAnimation = statusBarAnimation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerOptionscontentCompo]
@@ -89,13 +78,13 @@ object DrawerOptionscontentCompo {
     
     inline def setDrawerBackgroundColorUndefined: Self = StObject.set(x, "drawerBackgroundColor", js.undefined)
     
-    inline def setDrawerLockMode(value: unlocked | `locked-closed` | `locked-open`): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
+    inline def setDrawerLockMode(value: "unlocked" | "locked-closed" | "locked-open"): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
     
     inline def setDrawerLockModeUndefined: Self = StObject.set(x, "drawerLockMode", js.undefined)
     
-    inline def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
+    inline def setDrawerPosition(value: "left" | "right"): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
     
-    inline def setDrawerType(value: front | back | slide): Self = StObject.set(x, "drawerType", value.asInstanceOf[js.Any])
+    inline def setDrawerType(value: "front" | "back" | "slide"): Self = StObject.set(x, "drawerType", value.asInstanceOf[js.Any])
     
     inline def setDrawerWidth(value: Double | js.Function0[Double]): Self = StObject.set(x, "drawerWidth", value.asInstanceOf[js.Any])
     
@@ -111,7 +100,7 @@ object DrawerOptionscontentCompo {
     
     inline def setHideStatusBarUndefined: Self = StObject.set(x, "hideStatusBar", js.undefined)
     
-    inline def setKeyboardDismissMode(value: `on-drag` | none): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+    inline def setKeyboardDismissMode(value: "on-drag" | "none"): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
     
     inline def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
     
@@ -135,7 +124,7 @@ object DrawerOptionscontentCompo {
     
     inline def setSceneContainerStyleUndefined: Self = StObject.set(x, "sceneContainerStyle", js.undefined)
     
-    inline def setStatusBarAnimation(value: slide | none | fade): Self = StObject.set(x, "statusBarAnimation", value.asInstanceOf[js.Any])
+    inline def setStatusBarAnimation(value: "slide" | "none" | "fade"): Self = StObject.set(x, "statusBarAnimation", value.asInstanceOf[js.Any])
     
     inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

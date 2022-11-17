@@ -1,15 +1,12 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.dismissedAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimePickerAndroidDismissedAction
-  extends StObject
-     with TimePickerAndroidOpenReturn {
+trait TimePickerAndroidDismissedAction extends StObject {
   
-  var action: dismissedAction
+  var action: "dismissedAction"
 }
 object TimePickerAndroidDismissedAction {
   
@@ -20,6 +17,6 @@ object TimePickerAndroidDismissedAction {
   
   extension [Self <: TimePickerAndroidDismissedAction](x: Self) {
     
-    inline def setAction(value: dismissedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: "dismissedAction"): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

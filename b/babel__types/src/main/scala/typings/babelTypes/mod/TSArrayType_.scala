@@ -1,21 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSArrayType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSArrayType_
+trait TSArrayType_
   extends StObject
-     with BaseNode
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   var elementType: TSType
   
   @JSName("type")
-  var type_TSArrayType_ : TSArrayType
+  var type_TSArrayType_ : "TSArrayType"
 }
 object TSArrayType_ {
   
@@ -29,6 +25,6 @@ object TSArrayType_ {
     
     inline def setElementType(value: TSType): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSArrayType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSArrayType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

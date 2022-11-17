@@ -6,7 +6,6 @@ import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcMathColorMod.Color
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcObjectsMeshMod.Mesh
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +32,7 @@ object srcObjectsInstancedMeshMod {
     
     var instanceMatrix: InstancedBufferAttribute = js.native
     
-    val isInstancedMesh: `true` = js.native
+    val isInstancedMesh: true = js.native
     
     def setColorAt(index: Double, color: Color): Unit = js.native
     

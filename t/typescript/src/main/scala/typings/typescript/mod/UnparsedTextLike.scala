@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UnparsedTextLike
   extends StObject
-     with UnparsedSection
-     with UnparsedSourceText {
+     with UnparsedSection {
   
   @JSName("kind")
   val kind_UnparsedTextLike: UnparsedText | UnparsedInternalText = js.native

@@ -3,7 +3,6 @@ package typings.d3Geo
 import typings.d3Geo.anon.Properties
 import typings.d3Geo.anon.Stream
 import typings.d3Geo.anon.`0`
-import typings.d3Geo.d3GeoStrings.Sphere
 import typings.geojson.mod.GeoJsonObject
 import typings.geojson.mod.GeoJsonProperties
 import typings.geojson.mod.GeoJsonTypes
@@ -1022,7 +1021,7 @@ object mod {
     /**
       * Sphere geometry type
       */
-    var `type`: Sphere
+    var `type`: "Sphere"
   }
   object GeoSphere {
     
@@ -1034,7 +1033,7 @@ object mod {
     
     extension [Self <: GeoSphere](x: Self) {
       
-      inline def setType(value: Sphere): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "Sphere"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

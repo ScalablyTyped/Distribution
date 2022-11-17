@@ -4,8 +4,6 @@ import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.OnInit
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
-import typings.angularForms.angularFormsStrings.`[formArrayName]`
 import typings.angularForms.anon.Host
 import typings.angularForms.anon.Name
 import typings.angularForms.anon.Self
@@ -55,24 +53,26 @@ object FormArrayName {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     FormArrayName, 
-    `[formArrayName]`, 
+    "[formArrayName]", 
     scala.Nothing, 
     Name, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       FormArrayName, 
-      `[formArrayName]`, 
+      "[formArrayName]", 
       scala.Nothing, 
       Name, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `false`
+      false, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

@@ -1,8 +1,6 @@
 package typings.angularCommon.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.i18nSelect
 import typings.angularCore.mod.PipeTransform
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
@@ -41,6 +39,6 @@ object I18nSelectPipe {
   
   @JSImport("@angular/common", "I18nSelectPipe.\u0275pipe")
   @js.native
-  def ɵpipe: ɵɵPipeDeclaration[I18nSelectPipe, i18nSelect, `true`] = js.native
-  inline def ɵpipe_=(x: ɵɵPipeDeclaration[I18nSelectPipe, i18nSelect, `true`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
+  def ɵpipe: ɵɵPipeDeclaration[I18nSelectPipe, "i18nSelect", true] = js.native
+  inline def ɵpipe_=(x: ɵɵPipeDeclaration[I18nSelectPipe, "i18nSelect", true]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
 }

@@ -35,23 +35,17 @@ object stylesColorManipulatorMod {
   
   inline def rgbToHex(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rgbToHex")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.rgb
-    - typings.materialUiCore.materialUiCoreStrings.rgba
-    - typings.materialUiCore.materialUiCoreStrings.hsl
-    - typings.materialUiCore.materialUiCoreStrings.hsla
-  */
-  trait ColorFormat extends StObject
   object ColorFormat {
     
-    inline def hsl: typings.materialUiCore.materialUiCoreStrings.hsl = "hsl".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.hsl]
+    inline def hsl: "hsl" = "hsl".asInstanceOf["hsl"]
     
-    inline def hsla: typings.materialUiCore.materialUiCoreStrings.hsla = "hsla".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.hsla]
+    inline def hsla: "hsla" = "hsla".asInstanceOf["hsla"]
     
-    inline def rgb: typings.materialUiCore.materialUiCoreStrings.rgb = "rgb".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.rgb]
+    inline def rgb: "rgb" = "rgb".asInstanceOf["rgb"]
     
-    inline def rgba: typings.materialUiCore.materialUiCoreStrings.rgba = "rgba".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.rgba]
+    inline def rgba: "rgba" = "rgba".asInstanceOf["rgba"]
   }
+  type ColorFormat = "rgb" | "rgba" | "hsl" | "hsla"
   
   trait ColorObject extends StObject {
     

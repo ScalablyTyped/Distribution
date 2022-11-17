@@ -1,23 +1,19 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSTypeQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSTypeQuery_
+trait TSTypeQuery_
   extends StObject
-     with BaseNode
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   var exprName: TSEntityName | TSImportType_
   
   var typeParameters: TSTypeParameterInstantiation_ | Null
   
   @JSName("type")
-  var type_TSTypeQuery_ : TSTypeQuery
+  var type_TSTypeQuery_ : "TSTypeQuery"
 }
 object TSTypeQuery_ {
   
@@ -31,7 +27,7 @@ object TSTypeQuery_ {
     
     inline def setExprName(value: TSEntityName | TSImportType_): Self = StObject.set(x, "exprName", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSTypeQuery): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSTypeQuery"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TSTypeParameterInstantiation_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

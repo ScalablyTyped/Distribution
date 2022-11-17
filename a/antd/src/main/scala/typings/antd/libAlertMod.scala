@@ -2,10 +2,6 @@ package typings.antd
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdStrings.error
-import typings.antd.antdStrings.info
-import typings.antd.antdStrings.success
-import typings.antd.antdStrings.warning
 import typings.antd.libAlertErrorBoundaryMod.default
 import typings.react.mod.CSSProperties
 import typings.react.mod.FunctionComponent
@@ -95,7 +91,7 @@ object libAlertMod {
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     /** Type of Alert styles, options:`success`, `info`, `warning`, `error` */
-    var `type`: js.UndefOr[success | info | warning | error] = js.undefined
+    var `type`: js.UndefOr["success" | "info" | "warning" | "error"] = js.undefined
   }
   object AlertProps {
     
@@ -178,7 +174,7 @@ object libAlertMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setType(value: success | info | warning | error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "success" | "info" | "warning" | "error"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }

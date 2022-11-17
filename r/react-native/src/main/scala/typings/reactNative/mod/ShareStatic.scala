@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ShareStatic extends StObject {
   
-  var dismissedAction: typings.reactNative.reactNativeStrings.dismissedAction = js.native
+  var dismissedAction: "dismissedAction" = js.native
   
   /**
     * Open a dialog to share text content.
@@ -44,5 +44,5 @@ trait ShareStatic extends StObject {
   def share(content: ShareContent): js.Promise[ShareAction] = js.native
   def share(content: ShareContent, options: ShareOptions): js.Promise[ShareAction] = js.native
   
-  var sharedAction: typings.reactNative.reactNativeStrings.sharedAction = js.native
+  var sharedAction: "sharedAction" = js.native
 }

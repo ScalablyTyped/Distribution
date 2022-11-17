@@ -1,20 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSUndefinedKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSUndefinedKeyword_
+trait TSUndefinedKeyword_
   extends StObject
-     with BaseNode
-     with TSBaseType
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   @JSName("type")
-  var type_TSUndefinedKeyword_ : TSUndefinedKeyword
+  var type_TSUndefinedKeyword_ : "TSUndefinedKeyword"
 }
 object TSUndefinedKeyword_ {
   
@@ -26,6 +21,6 @@ object TSUndefinedKeyword_ {
   
   extension [Self <: TSUndefinedKeyword_](x: Self) {
     
-    inline def setType(value: TSUndefinedKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSUndefinedKeyword"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

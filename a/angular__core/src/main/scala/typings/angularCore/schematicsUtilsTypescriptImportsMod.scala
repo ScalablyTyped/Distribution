@@ -23,6 +23,8 @@ object schematicsUtilsTypescriptImportsMod {
   
   inline def getImportSpecifier(sourceFile: SourceFile, moduleName: String, specifierName: String): ImportSpecifier | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getImportSpecifier")(sourceFile.asInstanceOf[js.Any], moduleName.asInstanceOf[js.Any], specifierName.asInstanceOf[js.Any])).asInstanceOf[ImportSpecifier | Null]
   
+  inline def removeSymbolFromNamedImports(node: NamedImports, symbol: ImportSpecifier): NamedImports = (^.asInstanceOf[js.Dynamic].applyDynamic("removeSymbolFromNamedImports")(node.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any])).asInstanceOf[NamedImports]
+  
   inline def replaceImport(node: NamedImports, existingImport: String, newImportName: String): NamedImports = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceImport")(node.asInstanceOf[js.Any], existingImport.asInstanceOf[js.Any], newImportName.asInstanceOf[js.Any])).asInstanceOf[NamedImports]
   
   trait Import extends StObject {

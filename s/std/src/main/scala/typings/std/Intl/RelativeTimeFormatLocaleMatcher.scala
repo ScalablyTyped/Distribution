@@ -4,19 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The locale matching algorithm to use.
-  *
-  * [MDN](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl#Locale_negotiation).
-  */
-/* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.lookup
-  - typings.std.stdStrings.`best fit`
-*/
-trait RelativeTimeFormatLocaleMatcher extends StObject
 object RelativeTimeFormatLocaleMatcher {
   
-  inline def `best fit`: typings.std.stdStrings.`best fit` = ("best fit").asInstanceOf[typings.std.stdStrings.`best fit`]
+  inline def `best fit`: "best fit" = ("best fit").asInstanceOf["best fit"]
   
-  inline def lookup: typings.std.stdStrings.lookup = "lookup".asInstanceOf[typings.std.stdStrings.lookup]
+  inline def lookup: "lookup" = "lookup".asInstanceOf["lookup"]
 }

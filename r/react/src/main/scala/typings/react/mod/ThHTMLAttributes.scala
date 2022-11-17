@@ -1,10 +1,5 @@
 package typings.react.mod
 
-import typings.react.reactStrings.center
-import typings.react.reactStrings.char
-import typings.react.reactStrings.justify
-import typings.react.reactStrings.left
-import typings.react.reactStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +10,7 @@ trait ThHTMLAttributes[T]
   
   var abbr: js.UndefOr[String] = js.undefined
   
-  var align: js.UndefOr[left | center | right | justify | char] = js.undefined
+  var align: js.UndefOr["left" | "center" | "right" | "justify" | "char"] = js.undefined
   
   var colSpan: js.UndefOr[Double] = js.undefined
   
@@ -38,7 +33,7 @@ object ThHTMLAttributes {
     
     inline def setAbbrUndefined: Self = StObject.set(x, "abbr", js.undefined)
     
-    inline def setAlign(value: left | center | right | justify | char): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: "left" | "center" | "right" | "justify" | "char"): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     

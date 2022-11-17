@@ -1,6 +1,5 @@
 package typings.ajv
 
-import typings.ajv.ajvStrings.discriminator
 import typings.ajv.anon.Error
 import typings.ajv.distTypesMod.ErrorObject
 import org.scalablytyped.runtime.StObject
@@ -31,5 +30,5 @@ object distVocabulariesDiscriminatorTypesMod {
     /* "tag" */ val Tag: typings.ajv.distVocabulariesDiscriminatorTypesMod.DiscrError.Tag & String = js.native
   }
   
-  type DiscrErrorObj[E /* <: DiscrError */] = ErrorObject[discriminator, Error[E], String]
+  type DiscrErrorObj[E /* <: DiscrError */] = ErrorObject["discriminator", Error[E], String]
 }

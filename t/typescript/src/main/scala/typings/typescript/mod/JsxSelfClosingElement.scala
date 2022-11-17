@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JsxSelfClosingElement
   extends StObject
-     with PrimaryExpression
-     with HasTypeArguments
-     with JsxAttributeValue
-     with JsxChild
-     with JsxOpeningLikeElement {
+     with PrimaryExpression {
   
   val attributes: JsxAttributes = js.native
   

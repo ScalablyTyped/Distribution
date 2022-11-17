@@ -3,8 +3,6 @@ package typings.materialUiCore
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Avatar
 import typings.materialUiCore.anon.Component
-import typings.materialUiCore.materialUiCoreStrings.div
-import typings.materialUiCore.materialUiCoreStrings.span
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -28,29 +26,21 @@ object cardHeaderCardHeaderMod extends Shortcut {
   @js.native
   val default: OverridableCardHeader = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.avatar
-    - typings.materialUiCore.materialUiCoreStrings.action
-    - typings.materialUiCore.materialUiCoreStrings.content
-    - typings.materialUiCore.materialUiCoreStrings.title
-    - typings.materialUiCore.materialUiCoreStrings.subheader
-  */
-  trait CardHeaderClassKey extends StObject
   object CardHeaderClassKey {
     
-    inline def action: typings.materialUiCore.materialUiCoreStrings.action = "action".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.action]
+    inline def action: "action" = "action".asInstanceOf["action"]
     
-    inline def avatar: typings.materialUiCore.materialUiCoreStrings.avatar = "avatar".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.avatar]
+    inline def avatar: "avatar" = "avatar".asInstanceOf["avatar"]
     
-    inline def content: typings.materialUiCore.materialUiCoreStrings.content = "content".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.content]
+    inline def content: "content" = "content".asInstanceOf["content"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def subheader: typings.materialUiCore.materialUiCoreStrings.subheader = "subheader".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subheader]
+    inline def subheader: "subheader" = "subheader".asInstanceOf["subheader"]
     
-    inline def title: typings.materialUiCore.materialUiCoreStrings.title = "title".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.title]
+    inline def title: "title" = "title".asInstanceOf["title"]
   }
+  type CardHeaderClassKey = "root" | "avatar" | "action" | "content" | "title" | "subheader"
   
   type CardHeaderProps[DefaultComponent /* <: ElementType[Any] */, Props, TitleTypographyComponent /* <: ElementType[Any] */, SubheaderTypographyComponent /* <: ElementType[Any] */] = OverrideProps[
     CardHeaderTypeMap[Props, DefaultComponent, TitleTypographyComponent, SubheaderTypographyComponent], 
@@ -91,7 +81,7 @@ object cardHeaderCardHeaderMod extends Shortcut {
   @js.native
   trait OverridableCardHeader
     extends StObject
-       with OverridableComponent[CardHeaderTypeMap[js.Object, div, span, span]]
+       with OverridableComponent[CardHeaderTypeMap[js.Object, "div", "span", "span"]]
   
   type _To = OverridableCardHeader
   

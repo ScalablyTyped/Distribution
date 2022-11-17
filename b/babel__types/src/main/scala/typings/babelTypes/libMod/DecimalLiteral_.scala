@@ -1,21 +1,15 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.DecimalLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DecimalLiteral_
   extends StObject
-     with BaseNode
-     with Expression
-     with Immutable
-     with Literal
-     with Node
-     with Pureish {
+     with BaseNode {
   
   @JSName("type")
-  var type_DecimalLiteral_ : DecimalLiteral
+  var type_DecimalLiteral_ : "DecimalLiteral"
   
   var value: String
 }
@@ -29,7 +23,7 @@ object DecimalLiteral_ {
   
   extension [Self <: DecimalLiteral_](x: Self) {
     
-    inline def setType(value: DecimalLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "DecimalLiteral"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

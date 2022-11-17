@@ -4,8 +4,6 @@ import typings.rcFieldForm.esInterfaceMod.FormInstance
 import typings.rcFieldForm.esInterfaceMod.InternalFormInstance
 import typings.rcFieldForm.esInterfaceMod.InternalNamePath
 import typings.rcFieldForm.esInterfaceMod.StoreValue
-import typings.rcFieldForm.rcFieldFormStrings.updateValue
-import typings.rcFieldForm.rcFieldFormStrings.validateField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -157,33 +155,13 @@ object esUseFormMod {
     /* private */ var watchList: Any = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcFieldForm.esUseFormMod.UpdateAction
-    - typings.rcFieldForm.esUseFormMod.ValidateAction
-  */
-  trait ReducerAction extends StObject
-  object ReducerAction {
-    
-    inline def UpdateAction(namePath: InternalNamePath, value: StoreValue): typings.rcFieldForm.esUseFormMod.UpdateAction = {
-      val __obj = js.Dynamic.literal(namePath = namePath.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("updateValue")
-      __obj.asInstanceOf[typings.rcFieldForm.esUseFormMod.UpdateAction]
-    }
-    
-    inline def ValidateAction(namePath: InternalNamePath, triggerName: String): typings.rcFieldForm.esUseFormMod.ValidateAction = {
-      val __obj = js.Dynamic.literal(namePath = namePath.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("validateField")
-      __obj.asInstanceOf[typings.rcFieldForm.esUseFormMod.ValidateAction]
-    }
-  }
+  type ReducerAction = UpdateAction | ValidateAction
   
-  trait UpdateAction
-    extends StObject
-       with ReducerAction {
+  trait UpdateAction extends StObject {
     
     var namePath: InternalNamePath
     
-    var `type`: updateValue
+    var `type`: "updateValue"
     
     var value: StoreValue
   }
@@ -201,21 +179,19 @@ object esUseFormMod {
       
       inline def setNamePathVarargs(value: (String | Double)*): Self = StObject.set(x, "namePath", js.Array(value*))
       
-      inline def setType(value: updateValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "updateValue"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setValue(value: StoreValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  trait ValidateAction
-    extends StObject
-       with ReducerAction {
+  trait ValidateAction extends StObject {
     
     var namePath: InternalNamePath
     
     var triggerName: String
     
-    var `type`: validateField
+    var `type`: "validateField"
   }
   object ValidateAction {
     
@@ -233,7 +209,7 @@ object esUseFormMod {
       
       inline def setTriggerName(value: String): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
       
-      inline def setType(value: validateField): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "validateField"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

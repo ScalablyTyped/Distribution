@@ -1,12 +1,10 @@
 package typings.angularRouter.mod
 
-import typings.angularCore.mod.ImportedNgModuleProviders
+import typings.angularCore.mod.EnvironmentProviders
 import typings.angularCore.mod.InjectionToken
 import typings.angularCore.mod.NgModuleFactory
 import typings.angularCore.mod.Provider
 import typings.angularCore.mod.Type
-import typings.angularRouter.angularRouterStrings.full
-import typings.angularRouter.angularRouterStrings.prefix
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -90,7 +88,11 @@ trait Route extends StObject {
   /**
     * An object specifying a lazy-loaded component.
     */
-  var loadComponent: js.UndefOr[js.Function0[Type[Any] | Observable_[Type[Any]] | js.Promise[Type[Any]]]] = js.undefined
+  var loadComponent: js.UndefOr[
+    js.Function0[
+      Type[Any] | (Observable_[Type[Any] | DefaultExport[Type[Any]]]) | (js.Promise[Type[Any] | DefaultExport[Type[Any]]])
+    ]
+  ] = js.undefined
   
   /**
     * A custom URL-matching function. Cannot be used together with `path`.
@@ -131,7 +133,7 @@ trait Route extends StObject {
     * to the redirect destination, creating an endless loop.
     *
     */
-  var pathMatch: js.UndefOr[prefix | full] = js.undefined
+  var pathMatch: js.UndefOr["prefix" | "full"] = js.undefined
   
   /**
     * A `Provider` array to use for this `Route` and its `children`.
@@ -141,7 +143,7 @@ trait Route extends StObject {
     * route also has a `loadChildren` function which returns an `NgModuleRef`, this injector will be
     * used as the parent of the lazy loaded module.
     */
-  var providers: js.UndefOr[js.Array[Provider | ImportedNgModuleProviders]] = js.undefined
+  var providers: js.UndefOr[js.Array[Provider | EnvironmentProviders]] = js.undefined
   
   /**
     * A URL to redirect to when the path matches.
@@ -230,13 +232,17 @@ object Route {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setLoadChildren(
-      value: () => Type[Any] | NgModuleFactory[Any] | Routes | (Observable_[Type[Any] | Routes]) | (js.Promise[NgModuleFactory[Any] | Type[Any] | Routes])
+    inline def setLoadChildren(value: LoadChildren): Self = StObject.set(x, "loadChildren", value.asInstanceOf[js.Any])
+    
+    inline def setLoadChildrenFunction0(
+      value: () => Type[Any] | NgModuleFactory[Any] | Routes | (Observable_[Type[Any] | Routes | (DefaultExport[Routes | Type[Any]])]) | (js.Promise[NgModuleFactory[Any] | Type[Any] | Routes | (DefaultExport[Routes | Type[Any]])])
     ): Self = StObject.set(x, "loadChildren", js.Any.fromFunction0(value))
     
     inline def setLoadChildrenUndefined: Self = StObject.set(x, "loadChildren", js.undefined)
     
-    inline def setLoadComponent(value: () => Type[Any] | Observable_[Type[Any]] | js.Promise[Type[Any]]): Self = StObject.set(x, "loadComponent", js.Any.fromFunction0(value))
+    inline def setLoadComponent(
+      value: () => Type[Any] | (Observable_[Type[Any] | DefaultExport[Type[Any]]]) | (js.Promise[Type[Any] | DefaultExport[Type[Any]]])
+    ): Self = StObject.set(x, "loadComponent", js.Any.fromFunction0(value))
     
     inline def setLoadComponentUndefined: Self = StObject.set(x, "loadComponent", js.undefined)
     
@@ -252,17 +258,17 @@ object Route {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathMatch(value: prefix | full): Self = StObject.set(x, "pathMatch", value.asInstanceOf[js.Any])
+    inline def setPathMatch(value: "prefix" | "full"): Self = StObject.set(x, "pathMatch", value.asInstanceOf[js.Any])
     
     inline def setPathMatchUndefined: Self = StObject.set(x, "pathMatch", js.undefined)
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setProviders(value: js.Array[Provider | ImportedNgModuleProviders]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[Provider | EnvironmentProviders]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    inline def setProvidersVarargs(value: (Provider | ImportedNgModuleProviders)*): Self = StObject.set(x, "providers", js.Array(value*))
+    inline def setProvidersVarargs(value: (Provider | EnvironmentProviders)*): Self = StObject.set(x, "providers", js.Array(value*))
     
     inline def setRedirectTo(value: String): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
     

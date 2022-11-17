@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.ObjectPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `224` extends StObject {
   
-  var `type`: ObjectPattern
+  var `type`: "ObjectPattern"
 }
 object `224` {
   
@@ -19,6 +18,6 @@ object `224` {
   
   extension [Self <: `224`](x: Self) {
     
-    inline def setType(value: ObjectPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ObjectPattern"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -16,11 +16,11 @@ object libTypographyTypographyMod extends Shortcut {
   @js.native
   val default: ForwardRefExoticComponent[
     (InternalTypographyProps[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String
     ]) & RefAttributes[HTMLElement]
   ] = js.native
   
-  trait InternalTypographyProps[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */]
+  trait InternalTypographyProps[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String */]
     extends StObject
        with TypographyProps[C] {
     
@@ -29,12 +29,12 @@ object libTypographyTypographyMod extends Shortcut {
   }
   object InternalTypographyProps {
     
-    inline def apply[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](): InternalTypographyProps[C] = {
+    inline def apply[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String */](): InternalTypographyProps[C] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InternalTypographyProps[C]]
     }
     
-    extension [Self <: InternalTypographyProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](x: Self & InternalTypographyProps[C]) {
+    extension [Self <: InternalTypographyProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String */](x: Self & InternalTypographyProps[C]) {
       
       inline def setSetContentRef(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "setContentRef", js.Any.fromFunction1(value))
       
@@ -42,7 +42,7 @@ object libTypographyTypographyMod extends Shortcut {
     }
   }
   
-  trait TypographyProps[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */]
+  trait TypographyProps[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String */]
     extends StObject
        with HTMLAttributes[HTMLElement] {
     
@@ -52,12 +52,12 @@ object libTypographyTypographyMod extends Shortcut {
   }
   object TypographyProps {
     
-    inline def apply[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](): TypographyProps[C] = {
+    inline def apply[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String */](): TypographyProps[C] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypographyProps[C]]
     }
     
-    extension [Self <: TypographyProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](x: Self & TypographyProps[C]) {
+    extension [Self <: TypographyProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String */](x: Self & TypographyProps[C]) {
       
       inline def setDirection(value: DirectionType): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -71,14 +71,14 @@ object libTypographyTypographyMod extends Shortcut {
   
   type _To = ForwardRefExoticComponent[
     (InternalTypographyProps[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String
     ]) & RefAttributes[HTMLElement]
   ]
   
   /* This means you don't have to write `default`, but can instead just say `libTypographyTypographyMod.foo` */
   override def _to: ForwardRefExoticComponent[
     (InternalTypographyProps[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String
     ]) & RefAttributes[HTMLElement]
   ] = default
 }

@@ -1,16 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.action
-import typings.electron.electronStrings.click
-import typings.electron.electronStrings.close
-import typings.electron.electronStrings.critical
-import typings.electron.electronStrings.default
-import typings.electron.electronStrings.failed
-import typings.electron.electronStrings.low
-import typings.electron.electronStrings.never
-import typings.electron.electronStrings.normal
-import typings.electron.electronStrings.reply
-import typings.electron.electronStrings.show
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,17 +14,23 @@ trait Notification extends EventEmitter {
   var actions: js.Array[NotificationAction] = js.native
   
   @JSName("addListener")
-  def addListener_action(event: action, listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_close")
+  def addListener(event: "close", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_click(event: click, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_show")
+  def addListener(event: "show", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_click")
+  def addListener(event: "click", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_failed(event: failed, listener: js.Function2[/* event */ Event, /* error */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_failed")
+  def addListener(event: "failed", listener: js.Function2[/* event */ Event, /* error */ String, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_reply(event: reply, listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_action")
+  def addListener(event: "action", listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_show(event: show, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_reply")
+  def addListener(event: "reply", listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
   
   /**
     * A `string` property representing the body of the notification.
@@ -57,14 +52,20 @@ trait Notification extends EventEmitter {
     */
   var hasReply: Boolean = js.native
   
-  // Docs: https://electronjs.org/docs/api/notification
+  /**
+    * Emitted when the notification is shown to the user, note this could be fired
+    * multiple times as a notification can be shown multiple times through the
+    * `show()` method.
+    */
   @JSName("on")
-  def on_action(event: action, listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_show")
+  def on(event: "show", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   /**
     * Emitted when the notification is clicked by the user.
     */
   @JSName("on")
-  def on_click(event: click, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_click")
+  def on(event: "click", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   /**
     * Emitted when the notification is closed by manual intervention from the user.
     *
@@ -72,7 +73,12 @@ trait Notification extends EventEmitter {
     * is closed.
     */
   @JSName("on")
-  def on_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_close")
+  def on(event: "close", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  // Docs: https://electronjs.org/docs/api/notification
+  @JSName("on")
+  @scala.annotation.targetName("on_action")
+  def on(event: "action", listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
   /**
     * Emitted when an error is encountered while creating and showing the native
     * notification.
@@ -80,7 +86,8 @@ trait Notification extends EventEmitter {
     * @platform win32
     */
   @JSName("on")
-  def on_failed(event: failed, listener: js.Function2[/* event */ Event, /* error */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_failed")
+  def on(event: "failed", listener: js.Function2[/* event */ Event, /* error */ String, Unit]): this.type = js.native
   /**
     * Emitted when the user clicks the "Reply" button on a notification with
     * `hasReply: true`.
@@ -88,40 +95,46 @@ trait Notification extends EventEmitter {
     * @platform darwin
     */
   @JSName("on")
-  def on_reply(event: reply, listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
-  /**
-    * Emitted when the notification is shown to the user, note this could be fired
-    * multiple times as a notification can be shown multiple times through the
-    * `show()` method.
-    */
-  @JSName("on")
-  def on_show(event: show, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_reply")
+  def on(event: "reply", listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
   
   @JSName("once")
-  def once_action(event: action, listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_close")
+  def once(event: "close", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("once")
-  def once_click(event: click, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_show")
+  def once(event: "show", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("once")
-  def once_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_click")
+  def once(event: "click", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("once")
-  def once_failed(event: failed, listener: js.Function2[/* event */ Event, /* error */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_action")
+  def once(event: "action", listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
   @JSName("once")
-  def once_reply(event: reply, listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_failed")
+  def once(event: "failed", listener: js.Function2[/* event */ Event, /* error */ String, Unit]): this.type = js.native
   @JSName("once")
-  def once_show(event: show, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_reply")
+  def once(event: "reply", listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
   
   @JSName("removeListener")
-  def removeListener_action(event: action, listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
+  @scala.annotation.targetName("removeListener_click")
+  def removeListener(event: "click", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_click(event: click, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("removeListener_show")
+  def removeListener(event: "show", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("removeListener_close")
+  def removeListener(event: "close", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_failed(event: failed, listener: js.Function2[/* event */ Event, /* error */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("removeListener_failed")
+  def removeListener(event: "failed", listener: js.Function2[/* event */ Event, /* error */ String, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_reply(event: reply, listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("removeListener_reply")
+  def removeListener(event: "reply", listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_show(event: show, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("removeListener_action")
+  def removeListener(event: "action", listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
   
   /**
     * A `string` property representing the reply placeholder of the notification.
@@ -163,7 +176,7 @@ trait Notification extends EventEmitter {
     *
     * @platform linux,win32
     */
-  var timeoutType: default | never = js.native
+  var timeoutType: "default" | "never" = js.native
   
   /**
     * A `string` property representing the title of the notification.
@@ -185,5 +198,5 @@ trait Notification extends EventEmitter {
     *
     * @platform linux
     */
-  var urgency: normal | critical | low = js.native
+  var urgency: "normal" | "critical" | "low" = js.native
 }

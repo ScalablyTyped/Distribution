@@ -1,7 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdStrings.small
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,20 +33,15 @@ object libPaginationPaginationMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.top
-    - typings.antd.antdStrings.bottom
-    - typings.antd.antdStrings.both
-  */
-  trait PaginationPosition extends StObject
   object PaginationPosition {
     
-    inline def both: typings.antd.antdStrings.both = "both".asInstanceOf[typings.antd.antdStrings.both]
+    inline def both: "both" = "both".asInstanceOf["both"]
     
-    inline def bottom: typings.antd.antdStrings.bottom = "bottom".asInstanceOf[typings.antd.antdStrings.bottom]
+    inline def bottom: "bottom" = "bottom".asInstanceOf["bottom"]
     
-    inline def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
+    inline def top: "top" = "top".asInstanceOf["top"]
   }
+  type PaginationPosition = "top" | "bottom" | "both"
   
   trait PaginationProps
     extends StObject
@@ -57,7 +51,7 @@ object libPaginationPaginationMod extends Shortcut {
     
     var role: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[typings.antd.antdStrings.default | small] = js.undefined
+    var size: js.UndefOr["default" | "small"] = js.undefined
     
     var totalBoundaryShowSizeChanger: js.UndefOr[Double] = js.undefined
   }
@@ -78,7 +72,7 @@ object libPaginationPaginationMod extends Shortcut {
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      inline def setSize(value: typings.antd.antdStrings.default | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "default" | "small"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

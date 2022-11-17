@@ -32,19 +32,13 @@ object libInterfaceMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcSteps.rcStepsStrings.error
-    - typings.rcSteps.rcStepsStrings.process
-    - typings.rcSteps.rcStepsStrings.finish
-    - typings.rcSteps.rcStepsStrings.wait
-  */
-  trait Status extends StObject
   object Status {
     
-    inline def error: typings.rcSteps.rcStepsStrings.error = "error".asInstanceOf[typings.rcSteps.rcStepsStrings.error]
+    inline def error: "error" = "error".asInstanceOf["error"]
     
-    inline def finish: typings.rcSteps.rcStepsStrings.finish = "finish".asInstanceOf[typings.rcSteps.rcStepsStrings.finish]
+    inline def finish: "finish" = "finish".asInstanceOf["finish"]
     
-    inline def process: typings.rcSteps.rcStepsStrings.process = "process".asInstanceOf[typings.rcSteps.rcStepsStrings.process]
+    inline def process: "process" = "process".asInstanceOf["process"]
   }
+  type Status = "error" | "process" | "finish" | "wait"
 }

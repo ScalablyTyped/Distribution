@@ -3,7 +3,6 @@ package typings.three
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcMathMatrix4Mod.Matrix4
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object srcCamerasCameraMod {
     */
   open class Camera () extends Object3D[Event] {
     
-    val isCamera: `true` = js.native
+    val isCamera: true = js.native
     
     /**
       * This is the inverse of matrixWorld. MatrixWorld contains the Matrix which has the world transform of the Camera.

@@ -410,18 +410,14 @@ object v8Mod {
   inline def writeHeapSnapshot(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("writeHeapSnapshot")().asInstanceOf[String]
   inline def writeHeapSnapshot(filename: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("writeHeapSnapshot")(filename.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  // ** Signifies if the --zap_code_space option is enabled or not.  1 == enabled, 0 == disabled. */
-  /* Rewritten from type alias, can be one of: 
-    - typings.node.nodeInts.`0`
-    - typings.node.nodeInts.`1`
-  */
-  trait DoesZapCodeSpaceFlag extends StObject
   object DoesZapCodeSpaceFlag {
     
-    inline def `0`: typings.node.nodeInts.`0` = 0.asInstanceOf[typings.node.nodeInts.`0`]
+    inline def `0`: 0 = 0.asInstanceOf[0]
     
-    inline def `1`: typings.node.nodeInts.`1` = 1.asInstanceOf[typings.node.nodeInts.`1`]
+    inline def `1`: 1 = 1.asInstanceOf[1]
   }
+  // ** Signifies if the --zap_code_space option is enabled or not.  1 == enabled, 0 == disabled. */
+  type DoesZapCodeSpaceFlag = 0 | 1
   
   trait HeapCodeStatistics extends StObject {
     

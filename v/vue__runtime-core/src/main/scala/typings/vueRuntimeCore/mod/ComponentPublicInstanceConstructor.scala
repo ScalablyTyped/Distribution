@@ -1,7 +1,6 @@
 package typings.vueRuntimeCore.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ M,
 js.Object, 
 Props, 
 js.Object, 
-`false`, 
+false, 
 ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
 js.Object] */, Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */]
   extends StObject

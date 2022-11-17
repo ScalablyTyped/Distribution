@@ -1,15 +1,12 @@
 package typings.rcFieldForm.esInterfaceMod
 
-import typings.rcFieldForm.rcFieldFormStrings.reset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResetInfo
-  extends StObject
-     with NotifyInfo {
+trait ResetInfo extends StObject {
   
-  var `type`: reset
+  var `type`: "reset"
 }
 object ResetInfo {
   
@@ -21,6 +18,6 @@ object ResetInfo {
   
   extension [Self <: ResetInfo](x: Self) {
     
-    inline def setType(value: reset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "reset"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

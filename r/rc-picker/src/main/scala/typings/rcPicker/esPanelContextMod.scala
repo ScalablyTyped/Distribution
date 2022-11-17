@@ -3,9 +3,6 @@ package typings.rcPicker
 import org.scalablytyped.runtime.Shortcut
 import typings.rcPicker.esInterfaceMod.OnSelect
 import typings.rcPicker.esInterfaceMod.PanelMode
-import typings.rcPicker.rcPickerStrings.key
-import typings.rcPicker.rcPickerStrings.mouse
-import typings.rcPicker.rcPickerStrings.submit
 import typings.react.mod.Context
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MutableRefObject
@@ -116,7 +113,7 @@ object esPanelContextMod extends Shortcut {
       
       inline def setOnDateMouseLeaveUndefined: Self = StObject.set(x, "onDateMouseLeave", js.undefined)
       
-      inline def setOnSelect(value: (Any, /* type */ key | mouse | submit) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (Any, /* type */ "key" | "mouse" | "submit") => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       

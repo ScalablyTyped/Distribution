@@ -1,6 +1,5 @@
 package typings.angularCompilerCli.srcNgtscReflectionSrcHostMod
 
-import typings.angularCompilerCli.angularCompilerCliInts.`2`
 import typings.typescript.mod.ImportClause
 import typings.typescript.mod.ImportSpecifier
 import typings.typescript.mod.TypeNode
@@ -8,11 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TypeOnlyImport
-  extends StObject
-     with UnavailableValue {
+trait TypeOnlyImport extends StObject {
   
-  var kind: `2`
+  var kind: 2
   
   var node: ImportClause | ImportSpecifier
   
@@ -27,7 +24,7 @@ object TypeOnlyImport {
   
   extension [Self <: TypeOnlyImport](x: Self) {
     
-    inline def setKind(value: `2`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: 2): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setNode(value: ImportClause | ImportSpecifier): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

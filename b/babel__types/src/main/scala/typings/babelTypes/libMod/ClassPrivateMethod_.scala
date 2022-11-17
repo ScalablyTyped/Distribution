@@ -1,33 +1,18 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ClassPrivateMethod
-import typings.babelTypes.babelTypesStrings.`protected`
-import typings.babelTypes.babelTypesStrings.get
-import typings.babelTypes.babelTypesStrings.method_
-import typings.babelTypes.babelTypesStrings.private_
-import typings.babelTypes.babelTypesStrings.public
-import typings.babelTypes.babelTypesStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ClassPrivateMethod_
   extends StObject
-     with BaseNode
-     with BlockParent
-     with Function
-     with FunctionParent
-     with Method
-     with Node
-     with Private
-     with Scopable
-     with Standardized {
+     with BaseNode {
   
   var `abstract`: js.UndefOr[Boolean | Null] = js.undefined
   
-  var access: js.UndefOr[public | private_ | `protected` | Null] = js.undefined
+  var access: js.UndefOr["public" | "private" | "protected" | Null] = js.undefined
   
-  var accessibility: js.UndefOr[public | private_ | `protected` | Null] = js.undefined
+  var accessibility: js.UndefOr["public" | "private" | "protected" | Null] = js.undefined
   
   var async: js.UndefOr[Boolean] = js.undefined
   
@@ -41,7 +26,7 @@ trait ClassPrivateMethod_
   
   var key: PrivateName_
   
-  var kind: get | set | method_
+  var kind: "get" | "set" | "method"
   
   var optional: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -56,14 +41,14 @@ trait ClassPrivateMethod_
   var typeParameters: js.UndefOr[TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
-  var type_ClassPrivateMethod_ : ClassPrivateMethod
+  var type_ClassPrivateMethod_ : "ClassPrivateMethod"
 }
 object ClassPrivateMethod_ {
   
   inline def apply(
     body: BlockStatement_,
     key: PrivateName_,
-    kind: get | set | method_,
+    kind: "get" | "set" | "method",
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
     static: Boolean
   ): ClassPrivateMethod_ = {
@@ -80,13 +65,13 @@ object ClassPrivateMethod_ {
     
     inline def setAbstractUndefined: Self = StObject.set(x, "abstract", js.undefined)
     
-    inline def setAccess(value: public | private_ | `protected`): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: "public" | "private" | "protected"): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
     inline def setAccessNull: Self = StObject.set(x, "access", null)
     
     inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
-    inline def setAccessibility(value: public | private_ | `protected`): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: "public" | "private" | "protected"): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityNull: Self = StObject.set(x, "accessibility", null)
     
@@ -116,7 +101,7 @@ object ClassPrivateMethod_ {
     
     inline def setKey(value: PrivateName_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setKind(value: get | set | method_): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "get" | "set" | "method"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
@@ -140,7 +125,7 @@ object ClassPrivateMethod_ {
     
     inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ClassPrivateMethod): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ClassPrivateMethod"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

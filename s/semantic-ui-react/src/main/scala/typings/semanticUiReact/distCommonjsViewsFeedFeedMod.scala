@@ -16,8 +16,6 @@ import typings.semanticUiReact.distCommonjsViewsFeedFeedLikeMod.FeedLikeProps
 import typings.semanticUiReact.distCommonjsViewsFeedFeedMetaMod.FeedMetaProps
 import typings.semanticUiReact.distCommonjsViewsFeedFeedSummaryMod.FeedSummaryProps
 import typings.semanticUiReact.distCommonjsViewsFeedFeedUserMod.FeedUserProps
-import typings.semanticUiReact.semanticUiReactStrings.large
-import typings.semanticUiReact.semanticUiReactStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,7 +77,7 @@ object distCommonjsViewsFeedFeedMod extends Shortcut {
     var events: js.UndefOr[SemanticShorthandCollection[FeedEventProps]] = js.undefined
     
     /** A feed can have different sizes. */
-    var size: js.UndefOr[small | large] = js.undefined
+    var size: js.UndefOr["small" | "large"] = js.undefined
   }
   object StrictFeedProps {
     
@@ -108,7 +106,7 @@ object distCommonjsViewsFeedFeedMod extends Shortcut {
       
       inline def setEventsVarargs(value: SemanticShorthandItem[FeedEventProps]*): Self = StObject.set(x, "events", js.Array(value*))
       
-      inline def setSize(value: small | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "small" | "large"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }

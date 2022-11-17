@@ -4,7 +4,6 @@ import typings.three.anon.DiffuseColorNode
 import typings.three.anon.OutgoingLightNode
 import typings.three.srcThreeMod.Material
 import typings.three.srcThreeMod.ShaderMaterial
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,9 +36,9 @@ object examplesJsmNodesMaterialsNodeMaterialMod {
     
     def generatePosition(builder: typings.three.examplesJsmNodesCoreNodeBuilderMod.default): Unit = js.native
     
-    var isNodeMaterial: `true` = js.native
+    var isNodeMaterial: true = js.native
     
     @JSName("lights")
-    var lights_NodeMaterial: `true` = js.native
+    var lights_NodeMaterial: true = js.native
   }
 }

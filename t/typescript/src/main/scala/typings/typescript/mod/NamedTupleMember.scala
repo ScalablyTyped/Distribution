@@ -9,8 +9,7 @@ trait NamedTupleMember
   extends StObject
      with TypeNode
      with JSDocContainer
-     with Declaration
-     with HasJSDoc {
+     with Declaration {
   
   val dotDotDotToken: js.UndefOr[Token[typings.typescript.mod.SyntaxKind.DotDotDotToken]] = js.native
   

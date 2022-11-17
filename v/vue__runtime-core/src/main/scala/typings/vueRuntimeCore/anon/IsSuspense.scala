@@ -1,8 +1,6 @@
 package typings.vueRuntimeCore.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.vueRuntimeCore.mod._VNodeTypes
-import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IsSuspense
   extends StObject
-     with Instantiable0[`1`]
-     with _VNodeTypes {
+     with Instantiable0[`1`] {
   
-  var __isSuspense: `true` = js.native
+  var __isSuspense: true = js.native
 }

@@ -2,8 +2,6 @@ package typings.antd
 
 import typings.antd.anon.CompactDirection
 import typings.antd.anon.PropsWithChildren
-import typings.antd.antdStrings.horizontal
-import typings.antd.antdStrings.vertical
 import typings.antd.libConfigProviderContextMod.DirectionType
 import typings.antd.libConfigProviderSizeContextMod.SizeType
 import typings.react.mod.Context
@@ -36,7 +34,7 @@ object libSpaceCompactMod {
   
   trait SpaceCompactItemContextType extends StObject {
     
-    var compactDirection: js.UndefOr[horizontal | vertical] = js.undefined
+    var compactDirection: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var compactSize: js.UndefOr[SizeType] = js.undefined
     
@@ -53,7 +51,7 @@ object libSpaceCompactMod {
     
     extension [Self <: SpaceCompactItemContextType](x: Self) {
       
-      inline def setCompactDirection(value: horizontal | vertical): Self = StObject.set(x, "compactDirection", value.asInstanceOf[js.Any])
+      inline def setCompactDirection(value: "horizontal" | "vertical"): Self = StObject.set(x, "compactDirection", value.asInstanceOf[js.Any])
       
       inline def setCompactDirectionUndefined: Self = StObject.set(x, "compactDirection", js.undefined)
       
@@ -77,7 +75,7 @@ object libSpaceCompactMod {
     
     var block: js.UndefOr[Boolean] = js.undefined
     
-    var direction: js.UndefOr[horizontal | vertical] = js.undefined
+    var direction: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -96,7 +94,7 @@ object libSpaceCompactMod {
       
       inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       
-      inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "horizontal" | "vertical"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       

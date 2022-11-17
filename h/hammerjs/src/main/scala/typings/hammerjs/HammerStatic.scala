@@ -2,15 +2,6 @@ package typings.hammerjs
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.hammerjs.hammerjsInts.`16`
-import typings.hammerjs.hammerjsInts.`1`
-import typings.hammerjs.hammerjsInts.`24`
-import typings.hammerjs.hammerjsInts.`2`
-import typings.hammerjs.hammerjsInts.`30`
-import typings.hammerjs.hammerjsInts.`32`
-import typings.hammerjs.hammerjsInts.`4`
-import typings.hammerjs.hammerjsInts.`6`
-import typings.hammerjs.hammerjsInts.`8`
 import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.SVGElement
@@ -31,30 +22,30 @@ trait HammerStatic
   var AttrRecognizer: AttrRecognizerStatic = js.native
   
   // DIRECTION_UP | DIRECTION_DOWN
-  var DIRECTION_ALL: `30` = js.native
+  var DIRECTION_ALL: 30 = js.native
   
-  var DIRECTION_DOWN: `16` = js.native
+  var DIRECTION_DOWN: 16 = js.native
   
-  var DIRECTION_HORIZONTAL: `6` = js.native
+  var DIRECTION_HORIZONTAL: 6 = js.native
   
-  var DIRECTION_LEFT: `2` = js.native
+  var DIRECTION_LEFT: 2 = js.native
   
-  var DIRECTION_NONE: `1` = js.native
+  var DIRECTION_NONE: 1 = js.native
   
-  var DIRECTION_RIGHT: `4` = js.native
+  var DIRECTION_RIGHT: 4 = js.native
   
-  var DIRECTION_UP: `8` = js.native
+  var DIRECTION_UP: 8 = js.native
   
   // DIRECTION_LEFT | DIRECTION_RIGHT
-  var DIRECTION_VERTICAL: `24` = js.native
+  var DIRECTION_VERTICAL: 24 = js.native
   
-  var INPUT_CANCEL: `8` = js.native
+  var INPUT_CANCEL: 8 = js.native
   
-  var INPUT_END: `4` = js.native
+  var INPUT_END: 4 = js.native
   
-  var INPUT_MOVE: `2` = js.native
+  var INPUT_MOVE: 2 = js.native
   
-  var INPUT_START: `1` = js.native
+  var INPUT_START: 1 = js.native
   
   var Input: HammerInput = js.native
   
@@ -75,20 +66,20 @@ trait HammerStatic
   
   var Rotate: RotateRecognizerStatic = js.native
   
-  var STATE_BEGAN: `2` = js.native
+  var STATE_BEGAN: 2 = js.native
   
   // same as STATE_ENDED
-  var STATE_CANCELLED: `16` = js.native
+  var STATE_CANCELLED: 16 = js.native
   
-  var STATE_CHANGED: `4` = js.native
+  var STATE_CHANGED: 4 = js.native
   
-  var STATE_ENDED: `8` = js.native
+  var STATE_ENDED: 8 = js.native
   
-  var STATE_FAILED: `32` = js.native
+  var STATE_FAILED: 32 = js.native
   
-  var STATE_POSSIBLE: `1` = js.native
+  var STATE_POSSIBLE: 1 = js.native
   
-  var STATE_RECOGNIZED: `8` = js.native
+  var STATE_RECOGNIZED: 8 = js.native
   
   var SingleTouchInput: typings.hammerjs.SingleTouchInput = js.native
   

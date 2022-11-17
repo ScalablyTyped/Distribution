@@ -4,58 +4,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersignblueCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersigndarkGreenCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersignredCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersignvioletCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersigndarkOrangeCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersignblackCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersignnightCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersignyellowCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersigndarkBlueCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersigngreenCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersignpinkCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersignorangeCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersigngrayCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersignlightBlueCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersignbrownCircleIcon
-  - typings.yandexMaps.yandexMapsStrings.islandsNumbersignoliveCircleIcon
-*/
-trait PresetCircleKey
-  extends StObject
-     with _PresetKey
 object PresetCircleKey {
   
-  inline def islandsNumbersignblackCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersignblackCircleIcon = "islands#blackCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersignblackCircleIcon]
+  inline def islandsNumbersignblackCircleIcon: "islands#blackCircleIcon" = "islands#blackCircleIcon".asInstanceOf["islands#blackCircleIcon"]
   
-  inline def islandsNumbersignblueCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersignblueCircleIcon = "islands#blueCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersignblueCircleIcon]
+  inline def islandsNumbersignblueCircleIcon: "islands#blueCircleIcon" = "islands#blueCircleIcon".asInstanceOf["islands#blueCircleIcon"]
   
-  inline def islandsNumbersignbrownCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersignbrownCircleIcon = "islands#brownCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersignbrownCircleIcon]
+  inline def islandsNumbersignbrownCircleIcon: "islands#brownCircleIcon" = "islands#brownCircleIcon".asInstanceOf["islands#brownCircleIcon"]
   
-  inline def islandsNumbersigndarkBlueCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersigndarkBlueCircleIcon = "islands#darkBlueCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersigndarkBlueCircleIcon]
+  inline def islandsNumbersigndarkBlueCircleIcon: "islands#darkBlueCircleIcon" = "islands#darkBlueCircleIcon".asInstanceOf["islands#darkBlueCircleIcon"]
   
-  inline def islandsNumbersigndarkGreenCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersigndarkGreenCircleIcon = "islands#darkGreenCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersigndarkGreenCircleIcon]
+  inline def islandsNumbersigndarkGreenCircleIcon: "islands#darkGreenCircleIcon" = "islands#darkGreenCircleIcon".asInstanceOf["islands#darkGreenCircleIcon"]
   
-  inline def islandsNumbersigndarkOrangeCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersigndarkOrangeCircleIcon = "islands#darkOrangeCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersigndarkOrangeCircleIcon]
+  inline def islandsNumbersigndarkOrangeCircleIcon: "islands#darkOrangeCircleIcon" = "islands#darkOrangeCircleIcon".asInstanceOf["islands#darkOrangeCircleIcon"]
   
-  inline def islandsNumbersigngrayCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersigngrayCircleIcon = "islands#grayCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersigngrayCircleIcon]
+  inline def islandsNumbersigngrayCircleIcon: "islands#grayCircleIcon" = "islands#grayCircleIcon".asInstanceOf["islands#grayCircleIcon"]
   
-  inline def islandsNumbersigngreenCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersigngreenCircleIcon = "islands#greenCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersigngreenCircleIcon]
+  inline def islandsNumbersigngreenCircleIcon: "islands#greenCircleIcon" = "islands#greenCircleIcon".asInstanceOf["islands#greenCircleIcon"]
   
-  inline def islandsNumbersignlightBlueCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersignlightBlueCircleIcon = "islands#lightBlueCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersignlightBlueCircleIcon]
+  inline def islandsNumbersignlightBlueCircleIcon: "islands#lightBlueCircleIcon" = "islands#lightBlueCircleIcon".asInstanceOf["islands#lightBlueCircleIcon"]
   
-  inline def islandsNumbersignnightCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersignnightCircleIcon = "islands#nightCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersignnightCircleIcon]
+  inline def islandsNumbersignnightCircleIcon: "islands#nightCircleIcon" = "islands#nightCircleIcon".asInstanceOf["islands#nightCircleIcon"]
   
-  inline def islandsNumbersignoliveCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersignoliveCircleIcon = "islands#oliveCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersignoliveCircleIcon]
+  inline def islandsNumbersignoliveCircleIcon: "islands#oliveCircleIcon" = "islands#oliveCircleIcon".asInstanceOf["islands#oliveCircleIcon"]
   
-  inline def islandsNumbersignorangeCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersignorangeCircleIcon = "islands#orangeCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersignorangeCircleIcon]
+  inline def islandsNumbersignorangeCircleIcon: "islands#orangeCircleIcon" = "islands#orangeCircleIcon".asInstanceOf["islands#orangeCircleIcon"]
   
-  inline def islandsNumbersignpinkCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersignpinkCircleIcon = "islands#pinkCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersignpinkCircleIcon]
+  inline def islandsNumbersignpinkCircleIcon: "islands#pinkCircleIcon" = "islands#pinkCircleIcon".asInstanceOf["islands#pinkCircleIcon"]
   
-  inline def islandsNumbersignredCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersignredCircleIcon = "islands#redCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersignredCircleIcon]
+  inline def islandsNumbersignredCircleIcon: "islands#redCircleIcon" = "islands#redCircleIcon".asInstanceOf["islands#redCircleIcon"]
   
-  inline def islandsNumbersignvioletCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersignvioletCircleIcon = "islands#violetCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersignvioletCircleIcon]
+  inline def islandsNumbersignvioletCircleIcon: "islands#violetCircleIcon" = "islands#violetCircleIcon".asInstanceOf["islands#violetCircleIcon"]
   
-  inline def islandsNumbersignyellowCircleIcon: typings.yandexMaps.yandexMapsStrings.islandsNumbersignyellowCircleIcon = "islands#yellowCircleIcon".asInstanceOf[typings.yandexMaps.yandexMapsStrings.islandsNumbersignyellowCircleIcon]
+  inline def islandsNumbersignyellowCircleIcon: "islands#yellowCircleIcon" = "islands#yellowCircleIcon".asInstanceOf["islands#yellowCircleIcon"]
 }

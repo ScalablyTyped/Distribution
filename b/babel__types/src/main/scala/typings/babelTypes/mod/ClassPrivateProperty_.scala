@@ -1,17 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.ClassPrivateProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ClassPrivateProperty_
+trait ClassPrivateProperty_
   extends StObject
-     with BaseNode
-     with Private
-     with Property
-     with Standardized {
+     with BaseNode {
   
   var decorators: js.Array[Decorator_] | Null
   
@@ -26,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   
   @JSName("type")
-  var type_ClassPrivateProperty_ : ClassPrivateProperty
+  var type_ClassPrivateProperty_ : "ClassPrivateProperty"
   
   var value: Expression | Null
   
@@ -60,7 +55,7 @@ object ClassPrivateProperty_ {
     
     inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ClassPrivateProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ClassPrivateProperty"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

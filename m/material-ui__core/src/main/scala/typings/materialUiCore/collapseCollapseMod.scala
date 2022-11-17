@@ -1,7 +1,6 @@
 package typings.materialUiCore
 
 import typings.materialUiCore.anon.PartialClassNameMapCollap
-import typings.materialUiCore.materialUiCoreStrings.auto
 import typings.materialUiCore.transitionsTransitionMod.TransitionProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.ElementType
@@ -20,26 +19,19 @@ object collapseCollapseMod {
   
   inline def default(props: CollapseProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.entered
-    - typings.materialUiCore.materialUiCoreStrings.hidden
-    - typings.materialUiCore.materialUiCoreStrings.wrapper
-    - typings.materialUiCore.materialUiCoreStrings.wrapperInner
-  */
-  trait CollapseClassKey extends StObject
   object CollapseClassKey {
     
-    inline def entered: typings.materialUiCore.materialUiCoreStrings.entered = "entered".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.entered]
+    inline def entered: "entered" = "entered".asInstanceOf["entered"]
     
-    inline def hidden: typings.materialUiCore.materialUiCoreStrings.hidden = "hidden".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.hidden]
+    inline def hidden: "hidden" = "hidden".asInstanceOf["hidden"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def wrapper: typings.materialUiCore.materialUiCoreStrings.wrapper = "wrapper".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.wrapper]
+    inline def wrapper: "wrapper" = "wrapper".asInstanceOf["wrapper"]
     
-    inline def wrapperInner: typings.materialUiCore.materialUiCoreStrings.wrapperInner = "wrapperInner".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.wrapperInner]
+    inline def wrapperInner: "wrapperInner" = "wrapperInner".asInstanceOf["wrapperInner"]
   }
+  type CollapseClassKey = "root" | "entered" | "hidden" | "wrapper" | "wrapperInner"
   
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/transitions/transition.TransitionProps, @material-ui/core.@material-ui/core/Collapse/Collapse.CollapseClassKey, 'timeout'> */
   trait CollapseProps extends StObject {
@@ -121,7 +113,7 @@ object collapseCollapseMod {
       *
       * Set to 'auto' to automatically calculate transition time based on height.
       */
-    var timeout: js.UndefOr[Any | auto] = js.undefined
+    var timeout: js.UndefOr[Any | "auto"] = js.undefined
     
     var unmountOnExit: js.UndefOr[Any] = js.undefined
   }
@@ -228,7 +220,7 @@ object collapseCollapseMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTimeout(value: Any | auto): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Any | "auto"): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       

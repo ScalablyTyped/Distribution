@@ -1,12 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.boundary
-import typings.std.stdStrings.end
-import typings.std.stdStrings.error
-import typings.std.stdStrings.mark
-import typings.std.stdStrings.pause
-import typings.std.stdStrings.resume
-import typings.std.stdStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,117 +10,144 @@ trait SpeechSynthesisUtterance
   extends StObject
      with EventTarget {
   
-  /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_boundary(
-    `type`: boundary,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_boundary(
-    `type`: boundary,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_boundary(
-    `type`: boundary,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_end(`type`: end, listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_end(
-    `type`: end,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_end(
-    `type`: end,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_error(
-    `type`: error,
+  @scala.annotation.targetName("addEventListener_error")
+  def addEventListener(
+    `type`: "error",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisErrorEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(
-    `type`: error,
+  @scala.annotation.targetName("addEventListener_mark")
+  def addEventListener(
+    `type`: "mark",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_end")
+  def addEventListener(
+    `type`: "end",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
+  ): Unit = js.native
+  /* standard dom */
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_boundary")
+  def addEventListener(
+    `type`: "boundary",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_resume")
+  def addEventListener(
+    `type`: "resume",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_start")
+  def addEventListener(
+    `type`: "start",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_pause")
+  def addEventListener(
+    `type`: "pause",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_start")
+  def addEventListener(
+    `type`: "start",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_error")
+  def addEventListener(
+    `type`: "error",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisErrorEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(
-    `type`: error,
+  @scala.annotation.targetName("addEventListener_resume")
+  def addEventListener(
+    `type`: "resume",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_pause")
+  def addEventListener(
+    `type`: "pause",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_mark")
+  def addEventListener(
+    `type`: "mark",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_boundary")
+  def addEventListener(
+    `type`: "boundary",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_end")
+  def addEventListener(
+    `type`: "end",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_mark")
+  def addEventListener(
+    `type`: "mark",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_error")
+  def addEventListener(
+    `type`: "error",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisErrorEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_mark(`type`: mark, listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_mark(
-    `type`: mark,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_mark(
-    `type`: mark,
+  @scala.annotation.targetName("addEventListener_resume")
+  def addEventListener(
+    `type`: "resume",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_pause(
-    `type`: pause,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pause(
-    `type`: pause,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pause(
-    `type`: pause,
+  @scala.annotation.targetName("addEventListener_end")
+  def addEventListener(
+    `type`: "end",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_resume(
-    `type`: resume,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_resume(
-    `type`: resume,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_resume(
-    `type`: resume,
+  @scala.annotation.targetName("addEventListener_boundary")
+  def addEventListener(
+    `type`: "boundary",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_start(
-    `type`: start,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_start(
-    `type`: start,
+  @scala.annotation.targetName("addEventListener_pause")
+  def addEventListener(
+    `type`: "pause",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: scala.Boolean
+    options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_start(
-    `type`: start,
+  @scala.annotation.targetName("addEventListener_start")
+  def addEventListener(
+    `type`: "start",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -162,117 +182,144 @@ trait SpeechSynthesisUtterance
   /* standard dom */
   var rate: Double = js.native
   
-  /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_boundary(
-    `type`: boundary,
+  @scala.annotation.targetName("removeEventListener_mark")
+  def removeEventListener(
+    `type`: "mark",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_boundary(
-    `type`: boundary,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: scala.Boolean
+  @scala.annotation.targetName("removeEventListener_resume")
+  def removeEventListener(
+    `type`: "resume",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_boundary(
-    `type`: boundary,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: EventListenerOptions
+  @scala.annotation.targetName("removeEventListener_pause")
+  def removeEventListener(
+    `type`: "pause",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_end(`type`: end, listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_end(
-    `type`: end,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_end(
-    `type`: end,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_error(
-    `type`: error,
+  @scala.annotation.targetName("removeEventListener_error")
+  def removeEventListener(
+    `type`: "error",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisErrorEvent, Any]
   ): Unit = js.native
+  /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_error(
-    `type`: error,
+  @scala.annotation.targetName("removeEventListener_boundary")
+  def removeEventListener(
+    `type`: "boundary",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_end")
+  def removeEventListener(
+    `type`: "end",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_start")
+  def removeEventListener(
+    `type`: "start",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_end")
+  def removeEventListener(
+    `type`: "end",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_pause")
+  def removeEventListener(
+    `type`: "pause",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_mark")
+  def removeEventListener(
+    `type`: "mark",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_error")
+  def removeEventListener(
+    `type`: "error",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisErrorEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_error(
-    `type`: error,
+  @scala.annotation.targetName("removeEventListener_start")
+  def removeEventListener(
+    `type`: "start",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_boundary")
+  def removeEventListener(
+    `type`: "boundary",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_resume")
+  def removeEventListener(
+    `type`: "resume",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_end")
+  def removeEventListener(
+    `type`: "end",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_mark")
+  def removeEventListener(
+    `type`: "mark",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_start")
+  def removeEventListener(
+    `type`: "start",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_pause")
+  def removeEventListener(
+    `type`: "pause",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_boundary")
+  def removeEventListener(
+    `type`: "boundary",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_error")
+  def removeEventListener(
+    `type`: "error",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisErrorEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_mark(`type`: mark, listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_mark(
-    `type`: mark,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_mark(
-    `type`: mark,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pause(
-    `type`: pause,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pause(
-    `type`: pause,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pause(
-    `type`: pause,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_resume(
-    `type`: resume,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_resume(
-    `type`: resume,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_resume(
-    `type`: resume,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_start(
-    `type`: start,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_start(
-    `type`: start,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_start(
-    `type`: start,
+  @scala.annotation.targetName("removeEventListener_resume")
+  def removeEventListener(
+    `type`: "resume",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SpeechSynthesisEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native

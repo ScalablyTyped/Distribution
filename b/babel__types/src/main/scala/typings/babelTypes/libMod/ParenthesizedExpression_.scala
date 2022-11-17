@@ -1,22 +1,17 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ParenthesizedExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ParenthesizedExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with ExpressionWrapper
-     with Node
-     with Standardized {
+     with BaseNode {
   
   var expression: Expression
   
   @JSName("type")
-  var type_ParenthesizedExpression_ : ParenthesizedExpression
+  var type_ParenthesizedExpression_ : "ParenthesizedExpression"
 }
 object ParenthesizedExpression_ {
   
@@ -30,6 +25,6 @@ object ParenthesizedExpression_ {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ParenthesizedExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ParenthesizedExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

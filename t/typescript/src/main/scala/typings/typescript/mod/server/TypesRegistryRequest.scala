@@ -1,13 +1,12 @@
 package typings.typescript.mod.server
 
-import typings.typescript.typescriptStrings.typesRegistry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TypesRegistryRequest extends StObject {
   
-  val kind: typesRegistry
+  val kind: "typesRegistry"
 }
 object TypesRegistryRequest {
   
@@ -18,6 +17,6 @@ object TypesRegistryRequest {
   
   extension [Self <: TypesRegistryRequest](x: Self) {
     
-    inline def setKind(value: typesRegistry): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "typesRegistry"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

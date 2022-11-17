@@ -9,7 +9,6 @@ import typings.three.srcMathPlaneMod.Plane
 import typings.three.srcMathSphereMod.Sphere
 import typings.three.srcMathTriangleMod.Triangle
 import typings.three.srcMathVector3Mod.Vector3
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,7 +68,7 @@ object srcMathBox3Mod {
     
     def intersectsTriangle(triangle: Triangle): Boolean = js.native
     
-    val isBox3: `true` = js.native
+    val isBox3: true = js.native
     
     def isEmpty(): Boolean = js.native
     

@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "Expansion")
 @js.native
-open class Expansion protected ()
-  extends NodeWithI18n
-     with Node2 {
+open class Expansion protected () extends NodeWithI18n {
   def this(
     switchValue: String,
     `type`: String,

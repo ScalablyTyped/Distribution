@@ -1,14 +1,12 @@
 package typings.expoFileSystem.buildFileSystemDottypesMod
 
-import typings.expoFileSystem.expoFileSystemStrings.base64
-import typings.expoFileSystem.expoFileSystemStrings.utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ReadingOptions extends StObject {
   
-  var encoding: js.UndefOr[EncodingType | utf8 | base64] = js.undefined
+  var encoding: js.UndefOr[EncodingType | "utf8" | "base64"] = js.undefined
   
   var length: js.UndefOr[Double] = js.undefined
   
@@ -23,7 +21,7 @@ object ReadingOptions {
   
   extension [Self <: ReadingOptions](x: Self) {
     
-    inline def setEncoding(value: EncodingType | utf8 | base64): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: EncodingType | "utf8" | "base64"): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     

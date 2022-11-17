@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.PipelinePrimaryTopicReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `31` extends StObject {
   
-  var `type`: PipelinePrimaryTopicReference
+  var `type`: "PipelinePrimaryTopicReference"
 }
 object `31` {
   
@@ -19,6 +18,6 @@ object `31` {
   
   extension [Self <: `31`](x: Self) {
     
-    inline def setType(value: PipelinePrimaryTopicReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "PipelinePrimaryTopicReference"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

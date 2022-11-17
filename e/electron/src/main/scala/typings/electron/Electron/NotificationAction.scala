@@ -1,6 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.button
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ trait NotificationAction extends StObject {
   /**
     * The type of action, can be `button`.
     */
-  var `type`: button
+  var `type`: "button"
 }
 object NotificationAction {
   
@@ -32,6 +31,6 @@ object NotificationAction {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setType(value: button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "button"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

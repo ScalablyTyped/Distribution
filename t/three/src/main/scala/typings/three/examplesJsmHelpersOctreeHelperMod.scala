@@ -27,7 +27,7 @@ object examplesJsmHelpersOctreeHelperMod {
       * @default 'OctreeHelper'
       */
     @JSName("type")
-    var type_OctreeHelper: typings.three.threeStrings.OctreeHelper | String = js.native
+    var type_OctreeHelper: "OctreeHelper" | String = js.native
     
     def update(): Unit = js.native
   }

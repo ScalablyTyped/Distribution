@@ -1,18 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.JSXFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.libMod.ReturnedChild because Already inherited */ trait JSXFragment__
+trait JSXFragment__
   extends StObject
-     with BaseNode
-     with Expression
-     with Immutable
-     with JSX
-     with Node {
+     with BaseNode {
   
   var children: js.Array[
     JSXText__ | JSXExpressionContainer__ | JSXSpreadChild__ | JSXElement__ | JSXFragment__
@@ -23,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var openingFragment: JSXOpeningFragment__
   
   @JSName("type")
-  var type_JSXFragment__ : JSXFragment
+  var type_JSXFragment__ : "JSXFragment"
 }
 object JSXFragment__ {
   
@@ -53,6 +47,6 @@ object JSXFragment__ {
     
     inline def setOpeningFragment(value: JSXOpeningFragment__): Self = StObject.set(x, "openingFragment", value.asInstanceOf[js.Any])
     
-    inline def setType(value: JSXFragment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "JSXFragment"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

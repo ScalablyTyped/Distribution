@@ -6,9 +6,6 @@ import typings.materialUiStyles.anon.NameProps
 import typings.materialUiStyles.createGenerateClassNameCreateGenerateClassNameMod.GenerateClassNameOptions
 import typings.materialUiStyles.getThemePropsGetThemePropsMod.ThemeWithProps
 import typings.materialUiStyles.getThemePropsGetThemePropsMod.ThemedProps
-import typings.materialUiStyles.materialUiStylesStrings.innerRef
-import typings.materialUiStyles.materialUiStylesStrings.theme
-import typings.materialUiStyles.materialUiStylesStrings.withTheme
 import typings.materialUiStyles.mergeClassesMergeClassesMod.Classes
 import typings.materialUiStyles.mergeClassesMergeClassesMod.MergeClassesOption
 import typings.materialUiStyles.serverStyleSheetsMod.default
@@ -58,7 +55,7 @@ object mod {
           ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState]
         ]
       ], 
-      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ "theme" | "innerRef"
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
     (Omit[
@@ -68,7 +65,7 @@ object mod {
           ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState]
         ]
       ], 
-      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ "theme" | "innerRef"
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ]]
   inline def default[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]): ComponentType[
@@ -77,7 +74,7 @@ object mod {
         FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]], 
         ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]]
       ], 
-      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ "theme" | "innerRef"
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
     (Omit[
@@ -85,7 +82,7 @@ object mod {
         FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]], 
         ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]]
       ], 
-      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ "theme" | "innerRef"
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ]]
   
@@ -115,8 +112,8 @@ object mod {
   inline def jssPreset(): JssOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("jssPreset")().asInstanceOf[JssOptions]
   
   inline def makeStyles[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey]): /* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any]
-  
-  inline def makeStyles_withTheme[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey], options: Omit[WithStylesOptions[Theme], withTheme]): /* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any]
+  @scala.annotation.targetName("makeStyles_withTheme")
+  inline def makeStyles[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey], options: Omit[WithStylesOptions[Theme], "withTheme"]): /* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any]
   
   inline def mergeClasses(): Classes = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeClasses")().asInstanceOf[Classes]
   inline def mergeClasses(options: MergeClassesOption): Classes = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeClasses")(options.asInstanceOf[js.Any]).asInstanceOf[Classes]
@@ -160,7 +157,7 @@ object mod {
           ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState]
         ]
       ], 
-      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ "theme" | "innerRef"
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTheme")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
     (Omit[
@@ -170,7 +167,7 @@ object mod {
           ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState]
         ]
       ], 
-      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ "theme" | "innerRef"
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ]]
   inline def withTheme[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]): ComponentType[
@@ -179,7 +176,7 @@ object mod {
         FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]], 
         ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]]
       ], 
-      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ "theme" | "innerRef"
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTheme")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
     (Omit[
@@ -187,7 +184,7 @@ object mod {
         FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]], 
         ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]]
       ], 
-      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ "theme" | "innerRef"
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ]]
   

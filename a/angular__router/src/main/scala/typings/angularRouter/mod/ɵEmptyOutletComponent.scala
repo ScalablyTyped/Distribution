@@ -2,8 +2,6 @@ package typings.angularRouter.mod
 
 import typings.angularCore.mod.ɵɵComponentDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularRouter.angularRouterBooleans.`true`
-import typings.angularRouter.angularRouterStrings.`ng-component`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,24 +20,26 @@ object ɵEmptyOutletComponent {
   @js.native
   def ɵcmp: ɵɵComponentDeclaration[
     ɵEmptyOutletComponent, 
-    `ng-component`, 
+    "ng-component", 
     scala.Nothing, 
     js.Object, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   inline def ɵcmp_=(
     x: ɵɵComponentDeclaration[
       ɵEmptyOutletComponent, 
-      `ng-component`, 
+      "ng-component", 
       scala.Nothing, 
       js.Object, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      true, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275cmp")(x.asInstanceOf[js.Any])
   

@@ -22,7 +22,7 @@ trait FinalizationRegistry[T] extends StObject {
   
   /* standard es2021.weakref */
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: typings.std.stdStrings.FinalizationRegistry = js.native
+  val toStringTag: "FinalizationRegistry" = js.native
   
   /**
     * Unregisters an object from the registry.

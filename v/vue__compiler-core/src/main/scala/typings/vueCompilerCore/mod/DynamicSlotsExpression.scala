@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DynamicSlotsExpression
   extends StObject
-     with CallExpression
-     with SlotsExpression {
+     with CallExpression {
   
   @JSName("arguments")
   var arguments_DynamicSlotsExpression: js.Tuple2[SlotsObjectExpression, DynamicSlotEntries]

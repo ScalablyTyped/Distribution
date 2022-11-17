@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait R3NgModuleDependencyMetadata
   extends StObject
-     with R3TemplateDependency
-     with R3TemplateDependencyMetadata {
+     with R3TemplateDependency {
   
   @JSName("kind")
   var kind_R3NgModuleDependencyMetadata: NgModule

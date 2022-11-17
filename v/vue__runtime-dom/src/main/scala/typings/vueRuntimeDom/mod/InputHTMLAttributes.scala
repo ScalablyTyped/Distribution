@@ -1,8 +1,6 @@
 package typings.vueRuntimeDom.mod
 
 import typings.std.Set
-import typings.vueRuntimeDom.vueRuntimeDomStrings.environment
-import typings.vueRuntimeDom.vueRuntimeDomStrings.user
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +17,7 @@ trait InputHTMLAttributes
   
   var autofocus: js.UndefOr[Booleanish] = js.undefined
   
-  var capture: js.UndefOr[Boolean | user | environment] = js.undefined
+  var capture: js.UndefOr[Boolean | "user" | "environment"] = js.undefined
   
   // https://www.w3.org/tr/html-media-capture/#the-capture-attribute
   var checked: js.UndefOr[Booleanish | js.Array[Any] | Set[Any]] = js.undefined
@@ -103,7 +101,7 @@ object InputHTMLAttributes {
     
     inline def setAutofocusUndefined: Self = StObject.set(x, "autofocus", js.undefined)
     
-    inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setCapture(value: Boolean | "user" | "environment"): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     

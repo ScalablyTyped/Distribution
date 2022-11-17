@@ -11,9 +11,6 @@ import typings.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticFLOATS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
-import typings.semanticUiReact.semanticUiReactStrings.bottom
-import typings.semanticUiReact.semanticUiReactStrings.top
-import typings.semanticUiReact.semanticUiReactStrings.very
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,32 +43,23 @@ object distCommonjsElementsSegmentSegmentMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.semanticUiReact.semanticUiReactStrings.mini
-    - typings.semanticUiReact.semanticUiReactStrings.tiny
-    - typings.semanticUiReact.semanticUiReactStrings.small
-    - typings.semanticUiReact.semanticUiReactStrings.large
-    - typings.semanticUiReact.semanticUiReactStrings.big
-    - typings.semanticUiReact.semanticUiReactStrings.huge
-    - typings.semanticUiReact.semanticUiReactStrings.massive
-  */
-  trait SegmentSizeProp extends StObject
   object SegmentSizeProp {
     
-    inline def big: typings.semanticUiReact.semanticUiReactStrings.big = "big".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.big]
+    inline def big: "big" = "big".asInstanceOf["big"]
     
-    inline def huge: typings.semanticUiReact.semanticUiReactStrings.huge = "huge".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.huge]
+    inline def huge: "huge" = "huge".asInstanceOf["huge"]
     
-    inline def large: typings.semanticUiReact.semanticUiReactStrings.large = "large".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.large]
+    inline def large: "large" = "large".asInstanceOf["large"]
     
-    inline def massive: typings.semanticUiReact.semanticUiReactStrings.massive = "massive".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.massive]
+    inline def massive: "massive" = "massive".asInstanceOf["massive"]
     
-    inline def mini: typings.semanticUiReact.semanticUiReactStrings.mini = "mini".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mini]
+    inline def mini: "mini" = "mini".asInstanceOf["mini"]
     
-    inline def small: typings.semanticUiReact.semanticUiReactStrings.small = "small".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.small]
+    inline def small: "small" = "small".asInstanceOf["small"]
     
-    inline def tiny: typings.semanticUiReact.semanticUiReactStrings.tiny = "tiny".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tiny]
+    inline def tiny: "tiny" = "tiny".asInstanceOf["tiny"]
   }
+  type SegmentSizeProp = "mini" | "tiny" | "small" | "large" | "big" | "huge" | "massive"
   
   trait StrictSegmentProps extends StObject {
     
@@ -79,7 +67,7 @@ object distCommonjsElementsSegmentSegmentMod extends Shortcut {
     var as: js.UndefOr[Any] = js.undefined
     
     /** Attach segment to other content, like a header. */
-    var attached: js.UndefOr[Boolean | top | bottom] = js.undefined
+    var attached: js.UndefOr[Boolean | "top" | "bottom"] = js.undefined
     
     /** A basic segment has no special formatting. */
     var basic: js.UndefOr[Boolean] = js.undefined
@@ -118,7 +106,7 @@ object distCommonjsElementsSegmentSegmentMod extends Shortcut {
     var loading: js.UndefOr[Boolean] = js.undefined
     
     /** A segment can increase its padding. */
-    var padded: js.UndefOr[Boolean | very] = js.undefined
+    var padded: js.UndefOr[Boolean | "very"] = js.undefined
     
     /** Formatted to look like a pile of pages. */
     var piled: js.UndefOr[Boolean] = js.undefined
@@ -160,7 +148,7 @@ object distCommonjsElementsSegmentSegmentMod extends Shortcut {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAttached(value: Boolean | top | bottom): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: Boolean | "top" | "bottom"): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
       inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       
@@ -212,7 +200,7 @@ object distCommonjsElementsSegmentSegmentMod extends Shortcut {
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      inline def setPadded(value: Boolean | very): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
+      inline def setPadded(value: Boolean | "very"): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
       
       inline def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
       

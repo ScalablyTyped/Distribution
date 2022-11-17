@@ -1,9 +1,6 @@
 package typings.node.cryptoMod
 
 import typings.node.bufferMod.global.Buffer
-import typings.node.nodeStrings.pkcs1
-import typings.node.nodeStrings.pkcs8
-import typings.node.nodeStrings.sec1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +13,7 @@ trait PrivateKeyInput extends StObject {
   
   var passphrase: js.UndefOr[String | Buffer] = js.undefined
   
-  var `type`: js.UndefOr[pkcs1 | pkcs8 | sec1] = js.undefined
+  var `type`: js.UndefOr["pkcs1" | "pkcs8" | "sec1"] = js.undefined
 }
 object PrivateKeyInput {
   
@@ -37,7 +34,7 @@ object PrivateKeyInput {
     
     inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
     
-    inline def setType(value: pkcs1 | pkcs8 | sec1): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "pkcs1" | "pkcs8" | "sec1"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

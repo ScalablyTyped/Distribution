@@ -1,19 +1,16 @@
 package typings.angularCommon.anon
 
-import typings.angularCommon.angularCommonStrings.ngForOf
-import typings.angularCommon.angularCommonStrings.ngForTemplate
-import typings.angularCommon.angularCommonStrings.ngForTrackBy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NgForOf extends StObject {
   
-  var ngForOf: typings.angularCommon.angularCommonStrings.ngForOf
+  var ngForOf: "ngForOf"
   
-  var ngForTemplate: typings.angularCommon.angularCommonStrings.ngForTemplate
+  var ngForTemplate: "ngForTemplate"
   
-  var ngForTrackBy: typings.angularCommon.angularCommonStrings.ngForTrackBy
+  var ngForTrackBy: "ngForTrackBy"
 }
 object NgForOf {
   
@@ -24,10 +21,10 @@ object NgForOf {
   
   extension [Self <: NgForOf](x: Self) {
     
-    inline def setNgForOf(value: ngForOf): Self = StObject.set(x, "ngForOf", value.asInstanceOf[js.Any])
+    inline def setNgForOf(value: "ngForOf"): Self = StObject.set(x, "ngForOf", value.asInstanceOf[js.Any])
     
-    inline def setNgForTemplate(value: ngForTemplate): Self = StObject.set(x, "ngForTemplate", value.asInstanceOf[js.Any])
+    inline def setNgForTemplate(value: "ngForTemplate"): Self = StObject.set(x, "ngForTemplate", value.asInstanceOf[js.Any])
     
-    inline def setNgForTrackBy(value: ngForTrackBy): Self = StObject.set(x, "ngForTrackBy", value.asInstanceOf[js.Any])
+    inline def setNgForTrackBy(value: "ngForTrackBy"): Self = StObject.set(x, "ngForTrackBy", value.asInstanceOf[js.Any])
   }
 }

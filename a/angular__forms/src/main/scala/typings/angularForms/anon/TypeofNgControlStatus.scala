@@ -3,8 +3,6 @@ package typings.angularForms.anon
 import org.scalablytyped.runtime.Instantiable1
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
-import typings.angularForms.angularFormsStrings.`[formControlName]Comma[ngModel]Comma[formControl]`
 import typings.angularForms.mod.NgControl
 import typings.angularForms.mod.NgControlStatus
 import org.scalablytyped.runtime.StObject
@@ -18,13 +16,14 @@ trait TypeofNgControlStatus
   
   var ɵdir: ɵɵDirectiveDeclaration[
     NgControlStatus, 
-    `[formControlName]Comma[ngModel]Comma[formControl]`, 
+    "[formControlName],[ngModel],[formControl]", 
     scala.Nothing, 
     js.Object, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NgControlStatus, js.Array[`4`]] = js.native

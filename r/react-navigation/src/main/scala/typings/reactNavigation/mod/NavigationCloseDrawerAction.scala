@@ -1,17 +1,14 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashCLOSE_DRAWER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationCloseDrawerAction
-  extends StObject
-     with NavigationDrawerAction {
+trait NavigationCloseDrawerAction extends StObject {
   
   var key: js.UndefOr[String] = js.undefined
   
-  var `type`: NavigationSlashCLOSE_DRAWER
+  var `type`: "Navigation/CLOSE_DRAWER"
 }
 object NavigationCloseDrawerAction {
   
@@ -27,6 +24,6 @@ object NavigationCloseDrawerAction {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setType(value: NavigationSlashCLOSE_DRAWER): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Navigation/CLOSE_DRAWER"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

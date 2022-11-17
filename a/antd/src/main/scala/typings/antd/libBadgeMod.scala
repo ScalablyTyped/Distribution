@@ -1,7 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdStrings.small
 import typings.antd.libBadgeRibbonMod.RibbonProps
 import typings.antd.libUtilColorsMod.PresetColorType
 import typings.antd.libUtilColorsMod.PresetStatusColorType
@@ -45,7 +44,7 @@ object libBadgeMod extends Shortcut {
     
     var showZero: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[typings.antd.antdStrings.default | small] = js.undefined
+    var size: js.UndefOr["default" | "small"] = js.undefined
     
     var status: js.UndefOr[PresetStatusColorType] = js.undefined
     
@@ -104,7 +103,7 @@ object libBadgeMod extends Shortcut {
       
       inline def setShowZeroUndefined: Self = StObject.set(x, "showZero", js.undefined)
       
-      inline def setSize(value: typings.antd.antdStrings.default | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "default" | "small"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

@@ -3,51 +3,6 @@ package typings.antd
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.Children
 import typings.antd.anon.Option
-import typings.antd.antdStrings.`additions removals`
-import typings.antd.antdStrings.`additions text`
-import typings.antd.antdStrings.`inline`
-import typings.antd.antdStrings.`removals additions`
-import typings.antd.antdStrings.`removals text`
-import typings.antd.antdStrings.`text additions`
-import typings.antd.antdStrings.`text removals`
-import typings.antd.antdStrings.additions
-import typings.antd.antdStrings.all
-import typings.antd.antdStrings.ascending
-import typings.antd.antdStrings.assertive
-import typings.antd.antdStrings.both
-import typings.antd.antdStrings.click
-import typings.antd.antdStrings.copy
-import typings.antd.antdStrings.date
-import typings.antd.antdStrings.descending
-import typings.antd.antdStrings.dialog
-import typings.antd.antdStrings.execute
-import typings.antd.antdStrings.focus
-import typings.antd.antdStrings.grammar
-import typings.antd.antdStrings.grid
-import typings.antd.antdStrings.horizontal
-import typings.antd.antdStrings.link
-import typings.antd.antdStrings.list
-import typings.antd.antdStrings.listbox
-import typings.antd.antdStrings.location
-import typings.antd.antdStrings.ltr
-import typings.antd.antdStrings.menu
-import typings.antd.antdStrings.mixed
-import typings.antd.antdStrings.move
-import typings.antd.antdStrings.none
-import typings.antd.antdStrings.off
-import typings.antd.antdStrings.other
-import typings.antd.antdStrings.page
-import typings.antd.antdStrings.polite
-import typings.antd.antdStrings.popup
-import typings.antd.antdStrings.removals
-import typings.antd.antdStrings.responsive
-import typings.antd.antdStrings.rtl
-import typings.antd.antdStrings.spelling
-import typings.antd.antdStrings.step
-import typings.antd.antdStrings.text_
-import typings.antd.antdStrings.time
-import typings.antd.antdStrings.tree
-import typings.antd.antdStrings.vertical
 import typings.antd.libConfigProviderSizeContextMod.SizeType
 import typings.antd.libUtilStatusUtilsMod.InputStatus
 import typings.rcSelect.libBaseSelectMod.CustomTagProps
@@ -104,11 +59,11 @@ object libAutoCompleteMod extends Shortcut {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -118,7 +73,7 @@ object libAutoCompleteMod extends Shortcut {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -126,7 +81,7 @@ object libAutoCompleteMod extends Shortcut {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -136,11 +91,11 @@ object libAutoCompleteMod extends Shortcut {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -150,7 +105,7 @@ object libAutoCompleteMod extends Shortcut {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -158,7 +113,7 @@ object libAutoCompleteMod extends Shortcut {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -166,12 +121,12 @@ object libAutoCompleteMod extends Shortcut {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text_ | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -188,7 +143,7 @@ object libAutoCompleteMod extends Shortcut {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -222,7 +177,7 @@ object libAutoCompleteMod extends Shortcut {
     
     var defaultValue: js.UndefOr[ValueType | Null] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -262,7 +217,7 @@ object libAutoCompleteMod extends Shortcut {
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
-    var maxTagCount: js.UndefOr[Double | responsive] = js.undefined
+    var maxTagCount: js.UndefOr[Double | "responsive"] = js.undefined
     
     var maxTagPlaceholder: js.UndefOr[
         ReactNode | (js.Function1[/* omittedValues */ js.Array[DisplayValueType], ReactNode])
@@ -326,7 +281,7 @@ object libAutoCompleteMod extends Shortcut {
     
     var searchValue: js.UndefOr[String] = js.undefined
     
-    var showAction: js.UndefOr[js.Array[focus | click]] = js.undefined
+    var showAction: js.UndefOr[js.Array["focus" | "click"]] = js.undefined
     
     var showArrow: js.UndefOr[Boolean] = js.undefined
     
@@ -377,7 +332,7 @@ object libAutoCompleteMod extends Shortcut {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -385,7 +340,7 @@ object libAutoCompleteMod extends Shortcut {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -405,7 +360,7 @@ object libAutoCompleteMod extends Shortcut {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -421,7 +376,7 @@ object libAutoCompleteMod extends Shortcut {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -441,7 +396,7 @@ object libAutoCompleteMod extends Shortcut {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -449,7 +404,7 @@ object libAutoCompleteMod extends Shortcut {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -469,7 +424,7 @@ object libAutoCompleteMod extends Shortcut {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -485,7 +440,7 @@ object libAutoCompleteMod extends Shortcut {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -501,7 +456,7 @@ object libAutoCompleteMod extends Shortcut {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -510,7 +465,7 @@ object libAutoCompleteMod extends Shortcut {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text_ | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -543,7 +498,7 @@ object libAutoCompleteMod extends Shortcut {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -617,7 +572,7 @@ object libAutoCompleteMod extends Shortcut {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -691,7 +646,7 @@ object libAutoCompleteMod extends Shortcut {
       
       inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      inline def setMaxTagCount(value: Double | responsive): Self = StObject.set(x, "maxTagCount", value.asInstanceOf[js.Any])
+      inline def setMaxTagCount(value: Double | "responsive"): Self = StObject.set(x, "maxTagCount", value.asInstanceOf[js.Any])
       
       inline def setMaxTagCountUndefined: Self = StObject.set(x, "maxTagCount", js.undefined)
       
@@ -819,11 +774,11 @@ object libAutoCompleteMod extends Shortcut {
       
       inline def setSearchValueUndefined: Self = StObject.set(x, "searchValue", js.undefined)
       
-      inline def setShowAction(value: js.Array[focus | click]): Self = StObject.set(x, "showAction", value.asInstanceOf[js.Any])
+      inline def setShowAction(value: js.Array["focus" | "click"]): Self = StObject.set(x, "showAction", value.asInstanceOf[js.Any])
       
       inline def setShowActionUndefined: Self = StObject.set(x, "showAction", js.undefined)
       
-      inline def setShowActionVarargs(value: (focus | click)*): Self = StObject.set(x, "showAction", js.Array(value*))
+      inline def setShowActionVarargs(value: ("focus" | "click")*): Self = StObject.set(x, "showAction", js.Array(value*))
       
       inline def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
       

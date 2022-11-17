@@ -1,21 +1,19 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.RippleAndroid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait RippleBackgroundPropType
   extends StObject
-     with BaseBackgroundPropType
-     with BackgroundPropType {
+     with BaseBackgroundPropType {
   
   var borderless: Boolean
   
   var color: js.UndefOr[Double | Null] = js.undefined
   
   @JSName("type")
-  var type_RippleBackgroundPropType: RippleAndroid
+  var type_RippleBackgroundPropType: "RippleAndroid"
 }
 object RippleBackgroundPropType {
   
@@ -35,6 +33,6 @@ object RippleBackgroundPropType {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setType(value: RippleAndroid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "RippleAndroid"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -14,12 +14,10 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
 import typings.reactNative.anon.Layout
+import typings.reactNative.anon.Message
 import typings.reactNative.anon.ReadonlyactionNamestring
+import typings.reactNative.anon.Title
 import typings.reactNative.mod.^
-import typings.reactNative.reactNativeBooleans.`false`
-import typings.reactNative.reactNativeStrings.`visible-password`
-import typings.reactNative.reactNativeStrings.announcementFinished
-import typings.reactNative.reactNativeStrings.hardwareBackPress
 import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
@@ -156,7 +154,9 @@ inline def useWindowDimensions(): ScaledSize = ^.asInstanceOf[js.Dynamic].applyD
 
 type AccessibilityActionEvent = NativeSyntheticEvent[ReadonlyactionNamestring]
 
-type AccessibilityAnnouncementEventName = announcementFinished
+type AccessibilityActionName = "activate" | "increment" | "decrement" | "longpress" | "magicTap" | "escape"
+
+type AccessibilityAnnouncementEventName = "announcementFinished"
 
 type AccessibilityAnnouncementFinishedEventHandler = js.Function1[/* event */ AccessibilityAnnouncementFinishedEvent, Unit]
 
@@ -165,11 +165,15 @@ type AccessibilityChangeEvent = Boolean
 
 type AccessibilityChangeEventHandler = js.Function1[/* event */ AccessibilityChangeEvent, Unit]
 
+type AccessibilityChangeEventName = "change" | "boldTextChanged" | "grayscaleChanged" | "invertColorsChanged" | "reduceMotionChanged" | "screenReaderChanged" | "reduceTransparencyChanged"
+
 type AccessibilityProperties = AccessibilityProps
 
 type AccessibilityPropertiesAndroid = AccessibilityPropsAndroid
 
 type AccessibilityPropertiesIOS = AccessibilityPropsIOS
+
+type AccessibilityRole = "none" | "button" | "togglebutton" | "link" | "search" | "image" | "keyboardkey" | "text" | "adjustable" | "imagebutton" | "header" | "summary" | "alert" | "checkbox" | "combobox" | "menu" | "menubar" | "menuitem" | "progressbar" | "radio" | "radiogroup" | "scrollbar" | "spinbutton" | "switch" | "tab" | "tabbar" | "tablist" | "timer" | "list" | "toolbar"
 
 type ActivityIndicatorComponent = Component[ActivityIndicatorProps, js.Object, Any]
 
@@ -177,23 +181,33 @@ type ActivityIndicatorIOSProperties = ActivityIndicatorIOSProps
 
 type ActivityIndicatorProperties = ActivityIndicatorProps
 
-type BackPressEventName = hardwareBackPress
+type AlertType = "default" | "plain-text" | "secure-text" | "login-password"
+
+type AppStateEvent = "change" | "memoryWarning" | "blur" | "focus"
+
+type AppStateStatus = "active" | "background" | "inactive" | "unknown" | "extension"
+
+type BackPressEventName = "hardwareBackPress"
+
+type BackgroundPropType = RippleBackgroundPropType | ThemeAttributeBackgroundPropType
 
 type ButtonProperties = ButtonProps
 
-/* Rewritten from type alias, can be one of: 
-  - typings.reactNative.reactNativeStrings.light
-  - typings.reactNative.reactNativeStrings.dark
-  - scala.Null
-  - scala.Unit
-*/
-type ColorSchemeName = js.UndefOr[_ColorSchemeName | Null]
+type CameraRollAssetType = "All" | "Videos" | "Photos"
+
+type CameraRollGroupType = "Album" | "All" | "Event" | "Faces" | "Library" | "PhotoStream" | "SavedPhotos"
+
+type ColorSchemeName = js.UndefOr["light" | "dark" | Null]
 
 type ColorValue = String | OpaqueColorValue
 
 type ComponentProvider = js.Function0[ComponentType[Any]]
 
 type Constructor[T] = Instantiable1[/* args (repeated) */ Any, T]
+
+type DataDetectorTypes = "phoneNumber" | "link" | "address" | "calendarEvent" | "none" | "all"
+
+type DatePickerAndroidOpenReturn = DatePickerAndroidDateSetAction | DatePickerAndroidDismissedAction
 
 type DatePickerIOSComponent = Component[DatePickerIOSProps, js.Object, Any]
 
@@ -214,9 +228,13 @@ type EasingFunction = js.Function1[/* value */ Double, Double]
 
 type ErrorHandlerCallback = js.Function2[/* error */ Any, /* isFatal */ js.UndefOr[Boolean], Unit]
 
-type Falsy = js.UndefOr[Null | `false`]
+type Falsy = js.UndefOr[Null | false]
 
 type FlatListProperties[ItemT] = FlatListProps[ItemT]
+
+type FlexAlignType = "flex-start" | "flex-end" | "center" | "stretch" | "baseline"
+
+type FontVariant = "small-caps" | "oldstyle-nums" | "lining-nums" | "tabular-nums" | "proportional-nums"
 
 type GestureResponderEvent = NativeSyntheticEvent[NativeTouchEvent]
 
@@ -240,6 +258,8 @@ type ImagePropertiesSourceOptions = ImageSourcePropType
 
 type ImageRequireSource = Double
 
+type ImageResizeMode = "cover" | "contain" | "stretch" | "repeat" | "center"
+
 type ImageSourcePropType = ImageURISource | js.Array[ImageURISource] | ImageRequireSource
 
 type InputAccessoryViewProperties = InputAccessoryViewProps
@@ -250,16 +270,23 @@ type InputAccessoryViewProperties = InputAccessoryViewProps
   */
 type KeyboardAvoidingViewComponent = Component[KeyboardAvoidingViewProps, js.Object, Any]
 
+type KeyboardEventEasing = "easeIn" | "easeInEaseOut" | "easeOut" | "linear" | "keyboard"
+
 type KeyboardEventListener = js.Function1[/* event */ KeyboardEvent, Unit]
 
-type KeyboardTypeAndroid = `visible-password`
+type KeyboardEventName = "keyboardWillShow" | "keyboardDidShow" | "keyboardWillHide" | "keyboardDidHide" | "keyboardWillChangeFrame" | "keyboardDidChangeFrame"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.reactNative.mod.KeyboardType
-  - typings.reactNative.mod.KeyboardTypeAndroid
-  - typings.reactNative.mod.KeyboardTypeIOS
-*/
-type KeyboardTypeOptions = _KeyboardTypeOptions | KeyboardTypeAndroid
+type KeyboardType = "default" | "email-address" | "numeric" | "phone-pad" | "number-pad" | "decimal-pad"
+
+type KeyboardTypeAndroid = "visible-password"
+
+type KeyboardTypeIOS = "ascii-capable" | "numbers-and-punctuation" | "url" | "name-phone-pad" | "twitter" | "web-search"
+
+type KeyboardTypeOptions = KeyboardType | KeyboardTypeAndroid | KeyboardTypeIOS
+
+type LayoutAnimationProperty = "opacity" | "scaleX" | "scaleY" | "scaleXY"
+
+type LayoutAnimationType = "spring" | "linear" | "easeInEaseOut" | "easeIn" | "easeOut" | "keyboard"
 
 type LayoutChangeEvent = NativeSyntheticEvent[Layout]
 
@@ -311,6 +338,12 @@ type NodeHandle = Double
 
 type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
 
+type Permission = "android.permission.READ_CALENDAR" | "android.permission.WRITE_CALENDAR" | "android.permission.CAMERA" | "android.permission.READ_CONTACTS" | "android.permission.WRITE_CONTACTS" | "android.permission.GET_ACCOUNTS" | "android.permission.ACCESS_BACKGROUND_LOCATION" | "android.permission.ACCESS_FINE_LOCATION" | "android.permission.ACCESS_COARSE_LOCATION" | "android.permission.RECORD_AUDIO" | "android.permission.READ_PHONE_STATE" | "android.permission.CALL_PHONE" | "android.permission.READ_CALL_LOG" | "android.permission.WRITE_CALL_LOG" | "com.android.voicemail.permission.ADD_VOICEMAIL" | "com.android.voicemail.permission.READ_VOICEMAIL" | "com.android.voicemail.permission.WRITE_VOICEMAIL" | "android.permission.USE_SIP" | "android.permission.PROCESS_OUTGOING_CALLS" | "android.permission.BODY_SENSORS" | "android.permission.BODY_SENSORS_BACKGROUND" | "android.permission.SEND_SMS" | "android.permission.RECEIVE_SMS" | "android.permission.READ_SMS" | "android.permission.RECEIVE_WAP_PUSH" | "android.permission.RECEIVE_MMS" | "android.permission.READ_EXTERNAL_STORAGE" | "android.permission.READ_MEDIA_IMAGES" | "android.permission.READ_MEDIA_VIDEO" | "android.permission.READ_MEDIA_AUDIO" | "android.permission.WRITE_EXTERNAL_STORAGE" | "android.permission.BLUETOOTH_CONNECT" | "android.permission.BLUETOOTH_SCAN" | "android.permission.BLUETOOTH_ADVERTISE" | "android.permission.ACCESS_MEDIA_LOCATION" | "android.permission.ACCEPT_HANDOVER" | "android.permission.ACTIVITY_RECOGNITION" | "android.permission.ANSWER_PHONE_CALLS" | "android.permission.READ_PHONE_NUMBERS" | "android.permission.UWB_RANGING" | "android.permission.POST_NOTIFICATIONS" | "android.permission.NEARBY_WIFI_DEVICES"
+
+type PermissionStatus = "granted" | "denied" | "never_ask_again"
+
+type PlatformOSType = "ios" | "android" | "macos" | "windows" | "web" | "native"
+
 type PointerEvent = NativeSyntheticEvent[NativePointerEvent]
 
 type ProcessedColorValue = Double | OpaqueColorValue
@@ -326,6 +359,8 @@ type ProgressBarAndroidProperties = ProgressBarAndroidProps
 type ProgressViewIOSComponent = Component[ProgressViewIOSProps, js.Object, Any]
 
 type ProgressViewIOSProperties = ProgressViewIOSProps
+
+type PushNotificationEventName = "notification" | "localNotification" | "register" | "registrationError"
 
 /**
   * Receive events from native-code
@@ -372,6 +407,14 @@ type RefreshControlPropertiesAndroid = RefreshControlPropsAndroid
 
 type RefreshControlPropertiesIOS = RefreshControlPropsIOS
 
+type ReturnKeyType = "done" | "go" | "next" | "search" | "send"
+
+type ReturnKeyTypeAndroid = "none" | "previous"
+
+type ReturnKeyTypeIOS = "default" | "google" | "join" | "route" | "yahoo" | "emergency-call"
+
+type ReturnKeyTypeOptions = "done" | "go" | "next" | "search" | "send" | "none" | "previous" | "default" | "google" | "join" | "route" | "yahoo" | "emergency-call"
+
 type Runnable = js.Function1[/* appParameters */ Any, Unit]
 
 /**
@@ -398,6 +441,10 @@ type SectionListProperties[ItemT] = SectionListProps[ItemT, DefaultSectionT]
 
 type SectionListRenderItem[ItemT, SectionT] = js.Function1[/* info */ SectionListRenderItemInfo[ItemT, SectionT], ReactElement | Null]
 
+type ShareAction = ShareSharedAction | ShareDismissedAction
+
+type ShareContent = Message | Title
+
 /**
   * A component used to select a single value from a range of values.
   */
@@ -415,11 +462,15 @@ type SnapshotViewIOSComponent = Component[SnapshotViewIOSProps, js.Object, Any]
 
 type SnapshotViewIOSProperties = SnapshotViewIOSProps
 
+type StatusBarAnimation = "none" | "fade" | "slide"
+
 type StatusBarProperties = StatusBarProps
 
 type StatusBarPropertiesAndroid = StatusBarPropsAndroid
 
 type StatusBarPropertiesIOS = StatusBarPropsIOS
+
+type StatusBarStyle = "default" | "light-content" | "dark-content"
 
 /** 
 NOTE: Rewritten from type alias:
@@ -479,6 +530,8 @@ type TextProperties = TextProps
 type TextPropertiesAndroid = TextPropsAndroid
 
 type TextPropertiesIOS = TextPropsIOS
+
+type TimePickerAndroidOpenReturn = TimePickerAndroidTimeSetAction | TimePickerAndroidDismissedAction
 
 /**
   * A wrapper for making views respond properly to touches.

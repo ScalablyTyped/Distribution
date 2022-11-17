@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSConditionalType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `18` extends StObject {
   
-  var `type`: TSConditionalType
+  var `type`: "TSConditionalType"
 }
 object `18` {
   
@@ -19,6 +18,6 @@ object `18` {
   
   extension [Self <: `18`](x: Self) {
     
-    inline def setType(value: TSConditionalType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSConditionalType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

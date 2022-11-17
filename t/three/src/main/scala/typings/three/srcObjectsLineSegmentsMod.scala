@@ -3,7 +3,6 @@ package typings.three
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcObjectsLineMod.Line
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,13 +20,13 @@ object srcObjectsLineSegmentsMod {
     def this(geometry: TGeometry, material: TMaterial) = this()
     def this(geometry: Unit, material: TMaterial) = this()
     
-    val isLineSegments: `true` = js.native
+    val isLineSegments: true = js.native
     
     /**
       * @default 'LineSegments'
       */
     @JSName("type")
-    var type_LineSegments: typings.three.threeStrings.LineSegments | String = js.native
+    var type_LineSegments: "LineSegments" | String = js.native
   }
   
   @JSImport("three/src/objects/LineSegments", "LineStrip")

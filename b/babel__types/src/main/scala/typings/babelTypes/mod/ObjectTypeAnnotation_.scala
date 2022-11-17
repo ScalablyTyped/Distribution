@@ -1,16 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.ObjectTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ObjectTypeAnnotation_
+trait ObjectTypeAnnotation_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowType {
+     with BaseNode {
   
   var callProperties: js.Array[ObjectTypeCallProperty_]
   
@@ -25,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_]
   
   @JSName("type")
-  var type_ObjectTypeAnnotation_ : ObjectTypeAnnotation
+  var type_ObjectTypeAnnotation_ : "ObjectTypeAnnotation"
 }
 object ObjectTypeAnnotation_ {
   
@@ -65,6 +61,6 @@ object ObjectTypeAnnotation_ {
     
     inline def setPropertiesVarargs(value: (ObjectTypeProperty_ | ObjectTypeSpreadProperty_)*): Self = StObject.set(x, "properties", js.Array(value*))
     
-    inline def setType(value: ObjectTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ObjectTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

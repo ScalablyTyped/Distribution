@@ -2,9 +2,6 @@ package typings.babelParser
 
 import typings.babelParser.anon.ErrorsArray
 import typings.babelParser.anon.ParseResultFileComments
-import typings.babelParser.babelParserStrings.module
-import typings.babelParser.babelParserStrings.script
-import typings.babelParser.babelParserStrings.unambiguous
 import typings.babelTypes.mod.Expression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -122,7 +119,7 @@ object typingsBabelParserDotsourceMod {
       * of ES6 import or export statements.
       * Files with ES6 imports and exports are considered "module" and are otherwise "script".
       */
-    var sourceType: js.UndefOr[script | module | unambiguous] = js.undefined
+    var sourceType: js.UndefOr["script" | "module" | "unambiguous"] = js.undefined
     
     /**
       * By default, the parsed code is treated as if it starts from line 1, column 0.
@@ -204,7 +201,7 @@ object typingsBabelParserDotsourceMod {
       
       inline def setSourceFilenameUndefined: Self = StObject.set(x, "sourceFilename", js.undefined)
       
-      inline def setSourceType(value: script | module | unambiguous): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: "script" | "module" | "unambiguous"): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
       inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
       

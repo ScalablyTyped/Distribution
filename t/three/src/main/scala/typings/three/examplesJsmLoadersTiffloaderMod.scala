@@ -3,7 +3,6 @@ package typings.three
 import typings.three.mod.DataTextureLoader
 import typings.three.mod.LoadingManager
 import typings.three.srcConstantsMod.TextureFilter
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object examplesJsmLoadersTiffloaderMod {
     
     var data: js.typedarray.Uint8Array
     
-    var flipY: `true`
+    var flipY: true
     
     var height: Double
     
@@ -49,7 +48,7 @@ object examplesJsmLoadersTiffloaderMod {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setFlipY(value: `true`): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
+      inline def setFlipY(value: true): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

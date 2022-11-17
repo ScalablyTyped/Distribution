@@ -401,7 +401,7 @@ trait Uint8ClampedArray
   
   /* standard es2015.symbol.wellknown */
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: typings.std.stdStrings.Uint8ClampedArray = js.native
+  val toStringTag: "Uint8ClampedArray" = js.native
   
   /**
     * Returns an list of values in the array

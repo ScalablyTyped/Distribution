@@ -1,21 +1,14 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSParameterProperty
-import typings.babelTypes.babelTypesStrings.`protected`
-import typings.babelTypes.babelTypesStrings.private_
-import typings.babelTypes.babelTypesStrings.public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSParameterProperty_
+trait TSParameterProperty_
   extends StObject
-     with BaseNode
-     with LVal
-     with TypeScript {
+     with BaseNode {
   
-  var accessibility: public | private_ | `protected` | Null
+  var accessibility: "public" | "private" | "protected" | Null
   
   var decorators: js.Array[Decorator_] | Null
   
@@ -26,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var readonly: Boolean | Null
   
   @JSName("type")
-  var type_TSParameterProperty_ : TSParameterProperty
+  var type_TSParameterProperty_ : "TSParameterProperty"
 }
 object TSParameterProperty_ {
   
@@ -39,7 +32,7 @@ object TSParameterProperty_ {
   
   extension [Self <: TSParameterProperty_](x: Self) {
     
-    inline def setAccessibility(value: public | private_ | `protected`): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: "public" | "private" | "protected"): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityNull: Self = StObject.set(x, "accessibility", null)
     
@@ -59,6 +52,6 @@ object TSParameterProperty_ {
     
     inline def setReadonlyNull: Self = StObject.set(x, "readonly", null)
     
-    inline def setType(value: TSParameterProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSParameterProperty"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

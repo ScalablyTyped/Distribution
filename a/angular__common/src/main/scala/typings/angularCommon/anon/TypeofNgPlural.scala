@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngPlural]`
 import typings.angularCommon.mod.NgLocalization
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
@@ -17,13 +15,14 @@ trait TypeofNgPlural
   
   var ɵdir: ɵɵDirectiveDeclaration[
     typings.angularCommon.mod.NgPlural, 
-    `[ngPlural]`, 
+    "[ngPlural]", 
     scala.Nothing, 
     NgPlural, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[typings.angularCommon.mod.NgPlural, scala.Nothing] = js.native

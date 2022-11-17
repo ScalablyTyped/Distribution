@@ -1,16 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.JSXOpeningElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait JSXOpeningElement__
   extends StObject
-     with BaseNode
-     with Immutable
-     with JSX
-     with Node {
+     with BaseNode {
   
   var attributes: js.Array[JSXAttribute__ | JSXSpreadAttribute__]
   
@@ -21,7 +17,7 @@ trait JSXOpeningElement__
   var typeParameters: js.UndefOr[TypeParameterInstantiation_ | TSTypeParameterInstantiation__ | Null] = js.undefined
   
   @JSName("type")
-  var type_JSXOpeningElement__ : JSXOpeningElement
+  var type_JSXOpeningElement__ : "JSXOpeningElement"
 }
 object JSXOpeningElement__ {
   
@@ -45,7 +41,7 @@ object JSXOpeningElement__ {
     
     inline def setSelfClosing(value: Boolean): Self = StObject.set(x, "selfClosing", value.asInstanceOf[js.Any])
     
-    inline def setType(value: JSXOpeningElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "JSXOpeningElement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TypeParameterInstantiation_ | TSTypeParameterInstantiation__): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

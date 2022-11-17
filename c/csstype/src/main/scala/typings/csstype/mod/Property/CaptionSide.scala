@@ -4,44 +4,29 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.csstypeStrings.`block-end`
-  - typings.csstype.csstypeStrings.`block-start`
-  - typings.csstype.csstypeStrings.bottom
-  - typings.csstype.csstypeStrings.`inline-end`
-  - typings.csstype.csstypeStrings.`inline-start`
-  - typings.csstype.csstypeStrings.top
-  - typings.csstype.csstypeStrings.`-moz-initial`
-  - typings.csstype.csstypeStrings.inherit
-  - typings.csstype.csstypeStrings.initial
-  - typings.csstype.csstypeStrings.revert
-  - typings.csstype.csstypeStrings.`revert-layer`
-  - typings.csstype.csstypeStrings.unset
-*/
-trait CaptionSide extends StObject
 object CaptionSide {
   
-  inline def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def `block-end`: typings.csstype.csstypeStrings.`block-end` = "block-end".asInstanceOf[typings.csstype.csstypeStrings.`block-end`]
+  inline def `block-end`: "block-end" = "block-end".asInstanceOf["block-end"]
   
-  inline def `block-start`: typings.csstype.csstypeStrings.`block-start` = "block-start".asInstanceOf[typings.csstype.csstypeStrings.`block-start`]
+  inline def `block-start`: "block-start" = "block-start".asInstanceOf["block-start"]
   
-  inline def bottom: typings.csstype.csstypeStrings.bottom = "bottom".asInstanceOf[typings.csstype.csstypeStrings.bottom]
+  inline def bottom: "bottom" = "bottom".asInstanceOf["bottom"]
   
-  inline def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def `inline-end`: typings.csstype.csstypeStrings.`inline-end` = "inline-end".asInstanceOf[typings.csstype.csstypeStrings.`inline-end`]
+  inline def `inline-end`: "inline-end" = "inline-end".asInstanceOf["inline-end"]
   
-  inline def `inline-start`: typings.csstype.csstypeStrings.`inline-start` = "inline-start".asInstanceOf[typings.csstype.csstypeStrings.`inline-start`]
+  inline def `inline-start`: "inline-start" = "inline-start".asInstanceOf["inline-start"]
   
-  inline def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def `revert-layer`: typings.csstype.csstypeStrings.`revert-layer` = "revert-layer".asInstanceOf[typings.csstype.csstypeStrings.`revert-layer`]
+  inline def `revert-layer`: "revert-layer" = "revert-layer".asInstanceOf["revert-layer"]
   
-  inline def top: typings.csstype.csstypeStrings.top = "top".asInstanceOf[typings.csstype.csstypeStrings.top]
+  inline def top: "top" = "top".asInstanceOf["top"]
   
-  inline def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
 }

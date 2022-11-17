@@ -1,8 +1,5 @@
 package typings.antd.anon
 
-import typings.antd.antdStrings._empty
-import typings.antd.antdStrings.error
-import typings.antd.antdStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +10,7 @@ trait PopupClassName extends StObject {
   
   var popupClassName: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[_empty | warning | error] = js.undefined
+  var status: js.UndefOr["" | "warning" | "error"] = js.undefined
 }
 object PopupClassName {
   
@@ -32,7 +29,7 @@ object PopupClassName {
     
     inline def setPopupClassNameUndefined: Self = StObject.set(x, "popupClassName", js.undefined)
     
-    inline def setStatus(value: _empty | warning | error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: "" | "warning" | "error"): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }

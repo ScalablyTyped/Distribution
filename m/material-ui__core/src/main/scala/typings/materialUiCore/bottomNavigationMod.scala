@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.bottomNavigationBottomNavigationMod.BottomNavigationTypeMap
-import typings.materialUiCore.materialUiCoreStrings.div
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,10 +21,10 @@ object bottomNavigationMod extends Shortcut {
     */
   @JSImport("@material-ui/core/BottomNavigation", JSImport.Default)
   @js.native
-  val default: OverridableComponent[BottomNavigationTypeMap[js.Object, div]] = js.native
+  val default: OverridableComponent[BottomNavigationTypeMap[js.Object, "div"]] = js.native
   
-  type _To = OverridableComponent[BottomNavigationTypeMap[js.Object, div]]
+  type _To = OverridableComponent[BottomNavigationTypeMap[js.Object, "div"]]
   
   /* This means you don't have to write `default`, but can instead just say `bottomNavigationMod.foo` */
-  override def _to: OverridableComponent[BottomNavigationTypeMap[js.Object, div]] = default
+  override def _to: OverridableComponent[BottomNavigationTypeMap[js.Object, "div"]] = default
 }

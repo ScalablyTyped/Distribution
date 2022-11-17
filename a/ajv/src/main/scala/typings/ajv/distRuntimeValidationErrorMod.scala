@@ -1,6 +1,5 @@
 package typings.ajv
 
-import typings.ajv.ajvBooleans.`true`
 import typings.ajv.anon.PartialErrorObjectstringR
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
@@ -17,7 +16,7 @@ object distRuntimeValidationErrorMod {
     def this(errors: js.Array[PartialErrorObjectstringR]) = this()
     
     /* CompleteClass */
-    override val ajv: `true` = js.native
+    override val ajv: true = js.native
     
     /* CompleteClass */
     override val errors: js.Array[PartialErrorObjectstringR] = js.native
@@ -31,18 +30,18 @@ object distRuntimeValidationErrorMod {
     var name: String = js.native
     
     /* CompleteClass */
-    override val validation: `true` = js.native
+    override val validation: true = js.native
   }
   
   trait ValidationError
     extends StObject
        with Error {
     
-    val ajv: `true`
+    val ajv: true
     
     val errors: js.Array[PartialErrorObjectstringR]
     
-    val validation: `true`
+    val validation: true
   }
   object ValidationError {
     
@@ -53,13 +52,13 @@ object distRuntimeValidationErrorMod {
     
     extension [Self <: ValidationError](x: Self) {
       
-      inline def setAjv(value: `true`): Self = StObject.set(x, "ajv", value.asInstanceOf[js.Any])
+      inline def setAjv(value: true): Self = StObject.set(x, "ajv", value.asInstanceOf[js.Any])
       
       inline def setErrors(value: js.Array[PartialErrorObjectstringR]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
       inline def setErrorsVarargs(value: PartialErrorObjectstringR*): Self = StObject.set(x, "errors", js.Array(value*))
       
-      inline def setValidation(value: `true`): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+      inline def setValidation(value: true): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     }
   }
 }

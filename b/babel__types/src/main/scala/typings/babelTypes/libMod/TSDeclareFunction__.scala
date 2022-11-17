@@ -1,17 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSDeclareFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSDeclareFunction__
   extends StObject
-     with BaseNode
-     with Declaration
-     with Node
-     with Statement
-     with TypeScript {
+     with BaseNode {
   
   var async: js.UndefOr[Boolean] = js.undefined
   
@@ -28,7 +23,7 @@ trait TSDeclareFunction__
   var typeParameters: js.UndefOr[TSTypeParameterDeclaration__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
-  var type_TSDeclareFunction__ : TSDeclareFunction
+  var type_TSDeclareFunction__ : "TSDeclareFunction"
 }
 object TSDeclareFunction__ {
   
@@ -70,7 +65,7 @@ object TSDeclareFunction__ {
     
     inline def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
     
-    inline def setType(value: TSDeclareFunction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSDeclareFunction"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TSTypeParameterDeclaration__ | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

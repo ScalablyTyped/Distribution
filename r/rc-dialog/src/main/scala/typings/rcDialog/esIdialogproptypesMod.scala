@@ -1,7 +1,6 @@
 package typings.rcDialog
 
 import typings.rcDialog.anon.X
-import typings.rcDialog.rcDialogBooleans.`false`
 import typings.rcUtil.libPortalWrapperMod.GetContainer
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
@@ -42,7 +41,7 @@ object esIdialogproptypesMod {
     
     var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var getContainer: js.UndefOr[GetContainer | `false`] = js.undefined
+    var getContainer: js.UndefOr[GetContainer | false] = js.undefined
     
     var height: js.UndefOr[String | Double] = js.undefined
     
@@ -145,7 +144,7 @@ object esIdialogproptypesMod {
       
       inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
-      inline def setGetContainer(value: GetContainer | `false`): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
+      inline def setGetContainer(value: GetContainer | false): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
       
       inline def setGetContainerFunction0(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       

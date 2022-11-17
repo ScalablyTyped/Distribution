@@ -159,8 +159,16 @@ inline def isIPv4(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDyna
   */
 inline def isIPv6(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPv6")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
+type IPVersion = "ipv4" | "ipv6"
+
 type LookupFunction = js.Function3[
 /* hostname */ String, 
 /* options */ LookupOneOptions, 
 /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit], 
 Unit]
+
+type NetConnectOpts = TcpNetConnectOpts | IpcNetConnectOpts
+
+type SocketConnectOpts = TcpSocketConnectOpts | IpcSocketConnectOpts
+
+type SocketReadyState = "opening" | "open" | "readOnly" | "writeOnly" | "closed"

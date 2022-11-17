@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Text_
   extends StObject
-     with FontawesomeObject
-     with IconOrText {
+     with FontawesomeObject {
   
-  val `type`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.text
+  val `type`: "text"
 }
 object Text_ {
   
@@ -23,6 +22,6 @@ object Text_ {
   
   extension [Self <: Text_](x: Self) {
     
-    inline def setType(value: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "text"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

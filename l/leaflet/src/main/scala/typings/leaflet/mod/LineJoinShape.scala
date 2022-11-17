@@ -4,20 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.leaflet.leafletStrings.miter
-  - typings.leaflet.leafletStrings.round
-  - typings.leaflet.leafletStrings.bevel
-  - typings.leaflet.leafletStrings.inherit
-*/
-trait LineJoinShape extends StObject
 object LineJoinShape {
   
-  inline def bevel: typings.leaflet.leafletStrings.bevel = "bevel".asInstanceOf[typings.leaflet.leafletStrings.bevel]
+  inline def bevel: "bevel" = "bevel".asInstanceOf["bevel"]
   
-  inline def inherit: typings.leaflet.leafletStrings.inherit = "inherit".asInstanceOf[typings.leaflet.leafletStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def miter: typings.leaflet.leafletStrings.miter = "miter".asInstanceOf[typings.leaflet.leafletStrings.miter]
+  inline def miter: "miter" = "miter".asInstanceOf["miter"]
   
-  inline def round: typings.leaflet.leafletStrings.round = "round".asInstanceOf[typings.leaflet.leafletStrings.round]
+  inline def round: "round" = "round".asInstanceOf["round"]
 }

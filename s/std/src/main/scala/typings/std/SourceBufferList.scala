@@ -1,8 +1,6 @@
 package typings.std
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.std.stdStrings.addsourcebuffer
-import typings.std.stdStrings.removesourcebuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,32 +13,41 @@ trait SourceBufferList
      with /* standard dom */
 /* index */ NumberDictionary[SourceBuffer] {
   
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_removesourcebuffer")
+  def addEventListener(
+    `type`: "removesourcebuffer",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+  ): Unit = js.native
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_addsourcebuffer(`type`: addsourcebuffer, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_addsourcebuffer")
+  def addEventListener(`type`: "addsourcebuffer", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_addsourcebuffer(
-    `type`: addsourcebuffer,
+  @scala.annotation.targetName("addEventListener_addsourcebuffer")
+  def addEventListener(
+    `type`: "addsourcebuffer",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_addsourcebuffer(
-    `type`: addsourcebuffer,
+  @scala.annotation.targetName("addEventListener_removesourcebuffer")
+  def addEventListener(
+    `type`: "removesourcebuffer",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_addsourcebuffer")
+  def addEventListener(
+    `type`: "addsourcebuffer",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_removesourcebuffer(`type`: removesourcebuffer, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_removesourcebuffer(
-    `type`: removesourcebuffer,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_removesourcebuffer(
-    `type`: removesourcebuffer,
+  @scala.annotation.targetName("addEventListener_removesourcebuffer")
+  def addEventListener(
+    `type`: "removesourcebuffer",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -58,32 +65,41 @@ trait SourceBufferList
   /* standard dom */
   var onremovesourcebuffer: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_removesourcebuffer")
+  def removeEventListener(
+    `type`: "removesourcebuffer",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+  ): Unit = js.native
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_addsourcebuffer(`type`: addsourcebuffer, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_addsourcebuffer")
+  def removeEventListener(`type`: "addsourcebuffer", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_addsourcebuffer(
-    `type`: addsourcebuffer,
+  @scala.annotation.targetName("removeEventListener_addsourcebuffer")
+  def removeEventListener(
+    `type`: "addsourcebuffer",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_addsourcebuffer(
-    `type`: addsourcebuffer,
+  @scala.annotation.targetName("removeEventListener_removesourcebuffer")
+  def removeEventListener(
+    `type`: "removesourcebuffer",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_removesourcebuffer")
+  def removeEventListener(
+    `type`: "removesourcebuffer",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_removesourcebuffer(`type`: removesourcebuffer, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_removesourcebuffer(
-    `type`: removesourcebuffer,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_removesourcebuffer(
-    `type`: removesourcebuffer,
+  @scala.annotation.targetName("removeEventListener_addsourcebuffer")
+  def removeEventListener(
+    `type`: "addsourcebuffer",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

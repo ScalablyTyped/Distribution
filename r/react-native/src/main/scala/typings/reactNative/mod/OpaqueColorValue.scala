@@ -1,6 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.Color
 import typings.std.Symbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,5 +10,5 @@ trait OpaqueColorValue
   extends StObject
      with Symbol {
   
-  var __TYPE__ : Color = js.native
+  var __TYPE__ : "Color" = js.native
 }

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FlowAssignment
   extends StObject
-     with FlowNodeBase
-     with FlowNode {
+     with FlowNodeBase {
   
   var antecedent: FlowNode
   

@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSExportAssignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `145` extends StObject {
   
-  var `type`: TSExportAssignment
+  var `type`: "TSExportAssignment"
 }
 object `145` {
   
@@ -19,6 +18,6 @@ object `145` {
   
   extension [Self <: `145`](x: Self) {
     
-    inline def setType(value: TSExportAssignment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSExportAssignment"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

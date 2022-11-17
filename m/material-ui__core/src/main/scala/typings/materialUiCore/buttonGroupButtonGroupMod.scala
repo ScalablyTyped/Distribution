@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.DisableFocusRipple
-import typings.materialUiCore.materialUiCoreStrings.div
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -24,85 +23,59 @@ object buttonGroupButtonGroupMod extends Shortcut {
     */
   @JSImport("@material-ui/core/ButtonGroup/ButtonGroup", JSImport.Default)
   @js.native
-  val default: OverridableComponent[ButtonGroupTypeMap[js.Object, div]] = js.native
+  val default: OverridableComponent[ButtonGroupTypeMap[js.Object, "div"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.contained
-    - typings.materialUiCore.materialUiCoreStrings.disabled
-    - typings.materialUiCore.materialUiCoreStrings.disableElevation
-    - typings.materialUiCore.materialUiCoreStrings.fullWidth
-    - typings.materialUiCore.materialUiCoreStrings.vertical
-    - typings.materialUiCore.materialUiCoreStrings.grouped
-    - typings.materialUiCore.materialUiCoreStrings.groupedHorizontal
-    - typings.materialUiCore.materialUiCoreStrings.groupedVertical
-    - typings.materialUiCore.materialUiCoreStrings.groupedText
-    - typings.materialUiCore.materialUiCoreStrings.groupedTextHorizontal
-    - typings.materialUiCore.materialUiCoreStrings.groupedTextVertical
-    - typings.materialUiCore.materialUiCoreStrings.groupedTextPrimary
-    - typings.materialUiCore.materialUiCoreStrings.groupedTextSecondary
-    - typings.materialUiCore.materialUiCoreStrings.groupedOutlined
-    - typings.materialUiCore.materialUiCoreStrings.groupedOutlinedHorizontal
-    - typings.materialUiCore.materialUiCoreStrings.groupedOutlinedVertical
-    - typings.materialUiCore.materialUiCoreStrings.groupedOutlinedPrimary
-    - typings.materialUiCore.materialUiCoreStrings.groupedOutlinedSecondary
-    - typings.materialUiCore.materialUiCoreStrings.groupedContained
-    - typings.materialUiCore.materialUiCoreStrings.groupedContainedHorizontal
-    - typings.materialUiCore.materialUiCoreStrings.groupedContainedVertical
-    - typings.materialUiCore.materialUiCoreStrings.groupedContainedPrimary
-    - typings.materialUiCore.materialUiCoreStrings.groupedContainedSecondary
-  */
-  trait ButtonGroupClassKey extends StObject
   object ButtonGroupClassKey {
     
-    inline def contained: typings.materialUiCore.materialUiCoreStrings.contained = "contained".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.contained]
+    inline def contained: "contained" = "contained".asInstanceOf["contained"]
     
-    inline def disableElevation: typings.materialUiCore.materialUiCoreStrings.disableElevation = "disableElevation".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disableElevation]
+    inline def disableElevation: "disableElevation" = "disableElevation".asInstanceOf["disableElevation"]
     
-    inline def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
+    inline def disabled: "disabled" = "disabled".asInstanceOf["disabled"]
     
-    inline def fullWidth: typings.materialUiCore.materialUiCoreStrings.fullWidth = "fullWidth".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.fullWidth]
+    inline def fullWidth: "fullWidth" = "fullWidth".asInstanceOf["fullWidth"]
     
-    inline def grouped: typings.materialUiCore.materialUiCoreStrings.grouped = "grouped".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.grouped]
+    inline def grouped: "grouped" = "grouped".asInstanceOf["grouped"]
     
-    inline def groupedContained: typings.materialUiCore.materialUiCoreStrings.groupedContained = "groupedContained".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedContained]
+    inline def groupedContained: "groupedContained" = "groupedContained".asInstanceOf["groupedContained"]
     
-    inline def groupedContainedHorizontal: typings.materialUiCore.materialUiCoreStrings.groupedContainedHorizontal = "groupedContainedHorizontal".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedContainedHorizontal]
+    inline def groupedContainedHorizontal: "groupedContainedHorizontal" = "groupedContainedHorizontal".asInstanceOf["groupedContainedHorizontal"]
     
-    inline def groupedContainedPrimary: typings.materialUiCore.materialUiCoreStrings.groupedContainedPrimary = "groupedContainedPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedContainedPrimary]
+    inline def groupedContainedPrimary: "groupedContainedPrimary" = "groupedContainedPrimary".asInstanceOf["groupedContainedPrimary"]
     
-    inline def groupedContainedSecondary: typings.materialUiCore.materialUiCoreStrings.groupedContainedSecondary = "groupedContainedSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedContainedSecondary]
+    inline def groupedContainedSecondary: "groupedContainedSecondary" = "groupedContainedSecondary".asInstanceOf["groupedContainedSecondary"]
     
-    inline def groupedContainedVertical: typings.materialUiCore.materialUiCoreStrings.groupedContainedVertical = "groupedContainedVertical".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedContainedVertical]
+    inline def groupedContainedVertical: "groupedContainedVertical" = "groupedContainedVertical".asInstanceOf["groupedContainedVertical"]
     
-    inline def groupedHorizontal: typings.materialUiCore.materialUiCoreStrings.groupedHorizontal = "groupedHorizontal".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedHorizontal]
+    inline def groupedHorizontal: "groupedHorizontal" = "groupedHorizontal".asInstanceOf["groupedHorizontal"]
     
-    inline def groupedOutlined: typings.materialUiCore.materialUiCoreStrings.groupedOutlined = "groupedOutlined".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedOutlined]
+    inline def groupedOutlined: "groupedOutlined" = "groupedOutlined".asInstanceOf["groupedOutlined"]
     
-    inline def groupedOutlinedHorizontal: typings.materialUiCore.materialUiCoreStrings.groupedOutlinedHorizontal = "groupedOutlinedHorizontal".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedOutlinedHorizontal]
+    inline def groupedOutlinedHorizontal: "groupedOutlinedHorizontal" = "groupedOutlinedHorizontal".asInstanceOf["groupedOutlinedHorizontal"]
     
-    inline def groupedOutlinedPrimary: typings.materialUiCore.materialUiCoreStrings.groupedOutlinedPrimary = "groupedOutlinedPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedOutlinedPrimary]
+    inline def groupedOutlinedPrimary: "groupedOutlinedPrimary" = "groupedOutlinedPrimary".asInstanceOf["groupedOutlinedPrimary"]
     
-    inline def groupedOutlinedSecondary: typings.materialUiCore.materialUiCoreStrings.groupedOutlinedSecondary = "groupedOutlinedSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedOutlinedSecondary]
+    inline def groupedOutlinedSecondary: "groupedOutlinedSecondary" = "groupedOutlinedSecondary".asInstanceOf["groupedOutlinedSecondary"]
     
-    inline def groupedOutlinedVertical: typings.materialUiCore.materialUiCoreStrings.groupedOutlinedVertical = "groupedOutlinedVertical".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedOutlinedVertical]
+    inline def groupedOutlinedVertical: "groupedOutlinedVertical" = "groupedOutlinedVertical".asInstanceOf["groupedOutlinedVertical"]
     
-    inline def groupedText: typings.materialUiCore.materialUiCoreStrings.groupedText = "groupedText".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedText]
+    inline def groupedText: "groupedText" = "groupedText".asInstanceOf["groupedText"]
     
-    inline def groupedTextHorizontal: typings.materialUiCore.materialUiCoreStrings.groupedTextHorizontal = "groupedTextHorizontal".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedTextHorizontal]
+    inline def groupedTextHorizontal: "groupedTextHorizontal" = "groupedTextHorizontal".asInstanceOf["groupedTextHorizontal"]
     
-    inline def groupedTextPrimary: typings.materialUiCore.materialUiCoreStrings.groupedTextPrimary = "groupedTextPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedTextPrimary]
+    inline def groupedTextPrimary: "groupedTextPrimary" = "groupedTextPrimary".asInstanceOf["groupedTextPrimary"]
     
-    inline def groupedTextSecondary: typings.materialUiCore.materialUiCoreStrings.groupedTextSecondary = "groupedTextSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedTextSecondary]
+    inline def groupedTextSecondary: "groupedTextSecondary" = "groupedTextSecondary".asInstanceOf["groupedTextSecondary"]
     
-    inline def groupedTextVertical: typings.materialUiCore.materialUiCoreStrings.groupedTextVertical = "groupedTextVertical".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedTextVertical]
+    inline def groupedTextVertical: "groupedTextVertical" = "groupedTextVertical".asInstanceOf["groupedTextVertical"]
     
-    inline def groupedVertical: typings.materialUiCore.materialUiCoreStrings.groupedVertical = "groupedVertical".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.groupedVertical]
+    inline def groupedVertical: "groupedVertical" = "groupedVertical".asInstanceOf["groupedVertical"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def vertical: typings.materialUiCore.materialUiCoreStrings.vertical = "vertical".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.vertical]
+    inline def vertical: "vertical" = "vertical".asInstanceOf["vertical"]
   }
+  type ButtonGroupClassKey = "root" | "contained" | "disabled" | "disableElevation" | "fullWidth" | "vertical" | "grouped" | "groupedHorizontal" | "groupedVertical" | "groupedText" | "groupedTextHorizontal" | "groupedTextVertical" | "groupedTextPrimary" | "groupedTextSecondary" | "groupedOutlined" | "groupedOutlinedHorizontal" | "groupedOutlinedVertical" | "groupedOutlinedPrimary" | "groupedOutlinedSecondary" | "groupedContained" | "groupedContainedHorizontal" | "groupedContainedVertical" | "groupedContainedPrimary" | "groupedContainedSecondary"
   
   type ButtonGroupProps[D /* <: ElementType[Any] */, P] = OverrideProps[ButtonGroupTypeMap[P, D], D]
   
@@ -131,8 +104,8 @@ object buttonGroupButtonGroupMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[ButtonGroupTypeMap[js.Object, div]]
+  type _To = OverridableComponent[ButtonGroupTypeMap[js.Object, "div"]]
   
   /* This means you don't have to write `default`, but can instead just say `buttonGroupButtonGroupMod.foo` */
-  override def _to: OverridableComponent[ButtonGroupTypeMap[js.Object, div]] = default
+  override def _to: OverridableComponent[ButtonGroupTypeMap[js.Object, "div"]] = default
 }

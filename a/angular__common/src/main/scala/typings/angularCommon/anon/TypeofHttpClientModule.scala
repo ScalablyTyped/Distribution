@@ -18,12 +18,5 @@ trait TypeofHttpClientModule
   
   var ɵinj: ɵɵInjectorDeclaration[HttpClientModule] = js.native
   
-  var ɵmod: ɵɵNgModuleDeclaration[
-    HttpClientModule, 
-    scala.Nothing, 
-    js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: typeof HttpClientXsrfModule */ js.Any
-    ], 
-    scala.Nothing
-  ] = js.native
+  var ɵmod: ɵɵNgModuleDeclaration[HttpClientModule, scala.Nothing, scala.Nothing, scala.Nothing] = js.native
 }

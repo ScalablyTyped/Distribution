@@ -16,17 +16,6 @@ import typings.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandCollection
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticWIDTHS
-import typings.semanticUiReact.semanticUiReactStrings.bottom
-import typings.semanticUiReact.semanticUiReactStrings.huge
-import typings.semanticUiReact.semanticUiReactStrings.labeled
-import typings.semanticUiReact.semanticUiReactStrings.large
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.massive
-import typings.semanticUiReact.semanticUiReactStrings.mini
-import typings.semanticUiReact.semanticUiReactStrings.right
-import typings.semanticUiReact.semanticUiReactStrings.small
-import typings.semanticUiReact.semanticUiReactStrings.tiny
-import typings.semanticUiReact.semanticUiReactStrings.top
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -102,7 +91,7 @@ object distCommonjsCollectionsMenuMenuMod {
     var as: js.UndefOr[Any] = js.undefined
     
     /** A menu may be attached to other content segments. */
-    var attached: js.UndefOr[Boolean | bottom | top] = js.undefined
+    var attached: js.UndefOr[Boolean | "bottom" | "top"] = js.undefined
     
     /** A menu item or menu can have no borders. */
     var borderless: js.UndefOr[Boolean] = js.undefined
@@ -123,16 +112,16 @@ object distCommonjsCollectionsMenuMenuMod {
     var defaultActiveIndex: js.UndefOr[Double | String] = js.undefined
     
     /** A menu can be fixed to a side of its context. */
-    var fixed: js.UndefOr[left | right | bottom | top] = js.undefined
+    var fixed: js.UndefOr["left" | "right" | "bottom" | "top"] = js.undefined
     
     /** A menu can be floated. */
-    var floated: js.UndefOr[Boolean | right] = js.undefined
+    var floated: js.UndefOr[Boolean | "right"] = js.undefined
     
     /** A vertical menu may take the size of its container. */
     var fluid: js.UndefOr[Boolean] = js.undefined
     
     /** A menu may have labeled icons. */
-    var icon: js.UndefOr[Boolean | labeled] = js.undefined
+    var icon: js.UndefOr[Boolean | "labeled"] = js.undefined
     
     /** A menu may have its colors inverted to show greater contrast. */
     var inverted: js.UndefOr[Boolean] = js.undefined
@@ -164,13 +153,13 @@ object distCommonjsCollectionsMenuMenuMod {
     var secondary: js.UndefOr[Boolean] = js.undefined
     
     /** A menu can vary in size. */
-    var size: js.UndefOr[mini | tiny | small | large | huge | massive] = js.undefined
+    var size: js.UndefOr["mini" | "tiny" | "small" | "large" | "huge" | "massive"] = js.undefined
     
     /** A menu can stack at mobile resolutions. */
     var stackable: js.UndefOr[Boolean] = js.undefined
     
     /** A menu can be formatted to show tabs of information. */
-    var tabular: js.UndefOr[Boolean | right] = js.undefined
+    var tabular: js.UndefOr[Boolean | "right"] = js.undefined
     
     /** A menu can be formatted for text content. */
     var text: js.UndefOr[Boolean] = js.undefined
@@ -198,7 +187,7 @@ object distCommonjsCollectionsMenuMenuMod {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAttached(value: Boolean | bottom | top): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: Boolean | "bottom" | "top"): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
       inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       
@@ -226,11 +215,11 @@ object distCommonjsCollectionsMenuMenuMod {
       
       inline def setDefaultActiveIndexUndefined: Self = StObject.set(x, "defaultActiveIndex", js.undefined)
       
-      inline def setFixed(value: left | right | bottom | top): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: "left" | "right" | "bottom" | "top"): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
       inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
       
-      inline def setFloated(value: Boolean | right): Self = StObject.set(x, "floated", value.asInstanceOf[js.Any])
+      inline def setFloated(value: Boolean | "right"): Self = StObject.set(x, "floated", value.asInstanceOf[js.Any])
       
       inline def setFloatedUndefined: Self = StObject.set(x, "floated", js.undefined)
       
@@ -238,7 +227,7 @@ object distCommonjsCollectionsMenuMenuMod {
       
       inline def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
       
-      inline def setIcon(value: Boolean | labeled): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Boolean | "labeled"): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
@@ -270,7 +259,7 @@ object distCommonjsCollectionsMenuMenuMod {
       
       inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
       
-      inline def setSize(value: mini | tiny | small | large | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "mini" | "tiny" | "small" | "large" | "huge" | "massive"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -278,7 +267,7 @@ object distCommonjsCollectionsMenuMenuMod {
       
       inline def setStackableUndefined: Self = StObject.set(x, "stackable", js.undefined)
       
-      inline def setTabular(value: Boolean | right): Self = StObject.set(x, "tabular", value.asInstanceOf[js.Any])
+      inline def setTabular(value: Boolean | "right"): Self = StObject.set(x, "tabular", value.asInstanceOf[js.Any])
       
       inline def setTabularUndefined: Self = StObject.set(x, "tabular", js.undefined)
       

@@ -7,9 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  enum :std.Array<string>} & {  nullable :boolean | undefined,   metadata :std.Record<string, unknown> | undefined,   definitions :std.Record<string, ajv.ajv/dist/types/jtd-schema.SomeJTDSchemaType> | undefined} */
-trait enumArraystringnullablebo
-  extends StObject
-     with SomeJTDSchemaType {
+trait enumArraystringnullablebo extends StObject {
   
   var definitions: js.UndefOr[Record[String, SomeJTDSchemaType]] = js.undefined
   

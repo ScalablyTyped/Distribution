@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UnparsedPrepend
   extends StObject
-     with UnparsedSection
-     with UnparsedSourceText {
+     with UnparsedSection {
   
   @JSName("data")
   val data_UnparsedPrepend: java.lang.String = js.native

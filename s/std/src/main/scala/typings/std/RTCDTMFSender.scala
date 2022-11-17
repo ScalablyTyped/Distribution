@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.tonechange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,19 +11,22 @@ trait RTCDTMFSender
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_tonechange(
-    `type`: tonechange,
+  @scala.annotation.targetName("addEventListener_tonechange")
+  def addEventListener(
+    `type`: "tonechange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_tonechange(
-    `type`: tonechange,
+  @scala.annotation.targetName("addEventListener_tonechange")
+  def addEventListener(
+    `type`: "tonechange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_tonechange(
-    `type`: tonechange,
+  @scala.annotation.targetName("addEventListener_tonechange")
+  def addEventListener(
+    `type`: "tonechange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -43,19 +45,22 @@ trait RTCDTMFSender
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_tonechange(
-    `type`: tonechange,
+  @scala.annotation.targetName("removeEventListener_tonechange")
+  def removeEventListener(
+    `type`: "tonechange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_tonechange(
-    `type`: tonechange,
+  @scala.annotation.targetName("removeEventListener_tonechange")
+  def removeEventListener(
+    `type`: "tonechange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_tonechange(
-    `type`: tonechange,
+  @scala.annotation.targetName("removeEventListener_tonechange")
+  def removeEventListener(
+    `type`: "tonechange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native

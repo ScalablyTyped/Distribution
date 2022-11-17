@@ -2,8 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.`0`
-import typings.materialUiCore.materialUiCoreStrings.div
-import typings.materialUiCore.materialUiCoreStrings.root
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -25,9 +23,9 @@ object cardContentCardContentMod extends Shortcut {
     */
   @JSImport("@material-ui/core/CardContent/CardContent", JSImport.Default)
   @js.native
-  val default: OverridableComponent[CardContentTypeMap[js.Object, div]] = js.native
+  val default: OverridableComponent[CardContentTypeMap[js.Object, "div"]] = js.native
   
-  type CardContentClassKey = root
+  type CardContentClassKey = "root"
   
   type CardContentProps[D /* <: ElementType[Any] */, P] = OverrideProps[CardContentTypeMap[P, D], D]
   
@@ -56,8 +54,8 @@ object cardContentCardContentMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[CardContentTypeMap[js.Object, div]]
+  type _To = OverridableComponent[CardContentTypeMap[js.Object, "div"]]
   
   /* This means you don't have to write `default`, but can instead just say `cardContentCardContentMod.foo` */
-  override def _to: OverridableComponent[CardContentTypeMap[js.Object, div]] = default
+  override def _to: OverridableComponent[CardContentTypeMap[js.Object, "div"]] = default
 }

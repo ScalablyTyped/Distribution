@@ -10,7 +10,6 @@ import typings.vueRuntimeCore.mod.MergedComponentOptionsOverride
 import typings.vueRuntimeCore.mod.Slots
 import typings.vueRuntimeCore.mod.WatchOptions
 import typings.vueRuntimeCore.mod.WatchStopHandle
-import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,7 +56,7 @@ D, MakeDefaultsOptional /* <: Boolean */, Defaults, P, PublicProps, E /* <: Emit
     js.Object, 
     js.Object, 
     js.Object, 
-    `false`, 
+    false, 
     ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
     js.Object
   ]) | Null = js.native
@@ -78,7 +77,7 @@ D, MakeDefaultsOptional /* <: Boolean */, Defaults, P, PublicProps, E /* <: Emit
     js.Object, 
     js.Object, 
     js.Object, 
-    `false`, 
+    false, 
     ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
     js.Object
   ]) | Null = js.native

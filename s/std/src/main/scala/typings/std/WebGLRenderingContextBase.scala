@@ -1,38 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.ANGLE_instanced_arrays
-import typings.std.stdStrings.EXT_blend_minmax
-import typings.std.stdStrings.EXT_color_buffer_float
-import typings.std.stdStrings.EXT_color_buffer_half_float
-import typings.std.stdStrings.EXT_float_blend
-import typings.std.stdStrings.EXT_frag_depth
-import typings.std.stdStrings.EXT_sRGB
-import typings.std.stdStrings.EXT_shader_texture_lod
-import typings.std.stdStrings.EXT_texture_compression_bptc
-import typings.std.stdStrings.EXT_texture_compression_rgtc
-import typings.std.stdStrings.EXT_texture_filter_anisotropic
-import typings.std.stdStrings.KHR_parallel_shader_compile
-import typings.std.stdStrings.OES_element_index_uint
-import typings.std.stdStrings.OES_fbo_render_mipmap
-import typings.std.stdStrings.OES_standard_derivatives
-import typings.std.stdStrings.OES_texture_float
-import typings.std.stdStrings.OES_texture_float_linear
-import typings.std.stdStrings.OES_texture_half_float
-import typings.std.stdStrings.OES_texture_half_float_linear
-import typings.std.stdStrings.OES_vertex_array_object
-import typings.std.stdStrings.OVR_multiview2
-import typings.std.stdStrings.WEBGL_color_buffer_float
-import typings.std.stdStrings.WEBGL_compressed_texture_astc
-import typings.std.stdStrings.WEBGL_compressed_texture_etc
-import typings.std.stdStrings.WEBGL_compressed_texture_etc1
-import typings.std.stdStrings.WEBGL_compressed_texture_s3tc
-import typings.std.stdStrings.WEBGL_compressed_texture_s3tc_srgb
-import typings.std.stdStrings.WEBGL_debug_renderer_info
-import typings.std.stdStrings.WEBGL_debug_shaders
-import typings.std.stdStrings.WEBGL_depth_texture
-import typings.std.stdStrings.WEBGL_draw_buffers
-import typings.std.stdStrings.WEBGL_lose_context
-import typings.std.stdStrings.WEBGL_multi_draw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1139,106 +1106,139 @@ trait WebGLRenderingContextBase extends StObject {
   def getError(): GLenum = js.native
   
   /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_WEBGL_compressed_texture_s3tc")
+  def getExtension(extensionName: "WEBGL_compressed_texture_s3tc"): WEBGLCompressedTextureS3tc | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_WEBGL_compressed_texture_astc")
+  def getExtension(extensionName: "WEBGL_compressed_texture_astc"): WEBGLCompressedTextureAstc | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_EXT_texture_filter_anisotropic")
+  def getExtension(extensionName: "EXT_texture_filter_anisotropic"): EXTTextureFilterAnisotropic | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_ANGLE_instanced_arrays")
+  def getExtension(extensionName: "ANGLE_instanced_arrays"): ANGLEInstancedArrays | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_OES_texture_half_float")
+  def getExtension(extensionName: "OES_texture_half_float"): OESTextureHalfFloat | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_WEBGL_compressed_texture_s3tc_srgb")
+  def getExtension(extensionName: "WEBGL_compressed_texture_s3tc_srgb"): WEBGLCompressedTextureS3tcSrgb | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_EXT_blend_minmax")
+  def getExtension(extensionName: "EXT_blend_minmax"): EXTBlendMinmax | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_OVR_multiview2")
+  def getExtension(extensionName: "OVR_multiview2"): OVRMultiview2 | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_WEBGL_color_buffer_float")
+  def getExtension(extensionName: "WEBGL_color_buffer_float"): WEBGLColorBufferFloat | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_OES_vertex_array_object")
+  def getExtension(extensionName: "OES_vertex_array_object"): OESVertexArrayObject | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_WEBGL_depth_texture")
+  def getExtension(extensionName: "WEBGL_depth_texture"): WEBGLDepthTexture | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_WEBGL_compressed_texture_etc")
+  def getExtension(extensionName: "WEBGL_compressed_texture_etc"): WEBGLCompressedTextureEtc | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_OES_standard_derivatives")
+  def getExtension(extensionName: "OES_standard_derivatives"): OESStandardDerivatives | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_WEBGL_draw_buffers")
+  def getExtension(extensionName: "WEBGL_draw_buffers"): WEBGLDrawBuffers | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_OES_texture_float")
+  def getExtension(extensionName: "OES_texture_float"): OESTextureFloat | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_EXT_float_blend")
+  def getExtension(extensionName: "EXT_float_blend"): EXTFloatBlend | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_EXT_sRGB")
+  def getExtension(extensionName: "EXT_sRGB"): EXTSRGB | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_WEBGL_lose_context")
+  def getExtension(extensionName: "WEBGL_lose_context"): WEBGLLoseContext | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_OES_fbo_render_mipmap")
+  def getExtension(extensionName: "OES_fbo_render_mipmap"): OESFboRenderMipmap | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_OES_texture_half_float_linear")
+  def getExtension(extensionName: "OES_texture_half_float_linear"): OESTextureHalfFloatLinear | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_EXT_texture_compression_bptc")
+  def getExtension(extensionName: "EXT_texture_compression_bptc"): EXTTextureCompressionBptc | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_EXT_texture_compression_rgtc")
+  def getExtension(extensionName: "EXT_texture_compression_rgtc"): EXTTextureCompressionRgtc | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_EXT_color_buffer_half_float")
+  def getExtension(extensionName: "EXT_color_buffer_half_float"): EXTColorBufferHalfFloat | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_EXT_frag_depth")
+  def getExtension(extensionName: "EXT_frag_depth"): EXTFragDepth | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_WEBGL_debug_shaders")
+  def getExtension(extensionName: "WEBGL_debug_shaders"): WEBGLDebugShaders | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_EXT_shader_texture_lod")
+  def getExtension(extensionName: "EXT_shader_texture_lod"): EXTShaderTextureLod | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_OES_element_index_uint")
+  def getExtension(extensionName: "OES_element_index_uint"): OESElementIndexUint | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_WEBGL_debug_renderer_info")
+  def getExtension(extensionName: "WEBGL_debug_renderer_info"): WEBGLDebugRendererInfo | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_KHR_parallel_shader_compile")
+  def getExtension(extensionName: "KHR_parallel_shader_compile"): KHRParallelShaderCompile | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_WEBGL_compressed_texture_etc1")
+  def getExtension(extensionName: "WEBGL_compressed_texture_etc1"): WEBGLCompressedTextureEtc1 | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_OES_texture_float_linear")
+  def getExtension(extensionName: "OES_texture_float_linear"): OESTextureFloatLinear | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_WEBGL_multi_draw")
+  def getExtension(extensionName: "WEBGL_multi_draw"): WEBGLMultiDraw | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  @scala.annotation.targetName("getExtension_EXT_color_buffer_float")
+  def getExtension(extensionName: "EXT_color_buffer_float"): EXTColorBufferFloat | Null = js.native
+  /* standard dom */
   def getExtension(name: java.lang.String): Any = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_ANGLEinstancedarrays(extensionName: ANGLE_instanced_arrays): ANGLEInstancedArrays | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_EXTblendminmax(extensionName: EXT_blend_minmax): EXTBlendMinmax | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_EXTcolorbufferfloat(extensionName: EXT_color_buffer_float): EXTColorBufferFloat | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_EXTcolorbufferhalffloat(extensionName: EXT_color_buffer_half_float): EXTColorBufferHalfFloat | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_EXTfloatblend(extensionName: EXT_float_blend): EXTFloatBlend | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_EXTfragdepth(extensionName: EXT_frag_depth): EXTFragDepth | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_EXTsRGB(extensionName: EXT_sRGB): EXTSRGB | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_EXTshadertexturelod(extensionName: EXT_shader_texture_lod): EXTShaderTextureLod | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_EXTtexturecompressionbptc(extensionName: EXT_texture_compression_bptc): EXTTextureCompressionBptc | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_EXTtexturecompressionrgtc(extensionName: EXT_texture_compression_rgtc): EXTTextureCompressionRgtc | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_EXTtexturefilteranisotropic(extensionName: EXT_texture_filter_anisotropic): EXTTextureFilterAnisotropic | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_KHRparallelshadercompile(extensionName: KHR_parallel_shader_compile): KHRParallelShaderCompile | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_OESelementindexuint(extensionName: OES_element_index_uint): OESElementIndexUint | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_OESfborendermipmap(extensionName: OES_fbo_render_mipmap): OESFboRenderMipmap | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_OESstandardderivatives(extensionName: OES_standard_derivatives): OESStandardDerivatives | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_OEStexturefloat(extensionName: OES_texture_float): OESTextureFloat | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_OEStexturefloatlinear(extensionName: OES_texture_float_linear): OESTextureFloatLinear | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_OEStexturehalffloat(extensionName: OES_texture_half_float): OESTextureHalfFloat | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_OEStexturehalffloatlinear(extensionName: OES_texture_half_float_linear): OESTextureHalfFloatLinear | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_OESvertexarrayobject(extensionName: OES_vertex_array_object): OESVertexArrayObject | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_OVRmultiview2(extensionName: OVR_multiview2): OVRMultiview2 | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_WEBGLcolorbufferfloat(extensionName: WEBGL_color_buffer_float): WEBGLColorBufferFloat | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_WEBGLcompressedtextureastc(extensionName: WEBGL_compressed_texture_astc): WEBGLCompressedTextureAstc | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_WEBGLcompressedtextureetc(extensionName: WEBGL_compressed_texture_etc): WEBGLCompressedTextureEtc | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_WEBGLcompressedtextureetc1(extensionName: WEBGL_compressed_texture_etc1): WEBGLCompressedTextureEtc1 | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_WEBGLcompressedtextures3tc(extensionName: WEBGL_compressed_texture_s3tc): WEBGLCompressedTextureS3tc | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_WEBGLcompressedtextures3tcsrgb(extensionName: WEBGL_compressed_texture_s3tc_srgb): WEBGLCompressedTextureS3tcSrgb | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_WEBGLdebugrendererinfo(extensionName: WEBGL_debug_renderer_info): WEBGLDebugRendererInfo | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_WEBGLdebugshaders(extensionName: WEBGL_debug_shaders): WEBGLDebugShaders | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_WEBGLdepthtexture(extensionName: WEBGL_depth_texture): WEBGLDepthTexture | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_WEBGLdrawbuffers(extensionName: WEBGL_draw_buffers): WEBGLDrawBuffers | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_WEBGLlosecontext(extensionName: WEBGL_lose_context): WEBGLLoseContext | Null = js.native
-  /* standard dom */
-  @JSName("getExtension")
-  def getExtension_WEBGLmultidraw(extensionName: WEBGL_multi_draw): WEBGLMultiDraw | Null = js.native
   
   /* standard dom */
   def getFramebufferAttachmentParameter(target: GLenum, attachment: GLenum, pname: GLenum): Any = js.native

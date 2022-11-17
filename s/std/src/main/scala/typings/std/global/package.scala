@@ -73,120 +73,6 @@ import typings.std.WeakSetConstructor
 import typings.std.Window
 import typings.std.WindowPostMessageOptions
 import typings.std.WindowProxy
-import typings.std.stdStrings.DOMContentLoaded
-import typings.std.stdStrings.abort
-import typings.std.stdStrings.afterprint
-import typings.std.stdStrings.animationcancel
-import typings.std.stdStrings.animationend
-import typings.std.stdStrings.animationiteration
-import typings.std.stdStrings.animationstart
-import typings.std.stdStrings.auxclick
-import typings.std.stdStrings.beforeinput
-import typings.std.stdStrings.beforeprint
-import typings.std.stdStrings.beforeunload
-import typings.std.stdStrings.cancel
-import typings.std.stdStrings.canplay
-import typings.std.stdStrings.canplaythrough
-import typings.std.stdStrings.change
-import typings.std.stdStrings.click
-import typings.std.stdStrings.compositionend
-import typings.std.stdStrings.compositionstart
-import typings.std.stdStrings.compositionupdate
-import typings.std.stdStrings.contextmenu
-import typings.std.stdStrings.cuechange
-import typings.std.stdStrings.dblclick
-import typings.std.stdStrings.devicemotion
-import typings.std.stdStrings.deviceorientation
-import typings.std.stdStrings.drag
-import typings.std.stdStrings.dragend
-import typings.std.stdStrings.dragenter
-import typings.std.stdStrings.dragleave
-import typings.std.stdStrings.dragover
-import typings.std.stdStrings.dragstart
-import typings.std.stdStrings.drop
-import typings.std.stdStrings.durationchange
-import typings.std.stdStrings.emptied
-import typings.std.stdStrings.ended
-import typings.std.stdStrings.error
-import typings.std.stdStrings.focusin
-import typings.std.stdStrings.focusout
-import typings.std.stdStrings.formdata
-import typings.std.stdStrings.gamepadconnected
-import typings.std.stdStrings.gamepaddisconnected
-import typings.std.stdStrings.gotpointercapture
-import typings.std.stdStrings.hashchange
-import typings.std.stdStrings.input
-import typings.std.stdStrings.invalid
-import typings.std.stdStrings.keydown
-import typings.std.stdStrings.keypress
-import typings.std.stdStrings.keyup
-import typings.std.stdStrings.languagechange
-import typings.std.stdStrings.load
-import typings.std.stdStrings.loadeddata
-import typings.std.stdStrings.loadedmetadata
-import typings.std.stdStrings.loadstart
-import typings.std.stdStrings.lostpointercapture
-import typings.std.stdStrings.message
-import typings.std.stdStrings.messageerror
-import typings.std.stdStrings.mousedown
-import typings.std.stdStrings.mouseenter
-import typings.std.stdStrings.mouseleave
-import typings.std.stdStrings.mousemove
-import typings.std.stdStrings.mouseout
-import typings.std.stdStrings.mouseover
-import typings.std.stdStrings.mouseup
-import typings.std.stdStrings.offline
-import typings.std.stdStrings.online
-import typings.std.stdStrings.orientationchange
-import typings.std.stdStrings.pagehide
-import typings.std.stdStrings.pageshow
-import typings.std.stdStrings.pause
-import typings.std.stdStrings.play
-import typings.std.stdStrings.playing
-import typings.std.stdStrings.pointercancel
-import typings.std.stdStrings.pointerdown
-import typings.std.stdStrings.pointerenter
-import typings.std.stdStrings.pointerleave
-import typings.std.stdStrings.pointermove
-import typings.std.stdStrings.pointerout
-import typings.std.stdStrings.pointerover
-import typings.std.stdStrings.pointerup
-import typings.std.stdStrings.popstate
-import typings.std.stdStrings.progress
-import typings.std.stdStrings.ratechange
-import typings.std.stdStrings.rejectionhandled
-import typings.std.stdStrings.reset
-import typings.std.stdStrings.resize
-import typings.std.stdStrings.securitypolicyviolation
-import typings.std.stdStrings.seeked
-import typings.std.stdStrings.seeking
-import typings.std.stdStrings.select
-import typings.std.stdStrings.selectionchange
-import typings.std.stdStrings.selectstart
-import typings.std.stdStrings.slotchange
-import typings.std.stdStrings.stalled
-import typings.std.stdStrings.storage
-import typings.std.stdStrings.submit
-import typings.std.stdStrings.suspend
-import typings.std.stdStrings.timeupdate
-import typings.std.stdStrings.toggle
-import typings.std.stdStrings.touchcancel
-import typings.std.stdStrings.touchend
-import typings.std.stdStrings.touchmove
-import typings.std.stdStrings.touchstart
-import typings.std.stdStrings.transitioncancel
-import typings.std.stdStrings.transitionend
-import typings.std.stdStrings.transitionrun
-import typings.std.stdStrings.transitionstart
-import typings.std.stdStrings.unhandledrejection
-import typings.std.stdStrings.unload
-import typings.std.stdStrings.volumechange
-import typings.std.stdStrings.waiting
-import typings.std.stdStrings.webkitanimationend
-import typings.std.stdStrings.webkitanimationiteration
-import typings.std.stdStrings.webkitanimationstart
-import typings.std.stdStrings.webkittransitionend
-import typings.std.stdStrings.wheel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -304,1634 +190,1873 @@ inline def WeakRef_=(x: WeakRefConstructor): Unit = js.Dynamic.global.updateDyna
 
 inline def WeakSet_=(x: WeakSetConstructor): Unit = js.Dynamic.global.updateDynamic("WeakSet")(x.asInstanceOf[js.Any])
 
+@scala.annotation.targetName("addEventListener_progress")
+inline def addEventListener(
+  `type`: "progress",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ProgressEvent[typings.std.EventTarget], Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_close")
+inline def addEventListener(`type`: "close", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_webkittransitionend")
+inline def addEventListener(`type`: "webkittransitionend", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_languagechange")
+inline def addEventListener(`type`: "languagechange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_gotpointercapture")
+inline def addEventListener(
+  `type`: "gotpointercapture",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_touchmove")
+inline def addEventListener(
+  `type`: "touchmove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_slotchange")
+inline def addEventListener(`type`: "slotchange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_error")
+inline def addEventListener(
+  `type`: "error",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ErrorEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_hashchange")
+inline def addEventListener(
+  `type`: "hashchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_beforeinput")
+inline def addEventListener(
+  `type`: "beforeinput",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_webkitanimationstart")
+inline def addEventListener(`type`: "webkitanimationstart", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_gamepaddisconnected")
+inline def addEventListener(
+  `type`: "gamepaddisconnected",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerenter")
+inline def addEventListener(
+  `type`: "pointerenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_focus")
+inline def addEventListener(
+  `type`: "focus",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_blur")
+inline def addEventListener(
+  `type`: "blur",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_compositionupdate")
+inline def addEventListener(
+  `type`: "compositionupdate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragenter")
+inline def addEventListener(
+  `type`: "dragenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_devicemotion")
+inline def addEventListener(
+  `type`: "devicemotion",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mousemove")
+inline def addEventListener(
+  `type`: "mousemove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_popstate")
+inline def addEventListener(
+  `type`: "popstate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_select")
+inline def addEventListener(`type`: "select", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragover")
+inline def addEventListener(
+  `type`: "dragover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_durationchange")
+inline def addEventListener(`type`: "durationchange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_transitionstart")
+inline def addEventListener(
+  `type`: "transitionstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_seeking")
+inline def addEventListener(`type`: "seeking", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_toggle")
+inline def addEventListener(`type`: "toggle", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_touchend")
+inline def addEventListener(
+  `type`: "touchend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseup")
+inline def addEventListener(
+  `type`: "mouseup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_focusin")
+inline def addEventListener(
+  `type`: "focusin",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_keypress")
+inline def addEventListener(
+  `type`: "keypress",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseleave")
+inline def addEventListener(
+  `type`: "mouseleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_beforeunload")
+inline def addEventListener(
+  `type`: "beforeunload",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_canplaythrough")
+inline def addEventListener(`type`: "canplaythrough", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseout")
+inline def addEventListener(
+  `type`: "mouseout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_focusout")
+inline def addEventListener(
+  `type`: "focusout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_drag")
+inline def addEventListener(`type`: "drag", listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointercancel")
+inline def addEventListener(
+  `type`: "pointercancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_securitypolicyviolation")
+inline def addEventListener(
+  `type`: "securitypolicyviolation",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_compositionend")
+inline def addEventListener(
+  `type`: "compositionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mousedown")
+inline def addEventListener(
+  `type`: "mousedown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_lostpointercapture")
+inline def addEventListener(
+  `type`: "lostpointercapture",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_animationstart")
+inline def addEventListener(
+  `type`: "animationstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_abort")
+inline def addEventListener(`type`: "abort", listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_webkitanimationiteration")
+inline def addEventListener(
+  `type`: "webkitanimationiteration",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseenter")
+inline def addEventListener(
+  `type`: "mouseenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_orientationchange")
+inline def addEventListener(`type`: "orientationchange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragend")
+inline def addEventListener(
+  `type`: "dragend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_cancel")
+inline def addEventListener(`type`: "cancel", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_playing")
+inline def addEventListener(`type`: "playing", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_formdata")
+inline def addEventListener(
+  `type`: "formdata",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_online")
+inline def addEventListener(`type`: "online", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_invalid")
+inline def addEventListener(`type`: "invalid", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_ended")
+inline def addEventListener(`type`: "ended", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_DOMContentLoaded")
+inline def addEventListener(`type`: "DOMContentLoaded", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerout")
+inline def addEventListener(
+  `type`: "pointerout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_emptied")
+inline def addEventListener(`type`: "emptied", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_drop")
+inline def addEventListener(`type`: "drop", listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseover")
+inline def addEventListener(
+  `type`: "mouseover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_unload")
+inline def addEventListener(`type`: "unload", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerleave")
+inline def addEventListener(
+  `type`: "pointerleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragstart")
+inline def addEventListener(
+  `type`: "dragstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_afterprint")
+inline def addEventListener(`type`: "afterprint", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_timeupdate")
+inline def addEventListener(`type`: "timeupdate", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_input")
+inline def addEventListener(`type`: "input", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_submit")
+inline def addEventListener(
+  `type`: "submit",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_auxclick")
+inline def addEventListener(
+  `type`: "auxclick",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_message")
+inline def addEventListener(
+  `type`: "message",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_gamepadconnected")
+inline def addEventListener(
+  `type`: "gamepadconnected",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_seeked")
+inline def addEventListener(`type`: "seeked", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pagehide")
+inline def addEventListener(
+  `type`: "pagehide",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_animationcancel")
+inline def addEventListener(
+  `type`: "animationcancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_click")
+inline def addEventListener(
+  `type`: "click",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerover")
+inline def addEventListener(
+  `type`: "pointerover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_storage")
+inline def addEventListener(
+  `type`: "storage",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_load")
+inline def addEventListener(`type`: "load", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_selectionchange")
+inline def addEventListener(`type`: "selectionchange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pageshow")
+inline def addEventListener(
+  `type`: "pageshow",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragleave")
+inline def addEventListener(
+  `type`: "dragleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_rejectionhandled")
+inline def addEventListener(
+  `type`: "rejectionhandled",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_volumechange")
+inline def addEventListener(`type`: "volumechange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_play")
+inline def addEventListener(`type`: "play", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_compositionstart")
+inline def addEventListener(
+  `type`: "compositionstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_animationiteration")
+inline def addEventListener(
+  `type`: "animationiteration",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_loadeddata")
+inline def addEventListener(`type`: "loadeddata", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_reset")
+inline def addEventListener(`type`: "reset", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_transitionend")
+inline def addEventListener(
+  `type`: "transitionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_resize")
+inline def addEventListener(`type`: "resize", listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pause")
+inline def addEventListener(`type`: "pause", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_stalled")
+inline def addEventListener(`type`: "stalled", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_keyup")
+inline def addEventListener(
+  `type`: "keyup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_deviceorientation")
+inline def addEventListener(
+  `type`: "deviceorientation",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_contextmenu")
+inline def addEventListener(
+  `type`: "contextmenu",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerdown")
+inline def addEventListener(
+  `type`: "pointerdown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_canplay")
+inline def addEventListener(`type`: "canplay", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_loadstart")
+inline def addEventListener(`type`: "loadstart", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_unhandledrejection")
+inline def addEventListener(
+  `type`: "unhandledrejection",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_scroll")
+inline def addEventListener(`type`: "scroll", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_waiting")
+inline def addEventListener(`type`: "waiting", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerup")
+inline def addEventListener(
+  `type`: "pointerup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_animationend")
+inline def addEventListener(
+  `type`: "animationend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_touchstart")
+inline def addEventListener(
+  `type`: "touchstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_beforeprint")
+inline def addEventListener(`type`: "beforeprint", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_wheel")
+inline def addEventListener(
+  `type`: "wheel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_loadedmetadata")
+inline def addEventListener(`type`: "loadedmetadata", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_ratechange")
+inline def addEventListener(`type`: "ratechange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_cuechange")
+inline def addEventListener(`type`: "cuechange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_webkitanimationend")
+inline def addEventListener(`type`: "webkitanimationend", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_offline")
+inline def addEventListener(`type`: "offline", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_transitionrun")
+inline def addEventListener(
+  `type`: "transitionrun",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_change")
+inline def addEventListener(`type`: "change", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_touchcancel")
+inline def addEventListener(
+  `type`: "touchcancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dblclick")
+inline def addEventListener(
+  `type`: "dblclick",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_transitioncancel")
+inline def addEventListener(
+  `type`: "transitioncancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_messageerror")
+inline def addEventListener(
+  `type`: "messageerror",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_suspend")
+inline def addEventListener(`type`: "suspend", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointermove")
+inline def addEventListener(
+  `type`: "pointermove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_selectstart")
+inline def addEventListener(`type`: "selectstart", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_keydown")
+inline def addEventListener(
+  `type`: "keydown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragstart")
+inline def addEventListener(
+  `type`: "dragstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_drop")
+inline def addEventListener(
+  `type`: "drop",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_canplay")
+inline def addEventListener(
+  `type`: "canplay",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_focusout")
+inline def addEventListener(
+  `type`: "focusout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_auxclick")
+inline def addEventListener(
+  `type`: "auxclick",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_selectionchange")
+inline def addEventListener(
+  `type`: "selectionchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_webkitanimationiteration")
+inline def addEventListener(
+  `type`: "webkitanimationiteration",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_wheel")
+inline def addEventListener(
+  `type`: "wheel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerup")
+inline def addEventListener(
+  `type`: "pointerup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_keypress")
+inline def addEventListener(
+  `type`: "keypress",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_deviceorientation")
+inline def addEventListener(
+  `type`: "deviceorientation",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_input")
+inline def addEventListener(
+  `type`: "input",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_canplaythrough")
+inline def addEventListener(
+  `type`: "canplaythrough",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_waiting")
+inline def addEventListener(
+  `type`: "waiting",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_keyup")
+inline def addEventListener(
+  `type`: "keyup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_durationchange")
+inline def addEventListener(
+  `type`: "durationchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_scroll")
+inline def addEventListener(
+  `type`: "scroll",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_suspend")
+inline def addEventListener(
+  `type`: "suspend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_load")
+inline def addEventListener(
+  `type`: "load",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_transitionstart")
+inline def addEventListener(
+  `type`: "transitionstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_invalid")
+inline def addEventListener(
+  `type`: "invalid",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_volumechange")
+inline def addEventListener(
+  `type`: "volumechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_transitionend")
+inline def addEventListener(
+  `type`: "transitionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointercancel")
+inline def addEventListener(
+  `type`: "pointercancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerover")
+inline def addEventListener(
+  `type`: "pointerover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_beforeunload")
+inline def addEventListener(
+  `type`: "beforeunload",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_ratechange")
+inline def addEventListener(
+  `type`: "ratechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_slotchange")
+inline def addEventListener(
+  `type`: "slotchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragend")
+inline def addEventListener(
+  `type`: "dragend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerout")
+inline def addEventListener(
+  `type`: "pointerout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_webkitanimationstart")
+inline def addEventListener(
+  `type`: "webkitanimationstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerdown")
+inline def addEventListener(
+  `type`: "pointerdown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_orientationchange")
+inline def addEventListener(
+  `type`: "orientationchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_play")
+inline def addEventListener(
+  `type`: "play",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_keydown")
+inline def addEventListener(
+  `type`: "keydown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_ended")
+inline def addEventListener(
+  `type`: "ended",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_compositionend")
+inline def addEventListener(
+  `type`: "compositionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_timeupdate")
+inline def addEventListener(
+  `type`: "timeupdate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_drag")
+inline def addEventListener(
+  `type`: "drag",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_animationstart")
+inline def addEventListener(
+  `type`: "animationstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_error")
+inline def addEventListener(
+  `type`: "error",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ErrorEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_beforeinput")
+inline def addEventListener(
+  `type`: "beforeinput",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_loadstart")
+inline def addEventListener(
+  `type`: "loadstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mousemove")
+inline def addEventListener(
+  `type`: "mousemove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_languagechange")
+inline def addEventListener(
+  `type`: "languagechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_transitionrun")
+inline def addEventListener(
+  `type`: "transitionrun",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_gamepaddisconnected")
+inline def addEventListener(
+  `type`: "gamepaddisconnected",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_toggle")
+inline def addEventListener(
+  `type`: "toggle",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_beforeprint")
+inline def addEventListener(
+  `type`: "beforeprint",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragover")
+inline def addEventListener(
+  `type`: "dragover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_cancel")
+inline def addEventListener(
+  `type`: "cancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_rejectionhandled")
+inline def addEventListener(
+  `type`: "rejectionhandled",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_stalled")
+inline def addEventListener(
+  `type`: "stalled",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_webkittransitionend")
+inline def addEventListener(
+  `type`: "webkittransitionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_animationcancel")
+inline def addEventListener(
+  `type`: "animationcancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_playing")
+inline def addEventListener(
+  `type`: "playing",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dblclick")
+inline def addEventListener(
+  `type`: "dblclick",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_DOMContentLoaded")
+inline def addEventListener(
+  `type`: "DOMContentLoaded",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_webkitanimationend")
+inline def addEventListener(
+  `type`: "webkitanimationend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pageshow")
+inline def addEventListener(
+  `type`: "pageshow",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_submit")
+inline def addEventListener(
+  `type`: "submit",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseleave")
+inline def addEventListener(
+  `type`: "mouseleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_animationend")
+inline def addEventListener(
+  `type`: "animationend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mousedown")
+inline def addEventListener(
+  `type`: "mousedown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_animationiteration")
+inline def addEventListener(
+  `type`: "animationiteration",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_select")
+inline def addEventListener(
+  `type`: "select",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_change")
+inline def addEventListener(
+  `type`: "change",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseover")
+inline def addEventListener(
+  `type`: "mouseover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_contextmenu")
+inline def addEventListener(
+  `type`: "contextmenu",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pause")
+inline def addEventListener(
+  `type`: "pause",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_message")
+inline def addEventListener(
+  `type`: "message",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_touchmove")
+inline def addEventListener(
+  `type`: "touchmove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_seeking")
+inline def addEventListener(
+  `type`: "seeking",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointermove")
+inline def addEventListener(
+  `type`: "pointermove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_loadeddata")
+inline def addEventListener(
+  `type`: "loadeddata",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_afterprint")
+inline def addEventListener(
+  `type`: "afterprint",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_offline")
+inline def addEventListener(
+  `type`: "offline",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_gotpointercapture")
+inline def addEventListener(
+  `type`: "gotpointercapture",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_cuechange")
+inline def addEventListener(
+  `type`: "cuechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_lostpointercapture")
+inline def addEventListener(
+  `type`: "lostpointercapture",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_devicemotion")
+inline def addEventListener(
+  `type`: "devicemotion",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_reset")
+inline def addEventListener(
+  `type`: "reset",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_focusin")
+inline def addEventListener(
+  `type`: "focusin",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragleave")
+inline def addEventListener(
+  `type`: "dragleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_emptied")
+inline def addEventListener(
+  `type`: "emptied",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_unhandledrejection")
+inline def addEventListener(
+  `type`: "unhandledrejection",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_selectstart")
+inline def addEventListener(
+  `type`: "selectstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseout")
+inline def addEventListener(
+  `type`: "mouseout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragenter")
+inline def addEventListener(
+  `type`: "dragenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerenter")
+inline def addEventListener(
+  `type`: "pointerenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_blur")
+inline def addEventListener(
+  `type`: "blur",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerleave")
+inline def addEventListener(
+  `type`: "pointerleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_touchend")
+inline def addEventListener(
+  `type`: "touchend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_loadedmetadata")
+inline def addEventListener(
+  `type`: "loadedmetadata",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_seeked")
+inline def addEventListener(
+  `type`: "seeked",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_touchcancel")
+inline def addEventListener(
+  `type`: "touchcancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_touchstart")
+inline def addEventListener(
+  `type`: "touchstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_storage")
+inline def addEventListener(
+  `type`: "storage",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_formdata")
+inline def addEventListener(
+  `type`: "formdata",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_abort")
+inline def addEventListener(
+  `type`: "abort",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_popstate")
+inline def addEventListener(
+  `type`: "popstate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_progress")
+inline def addEventListener(
+  `type`: "progress",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ProgressEvent[typings.std.EventTarget], Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_resize")
+inline def addEventListener(
+  `type`: "resize",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_focus")
+inline def addEventListener(
+  `type`: "focus",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_compositionstart")
+inline def addEventListener(
+  `type`: "compositionstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_click")
+inline def addEventListener(
+  `type`: "click",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_gamepadconnected")
+inline def addEventListener(
+  `type`: "gamepadconnected",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_transitioncancel")
+inline def addEventListener(
+  `type`: "transitioncancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_messageerror")
+inline def addEventListener(
+  `type`: "messageerror",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseup")
+inline def addEventListener(
+  `type`: "mouseup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_unload")
+inline def addEventListener(
+  `type`: "unload",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_close")
+inline def addEventListener(
+  `type`: "close",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pagehide")
+inline def addEventListener(
+  `type`: "pagehide",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_securitypolicyviolation")
+inline def addEventListener(
+  `type`: "securitypolicyviolation",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_hashchange")
+inline def addEventListener(
+  `type`: "hashchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseenter")
+inline def addEventListener(
+  `type`: "mouseenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_compositionupdate")
+inline def addEventListener(
+  `type`: "compositionupdate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_online")
+inline def addEventListener(
+  `type`: "online",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_canplaythrough")
+inline def addEventListener(
+  `type`: "canplaythrough",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_select")
+inline def addEventListener(
+  `type`: "select",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_auxclick")
+inline def addEventListener(
+  `type`: "auxclick",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerdown")
+inline def addEventListener(
+  `type`: "pointerdown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_drag")
+inline def addEventListener(
+  `type`: "drag",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_rejectionhandled")
+inline def addEventListener(
+  `type`: "rejectionhandled",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_scroll")
+inline def addEventListener(
+  `type`: "scroll",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragenter")
+inline def addEventListener(
+  `type`: "dragenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerup")
+inline def addEventListener(
+  `type`: "pointerup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_animationstart")
+inline def addEventListener(
+  `type`: "animationstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_ratechange")
+inline def addEventListener(
+  `type`: "ratechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerout")
+inline def addEventListener(
+  `type`: "pointerout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_beforeinput")
+inline def addEventListener(
+  `type`: "beforeinput",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_transitioncancel")
+inline def addEventListener(
+  `type`: "transitioncancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragleave")
+inline def addEventListener(
+  `type`: "dragleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragover")
+inline def addEventListener(
+  `type`: "dragover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_resize")
+inline def addEventListener(
+  `type`: "resize",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_unhandledrejection")
+inline def addEventListener(
+  `type`: "unhandledrejection",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseover")
+inline def addEventListener(
+  `type`: "mouseover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_message")
+inline def addEventListener(
+  `type`: "message",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerover")
+inline def addEventListener(
+  `type`: "pointerover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_keypress")
+inline def addEventListener(
+  `type`: "keypress",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_messageerror")
+inline def addEventListener(
+  `type`: "messageerror",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_beforeprint")
+inline def addEventListener(
+  `type`: "beforeprint",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_loadeddata")
+inline def addEventListener(
+  `type`: "loadeddata",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_cancel")
+inline def addEventListener(
+  `type`: "cancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_ended")
+inline def addEventListener(
+  `type`: "ended",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pagehide")
+inline def addEventListener(
+  `type`: "pagehide",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mousemove")
+inline def addEventListener(
+  `type`: "mousemove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_durationchange")
+inline def addEventListener(
+  `type`: "durationchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dblclick")
+inline def addEventListener(
+  `type`: "dblclick",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_drop")
+inline def addEventListener(
+  `type`: "drop",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_waiting")
+inline def addEventListener(
+  `type`: "waiting",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_orientationchange")
+inline def addEventListener(
+  `type`: "orientationchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_touchmove")
+inline def addEventListener(
+  `type`: "touchmove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseup")
+inline def addEventListener(
+  `type`: "mouseup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_online")
+inline def addEventListener(
+  `type`: "online",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_webkittransitionend")
+inline def addEventListener(
+  `type`: "webkittransitionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_compositionend")
+inline def addEventListener(
+  `type`: "compositionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_popstate")
+inline def addEventListener(
+  `type`: "popstate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_touchstart")
+inline def addEventListener(
+  `type`: "touchstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_offline")
+inline def addEventListener(
+  `type`: "offline",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_animationiteration")
+inline def addEventListener(
+  `type`: "animationiteration",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_reset")
+inline def addEventListener(
+  `type`: "reset",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mousedown")
+inline def addEventListener(
+  `type`: "mousedown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_timeupdate")
+inline def addEventListener(
+  `type`: "timeupdate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_unload")
+inline def addEventListener(
+  `type`: "unload",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_error")
+inline def addEventListener(
+  `type`: "error",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ErrorEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_wheel")
+inline def addEventListener(
+  `type`: "wheel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_hashchange")
+inline def addEventListener(
+  `type`: "hashchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_gotpointercapture")
+inline def addEventListener(
+  `type`: "gotpointercapture",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_loadedmetadata")
+inline def addEventListener(
+  `type`: "loadedmetadata",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_webkitanimationstart")
+inline def addEventListener(
+  `type`: "webkitanimationstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_volumechange")
+inline def addEventListener(
+  `type`: "volumechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_transitionend")
+inline def addEventListener(
+  `type`: "transitionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_emptied")
+inline def addEventListener(
+  `type`: "emptied",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseenter")
+inline def addEventListener(
+  `type`: "mouseenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseleave")
+inline def addEventListener(
+  `type`: "mouseleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerleave")
+inline def addEventListener(
+  `type`: "pointerleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_focus")
+inline def addEventListener(
+  `type`: "focus",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_gamepadconnected")
+inline def addEventListener(
+  `type`: "gamepadconnected",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_stalled")
+inline def addEventListener(
+  `type`: "stalled",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_animationend")
+inline def addEventListener(
+  `type`: "animationend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragend")
+inline def addEventListener(
+  `type`: "dragend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_focusout")
+inline def addEventListener(
+  `type`: "focusout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointerenter")
+inline def addEventListener(
+  `type`: "pointerenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_compositionupdate")
+inline def addEventListener(
+  `type`: "compositionupdate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_touchend")
+inline def addEventListener(
+  `type`: "touchend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_playing")
+inline def addEventListener(
+  `type`: "playing",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_contextmenu")
+inline def addEventListener(
+  `type`: "contextmenu",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_focusin")
+inline def addEventListener(
+  `type`: "focusin",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_play")
+inline def addEventListener(
+  `type`: "play",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_devicemotion")
+inline def addEventListener(
+  `type`: "devicemotion",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_suspend")
+inline def addEventListener(
+  `type`: "suspend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_animationcancel")
+inline def addEventListener(
+  `type`: "animationcancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_touchcancel")
+inline def addEventListener(
+  `type`: "touchcancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_transitionstart")
+inline def addEventListener(
+  `type`: "transitionstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_webkitanimationiteration")
+inline def addEventListener(
+  `type`: "webkitanimationiteration",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_beforeunload")
+inline def addEventListener(
+  `type`: "beforeunload",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_change")
+inline def addEventListener(
+  `type`: "change",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_close")
+inline def addEventListener(
+  `type`: "close",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_blur")
+inline def addEventListener(
+  `type`: "blur",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_loadstart")
+inline def addEventListener(
+  `type`: "loadstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_afterprint")
+inline def addEventListener(
+  `type`: "afterprint",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_submit")
+inline def addEventListener(
+  `type`: "submit",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_abort")
+inline def addEventListener(
+  `type`: "abort",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_keyup")
+inline def addEventListener(
+  `type`: "keyup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_dragstart")
+inline def addEventListener(
+  `type`: "dragstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_seeked")
+inline def addEventListener(
+  `type`: "seeked",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_selectstart")
+inline def addEventListener(
+  `type`: "selectstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_mouseout")
+inline def addEventListener(
+  `type`: "mouseout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_transitionrun")
+inline def addEventListener(
+  `type`: "transitionrun",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pause")
+inline def addEventListener(
+  `type`: "pause",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_load")
+inline def addEventListener(
+  `type`: "load",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pageshow")
+inline def addEventListener(
+  `type`: "pageshow",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_webkitanimationend")
+inline def addEventListener(
+  `type`: "webkitanimationend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_cuechange")
+inline def addEventListener(
+  `type`: "cuechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_input")
+inline def addEventListener(
+  `type`: "input",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_selectionchange")
+inline def addEventListener(
+  `type`: "selectionchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_storage")
+inline def addEventListener(
+  `type`: "storage",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_slotchange")
+inline def addEventListener(
+  `type`: "slotchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_languagechange")
+inline def addEventListener(
+  `type`: "languagechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_gamepaddisconnected")
+inline def addEventListener(
+  `type`: "gamepaddisconnected",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_canplay")
+inline def addEventListener(
+  `type`: "canplay",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_lostpointercapture")
+inline def addEventListener(
+  `type`: "lostpointercapture",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_toggle")
+inline def addEventListener(
+  `type`: "toggle",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_progress")
+inline def addEventListener(
+  `type`: "progress",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ProgressEvent[typings.std.EventTarget], Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_click")
+inline def addEventListener(
+  `type`: "click",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_formdata")
+inline def addEventListener(
+  `type`: "formdata",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_DOMContentLoaded")
+inline def addEventListener(
+  `type`: "DOMContentLoaded",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_seeking")
+inline def addEventListener(
+  `type`: "seeking",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointermove")
+inline def addEventListener(
+  `type`: "pointermove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_securitypolicyviolation")
+inline def addEventListener(
+  `type`: "securitypolicyviolation",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_compositionstart")
+inline def addEventListener(
+  `type`: "compositionstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_deviceorientation")
+inline def addEventListener(
+  `type`: "deviceorientation",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_pointercancel")
+inline def addEventListener(
+  `type`: "pointercancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_keydown")
+inline def addEventListener(
+  `type`: "keydown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("addEventListener_invalid")
+inline def addEventListener(
+  `type`: "invalid",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def addEventListener(
   `type`: java.lang.String,
   listener: EventListenerOrEventListenerObject,
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_DOMContentLoaded(`type`: DOMContentLoaded, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_DOMContentLoaded(
-  `type`: DOMContentLoaded,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_DOMContentLoaded(
-  `type`: DOMContentLoaded,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_abort(
-  `type`: abort,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_abort(
-  `type`: abort,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_afterprint(`type`: afterprint, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_afterprint(
-  `type`: afterprint,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_afterprint(
-  `type`: afterprint,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_animationcancel(
-  `type`: animationcancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_animationcancel(
-  `type`: animationcancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_animationcancel(
-  `type`: animationcancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_animationend(
-  `type`: animationend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_animationend(
-  `type`: animationend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_animationend(
-  `type`: animationend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_animationiteration(
-  `type`: animationiteration,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_animationiteration(
-  `type`: animationiteration,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_animationiteration(
-  `type`: animationiteration,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_animationstart(
-  `type`: animationstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_animationstart(
-  `type`: animationstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_animationstart(
-  `type`: animationstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_auxclick(
-  `type`: auxclick,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_auxclick(
-  `type`: auxclick,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_auxclick(
-  `type`: auxclick,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_beforeinput(
-  `type`: beforeinput,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_beforeinput(
-  `type`: beforeinput,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_beforeinput(
-  `type`: beforeinput,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_beforeprint(`type`: beforeprint, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_beforeprint(
-  `type`: beforeprint,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_beforeprint(
-  `type`: beforeprint,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_beforeunload(
-  `type`: beforeunload,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_beforeunload(
-  `type`: beforeunload,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_beforeunload(
-  `type`: beforeunload,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_blur(
-  `type`: typings.std.stdStrings.blur,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_blur(
-  `type`: typings.std.stdStrings.blur,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_blur(
-  `type`: typings.std.stdStrings.blur,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_cancel(
-  `type`: cancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_cancel(
-  `type`: cancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_canplay(`type`: canplay, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_canplay(
-  `type`: canplay,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_canplay(
-  `type`: canplay,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_canplaythrough(`type`: canplaythrough, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_canplaythrough(
-  `type`: canplaythrough,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_canplaythrough(
-  `type`: canplaythrough,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_change(
-  `type`: change,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_change(
-  `type`: change,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_click(`type`: click, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_click(
-  `type`: click,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_click(
-  `type`: click,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_close(
-  `type`: typings.std.stdStrings.close,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_close(
-  `type`: typings.std.stdStrings.close,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_close(
-  `type`: typings.std.stdStrings.close,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_compositionend(
-  `type`: compositionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_compositionend(
-  `type`: compositionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_compositionend(
-  `type`: compositionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_compositionstart(
-  `type`: compositionstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_compositionstart(
-  `type`: compositionstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_compositionstart(
-  `type`: compositionstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_compositionupdate(
-  `type`: compositionupdate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_compositionupdate(
-  `type`: compositionupdate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_compositionupdate(
-  `type`: compositionupdate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_contextmenu(
-  `type`: contextmenu,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_contextmenu(
-  `type`: contextmenu,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_contextmenu(
-  `type`: contextmenu,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_cuechange(`type`: cuechange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_cuechange(
-  `type`: cuechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_cuechange(
-  `type`: cuechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_dblclick(
-  `type`: dblclick,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_dblclick(
-  `type`: dblclick,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_dblclick(
-  `type`: dblclick,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_devicemotion(
-  `type`: devicemotion,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_devicemotion(
-  `type`: devicemotion,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_devicemotion(
-  `type`: devicemotion,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_deviceorientation(
-  `type`: deviceorientation,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_deviceorientation(
-  `type`: deviceorientation,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_deviceorientation(
-  `type`: deviceorientation,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_drag(`type`: drag, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_drag(
-  `type`: drag,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_drag(
-  `type`: drag,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_dragend(
-  `type`: dragend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_dragend(
-  `type`: dragend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_dragend(
-  `type`: dragend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_dragenter(
-  `type`: dragenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_dragenter(
-  `type`: dragenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_dragenter(
-  `type`: dragenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_dragleave(
-  `type`: dragleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_dragleave(
-  `type`: dragleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_dragleave(
-  `type`: dragleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_dragover(
-  `type`: dragover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_dragover(
-  `type`: dragover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_dragover(
-  `type`: dragover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_dragstart(
-  `type`: dragstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_dragstart(
-  `type`: dragstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_dragstart(
-  `type`: dragstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_drop(`type`: drop, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_drop(
-  `type`: drop,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_drop(
-  `type`: drop,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_durationchange(`type`: durationchange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_durationchange(
-  `type`: durationchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_durationchange(
-  `type`: durationchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_emptied(`type`: emptied, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_emptied(
-  `type`: emptied,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_emptied(
-  `type`: emptied,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_ended(
-  `type`: ended,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_ended(
-  `type`: ended,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ErrorEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_error(
-  `type`: error,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ErrorEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_error(
-  `type`: error,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ErrorEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_focus(
-  `type`: typings.std.stdStrings.focus,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_focus(
-  `type`: typings.std.stdStrings.focus,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_focus(
-  `type`: typings.std.stdStrings.focus,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_focusin(
-  `type`: focusin,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_focusin(
-  `type`: focusin,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_focusin(
-  `type`: focusin,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_focusout(
-  `type`: focusout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_focusout(
-  `type`: focusout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_focusout(
-  `type`: focusout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_formdata(
-  `type`: formdata,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_formdata(
-  `type`: formdata,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_formdata(
-  `type`: formdata,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_gamepadconnected(
-  `type`: gamepadconnected,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_gamepadconnected(
-  `type`: gamepadconnected,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_gamepadconnected(
-  `type`: gamepadconnected,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_gamepaddisconnected(
-  `type`: gamepaddisconnected,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_gamepaddisconnected(
-  `type`: gamepaddisconnected,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_gamepaddisconnected(
-  `type`: gamepaddisconnected,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_gotpointercapture(
-  `type`: gotpointercapture,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_gotpointercapture(
-  `type`: gotpointercapture,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_gotpointercapture(
-  `type`: gotpointercapture,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_hashchange(
-  `type`: hashchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_hashchange(
-  `type`: hashchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_hashchange(
-  `type`: hashchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_input(`type`: input, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_input(
-  `type`: input,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_input(
-  `type`: input,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_invalid(`type`: invalid, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_invalid(
-  `type`: invalid,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_invalid(
-  `type`: invalid,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_keydown(
-  `type`: keydown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_keydown(
-  `type`: keydown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_keydown(
-  `type`: keydown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_keypress(
-  `type`: keypress,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_keypress(
-  `type`: keypress,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_keypress(
-  `type`: keypress,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_keyup(
-  `type`: keyup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_keyup(
-  `type`: keyup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_keyup(
-  `type`: keyup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_languagechange(`type`: languagechange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_languagechange(
-  `type`: languagechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_languagechange(
-  `type`: languagechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_load(`type`: load, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_load(
-  `type`: load,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_load(
-  `type`: load,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_loadeddata(`type`: loadeddata, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_loadeddata(
-  `type`: loadeddata,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_loadeddata(
-  `type`: loadeddata,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_loadedmetadata(`type`: loadedmetadata, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_loadedmetadata(
-  `type`: loadedmetadata,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_loadedmetadata(
-  `type`: loadedmetadata,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_loadstart(`type`: loadstart, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_loadstart(
-  `type`: loadstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_loadstart(
-  `type`: loadstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_lostpointercapture(
-  `type`: lostpointercapture,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_lostpointercapture(
-  `type`: lostpointercapture,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_lostpointercapture(
-  `type`: lostpointercapture,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_message(
-  `type`: message,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_message(
-  `type`: message,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_message(
-  `type`: message,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_messageerror(
-  `type`: messageerror,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_messageerror(
-  `type`: messageerror,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_messageerror(
-  `type`: messageerror,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_mousedown(
-  `type`: mousedown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_mousedown(
-  `type`: mousedown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_mousedown(
-  `type`: mousedown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_mouseenter(
-  `type`: mouseenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_mouseenter(
-  `type`: mouseenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_mouseenter(
-  `type`: mouseenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_mouseleave(
-  `type`: mouseleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_mouseleave(
-  `type`: mouseleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_mouseleave(
-  `type`: mouseleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_mousemove(
-  `type`: mousemove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_mousemove(
-  `type`: mousemove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_mousemove(
-  `type`: mousemove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_mouseout(
-  `type`: mouseout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_mouseout(
-  `type`: mouseout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_mouseout(
-  `type`: mouseout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_mouseover(
-  `type`: mouseover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_mouseover(
-  `type`: mouseover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_mouseover(
-  `type`: mouseover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_mouseup(
-  `type`: mouseup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_mouseup(
-  `type`: mouseup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_mouseup(
-  `type`: mouseup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_offline(`type`: offline, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_offline(
-  `type`: offline,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_offline(
-  `type`: offline,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_online(`type`: online, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_online(
-  `type`: online,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_online(
-  `type`: online,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_orientationchange(`type`: orientationchange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_orientationchange(
-  `type`: orientationchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_orientationchange(
-  `type`: orientationchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_pagehide(
-  `type`: pagehide,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pagehide(
-  `type`: pagehide,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pagehide(
-  `type`: pagehide,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_pageshow(
-  `type`: pageshow,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pageshow(
-  `type`: pageshow,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pageshow(
-  `type`: pageshow,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_pause(`type`: pause, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pause(
-  `type`: pause,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pause(
-  `type`: pause,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_play(`type`: play, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_play(
-  `type`: play,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_play(
-  `type`: play,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_playing(`type`: playing, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_playing(
-  `type`: playing,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_playing(
-  `type`: playing,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_pointercancel(
-  `type`: pointercancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointercancel(
-  `type`: pointercancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointercancel(
-  `type`: pointercancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_pointerdown(
-  `type`: pointerdown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointerdown(
-  `type`: pointerdown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointerdown(
-  `type`: pointerdown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_pointerenter(
-  `type`: pointerenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointerenter(
-  `type`: pointerenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointerenter(
-  `type`: pointerenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_pointerleave(
-  `type`: pointerleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointerleave(
-  `type`: pointerleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointerleave(
-  `type`: pointerleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_pointermove(
-  `type`: pointermove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointermove(
-  `type`: pointermove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointermove(
-  `type`: pointermove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_pointerout(
-  `type`: pointerout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointerout(
-  `type`: pointerout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointerout(
-  `type`: pointerout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_pointerover(
-  `type`: pointerover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointerover(
-  `type`: pointerover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointerover(
-  `type`: pointerover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_pointerup(
-  `type`: pointerup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointerup(
-  `type`: pointerup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_pointerup(
-  `type`: pointerup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_popstate(
-  `type`: popstate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_popstate(
-  `type`: popstate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_popstate(
-  `type`: popstate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_progress(
-  `type`: progress,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ProgressEvent[typings.std.EventTarget], Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_progress(
-  `type`: progress,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ProgressEvent[typings.std.EventTarget], Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_progress(
-  `type`: progress,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ProgressEvent[typings.std.EventTarget], Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_ratechange(`type`: ratechange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_ratechange(
-  `type`: ratechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_ratechange(
-  `type`: ratechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_rejectionhandled(
-  `type`: rejectionhandled,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_rejectionhandled(
-  `type`: rejectionhandled,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_rejectionhandled(
-  `type`: rejectionhandled,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_reset(`type`: reset, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_reset(
-  `type`: reset,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_reset(
-  `type`: reset,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_resize(
-  `type`: resize,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_resize(
-  `type`: resize,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_scroll(
-  `type`: typings.std.stdStrings.scroll,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_scroll(
-  `type`: typings.std.stdStrings.scroll,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_scroll(
-  `type`: typings.std.stdStrings.scroll,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_securitypolicyviolation(
-  `type`: securitypolicyviolation,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_securitypolicyviolation(
-  `type`: securitypolicyviolation,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_securitypolicyviolation(
-  `type`: securitypolicyviolation,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_seeked(`type`: seeked, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_seeked(
-  `type`: seeked,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_seeked(
-  `type`: seeked,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_seeking(`type`: seeking, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_seeking(
-  `type`: seeking,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_seeking(
-  `type`: seeking,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_select(`type`: select, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_select(
-  `type`: select,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_select(
-  `type`: select,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_selectionchange(`type`: selectionchange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_selectionchange(
-  `type`: selectionchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_selectionchange(
-  `type`: selectionchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_selectstart(`type`: selectstart, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_selectstart(
-  `type`: selectstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_selectstart(
-  `type`: selectstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_slotchange(`type`: slotchange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_slotchange(
-  `type`: slotchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_slotchange(
-  `type`: slotchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_stalled(`type`: stalled, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_stalled(
-  `type`: stalled,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_stalled(
-  `type`: stalled,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_storage(
-  `type`: storage,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_storage(
-  `type`: storage,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_storage(
-  `type`: storage,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_submit(
-  `type`: submit,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_submit(
-  `type`: submit,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_submit(
-  `type`: submit,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_suspend(`type`: suspend, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_suspend(
-  `type`: suspend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_suspend(
-  `type`: suspend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_timeupdate(`type`: timeupdate, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_timeupdate(
-  `type`: timeupdate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_timeupdate(
-  `type`: timeupdate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_toggle(`type`: toggle, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_toggle(
-  `type`: toggle,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_toggle(
-  `type`: toggle,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_touchcancel(
-  `type`: touchcancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_touchcancel(
-  `type`: touchcancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_touchcancel(
-  `type`: touchcancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_touchend(
-  `type`: touchend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_touchend(
-  `type`: touchend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_touchend(
-  `type`: touchend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_touchmove(
-  `type`: touchmove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_touchmove(
-  `type`: touchmove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_touchmove(
-  `type`: touchmove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_touchstart(
-  `type`: touchstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_touchstart(
-  `type`: touchstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_touchstart(
-  `type`: touchstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_transitioncancel(
-  `type`: transitioncancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_transitioncancel(
-  `type`: transitioncancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_transitioncancel(
-  `type`: transitioncancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_transitionend(
-  `type`: transitionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_transitionend(
-  `type`: transitionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_transitionend(
-  `type`: transitionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_transitionrun(
-  `type`: transitionrun,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_transitionrun(
-  `type`: transitionrun,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_transitionrun(
-  `type`: transitionrun,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_transitionstart(
-  `type`: transitionstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_transitionstart(
-  `type`: transitionstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_transitionstart(
-  `type`: transitionstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_unhandledrejection(
-  `type`: unhandledrejection,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_unhandledrejection(
-  `type`: unhandledrejection,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_unhandledrejection(
-  `type`: unhandledrejection,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_unload(`type`: unload, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_unload(
-  `type`: unload,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_unload(
-  `type`: unload,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_volumechange(`type`: volumechange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_volumechange(
-  `type`: volumechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_volumechange(
-  `type`: volumechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_waiting(`type`: waiting, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_waiting(
-  `type`: waiting,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_waiting(
-  `type`: waiting,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_webkitanimationend(`type`: webkitanimationend, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_webkitanimationend(
-  `type`: webkitanimationend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_webkitanimationend(
-  `type`: webkitanimationend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_webkitanimationiteration(
-  `type`: webkitanimationiteration,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_webkitanimationiteration(
-  `type`: webkitanimationiteration,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_webkitanimationiteration(
-  `type`: webkitanimationiteration,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_webkitanimationstart(`type`: webkitanimationstart, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_webkitanimationstart(
-  `type`: webkitanimationstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_webkitanimationstart(
-  `type`: webkitanimationstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_webkittransitionend(`type`: webkittransitionend, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_webkittransitionend(
-  `type`: webkittransitionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_webkittransitionend(
-  `type`: webkittransitionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: AddEventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def addEventListener_wheel(`type`: wheel, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_wheel(
-  `type`: wheel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def addEventListener_wheel(
-  `type`: wheel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any],
   options: AddEventListenerOptions
 ): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
@@ -2785,1634 +2910,1873 @@ inline def queueMicrotask(callback: VoidFunction): Unit = js.Dynamic.global.appl
 /** @deprecated */
 inline def releaseEvents(): Unit = js.Dynamic.global.applyDynamic("releaseEvents")().asInstanceOf[Unit]
 
+@scala.annotation.targetName("removeEventListener_canplaythrough")
+inline def removeEventListener(`type`: "canplaythrough", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_compositionupdate")
+inline def removeEventListener(
+  `type`: "compositionupdate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_ratechange")
+inline def removeEventListener(`type`: "ratechange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_touchend")
+inline def removeEventListener(
+  `type`: "touchend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerup")
+inline def removeEventListener(
+  `type`: "pointerup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointermove")
+inline def removeEventListener(
+  `type`: "pointermove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_seeked")
+inline def removeEventListener(`type`: "seeked", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_rejectionhandled")
+inline def removeEventListener(
+  `type`: "rejectionhandled",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_play")
+inline def removeEventListener(`type`: "play", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_scroll")
+inline def removeEventListener(`type`: "scroll", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_lostpointercapture")
+inline def removeEventListener(
+  `type`: "lostpointercapture",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_hashchange")
+inline def removeEventListener(
+  `type`: "hashchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_formdata")
+inline def removeEventListener(
+  `type`: "formdata",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_canplay")
+inline def removeEventListener(`type`: "canplay", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_select")
+inline def removeEventListener(`type`: "select", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_compositionend")
+inline def removeEventListener(
+  `type`: "compositionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_securitypolicyviolation")
+inline def removeEventListener(
+  `type`: "securitypolicyviolation",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerdown")
+inline def removeEventListener(
+  `type`: "pointerdown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerenter")
+inline def removeEventListener(
+  `type`: "pointerenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_devicemotion")
+inline def removeEventListener(
+  `type`: "devicemotion",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_webkitanimationend")
+inline def removeEventListener(`type`: "webkitanimationend", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragend")
+inline def removeEventListener(
+  `type`: "dragend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_toggle")
+inline def removeEventListener(`type`: "toggle", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_gotpointercapture")
+inline def removeEventListener(
+  `type`: "gotpointercapture",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerleave")
+inline def removeEventListener(
+  `type`: "pointerleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragover")
+inline def removeEventListener(
+  `type`: "dragover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_selectionchange")
+inline def removeEventListener(`type`: "selectionchange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_playing")
+inline def removeEventListener(`type`: "playing", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_abort")
+inline def removeEventListener(`type`: "abort", listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_timeupdate")
+inline def removeEventListener(`type`: "timeupdate", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_contextmenu")
+inline def removeEventListener(
+  `type`: "contextmenu",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragenter")
+inline def removeEventListener(
+  `type`: "dragenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_afterprint")
+inline def removeEventListener(`type`: "afterprint", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_transitioncancel")
+inline def removeEventListener(
+  `type`: "transitioncancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_loadeddata")
+inline def removeEventListener(`type`: "loadeddata", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_progress")
+inline def removeEventListener(
+  `type`: "progress",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ProgressEvent[typings.std.EventTarget], Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_messageerror")
+inline def removeEventListener(
+  `type`: "messageerror",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_unhandledrejection")
+inline def removeEventListener(
+  `type`: "unhandledrejection",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseup")
+inline def removeEventListener(
+  `type`: "mouseup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_beforeunload")
+inline def removeEventListener(
+  `type`: "beforeunload",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mousedown")
+inline def removeEventListener(
+  `type`: "mousedown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseout")
+inline def removeEventListener(
+  `type`: "mouseout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_deviceorientation")
+inline def removeEventListener(
+  `type`: "deviceorientation",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_submit")
+inline def removeEventListener(
+  `type`: "submit",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_transitionrun")
+inline def removeEventListener(
+  `type`: "transitionrun",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_touchstart")
+inline def removeEventListener(
+  `type`: "touchstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mousemove")
+inline def removeEventListener(
+  `type`: "mousemove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pagehide")
+inline def removeEventListener(
+  `type`: "pagehide",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_animationstart")
+inline def removeEventListener(
+  `type`: "animationstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointercancel")
+inline def removeEventListener(
+  `type`: "pointercancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pause")
+inline def removeEventListener(`type`: "pause", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_beforeprint")
+inline def removeEventListener(`type`: "beforeprint", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_reset")
+inline def removeEventListener(`type`: "reset", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_DOMContentLoaded")
+inline def removeEventListener(`type`: "DOMContentLoaded", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_gamepaddisconnected")
+inline def removeEventListener(
+  `type`: "gamepaddisconnected",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_offline")
+inline def removeEventListener(`type`: "offline", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_touchmove")
+inline def removeEventListener(
+  `type`: "touchmove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_storage")
+inline def removeEventListener(
+  `type`: "storage",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_focusin")
+inline def removeEventListener(
+  `type`: "focusin",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_resize")
+inline def removeEventListener(`type`: "resize", listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_wheel")
+inline def removeEventListener(
+  `type`: "wheel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragleave")
+inline def removeEventListener(
+  `type`: "dragleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_slotchange")
+inline def removeEventListener(`type`: "slotchange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_loadstart")
+inline def removeEventListener(`type`: "loadstart", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseover")
+inline def removeEventListener(
+  `type`: "mouseover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_compositionstart")
+inline def removeEventListener(
+  `type`: "compositionstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_keypress")
+inline def removeEventListener(
+  `type`: "keypress",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_drag")
+inline def removeEventListener(`type`: "drag", listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_click")
+inline def removeEventListener(
+  `type`: "click",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_auxclick")
+inline def removeEventListener(
+  `type`: "auxclick",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_orientationchange")
+inline def removeEventListener(`type`: "orientationchange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragstart")
+inline def removeEventListener(
+  `type`: "dragstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_animationend")
+inline def removeEventListener(
+  `type`: "animationend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_languagechange")
+inline def removeEventListener(`type`: "languagechange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dblclick")
+inline def removeEventListener(
+  `type`: "dblclick",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_online")
+inline def removeEventListener(`type`: "online", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_close")
+inline def removeEventListener(`type`: "close", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_input")
+inline def removeEventListener(`type`: "input", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_touchcancel")
+inline def removeEventListener(
+  `type`: "touchcancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerout")
+inline def removeEventListener(
+  `type`: "pointerout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_error")
+inline def removeEventListener(
+  `type`: "error",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ErrorEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_webkittransitionend")
+inline def removeEventListener(`type`: "webkittransitionend", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_selectstart")
+inline def removeEventListener(`type`: "selectstart", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pageshow")
+inline def removeEventListener(
+  `type`: "pageshow",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_transitionstart")
+inline def removeEventListener(
+  `type`: "transitionstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_webkitanimationiteration")
+inline def removeEventListener(
+  `type`: "webkitanimationiteration",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_waiting")
+inline def removeEventListener(`type`: "waiting", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_blur")
+inline def removeEventListener(
+  `type`: "blur",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_beforeinput")
+inline def removeEventListener(
+  `type`: "beforeinput",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_load")
+inline def removeEventListener(`type`: "load", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_transitionend")
+inline def removeEventListener(
+  `type`: "transitionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_emptied")
+inline def removeEventListener(`type`: "emptied", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_seeking")
+inline def removeEventListener(`type`: "seeking", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseenter")
+inline def removeEventListener(
+  `type`: "mouseenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_volumechange")
+inline def removeEventListener(`type`: "volumechange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_keyup")
+inline def removeEventListener(
+  `type`: "keyup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_suspend")
+inline def removeEventListener(`type`: "suspend", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_unload")
+inline def removeEventListener(`type`: "unload", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_webkitanimationstart")
+inline def removeEventListener(`type`: "webkitanimationstart", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_focusout")
+inline def removeEventListener(
+  `type`: "focusout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerover")
+inline def removeEventListener(
+  `type`: "pointerover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_cancel")
+inline def removeEventListener(`type`: "cancel", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_durationchange")
+inline def removeEventListener(`type`: "durationchange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_stalled")
+inline def removeEventListener(`type`: "stalled", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_popstate")
+inline def removeEventListener(
+  `type`: "popstate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_drop")
+inline def removeEventListener(`type`: "drop", listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_focus")
+inline def removeEventListener(
+  `type`: "focus",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_message")
+inline def removeEventListener(
+  `type`: "message",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_cuechange")
+inline def removeEventListener(`type`: "cuechange", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_gamepadconnected")
+inline def removeEventListener(
+  `type`: "gamepadconnected",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseleave")
+inline def removeEventListener(
+  `type`: "mouseleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_loadedmetadata")
+inline def removeEventListener(`type`: "loadedmetadata", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_animationcancel")
+inline def removeEventListener(
+  `type`: "animationcancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_ended")
+inline def removeEventListener(`type`: "ended", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_invalid")
+inline def removeEventListener(`type`: "invalid", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_animationiteration")
+inline def removeEventListener(
+  `type`: "animationiteration",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_change")
+inline def removeEventListener(`type`: "change", listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_keydown")
+inline def removeEventListener(
+  `type`: "keydown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_storage")
+inline def removeEventListener(
+  `type`: "storage",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_loadeddata")
+inline def removeEventListener(
+  `type`: "loadeddata",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_abort")
+inline def removeEventListener(
+  `type`: "abort",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_canplaythrough")
+inline def removeEventListener(
+  `type`: "canplaythrough",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_orientationchange")
+inline def removeEventListener(
+  `type`: "orientationchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_unhandledrejection")
+inline def removeEventListener(
+  `type`: "unhandledrejection",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_formdata")
+inline def removeEventListener(
+  `type`: "formdata",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_languagechange")
+inline def removeEventListener(
+  `type`: "languagechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_animationstart")
+inline def removeEventListener(
+  `type`: "animationstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_touchmove")
+inline def removeEventListener(
+  `type`: "touchmove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_lostpointercapture")
+inline def removeEventListener(
+  `type`: "lostpointercapture",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_volumechange")
+inline def removeEventListener(
+  `type`: "volumechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mousedown")
+inline def removeEventListener(
+  `type`: "mousedown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragend")
+inline def removeEventListener(
+  `type`: "dragend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_gamepadconnected")
+inline def removeEventListener(
+  `type`: "gamepadconnected",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseup")
+inline def removeEventListener(
+  `type`: "mouseup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_keydown")
+inline def removeEventListener(
+  `type`: "keydown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_seeked")
+inline def removeEventListener(
+  `type`: "seeked",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerleave")
+inline def removeEventListener(
+  `type`: "pointerleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_webkitanimationiteration")
+inline def removeEventListener(
+  `type`: "webkitanimationiteration",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_input")
+inline def removeEventListener(
+  `type`: "input",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pause")
+inline def removeEventListener(
+  `type`: "pause",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_reset")
+inline def removeEventListener(
+  `type`: "reset",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_unload")
+inline def removeEventListener(
+  `type`: "unload",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_keyup")
+inline def removeEventListener(
+  `type`: "keyup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_webkitanimationstart")
+inline def removeEventListener(
+  `type`: "webkitanimationstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_DOMContentLoaded")
+inline def removeEventListener(
+  `type`: "DOMContentLoaded",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_transitionstart")
+inline def removeEventListener(
+  `type`: "transitionstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_invalid")
+inline def removeEventListener(
+  `type`: "invalid",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_drop")
+inline def removeEventListener(
+  `type`: "drop",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_play")
+inline def removeEventListener(
+  `type`: "play",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_blur")
+inline def removeEventListener(
+  `type`: "blur",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_rejectionhandled")
+inline def removeEventListener(
+  `type`: "rejectionhandled",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_selectstart")
+inline def removeEventListener(
+  `type`: "selectstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_ratechange")
+inline def removeEventListener(
+  `type`: "ratechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_close")
+inline def removeEventListener(
+  `type`: "close",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_transitionend")
+inline def removeEventListener(
+  `type`: "transitionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pagehide")
+inline def removeEventListener(
+  `type`: "pagehide",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_error")
+inline def removeEventListener(
+  `type`: "error",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ErrorEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_auxclick")
+inline def removeEventListener(
+  `type`: "auxclick",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mousemove")
+inline def removeEventListener(
+  `type`: "mousemove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_compositionend")
+inline def removeEventListener(
+  `type`: "compositionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_message")
+inline def removeEventListener(
+  `type`: "message",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_animationend")
+inline def removeEventListener(
+  `type`: "animationend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dblclick")
+inline def removeEventListener(
+  `type`: "dblclick",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_progress")
+inline def removeEventListener(
+  `type`: "progress",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ProgressEvent[typings.std.EventTarget], Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointermove")
+inline def removeEventListener(
+  `type`: "pointermove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_devicemotion")
+inline def removeEventListener(
+  `type`: "devicemotion",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_playing")
+inline def removeEventListener(
+  `type`: "playing",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointercancel")
+inline def removeEventListener(
+  `type`: "pointercancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_cuechange")
+inline def removeEventListener(
+  `type`: "cuechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_suspend")
+inline def removeEventListener(
+  `type`: "suspend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_transitioncancel")
+inline def removeEventListener(
+  `type`: "transitioncancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragover")
+inline def removeEventListener(
+  `type`: "dragover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_scroll")
+inline def removeEventListener(
+  `type`: "scroll",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseleave")
+inline def removeEventListener(
+  `type`: "mouseleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerout")
+inline def removeEventListener(
+  `type`: "pointerout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerenter")
+inline def removeEventListener(
+  `type`: "pointerenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseenter")
+inline def removeEventListener(
+  `type`: "mouseenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_webkitanimationend")
+inline def removeEventListener(
+  `type`: "webkitanimationend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_wheel")
+inline def removeEventListener(
+  `type`: "wheel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_messageerror")
+inline def removeEventListener(
+  `type`: "messageerror",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_durationchange")
+inline def removeEventListener(
+  `type`: "durationchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_beforeprint")
+inline def removeEventListener(
+  `type`: "beforeprint",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_ended")
+inline def removeEventListener(
+  `type`: "ended",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_emptied")
+inline def removeEventListener(
+  `type`: "emptied",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerdown")
+inline def removeEventListener(
+  `type`: "pointerdown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_focusin")
+inline def removeEventListener(
+  `type`: "focusin",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_timeupdate")
+inline def removeEventListener(
+  `type`: "timeupdate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseout")
+inline def removeEventListener(
+  `type`: "mouseout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_load")
+inline def removeEventListener(
+  `type`: "load",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_waiting")
+inline def removeEventListener(
+  `type`: "waiting",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_touchend")
+inline def removeEventListener(
+  `type`: "touchend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_beforeinput")
+inline def removeEventListener(
+  `type`: "beforeinput",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_contextmenu")
+inline def removeEventListener(
+  `type`: "contextmenu",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_compositionupdate")
+inline def removeEventListener(
+  `type`: "compositionupdate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_popstate")
+inline def removeEventListener(
+  `type`: "popstate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_hashchange")
+inline def removeEventListener(
+  `type`: "hashchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_afterprint")
+inline def removeEventListener(
+  `type`: "afterprint",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_select")
+inline def removeEventListener(
+  `type`: "select",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_animationiteration")
+inline def removeEventListener(
+  `type`: "animationiteration",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_gamepaddisconnected")
+inline def removeEventListener(
+  `type`: "gamepaddisconnected",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_focus")
+inline def removeEventListener(
+  `type`: "focus",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_selectionchange")
+inline def removeEventListener(
+  `type`: "selectionchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_offline")
+inline def removeEventListener(
+  `type`: "offline",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_deviceorientation")
+inline def removeEventListener(
+  `type`: "deviceorientation",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_slotchange")
+inline def removeEventListener(
+  `type`: "slotchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_loadstart")
+inline def removeEventListener(
+  `type`: "loadstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_change")
+inline def removeEventListener(
+  `type`: "change",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pageshow")
+inline def removeEventListener(
+  `type`: "pageshow",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_beforeunload")
+inline def removeEventListener(
+  `type`: "beforeunload",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_touchstart")
+inline def removeEventListener(
+  `type`: "touchstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_focusout")
+inline def removeEventListener(
+  `type`: "focusout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_loadedmetadata")
+inline def removeEventListener(
+  `type`: "loadedmetadata",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_drag")
+inline def removeEventListener(
+  `type`: "drag",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerover")
+inline def removeEventListener(
+  `type`: "pointerover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_webkittransitionend")
+inline def removeEventListener(
+  `type`: "webkittransitionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragleave")
+inline def removeEventListener(
+  `type`: "dragleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragenter")
+inline def removeEventListener(
+  `type`: "dragenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_submit")
+inline def removeEventListener(
+  `type`: "submit",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_gotpointercapture")
+inline def removeEventListener(
+  `type`: "gotpointercapture",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_securitypolicyviolation")
+inline def removeEventListener(
+  `type`: "securitypolicyviolation",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_resize")
+inline def removeEventListener(
+  `type`: "resize",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_compositionstart")
+inline def removeEventListener(
+  `type`: "compositionstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_touchcancel")
+inline def removeEventListener(
+  `type`: "touchcancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_animationcancel")
+inline def removeEventListener(
+  `type`: "animationcancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_online")
+inline def removeEventListener(
+  `type`: "online",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseover")
+inline def removeEventListener(
+  `type`: "mouseover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_keypress")
+inline def removeEventListener(
+  `type`: "keypress",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_canplay")
+inline def removeEventListener(
+  `type`: "canplay",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_toggle")
+inline def removeEventListener(
+  `type`: "toggle",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_cancel")
+inline def removeEventListener(
+  `type`: "cancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragstart")
+inline def removeEventListener(
+  `type`: "dragstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_stalled")
+inline def removeEventListener(
+  `type`: "stalled",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_transitionrun")
+inline def removeEventListener(
+  `type`: "transitionrun",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerup")
+inline def removeEventListener(
+  `type`: "pointerup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_click")
+inline def removeEventListener(
+  `type`: "click",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_seeking")
+inline def removeEventListener(
+  `type`: "seeking",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_lostpointercapture")
+inline def removeEventListener(
+  `type`: "lostpointercapture",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pageshow")
+inline def removeEventListener(
+  `type`: "pageshow",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_touchstart")
+inline def removeEventListener(
+  `type`: "touchstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mousedown")
+inline def removeEventListener(
+  `type`: "mousedown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerdown")
+inline def removeEventListener(
+  `type`: "pointerdown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_load")
+inline def removeEventListener(
+  `type`: "load",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_securitypolicyviolation")
+inline def removeEventListener(
+  `type`: "securitypolicyviolation",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragend")
+inline def removeEventListener(
+  `type`: "dragend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerenter")
+inline def removeEventListener(
+  `type`: "pointerenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_DOMContentLoaded")
+inline def removeEventListener(
+  `type`: "DOMContentLoaded",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_slotchange")
+inline def removeEventListener(
+  `type`: "slotchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_transitionstart")
+inline def removeEventListener(
+  `type`: "transitionstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_play")
+inline def removeEventListener(
+  `type`: "play",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseout")
+inline def removeEventListener(
+  `type`: "mouseout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_afterprint")
+inline def removeEventListener(
+  `type`: "afterprint",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_languagechange")
+inline def removeEventListener(
+  `type`: "languagechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_invalid")
+inline def removeEventListener(
+  `type`: "invalid",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_suspend")
+inline def removeEventListener(
+  `type`: "suspend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragleave")
+inline def removeEventListener(
+  `type`: "dragleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_abort")
+inline def removeEventListener(
+  `type`: "abort",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_unhandledrejection")
+inline def removeEventListener(
+  `type`: "unhandledrejection",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_keyup")
+inline def removeEventListener(
+  `type`: "keyup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_durationchange")
+inline def removeEventListener(
+  `type`: "durationchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_ended")
+inline def removeEventListener(
+  `type`: "ended",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_drop")
+inline def removeEventListener(
+  `type`: "drop",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pause")
+inline def removeEventListener(
+  `type`: "pause",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_waiting")
+inline def removeEventListener(
+  `type`: "waiting",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_touchcancel")
+inline def removeEventListener(
+  `type`: "touchcancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_keydown")
+inline def removeEventListener(
+  `type`: "keydown",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_loadedmetadata")
+inline def removeEventListener(
+  `type`: "loadedmetadata",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_beforeunload")
+inline def removeEventListener(
+  `type`: "beforeunload",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_online")
+inline def removeEventListener(
+  `type`: "online",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_seeked")
+inline def removeEventListener(
+  `type`: "seeked",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_unload")
+inline def removeEventListener(
+  `type`: "unload",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_gamepadconnected")
+inline def removeEventListener(
+  `type`: "gamepadconnected",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mousemove")
+inline def removeEventListener(
+  `type`: "mousemove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_orientationchange")
+inline def removeEventListener(
+  `type`: "orientationchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_storage")
+inline def removeEventListener(
+  `type`: "storage",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_progress")
+inline def removeEventListener(
+  `type`: "progress",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ProgressEvent[typings.std.EventTarget], Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_wheel")
+inline def removeEventListener(
+  `type`: "wheel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_gamepaddisconnected")
+inline def removeEventListener(
+  `type`: "gamepaddisconnected",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_animationend")
+inline def removeEventListener(
+  `type`: "animationend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseenter")
+inline def removeEventListener(
+  `type`: "mouseenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_change")
+inline def removeEventListener(
+  `type`: "change",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_drag")
+inline def removeEventListener(
+  `type`: "drag",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_selectstart")
+inline def removeEventListener(
+  `type`: "selectstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_transitioncancel")
+inline def removeEventListener(
+  `type`: "transitioncancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointercancel")
+inline def removeEventListener(
+  `type`: "pointercancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_animationstart")
+inline def removeEventListener(
+  `type`: "animationstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_seeking")
+inline def removeEventListener(
+  `type`: "seeking",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_click")
+inline def removeEventListener(
+  `type`: "click",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_timeupdate")
+inline def removeEventListener(
+  `type`: "timeupdate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_close")
+inline def removeEventListener(
+  `type`: "close",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_select")
+inline def removeEventListener(
+  `type`: "select",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_toggle")
+inline def removeEventListener(
+  `type`: "toggle",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_webkitanimationend")
+inline def removeEventListener(
+  `type`: "webkitanimationend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_auxclick")
+inline def removeEventListener(
+  `type`: "auxclick",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_submit")
+inline def removeEventListener(
+  `type`: "submit",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_webkittransitionend")
+inline def removeEventListener(
+  `type`: "webkittransitionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragenter")
+inline def removeEventListener(
+  `type`: "dragenter",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dblclick")
+inline def removeEventListener(
+  `type`: "dblclick",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_error")
+inline def removeEventListener(
+  `type`: "error",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ErrorEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_input")
+inline def removeEventListener(
+  `type`: "input",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_message")
+inline def removeEventListener(
+  `type`: "message",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_selectionchange")
+inline def removeEventListener(
+  `type`: "selectionchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_cancel")
+inline def removeEventListener(
+  `type`: "cancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_playing")
+inline def removeEventListener(
+  `type`: "playing",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_deviceorientation")
+inline def removeEventListener(
+  `type`: "deviceorientation",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_emptied")
+inline def removeEventListener(
+  `type`: "emptied",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_focus")
+inline def removeEventListener(
+  `type`: "focus",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_resize")
+inline def removeEventListener(
+  `type`: "resize",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_keypress")
+inline def removeEventListener(
+  `type`: "keypress",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_blur")
+inline def removeEventListener(
+  `type`: "blur",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseup")
+inline def removeEventListener(
+  `type`: "mouseup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_messageerror")
+inline def removeEventListener(
+  `type`: "messageerror",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseleave")
+inline def removeEventListener(
+  `type`: "mouseleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_webkitanimationstart")
+inline def removeEventListener(
+  `type`: "webkitanimationstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_scroll")
+inline def removeEventListener(
+  `type`: "scroll",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_touchend")
+inline def removeEventListener(
+  `type`: "touchend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_contextmenu")
+inline def removeEventListener(
+  `type`: "contextmenu",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_webkitanimationiteration")
+inline def removeEventListener(
+  `type`: "webkitanimationiteration",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_beforeinput")
+inline def removeEventListener(
+  `type`: "beforeinput",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointermove")
+inline def removeEventListener(
+  `type`: "pointermove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_loadstart")
+inline def removeEventListener(
+  `type`: "loadstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_canplaythrough")
+inline def removeEventListener(
+  `type`: "canplaythrough",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerout")
+inline def removeEventListener(
+  `type`: "pointerout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_canplay")
+inline def removeEventListener(
+  `type`: "canplay",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragstart")
+inline def removeEventListener(
+  `type`: "dragstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_focusout")
+inline def removeEventListener(
+  `type`: "focusout",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_focusin")
+inline def removeEventListener(
+  `type`: "focusin",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_animationiteration")
+inline def removeEventListener(
+  `type`: "animationiteration",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_dragover")
+inline def removeEventListener(
+  `type`: "dragover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_touchmove")
+inline def removeEventListener(
+  `type`: "touchmove",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_transitionend")
+inline def removeEventListener(
+  `type`: "transitionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_animationcancel")
+inline def removeEventListener(
+  `type`: "animationcancel",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_popstate")
+inline def removeEventListener(
+  `type`: "popstate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_devicemotion")
+inline def removeEventListener(
+  `type`: "devicemotion",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_mouseover")
+inline def removeEventListener(
+  `type`: "mouseover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_compositionend")
+inline def removeEventListener(
+  `type`: "compositionend",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pagehide")
+inline def removeEventListener(
+  `type`: "pagehide",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_compositionupdate")
+inline def removeEventListener(
+  `type`: "compositionupdate",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_stalled")
+inline def removeEventListener(
+  `type`: "stalled",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_transitionrun")
+inline def removeEventListener(
+  `type`: "transitionrun",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_reset")
+inline def removeEventListener(
+  `type`: "reset",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_hashchange")
+inline def removeEventListener(
+  `type`: "hashchange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_volumechange")
+inline def removeEventListener(
+  `type`: "volumechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerleave")
+inline def removeEventListener(
+  `type`: "pointerleave",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerover")
+inline def removeEventListener(
+  `type`: "pointerover",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_pointerup")
+inline def removeEventListener(
+  `type`: "pointerup",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_loadeddata")
+inline def removeEventListener(
+  `type`: "loadeddata",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_rejectionhandled")
+inline def removeEventListener(
+  `type`: "rejectionhandled",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_formdata")
+inline def removeEventListener(
+  `type`: "formdata",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_ratechange")
+inline def removeEventListener(
+  `type`: "ratechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_compositionstart")
+inline def removeEventListener(
+  `type`: "compositionstart",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_beforeprint")
+inline def removeEventListener(
+  `type`: "beforeprint",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_gotpointercapture")
+inline def removeEventListener(
+  `type`: "gotpointercapture",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_cuechange")
+inline def removeEventListener(
+  `type`: "cuechange",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+@scala.annotation.targetName("removeEventListener_offline")
+inline def removeEventListener(
+  `type`: "offline",
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def removeEventListener(
   `type`: java.lang.String,
   listener: EventListenerOrEventListenerObject,
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_DOMContentLoaded(`type`: DOMContentLoaded, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_DOMContentLoaded(
-  `type`: DOMContentLoaded,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_DOMContentLoaded(
-  `type`: DOMContentLoaded,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_abort(
-  `type`: abort,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_abort(
-  `type`: abort,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_afterprint(`type`: afterprint, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_afterprint(
-  `type`: afterprint,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_afterprint(
-  `type`: afterprint,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_animationcancel(
-  `type`: animationcancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_animationcancel(
-  `type`: animationcancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_animationcancel(
-  `type`: animationcancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_animationend(
-  `type`: animationend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_animationend(
-  `type`: animationend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_animationend(
-  `type`: animationend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_animationiteration(
-  `type`: animationiteration,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_animationiteration(
-  `type`: animationiteration,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_animationiteration(
-  `type`: animationiteration,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_animationstart(
-  `type`: animationstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_animationstart(
-  `type`: animationstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_animationstart(
-  `type`: animationstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_auxclick(
-  `type`: auxclick,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_auxclick(
-  `type`: auxclick,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_auxclick(
-  `type`: auxclick,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_beforeinput(
-  `type`: beforeinput,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_beforeinput(
-  `type`: beforeinput,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_beforeinput(
-  `type`: beforeinput,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_beforeprint(`type`: beforeprint, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_beforeprint(
-  `type`: beforeprint,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_beforeprint(
-  `type`: beforeprint,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_beforeunload(
-  `type`: beforeunload,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_beforeunload(
-  `type`: beforeunload,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_beforeunload(
-  `type`: beforeunload,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_blur(
-  `type`: typings.std.stdStrings.blur,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_blur(
-  `type`: typings.std.stdStrings.blur,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_blur(
-  `type`: typings.std.stdStrings.blur,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_cancel(
-  `type`: cancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_cancel(
-  `type`: cancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_canplay(`type`: canplay, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_canplay(
-  `type`: canplay,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_canplay(
-  `type`: canplay,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_canplaythrough(`type`: canplaythrough, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_canplaythrough(
-  `type`: canplaythrough,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_canplaythrough(
-  `type`: canplaythrough,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_change(
-  `type`: change,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_change(
-  `type`: change,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_click(`type`: click, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_click(
-  `type`: click,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_click(
-  `type`: click,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_close(
-  `type`: typings.std.stdStrings.close,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_close(
-  `type`: typings.std.stdStrings.close,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_close(
-  `type`: typings.std.stdStrings.close,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_compositionend(
-  `type`: compositionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_compositionend(
-  `type`: compositionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_compositionend(
-  `type`: compositionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_compositionstart(
-  `type`: compositionstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_compositionstart(
-  `type`: compositionstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_compositionstart(
-  `type`: compositionstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_compositionupdate(
-  `type`: compositionupdate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_compositionupdate(
-  `type`: compositionupdate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_compositionupdate(
-  `type`: compositionupdate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.CompositionEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_contextmenu(
-  `type`: contextmenu,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_contextmenu(
-  `type`: contextmenu,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_contextmenu(
-  `type`: contextmenu,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_cuechange(`type`: cuechange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_cuechange(
-  `type`: cuechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_cuechange(
-  `type`: cuechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_dblclick(
-  `type`: dblclick,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_dblclick(
-  `type`: dblclick,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_dblclick(
-  `type`: dblclick,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_devicemotion(
-  `type`: devicemotion,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_devicemotion(
-  `type`: devicemotion,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_devicemotion(
-  `type`: devicemotion,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_deviceorientation(
-  `type`: deviceorientation,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_deviceorientation(
-  `type`: deviceorientation,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_deviceorientation(
-  `type`: deviceorientation,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_drag(`type`: drag, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_drag(
-  `type`: drag,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_drag(
-  `type`: drag,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_dragend(
-  `type`: dragend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_dragend(
-  `type`: dragend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_dragend(
-  `type`: dragend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_dragenter(
-  `type`: dragenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_dragenter(
-  `type`: dragenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_dragenter(
-  `type`: dragenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_dragleave(
-  `type`: dragleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_dragleave(
-  `type`: dragleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_dragleave(
-  `type`: dragleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_dragover(
-  `type`: dragover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_dragover(
-  `type`: dragover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_dragover(
-  `type`: dragover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_dragstart(
-  `type`: dragstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_dragstart(
-  `type`: dragstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_dragstart(
-  `type`: dragstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_drop(`type`: drop, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_drop(
-  `type`: drop,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_drop(
-  `type`: drop,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_durationchange(`type`: durationchange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_durationchange(
-  `type`: durationchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_durationchange(
-  `type`: durationchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_emptied(`type`: emptied, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_emptied(
-  `type`: emptied,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_emptied(
-  `type`: emptied,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_ended(
-  `type`: ended,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_ended(
-  `type`: ended,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ErrorEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_error(
-  `type`: error,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ErrorEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_error(
-  `type`: error,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ErrorEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_focus(
-  `type`: typings.std.stdStrings.focus,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_focus(
-  `type`: typings.std.stdStrings.focus,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_focus(
-  `type`: typings.std.stdStrings.focus,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_focusin(
-  `type`: focusin,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_focusin(
-  `type`: focusin,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_focusin(
-  `type`: focusin,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_focusout(
-  `type`: focusout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_focusout(
-  `type`: focusout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_focusout(
-  `type`: focusout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_formdata(
-  `type`: formdata,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_formdata(
-  `type`: formdata,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_formdata(
-  `type`: formdata,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_gamepadconnected(
-  `type`: gamepadconnected,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_gamepadconnected(
-  `type`: gamepadconnected,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_gamepadconnected(
-  `type`: gamepadconnected,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_gamepaddisconnected(
-  `type`: gamepaddisconnected,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_gamepaddisconnected(
-  `type`: gamepaddisconnected,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_gamepaddisconnected(
-  `type`: gamepaddisconnected,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_gotpointercapture(
-  `type`: gotpointercapture,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_gotpointercapture(
-  `type`: gotpointercapture,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_gotpointercapture(
-  `type`: gotpointercapture,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_hashchange(
-  `type`: hashchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_hashchange(
-  `type`: hashchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_hashchange(
-  `type`: hashchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_input(`type`: input, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_input(
-  `type`: input,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_input(
-  `type`: input,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_invalid(`type`: invalid, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_invalid(
-  `type`: invalid,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_invalid(
-  `type`: invalid,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_keydown(
-  `type`: keydown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_keydown(
-  `type`: keydown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_keydown(
-  `type`: keydown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_keypress(
-  `type`: keypress,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_keypress(
-  `type`: keypress,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_keypress(
-  `type`: keypress,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_keyup(
-  `type`: keyup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_keyup(
-  `type`: keyup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_keyup(
-  `type`: keyup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_languagechange(`type`: languagechange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_languagechange(
-  `type`: languagechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_languagechange(
-  `type`: languagechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_load(`type`: load, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_load(
-  `type`: load,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_load(
-  `type`: load,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_loadeddata(`type`: loadeddata, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_loadeddata(
-  `type`: loadeddata,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_loadeddata(
-  `type`: loadeddata,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_loadedmetadata(`type`: loadedmetadata, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_loadedmetadata(
-  `type`: loadedmetadata,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_loadedmetadata(
-  `type`: loadedmetadata,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_loadstart(`type`: loadstart, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_loadstart(
-  `type`: loadstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_loadstart(
-  `type`: loadstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_lostpointercapture(
-  `type`: lostpointercapture,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_lostpointercapture(
-  `type`: lostpointercapture,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_lostpointercapture(
-  `type`: lostpointercapture,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_message(
-  `type`: message,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_message(
-  `type`: message,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_message(
-  `type`: message,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_messageerror(
-  `type`: messageerror,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_messageerror(
-  `type`: messageerror,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_messageerror(
-  `type`: messageerror,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_mousedown(
-  `type`: mousedown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_mousedown(
-  `type`: mousedown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_mousedown(
-  `type`: mousedown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_mouseenter(
-  `type`: mouseenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_mouseenter(
-  `type`: mouseenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_mouseenter(
-  `type`: mouseenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_mouseleave(
-  `type`: mouseleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_mouseleave(
-  `type`: mouseleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_mouseleave(
-  `type`: mouseleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_mousemove(
-  `type`: mousemove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_mousemove(
-  `type`: mousemove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_mousemove(
-  `type`: mousemove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_mouseout(
-  `type`: mouseout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_mouseout(
-  `type`: mouseout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_mouseout(
-  `type`: mouseout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_mouseover(
-  `type`: mouseover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_mouseover(
-  `type`: mouseover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_mouseover(
-  `type`: mouseover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_mouseup(
-  `type`: mouseup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_mouseup(
-  `type`: mouseup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_mouseup(
-  `type`: mouseup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_offline(`type`: offline, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_offline(
-  `type`: offline,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_offline(
-  `type`: offline,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_online(`type`: online, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_online(
-  `type`: online,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_online(
-  `type`: online,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_orientationchange(`type`: orientationchange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_orientationchange(
-  `type`: orientationchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_orientationchange(
-  `type`: orientationchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_pagehide(
-  `type`: pagehide,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pagehide(
-  `type`: pagehide,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pagehide(
-  `type`: pagehide,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_pageshow(
-  `type`: pageshow,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pageshow(
-  `type`: pageshow,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pageshow(
-  `type`: pageshow,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_pause(`type`: pause, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pause(
-  `type`: pause,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pause(
-  `type`: pause,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_play(`type`: play, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_play(
-  `type`: play,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_play(
-  `type`: play,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_playing(`type`: playing, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_playing(
-  `type`: playing,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_playing(
-  `type`: playing,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_pointercancel(
-  `type`: pointercancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointercancel(
-  `type`: pointercancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointercancel(
-  `type`: pointercancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_pointerdown(
-  `type`: pointerdown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointerdown(
-  `type`: pointerdown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointerdown(
-  `type`: pointerdown,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_pointerenter(
-  `type`: pointerenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointerenter(
-  `type`: pointerenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointerenter(
-  `type`: pointerenter,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_pointerleave(
-  `type`: pointerleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointerleave(
-  `type`: pointerleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointerleave(
-  `type`: pointerleave,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_pointermove(
-  `type`: pointermove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointermove(
-  `type`: pointermove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointermove(
-  `type`: pointermove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_pointerout(
-  `type`: pointerout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointerout(
-  `type`: pointerout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointerout(
-  `type`: pointerout,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_pointerover(
-  `type`: pointerover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointerover(
-  `type`: pointerover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointerover(
-  `type`: pointerover,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_pointerup(
-  `type`: pointerup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointerup(
-  `type`: pointerup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_pointerup(
-  `type`: pointerup,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_popstate(
-  `type`: popstate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_popstate(
-  `type`: popstate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_popstate(
-  `type`: popstate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_progress(
-  `type`: progress,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ProgressEvent[typings.std.EventTarget], Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_progress(
-  `type`: progress,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ProgressEvent[typings.std.EventTarget], Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_progress(
-  `type`: progress,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ProgressEvent[typings.std.EventTarget], Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_ratechange(`type`: ratechange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_ratechange(
-  `type`: ratechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_ratechange(
-  `type`: ratechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_rejectionhandled(
-  `type`: rejectionhandled,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_rejectionhandled(
-  `type`: rejectionhandled,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_rejectionhandled(
-  `type`: rejectionhandled,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_reset(`type`: reset, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_reset(
-  `type`: reset,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_reset(
-  `type`: reset,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_resize(
-  `type`: resize,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_resize(
-  `type`: resize,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_scroll(
-  `type`: typings.std.stdStrings.scroll,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_scroll(
-  `type`: typings.std.stdStrings.scroll,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_scroll(
-  `type`: typings.std.stdStrings.scroll,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_securitypolicyviolation(
-  `type`: securitypolicyviolation,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_securitypolicyviolation(
-  `type`: securitypolicyviolation,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_securitypolicyviolation(
-  `type`: securitypolicyviolation,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_seeked(`type`: seeked, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_seeked(
-  `type`: seeked,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_seeked(
-  `type`: seeked,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_seeking(`type`: seeking, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_seeking(
-  `type`: seeking,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_seeking(
-  `type`: seeking,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_select(`type`: select, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_select(
-  `type`: select,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_select(
-  `type`: select,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_selectionchange(`type`: selectionchange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_selectionchange(
-  `type`: selectionchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_selectionchange(
-  `type`: selectionchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_selectstart(`type`: selectstart, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_selectstart(
-  `type`: selectstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_selectstart(
-  `type`: selectstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_slotchange(`type`: slotchange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_slotchange(
-  `type`: slotchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_slotchange(
-  `type`: slotchange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_stalled(`type`: stalled, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_stalled(
-  `type`: stalled,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_stalled(
-  `type`: stalled,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_storage(
-  `type`: storage,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_storage(
-  `type`: storage,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_storage(
-  `type`: storage,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_submit(
-  `type`: submit,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_submit(
-  `type`: submit,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_submit(
-  `type`: submit,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_suspend(`type`: suspend, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_suspend(
-  `type`: suspend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_suspend(
-  `type`: suspend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_timeupdate(`type`: timeupdate, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_timeupdate(
-  `type`: timeupdate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_timeupdate(
-  `type`: timeupdate,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_toggle(`type`: toggle, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_toggle(
-  `type`: toggle,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_toggle(
-  `type`: toggle,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_touchcancel(
-  `type`: touchcancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_touchcancel(
-  `type`: touchcancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_touchcancel(
-  `type`: touchcancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_touchend(
-  `type`: touchend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_touchend(
-  `type`: touchend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_touchend(
-  `type`: touchend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_touchmove(
-  `type`: touchmove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_touchmove(
-  `type`: touchmove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_touchmove(
-  `type`: touchmove,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_touchstart(
-  `type`: touchstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_touchstart(
-  `type`: touchstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_touchstart(
-  `type`: touchstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_transitioncancel(
-  `type`: transitioncancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_transitioncancel(
-  `type`: transitioncancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_transitioncancel(
-  `type`: transitioncancel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_transitionend(
-  `type`: transitionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_transitionend(
-  `type`: transitionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_transitionend(
-  `type`: transitionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_transitionrun(
-  `type`: transitionrun,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_transitionrun(
-  `type`: transitionrun,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_transitionrun(
-  `type`: transitionrun,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_transitionstart(
-  `type`: transitionstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_transitionstart(
-  `type`: transitionstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_transitionstart(
-  `type`: transitionstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_unhandledrejection(
-  `type`: unhandledrejection,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_unhandledrejection(
-  `type`: unhandledrejection,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_unhandledrejection(
-  `type`: unhandledrejection,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_unload(`type`: unload, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_unload(
-  `type`: unload,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_unload(
-  `type`: unload,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_volumechange(`type`: volumechange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_volumechange(
-  `type`: volumechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_volumechange(
-  `type`: volumechange,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_waiting(`type`: waiting, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_waiting(
-  `type`: waiting,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_waiting(
-  `type`: waiting,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_webkitanimationend(`type`: webkitanimationend, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_webkitanimationend(
-  `type`: webkitanimationend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_webkitanimationend(
-  `type`: webkitanimationend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_webkitanimationiteration(
-  `type`: webkitanimationiteration,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_webkitanimationiteration(
-  `type`: webkitanimationiteration,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_webkitanimationiteration(
-  `type`: webkitanimationiteration,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_webkitanimationstart(`type`: webkitanimationstart, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_webkitanimationstart(
-  `type`: webkitanimationstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_webkitanimationstart(
-  `type`: webkitanimationstart,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_webkittransitionend(`type`: webkittransitionend, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_webkittransitionend(
-  `type`: webkittransitionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_webkittransitionend(
-  `type`: webkittransitionend,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
-  options: EventListenerOptions
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def removeEventListener_wheel(`type`: wheel, listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_wheel(
-  `type`: wheel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any],
-  options: scala.Boolean
-): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def removeEventListener_wheel(
-  `type`: wheel,
-  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any],
   options: EventListenerOptions
 ): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 

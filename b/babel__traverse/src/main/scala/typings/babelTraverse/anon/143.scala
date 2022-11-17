@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.DirectiveLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `143` extends StObject {
   
-  var `type`: DirectiveLiteral
+  var `type`: "DirectiveLiteral"
 }
 object `143` {
   
@@ -19,6 +18,6 @@ object `143` {
   
   extension [Self <: `143`](x: Self) {
     
-    inline def setType(value: DirectiveLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "DirectiveLiteral"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__platform-browser
 
-Typings are for version 14.2.10
+Typings are for version 15.0.0
 
 ## Library description:
 Angular - library for using Angular in a web browser
@@ -12,8 +12,8 @@ Angular - library for using Angular in a web browser
 | Keywords           | - |
 | # releases         | 220 |
 | # dependents       | 0.0 |
-| # downloads        | 9328064.333333334 |
-| # stars            | ? |
+| # downloads        | 9351780.666666666 |
+| # stars            | 83980.0 |
 
 ## Links
 - [Homepage](https://github.com/angular/angular#readme)

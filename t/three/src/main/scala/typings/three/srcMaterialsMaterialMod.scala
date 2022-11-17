@@ -15,10 +15,6 @@ import typings.three.srcCoreEventDispatcherMod.EventDispatcher
 import typings.three.srcMathPlaneMod.Plane
 import typings.three.srcRenderersShadersShaderLibMod.Shader
 import typings.three.srcRenderersWebGLRendererMod.WebGLRenderer
-import typings.three.threeBooleans.`true`
-import typings.three.threeStrings.highp
-import typings.three.threeStrings.lowp
-import typings.three.threeStrings.mediump
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -167,7 +163,7 @@ object srcMaterialsMaterialMod {
       * Used to check whether this or derived classes are materials. Default is true.
       * You should not change this, as it used internally for optimisation.
       */
-    val isMaterial: `true` = js.native
+    val isMaterial: true = js.native
     
     /**
       * Material name. Default is an empty string.
@@ -219,7 +215,7 @@ object srcMaterialsMaterialMod {
       * Override the renderer's default precision for this material. Can be "highp", "mediump" or "lowp". Defaults is null.
       * @default null
       */
-    var precision: highp | mediump | lowp | Null = js.native
+    var precision: "highp" | "mediump" | "lowp" | Null = js.native
     
     /**
       * Whether to premultiply the alpha (transparency) value. See WebGL / Materials / Transparency for an example of the difference. Default is false.
@@ -407,7 +403,7 @@ object srcMaterialsMaterialMod {
     
     var polygonOffsetUnits: js.UndefOr[Double] = js.undefined
     
-    var precision: js.UndefOr[highp | mediump | lowp | Null] = js.undefined
+    var precision: js.UndefOr["highp" | "mediump" | "lowp" | Null] = js.undefined
     
     var premultipliedAlpha: js.UndefOr[Boolean] = js.undefined
     
@@ -548,7 +544,7 @@ object srcMaterialsMaterialMod {
       
       inline def setPolygonOffsetUnitsUndefined: Self = StObject.set(x, "polygonOffsetUnits", js.undefined)
       
-      inline def setPrecision(value: highp | mediump | lowp): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: "highp" | "mediump" | "lowp"): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
       inline def setPrecisionNull: Self = StObject.set(x, "precision", null)
       

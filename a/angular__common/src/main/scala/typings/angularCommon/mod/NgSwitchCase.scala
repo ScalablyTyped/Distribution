@@ -1,7 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngSwitchCase]`
 import typings.angularCommon.anon.Host
 import typings.angularCore.mod.DoCheck
 import typings.angularCore.mod.TemplateRef
@@ -49,24 +47,26 @@ object NgSwitchCase {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     NgSwitchCase, 
-    `[ngSwitchCase]`, 
+    "[ngSwitchCase]", 
     scala.Nothing, 
     typings.angularCommon.anon.NgSwitchCase, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       NgSwitchCase, 
-      `[ngSwitchCase]`, 
+      "[ngSwitchCase]", 
       scala.Nothing, 
       typings.angularCommon.anon.NgSwitchCase, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      true, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

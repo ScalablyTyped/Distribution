@@ -1,6 +1,5 @@
 package typings.ajv
 
-import typings.ajv.ajvStrings.dependencies
 import typings.ajv.distCompileValidateMod.KeywordCxt
 import typings.ajv.distTypesMod.CodeKeywordDefinition
 import typings.ajv.distTypesMod.ErrorObject
@@ -34,7 +33,7 @@ object distVocabulariesApplicatorDependenciesMod {
   inline def validateSchemaDeps(cxt: KeywordCxt, schemaDeps: SchemaMap): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSchemaDeps")(cxt.asInstanceOf[js.Any], schemaDeps.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type DependenciesError = ErrorObject[
-    dependencies, 
+    "dependencies", 
     DependenciesErrorParams, 
     /* import warning: importer.ImportType#apply Failed type conversion: {[ K in string ]:? std.Array<string> | ajv.ajv/dist/types.AnySchema} */ js.Any
   ]

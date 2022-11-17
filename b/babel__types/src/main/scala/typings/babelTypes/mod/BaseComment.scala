@@ -12,7 +12,7 @@ trait BaseComment extends StObject {
   
   var start: Double
   
-  var `type`: typings.babelTypes.babelTypesStrings.CommentBlock | typings.babelTypes.babelTypesStrings.CommentLine
+  var `type`: "CommentBlock" | "CommentLine"
   
   var value: String
 }
@@ -22,7 +22,7 @@ object BaseComment {
     end: Double,
     loc: SourceLocation,
     start: Double,
-    `type`: typings.babelTypes.babelTypesStrings.CommentBlock | typings.babelTypes.babelTypesStrings.CommentLine,
+    `type`: "CommentBlock" | "CommentLine",
     value: String
   ): BaseComment = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
@@ -38,9 +38,7 @@ object BaseComment {
     
     inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    inline def setType(
-      value: typings.babelTypes.babelTypesStrings.CommentBlock | typings.babelTypes.babelTypesStrings.CommentLine
-    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "CommentBlock" | "CommentLine"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

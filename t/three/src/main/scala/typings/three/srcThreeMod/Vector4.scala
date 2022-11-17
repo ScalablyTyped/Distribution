@@ -1,7 +1,5 @@
 package typings.three.srcThreeMod
 
-import typings.three.examplesJsmNodesCoreConstantsMod._NodeValueOption
-import typings.three.examplesJsmNodesGeometryRangeNodeMod._RangeModeBound
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three/src/Three", "Vector4")
 @js.native
 open class Vector4 ()
-  extends typings.three.srcMathVector4Mod.Vector4
-     with _NodeValueOption
-     with _RangeModeBound {
+  extends typings.three.srcMathVector4Mod.Vector4 {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
   def this(x: Unit, y: Double) = this()

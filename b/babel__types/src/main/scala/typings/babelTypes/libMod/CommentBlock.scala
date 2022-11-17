@@ -6,11 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CommentBlock
   extends StObject
-     with BaseComment
-     with Comment {
+     with BaseComment {
   
   @JSName("type")
-  var type_CommentBlock: typings.babelTypes.babelTypesStrings.CommentBlock
+  var type_CommentBlock: "CommentBlock"
 }
 object CommentBlock {
   
@@ -22,6 +21,6 @@ object CommentBlock {
   
   extension [Self <: CommentBlock](x: Self) {
     
-    inline def setType(value: typings.babelTypes.babelTypesStrings.CommentBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "CommentBlock"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

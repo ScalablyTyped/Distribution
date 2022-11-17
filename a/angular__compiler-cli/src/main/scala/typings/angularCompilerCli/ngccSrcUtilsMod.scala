@@ -1,7 +1,6 @@
 package typings.angularCompilerCli
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCompilerCli.angularCompilerCliBooleans.`true`
 import typings.angularCompilerCli.anon.FnCallStartEnd
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.ReadonlyFileSystem
@@ -40,8 +39,7 @@ object ngccSrcUtilsMod {
     def set(key: K, value: V): Unit = js.native
   }
   
-  inline def getNameText(name: BindingName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameText")(name.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def getNameText(name: PropertyName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameText")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getNameText(name: BindingName | PropertyName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameText")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getOriginalSymbol(checker: TypeChecker): js.Function1[/* symbol */ Symbol, Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalSymbol")(checker.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* symbol */ Symbol, Symbol]]
   
@@ -119,7 +117,7 @@ object ngccSrcUtilsMod {
     extends StObject
        with Array[T] {
     
-    var _partiallyOrdered: `true` = js.native
+    var _partiallyOrdered: true = js.native
     
     def slice(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Array<T>['slice']> is not an array type */ args: Parameters[FnCallStartEnd[T]]

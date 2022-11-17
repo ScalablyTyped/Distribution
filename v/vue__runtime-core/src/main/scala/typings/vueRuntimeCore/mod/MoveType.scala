@@ -1,23 +1,14 @@
 package typings.vueRuntimeCore.mod
 
-import typings.vueRuntimeCore.vueRuntimeCoreInts.`0`
-import typings.vueRuntimeCore.vueRuntimeCoreInts.`1`
-import typings.vueRuntimeCore.vueRuntimeCoreInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.vueRuntimeCore.vueRuntimeCoreInts.`0`
-  - typings.vueRuntimeCore.vueRuntimeCoreInts.`1`
-  - typings.vueRuntimeCore.vueRuntimeCoreInts.`2`
-*/
-trait MoveType extends StObject
 object MoveType {
   
-  inline def ENTER: `0` = 0.asInstanceOf[`0`]
+  inline def ENTER: 0 = 0.asInstanceOf[0]
   
-  inline def LEAVE: `1` = 1.asInstanceOf[`1`]
+  inline def LEAVE: 1 = 1.asInstanceOf[1]
   
-  inline def REORDER: `2` = 2.asInstanceOf[`2`]
+  inline def REORDER: 2 = 2.asInstanceOf[2]
 }

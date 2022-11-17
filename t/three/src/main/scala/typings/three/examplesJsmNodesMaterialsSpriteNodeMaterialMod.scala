@@ -2,7 +2,6 @@ package typings.three
 
 import typings.three.examplesJsmNodesNodesMod.NodeBuilder
 import typings.three.srcMaterialsShaderMaterialMod.ShaderMaterialParameters
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object examplesJsmNodesMaterialsSpriteNodeMaterialMod {
     
     def generatePosition(builder: NodeBuilder): Unit = js.native
     
-    var isSpriteNodeMaterial: `true` = js.native
+    var isSpriteNodeMaterial: true = js.native
     
     var lightNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
     

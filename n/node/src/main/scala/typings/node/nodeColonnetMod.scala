@@ -1,6 +1,5 @@
 package typings.node
 
-import typings.node.childProcessMod.SendHandle
 import typings.node.netMod.NetConnectOpts
 import typings.node.netMod.ServerOpts
 import typings.node.netMod.SocketAddressInitOptions
@@ -32,9 +31,7 @@ object nodeColonnetMod {
     */
   @JSImport("node:net", "Server")
   @js.native
-  open class Server ()
-    extends StObject
-       with SendHandle {
+  open class Server () extends StObject {
     def this(connectionListener: js.Function1[/* socket */ typings.node.netMod.Socket, Unit]) = this()
     def this(options: ServerOpts) = this()
     def this(options: Unit, connectionListener: js.Function1[/* socket */ typings.node.netMod.Socket, Unit]) = this()
@@ -60,9 +57,7 @@ object nodeColonnetMod {
     */
   @JSImport("node:net", "Socket")
   @js.native
-  open class Socket ()
-    extends StObject
-       with SendHandle {
+  open class Socket () extends StObject {
     def this(options: SocketConstructorOpts) = this()
   }
   

@@ -1,7 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.default
-import typings.electron.electronStrings.json
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +19,7 @@ trait FeedURLOptions extends StObject {
     *
     * @platform darwin
     */
-  var serverType: js.UndefOr[json | default] = js.undefined
+  var serverType: js.UndefOr["json" | "default"] = js.undefined
   
   var url: String
 }
@@ -38,7 +36,7 @@ object FeedURLOptions {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setServerType(value: json | default): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
+    inline def setServerType(value: "json" | "default"): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
     
     inline def setServerTypeUndefined: Self = StObject.set(x, "serverType", js.undefined)
     

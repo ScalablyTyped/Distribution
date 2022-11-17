@@ -4,26 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Reference space types
-  */
-/* Rewritten from type alias, can be one of: 
-  - typings.webxr.webxrStrings.viewer
-  - typings.webxr.webxrStrings.local
-  - typings.webxr.webxrStrings.`local-floor`
-  - typings.webxr.webxrStrings.`bounded-floor`
-  - typings.webxr.webxrStrings.unbounded
-*/
-trait XRReferenceSpaceType extends StObject
 object XRReferenceSpaceType {
   
-  inline def `bounded-floor`: typings.webxr.webxrStrings.`bounded-floor` = "bounded-floor".asInstanceOf[typings.webxr.webxrStrings.`bounded-floor`]
+  inline def `bounded-floor`: "bounded-floor" = "bounded-floor".asInstanceOf["bounded-floor"]
   
-  inline def local: typings.webxr.webxrStrings.local = "local".asInstanceOf[typings.webxr.webxrStrings.local]
+  inline def local: "local" = "local".asInstanceOf["local"]
   
-  inline def `local-floor`: typings.webxr.webxrStrings.`local-floor` = "local-floor".asInstanceOf[typings.webxr.webxrStrings.`local-floor`]
+  inline def `local-floor`: "local-floor" = "local-floor".asInstanceOf["local-floor"]
   
-  inline def unbounded: typings.webxr.webxrStrings.unbounded = "unbounded".asInstanceOf[typings.webxr.webxrStrings.unbounded]
+  inline def unbounded: "unbounded" = "unbounded".asInstanceOf["unbounded"]
   
-  inline def viewer: typings.webxr.webxrStrings.viewer = "viewer".asInstanceOf[typings.webxr.webxrStrings.viewer]
+  inline def viewer: "viewer" = "viewer".asInstanceOf["viewer"]
 }

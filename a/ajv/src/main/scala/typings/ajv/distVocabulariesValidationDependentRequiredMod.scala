@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.dependentRequired
 import typings.ajv.distTypesMod.CodeKeywordDefinition
 import typings.ajv.distTypesMod.ErrorObject
 import typings.ajv.distVocabulariesApplicatorDependenciesMod.DependenciesErrorParams
@@ -16,7 +15,7 @@ object distVocabulariesValidationDependentRequiredMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type DependentRequiredError = ErrorObject[dependentRequired, DependenciesErrorParams, PropertyDependencies]
+  type DependentRequiredError = ErrorObject["dependentRequired", DependenciesErrorParams, PropertyDependencies]
   
   type _To = CodeKeywordDefinition
   

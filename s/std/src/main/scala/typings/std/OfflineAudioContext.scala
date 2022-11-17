@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.complete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +12,22 @@ trait OfflineAudioContext
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_complete(
-    `type`: complete,
+  @scala.annotation.targetName("addEventListener_complete")
+  def addEventListener(
+    `type`: "complete",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_complete(
-    `type`: complete,
+  @scala.annotation.targetName("addEventListener_complete")
+  def addEventListener(
+    `type`: "complete",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_complete(
-    `type`: complete,
+  @scala.annotation.targetName("addEventListener_complete")
+  def addEventListener(
+    `type`: "complete",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -38,19 +40,22 @@ trait OfflineAudioContext
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_complete(
-    `type`: complete,
+  @scala.annotation.targetName("removeEventListener_complete")
+  def removeEventListener(
+    `type`: "complete",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_complete(
-    `type`: complete,
+  @scala.annotation.targetName("removeEventListener_complete")
+  def removeEventListener(
+    `type`: "complete",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_complete(
-    `type`: complete,
+  @scala.annotation.targetName("removeEventListener_complete")
+  def removeEventListener(
+    `type`: "complete",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native

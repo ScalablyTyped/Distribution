@@ -12,6 +12,8 @@ trait R3DeclareDirectiveFacade extends StObject {
   
   var host: js.UndefOr[Attributes] = js.undefined
   
+  var hostDirectives: js.UndefOr[js.Array[R3HostDirectiveMetadataFacade] | Null] = js.undefined
+  
   var inputs: js.UndefOr[StringDictionary[String | (js.Tuple2[String, String])]] = js.undefined
   
   var isStandalone: js.UndefOr[Boolean] = js.undefined
@@ -49,6 +51,14 @@ object R3DeclareDirectiveFacade {
     inline def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value*))
     
     inline def setHost(value: Attributes): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostDirectives(value: js.Array[R3HostDirectiveMetadataFacade]): Self = StObject.set(x, "hostDirectives", value.asInstanceOf[js.Any])
+    
+    inline def setHostDirectivesNull: Self = StObject.set(x, "hostDirectives", null)
+    
+    inline def setHostDirectivesUndefined: Self = StObject.set(x, "hostDirectives", js.undefined)
+    
+    inline def setHostDirectivesVarargs(value: R3HostDirectiveMetadataFacade*): Self = StObject.set(x, "hostDirectives", js.Array(value*))
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     

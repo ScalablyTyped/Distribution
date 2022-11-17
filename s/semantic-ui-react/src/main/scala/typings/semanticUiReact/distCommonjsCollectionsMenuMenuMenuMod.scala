@@ -5,8 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +42,7 @@ object distCommonjsCollectionsMenuMenuMenuMod extends Shortcut {
     var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A sub menu can take left or right position. */
-    var position: js.UndefOr[left | right] = js.undefined
+    var position: js.UndefOr["left" | "right"] = js.undefined
   }
   object StrictMenuMenuProps {
     
@@ -71,7 +69,7 @@ object distCommonjsCollectionsMenuMenuMenuMod extends Shortcut {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: "left" | "right"): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }

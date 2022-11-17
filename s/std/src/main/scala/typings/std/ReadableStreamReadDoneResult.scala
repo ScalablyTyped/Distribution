@@ -1,16 +1,13 @@
 package typings.std
 
-import typings.std.stdBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadableStreamReadDoneResult[T]
-  extends StObject
-     with ReadableStreamReadResult[T] {
+trait ReadableStreamReadDoneResult[T] extends StObject {
   
   /* standard dom */
-  var done: `true`
+  var done: true
   
   /* standard dom */
   var value: js.UndefOr[T] = js.undefined
@@ -24,7 +21,7 @@ object ReadableStreamReadDoneResult {
   
   extension [Self <: ReadableStreamReadDoneResult[?], T](x: Self & ReadableStreamReadDoneResult[T]) {
     
-    inline def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: true): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
     inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

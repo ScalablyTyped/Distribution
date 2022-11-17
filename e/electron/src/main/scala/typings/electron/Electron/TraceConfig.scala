@@ -1,9 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`record-as-much-as-possible`
-import typings.electron.electronStrings.`record-continuously`
-import typings.electron.electronStrings.`record-until-full`
-import typings.electron.electronStrings.`trace-to-console`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -56,7 +52,7 @@ trait TraceConfig extends StObject {
     * or `trace-to-console`. Defaults to `record-until-full`.
     */
   var recording_mode: js.UndefOr[
-    `record-until-full` | `record-continuously` | `record-as-much-as-possible` | `trace-to-console`
+    "record-until-full" | "record-continuously" | "record-as-much-as-possible" | "trace-to-console"
   ] = js.undefined
   
   /**
@@ -111,7 +107,7 @@ object TraceConfig {
     inline def setMemory_dump_configUndefined: Self = StObject.set(x, "memory_dump_config", js.undefined)
     
     inline def setRecording_mode(
-      value: `record-until-full` | `record-continuously` | `record-as-much-as-possible` | `trace-to-console`
+      value: "record-until-full" | "record-continuously" | "record-as-much-as-possible" | "trace-to-console"
     ): Self = StObject.set(x, "recording_mode", value.asInstanceOf[js.Any])
     
     inline def setRecording_modeUndefined: Self = StObject.set(x, "recording_mode", js.undefined)

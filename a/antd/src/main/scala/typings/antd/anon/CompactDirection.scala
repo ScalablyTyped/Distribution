@@ -1,7 +1,5 @@
 package typings.antd.anon
 
-import typings.antd.antdStrings.horizontal
-import typings.antd.antdStrings.vertical
 import typings.antd.libConfigProviderSizeContextMod.SizeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompactDirection extends StObject {
   
-  var compactDirection: js.UndefOr[horizontal | vertical] = js.undefined
+  var compactDirection: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   var compactItemClassnames: String
   
@@ -24,7 +22,7 @@ object CompactDirection {
   
   extension [Self <: CompactDirection](x: Self) {
     
-    inline def setCompactDirection(value: horizontal | vertical): Self = StObject.set(x, "compactDirection", value.asInstanceOf[js.Any])
+    inline def setCompactDirection(value: "horizontal" | "vertical"): Self = StObject.set(x, "compactDirection", value.asInstanceOf[js.Any])
     
     inline def setCompactDirectionUndefined: Self = StObject.set(x, "compactDirection", js.undefined)
     

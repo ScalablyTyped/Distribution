@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.threeStrings.reflectVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,6 +16,6 @@ object examplesJsmNodesAccessorsReflectVectorNodeMod {
     
     def construct(): typings.three.examplesJsmNodesCoreNodeMod.default = js.native
     
-    def getHash(): reflectVector = js.native
+    def getHash(): "reflectVector" = js.native
   }
 }

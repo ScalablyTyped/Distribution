@@ -9,16 +9,6 @@ import typings.materialUiCore.formControlFormControlMod.FormControlProps
 import typings.materialUiCore.formHelperTextFormHelperTextMod.FormHelperTextProps
 import typings.materialUiCore.inputBaseInputBaseMod.InputBaseComponentProps
 import typings.materialUiCore.inputLabelInputLabelMod.InputLabelProps
-import typings.materialUiCore.materialUiCoreStrings.div
-import typings.materialUiCore.materialUiCoreStrings.filled
-import typings.materialUiCore.materialUiCoreStrings.medium
-import typings.materialUiCore.materialUiCoreStrings.outlined
-import typings.materialUiCore.materialUiCoreStrings.p
-import typings.materialUiCore.materialUiCoreStrings.primary
-import typings.materialUiCore.materialUiCoreStrings.root
-import typings.materialUiCore.materialUiCoreStrings.secondary
-import typings.materialUiCore.materialUiCoreStrings.small
-import typings.materialUiCore.materialUiCoreStrings.standard
 import typings.materialUiCore.mod.PropTypes.Margin
 import typings.materialUiStyles.withStylesWithStylesMod.StyledComponentProps
 import typings.react.mod.ChangeEvent
@@ -47,14 +37,14 @@ object textFieldTextFieldMod {
   - Dropped @material-ui/core.@material-ui/core/FormControl/FormControl.FormControlProps<'div', {}> extends any ? std.Pick<@material-ui/core.@material-ui/core/FormControl/FormControl.FormControlProps<'div', {}>, std.Exclude<keyof @material-ui/core.@material-ui/core/FormControl/FormControl.FormControlProps<'div', {}>, 'classes' | 'onChange' | 'onBlur' | 'onFocus' | 'defaultValue'>> : never */ trait BaseTextFieldProps
     extends StObject
        with StyledComponentProps[TextFieldClassKey]
-       with Ref[FormControlProps[div, js.Object]] {
+       with Ref[FormControlProps["div", js.Object]] {
     
     /**
       * Props applied to the [`FormHelperText`](/api/form-helper-text/) element.
       */
     var FormHelperTextProps: js.UndefOr[
         Partial[
-          typings.materialUiCore.formHelperTextFormHelperTextMod.FormHelperTextProps[p, js.Object]
+          typings.materialUiCore.formHelperTextFormHelperTextMod.FormHelperTextProps["p", js.Object]
         ]
       ] = js.undefined
     
@@ -88,7 +78,7 @@ object textFieldTextFieldMod {
     /**
       * The color of the component. It supports those theme colors that make sense for this component.
       */
-    var color: js.UndefOr[primary | secondary] = js.undefined
+    var color: js.UndefOr["primary" | "secondary"] = js.undefined
     
     /**
       * The default value of the `input` element.
@@ -187,7 +177,7 @@ object textFieldTextFieldMod {
     /**
       * The size of the text field.
       */
-    var size: js.UndefOr[small | medium] = js.undefined
+    var size: js.UndefOr["small" | "medium"] = js.undefined
     
     /**
       * Type of the `input` element. It should be [a valid HTML5 input type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types).
@@ -220,7 +210,7 @@ object textFieldTextFieldMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setColor(value: primary | secondary): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: "primary" | "secondary"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
@@ -236,7 +226,7 @@ object textFieldTextFieldMod {
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setFormHelperTextProps(value: Partial[FormHelperTextProps[p, js.Object]]): Self = StObject.set(x, "FormHelperTextProps", value.asInstanceOf[js.Any])
+      inline def setFormHelperTextProps(value: Partial[FormHelperTextProps["p", js.Object]]): Self = StObject.set(x, "FormHelperTextProps", value.asInstanceOf[js.Any])
       
       inline def setFormHelperTextPropsUndefined: Self = StObject.set(x, "FormHelperTextProps", js.undefined)
       
@@ -312,7 +302,7 @@ object textFieldTextFieldMod {
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      inline def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "small" | "medium"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -328,8 +318,7 @@ object textFieldTextFieldMod {
   
   trait FilledTextFieldProps
     extends StObject
-       with BaseTextFieldProps
-       with TextFieldProps {
+       with BaseTextFieldProps {
     
     /**
       * Props applied to the Input element.
@@ -359,7 +348,7 @@ object textFieldTextFieldMod {
     /**
       * The variant to use.
       */
-    var variant: filled
+    var variant: "filled"
   }
   object FilledTextFieldProps {
     
@@ -386,14 +375,13 @@ object textFieldTextFieldMod {
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setVariant(value: filled): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "filled"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     }
   }
   
   trait OutlinedTextFieldProps
     extends StObject
-       with BaseTextFieldProps
-       with TextFieldProps {
+       with BaseTextFieldProps {
     
     /**
       * Props applied to the Input element.
@@ -423,7 +411,7 @@ object textFieldTextFieldMod {
     /**
       * The variant to use.
       */
-    var variant: outlined
+    var variant: "outlined"
   }
   object OutlinedTextFieldProps {
     
@@ -450,14 +438,13 @@ object textFieldTextFieldMod {
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setVariant(value: outlined): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "outlined"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     }
   }
   
   trait StandardTextFieldProps
     extends StObject
-       with BaseTextFieldProps
-       with TextFieldProps {
+       with BaseTextFieldProps {
     
     /**
       * Props applied to the Input element.
@@ -487,7 +474,7 @@ object textFieldTextFieldMod {
     /**
       * The variant to use.
       */
-    var variant: js.UndefOr[standard] = js.undefined
+    var variant: js.UndefOr["standard"] = js.undefined
   }
   object StandardTextFieldProps {
     
@@ -514,35 +501,13 @@ object textFieldTextFieldMod {
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setVariant(value: standard): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "standard"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     }
   }
   
-  type TextFieldClassKey = root
+  type TextFieldClassKey = "root"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.textFieldTextFieldMod.StandardTextFieldProps
-    - typings.materialUiCore.textFieldTextFieldMod.FilledTextFieldProps
-    - typings.materialUiCore.textFieldTextFieldMod.OutlinedTextFieldProps
-  */
-  trait TextFieldProps extends StObject
-  object TextFieldProps {
-    
-    inline def FilledTextFieldProps(): typings.materialUiCore.textFieldTextFieldMod.FilledTextFieldProps = {
-      val __obj = js.Dynamic.literal(variant = "filled")
-      __obj.asInstanceOf[typings.materialUiCore.textFieldTextFieldMod.FilledTextFieldProps]
-    }
-    
-    inline def OutlinedTextFieldProps(): typings.materialUiCore.textFieldTextFieldMod.OutlinedTextFieldProps = {
-      val __obj = js.Dynamic.literal(variant = "outlined")
-      __obj.asInstanceOf[typings.materialUiCore.textFieldTextFieldMod.OutlinedTextFieldProps]
-    }
-    
-    inline def StandardTextFieldProps(): typings.materialUiCore.textFieldTextFieldMod.StandardTextFieldProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.materialUiCore.textFieldTextFieldMod.StandardTextFieldProps]
-    }
-  }
+  type TextFieldProps = StandardTextFieldProps | FilledTextFieldProps | OutlinedTextFieldProps
 }

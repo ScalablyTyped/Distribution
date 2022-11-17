@@ -1,23 +1,19 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.LabeledStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait LabeledStatement_
+trait LabeledStatement_
   extends StObject
-     with BaseNode
-     with Standardized
-     with Statement {
+     with BaseNode {
   
   var body: Statement
   
   var label: Identifier_
   
   @JSName("type")
-  var type_LabeledStatement_ : LabeledStatement
+  var type_LabeledStatement_ : "LabeledStatement"
 }
 object LabeledStatement_ {
   
@@ -33,6 +29,6 @@ object LabeledStatement_ {
     
     inline def setLabel(value: Identifier_): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setType(value: LabeledStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "LabeledStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,5 @@
 package typings.ajv
 
-import typings.ajv.ajvStrings.additionalItems
 import typings.ajv.anon.Limit
 import typings.ajv.distCompileValidateMod.KeywordCxt
 import typings.ajv.distTypesMod.AnySchema
@@ -22,5 +21,5 @@ object distVocabulariesApplicatorAdditionalItemsMod {
   
   inline def validateAdditionalItems(cxt: KeywordCxt, items: js.Array[AnySchema]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateAdditionalItems")(cxt.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type AdditionalItemsError = ErrorObject[additionalItems, Limit, AnySchema]
+  type AdditionalItemsError = ErrorObject["additionalItems", Limit, AnySchema]
 }

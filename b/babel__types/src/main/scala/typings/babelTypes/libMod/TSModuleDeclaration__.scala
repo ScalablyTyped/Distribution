@@ -1,17 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSModuleDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSModuleDeclaration__
   extends StObject
-     with BaseNode
-     with Declaration
-     with Node
-     with Statement
-     with TypeScript {
+     with BaseNode {
   
   var body: TSModuleBlock__ | TSModuleDeclaration__
   
@@ -22,7 +17,7 @@ trait TSModuleDeclaration__
   var id: Identifier_ | StringLiteral_
   
   @JSName("type")
-  var type_TSModuleDeclaration__ : TSModuleDeclaration
+  var type_TSModuleDeclaration__ : "TSModuleDeclaration"
 }
 object TSModuleDeclaration__ {
   
@@ -50,6 +45,6 @@ object TSModuleDeclaration__ {
     
     inline def setId(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSModuleDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSModuleDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

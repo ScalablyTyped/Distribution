@@ -1,13 +1,12 @@
 package typings.angularForms.anon
 
-import typings.angularForms.angularFormsStrings.ngFormOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Options extends StObject {
   
-  var options: ngFormOptions
+  var options: "ngFormOptions"
 }
 object Options {
   
@@ -18,6 +17,6 @@ object Options {
   
   extension [Self <: Options](x: Self) {
     
-    inline def setOptions(value: ngFormOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: "ngFormOptions"): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

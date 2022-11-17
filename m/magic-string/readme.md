@@ -10,10 +10,10 @@ Modify strings, generate sourcemaps
 | ------------------ | :-------------: |
 | Full name          | magic-string |
 | Keywords           | string, string manipulation, sourcemap, templating, transpilation |
-| # releases         | 5 |
+| # releases         | 8 |
 | # dependents       | 0.0 |
-| # downloads        | 5.2311609666666664E7 |
-| # stars            | 1630.0 |
+| # downloads        | 5.3667880333333336E7 |
+| # stars            | 1657.0 |
 
 ## Links
 - [Homepage](https://github.com/rich-harris/magic-string#readme)

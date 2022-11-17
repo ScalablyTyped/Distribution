@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,5 +27,5 @@ trait DOMImplementation extends StObject {
   
   /** @deprecated */
   /* standard dom */
-  def hasFeature(args: Any*): `true` = js.native
+  def hasFeature(args: Any*): true = js.native
 }

@@ -4,19 +4,6 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.NodeModule
 import typings.node.NodeRequire
-import typings.webpackEnv.webpackEnvStrings.`accept-errored`
-import typings.webpackEnv.webpackEnvStrings.`lazy-once`
-import typings.webpackEnv.webpackEnvStrings.`lazy`
-import typings.webpackEnv.webpackEnvStrings.`self-accept-error-handler-errored`
-import typings.webpackEnv.webpackEnvStrings.`self-accept-errored`
-import typings.webpackEnv.webpackEnvStrings.`self-declined`
-import typings.webpackEnv.webpackEnvStrings.accepted
-import typings.webpackEnv.webpackEnvStrings.declined
-import typings.webpackEnv.webpackEnvStrings.disposed
-import typings.webpackEnv.webpackEnvStrings.eager
-import typings.webpackEnv.webpackEnvStrings.sync
-import typings.webpackEnv.webpackEnvStrings.unaccepted
-import typings.webpackEnv.webpackEnvStrings.weak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -292,13 +279,13 @@ object WebpackModuleApi {
       */
     var parentId: js.UndefOr[Double] = js.undefined
     
-    var `type`: `self-declined` | declined | unaccepted | accepted | disposed | `accept-errored` | `self-accept-errored` | `self-accept-error-handler-errored`
+    var `type`: "self-declined" | "declined" | "unaccepted" | "accepted" | "disposed" | "accept-errored" | "self-accept-errored" | "self-accept-error-handler-errored"
   }
   object HotNotifierInfo {
     
     inline def apply(
       moduleId: Double,
-      `type`: `self-declined` | declined | unaccepted | accepted | disposed | `accept-errored` | `self-accept-errored` | `self-accept-error-handler-errored`
+      `type`: "self-declined" | "declined" | "unaccepted" | "accepted" | "disposed" | "accept-errored" | "self-accept-errored" | "self-accept-error-handler-errored"
     ): HotNotifierInfo = {
       val __obj = js.Dynamic.literal(moduleId = moduleId.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -342,7 +329,7 @@ object WebpackModuleApi {
       inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
       inline def setType(
-        value: `self-declined` | declined | unaccepted | accepted | disposed | `accept-errored` | `self-accept-errored` | `self-accept-error-handler-errored`
+        value: "self-declined" | "declined" | "unaccepted" | "accepted" | "disposed" | "accept-errored" | "self-accept-errored" | "self-accept-error-handler-errored"
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
@@ -457,11 +444,29 @@ object WebpackModuleApi {
     def context(path: String): RequireContext = js.native
     def context(path: String, deep: Boolean): RequireContext = js.native
     def context(path: String, deep: Boolean, filter: js.RegExp): RequireContext = js.native
-    def context(path: String, deep: Boolean, filter: js.RegExp, mode: sync | eager | weak | `lazy` | `lazy-once`): RequireContext = js.native
-    def context(path: String, deep: Boolean, filter: Unit, mode: sync | eager | weak | `lazy` | `lazy-once`): RequireContext = js.native
+    @JSName("context")
+    @scala.annotation.targetName("context_sync_eager_weak_lazy_lazyonce")
+    def context(
+      path: String,
+      deep: Boolean,
+      filter: js.RegExp,
+      mode: "sync" | "eager" | "weak" | "lazy" | "lazy-once"
+    ): RequireContext = js.native
+    @JSName("context")
+    @scala.annotation.targetName("context_sync_eager_weak_lazy_lazyonce")
+    def context(path: String, deep: Boolean, filter: Unit, mode: "sync" | "eager" | "weak" | "lazy" | "lazy-once"): RequireContext = js.native
     def context(path: String, deep: Unit, filter: js.RegExp): RequireContext = js.native
-    def context(path: String, deep: Unit, filter: js.RegExp, mode: sync | eager | weak | `lazy` | `lazy-once`): RequireContext = js.native
-    def context(path: String, deep: Unit, filter: Unit, mode: sync | eager | weak | `lazy` | `lazy-once`): RequireContext = js.native
+    @JSName("context")
+    @scala.annotation.targetName("context_sync_eager_weak_lazy_lazyonce")
+    def context(
+      path: String,
+      deep: Unit,
+      filter: js.RegExp,
+      mode: "sync" | "eager" | "weak" | "lazy" | "lazy-once"
+    ): RequireContext = js.native
+    @JSName("context")
+    @scala.annotation.targetName("context_sync_eager_weak_lazy_lazyonce")
+    def context(path: String, deep: Unit, filter: Unit, mode: "sync" | "eager" | "weak" | "lazy" | "lazy-once"): RequireContext = js.native
     
     /**
       * Download additional dependencies on demand. The paths array lists modules that should be available. When they are, callback is called. If the callback is a function expression, dependencies in that source part are extracted and also loaded on demand. A single request is fired to the server, except if all modules are already available.

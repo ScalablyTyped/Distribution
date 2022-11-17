@@ -7,8 +7,6 @@ import typings.rcTree.esInterfaceMod.BasicDataNode
 import typings.rcTree.esInterfaceMod.DataNode
 import typings.rcTree.esInterfaceMod.IconType
 import typings.rcTree.esInterfaceMod.Key
-import typings.rcTree.rcTreeStrings.close
-import typings.rcTree.rcTreeStrings.open
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.DragEvent
@@ -49,7 +47,7 @@ object esTreeNodeMod extends Shortcut {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MInternalTreeNode(): Unit = js.native
     
-    def getNodeState(): close | open = js.native
+    def getNodeState(): "close" | "open" = js.native
     
     def hasChildren(): Boolean = js.native
     

@@ -1,17 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.IfStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IfStatement_
   extends StObject
-     with BaseNode
-     with Conditional
-     with Node
-     with Standardized
-     with Statement {
+     with BaseNode {
   
   var alternate: js.UndefOr[Statement | Null] = js.undefined
   
@@ -20,7 +15,7 @@ trait IfStatement_
   var test: Expression
   
   @JSName("type")
-  var type_IfStatement_ : IfStatement
+  var type_IfStatement_ : "IfStatement"
 }
 object IfStatement_ {
   
@@ -42,6 +37,6 @@ object IfStatement_ {
     
     inline def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    inline def setType(value: IfStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "IfStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

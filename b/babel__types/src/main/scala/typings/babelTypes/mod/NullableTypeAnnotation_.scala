@@ -1,21 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.NullableTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait NullableTypeAnnotation_
+trait NullableTypeAnnotation_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowType {
+     with BaseNode {
   
   var typeAnnotation: FlowType
   
   @JSName("type")
-  var type_NullableTypeAnnotation_ : NullableTypeAnnotation
+  var type_NullableTypeAnnotation_ : "NullableTypeAnnotation"
 }
 object NullableTypeAnnotation_ {
   
@@ -27,7 +23,7 @@ object NullableTypeAnnotation_ {
   
   extension [Self <: NullableTypeAnnotation_](x: Self) {
     
-    inline def setType(value: NullableTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "NullableTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: FlowType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }

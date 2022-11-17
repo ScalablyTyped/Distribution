@@ -1,7 +1,5 @@
 package typings.three
 
-import typings.three.threeBooleans.`false`
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,8 +16,8 @@ object examplesJsmNodesCoreNodeVaryingMod {
   trait NodeVarying
     extends typings.three.examplesJsmNodesCoreNodeVarMod.default {
     
-    var isNodeVarying: `true` = js.native
+    var isNodeVarying: true = js.native
     
-    var needsInterpolation: `false` = js.native
+    var needsInterpolation: false = js.native
   }
 }

@@ -1,7 +1,6 @@
 package typings.webxr.global
 
 import typings.webxr.XRReferenceSpaceEventInit
-import typings.webxr.webxrStrings.reset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,6 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class XRReferenceSpaceEvent protected ()
   extends StObject
      with typings.webxr.XRReferenceSpaceEvent {
-  def this(`type`: reset) = this()
-  def this(`type`: reset, eventInitDict: XRReferenceSpaceEventInit) = this()
+  def this(`type`: "reset") = this()
+  def this(`type`: "reset", eventInitDict: XRReferenceSpaceEventInit) = this()
 }

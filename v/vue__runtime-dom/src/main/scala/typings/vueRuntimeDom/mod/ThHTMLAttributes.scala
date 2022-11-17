@@ -1,10 +1,5 @@
 package typings.vueRuntimeDom.mod
 
-import typings.vueRuntimeDom.vueRuntimeDomStrings.center
-import typings.vueRuntimeDom.vueRuntimeDomStrings.char
-import typings.vueRuntimeDom.vueRuntimeDomStrings.justify
-import typings.vueRuntimeDom.vueRuntimeDomStrings.left
-import typings.vueRuntimeDom.vueRuntimeDomStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +8,7 @@ trait ThHTMLAttributes
   extends StObject
      with HTMLAttributes {
   
-  var align: js.UndefOr[left | center | right | justify | char] = js.undefined
+  var align: js.UndefOr["left" | "center" | "right" | "justify" | "char"] = js.undefined
   
   var colspan: js.UndefOr[Numberish] = js.undefined
   
@@ -32,7 +27,7 @@ object ThHTMLAttributes {
   
   extension [Self <: ThHTMLAttributes](x: Self) {
     
-    inline def setAlign(value: left | center | right | justify | char): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: "left" | "center" | "right" | "justify" | "char"): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     

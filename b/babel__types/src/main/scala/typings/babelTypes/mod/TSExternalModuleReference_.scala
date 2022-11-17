@@ -1,20 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSExternalModuleReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSExternalModuleReference_
+trait TSExternalModuleReference_
   extends StObject
-     with BaseNode
-     with TypeScript {
+     with BaseNode {
   
   var expression: StringLiteral_
   
   @JSName("type")
-  var type_TSExternalModuleReference_ : TSExternalModuleReference
+  var type_TSExternalModuleReference_ : "TSExternalModuleReference"
 }
 object TSExternalModuleReference_ {
   
@@ -28,6 +25,6 @@ object TSExternalModuleReference_ {
     
     inline def setExpression(value: StringLiteral_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSExternalModuleReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSExternalModuleReference"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

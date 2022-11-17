@@ -1,7 +1,6 @@
 package typings.ajv.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ajv.ajvBooleans.`true`
 import typings.ajv.distTypesJsonSchemaMod.Known
 import typings.ajv.distTypesJsonSchemaMod.UncheckedJSONSchemaType
 import typings.std.Record
@@ -14,7 +13,7 @@ trait Dictkeyword
      with /* x */ StringDictionary[Any] {
   
   @JSName("$defs")
-  var $defs: js.UndefOr[Record[String, UncheckedJSONSchemaType[Known, `true`]]] = js.undefined
+  var $defs: js.UndefOr[Record[String, UncheckedJSONSchemaType[Known, true]]] = js.undefined
   
   @JSName("$id")
   var $id: js.UndefOr[String] = js.undefined
@@ -22,7 +21,7 @@ trait Dictkeyword
   @JSName("$ref")
   var $ref: js.UndefOr[String] = js.undefined
   
-  var definitions: js.UndefOr[Record[String, UncheckedJSONSchemaType[Known, `true`]]] = js.undefined
+  var definitions: js.UndefOr[Record[String, UncheckedJSONSchemaType[Known, true]]] = js.undefined
 }
 object Dictkeyword {
   
@@ -33,7 +32,7 @@ object Dictkeyword {
   
   extension [Self <: Dictkeyword](x: Self) {
     
-    inline def set$defs(value: Record[String, UncheckedJSONSchemaType[Known, `true`]]): Self = StObject.set(x, "$defs", value.asInstanceOf[js.Any])
+    inline def set$defs(value: Record[String, UncheckedJSONSchemaType[Known, true]]): Self = StObject.set(x, "$defs", value.asInstanceOf[js.Any])
     
     inline def set$defsUndefined: Self = StObject.set(x, "$defs", js.undefined)
     
@@ -45,7 +44,7 @@ object Dictkeyword {
     
     inline def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
     
-    inline def setDefinitions(value: Record[String, UncheckedJSONSchemaType[Known, `true`]]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+    inline def setDefinitions(value: Record[String, UncheckedJSONSchemaType[Known, true]]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
     inline def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
   }

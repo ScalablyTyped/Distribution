@@ -1,23 +1,19 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.IndexedAccessType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IndexedAccessType_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowType
-     with Node {
+     with BaseNode {
   
   var indexType: FlowType
   
   var objectType: FlowType
   
   @JSName("type")
-  var type_IndexedAccessType_ : IndexedAccessType
+  var type_IndexedAccessType_ : "IndexedAccessType"
 }
 object IndexedAccessType_ {
   
@@ -33,6 +29,6 @@ object IndexedAccessType_ {
     
     inline def setObjectType(value: FlowType): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    inline def setType(value: IndexedAccessType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "IndexedAccessType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

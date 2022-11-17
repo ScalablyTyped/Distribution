@@ -1,6 +1,5 @@
 package typings.rcFieldForm.esInterfaceMod
 
-import typings.rcFieldForm.rcFieldFormBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait FormInstance[Values] extends StObject {
   def getFieldsError(nameList: js.Array[NamePath]): js.Array[FieldError] = js.native
   
   var getFieldsValue: js.Function0[Values] & (js.Function2[
-    /* nameList */ js.Array[NamePath] | `true`, 
+    /* nameList */ js.Array[NamePath] | true, 
     /* filterFunc */ js.UndefOr[js.Function1[/* meta */ Meta, Boolean]], 
     Any
   ]) = js.native

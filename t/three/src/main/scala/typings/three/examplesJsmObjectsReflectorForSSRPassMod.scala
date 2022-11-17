@@ -47,7 +47,7 @@ object examplesJsmObjectsReflectorForSSRPassMod {
     var renderTarget: WebGLRenderTarget = js.native
     
     @JSName("type")
-    var type_ReflectorForSSRPass: typings.three.threeStrings.ReflectorForSSRPass = js.native
+    var type_ReflectorForSSRPass: "ReflectorForSSRPass" = js.native
   }
   /* static members */
   object ReflectorForSSRPass {

@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.updatefound
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,16 +18,19 @@ trait ServiceWorkerRegistration
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_updatefound(`type`: updatefound, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_updatefound")
+  def addEventListener(`type`: "updatefound", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_updatefound(
-    `type`: updatefound,
+  @scala.annotation.targetName("addEventListener_updatefound")
+  def addEventListener(
+    `type`: "updatefound",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_updatefound(
-    `type`: updatefound,
+  @scala.annotation.targetName("addEventListener_updatefound")
+  def addEventListener(
+    `type`: "updatefound",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -51,16 +53,19 @@ trait ServiceWorkerRegistration
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_updatefound(`type`: updatefound, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_updatefound")
+  def removeEventListener(`type`: "updatefound", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_updatefound(
-    `type`: updatefound,
+  @scala.annotation.targetName("removeEventListener_updatefound")
+  def removeEventListener(
+    `type`: "updatefound",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_updatefound(
-    `type`: updatefound,
+  @scala.annotation.targetName("removeEventListener_updatefound")
+  def removeEventListener(
+    `type`: "updatefound",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

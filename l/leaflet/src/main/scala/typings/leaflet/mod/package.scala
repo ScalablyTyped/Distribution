@@ -9,7 +9,6 @@ import typings.geojson.mod.MultiLineString
 import typings.leaflet.anon.Active
 import typings.leaflet.anon.Alt
 import typings.leaflet.anon.X
-import typings.leaflet.leafletStrings.center
 import typings.leaflet.mod.^
 import typings.std.HTMLElement
 import typings.std.HTMLVideoElement
@@ -162,11 +161,19 @@ type BoundsLiteral = js.Tuple2[PointTuple, PointTuple]
 
 type Content = String | HTMLElement
 
+type ControlPosition = "topleft" | "topright" | "bottomleft" | "bottomright"
+
+type CrossOrigin = "anonymous" | "use-credentials" | ""
+
+type Direction = "right" | "left" | "top" | "bottom" | "center" | "auto"
+
 type DoneCallback = js.Function2[/* error */ js.UndefOr[js.Error], /* tile */ js.UndefOr[HTMLElement], Unit]
 
 type DragEndEventHandlerFn = js.Function1[/* event */ DragEndEvent, Unit]
 
 type ErrorEventHandlerFn = js.Function1[/* event */ ErrorEvent, Unit]
+
+type FillRule = "nonzero" | "evenodd" | "inherit"
 
 type InternalTiles = StringDictionary[Active]
 
@@ -174,12 +181,7 @@ type LatLngBoundsExpression = LatLngBounds_ | LatLngBoundsLiteral
 
 type LatLngBoundsLiteral = js.Array[LatLngTuple]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.leaflet.mod.LatLng_
-  - typings.leaflet.mod.LatLngLiteral
-  - typings.leaflet.mod.LatLngTuple
-*/
-type LatLngExpression = _LatLngExpression | LatLngTuple
+type LatLngExpression = LatLng_ | LatLngLiteral | LatLngTuple
 
 type LatLngTuple = js.Tuple2[Double, Double]
 
@@ -193,6 +195,10 @@ type LeafletKeyboardEventHandlerFn = js.Function1[/* event */ LeafletKeyboardEve
 
 type LeafletMouseEventHandlerFn = js.Function1[/* event */ LeafletMouseEvent, Unit]
 
+type LineCapShape = "butt" | "round" | "square" | "inherit"
+
+type LineJoinShape = "miter" | "round" | "bevel" | "inherit"
+
 type LocationEventHandlerFn = js.Function1[/* event */ LocationEvent, Unit]
 
 type PointExpression = Point_ | PointTuple
@@ -200,6 +206,8 @@ type PointExpression = Point_ | PointTuple
 type PointTuple = js.Tuple2[Double, Double]
 
 type PopupEventHandlerFn = js.Function1[/* event */ PopupEvent, Unit]
+
+type ReferrerPolicy = "no-referrer" | "no-referrer-when-downgrade" | "origin" | "origin-when-cross-origin" | "same-origin" | "strict-origin" | "strict-origin-when-cross-origin" | "unsafe-url"
 
 type ResizeEventHandlerFn = js.Function1[/* event */ ResizeEvent, Unit]
 
@@ -213,6 +221,6 @@ type TileEventHandlerFn = js.Function1[/* event */ TileEvent, Unit]
 
 type TooltipEventHandlerFn = js.Function1[/* event */ TooltipEvent, Unit]
 
-type Zoom = Boolean | center
+type Zoom = Boolean | "center"
 
 type ZoomAnimEventHandlerFn = js.Function1[/* event */ ZoomAnimEvent, Unit]

@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.IntersectionTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `215` extends StObject {
   
-  var `type`: IntersectionTypeAnnotation
+  var `type`: "IntersectionTypeAnnotation"
 }
 object `215` {
   
@@ -19,6 +18,6 @@ object `215` {
   
   extension [Self <: `215`](x: Self) {
     
-    inline def setType(value: IntersectionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "IntersectionTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

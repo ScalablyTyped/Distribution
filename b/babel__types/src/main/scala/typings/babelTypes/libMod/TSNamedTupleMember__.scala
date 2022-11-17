@@ -1,15 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSNamedTupleMember
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSNamedTupleMember__
   extends StObject
-     with BaseNode
-     with Node
-     with TypeScript {
+     with BaseNode {
   
   var elementType: TSType
   
@@ -18,7 +15,7 @@ trait TSNamedTupleMember__
   var optional: Boolean
   
   @JSName("type")
-  var type_TSNamedTupleMember__ : TSNamedTupleMember
+  var type_TSNamedTupleMember__ : "TSNamedTupleMember"
 }
 object TSNamedTupleMember__ {
   
@@ -36,6 +33,6 @@ object TSNamedTupleMember__ {
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSNamedTupleMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSNamedTupleMember"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

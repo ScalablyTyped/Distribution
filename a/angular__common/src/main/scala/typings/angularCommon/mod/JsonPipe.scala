@@ -1,7 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.json
 import typings.angularCore.mod.PipeTransform
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
@@ -36,6 +34,6 @@ object JsonPipe {
   
   @JSImport("@angular/common", "JsonPipe.\u0275pipe")
   @js.native
-  def ɵpipe: ɵɵPipeDeclaration[JsonPipe, json, `true`] = js.native
-  inline def ɵpipe_=(x: ɵɵPipeDeclaration[JsonPipe, json, `true`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
+  def ɵpipe: ɵɵPipeDeclaration[JsonPipe, "json", true] = js.native
+  inline def ɵpipe_=(x: ɵɵPipeDeclaration[JsonPipe, "json", true]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
 }

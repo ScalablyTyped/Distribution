@@ -1,7 +1,5 @@
 package typings.reactNative.anon
 
-import typings.reactNative.reactNativeStrings.leading
-import typings.reactNative.reactNativeStrings.trailing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +10,13 @@ trait Highlight extends StObject {
   
   def unhighlight(): Unit
   
-  def updateProps(select: leading | trailing, newProps: Any): Unit
+  @JSName("updateProps")
+  @scala.annotation.targetName("updateProps_leading_trailing")
+  def updateProps(select: "leading" | "trailing", newProps: Any): Unit
 }
 object Highlight {
   
-  inline def apply(highlight: () => Unit, unhighlight: () => Unit, updateProps: (leading | trailing, Any) => Unit): Highlight = {
+  inline def apply(highlight: () => Unit, unhighlight: () => Unit, updateProps: ("leading" | "trailing", Any) => Unit): Highlight = {
     val __obj = js.Dynamic.literal(highlight = js.Any.fromFunction0(highlight), unhighlight = js.Any.fromFunction0(unhighlight), updateProps = js.Any.fromFunction2(updateProps))
     __obj.asInstanceOf[Highlight]
   }
@@ -27,6 +27,6 @@ object Highlight {
     
     inline def setUnhighlight(value: () => Unit): Self = StObject.set(x, "unhighlight", js.Any.fromFunction0(value))
     
-    inline def setUpdateProps(value: (leading | trailing, Any) => Unit): Self = StObject.set(x, "updateProps", js.Any.fromFunction2(value))
+    inline def setUpdateProps(value: ("leading" | "trailing", Any) => Unit): Self = StObject.set(x, "updateProps", js.Any.fromFunction2(value))
   }
 }

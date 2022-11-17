@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSArrayType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `0` extends StObject {
   
-  var `type`: TSArrayType
+  var `type`: "TSArrayType"
 }
 object `0` {
   
@@ -19,6 +18,6 @@ object `0` {
   
   extension [Self <: `0`](x: Self) {
     
-    inline def setType(value: TSArrayType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSArrayType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

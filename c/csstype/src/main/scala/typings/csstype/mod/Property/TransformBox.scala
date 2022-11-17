@@ -4,41 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.csstypeStrings.`border-box`
-  - typings.csstype.csstypeStrings.`content-box`
-  - typings.csstype.csstypeStrings.`fill-box`
-  - typings.csstype.csstypeStrings.`stroke-box`
-  - typings.csstype.csstypeStrings.`view-box`
-  - typings.csstype.csstypeStrings.`-moz-initial`
-  - typings.csstype.csstypeStrings.inherit
-  - typings.csstype.csstypeStrings.initial
-  - typings.csstype.csstypeStrings.revert
-  - typings.csstype.csstypeStrings.`revert-layer`
-  - typings.csstype.csstypeStrings.unset
-*/
-trait TransformBox extends StObject
 object TransformBox {
   
-  inline def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def `border-box`: typings.csstype.csstypeStrings.`border-box` = "border-box".asInstanceOf[typings.csstype.csstypeStrings.`border-box`]
+  inline def `border-box`: "border-box" = "border-box".asInstanceOf["border-box"]
   
-  inline def `content-box`: typings.csstype.csstypeStrings.`content-box` = "content-box".asInstanceOf[typings.csstype.csstypeStrings.`content-box`]
+  inline def `content-box`: "content-box" = "content-box".asInstanceOf["content-box"]
   
-  inline def `fill-box`: typings.csstype.csstypeStrings.`fill-box` = "fill-box".asInstanceOf[typings.csstype.csstypeStrings.`fill-box`]
+  inline def `fill-box`: "fill-box" = "fill-box".asInstanceOf["fill-box"]
   
-  inline def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def `revert-layer`: typings.csstype.csstypeStrings.`revert-layer` = "revert-layer".asInstanceOf[typings.csstype.csstypeStrings.`revert-layer`]
+  inline def `revert-layer`: "revert-layer" = "revert-layer".asInstanceOf["revert-layer"]
   
-  inline def `stroke-box`: typings.csstype.csstypeStrings.`stroke-box` = "stroke-box".asInstanceOf[typings.csstype.csstypeStrings.`stroke-box`]
+  inline def `stroke-box`: "stroke-box" = "stroke-box".asInstanceOf["stroke-box"]
   
-  inline def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
   
-  inline def `view-box`: typings.csstype.csstypeStrings.`view-box` = "view-box".asInstanceOf[typings.csstype.csstypeStrings.`view-box`]
+  inline def `view-box`: "view-box" = "view-box".asInstanceOf["view-box"]
 }

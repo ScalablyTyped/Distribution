@@ -7,8 +7,6 @@ import typings.rcTree.esInterfaceMod.IconType
 import typings.rcTree.esInterfaceMod.Key
 import typings.rcTree.esTreeNodeMod.TreeNodeProps
 import typings.rcTree.esUtilsTreeUtilMod.TreeNodeRequiredProps
-import typings.rcTree.rcTreeStrings.hide
-import typings.rcTree.rcTreeStrings.show
 import typings.react.mod.CSSProperties
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.MouseEvent
@@ -76,7 +74,7 @@ object esMotionTreeNodeMod extends Shortcut {
     
     var motionNodes: js.UndefOr[js.Array[FlattenNode[DataNode]]] = js.undefined
     
-    var motionType: js.UndefOr[show | hide] = js.undefined
+    var motionType: js.UndefOr["show" | "hide"] = js.undefined
     
     def onMotionEnd(): Unit
     
@@ -210,7 +208,7 @@ object esMotionTreeNodeMod extends Shortcut {
       
       inline def setMotionNodesVarargs(value: FlattenNode[DataNode]*): Self = StObject.set(x, "motionNodes", js.Array(value*))
       
-      inline def setMotionType(value: show | hide): Self = StObject.set(x, "motionType", value.asInstanceOf[js.Any])
+      inline def setMotionType(value: "show" | "hide"): Self = StObject.set(x, "motionType", value.asInstanceOf[js.Any])
       
       inline def setMotionTypeUndefined: Self = StObject.set(x, "motionType", js.undefined)
       

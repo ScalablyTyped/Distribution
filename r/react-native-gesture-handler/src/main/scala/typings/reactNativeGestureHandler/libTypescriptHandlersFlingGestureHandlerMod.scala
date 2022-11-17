@@ -3,8 +3,6 @@ package typings.reactNativeGestureHandler
 import typings.react.mod.ComponentType
 import typings.react.mod.RefAttributes
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.BaseGestureHandlerProps_
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.direction
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.numberOfPointers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +16,7 @@ object libTypescriptHandlersFlingGestureHandlerMod {
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/FlingGestureHandler", "flingGestureHandlerProps")
   @js.native
-  val flingGestureHandlerProps: js.Tuple2[numberOfPointers, direction] = js.native
+  val flingGestureHandlerProps: js.Tuple2["numberOfPointers", "direction"] = js.native
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/FlingGestureHandler", "flingHandlerName")
   @js.native

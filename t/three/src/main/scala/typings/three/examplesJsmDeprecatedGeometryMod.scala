@@ -16,7 +16,6 @@ import typings.three.srcThreeMod.Sphere
 import typings.three.srcThreeMod.Vector2
 import typings.three.srcThreeMod.Vector3
 import typings.three.srcThreeMod.Vector4
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -229,7 +228,7 @@ object examplesJsmDeprecatedGeometryMod {
       */
     var id: Double = js.native
     
-    val isGeometry: `true` = js.native
+    val isGeometry: true = js.native
     
     /**
       * @default []

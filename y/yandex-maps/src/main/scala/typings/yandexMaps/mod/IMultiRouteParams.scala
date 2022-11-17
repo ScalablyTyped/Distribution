@@ -1,8 +1,5 @@
 package typings.yandexMaps.mod
 
-import typings.yandexMaps.yandexMapsStrings.auto
-import typings.yandexMaps.yandexMapsStrings.masstransit
-import typings.yandexMaps.yandexMapsStrings.pedestrian
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +16,7 @@ trait IMultiRouteParams extends StObject {
   
   var reverseGeocoding: js.UndefOr[Boolean] = js.undefined
   
-  var routingMode: js.UndefOr[auto | masstransit | pedestrian] = js.undefined
+  var routingMode: js.UndefOr["auto" | "masstransit" | "pedestrian"] = js.undefined
   
   var searchCoordOrder: js.UndefOr[String] = js.undefined
   
@@ -60,7 +57,7 @@ object IMultiRouteParams {
     
     inline def setReverseGeocodingUndefined: Self = StObject.set(x, "reverseGeocoding", js.undefined)
     
-    inline def setRoutingMode(value: auto | masstransit | pedestrian): Self = StObject.set(x, "routingMode", value.asInstanceOf[js.Any])
+    inline def setRoutingMode(value: "auto" | "masstransit" | "pedestrian"): Self = StObject.set(x, "routingMode", value.asInstanceOf[js.Any])
     
     inline def setRoutingModeUndefined: Self = StObject.set(x, "routingMode", js.undefined)
     

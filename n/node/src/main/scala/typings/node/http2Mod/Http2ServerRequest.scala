@@ -3,11 +3,6 @@ package typings.node.http2Mod
 import typings.node.bufferMod.global.Buffer
 import typings.node.nodeColonnetMod.Socket
 import typings.node.nodeColontlsMod.TLSSocket
-import typings.node.nodeStrings.close
-import typings.node.nodeStrings.data
-import typings.node.nodeStrings.end
-import typings.node.nodeStrings.error
-import typings.node.nodeStrings.readable
 import typings.node.streamMod.ReadableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,23 +25,26 @@ open class Http2ServerRequest protected () extends StObject {
     */
   val aborted: Boolean = js.native
   
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_readable")
+  def addListener(event: "readable", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_close")
+  def addListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_end")
+  def addListener(event: "end", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_error")
+  def addListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_data")
+  def addListener(event: "data", listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_aborted")
+  def addListener(event: "aborted", listener: js.Function2[/* hadError */ Boolean, /* code */ Double, Unit]): this.type = js.native
   def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_aborted(
-    event: typings.node.nodeStrings.aborted,
-    listener: js.Function2[/* hadError */ Boolean, /* code */ Double, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_data(event: data, listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   
   /**
     * The request authority pseudo header field. Because HTTP/2 allows requests
@@ -69,22 +67,29 @@ open class Http2ServerRequest protected () extends StObject {
     */
   val connection: Socket | TLSSocket = js.native
   
+  @JSName("emit")
+  @scala.annotation.targetName("emit_readable")
+  def emit(event: "readable"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_close")
+  def emit(event: "close"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_end")
+  def emit(event: "end"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_data")
+  def emit(event: "data", chunk: String): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_data")
+  def emit(event: "data", chunk: Buffer): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_error")
+  def emit(event: "error", err: js.Error): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_aborted")
+  def emit(event: "aborted", hadError: Boolean, code: Double): Boolean = js.native
   def emit(event: String, args: Any*): Boolean = js.native
   def emit(event: js.Symbol, args: Any*): Boolean = js.native
-  @JSName("emit")
-  def emit_aborted(event: typings.node.nodeStrings.aborted, hadError: Boolean, code: Double): Boolean = js.native
-  @JSName("emit")
-  def emit_close(event: close): Boolean = js.native
-  @JSName("emit")
-  def emit_data(event: data, chunk: String): Boolean = js.native
-  @JSName("emit")
-  def emit_data(event: data, chunk: Buffer): Boolean = js.native
-  @JSName("emit")
-  def emit_end(event: end): Boolean = js.native
-  @JSName("emit")
-  def emit_error(event: error, err: js.Error): Boolean = js.native
-  @JSName("emit")
-  def emit_readable(event: readable): Boolean = js.native
   
   /**
     * The request/response headers object.
@@ -135,77 +140,89 @@ open class Http2ServerRequest protected () extends StObject {
     */
   val method: String = js.native
   
+  @JSName("on")
+  @scala.annotation.targetName("on_close")
+  def on(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_readable")
+  def on(event: "readable", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_end")
+  def on(event: "end", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_error")
+  def on(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_data")
+  def on(event: "data", listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_aborted")
+  def on(event: "aborted", listener: js.Function2[/* hadError */ Boolean, /* code */ Double, Unit]): this.type = js.native
   def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("on")
-  def on_aborted(
-    event: typings.node.nodeStrings.aborted,
-    listener: js.Function2[/* hadError */ Boolean, /* code */ Double, Unit]
-  ): this.type = js.native
-  @JSName("on")
-  def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_data(event: data, listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
-  @JSName("on")
-  def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("on")
-  def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   
+  @JSName("once")
+  @scala.annotation.targetName("once_end")
+  def once(event: "end", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_readable")
+  def once(event: "readable", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_close")
+  def once(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_error")
+  def once(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_data")
+  def once(event: "data", listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_aborted")
+  def once(event: "aborted", listener: js.Function2[/* hadError */ Boolean, /* code */ Double, Unit]): this.type = js.native
   def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("once")
-  def once_aborted(
-    event: typings.node.nodeStrings.aborted,
-    listener: js.Function2[/* hadError */ Boolean, /* code */ Double, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_data(event: data, listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
-  @JSName("once")
-  def once_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("once")
-  def once_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_close")
+  def prependListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_readable")
+  def prependListener(event: "readable", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_end")
+  def prependListener(event: "end", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_data")
+  def prependListener(event: "data", listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_error")
+  def prependListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_aborted")
+  def prependListener(event: "aborted", listener: js.Function2[/* hadError */ Boolean, /* code */ Double, Unit]): this.type = js.native
   def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_aborted(
-    event: typings.node.nodeStrings.aborted,
-    listener: js.Function2[/* hadError */ Boolean, /* code */ Double, Unit]
-  ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_data(event: data, listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_readable")
+  def prependOnceListener(event: "readable", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_end")
+  def prependOnceListener(event: "end", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_close")
+  def prependOnceListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_data")
+  def prependOnceListener(event: "data", listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_error")
+  def prependOnceListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_aborted")
+  def prependOnceListener(event: "aborted", listener: js.Function2[/* hadError */ Boolean, /* code */ Double, Unit]): this.type = js.native
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_aborted(
-    event: typings.node.nodeStrings.aborted,
-    listener: js.Function2[/* hadError */ Boolean, /* code */ Double, Unit]
-  ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_data(event: data, listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   
   /**
     * The raw request/response headers list exactly as they were received.

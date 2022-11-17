@@ -5,7 +5,6 @@ import typings.rcSelect.libBaseSelectMod.CustomTagProps
 import typings.rcSelect.libBaseSelectMod.DisplayValueType
 import typings.rcSelect.libBaseSelectMod.RenderNode
 import typings.rcSelect.libSelectorMod.InnerSelectorProps
-import typings.rcSelect.rcSelectStrings.responsive
 import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -26,7 +25,7 @@ object libSelectorMultipleSelectorMod extends Shortcut {
     
     var choiceTransitionName: js.UndefOr[String] = js.native
     
-    var maxTagCount: js.UndefOr[Double | responsive] = js.native
+    var maxTagCount: js.UndefOr[Double | "responsive"] = js.native
     
     var maxTagPlaceholder: js.UndefOr[
         ReactNode | (js.Function1[/* omittedValues */ js.Array[DisplayValueType], ReactNode])

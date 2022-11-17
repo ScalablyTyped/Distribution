@@ -4,7 +4,6 @@ import typings.rcTree.esInterfaceMod.DataNode
 import typings.rcTree.esInterfaceMod.FieldDataNode
 import typings.rcTree.esInterfaceMod.IconType
 import typings.rcTree.esTreeNodeMod.TreeNodeProps
-import typings.rcTree.rcTreeStrings.children
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -16,7 +15,7 @@ trait FieldDataNodekeystringnum extends StObject {
   
   var checkable: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[js.Array[FieldDataNode[Key, typings.rcTree.rcTreeStrings.children]]] = js.undefined
+  var children: js.UndefOr[js.Array[FieldDataNode[Key, "children"]]] = js.undefined
   
   /** Set style of TreeNode. This is not recommend if you don't have any force requirement */
   var className: js.UndefOr[String] = js.undefined
@@ -52,11 +51,11 @@ object FieldDataNodekeystringnum {
     
     inline def setCheckableUndefined: Self = StObject.set(x, "checkable", js.undefined)
     
-    inline def setChildren(value: js.Array[FieldDataNode[Key, children]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[FieldDataNode[Key, "children"]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: (FieldDataNode[Key, children])*): Self = StObject.set(x, "children", js.Array(value*))
+    inline def setChildrenVarargs(value: (FieldDataNode[Key, "children"])*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

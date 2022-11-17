@@ -3,7 +3,6 @@ package typings.yandexMaps.mod
 import typings.std.GlobalEventHandlersEventMap
 import typings.yandexMaps.mod.^
 import typings.yandexMaps.mod.geometry.Point
-import typings.yandexMaps.yandexMapsStrings.islandsNumbersigngeolocationIcon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,21 +43,15 @@ inline def ready(successCallback: Unit, errorCallback: Unit, context: js.Object)
 inline def suggest(request: String): js.Promise[js.Array[ISuggestResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("suggest")(request.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ISuggestResult]]]
 inline def suggest(request: String, options: ISuggestOptions): js.Promise[js.Array[ISuggestResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("suggest")(request.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ISuggestResult]]]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonTwoColumnsItemContent
-  - typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonCarouselItemContent
-  - typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonAccordionItemContent
-  - java.lang.String
-*/
-type ClusterContentLayoutKey = _ClusterContentLayoutKey | String
+type ClusterContentLayoutKey = "cluster#balloonTwoColumnsItemContent" | "cluster#balloonCarouselItemContent" | "cluster#balloonAccordionItemContent" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonTwoColumns
-  - typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonCarousel
-  - typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonAccordion
-  - java.lang.String
-*/
-type ClusterLayoutKey = _ClusterLayoutKey | String
+type ClusterLayoutKey = "cluster#balloonTwoColumns" | "cluster#balloonCarousel" | "cluster#balloonAccordion" | String
+
+type ControlKey = "fullscreenControl" | "geolocationControl" | "routeEditor" | "rulerControl" | "searchControl" | "trafficControl" | "typeSelector" | "zoomControl" | "smallMapDefaultSet" | "mediumMapDefaultSet" | "largeMapDefaultSet" | "default"
+
+type ControlSetKey = "smallMapDefaultSet" | "mediumMapDefaultSet" | "largeMapDefaultSet" | "default"
+
+type ControlSingleKey = "fullscreenControl" | "geolocationControl" | "routeEditor" | "rulerControl" | "searchControl" | "trafficControl" | "typeSelector" | "zoomControl"
 
 type EventMap = GlobalEventHandlersEventMap
 
@@ -85,67 +78,32 @@ type ISelectableControlLayout = ILayout
 //option.presetStorage
 //[number, number]
 //[[number, number], [number, number]]
-/* Rewritten from type alias, can be one of: 
-  - typings.yandexMaps.yandexMapsStrings.defaultNumbersignimage
-  - typings.yandexMaps.yandexMapsStrings.defaultNumbersignimageWithContent
-  - java.lang.String
-*/
-type IconLayoutKey = _IconLayoutKey | String
+type IconLayoutKey = "default#image" | "default#imageWithContent" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.yandexMaps.yandexMapsStrings.defaultNumbersignopaque
-  - typings.yandexMaps.yandexMapsStrings.defaultNumbersigngeoObject
-  - typings.yandexMaps.yandexMapsStrings.defaultNumbersignlayer
-  - typings.yandexMaps.yandexMapsStrings.defaultNumbersigntransparent
-  - typings.yandexMaps.yandexMapsStrings.defaultNumbersignsilent
-  - java.lang.String
-*/
-type InteractivityModelKey = _InteractivityModelKey | String
+type InteractivityModelKey = "default#opaque" | "default#geoObject" | "default#layer" | "default#transparent" | "default#silent" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.yandexMaps.yandexMapsStrings.defaultNumbersignplacemark
-  - typings.yandexMaps.yandexMapsStrings.defaultNumbersignpin
-  - typings.yandexMaps.yandexMapsStrings.defaultNumbersigncircle
-  - typings.yandexMaps.yandexMapsStrings.defaultNumbersignrectangle
-  - typings.yandexMaps.yandexMapsStrings.defaultNumbersignpolyline
-  - typings.yandexMaps.yandexMapsStrings.defaultNumbersignpolygon
-  - typings.yandexMaps.yandexMapsStrings.hotspotNumbersignplacemark
-  - typings.yandexMaps.yandexMapsStrings.hotspotNumbersigncircle
-  - typings.yandexMaps.yandexMapsStrings.hotspotNumbersignrectangle
-  - typings.yandexMaps.yandexMapsStrings.hotspotNumbersignpolyline
-  - typings.yandexMaps.yandexMapsStrings.hotspotNumbersignpolygon
-  - typings.yandexMaps.yandexMapsStrings.htmlNumbersignballoon
-  - typings.yandexMaps.yandexMapsStrings.htmlNumbersignhint
-  - typings.yandexMaps.yandexMapsStrings.htmlNumbersignplacemark
-  - typings.yandexMaps.yandexMapsStrings.htmlNumbersignrectangle
-  - java.lang.String
-  - typings.yandexMaps.mod.IClassConstructor[typings.yandexMaps.mod.IOverlay]
-  - js.Function3[
-/ * geometry * / typings.yandexMaps.mod.IPixelLineStringGeometry, 
-/ * data * / typings.yandexMaps.mod.IDataManager | js.Object, 
-/ * options * / js.Object, 
-js.Promise[
-  java.lang.String | typings.yandexMaps.mod.IClassConstructor[typings.yandexMaps.mod.IOverlay]
-]]
-*/
-type OverlayKey = _OverlayKey | IClassConstructor[IOverlay] | (js.Function3[
+type OverlayKey = "default#placemark" | "default#pin" | "default#circle" | "default#rectangle" | "default#polyline" | "default#polygon" | "hotspot#placemark" | "hotspot#circle" | "hotspot#rectangle" | "hotspot#polyline" | "hotspot#polygon" | "html#balloon" | "html#hint" | "html#placemark" | "html#rectangle" | String | IClassConstructor[IOverlay] | (js.Function3[
 /* geometry */ IPixelLineStringGeometry, 
 /* data */ IDataManager | js.Object, 
 /* options */ js.Object, 
-js.Promise[String | IClassConstructor[IOverlay]]]) | String
+js.Promise[String | IClassConstructor[IOverlay]]])
 
-/* Rewritten from type alias, can be one of: 
-  - typings.yandexMaps.mod.PresetWithTextKey
-  - typings.yandexMaps.mod.PresetWithTextStretchyKey
-  - typings.yandexMaps.mod.PresetDotKey
-  - typings.yandexMaps.mod.PresetCircleKey
-  - typings.yandexMaps.mod.PresetCircleDotKey
-  - typings.yandexMaps.mod.PresetWithIconKey
-  - typings.yandexMaps.mod.PresetWithIconCircleKey
-  - typings.yandexMaps.mod.PresetPictogramKey
-  - typings.yandexMaps.mod.PresetClusterKey
-  - java.lang.String
-*/
-type PresetKey = _PresetKey | PresetPictogramKey | String
+type PresetCircleDotKey = "islands#blueCircleDotIcon" | "islands#darkGreenCircleDotIcon" | "islands#redCircleDotIcon" | "islands#violetCircleDotIcon" | "islands#darkOrangeCircleDotIcon" | "islands#blackCircleDotIcon" | "islands#nightCircleDotIcon" | "islands#yellowCircleDotIcon" | "islands#darkBlueCircleDotIcon" | "islands#greenCircleDotIcon" | "islands#pinkCircleDotIcon" | "islands#orangeCircleDotIcon" | "islands#grayCircleDotIcon" | "islands#lightBlueCircleDotIcon" | "islands#brownCircleDotIcon" | "islands#oliveCircleDotIcon"
 
-type PresetPictogramKey = islandsNumbersigngeolocationIcon
+type PresetCircleKey = "islands#blueCircleIcon" | "islands#darkGreenCircleIcon" | "islands#redCircleIcon" | "islands#violetCircleIcon" | "islands#darkOrangeCircleIcon" | "islands#blackCircleIcon" | "islands#nightCircleIcon" | "islands#yellowCircleIcon" | "islands#darkBlueCircleIcon" | "islands#greenCircleIcon" | "islands#pinkCircleIcon" | "islands#orangeCircleIcon" | "islands#grayCircleIcon" | "islands#lightBlueCircleIcon" | "islands#brownCircleIcon" | "islands#oliveCircleIcon"
+
+type PresetClusterKey = "islands#blueClusterIcons" | "islands#invertedBlueClusterIcons" | "islands#redClusterIcons" | "islands#invertedRedClusterIcons" | "islands#darkOrangeClusterIcons" | "islands#invertedDarkOrangeClusterIcons" | "islands#nightClusterIcons" | "islands#invertedNightClusterIcons" | "islands#darkBlueClusterIcons" | "islands#invertedDarkBlueClusterIcons" | "islands#pinkClusterIcons" | "islands#invertedPinkClusterIcons" | "islands#grayClusterIcons" | "islands#invertedGrayClusterIcons" | "islands#brownClusterIcons" | "islands#invertedBrownClusterIcons" | "islands#darkGreenClusterIcons" | "islands#invertedDarkGreenClusterIcons" | "islands#violetClusterIcons" | "islands#invertedVioletClusterIcons" | "islands#blackClusterIcons" | "islands#invertedBlackClusterIcons" | "islands#yellowClusterIcons" | "islands#invertedYellowClusterIcons" | "islands#greenClusterIcons" | "islands#invertedGreenClusterIcons" | "islands#orangeClusterIcons" | "islands#invertedOrangeClusterIcons" | "islands#lightBlueClusterIcons" | "islands#invertedLightBlueClusterIcons" | "islands#oliveClusterIcons" | "islands#invertedOliveClusterIcons"
+
+type PresetDotKey = "islands#blueDotIcon" | "islands#darkGreenDotIcon" | "islands#redDotIcon" | "islands#violetDotIcon" | "islands#darkOrangeDotIcon" | "islands#blackDotIcon" | "islands#nightDotIcon" | "islands#yellowDotIcon" | "islands#darkBlueDotIcon" | "islands#greenDotIcon" | "islands#pinkDotIcon" | "islands#orangeDotIcon" | "islands#grayDotIcon" | "islands#lightBlueDotIcon" | "islands#brownDotIcon" | "islands#oliveDotIcon"
+
+type PresetKey = PresetWithTextKey | PresetWithTextStretchyKey | PresetDotKey | PresetCircleKey | PresetCircleDotKey | PresetWithIconKey | PresetWithIconCircleKey | PresetPictogramKey | PresetClusterKey | String
+
+type PresetPictogramKey = "islands#geolocationIcon"
+
+type PresetWithIconCircleKey = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with "islands#blueHomeCircleIcon", "islands#blueScienceCircleIcon", "islands#blueAirportCircleIcon" */ String
+
+type PresetWithIconKey = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with "islands#blueAirportIcon", "islands#blueAttentionIcon", "islands#blueAutoIcon" */ String
+
+type PresetWithTextKey = "islands#blueIcon" | "islands#darkGreenIcon" | "islands#redIcon" | "islands#violetIcon" | "islands#darkOrangeIcon" | "islands#blackIcon" | "islands#nightIcon" | "islands#yellowIcon" | "islands#darkBlueIcon" | "islands#greenIcon" | "islands#pinkIcon" | "islands#orangeIcon" | "islands#grayIcon" | "islands#lightBlueIcon" | "islands#brownIcon" | "islands#oliveIcon"
+
+type PresetWithTextStretchyKey = "islands#blueStretchyIcon" | "islands#darkGreenStretchyIcon" | "islands#redStretchyIcon" | "islands#violetStretchyIcon" | "islands#darkOrangeStretchyIcon" | "islands#blackStretchyIcon" | "islands#nightStretchyIcon" | "islands#yellowStretchyIcon" | "islands#darkBlueStretchyIcon" | "islands#greenStretchyIcon" | "islands#pinkStretchyIcon" | "islands#orangeStretchyIcon" | "islands#grayStretchyIcon" | "islands#lightBlueStretchyIcon" | "islands#brownStretchyIcon" | "islands#oliveStretchyIcon"

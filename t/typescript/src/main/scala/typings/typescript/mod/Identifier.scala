@@ -8,20 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Identifier
   extends StObject
      with PrimaryExpression
-     with Declaration
-     with AssertionKey
-     with BindingName
-     with BindingOrAssignmentElementTarget
-     with DeclarationName
-     with EntityName
-     with EntityNameExpression
-     with JSDocNamespaceBody
-     with JsxTagNameExpression
-     with MemberName
-     with ModuleName
-     with PropertyName
-     with PropertyNameLiteral
-     with _ArrayBindingOrAssignmentElement {
+     with Declaration {
   
   /**
     * Prefer to use `id.unescapedText`. (Note: This is available only in services, not internally to the TypeScript compiler.)

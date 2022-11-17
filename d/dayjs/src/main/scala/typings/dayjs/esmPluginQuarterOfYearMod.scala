@@ -28,8 +28,7 @@ object esmPluginQuarterOfYearMod extends Shortcut {
       
       def add(value: Double, unit: QUnitType): Dayjs = js.native
       
-      def endOf(unit: OpUnitType): Dayjs = js.native
-      def endOf(unit: QUnitType): Dayjs = js.native
+      def endOf(unit: OpUnitType | QUnitType): Dayjs = js.native
       
       def isAfter(date: ConfigType): Boolean = js.native
       def isAfter(date: ConfigType, unit: QUnitType): Boolean = js.native
@@ -43,8 +42,7 @@ object esmPluginQuarterOfYearMod extends Shortcut {
       def quarter(): Double = js.native
       def quarter(quarter: Double): Dayjs = js.native
       
-      def startOf(unit: OpUnitType): Dayjs = js.native
-      def startOf(unit: QUnitType): Dayjs = js.native
+      def startOf(unit: OpUnitType | QUnitType): Dayjs = js.native
       
       def subtract(value: Double, unit: QUnitType): Dayjs = js.native
     }

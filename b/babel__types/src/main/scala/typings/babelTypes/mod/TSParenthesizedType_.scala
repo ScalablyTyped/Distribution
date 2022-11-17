@@ -1,21 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSParenthesizedType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSParenthesizedType_
+trait TSParenthesizedType_
   extends StObject
-     with BaseNode
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   var typeAnnotation: TSType
   
   @JSName("type")
-  var type_TSParenthesizedType_ : TSParenthesizedType
+  var type_TSParenthesizedType_ : "TSParenthesizedType"
 }
 object TSParenthesizedType_ {
   
@@ -27,7 +23,7 @@ object TSParenthesizedType_ {
   
   extension [Self <: TSParenthesizedType_](x: Self) {
     
-    inline def setType(value: TSParenthesizedType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSParenthesizedType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }

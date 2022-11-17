@@ -145,15 +145,11 @@ object panorama {
   inline def locate(point: js.Array[Double]): js.Promise[js.Array[IPanorama]] = ^.asInstanceOf[js.Dynamic].applyDynamic("locate")(point.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[IPanorama]]]
   inline def locate(point: js.Array[Double], options: typings.yandexMaps.anon.Layer): js.Promise[js.Array[IPanorama]] = (^.asInstanceOf[js.Dynamic].applyDynamic("locate")(point.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[IPanorama]]]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.yandexMaps.yandexMapsStrings.yandexNumbersignpanorama
-    - typings.yandexMaps.yandexMapsStrings.yandexNumbersignairPanorama
-  */
-  trait Layer extends StObject
   object Layer {
     
-    inline def yandexNumbersignairPanorama: typings.yandexMaps.yandexMapsStrings.yandexNumbersignairPanorama = "yandex#airPanorama".asInstanceOf[typings.yandexMaps.yandexMapsStrings.yandexNumbersignairPanorama]
+    inline def yandexNumbersignairPanorama: "yandex#airPanorama" = "yandex#airPanorama".asInstanceOf["yandex#airPanorama"]
     
-    inline def yandexNumbersignpanorama: typings.yandexMaps.yandexMapsStrings.yandexNumbersignpanorama = "yandex#panorama".asInstanceOf[typings.yandexMaps.yandexMapsStrings.yandexNumbersignpanorama]
+    inline def yandexNumbersignpanorama: "yandex#panorama" = "yandex#panorama".asInstanceOf["yandex#panorama"]
   }
+  type Layer = "yandex#panorama" | "yandex#airPanorama"
 }

@@ -1,17 +1,14 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashBACK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NavigationBackAction
   extends StObject
-     with NavigationBackActionPayload
-     with NavigationStackAction
-     with NavigationTabAction {
+     with NavigationBackActionPayload {
   
-  var `type`: NavigationSlashBACK
+  var `type`: "Navigation/BACK"
 }
 object NavigationBackAction {
   
@@ -23,6 +20,6 @@ object NavigationBackAction {
   
   extension [Self <: NavigationBackAction](x: Self) {
     
-    inline def setType(value: NavigationSlashBACK): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Navigation/BACK"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

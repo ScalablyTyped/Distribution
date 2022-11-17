@@ -1,33 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`clipboard-read`
-import typings.electron.electronStrings.`display-capture`
-import typings.electron.electronStrings.`extension-loaded`
-import typings.electron.electronStrings.`extension-ready`
-import typings.electron.electronStrings.`extension-unloaded`
-import typings.electron.electronStrings.`hid-device-added`
-import typings.electron.electronStrings.`hid-device-removed`
-import typings.electron.electronStrings.`hid-device-revoked`
-import typings.electron.electronStrings.`select-hid-device`
-import typings.electron.electronStrings.`select-serial-port`
-import typings.electron.electronStrings.`serial-port-added`
-import typings.electron.electronStrings.`serial-port-removed`
-import typings.electron.electronStrings.`spellcheck-dictionary-download-begin`
-import typings.electron.electronStrings.`spellcheck-dictionary-download-failure`
-import typings.electron.electronStrings.`spellcheck-dictionary-download-success`
-import typings.electron.electronStrings.`spellcheck-dictionary-initialized`
-import typings.electron.electronStrings.`will-download`
-import typings.electron.electronStrings.fullscreen
-import typings.electron.electronStrings.geolocation
-import typings.electron.electronStrings.media
-import typings.electron.electronStrings.mediaKeySystem
-import typings.electron.electronStrings.midi
-import typings.electron.electronStrings.midiSysex
-import typings.electron.electronStrings.notifications
-import typings.electron.electronStrings.openExternal
-import typings.electron.electronStrings.pointerLock
-import typings.electron.electronStrings.preconnect
-import typings.electron.electronStrings.unknown_
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
@@ -38,43 +10,69 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Session_ extends EventEmitter {
   
   @JSName("addListener")
-  def addListener_extensionloaded(
-    event: `extension-loaded`,
-    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_extensionready(
-    event: `extension-ready`,
-    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_extensionunloaded(
-    event: `extension-unloaded`,
-    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_hiddeviceadded(
-    event: `hid-device-added`,
+  @scala.annotation.targetName("addListener_hiddeviceadded")
+  def addListener(
+    event: "hid-device-added",
     listener: js.Function2[/* event */ Event, /* details */ HidDeviceAddedDetails, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_hiddeviceremoved(
-    event: `hid-device-removed`,
-    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRemovedDetails, Unit]
+  @scala.annotation.targetName("addListener_extensionready")
+  def addListener(
+    event: "extension-ready",
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_hiddevicerevoked(
-    event: `hid-device-revoked`,
+  @scala.annotation.targetName("addListener_spellcheckdictionarydownloadsuccess")
+  def addListener(
+    event: "spellcheck-dictionary-download-success",
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_spellcheckdictionaryinitialized")
+  def addListener(
+    event: "spellcheck-dictionary-initialized",
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_spellcheckdictionarydownloadfailure")
+  def addListener(
+    event: "spellcheck-dictionary-download-failure",
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_hiddevicerevoked")
+  def addListener(
+    event: "hid-device-revoked",
     listener: js.Function2[/* event */ Event, /* details */ HidDeviceRevokedDetails, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_preconnect(
-    event: preconnect,
-    listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+  @scala.annotation.targetName("addListener_hiddeviceremoved")
+  def addListener(
+    event: "hid-device-removed",
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRemovedDetails, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_selecthiddevice(
-    event: `select-hid-device`,
+  @scala.annotation.targetName("addListener_extensionloaded")
+  def addListener(
+    event: "extension-loaded",
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_extensionunloaded")
+  def addListener(
+    event: "extension-unloaded",
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_spellcheckdictionarydownloadbegin")
+  def addListener(
+    event: "spellcheck-dictionary-download-begin",
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_selecthiddevice")
+  def addListener(
+    event: "select-hid-device",
     listener: js.Function3[
       /* event */ Event, 
       /* details */ SelectHidDeviceDetails, 
@@ -83,8 +81,33 @@ trait Session_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_selectserialport(
-    event: `select-serial-port`,
+  @scala.annotation.targetName("addListener_serialportadded")
+  def addListener(
+    event: "serial-port-added",
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_willdownload")
+  def addListener(
+    event: "will-download",
+    listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_serialportremoved")
+  def addListener(
+    event: "serial-port-removed",
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_preconnect")
+  def addListener(
+    event: "preconnect",
+    listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_selectserialport")
+  def addListener(
+    event: "select-serial-port",
     listener: js.Function4[
       /* event */ Event, 
       /* portList */ js.Array[SerialPort], 
@@ -92,41 +115,6 @@ trait Session_ extends EventEmitter {
       /* callback */ js.Function1[/* portId */ String, Unit], 
       Unit
     ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_serialportadded(
-    event: `serial-port-added`,
-    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_serialportremoved(
-    event: `serial-port-removed`,
-    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_spellcheckdictionarydownloadbegin(
-    event: `spellcheck-dictionary-download-begin`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_spellcheckdictionarydownloadfailure(
-    event: `spellcheck-dictionary-download-failure`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_spellcheckdictionarydownloadsuccess(
-    event: `spellcheck-dictionary-download-success`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_spellcheckdictionaryinitialized(
-    event: `spellcheck-dictionary-initialized`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_willdownload(
-    event: `will-download`,
-    listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   
   /**
@@ -342,6 +330,47 @@ trait Session_ extends EventEmitter {
   val netLog: NetLog = js.native
   
   /**
+    * Emitted when a hunspell dictionary file download fails.  For details on the
+    * failure you should collect a netlog and inspect the download request.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_spellcheckdictionarydownloadfailure")
+  def on(
+    event: "spellcheck-dictionary-download-failure",
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted after `HIDDevice.forget()` has been called.  This event can be used to
+    * help maintain persistent storage of permissions when
+    * `setDevicePermissionHandler` is used.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_hiddevicerevoked")
+  def on(
+    event: "hid-device-revoked",
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRevokedDetails, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted after an extension is loaded and all necessary browser state is
+    * initialized to support the start of the extension's background page.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_extensionready")
+  def on(
+    event: "extension-ready",
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when a hunspell dictionary file has been successfully initialized. This
+    * occurs after the file has been downloaded.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_spellcheckdictionaryinitialized")
+  def on(
+    event: "spellcheck-dictionary-initialized",
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  /**
     * Emitted after an extension is loaded. This occurs whenever an extension is added
     * to the "enabled" set of extensions. This includes:
     *
@@ -351,39 +380,19 @@ trait Session_ extends EventEmitter {
     *   * if the extension requested it (`chrome.runtime.reload()`).
     */
   @JSName("on")
-  def on_extensionloaded(
-    event: `extension-loaded`,
+  @scala.annotation.targetName("on_extensionloaded")
+  def on(
+    event: "extension-loaded",
     listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
   ): this.type = js.native
   /**
-    * Emitted after an extension is loaded and all necessary browser state is
-    * initialized to support the start of the extension's background page.
+    * Emitted when a hunspell dictionary file has been successfully downloaded
     */
   @JSName("on")
-  def on_extensionready(
-    event: `extension-ready`,
-    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted after an extension is unloaded. This occurs when
-    * `Session.removeExtension` is called.
-    */
-  @JSName("on")
-  def on_extensionunloaded(
-    event: `extension-unloaded`,
-    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted after `navigator.hid.requestDevice` has been called and
-    * `select-hid-device` has fired if a new device becomes available before the
-    * callback from `select-hid-device` is called.  This event is intended for use
-    * when using a UI to ask users to pick a device so that the UI can be updated with
-    * the newly added device.
-    */
-  @JSName("on")
-  def on_hiddeviceadded(
-    event: `hid-device-added`,
-    listener: js.Function2[/* event */ Event, /* details */ HidDeviceAddedDetails, Unit]
+  @scala.annotation.targetName("on_spellcheckdictionarydownloadsuccess")
+  def on(
+    event: "spellcheck-dictionary-download-success",
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   /**
     * Emitted after `navigator.hid.requestDevice` has been called and
@@ -393,28 +402,77 @@ trait Session_ extends EventEmitter {
     * specified device.
     */
   @JSName("on")
-  def on_hiddeviceremoved(
-    event: `hid-device-removed`,
+  @scala.annotation.targetName("on_hiddeviceremoved")
+  def on(
+    event: "hid-device-removed",
     listener: js.Function2[/* event */ Event, /* details */ HidDeviceRemovedDetails, Unit]
   ): this.type = js.native
   /**
-    * Emitted after `HIDDevice.forget()` has been called.  This event can be used to
-    * help maintain persistent storage of permissions when
-    * `setDevicePermissionHandler` is used.
+    * Emitted after `navigator.hid.requestDevice` has been called and
+    * `select-hid-device` has fired if a new device becomes available before the
+    * callback from `select-hid-device` is called.  This event is intended for use
+    * when using a UI to ask users to pick a device so that the UI can be updated with
+    * the newly added device.
     */
   @JSName("on")
-  def on_hiddevicerevoked(
-    event: `hid-device-revoked`,
-    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRevokedDetails, Unit]
+  @scala.annotation.targetName("on_hiddeviceadded")
+  def on(
+    event: "hid-device-added",
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceAddedDetails, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted after an extension is unloaded. This occurs when
+    * `Session.removeExtension` is called.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_extensionunloaded")
+  def on(
+    event: "extension-unloaded",
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when a hunspell dictionary file starts downloading
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_spellcheckdictionarydownloadbegin")
+  def on(
+    event: "spellcheck-dictionary-download-begin",
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when Electron is about to download `item` in `webContents`.
+    *
+    * Calling `event.preventDefault()` will cancel the download and `item` will not be
+    * available from next tick of the process.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_willdownload")
+  def on(
+    event: "will-download",
+    listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   /**
     * Emitted when a render process requests preconnection to a URL, generally due to
     * a resource hint.
     */
   @JSName("on")
-  def on_preconnect(
-    event: preconnect,
+  @scala.annotation.targetName("on_preconnect")
+  def on(
+    event: "preconnect",
     listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted after `navigator.serial.requestPort` has been called and
+    * `select-serial-port` has fired if a serial port has been removed before the
+    * callback from `select-serial-port` is called.  This event is intended for use
+    * when using a UI to ask users to pick a port so that the UI can be updated to
+    * remove the specified port.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_serialportremoved")
+  def on(
+    event: "serial-port-removed",
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   /**
     * Emitted when a HID device needs to be selected when a call to
@@ -425,30 +483,13 @@ trait Session_ extends EventEmitter {
     * ses.setDevicePermissionHandler(handler)`.
     */
   @JSName("on")
-  def on_selecthiddevice(
-    event: `select-hid-device`,
+  @scala.annotation.targetName("on_selecthiddevice")
+  def on(
+    event: "select-hid-device",
     listener: js.Function3[
       /* event */ Event, 
       /* details */ SelectHidDeviceDetails, 
       /* callback */ js.Function1[/* deviceId */ js.UndefOr[String | Null], Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
-    * Emitted when a serial port needs to be selected when a call to
-    * `navigator.serial.requestPort` is made. `callback` should be called with
-    * `portId` to be selected, passing an empty string to `callback` will cancel the
-    * request.  Additionally, permissioning on `navigator.serial` can be managed by
-    * using ses.setPermissionCheckHandler(handler) with the `serial` permission.
-    */
-  @JSName("on")
-  def on_selectserialport(
-    event: `select-serial-port`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* portList */ js.Array[SerialPort], 
-      /* webContents */ WebContents_, 
-      /* callback */ js.Function1[/* portId */ String, Unit], 
       Unit
     ]
   ): this.type = js.native
@@ -460,116 +501,22 @@ trait Session_ extends EventEmitter {
     * the newly added port.
     */
   @JSName("on")
-  def on_serialportadded(
-    event: `serial-port-added`,
+  @scala.annotation.targetName("on_serialportadded")
+  def on(
+    event: "serial-port-added",
     listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   /**
-    * Emitted after `navigator.serial.requestPort` has been called and
-    * `select-serial-port` has fired if a serial port has been removed before the
-    * callback from `select-serial-port` is called.  This event is intended for use
-    * when using a UI to ask users to pick a port so that the UI can be updated to
-    * remove the specified port.
+    * Emitted when a serial port needs to be selected when a call to
+    * `navigator.serial.requestPort` is made. `callback` should be called with
+    * `portId` to be selected, passing an empty string to `callback` will cancel the
+    * request.  Additionally, permissioning on `navigator.serial` can be managed by
+    * using ses.setPermissionCheckHandler(handler) with the `serial` permission.
     */
   @JSName("on")
-  def on_serialportremoved(
-    event: `serial-port-removed`,
-    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when a hunspell dictionary file starts downloading
-    */
-  @JSName("on")
-  def on_spellcheckdictionarydownloadbegin(
-    event: `spellcheck-dictionary-download-begin`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when a hunspell dictionary file download fails.  For details on the
-    * failure you should collect a netlog and inspect the download request.
-    */
-  @JSName("on")
-  def on_spellcheckdictionarydownloadfailure(
-    event: `spellcheck-dictionary-download-failure`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when a hunspell dictionary file has been successfully downloaded
-    */
-  @JSName("on")
-  def on_spellcheckdictionarydownloadsuccess(
-    event: `spellcheck-dictionary-download-success`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when a hunspell dictionary file has been successfully initialized. This
-    * occurs after the file has been downloaded.
-    */
-  @JSName("on")
-  def on_spellcheckdictionaryinitialized(
-    event: `spellcheck-dictionary-initialized`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when Electron is about to download `item` in `webContents`.
-    *
-    * Calling `event.preventDefault()` will cancel the download and `item` will not be
-    * available from next tick of the process.
-    */
-  @JSName("on")
-  def on_willdownload(
-    event: `will-download`,
-    listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  
-  @JSName("once")
-  def once_extensionloaded(
-    event: `extension-loaded`,
-    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_extensionready(
-    event: `extension-ready`,
-    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_extensionunloaded(
-    event: `extension-unloaded`,
-    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_hiddeviceadded(
-    event: `hid-device-added`,
-    listener: js.Function2[/* event */ Event, /* details */ HidDeviceAddedDetails, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_hiddeviceremoved(
-    event: `hid-device-removed`,
-    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRemovedDetails, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_hiddevicerevoked(
-    event: `hid-device-revoked`,
-    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRevokedDetails, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_preconnect(
-    event: preconnect,
-    listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_selecthiddevice(
-    event: `select-hid-device`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* details */ SelectHidDeviceDetails, 
-      /* callback */ js.Function1[/* deviceId */ js.UndefOr[String | Null], Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_selectserialport(
-    event: `select-serial-port`,
+  @scala.annotation.targetName("on_selectserialport")
+  def on(
+    event: "select-serial-port",
     listener: js.Function4[
       /* event */ Event, 
       /* portList */ js.Array[SerialPort], 
@@ -578,40 +525,113 @@ trait Session_ extends EventEmitter {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("once")
-  def once_serialportadded(
-    event: `serial-port-added`,
-    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  @scala.annotation.targetName("once_extensionloaded")
+  def once(
+    event: "extension-loaded",
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_serialportremoved(
-    event: `serial-port-removed`,
-    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  @scala.annotation.targetName("once_hiddeviceremoved")
+  def once(
+    event: "hid-device-removed",
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRemovedDetails, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_spellcheckdictionarydownloadbegin(
-    event: `spellcheck-dictionary-download-begin`,
+  @scala.annotation.targetName("once_extensionunloaded")
+  def once(
+    event: "extension-unloaded",
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_spellcheckdictionarydownloadbegin")
+  def once(
+    event: "spellcheck-dictionary-download-begin",
     listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_spellcheckdictionarydownloadfailure(
-    event: `spellcheck-dictionary-download-failure`,
+  @scala.annotation.targetName("once_extensionready")
+  def once(
+    event: "extension-ready",
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_hiddevicerevoked")
+  def once(
+    event: "hid-device-revoked",
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRevokedDetails, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_spellcheckdictionaryinitialized")
+  def once(
+    event: "spellcheck-dictionary-initialized",
     listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_spellcheckdictionarydownloadsuccess(
-    event: `spellcheck-dictionary-download-success`,
+  @scala.annotation.targetName("once_spellcheckdictionarydownloadsuccess")
+  def once(
+    event: "spellcheck-dictionary-download-success",
     listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_spellcheckdictionaryinitialized(
-    event: `spellcheck-dictionary-initialized`,
+  @scala.annotation.targetName("once_hiddeviceadded")
+  def once(
+    event: "hid-device-added",
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceAddedDetails, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_spellcheckdictionarydownloadfailure")
+  def once(
+    event: "spellcheck-dictionary-download-failure",
     listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_willdownload(
-    event: `will-download`,
+  @scala.annotation.targetName("once_preconnect")
+  def once(
+    event: "preconnect",
+    listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_willdownload")
+  def once(
+    event: "will-download",
     listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_selecthiddevice")
+  def once(
+    event: "select-hid-device",
+    listener: js.Function3[
+      /* event */ Event, 
+      /* details */ SelectHidDeviceDetails, 
+      /* callback */ js.Function1[/* deviceId */ js.UndefOr[String | Null], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_serialportadded")
+  def once(
+    event: "serial-port-added",
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_serialportremoved")
+  def once(
+    event: "serial-port-removed",
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_selectserialport")
+  def once(
+    event: "select-serial-port",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* portList */ js.Array[SerialPort], 
+      /* webContents */ WebContents_, 
+      /* callback */ js.Function1[/* portId */ String, Unit], 
+      Unit
+    ]
   ): this.type = js.native
   
   /**
@@ -634,43 +654,69 @@ trait Session_ extends EventEmitter {
   def removeExtension(extensionId: String): Unit = js.native
   
   @JSName("removeListener")
-  def removeListener_extensionloaded(
-    event: `extension-loaded`,
-    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  @scala.annotation.targetName("removeListener_spellcheckdictionaryinitialized")
+  def removeListener(
+    event: "spellcheck-dictionary-initialized",
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_extensionready(
-    event: `extension-ready`,
-    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_extensionunloaded(
-    event: `extension-unloaded`,
-    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_hiddeviceadded(
-    event: `hid-device-added`,
-    listener: js.Function2[/* event */ Event, /* details */ HidDeviceAddedDetails, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_hiddeviceremoved(
-    event: `hid-device-removed`,
-    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRemovedDetails, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_hiddevicerevoked(
-    event: `hid-device-revoked`,
+  @scala.annotation.targetName("removeListener_hiddevicerevoked")
+  def removeListener(
+    event: "hid-device-revoked",
     listener: js.Function2[/* event */ Event, /* details */ HidDeviceRevokedDetails, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_preconnect(
-    event: preconnect,
-    listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+  @scala.annotation.targetName("removeListener_extensionready")
+  def removeListener(
+    event: "extension-ready",
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_selecthiddevice(
-    event: `select-hid-device`,
+  @scala.annotation.targetName("removeListener_hiddeviceadded")
+  def removeListener(
+    event: "hid-device-added",
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceAddedDetails, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_hiddeviceremoved")
+  def removeListener(
+    event: "hid-device-removed",
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRemovedDetails, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_spellcheckdictionarydownloadfailure")
+  def removeListener(
+    event: "spellcheck-dictionary-download-failure",
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_extensionloaded")
+  def removeListener(
+    event: "extension-loaded",
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_extensionunloaded")
+  def removeListener(
+    event: "extension-unloaded",
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_spellcheckdictionarydownloadsuccess")
+  def removeListener(
+    event: "spellcheck-dictionary-download-success",
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_spellcheckdictionarydownloadbegin")
+  def removeListener(
+    event: "spellcheck-dictionary-download-begin",
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_selecthiddevice")
+  def removeListener(
+    event: "select-hid-device",
     listener: js.Function3[
       /* event */ Event, 
       /* details */ SelectHidDeviceDetails, 
@@ -679,8 +725,33 @@ trait Session_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_selectserialport(
-    event: `select-serial-port`,
+  @scala.annotation.targetName("removeListener_preconnect")
+  def removeListener(
+    event: "preconnect",
+    listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_willdownload")
+  def removeListener(
+    event: "will-download",
+    listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_serialportadded")
+  def removeListener(
+    event: "serial-port-added",
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_serialportremoved")
+  def removeListener(
+    event: "serial-port-removed",
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_selectserialport")
+  def removeListener(
+    event: "select-serial-port",
     listener: js.Function4[
       /* event */ Event, 
       /* portList */ js.Array[SerialPort], 
@@ -688,41 +759,6 @@ trait Session_ extends EventEmitter {
       /* callback */ js.Function1[/* portId */ String, Unit], 
       Unit
     ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_serialportadded(
-    event: `serial-port-added`,
-    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_serialportremoved(
-    event: `serial-port-removed`,
-    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_spellcheckdictionarydownloadbegin(
-    event: `spellcheck-dictionary-download-begin`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_spellcheckdictionarydownloadfailure(
-    event: `spellcheck-dictionary-download-failure`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_spellcheckdictionarydownloadsuccess(
-    event: `spellcheck-dictionary-download-success`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_spellcheckdictionaryinitialized(
-    event: `spellcheck-dictionary-initialized`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_willdownload(
-    event: `will-download`,
-    listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   
   /**
@@ -846,10 +882,12 @@ trait Session_ extends EventEmitter {
     * do a permission check and then make a permission request if the check is denied.
     */
   def setPermissionRequestHandler(): Unit = js.native
+  @JSName("setPermissionRequestHandler")
+  @scala.annotation.targetName("setPermissionRequestHandler_clipboardread_media_displaycapture_mediaKeySystem_geolocation_notifications_midi_midiSysex_pointerLock_fullscreen_openExternal_unknown")
   def setPermissionRequestHandler(
     handler: js.Function4[
       /* webContents */ WebContents_, 
-      /* permission */ `clipboard-read` | media | `display-capture` | mediaKeySystem | geolocation | notifications | midi | midiSysex | pointerLock | fullscreen | openExternal | unknown_, 
+      /* permission */ "clipboard-read" | "media" | "display-capture" | "mediaKeySystem" | "geolocation" | "notifications" | "midi" | "midiSysex" | "pointerLock" | "fullscreen" | "openExternal" | "unknown", 
       /* callback */ js.Function1[/* permissionGranted */ Boolean, Unit], 
       /* details */ PermissionRequestHandlerHandlerDetails, 
       Unit

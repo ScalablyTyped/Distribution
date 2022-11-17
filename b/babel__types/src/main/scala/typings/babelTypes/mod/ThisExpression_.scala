@@ -1,19 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.ThisExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ThisExpression_
+trait ThisExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with Standardized {
+     with BaseNode {
   
   @JSName("type")
-  var type_ThisExpression_ : ThisExpression
+  var type_ThisExpression_ : "ThisExpression"
 }
 object ThisExpression_ {
   
@@ -25,6 +21,6 @@ object ThisExpression_ {
   
   extension [Self <: ThisExpression_](x: Self) {
     
-    inline def setType(value: ThisExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ThisExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

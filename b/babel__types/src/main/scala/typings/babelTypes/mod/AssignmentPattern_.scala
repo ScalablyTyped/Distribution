@@ -1,18 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.AssignmentPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait AssignmentPattern_
+trait AssignmentPattern_
   extends StObject
-     with BaseNode
-     with LVal
-     with Pattern
-     with PatternLike
-     with Standardized {
+     with BaseNode {
   
   var decorators: js.Array[Decorator_] | Null
   
@@ -23,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   
   @JSName("type")
-  var type_AssignmentPattern_ : AssignmentPattern
+  var type_AssignmentPattern_ : "AssignmentPattern"
 }
 object AssignmentPattern_ {
   
@@ -50,7 +44,7 @@ object AssignmentPattern_ {
     
     inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    inline def setType(value: AssignmentPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "AssignmentPattern"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

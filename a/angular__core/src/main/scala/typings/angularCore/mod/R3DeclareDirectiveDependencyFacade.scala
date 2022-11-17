@@ -1,7 +1,5 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreStrings.component
-import typings.angularCore.angularCoreStrings.directive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +10,7 @@ trait R3DeclareDirectiveDependencyFacade extends StObject {
   
   var inputs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var kind: js.UndefOr[directive | component] = js.undefined
+  var kind: js.UndefOr["directive" | "component"] = js.undefined
   
   var outputs: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -42,7 +40,7 @@ object R3DeclareDirectiveDependencyFacade {
     
     inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value*))
     
-    inline def setKind(value: directive | component): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "directive" | "component"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

@@ -1,13 +1,12 @@
 package typings.angularCommon.anon
 
-import typings.angularCommon.angularCommonStrings.ngPluralCase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Attribute extends StObject {
   
-  var attribute: ngPluralCase
+  var attribute: "ngPluralCase"
 }
 object Attribute {
   
@@ -18,6 +17,6 @@ object Attribute {
   
   extension [Self <: Attribute](x: Self) {
     
-    inline def setAttribute(value: ngPluralCase): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: "ngPluralCase"): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
   }
 }

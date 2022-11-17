@@ -6,10 +6,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.anon.Default
 import typings.react.anon.UNDEFINEDVOIDONLY
 import typings.react.mod.^
-import typings.react.reactBooleans.`true`
-import typings.react.reactStrings.input
-import typings.react.reactStrings.mount
-import typings.react.reactStrings.update
 import typings.scheduler.tracingMod.Interaction
 import typings.std.Element
 import typings.std.Event
@@ -65,6 +61,18 @@ inline def createContext[T](
 defaultValue: T
 ): Context[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[Context[T]]
 
+// DOM Elements
+// TODO: generalize this to everything in `keyof ReactHTML`, not just "input"
+@scala.annotation.targetName("createElement_input")
+inline def createElement(
+  `type`: "input",
+  props: InputHTMLAttributes[HTMLInputElement] & ClassAttributes[HTMLInputElement],
+  children: ReactNode*
+): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
+@scala.annotation.targetName("createElement_input")
+inline def createElement(`type`: "input", props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
+@scala.annotation.targetName("createElement_input")
+inline def createElement(`type`: "input", props: Unit, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
 inline def createElement[P /* <: js.Object */](`type`: String, props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement]
 inline def createElement[P /* <: js.Object */](`type`: String, props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement]
 inline def createElement[P /* <: js.Object */](`type`: String, props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement]
@@ -90,78 +98,72 @@ inline def createElement[P /* <: js.Object */](`type`: ComponentClass[P, Compone
 inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
 inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
 inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
+@scala.annotation.targetName("createElement_a_abbr_address_area_article_aside_audio_b_base_bdi_bdo_big_blockquote_body_br_button_canvas_caption_cite_code_col_colgroup_data_datalist_dd_del_details_dfn_dialog_div_dl_dt_em_embed_fieldset_figcaption_figure_footer_form_h1_h2_h3_h4_h5_h6_head_header_hgroup_hr_html_i_iframe_img_input_ins_kbd_keygen_label_legend_li_link_main_map_mark_menu_menuitem_meta_meter_nav_noscript_object_ol_optgroup_option_output_p_param_picture_pre_progress_q_rp_rt_ruby_s_samp_slot_script_section_select_small_source_span_strong_style_sub_summary_sup_table_template_tbody_td_textarea_tfoot_th_thead_time_title_tr_track_u_ul_var_video_wbr_webview")
 inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with "a", "abbr", "address" */ String,
   props: ClassAttributes[T] & P,
   children: ReactNode*
 ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
+@scala.annotation.targetName("createElement_animate_circle_clipPath_defs_desc_ellipse_feBlend_feColorMatrix_feComponentTransfer_feComposite_feConvolveMatrix_feDiffuseLighting_feDisplacementMap_feDistantLight_feDropShadow_feFlood_feFuncA_feFuncB_feFuncG_feFuncR_feGaussianBlur_feImage_feMerge_feMergeNode_feMorphology_feOffset_fePointLight_feSpecularLighting_feSpotLight_feTile_feTurbulence_filter_foreignObject_g_image_line_linearGradient_marker_mask_metadata_path_pattern_polygon_polyline_radialGradient_rect_stop_svg_switch_symbol_text_textPath_tspan_use_view")
+inline def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with "animate", "circle", "clipPath" */ String,
+  props: ClassAttributes[T] & P,
+  children: ReactNode*
+): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
+@scala.annotation.targetName("createElement_animate_circle_clipPath_defs_desc_ellipse_feBlend_feColorMatrix_feComponentTransfer_feComposite_feConvolveMatrix_feDiffuseLighting_feDisplacementMap_feDistantLight_feDropShadow_feFlood_feFuncA_feFuncB_feFuncG_feFuncR_feGaussianBlur_feImage_feMerge_feMergeNode_feMorphology_feOffset_fePointLight_feSpecularLighting_feSpotLight_feTile_feTurbulence_filter_foreignObject_g_image_line_linearGradient_marker_mask_metadata_path_pattern_polygon_polyline_radialGradient_rect_stop_svg_switch_symbol_text_textPath_tspan_use_view")
+inline def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with "animate", "circle", "clipPath" */ String,
+  props: Null,
+  children: ReactNode*
+): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
+@scala.annotation.targetName("createElement_a_abbr_address_area_article_aside_audio_b_base_bdi_bdo_big_blockquote_body_br_button_canvas_caption_cite_code_col_colgroup_data_datalist_dd_del_details_dfn_dialog_div_dl_dt_em_embed_fieldset_figcaption_figure_footer_form_h1_h2_h3_h4_h5_h6_head_header_hgroup_hr_html_i_iframe_img_input_ins_kbd_keygen_label_legend_li_link_main_map_mark_menu_menuitem_meta_meter_nav_noscript_object_ol_optgroup_option_output_p_param_picture_pre_progress_q_rp_rt_ruby_s_samp_slot_script_section_select_small_source_span_strong_style_sub_summary_sup_table_template_tbody_td_textarea_tfoot_th_thead_time_title_tr_track_u_ul_var_video_wbr_webview")
 inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with "a", "abbr", "address" */ String,
   props: Null,
   children: ReactNode*
 ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
+@scala.annotation.targetName("createElement_animate_circle_clipPath_defs_desc_ellipse_feBlend_feColorMatrix_feComponentTransfer_feComposite_feConvolveMatrix_feDiffuseLighting_feDisplacementMap_feDistantLight_feDropShadow_feFlood_feFuncA_feFuncB_feFuncG_feFuncR_feGaussianBlur_feImage_feMerge_feMergeNode_feMorphology_feOffset_fePointLight_feSpecularLighting_feSpotLight_feTile_feTurbulence_filter_foreignObject_g_image_line_linearGradient_marker_mask_metadata_path_pattern_polygon_polyline_radialGradient_rect_stop_svg_switch_symbol_text_textPath_tspan_use_view")
+inline def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with "animate", "circle", "clipPath" */ String,
+  props: Unit,
+  children: ReactNode*
+): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
+@scala.annotation.targetName("createElement_a_abbr_address_area_article_aside_audio_b_base_bdi_bdo_big_blockquote_body_br_button_canvas_caption_cite_code_col_colgroup_data_datalist_dd_del_details_dfn_dialog_div_dl_dt_em_embed_fieldset_figcaption_figure_footer_form_h1_h2_h3_h4_h5_h6_head_header_hgroup_hr_html_i_iframe_img_input_ins_kbd_keygen_label_legend_li_link_main_map_mark_menu_menuitem_meta_meter_nav_noscript_object_ol_optgroup_option_output_p_param_picture_pre_progress_q_rp_rt_ruby_s_samp_slot_script_section_select_small_source_span_strong_style_sub_summary_sup_table_template_tbody_td_textarea_tfoot_th_thead_time_title_tr_track_u_ul_var_video_wbr_webview")
 inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with "a", "abbr", "address" */ String,
   props: Unit,
   children: ReactNode*
 ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
-
-inline def createElement_PTC_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] & P, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[CElement[P, T]]
-inline def createElement_PTC_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[CElement[P, T]]
-inline def createElement_PTC_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Unit, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[CElement[P, T]]
+inline def createElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] & P, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[CElement[P, T]]
+inline def createElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[CElement[P, T]]
+inline def createElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Unit, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[CElement[P, T]]
 
 inline def createElement_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] & P, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DOMElement[P, T]]
 inline def createElement_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Null, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DOMElement[P, T]]
 inline def createElement_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DOMElement[P, T]]
 
-inline def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.react.reactStrings.animate, typings.react.reactStrings.circle, typings.react.reactStrings.clipPath */ Any,
-  props: ClassAttributes[T] & P,
-  children: ReactNode*
-): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
-inline def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.react.reactStrings.animate, typings.react.reactStrings.circle, typings.react.reactStrings.clipPath */ Any,
-  props: Null,
-  children: ReactNode*
-): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
-inline def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.react.reactStrings.animate, typings.react.reactStrings.circle, typings.react.reactStrings.clipPath */ Any,
-  props: Unit,
-  children: ReactNode*
-): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
-
 inline def createElement_P_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement]
 inline def createElement_P_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement]
 inline def createElement_P_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement]
 
-// DOM Elements
-// TODO: generalize this to everything in `keyof ReactHTML`, not just "input"
-inline def createElement_input(
-  `type`: input,
-  props: InputHTMLAttributes[HTMLInputElement] & ClassAttributes[HTMLInputElement],
-  children: ReactNode*
-): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
-inline def createElement_input(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
-inline def createElement_input(`type`: input, props: Unit, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
-
+@scala.annotation.targetName("createFactory_animate_circle_clipPath_defs_desc_ellipse_feBlend_feColorMatrix_feComponentTransfer_feComposite_feConvolveMatrix_feDiffuseLighting_feDisplacementMap_feDistantLight_feDropShadow_feFlood_feFuncA_feFuncB_feFuncG_feFuncR_feGaussianBlur_feImage_feMerge_feMergeNode_feMorphology_feOffset_fePointLight_feSpecularLighting_feSpotLight_feTile_feTurbulence_filter_foreignObject_g_image_line_linearGradient_marker_mask_metadata_path_pattern_polygon_polyline_radialGradient_rect_stop_svg_switch_symbol_text_textPath_tspan_use_view")
 inline def createFactory(
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.react.reactStrings.animate, typings.react.reactStrings.circle, typings.react.reactStrings.clipPath */ Any
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with "animate", "circle", "clipPath" */ String
 ): SVGFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[SVGFactory]
+//
+// Top Level API
+// ----------------------------------------------------------------------
+// DOM Elements
+@scala.annotation.targetName("createFactory_a_abbr_address_area_article_aside_audio_b_base_bdi_bdo_big_blockquote_body_br_button_canvas_caption_cite_code_col_colgroup_data_datalist_dd_del_details_dfn_dialog_div_dl_dt_em_embed_fieldset_figcaption_figure_footer_form_h1_h2_h3_h4_h5_h6_head_header_hgroup_hr_html_i_iframe_img_input_ins_kbd_keygen_label_legend_li_link_main_map_mark_menu_menuitem_meta_meter_nav_noscript_object_ol_optgroup_option_output_p_param_picture_pre_progress_q_rp_rt_ruby_s_samp_slot_script_section_select_small_source_span_strong_style_sub_summary_sup_table_template_tbody_td_textarea_tfoot_th_thead_time_title_tr_track_u_ul_var_video_wbr_webview")
+inline def createFactory[T /* <: HTMLElement */](
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with "a", "abbr", "address" */ String
+): HTMLFactory[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[HTMLFactory[T]]
 inline def createFactory[P](`type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]]): CFactory[P, ClassicComponent[P, ComponentState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[CFactory[P, ClassicComponent[P, ComponentState]]]
 inline def createFactory[P](`type`: ComponentClass[P, ComponentState]): Factory[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[Factory[P]]
 // Custom components
 inline def createFactory[P](`type`: FunctionComponent[P]): FunctionComponentFactory[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[FunctionComponentFactory[P]]
 inline def createFactory[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String): DOMFactory[P, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[DOMFactory[P, T]]
-
-inline def createFactory_PTC_CFactory[P, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CFactory[P, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[CFactory[P, T]]
-
-//
-// Top Level API
-// ----------------------------------------------------------------------
-// DOM Elements
-inline def createFactory_T_HTMLFactory[T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any
-): HTMLFactory[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[HTMLFactory[T]]
+inline def createFactory[P, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CFactory[P, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[CFactory[P, T]]
 
 inline def createRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRef")().asInstanceOf[RefObject[T]]
 
@@ -429,79 +431,7 @@ inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version")
 type AnimationEventHandler[T] = EventHandler[AnimationEvent[T]]
 
 // All the WAI-ARIA 1.1 role attribute values from https://www.w3.org/TR/wai-aria-1.1/#role_definitions
-/* Rewritten from type alias, can be one of: 
-  - typings.react.reactStrings.alert
-  - typings.react.reactStrings.alertdialog
-  - typings.react.reactStrings.application
-  - typings.react.reactStrings.article
-  - typings.react.reactStrings.banner
-  - typings.react.reactStrings.button
-  - typings.react.reactStrings.cell
-  - typings.react.reactStrings.checkbox
-  - typings.react.reactStrings.columnheader
-  - typings.react.reactStrings.combobox
-  - typings.react.reactStrings.complementary
-  - typings.react.reactStrings.contentinfo
-  - typings.react.reactStrings.definition
-  - typings.react.reactStrings.dialog
-  - typings.react.reactStrings.directory
-  - typings.react.reactStrings.document
-  - typings.react.reactStrings.feed
-  - typings.react.reactStrings.figure
-  - typings.react.reactStrings.form
-  - typings.react.reactStrings.grid
-  - typings.react.reactStrings.gridcell
-  - typings.react.reactStrings.group
-  - typings.react.reactStrings.heading
-  - typings.react.reactStrings.img
-  - typings.react.reactStrings.link
-  - typings.react.reactStrings.list
-  - typings.react.reactStrings.listbox
-  - typings.react.reactStrings.listitem
-  - typings.react.reactStrings.log
-  - typings.react.reactStrings.main
-  - typings.react.reactStrings.marquee
-  - typings.react.reactStrings.math
-  - typings.react.reactStrings.menu
-  - typings.react.reactStrings.menubar
-  - typings.react.reactStrings.menuitem
-  - typings.react.reactStrings.menuitemcheckbox
-  - typings.react.reactStrings.menuitemradio
-  - typings.react.reactStrings.navigation
-  - typings.react.reactStrings.none
-  - typings.react.reactStrings.note
-  - typings.react.reactStrings.option
-  - typings.react.reactStrings.presentation
-  - typings.react.reactStrings.progressbar
-  - typings.react.reactStrings.radio
-  - typings.react.reactStrings.radiogroup
-  - typings.react.reactStrings.region
-  - typings.react.reactStrings.row
-  - typings.react.reactStrings.rowgroup
-  - typings.react.reactStrings.rowheader
-  - typings.react.reactStrings.scrollbar
-  - typings.react.reactStrings.search
-  - typings.react.reactStrings.searchbox
-  - typings.react.reactStrings.separator
-  - typings.react.reactStrings.slider
-  - typings.react.reactStrings.spinbutton
-  - typings.react.reactStrings.status
-  - typings.react.reactStrings.switch
-  - typings.react.reactStrings.tab
-  - typings.react.reactStrings.table
-  - typings.react.reactStrings.tablist
-  - typings.react.reactStrings.tabpanel
-  - typings.react.reactStrings.term
-  - typings.react.reactStrings.textbox
-  - typings.react.reactStrings.timer
-  - typings.react.reactStrings.toolbar
-  - typings.react.reactStrings.tooltip
-  - typings.react.reactStrings.tree
-  - typings.react.reactStrings.treegrid
-  - typings.react.reactStrings.treeitem
-  - java.lang.String
-*/
-type AriaRole = _AriaRole | String
+type AriaRole = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70, starting with "alert", "alertdialog", "application" */ Any
 
 type AudioHTMLAttributes[T] = MediaHTMLAttributes[T]
 
@@ -617,43 +547,13 @@ type GetDerivedStateFromProps[P, S] = /**
   */
 js.Function2[/* nextProps */ P, /* prevState */ S, Partial[S] | Null]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.react.reactStrings._self
-  - typings.react.reactStrings._blank
-  - typings.react.reactStrings._parent
-  - typings.react.reactStrings._top
-  - java.lang.String
-*/
-type HTMLAttributeAnchorTarget = _HTMLAttributeAnchorTarget | String
+type HTMLAttributeAnchorTarget = "_self" | "_blank" | "_parent" | "_top" | String
+
+type HTMLAttributeReferrerPolicy = "" | "no-referrer" | "no-referrer-when-downgrade" | "origin" | "origin-when-cross-origin" | "same-origin" | "strict-origin" | "strict-origin-when-cross-origin" | "unsafe-url"
 
 type HTMLFactory[T /* <: HTMLElement */] = DetailedHTMLFactory[AllHTMLAttributes[T], T]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.react.reactStrings.button
-  - typings.react.reactStrings.checkbox
-  - typings.react.reactStrings.color
-  - typings.react.reactStrings.date
-  - typings.react.reactStrings.`datetime-local`
-  - typings.react.reactStrings.email
-  - typings.react.reactStrings.file
-  - typings.react.reactStrings.hidden
-  - typings.react.reactStrings.image
-  - typings.react.reactStrings.month
-  - typings.react.reactStrings.number
-  - typings.react.reactStrings.password
-  - typings.react.reactStrings.radio
-  - typings.react.reactStrings.range
-  - typings.react.reactStrings.reset
-  - typings.react.reactStrings.search
-  - typings.react.reactStrings.submit
-  - typings.react.reactStrings.tel
-  - typings.react.reactStrings.text
-  - typings.react.reactStrings.time
-  - typings.react.reactStrings.url
-  - typings.react.reactStrings.week
-  - java.lang.String
-*/
-type HTMLInputTypeAttribute = _HTMLInputTypeAttribute | String
+type HTMLInputTypeAttribute = "button" | "checkbox" | "color" | "date" | "datetime-local" | "email" | "file" | "hidden" | "image" | "month" | "number" | "password" | "radio" | "range" | "reset" | "search" | "submit" | "tel" | "text" | "time" | "url" | "week" | String
 
 // naked 'any' type in a conditional type will short circuit and union both the then/else branches
 // so boolean is only resolved for T = any
@@ -664,7 +564,7 @@ type HTMLInputTypeAttribute = _HTMLInputTypeAttribute | String
   boolean extends T extends never ? true : false ? true : false
   }}}
   */
-type IsExactlyAny[T] = `true`
+type IsExactlyAny[T] = true
 
 type JSXElementConstructor[P] = (js.Function1[/* props */ P, ReactElement | Null]) | (Instantiable1[/* props */ P, Component[Any, Any, Any]])
 
@@ -685,6 +585,8 @@ string extends keyof P ? P : std.Pick<P, react.react.NotExactlyAnyPropertyKeys<P
   }}}
   */
 type MergePropTypes[P, T] = T
+
+type ModifierKey = "Alt" | "AltGraph" | "CapsLock" | "Control" | "Fn" | "FnLock" | "Hyper" | "Meta" | "NumLock" | "ScrollLock" | "Shift" | "Super" | "Symbol" | "SymbolLock"
 
 type MouseEventHandler[T] = EventHandler[MouseEvent[T, NativeMouseEvent]]
 
@@ -721,7 +623,7 @@ type PointerEventHandler[T] = EventHandler[PointerEvent[T]]
   */
 type ProfilerOnRenderCallback = js.Function7[
 /* id */ String, 
-/* phase */ mount | update, 
+/* phase */ "mount" | "update", 
 /* actualDuration */ Double, 
 /* baseDuration */ Double, 
 /* startTime */ Double, 
@@ -763,7 +665,7 @@ type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
   */
 type ReactChild = ReactElement | String | Double
 
-type ReactComponentElement[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any */, P] = ReactElement
+type ReactComponentElement[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with "a", "abbr", "address" */ Any */, P] = ReactElement
 
 type ReactEventHandler[T] = EventHandler[SyntheticEvent[T, Event]]
 
@@ -795,16 +697,7 @@ to avoid circular code involving:
 - react.react.ReactFragment
 - react.react.ReactNode
 */
-/* Rewritten from type alias, can be one of: 
-  - typings.react.mod.ReactElement
-  - java.lang.String
-  - scala.Double
-  - scala.Any
-  - typings.react.mod.ReactPortal
-  - scala.Boolean
-  - scala.Unit
-*/
-type ReactNode = js.UndefOr[_ReactNode | String | Double | Any | Boolean]
+type ReactNode = js.UndefOr[ReactElement | String | Double | Any | ReactPortal | Boolean]
 
 /**
   * @deprecated - This type is not relevant when using React. Inline the type instead to make the intent clear.
@@ -840,6 +733,12 @@ type ServerContextJSONValue = String | Boolean | Double | Null | typings.react.n
 // Unlike the class component setState, the updates are not allowed to be partial
 type SetStateAction[S] = S | (js.Function1[/* prevState */ S, S])
 
+type SuspenseListProps = typings.react.experimentalMod.reactAugmentingMod.DirectionalSuspenseListProps | typings.react.experimentalMod.reactAugmentingMod.NonDirectionalSuspenseListProps
+
+type SuspenseListRevealOrder = "forwards" | "backwards" | "together"
+
+type SuspenseListTailMode = "collapsed" | "hidden"
+
 /**
   * currentTarget - a reference to the element on which the event listener is registered.
   *
@@ -848,6 +747,8 @@ type SetStateAction[S] = S | (js.Function1[/* prevState */ S, S])
   * If you thought this should be `EventTarget & T`, see https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11508#issuecomment-256045682
   */
 type SyntheticEvent[T, E] = BaseSyntheticEvent[E, EventTarget & T, EventTarget]
+
+type Thenable[T] = typings.react.nextMod.reactAugmentingMod.UntrackedThenable[T] | typings.react.nextMod.reactAugmentingMod.PendingThenable[T] | typings.react.nextMod.reactAugmentingMod.FulfilledThenable[T] | typings.react.nextMod.reactAugmentingMod.RejectedThenable[T]
 
 type TouchEventHandler[T] = EventHandler[TouchEvent[T]]
 
@@ -858,6 +759,8 @@ type TransitionFunction = js.Function0[VoidOrUndefinedOnly]
 type TransitionStartFunction = js.Function1[/* callback */ TransitionFunction, Unit]
 
 type UIEventHandler[T] = EventHandler[UIEvent[T, NativeUIEvent]]
+
+type Usable[T] = typings.react.nextMod.reactAugmentingMod.Thenable[T] | Context[T]
 
 /**
   * @deprecated - Equivalent with `React.FC`.

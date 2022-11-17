@@ -1,7 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.hidden
-import typings.reactNative.reactNativeStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +10,7 @@ trait ImageStyle
      with ShadowStyleIOS
      with TransformsStyle {
   
-  var backfaceVisibility: js.UndefOr[visible | hidden] = js.undefined
+  var backfaceVisibility: js.UndefOr["visible" | "hidden"] = js.undefined
   
   var backgroundColor: js.UndefOr[ColorValue] = js.undefined
   
@@ -31,7 +29,7 @@ trait ImageStyle
   var opacity: js.UndefOr[Double] = js.undefined
   
   @JSName("overflow")
-  var overflow_ImageStyle: js.UndefOr[visible | hidden] = js.undefined
+  var overflow_ImageStyle: js.UndefOr["visible" | "hidden"] = js.undefined
   
   var overlayColor: js.UndefOr[ColorValue] = js.undefined
   
@@ -48,7 +46,7 @@ object ImageStyle {
   
   extension [Self <: ImageStyle](x: Self) {
     
-    inline def setBackfaceVisibility(value: visible | hidden): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
+    inline def setBackfaceVisibility(value: "visible" | "hidden"): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
     
     inline def setBackfaceVisibilityUndefined: Self = StObject.set(x, "backfaceVisibility", js.undefined)
     
@@ -84,7 +82,7 @@ object ImageStyle {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setOverflow(value: visible | hidden): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: "visible" | "hidden"): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     

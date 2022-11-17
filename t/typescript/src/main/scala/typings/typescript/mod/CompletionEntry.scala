@@ -1,6 +1,5 @@
 package typings.typescript.mod
 
-import typings.typescript.typescriptBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,19 +16,19 @@ trait CompletionEntry extends StObject {
     */
   var data: js.UndefOr[CompletionEntryData] = js.undefined
   
-  var hasAction: js.UndefOr[`true`] = js.undefined
+  var hasAction: js.UndefOr[true] = js.undefined
   
   var insertText: js.UndefOr[java.lang.String] = js.undefined
   
-  var isFromUncheckedFile: js.UndefOr[`true`] = js.undefined
+  var isFromUncheckedFile: js.UndefOr[true] = js.undefined
   
-  var isImportStatementCompletion: js.UndefOr[`true`] = js.undefined
+  var isImportStatementCompletion: js.UndefOr[true] = js.undefined
   
-  var isPackageJsonImport: js.UndefOr[`true`] = js.undefined
+  var isPackageJsonImport: js.UndefOr[true] = js.undefined
   
-  var isRecommended: js.UndefOr[`true`] = js.undefined
+  var isRecommended: js.UndefOr[true] = js.undefined
   
-  var isSnippet: js.UndefOr[`true`] = js.undefined
+  var isSnippet: js.UndefOr[true] = js.undefined
   
   var kind: ScriptElementKind
   
@@ -65,7 +64,7 @@ object CompletionEntry {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setHasAction(value: `true`): Self = StObject.set(x, "hasAction", value.asInstanceOf[js.Any])
+    inline def setHasAction(value: true): Self = StObject.set(x, "hasAction", value.asInstanceOf[js.Any])
     
     inline def setHasActionUndefined: Self = StObject.set(x, "hasAction", js.undefined)
     
@@ -73,23 +72,23 @@ object CompletionEntry {
     
     inline def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
     
-    inline def setIsFromUncheckedFile(value: `true`): Self = StObject.set(x, "isFromUncheckedFile", value.asInstanceOf[js.Any])
+    inline def setIsFromUncheckedFile(value: true): Self = StObject.set(x, "isFromUncheckedFile", value.asInstanceOf[js.Any])
     
     inline def setIsFromUncheckedFileUndefined: Self = StObject.set(x, "isFromUncheckedFile", js.undefined)
     
-    inline def setIsImportStatementCompletion(value: `true`): Self = StObject.set(x, "isImportStatementCompletion", value.asInstanceOf[js.Any])
+    inline def setIsImportStatementCompletion(value: true): Self = StObject.set(x, "isImportStatementCompletion", value.asInstanceOf[js.Any])
     
     inline def setIsImportStatementCompletionUndefined: Self = StObject.set(x, "isImportStatementCompletion", js.undefined)
     
-    inline def setIsPackageJsonImport(value: `true`): Self = StObject.set(x, "isPackageJsonImport", value.asInstanceOf[js.Any])
+    inline def setIsPackageJsonImport(value: true): Self = StObject.set(x, "isPackageJsonImport", value.asInstanceOf[js.Any])
     
     inline def setIsPackageJsonImportUndefined: Self = StObject.set(x, "isPackageJsonImport", js.undefined)
     
-    inline def setIsRecommended(value: `true`): Self = StObject.set(x, "isRecommended", value.asInstanceOf[js.Any])
+    inline def setIsRecommended(value: true): Self = StObject.set(x, "isRecommended", value.asInstanceOf[js.Any])
     
     inline def setIsRecommendedUndefined: Self = StObject.set(x, "isRecommended", js.undefined)
     
-    inline def setIsSnippet(value: `true`): Self = StObject.set(x, "isSnippet", value.asInstanceOf[js.Any])
+    inline def setIsSnippet(value: true): Self = StObject.set(x, "isSnippet", value.asInstanceOf[js.Any])
     
     inline def setIsSnippetUndefined: Self = StObject.set(x, "isSnippet", js.undefined)
     

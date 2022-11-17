@@ -2,7 +2,6 @@ package typings.expoConstants.buildConstantsDottypesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.expoConfigTypes.mod.ExpoConfig
-import typings.expoConstants.expoConstantsStrings.ExponentConstants
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -92,7 +91,7 @@ trait NativeConstants
   /**
     * @hidden
     */
-  var name: ExponentConstants
+  var name: "ExponentConstants"
   
   /**
     * The **Info.plist** value for `CFBundleShortVersionString` on iOS and the version name set
@@ -212,7 +211,7 @@ object NativeConstants {
     
     inline def setManifestNull: Self = StObject.set(x, "manifest", null)
     
-    inline def setName(value: ExponentConstants): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: "ExponentConstants"): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNativeAppVersion(value: String): Self = StObject.set(x, "nativeAppVersion", value.asInstanceOf[js.Any])
     

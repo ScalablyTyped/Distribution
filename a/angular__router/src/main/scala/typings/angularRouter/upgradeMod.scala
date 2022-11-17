@@ -2,8 +2,6 @@ package typings.angularRouter
 
 import typings.angularCore.mod.ComponentRef
 import typings.angularCore.mod.InjectionToken
-import typings.angularRouter.angularRouterStrings.hash
-import typings.angularRouter.angularRouterStrings.path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,8 +47,9 @@ object upgradeMod {
   inline def setUpLocationSync(
     ngUpgrade: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpgradeModule */ Any
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpLocationSync")(ngUpgrade.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.annotation.targetName("setUpLocationSync_path_hash")
   inline def setUpLocationSync(
     ngUpgrade: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpgradeModule */ Any,
-    urlType: path | hash
+    urlType: "path" | "hash"
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUpLocationSync")(ngUpgrade.asInstanceOf[js.Any], urlType.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

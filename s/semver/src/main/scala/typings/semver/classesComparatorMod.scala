@@ -1,12 +1,6 @@
 package typings.semver
 
 import typings.semver.mod.Options
-import typings.semver.semverStrings.Equalssign
-import typings.semver.semverStrings.Greaterthansign
-import typings.semver.semverStrings.GreaterthansignEqualssign
-import typings.semver.semverStrings.Lessthansign
-import typings.semver.semverStrings.LessthansignEqualssign
-import typings.semver.semverStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +29,7 @@ object classesComparatorMod {
     
     var loose: Boolean = js.native
     
-    var operator: _empty | Equalssign | Lessthansign | Greaterthansign | LessthansignEqualssign | GreaterthansignEqualssign = js.native
+    var operator: "" | "=" | "<" | ">" | "<=" | ">=" = js.native
     
     var options: Options = js.native
     

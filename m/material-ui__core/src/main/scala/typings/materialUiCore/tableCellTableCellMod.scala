@@ -1,63 +1,6 @@
 package typings.materialUiCore
 
 import typings.materialUiCore.anon.PartialClassNameMapTableC
-import typings.materialUiCore.materialUiCoreStrings.`additions removals`
-import typings.materialUiCore.materialUiCoreStrings.`additions text`
-import typings.materialUiCore.materialUiCoreStrings.`inline`
-import typings.materialUiCore.materialUiCoreStrings.`removals additions`
-import typings.materialUiCore.materialUiCoreStrings.`removals text`
-import typings.materialUiCore.materialUiCoreStrings.`text additions`
-import typings.materialUiCore.materialUiCoreStrings.`text removals`
-import typings.materialUiCore.materialUiCoreStrings.additions
-import typings.materialUiCore.materialUiCoreStrings.all
-import typings.materialUiCore.materialUiCoreStrings.ascending
-import typings.materialUiCore.materialUiCoreStrings.assertive
-import typings.materialUiCore.materialUiCoreStrings.body
-import typings.materialUiCore.materialUiCoreStrings.both
-import typings.materialUiCore.materialUiCoreStrings.center
-import typings.materialUiCore.materialUiCoreStrings.copy
-import typings.materialUiCore.materialUiCoreStrings.date
-import typings.materialUiCore.materialUiCoreStrings.decimal
-import typings.materialUiCore.materialUiCoreStrings.descending
-import typings.materialUiCore.materialUiCoreStrings.dialog
-import typings.materialUiCore.materialUiCoreStrings.email
-import typings.materialUiCore.materialUiCoreStrings.execute
-import typings.materialUiCore.materialUiCoreStrings.footer
-import typings.materialUiCore.materialUiCoreStrings.grammar
-import typings.materialUiCore.materialUiCoreStrings.grid
-import typings.materialUiCore.materialUiCoreStrings.head
-import typings.materialUiCore.materialUiCoreStrings.horizontal
-import typings.materialUiCore.materialUiCoreStrings.inherit
-import typings.materialUiCore.materialUiCoreStrings.justify
-import typings.materialUiCore.materialUiCoreStrings.left
-import typings.materialUiCore.materialUiCoreStrings.link
-import typings.materialUiCore.materialUiCoreStrings.list
-import typings.materialUiCore.materialUiCoreStrings.listbox
-import typings.materialUiCore.materialUiCoreStrings.location
-import typings.materialUiCore.materialUiCoreStrings.menu
-import typings.materialUiCore.materialUiCoreStrings.mixed
-import typings.materialUiCore.materialUiCoreStrings.move
-import typings.materialUiCore.materialUiCoreStrings.no
-import typings.materialUiCore.materialUiCoreStrings.none
-import typings.materialUiCore.materialUiCoreStrings.numeric
-import typings.materialUiCore.materialUiCoreStrings.off
-import typings.materialUiCore.materialUiCoreStrings.on
-import typings.materialUiCore.materialUiCoreStrings.other
-import typings.materialUiCore.materialUiCoreStrings.page
-import typings.materialUiCore.materialUiCoreStrings.polite
-import typings.materialUiCore.materialUiCoreStrings.popup
-import typings.materialUiCore.materialUiCoreStrings.removals
-import typings.materialUiCore.materialUiCoreStrings.right
-import typings.materialUiCore.materialUiCoreStrings.search
-import typings.materialUiCore.materialUiCoreStrings.spelling
-import typings.materialUiCore.materialUiCoreStrings.step
-import typings.materialUiCore.materialUiCoreStrings.tel
-import typings.materialUiCore.materialUiCoreStrings.text
-import typings.materialUiCore.materialUiCoreStrings.time
-import typings.materialUiCore.materialUiCoreStrings.tree
-import typings.materialUiCore.materialUiCoreStrings.url
-import typings.materialUiCore.materialUiCoreStrings.vertical
-import typings.materialUiCore.materialUiCoreStrings.yes
 import typings.materialUiCore.tableTableMod.Padding
 import typings.materialUiCore.tableTableMod.Size
 import typings.react.anon.Html
@@ -99,10 +42,6 @@ import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.react.mod.global.JSX.Element
-import typings.react.reactStrings.baseline
-import typings.react.reactStrings.bottom
-import typings.react.reactStrings.middle
-import typings.react.reactStrings.top
 import typings.std.Event
 import typings.std.HTMLTableHeaderCellElement
 import org.scalablytyped.runtime.StObject
@@ -117,20 +56,15 @@ object tableCellTableCellMod {
   
   inline def default(props: TableCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreBooleans.`false`
-    - typings.materialUiCore.materialUiCoreStrings.asc
-    - typings.materialUiCore.materialUiCoreStrings.desc
-  */
-  trait SortDirection extends StObject
   object SortDirection {
     
-    inline def asc: typings.materialUiCore.materialUiCoreStrings.asc = "asc".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.asc]
+    inline def asc: "asc" = "asc".asInstanceOf["asc"]
     
-    inline def desc: typings.materialUiCore.materialUiCoreStrings.desc = "desc".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.desc]
+    inline def desc: "desc" = "desc".asInstanceOf["desc"]
     
-    inline def `false`: typings.materialUiCore.materialUiCoreBooleans.`false` = false.asInstanceOf[typings.materialUiCore.materialUiCoreBooleans.`false`]
+    inline def `false`: false = false.asInstanceOf[false]
   }
+  type SortDirection = false | "asc" | "desc"
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.react.mod.DOMAttributes because Already inherited
@@ -142,7 +76,7 @@ object tableCellTableCellMod {
     
     var height: js.UndefOr[Double | String] = js.undefined
     
-    var valign: js.UndefOr[top | middle | bottom | baseline] = js.undefined
+    var valign: js.UndefOr["top" | "middle" | "bottom" | "baseline"] = js.undefined
     
     var width: js.UndefOr[Double | String] = js.undefined
   }
@@ -159,7 +93,7 @@ object tableCellTableCellMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setValign(value: top | middle | bottom | baseline): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
+      inline def setValign(value: "top" | "middle" | "bottom" | "baseline"): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
       
       inline def setValignUndefined: Self = StObject.set(x, "valign", js.undefined)
       
@@ -169,47 +103,33 @@ object tableCellTableCellMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.head
-    - typings.materialUiCore.materialUiCoreStrings.body
-    - typings.materialUiCore.materialUiCoreStrings.footer
-    - typings.materialUiCore.materialUiCoreStrings.alignLeft
-    - typings.materialUiCore.materialUiCoreStrings.alignCenter
-    - typings.materialUiCore.materialUiCoreStrings.alignRight
-    - typings.materialUiCore.materialUiCoreStrings.alignJustify
-    - typings.materialUiCore.materialUiCoreStrings.sizeSmall
-    - typings.materialUiCore.materialUiCoreStrings.paddingCheckbox
-    - typings.materialUiCore.materialUiCoreStrings.paddingNone
-    - typings.materialUiCore.materialUiCoreStrings.stickyHeader
-  */
-  trait TableCellClassKey extends StObject
   object TableCellClassKey {
     
-    inline def alignCenter: typings.materialUiCore.materialUiCoreStrings.alignCenter = "alignCenter".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.alignCenter]
+    inline def alignCenter: "alignCenter" = "alignCenter".asInstanceOf["alignCenter"]
     
-    inline def alignJustify: typings.materialUiCore.materialUiCoreStrings.alignJustify = "alignJustify".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.alignJustify]
+    inline def alignJustify: "alignJustify" = "alignJustify".asInstanceOf["alignJustify"]
     
-    inline def alignLeft: typings.materialUiCore.materialUiCoreStrings.alignLeft = "alignLeft".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.alignLeft]
+    inline def alignLeft: "alignLeft" = "alignLeft".asInstanceOf["alignLeft"]
     
-    inline def alignRight: typings.materialUiCore.materialUiCoreStrings.alignRight = "alignRight".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.alignRight]
+    inline def alignRight: "alignRight" = "alignRight".asInstanceOf["alignRight"]
     
-    inline def body: typings.materialUiCore.materialUiCoreStrings.body = "body".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.body]
+    inline def body: "body" = "body".asInstanceOf["body"]
     
-    inline def footer: typings.materialUiCore.materialUiCoreStrings.footer = "footer".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.footer]
+    inline def footer: "footer" = "footer".asInstanceOf["footer"]
     
-    inline def head: typings.materialUiCore.materialUiCoreStrings.head = "head".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.head]
+    inline def head: "head" = "head".asInstanceOf["head"]
     
-    inline def paddingCheckbox: typings.materialUiCore.materialUiCoreStrings.paddingCheckbox = "paddingCheckbox".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paddingCheckbox]
+    inline def paddingCheckbox: "paddingCheckbox" = "paddingCheckbox".asInstanceOf["paddingCheckbox"]
     
-    inline def paddingNone: typings.materialUiCore.materialUiCoreStrings.paddingNone = "paddingNone".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paddingNone]
+    inline def paddingNone: "paddingNone" = "paddingNone".asInstanceOf["paddingNone"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def sizeSmall: typings.materialUiCore.materialUiCoreStrings.sizeSmall = "sizeSmall".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sizeSmall]
+    inline def sizeSmall: "sizeSmall" = "sizeSmall".asInstanceOf["sizeSmall"]
     
-    inline def stickyHeader: typings.materialUiCore.materialUiCoreStrings.stickyHeader = "stickyHeader".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.stickyHeader]
+    inline def stickyHeader: "stickyHeader" = "stickyHeader".asInstanceOf["stickyHeader"]
   }
+  type TableCellClassKey = "root" | "head" | "body" | "footer" | "alignLeft" | "alignCenter" | "alignRight" | "alignJustify" | "sizeSmall" | "paddingCheckbox" | "paddingNone" | "stickyHeader"
   
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/TableCell/TableCell.TableCellBaseProps, @material-ui/core.@material-ui/core/TableCell/TableCell.TableCellClassKey, 'align'> */
   trait TableCellProps extends StObject {
@@ -226,17 +146,17 @@ object tableCellTableCellMod {
       * Monetary or generally number fields **should be right aligned** as that allows
       * you to add them up quickly in your head without having to worry about decimals.
       */
-    var align: js.UndefOr[inherit | left | center | right | justify] = js.undefined
+    var align: js.UndefOr["inherit" | "left" | "center" | "right" | "justify"] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -246,7 +166,7 @@ object tableCellTableCellMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -254,7 +174,7 @@ object tableCellTableCellMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -264,11 +184,11 @@ object tableCellTableCellMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -278,7 +198,7 @@ object tableCellTableCellMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -286,7 +206,7 @@ object tableCellTableCellMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -294,12 +214,12 @@ object tableCellTableCellMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -316,7 +236,7 @@ object tableCellTableCellMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -354,7 +274,7 @@ object tableCellTableCellMod {
       */
     var component: js.UndefOr[ElementType[TableCellBaseProps]] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -382,7 +302,7 @@ object tableCellTableCellMod {
     
     var innerRef: js.UndefOr[Ref[Any]] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
     
@@ -619,21 +539,19 @@ object tableCellTableCellMod {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
-    var valign: js.UndefOr[
-        typings.materialUiCore.materialUiCoreStrings.top | typings.materialUiCore.materialUiCoreStrings.middle | typings.materialUiCore.materialUiCoreStrings.bottom | typings.materialUiCore.materialUiCoreStrings.baseline
-      ] = js.undefined
+    var valign: js.UndefOr["top" | "middle" | "bottom" | "baseline"] = js.undefined
     
     /**
       * Specify the cell type.
       * By default, the TableHead, TableBody or TableFooter parent component set the value.
       */
-    var variant: js.UndefOr[head | body | footer] = js.undefined
+    var variant: js.UndefOr["head" | "body" | "footer"] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -660,7 +578,7 @@ object tableCellTableCellMod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAlign(value: inherit | left | center | right | justify): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: "inherit" | "left" | "center" | "right" | "justify"): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
@@ -672,7 +590,7 @@ object tableCellTableCellMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -680,7 +598,7 @@ object tableCellTableCellMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -700,7 +618,7 @@ object tableCellTableCellMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -716,7 +634,7 @@ object tableCellTableCellMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -736,7 +654,7 @@ object tableCellTableCellMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -744,7 +662,7 @@ object tableCellTableCellMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -764,7 +682,7 @@ object tableCellTableCellMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -780,7 +698,7 @@ object tableCellTableCellMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -796,7 +714,7 @@ object tableCellTableCellMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -805,7 +723,7 @@ object tableCellTableCellMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -838,7 +756,7 @@ object tableCellTableCellMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -894,7 +812,7 @@ object tableCellTableCellMod {
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -956,7 +874,7 @@ object tableCellTableCellMod {
       
       inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -1398,7 +1316,7 @@ object tableCellTableCellMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
@@ -1406,17 +1324,15 @@ object tableCellTableCellMod {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      inline def setValign(
-        value: typings.materialUiCore.materialUiCoreStrings.top | typings.materialUiCore.materialUiCoreStrings.middle | typings.materialUiCore.materialUiCoreStrings.bottom | typings.materialUiCore.materialUiCoreStrings.baseline
-      ): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
+      inline def setValign(value: "top" | "middle" | "bottom" | "baseline"): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
       
       inline def setValignUndefined: Self = StObject.set(x, "valign", js.undefined)
       
-      inline def setVariant(value: head | body | footer): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "head" | "body" | "footer"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       

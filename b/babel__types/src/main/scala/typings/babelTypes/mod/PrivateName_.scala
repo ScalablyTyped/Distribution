@@ -1,21 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.PrivateName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait PrivateName_
+trait PrivateName_
   extends StObject
-     with BaseNode
-     with Private
-     with Standardized {
+     with BaseNode {
   
   var id: Identifier_
   
   @JSName("type")
-  var type_PrivateName_ : PrivateName
+  var type_PrivateName_ : "PrivateName"
 }
 object PrivateName_ {
   
@@ -29,6 +25,6 @@ object PrivateName_ {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setType(value: PrivateName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "PrivateName"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

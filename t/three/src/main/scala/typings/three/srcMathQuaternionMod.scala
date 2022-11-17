@@ -7,7 +7,6 @@ import typings.three.srcCoreInterleavedBufferAttributeMod.InterleavedBufferAttri
 import typings.three.srcMathEulerMod.Euler
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathVector3Mod.Vector3
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,7 +80,7 @@ object srcMathQuaternionMod {
       */
     def invert(): Quaternion = js.native
     
-    val isQuaternion: `true` = js.native
+    val isQuaternion: true = js.native
     
     @JSName(js.Symbol.iterator)
     var iterator: js.Function0[Generator[Double, Unit, Any]] = js.native

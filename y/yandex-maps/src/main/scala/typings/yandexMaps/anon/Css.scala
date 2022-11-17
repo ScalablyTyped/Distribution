@@ -1,8 +1,6 @@
 package typings.yandexMaps.anon
 
 import typings.std.CSSStyleDeclaration
-import typings.yandexMaps.yandexMapsStrings.hidden
-import typings.yandexMaps.yandexMapsStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +11,7 @@ trait Css extends StObject {
   
   var margin: js.UndefOr[Double] = js.undefined
   
-  var overflow: js.UndefOr[hidden | visible] = js.undefined
+  var overflow: js.UndefOr["hidden" | "visible"] = js.undefined
   
   var zIndex: js.UndefOr[Double] = js.undefined
 }
@@ -34,7 +32,7 @@ object Css {
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setOverflow(value: hidden | visible): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: "hidden" | "visible"): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     

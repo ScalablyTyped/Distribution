@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object examplesJsmNodesCoreNodeVarMod {
     def this(name: String, `type`: String) = this()
     
     /* CompleteClass */
-    var isNodeVar: `true` = js.native
+    var isNodeVar: true = js.native
     
     /* CompleteClass */
     var name: String = js.native
@@ -26,7 +25,7 @@ object examplesJsmNodesCoreNodeVarMod {
   
   trait NodeVar extends StObject {
     
-    var isNodeVar: `true`
+    var isNodeVar: true
     
     var name: String
     
@@ -42,7 +41,7 @@ object examplesJsmNodesCoreNodeVarMod {
     
     extension [Self <: NodeVar](x: Self) {
       
-      inline def setIsNodeVar(value: `true`): Self = StObject.set(x, "isNodeVar", value.asInstanceOf[js.Any])
+      inline def setIsNodeVar(value: true): Self = StObject.set(x, "isNodeVar", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JobOutboundMessageChannelCreate
   extends StObject
-     with JobOutboundMessageChannelBase
-     with JobOutboundMessage[Any] {
+     with JobOutboundMessageChannelBase {
   
   @JSName("kind")
   val kind_JobOutboundMessageChannelCreate: ChannelCreate

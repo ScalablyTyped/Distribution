@@ -1,9 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngIf]`
-import typings.angularCommon.angularCommonStrings.binding
 import typings.angularCommon.mod.NgIfContext
 import typings.angularCore.mod.TemplateRef
 import typings.angularCore.mod.ViewContainerRef
@@ -38,17 +35,18 @@ trait TypeofNgIf
     * to `ngIf` should be narrowed in some way. For `NgIf`, the binding expression itself is used to
     * narrow its type, which allows the strictNullChecks feature of TypeScript to work with `NgIf`.
     */
-  var ngTemplateGuard_ngIf: binding = js.native
+  var ngTemplateGuard_ngIf: "binding" = js.native
   
   var ɵdir: ɵɵDirectiveDeclaration[
     typings.angularCommon.mod.NgIf[Any], 
-    `[ngIf]`, 
+    "[ngIf]", 
     scala.Nothing, 
     NgIf, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[typings.angularCommon.mod.NgIf[Any], scala.Nothing] = js.native

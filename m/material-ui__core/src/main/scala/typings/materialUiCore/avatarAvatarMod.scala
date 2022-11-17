@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Alt
-import typings.materialUiCore.materialUiCoreStrings.div
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -24,37 +23,27 @@ object avatarAvatarMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Avatar/Avatar", JSImport.Default)
   @js.native
-  val default: OverridableComponent[AvatarTypeMap[js.Object, div]] = js.native
+  val default: OverridableComponent[AvatarTypeMap[js.Object, "div"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.colorDefault
-    - typings.materialUiCore.materialUiCoreStrings.circle
-    - typings.materialUiCore.materialUiCoreStrings.circular
-    - typings.materialUiCore.materialUiCoreStrings.rounded
-    - typings.materialUiCore.materialUiCoreStrings.square
-    - typings.materialUiCore.materialUiCoreStrings.img
-    - typings.materialUiCore.materialUiCoreStrings.fallback
-  */
-  trait AvatarClassKey extends StObject
   object AvatarClassKey {
     
-    inline def circle: typings.materialUiCore.materialUiCoreStrings.circle = "circle".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.circle]
+    inline def circle: "circle" = "circle".asInstanceOf["circle"]
     
-    inline def circular: typings.materialUiCore.materialUiCoreStrings.circular = "circular".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.circular]
+    inline def circular: "circular" = "circular".asInstanceOf["circular"]
     
-    inline def colorDefault: typings.materialUiCore.materialUiCoreStrings.colorDefault = "colorDefault".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorDefault]
+    inline def colorDefault: "colorDefault" = "colorDefault".asInstanceOf["colorDefault"]
     
-    inline def fallback: typings.materialUiCore.materialUiCoreStrings.fallback = "fallback".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.fallback]
+    inline def fallback: "fallback" = "fallback".asInstanceOf["fallback"]
     
-    inline def img: typings.materialUiCore.materialUiCoreStrings.img = "img".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.img]
+    inline def img: "img" = "img".asInstanceOf["img"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def rounded: typings.materialUiCore.materialUiCoreStrings.rounded = "rounded".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.rounded]
+    inline def rounded: "rounded" = "rounded".asInstanceOf["rounded"]
     
-    inline def square: typings.materialUiCore.materialUiCoreStrings.square = "square".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.square]
+    inline def square: "square" = "square".asInstanceOf["square"]
   }
+  type AvatarClassKey = "root" | "colorDefault" | "circle" | "circular" | "rounded" | "square" | "img" | "fallback"
   
   type AvatarProps[D /* <: ElementType[Any] */, P] = OverrideProps[AvatarTypeMap[P, D], D]
   
@@ -83,8 +72,8 @@ object avatarAvatarMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[AvatarTypeMap[js.Object, div]]
+  type _To = OverridableComponent[AvatarTypeMap[js.Object, "div"]]
   
   /* This means you don't have to write `default`, but can instead just say `avatarAvatarMod.foo` */
-  override def _to: OverridableComponent[AvatarTypeMap[js.Object, div]] = default
+  override def _to: OverridableComponent[AvatarTypeMap[js.Object, "div"]] = default
 }

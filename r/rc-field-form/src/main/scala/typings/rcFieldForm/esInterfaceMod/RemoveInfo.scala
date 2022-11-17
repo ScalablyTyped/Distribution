@@ -1,15 +1,12 @@
 package typings.rcFieldForm.esInterfaceMod
 
-import typings.rcFieldForm.rcFieldFormStrings.remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RemoveInfo
-  extends StObject
-     with NotifyInfo {
+trait RemoveInfo extends StObject {
   
-  var `type`: remove
+  var `type`: "remove"
 }
 object RemoveInfo {
   
@@ -21,6 +18,6 @@ object RemoveInfo {
   
   extension [Self <: RemoveInfo](x: Self) {
     
-    inline def setType(value: remove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "remove"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

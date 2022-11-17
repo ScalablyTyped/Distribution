@@ -1,10 +1,6 @@
 package typings.reactNative.mod
 
 import typings.reactNative.anon.Code
-import typings.reactNative.reactNativeStrings.localNotification
-import typings.reactNative.reactNativeStrings.notification
-import typings.reactNative.reactNativeStrings.register
-import typings.reactNative.reactNativeStrings.registrationError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,18 +27,6 @@ trait PushNotificationIOSStatic extends StObject {
   def abandonPermissions(): Unit = js.native
   
   /**
-    * Attaches a listener to remote notifications while the app is running in the
-    * foreground or the background.
-    *
-    * The handler will get be invoked with an instance of `PushNotificationIOS`
-    *
-    * The type MUST be 'notification'
-    */
-  def addEventListener(
-    `type`: notification | localNotification,
-    handler: js.Function1[/* notification */ PushNotification, Unit]
-  ): Unit = js.native
-  /**
     * Fired when the user registers for remote notifications.
     *
     * The handler will be invoked with a hex string representing the deviceToken.
@@ -50,7 +34,8 @@ trait PushNotificationIOSStatic extends StObject {
     * The type MUST be 'register'
     */
   @JSName("addEventListener")
-  def addEventListener_register(`type`: register, handler: js.Function1[/* deviceToken */ String, Unit]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_register")
+  def addEventListener(`type`: "register", handler: js.Function1[/* deviceToken */ String, Unit]): Unit = js.native
   /**
     * Fired when the user fails to register for remote notifications.
     * Typically occurs when APNS is having issues, or the device is a simulator.
@@ -60,7 +45,22 @@ trait PushNotificationIOSStatic extends StObject {
     * The type MUST be 'registrationError'
     */
   @JSName("addEventListener")
-  def addEventListener_registrationError(`type`: registrationError, handler: js.Function1[/* error */ Code, Unit]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_registrationError")
+  def addEventListener(`type`: "registrationError", handler: js.Function1[/* error */ Code, Unit]): Unit = js.native
+  /**
+    * Attaches a listener to remote notifications while the app is running in the
+    * foreground or the background.
+    *
+    * The handler will get be invoked with an instance of `PushNotificationIOS`
+    *
+    * The type MUST be 'notification'
+    */
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_notification_localNotification")
+  def addEventListener(
+    `type`: "notification" | "localNotification",
+    handler: js.Function1[/* notification */ PushNotification, Unit]
+  ): Unit = js.native
   
   /**
     * Cancels all scheduled localNotifications

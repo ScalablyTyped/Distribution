@@ -1,15 +1,12 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.timeSetAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimePickerAndroidTimeSetAction
-  extends StObject
-     with TimePickerAndroidOpenReturn {
+trait TimePickerAndroidTimeSetAction extends StObject {
   
-  var action: timeSetAction
+  var action: "timeSetAction"
   
   var hour: Double
   
@@ -24,7 +21,7 @@ object TimePickerAndroidTimeSetAction {
   
   extension [Self <: TimePickerAndroidTimeSetAction](x: Self) {
     
-    inline def setAction(value: timeSetAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: "timeSetAction"): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     

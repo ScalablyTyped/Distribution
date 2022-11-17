@@ -1,15 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.VariableDeclarator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait VariableDeclarator_
   extends StObject
-     with BaseNode
-     with Node
-     with Standardized {
+     with BaseNode {
   
   var definite: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -18,7 +15,7 @@ trait VariableDeclarator_
   var init: js.UndefOr[Expression | Null] = js.undefined
   
   @JSName("type")
-  var type_VariableDeclarator_ : VariableDeclarator
+  var type_VariableDeclarator_ : "VariableDeclarator"
 }
 object VariableDeclarator_ {
   
@@ -44,6 +41,6 @@ object VariableDeclarator_ {
     
     inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    inline def setType(value: VariableDeclarator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "VariableDeclarator"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

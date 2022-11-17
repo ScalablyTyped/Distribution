@@ -1,10 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.Dragging
-import typings.reactNative.reactNativeStrings.Idle
-import typings.reactNative.reactNativeStrings.Settling
-import typings.reactNative.reactNativeStrings.`on-drag`
-import typings.reactNative.reactNativeStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +19,7 @@ trait ViewPagerAndroidProps
     *   - 'none' (the default), drags do not dismiss the keyboard.
     *   - 'on-drag', the keyboard is dismissed when a drag begins.
     */
-  var keyboardDismissMode: js.UndefOr[none | `on-drag`] = js.undefined
+  var keyboardDismissMode: js.UndefOr["none" | "on-drag"] = js.undefined
   
   /**
     * Executed when transitioning between pages (ether because of animation for
@@ -47,7 +42,7 @@ trait ViewPagerAndroidProps
     * - settling, meaning that there was an interaction with the page scroller, and the
     *   page scroller is now finishing it's closing or opening animation
     */
-  var onPageScrollStateChanged: js.UndefOr[js.Function1[/* state */ Idle | Dragging | Settling, Unit]] = js.undefined
+  var onPageScrollStateChanged: js.UndefOr[js.Function1[/* state */ "Idle" | "Dragging" | "Settling", Unit]] = js.undefined
   
   /**
     * This callback will be called once ViewPager finish navigating to selected page
@@ -84,13 +79,13 @@ object ViewPagerAndroidProps {
     
     inline def setInitialPageUndefined: Self = StObject.set(x, "initialPage", js.undefined)
     
-    inline def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+    inline def setKeyboardDismissMode(value: "none" | "on-drag"): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
     
     inline def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
     
     inline def setOnPageScroll(value: /* event */ NativeSyntheticEvent[ViewPagerAndroidOnPageScrollEventData] => Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
     
-    inline def setOnPageScrollStateChanged(value: /* state */ Idle | Dragging | Settling => Unit): Self = StObject.set(x, "onPageScrollStateChanged", js.Any.fromFunction1(value))
+    inline def setOnPageScrollStateChanged(value: /* state */ "Idle" | "Dragging" | "Settling" => Unit): Self = StObject.set(x, "onPageScrollStateChanged", js.Any.fromFunction1(value))
     
     inline def setOnPageScrollStateChangedUndefined: Self = StObject.set(x, "onPageScrollStateChanged", js.undefined)
     

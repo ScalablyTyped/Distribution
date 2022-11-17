@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.statechange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +12,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceWorker
   extends StObject
      with EventTarget
-     with AbstractWorker
-     with _MessageEventSource {
+     with AbstractWorker {
   
+  /* standard dom */
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_statechange")
+  def addEventListener(`type`: "statechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_statechange")
+  def addEventListener(
+    `type`: "statechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_statechange")
+  def addEventListener(
+    `type`: "statechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -24,21 +40,6 @@ trait ServiceWorker
   override def addEventListener(
     `type`: java.lang.String,
     callback: EventListenerOrEventListenerObject,
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  /* standard dom */
-  @JSName("addEventListener")
-  def addEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_statechange(
-    `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_statechange(
-    `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -51,6 +52,24 @@ trait ServiceWorker
   /* standard dom */
   def postMessage(message: Any, transfer: js.Array[Transferable]): Unit = js.native
   
+  /* standard dom */
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_statechange")
+  def removeEventListener(`type`: "statechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_statechange")
+  def removeEventListener(
+    `type`: "statechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_statechange")
+  def removeEventListener(
+    `type`: "statechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -59,21 +78,6 @@ trait ServiceWorker
   override def removeEventListener(
     `type`: java.lang.String,
     callback: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
-  ): Unit = js.native
-  /* standard dom */
-  @JSName("removeEventListener")
-  def removeEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_statechange(
-    `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_statechange(
-    `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   

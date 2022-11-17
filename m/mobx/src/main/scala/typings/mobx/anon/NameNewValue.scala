@@ -1,16 +1,11 @@
 package typings.mobx.anon
 
-import typings.mobx.distTypesObservableobjectMod.IObjectWillChange
-import typings.mobx.mobxStrings.add
-import typings.mobx.mobxStrings.update
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NameNewValue[T]
-  extends StObject
-     with IObjectWillChange[T] {
+trait NameNewValue[T] extends StObject {
   
   var name: PropertyKey
   
@@ -18,11 +13,11 @@ trait NameNewValue[T]
   
   var `object`: T
   
-  var `type`: update | add
+  var `type`: "update" | "add"
 }
 object NameNewValue {
   
-  inline def apply[T](name: PropertyKey, newValue: Any, `object`: T, `type`: update | add): NameNewValue[T] = {
+  inline def apply[T](name: PropertyKey, newValue: Any, `object`: T, `type`: "update" | "add"): NameNewValue[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -37,6 +32,6 @@ object NameNewValue {
     
     inline def setObject(value: T): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    inline def setType(value: update | add): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "update" | "add"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

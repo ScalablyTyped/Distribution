@@ -4,10 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Context[T]
-  extends StObject
-     with Usable[T]
-     with typings.react.nextMod.reactAugmentingMod.Usable[T] {
+trait Context[T] extends StObject {
   
   var Consumer: typings.react.mod.Consumer[T]
   

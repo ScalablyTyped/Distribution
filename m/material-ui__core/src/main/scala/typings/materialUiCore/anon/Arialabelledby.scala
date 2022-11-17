@@ -1,17 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.auto
-import typings.materialUiCore.materialUiCoreStrings.desktop
-import typings.materialUiCore.materialUiCoreStrings.fullWidth
-import typings.materialUiCore.materialUiCoreStrings.horizontal
-import typings.materialUiCore.materialUiCoreStrings.inherit
-import typings.materialUiCore.materialUiCoreStrings.off
-import typings.materialUiCore.materialUiCoreStrings.on
-import typings.materialUiCore.materialUiCoreStrings.primary
-import typings.materialUiCore.materialUiCoreStrings.scrollable
-import typings.materialUiCore.materialUiCoreStrings.secondary
-import typings.materialUiCore.materialUiCoreStrings.standard
-import typings.materialUiCore.materialUiCoreStrings.vertical
 import typings.materialUiCore.tabsTabsMod.TabsActions
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ElementType
@@ -71,7 +59,7 @@ trait Arialabelledby extends StObject {
   /**
     * Determines the color of the indicator.
     */
-  var indicatorColor: js.UndefOr[secondary | primary] = js.undefined
+  var indicatorColor: js.UndefOr["secondary" | "primary"] = js.undefined
   
   /**
     * Callback fired when the value changes.
@@ -84,7 +72,7 @@ trait Arialabelledby extends StObject {
   /**
     * The tabs orientation (layout flow direction).
     */
-  var orientation: js.UndefOr[horizontal | vertical] = js.undefined
+  var orientation: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   /**
     * Determine behavior of scroll buttons when tabs are set to scroll:
@@ -94,7 +82,7 @@ trait Arialabelledby extends StObject {
     * - `on` will always present them.
     * - `off` will never present them.
     */
-  var scrollButtons: js.UndefOr[auto | desktop | on | off] = js.undefined
+  var scrollButtons: js.UndefOr["auto" | "desktop" | "on" | "off"] = js.undefined
   
   /**
     * If `true` the selected tab changes on focus. Otherwise it only
@@ -105,7 +93,7 @@ trait Arialabelledby extends StObject {
   /**
     * Determines the color of the `Tab`.
     */
-  var textColor: js.UndefOr[secondary | primary | inherit] = js.undefined
+  var textColor: js.UndefOr["secondary" | "primary" | "inherit"] = js.undefined
   
   /**
     * The value of the currently selected `Tab`.
@@ -122,7 +110,7 @@ trait Arialabelledby extends StObject {
     *  which should be used for small views, like on mobile.
     *  - `standard` will render the default state.
     */
-  var variant: js.UndefOr[standard | scrollable | fullWidth] = js.undefined
+  var variant: js.UndefOr["standard" | "scrollable" | "fullWidth"] = js.undefined
 }
 object Arialabelledby {
   
@@ -157,7 +145,7 @@ object Arialabelledby {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setIndicatorColor(value: secondary | primary): Self = StObject.set(x, "indicatorColor", value.asInstanceOf[js.Any])
+    inline def setIndicatorColor(value: "secondary" | "primary"): Self = StObject.set(x, "indicatorColor", value.asInstanceOf[js.Any])
     
     inline def setIndicatorColorUndefined: Self = StObject.set(x, "indicatorColor", js.undefined)
     
@@ -165,7 +153,7 @@ object Arialabelledby {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: "horizontal" | "vertical"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
@@ -173,7 +161,7 @@ object Arialabelledby {
     
     inline def setScrollButtonComponentUndefined: Self = StObject.set(x, "ScrollButtonComponent", js.undefined)
     
-    inline def setScrollButtons(value: auto | desktop | on | off): Self = StObject.set(x, "scrollButtons", value.asInstanceOf[js.Any])
+    inline def setScrollButtons(value: "auto" | "desktop" | "on" | "off"): Self = StObject.set(x, "scrollButtons", value.asInstanceOf[js.Any])
     
     inline def setScrollButtonsUndefined: Self = StObject.set(x, "scrollButtons", js.undefined)
     
@@ -189,7 +177,7 @@ object Arialabelledby {
     
     inline def setTabScrollButtonPropsUndefined: Self = StObject.set(x, "TabScrollButtonProps", js.undefined)
     
-    inline def setTextColor(value: secondary | primary | inherit): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: "secondary" | "primary" | "inherit"): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
@@ -197,7 +185,7 @@ object Arialabelledby {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setVariant(value: standard | scrollable | fullWidth): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "standard" | "scrollable" | "fullWidth"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

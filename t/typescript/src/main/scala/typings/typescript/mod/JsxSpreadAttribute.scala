@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JsxSpreadAttribute
   extends StObject
-     with ObjectLiteralElement
-     with JsxAttributeLike {
+     with ObjectLiteralElement {
   
   val expression: Expression = js.native
   

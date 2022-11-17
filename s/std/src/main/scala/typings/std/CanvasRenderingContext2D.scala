@@ -23,8 +23,7 @@ trait CanvasRenderingContext2D
      with CanvasText
      with CanvasTextDrawingStyles
      with CanvasTransform
-     with CanvasUserInterface
-     with RenderingContext {
+     with CanvasUserInterface {
   
   /* standard dom */
   val canvas: HTMLCanvasElement = js.native

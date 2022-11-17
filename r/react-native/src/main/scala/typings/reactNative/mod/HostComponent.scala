@@ -32,17 +32,13 @@ trait HostComponent[P]
   
   var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   
-  var defaultProps: js.UndefOr[Partial[typings.reactNative.reactNativeStrings.defaultProps]] = js.native
+  var defaultProps: js.UndefOr[Partial["defaultProps"]] = js.native
   
   var displayName: js.UndefOr[String] = js.native
   
-  var getDerivedStateFromError: js.UndefOr[
-    GetDerivedStateFromError[typings.reactNative.reactNativeStrings.getDerivedStateFromError, ComponentState]
-  ] = js.native
+  var getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError["getDerivedStateFromError", ComponentState]] = js.native
   
-  var getDerivedStateFromProps: js.UndefOr[
-    GetDerivedStateFromProps[typings.reactNative.reactNativeStrings.getDerivedStateFromProps, ComponentState]
-  ] = js.native
+  var getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps["getDerivedStateFromProps", ComponentState]] = js.native
   
-  var propTypes: js.UndefOr[WeakValidationMap[typings.reactNative.reactNativeStrings.propTypes]] = js.native
+  var propTypes: js.UndefOr[WeakValidationMap["propTypes"]] = js.native
 }

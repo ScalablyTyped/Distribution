@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AgnosticDataNonIndexRouteObject
   extends StObject
-     with AgnosticNonIndexRouteObject
-     with AgnosticDataRouteObject {
+     with AgnosticNonIndexRouteObject {
   
   @JSName("children")
   var children_AgnosticDataNonIndexRouteObject: js.UndefOr[js.Array[AgnosticDataRouteObject]] = js.undefined

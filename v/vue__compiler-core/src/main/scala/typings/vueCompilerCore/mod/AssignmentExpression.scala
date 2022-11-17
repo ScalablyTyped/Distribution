@@ -1,22 +1,19 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`24`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AssignmentExpression
   extends StObject
-     with Node2
-     with JSChildNode
-     with SSRCodegenNode {
+     with Node2 {
   
   var left: SimpleExpressionNode
   
   var right: JSChildNode
   
   @JSName("type")
-  var type_AssignmentExpression: `24`
+  var type_AssignmentExpression: 24
 }
 object AssignmentExpression {
   
@@ -32,6 +29,6 @@ object AssignmentExpression {
     
     inline def setRight(value: JSChildNode): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `24`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 24): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

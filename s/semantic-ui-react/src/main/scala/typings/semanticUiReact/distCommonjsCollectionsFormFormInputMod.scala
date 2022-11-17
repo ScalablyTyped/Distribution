@@ -49,74 +49,6 @@ import typings.semanticUiReact.distCommonjsGenericMod.HtmlInputrops
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticWIDTHS
-import typings.semanticUiReact.semanticUiReactStrings.`additions removals`
-import typings.semanticUiReact.semanticUiReactStrings.`additions text`
-import typings.semanticUiReact.semanticUiReactStrings.`inline`
-import typings.semanticUiReact.semanticUiReactStrings.`left corner`
-import typings.semanticUiReact.semanticUiReactStrings.`removals additions`
-import typings.semanticUiReact.semanticUiReactStrings.`removals text`
-import typings.semanticUiReact.semanticUiReactStrings.`right corner`
-import typings.semanticUiReact.semanticUiReactStrings.`text additions`
-import typings.semanticUiReact.semanticUiReactStrings.`text removals`
-import typings.semanticUiReact.semanticUiReactStrings.additions
-import typings.semanticUiReact.semanticUiReactStrings.all
-import typings.semanticUiReact.semanticUiReactStrings.ascending
-import typings.semanticUiReact.semanticUiReactStrings.assertive
-import typings.semanticUiReact.semanticUiReactStrings.big
-import typings.semanticUiReact.semanticUiReactStrings.both
-import typings.semanticUiReact.semanticUiReactStrings.copy
-import typings.semanticUiReact.semanticUiReactStrings.date
-import typings.semanticUiReact.semanticUiReactStrings.decimal
-import typings.semanticUiReact.semanticUiReactStrings.descending
-import typings.semanticUiReact.semanticUiReactStrings.dialog
-import typings.semanticUiReact.semanticUiReactStrings.done
-import typings.semanticUiReact.semanticUiReactStrings.email
-import typings.semanticUiReact.semanticUiReactStrings.enter
-import typings.semanticUiReact.semanticUiReactStrings.environment
-import typings.semanticUiReact.semanticUiReactStrings.execute
-import typings.semanticUiReact.semanticUiReactStrings.go
-import typings.semanticUiReact.semanticUiReactStrings.grammar
-import typings.semanticUiReact.semanticUiReactStrings.grid
-import typings.semanticUiReact.semanticUiReactStrings.horizontal
-import typings.semanticUiReact.semanticUiReactStrings.huge
-import typings.semanticUiReact.semanticUiReactStrings.inherit
-import typings.semanticUiReact.semanticUiReactStrings.large
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.link
-import typings.semanticUiReact.semanticUiReactStrings.list
-import typings.semanticUiReact.semanticUiReactStrings.listbox
-import typings.semanticUiReact.semanticUiReactStrings.location
-import typings.semanticUiReact.semanticUiReactStrings.massive
-import typings.semanticUiReact.semanticUiReactStrings.menu
-import typings.semanticUiReact.semanticUiReactStrings.mini
-import typings.semanticUiReact.semanticUiReactStrings.mixed
-import typings.semanticUiReact.semanticUiReactStrings.move
-import typings.semanticUiReact.semanticUiReactStrings.next
-import typings.semanticUiReact.semanticUiReactStrings.no
-import typings.semanticUiReact.semanticUiReactStrings.none
-import typings.semanticUiReact.semanticUiReactStrings.numeric
-import typings.semanticUiReact.semanticUiReactStrings.off
-import typings.semanticUiReact.semanticUiReactStrings.on
-import typings.semanticUiReact.semanticUiReactStrings.other
-import typings.semanticUiReact.semanticUiReactStrings.page
-import typings.semanticUiReact.semanticUiReactStrings.polite
-import typings.semanticUiReact.semanticUiReactStrings.popup
-import typings.semanticUiReact.semanticUiReactStrings.previous
-import typings.semanticUiReact.semanticUiReactStrings.removals
-import typings.semanticUiReact.semanticUiReactStrings.right
-import typings.semanticUiReact.semanticUiReactStrings.search
-import typings.semanticUiReact.semanticUiReactStrings.send
-import typings.semanticUiReact.semanticUiReactStrings.small
-import typings.semanticUiReact.semanticUiReactStrings.spelling
-import typings.semanticUiReact.semanticUiReactStrings.step
-import typings.semanticUiReact.semanticUiReactStrings.tel
-import typings.semanticUiReact.semanticUiReactStrings.text
-import typings.semanticUiReact.semanticUiReactStrings.time
-import typings.semanticUiReact.semanticUiReactStrings.tree
-import typings.semanticUiReact.semanticUiReactStrings.url
-import typings.semanticUiReact.semanticUiReactStrings.user
-import typings.semanticUiReact.semanticUiReactStrings.vertical
-import typings.semanticUiReact.semanticUiReactStrings.yes
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLInputElement
@@ -162,7 +94,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     var action: js.UndefOr[Any | Boolean] = js.undefined
     
     /** An action can appear along side an Input on the left or right. */
-    var actionPosition: js.UndefOr[left] = js.undefined
+    var actionPosition: js.UndefOr["left"] = js.undefined
     
     var alt: js.UndefOr[String] = js.undefined
     
@@ -176,7 +108,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
       * presented if they are made.
       */
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
@@ -185,7 +117,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
       * @see aria-pressed @see aria-selected.
       */
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     /**
       * Defines the total number of columns in a table, grid, or treegrid.
@@ -212,7 +144,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
     /** Indicates the element that represents the current item within a container or set of related elements. */
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     /**
       * Identifies the element (or elements) that describes the object.
@@ -236,7 +168,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       * Indicates what functions can be performed when a dragged object is released on the drop target.
       * @deprecated in ARIA 1.1
       */
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     /**
       * Identifies the element that provides an error message for the object.
@@ -260,7 +192,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     /**
       * Indicates whether the element is exposed to an accessibility API.
@@ -272,7 +204,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       * Indicates the entered value does not conform to the format expected by the application.
       * @see aria-errormessage.
       */
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     /** Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element. */
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
@@ -293,7 +225,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
     /** Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region. */
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     /** Indicates whether an element is modal when displayed. */
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
@@ -305,7 +237,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     /**
       * Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship
@@ -330,7 +262,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       * Indicates the current "pressed" state of toggle buttons.
       * @see aria-checked @see aria-selected.
       */
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     /**
       * Indicates that the element is not editable, but is otherwise operable.
@@ -343,7 +275,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       * @see aria-atomic.
       */
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     /** Indicates that user input is required on the element before a form may be submitted. */
@@ -383,7 +315,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
     /** Indicates if items in a table or grid are sorted in ascending or descending order. */
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     /** Defines the maximum allowed value for a range widget. */
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
@@ -414,7 +346,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
+    var capture: js.UndefOr[Boolean | "user" | "environment"] = js.undefined
     
     // https://www.w3.org/TR/html-media-capture/#the-capture-attribute
     var checked: js.UndefOr[Boolean] = js.undefined
@@ -429,7 +361,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     
     var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -454,7 +386,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
+    var enterKeyHint: js.UndefOr["enter" | "done" | "go" | "next" | "previous" | "search" | "send"] = js.undefined
     
     /** Individual fields may display an error state along with a message. */
     var error: js.UndefOr[Any] = js.undefined
@@ -485,7 +417,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     var icon: js.UndefOr[Any | SemanticShorthandItem[InputProps]] = js.undefined
     
     /** An Icon can appear inside an Input on the left. */
-    var iconPosition: js.UndefOr[left] = js.undefined
+    var iconPosition: js.UndefOr["left"] = js.undefined
     
     var id: (js.UndefOr[Double | String]) & js.UndefOr[String]
     
@@ -501,7 +433,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       * Hints at the type of data that might be entered by the user while editing the element or its contents
       * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
       */
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     /** Format to appear on dark backgrounds. */
     var inverted: js.UndefOr[Boolean] = js.undefined
@@ -526,7 +458,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     var label: js.UndefOr[SemanticShorthandItem[LabelProps]] = js.undefined
     
     /** A Label can appear outside an Input on the left or right. */
-    var labelPosition: js.UndefOr[left | right | (`left corner`) | (`right corner`)] = js.undefined
+    var labelPosition: js.UndefOr["left" | "right" | ("left corner") | ("right corner")] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
     
@@ -759,7 +691,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     var security: js.UndefOr[String] = js.undefined
     
     /** An Input can vary in size. */
-    var size: js.UndefOr[mini | small | large | big | huge | massive] = js.undefined
+    var size: js.UndefOr["mini" | "small" | "large" | "big" | "huge" | "massive"] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -780,7 +712,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     /** Transparent Input has no background. */
     var transparent: js.UndefOr[Boolean] = js.undefined
@@ -790,7 +722,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
     var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
     
@@ -825,7 +757,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def setAction(value: Any | Boolean): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      inline def setActionPosition(value: left): Self = StObject.set(x, "actionPosition", value.asInstanceOf[js.Any])
+      inline def setActionPosition(value: "left"): Self = StObject.set(x, "actionPosition", value.asInstanceOf[js.Any])
       
       inline def setActionPositionUndefined: Self = StObject.set(x, "actionPosition", js.undefined)
       
@@ -843,7 +775,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -851,7 +783,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -871,7 +803,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -887,7 +819,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -907,7 +839,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -915,7 +847,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -935,7 +867,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -951,7 +883,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -967,7 +899,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -976,7 +908,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -1009,7 +941,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -1053,7 +985,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | "user" | "environment"): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -1075,7 +1007,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -1123,7 +1055,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setEnterKeyHint(value: enter | done | go | next | previous | search | send): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
+      inline def setEnterKeyHint(value: "enter" | "done" | "go" | "next" | "previous" | "search" | "send"): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
       
       inline def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
       
@@ -1177,7 +1109,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
         value: (/* component */ ElementType[InputProps], InputProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "icon", js.Any.fromFunction3(value))
       
-      inline def setIconPosition(value: left): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
+      inline def setIconPosition(value: "left"): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
       
       inline def setIconPositionUndefined: Self = StObject.set(x, "iconPosition", js.undefined)
       
@@ -1199,7 +1131,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
         value: (/* component */ ElementType[HtmlInputrops], HtmlInputrops, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "input", js.Any.fromFunction3(value))
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -1239,7 +1171,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
         value: (/* component */ ElementType[LabelProps], LabelProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "label", js.Any.fromFunction3(value))
       
-      inline def setLabelPosition(value: left | right | (`left corner`) | (`right corner`)): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+      inline def setLabelPosition(value: "left" | "right" | ("left corner") | ("right corner")): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
       
       inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
       
@@ -1647,7 +1579,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSize(value: mini | small | large | big | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "mini" | "small" | "large" | "big" | "huge" | "massive"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -1687,7 +1619,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
@@ -1703,7 +1635,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       

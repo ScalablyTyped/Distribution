@@ -10,13 +10,6 @@ import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferConstructor
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.cryptoMod.BinaryLike
-import typings.node.cryptoMod._KeyLike
-import typings.node.fsMod._EncodingOption
-import typings.node.fsMod._PathLike
-import typings.node.fsMod._WriteFileOptions
-import typings.node.nodeInts.`-1`
-import typings.node.nodeInts.`0`
-import typings.node.nodeInts.`1`
 import typings.node.streamWebMod.ReadableStream
 import typings.std.SharedArrayBuffer
 import typings.std.Uint8Array
@@ -203,9 +196,7 @@ object bufferMod {
     @js.native
     trait Buffer
       extends StObject
-         with Uint8Array
-         with _KeyLike
-         with _PathLike {
+         with Uint8Array {
       
       /**
         * Compares `buf` with `target` and returns a number indicating whether `buf`comes before, after, or is the same as `target` in sort order.
@@ -261,70 +252,70 @@ object bufferMod {
         * @param [sourceStart=0] The offset within `buf` at which to begin comparison.
         * @param [sourceEnd=buf.length] The offset within `buf` at which to end comparison (not inclusive).
         */
-      def compare(target: js.typedarray.Uint8Array): `-1` | `0` | `1` = js.native
-      def compare(target: js.typedarray.Uint8Array, targetStart: Double): `-1` | `0` | `1` = js.native
-      def compare(target: js.typedarray.Uint8Array, targetStart: Double, targetEnd: Double): `-1` | `0` | `1` = js.native
-      def compare(target: js.typedarray.Uint8Array, targetStart: Double, targetEnd: Double, sourceStart: Double): `-1` | `0` | `1` = js.native
+      def compare(target: js.typedarray.Uint8Array): -1 | 0 | 1 = js.native
+      def compare(target: js.typedarray.Uint8Array, targetStart: Double): -1 | 0 | 1 = js.native
+      def compare(target: js.typedarray.Uint8Array, targetStart: Double, targetEnd: Double): -1 | 0 | 1 = js.native
+      def compare(target: js.typedarray.Uint8Array, targetStart: Double, targetEnd: Double, sourceStart: Double): -1 | 0 | 1 = js.native
       def compare(
         target: js.typedarray.Uint8Array,
         targetStart: Double,
         targetEnd: Double,
         sourceStart: Double,
         sourceEnd: Double
-      ): `-1` | `0` | `1` = js.native
+      ): -1 | 0 | 1 = js.native
       def compare(
         target: js.typedarray.Uint8Array,
         targetStart: Double,
         targetEnd: Double,
         sourceStart: Unit,
         sourceEnd: Double
-      ): `-1` | `0` | `1` = js.native
-      def compare(target: js.typedarray.Uint8Array, targetStart: Double, targetEnd: Unit, sourceStart: Double): `-1` | `0` | `1` = js.native
+      ): -1 | 0 | 1 = js.native
+      def compare(target: js.typedarray.Uint8Array, targetStart: Double, targetEnd: Unit, sourceStart: Double): -1 | 0 | 1 = js.native
       def compare(
         target: js.typedarray.Uint8Array,
         targetStart: Double,
         targetEnd: Unit,
         sourceStart: Double,
         sourceEnd: Double
-      ): `-1` | `0` | `1` = js.native
+      ): -1 | 0 | 1 = js.native
       def compare(
         target: js.typedarray.Uint8Array,
         targetStart: Double,
         targetEnd: Unit,
         sourceStart: Unit,
         sourceEnd: Double
-      ): `-1` | `0` | `1` = js.native
-      def compare(target: js.typedarray.Uint8Array, targetStart: Unit, targetEnd: Double): `-1` | `0` | `1` = js.native
-      def compare(target: js.typedarray.Uint8Array, targetStart: Unit, targetEnd: Double, sourceStart: Double): `-1` | `0` | `1` = js.native
+      ): -1 | 0 | 1 = js.native
+      def compare(target: js.typedarray.Uint8Array, targetStart: Unit, targetEnd: Double): -1 | 0 | 1 = js.native
+      def compare(target: js.typedarray.Uint8Array, targetStart: Unit, targetEnd: Double, sourceStart: Double): -1 | 0 | 1 = js.native
       def compare(
         target: js.typedarray.Uint8Array,
         targetStart: Unit,
         targetEnd: Double,
         sourceStart: Double,
         sourceEnd: Double
-      ): `-1` | `0` | `1` = js.native
+      ): -1 | 0 | 1 = js.native
       def compare(
         target: js.typedarray.Uint8Array,
         targetStart: Unit,
         targetEnd: Double,
         sourceStart: Unit,
         sourceEnd: Double
-      ): `-1` | `0` | `1` = js.native
-      def compare(target: js.typedarray.Uint8Array, targetStart: Unit, targetEnd: Unit, sourceStart: Double): `-1` | `0` | `1` = js.native
+      ): -1 | 0 | 1 = js.native
+      def compare(target: js.typedarray.Uint8Array, targetStart: Unit, targetEnd: Unit, sourceStart: Double): -1 | 0 | 1 = js.native
       def compare(
         target: js.typedarray.Uint8Array,
         targetStart: Unit,
         targetEnd: Unit,
         sourceStart: Double,
         sourceEnd: Double
-      ): `-1` | `0` | `1` = js.native
+      ): -1 | 0 | 1 = js.native
       def compare(
         target: js.typedarray.Uint8Array,
         targetStart: Unit,
         targetEnd: Unit,
         sourceStart: Unit,
         sourceEnd: Double
-      ): `-1` | `0` | `1` = js.native
+      ): -1 | 0 | 1 = js.native
       
       /**
         * Copies data from a region of `buf` to a region in `target`, even if the `target`memory region overlaps with `buf`.
@@ -2246,7 +2237,7 @@ object bufferMod {
         * @since v0.11.13
         * @return Either `-1`, `0`, or `1`, depending on the result of the comparison. See `compare` for details.
         */
-      def compare(buf1: js.typedarray.Uint8Array, buf2: js.typedarray.Uint8Array): `-1` | `0` | `1` = js.native
+      def compare(buf1: js.typedarray.Uint8Array, buf2: js.typedarray.Uint8Array): -1 | 0 | 1 = js.native
       
       /**
         * Returns a new `Buffer` which is the result of concatenating all the `Buffer`instances in the `list` together.
@@ -2391,48 +2382,32 @@ object bufferMod {
       var poolSize: Double = js.native
     }
     
-    // Buffer class
-    /* Rewritten from type alias, can be one of: 
-      - typings.node.nodeStrings.ascii
-      - typings.node.nodeStrings.utf8
-      - typings.node.nodeStrings.`utf-8`
-      - typings.node.nodeStrings.utf16le
-      - typings.node.nodeStrings.ucs2
-      - typings.node.nodeStrings.`ucs-2`
-      - typings.node.nodeStrings.base64
-      - typings.node.nodeStrings.base64url
-      - typings.node.nodeStrings.latin1
-      - typings.node.nodeStrings.binary
-      - typings.node.nodeStrings.hex
-    */
-    trait BufferEncoding
-      extends StObject
-         with _EncodingOption
-         with _WriteFileOptions
     object BufferEncoding {
       
-      inline def ascii: typings.node.nodeStrings.ascii = "ascii".asInstanceOf[typings.node.nodeStrings.ascii]
+      inline def ascii: "ascii" = "ascii".asInstanceOf["ascii"]
       
-      inline def base64: typings.node.nodeStrings.base64 = "base64".asInstanceOf[typings.node.nodeStrings.base64]
+      inline def base64: "base64" = "base64".asInstanceOf["base64"]
       
-      inline def base64url: typings.node.nodeStrings.base64url = "base64url".asInstanceOf[typings.node.nodeStrings.base64url]
+      inline def base64url: "base64url" = "base64url".asInstanceOf["base64url"]
       
-      inline def binary: typings.node.nodeStrings.binary = "binary".asInstanceOf[typings.node.nodeStrings.binary]
+      inline def binary: "binary" = "binary".asInstanceOf["binary"]
       
-      inline def hex: typings.node.nodeStrings.hex = "hex".asInstanceOf[typings.node.nodeStrings.hex]
+      inline def hex: "hex" = "hex".asInstanceOf["hex"]
       
-      inline def latin1: typings.node.nodeStrings.latin1 = "latin1".asInstanceOf[typings.node.nodeStrings.latin1]
+      inline def latin1: "latin1" = "latin1".asInstanceOf["latin1"]
       
-      inline def `ucs-2`: typings.node.nodeStrings.`ucs-2` = "ucs-2".asInstanceOf[typings.node.nodeStrings.`ucs-2`]
+      inline def `ucs-2`: "ucs-2" = "ucs-2".asInstanceOf["ucs-2"]
       
-      inline def ucs2: typings.node.nodeStrings.ucs2 = "ucs2".asInstanceOf[typings.node.nodeStrings.ucs2]
+      inline def ucs2: "ucs2" = "ucs2".asInstanceOf["ucs2"]
       
-      inline def `utf-8`: typings.node.nodeStrings.`utf-8` = "utf-8".asInstanceOf[typings.node.nodeStrings.`utf-8`]
+      inline def `utf-8`: "utf-8" = "utf-8".asInstanceOf["utf-8"]
       
-      inline def utf16le: typings.node.nodeStrings.utf16le = "utf16le".asInstanceOf[typings.node.nodeStrings.utf16le]
+      inline def utf16le: "utf16le" = "utf16le".asInstanceOf["utf16le"]
       
-      inline def utf8: typings.node.nodeStrings.utf8 = "utf8".asInstanceOf[typings.node.nodeStrings.utf8]
+      inline def utf8: "utf8" = "utf8".asInstanceOf["utf8"]
     }
+    // Buffer class
+    type BufferEncoding = "ascii" | "utf8" | "utf-8" | "utf16le" | "ucs2" | "ucs-2" | "base64" | "base64url" | "latin1" | "binary" | "hex"
     
     type WithImplicitCoercion[T] = T | ValueOf[T]
   }
@@ -2482,29 +2457,21 @@ object bufferMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.node.nodeStrings.ascii
-    - typings.node.nodeStrings.utf8
-    - typings.node.nodeStrings.utf16le
-    - typings.node.nodeStrings.ucs2
-    - typings.node.nodeStrings.latin1
-    - typings.node.nodeStrings.binary
-  */
-  trait TranscodeEncoding extends StObject
   object TranscodeEncoding {
     
-    inline def ascii: typings.node.nodeStrings.ascii = "ascii".asInstanceOf[typings.node.nodeStrings.ascii]
+    inline def ascii: "ascii" = "ascii".asInstanceOf["ascii"]
     
-    inline def binary: typings.node.nodeStrings.binary = "binary".asInstanceOf[typings.node.nodeStrings.binary]
+    inline def binary: "binary" = "binary".asInstanceOf["binary"]
     
-    inline def latin1: typings.node.nodeStrings.latin1 = "latin1".asInstanceOf[typings.node.nodeStrings.latin1]
+    inline def latin1: "latin1" = "latin1".asInstanceOf["latin1"]
     
-    inline def ucs2: typings.node.nodeStrings.ucs2 = "ucs2".asInstanceOf[typings.node.nodeStrings.ucs2]
+    inline def ucs2: "ucs2" = "ucs2".asInstanceOf["ucs2"]
     
-    inline def utf16le: typings.node.nodeStrings.utf16le = "utf16le".asInstanceOf[typings.node.nodeStrings.utf16le]
+    inline def utf16le: "utf16le" = "utf16le".asInstanceOf["utf16le"]
     
-    inline def utf8: typings.node.nodeStrings.utf8 = "utf8".asInstanceOf[typings.node.nodeStrings.utf8]
+    inline def utf8: "utf8" = "utf8".asInstanceOf["utf8"]
   }
+  type TranscodeEncoding = "ascii" | "utf8" | "utf16le" | "ucs2" | "latin1" | "binary"
   
   // This conditional type will be the existing global Blob in a browser, or
   // the copy below in a Node environment.

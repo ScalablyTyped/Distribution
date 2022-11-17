@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.VariableDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `68` extends StObject {
   
-  var `type`: VariableDeclaration
+  var `type`: "VariableDeclaration"
 }
 object `68` {
   
@@ -19,6 +18,6 @@ object `68` {
   
   extension [Self <: `68`](x: Self) {
     
-    inline def setType(value: VariableDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "VariableDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

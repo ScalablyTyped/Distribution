@@ -1,15 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.FunctionTypeParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FunctionTypeParam_
   extends StObject
-     with BaseNode
-     with Flow
-     with Node {
+     with BaseNode {
   
   var name: js.UndefOr[Identifier_ | Null] = js.undefined
   
@@ -18,7 +15,7 @@ trait FunctionTypeParam_
   var typeAnnotation: FlowType
   
   @JSName("type")
-  var type_FunctionTypeParam_ : FunctionTypeParam
+  var type_FunctionTypeParam_ : "FunctionTypeParam"
 }
 object FunctionTypeParam_ {
   
@@ -42,7 +39,7 @@ object FunctionTypeParam_ {
     
     inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    inline def setType(value: FunctionTypeParam): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "FunctionTypeParam"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: FlowType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }

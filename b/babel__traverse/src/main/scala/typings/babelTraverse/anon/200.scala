@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.DoWhileStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `200` extends StObject {
   
-  var `type`: DoWhileStatement
+  var `type`: "DoWhileStatement"
 }
 object `200` {
   
@@ -19,6 +18,6 @@ object `200` {
   
   extension [Self <: `200`](x: Self) {
     
-    inline def setType(value: DoWhileStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "DoWhileStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

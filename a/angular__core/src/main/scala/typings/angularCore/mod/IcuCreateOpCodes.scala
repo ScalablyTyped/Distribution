@@ -56,5 +56,5 @@ trait IcuCreateOpCodes
      with Array[Double | String | ELEMENT_MARKER | ICU_MARKER | Null]
      with I18nDebug {
   
-  var __brand__ : typings.angularCore.angularCoreStrings.I18nCreateOpCodes = js.native
+  var __brand__ : "I18nCreateOpCodes" = js.native
 }

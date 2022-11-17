@@ -1,19 +1,16 @@
 package typings.antd.anon
 
-import typings.antd.antdInts.`-1`
-import typings.antd.antdStrings.ltr
-import typings.antd.antdStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DropLevelOffset extends StObject {
   
-  var direction: ltr | rtl
+  var direction: "ltr" | "rtl"
   
   var dropLevelOffset: Double
   
-  var dropPosition: `-1` | typings.antd.antdInts.`0` | typings.antd.antdInts.`1`
+  var dropPosition: -1 | 0 | 1
   
   var indent: Double
   
@@ -22,9 +19,9 @@ trait DropLevelOffset extends StObject {
 object DropLevelOffset {
   
   inline def apply(
-    direction: ltr | rtl,
+    direction: "ltr" | "rtl",
     dropLevelOffset: Double,
-    dropPosition: `-1` | typings.antd.antdInts.`0` | typings.antd.antdInts.`1`,
+    dropPosition: -1 | 0 | 1,
     indent: Double,
     prefixCls: String
   ): DropLevelOffset = {
@@ -34,11 +31,11 @@ object DropLevelOffset {
   
   extension [Self <: DropLevelOffset](x: Self) {
     
-    inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDropLevelOffset(value: Double): Self = StObject.set(x, "dropLevelOffset", value.asInstanceOf[js.Any])
     
-    inline def setDropPosition(value: `-1` | typings.antd.antdInts.`0` | typings.antd.antdInts.`1`): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
+    inline def setDropPosition(value: -1 | 0 | 1): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
     
     inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     

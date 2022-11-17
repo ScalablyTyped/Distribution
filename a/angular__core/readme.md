@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__core
 
-Typings are for version 14.2.10
+Typings are for version 15.0.0
 
 ## Library description:
 Angular - the core framework
@@ -12,7 +12,7 @@ Angular - the core framework
 | Keywords           | - |
 | # releases         | 220 |
 | # dependents       | 0.0 |
-| # downloads        | 1.2492681333333334E7 |
+| # downloads        | 1.251509E7 |
 | # stars            | ? |
 
 ## Links

@@ -1,17 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.ConditionalExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ConditionalExpression_
+trait ConditionalExpression_
   extends StObject
-     with BaseNode
-     with Conditional
-     with Expression
-     with Standardized {
+     with BaseNode {
   
   var alternate: Expression
   
@@ -20,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var test: Expression
   
   @JSName("type")
-  var type_ConditionalExpression_ : ConditionalExpression
+  var type_ConditionalExpression_ : "ConditionalExpression"
 }
 object ConditionalExpression_ {
   
@@ -38,6 +33,6 @@ object ConditionalExpression_ {
     
     inline def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ConditionalExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ConditionalExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

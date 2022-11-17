@@ -1,25 +1,19 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.DeclareFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait DeclareFunction_
+trait DeclareFunction_
   extends StObject
-     with BaseNode
-     with Declaration
-     with Flow
-     with FlowDeclaration
-     with Statement {
+     with BaseNode {
   
   var id: Identifier_
   
   var predicate: DeclaredPredicate_ | Null
   
   @JSName("type")
-  var type_DeclareFunction_ : DeclareFunction
+  var type_DeclareFunction_ : "DeclareFunction"
 }
 object DeclareFunction_ {
   
@@ -37,6 +31,6 @@ object DeclareFunction_ {
     
     inline def setPredicateNull: Self = StObject.set(x, "predicate", null)
     
-    inline def setType(value: DeclareFunction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "DeclareFunction"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

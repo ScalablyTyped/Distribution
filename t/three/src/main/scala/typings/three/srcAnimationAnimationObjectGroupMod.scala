@@ -1,7 +1,6 @@
 package typings.three
 
 import typings.three.anon.BindingsPerObject
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object srcAnimationAnimationObjectGroupMod {
     
     def add(args: Any*): Unit = js.native
     
-    val isAnimationObjectGroup: `true` = js.native
+    val isAnimationObjectGroup: true = js.native
     
     def remove(args: Any*): Unit = js.native
     

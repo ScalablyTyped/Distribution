@@ -1,71 +1,70 @@
 package typings.chartJs.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.typesBasicMod.AnyObject
-import typings.chartJs.typesElementMod.Element
+import typings.chartJs.anon.Circumference
+import typings.chartJs.distChunksHelpersDotcoreMod.D_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DoughnutController extends DatasetController[
-      ChartType, 
-      Element[AnyObject, AnyObject], 
-      Element[AnyObject, AnyObject], 
-      ParsedDataType[ChartType]
-    ] {
+trait DoughnutController extends D_ {
   
-  def calculateCircumference(value: Double): Double = js.native
+  /**
+    * @private
+    */
+  /* private */ var _circumference: Any = js.native
+  
+  /**
+    * @private
+    */
+  /* private */ var _getCircumference: Any = js.native
+  
+  /**
+    * @private
+    */
+  /* private */ var _getRingWeight: Any = js.native
+  
+  /**
+    * Get radius length offset of the dataset in relation to the visible datasets weights. This allows determining the inner and outer radius correctly
+    * @private
+    */
+  /* private */ var _getRingWeightOffset: Any = js.native
+  
+  /**
+    * @private
+    */
+  /* private */ var _getRotation: Any = js.native
+  
+  /**
+    * Get the maximal rotation & circumference extents
+    * across all visible datasets.
+    */
+  def _getRotationExtents(): Circumference = js.native
+  
+  /**
+    * Returns the sum of all visible data set weights.
+    * @private
+    */
+  /* private */ var _getVisibleDatasetWeightTotal: Any = js.native
+  
+  def calculateCircumference(value: Any): Double = js.native
   
   def calculateTotal(): Double = js.native
   
-  val innerRadius: Double = js.native
+  def getMaxBorderWidth(arcs: Any): Double = js.native
   
-  val offsetX: Double = js.native
+  def getMaxOffset(arcs: Any): Double = js.native
   
-  val offsetY: Double = js.native
+  var innerRadius: Double = js.native
   
-  val outerRadius: Double = js.native
-}
-/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.DoughnutController, new (chart : chart.js.chart.js.Chart<chart.js.chart.js.ChartType, chart.js.chart.js.DefaultDataPoint<chart.js.chart.js.ChartType>, unknown>, datasetIndex : number): chart.js.chart.js.DoughnutController} */
-object DoughnutController {
+  var offsetX: Double = js.native
   
-  @JSImport("chart.js", "DoughnutController")
-  @js.native
-  val ^ : js.Any = js.native
+  var offsetY: Double = js.native
   
-  @JSImport("chart.js", "DoughnutController.afterRegister")
-  @js.native
-  def afterRegister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def afterRegister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterRegister")(x.asInstanceOf[js.Any])
+  var outerRadius: Double = js.native
   
-  @JSImport("chart.js", "DoughnutController.afterUnregister")
-  @js.native
-  def afterUnregister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def afterUnregister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterUnregister")(x.asInstanceOf[js.Any])
-  
-  @JSImport("chart.js", "DoughnutController.beforeRegister")
-  @js.native
-  def beforeRegister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def beforeRegister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeRegister")(x.asInstanceOf[js.Any])
-  
-  @JSImport("chart.js", "DoughnutController.beforeUnregister")
-  @js.native
-  def beforeUnregister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def beforeUnregister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeUnregister")(x.asInstanceOf[js.Any])
-  
-  @JSImport("chart.js", "DoughnutController.defaultRoutes")
-  @js.native
-  def defaultRoutes: js.UndefOr[StringDictionary[String]] = js.native
-  inline def defaultRoutes_=(x: js.UndefOr[StringDictionary[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultRoutes")(x.asInstanceOf[js.Any])
-  
-  @JSImport("chart.js", "DoughnutController.defaults")
-  @js.native
-  def defaults: js.UndefOr[AnyObject] = js.native
-  inline def defaults_=(x: js.UndefOr[AnyObject]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
-  
-  @JSImport("chart.js", "DoughnutController.id")
-  @js.native
-  def id: String = js.native
-  inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  /**
+    * Override data parsing, since we are not using scales
+    */
+  def parse(start: Any, count: Any): scala.Unit = js.native
 }

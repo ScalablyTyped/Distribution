@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.ExistsTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `119` extends StObject {
   
-  var `type`: ExistsTypeAnnotation
+  var `type`: "ExistsTypeAnnotation"
 }
 object `119` {
   
@@ -19,6 +18,6 @@ object `119` {
   
   extension [Self <: `119`](x: Self) {
     
-    inline def setType(value: ExistsTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ExistsTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,5 @@
 package typings.angularRouter.mod
 
-import typings.angularRouter.angularRouterStrings.always
-import typings.angularRouter.angularRouterStrings.computed
-import typings.angularRouter.angularRouterStrings.deferred
-import typings.angularRouter.angularRouterStrings.eager
-import typings.angularRouter.angularRouterStrings.emptyOnly
-import typings.angularRouter.angularRouterStrings.ignore
-import typings.angularRouter.angularRouterStrings.reload
-import typings.angularRouter.angularRouterStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +27,7 @@ trait RouterConfigOptions extends StObject {
     *
     * The default value is `replace` when not set.
     */
-  var canceledNavigationResolution: js.UndefOr[replace | computed] = js.undefined
+  var canceledNavigationResolution: js.UndefOr["replace" | "computed"] = js.undefined
   
   /**
     * Define what the router should do if it receives a navigation request to the current URL.
@@ -44,7 +36,7 @@ trait RouterConfigOptions extends StObject {
     * Use this option to configure the behavior when navigating to the
     * current URL. Default is 'ignore'.
     */
-  var onSameUrlNavigation: js.UndefOr[reload | ignore] = js.undefined
+  var onSameUrlNavigation: js.UndefOr["reload" | "ignore"] = js.undefined
   
   /**
     * Defines how the router merges parameters, data, and resolved data from parent to child
@@ -60,7 +52,7 @@ trait RouterConfigOptions extends StObject {
     * `a;foo=bar/b`.
     *
     */
-  var paramsInheritanceStrategy: js.UndefOr[emptyOnly | always] = js.undefined
+  var paramsInheritanceStrategy: js.UndefOr["emptyOnly" | "always"] = js.undefined
   
   /**
     * Defines when the router updates the browser URL. By default ('deferred'),
@@ -69,7 +61,7 @@ trait RouterConfigOptions extends StObject {
     * Updating the URL early allows you to handle a failure of navigation by
     * showing an error message with the URL that failed.
     */
-  var urlUpdateStrategy: js.UndefOr[deferred | eager] = js.undefined
+  var urlUpdateStrategy: js.UndefOr["deferred" | "eager"] = js.undefined
 }
 object RouterConfigOptions {
   
@@ -80,19 +72,19 @@ object RouterConfigOptions {
   
   extension [Self <: RouterConfigOptions](x: Self) {
     
-    inline def setCanceledNavigationResolution(value: replace | computed): Self = StObject.set(x, "canceledNavigationResolution", value.asInstanceOf[js.Any])
+    inline def setCanceledNavigationResolution(value: "replace" | "computed"): Self = StObject.set(x, "canceledNavigationResolution", value.asInstanceOf[js.Any])
     
     inline def setCanceledNavigationResolutionUndefined: Self = StObject.set(x, "canceledNavigationResolution", js.undefined)
     
-    inline def setOnSameUrlNavigation(value: reload | ignore): Self = StObject.set(x, "onSameUrlNavigation", value.asInstanceOf[js.Any])
+    inline def setOnSameUrlNavigation(value: "reload" | "ignore"): Self = StObject.set(x, "onSameUrlNavigation", value.asInstanceOf[js.Any])
     
     inline def setOnSameUrlNavigationUndefined: Self = StObject.set(x, "onSameUrlNavigation", js.undefined)
     
-    inline def setParamsInheritanceStrategy(value: emptyOnly | always): Self = StObject.set(x, "paramsInheritanceStrategy", value.asInstanceOf[js.Any])
+    inline def setParamsInheritanceStrategy(value: "emptyOnly" | "always"): Self = StObject.set(x, "paramsInheritanceStrategy", value.asInstanceOf[js.Any])
     
     inline def setParamsInheritanceStrategyUndefined: Self = StObject.set(x, "paramsInheritanceStrategy", js.undefined)
     
-    inline def setUrlUpdateStrategy(value: deferred | eager): Self = StObject.set(x, "urlUpdateStrategy", value.asInstanceOf[js.Any])
+    inline def setUrlUpdateStrategy(value: "deferred" | "eager"): Self = StObject.set(x, "urlUpdateStrategy", value.asInstanceOf[js.Any])
     
     inline def setUrlUpdateStrategyUndefined: Self = StObject.set(x, "urlUpdateStrategy", js.undefined)
   }

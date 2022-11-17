@@ -8,7 +8,6 @@ import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandCollectio
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
 import typings.semanticUiReact.distCommonjsViewsItemItemMod.ItemProps
-import typings.semanticUiReact.semanticUiReactStrings.very
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +54,7 @@ object distCommonjsViewsItemItemGroupMod extends Shortcut {
     var link: js.UndefOr[Boolean] = js.undefined
     
     /** A group of items can relax its padding to provide more negative space. */
-    var relaxed: js.UndefOr[Boolean | very] = js.undefined
+    var relaxed: js.UndefOr[Boolean | "very"] = js.undefined
     
     /** Prevent items from stacking on mobile. */
     var unstackable: js.UndefOr[Boolean] = js.undefined
@@ -99,7 +98,7 @@ object distCommonjsViewsItemItemGroupMod extends Shortcut {
       
       inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      inline def setRelaxed(value: Boolean | very): Self = StObject.set(x, "relaxed", value.asInstanceOf[js.Any])
+      inline def setRelaxed(value: Boolean | "very"): Self = StObject.set(x, "relaxed", value.asInstanceOf[js.Any])
       
       inline def setRelaxedUndefined: Self = StObject.set(x, "relaxed", js.undefined)
       

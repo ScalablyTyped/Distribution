@@ -1,16 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSConditionalType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSConditionalType_
+trait TSConditionalType_
   extends StObject
-     with BaseNode
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   var checkType: TSType
   
@@ -21,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var trueType: TSType
   
   @JSName("type")
-  var type_TSConditionalType_ : TSConditionalType
+  var type_TSConditionalType_ : "TSConditionalType"
 }
 object TSConditionalType_ {
   
@@ -41,6 +37,6 @@ object TSConditionalType_ {
     
     inline def setTrueType(value: TSType): Self = StObject.set(x, "trueType", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSConditionalType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSConditionalType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

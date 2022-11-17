@@ -2,7 +2,6 @@ package typings.three
 
 import typings.three.srcRenderersWebGLRenderTargetMod.WebGLRenderTarget
 import typings.three.srcTexturesData3DTextureMod.Data3DTexture
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object srcRenderersWebGL3DRenderTargetMod {
     def this(width: Unit, height: Double, depth: Double) = this()
     def this(width: Unit, height: Unit, depth: Double) = this()
     
-    val isWebGL3DRenderTarget: `true` = js.native
+    val isWebGL3DRenderTarget: true = js.native
     
     /**
       * The texture property is overwritten with an instance of {@link Data3DTexture}.

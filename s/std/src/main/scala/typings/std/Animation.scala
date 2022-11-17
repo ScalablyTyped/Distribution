@@ -1,8 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.cancel
-import typings.std.stdStrings.finish
-import typings.std.stdStrings.remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,52 +9,61 @@ trait Animation
   extends StObject
      with EventTarget {
   
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_finish")
+  def addEventListener(
+    `type`: "finish",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any]
+  ): Unit = js.native
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_cancel(
-    `type`: cancel,
+  @scala.annotation.targetName("addEventListener_cancel")
+  def addEventListener(
+    `type`: "cancel",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_cancel(
-    `type`: cancel,
+  @scala.annotation.targetName("addEventListener_remove")
+  def addEventListener(`type`: "remove", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_finish")
+  def addEventListener(
+    `type`: "finish",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_cancel(
-    `type`: cancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_finish(
-    `type`: finish,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_finish(
-    `type`: finish,
+  @scala.annotation.targetName("addEventListener_cancel")
+  def addEventListener(
+    `type`: "cancel",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_finish(
-    `type`: finish,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_remove(`type`: remove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_remove(
-    `type`: remove,
+  @scala.annotation.targetName("addEventListener_remove")
+  def addEventListener(
+    `type`: "remove",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_remove(
-    `type`: remove,
+  @scala.annotation.targetName("addEventListener_cancel")
+  def addEventListener(
+    `type`: "cancel",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_finish")
+  def addEventListener(
+    `type`: "finish",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_remove")
+  def addEventListener(
+    `type`: "remove",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -113,52 +119,61 @@ trait Animation
   /* standard dom */
   val ready: js.Promise[Animation] = js.native
   
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_remove")
+  def removeEventListener(`type`: "remove", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_finish")
+  def removeEventListener(
+    `type`: "finish",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any]
+  ): Unit = js.native
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_cancel(
-    `type`: cancel,
+  @scala.annotation.targetName("removeEventListener_cancel")
+  def removeEventListener(
+    `type`: "cancel",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_cancel(
-    `type`: cancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_cancel(
-    `type`: cancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_finish(
-    `type`: finish,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_finish(
-    `type`: finish,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_finish(
-    `type`: finish,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_remove(`type`: remove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_remove(
-    `type`: remove,
+  @scala.annotation.targetName("removeEventListener_remove")
+  def removeEventListener(
+    `type`: "remove",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_remove(
-    `type`: remove,
+  @scala.annotation.targetName("removeEventListener_finish")
+  def removeEventListener(
+    `type`: "finish",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_cancel")
+  def removeEventListener(
+    `type`: "cancel",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_finish")
+  def removeEventListener(
+    `type`: "finish",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_cancel")
+  def removeEventListener(
+    `type`: "cancel",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationPlaybackEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_remove")
+  def removeEventListener(
+    `type`: "remove",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

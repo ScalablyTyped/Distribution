@@ -3,7 +3,6 @@ package typings.angularForms.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularCore.mod.InjectionToken
 import typings.angularCore.mod.Version
-import typings.angularForms.angularFormsStrings.Dot
 import typings.angularForms.mod.^
 import typings.rxjs.mod.Observable_
 import typings.std.Partial
@@ -31,6 +30,14 @@ type UntypedFormGroup = FormGroup[Any]
 
 inline def VERSION: Version = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[Version]
 
+inline def isFormArray(control: Any): /* is @angular/forms.@angular/forms.FormArray<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormArray")(control.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/forms.@angular/forms.FormArray<any> */ Boolean]
+
+inline def isFormControl(control: Any): /* is @angular/forms.@angular/forms.FormControl<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormControl")(control.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/forms.@angular/forms.FormControl<any> */ Boolean]
+
+inline def isFormGroup(control: Any): /* is @angular/forms.@angular/forms.FormGroup<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormGroup")(control.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/forms.@angular/forms.FormGroup<any> */ Boolean]
+
+inline def isFormRecord(control: Any): /* is @angular/forms.@angular/forms.FormRecord<@angular/forms.@angular/forms.AbstractControl<any, any>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormRecord")(control.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/forms.@angular/forms.FormRecord<@angular/forms.@angular/forms.AbstractControl<any, any>> */ Boolean]
+
 type AsyncValidatorFn = js.Function1[
 /* control */ AbstractControl[Any, Any], 
 (js.Promise[ValidationErrors | Null]) | (Observable_[ValidationErrors | Null])]
@@ -51,6 +58,10 @@ T | FormControlState[T],
 js.UndefOr[ValidatorFn | js.Array[ValidatorFn]], 
 js.UndefOr[AsyncValidatorFn | js.Array[AsyncValidatorFn]]]
 
+type FormControlStatus = "VALID" | "INVALID" | "PENDING" | "DISABLED"
+
+type FormHooks = "change" | "blur" | "submit"
+
 /**
   * The compiler may not always be able to prove that the elements of the control config are a tuple
   * (i.e. occur in a fixed order). This slightly looser type is used for inference, to catch cases
@@ -60,6 +71,8 @@ js.UndefOr[AsyncValidatorFn | js.Array[AsyncValidatorFn]]]
   * compiler will infer this as an array, not as a tuple.
   */
 type PermissiveControlConfig[T] = js.Array[T | FormControlState[T] | ValidatorConfig]
+
+type SetDisabledStateOption = "whenDisabledForLegacyCode" | "always"
 
 type ValidationErrors = StringDictionary[Any]
 
@@ -102,7 +115,7 @@ StringDictionary[Any]]
   K extends string ? @angular/forms.@angular/forms.ɵGetProperty<T, @angular/forms.@angular/forms.ɵCoerceStrArrToNumArr<@angular/forms.@angular/forms.ɵTokenize<K, '.'>>> : @angular/forms.@angular/forms.ɵWriteable<K> extends std.Array<string | number> ? @angular/forms.@angular/forms.ɵNavigate<T, @angular/forms.@angular/forms.ɵWriteable<K>> : any
   }}}
   */
-type ɵGetProperty[T, K] = ɵNavigate[T, ɵWriteable[ɵCoerceStrArrToNumArr[ɵTokenize[K, Dot]]]]
+type ɵGetProperty[T, K] = ɵNavigate[T, ɵWriteable[ɵCoerceStrArrToNumArr[ɵTokenize[K, "."]]]]
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "InjectionToken")
 @js.native
-open class InjectionToken[T] protected ()
-  extends StObject
-     with _ProviderToken[T] {
+open class InjectionToken[T] protected () extends StObject {
   /**
     * @param _desc   Description for the token,
     *                used only for debugging purposes,

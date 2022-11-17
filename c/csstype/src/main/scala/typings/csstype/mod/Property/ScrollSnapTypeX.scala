@@ -4,35 +4,23 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.csstypeStrings.mandatory
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.proximity
-  - typings.csstype.csstypeStrings.`-moz-initial`
-  - typings.csstype.csstypeStrings.inherit
-  - typings.csstype.csstypeStrings.initial
-  - typings.csstype.csstypeStrings.revert
-  - typings.csstype.csstypeStrings.`revert-layer`
-  - typings.csstype.csstypeStrings.unset
-*/
-trait ScrollSnapTypeX extends StObject
 object ScrollSnapTypeX {
   
-  inline def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def mandatory: typings.csstype.csstypeStrings.mandatory = "mandatory".asInstanceOf[typings.csstype.csstypeStrings.mandatory]
+  inline def mandatory: "mandatory" = "mandatory".asInstanceOf["mandatory"]
   
-  inline def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
+  inline def none: "none" = "none".asInstanceOf["none"]
   
-  inline def proximity: typings.csstype.csstypeStrings.proximity = "proximity".asInstanceOf[typings.csstype.csstypeStrings.proximity]
+  inline def proximity: "proximity" = "proximity".asInstanceOf["proximity"]
   
-  inline def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def `revert-layer`: typings.csstype.csstypeStrings.`revert-layer` = "revert-layer".asInstanceOf[typings.csstype.csstypeStrings.`revert-layer`]
+  inline def `revert-layer`: "revert-layer" = "revert-layer".asInstanceOf["revert-layer"]
   
-  inline def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
 }

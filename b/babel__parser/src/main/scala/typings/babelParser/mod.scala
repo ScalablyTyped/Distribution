@@ -4,26 +4,6 @@ import typings.babelParser.anon.ClassFeatures
 import typings.babelParser.anon.Errors
 import typings.babelParser.anon.ParseResultFile
 import typings.babelParser.anon.Version
-import typings.babelParser.babelParserStrings.Numbersign
-import typings.babelParser.babelParserStrings.Percentsign
-import typings.babelParser.babelParserStrings.`@@`
-import typings.babelParser.babelParserStrings.`^^`
-import typings.babelParser.babelParserStrings.bar
-import typings.babelParser.babelParserStrings.decorators
-import typings.babelParser.babelParserStrings.estree
-import typings.babelParser.babelParserStrings.flow
-import typings.babelParser.babelParserStrings.fsharp
-import typings.babelParser.babelParserStrings.hack
-import typings.babelParser.babelParserStrings.hash
-import typings.babelParser.babelParserStrings.minimal
-import typings.babelParser.babelParserStrings.module
-import typings.babelParser.babelParserStrings.moduleAttributes
-import typings.babelParser.babelParserStrings.pipelineOperator
-import typings.babelParser.babelParserStrings.recordAndTuple
-import typings.babelParser.babelParserStrings.script
-import typings.babelParser.babelParserStrings.smart
-import typings.babelParser.babelParserStrings.typescript
-import typings.babelParser.babelParserStrings.unambiguous
 import typings.babelTypes.mod.Expression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -203,7 +183,7 @@ object mod {
       * of ES6 import or export statements.
       * Files with ES6 imports and exports are considered "module" and are otherwise "script".
       */
-    var sourceType: js.UndefOr[script | module | unambiguous] = js.undefined
+    var sourceType: js.UndefOr["script" | "module" | "unambiguous"] = js.undefined
     
     /**
       * By default, the parsed code is treated as if it starts from line 1, column 0.
@@ -285,7 +265,7 @@ object mod {
       
       inline def setSourceFilenameUndefined: Self = StObject.set(x, "sourceFilename", js.undefined)
       
-      inline def setSourceType(value: script | module | unambiguous): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: "script" | "module" | "unambiguous"): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
       inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
       
@@ -310,95 +290,51 @@ object mod {
   type ParserPlugin = PluginConfig
   
   type ParserPluginWithOptions = js.Tuple2[
-    decorators | estree | moduleAttributes | pipelineOperator | recordAndTuple | flow | typescript, 
+    "decorators" | "estree" | "moduleAttributes" | "pipelineOperator" | "recordAndTuple" | "flow" | "typescript", 
     ClassFeatures | DecoratorsPluginOptions | FlowPluginOptions | PipelineOperatorPluginOptions | RecordAndTuplePluginOptions | TypeScriptPluginOptions | Version
   ]
   
   trait PipelineOperatorPluginOptions extends StObject {
     
-    var proposal: minimal | fsharp | hack | smart
+    var proposal: "minimal" | "fsharp" | "hack" | "smart"
     
-    var topicToken: js.UndefOr[
-        Percentsign | Numbersign | `@@` | `^^` | typings.babelParser.babelParserStrings.^
-      ] = js.undefined
+    var topicToken: js.UndefOr["%" | "#" | "@@" | "^^" | "^"] = js.undefined
   }
   object PipelineOperatorPluginOptions {
     
-    inline def apply(proposal: minimal | fsharp | hack | smart): PipelineOperatorPluginOptions = {
+    inline def apply(proposal: "minimal" | "fsharp" | "hack" | "smart"): PipelineOperatorPluginOptions = {
       val __obj = js.Dynamic.literal(proposal = proposal.asInstanceOf[js.Any])
       __obj.asInstanceOf[PipelineOperatorPluginOptions]
     }
     
     extension [Self <: PipelineOperatorPluginOptions](x: Self) {
       
-      inline def setProposal(value: minimal | fsharp | hack | smart): Self = StObject.set(x, "proposal", value.asInstanceOf[js.Any])
+      inline def setProposal(value: "minimal" | "fsharp" | "hack" | "smart"): Self = StObject.set(x, "proposal", value.asInstanceOf[js.Any])
       
-      inline def setTopicToken(value: Percentsign | Numbersign | `@@` | `^^` | typings.babelParser.babelParserStrings.^): Self = StObject.set(x, "topicToken", value.asInstanceOf[js.Any])
+      inline def setTopicToken(value: "%" | "#" | "@@" | "^^" | "^"): Self = StObject.set(x, "topicToken", value.asInstanceOf[js.Any])
       
       inline def setTopicTokenUndefined: Self = StObject.set(x, "topicToken", js.undefined)
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.babelParser.babelParserStrings.asyncDoExpressions
-    - typings.babelParser.babelParserStrings.asyncGenerators
-    - typings.babelParser.babelParserStrings.bigInt
-    - typings.babelParser.babelParserStrings.classPrivateMethods
-    - typings.babelParser.babelParserStrings.classPrivateProperties
-    - typings.babelParser.babelParserStrings.classProperties
-    - typings.babelParser.babelParserStrings.classStaticBlock
-    - typings.babelParser.babelParserStrings.decimal
-    - typings.babelParser.babelParserStrings.`decorators-legacy`
-    - typings.babelParser.babelParserStrings.decoratorAutoAccessors
-    - typings.babelParser.babelParserStrings.destructuringPrivate
-    - typings.babelParser.babelParserStrings.doExpressions
-    - typings.babelParser.babelParserStrings.dynamicImport
-    - typings.babelParser.babelParserStrings.explicitResourceManagement
-    - typings.babelParser.babelParserStrings.exportDefaultFrom
-    - typings.babelParser.babelParserStrings.exportNamespaceFrom
-    - typings.babelParser.babelParserStrings.flow
-    - typings.babelParser.babelParserStrings.flowComments
-    - typings.babelParser.babelParserStrings.functionBind
-    - typings.babelParser.babelParserStrings.functionSent
-    - typings.babelParser.babelParserStrings.importMeta
-    - typings.babelParser.babelParserStrings.jsx
-    - typings.babelParser.babelParserStrings.logicalAssignment
-    - typings.babelParser.babelParserStrings.importAssertions
-    - typings.babelParser.babelParserStrings.importReflection
-    - typings.babelParser.babelParserStrings.moduleBlocks
-    - typings.babelParser.babelParserStrings.moduleStringNames
-    - typings.babelParser.babelParserStrings.nullishCoalescingOperator
-    - typings.babelParser.babelParserStrings.numericSeparator
-    - typings.babelParser.babelParserStrings.objectRestSpread
-    - typings.babelParser.babelParserStrings.optionalCatchBinding
-    - typings.babelParser.babelParserStrings.optionalChaining
-    - typings.babelParser.babelParserStrings.partialApplication
-    - typings.babelParser.babelParserStrings.placeholders
-    - typings.babelParser.babelParserStrings.privateIn
-    - typings.babelParser.babelParserStrings.regexpUnicodeSets
-    - typings.babelParser.babelParserStrings.throwExpressions
-    - typings.babelParser.babelParserStrings.topLevelAwait
-    - typings.babelParser.babelParserStrings.v8intrinsic
-    - / * import warning: importer.ImportType#apply Failed type conversion: @babel/parser.@babel/parser.ParserPluginWithOptions[0] * / js.Any
-  */
-  type Plugin = _Plugin | (/* import warning: importer.ImportType#apply Failed type conversion: @babel/parser.@babel/parser.ParserPluginWithOptions[0] */ js.Any)
+  type Plugin = "asyncDoExpressions" | "asyncGenerators" | "bigInt" | "classPrivateMethods" | "classPrivateProperties" | "classProperties" | "classStaticBlock" | "decimal" | "decorators-legacy" | "decoratorAutoAccessors" | "destructuringPrivate" | "doExpressions" | "dynamicImport" | "explicitResourceManagement" | "exportDefaultFrom" | "exportNamespaceFrom" | "flow" | "flowComments" | "functionBind" | "functionSent" | "importMeta" | "jsx" | "logicalAssignment" | "importAssertions" | "importReflection" | "moduleBlocks" | "moduleStringNames" | "nullishCoalescingOperator" | "numericSeparator" | "objectRestSpread" | "optionalCatchBinding" | "optionalChaining" | "partialApplication" | "placeholders" | "privateIn" | "regexpUnicodeSets" | "throwExpressions" | "topLevelAwait" | "v8intrinsic" | (/* import warning: importer.ImportType#apply Failed type conversion: @babel/parser.@babel/parser.ParserPluginWithOptions[0] */ js.Any)
   
   type PluginConfig = Plugin | ParserPluginWithOptions
   
   trait RecordAndTuplePluginOptions extends StObject {
     
-    var syntaxType: bar | hash
+    var syntaxType: "bar" | "hash"
   }
   object RecordAndTuplePluginOptions {
     
-    inline def apply(syntaxType: bar | hash): RecordAndTuplePluginOptions = {
+    inline def apply(syntaxType: "bar" | "hash"): RecordAndTuplePluginOptions = {
       val __obj = js.Dynamic.literal(syntaxType = syntaxType.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecordAndTuplePluginOptions]
     }
     
     extension [Self <: RecordAndTuplePluginOptions](x: Self) {
       
-      inline def setSyntaxType(value: bar | hash): Self = StObject.set(x, "syntaxType", value.asInstanceOf[js.Any])
+      inline def setSyntaxType(value: "bar" | "hash"): Self = StObject.set(x, "syntaxType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -426,6 +362,4 @@ object mod {
       inline def setDtsUndefined: Self = StObject.set(x, "dts", js.undefined)
     }
   }
-  
-  trait _Plugin extends StObject
 }

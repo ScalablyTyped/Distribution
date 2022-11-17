@@ -5,13 +5,6 @@ import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.nodeColonnetMod.Socket
 import typings.node.nodeColonstreamMod.Readable
 import typings.node.nodeColontlsMod.TLSSocket
-import typings.node.nodeStrings._empty
-import typings.node.nodeStrings.close
-import typings.node.nodeStrings.drain
-import typings.node.nodeStrings.error
-import typings.node.nodeStrings.finish
-import typings.node.nodeStrings.pipe
-import typings.node.nodeStrings.unpipe
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,20 +15,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Http2ServerResponse protected () extends StObject {
   def this(stream: ServerHttp2Stream) = this()
   
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_drain")
+  def addListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_finish")
+  def addListener(event: "finish", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_close")
+  def addListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_unpipe")
+  def addListener(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_error")
+  def addListener(event: "error", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_pipe")
+  def addListener(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   
   /**
     * This method adds HTTP trailing headers (a header but at the end of the
@@ -69,20 +68,26 @@ open class Http2ServerResponse protected () extends StObject {
     callback: js.Function2[/* err */ js.Error | Null, /* res */ this.type, Unit]
   ): Unit = js.native
   
+  @JSName("emit")
+  @scala.annotation.targetName("emit_close")
+  def emit(event: "close"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_drain")
+  def emit(event: "drain"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_finish")
+  def emit(event: "finish"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_error")
+  def emit(event: "error", error: js.Error): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_pipe")
+  def emit(event: "pipe", src: Readable): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_unpipe")
+  def emit(event: "unpipe", src: Readable): Boolean = js.native
   def emit(event: String, args: Any*): Boolean = js.native
   def emit(event: js.Symbol, args: Any*): Boolean = js.native
-  @JSName("emit")
-  def emit_close(event: close): Boolean = js.native
-  @JSName("emit")
-  def emit_drain(event: drain): Boolean = js.native
-  @JSName("emit")
-  def emit_error(event: error, error: js.Error): Boolean = js.native
-  @JSName("emit")
-  def emit_finish(event: finish): Boolean = js.native
-  @JSName("emit")
-  def emit_pipe(event: pipe, src: Readable): Boolean = js.native
-  @JSName("emit")
-  def emit_unpipe(event: unpipe, src: Readable): Boolean = js.native
   
   /**
     * This method signals to the server that all of the response headers and body
@@ -179,65 +184,89 @@ open class Http2ServerResponse protected () extends StObject {
     */
   val headersSent: Boolean = js.native
   
+  @JSName("on")
+  @scala.annotation.targetName("on_close")
+  def on(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_finish")
+  def on(event: "finish", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_drain")
+  def on(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_unpipe")
+  def on(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_error")
+  def on(event: "error", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_pipe")
+  def on(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("on")
-  def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
-  @JSName("on")
-  def on_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  @JSName("on")
-  def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   
+  @JSName("once")
+  @scala.annotation.targetName("once_drain")
+  def once(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_finish")
+  def once(event: "finish", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_close")
+  def once(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_error")
+  def once(event: "error", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_pipe")
+  def once(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_unpipe")
+  def once(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("once")
-  def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
-  @JSName("once")
-  def once_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  @JSName("once")
-  def once_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_finish")
+  def prependListener(event: "finish", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_close")
+  def prependListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_drain")
+  def prependListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_pipe")
+  def prependListener(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_unpipe")
+  def prependListener(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_error")
+  def prependListener(event: "error", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
   def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_drain")
+  def prependOnceListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_close")
+  def prependOnceListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_finish")
+  def prependOnceListener(event: "finish", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_pipe")
+  def prependOnceListener(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_error")
+  def prependOnceListener(event: "error", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_unpipe")
+  def prependOnceListener(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   
   /**
     * Removes a header that has been queued for implicit sending.
@@ -363,7 +392,7 @@ open class Http2ServerResponse protected () extends StObject {
     * an empty string.
     * @since v8.4.0
     */
-  var statusMessage: _empty = js.native
+  var statusMessage: "" = js.native
   
   /**
     * The `Http2Stream` object backing the response.

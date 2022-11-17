@@ -1,19 +1,19 @@
 package typings.chartJs.anon
 
-import typings.chartJs.mod.BarControllerDatasetOptions
-import typings.chartJs.mod.BubbleControllerDatasetOptions
-import typings.chartJs.mod.DoughnutControllerDatasetOptions
-import typings.chartJs.mod.FillerControllerDatasetOptions
-import typings.chartJs.mod.LineControllerDatasetOptions
-import typings.chartJs.mod.PieControllerDatasetOptions
-import typings.chartJs.mod.PolarAreaControllerDatasetOptions
-import typings.chartJs.mod.RadarControllerDatasetOptions
-import typings.chartJs.mod.ScatterControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.BarControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.BubbleControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.DoughnutControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.FillerControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.LineControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.PieControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.PolarAreaControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.RadarControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.ScatterControllerDatasetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ key in chart.js.chart.js.ChartType ]: chart.js.chart.js.ChartTypeRegistry[key]['datasetOptions']} */
+/* Inlined {[ key in chart.js.chart.js/dist/chunks/helpers.core.ChartType ]: chart.js.chart.js/dist/chunks/helpers.core.ChartTypeRegistry[key]['datasetOptions']} */
 trait keyinChartTypeChartTypeReBar extends StObject {
   
   var bar: BarControllerDatasetOptions

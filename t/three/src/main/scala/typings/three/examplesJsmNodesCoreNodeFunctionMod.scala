@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +39,7 @@ object examplesJsmNodesCoreNodeFunctionMod {
     
     var inputs: js.Array[typings.three.examplesJsmNodesCoreNodeFunctionInputMod.default] = js.native
     
-    var isNodeFunction: `true` = js.native
+    var isNodeFunction: true = js.native
     
     var name: String = js.native
     

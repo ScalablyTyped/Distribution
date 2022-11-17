@@ -4,7 +4,6 @@ import typings.moment.mod.unitOfTime.All
 import typings.moment.mod.unitOfTime.Diff
 import typings.moment.mod.unitOfTime.DurationConstructor
 import typings.moment.mod.unitOfTime.StartOf
-import typings.moment.momentStrings.`[]`
 import typings.std.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Moment
   extends StObject
-     with Object
-     with _LocaleSpecifier
-     with _MomentInput {
+     with Object {
   
   def add(): Moment = js.native
   def add(amount: Unit, unit: DurationInputArg2): Moment = js.native
@@ -101,9 +98,13 @@ trait Moment
   def isBefore(inp: MomentInput, granularity: StartOf): Boolean = js.native
   
   def isBetween(a: MomentInput, b: MomentInput): Boolean = js.native
-  def isBetween(a: MomentInput, b: MomentInput, granularity: Unit, inclusivity: (/* () */ String) | `[]`): Boolean = js.native
+  @JSName("isBetween")
+  @scala.annotation.targetName("isBetween____")
+  def isBetween(a: MomentInput, b: MomentInput, granularity: Unit, inclusivity: (/* () */ String) | "[]"): Boolean = js.native
   def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf): Boolean = js.native
-  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: (/* () */ String) | `[]`): Boolean = js.native
+  @JSName("isBetween")
+  @scala.annotation.targetName("isBetween____")
+  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: (/* () */ String) | "[]"): Boolean = js.native
   
   def isDST(): Boolean = js.native
   

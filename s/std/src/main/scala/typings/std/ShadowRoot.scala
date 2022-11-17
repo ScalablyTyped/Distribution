@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.slotchange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,16 +14,19 @@ trait ShadowRoot
   /** Throws a "NotSupportedError" DOMException if context object is a shadow root. */
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_slotchange(`type`: slotchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_slotchange")
+  def addEventListener(`type`: "slotchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_slotchange(
-    `type`: slotchange,
+  @scala.annotation.targetName("addEventListener_slotchange")
+  def addEventListener(
+    `type`: "slotchange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_slotchange(
-    `type`: slotchange,
+  @scala.annotation.targetName("addEventListener_slotchange")
+  def addEventListener(
+    `type`: "slotchange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -43,16 +45,19 @@ trait ShadowRoot
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_slotchange(`type`: slotchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_slotchange")
+  def removeEventListener(`type`: "slotchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_slotchange(
-    `type`: slotchange,
+  @scala.annotation.targetName("removeEventListener_slotchange")
+  def removeEventListener(
+    `type`: "slotchange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_slotchange(
-    `type`: slotchange,
+  @scala.annotation.targetName("removeEventListener_slotchange")
+  def removeEventListener(
+    `type`: "slotchange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

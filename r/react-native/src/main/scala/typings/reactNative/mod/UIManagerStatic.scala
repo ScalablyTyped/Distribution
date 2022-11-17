@@ -3,7 +3,6 @@ package typings.reactNative.mod
 import typings.react.mod.ReactElement
 import typings.reactNative.anon.Commands
 import typings.reactNative.anon.Format
-import typings.reactNative.reactNativeStrings.window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -137,13 +136,15 @@ trait UIManagerStatic extends StObject {
     * @platform ios
     */
   def takeSnapshot(): js.Promise[String] = js.native
+  @JSName("takeSnapshot")
+  @scala.annotation.targetName("takeSnapshot_window")
+  def takeSnapshot(view: "window"): js.Promise[String] = js.native
+  @JSName("takeSnapshot")
+  @scala.annotation.targetName("takeSnapshot_window")
+  def takeSnapshot(view: "window", options: Format): js.Promise[String] = js.native
   def takeSnapshot(view: Double): js.Promise[String] = js.native
   def takeSnapshot(view: Double, options: Format): js.Promise[String] = js.native
   def takeSnapshot(view: Unit, options: Format): js.Promise[String] = js.native
   def takeSnapshot(view: ReactElement): js.Promise[String] = js.native
   def takeSnapshot(view: ReactElement, options: Format): js.Promise[String] = js.native
-  @JSName("takeSnapshot")
-  def takeSnapshot_window(view: window): js.Promise[String] = js.native
-  @JSName("takeSnapshot")
-  def takeSnapshot_window(view: window, options: Format): js.Promise[String] = js.native
 }

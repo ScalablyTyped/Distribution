@@ -13,20 +13,6 @@ import typings.react.mod.RefObject
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsModulesSidebarSidebarPushableMod.SidebarPushableProps
 import typings.semanticUiReact.distCommonjsModulesSidebarSidebarPusherMod.SidebarPusherProps
-import typings.semanticUiReact.semanticUiReactStrings.`scale down`
-import typings.semanticUiReact.semanticUiReactStrings.`slide along`
-import typings.semanticUiReact.semanticUiReactStrings.`slide out`
-import typings.semanticUiReact.semanticUiReactStrings.`very thin`
-import typings.semanticUiReact.semanticUiReactStrings.`very wide`
-import typings.semanticUiReact.semanticUiReactStrings.bottom
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.overlay
-import typings.semanticUiReact.semanticUiReactStrings.push
-import typings.semanticUiReact.semanticUiReactStrings.right
-import typings.semanticUiReact.semanticUiReactStrings.thin
-import typings.semanticUiReact.semanticUiReactStrings.top
-import typings.semanticUiReact.semanticUiReactStrings.uncover
-import typings.semanticUiReact.semanticUiReactStrings.wide
 import typings.std.Document
 import typings.std.HTMLElement
 import typings.std.Window
@@ -72,7 +58,9 @@ object distCommonjsModulesSidebarSidebarMod extends Shortcut {
   trait StrictSidebarProps extends StObject {
     
     /** Animation style. */
-    var animation: js.UndefOr[overlay | push | (`scale down`) | uncover | (`slide out`) | (`slide along`)] = js.undefined
+    var animation: js.UndefOr[
+        "overlay" | "push" | ("scale down") | "uncover" | ("slide out") | ("slide along")
+      ] = js.undefined
     
     /** An element type to render as (string or function). */
     var as: js.UndefOr[Any] = js.undefined
@@ -87,7 +75,7 @@ object distCommonjsModulesSidebarSidebarMod extends Shortcut {
     var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Direction the sidebar should appear on. */
-    var direction: js.UndefOr[top | right | bottom | left] = js.undefined
+    var direction: js.UndefOr["top" | "right" | "bottom" | "left"] = js.undefined
     
     /**
       * Called after a sidebar has finished animating out.
@@ -136,7 +124,7 @@ object distCommonjsModulesSidebarSidebarMod extends Shortcut {
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Sidebar width. */
-    var width: js.UndefOr[(`very thin`) | thin | wide | (`very wide`)] = js.undefined
+    var width: js.UndefOr[("very thin") | "thin" | "wide" | ("very wide")] = js.undefined
   }
   object StrictSidebarProps {
     
@@ -147,7 +135,7 @@ object distCommonjsModulesSidebarSidebarMod extends Shortcut {
     
     extension [Self <: StrictSidebarProps](x: Self) {
       
-      inline def setAnimation(value: overlay | push | (`scale down`) | uncover | (`slide out`) | (`slide along`)): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: "overlay" | "push" | ("scale down") | "uncover" | ("slide out") | ("slide along")): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
@@ -167,7 +155,7 @@ object distCommonjsModulesSidebarSidebarMod extends Shortcut {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setDirection(value: top | right | bottom | left): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "top" | "right" | "bottom" | "left"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -195,7 +183,7 @@ object distCommonjsModulesSidebarSidebarMod extends Shortcut {
       
       inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       
-      inline def setWidth(value: (`very thin`) | thin | wide | (`very wide`)): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: ("very thin") | "thin" | "wide" | ("very wide")): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }

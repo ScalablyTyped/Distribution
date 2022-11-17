@@ -1,8 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.confirm
-import typings.electron.electronStrings.confirmPin
-import typings.electron.electronStrings.providePin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +13,7 @@ trait BluetoothPairingHandlerHandlerDetails extends StObject {
   /**
     * The type of pairing prompt being requested. One of the following values:
     */
-  var pairingKind: confirm | confirmPin | providePin
+  var pairingKind: "confirm" | "confirmPin" | "providePin"
   
   /**
     * The pin value to verify if `pairingKind` is `confirmPin`.
@@ -25,7 +22,7 @@ trait BluetoothPairingHandlerHandlerDetails extends StObject {
 }
 object BluetoothPairingHandlerHandlerDetails {
   
-  inline def apply(deviceId: String, frame: WebFrameMain_, pairingKind: confirm | confirmPin | providePin): BluetoothPairingHandlerHandlerDetails = {
+  inline def apply(deviceId: String, frame: WebFrameMain_, pairingKind: "confirm" | "confirmPin" | "providePin"): BluetoothPairingHandlerHandlerDetails = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], pairingKind = pairingKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothPairingHandlerHandlerDetails]
   }
@@ -36,7 +33,7 @@ object BluetoothPairingHandlerHandlerDetails {
     
     inline def setFrame(value: WebFrameMain_): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    inline def setPairingKind(value: confirm | confirmPin | providePin): Self = StObject.set(x, "pairingKind", value.asInstanceOf[js.Any])
+    inline def setPairingKind(value: "confirm" | "confirmPin" | "providePin"): Self = StObject.set(x, "pairingKind", value.asInstanceOf[js.Any])
     
     inline def setPin(value: String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     

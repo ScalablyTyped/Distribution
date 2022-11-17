@@ -1,8 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngIf]`
-import typings.angularCommon.angularCommonStrings.binding
 import typings.angularCore.mod.TemplateRef
 import typings.angularCore.mod.ViewContainerRef
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
@@ -70,31 +67,33 @@ object NgIf {
     */
   @JSImport("@angular/common", "NgIf.ngTemplateGuard_ngIf")
   @js.native
-  def ngTemplateGuard_ngIf: binding = js.native
-  inline def ngTemplateGuard_ngIf_=(x: binding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTemplateGuard_ngIf")(x.asInstanceOf[js.Any])
+  def ngTemplateGuard_ngIf: "binding" = js.native
+  inline def ngTemplateGuard_ngIf_=(x: "binding"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTemplateGuard_ngIf")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/common", "NgIf.\u0275dir")
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     NgIf[Any], 
-    `[ngIf]`, 
+    "[ngIf]", 
     scala.Nothing, 
     typings.angularCommon.anon.NgIf, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       NgIf[Any], 
-      `[ngIf]`, 
+      "[ngIf]", 
       scala.Nothing, 
       typings.angularCommon.anon.NgIf, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      true, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

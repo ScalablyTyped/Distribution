@@ -12,8 +12,8 @@ JavaScript library for mobile-friendly interactive maps
 | Keywords           | gis, map |
 | # releases         | 9 |
 | # dependents       | 0.0 |
-| # downloads        | 2803200.3333333335 |
-| # stars            | 35590.0 |
+| # downloads        | 2604527.0 |
+| # stars            | 34900.0 |
 
 ## Links
 - [Homepage](https://leafletjs.com/)

@@ -1,16 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.EnumStringBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait EnumStringBody_
   extends StObject
-     with BaseNode
-     with EnumBody
-     with Flow
-     with Node {
+     with BaseNode {
   
   var explicitType: Boolean
   
@@ -19,7 +15,7 @@ trait EnumStringBody_
   var members: js.Array[EnumStringMember_ | EnumDefaultedMember_]
   
   @JSName("type")
-  var type_EnumStringBody_ : EnumStringBody
+  var type_EnumStringBody_ : "EnumStringBody"
 }
 object EnumStringBody_ {
   
@@ -43,6 +39,6 @@ object EnumStringBody_ {
     
     inline def setMembersVarargs(value: (EnumStringMember_ | EnumDefaultedMember_)*): Self = StObject.set(x, "members", js.Array(value*))
     
-    inline def setType(value: EnumStringBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "EnumStringBody"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

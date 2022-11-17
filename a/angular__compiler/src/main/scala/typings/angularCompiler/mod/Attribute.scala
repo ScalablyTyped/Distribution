@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "Attribute")
 @js.native
-open class Attribute protected ()
-  extends NodeWithI18n
-     with Node2 {
+open class Attribute protected () extends NodeWithI18n {
   def this(name: String, value: String, sourceSpan: ParseSourceSpan) = this()
   def this(name: String, value: String, sourceSpan: ParseSourceSpan, keySpan: ParseSourceSpan) = this()
   def this(

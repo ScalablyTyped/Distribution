@@ -13,14 +13,6 @@ import typings.semanticUiReact.distCommonjsElementsLabelLabelMod.LabelProps
 import typings.semanticUiReact.distCommonjsModulesDropdownDropdownItemMod.DropdownItemProps
 import typings.semanticUiReact.distCommonjsModulesDropdownDropdownMod.DropdownOnSearchChangeData
 import typings.semanticUiReact.distCommonjsModulesDropdownDropdownMod.DropdownProps
-import typings.semanticUiReact.semanticUiReactStrings.`bottom left`
-import typings.semanticUiReact.semanticUiReactStrings.`bottom right`
-import typings.semanticUiReact.semanticUiReactStrings.`top left`
-import typings.semanticUiReact.semanticUiReactStrings.`top right`
-import typings.semanticUiReact.semanticUiReactStrings.bottom
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.right
-import typings.semanticUiReact.semanticUiReactStrings.top
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
@@ -56,7 +48,7 @@ object distCommonjsCollectionsFormFormSelectMod extends Shortcut {
     var additionLabel: js.UndefOr[Double | String | ReactNode] = js.undefined
     
     /** Position of the `Add: ...` option in the dropdown list ('top' or 'bottom'). */
-    var additionPosition: js.UndefOr[top | bottom] = js.undefined
+    var additionPosition: js.UndefOr["top" | "bottom"] = js.undefined
     
     /**
       * Allow user additions to the list of options (boolean).
@@ -108,7 +100,7 @@ object distCommonjsCollectionsFormFormSelectMod extends Shortcut {
     var defaultValue: js.UndefOr[String | Double | Boolean | (js.Array[Double | String | Boolean])] = js.undefined
     
     /** A dropdown menu can open to the left or to the right. */
-    var direction: js.UndefOr[left | right] = js.undefined
+    var direction: js.UndefOr["left" | "right"] = js.undefined
     
     /** Individual fields may display an error state along with a message. */
     @JSName("error")
@@ -273,7 +265,7 @@ object distCommonjsCollectionsFormFormSelectMod extends Shortcut {
     
     /** A dropdown can be formatted so that its menu is pointing. */
     var pointing: js.UndefOr[
-        Boolean | left | right | top | (`top left`) | (`top right`) | bottom | (`bottom left`) | (`bottom right`)
+        Boolean | "left" | "right" | "top" | ("top left") | ("top right") | "bottom" | ("bottom left") | ("bottom right")
       ] = js.undefined
     
     /**
@@ -364,7 +356,7 @@ object distCommonjsCollectionsFormFormSelectMod extends Shortcut {
       
       inline def setAdditionLabelUndefined: Self = StObject.set(x, "additionLabel", js.undefined)
       
-      inline def setAdditionPosition(value: top | bottom): Self = StObject.set(x, "additionPosition", value.asInstanceOf[js.Any])
+      inline def setAdditionPosition(value: "top" | "bottom"): Self = StObject.set(x, "additionPosition", value.asInstanceOf[js.Any])
       
       inline def setAdditionPositionUndefined: Self = StObject.set(x, "additionPosition", js.undefined)
       
@@ -426,7 +418,7 @@ object distCommonjsCollectionsFormFormSelectMod extends Shortcut {
       
       inline def setDefaultValueVarargs(value: (Double | String | Boolean)*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
-      inline def setDirection(value: left | right): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "left" | "right"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -537,7 +529,7 @@ object distCommonjsCollectionsFormFormSelectMod extends Shortcut {
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
       inline def setPointing(
-        value: Boolean | left | right | top | (`top left`) | (`top right`) | bottom | (`bottom left`) | (`bottom right`)
+        value: Boolean | "left" | "right" | "top" | ("top left") | ("top right") | "bottom" | ("bottom left") | ("bottom right")
       ): Self = StObject.set(x, "pointing", value.asInstanceOf[js.Any])
       
       inline def setPointingUndefined: Self = StObject.set(x, "pointing", js.undefined)

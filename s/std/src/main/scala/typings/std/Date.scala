@@ -2,9 +2,6 @@ package typings.std
 
 import typings.std.Intl.DateTimeFormatOptions
 import typings.std.Intl.LocalesArgument
-import typings.std.stdStrings.default
-import typings.std.stdStrings.number
-import typings.std.stdStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -302,7 +299,7 @@ trait Date extends StObject {
     */
   /* standard es2015.symbol.wellknown */
   @JSName(js.Symbol.toPrimitive)
-  var toPrimitive: (js.Function1[default, java.lang.String]) & (js.Function1[string, java.lang.String]) & (js.Function1[number, Double]) & (js.Function1[/* hint */ java.lang.String, java.lang.String | Double]) = js.native
+  var toPrimitive: (js.Function1[/* hint */ "default", java.lang.String]) & (js.Function1[/* hint */ "string", java.lang.String]) & (js.Function1[/* hint */ "number", Double]) & (js.Function1[/* hint */ java.lang.String, java.lang.String | Double]) = js.native
   
   /** Returns a time as a string value. */
   /* standard es5 */

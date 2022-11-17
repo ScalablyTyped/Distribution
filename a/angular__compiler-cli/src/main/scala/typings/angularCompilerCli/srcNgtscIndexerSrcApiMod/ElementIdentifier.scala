@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ElementIdentifier
   extends StObject
-     with BaseElementOrTemplateIdentifier
-     with TopLevelIdentifier {
+     with BaseElementOrTemplateIdentifier {
   
   @JSName("kind")
   var kind_ElementIdentifier: Element

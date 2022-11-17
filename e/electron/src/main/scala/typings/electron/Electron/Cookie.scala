@@ -1,9 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.lax
-import typings.electron.electronStrings.no_restriction
-import typings.electron.electronStrings.strict
-import typings.electron.electronStrings.unspecified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,7 +44,7 @@ trait Cookie extends StObject {
     * The Same Site policy applied to this cookie.  Can be `unspecified`,
     * `no_restriction`, `lax` or `strict`.
     */
-  var sameSite: unspecified | no_restriction | lax | strict
+  var sameSite: "unspecified" | "no_restriction" | "lax" | "strict"
   
   /**
     * Whether the cookie is marked as secure.
@@ -68,7 +64,7 @@ trait Cookie extends StObject {
 }
 object Cookie {
   
-  inline def apply(name: String, sameSite: unspecified | no_restriction | lax | strict, value: String): Cookie = {
+  inline def apply(name: String, sameSite: "unspecified" | "no_restriction" | "lax" | "strict", value: String): Cookie = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sameSite = sameSite.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cookie]
   }
@@ -97,7 +93,7 @@ object Cookie {
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setSameSite(value: unspecified | no_restriction | lax | strict): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
+    inline def setSameSite(value: "unspecified" | "no_restriction" | "lax" | "strict"): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
     
     inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,5 @@
 package typings.antd
 
-import typings.antd.antdStrings.menu
-import typings.antd.antdStrings.tree
 import typings.antd.libTableHooksUseFilterMod.FilterState
 import typings.antd.libTableInterfaceMod.ColumnFilterItem
 import typings.antd.libTableInterfaceMod.ColumnType
@@ -38,7 +36,7 @@ object libTableHooksUseFilterFilterDropdownMod {
     
     var dropdownPrefixCls: String
     
-    var filterMode: js.UndefOr[menu | tree] = js.undefined
+    var filterMode: js.UndefOr["menu" | "tree"] = js.undefined
     
     var filterMultiple: Boolean
     
@@ -86,7 +84,7 @@ object libTableHooksUseFilterFilterDropdownMod {
       
       inline def setDropdownPrefixCls(value: String): Self = StObject.set(x, "dropdownPrefixCls", value.asInstanceOf[js.Any])
       
-      inline def setFilterMode(value: menu | tree): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
+      inline def setFilterMode(value: "menu" | "tree"): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
       
       inline def setFilterModeUndefined: Self = StObject.set(x, "filterMode", js.undefined)
       

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JobOutboundMessagePong
   extends StObject
-     with JobOutboundMessageBase
-     with JobOutboundMessage[Any] {
+     with JobOutboundMessageBase {
   
   /**
     * The ID that was passed in the `Ping` messages.

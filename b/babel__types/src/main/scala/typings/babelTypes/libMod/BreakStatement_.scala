@@ -1,23 +1,17 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.BreakStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BreakStatement_
   extends StObject
-     with BaseNode
-     with CompletionStatement
-     with Node
-     with Standardized
-     with Statement
-     with Terminatorless {
+     with BaseNode {
   
   var label: js.UndefOr[Identifier_ | Null] = js.undefined
   
   @JSName("type")
-  var type_BreakStatement_ : BreakStatement
+  var type_BreakStatement_ : "BreakStatement"
 }
 object BreakStatement_ {
   
@@ -35,6 +29,6 @@ object BreakStatement_ {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setType(value: BreakStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "BreakStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

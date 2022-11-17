@@ -243,12 +243,7 @@ object esInterfaceMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcTree.rcTreeStrings.ltr
-    - typings.rcTree.rcTreeStrings.rtl
-    - scala.Unit
-  */
-  type Direction = js.UndefOr[_Direction]
+  type Direction = js.UndefOr["ltr" | "rtl"]
   
   trait Entity extends StObject {
     
@@ -448,6 +443,4 @@ object esInterfaceMod {
     
     var selectHandle: js.UndefOr[HTMLSpanElement] = js.native
   }
-  
-  trait _Direction extends StObject
 }

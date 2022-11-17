@@ -1,7 +1,6 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.materialUiCoreStrings.table
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -23,49 +22,35 @@ object tableTableMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Table/Table", JSImport.Default)
   @js.native
-  val default: OverridableComponent[TableTypeMap[js.Object, table]] = js.native
+  val default: OverridableComponent[TableTypeMap[js.Object, "table"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.normal
-    - typings.materialUiCore.materialUiCoreStrings.checkbox
-    - typings.materialUiCore.materialUiCoreStrings.none
-    - typings.materialUiCore.materialUiCoreStrings.default
-  */
-  trait Padding extends StObject
   object Padding {
     
-    inline def default: typings.materialUiCore.materialUiCoreStrings.default = "default".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.default]
+    inline def default: "default" = "default".asInstanceOf["default"]
     
-    inline def checkbox: typings.materialUiCore.materialUiCoreStrings.checkbox = "checkbox".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.checkbox]
+    inline def checkbox: "checkbox" = "checkbox".asInstanceOf["checkbox"]
     
-    inline def none: typings.materialUiCore.materialUiCoreStrings.none = "none".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.none]
+    inline def none: "none" = "none".asInstanceOf["none"]
     
-    inline def normal: typings.materialUiCore.materialUiCoreStrings.normal = "normal".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.normal]
+    inline def normal: "normal" = "normal".asInstanceOf["normal"]
   }
+  type Padding = "normal" | "checkbox" | "none" | "default"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.small
-    - typings.materialUiCore.materialUiCoreStrings.medium
-  */
-  trait Size extends StObject
   object Size {
     
-    inline def medium: typings.materialUiCore.materialUiCoreStrings.medium = "medium".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.medium]
+    inline def medium: "medium" = "medium".asInstanceOf["medium"]
     
-    inline def small: typings.materialUiCore.materialUiCoreStrings.small = "small".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.small]
+    inline def small: "small" = "small".asInstanceOf["small"]
   }
+  type Size = "small" | "medium"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.stickyHeader
-  */
-  trait TableClassKey extends StObject
   object TableClassKey {
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def stickyHeader: typings.materialUiCore.materialUiCoreStrings.stickyHeader = "stickyHeader".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.stickyHeader]
+    inline def stickyHeader: "stickyHeader" = "stickyHeader".asInstanceOf["stickyHeader"]
   }
+  type TableClassKey = "root" | "stickyHeader"
   
   type TableProps[D /* <: ElementType[Any] */, P] = OverrideProps[TableTypeMap[P, D], D]
   
@@ -94,8 +79,8 @@ object tableTableMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[TableTypeMap[js.Object, table]]
+  type _To = OverridableComponent[TableTypeMap[js.Object, "table"]]
   
   /* This means you don't have to write `default`, but can instead just say `tableTableMod.foo` */
-  override def _to: OverridableComponent[TableTypeMap[js.Object, table]] = default
+  override def _to: OverridableComponent[TableTypeMap[js.Object, "table"]] = default
 }

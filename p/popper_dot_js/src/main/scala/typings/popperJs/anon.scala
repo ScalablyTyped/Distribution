@@ -7,10 +7,6 @@ import typings.popperJs.mod.Popper.ModifierFn
 import typings.popperJs.mod.Popper.Offset
 import typings.popperJs.mod.Popper.Padding
 import typings.popperJs.mod.Popper.Position
-import typings.popperJs.popperJsStrings.bottom
-import typings.popperJs.popperJsStrings.left
-import typings.popperJs.popperJsStrings.right
-import typings.popperJs.popperJsStrings.top
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -156,9 +152,9 @@ object anon {
     
     var order: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[bottom | top] = js.undefined
+    var x: js.UndefOr["bottom" | "top"] = js.undefined
     
-    var y: js.UndefOr[left | right] = js.undefined
+    var y: js.UndefOr["left" | "right"] = js.undefined
   }
   object BaseModifiergpuAccelerati {
     
@@ -185,11 +181,11 @@ object anon {
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setX(value: bottom | top): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: "bottom" | "top"): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
       inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      inline def setY(value: left | right): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: "left" | "right"): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
       inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }

@@ -3,15 +3,12 @@ package typings.node.anon
 import typings.node.AbortSignal
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.Mode
-import typings.node.fsMod._WriteFileOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined node.fs.ObjectEncodingOptions & node.node:events.Abortable & {  mode :node.fs.Mode | undefined,   flag :string | undefined} */
-trait ObjectEncodingOptionsAbor
-  extends StObject
-     with _WriteFileOptions {
+trait ObjectEncodingOptionsAbor extends StObject {
   
   var encoding: js.UndefOr[BufferEncoding | Null] = js.undefined
   

@@ -1,6 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.mouseWheel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ trait MouseWheelInputEvent
     * The type of the event, can be `mouseWheel`.
     */
   @JSName("type")
-  var type_MouseWheelInputEvent: mouseWheel
+  var type_MouseWheelInputEvent: "mouseWheel"
   
   var wheelTicksX: js.UndefOr[Double] = js.undefined
   
@@ -66,7 +65,7 @@ object MouseWheelInputEvent {
     
     inline def setHasPreciseScrollingDeltasUndefined: Self = StObject.set(x, "hasPreciseScrollingDeltas", js.undefined)
     
-    inline def setType(value: mouseWheel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "mouseWheel"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setWheelTicksX(value: Double): Self = StObject.set(x, "wheelTicksX", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,6 @@ import typings.remixRunRouter.anon.PartialLocation
 import typings.remixRunRouter.distHistoryMod.Path
 import typings.remixRunRouter.distHistoryMod.To
 import typings.remixRunRouter.distUtilsMod.^
-import typings.remixRunRouter.remixRunRouterStrings.Asterisk
 import typings.std.Record
 import typings.std.Response
 import typings.std.ResponseInit
@@ -28,6 +27,8 @@ inline def generatePath[Path /* <: String */](
   path: Path,
   params: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @remix-run/router.@remix-run/router/dist/utils.PathParam<Path> ]: string} */ js.Any
 ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+
+inline def getPathContributingMatches[T /* <: AgnosticRouteMatch[String, AgnosticRouteObject] */](matches: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathContributingMatches")(matches.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 
 inline def getToPathname(to: To): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToPathname")(to.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 
@@ -77,6 +78,16 @@ type ActionFunctionArgs = DataFunctionArgs
 
 type AgnosticDataRouteMatch = AgnosticRouteMatch[String, AgnosticDataRouteObject]
 
+type AgnosticDataRouteObject = AgnosticDataIndexRouteObject | AgnosticDataNonIndexRouteObject
+
+type AgnosticRouteObject = AgnosticIndexRouteObject | AgnosticNonIndexRouteObject
+
+type DataResult = SuccessResult | DeferredResult | RedirectResult | ErrorResult
+
+type FormEncType = "application/x-www-form-urlencoded" | "multipart/form-data"
+
+type FormMethod = "get" | "post" | "put" | "patch" | "delete"
+
 type JsonFunction = js.Function2[/* data */ Any, /* init */ js.UndefOr[Double | ResponseInit], Response]
 
 type LoaderFunction = js.Function1[/* args */ LoaderFunctionArgs, (js.Promise[Any | Response]) | Response | Any]
@@ -108,7 +119,7 @@ type ParamParseKey[Segment /* <: String */] = String
   Path extends '*' ? '*' : Path extends / * template literal string: ${inferRest}/ * * / string ? '*' | @remix-run/router.@remix-run/router/dist/utils._PathParam</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Rest * / any> : @remix-run/router.@remix-run/router/dist/utils._PathParam<Path>
   }}}
   */
-type PathParam[Path /* <: String */] = Asterisk
+type PathParam[Path /* <: String */] = "*"
 
 type RedirectFunction = js.Function2[/* url */ String, /* init */ js.UndefOr[Double | ResponseInit], Response]
 

@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.abort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,16 +16,19 @@ trait AbortSignal
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_abort")
+  def addEventListener(`type`: "abort", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_abort(
-    `type`: abort,
+  @scala.annotation.targetName("addEventListener_abort")
+  def addEventListener(
+    `type`: "abort",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_abort(
-    `type`: abort,
+  @scala.annotation.targetName("addEventListener_abort")
+  def addEventListener(
+    `type`: "abort",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -39,16 +41,19 @@ trait AbortSignal
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_abort")
+  def removeEventListener(`type`: "abort", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_abort(
-    `type`: abort,
+  @scala.annotation.targetName("removeEventListener_abort")
+  def removeEventListener(
+    `type`: "abort",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_abort(
-    `type`: abort,
+  @scala.annotation.targetName("removeEventListener_abort")
+  def removeEventListener(
+    `type`: "abort",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

@@ -1,15 +1,12 @@
 package typings.typescript.mod
 
-import typings.typescript.typescriptBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RenameInfoSuccess
-  extends StObject
-     with RenameInfo {
+trait RenameInfoSuccess extends StObject {
   
-  var canRename: `true`
+  var canRename: true
   
   var displayName: java.lang.String
   
@@ -42,7 +39,7 @@ object RenameInfoSuccess {
   
   extension [Self <: RenameInfoSuccess](x: Self) {
     
-    inline def setCanRename(value: `true`): Self = StObject.set(x, "canRename", value.asInstanceOf[js.Any])
+    inline def setCanRename(value: true): Self = StObject.set(x, "canRename", value.asInstanceOf[js.Any])
     
     inline def setDisplayName(value: java.lang.String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

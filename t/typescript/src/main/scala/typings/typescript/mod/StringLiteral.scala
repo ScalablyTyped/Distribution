@@ -8,14 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StringLiteral
   extends StObject
      with LiteralExpression
-     with Declaration
-     with AssertionKey
-     with JsonObjectExpression
-     with JsxAttributeValue
-     with LiteralToken
-     with ModuleName
-     with PropertyName
-     with StringLiteralLike {
+     with Declaration {
   
   @JSName("kind")
   val kind_StringLiteral: typings.typescript.mod.SyntaxKind.StringLiteral = js.native

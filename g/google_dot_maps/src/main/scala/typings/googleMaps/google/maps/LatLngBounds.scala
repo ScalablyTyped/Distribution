@@ -1,7 +1,5 @@
 package typings.googleMaps.google.maps
 
-import typings.googleMaps.google.maps.places.LocationRestriction
-import typings.googleMaps.google.maps.places._LocationBias
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * degrees longitudinal meridian.
   */
 @js.native
-trait LatLngBounds
-  extends StObject
-     with LocationRestriction
-     with _LocationBias {
+trait LatLngBounds extends StObject {
   
   /**
     * Returns <code>true</code> if the given lat/lng is in this bounds.

@@ -1,15 +1,12 @@
 package typings.rcFieldForm.esInterfaceMod
 
-import typings.rcFieldForm.rcFieldFormStrings.array
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<rc-field-form.rc-field-form/es/interface.AggregationRule, 'type'> */
-trait ArrayRule
-  extends StObject
-     with RuleObject {
+trait ArrayRule extends StObject {
   
   var defaultField: js.UndefOr[RuleObject] = js.undefined
   
@@ -29,7 +26,7 @@ trait ArrayRule
   
   var transform: js.UndefOr[js.Function1[/* value */ StoreValue, StoreValue]] = js.undefined
   
-  var `type`: array
+  var `type`: "array"
   
   var validateTrigger: js.UndefOr[String | js.Array[String]] = js.undefined
   
@@ -87,7 +84,7 @@ object ArrayRule {
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    inline def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "array"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValidateTrigger(value: String | js.Array[String]): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
     

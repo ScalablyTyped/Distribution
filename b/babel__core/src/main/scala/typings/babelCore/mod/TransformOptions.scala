@@ -1,17 +1,6 @@
 package typings.babelCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.babelCore.babelCoreStrings.`inline`
-import typings.babelCore.babelCoreStrings.`upward-optional`
-import typings.babelCore.babelCoreStrings.auto
-import typings.babelCore.babelCoreStrings.both
-import typings.babelCore.babelCoreStrings.enter
-import typings.babelCore.babelCoreStrings.exit
-import typings.babelCore.babelCoreStrings.module
-import typings.babelCore.babelCoreStrings.root
-import typings.babelCore.babelCoreStrings.script
-import typings.babelCore.babelCoreStrings.unambiguous
-import typings.babelCore.babelCoreStrings.upward
 import typings.babelGenerator.mod.GeneratorOptions
 import typings.babelParser.mod.ParserOptions
 import org.scalablytyped.runtime.StObject
@@ -118,7 +107,7 @@ trait TransformOptions extends StObject {
     *
     * Default: `"auto"`
     */
-  var compact: js.UndefOr[Boolean | auto | Null] = js.undefined
+  var compact: js.UndefOr[Boolean | "auto" | Null] = js.undefined
   
   /**
     * The config file to load Babel's config from. Defaults to searching for "babel.config.js" inside the "root" folder. `false` will disable searching for config files.
@@ -299,7 +288,7 @@ trait TransformOptions extends StObject {
     *
     * @see https://babeljs.io/docs/en/next/options#rootmode
     */
-  var rootMode: js.UndefOr[root | upward | `upward-optional`] = js.undefined
+  var rootMode: js.UndefOr["root" | "upward" | "upward-optional"] = js.undefined
   
   /**
     * An optional callback that controls whether a comment should be output or not. Called as `shouldPrintComment(commentContents)`. **NOTE**: This overrides the `comment` option when used
@@ -321,7 +310,7 @@ trait TransformOptions extends StObject {
     *
     * Default: `false`
     */
-  var sourceMaps: js.UndefOr[Boolean | `inline` | both | Null] = js.undefined
+  var sourceMaps: js.UndefOr[Boolean | "inline" | "both" | Null] = js.undefined
   
   /**
     * The root from which all sources are relative
@@ -336,7 +325,7 @@ trait TransformOptions extends StObject {
     *
     * Default: `("module")`
     */
-  var sourceType: js.UndefOr[script | module | unambiguous | Null] = js.undefined
+  var sourceType: js.UndefOr["script" | "module" | "unambiguous" | Null] = js.undefined
   
   /**
     * If all patterns fail to match, the current configuration object is considered inactive and is ignored during config processing.
@@ -350,7 +339,7 @@ trait TransformOptions extends StObject {
   var wrapPluginVisitorMethod: js.UndefOr[
     (js.Function3[
       /* pluginAlias */ String, 
-      /* visitorType */ enter | exit, 
+      /* visitorType */ "enter" | "exit", 
       /* callback */ js.Function2[
         /* path */ typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node], 
         /* state */ Any, 
@@ -447,7 +436,7 @@ object TransformOptions {
     
     inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    inline def setCompact(value: Boolean | auto): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+    inline def setCompact(value: Boolean | "auto"): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
     inline def setCompactNull: Self = StObject.set(x, "compact", null)
     
@@ -609,7 +598,7 @@ object TransformOptions {
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    inline def setRootMode(value: root | upward | `upward-optional`): Self = StObject.set(x, "rootMode", value.asInstanceOf[js.Any])
+    inline def setRootMode(value: "root" | "upward" | "upward-optional"): Self = StObject.set(x, "rootMode", value.asInstanceOf[js.Any])
     
     inline def setRootModeUndefined: Self = StObject.set(x, "rootMode", js.undefined)
     
@@ -629,7 +618,7 @@ object TransformOptions {
     
     inline def setSourceFileNameUndefined: Self = StObject.set(x, "sourceFileName", js.undefined)
     
-    inline def setSourceMaps(value: Boolean | `inline` | both): Self = StObject.set(x, "sourceMaps", value.asInstanceOf[js.Any])
+    inline def setSourceMaps(value: Boolean | "inline" | "both"): Self = StObject.set(x, "sourceMaps", value.asInstanceOf[js.Any])
     
     inline def setSourceMapsNull: Self = StObject.set(x, "sourceMaps", null)
     
@@ -641,7 +630,7 @@ object TransformOptions {
     
     inline def setSourceRootUndefined: Self = StObject.set(x, "sourceRoot", js.undefined)
     
-    inline def setSourceType(value: script | module | unambiguous): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: "script" | "module" | "unambiguous"): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     inline def setSourceTypeNull: Self = StObject.set(x, "sourceType", null)
     
@@ -656,7 +645,7 @@ object TransformOptions {
     inline def setTestVarargs(value: MatchPattern*): Self = StObject.set(x, "test", js.Array(value*))
     
     inline def setWrapPluginVisitorMethod(
-      value: (/* pluginAlias */ String, /* visitorType */ enter | exit, /* callback */ js.Function2[
+      value: (/* pluginAlias */ String, /* visitorType */ "enter" | "exit", /* callback */ js.Function2[
           /* path */ typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node], 
           /* state */ Any, 
           Unit

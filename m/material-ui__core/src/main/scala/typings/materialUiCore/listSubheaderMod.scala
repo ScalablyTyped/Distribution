@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.listSubheaderListSubheaderMod.ListSubheaderTypeMap
-import typings.materialUiCore.materialUiCoreStrings.li
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,10 +21,10 @@ object listSubheaderMod extends Shortcut {
     */
   @JSImport("@material-ui/core/ListSubheader", JSImport.Default)
   @js.native
-  val default: OverridableComponent[ListSubheaderTypeMap[js.Object, li]] = js.native
+  val default: OverridableComponent[ListSubheaderTypeMap[js.Object, "li"]] = js.native
   
-  type _To = OverridableComponent[ListSubheaderTypeMap[js.Object, li]]
+  type _To = OverridableComponent[ListSubheaderTypeMap[js.Object, "li"]]
   
   /* This means you don't have to write `default`, but can instead just say `listSubheaderMod.foo` */
-  override def _to: OverridableComponent[ListSubheaderTypeMap[js.Object, li]] = default
+  override def _to: OverridableComponent[ListSubheaderTypeMap[js.Object, "li"]] = default
 }

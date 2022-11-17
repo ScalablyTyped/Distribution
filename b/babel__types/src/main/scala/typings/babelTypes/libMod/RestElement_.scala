@@ -1,17 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.RestElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait RestElement_
   extends StObject
-     with BaseNode
-     with LVal
-     with Node
-     with PatternLike
-     with Standardized {
+     with BaseNode {
   
   var argument: LVal
   
@@ -22,7 +17,7 @@ trait RestElement_
   var typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
-  var type_RestElement_ : RestElement
+  var type_RestElement_ : "RestElement"
 }
 object RestElement_ {
   
@@ -50,7 +45,7 @@ object RestElement_ {
     
     inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    inline def setType(value: RestElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "RestElement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation__ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

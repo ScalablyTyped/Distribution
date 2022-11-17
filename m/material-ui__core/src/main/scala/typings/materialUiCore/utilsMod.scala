@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.materialUiCore.anon.IsFocusVisible
-import typings.materialUiCore.materialUiCoreStrings.svg
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.svgIconSvgIconMod.SvgIconTypeMap
 import typings.materialUiCore.utilsCreateChainedFunctionMod.ChainedFunction
@@ -28,7 +27,7 @@ object utilsMod {
   
   inline def createChainedFunction(funcs: ChainedFunction*): js.Function1[/* repeated */ Any, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChainedFunction")(funcs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function1[/* repeated */ Any, scala.Nothing]]
   
-  inline def createSvgIcon(path: ReactNode, displayName: String): OverridableComponent[SvgIconTypeMap[js.Object, svg]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvgIcon")(path.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[OverridableComponent[SvgIconTypeMap[js.Object, svg]]]
+  inline def createSvgIcon(path: ReactNode, displayName: String): OverridableComponent[SvgIconTypeMap[js.Object, "svg"]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvgIcon")(path.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[OverridableComponent[SvgIconTypeMap[js.Object, "svg"]]]
   
   inline def debounce[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T): T & Cancelable = ^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any]).asInstanceOf[T & Cancelable]
   inline def debounce[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Double): T & Cancelable = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[T & Cancelable]

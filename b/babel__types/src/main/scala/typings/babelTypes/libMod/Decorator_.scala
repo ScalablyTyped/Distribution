@@ -1,19 +1,17 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.Decorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Decorator_
   extends StObject
-     with BaseNode
-     with Node {
+     with BaseNode {
   
   var expression: Expression
   
   @JSName("type")
-  var type_Decorator_ : Decorator
+  var type_Decorator_ : "Decorator"
 }
 object Decorator_ {
   
@@ -27,6 +25,6 @@ object Decorator_ {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    inline def setType(value: Decorator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Decorator"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

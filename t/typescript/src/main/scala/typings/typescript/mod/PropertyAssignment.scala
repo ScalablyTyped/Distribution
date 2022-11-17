@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PropertyAssignment
   extends StObject
      with ObjectLiteralElement
-     with JSDocContainer
-     with HasExpressionInitializer
-     with HasJSDoc
-     with ObjectBindingOrAssignmentElement
-     with ObjectLiteralElementLike
-     with VariableLikeDeclaration {
+     with JSDocContainer {
   
   /** @deprecated A property assignment cannot have an exclamation token */
   val exclamationToken: js.UndefOr[ExclamationToken] = js.native

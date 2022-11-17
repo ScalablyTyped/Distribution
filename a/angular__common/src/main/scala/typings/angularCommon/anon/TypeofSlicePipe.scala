@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.slice
 import typings.angularCommon.mod.SlicePipe
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
@@ -17,5 +15,5 @@ trait TypeofSlicePipe
   
   var ɵfac: ɵɵFactoryDeclaration[SlicePipe, scala.Nothing] = js.native
   
-  var ɵpipe: ɵɵPipeDeclaration[SlicePipe, slice, `true`] = js.native
+  var ɵpipe: ɵɵPipeDeclaration[SlicePipe, "slice", true] = js.native
 }

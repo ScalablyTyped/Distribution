@@ -1,6 +1,5 @@
 package typings.highlightJs.mod
 
-import typings.highlightJs.highlightJsBooleans.`true`
 import typings.highlightJs.privateMod.KeywordDict
 import typings.std.Record
 import typings.std.RegExpMatchArray
@@ -49,7 +48,7 @@ trait CompiledMode extends StObject {
   
   var illegalRe: js.RegExp
   
-  var isCompiled: js.UndefOr[Boolean] & `true`
+  var isCompiled: js.UndefOr[Boolean] & true
   
   var keywordPatternRe: js.RegExp
   
@@ -101,7 +100,7 @@ object CompiledMode {
     endRe: js.RegExp,
     endScope: (js.UndefOr[String | (Record[Double, String])]) & js.UndefOr[CompiledScope],
     illegalRe: js.RegExp,
-    isCompiled: js.UndefOr[Boolean] & `true`,
+    isCompiled: js.UndefOr[Boolean] & true,
     keywordPatternRe: js.RegExp,
     keywords: (js.UndefOr[(Record[String, Any]) | String]) & KeywordDict,
     matcher: Any,
@@ -180,7 +179,7 @@ object CompiledMode {
     
     inline def setIllegalVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "illegal", js.Array(value*))
     
-    inline def setIsCompiled(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "isCompiled", value.asInstanceOf[js.Any])
+    inline def setIsCompiled(value: js.UndefOr[Boolean] & true): Self = StObject.set(x, "isCompiled", value.asInstanceOf[js.Any])
     
     inline def setKeywordPatternRe(value: js.RegExp): Self = StObject.set(x, "keywordPatternRe", value.asInstanceOf[js.Any])
     

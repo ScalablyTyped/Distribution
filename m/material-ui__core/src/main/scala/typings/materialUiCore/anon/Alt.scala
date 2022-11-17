@@ -1,9 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.circle
-import typings.materialUiCore.materialUiCoreStrings.circular
-import typings.materialUiCore.materialUiCoreStrings.rounded
-import typings.materialUiCore.materialUiCoreStrings.square
 import typings.react.mod.ImgHTMLAttributes
 import typings.react.mod.ReactNode
 import typings.std.HTMLImageElement
@@ -50,7 +46,7 @@ trait Alt extends StObject {
   /**
     * The shape of the avatar.
     */
-  var variant: js.UndefOr[circle | circular | rounded | square] = js.undefined
+  var variant: js.UndefOr["circle" | "circular" | "rounded" | "square"] = js.undefined
 }
 object Alt {
   
@@ -85,7 +81,7 @@ object Alt {
     
     inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
-    inline def setVariant(value: circle | circular | rounded | square): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "circle" | "circular" | "rounded" | "square"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

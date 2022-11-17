@@ -352,57 +352,9 @@ object srcNgtscCoreSrcCompilerMod {
   
   inline def resourceChangeTicket(compiler: NgCompiler, modifiedResourceFiles: Set[String]): IncrementalResourceCompilationTicket = (^.asInstanceOf[js.Dynamic].applyDynamic("resourceChangeTicket")(compiler.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any])).asInstanceOf[IncrementalResourceCompilationTicket]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.srcNgtscCoreSrcCompilerMod.FreshCompilationTicket_
-    - typings.angularCompilerCli.srcNgtscCoreSrcCompilerMod.IncrementalTypeScriptCompilationTicket
-    - typings.angularCompilerCli.srcNgtscCoreSrcCompilerMod.IncrementalResourceCompilationTicket
-  */
-  trait CompilationTicket extends StObject
-  object CompilationTicket {
-    
-    inline def FreshCompilationTicket_(
-      enableTemplateTypeChecker: Boolean,
-      incrementalBuildStrategy: IncrementalBuildStrategy,
-      kind: Fresh,
-      options: NgCompilerOptions,
-      perfRecorder: ActivePerfRecorder,
-      programDriver: ProgramDriver,
-      tsProgram: Program,
-      usePoisonedData: Boolean
-    ): typings.angularCompilerCli.srcNgtscCoreSrcCompilerMod.FreshCompilationTicket_ = {
-      val __obj = js.Dynamic.literal(enableTemplateTypeChecker = enableTemplateTypeChecker.asInstanceOf[js.Any], incrementalBuildStrategy = incrementalBuildStrategy.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], perfRecorder = perfRecorder.asInstanceOf[js.Any], programDriver = programDriver.asInstanceOf[js.Any], tsProgram = tsProgram.asInstanceOf[js.Any], usePoisonedData = usePoisonedData.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscCoreSrcCompilerMod.FreshCompilationTicket_]
-    }
-    
-    inline def IncrementalResourceCompilationTicket(
-      compiler: NgCompiler,
-      kind: IncrementalResource,
-      modifiedResourceFiles: Set[String],
-      perfRecorder: ActivePerfRecorder
-    ): typings.angularCompilerCli.srcNgtscCoreSrcCompilerMod.IncrementalResourceCompilationTicket = {
-      val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], modifiedResourceFiles = modifiedResourceFiles.asInstanceOf[js.Any], perfRecorder = perfRecorder.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscCoreSrcCompilerMod.IncrementalResourceCompilationTicket]
-    }
-    
-    inline def IncrementalTypeScriptCompilationTicket(
-      enableTemplateTypeChecker: Boolean,
-      incrementalBuildStrategy: IncrementalBuildStrategy,
-      incrementalCompilation: IncrementalCompilation,
-      kind: IncrementalTypeScript,
-      newProgram: Program,
-      options: NgCompilerOptions,
-      perfRecorder: ActivePerfRecorder,
-      programDriver: ProgramDriver,
-      usePoisonedData: Boolean
-    ): typings.angularCompilerCli.srcNgtscCoreSrcCompilerMod.IncrementalTypeScriptCompilationTicket = {
-      val __obj = js.Dynamic.literal(enableTemplateTypeChecker = enableTemplateTypeChecker.asInstanceOf[js.Any], incrementalBuildStrategy = incrementalBuildStrategy.asInstanceOf[js.Any], incrementalCompilation = incrementalCompilation.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], newProgram = newProgram.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], perfRecorder = perfRecorder.asInstanceOf[js.Any], programDriver = programDriver.asInstanceOf[js.Any], usePoisonedData = usePoisonedData.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscCoreSrcCompilerMod.IncrementalTypeScriptCompilationTicket]
-    }
-  }
+  type CompilationTicket = FreshCompilationTicket_ | IncrementalTypeScriptCompilationTicket | IncrementalResourceCompilationTicket
   
-  trait FreshCompilationTicket_
-    extends StObject
-       with CompilationTicket {
+  trait FreshCompilationTicket_ extends StObject {
     
     var enableTemplateTypeChecker: Boolean
     
@@ -456,9 +408,7 @@ object srcNgtscCoreSrcCompilerMod {
     }
   }
   
-  trait IncrementalResourceCompilationTicket
-    extends StObject
-       with CompilationTicket {
+  trait IncrementalResourceCompilationTicket extends StObject {
     
     var compiler: NgCompiler
     
@@ -492,9 +442,7 @@ object srcNgtscCoreSrcCompilerMod {
     }
   }
   
-  trait IncrementalTypeScriptCompilationTicket
-    extends StObject
-       with CompilationTicket {
+  trait IncrementalTypeScriptCompilationTicket extends StObject {
     
     var enableTemplateTypeChecker: Boolean
     

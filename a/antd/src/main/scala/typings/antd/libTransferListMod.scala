@@ -5,10 +5,6 @@ import typings.antd.anon.Direction
 import typings.antd.anon.Disabled
 import typings.antd.anon.FilteredItems
 import typings.antd.anon.SelectedCount
-import typings.antd.antdBooleans.`false`
-import typings.antd.antdStrings.all
-import typings.antd.antdStrings.none
-import typings.antd.antdStrings.part
 import typings.antd.libTransferInterfaceMod.PaginationType
 import typings.antd.libTransferListBodyMod.TransferListBodyProps
 import typings.antd.libTransferMod.KeyWiseTransferItem
@@ -75,9 +71,9 @@ object libTransferListMod {
     
     var defaultListBodyRef: RefObject[typings.antd.libTransferListBodyMod.default[RecordType]] = js.native
     
-    def getCheckBox(param0: Disabled[RecordType]): `false` | Element = js.native
+    def getCheckBox(param0: Disabled[RecordType]): false | Element = js.native
     
-    def getCheckStatus(filteredItems: js.Array[RecordType]): none | all | part = js.native
+    def getCheckStatus(filteredItems: js.Array[RecordType]): "none" | "all" | "part" = js.native
     
     def getFilteredItems(dataSource: js.Array[RecordType], filterValue: String): FilteredItems[RecordType] = js.native
     

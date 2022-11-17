@@ -1,6 +1,5 @@
 package typings.node.cryptoMod.webcrypto
 
-import typings.node.nodeStrings.jwk
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -262,9 +261,8 @@ trait SubtleCrypto extends StObject {
     * @since v15.0.0
     */
   @JSName("exportKey")
-  def exportKey_jwk(format: jwk, key: CryptoKey): js.Promise[JsonWebKey] = js.native
-  @JSName("exportKey")
-  def exportKey_jwk(format: Exclude[KeyFormat, jwk], key: CryptoKey): js.Promise[js.typedarray.ArrayBuffer] = js.native
+  @scala.annotation.targetName("exportKey_jwk")
+  def exportKey(format: "jwk" | (Exclude[KeyFormat, "jwk"]), key: CryptoKey): js.Promise[JsonWebKey] = js.native
   
   def generateKey(algorithm: AesKeyGenParams, extractable: Boolean, keyUsages: js.Array[KeyUsage]): js.Promise[CryptoKey] = js.native
   def generateKey(algorithm: AlgorithmIdentifier, extractable: Boolean, keyUsages: js.Array[KeyUsage]): js.Promise[CryptoKeyPair | CryptoKey] = js.native
@@ -300,8 +298,9 @@ trait SubtleCrypto extends StObject {
   def generateKey(algorithm: RsaHashedKeyGenParams, extractable: Boolean, keyUsages: js.Array[KeyUsage]): js.Promise[CryptoKeyPair] = js.native
   
   @JSName("importKey")
-  def importKey_jwk(
-    format: jwk,
+  @scala.annotation.targetName("importKey_jwk")
+  def importKey(
+    format: "jwk",
     keyData: JsonWebKey,
     algorithm: AesKeyAlgorithm,
     extractable: Boolean,
@@ -318,72 +317,81 @@ trait SubtleCrypto extends StObject {
     * @since v15.0.0
     */
   @JSName("importKey")
-  def importKey_jwk(
-    format: jwk,
+  @scala.annotation.targetName("importKey_jwk")
+  def importKey(
+    format: "jwk",
     keyData: JsonWebKey,
     algorithm: AlgorithmIdentifier,
     extractable: Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
   @JSName("importKey")
-  def importKey_jwk(
-    format: jwk,
+  @scala.annotation.targetName("importKey_jwk")
+  def importKey(
+    format: "jwk",
     keyData: JsonWebKey,
     algorithm: EcKeyImportParams,
     extractable: Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
   @JSName("importKey")
-  def importKey_jwk(
-    format: jwk,
+  @scala.annotation.targetName("importKey_jwk")
+  def importKey(
+    format: "jwk",
     keyData: JsonWebKey,
     algorithm: HmacImportParams,
     extractable: Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
   @JSName("importKey")
-  def importKey_jwk(
-    format: jwk,
+  @scala.annotation.targetName("importKey_jwk")
+  def importKey(
+    format: "jwk",
     keyData: JsonWebKey,
     algorithm: RsaHashedImportParams,
     extractable: Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
   @JSName("importKey")
-  def importKey_jwk(
-    format: Exclude[KeyFormat, jwk],
+  @scala.annotation.targetName("importKey_jwk")
+  def importKey(
+    format: Exclude[KeyFormat, "jwk"],
     keyData: BufferSource,
     algorithm: AesKeyAlgorithm,
     extractable: Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
   @JSName("importKey")
-  def importKey_jwk(
-    format: Exclude[KeyFormat, jwk],
+  @scala.annotation.targetName("importKey_jwk")
+  def importKey(
+    format: Exclude[KeyFormat, "jwk"],
     keyData: BufferSource,
     algorithm: AlgorithmIdentifier,
     extractable: Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
   @JSName("importKey")
-  def importKey_jwk(
-    format: Exclude[KeyFormat, jwk],
+  @scala.annotation.targetName("importKey_jwk")
+  def importKey(
+    format: Exclude[KeyFormat, "jwk"],
     keyData: BufferSource,
     algorithm: EcKeyImportParams,
     extractable: Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
   @JSName("importKey")
-  def importKey_jwk(
-    format: Exclude[KeyFormat, jwk],
+  @scala.annotation.targetName("importKey_jwk")
+  def importKey(
+    format: Exclude[KeyFormat, "jwk"],
     keyData: BufferSource,
     algorithm: HmacImportParams,
     extractable: Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
   @JSName("importKey")
-  def importKey_jwk(
-    format: Exclude[KeyFormat, jwk],
+  @scala.annotation.targetName("importKey_jwk")
+  def importKey(
+    format: Exclude[KeyFormat, "jwk"],
     keyData: BufferSource,
     algorithm: RsaHashedImportParams,
     extractable: Boolean,

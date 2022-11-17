@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.ClassKeyFabClassKeyDefaultComponentD
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
-import typings.materialUiCore.materialUiCoreStrings.button
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
@@ -26,50 +25,38 @@ object fabFabMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Fab/Fab", JSImport.Default)
   @js.native
-  val default: ExtendButtonBase[FabTypeMap[js.Object, button]] = js.native
+  val default: ExtendButtonBase[FabTypeMap[js.Object, "button"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.label
-    - typings.materialUiCore.materialUiCoreStrings.primary
-    - typings.materialUiCore.materialUiCoreStrings.secondary
-    - typings.materialUiCore.materialUiCoreStrings.extended
-    - typings.materialUiCore.materialUiCoreStrings.focusVisible
-    - typings.materialUiCore.materialUiCoreStrings.disabled
-    - typings.materialUiCore.materialUiCoreStrings.colorInherit
-    - typings.materialUiCore.materialUiCoreStrings.sizeSmall
-    - typings.materialUiCore.materialUiCoreStrings.sizeMedium
-  */
-  trait FabClassKey extends StObject
   object FabClassKey {
     
-    inline def colorInherit: typings.materialUiCore.materialUiCoreStrings.colorInherit = "colorInherit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorInherit]
+    inline def colorInherit: "colorInherit" = "colorInherit".asInstanceOf["colorInherit"]
     
-    inline def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
+    inline def disabled: "disabled" = "disabled".asInstanceOf["disabled"]
     
-    inline def extended: typings.materialUiCore.materialUiCoreStrings.extended = "extended".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.extended]
+    inline def extended: "extended" = "extended".asInstanceOf["extended"]
     
-    inline def focusVisible: typings.materialUiCore.materialUiCoreStrings.focusVisible = "focusVisible".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.focusVisible]
+    inline def focusVisible: "focusVisible" = "focusVisible".asInstanceOf["focusVisible"]
     
-    inline def label: typings.materialUiCore.materialUiCoreStrings.label = "label".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.label]
+    inline def label: "label" = "label".asInstanceOf["label"]
     
-    inline def primary: typings.materialUiCore.materialUiCoreStrings.primary = "primary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.primary]
+    inline def primary: "primary" = "primary".asInstanceOf["primary"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def secondary: typings.materialUiCore.materialUiCoreStrings.secondary = "secondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.secondary]
+    inline def secondary: "secondary" = "secondary".asInstanceOf["secondary"]
     
-    inline def sizeMedium: typings.materialUiCore.materialUiCoreStrings.sizeMedium = "sizeMedium".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sizeMedium]
+    inline def sizeMedium: "sizeMedium" = "sizeMedium".asInstanceOf["sizeMedium"]
     
-    inline def sizeSmall: typings.materialUiCore.materialUiCoreStrings.sizeSmall = "sizeSmall".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sizeSmall]
+    inline def sizeSmall: "sizeSmall" = "sizeSmall".asInstanceOf["sizeSmall"]
   }
+  type FabClassKey = "root" | "label" | "primary" | "secondary" | "extended" | "focusVisible" | "disabled" | "colorInherit" | "sizeSmall" | "sizeMedium"
   
   type FabProps[D /* <: ElementType[Any] */, P] = OverrideProps[FabTypeMap[P, D], D]
   
   type FabTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[ClassKeyFabClassKeyDefaultComponentD[P, D]]
   
-  type _To = ExtendButtonBase[FabTypeMap[js.Object, button]]
+  type _To = ExtendButtonBase[FabTypeMap[js.Object, "button"]]
   
   /* This means you don't have to write `default`, but can instead just say `fabFabMod.foo` */
-  override def _to: ExtendButtonBase[FabTypeMap[js.Object, button]] = default
+  override def _to: ExtendButtonBase[FabTypeMap[js.Object, "button"]] = default
 }

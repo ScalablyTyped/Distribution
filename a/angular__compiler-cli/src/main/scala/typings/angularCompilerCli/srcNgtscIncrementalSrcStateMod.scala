@@ -45,9 +45,7 @@ object srcNgtscIncrementalSrcStateMod {
     /* 0 */ val Fresh: typings.angularCompilerCli.srcNgtscIncrementalSrcStateMod.IncrementalStateKind.Fresh & Double = js.native
   }
   
-  trait AnalyzedIncrementalState
-    extends StObject
-       with IncrementalState {
+  trait AnalyzedIncrementalState extends StObject {
     
     /**
       * Dependency graph extracted from the build, to be used to determine the logical impact of
@@ -123,9 +121,7 @@ object srcNgtscIncrementalSrcStateMod {
     }
   }
   
-  trait DeltaIncrementalState
-    extends StObject
-       with IncrementalState {
+  trait DeltaIncrementalState extends StObject {
     
     /**
       * Set of resource file paths which have changed since the `lastAnalyzedState` compilation.
@@ -169,9 +165,7 @@ object srcNgtscIncrementalSrcStateMod {
     }
   }
   
-  trait FreshIncrementalState
-    extends StObject
-       with IncrementalState {
+  trait FreshIncrementalState extends StObject {
     
     var kind: Fresh
   }
@@ -188,38 +182,5 @@ object srcNgtscIncrementalSrcStateMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.srcNgtscIncrementalSrcStateMod.AnalyzedIncrementalState
-    - typings.angularCompilerCli.srcNgtscIncrementalSrcStateMod.DeltaIncrementalState
-    - typings.angularCompilerCli.srcNgtscIncrementalSrcStateMod.FreshIncrementalState
-  */
-  trait IncrementalState extends StObject
-  object IncrementalState {
-    
-    inline def AnalyzedIncrementalState(
-      depGraph: FileDependencyGraph[SourceFile],
-      emitted: Set[AbsoluteFsPath],
-      kind: Analyzed,
-      priorAnalysis: Map[SourceFile, js.Array[ClassRecord]],
-      semanticDepGraph: SemanticDepGraph
-    ): typings.angularCompilerCli.srcNgtscIncrementalSrcStateMod.AnalyzedIncrementalState = {
-      val __obj = js.Dynamic.literal(depGraph = depGraph.asInstanceOf[js.Any], emitted = emitted.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], priorAnalysis = priorAnalysis.asInstanceOf[js.Any], semanticDepGraph = semanticDepGraph.asInstanceOf[js.Any], typeCheckResults = null, versions = null)
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscIncrementalSrcStateMod.AnalyzedIncrementalState]
-    }
-    
-    inline def DeltaIncrementalState(
-      changedResourceFiles: Set[AbsoluteFsPath],
-      kind: Delta,
-      lastAnalyzedState: AnalyzedIncrementalState,
-      physicallyChangedTsFiles: Set[AbsoluteFsPath]
-    ): typings.angularCompilerCli.srcNgtscIncrementalSrcStateMod.DeltaIncrementalState = {
-      val __obj = js.Dynamic.literal(changedResourceFiles = changedResourceFiles.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], lastAnalyzedState = lastAnalyzedState.asInstanceOf[js.Any], physicallyChangedTsFiles = physicallyChangedTsFiles.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscIncrementalSrcStateMod.DeltaIncrementalState]
-    }
-    
-    inline def FreshIncrementalState(kind: Fresh): typings.angularCompilerCli.srcNgtscIncrementalSrcStateMod.FreshIncrementalState = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscIncrementalSrcStateMod.FreshIncrementalState]
-    }
-  }
+  type IncrementalState = AnalyzedIncrementalState | DeltaIncrementalState | FreshIncrementalState
 }

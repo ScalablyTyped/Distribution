@@ -7,9 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidateFunction[T]
-  extends StObject
-     with AnyValidateFunction[T] {
+trait ValidateFunction[T] extends StObject {
   
   def apply(data: Any): /* is T */ Boolean = js.native
   def apply(data: Any, dataCxt: DataValidationCxt[String | Double]): /* is T */ Boolean = js.native

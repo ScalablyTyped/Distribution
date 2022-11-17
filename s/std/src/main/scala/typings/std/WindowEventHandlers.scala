@@ -1,23 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.afterprint
-import typings.std.stdStrings.beforeprint
-import typings.std.stdStrings.beforeunload
-import typings.std.stdStrings.gamepadconnected
-import typings.std.stdStrings.gamepaddisconnected
-import typings.std.stdStrings.hashchange
-import typings.std.stdStrings.languagechange
-import typings.std.stdStrings.message
-import typings.std.stdStrings.messageerror
-import typings.std.stdStrings.offline
-import typings.std.stdStrings.online
-import typings.std.stdStrings.pagehide
-import typings.std.stdStrings.pageshow
-import typings.std.stdStrings.popstate
-import typings.std.stdStrings.rejectionhandled
-import typings.std.stdStrings.storage
-import typings.std.stdStrings.unhandledrejection
-import typings.std.stdStrings.unload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,292 +7,349 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WindowEventHandlers extends StObject {
   
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_languagechange")
+  def addEventListener(`type`: "languagechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_hashchange")
+  def addEventListener(
+    `type`: "hashchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_gamepaddisconnected")
+  def addEventListener(
+    `type`: "gamepaddisconnected",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_popstate")
+  def addEventListener(`type`: "popstate", listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_beforeunload")
+  def addEventListener(
+    `type`: "beforeunload",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_online")
+  def addEventListener(`type`: "online", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_unload")
+  def addEventListener(`type`: "unload", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  /* standard dom */
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_afterprint")
+  def addEventListener(`type`: "afterprint", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_message")
+  def addEventListener(
+    `type`: "message",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_gamepadconnected")
+  def addEventListener(
+    `type`: "gamepadconnected",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_pagehide")
+  def addEventListener(
+    `type`: "pagehide",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_storage")
+  def addEventListener(`type`: "storage", listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_pageshow")
+  def addEventListener(
+    `type`: "pageshow",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_rejectionhandled")
+  def addEventListener(
+    `type`: "rejectionhandled",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_unhandledrejection")
+  def addEventListener(
+    `type`: "unhandledrejection",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_beforeprint")
+  def addEventListener(`type`: "beforeprint", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_offline")
+  def addEventListener(`type`: "offline", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_messageerror")
+  def addEventListener(
+    `type`: "messageerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_beforeunload")
+  def addEventListener(
+    `type`: "beforeunload",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_languagechange")
+  def addEventListener(
+    `type`: "languagechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_gamepaddisconnected")
+  def addEventListener(
+    `type`: "gamepaddisconnected",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_beforeprint")
+  def addEventListener(
+    `type`: "beforeprint",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_rejectionhandled")
+  def addEventListener(
+    `type`: "rejectionhandled",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_pageshow")
+  def addEventListener(
+    `type`: "pageshow",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_message")
+  def addEventListener(
+    `type`: "message",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_afterprint")
+  def addEventListener(
+    `type`: "afterprint",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_offline")
+  def addEventListener(
+    `type`: "offline",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_unhandledrejection")
+  def addEventListener(
+    `type`: "unhandledrejection",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_storage")
+  def addEventListener(
+    `type`: "storage",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_popstate")
+  def addEventListener(
+    `type`: "popstate",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_gamepadconnected")
+  def addEventListener(
+    `type`: "gamepadconnected",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_messageerror")
+  def addEventListener(
+    `type`: "messageerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_unload")
+  def addEventListener(
+    `type`: "unload",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_pagehide")
+  def addEventListener(
+    `type`: "pagehide",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_hashchange")
+  def addEventListener(
+    `type`: "hashchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_online")
+  def addEventListener(
+    `type`: "online",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_rejectionhandled")
+  def addEventListener(
+    `type`: "rejectionhandled",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_unhandledrejection")
+  def addEventListener(
+    `type`: "unhandledrejection",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_message")
+  def addEventListener(
+    `type`: "message",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_messageerror")
+  def addEventListener(
+    `type`: "messageerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_beforeprint")
+  def addEventListener(
+    `type`: "beforeprint",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_pagehide")
+  def addEventListener(
+    `type`: "pagehide",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_online")
+  def addEventListener(
+    `type`: "online",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_popstate")
+  def addEventListener(
+    `type`: "popstate",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_offline")
+  def addEventListener(
+    `type`: "offline",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_unload")
+  def addEventListener(
+    `type`: "unload",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_hashchange")
+  def addEventListener(
+    `type`: "hashchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_gamepadconnected")
+  def addEventListener(
+    `type`: "gamepadconnected",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_beforeunload")
+  def addEventListener(
+    `type`: "beforeunload",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_afterprint")
+  def addEventListener(
+    `type`: "afterprint",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_pageshow")
+  def addEventListener(
+    `type`: "pageshow",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_storage")
+  def addEventListener(
+    `type`: "storage",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_languagechange")
+  def addEventListener(
+    `type`: "languagechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_gamepaddisconnected")
+  def addEventListener(
+    `type`: "gamepaddisconnected",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
   /* standard dom */
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   def addEventListener(
     `type`: java.lang.String,
     listener: EventListenerOrEventListenerObject,
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  /* standard dom */
-  @JSName("addEventListener")
-  def addEventListener_afterprint(`type`: afterprint, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_afterprint(
-    `type`: afterprint,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_afterprint(
-    `type`: afterprint,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_beforeprint(`type`: beforeprint, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_beforeprint(
-    `type`: beforeprint,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_beforeprint(
-    `type`: beforeprint,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_beforeunload(
-    `type`: beforeunload,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_beforeunload(
-    `type`: beforeunload,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_beforeunload(
-    `type`: beforeunload,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_gamepadconnected(
-    `type`: gamepadconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_gamepadconnected(
-    `type`: gamepadconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_gamepadconnected(
-    `type`: gamepadconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_gamepaddisconnected(
-    `type`: gamepaddisconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_gamepaddisconnected(
-    `type`: gamepaddisconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_gamepaddisconnected(
-    `type`: gamepaddisconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_hashchange(
-    `type`: hashchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_hashchange(
-    `type`: hashchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_hashchange(
-    `type`: hashchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_languagechange(`type`: languagechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_languagechange(
-    `type`: languagechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_languagechange(
-    `type`: languagechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_message(
-    `type`: message,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_message(
-    `type`: message,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_messageerror(
-    `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_messageerror(
-    `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_messageerror(
-    `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_offline(`type`: offline, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_offline(
-    `type`: offline,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_offline(
-    `type`: offline,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_online(`type`: online, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_online(
-    `type`: online,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_online(
-    `type`: online,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pagehide(
-    `type`: pagehide,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pagehide(
-    `type`: pagehide,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pagehide(
-    `type`: pagehide,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pageshow(
-    `type`: pageshow,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pageshow(
-    `type`: pageshow,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pageshow(
-    `type`: pageshow,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_popstate(`type`: popstate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_popstate(
-    `type`: popstate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_popstate(
-    `type`: popstate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_rejectionhandled(
-    `type`: rejectionhandled,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_rejectionhandled(
-    `type`: rejectionhandled,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_rejectionhandled(
-    `type`: rejectionhandled,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_storage(`type`: storage, listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_storage(
-    `type`: storage,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_storage(
-    `type`: storage,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_unhandledrejection(
-    `type`: unhandledrejection,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_unhandledrejection(
-    `type`: unhandledrejection,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_unhandledrejection(
-    `type`: unhandledrejection,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_unload(`type`: unload, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_unload(
-    `type`: unload,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_unload(
-    `type`: unload,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -368,292 +407,349 @@ trait WindowEventHandlers extends StObject {
   /* standard dom */
   var onunload: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_rejectionhandled")
+  def removeEventListener(
+    `type`: "rejectionhandled",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_hashchange")
+  def removeEventListener(
+    `type`: "hashchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, Any]
+  ): Unit = js.native
+  /* standard dom */
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_afterprint")
+  def removeEventListener(`type`: "afterprint", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_messageerror")
+  def removeEventListener(
+    `type`: "messageerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_unhandledrejection")
+  def removeEventListener(
+    `type`: "unhandledrejection",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_beforeunload")
+  def removeEventListener(
+    `type`: "beforeunload",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_pagehide")
+  def removeEventListener(
+    `type`: "pagehide",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_beforeprint")
+  def removeEventListener(`type`: "beforeprint", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_gamepaddisconnected")
+  def removeEventListener(
+    `type`: "gamepaddisconnected",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_offline")
+  def removeEventListener(`type`: "offline", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_storage")
+  def removeEventListener(`type`: "storage", listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_languagechange")
+  def removeEventListener(`type`: "languagechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_online")
+  def removeEventListener(`type`: "online", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_pageshow")
+  def removeEventListener(
+    `type`: "pageshow",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_unload")
+  def removeEventListener(`type`: "unload", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_popstate")
+  def removeEventListener(`type`: "popstate", listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_message")
+  def removeEventListener(
+    `type`: "message",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_gamepadconnected")
+  def removeEventListener(
+    `type`: "gamepadconnected",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_storage")
+  def removeEventListener(
+    `type`: "storage",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_unhandledrejection")
+  def removeEventListener(
+    `type`: "unhandledrejection",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_languagechange")
+  def removeEventListener(
+    `type`: "languagechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_gamepadconnected")
+  def removeEventListener(
+    `type`: "gamepadconnected",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_unload")
+  def removeEventListener(
+    `type`: "unload",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_rejectionhandled")
+  def removeEventListener(
+    `type`: "rejectionhandled",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_pagehide")
+  def removeEventListener(
+    `type`: "pagehide",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_message")
+  def removeEventListener(
+    `type`: "message",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_messageerror")
+  def removeEventListener(
+    `type`: "messageerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_beforeprint")
+  def removeEventListener(
+    `type`: "beforeprint",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_popstate")
+  def removeEventListener(
+    `type`: "popstate",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_hashchange")
+  def removeEventListener(
+    `type`: "hashchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_afterprint")
+  def removeEventListener(
+    `type`: "afterprint",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_gamepaddisconnected")
+  def removeEventListener(
+    `type`: "gamepaddisconnected",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_offline")
+  def removeEventListener(
+    `type`: "offline",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_pageshow")
+  def removeEventListener(
+    `type`: "pageshow",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_beforeunload")
+  def removeEventListener(
+    `type`: "beforeunload",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_online")
+  def removeEventListener(
+    `type`: "online",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_pageshow")
+  def removeEventListener(
+    `type`: "pageshow",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_afterprint")
+  def removeEventListener(
+    `type`: "afterprint",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_languagechange")
+  def removeEventListener(
+    `type`: "languagechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_unhandledrejection")
+  def removeEventListener(
+    `type`: "unhandledrejection",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_beforeunload")
+  def removeEventListener(
+    `type`: "beforeunload",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_online")
+  def removeEventListener(
+    `type`: "online",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_unload")
+  def removeEventListener(
+    `type`: "unload",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_gamepadconnected")
+  def removeEventListener(
+    `type`: "gamepadconnected",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_storage")
+  def removeEventListener(
+    `type`: "storage",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_gamepaddisconnected")
+  def removeEventListener(
+    `type`: "gamepaddisconnected",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_message")
+  def removeEventListener(
+    `type`: "message",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_messageerror")
+  def removeEventListener(
+    `type`: "messageerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_popstate")
+  def removeEventListener(
+    `type`: "popstate",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_pagehide")
+  def removeEventListener(
+    `type`: "pagehide",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_hashchange")
+  def removeEventListener(
+    `type`: "hashchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_rejectionhandled")
+  def removeEventListener(
+    `type`: "rejectionhandled",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_beforeprint")
+  def removeEventListener(
+    `type`: "beforeprint",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_offline")
+  def removeEventListener(
+    `type`: "offline",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
   /* standard dom */
   def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   def removeEventListener(
     `type`: java.lang.String,
     listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
-  ): Unit = js.native
-  /* standard dom */
-  @JSName("removeEventListener")
-  def removeEventListener_afterprint(`type`: afterprint, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_afterprint(
-    `type`: afterprint,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_afterprint(
-    `type`: afterprint,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_beforeprint(`type`: beforeprint, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_beforeprint(
-    `type`: beforeprint,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_beforeprint(
-    `type`: beforeprint,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_beforeunload(
-    `type`: beforeunload,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_beforeunload(
-    `type`: beforeunload,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_beforeunload(
-    `type`: beforeunload,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_gamepadconnected(
-    `type`: gamepadconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_gamepadconnected(
-    `type`: gamepadconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_gamepadconnected(
-    `type`: gamepadconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_gamepaddisconnected(
-    `type`: gamepaddisconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_gamepaddisconnected(
-    `type`: gamepaddisconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_gamepaddisconnected(
-    `type`: gamepaddisconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_hashchange(
-    `type`: hashchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_hashchange(
-    `type`: hashchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_hashchange(
-    `type`: hashchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_languagechange(`type`: languagechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_languagechange(
-    `type`: languagechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_languagechange(
-    `type`: languagechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_message(
-    `type`: message,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_message(
-    `type`: message,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_messageerror(
-    `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_messageerror(
-    `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_messageerror(
-    `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_offline(`type`: offline, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_offline(
-    `type`: offline,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_offline(
-    `type`: offline,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_online(`type`: online, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_online(
-    `type`: online,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_online(
-    `type`: online,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pagehide(
-    `type`: pagehide,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pagehide(
-    `type`: pagehide,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pagehide(
-    `type`: pagehide,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pageshow(
-    `type`: pageshow,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pageshow(
-    `type`: pageshow,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pageshow(
-    `type`: pageshow,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_popstate(`type`: popstate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_popstate(
-    `type`: popstate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_popstate(
-    `type`: popstate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_rejectionhandled(
-    `type`: rejectionhandled,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_rejectionhandled(
-    `type`: rejectionhandled,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_rejectionhandled(
-    `type`: rejectionhandled,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_storage(`type`: storage, listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_storage(
-    `type`: storage,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_storage(
-    `type`: storage,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_unhandledrejection(
-    `type`: unhandledrejection,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_unhandledrejection(
-    `type`: unhandledrejection,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_unhandledrejection(
-    `type`: unhandledrejection,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_unload(`type`: unload, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_unload(
-    `type`: unload,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_unload(
-    `type`: unload,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
 }

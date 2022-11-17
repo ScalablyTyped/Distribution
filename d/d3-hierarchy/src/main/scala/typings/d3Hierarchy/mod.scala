@@ -1,6 +1,5 @@
 package typings.d3Hierarchy
 
-import typings.d3Hierarchy.d3HierarchyStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -652,7 +651,7 @@ object mod {
         /* d */ Datum, 
         /* i */ Double, 
         /* data */ js.Array[Datum], 
-        js.UndefOr[String | Null | _empty]
+        js.UndefOr[String | Null | ""]
       ] = js.native
     /**
       * Sets the id accessor to the given function.
@@ -662,12 +661,14 @@ object mod {
       *
       * @param id The id accessor.
       */
+    @JSName("id")
+    @scala.annotation.targetName("id_")
     def id(
       id: js.Function3[
           /* d */ Datum, 
           /* i */ Double, 
           /* data */ js.Array[Datum], 
-          js.UndefOr[String | Null | _empty]
+          js.UndefOr[String | Null | ""]
         ]
     ): this.type = js.native
     
@@ -678,7 +679,7 @@ object mod {
         /* d */ Datum, 
         /* i */ Double, 
         /* data */ js.Array[Datum], 
-        js.UndefOr[String | Null | _empty]
+        js.UndefOr[String | Null | ""]
       ] = js.native
     /**
       * Sets the parent id accessor to the given function.
@@ -689,12 +690,14 @@ object mod {
       *
       * @param parentId The parent id accessor.
       */
+    @JSName("parentId")
+    @scala.annotation.targetName("parentId_")
     def parentId(
       parentId: js.Function3[
           /* d */ Datum, 
           /* i */ Double, 
           /* data */ js.Array[Datum], 
-          js.UndefOr[String | Null | _empty]
+          js.UndefOr[String | Null | ""]
         ]
     ): this.type = js.native
     

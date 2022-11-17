@@ -1,8 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.resize
-import typings.reactNative.reactNativeStrings.scale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +26,7 @@ trait ImagePropsAndroid extends StObject {
     * and produces higher quality images. This should be used if the image is smaller than the view.
     * It should also be used if the image is slightly bigger than the view.
     */
-  var resizeMethod: js.UndefOr[auto | resize | scale] = js.undefined
+  var resizeMethod: js.UndefOr["auto" | "resize" | "scale"] = js.undefined
 }
 object ImagePropsAndroid {
   
@@ -44,7 +41,7 @@ object ImagePropsAndroid {
     
     inline def setFadeDurationUndefined: Self = StObject.set(x, "fadeDuration", js.undefined)
     
-    inline def setResizeMethod(value: auto | resize | scale): Self = StObject.set(x, "resizeMethod", value.asInstanceOf[js.Any])
+    inline def setResizeMethod(value: "auto" | "resize" | "scale"): Self = StObject.set(x, "resizeMethod", value.asInstanceOf[js.Any])
     
     inline def setResizeMethodUndefined: Self = StObject.set(x, "resizeMethod", js.undefined)
   }

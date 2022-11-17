@@ -13,28 +13,6 @@ import typings.node.nodeColonnetMod.Socket
 import typings.node.nodeColonstreamMod.Duplex
 import typings.node.nodeColonstreamMod.Readable
 import typings.node.nodeColonurlMod.URL
-import typings.node.nodeStrings.abort
-import typings.node.nodeStrings.checkContinue
-import typings.node.nodeStrings.checkExpectation
-import typings.node.nodeStrings.clientError
-import typings.node.nodeStrings.close
-import typings.node.nodeStrings.connect
-import typings.node.nodeStrings.connection
-import typings.node.nodeStrings.continue
-import typings.node.nodeStrings.drain
-import typings.node.nodeStrings.error
-import typings.node.nodeStrings.fifo
-import typings.node.nodeStrings.finish
-import typings.node.nodeStrings.information
-import typings.node.nodeStrings.lifo
-import typings.node.nodeStrings.listening
-import typings.node.nodeStrings.pipe
-import typings.node.nodeStrings.request
-import typings.node.nodeStrings.response
-import typings.node.nodeStrings.socket
-import typings.node.nodeStrings.timeout
-import typings.node.nodeStrings.unpipe
-import typings.node.nodeStrings.upgrade
 import typings.std.InstanceType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -220,45 +198,59 @@ object httpMod {
       */
     var aborted: Boolean = js.native
     
-    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_drain")
+    def addListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
     /**
       * @deprecated
       */
     @JSName("addListener")
-    def addListener_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("addListener_abort")
+    def addListener(event: "abort", listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("addListener_continue")
+    def addListener(event: "continue", listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_connect(
-      event: connect,
+    @scala.annotation.targetName("addListener_timeout")
+    def addListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_finish")
+    def addListener(event: "finish", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_close")
+    def addListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_unpipe")
+    def addListener(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_error")
+    def addListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_information")
+    def addListener(event: "information", listener: js.Function1[/* info */ InformationEvent, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_socket")
+    def addListener(event: "socket", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_response")
+    def addListener(event: "response", listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_pipe")
+    def addListener(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_connect")
+    def addListener(
+      event: "connect",
       listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
     ): this.type = js.native
     @JSName("addListener")
-    def addListener_continue(event: continue, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_information(event: information, listener: js.Function1[/* info */ InformationEvent, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_response(event: response, listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_socket(event: socket, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_upgrade(
-      event: upgrade,
+    @scala.annotation.targetName("addListener_upgrade")
+    def addListener(
+      event: "upgrade",
       listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
     ): this.type = js.native
+    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
     /**
       * Returns an array containing the unique names of the current outgoing raw
@@ -292,88 +284,115 @@ object httpMod {
       */
     var method: String = js.native
     
+    @JSName("on")
+    @scala.annotation.targetName("on_continue")
+    def on(event: "continue", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_timeout")
+    def on(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_close")
+    def on(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_finish")
+    def on(event: "finish", listener: js.Function0[Unit]): this.type = js.native
+    /**
+      * @deprecated
+      */
+    @JSName("on")
+    @scala.annotation.targetName("on_abort")
+    def on(event: "abort", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_drain")
+    def on(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_unpipe")
+    def on(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_error")
+    def on(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_information")
+    def on(event: "information", listener: js.Function1[/* info */ InformationEvent, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_socket")
+    def on(event: "socket", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_response")
+    def on(event: "response", listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_pipe")
+    def on(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_upgrade")
+    def on(
+      event: "upgrade",
+      listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_connect")
+    def on(
+      event: "connect",
+      listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
+    ): this.type = js.native
     def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
     def onSocket(socket: Socket): Unit = js.native
     
+    @JSName("once")
+    @scala.annotation.targetName("once_continue")
+    def once(event: "continue", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_drain")
+    def once(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_timeout")
+    def once(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_finish")
+    def once(event: "finish", listener: js.Function0[Unit]): this.type = js.native
     /**
       * @deprecated
       */
-    @JSName("on")
-    def on_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_connect(
-      event: connect,
+    @JSName("once")
+    @scala.annotation.targetName("once_abort")
+    def once(event: "abort", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_close")
+    def once(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_error")
+    def once(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_socket")
+    def once(event: "socket", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_pipe")
+    def once(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_unpipe")
+    def once(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_information")
+    def once(event: "information", listener: js.Function1[/* info */ InformationEvent, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_response")
+    def once(event: "response", listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_connect")
+    def once(
+      event: "connect",
       listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
     ): this.type = js.native
-    @JSName("on")
-    def on_continue(event: continue, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_information(event: information, listener: js.Function1[/* info */ InformationEvent, Unit]): this.type = js.native
-    @JSName("on")
-    def on_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("on")
-    def on_response(event: response, listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
-    @JSName("on")
-    def on_socket(event: socket, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-    @JSName("on")
-    def on_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("on")
-    def on_upgrade(
-      event: upgrade,
+    @JSName("once")
+    @scala.annotation.targetName("once_upgrade")
+    def once(
+      event: "upgrade",
       listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
     ): this.type = js.native
-    
     def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    /**
-      * @deprecated
-      */
-    @JSName("once")
-    def once_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_connect(
-      event: connect,
-      listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
-    ): this.type = js.native
-    @JSName("once")
-    def once_continue(event: continue, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("once")
-    def once_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_information(event: information, listener: js.Function1[/* info */ InformationEvent, Unit]): this.type = js.native
-    @JSName("once")
-    def once_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("once")
-    def once_response(event: response, listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
-    @JSName("once")
-    def once_socket(event: socket, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-    @JSName("once")
-    def once_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("once")
-    def once_upgrade(
-      event: upgrade,
-      listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
-    ): this.type = js.native
     
     /**
       * The request path.
@@ -381,85 +400,113 @@ object httpMod {
       */
     var path: String = js.native
     
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_timeout")
+    def prependListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_finish")
+    def prependListener(event: "finish", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_close")
+    def prependListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    /**
+      * @deprecated
+      */
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_abort")
+    def prependListener(event: "abort", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_continue")
+    def prependListener(event: "continue", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_drain")
+    def prependListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_response")
+    def prependListener(event: "response", listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_pipe")
+    def prependListener(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_socket")
+    def prependListener(event: "socket", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_information")
+    def prependListener(event: "information", listener: js.Function1[/* info */ InformationEvent, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_unpipe")
+    def prependListener(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_error")
+    def prependListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_upgrade")
+    def prependListener(
+      event: "upgrade",
+      listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_connect")
+    def prependListener(
+      event: "connect",
+      listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
+    ): this.type = js.native
     def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_continue")
+    def prependOnceListener(event: "continue", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_drain")
+    def prependOnceListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_close")
+    def prependOnceListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
     /**
       * @deprecated
       */
-    @JSName("prependListener")
-    def prependListener_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_connect(
-      event: connect,
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_abort")
+    def prependOnceListener(event: "abort", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_timeout")
+    def prependOnceListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_finish")
+    def prependOnceListener(event: "finish", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_response")
+    def prependOnceListener(event: "response", listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_socket")
+    def prependOnceListener(event: "socket", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_information")
+    def prependOnceListener(event: "information", listener: js.Function1[/* info */ InformationEvent, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_pipe")
+    def prependOnceListener(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_error")
+    def prependOnceListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_unpipe")
+    def prependOnceListener(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_upgrade")
+    def prependOnceListener(
+      event: "upgrade",
       listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
     ): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_continue(event: continue, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_information(event: information, listener: js.Function1[/* info */ InformationEvent, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_response(event: response, listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_socket(event: socket, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_upgrade(
-      event: upgrade,
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_connect")
+    def prependOnceListener(
+      event: "connect",
       listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
     ): this.type = js.native
-    
     def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    /**
-      * @deprecated
-      */
-    @JSName("prependOnceListener")
-    def prependOnceListener_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_connect(
-      event: connect,
-      listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
-    ): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_continue(event: continue, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_information(event: information, listener: js.Function1[/* info */ InformationEvent, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_response(event: response, listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_socket(event: socket, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_upgrade(
-      event: upgrade,
-      listener: js.Function3[/* response */ IncomingMessage, /* socket */ Socket, /* head */ Buffer, Unit]
-    ): this.type = js.native
     
     /**
       * The request protocol.
@@ -953,33 +1000,43 @@ object httpMod {
     def this(requestListener: RequestListener[Request, Response]) = this()
     def this(options: ServerOptions[Request, Response], requestListener: RequestListener[Request, Response]) = this()
     
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_listening")
+    def addListener(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_close")
+    def addListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_connection")
+    def addListener(event: "connection", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_error")
+    def addListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_clientError")
+    def addListener(event: "clientError", listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_connect")
+    def addListener(
+      event: "connect",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_upgrade")
+    def addListener(
+      event: "upgrade",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_checkExpectation")
+    def addListener(event: "checkExpectation", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_checkContinue")
+    def addListener(event: "checkContinue", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_request")
+    def addListener(event: "request", listener: RequestListener[Request, Response]): this.type = js.native
     def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_checkContinue(event: checkContinue, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("addListener")
-    def addListener_checkExpectation(event: checkExpectation, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("addListener")
-    def addListener_clientError(event: clientError, listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_connect(
-      event: connect,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
-    @JSName("addListener")
-    def addListener_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_request(event: request, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("addListener")
-    def addListener_upgrade(
-      event: upgrade,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
     
     /**
       * Closes all connections connected to this server.
@@ -993,27 +1050,37 @@ object httpMod {
       */
     def closeIdleConnections(): Unit = js.native
     
+    @JSName("emit")
+    @scala.annotation.targetName("emit_listening")
+    def emit(event: "listening"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_close")
+    def emit(event: "close"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_error")
+    def emit(event: "error", err: js.Error): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_clientError")
+    def emit(event: "clientError", err: js.Error, socket: Duplex): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_checkExpectation")
+    def emit(event: "checkExpectation", req: InstanceType[Request], res: InstanceType[Response] & Req[Request]): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_request")
+    def emit(event: "request", req: InstanceType[Request], res: InstanceType[Response] & Req[Request]): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_checkContinue")
+    def emit(event: "checkContinue", req: InstanceType[Request], res: InstanceType[Response] & Req[Request]): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_upgrade")
+    def emit(event: "upgrade", req: InstanceType[Request], socket: Duplex, head: Buffer): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_connect")
+    def emit(event: "connect", req: InstanceType[Request], socket: Duplex, head: Buffer): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_connection")
+    def emit(event: "connection", socket: Socket): Boolean = js.native
     def emit(event: String, args: Any*): Boolean = js.native
-    @JSName("emit")
-    def emit_checkContinue(event: checkContinue, req: InstanceType[Request], res: InstanceType[Response] & Req[Request]): Boolean = js.native
-    @JSName("emit")
-    def emit_checkExpectation(event: checkExpectation, req: InstanceType[Request], res: InstanceType[Response] & Req[Request]): Boolean = js.native
-    @JSName("emit")
-    def emit_clientError(event: clientError, err: js.Error, socket: Duplex): Boolean = js.native
-    @JSName("emit")
-    def emit_close(event: close): Boolean = js.native
-    @JSName("emit")
-    def emit_connect(event: connect, req: InstanceType[Request], socket: Duplex, head: Buffer): Boolean = js.native
-    @JSName("emit")
-    def emit_connection(event: connection, socket: Socket): Boolean = js.native
-    @JSName("emit")
-    def emit_error(event: error, err: js.Error): Boolean = js.native
-    @JSName("emit")
-    def emit_listening(event: listening): Boolean = js.native
-    @JSName("emit")
-    def emit_request(event: request, req: InstanceType[Request], res: InstanceType[Response] & Req[Request]): Boolean = js.native
-    @JSName("emit")
-    def emit_upgrade(event: upgrade, req: InstanceType[Request], socket: Duplex, head: Buffer): Boolean = js.native
     
     /**
       * Limit the amount of time the parser will wait to receive the complete HTTP
@@ -1065,117 +1132,157 @@ object httpMod {
       */
     var maxRequestsPerSocket: Double | Null = js.native
     
+    @JSName("on")
+    @scala.annotation.targetName("on_close")
+    def on(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_listening")
+    def on(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_error")
+    def on(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_connection")
+    def on(event: "connection", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_clientError")
+    def on(event: "clientError", listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_upgrade")
+    def on(
+      event: "upgrade",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_connect")
+    def on(
+      event: "connect",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_checkExpectation")
+    def on(event: "checkExpectation", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_request")
+    def on(event: "request", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_checkContinue")
+    def on(event: "checkContinue", listener: RequestListener[Request, Response]): this.type = js.native
     def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_checkContinue(event: checkContinue, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("on")
-    def on_checkExpectation(event: checkExpectation, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("on")
-    def on_clientError(event: clientError, listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_connect(
-      event: connect,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
-    @JSName("on")
-    def on_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_request(event: request, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("on")
-    def on_upgrade(
-      event: upgrade,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
     
+    @JSName("once")
+    @scala.annotation.targetName("once_listening")
+    def once(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_close")
+    def once(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_connection")
+    def once(event: "connection", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_error")
+    def once(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_clientError")
+    def once(event: "clientError", listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_connect")
+    def once(
+      event: "connect",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_upgrade")
+    def once(
+      event: "upgrade",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_checkContinue")
+    def once(event: "checkContinue", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_checkExpectation")
+    def once(event: "checkExpectation", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_request")
+    def once(event: "request", listener: RequestListener[Request, Response]): this.type = js.native
     def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_checkContinue(event: checkContinue, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("once")
-    def once_checkExpectation(event: checkExpectation, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("once")
-    def once_clientError(event: clientError, listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("once")
-    def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_connect(
-      event: connect,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
-    @JSName("once")
-    def once_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-    @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("once")
-    def once_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_request(event: request, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("once")
-    def once_upgrade(
-      event: upgrade,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
     
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_close")
+    def prependListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_listening")
+    def prependListener(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_connection")
+    def prependListener(event: "connection", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_error")
+    def prependListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_clientError")
+    def prependListener(event: "clientError", listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_upgrade")
+    def prependListener(
+      event: "upgrade",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_connect")
+    def prependListener(
+      event: "connect",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_checkContinue")
+    def prependListener(event: "checkContinue", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_checkExpectation")
+    def prependListener(event: "checkExpectation", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_request")
+    def prependListener(event: "request", listener: RequestListener[Request, Response]): this.type = js.native
     def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_checkContinue(event: checkContinue, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_checkExpectation(event: checkExpectation, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_clientError(event: clientError, listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_connect(
-      event: connect,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_request(event: request, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_upgrade(
-      event: upgrade,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
     
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_listening")
+    def prependOnceListener(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_close")
+    def prependOnceListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_connection")
+    def prependOnceListener(event: "connection", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_error")
+    def prependOnceListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_clientError")
+    def prependOnceListener(event: "clientError", listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_upgrade")
+    def prependOnceListener(
+      event: "upgrade",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_connect")
+    def prependOnceListener(
+      event: "connect",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_checkContinue")
+    def prependOnceListener(event: "checkContinue", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_checkExpectation")
+    def prependOnceListener(event: "checkExpectation", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_request")
+    def prependOnceListener(event: "request", listener: RequestListener[Request, Response]): this.type = js.native
     def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_checkContinue(event: checkContinue, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_checkExpectation(event: checkExpectation, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_clientError(event: clientError, listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_connect(
-      event: connect,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_request(event: request, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_upgrade(
-      event: upgrade,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
     
     /**
       * Sets the timeout value in milliseconds for receiving the entire request from
@@ -1772,7 +1879,7 @@ object httpMod {
       * Scheduling strategy to apply when picking the next free socket to use.
       * @default `lifo`
       */
-    var scheduling: js.UndefOr[fifo | lifo] = js.undefined
+    var scheduling: js.UndefOr["fifo" | "lifo"] = js.undefined
     
     /**
       * Socket timeout in milliseconds. This will set the timeout after the socket is connected.
@@ -1850,7 +1957,7 @@ object httpMod {
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      inline def setScheduling(value: fifo | lifo): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
+      inline def setScheduling(value: "fifo" | "lifo"): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
       
       inline def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
       

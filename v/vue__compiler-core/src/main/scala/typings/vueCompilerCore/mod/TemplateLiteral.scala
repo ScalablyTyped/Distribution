@@ -1,19 +1,17 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`22`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TemplateLiteral
   extends StObject
-     with Node2
-     with SSRCodegenNode {
+     with Node2 {
   
   var elements: js.Array[String | JSChildNode]
   
   @JSName("type")
-  var type_TemplateLiteral: `22`
+  var type_TemplateLiteral: 22
 }
 object TemplateLiteral {
   
@@ -29,6 +27,6 @@ object TemplateLiteral {
     
     inline def setElementsVarargs(value: (String | JSChildNode)*): Self = StObject.set(x, "elements", js.Array(value*))
     
-    inline def setType(value: `22`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 22): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

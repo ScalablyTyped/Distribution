@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JSDocParameterTag
   extends StObject
-     with JSDocPropertyLikeTag
-     with VariableLikeDeclaration {
+     with JSDocPropertyLikeTag {
   
   @JSName("kind")
   val kind_JSDocParameterTag: typings.typescript.mod.SyntaxKind.JSDocParameterTag = js.native

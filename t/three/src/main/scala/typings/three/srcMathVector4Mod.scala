@@ -5,8 +5,6 @@ import typings.three.srcCoreBufferAttributeMod.BufferAttribute
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathQuaternionMod.Quaternion
 import typings.three.srcMathVector2Mod.Vector
-import typings.three.threeBooleans.`true`
-import typings.three.threeInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -129,7 +127,7 @@ object srcMathVector4Mod {
     
     var height: Double = js.native
     
-    val isVector4: `true` = js.native
+    val isVector4: true = js.native
     
     /**
       * length():number;
@@ -271,6 +269,9 @@ object srcMathVector4Mod {
     def toArray(): Vector4Tuple = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+    @JSName("toArray")
+    @scala.annotation.targetName("toArray_0")
+    def toArray(array: Unit, offset: 0): Vector4Tuple = js.native
     def toArray(array: Unit, offset: Double): js.Array[Double] = js.native
     /**
       * Copies x, y, z and w into the provided array-like.
@@ -282,9 +283,8 @@ object srcMathVector4Mod {
     def toArray(array: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
     def toArray(array: Vector4Tuple): Vector4Tuple = js.native
     @JSName("toArray")
-    def toArray_0(array: Unit, offset: `0`): Vector4Tuple = js.native
-    @JSName("toArray")
-    def toArray_0(array: Vector4Tuple, offset: `0`): Vector4Tuple = js.native
+    @scala.annotation.targetName("toArray_0")
+    def toArray(array: Vector4Tuple, offset: 0): Vector4Tuple = js.native
     /**
       * Returns an array [x, y, z, w], or copies x, y, z and w into the provided array.
       * @param array (optional) array to store the vector to. If this is not provided, a new array will be created.

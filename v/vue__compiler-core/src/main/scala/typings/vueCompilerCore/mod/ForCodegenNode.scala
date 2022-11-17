@@ -1,6 +1,5 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait ForCodegenNode
   var children_ForCodegenNode: ForRenderListExpression
   
   @JSName("isBlock")
-  var isBlock_ForCodegenNode: `true`
+  var isBlock_ForCodegenNode: true
   
   @JSName("patchFlag")
   var patchFlag_ForCodegenNode: String
@@ -44,7 +43,7 @@ object ForCodegenNode {
     
     inline def setChildren(value: ForRenderListExpression): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setIsBlock(value: `true`): Self = StObject.set(x, "isBlock", value.asInstanceOf[js.Any])
+    inline def setIsBlock(value: true): Self = StObject.set(x, "isBlock", value.asInstanceOf[js.Any])
     
     inline def setPatchFlag(value: String): Self = StObject.set(x, "patchFlag", value.asInstanceOf[js.Any])
     

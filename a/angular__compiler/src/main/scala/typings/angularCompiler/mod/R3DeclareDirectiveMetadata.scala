@@ -21,6 +21,11 @@ trait R3DeclareDirectiveMetadata
   var host: js.UndefOr[Attributes] = js.undefined
   
   /**
+    * Additional directives applied to the directive host.
+    */
+  var hostDirectives: js.UndefOr[js.Array[R3DeclareHostDirectiveMetadata]] = js.undefined
+  
+  /**
     * A mapping of inputs from class property names to binding property names, or to a tuple of
     * binding property name and class property name if the names are different.
     */
@@ -83,6 +88,12 @@ object R3DeclareDirectiveMetadata {
     inline def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value*))
     
     inline def setHost(value: Attributes): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostDirectives(value: js.Array[R3DeclareHostDirectiveMetadata]): Self = StObject.set(x, "hostDirectives", value.asInstanceOf[js.Any])
+    
+    inline def setHostDirectivesUndefined: Self = StObject.set(x, "hostDirectives", js.undefined)
+    
+    inline def setHostDirectivesVarargs(value: R3DeclareHostDirectiveMetadata*): Self = StObject.set(x, "hostDirectives", js.Array(value*))
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     

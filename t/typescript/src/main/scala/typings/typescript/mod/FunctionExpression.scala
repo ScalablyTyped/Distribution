@@ -8,11 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FunctionExpression
   extends StObject
      with PrimaryExpression
-     with FunctionLikeDeclarationBase
-     with FunctionLikeDeclaration
-     with HasJSDoc
-     with HasModifiers
-     with SignatureDeclaration {
+     with FunctionLikeDeclarationBase {
   
   @JSName("body")
   val body_FunctionExpression: FunctionBody = js.native

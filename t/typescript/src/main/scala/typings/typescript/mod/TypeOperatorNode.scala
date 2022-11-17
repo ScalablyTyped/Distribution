@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeOperatorNode
   extends StObject
-     with TypeNode
-     with HasType {
+     with TypeNode {
   
   @JSName("kind")
   val kind_TypeOperatorNode: TypeOperator = js.native

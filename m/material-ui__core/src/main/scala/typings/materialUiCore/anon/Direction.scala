@@ -1,7 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.asc
-import typings.materialUiCore.materialUiCoreStrings.desc
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +11,7 @@ trait Direction extends StObject {
   
   var active: js.UndefOr[Boolean] = js.undefined
   
-  var direction: js.UndefOr[asc | desc] = js.undefined
+  var direction: js.UndefOr["asc" | "desc"] = js.undefined
   
   var hideSortIcon: js.UndefOr[Boolean] = js.undefined
 }
@@ -30,7 +28,7 @@ object Direction {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: "asc" | "desc"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     

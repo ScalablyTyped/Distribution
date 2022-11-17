@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.babelParser.mod.ParserOptions
 import typings.babelTemplate.anon.FnCall
-import typings.babelTemplate.babelTemplateBooleans.`false`
 import typings.babelTypes.mod.Expression
 import typings.babelTypes.mod.Program_
 import typings.babelTypes.mod.Statement
@@ -180,7 +179,7 @@ object mod extends Shortcut {
       *
       * @default /^[_$A-Z0-9]+$/
       */
-    var placeholderPattern: js.UndefOr[js.RegExp | `false` | Null] = js.undefined
+    var placeholderPattern: js.UndefOr[js.RegExp | false | Null] = js.undefined
     
     /**
       * A set of placeholder names to automatically accept.
@@ -217,7 +216,7 @@ object mod extends Shortcut {
     
     extension [Self <: TemplateBuilderOptions](x: Self) {
       
-      inline def setPlaceholderPattern(value: js.RegExp | `false`): Self = StObject.set(x, "placeholderPattern", value.asInstanceOf[js.Any])
+      inline def setPlaceholderPattern(value: js.RegExp | false): Self = StObject.set(x, "placeholderPattern", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderPatternNull: Self = StObject.set(x, "placeholderPattern", null)
       

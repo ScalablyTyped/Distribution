@@ -1,6 +1,5 @@
 package typings.typescript.mod
 
-import typings.typescript.typescriptStrings.retrigger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The language service will unconditionally attempt to provide a result.
   * `triggerCharacter` can be `undefined` for a retrigger caused by a cursor move.
   */
-trait SignatureHelpRetriggeredReason
-  extends StObject
-     with SignatureHelpTriggerReason {
+trait SignatureHelpRetriggeredReason extends StObject {
   
-  var kind: retrigger
+  var kind: "retrigger"
   
   /**
     * Character that was responsible for triggering signature help.
@@ -31,7 +28,7 @@ object SignatureHelpRetriggeredReason {
   
   extension [Self <: SignatureHelpRetriggeredReason](x: Self) {
     
-    inline def setKind(value: retrigger): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "retrigger"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setTriggerCharacter(value: SignatureHelpRetriggerCharacter): Self = StObject.set(x, "triggerCharacter", value.asInstanceOf[js.Any])
     

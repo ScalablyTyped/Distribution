@@ -20,30 +20,6 @@ import typings.reactNativeVectorIcons.anon.KinFontAwesome5IconVarian
 import typings.reactNativeVectorIcons.iconMod.Icon.TabBarItem
 import typings.reactNativeVectorIcons.iconMod.Icon.TabBarItemIOS
 import typings.reactNativeVectorIcons.iconMod.ImageSource
-import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`0`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`1`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`2`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`3`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.`no-hide-descendants`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.all
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.assertive
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.auto
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.balanced
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.clip
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.email
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.full
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.head
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.highQuality
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.link
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.middle
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.no
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.none
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.normal
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.phoneNumber
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.polite
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.simple
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.tail
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.yes
 import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
@@ -110,23 +86,23 @@ object fontAwesome5Mod {
     
     @JSImport("react-native-vector-icons/FontAwesome5", "FA5Style.brand")
     @js.native
-    def brand: `3` = js.native
-    inline def brand_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("brand")(x.asInstanceOf[js.Any])
+    def brand: 3 = js.native
+    inline def brand_=(x: 3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("brand")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-vector-icons/FontAwesome5", "FA5Style.light")
     @js.native
-    def light: `1` = js.native
-    inline def light_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("light")(x.asInstanceOf[js.Any])
+    def light: 1 = js.native
+    inline def light_=(x: 1): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("light")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-vector-icons/FontAwesome5", "FA5Style.regular")
     @js.native
-    def regular: `0` = js.native
-    inline def regular_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regular")(x.asInstanceOf[js.Any])
+    def regular: 0 = js.native
+    inline def regular_=(x: 0): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regular")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-vector-icons/FontAwesome5", "FA5Style.solid")
     @js.native
-    def solid: `2` = js.native
-    inline def solid_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("solid")(x.asInstanceOf[js.Any])
+    def solid: 2 = js.native
+    inline def solid_=(x: 2): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("solid")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-native-vector-icons/FontAwesome5", "FontAwesome5IconButton")
@@ -194,7 +170,7 @@ object fontAwesome5Mod {
       * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
       * @platform android
       */
-    var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+    var accessibilityLiveRegion: js.UndefOr["none" | "polite" | "assertive"] = js.undefined
     
     /**
       * Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on Android the type of element that is focused on.
@@ -238,7 +214,7 @@ object fontAwesome5Mod {
     /**
       * Hyphenation strategy
       */
-    var android_hyphenationFrequency: js.UndefOr[normal | none | full] = js.undefined
+    var android_hyphenationFrequency: js.UndefOr["normal" | "none" | "full"] = js.undefined
     
     var brand: js.UndefOr[Boolean] = js.undefined
     
@@ -254,7 +230,7 @@ object fontAwesome5Mod {
       * Determines the types of data converted to clickable URLs in the text element.
       * By default no data types are detected.
       */
-    var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all] = js.undefined
+    var dataDetectorType: js.UndefOr[Null | "phoneNumber" | "link" | "email" | "none" | "all"] = js.undefined
     
     /**
       * Specifies the disabled state of the text view for testing purposes.
@@ -278,7 +254,7 @@ object fontAwesome5Mod {
       *
       * > `clip` is working only for iOS
       */
-    var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
+    var ellipsizeMode: js.UndefOr["head" | "middle" | "tail" | "clip"] = js.undefined
     
     /**
       * Controls how view is important for accessibility which is if it fires accessibility events
@@ -291,7 +267,7 @@ object fontAwesome5Mod {
       *      'no' - The view is not important for accessibility.
       *      'no-hide-descendants' - The view is not important for accessibility, nor are any of its descendant views.
       */
-    var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+    var importantForAccessibility: js.UndefOr["auto" | "yes" | "no" | "no-hide-descendants"] = js.undefined
     
     var light: js.UndefOr[Boolean] = js.undefined
     
@@ -299,7 +275,7 @@ object fontAwesome5Mod {
       * Line Break mode. Works only with numberOfLines.
       * clip is working only for iOS
       */
-    var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.undefined
+    var lineBreakMode: js.UndefOr["head" | "middle" | "tail" | "clip"] = js.undefined
     
     /**
       * Specifies largest possible scale a font can reach when allowFontScaling is enabled. Possible values:
@@ -426,7 +402,7 @@ object fontAwesome5Mod {
       * Set text break strategy on Android API Level 23+
       * default is `highQuality`.
       */
-    var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
+    var textBreakStrategy: js.UndefOr["simple" | "highQuality" | "balanced"] = js.undefined
   }
   object FontAwesome5IconProps {
     
@@ -469,7 +445,7 @@ object fontAwesome5Mod {
       
       inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
       
-      inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+      inline def setAccessibilityLiveRegion(value: "none" | "polite" | "assertive"): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
       
       inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
       
@@ -501,7 +477,7 @@ object fontAwesome5Mod {
       
       inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
       
-      inline def setAndroid_hyphenationFrequency(value: normal | none | full): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
+      inline def setAndroid_hyphenationFrequency(value: "normal" | "none" | "full"): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
       
       inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
       
@@ -517,7 +493,7 @@ object fontAwesome5Mod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setDataDetectorType(value: phoneNumber | link | email | none | all): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
+      inline def setDataDetectorType(value: "phoneNumber" | "link" | "email" | "none" | "all"): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
       
       inline def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
       
@@ -527,11 +503,11 @@ object fontAwesome5Mod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
+      inline def setEllipsizeMode(value: "head" | "middle" | "tail" | "clip"): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
       
       inline def setEllipsizeModeUndefined: Self = StObject.set(x, "ellipsizeMode", js.undefined)
       
-      inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+      inline def setImportantForAccessibility(value: "auto" | "yes" | "no" | "no-hide-descendants"): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
       
       inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
       
@@ -539,7 +515,7 @@ object fontAwesome5Mod {
       
       inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
       
-      inline def setLineBreakMode(value: head | middle | tail | clip): Self = StObject.set(x, "lineBreakMode", value.asInstanceOf[js.Any])
+      inline def setLineBreakMode(value: "head" | "middle" | "tail" | "clip"): Self = StObject.set(x, "lineBreakMode", value.asInstanceOf[js.Any])
       
       inline def setLineBreakModeUndefined: Self = StObject.set(x, "lineBreakMode", js.undefined)
       
@@ -633,27 +609,22 @@ object fontAwesome5Mod {
       
       inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
       
-      inline def setTextBreakStrategy(value: simple | highQuality | balanced): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
+      inline def setTextBreakStrategy(value: "simple" | "highQuality" | "balanced"): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
       
       inline def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
     }
   }
   
-  /* Inlined keyof react-native-vector-icons.react-native-vector-icons/FontAwesome5.Omit<{  regular :0,   light :1,   solid :2,   brand :3}, 'regular'> */
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.light
-    - typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.solid
-    - typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.brand
-  */
-  trait FontAwesome5IconVariants extends StObject
   object FontAwesome5IconVariants {
     
-    inline def brand: typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.brand = "brand".asInstanceOf[typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.brand]
+    inline def brand: "brand" = "brand".asInstanceOf["brand"]
     
-    inline def light: typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.light = "light".asInstanceOf[typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.light]
+    inline def light: "light" = "light".asInstanceOf["light"]
     
-    inline def solid: typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.solid = "solid".asInstanceOf[typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.solid]
+    inline def solid: "solid" = "solid".asInstanceOf["solid"]
   }
+  /* Inlined keyof react-native-vector-icons.react-native-vector-icons/FontAwesome5.Omit<{  regular :0,   light :1,   solid :2,   brand :3}, 'regular'> */
+  type FontAwesome5IconVariants = "light" | "solid" | "brand"
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   

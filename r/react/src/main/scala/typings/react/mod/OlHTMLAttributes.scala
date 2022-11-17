@@ -1,10 +1,5 @@
 package typings.react.mod
 
-import typings.react.reactStrings.A
-import typings.react.reactStrings.I
-import typings.react.reactStrings.`1`
-import typings.react.reactStrings.a_
-import typings.react.reactStrings.i_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +12,7 @@ trait OlHTMLAttributes[T]
   
   var start: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[`1` | a_ | A | i_ | I] = js.undefined
+  var `type`: js.UndefOr["1" | "a" | "A" | "i" | "I"] = js.undefined
 }
 object OlHTMLAttributes {
   
@@ -36,7 +31,7 @@ object OlHTMLAttributes {
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    inline def setType(value: `1` | a_ | A | i_ | I): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "1" | "a" | "A" | "i" | "I"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

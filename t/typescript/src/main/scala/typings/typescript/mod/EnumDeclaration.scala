@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EnumDeclaration
   extends StObject
-     with DeclarationStatement
-     with HasJSDoc
-     with HasModifiers {
+     with DeclarationStatement {
   
   @JSName("kind")
   val kind_EnumDeclaration: typings.typescript.mod.SyntaxKind.EnumDeclaration = js.native

@@ -28,7 +28,7 @@ object examplesJsmObjectsRefractorMod {
     def getRenderTarget(): WebGLRenderTarget = js.native
     
     @JSName("type")
-    var type_Refractor: typings.three.threeStrings.Refractor = js.native
+    var type_Refractor: "Refractor" = js.native
   }
   
   trait RefractorOptions extends StObject {

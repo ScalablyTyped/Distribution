@@ -1,7 +1,6 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.materialUiCoreStrings.span
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.sliderSliderMod.SliderTypeMap
 import org.scalablytyped.runtime.StObject
@@ -22,10 +21,10 @@ object sliderMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Slider", JSImport.Default)
   @js.native
-  val default: OverridableComponent[SliderTypeMap[js.Object, span]] = js.native
+  val default: OverridableComponent[SliderTypeMap[js.Object, "span"]] = js.native
   
-  type _To = OverridableComponent[SliderTypeMap[js.Object, span]]
+  type _To = OverridableComponent[SliderTypeMap[js.Object, "span"]]
   
   /* This means you don't have to write `default`, but can instead just say `sliderMod.foo` */
-  override def _to: OverridableComponent[SliderTypeMap[js.Object, span]] = default
+  override def _to: OverridableComponent[SliderTypeMap[js.Object, "span"]] = default
 }

@@ -70,7 +70,7 @@ trait HostBindingOpCodes
   extends StObject
      with Array[Double | HostBindingsFunction[Any]] {
   
-  var __brand__ : typings.angularCore.angularCoreStrings.HostBindingOpCodes = js.native
+  var __brand__ : "HostBindingOpCodes" = js.native
   
   var debug: js.UndefOr[js.Array[String]] = js.native
 }

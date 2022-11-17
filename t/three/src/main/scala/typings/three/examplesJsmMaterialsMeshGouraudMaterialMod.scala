@@ -2,7 +2,6 @@ package typings.three
 
 import typings.three.srcMaterialsShaderMaterialMod.ShaderMaterialParameters
 import typings.three.srcThreeMod.ShaderMaterial
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +15,9 @@ object examplesJsmMaterialsMeshGouraudMaterialMod {
     
     def copy(source: MeshGouraudMaterial): this.type = js.native
     
-    var isMeshGouraudMaterial: `true` = js.native
+    var isMeshGouraudMaterial: true = js.native
     
     @JSName("type")
-    var type_MeshGouraudMaterial: typings.three.threeStrings.MeshGouraudMaterial = js.native
+    var type_MeshGouraudMaterial: "MeshGouraudMaterial" = js.native
   }
 }

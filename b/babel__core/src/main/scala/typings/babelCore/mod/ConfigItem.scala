@@ -1,7 +1,6 @@
 package typings.babelCore.mod
 
 import typings.babelCore.anon.Request
-import typings.babelCore.babelCoreBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ trait ConfigItem extends StObject {
   /**
     * The options object passed to the plugin.
     */
-  var options: js.UndefOr[js.Object | `false`] = js.undefined
+  var options: js.UndefOr[js.Object | false] = js.undefined
   
   /**
     * The resolved value of the plugin.
@@ -55,7 +54,7 @@ object ConfigItem {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOptions(value: js.Object | `false`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Object | false): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     

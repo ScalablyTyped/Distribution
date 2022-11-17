@@ -16,15 +16,6 @@ import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
-import typings.styledComponents.styledComponentsStrings.`no-hide-descendants`
-import typings.styledComponents.styledComponentsStrings.assertive
-import typings.styledComponents.styledComponentsStrings.auto
-import typings.styledComponents.styledComponentsStrings.no
-import typings.styledComponents.styledComponentsStrings.none
-import typings.styledComponents.styledComponentsStrings.polite
-import typings.styledComponents.styledComponentsStrings.resize
-import typings.styledComponents.styledComponentsStrings.scale
-import typings.styledComponents.styledComponentsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +37,7 @@ trait ReadonlyImageProps extends StObject {
   
   val accessibilityLanguage: js.UndefOr[String] = js.undefined
   
-  val accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+  val accessibilityLiveRegion: js.UndefOr["none" | "polite" | "assertive"] = js.undefined
   
   val accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
@@ -76,7 +67,7 @@ trait ReadonlyImageProps extends StObject {
   
   val fadeDuration: js.UndefOr[Double] = js.undefined
   
-  val importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+  val importantForAccessibility: js.UndefOr["auto" | "yes" | "no" | "no-hide-descendants"] = js.undefined
   
   val loadingIndicatorSource: js.UndefOr[ImageURISource] = js.undefined
   
@@ -106,7 +97,7 @@ trait ReadonlyImageProps extends StObject {
   
   val progressiveRenderingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  val resizeMethod: js.UndefOr[auto | resize | scale] = js.undefined
+  val resizeMethod: js.UndefOr["auto" | "resize" | "scale"] = js.undefined
   
   val resizeMode: js.UndefOr[ImageResizeMode] = js.undefined
   
@@ -157,7 +148,7 @@ object ReadonlyImageProps {
     
     inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
     
-    inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLiveRegion(value: "none" | "polite" | "assertive"): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
     
@@ -217,7 +208,7 @@ object ReadonlyImageProps {
     
     inline def setFadeDurationUndefined: Self = StObject.set(x, "fadeDuration", js.undefined)
     
-    inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+    inline def setImportantForAccessibility(value: "auto" | "yes" | "no" | "no-hide-descendants"): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
@@ -277,7 +268,7 @@ object ReadonlyImageProps {
     
     inline def setProgressiveRenderingEnabledUndefined: Self = StObject.set(x, "progressiveRenderingEnabled", js.undefined)
     
-    inline def setResizeMethod(value: auto | resize | scale): Self = StObject.set(x, "resizeMethod", value.asInstanceOf[js.Any])
+    inline def setResizeMethod(value: "auto" | "resize" | "scale"): Self = StObject.set(x, "resizeMethod", value.asInstanceOf[js.Any])
     
     inline def setResizeMethodUndefined: Self = StObject.set(x, "resizeMethod", js.undefined)
     

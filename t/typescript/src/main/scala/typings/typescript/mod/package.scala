@@ -9,24 +9,92 @@ import typings.typescript.anon.ExpressionWithTypeArgumen
 import typings.typescript.anon.FileExists
 import typings.typescript.anon.FnCall
 import typings.typescript.anon.ImpliedNodeFormat
+import typings.typescript.anon.ImportClausereadonlyisTyp
+import typings.typescript.anon.ImportEqualsDeclarationre
 import typings.typescript.anon.Metadata
+import typings.typescript.anon.NamespaceImportreadonlypa
 import typings.typescript.anon.Options
+import typings.typescript.anon.readonlyisTypeOnlytrueExp
+import typings.typescript.anon.readonlyisTypeOnlytrueImp
+import typings.typescript.anon.readonlyparentNamedExport
+import typings.typescript.anon.readonlyparentNamedImport
 import typings.typescript.mod.ModuleKind.CommonJS
 import typings.typescript.mod.ModuleKind.ESNext
+import typings.typescript.mod.SyntaxKind.AmpersandAmpersandEqualsToken
+import typings.typescript.mod.SyntaxKind.AmpersandAmpersandToken
+import typings.typescript.mod.SyntaxKind.AmpersandEqualsToken
+import typings.typescript.mod.SyntaxKind.AmpersandToken
+import typings.typescript.mod.SyntaxKind.AnyKeyword
+import typings.typescript.mod.SyntaxKind.AsteriskAsteriskEqualsToken
 import typings.typescript.mod.SyntaxKind.AsteriskAsteriskToken
+import typings.typescript.mod.SyntaxKind.AsteriskEqualsToken
+import typings.typescript.mod.SyntaxKind.AtToken
+import typings.typescript.mod.SyntaxKind.BacktickToken
+import typings.typescript.mod.SyntaxKind.BarBarEqualsToken
+import typings.typescript.mod.SyntaxKind.BarBarToken
+import typings.typescript.mod.SyntaxKind.BarEqualsToken
+import typings.typescript.mod.SyntaxKind.BarToken
+import typings.typescript.mod.SyntaxKind.BigIntKeyword
+import typings.typescript.mod.SyntaxKind.BooleanKeyword
+import typings.typescript.mod.SyntaxKind.CaretEqualsToken
+import typings.typescript.mod.SyntaxKind.CaretToken
+import typings.typescript.mod.SyntaxKind.CloseBraceToken
+import typings.typescript.mod.SyntaxKind.CloseBracketToken
+import typings.typescript.mod.SyntaxKind.CommaToken
+import typings.typescript.mod.SyntaxKind.ConflictMarkerTrivia
+import typings.typescript.mod.SyntaxKind.EqualsEqualsEqualsToken
+import typings.typescript.mod.SyntaxKind.EqualsEqualsToken
+import typings.typescript.mod.SyntaxKind.ExclamationEqualsEqualsToken
+import typings.typescript.mod.SyntaxKind.ExclamationEqualsToken
 import typings.typescript.mod.SyntaxKind.ExtendsKeyword
+import typings.typescript.mod.SyntaxKind.GreaterThanEqualsToken
+import typings.typescript.mod.SyntaxKind.GreaterThanGreaterThanEqualsToken
+import typings.typescript.mod.SyntaxKind.GreaterThanGreaterThanGreaterThanEqualsToken
+import typings.typescript.mod.SyntaxKind.GreaterThanGreaterThanGreaterThanToken
+import typings.typescript.mod.SyntaxKind.GreaterThanGreaterThanToken
+import typings.typescript.mod.SyntaxKind.GreaterThanToken
+import typings.typescript.mod.SyntaxKind.HashToken
 import typings.typescript.mod.SyntaxKind.ImplementsKeyword
 import typings.typescript.mod.SyntaxKind.ImportKeyword
+import typings.typescript.mod.SyntaxKind.InstanceOfKeyword
+import typings.typescript.mod.SyntaxKind.IntrinsicKeyword
+import typings.typescript.mod.SyntaxKind.JsxTextAllWhiteSpaces
 import typings.typescript.mod.SyntaxKind.KeyOfKeyword
+import typings.typescript.mod.SyntaxKind.LessThanEqualsToken
+import typings.typescript.mod.SyntaxKind.LessThanLessThanEqualsToken
+import typings.typescript.mod.SyntaxKind.LessThanLessThanToken
+import typings.typescript.mod.SyntaxKind.LessThanSlashToken
+import typings.typescript.mod.SyntaxKind.LessThanToken
+import typings.typescript.mod.SyntaxKind.MinusEqualsToken
+import typings.typescript.mod.SyntaxKind.MinusMinusToken
 import typings.typescript.mod.SyntaxKind.MultiLineCommentTrivia
+import typings.typescript.mod.SyntaxKind.NeverKeyword
 import typings.typescript.mod.SyntaxKind.NewKeyword
+import typings.typescript.mod.SyntaxKind.NewLineTrivia
+import typings.typescript.mod.SyntaxKind.NumberKeyword
+import typings.typescript.mod.SyntaxKind.ObjectKeyword
+import typings.typescript.mod.SyntaxKind.OpenBraceToken
+import typings.typescript.mod.SyntaxKind.OpenBracketToken
+import typings.typescript.mod.SyntaxKind.PercentEqualsToken
+import typings.typescript.mod.SyntaxKind.PercentToken
+import typings.typescript.mod.SyntaxKind.PlusEqualsToken
+import typings.typescript.mod.SyntaxKind.PlusPlusToken
+import typings.typescript.mod.SyntaxKind.QuestionQuestionEqualsToken
+import typings.typescript.mod.SyntaxKind.QuestionQuestionToken
+import typings.typescript.mod.SyntaxKind.ShebangTrivia
 import typings.typescript.mod.SyntaxKind.SingleLineCommentTrivia
+import typings.typescript.mod.SyntaxKind.SlashEqualsToken
+import typings.typescript.mod.SyntaxKind.SlashToken
+import typings.typescript.mod.SyntaxKind.StringKeyword
+import typings.typescript.mod.SyntaxKind.SymbolKeyword
+import typings.typescript.mod.SyntaxKind.TildeToken
+import typings.typescript.mod.SyntaxKind.UndefinedKeyword
 import typings.typescript.mod.SyntaxKind.UniqueKeyword
+import typings.typescript.mod.SyntaxKind.Unknown
+import typings.typescript.mod.SyntaxKind.UnknownKeyword
+import typings.typescript.mod.SyntaxKind.VoidKeyword
+import typings.typescript.mod.SyntaxKind.WhitespaceTrivia
 import typings.typescript.mod.^
-import typings.typescript.typescriptBooleans.`false`
-import typings.typescript.typescriptStrings.dts
-import typings.typescript.typescriptStrings.js_
-import typings.typescript.typescriptStrings.quit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -5444,8 +5512,10 @@ inline def createUnionTypeNode(types: js.Array[TypeNode]): UnionTypeNode = ^.asI
 inline def createUniqueName(text: java.lang.String): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createUniqueName")(text.asInstanceOf[js.Any]).asInstanceOf[Identifier]
 inline def createUniqueName(text: java.lang.String, flags: GeneratedIdentifierFlags): Identifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createUniqueName")(text.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Identifier]
 
-inline def createUnparsedSourceFile(inputFile: InputFiles, `type`: js_ | dts): UnparsedSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnparsedSourceFile")(inputFile.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnparsedSource]
-inline def createUnparsedSourceFile(inputFile: InputFiles, `type`: js_ | dts, stripInternal: Boolean): UnparsedSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnparsedSourceFile")(inputFile.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stripInternal.asInstanceOf[js.Any])).asInstanceOf[UnparsedSource]
+@scala.annotation.targetName("createUnparsedSourceFile_js_dts")
+inline def createUnparsedSourceFile(inputFile: InputFiles, `type`: "js" | "dts"): UnparsedSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnparsedSourceFile")(inputFile.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnparsedSource]
+@scala.annotation.targetName("createUnparsedSourceFile_js_dts")
+inline def createUnparsedSourceFile(inputFile: InputFiles, `type`: "js" | "dts", stripInternal: Boolean): UnparsedSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnparsedSourceFile")(inputFile.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stripInternal.asInstanceOf[js.Any])).asInstanceOf[UnparsedSource]
 inline def createUnparsedSourceFile(text: java.lang.String): UnparsedSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnparsedSourceFile")(text.asInstanceOf[js.Any]).asInstanceOf[UnparsedSource]
 inline def createUnparsedSourceFile(text: java.lang.String, mapPath: java.lang.String): UnparsedSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnparsedSourceFile")(text.asInstanceOf[js.Any], mapPath.asInstanceOf[js.Any])).asInstanceOf[UnparsedSource]
 inline def createUnparsedSourceFile(text: java.lang.String, mapPath: java.lang.String, map: java.lang.String): UnparsedSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnparsedSourceFile")(text.asInstanceOf[js.Any], mapPath.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[UnparsedSource]
@@ -5834,6 +5904,10 @@ inline def escapeLeadingUnderscores(identifier: java.lang.String): String = ^.as
 
 inline def factory: NodeFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("factory").asInstanceOf[NodeFactory]
 
+@scala.annotation.targetName("findAncestor_quit")
+inline def findAncestor(node: Unit, callback: js.Function1[/* element */ Node, Boolean | "quit"]): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAncestor")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
+@scala.annotation.targetName("findAncestor_quit")
+inline def findAncestor(node: Node, callback: js.Function1[/* element */ Node, Boolean | "quit"]): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAncestor")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
 inline def findAncestor[T /* <: Node */](node: Unit, callback: js.Function1[/* element */ Node, /* is T */ Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAncestor")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
 /**
   * Iterates through the parent chain of a node and performs the callback on each parent until the callback
@@ -5842,9 +5916,6 @@ inline def findAncestor[T /* <: Node */](node: Unit, callback: js.Function1[/* e
   * At that point findAncestor returns undefined.
   */
 inline def findAncestor[T /* <: Node */](node: Node, callback: js.Function1[/* element */ Node, /* is T */ Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAncestor")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-
-inline def findAncestor_quit(node: Unit, callback: js.Function1[/* element */ Node, Boolean | quit]): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAncestor")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
-inline def findAncestor_quit(node: Node, callback: js.Function1[/* element */ Node, Boolean | quit]): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAncestor")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
 
 inline def findConfigFile(searchPath: java.lang.String, fileExists: js.Function1[/* fileName */ java.lang.String, Boolean]): js.UndefOr[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("findConfigFile")(searchPath.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String]]
 inline def findConfigFile(
@@ -6514,9 +6585,9 @@ inline def isInterfaceDeclaration(node: Node): /* is typescript.typescript.Inter
 
 inline def isIntersectionTypeNode(node: Node): /* is typescript.typescript.IntersectionTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIntersectionTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.IntersectionTypeNode */ Boolean]
 
+@scala.annotation.targetName("isIterationStatement_false")
+inline def isIterationStatement(node: Node, lookInLabeledStatements: false): /* is typescript.typescript.IterationStatement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIterationStatement")(node.asInstanceOf[js.Any], lookInLabeledStatements.asInstanceOf[js.Any])).asInstanceOf[/* is typescript.typescript.IterationStatement */ Boolean]
 inline def isIterationStatement(node: Node, lookInLabeledStatements: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIterationStatement")(node.asInstanceOf[js.Any], lookInLabeledStatements.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-
-inline def isIterationStatement_false(node: Node, lookInLabeledStatements: `false`): /* is typescript.typescript.IterationStatement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIterationStatement")(node.asInstanceOf[js.Any], lookInLabeledStatements.asInstanceOf[js.Any])).asInstanceOf[/* is typescript.typescript.IterationStatement */ Boolean]
 
 inline def isJSDoc(node: Node): /* is typescript.typescript.JSDoc */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSDoc")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JSDoc */ Boolean]
 
@@ -11585,41 +11656,43 @@ inline def walkUpBindingElementsAndPatterns(binding: BindingElement): VariableDe
 
 type AbstractKeyword = ModifierToken[typings.typescript.mod.SyntaxKind.AbstractKeyword]
 
+type AccessExpression = PropertyAccessExpression | ElementAccessExpression
+
 type AccessibilityModifier = PublicKeyword | PrivateKeyword | ProtectedKeyword
 
+type AccessorDeclaration = GetAccessorDeclaration | SetAccessorDeclaration
+
 type AccessorKeyword = ModifierToken[typings.typescript.mod.SyntaxKind.AccessorKeyword]
+
+type AdditiveOperator = typings.typescript.mod.SyntaxKind.PlusToken | typings.typescript.mod.SyntaxKind.MinusToken
 
 type AdditiveOperatorOrHigher = MultiplicativeOperatorOrHigher | AdditiveOperator
 
 type AffectedFileResult[T] = js.UndefOr[Affected[T]]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.typescript.mod.BindingElement
-  - typings.typescript.mod.OmittedExpression
-  - typings.typescript.mod.SpreadElement
-  - typings.typescript.mod.ArrayLiteralExpression
-  - typings.typescript.mod.ObjectLiteralExpression
-  - typings.typescript.mod.AssignmentExpression[typings.typescript.mod.EqualsToken]
-  - typings.typescript.mod.Identifier
-  - typings.typescript.mod.PropertyAccessExpression
-  - typings.typescript.mod.ElementAccessExpression
-*/
-type ArrayBindingOrAssignmentElement = _ArrayBindingOrAssignmentElement | AssignmentExpression[EqualsToken]
+type ArrayBindingElement = BindingElement | OmittedExpression
+
+type ArrayBindingOrAssignmentElement = BindingElement | OmittedExpression | SpreadElement | ArrayLiteralExpression | ObjectLiteralExpression | AssignmentExpression[EqualsToken] | Identifier | PropertyAccessExpression | ElementAccessExpression
+
+type ArrayBindingOrAssignmentPattern = ArrayBindingPattern | ArrayLiteralExpression
 
 type AssertKeyword = KeywordToken[typings.typescript.mod.SyntaxKind.AssertKeyword]
+
+type AssertionExpression = TypeAssertion | AsExpression
+
+type AssertionKey = Identifier | StringLiteral
 
 type AssertsKeyword = KeywordToken[typings.typescript.mod.SyntaxKind.AssertsKeyword]
 
 type AssertsToken = AssertsKeyword
 
-/* Rewritten from type alias, can be one of: 
-  - typings.typescript.mod.SyntaxKind.QuestionQuestionToken
-  - typings.typescript.mod.LogicalOperatorOrHigher
-  - typings.typescript.mod.AssignmentOperator
-*/
-type AssignmentOperatorOrHigher = _AssignmentOperatorOrHigher | LogicalOperatorOrHigher
+type AssignmentOperator = typings.typescript.mod.SyntaxKind.EqualsToken | CompoundAssignmentOperator
+
+type AssignmentOperatorOrHigher = QuestionQuestionToken | LogicalOperatorOrHigher | AssignmentOperator
 
 type AssignmentOperatorToken = Token[AssignmentOperator]
+
+type AssignmentPattern = ObjectLiteralExpression | ArrayLiteralExpression
 
 type AsteriskToken = PunctuationToken[typings.typescript.mod.SyntaxKind.AsteriskToken]
 
@@ -11631,30 +11704,37 @@ type AwaitKeywordToken = AwaitKeyword
 
 type BaseType = ObjectType | IntersectionType | TypeVariable
 
-/* Rewritten from type alias, can be one of: 
-  - typings.typescript.mod.AssignmentOperatorOrHigher
-  - typings.typescript.mod.SyntaxKind.CommaToken
-*/
-type BinaryOperator = _BinaryOperator | LogicalOperatorOrHigher
+type BinaryOperator = AssignmentOperatorOrHigher | CommaToken
 
 type BinaryOperatorToken = Token[BinaryOperator]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.typescript.mod.VariableDeclaration
-  - typings.typescript.mod.ParameterDeclaration
-  - typings.typescript.mod.ObjectBindingOrAssignmentElement
-  - typings.typescript.mod.ArrayBindingOrAssignmentElement
-*/
-type BindingOrAssignmentElement = _BindingOrAssignmentElement | AssignmentExpression[EqualsToken]
+type BindingName = Identifier | BindingPattern
 
-/* Rewritten from type alias, can be one of: 
-  - typings.typescript.mod.DotDotDotToken
-  - typings.typescript.mod.SpreadElement
-  - typings.typescript.mod.SpreadAssignment
-*/
-type BindingOrAssignmentElementRestIndicator = _BindingOrAssignmentElementRestIndicator | DotDotDotToken
+type BindingOrAssignmentElement = VariableDeclaration | ParameterDeclaration | ObjectBindingOrAssignmentElement | ArrayBindingOrAssignmentElement
+
+type BindingOrAssignmentElementRestIndicator = DotDotDotToken | SpreadElement | SpreadAssignment
+
+type BindingOrAssignmentElementTarget = BindingOrAssignmentPattern | Identifier | PropertyAccessExpression | ElementAccessExpression | OmittedExpression
+
+type BindingOrAssignmentPattern = ObjectBindingOrAssignmentPattern | ArrayBindingOrAssignmentPattern
+
+type BindingPattern = ObjectBindingPattern | ArrayBindingPattern
+
+type BitwiseOperator = AmpersandToken | BarToken | CaretToken
 
 type BitwiseOperatorOrHigher = EqualityOperatorOrHigher | BitwiseOperator
+
+type BlockLike = SourceFile | Block | ModuleBlock | CaseOrDefaultClause
+
+type BooleanLiteral = TrueLiteral | FalseLiteral
+
+type BreakOrContinueStatement = BreakStatement | ContinueStatement
+
+type CallLikeExpression = CallExpression | NewExpression | TaggedTemplateExpression | Decorator | JsxOpeningLikeElement
+
+type CaseOrDefaultClause = CaseClause | DefaultClause
+
+type ClassLikeDeclaration = ClassDeclaration | ClassExpression
 
 type ClassMemberModifier = AccessibilityModifier | ReadonlyKeyword | StaticKeyword | AccessorKeyword
 
@@ -11662,21 +11742,16 @@ type CodeActionCommand = InstallPackageAction
 
 type ColonToken = PunctuationToken[typings.typescript.mod.SyntaxKind.ColonToken]
 
+type CommentKind = SingleLineCommentTrivia | MultiLineCommentTrivia
+
 type CompilerOptionsValue = js.UndefOr[
 java.lang.String | Double | Boolean | (js.Array[Double | PluginImport | ProjectReference | java.lang.String]) | MapLike[js.Array[java.lang.String]] | Null]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.typescript.typescriptStrings.Dot
-  - typings.typescript.typescriptStrings.Quotationmark
-  - / * ' * / java.lang.String
-  - typings.typescript.typescriptStrings.Graveaccent
-  - typings.typescript.typescriptStrings.Slash
-  - typings.typescript.typescriptStrings.`@`
-  - typings.typescript.typescriptStrings.Lessthansign
-  - typings.typescript.typescriptStrings.Numbersign
-  - typings.typescript.typescriptStrings.Space
-*/
-type CompletionsTriggerCharacter = _CompletionsTriggerCharacter | (/* ' */ java.lang.String)
+type CompletionEntryData = CompletionEntryDataUnresolved | CompletionEntryDataResolved
+
+type CompletionsTriggerCharacter = "." | "\"" | (/* ' */ java.lang.String) | "`" | "/" | "@" | "<" | "#" | (" ")
+
+type CompoundAssignmentOperator = PlusEqualsToken | MinusEqualsToken | AsteriskAsteriskEqualsToken | AsteriskEqualsToken | SlashEqualsToken | PercentEqualsToken | AmpersandEqualsToken | BarEqualsToken | CaretEqualsToken | LessThanLessThanEqualsToken | GreaterThanGreaterThanGreaterThanEqualsToken | GreaterThanGreaterThanEqualsToken | BarBarEqualsToken | AmpersandAmpersandEqualsToken | QuestionQuestionEqualsToken
 
 type ConciseBody = FunctionBody | Expression
 
@@ -11694,11 +11769,21 @@ T]
 
 type CustomTransformerFactory = js.Function1[/* context */ TransformationContext, CustomTransformer]
 
+type DeclarationName = Identifier | PrivateIdentifier | StringLiteralLike | NumericLiteral | ComputedPropertyName | ElementAccessExpression | BindingPattern | EntityNameExpression
+
+type DeclarationWithTypeParameterChildren = SignatureDeclaration | ClassLikeDeclaration | InterfaceDeclaration | TypeAliasDeclaration | JSDocTemplateTag
+
+type DeclarationWithTypeParameters = DeclarationWithTypeParameterChildren | JSDocTypedefTag | JSDocCallbackTag | JSDocSignature
+
 type DeclareKeyword = ModifierToken[typings.typescript.mod.SyntaxKind.DeclareKeyword]
 
 type DefaultKeyword = ModifierToken[typings.typescript.mod.SyntaxKind.DefaultKeyword]
 
 type DeferredTypeReference = TypeReference
+
+type DestructuringAssignment = ObjectDestructuringAssignment | ArrayDestructuringAssignment
+
+type DestructuringPattern = BindingPattern | ObjectLiteralExpression | ArrayLiteralExpression
 
 type DiagnosticReporter = js.Function1[/* diagnostic */ Diagnostic, Unit]
 
@@ -11708,9 +11793,19 @@ type DotDotDotToken = PunctuationToken[typings.typescript.mod.SyntaxKind.DotDotD
 
 type DotToken = PunctuationToken[typings.typescript.mod.SyntaxKind.DotToken]
 
+type EmitHelper = ScopedEmitHelper | UnscopedEmitHelper
+
 type EmitHelperUniqueNameCallback = js.Function1[/* name */ java.lang.String, java.lang.String]
 
+type EntityName = Identifier | QualifiedName
+
+type EntityNameExpression = Identifier | PropertyAccessEntityNameExpression
+
+type EntityNameOrEntityNameExpression = EntityName | EntityNameExpression
+
 type EnumType = Type
+
+type EqualityOperator = EqualsEqualsToken | EqualsEqualsEqualsToken | ExclamationEqualsEqualsToken | ExclamationEqualsToken
 
 type EqualityOperatorOrHigher = RelationalOperatorOrHigher | EqualityOperator
 
@@ -11732,9 +11827,37 @@ type FileWatcherCallback = js.Function3[
 /* modifiedTime */ js.UndefOr[js.Date], 
 Unit]
 
+type FlowNode = FlowStart | FlowLabel | FlowAssignment | FlowCondition | FlowSwitchClause | FlowArrayMutation | FlowCall | FlowReduceLabel
+
+type FlowType = Type | IncompleteType
+
+type ForInOrOfStatement = ForInStatement | ForOfStatement
+
+type ForInitializer = VariableDeclarationList | Expression
+
 type FunctionBody = Block
 
 type FunctionLike = SignatureDeclaration
+
+type FunctionLikeDeclaration = FunctionDeclaration | MethodDeclaration | GetAccessorDeclaration | SetAccessorDeclaration | ConstructorDeclaration | FunctionExpression | ArrowFunction
+
+type FunctionOrConstructorTypeNode = FunctionTypeNode | ConstructorTypeNode
+
+type HasDecorators = ParameterDeclaration | PropertyDeclaration | MethodDeclaration | GetAccessorDeclaration | SetAccessorDeclaration | ClassExpression | ClassDeclaration
+
+type HasExpressionInitializer = VariableDeclaration | ParameterDeclaration | BindingElement | PropertyDeclaration | PropertyAssignment | EnumMember
+
+type HasInitializer = HasExpressionInitializer | ForStatement | ForInStatement | ForOfStatement | JsxAttribute
+
+type HasJSDoc = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 56, starting with typings.typescript.mod.ParameterDeclaration, typings.typescript.mod.CallSignatureDeclaration, typings.typescript.mod.ClassStaticBlockDeclaration */ Any
+
+type HasModifiers = TypeParameterDeclaration | ParameterDeclaration | ConstructorTypeNode | PropertySignature | PropertyDeclaration | MethodSignature | MethodDeclaration | ConstructorDeclaration | GetAccessorDeclaration | SetAccessorDeclaration | IndexSignatureDeclaration | FunctionExpression | ArrowFunction | ClassExpression | VariableStatement | FunctionDeclaration | ClassDeclaration | InterfaceDeclaration | TypeAliasDeclaration | EnumDeclaration | ModuleDeclaration | ImportEqualsDeclaration | ImportDeclaration | ExportAssignment | ExportDeclaration
+
+type HasType = SignatureDeclaration | VariableDeclaration | ParameterDeclaration | PropertySignature | PropertyDeclaration | TypePredicateNode | ParenthesizedTypeNode | TypeOperatorNode | MappedTypeNode | AssertionExpression | TypeAliasDeclaration | JSDocTypeExpression | JSDocNonNullableType | JSDocNullableType | JSDocOptionalType | JSDocVariadicType
+
+type HasTypeArguments = CallExpression | NewExpression | TaggedTemplateExpression | JsxOpeningElement | JsxSelfClosingElement
+
+type ImportOrExportSpecifier = ImportSpecifier | ExportSpecifier
 
 type InKeyword = ModifierToken[typings.typescript.mod.SyntaxKind.InKeyword]
 
@@ -11744,11 +11867,47 @@ type InstantiableType = Type
 
 type IntersectionType = UnionOrIntersectionType
 
+type InvalidatedProject[T /* <: BuilderProgram */] = UpdateOutputFileStampsProject | BuildInvalidedProject[T] | UpdateBundleProject[T]
+
+type JSDocComment = JSDocText | JSDocLink | JSDocLinkCode | JSDocLinkPlain
+
+type JSDocNamespaceBody = Identifier | JSDocNamespaceDeclaration
+
+type JSDocSyntaxKind = typings.typescript.mod.SyntaxKind.EndOfFileToken | WhitespaceTrivia | AtToken | NewLineTrivia | typings.typescript.mod.SyntaxKind.AsteriskToken | OpenBraceToken | CloseBraceToken | LessThanToken | GreaterThanToken | OpenBracketToken | CloseBracketToken | typings.typescript.mod.SyntaxKind.EqualsToken | CommaToken | typings.typescript.mod.SyntaxKind.DotToken | typings.typescript.mod.SyntaxKind.Identifier | BacktickToken | HashToken | Unknown | KeywordSyntaxKind
+
+type JSDocTypeReferencingNode = JSDocVariadicType | JSDocOptionalType | JSDocNullableType | JSDocNonNullableType
+
 type JsFileExtensionInfo = FileExtensionInfo
+
+type JsonObjectExpression = ObjectLiteralExpression | ArrayLiteralExpression | JsonMinusNumericLiteral | NumericLiteral | StringLiteral | BooleanLiteral | NullLiteral
+
+type JsxAttributeLike = JsxAttribute | JsxSpreadAttribute
+
+type JsxAttributeValue = StringLiteral | JsxExpression | JsxElement | JsxSelfClosingElement | JsxFragment
+
+type JsxChild = JsxText | JsxExpression | JsxElement | JsxSelfClosingElement | JsxFragment
+
+type JsxOpeningLikeElement = JsxSelfClosingElement | JsxOpeningElement
+
+type JsxTagNameExpression = Identifier | ThisExpression | JsxTagNamePropertyAccess
+
+type JsxTokenSyntaxKind = LessThanSlashToken | typings.typescript.mod.SyntaxKind.EndOfFileToken | ConflictMarkerTrivia | typings.typescript.mod.SyntaxKind.JsxText | JsxTextAllWhiteSpaces | OpenBraceToken | LessThanToken
+
+type KeywordSyntaxKind = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82, starting with typings.typescript.mod.SyntaxKind.AbstractKeyword, typings.typescript.mod.SyntaxKind.AccessorKeyword, typings.typescript.mod.SyntaxKind.AnyKeyword */ Any
 
 type KeywordToken[TKind /* <: KeywordSyntaxKind */] = Token[TKind]
 
+type KeywordTypeSyntaxKind = AnyKeyword | BigIntKeyword | BooleanKeyword | IntrinsicKeyword | NeverKeyword | NumberKeyword | ObjectKeyword | StringKeyword | SymbolKeyword | UndefinedKeyword | UnknownKeyword | VoidKeyword
+
+type LiteralSyntaxKind = typings.typescript.mod.SyntaxKind.NumericLiteral | typings.typescript.mod.SyntaxKind.BigIntLiteral | typings.typescript.mod.SyntaxKind.StringLiteral | typings.typescript.mod.SyntaxKind.JsxText | JsxTextAllWhiteSpaces | typings.typescript.mod.SyntaxKind.RegularExpressionLiteral | typings.typescript.mod.SyntaxKind.NoSubstitutionTemplateLiteral
+
+type LiteralToken = NumericLiteral | BigIntLiteral | StringLiteral | JsxText | RegularExpressionLiteral | NoSubstitutionTemplateLiteral
+
+type LogicalOperator = AmpersandAmpersandToken | BarBarToken
+
 type LogicalOperatorOrHigher = BitwiseOperatorOrHigher | LogicalOperator
+
+type LogicalOrCoalescingAssignmentOperator = AmpersandAmpersandEqualsToken | BarBarEqualsToken | QuestionQuestionEqualsToken
 
 /**
   * ES6 Map interface.
@@ -11765,17 +11924,47 @@ type Map[T] = ESMap[java.lang.String, T]
   */
 type MapLike[T] = StringDictionary[T]
 
+type MemberName = Identifier | PrivateIdentifier
+
 type MinusToken = PunctuationToken[typings.typescript.mod.SyntaxKind.MinusToken]
 
 type Modifier = AbstractKeyword | AccessorKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | InKeyword | PrivateKeyword | ProtectedKeyword | PublicKeyword | OutKeyword | OverrideKeyword | ReadonlyKeyword | StaticKeyword
 
 type ModifierLike = Modifier | Decorator
 
+type ModifierSyntaxKind = typings.typescript.mod.SyntaxKind.AbstractKeyword | typings.typescript.mod.SyntaxKind.AccessorKeyword | typings.typescript.mod.SyntaxKind.AsyncKeyword | typings.typescript.mod.SyntaxKind.ConstKeyword | typings.typescript.mod.SyntaxKind.DeclareKeyword | typings.typescript.mod.SyntaxKind.DefaultKeyword | typings.typescript.mod.SyntaxKind.ExportKeyword | typings.typescript.mod.SyntaxKind.InKeyword | typings.typescript.mod.SyntaxKind.PrivateKeyword | typings.typescript.mod.SyntaxKind.ProtectedKeyword | typings.typescript.mod.SyntaxKind.PublicKeyword | typings.typescript.mod.SyntaxKind.ReadonlyKeyword | typings.typescript.mod.SyntaxKind.OutKeyword | typings.typescript.mod.SyntaxKind.OverrideKeyword | typings.typescript.mod.SyntaxKind.StaticKeyword
+
 type ModifierToken[TKind /* <: ModifierSyntaxKind */] = KeywordToken[TKind]
 
 type ModifiersArray = NodeArray[Modifier]
 
+type ModuleBody = NamespaceBody | JSDocNamespaceBody
+
+type ModuleName = Identifier | StringLiteral
+
+type ModuleReference = EntityName | ExternalModuleReference
+
+type MultiplicativeOperator = typings.typescript.mod.SyntaxKind.AsteriskToken | SlashToken | PercentToken
+
 type MultiplicativeOperatorOrHigher = ExponentiationOperator | MultiplicativeOperator
+
+type NamedExportBindings = NamespaceExport | NamedExports
+
+type NamedImportBindings = NamespaceImport | NamedImports
+
+type NamedImportsOrExports = NamedImports | NamedExports
+
+type NamespaceBody = ModuleBlock | NamespaceDeclaration
+
+type ObjectBindingOrAssignmentElement = BindingElement | PropertyAssignment | ShorthandPropertyAssignment | SpreadAssignment
+
+type ObjectBindingOrAssignmentPattern = ObjectBindingPattern | ObjectLiteralExpression
+
+type ObjectLiteralElementLike = PropertyAssignment | ShorthandPropertyAssignment | SpreadAssignment | MethodDeclaration | AccessorDeclaration
+
+type ObjectTypeDeclaration = ClassLikeDeclaration | InterfaceDeclaration | TypeLiteralNode
+
+type OptionalChain = PropertyAccessChain | ElementAccessChain | CallChain | NonNullChain
 
 type OutKeyword = ModifierToken[typings.typescript.mod.SyntaxKind.OutKeyword]
 
@@ -11785,11 +11974,25 @@ type ParameterPropertyModifier = AccessibilityModifier | ReadonlyKeyword
 
 type PlusToken = PunctuationToken[typings.typescript.mod.SyntaxKind.PlusToken]
 
+type PostfixUnaryOperator = PlusPlusToken | MinusMinusToken
+
+type PrefixUnaryOperator = PlusPlusToken | MinusMinusToken | typings.typescript.mod.SyntaxKind.PlusToken | typings.typescript.mod.SyntaxKind.MinusToken | TildeToken | typings.typescript.mod.SyntaxKind.ExclamationToken
+
 type PrivateKeyword = ModifierToken[typings.typescript.mod.SyntaxKind.PrivateKeyword]
+
+type PropertyName = Identifier | StringLiteral | NumericLiteral | ComputedPropertyName | PrivateIdentifier
+
+type PropertyNameLiteral = Identifier | StringLiteralLike | NumericLiteral
 
 type ProtectedKeyword = ModifierToken[typings.typescript.mod.SyntaxKind.ProtectedKeyword]
 
+type PseudoLiteralSyntaxKind = typings.typescript.mod.SyntaxKind.TemplateHead | typings.typescript.mod.SyntaxKind.TemplateMiddle | typings.typescript.mod.SyntaxKind.TemplateTail
+
+type PseudoLiteralToken = TemplateHead | TemplateMiddle | TemplateTail
+
 type PublicKeyword = ModifierToken[typings.typescript.mod.SyntaxKind.PublicKeyword]
+
+type PunctuationSyntaxKind = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 58, starting with typings.typescript.mod.SyntaxKind.OpenBraceToken, typings.typescript.mod.SyntaxKind.CloseBraceToken, typings.typescript.mod.SyntaxKind.OpenParenToken */ Any
 
 type PunctuationToken[TKind /* <: PunctuationSyntaxKind */] = Token[TKind]
 
@@ -11811,7 +12014,13 @@ type ReadonlyToken = ReadonlyKeyword
 
 type ReadonlyUnderscoreEscapedMap[T] = ReadonlyESMap[String, T]
 
+type RefactorTriggerReason = "implicit" | "invoked"
+
+type RelationalOperator = LessThanToken | LessThanEqualsToken | GreaterThanToken | GreaterThanEqualsToken | InstanceOfKeyword | typings.typescript.mod.SyntaxKind.InKeyword
+
 type RelationalOperatorOrHigher = ShiftOperatorOrHigher | RelationalOperator
+
+type RenameInfo = RenameInfoSuccess | RenameInfoFailure
 
 type ReportEmitErrorSummary = js.Function2[
 /* errorCount */ Double, 
@@ -11820,39 +12029,65 @@ Unit]
 
 type ResolvedConfigFileName = java.lang.String
 
+type ShiftOperator = LessThanLessThanToken | GreaterThanGreaterThanToken | GreaterThanGreaterThanGreaterThanToken
+
 type ShiftOperatorOrHigher = AdditiveOperatorOrHigher | ShiftOperator
 
-/* Rewritten from type alias, can be one of: 
-  - / * ) * / java.lang.String
-  - typings.typescript.typescriptStrings.Comma
-  - typings.typescript.typescriptStrings.Lessthansign
-*/
-type SignatureHelpRetriggerCharacter = _SignatureHelpRetriggerCharacter | (/* ) */ java.lang.String)
+type SignatureDeclaration = CallSignatureDeclaration | ConstructSignatureDeclaration | MethodSignature | IndexSignatureDeclaration | FunctionTypeNode | ConstructorTypeNode | JSDocFunctionType | FunctionDeclaration | MethodDeclaration | ConstructorDeclaration | AccessorDeclaration | FunctionExpression | ArrowFunction
 
-/* Rewritten from type alias, can be one of: 
-  - typings.typescript.typescriptStrings.Comma
-  - / * ( * / java.lang.String
-  - typings.typescript.typescriptStrings.Lessthansign
-*/
-type SignatureHelpTriggerCharacter = _SignatureHelpTriggerCharacter | (/* ( */ java.lang.String)
+type SignatureHelpRetriggerCharacter = (/* ) */ java.lang.String) | "," | "<"
+
+type SignatureHelpTriggerCharacter = "," | (/* ( */ java.lang.String) | "<"
+
+type SignatureHelpTriggerReason = SignatureHelpInvokedReason | SignatureHelpCharacterTypedReason | SignatureHelpRetriggeredReason
 
 type StaticKeyword = ModifierToken[typings.typescript.mod.SyntaxKind.StaticKeyword]
 
 type String = (java.lang.String & EscapedIdentifier) | (Unit & EscapedIdentifier) | InternalSymbolName
 
+type StringLiteralLike = StringLiteral | NoSubstitutionTemplateLiteral
+
 type StructuredType = ObjectType | UnionType | IntersectionType
 
+type SuperProperty = SuperPropertyAccessExpression | SuperElementAccessExpression
+
 type SymbolTable = UnderscoreEscapedMap[Symbol]
+
+type TemplateLiteral = TemplateExpression | NoSubstitutionTemplateLiteral
+
+type TemplateLiteralToken = NoSubstitutionTemplateLiteral | PseudoLiteralToken
+
+type TokenSyntaxKind = Unknown | typings.typescript.mod.SyntaxKind.EndOfFileToken | TriviaSyntaxKind | LiteralSyntaxKind | PseudoLiteralSyntaxKind | PunctuationSyntaxKind | typings.typescript.mod.SyntaxKind.Identifier | KeywordSyntaxKind
 
 type Transformer[T /* <: Node */] = js.Function1[/* node */ T, T]
 
 type TransformerFactory[T /* <: Node */] = js.Function1[/* context */ TransformationContext, Transformer[T]]
 
+type TriviaSyntaxKind = SingleLineCommentTrivia | MultiLineCommentTrivia | NewLineTrivia | WhitespaceTrivia | ShebangTrivia | ConflictMarkerTrivia
+
+type TypeOfTag = "undefined" | "number" | "bigint" | "boolean" | "string" | "symbol" | "object" | "function"
+
+type TypeOnlyAliasDeclaration = ImportClausereadonlyisTyp | ImportEqualsDeclarationre | NamespaceImportreadonlypa | readonlyisTypeOnlytrueImp | readonlyparentNamedImport | readonlyisTypeOnlytrueExp | readonlyparentNamedExport
+
+type TypeOnlyCompatibleAliasDeclaration = ImportClause | ImportEqualsDeclaration | NamespaceImport | ImportOrExportSpecifier
+
 type TypeParameter = InstantiableType
+
+type TypePredicate = ThisTypePredicate | IdentifierTypePredicate | AssertsThisTypePredicate | AssertsIdentifierTypePredicate
+
+type TypeReferenceType = TypeReferenceNode | ExpressionWithTypeArguments
 
 type TypeVariable = TypeParameter | IndexedAccessType
 
+type UnionOrIntersectionTypeNode = UnionTypeNode | IntersectionTypeNode
+
 type UnionType = UnionOrIntersectionType
+
+type UnparsedNode = UnparsedPrologue | UnparsedSourceText | UnparsedSyntheticReference
+
+type UnparsedSourceText = UnparsedPrepend | UnparsedTextLike
+
+type VariableLikeDeclaration = VariableDeclaration | ParameterDeclaration | BindingElement | PropertyDeclaration | PropertyAssignment | PropertySignature | JsxAttribute | ShorthandPropertyAssignment | EnumMember | JSDocPropertyTag | JSDocParameterTag
 
 type VisitResult[T /* <: Node */] = js.UndefOr[T | js.Array[T]]
 

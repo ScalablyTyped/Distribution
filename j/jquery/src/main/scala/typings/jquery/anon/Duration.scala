@@ -1,13 +1,10 @@
 package typings.jquery.anon
 
-import typings.jquery.JQuery._SpeedSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Duration
-  extends StObject
-     with _SpeedSettings[Any] {
+trait Duration extends StObject {
   
   /**
     * A string or number determining how long the animation will run.

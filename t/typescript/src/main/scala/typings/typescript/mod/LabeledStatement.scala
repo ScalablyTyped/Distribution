@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LabeledStatement
   extends StObject
-     with Statement
-     with HasJSDoc {
+     with Statement {
   
   @JSName("kind")
   val kind_LabeledStatement: typings.typescript.mod.SyntaxKind.LabeledStatement = js.native

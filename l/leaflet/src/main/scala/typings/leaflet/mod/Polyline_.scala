@@ -2,7 +2,6 @@ package typings.leaflet.mod
 
 import typings.geojson.mod.Feature
 import typings.geojson.mod.GeometryObject
-import typings.leaflet.leafletBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +35,8 @@ open class Polyline_[T /* <: GeometryObject */, P] protected () extends Path {
   def setLatLngs(latlngs: js.Array[(js.Array[js.Array[LatLngExpression] | LatLngExpression]) | LatLngExpression]): this.type = js.native
   
   def toGeoJSON(): Feature[T, P] = js.native
-  def toGeoJSON(precision: Double): Feature[T, P] = js.native
   @JSName("toGeoJSON")
-  def toGeoJSON_false(precision: `false`): Feature[T, P] = js.native
+  @scala.annotation.targetName("toGeoJSON_false")
+  def toGeoJSON(precision: false): Feature[T, P] = js.native
+  def toGeoJSON(precision: Double): Feature[T, P] = js.native
 }

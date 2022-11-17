@@ -27,8 +27,6 @@ object examplesJsmRenderersWebglNodesWebGLNodeBuilderMod {
       slotNode: typings.three.examplesJsmRenderersWebglNodesSlotNodeMod.default[typings.three.examplesJsmNodesCoreNodeMod.default]
     ): typings.three.examplesJsmNodesCoreNodeMod.default = js.native
     
-    def getAttributes(shaderStage: String): String = js.native
-    
     def getCubeTexture(texturePropert: String, uvSnippet: String, shaderStage: NodeShaderStageOption): String = js.native
     
     def getCubeTextureBias(textureProperty: String, uvSnippet: String, biasSnippet: String): String = js.native
@@ -50,10 +48,6 @@ object examplesJsmRenderersWebglNodesWebGLNodeBuilderMod {
       biasSnippet: String,
       shaderStage: NodeShaderStageOption
     ): String = js.native
-    
-    def getUniforms(shaderStage: String): String = js.native
-    
-    def getVarys(shaderStage: String): String = js.native
     
     def parseInclude(shaderStage: String, includes: String*): Unit = js.native
     

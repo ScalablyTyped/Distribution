@@ -1,8 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.sourceclose
-import typings.std.stdStrings.sourceended
-import typings.std.stdStrings.sourceopen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,52 +8,60 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MediaSource
   extends StObject
-     with EventTarget
-     with MediaProvider {
+     with EventTarget {
   
   /* standard dom */
   val activeSourceBuffers: SourceBufferList = js.native
   
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_sourceended")
+  def addEventListener(`type`: "sourceended", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_sourceopen")
+  def addEventListener(`type`: "sourceopen", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_sourceclose(`type`: sourceclose, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_sourceclose")
+  def addEventListener(`type`: "sourceclose", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_sourceclose(
-    `type`: sourceclose,
+  @scala.annotation.targetName("addEventListener_sourceclose")
+  def addEventListener(
+    `type`: "sourceclose",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_sourceclose(
-    `type`: sourceclose,
+  @scala.annotation.targetName("addEventListener_sourceopen")
+  def addEventListener(
+    `type`: "sourceopen",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_sourceended")
+  def addEventListener(
+    `type`: "sourceended",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_sourceclose")
+  def addEventListener(
+    `type`: "sourceclose",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_sourceended(`type`: sourceended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_sourceended(
-    `type`: sourceended,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_sourceended(
-    `type`: sourceended,
+  @scala.annotation.targetName("addEventListener_sourceended")
+  def addEventListener(
+    `type`: "sourceended",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_sourceopen(`type`: sourceopen, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_sourceopen(
-    `type`: sourceopen,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_sourceopen(
-    `type`: sourceopen,
+  @scala.annotation.targetName("addEventListener_sourceopen")
+  def addEventListener(
+    `type`: "sourceopen",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -86,46 +91,55 @@ trait MediaSource
   /* standard dom */
   val readyState: ReadyState = js.native
   
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_sourceended")
+  def removeEventListener(`type`: "sourceended", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_sourceclose(`type`: sourceclose, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_sourceclose")
+  def removeEventListener(`type`: "sourceclose", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_sourceclose(
-    `type`: sourceclose,
+  @scala.annotation.targetName("removeEventListener_sourceopen")
+  def removeEventListener(`type`: "sourceopen", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_sourceended")
+  def removeEventListener(
+    `type`: "sourceended",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_sourceclose(
-    `type`: sourceclose,
+  @scala.annotation.targetName("removeEventListener_sourceclose")
+  def removeEventListener(
+    `type`: "sourceclose",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_sourceopen")
+  def removeEventListener(
+    `type`: "sourceopen",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_sourceended")
+  def removeEventListener(
+    `type`: "sourceended",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_sourceended(`type`: sourceended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_sourceended(
-    `type`: sourceended,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_sourceended(
-    `type`: sourceended,
+  @scala.annotation.targetName("removeEventListener_sourceopen")
+  def removeEventListener(
+    `type`: "sourceopen",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_sourceopen(`type`: sourceopen, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_sourceopen(
-    `type`: sourceopen,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_sourceopen(
-    `type`: sourceopen,
+  @scala.annotation.targetName("removeEventListener_sourceclose")
+  def removeEventListener(
+    `type`: "sourceclose",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

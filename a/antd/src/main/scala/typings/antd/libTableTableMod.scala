@@ -6,12 +6,6 @@ import typings.antd.anon.FnCall_
 import typings.antd.anon.ScrollToFirstRowOnChange
 import typings.antd.anon.TypeofSummary
 import typings.antd.anon.`5`
-import typings.antd.antdBooleans.`false`
-import typings.antd.antdStrings.SELECT_ALL
-import typings.antd.antdStrings.SELECT_INVERT
-import typings.antd.antdStrings.SELECT_NONE
-import typings.antd.antdStrings.ltr
-import typings.antd.antdStrings.rtl
 import typings.antd.libConfigProviderSizeContextMod.SizeType
 import typings.antd.libSpinMod.SpinProps
 import typings.antd.libTableInterfaceMod.ColumnGroupType
@@ -73,11 +67,11 @@ object libTableTableMod extends Shortcut {
     
     var EXPAND_COLUMN: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RcTable.EXPAND_COLUMN */ Any = js.native
     
-    var SELECTION_ALL: SELECT_ALL = js.native
+    var SELECTION_ALL: "SELECT_ALL" = js.native
     
-    var SELECTION_INVERT: SELECT_INVERT = js.native
+    var SELECTION_INVERT: "SELECT_INVERT" = js.native
     
-    var SELECTION_NONE: SELECT_NONE = js.native
+    var SELECTION_NONE: "SELECT_NONE" = js.native
     
     var Summary: TypeofSummary = js.native
   }
@@ -105,7 +99,7 @@ object libTableTableMod extends Shortcut {
     
     var defaultExpandedRowKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var dropdownPrefixCls: js.UndefOr[String] = js.undefined
     
@@ -153,7 +147,7 @@ object libTableTableMod extends Shortcut {
     
     var onRow: js.UndefOr[GetComponentProps[RecordType]] = js.undefined
     
-    var pagination: js.UndefOr[`false` | TablePaginationConfig] = js.undefined
+    var pagination: js.UndefOr[false | TablePaginationConfig] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -238,7 +232,7 @@ object libTableTableMod extends Shortcut {
       
       inline def setDefaultExpandedRowKeysVarargs(value: Key*): Self = StObject.set(x, "defaultExpandedRowKeys", js.Array(value*))
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -324,7 +318,7 @@ object libTableTableMod extends Shortcut {
       
       inline def setOnRowUndefined: Self = StObject.set(x, "onRow", js.undefined)
       
-      inline def setPagination(value: `false` | TablePaginationConfig): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+      inline def setPagination(value: false | TablePaginationConfig): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
       
       inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
       

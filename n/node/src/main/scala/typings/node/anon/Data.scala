@@ -8,7 +8,7 @@ trait Data extends StObject {
   
   var data: js.Array[Double]
   
-  var `type`: typings.node.nodeStrings.Buffer
+  var `type`: "Buffer"
 }
 object Data {
   
@@ -24,6 +24,6 @@ object Data {
     
     inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value*))
     
-    inline def setType(value: typings.node.nodeStrings.Buffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Buffer"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

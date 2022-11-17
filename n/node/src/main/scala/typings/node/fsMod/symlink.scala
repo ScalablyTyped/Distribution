@@ -15,18 +15,13 @@ object symlink {
   @js.native
   val ^ : js.Any = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.node.nodeStrings.dir
-    - typings.node.nodeStrings.file
-    - typings.node.nodeStrings.junction
-  */
-  trait Type extends StObject
   object Type {
     
-    inline def dir: typings.node.nodeStrings.dir = "dir".asInstanceOf[typings.node.nodeStrings.dir]
+    inline def dir: "dir" = "dir".asInstanceOf["dir"]
     
-    inline def file: typings.node.nodeStrings.file = "file".asInstanceOf[typings.node.nodeStrings.file]
+    inline def file: "file" = "file".asInstanceOf["file"]
     
-    inline def junction: typings.node.nodeStrings.junction = "junction".asInstanceOf[typings.node.nodeStrings.junction]
+    inline def junction: "junction" = "junction".asInstanceOf["junction"]
   }
+  type Type = "dir" | "file" | "junction"
 }

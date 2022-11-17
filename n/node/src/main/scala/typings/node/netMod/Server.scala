@@ -1,10 +1,5 @@
 package typings.node.netMod
 
-import typings.node.nodeStrings.close
-import typings.node.nodeStrings.connection
-import typings.node.nodeStrings.drop
-import typings.node.nodeStrings.error
-import typings.node.nodeStrings.listening
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +16,21 @@ open class Server () extends StObject {
   def this(options: Unit, connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
   def this(options: ServerOpts, connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
   
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_listening")
+  def addListener(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_close")
+  def addListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_connection")
+  def addListener(event: "connection", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_error")
+  def addListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_drop")
+  def addListener(event: "drop", listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
   /**
     * events.EventEmitter
     *   1. close
@@ -30,16 +40,6 @@ open class Server () extends StObject {
     *   5. drop
     */
   def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_drop(event: drop, listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
   
   /**
     * Returns the bound `address`, the address `family` name, and `port` of the server
@@ -84,20 +84,26 @@ open class Server () extends StObject {
   
   var connections: Double = js.native
   
+  @JSName("emit")
+  @scala.annotation.targetName("emit_drop")
+  def emit(event: "drop"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_listening")
+  def emit(event: "listening"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_close")
+  def emit(event: "close"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_drop")
+  def emit(event: "drop", data: DropArgument): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_error")
+  def emit(event: "error", err: js.Error): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_connection")
+  def emit(event: "connection", socket: Socket): Boolean = js.native
   def emit(event: String, args: Any*): Boolean = js.native
   def emit(event: js.Symbol, args: Any*): Boolean = js.native
-  @JSName("emit")
-  def emit_close(event: close): Boolean = js.native
-  @JSName("emit")
-  def emit_connection(event: connection, socket: Socket): Boolean = js.native
-  @JSName("emit")
-  def emit_drop(event: drop): Boolean = js.native
-  @JSName("emit")
-  def emit_drop(event: drop, data: DropArgument): Boolean = js.native
-  @JSName("emit")
-  def emit_error(event: error, err: js.Error): Boolean = js.native
-  @JSName("emit")
-  def emit_listening(event: listening): Boolean = js.native
   
   /**
     * Asynchronously get the number of concurrent connections on the server. Works
@@ -204,53 +210,73 @@ open class Server () extends StObject {
     */
   var maxConnections: Double = js.native
   
+  @JSName("on")
+  @scala.annotation.targetName("on_close")
+  def on(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_listening")
+  def on(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_drop")
+  def on(event: "drop", listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_error")
+  def on(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_connection")
+  def on(event: "connection", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
   def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("on")
-  def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-  @JSName("on")
-  def on_drop(event: drop, listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
-  @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("on")
-  def on_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
   
+  @JSName("once")
+  @scala.annotation.targetName("once_listening")
+  def once(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_close")
+  def once(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_connection")
+  def once(event: "connection", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_error")
+  def once(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_drop")
+  def once(event: "drop", listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
   def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("once")
-  def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-  @JSName("once")
-  def once_drop(event: drop, listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
-  @JSName("once")
-  def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("once")
-  def once_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
   
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_close")
+  def prependListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_listening")
+  def prependListener(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_connection")
+  def prependListener(event: "connection", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_drop")
+  def prependListener(event: "drop", listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_error")
+  def prependListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_drop(event: drop, listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
   
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_listening")
+  def prependOnceListener(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_close")
+  def prependOnceListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_drop")
+  def prependOnceListener(event: "drop", listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_connection")
+  def prependOnceListener(event: "connection", listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_error")
+  def prependOnceListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_drop(event: drop, listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
   
   /**
     * Opposite of `unref()`, calling `ref()` on a previously `unref`ed server will _not_ let the program exit if it's the only server left (the default behavior).

@@ -1,6 +1,5 @@
 package typings.antd
 
-import typings.antd.libAvatarSizeContextMod._AvatarSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,29 +31,21 @@ object libUtilResponsiveObserveMod {
   @js.native
   val responsiveMap: BreakpointMap = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.xxl
-    - typings.antd.antdStrings.xl
-    - typings.antd.antdStrings.lg
-    - typings.antd.antdStrings.md
-    - typings.antd.antdStrings.sm
-    - typings.antd.antdStrings.xs
-  */
-  trait Breakpoint extends StObject
   object Breakpoint {
     
-    inline def lg: typings.antd.antdStrings.lg = "lg".asInstanceOf[typings.antd.antdStrings.lg]
+    inline def lg: "lg" = "lg".asInstanceOf["lg"]
     
-    inline def md: typings.antd.antdStrings.md = "md".asInstanceOf[typings.antd.antdStrings.md]
+    inline def md: "md" = "md".asInstanceOf["md"]
     
-    inline def sm: typings.antd.antdStrings.sm = "sm".asInstanceOf[typings.antd.antdStrings.sm]
+    inline def sm: "sm" = "sm".asInstanceOf["sm"]
     
-    inline def xl: typings.antd.antdStrings.xl = "xl".asInstanceOf[typings.antd.antdStrings.xl]
+    inline def xl: "xl" = "xl".asInstanceOf["xl"]
     
-    inline def xs: typings.antd.antdStrings.xs = "xs".asInstanceOf[typings.antd.antdStrings.xs]
+    inline def xs: "xs" = "xs".asInstanceOf["xs"]
     
-    inline def xxl: typings.antd.antdStrings.xxl = "xxl".asInstanceOf[typings.antd.antdStrings.xxl]
+    inline def xxl: "xxl" = "xxl".asInstanceOf["xxl"]
   }
+  type Breakpoint = "xxl" | "xl" | "lg" | "md" | "sm" | "xs"
   
   /* Inlined std.Record<antd.antd/lib/_util/responsiveObserve.Breakpoint, string> */
   trait BreakpointMap extends StObject {
@@ -145,9 +136,7 @@ object libUtilResponsiveObserveMod {
   }
   
   /* Inlined std.Partial<std.Record<antd.antd/lib/_util/responsiveObserve.Breakpoint, number>> */
-  trait ScreenSizeMap
-    extends StObject
-       with _AvatarSize {
+  trait ScreenSizeMap extends StObject {
     
     var lg: js.UndefOr[Double] = js.undefined
     

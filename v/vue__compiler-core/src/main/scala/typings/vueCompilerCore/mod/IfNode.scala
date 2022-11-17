@@ -1,21 +1,19 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IfNode
   extends StObject
-     with Node2
-     with TemplateChildNode {
+     with Node2 {
   
   var branches: js.Array[IfBranchNode]
   
   var codegenNode: js.UndefOr[IfConditionalExpression | CacheExpression] = js.undefined
   
   @JSName("type")
-  var type_IfNode: `9`
+  var type_IfNode: 9
 }
 object IfNode {
   
@@ -35,6 +33,6 @@ object IfNode {
     
     inline def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
     
-    inline def setType(value: `9`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 9): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

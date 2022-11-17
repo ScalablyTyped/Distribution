@@ -15,11 +15,6 @@ import typings.semanticUiReact.distCommonjsElementsIconIconMod.IconProps
 import typings.semanticUiReact.distCommonjsGenericMod.HtmlIframeProps
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
-import typings.semanticUiReact.semanticUiReactStrings.`16Colon9`
-import typings.semanticUiReact.semanticUiReactStrings.`21Colon9`
-import typings.semanticUiReact.semanticUiReactStrings.`4Colon3`
-import typings.semanticUiReact.semanticUiReactStrings.vimeo
-import typings.semanticUiReact.semanticUiReactStrings.youtube
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -59,7 +54,7 @@ object distCommonjsModulesEmbedEmbedMod extends Shortcut {
     var as: js.UndefOr[Any] = js.undefined
     
     /** An embed can specify an alternative aspect ratio. */
-    var aspectRatio: js.UndefOr[`4Colon3` | `16Colon9` | `21Colon9`] = js.undefined
+    var aspectRatio: js.UndefOr["4:3" | "16:9" | "21:9"] = js.undefined
     
     /** Setting to true or false will force autoplay. */
     var autoplay: js.UndefOr[Boolean] = js.undefined
@@ -112,7 +107,7 @@ object distCommonjsModulesEmbedEmbedMod extends Shortcut {
     var placeholder: js.UndefOr[String] = js.undefined
     
     /** Specifies a source to use. */
-    var source: js.UndefOr[youtube | vimeo] = js.undefined
+    var source: js.UndefOr["youtube" | "vimeo"] = js.undefined
     
     /** Specifies a url to use for embed. */
     var url: js.UndefOr[String] = js.undefined
@@ -134,7 +129,7 @@ object distCommonjsModulesEmbedEmbedMod extends Shortcut {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAspectRatio(value: `4Colon3` | `16Colon9` | `21Colon9`): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+      inline def setAspectRatio(value: "4:3" | "16:9" | "21:9"): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
       inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
       
@@ -198,7 +193,7 @@ object distCommonjsModulesEmbedEmbedMod extends Shortcut {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setSource(value: youtube | vimeo): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: "youtube" | "vimeo"): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       

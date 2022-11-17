@@ -1,14 +1,12 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SimpleExpressionNode
   extends StObject
-     with Node2
-     with ExpressionNode {
+     with Node2 {
   
   var constType: ConstantTypes
   
@@ -31,7 +29,7 @@ trait SimpleExpressionNode
   var isStatic: Boolean
   
   @JSName("type")
-  var type_SimpleExpressionNode: `4`
+  var type_SimpleExpressionNode: 4
 }
 object SimpleExpressionNode {
   
@@ -63,6 +61,6 @@ object SimpleExpressionNode {
     
     inline def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `4`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 4): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

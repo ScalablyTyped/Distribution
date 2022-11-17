@@ -1,6 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`dom-ready`
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebFrameMain_ extends EventEmitter {
   
   @JSName("addListener")
-  def addListener_domready(event: `dom-ready`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("addListener_domready")
+  def addListener(event: "dom-ready", listener: js.Function): this.type = js.native
   
   /**
     * A promise that resolves with the result of the executed code or is rejected if
@@ -84,10 +84,12 @@ trait WebFrameMain_ extends EventEmitter {
     * Emitted when the document is loaded.
     */
   @JSName("on")
-  def on_domready(event: `dom-ready`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_domready")
+  def on(event: "dom-ready", listener: js.Function): this.type = js.native
   
   @JSName("once")
-  def once_domready(event: `dom-ready`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_domready")
+  def once(event: "dom-ready", listener: js.Function): this.type = js.native
   
   /**
     * A `string` representing the current origin of the frame, serialized according to
@@ -142,7 +144,8 @@ trait WebFrameMain_ extends EventEmitter {
   def reload(): Boolean = js.native
   
   @JSName("removeListener")
-  def removeListener_domready(event: `dom-ready`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("removeListener_domready")
+  def removeListener(event: "dom-ready", listener: js.Function): this.type = js.native
   
   /**
     * An `Integer` representing the unique frame id in the current renderer process.

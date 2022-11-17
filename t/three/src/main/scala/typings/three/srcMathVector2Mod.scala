@@ -3,8 +3,6 @@ package typings.three
 import typings.std.ArrayLike
 import typings.three.srcCoreBufferAttributeMod.BufferAttribute
 import typings.three.srcMathMatrix3Mod.Matrix3
-import typings.three.threeBooleans.`true`
-import typings.three.threeInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -185,7 +183,7 @@ object srcMathVector2Mod {
     
     var height: Double = js.native
     
-    val isVector2: `true` = js.native
+    val isVector2: true = js.native
     
     /**
       * length():number;
@@ -356,6 +354,9 @@ object srcMathVector2Mod {
     def toArray(): js.Array[Double] = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+    @JSName("toArray")
+    @scala.annotation.targetName("toArray_0")
+    def toArray(array: Unit, offset: 0): Vector2Tuple = js.native
     def toArray(array: Unit, offset: Double): js.Array[Double] = js.native
     /**
       * Copies x and y into the provided array-like.
@@ -367,9 +368,8 @@ object srcMathVector2Mod {
     def toArray(array: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
     def toArray(array: Vector2Tuple): Vector2Tuple = js.native
     @JSName("toArray")
-    def toArray_0(array: Unit, offset: `0`): Vector2Tuple = js.native
-    @JSName("toArray")
-    def toArray_0(array: Vector2Tuple, offset: `0`): Vector2Tuple = js.native
+    @scala.annotation.targetName("toArray_0")
+    def toArray(array: Vector2Tuple, offset: 0): Vector2Tuple = js.native
     @JSName("toArray")
     def toArray_Vector2Tuple(): Vector2Tuple = js.native
     

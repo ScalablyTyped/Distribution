@@ -5,9 +5,6 @@ import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcMaterialsMaterialMod.Material
-import typings.three.threeBooleans.`true`
-import typings.three.threeStrings.LineLoop
-import typings.three.threeStrings.LineSegments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +22,7 @@ object srcObjectsLineMod {
     
     var geometry: TGeometry = js.native
     
-    val isLine: `true` = js.native
+    val isLine: true = js.native
     
     var material: TMaterial = js.native
     
@@ -34,7 +31,7 @@ object srcObjectsLineMod {
     var morphTargetInfluences: js.UndefOr[js.Array[Double]] = js.native
     
     @JSName("type")
-    var type_Line: typings.three.threeStrings.Line | LineLoop | LineSegments | String = js.native
+    var type_Line: "Line" | "LineLoop" | "LineSegments" | String = js.native
     
     def updateMorphTargets(): Unit = js.native
   }

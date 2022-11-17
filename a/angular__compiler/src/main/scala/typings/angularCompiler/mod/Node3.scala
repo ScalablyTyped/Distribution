@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Node3
-  extends StObject
-     with I18nMeta2 {
+trait Node3 extends StObject {
   
   var sourceSpan: ParseSourceSpan = js.native
   

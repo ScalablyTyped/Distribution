@@ -1,9 +1,5 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreStrings.any
-import typings.angularCore.angularCoreStrings.environment
-import typings.angularCore.angularCoreStrings.platform
-import typings.angularCore.angularCoreStrings.root
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +21,7 @@ trait ɵɵInjectableDeclaration[T] extends StObject {
     * - `null`, does not belong to any injector. Must be explicitly listed in the injector
     *   `providers`.
     */
-  var providedIn: InjectorType[Any] | root | platform | any | environment | Null = js.native
+  var providedIn: InjectorType[Any] | "root" | "platform" | "any" | "environment" | Null = js.native
   
   /**
     * The token to which this definition belongs.

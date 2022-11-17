@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.ClassKeyCardActionAreaClassKey
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
-import typings.materialUiCore.materialUiCoreStrings.button
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
@@ -26,29 +25,24 @@ object cardActionAreaCardActionAreaMod extends Shortcut {
     */
   @JSImport("@material-ui/core/CardActionArea/CardActionArea", JSImport.Default)
   @js.native
-  val default: ExtendButtonBase[CardActionAreaTypeMap[js.Object, button]] = js.native
+  val default: ExtendButtonBase[CardActionAreaTypeMap[js.Object, "button"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.focusVisible
-    - typings.materialUiCore.materialUiCoreStrings.focusHighlight
-  */
-  trait CardActionAreaClassKey extends StObject
   object CardActionAreaClassKey {
     
-    inline def focusHighlight: typings.materialUiCore.materialUiCoreStrings.focusHighlight = "focusHighlight".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.focusHighlight]
+    inline def focusHighlight: "focusHighlight" = "focusHighlight".asInstanceOf["focusHighlight"]
     
-    inline def focusVisible: typings.materialUiCore.materialUiCoreStrings.focusVisible = "focusVisible".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.focusVisible]
+    inline def focusVisible: "focusVisible" = "focusVisible".asInstanceOf["focusVisible"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
   }
+  type CardActionAreaClassKey = "root" | "focusVisible" | "focusHighlight"
   
   type CardActionAreaProps[D /* <: ElementType[Any] */, P] = OverrideProps[CardActionAreaTypeMap[P, D], D]
   
   type CardActionAreaTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[ClassKeyCardActionAreaClassKey[P, D]]
   
-  type _To = ExtendButtonBase[CardActionAreaTypeMap[js.Object, button]]
+  type _To = ExtendButtonBase[CardActionAreaTypeMap[js.Object, "button"]]
   
   /* This means you don't have to write `default`, but can instead just say `cardActionAreaCardActionAreaMod.foo` */
-  override def _to: ExtendButtonBase[CardActionAreaTypeMap[js.Object, button]] = default
+  override def _to: ExtendButtonBase[CardActionAreaTypeMap[js.Object, "button"]] = default
 }

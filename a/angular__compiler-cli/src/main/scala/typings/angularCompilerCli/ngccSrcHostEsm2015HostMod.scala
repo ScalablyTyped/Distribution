@@ -1,8 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliStrings.decorator
-import typings.angularCompilerCli.angularCompilerCliStrings.paramColondecorators
-import typings.angularCompilerCli.angularCompilerCliStrings.params
 import typings.angularCompilerCli.anon.ClassDecorators
 import typings.angularCompilerCli.anon.Left
 import typings.angularCompilerCli.ngccSrcHostNgccHostMod.NgccClassSymbol
@@ -943,40 +940,13 @@ object ngccSrcHostEsm2015HostMod {
     var expression_AssignmentStatement: Left = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.ngccSrcHostEsm2015HostMod.ParameterTypes
-    - typings.angularCompilerCli.ngccSrcHostEsm2015HostMod.ParameterDecorators
-    - typings.angularCompilerCli.ngccSrcHostEsm2015HostMod.DecoratorCall
-  */
-  trait DecorateHelperEntry extends StObject
-  object DecorateHelperEntry {
-    
-    inline def DecoratorCall(decorator: Decorator): typings.angularCompilerCli.ngccSrcHostEsm2015HostMod.DecoratorCall = {
-      val __obj = js.Dynamic.literal(decorator = decorator.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("decorator")
-      __obj.asInstanceOf[typings.angularCompilerCli.ngccSrcHostEsm2015HostMod.DecoratorCall]
-    }
-    
-    inline def ParameterDecorators(decorator: Decorator, index: Double): typings.angularCompilerCli.ngccSrcHostEsm2015HostMod.ParameterDecorators = {
-      val __obj = js.Dynamic.literal(decorator = decorator.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("param:decorators")
-      __obj.asInstanceOf[typings.angularCompilerCli.ngccSrcHostEsm2015HostMod.ParameterDecorators]
-    }
-    
-    inline def ParameterTypes(types: js.Array[Expression]): typings.angularCompilerCli.ngccSrcHostEsm2015HostMod.ParameterTypes = {
-      val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("params")
-      __obj.asInstanceOf[typings.angularCompilerCli.ngccSrcHostEsm2015HostMod.ParameterTypes]
-    }
-  }
+  type DecorateHelperEntry = ParameterTypes | ParameterDecorators | DecoratorCall
   
-  trait DecoratorCall
-    extends StObject
-       with DecorateHelperEntry {
+  trait DecoratorCall extends StObject {
     
     var decorator: Decorator
     
-    var `type`: decorator
+    var `type`: "decorator"
   }
   object DecoratorCall {
     
@@ -990,7 +960,7 @@ object ngccSrcHostEsm2015HostMod {
       
       inline def setDecorator(value: Decorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
       
-      inline def setType(value: decorator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "decorator"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1174,15 +1144,13 @@ object ngccSrcHostEsm2015HostMod {
     }
   }
   
-  trait ParameterDecorators
-    extends StObject
-       with DecorateHelperEntry {
+  trait ParameterDecorators extends StObject {
     
     var decorator: Decorator
     
     var index: Double
     
-    var `type`: paramColondecorators
+    var `type`: "param:decorators"
   }
   object ParameterDecorators {
     
@@ -1198,15 +1166,13 @@ object ngccSrcHostEsm2015HostMod {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      inline def setType(value: paramColondecorators): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "param:decorators"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  trait ParameterTypes
-    extends StObject
-       with DecorateHelperEntry {
+  trait ParameterTypes extends StObject {
     
-    var `type`: params
+    var `type`: "params"
     
     var types: js.Array[Expression]
   }
@@ -1220,7 +1186,7 @@ object ngccSrcHostEsm2015HostMod {
     
     extension [Self <: ParameterTypes](x: Self) {
       
-      inline def setType(value: params): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "params"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypes(value: js.Array[Expression]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       

@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ComputedPropertyName
   extends StObject
-     with Node
-     with DeclarationName
-     with PropertyName {
+     with Node {
   
   val expression: Expression = js.native
   

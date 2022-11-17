@@ -12,10 +12,6 @@ import typings.reactNavigationStack.anon.Style
 import typings.reactNavigationStack.anon.StyleWithAnimatedValue
 import typings.reactNavigationStack.anon.TintColor
 import typings.reactNavigationStack.anon.`0`
-import typings.reactNavigationStack.reactNavigationStackStrings.center
-import typings.reactNavigationStack.reactNavigationStackStrings.left
-import typings.reactNavigationStack.reactNavigationStackStrings.pop
-import typings.reactNavigationStack.reactNavigationStackStrings.push
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +30,7 @@ trait StackNavigationOptions extends StObject {
     * The type of animation to use when this screen replaces another screen. Defaults to `push`.
     * When `pop` is used, the `pop` animation is applied to the screen being replaced.
     */
-  var animationTypeForReplace: js.UndefOr[push | pop] = js.undefined
+  var animationTypeForReplace: js.UndefOr["push" | "pop"] = js.undefined
   
   /**
     * Function that returns a React Element to display as a overlay for the card.
@@ -202,7 +198,7 @@ trait StackNavigationOptions extends StObject {
     * How to align the the header title.
     * Defaults to `center` on iOS and `left` on Android.
     */
-  var headerTitleAlign: js.UndefOr[left | center] = js.undefined
+  var headerTitleAlign: js.UndefOr["left" | "center"] = js.undefined
   
   /**
     * Whether header title font should scale to respect Text Size accessibility settings. Defaults to `false`.
@@ -265,7 +261,7 @@ object StackNavigationOptions {
     
     inline def setAnimationEnabledUndefined: Self = StObject.set(x, "animationEnabled", js.undefined)
     
-    inline def setAnimationTypeForReplace(value: push | pop): Self = StObject.set(x, "animationTypeForReplace", value.asInstanceOf[js.Any])
+    inline def setAnimationTypeForReplace(value: "push" | "pop"): Self = StObject.set(x, "animationTypeForReplace", value.asInstanceOf[js.Any])
     
     inline def setAnimationTypeForReplaceUndefined: Self = StObject.set(x, "animationTypeForReplace", js.undefined)
     
@@ -391,7 +387,7 @@ object StackNavigationOptions {
     
     inline def setHeaderTitle(value: String | (js.Function1[/* props */ StackHeaderTitleProps, ReactNode])): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
     
-    inline def setHeaderTitleAlign(value: left | center): Self = StObject.set(x, "headerTitleAlign", value.asInstanceOf[js.Any])
+    inline def setHeaderTitleAlign(value: "left" | "center"): Self = StObject.set(x, "headerTitleAlign", value.asInstanceOf[js.Any])
     
     inline def setHeaderTitleAlignUndefined: Self = StObject.set(x, "headerTitleAlign", js.undefined)
     

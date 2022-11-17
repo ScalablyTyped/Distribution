@@ -1,21 +1,19 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`20`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CacheExpression
   extends StObject
-     with Node2
-     with JSChildNode {
+     with Node2 {
   
   var index: Double
   
   var isVNode: Boolean
   
   @JSName("type")
-  var type_CacheExpression: `20`
+  var type_CacheExpression: 20
   
   var value: JSChildNode
 }
@@ -33,7 +31,7 @@ object CacheExpression {
     
     inline def setIsVNode(value: Boolean): Self = StObject.set(x, "isVNode", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `20`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 20): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: JSChildNode): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

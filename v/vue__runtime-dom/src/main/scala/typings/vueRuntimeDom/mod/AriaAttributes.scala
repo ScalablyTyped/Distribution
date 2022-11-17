@@ -1,40 +1,5 @@
 package typings.vueRuntimeDom.mod
 
-import typings.vueRuntimeDom.vueRuntimeDomStrings.`additions text`
-import typings.vueRuntimeDom.vueRuntimeDomStrings.`inline`
-import typings.vueRuntimeDom.vueRuntimeDomStrings.additions
-import typings.vueRuntimeDom.vueRuntimeDomStrings.all
-import typings.vueRuntimeDom.vueRuntimeDomStrings.ascending
-import typings.vueRuntimeDom.vueRuntimeDomStrings.assertive
-import typings.vueRuntimeDom.vueRuntimeDomStrings.both
-import typings.vueRuntimeDom.vueRuntimeDomStrings.copy
-import typings.vueRuntimeDom.vueRuntimeDomStrings.date
-import typings.vueRuntimeDom.vueRuntimeDomStrings.descending
-import typings.vueRuntimeDom.vueRuntimeDomStrings.dialog
-import typings.vueRuntimeDom.vueRuntimeDomStrings.execute
-import typings.vueRuntimeDom.vueRuntimeDomStrings.grammar
-import typings.vueRuntimeDom.vueRuntimeDomStrings.grid
-import typings.vueRuntimeDom.vueRuntimeDomStrings.horizontal
-import typings.vueRuntimeDom.vueRuntimeDomStrings.link
-import typings.vueRuntimeDom.vueRuntimeDomStrings.list
-import typings.vueRuntimeDom.vueRuntimeDomStrings.listbox
-import typings.vueRuntimeDom.vueRuntimeDomStrings.location
-import typings.vueRuntimeDom.vueRuntimeDomStrings.menu
-import typings.vueRuntimeDom.vueRuntimeDomStrings.mixed
-import typings.vueRuntimeDom.vueRuntimeDomStrings.move
-import typings.vueRuntimeDom.vueRuntimeDomStrings.none
-import typings.vueRuntimeDom.vueRuntimeDomStrings.off
-import typings.vueRuntimeDom.vueRuntimeDomStrings.other
-import typings.vueRuntimeDom.vueRuntimeDomStrings.page
-import typings.vueRuntimeDom.vueRuntimeDomStrings.polite
-import typings.vueRuntimeDom.vueRuntimeDomStrings.popup
-import typings.vueRuntimeDom.vueRuntimeDomStrings.removals
-import typings.vueRuntimeDom.vueRuntimeDomStrings.spelling
-import typings.vueRuntimeDom.vueRuntimeDomStrings.step
-import typings.vueRuntimeDom.vueRuntimeDomStrings.text
-import typings.vueRuntimeDom.vueRuntimeDomStrings.time
-import typings.vueRuntimeDom.vueRuntimeDomStrings.tree
-import typings.vueRuntimeDom.vueRuntimeDomStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,7 +17,7 @@ trait AriaAttributes extends StObject {
     * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
     * presented if they are made.
     */
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
   
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
   var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
@@ -61,7 +26,7 @@ trait AriaAttributes extends StObject {
     * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
     * @see aria-pressed @see aria-selected.
     */
-  var `aria-checked`: js.UndefOr[Booleanish | mixed] = js.undefined
+  var `aria-checked`: js.UndefOr[Booleanish | "mixed"] = js.undefined
   
   /**
     * Defines the total number of columns in a table, grid, or treegrid.
@@ -88,7 +53,7 @@ trait AriaAttributes extends StObject {
   var `aria-controls`: js.UndefOr[String] = js.undefined
   
   /** Indicates the element that represents the current item within a container or set of related elements. */
-  var `aria-current`: js.UndefOr[Booleanish | page | step | location | date | time] = js.undefined
+  var `aria-current`: js.UndefOr[Booleanish | "page" | "step" | "location" | "date" | "time"] = js.undefined
   
   /**
     * Identifies the element (or elements) that describes the object.
@@ -112,7 +77,7 @@ trait AriaAttributes extends StObject {
     * Indicates what functions can be performed when a dragged object is released on the drop target.
     * @deprecated in ARIA 1.1
     */
-  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+  var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
   
   /**
     * Identifies the element that provides an error message for the object.
@@ -136,7 +101,7 @@ trait AriaAttributes extends StObject {
   var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
   
   /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
-  var `aria-haspopup`: js.UndefOr[Booleanish | menu | listbox | tree | grid | dialog] = js.undefined
+  var `aria-haspopup`: js.UndefOr[Booleanish | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
   
   /**
     * Indicates whether the element is exposed to an accessibility API.
@@ -148,7 +113,7 @@ trait AriaAttributes extends StObject {
     * Indicates the entered value does not conform to the format expected by the application.
     * @see aria-errormessage.
     */
-  var `aria-invalid`: js.UndefOr[Booleanish | grammar | spelling] = js.undefined
+  var `aria-invalid`: js.UndefOr[Booleanish | "grammar" | "spelling"] = js.undefined
   
   /** Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element. */
   var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
@@ -169,7 +134,7 @@ trait AriaAttributes extends StObject {
   var `aria-level`: js.UndefOr[Numberish] = js.undefined
   
   /** Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region. */
-  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+  var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
   
   /** Indicates whether an element is modal when displayed. */
   var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
@@ -181,7 +146,7 @@ trait AriaAttributes extends StObject {
   var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
   
   /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+  var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   /**
     * Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship
@@ -206,7 +171,7 @@ trait AriaAttributes extends StObject {
     * Indicates the current "pressed" state of toggle buttons.
     * @see aria-checked @see aria-selected.
     */
-  var `aria-pressed`: js.UndefOr[Booleanish | mixed] = js.undefined
+  var `aria-pressed`: js.UndefOr[Booleanish | "mixed"] = js.undefined
   
   /**
     * Indicates that the element is not editable, but is otherwise operable.
@@ -218,7 +183,7 @@ trait AriaAttributes extends StObject {
     * Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.
     * @see aria-atomic.
     */
-  var `aria-relevant`: js.UndefOr[additions | (`additions text`) | all | removals | text] = js.undefined
+  var `aria-relevant`: js.UndefOr["additions" | ("additions text") | "all" | "removals" | "text"] = js.undefined
   
   /** Indicates that user input is required on the element before a form may be submitted. */
   var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -257,7 +222,7 @@ trait AriaAttributes extends StObject {
   var `aria-setsize`: js.UndefOr[Numberish] = js.undefined
   
   /** Indicates if items in a table or grid are sorted in ascending or descending order. */
-  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+  var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
   
   /** Defines the maximum allowed value for a range widget. */
   var `aria-valuemax`: js.UndefOr[Numberish] = js.undefined
@@ -291,7 +256,7 @@ object AriaAttributes {
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
-    inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+    inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
@@ -299,7 +264,7 @@ object AriaAttributes {
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
     
-    inline def `setAria-checked`(value: Booleanish | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+    inline def `setAria-checked`(value: Booleanish | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
     
     inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
     
@@ -319,7 +284,7 @@ object AriaAttributes {
     
     inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
     
-    inline def `setAria-current`(value: Booleanish | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+    inline def `setAria-current`(value: Booleanish | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
     
     inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
     
@@ -335,7 +300,7 @@ object AriaAttributes {
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
-    inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+    inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
     
     inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
     
@@ -355,7 +320,7 @@ object AriaAttributes {
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
-    inline def `setAria-haspopup`(value: Booleanish | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+    inline def `setAria-haspopup`(value: Booleanish | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
@@ -363,7 +328,7 @@ object AriaAttributes {
     
     inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
     
-    inline def `setAria-invalid`(value: Booleanish | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+    inline def `setAria-invalid`(value: Booleanish | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
     
     inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
     
@@ -383,7 +348,7 @@ object AriaAttributes {
     
     inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
     
-    inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+    inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
     
     inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
@@ -399,7 +364,7 @@ object AriaAttributes {
     
     inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
     
-    inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+    inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
     
     inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
     
@@ -415,7 +380,7 @@ object AriaAttributes {
     
     inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
     
-    inline def `setAria-pressed`(value: Booleanish | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+    inline def `setAria-pressed`(value: Booleanish | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
     
     inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
     
@@ -423,7 +388,7 @@ object AriaAttributes {
     
     inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
-    inline def `setAria-relevant`(value: additions | (`additions text`) | all | removals | text): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
+    inline def `setAria-relevant`(value: "additions" | ("additions text") | "all" | "removals" | "text"): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
     
     inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
     
@@ -455,7 +420,7 @@ object AriaAttributes {
     
     inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
     
-    inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+    inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
     
     inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
     

@@ -1,13 +1,5 @@
 package typings.yandexMaps.mod
 
-import typings.yandexMaps.yandexMapsStrings.district
-import typings.yandexMaps.yandexMapsStrings.house
-import typings.yandexMaps.yandexMapsStrings.latlong
-import typings.yandexMaps.yandexMapsStrings.locality
-import typings.yandexMaps.yandexMapsStrings.longlat
-import typings.yandexMaps.yandexMapsStrings.metro
-import typings.yandexMaps.yandexMapsStrings.street
-import typings.yandexMaps.yandexMapsStrings.yandexNumbersignmap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,12 +20,12 @@ trait IGeocodeOptions extends StObject {
   /**
     * Type of toponym (only for reverse geocoding).
     */
-  var kind: js.UndefOr[house | street | metro | district | locality] = js.undefined
+  var kind: js.UndefOr["house" | "street" | "metro" | "district" | "locality"] = js.undefined
   
   /**
     * Geocoding provider
     */
-  var provider: js.UndefOr[IGeocodeProvider | yandexNumbersignmap] = js.undefined
+  var provider: js.UndefOr[IGeocodeProvider | "yandex#map"] = js.undefined
   
   /**
     * Maximum number of results to be returned.
@@ -43,7 +35,7 @@ trait IGeocodeOptions extends StObject {
   /**
     * Determines how to interpret the coordinates in the request.
     */
-  var searchCoordOrder: js.UndefOr[longlat | latlong] = js.undefined
+  var searchCoordOrder: js.UndefOr["longlat" | "latlong"] = js.undefined
   
   /**
     * Number of results that must be skipped.
@@ -74,11 +66,11 @@ object IGeocodeOptions {
     
     inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     
-    inline def setKind(value: house | street | metro | district | locality): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "house" | "street" | "metro" | "district" | "locality"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    inline def setProvider(value: IGeocodeProvider | yandexNumbersignmap): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: IGeocodeProvider | "yandex#map"): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
@@ -86,7 +78,7 @@ object IGeocodeOptions {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setSearchCoordOrder(value: longlat | latlong): Self = StObject.set(x, "searchCoordOrder", value.asInstanceOf[js.Any])
+    inline def setSearchCoordOrder(value: "longlat" | "latlong"): Self = StObject.set(x, "searchCoordOrder", value.asInstanceOf[js.Any])
     
     inline def setSearchCoordOrderUndefined: Self = StObject.set(x, "searchCoordOrder", js.undefined)
     

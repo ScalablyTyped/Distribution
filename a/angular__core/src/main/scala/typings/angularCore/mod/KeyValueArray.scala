@@ -1,6 +1,5 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreStrings.`array-map`
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,5 +22,5 @@ trait KeyValueArray[VALUE]
   extends StObject
      with Array[VALUE | String] {
   
-  var __brand__ : `array-map` = js.native
+  var __brand__ : "array-map" = js.native
 }

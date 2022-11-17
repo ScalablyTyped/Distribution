@@ -20,3 +20,5 @@ type CompilerExt = js.Function2[/* mode */ Mode, /* parent */ Mode | Language | 
 type LanguageFn = js.Function1[/* hljs */ HLJSApi, Language]
 
 type ModeCallback = js.Function2[/* match */ RegExpMatchArray, /* response */ CallbackResponse, Unit]
+
+type PluginEvent = /* keyof highlight.js.highlight.js.HLJSPlugin */ "after:highlight" | "before:highlight" | "after:highlightElement" | "before:highlightElement" | "after:highlightBlock" | "before:highlightBlock"

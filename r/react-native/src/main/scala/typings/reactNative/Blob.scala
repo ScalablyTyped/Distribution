@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Blob
-  extends StObject
-     with _BodyInit {
+trait Blob extends StObject {
   
   val size: Double = js.native
   

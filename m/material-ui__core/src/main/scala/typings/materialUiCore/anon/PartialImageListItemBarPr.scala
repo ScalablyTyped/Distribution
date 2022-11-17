@@ -1,9 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.bottom
-import typings.materialUiCore.materialUiCoreStrings.left
-import typings.materialUiCore.materialUiCoreStrings.right
-import typings.materialUiCore.materialUiCoreStrings.top
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -15,7 +11,7 @@ trait PartialImageListItemBarPr extends StObject {
   
   var actionIcon: js.UndefOr[ReactNode] = js.undefined
   
-  var actionPosition: js.UndefOr[left | right] = js.undefined
+  var actionPosition: js.UndefOr["left" | "right"] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -23,7 +19,7 @@ trait PartialImageListItemBarPr extends StObject {
   
   var innerRef: js.UndefOr[typings.react.mod.Ref[Any]] = js.undefined
   
-  var position: js.UndefOr[top | bottom] = js.undefined
+  var position: js.UndefOr["top" | "bottom"] = js.undefined
   
   var ref: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: {} extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
@@ -35,7 +31,7 @@ trait PartialImageListItemBarPr extends StObject {
   
   var title: js.UndefOr[ReactNode] = js.undefined
   
-  var titlePosition: js.UndefOr[top | bottom] = js.undefined
+  var titlePosition: js.UndefOr["top" | "bottom"] = js.undefined
 }
 object PartialImageListItemBarPr {
   
@@ -50,7 +46,7 @@ object PartialImageListItemBarPr {
     
     inline def setActionIconUndefined: Self = StObject.set(x, "actionIcon", js.undefined)
     
-    inline def setActionPosition(value: left | right): Self = StObject.set(x, "actionPosition", value.asInstanceOf[js.Any])
+    inline def setActionPosition(value: "left" | "right"): Self = StObject.set(x, "actionPosition", value.asInstanceOf[js.Any])
     
     inline def setActionPositionUndefined: Self = StObject.set(x, "actionPosition", js.undefined)
     
@@ -70,7 +66,7 @@ object PartialImageListItemBarPr {
     
     inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
     
-    inline def setPosition(value: top | bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: "top" | "bottom"): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
@@ -90,7 +86,7 @@ object PartialImageListItemBarPr {
     
     inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setTitlePosition(value: top | bottom): Self = StObject.set(x, "titlePosition", value.asInstanceOf[js.Any])
+    inline def setTitlePosition(value: "top" | "bottom"): Self = StObject.set(x, "titlePosition", value.asInstanceOf[js.Any])
     
     inline def setTitlePositionUndefined: Self = StObject.set(x, "titlePosition", js.undefined)
     

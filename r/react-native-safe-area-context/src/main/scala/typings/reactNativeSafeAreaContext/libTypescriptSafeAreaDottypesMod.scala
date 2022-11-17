@@ -2,31 +2,23 @@ package typings.reactNativeSafeAreaContext
 
 import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.ViewProps
-import typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.margin
-import typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.padding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libTypescriptSafeAreaDottypesMod {
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.top
-    - typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.right
-    - typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.bottom
-    - typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.left
-  */
-  trait Edge extends StObject
   object Edge {
     
-    inline def bottom: typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.bottom = "bottom".asInstanceOf[typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.bottom]
+    inline def bottom: "bottom" = "bottom".asInstanceOf["bottom"]
     
-    inline def left: typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.left = "left".asInstanceOf[typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.left]
+    inline def left: "left" = "left".asInstanceOf["left"]
     
-    inline def right: typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.right = "right".asInstanceOf[typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.right]
+    inline def right: "right" = "right".asInstanceOf["right"]
     
-    inline def top: typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.top = "top".asInstanceOf[typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.top]
+    inline def top: "top" = "top".asInstanceOf["top"]
   }
+  type Edge = "top" | "right" | "bottom" | "left"
   
   trait EdgeInsets extends StObject {
     
@@ -107,7 +99,7 @@ object libTypescriptSafeAreaDottypesMod {
     
     var edges: js.UndefOr[js.Array[Edge]] = js.undefined
     
-    var mode: js.UndefOr[padding | margin] = js.undefined
+    var mode: js.UndefOr["padding" | "margin"] = js.undefined
   }
   object NativeSafeAreaViewProps {
     
@@ -124,7 +116,7 @@ object libTypescriptSafeAreaDottypesMod {
       
       inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "edges", js.Array(value*))
       
-      inline def setMode(value: padding | margin): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: "padding" | "margin"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }

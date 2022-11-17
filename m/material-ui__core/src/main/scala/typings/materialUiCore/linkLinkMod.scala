@@ -2,9 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.TypographyClasses
-import typings.materialUiCore.materialUiCoreStrings.a
-import typings.materialUiCore.materialUiCoreStrings.component
-import typings.materialUiCore.materialUiCoreStrings.span
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.materialUiCore.typographyTypographyMod.TypographyProps
@@ -32,33 +29,25 @@ object linkLinkMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Link/Link", JSImport.Default)
   @js.native
-  val default: OverridableComponent[LinkTypeMap[js.Object, a]] = js.native
+  val default: OverridableComponent[LinkTypeMap[js.Object, "a"]] = js.native
   
-  type LinkBaseProps = AnchorHTMLAttributes[HTMLAnchorElement] & (Omit[TypographyProps[span, js.Object], component])
+  type LinkBaseProps = AnchorHTMLAttributes[HTMLAnchorElement] & (Omit[TypographyProps["span", js.Object], "component"])
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.underlineNone
-    - typings.materialUiCore.materialUiCoreStrings.underlineHover
-    - typings.materialUiCore.materialUiCoreStrings.underlineAlways
-    - typings.materialUiCore.materialUiCoreStrings.button
-    - typings.materialUiCore.materialUiCoreStrings.focusVisible
-  */
-  trait LinkClassKey extends StObject
   object LinkClassKey {
     
-    inline def button: typings.materialUiCore.materialUiCoreStrings.button = "button".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.button]
+    inline def button: "button" = "button".asInstanceOf["button"]
     
-    inline def focusVisible: typings.materialUiCore.materialUiCoreStrings.focusVisible = "focusVisible".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.focusVisible]
+    inline def focusVisible: "focusVisible" = "focusVisible".asInstanceOf["focusVisible"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def underlineAlways: typings.materialUiCore.materialUiCoreStrings.underlineAlways = "underlineAlways".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.underlineAlways]
+    inline def underlineAlways: "underlineAlways" = "underlineAlways".asInstanceOf["underlineAlways"]
     
-    inline def underlineHover: typings.materialUiCore.materialUiCoreStrings.underlineHover = "underlineHover".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.underlineHover]
+    inline def underlineHover: "underlineHover" = "underlineHover".asInstanceOf["underlineHover"]
     
-    inline def underlineNone: typings.materialUiCore.materialUiCoreStrings.underlineNone = "underlineNone".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.underlineNone]
+    inline def underlineNone: "underlineNone" = "underlineNone".asInstanceOf["underlineNone"]
   }
+  type LinkClassKey = "root" | "underlineNone" | "underlineHover" | "underlineAlways" | "button" | "focusVisible"
   
   type LinkProps[D /* <: ElementType[Any] */, P] = OverrideProps[LinkTypeMap[P, D], D]
   
@@ -87,8 +76,8 @@ object linkLinkMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[LinkTypeMap[js.Object, a]]
+  type _To = OverridableComponent[LinkTypeMap[js.Object, "a"]]
   
   /* This means you don't have to write `default`, but can instead just say `linkLinkMod.foo` */
-  override def _to: OverridableComponent[LinkTypeMap[js.Object, a]] = default
+  override def _to: OverridableComponent[LinkTypeMap[js.Object, "a"]] = default
 }

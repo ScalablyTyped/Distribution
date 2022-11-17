@@ -1,10 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.critical
-import typings.electron.electronStrings.default
-import typings.electron.electronStrings.low
-import typings.electron.electronStrings.never
-import typings.electron.electronStrings.normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,7 +71,7 @@ trait NotificationConstructorOptions extends StObject {
     *
     * @platform linux,win32
     */
-  var timeoutType: js.UndefOr[default | never] = js.undefined
+  var timeoutType: js.UndefOr["default" | "never"] = js.undefined
   
   /**
     * A title for the notification, which will be shown at the top of the notification
@@ -97,7 +92,7 @@ trait NotificationConstructorOptions extends StObject {
     *
     * @platform linux
     */
-  var urgency: js.UndefOr[normal | critical | low] = js.undefined
+  var urgency: js.UndefOr["normal" | "critical" | "low"] = js.undefined
 }
 object NotificationConstructorOptions {
   
@@ -146,7 +141,7 @@ object NotificationConstructorOptions {
     
     inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    inline def setTimeoutType(value: default | never): Self = StObject.set(x, "timeoutType", value.asInstanceOf[js.Any])
+    inline def setTimeoutType(value: "default" | "never"): Self = StObject.set(x, "timeoutType", value.asInstanceOf[js.Any])
     
     inline def setTimeoutTypeUndefined: Self = StObject.set(x, "timeoutType", js.undefined)
     
@@ -158,7 +153,7 @@ object NotificationConstructorOptions {
     
     inline def setToastXmlUndefined: Self = StObject.set(x, "toastXml", js.undefined)
     
-    inline def setUrgency(value: normal | critical | low): Self = StObject.set(x, "urgency", value.asInstanceOf[js.Any])
+    inline def setUrgency(value: "normal" | "critical" | "low"): Self = StObject.set(x, "urgency", value.asInstanceOf[js.Any])
     
     inline def setUrgencyUndefined: Self = StObject.set(x, "urgency", js.undefined)
   }

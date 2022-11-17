@@ -1,6 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliStrings.style
 import typings.std.Set
 import typings.typescript.mod.CancellationToken
 import typings.typescript.mod.CompilerOptions
@@ -313,7 +312,7 @@ object srcNgtscCoreApiSrcInterfacesMod {
       * * Resources referenced via a component's `styles` or `styleUrls` properties are of
       * type `style`.
       */
-    val `type`: style
+    val `type`: "style"
   }
   object ResourceHostContext {
     
@@ -331,7 +330,7 @@ object srcNgtscCoreApiSrcInterfacesMod {
       
       inline def setResourceFileNull: Self = StObject.set(x, "resourceFile", null)
       
-      inline def setType(value: style): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "style"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

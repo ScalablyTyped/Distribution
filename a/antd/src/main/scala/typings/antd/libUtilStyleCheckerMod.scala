@@ -1,6 +1,5 @@
 package typings.antd
 
-import typings.antd.antdBooleans.`false`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ object libUtilStyleCheckerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def canUseDocElement(): `false` | HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseDocElement")().asInstanceOf[`false` | HTMLElement]
+  inline def canUseDocElement(): false | HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseDocElement")().asInstanceOf[false | HTMLElement]
   
   inline def detectFlexGapSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("detectFlexGapSupported")().asInstanceOf[Boolean]
   

@@ -1,6 +1,5 @@
 package typings.ajv.anon
 
-import typings.ajv.ajvStrings.boolean
 import typings.ajv.distTypesJtdSchemaMod.NumberType
 import typings.ajv.distTypesJtdSchemaMod.SomeJTDSchemaType
 import typings.ajv.distTypesJtdSchemaMod.StringType
@@ -10,9 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  type :ajv.ajv/dist/types/jtd-schema.NumberType | ajv.ajv/dist/types/jtd-schema.StringType | 'boolean'} & {  nullable :boolean | undefined,   metadata :std.Record<string, unknown> | undefined,   definitions :std.Record<string, ajv.ajv/dist/types/jtd-schema.SomeJTDSchemaType> | undefined} */
-trait typeNumberTypeStringTypeb
-  extends StObject
-     with SomeJTDSchemaType {
+trait typeNumberTypeStringTypeb extends StObject {
   
   var definitions: js.UndefOr[Record[String, SomeJTDSchemaType]] = js.undefined
   
@@ -20,11 +17,11 @@ trait typeNumberTypeStringTypeb
   
   var nullable: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: NumberType | StringType | boolean
+  var `type`: NumberType | StringType | "boolean"
 }
 object typeNumberTypeStringTypeb {
   
-  inline def apply(`type`: NumberType | StringType | boolean): typeNumberTypeStringTypeb = {
+  inline def apply(`type`: NumberType | StringType | "boolean"): typeNumberTypeStringTypeb = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typeNumberTypeStringTypeb]
@@ -44,6 +41,6 @@ object typeNumberTypeStringTypeb {
     
     inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
     
-    inline def setType(value: NumberType | StringType | boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NumberType | StringType | "boolean"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -3,15 +3,12 @@ package typings.node
 import typings.node.NodeJS.Dict
 import typings.node.NodeJS.RefCounted
 import typings.node.anon.Message
+import typings.node.fsPromisesMod.FileHandle
+import typings.node.nodeColonbufferMod.Blob
+import typings.node.nodeColoncryptoMod.X509Certificate
 import typings.node.nodeColonstreamMod.Readable
 import typings.node.nodeColonstreamMod.Writable
 import typings.node.nodeColonurlMod.URL
-import typings.node.nodeStrings.close
-import typings.node.nodeStrings.error
-import typings.node.nodeStrings.exit
-import typings.node.nodeStrings.message
-import typings.node.nodeStrings.messageerror
-import typings.node.nodeStrings.online
 import typings.node.perfHooksMod.EventLoopUtilityFunction
 import typings.node.perfHooksMod.EventLoopUtilization
 import typings.node.vmMod.Context
@@ -129,18 +126,19 @@ object workerThreadsMod {
     */
   @JSImport("worker_threads", "MessagePort")
   @js.native
-  open class MessagePort ()
-    extends StObject
-       with _TransferListItem {
+  open class MessagePort () extends StObject {
     
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_close")
+    def addListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_message")
+    def addListener(event: "message", listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_messageerror")
+    def addListener(event: "messageerror", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_message(event: message, listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_messageerror(event: messageerror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     
     /**
       * Disables further sending of messages on either side of the connection.
@@ -152,41 +150,53 @@ object workerThreadsMod {
       */
     def close(): Unit = js.native
     
+    @JSName("emit")
+    @scala.annotation.targetName("emit_close")
+    def emit(event: "close"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_messageerror")
+    def emit(event: "messageerror", error: js.Error): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_message")
+    def emit(event: "message", value: Any): Boolean = js.native
     def emit(event: String, args: Any*): Boolean = js.native
     def emit(event: js.Symbol, args: Any*): Boolean = js.native
-    @JSName("emit")
-    def emit_close(event: close): Boolean = js.native
-    @JSName("emit")
-    def emit_message(event: message, value: Any): Boolean = js.native
-    @JSName("emit")
-    def emit_messageerror(event: messageerror, error: js.Error): Boolean = js.native
     
+    @JSName("off")
+    @scala.annotation.targetName("off_close")
+    def off(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("off")
+    @scala.annotation.targetName("off_message")
+    def off(event: "message", listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
+    @JSName("off")
+    @scala.annotation.targetName("off_messageerror")
+    def off(event: "messageerror", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     def off(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def off(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("off")
-    def off_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("off")
-    def off_message(event: message, listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
-    @JSName("off")
-    def off_messageerror(event: messageerror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     
+    @JSName("on")
+    @scala.annotation.targetName("on_close")
+    def on(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_message")
+    def on(event: "message", listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_messageerror")
+    def on(event: "messageerror", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_message(event: message, listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_messageerror(event: messageerror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     
+    @JSName("once")
+    @scala.annotation.targetName("once_close")
+    def once(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_message")
+    def once(event: "message", listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_messageerror")
+    def once(event: "messageerror", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_message(event: message, listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_messageerror(event: messageerror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     
     /**
       * Sends a JavaScript value to the receiving side of this channel.`value` is transferred in a way which is compatible with
@@ -257,23 +267,29 @@ object workerThreadsMod {
     def postMessage(value: Any): Unit = js.native
     def postMessage(value: Any, transferList: js.Array[TransferListItem]): Unit = js.native
     
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_close")
+    def prependListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_message")
+    def prependListener(event: "message", listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_messageerror")
+    def prependListener(event: "messageerror", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_message(event: message, listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_messageerror(event: messageerror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_close")
+    def prependOnceListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_message")
+    def prependOnceListener(event: "message", listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_messageerror")
+    def prependOnceListener(event: "messageerror", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_message(event: message, listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_messageerror(event: messageerror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     
     /**
       * Opposite of `unref()`. Calling `ref()` on a previously `unref()`ed port does _not_ let the program exit if it's the only active handle left (the default
@@ -286,14 +302,17 @@ object workerThreadsMod {
       */
     def ref(): Unit = js.native
     
+    @JSName("removeListener")
+    @scala.annotation.targetName("removeListener_close")
+    def removeListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("removeListener")
+    @scala.annotation.targetName("removeListener_messageerror")
+    def removeListener(event: "messageerror", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+    @JSName("removeListener")
+    @scala.annotation.targetName("removeListener_message")
+    def removeListener(event: "message", listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
     def removeListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_message(event: message, listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_messageerror(event: messageerror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     
     /**
       * Starts receiving messages on this `MessagePort`. When using this port
@@ -399,31 +418,41 @@ object workerThreadsMod {
     def this(filename: String, options: WorkerOptions) = this()
     def this(filename: URL, options: WorkerOptions) = this()
     
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_online")
+    def addListener(event: "online", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_exit")
+    def addListener(event: "exit", listener: js.Function1[/* exitCode */ Double, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_error")
+    def addListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_message")
+    def addListener(event: "message", listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_messageerror")
+    def addListener(event: "messageerror", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_exit(event: exit, listener: js.Function1[/* exitCode */ Double, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_message(event: message, listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_messageerror(event: messageerror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_online(event: online, listener: js.Function0[Unit]): this.type = js.native
     
+    @JSName("emit")
+    @scala.annotation.targetName("emit_online")
+    def emit(event: "online"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_error")
+    def emit(event: "error", err: js.Error): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_messageerror")
+    def emit(event: "messageerror", error: js.Error): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_exit")
+    def emit(event: "exit", exitCode: Double): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_message")
+    def emit(event: "message", value: Any): Boolean = js.native
     def emit(event: String, args: Any*): Boolean = js.native
     def emit(event: js.Symbol, args: Any*): Boolean = js.native
-    @JSName("emit")
-    def emit_error(event: error, err: js.Error): Boolean = js.native
-    @JSName("emit")
-    def emit_exit(event: exit, exitCode: Double): Boolean = js.native
-    @JSName("emit")
-    def emit_message(event: message, value: Any): Boolean = js.native
-    @JSName("emit")
-    def emit_messageerror(event: messageerror, error: js.Error): Boolean = js.native
-    @JSName("emit")
-    def emit_online(event: online): Boolean = js.native
     
     /**
       * Returns a readable stream for a V8 snapshot of the current state of the Worker.
@@ -436,44 +465,59 @@ object workerThreadsMod {
       */
     def getHeapSnapshot(): js.Promise[Readable] = js.native
     
+    @JSName("off")
+    @scala.annotation.targetName("off_online")
+    def off(event: "online", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("off")
+    @scala.annotation.targetName("off_exit")
+    def off(event: "exit", listener: js.Function1[/* exitCode */ Double, Unit]): this.type = js.native
+    @JSName("off")
+    @scala.annotation.targetName("off_message")
+    def off(event: "message", listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
+    @JSName("off")
+    @scala.annotation.targetName("off_messageerror")
+    def off(event: "messageerror", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+    @JSName("off")
+    @scala.annotation.targetName("off_error")
+    def off(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     def off(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def off(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("off")
-    def off_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("off")
-    def off_exit(event: exit, listener: js.Function1[/* exitCode */ Double, Unit]): this.type = js.native
-    @JSName("off")
-    def off_message(event: message, listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
-    @JSName("off")
-    def off_messageerror(event: messageerror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
-    @JSName("off")
-    def off_online(event: online, listener: js.Function0[Unit]): this.type = js.native
     
+    @JSName("on")
+    @scala.annotation.targetName("on_online")
+    def on(event: "online", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_error")
+    def on(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_message")
+    def on(event: "message", listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_exit")
+    def on(event: "exit", listener: js.Function1[/* exitCode */ Double, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_messageerror")
+    def on(event: "messageerror", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_exit(event: exit, listener: js.Function1[/* exitCode */ Double, Unit]): this.type = js.native
-    @JSName("on")
-    def on_message(event: message, listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_messageerror(event: messageerror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_online(event: online, listener: js.Function0[Unit]): this.type = js.native
     
+    @JSName("once")
+    @scala.annotation.targetName("once_online")
+    def once(event: "online", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_message")
+    def once(event: "message", listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_error")
+    def once(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_messageerror")
+    def once(event: "messageerror", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_exit")
+    def once(event: "exit", listener: js.Function1[/* exitCode */ Double, Unit]): this.type = js.native
     def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("once")
-    def once_exit(event: exit, listener: js.Function1[/* exitCode */ Double, Unit]): this.type = js.native
-    @JSName("once")
-    def once_message(event: message, listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_messageerror(event: messageerror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
-    @JSName("once")
-    def once_online(event: online, listener: js.Function0[Unit]): this.type = js.native
     
     /**
       * An object that can be used to query performance information from a worker
@@ -490,31 +534,41 @@ object workerThreadsMod {
     def postMessage(value: Any): Unit = js.native
     def postMessage(value: Any, transferList: js.Array[TransferListItem]): Unit = js.native
     
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_online")
+    def prependListener(event: "online", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_message")
+    def prependListener(event: "message", listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_messageerror")
+    def prependListener(event: "messageerror", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_exit")
+    def prependListener(event: "exit", listener: js.Function1[/* exitCode */ Double, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_error")
+    def prependListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_exit(event: exit, listener: js.Function1[/* exitCode */ Double, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_message(event: message, listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_messageerror(event: messageerror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_online(event: online, listener: js.Function0[Unit]): this.type = js.native
     
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_online")
+    def prependOnceListener(event: "online", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_message")
+    def prependOnceListener(event: "message", listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_exit")
+    def prependOnceListener(event: "exit", listener: js.Function1[/* exitCode */ Double, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_messageerror")
+    def prependOnceListener(event: "messageerror", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_error")
+    def prependOnceListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_exit(event: exit, listener: js.Function1[/* exitCode */ Double, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_message(event: message, listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_messageerror(event: messageerror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_online(event: online, listener: js.Function0[Unit]): this.type = js.native
     
     /**
       * Opposite of `unref()`, calling `ref()` on a previously `unref()`ed worker does _not_ let the program exit if it's the only active handle left (the default
@@ -524,18 +578,23 @@ object workerThreadsMod {
       */
     def ref(): Unit = js.native
     
+    @JSName("removeListener")
+    @scala.annotation.targetName("removeListener_online")
+    def removeListener(event: "online", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("removeListener")
+    @scala.annotation.targetName("removeListener_exit")
+    def removeListener(event: "exit", listener: js.Function1[/* exitCode */ Double, Unit]): this.type = js.native
+    @JSName("removeListener")
+    @scala.annotation.targetName("removeListener_messageerror")
+    def removeListener(event: "messageerror", listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+    @JSName("removeListener")
+    @scala.annotation.targetName("removeListener_message")
+    def removeListener(event: "message", listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
+    @JSName("removeListener")
+    @scala.annotation.targetName("removeListener_error")
+    def removeListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     def removeListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_exit(event: exit, listener: js.Function1[/* exitCode */ Double, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_message(event: message, listener: js.Function1[/* value */ Any, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_messageerror(event: messageerror, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_online(event: online, listener: js.Function0[Unit]): this.type = js.native
     
     /**
       * Provides the set of JS engine resource constraints for this Worker thread.
@@ -811,14 +870,7 @@ object workerThreadsMod {
   
   type Serializable = String | js.Object | Double | Boolean | js.BigInt
   
-  /* Rewritten from type alias, can be one of: 
-    - js.typedarray.ArrayBuffer
-    - typings.node.workerThreadsMod.MessagePort
-    - typings.node.fsPromisesMod.FileHandle
-    - typings.node.nodeColoncryptoMod.X509Certificate
-    - typings.node.nodeColonbufferMod.Blob
-  */
-  type TransferListItem = _TransferListItem | js.typedarray.ArrayBuffer
+  type TransferListItem = js.typedarray.ArrayBuffer | MessagePort | FileHandle | X509Certificate | Blob
   
   trait WorkerOptions extends StObject {
     
@@ -942,6 +994,4 @@ object workerThreadsMod {
       ): Self = StObject.set(x, "eventLoopUtilization", js.Any.fromFunction2(value))
     }
   }
-  
-  trait _TransferListItem extends StObject
 }

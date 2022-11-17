@@ -3,9 +3,6 @@ package typings.three
 import typings.std.ArrayLike
 import typings.three.examplesJsmMiscVolumeSliceMod.VolumeSlice
 import typings.three.srcThreeMod.Matrix3
-import typings.three.threeStrings.x_
-import typings.three.threeStrings.y_
-import typings.three.threeStrings.z_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +46,7 @@ object examplesJsmMiscVolumeMod {
     
     def access(i: Double, j: Double, k: Double): Double = js.native
     
-    var axisOrder: js.Array[x_ | y_ | z_] = js.native
+    var axisOrder: js.Array["x" | "y" | "z"] = js.native
     
     def computeMinMax(): js.Array[Double] = js.native
     

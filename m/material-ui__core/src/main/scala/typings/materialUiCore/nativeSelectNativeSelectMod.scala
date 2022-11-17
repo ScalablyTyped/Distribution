@@ -3,62 +3,6 @@ package typings.materialUiCore
 import typings.materialUiCore.anon.Disabled
 import typings.materialUiCore.anon.PartialClassNameMapNative
 import typings.materialUiCore.inputBaseInputBaseMod.InputBaseComponentProps
-import typings.materialUiCore.materialUiCoreStrings.`additions removals`
-import typings.materialUiCore.materialUiCoreStrings.`additions text`
-import typings.materialUiCore.materialUiCoreStrings.`inline`
-import typings.materialUiCore.materialUiCoreStrings.`removals additions`
-import typings.materialUiCore.materialUiCoreStrings.`removals text`
-import typings.materialUiCore.materialUiCoreStrings.`text additions`
-import typings.materialUiCore.materialUiCoreStrings.`text removals`
-import typings.materialUiCore.materialUiCoreStrings.additions
-import typings.materialUiCore.materialUiCoreStrings.all
-import typings.materialUiCore.materialUiCoreStrings.ascending
-import typings.materialUiCore.materialUiCoreStrings.assertive
-import typings.materialUiCore.materialUiCoreStrings.both
-import typings.materialUiCore.materialUiCoreStrings.copy
-import typings.materialUiCore.materialUiCoreStrings.date
-import typings.materialUiCore.materialUiCoreStrings.decimal
-import typings.materialUiCore.materialUiCoreStrings.dense
-import typings.materialUiCore.materialUiCoreStrings.descending
-import typings.materialUiCore.materialUiCoreStrings.dialog
-import typings.materialUiCore.materialUiCoreStrings.email
-import typings.materialUiCore.materialUiCoreStrings.execute
-import typings.materialUiCore.materialUiCoreStrings.filled
-import typings.materialUiCore.materialUiCoreStrings.grammar
-import typings.materialUiCore.materialUiCoreStrings.grid
-import typings.materialUiCore.materialUiCoreStrings.horizontal
-import typings.materialUiCore.materialUiCoreStrings.inherit
-import typings.materialUiCore.materialUiCoreStrings.link
-import typings.materialUiCore.materialUiCoreStrings.list
-import typings.materialUiCore.materialUiCoreStrings.listbox
-import typings.materialUiCore.materialUiCoreStrings.location
-import typings.materialUiCore.materialUiCoreStrings.menu
-import typings.materialUiCore.materialUiCoreStrings.mixed
-import typings.materialUiCore.materialUiCoreStrings.move
-import typings.materialUiCore.materialUiCoreStrings.no
-import typings.materialUiCore.materialUiCoreStrings.none
-import typings.materialUiCore.materialUiCoreStrings.numeric
-import typings.materialUiCore.materialUiCoreStrings.off
-import typings.materialUiCore.materialUiCoreStrings.on
-import typings.materialUiCore.materialUiCoreStrings.other
-import typings.materialUiCore.materialUiCoreStrings.outlined
-import typings.materialUiCore.materialUiCoreStrings.page
-import typings.materialUiCore.materialUiCoreStrings.polite
-import typings.materialUiCore.materialUiCoreStrings.popup
-import typings.materialUiCore.materialUiCoreStrings.primary
-import typings.materialUiCore.materialUiCoreStrings.removals
-import typings.materialUiCore.materialUiCoreStrings.search
-import typings.materialUiCore.materialUiCoreStrings.secondary
-import typings.materialUiCore.materialUiCoreStrings.spelling
-import typings.materialUiCore.materialUiCoreStrings.standard
-import typings.materialUiCore.materialUiCoreStrings.step
-import typings.materialUiCore.materialUiCoreStrings.tel
-import typings.materialUiCore.materialUiCoreStrings.text
-import typings.materialUiCore.materialUiCoreStrings.time
-import typings.materialUiCore.materialUiCoreStrings.tree
-import typings.materialUiCore.materialUiCoreStrings.url
-import typings.materialUiCore.materialUiCoreStrings.vertical
-import typings.materialUiCore.materialUiCoreStrings.yes
 import typings.materialUiCore.nativeSelectNativeSelectInputMod.NativeSelectInputProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
@@ -118,38 +62,27 @@ object nativeSelectNativeSelectMod {
   
   inline def default(props: NativeSelectProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.select
-    - typings.materialUiCore.materialUiCoreStrings.filled
-    - typings.materialUiCore.materialUiCoreStrings.outlined
-    - typings.materialUiCore.materialUiCoreStrings.selectMenu
-    - typings.materialUiCore.materialUiCoreStrings.disabled
-    - typings.materialUiCore.materialUiCoreStrings.icon
-    - typings.materialUiCore.materialUiCoreStrings.iconFilled
-    - typings.materialUiCore.materialUiCoreStrings.iconOutlined
-  */
-  trait NativeSelectClassKey extends StObject
   object NativeSelectClassKey {
     
-    inline def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
+    inline def disabled: "disabled" = "disabled".asInstanceOf["disabled"]
     
-    inline def filled: typings.materialUiCore.materialUiCoreStrings.filled = "filled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.filled]
+    inline def filled: "filled" = "filled".asInstanceOf["filled"]
     
-    inline def icon: typings.materialUiCore.materialUiCoreStrings.icon = "icon".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.icon]
+    inline def icon: "icon" = "icon".asInstanceOf["icon"]
     
-    inline def iconFilled: typings.materialUiCore.materialUiCoreStrings.iconFilled = "iconFilled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.iconFilled]
+    inline def iconFilled: "iconFilled" = "iconFilled".asInstanceOf["iconFilled"]
     
-    inline def iconOutlined: typings.materialUiCore.materialUiCoreStrings.iconOutlined = "iconOutlined".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.iconOutlined]
+    inline def iconOutlined: "iconOutlined" = "iconOutlined".asInstanceOf["iconOutlined"]
     
-    inline def outlined: typings.materialUiCore.materialUiCoreStrings.outlined = "outlined".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.outlined]
+    inline def outlined: "outlined" = "outlined".asInstanceOf["outlined"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def select: typings.materialUiCore.materialUiCoreStrings.select = "select".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.select]
+    inline def select: "select" = "select".asInstanceOf["select"]
     
-    inline def selectMenu: typings.materialUiCore.materialUiCoreStrings.selectMenu = "selectMenu".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.selectMenu]
+    inline def selectMenu: "selectMenu" = "selectMenu".asInstanceOf["selectMenu"]
   }
+  type NativeSelectClassKey = "root" | "select" | "filled" | "outlined" | "selectMenu" | "disabled" | "icon" | "iconFilled" | "iconOutlined"
   
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Input.InputProps, @material-ui/core.@material-ui/core/NativeSelect/NativeSelect.NativeSelectClassKey, 'inputProps' | 'value' | 'onChange'> */
   trait NativeSelectProps extends StObject {
@@ -167,11 +100,11 @@ object nativeSelectNativeSelectMod {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -181,7 +114,7 @@ object nativeSelectNativeSelectMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -189,7 +122,7 @@ object nativeSelectNativeSelectMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -199,11 +132,11 @@ object nativeSelectNativeSelectMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -213,7 +146,7 @@ object nativeSelectNativeSelectMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -221,7 +154,7 @@ object nativeSelectNativeSelectMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -229,12 +162,12 @@ object nativeSelectNativeSelectMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -251,7 +184,7 @@ object nativeSelectNativeSelectMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -284,9 +217,9 @@ object nativeSelectNativeSelectMod {
       */
     var classes: js.UndefOr[PartialClassNameMapNative] = js.undefined
     
-    var color: js.UndefOr[primary | secondary] = js.undefined
+    var color: js.UndefOr["primary" | "secondary"] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -327,7 +260,7 @@ object nativeSelectNativeSelectMod {
     
     var inputComponent: js.UndefOr[ElementType[InputBaseComponentProps]] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     /**
       * Attributes applied to the `select` element.
@@ -350,7 +283,7 @@ object nativeSelectNativeSelectMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
-    var margin: js.UndefOr[dense | none] = js.undefined
+    var margin: js.UndefOr["dense" | "none"] = js.undefined
     
     var maxRows: js.UndefOr[String | Double] = js.undefined
     
@@ -577,13 +510,13 @@ object nativeSelectNativeSelectMod {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
     /**
       * The input value. The DOM API casts this to a string.
@@ -594,7 +527,7 @@ object nativeSelectNativeSelectMod {
     /**
       * The variant to use.
       */
-    var variant: js.UndefOr[standard | outlined | filled] = js.undefined
+    var variant: js.UndefOr["standard" | "outlined" | "filled"] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
   }
@@ -623,7 +556,7 @@ object nativeSelectNativeSelectMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -631,7 +564,7 @@ object nativeSelectNativeSelectMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -651,7 +584,7 @@ object nativeSelectNativeSelectMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -667,7 +600,7 @@ object nativeSelectNativeSelectMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -687,7 +620,7 @@ object nativeSelectNativeSelectMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -695,7 +628,7 @@ object nativeSelectNativeSelectMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -715,7 +648,7 @@ object nativeSelectNativeSelectMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -731,7 +664,7 @@ object nativeSelectNativeSelectMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -747,7 +680,7 @@ object nativeSelectNativeSelectMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -756,7 +689,7 @@ object nativeSelectNativeSelectMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -789,7 +722,7 @@ object nativeSelectNativeSelectMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -841,11 +774,11 @@ object nativeSelectNativeSelectMod {
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      inline def setColor(value: primary | secondary): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: "primary" | "secondary"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -927,7 +860,7 @@ object nativeSelectNativeSelectMod {
       
       inline def setInputComponentUndefined: Self = StObject.set(x, "inputComponent", js.undefined)
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -973,7 +906,7 @@ object nativeSelectNativeSelectMod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setMargin(value: dense | none): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: "dense" | "none"): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -1411,7 +1344,7 @@ object nativeSelectNativeSelectMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
@@ -1423,7 +1356,7 @@ object nativeSelectNativeSelectMod {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
@@ -1431,7 +1364,7 @@ object nativeSelectNativeSelectMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setVariant(value: standard | outlined | filled): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "standard" | "outlined" | "filled"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       

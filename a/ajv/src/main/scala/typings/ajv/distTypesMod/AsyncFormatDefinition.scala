@@ -1,13 +1,12 @@
 package typings.ajv.distTypesMod
 
-import typings.ajv.ajvBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AsyncFormatDefinition[T /* <: String | Double */] extends StObject {
   
-  var async: `true`
+  var async: true
   
   var compare: js.UndefOr[FormatCompare[T]] = js.undefined
   
@@ -28,7 +27,7 @@ object AsyncFormatDefinition {
   
   extension [Self <: AsyncFormatDefinition[?], T /* <: String | Double */](x: Self & AsyncFormatDefinition[T]) {
     
-    inline def setAsync(value: `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: true): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     inline def setCompare(value: (T, T) => js.UndefOr[Double]): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     

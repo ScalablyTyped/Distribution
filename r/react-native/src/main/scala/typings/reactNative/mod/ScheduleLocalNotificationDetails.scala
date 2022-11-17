@@ -1,11 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.day
-import typings.reactNative.reactNativeStrings.hour
-import typings.reactNative.reactNativeStrings.minute
-import typings.reactNative.reactNativeStrings.month
-import typings.reactNative.reactNativeStrings.week
-import typings.reactNative.reactNativeStrings.year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +20,7 @@ trait ScheduleLocalNotificationDetails extends StObject {
   
   var isSilent: js.UndefOr[Boolean] = js.undefined
   
-  var repeatInterval: js.UndefOr[year | month | week | day | hour | minute] = js.undefined
+  var repeatInterval: js.UndefOr["year" | "month" | "week" | "day" | "hour" | "minute"] = js.undefined
   
   var soundName: js.UndefOr[String] = js.undefined
   
@@ -69,7 +63,7 @@ object ScheduleLocalNotificationDetails {
     
     inline def setIsSilentUndefined: Self = StObject.set(x, "isSilent", js.undefined)
     
-    inline def setRepeatInterval(value: year | month | week | day | hour | minute): Self = StObject.set(x, "repeatInterval", value.asInstanceOf[js.Any])
+    inline def setRepeatInterval(value: "year" | "month" | "week" | "day" | "hour" | "minute"): Self = StObject.set(x, "repeatInterval", value.asInstanceOf[js.Any])
     
     inline def setRepeatIntervalUndefined: Self = StObject.set(x, "repeatInterval", js.undefined)
     

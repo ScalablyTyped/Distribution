@@ -1,17 +1,14 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashOPEN_DRAWER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationOpenDrawerAction
-  extends StObject
-     with NavigationDrawerAction {
+trait NavigationOpenDrawerAction extends StObject {
   
   var key: js.UndefOr[String] = js.undefined
   
-  var `type`: NavigationSlashOPEN_DRAWER
+  var `type`: "Navigation/OPEN_DRAWER"
 }
 object NavigationOpenDrawerAction {
   
@@ -27,6 +24,6 @@ object NavigationOpenDrawerAction {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setType(value: NavigationSlashOPEN_DRAWER): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Navigation/OPEN_DRAWER"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

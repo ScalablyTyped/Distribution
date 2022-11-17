@@ -20,10 +20,6 @@ import typings.reactNative.mod.TouchableWithoutFeedbackPropsIOS
 import typings.reactNative.mod.ViewPropsAndroid
 import typings.reactNative.mod.ViewPropsIOS
 import typings.reactNative.mod.ViewStyle
-import typings.reactNative.reactNativeStrings.`box-none`
-import typings.reactNative.reactNativeStrings.`box-only`
-import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -191,7 +187,7 @@ object buildCreateIconSetMod {
       * But since pointerEvents does not affect layout/appearance, and we are already deviating from the spec by adding additional modes,
       * we opt to not include pointerEvents on style. On some platforms, we would need to implement it as a className anyways. Using style or not is an implementation detail of the platform.
       */
-    var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
+    var pointerEvents: js.UndefOr["box-none" | "none" | "box-only" | "auto"] = js.undefined
     
     /**
       * When the scroll view is disabled, this defines how far your
@@ -281,7 +277,7 @@ object buildCreateIconSetMod {
       
       inline def setOnShowUnderlayUndefined: Self = StObject.set(x, "onShowUnderlay", js.undefined)
       
-      inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+      inline def setPointerEvents(value: "box-none" | "none" | "box-only" | "auto"): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
       
       inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
       

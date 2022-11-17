@@ -1,27 +1,19 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.DoWhileStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait DoWhileStatement_
+trait DoWhileStatement_
   extends StObject
-     with BaseNode
-     with BlockParent
-     with Loop
-     with Scopable
-     with Standardized
-     with Statement
-     with While {
+     with BaseNode {
   
   var body: Statement
   
   var test: Expression
   
   @JSName("type")
-  var type_DoWhileStatement_ : DoWhileStatement
+  var type_DoWhileStatement_ : "DoWhileStatement"
 }
 object DoWhileStatement_ {
   
@@ -37,6 +29,6 @@ object DoWhileStatement_ {
     
     inline def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    inline def setType(value: DoWhileStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "DoWhileStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

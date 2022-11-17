@@ -1,8 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.longEdge
-import typings.electron.electronStrings.shortEdge
-import typings.electron.electronStrings.simplex
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,7 +35,7 @@ trait WebviewTagPrintOptions extends StObject {
     * Set the duplex mode of the printed web page. Can be `simplex`, `shortEdge`, or
     * `longEdge`.
     */
-  var duplexMode: js.UndefOr[simplex | shortEdge | longEdge] = js.undefined
+  var duplexMode: js.UndefOr["simplex" | "shortEdge" | "longEdge"] = js.undefined
   
   /**
     * string to be printed as page footer.
@@ -117,7 +114,7 @@ object WebviewTagPrintOptions {
     
     inline def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
     
-    inline def setDuplexMode(value: simplex | shortEdge | longEdge): Self = StObject.set(x, "duplexMode", value.asInstanceOf[js.Any])
+    inline def setDuplexMode(value: "simplex" | "shortEdge" | "longEdge"): Self = StObject.set(x, "duplexMode", value.asInstanceOf[js.Any])
     
     inline def setDuplexModeUndefined: Self = StObject.set(x, "duplexMode", js.undefined)
     

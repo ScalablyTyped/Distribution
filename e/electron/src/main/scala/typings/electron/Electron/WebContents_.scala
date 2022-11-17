@@ -2,86 +2,6 @@ package typings.electron.Electron
 
 import typings.electron.anon.Action
 import typings.electron.anon.OverrideBrowserWindowOptions
-import typings.electron.electronStrings.HTMLComplete
-import typings.electron.electronStrings.HTMLOnly
-import typings.electron.electronStrings.MHTML
-import typings.electron.electronStrings.`background-tab`
-import typings.electron.electronStrings.`before-input-event`
-import typings.electron.electronStrings.`certificate-error`
-import typings.electron.electronStrings.`console-message`
-import typings.electron.electronStrings.`context-menu`
-import typings.electron.electronStrings.`cursor-changed`
-import typings.electron.electronStrings.`devtools-closed`
-import typings.electron.electronStrings.`devtools-focused`
-import typings.electron.electronStrings.`devtools-opened`
-import typings.electron.electronStrings.`devtools-reload-page`
-import typings.electron.electronStrings.`did-attach-webview`
-import typings.electron.electronStrings.`did-change-theme-color`
-import typings.electron.electronStrings.`did-create-window`
-import typings.electron.electronStrings.`did-fail-load`
-import typings.electron.electronStrings.`did-fail-provisional-load`
-import typings.electron.electronStrings.`did-finish-load`
-import typings.electron.electronStrings.`did-frame-finish-load`
-import typings.electron.electronStrings.`did-frame-navigate`
-import typings.electron.electronStrings.`did-navigate-in-page`
-import typings.electron.electronStrings.`did-navigate`
-import typings.electron.electronStrings.`did-redirect-navigation`
-import typings.electron.electronStrings.`did-start-loading`
-import typings.electron.electronStrings.`did-start-navigation`
-import typings.electron.electronStrings.`did-stop-loading`
-import typings.electron.electronStrings.`dom-ready`
-import typings.electron.electronStrings.`enter-html-full-screen`
-import typings.electron.electronStrings.`foreground-tab`
-import typings.electron.electronStrings.`found-in-page`
-import typings.electron.electronStrings.`frame-created`
-import typings.electron.electronStrings.`ipc-message-sync`
-import typings.electron.electronStrings.`ipc-message`
-import typings.electron.electronStrings.`leave-html-full-screen`
-import typings.electron.electronStrings.`media-paused`
-import typings.electron.electronStrings.`media-started-playing`
-import typings.electron.electronStrings.`new-window`
-import typings.electron.electronStrings.`page-favicon-updated`
-import typings.electron.electronStrings.`page-title-updated`
-import typings.electron.electronStrings.`plugin-crashed`
-import typings.electron.electronStrings.`preferred-size-changed`
-import typings.electron.electronStrings.`preload-error`
-import typings.electron.electronStrings.`render-process-gone`
-import typings.electron.electronStrings.`save-to-disk`
-import typings.electron.electronStrings.`select-bluetooth-device`
-import typings.electron.electronStrings.`select-client-certificate`
-import typings.electron.electronStrings.`update-target-url`
-import typings.electron.electronStrings.`will-attach-webview`
-import typings.electron.electronStrings.`will-navigate`
-import typings.electron.electronStrings.`will-prevent-unload`
-import typings.electron.electronStrings.`will-redirect`
-import typings.electron.electronStrings.`zoom-changed`
-import typings.electron.electronStrings.activateSelection
-import typings.electron.electronStrings.animate
-import typings.electron.electronStrings.animateOnce
-import typings.electron.electronStrings.backgroundPage
-import typings.electron.electronStrings.blur
-import typings.electron.electronStrings.browserView
-import typings.electron.electronStrings.clearSelection
-import typings.electron.electronStrings.crashed
-import typings.electron.electronStrings.default
-import typings.electron.electronStrings.default_public_and_private_interfaces
-import typings.electron.electronStrings.default_public_interface_only
-import typings.electron.electronStrings.destroyed
-import typings.electron.electronStrings.disable_non_proxied_udp
-import typings.electron.electronStrings.focus
-import typings.electron.electronStrings.in
-import typings.electron.electronStrings.keepSelection
-import typings.electron.electronStrings.login
-import typings.electron.electronStrings.noAnimation
-import typings.electron.electronStrings.offscreen
-import typings.electron.electronStrings.other
-import typings.electron.electronStrings.out
-import typings.electron.electronStrings.paint
-import typings.electron.electronStrings.remote
-import typings.electron.electronStrings.responsive
-import typings.electron.electronStrings.unresponsive
-import typings.electron.electronStrings.webview
-import typings.electron.electronStrings.window
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.std.Record
@@ -92,44 +12,252 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WebContents_ extends EventEmitter {
   
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_unresponsive")
+  def addListener(event: "unresponsive", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_focus")
+  def addListener(event: "focus", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_responsive")
+  def addListener(event: "responsive", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_enterhtmlfullscreen")
+  def addListener(event: "enter-html-full-screen", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_didstoploading")
+  def addListener(event: "did-stop-loading", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_mediapaused")
+  def addListener(event: "media-paused", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_mediastartedplaying")
+  def addListener(event: "media-started-playing", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_blur")
+  def addListener(event: "blur", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_destroyed")
+  def addListener(event: "destroyed", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_didfinishload")
+  def addListener(event: "did-finish-load", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_leavehtmlfullscreen")
+  def addListener(event: "leave-html-full-screen", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_devtoolsclosed")
+  def addListener(event: "devtools-closed", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_devtoolsopened")
+  def addListener(event: "devtools-opened", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_devtoolsfocused")
+  def addListener(event: "devtools-focused", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_devtoolsreloadpage")
+  def addListener(event: "devtools-reload-page", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_didstartloading")
+  def addListener(event: "did-start-loading", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_willpreventunload")
+  def addListener(event: "will-prevent-unload", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_domready")
+  def addListener(event: "dom-ready", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_zoomchanged_in_out")
   def addListener(
-    event: `new-window`,
-    listener: js.Function8[
-      /* event */ NewWindowWebContentsEvent, 
-      /* url */ String, 
-      /* frameName */ String, 
-      /* disposition */ default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other, 
-      /* options */ BrowserWindowConstructorOptions, 
-      /* additionalFeatures */ js.Array[String], 
-      /* referrer */ Referrer, 
-      /* postBody */ PostBody, 
+    event: "zoom-changed",
+    listener: js.Function2[/* event */ Event, /* zoomDirection */ "in" | "out", Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_renderprocessgone")
+  def addListener(
+    event: "render-process-gone",
+    listener: js.Function2[/* event */ Event, /* details */ RenderProcessGoneDetails, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_contextmenu")
+  def addListener(
+    event: "context-menu",
+    listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_beforeinputevent")
+  def addListener(event: "before-input-event", listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_crashed")
+  def addListener(event: "crashed", listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_didcreatewindow")
+  def addListener(
+    event: "did-create-window",
+    listener: js.Function2[/* window */ BrowserWindow, /* details */ DidCreateWindowDetails, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_didattachwebview")
+  def addListener(
+    event: "did-attach-webview",
+    listener: js.Function2[/* event */ Event, /* webContents */ this.type, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_updatetargeturl")
+  def addListener(event: "update-target-url", listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_didchangethemecolor")
+  def addListener(
+    event: "did-change-theme-color",
+    listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_willnavigate")
+  def addListener(event: "will-navigate", listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_preferredsizechanged")
+  def addListener(
+    event: "preferred-size-changed",
+    listener: js.Function2[/* event */ Event, /* preferredSize */ Size, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_pagefaviconupdated")
+  def addListener(
+    event: "page-favicon-updated",
+    listener: js.Function2[/* event */ Event, /* favicons */ js.Array[String], Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_foundinpage")
+  def addListener(event: "found-in-page", listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_framecreated")
+  def addListener(
+    event: "frame-created",
+    listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_selectbluetoothdevice")
+  def addListener(
+    event: "select-bluetooth-device",
+    listener: js.Function3[
+      /* event */ Event, 
+      /* devices */ js.Array[BluetoothDevice], 
+      /* callback */ js.Function1[/* deviceId */ String, Unit], 
       Unit
     ]
   ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_ipcmessage")
   def addListener(
-    event: `zoom-changed`,
-    listener: js.Function2[/* event */ Event, /* zoomDirection */ in | out, Unit]
+    event: "ipc-message",
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_beforeinputevent(event: `before-input-event`, listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_plugincrashed")
+  def addListener(
+    event: "plugin-crashed",
+    listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
+  ): this.type = js.native
   @JSName("addListener")
-  def addListener_blur(event: blur, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("addListener_ipcmessagesync")
+  def addListener(
+    event: "ipc-message-sync",
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
+  ): this.type = js.native
   @JSName("addListener")
-  def addListener_certificateerror(
-    event: `certificate-error`,
-    listener: js.Function6[
+  @scala.annotation.targetName("addListener_preloaderror")
+  def addListener(
+    event: "preload-error",
+    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ js.Error, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_paint")
+  def addListener(
+    event: "paint",
+    listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage_, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_pagetitleupdated")
+  def addListener(
+    event: "page-title-updated",
+    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_willattachwebview")
+  def addListener(
+    event: "will-attach-webview",
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webPreferences */ WebPreferences, 
+      /* params */ Record[String, String], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_login")
+  def addListener(
+    event: "login",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* authenticationResponseDetails */ AuthenticationResponseDetails, 
+      /* authInfo */ AuthInfo, 
+      /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_didframefinishload")
+  def addListener(
+    event: "did-frame-finish-load",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_didnavigate")
+  def addListener(
+    event: "did-navigate",
+    listener: js.Function4[
       /* event */ Event, 
       /* url */ String, 
-      /* error */ String, 
-      /* certificate */ Certificate, 
-      /* callback */ js.Function1[/* isTrusted */ Boolean, Unit], 
-      /* isMainFrame */ Boolean, 
+      /* httpResponseCode */ Double, 
+      /* httpStatusText */ String, 
       Unit
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_consolemessage(
-    event: `console-message`,
+  @scala.annotation.targetName("addListener_selectclientcertificate")
+  def addListener(
+    event: "select-client-certificate",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* url */ String, 
+      /* certificateList */ js.Array[Certificate], 
+      /* callback */ js.Function1[/* certificate */ Certificate, Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_didnavigateinpage")
+  def addListener(
+    event: "did-navigate-in-page",
+    listener: js.Function5[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_consolemessage")
+  def addListener(
+    event: "console-message",
     listener: js.Function5[
       /* event */ Event, 
       /* level */ Double, 
@@ -140,15 +268,51 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_contextmenu(
-    event: `context-menu`,
-    listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
+  @scala.annotation.targetName("addListener_didredirectnavigation")
+  def addListener(
+    event: "did-redirect-navigation",
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isInPlace */ Boolean, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_crashed(event: crashed, listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_willredirect")
+  def addListener(
+    event: "will-redirect",
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isInPlace */ Boolean, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("addListener")
-  def addListener_cursorchanged(
-    event: `cursor-changed`,
+  @scala.annotation.targetName("addListener_didstartnavigation")
+  def addListener(
+    event: "did-start-navigation",
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isInPlace */ Boolean, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_cursorchanged")
+  def addListener(
+    event: "cursor-changed",
     listener: js.Function6[
       /* event */ Event, 
       /* type */ String, 
@@ -160,33 +324,23 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_destroyed(event: destroyed, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_devtoolsclosed(event: `devtools-closed`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_devtoolsfocused(event: `devtools-focused`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_devtoolsopened(event: `devtools-opened`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_devtoolsreloadpage(event: `devtools-reload-page`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_didattachwebview(
-    event: `did-attach-webview`,
-    listener: js.Function2[/* event */ Event, /* webContents */ this.type, Unit]
+  @scala.annotation.targetName("addListener_certificateerror")
+  def addListener(
+    event: "certificate-error",
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ String, 
+      /* error */ String, 
+      /* certificate */ Certificate, 
+      /* callback */ js.Function1[/* isTrusted */ Boolean, Unit], 
+      /* isMainFrame */ Boolean, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_didchangethemecolor(
-    event: `did-change-theme-color`,
-    listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_didcreatewindow(
-    event: `did-create-window`,
-    listener: js.Function2[/* window */ BrowserWindow, /* details */ DidCreateWindowDetails, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_didfailload(
-    event: `did-fail-load`,
+  @scala.annotation.targetName("addListener_didfailload")
+  def addListener(
+    event: "did-fail-load",
     listener: js.Function7[
       /* event */ Event, 
       /* errorCode */ Double, 
@@ -199,8 +353,24 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_didfailprovisionalload(
-    event: `did-fail-provisional-load`,
+  @scala.annotation.targetName("addListener_didframenavigate")
+  def addListener(
+    event: "did-frame-navigate",
+    listener: js.Function7[
+      /* event */ Event, 
+      /* url */ String, 
+      /* httpResponseCode */ Double, 
+      /* httpStatusText */ String, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_didfailprovisionalload")
+  def addListener(
+    event: "did-fail-provisional-load",
     listener: js.Function7[
       /* event */ Event, 
       /* errorCode */ Double, 
@@ -213,211 +383,18 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_didfinishload(event: `did-finish-load`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_didframefinishload(
-    event: `did-frame-finish-load`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_didframenavigate(
-    event: `did-frame-navigate`,
-    listener: js.Function7[
-      /* event */ Event, 
+  @scala.annotation.targetName("addListener_newwindow_default_foregroundtab_backgroundtab_newwindow_savetodisk_other")
+  def addListener(
+    event: "new-window",
+    listener: js.Function8[
+      /* event */ NewWindowWebContentsEvent, 
       /* url */ String, 
-      /* httpResponseCode */ Double, 
-      /* httpStatusText */ String, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_didnavigate(
-    event: `did-navigate`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* url */ String, 
-      /* httpResponseCode */ Double, 
-      /* httpStatusText */ String, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_didnavigateinpage(
-    event: `did-navigate-in-page`,
-    listener: js.Function5[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_didredirectnavigation(
-    event: `did-redirect-navigation`,
-    listener: js.Function6[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isInPlace */ Boolean, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_didstartloading(event: `did-start-loading`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_didstartnavigation(
-    event: `did-start-navigation`,
-    listener: js.Function6[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isInPlace */ Boolean, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_didstoploading(event: `did-stop-loading`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_focus(event: focus, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_framecreated(
-    event: `frame-created`,
-    listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_ipcmessage(
-    event: `ipc-message`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_ipcmessagesync(
-    event: `ipc-message-sync`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_login(
-    event: login,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* authenticationResponseDetails */ AuthenticationResponseDetails, 
-      /* authInfo */ AuthInfo, 
-      /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_mediapaused(event: `media-paused`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_mediastartedplaying(event: `media-started-playing`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_pagefaviconupdated(
-    event: `page-favicon-updated`,
-    listener: js.Function2[/* event */ Event, /* favicons */ js.Array[String], Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_pagetitleupdated(
-    event: `page-title-updated`,
-    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_paint(
-    event: paint,
-    listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage_, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_plugincrashed(
-    event: `plugin-crashed`,
-    listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_preferredsizechanged(
-    event: `preferred-size-changed`,
-    listener: js.Function2[/* event */ Event, /* preferredSize */ Size, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_preloaderror(
-    event: `preload-error`,
-    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ js.Error, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_renderprocessgone(
-    event: `render-process-gone`,
-    listener: js.Function2[/* event */ Event, /* details */ RenderProcessGoneDetails, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_responsive(event: responsive, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_selectbluetoothdevice(
-    event: `select-bluetooth-device`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* devices */ js.Array[BluetoothDevice], 
-      /* callback */ js.Function1[/* deviceId */ String, Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_selectclientcertificate(
-    event: `select-client-certificate`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* url */ String, 
-      /* certificateList */ js.Array[Certificate], 
-      /* callback */ js.Function1[/* certificate */ Certificate, Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_unresponsive(event: unresponsive, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_updatetargeturl(event: `update-target-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_willattachwebview(
-    event: `will-attach-webview`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* webPreferences */ WebPreferences, 
-      /* params */ Record[String, String], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_willnavigate(event: `will-navigate`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_willpreventunload(event: `will-prevent-unload`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_willredirect(
-    event: `will-redirect`,
-    listener: js.Function6[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isInPlace */ Boolean, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
+      /* frameName */ String, 
+      /* disposition */ "default" | "foreground-tab" | "background-tab" | "new-window" | "save-to-disk" | "other", 
+      /* options */ BrowserWindowConstructorOptions, 
+      /* additionalFeatures */ js.Array[String], 
+      /* referrer */ Referrer, 
+      /* postBody */ PostBody, 
       Unit
     ]
   ): this.type = js.native
@@ -691,7 +668,7 @@ trait WebContents_ extends EventEmitter {
     * the type of the webContent. Can be `backgroundPage`, `window`, `browserView`,
     * `remote`, `webview` or `offscreen`.
     */
-  def getType(): backgroundPage | window | browserView | remote | webview | offscreen = js.native
+  def getType(): "backgroundPage" | "window" | "browserView" | "remote" | "webview" | "offscreen" = js.native
   
   /**
     * The URL of the current web page.
@@ -942,363 +919,96 @@ trait WebContents_ extends EventEmitter {
   val mainFrame: WebFrameMain_ = js.native
   
   /**
-    * Deprecated in favor of `webContents.setWindowOpenHandler`.
-    *
-    * Emitted when the page requests to open a new window for a `url`. It could be
-    * requested by `window.open` or an external link like `<a target='_blank'>`.
-    *
-    * By default a new `BrowserWindow` will be created for the `url`.
-    *
-    * Calling `event.preventDefault()` will prevent Electron from automatically
-    * creating a new `BrowserWindow`. If you call `event.preventDefault()` and
-    * manually create a new `BrowserWindow` then you must set `event.newGuest` to
-    * reference the new `BrowserWindow` instance, failing to do so may result in
-    * unexpected behavior. For example:
-    *
-    * @deprecated
-    */
-  def on(
-    event: `new-window`,
-    listener: js.Function8[
-      /* event */ NewWindowWebContentsEvent, 
-      /* url */ String, 
-      /* frameName */ String, 
-      /* disposition */ default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other, 
-      /* options */ BrowserWindowConstructorOptions, 
-      /* additionalFeatures */ js.Array[String], 
-      /* referrer */ Referrer, 
-      /* postBody */ PostBody, 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
-    * Emitted when the user is requesting to change the zoom level using the mouse
-    * wheel.
-    */
-  def on(
-    event: `zoom-changed`,
-    listener: js.Function2[/* event */ Event, /* zoomDirection */ in | out, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted before dispatching the `keydown` and `keyup` events in the page. Calling
-    * `event.preventDefault` will prevent the page `keydown`/`keyup` events and the
-    * menu shortcuts.
-    *
-    * To only prevent the menu shortcuts, use `setIgnoreMenuShortcuts`:
+    * Emitted when media is paused or done playing.
     */
   @JSName("on")
-  def on_beforeinputevent(event: `before-input-event`, listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
-  /**
-    * Emitted when the `WebContents` loses focus.
-    */
-  @JSName("on")
-  def on_blur(event: blur, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when failed to verify the `certificate` for `url`.
-    *
-    * The usage is the same with the `certificate-error` event of `app`.
-    */
-  @JSName("on")
-  def on_certificateerror(
-    event: `certificate-error`,
-    listener: js.Function6[
-      /* event */ Event, 
-      /* url */ String, 
-      /* error */ String, 
-      /* certificate */ Certificate, 
-      /* callback */ js.Function1[/* isTrusted */ Boolean, Unit], 
-      /* isMainFrame */ Boolean, 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
-    * Emitted when the associated window logs a console message.
-    */
-  @JSName("on")
-  def on_consolemessage(
-    event: `console-message`,
-    listener: js.Function5[
-      /* event */ Event, 
-      /* level */ Double, 
-      /* message */ String, 
-      /* line */ Double, 
-      /* sourceId */ String, 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
-    * Emitted when there is a new context menu that needs to be handled.
-    */
-  @JSName("on")
-  def on_contextmenu(
-    event: `context-menu`,
-    listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when the renderer process crashes or is killed.
-    *
-    * **Deprecated:** This event is superceded by the `render-process-gone` event
-    * which contains more information about why the render process disappeared. It
-    * isn't always because it crashed.  The `killed` boolean can be replaced by
-    * checking `reason === 'killed'` when you switch to that event.
-    *
-    * @deprecated
-    */
-  @JSName("on")
-  def on_crashed(event: crashed, listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]): this.type = js.native
-  /**
-    * Emitted when the cursor's type changes. The `type` parameter can be `default`,
-    * `crosshair`, `pointer`, `text`, `wait`, `help`, `e-resize`, `n-resize`,
-    * `ne-resize`, `nw-resize`, `s-resize`, `se-resize`, `sw-resize`, `w-resize`,
-    * `ns-resize`, `ew-resize`, `nesw-resize`, `nwse-resize`, `col-resize`,
-    * `row-resize`, `m-panning`, `e-panning`, `n-panning`, `ne-panning`, `nw-panning`,
-    * `s-panning`, `se-panning`, `sw-panning`, `w-panning`, `move`, `vertical-text`,
-    * `cell`, `context-menu`, `alias`, `progress`, `nodrop`, `copy`, `none`,
-    * `not-allowed`, `zoom-in`, `zoom-out`, `grab`, `grabbing` or `custom`.
-    *
-    * If the `type` parameter is `custom`, the `image` parameter will hold the custom
-    * cursor image in a `NativeImage`, and `scale`, `size` and `hotspot` will hold
-    * additional information about the custom cursor.
-    */
-  @JSName("on")
-  def on_cursorchanged(
-    event: `cursor-changed`,
-    listener: js.Function6[
-      /* event */ Event, 
-      /* type */ String, 
-      /* image */ NativeImage_, 
-      /* scale */ Double, 
-      /* size */ Size, 
-      /* hotspot */ Point, 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
-    * Emitted when `webContents` is destroyed.
-    */
-  @JSName("on")
-  def on_destroyed(event: destroyed, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when DevTools is closed.
-    */
-  @JSName("on")
-  def on_devtoolsclosed(event: `devtools-closed`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when DevTools is focused / opened.
-    */
-  @JSName("on")
-  def on_devtoolsfocused(event: `devtools-focused`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when DevTools is opened.
-    */
-  @JSName("on")
-  def on_devtoolsopened(event: `devtools-opened`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_mediapaused")
+  def on(event: "media-paused", listener: js.Function): this.type = js.native
   /**
     * Emitted when the devtools window instructs the webContents to reload
     */
   @JSName("on")
-  def on_devtoolsreloadpage(event: `devtools-reload-page`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_devtoolsreloadpage")
+  def on(event: "devtools-reload-page", listener: js.Function): this.type = js.native
   /**
-    * Emitted when a `<webview>` has been attached to this web contents.
+    * Emitted when `webContents` is destroyed.
     */
   @JSName("on")
-  def on_didattachwebview(
-    event: `did-attach-webview`,
-    listener: js.Function2[/* event */ Event, /* webContents */ this.type, Unit]
-  ): this.type = js.native
+  @scala.annotation.targetName("on_destroyed")
+  def on(event: "destroyed", listener: js.Function): this.type = js.native
   /**
-    * Emitted when a page's theme color changes. This is usually due to encountering a
-    * meta tag:
+    * Emitted when DevTools is closed.
     */
   @JSName("on")
-  def on_didchangethemecolor(
-    event: `did-change-theme-color`,
-    listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
-  ): this.type = js.native
+  @scala.annotation.targetName("on_devtoolsclosed")
+  def on(event: "devtools-closed", listener: js.Function): this.type = js.native
   /**
-    * Emitted _after_ successful creation of a window via `window.open` in the
-    * renderer. Not emitted if the creation of the window is canceled from
-    * `webContents.setWindowOpenHandler`.
-    *
-    * See `window.open()` for more details and how to use this in conjunction with
-    * `webContents.setWindowOpenHandler`.
+    * Emitted when DevTools is focused / opened.
     */
   @JSName("on")
-  def on_didcreatewindow(
-    event: `did-create-window`,
-    listener: js.Function2[/* window */ BrowserWindow, /* details */ DidCreateWindowDetails, Unit]
-  ): this.type = js.native
+  @scala.annotation.targetName("on_devtoolsfocused")
+  def on(event: "devtools-focused", listener: js.Function): this.type = js.native
   /**
-    * This event is like `did-finish-load` but emitted when the load failed. The full
-    * list of error codes and their meaning is available here.
+    * Emitted when the unresponsive web page becomes responsive again.
     */
   @JSName("on")
-  def on_didfailload(
-    event: `did-fail-load`,
-    listener: js.Function7[
-      /* event */ Event, 
-      /* errorCode */ Double, 
-      /* errorDescription */ String, 
-      /* validatedURL */ String, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
+  @scala.annotation.targetName("on_responsive")
+  def on(event: "responsive", listener: js.Function): this.type = js.native
   /**
-    * This event is like `did-fail-load` but emitted when the load was cancelled (e.g.
-    * `window.stop()` was invoked).
+    * Emitted when the window enters a full-screen state triggered by HTML API.
     */
   @JSName("on")
-  def on_didfailprovisionalload(
-    event: `did-fail-provisional-load`,
-    listener: js.Function7[
-      /* event */ Event, 
-      /* errorCode */ Double, 
-      /* errorDescription */ String, 
-      /* validatedURL */ String, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
+  @scala.annotation.targetName("on_enterhtmlfullscreen")
+  def on(event: "enter-html-full-screen", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when media starts playing.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_mediastartedplaying")
+  def on(event: "media-started-playing", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the web page becomes unresponsive.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_unresponsive")
+  def on(event: "unresponsive", listener: js.Function): this.type = js.native
   /**
     * Emitted when the navigation is done, i.e. the spinner of the tab has stopped
     * spinning, and the `onload` event was dispatched.
     */
   @JSName("on")
-  def on_didfinishload(event: `did-finish-load`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_didfinishload")
+  def on(event: "did-finish-load", listener: js.Function): this.type = js.native
   /**
-    * Emitted when a frame has done navigation.
+    * Emitted when DevTools is opened.
     */
   @JSName("on")
-  def on_didframefinishload(
-    event: `did-frame-finish-load`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
+  @scala.annotation.targetName("on_devtoolsopened")
+  def on(event: "devtools-opened", listener: js.Function): this.type = js.native
   /**
-    * Emitted when any frame navigation is done.
-    *
-    * This event is not emitted for in-page navigations, such as clicking anchor links
-    * or updating the `window.location.hash`. Use `did-navigate-in-page` event for
-    * this purpose.
+    * Emitted when the window leaves a full-screen state triggered by HTML API.
     */
   @JSName("on")
-  def on_didframenavigate(
-    event: `did-frame-navigate`,
-    listener: js.Function7[
-      /* event */ Event, 
-      /* url */ String, 
-      /* httpResponseCode */ Double, 
-      /* httpStatusText */ String, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
+  @scala.annotation.targetName("on_leavehtmlfullscreen")
+  def on(event: "leave-html-full-screen", listener: js.Function): this.type = js.native
   /**
-    * Emitted when a main frame navigation is done.
-    *
-    * This event is not emitted for in-page navigations, such as clicking anchor links
-    * or updating the `window.location.hash`. Use `did-navigate-in-page` event for
-    * this purpose.
+    * Emitted when the `WebContents` loses focus.
     */
   @JSName("on")
-  def on_didnavigate(
-    event: `did-navigate`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* url */ String, 
-      /* httpResponseCode */ Double, 
-      /* httpStatusText */ String, 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
-    * Emitted when an in-page navigation happened in any frame.
-    *
-    * When in-page navigation happens, the page URL changes but does not cause
-    * navigation outside of the page. Examples of this occurring are when anchor links
-    * are clicked or when the DOM `hashchange` event is triggered.
-    */
-  @JSName("on")
-  def on_didnavigateinpage(
-    event: `did-navigate-in-page`,
-    listener: js.Function5[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
-    * Emitted after a server side redirect occurs during navigation.  For example a
-    * 302 redirect.
-    *
-    * This event cannot be prevented, if you want to prevent redirects you should
-    * checkout out the `will-redirect` event above.
-    */
-  @JSName("on")
-  def on_didredirectnavigation(
-    event: `did-redirect-navigation`,
-    listener: js.Function6[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isInPlace */ Boolean, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
-    * Corresponds to the points in time when the spinner of the tab started spinning.
-    */
-  @JSName("on")
-  def on_didstartloading(event: `did-start-loading`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when any frame (including main) starts navigating. `isInPlace` will be
-    * `true` for in-page navigations.
-    */
-  @JSName("on")
-  def on_didstartnavigation(
-    event: `did-start-navigation`,
-    listener: js.Function6[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isInPlace */ Boolean, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
+  @scala.annotation.targetName("on_blur")
+  def on(event: "blur", listener: js.Function): this.type = js.native
   /**
     * Corresponds to the points in time when the spinner of the tab stopped spinning.
     */
   @JSName("on")
-  def on_didstoploading(event: `did-stop-loading`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_didstoploading")
+  def on(event: "did-stop-loading", listener: js.Function): this.type = js.native
   /**
-    * Emitted when the document in the top-level frame is loaded.
+    * Corresponds to the points in time when the spinner of the tab started spinning.
     */
   @JSName("on")
-  def on_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  /**
-    * Emitted when the window enters a full-screen state triggered by HTML API.
-    */
-  @JSName("on")
-  def on_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_didstartloading")
+  def on(event: "did-start-loading", listener: js.Function): this.type = js.native
   /**
     * Emitted when the `WebContents` gains focus.
     *
@@ -1312,207 +1022,59 @@ trait WebContents_ extends EventEmitter {
     * window.
     */
   @JSName("on")
-  def on_focus(event: focus, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_focus")
+  def on(event: "focus", listener: js.Function): this.type = js.native
   /**
-    * Emitted when a result is available for [`webContents.findInPage`] request.
+    * Emitted when the document in the top-level frame is loaded.
     */
   @JSName("on")
-  def on_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_domready")
+  def on(event: "dom-ready", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  /**
+    * Emitted when a `beforeunload` event handler is attempting to cancel a page
+    * unload.
+    *
+    * Calling `event.preventDefault()` will ignore the `beforeunload` event handler
+    * and allow the page to be unloaded.
+    *
+    * **Note:** This will be emitted for `BrowserViews` but will _not_ be respected -
+    * this is because we have chosen not to tie the `BrowserView` lifecycle to its
+    * owning BrowserWindow should one exist per the specification.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_willpreventunload")
+  def on(event: "will-prevent-unload", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  /**
+    * Emitted when the renderer process crashes or is killed.
+    *
+    * **Deprecated:** This event is superceded by the `render-process-gone` event
+    * which contains more information about why the render process disappeared. It
+    * isn't always because it crashed.  The `killed` boolean can be replaced by
+    * checking `reason === 'killed'` when you switch to that event.
+    *
+    * @deprecated
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_crashed")
+  def on(event: "crashed", listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]): this.type = js.native
+  /**
+    * Emitted when page receives favicon urls.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_pagefaviconupdated")
+  def on(
+    event: "page-favicon-updated",
+    listener: js.Function2[/* event */ Event, /* favicons */ js.Array[String], Unit]
+  ): this.type = js.native
   /**
     * Emitted when the mainFrame, an `<iframe>`, or a nested `<iframe>` is loaded
     * within the page.
     */
   @JSName("on")
-  def on_framecreated(
-    event: `frame-created`,
+  @scala.annotation.targetName("on_framecreated")
+  def on(
+    event: "frame-created",
     listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when the renderer process sends an asynchronous message via
-    * `ipcRenderer.send()`.
-    *
-    * See also `webContents.ipc`, which provides an `IpcMain`-like interface for
-    * responding to IPC messages specifically from this WebContents.
-    */
-  @JSName("on")
-  def on_ipcmessage(
-    event: `ipc-message`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when the renderer process sends a synchronous message via
-    * `ipcRenderer.sendSync()`.
-    *
-    * See also `webContents.ipc`, which provides an `IpcMain`-like interface for
-    * responding to IPC messages specifically from this WebContents.
-    */
-  @JSName("on")
-  def on_ipcmessagesync(
-    event: `ipc-message-sync`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when the window leaves a full-screen state triggered by HTML API.
-    */
-  @JSName("on")
-  def on_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when `webContents` wants to do basic auth.
-    *
-    * The usage is the same with the `login` event of `app`.
-    */
-  @JSName("on")
-  def on_login(
-    event: login,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* authenticationResponseDetails */ AuthenticationResponseDetails, 
-      /* authInfo */ AuthInfo, 
-      /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
-    * Emitted when media is paused or done playing.
-    */
-  @JSName("on")
-  def on_mediapaused(event: `media-paused`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when media starts playing.
-    */
-  @JSName("on")
-  def on_mediastartedplaying(event: `media-started-playing`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when page receives favicon urls.
-    */
-  @JSName("on")
-  def on_pagefaviconupdated(
-    event: `page-favicon-updated`,
-    listener: js.Function2[/* event */ Event, /* favicons */ js.Array[String], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when page title is set during navigation. `explicitSet` is false when
-    * title is synthesized from file url.
-    */
-  @JSName("on")
-  def on_pagetitleupdated(
-    event: `page-title-updated`,
-    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when a new frame is generated. Only the dirty area is passed in the
-    * buffer.
-    */
-  @JSName("on")
-  def on_paint(
-    event: paint,
-    listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage_, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when a plugin process has crashed.
-    */
-  @JSName("on")
-  def on_plugincrashed(
-    event: `plugin-crashed`,
-    listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when the `WebContents` preferred size has changed.
-    *
-    * This event will only be emitted when `enablePreferredSizeMode` is set to `true`
-    * in `webPreferences`.
-    */
-  @JSName("on")
-  def on_preferredsizechanged(
-    event: `preferred-size-changed`,
-    listener: js.Function2[/* event */ Event, /* preferredSize */ Size, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when the preload script `preloadPath` throws an unhandled exception
-    * `error`.
-    */
-  @JSName("on")
-  def on_preloaderror(
-    event: `preload-error`,
-    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ js.Error, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when the renderer process unexpectedly disappears.  This is normally
-    * because it was crashed or killed.
-    */
-  @JSName("on")
-  def on_renderprocessgone(
-    event: `render-process-gone`,
-    listener: js.Function2[/* event */ Event, /* details */ RenderProcessGoneDetails, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when the unresponsive web page becomes responsive again.
-    */
-  @JSName("on")
-  def on_responsive(event: responsive, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when bluetooth device needs to be selected on call to
-    * `navigator.bluetooth.requestDevice`. To use `navigator.bluetooth` api
-    * `webBluetooth` should be enabled. If `event.preventDefault` is not called, first
-    * available device will be selected. `callback` should be called with `deviceId`
-    * to be selected, passing empty string to `callback` will cancel the request.
-    *
-    * If no event listener is added for this event, all bluetooth requests will be
-    * cancelled.
-    */
-  @JSName("on")
-  def on_selectbluetoothdevice(
-    event: `select-bluetooth-device`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* devices */ js.Array[BluetoothDevice], 
-      /* callback */ js.Function1[/* deviceId */ String, Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
-    * Emitted when a client certificate is requested.
-    *
-    * The usage is the same with the `select-client-certificate` event of `app`.
-    */
-  @JSName("on")
-  def on_selectclientcertificate(
-    event: `select-client-certificate`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* url */ String, 
-      /* certificateList */ js.Array[Certificate], 
-      /* callback */ js.Function1[/* certificate */ Certificate, Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
-    * Emitted when the web page becomes unresponsive.
-    */
-  @JSName("on")
-  def on_unresponsive(event: unresponsive, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when mouse moves over a link or the keyboard moves the focus to a link.
-    */
-  @JSName("on")
-  def on_updatetargeturl(event: `update-target-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
-  /**
-    * Emitted when a `<webview>`'s web contents is being attached to this web
-    * contents. Calling `event.preventDefault()` will destroy the guest page.
-    *
-    * This event can be used to configure `webPreferences` for the `webContents` of a
-    * `<webview>` before it's loaded, and provides the ability to set settings that
-    * can't be set via `<webview>` attributes.
-    */
-  @JSName("on")
-  def on_willattachwebview(
-    event: `will-attach-webview`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* webPreferences */ WebPreferences, 
-      /* params */ Record[String, String], 
-      Unit
-    ]
   ): this.type = js.native
   /**
     * Emitted when a user or the page wants to start navigation. It can happen when
@@ -1528,20 +1090,380 @@ trait WebContents_ extends EventEmitter {
     * Calling `event.preventDefault()` will prevent the navigation.
     */
   @JSName("on")
-  def on_willnavigate(event: `will-navigate`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_willnavigate")
+  def on(event: "will-navigate", listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
   /**
-    * Emitted when a `beforeunload` event handler is attempting to cancel a page
-    * unload.
-    *
-    * Calling `event.preventDefault()` will ignore the `beforeunload` event handler
-    * and allow the page to be unloaded.
-    *
-    * **Note:** This will be emitted for `BrowserViews` but will _not_ be respected -
-    * this is because we have chosen not to tie the `BrowserView` lifecycle to its
-    * owning BrowserWindow should one exist per the specification.
+    * Emitted when a result is available for [`webContents.findInPage`] request.
     */
   @JSName("on")
-  def on_willpreventunload(event: `will-prevent-unload`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_foundinpage")
+  def on(event: "found-in-page", listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
+  /**
+    * Emitted when mouse moves over a link or the keyboard moves the focus to a link.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_updatetargeturl")
+  def on(event: "update-target-url", listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  /**
+    * Emitted when there is a new context menu that needs to be handled.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_contextmenu")
+  def on(
+    event: "context-menu",
+    listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted before dispatching the `keydown` and `keyup` events in the page. Calling
+    * `event.preventDefault` will prevent the page `keydown`/`keyup` events and the
+    * menu shortcuts.
+    *
+    * To only prevent the menu shortcuts, use `setIgnoreMenuShortcuts`:
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_beforeinputevent")
+  def on(event: "before-input-event", listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
+  /**
+    * Emitted when the `WebContents` preferred size has changed.
+    *
+    * This event will only be emitted when `enablePreferredSizeMode` is set to `true`
+    * in `webPreferences`.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_preferredsizechanged")
+  def on(
+    event: "preferred-size-changed",
+    listener: js.Function2[/* event */ Event, /* preferredSize */ Size, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when a `<webview>` has been attached to this web contents.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_didattachwebview")
+  def on(
+    event: "did-attach-webview",
+    listener: js.Function2[/* event */ Event, /* webContents */ this.type, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when the user is requesting to change the zoom level using the mouse
+    * wheel.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_zoomchanged_in_out")
+  def on(
+    event: "zoom-changed",
+    listener: js.Function2[/* event */ Event, /* zoomDirection */ "in" | "out", Unit]
+  ): this.type = js.native
+  /**
+    * Emitted _after_ successful creation of a window via `window.open` in the
+    * renderer. Not emitted if the creation of the window is canceled from
+    * `webContents.setWindowOpenHandler`.
+    *
+    * See `window.open()` for more details and how to use this in conjunction with
+    * `webContents.setWindowOpenHandler`.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_didcreatewindow")
+  def on(
+    event: "did-create-window",
+    listener: js.Function2[/* window */ BrowserWindow, /* details */ DidCreateWindowDetails, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when a page's theme color changes. This is usually due to encountering a
+    * meta tag:
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_didchangethemecolor")
+  def on(
+    event: "did-change-theme-color",
+    listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when the renderer process unexpectedly disappears.  This is normally
+    * because it was crashed or killed.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_renderprocessgone")
+  def on(
+    event: "render-process-gone",
+    listener: js.Function2[/* event */ Event, /* details */ RenderProcessGoneDetails, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when bluetooth device needs to be selected on call to
+    * `navigator.bluetooth.requestDevice`. To use `navigator.bluetooth` api
+    * `webBluetooth` should be enabled. If `event.preventDefault` is not called, first
+    * available device will be selected. `callback` should be called with `deviceId`
+    * to be selected, passing empty string to `callback` will cancel the request.
+    *
+    * If no event listener is added for this event, all bluetooth requests will be
+    * cancelled.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_selectbluetoothdevice")
+  def on(
+    event: "select-bluetooth-device",
+    listener: js.Function3[
+      /* event */ Event, 
+      /* devices */ js.Array[BluetoothDevice], 
+      /* callback */ js.Function1[/* deviceId */ String, Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted when the renderer process sends a synchronous message via
+    * `ipcRenderer.sendSync()`.
+    *
+    * See also `webContents.ipc`, which provides an `IpcMain`-like interface for
+    * responding to IPC messages specifically from this WebContents.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_ipcmessagesync")
+  def on(
+    event: "ipc-message-sync",
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when the renderer process sends an asynchronous message via
+    * `ipcRenderer.send()`.
+    *
+    * See also `webContents.ipc`, which provides an `IpcMain`-like interface for
+    * responding to IPC messages specifically from this WebContents.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_ipcmessage")
+  def on(
+    event: "ipc-message",
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when a plugin process has crashed.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_plugincrashed")
+  def on(
+    event: "plugin-crashed",
+    listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when the preload script `preloadPath` throws an unhandled exception
+    * `error`.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_preloaderror")
+  def on(
+    event: "preload-error",
+    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ js.Error, Unit]
+  ): this.type = js.native
+  /**
+    * Fired when page title is set during navigation. `explicitSet` is false when
+    * title is synthesized from file url.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_pagetitleupdated")
+  def on(
+    event: "page-title-updated",
+    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when a `<webview>`'s web contents is being attached to this web
+    * contents. Calling `event.preventDefault()` will destroy the guest page.
+    *
+    * This event can be used to configure `webPreferences` for the `webContents` of a
+    * `<webview>` before it's loaded, and provides the ability to set settings that
+    * can't be set via `<webview>` attributes.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_willattachwebview")
+  def on(
+    event: "will-attach-webview",
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webPreferences */ WebPreferences, 
+      /* params */ Record[String, String], 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted when a new frame is generated. Only the dirty area is passed in the
+    * buffer.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_paint")
+  def on(
+    event: "paint",
+    listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage_, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when a frame has done navigation.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_didframefinishload")
+  def on(
+    event: "did-frame-finish-load",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted when `webContents` wants to do basic auth.
+    *
+    * The usage is the same with the `login` event of `app`.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_login")
+  def on(
+    event: "login",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* authenticationResponseDetails */ AuthenticationResponseDetails, 
+      /* authInfo */ AuthInfo, 
+      /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted when a main frame navigation is done.
+    *
+    * This event is not emitted for in-page navigations, such as clicking anchor links
+    * or updating the `window.location.hash`. Use `did-navigate-in-page` event for
+    * this purpose.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_didnavigate")
+  def on(
+    event: "did-navigate",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* url */ String, 
+      /* httpResponseCode */ Double, 
+      /* httpStatusText */ String, 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted when a client certificate is requested.
+    *
+    * The usage is the same with the `select-client-certificate` event of `app`.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_selectclientcertificate")
+  def on(
+    event: "select-client-certificate",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* url */ String, 
+      /* certificateList */ js.Array[Certificate], 
+      /* callback */ js.Function1[/* certificate */ Certificate, Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted when an in-page navigation happened in any frame.
+    *
+    * When in-page navigation happens, the page URL changes but does not cause
+    * navigation outside of the page. Examples of this occurring are when anchor links
+    * are clicked or when the DOM `hashchange` event is triggered.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_didnavigateinpage")
+  def on(
+    event: "did-navigate-in-page",
+    listener: js.Function5[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted when the associated window logs a console message.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_consolemessage")
+  def on(
+    event: "console-message",
+    listener: js.Function5[
+      /* event */ Event, 
+      /* level */ Double, 
+      /* message */ String, 
+      /* line */ Double, 
+      /* sourceId */ String, 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted after a server side redirect occurs during navigation.  For example a
+    * 302 redirect.
+    *
+    * This event cannot be prevented, if you want to prevent redirects you should
+    * checkout out the `will-redirect` event above.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_didredirectnavigation")
+  def on(
+    event: "did-redirect-navigation",
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isInPlace */ Boolean, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted when the cursor's type changes. The `type` parameter can be `default`,
+    * `crosshair`, `pointer`, `text`, `wait`, `help`, `e-resize`, `n-resize`,
+    * `ne-resize`, `nw-resize`, `s-resize`, `se-resize`, `sw-resize`, `w-resize`,
+    * `ns-resize`, `ew-resize`, `nesw-resize`, `nwse-resize`, `col-resize`,
+    * `row-resize`, `m-panning`, `e-panning`, `n-panning`, `ne-panning`, `nw-panning`,
+    * `s-panning`, `se-panning`, `sw-panning`, `w-panning`, `move`, `vertical-text`,
+    * `cell`, `context-menu`, `alias`, `progress`, `nodrop`, `copy`, `none`,
+    * `not-allowed`, `zoom-in`, `zoom-out`, `grab`, `grabbing` or `custom`.
+    *
+    * If the `type` parameter is `custom`, the `image` parameter will hold the custom
+    * cursor image in a `NativeImage`, and `scale`, `size` and `hotspot` will hold
+    * additional information about the custom cursor.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_cursorchanged")
+  def on(
+    event: "cursor-changed",
+    listener: js.Function6[
+      /* event */ Event, 
+      /* type */ String, 
+      /* image */ NativeImage_, 
+      /* scale */ Double, 
+      /* size */ Size, 
+      /* hotspot */ Point, 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted when any frame (including main) starts navigating. `isInPlace` will be
+    * `true` for in-page navigations.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_didstartnavigation")
+  def on(
+    event: "did-start-navigation",
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isInPlace */ Boolean, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
   /**
     * Emitted when a server side redirect occurs during navigation.  For example a 302
     * redirect.
@@ -1553,8 +1475,9 @@ trait WebContents_ extends EventEmitter {
     * redirect).
     */
   @JSName("on")
-  def on_willredirect(
-    event: `will-redirect`,
+  @scala.annotation.targetName("on_willredirect")
+  def on(
+    event: "will-redirect",
     listener: js.Function6[
       /* event */ Event, 
       /* url */ String, 
@@ -1565,32 +1488,15 @@ trait WebContents_ extends EventEmitter {
       Unit
     ]
   ): this.type = js.native
-  
-  def once(
-    event: `new-window`,
-    listener: js.Function8[
-      /* event */ NewWindowWebContentsEvent, 
-      /* url */ String, 
-      /* frameName */ String, 
-      /* disposition */ default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other, 
-      /* options */ BrowserWindowConstructorOptions, 
-      /* additionalFeatures */ js.Array[String], 
-      /* referrer */ Referrer, 
-      /* postBody */ PostBody, 
-      Unit
-    ]
-  ): this.type = js.native
-  def once(
-    event: `zoom-changed`,
-    listener: js.Function2[/* event */ Event, /* zoomDirection */ in | out, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_beforeinputevent(event: `before-input-event`, listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
-  @JSName("once")
-  def once_blur(event: blur, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_certificateerror(
-    event: `certificate-error`,
+  /**
+    * Emitted when failed to verify the `certificate` for `url`.
+    *
+    * The usage is the same with the `certificate-error` event of `app`.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_certificateerror")
+  def on(
+    event: "certificate-error",
     listener: js.Function6[
       /* event */ Event, 
       /* url */ String, 
@@ -1601,9 +1507,332 @@ trait WebContents_ extends EventEmitter {
       Unit
     ]
   ): this.type = js.native
+  /**
+    * This event is like `did-fail-load` but emitted when the load was cancelled (e.g.
+    * `window.stop()` was invoked).
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_didfailprovisionalload")
+  def on(
+    event: "did-fail-provisional-load",
+    listener: js.Function7[
+      /* event */ Event, 
+      /* errorCode */ Double, 
+      /* errorDescription */ String, 
+      /* validatedURL */ String, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * This event is like `did-finish-load` but emitted when the load failed. The full
+    * list of error codes and their meaning is available here.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_didfailload")
+  def on(
+    event: "did-fail-load",
+    listener: js.Function7[
+      /* event */ Event, 
+      /* errorCode */ Double, 
+      /* errorDescription */ String, 
+      /* validatedURL */ String, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted when any frame navigation is done.
+    *
+    * This event is not emitted for in-page navigations, such as clicking anchor links
+    * or updating the `window.location.hash`. Use `did-navigate-in-page` event for
+    * this purpose.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_didframenavigate")
+  def on(
+    event: "did-frame-navigate",
+    listener: js.Function7[
+      /* event */ Event, 
+      /* url */ String, 
+      /* httpResponseCode */ Double, 
+      /* httpStatusText */ String, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Deprecated in favor of `webContents.setWindowOpenHandler`.
+    *
+    * Emitted when the page requests to open a new window for a `url`. It could be
+    * requested by `window.open` or an external link like `<a target='_blank'>`.
+    *
+    * By default a new `BrowserWindow` will be created for the `url`.
+    *
+    * Calling `event.preventDefault()` will prevent Electron from automatically
+    * creating a new `BrowserWindow`. If you call `event.preventDefault()` and
+    * manually create a new `BrowserWindow` then you must set `event.newGuest` to
+    * reference the new `BrowserWindow` instance, failing to do so may result in
+    * unexpected behavior. For example:
+    *
+    * @deprecated
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_newwindow_default_foregroundtab_backgroundtab_newwindow_savetodisk_other")
+  def on(
+    event: "new-window",
+    listener: js.Function8[
+      /* event */ NewWindowWebContentsEvent, 
+      /* url */ String, 
+      /* frameName */ String, 
+      /* disposition */ "default" | "foreground-tab" | "background-tab" | "new-window" | "save-to-disk" | "other", 
+      /* options */ BrowserWindowConstructorOptions, 
+      /* additionalFeatures */ js.Array[String], 
+      /* referrer */ Referrer, 
+      /* postBody */ PostBody, 
+      Unit
+    ]
+  ): this.type = js.native
+  
   @JSName("once")
-  def once_consolemessage(
-    event: `console-message`,
+  @scala.annotation.targetName("once_focus")
+  def once(event: "focus", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_didfinishload")
+  def once(event: "did-finish-load", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_didstoploading")
+  def once(event: "did-stop-loading", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_mediapaused")
+  def once(event: "media-paused", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_didstartloading")
+  def once(event: "did-start-loading", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_devtoolsreloadpage")
+  def once(event: "devtools-reload-page", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_devtoolsopened")
+  def once(event: "devtools-opened", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_blur")
+  def once(event: "blur", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_mediastartedplaying")
+  def once(event: "media-started-playing", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_devtoolsclosed")
+  def once(event: "devtools-closed", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_leavehtmlfullscreen")
+  def once(event: "leave-html-full-screen", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_unresponsive")
+  def once(event: "unresponsive", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_destroyed")
+  def once(event: "destroyed", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_responsive")
+  def once(event: "responsive", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_devtoolsfocused")
+  def once(event: "devtools-focused", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_enterhtmlfullscreen")
+  def once(event: "enter-html-full-screen", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_domready")
+  def once(event: "dom-ready", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_willpreventunload")
+  def once(event: "will-prevent-unload", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_preferredsizechanged")
+  def once(
+    event: "preferred-size-changed",
+    listener: js.Function2[/* event */ Event, /* preferredSize */ Size, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_willnavigate")
+  def once(event: "will-navigate", listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_foundinpage")
+  def once(event: "found-in-page", listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_framecreated")
+  def once(
+    event: "frame-created",
+    listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_beforeinputevent")
+  def once(event: "before-input-event", listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_crashed")
+  def once(event: "crashed", listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_pagefaviconupdated")
+  def once(
+    event: "page-favicon-updated",
+    listener: js.Function2[/* event */ Event, /* favicons */ js.Array[String], Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_didchangethemecolor")
+  def once(
+    event: "did-change-theme-color",
+    listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_didcreatewindow")
+  def once(
+    event: "did-create-window",
+    listener: js.Function2[/* window */ BrowserWindow, /* details */ DidCreateWindowDetails, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_didattachwebview")
+  def once(
+    event: "did-attach-webview",
+    listener: js.Function2[/* event */ Event, /* webContents */ this.type, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_contextmenu")
+  def once(
+    event: "context-menu",
+    listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_updatetargeturl")
+  def once(event: "update-target-url", listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_zoomchanged_in_out")
+  def once(
+    event: "zoom-changed",
+    listener: js.Function2[/* event */ Event, /* zoomDirection */ "in" | "out", Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_renderprocessgone")
+  def once(
+    event: "render-process-gone",
+    listener: js.Function2[/* event */ Event, /* details */ RenderProcessGoneDetails, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_pagetitleupdated")
+  def once(
+    event: "page-title-updated",
+    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_ipcmessage")
+  def once(
+    event: "ipc-message",
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_preloaderror")
+  def once(
+    event: "preload-error",
+    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ js.Error, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_selectbluetoothdevice")
+  def once(
+    event: "select-bluetooth-device",
+    listener: js.Function3[
+      /* event */ Event, 
+      /* devices */ js.Array[BluetoothDevice], 
+      /* callback */ js.Function1[/* deviceId */ String, Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_ipcmessagesync")
+  def once(
+    event: "ipc-message-sync",
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_plugincrashed")
+  def once(
+    event: "plugin-crashed",
+    listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_willattachwebview")
+  def once(
+    event: "will-attach-webview",
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webPreferences */ WebPreferences, 
+      /* params */ Record[String, String], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_paint")
+  def once(
+    event: "paint",
+    listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage_, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_didnavigate")
+  def once(
+    event: "did-navigate",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* url */ String, 
+      /* httpResponseCode */ Double, 
+      /* httpStatusText */ String, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_login")
+  def once(
+    event: "login",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* authenticationResponseDetails */ AuthenticationResponseDetails, 
+      /* authInfo */ AuthInfo, 
+      /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_selectclientcertificate")
+  def once(
+    event: "select-client-certificate",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* url */ String, 
+      /* certificateList */ js.Array[Certificate], 
+      /* callback */ js.Function1[/* certificate */ Certificate, Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_didframefinishload")
+  def once(
+    event: "did-frame-finish-load",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_consolemessage")
+  def once(
+    event: "console-message",
     listener: js.Function5[
       /* event */ Event, 
       /* level */ Double, 
@@ -1614,15 +1843,22 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def once_contextmenu(
-    event: `context-menu`,
-    listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
+  @scala.annotation.targetName("once_didnavigateinpage")
+  def once(
+    event: "did-navigate-in-page",
+    listener: js.Function5[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
-  def once_crashed(event: crashed, listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]): this.type = js.native
-  @JSName("once")
-  def once_cursorchanged(
-    event: `cursor-changed`,
+  @scala.annotation.targetName("once_cursorchanged")
+  def once(
+    event: "cursor-changed",
     listener: js.Function6[
       /* event */ Event, 
       /* type */ String, 
@@ -1634,33 +1870,65 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def once_destroyed(event: destroyed, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_devtoolsclosed(event: `devtools-closed`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_devtoolsfocused(event: `devtools-focused`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_devtoolsopened(event: `devtools-opened`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_devtoolsreloadpage(event: `devtools-reload-page`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_didattachwebview(
-    event: `did-attach-webview`,
-    listener: js.Function2[/* event */ Event, /* webContents */ this.type, Unit]
+  @scala.annotation.targetName("once_certificateerror")
+  def once(
+    event: "certificate-error",
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ String, 
+      /* error */ String, 
+      /* certificate */ Certificate, 
+      /* callback */ js.Function1[/* isTrusted */ Boolean, Unit], 
+      /* isMainFrame */ Boolean, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
-  def once_didchangethemecolor(
-    event: `did-change-theme-color`,
-    listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
+  @scala.annotation.targetName("once_didstartnavigation")
+  def once(
+    event: "did-start-navigation",
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isInPlace */ Boolean, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
-  def once_didcreatewindow(
-    event: `did-create-window`,
-    listener: js.Function2[/* window */ BrowserWindow, /* details */ DidCreateWindowDetails, Unit]
+  @scala.annotation.targetName("once_didredirectnavigation")
+  def once(
+    event: "did-redirect-navigation",
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isInPlace */ Boolean, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
-  def once_didfailload(
-    event: `did-fail-load`,
+  @scala.annotation.targetName("once_willredirect")
+  def once(
+    event: "will-redirect",
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isInPlace */ Boolean, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_didfailload")
+  def once(
+    event: "did-fail-load",
     listener: js.Function7[
       /* event */ Event, 
       /* errorCode */ Double, 
@@ -1673,8 +1941,24 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def once_didfailprovisionalload(
-    event: `did-fail-provisional-load`,
+  @scala.annotation.targetName("once_didframenavigate")
+  def once(
+    event: "did-frame-navigate",
+    listener: js.Function7[
+      /* event */ Event, 
+      /* url */ String, 
+      /* httpResponseCode */ Double, 
+      /* httpStatusText */ String, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_didfailprovisionalload")
+  def once(
+    event: "did-fail-provisional-load",
     listener: js.Function7[
       /* event */ Event, 
       /* errorCode */ Double, 
@@ -1687,211 +1971,18 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def once_didfinishload(event: `did-finish-load`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_didframefinishload(
-    event: `did-frame-finish-load`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_didframenavigate(
-    event: `did-frame-navigate`,
-    listener: js.Function7[
-      /* event */ Event, 
+  @scala.annotation.targetName("once_newwindow_default_foregroundtab_backgroundtab_newwindow_savetodisk_other")
+  def once(
+    event: "new-window",
+    listener: js.Function8[
+      /* event */ NewWindowWebContentsEvent, 
       /* url */ String, 
-      /* httpResponseCode */ Double, 
-      /* httpStatusText */ String, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_didnavigate(
-    event: `did-navigate`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* url */ String, 
-      /* httpResponseCode */ Double, 
-      /* httpStatusText */ String, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_didnavigateinpage(
-    event: `did-navigate-in-page`,
-    listener: js.Function5[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_didredirectnavigation(
-    event: `did-redirect-navigation`,
-    listener: js.Function6[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isInPlace */ Boolean, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_didstartloading(event: `did-start-loading`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_didstartnavigation(
-    event: `did-start-navigation`,
-    listener: js.Function6[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isInPlace */ Boolean, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_didstoploading(event: `did-stop-loading`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("once")
-  def once_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_focus(event: focus, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
-  @JSName("once")
-  def once_framecreated(
-    event: `frame-created`,
-    listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_ipcmessage(
-    event: `ipc-message`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_ipcmessagesync(
-    event: `ipc-message-sync`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_login(
-    event: login,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* authenticationResponseDetails */ AuthenticationResponseDetails, 
-      /* authInfo */ AuthInfo, 
-      /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_mediapaused(event: `media-paused`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_mediastartedplaying(event: `media-started-playing`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_pagefaviconupdated(
-    event: `page-favicon-updated`,
-    listener: js.Function2[/* event */ Event, /* favicons */ js.Array[String], Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_pagetitleupdated(
-    event: `page-title-updated`,
-    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_paint(
-    event: paint,
-    listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage_, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_plugincrashed(
-    event: `plugin-crashed`,
-    listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_preferredsizechanged(
-    event: `preferred-size-changed`,
-    listener: js.Function2[/* event */ Event, /* preferredSize */ Size, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_preloaderror(
-    event: `preload-error`,
-    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ js.Error, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_renderprocessgone(
-    event: `render-process-gone`,
-    listener: js.Function2[/* event */ Event, /* details */ RenderProcessGoneDetails, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_responsive(event: responsive, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_selectbluetoothdevice(
-    event: `select-bluetooth-device`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* devices */ js.Array[BluetoothDevice], 
-      /* callback */ js.Function1[/* deviceId */ String, Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_selectclientcertificate(
-    event: `select-client-certificate`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* url */ String, 
-      /* certificateList */ js.Array[Certificate], 
-      /* callback */ js.Function1[/* certificate */ Certificate, Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_unresponsive(event: unresponsive, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_updatetargeturl(event: `update-target-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
-  @JSName("once")
-  def once_willattachwebview(
-    event: `will-attach-webview`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* webPreferences */ WebPreferences, 
-      /* params */ Record[String, String], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_willnavigate(event: `will-navigate`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
-  @JSName("once")
-  def once_willpreventunload(event: `will-prevent-unload`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("once")
-  def once_willredirect(
-    event: `will-redirect`,
-    listener: js.Function6[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isInPlace */ Boolean, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
+      /* frameName */ String, 
+      /* disposition */ "default" | "foreground-tab" | "background-tab" | "new-window" | "save-to-disk" | "other", 
+      /* options */ BrowserWindowConstructorOptions, 
+      /* additionalFeatures */ js.Array[String], 
+      /* referrer */ Referrer, 
+      /* postBody */ PostBody, 
       Unit
     ]
   ): this.type = js.native
@@ -1997,31 +2088,279 @@ trait WebContents_ extends EventEmitter {
     */
   def removeInsertedCSS(key: String): js.Promise[Unit] = js.native
   
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_devtoolsreloadpage")
+  def removeListener(event: "devtools-reload-page", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_focus")
+  def removeListener(event: "focus", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_didstartloading")
+  def removeListener(event: "did-start-loading", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_devtoolsfocused")
+  def removeListener(event: "devtools-focused", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_devtoolsclosed")
+  def removeListener(event: "devtools-closed", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_mediapaused")
+  def removeListener(event: "media-paused", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_unresponsive")
+  def removeListener(event: "unresponsive", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_leavehtmlfullscreen")
+  def removeListener(event: "leave-html-full-screen", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_enterhtmlfullscreen")
+  def removeListener(event: "enter-html-full-screen", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_responsive")
+  def removeListener(event: "responsive", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_didfinishload")
+  def removeListener(event: "did-finish-load", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_destroyed")
+  def removeListener(event: "destroyed", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_blur")
+  def removeListener(event: "blur", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_devtoolsopened")
+  def removeListener(event: "devtools-opened", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_mediastartedplaying")
+  def removeListener(event: "media-started-playing", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_didstoploading")
+  def removeListener(event: "did-stop-loading", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_willpreventunload")
+  def removeListener(event: "will-prevent-unload", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_domready")
+  def removeListener(event: "dom-ready", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_didchangethemecolor")
   def removeListener(
-    event: `new-window`,
-    listener: js.Function8[
-      /* event */ NewWindowWebContentsEvent, 
-      /* url */ String, 
-      /* frameName */ String, 
-      /* disposition */ default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other, 
-      /* options */ BrowserWindowConstructorOptions, 
-      /* additionalFeatures */ js.Array[String], 
-      /* referrer */ Referrer, 
-      /* postBody */ PostBody, 
+    event: "did-change-theme-color",
+    listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_contextmenu")
+  def removeListener(
+    event: "context-menu",
+    listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_foundinpage")
+  def removeListener(event: "found-in-page", listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_willnavigate")
+  def removeListener(event: "will-navigate", listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_updatetargeturl")
+  def removeListener(event: "update-target-url", listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_beforeinputevent")
+  def removeListener(event: "before-input-event", listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_crashed")
+  def removeListener(event: "crashed", listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_preferredsizechanged")
+  def removeListener(
+    event: "preferred-size-changed",
+    listener: js.Function2[/* event */ Event, /* preferredSize */ Size, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_renderprocessgone")
+  def removeListener(
+    event: "render-process-gone",
+    listener: js.Function2[/* event */ Event, /* details */ RenderProcessGoneDetails, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_framecreated")
+  def removeListener(
+    event: "frame-created",
+    listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_didcreatewindow")
+  def removeListener(
+    event: "did-create-window",
+    listener: js.Function2[/* window */ BrowserWindow, /* details */ DidCreateWindowDetails, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_didattachwebview")
+  def removeListener(
+    event: "did-attach-webview",
+    listener: js.Function2[/* event */ Event, /* webContents */ this.type, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_zoomchanged_in_out")
+  def removeListener(
+    event: "zoom-changed",
+    listener: js.Function2[/* event */ Event, /* zoomDirection */ "in" | "out", Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_pagefaviconupdated")
+  def removeListener(
+    event: "page-favicon-updated",
+    listener: js.Function2[/* event */ Event, /* favicons */ js.Array[String], Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_willattachwebview")
+  def removeListener(
+    event: "will-attach-webview",
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webPreferences */ WebPreferences, 
+      /* params */ Record[String, String], 
       Unit
     ]
   ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_preloaderror")
   def removeListener(
-    event: `zoom-changed`,
-    listener: js.Function2[/* event */ Event, /* zoomDirection */ in | out, Unit]
+    event: "preload-error",
+    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ js.Error, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_beforeinputevent(event: `before-input-event`, listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
+  @scala.annotation.targetName("removeListener_ipcmessagesync")
+  def removeListener(
+    event: "ipc-message-sync",
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_blur(event: blur, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("removeListener_pagetitleupdated")
+  def removeListener(
+    event: "page-title-updated",
+    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_certificateerror(
-    event: `certificate-error`,
+  @scala.annotation.targetName("removeListener_plugincrashed")
+  def removeListener(
+    event: "plugin-crashed",
+    listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_ipcmessage")
+  def removeListener(
+    event: "ipc-message",
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_selectbluetoothdevice")
+  def removeListener(
+    event: "select-bluetooth-device",
+    listener: js.Function3[
+      /* event */ Event, 
+      /* devices */ js.Array[BluetoothDevice], 
+      /* callback */ js.Function1[/* deviceId */ String, Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_paint")
+  def removeListener(
+    event: "paint",
+    listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage_, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_didframefinishload")
+  def removeListener(
+    event: "did-frame-finish-load",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_selectclientcertificate")
+  def removeListener(
+    event: "select-client-certificate",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* url */ String, 
+      /* certificateList */ js.Array[Certificate], 
+      /* callback */ js.Function1[/* certificate */ Certificate, Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_login")
+  def removeListener(
+    event: "login",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* authenticationResponseDetails */ AuthenticationResponseDetails, 
+      /* authInfo */ AuthInfo, 
+      /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_didnavigate")
+  def removeListener(
+    event: "did-navigate",
+    listener: js.Function4[
+      /* event */ Event, 
+      /* url */ String, 
+      /* httpResponseCode */ Double, 
+      /* httpStatusText */ String, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_didnavigateinpage")
+  def removeListener(
+    event: "did-navigate-in-page",
+    listener: js.Function5[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_consolemessage")
+  def removeListener(
+    event: "console-message",
+    listener: js.Function5[
+      /* event */ Event, 
+      /* level */ Double, 
+      /* message */ String, 
+      /* line */ Double, 
+      /* sourceId */ String, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_willredirect")
+  def removeListener(
+    event: "will-redirect",
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isInPlace */ Boolean, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_certificateerror")
+  def removeListener(
+    event: "certificate-error",
     listener: js.Function6[
       /* event */ Event, 
       /* url */ String, 
@@ -2033,27 +2372,9 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_consolemessage(
-    event: `console-message`,
-    listener: js.Function5[
-      /* event */ Event, 
-      /* level */ Double, 
-      /* message */ String, 
-      /* line */ Double, 
-      /* sourceId */ String, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_contextmenu(
-    event: `context-menu`,
-    listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_crashed(event: crashed, listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_cursorchanged(
-    event: `cursor-changed`,
+  @scala.annotation.targetName("removeListener_cursorchanged")
+  def removeListener(
+    event: "cursor-changed",
     listener: js.Function6[
       /* event */ Event, 
       /* type */ String, 
@@ -2065,33 +2386,37 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_destroyed(event: destroyed, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_devtoolsclosed(event: `devtools-closed`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_devtoolsfocused(event: `devtools-focused`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_devtoolsopened(event: `devtools-opened`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_devtoolsreloadpage(event: `devtools-reload-page`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_didattachwebview(
-    event: `did-attach-webview`,
-    listener: js.Function2[/* event */ Event, /* webContents */ this.type, Unit]
+  @scala.annotation.targetName("removeListener_didstartnavigation")
+  def removeListener(
+    event: "did-start-navigation",
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isInPlace */ Boolean, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_didchangethemecolor(
-    event: `did-change-theme-color`,
-    listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
+  @scala.annotation.targetName("removeListener_didredirectnavigation")
+  def removeListener(
+    event: "did-redirect-navigation",
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ String, 
+      /* isInPlace */ Boolean, 
+      /* isMainFrame */ Boolean, 
+      /* frameProcessId */ Double, 
+      /* frameRoutingId */ Double, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_didcreatewindow(
-    event: `did-create-window`,
-    listener: js.Function2[/* window */ BrowserWindow, /* details */ DidCreateWindowDetails, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_didfailload(
-    event: `did-fail-load`,
+  @scala.annotation.targetName("removeListener_didfailprovisionalload")
+  def removeListener(
+    event: "did-fail-provisional-load",
     listener: js.Function7[
       /* event */ Event, 
       /* errorCode */ Double, 
@@ -2104,8 +2429,9 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_didfailprovisionalload(
-    event: `did-fail-provisional-load`,
+  @scala.annotation.targetName("removeListener_didfailload")
+  def removeListener(
+    event: "did-fail-load",
     listener: js.Function7[
       /* event */ Event, 
       /* errorCode */ Double, 
@@ -2118,21 +2444,9 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_didfinishload(event: `did-finish-load`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_didframefinishload(
-    event: `did-frame-finish-load`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_didframenavigate(
-    event: `did-frame-navigate`,
+  @scala.annotation.targetName("removeListener_didframenavigate")
+  def removeListener(
+    event: "did-frame-navigate",
     listener: js.Function7[
       /* event */ Event, 
       /* url */ String, 
@@ -2145,184 +2459,18 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_didnavigate(
-    event: `did-navigate`,
-    listener: js.Function4[
-      /* event */ Event, 
+  @scala.annotation.targetName("removeListener_newwindow_default_foregroundtab_backgroundtab_newwindow_savetodisk_other")
+  def removeListener(
+    event: "new-window",
+    listener: js.Function8[
+      /* event */ NewWindowWebContentsEvent, 
       /* url */ String, 
-      /* httpResponseCode */ Double, 
-      /* httpStatusText */ String, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_didnavigateinpage(
-    event: `did-navigate-in-page`,
-    listener: js.Function5[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_didredirectnavigation(
-    event: `did-redirect-navigation`,
-    listener: js.Function6[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isInPlace */ Boolean, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_didstartloading(event: `did-start-loading`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_didstartnavigation(
-    event: `did-start-navigation`,
-    listener: js.Function6[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isInPlace */ Boolean, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_didstoploading(event: `did-stop-loading`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_focus(event: focus, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_framecreated(
-    event: `frame-created`,
-    listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_ipcmessage(
-    event: `ipc-message`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_ipcmessagesync(
-    event: `ipc-message-sync`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_login(
-    event: login,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* authenticationResponseDetails */ AuthenticationResponseDetails, 
-      /* authInfo */ AuthInfo, 
-      /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_mediapaused(event: `media-paused`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_mediastartedplaying(event: `media-started-playing`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_pagefaviconupdated(
-    event: `page-favicon-updated`,
-    listener: js.Function2[/* event */ Event, /* favicons */ js.Array[String], Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_pagetitleupdated(
-    event: `page-title-updated`,
-    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_paint(
-    event: paint,
-    listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage_, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_plugincrashed(
-    event: `plugin-crashed`,
-    listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_preferredsizechanged(
-    event: `preferred-size-changed`,
-    listener: js.Function2[/* event */ Event, /* preferredSize */ Size, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_preloaderror(
-    event: `preload-error`,
-    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ js.Error, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_renderprocessgone(
-    event: `render-process-gone`,
-    listener: js.Function2[/* event */ Event, /* details */ RenderProcessGoneDetails, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_responsive(event: responsive, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_selectbluetoothdevice(
-    event: `select-bluetooth-device`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* devices */ js.Array[BluetoothDevice], 
-      /* callback */ js.Function1[/* deviceId */ String, Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_selectclientcertificate(
-    event: `select-client-certificate`,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* url */ String, 
-      /* certificateList */ js.Array[Certificate], 
-      /* callback */ js.Function1[/* certificate */ Certificate, Unit], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_unresponsive(event: unresponsive, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_updatetargeturl(event: `update-target-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_willattachwebview(
-    event: `will-attach-webview`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* webPreferences */ WebPreferences, 
-      /* params */ Record[String, String], 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_willnavigate(event: `will-navigate`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_willpreventunload(event: `will-prevent-unload`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_willredirect(
-    event: `will-redirect`,
-    listener: js.Function6[
-      /* event */ Event, 
-      /* url */ String, 
-      /* isInPlace */ Boolean, 
-      /* isMainFrame */ Boolean, 
-      /* frameProcessId */ Double, 
-      /* frameRoutingId */ Double, 
+      /* frameName */ String, 
+      /* disposition */ "default" | "foreground-tab" | "background-tab" | "new-window" | "save-to-disk" | "other", 
+      /* options */ BrowserWindowConstructorOptions, 
+      /* additionalFeatures */ js.Array[String], 
+      /* referrer */ Referrer, 
+      /* postBody */ PostBody, 
       Unit
     ]
   ): this.type = js.native
@@ -2345,7 +2493,9 @@ trait WebContents_ extends EventEmitter {
   /**
     * resolves if the page is saved.
     */
-  def savePage(fullPath: String, saveType: HTMLOnly | HTMLComplete | MHTML): js.Promise[Unit] = js.native
+  @JSName("savePage")
+  @scala.annotation.targetName("savePage_HTMLOnly_HTMLComplete_MHTML")
+  def savePage(fullPath: String, saveType: "HTMLOnly" | "HTMLComplete" | "MHTML"): js.Promise[Unit] = js.native
   
   /**
     * Executes the editing command `selectAll` in web page.
@@ -2455,7 +2605,9 @@ trait WebContents_ extends EventEmitter {
     *
     * This corresponds to the animationPolicy accessibility feature in Chromium.
     */
-  def setImageAnimationPolicy(policy: animate | animateOnce | noAnimation): Unit = js.native
+  @JSName("setImageAnimationPolicy")
+  @scala.annotation.targetName("setImageAnimationPolicy_animate_animateOnce_noAnimation")
+  def setImageAnimationPolicy(policy: "animate" | "animateOnce" | "noAnimation"): Unit = js.native
   
   /**
     * Overrides the user agent for this web page.
@@ -2474,8 +2626,10 @@ trait WebContents_ extends EventEmitter {
     * Setting the WebRTC IP handling policy allows you to control which IPs are
     * exposed via WebRTC. See BrowserLeaks for more details.
     */
+  @JSName("setWebRTCIPHandlingPolicy")
+  @scala.annotation.targetName("setWebRTCIPHandlingPolicy_default_default_public_interface_only_default_public_and_private_interfaces_disable_non_proxied_udp")
   def setWebRTCIPHandlingPolicy(
-    policy: default | default_public_interface_only | default_public_and_private_interfaces | disable_non_proxied_udp
+    policy: "default" | "default_public_interface_only" | "default_public_and_private_interfaces" | "disable_non_proxied_udp"
   ): Unit = js.native
   
   /**
@@ -2534,7 +2688,9 @@ trait WebContents_ extends EventEmitter {
   /**
     * Stops any `findInPage` request for the `webContents` with the provided `action`.
     */
-  def stopFindInPage(action: clearSelection | keepSelection | activateSelection): Unit = js.native
+  @JSName("stopFindInPage")
+  @scala.annotation.targetName("stopFindInPage_clearSelection_keepSelection_activateSelection")
+  def stopFindInPage(action: "clearSelection" | "keepSelection" | "activateSelection"): Unit = js.native
   
   /**
     * If *offscreen rendering* is enabled and painting, stop painting.

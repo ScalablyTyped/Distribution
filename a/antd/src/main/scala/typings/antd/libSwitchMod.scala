@@ -142,17 +142,13 @@ object libSwitchMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.small
-    - typings.antd.antdStrings.default
-  */
-  trait SwitchSize extends StObject
   object SwitchSize {
     
-    inline def default: typings.antd.antdStrings.default = "default".asInstanceOf[typings.antd.antdStrings.default]
+    inline def default: "default" = "default".asInstanceOf["default"]
     
-    inline def small: typings.antd.antdStrings.small = "small".asInstanceOf[typings.antd.antdStrings.small]
+    inline def small: "small" = "small".asInstanceOf["small"]
   }
+  type SwitchSize = "small" | "default"
   
   type _To = CompoundedComponent
   

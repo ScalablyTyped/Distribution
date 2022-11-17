@@ -3,8 +3,6 @@ package typings.reactNavigationStack.libTypescriptSrcVendorTypesMod
 import typings.reactNativeSafeAreaContext.libTypescriptSafeAreaDottypesMod.EdgeInsets
 import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationRoute
-import typings.reactNavigationStack.reactNavigationStackStrings.float
-import typings.reactNavigationStack.reactNavigationStackStrings.screen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +23,7 @@ trait StackHeaderProps extends StObject {
     * Mode of the header: `float` renders a single floating header across all screens,
     * `screen` renders separate headers for each screen.
     */
-  var mode: float | screen
+  var mode: "float" | "screen"
   
   /**
     * Navigation prop for the header.
@@ -52,7 +50,7 @@ object StackHeaderProps {
   inline def apply(
     insets: EdgeInsets,
     layout: Layout,
-    mode: float | screen,
+    mode: "float" | "screen",
     navigation: StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams],
     scene: Scene[Route[String]],
     styleInterpolator: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle
@@ -67,7 +65,7 @@ object StackHeaderProps {
     
     inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    inline def setMode(value: float | screen): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: "float" | "screen"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setNavigation(value: StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     

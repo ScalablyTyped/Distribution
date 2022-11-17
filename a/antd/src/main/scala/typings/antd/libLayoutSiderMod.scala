@@ -1,12 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdStrings.lg
-import typings.antd.antdStrings.md
-import typings.antd.antdStrings.sm
-import typings.antd.antdStrings.xl
-import typings.antd.antdStrings.xs
-import typings.antd.antdStrings.xxl
 import typings.react.mod.CSSProperties
 import typings.react.mod.Context
 import typings.react.mod.ForwardRefExoticComponent
@@ -28,17 +22,13 @@ object libLayoutSiderMod extends Shortcut {
   @js.native
   val SiderContext: Context[SiderContextProps] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.clickTrigger
-    - typings.antd.antdStrings.responsive
-  */
-  trait CollapseType extends StObject
   object CollapseType {
     
-    inline def clickTrigger: typings.antd.antdStrings.clickTrigger = "clickTrigger".asInstanceOf[typings.antd.antdStrings.clickTrigger]
+    inline def clickTrigger: "clickTrigger" = "clickTrigger".asInstanceOf["clickTrigger"]
     
-    inline def responsive: typings.antd.antdStrings.responsive = "responsive".asInstanceOf[typings.antd.antdStrings.responsive]
+    inline def responsive: "responsive" = "responsive".asInstanceOf["responsive"]
   }
+  type CollapseType = "clickTrigger" | "responsive"
   
   trait SiderContextProps extends StObject {
     
@@ -63,7 +53,7 @@ object libLayoutSiderMod extends Shortcut {
     extends StObject
        with HTMLAttributes[HTMLDivElement] {
     
-    var breakpoint: js.UndefOr[xs | sm | md | lg | xl | xxl] = js.undefined
+    var breakpoint: js.UndefOr["xs" | "sm" | "md" | "lg" | "xl" | "xxl"] = js.undefined
     
     var collapsed: js.UndefOr[Boolean] = js.undefined
     
@@ -98,7 +88,7 @@ object libLayoutSiderMod extends Shortcut {
     
     extension [Self <: SiderProps](x: Self) {
       
-      inline def setBreakpoint(value: xs | sm | md | lg | xl | xxl): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      inline def setBreakpoint(value: "xs" | "sm" | "md" | "lg" | "xl" | "xxl"): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
       inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
       
@@ -175,17 +165,13 @@ object libLayoutSiderMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.light
-    - typings.antd.antdStrings.dark
-  */
-  trait SiderTheme extends StObject
   object SiderTheme {
     
-    inline def dark: typings.antd.antdStrings.dark = "dark".asInstanceOf[typings.antd.antdStrings.dark]
+    inline def dark: "dark" = "dark".asInstanceOf["dark"]
     
-    inline def light: typings.antd.antdStrings.light = "light".asInstanceOf[typings.antd.antdStrings.light]
+    inline def light: "light" = "light".asInstanceOf["light"]
   }
+  type SiderTheme = "light" | "dark"
   
   type _To = ForwardRefExoticComponent[SiderProps & RefAttributes[HTMLDivElement]]
   

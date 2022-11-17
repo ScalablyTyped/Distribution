@@ -1,21 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.ArrayExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ArrayExpression_
+trait ArrayExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with Standardized {
+     with BaseNode {
   
   var elements: js.Array[Null | Expression | SpreadElement_]
   
   @JSName("type")
-  var type_ArrayExpression_ : ArrayExpression
+  var type_ArrayExpression_ : "ArrayExpression"
 }
 object ArrayExpression_ {
   
@@ -31,6 +27,6 @@ object ArrayExpression_ {
     
     inline def setElementsVarargs(value: (Null | Expression | SpreadElement_)*): Self = StObject.set(x, "elements", js.Array(value*))
     
-    inline def setType(value: ArrayExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ArrayExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

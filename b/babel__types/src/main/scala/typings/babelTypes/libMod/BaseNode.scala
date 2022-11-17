@@ -23,12 +23,12 @@ trait BaseNode extends StObject {
   
   var trailingComments: js.UndefOr[js.Array[Comment] | Null] = js.undefined
   
-  var `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any
+  var `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with "AnyTypeAnnotation", "ArgumentPlaceholder", "ArrayExpression" */ String
 }
 object BaseNode {
   
   inline def apply(
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with "AnyTypeAnnotation", "ArgumentPlaceholder", "ArrayExpression" */ String
   ): BaseNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -88,7 +88,7 @@ object BaseNode {
     inline def setTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "trailingComments", js.Array(value*))
     
     inline def setType(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with "AnyTypeAnnotation", "ArgumentPlaceholder", "ArrayExpression" */ String
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

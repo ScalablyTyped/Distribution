@@ -1,18 +1,17 @@
 package typings.chartJs.anon
 
-import typings.chartJs.chartJsBooleans.`false`
-import typings.chartJs.mod.ChartEvent
+import typings.chartJs.distChunksHelpersDotcoreMod.ChartEvent1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Changed extends StObject {
   
-  var cancelable: `false`
+  var cancelable: false
   
   var changed: js.UndefOr[Boolean] = js.undefined
   
-  var event: ChartEvent
+  var event: ChartEvent1
   
   var inChartArea: Boolean
   
@@ -20,20 +19,20 @@ trait Changed extends StObject {
 }
 object Changed {
   
-  inline def apply(event: ChartEvent, inChartArea: Boolean, replay: Boolean): Changed = {
+  inline def apply(event: ChartEvent1, inChartArea: Boolean, replay: Boolean): Changed = {
     val __obj = js.Dynamic.literal(cancelable = false, event = event.asInstanceOf[js.Any], inChartArea = inChartArea.asInstanceOf[js.Any], replay = replay.asInstanceOf[js.Any])
     __obj.asInstanceOf[Changed]
   }
   
   extension [Self <: Changed](x: Self) {
     
-    inline def setCancelable(value: `false`): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    inline def setCancelable(value: false): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
     inline def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     
     inline def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
     
-    inline def setEvent(value: ChartEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: ChartEvent1): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setInChartArea(value: Boolean): Self = StObject.set(x, "inChartArea", value.asInstanceOf[js.Any])
     

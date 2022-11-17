@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.UnionTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `221` extends StObject {
   
-  var `type`: UnionTypeAnnotation
+  var `type`: "UnionTypeAnnotation"
 }
 object `221` {
   
@@ -19,6 +18,6 @@ object `221` {
   
   extension [Self <: `221`](x: Self) {
     
-    inline def setType(value: UnionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "UnionTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

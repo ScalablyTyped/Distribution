@@ -5,7 +5,6 @@ import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcLightsLightMod.Light
 import typings.three.srcLightsSpotLightShadowMod.SpotLightShadow
 import typings.three.srcUtilsMod.ColorRepresentation
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +40,7 @@ object srcLightsSpotLightMod {
       */
     var distance: Double = js.native
     
-    val isSpotLight: `true` = js.native
+    val isSpotLight: true = js.native
     
     /**
       * @default 0

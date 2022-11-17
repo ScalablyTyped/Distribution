@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.ImageResolvedAssetSource
 import typings.reactNative.mod.ImageSourcePropType
-import typings.styledComponents.styledComponentsStrings.disk
-import typings.styledComponents.styledComponentsStrings.diskSlashmemory
-import typings.styledComponents.styledComponentsStrings.memory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +42,7 @@ trait TypeofImageInstantiable
   var queryCache: js.UndefOr[
     js.Function1[
       /* urls */ js.Array[String], 
-      js.Promise[StringDictionary[memory | disk | diskSlashmemory]]
+      js.Promise[StringDictionary["memory" | "disk" | "disk/memory"]]
     ]
   ] = js.native
   

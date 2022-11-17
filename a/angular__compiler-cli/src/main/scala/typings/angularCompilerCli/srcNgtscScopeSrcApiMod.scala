@@ -39,35 +39,7 @@ object srcNgtscScopeSrcApiMod {
     /* 1 */ val Standalone: typings.angularCompilerCli.srcNgtscScopeSrcApiMod.ComponentScopeKind.Standalone & Double = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.srcNgtscScopeSrcApiMod.LocalModuleScope
-    - typings.angularCompilerCli.srcNgtscScopeSrcApiMod.StandaloneScope
-  */
-  trait ComponentScope extends StObject
-  object ComponentScope {
-    
-    inline def LocalModuleScope(
-      compilation: ScopeData,
-      exported: ScopeData,
-      kind: NgModule,
-      ngModule: ClassDeclaration[DeclarationNode],
-      schemas: js.Array[SchemaMetadata]
-    ): typings.angularCompilerCli.srcNgtscScopeSrcApiMod.LocalModuleScope = {
-      val __obj = js.Dynamic.literal(compilation = compilation.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], ngModule = ngModule.asInstanceOf[js.Any], schemas = schemas.asInstanceOf[js.Any], reexports = null)
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscScopeSrcApiMod.LocalModuleScope]
-    }
-    
-    inline def StandaloneScope(
-      component: ClassDeclaration[DeclarationNode],
-      dependencies: js.Array[DirectiveMeta | PipeMeta | NgModuleMeta],
-      isPoisoned: Boolean,
-      kind: Standalone,
-      schemas: js.Array[SchemaMetadata]
-    ): typings.angularCompilerCli.srcNgtscScopeSrcApiMod.StandaloneScope = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], isPoisoned = isPoisoned.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], schemas = schemas.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscScopeSrcApiMod.StandaloneScope]
-    }
-  }
+  type ComponentScope = LocalModuleScope | StandaloneScope
   
   trait ComponentScopeReader extends StObject {
     
@@ -121,8 +93,7 @@ object srcNgtscScopeSrcApiMod {
   
   trait LocalModuleScope
     extends StObject
-       with ExportScope
-       with ComponentScope {
+       with ExportScope {
     
     var compilation: ScopeData
     
@@ -225,9 +196,7 @@ object srcNgtscScopeSrcApiMod {
     }
   }
   
-  trait StandaloneScope
-    extends StObject
-       with ComponentScope {
+  trait StandaloneScope extends StObject {
     
     var component: ClassDeclaration[DeclarationNode]
     

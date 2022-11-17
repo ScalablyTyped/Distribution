@@ -1,31 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`appearance-based`
-import typings.electron.electronStrings.`fullscreen-ui`
-import typings.electron.electronStrings.`medium-light`
-import typings.electron.electronStrings.`ultra-dark`
-import typings.electron.electronStrings.`under-page`
-import typings.electron.electronStrings.`under-window`
-import typings.electron.electronStrings.active
-import typings.electron.electronStrings.content
-import typings.electron.electronStrings.customButtonsOnHover
-import typings.electron.electronStrings.dark
-import typings.electron.electronStrings.default
-import typings.electron.electronStrings.followWindow
-import typings.electron.electronStrings.header
-import typings.electron.electronStrings.hidden
-import typings.electron.electronStrings.hiddenInset
-import typings.electron.electronStrings.hud
-import typings.electron.electronStrings.inactive
-import typings.electron.electronStrings.light
-import typings.electron.electronStrings.menu
-import typings.electron.electronStrings.popover
-import typings.electron.electronStrings.selection
-import typings.electron.electronStrings.sheet
-import typings.electron.electronStrings.sidebar
-import typings.electron.electronStrings.titlebar
-import typings.electron.electronStrings.tooltip
-import typings.electron.electronStrings.window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -288,7 +262,7 @@ trait BrowserWindowConstructorOptions extends StObject {
     *
     * @platform darwin,win32
     */
-  var titleBarStyle: js.UndefOr[default | hidden | hiddenInset | customButtonsOnHover] = js.undefined
+  var titleBarStyle: js.UndefOr["default" | "hidden" | "hiddenInset" | "customButtonsOnHover"] = js.undefined
   
   /**
     * Set a custom position for the traffic light buttons in frameless windows.
@@ -326,7 +300,7 @@ trait BrowserWindowConstructorOptions extends StObject {
     * @platform darwin
     */
   var vibrancy: js.UndefOr[
-    `appearance-based` | light | dark | titlebar | selection | menu | popover | sidebar | `medium-light` | `ultra-dark` | header | sheet | window | hud | `fullscreen-ui` | tooltip | content | `under-window` | `under-page`
+    "appearance-based" | "light" | "dark" | "titlebar" | "selection" | "menu" | "popover" | "sidebar" | "medium-light" | "ultra-dark" | "header" | "sheet" | "window" | "hud" | "fullscreen-ui" | "tooltip" | "content" | "under-window" | "under-page"
   ] = js.undefined
   
   /**
@@ -335,7 +309,7 @@ trait BrowserWindowConstructorOptions extends StObject {
     *
     * @platform darwin
     */
-  var visualEffectState: js.UndefOr[followWindow | active | inactive] = js.undefined
+  var visualEffectState: js.UndefOr["followWindow" | "active" | "inactive"] = js.undefined
   
   /**
     * Settings of web page's features.
@@ -529,7 +503,7 @@ object BrowserWindowConstructorOptions {
     
     inline def setTitleBarOverlayUndefined: Self = StObject.set(x, "titleBarOverlay", js.undefined)
     
-    inline def setTitleBarStyle(value: default | hidden | hiddenInset | customButtonsOnHover): Self = StObject.set(x, "titleBarStyle", value.asInstanceOf[js.Any])
+    inline def setTitleBarStyle(value: "default" | "hidden" | "hiddenInset" | "customButtonsOnHover"): Self = StObject.set(x, "titleBarStyle", value.asInstanceOf[js.Any])
     
     inline def setTitleBarStyleUndefined: Self = StObject.set(x, "titleBarStyle", js.undefined)
     
@@ -552,12 +526,12 @@ object BrowserWindowConstructorOptions {
     inline def setUseContentSizeUndefined: Self = StObject.set(x, "useContentSize", js.undefined)
     
     inline def setVibrancy(
-      value: `appearance-based` | light | dark | titlebar | selection | menu | popover | sidebar | `medium-light` | `ultra-dark` | header | sheet | window | hud | `fullscreen-ui` | tooltip | content | `under-window` | `under-page`
+      value: "appearance-based" | "light" | "dark" | "titlebar" | "selection" | "menu" | "popover" | "sidebar" | "medium-light" | "ultra-dark" | "header" | "sheet" | "window" | "hud" | "fullscreen-ui" | "tooltip" | "content" | "under-window" | "under-page"
     ): Self = StObject.set(x, "vibrancy", value.asInstanceOf[js.Any])
     
     inline def setVibrancyUndefined: Self = StObject.set(x, "vibrancy", js.undefined)
     
-    inline def setVisualEffectState(value: followWindow | active | inactive): Self = StObject.set(x, "visualEffectState", value.asInstanceOf[js.Any])
+    inline def setVisualEffectState(value: "followWindow" | "active" | "inactive"): Self = StObject.set(x, "visualEffectState", value.asInstanceOf[js.Any])
     
     inline def setVisualEffectStateUndefined: Self = StObject.set(x, "visualEffectState", js.undefined)
     

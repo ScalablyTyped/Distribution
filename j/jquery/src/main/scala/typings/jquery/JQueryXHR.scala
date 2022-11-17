@@ -8,9 +8,6 @@ import typings.jquery.JQuery.PromiseBase
 import typings.jquery.JQuery.Thenable
 import typings.jquery.JQuery.TypeOrArray
 import typings.jquery.JQuery.jqXHR
-import typings.jquery.jqueryStrings.pending
-import typings.jquery.jqueryStrings.rejected
-import typings.jquery.jqueryStrings.resolved
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -721,7 +718,7 @@ trait JQueryXHR extends StObject {
     * @see \`{@link https://api.jquery.com/deferred.state/ }\`
     * @since 1.7
     */
-  def state(): pending | resolved | rejected = js.native
+  def state(): "pending" | "resolved" | "rejected" = js.native
   
   var status: Double = js.native
   

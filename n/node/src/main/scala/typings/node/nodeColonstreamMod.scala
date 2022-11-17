@@ -5,7 +5,6 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.node.anon.PickReadableOptionsencodi
 import typings.node.anon.PickWritableOptionsdecode
 import typings.node.bufferMod.global.Buffer
-import typings.node.childProcessMod.StdioNull
 import typings.node.nodeColonbufferMod.Blob
 import typings.node.streamMod.DuplexOptions
 import typings.node.streamMod.FinishedOptions
@@ -150,9 +149,7 @@ object nodeColonstreamMod {
   
   @JSImport("node:stream", "Stream")
   @js.native
-  open class Stream ()
-    extends StObject
-       with StdioNull {
+  open class Stream () extends StObject {
     def this(opts: ReadableOptions) = this()
   }
   

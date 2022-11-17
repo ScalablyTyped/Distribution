@@ -10,5 +10,9 @@ open class MapEvent[OriginalEvent, TargetGeometry] protected () extends Event_[O
   def this(originalEvent: js.Object, sourceEvent: IEvent[js.Object, js.Object]) = this()
   
   @JSName("get")
-  def get_domEvent(name: typings.yandexMaps.yandexMapsStrings.domEvent): js.UndefOr[DomEvent_[OriginalEvent, TargetGeometry]] = js.native
+  @scala.annotation.targetName("get_domEvent")
+  def get(name: "domEvent"): js.UndefOr[DomEvent_[OriginalEvent, TargetGeometry]] = js.native
+  @JSName("get")
+  @scala.annotation.targetName("get_coords_globalPixels_pagePixels_clientPixels")
+  def get(name: "coords" | "globalPixels" | "pagePixels" | "clientPixels"): js.Tuple2[Double, Double] = js.native
 }

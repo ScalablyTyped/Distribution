@@ -2,9 +2,6 @@ package typings.node
 
 import typings.node.NodeJS.ReadableStream
 import typings.node.anon.FnCallNameOptionsFn
-import typings.node.nodeStrings.testColondiagnostic
-import typings.node.nodeStrings.testColonfail
-import typings.node.nodeStrings.testColonpass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -331,46 +328,64 @@ object nodeColontestMod {
        with ReadableStream {
     
     @JSName("addListener")
-    def addListener_testdiagnostic(event: testColondiagnostic, listener: js.Function1[/* message */ String, Unit]): this.type = js.native
+    @scala.annotation.targetName("addListener_testdiagnostic")
+    def addListener(event: "test:diagnostic", listener: js.Function1[/* message */ String, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_testfail(event: testColonfail, listener: js.Function1[/* data */ TestFail, Unit]): this.type = js.native
+    @scala.annotation.targetName("addListener_testpass")
+    def addListener(event: "test:pass", listener: js.Function1[/* data */ TestPass, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_testpass(event: testColonpass, listener: js.Function1[/* data */ TestPass, Unit]): this.type = js.native
+    @scala.annotation.targetName("addListener_testfail")
+    def addListener(event: "test:fail", listener: js.Function1[/* data */ TestFail, Unit]): this.type = js.native
     
     @JSName("emit")
-    def emit_testdiagnostic(event: testColondiagnostic, message: String): Boolean = js.native
+    @scala.annotation.targetName("emit_testfail")
+    def emit(event: "test:fail", data: TestFail): Boolean = js.native
     @JSName("emit")
-    def emit_testfail(event: testColonfail, data: TestFail): Boolean = js.native
+    @scala.annotation.targetName("emit_testpass")
+    def emit(event: "test:pass", data: TestPass): Boolean = js.native
     @JSName("emit")
-    def emit_testpass(event: testColonpass, data: TestPass): Boolean = js.native
+    @scala.annotation.targetName("emit_testdiagnostic")
+    def emit(event: "test:diagnostic", message: String): Boolean = js.native
     
     @JSName("on")
-    def on_testdiagnostic(event: testColondiagnostic, listener: js.Function1[/* message */ String, Unit]): this.type = js.native
+    @scala.annotation.targetName("on_testfail")
+    def on(event: "test:fail", listener: js.Function1[/* data */ TestFail, Unit]): this.type = js.native
     @JSName("on")
-    def on_testfail(event: testColonfail, listener: js.Function1[/* data */ TestFail, Unit]): this.type = js.native
+    @scala.annotation.targetName("on_testdiagnostic")
+    def on(event: "test:diagnostic", listener: js.Function1[/* message */ String, Unit]): this.type = js.native
     @JSName("on")
-    def on_testpass(event: testColonpass, listener: js.Function1[/* data */ TestPass, Unit]): this.type = js.native
+    @scala.annotation.targetName("on_testpass")
+    def on(event: "test:pass", listener: js.Function1[/* data */ TestPass, Unit]): this.type = js.native
     
     @JSName("once")
-    def once_testdiagnostic(event: testColondiagnostic, listener: js.Function1[/* message */ String, Unit]): this.type = js.native
+    @scala.annotation.targetName("once_testfail")
+    def once(event: "test:fail", listener: js.Function1[/* data */ TestFail, Unit]): this.type = js.native
     @JSName("once")
-    def once_testfail(event: testColonfail, listener: js.Function1[/* data */ TestFail, Unit]): this.type = js.native
+    @scala.annotation.targetName("once_testdiagnostic")
+    def once(event: "test:diagnostic", listener: js.Function1[/* message */ String, Unit]): this.type = js.native
     @JSName("once")
-    def once_testpass(event: testColonpass, listener: js.Function1[/* data */ TestPass, Unit]): this.type = js.native
+    @scala.annotation.targetName("once_testpass")
+    def once(event: "test:pass", listener: js.Function1[/* data */ TestPass, Unit]): this.type = js.native
     
     @JSName("prependListener")
-    def prependListener_testdiagnostic(event: testColondiagnostic, listener: js.Function1[/* message */ String, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_testpass")
+    def prependListener(event: "test:pass", listener: js.Function1[/* data */ TestPass, Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_testfail(event: testColonfail, listener: js.Function1[/* data */ TestFail, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_testfail")
+    def prependListener(event: "test:fail", listener: js.Function1[/* data */ TestFail, Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_testpass(event: testColonpass, listener: js.Function1[/* data */ TestPass, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_testdiagnostic")
+    def prependListener(event: "test:diagnostic", listener: js.Function1[/* message */ String, Unit]): this.type = js.native
     
     @JSName("prependOnceListener")
-    def prependOnceListener_testdiagnostic(event: testColondiagnostic, listener: js.Function1[/* message */ String, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_testfail")
+    def prependOnceListener(event: "test:fail", listener: js.Function1[/* data */ TestFail, Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_testfail(event: testColonfail, listener: js.Function1[/* data */ TestFail, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_testdiagnostic")
+    def prependOnceListener(event: "test:diagnostic", listener: js.Function1[/* message */ String, Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_testpass(event: testColonpass, listener: js.Function1[/* data */ TestPass, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_testpass")
+    def prependOnceListener(event: "test:pass", listener: js.Function1[/* data */ TestPass, Unit]): this.type = js.native
   }
   
   /**

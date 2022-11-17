@@ -1,13 +1,10 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashREPLACE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationReplaceAction
-  extends StObject
-     with NavigationStackAction {
+trait NavigationReplaceAction extends StObject {
   
   var action: js.UndefOr[NavigationAction] = js.undefined
   
@@ -17,7 +14,7 @@ trait NavigationReplaceAction
   
   var routeName: String
   
-  var `type`: NavigationSlashREPLACE
+  var `type`: "Navigation/REPLACE"
 }
 object NavigationReplaceAction {
   
@@ -41,6 +38,6 @@ object NavigationReplaceAction {
     
     inline def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
     
-    inline def setType(value: NavigationSlashREPLACE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Navigation/REPLACE"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

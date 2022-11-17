@@ -1,13 +1,12 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreStrings.ngmodule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait R3DeclareNgModuleDependencyFacade extends StObject {
   
-  var kind: ngmodule
+  var kind: "ngmodule"
   
   var `type`: OpaqueValue | js.Function0[OpaqueValue]
 }
@@ -21,7 +20,7 @@ object R3DeclareNgModuleDependencyFacade {
   
   extension [Self <: R3DeclareNgModuleDependencyFacade](x: Self) {
     
-    inline def setKind(value: ngmodule): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "ngmodule"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setType(value: OpaqueValue | js.Function0[OpaqueValue]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

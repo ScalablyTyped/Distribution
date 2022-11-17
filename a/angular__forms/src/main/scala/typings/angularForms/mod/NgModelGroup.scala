@@ -2,9 +2,6 @@ package typings.angularForms.mod
 
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
-import typings.angularForms.angularFormsStrings.`[ngModelGroup]`
-import typings.angularForms.angularFormsStrings.ngModelGroup
 import typings.angularForms.anon.Self
 import typings.angularForms.anon.SkipSelf
 import typings.angularForms.anon.`3`
@@ -40,24 +37,26 @@ object NgModelGroup {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     NgModelGroup, 
-    `[ngModelGroup]`, 
-    js.Array[ngModelGroup], 
+    "[ngModelGroup]", 
+    js.Array["ngModelGroup"], 
     `3`, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       NgModelGroup, 
-      `[ngModelGroup]`, 
-      js.Array[ngModelGroup], 
+      "[ngModelGroup]", 
+      js.Array["ngModelGroup"], 
       `3`, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `false`
+      false, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

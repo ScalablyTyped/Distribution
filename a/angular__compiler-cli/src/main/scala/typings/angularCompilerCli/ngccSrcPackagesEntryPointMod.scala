@@ -126,54 +126,38 @@ object ngccSrcPackagesEntryPointMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliStrings.esm5
-    - typings.angularCompilerCli.angularCompilerCliStrings.esm2015
-    - typings.angularCompilerCli.angularCompilerCliStrings.umd
-    - typings.angularCompilerCli.angularCompilerCliStrings.commonjs
-  */
-  trait EntryPointFormat extends StObject
   object EntryPointFormat {
     
-    inline def commonjs: typings.angularCompilerCli.angularCompilerCliStrings.commonjs = "commonjs".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.commonjs]
+    inline def commonjs: "commonjs" = "commonjs".asInstanceOf["commonjs"]
     
-    inline def esm2015: typings.angularCompilerCli.angularCompilerCliStrings.esm2015 = "esm2015".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.esm2015]
+    inline def esm2015: "esm2015" = "esm2015".asInstanceOf["esm2015"]
     
-    inline def esm5: typings.angularCompilerCli.angularCompilerCliStrings.esm5 = "esm5".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.esm5]
+    inline def esm5: "esm5" = "esm5".asInstanceOf["esm5"]
     
-    inline def umd: typings.angularCompilerCli.angularCompilerCliStrings.umd = "umd".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.umd]
+    inline def umd: "umd" = "umd".asInstanceOf["umd"]
   }
+  type EntryPointFormat = "esm5" | "esm2015" | "umd" | "commonjs"
   
-  /* Inlined std.Exclude<@angular/compiler-cli.@angular/compiler-cli/ngcc/src/packages/entry_point.PackageJsonFormatProperties, 'types' | 'typings'> */
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliStrings.main
-    - typings.angularCompilerCli.angularCompilerCliStrings.module
-    - typings.angularCompilerCli.angularCompilerCliStrings.browser
-    - typings.angularCompilerCli.angularCompilerCliStrings.fesm2015
-    - typings.angularCompilerCli.angularCompilerCliStrings.esm5
-    - typings.angularCompilerCli.angularCompilerCliStrings.fesm5
-    - typings.angularCompilerCli.angularCompilerCliStrings.esm2015
-    - typings.angularCompilerCli.angularCompilerCliStrings.es2015
-  */
-  trait EntryPointJsonProperty extends StObject
   object EntryPointJsonProperty {
     
-    inline def browser: typings.angularCompilerCli.angularCompilerCliStrings.browser = "browser".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.browser]
+    inline def browser: "browser" = "browser".asInstanceOf["browser"]
     
-    inline def es2015: typings.angularCompilerCli.angularCompilerCliStrings.es2015 = "es2015".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.es2015]
+    inline def es2015: "es2015" = "es2015".asInstanceOf["es2015"]
     
-    inline def esm2015: typings.angularCompilerCli.angularCompilerCliStrings.esm2015 = "esm2015".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.esm2015]
+    inline def esm2015: "esm2015" = "esm2015".asInstanceOf["esm2015"]
     
-    inline def esm5: typings.angularCompilerCli.angularCompilerCliStrings.esm5 = "esm5".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.esm5]
+    inline def esm5: "esm5" = "esm5".asInstanceOf["esm5"]
     
-    inline def fesm2015: typings.angularCompilerCli.angularCompilerCliStrings.fesm2015 = "fesm2015".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.fesm2015]
+    inline def fesm2015: "fesm2015" = "fesm2015".asInstanceOf["fesm2015"]
     
-    inline def fesm5: typings.angularCompilerCli.angularCompilerCliStrings.fesm5 = "fesm5".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.fesm5]
+    inline def fesm5: "fesm5" = "fesm5".asInstanceOf["fesm5"]
     
-    inline def main: typings.angularCompilerCli.angularCompilerCliStrings.main = "main".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.main]
+    inline def main: "main" = "main".asInstanceOf["main"]
     
-    inline def module: typings.angularCompilerCli.angularCompilerCliStrings.module = "module".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.module]
+    inline def module: "module" = "module".asInstanceOf["module"]
   }
+  /* Inlined std.Exclude<@angular/compiler-cli.@angular/compiler-cli/ngcc/src/packages/entry_point.PackageJsonFormatProperties, 'types' | 'typings'> */
+  type EntryPointJsonProperty = "main" | "module" | "browser" | "fesm2015" | "esm5" | "fesm5" | "esm2015" | "es2015"
   
   trait EntryPointPackageJson
     extends StObject
@@ -221,19 +205,7 @@ object ngccSrcPackagesEntryPointMod {
   
   type GetEntryPointResult = EntryPoint | (/* "ignored-entry-point" */ String)
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliStrings.browser
-    - typings.angularCompilerCli.angularCompilerCliStrings.fesm2015
-    - typings.angularCompilerCli.angularCompilerCliStrings.fesm5
-    - typings.angularCompilerCli.angularCompilerCliStrings.es2015
-    - typings.angularCompilerCli.angularCompilerCliStrings.esm2015
-    - typings.angularCompilerCli.angularCompilerCliStrings.esm5
-    - typings.angularCompilerCli.angularCompilerCliStrings.main
-    - typings.angularCompilerCli.angularCompilerCliStrings.module
-    - typings.angularCompilerCli.angularCompilerCliStrings.types
-    - typings.angularCompilerCli.angularCompilerCliStrings.typings_
-  */
-  trait PackageJsonFormatProperties extends StObject
+  type PackageJsonFormatProperties = "browser" | "fesm2015" | "fesm5" | "es2015" | "esm2015" | "esm5" | "main" | "module" | "types" | "typings"
   
   trait PackageJsonFormatPropertiesMap extends StObject {
     

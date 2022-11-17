@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.ParenthesizedExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `204` extends StObject {
   
-  var `type`: ParenthesizedExpression
+  var `type`: "ParenthesizedExpression"
 }
 object `204` {
   
@@ -19,6 +18,6 @@ object `204` {
   
   extension [Self <: `204`](x: Self) {
     
-    inline def setType(value: ParenthesizedExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ParenthesizedExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

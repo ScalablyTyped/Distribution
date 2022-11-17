@@ -1,14 +1,12 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`23`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IfStatement
   extends StObject
-     with Node2
-     with SSRCodegenNode {
+     with Node2 {
   
   var alternate: js.UndefOr[IfStatement | BlockStatement | ReturnStatement] = js.undefined
   
@@ -17,7 +15,7 @@ trait IfStatement
   var test: ExpressionNode
   
   @JSName("type")
-  var type_IfStatement: `23`
+  var type_IfStatement: 23
 }
 object IfStatement {
   
@@ -37,6 +35,6 @@ object IfStatement {
     
     inline def setTest(value: ExpressionNode): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `23`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 23): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

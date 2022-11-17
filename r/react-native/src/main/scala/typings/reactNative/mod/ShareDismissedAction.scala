@@ -1,15 +1,12 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.dismissedAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShareDismissedAction
-  extends StObject
-     with ShareAction {
+trait ShareDismissedAction extends StObject {
   
-  var action: dismissedAction
+  var action: "dismissedAction"
 }
 object ShareDismissedAction {
   
@@ -20,6 +17,6 @@ object ShareDismissedAction {
   
   extension [Self <: ShareDismissedAction](x: Self) {
     
-    inline def setAction(value: dismissedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: "dismissedAction"): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

@@ -1,20 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.PipelineTopicExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait PipelineTopicExpression_
+trait PipelineTopicExpression_
   extends StObject
-     with BaseNode
-     with Expression {
+     with BaseNode {
   
   var expression: Expression
   
   @JSName("type")
-  var type_PipelineTopicExpression_ : PipelineTopicExpression
+  var type_PipelineTopicExpression_ : "PipelineTopicExpression"
 }
 object PipelineTopicExpression_ {
   
@@ -28,6 +25,6 @@ object PipelineTopicExpression_ {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    inline def setType(value: PipelineTopicExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "PipelineTopicExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

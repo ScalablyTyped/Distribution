@@ -1,8 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.buttons
-import typings.electron.electronStrings.multiple
-import typings.electron.electronStrings.single
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +12,7 @@ trait TouchBarSegmentedControl extends EventEmitter {
     * A `string` representing the current selection mode of the control.  Can be
     * `single`, `multiple` or `buttons`.
     */
-  var mode: single | multiple | buttons = js.native
+  var mode: "single" | "multiple" | "buttons" = js.native
   
   /**
     * A `string` representing the controls current segment style. Updating this value

@@ -12,20 +12,6 @@ import typings.three.srcThreeMod.Object3D
 import typings.three.srcThreeMod.Quaternion
 import typings.three.srcThreeMod.Raycaster
 import typings.three.srcThreeMod.Vector3
-import typings.three.threeBooleans.`true`
-import typings.three.threeStrings.E
-import typings.three.threeStrings.X
-import typings.three.threeStrings.XY
-import typings.three.threeStrings.XYZ
-import typings.three.threeStrings.XYZE
-import typings.three.threeStrings.XZ
-import typings.three.threeStrings.Y
-import typings.three.threeStrings.YZ
-import typings.three.threeStrings.Z
-import typings.three.threeStrings.local
-import typings.three.threeStrings.rotate
-import typings.three.threeStrings.translate
-import typings.three.threeStrings.world
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +26,7 @@ object examplesJsmControlsTransformControlsMod {
     
     def attach(`object`: Object3D[Event]): this.type = js.native
     
-    var axis: X | Y | Z | E | XY | YZ | XZ | XYZ | XYZE | Null = js.native
+    var axis: "X" | "Y" | "Z" | "E" | "XY" | "YZ" | "XZ" | "XYZ" | "XYZE" | Null = js.native
     
     // API
     var camera: Camera = js.native
@@ -55,13 +41,13 @@ object examplesJsmControlsTransformControlsMod {
     
     var enabled: Boolean = js.native
     
-    def getMode(): translate | rotate | typings.three.threeStrings.scale = js.native
+    def getMode(): "translate" | "rotate" | "scale" = js.native
     
     def getRaycaster(): Raycaster = js.native
     
-    val isTransformControls: `true` = js.native
+    val isTransformControls: true = js.native
     
-    var mode: translate | rotate | typings.three.threeStrings.scale = js.native
+    var mode: "translate" | "rotate" | "scale" = js.native
     
     var mouseButtons: LEFT_ = js.native
     
@@ -71,7 +57,9 @@ object examplesJsmControlsTransformControlsMod {
     
     var rotationSnap: Double | Null = js.native
     
-    def setMode(mode: translate | rotate | typings.three.threeStrings.scale): Unit = js.native
+    @JSName("setMode")
+    @scala.annotation.targetName("setMode_translate_rotate_scale")
+    def setMode(mode: "translate" | "rotate" | "scale"): Unit = js.native
     
     def setRotationSnap(): Unit = js.native
     def setRotationSnap(rotationSnap: Double): Unit = js.native
@@ -81,7 +69,9 @@ object examplesJsmControlsTransformControlsMod {
     
     def setSize(size: Double): Unit = js.native
     
-    def setSpace(space: world | local): Unit = js.native
+    @JSName("setSpace")
+    @scala.annotation.targetName("setSpace_world_local")
+    def setSpace(space: "world" | "local"): Unit = js.native
     
     def setTranslationSnap(): Unit = js.native
     def setTranslationSnap(translationSnap: Double): Unit = js.native
@@ -94,7 +84,7 @@ object examplesJsmControlsTransformControlsMod {
     
     var size: Double = js.native
     
-    var space: world | local = js.native
+    var space: "world" | "local" = js.native
     
     var translationSnap: Double | Null = js.native
   }
@@ -107,12 +97,12 @@ object examplesJsmControlsTransformControlsMod {
     
     var helper: Rotate = js.native
     
-    var isTransformControlsGizmo: `true` = js.native
+    var isTransformControlsGizmo: true = js.native
     
     var picker: Rotate = js.native
     
     @JSName("type")
-    var type_TransformControlsGizmo: typings.three.threeStrings.TransformControlsGizmo = js.native
+    var type_TransformControlsGizmo: "TransformControlsGizmo" = js.native
   }
   
   @JSImport("three/examples/jsm/controls/TransformControls", "TransformControlsPlane")
@@ -120,18 +110,18 @@ object examplesJsmControlsTransformControlsMod {
   open class TransformControlsPlane ()
     extends Mesh[BufferGeometry, Material | js.Array[Material]] {
     
-    var axis: X | Y | Z | XY | YZ | XZ | XYZ | E = js.native
+    var axis: "X" | "Y" | "Z" | "XY" | "YZ" | "XZ" | "XYZ" | "E" = js.native
     
     var eye: Vector3 = js.native
     
-    var isTransformControlsPlane: `true` = js.native
+    var isTransformControlsPlane: true = js.native
     
-    var mode: translate | typings.three.threeStrings.scale | rotate = js.native
+    var mode: "translate" | "scale" | "rotate" = js.native
     
-    var space: local | world = js.native
+    var space: "local" | "world" = js.native
     
     @JSName("type")
-    var type_TransformControlsPlane: typings.three.threeStrings.TransformControlsPlane = js.native
+    var type_TransformControlsPlane: "TransformControlsPlane" = js.native
     
     var worldPosition: Vector3 = js.native
     

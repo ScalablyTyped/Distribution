@@ -1,7 +1,5 @@
 package typings.d3Force
 
-import typings.d3Force.d3ForceStrings.end
-import typings.d3Force.d3ForceStrings.tick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -725,8 +723,12 @@ object mod {
       */
     def nodes(nodesData: js.Array[NodeDatum]): this.type = js.native
     
-    def on(typenames: tick | end): this.type = js.native
-    def on(typenames: tick | end, listener: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_tick_end")
+    def on(typenames: "tick" | "end"): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_tick_end")
+    def on(typenames: "tick" | "end", listener: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
     /**
       * Sets the event listener for the specified typenames and returns this simulation.
       * If an event listener was already registered for the same type and name, the existing listener is removed before the new listener is added.
@@ -736,7 +738,8 @@ object mod {
     def on(typenames: String): this.type = js.native
     def on(typenames: String, listener: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
     @JSName("on")
-    def on_Union(typenames: tick | end): js.UndefOr[js.ThisFunction0[/* this */ Simulation[NodeDatum, LinkDatum], Unit]] = js.native
+    @scala.annotation.targetName("on_tick_end")
+    def on_Union(typenames: "tick" | "end"): js.UndefOr[js.ThisFunction0[/* this */ Simulation[NodeDatum, LinkDatum], Unit]] = js.native
     /**
       * Return the first currently-assigned listener matching the specified typenames, if any.
       *

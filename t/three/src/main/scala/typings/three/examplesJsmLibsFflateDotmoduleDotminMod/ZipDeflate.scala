@@ -1,9 +1,5 @@
 package typings.three.examplesJsmLibsFflateDotmoduleDotminMod
 
-import typings.three.threeInts.`0`
-import typings.three.threeInts.`1`
-import typings.three.threeInts.`2`
-import typings.three.threeInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,7 +48,7 @@ open class ZipDeflate protected ()
   var filename: String = js.native
   
   @JSName("flag")
-  var flag_ZipDeflate: `0` | `1` | `2` | `3` = js.native
+  var flag_ZipDeflate: 0 | 1 | 2 | 3 = js.native
   
   @JSName("ondata")
   def ondata_MZipDeflate(err: js.Error, data: js.typedarray.Uint8Array, `final`: Boolean): Unit = js.native

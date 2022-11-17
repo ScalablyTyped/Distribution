@@ -3,7 +3,6 @@ package typings.angularCompilerCli.anon
 import typings.angularCompiler.mod.R3ClassMetadata
 import typings.angularCompiler.mod.R3DependencyMetadata
 import typings.angularCompiler.mod.R3InjectableMetadata
-import typings.angularCompilerCli.angularCompilerCliStrings.invalid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait ReadonlyInjectableHandler extends StObject {
   
   val classMetadata: js.UndefOr[R3ClassMetadata | Null] = js.undefined
   
-  val ctorDeps: js.UndefOr[js.Array[R3DependencyMetadata] | invalid | Null] = js.undefined
+  val ctorDeps: js.UndefOr[js.Array[R3DependencyMetadata] | "invalid" | Null] = js.undefined
   
   val meta: R3InjectableMetadata
   
@@ -34,7 +33,7 @@ object ReadonlyInjectableHandler {
     
     inline def setClassMetadataUndefined: Self = StObject.set(x, "classMetadata", js.undefined)
     
-    inline def setCtorDeps(value: js.Array[R3DependencyMetadata] | invalid): Self = StObject.set(x, "ctorDeps", value.asInstanceOf[js.Any])
+    inline def setCtorDeps(value: js.Array[R3DependencyMetadata] | "invalid"): Self = StObject.set(x, "ctorDeps", value.asInstanceOf[js.Any])
     
     inline def setCtorDepsNull: Self = StObject.set(x, "ctorDeps", null)
     

@@ -1,21 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.JSXAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait JSXAttribute_
+trait JSXAttribute_
   extends StObject
-     with BaseNode
-     with Immutable
-     with JSX {
+     with BaseNode {
   
   var name: JSXIdentifier_ | JSXNamespacedName_
   
   @JSName("type")
-  var type_JSXAttribute_ : JSXAttribute
+  var type_JSXAttribute_ : "JSXAttribute"
   
   var value: JSXElement_ | JSXFragment_ | StringLiteral_ | JSXExpressionContainer_ | Null
 }
@@ -31,7 +27,7 @@ object JSXAttribute_ {
     
     inline def setName(value: JSXIdentifier_ | JSXNamespacedName_): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setType(value: JSXAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "JSXAttribute"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: JSXElement_ | JSXFragment_ | StringLiteral_ | JSXExpressionContainer_): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

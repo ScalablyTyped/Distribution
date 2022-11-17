@@ -14,20 +14,6 @@ import typings.expoConfigTypes.mod.Android
 import typings.expoConfigTypes.mod.IOS
 import typings.expoConfigTypes.mod.Splash
 import typings.expoConfigTypes.mod.Web
-import typings.expoConstants.expoConstantsStrings.android
-import typings.expoConstants.expoConstantsStrings.automatic
-import typings.expoConstants.expoConstantsStrings.dark
-import typings.expoConstants.expoConstantsStrings.default
-import typings.expoConstants.expoConstantsStrings.hermes
-import typings.expoConstants.expoConstantsStrings.hidden
-import typings.expoConstants.expoConstantsStrings.ios
-import typings.expoConstants.expoConstantsStrings.jsc
-import typings.expoConstants.expoConstantsStrings.landscape
-import typings.expoConstants.expoConstantsStrings.light
-import typings.expoConstants.expoConstantsStrings.portrait
-import typings.expoConstants.expoConstantsStrings.public
-import typings.expoConstants.expoConstantsStrings.unlisted
-import typings.expoConstants.expoConstantsStrings.web
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -185,7 +171,7 @@ object anon {
     /**
       * Specifies the JavaScript engine for apps. Supported only on EAS Build. Defaults to `jsc`. Valid values: `hermes`, `jsc`.
       */
-    var jsEngine: js.UndefOr[hermes | jsc] = js.undefined
+    var jsEngine: js.UndefOr["hermes" | "jsc"] = js.undefined
     
     /**
       * Provide overrides by locale for System Dialog prompts like Permissions Boxes
@@ -205,7 +191,7 @@ object anon {
     /**
       * Locks your app to a specific orientation with portrait or landscape. Defaults to no lock. Valid values: `default`, `portrait`, `landscape`
       */
-    var orientation: js.UndefOr[default | portrait | landscape] = js.undefined
+    var orientation: js.UndefOr["default" | "portrait" | "landscape"] = js.undefined
     
     /**
       * The auto generated Expo account name and slug used for services like Notifications and AuthSession proxy. Formatted like `@username/slug`. When unauthenticated, the username is `@anonymous`. For published projects, this value will not change when a project is transferred between accounts or renamed.
@@ -225,7 +211,7 @@ object anon {
     /**
       * Platforms that your project explicitly supports. If not specified, it defaults to `["ios", "android"]`.
       */
-    var platforms: js.UndefOr[js.Array[android | ios | web]] = js.undefined
+    var platforms: js.UndefOr[js.Array["android" | "ios" | "web"]] = js.undefined
     
     /**
       * Config plugins for adding extra functionality to your project. [Learn more](https://docs.expo.dev/guides/config-plugins/).
@@ -240,7 +226,7 @@ object anon {
     /**
       * Defaults to `unlisted`. `unlisted` hides the project from search results. `hidden` restricts access to the project page to only the owner and other users that have been granted access. Valid values: `public`, `unlisted`, `hidden`.
       */
-    var privacy: js.UndefOr[public | unlisted | hidden] = js.undefined
+    var privacy: js.UndefOr["public" | "unlisted" | "hidden"] = js.undefined
     
     /**
       * **Note: Don't use this property unless you are sure what you're doing**
@@ -276,7 +262,7 @@ object anon {
     /**
       * Configuration to force the app to always use the light or dark user-interface appearance, such as "dark mode", or make it automatically adapt to the system preferences. If not provided, defaults to `light`. Requires `expo-system-ui` be installed in your project to work on Android.
       */
-    var userInterfaceStyle: js.UndefOr[light | dark | automatic] = js.undefined
+    var userInterfaceStyle: js.UndefOr["light" | "dark" | "automatic"] = js.undefined
     
     /**
       * Your app version. In addition to this field, you'll also use `ios.buildNumber` and `android.versionCode` — read more about how to version your app [here](https://docs.expo.dev/distribution/app-stores/#versioning-your-app). On iOS this corresponds to `CFBundleShortVersionString`, and on Android, this corresponds to `versionName`. The required format can be found [here](https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring).
@@ -396,7 +382,7 @@ object anon {
       
       inline def setIsDetachedUndefined: Self = StObject.set(x, "isDetached", js.undefined)
       
-      inline def setJsEngine(value: hermes | jsc): Self = StObject.set(x, "jsEngine", value.asInstanceOf[js.Any])
+      inline def setJsEngine(value: "hermes" | "jsc"): Self = StObject.set(x, "jsEngine", value.asInstanceOf[js.Any])
       
       inline def setJsEngineUndefined: Self = StObject.set(x, "jsEngine", js.undefined)
       
@@ -410,7 +396,7 @@ object anon {
       
       inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
       
-      inline def setOrientation(value: default | portrait | landscape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: "default" | "portrait" | "landscape"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
@@ -426,11 +412,11 @@ object anon {
       
       inline def setPackagerOptsUndefined: Self = StObject.set(x, "packagerOpts", js.undefined)
       
-      inline def setPlatforms(value: js.Array[android | ios | web]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
+      inline def setPlatforms(value: js.Array["android" | "ios" | "web"]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
       
       inline def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
       
-      inline def setPlatformsVarargs(value: (android | ios | web)*): Self = StObject.set(x, "platforms", js.Array(value*))
+      inline def setPlatformsVarargs(value: ("android" | "ios" | "web")*): Self = StObject.set(x, "platforms", js.Array(value*))
       
       inline def setPlugins(value: js.Array[String | (js.Array[Any | String]) | (js.Tuple2[String, Any])]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
@@ -442,7 +428,7 @@ object anon {
       
       inline def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
       
-      inline def setPrivacy(value: public | unlisted | hidden): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
+      inline def setPrivacy(value: "public" | "unlisted" | "hidden"): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
       
       inline def setPrivacyUndefined: Self = StObject.set(x, "privacy", js.undefined)
       
@@ -468,7 +454,7 @@ object anon {
       
       inline def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
       
-      inline def setUserInterfaceStyle(value: light | dark | automatic): Self = StObject.set(x, "userInterfaceStyle", value.asInstanceOf[js.Any])
+      inline def setUserInterfaceStyle(value: "light" | "dark" | "automatic"): Self = StObject.set(x, "userInterfaceStyle", value.asInstanceOf[js.Any])
       
       inline def setUserInterfaceStyleUndefined: Self = StObject.set(x, "userInterfaceStyle", js.undefined)
       

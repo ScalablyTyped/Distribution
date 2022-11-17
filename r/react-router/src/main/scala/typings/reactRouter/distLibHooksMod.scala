@@ -56,24 +56,27 @@ object distLibHooksMod {
     matches: js.Array[RouteMatch[String, RouteObject]],
     parentMatches: js.Array[RouteMatch[String, RouteObject]]
   ): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("_renderMatches")(matches.asInstanceOf[js.Any], parentMatches.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
-  inline def renderMatches(matches: Null, parentMatches: js.Array[RouteMatch[String, RouteObject]]): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("_renderMatches")(matches.asInstanceOf[js.Any], parentMatches.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
-  
-  inline def renderMatches_state(
+  @scala.annotation.targetName("renderMatches_state")
+  inline def renderMatches(
     matches: js.Array[RouteMatch[String, RouteObject]],
     parentMatches: js.Array[RouteMatch[String, RouteObject]],
     dataRouterState: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/router.Router['state'] */ js.Any
   ): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("_renderMatches")(matches.asInstanceOf[js.Any], parentMatches.asInstanceOf[js.Any], dataRouterState.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
-  inline def renderMatches_state(
+  @scala.annotation.targetName("renderMatches_state")
+  inline def renderMatches(
     matches: js.Array[RouteMatch[String, RouteObject]],
     parentMatches: Unit,
     dataRouterState: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/router.Router['state'] */ js.Any
   ): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("_renderMatches")(matches.asInstanceOf[js.Any], parentMatches.asInstanceOf[js.Any], dataRouterState.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
-  inline def renderMatches_state(
+  inline def renderMatches(matches: Null, parentMatches: js.Array[RouteMatch[String, RouteObject]]): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("_renderMatches")(matches.asInstanceOf[js.Any], parentMatches.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  @scala.annotation.targetName("renderMatches_state")
+  inline def renderMatches(
     matches: Null,
     parentMatches: js.Array[RouteMatch[String, RouteObject]],
     dataRouterState: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/router.Router['state'] */ js.Any
   ): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("_renderMatches")(matches.asInstanceOf[js.Any], parentMatches.asInstanceOf[js.Any], dataRouterState.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
-  inline def renderMatches_state(
+  @scala.annotation.targetName("renderMatches_state")
+  inline def renderMatches(
     matches: Null,
     parentMatches: Unit,
     dataRouterState: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/router.Router['state'] */ js.Any

@@ -1,23 +1,19 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSQualifiedName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSQualifiedName_
+trait TSQualifiedName_
   extends StObject
-     with BaseNode
-     with TSEntityName
-     with TypeScript {
+     with BaseNode {
   
   var left: TSEntityName
   
   var right: Identifier_
   
   @JSName("type")
-  var type_TSQualifiedName_ : TSQualifiedName
+  var type_TSQualifiedName_ : "TSQualifiedName"
 }
 object TSQualifiedName_ {
   
@@ -33,6 +29,6 @@ object TSQualifiedName_ {
     
     inline def setRight(value: Identifier_): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSQualifiedName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSQualifiedName"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -9,9 +9,6 @@ import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticWIDTHS
 import typings.semanticUiReact.distCommonjsViewsCardCardMod.CardProps
-import typings.semanticUiReact.semanticUiReactStrings.center
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,7 +61,7 @@ object distCommonjsViewsCardCardGroupMod extends Shortcut {
     var stackable: js.UndefOr[Boolean] = js.undefined
     
     /** A card group can adjust its text alignment. */
-    var textAlign: js.UndefOr[center | left | right] = js.undefined
+    var textAlign: js.UndefOr["center" | "left" | "right"] = js.undefined
   }
   object StrictCardGroupProps {
     
@@ -113,7 +110,7 @@ object distCommonjsViewsCardCardGroupMod extends Shortcut {
       
       inline def setStackableUndefined: Self = StObject.set(x, "stackable", js.undefined)
       
-      inline def setTextAlign(value: center | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: "center" | "left" | "right"): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
       inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     }

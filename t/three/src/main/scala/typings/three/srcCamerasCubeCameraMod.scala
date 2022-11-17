@@ -19,7 +19,7 @@ object srcCamerasCubeCameraMod {
     var renderTarget: WebGLCubeRenderTarget = js.native
     
     @JSName("type")
-    var type_CubeCamera: typings.three.threeStrings.CubeCamera = js.native
+    var type_CubeCamera: "CubeCamera" = js.native
     
     def update(renderer: WebGLRenderer, scene: Scene): Unit = js.native
   }

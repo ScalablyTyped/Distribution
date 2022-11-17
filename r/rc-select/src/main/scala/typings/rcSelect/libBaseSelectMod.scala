@@ -2,52 +2,6 @@ package typings.rcSelect
 
 import typings.rcSelect.anon.Source
 import typings.rcSelect.anon.Type
-import typings.rcSelect.libSelectMod._DraftValueType
-import typings.rcSelect.rcSelectStrings.`additions removals`
-import typings.rcSelect.rcSelectStrings.`additions text`
-import typings.rcSelect.rcSelectStrings.`inline`
-import typings.rcSelect.rcSelectStrings.`removals additions`
-import typings.rcSelect.rcSelectStrings.`removals text`
-import typings.rcSelect.rcSelectStrings.`text additions`
-import typings.rcSelect.rcSelectStrings.`text removals`
-import typings.rcSelect.rcSelectStrings.additions
-import typings.rcSelect.rcSelectStrings.all
-import typings.rcSelect.rcSelectStrings.ascending
-import typings.rcSelect.rcSelectStrings.assertive
-import typings.rcSelect.rcSelectStrings.both
-import typings.rcSelect.rcSelectStrings.click
-import typings.rcSelect.rcSelectStrings.copy
-import typings.rcSelect.rcSelectStrings.date
-import typings.rcSelect.rcSelectStrings.descending
-import typings.rcSelect.rcSelectStrings.dialog
-import typings.rcSelect.rcSelectStrings.execute
-import typings.rcSelect.rcSelectStrings.focus
-import typings.rcSelect.rcSelectStrings.grammar
-import typings.rcSelect.rcSelectStrings.grid
-import typings.rcSelect.rcSelectStrings.horizontal
-import typings.rcSelect.rcSelectStrings.link
-import typings.rcSelect.rcSelectStrings.list
-import typings.rcSelect.rcSelectStrings.listbox
-import typings.rcSelect.rcSelectStrings.location
-import typings.rcSelect.rcSelectStrings.ltr
-import typings.rcSelect.rcSelectStrings.menu
-import typings.rcSelect.rcSelectStrings.mixed
-import typings.rcSelect.rcSelectStrings.move
-import typings.rcSelect.rcSelectStrings.none
-import typings.rcSelect.rcSelectStrings.off
-import typings.rcSelect.rcSelectStrings.other
-import typings.rcSelect.rcSelectStrings.page
-import typings.rcSelect.rcSelectStrings.polite
-import typings.rcSelect.rcSelectStrings.popup
-import typings.rcSelect.rcSelectStrings.removals
-import typings.rcSelect.rcSelectStrings.responsive
-import typings.rcSelect.rcSelectStrings.rtl
-import typings.rcSelect.rcSelectStrings.spelling
-import typings.rcSelect.rcSelectStrings.step
-import typings.rcSelect.rcSelectStrings.text
-import typings.rcSelect.rcSelectStrings.time
-import typings.rcSelect.rcSelectStrings.tree
-import typings.rcSelect.rcSelectStrings.vertical
 import typings.rcTrigger.esInterfaceMod.AlignType
 import typings.rcVirtualList.esListMod.ScrollConfig
 import typings.rcVirtualList.esListMod.ScrollTo
@@ -204,7 +158,7 @@ object libBaseSelectMod {
     
     var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -232,7 +186,7 @@ object libBaseSelectMod {
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
-    var maxTagCount: js.UndefOr[Double | responsive] = js.undefined
+    var maxTagCount: js.UndefOr[Double | "responsive"] = js.undefined
     
     var maxTagPlaceholder: js.UndefOr[
         ReactNode | (js.Function1[/* omittedValues */ js.Array[DisplayValueType], ReactNode])
@@ -277,7 +231,7 @@ object libBaseSelectMod {
     /** Selector remove icon */
     var removeIcon: js.UndefOr[RenderNode] = js.undefined
     
-    var showAction: js.UndefOr[js.Array[focus | click]] = js.undefined
+    var showAction: js.UndefOr[js.Array["focus" | "click"]] = js.undefined
     
     var showArrow: js.UndefOr[Boolean] = js.undefined
     
@@ -341,7 +295,7 @@ object libBaseSelectMod {
       
       inline def setDefaultOpenUndefined: Self = StObject.set(x, "defaultOpen", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -395,7 +349,7 @@ object libBaseSelectMod {
       
       inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      inline def setMaxTagCount(value: Double | responsive): Self = StObject.set(x, "maxTagCount", value.asInstanceOf[js.Any])
+      inline def setMaxTagCount(value: Double | "responsive"): Self = StObject.set(x, "maxTagCount", value.asInstanceOf[js.Any])
       
       inline def setMaxTagCountUndefined: Self = StObject.set(x, "maxTagCount", js.undefined)
       
@@ -483,11 +437,11 @@ object libBaseSelectMod {
       
       inline def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
       
-      inline def setShowAction(value: js.Array[focus | click]): Self = StObject.set(x, "showAction", value.asInstanceOf[js.Any])
+      inline def setShowAction(value: js.Array["focus" | "click"]): Self = StObject.set(x, "showAction", value.asInstanceOf[js.Any])
       
       inline def setShowActionUndefined: Self = StObject.set(x, "showAction", js.undefined)
       
-      inline def setShowActionVarargs(value: (focus | click)*): Self = StObject.set(x, "showAction", js.Array(value*))
+      inline def setShowActionVarargs(value: ("focus" | "click")*): Self = StObject.set(x, "showAction", js.Array(value*))
       
       inline def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
       
@@ -532,11 +486,11 @@ object libBaseSelectMod {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -546,7 +500,7 @@ object libBaseSelectMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -554,7 +508,7 @@ object libBaseSelectMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -564,11 +518,11 @@ object libBaseSelectMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -578,7 +532,7 @@ object libBaseSelectMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -586,7 +540,7 @@ object libBaseSelectMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -594,12 +548,12 @@ object libBaseSelectMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -616,7 +570,7 @@ object libBaseSelectMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -636,7 +590,7 @@ object libBaseSelectMod {
     
     var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -662,7 +616,7 @@ object libBaseSelectMod {
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
-    var maxTagCount: js.UndefOr[Double | responsive] = js.undefined
+    var maxTagCount: js.UndefOr[Double | "responsive"] = js.undefined
     
     var maxTagPlaceholder: js.UndefOr[
         ReactNode | (js.Function1[/* omittedValues */ js.Array[DisplayValueType], ReactNode])
@@ -706,7 +660,7 @@ object libBaseSelectMod {
     
     var removeIcon: js.UndefOr[RenderNode] = js.undefined
     
-    var showAction: js.UndefOr[js.Array[focus | click]] = js.undefined
+    var showAction: js.UndefOr[js.Array["focus" | "click"]] = js.undefined
     
     var showArrow: js.UndefOr[Boolean] = js.undefined
     
@@ -747,7 +701,7 @@ object libBaseSelectMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -755,7 +709,7 @@ object libBaseSelectMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -775,7 +729,7 @@ object libBaseSelectMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -791,7 +745,7 @@ object libBaseSelectMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -811,7 +765,7 @@ object libBaseSelectMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -819,7 +773,7 @@ object libBaseSelectMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -839,7 +793,7 @@ object libBaseSelectMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -855,7 +809,7 @@ object libBaseSelectMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -871,7 +825,7 @@ object libBaseSelectMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -880,7 +834,7 @@ object libBaseSelectMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -913,7 +867,7 @@ object libBaseSelectMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -955,7 +909,7 @@ object libBaseSelectMod {
       
       inline def setDefaultOpenUndefined: Self = StObject.set(x, "defaultOpen", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -1009,7 +963,7 @@ object libBaseSelectMod {
       
       inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      inline def setMaxTagCount(value: Double | responsive): Self = StObject.set(x, "maxTagCount", value.asInstanceOf[js.Any])
+      inline def setMaxTagCount(value: Double | "responsive"): Self = StObject.set(x, "maxTagCount", value.asInstanceOf[js.Any])
       
       inline def setMaxTagCountUndefined: Self = StObject.set(x, "maxTagCount", js.undefined)
       
@@ -1097,11 +1051,11 @@ object libBaseSelectMod {
       
       inline def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
       
-      inline def setShowAction(value: js.Array[focus | click]): Self = StObject.set(x, "showAction", value.asInstanceOf[js.Any])
+      inline def setShowAction(value: js.Array["focus" | "click"]): Self = StObject.set(x, "showAction", value.asInstanceOf[js.Any])
       
       inline def setShowActionUndefined: Self = StObject.set(x, "showAction", js.undefined)
       
-      inline def setShowActionVarargs(value: (focus | click)*): Self = StObject.set(x, "showAction", js.Array(value*))
+      inline def setShowActionVarargs(value: ("focus" | "click")*): Self = StObject.set(x, "showAction", js.Array(value*))
       
       inline def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
       
@@ -1175,9 +1129,7 @@ object libBaseSelectMod {
     var value: Any = js.native
   }
   
-  trait DisplayValueType
-    extends StObject
-       with _DraftValueType {
+  trait DisplayValueType extends StObject {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -1220,38 +1172,27 @@ object libBaseSelectMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcSelect.rcSelectStrings.multiple
-    - typings.rcSelect.rcSelectStrings.tags
-    - typings.rcSelect.rcSelectStrings.combobox
-  */
-  trait Mode extends StObject
   object Mode {
     
-    inline def combobox: typings.rcSelect.rcSelectStrings.combobox = "combobox".asInstanceOf[typings.rcSelect.rcSelectStrings.combobox]
+    inline def combobox: "combobox" = "combobox".asInstanceOf["combobox"]
     
-    inline def multiple: typings.rcSelect.rcSelectStrings.multiple = "multiple".asInstanceOf[typings.rcSelect.rcSelectStrings.multiple]
+    inline def multiple: "multiple" = "multiple".asInstanceOf["multiple"]
     
-    inline def tags: typings.rcSelect.rcSelectStrings.tags = "tags".asInstanceOf[typings.rcSelect.rcSelectStrings.tags]
+    inline def tags: "tags" = "tags".asInstanceOf["tags"]
   }
+  type Mode = "multiple" | "tags" | "combobox"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcSelect.rcSelectStrings.bottomLeft
-    - typings.rcSelect.rcSelectStrings.bottomRight
-    - typings.rcSelect.rcSelectStrings.topLeft
-    - typings.rcSelect.rcSelectStrings.topRight
-  */
-  trait Placement extends StObject
   object Placement {
     
-    inline def bottomLeft: typings.rcSelect.rcSelectStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.rcSelect.rcSelectStrings.bottomLeft]
+    inline def bottomLeft: "bottomLeft" = "bottomLeft".asInstanceOf["bottomLeft"]
     
-    inline def bottomRight: typings.rcSelect.rcSelectStrings.bottomRight = "bottomRight".asInstanceOf[typings.rcSelect.rcSelectStrings.bottomRight]
+    inline def bottomRight: "bottomRight" = "bottomRight".asInstanceOf["bottomRight"]
     
-    inline def topLeft: typings.rcSelect.rcSelectStrings.topLeft = "topLeft".asInstanceOf[typings.rcSelect.rcSelectStrings.topLeft]
+    inline def topLeft: "topLeft" = "topLeft".asInstanceOf["topLeft"]
     
-    inline def topRight: typings.rcSelect.rcSelectStrings.topRight = "topRight".asInstanceOf[typings.rcSelect.rcSelectStrings.topRight]
+    inline def topRight: "topRight" = "topRight".asInstanceOf["topRight"]
   }
+  type Placement = "bottomLeft" | "bottomRight" | "topLeft" | "topRight"
   
   type RawValueType = String | Double
   

@@ -1,14 +1,11 @@
 package typings.angularCompiler.anon
 
-import typings.angularCompiler.mod.JSDocTag
 import typings.angularCompiler.mod.JSDocTagName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TagName
-  extends StObject
-     with JSDocTag {
+trait TagName extends StObject {
   
   var tagName: JSDocTagName | String
   

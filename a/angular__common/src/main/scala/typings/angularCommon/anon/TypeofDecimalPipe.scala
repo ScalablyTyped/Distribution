@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.number
 import typings.angularCommon.mod.DecimalPipe
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
@@ -17,5 +15,5 @@ trait TypeofDecimalPipe
   
   var ɵfac: ɵɵFactoryDeclaration[DecimalPipe, scala.Nothing] = js.native
   
-  var ɵpipe: ɵɵPipeDeclaration[DecimalPipe, number, `true`] = js.native
+  var ɵpipe: ɵɵPipeDeclaration[DecimalPipe, "number", true] = js.native
 }

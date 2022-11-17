@@ -2,11 +2,6 @@ package typings.node.childProcessMod
 
 import typings.node.nodeColonstreamMod.Readable
 import typings.node.nodeColonstreamMod.Writable
-import typings.node.nodeStrings.close
-import typings.node.nodeStrings.disconnect
-import typings.node.nodeStrings.error
-import typings.node.nodeStrings.exit
-import typings.node.nodeStrings.message
 import typings.node.processMod.global.NodeJS.Signals
 import typings.node.streamMod.Pipe
 import org.scalablytyped.runtime.StObject
@@ -25,6 +20,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ChildProcess () extends StObject {
   
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_spawn")
+  def addListener(event: "spawn", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_disconnect")
+  def addListener(event: "disconnect", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_error")
+  def addListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_message")
+  def addListener(
+    event: "message",
+    listener: js.Function2[/* message */ Serializable, /* sendHandle */ SendHandle, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_close")
+  def addListener(
+    event: "close",
+    listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_exit")
+  def addListener(event: "exit", listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
   /**
     * events.EventEmitter
     * 1. close
@@ -35,21 +54,6 @@ open class ChildProcess () extends StObject {
     * 6. spawn
     */
   def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_close(event: close, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_exit(event: exit, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_message(
-    event: message,
-    listener: js.Function2[/* message */ Serializable, /* sendHandle */ SendHandle, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_spawn(event: typings.node.nodeStrings.spawn, listener: js.Function0[Unit]): this.type = js.native
   
   /**
     * The `subprocess.channel` property is a reference to the child's IPC channel. If
@@ -82,32 +86,44 @@ open class ChildProcess () extends StObject {
     */
   def disconnect(): Unit = js.native
   
+  @JSName("emit")
+  @scala.annotation.targetName("emit_disconnect")
+  def emit(event: "disconnect"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_close")
+  def emit(event: "close"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_exit")
+  def emit(event: "exit"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_close")
+  def emit(event: "close", code: Double): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_exit")
+  def emit(event: "exit", code: Double): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_exit")
+  def emit(event: "exit", code: Double, signal: Signals): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_close")
+  def emit(event: "close", code: Double, signal: Signals): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_close")
+  def emit(event: "close", code: Null, signal: Signals): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_exit")
+  def emit(event: "exit", code: Null, signal: Signals): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_error")
+  def emit(event: "error", err: js.Error): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_spawn")
+  def emit(event: "spawn", listener: js.Function0[Unit]): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_message")
+  def emit(event: "message", message: Serializable, sendHandle: SendHandle): Boolean = js.native
   def emit(event: String, args: Any*): Boolean = js.native
   def emit(event: js.Symbol, args: Any*): Boolean = js.native
-  @JSName("emit")
-  def emit_close(event: close): Boolean = js.native
-  @JSName("emit")
-  def emit_close(event: close, code: Double): Boolean = js.native
-  @JSName("emit")
-  def emit_close(event: close, code: Double, signal: Signals): Boolean = js.native
-  @JSName("emit")
-  def emit_close(event: close, code: Null, signal: Signals): Boolean = js.native
-  @JSName("emit")
-  def emit_disconnect(event: disconnect): Boolean = js.native
-  @JSName("emit")
-  def emit_error(event: error, err: js.Error): Boolean = js.native
-  @JSName("emit")
-  def emit_exit(event: exit): Boolean = js.native
-  @JSName("emit")
-  def emit_exit(event: exit, code: Double): Boolean = js.native
-  @JSName("emit")
-  def emit_exit(event: exit, code: Double, signal: Signals): Boolean = js.native
-  @JSName("emit")
-  def emit_exit(event: exit, code: Null, signal: Signals): Boolean = js.native
-  @JSName("emit")
-  def emit_message(event: message, message: Serializable, sendHandle: SendHandle): Boolean = js.native
-  @JSName("emit")
-  def emit_spawn(event: typings.node.nodeStrings.spawn, listener: js.Function0[Unit]): Boolean = js.native
   
   /**
     * The `subprocess.exitCode` property indicates the exit code of the child process.
@@ -186,39 +202,57 @@ open class ChildProcess () extends StObject {
     */
   val killed: Boolean = js.native
   
+  @JSName("on")
+  @scala.annotation.targetName("on_spawn")
+  def on(event: "spawn", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_disconnect")
+  def on(event: "disconnect", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_error")
+  def on(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_close")
+  def on(
+    event: "close",
+    listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]
+  ): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_message")
+  def on(
+    event: "message",
+    listener: js.Function2[/* message */ Serializable, /* sendHandle */ SendHandle, Unit]
+  ): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_exit")
+  def on(event: "exit", listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
   def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("on")
-  def on_close(event: close, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
-  @JSName("on")
-  def on_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("on")
-  def on_exit(event: exit, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
-  @JSName("on")
-  def on_message(
-    event: message,
-    listener: js.Function2[/* message */ Serializable, /* sendHandle */ SendHandle, Unit]
-  ): this.type = js.native
-  @JSName("on")
-  def on_spawn(event: typings.node.nodeStrings.spawn, listener: js.Function0[Unit]): this.type = js.native
   
-  def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("once")
-  def once_close(event: close, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_spawn")
+  def once(event: "spawn", listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
-  def once_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("once_disconnect")
+  def once(event: "disconnect", listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
-  def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_error")
+  def once(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("once")
-  def once_exit(event: exit, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_exit")
+  def once(event: "exit", listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
   @JSName("once")
-  def once_message(
-    event: message,
+  @scala.annotation.targetName("once_message")
+  def once(
+    event: "message",
     listener: js.Function2[/* message */ Serializable, /* sendHandle */ SendHandle, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_spawn(event: typings.node.nodeStrings.spawn, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("once_close")
+  def once(
+    event: "close",
+    listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]
+  ): this.type = js.native
+  def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   
   /**
     * Returns the process identifier (PID) of the child process. If the child process
@@ -236,39 +270,57 @@ open class ChildProcess () extends StObject {
     */
   val pid: js.UndefOr[Double] = js.native
   
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_spawn")
+  def prependListener(event: "spawn", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_disconnect")
+  def prependListener(event: "disconnect", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_error")
+  def prependListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_message")
+  def prependListener(
+    event: "message",
+    listener: js.Function2[/* message */ Serializable, /* sendHandle */ SendHandle, Unit]
+  ): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_close")
+  def prependListener(
+    event: "close",
+    listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]
+  ): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_exit")
+  def prependListener(event: "exit", listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
   def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_close(event: close, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_exit(event: exit, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_message(
-    event: message,
-    listener: js.Function2[/* message */ Serializable, /* sendHandle */ SendHandle, Unit]
-  ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_spawn(event: typings.node.nodeStrings.spawn, listener: js.Function0[Unit]): this.type = js.native
   
-  def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_close(event: close, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_disconnect")
+  def prependOnceListener(event: "disconnect", listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_spawn")
+  def prependOnceListener(event: "spawn", listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_error")
+  def prependOnceListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_exit(event: exit, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_exit")
+  def prependOnceListener(event: "exit", listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_message(
-    event: message,
+  @scala.annotation.targetName("prependOnceListener_message")
+  def prependOnceListener(
+    event: "message",
     listener: js.Function2[/* message */ Serializable, /* sendHandle */ SendHandle, Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_spawn(event: typings.node.nodeStrings.spawn, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_close")
+  def prependOnceListener(
+    event: "close",
+    listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]
+  ): this.type = js.native
+  def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   
   /**
     * Calling `subprocess.ref()` after making a call to `subprocess.unref()` will

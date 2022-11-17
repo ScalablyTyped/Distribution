@@ -1,6 +1,5 @@
 package typings.leaflet.mod
 
-import typings.leaflet.leafletBooleans.`false`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ trait DivIconOptions
   
   var bgPos: js.UndefOr[PointExpression] = js.undefined
   
-  var html: js.UndefOr[String | HTMLElement | `false`] = js.undefined
+  var html: js.UndefOr[String | HTMLElement | false] = js.undefined
 }
 object DivIconOptions {
   
@@ -27,7 +26,7 @@ object DivIconOptions {
     
     inline def setBgPosUndefined: Self = StObject.set(x, "bgPos", js.undefined)
     
-    inline def setHtml(value: String | HTMLElement | `false`): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String | HTMLElement | false): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
   }

@@ -1,19 +1,15 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSUnionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSUnionType__
   extends StObject
-     with BaseNode
-     with Node
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   @JSName("type")
-  var type_TSUnionType__ : TSUnionType
+  var type_TSUnionType__ : "TSUnionType"
   
   var types: js.Array[TSType]
 }
@@ -27,7 +23,7 @@ object TSUnionType__ {
   
   extension [Self <: TSUnionType__](x: Self) {
     
-    inline def setType(value: TSUnionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSUnionType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypes(value: js.Array[TSType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     

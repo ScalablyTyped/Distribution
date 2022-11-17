@@ -1,14 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.`landscape-left`
-import typings.reactNative.reactNativeStrings.`landscape-right`
-import typings.reactNative.reactNativeStrings.`portrait-upside-down`
-import typings.reactNative.reactNativeStrings.formSheet
-import typings.reactNative.reactNativeStrings.fullScreen
-import typings.reactNative.reactNativeStrings.landscape
-import typings.reactNative.reactNativeStrings.overFullScreen
-import typings.reactNative.reactNativeStrings.pageSheet
-import typings.reactNative.reactNativeStrings.portrait
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +20,7 @@ trait ModalPropsIOS extends StObject {
   /**
     * The `presentationStyle` determines the style of modal to show
     */
-  var presentationStyle: js.UndefOr[fullScreen | pageSheet | formSheet | overFullScreen] = js.undefined
+  var presentationStyle: js.UndefOr["fullScreen" | "pageSheet" | "formSheet" | "overFullScreen"] = js.undefined
   
   /**
     * The `supportedOrientations` prop allows the modal to be rotated to any of the specified orientations.
@@ -37,7 +28,7 @@ trait ModalPropsIOS extends StObject {
     */
   var supportedOrientations: js.UndefOr[
     js.Array[
-      portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
+      "portrait" | "portrait-upside-down" | "landscape" | "landscape-left" | "landscape-right"
     ]
   ] = js.undefined
 }
@@ -58,18 +49,18 @@ object ModalPropsIOS {
     
     inline def setOnOrientationChangeUndefined: Self = StObject.set(x, "onOrientationChange", js.undefined)
     
-    inline def setPresentationStyle(value: fullScreen | pageSheet | formSheet | overFullScreen): Self = StObject.set(x, "presentationStyle", value.asInstanceOf[js.Any])
+    inline def setPresentationStyle(value: "fullScreen" | "pageSheet" | "formSheet" | "overFullScreen"): Self = StObject.set(x, "presentationStyle", value.asInstanceOf[js.Any])
     
     inline def setPresentationStyleUndefined: Self = StObject.set(x, "presentationStyle", js.undefined)
     
     inline def setSupportedOrientations(
       value: js.Array[
-          portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
+          "portrait" | "portrait-upside-down" | "landscape" | "landscape-left" | "landscape-right"
         ]
     ): Self = StObject.set(x, "supportedOrientations", value.asInstanceOf[js.Any])
     
     inline def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
     
-    inline def setSupportedOrientationsVarargs(value: (portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`)*): Self = StObject.set(x, "supportedOrientations", js.Array(value*))
+    inline def setSupportedOrientationsVarargs(value: ("portrait" | "portrait-upside-down" | "landscape" | "landscape-left" | "landscape-right")*): Self = StObject.set(x, "supportedOrientations", js.Array(value*))
   }
 }

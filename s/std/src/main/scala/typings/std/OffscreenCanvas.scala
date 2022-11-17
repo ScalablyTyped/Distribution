@@ -1,7 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.contextlost
-import typings.std.stdStrings.contextrestored
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,37 +7,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OffscreenCanvas
   extends StObject
-     with EventTarget
-     with CanvasImageSource
-     with TexImageSource
-     with _Transferable {
+     with EventTarget {
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_contextlost(`type`: contextlost, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_contextlost")
+  def addEventListener(`type`: "contextlost", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_contextlost(
-    `type`: contextlost,
+  @scala.annotation.targetName("addEventListener_contextrestored")
+  def addEventListener(`type`: "contextrestored", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_contextlost")
+  def addEventListener(
+    `type`: "contextlost",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_contextlost(
-    `type`: contextlost,
+  @scala.annotation.targetName("addEventListener_contextrestored")
+  def addEventListener(
+    `type`: "contextrestored",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_contextlost")
+  def addEventListener(
+    `type`: "contextlost",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_contextrestored(`type`: contextrestored, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_contextrestored(
-    `type`: contextrestored,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_contextrestored(
-    `type`: contextrestored,
+  @scala.annotation.targetName("addEventListener_contextrestored")
+  def addEventListener(
+    `type`: "contextrestored",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -69,32 +70,38 @@ trait OffscreenCanvas
   /* standard dom */
   var oncontextrestored: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_contextrestored")
+  def removeEventListener(`type`: "contextrestored", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_contextlost(`type`: contextlost, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_contextlost")
+  def removeEventListener(`type`: "contextlost", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_contextlost(
-    `type`: contextlost,
+  @scala.annotation.targetName("removeEventListener_contextlost")
+  def removeEventListener(
+    `type`: "contextlost",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_contextlost(
-    `type`: contextlost,
+  @scala.annotation.targetName("removeEventListener_contextrestored")
+  def removeEventListener(
+    `type`: "contextrestored",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_contextrestored")
+  def removeEventListener(
+    `type`: "contextrestored",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_contextrestored(`type`: contextrestored, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_contextrestored(
-    `type`: contextrestored,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_contextrestored(
-    `type`: contextrestored,
+  @scala.annotation.targetName("removeEventListener_contextlost")
+  def removeEventListener(
+    `type`: "contextlost",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

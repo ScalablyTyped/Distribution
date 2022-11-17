@@ -1,16 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSImportType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSImportType__
   extends StObject
-     with BaseNode
-     with Node
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   var argument: StringLiteral_
   
@@ -19,7 +15,7 @@ trait TSImportType__
   var typeParameters: js.UndefOr[TSTypeParameterInstantiation__ | Null] = js.undefined
   
   @JSName("type")
-  var type_TSImportType__ : TSImportType
+  var type_TSImportType__ : "TSImportType"
 }
 object TSImportType__ {
   
@@ -39,7 +35,7 @@ object TSImportType__ {
     
     inline def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
     
-    inline def setType(value: TSImportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSImportType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TSTypeParameterInstantiation__): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

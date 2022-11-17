@@ -2,8 +2,6 @@ package typings.node.http2Mod
 
 import typings.node.nodeColonstreamMod.Duplex
 import typings.node.nodeColonurlMod.URL
-import typings.node.nodeStrings.httpColon
-import typings.node.nodeStrings.httpsColon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +15,7 @@ trait ClientSessionOptions
   
   var maxReservedRemoteStreams: js.UndefOr[Double] = js.undefined
   
-  var protocol: js.UndefOr[httpColon | httpsColon] = js.undefined
+  var protocol: js.UndefOr["http:" | "https:"] = js.undefined
 }
 object ClientSessionOptions {
   
@@ -36,7 +34,7 @@ object ClientSessionOptions {
     
     inline def setMaxReservedRemoteStreamsUndefined: Self = StObject.set(x, "maxReservedRemoteStreams", js.undefined)
     
-    inline def setProtocol(value: httpColon | httpsColon): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: "http:" | "https:"): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
   }

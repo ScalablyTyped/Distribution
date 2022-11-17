@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.imageListItemImageListItemMod.ImageListItemTypeMap
-import typings.materialUiCore.materialUiCoreStrings.li
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,10 +21,10 @@ object imageListItemMod extends Shortcut {
     */
   @JSImport("@material-ui/core/ImageListItem", JSImport.Default)
   @js.native
-  val default: OverridableComponent[ImageListItemTypeMap[js.Object, li]] = js.native
+  val default: OverridableComponent[ImageListItemTypeMap[js.Object, "li"]] = js.native
   
-  type _To = OverridableComponent[ImageListItemTypeMap[js.Object, li]]
+  type _To = OverridableComponent[ImageListItemTypeMap[js.Object, "li"]]
   
   /* This means you don't have to write `default`, but can instead just say `imageListItemMod.foo` */
-  override def _to: OverridableComponent[ImageListItemTypeMap[js.Object, li]] = default
+  override def _to: OverridableComponent[ImageListItemTypeMap[js.Object, "li"]] = default
 }

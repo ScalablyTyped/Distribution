@@ -7,24 +7,13 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.reactNativeGestureHandler.anon.ACTIVE
+import typings.reactNativeGestureHandler.anon.PartialRecordleftrighttop
+import typings.reactNativeGestureHandler.anon.Recordheightbottomnumber
+import typings.reactNativeGestureHandler.anon.Recordheighttopnumber
+import typings.reactNativeGestureHandler.anon.Recordwidthleftnumber
+import typings.reactNativeGestureHandler.anon.Recordwidthrightnumber
 import typings.reactNativeGestureHandler.libTypescriptTouchEventTypeMod.TouchEventType
 import typings.reactNativeGestureHandler.libTypescriptTypeUtilsMod.ValueOf
-import typings.reactNativeGestureHandler.libTypescriptWebInterfacesMod._ConfigArgs
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.cancelsTouchesInView
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.enabled
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.hitSlop
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.id
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onActivated
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onBegan
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onCancelled
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onEnded
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onFailed
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onGestureEvent
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onHandlerStateChange
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.shouldCancelWhenOutside
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.simultaneousHandlers
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.userSelect
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.waitFor
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,21 +28,21 @@ object libTypescriptHandlersGestureHandlerCommonMod {
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestureHandlerCommon", "baseGestureHandlerProps")
   @js.native
   val baseGestureHandlerProps: js.Tuple15[
-    id, 
-    enabled, 
-    shouldCancelWhenOutside, 
-    hitSlop, 
-    cancelsTouchesInView, 
-    userSelect, 
-    waitFor, 
-    simultaneousHandlers, 
-    onBegan, 
-    onFailed, 
-    onCancelled, 
-    onActivated, 
-    onEnded, 
-    onGestureEvent, 
-    onHandlerStateChange
+    "id", 
+    "enabled", 
+    "shouldCancelWhenOutside", 
+    "hitSlop", 
+    "cancelsTouchesInView", 
+    "userSelect", 
+    "waitFor", 
+    "simultaneousHandlers", 
+    "onBegan", 
+    "onFailed", 
+    "onCancelled", 
+    "onActivated", 
+    "onEnded", 
+    "onGestureEvent", 
+    "onHandlerStateChange"
   ] = js.native
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestureHandlerCommon", "baseGestureHandlerWithMonitorProps")
@@ -342,15 +331,7 @@ object libTypescriptHandlersGestureHandlerCommonMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - scala.Double
-    - typings.reactNativeGestureHandler.anon.PartialRecordleftrighttop
-    - typings.reactNativeGestureHandler.anon.Recordwidthleftnumber
-    - typings.reactNativeGestureHandler.anon.Recordwidthrightnumber
-    - typings.reactNativeGestureHandler.anon.Recordheighttopnumber
-    - typings.reactNativeGestureHandler.anon.Recordheightbottomnumber
-  */
-  type HitSlop = _HitSlop | Double
+  type HitSlop = Double | PartialRecordleftrighttop | Recordwidthleftnumber | Recordwidthrightnumber | Recordheighttopnumber | Recordheightbottomnumber
   
   trait TouchData extends StObject {
     
@@ -385,49 +366,13 @@ object libTypescriptHandlersGestureHandlerCommonMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.none
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.auto
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.text
-  */
-  trait UserSelect
-    extends StObject
-       with _ConfigArgs
   object UserSelect {
     
-    inline def auto: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.auto = "auto".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.auto]
+    inline def auto: "auto" = "auto".asInstanceOf["auto"]
     
-    inline def none: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.none = "none".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.none]
+    inline def none: "none" = "none".asInstanceOf["none"]
     
-    inline def text: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.text = "text".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.text]
+    inline def text: "text" = "text".asInstanceOf["text"]
   }
-  
-  trait _HitSlop extends StObject
-  object _HitSlop {
-    
-    inline def PartialRecordleftrighttop(): typings.reactNativeGestureHandler.anon.PartialRecordleftrighttop = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.reactNativeGestureHandler.anon.PartialRecordleftrighttop]
-    }
-    
-    inline def Recordheightbottomnumber(bottom: Double, height: Double): typings.reactNativeGestureHandler.anon.Recordheightbottomnumber = {
-      val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.reactNativeGestureHandler.anon.Recordheightbottomnumber]
-    }
-    
-    inline def Recordheighttopnumber(height: Double, top: Double): typings.reactNativeGestureHandler.anon.Recordheighttopnumber = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.reactNativeGestureHandler.anon.Recordheighttopnumber]
-    }
-    
-    inline def Recordwidthleftnumber(left: Double, width: Double): typings.reactNativeGestureHandler.anon.Recordwidthleftnumber = {
-      val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.reactNativeGestureHandler.anon.Recordwidthleftnumber]
-    }
-    
-    inline def Recordwidthrightnumber(right: Double, width: Double): typings.reactNativeGestureHandler.anon.Recordwidthrightnumber = {
-      val __obj = js.Dynamic.literal(right = right.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.reactNativeGestureHandler.anon.Recordwidthrightnumber]
-    }
-  }
+  type UserSelect = "none" | "auto" | "text"
 }

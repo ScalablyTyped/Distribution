@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CodeKeywordDefinition
   extends StObject
-     with KeywordDef
-     with KeywordDefinition {
+     with KeywordDef {
   
   def code(cxt: KeywordCxt): Unit = js.native
   def code(cxt: KeywordCxt, ruleType: String): Unit = js.native

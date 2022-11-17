@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ContinueStatement
   extends StObject
-     with Statement
-     with BreakOrContinueStatement
-     with HasJSDoc {
+     with Statement {
   
   @JSName("kind")
   val kind_ContinueStatement: typings.typescript.mod.SyntaxKind.ContinueStatement = js.native

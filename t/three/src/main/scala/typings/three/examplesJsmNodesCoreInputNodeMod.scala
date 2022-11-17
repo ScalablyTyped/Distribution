@@ -2,7 +2,6 @@ package typings.three
 
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeTypeOption
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeValueOption
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object examplesJsmNodesCoreInputNodeMod {
     
     def getInputType(builder: typings.three.examplesJsmNodesCoreNodeBuilderMod.default): String | Null = js.native
     
-    var isInputNode: `true` = js.native
+    var isInputNode: true = js.native
     
     var value: NodeValueOption = js.native
   }

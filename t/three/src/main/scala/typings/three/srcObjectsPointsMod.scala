@@ -5,7 +5,6 @@ import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcMaterialsMaterialMod.Material
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object srcObjectsPointsMod {
       */
     var geometry: TGeometry = js.native
     
-    val isPoints: `true` = js.native
+    val isPoints: true = js.native
     
     /**
       * An instance of Material, defining the object's appearance. Default is a PointsMaterial with randomised colour.
@@ -40,7 +39,7 @@ object srcObjectsPointsMod {
     var morphTargetInfluences: js.UndefOr[js.Array[Double]] = js.native
     
     @JSName("type")
-    var type_Points: typings.three.threeStrings.Points = js.native
+    var type_Points: "Points" = js.native
     
     def updateMorphTargets(): Unit = js.native
   }

@@ -1,7 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.bar
-import typings.reactNative.reactNativeStrings.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +26,7 @@ trait ProgressViewIOSProps
   /**
     * The progress bar style.
     */
-  var progressViewStyle: js.UndefOr[default | bar] = js.undefined
+  var progressViewStyle: js.UndefOr["default" | "bar"] = js.undefined
   
   /**
     * A stretchable image to display behind the progress bar.
@@ -63,7 +61,7 @@ object ProgressViewIOSProps {
     
     inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    inline def setProgressViewStyle(value: default | bar): Self = StObject.set(x, "progressViewStyle", value.asInstanceOf[js.Any])
+    inline def setProgressViewStyle(value: "default" | "bar"): Self = StObject.set(x, "progressViewStyle", value.asInstanceOf[js.Any])
     
     inline def setProgressViewStyleUndefined: Self = StObject.set(x, "progressViewStyle", js.undefined)
     

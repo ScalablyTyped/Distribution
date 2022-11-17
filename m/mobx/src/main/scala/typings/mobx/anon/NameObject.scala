@@ -1,21 +1,17 @@
 package typings.mobx.anon
 
-import typings.mobx.distTypesObservableobjectMod.IObjectWillChange
-import typings.mobx.mobxStrings.remove
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NameObject[T]
-  extends StObject
-     with IObjectWillChange[T] {
+trait NameObject[T] extends StObject {
   
   var name: PropertyKey
   
   var `object`: T
   
-  var `type`: remove
+  var `type`: "remove"
 }
 object NameObject {
   
@@ -32,6 +28,6 @@ object NameObject {
     
     inline def setObject(value: T): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    inline def setType(value: remove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "remove"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

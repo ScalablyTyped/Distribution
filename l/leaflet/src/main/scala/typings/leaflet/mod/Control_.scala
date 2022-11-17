@@ -2,7 +2,6 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.leaflet.anon.InstantiableT
-import typings.leaflet.leafletBooleans.`false`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -49,9 +48,10 @@ object Control_ {
     
     def removeAttribution(text: String): this.type = js.native
     
-    def setPrefix(prefix: String): this.type = js.native
     @JSName("setPrefix")
-    def setPrefix_false(prefix: `false`): this.type = js.native
+    @scala.annotation.targetName("setPrefix_false")
+    def setPrefix(prefix: false): this.type = js.native
+    def setPrefix(prefix: String): this.type = js.native
   }
   
   @JSImport("leaflet", "Control.Layers")

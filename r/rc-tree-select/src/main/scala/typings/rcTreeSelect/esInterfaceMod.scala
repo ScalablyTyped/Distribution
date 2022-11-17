@@ -340,23 +340,17 @@ object esInterfaceMod {
   
   type RawValueType = String | Double
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcTreeSelect.rcTreeSelectStrings.option
-    - typings.rcTreeSelect.rcTreeSelectStrings.selection
-    - typings.rcTreeSelect.rcTreeSelectStrings.input
-    - typings.rcTreeSelect.rcTreeSelectStrings.clear
-  */
-  trait SelectSource extends StObject
   object SelectSource {
     
-    inline def clear: typings.rcTreeSelect.rcTreeSelectStrings.clear = "clear".asInstanceOf[typings.rcTreeSelect.rcTreeSelectStrings.clear]
+    inline def clear: "clear" = "clear".asInstanceOf["clear"]
     
-    inline def input: typings.rcTreeSelect.rcTreeSelectStrings.input = "input".asInstanceOf[typings.rcTreeSelect.rcTreeSelectStrings.input]
+    inline def input: "input" = "input".asInstanceOf["input"]
     
-    inline def option: typings.rcTreeSelect.rcTreeSelectStrings.option = "option".asInstanceOf[typings.rcTreeSelect.rcTreeSelectStrings.option]
+    inline def option: "option" = "option".asInstanceOf["option"]
     
-    inline def selection: typings.rcTreeSelect.rcTreeSelectStrings.selection = "selection".asInstanceOf[typings.rcTreeSelect.rcTreeSelectStrings.selection]
+    inline def selection: "selection" = "selection".asInstanceOf["selection"]
   }
+  type SelectSource = "option" | "selection" | "input" | "clear"
   
   trait SimpleModeConfig extends StObject {
     

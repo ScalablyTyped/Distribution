@@ -27,7 +27,6 @@ import typings.three.srcRenderersWebxrWebXRControllerMod.XRGripSpace
 import typings.three.srcRenderersWebxrWebXRControllerMod.XRHandSpace
 import typings.three.srcRenderersWebxrWebXRControllerMod.XRTargetRaySpace
 import typings.three.srcScenesSceneMod.Scene
-import typings.three.threeBooleans.`true`
 import typings.webxr.XRFrame
 import typings.webxr.XRFrameRequestCallback
 import typings.webxr.XRProjectionLayer
@@ -231,13 +230,13 @@ object srcRenderersWebxrWebXRManagerMod {
     
     var id: Double
     
-    var isArrayCamera: `true`
+    var isArrayCamera: true
     
-    var isCamera: `true`
+    var isCamera: true
     
-    var isObject3D: `true`
+    var isObject3D: true
     
-    var isPerspectiveCamera: `true`
+    var isPerspectiveCamera: true
     
     var layers: Layers
     
@@ -437,7 +436,7 @@ object srcRenderersWebxrWebXRManagerMod {
     @JSName("traverse")
     var traverse_Original: js.Function1[/* callback */ js.Function1[/* object */ Object3D[Event], Any], Unit]
     
-    var `type`: typings.three.threeStrings.PerspectiveCamera
+    var `type`: "PerspectiveCamera"
     
     var up: Vector3
     
@@ -671,13 +670,13 @@ object srcRenderersWebxrWebXRManagerMod {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setIsArrayCamera(value: `true`): Self = StObject.set(x, "isArrayCamera", value.asInstanceOf[js.Any])
+      inline def setIsArrayCamera(value: true): Self = StObject.set(x, "isArrayCamera", value.asInstanceOf[js.Any])
       
-      inline def setIsCamera(value: `true`): Self = StObject.set(x, "isCamera", value.asInstanceOf[js.Any])
+      inline def setIsCamera(value: true): Self = StObject.set(x, "isCamera", value.asInstanceOf[js.Any])
       
-      inline def setIsObject3D(value: `true`): Self = StObject.set(x, "isObject3D", value.asInstanceOf[js.Any])
+      inline def setIsObject3D(value: true): Self = StObject.set(x, "isObject3D", value.asInstanceOf[js.Any])
       
-      inline def setIsPerspectiveCamera(value: `true`): Self = StObject.set(x, "isPerspectiveCamera", value.asInstanceOf[js.Any])
+      inline def setIsPerspectiveCamera(value: true): Self = StObject.set(x, "isPerspectiveCamera", value.asInstanceOf[js.Any])
       
       inline def setLayers(value: Layers): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
@@ -787,7 +786,7 @@ object srcRenderersWebxrWebXRManagerMod {
       
       inline def setTraverseVisible(value: /* callback */ js.Function1[/* object */ Object3D[Event], Any] => Unit): Self = StObject.set(x, "traverseVisible", js.Any.fromFunction1(value))
       
-      inline def setType(value: typings.three.threeStrings.PerspectiveCamera): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "PerspectiveCamera"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setUp(value: Vector3): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.resourcetimingbufferfull
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +12,22 @@ trait Performance
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_resourcetimingbufferfull(
-    `type`: resourcetimingbufferfull,
+  @scala.annotation.targetName("addEventListener_resourcetimingbufferfull")
+  def addEventListener(
+    `type`: "resourcetimingbufferfull",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_resourcetimingbufferfull(
-    `type`: resourcetimingbufferfull,
+  @scala.annotation.targetName("addEventListener_resourcetimingbufferfull")
+  def addEventListener(
+    `type`: "resourcetimingbufferfull",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_resourcetimingbufferfull(
-    `type`: resourcetimingbufferfull,
+  @scala.annotation.targetName("addEventListener_resourcetimingbufferfull")
+  def addEventListener(
+    `type`: "resourcetimingbufferfull",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -82,19 +84,22 @@ trait Performance
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_resourcetimingbufferfull(
-    `type`: resourcetimingbufferfull,
+  @scala.annotation.targetName("removeEventListener_resourcetimingbufferfull")
+  def removeEventListener(
+    `type`: "resourcetimingbufferfull",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_resourcetimingbufferfull(
-    `type`: resourcetimingbufferfull,
+  @scala.annotation.targetName("removeEventListener_resourcetimingbufferfull")
+  def removeEventListener(
+    `type`: "resourcetimingbufferfull",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_resourcetimingbufferfull(
-    `type`: resourcetimingbufferfull,
+  @scala.annotation.targetName("removeEventListener_resourcetimingbufferfull")
+  def removeEventListener(
+    `type`: "resourcetimingbufferfull",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

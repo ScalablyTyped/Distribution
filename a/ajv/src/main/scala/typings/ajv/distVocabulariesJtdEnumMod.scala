@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.`enum`
 import typings.ajv.anon.AllowedValues
 import typings.ajv.distTypesMod.CodeKeywordDefinition
 import typings.ajv.distTypesMod.ErrorObject
@@ -15,7 +14,7 @@ object distVocabulariesJtdEnumMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type JTDEnumError = ErrorObject[`enum`, AllowedValues, js.Array[String]]
+  type JTDEnumError = ErrorObject["enum", AllowedValues, js.Array[String]]
   
   type _To = CodeKeywordDefinition
   

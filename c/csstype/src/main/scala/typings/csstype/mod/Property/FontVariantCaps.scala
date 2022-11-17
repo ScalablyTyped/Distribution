@@ -4,47 +4,31 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.csstypeStrings.`all-petite-caps`
-  - typings.csstype.csstypeStrings.`all-small-caps`
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.`petite-caps`
-  - typings.csstype.csstypeStrings.`small-caps`
-  - typings.csstype.csstypeStrings.`titling-caps`
-  - typings.csstype.csstypeStrings.unicase
-  - typings.csstype.csstypeStrings.`-moz-initial`
-  - typings.csstype.csstypeStrings.inherit
-  - typings.csstype.csstypeStrings.initial
-  - typings.csstype.csstypeStrings.revert
-  - typings.csstype.csstypeStrings.`revert-layer`
-  - typings.csstype.csstypeStrings.unset
-*/
-trait FontVariantCaps extends StObject
 object FontVariantCaps {
   
-  inline def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def `all-petite-caps`: typings.csstype.csstypeStrings.`all-petite-caps` = "all-petite-caps".asInstanceOf[typings.csstype.csstypeStrings.`all-petite-caps`]
+  inline def `all-petite-caps`: "all-petite-caps" = "all-petite-caps".asInstanceOf["all-petite-caps"]
   
-  inline def `all-small-caps`: typings.csstype.csstypeStrings.`all-small-caps` = "all-small-caps".asInstanceOf[typings.csstype.csstypeStrings.`all-small-caps`]
+  inline def `all-small-caps`: "all-small-caps" = "all-small-caps".asInstanceOf["all-small-caps"]
   
-  inline def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def normal: typings.csstype.csstypeStrings.normal = "normal".asInstanceOf[typings.csstype.csstypeStrings.normal]
+  inline def normal: "normal" = "normal".asInstanceOf["normal"]
   
-  inline def `petite-caps`: typings.csstype.csstypeStrings.`petite-caps` = "petite-caps".asInstanceOf[typings.csstype.csstypeStrings.`petite-caps`]
+  inline def `petite-caps`: "petite-caps" = "petite-caps".asInstanceOf["petite-caps"]
   
-  inline def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def `revert-layer`: typings.csstype.csstypeStrings.`revert-layer` = "revert-layer".asInstanceOf[typings.csstype.csstypeStrings.`revert-layer`]
+  inline def `revert-layer`: "revert-layer" = "revert-layer".asInstanceOf["revert-layer"]
   
-  inline def `small-caps`: typings.csstype.csstypeStrings.`small-caps` = "small-caps".asInstanceOf[typings.csstype.csstypeStrings.`small-caps`]
+  inline def `small-caps`: "small-caps" = "small-caps".asInstanceOf["small-caps"]
   
-  inline def `titling-caps`: typings.csstype.csstypeStrings.`titling-caps` = "titling-caps".asInstanceOf[typings.csstype.csstypeStrings.`titling-caps`]
+  inline def `titling-caps`: "titling-caps" = "titling-caps".asInstanceOf["titling-caps"]
   
-  inline def unicase: typings.csstype.csstypeStrings.unicase = "unicase".asInstanceOf[typings.csstype.csstypeStrings.unicase]
+  inline def unicase: "unicase" = "unicase".asInstanceOf["unicase"]
   
-  inline def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
 }

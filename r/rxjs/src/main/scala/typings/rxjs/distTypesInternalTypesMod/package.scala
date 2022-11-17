@@ -1,6 +1,7 @@
 package typings.rxjs.distTypesInternalTypesMod
 
 import typings.rxjs.distTypesInternalObservableMod.Observable
+import typings.rxjs.distTypesInternalSubscriptionMod.Subscription
 import typings.std.ArrayLike
 import typings.std.AsyncIterable
 import typings.std.PromiseLike
@@ -11,44 +12,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type FactoryOrValue[T] = T | js.Function0[T]
 
-/* Rewritten from type alias, can be one of: 
-  - scala.Null
-  - scala.Unit
-  - typings.rxjs.rxjsBooleans.`false`
-  - typings.rxjs.rxjsInts.`0`
-  - typings.rxjs.rxjsInts.`-0`
-  - typings.rxjs.rxjsStrings._empty
-*/
-type Falsy = js.UndefOr[_Falsy | Null]
+type Falsy = js.UndefOr[Null | false | 0 | -0 | ""]
 
 type MonoTypeOperatorFunction[T] = OperatorFunction[T, T]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.rxjs.distTypesInternalObservableMod.Observable[T]
-  - typings.rxjs.distTypesInternalTypesMod.InteropObservable[T]
-  - typings.std.AsyncIterable[T]
-  - typings.std.PromiseLike[T]
-  - typings.std.ArrayLike[T]
-  - js.Iterable[T]
-  - typings.rxjs.distTypesInternalTypesMod.ReadableStreamLike[T]
-*/
-type ObservableInput[T] = _ObservableInput[T] | AsyncIterable[T] | PromiseLike[T] | ArrayLike[T] | js.Iterable[T]
+type ObservableInput[T] = Observable[T] | InteropObservable[T] | AsyncIterable[T] | PromiseLike[T] | ArrayLike[T] | js.Iterable[T] | ReadableStreamLike[T]
 
 type ObservableLike[T] = InteropObservable[T]
+
+type ObservableNotification[T] = NextNotification[T] | ErrorNotification | CompleteNotification
 
 type ObservedValuesFromArray[X] = ObservedValueUnionFromArray[X]
 
 type OperatorFunction[T, R] = UnaryFunction[Observable[T], Observable[R]]
 
+type PartialObserver[T] = NextObserver[T] | ErrorObserver[T] | CompletionObserver[T]
+
 type SubscribableOrPromise[T] = (Subscribable[scala.Nothing | T]) | PromiseLike[T] | InteropObservable[T]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.rxjs.distTypesInternalSubscriptionMod.Subscription
-  - typings.rxjs.distTypesInternalTypesMod.Unsubscribable
-  - js.Function0[scala.Unit]
-  - scala.Unit
-*/
-type TeardownLogic = _TeardownLogic | js.Function0[Unit] | Unit
+type TeardownLogic = Subscription | Unsubscribable | js.Function0[Unit] | Unit
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

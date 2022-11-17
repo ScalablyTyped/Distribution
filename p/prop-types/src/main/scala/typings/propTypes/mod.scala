@@ -3,7 +3,6 @@ package typings.propTypes
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
-import typings.propTypes.propTypesBooleans.`true`
 import typings.std.Exclude
 import typings.std.NonNullable
 import typings.std.Partial
@@ -119,7 +118,7 @@ object mod {
     undefined extends T ? true : false
     }}}
     */
-  type IsOptional[T] = `true`
+  type IsOptional[T] = true
   
   type OptionalKeys[V] = Exclude[/* keyof V */ String, RequiredKeys[V]]
   

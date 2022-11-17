@@ -1,7 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.large_
-import typings.reactNative.reactNativeStrings.small_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +29,7 @@ trait ActivityIndicatorIOSProps
     *
     * enum('small', 'large')
     */
-  var size: js.UndefOr[small_ | large_] = js.undefined
+  var size: js.UndefOr["small" | "large"] = js.undefined
 }
 object ActivityIndicatorIOSProps {
   
@@ -54,7 +52,7 @@ object ActivityIndicatorIOSProps {
     
     inline def setHidesWhenStoppedUndefined: Self = StObject.set(x, "hidesWhenStopped", js.undefined)
     
-    inline def setSize(value: small_ | large_): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "small" | "large"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }

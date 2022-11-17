@@ -83,5 +83,5 @@ trait I18nUpdateOpCodes
      with Array[String | Double | SanitizerFn | Null]
      with I18nDebug {
   
-  var __brand__ : typings.angularCore.angularCoreStrings.I18nUpdateOpCodes = js.native
+  var __brand__ : "I18nUpdateOpCodes" = js.native
 }

@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AccessibilityInfoStatic extends StObject {
   
-  def addEventListener(
-    eventName: AccessibilityAnnouncementEventName,
-    handler: AccessibilityAnnouncementFinishedEventHandler
-  ): EmitterSubscription = js.native
   /**
     * Add an event handler. Supported events:
     * - announcementFinished: iOS-only event. Fires when the screen reader has finished making an announcement.
@@ -22,7 +18,10 @@ trait AccessibilityInfoStatic extends StObject {
     *            The boolean is true when the related event's feature is enabled and false otherwise.
     *
     */
-  def addEventListener(eventName: AccessibilityChangeEventName, handler: AccessibilityChangeEventHandler): EmitterSubscription = js.native
+  def addEventListener(
+    eventName: AccessibilityAnnouncementEventName | AccessibilityChangeEventName,
+    handler: AccessibilityAnnouncementFinishedEventHandler | AccessibilityChangeEventHandler
+  ): EmitterSubscription = js.native
   
   /**
     * Post a string to be announced by the screen reader.

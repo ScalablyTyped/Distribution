@@ -1,10 +1,5 @@
 package typings.expoModulesCore
 
-import typings.expoModulesCore.expoModulesCoreStrings.android
-import typings.expoModulesCore.expoModulesCoreStrings.ios
-import typings.expoModulesCore.expoModulesCoreStrings.macos
-import typings.expoModulesCore.expoModulesCoreStrings.web
-import typings.expoModulesCore.expoModulesCoreStrings.windows
 import typings.reactNative.mod.PlatformOSType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,8 +19,8 @@ object buildPlatformMod {
       */
     @JSImport("expo-modules-core/build/Platform", "default.OS")
     @js.native
-    def OS: ios | android | windows | macos | web = js.native
-    inline def OS_=(x: ios | android | windows | macos | web): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OS")(x.asInstanceOf[js.Any])
+    def OS: "ios" | "android" | "windows" | "macos" | "web" = js.native
+    inline def OS_=(x: "ios" | "android" | "windows" | "macos" | "web"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OS")(x.asInstanceOf[js.Any])
     
     /**
       * Denotes if the current environment can attach event listeners
@@ -84,13 +79,5 @@ object buildPlatformMod {
     Any
   ]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNative.mod.PlatformOSType
-    - typings.expoModulesCore.expoModulesCoreStrings.native
-    - typings.expoModulesCore.expoModulesCoreStrings.electron
-    - typings.expoModulesCore.expoModulesCoreStrings.default
-  */
-  type PlatformSelectOSType = _PlatformSelectOSType | PlatformOSType
-  
-  trait _PlatformSelectOSType extends StObject
+  type PlatformSelectOSType = PlatformOSType | "native" | "electron" | "default"
 }

@@ -1,12 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.maxItems
-import typings.ajv.ajvStrings.maxLength
-import typings.ajv.ajvStrings.maxProperties
-import typings.ajv.ajvStrings.minItems
-import typings.ajv.ajvStrings.minLength
-import typings.ajv.ajvStrings.minProperties
 import typings.ajv.anon.Data
 import typings.ajv.anon.Limit
 import typings.ajv.distTypesMod.ErrorObject
@@ -29,7 +23,7 @@ object distVocabulariesValidationMod extends Shortcut {
   val default: Vocabulary = js.native
   
   type LimitError = ErrorObject[
-    maxItems | minItems | minProperties | maxProperties | minLength | maxLength, 
+    "maxItems" | "minItems" | "minProperties" | "maxProperties" | "minLength" | "maxLength", 
     Limit, 
     Double | Data
   ]

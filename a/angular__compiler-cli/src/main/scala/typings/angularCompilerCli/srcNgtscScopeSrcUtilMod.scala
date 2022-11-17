@@ -1,8 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliStrings.component
-import typings.angularCompilerCli.angularCompilerCliStrings.directive
-import typings.angularCompilerCli.angularCompilerCliStrings.pipe
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
@@ -23,17 +20,19 @@ object srcNgtscScopeSrcUtilMod {
   inline def getDiagnosticNode(ref: Reference[ClassDeclaration[DeclarationNode]]): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("getDiagnosticNode")(ref.asInstanceOf[js.Any]).asInstanceOf[Expression]
   inline def getDiagnosticNode(ref: Reference[ClassDeclaration[DeclarationNode]], rawExpr: Expression): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("getDiagnosticNode")(ref.asInstanceOf[js.Any], rawExpr.asInstanceOf[js.Any])).asInstanceOf[Expression]
   
+  @scala.annotation.targetName("makeNotStandaloneDiagnostic_component_directive_pipe")
   inline def makeNotStandaloneDiagnostic(
     scopeReader: ComponentScopeReader,
     ref: Reference[ClassDeclaration[DeclarationNode]],
     rawExpr: Null,
-    kind: component | directive | pipe
+    kind: "component" | "directive" | "pipe"
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("makeNotStandaloneDiagnostic")(scopeReader.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], rawExpr.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.annotation.targetName("makeNotStandaloneDiagnostic_component_directive_pipe")
   inline def makeNotStandaloneDiagnostic(
     scopeReader: ComponentScopeReader,
     ref: Reference[ClassDeclaration[DeclarationNode]],
     rawExpr: Expression,
-    kind: component | directive | pipe
+    kind: "component" | "directive" | "pipe"
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("makeNotStandaloneDiagnostic")(scopeReader.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], rawExpr.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
   
   inline def makeUnknownComponentImportDiagnostic(ref: Reference[ClassDeclaration[DeclarationNode]], rawExpr: Expression): DiagnosticWithLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("makeUnknownComponentImportDiagnostic")(ref.asInstanceOf[js.Any], rawExpr.asInstanceOf[js.Any])).asInstanceOf[DiagnosticWithLocation]

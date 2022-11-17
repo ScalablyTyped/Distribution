@@ -1,15 +1,12 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.angularCompilerStrings.pipe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait R3DeclarePipeDependencyMetadata
-  extends StObject
-     with R3DeclareTemplateDependencyMetadata {
+trait R3DeclarePipeDependencyMetadata extends StObject {
   
-  var kind: pipe
+  var kind: "pipe"
   
   var name: String
   
@@ -29,7 +26,7 @@ object R3DeclarePipeDependencyMetadata {
   
   extension [Self <: R3DeclarePipeDependencyMetadata](x: Self) {
     
-    inline def setKind(value: pipe): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "pipe"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

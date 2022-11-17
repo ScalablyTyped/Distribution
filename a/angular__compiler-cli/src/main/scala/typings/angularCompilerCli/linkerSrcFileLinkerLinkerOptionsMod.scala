@@ -1,8 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliStrings.error
-import typings.angularCompilerCli.angularCompilerCliStrings.ignore
-import typings.angularCompilerCli.angularCompilerCliStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,14 +38,14 @@ object linkerSrcFileLinkerLinkerOptionsMod {
       *
       * The default is `error`.
       */
-    var unknownDeclarationVersionHandling: ignore | warn | error
+    var unknownDeclarationVersionHandling: "ignore" | "warn" | "error"
   }
   object LinkerOptions {
     
     inline def apply(
       linkerJitMode: Boolean,
       sourceMapping: Boolean,
-      unknownDeclarationVersionHandling: ignore | warn | error
+      unknownDeclarationVersionHandling: "ignore" | "warn" | "error"
     ): LinkerOptions = {
       val __obj = js.Dynamic.literal(linkerJitMode = linkerJitMode.asInstanceOf[js.Any], sourceMapping = sourceMapping.asInstanceOf[js.Any], unknownDeclarationVersionHandling = unknownDeclarationVersionHandling.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkerOptions]
@@ -60,7 +57,7 @@ object linkerSrcFileLinkerLinkerOptionsMod {
       
       inline def setSourceMapping(value: Boolean): Self = StObject.set(x, "sourceMapping", value.asInstanceOf[js.Any])
       
-      inline def setUnknownDeclarationVersionHandling(value: ignore | warn | error): Self = StObject.set(x, "unknownDeclarationVersionHandling", value.asInstanceOf[js.Any])
+      inline def setUnknownDeclarationVersionHandling(value: "ignore" | "warn" | "error"): Self = StObject.set(x, "unknownDeclarationVersionHandling", value.asInstanceOf[js.Any])
     }
   }
 }

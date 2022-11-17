@@ -13,15 +13,6 @@ import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.ViewStyle
-import typings.styledComponents.styledComponentsStrings.`box-none`
-import typings.styledComponents.styledComponentsStrings.`box-only`
-import typings.styledComponents.styledComponentsStrings.`no-hide-descendants`
-import typings.styledComponents.styledComponentsStrings.assertive
-import typings.styledComponents.styledComponentsStrings.auto
-import typings.styledComponents.styledComponentsStrings.no
-import typings.styledComponents.styledComponentsStrings.none
-import typings.styledComponents.styledComponentsStrings.polite
-import typings.styledComponents.styledComponentsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +34,7 @@ trait ReadonlyViewProps extends StObject {
   
   val accessibilityLanguage: js.UndefOr[String] = js.undefined
   
-  val accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+  val accessibilityLiveRegion: js.UndefOr["none" | "polite" | "assertive"] = js.undefined
   
   val accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
@@ -65,7 +56,7 @@ trait ReadonlyViewProps extends StObject {
   
   val hitSlop: js.UndefOr[Insets] = js.undefined
   
-  val importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+  val importantForAccessibility: js.UndefOr["auto" | "yes" | "no" | "no-hide-descendants"] = js.undefined
   
   val isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
@@ -141,7 +132,7 @@ trait ReadonlyViewProps extends StObject {
   
   val onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
+  val pointerEvents: js.UndefOr["box-none" | "none" | "box-only" | "auto"] = js.undefined
   
   val removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
   
@@ -204,7 +195,7 @@ object ReadonlyViewProps {
     
     inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
     
-    inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLiveRegion(value: "none" | "polite" | "assertive"): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
     
@@ -248,7 +239,7 @@ object ReadonlyViewProps {
     
     inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
     
-    inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+    inline def setImportantForAccessibility(value: "auto" | "yes" | "no" | "no-hide-descendants"): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
@@ -400,7 +391,7 @@ object ReadonlyViewProps {
     
     inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
-    inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    inline def setPointerEvents(value: "box-none" | "none" | "box-only" | "auto"): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     

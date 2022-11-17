@@ -82,17 +82,13 @@ object mod {
   
   type Container = Element | Document | DocumentFragment
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactDom.reactDomStrings.script
-    - typings.reactDom.reactDomStrings.style
-  */
-  trait PreinitAs extends StObject
   object PreinitAs {
     
-    inline def script: typings.reactDom.reactDomStrings.script = "script".asInstanceOf[typings.reactDom.reactDomStrings.script]
+    inline def script: "script" = "script".asInstanceOf["script"]
     
-    inline def style: typings.reactDom.reactDomStrings.style = "style".asInstanceOf[typings.reactDom.reactDomStrings.style]
+    inline def style: "style" = "style".asInstanceOf["style"]
   }
+  type PreinitAs = "script" | "style"
   
   trait PreinitOptions extends StObject {
     
@@ -129,20 +125,15 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactDom.reactDomStrings.font
-    - typings.reactDom.reactDomStrings.script
-    - typings.reactDom.reactDomStrings.style
-  */
-  trait PreloadAs extends StObject
   object PreloadAs {
     
-    inline def font: typings.reactDom.reactDomStrings.font = "font".asInstanceOf[typings.reactDom.reactDomStrings.font]
+    inline def font: "font" = "font".asInstanceOf["font"]
     
-    inline def script: typings.reactDom.reactDomStrings.script = "script".asInstanceOf[typings.reactDom.reactDomStrings.script]
+    inline def script: "script" = "script".asInstanceOf["script"]
     
-    inline def style: typings.reactDom.reactDomStrings.style = "style".asInstanceOf[typings.reactDom.reactDomStrings.style]
+    inline def style: "style" = "style".asInstanceOf["style"]
   }
+  type PreloadAs = "font" | "script" | "style"
   
   trait PreloadOptions extends StObject {
     

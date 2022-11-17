@@ -1,6 +1,5 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.reactNavigationStrings.`no-preference`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait NavigationNavigatorProps[Options, State, ScreenProps] extends StObject {
   
   var screenProps: js.UndefOr[ScreenProps] = js.undefined
   
-  var theme: js.UndefOr[SupportedThemes | `no-preference`] = js.undefined
+  var theme: js.UndefOr[SupportedThemes | "no-preference"] = js.undefined
 }
 object NavigationNavigatorProps {
   
@@ -42,7 +41,7 @@ object NavigationNavigatorProps {
     
     inline def setScreenPropsUndefined: Self = StObject.set(x, "screenProps", js.undefined)
     
-    inline def setTheme(value: SupportedThemes | `no-preference`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: SupportedThemes | "no-preference"): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }

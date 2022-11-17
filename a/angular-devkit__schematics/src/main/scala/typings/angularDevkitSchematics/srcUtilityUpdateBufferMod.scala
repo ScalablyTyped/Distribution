@@ -79,8 +79,6 @@ object srcUtilityUpdateBufferMod {
     /* protected */ var _linkedList: LinkedList[Chunk] = js.native
     
     /* protected */ def _slice(start: Double): js.Tuple2[Chunk, Chunk] = js.native
-    
-    def toString(encoding: BufferEncoding): String = js.native
   }
   
   @JSImport("@angular-devkit/schematics/src/utility/update-buffer", "UpdateBuffer2")

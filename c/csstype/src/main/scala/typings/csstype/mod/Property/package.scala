@@ -1,544 +1,225 @@
 package typings.csstype.mod.Property
 
+import typings.csstype.mod.DataType.AbsoluteSize
+import typings.csstype.mod.DataType.AnimateableFeature
+import typings.csstype.mod.DataType.Attachment
+import typings.csstype.mod.DataType.BgPosition
+import typings.csstype.mod.DataType.BgSize
+import typings.csstype.mod.DataType.BlendMode
+import typings.csstype.mod.DataType.Box
+import typings.csstype.mod.DataType.CompositeStyle
+import typings.csstype.mod.DataType.CompositingOperator
+import typings.csstype.mod.DataType.ContentDistribution
+import typings.csstype.mod.DataType.ContentList
+import typings.csstype.mod.DataType.ContentPosition
 import typings.csstype.mod.DataType.Dasharray
+import typings.csstype.mod.DataType.DisplayInside
+import typings.csstype.mod.DataType.DisplayInternal
+import typings.csstype.mod.DataType.DisplayLegacy
+import typings.csstype.mod.DataType.DisplayOutside
+import typings.csstype.mod.DataType.EasingFunction
+import typings.csstype.mod.DataType.EastAsianVariantValues
+import typings.csstype.mod.DataType.FinalBgLayer
+import typings.csstype.mod.DataType.FontStretchAbsolute
+import typings.csstype.mod.DataType.FontWeightAbsolute
+import typings.csstype.mod.DataType.GenericFamily
+import typings.csstype.mod.DataType.GeometryBox
 import typings.csstype.mod.DataType.GridLine
+import typings.csstype.mod.DataType.LineStyle
+import typings.csstype.mod.DataType.LineWidth
+import typings.csstype.mod.DataType.MaskLayer
+import typings.csstype.mod.DataType.MaskingMode
+import typings.csstype.mod.DataType.Paint
+import typings.csstype.mod.DataType.RepeatStyle
+import typings.csstype.mod.DataType.SelfPosition
+import typings.csstype.mod.DataType.SingleAnimation
+import typings.csstype.mod.DataType.SingleAnimationDirection
+import typings.csstype.mod.DataType.SingleAnimationFillMode
+import typings.csstype.mod.DataType.SingleAnimationTimeline
+import typings.csstype.mod.DataType.SingleTransition
+import typings.csstype.mod.DataType.TrackBreadth
+import typings.csstype.mod.DataType.VisualBox
 import typings.csstype.mod.Globals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - typings.csstype.csstypeStrings.auto
-*/
-type AccentColor = _AccentColor | String
+type AccentColor = Globals | typings.csstype.mod.DataType.Color | "auto"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.ContentDistribution
-  - typings.csstype.mod.DataType.ContentPosition
-  - typings.csstype.csstypeStrings.baseline
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-*/
-type AlignContent = _AlignContent | String
+type AlignContent = Globals | ContentDistribution | ContentPosition | "baseline" | "normal" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.SelfPosition
-  - typings.csstype.csstypeStrings.baseline
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.stretch
-  - java.lang.String
-*/
-type AlignItems = _AlignItems | String
+type AlignItems = Globals | SelfPosition | "baseline" | "normal" | "stretch" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.SelfPosition
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.baseline
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.stretch
-  - java.lang.String
-*/
-type AlignSelf = _AlignSelf | String
+type AlignSelf = Globals | SelfPosition | "auto" | "baseline" | "normal" | "stretch" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.ContentDistribution
-  - typings.csstype.mod.DataType.ContentPosition
-  - typings.csstype.csstypeStrings.baseline
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-*/
-type AlignTracks = _AlignTracks | String
+type AlignTracks = Globals | ContentDistribution | ContentPosition | "baseline" | "normal" | String
+
+type AlignmentBaseline = "after-edge" | "alphabetic" | "auto" | "baseline" | "before-edge" | "central" | "hanging" | "ideographic" | "mathematical" | "middle" | "text-after-edge" | "text-before-edge" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
 type All = Globals
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.SingleAnimation[TTime]
-  - java.lang.String
-*/
-type Animation[TTime] = _Animation[TTime] | String | (Double & js.Object) | TTime
+type Animation[TTime] = Globals | SingleAnimation[TTime] | String
 
 type AnimationComposition = Globals | String
 
 type AnimationDelay[TTime] = Globals | TTime | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.SingleAnimationDirection
-  - java.lang.String
-*/
-type AnimationDirection = _AnimationDirection | String
+type AnimationDirection = Globals | SingleAnimationDirection | String
 
 type AnimationDuration[TTime] = Globals | TTime | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.SingleAnimationFillMode
-  - java.lang.String
-*/
-type AnimationFillMode = _AnimationFillMode | String
+type AnimationFillMode = Globals | SingleAnimationFillMode | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.infinite
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type AnimationIterationCount = _AnimationIterationCount | (Double & js.Object) | String
+type AnimationIterationCount = Globals | "infinite" | String | (Double & js.Object)
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type AnimationName = _AnimationName | String
+type AnimationName = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.paused
-  - typings.csstype.csstypeStrings.running
-  - java.lang.String
-*/
-type AnimationPlayState = _AnimationPlayState | String
+type AnimationPlayState = Globals | "paused" | "running" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.SingleAnimationTimeline
-  - java.lang.String
-*/
-type AnimationTimeline = _AnimationTimeline | String
+type AnimationTimeline = Globals | SingleAnimationTimeline | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.EasingFunction
-  - java.lang.String
-*/
-type AnimationTimingFunction = _AnimationTimingFunction | String
+type AnimationTimingFunction = Globals | EasingFunction | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type AspectRatio = _AspectRatio | (Double & js.Object) | String
+type Appearance = "auto" | "menulist-button" | "none" | "textfield" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset" | "button" | "checkbox" | "listbox" | "menulist" | "meter" | "progress-bar" | "push-button" | "radio" | "searchfield" | "slider-horizontal" | "square-button" | "textarea"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.behind
-  - typings.csstype.csstypeStrings.center
-  - typings.csstype.csstypeStrings.`center-left`
-  - typings.csstype.csstypeStrings.`center-right`
-  - typings.csstype.csstypeStrings.`far-left`
-  - typings.csstype.csstypeStrings.`far-right`
-  - typings.csstype.csstypeStrings.left
-  - typings.csstype.csstypeStrings.`left-side`
-  - typings.csstype.csstypeStrings.leftwards
-  - typings.csstype.csstypeStrings.right
-  - typings.csstype.csstypeStrings.`right-side`
-  - typings.csstype.csstypeStrings.rightwards
-  - java.lang.String
-*/
-type Azimuth = _Azimuth | String
+type AspectRatio = Globals | "auto" | String | (Double & js.Object)
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type BackdropFilter = _BackdropFilter | String
+type Azimuth = Globals | "behind" | "center" | "center-left" | "center-right" | "far-left" | "far-right" | "left" | "left-side" | "leftwards" | "right" | "right-side" | "rightwards" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.FinalBgLayer[TLength]
-  - java.lang.String
-*/
-type Background[TLength] = _Background[TLength] | String | TLength
+type BackdropFilter = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Attachment
-  - java.lang.String
-*/
-type BackgroundAttachment = _BackgroundAttachment | String
+type BackfaceVisibility = "hidden" | "visible" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.BlendMode
-  - java.lang.String
-*/
-type BackgroundBlendMode = _BackgroundBlendMode | String
+type Background[TLength] = Globals | FinalBgLayer[TLength] | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Box
-  - java.lang.String
-*/
-type BackgroundClip = _BackgroundClip | String
+type BackgroundAttachment = Globals | Attachment | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type BackgroundColor = _BackgroundColor | String
+type BackgroundBlendMode = Globals | BlendMode | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type BackgroundImage = _BackgroundImage | String
+type BackgroundClip = Globals | Box | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Box
-  - java.lang.String
-*/
-type BackgroundOrigin = _BackgroundOrigin | String
+type BackgroundColor = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.BgPosition[TLength]
-  - java.lang.String
-*/
-type BackgroundPosition[TLength] = _BackgroundPosition[TLength] | String | TLength
+type BackgroundImage = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.center
-  - typings.csstype.csstypeStrings.left
-  - typings.csstype.csstypeStrings.right
-  - typings.csstype.csstypeStrings.`x-end`
-  - typings.csstype.csstypeStrings.`x-start`
-  - java.lang.String
-*/
-type BackgroundPositionX[TLength] = _BackgroundPositionX[TLength] | TLength | String
+type BackgroundOrigin = Globals | Box | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.bottom
-  - typings.csstype.csstypeStrings.center
-  - typings.csstype.csstypeStrings.top
-  - typings.csstype.csstypeStrings.`y-end`
-  - typings.csstype.csstypeStrings.`y-start`
-  - java.lang.String
-*/
-type BackgroundPositionY[TLength] = _BackgroundPositionY[TLength] | TLength | String
+type BackgroundPosition[TLength] = Globals | BgPosition[TLength] | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.RepeatStyle
-  - java.lang.String
-*/
-type BackgroundRepeat = _BackgroundRepeat | String
+type BackgroundPositionX[TLength] = Globals | TLength | "center" | "left" | "right" | "x-end" | "x-start" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.BgSize[TLength]
-  - java.lang.String
-*/
-type BackgroundSize[TLength] = _BackgroundSize[TLength] | String | TLength
+type BackgroundPositionY[TLength] = Globals | TLength | "bottom" | "center" | "top" | "y-end" | "y-start" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.baseline
-  - typings.csstype.csstypeStrings.sub
-  - typings.csstype.csstypeStrings.`super`
-  - java.lang.String
-*/
-type BaselineShift[TLength] = _BaselineShift[TLength] | TLength | String
+type BackgroundRepeat = Globals | RepeatStyle | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.clip
-  - typings.csstype.csstypeStrings.ellipsis
-  - java.lang.String
-*/
-type BlockOverflow = _BlockOverflow | String
+type BackgroundSize[TLength] = Globals | BgSize[TLength] | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.`-moz-fit-content`
-  - typings.csstype.csstypeStrings.`-moz-max-content`
-  - typings.csstype.csstypeStrings.`-moz-min-content`
-  - typings.csstype.csstypeStrings.`-webkit-fill-available`
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.`fit-content`
-  - typings.csstype.csstypeStrings.`max-content`
-  - typings.csstype.csstypeStrings.`min-content`
-  - java.lang.String
-*/
-type BlockSize[TLength] = _BlockSize[TLength] | TLength | String
+type BaselineShift[TLength] = Globals | TLength | "baseline" | "sub" | "super" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type Border[TLength] = _Border[TLength] | String | TLength
+type BlockOverflow = Globals | "clip" | "ellipsis" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type BorderBlock[TLength] = _BorderBlock[TLength] | String | TLength
+type BlockSize[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-content" | "-moz-min-content" | "-webkit-fill-available" | "auto" | "fit-content" | "max-content" | "min-content" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type BorderBlockColor = _BorderBlockColor | String
+type Border[TLength] = Globals | LineWidth[TLength] | LineStyle | typings.csstype.mod.DataType.Color | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type BorderBlockEnd[TLength] = _BorderBlockEnd[TLength] | String | TLength
+type BorderBlock[TLength] = Globals | LineWidth[TLength] | LineStyle | typings.csstype.mod.DataType.Color | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type BorderBlockEndColor = _BorderBlockEndColor | String
+type BorderBlockColor = Globals | typings.csstype.mod.DataType.Color | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-*/
-type BorderBlockEndWidth[TLength] = _BorderBlockEndWidth[TLength] | TLength
+type BorderBlockEnd[TLength] = Globals | LineWidth[TLength] | LineStyle | typings.csstype.mod.DataType.Color | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type BorderBlockStart[TLength] = _BorderBlockStart[TLength] | String | TLength
+type BorderBlockEndColor = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type BorderBlockStartColor = _BorderBlockStartColor | String
+type BorderBlockEndStyle = "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset" | "dashed" | "dotted" | "double" | "groove" | "hidden" | "inset" | "none" | "outset" | "ridge" | "solid"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-*/
-type BorderBlockStartWidth[TLength] = _BorderBlockStartWidth[TLength] | TLength
+type BorderBlockEndWidth[TLength] = Globals | LineWidth[TLength]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-*/
-type BorderBlockWidth[TLength] = _BorderBlockWidth[TLength] | TLength
+type BorderBlockStart[TLength] = Globals | LineWidth[TLength] | LineStyle | typings.csstype.mod.DataType.Color | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type BorderBottom[TLength] = _BorderBottom[TLength] | String | TLength
+type BorderBlockStartColor = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type BorderBottomColor = _BorderBottomColor | String
+type BorderBlockStartStyle = "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset" | "dashed" | "dotted" | "double" | "groove" | "hidden" | "inset" | "none" | "outset" | "ridge" | "solid"
+
+type BorderBlockStartWidth[TLength] = Globals | LineWidth[TLength]
+
+type BorderBlockStyle = "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset" | "dashed" | "dotted" | "double" | "groove" | "hidden" | "inset" | "none" | "outset" | "ridge" | "solid"
+
+type BorderBlockWidth[TLength] = Globals | LineWidth[TLength]
+
+type BorderBottom[TLength] = Globals | LineWidth[TLength] | LineStyle | typings.csstype.mod.DataType.Color | String
+
+type BorderBottomColor = Globals | typings.csstype.mod.DataType.Color
 
 type BorderBottomLeftRadius[TLength] = Globals | TLength | String
 
 type BorderBottomRightRadius[TLength] = Globals | TLength | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-*/
-type BorderBottomWidth[TLength] = _BorderBottomWidth[TLength] | TLength
+type BorderBottomStyle = "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset" | "dashed" | "dotted" | "double" | "groove" | "hidden" | "inset" | "none" | "outset" | "ridge" | "solid"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type BorderColor = _BorderColor | String
+type BorderBottomWidth[TLength] = Globals | LineWidth[TLength]
+
+type BorderCollapse = "collapse" | "separate" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type BorderColor = Globals | typings.csstype.mod.DataType.Color | String
 
 type BorderEndEndRadius[TLength] = Globals | TLength | String
 
 type BorderEndStartRadius[TLength] = Globals | TLength | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.repeat
-  - typings.csstype.csstypeStrings.round
-  - typings.csstype.csstypeStrings.space
-  - typings.csstype.csstypeStrings.stretch
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type BorderImage = _BorderImage | (Double & js.Object) | String
+type BorderImage = Globals | "none" | "repeat" | "round" | "space" | "stretch" | String | (Double & js.Object)
 
 type BorderImageOutset[TLength] = Globals | TLength | String | (Double & js.Object)
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.repeat
-  - typings.csstype.csstypeStrings.round
-  - typings.csstype.csstypeStrings.space
-  - typings.csstype.csstypeStrings.stretch
-  - java.lang.String
-*/
-type BorderImageRepeat = _BorderImageRepeat | String
+type BorderImageRepeat = Globals | "repeat" | "round" | "space" | "stretch" | String
 
 type BorderImageSlice = Globals | String | (Double & js.Object)
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type BorderImageSource = _BorderImageSource | String
+type BorderImageSource = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type BorderImageWidth[TLength] = _BorderImageWidth[TLength] | (Double & js.Object) | TLength | String
+type BorderImageWidth[TLength] = Globals | TLength | "auto" | String | (Double & js.Object)
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type BorderInline[TLength] = _BorderInline[TLength] | String | TLength
+type BorderInline[TLength] = Globals | LineWidth[TLength] | LineStyle | typings.csstype.mod.DataType.Color | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type BorderInlineColor = _BorderInlineColor | String
+type BorderInlineColor = Globals | typings.csstype.mod.DataType.Color | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type BorderInlineEnd[TLength] = _BorderInlineEnd[TLength] | String | TLength
+type BorderInlineEnd[TLength] = Globals | LineWidth[TLength] | LineStyle | typings.csstype.mod.DataType.Color | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type BorderInlineEndColor = _BorderInlineEndColor | String
+type BorderInlineEndColor = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-*/
-type BorderInlineEndWidth[TLength] = _BorderInlineEndWidth[TLength] | TLength
+type BorderInlineEndStyle = "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset" | "dashed" | "dotted" | "double" | "groove" | "hidden" | "inset" | "none" | "outset" | "ridge" | "solid"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type BorderInlineStart[TLength] = _BorderInlineStart[TLength] | String | TLength
+type BorderInlineEndWidth[TLength] = Globals | LineWidth[TLength]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type BorderInlineStartColor = _BorderInlineStartColor | String
+type BorderInlineStart[TLength] = Globals | LineWidth[TLength] | LineStyle | typings.csstype.mod.DataType.Color | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-*/
-type BorderInlineStartWidth[TLength] = _BorderInlineStartWidth[TLength] | TLength
+type BorderInlineStartColor = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-*/
-type BorderInlineWidth[TLength] = _BorderInlineWidth[TLength] | TLength
+type BorderInlineStartStyle = "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset" | "dashed" | "dotted" | "double" | "groove" | "hidden" | "inset" | "none" | "outset" | "ridge" | "solid"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type BorderLeft[TLength] = _BorderLeft[TLength] | String | TLength
+type BorderInlineStartWidth[TLength] = Globals | LineWidth[TLength]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type BorderLeftColor = _BorderLeftColor | String
+type BorderInlineStyle = "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset" | "dashed" | "dotted" | "double" | "groove" | "hidden" | "inset" | "none" | "outset" | "ridge" | "solid"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-*/
-type BorderLeftWidth[TLength] = _BorderLeftWidth[TLength] | TLength
+type BorderInlineWidth[TLength] = Globals | LineWidth[TLength]
+
+type BorderLeft[TLength] = Globals | LineWidth[TLength] | LineStyle | typings.csstype.mod.DataType.Color | String
+
+type BorderLeftColor = Globals | typings.csstype.mod.DataType.Color
+
+type BorderLeftStyle = "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset" | "dashed" | "dotted" | "double" | "groove" | "hidden" | "inset" | "none" | "outset" | "ridge" | "solid"
+
+type BorderLeftWidth[TLength] = Globals | LineWidth[TLength]
 
 type BorderRadius[TLength] = Globals | TLength | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type BorderRight[TLength] = _BorderRight[TLength] | String | TLength
+type BorderRight[TLength] = Globals | LineWidth[TLength] | LineStyle | typings.csstype.mod.DataType.Color | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type BorderRightColor = _BorderRightColor | String
+type BorderRightColor = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-*/
-type BorderRightWidth[TLength] = _BorderRightWidth[TLength] | TLength
+type BorderRightStyle = "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset" | "dashed" | "dotted" | "double" | "groove" | "hidden" | "inset" | "none" | "outset" | "ridge" | "solid"
+
+type BorderRightWidth[TLength] = Globals | LineWidth[TLength]
 
 type BorderSpacing[TLength] = Globals | TLength | String
 
@@ -546,570 +227,199 @@ type BorderStartEndRadius[TLength] = Globals | TLength | String
 
 type BorderStartStartRadius[TLength] = Globals | TLength | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineStyle
-  - java.lang.String
-*/
-type BorderStyle = _BorderStyle | String
+type BorderStyle = Globals | LineStyle | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type BorderTop[TLength] = _BorderTop[TLength] | String | TLength
+type BorderTop[TLength] = Globals | LineWidth[TLength] | LineStyle | typings.csstype.mod.DataType.Color | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type BorderTopColor = _BorderTopColor | String
+type BorderTopColor = Globals | typings.csstype.mod.DataType.Color
 
 type BorderTopLeftRadius[TLength] = Globals | TLength | String
 
 type BorderTopRightRadius[TLength] = Globals | TLength | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-*/
-type BorderTopWidth[TLength] = _BorderTopWidth[TLength] | TLength
+type BorderTopStyle = "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset" | "dashed" | "dotted" | "double" | "groove" | "hidden" | "inset" | "none" | "outset" | "ridge" | "solid"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - java.lang.String
-*/
-type BorderWidth[TLength] = _BorderWidth[TLength] | String | TLength
+type BorderTopWidth[TLength] = Globals | LineWidth[TLength]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type Bottom[TLength] = _Bottom[TLength] | TLength | String
+type BorderWidth[TLength] = Globals | LineWidth[TLength] | String
+
+type Bottom[TLength] = Globals | TLength | "auto" | String
+
+type BoxAlign = "baseline" | "center" | "end" | "start" | "stretch" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type BoxDecorationBreak = "clone" | "slice" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type BoxDirection = "inherit" | "normal" | "reverse" | "-moz-initial" | "initial" | "revert" | "revert-layer" | "unset"
 
 type BoxFlex = Globals | (Double & js.Object) | String
 
 type BoxFlexGroup = Globals | (Double & js.Object) | String
 
+type BoxLines = "multiple" | "single" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
 type BoxOrdinalGroup = Globals | (Double & js.Object) | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type BoxShadow = _BoxShadow | String
+type BoxOrient = "block-axis" | "horizontal" | "inherit" | "inline-axis" | "vertical" | "-moz-initial" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - typings.csstype.csstypeStrings.auto
-*/
-type CaretColor = _CaretColor | String
+type BoxPack = "center" | "end" | "justify" | "start" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type Clip = _Clip | String
+type BoxShadow = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.GeometryBox
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type ClipPath = _ClipPath | String
+type BoxSizing = "border-box" | "content-box" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type Color = _Color | String
+type BreakAfter = "all" | "always" | "auto" | "avoid" | "avoid-column" | "avoid-page" | "avoid-region" | "column" | "left" | "page" | "recto" | "region" | "right" | "verso" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.dark
-  - typings.csstype.csstypeStrings.light
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-*/
-type ColorScheme = _ColorScheme | String
+type BreakBefore = "all" | "always" | "auto" | "avoid" | "avoid-column" | "avoid-page" | "avoid-region" | "column" | "left" | "page" | "recto" | "region" | "right" | "verso" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - scala.Double & js.Object
-  - java.lang.String
-*/
-type ColumnCount = _ColumnCount | (Double & js.Object) | String
+type BreakInside = "auto" | "avoid" | "avoid-column" | "avoid-page" | "avoid-region" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-*/
-type ColumnGap[TLength] = _ColumnGap[TLength] | TLength | String
+type CaptionSide = "block-end" | "block-start" | "bottom" | "inline-end" | "inline-start" | "top" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type ColumnRule[TLength] = _ColumnRule[TLength] | String | TLength
+type CaretColor = Globals | typings.csstype.mod.DataType.Color | "auto"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type ColumnRuleColor = _ColumnRuleColor | String
+type Clear = "both" | "inline-end" | "inline-start" | "left" | "none" | "right" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineStyle
-  - java.lang.String
-*/
-type ColumnRuleStyle = _ColumnRuleStyle | String
+type Clip = Globals | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - java.lang.String
-*/
-type ColumnRuleWidth[TLength] = _ColumnRuleWidth[TLength] | String | TLength
+type ClipPath = Globals | GeometryBox | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-*/
-type ColumnWidth[TLength] = _ColumnWidth[TLength] | TLength
+type ClipRule = "evenodd" | "nonzero" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type Columns[TLength] = _Columns[TLength] | (Double & js.Object) | TLength | String
+type Color = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.content
-  - typings.csstype.csstypeStrings.`inline-size`
-  - typings.csstype.csstypeStrings.layout
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.paint
-  - typings.csstype.csstypeStrings.size
-  - typings.csstype.csstypeStrings.strict
-  - typings.csstype.csstypeStrings.style
-  - java.lang.String
-*/
-type Contain = _Contain | String
+type ColorInterpolation = "auto" | "linearRGB" | "sRGB" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.ContentList
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-*/
-type Content = _Content | String
+type ColorRendering = "auto" | "optimizeQuality" | "optimizeSpeed" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type CounterIncrement = _CounterIncrement | String
+type ColorScheme = Globals | "dark" | "light" | "normal" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type CounterReset = _CounterReset | String
+type ColumnCount = Globals | "auto" | (Double & js.Object) | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type CounterSet = _CounterSet | String
+type ColumnFill = "auto" | "balance" | "balance-all" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.`-moz-grab`
-  - typings.csstype.csstypeStrings.`-webkit-grab`
-  - typings.csstype.csstypeStrings.alias
-  - typings.csstype.csstypeStrings.`all-scroll`
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.cell
-  - typings.csstype.csstypeStrings.`col-resize`
-  - typings.csstype.csstypeStrings.`context-menu`
-  - typings.csstype.csstypeStrings.copy
-  - typings.csstype.csstypeStrings.crosshair
-  - typings.csstype.csstypeStrings.default
-  - typings.csstype.csstypeStrings.`e-resize`
-  - typings.csstype.csstypeStrings.`ew-resize`
-  - typings.csstype.csstypeStrings.grab
-  - typings.csstype.csstypeStrings.grabbing
-  - typings.csstype.csstypeStrings.help
-  - typings.csstype.csstypeStrings.move
-  - typings.csstype.csstypeStrings.`n-resize`
-  - typings.csstype.csstypeStrings.`ne-resize`
-  - typings.csstype.csstypeStrings.`nesw-resize`
-  - typings.csstype.csstypeStrings.`no-drop`
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.`not-allowed`
-  - typings.csstype.csstypeStrings.`ns-resize`
-  - typings.csstype.csstypeStrings.`nw-resize`
-  - typings.csstype.csstypeStrings.`nwse-resize`
-  - typings.csstype.csstypeStrings.pointer
-  - typings.csstype.csstypeStrings.progress
-  - typings.csstype.csstypeStrings.`row-resize`
-  - typings.csstype.csstypeStrings.`s-resize`
-  - typings.csstype.csstypeStrings.`se-resize`
-  - typings.csstype.csstypeStrings.`sw-resize`
-  - typings.csstype.csstypeStrings.text
-  - typings.csstype.csstypeStrings.`vertical-text`
-  - typings.csstype.csstypeStrings.`w-resize`
-  - typings.csstype.csstypeStrings.wait
-  - typings.csstype.csstypeStrings.`zoom-in`
-  - typings.csstype.csstypeStrings.`zoom-out`
-  - java.lang.String
-*/
-type Cursor = _Cursor | String
+type ColumnGap[TLength] = Globals | TLength | "normal" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.DisplayOutside
-  - typings.csstype.mod.DataType.DisplayInside
-  - typings.csstype.mod.DataType.DisplayInternal
-  - typings.csstype.mod.DataType.DisplayLegacy
-  - typings.csstype.csstypeStrings.contents
-  - typings.csstype.csstypeStrings.`list-item`
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type Display = _Display | String
+type ColumnRule[TLength] = Globals | LineWidth[TLength] | LineStyle | typings.csstype.mod.DataType.Color | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Paint
-*/
-type Fill = _Fill | String
+type ColumnRuleColor = Globals | typings.csstype.mod.DataType.Color
+
+type ColumnRuleStyle = Globals | LineStyle | String
+
+type ColumnRuleWidth[TLength] = Globals | LineWidth[TLength] | String
+
+type ColumnSpan = "all" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type ColumnWidth[TLength] = Globals | TLength | "auto"
+
+type Columns[TLength] = Globals | TLength | "auto" | String | (Double & js.Object)
+
+type Contain = Globals | "content" | "inline-size" | "layout" | "none" | "paint" | "size" | "strict" | "style" | String
+
+type Content = Globals | ContentList | "none" | "normal" | String
+
+type ContentVisibility = "auto" | "hidden" | "visible" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type CounterIncrement = Globals | "none" | String
+
+type CounterReset = Globals | "none" | String
+
+type CounterSet = Globals | "none" | String
+
+type Cursor = Globals | "-moz-grab" | "-webkit-grab" | "alias" | "all-scroll" | "auto" | "cell" | "col-resize" | "context-menu" | "copy" | "crosshair" | "default" | "e-resize" | "ew-resize" | "grab" | "grabbing" | "help" | "move" | "n-resize" | "ne-resize" | "nesw-resize" | "no-drop" | "none" | "not-allowed" | "ns-resize" | "nw-resize" | "nwse-resize" | "pointer" | "progress" | "row-resize" | "s-resize" | "se-resize" | "sw-resize" | "text" | "vertical-text" | "w-resize" | "wait" | "zoom-in" | "zoom-out" | String
+
+type Direction = "ltr" | "rtl" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type Display = Globals | DisplayOutside | DisplayInside | DisplayInternal | DisplayLegacy | "contents" | "list-item" | "none" | String
+
+type DominantBaseline = "alphabetic" | "auto" | "central" | "hanging" | "ideographic" | "mathematical" | "middle" | "no-change" | "reset-size" | "text-after-edge" | "text-before-edge" | "use-script" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type EmptyCells = "hide" | "show" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type Fill = Globals | Paint
 
 type FillOpacity = Globals | (Double & js.Object) | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type Filter = _Filter | String
+type FillRule = "evenodd" | "nonzero" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.content
-  - typings.csstype.csstypeStrings.`fit-content`
-  - typings.csstype.csstypeStrings.`max-content`
-  - typings.csstype.csstypeStrings.`min-content`
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type Flex[TLength] = _Flex[TLength] | (Double & js.Object) | TLength | String
+type Filter = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.`-moz-fit-content`
-  - typings.csstype.csstypeStrings.`-moz-max-content`
-  - typings.csstype.csstypeStrings.`-moz-min-content`
-  - typings.csstype.csstypeStrings.`-webkit-auto`
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.content
-  - typings.csstype.csstypeStrings.`fit-content`
-  - typings.csstype.csstypeStrings.`max-content`
-  - typings.csstype.csstypeStrings.`min-content`
-  - java.lang.String
-*/
-type FlexBasis[TLength] = _FlexBasis[TLength] | TLength | String
+type Flex[TLength] = Globals | TLength | "auto" | "content" | "fit-content" | "max-content" | "min-content" | "none" | String | (Double & js.Object)
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.column
-  - typings.csstype.csstypeStrings.`column-reverse`
-  - typings.csstype.csstypeStrings.nowrap
-  - typings.csstype.csstypeStrings.row
-  - typings.csstype.csstypeStrings.`row-reverse`
-  - typings.csstype.csstypeStrings.wrap
-  - typings.csstype.csstypeStrings.`wrap-reverse`
-  - java.lang.String
-*/
-type FlexFlow = _FlexFlow | String
+type FlexBasis[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-content" | "-moz-min-content" | "-webkit-auto" | "auto" | "content" | "fit-content" | "max-content" | "min-content" | String
+
+type FlexDirection = "column" | "column-reverse" | "row" | "row-reverse" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type FlexFlow = Globals | "column" | "column-reverse" | "nowrap" | "row" | "row-reverse" | "wrap" | "wrap-reverse" | String
 
 type FlexGrow = Globals | (Double & js.Object) | String
 
 type FlexShrink = Globals | (Double & js.Object) | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - typings.csstype.csstypeStrings.currentColor
-*/
-type FloodColor = _FloodColor | String
+type FlexWrap = "nowrap" | "wrap" | "wrap-reverse" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type Float = "inline-end" | "inline-start" | "left" | "none" | "right" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type FloodColor = Globals | typings.csstype.mod.DataType.Color | "currentColor"
 
 type FloodOpacity = Globals | (Double & js.Object) | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.caption
-  - typings.csstype.csstypeStrings.icon
-  - typings.csstype.csstypeStrings.menu_
-  - typings.csstype.csstypeStrings.`message-box`
-  - typings.csstype.csstypeStrings.`small-caption`
-  - typings.csstype.csstypeStrings.`status-bar`
-  - java.lang.String
-*/
-type Font = _Font | String
+type Font = Globals | "caption" | "icon" | "menu" | "message-box" | "small-caption" | "status-bar" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.GenericFamily
-  - java.lang.String
-*/
-type FontFamily = _FontFamily | String
+type FontFamily = Globals | GenericFamily | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-*/
-type FontFeatureSettings = _FontFeatureSettings | String
+type FontFeatureSettings = Globals | "normal" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-*/
-type FontLanguageOverride = _FontLanguageOverride | String
+type FontKerning = "auto" | "none" | "normal" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.AbsoluteSize
-  - TLength
-  - typings.csstype.csstypeStrings.larger
-  - typings.csstype.csstypeStrings.smaller
-  - java.lang.String
-*/
-type FontSize[TLength] = _FontSize[TLength] | TLength | String
+type FontLanguageOverride = Globals | "normal" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.`from-font`
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type FontSizeAdjust = _FontSizeAdjust | (Double & js.Object) | String
+type FontOpticalSizing = "auto" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.AbsoluteSize
-  - TLength
-  - typings.csstype.csstypeStrings.always
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.never
-*/
-type FontSmooth[TLength] = _FontSmooth[TLength] | TLength
+type FontSize[TLength] = Globals | AbsoluteSize | TLength | "larger" | "smaller" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.FontStretchAbsolute
-*/
-type FontStretch = _FontStretch | String
+type FontSizeAdjust = Globals | "from-font" | "none" | String | (Double & js.Object)
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.italic
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.oblique
-  - java.lang.String
-*/
-type FontStyle = _FontStyle | String
+type FontSmooth[TLength] = Globals | AbsoluteSize | TLength | "always" | "auto" | "never"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.`small-caps`
-  - typings.csstype.csstypeStrings.style
-  - typings.csstype.csstypeStrings.weight
-  - java.lang.String
-*/
-type FontSynthesis = _FontSynthesis | String
+type FontStretch = Globals | FontStretchAbsolute
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.EastAsianVariantValues
-  - typings.csstype.csstypeStrings.`all-petite-caps`
-  - typings.csstype.csstypeStrings.`all-small-caps`
-  - typings.csstype.csstypeStrings.`common-ligatures`
-  - typings.csstype.csstypeStrings.contextual
-  - typings.csstype.csstypeStrings.`diagonal-fractions`
-  - typings.csstype.csstypeStrings.`discretionary-ligatures`
-  - typings.csstype.csstypeStrings.`full-width`
-  - typings.csstype.csstypeStrings.`historical-forms`
-  - typings.csstype.csstypeStrings.`historical-ligatures`
-  - typings.csstype.csstypeStrings.`lining-nums`
-  - typings.csstype.csstypeStrings.`no-common-ligatures`
-  - typings.csstype.csstypeStrings.`no-contextual`
-  - typings.csstype.csstypeStrings.`no-discretionary-ligatures`
-  - typings.csstype.csstypeStrings.`no-historical-ligatures`
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.`oldstyle-nums`
-  - typings.csstype.csstypeStrings.ordinal
-  - typings.csstype.csstypeStrings.`petite-caps`
-  - typings.csstype.csstypeStrings.`proportional-nums`
-  - typings.csstype.csstypeStrings.`proportional-width`
-  - typings.csstype.csstypeStrings.ruby
-  - typings.csstype.csstypeStrings.`slashed-zero`
-  - typings.csstype.csstypeStrings.`small-caps`
-  - typings.csstype.csstypeStrings.`stacked-fractions`
-  - typings.csstype.csstypeStrings.`tabular-nums`
-  - typings.csstype.csstypeStrings.`titling-caps`
-  - typings.csstype.csstypeStrings.unicase
-  - java.lang.String
-*/
-type FontVariant = _FontVariant | String
+type FontStyle = Globals | "italic" | "normal" | "oblique" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.`historical-forms`
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-*/
-type FontVariantAlternates = _FontVariantAlternates | String
+type FontSynthesis = Globals | "none" | "small-caps" | "style" | "weight" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.EastAsianVariantValues
-  - typings.csstype.csstypeStrings.`full-width`
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.`proportional-width`
-  - typings.csstype.csstypeStrings.ruby
-  - java.lang.String
-*/
-type FontVariantEastAsian = _FontVariantEastAsian | String
+type FontVariant = Globals | EastAsianVariantValues | "all-petite-caps" | "all-small-caps" | "common-ligatures" | "contextual" | "diagonal-fractions" | "discretionary-ligatures" | "full-width" | "historical-forms" | "historical-ligatures" | "lining-nums" | "no-common-ligatures" | "no-contextual" | "no-discretionary-ligatures" | "no-historical-ligatures" | "none" | "normal" | "oldstyle-nums" | "ordinal" | "petite-caps" | "proportional-nums" | "proportional-width" | "ruby" | "slashed-zero" | "small-caps" | "stacked-fractions" | "tabular-nums" | "titling-caps" | "unicase" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.`common-ligatures`
-  - typings.csstype.csstypeStrings.contextual
-  - typings.csstype.csstypeStrings.`discretionary-ligatures`
-  - typings.csstype.csstypeStrings.`historical-ligatures`
-  - typings.csstype.csstypeStrings.`no-common-ligatures`
-  - typings.csstype.csstypeStrings.`no-contextual`
-  - typings.csstype.csstypeStrings.`no-discretionary-ligatures`
-  - typings.csstype.csstypeStrings.`no-historical-ligatures`
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-*/
-type FontVariantLigatures = _FontVariantLigatures | String
+type FontVariantAlternates = Globals | "historical-forms" | "normal" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.`diagonal-fractions`
-  - typings.csstype.csstypeStrings.`lining-nums`
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.`oldstyle-nums`
-  - typings.csstype.csstypeStrings.ordinal
-  - typings.csstype.csstypeStrings.`proportional-nums`
-  - typings.csstype.csstypeStrings.`slashed-zero`
-  - typings.csstype.csstypeStrings.`stacked-fractions`
-  - typings.csstype.csstypeStrings.`tabular-nums`
-  - java.lang.String
-*/
-type FontVariantNumeric = _FontVariantNumeric | String
+type FontVariantCaps = "all-petite-caps" | "all-small-caps" | "normal" | "petite-caps" | "small-caps" | "titling-caps" | "unicase" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-*/
-type FontVariationSettings = _FontVariationSettings | String
+type FontVariantEastAsian = Globals | EastAsianVariantValues | "full-width" | "normal" | "proportional-width" | "ruby" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.FontWeightAbsolute
-  - typings.csstype.csstypeStrings.bolder
-  - typings.csstype.csstypeStrings.lighter
-*/
-type FontWeight = _FontWeight | (Double & js.Object) | String
+type FontVariantLigatures = Globals | "common-ligatures" | "contextual" | "discretionary-ligatures" | "historical-ligatures" | "no-common-ligatures" | "no-contextual" | "no-discretionary-ligatures" | "no-historical-ligatures" | "none" | "normal" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-*/
-type Gap[TLength] = _Gap[TLength] | TLength | String
+type FontVariantNumeric = Globals | "diagonal-fractions" | "lining-nums" | "normal" | "oldstyle-nums" | "ordinal" | "proportional-nums" | "slashed-zero" | "stacked-fractions" | "tabular-nums" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type GlyphOrientationVertical = _GlyphOrientationVertical | (Double & js.Object) | String
+type FontVariantPosition = "normal" | "sub" | "super" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type Grid = _Grid | String
+type FontVariationSettings = Globals | "normal" | String
+
+type FontWeight = Globals | FontWeightAbsolute | "bolder" | "lighter"
+
+type ForcedColorAdjust = "auto" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type Gap[TLength] = Globals | TLength | "normal" | String
+
+type GlyphOrientationVertical = Globals | "auto" | String | (Double & js.Object)
+
+type Grid = Globals | "none" | String
 
 type GridArea = Globals | GridLine | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.TrackBreadth[TLength]
-  - java.lang.String
-*/
-type GridAutoColumns[TLength] = _GridAutoColumns[TLength] | String | TLength
+type GridAutoColumns[TLength] = Globals | TrackBreadth[TLength] | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.column
-  - typings.csstype.csstypeStrings.dense
-  - typings.csstype.csstypeStrings.row
-  - java.lang.String
-*/
-type GridAutoFlow = _GridAutoFlow | String
+type GridAutoFlow = Globals | "column" | "dense" | "row" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.TrackBreadth[TLength]
-  - java.lang.String
-*/
-type GridAutoRows[TLength] = _GridAutoRows[TLength] | String | TLength
+type GridAutoRows[TLength] = Globals | TrackBreadth[TLength] | String
 
 type GridColumn = Globals | GridLine | String
 
@@ -1129,712 +439,193 @@ type GridRowGap[TLength] = Globals | TLength | String
 
 type GridRowStart = Globals | GridLine
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type GridTemplate = _GridTemplate | String
+type GridTemplate = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type GridTemplateAreas = _GridTemplateAreas | String
+type GridTemplateAreas = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.TrackBreadth[TLength]
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.subgrid
-  - java.lang.String
-*/
-type GridTemplateColumns[TLength] = _GridTemplateColumns[TLength] | String | TLength
+type GridTemplateColumns[TLength] = Globals | TrackBreadth[TLength] | "none" | "subgrid" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.TrackBreadth[TLength]
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.subgrid
-  - java.lang.String
-*/
-type GridTemplateRows[TLength] = _GridTemplateRows[TLength] | String | TLength
+type GridTemplateRows[TLength] = Globals | TrackBreadth[TLength] | "none" | "subgrid" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.`allow-end`
-  - typings.csstype.csstypeStrings.first
-  - typings.csstype.csstypeStrings.`force-end`
-  - typings.csstype.csstypeStrings.last
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type HangingPunctuation = _HangingPunctuation | String
+type HangingPunctuation = Globals | "allow-end" | "first" | "force-end" | "last" | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.`-moz-max-content`
-  - typings.csstype.csstypeStrings.`-moz-min-content`
-  - typings.csstype.csstypeStrings.`-webkit-fit-content`
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.`fit-content`
-  - typings.csstype.csstypeStrings.`max-content`
-  - typings.csstype.csstypeStrings.`min-content`
-  - java.lang.String
-*/
-type Height[TLength] = _Height[TLength] | TLength | String
+type Height[TLength] = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "-webkit-fit-content" | "auto" | "fit-content" | "max-content" | "min-content" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type HyphenateCharacter = _HyphenateCharacter | String
+type HyphenateCharacter = Globals | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.flip
-  - typings.csstype.csstypeStrings.`from-image`
-  - java.lang.String
-*/
-type ImageOrientation = _ImageOrientation | String
+type Hyphens = "auto" | "manual" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.`from-image`
-  - java.lang.String
-*/
-type ImageResolution = _ImageResolution | String
+type ImageOrientation = Globals | "flip" | "from-image" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type InitialLetter = _InitialLetter | (Double & js.Object) | String
+type ImageRendering = "-moz-crisp-edges" | "-webkit-optimize-contrast" | "auto" | "crisp-edges" | "pixelated" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.`-moz-fit-content`
-  - typings.csstype.csstypeStrings.`-moz-max-content`
-  - typings.csstype.csstypeStrings.`-moz-min-content`
-  - typings.csstype.csstypeStrings.`-webkit-fill-available`
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.`fit-content`
-  - typings.csstype.csstypeStrings.`max-content`
-  - typings.csstype.csstypeStrings.`min-content`
-  - java.lang.String
-*/
-type InlineSize[TLength] = _InlineSize[TLength] | TLength | String
+type ImageResolution = Globals | "from-image" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type Inset[TLength] = _Inset[TLength] | TLength | String
+type ImeMode = "active" | "auto" | "disabled" | "inactive" | "normal" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type InsetBlock[TLength] = _InsetBlock[TLength] | TLength | String
+type InitialLetter = Globals | "normal" | String | (Double & js.Object)
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type InsetBlockEnd[TLength] = _InsetBlockEnd[TLength] | TLength | String
+type InlineSize[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-content" | "-moz-min-content" | "-webkit-fill-available" | "auto" | "fit-content" | "max-content" | "min-content" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type InsetBlockStart[TLength] = _InsetBlockStart[TLength] | TLength | String
+type InputSecurity = "auto" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type InsetInline[TLength] = _InsetInline[TLength] | TLength | String
+type Inset[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type InsetInlineEnd[TLength] = _InsetInlineEnd[TLength] | TLength | String
+type InsetBlock[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type InsetInlineStart[TLength] = _InsetInlineStart[TLength] | TLength | String
+type InsetBlockEnd[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.ContentDistribution
-  - typings.csstype.mod.DataType.ContentPosition
-  - typings.csstype.csstypeStrings.left
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.right
-  - java.lang.String
-*/
-type JustifyContent = _JustifyContent | String
+type InsetBlockStart[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.SelfPosition
-  - typings.csstype.csstypeStrings.baseline
-  - typings.csstype.csstypeStrings.left
-  - typings.csstype.csstypeStrings.legacy
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.right
-  - typings.csstype.csstypeStrings.stretch
-  - java.lang.String
-*/
-type JustifyItems = _JustifyItems | String
+type InsetInline[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.SelfPosition
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.baseline
-  - typings.csstype.csstypeStrings.left
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.right
-  - typings.csstype.csstypeStrings.stretch
-  - java.lang.String
-*/
-type JustifySelf = _JustifySelf | String
+type InsetInlineEnd[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.ContentDistribution
-  - typings.csstype.mod.DataType.ContentPosition
-  - typings.csstype.csstypeStrings.left
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.right
-  - java.lang.String
-*/
-type JustifyTracks = _JustifyTracks | String
+type InsetInlineStart[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type Left[TLength] = _Left[TLength] | TLength | String
+type Isolation = "auto" | "isolate" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.normal
-*/
-type LetterSpacing[TLength] = _LetterSpacing[TLength] | TLength
+type JustifyContent = Globals | ContentDistribution | ContentPosition | "left" | "normal" | "right" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - typings.csstype.csstypeStrings.currentColor
-*/
-type LightingColor = _LightingColor | String
+type JustifyItems = Globals | SelfPosition | "baseline" | "left" | "legacy" | "normal" | "right" | "stretch" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - scala.Double & js.Object
-  - java.lang.String
-*/
-type LineClamp = _LineClamp | (Double & js.Object) | String
+type JustifySelf = Globals | SelfPosition | "auto" | "baseline" | "left" | "normal" | "right" | "stretch" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type LineHeight[TLength] = _LineHeight[TLength] | (Double & js.Object) | TLength | String
+type JustifyTracks = Globals | ContentDistribution | ContentPosition | "left" | "normal" | "right" | String
+
+type Left[TLength] = Globals | TLength | "auto" | String
+
+type LetterSpacing[TLength] = Globals | TLength | "normal"
+
+type LightingColor = Globals | typings.csstype.mod.DataType.Color | "currentColor"
+
+type LineBreak = "anywhere" | "auto" | "loose" | "normal" | "strict" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type LineClamp = Globals | "none" | (Double & js.Object) | String
+
+type LineHeight[TLength] = Globals | TLength | "normal" | String | (Double & js.Object)
 
 type LineHeightStep[TLength] = Globals | TLength
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.inside
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.outside
-  - java.lang.String
-*/
-type ListStyle = _ListStyle | String
+type ListStyle = Globals | "inside" | "none" | "outside" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type ListStyleImage = _ListStyleImage | String
+type ListStyleImage = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type ListStyleType = _ListStyleType | String
+type ListStylePosition = "inside" | "outside" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type Margin[TLength] = _Margin[TLength] | TLength | String
+type ListStyleType = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type MarginBlock[TLength] = _MarginBlock[TLength] | TLength | String
+type Margin[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type MarginBlockEnd[TLength] = _MarginBlockEnd[TLength] | TLength | String
+type MarginBlock[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type MarginBlockStart[TLength] = _MarginBlockStart[TLength] | TLength | String
+type MarginBlockEnd[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type MarginBottom[TLength] = _MarginBottom[TLength] | TLength | String
+type MarginBlockStart[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type MarginInline[TLength] = _MarginInline[TLength] | TLength | String
+type MarginBottom[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type MarginInlineEnd[TLength] = _MarginInlineEnd[TLength] | TLength | String
+type MarginInline[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type MarginInlineStart[TLength] = _MarginInlineStart[TLength] | TLength | String
+type MarginInlineEnd[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type MarginLeft[TLength] = _MarginLeft[TLength] | TLength | String
+type MarginInlineStart[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type MarginRight[TLength] = _MarginRight[TLength] | TLength | String
+type MarginLeft[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type MarginTop[TLength] = _MarginTop[TLength] | TLength | String
+type MarginRight[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type Marker = _Marker | String
+type MarginTop[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MarkerEnd = _MarkerEnd | String
+type Marker = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MarkerMid = _MarkerMid | String
+type MarkerEnd = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MarkerStart = _MarkerStart | String
+type MarkerMid = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.MaskLayer[TLength]
-  - java.lang.String
-*/
-type Mask[TLength] = _Mask[TLength] | String | TLength
+type MarkerStart = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.alpha
-  - typings.csstype.csstypeStrings.luminance
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.repeat
-  - typings.csstype.csstypeStrings.round
-  - typings.csstype.csstypeStrings.space
-  - typings.csstype.csstypeStrings.stretch
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type MaskBorder = _MaskBorder | (Double & js.Object) | String
+type Mask[TLength] = Globals | MaskLayer[TLength] | String
+
+type MaskBorder = Globals | "alpha" | "luminance" | "none" | "repeat" | "round" | "space" | "stretch" | String | (Double & js.Object)
+
+type MaskBorderMode = "alpha" | "luminance" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
 type MaskBorderOutset[TLength] = Globals | TLength | String | (Double & js.Object)
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.repeat
-  - typings.csstype.csstypeStrings.round
-  - typings.csstype.csstypeStrings.space
-  - typings.csstype.csstypeStrings.stretch
-  - java.lang.String
-*/
-type MaskBorderRepeat = _MaskBorderRepeat | String
+type MaskBorderRepeat = Globals | "repeat" | "round" | "space" | "stretch" | String
 
 type MaskBorderSlice = Globals | String | (Double & js.Object)
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MaskBorderSource = _MaskBorderSource | String
+type MaskBorderSource = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type MaskBorderWidth[TLength] = _MaskBorderWidth[TLength] | (Double & js.Object) | TLength | String
+type MaskBorderWidth[TLength] = Globals | TLength | "auto" | String | (Double & js.Object)
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.GeometryBox
-  - typings.csstype.csstypeStrings.`no-clip`
-  - java.lang.String
-*/
-type MaskClip = _MaskClip | String
+type MaskClip = Globals | GeometryBox | "no-clip" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.CompositingOperator
-  - java.lang.String
-*/
-type MaskComposite = _MaskComposite | String
+type MaskComposite = Globals | CompositingOperator | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MaskImage = _MaskImage | String
+type MaskImage = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.MaskingMode
-  - java.lang.String
-*/
-type MaskMode = _MaskMode | String
+type MaskMode = Globals | MaskingMode | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.GeometryBox
-  - java.lang.String
-*/
-type MaskOrigin = _MaskOrigin | String
+type MaskOrigin = Globals | GeometryBox | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Position[TLength]
-  - java.lang.String
-*/
-type MaskPosition[TLength] = _MaskPosition[TLength] | String | TLength
+type MaskPosition[TLength] = Globals | typings.csstype.mod.DataType.Position[TLength] | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.RepeatStyle
-  - java.lang.String
-*/
-type MaskRepeat = _MaskRepeat | String
+type MaskRepeat = Globals | RepeatStyle | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.BgSize[TLength]
-  - java.lang.String
-*/
-type MaskSize[TLength] = _MaskSize[TLength] | String | TLength
+type MaskSize[TLength] = Globals | BgSize[TLength] | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.`auto-add`
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type MathDepth = _MathDepth | (Double & js.Object) | String
+type MaskType = "alpha" | "luminance" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.`-moz-max-content`
-  - typings.csstype.csstypeStrings.`-moz-min-content`
-  - typings.csstype.csstypeStrings.`-webkit-fill-available`
-  - typings.csstype.csstypeStrings.`fit-content`
-  - typings.csstype.csstypeStrings.`max-content`
-  - typings.csstype.csstypeStrings.`min-content`
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MaxBlockSize[TLength] = _MaxBlockSize[TLength] | TLength | String
+type MathDepth = Globals | "auto-add" | String | (Double & js.Object)
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.`-moz-fit-content`
-  - typings.csstype.csstypeStrings.`-moz-max-content`
-  - typings.csstype.csstypeStrings.`-moz-min-content`
-  - typings.csstype.csstypeStrings.`-webkit-fit-content`
-  - typings.csstype.csstypeStrings.`-webkit-max-content`
-  - typings.csstype.csstypeStrings.`-webkit-min-content`
-  - typings.csstype.csstypeStrings.`fit-content`
-  - typings.csstype.csstypeStrings.intrinsic
-  - typings.csstype.csstypeStrings.`max-content`
-  - typings.csstype.csstypeStrings.`min-content`
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MaxHeight[TLength] = _MaxHeight[TLength] | TLength | String
+type MathShift = "compact" | "normal" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.`-moz-fit-content`
-  - typings.csstype.csstypeStrings.`-moz-max-content`
-  - typings.csstype.csstypeStrings.`-moz-min-content`
-  - typings.csstype.csstypeStrings.`-webkit-fill-available`
-  - typings.csstype.csstypeStrings.`fit-content`
-  - typings.csstype.csstypeStrings.`max-content`
-  - typings.csstype.csstypeStrings.`min-content`
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MaxInlineSize[TLength] = _MaxInlineSize[TLength] | TLength | String
+type MathStyle = "compact" | "normal" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - scala.Double & js.Object
-  - java.lang.String
-*/
-type MaxLines = _MaxLines | (Double & js.Object) | String
+type MaxBlockSize[TLength] = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "-webkit-fill-available" | "fit-content" | "max-content" | "min-content" | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.`-moz-fit-content`
-  - typings.csstype.csstypeStrings.`-moz-max-content`
-  - typings.csstype.csstypeStrings.`-moz-min-content`
-  - typings.csstype.csstypeStrings.`-webkit-fit-content`
-  - typings.csstype.csstypeStrings.`-webkit-max-content`
-  - typings.csstype.csstypeStrings.`-webkit-min-content`
-  - typings.csstype.csstypeStrings.`fit-content`
-  - typings.csstype.csstypeStrings.intrinsic
-  - typings.csstype.csstypeStrings.`max-content`
-  - typings.csstype.csstypeStrings.`min-content`
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MaxWidth[TLength] = _MaxWidth[TLength] | TLength | String
+type MaxHeight[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-content" | "-moz-min-content" | "-webkit-fit-content" | "-webkit-max-content" | "-webkit-min-content" | "fit-content" | "intrinsic" | "max-content" | "min-content" | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.`-moz-max-content`
-  - typings.csstype.csstypeStrings.`-moz-min-content`
-  - typings.csstype.csstypeStrings.`-webkit-fill-available`
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.`fit-content`
-  - typings.csstype.csstypeStrings.`max-content`
-  - typings.csstype.csstypeStrings.`min-content`
-  - java.lang.String
-*/
-type MinBlockSize[TLength] = _MinBlockSize[TLength] | TLength | String
+type MaxInlineSize[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-content" | "-moz-min-content" | "-webkit-fill-available" | "fit-content" | "max-content" | "min-content" | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.`-moz-fit-content`
-  - typings.csstype.csstypeStrings.`-moz-max-content`
-  - typings.csstype.csstypeStrings.`-moz-min-content`
-  - typings.csstype.csstypeStrings.`-webkit-fit-content`
-  - typings.csstype.csstypeStrings.`-webkit-max-content`
-  - typings.csstype.csstypeStrings.`-webkit-min-content`
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.`fit-content`
-  - typings.csstype.csstypeStrings.intrinsic
-  - typings.csstype.csstypeStrings.`max-content`
-  - typings.csstype.csstypeStrings.`min-content`
-  - java.lang.String
-*/
-type MinHeight[TLength] = _MinHeight[TLength] | TLength | String
+type MaxLines = Globals | "none" | (Double & js.Object) | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.`-moz-fit-content`
-  - typings.csstype.csstypeStrings.`-moz-max-content`
-  - typings.csstype.csstypeStrings.`-moz-min-content`
-  - typings.csstype.csstypeStrings.`-webkit-fill-available`
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.`fit-content`
-  - typings.csstype.csstypeStrings.`max-content`
-  - typings.csstype.csstypeStrings.`min-content`
-  - java.lang.String
-*/
-type MinInlineSize[TLength] = _MinInlineSize[TLength] | TLength | String
+type MaxWidth[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-content" | "-moz-min-content" | "-webkit-fit-content" | "-webkit-max-content" | "-webkit-min-content" | "fit-content" | "intrinsic" | "max-content" | "min-content" | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.`-moz-fit-content`
-  - typings.csstype.csstypeStrings.`-moz-max-content`
-  - typings.csstype.csstypeStrings.`-moz-min-content`
-  - typings.csstype.csstypeStrings.`-webkit-fill-available`
-  - typings.csstype.csstypeStrings.`-webkit-fit-content`
-  - typings.csstype.csstypeStrings.`-webkit-max-content`
-  - typings.csstype.csstypeStrings.`-webkit-min-content`
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.`fit-content`
-  - typings.csstype.csstypeStrings.intrinsic
-  - typings.csstype.csstypeStrings.`max-content`
-  - typings.csstype.csstypeStrings.`min-content`
-  - typings.csstype.csstypeStrings.`min-intrinsic`
-  - java.lang.String
-*/
-type MinWidth[TLength] = _MinWidth[TLength] | TLength | String
+type MinBlockSize[TLength] = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "-webkit-fill-available" | "auto" | "fit-content" | "max-content" | "min-content" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MozBinding = _MozBinding | String
+type MinHeight[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-content" | "-moz-min-content" | "-webkit-fit-content" | "-webkit-max-content" | "-webkit-min-content" | "auto" | "fit-content" | "intrinsic" | "max-content" | "min-content" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MozBorderBottomColors = _MozBorderBottomColors | String
+type MinInlineSize[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-content" | "-moz-min-content" | "-webkit-fill-available" | "auto" | "fit-content" | "max-content" | "min-content" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MozBorderLeftColors = _MozBorderLeftColors | String
+type MinWidth[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-content" | "-moz-min-content" | "-webkit-fill-available" | "-webkit-fit-content" | "-webkit-max-content" | "-webkit-min-content" | "auto" | "fit-content" | "intrinsic" | "max-content" | "min-content" | "min-intrinsic" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MozBorderRightColors = _MozBorderRightColors | String
+type MixBlendMode = "plus-lighter" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset" | "color" | "color-burn" | "color-dodge" | "darken" | "difference" | "exclusion" | "hard-light" | "hue" | "lighten" | "luminosity" | "multiply" | "normal" | "overlay" | "saturation" | "screen" | "soft-light"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MozBorderTopColors = _MozBorderTopColors | String
+type MozAppearance = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with "-moz-mac-unified-toolbar", "-moz-win-borderless-glass", "-moz-win-browsertabbar-toolbox" */ String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.fill
-  - typings.csstype.csstypeStrings.`fill-opacity`
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.stroke
-  - typings.csstype.csstypeStrings.`stroke-opacity`
-  - java.lang.String
-*/
-type MozContextProperties = _MozContextProperties | String
+type MozBinding = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeInts.`0`
-  - java.lang.String
-  - typings.csstype.csstypeInts.`1`
-*/
-type MozForceBrokenImageIcon = _MozForceBrokenImageIcon | String
+type MozBorderBottomColors = Globals | typings.csstype.mod.DataType.Color | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type MozImageRegion = _MozImageRegion | String
+type MozBorderLeftColors = Globals | typings.csstype.mod.DataType.Color | "none" | String
+
+type MozBorderRightColors = Globals | typings.csstype.mod.DataType.Color | "none" | String
+
+type MozBorderTopColors = Globals | typings.csstype.mod.DataType.Color | "none" | String
+
+type MozContextProperties = Globals | "fill" | "fill-opacity" | "none" | "stroke" | "stroke-opacity" | String
+
+type MozFloatEdge = "border-box" | "content-box" | "margin-box" | "padding-box" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MozForceBrokenImageIcon = Globals | 0 | String | 1
+
+type MozImageRegion = Globals | "auto" | String
+
+type MozOrient = "block" | "horizontal" | "inline" | "vertical" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
 type MozOutlineRadius[TLength] = Globals | TLength | String
 
@@ -1846,191 +637,129 @@ type MozOutlineRadiusTopleft[TLength] = Globals | TLength | String
 
 type MozOutlineRadiusTopright[TLength] = Globals | TLength | String
 
+type MozStackSizing = "ignore" | "stretch-to-fit" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MozTextBlink = "blink" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MozUserFocus = "ignore" | "none" | "normal" | "select-after" | "select-all" | "select-before" | "select-menu" | "select-same" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MozUserInput = "auto" | "disabled" | "enabled" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MozUserModify = "read-only" | "read-write" | "write-only" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MozWindowDragging = "drag" | "no-drag" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MozWindowShadow = "default" | "menu" | "none" | "sheet" | "tooltip" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MsAccelerator = "false" | "true" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MsBlockProgression = "bt" | "lr" | "rl" | "tb" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MsContentZoomChaining = "chained" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
 type MsContentZoomLimit = Globals | String
 
 type MsContentZoomLimitMax = Globals | String
 
 type MsContentZoomLimitMin = Globals | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.mandatory
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.proximity
-  - java.lang.String
-*/
-type MsContentZoomSnap = _MsContentZoomSnap | String
+type MsContentZoomSnap = Globals | "mandatory" | "none" | "proximity" | String
 
 type MsContentZoomSnapPoints = Globals | String
 
+type MsContentZoomSnapType = "mandatory" | "none" | "proximity" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MsContentZooming = "none" | "zoom" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
 type MsFilter = Globals | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MsFlowFrom = _MsFlowFrom | String
+type MsFlowFrom = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MsFlowInto = _MsFlowInto | String
+type MsFlowInto = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.TrackBreadth[TLength]
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MsGridColumns[TLength] = _MsGridColumns[TLength] | String | TLength
+type MsGridColumns[TLength] = Globals | TrackBreadth[TLength] | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.TrackBreadth[TLength]
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type MsGridRows[TLength] = _MsGridRows[TLength] | String | TLength
+type MsGridRows[TLength] = Globals | TrackBreadth[TLength] | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type MsHyphenateLimitChars = _MsHyphenateLimitChars | (Double & js.Object) | String
+type MsHighContrastAdjust = "auto" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.`no-limit`
-  - scala.Double & js.Object
-  - java.lang.String
-*/
-type MsHyphenateLimitLines = _MsHyphenateLimitLines | (Double & js.Object) | String
+type MsHyphenateLimitChars = Globals | "auto" | String | (Double & js.Object)
+
+type MsHyphenateLimitLines = Globals | "no-limit" | (Double & js.Object) | String
 
 type MsHyphenateLimitZone[TLength] = Globals | TLength | String
 
+type MsImeAlign = "after" | "auto" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MsOverflowStyle = "-ms-autohiding-scrollbar" | "auto" | "none" | "scrollbar" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MsScrollChaining = "chained" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
 type MsScrollLimit = Globals | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-*/
-type MsScrollLimitXMax[TLength] = _MsScrollLimitXMax[TLength] | TLength
+type MsScrollLimitXMax[TLength] = Globals | TLength | "auto"
 
 type MsScrollLimitXMin[TLength] = Globals | TLength
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-*/
-type MsScrollLimitYMax[TLength] = _MsScrollLimitYMax[TLength] | TLength
+type MsScrollLimitYMax[TLength] = Globals | TLength | "auto"
 
 type MsScrollLimitYMin[TLength] = Globals | TLength
+
+type MsScrollRails = "none" | "railed" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
 type MsScrollSnapPointsX = Globals | String
 
 type MsScrollSnapPointsY = Globals | String
 
+type MsScrollSnapType = "mandatory" | "none" | "proximity" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
 type MsScrollSnapX = Globals | String
 
 type MsScrollSnapY = Globals | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type MsScrollbar3dlightColor = _MsScrollbar3dlightColor | String
+type MsScrollTranslation = "none" | "vertical-to-horizontal" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type MsScrollbarArrowColor = _MsScrollbarArrowColor | String
+type MsScrollbar3dlightColor = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type MsScrollbarBaseColor = _MsScrollbarBaseColor | String
+type MsScrollbarArrowColor = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type MsScrollbarDarkshadowColor = _MsScrollbarDarkshadowColor | String
+type MsScrollbarBaseColor = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type MsScrollbarFaceColor = _MsScrollbarFaceColor | String
+type MsScrollbarDarkshadowColor = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type MsScrollbarHighlightColor = _MsScrollbarHighlightColor | String
+type MsScrollbarFaceColor = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type MsScrollbarShadowColor = _MsScrollbarShadowColor | String
+type MsScrollbarHighlightColor = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type MsScrollbarTrackColor = _MsScrollbarTrackColor | String
+type MsScrollbarShadowColor = Globals | typings.csstype.mod.DataType.Color
+
+type MsScrollbarTrackColor = Globals | typings.csstype.mod.DataType.Color
+
+type MsTextAutospace = "ideograph-alpha" | "ideograph-numeric" | "ideograph-parenthesis" | "ideograph-space" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MsTouchSelect = "grippers" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MsUserSelect = "element" | "none" | "text" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type MsWrapFlow = "auto" | "both" | "clear" | "end" | "maximum" | "start" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
 type MsWrapMargin[TLength] = Globals | TLength
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Position[TLength]
-*/
-type ObjectPosition[TLength] = _ObjectPosition[TLength] | TLength | String
+type MsWrapThrough = "none" | "wrap" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Position[TLength]
-  - typings.csstype.mod.DataType.GeometryBox
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type Offset[TLength] = _Offset[TLength] | String | TLength
+type ObjectFit = "contain" | "cover" | "fill" | "none" | "scale-down" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Position[TLength]
-  - typings.csstype.csstypeStrings.auto
-*/
-type OffsetAnchor[TLength] = _OffsetAnchor[TLength] | TLength | String
+type ObjectPosition[TLength] = Globals | typings.csstype.mod.DataType.Position[TLength]
+
+type Offset[TLength] = Globals | typings.csstype.mod.DataType.Position[TLength] | GeometryBox | "auto" | "none" | String
+
+type OffsetAnchor[TLength] = Globals | typings.csstype.mod.DataType.Position[TLength] | "auto"
 
 type OffsetDistance[TLength] = Globals | TLength | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.GeometryBox
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type OffsetPath = _OffsetPath | String
+type OffsetPath = Globals | GeometryBox | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.reverse
-  - java.lang.String
-*/
-type OffsetRotate = _OffsetRotate | String
+type OffsetRotate = Globals | "auto" | "reverse" | String
 
 type Opacity = Globals | String | (Double & js.Object)
 
@@ -2038,68 +767,43 @@ type Order = Globals | (Double & js.Object) | String
 
 type Orphans = Globals | (Double & js.Object) | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.invert
-  - java.lang.String
-*/
-type Outline[TLength] = _Outline[TLength] | String | TLength
+type Outline[TLength] = Globals | typings.csstype.mod.DataType.Color | LineStyle | LineWidth[TLength] | "auto" | "invert" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - typings.csstype.csstypeStrings.invert
-*/
-type OutlineColor = _OutlineColor | String
+type OutlineColor = Globals | typings.csstype.mod.DataType.Color | "invert"
 
 type OutlineOffset[TLength] = Globals | TLength
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type OutlineStyle = _OutlineStyle | String
+type OutlineStyle = Globals | LineStyle | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-*/
-type OutlineWidth[TLength] = _OutlineWidth[TLength] | TLength
+type OutlineWidth[TLength] = Globals | LineWidth[TLength]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.`-moz-hidden-unscrollable`
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.clip
-  - typings.csstype.csstypeStrings.hidden
-  - typings.csstype.csstypeStrings.scroll
-  - typings.csstype.csstypeStrings.visible
-  - java.lang.String
-*/
-type Overflow = _Overflow | String
+type Overflow = Globals | "-moz-hidden-unscrollable" | "auto" | "clip" | "hidden" | "scroll" | "visible" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.VisualBox
-  - TLength
-  - java.lang.String
-*/
-type OverflowClipMargin[TLength] = _OverflowClipMargin[TLength] | TLength | String
+type OverflowAnchor = "auto" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.contain
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type OverscrollBehavior = _OverscrollBehavior | String
+type OverflowBlock = "auto" | "clip" | "hidden" | "scroll" | "visible" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type OverflowClipBox = "content-box" | "padding-box" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type OverflowClipMargin[TLength] = Globals | VisualBox | TLength | String
+
+type OverflowInline = "auto" | "clip" | "hidden" | "scroll" | "visible" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type OverflowWrap = "anywhere" | "break-word" | "normal" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type OverflowX = "-moz-hidden-unscrollable" | "auto" | "clip" | "hidden" | "scroll" | "visible" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type OverflowY = "-moz-hidden-unscrollable" | "auto" | "clip" | "hidden" | "scroll" | "visible" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type OverscrollBehavior = Globals | "auto" | "contain" | "none" | String
+
+type OverscrollBehaviorBlock = "auto" | "contain" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type OverscrollBehaviorInline = "auto" | "contain" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type OverscrollBehaviorX = "auto" | "contain" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type OverscrollBehaviorY = "auto" | "contain" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
 type Padding[TLength] = Globals | TLength | String
 
@@ -2123,108 +827,49 @@ type PaddingRight[TLength] = Globals | TLength | String
 
 type PaddingTop[TLength] = Globals | TLength | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.fill
-  - typings.csstype.csstypeStrings.markers
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.stroke
-  - java.lang.String
-*/
-type PaintOrder = _PaintOrder | String
+type PageBreakAfter = "always" | "auto" | "avoid" | "left" | "recto" | "right" | "verso" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.none
-*/
-type Perspective[TLength] = _Perspective[TLength] | TLength
+type PageBreakBefore = "always" | "auto" | "avoid" | "left" | "recto" | "right" | "verso" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Position[TLength]
-*/
-type PerspectiveOrigin[TLength] = _PerspectiveOrigin[TLength] | TLength | String
+type PageBreakInside = "auto" | "avoid" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.ContentDistribution
-  - typings.csstype.mod.DataType.ContentPosition
-  - typings.csstype.csstypeStrings.baseline
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-*/
-type PlaceContent = _PlaceContent | String
+type PaintOrder = Globals | "fill" | "markers" | "normal" | "stroke" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.SelfPosition
-  - typings.csstype.csstypeStrings.baseline
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.stretch
-  - java.lang.String
-*/
-type PlaceItems = _PlaceItems | String
+type Perspective[TLength] = Globals | TLength | "none"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.SelfPosition
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.baseline
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.stretch
-  - java.lang.String
-*/
-type PlaceSelf = _PlaceSelf | String
+type PerspectiveOrigin[TLength] = Globals | typings.csstype.mod.DataType.Position[TLength]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type Quotes = _Quotes | String
+type PlaceContent = Globals | ContentDistribution | ContentPosition | "baseline" | "normal" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type Right[TLength] = _Right[TLength] | TLength | String
+type PlaceItems = Globals | SelfPosition | "baseline" | "normal" | "stretch" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type Rotate = _Rotate | String
+type PlaceSelf = Globals | SelfPosition | "auto" | "baseline" | "normal" | "stretch" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.normal
-  - java.lang.String
-*/
-type RowGap[TLength] = _RowGap[TLength] | TLength | String
+type PointerEvents = "all" | "auto" | "fill" | "inherit" | "none" | "painted" | "stroke" | "visible" | "visibleFill" | "visiblePainted" | "visibleStroke" | "-moz-initial" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.alternate
-  - typings.csstype.csstypeStrings.`inter-character`
-  - typings.csstype.csstypeStrings.over
-  - typings.csstype.csstypeStrings.under
-  - java.lang.String
-*/
-type RubyPosition = _RubyPosition | String
+type Position = "-webkit-sticky" | "absolute" | "fixed" | "relative" | "static" | "sticky" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type Scale = _Scale | (Double & js.Object) | String
+type PrintColorAdjust = "economy" | "exact" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type Quotes = Globals | "auto" | "none" | String
+
+type Resize = "block" | "both" | "horizontal" | "inline" | "none" | "vertical" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type Right[TLength] = Globals | TLength | "auto" | String
+
+type Rotate = Globals | "none" | String
+
+type RowGap[TLength] = Globals | TLength | "normal" | String
+
+type RubyAlign = "center" | "space-around" | "space-between" | "start" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type RubyMerge = "auto" | "collapse" | "separate" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type RubyPosition = Globals | "alternate" | "inter-character" | "over" | "under" | String
+
+type Scale = Globals | "none" | String | (Double & js.Object)
+
+type ScrollBehavior = "auto" | "smooth" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
 type ScrollMargin[TLength] = Globals | TLength | String
 
@@ -2248,195 +893,73 @@ type ScrollMarginRight[TLength] = Globals | TLength
 
 type ScrollMarginTop[TLength] = Globals | TLength
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type ScrollPadding[TLength] = _ScrollPadding[TLength] | TLength | String
+type ScrollPadding[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type ScrollPaddingBlock[TLength] = _ScrollPaddingBlock[TLength] | TLength | String
+type ScrollPaddingBlock[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type ScrollPaddingBlockEnd[TLength] = _ScrollPaddingBlockEnd[TLength] | TLength | String
+type ScrollPaddingBlockEnd[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type ScrollPaddingBlockStart[TLength] = _ScrollPaddingBlockStart[TLength] | TLength | String
+type ScrollPaddingBlockStart[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type ScrollPaddingBottom[TLength] = _ScrollPaddingBottom[TLength] | TLength | String
+type ScrollPaddingBottom[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type ScrollPaddingInline[TLength] = _ScrollPaddingInline[TLength] | TLength | String
+type ScrollPaddingInline[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type ScrollPaddingInlineEnd[TLength] = _ScrollPaddingInlineEnd[TLength] | TLength | String
+type ScrollPaddingInlineEnd[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type ScrollPaddingInlineStart[TLength] = _ScrollPaddingInlineStart[TLength] | TLength | String
+type ScrollPaddingInlineStart[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type ScrollPaddingLeft[TLength] = _ScrollPaddingLeft[TLength] | TLength | String
+type ScrollPaddingLeft[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type ScrollPaddingRight[TLength] = _ScrollPaddingRight[TLength] | TLength | String
+type ScrollPaddingRight[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type ScrollPaddingTop[TLength] = _ScrollPaddingTop[TLength] | TLength | String
+type ScrollPaddingTop[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.center
-  - typings.csstype.csstypeStrings.end
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.start
-  - java.lang.String
-*/
-type ScrollSnapAlign = _ScrollSnapAlign | String
+type ScrollSnapAlign = Globals | "center" | "end" | "none" | "start" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Position[TLength]
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type ScrollSnapCoordinate[TLength] = _ScrollSnapCoordinate[TLength] | String | TLength
+type ScrollSnapCoordinate[TLength] = Globals | typings.csstype.mod.DataType.Position[TLength] | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Position[TLength]
-*/
-type ScrollSnapDestination[TLength] = _ScrollSnapDestination[TLength] | TLength | String
+type ScrollSnapDestination[TLength] = Globals | typings.csstype.mod.DataType.Position[TLength]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type ScrollSnapPointsX = _ScrollSnapPointsX | String
+type ScrollSnapPointsX = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type ScrollSnapPointsY = _ScrollSnapPointsY | String
+type ScrollSnapPointsY = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.block
-  - typings.csstype.csstypeStrings.both
-  - typings.csstype.csstypeStrings.`inline`
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.x
-  - typings.csstype.csstypeStrings.y
-  - java.lang.String
-*/
-type ScrollSnapType = _ScrollSnapType | String
+type ScrollSnapStop = "always" | "normal" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type ScrollbarColor = _ScrollbarColor | String
+type ScrollSnapType = Globals | "block" | "both" | "inline" | "none" | "x" | "y" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.stable
-  - java.lang.String
-*/
-type ScrollbarGutter = _ScrollbarGutter | String
+type ScrollSnapTypeX = "mandatory" | "none" | "proximity" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type ScrollSnapTypeY = "mandatory" | "none" | "proximity" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type ScrollbarColor = Globals | "auto" | String
+
+type ScrollbarGutter = Globals | "auto" | "stable" | String
+
+type ScrollbarWidth = "auto" | "none" | "thin" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
 type ShapeImageThreshold = Globals | String | (Double & js.Object)
 
 type ShapeMargin[TLength] = Globals | TLength | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Box
-  - typings.csstype.csstypeStrings.`margin-box`
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type ShapeOutside = _ShapeOutside | String
+type ShapeOutside = Globals | Box | "margin-box" | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - typings.csstype.csstypeStrings.currentColor
-*/
-type StopColor = _StopColor | String
+type ShapeRendering = "auto" | "crispEdges" | "geometricPrecision" | "optimizeSpeed" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type StopColor = Globals | typings.csstype.mod.DataType.Color | "currentColor"
 
 type StopOpacity = Globals | (Double & js.Object) | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Paint
-*/
-type Stroke = _Stroke | String
+type Stroke = Globals | Paint
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Dasharray[TLength]
-  - typings.csstype.csstypeStrings.none
-*/
-type StrokeDasharray[TLength] = _StrokeDasharray[TLength] | Dasharray[TLength]
+type StrokeDasharray[TLength] = Globals | Dasharray[TLength] | "none"
 
 type StrokeDashoffset[TLength] = Globals | TLength | String
+
+type StrokeLinecap = "butt" | "round" | "square" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type StrokeLinejoin = "bevel" | "miter" | "round" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
 type StrokeMiterlimit = Globals | (Double & js.Object) | String
 
@@ -2446,474 +969,164 @@ type StrokeWidth[TLength] = Globals | TLength | String
 
 type TabSize[TLength] = Globals | TLength | (Double & js.Object) | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.all
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type TextCombineUpright = _TextCombineUpright | String
+type TableLayout = "auto" | "fixed" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.blink
-  - typings.csstype.csstypeStrings.dashed
-  - typings.csstype.csstypeStrings.dotted
-  - typings.csstype.csstypeStrings.double
-  - typings.csstype.csstypeStrings.`from-font`
-  - typings.csstype.csstypeStrings.`grammar-error`
-  - typings.csstype.csstypeStrings.`line-through`
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.overline
-  - typings.csstype.csstypeStrings.solid
-  - typings.csstype.csstypeStrings.`spelling-error`
-  - typings.csstype.csstypeStrings.underline
-  - typings.csstype.csstypeStrings.wavy
-  - java.lang.String
-*/
-type TextDecoration[TLength] = _TextDecoration[TLength] | TLength | String
+type TextAlign = "center" | "end" | "justify" | "left" | "match-parent" | "right" | "start" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type TextDecorationColor = _TextDecorationColor | String
+type TextAlignLast = "auto" | "center" | "end" | "justify" | "left" | "right" | "start" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.blink
-  - typings.csstype.csstypeStrings.`grammar-error`
-  - typings.csstype.csstypeStrings.`line-through`
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.overline
-  - typings.csstype.csstypeStrings.`spelling-error`
-  - typings.csstype.csstypeStrings.underline
-  - java.lang.String
-*/
-type TextDecorationLine = _TextDecorationLine | String
+type TextAnchor = "end" | "middle" | "start" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.`box-decoration`
-  - typings.csstype.csstypeStrings.edges
-  - typings.csstype.csstypeStrings.`leading-spaces`
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.objects
-  - typings.csstype.csstypeStrings.spaces
-  - typings.csstype.csstypeStrings.`trailing-spaces`
-  - java.lang.String
-*/
-type TextDecorationSkip = _TextDecorationSkip | String
+type TextCombineUpright = Globals | "all" | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.`from-font`
-  - java.lang.String
-*/
-type TextDecorationThickness[TLength] = _TextDecorationThickness[TLength] | TLength | String
+type TextDecoration[TLength] = Globals | typings.csstype.mod.DataType.Color | TLength | "auto" | "blink" | "dashed" | "dotted" | "double" | "from-font" | "grammar-error" | "line-through" | "none" | "overline" | "solid" | "spelling-error" | "underline" | "wavy" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - typings.csstype.csstypeStrings.circle
-  - typings.csstype.csstypeStrings.dot
-  - typings.csstype.csstypeStrings.`double-circle`
-  - typings.csstype.csstypeStrings.filled
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.open
-  - typings.csstype.csstypeStrings.sesame
-  - typings.csstype.csstypeStrings.triangle
-  - java.lang.String
-*/
-type TextEmphasis = _TextEmphasis | String
+type TextDecorationColor = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type TextEmphasisColor = _TextEmphasisColor | String
+type TextDecorationLine = Globals | "blink" | "grammar-error" | "line-through" | "none" | "overline" | "spelling-error" | "underline" | String
+
+type TextDecorationSkip = Globals | "box-decoration" | "edges" | "leading-spaces" | "none" | "objects" | "spaces" | "trailing-spaces" | String
+
+type TextDecorationSkipInk = "all" | "auto" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type TextDecorationStyle = "dashed" | "dotted" | "double" | "solid" | "wavy" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type TextDecorationThickness[TLength] = Globals | TLength | "auto" | "from-font" | String
+
+type TextEmphasis = Globals | typings.csstype.mod.DataType.Color | "circle" | "dot" | "double-circle" | "filled" | "none" | "open" | "sesame" | "triangle" | String
+
+type TextEmphasisColor = Globals | typings.csstype.mod.DataType.Color
 
 type TextEmphasisPosition = Globals | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.circle
-  - typings.csstype.csstypeStrings.dot
-  - typings.csstype.csstypeStrings.`double-circle`
-  - typings.csstype.csstypeStrings.filled
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.open
-  - typings.csstype.csstypeStrings.sesame
-  - typings.csstype.csstypeStrings.triangle
-  - java.lang.String
-*/
-type TextEmphasisStyle = _TextEmphasisStyle | String
+type TextEmphasisStyle = Globals | "circle" | "dot" | "double-circle" | "filled" | "none" | "open" | "sesame" | "triangle" | String
 
 type TextIndent[TLength] = Globals | TLength | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.clip
-  - typings.csstype.csstypeStrings.ellipsis
-  - java.lang.String
-*/
-type TextOverflow = _TextOverflow | String
+type TextJustify = "auto" | "inter-character" | "inter-word" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type TextShadow = _TextShadow | String
+type TextOrientation = "mixed" | "sideways" | "upright" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type TextSizeAdjust = _TextSizeAdjust | String
+type TextOverflow = Globals | "clip" | "ellipsis" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type TextUnderlineOffset[TLength] = _TextUnderlineOffset[TLength] | TLength | String
+type TextRendering = "auto" | "geometricPrecision" | "optimizeLegibility" | "optimizeSpeed" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.`from-font`
-  - typings.csstype.csstypeStrings.left
-  - typings.csstype.csstypeStrings.right
-  - typings.csstype.csstypeStrings.under
-  - java.lang.String
-*/
-type TextUnderlinePosition = _TextUnderlinePosition | String
+type TextShadow = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type Top[TLength] = _Top[TLength] | TLength | String
+type TextSizeAdjust = Globals | "auto" | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.`-ms-manipulation`
-  - typings.csstype.csstypeStrings.`-ms-none`
-  - typings.csstype.csstypeStrings.`-ms-pinch-zoom`
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.manipulation
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.`pan-down`
-  - typings.csstype.csstypeStrings.`pan-left`
-  - typings.csstype.csstypeStrings.`pan-right`
-  - typings.csstype.csstypeStrings.`pan-up`
-  - typings.csstype.csstypeStrings.`pan-x`
-  - typings.csstype.csstypeStrings.`pan-y`
-  - typings.csstype.csstypeStrings.`pinch-zoom`
-  - java.lang.String
-*/
-type TouchAction = _TouchAction | String
+type TextTransform = "capitalize" | "full-size-kana" | "full-width" | "lowercase" | "none" | "uppercase" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type Transform = _Transform | String
+type TextUnderlineOffset[TLength] = Globals | TLength | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.bottom
-  - typings.csstype.csstypeStrings.center
-  - typings.csstype.csstypeStrings.left
-  - typings.csstype.csstypeStrings.right
-  - typings.csstype.csstypeStrings.top
-  - java.lang.String
-*/
-type TransformOrigin[TLength] = _TransformOrigin[TLength] | TLength | String
+type TextUnderlinePosition = Globals | "auto" | "from-font" | "left" | "right" | "under" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.SingleTransition[TTime]
-  - java.lang.String
-*/
-type Transition[TTime] = _Transition[TTime] | String | TTime
+type Top[TLength] = Globals | TLength | "auto" | String
+
+type TouchAction = Globals | "-ms-manipulation" | "-ms-none" | "-ms-pinch-zoom" | "auto" | "manipulation" | "none" | "pan-down" | "pan-left" | "pan-right" | "pan-up" | "pan-x" | "pan-y" | "pinch-zoom" | String
+
+type Transform = Globals | "none" | String
+
+type TransformBox = "border-box" | "content-box" | "fill-box" | "stroke-box" | "view-box" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type TransformOrigin[TLength] = Globals | TLength | "bottom" | "center" | "left" | "right" | "top" | String
+
+type TransformStyle = "flat" | "preserve-3d" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type Transition[TTime] = Globals | SingleTransition[TTime] | String
 
 type TransitionDelay[TTime] = Globals | TTime | String
 
 type TransitionDuration[TTime] = Globals | TTime | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.all
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type TransitionProperty = _TransitionProperty | String
+type TransitionProperty = Globals | "all" | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.EasingFunction
-  - java.lang.String
-*/
-type TransitionTimingFunction = _TransitionTimingFunction | String
+type TransitionTimingFunction = Globals | EasingFunction | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type Translate[TLength] = _Translate[TLength] | TLength | String
+type Translate[TLength] = Globals | TLength | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.baseline
-  - typings.csstype.csstypeStrings.bottom
-  - typings.csstype.csstypeStrings.middle
-  - typings.csstype.csstypeStrings.sub
-  - typings.csstype.csstypeStrings.`super`
-  - typings.csstype.csstypeStrings.`text-bottom`
-  - typings.csstype.csstypeStrings.`text-top`
-  - typings.csstype.csstypeStrings.top
-  - java.lang.String
-*/
-type VerticalAlign[TLength] = _VerticalAlign[TLength] | TLength | String
+type UnicodeBidi = "-moz-isolate" | "-moz-isolate-override" | "-moz-plaintext" | "-webkit-isolate" | "-webkit-isolate-override" | "-webkit-plaintext" | "bidi-override" | "embed" | "isolate" | "isolate-override" | "normal" | "plaintext" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - typings.csstype.mod.DataType.LineStyle
-  - typings.csstype.mod.DataType.Color
-  - java.lang.String
-*/
-type WebkitBorderBefore[TLength] = _WebkitBorderBefore[TLength] | String | TLength
+type UserSelect = "-moz-none" | "all" | "auto" | "contain" | "element" | "none" | "text" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type WebkitBorderBeforeColor = _WebkitBorderBeforeColor | String
+type VectorEffect = "non-scaling-stroke" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineStyle
-  - java.lang.String
-*/
-type WebkitBorderBeforeStyle = _WebkitBorderBeforeStyle | String
+type VerticalAlign[TLength] = Globals | TLength | "baseline" | "bottom" | "middle" | "sub" | "super" | "text-bottom" | "text-top" | "top" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.LineWidth[TLength]
-  - java.lang.String
-*/
-type WebkitBorderBeforeWidth[TLength] = _WebkitBorderBeforeWidth[TLength] | String | TLength
+type Visibility = "collapse" | "hidden" | "visible" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.above
-  - typings.csstype.csstypeStrings.below
-  - typings.csstype.csstypeStrings.left
-  - typings.csstype.csstypeStrings.right
-  - java.lang.String
-*/
-type WebkitBoxReflect[TLength] = _WebkitBoxReflect[TLength] | TLength | String
+type WebkitAppearance = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with "-apple-pay-button", "button", "button-bevel" */ String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - scala.Double & js.Object
-  - java.lang.String
-*/
-type WebkitLineClamp = _WebkitLineClamp | (Double & js.Object) | String
+type WebkitBorderBefore[TLength] = Globals | LineWidth[TLength] | LineStyle | typings.csstype.mod.DataType.Color | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Position[TLength]
-  - typings.csstype.mod.DataType.RepeatStyle
-  - typings.csstype.mod.DataType.Box
-  - typings.csstype.csstypeStrings.border
-  - typings.csstype.csstypeStrings.content
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.padding
-  - typings.csstype.csstypeStrings.text
-  - java.lang.String
-*/
-type WebkitMask[TLength] = _WebkitMask[TLength] | String | TLength
+type WebkitBorderBeforeColor = Globals | typings.csstype.mod.DataType.Color
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Attachment
-  - java.lang.String
-*/
-type WebkitMaskAttachment = _WebkitMaskAttachment | String
+type WebkitBorderBeforeStyle = Globals | LineStyle | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Box
-  - typings.csstype.csstypeStrings.border
-  - typings.csstype.csstypeStrings.content
-  - typings.csstype.csstypeStrings.padding
-  - typings.csstype.csstypeStrings.text
-  - java.lang.String
-*/
-type WebkitMaskClip = _WebkitMaskClip | String
+type WebkitBorderBeforeWidth[TLength] = Globals | LineWidth[TLength] | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.CompositeStyle
-  - java.lang.String
-*/
-type WebkitMaskComposite = _WebkitMaskComposite | String
+type WebkitBoxReflect[TLength] = Globals | TLength | "above" | "below" | "left" | "right" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.none
-  - java.lang.String
-*/
-type WebkitMaskImage = _WebkitMaskImage | String
+type WebkitLineClamp = Globals | "none" | (Double & js.Object) | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Box
-  - typings.csstype.csstypeStrings.border
-  - typings.csstype.csstypeStrings.content
-  - typings.csstype.csstypeStrings.padding
-  - java.lang.String
-*/
-type WebkitMaskOrigin = _WebkitMaskOrigin | String
+type WebkitMask[TLength] = Globals | typings.csstype.mod.DataType.Position[TLength] | RepeatStyle | Box | "border" | "content" | "none" | "padding" | "text" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Position[TLength]
-  - java.lang.String
-*/
-type WebkitMaskPosition[TLength] = _WebkitMaskPosition[TLength] | String | TLength
+type WebkitMaskAttachment = Globals | Attachment | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.center
-  - typings.csstype.csstypeStrings.left
-  - typings.csstype.csstypeStrings.right
-  - java.lang.String
-*/
-type WebkitMaskPositionX[TLength] = _WebkitMaskPositionX[TLength] | TLength | String
+type WebkitMaskClip = Globals | Box | "border" | "content" | "padding" | "text" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.bottom
-  - typings.csstype.csstypeStrings.center
-  - typings.csstype.csstypeStrings.top
-  - java.lang.String
-*/
-type WebkitMaskPositionY[TLength] = _WebkitMaskPositionY[TLength] | TLength | String
+type WebkitMaskComposite = Globals | CompositeStyle | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.RepeatStyle
-  - java.lang.String
-*/
-type WebkitMaskRepeat = _WebkitMaskRepeat | String
+type WebkitMaskImage = Globals | "none" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.BgSize[TLength]
-  - java.lang.String
-*/
-type WebkitMaskSize[TLength] = _WebkitMaskSize[TLength] | String | TLength
+type WebkitMaskOrigin = Globals | Box | "border" | "content" | "padding" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type WebkitTapHighlightColor = _WebkitTapHighlightColor | String
+type WebkitMaskPosition[TLength] = Globals | typings.csstype.mod.DataType.Position[TLength] | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type WebkitTextFillColor = _WebkitTextFillColor | String
+type WebkitMaskPositionX[TLength] = Globals | TLength | "center" | "left" | "right" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-  - TLength
-  - java.lang.String
-*/
-type WebkitTextStroke[TLength] = _WebkitTextStroke[TLength] | TLength | String
+type WebkitMaskPositionY[TLength] = Globals | TLength | "bottom" | "center" | "top" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.Color
-*/
-type WebkitTextStrokeColor = _WebkitTextStrokeColor | String
+type WebkitMaskRepeat = Globals | RepeatStyle | String
+
+type WebkitMaskRepeatX = "no-repeat" | "repeat" | "round" | "space" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type WebkitMaskRepeatY = "no-repeat" | "repeat" | "round" | "space" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type WebkitMaskSize[TLength] = Globals | BgSize[TLength] | String
+
+type WebkitOverflowScrolling = "auto" | "touch" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type WebkitTapHighlightColor = Globals | typings.csstype.mod.DataType.Color
+
+type WebkitTextFillColor = Globals | typings.csstype.mod.DataType.Color
+
+type WebkitTextStroke[TLength] = Globals | typings.csstype.mod.DataType.Color | TLength | String
+
+type WebkitTextStrokeColor = Globals | typings.csstype.mod.DataType.Color
 
 type WebkitTextStrokeWidth[TLength] = Globals | TLength
 
+type WebkitTouchCallout = "default" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type WebkitUserModify = "read-only" | "read-write" | "read-write-plaintext-only" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type WhiteSpace = "-moz-pre-wrap" | "break-spaces" | "normal" | "nowrap" | "pre" | "pre-line" | "pre-wrap" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
 type Widows = Globals | (Double & js.Object) | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.`-moz-fit-content`
-  - typings.csstype.csstypeStrings.`-moz-max-content`
-  - typings.csstype.csstypeStrings.`-moz-min-content`
-  - typings.csstype.csstypeStrings.`-webkit-fit-content`
-  - typings.csstype.csstypeStrings.`-webkit-max-content`
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.`fit-content`
-  - typings.csstype.csstypeStrings.intrinsic
-  - typings.csstype.csstypeStrings.`max-content`
-  - typings.csstype.csstypeStrings.`min-content`
-  - typings.csstype.csstypeStrings.`min-intrinsic`
-  - java.lang.String
-*/
-type Width[TLength] = _Width[TLength] | TLength | String
+type Width[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-content" | "-moz-min-content" | "-webkit-fit-content" | "-webkit-max-content" | "auto" | "fit-content" | "intrinsic" | "max-content" | "min-content" | "min-intrinsic" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.mod.DataType.AnimateableFeature
-  - typings.csstype.csstypeStrings.auto
-  - java.lang.String
-*/
-type WillChange = _WillChange | String
+type WillChange = Globals | AnimateableFeature | "auto" | String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - TLength
-  - typings.csstype.csstypeStrings.normal
-*/
-type WordSpacing[TLength] = _WordSpacing[TLength] | TLength
+type WordBreak = "break-all" | "break-word" | "keep-all" | "normal" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.auto
-  - scala.Double & js.Object
-  - java.lang.String
-*/
-type ZIndex = _ZIndex | (Double & js.Object) | String
+type WordSpacing[TLength] = Globals | TLength | "normal"
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.mod.Globals
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.reset
-  - java.lang.String
-  - scala.Double & js.Object
-*/
-type Zoom = _Zoom | (Double & js.Object) | String
+type WordWrap = "break-word" | "normal" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type WritingMode = "horizontal-tb" | "sideways-lr" | "sideways-rl" | "vertical-lr" | "vertical-rl" | "-moz-initial" | "inherit" | "initial" | "revert" | "revert-layer" | "unset"
+
+type ZIndex = Globals | "auto" | (Double & js.Object) | String
+
+type Zoom = Globals | "normal" | "reset" | String | (Double & js.Object)

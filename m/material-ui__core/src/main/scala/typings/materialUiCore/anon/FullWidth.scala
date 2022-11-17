@@ -1,8 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.inherit
-import typings.materialUiCore.materialUiCoreStrings.primary
-import typings.materialUiCore.materialUiCoreStrings.secondary
 import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
 import typings.react.mod.EventHandler
@@ -30,7 +27,7 @@ trait FullWidth extends StObject {
   
   var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var textColor: js.UndefOr[String | secondary | primary | inherit] = js.undefined
+  var textColor: js.UndefOr[String | "secondary" | "primary" | "inherit"] = js.undefined
   
   var value: js.UndefOr[Any] = js.undefined
   
@@ -77,7 +74,7 @@ object FullWidth {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTextColor(value: String | secondary | primary | inherit): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: String | "secondary" | "primary" | "inherit"): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     

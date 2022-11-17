@@ -1,16 +1,12 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.reactNavigationStrings.history
-import typings.reactNavigation.reactNavigationStrings.initialRoute
-import typings.reactNavigation.reactNavigationStrings.none
-import typings.reactNavigation.reactNavigationStrings.order
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NavigationSwitchRouterConfig extends StObject {
   
-  var backBehavior: js.UndefOr[none | initialRoute | history | order] = js.undefined
+  var backBehavior: js.UndefOr["none" | "initialRoute" | "history" | "order"] = js.undefined
   
   var initialRouteName: js.UndefOr[String] = js.undefined
   
@@ -32,7 +28,7 @@ object NavigationSwitchRouterConfig {
   
   extension [Self <: NavigationSwitchRouterConfig](x: Self) {
     
-    inline def setBackBehavior(value: none | initialRoute | history | order): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
+    inline def setBackBehavior(value: "none" | "initialRoute" | "history" | "order"): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
     
     inline def setBackBehaviorUndefined: Self = StObject.set(x, "backBehavior", js.undefined)
     

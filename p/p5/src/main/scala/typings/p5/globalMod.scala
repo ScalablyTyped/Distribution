@@ -2229,12 +2229,10 @@ object globalMod {
       *   stream has loaded
       *   @return capture video p5.Element
       */
-    inline def createCapture(`type`: String): Element = js.Dynamic.global.applyDynamic("createCapture")(`type`.asInstanceOf[js.Any]).asInstanceOf[Element]
-    inline def createCapture(`type`: String, callback: js.Function1[/* repeated */ Any, Any]): Element = (js.Dynamic.global.applyDynamic("createCapture")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Element]
+    inline def createCapture(`type`: String | TYPE): Element = js.Dynamic.global.applyDynamic("createCapture")(`type`.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def createCapture(`type`: String | TYPE, callback: js.Function1[/* repeated */ Any, Any]): Element = (js.Dynamic.global.applyDynamic("createCapture")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Element]
     inline def createCapture(`type`: js.Object): Element = js.Dynamic.global.applyDynamic("createCapture")(`type`.asInstanceOf[js.Any]).asInstanceOf[Element]
     inline def createCapture(`type`: js.Object, callback: js.Function1[/* repeated */ Any, Any]): Element = (js.Dynamic.global.applyDynamic("createCapture")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Element]
-    inline def createCapture(`type`: TYPE): Element = js.Dynamic.global.applyDynamic("createCapture")(`type`.asInstanceOf[js.Any]).asInstanceOf[Element]
-    inline def createCapture(`type`: TYPE, callback: js.Function1[/* repeated */ Any, Any]): Element = (js.Dynamic.global.applyDynamic("createCapture")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Element]
     
     /**
       *   Creates a checkbox <input></input> element in the
@@ -2673,14 +2671,10 @@ object globalMod {
       *   @param [y] the vertical active spot of the cursor
       *   (must be less than 32)
       */
-    inline def cursor(`type`: String): Unit = js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def cursor(`type`: String, x: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def cursor(`type`: String, x: Double, y: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def cursor(`type`: String, x: Unit, y: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def cursor(`type`: CURSOR_TYPE): Unit = js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def cursor(`type`: CURSOR_TYPE, x: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def cursor(`type`: CURSOR_TYPE, x: Double, y: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def cursor(`type`: CURSOR_TYPE, x: Unit, y: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def cursor(`type`: CURSOR_TYPE | String): Unit = js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def cursor(`type`: CURSOR_TYPE | String, x: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def cursor(`type`: CURSOR_TYPE | String, x: Double, y: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def cursor(`type`: CURSOR_TYPE | String, x: Unit, y: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Draws a curved line on the screen between two

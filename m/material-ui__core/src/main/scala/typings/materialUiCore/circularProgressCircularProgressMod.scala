@@ -1,61 +1,6 @@
 package typings.materialUiCore
 
 import typings.materialUiCore.anon.PartialClassNameMapCircul
-import typings.materialUiCore.materialUiCoreStrings.`additions removals`
-import typings.materialUiCore.materialUiCoreStrings.`additions text`
-import typings.materialUiCore.materialUiCoreStrings.`inline`
-import typings.materialUiCore.materialUiCoreStrings.`removals additions`
-import typings.materialUiCore.materialUiCoreStrings.`removals text`
-import typings.materialUiCore.materialUiCoreStrings.`text additions`
-import typings.materialUiCore.materialUiCoreStrings.`text removals`
-import typings.materialUiCore.materialUiCoreStrings.additions
-import typings.materialUiCore.materialUiCoreStrings.all
-import typings.materialUiCore.materialUiCoreStrings.ascending
-import typings.materialUiCore.materialUiCoreStrings.assertive
-import typings.materialUiCore.materialUiCoreStrings.both
-import typings.materialUiCore.materialUiCoreStrings.copy
-import typings.materialUiCore.materialUiCoreStrings.date
-import typings.materialUiCore.materialUiCoreStrings.decimal
-import typings.materialUiCore.materialUiCoreStrings.descending
-import typings.materialUiCore.materialUiCoreStrings.determinate
-import typings.materialUiCore.materialUiCoreStrings.dialog
-import typings.materialUiCore.materialUiCoreStrings.email
-import typings.materialUiCore.materialUiCoreStrings.execute
-import typings.materialUiCore.materialUiCoreStrings.grammar
-import typings.materialUiCore.materialUiCoreStrings.grid
-import typings.materialUiCore.materialUiCoreStrings.horizontal
-import typings.materialUiCore.materialUiCoreStrings.indeterminate
-import typings.materialUiCore.materialUiCoreStrings.inherit
-import typings.materialUiCore.materialUiCoreStrings.link
-import typings.materialUiCore.materialUiCoreStrings.list
-import typings.materialUiCore.materialUiCoreStrings.listbox
-import typings.materialUiCore.materialUiCoreStrings.location
-import typings.materialUiCore.materialUiCoreStrings.menu
-import typings.materialUiCore.materialUiCoreStrings.mixed
-import typings.materialUiCore.materialUiCoreStrings.move
-import typings.materialUiCore.materialUiCoreStrings.no
-import typings.materialUiCore.materialUiCoreStrings.none
-import typings.materialUiCore.materialUiCoreStrings.numeric
-import typings.materialUiCore.materialUiCoreStrings.off
-import typings.materialUiCore.materialUiCoreStrings.on
-import typings.materialUiCore.materialUiCoreStrings.other
-import typings.materialUiCore.materialUiCoreStrings.page
-import typings.materialUiCore.materialUiCoreStrings.polite
-import typings.materialUiCore.materialUiCoreStrings.popup
-import typings.materialUiCore.materialUiCoreStrings.primary
-import typings.materialUiCore.materialUiCoreStrings.removals
-import typings.materialUiCore.materialUiCoreStrings.search
-import typings.materialUiCore.materialUiCoreStrings.secondary
-import typings.materialUiCore.materialUiCoreStrings.spelling
-import typings.materialUiCore.materialUiCoreStrings.static
-import typings.materialUiCore.materialUiCoreStrings.step
-import typings.materialUiCore.materialUiCoreStrings.tel
-import typings.materialUiCore.materialUiCoreStrings.text
-import typings.materialUiCore.materialUiCoreStrings.time
-import typings.materialUiCore.materialUiCoreStrings.tree
-import typings.materialUiCore.materialUiCoreStrings.url
-import typings.materialUiCore.materialUiCoreStrings.vertical
-import typings.materialUiCore.materialUiCoreStrings.yes
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -106,47 +51,33 @@ object circularProgressCircularProgressMod {
   
   inline def default(props: CircularProgressProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.static
-    - typings.materialUiCore.materialUiCoreStrings.determinate
-    - typings.materialUiCore.materialUiCoreStrings.indeterminate
-    - typings.materialUiCore.materialUiCoreStrings.colorPrimary
-    - typings.materialUiCore.materialUiCoreStrings.colorSecondary
-    - typings.materialUiCore.materialUiCoreStrings.svg
-    - typings.materialUiCore.materialUiCoreStrings.circle
-    - typings.materialUiCore.materialUiCoreStrings.circleStatic
-    - typings.materialUiCore.materialUiCoreStrings.circleDeterminate
-    - typings.materialUiCore.materialUiCoreStrings.circleIndeterminate
-    - typings.materialUiCore.materialUiCoreStrings.circleDisableShrink
-  */
-  trait CircularProgressClassKey extends StObject
   object CircularProgressClassKey {
     
-    inline def circle: typings.materialUiCore.materialUiCoreStrings.circle = "circle".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.circle]
+    inline def circle: "circle" = "circle".asInstanceOf["circle"]
     
-    inline def circleDeterminate: typings.materialUiCore.materialUiCoreStrings.circleDeterminate = "circleDeterminate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.circleDeterminate]
+    inline def circleDeterminate: "circleDeterminate" = "circleDeterminate".asInstanceOf["circleDeterminate"]
     
-    inline def circleDisableShrink: typings.materialUiCore.materialUiCoreStrings.circleDisableShrink = "circleDisableShrink".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.circleDisableShrink]
+    inline def circleDisableShrink: "circleDisableShrink" = "circleDisableShrink".asInstanceOf["circleDisableShrink"]
     
-    inline def circleIndeterminate: typings.materialUiCore.materialUiCoreStrings.circleIndeterminate = "circleIndeterminate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.circleIndeterminate]
+    inline def circleIndeterminate: "circleIndeterminate" = "circleIndeterminate".asInstanceOf["circleIndeterminate"]
     
-    inline def circleStatic: typings.materialUiCore.materialUiCoreStrings.circleStatic = "circleStatic".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.circleStatic]
+    inline def circleStatic: "circleStatic" = "circleStatic".asInstanceOf["circleStatic"]
     
-    inline def colorPrimary: typings.materialUiCore.materialUiCoreStrings.colorPrimary = "colorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorPrimary]
+    inline def colorPrimary: "colorPrimary" = "colorPrimary".asInstanceOf["colorPrimary"]
     
-    inline def colorSecondary: typings.materialUiCore.materialUiCoreStrings.colorSecondary = "colorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorSecondary]
+    inline def colorSecondary: "colorSecondary" = "colorSecondary".asInstanceOf["colorSecondary"]
     
-    inline def determinate: typings.materialUiCore.materialUiCoreStrings.determinate = "determinate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.determinate]
+    inline def determinate: "determinate" = "determinate".asInstanceOf["determinate"]
     
-    inline def indeterminate: typings.materialUiCore.materialUiCoreStrings.indeterminate = "indeterminate".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.indeterminate]
+    inline def indeterminate: "indeterminate" = "indeterminate".asInstanceOf["indeterminate"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def static: typings.materialUiCore.materialUiCoreStrings.static = "static".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.static]
+    inline def static: "static" = "static".asInstanceOf["static"]
     
-    inline def svg: typings.materialUiCore.materialUiCoreStrings.svg = "svg".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.svg]
+    inline def svg: "svg" = "svg".asInstanceOf["svg"]
   }
+  type CircularProgressClassKey = "root" | "static" | "determinate" | "indeterminate" | "colorPrimary" | "colorSecondary" | "svg" | "circle" | "circleStatic" | "circleDeterminate" | "circleIndeterminate" | "circleDisableShrink"
   
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/core.@material-ui/core/CircularProgress/CircularProgress.CircularProgressClassKey, 'children'> */
   trait CircularProgressProps extends StObject {
@@ -159,11 +90,11 @@ object circularProgressCircularProgressMod {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -173,7 +104,7 @@ object circularProgressCircularProgressMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -181,7 +112,7 @@ object circularProgressCircularProgressMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -191,11 +122,11 @@ object circularProgressCircularProgressMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -205,7 +136,7 @@ object circularProgressCircularProgressMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -213,7 +144,7 @@ object circularProgressCircularProgressMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -221,12 +152,12 @@ object circularProgressCircularProgressMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -243,7 +174,7 @@ object circularProgressCircularProgressMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -269,9 +200,9 @@ object circularProgressCircularProgressMod {
     /**
       * The color of the component. It supports those theme colors that make sense for this component.
       */
-    var color: js.UndefOr[primary | secondary | inherit] = js.undefined
+    var color: js.UndefOr["primary" | "secondary" | "inherit"] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -301,7 +232,7 @@ object circularProgressCircularProgressMod {
     
     var innerRef: js.UndefOr[Ref[Any]] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
     
@@ -525,11 +456,11 @@ object circularProgressCircularProgressMod {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
     /**
       * The value of the progress indicator for the determinate variant.
@@ -541,7 +472,7 @@ object circularProgressCircularProgressMod {
       * The variant to use.
       * Use indeterminate when there is no progress value.
       */
-    var variant: js.UndefOr[determinate | indeterminate | static] = js.undefined
+    var variant: js.UndefOr["determinate" | "indeterminate" | "static"] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
   }
@@ -570,7 +501,7 @@ object circularProgressCircularProgressMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -578,7 +509,7 @@ object circularProgressCircularProgressMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -598,7 +529,7 @@ object circularProgressCircularProgressMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -614,7 +545,7 @@ object circularProgressCircularProgressMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -634,7 +565,7 @@ object circularProgressCircularProgressMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -642,7 +573,7 @@ object circularProgressCircularProgressMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -662,7 +593,7 @@ object circularProgressCircularProgressMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -678,7 +609,7 @@ object circularProgressCircularProgressMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -694,7 +625,7 @@ object circularProgressCircularProgressMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -703,7 +634,7 @@ object circularProgressCircularProgressMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -736,7 +667,7 @@ object circularProgressCircularProgressMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -776,11 +707,11 @@ object circularProgressCircularProgressMod {
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      inline def setColor(value: primary | secondary | inherit): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: "primary" | "secondary" | "inherit"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -838,7 +769,7 @@ object circularProgressCircularProgressMod {
       
       inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -1268,7 +1199,7 @@ object circularProgressCircularProgressMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
@@ -1276,7 +1207,7 @@ object circularProgressCircularProgressMod {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
@@ -1284,7 +1215,7 @@ object circularProgressCircularProgressMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setVariant(value: determinate | indeterminate | static): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "determinate" | "indeterminate" | "static"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       

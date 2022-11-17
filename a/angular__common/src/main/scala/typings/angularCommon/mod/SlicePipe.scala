@@ -1,7 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.slice
 import typings.angularCore.mod.PipeTransform
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
@@ -81,6 +79,6 @@ object SlicePipe {
   
   @JSImport("@angular/common", "SlicePipe.\u0275pipe")
   @js.native
-  def ɵpipe: ɵɵPipeDeclaration[SlicePipe, slice, `true`] = js.native
-  inline def ɵpipe_=(x: ɵɵPipeDeclaration[SlicePipe, slice, `true`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
+  def ɵpipe: ɵɵPipeDeclaration[SlicePipe, "slice", true] = js.native
+  inline def ɵpipe_=(x: ɵɵPipeDeclaration[SlicePipe, "slice", true]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
 }

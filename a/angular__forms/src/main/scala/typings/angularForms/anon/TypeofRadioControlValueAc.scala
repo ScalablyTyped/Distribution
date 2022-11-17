@@ -6,7 +6,6 @@ import typings.angularCore.mod.Injector
 import typings.angularCore.mod.Renderer2
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
 import typings.angularForms.mod.RadioControlRegistry
 import typings.angularForms.mod.RadioControlValueAccessor
 import org.scalablytyped.runtime.StObject
@@ -32,7 +31,8 @@ trait TypeofRadioControlValueAc
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[RadioControlValueAccessor, scala.Nothing] = js.native

@@ -16,13 +16,6 @@ import typings.semanticUiReact.distCommonjsElementsIconIconMod.IconProps
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandCollection
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
-import typings.semanticUiReact.semanticUiReactStrings.big
-import typings.semanticUiReact.semanticUiReactStrings.huge
-import typings.semanticUiReact.semanticUiReactStrings.large
-import typings.semanticUiReact.semanticUiReactStrings.massive
-import typings.semanticUiReact.semanticUiReactStrings.mini
-import typings.semanticUiReact.semanticUiReactStrings.small
-import typings.semanticUiReact.semanticUiReactStrings.tiny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,7 +94,7 @@ object distCommonjsCollectionsBreadcrumbBreadcrumbMod {
     var sections: js.UndefOr[SemanticShorthandCollection[BreadcrumbSectionProps]] = js.undefined
     
     /** Size of Breadcrumb */
-    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.undefined
+    var size: js.UndefOr["mini" | "tiny" | "small" | "large" | "big" | "huge" | "massive"] = js.undefined
   }
   object StrictBreadcrumbProps {
     
@@ -142,7 +135,7 @@ object distCommonjsCollectionsBreadcrumbBreadcrumbMod {
       
       inline def setSectionsVarargs(value: SemanticShorthandItem[BreadcrumbSectionProps]*): Self = StObject.set(x, "sections", js.Array(value*))
       
-      inline def setSize(value: mini | tiny | small | large | big | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "mini" | "tiny" | "small" | "large" | "big" | "huge" | "massive"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }

@@ -1,10 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.`lazy`
-import typings.std.stdStrings.async
-import typings.std.stdStrings.auto
-import typings.std.stdStrings.eager
-import typings.std.stdStrings.sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLImageElement
   extends StObject
-     with HTMLElement
-     with HTMLOrSVGImageElement
-     with TexImageSource {
+     with HTMLElement {
   
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
@@ -60,7 +53,7 @@ trait HTMLImageElement
   def decode(): js.Promise[Unit] = js.native
   
   /* standard dom */
-  var decoding: async | sync | auto = js.native
+  var decoding: "async" | "sync" | "auto" = js.native
   
   /** Sets or retrieves the height of the object. */
   /* standard dom */
@@ -79,7 +72,7 @@ trait HTMLImageElement
   
   /** Sets or retrieves the policy for loading image elements that are outside the viewport. */
   /* standard dom */
-  var loading: eager | `lazy` = js.native
+  var loading: "eager" | "lazy" = js.native
   
   /**
     * Sets or retrieves a Uniform Resource Identifier (URI) to a long description of the object.

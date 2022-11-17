@@ -3,10 +3,6 @@ package typings.materialUi.MaterialUI
 import typings.materialUi.MaterialUI.Popover.PopoverAnimationProps
 import typings.materialUi.MaterialUI.propTypes.utils
 import typings.materialUi.anon.TypeofDateTimeFormat
-import typings.materialUi.materialUiStrings.`inline`
-import typings.materialUi.materialUiStrings.dialog
-import typings.materialUi.materialUiStrings.landscape
-import typings.materialUi.materialUiStrings.portrait
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
@@ -54,7 +50,7 @@ object DatePicker {
     
     var cancelLabel: js.UndefOr[ReactNode] = js.undefined
     
-    var container: js.UndefOr[dialog | `inline`] = js.undefined
+    var container: js.UndefOr["dialog" | "inline"] = js.undefined
     
     var disableYearSelection: js.UndefOr[Boolean] = js.undefined
     
@@ -68,7 +64,7 @@ object DatePicker {
     
     var minDate: js.UndefOr[js.Date] = js.undefined
     
-    var mode: js.UndefOr[portrait | landscape] = js.undefined
+    var mode: js.UndefOr["portrait" | "landscape"] = js.undefined
     
     var okLabel: js.UndefOr[ReactNode] = js.undefined
     
@@ -105,7 +101,7 @@ object DatePicker {
       
       inline def setCancelLabelUndefined: Self = StObject.set(x, "cancelLabel", js.undefined)
       
-      inline def setContainer(value: dialog | `inline`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: "dialog" | "inline"): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
@@ -137,7 +133,7 @@ object DatePicker {
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      inline def setMode(value: portrait | landscape): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: "portrait" | "landscape"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
@@ -183,7 +179,7 @@ object DatePicker {
     // From <TextField />
     var className: js.UndefOr[String] = js.undefined
     
-    var container: js.UndefOr[dialog | `inline`] = js.undefined
+    var container: js.UndefOr["dialog" | "inline"] = js.undefined
     
     var defaultDate: js.UndefOr[js.Date] = js.undefined
     
@@ -225,7 +221,7 @@ object DatePicker {
     
     var minDate: js.UndefOr[js.Date] = js.undefined
     
-    var mode: js.UndefOr[portrait | landscape] = js.undefined
+    var mode: js.UndefOr["portrait" | "landscape"] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
     
@@ -293,7 +289,7 @@ object DatePicker {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setContainer(value: dialog | `inline`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: "dialog" | "inline"): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
@@ -381,7 +377,7 @@ object DatePicker {
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      inline def setMode(value: portrait | landscape): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: "portrait" | "landscape"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       

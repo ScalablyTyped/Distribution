@@ -1,10 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.background
-import typings.electron.electronStrings.fixed
-import typings.electron.electronStrings.free
-import typings.electron.electronStrings.none
-import typings.electron.electronStrings.outline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,13 +24,13 @@ trait TouchBarScrubberConstructorOptions extends StObject {
   /**
     * Can be `fixed` or `free`. The default is `free`.
     */
-  var mode: js.UndefOr[fixed | free] = js.undefined
+  var mode: js.UndefOr["fixed" | "free"] = js.undefined
   
   /**
     * Selected overlay item style. Can be `background`, `outline` or `none`. Defaults
     * to `none`.
     */
-  var overlayStyle: js.UndefOr[background | outline | none] = js.undefined
+  var overlayStyle: js.UndefOr["background" | "outline" | "none"] = js.undefined
   
   /**
     * Called when the user taps an item that was not the last tapped item.
@@ -46,7 +41,7 @@ trait TouchBarScrubberConstructorOptions extends StObject {
     * Selected item style. Can be `background`, `outline` or `none`. Defaults to
     * `none`.
     */
-  var selectedStyle: js.UndefOr[background | outline | none] = js.undefined
+  var selectedStyle: js.UndefOr["background" | "outline" | "none"] = js.undefined
   
   /**
     * Whether to show arrow buttons. Defaults to `false` and is only shown if `items`
@@ -75,11 +70,11 @@ object TouchBarScrubberConstructorOptions {
     
     inline def setItemsVarargs(value: ScrubberItem*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setMode(value: fixed | free): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: "fixed" | "free"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setOverlayStyle(value: background | outline | none): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
+    inline def setOverlayStyle(value: "background" | "outline" | "none"): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
     
     inline def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
     
@@ -87,7 +82,7 @@ object TouchBarScrubberConstructorOptions {
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    inline def setSelectedStyle(value: background | outline | none): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
+    inline def setSelectedStyle(value: "background" | "outline" | "none"): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
     
     inline def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
     

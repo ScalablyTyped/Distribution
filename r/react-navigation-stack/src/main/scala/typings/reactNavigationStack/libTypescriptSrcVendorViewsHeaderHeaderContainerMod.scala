@@ -12,8 +12,6 @@ import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.Scene
 import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackHeaderInterpolatedStyle
 import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackHeaderInterpolationProps
 import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackHeaderStyleInterpolator
-import typings.reactNavigationStack.reactNavigationStackStrings.float
-import typings.reactNavigationStack.reactNavigationStackStrings.screen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +36,7 @@ object libTypescriptSrcVendorViewsHeaderHeaderContainerMod {
     
     var layout: Layout
     
-    var mode: float | screen
+    var mode: "float" | "screen"
     
     var onContentHeightChange: js.UndefOr[js.Function1[/* props */ Height, Unit]] = js.undefined
     
@@ -56,7 +54,7 @@ object libTypescriptSrcVendorViewsHeaderHeaderContainerMod {
       getPreviousScene: typings.reactNavigationStack.anon.Route => js.UndefOr[Scene[Route[String]]],
       insets: EdgeInsets,
       layout: Layout,
-      mode: float | screen,
+      mode: "float" | "screen",
       scenes: js.Array[js.UndefOr[Scene[Route[String]]]],
       styleInterpolator: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle
     ): Props = {
@@ -76,7 +74,7 @@ object libTypescriptSrcVendorViewsHeaderHeaderContainerMod {
       
       inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      inline def setMode(value: float | screen): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: "float" | "screen"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setOnContentHeightChange(value: /* props */ Height => Unit): Self = StObject.set(x, "onContentHeightChange", js.Any.fromFunction1(value))
       

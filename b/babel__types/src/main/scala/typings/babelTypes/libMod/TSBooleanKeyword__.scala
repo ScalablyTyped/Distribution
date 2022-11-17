@@ -1,20 +1,15 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSBooleanKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSBooleanKeyword__
   extends StObject
-     with BaseNode
-     with Node
-     with TSBaseType
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   @JSName("type")
-  var type_TSBooleanKeyword__ : TSBooleanKeyword
+  var type_TSBooleanKeyword__ : "TSBooleanKeyword"
 }
 object TSBooleanKeyword__ {
   
@@ -26,6 +21,6 @@ object TSBooleanKeyword__ {
   
   extension [Self <: TSBooleanKeyword__](x: Self) {
     
-    inline def setType(value: TSBooleanKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSBooleanKeyword"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

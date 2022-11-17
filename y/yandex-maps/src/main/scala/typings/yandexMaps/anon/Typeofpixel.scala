@@ -9,8 +9,6 @@ import typings.yandexMaps.mod.geometry.pixel.MultiPolygon
 import typings.yandexMaps.mod.geometry.pixel.Point
 import typings.yandexMaps.mod.geometry.pixel.Polygon
 import typings.yandexMaps.mod.geometry.pixel.Rectangle
-import typings.yandexMaps.yandexMapsStrings.evenOdd
-import typings.yandexMaps.yandexMapsStrings.nonZero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +36,7 @@ trait Typeofpixel extends StObject {
   
   var MultiPolygon: Instantiable3[
     /* coordinates */ js.Array[js.Array[js.Array[js.Array[Double]]]], 
-    /* fillRule */ evenOdd | nonZero, 
+    /* fillRule */ "evenOdd" | "nonZero", 
     /* metaData */ js.UndefOr[js.Object], 
     typings.yandexMaps.mod.geometry.pixel.MultiPolygon
   ]
@@ -51,7 +49,7 @@ trait Typeofpixel extends StObject {
   
   var Polygon: Instantiable3[
     /* coordinates */ js.Array[js.Array[js.Array[Double]]], 
-    /* fillRule */ evenOdd | nonZero, 
+    /* fillRule */ "evenOdd" | "nonZero", 
     /* metaData */ js.UndefOr[js.Object], 
     typings.yandexMaps.mod.geometry.pixel.Polygon
   ]
@@ -83,14 +81,14 @@ object Typeofpixel {
     ],
     MultiPolygon: Instantiable3[
       /* coordinates */ js.Array[js.Array[js.Array[js.Array[Double]]]], 
-      /* fillRule */ evenOdd | nonZero, 
+      /* fillRule */ "evenOdd" | "nonZero", 
       /* metaData */ js.UndefOr[js.Object], 
       MultiPolygon
     ],
     Point: Instantiable2[/* position */ js.Array[Double] | Null, /* metaData */ js.UndefOr[js.Object], Point],
     Polygon: Instantiable3[
       /* coordinates */ js.Array[js.Array[js.Array[Double]]], 
-      /* fillRule */ evenOdd | nonZero, 
+      /* fillRule */ "evenOdd" | "nonZero", 
       /* metaData */ js.UndefOr[js.Object], 
       Polygon
     ],
@@ -134,7 +132,7 @@ object Typeofpixel {
     inline def setMultiPolygon(
       value: Instantiable3[
           /* coordinates */ js.Array[js.Array[js.Array[js.Array[Double]]]], 
-          /* fillRule */ evenOdd | nonZero, 
+          /* fillRule */ "evenOdd" | "nonZero", 
           /* metaData */ js.UndefOr[js.Object], 
           MultiPolygon
         ]
@@ -147,7 +145,7 @@ object Typeofpixel {
     inline def setPolygon(
       value: Instantiable3[
           /* coordinates */ js.Array[js.Array[js.Array[Double]]], 
-          /* fillRule */ evenOdd | nonZero, 
+          /* fillRule */ "evenOdd" | "nonZero", 
           /* metaData */ js.UndefOr[js.Object], 
           Polygon
         ]

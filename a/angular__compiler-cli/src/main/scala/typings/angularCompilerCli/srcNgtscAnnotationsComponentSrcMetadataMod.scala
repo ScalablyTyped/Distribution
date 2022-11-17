@@ -6,9 +6,6 @@ import typings.angularCompiler.mod.R3ClassMetadata
 import typings.angularCompiler.mod.R3ComponentMetadata
 import typings.angularCompiler.mod.R3TemplateDependencyMetadata
 import typings.angularCompiler.mod.SchemaMetadata
-import typings.angularCompilerCli.angularCompilerCliStrings.declarationListEmitMode
-import typings.angularCompilerCli.angularCompilerCliStrings.declarations
-import typings.angularCompilerCli.angularCompilerCliStrings.dynamic
 import typings.angularCompilerCli.anon.OmitR3ComponentMetadataR3
 import typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcResourcesMod.ParsedTemplateWithSource
 import typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcResourcesMod.StyleUrlMeta
@@ -32,7 +29,7 @@ object srcNgtscAnnotationsComponentSrcMetadataMod {
     
     var animationTriggerNames: AnimationTriggerNames | Null
     
-    var baseClass: Reference[ClassDeclaration[DeclarationNode]] | dynamic | Null
+    var baseClass: Reference[ClassDeclaration[DeclarationNode]] | "dynamic" | Null
     
     var classMetadata: R3ClassMetadata | Null
     
@@ -105,7 +102,7 @@ object srcNgtscAnnotationsComponentSrcMetadataMod {
       
       inline def setAnimationTriggerNamesNull: Self = StObject.set(x, "animationTriggerNames", null)
       
-      inline def setBaseClass(value: Reference[ClassDeclaration[DeclarationNode]] | dynamic): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
+      inline def setBaseClass(value: Reference[ClassDeclaration[DeclarationNode]] | "dynamic"): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
       
       inline def setBaseClassNull: Self = StObject.set(x, "baseClass", null)
       
@@ -171,7 +168,7 @@ object srcNgtscAnnotationsComponentSrcMetadataMod {
   
   type ComponentMetadataResolvedFields = SubsetOfKeys[
     R3ComponentMetadata[R3TemplateDependencyMetadata], 
-    declarations | declarationListEmitMode
+    "declarations" | "declarationListEmitMode"
   ]
   
   /* Inlined std.Pick<@angular/compiler.@angular/compiler.R3ComponentMetadata<@angular/compiler.@angular/compiler.R3TemplateDependencyMetadata>, @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/annotations/component/src/metadata.ComponentMetadataResolvedFields> */

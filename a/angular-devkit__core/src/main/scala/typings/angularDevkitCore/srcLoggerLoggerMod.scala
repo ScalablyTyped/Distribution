@@ -78,26 +78,19 @@ object srcLoggerLoggerMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularDevkitCore.angularDevkitCoreStrings.debug
-    - typings.angularDevkitCore.angularDevkitCoreStrings.info
-    - typings.angularDevkitCore.angularDevkitCoreStrings.warn
-    - typings.angularDevkitCore.angularDevkitCoreStrings.error
-    - typings.angularDevkitCore.angularDevkitCoreStrings.fatal
-  */
-  trait LogLevel extends StObject
   object LogLevel {
     
-    inline def debug: typings.angularDevkitCore.angularDevkitCoreStrings.debug = "debug".asInstanceOf[typings.angularDevkitCore.angularDevkitCoreStrings.debug]
+    inline def debug: "debug" = "debug".asInstanceOf["debug"]
     
-    inline def error: typings.angularDevkitCore.angularDevkitCoreStrings.error = "error".asInstanceOf[typings.angularDevkitCore.angularDevkitCoreStrings.error]
+    inline def error: "error" = "error".asInstanceOf["error"]
     
-    inline def fatal: typings.angularDevkitCore.angularDevkitCoreStrings.fatal = "fatal".asInstanceOf[typings.angularDevkitCore.angularDevkitCoreStrings.fatal]
+    inline def fatal: "fatal" = "fatal".asInstanceOf["fatal"]
     
-    inline def info: typings.angularDevkitCore.angularDevkitCoreStrings.info = "info".asInstanceOf[typings.angularDevkitCore.angularDevkitCoreStrings.info]
+    inline def info: "info" = "info".asInstanceOf["info"]
     
-    inline def warn: typings.angularDevkitCore.angularDevkitCoreStrings.warn = "warn".asInstanceOf[typings.angularDevkitCore.angularDevkitCoreStrings.warn]
+    inline def warn: "warn" = "warn".asInstanceOf["warn"]
   }
+  type LogLevel = "debug" | "info" | "warn" | "error" | "fatal"
   
   @js.native
   trait LoggerApi extends StObject {

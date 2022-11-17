@@ -1,11 +1,6 @@
 package typings.antd
 
 import typings.antd.anon.PartialRecordBreakpointnu
-import typings.antd.antdStrings.default
-import typings.antd.antdStrings.horizontal
-import typings.antd.antdStrings.middle
-import typings.antd.antdStrings.small
-import typings.antd.antdStrings.vertical
 import typings.antd.libDescriptionsItemMod.DescriptionsItemProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.Context
@@ -79,11 +74,11 @@ object libDescriptionsMod {
     
     var labelStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var layout: js.UndefOr[horizontal | vertical] = js.undefined
+    var layout: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[middle | small | default] = js.undefined
+    var size: js.UndefOr["middle" | "small" | "default"] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -130,7 +125,7 @@ object libDescriptionsMod {
       
       inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
       
-      inline def setLayout(value: horizontal | vertical): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: "horizontal" | "vertical"): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
@@ -138,7 +133,7 @@ object libDescriptionsMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setSize(value: middle | small | default): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "middle" | "small" | "default"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

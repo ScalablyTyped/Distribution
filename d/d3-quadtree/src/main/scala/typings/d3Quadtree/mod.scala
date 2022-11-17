@@ -1,6 +1,5 @@
 package typings.d3Quadtree
 
-import typings.d3Quadtree.d3QuadtreeInts.`4`
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +24,7 @@ object mod {
       * The length property may be used to distinguish leaf nodes from internal nodes: it is undefined for leaf nodes, and 4 for internal nodes.
       */
     @JSName("length")
-    var length_QuadtreeInternalNode: `4` = js.native
+    var length_QuadtreeInternalNode: 4 = js.native
   }
   
   trait QuadtreeLeaf[T] extends StObject {

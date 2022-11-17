@@ -1,8 +1,6 @@
 package typings.angularAnimations
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularAnimations.angularAnimationsInts.`0`
-import typings.angularAnimations.angularAnimationsInts.`1`
 import typings.angularAnimations.mod.AnimationMetadata
 import typings.angularAnimations.mod.AnimationOptions
 import typings.angularAnimations.mod.AnimationPlayer
@@ -615,17 +613,13 @@ object browserMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularAnimations.angularAnimationsInts.`0`
-    - typings.angularAnimations.angularAnimationsInts.`1`
-  */
-  trait AnimationTransitionInstructionType extends StObject
   object AnimationTransitionInstructionType {
     
-    inline def TimelineAnimation: `1` = 1.asInstanceOf[`1`]
+    inline def TimelineAnimation: 1 = 1.asInstanceOf[1]
     
-    inline def TransitionAnimation: `0` = 0.asInstanceOf[`0`]
+    inline def TransitionAnimation: 0 = 0.asInstanceOf[0]
   }
+  type AnimationTransitionInstructionType = 0 | 1
   
   /**
     * DOMAnimation represents the Animation Web API.

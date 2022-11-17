@@ -1,13 +1,12 @@
 package typings.chartJs.anon
 
-import typings.chartJs.chartJsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `2` extends StObject {
   
-  var cancelable: `true`
+  var cancelable: true
 }
 object `2` {
   
@@ -18,6 +17,6 @@ object `2` {
   
   extension [Self <: `2`](x: Self) {
     
-    inline def setCancelable(value: `true`): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    inline def setCancelable(value: true): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
   }
 }

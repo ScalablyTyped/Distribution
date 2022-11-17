@@ -14,17 +14,6 @@ import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.ViewStyle
-import typings.reactNavigationStack.reactNavigationStackInts.`1`
-import typings.reactNavigationStack.reactNavigationStackInts.`2`
-import typings.reactNavigationStack.reactNavigationStackStrings.`box-none`
-import typings.reactNavigationStack.reactNavigationStackStrings.`box-only`
-import typings.reactNavigationStack.reactNavigationStackStrings.`no-hide-descendants`
-import typings.reactNavigationStack.reactNavigationStackStrings.assertive
-import typings.reactNavigationStack.reactNavigationStackStrings.auto
-import typings.reactNavigationStack.reactNavigationStackStrings.no
-import typings.reactNavigationStack.reactNavigationStackStrings.none
-import typings.reactNavigationStack.reactNavigationStackStrings.polite
-import typings.reactNavigationStack.reactNavigationStackStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,7 +70,7 @@ trait ViewPropsenabledbooleanac extends StObject {
     * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
     * @platform android
     */
-  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+  var accessibilityLiveRegion: js.UndefOr["none" | "polite" | "assertive"] = js.undefined
   
   /**
     * Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on Android the type of element that is focused on.
@@ -111,7 +100,7 @@ trait ViewPropsenabledbooleanac extends StObject {
     */
   var accessible: js.UndefOr[Boolean] = js.undefined
   
-  var active: typings.reactNavigationStack.reactNavigationStackInts.`0` | `1` | `2` | (AnimatedInterpolation[Double | String])
+  var active: 0 | 1 | 2 | (AnimatedInterpolation[Double | String])
   
   var children: js.UndefOr[ReactNode] & ReactNode
   
@@ -159,7 +148,7 @@ trait ViewPropsenabledbooleanac extends StObject {
     *      'no' - The view is not important for accessibility.
     *      'no-hide-descendants' - The view is not important for accessibility, nor are any of its descendant views.
     */
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+  var importantForAccessibility: js.UndefOr["auto" | "yes" | "no" | "no-hide-descendants"] = js.undefined
   
   /**
     * *(Apple TV only)* When set to true, this view will be focusable
@@ -365,7 +354,7 @@ trait ViewPropsenabledbooleanac extends StObject {
     * But since pointerEvents does not affect layout/appearance, and we are already deviating from the spec by adding additional modes,
     * we opt to not include pointerEvents on style. On some platforms, we would need to implement it as a className anyways. Using style or not is an implementation detail of the platform.
     */
-  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
+  var pointerEvents: js.UndefOr["box-none" | "none" | "box-only" | "auto"] = js.undefined
   
   /**
     *
@@ -440,10 +429,7 @@ trait ViewPropsenabledbooleanac extends StObject {
 }
 object ViewPropsenabledbooleanac {
   
-  inline def apply(
-    active: typings.reactNavigationStack.reactNavigationStackInts.`0` | `1` | `2` | (AnimatedInterpolation[Double | String]),
-    enabled: Boolean
-  ): ViewPropsenabledbooleanac = {
+  inline def apply(active: 0 | 1 | 2 | (AnimatedInterpolation[Double | String]), enabled: Boolean): ViewPropsenabledbooleanac = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsenabledbooleanac]
   }
@@ -482,7 +468,7 @@ object ViewPropsenabledbooleanac {
     
     inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
     
-    inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLiveRegion(value: "none" | "polite" | "assertive"): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
     
@@ -506,9 +492,7 @@ object ViewPropsenabledbooleanac {
     
     inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
-    inline def setActive(
-      value: typings.reactNavigationStack.reactNavigationStackInts.`0` | `1` | `2` | (AnimatedInterpolation[Double | String])
-    ): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: 0 | 1 | 2 | (AnimatedInterpolation[Double | String])): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
@@ -532,7 +516,7 @@ object ViewPropsenabledbooleanac {
     
     inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
     
-    inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+    inline def setImportantForAccessibility(value: "auto" | "yes" | "no" | "no-hide-descendants"): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
@@ -684,7 +668,7 @@ object ViewPropsenabledbooleanac {
     
     inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
-    inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    inline def setPointerEvents(value: "box-none" | "none" | "box-only" | "auto"): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     

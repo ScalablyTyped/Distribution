@@ -11,8 +11,6 @@ import typings.reactNativeGestureHandler.anon.Friction
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HandlerStateChangeEvent
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HitSlop
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.UserSelect
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.left
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.right
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -77,96 +75,66 @@ object libTypescriptComponentsSwipeableMod {
     /* private */ var updateAnimatedEvent: Any = js.native
   }
   
-  /* Inlined std.Exclude<keyof react-native-gesture-handler.react-native-gesture-handler/lib/typescript/handlers/PanGestureHandler.PanGestureHandlerProps, 'onGestureEvent' | 'onHandlerStateChange'> */
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetY
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.children
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocityX
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.userSelect
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocity
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onEnded
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.enabled
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.simultaneousHandlers
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onFailed
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minDist
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minPointers
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.waitFor
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.hitSlop
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onCancelled
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.avgTouches
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.testID
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.enableTrackpadTwoFingerGesture
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.shouldCancelWhenOutside
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onActivated
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onBegan
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activateAfterLongPress
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.failOffsetX
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.cancelsTouchesInView
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.maxPointers
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocityY
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.failOffsetY
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.id
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetX
-  */
-  trait SwipeableExcludes extends StObject
   object SwipeableExcludes {
     
-    inline def activateAfterLongPress: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activateAfterLongPress = "activateAfterLongPress".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activateAfterLongPress]
+    inline def activateAfterLongPress: "activateAfterLongPress" = "activateAfterLongPress".asInstanceOf["activateAfterLongPress"]
     
-    inline def activeOffsetX: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetX = "activeOffsetX".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetX]
+    inline def activeOffsetX: "activeOffsetX" = "activeOffsetX".asInstanceOf["activeOffsetX"]
     
-    inline def activeOffsetY: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetY = "activeOffsetY".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetY]
+    inline def activeOffsetY: "activeOffsetY" = "activeOffsetY".asInstanceOf["activeOffsetY"]
     
-    inline def avgTouches: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.avgTouches = "avgTouches".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.avgTouches]
+    inline def avgTouches: "avgTouches" = "avgTouches".asInstanceOf["avgTouches"]
     
-    inline def cancelsTouchesInView: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.cancelsTouchesInView = "cancelsTouchesInView".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.cancelsTouchesInView]
+    inline def cancelsTouchesInView: "cancelsTouchesInView" = "cancelsTouchesInView".asInstanceOf["cancelsTouchesInView"]
     
-    inline def children: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.children = "children".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.children]
+    inline def children: "children" = "children".asInstanceOf["children"]
     
-    inline def enableTrackpadTwoFingerGesture: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.enableTrackpadTwoFingerGesture = "enableTrackpadTwoFingerGesture".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.enableTrackpadTwoFingerGesture]
+    inline def enableTrackpadTwoFingerGesture: "enableTrackpadTwoFingerGesture" = "enableTrackpadTwoFingerGesture".asInstanceOf["enableTrackpadTwoFingerGesture"]
     
-    inline def enabled: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.enabled = "enabled".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.enabled]
+    inline def enabled: "enabled" = "enabled".asInstanceOf["enabled"]
     
-    inline def failOffsetX: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.failOffsetX = "failOffsetX".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.failOffsetX]
+    inline def failOffsetX: "failOffsetX" = "failOffsetX".asInstanceOf["failOffsetX"]
     
-    inline def failOffsetY: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.failOffsetY = "failOffsetY".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.failOffsetY]
+    inline def failOffsetY: "failOffsetY" = "failOffsetY".asInstanceOf["failOffsetY"]
     
-    inline def hitSlop: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.hitSlop = "hitSlop".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.hitSlop]
+    inline def hitSlop: "hitSlop" = "hitSlop".asInstanceOf["hitSlop"]
     
-    inline def id: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.id = "id".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.id]
+    inline def id: "id" = "id".asInstanceOf["id"]
     
-    inline def maxPointers: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.maxPointers = "maxPointers".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.maxPointers]
+    inline def maxPointers: "maxPointers" = "maxPointers".asInstanceOf["maxPointers"]
     
-    inline def minDist: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minDist = "minDist".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minDist]
+    inline def minDist: "minDist" = "minDist".asInstanceOf["minDist"]
     
-    inline def minPointers: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minPointers = "minPointers".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minPointers]
+    inline def minPointers: "minPointers" = "minPointers".asInstanceOf["minPointers"]
     
-    inline def minVelocity: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocity = "minVelocity".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocity]
+    inline def minVelocity: "minVelocity" = "minVelocity".asInstanceOf["minVelocity"]
     
-    inline def minVelocityX: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocityX = "minVelocityX".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocityX]
+    inline def minVelocityX: "minVelocityX" = "minVelocityX".asInstanceOf["minVelocityX"]
     
-    inline def minVelocityY: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocityY = "minVelocityY".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocityY]
+    inline def minVelocityY: "minVelocityY" = "minVelocityY".asInstanceOf["minVelocityY"]
     
-    inline def onActivated: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onActivated = "onActivated".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onActivated]
+    inline def onActivated: "onActivated" = "onActivated".asInstanceOf["onActivated"]
     
-    inline def onBegan: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onBegan = "onBegan".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onBegan]
+    inline def onBegan: "onBegan" = "onBegan".asInstanceOf["onBegan"]
     
-    inline def onCancelled: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onCancelled = "onCancelled".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onCancelled]
+    inline def onCancelled: "onCancelled" = "onCancelled".asInstanceOf["onCancelled"]
     
-    inline def onEnded: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onEnded = "onEnded".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onEnded]
+    inline def onEnded: "onEnded" = "onEnded".asInstanceOf["onEnded"]
     
-    inline def onFailed: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onFailed = "onFailed".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onFailed]
+    inline def onFailed: "onFailed" = "onFailed".asInstanceOf["onFailed"]
     
-    inline def shouldCancelWhenOutside: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.shouldCancelWhenOutside = "shouldCancelWhenOutside".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.shouldCancelWhenOutside]
+    inline def shouldCancelWhenOutside: "shouldCancelWhenOutside" = "shouldCancelWhenOutside".asInstanceOf["shouldCancelWhenOutside"]
     
-    inline def simultaneousHandlers: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.simultaneousHandlers = "simultaneousHandlers".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.simultaneousHandlers]
+    inline def simultaneousHandlers: "simultaneousHandlers" = "simultaneousHandlers".asInstanceOf["simultaneousHandlers"]
     
-    inline def testID: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.testID = "testID".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.testID]
+    inline def testID: "testID" = "testID".asInstanceOf["testID"]
     
-    inline def userSelect: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.userSelect = "userSelect".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.userSelect]
+    inline def userSelect: "userSelect" = "userSelect".asInstanceOf["userSelect"]
     
-    inline def waitFor: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.waitFor = "waitFor".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.waitFor]
+    inline def waitFor: "waitFor" = "waitFor".asInstanceOf["waitFor"]
   }
+  /* Inlined std.Exclude<keyof react-native-gesture-handler.react-native-gesture-handler/lib/typescript/handlers/PanGestureHandler.PanGestureHandlerProps, 'onGestureEvent' | 'onHandlerStateChange'> */
+  type SwipeableExcludes = "activeOffsetY" | "children" | "minVelocityX" | "userSelect" | "minVelocity" | "onEnded" | "enabled" | "simultaneousHandlers" | "onFailed" | "minDist" | "minPointers" | "waitFor" | "hitSlop" | "onCancelled" | "avgTouches" | "testID" | "enableTrackpadTwoFingerGesture" | "shouldCancelWhenOutside" | "onActivated" | "onBegan" | "activateAfterLongPress" | "failOffsetX" | "cancelsTouchesInView" | "maxPointers" | "minVelocityY" | "failOffsetY" | "id" | "activeOffsetX"
   
   /* Inlined parent std.Pick<react-native-gesture-handler.react-native-gesture-handler/lib/typescript/handlers/PanGestureHandler.PanGestureHandlerProps, react-native-gesture-handler.react-native-gesture-handler/lib/typescript/components/Swipeable.SwipeableExcludes> */
   trait SwipeableProps extends StObject {
@@ -255,7 +223,7 @@ object libTypescriptComponentsSwipeableMod {
     /**
       * Called when action panel is closed.
       */
-    var onSwipeableClose: js.UndefOr[js.Function2[/* direction */ left | right, /* swipeable */ Swipeable, Unit]] = js.undefined
+    var onSwipeableClose: js.UndefOr[js.Function2[/* direction */ "left" | "right", /* swipeable */ Swipeable, Unit]] = js.undefined
     
     /**
       * @deprecated Use `direction` argument of onSwipeableOpen()
@@ -274,7 +242,7 @@ object libTypescriptComponentsSwipeableMod {
     /**
       * Called when action panel gets open (either right or left).
       */
-    var onSwipeableOpen: js.UndefOr[js.Function2[/* direction */ left | right, /* swipeable */ Swipeable, Unit]] = js.undefined
+    var onSwipeableOpen: js.UndefOr[js.Function2[/* direction */ "left" | "right", /* swipeable */ Swipeable, Unit]] = js.undefined
     
     /**
       * @deprecated Use `direction` argument of onSwipeableOpen()
@@ -293,12 +261,12 @@ object libTypescriptComponentsSwipeableMod {
     /**
       * Called when action panel starts animating on close.
       */
-    var onSwipeableWillClose: js.UndefOr[js.Function1[/* direction */ left | right, Unit]] = js.undefined
+    var onSwipeableWillClose: js.UndefOr[js.Function1[/* direction */ "left" | "right", Unit]] = js.undefined
     
     /**
       * Called when action panel starts animating on open (either right or left).
       */
-    var onSwipeableWillOpen: js.UndefOr[js.Function1[/* direction */ left | right, Unit]] = js.undefined
+    var onSwipeableWillOpen: js.UndefOr[js.Function1[/* direction */ "left" | "right", Unit]] = js.undefined
     
     /**
       * Specifies how much the visual interaction will be delayed compared to the
@@ -508,7 +476,7 @@ object libTypescriptComponentsSwipeableMod {
       
       inline def setOnFailedUndefined: Self = StObject.set(x, "onFailed", js.undefined)
       
-      inline def setOnSwipeableClose(value: (/* direction */ left | right, /* swipeable */ Swipeable) => Unit): Self = StObject.set(x, "onSwipeableClose", js.Any.fromFunction2(value))
+      inline def setOnSwipeableClose(value: (/* direction */ "left" | "right", /* swipeable */ Swipeable) => Unit): Self = StObject.set(x, "onSwipeableClose", js.Any.fromFunction2(value))
       
       inline def setOnSwipeableCloseUndefined: Self = StObject.set(x, "onSwipeableClose", js.undefined)
       
@@ -520,7 +488,7 @@ object libTypescriptComponentsSwipeableMod {
       
       inline def setOnSwipeableLeftWillOpenUndefined: Self = StObject.set(x, "onSwipeableLeftWillOpen", js.undefined)
       
-      inline def setOnSwipeableOpen(value: (/* direction */ left | right, /* swipeable */ Swipeable) => Unit): Self = StObject.set(x, "onSwipeableOpen", js.Any.fromFunction2(value))
+      inline def setOnSwipeableOpen(value: (/* direction */ "left" | "right", /* swipeable */ Swipeable) => Unit): Self = StObject.set(x, "onSwipeableOpen", js.Any.fromFunction2(value))
       
       inline def setOnSwipeableOpenUndefined: Self = StObject.set(x, "onSwipeableOpen", js.undefined)
       
@@ -532,11 +500,11 @@ object libTypescriptComponentsSwipeableMod {
       
       inline def setOnSwipeableRightWillOpenUndefined: Self = StObject.set(x, "onSwipeableRightWillOpen", js.undefined)
       
-      inline def setOnSwipeableWillClose(value: /* direction */ left | right => Unit): Self = StObject.set(x, "onSwipeableWillClose", js.Any.fromFunction1(value))
+      inline def setOnSwipeableWillClose(value: /* direction */ "left" | "right" => Unit): Self = StObject.set(x, "onSwipeableWillClose", js.Any.fromFunction1(value))
       
       inline def setOnSwipeableWillCloseUndefined: Self = StObject.set(x, "onSwipeableWillClose", js.undefined)
       
-      inline def setOnSwipeableWillOpen(value: /* direction */ left | right => Unit): Self = StObject.set(x, "onSwipeableWillOpen", js.Any.fromFunction1(value))
+      inline def setOnSwipeableWillOpen(value: /* direction */ "left" | "right" => Unit): Self = StObject.set(x, "onSwipeableWillOpen", js.Any.fromFunction1(value))
       
       inline def setOnSwipeableWillOpenUndefined: Self = StObject.set(x, "onSwipeableWillOpen", js.undefined)
       

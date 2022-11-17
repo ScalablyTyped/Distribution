@@ -1,14 +1,10 @@
 package typings.mobx.anon
 
-import typings.mobx.distCoreSpyMod._PureSpyEvent
-import typings.mobx.mobxStrings.error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Error
-  extends StObject
-     with _PureSpyEvent {
+trait Error extends StObject {
   
   var error: String
   
@@ -16,7 +12,7 @@ trait Error
   
   var name: String
   
-  var `type`: error
+  var `type`: "error"
 }
 object Error {
   
@@ -34,6 +30,6 @@ object Error {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "error"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

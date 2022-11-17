@@ -8,32 +8,6 @@ import typings.semanticUiReact.distCommonjsElementsStepStepMod.StepProps
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandCollection
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
-import typings.semanticUiReact.semanticUiReactInts.`1`
-import typings.semanticUiReact.semanticUiReactInts.`2`
-import typings.semanticUiReact.semanticUiReactInts.`3`
-import typings.semanticUiReact.semanticUiReactInts.`4`
-import typings.semanticUiReact.semanticUiReactInts.`5`
-import typings.semanticUiReact.semanticUiReactInts.`6`
-import typings.semanticUiReact.semanticUiReactInts.`7`
-import typings.semanticUiReact.semanticUiReactInts.`8`
-import typings.semanticUiReact.semanticUiReactStrings.big
-import typings.semanticUiReact.semanticUiReactStrings.bottom
-import typings.semanticUiReact.semanticUiReactStrings.eight
-import typings.semanticUiReact.semanticUiReactStrings.five
-import typings.semanticUiReact.semanticUiReactStrings.four
-import typings.semanticUiReact.semanticUiReactStrings.huge
-import typings.semanticUiReact.semanticUiReactStrings.large
-import typings.semanticUiReact.semanticUiReactStrings.massive
-import typings.semanticUiReact.semanticUiReactStrings.mini
-import typings.semanticUiReact.semanticUiReactStrings.one
-import typings.semanticUiReact.semanticUiReactStrings.seven
-import typings.semanticUiReact.semanticUiReactStrings.six
-import typings.semanticUiReact.semanticUiReactStrings.small
-import typings.semanticUiReact.semanticUiReactStrings.tablet
-import typings.semanticUiReact.semanticUiReactStrings.three
-import typings.semanticUiReact.semanticUiReactStrings.tiny
-import typings.semanticUiReact.semanticUiReactStrings.top
-import typings.semanticUiReact.semanticUiReactStrings.two
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,7 +36,7 @@ object distCommonjsElementsStepStepGroupMod extends Shortcut {
     var as: js.UndefOr[Any] = js.undefined
     
     /** Steps can be attached to other elements. */
-    var attached: js.UndefOr[Boolean | bottom | top] = js.undefined
+    var attached: js.UndefOr[Boolean | "bottom" | "top"] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -83,10 +57,10 @@ object distCommonjsElementsStepStepGroupMod extends Shortcut {
     var ordered: js.UndefOr[Boolean] = js.undefined
     
     /** Steps can have different sizes. */
-    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.undefined
+    var size: js.UndefOr["mini" | "tiny" | "small" | "large" | "big" | "huge" | "massive"] = js.undefined
     
     /** A step can stack vertically only on smaller screens. */
-    var stackable: js.UndefOr[tablet] = js.undefined
+    var stackable: js.UndefOr["tablet"] = js.undefined
     
     /** A step can prevent itself from stacking on mobile. */
     var unstackable: js.UndefOr[Boolean] = js.undefined
@@ -96,7 +70,7 @@ object distCommonjsElementsStepStepGroupMod extends Shortcut {
     
     /** Steps can be divided evenly inside their parent. */
     var widths: js.UndefOr[
-        `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | typings.semanticUiReact.semanticUiReactStrings.`1` | typings.semanticUiReact.semanticUiReactStrings.`2` | typings.semanticUiReact.semanticUiReactStrings.`3` | typings.semanticUiReact.semanticUiReactStrings.`4` | typings.semanticUiReact.semanticUiReactStrings.`5` | typings.semanticUiReact.semanticUiReactStrings.`6` | typings.semanticUiReact.semanticUiReactStrings.`7` | typings.semanticUiReact.semanticUiReactStrings.`8` | one | two | three | four | five | six | seven | eight
+        1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "one" | "two" | "three" | "four" | "five" | "six" | "seven" | "eight"
       ] = js.undefined
   }
   object StrictStepGroupProps {
@@ -112,7 +86,7 @@ object distCommonjsElementsStepStepGroupMod extends Shortcut {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAttached(value: Boolean | bottom | top): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: Boolean | "bottom" | "top"): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
       inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       
@@ -142,11 +116,11 @@ object distCommonjsElementsStepStepGroupMod extends Shortcut {
       
       inline def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
       
-      inline def setSize(value: mini | tiny | small | large | big | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "mini" | "tiny" | "small" | "large" | "big" | "huge" | "massive"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setStackable(value: tablet): Self = StObject.set(x, "stackable", value.asInstanceOf[js.Any])
+      inline def setStackable(value: "tablet"): Self = StObject.set(x, "stackable", value.asInstanceOf[js.Any])
       
       inline def setStackableUndefined: Self = StObject.set(x, "stackable", js.undefined)
       
@@ -159,7 +133,7 @@ object distCommonjsElementsStepStepGroupMod extends Shortcut {
       inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
       
       inline def setWidths(
-        value: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | typings.semanticUiReact.semanticUiReactStrings.`1` | typings.semanticUiReact.semanticUiReactStrings.`2` | typings.semanticUiReact.semanticUiReactStrings.`3` | typings.semanticUiReact.semanticUiReactStrings.`4` | typings.semanticUiReact.semanticUiReactStrings.`5` | typings.semanticUiReact.semanticUiReactStrings.`6` | typings.semanticUiReact.semanticUiReactStrings.`7` | typings.semanticUiReact.semanticUiReactStrings.`8` | one | two | three | four | five | six | seven | eight
+        value: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "one" | "two" | "three" | "four" | "five" | "six" | "seven" | "eight"
       ): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
       
       inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)

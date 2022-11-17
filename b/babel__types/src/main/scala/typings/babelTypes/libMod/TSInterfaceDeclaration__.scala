@@ -1,17 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSInterfaceDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSInterfaceDeclaration__
   extends StObject
-     with BaseNode
-     with Declaration
-     with Node
-     with Statement
-     with TypeScript {
+     with BaseNode {
   
   var body: TSInterfaceBody__
   
@@ -24,7 +19,7 @@ trait TSInterfaceDeclaration__
   var typeParameters: js.UndefOr[TSTypeParameterDeclaration__ | Null] = js.undefined
   
   @JSName("type")
-  var type_TSInterfaceDeclaration__ : TSInterfaceDeclaration
+  var type_TSInterfaceDeclaration__ : "TSInterfaceDeclaration"
 }
 object TSInterfaceDeclaration__ {
   
@@ -54,7 +49,7 @@ object TSInterfaceDeclaration__ {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSInterfaceDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSInterfaceDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TSTypeParameterDeclaration__): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

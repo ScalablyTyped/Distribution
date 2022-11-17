@@ -3,7 +3,6 @@ package typings.babelGenerator
 import org.scalablytyped.runtime.StringDictionary
 import typings.babelGenerator.anon.Compact
 import typings.babelGenerator.anon.File
-import typings.babelGenerator.babelGeneratorStrings.auto
 import typings.babelTypes.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -53,7 +52,7 @@ object mod {
     /**
       * Set to true to avoid adding whitespace for formatting. Defaults to the value of `opts.minified`.
       */
-    var compact: js.UndefOr[Boolean | auto] = js.undefined
+    var compact: js.UndefOr[Boolean | "auto"] = js.undefined
     
     /**
       * Set to true to reduce whitespace (but not as much as opts.compact). Defaults to `false`.
@@ -142,7 +141,7 @@ object mod {
       
       inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      inline def setCompact(value: Boolean | auto): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean | "auto"): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
       inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       

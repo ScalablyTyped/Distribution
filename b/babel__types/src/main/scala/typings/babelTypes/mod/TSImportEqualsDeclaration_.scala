@@ -1,29 +1,23 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSImportEqualsDeclaration
-import typings.babelTypes.babelTypesStrings.`type`
-import typings.babelTypes.babelTypesStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSImportEqualsDeclaration_
+trait TSImportEqualsDeclaration_
   extends StObject
-     with BaseNode
-     with Statement
-     with TypeScript {
+     with BaseNode {
   
   var id: Identifier_
   
-  var importKind: `type` | value | Null
+  var importKind: "type" | "value" | Null
   
   var isExport: Boolean
   
   var moduleReference: TSEntityName | TSExternalModuleReference_
   
   @JSName("type")
-  var type_TSImportEqualsDeclaration_ : TSImportEqualsDeclaration
+  var type_TSImportEqualsDeclaration_ : "TSImportEqualsDeclaration"
 }
 object TSImportEqualsDeclaration_ {
   
@@ -37,7 +31,7 @@ object TSImportEqualsDeclaration_ {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setImportKind(value: `type` | value): Self = StObject.set(x, "importKind", value.asInstanceOf[js.Any])
+    inline def setImportKind(value: "type" | "value"): Self = StObject.set(x, "importKind", value.asInstanceOf[js.Any])
     
     inline def setImportKindNull: Self = StObject.set(x, "importKind", null)
     
@@ -45,6 +39,6 @@ object TSImportEqualsDeclaration_ {
     
     inline def setModuleReference(value: TSEntityName | TSExternalModuleReference_): Self = StObject.set(x, "moduleReference", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSImportEqualsDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSImportEqualsDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

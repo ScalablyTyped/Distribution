@@ -1,15 +1,12 @@
 package typings.node.dnsMod
 
-import typings.node.nodeStrings.PTR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnyPtrRecord
-  extends StObject
-     with AnyRecord {
+trait AnyPtrRecord extends StObject {
   
-  var `type`: PTR
+  var `type`: "PTR"
   
   var value: String
 }
@@ -23,7 +20,7 @@ object AnyPtrRecord {
   
   extension [Self <: AnyPtrRecord](x: Self) {
     
-    inline def setType(value: PTR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "PTR"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

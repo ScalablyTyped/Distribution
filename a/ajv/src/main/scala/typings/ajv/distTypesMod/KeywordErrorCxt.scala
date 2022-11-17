@@ -1,6 +1,5 @@
 package typings.ajv.distTypesMod
 
-import typings.ajv.ajvBooleans.`false`
 import typings.ajv.distCompileCodegenCodeMod.Code
 import typings.ajv.distCompileCodegenMod.CodeGen
 import typings.ajv.distCompileCodegenMod.Name
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KeywordErrorCxt extends StObject {
   
   @JSName("$data")
-  var $data: js.UndefOr[String | `false`] = js.undefined
+  var $data: js.UndefOr[String | false] = js.undefined
   
   var data: Name
   
@@ -55,7 +54,7 @@ object KeywordErrorCxt {
   
   extension [Self <: KeywordErrorCxt](x: Self) {
     
-    inline def set$data(value: String | `false`): Self = StObject.set(x, "$data", value.asInstanceOf[js.Any])
+    inline def set$data(value: String | false): Self = StObject.set(x, "$data", value.asInstanceOf[js.Any])
     
     inline def set$dataUndefined: Self = StObject.set(x, "$data", js.undefined)
     

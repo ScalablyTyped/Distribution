@@ -1,9 +1,6 @@
 package typings.node
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.nodeStrings.Colon
-import typings.node.nodeStrings.Semicolon
-import typings.node.nodeStrings.Slash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -149,7 +146,7 @@ object pathMod extends Shortcut {
     /**
       * The platform-specific file delimiter. ';' or ':'.
       */
-    val delimiter: Semicolon | Colon = js.native
+    val delimiter: ";" | ":" = js.native
     
     /**
       * Return the directory name of a path. Similar to the Unix dirname command.
@@ -242,7 +239,7 @@ object pathMod extends Shortcut {
     /**
       * The platform-specific file separator. '\\' or '/'.
       */
-    val sep: (/* \ */ String) | Slash = js.native
+    val sep: (/* \ */ String) | "/" = js.native
     
     /**
       * On Windows systems only, returns an equivalent namespace-prefixed path for the given path.

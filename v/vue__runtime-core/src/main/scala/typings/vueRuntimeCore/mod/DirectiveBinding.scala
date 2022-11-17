@@ -1,6 +1,5 @@
 package typings.vueRuntimeCore.mod
 
-import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait DirectiveBinding[V] extends StObject {
     js.Object, 
     js.Object, 
     js.Object, 
-    `false`, 
+    false, 
     ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
     js.Object
   ]) | Null
@@ -56,7 +55,7 @@ object DirectiveBinding {
           js.Object, 
           js.Object, 
           js.Object, 
-          `false`, 
+          false, 
           ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
           js.Object
         ]

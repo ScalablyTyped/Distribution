@@ -1,17 +1,13 @@
 package typings.std.anon
 
-import typings.std.Intl.RelativeTimeFormatPart
-import typings.std.stdStrings.literal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Type
-  extends StObject
-     with RelativeTimeFormatPart {
+trait Type extends StObject {
   
   /* standard es2020.intl */
-  var `type`: literal
+  var `type`: "literal"
   
   /* standard es2020.intl */
   var value: String
@@ -26,7 +22,7 @@ object Type {
   
   extension [Self <: Type](x: Self) {
     
-    inline def setType(value: literal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "literal"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

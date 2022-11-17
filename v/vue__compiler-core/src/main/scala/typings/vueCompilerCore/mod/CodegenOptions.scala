@@ -1,7 +1,5 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreStrings.function
-import typings.vueCompilerCore.vueCompilerCoreStrings.module
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +17,7 @@ trait CodegenOptions
     * used with `new Function(code)()` to generate a render function at runtime.
     * @default 'function'
     */
-  var mode: js.UndefOr[module | function] = js.undefined
+  var mode: js.UndefOr["module" | "function"] = js.undefined
   
   /**
     * Option to optimize helper import bindings via variable assignment
@@ -67,7 +65,7 @@ object CodegenOptions {
   
   extension [Self <: CodegenOptions](x: Self) {
     
-    inline def setMode(value: module | function): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: "module" | "function"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     

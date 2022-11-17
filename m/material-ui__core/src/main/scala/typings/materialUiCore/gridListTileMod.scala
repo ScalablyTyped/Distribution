@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.gridListTileGridListTileMod.GridListTileTypeMap
-import typings.materialUiCore.materialUiCoreStrings.li
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,10 +20,10 @@ object gridListTileMod extends Shortcut {
     */
   @JSImport("@material-ui/core/GridListTile", JSImport.Default)
   @js.native
-  val default: OverridableComponent[GridListTileTypeMap[js.Object, li]] = js.native
+  val default: OverridableComponent[GridListTileTypeMap[js.Object, "li"]] = js.native
   
-  type _To = OverridableComponent[GridListTileTypeMap[js.Object, li]]
+  type _To = OverridableComponent[GridListTileTypeMap[js.Object, "li"]]
   
   /* This means you don't have to write `default`, but can instead just say `gridListTileMod.foo` */
-  override def _to: OverridableComponent[GridListTileTypeMap[js.Object, li]] = default
+  override def _to: OverridableComponent[GridListTileTypeMap[js.Object, "li"]] = default
 }

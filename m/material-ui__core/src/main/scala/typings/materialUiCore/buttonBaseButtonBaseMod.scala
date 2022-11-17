@@ -3,8 +3,6 @@ package typings.materialUiCore
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Action
 import typings.materialUiCore.anon.Href
-import typings.materialUiCore.materialUiCoreStrings.a
-import typings.materialUiCore.materialUiCoreStrings.button
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverridableTypeMap
 import typings.materialUiCore.overridableComponentMod.OverrideProps
@@ -30,7 +28,7 @@ object buttonBaseButtonBaseMod extends Shortcut {
     */
   @JSImport("@material-ui/core/ButtonBase/ButtonBase", JSImport.Default)
   @js.native
-  val default: ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]] = js.native
+  val default: ExtendButtonBase[ButtonBaseTypeMap[js.Object, "button"]] = js.native
   
   trait ButtonBaseActions extends StObject {
     
@@ -49,20 +47,15 @@ object buttonBaseButtonBaseMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.disabled
-    - typings.materialUiCore.materialUiCoreStrings.focusVisible
-  */
-  trait ButtonBaseClassKey extends StObject
   object ButtonBaseClassKey {
     
-    inline def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
+    inline def disabled: "disabled" = "disabled".asInstanceOf["disabled"]
     
-    inline def focusVisible: typings.materialUiCore.materialUiCoreStrings.focusVisible = "focusVisible".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.focusVisible]
+    inline def focusVisible: "focusVisible" = "focusVisible".asInstanceOf["focusVisible"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
   }
+  type ButtonBaseClassKey = "root" | "disabled" | "focusVisible"
   
   type ButtonBaseProps[D /* <: ElementType[Any] */, P] = OverrideProps[ButtonBaseTypeMap[P, D], D]
   
@@ -91,7 +84,7 @@ object buttonBaseButtonBaseMod extends Shortcut {
     }
   }
   
-  type ExtendButtonBase[M /* <: OverridableTypeMap */] = (js.Function1[/* props */ Href & (OverrideProps[ExtendButtonBaseTypeMap[M], a]), Element]) & OverridableComponent[ExtendButtonBaseTypeMap[M]]
+  type ExtendButtonBase[M /* <: OverridableTypeMap */] = (js.Function1[/* props */ Href & (OverrideProps[ExtendButtonBaseTypeMap[M], "a"]), Element]) & OverridableComponent[ExtendButtonBaseTypeMap[M]]
   
   trait ExtendButtonBaseTypeMap[M /* <: OverridableTypeMap */] extends StObject {
     
@@ -128,8 +121,8 @@ object buttonBaseButtonBaseMod extends Shortcut {
     }
   }
   
-  type _To = ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]]
+  type _To = ExtendButtonBase[ButtonBaseTypeMap[js.Object, "button"]]
   
   /* This means you don't have to write `default`, but can instead just say `buttonBaseButtonBaseMod.foo` */
-  override def _to: ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]] = default
+  override def _to: ExtendButtonBase[ButtonBaseTypeMap[js.Object, "button"]] = default
 }

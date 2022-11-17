@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ExpansionCase protected ()
   extends StObject
-     with BaseNode
-     with Node2 {
+     with BaseNode {
   def this(
     value: String,
     expression: js.Array[Node2],

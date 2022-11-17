@@ -3,9 +3,6 @@ package typings.node
 import typings.node.anon.Buffered
 import typings.node.anon.BufferedType
 import typings.node.nodeColonasyncHooksMod.AsyncResource
-import typings.node.nodeInts.`0`
-import typings.node.nodeStrings.mark
-import typings.node.nodeStrings.measure
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -73,10 +70,10 @@ object perfHooksMod {
   /* protected */ open class PerformanceMark () extends PerformanceEntry {
     
     @JSName("duration")
-    val duration_PerformanceMark: `0` = js.native
+    val duration_PerformanceMark: 0 = js.native
     
     @JSName("entryType")
-    val entryType_PerformanceMark: mark = js.native
+    val entryType_PerformanceMark: "mark" = js.native
   }
   
   @JSImport("perf_hooks", "PerformanceMeasure")
@@ -84,7 +81,7 @@ object perfHooksMod {
   /* protected */ open class PerformanceMeasure () extends PerformanceEntry {
     
     @JSName("entryType")
-    val entryType_PerformanceMeasure: measure = js.native
+    val entryType_PerformanceMeasure: "measure" = js.native
   }
   
   /**
@@ -328,32 +325,23 @@ object perfHooksMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.node.nodeStrings.node
-    - typings.node.nodeStrings.mark
-    - typings.node.nodeStrings.measure
-    - typings.node.nodeStrings.gc
-    - typings.node.nodeStrings.function
-    - typings.node.nodeStrings.http2
-    - typings.node.nodeStrings.http
-  */
-  trait EntryType extends StObject
   object EntryType {
     
-    inline def function: typings.node.nodeStrings.function = "function".asInstanceOf[typings.node.nodeStrings.function]
+    inline def function: "function" = "function".asInstanceOf["function"]
     
-    inline def gc: typings.node.nodeStrings.gc = "gc".asInstanceOf[typings.node.nodeStrings.gc]
+    inline def gc: "gc" = "gc".asInstanceOf["gc"]
     
-    inline def http: typings.node.nodeStrings.http = "http".asInstanceOf[typings.node.nodeStrings.http]
+    inline def http: "http" = "http".asInstanceOf["http"]
     
-    inline def http2: typings.node.nodeStrings.http2 = "http2".asInstanceOf[typings.node.nodeStrings.http2]
+    inline def http2: "http2" = "http2".asInstanceOf["http2"]
     
-    inline def mark: typings.node.nodeStrings.mark = "mark".asInstanceOf[typings.node.nodeStrings.mark]
+    inline def mark: "mark" = "mark".asInstanceOf["mark"]
     
-    inline def measure: typings.node.nodeStrings.measure = "measure".asInstanceOf[typings.node.nodeStrings.measure]
+    inline def measure: "measure" = "measure".asInstanceOf["measure"]
     
-    inline def node: typings.node.nodeStrings.node = "node".asInstanceOf[typings.node.nodeStrings.node]
+    inline def node: "node" = "node".asInstanceOf["node"]
   }
+  type EntryType = "node" | "mark" | "measure" | "gc" | "function" | "http2" | "http"
   
   trait EventLoopMonitorOptions extends StObject {
     

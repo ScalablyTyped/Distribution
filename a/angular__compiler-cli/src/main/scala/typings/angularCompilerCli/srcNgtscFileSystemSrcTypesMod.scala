@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcNgtscFileSystemSrcTypesMod {
   
-  type AbsoluteFsPath = BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath]
+  type AbsoluteFsPath = BrandedPath["AbsoluteFsPath"]
   
   @js.native
   trait BrandedPath[B /* <: String */]
@@ -74,9 +74,11 @@ object srcNgtscFileSystemSrcTypesMod {
     
     def dirname(file: String): String = js.native
     @JSName("dirname")
-    def dirname_AbsoluteFsPath(file: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath]): BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath] = js.native
+    @scala.annotation.targetName("dirname_PathSegment")
+    def dirname(file: BrandedPath["PathSegment"]): BrandedPath["PathSegment"] = js.native
     @JSName("dirname")
-    def dirname_PathSegment(file: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment]): BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment] = js.native
+    @scala.annotation.targetName("dirname_AbsoluteFsPath")
+    def dirname(file: BrandedPath["AbsoluteFsPath"]): BrandedPath["AbsoluteFsPath"] = js.native
     
     def extname(path: AbsoluteFsPath | PathSegment): String = js.native
     
@@ -86,21 +88,19 @@ object srcNgtscFileSystemSrcTypesMod {
     
     def join(basePath: String, paths: String*): String = js.native
     @JSName("join")
-    def join_AbsoluteFsPath(
-      basePath: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath],
-      paths: String*
-    ): BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath] = js.native
+    @scala.annotation.targetName("join_PathSegment")
+    def join(basePath: BrandedPath["PathSegment"], paths: String*): BrandedPath["PathSegment"] = js.native
     @JSName("join")
-    def join_PathSegment(
-      basePath: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment],
-      paths: String*
-    ): BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment] = js.native
+    @scala.annotation.targetName("join_AbsoluteFsPath")
+    def join(basePath: BrandedPath["AbsoluteFsPath"], paths: String*): BrandedPath["AbsoluteFsPath"] = js.native
     
     def normalize(path: String): String = js.native
     @JSName("normalize")
-    def normalize_AbsoluteFsPath(path: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath]): BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath] = js.native
+    @scala.annotation.targetName("normalize_AbsoluteFsPath")
+    def normalize(path: BrandedPath["AbsoluteFsPath"]): BrandedPath["AbsoluteFsPath"] = js.native
     @JSName("normalize")
-    def normalize_PathSegment(path: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment]): BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment] = js.native
+    @scala.annotation.targetName("normalize_PathSegment")
+    def normalize(path: BrandedPath["PathSegment"]): BrandedPath["PathSegment"] = js.native
     
     def pwd(): AbsoluteFsPath = js.native
     
@@ -113,20 +113,16 @@ object srcNgtscFileSystemSrcTypesMod {
       */
     def relative(from: String, to: String): PathSegment | AbsoluteFsPath = js.native
     @JSName("relative")
-    def relative_AbsoluteFsPath(
-      from: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath],
-      to: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath]
-    ): PathSegment | AbsoluteFsPath = js.native
+    @scala.annotation.targetName("relative_PathSegment_PathSegment")
+    def relative(from: BrandedPath["PathSegment"], to: BrandedPath["PathSegment"]): PathSegment | AbsoluteFsPath = js.native
     @JSName("relative")
-    def relative_PathSegment(
-      from: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment],
-      to: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment]
-    ): PathSegment | AbsoluteFsPath = js.native
+    @scala.annotation.targetName("relative_AbsoluteFsPath_AbsoluteFsPath")
+    def relative(from: BrandedPath["AbsoluteFsPath"], to: BrandedPath["AbsoluteFsPath"]): PathSegment | AbsoluteFsPath = js.native
     
     def resolve(paths: String*): AbsoluteFsPath = js.native
   }
   
-  type PathSegment = BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment]
+  type PathSegment = BrandedPath["PathSegment"]
   
   type PathString = String | AbsoluteFsPath | PathSegment
   

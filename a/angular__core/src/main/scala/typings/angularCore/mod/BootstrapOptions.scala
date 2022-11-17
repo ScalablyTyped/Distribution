@@ -1,7 +1,5 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreStrings.noop
-import typings.angularCore.angularCoreStrings.zoneDotjs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +13,7 @@ trait BootstrapOptions extends StObject {
     * - `zone.js` - Use default `NgZone` which requires `Zone.js`.
     * - `noop` - Use `NoopNgZone` which does nothing.
     */
-  var ngZone: js.UndefOr[NgZone | zoneDotjs | noop] = js.undefined
+  var ngZone: js.UndefOr[NgZone | "zone.js" | "noop"] = js.undefined
   
   /**
     * Optionally specify coalescing event change detections or not.
@@ -66,7 +64,7 @@ object BootstrapOptions {
   
   extension [Self <: BootstrapOptions](x: Self) {
     
-    inline def setNgZone(value: NgZone | zoneDotjs | noop): Self = StObject.set(x, "ngZone", value.asInstanceOf[js.Any])
+    inline def setNgZone(value: NgZone | "zone.js" | "noop"): Self = StObject.set(x, "ngZone", value.asInstanceOf[js.Any])
     
     inline def setNgZoneEventCoalescing(value: Boolean): Self = StObject.set(x, "ngZoneEventCoalescing", value.asInstanceOf[js.Any])
     

@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Element2
-  extends NodeWithI18n
-     with Node2 {
+trait Element2 extends NodeWithI18n {
   
   var attrs: js.Array[Attribute] = js.native
   

@@ -1,19 +1,15 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.Super
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Super_
   extends StObject
-     with BaseNode
-     with Expression
-     with Node
-     with Standardized {
+     with BaseNode {
   
   @JSName("type")
-  var type_Super_ : Super
+  var type_Super_ : "Super"
 }
 object Super_ {
   
@@ -25,6 +21,6 @@ object Super_ {
   
   extension [Self <: Super_](x: Self) {
     
-    inline def setType(value: Super): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Super"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

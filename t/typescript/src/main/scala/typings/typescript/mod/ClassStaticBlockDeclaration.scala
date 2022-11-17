@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClassStaticBlockDeclaration
   extends StObject
      with ClassElement
-     with JSDocContainer
-     with HasJSDoc {
+     with JSDocContainer {
   
   val body: Block = js.native
   

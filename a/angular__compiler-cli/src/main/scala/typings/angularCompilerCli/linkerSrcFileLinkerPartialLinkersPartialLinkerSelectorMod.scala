@@ -1,8 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliStrings.error
-import typings.angularCompilerCli.angularCompilerCliStrings.ignore
-import typings.angularCompilerCli.angularCompilerCliStrings.warn
 import typings.angularCompilerCli.linkerSrcFileLinkerLinkerEnvironmentMod.LinkerEnvironment
 import typings.angularCompilerCli.linkerSrcFileLinkerPartialLinkersPartialLinkerMod.PartialLinker
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
@@ -25,7 +22,7 @@ object linkerSrcFileLinkerPartialLinkersPartialLinkerSelectorMod {
     def this(
       linkers: Map[String, js.Array[LinkerRange[TExpression]]],
       logger: Logger,
-      unknownDeclarationVersionHandling: ignore | warn | error
+      unknownDeclarationVersionHandling: "ignore" | "warn" | "error"
     ) = this()
     
     /**

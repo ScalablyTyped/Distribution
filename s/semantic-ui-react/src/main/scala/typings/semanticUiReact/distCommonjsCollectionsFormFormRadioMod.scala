@@ -40,31 +40,8 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.react.reactStrings.decimal
-import typings.react.reactStrings.done
-import typings.react.reactStrings.email
-import typings.react.reactStrings.enter
-import typings.react.reactStrings.environment
-import typings.react.reactStrings.go
-import typings.react.reactStrings.inherit
-import typings.react.reactStrings.next
-import typings.react.reactStrings.no
-import typings.react.reactStrings.none
-import typings.react.reactStrings.numeric
-import typings.react.reactStrings.off
-import typings.react.reactStrings.on
-import typings.react.reactStrings.previous
-import typings.react.reactStrings.search
-import typings.react.reactStrings.send
-import typings.react.reactStrings.tel
-import typings.react.reactStrings.text
-import typings.react.reactStrings.url
-import typings.react.reactStrings.user
-import typings.react.reactStrings.yes
 import typings.semanticUiReact.distCommonjsCollectionsFormFormFieldMod.StrictFormFieldProps
 import typings.semanticUiReact.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps
-import typings.semanticUiReact.semanticUiReactStrings.checkbox
-import typings.semanticUiReact.semanticUiReactStrings.radio
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLInputElement
@@ -125,14 +102,14 @@ object distCommonjsCollectionsFormFormRadioMod extends Shortcut {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
+    var capture: js.UndefOr[Boolean | "user" | "environment"] = js.undefined
     
     /** Whether or not checkbox is checked. */
     var checked: js.UndefOr[Boolean] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -154,7 +131,7 @@ object distCommonjsCollectionsFormFormRadioMod extends Shortcut {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
+    var enterKeyHint: js.UndefOr["enter" | "done" | "go" | "next" | "previous" | "search" | "send"] = js.undefined
     
     /** Removes padding for a label. Auto applied when there is no label. */
     var fitted: js.UndefOr[Boolean] = js.undefined
@@ -185,7 +162,7 @@ object distCommonjsCollectionsFormFormRadioMod extends Shortcut {
       * Hints at the type of data that might be entered by the user while editing the element or its contents
       * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
       */
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     /**
       * Specify that a standard HTML element should behave like a defined custom built-in element
@@ -498,15 +475,15 @@ object distCommonjsCollectionsFormFormRadioMod extends Shortcut {
     /** Format to show an on or off choice. */
     var toggle: js.UndefOr[Boolean] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     /** HTML input type, either checkbox or radio. */
     @JSName("type")
-    var type_StrictFormRadioProps: js.UndefOr[checkbox | radio] = js.undefined
+    var type_StrictFormRadioProps: js.UndefOr["checkbox" | "radio"] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
     /** The HTML input value. */
     var value: js.UndefOr[Double | String] = js.undefined
@@ -558,7 +535,7 @@ object distCommonjsCollectionsFormFormRadioMod extends Shortcut {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | "user" | "environment"): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -570,7 +547,7 @@ object distCommonjsCollectionsFormFormRadioMod extends Shortcut {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -612,7 +589,7 @@ object distCommonjsCollectionsFormFormRadioMod extends Shortcut {
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setEnterKeyHint(value: enter | done | go | next | previous | search | send): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
+      inline def setEnterKeyHint(value: "enter" | "done" | "go" | "next" | "previous" | "search" | "send"): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
       
       inline def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
       
@@ -660,7 +637,7 @@ object distCommonjsCollectionsFormFormRadioMod extends Shortcut {
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -1148,11 +1125,11 @@ object distCommonjsCollectionsFormFormRadioMod extends Shortcut {
       
       inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      inline def setType(value: checkbox | radio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "checkbox" | "radio"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -1160,7 +1137,7 @@ object distCommonjsCollectionsFormFormRadioMod extends Shortcut {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       

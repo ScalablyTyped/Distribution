@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.additionalProperties
 import typings.ajv.anon.AdditionalProperty
 import typings.ajv.distTypesMod.AddedKeywordDefinition
 import typings.ajv.distTypesMod.AnySchema
@@ -17,7 +16,7 @@ object distVocabulariesApplicatorAdditionalPropertiesMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition & AddedKeywordDefinition = js.native
   
-  type AdditionalPropertiesError = ErrorObject[additionalProperties, AdditionalProperty, AnySchema]
+  type AdditionalPropertiesError = ErrorObject["additionalProperties", AdditionalProperty, AnySchema]
   
   type _To = CodeKeywordDefinition & AddedKeywordDefinition
   

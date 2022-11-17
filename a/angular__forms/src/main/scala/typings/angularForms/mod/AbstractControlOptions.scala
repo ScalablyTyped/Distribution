@@ -1,8 +1,5 @@
 package typings.angularForms.mod
 
-import typings.angularForms.angularFormsStrings.blur
-import typings.angularForms.angularFormsStrings.change
-import typings.angularForms.angularFormsStrings.submit
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +17,7 @@ trait AbstractControlOptions extends StObject {
     * @description
     * The event name for control to update upon.
     */
-  var updateOn: js.UndefOr[change | blur | submit] = js.undefined
+  var updateOn: js.UndefOr["change" | "blur" | "submit"] = js.undefined
   
   /**
     * @description
@@ -49,7 +46,7 @@ object AbstractControlOptions {
     
     inline def setAsyncValidatorsVarargs(value: AsyncValidatorFn*): Self = StObject.set(x, "asyncValidators", js.Array(value*))
     
-    inline def setUpdateOn(value: change | blur | submit): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
+    inline def setUpdateOn(value: "change" | "blur" | "submit"): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
     
     inline def setUpdateOnUndefined: Self = StObject.set(x, "updateOn", js.undefined)
     

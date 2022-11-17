@@ -2,8 +2,6 @@ package typings.angularForms.mod
 
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
-import typings.angularForms.angularFormsStrings.`[formGroupName]`
 import typings.angularForms.anon.Host
 import typings.angularForms.anon.Self
 import typings.angularForms.anon.`2`
@@ -31,24 +29,26 @@ object FormGroupName {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     FormGroupName, 
-    `[formGroupName]`, 
+    "[formGroupName]", 
     scala.Nothing, 
     `2`, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       FormGroupName, 
-      `[formGroupName]`, 
+      "[formGroupName]", 
       scala.Nothing, 
       `2`, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `false`
+      false, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

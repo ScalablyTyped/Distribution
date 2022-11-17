@@ -1,16 +1,14 @@
 package typings.node.dnsMod
 
-import typings.node.nodeStrings.MX
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AnyMxRecord
   extends StObject
-     with MxRecord
-     with AnyRecord {
+     with MxRecord {
   
-  var `type`: MX
+  var `type`: "MX"
 }
 object AnyMxRecord {
   
@@ -22,6 +20,6 @@ object AnyMxRecord {
   
   extension [Self <: AnyMxRecord](x: Self) {
     
-    inline def setType(value: MX): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "MX"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

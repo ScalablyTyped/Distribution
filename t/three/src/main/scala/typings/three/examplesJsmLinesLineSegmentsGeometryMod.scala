@@ -8,7 +8,6 @@ import typings.three.srcThreeMod.LineSegments
 import typings.three.srcThreeMod.Matrix4
 import typings.three.srcThreeMod.Mesh
 import typings.three.srcThreeMod.WireframeGeometry
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ object examplesJsmLinesLineSegmentsGeometryMod {
     
     def fromWireframeGeometry(geometry: WireframeGeometry[BufferGeometry]): this.type = js.native
     
-    val isLineSegmentsGeometry: `true` = js.native
+    val isLineSegmentsGeometry: true = js.native
     
     def setColors(array: js.Array[Double]): this.type = js.native
     def setColors(array: js.typedarray.Float32Array): this.type = js.native

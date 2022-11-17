@@ -9,17 +9,13 @@ import typings.typescript.mod.NodeFlags
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SourceFileLike
 import typings.typescript.mod.SyntaxKind.ImportSpecifier
-import typings.typescript.mod.TypeOnlyAliasDeclaration
-import typings.typescript.typescriptBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined { readonly isTypeOnly :true} & typescript.typescript.ImportSpecifier */
 @js.native
-trait readonlyisTypeOnlytrueImp
-  extends StObject
-     with TypeOnlyAliasDeclaration {
+trait readonlyisTypeOnlytrueImp extends StObject {
   
   var _declarationBrand: Any = js.native
   
@@ -85,7 +81,7 @@ trait readonlyisTypeOnlytrueImp
   def getWidth(): Double = js.native
   def getWidth(sourceFile: SourceFileLike): Double = js.native
   
-  val isTypeOnly: `true` & Boolean = js.native
+  val isTypeOnly: true & Boolean = js.native
   
   val kind: ImportSpecifier = js.native
   

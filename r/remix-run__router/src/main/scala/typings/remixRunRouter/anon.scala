@@ -1,12 +1,7 @@
 package typings.remixRunRouter
 
-import typings.remixRunRouter.distRouterMod.RouterFetchOptions
 import typings.remixRunRouter.distUtilsMod.DataResult
 import typings.remixRunRouter.distUtilsMod.Params
-import typings.remixRunRouter.remixRunRouterStrings.get
-import typings.remixRunRouter.remixRunRouterStrings.idle
-import typings.remixRunRouter.remixRunRouterStrings.loading
-import typings.remixRunRouter.remixRunRouterStrings.submitting
 import typings.std.Exclude
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
@@ -31,7 +26,7 @@ object anon {
     
     var formEncType: js.UndefOr[typings.remixRunRouter.distUtilsMod.FormEncType] = js.undefined
     
-    var formMethod: js.UndefOr[Exclude[typings.remixRunRouter.distUtilsMod.FormMethod, get]] = js.undefined
+    var formMethod: js.UndefOr[Exclude[typings.remixRunRouter.distUtilsMod.FormMethod, "get"]] = js.undefined
     
     var nextParams: Params[String]
     
@@ -74,7 +69,7 @@ object anon {
       
       inline def setFormEncTypeUndefined: Self = StObject.set(x, "formEncType", js.undefined)
       
-      inline def setFormMethod(value: Exclude[typings.remixRunRouter.distUtilsMod.FormMethod, get]): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
+      inline def setFormMethod(value: Exclude[typings.remixRunRouter.distUtilsMod.FormMethod, "get"]): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
       
       inline def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
       
@@ -96,7 +91,7 @@ object anon {
     
     var formMethod: Unit
     
-    var state: idle
+    var state: "idle"
   }
   object Data {
     
@@ -119,7 +114,7 @@ object anon {
       
       inline def setFormMethod(value: Unit): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
       
-      inline def setState(value: idle): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: "idle"): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,7 +130,7 @@ object anon {
     
     var formMethod: js.UndefOr[typings.remixRunRouter.distUtilsMod.FormMethod] = js.undefined
     
-    var state: loading
+    var state: "loading"
   }
   object FormAction {
     
@@ -166,7 +161,7 @@ object anon {
       
       inline def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
       
-      inline def setState(value: loading): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: "loading"): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,7 +177,7 @@ object anon {
     
     var formMethod: typings.remixRunRouter.distUtilsMod.FormMethod
     
-    var state: submitting
+    var state: "submitting"
   }
   object FormData {
     
@@ -210,7 +205,7 @@ object anon {
       
       inline def setFormMethod(value: typings.remixRunRouter.distUtilsMod.FormMethod): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
       
-      inline def setState(value: submitting): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: "submitting"): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -226,7 +221,7 @@ object anon {
     
     var location: Unit
     
-    var state: idle
+    var state: "idle"
   }
   object FormEncType {
     
@@ -247,7 +242,7 @@ object anon {
       
       inline def setLocation(value: Unit): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      inline def setState(value: idle): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: "idle"): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -263,7 +258,7 @@ object anon {
     
     var location: typings.remixRunRouter.distHistoryMod.Location
     
-    var state: loading
+    var state: "loading"
   }
   object FormMethod {
     
@@ -292,7 +287,7 @@ object anon {
       
       inline def setLocation(value: typings.remixRunRouter.distHistoryMod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      inline def setState(value: loading): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: "loading"): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -308,7 +303,7 @@ object anon {
     
     var location: typings.remixRunRouter.distHistoryMod.Location
     
-    var state: submitting
+    var state: "submitting"
   }
   object Location {
     
@@ -335,14 +330,12 @@ object anon {
       
       inline def setLocation(value: typings.remixRunRouter.distHistoryMod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      inline def setState(value: submitting): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: "submitting"): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined std.Omit<@remix-run/router.@remix-run/router/dist/router.LinkNavigateOptions, 'replace'> */
-  trait OmitLinkNavigateOptionsre
-    extends StObject
-       with RouterFetchOptions {
+  trait OmitLinkNavigateOptionsre extends StObject {
     
     var preventScrollReset: js.UndefOr[Boolean] = js.undefined
     
@@ -368,9 +361,7 @@ object anon {
   }
   
   /* Inlined std.Omit<@remix-run/router.@remix-run/router/dist/router.SubmissionNavigateOptions, 'replace'> */
-  trait OmitSubmissionNavigateOpt
-    extends StObject
-       with RouterFetchOptions {
+  trait OmitSubmissionNavigateOpt extends StObject {
     
     var formData: typings.std.FormData
     

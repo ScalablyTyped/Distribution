@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompletionEntryDataUnresolved
   extends StObject
-     with CompletionEntryDataAutoImport
-     with CompletionEntryData {
+     with CompletionEntryDataAutoImport {
   
   /** The key in the `ExportMapCache` where the completion entry's `SymbolExportInfo[]` is found */
   var exportMapKey: java.lang.String

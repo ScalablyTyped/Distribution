@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ImportClause
   extends StObject
-     with NamedDeclaration
-     with TypeOnlyCompatibleAliasDeclaration {
+     with NamedDeclaration {
   
   val isTypeOnly: Boolean = js.native
   

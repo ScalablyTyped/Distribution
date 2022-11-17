@@ -1,11 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdStrings.bottom
-import typings.antd.antdStrings.click
-import typings.antd.antdStrings.focus
-import typings.antd.antdStrings.hover
-import typings.antd.antdStrings.top
 import typings.antd.libAvatarSizeContextMod.AvatarSize
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
@@ -28,9 +23,9 @@ object libAvatarGroupMod extends Shortcut {
     
     var maxCount: js.UndefOr[Double] = js.undefined
     
-    var maxPopoverPlacement: js.UndefOr[top | bottom] = js.undefined
+    var maxPopoverPlacement: js.UndefOr["top" | "bottom"] = js.undefined
     
-    var maxPopoverTrigger: js.UndefOr[hover | focus | click] = js.undefined
+    var maxPopoverTrigger: js.UndefOr["hover" | "focus" | "click"] = js.undefined
     
     var maxStyle: js.UndefOr[CSSProperties] = js.undefined
     
@@ -61,11 +56,11 @@ object libAvatarGroupMod extends Shortcut {
       
       inline def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
       
-      inline def setMaxPopoverPlacement(value: top | bottom): Self = StObject.set(x, "maxPopoverPlacement", value.asInstanceOf[js.Any])
+      inline def setMaxPopoverPlacement(value: "top" | "bottom"): Self = StObject.set(x, "maxPopoverPlacement", value.asInstanceOf[js.Any])
       
       inline def setMaxPopoverPlacementUndefined: Self = StObject.set(x, "maxPopoverPlacement", js.undefined)
       
-      inline def setMaxPopoverTrigger(value: hover | focus | click): Self = StObject.set(x, "maxPopoverTrigger", value.asInstanceOf[js.Any])
+      inline def setMaxPopoverTrigger(value: "hover" | "focus" | "click"): Self = StObject.set(x, "maxPopoverTrigger", value.asInstanceOf[js.Any])
       
       inline def setMaxPopoverTriggerUndefined: Self = StObject.set(x, "maxPopoverTrigger", js.undefined)
       

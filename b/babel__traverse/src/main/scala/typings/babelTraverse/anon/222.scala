@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSNamedTupleMember
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `222` extends StObject {
   
-  var `type`: TSNamedTupleMember
+  var `type`: "TSNamedTupleMember"
 }
 object `222` {
   
@@ -19,6 +18,6 @@ object `222` {
   
   extension [Self <: `222`](x: Self) {
     
-    inline def setType(value: TSNamedTupleMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSNamedTupleMember"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

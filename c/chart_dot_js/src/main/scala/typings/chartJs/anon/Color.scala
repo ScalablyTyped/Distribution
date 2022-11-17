@@ -1,12 +1,9 @@
 package typings.chartJs.anon
 
-import typings.chartJs.chartJsStrings.center
-import typings.chartJs.chartJsStrings.end
-import typings.chartJs.chartJsStrings.start
-import typings.chartJs.mod.ScriptableAndScriptableOptions
-import typings.chartJs.mod.ScriptableChartContext
-import typings.chartJs.typesBasicMod.AnyObject
-import typings.chartJs.typesGeometricMod.ChartArea
+import typings.chartJs.distChunksHelpersDotcoreMod.AnyObject
+import typings.chartJs.distChunksHelpersDotcoreMod.ChartArea
+import typings.chartJs.distChunksHelpersDotcoreMod.ScriptableAndScriptableOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.ScriptableChartContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +14,7 @@ trait Color extends StObject {
     * Color of title
     * @see Defaults.color
     */
-  var color: typings.chartJs.typesColorMod.Color
+  var color: typings.chartJs.distChunksHelpersDotcoreMod.Color
   
   /**
     * Is the legend title displayed.
@@ -32,7 +29,7 @@ trait Color extends StObject {
   
   var padding: js.UndefOr[Double | ChartArea] = js.undefined
   
-  var position: center | start | end
+  var position: "center" | "start" | "end"
   
   /**
     * The string title.
@@ -42,10 +39,10 @@ trait Color extends StObject {
 object Color {
   
   inline def apply(
-    color: typings.chartJs.typesColorMod.Color,
+    color: typings.chartJs.distChunksHelpersDotcoreMod.Color,
     display: Boolean,
     font: ScriptableAndScriptableOptions[PartialFontSpec, ScriptableChartContext],
-    position: center | start | end,
+    position: "center" | "start" | "end",
     text: String
   ): Color = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
@@ -54,7 +51,7 @@ object Color {
   
   extension [Self <: Color](x: Self) {
     
-    inline def setColor(value: typings.chartJs.typesColorMod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.chartJs.distChunksHelpersDotcoreMod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
@@ -66,7 +63,7 @@ object Color {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPosition(value: center | start | end): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: "center" | "start" | "end"): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

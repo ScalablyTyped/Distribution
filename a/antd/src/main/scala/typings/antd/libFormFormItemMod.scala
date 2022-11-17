@@ -1,8 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdBooleans.`false`
-import typings.antd.antdStrings.parallel
 import typings.antd.libFormFormItemInputMod.FormItemInputProps
 import typings.antd.libFormFormItemLabelMod.FormItemLabelProps
 import typings.antd.libFormHooksUseFormItemStatusMod.UseFormItemStatus
@@ -169,9 +167,9 @@ object libFormFormItemMod extends Shortcut {
     
     var trigger: js.UndefOr[String] = js.undefined
     
-    var validateFirst: js.UndefOr[Boolean | parallel] = js.undefined
+    var validateFirst: js.UndefOr[Boolean | "parallel"] = js.undefined
     
-    var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
+    var validateTrigger: js.UndefOr[String | js.Array[String] | false] = js.undefined
     
     var valuePropName: js.UndefOr[String] = js.undefined
   }
@@ -252,11 +250,11 @@ object libFormFormItemMod extends Shortcut {
       
       inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
-      inline def setValidateFirst(value: Boolean | parallel): Self = StObject.set(x, "validateFirst", value.asInstanceOf[js.Any])
+      inline def setValidateFirst(value: Boolean | "parallel"): Self = StObject.set(x, "validateFirst", value.asInstanceOf[js.Any])
       
       inline def setValidateFirstUndefined: Self = StObject.set(x, "validateFirst", js.undefined)
       
-      inline def setValidateTrigger(value: String | js.Array[String] | `false`): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
+      inline def setValidateTrigger(value: String | js.Array[String] | false): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
       
       inline def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
       
@@ -270,14 +268,7 @@ object libFormFormItemMod extends Shortcut {
   
   type RenderChildren[Values] = js.Function1[/* form */ FormInstance[Values], ReactNode]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.success
-    - typings.antd.antdStrings.warning
-    - typings.antd.antdStrings.error
-    - typings.antd.antdStrings.validating
-    - typings.antd.antdStrings._empty
-  */
-  trait ValidateStatus extends StObject
+  type ValidateStatus = "success" | "warning" | "error" | "validating" | ""
   
   type _To = FormItemInterface
   

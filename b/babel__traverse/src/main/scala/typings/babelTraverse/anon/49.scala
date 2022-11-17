@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.JSXSpreadAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `49` extends StObject {
   
-  var `type`: JSXSpreadAttribute
+  var `type`: "JSXSpreadAttribute"
 }
 object `49` {
   
@@ -19,6 +18,6 @@ object `49` {
   
   extension [Self <: `49`](x: Self) {
     
-    inline def setType(value: JSXSpreadAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "JSXSpreadAttribute"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

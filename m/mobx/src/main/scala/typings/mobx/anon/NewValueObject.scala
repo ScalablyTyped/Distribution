@@ -1,21 +1,17 @@
 package typings.mobx.anon
 
-import typings.mobx.distTypesObservablesetMod.ISetWillChange
 import typings.mobx.distTypesObservablesetMod.ObservableSet
-import typings.mobx.mobxStrings.add
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NewValueObject[T]
-  extends StObject
-     with ISetWillChange[T] {
+trait NewValueObject[T] extends StObject {
   
   var newValue: T
   
   var `object`: ObservableSet[T]
   
-  var `type`: add
+  var `type`: "add"
 }
 object NewValueObject {
   
@@ -32,6 +28,6 @@ object NewValueObject {
     
     inline def setObject(value: ObservableSet[T]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    inline def setType(value: add): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "add"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

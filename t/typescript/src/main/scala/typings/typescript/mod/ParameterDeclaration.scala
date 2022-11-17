@@ -9,14 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParameterDeclaration
   extends StObject
      with NamedDeclaration
-     with JSDocContainer
-     with HasDecorators
-     with HasExpressionInitializer
-     with HasJSDoc
-     with HasModifiers
-     with HasType
-     with VariableLikeDeclaration
-     with _BindingOrAssignmentElement {
+     with JSDocContainer {
   
   val dotDotDotToken: js.UndefOr[DotDotDotToken] = js.native
   

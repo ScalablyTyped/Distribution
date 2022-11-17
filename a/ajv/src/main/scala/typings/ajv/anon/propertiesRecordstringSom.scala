@@ -7,9 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  properties :std.Record<string, ajv.ajv/dist/types/jtd-schema.SomeJTDSchemaType>,   optionalProperties :std.Record<string, ajv.ajv/dist/types/jtd-schema.SomeJTDSchemaType> | undefined,   additionalProperties :boolean | undefined} & {  nullable :boolean | undefined,   metadata :std.Record<string, unknown> | undefined,   definitions :std.Record<string, ajv.ajv/dist/types/jtd-schema.SomeJTDSchemaType> | undefined} */
-trait propertiesRecordstringSom
-  extends StObject
-     with SomeJTDSchemaType {
+trait propertiesRecordstringSom extends StObject {
   
   var additionalProperties: js.UndefOr[Boolean] = js.undefined
   

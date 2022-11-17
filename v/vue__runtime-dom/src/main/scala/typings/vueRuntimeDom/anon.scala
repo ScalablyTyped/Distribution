@@ -5,7 +5,6 @@ import typings.vueRuntimeCore.mod.ComponentOptionsBase
 import typings.vueRuntimeCore.mod.ComponentPublicInstance
 import typings.vueRuntimeDom.mod.AssignerFn
 import typings.vueRuntimeDom.mod.TransitionGroupProps
-import typings.vueRuntimeDom.vueRuntimeDomBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,7 +65,7 @@ object anon {
             js.Object, 
             js.Object, 
             js.Object, 
-            `false`, 
+            false, 
             ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
             js.Object
           ]

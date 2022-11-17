@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.anyOf
 import typings.ajv.distTypesMod.AnySchema
 import typings.ajv.distTypesMod.CodeKeywordDefinition
 import typings.ajv.distTypesMod.ErrorNoParams
@@ -15,7 +14,7 @@ object distVocabulariesApplicatorAnyOfMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type AnyOfError = ErrorNoParams[anyOf, js.Array[AnySchema]]
+  type AnyOfError = ErrorNoParams["anyOf", js.Array[AnySchema]]
   
   type _To = CodeKeywordDefinition
   

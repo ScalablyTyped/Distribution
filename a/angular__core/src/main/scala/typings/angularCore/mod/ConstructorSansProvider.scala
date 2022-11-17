@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConstructorSansProvider
-  extends StObject
-     with InjectableProvider {
+trait ConstructorSansProvider extends StObject {
   
   /**
     * A list of `token`s to be resolved by the injector.

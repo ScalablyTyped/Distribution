@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.reactNavigation.mod.NavigationRoute because Already inherited
 - typings.reactNavigation.mod.NavigationState because var conflicts: index, isTransitioning, key, params, routes. Inlined  */ trait NavigationStateRoute[NavigationLeafRouteParams]
   extends StObject
      with NavigationLeafRoute[NavigationLeafRouteParams]

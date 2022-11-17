@@ -1,8 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.freeTrial
-import typings.electron.electronStrings.payAsYouGo
-import typings.electron.electronStrings.payUpFront
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +22,7 @@ trait ProductDiscount extends StObject {
     * The payment mode for this product discount. Can be `payAsYouGo`, `payUpFront`,
     * or `freeTrial`.
     */
-  var paymentMode: payAsYouGo | payUpFront | freeTrial
+  var paymentMode: "payAsYouGo" | "payUpFront" | "freeTrial"
   
   /**
     * The discount price of the product in the local currency.
@@ -52,7 +49,7 @@ object ProductDiscount {
   inline def apply(
     identifier: String,
     numberOfPeriods: Double,
-    paymentMode: payAsYouGo | payUpFront | freeTrial,
+    paymentMode: "payAsYouGo" | "payUpFront" | "freeTrial",
     price: Double,
     priceLocale: String,
     `type`: Double
@@ -68,7 +65,7 @@ object ProductDiscount {
     
     inline def setNumberOfPeriods(value: Double): Self = StObject.set(x, "numberOfPeriods", value.asInstanceOf[js.Any])
     
-    inline def setPaymentMode(value: payAsYouGo | payUpFront | freeTrial): Self = StObject.set(x, "paymentMode", value.asInstanceOf[js.Any])
+    inline def setPaymentMode(value: "payAsYouGo" | "payUpFront" | "freeTrial"): Self = StObject.set(x, "paymentMode", value.asInstanceOf[js.Any])
     
     inline def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     

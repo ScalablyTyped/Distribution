@@ -6,9 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PipeSymbol
-  extends StObject
-     with Symbol {
+trait PipeSymbol extends StObject {
   
   /** The symbol for the pipe class as an instance that appears in the TCB. */
   var classSymbol: ClassSymbol

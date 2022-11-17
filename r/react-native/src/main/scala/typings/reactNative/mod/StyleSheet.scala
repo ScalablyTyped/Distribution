@@ -1,7 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeInts.`0`
-import typings.reactNative.reactNativeStrings.absolute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,15 +37,15 @@ object StyleSheet {
   
   trait AbsoluteFillStyle extends StObject {
     
-    var bottom: `0`
+    var bottom: 0
     
-    var left: `0`
+    var left: 0
     
-    var position: absolute
+    var position: "absolute"
     
-    var right: `0`
+    var right: 0
     
-    var top: `0`
+    var top: 0
   }
   object AbsoluteFillStyle {
     
@@ -58,15 +56,15 @@ object StyleSheet {
     
     extension [Self <: AbsoluteFillStyle](x: Self) {
       
-      inline def setBottom(value: `0`): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: 0): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      inline def setLeft(value: `0`): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: 0): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      inline def setPosition(value: absolute): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: "absolute"): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      inline def setRight(value: `0`): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: 0): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      inline def setTop(value: `0`): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: 0): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   

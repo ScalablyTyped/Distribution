@@ -5,9 +5,6 @@ import typings.rcTree.esInterfaceMod.DataNode
 import typings.rcTree.esInterfaceMod.FieldNames
 import typings.rcTree.esInterfaceMod.FlattenNode
 import typings.rcTree.esTreeMod.TreeProps
-import typings.rcTree.rcTreeInts.`-1`
-import typings.rcTree.rcTreeInts.`0`
-import typings.rcTree.rcTreeInts.`1`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,7 +29,7 @@ trait PartialTreeStateDataNode extends StObject {
   
   var dropLevelOffset: js.UndefOr[Double | Null] = js.undefined
   
-  var dropPosition: js.UndefOr[`-1` | `0` | `1` | Null] = js.undefined
+  var dropPosition: js.UndefOr[-1 | 0 | 1 | Null] = js.undefined
   
   var dropTargetKey: js.UndefOr[typings.rcTree.esInterfaceMod.Key | Null] = js.undefined
   
@@ -115,7 +112,7 @@ object PartialTreeStateDataNode {
     
     inline def setDropLevelOffsetUndefined: Self = StObject.set(x, "dropLevelOffset", js.undefined)
     
-    inline def setDropPosition(value: `-1` | `0` | `1`): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
+    inline def setDropPosition(value: -1 | 0 | 1): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
     
     inline def setDropPositionNull: Self = StObject.set(x, "dropPosition", null)
     

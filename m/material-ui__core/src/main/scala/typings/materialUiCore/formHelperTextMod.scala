@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.formHelperTextFormHelperTextMod.FormHelperTextTypeMap
-import typings.materialUiCore.materialUiCoreStrings.p
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,10 +21,10 @@ object formHelperTextMod extends Shortcut {
     */
   @JSImport("@material-ui/core/FormHelperText", JSImport.Default)
   @js.native
-  val default: OverridableComponent[FormHelperTextTypeMap[js.Object, p]] = js.native
+  val default: OverridableComponent[FormHelperTextTypeMap[js.Object, "p"]] = js.native
   
-  type _To = OverridableComponent[FormHelperTextTypeMap[js.Object, p]]
+  type _To = OverridableComponent[FormHelperTextTypeMap[js.Object, "p"]]
   
   /* This means you don't have to write `default`, but can instead just say `formHelperTextMod.foo` */
-  override def _to: OverridableComponent[FormHelperTextTypeMap[js.Object, p]] = default
+  override def _to: OverridableComponent[FormHelperTextTypeMap[js.Object, "p"]] = default
 }

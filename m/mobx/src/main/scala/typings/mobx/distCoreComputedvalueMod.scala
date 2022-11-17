@@ -7,8 +7,6 @@ import typings.mobx.distCoreObservableMod.IObservable
 import typings.mobx.distInternalMod.CaughtException
 import typings.mobx.distUtilsComparerMod.IEqualsComparer
 import typings.mobx.distUtilsUtilsMod.Lambda
-import typings.mobx.mobxStrings.computed
-import typings.mobx.mobxStrings.update
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -136,11 +134,11 @@ object distCoreComputedvalueMod {
     
     var `object`: Any
     
-    var observableKind: computed
+    var observableKind: "computed"
     
     var oldValue: js.UndefOr[T] = js.undefined
     
-    var `type`: update
+    var `type`: "update"
   }
   object IComputedDidChange {
     
@@ -159,13 +157,13 @@ object distCoreComputedvalueMod {
       
       inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      inline def setObservableKind(value: computed): Self = StObject.set(x, "observableKind", value.asInstanceOf[js.Any])
+      inline def setObservableKind(value: "computed"): Self = StObject.set(x, "observableKind", value.asInstanceOf[js.Any])
       
       inline def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
       inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
       
-      inline def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "update"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

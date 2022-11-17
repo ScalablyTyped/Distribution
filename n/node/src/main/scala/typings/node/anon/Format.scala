@@ -1,7 +1,6 @@
 package typings.node.anon
 
 import typings.node.cryptoMod.KeyFormat
-import typings.node.nodeStrings.spki
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait Format[PubF /* <: KeyFormat */] extends StObject {
   
   var format: PubF
   
-  var `type`: spki
+  var `type`: "spki"
 }
 object Format {
   
@@ -24,6 +23,6 @@ object Format {
     
     inline def setFormat(value: PubF): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setType(value: spki): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "spki"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

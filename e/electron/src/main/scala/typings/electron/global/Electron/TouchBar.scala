@@ -12,9 +12,6 @@ import typings.electron.Electron.TouchBarScrubberConstructorOptions
 import typings.electron.Electron.TouchBarSegmentedControlConstructorOptions
 import typings.electron.Electron.TouchBarSliderConstructorOptions
 import typings.electron.Electron.TouchBarSpacerConstructorOptions
-import typings.electron.electronStrings.left
-import typings.electron.electronStrings.overlay
-import typings.electron.electronStrings.right
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -88,7 +85,7 @@ object TouchBar {
       * A `string` - Can be `left`, `right` or `overlay`.  Defaults to `overlay`.
       */
     /* CompleteClass */
-    var iconPosition: left | right | overlay = js.native
+    var iconPosition: "left" | "right" | "overlay" = js.native
     
     /**
       * A `string` representing the button's current text. Changing this value

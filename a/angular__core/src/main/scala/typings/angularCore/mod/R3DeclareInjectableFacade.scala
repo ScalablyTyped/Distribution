@@ -1,8 +1,5 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreStrings.any
-import typings.angularCore.angularCoreStrings.platform
-import typings.angularCore.angularCoreStrings.root
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +8,7 @@ trait R3DeclareInjectableFacade extends StObject {
   
   var deps: js.UndefOr[js.Array[R3DeclareDependencyMetadataFacade]] = js.undefined
   
-  var providedIn: js.UndefOr[Type2 | root | platform | any | Null] = js.undefined
+  var providedIn: js.UndefOr[Type2 | "root" | "platform" | "any" | Null] = js.undefined
   
   var `type`: Type2
   
@@ -39,7 +36,7 @@ object R3DeclareInjectableFacade {
     
     inline def setDepsVarargs(value: R3DeclareDependencyMetadataFacade*): Self = StObject.set(x, "deps", js.Array(value*))
     
-    inline def setProvidedIn(value: Type2 | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    inline def setProvidedIn(value: Type2 | "root" | "platform" | "any"): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
     inline def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
     

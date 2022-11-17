@@ -10,8 +10,24 @@ Check out [scalablytyped.org](https://www.scalablytyped.org)
 
 ## About
 
-This is one of the biggest Scala repos on the planet with with **12807**  compiling libraries.
+This is one of the biggest Scala repos on the planet with with **204**  compiling libraries.
 
+:
+```
+
+--------------------------------------------------------------------------------
+ Language             Files        Lines        Blank      Comment         Code
+--------------------------------------------------------------------------------
+ Scala               476784     38906986      9374311      7776595     21756080
+ Markdown             13643       469072       159540            0       309532
+ Makefile                 6          141           43            0           98
+ HTML                     1            6            0            0            6
+ JSON                     1            1            0            0            1
+--------------------------------------------------------------------------------
+ Total               490435     39376206      9533894      7776595     22065717
+--------------------------------------------------------------------------------
+
+```
 .
 
 The jar files with all the libraries from this repo used to be published to bintray.

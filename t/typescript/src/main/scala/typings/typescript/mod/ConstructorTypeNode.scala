@@ -8,11 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ConstructorTypeNode
   extends StObject
-     with FunctionOrConstructorTypeNodeBase
-     with FunctionOrConstructorTypeNode
-     with HasJSDoc
-     with HasModifiers
-     with SignatureDeclaration {
+     with FunctionOrConstructorTypeNodeBase {
   
   @JSName("kind")
   val kind_ConstructorTypeNode: ConstructorType = js.native

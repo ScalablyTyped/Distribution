@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlaceholderPiece
-  extends StObject
-     with MessagePiece {
+trait PlaceholderPiece extends StObject {
   
   var associatedMessage: js.UndefOr[Message] = js.undefined
   

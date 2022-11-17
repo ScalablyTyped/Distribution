@@ -12,10 +12,6 @@ import typings.vueCompilerCore.anon.CodegenOptionsonContextCr
 import typings.vueCompilerCore.anon.Directives
 import typings.vueCompilerCore.anon.HasDynamicSlots
 import typings.vueCompilerCore.mod.^
-import typings.vueCompilerCore.vueCompilerCoreInts.`0`
-import typings.vueCompilerCore.vueCompilerCoreStrings.component
-import typings.vueCompilerCore.vueCompilerCoreStrings.directive
-import typings.vueCompilerCore.vueCompilerCoreStrings.filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -234,9 +230,8 @@ inline def createObjectExpression(properties: js.Array[Property], loc: SourceLoc
 inline def createObjectProperty(key: String, value: JSChildNode): Property = (^.asInstanceOf[js.Dynamic].applyDynamic("createObjectProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Property]
 inline def createObjectProperty(key: ExpressionNode, value: JSChildNode): Property = (^.asInstanceOf[js.Dynamic].applyDynamic("createObjectProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Property]
 
+inline def createReturnStatement(returns: JSChildNode | TemplateChildNode): ReturnStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createReturnStatement")(returns.asInstanceOf[js.Any]).asInstanceOf[ReturnStatement]
 inline def createReturnStatement(returns: js.Array[TemplateChildNode]): ReturnStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createReturnStatement")(returns.asInstanceOf[js.Any]).asInstanceOf[ReturnStatement]
-inline def createReturnStatement(returns: JSChildNode): ReturnStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createReturnStatement")(returns.asInstanceOf[js.Any]).asInstanceOf[ReturnStatement]
-inline def createReturnStatement(returns: TemplateChildNode): ReturnStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createReturnStatement")(returns.asInstanceOf[js.Any]).asInstanceOf[ReturnStatement]
 
 inline def createRoot(children: js.Array[TemplateChildNode]): RootNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoot")(children.asInstanceOf[js.Any]).asInstanceOf[RootNode]
 inline def createRoot(children: js.Array[TemplateChildNode], loc: SourceLocation): RootNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoot")(children.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[RootNode]
@@ -321,10 +316,9 @@ inline def getVNodeHelper(ssr: Boolean, isComponent: Boolean): js.Symbol = (^.as
 
 inline def hasDynamicKeyVBind(node: ElementNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasDynamicKeyVBind")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
+inline def hasScopeRef(node: ExpressionNode | TemplateChildNode, ids: StringDictionary[js.UndefOr[Double]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasScopeRef")(node.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def hasScopeRef(node: Unit, ids: StringDictionary[js.UndefOr[Double]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasScopeRef")(node.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-inline def hasScopeRef(node: ExpressionNode, ids: StringDictionary[js.UndefOr[Double]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasScopeRef")(node.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def hasScopeRef(node: IfBranchNode, ids: StringDictionary[js.UndefOr[Double]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasScopeRef")(node.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-inline def hasScopeRef(node: TemplateChildNode, ids: StringDictionary[js.UndefOr[Double]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasScopeRef")(node.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def helperNameMap: Record[js.Symbol, String] = ^.asInstanceOf[js.Dynamic].selectDynamic("helperNameMap").asInstanceOf[Record[js.Symbol, String]]
 
@@ -367,7 +361,8 @@ inline def isTemplateNode(node: TemplateChildNode): /* is @vue/compiler-core.@vu
 
 inline def isText(node: TemplateChildNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isText")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def isVSlot_0(
+@scala.annotation.targetName("isVSlot_0")
+inline def isVSlot(
   p: /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode>[0] */ js.Any
 ): /* is @vue/compiler-core.@vue/compiler-core.DirectiveNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVSlot")(p.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/compiler-core.@vue/compiler-core.DirectiveNode */ Boolean]
 
@@ -441,7 +436,8 @@ inline def resolveComponentType(node: ComponentNode, context: TransformContext, 
 inline def stringifyExpression(exp: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyExpression")(exp.asInstanceOf[js.Any]).asInstanceOf[String]
 inline def stringifyExpression(exp: ExpressionNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyExpression")(exp.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def toValidAssetId(name: String, `type`: component | directive | filter): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toValidAssetId")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
+@scala.annotation.targetName("toValidAssetId_component_directive_filter")
+inline def toValidAssetId(name: String, `type`: "component" | "directive" | "filter"): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toValidAssetId")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
 
 inline def trackSlotScopes: NodeTransform = ^.asInstanceOf[js.Dynamic].selectDynamic("trackSlotScopes").asInstanceOf[NodeTransform]
 
@@ -578,12 +574,30 @@ inline def warnDeprecation(key: CompilerDeprecationTypes, context: ParserContext
 inline def warnDeprecation(key: CompilerDeprecationTypes, context: TransformContext, loc: Null, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnDeprecation")((scala.List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 inline def warnDeprecation(key: CompilerDeprecationTypes, context: TransformContext, loc: SourceLocation, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnDeprecation")((scala.List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 
+type BindingTypes = "data" | "props" | "props-aliased" | "setup-let" | "setup-const" | "setup-reactive-const" | "setup-maybe-ref" | "setup-ref" | "options"
+
+type BlockCodegenNode = VNodeCall | RenderSlotCall
+
+type CodegenNode = TemplateChildNode | JSChildNode | SSRCodegenNode
+
+type CompilerDeprecationTypes = "COMPILER_IS_ON_ELEMENT" | "COMPILER_V_BIND_SYNC" | "COMPILER_V_BIND_PROP" | "COMPILER_V_BIND_OBJECT_ORDER" | "COMPILER_V_ON_NATIVE" | "COMPILER_V_IF_V_FOR_PRECEDENCE" | "COMPILER_NATIVE_TEMPLATE" | "COMPILER_INLINE_TEMPLATE" | "COMPILER_FILTER"
+
+type ConstantTypes = 0 | 1 | 2 | 3
+
 type DirectiveTransform = js.Function4[
 /* dir */ DirectiveNode, 
 /* node */ ElementNode, 
 /* context */ TransformContext, 
 /* augmentor */ js.UndefOr[js.Function1[/* ret */ DirectiveTransformResult, DirectiveTransformResult]], 
 DirectiveTransformResult]
+
+type ElementNode = PlainElementNode | ComponentNode | SlotOutletNode | TemplateNode
+
+type ElementTypes = 0 | 1 | 2 | 3
+
+type ErrorCodes = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52, starting with 0, 1, 2 */ Any
+
+type ExpressionNode = SimpleExpressionNode | CompoundExpressionNode
 
 type HoistTransform = js.Function3[
 /* children */ js.Array[TemplateChildNode], 
@@ -609,14 +623,26 @@ type InferCodegenNodeType[T] = RenderSlotCall
   */
 type InferCompilerError[T] = CoreCompilerError
 
+type JSChildNode = VNodeCall | CallExpression | ObjectExpression | ArrayExpression | ExpressionNode | FunctionExpression | ConditionalExpression | CacheExpression | AssignmentExpression | SequenceExpression
+
 type Namespace = Double
 
-type Namespaces = `0`
+type Namespaces = 0
 
 type NodeTransform = js.Function2[
 /* node */ RootNode | TemplateChildNode, 
 /* context */ TransformContext, 
 Unit | js.Function0[Unit] | js.Array[js.Function0[Unit]]]
+
+type NodeTypes = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26
+
+type OptionalOptions = "whitespace" | "isNativeTag" | "isBuiltInComponent" | "compatConfig"
+
+type ParentNode2 = RootNode | ElementNode | IfBranchNode | ForNode
+
+type PropsExpression = ObjectExpression | CallExpression | ExpressionNode
+
+type SSRCodegenNode = BlockStatement | TemplateLiteral | IfStatement | AssignmentExpression | ReturnStatement | SequenceExpression
 
 type SlotFnBuilder = js.Function3[
 /* slotProps */ js.UndefOr[ExpressionNode], 
@@ -624,10 +650,18 @@ type SlotFnBuilder = js.Function3[
 /* loc */ SourceLocation, 
 FunctionExpression]
 
+type SlotsExpression = SlotsObjectExpression | DynamicSlotsExpression
+
 type StructuralDirectiveTransform = js.Function3[
 /* node */ ElementNode, 
 /* dir */ DirectiveNode, 
 /* context */ TransformContext, 
 Unit | js.Function0[Unit]]
+
+type TemplateChildNode = ElementNode | InterpolationNode | CompoundExpressionNode | TextNode | CommentNode | IfNode | IfBranchNode | ForNode | TextCallNode
+
+type TemplateTextChildNode = TextNode | InterpolationNode | CompoundExpressionNode
+
+type TextModes = 0 | 1 | 2 | 3 | 4
 
 type TransformPreset = js.Tuple2[js.Array[NodeTransform], Record[String, DirectiveTransform]]

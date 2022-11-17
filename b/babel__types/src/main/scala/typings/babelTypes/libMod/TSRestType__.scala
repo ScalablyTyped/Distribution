@@ -1,21 +1,17 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSRestType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSRestType__
   extends StObject
-     with BaseNode
-     with Node
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   var typeAnnotation: TSType
   
   @JSName("type")
-  var type_TSRestType__ : TSRestType
+  var type_TSRestType__ : "TSRestType"
 }
 object TSRestType__ {
   
@@ -27,7 +23,7 @@ object TSRestType__ {
   
   extension [Self <: TSRestType__](x: Self) {
     
-    inline def setType(value: TSRestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSRestType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }

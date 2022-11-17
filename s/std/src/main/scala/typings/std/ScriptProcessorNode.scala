@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.audioprocess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,19 +15,22 @@ trait ScriptProcessorNode
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_audioprocess(
-    `type`: audioprocess,
+  @scala.annotation.targetName("addEventListener_audioprocess")
+  def addEventListener(
+    `type`: "audioprocess",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_audioprocess(
-    `type`: audioprocess,
+  @scala.annotation.targetName("addEventListener_audioprocess")
+  def addEventListener(
+    `type`: "audioprocess",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_audioprocess(
-    `type`: audioprocess,
+  @scala.annotation.targetName("addEventListener_audioprocess")
+  def addEventListener(
+    `type`: "audioprocess",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -43,19 +45,22 @@ trait ScriptProcessorNode
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_audioprocess(
-    `type`: audioprocess,
+  @scala.annotation.targetName("removeEventListener_audioprocess")
+  def removeEventListener(
+    `type`: "audioprocess",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_audioprocess(
-    `type`: audioprocess,
+  @scala.annotation.targetName("removeEventListener_audioprocess")
+  def removeEventListener(
+    `type`: "audioprocess",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_audioprocess(
-    `type`: audioprocess,
+  @scala.annotation.targetName("removeEventListener_audioprocess")
+  def removeEventListener(
+    `type`: "audioprocess",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native

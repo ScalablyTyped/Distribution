@@ -1,33 +1,18 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ClassMethod
-import typings.babelTypes.babelTypesStrings.`protected`
-import typings.babelTypes.babelTypesStrings.constructor
-import typings.babelTypes.babelTypesStrings.get
-import typings.babelTypes.babelTypesStrings.method_
-import typings.babelTypes.babelTypesStrings.private_
-import typings.babelTypes.babelTypesStrings.public
-import typings.babelTypes.babelTypesStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ClassMethod_
   extends StObject
-     with BaseNode
-     with BlockParent
-     with Function
-     with FunctionParent
-     with Method
-     with Node
-     with Scopable
-     with Standardized {
+     with BaseNode {
   
   var `abstract`: js.UndefOr[Boolean | Null] = js.undefined
   
-  var access: js.UndefOr[public | private_ | `protected` | Null] = js.undefined
+  var access: js.UndefOr["public" | "private" | "protected" | Null] = js.undefined
   
-  var accessibility: js.UndefOr[public | private_ | `protected` | Null] = js.undefined
+  var accessibility: js.UndefOr["public" | "private" | "protected" | Null] = js.undefined
   
   var async: Boolean
   
@@ -41,7 +26,7 @@ trait ClassMethod_
   
   var key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression
   
-  var kind: get | set | method_ | constructor
+  var kind: "get" | "set" | "method" | "constructor"
   
   var optional: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -56,7 +41,7 @@ trait ClassMethod_
   var typeParameters: js.UndefOr[TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
-  var type_ClassMethod_ : ClassMethod
+  var type_ClassMethod_ : "ClassMethod"
 }
 object ClassMethod_ {
   
@@ -66,7 +51,7 @@ object ClassMethod_ {
     computed: Boolean,
     generator: Boolean,
     key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
-    kind: get | set | method_ | constructor,
+    kind: "get" | "set" | "method" | "constructor",
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
     static: Boolean
   ): ClassMethod_ = {
@@ -83,13 +68,13 @@ object ClassMethod_ {
     
     inline def setAbstractUndefined: Self = StObject.set(x, "abstract", js.undefined)
     
-    inline def setAccess(value: public | private_ | `protected`): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: "public" | "private" | "protected"): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
     inline def setAccessNull: Self = StObject.set(x, "access", null)
     
     inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
-    inline def setAccessibility(value: public | private_ | `protected`): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: "public" | "private" | "protected"): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityNull: Self = StObject.set(x, "accessibility", null)
     
@@ -113,7 +98,7 @@ object ClassMethod_ {
     
     inline def setKey(value: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setKind(value: get | set | method_ | constructor): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "get" | "set" | "method" | "constructor"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
@@ -137,7 +122,7 @@ object ClassMethod_ {
     
     inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ClassMethod): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ClassMethod"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

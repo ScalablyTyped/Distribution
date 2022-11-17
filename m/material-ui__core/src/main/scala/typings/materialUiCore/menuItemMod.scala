@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.`7`
 import typings.materialUiCore.anon.`8`
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
-import typings.materialUiCore.materialUiCoreStrings.li
 import typings.materialUiCore.menuItemMenuItemMod.MenuItemTypeMap
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import org.scalablytyped.runtime.StObject
@@ -26,10 +25,10 @@ object menuItemMod extends Shortcut {
     */
   @JSImport("@material-ui/core/MenuItem", JSImport.Default)
   @js.native
-  val default: (OverridableComponent[MenuItemTypeMap[`7`, li]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, li]]) = js.native
+  val default: (OverridableComponent[MenuItemTypeMap[`7`, "li"]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, "li"]]) = js.native
   
-  type _To = (OverridableComponent[MenuItemTypeMap[`7`, li]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, li]])
+  type _To = (OverridableComponent[MenuItemTypeMap[`7`, "li"]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, "li"]])
   
   /* This means you don't have to write `default`, but can instead just say `menuItemMod.foo` */
-  override def _to: (OverridableComponent[MenuItemTypeMap[`7`, li]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, li]]) = default
+  override def _to: (OverridableComponent[MenuItemTypeMap[`7`, "li"]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, "li"]]) = default
 }

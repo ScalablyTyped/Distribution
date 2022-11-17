@@ -3,9 +3,6 @@ package typings.materialUiCore
 import typings.materialUiCore.anon.Ref
 import typings.materialUiCore.listListMod.ListClassKey
 import typings.materialUiCore.listListMod.ListProps
-import typings.materialUiCore.materialUiCoreStrings.menu
-import typings.materialUiCore.materialUiCoreStrings.selectedMenu
-import typings.materialUiCore.materialUiCoreStrings.ul
 import typings.materialUiStyles.withStylesWithStylesMod.StyledComponentProps
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
@@ -27,7 +24,7 @@ object menuListMenuListMod {
   - Dropped @material-ui/core.@material-ui/core/List/List.ListProps<'ul', {}> extends any ? std.Pick<@material-ui/core.@material-ui/core/List/List.ListProps<'ul', {}>, std.Exclude<keyof @material-ui/core.@material-ui/core/List/List.ListProps<'ul', {}>, 'classes' | never>> : never */ trait MenuListProps
     extends StObject
        with StyledComponentProps[MenuListClassKey]
-       with Ref[ListProps[ul, js.Object]] {
+       with Ref[ListProps["ul", js.Object]] {
     
     /**
       * If `true`, will focus the `[role="menu"]` container and move into tab order.
@@ -59,7 +56,7 @@ object menuListMenuListMod {
       * The variant to use. Use `menu` to prevent selected items from impacting the initial focus
       * and the vertical alignment relative to the anchor element.
       */
-    var variant: js.UndefOr[menu | selectedMenu] = js.undefined
+    var variant: js.UndefOr["menu" | "selectedMenu"] = js.undefined
   }
   object MenuListProps {
     
@@ -90,7 +87,7 @@ object menuListMenuListMod {
       
       inline def setDisabledItemsFocusableUndefined: Self = StObject.set(x, "disabledItemsFocusable", js.undefined)
       
-      inline def setVariant(value: menu | selectedMenu): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "menu" | "selectedMenu"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     }

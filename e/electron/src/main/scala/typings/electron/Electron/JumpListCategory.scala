@@ -1,9 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.custom
-import typings.electron.electronStrings.frequent
-import typings.electron.electronStrings.recent
-import typings.electron.electronStrings.tasks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +21,7 @@ trait JumpListCategory extends StObject {
   /**
     * One of the following:
     */
-  var `type`: js.UndefOr[tasks | frequent | recent | custom] = js.undefined
+  var `type`: js.UndefOr["tasks" | "frequent" | "recent" | "custom"] = js.undefined
 }
 object JumpListCategory {
   
@@ -46,7 +42,7 @@ object JumpListCategory {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setType(value: tasks | frequent | recent | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "tasks" | "frequent" | "recent" | "custom"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

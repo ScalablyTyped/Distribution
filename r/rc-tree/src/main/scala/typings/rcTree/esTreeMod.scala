@@ -27,11 +27,6 @@ import typings.rcTree.esInterfaceMod.Key
 import typings.rcTree.esInterfaceMod.NodeInstance
 import typings.rcTree.esNodeListMod.NodeListRef
 import typings.rcTree.esTreeNodeMod.TreeNodeProps
-import typings.rcTree.rcTreeBooleans.`false`
-import typings.rcTree.rcTreeInts.`-1`
-import typings.rcTree.rcTreeInts.`0`
-import typings.rcTree.rcTreeInts.`1`
-import typings.rcTree.rcTreeStrings.check
 import typings.rcVirtualList.esListMod.ScrollTo
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
@@ -183,11 +178,11 @@ object esTreeMod {
     
     var dropNode: TreeDataType
     
-    var dropPosition: `-1` | `0` | `1`
+    var dropPosition: -1 | 0 | 1
   }
   object AllowDropOptions {
     
-    inline def apply[TreeDataType /* <: BasicDataNode */](dragNode: TreeDataType, dropNode: TreeDataType, dropPosition: `-1` | `0` | `1`): AllowDropOptions[TreeDataType] = {
+    inline def apply[TreeDataType /* <: BasicDataNode */](dragNode: TreeDataType, dropNode: TreeDataType, dropPosition: -1 | 0 | 1): AllowDropOptions[TreeDataType] = {
       val __obj = js.Dynamic.literal(dragNode = dragNode.asInstanceOf[js.Any], dropNode = dropNode.asInstanceOf[js.Any], dropPosition = dropPosition.asInstanceOf[js.Any])
       __obj.asInstanceOf[AllowDropOptions[TreeDataType]]
     }
@@ -198,7 +193,7 @@ object esTreeMod {
       
       inline def setDropNode(value: TreeDataType): Self = StObject.set(x, "dropNode", value.asInstanceOf[js.Any])
       
-      inline def setDropPosition(value: `-1` | `0` | `1`): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
+      inline def setDropPosition(value: -1 | 0 | 1): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,7 +205,7 @@ object esTreeMod {
     
     var checkedNodesPositions: js.UndefOr[js.Array[Node[TreeDataType]]] = js.undefined
     
-    var event: check
+    var event: "check"
     
     var halfCheckedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
@@ -244,7 +239,7 @@ object esTreeMod {
       
       inline def setCheckedNodesVarargs(value: TreeDataType*): Self = StObject.set(x, "checkedNodes", js.Array(value*))
       
-      inline def setEvent(value: check): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: "check"): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setHalfCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "halfCheckedKeys", value.asInstanceOf[js.Any])
       
@@ -260,7 +255,7 @@ object esTreeMod {
   
   trait DraggableConfig extends StObject {
     
-    var icon: js.UndefOr[ReactNode | `false`] = js.undefined
+    var icon: js.UndefOr[ReactNode | false] = js.undefined
     
     var nodeDraggable: js.UndefOr[DraggableFn] = js.undefined
   }
@@ -273,7 +268,7 @@ object esTreeMod {
     
     extension [Self <: DraggableConfig](x: Self) {
       
-      inline def setIcon(value: ReactNode | `false`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode | false): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
@@ -285,20 +280,15 @@ object esTreeMod {
   
   type DraggableFn = js.Function1[/* node */ DataNode, Boolean]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcTree.rcTreeBooleans.`false`
-    - typings.rcTree.rcTreeStrings.click
-    - typings.rcTree.rcTreeStrings.doubleClick
-  */
-  trait ExpandAction extends StObject
   object ExpandAction {
     
-    inline def click: typings.rcTree.rcTreeStrings.click = "click".asInstanceOf[typings.rcTree.rcTreeStrings.click]
+    inline def click: "click" = "click".asInstanceOf["click"]
     
-    inline def doubleClick: typings.rcTree.rcTreeStrings.doubleClick = "doubleClick".asInstanceOf[typings.rcTree.rcTreeStrings.doubleClick]
+    inline def doubleClick: "doubleClick" = "doubleClick".asInstanceOf["doubleClick"]
     
-    inline def `false`: typings.rcTree.rcTreeBooleans.`false` = false.asInstanceOf[typings.rcTree.rcTreeBooleans.`false`]
+    inline def `false`: false = false.asInstanceOf[false]
   }
+  type ExpandAction = false | "click" | "doubleClick"
   
   @js.native
   trait Tree[TreeDataType /* <: DataNode | BasicDataNode */] extends Component[TreeProps[TreeDataType], TreeState[TreeDataType], Any] {
@@ -882,7 +872,7 @@ object esTreeMod {
     
     var dropLevelOffset: Double | Null
     
-    var dropPosition: `-1` | `0` | `1` | Null
+    var dropPosition: -1 | 0 | 1 | Null
     
     var dropTargetKey: Key | Null
     
@@ -967,7 +957,7 @@ object esTreeMod {
       
       inline def setDropLevelOffsetNull: Self = StObject.set(x, "dropLevelOffset", null)
       
-      inline def setDropPosition(value: `-1` | `0` | `1`): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
+      inline def setDropPosition(value: -1 | 0 | 1): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
       
       inline def setDropPositionNull: Self = StObject.set(x, "dropPosition", null)
       

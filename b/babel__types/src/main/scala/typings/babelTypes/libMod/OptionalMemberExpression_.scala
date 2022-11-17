@@ -1,16 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.OptionalMemberExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OptionalMemberExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with Node
-     with Standardized {
+     with BaseNode {
   
   var computed: Boolean
   
@@ -21,7 +17,7 @@ trait OptionalMemberExpression_
   var property: Expression | Identifier_
   
   @JSName("type")
-  var type_OptionalMemberExpression_ : OptionalMemberExpression
+  var type_OptionalMemberExpression_ : "OptionalMemberExpression"
 }
 object OptionalMemberExpression_ {
   
@@ -42,6 +38,6 @@ object OptionalMemberExpression_ {
     
     inline def setProperty(value: Expression | Identifier_): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    inline def setType(value: OptionalMemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "OptionalMemberExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

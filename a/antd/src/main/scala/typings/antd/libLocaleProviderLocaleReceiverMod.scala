@@ -39,63 +39,44 @@ object libLocaleProviderLocaleReceiverMod {
     /* import warning: importer.ImportType#apply Failed type conversion: antd.antd/lib/locale-provider.Locale[C] */ js.Any
   ]]
   
-  /* Inlined std.Exclude<keyof antd.antd/lib/locale-provider.Locale, 'locale'> */
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.PageHeader
-    - typings.antd.antdStrings.Empty
-    - typings.antd.antdStrings.Text
-    - typings.antd.antdStrings.Pagination
-    - typings.antd.antdStrings.global
-    - typings.antd.antdStrings.Form
-    - typings.antd.antdStrings.Select
-    - typings.antd.antdStrings.Modal
-    - typings.antd.antdStrings.Icon
-    - typings.antd.antdStrings.TimePicker
-    - typings.antd.antdStrings.Image
-    - typings.antd.antdStrings.Transfer
-    - typings.antd.antdStrings.Table
-    - typings.antd.antdStrings.DatePicker
-    - typings.antd.antdStrings.Calendar
-    - typings.antd.antdStrings.Upload
-    - typings.antd.antdStrings.Popconfirm
-  */
-  trait LocaleComponentName extends StObject
   object LocaleComponentName {
     
-    inline def Calendar: typings.antd.antdStrings.Calendar = "Calendar".asInstanceOf[typings.antd.antdStrings.Calendar]
+    inline def Calendar: "Calendar" = "Calendar".asInstanceOf["Calendar"]
     
-    inline def DatePicker: typings.antd.antdStrings.DatePicker = "DatePicker".asInstanceOf[typings.antd.antdStrings.DatePicker]
+    inline def DatePicker: "DatePicker" = "DatePicker".asInstanceOf["DatePicker"]
     
-    inline def Empty: typings.antd.antdStrings.Empty = "Empty".asInstanceOf[typings.antd.antdStrings.Empty]
+    inline def Empty: "Empty" = "Empty".asInstanceOf["Empty"]
     
-    inline def Form: typings.antd.antdStrings.Form = "Form".asInstanceOf[typings.antd.antdStrings.Form]
+    inline def Form: "Form" = "Form".asInstanceOf["Form"]
     
-    inline def Icon: typings.antd.antdStrings.Icon = "Icon".asInstanceOf[typings.antd.antdStrings.Icon]
+    inline def Icon: "Icon" = "Icon".asInstanceOf["Icon"]
     
-    inline def Image: typings.antd.antdStrings.Image = "Image".asInstanceOf[typings.antd.antdStrings.Image]
+    inline def Image: "Image" = "Image".asInstanceOf["Image"]
     
-    inline def Modal: typings.antd.antdStrings.Modal = "Modal".asInstanceOf[typings.antd.antdStrings.Modal]
+    inline def Modal: "Modal" = "Modal".asInstanceOf["Modal"]
     
-    inline def PageHeader: typings.antd.antdStrings.PageHeader = "PageHeader".asInstanceOf[typings.antd.antdStrings.PageHeader]
+    inline def PageHeader: "PageHeader" = "PageHeader".asInstanceOf["PageHeader"]
     
-    inline def Pagination: typings.antd.antdStrings.Pagination = "Pagination".asInstanceOf[typings.antd.antdStrings.Pagination]
+    inline def Pagination: "Pagination" = "Pagination".asInstanceOf["Pagination"]
     
-    inline def Popconfirm: typings.antd.antdStrings.Popconfirm = "Popconfirm".asInstanceOf[typings.antd.antdStrings.Popconfirm]
+    inline def Popconfirm: "Popconfirm" = "Popconfirm".asInstanceOf["Popconfirm"]
     
-    inline def Select: typings.antd.antdStrings.Select = "Select".asInstanceOf[typings.antd.antdStrings.Select]
+    inline def Select: "Select" = "Select".asInstanceOf["Select"]
     
-    inline def Table: typings.antd.antdStrings.Table = "Table".asInstanceOf[typings.antd.antdStrings.Table]
+    inline def Table: "Table" = "Table".asInstanceOf["Table"]
     
-    inline def Text: typings.antd.antdStrings.Text = "Text".asInstanceOf[typings.antd.antdStrings.Text]
+    inline def Text: "Text" = "Text".asInstanceOf["Text"]
     
-    inline def TimePicker: typings.antd.antdStrings.TimePicker = "TimePicker".asInstanceOf[typings.antd.antdStrings.TimePicker]
+    inline def TimePicker: "TimePicker" = "TimePicker".asInstanceOf["TimePicker"]
     
-    inline def Transfer: typings.antd.antdStrings.Transfer = "Transfer".asInstanceOf[typings.antd.antdStrings.Transfer]
+    inline def Transfer: "Transfer" = "Transfer".asInstanceOf["Transfer"]
     
-    inline def Upload: typings.antd.antdStrings.Upload = "Upload".asInstanceOf[typings.antd.antdStrings.Upload]
+    inline def Upload: "Upload" = "Upload".asInstanceOf["Upload"]
     
-    inline def global: typings.antd.antdStrings.global = "global".asInstanceOf[typings.antd.antdStrings.global]
+    inline def global: "global" = "global".asInstanceOf["global"]
   }
+  /* Inlined std.Exclude<keyof antd.antd/lib/locale-provider.Locale, 'locale'> */
+  type LocaleComponentName = "PageHeader" | "Empty" | "Text" | "Pagination" | "global" | "Form" | "Select" | "Modal" | "Icon" | "TimePicker" | "Image" | "Transfer" | "Table" | "DatePicker" | "Calendar" | "Upload" | "Popconfirm"
   
   trait LocaleReceiverProps[C /* <: LocaleComponentName */] extends StObject {
     

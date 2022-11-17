@@ -1,6 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.auto
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +12,7 @@ trait Gap extends StObject {
     * Set to `'auto'` to let the children determine the height.
     * @deprecated Use rowHeight instead.
     */
-  var cellHeight: js.UndefOr[Double | auto] = js.undefined
+  var cellHeight: js.UndefOr[Double | "auto"] = js.undefined
   
   /**
     * Items that will be in the image list.
@@ -33,7 +32,7 @@ trait Gap extends StObject {
   /**
     * The height of one row in `px`.
     */
-  var rowHeight: js.UndefOr[Double | auto] = js.undefined
+  var rowHeight: js.UndefOr[Double | "auto"] = js.undefined
   
   /**
     * The spacing between items in `px`.
@@ -50,7 +49,7 @@ object Gap {
   
   extension [Self <: Gap](x: Self) {
     
-    inline def setCellHeight(value: Double | auto): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
+    inline def setCellHeight(value: Double | "auto"): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     
     inline def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
     
@@ -66,7 +65,7 @@ object Gap {
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    inline def setRowHeight(value: Double | auto): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    inline def setRowHeight(value: Double | "auto"): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     

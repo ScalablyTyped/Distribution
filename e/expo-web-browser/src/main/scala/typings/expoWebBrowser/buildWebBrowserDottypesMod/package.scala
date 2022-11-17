@@ -6,6 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+type WebBrowserAuthSessionResult = WebBrowserRedirectResult | WebBrowserResult
+
 type WebBrowserCoolDownResult = ServiceActionResult
 
 type WebBrowserMayInitWithUrlResult = ServiceActionResult

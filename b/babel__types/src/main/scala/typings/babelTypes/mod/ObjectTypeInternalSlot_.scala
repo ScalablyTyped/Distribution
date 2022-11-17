@@ -1,16 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.ObjectTypeInternalSlot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ObjectTypeInternalSlot_
+trait ObjectTypeInternalSlot_
   extends StObject
-     with BaseNode
-     with Flow
-     with UserWhitespacable {
+     with BaseNode {
   
   var id: Identifier_
   
@@ -21,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var static: Boolean
   
   @JSName("type")
-  var type_ObjectTypeInternalSlot_ : ObjectTypeInternalSlot
+  var type_ObjectTypeInternalSlot_ : "ObjectTypeInternalSlot"
   
   var value: FlowType
 }
@@ -43,7 +39,7 @@ object ObjectTypeInternalSlot_ {
     
     inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ObjectTypeInternalSlot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ObjectTypeInternalSlot"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: FlowType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

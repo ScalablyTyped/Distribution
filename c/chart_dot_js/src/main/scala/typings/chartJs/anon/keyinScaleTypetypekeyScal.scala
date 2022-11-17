@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ key in chart.js.chart.js.ScaleType ]: {  type :key} & chart.js.chart.js.ScaleTypeRegistry[key]['options']} */
+/* Inlined {[ key in chart.js.chart.js/dist/chunks/helpers.core.ScaleType ]: {  type :key} & chart.js.chart.js/dist/chunks/helpers.core.ScaleTypeRegistry[key]['options']} */
 trait keyinScaleTypetypekeyScal extends StObject {
   
   var category: typecategoryCategoryScale

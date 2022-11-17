@@ -1,19 +1,16 @@
 package typings.angularCommon.anon
 
-import typings.angularCommon.angularCommonStrings.ngIf
-import typings.angularCommon.angularCommonStrings.ngIfElse
-import typings.angularCommon.angularCommonStrings.ngIfThen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NgIf extends StObject {
   
-  var ngIf: typings.angularCommon.angularCommonStrings.ngIf
+  var ngIf: "ngIf"
   
-  var ngIfElse: typings.angularCommon.angularCommonStrings.ngIfElse
+  var ngIfElse: "ngIfElse"
   
-  var ngIfThen: typings.angularCommon.angularCommonStrings.ngIfThen
+  var ngIfThen: "ngIfThen"
 }
 object NgIf {
   
@@ -24,10 +21,10 @@ object NgIf {
   
   extension [Self <: NgIf](x: Self) {
     
-    inline def setNgIf(value: ngIf): Self = StObject.set(x, "ngIf", value.asInstanceOf[js.Any])
+    inline def setNgIf(value: "ngIf"): Self = StObject.set(x, "ngIf", value.asInstanceOf[js.Any])
     
-    inline def setNgIfElse(value: ngIfElse): Self = StObject.set(x, "ngIfElse", value.asInstanceOf[js.Any])
+    inline def setNgIfElse(value: "ngIfElse"): Self = StObject.set(x, "ngIfElse", value.asInstanceOf[js.Any])
     
-    inline def setNgIfThen(value: ngIfThen): Self = StObject.set(x, "ngIfThen", value.asInstanceOf[js.Any])
+    inline def setNgIfThen(value: "ngIfThen"): Self = StObject.set(x, "ngIfThen", value.asInstanceOf[js.Any])
   }
 }

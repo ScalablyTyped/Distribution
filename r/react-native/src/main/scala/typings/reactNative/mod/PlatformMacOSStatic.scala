@@ -1,7 +1,6 @@
 package typings.reactNative.mod
 
 import typings.reactNative.anon.PlatformConstantsosVersio
-import typings.reactNative.reactNativeStrings.macos
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait PlatformMacOSStatic
   extends StObject
      with PlatformStatic {
   
-  var OS: macos = js.native
+  var OS: "macos" = js.native
   
   @JSName("Version")
   var Version_PlatformMacOSStatic: String = js.native

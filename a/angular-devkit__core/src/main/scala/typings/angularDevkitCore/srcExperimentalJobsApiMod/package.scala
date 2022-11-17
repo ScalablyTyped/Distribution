@@ -9,4 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def isJobHandler[A /* <: JsonValue */, I /* <: JsonValue */, O /* <: JsonValue */](value: Any): /* is @angular-devkit/core.@angular-devkit/core/src/experimental/jobs/api.JobHandler<A, I, O> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJobHandler")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @angular-devkit/core.@angular-devkit/core/src/experimental/jobs/api.JobHandler<A, I, O> */ Boolean]
 
+type JobInboundMessage[InputT /* <: JsonValue */] = JobInboundMessagePing | JobInboundMessageStop | JobInboundMessageInput[InputT]
+
 type JobName = String
+
+type JobOutboundMessage[OutputT /* <: JsonValue */] = JobOutboundMessageOnReady | JobOutboundMessageStart | JobOutboundMessageOutput[OutputT] | JobOutboundMessageChannelCreate | JobOutboundMessageChannelMessage | JobOutboundMessageChannelError | JobOutboundMessageChannelComplete | JobOutboundMessageEnd | JobOutboundMessagePong

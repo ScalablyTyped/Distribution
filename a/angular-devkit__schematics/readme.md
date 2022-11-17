@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular-devkit__schematics
 
-Typings are for version 14.2.6
+Typings are for version 14.2.9
 
 ## Library description:
 Angular Schematics - Library
@@ -10,9 +10,9 @@ Angular Schematics - Library
 | ------------------ | :-------------: |
 | Full name          | @angular-devkit/schematics |
 | Keywords           | angular, Angular CLI, devkit, sdk, Angular DevKit, blueprints, scaffolding, template, tooling, code generation, schematics |
-| # releases         | 217 |
+| # releases         | 216 |
 | # dependents       | 0.0 |
-| # downloads        | 2.1425748E7 |
+| # downloads        | 2.1625106333333332E7 |
 | # stars            | ? |
 
 ## Links

@@ -1,10 +1,6 @@
 package typings.node.cryptoMod
 
 import typings.node.bufferMod.global.Buffer
-import typings.node.nodeStrings.pkcs1
-import typings.node.nodeStrings.pkcs8
-import typings.node.nodeStrings.sec1
-import typings.node.nodeStrings.spki
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +13,11 @@ trait KeyExportOptions[T /* <: KeyFormat */] extends StObject {
   
   var passphrase: js.UndefOr[String | Buffer] = js.undefined
   
-  var `type`: pkcs1 | spki | pkcs8 | sec1
+  var `type`: "pkcs1" | "spki" | "pkcs8" | "sec1"
 }
 object KeyExportOptions {
   
-  inline def apply[T /* <: KeyFormat */](format: T, `type`: pkcs1 | spki | pkcs8 | sec1): KeyExportOptions[T] = {
+  inline def apply[T /* <: KeyFormat */](format: T, `type`: "pkcs1" | "spki" | "pkcs8" | "sec1"): KeyExportOptions[T] = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyExportOptions[T]]
@@ -39,6 +35,6 @@ object KeyExportOptions {
     
     inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
     
-    inline def setType(value: pkcs1 | spki | pkcs8 | sec1): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "pkcs1" | "spki" | "pkcs8" | "sec1"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

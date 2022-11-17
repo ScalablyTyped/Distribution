@@ -15,13 +15,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeGestureHandler.libTypescriptComponentsTouchablesGenericTouchableMod.default
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`no-hide-descendants`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.assertive
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.auto
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.no
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.none
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.polite
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,7 +71,7 @@ trait GenericTouchablePropschil extends StObject {
     * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
     * @platform android
     */
-  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+  var accessibilityLiveRegion: js.UndefOr["none" | "polite" | "assertive"] = js.undefined
   
   /**
     * Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on Android the type of element that is focused on.
@@ -154,7 +147,7 @@ trait GenericTouchablePropschil extends StObject {
     *      'no' - The view is not important for accessibility.
     *      'no-hide-descendants' - The view is not important for accessibility, nor are any of its descendant views.
     */
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+  var importantForAccessibility: js.UndefOr["auto" | "yes" | "no" | "no-hide-descendants"] = js.undefined
   
   var key: js.UndefOr[Key | Null] = js.undefined
   
@@ -283,7 +276,7 @@ object GenericTouchablePropschil {
     
     inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
     
-    inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLiveRegion(value: "none" | "polite" | "assertive"): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
     
@@ -341,7 +334,7 @@ object GenericTouchablePropschil {
     
     inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
     
-    inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+    inline def setImportantForAccessibility(value: "auto" | "yes" | "no" | "no-hide-descendants"): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     

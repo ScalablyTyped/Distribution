@@ -2,7 +2,6 @@ package typings.reactNavigation.mod
 
 import typings.reactNavigation.anon.RouteName
 import typings.reactNavigation.anon.`1`
-import typings.reactNavigation.reactNavigationStrings.refocus
 import typings.std.NonNullable
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -21,7 +20,8 @@ trait NavigationScreenProp[S, P] extends StObject {
   var dispatch: NavigationDispatch = js.native
   
   @JSName("emit")
-  def emit_refocus(eventName: refocus): Unit = js.native
+  @scala.annotation.targetName("emit_refocus")
+  def emit(eventName: "refocus"): Unit = js.native
   
   def getParam[T /* <: /* keyof P */ String */](param: T): /* import warning: importer.ImportType#apply Failed type conversion: P[T] */ js.Any = js.native
   def getParam[T /* <: /* keyof P */ String */](

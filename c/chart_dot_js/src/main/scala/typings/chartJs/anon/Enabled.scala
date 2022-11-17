@@ -6,10 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Enabled extends StObject {
   
-  /**
-    * If true, major ticks are generated. A major tick will affect autoskipping and major will be defined on ticks in the scriptable options context.
-    * @default false
-    */
   var enabled: Boolean
 }
 object Enabled {

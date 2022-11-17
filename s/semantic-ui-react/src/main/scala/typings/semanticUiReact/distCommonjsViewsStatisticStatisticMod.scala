@@ -45,26 +45,19 @@ object distCommonjsViewsStatisticStatisticMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.semanticUiReact.semanticUiReactStrings.mini
-    - typings.semanticUiReact.semanticUiReactStrings.tiny
-    - typings.semanticUiReact.semanticUiReactStrings.small
-    - typings.semanticUiReact.semanticUiReactStrings.large
-    - typings.semanticUiReact.semanticUiReactStrings.huge
-  */
-  trait StatisticSizeProp extends StObject
   object StatisticSizeProp {
     
-    inline def huge: typings.semanticUiReact.semanticUiReactStrings.huge = "huge".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.huge]
+    inline def huge: "huge" = "huge".asInstanceOf["huge"]
     
-    inline def large: typings.semanticUiReact.semanticUiReactStrings.large = "large".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.large]
+    inline def large: "large" = "large".asInstanceOf["large"]
     
-    inline def mini: typings.semanticUiReact.semanticUiReactStrings.mini = "mini".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mini]
+    inline def mini: "mini" = "mini".asInstanceOf["mini"]
     
-    inline def small: typings.semanticUiReact.semanticUiReactStrings.small = "small".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.small]
+    inline def small: "small" = "small".asInstanceOf["small"]
     
-    inline def tiny: typings.semanticUiReact.semanticUiReactStrings.tiny = "tiny".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tiny]
+    inline def tiny: "tiny" = "tiny".asInstanceOf["tiny"]
   }
+  type StatisticSizeProp = "mini" | "tiny" | "small" | "large" | "huge"
   
   trait StrictStatisticProps extends StObject {
     

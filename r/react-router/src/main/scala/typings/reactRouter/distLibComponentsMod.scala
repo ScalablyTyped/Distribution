@@ -8,8 +8,6 @@ import typings.reactRouter.distLibContextMod.Navigator
 import typings.reactRouter.distLibContextMod.RelativeRoutingType
 import typings.reactRouter.distLibContextMod.RouteMatch
 import typings.reactRouter.distLibContextMod.RouteObject
-import typings.reactRouter.reactRouterBooleans.`false`
-import typings.reactRouter.reactRouterBooleans.`true`
 import typings.remixRunRouter.distHistoryMod.Action
 import typings.remixRunRouter.distHistoryMod.InitialEntry
 import typings.remixRunRouter.distHistoryMod.To
@@ -83,9 +81,7 @@ object distLibComponentsMod {
   
   type AwaitResolveRenderFunction = js.Function1[/* data */ Awaited[Any], ReactElement]
   
-  trait IndexRouteProps
-    extends StObject
-       with _RouteProps {
+  trait IndexRouteProps extends StObject {
     
     var action: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticIndexRouteObject['action'] */ js.Any
@@ -113,7 +109,7 @@ object distLibComponentsMod {
         /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticIndexRouteObject['id'] */ js.Any
       ] = js.undefined
     
-    var index: `true`
+    var index: true
     
     var loader: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticIndexRouteObject['loader'] */ js.Any
@@ -180,7 +176,7 @@ object distLibComponentsMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setIndex(value: `true`): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: true): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setLoader(
         value: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticIndexRouteObject['loader'] */ js.Any
@@ -297,9 +293,7 @@ object distLibComponentsMod {
     }
   }
   
-  trait PathRouteProps
-    extends StObject
-       with _RouteProps {
+  trait PathRouteProps extends StObject {
     
     var action: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticNonIndexRouteObject['action'] */ js.Any
@@ -327,7 +321,7 @@ object distLibComponentsMod {
         /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticNonIndexRouteObject['id'] */ js.Any
       ] = js.undefined
     
-    var index: js.UndefOr[`false`] = js.undefined
+    var index: js.UndefOr[false] = js.undefined
     
     var loader: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticNonIndexRouteObject['loader'] */ js.Any
@@ -396,7 +390,7 @@ object distLibComponentsMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setIndex(value: `false`): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: false): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
@@ -420,12 +414,7 @@ object distLibComponentsMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactRouter.distLibComponentsMod.PathRouteProps
-    - typings.reactRouter.distLibComponentsMod.LayoutRouteProps
-    - typings.reactRouter.distLibComponentsMod.IndexRouteProps
-  */
-  type RouteProps = _RouteProps | LayoutRouteProps
+  type RouteProps = PathRouteProps | LayoutRouteProps | IndexRouteProps
   
   trait RouterProps extends StObject {
     
@@ -517,20 +506,6 @@ object distLibComponentsMod {
       inline def setLocation(value: PartialLocation | String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
-    }
-  }
-  
-  trait _RouteProps extends StObject
-  object _RouteProps {
-    
-    inline def IndexRouteProps(children: Unit): typings.reactRouter.distLibComponentsMod.IndexRouteProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], index = true)
-      __obj.asInstanceOf[typings.reactRouter.distLibComponentsMod.IndexRouteProps]
-    }
-    
-    inline def PathRouteProps(): typings.reactRouter.distLibComponentsMod.PathRouteProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.reactRouter.distLibComponentsMod.PathRouteProps]
     }
   }
 }

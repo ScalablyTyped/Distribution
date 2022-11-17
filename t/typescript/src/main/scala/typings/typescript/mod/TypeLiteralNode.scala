@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeLiteralNode
   extends StObject
      with TypeNode
-     with Declaration
-     with ObjectTypeDeclaration {
+     with Declaration {
   
   @JSName("kind")
   val kind_TypeLiteralNode: TypeLiteral = js.native

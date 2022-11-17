@@ -4,6 +4,18 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("chart.js", "DomPlatform")
+/**
+  * Platform class for charts that can access the DOM and global window/document properties
+  * @extends BasePlatform
+  */
 @js.native
-open class DomPlatform () extends BasePlatform
+trait DomPlatform
+  extends StObject
+     with BasePlatform {
+  
+  /**
+    * @param {Chart} chart
+    * @param {string} type
+    */
+  def removeEventListener(chart: Chart, `type`: String): scala.Unit = js.native
+}

@@ -17,17 +17,6 @@ import typings.reactNativeGestureHandler.libTypescriptHandlersPanGestureHandlerM
 import typings.reactNativeGestureHandler.libTypescriptHandlersPinchGestureHandlerMod.PinchGestureHandlerEventPayload
 import typings.reactNativeGestureHandler.libTypescriptHandlersRotationGestureHandlerMod.RotationGestureHandlerEventPayload
 import typings.reactNativeGestureHandler.libTypescriptHandlersTapGestureHandlerMod.TapGestureHandlerEventPayload
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`10`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`3`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`5`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`6`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`7`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`8`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`9`
 import typings.std.Exclude
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -95,67 +84,54 @@ object libTypescriptHandlersGesturesGestureMod {
     def withTestId(id: String): this.type = js.native
   }
   
-  /* Inlined { readonly UNDEFINED :0,  readonly BEGAN :1,  readonly START :2,  readonly UPDATE :3,  readonly CHANGE :4,  readonly END :5,  readonly FINALIZE :6,  readonly TOUCHES_DOWN :7,  readonly TOUCHES_MOVE :8,  readonly TOUCHES_UP :9,  readonly TOUCHES_CANCELLED :10}[keyof { readonly UNDEFINED :0,  readonly BEGAN :1,  readonly START :2,  readonly UPDATE :3,  readonly CHANGE :4,  readonly END :5,  readonly FINALIZE :6,  readonly TOUCHES_DOWN :7,  readonly TOUCHES_MOVE :8,  readonly TOUCHES_UP :9,  readonly TOUCHES_CANCELLED :10}] */
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`3`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`7`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`5`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`6`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`10`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`9`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`8`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`
-  */
-  trait CALLBACK_TYPE extends StObject
   object CALLBACK_TYPE {
     
     @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/gesture", "CALLBACK_TYPE.BEGAN")
     @js.native
-    val BEGAN: `1` = js.native
+    val BEGAN: 1 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/gesture", "CALLBACK_TYPE.CHANGE")
     @js.native
-    val CHANGE: `4` = js.native
+    val CHANGE: 4 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/gesture", "CALLBACK_TYPE.END")
     @js.native
-    val END: `5` = js.native
+    val END: 5 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/gesture", "CALLBACK_TYPE.FINALIZE")
     @js.native
-    val FINALIZE: `6` = js.native
+    val FINALIZE: 6 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/gesture", "CALLBACK_TYPE.START")
     @js.native
-    val START: `2` = js.native
+    val START: 2 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/gesture", "CALLBACK_TYPE.TOUCHES_CANCELLED")
     @js.native
-    val TOUCHES_CANCELLED: `10` = js.native
+    val TOUCHES_CANCELLED: 10 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/gesture", "CALLBACK_TYPE.TOUCHES_DOWN")
     @js.native
-    val TOUCHES_DOWN: `7` = js.native
+    val TOUCHES_DOWN: 7 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/gesture", "CALLBACK_TYPE.TOUCHES_MOVE")
     @js.native
-    val TOUCHES_MOVE: `8` = js.native
+    val TOUCHES_MOVE: 8 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/gesture", "CALLBACK_TYPE.TOUCHES_UP")
     @js.native
-    val TOUCHES_UP: `9` = js.native
+    val TOUCHES_UP: 9 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/gesture", "CALLBACK_TYPE.UNDEFINED")
     @js.native
-    val UNDEFINED: `0` = js.native
+    val UNDEFINED: 0 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/gesture", "CALLBACK_TYPE.UPDATE")
     @js.native
-    val UPDATE: `3` = js.native
+    val UPDATE: 3 = js.native
   }
+  /* Inlined { readonly UNDEFINED :0,  readonly BEGAN :1,  readonly START :2,  readonly UPDATE :3,  readonly CHANGE :4,  readonly END :5,  readonly FINALIZE :6,  readonly TOUCHES_DOWN :7,  readonly TOUCHES_MOVE :8,  readonly TOUCHES_UP :9,  readonly TOUCHES_CANCELLED :10}[keyof { readonly UNDEFINED :0,  readonly BEGAN :1,  readonly START :2,  readonly UPDATE :3,  readonly CHANGE :4,  readonly END :5,  readonly FINALIZE :6,  readonly TOUCHES_DOWN :7,  readonly TOUCHES_MOVE :8,  readonly TOUCHES_UP :9,  readonly TOUCHES_CANCELLED :10}] */
+  type CALLBACK_TYPE = 3 | 2 | 4 | 0 | 7 | 5 | 6 | 10 | 9 | 8 | 1
   
   /* note: abstract class */ @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/gesture", "ContinousBaseGesture")
   @js.native

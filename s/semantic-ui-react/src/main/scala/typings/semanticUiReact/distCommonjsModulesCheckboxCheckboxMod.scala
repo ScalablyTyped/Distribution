@@ -15,8 +15,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
 import typings.semanticUiReact.distCommonjsGenericMod.HtmlLabelProps
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
-import typings.semanticUiReact.semanticUiReactStrings.checkbox
-import typings.semanticUiReact.semanticUiReactStrings.radio
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -141,7 +139,7 @@ object distCommonjsModulesCheckboxCheckboxMod extends Shortcut {
     
     /** HTML input type, either checkbox or radio. */
     @JSName("type")
-    var type_StrictCheckboxProps: js.UndefOr[checkbox | radio] = js.undefined
+    var type_StrictCheckboxProps: js.UndefOr["checkbox" | "radio"] = js.undefined
     
     /** The HTML input value. */
     @JSName("value")
@@ -222,7 +220,7 @@ object distCommonjsModulesCheckboxCheckboxMod extends Shortcut {
       
       inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
       
-      inline def setType(value: checkbox | radio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "checkbox" | "radio"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       

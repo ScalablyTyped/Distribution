@@ -1,6 +1,5 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.SpreadProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait SpreadProperty1
   extends StObject
-     with BaseNode
-     with DeprecatedAliases
-     with Node {
+     with BaseNode {
   
   var argument: Expression
   
   @JSName("type")
-  var type_SpreadProperty1: SpreadProperty
+  var type_SpreadProperty1: "SpreadProperty"
 }
 object SpreadProperty1 {
   
@@ -31,6 +28,6 @@ object SpreadProperty1 {
     
     inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    inline def setType(value: SpreadProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "SpreadProperty"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

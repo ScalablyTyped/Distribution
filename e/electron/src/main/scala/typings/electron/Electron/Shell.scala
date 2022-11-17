@@ -1,8 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.create
-import typings.electron.electronStrings.replace
-import typings.electron.electronStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,7 +58,9 @@ trait Shell extends StObject {
     *
     * @platform win32
     */
-  def writeShortcutLink(shortcutPath: String, operation: create | update | replace, options: ShortcutDetails): Boolean = js.native
+  @JSName("writeShortcutLink")
+  @scala.annotation.targetName("writeShortcutLink_create_update_replace")
+  def writeShortcutLink(shortcutPath: String, operation: "create" | "update" | "replace", options: ShortcutDetails): Boolean = js.native
   /**
     * Whether the shortcut was created successfully.
     *

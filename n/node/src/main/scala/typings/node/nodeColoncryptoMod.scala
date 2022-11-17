@@ -63,30 +63,8 @@ import typings.node.cryptoMod.X448KeyPairOptions
 import typings.node.cryptoMod.webcrypto.Crypto
 import typings.node.cryptoMod.webcrypto.CryptoKey
 import typings.node.cryptoMod.webcrypto.SubtleCrypto
-import typings.node.nodeInts.`0`
-import typings.node.nodeInts.`1`
-import typings.node.nodeStrings.`rsa-pss`
-import typings.node.nodeStrings.aes
-import typings.node.nodeStrings.base64
-import typings.node.nodeStrings.base64url
-import typings.node.nodeStrings.compressed
-import typings.node.nodeStrings.der
-import typings.node.nodeStrings.dsa
-import typings.node.nodeStrings.ec
-import typings.node.nodeStrings.ed25519
-import typings.node.nodeStrings.ed448
-import typings.node.nodeStrings.hex
-import typings.node.nodeStrings.hmac
-import typings.node.nodeStrings.hybrid
-import typings.node.nodeStrings.latin1
-import typings.node.nodeStrings.pem
-import typings.node.nodeStrings.rsa
-import typings.node.nodeStrings.uncompressed
-import typings.node.nodeStrings.x25519
-import typings.node.nodeStrings.x448
 import typings.node.streamMod.TransformOptions
 import typings.node.streamMod.WritableOptions
-import typings.node.workerThreadsMod._TransferListItem
 import typings.std.BigInt64Array
 import typings.std.BigUint64Array
 import org.scalablytyped.runtime.StObject
@@ -611,46 +589,52 @@ object nodeColoncryptoMod {
       */
     /* static member */
     inline def convertKey(key: BinaryLike, curve: String): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.annotation.targetName("convertKey_latin1_hex_base64_base64url")
     inline def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: Unit,
-      outputEncoding: latin1 | hex | base64 | base64url
+      outputEncoding: "latin1" | "hex" | "base64" | "base64url"
     ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.annotation.targetName("convertKey_latin1_hex_base64_base64url_uncompressed_compressed_hybrid")
     inline def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: Unit,
-      outputEncoding: latin1 | hex | base64 | base64url,
-      format: uncompressed | compressed | hybrid
+      outputEncoding: "latin1" | "hex" | "base64" | "base64url",
+      format: "uncompressed" | "compressed" | "hybrid"
     ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.annotation.targetName("convertKey_uncompressed_compressed_hybrid")
     inline def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: Unit,
       outputEncoding: Unit,
-      format: uncompressed | compressed | hybrid
+      format: "uncompressed" | "compressed" | "hybrid"
     ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
     inline def convertKey(key: BinaryLike, curve: String, inputEncoding: BinaryToTextEncoding): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.annotation.targetName("convertKey_latin1_hex_base64_base64url")
     inline def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: BinaryToTextEncoding,
-      outputEncoding: latin1 | hex | base64 | base64url
+      outputEncoding: "latin1" | "hex" | "base64" | "base64url"
     ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.annotation.targetName("convertKey_latin1_hex_base64_base64url_uncompressed_compressed_hybrid")
     inline def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: BinaryToTextEncoding,
-      outputEncoding: latin1 | hex | base64 | base64url,
-      format: uncompressed | compressed | hybrid
+      outputEncoding: "latin1" | "hex" | "base64" | "base64url",
+      format: "uncompressed" | "compressed" | "hybrid"
     ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.annotation.targetName("convertKey_uncompressed_compressed_hybrid")
     inline def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: BinaryToTextEncoding,
       outputEncoding: Unit,
-      format: uncompressed | compressed | hybrid
+      format: "uncompressed" | "compressed" | "hybrid"
     ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
   }
   
@@ -939,8 +923,7 @@ object nodeColoncryptoMod {
   @JSImport("node:crypto", "X509Certificate")
   @js.native
   open class X509Certificate protected ()
-    extends typings.node.cryptoMod.X509Certificate
-       with _TransferListItem {
+    extends typings.node.cryptoMod.X509Certificate {
     def this(buffer: BinaryLike) = this()
   }
   
@@ -1289,9 +1272,10 @@ object nodeColoncryptoMod {
     * @param options `stream.transform` options
     */
   inline def createCipher(algorithm: CipherCCMTypes, password: BinaryLike, options: CipherCCMOptions): CipherCCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CipherCCM]
-  /** @deprecated since v10.0.0 use `createCipheriv()` */
-  inline def createCipher(algorithm: CipherGCMTypes, password: BinaryLike): CipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[CipherGCM]
   inline def createCipher(algorithm: CipherGCMTypes, password: BinaryLike, options: CipherGCMOptions): CipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CipherGCM]
+  
+  /** @deprecated since v10.0.0 use `createCipheriv()` */
+  inline def createCipher_CipherGCM(algorithm: CipherGCMTypes, password: BinaryLike): CipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[CipherGCM]
   
   inline def createCipheriv(algorithm: String, key: CipherKey): typings.node.cryptoMod.Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Cipher]
   inline def createCipheriv(algorithm: String, key: CipherKey, iv: Null, options: TransformOptions): typings.node.cryptoMod.Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Cipher]
@@ -1328,9 +1312,10 @@ object nodeColoncryptoMod {
     * @param options `stream.transform` options
     */
   inline def createCipheriv(algorithm: CipherCCMTypes, key: CipherKey, iv: BinaryLike, options: CipherCCMOptions): CipherCCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CipherCCM]
-  inline def createCipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike): CipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[CipherGCM]
   inline def createCipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike, options: CipherGCMOptions): CipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CipherGCM]
   inline def createCipheriv(algorithm: CipherOCBTypes, key: CipherKey, iv: BinaryLike, options: CipherOCBOptions): CipherOCB = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CipherOCB]
+  
+  inline def createCipheriv_CipherGCM(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike): CipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[CipherGCM]
   
   /** @deprecated since v10.0.0 use `createDecipheriv()` */
   inline def createDecipher(algorithm: String, password: BinaryLike): typings.node.cryptoMod.Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Decipher]
@@ -1358,9 +1343,10 @@ object nodeColoncryptoMod {
     * @param options `stream.transform` options
     */
   inline def createDecipher(algorithm: CipherCCMTypes, password: BinaryLike, options: CipherCCMOptions): DecipherCCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DecipherCCM]
-  /** @deprecated since v10.0.0 use `createDecipheriv()` */
-  inline def createDecipher(algorithm: CipherGCMTypes, password: BinaryLike): DecipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[DecipherGCM]
   inline def createDecipher(algorithm: CipherGCMTypes, password: BinaryLike, options: CipherGCMOptions): DecipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DecipherGCM]
+  
+  /** @deprecated since v10.0.0 use `createDecipheriv()` */
+  inline def createDecipher_DecipherGCM(algorithm: CipherGCMTypes, password: BinaryLike): DecipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[DecipherGCM]
   
   inline def createDecipheriv(algorithm: String, key: CipherKey): typings.node.cryptoMod.Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Decipher]
   inline def createDecipheriv(algorithm: String, key: CipherKey, iv: Null, options: TransformOptions): typings.node.cryptoMod.Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Decipher]
@@ -1396,9 +1382,10 @@ object nodeColoncryptoMod {
     * @param options `stream.transform` options
     */
   inline def createDecipheriv(algorithm: CipherCCMTypes, key: CipherKey, iv: BinaryLike, options: CipherCCMOptions): DecipherCCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DecipherCCM]
-  inline def createDecipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike): DecipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[DecipherGCM]
   inline def createDecipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike, options: CipherGCMOptions): DecipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DecipherGCM]
   inline def createDecipheriv(algorithm: CipherOCBTypes, key: CipherKey, iv: BinaryLike, options: CipherOCBOptions): DecipherOCB = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DecipherOCB]
+  
+  inline def createDecipheriv_DecipherGCM(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike): DecipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[DecipherGCM]
   
   /**
     * Creates a `DiffieHellman` key exchange object using the supplied `prime` and an
@@ -1646,34 +1633,15 @@ object nodeColoncryptoMod {
     * @since v15.0.0
     * @param type The intended use of the generated secret key. Currently accepted values are `'hmac'` and `'aes'`.
     */
+  @scala.annotation.targetName("generateKey_hmac_aes")
   inline def generateKey(
-    `type`: hmac | aes,
+    `type`: "hmac" | "aes",
     options: Length,
     callback: js.Function2[/* err */ js.Error | Null, /* key */ typings.node.cryptoMod.KeyObject, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def generateKeyPair(
-    `type`: `rsa-pss`,
-    options: RSAPSSKeyPairKeyObjectOptions,
-    callback: js.Function3[
-      /* err */ js.Error | Null, 
-      /* publicKey */ typings.node.cryptoMod.KeyObject, 
-      /* privateKey */ typings.node.cryptoMod.KeyObject, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def generateKeyPair(
-    `type`: `rsa-pss`,
-    options: RSAPSSKeyPairOptions[der | pem, der | pem],
-    callback: js.Function3[
-      js.Error | Null, 
-      (/* publicKey */ Buffer) | (/* publicKey */ String), 
-      (/* privateKey */ Buffer) | (/* privateKey */ String), 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def generateKeyPair(
-    `type`: dsa,
+    `type`: "dsa",
     options: DSAKeyPairKeyObjectOptions,
     callback: js.Function3[
       /* err */ js.Error | Null, 
@@ -1683,8 +1651,8 @@ object nodeColoncryptoMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def generateKeyPair(
-    `type`: dsa,
-    options: DSAKeyPairOptions[der | pem, der | pem],
+    `type`: "dsa",
+    options: DSAKeyPairOptions["pem" | "der", "pem" | "der"],
     callback: js.Function3[
       js.Error | Null, 
       (/* publicKey */ Buffer) | (/* publicKey */ String), 
@@ -1693,7 +1661,7 @@ object nodeColoncryptoMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def generateKeyPair(
-    `type`: ec,
+    `type`: "ec",
     options: ECKeyPairKeyObjectOptions,
     callback: js.Function3[
       /* err */ js.Error | Null, 
@@ -1703,8 +1671,8 @@ object nodeColoncryptoMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def generateKeyPair(
-    `type`: ec,
-    options: ECKeyPairOptions[der | pem, der | pem],
+    `type`: "ec",
+    options: ECKeyPairOptions["pem" | "der", "pem" | "der"],
     callback: js.Function3[
       js.Error | Null, 
       (/* publicKey */ Buffer) | (/* publicKey */ String), 
@@ -1713,17 +1681,7 @@ object nodeColoncryptoMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def generateKeyPair(
-    `type`: ed25519,
-    options: Unit,
-    callback: js.Function3[
-      /* err */ js.Error | Null, 
-      /* publicKey */ typings.node.cryptoMod.KeyObject, 
-      /* privateKey */ typings.node.cryptoMod.KeyObject, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def generateKeyPair(
-    `type`: ed25519,
+    `type`: "ed25519",
     options: ED25519KeyPairKeyObjectOptions,
     callback: js.Function3[
       /* err */ js.Error | Null, 
@@ -1733,8 +1691,8 @@ object nodeColoncryptoMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def generateKeyPair(
-    `type`: ed25519,
-    options: ED25519KeyPairOptions[der | pem, der | pem],
+    `type`: "ed25519",
+    options: ED25519KeyPairOptions["pem" | "der", "pem" | "der"],
     callback: js.Function3[
       js.Error | Null, 
       (/* publicKey */ Buffer) | (/* publicKey */ String), 
@@ -1743,17 +1701,7 @@ object nodeColoncryptoMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def generateKeyPair(
-    `type`: ed448,
-    options: Unit,
-    callback: js.Function3[
-      /* err */ js.Error | Null, 
-      /* publicKey */ typings.node.cryptoMod.KeyObject, 
-      /* privateKey */ typings.node.cryptoMod.KeyObject, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def generateKeyPair(
-    `type`: ed448,
+    `type`: "ed448",
     options: ED448KeyPairKeyObjectOptions,
     callback: js.Function3[
       /* err */ js.Error | Null, 
@@ -1763,8 +1711,8 @@ object nodeColoncryptoMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def generateKeyPair(
-    `type`: ed448,
-    options: ED448KeyPairOptions[der | pem, der | pem],
+    `type`: "ed448",
+    options: ED448KeyPairOptions["pem" | "der", "pem" | "der"],
     callback: js.Function3[
       js.Error | Null, 
       (/* publicKey */ Buffer) | (/* publicKey */ String), 
@@ -1773,7 +1721,7 @@ object nodeColoncryptoMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def generateKeyPair(
-    `type`: rsa,
+    `type`: "rsa",
     options: RSAKeyPairKeyObjectOptions,
     callback: js.Function3[
       /* err */ js.Error | Null, 
@@ -1822,8 +1770,8 @@ object nodeColoncryptoMod {
     * @param type Must be `'rsa'`, `'rsa-pss'`, `'dsa'`, `'ec'`, `'ed25519'`, `'ed448'`, `'x25519'`, `'x448'`, or `'dh'`.
     */
   inline def generateKeyPair(
-    `type`: rsa,
-    options: RSAKeyPairOptions[der | pem, der | pem],
+    `type`: "rsa",
+    options: RSAKeyPairOptions["pem" | "der", "pem" | "der"],
     callback: js.Function3[
       js.Error | Null, 
       (/* publicKey */ Buffer) | (/* publicKey */ String), 
@@ -1832,8 +1780,8 @@ object nodeColoncryptoMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def generateKeyPair(
-    `type`: x25519,
-    options: Unit,
+    `type`: "rsa-pss",
+    options: RSAPSSKeyPairKeyObjectOptions,
     callback: js.Function3[
       /* err */ js.Error | Null, 
       /* publicKey */ typings.node.cryptoMod.KeyObject, 
@@ -1842,7 +1790,17 @@ object nodeColoncryptoMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def generateKeyPair(
-    `type`: x25519,
+    `type`: "rsa-pss",
+    options: RSAPSSKeyPairOptions["pem" | "der", "pem" | "der"],
+    callback: js.Function3[
+      js.Error | Null, 
+      (/* publicKey */ Buffer) | (/* publicKey */ String), 
+      (/* privateKey */ Buffer) | (/* privateKey */ String), 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def generateKeyPair(
+    `type`: "x25519",
     options: X25519KeyPairKeyObjectOptions,
     callback: js.Function3[
       /* err */ js.Error | Null, 
@@ -1852,8 +1810,8 @@ object nodeColoncryptoMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def generateKeyPair(
-    `type`: x25519,
-    options: X25519KeyPairOptions[der | pem, der | pem],
+    `type`: "x25519",
+    options: X25519KeyPairOptions["pem" | "der", "pem" | "der"],
     callback: js.Function3[
       js.Error | Null, 
       (/* publicKey */ Buffer) | (/* publicKey */ String), 
@@ -1862,17 +1820,7 @@ object nodeColoncryptoMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def generateKeyPair(
-    `type`: x448,
-    options: Unit,
-    callback: js.Function3[
-      /* err */ js.Error | Null, 
-      /* publicKey */ typings.node.cryptoMod.KeyObject, 
-      /* privateKey */ typings.node.cryptoMod.KeyObject, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def generateKeyPair(
-    `type`: x448,
+    `type`: "x448",
     options: X448KeyPairKeyObjectOptions,
     callback: js.Function3[
       /* err */ js.Error | Null, 
@@ -1882,8 +1830,8 @@ object nodeColoncryptoMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def generateKeyPair(
-    `type`: x448,
-    options: X448KeyPairOptions[der | pem, der | pem],
+    `type`: "x448",
+    options: X448KeyPairOptions["pem" | "der", "pem" | "der"],
     callback: js.Function3[
       js.Error | Null, 
       (/* publicKey */ Buffer) | (/* publicKey */ String), 
@@ -1891,12 +1839,67 @@ object nodeColoncryptoMod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def generateKeyPair(
+    `type`: "ed25519" | "ed448" | "x25519" | "x448",
+    options: Unit,
+    callback: js.Function3[
+      js.Error | Null, 
+      /* publicKey */ typings.node.cryptoMod.KeyObject, 
+      /* privateKey */ typings.node.cryptoMod.KeyObject, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def generateKeyPairSync(`type`: `rsa-pss`, options: RSAPSSKeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
-  inline def generateKeyPairSync(`type`: dsa, options: DSAKeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
-  inline def generateKeyPairSync(`type`: ec, options: ECKeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
-  inline def generateKeyPairSync(`type`: ed25519, options: ED25519KeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
-  inline def generateKeyPairSync(`type`: ed448, options: ED448KeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
+  @scala.annotation.targetName("generateKeyPairSync_x448")
+  inline def generateKeyPairSync(`type`: "x448"): KeyPairKeyObjectResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.annotation.targetName("generateKeyPairSync_x25519")
+  inline def generateKeyPairSync(`type`: "x25519"): KeyPairKeyObjectResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.annotation.targetName("generateKeyPairSync_ed448")
+  inline def generateKeyPairSync(`type`: "ed448"): KeyPairKeyObjectResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.annotation.targetName("generateKeyPairSync_ed25519")
+  inline def generateKeyPairSync(`type`: "ed25519"): KeyPairKeyObjectResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.annotation.targetName("generateKeyPairSync_dsa")
+  inline def generateKeyPairSync(`type`: "dsa", options: DSAKeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.annotation.targetName("generateKeyPairSync_dsa_der_pem")
+  inline def generateKeyPairSync(`type`: "dsa", options: DSAKeyPairOptions["der", "pem"]): KeyPairSyncResult[Buffer, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, String]]
+  @scala.annotation.targetName("generateKeyPairSync_dsa_pem_der")
+  inline def generateKeyPairSync(`type`: "dsa", options: DSAKeyPairOptions["pem", "der"]): KeyPairSyncResult[String, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_dsa_pem_pem")
+  inline def generateKeyPairSync(`type`: "dsa", options: DSAKeyPairOptions["pem", "pem"]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
+  @scala.annotation.targetName("generateKeyPairSync_dsa_der_der")
+  inline def generateKeyPairSync(`type`: "dsa", options: DSAKeyPairOptions["der", "der"]): KeyPairSyncResult[Buffer, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_ec")
+  inline def generateKeyPairSync(`type`: "ec", options: ECKeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.annotation.targetName("generateKeyPairSync_ec_pem_der")
+  inline def generateKeyPairSync(`type`: "ec", options: ECKeyPairOptions["pem", "der"]): KeyPairSyncResult[String, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_ec_der_pem")
+  inline def generateKeyPairSync(`type`: "ec", options: ECKeyPairOptions["der", "pem"]): KeyPairSyncResult[Buffer, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, String]]
+  @scala.annotation.targetName("generateKeyPairSync_ec_pem_pem")
+  inline def generateKeyPairSync(`type`: "ec", options: ECKeyPairOptions["pem", "pem"]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
+  @scala.annotation.targetName("generateKeyPairSync_ec_der_der")
+  inline def generateKeyPairSync(`type`: "ec", options: ECKeyPairOptions["der", "der"]): KeyPairSyncResult[Buffer, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_ed25519")
+  inline def generateKeyPairSync(`type`: "ed25519", options: ED25519KeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.annotation.targetName("generateKeyPairSync_ed25519_der_der")
+  inline def generateKeyPairSync(`type`: "ed25519", options: ED25519KeyPairOptions["der", "der"]): KeyPairSyncResult[Buffer, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_ed25519_der_pem")
+  inline def generateKeyPairSync(`type`: "ed25519", options: ED25519KeyPairOptions["der", "pem"]): KeyPairSyncResult[Buffer, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, String]]
+  @scala.annotation.targetName("generateKeyPairSync_ed25519_pem_pem")
+  inline def generateKeyPairSync(`type`: "ed25519", options: ED25519KeyPairOptions["pem", "pem"]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
+  @scala.annotation.targetName("generateKeyPairSync_ed25519_pem_der")
+  inline def generateKeyPairSync(`type`: "ed25519", options: ED25519KeyPairOptions["pem", "der"]): KeyPairSyncResult[String, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_ed448")
+  inline def generateKeyPairSync(`type`: "ed448", options: ED448KeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.annotation.targetName("generateKeyPairSync_ed448_pem_pem")
+  inline def generateKeyPairSync(`type`: "ed448", options: ED448KeyPairOptions["pem", "pem"]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
+  @scala.annotation.targetName("generateKeyPairSync_ed448_der_pem")
+  inline def generateKeyPairSync(`type`: "ed448", options: ED448KeyPairOptions["der", "pem"]): KeyPairSyncResult[Buffer, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, String]]
+  @scala.annotation.targetName("generateKeyPairSync_ed448_der_der")
+  inline def generateKeyPairSync(`type`: "ed448", options: ED448KeyPairOptions["der", "der"]): KeyPairSyncResult[Buffer, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_ed448_pem_der")
+  inline def generateKeyPairSync(`type`: "ed448", options: ED448KeyPairOptions["pem", "der"]): KeyPairSyncResult[String, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_rsa")
+  inline def generateKeyPairSync(`type`: "rsa", options: RSAKeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
   /**
     * Generates a new asymmetric key pair of the given `type`. RSA, RSA-PSS, DSA, EC,
     * Ed25519, Ed448, X25519, X448, and DH are currently supported.
@@ -1938,29 +1941,44 @@ object nodeColoncryptoMod {
     * @since v10.12.0
     * @param type Must be `'rsa'`, `'rsa-pss'`, `'dsa'`, `'ec'`, `'ed25519'`, `'ed448'`, `'x25519'`, `'x448'`, or `'dh'`.
     */
-  inline def generateKeyPairSync(`type`: rsa, options: RSAKeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
-  inline def generateKeyPairSync(`type`: x25519, options: X25519KeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
-  inline def generateKeyPairSync(`type`: x448, options: X448KeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
-  
-  inline def generateKeyPairSync_dsa(`type`: dsa, options: DSAKeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
-  
-  inline def generateKeyPairSync_ec(`type`: ec, options: ECKeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
-  
-  inline def generateKeyPairSync_ed25519(`type`: ed25519): KeyPairKeyObjectResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[KeyPairKeyObjectResult]
-  inline def generateKeyPairSync_ed25519(`type`: ed25519, options: ED25519KeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
-  
-  inline def generateKeyPairSync_ed448(`type`: ed448): KeyPairKeyObjectResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[KeyPairKeyObjectResult]
-  inline def generateKeyPairSync_ed448(`type`: ed448, options: ED448KeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
-  
-  inline def generateKeyPairSync_rsa(`type`: rsa, options: RSAKeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
-  
-  inline def generateKeyPairSync_rsapss(`type`: `rsa-pss`, options: RSAPSSKeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
-  
-  inline def generateKeyPairSync_x25519(`type`: x25519): KeyPairKeyObjectResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[KeyPairKeyObjectResult]
-  inline def generateKeyPairSync_x25519(`type`: x25519, options: X25519KeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
-  
-  inline def generateKeyPairSync_x448(`type`: x448): KeyPairKeyObjectResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[KeyPairKeyObjectResult]
-  inline def generateKeyPairSync_x448(`type`: x448, options: X448KeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.annotation.targetName("generateKeyPairSync_rsa_pem_pem")
+  inline def generateKeyPairSync(`type`: "rsa", options: RSAKeyPairOptions["pem", "pem"]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
+  @scala.annotation.targetName("generateKeyPairSync_rsa_pem_der")
+  inline def generateKeyPairSync(`type`: "rsa", options: RSAKeyPairOptions["pem", "der"]): KeyPairSyncResult[String, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_rsa_der_der")
+  inline def generateKeyPairSync(`type`: "rsa", options: RSAKeyPairOptions["der", "der"]): KeyPairSyncResult[Buffer, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_rsa_der_pem")
+  inline def generateKeyPairSync(`type`: "rsa", options: RSAKeyPairOptions["der", "pem"]): KeyPairSyncResult[Buffer, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, String]]
+  @scala.annotation.targetName("generateKeyPairSync_rsapss")
+  inline def generateKeyPairSync(`type`: "rsa-pss", options: RSAPSSKeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.annotation.targetName("generateKeyPairSync_rsapss_pem_pem")
+  inline def generateKeyPairSync(`type`: "rsa-pss", options: RSAPSSKeyPairOptions["pem", "pem"]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
+  @scala.annotation.targetName("generateKeyPairSync_rsapss_pem_der")
+  inline def generateKeyPairSync(`type`: "rsa-pss", options: RSAPSSKeyPairOptions["pem", "der"]): KeyPairSyncResult[String, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_rsapss_der_pem")
+  inline def generateKeyPairSync(`type`: "rsa-pss", options: RSAPSSKeyPairOptions["der", "pem"]): KeyPairSyncResult[Buffer, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, String]]
+  @scala.annotation.targetName("generateKeyPairSync_rsapss_der_der")
+  inline def generateKeyPairSync(`type`: "rsa-pss", options: RSAPSSKeyPairOptions["der", "der"]): KeyPairSyncResult[Buffer, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_x25519")
+  inline def generateKeyPairSync(`type`: "x25519", options: X25519KeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.annotation.targetName("generateKeyPairSync_x25519_der_pem")
+  inline def generateKeyPairSync(`type`: "x25519", options: X25519KeyPairOptions["der", "pem"]): KeyPairSyncResult[Buffer, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, String]]
+  @scala.annotation.targetName("generateKeyPairSync_x25519_pem_der")
+  inline def generateKeyPairSync(`type`: "x25519", options: X25519KeyPairOptions["pem", "der"]): KeyPairSyncResult[String, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_x25519_pem_pem")
+  inline def generateKeyPairSync(`type`: "x25519", options: X25519KeyPairOptions["pem", "pem"]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
+  @scala.annotation.targetName("generateKeyPairSync_x25519_der_der")
+  inline def generateKeyPairSync(`type`: "x25519", options: X25519KeyPairOptions["der", "der"]): KeyPairSyncResult[Buffer, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_x448")
+  inline def generateKeyPairSync(`type`: "x448", options: X448KeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.annotation.targetName("generateKeyPairSync_x448_der_pem")
+  inline def generateKeyPairSync(`type`: "x448", options: X448KeyPairOptions["der", "pem"]): KeyPairSyncResult[Buffer, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, String]]
+  @scala.annotation.targetName("generateKeyPairSync_x448_der_der")
+  inline def generateKeyPairSync(`type`: "x448", options: X448KeyPairOptions["der", "der"]): KeyPairSyncResult[Buffer, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[Buffer, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_x448_pem_der")
+  inline def generateKeyPairSync(`type`: "x448", options: X448KeyPairOptions["pem", "der"]): KeyPairSyncResult[String, Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, Buffer]]
+  @scala.annotation.targetName("generateKeyPairSync_x448_pem_pem")
+  inline def generateKeyPairSync(`type`: "x448", options: X448KeyPairOptions["pem", "pem"]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
   
   /**
     * Synchronously generates a new random secret key of the given `length`. The`type` will determine which validations will be performed on the `length`.
@@ -1976,7 +1994,8 @@ object nodeColoncryptoMod {
     * @since v15.0.0
     * @param type The intended use of the generated secret key. Currently accepted values are `'hmac'` and `'aes'`.
     */
-  inline def generateKeySync(`type`: hmac | aes, options: Length): typings.node.cryptoMod.KeyObject = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeySync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.KeyObject]
+  @scala.annotation.targetName("generateKeySync_hmac_aes")
+  inline def generateKeySync(`type`: "hmac" | "aes", options: Length): typings.node.cryptoMod.KeyObject = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeySync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.KeyObject]
   
   /**
     * Generates a pseudorandom prime of `size` bits.
@@ -2135,7 +2154,7 @@ object nodeColoncryptoMod {
     * @since v10.0.0
     * @return `1` if and only if a FIPS compliant crypto provider is currently in use, `0` otherwise. A future semver-major release may change the return type of this API to a {boolean}.
     */
-  inline def getFips(): `1` | `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("getFips")().asInstanceOf[`1` | `0`]
+  inline def getFips(): 1 | 0 = ^.asInstanceOf[js.Dynamic].applyDynamic("getFips")().asInstanceOf[1 | 0]
   
   /**
     * ```js

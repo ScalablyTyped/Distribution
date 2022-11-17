@@ -159,15 +159,7 @@ object libGridColMod extends Shortcut {
   
   type ColSpanType = Double | String
   
-  /* Rewritten from type alias, can be one of: 
-    - scala.Double
-    - typings.antd.antdStrings.none
-    - typings.antd.antdStrings.auto
-    - java.lang.String
-  */
-  type FlexType = _FlexType | Double | String
-  
-  trait _FlexType extends StObject
+  type FlexType = Double | "none" | "auto" | String
   
   type _To = ForwardRefExoticComponent[ColProps & RefAttributes[HTMLDivElement]]
   

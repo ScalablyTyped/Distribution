@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParenthesizedExpression
   extends StObject
      with PrimaryExpression
-     with JSDocContainer
-     with HasJSDoc {
+     with JSDocContainer {
   
   val expression: Expression = js.native
   

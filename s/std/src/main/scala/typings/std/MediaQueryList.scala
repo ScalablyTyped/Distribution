@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.change
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +12,22 @@ trait MediaQueryList
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_change(
-    `type`: change,
+  @scala.annotation.targetName("addEventListener_change")
+  def addEventListener(
+    `type`: "change",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_change(
-    `type`: change,
+  @scala.annotation.targetName("addEventListener_change")
+  def addEventListener(
+    `type`: "change",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_change(
-    `type`: change,
+  @scala.annotation.targetName("addEventListener_change")
+  def addEventListener(
+    `type`: "change",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -46,19 +48,22 @@ trait MediaQueryList
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_change(
-    `type`: change,
+  @scala.annotation.targetName("removeEventListener_change")
+  def removeEventListener(
+    `type`: "change",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_change(
-    `type`: change,
+  @scala.annotation.targetName("removeEventListener_change")
+  def removeEventListener(
+    `type`: "change",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_change(
-    `type`: change,
+  @scala.annotation.targetName("removeEventListener_change")
+  def removeEventListener(
+    `type`: "change",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native

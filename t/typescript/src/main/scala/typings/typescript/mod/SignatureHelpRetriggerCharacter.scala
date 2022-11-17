@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SignatureHelpRetriggerCharacter {
   
-  inline def Comma: typings.typescript.typescriptStrings.Comma = ",".asInstanceOf[typings.typescript.typescriptStrings.Comma]
+  inline def Comma: "," = ",".asInstanceOf[","]
   
   inline def Leftparenthesis: /* ( */ java.lang.String = "(".asInstanceOf[/* ( */ java.lang.String]
   
-  inline def Lessthansign: typings.typescript.typescriptStrings.Lessthansign = "<".asInstanceOf[typings.typescript.typescriptStrings.Lessthansign]
+  inline def Lessthansign: "<" = "<".asInstanceOf["<"]
   
   inline def Rightparenthesis: /* ) */ java.lang.String = ")".asInstanceOf[/* ) */ java.lang.String]
 }

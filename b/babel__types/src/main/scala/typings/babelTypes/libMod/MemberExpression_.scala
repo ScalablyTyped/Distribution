@@ -1,30 +1,23 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesBooleans.`false`
-import typings.babelTypes.babelTypesBooleans.`true`
-import typings.babelTypes.babelTypesStrings.MemberExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MemberExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with LVal
-     with Node
-     with Standardized {
+     with BaseNode {
   
   var computed: Boolean
   
   var `object`: Expression | Super_
   
-  var optional: js.UndefOr[`true` | `false` | Null] = js.undefined
+  var optional: js.UndefOr[true | false | Null] = js.undefined
   
   var property: Expression | Identifier_ | PrivateName_
   
   @JSName("type")
-  var type_MemberExpression_ : MemberExpression
+  var type_MemberExpression_ : "MemberExpression"
 }
 object MemberExpression_ {
   
@@ -45,7 +38,7 @@ object MemberExpression_ {
     
     inline def setObject(value: Expression | Super_): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    inline def setOptional(value: `true` | `false`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: true | false): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     inline def setOptionalNull: Self = StObject.set(x, "optional", null)
     
@@ -53,6 +46,6 @@ object MemberExpression_ {
     
     inline def setProperty(value: Expression | Identifier_ | PrivateName_): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    inline def setType(value: MemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "MemberExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

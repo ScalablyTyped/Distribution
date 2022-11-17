@@ -5,29 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
-import typings.semanticUiReact.semanticUiReactStrings.`half banner`
-import typings.semanticUiReact.semanticUiReactStrings.`half page`
-import typings.semanticUiReact.semanticUiReactStrings.`large leaderboard`
-import typings.semanticUiReact.semanticUiReactStrings.`large rectangle`
-import typings.semanticUiReact.semanticUiReactStrings.`medium rectangle`
-import typings.semanticUiReact.semanticUiReactStrings.`mobile banner`
-import typings.semanticUiReact.semanticUiReactStrings.`mobile leaderboard`
-import typings.semanticUiReact.semanticUiReactStrings.`small button`
-import typings.semanticUiReact.semanticUiReactStrings.`small rectangle`
-import typings.semanticUiReact.semanticUiReactStrings.`small square`
-import typings.semanticUiReact.semanticUiReactStrings.`square button`
-import typings.semanticUiReact.semanticUiReactStrings.`top banner`
-import typings.semanticUiReact.semanticUiReactStrings.`vertical banner`
-import typings.semanticUiReact.semanticUiReactStrings.`vertical rectangle`
-import typings.semanticUiReact.semanticUiReactStrings.`wide skyscraper`
-import typings.semanticUiReact.semanticUiReactStrings.banner
-import typings.semanticUiReact.semanticUiReactStrings.billboard
-import typings.semanticUiReact.semanticUiReactStrings.button
-import typings.semanticUiReact.semanticUiReactStrings.leaderboard
-import typings.semanticUiReact.semanticUiReactStrings.netboard
-import typings.semanticUiReact.semanticUiReactStrings.panorama
-import typings.semanticUiReact.semanticUiReactStrings.skyscraper
-import typings.semanticUiReact.semanticUiReactStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +22,7 @@ object distCommonjsViewsAdvertisementAdvertisementMod extends Shortcut {
   object AdvertisementProps {
     
     inline def apply(
-      unit: (`medium rectangle`) | (`large rectangle`) | (`vertical rectangle`) | (`small rectangle`) | (`mobile banner`) | banner | (`vertical banner`) | (`top banner`) | (`half banner`) | button | (`square button`) | (`small button`) | skyscraper | (`wide skyscraper`) | leaderboard | (`large leaderboard`) | (`mobile leaderboard`) | billboard | panorama | netboard | (`half page`) | square | (`small square`)
+      unit: ("medium rectangle") | ("large rectangle") | ("vertical rectangle") | ("small rectangle") | ("mobile banner") | "banner" | ("vertical banner") | ("top banner") | ("half banner") | "button" | ("square button") | ("small button") | "skyscraper" | ("wide skyscraper") | "leaderboard" | ("large leaderboard") | ("mobile leaderboard") | "billboard" | "panorama" | "netboard" | ("half page") | "square" | ("small square")
     ): AdvertisementProps = {
       val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
       __obj.asInstanceOf[AdvertisementProps]
@@ -73,12 +50,12 @@ object distCommonjsViewsAdvertisementAdvertisementMod extends Shortcut {
     var test: js.UndefOr[Boolean | String | Double] = js.undefined
     
     /** Varies the size of the advertisement. */
-    var unit: (`medium rectangle`) | (`large rectangle`) | (`vertical rectangle`) | (`small rectangle`) | (`mobile banner`) | banner | (`vertical banner`) | (`top banner`) | (`half banner`) | button | (`square button`) | (`small button`) | skyscraper | (`wide skyscraper`) | leaderboard | (`large leaderboard`) | (`mobile leaderboard`) | billboard | panorama | netboard | (`half page`) | square | (`small square`)
+    var unit: ("medium rectangle") | ("large rectangle") | ("vertical rectangle") | ("small rectangle") | ("mobile banner") | "banner" | ("vertical banner") | ("top banner") | ("half banner") | "button" | ("square button") | ("small button") | "skyscraper" | ("wide skyscraper") | "leaderboard" | ("large leaderboard") | ("mobile leaderboard") | "billboard" | "panorama" | "netboard" | ("half page") | "square" | ("small square")
   }
   object StrictAdvertisementProps {
     
     inline def apply(
-      unit: (`medium rectangle`) | (`large rectangle`) | (`vertical rectangle`) | (`small rectangle`) | (`mobile banner`) | banner | (`vertical banner`) | (`top banner`) | (`half banner`) | button | (`square button`) | (`small button`) | skyscraper | (`wide skyscraper`) | leaderboard | (`large leaderboard`) | (`mobile leaderboard`) | billboard | panorama | netboard | (`half page`) | square | (`small square`)
+      unit: ("medium rectangle") | ("large rectangle") | ("vertical rectangle") | ("small rectangle") | ("mobile banner") | "banner" | ("vertical banner") | ("top banner") | ("half banner") | "button" | ("square button") | ("small button") | "skyscraper" | ("wide skyscraper") | "leaderboard" | ("large leaderboard") | ("mobile leaderboard") | "billboard" | "panorama" | "netboard" | ("half page") | "square" | ("small square")
     ): StrictAdvertisementProps = {
       val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrictAdvertisementProps]
@@ -111,7 +88,7 @@ object distCommonjsViewsAdvertisementAdvertisementMod extends Shortcut {
       inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
       inline def setUnit(
-        value: (`medium rectangle`) | (`large rectangle`) | (`vertical rectangle`) | (`small rectangle`) | (`mobile banner`) | banner | (`vertical banner`) | (`top banner`) | (`half banner`) | button | (`square button`) | (`small button`) | skyscraper | (`wide skyscraper`) | leaderboard | (`large leaderboard`) | (`mobile leaderboard`) | billboard | panorama | netboard | (`half page`) | square | (`small square`)
+        value: ("medium rectangle") | ("large rectangle") | ("vertical rectangle") | ("small rectangle") | ("mobile banner") | "banner" | ("vertical banner") | ("top banner") | ("half banner") | "button" | ("square button") | ("small button") | "skyscraper" | ("wide skyscraper") | "leaderboard" | ("large leaderboard") | ("mobile leaderboard") | "billboard" | "panorama" | "netboard" | ("half page") | "square" | ("small square")
       ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     }
   }

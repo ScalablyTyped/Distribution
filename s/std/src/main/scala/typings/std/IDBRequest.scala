@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,33 +12,36 @@ trait IDBRequest[T]
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_error(
-    `type`: typings.std.stdStrings.error,
-    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any]
-  ): Unit = js.native
+  @scala.annotation.targetName("addEventListener_error")
+  def addEventListener(`type`: "error", listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(
-    `type`: typings.std.stdStrings.error,
+  @scala.annotation.targetName("addEventListener_success")
+  def addEventListener(`type`: "success", listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_success")
+  def addEventListener(
+    `type`: "success",
     listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(
-    `type`: typings.std.stdStrings.error,
+  @scala.annotation.targetName("addEventListener_error")
+  def addEventListener(
+    `type`: "error",
+    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_error")
+  def addEventListener(
+    `type`: "error",
     listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_success(`type`: success, listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_success(
-    `type`: success,
-    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_success(
-    `type`: success,
+  @scala.annotation.targetName("addEventListener_success")
+  def addEventListener(
+    `type`: "success",
     listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -60,33 +62,36 @@ trait IDBRequest[T]
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_error(
-    `type`: typings.std.stdStrings.error,
-    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any]
-  ): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_error")
+  def removeEventListener(`type`: "error", listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_error(
-    `type`: typings.std.stdStrings.error,
+  @scala.annotation.targetName("removeEventListener_success")
+  def removeEventListener(`type`: "success", listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_error")
+  def removeEventListener(
+    `type`: "error",
     listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_error(
-    `type`: typings.std.stdStrings.error,
+  @scala.annotation.targetName("removeEventListener_success")
+  def removeEventListener(
+    `type`: "success",
+    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_success")
+  def removeEventListener(
+    `type`: "success",
     listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_success(`type`: success, listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_success(
-    `type`: success,
-    listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_success(
-    `type`: success,
+  @scala.annotation.targetName("removeEventListener_error")
+  def removeEventListener(
+    `type`: "error",
     listener: js.ThisFunction1[/* this */ IDBRequest[T], /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

@@ -1,14 +1,11 @@
 package typings.angularCompilerCli.anon
 
 import typings.angularCompiler.mod.R3DependencyMetadata
-import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcDiMod.ConstructorDeps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Deps
-  extends StObject
-     with ConstructorDeps {
+trait Deps extends StObject {
   
   var deps: js.Array[R3DependencyMetadata]
 }

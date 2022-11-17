@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__icons
 
-Typings are for version 4.7.0
+Typings are for version 4.8.0
 
 
 

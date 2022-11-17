@@ -1,10 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`symbol-narrow`
-import typings.angularCommon.angularCommonStrings.code
-import typings.angularCommon.angularCommonStrings.currency
-import typings.angularCommon.angularCommonStrings.symbol
 import typings.angularCore.mod.PipeTransform
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
@@ -24,20 +19,24 @@ open class CurrencyPipe protected ()
   
   /* private */ var _locale: Any = js.native
   
-  def transform(
-    value: js.UndefOr[Null],
-    currencyCode: js.UndefOr[String],
-    display: js.UndefOr[code | symbol | `symbol-narrow` | String | Boolean],
-    digitsInfo: js.UndefOr[String],
-    locale: js.UndefOr[String]
-  ): Null = js.native
+  @JSName("transform")
+  @scala.annotation.targetName("transform_code_symbol_symbolnarrow")
   def transform(
     value: js.UndefOr[Double | Null | String],
     currencyCode: js.UndefOr[String],
-    display: js.UndefOr[Boolean | String | code | symbol | `symbol-narrow`],
+    display: js.UndefOr["code" | "symbol" | "symbol-narrow" | Boolean | String],
     digitsInfo: js.UndefOr[String],
     locale: js.UndefOr[String]
   ): String | Null = js.native
+  @JSName("transform")
+  @scala.annotation.targetName("transform_code_symbol_symbolnarrow")
+  def transform(
+    value: js.UndefOr[Null],
+    currencyCode: js.UndefOr[String],
+    display: js.UndefOr["code" | "symbol" | "symbol-narrow" | String | Boolean],
+    digitsInfo: js.UndefOr[String],
+    locale: js.UndefOr[String]
+  ): Null = js.native
   /* CompleteClass */
   override def transform(value: Any, args: Any*): Any = js.native
 }
@@ -55,6 +54,6 @@ object CurrencyPipe {
   
   @JSImport("@angular/common", "CurrencyPipe.\u0275pipe")
   @js.native
-  def ɵpipe: ɵɵPipeDeclaration[CurrencyPipe, currency, `true`] = js.native
-  inline def ɵpipe_=(x: ɵɵPipeDeclaration[CurrencyPipe, currency, `true`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
+  def ɵpipe: ɵɵPipeDeclaration[CurrencyPipe, "currency", true] = js.native
+  inline def ɵpipe_=(x: ɵɵPipeDeclaration[CurrencyPipe, "currency", true]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
 }

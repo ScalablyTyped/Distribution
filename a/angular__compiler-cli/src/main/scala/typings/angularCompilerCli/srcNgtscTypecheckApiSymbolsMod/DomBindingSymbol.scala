@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DomBindingSymbol
-  extends StObject
-     with Symbol {
+trait DomBindingSymbol extends StObject {
   
   /** The symbol for the element or template of the text attribute. */
   var host: ElementSymbol | TemplateSymbol

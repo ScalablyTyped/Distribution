@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.propertyNames
 import typings.ajv.anon.PropertyName
 import typings.ajv.distTypesMod.AnySchema
 import typings.ajv.distTypesMod.CodeKeywordDefinition
@@ -16,7 +15,7 @@ object distVocabulariesApplicatorPropertyNamesMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type PropertyNamesError = ErrorObject[propertyNames, PropertyName, AnySchema]
+  type PropertyNamesError = ErrorObject["propertyNames", PropertyName, AnySchema]
   
   type _To = CodeKeywordDefinition
   

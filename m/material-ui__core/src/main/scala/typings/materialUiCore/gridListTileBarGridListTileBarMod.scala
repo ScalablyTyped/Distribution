@@ -1,10 +1,6 @@
 package typings.materialUiCore
 
 import typings.materialUiCore.anon.PartialClassNameMapGridLi
-import typings.materialUiCore.materialUiCoreStrings.bottom
-import typings.materialUiCore.materialUiCoreStrings.left
-import typings.materialUiCore.materialUiCoreStrings.right
-import typings.materialUiCore.materialUiCoreStrings.top
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
@@ -21,44 +17,31 @@ object gridListTileBarGridListTileBarMod {
   
   inline def default(props: GridListTileBarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.titlePositionBottom
-    - typings.materialUiCore.materialUiCoreStrings.titlePositionTop
-    - typings.materialUiCore.materialUiCoreStrings.rootSubtitle
-    - typings.materialUiCore.materialUiCoreStrings.titleWrap
-    - typings.materialUiCore.materialUiCoreStrings.titleWrapActionPosLeft
-    - typings.materialUiCore.materialUiCoreStrings.titleWrapActionPosRight
-    - typings.materialUiCore.materialUiCoreStrings.title
-    - typings.materialUiCore.materialUiCoreStrings.subtitle
-    - typings.materialUiCore.materialUiCoreStrings.actionIcon
-    - typings.materialUiCore.materialUiCoreStrings.actionIconActionPosLeft
-  */
-  trait GridListTileBarClassKey extends StObject
   object GridListTileBarClassKey {
     
-    inline def actionIcon: typings.materialUiCore.materialUiCoreStrings.actionIcon = "actionIcon".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.actionIcon]
+    inline def actionIcon: "actionIcon" = "actionIcon".asInstanceOf["actionIcon"]
     
-    inline def actionIconActionPosLeft: typings.materialUiCore.materialUiCoreStrings.actionIconActionPosLeft = "actionIconActionPosLeft".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.actionIconActionPosLeft]
+    inline def actionIconActionPosLeft: "actionIconActionPosLeft" = "actionIconActionPosLeft".asInstanceOf["actionIconActionPosLeft"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def rootSubtitle: typings.materialUiCore.materialUiCoreStrings.rootSubtitle = "rootSubtitle".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.rootSubtitle]
+    inline def rootSubtitle: "rootSubtitle" = "rootSubtitle".asInstanceOf["rootSubtitle"]
     
-    inline def subtitle: typings.materialUiCore.materialUiCoreStrings.subtitle = "subtitle".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subtitle]
+    inline def subtitle: "subtitle" = "subtitle".asInstanceOf["subtitle"]
     
-    inline def title: typings.materialUiCore.materialUiCoreStrings.title = "title".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.title]
+    inline def title: "title" = "title".asInstanceOf["title"]
     
-    inline def titlePositionBottom: typings.materialUiCore.materialUiCoreStrings.titlePositionBottom = "titlePositionBottom".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.titlePositionBottom]
+    inline def titlePositionBottom: "titlePositionBottom" = "titlePositionBottom".asInstanceOf["titlePositionBottom"]
     
-    inline def titlePositionTop: typings.materialUiCore.materialUiCoreStrings.titlePositionTop = "titlePositionTop".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.titlePositionTop]
+    inline def titlePositionTop: "titlePositionTop" = "titlePositionTop".asInstanceOf["titlePositionTop"]
     
-    inline def titleWrap: typings.materialUiCore.materialUiCoreStrings.titleWrap = "titleWrap".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.titleWrap]
+    inline def titleWrap: "titleWrap" = "titleWrap".asInstanceOf["titleWrap"]
     
-    inline def titleWrapActionPosLeft: typings.materialUiCore.materialUiCoreStrings.titleWrapActionPosLeft = "titleWrapActionPosLeft".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.titleWrapActionPosLeft]
+    inline def titleWrapActionPosLeft: "titleWrapActionPosLeft" = "titleWrapActionPosLeft".asInstanceOf["titleWrapActionPosLeft"]
     
-    inline def titleWrapActionPosRight: typings.materialUiCore.materialUiCoreStrings.titleWrapActionPosRight = "titleWrapActionPosRight".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.titleWrapActionPosRight]
+    inline def titleWrapActionPosRight: "titleWrapActionPosRight" = "titleWrapActionPosRight".asInstanceOf["titleWrapActionPosRight"]
   }
+  type GridListTileBarClassKey = "root" | "titlePositionBottom" | "titlePositionTop" | "rootSubtitle" | "titleWrap" | "titleWrapActionPosLeft" | "titleWrapActionPosRight" | "title" | "subtitle" | "actionIcon" | "actionIconActionPosLeft"
   
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<{}, @material-ui/core.@material-ui/core/GridListTileBar/GridListTileBar.GridListTileBarClassKey, never> */
   trait GridListTileBarProps extends StObject {
@@ -72,7 +55,7 @@ object gridListTileBarGridListTileBarMod {
     /**
       * Position of secondary action IconButton.
       */
-    var actionPosition: js.UndefOr[left | right] = js.undefined
+    var actionPosition: js.UndefOr["left" | "right"] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -102,7 +85,7 @@ object gridListTileBarGridListTileBarMod {
     /**
       * Position of the title bar.
       */
-    var titlePosition: js.UndefOr[top | bottom] = js.undefined
+    var titlePosition: js.UndefOr["top" | "bottom"] = js.undefined
   }
   object GridListTileBarProps {
     
@@ -117,7 +100,7 @@ object gridListTileBarGridListTileBarMod {
       
       inline def setActionIconUndefined: Self = StObject.set(x, "actionIcon", js.undefined)
       
-      inline def setActionPosition(value: left | right): Self = StObject.set(x, "actionPosition", value.asInstanceOf[js.Any])
+      inline def setActionPosition(value: "left" | "right"): Self = StObject.set(x, "actionPosition", value.asInstanceOf[js.Any])
       
       inline def setActionPositionUndefined: Self = StObject.set(x, "actionPosition", js.undefined)
       
@@ -153,7 +136,7 @@ object gridListTileBarGridListTileBarMod {
       
       inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def setTitlePosition(value: top | bottom): Self = StObject.set(x, "titlePosition", value.asInstanceOf[js.Any])
+      inline def setTitlePosition(value: "top" | "bottom"): Self = StObject.set(x, "titlePosition", value.asInstanceOf[js.Any])
       
       inline def setTitlePositionUndefined: Self = StObject.set(x, "titlePosition", js.undefined)
       

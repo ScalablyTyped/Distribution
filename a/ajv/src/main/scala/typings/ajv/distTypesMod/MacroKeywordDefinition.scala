@@ -5,8 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.ajv.distTypesMod.KeywordDefinition because Already inherited */ trait MacroKeywordDefinition
+trait MacroKeywordDefinition
   extends StObject
      with FuncKeywordDefinition {
   

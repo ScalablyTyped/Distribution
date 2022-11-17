@@ -1,9 +1,5 @@
 package typings.three
 
-import typings.three.threeStrings.geometry
-import typings.three.threeStrings.local
-import typings.three.threeStrings.view
-import typings.three.threeStrings.world
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,23 +20,23 @@ object examplesJsmNodesAccessorsTangentNodeMod {
     
     @JSImport("three/examples/jsm/nodes/accessors/TangentNode", "default.GEOMETRY")
     @js.native
-    def GEOMETRY: geometry = js.native
-    inline def GEOMETRY_=(x: geometry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GEOMETRY")(x.asInstanceOf[js.Any])
+    def GEOMETRY: "geometry" = js.native
+    inline def GEOMETRY_=(x: "geometry"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GEOMETRY")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/accessors/TangentNode", "default.LOCAL")
     @js.native
-    def LOCAL: local = js.native
-    inline def LOCAL_=(x: local): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCAL")(x.asInstanceOf[js.Any])
+    def LOCAL: "local" = js.native
+    inline def LOCAL_=(x: "local"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCAL")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/accessors/TangentNode", "default.VIEW")
     @js.native
-    def VIEW: view = js.native
-    inline def VIEW_=(x: view): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIEW")(x.asInstanceOf[js.Any])
+    def VIEW: "view" = js.native
+    inline def VIEW_=(x: "view"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIEW")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/accessors/TangentNode", "default.WORLD")
     @js.native
-    def WORLD: world = js.native
-    inline def WORLD_=(x: world): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WORLD")(x.asInstanceOf[js.Any])
+    def WORLD: "world" = js.native
+    inline def WORLD_=(x: "world"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WORLD")(x.asInstanceOf[js.Any])
   }
   
   @js.native

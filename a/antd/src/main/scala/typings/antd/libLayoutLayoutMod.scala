@@ -2,10 +2,6 @@ package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.AddSider
-import typings.antd.antdStrings.footer
-import typings.antd.antdStrings.header
-import typings.antd.antdStrings.main
-import typings.antd.antdStrings.section
 import typings.react.mod.Context
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLAttributes
@@ -71,11 +67,11 @@ object libLayoutLayoutMod extends Shortcut {
     
     var suffixCls: String
     
-    var tagName: header | footer | main | section
+    var tagName: "header" | "footer" | "main" | "section"
   }
   object GeneratorProps {
     
-    inline def apply(displayName: String, suffixCls: String, tagName: header | footer | main | section): GeneratorProps = {
+    inline def apply(displayName: String, suffixCls: String, tagName: "header" | "footer" | "main" | "section"): GeneratorProps = {
       val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], suffixCls = suffixCls.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeneratorProps]
     }
@@ -86,7 +82,7 @@ object libLayoutLayoutMod extends Shortcut {
       
       inline def setSuffixCls(value: String): Self = StObject.set(x, "suffixCls", value.asInstanceOf[js.Any])
       
-      inline def setTagName(value: header | footer | main | section): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: "header" | "footer" | "main" | "section"): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }
   }
   

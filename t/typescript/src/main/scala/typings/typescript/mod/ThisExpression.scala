@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ThisExpression
   extends StObject
-     with PrimaryExpression
-     with JsxTagNameExpression {
+     with PrimaryExpression {
   
   @JSName("kind")
   val kind_ThisExpression: ThisKeyword = js.native

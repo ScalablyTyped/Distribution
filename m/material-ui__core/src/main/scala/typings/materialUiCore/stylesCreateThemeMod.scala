@@ -35,17 +35,13 @@ object stylesCreateThemeMod {
   inline def createMuiTheme(options: Unit, args: js.Object*): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createMuiTheme")(scala.List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Theme]
   inline def createMuiTheme(options: ThemeOptions, args: js.Object*): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createMuiTheme")(scala.List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Theme]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.ltr
-    - typings.materialUiCore.materialUiCoreStrings.rtl
-  */
-  trait Direction extends StObject
   object Direction {
     
-    inline def ltr: typings.materialUiCore.materialUiCoreStrings.ltr = "ltr".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.ltr]
+    inline def ltr: "ltr" = "ltr".asInstanceOf["ltr"]
     
-    inline def rtl: typings.materialUiCore.materialUiCoreStrings.rtl = "rtl".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.rtl]
+    inline def rtl: "rtl" = "rtl".asInstanceOf["rtl"]
   }
+  type Direction = "ltr" | "rtl"
   
   trait Theme extends StObject {
     

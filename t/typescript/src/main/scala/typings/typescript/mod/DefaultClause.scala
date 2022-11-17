@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DefaultClause
   extends StObject
-     with Node
-     with CaseOrDefaultClause {
+     with Node {
   
   @JSName("kind")
   val kind_DefaultClause: typings.typescript.mod.SyntaxKind.DefaultClause = js.native

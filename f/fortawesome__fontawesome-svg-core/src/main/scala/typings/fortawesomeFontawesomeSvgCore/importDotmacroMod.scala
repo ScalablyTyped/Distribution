@@ -38,6 +38,11 @@ object importDotmacroMod {
   }
   object IconMacroParams {
     
+    inline def apply(name: IconName): IconMacroParams = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IconMacroParams]
+    }
+    
     extension [Self <: IconMacroParams](x: Self) {
       
       inline def setFamily(value: IconFamily): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])

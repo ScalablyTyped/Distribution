@@ -6,7 +6,6 @@ import typings.three.srcMathMatrix3Mod.Matrix3
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathSphereMod.Sphere
 import typings.three.srcMathVector3Mod.Vector3
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +50,7 @@ object srcMathPlaneMod {
       */
     def isIntersectionLine(l: Any): Any = js.native
     
-    val isPlane: `true` = js.native
+    val isPlane: true = js.native
     
     def negate(): Plane = js.native
     

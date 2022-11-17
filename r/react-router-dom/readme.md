@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-router-dom
 
-Typings are for version 6.4.2
+Typings are for version 6.4.3
 
 ## Library description:
 Declarative routing for React web applications

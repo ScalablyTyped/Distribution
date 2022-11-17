@@ -1,7 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.message
-import typings.std.stdStrings.messageerror
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,39 +8,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MessagePort
   extends StObject
-     with EventTarget
-     with _MessageEventSource
-     with _Transferable {
+     with EventTarget {
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_message")
+  def addEventListener(
+    `type`: "message",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_message(
-    `type`: message,
+  @scala.annotation.targetName("addEventListener_messageerror")
+  def addEventListener(
+    `type`: "messageerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_message")
+  def addEventListener(
+    `type`: "message",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_message(
-    `type`: message,
+  @scala.annotation.targetName("addEventListener_messageerror")
+  def addEventListener(
+    `type`: "messageerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_message")
+  def addEventListener(
+    `type`: "message",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_messageerror(
-    `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_messageerror(
-    `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_messageerror(
-    `type`: messageerror,
+  @scala.annotation.targetName("addEventListener_messageerror")
+  def addEventListener(
+    `type`: "messageerror",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -68,35 +73,44 @@ trait MessagePort
   /* standard dom */
   def postMessage(message: Any, transfer: js.Array[Transferable]): Unit = js.native
   
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_messageerror")
+  def removeEventListener(
+    `type`: "messageerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]
+  ): Unit = js.native
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_message")
+  def removeEventListener(
+    `type`: "message",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]
+  ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_message(
-    `type`: message,
+  @scala.annotation.targetName("removeEventListener_message")
+  def removeEventListener(
+    `type`: "message",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_message(
-    `type`: message,
+  @scala.annotation.targetName("removeEventListener_messageerror")
+  def removeEventListener(
+    `type`: "messageerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_message")
+  def removeEventListener(
+    `type`: "message",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_messageerror(
-    `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_messageerror(
-    `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_messageerror(
-    `type`: messageerror,
+  @scala.annotation.targetName("removeEventListener_messageerror")
+  def removeEventListener(
+    `type`: "messageerror",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any],
     options: EventListenerOptions
   ): Unit = js.native

@@ -1,6 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.rawData
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +16,7 @@ trait UploadRawData extends StObject {
   /**
     * `rawData`.
     */
-  var `type`: rawData
+  var `type`: "rawData"
 }
 object UploadRawData {
   
@@ -31,6 +30,6 @@ object UploadRawData {
     
     inline def setBytes(value: Buffer): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
-    inline def setType(value: rawData): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "rawData"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -4,17 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.reactNavigation.reactNavigationStrings.`react-navigationSlashSTACK`
-  - typings.reactNavigation.reactNavigationStrings.`react-navigationSlashTABS`
-  - typings.reactNavigation.reactNavigationStrings.`react-navigationSlashDRAWER`
-*/
-trait NavigatorType extends StObject
 object NavigatorType {
   
-  inline def `react-navigationSlashDRAWER`: typings.reactNavigation.reactNavigationStrings.`react-navigationSlashDRAWER` = "react-navigation/DRAWER".asInstanceOf[typings.reactNavigation.reactNavigationStrings.`react-navigationSlashDRAWER`]
+  inline def `react-navigationSlashDRAWER`: "react-navigation/DRAWER" = "react-navigation/DRAWER".asInstanceOf["react-navigation/DRAWER"]
   
-  inline def `react-navigationSlashSTACK`: typings.reactNavigation.reactNavigationStrings.`react-navigationSlashSTACK` = "react-navigation/STACK".asInstanceOf[typings.reactNavigation.reactNavigationStrings.`react-navigationSlashSTACK`]
+  inline def `react-navigationSlashSTACK`: "react-navigation/STACK" = "react-navigation/STACK".asInstanceOf["react-navigation/STACK"]
   
-  inline def `react-navigationSlashTABS`: typings.reactNavigation.reactNavigationStrings.`react-navigationSlashTABS` = "react-navigation/TABS".asInstanceOf[typings.reactNavigation.reactNavigationStrings.`react-navigationSlashTABS`]
+  inline def `react-navigationSlashTABS`: "react-navigation/TABS" = "react-navigation/TABS".asInstanceOf["react-navigation/TABS"]
 }

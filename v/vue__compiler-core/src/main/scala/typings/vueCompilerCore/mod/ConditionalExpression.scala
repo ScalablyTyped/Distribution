@@ -1,14 +1,12 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`19`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ConditionalExpression
   extends StObject
-     with Node2
-     with JSChildNode {
+     with Node2 {
   
   var alternate: JSChildNode
   
@@ -19,7 +17,7 @@ trait ConditionalExpression
   var test: JSChildNode
   
   @JSName("type")
-  var type_ConditionalExpression: `19`
+  var type_ConditionalExpression: 19
 }
 object ConditionalExpression {
   
@@ -45,6 +43,6 @@ object ConditionalExpression {
     
     inline def setTest(value: JSChildNode): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `19`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 19): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,8 +1,6 @@
 package typings.antd
 
 import typings.antd.anon.Compare
-import typings.antd.antdStrings.menu
-import typings.antd.antdStrings.tree
 import typings.antd.libTableInterfaceMod.ColumnFilterItem
 import typings.antd.libTableInterfaceMod.ColumnTitle
 import typings.antd.libTableInterfaceMod.ColumnTitleProps
@@ -68,7 +66,7 @@ object libTableColumnGroupMod {
     
     var filterIcon: js.UndefOr[ReactNode | (js.Function1[/* filtered */ Boolean, ReactNode])] = js.undefined
     
-    var filterMode: js.UndefOr[menu | tree] = js.undefined
+    var filterMode: js.UndefOr["menu" | "tree"] = js.undefined
     
     var filterMultiple: js.UndefOr[Boolean] = js.undefined
     
@@ -204,7 +202,7 @@ object libTableColumnGroupMod {
       
       inline def setFilterIconUndefined: Self = StObject.set(x, "filterIcon", js.undefined)
       
-      inline def setFilterMode(value: menu | tree): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
+      inline def setFilterMode(value: "menu" | "tree"): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
       
       inline def setFilterModeUndefined: Self = StObject.set(x, "filterMode", js.undefined)
       

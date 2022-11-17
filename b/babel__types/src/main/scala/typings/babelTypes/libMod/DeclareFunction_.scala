@@ -1,25 +1,19 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.DeclareFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DeclareFunction_
   extends StObject
-     with BaseNode
-     with Declaration
-     with Flow
-     with FlowDeclaration
-     with Node
-     with Statement {
+     with BaseNode {
   
   var id: Identifier_
   
   var predicate: js.UndefOr[DeclaredPredicate_ | Null] = js.undefined
   
   @JSName("type")
-  var type_DeclareFunction_ : DeclareFunction
+  var type_DeclareFunction_ : "DeclareFunction"
 }
 object DeclareFunction_ {
   
@@ -39,6 +33,6 @@ object DeclareFunction_ {
     
     inline def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
     
-    inline def setType(value: DeclareFunction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "DeclareFunction"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

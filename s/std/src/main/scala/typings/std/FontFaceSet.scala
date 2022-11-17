@@ -1,8 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.loading
-import typings.std.stdStrings.loadingdone
-import typings.std.stdStrings.loadingerror
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,46 +10,55 @@ trait FontFaceSet
      with EventTarget
      with Set[FontFace] {
   
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_loadingdone")
+  def addEventListener(`type`: "loadingdone", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_loading(`type`: loading, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_loading")
+  def addEventListener(`type`: "loading", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loading(
-    `type`: loading,
+  @scala.annotation.targetName("addEventListener_loadingerror")
+  def addEventListener(`type`: "loadingerror", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_loadingdone")
+  def addEventListener(
+    `type`: "loadingdone",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loading(
-    `type`: loading,
+  @scala.annotation.targetName("addEventListener_loading")
+  def addEventListener(
+    `type`: "loading",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_loadingerror")
+  def addEventListener(
+    `type`: "loadingerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_loadingerror")
+  def addEventListener(
+    `type`: "loadingerror",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loadingdone(`type`: loadingdone, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadingdone(
-    `type`: loadingdone,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadingdone(
-    `type`: loadingdone,
+  @scala.annotation.targetName("addEventListener_loadingdone")
+  def addEventListener(
+    `type`: "loadingdone",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loadingerror(`type`: loadingerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadingerror(
-    `type`: loadingerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_loadingerror(
-    `type`: loadingerror,
+  @scala.annotation.targetName("addEventListener_loading")
+  def addEventListener(
+    `type`: "loading",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -77,46 +83,55 @@ trait FontFaceSet
   /* standard dom */
   val ready: js.Promise[FontFaceSet] = js.native
   
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_loadingdone")
+  def removeEventListener(`type`: "loadingdone", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_loadingerror")
+  def removeEventListener(`type`: "loadingerror", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_loading(`type`: loading, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_loading")
+  def removeEventListener(`type`: "loading", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_loading(
-    `type`: loading,
+  @scala.annotation.targetName("removeEventListener_loadingdone")
+  def removeEventListener(
+    `type`: "loadingdone",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_loading(
-    `type`: loading,
+  @scala.annotation.targetName("removeEventListener_loadingerror")
+  def removeEventListener(
+    `type`: "loadingerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_loading")
+  def removeEventListener(
+    `type`: "loading",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_loading")
+  def removeEventListener(
+    `type`: "loading",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_loadingdone(`type`: loadingdone, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadingdone(
-    `type`: loadingdone,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadingdone(
-    `type`: loadingdone,
+  @scala.annotation.targetName("removeEventListener_loadingdone")
+  def removeEventListener(
+    `type`: "loadingdone",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_loadingerror(`type`: loadingerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadingerror(
-    `type`: loadingerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_loadingerror(
-    `type`: loadingerror,
+  @scala.annotation.targetName("removeEventListener_loadingerror")
+  def removeEventListener(
+    `type`: "loadingerror",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

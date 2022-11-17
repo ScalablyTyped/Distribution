@@ -1,21 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.FunctionExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait FunctionExpression_
+trait FunctionExpression_
   extends StObject
-     with BaseNode
-     with BlockParent
-     with Expression
-     with Function
-     with FunctionParent
-     with Pureish
-     with Scopable
-     with Standardized {
+     with BaseNode {
   
   var async: Boolean
   
@@ -34,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ | Null
   
   @JSName("type")
-  var type_FunctionExpression_ : FunctionExpression
+  var type_FunctionExpression_ : "FunctionExpression"
 }
 object FunctionExpression_ {
   
@@ -73,7 +64,7 @@ object FunctionExpression_ {
     
     inline def setReturnTypeNull: Self = StObject.set(x, "returnType", null)
     
-    inline def setType(value: FunctionExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "FunctionExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

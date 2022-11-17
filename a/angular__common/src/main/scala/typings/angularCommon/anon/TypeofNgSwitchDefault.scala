@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable3
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngSwitchDefault]`
 import typings.angularCommon.mod.NgSwitchDefault
 import typings.angularCore.mod.TemplateRef
 import typings.angularCore.mod.ViewContainerRef
@@ -24,13 +22,14 @@ trait TypeofNgSwitchDefault
   
   var ɵdir: ɵɵDirectiveDeclaration[
     NgSwitchDefault, 
-    `[ngSwitchDefault]`, 
+    "[ngSwitchDefault]", 
     scala.Nothing, 
     js.Object, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NgSwitchDefault, js.Tuple3[Null, Null, Host]] = js.native

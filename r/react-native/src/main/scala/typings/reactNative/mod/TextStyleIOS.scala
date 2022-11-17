@@ -1,12 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.dashed
-import typings.reactNative.reactNativeStrings.dotted
-import typings.reactNative.reactNativeStrings.double
-import typings.reactNative.reactNativeStrings.ltr
-import typings.reactNative.reactNativeStrings.rtl
-import typings.reactNative.reactNativeStrings.solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +14,9 @@ trait TextStyleIOS
   
   var textDecorationColor: js.UndefOr[ColorValue] = js.undefined
   
-  var textDecorationStyle: js.UndefOr[solid | double | dotted | dashed] = js.undefined
+  var textDecorationStyle: js.UndefOr["solid" | "double" | "dotted" | "dashed"] = js.undefined
   
-  var writingDirection: js.UndefOr[auto | ltr | rtl] = js.undefined
+  var writingDirection: js.UndefOr["auto" | "ltr" | "rtl"] = js.undefined
 }
 object TextStyleIOS {
   
@@ -48,11 +41,11 @@ object TextStyleIOS {
     
     inline def setTextDecorationColorUndefined: Self = StObject.set(x, "textDecorationColor", js.undefined)
     
-    inline def setTextDecorationStyle(value: solid | double | dotted | dashed): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
+    inline def setTextDecorationStyle(value: "solid" | "double" | "dotted" | "dashed"): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
     
     inline def setTextDecorationStyleUndefined: Self = StObject.set(x, "textDecorationStyle", js.undefined)
     
-    inline def setWritingDirection(value: auto | ltr | rtl): Self = StObject.set(x, "writingDirection", value.asInstanceOf[js.Any])
+    inline def setWritingDirection(value: "auto" | "ltr" | "rtl"): Self = StObject.set(x, "writingDirection", value.asInstanceOf[js.Any])
     
     inline def setWritingDirectionUndefined: Self = StObject.set(x, "writingDirection", js.undefined)
   }

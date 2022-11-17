@@ -1,8 +1,6 @@
 package typings.yandexMaps.mod
 
 import typings.yandexMaps.anon.CoordRendering
-import typings.yandexMaps.yandexMapsStrings.evenOdd
-import typings.yandexMaps.yandexMapsStrings.nonZero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -159,11 +157,15 @@ object geometry {
     extends StObject
        with IPolygonGeometry {
     def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
-    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero) = this()
-    def this(coordinates: Unit, fillRule: evenOdd | nonZero) = this()
-    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero, options: js.Object) = this()
+    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: "evenOdd" | "nonZero") = this()
+    def this(coordinates: Unit, fillRule: "evenOdd" | "nonZero") = this()
+    def this(
+      coordinates: js.Array[js.Array[js.Array[Double]]],
+      fillRule: "evenOdd" | "nonZero",
+      options: js.Object
+    ) = this()
     def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: Unit, options: js.Object) = this()
-    def this(coordinates: Unit, fillRule: evenOdd | nonZero, options: js.Object) = this()
+    def this(coordinates: Unit, fillRule: "evenOdd" | "nonZero", options: js.Object) = this()
     def this(coordinates: Unit, fillRule: Unit, options: js.Object) = this()
     
     def add(
@@ -225,7 +227,9 @@ object geometry {
     
     def group(): IEventGroup = js.native
     
-    def setFillRule(fillRule: evenOdd | nonZero): IPolygonGeometryAccess = js.native
+    @JSName("setFillRule")
+    @scala.annotation.targetName("setFillRule_evenOdd_nonZero")
+    def setFillRule(fillRule: "evenOdd" | "nonZero"): IPolygonGeometryAccess = js.native
     
     def setParent(): this.type = js.native
     def setParent(parent: js.Object): this.type = js.native
@@ -429,8 +433,8 @@ object geometry {
       extends StObject
          with IBasePointGeometry {
       def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero) = this()
-      def this(coordinates: Unit, fillRule: evenOdd | nonZero) = this()
+      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: "evenOdd" | "nonZero") = this()
+      def this(coordinates: Unit, fillRule: "evenOdd" | "nonZero") = this()
       
       def contains(position: js.Array[Double]): Boolean = js.native
       
@@ -448,7 +452,7 @@ object geometry {
       
       def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
       
-      def getFillRule(): evenOdd | nonZero = js.native
+      def getFillRule(): "evenOdd" | "nonZero" = js.native
       
       def getLength(): Double = js.native
       
@@ -463,7 +467,9 @@ object geometry {
       
       def set(index: Double, path: js.Array[js.Array[Double]]): IPolygonGeometryAccess = js.native
       
-      def setFillRule(fillRule: evenOdd | nonZero): IPolygonGeometryAccess = js.native
+      @JSName("setFillRule")
+      @scala.annotation.targetName("setFillRule_evenOdd_nonZero")
+      def setFillRule(fillRule: "evenOdd" | "nonZero"): IPolygonGeometryAccess = js.native
       
       def splice(index: Double, number: Double): js.Array[ILinearRingGeometryAccess] = js.native
       
@@ -606,10 +612,10 @@ object geometry {
     open class MultiPolygon protected ()
       extends StObject
          with IPixelMultiPolygonGeometry {
-      def this(coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]], fillRule: evenOdd | nonZero) = this()
+      def this(coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]], fillRule: "evenOdd" | "nonZero") = this()
       def this(
         coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]],
-        fillRule: evenOdd | nonZero,
+        fillRule: "evenOdd" | "nonZero",
         metaData: js.Object
       ) = this()
       
@@ -632,7 +638,7 @@ object geometry {
       override def getCoordinates(): js.Array[js.Array[js.Array[js.Array[Double]]]] = js.native
       
       /* CompleteClass */
-      override def getFillRule(): evenOdd | nonZero = js.native
+      override def getFillRule(): "evenOdd" | "nonZero" = js.native
       
       /* CompleteClass */
       override def getLength(): Double = js.native
@@ -689,10 +695,10 @@ object geometry {
     open class Polygon protected ()
       extends StObject
          with IPixelPolygonGeometry {
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero) = this()
+      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: "evenOdd" | "nonZero") = this()
       def this(
         coordinates: js.Array[js.Array[js.Array[Double]]],
-        fillRule: evenOdd | nonZero,
+        fillRule: "evenOdd" | "nonZero",
         metaData: js.Object
       ) = this()
       
@@ -715,7 +721,7 @@ object geometry {
       override def getCoordinates(): js.Array[js.Array[js.Array[Double]]] = js.native
       
       /* CompleteClass */
-      override def getFillRule(): evenOdd | nonZero = js.native
+      override def getFillRule(): "evenOdd" | "nonZero" = js.native
       
       /* CompleteClass */
       override def getLength(): Double = js.native

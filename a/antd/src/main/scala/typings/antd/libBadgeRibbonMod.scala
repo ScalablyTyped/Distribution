@@ -16,17 +16,13 @@ object libBadgeRibbonMod extends Shortcut {
   @js.native
   val default: FC[RibbonProps] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.start
-    - typings.antd.antdStrings.end
-  */
-  trait RibbonPlacement extends StObject
   object RibbonPlacement {
     
-    inline def end: typings.antd.antdStrings.end = "end".asInstanceOf[typings.antd.antdStrings.end]
+    inline def end: "end" = "end".asInstanceOf["end"]
     
-    inline def start: typings.antd.antdStrings.start = "start".asInstanceOf[typings.antd.antdStrings.start]
+    inline def start: "start" = "start".asInstanceOf["start"]
   }
+  type RibbonPlacement = "start" | "end"
   
   trait RibbonProps extends StObject {
     

@@ -1,16 +1,6 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.badgeBadgeMod.BadgeOrigin
-import typings.materialUiCore.materialUiCoreStrings.circle
-import typings.materialUiCore.materialUiCoreStrings.circular
-import typings.materialUiCore.materialUiCoreStrings.default
-import typings.materialUiCore.materialUiCoreStrings.dot
-import typings.materialUiCore.materialUiCoreStrings.error
-import typings.materialUiCore.materialUiCoreStrings.primary
-import typings.materialUiCore.materialUiCoreStrings.rectangle
-import typings.materialUiCore.materialUiCoreStrings.rectangular
-import typings.materialUiCore.materialUiCoreStrings.secondary
-import typings.materialUiCore.materialUiCoreStrings.standard
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,7 +26,7 @@ trait AnchorOrigin extends StObject {
   /**
     * The color of the component. It supports those theme colors that make sense for this component.
     */
-  var color: js.UndefOr[primary | secondary | default | error] = js.undefined
+  var color: js.UndefOr["primary" | "secondary" | "default" | "error"] = js.undefined
   
   /**
     * If `true`, the badge will be invisible.
@@ -51,7 +41,7 @@ trait AnchorOrigin extends StObject {
   /**
     * Wrapped shape the badge should overlap.
     */
-  var overlap: js.UndefOr[rectangle | circle | rectangular | circular] = js.undefined
+  var overlap: js.UndefOr["rectangle" | "circle" | "rectangular" | "circular"] = js.undefined
   
   /**
     * Controls whether the badge is hidden when `badgeContent` is zero.
@@ -61,7 +51,7 @@ trait AnchorOrigin extends StObject {
   /**
     * The variant to use.
     */
-  var variant: js.UndefOr[standard | dot] = js.undefined
+  var variant: js.UndefOr["standard" | "dot"] = js.undefined
 }
 object AnchorOrigin {
   
@@ -84,7 +74,7 @@ object AnchorOrigin {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setColor(value: primary | secondary | default | error): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: "primary" | "secondary" | "default" | "error"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
@@ -96,7 +86,7 @@ object AnchorOrigin {
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    inline def setOverlap(value: rectangle | circle | rectangular | circular): Self = StObject.set(x, "overlap", value.asInstanceOf[js.Any])
+    inline def setOverlap(value: "rectangle" | "circle" | "rectangular" | "circular"): Self = StObject.set(x, "overlap", value.asInstanceOf[js.Any])
     
     inline def setOverlapUndefined: Self = StObject.set(x, "overlap", js.undefined)
     
@@ -104,7 +94,7 @@ object AnchorOrigin {
     
     inline def setShowZeroUndefined: Self = StObject.set(x, "showZero", js.undefined)
     
-    inline def setVariant(value: standard | dot): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "standard" | "dot"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

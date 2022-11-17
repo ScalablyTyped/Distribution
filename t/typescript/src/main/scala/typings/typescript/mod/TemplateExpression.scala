@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TemplateExpression
   extends StObject
-     with PrimaryExpression
-     with TemplateLiteral {
+     with PrimaryExpression {
   
   val head: TemplateHead = js.native
   

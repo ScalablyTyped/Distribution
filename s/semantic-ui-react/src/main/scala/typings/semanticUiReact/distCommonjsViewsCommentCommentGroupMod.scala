@@ -5,13 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
-import typings.semanticUiReact.semanticUiReactStrings.big
-import typings.semanticUiReact.semanticUiReactStrings.huge
-import typings.semanticUiReact.semanticUiReactStrings.large
-import typings.semanticUiReact.semanticUiReactStrings.massive
-import typings.semanticUiReact.semanticUiReactStrings.mini
-import typings.semanticUiReact.semanticUiReactStrings.small
-import typings.semanticUiReact.semanticUiReactStrings.tiny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +48,7 @@ object distCommonjsViewsCommentCommentGroupMod extends Shortcut {
     var minimal: js.UndefOr[Boolean] = js.undefined
     
     /** Comments can have different sizes. */
-    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.undefined
+    var size: js.UndefOr["mini" | "tiny" | "small" | "large" | "big" | "huge" | "massive"] = js.undefined
     
     /** A comment list can be threaded to showing the relationship between conversations */
     var threaded: js.UndefOr[Boolean] = js.undefined
@@ -93,7 +86,7 @@ object distCommonjsViewsCommentCommentGroupMod extends Shortcut {
       
       inline def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
       
-      inline def setSize(value: mini | tiny | small | large | big | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "mini" | "tiny" | "small" | "large" | "big" | "huge" | "massive"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

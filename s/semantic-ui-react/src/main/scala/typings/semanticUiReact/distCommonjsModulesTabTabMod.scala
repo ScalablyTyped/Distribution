@@ -10,8 +10,6 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.semanticUiReact.anon.MenuItem
 import typings.semanticUiReact.distCommonjsModulesTabTabPaneMod.TabPaneProps
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.right
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -48,7 +46,7 @@ object distCommonjsModulesTabTabMod extends Shortcut {
     var menu: js.UndefOr[Any] = js.undefined
     
     /** Align vertical menu */
-    var menuPosition: js.UndefOr[left | right] = js.undefined
+    var menuPosition: js.UndefOr["left" | "right"] = js.undefined
     
     /**
       * Called on tab change.
@@ -106,7 +104,7 @@ object distCommonjsModulesTabTabMod extends Shortcut {
       
       inline def setMenu(value: Any): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
-      inline def setMenuPosition(value: left | right): Self = StObject.set(x, "menuPosition", value.asInstanceOf[js.Any])
+      inline def setMenuPosition(value: "left" | "right"): Self = StObject.set(x, "menuPosition", value.asInstanceOf[js.Any])
       
       inline def setMenuPositionUndefined: Self = StObject.set(x, "menuPosition", js.undefined)
       

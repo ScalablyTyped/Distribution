@@ -1,15 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TypeParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TypeParameter_
   extends StObject
-     with BaseNode
-     with Flow
-     with Node {
+     with BaseNode {
   
   var default: js.UndefOr[FlowType | Null] = js.undefined
   
@@ -18,7 +15,7 @@ trait TypeParameter_
   var name: String
   
   @JSName("type")
-  var type_TypeParameter_ : TypeParameter
+  var type_TypeParameter_ : "TypeParameter"
   
   var variance: js.UndefOr[Variance_ | Null] = js.undefined
 }
@@ -46,7 +43,7 @@ object TypeParameter_ {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TypeParameter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TypeParameter"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setVariance(value: Variance_): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     

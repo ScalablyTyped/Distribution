@@ -16,5 +16,5 @@ trait WeakRef[T /* <: js.Object */] extends StObject {
   
   /* standard es2021.weakref */
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: typings.std.stdStrings.WeakRef = js.native
+  val toStringTag: "WeakRef" = js.native
 }

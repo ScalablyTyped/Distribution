@@ -1,7 +1,6 @@
 package typings.rcComponentPortal
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcComponentPortal.rcComponentPortalBooleans.`false`
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
@@ -19,7 +18,7 @@ object esPortalMod extends Shortcut {
   
   type ContainerType = Element | DocumentFragment
   
-  type GetContainer = String | ContainerType | js.Function0[ContainerType] | `false`
+  type GetContainer = String | ContainerType | js.Function0[ContainerType] | false
   
   trait PortalProps extends StObject {
     

@@ -14,13 +14,12 @@ object realpath {
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     path: PathLike,
-    options: BufferEncodingOption,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(
-    path: PathLike,
-    options: EncodingOption,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+    options: BufferEncodingOption | EncodingOption,
+    callback: js.Function2[
+      ErrnoException | Null, 
+      (/* resolvedPath */ Buffer) | (/* resolvedPath */ String), 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("fs", "realpath")
@@ -31,11 +30,6 @@ object realpath {
     path: PathLike,
     callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def native(
-    path: PathLike,
-    options: BufferEncodingOption,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Asynchronous [`realpath(3)`](http://man7.org/linux/man-pages/man3/realpath.3.html).
     *
@@ -55,7 +49,11 @@ object realpath {
     */
   inline def native(
     path: PathLike,
-    options: EncodingOption,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+    options: BufferEncodingOption | EncodingOption,
+    callback: js.Function2[
+      ErrnoException | Null, 
+      (/* resolvedPath */ Buffer) | (/* resolvedPath */ String), 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

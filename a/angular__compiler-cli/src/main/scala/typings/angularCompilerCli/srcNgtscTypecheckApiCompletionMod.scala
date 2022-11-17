@@ -34,23 +34,7 @@ object srcNgtscTypecheckApiCompletionMod {
     /* 1 */ val Variable: typings.angularCompilerCli.srcNgtscTypecheckApiCompletionMod.CompletionKind.Variable & Double = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.srcNgtscTypecheckApiCompletionMod.ReferenceCompletion
-    - typings.angularCompilerCli.srcNgtscTypecheckApiCompletionMod.VariableCompletion
-  */
-  trait Completion extends StObject
-  object Completion {
-    
-    inline def ReferenceCompletion(kind: Reference, node: TmplAstReference): typings.angularCompilerCli.srcNgtscTypecheckApiCompletionMod.ReferenceCompletion = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscTypecheckApiCompletionMod.ReferenceCompletion]
-    }
-    
-    inline def VariableCompletion(kind: Variable, node: TmplAstVariable): typings.angularCompilerCli.srcNgtscTypecheckApiCompletionMod.VariableCompletion = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscTypecheckApiCompletionMod.VariableCompletion]
-    }
-  }
+  type Completion = ReferenceCompletion | VariableCompletion
   
   trait GlobalCompletion extends StObject {
     
@@ -98,9 +82,7 @@ object srcNgtscTypecheckApiCompletionMod {
     }
   }
   
-  trait ReferenceCompletion
-    extends StObject
-       with Completion {
+  trait ReferenceCompletion extends StObject {
     
     var kind: Reference
     
@@ -124,9 +106,7 @@ object srcNgtscTypecheckApiCompletionMod {
     }
   }
   
-  trait VariableCompletion
-    extends StObject
-       with Completion {
+  trait VariableCompletion extends StObject {
     
     var kind: Variable
     

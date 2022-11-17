@@ -1,15 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.all_
-import typings.reactNative.reactNativeStrings.balanced
-import typings.reactNative.reactNativeStrings.email
-import typings.reactNative.reactNativeStrings.full
-import typings.reactNative.reactNativeStrings.highQuality
-import typings.reactNative.reactNativeStrings.link
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.normal_
-import typings.reactNative.reactNativeStrings.phoneNumber
-import typings.reactNative.reactNativeStrings.simple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,13 +9,13 @@ trait TextPropsAndroid extends StObject {
   /**
     * Hyphenation strategy
     */
-  var android_hyphenationFrequency: js.UndefOr[normal_ | none | full] = js.undefined
+  var android_hyphenationFrequency: js.UndefOr["normal" | "none" | "full"] = js.undefined
   
   /**
     * Determines the types of data converted to clickable URLs in the text element.
     * By default no data types are detected.
     */
-  var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all_] = js.undefined
+  var dataDetectorType: js.UndefOr[Null | "phoneNumber" | "link" | "email" | "none" | "all"] = js.undefined
   
   /**
     * Specifies the disabled state of the text view for testing purposes.
@@ -46,7 +36,7 @@ trait TextPropsAndroid extends StObject {
     * Set text break strategy on Android API Level 23+
     * default is `highQuality`.
     */
-  var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
+  var textBreakStrategy: js.UndefOr["simple" | "highQuality" | "balanced"] = js.undefined
 }
 object TextPropsAndroid {
   
@@ -57,11 +47,11 @@ object TextPropsAndroid {
   
   extension [Self <: TextPropsAndroid](x: Self) {
     
-    inline def setAndroid_hyphenationFrequency(value: normal_ | none | full): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
+    inline def setAndroid_hyphenationFrequency(value: "normal" | "none" | "full"): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
     
     inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
     
-    inline def setDataDetectorType(value: phoneNumber | link | email | none | all_): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
+    inline def setDataDetectorType(value: "phoneNumber" | "link" | "email" | "none" | "all"): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
     
     inline def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
     
@@ -79,7 +69,7 @@ object TextPropsAndroid {
     
     inline def setSelectionColorUndefined: Self = StObject.set(x, "selectionColor", js.undefined)
     
-    inline def setTextBreakStrategy(value: simple | highQuality | balanced): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
+    inline def setTextBreakStrategy(value: "simple" | "highQuality" | "balanced"): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
     
     inline def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
   }

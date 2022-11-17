@@ -1,22 +1,19 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.SwitchCase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SwitchCase_
   extends StObject
-     with BaseNode
-     with Node
-     with Standardized {
+     with BaseNode {
   
   var consequent: js.Array[Statement]
   
   var test: js.UndefOr[Expression | Null] = js.undefined
   
   @JSName("type")
-  var type_SwitchCase_ : SwitchCase
+  var type_SwitchCase_ : "SwitchCase"
 }
 object SwitchCase_ {
   
@@ -38,6 +35,6 @@ object SwitchCase_ {
     
     inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
-    inline def setType(value: SwitchCase): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "SwitchCase"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,22 +12,6 @@ import typings.node.nodeColonnetMod.Socket
 import typings.node.nodeColonstreamMod.Duplex
 import typings.node.nodeColontlsMod.TLSSocket
 import typings.node.nodeColonurlMod.URL
-import typings.node.nodeStrings.OCSPRequest
-import typings.node.nodeStrings.checkContinue
-import typings.node.nodeStrings.checkExpectation
-import typings.node.nodeStrings.clientError
-import typings.node.nodeStrings.close
-import typings.node.nodeStrings.connect
-import typings.node.nodeStrings.connection
-import typings.node.nodeStrings.error
-import typings.node.nodeStrings.keylog
-import typings.node.nodeStrings.listening
-import typings.node.nodeStrings.newSession
-import typings.node.nodeStrings.request
-import typings.node.nodeStrings.resumeSession
-import typings.node.nodeStrings.secureConnection
-import typings.node.nodeStrings.tlsClientError
-import typings.node.nodeStrings.upgrade
 import typings.node.tlsMod.CommonConnectionOptions
 import typings.node.tlsMod.PSKCallbackNegotation
 import typings.node.tlsMod.PeerCertificate
@@ -71,10 +55,59 @@ object httpsMod {
     def this(requestListener: RequestListener[Request, Response]) = this()
     def this(options: ServerOptions[Request, Response], requestListener: RequestListener[Request, Response]) = this()
     
-    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_OCSPRequest(
-      event: OCSPRequest,
+    @scala.annotation.targetName("addListener_listening")
+    def addListener(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_close")
+    def addListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_connection")
+    def addListener(event: "connection", listener: js.Function1[/* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_error")
+    def addListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_secureConnection")
+    def addListener(event: "secureConnection", listener: js.Function1[/* tlsSocket */ TLSSocket, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_tlsClientError")
+    def addListener(
+      event: "tlsClientError",
+      listener: js.Function2[/* err */ js.Error, /* tlsSocket */ TLSSocket, Unit]
+    ): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_keylog")
+    def addListener(event: "keylog", listener: js.Function2[/* line */ Buffer, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_resumeSession")
+    def addListener(
+      event: "resumeSession",
+      listener: js.Function2[
+          /* sessionId */ Buffer, 
+          /* callback */ js.Function2[/* err */ js.Error, /* sessionData */ Buffer, Unit], 
+          Unit
+        ]
+    ): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_clientError")
+    def addListener(event: "clientError", listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_connect")
+    def addListener(
+      event: "connect",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_upgrade")
+    def addListener(
+      event: "upgrade",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_OCSPRequest")
+    def addListener(
+      event: "OCSPRequest",
       listener: js.Function3[
           /* certificate */ Buffer, 
           /* issuer */ Buffer, 
@@ -83,29 +116,9 @@ object httpsMod {
         ]
     ): this.type = js.native
     @JSName("addListener")
-    def addListener_checkContinue(event: checkContinue, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("addListener")
-    def addListener_checkExpectation(event: checkExpectation, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("addListener")
-    def addListener_clientError(event: clientError, listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_connect(
-      event: connect,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
-    @JSName("addListener")
-    def addListener_connection(event: connection, listener: js.Function1[/* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_keylog(event: keylog, listener: js.Function2[/* line */ Buffer, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_newSession(
-      event: newSession,
+    @scala.annotation.targetName("addListener_newSession")
+    def addListener(
+      event: "newSession",
       listener: js.Function3[
           /* sessionId */ Buffer, 
           /* sessionData */ Buffer, 
@@ -114,25 +127,15 @@ object httpsMod {
         ]
     ): this.type = js.native
     @JSName("addListener")
-    def addListener_request(event: request, listener: RequestListener[Request, Response]): this.type = js.native
+    @scala.annotation.targetName("addListener_checkExpectation")
+    def addListener(event: "checkExpectation", listener: RequestListener[Request, Response]): this.type = js.native
     @JSName("addListener")
-    def addListener_resumeSession(
-      event: resumeSession,
-      listener: js.Function2[
-          /* sessionId */ Buffer, 
-          /* callback */ js.Function2[/* err */ js.Error, /* sessionData */ Buffer, Unit], 
-          Unit
-        ]
-    ): this.type = js.native
+    @scala.annotation.targetName("addListener_checkContinue")
+    def addListener(event: "checkContinue", listener: RequestListener[Request, Response]): this.type = js.native
     @JSName("addListener")
-    def addListener_secureConnection(event: secureConnection, listener: js.Function1[/* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_tlsClientError(event: tlsClientError, listener: js.Function2[/* err */ js.Error, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_upgrade(
-      event: upgrade,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
+    @scala.annotation.targetName("addListener_request")
+    def addListener(event: "request", listener: RequestListener[Request, Response]): this.type = js.native
+    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
     /**
       * Closes all connections connected to this server.
@@ -146,97 +149,211 @@ object httpsMod {
       */
     def closeIdleConnections(): Unit = js.native
     
-    def emit(event: String, args: Any*): Boolean = js.native
     @JSName("emit")
-    def emit_OCSPRequest(
-      event: OCSPRequest,
+    @scala.annotation.targetName("emit_listening")
+    def emit(event: "listening"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_close")
+    def emit(event: "close"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_OCSPRequest")
+    def emit(
+      event: "OCSPRequest",
       certificate: Buffer,
       issuer: Buffer,
       callback: js.Function2[/* err */ js.Error | Null, /* resp */ Buffer, Unit]
     ): Boolean = js.native
     @JSName("emit")
-    def emit_checkContinue(
-      event: checkContinue,
+    @scala.annotation.targetName("emit_error")
+    def emit(event: "error", err: js.Error): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_clientError")
+    def emit(event: "clientError", err: js.Error, socket: Duplex): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_tlsClientError")
+    def emit(event: "tlsClientError", err: js.Error, tlsSocket: TLSSocket): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_keylog")
+    def emit(event: "keylog", line: Buffer, tlsSocket: TLSSocket): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_checkExpectation")
+    def emit(
+      event: "checkExpectation",
       req: InstanceType[Request],
       res: InstanceType[Response] & ReqInstanceType[Request]
     ): Boolean = js.native
     @JSName("emit")
-    def emit_checkExpectation(
-      event: checkExpectation,
+    @scala.annotation.targetName("emit_checkContinue")
+    def emit(
+      event: "checkContinue",
       req: InstanceType[Request],
       res: InstanceType[Response] & ReqInstanceType[Request]
     ): Boolean = js.native
     @JSName("emit")
-    def emit_clientError(event: clientError, err: js.Error, socket: Duplex): Boolean = js.native
+    @scala.annotation.targetName("emit_request")
+    def emit(
+      event: "request",
+      req: InstanceType[Request],
+      res: InstanceType[Response] & ReqInstanceType[Request]
+    ): Boolean = js.native
     @JSName("emit")
-    def emit_close(event: close): Boolean = js.native
+    @scala.annotation.targetName("emit_upgrade")
+    def emit(event: "upgrade", req: InstanceType[Request], socket: Duplex, head: Buffer): Boolean = js.native
     @JSName("emit")
-    def emit_connect(event: connect, req: InstanceType[Request], socket: Duplex, head: Buffer): Boolean = js.native
+    @scala.annotation.targetName("emit_connect")
+    def emit(event: "connect", req: InstanceType[Request], socket: Duplex, head: Buffer): Boolean = js.native
     @JSName("emit")
-    def emit_connection(event: connection, socket: Duplex): Boolean = js.native
+    @scala.annotation.targetName("emit_resumeSession")
+    def emit(
+      event: "resumeSession",
+      sessionId: Buffer,
+      callback: js.Function2[/* err */ js.Error, /* sessionData */ Buffer, Unit]
+    ): Boolean = js.native
     @JSName("emit")
-    def emit_error(event: error, err: js.Error): Boolean = js.native
-    @JSName("emit")
-    def emit_keylog(event: keylog, line: Buffer, tlsSocket: TLSSocket): Boolean = js.native
-    @JSName("emit")
-    def emit_listening(event: listening): Boolean = js.native
-    @JSName("emit")
-    def emit_newSession(
-      event: newSession,
+    @scala.annotation.targetName("emit_newSession")
+    def emit(
+      event: "newSession",
       sessionId: Buffer,
       sessionData: Buffer,
       callback: js.Function2[/* err */ js.Error, /* resp */ Buffer, Unit]
     ): Boolean = js.native
     @JSName("emit")
-    def emit_request(event: request, req: InstanceType[Request], res: InstanceType[Response] & ReqInstanceType[Request]): Boolean = js.native
+    @scala.annotation.targetName("emit_connection")
+    def emit(event: "connection", socket: Duplex): Boolean = js.native
     @JSName("emit")
-    def emit_resumeSession(
-      event: resumeSession,
-      sessionId: Buffer,
-      callback: js.Function2[/* err */ js.Error, /* sessionData */ Buffer, Unit]
-    ): Boolean = js.native
-    @JSName("emit")
-    def emit_secureConnection(event: secureConnection, tlsSocket: TLSSocket): Boolean = js.native
-    @JSName("emit")
-    def emit_tlsClientError(event: tlsClientError, err: js.Error, tlsSocket: TLSSocket): Boolean = js.native
-    @JSName("emit")
-    def emit_upgrade(event: upgrade, req: InstanceType[Request], socket: Duplex, head: Buffer): Boolean = js.native
+    @scala.annotation.targetName("emit_secureConnection")
+    def emit(event: "secureConnection", tlsSocket: TLSSocket): Boolean = js.native
+    def emit(event: String, args: Any*): Boolean = js.native
     
+    @JSName("on")
+    @scala.annotation.targetName("on_close")
+    def on(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_listening")
+    def on(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_secureConnection")
+    def on(event: "secureConnection", listener: js.Function1[/* tlsSocket */ TLSSocket, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_error")
+    def on(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_connection")
+    def on(event: "connection", listener: js.Function1[/* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_resumeSession")
+    def on(
+      event: "resumeSession",
+      listener: js.Function2[
+          /* sessionId */ Buffer, 
+          /* callback */ js.Function2[/* err */ js.Error, /* sessionData */ Buffer, Unit], 
+          Unit
+        ]
+    ): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_tlsClientError")
+    def on(
+      event: "tlsClientError",
+      listener: js.Function2[/* err */ js.Error, /* tlsSocket */ TLSSocket, Unit]
+    ): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_clientError")
+    def on(event: "clientError", listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_keylog")
+    def on(event: "keylog", listener: js.Function2[/* line */ Buffer, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_upgrade")
+    def on(
+      event: "upgrade",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_OCSPRequest")
+    def on(
+      event: "OCSPRequest",
+      listener: js.Function3[
+          /* certificate */ Buffer, 
+          /* issuer */ Buffer, 
+          /* callback */ js.Function2[/* err */ js.Error | Null, /* resp */ Buffer, Unit], 
+          Unit
+        ]
+    ): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_connect")
+    def on(
+      event: "connect",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_newSession")
+    def on(
+      event: "newSession",
+      listener: js.Function3[
+          /* sessionId */ Buffer, 
+          /* sessionData */ Buffer, 
+          /* callback */ js.Function2[/* err */ js.Error, /* resp */ Buffer, Unit], 
+          Unit
+        ]
+    ): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_checkExpectation")
+    def on(event: "checkExpectation", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_request")
+    def on(event: "request", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_checkContinue")
+    def on(event: "checkContinue", listener: RequestListener[Request, Response]): this.type = js.native
     def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_OCSPRequest(
-      event: OCSPRequest,
-      listener: js.Function3[
-          /* certificate */ Buffer, 
-          /* issuer */ Buffer, 
-          /* callback */ js.Function2[/* err */ js.Error | Null, /* resp */ Buffer, Unit], 
+    
+    @JSName("once")
+    @scala.annotation.targetName("once_listening")
+    def once(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_close")
+    def once(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_secureConnection")
+    def once(event: "secureConnection", listener: js.Function1[/* tlsSocket */ TLSSocket, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_connection")
+    def once(event: "connection", listener: js.Function1[/* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_error")
+    def once(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_resumeSession")
+    def once(
+      event: "resumeSession",
+      listener: js.Function2[
+          /* sessionId */ Buffer, 
+          /* callback */ js.Function2[/* err */ js.Error, /* sessionData */ Buffer, Unit], 
           Unit
         ]
     ): this.type = js.native
-    @JSName("on")
-    def on_checkContinue(event: checkContinue, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("on")
-    def on_checkExpectation(event: checkExpectation, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("on")
-    def on_clientError(event: clientError, listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_connect(
-      event: connect,
+    @JSName("once")
+    @scala.annotation.targetName("once_clientError")
+    def once(event: "clientError", listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_keylog")
+    def once(event: "keylog", listener: js.Function2[/* line */ Buffer, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_tlsClientError")
+    def once(
+      event: "tlsClientError",
+      listener: js.Function2[/* err */ js.Error, /* tlsSocket */ TLSSocket, Unit]
+    ): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_connect")
+    def once(
+      event: "connect",
       listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
     ): this.type = js.native
-    @JSName("on")
-    def on_connection(event: connection, listener: js.Function1[/* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_keylog(event: keylog, listener: js.Function2[/* line */ Buffer, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("on")
-    def on_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_newSession(
-      event: newSession,
+    @JSName("once")
+    @scala.annotation.targetName("once_newSession")
+    def once(
+      event: "newSession",
       listener: js.Function3[
           /* sessionId */ Buffer, 
           /* sessionData */ Buffer, 
@@ -244,31 +361,81 @@ object httpsMod {
           Unit
         ]
     ): this.type = js.native
-    @JSName("on")
-    def on_request(event: request, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("on")
-    def on_resumeSession(
-      event: resumeSession,
-      listener: js.Function2[
-          /* sessionId */ Buffer, 
-          /* callback */ js.Function2[/* err */ js.Error, /* sessionData */ Buffer, Unit], 
+    @JSName("once")
+    @scala.annotation.targetName("once_upgrade")
+    def once(
+      event: "upgrade",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_OCSPRequest")
+    def once(
+      event: "OCSPRequest",
+      listener: js.Function3[
+          /* certificate */ Buffer, 
+          /* issuer */ Buffer, 
+          /* callback */ js.Function2[/* err */ js.Error | Null, /* resp */ Buffer, Unit], 
           Unit
         ]
     ): this.type = js.native
-    @JSName("on")
-    def on_secureConnection(event: secureConnection, listener: js.Function1[/* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("on")
-    def on_tlsClientError(event: tlsClientError, listener: js.Function2[/* err */ js.Error, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("on")
-    def on_upgrade(
-      event: upgrade,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
-    
+    @JSName("once")
+    @scala.annotation.targetName("once_checkContinue")
+    def once(event: "checkContinue", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_checkExpectation")
+    def once(event: "checkExpectation", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_request")
+    def once(event: "request", listener: RequestListener[Request, Response]): this.type = js.native
     def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_OCSPRequest(
-      event: OCSPRequest,
+    
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_close")
+    def prependListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_listening")
+    def prependListener(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_connection")
+    def prependListener(event: "connection", listener: js.Function1[/* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_secureConnection")
+    def prependListener(event: "secureConnection", listener: js.Function1[/* tlsSocket */ TLSSocket, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_error")
+    def prependListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_clientError")
+    def prependListener(event: "clientError", listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_tlsClientError")
+    def prependListener(
+      event: "tlsClientError",
+      listener: js.Function2[/* err */ js.Error, /* tlsSocket */ TLSSocket, Unit]
+    ): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_resumeSession")
+    def prependListener(
+      event: "resumeSession",
+      listener: js.Function2[
+          /* sessionId */ Buffer, 
+          /* callback */ js.Function2[/* err */ js.Error, /* sessionData */ Buffer, Unit], 
+          Unit
+        ]
+    ): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_keylog")
+    def prependListener(event: "keylog", listener: js.Function2[/* line */ Buffer, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_upgrade")
+    def prependListener(
+      event: "upgrade",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_OCSPRequest")
+    def prependListener(
+      event: "OCSPRequest",
       listener: js.Function3[
           /* certificate */ Buffer, 
           /* issuer */ Buffer, 
@@ -276,30 +443,16 @@ object httpsMod {
           Unit
         ]
     ): this.type = js.native
-    @JSName("once")
-    def once_checkContinue(event: checkContinue, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("once")
-    def once_checkExpectation(event: checkExpectation, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("once")
-    def once_clientError(event: clientError, listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("once")
-    def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_connect(
-      event: connect,
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_connect")
+    def prependListener(
+      event: "connect",
       listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
     ): this.type = js.native
-    @JSName("once")
-    def once_connection(event: connection, listener: js.Function1[/* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("once")
-    def once_keylog(event: keylog, listener: js.Function2[/* line */ Buffer, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("once")
-    def once_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_newSession(
-      event: newSession,
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_newSession")
+    def prependListener(
+      event: "newSession",
       listener: js.Function3[
           /* sessionId */ Buffer, 
           /* sessionData */ Buffer, 
@@ -307,94 +460,58 @@ object httpsMod {
           Unit
         ]
     ): this.type = js.native
-    @JSName("once")
-    def once_request(event: request, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("once")
-    def once_resumeSession(
-      event: resumeSession,
-      listener: js.Function2[
-          /* sessionId */ Buffer, 
-          /* callback */ js.Function2[/* err */ js.Error, /* sessionData */ Buffer, Unit], 
-          Unit
-        ]
-    ): this.type = js.native
-    @JSName("once")
-    def once_secureConnection(event: secureConnection, listener: js.Function1[/* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("once")
-    def once_tlsClientError(event: tlsClientError, listener: js.Function2[/* err */ js.Error, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("once")
-    def once_upgrade(
-      event: upgrade,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
-    
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_checkContinue")
+    def prependListener(event: "checkContinue", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_checkExpectation")
+    def prependListener(event: "checkExpectation", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_request")
+    def prependListener(event: "request", listener: RequestListener[Request, Response]): this.type = js.native
     def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_OCSPRequest(
-      event: OCSPRequest,
-      listener: js.Function3[
-          /* certificate */ Buffer, 
-          /* issuer */ Buffer, 
-          /* callback */ js.Function2[/* err */ js.Error | Null, /* resp */ Buffer, Unit], 
-          Unit
-        ]
-    ): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_checkContinue(event: checkContinue, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_checkExpectation(event: checkExpectation, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_clientError(event: clientError, listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_connect(
-      event: connect,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_connection(event: connection, listener: js.Function1[/* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_keylog(event: keylog, listener: js.Function2[/* line */ Buffer, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_newSession(
-      event: newSession,
-      listener: js.Function3[
-          /* sessionId */ Buffer, 
-          /* sessionData */ Buffer, 
-          /* callback */ js.Function2[/* err */ js.Error, /* resp */ Buffer, Unit], 
-          Unit
-        ]
-    ): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_request(event: request, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_resumeSession(
-      event: resumeSession,
-      listener: js.Function2[
-          /* sessionId */ Buffer, 
-          /* callback */ js.Function2[/* err */ js.Error, /* sessionData */ Buffer, Unit], 
-          Unit
-        ]
-    ): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_secureConnection(event: secureConnection, listener: js.Function1[/* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_tlsClientError(event: tlsClientError, listener: js.Function2[/* err */ js.Error, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_upgrade(
-      event: upgrade,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
     
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_OCSPRequest(
-      event: OCSPRequest,
+    @scala.annotation.targetName("prependOnceListener_listening")
+    def prependOnceListener(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_close")
+    def prependOnceListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_connection")
+    def prependOnceListener(event: "connection", listener: js.Function1[/* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_error")
+    def prependOnceListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_secureConnection")
+    def prependOnceListener(event: "secureConnection", listener: js.Function1[/* tlsSocket */ TLSSocket, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_clientError")
+    def prependOnceListener(event: "clientError", listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_keylog")
+    def prependOnceListener(event: "keylog", listener: js.Function2[/* line */ Buffer, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_resumeSession")
+    def prependOnceListener(
+      event: "resumeSession",
+      listener: js.Function2[
+          /* sessionId */ Buffer, 
+          /* callback */ js.Function2[/* err */ js.Error, /* sessionData */ Buffer, Unit], 
+          Unit
+        ]
+    ): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_tlsClientError")
+    def prependOnceListener(
+      event: "tlsClientError",
+      listener: js.Function2[/* err */ js.Error, /* tlsSocket */ TLSSocket, Unit]
+    ): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_OCSPRequest")
+    def prependOnceListener(
+      event: "OCSPRequest",
       listener: js.Function3[
           /* certificate */ Buffer, 
           /* issuer */ Buffer, 
@@ -403,29 +520,9 @@ object httpsMod {
         ]
     ): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_checkContinue(event: checkContinue, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_checkExpectation(event: checkExpectation, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_clientError(event: clientError, listener: js.Function2[/* err */ js.Error, /* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_connect(
-      event: connect,
-      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
-    ): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_connection(event: connection, listener: js.Function1[/* socket */ Duplex, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_keylog(event: keylog, listener: js.Function2[/* line */ Buffer, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_newSession(
-      event: newSession,
+    @scala.annotation.targetName("prependOnceListener_newSession")
+    def prependOnceListener(
+      event: "newSession",
       listener: js.Function3[
           /* sessionId */ Buffer, 
           /* sessionData */ Buffer, 
@@ -434,25 +531,27 @@ object httpsMod {
         ]
     ): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_request(event: request, listener: RequestListener[Request, Response]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_resumeSession(
-      event: resumeSession,
-      listener: js.Function2[
-          /* sessionId */ Buffer, 
-          /* callback */ js.Function2[/* err */ js.Error, /* sessionData */ Buffer, Unit], 
-          Unit
-        ]
-    ): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_secureConnection(event: secureConnection, listener: js.Function1[/* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_tlsClientError(event: tlsClientError, listener: js.Function2[/* err */ js.Error, /* tlsSocket */ TLSSocket, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_upgrade(
-      event: upgrade,
+    @scala.annotation.targetName("prependOnceListener_upgrade")
+    def prependOnceListener(
+      event: "upgrade",
       listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
     ): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_connect")
+    def prependOnceListener(
+      event: "connect",
+      listener: js.Function3[/* req */ InstanceType[Request], /* socket */ Duplex, /* head */ Buffer, Unit]
+    ): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_checkContinue")
+    def prependOnceListener(event: "checkContinue", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_checkExpectation")
+    def prependOnceListener(event: "checkExpectation", listener: RequestListener[Request, Response]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_request")
+    def prependOnceListener(event: "request", listener: RequestListener[Request, Response]): this.type = js.native
+    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   }
   
   /**

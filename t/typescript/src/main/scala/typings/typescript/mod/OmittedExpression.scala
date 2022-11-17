@@ -7,10 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OmittedExpression
   extends StObject
-     with Expression
-     with ArrayBindingElement
-     with BindingOrAssignmentElementTarget
-     with _ArrayBindingOrAssignmentElement {
+     with Expression {
   
   @JSName("kind")
   val kind_OmittedExpression: typings.typescript.mod.SyntaxKind.OmittedExpression = js.native

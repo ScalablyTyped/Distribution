@@ -1,6 +1,5 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,5 +17,5 @@ trait ComponentDefFeature extends StObject {
     * identifying the change as a side effect, and the feature will be included in
     * every bundle.
     */
-  var ngInherit: js.UndefOr[`true`] = js.native
+  var ngInherit: js.UndefOr[true] = js.native
 }

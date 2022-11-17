@@ -81,6 +81,13 @@ trait TNode extends StObject {
   var classesWithoutHost: String | Null
   
   /**
+    * Offset from the `directiveStart` at which the component (one at most) of the node is stored.
+    * Set to -1 if no components have been applied to the node. Component index can be found using
+    * `directiveStart + componentOffset`.
+    */
+  var componentOffset: Double
+  
+  /**
     * Stores final exclusive index of the directives.
     *
     * The area right behind the `directiveStart-directiveEnd` range is used to allocate the
@@ -89,11 +96,7 @@ trait TNode extends StObject {
     */
   var directiveEnd: Double
   
-  /**
-    * Stores starting index of the directives.
-    *
-    * NOTE: The first directive is always component (if present).
-    */
+  /** Stores starting index of the directives. */
   var directiveStart: Double
   
   /**
@@ -448,6 +451,7 @@ object TNode {
   
   inline def apply(
     classBindings: TStylingRange,
+    componentOffset: Double,
     directiveEnd: Double,
     directiveStart: Double,
     directiveStylingLast: Double,
@@ -459,7 +463,7 @@ object TNode {
     `type`: TNodeType,
     value: Any
   ): TNode = {
-    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, child = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, projection = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null, tViews = null)
+    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], componentOffset = componentOffset.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, child = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, projection = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null, tViews = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TNode]
   }
@@ -485,6 +489,8 @@ object TNode {
     inline def setClassesWithoutHost(value: String): Self = StObject.set(x, "classesWithoutHost", value.asInstanceOf[js.Any])
     
     inline def setClassesWithoutHostNull: Self = StObject.set(x, "classesWithoutHost", null)
+    
+    inline def setComponentOffset(value: Double): Self = StObject.set(x, "componentOffset", value.asInstanceOf[js.Any])
     
     inline def setDirectiveEnd(value: Double): Self = StObject.set(x, "directiveEnd", value.asInstanceOf[js.Any])
     

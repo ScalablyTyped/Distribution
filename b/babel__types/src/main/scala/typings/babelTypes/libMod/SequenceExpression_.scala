@@ -1,21 +1,17 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.SequenceExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SequenceExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with Node
-     with Standardized {
+     with BaseNode {
   
   var expressions: js.Array[Expression]
   
   @JSName("type")
-  var type_SequenceExpression_ : SequenceExpression
+  var type_SequenceExpression_ : "SequenceExpression"
 }
 object SequenceExpression_ {
   
@@ -31,6 +27,6 @@ object SequenceExpression_ {
     
     inline def setExpressionsVarargs(value: Expression*): Self = StObject.set(x, "expressions", js.Array(value*))
     
-    inline def setType(value: SequenceExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "SequenceExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

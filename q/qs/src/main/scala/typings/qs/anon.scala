@@ -1,11 +1,6 @@
 package typings.qs
 
 import typings.qs.mod.defaultDecoder
-import typings.qs.qsBooleans.`false`
-import typings.qs.qsStrings.`iso-8859-1`
-import typings.qs.qsStrings.`utf-8`
-import typings.qs.qsStrings.key
-import typings.qs.qsStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +16,7 @@ object anon {
     
     var arrayLimit: js.UndefOr[Double] = js.undefined
     
-    var charset: js.UndefOr[`utf-8` | `iso-8859-1`] = js.undefined
+    var charset: js.UndefOr["utf-8" | "iso-8859-1"] = js.undefined
     
     var charsetSentinel: js.UndefOr[Boolean] = js.undefined
     
@@ -32,14 +27,14 @@ object anon {
           /* str */ String, 
           /* defaultDecoder */ defaultDecoder, 
           /* charset */ String, 
-          /* type */ key | value, 
+          /* type */ "key" | "value", 
           Any
         ]
       ]) & js.UndefOr[scala.Nothing]
     
     var delimiter: js.UndefOr[String | js.RegExp] = js.undefined
     
-    var depth: js.UndefOr[Double | `false`] = js.undefined
+    var depth: js.UndefOr[Double | false] = js.undefined
     
     var ignoreQueryPrefix: js.UndefOr[Boolean] = js.undefined
     
@@ -61,7 +56,7 @@ object anon {
             /* str */ String, 
             /* defaultDecoder */ defaultDecoder, 
             /* charset */ String, 
-            /* type */ key | value, 
+            /* type */ "key" | "value", 
             Any
           ]
         ]) & js.UndefOr[scala.Nothing]
@@ -84,7 +79,7 @@ object anon {
       
       inline def setArrayLimitUndefined: Self = StObject.set(x, "arrayLimit", js.undefined)
       
-      inline def setCharset(value: `utf-8` | `iso-8859-1`): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: "utf-8" | "iso-8859-1"): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
       inline def setCharsetSentinel(value: Boolean): Self = StObject.set(x, "charsetSentinel", value.asInstanceOf[js.Any])
       
@@ -102,7 +97,7 @@ object anon {
                 /* str */ String, 
                 /* defaultDecoder */ defaultDecoder, 
                 /* charset */ String, 
-                /* type */ key | value, 
+                /* type */ "key" | "value", 
                 Any
               ]
             ]) & js.UndefOr[scala.Nothing]
@@ -112,7 +107,7 @@ object anon {
       
       inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      inline def setDepth(value: Double | `false`): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double | false): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
       inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       

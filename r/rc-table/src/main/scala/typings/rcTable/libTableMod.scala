@@ -23,8 +23,6 @@ import typings.rcTable.libInterfaceMod.TableLayout
 import typings.rcTable.libInterfaceMod.TableSticky
 import typings.rcTable.libSugarColumnGroupMod.ColumnGroupProps
 import typings.rcTable.libSugarColumnMod.ColumnProps
-import typings.rcTable.rcTableStrings.ltr
-import typings.rcTable.rcTableStrings.rtl
 import typings.react.mod.CSSProperties
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactElement
@@ -123,7 +121,7 @@ object libTableMod {
     
     var defaultExpandedRowKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var emptyText: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.undefined
     
@@ -248,7 +246,7 @@ object libTableMod {
       
       inline def setDefaultExpandedRowKeysVarargs(value: Key*): Self = StObject.set(x, "defaultExpandedRowKeys", js.Array(value*))
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       

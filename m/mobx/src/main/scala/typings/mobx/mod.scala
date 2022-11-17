@@ -497,7 +497,8 @@ object mod {
   
   inline def ownKeys(obj: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ownKeys")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def reaction_true[T, FireImmediately /* <: Boolean */](
+  @scala.annotation.targetName("reaction_true")
+  inline def reaction[T, FireImmediately /* <: Boolean */](
     expression: js.Function1[/* r */ IReactionPublic, T],
     effect: js.Function3[
       /* arg */ T, 
@@ -506,7 +507,8 @@ object mod {
       Unit
     ]
   ): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("reaction")(expression.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]
-  inline def reaction_true[T, FireImmediately /* <: Boolean */](
+  @scala.annotation.targetName("reaction_true")
+  inline def reaction[T, FireImmediately /* <: Boolean */](
     expression: js.Function1[/* r */ IReactionPublic, T],
     effect: js.Function3[
       /* arg */ T, 

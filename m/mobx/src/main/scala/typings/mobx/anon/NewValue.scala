@@ -1,7 +1,6 @@
 package typings.mobx.anon
 
 import typings.mobx.distTypesObservablemapMod.ObservableMap
-import typings.mobx.mobxStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ trait NewValue[K, V] extends StObject {
   
   var oldValue: V
   
-  var `type`: update
+  var `type`: "update"
 }
 object NewValue {
   
@@ -37,6 +36,6 @@ object NewValue {
     
     inline def setOldValue(value: V): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    inline def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "update"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NullLiteral
   extends StObject
-     with PrimaryExpression
-     with JsonObjectExpression {
+     with PrimaryExpression {
   
   @JSName("kind")
   val kind_NullLiteral: NullKeyword = js.native

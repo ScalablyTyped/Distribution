@@ -10,8 +10,6 @@ trait DefaultEncapsulation extends StObject {
   
   var defaultEncapsulation: js.UndefOr[ViewEncapsulation] = js.undefined
   
-  var jitDevMode: js.UndefOr[Boolean] = js.undefined
-  
   var missingTranslation: js.UndefOr[MissingTranslationStrategy | Null] = js.undefined
   
   var preserveWhitespaces: js.UndefOr[Boolean] = js.undefined
@@ -32,10 +30,6 @@ object DefaultEncapsulation {
     inline def setDefaultEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "defaultEncapsulation", value.asInstanceOf[js.Any])
     
     inline def setDefaultEncapsulationUndefined: Self = StObject.set(x, "defaultEncapsulation", js.undefined)
-    
-    inline def setJitDevMode(value: Boolean): Self = StObject.set(x, "jitDevMode", value.asInstanceOf[js.Any])
-    
-    inline def setJitDevModeUndefined: Self = StObject.set(x, "jitDevMode", js.undefined)
     
     inline def setMissingTranslation(value: MissingTranslationStrategy): Self = StObject.set(x, "missingTranslation", value.asInstanceOf[js.Any])
     

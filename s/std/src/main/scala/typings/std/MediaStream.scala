@@ -1,7 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.addtrack
-import typings.std.stdStrings.removetrack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,44 +8,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MediaStream
   extends StObject
-     with EventTarget
-     with MediaProvider {
+     with EventTarget {
   
   /* standard dom */
   val active: scala.Boolean = js.native
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_addtrack(
-    `type`: addtrack,
+  @scala.annotation.targetName("addEventListener_addtrack")
+  def addEventListener(
+    `type`: "addtrack",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_addtrack(
-    `type`: addtrack,
+  @scala.annotation.targetName("addEventListener_removetrack")
+  def addEventListener(
+    `type`: "removetrack",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_addtrack")
+  def addEventListener(
+    `type`: "addtrack",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_addtrack(
-    `type`: addtrack,
+  @scala.annotation.targetName("addEventListener_removetrack")
+  def addEventListener(
+    `type`: "removetrack",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_addtrack")
+  def addEventListener(
+    `type`: "addtrack",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_removetrack(
-    `type`: removetrack,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_removetrack(
-    `type`: removetrack,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_removetrack(
-    `type`: removetrack,
+  @scala.annotation.targetName("addEventListener_removetrack")
+  def addEventListener(
+    `type`: "removetrack",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -76,38 +79,44 @@ trait MediaStream
   /* standard dom */
   var onremovetrack: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any]) | Null = js.native
   
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_removetrack")
+  def removeEventListener(
+    `type`: "removetrack",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any]
+  ): Unit = js.native
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_addtrack(
-    `type`: addtrack,
+  @scala.annotation.targetName("removeEventListener_addtrack")
+  def removeEventListener(
+    `type`: "addtrack",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_addtrack(
-    `type`: addtrack,
+  @scala.annotation.targetName("removeEventListener_removetrack")
+  def removeEventListener(
+    `type`: "removetrack",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_addtrack(
-    `type`: addtrack,
+  @scala.annotation.targetName("removeEventListener_addtrack")
+  def removeEventListener(
+    `type`: "addtrack",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_removetrack")
+  def removeEventListener(
+    `type`: "removetrack",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_removetrack(
-    `type`: removetrack,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_removetrack(
-    `type`: removetrack,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_removetrack(
-    `type`: removetrack,
+  @scala.annotation.targetName("removeEventListener_addtrack")
+  def removeEventListener(
+    `type`: "addtrack",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native

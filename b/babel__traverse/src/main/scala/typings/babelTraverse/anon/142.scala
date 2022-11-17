@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.EmptyTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `142` extends StObject {
   
-  var `type`: EmptyTypeAnnotation
+  var `type`: "EmptyTypeAnnotation"
 }
 object `142` {
   
@@ -19,6 +18,6 @@ object `142` {
   
   extension [Self <: `142`](x: Self) {
     
-    inline def setType(value: EmptyTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "EmptyTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

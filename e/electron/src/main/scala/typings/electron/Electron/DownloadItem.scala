@@ -1,11 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.cancelled
-import typings.electron.electronStrings.completed
-import typings.electron.electronStrings.done
-import typings.electron.electronStrings.interrupted
-import typings.electron.electronStrings.progressing
-import typings.electron.electronStrings.updated
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,13 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DownloadItem extends EventEmitter {
   
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_updated_progressing_interrupted")
   def addListener(
-    event: done,
-    listener: js.Function2[/* event */ Event, /* state */ completed | cancelled | interrupted, Unit]
+    event: "updated",
+    listener: js.Function2[/* event */ Event, /* state */ "progressing" | "interrupted", Unit]
   ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_done_completed_cancelled_interrupted")
   def addListener(
-    event: updated,
-    listener: js.Function2[/* event */ Event, /* state */ progressing | interrupted, Unit]
+    event: "done",
+    listener: js.Function2[/* event */ Event, /* state */ "completed" | "cancelled" | "interrupted", Unit]
   ): this.type = js.native
   
   /**
@@ -92,7 +90,7 @@ trait DownloadItem extends EventEmitter {
     * **Note:** The following methods are useful specifically to resume a `cancelled`
     * item when session is restarted.
     */
-  def getState(): progressing | completed | cancelled | interrupted = js.native
+  def getState(): "progressing" | "completed" | "cancelled" | "interrupted" = js.native
   
   /**
     * The total size in bytes of the download item.
@@ -133,9 +131,11 @@ trait DownloadItem extends EventEmitter {
     * * `cancelled` - The download has been cancelled.
     * * `interrupted` - The download has interrupted and can not resume.
     */
+  @JSName("on")
+  @scala.annotation.targetName("on_done_completed_cancelled_interrupted")
   def on(
-    event: done,
-    listener: js.Function2[/* event */ Event, /* state */ completed | cancelled | interrupted, Unit]
+    event: "done",
+    listener: js.Function2[/* event */ Event, /* state */ "completed" | "cancelled" | "interrupted", Unit]
   ): this.type = js.native
   /**
     * Emitted when the download has been updated and is not done.
@@ -145,18 +145,24 @@ trait DownloadItem extends EventEmitter {
     * * `progressing` - The download is in-progress.
     * * `interrupted` - The download has interrupted and can be resumed.
     */
+  @JSName("on")
+  @scala.annotation.targetName("on_updated_progressing_interrupted")
   def on(
-    event: updated,
-    listener: js.Function2[/* event */ Event, /* state */ progressing | interrupted, Unit]
+    event: "updated",
+    listener: js.Function2[/* event */ Event, /* state */ "progressing" | "interrupted", Unit]
   ): this.type = js.native
   
+  @JSName("once")
+  @scala.annotation.targetName("once_updated_progressing_interrupted")
   def once(
-    event: done,
-    listener: js.Function2[/* event */ Event, /* state */ completed | cancelled | interrupted, Unit]
+    event: "updated",
+    listener: js.Function2[/* event */ Event, /* state */ "progressing" | "interrupted", Unit]
   ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_done_completed_cancelled_interrupted")
   def once(
-    event: updated,
-    listener: js.Function2[/* event */ Event, /* state */ progressing | interrupted, Unit]
+    event: "done",
+    listener: js.Function2[/* event */ Event, /* state */ "completed" | "cancelled" | "interrupted", Unit]
   ): this.type = js.native
   
   /**
@@ -164,13 +170,17 @@ trait DownloadItem extends EventEmitter {
     */
   def pause(): Unit = js.native
   
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_done_completed_cancelled_interrupted")
   def removeListener(
-    event: done,
-    listener: js.Function2[/* event */ Event, /* state */ completed | cancelled | interrupted, Unit]
+    event: "done",
+    listener: js.Function2[/* event */ Event, /* state */ "completed" | "cancelled" | "interrupted", Unit]
   ): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_updated_progressing_interrupted")
   def removeListener(
-    event: updated,
-    listener: js.Function2[/* event */ Event, /* state */ progressing | interrupted, Unit]
+    event: "updated",
+    listener: js.Function2[/* event */ Event, /* state */ "progressing" | "interrupted", Unit]
   ): this.type = js.native
   
   /**

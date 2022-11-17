@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PropertyAccessEntityNameExpression
   extends StObject
-     with PropertyAccessExpression
-     with EntityNameExpression {
+     with PropertyAccessExpression {
   
   var _propertyAccessExpressionLikeQualifiedNameBrand: js.UndefOr[Any] = js.native
   

@@ -7,10 +7,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VariableSymbol
-  extends StObject
-     with Symbol
-     with TemplateDeclarationSymbol {
+trait VariableSymbol extends StObject {
   
   /**
     * The node in the `TemplateAst` where the variable is declared. That is, the node for the `let-`

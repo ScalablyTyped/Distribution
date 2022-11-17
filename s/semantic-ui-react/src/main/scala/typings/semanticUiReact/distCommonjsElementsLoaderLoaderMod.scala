@@ -6,7 +6,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticSIZES
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
-import typings.semanticUiReact.semanticUiReactStrings.centered
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +52,7 @@ object distCommonjsElementsLoaderLoaderMod extends Shortcut {
     var indeterminate: js.UndefOr[Boolean] = js.undefined
     
     /** Loaders can appear inline with content. */
-    var `inline`: js.UndefOr[Boolean | centered] = js.undefined
+    var `inline`: js.UndefOr[Boolean | "centered"] = js.undefined
     
     /** Loaders can have their colors inverted. */
     var inverted: js.UndefOr[Boolean] = js.undefined
@@ -98,7 +97,7 @@ object distCommonjsElementsLoaderLoaderMod extends Shortcut {
       
       inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
       
-      inline def setInline(value: Boolean | centered): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean | "centered"): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       

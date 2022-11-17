@@ -1,20 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSTypeParameterDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSTypeParameterDeclaration_
+trait TSTypeParameterDeclaration_
   extends StObject
-     with BaseNode
-     with TypeScript {
+     with BaseNode {
   
   var params: js.Array[TSTypeParameter_]
   
   @JSName("type")
-  var type_TSTypeParameterDeclaration_ : TSTypeParameterDeclaration
+  var type_TSTypeParameterDeclaration_ : "TSTypeParameterDeclaration"
 }
 object TSTypeParameterDeclaration_ {
   
@@ -30,6 +27,6 @@ object TSTypeParameterDeclaration_ {
     
     inline def setParamsVarargs(value: TSTypeParameter_ *): Self = StObject.set(x, "params", js.Array(value*))
     
-    inline def setType(value: TSTypeParameterDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSTypeParameterDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

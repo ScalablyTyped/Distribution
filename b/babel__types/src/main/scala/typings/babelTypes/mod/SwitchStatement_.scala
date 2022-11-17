@@ -1,25 +1,19 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.SwitchStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait SwitchStatement_
+trait SwitchStatement_
   extends StObject
-     with BaseNode
-     with BlockParent
-     with Scopable
-     with Standardized
-     with Statement {
+     with BaseNode {
   
   var cases: js.Array[SwitchCase_]
   
   var discriminant: Expression
   
   @JSName("type")
-  var type_SwitchStatement_ : SwitchStatement
+  var type_SwitchStatement_ : "SwitchStatement"
 }
 object SwitchStatement_ {
   
@@ -37,6 +31,6 @@ object SwitchStatement_ {
     
     inline def setDiscriminant(value: Expression): Self = StObject.set(x, "discriminant", value.asInstanceOf[js.Any])
     
-    inline def setType(value: SwitchStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "SwitchStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

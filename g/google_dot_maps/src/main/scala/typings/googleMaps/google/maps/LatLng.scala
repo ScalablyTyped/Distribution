@@ -1,6 +1,5 @@
 package typings.googleMaps.google.maps
 
-import typings.googleMaps.google.maps.places._LocationBias
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * google.maps.LatLng(new google.maps.LatLng(-34, 151), null, true); </pre>
   */
 @js.native
-trait LatLng
-  extends StObject
-     with _LocationBias {
+trait LatLng extends StObject {
   
   /**
     * Comparison function.

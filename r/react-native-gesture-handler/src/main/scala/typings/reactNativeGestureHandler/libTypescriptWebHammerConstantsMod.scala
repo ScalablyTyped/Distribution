@@ -1,6 +1,5 @@
 package typings.reactNativeGestureHandler
 
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,19 +68,19 @@ object libTypescriptWebHammerConstantsMod {
     
     @JSImport("react-native-gesture-handler/lib/typescript/web_hammer/constants", "EventMap.1")
     @js.native
-    val `1`: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2` = js.native
+    val `1`: 2 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/web_hammer/constants", "EventMap.2")
     @js.native
-    val `2`: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4` = js.native
+    val `2`: 4 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/web_hammer/constants", "EventMap.4")
     @js.native
-    val `4`: `5` = js.native
+    val `4`: 5 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/web_hammer/constants", "EventMap.8")
     @js.native
-    val `8`: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1` = js.native
+    val `8`: 1 = js.native
   }
   
   object HammerDirectionNames {

@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSConstructSignatureDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `122` extends StObject {
   
-  var `type`: TSConstructSignatureDeclaration
+  var `type`: "TSConstructSignatureDeclaration"
 }
 object `122` {
   
@@ -19,6 +18,6 @@ object `122` {
   
   extension [Self <: `122`](x: Self) {
     
-    inline def setType(value: TSConstructSignatureDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSConstructSignatureDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

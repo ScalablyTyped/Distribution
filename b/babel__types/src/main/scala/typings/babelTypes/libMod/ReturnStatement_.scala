@@ -1,23 +1,17 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ReturnStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ReturnStatement_
   extends StObject
-     with BaseNode
-     with CompletionStatement
-     with Node
-     with Standardized
-     with Statement
-     with Terminatorless {
+     with BaseNode {
   
   var argument: js.UndefOr[Expression | Null] = js.undefined
   
   @JSName("type")
-  var type_ReturnStatement_ : ReturnStatement
+  var type_ReturnStatement_ : "ReturnStatement"
 }
 object ReturnStatement_ {
   
@@ -35,6 +29,6 @@ object ReturnStatement_ {
     
     inline def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
     
-    inline def setType(value: ReturnStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ReturnStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

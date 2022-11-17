@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.async
 import typings.angularCommon.mod.AsyncPipe
 import typings.angularCore.mod.ChangeDetectorRef
 import typings.angularCore.mod.ɵɵFactoryDeclaration
@@ -18,5 +16,5 @@ trait TypeofAsyncPipe
   
   var ɵfac: ɵɵFactoryDeclaration[AsyncPipe, scala.Nothing] = js.native
   
-  var ɵpipe: ɵɵPipeDeclaration[AsyncPipe, async, `true`] = js.native
+  var ɵpipe: ɵɵPipeDeclaration[AsyncPipe, "async", true] = js.native
 }

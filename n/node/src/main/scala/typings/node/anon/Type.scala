@@ -1,13 +1,12 @@
 package typings.node.anon
 
-import typings.node.nodeStrings.pkcs8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Type extends StObject {
   
-  var `type`: pkcs8
+  var `type`: "pkcs8"
 }
 object Type {
   
@@ -19,6 +18,6 @@ object Type {
   
   extension [Self <: Type](x: Self) {
     
-    inline def setType(value: pkcs8): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "pkcs8"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

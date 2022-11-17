@@ -1,14 +1,12 @@
 package typings.angularCompilerCli.srcNgtscReflectionSrcHostMod
 
-import typings.angularCompilerCli.angularCompilerCliInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ConcreteDeclaration[T /* <: typings.typescript.mod.Declaration */]
   extends StObject
-     with BaseDeclaration[T]
-     with Declaration[T] {
+     with BaseDeclaration[T] {
   
   /**
     * Optionally represents a special identity of the declaration, or `null` if the declaration
@@ -17,7 +15,7 @@ trait ConcreteDeclaration[T /* <: typings.typescript.mod.Declaration */]
   var identity: SpecialDeclarationIdentity | Null
   
   @JSName("kind")
-  var kind_ConcreteDeclaration: `0`
+  var kind_ConcreteDeclaration: 0
 }
 object ConcreteDeclaration {
   
@@ -32,6 +30,6 @@ object ConcreteDeclaration {
     
     inline def setIdentityNull: Self = StObject.set(x, "identity", null)
     
-    inline def setKind(value: `0`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: 0): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

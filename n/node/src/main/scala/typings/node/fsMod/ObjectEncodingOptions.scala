@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObjectEncodingOptions
-  extends StObject
-     with _EncodingOption {
+trait ObjectEncodingOptions extends StObject {
   
   var encoding: js.UndefOr[BufferEncoding | Null] = js.undefined
 }

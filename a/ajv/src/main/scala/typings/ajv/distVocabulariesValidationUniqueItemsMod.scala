@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.uniqueItems
 import typings.ajv.anon.Data
 import typings.ajv.anon.I
 import typings.ajv.distTypesMod.CodeKeywordDefinition
@@ -16,7 +15,7 @@ object distVocabulariesValidationUniqueItemsMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type UniqueItemsError = ErrorObject[uniqueItems, I, Boolean | Data]
+  type UniqueItemsError = ErrorObject["uniqueItems", I, Boolean | Data]
   
   type _To = CodeKeywordDefinition
   

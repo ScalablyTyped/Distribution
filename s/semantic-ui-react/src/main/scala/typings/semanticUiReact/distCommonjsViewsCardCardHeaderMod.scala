@@ -5,9 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
-import typings.semanticUiReact.semanticUiReactStrings.center
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +42,7 @@ object distCommonjsViewsCardCardHeaderMod extends Shortcut {
     var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A card header can adjust its text alignment. */
-    var textAlign: js.UndefOr[center | left | right] = js.undefined
+    var textAlign: js.UndefOr["center" | "left" | "right"] = js.undefined
   }
   object StrictCardHeaderProps {
     
@@ -72,7 +69,7 @@ object distCommonjsViewsCardCardHeaderMod extends Shortcut {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setTextAlign(value: center | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: "center" | "left" | "right"): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
       inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     }

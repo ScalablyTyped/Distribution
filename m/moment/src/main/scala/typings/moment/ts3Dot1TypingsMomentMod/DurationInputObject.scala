@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DurationInputObject
   extends StObject
-     with MomentInputObject
-     with _DurationInputArg1 {
+     with MomentInputObject {
   
   var Q: js.UndefOr[Double] = js.undefined
   

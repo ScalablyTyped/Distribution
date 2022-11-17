@@ -67,13 +67,7 @@ object srcRenderersWebxrWebXRControllerMod {
     val linearVelocity: Vector3 = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.webxr.XRSessionEventType
-    - typings.webxr.XRInputSourceEventType
-    - typings.three.threeStrings.disconnected
-    - typings.three.threeStrings.connected
-  */
-  type XRControllerEventType = _XRControllerEventType | XRSessionEventType | XRInputSourceEventType
+  type XRControllerEventType = XRSessionEventType | XRInputSourceEventType | "disconnected" | "connected"
   
   trait XRHandInputState extends StObject {
     
@@ -255,6 +249,4 @@ object srcRenderersWebxrWebXRControllerMod {
       inline def setWrist(value: Double): Self = StObject.set(x, "wrist", value.asInstanceOf[js.Any])
     }
   }
-  
-  trait _XRControllerEventType extends StObject
 }

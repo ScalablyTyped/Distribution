@@ -1,31 +1,25 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesBooleans.`false`
-import typings.babelTypes.babelTypesBooleans.`true`
-import typings.babelTypes.babelTypesStrings.CallExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait CallExpression_
+trait CallExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with Standardized {
+     with BaseNode {
   
   var arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_]
   
   var callee: Expression | Super_ | V8IntrinsicIdentifier_
   
-  var optional: `true` | `false` | Null
+  var optional: true | false | Null
   
   var typeArguments: TypeParameterInstantiation_ | Null
   
   var typeParameters: TSTypeParameterInstantiation_ | Null
   
   @JSName("type")
-  var type_CallExpression_ : CallExpression
+  var type_CallExpression_ : "CallExpression"
 }
 object CallExpression_ {
   
@@ -46,11 +40,11 @@ object CallExpression_ {
     
     inline def setCallee(value: Expression | Super_ | V8IntrinsicIdentifier_): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
-    inline def setOptional(value: `true` | `false`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: true | false): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     inline def setOptionalNull: Self = StObject.set(x, "optional", null)
     
-    inline def setType(value: CallExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "CallExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeArguments(value: TypeParameterInstantiation_): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
     

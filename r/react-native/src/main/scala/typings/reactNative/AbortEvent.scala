@@ -1,6 +1,5 @@
 package typings.reactNative
 
-import typings.reactNative.reactNativeStrings.abort
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,5 +14,5 @@ trait AbortEvent
      with Event {
   
   @JSName("type")
-  var type_AbortEvent: abort = js.native
+  var type_AbortEvent: "abort" = js.native
 }

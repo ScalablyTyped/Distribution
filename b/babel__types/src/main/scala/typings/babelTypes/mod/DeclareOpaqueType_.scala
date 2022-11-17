@@ -1,18 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.DeclareOpaqueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait DeclareOpaqueType_
+trait DeclareOpaqueType_
   extends StObject
-     with BaseNode
-     with Declaration
-     with Flow
-     with FlowDeclaration
-     with Statement {
+     with BaseNode {
   
   var id: Identifier_
   
@@ -23,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var typeParameters: TypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_DeclareOpaqueType_ : DeclareOpaqueType
+  var type_DeclareOpaqueType_ : "DeclareOpaqueType"
 }
 object DeclareOpaqueType_ {
   
@@ -45,7 +39,7 @@ object DeclareOpaqueType_ {
     
     inline def setSupertypeNull: Self = StObject.set(x, "supertype", null)
     
-    inline def setType(value: DeclareOpaqueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "DeclareOpaqueType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

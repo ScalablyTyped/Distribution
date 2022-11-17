@@ -1,23 +1,19 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.EnumNumberMember
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait EnumNumberMember_
+trait EnumNumberMember_
   extends StObject
-     with BaseNode
-     with EnumMember
-     with Flow {
+     with BaseNode {
   
   var id: Identifier_
   
   var init: NumericLiteral_
   
   @JSName("type")
-  var type_EnumNumberMember_ : EnumNumberMember
+  var type_EnumNumberMember_ : "EnumNumberMember"
 }
 object EnumNumberMember_ {
   
@@ -33,6 +29,6 @@ object EnumNumberMember_ {
     
     inline def setInit(value: NumericLiteral_): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    inline def setType(value: EnumNumberMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "EnumNumberMember"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

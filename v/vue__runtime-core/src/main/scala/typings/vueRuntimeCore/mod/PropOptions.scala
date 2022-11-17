@@ -1,6 +1,5 @@
 package typings.vueRuntimeCore.mod
 
-import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait PropOptions[T, D] extends StObject {
   
   var required: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[PropType[T] | `true` | Null] = js.undefined
+  var `type`: js.UndefOr[PropType[T] | true | Null] = js.undefined
   
   var validator: js.UndefOr[js.Function1[/* value */ Any, Boolean]] = js.undefined
 }
@@ -36,7 +35,7 @@ object PropOptions {
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    inline def setType(value: PropType[T] | `true`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PropType[T] | true): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeFunction0(value: () => T): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
     

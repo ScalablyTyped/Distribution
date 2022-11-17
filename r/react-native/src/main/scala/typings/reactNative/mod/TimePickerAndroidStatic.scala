@@ -1,7 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.dismissedAction
-import typings.reactNative.reactNativeStrings.timeSetAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +9,7 @@ trait TimePickerAndroidStatic extends StObject {
   /**
     * The dialog has been dismissed.
     */
-  var dismissedAction: typings.reactNative.reactNativeStrings.dismissedAction
+  var dismissedAction: "dismissedAction"
   
   /**
     * Opens the standard Android time picker dialog.
@@ -37,7 +35,7 @@ trait TimePickerAndroidStatic extends StObject {
   /**
     * A time has been selected.
     */
-  var timeSetAction: typings.reactNative.reactNativeStrings.timeSetAction
+  var timeSetAction: "timeSetAction"
 }
 object TimePickerAndroidStatic {
   
@@ -48,10 +46,10 @@ object TimePickerAndroidStatic {
   
   extension [Self <: TimePickerAndroidStatic](x: Self) {
     
-    inline def setDismissedAction(value: dismissedAction): Self = StObject.set(x, "dismissedAction", value.asInstanceOf[js.Any])
+    inline def setDismissedAction(value: "dismissedAction"): Self = StObject.set(x, "dismissedAction", value.asInstanceOf[js.Any])
     
     inline def setOpen(value: TimePickerAndroidOpenOptions => js.Promise[TimePickerAndroidOpenReturn]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
-    inline def setTimeSetAction(value: timeSetAction): Self = StObject.set(x, "timeSetAction", value.asInstanceOf[js.Any])
+    inline def setTimeSetAction(value: "timeSetAction"): Self = StObject.set(x, "timeSetAction", value.asInstanceOf[js.Any])
   }
 }

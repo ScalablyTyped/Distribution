@@ -1,16 +1,13 @@
 package typings.std
 
-import typings.std.stdStrings.fulfilled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PromiseFulfilledResult[T]
-  extends StObject
-     with PromiseSettledResult[T] {
+trait PromiseFulfilledResult[T] extends StObject {
   
   /* standard es2020.promise */
-  var status: fulfilled
+  var status: "fulfilled"
   
   /* standard es2020.promise */
   var value: T
@@ -24,7 +21,7 @@ object PromiseFulfilledResult {
   
   extension [Self <: PromiseFulfilledResult[?], T](x: Self & PromiseFulfilledResult[T]) {
     
-    inline def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: "fulfilled"): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

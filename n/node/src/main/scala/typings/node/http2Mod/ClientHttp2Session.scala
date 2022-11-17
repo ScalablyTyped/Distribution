@@ -3,9 +3,6 @@ package typings.node.http2Mod
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.nodeColonnetMod.Socket
 import typings.node.nodeColontlsMod.TLSSocket
-import typings.node.nodeStrings.altsvc
-import typings.node.nodeStrings.origin
-import typings.node.nodeStrings.stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,23 +10,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ClientHttp2Session extends StObject {
   
-  def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_altsvc(
-    event: altsvc,
-    listener: js.Function3[/* alt */ String, /* origin */ String, /* stream */ Double, Unit]
-  ): this.type = js.native
+  @scala.annotation.targetName("addListener_origin")
+  def addListener(event: "origin", listener: js.Function1[/* origins */ js.Array[String], Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_connect(
-    event: typings.node.nodeStrings.connect,
+  @scala.annotation.targetName("addListener_connect")
+  def addListener(
+    event: "connect",
     listener: js.Function2[/* session */ this.type, /* socket */ Socket | TLSSocket, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_origin(event: origin, listener: js.Function1[/* origins */ js.Array[String], Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_altsvc")
+  def addListener(
+    event: "altsvc",
+    listener: js.Function3[/* alt */ String, /* origin */ String, /* stream */ Double, Unit]
+  ): this.type = js.native
   @JSName("addListener")
-  def addListener_stream(
-    event: stream,
+  @scala.annotation.targetName("addListener_stream")
+  def addListener(
+    event: "stream",
     listener: js.Function3[
       /* stream */ ClientHttp2Stream, 
       /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
@@ -37,42 +36,74 @@ trait ClientHttp2Session extends StObject {
       Unit
     ]
   ): this.type = js.native
+  def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   
-  def emit(event: String, args: Any*): Boolean = js.native
-  def emit(event: js.Symbol, args: Any*): Boolean = js.native
   @JSName("emit")
-  def emit_altsvc(event: altsvc, alt: String, origin: String, stream: Double): Boolean = js.native
+  @scala.annotation.targetName("emit_altsvc")
+  def emit(event: "altsvc", alt: String, origin: String, stream: Double): Boolean = js.native
   @JSName("emit")
-  def emit_connect(event: typings.node.nodeStrings.connect, session: ClientHttp2Session, socket: Socket): Boolean = js.native
+  @scala.annotation.targetName("emit_origin")
+  def emit(event: "origin", origins: js.Array[String]): Boolean = js.native
   @JSName("emit")
-  def emit_connect(event: typings.node.nodeStrings.connect, session: ClientHttp2Session, socket: TLSSocket): Boolean = js.native
+  @scala.annotation.targetName("emit_connect")
+  def emit(event: "connect", session: ClientHttp2Session, socket: Socket): Boolean = js.native
   @JSName("emit")
-  def emit_origin(event: origin, origins: js.Array[String]): Boolean = js.native
+  @scala.annotation.targetName("emit_connect")
+  def emit(event: "connect", session: ClientHttp2Session, socket: TLSSocket): Boolean = js.native
   @JSName("emit")
-  def emit_stream(
-    event: stream,
+  @scala.annotation.targetName("emit_stream")
+  def emit(
+    event: "stream",
     stream: ClientHttp2Stream,
     headers: IncomingHttpHeaders & IncomingHttpStatusHeader,
     flags: Double
   ): Boolean = js.native
+  def emit(event: String, args: Any*): Boolean = js.native
+  def emit(event: js.Symbol, args: Any*): Boolean = js.native
   
+  @JSName("on")
+  @scala.annotation.targetName("on_origin")
+  def on(event: "origin", listener: js.Function1[/* origins */ js.Array[String], Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_connect")
+  def on(
+    event: "connect",
+    listener: js.Function2[/* session */ this.type, /* socket */ Socket | TLSSocket, Unit]
+  ): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_altsvc")
+  def on(
+    event: "altsvc",
+    listener: js.Function3[/* alt */ String, /* origin */ String, /* stream */ Double, Unit]
+  ): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_stream")
+  def on(
+    event: "stream",
+    listener: js.Function3[
+      /* stream */ ClientHttp2Stream, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
+      /* flags */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
   def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("on")
-  def on_altsvc(
-    event: altsvc,
-    listener: js.Function3[/* alt */ String, /* origin */ String, /* stream */ Double, Unit]
-  ): this.type = js.native
-  @JSName("on")
-  def on_connect(
-    event: typings.node.nodeStrings.connect,
+  
+  @JSName("once")
+  @scala.annotation.targetName("once_origin")
+  def once(event: "origin", listener: js.Function1[/* origins */ js.Array[String], Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_connect")
+  def once(
+    event: "connect",
     listener: js.Function2[/* session */ this.type, /* socket */ Socket | TLSSocket, Unit]
   ): this.type = js.native
-  @JSName("on")
-  def on_origin(event: origin, listener: js.Function1[/* origins */ js.Array[String], Unit]): this.type = js.native
-  @JSName("on")
-  def on_stream(
-    event: stream,
+  @JSName("once")
+  @scala.annotation.targetName("once_stream")
+  def once(
+    event: "stream",
     listener: js.Function3[
       /* stream */ ClientHttp2Stream, 
       /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
@@ -80,24 +111,28 @@ trait ClientHttp2Session extends StObject {
       Unit
     ]
   ): this.type = js.native
-  
+  @JSName("once")
+  @scala.annotation.targetName("once_altsvc")
+  def once(
+    event: "altsvc",
+    listener: js.Function3[/* alt */ String, /* origin */ String, /* stream */ Double, Unit]
+  ): this.type = js.native
   def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("once")
-  def once_altsvc(
-    event: altsvc,
-    listener: js.Function3[/* alt */ String, /* origin */ String, /* stream */ Double, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_connect(
-    event: typings.node.nodeStrings.connect,
+  
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_origin")
+  def prependListener(event: "origin", listener: js.Function1[/* origins */ js.Array[String], Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_connect")
+  def prependListener(
+    event: "connect",
     listener: js.Function2[/* session */ this.type, /* socket */ Socket | TLSSocket, Unit]
   ): this.type = js.native
-  @JSName("once")
-  def once_origin(event: origin, listener: js.Function1[/* origins */ js.Array[String], Unit]): this.type = js.native
-  @JSName("once")
-  def once_stream(
-    event: stream,
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_stream")
+  def prependListener(
+    event: "stream",
     listener: js.Function3[
       /* stream */ ClientHttp2Stream, 
       /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
@@ -105,24 +140,28 @@ trait ClientHttp2Session extends StObject {
       Unit
     ]
   ): this.type = js.native
-  
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_altsvc")
+  def prependListener(
+    event: "altsvc",
+    listener: js.Function3[/* alt */ String, /* origin */ String, /* stream */ Double, Unit]
+  ): this.type = js.native
   def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_altsvc(
-    event: altsvc,
-    listener: js.Function3[/* alt */ String, /* origin */ String, /* stream */ Double, Unit]
-  ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_connect(
-    event: typings.node.nodeStrings.connect,
+  
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_origin")
+  def prependOnceListener(event: "origin", listener: js.Function1[/* origins */ js.Array[String], Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_connect")
+  def prependOnceListener(
+    event: "connect",
     listener: js.Function2[/* session */ this.type, /* socket */ Socket | TLSSocket, Unit]
   ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_origin(event: origin, listener: js.Function1[/* origins */ js.Array[String], Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_stream(
-    event: stream,
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_stream")
+  def prependOnceListener(
+    event: "stream",
     listener: js.Function3[
       /* stream */ ClientHttp2Stream, 
       /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
@@ -130,31 +169,14 @@ trait ClientHttp2Session extends StObject {
       Unit
     ]
   ): this.type = js.native
-  
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_altsvc")
+  def prependOnceListener(
+    event: "altsvc",
+    listener: js.Function3[/* alt */ String, /* origin */ String, /* stream */ Double, Unit]
+  ): this.type = js.native
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_altsvc(
-    event: altsvc,
-    listener: js.Function3[/* alt */ String, /* origin */ String, /* stream */ Double, Unit]
-  ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_connect(
-    event: typings.node.nodeStrings.connect,
-    listener: js.Function2[/* session */ this.type, /* socket */ Socket | TLSSocket, Unit]
-  ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_origin(event: origin, listener: js.Function1[/* origins */ js.Array[String], Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_stream(
-    event: stream,
-    listener: js.Function3[
-      /* stream */ ClientHttp2Stream, 
-      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
-      /* flags */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
   
   /**
     * For HTTP/2 Client `Http2Session` instances only, the `http2session.request()`creates and returns an `Http2Stream` instance that can be used to send an

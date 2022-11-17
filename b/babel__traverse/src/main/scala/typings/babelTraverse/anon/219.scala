@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.DoExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `219` extends StObject {
   
-  var `type`: DoExpression
+  var `type`: "DoExpression"
 }
 object `219` {
   
@@ -19,6 +18,6 @@ object `219` {
   
   extension [Self <: `219`](x: Self) {
     
-    inline def setType(value: DoExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "DoExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

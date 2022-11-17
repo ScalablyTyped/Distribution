@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.JSXOpeningFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `220` extends StObject {
   
-  var `type`: JSXOpeningFragment
+  var `type`: "JSXOpeningFragment"
 }
 object `220` {
   
@@ -19,6 +18,6 @@ object `220` {
   
   extension [Self <: `220`](x: Self) {
     
-    inline def setType(value: JSXOpeningFragment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "JSXOpeningFragment"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

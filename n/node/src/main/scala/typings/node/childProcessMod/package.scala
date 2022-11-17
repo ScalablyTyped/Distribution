@@ -5,10 +5,11 @@ import typings.node.anon.encodingbuffernullExecOpt
 import typings.node.bufferMod.global.Buffer
 import typings.node.childProcessMod.^
 import typings.node.fsMod.ObjectEncodingOptions
+import typings.node.nodeColonnetMod.Server
+import typings.node.nodeColonnetMod.Socket
 import typings.node.nodeColonstreamMod.Readable
 import typings.node.nodeColonstreamMod.Stream
 import typings.node.nodeColonstreamMod.Writable
-import typings.node.nodeStrings.ipc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -736,8 +737,18 @@ inline def spawnSync(command: String, options: SpawnSyncOptions): SpawnSyncRetur
 inline def spawnSync(command: String, options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawnSync")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SpawnSyncReturns[Buffer]]
 inline def spawnSync(command: String, options: SpawnSyncOptionsWithStringEncoding): SpawnSyncReturns[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawnSync")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SpawnSyncReturns[String]]
 
+type IOType = "overlapped" | "pipe" | "ignore" | "inherit"
+
+type SendHandle = Socket | Server
+
 type Serializable = String | js.Object | Double | Boolean | js.BigInt
 
-type StdioOptions = IOType | (js.Array[js.UndefOr[IOType | ipc | Stream | Double | Null]])
+type SerializationType = "json" | "advanced"
+
+type StdioNull = "inherit" | "ignore" | Stream
+
+type StdioOptions = IOType | (js.Array[js.UndefOr[IOType | "ipc" | Stream | Double | Null]])
 
 type StdioPipe = js.UndefOr[Null | StdioPipeNamed]
+
+type StdioPipeNamed = "pipe" | "overlapped"

@@ -4,9 +4,6 @@ import typings.rcPicker.esGenerateMod.GenerateConfig
 import typings.rcPicker.esInterfaceMod.Locale
 import typings.rcPicker.esInterfaceMod.OnSelect
 import typings.rcPicker.esPanelsTimePanelMod.SharedTimeProps
-import typings.rcPicker.rcPickerStrings.key
-import typings.rcPicker.rcPickerStrings.mouse
-import typings.rcPicker.rcPickerStrings.submit
 import typings.react.mod.MutableRefObject
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -62,7 +59,7 @@ object esPanelsTimePanelTimeBodyMod {
       activeColumnIndex: Double,
       generateConfig: GenerateConfig[DateType],
       locale: Locale,
-      onSelect: (DateType, /* type */ key | mouse | submit) => Unit,
+      onSelect: (DateType, /* type */ "key" | "mouse" | "submit") => Unit,
       operationRef: MutableRefObject[js.UndefOr[BodyOperationRef]],
       prefixCls: String
     ): TimeBodyProps[DateType] = {
@@ -78,7 +75,7 @@ object esPanelsTimePanelTimeBodyMod {
       
       inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      inline def setOnSelect(value: (DateType, /* type */ key | mouse | submit) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (DateType, /* type */ "key" | "mouse" | "submit") => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       inline def setOperationRef(value: MutableRefObject[js.UndefOr[BodyOperationRef]]): Self = StObject.set(x, "operationRef", value.asInstanceOf[js.Any])
       

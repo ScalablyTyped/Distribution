@@ -68,7 +68,7 @@ open class ActivatedRouteSnapshot () extends StObject {
   val routeConfig: Route | Null = js.native
   
   /** The resolved route title */
-  val title: js.UndefOr[String] = js.native
+  def title: js.UndefOr[String] = js.native
   
   /** The URL segments matched by this route */
   var url: js.Array[UrlSegment] = js.native

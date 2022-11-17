@@ -1,7 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.keyvalue
 import typings.angularCore.mod.KeyValueDiffers
 import typings.angularCore.mod.PipeTransform
 import typings.angularCore.mod.ɵɵFactoryDeclaration
@@ -89,6 +87,6 @@ object KeyValuePipe {
   
   @JSImport("@angular/common", "KeyValuePipe.\u0275pipe")
   @js.native
-  def ɵpipe: ɵɵPipeDeclaration[KeyValuePipe, keyvalue, `true`] = js.native
-  inline def ɵpipe_=(x: ɵɵPipeDeclaration[KeyValuePipe, keyvalue, `true`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
+  def ɵpipe: ɵɵPipeDeclaration[KeyValuePipe, "keyvalue", true] = js.native
+  inline def ɵpipe_=(x: ɵɵPipeDeclaration[KeyValuePipe, "keyvalue", true]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
 }

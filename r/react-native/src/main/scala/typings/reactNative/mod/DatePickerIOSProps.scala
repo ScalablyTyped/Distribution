@@ -1,22 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeInts.`10`
-import typings.reactNative.reactNativeInts.`12`
-import typings.reactNative.reactNativeInts.`15`
-import typings.reactNative.reactNativeInts.`1`
-import typings.reactNative.reactNativeInts.`20`
-import typings.reactNative.reactNativeInts.`2`
-import typings.reactNative.reactNativeInts.`30`
-import typings.reactNative.reactNativeInts.`3`
-import typings.reactNative.reactNativeInts.`4`
-import typings.reactNative.reactNativeInts.`5`
-import typings.reactNative.reactNativeInts.`6`
-import typings.reactNative.reactNativeStrings.`inline`
-import typings.reactNative.reactNativeStrings.compact
-import typings.reactNative.reactNativeStrings.date
-import typings.reactNative.reactNativeStrings.datetime
-import typings.reactNative.reactNativeStrings.spinner
-import typings.reactNative.reactNativeStrings.time
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,13 +44,13 @@ trait DatePickerIOSProps
     *  enum(1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30)
     *  The interval at which minutes can be selected.
     */
-  var minuteInterval: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `10` | `12` | `15` | `20` | `30`] = js.undefined
+  var minuteInterval: js.UndefOr[1 | 2 | 3 | 4 | 5 | 6 | 10 | 12 | 15 | 20 | 30] = js.undefined
   
   /**
     *  enum('date', 'time', 'datetime')
     *  The date picker mode.
     */
-  var mode: js.UndefOr[date | time | datetime] = js.undefined
+  var mode: js.UndefOr["date" | "time" | "datetime"] = js.undefined
   
   /**
     * Date change handler.
@@ -81,7 +64,7 @@ trait DatePickerIOSProps
     * This is only available on devices with iOS 14.0 and later.
     * 'spinner' is the default style if this prop isn't set.
     */
-  var pickerStyle: js.UndefOr[compact | spinner | `inline`] = js.undefined
+  var pickerStyle: js.UndefOr["compact" | "spinner" | "inline"] = js.undefined
   
   /**
     * Timezone offset in minutes.
@@ -123,17 +106,17 @@ object DatePickerIOSProps {
     
     inline def setMinimumDateUndefined: Self = StObject.set(x, "minimumDate", js.undefined)
     
-    inline def setMinuteInterval(value: `1` | `2` | `3` | `4` | `5` | `6` | `10` | `12` | `15` | `20` | `30`): Self = StObject.set(x, "minuteInterval", value.asInstanceOf[js.Any])
+    inline def setMinuteInterval(value: 1 | 2 | 3 | 4 | 5 | 6 | 10 | 12 | 15 | 20 | 30): Self = StObject.set(x, "minuteInterval", value.asInstanceOf[js.Any])
     
     inline def setMinuteIntervalUndefined: Self = StObject.set(x, "minuteInterval", js.undefined)
     
-    inline def setMode(value: date | time | datetime): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: "date" | "time" | "datetime"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     inline def setOnDateChange(value: js.Date => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction1(value))
     
-    inline def setPickerStyle(value: compact | spinner | `inline`): Self = StObject.set(x, "pickerStyle", value.asInstanceOf[js.Any])
+    inline def setPickerStyle(value: "compact" | "spinner" | "inline"): Self = StObject.set(x, "pickerStyle", value.asInstanceOf[js.Any])
     
     inline def setPickerStyleUndefined: Self = StObject.set(x, "pickerStyle", js.undefined)
     

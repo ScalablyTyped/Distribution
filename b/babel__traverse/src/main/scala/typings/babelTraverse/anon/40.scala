@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.ContinueStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `40` extends StObject {
   
-  var `type`: ContinueStatement
+  var `type`: "ContinueStatement"
 }
 object `40` {
   
@@ -19,6 +18,6 @@ object `40` {
   
   extension [Self <: `40`](x: Self) {
     
-    inline def setType(value: ContinueStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ContinueStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

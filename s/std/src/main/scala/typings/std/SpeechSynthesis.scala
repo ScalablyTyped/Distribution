@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.voiceschanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,16 +12,19 @@ trait SpeechSynthesis
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_voiceschanged(`type`: voiceschanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_voiceschanged")
+  def addEventListener(`type`: "voiceschanged", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_voiceschanged(
-    `type`: voiceschanged,
+  @scala.annotation.targetName("addEventListener_voiceschanged")
+  def addEventListener(
+    `type`: "voiceschanged",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_voiceschanged(
-    `type`: voiceschanged,
+  @scala.annotation.targetName("addEventListener_voiceschanged")
+  def addEventListener(
+    `type`: "voiceschanged",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -47,16 +49,19 @@ trait SpeechSynthesis
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_voiceschanged(`type`: voiceschanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_voiceschanged")
+  def removeEventListener(`type`: "voiceschanged", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_voiceschanged(
-    `type`: voiceschanged,
+  @scala.annotation.targetName("removeEventListener_voiceschanged")
+  def removeEventListener(
+    `type`: "voiceschanged",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_voiceschanged(
-    `type`: voiceschanged,
+  @scala.annotation.targetName("removeEventListener_voiceschanged")
+  def removeEventListener(
+    `type`: "voiceschanged",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

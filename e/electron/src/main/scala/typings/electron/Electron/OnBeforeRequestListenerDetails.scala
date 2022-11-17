@@ -1,18 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`object`
-import typings.electron.electronStrings.cspReport
-import typings.electron.electronStrings.font
-import typings.electron.electronStrings.image
-import typings.electron.electronStrings.mainFrame
-import typings.electron.electronStrings.media
-import typings.electron.electronStrings.other
-import typings.electron.electronStrings.ping
-import typings.electron.electronStrings.script
-import typings.electron.electronStrings.stylesheet
-import typings.electron.electronStrings.subFrame
-import typings.electron.electronStrings.webSocket
-import typings.electron.electronStrings.xhr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +18,7 @@ trait OnBeforeRequestListenerDetails extends StObject {
     * Can be `mainFrame`, `subFrame`, `stylesheet`, `script`, `image`, `font`,
     * `object`, `xhr`, `ping`, `cspReport`, `media`, `webSocket` or `other`.
     */
-  var resourceType: mainFrame | subFrame | stylesheet | script | image | font | `object` | xhr | ping | cspReport | media | webSocket | other
+  var resourceType: "mainFrame" | "subFrame" | "stylesheet" | "script" | "image" | "font" | "object" | "xhr" | "ping" | "cspReport" | "media" | "webSocket" | "other"
   
   var timestamp: Double
   
@@ -49,7 +36,7 @@ object OnBeforeRequestListenerDetails {
     id: Double,
     method: String,
     referrer: String,
-    resourceType: mainFrame | subFrame | stylesheet | script | image | font | `object` | xhr | ping | cspReport | media | webSocket | other,
+    resourceType: "mainFrame" | "subFrame" | "stylesheet" | "script" | "image" | "font" | "object" | "xhr" | "ping" | "cspReport" | "media" | "webSocket" | "other",
     timestamp: Double,
     uploadData: js.Array[UploadData],
     url: String
@@ -71,7 +58,7 @@ object OnBeforeRequestListenerDetails {
     inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
     inline def setResourceType(
-      value: mainFrame | subFrame | stylesheet | script | image | font | `object` | xhr | ping | cspReport | media | webSocket | other
+      value: "mainFrame" | "subFrame" | "stylesheet" | "script" | "image" | "font" | "object" | "xhr" | "ping" | "cspReport" | "media" | "webSocket" | "other"
     ): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])

@@ -385,53 +385,37 @@ object testUtilsMod {
     extends StObject
        with Instantiable1[/* props */ Any, Any]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactDom.reactDomStrings.Alt
-    - typings.reactDom.reactDomStrings.AltGraph
-    - typings.reactDom.reactDomStrings.CapsLock
-    - typings.reactDom.reactDomStrings.Control
-    - typings.reactDom.reactDomStrings.Fn
-    - typings.reactDom.reactDomStrings.FnLock
-    - typings.reactDom.reactDomStrings.Hyper
-    - typings.reactDom.reactDomStrings.Meta
-    - typings.reactDom.reactDomStrings.NumLock
-    - typings.reactDom.reactDomStrings.ScrollLock
-    - typings.reactDom.reactDomStrings.Shift
-    - typings.reactDom.reactDomStrings.Super
-    - typings.reactDom.reactDomStrings.Symbol
-    - typings.reactDom.reactDomStrings.SymbolLock
-  */
-  trait ModifierKey extends StObject
   object ModifierKey {
     
-    inline def Alt: typings.reactDom.reactDomStrings.Alt = "Alt".asInstanceOf[typings.reactDom.reactDomStrings.Alt]
+    inline def Alt: "Alt" = "Alt".asInstanceOf["Alt"]
     
-    inline def AltGraph: typings.reactDom.reactDomStrings.AltGraph = "AltGraph".asInstanceOf[typings.reactDom.reactDomStrings.AltGraph]
+    inline def AltGraph: "AltGraph" = "AltGraph".asInstanceOf["AltGraph"]
     
-    inline def CapsLock: typings.reactDom.reactDomStrings.CapsLock = "CapsLock".asInstanceOf[typings.reactDom.reactDomStrings.CapsLock]
+    inline def CapsLock: "CapsLock" = "CapsLock".asInstanceOf["CapsLock"]
     
-    inline def Control: typings.reactDom.reactDomStrings.Control = "Control".asInstanceOf[typings.reactDom.reactDomStrings.Control]
+    inline def Control: "Control" = "Control".asInstanceOf["Control"]
     
-    inline def Fn: typings.reactDom.reactDomStrings.Fn = "Fn".asInstanceOf[typings.reactDom.reactDomStrings.Fn]
+    inline def Fn: "Fn" = "Fn".asInstanceOf["Fn"]
     
-    inline def FnLock: typings.reactDom.reactDomStrings.FnLock = "FnLock".asInstanceOf[typings.reactDom.reactDomStrings.FnLock]
+    inline def FnLock: "FnLock" = "FnLock".asInstanceOf["FnLock"]
     
-    inline def Hyper: typings.reactDom.reactDomStrings.Hyper = "Hyper".asInstanceOf[typings.reactDom.reactDomStrings.Hyper]
+    inline def Hyper: "Hyper" = "Hyper".asInstanceOf["Hyper"]
     
-    inline def Meta: typings.reactDom.reactDomStrings.Meta = "Meta".asInstanceOf[typings.reactDom.reactDomStrings.Meta]
+    inline def Meta: "Meta" = "Meta".asInstanceOf["Meta"]
     
-    inline def NumLock: typings.reactDom.reactDomStrings.NumLock = "NumLock".asInstanceOf[typings.reactDom.reactDomStrings.NumLock]
+    inline def NumLock: "NumLock" = "NumLock".asInstanceOf["NumLock"]
     
-    inline def ScrollLock: typings.reactDom.reactDomStrings.ScrollLock = "ScrollLock".asInstanceOf[typings.reactDom.reactDomStrings.ScrollLock]
+    inline def ScrollLock: "ScrollLock" = "ScrollLock".asInstanceOf["ScrollLock"]
     
-    inline def Shift: typings.reactDom.reactDomStrings.Shift = "Shift".asInstanceOf[typings.reactDom.reactDomStrings.Shift]
+    inline def Shift: "Shift" = "Shift".asInstanceOf["Shift"]
     
-    inline def Super: typings.reactDom.reactDomStrings.Super = "Super".asInstanceOf[typings.reactDom.reactDomStrings.Super]
+    inline def Super: "Super" = "Super".asInstanceOf["Super"]
     
-    inline def Symbol: typings.reactDom.reactDomStrings.Symbol = "Symbol".asInstanceOf[typings.reactDom.reactDomStrings.Symbol]
+    inline def Symbol: "Symbol" = "Symbol".asInstanceOf["Symbol"]
     
-    inline def SymbolLock: typings.reactDom.reactDomStrings.SymbolLock = "SymbolLock".asInstanceOf[typings.reactDom.reactDomStrings.SymbolLock]
+    inline def SymbolLock: "SymbolLock" = "SymbolLock".asInstanceOf["SymbolLock"]
   }
+  type ModifierKey = "Alt" | "AltGraph" | "CapsLock" | "Control" | "Fn" | "FnLock" | "Hyper" | "Meta" | "NumLock" | "ScrollLock" | "Shift" | "Super" | "Symbol" | "SymbolLock"
   
   trait OptionalEventProperties extends StObject {
     

@@ -2,8 +2,6 @@ package typings.angularForms.mod
 
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
-import typings.angularForms.angularFormsStrings.`[formControlName]Comma[ngModel]Comma[formControl]`
 import typings.angularForms.anon.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,24 +25,26 @@ object NgControlStatus {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     NgControlStatus, 
-    `[formControlName]Comma[ngModel]Comma[formControl]`, 
+    "[formControlName],[ngModel],[formControl]", 
     scala.Nothing, 
     js.Object, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       NgControlStatus, 
-      `[formControlName]Comma[ngModel]Comma[formControl]`, 
+      "[formControlName],[ngModel],[formControl]", 
       scala.Nothing, 
       js.Object, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `false`
+      false, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

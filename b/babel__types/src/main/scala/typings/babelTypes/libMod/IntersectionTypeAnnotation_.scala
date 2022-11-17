@@ -1,19 +1,15 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.IntersectionTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IntersectionTypeAnnotation_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowType
-     with Node {
+     with BaseNode {
   
   @JSName("type")
-  var type_IntersectionTypeAnnotation_ : IntersectionTypeAnnotation
+  var type_IntersectionTypeAnnotation_ : "IntersectionTypeAnnotation"
   
   var types: js.Array[FlowType]
 }
@@ -27,7 +23,7 @@ object IntersectionTypeAnnotation_ {
   
   extension [Self <: IntersectionTypeAnnotation_](x: Self) {
     
-    inline def setType(value: IntersectionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "IntersectionTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypes(value: js.Array[FlowType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     

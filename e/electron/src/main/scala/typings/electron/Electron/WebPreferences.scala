@@ -1,15 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`document-user-activation-required`
-import typings.electron.electronStrings.`no-user-gesture-required`
-import typings.electron.electronStrings.`user-gesture-required`
-import typings.electron.electronStrings.animate
-import typings.electron.electronStrings.animateOnce
-import typings.electron.electronStrings.bypassHeatCheck
-import typings.electron.electronStrings.bypassHeatCheckAndEagerCompile
-import typings.electron.electronStrings.code
-import typings.electron.electronStrings.noAnimation
-import typings.electron.electronStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +31,7 @@ trait WebPreferences extends StObject {
     * `document-user-activation-required`. Defaults to `no-user-gesture-required`.
     */
   var autoplayPolicy: js.UndefOr[
-    `no-user-gesture-required` | `user-gesture-required` | `document-user-activation-required`
+    "no-user-gesture-required" | "user-gesture-required" | "document-user-activation-required"
   ] = js.undefined
   
   /**
@@ -140,7 +130,7 @@ trait WebPreferences extends StObject {
     * Specifies how to run image animations (E.g. GIFs).  Can be `animate`,
     * `animateOnce` or `noAnimation`.  Default is `animate`.
     */
-  var imageAnimationPolicy: js.UndefOr[animate | animateOnce | noAnimation] = js.undefined
+  var imageAnimationPolicy: js.UndefOr["animate" | "animateOnce" | "noAnimation"] = js.undefined
   
   /**
     * Enables image support. Default is `true`.
@@ -260,7 +250,7 @@ trait WebPreferences extends StObject {
   /**
     * Enforces the v8 code caching policy used by blink. Accepted values are
     */
-  var v8CacheOptions: js.UndefOr[none | code | bypassHeatCheck | bypassHeatCheckAndEagerCompile] = js.undefined
+  var v8CacheOptions: js.UndefOr["none" | "code" | "bypassHeatCheck" | "bypassHeatCheckAndEagerCompile"] = js.undefined
   
   /**
     * When `false`, it will disable the same-origin policy (usually using testing
@@ -312,7 +302,7 @@ object WebPreferences {
     
     inline def setAllowRunningInsecureContentUndefined: Self = StObject.set(x, "allowRunningInsecureContent", js.undefined)
     
-    inline def setAutoplayPolicy(value: `no-user-gesture-required` | `user-gesture-required` | `document-user-activation-required`): Self = StObject.set(x, "autoplayPolicy", value.asInstanceOf[js.Any])
+    inline def setAutoplayPolicy(value: "no-user-gesture-required" | "user-gesture-required" | "document-user-activation-required"): Self = StObject.set(x, "autoplayPolicy", value.asInstanceOf[js.Any])
     
     inline def setAutoplayPolicyUndefined: Self = StObject.set(x, "autoplayPolicy", js.undefined)
     
@@ -372,7 +362,7 @@ object WebPreferences {
     
     inline def setExperimentalFeaturesUndefined: Self = StObject.set(x, "experimentalFeatures", js.undefined)
     
-    inline def setImageAnimationPolicy(value: animate | animateOnce | noAnimation): Self = StObject.set(x, "imageAnimationPolicy", value.asInstanceOf[js.Any])
+    inline def setImageAnimationPolicy(value: "animate" | "animateOnce" | "noAnimation"): Self = StObject.set(x, "imageAnimationPolicy", value.asInstanceOf[js.Any])
     
     inline def setImageAnimationPolicyUndefined: Self = StObject.set(x, "imageAnimationPolicy", js.undefined)
     
@@ -448,7 +438,7 @@ object WebPreferences {
     
     inline def setTextAreasAreResizableUndefined: Self = StObject.set(x, "textAreasAreResizable", js.undefined)
     
-    inline def setV8CacheOptions(value: none | code | bypassHeatCheck | bypassHeatCheckAndEagerCompile): Self = StObject.set(x, "v8CacheOptions", value.asInstanceOf[js.Any])
+    inline def setV8CacheOptions(value: "none" | "code" | "bypassHeatCheck" | "bypassHeatCheckAndEagerCompile"): Self = StObject.set(x, "v8CacheOptions", value.asInstanceOf[js.Any])
     
     inline def setV8CacheOptionsUndefined: Self = StObject.set(x, "v8CacheOptions", js.undefined)
     

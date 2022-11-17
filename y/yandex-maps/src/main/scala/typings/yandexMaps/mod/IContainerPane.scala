@@ -1,8 +1,6 @@
 package typings.yandexMaps.mod
 
 import typings.std.HTMLElement
-import typings.yandexMaps.yandexMapsStrings.hidden
-import typings.yandexMaps.yandexMapsStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +17,7 @@ object IContainerPane {
     fromClientPixels: js.Array[Double] => js.Array[Double],
     getElement: () => HTMLElement,
     getMap: () => Map_,
-    getOverflow: () => visible | hidden,
+    getOverflow: () => "visible" | "hidden",
     getZIndex: () => Double,
     getZoom: () => Double,
     toClientPixels: js.Array[Double] => js.Array[Double]

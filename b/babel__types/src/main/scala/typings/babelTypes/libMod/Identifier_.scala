@@ -1,19 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.Identifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Identifier_
   extends StObject
-     with BaseNode
-     with Expression
-     with LVal
-     with Node
-     with PatternLike
-     with Standardized
-     with TSEntityName {
+     with BaseNode {
   
   var decorators: js.UndefOr[js.Array[Decorator_] | Null] = js.undefined
   
@@ -24,7 +17,7 @@ trait Identifier_
   var typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
-  var type_Identifier_ : Identifier
+  var type_Identifier_ : "Identifier"
 }
 object Identifier_ {
   
@@ -52,7 +45,7 @@ object Identifier_ {
     
     inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    inline def setType(value: Identifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Identifier"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation__ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

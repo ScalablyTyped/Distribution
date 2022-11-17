@@ -1,8 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.left
-import typings.electron.electronStrings.overlay
-import typings.electron.electronStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +34,7 @@ trait TouchBarButtonConstructorOptions extends StObject {
   /**
     * Can be `left`, `right` or `overlay`. Defaults to `overlay`.
     */
-  var iconPosition: js.UndefOr[left | right | overlay] = js.undefined
+  var iconPosition: js.UndefOr["left" | "right" | "overlay"] = js.undefined
   
   /**
     * Button text.
@@ -71,7 +68,7 @@ object TouchBarButtonConstructorOptions {
     
     inline def setIcon(value: NativeImage_ | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    inline def setIconPosition(value: left | right | overlay): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
+    inline def setIconPosition(value: "left" | "right" | "overlay"): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
     
     inline def setIconPositionUndefined: Self = StObject.set(x, "iconPosition", js.undefined)
     

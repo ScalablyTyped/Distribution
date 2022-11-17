@@ -1,15 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliInts.`0`
-import typings.angularCompilerCli.angularCompilerCliInts.`1`
-import typings.angularCompilerCli.angularCompilerCliInts.`2`
-import typings.angularCompilerCli.angularCompilerCliInts.`3`
-import typings.angularCompilerCli.angularCompilerCliInts.`4`
-import typings.angularCompilerCli.angularCompilerCliInts.`5`
-import typings.angularCompilerCli.angularCompilerCliInts.`6`
-import typings.angularCompilerCli.angularCompilerCliInts.`7`
-import typings.angularCompilerCli.angularCompilerCliInts.`8`
-import typings.angularCompilerCli.angularCompilerCliInts.`9`
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscPartialEvaluatorSrcSyntheticMod.SyntheticValue
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.FunctionDefinition
@@ -81,25 +71,12 @@ object srcNgtscPartialEvaluatorSrcDynamicMod {
     inline def fromUnsupportedSyntax(node: Node): DynamicValue[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnsupportedSyntax")(node.asInstanceOf[js.Any]).asInstanceOf[DynamicValue[Any]]
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliInts.`0`
-    - typings.angularCompilerCli.angularCompilerCliInts.`1`
-    - typings.angularCompilerCli.angularCompilerCliInts.`2`
-    - typings.angularCompilerCli.angularCompilerCliInts.`3`
-    - typings.angularCompilerCli.angularCompilerCliInts.`4`
-    - typings.angularCompilerCli.angularCompilerCliInts.`5`
-    - typings.angularCompilerCli.angularCompilerCliInts.`6`
-    - typings.angularCompilerCli.angularCompilerCliInts.`7`
-    - typings.angularCompilerCli.angularCompilerCliInts.`8`
-    - typings.angularCompilerCli.angularCompilerCliInts.`9`
-  */
-  trait DynamicValueReason extends StObject
   object DynamicValueReason {
     
     /**
       * A function call could not be evaluated as the function's body is not a single return statement.
       */
-    inline def COMPLEX_FUNCTION_CALL: `6` = 6.asInstanceOf[`6`]
+    inline def COMPLEX_FUNCTION_CALL: 6 = 6.asInstanceOf[6]
     
     /**
       * A value could not be determined statically, because it contains a term that could not be
@@ -108,14 +85,14 @@ object srcNgtscPartialEvaluatorSrcDynamicMod {
       * literal with a dynamic expression, an object literal with a spread assignment which could not
       * be determined statically, etc.)
       */
-    inline def DYNAMIC_INPUT: `0` = 0.asInstanceOf[`0`]
+    inline def DYNAMIC_INPUT: 0 = 0.asInstanceOf[0]
     
     /**
       * A string could not be statically evaluated.
       * (E.g. a dynamically constructed object property name or a template literal expression that
       * could not be statically resolved to a primitive value.)
       */
-    inline def DYNAMIC_STRING: `1` = 1.asInstanceOf[`1`]
+    inline def DYNAMIC_STRING: 1 = 1.asInstanceOf[1]
     
     /**
       * A value that could not be determined because it contains type information that cannot be
@@ -131,44 +108,45 @@ object srcNgtscPartialEvaluatorSrcDynamicMod {
       * the value of that string cannot be determined statically. The type `string` permits it to be
       * 'foo', 'bar' or any arbitrary string, so we evaluate it to a DynamicValue.
       */
-    inline def DYNAMIC_TYPE: `7` = 7.asInstanceOf[`7`]
+    inline def DYNAMIC_TYPE: 7 = 7.asInstanceOf[7]
     
     /**
       * An external reference could not be resolved to a value which can be evaluated.
       * For example a call expression for a function declared in `.d.ts`, or accessing native globals
       * such as `window`.
       */
-    inline def EXTERNAL_REFERENCE: `2` = 2.asInstanceOf[`2`]
+    inline def EXTERNAL_REFERENCE: 2 = 2.asInstanceOf[2]
     
     /**
       * A value could be resolved, but is not an acceptable type for the operation being performed.
       *
       * For example, attempting to call a non-callable expression.
       */
-    inline def INVALID_EXPRESSION_TYPE: `5` = 5.asInstanceOf[`5`]
+    inline def INVALID_EXPRESSION_TYPE: 5 = 5.asInstanceOf[5]
     
     /**
       * A value could not be determined because one of the inputs to its evaluation is a synthetically
       * produced value.
       */
-    inline def SYNTHETIC_INPUT: `8` = 8.asInstanceOf[`8`]
+    inline def SYNTHETIC_INPUT: 8 = 8.asInstanceOf[8]
     
     /**
       * A value could not be determined statically for any reason other the above.
       */
-    inline def UNKNOWN: `9` = 9.asInstanceOf[`9`]
+    inline def UNKNOWN: 9 = 9.asInstanceOf[9]
     
     /**
       * A declaration of a `ts.Identifier` could not be found.
       */
-    inline def UNKNOWN_IDENTIFIER: `4` = 4.asInstanceOf[`4`]
+    inline def UNKNOWN_IDENTIFIER: 4 = 4.asInstanceOf[4]
     
     /**
       * Syntax that `StaticInterpreter` doesn't know how to evaluate, for example a type of
       * `ts.Expression` that is not supported.
       */
-    inline def UNSUPPORTED_SYNTAX: `3` = 3.asInstanceOf[`3`]
+    inline def UNSUPPORTED_SYNTAX: 3 = 3.asInstanceOf[3]
   }
+  type DynamicValueReason = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
   
   trait DynamicValueVisitor[R] extends StObject {
     

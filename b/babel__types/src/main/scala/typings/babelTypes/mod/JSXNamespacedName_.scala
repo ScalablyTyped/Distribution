@@ -1,22 +1,19 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.JSXNamespacedName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait JSXNamespacedName_
+trait JSXNamespacedName_
   extends StObject
-     with BaseNode
-     with JSX {
+     with BaseNode {
   
   var name: JSXIdentifier_
   
   var namespace: JSXIdentifier_
   
   @JSName("type")
-  var type_JSXNamespacedName_ : JSXNamespacedName
+  var type_JSXNamespacedName_ : "JSXNamespacedName"
 }
 object JSXNamespacedName_ {
   
@@ -32,6 +29,6 @@ object JSXNamespacedName_ {
     
     inline def setNamespace(value: JSXIdentifier_): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    inline def setType(value: JSXNamespacedName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "JSXNamespacedName"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

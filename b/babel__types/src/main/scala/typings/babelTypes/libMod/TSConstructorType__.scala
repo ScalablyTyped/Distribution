@@ -1,16 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSConstructorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSConstructorType__
   extends StObject
-     with BaseNode
-     with Node
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   var `abstract`: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -21,7 +17,7 @@ trait TSConstructorType__
   var typeParameters: js.UndefOr[TSTypeParameterDeclaration__ | Null] = js.undefined
   
   @JSName("type")
-  var type_TSConstructorType__ : TSConstructorType
+  var type_TSConstructorType__ : "TSConstructorType"
 }
 object TSConstructorType__ {
   
@@ -43,7 +39,7 @@ object TSConstructorType__ {
     
     inline def setParametersVarargs(value: (Identifier_ | RestElement_)*): Self = StObject.set(x, "parameters", js.Array(value*))
     
-    inline def setType(value: TSConstructorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSConstructorType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TSTypeAnnotation__): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

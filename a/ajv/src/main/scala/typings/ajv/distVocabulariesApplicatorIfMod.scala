@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.`if`
 import typings.ajv.anon.FailingKeyword
 import typings.ajv.distTypesMod.AnySchema
 import typings.ajv.distTypesMod.CodeKeywordDefinition
@@ -16,7 +15,7 @@ object distVocabulariesApplicatorIfMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type IfKeywordError = ErrorObject[`if`, FailingKeyword, AnySchema]
+  type IfKeywordError = ErrorObject["if", FailingKeyword, AnySchema]
   
   type _To = CodeKeywordDefinition
   

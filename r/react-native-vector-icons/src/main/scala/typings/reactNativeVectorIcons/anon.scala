@@ -20,30 +20,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeVectorIcons.iconMod.Icon
 import typings.reactNativeVectorIcons.iconMod.ImageSource
-import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`0`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`1`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`2`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`3`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.`no-hide-descendants`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.all
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.assertive
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.auto
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.balanced
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.clip
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.email
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.full
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.head
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.highQuality
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.link
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.middle
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.no
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.none
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.normal
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.phoneNumber
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.polite
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.simple
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.tail
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,13 +28,13 @@ object anon {
   
   trait Brand extends StObject {
     
-    var brand: `3`
+    var brand: 3
     
-    var light: `1`
+    var light: 1
     
-    var regular: `0`
+    var regular: 0
     
-    var solid: `2`
+    var solid: 2
   }
   object Brand {
     
@@ -69,13 +45,13 @@ object anon {
     
     extension [Self <: Brand](x: Self) {
       
-      inline def setBrand(value: `3`): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+      inline def setBrand(value: 3): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
-      inline def setLight(value: `1`): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+      inline def setLight(value: 1): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
       
-      inline def setRegular(value: `0`): Self = StObject.set(x, "regular", value.asInstanceOf[js.Any])
+      inline def setRegular(value: 0): Self = StObject.set(x, "regular", value.asInstanceOf[js.Any])
       
-      inline def setSolid(value: `2`): Self = StObject.set(x, "solid", value.asInstanceOf[js.Any])
+      inline def setSolid(value: 2): Self = StObject.set(x, "solid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,7 +142,7 @@ object anon {
       * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
       * @platform android
       */
-    var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+    var accessibilityLiveRegion: js.UndefOr["none" | "polite" | "assertive"] = js.undefined
     
     /**
       * Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on Android the type of element that is focused on.
@@ -215,7 +191,7 @@ object anon {
     /**
       * Hyphenation strategy
       */
-    var android_hyphenationFrequency: js.UndefOr[normal | none | full] = js.undefined
+    var android_hyphenationFrequency: js.UndefOr["normal" | "none" | "full"] = js.undefined
     
     /**
       * Determines the type of background drawable that's going to be used to display feedback.
@@ -264,7 +240,7 @@ object anon {
       * Determines the types of data converted to clickable URLs in the text element.
       * By default no data types are detected.
       */
-    var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all] = js.undefined
+    var dataDetectorType: js.UndefOr[Null | "phoneNumber" | "link" | "email" | "none" | "all"] = js.undefined
     
     /**
       * Delay in ms, from onPressIn, before onLongPress is called.
@@ -309,7 +285,7 @@ object anon {
       *
       * > `clip` is working only for iOS
       */
-    var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
+    var ellipsizeMode: js.UndefOr["head" | "middle" | "tail" | "clip"] = js.undefined
     
     /**
       * *(Apple TV only)* TV preferred focus (see documentation for the View component).
@@ -346,7 +322,7 @@ object anon {
       *      'no' - The view is not important for accessibility.
       *      'no-hide-descendants' - The view is not important for accessibility, nor are any of its descendant views.
       */
-    var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+    var importantForAccessibility: js.UndefOr["auto" | "yes" | "no" | "no-hide-descendants"] = js.undefined
     
     var light: js.UndefOr[Boolean] = js.undefined
     
@@ -354,7 +330,7 @@ object anon {
       * Line Break mode. Works only with numberOfLines.
       * clip is working only for iOS
       */
-    var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.undefined
+    var lineBreakMode: js.UndefOr["head" | "middle" | "tail" | "clip"] = js.undefined
     
     /**
       * Specifies largest possible scale a font can reach when allowFontScaling is enabled. Possible values:
@@ -569,7 +545,7 @@ object anon {
       * Set text break strategy on Android API Level 23+
       * default is `highQuality`.
       */
-    var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
+    var textBreakStrategy: js.UndefOr["simple" | "highQuality" | "balanced"] = js.undefined
     
     /**
       * If true, doesn't play a system sound on touch.
@@ -626,7 +602,7 @@ object anon {
       
       inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
       
-      inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+      inline def setAccessibilityLiveRegion(value: "none" | "polite" | "assertive"): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
       
       inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
       
@@ -662,7 +638,7 @@ object anon {
       
       inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
       
-      inline def setAndroid_hyphenationFrequency(value: normal | none | full): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
+      inline def setAndroid_hyphenationFrequency(value: "normal" | "none" | "full"): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
       
       inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
       
@@ -690,7 +666,7 @@ object anon {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setDataDetectorType(value: phoneNumber | link | email | none | all): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
+      inline def setDataDetectorType(value: "phoneNumber" | "link" | "email" | "none" | "all"): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
       
       inline def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
       
@@ -712,7 +688,7 @@ object anon {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
+      inline def setEllipsizeMode(value: "head" | "middle" | "tail" | "clip"): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
       
       inline def setEllipsizeModeUndefined: Self = StObject.set(x, "ellipsizeMode", js.undefined)
       
@@ -728,7 +704,7 @@ object anon {
       
       inline def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
       
-      inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+      inline def setImportantForAccessibility(value: "auto" | "yes" | "no" | "no-hide-descendants"): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
       
       inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
       
@@ -736,7 +712,7 @@ object anon {
       
       inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
       
-      inline def setLineBreakMode(value: head | middle | tail | clip): Self = StObject.set(x, "lineBreakMode", value.asInstanceOf[js.Any])
+      inline def setLineBreakMode(value: "head" | "middle" | "tail" | "clip"): Self = StObject.set(x, "lineBreakMode", value.asInstanceOf[js.Any])
       
       inline def setLineBreakModeUndefined: Self = StObject.set(x, "lineBreakMode", js.undefined)
       
@@ -868,7 +844,7 @@ object anon {
       
       inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
       
-      inline def setTextBreakStrategy(value: simple | highQuality | balanced): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
+      inline def setTextBreakStrategy(value: "simple" | "highQuality" | "balanced"): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
       
       inline def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
       

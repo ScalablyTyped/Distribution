@@ -1,7 +1,5 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreStrings.condense
-import typings.vueCompilerCore.vueCompilerCoreStrings.preserve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,7 +65,7 @@ trait ParserOptions
   /**
     * Whitespace handling strategy
     */
-  var whitespace: js.UndefOr[preserve | condense] = js.undefined
+  var whitespace: js.UndefOr["preserve" | "condense"] = js.undefined
 }
 object ParserOptions {
   
@@ -118,7 +116,7 @@ object ParserOptions {
     
     inline def setIsVoidTagUndefined: Self = StObject.set(x, "isVoidTag", js.undefined)
     
-    inline def setWhitespace(value: preserve | condense): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
+    inline def setWhitespace(value: "preserve" | "condense"): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
     
     inline def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
   }

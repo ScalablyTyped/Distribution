@@ -7,12 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ArrayLiteralExpression
   extends StObject
-     with PrimaryExpression
-     with ArrayBindingOrAssignmentPattern
-     with AssignmentPattern
-     with DestructuringPattern
-     with JsonObjectExpression
-     with _ArrayBindingOrAssignmentElement {
+     with PrimaryExpression {
   
   val elements: NodeArray[Expression] = js.native
   

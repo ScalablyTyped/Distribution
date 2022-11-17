@@ -1,7 +1,5 @@
 package typings.rangeParser
 
-import typings.rangeParser.rangeParserInts.`-1`
-import typings.rangeParser.rangeParserInts.`-2`
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -70,7 +68,7 @@ object mod {
   
   type Result = ResultUnsatisfiable | ResultInvalid
   
-  type ResultInvalid = `-2`
+  type ResultInvalid = -2
   
-  type ResultUnsatisfiable = `-1`
+  type ResultUnsatisfiable = -1
 }

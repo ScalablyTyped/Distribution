@@ -1,16 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSConstructSignatureDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSConstructSignatureDeclaration_
+trait TSConstructSignatureDeclaration_
   extends StObject
-     with BaseNode
-     with TSTypeElement
-     with TypeScript {
+     with BaseNode {
   
   var parameters: js.Array[Identifier_ | RestElement_]
   
@@ -19,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var typeParameters: TSTypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_TSConstructSignatureDeclaration_ : TSConstructSignatureDeclaration
+  var type_TSConstructSignatureDeclaration_ : "TSConstructSignatureDeclaration"
 }
 object TSConstructSignatureDeclaration_ {
   
@@ -35,7 +31,7 @@ object TSConstructSignatureDeclaration_ {
     
     inline def setParametersVarargs(value: (Identifier_ | RestElement_)*): Self = StObject.set(x, "parameters", js.Array(value*))
     
-    inline def setType(value: TSConstructSignatureDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSConstructSignatureDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TSTypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

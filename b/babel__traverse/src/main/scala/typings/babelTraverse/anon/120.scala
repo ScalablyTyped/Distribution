@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSTypeQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `120` extends StObject {
   
-  var `type`: TSTypeQuery
+  var `type`: "TSTypeQuery"
 }
 object `120` {
   
@@ -19,6 +18,6 @@ object `120` {
   
   extension [Self <: `120`](x: Self) {
     
-    inline def setType(value: TSTypeQuery): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSTypeQuery"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

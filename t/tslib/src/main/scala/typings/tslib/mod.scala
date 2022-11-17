@@ -9,9 +9,6 @@ import typings.tslib.anon.Has
 import typings.tslib.anon.Set
 import typings.tslib.anon.Value
 import typings.tslib.anon.`0`
-import typings.tslib.tslibStrings.a
-import typings.tslib.tslibStrings.f
-import typings.tslib.tslibStrings.m
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,27 +31,32 @@ object mod {
   
   inline def awaiter(thisArg: Any, _arguments: Any, P: js.Function, generator: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__awaiter")(thisArg.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any], P.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[Any]
   
+  @scala.annotation.targetName("classPrivateFieldGet_m")
+  inline def classPrivateFieldGet[T /* <: Instantiable1[/* args (repeated) */ Any, Any] */, V /* <: js.Function1[/* repeated */ Any, Any] */](receiver: T, state: T, kind: "m", f: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldGet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
+  @scala.annotation.targetName("classPrivateFieldGet_a")
+  inline def classPrivateFieldGet[T /* <: Instantiable1[/* args (repeated) */ Any, Any] */, V](receiver: T, state: T, kind: "a", f: js.Function0[V]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldGet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
+  @scala.annotation.targetName("classPrivateFieldGet_f")
+  inline def classPrivateFieldGet[T /* <: Instantiable1[/* args (repeated) */ Any, Any] */, V](receiver: T, state: T, kind: "f", f: Value[V]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldGet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
   inline def classPrivateFieldGet[T /* <: js.Object */, V](receiver: T, state: Get[T, V]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldGet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[V]
-  
-  inline def classPrivateFieldGet_a[T /* <: Instantiable1[/* args (repeated) */ Any, Any] */, V](receiver: T, state: T, kind: a, f: js.Function0[V]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldGet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
-  inline def classPrivateFieldGet_a[T /* <: js.Object */, V](receiver: T, state: Has[T], kind: a, f: js.Function0[V]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldGet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
-  
-  inline def classPrivateFieldGet_f[T /* <: Instantiable1[/* args (repeated) */ Any, Any] */, V](receiver: T, state: T, kind: f, f: Value[V]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldGet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
-  inline def classPrivateFieldGet_f[T /* <: js.Object */, V](receiver: T, state: Get[T, V], kind: f): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldGet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[V]
-  
-  inline def classPrivateFieldGet_m[T /* <: Instantiable1[/* args (repeated) */ Any, Any] */, V /* <: js.Function1[/* repeated */ Any, Any] */](receiver: T, state: T, kind: m, f: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldGet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
-  inline def classPrivateFieldGet_m[T /* <: js.Object */, V /* <: js.Function1[/* repeated */ Any, Any] */](receiver: T, state: Has[T], kind: m, f: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldGet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
+  @scala.annotation.targetName("classPrivateFieldGet_f")
+  inline def classPrivateFieldGet[T /* <: js.Object */, V](receiver: T, state: Get[T, V], kind: "f"): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldGet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[V]
+  @scala.annotation.targetName("classPrivateFieldGet_m")
+  inline def classPrivateFieldGet[T /* <: js.Object */, V /* <: js.Function1[/* repeated */ Any, Any] */](receiver: T, state: Has[T], kind: "m", f: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldGet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
+  @scala.annotation.targetName("classPrivateFieldGet_a")
+  inline def classPrivateFieldGet[T /* <: js.Object */, V](receiver: T, state: Has[T], kind: "a", f: js.Function0[V]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldGet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
   
   inline def classPrivateFieldIn(state: Instantiable1[/* args (repeated) */ Any, Any], receiver: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldIn")(state.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def classPrivateFieldIn(state: `0`, receiver: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldIn")(state.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  @scala.annotation.targetName("classPrivateFieldSet_a")
+  inline def classPrivateFieldSet[T /* <: Instantiable1[/* args (repeated) */ Any, Any] */, V](receiver: T, state: T, value: V, kind: "a", f: js.Function1[/* v */ V, Unit]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldSet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], value.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
+  @scala.annotation.targetName("classPrivateFieldSet_f")
+  inline def classPrivateFieldSet[T /* <: Instantiable1[/* args (repeated) */ Any, Any] */, V](receiver: T, state: T, value: V, kind: "f", f: Value[V]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldSet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], value.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
+  @scala.annotation.targetName("classPrivateFieldSet_a")
+  inline def classPrivateFieldSet[T /* <: js.Object */, V](receiver: T, state: Has[T], value: V, kind: "a", f: js.Function1[/* v */ V, Unit]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldSet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], value.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
   inline def classPrivateFieldSet[T /* <: js.Object */, V](receiver: T, state: Set[T, V], value: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldSet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[V]
-  
-  inline def classPrivateFieldSet_a[T /* <: Instantiable1[/* args (repeated) */ Any, Any] */, V](receiver: T, state: T, value: V, kind: a, f: js.Function1[/* v */ V, Unit]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldSet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], value.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
-  inline def classPrivateFieldSet_a[T /* <: js.Object */, V](receiver: T, state: Has[T], value: V, kind: a, f: js.Function1[/* v */ V, Unit]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldSet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], value.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
-  
-  inline def classPrivateFieldSet_f[T /* <: Instantiable1[/* args (repeated) */ Any, Any] */, V](receiver: T, state: T, value: V, kind: f, f: Value[V]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldSet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], value.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[V]
-  inline def classPrivateFieldSet_f[T /* <: js.Object */, V](receiver: T, state: Set[T, V], value: V, kind: f): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldSet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], value.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[V]
+  @scala.annotation.targetName("classPrivateFieldSet_f")
+  inline def classPrivateFieldSet[T /* <: js.Object */, V](receiver: T, state: Set[T, V], value: V, kind: "f"): V = (^.asInstanceOf[js.Dynamic].applyDynamic("__classPrivateFieldSet")(receiver.asInstanceOf[js.Any], state.asInstanceOf[js.Any], value.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[V]
   
   inline def createBinding(`object`: js.Object, target: js.Object, key: PropertyKey): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__createBinding")(`object`.asInstanceOf[js.Any], target.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def createBinding(`object`: js.Object, target: js.Object, key: PropertyKey, objectKey: PropertyKey): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__createBinding")(`object`.asInstanceOf[js.Any], target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], objectKey.asInstanceOf[js.Any])).asInstanceOf[Unit]

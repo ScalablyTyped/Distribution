@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DirectiveSymbol
   extends StObject
-     with DirectiveInScope
-     with Symbol {
+     with DirectiveInScope {
   
   var kind: Directive
   

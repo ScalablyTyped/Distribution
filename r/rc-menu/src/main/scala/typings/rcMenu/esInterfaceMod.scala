@@ -1,8 +1,6 @@
 package typings.rcMenu
 
 import typings.rcMenu.anon.DomEvent
-import typings.rcMenu.rcMenuStrings.divider
-import typings.rcMenu.rcMenuStrings.group
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
@@ -47,23 +45,15 @@ object esInterfaceMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcMenu.esInterfaceMod.SubMenuType
-    - typings.rcMenu.esInterfaceMod.MenuItemType
-    - typings.rcMenu.esInterfaceMod.MenuItemGroupType
-    - typings.rcMenu.esInterfaceMod.MenuDividerType
-    - scala.Null
-  */
-  type ItemType = _ItemType | Null
+  type ItemType = SubMenuType | MenuItemType | MenuItemGroupType | MenuDividerType | Null
   
   type MenuClickEventHandler = js.Function1[/* info */ MenuInfo, Unit]
   
   trait MenuDividerType
     extends StObject
-       with ItemSharedProps
-       with _ItemType {
+       with ItemSharedProps {
     
-    var `type`: divider
+    var `type`: "divider"
   }
   object MenuDividerType {
     
@@ -75,7 +65,7 @@ object esInterfaceMod {
     
     extension [Self <: MenuDividerType](x: Self) {
       
-      inline def setType(value: divider): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "divider"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,14 +110,13 @@ object esInterfaceMod {
   
   trait MenuItemGroupType
     extends StObject
-       with ItemSharedProps
-       with _ItemType {
+       with ItemSharedProps {
     
     var children: js.UndefOr[js.Array[ItemType]] = js.undefined
     
     var label: js.UndefOr[ReactNode] = js.undefined
     
-    var `type`: group
+    var `type`: "group"
   }
   object MenuItemGroupType {
     
@@ -149,14 +138,13 @@ object esInterfaceMod {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setType(value: group): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "group"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait MenuItemType
     extends StObject
-       with ItemSharedProps
-       with _ItemType {
+       with ItemSharedProps {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -211,20 +199,15 @@ object esInterfaceMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcMenu.rcMenuStrings.horizontal
-    - typings.rcMenu.rcMenuStrings.vertical
-    - typings.rcMenu.rcMenuStrings.`inline`
-  */
-  trait MenuMode extends StObject
   object MenuMode {
     
-    inline def horizontal: typings.rcMenu.rcMenuStrings.horizontal = "horizontal".asInstanceOf[typings.rcMenu.rcMenuStrings.horizontal]
+    inline def horizontal: "horizontal" = "horizontal".asInstanceOf["horizontal"]
     
-    inline def `inline`: typings.rcMenu.rcMenuStrings.`inline` = "inline".asInstanceOf[typings.rcMenu.rcMenuStrings.`inline`]
+    inline def `inline`: "inline" = "inline".asInstanceOf["inline"]
     
-    inline def vertical: typings.rcMenu.rcMenuStrings.vertical = "vertical".asInstanceOf[typings.rcMenu.rcMenuStrings.vertical]
+    inline def vertical: "vertical" = "vertical".asInstanceOf["vertical"]
   }
+  type MenuMode = "horizontal" | "vertical" | "inline"
   
   @js.native
   trait MenuRef extends StObject {
@@ -330,8 +313,7 @@ object esInterfaceMod {
   
   trait SubMenuType
     extends StObject
-       with ItemSharedProps
-       with _ItemType {
+       with ItemSharedProps {
     
     var children: js.Array[ItemType]
     
@@ -438,41 +420,11 @@ object esInterfaceMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcMenu.rcMenuStrings.click
-    - typings.rcMenu.rcMenuStrings.hover
-  */
-  trait TriggerSubMenuAction extends StObject
   object TriggerSubMenuAction {
     
-    inline def click: typings.rcMenu.rcMenuStrings.click = "click".asInstanceOf[typings.rcMenu.rcMenuStrings.click]
+    inline def click: "click" = "click".asInstanceOf["click"]
     
-    inline def hover: typings.rcMenu.rcMenuStrings.hover = "hover".asInstanceOf[typings.rcMenu.rcMenuStrings.hover]
+    inline def hover: "hover" = "hover".asInstanceOf["hover"]
   }
-  
-  trait _ItemType extends StObject
-  object _ItemType {
-    
-    inline def MenuDividerType(): typings.rcMenu.esInterfaceMod.MenuDividerType = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("divider")
-      __obj.asInstanceOf[typings.rcMenu.esInterfaceMod.MenuDividerType]
-    }
-    
-    inline def MenuItemGroupType(): typings.rcMenu.esInterfaceMod.MenuItemGroupType = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("group")
-      __obj.asInstanceOf[typings.rcMenu.esInterfaceMod.MenuItemGroupType]
-    }
-    
-    inline def MenuItemType(key: Key): typings.rcMenu.esInterfaceMod.MenuItemType = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.rcMenu.esInterfaceMod.MenuItemType]
-    }
-    
-    inline def SubMenuType(children: js.Array[ItemType], key: String): typings.rcMenu.esInterfaceMod.SubMenuType = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.rcMenu.esInterfaceMod.SubMenuType]
-    }
-  }
+  type TriggerSubMenuAction = "click" | "hover"
 }

@@ -1,7 +1,5 @@
 package typings.materialUi.MaterialUI
 
-import typings.materialUi.materialUiStrings.after
-import typings.materialUi.materialUiStrings.before
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
@@ -40,7 +38,7 @@ trait RaisedButtonProps
   
   var labelColor: js.UndefOr[String] = js.undefined
   
-  var labelPosition: js.UndefOr[before | after] = js.undefined
+  var labelPosition: js.UndefOr["before" | "after"] = js.undefined
   
   var labelStyle: js.UndefOr[CSSProperties] = js.undefined
   
@@ -117,7 +115,7 @@ object RaisedButtonProps {
     
     inline def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
-    inline def setLabelPosition(value: before | after): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+    inline def setLabelPosition(value: "before" | "after"): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
     
     inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
     

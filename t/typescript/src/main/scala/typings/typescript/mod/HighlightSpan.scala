@@ -1,6 +1,5 @@
 package typings.typescript.mod
 
-import typings.typescript.typescriptBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait HighlightSpan extends StObject {
   
   var fileName: js.UndefOr[java.lang.String] = js.undefined
   
-  var isInString: js.UndefOr[`true`] = js.undefined
+  var isInString: js.UndefOr[true] = js.undefined
   
   var kind: HighlightSpanKind
   
@@ -34,7 +33,7 @@ object HighlightSpan {
     
     inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    inline def setIsInString(value: `true`): Self = StObject.set(x, "isInString", value.asInstanceOf[js.Any])
+    inline def setIsInString(value: true): Self = StObject.set(x, "isInString", value.asInstanceOf[js.Any])
     
     inline def setIsInStringUndefined: Self = StObject.set(x, "isInString", js.undefined)
     

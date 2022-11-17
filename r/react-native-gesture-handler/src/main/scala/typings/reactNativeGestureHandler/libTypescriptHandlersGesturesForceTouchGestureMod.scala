@@ -5,7 +5,6 @@ import typings.reactNativeGestureHandler.libTypescriptHandlersForceTouchGestureH
 import typings.reactNativeGestureHandler.libTypescriptHandlersForceTouchGestureHandlerMod.ForceTouchGestureHandlerEventPayload
 import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod.BaseGestureConfig
 import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod.ContinousBaseGesture
-import typings.reactNativeGestureHandler.libTypescriptJestUtilsJestUtilsMod.AllGestures
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,9 +14,7 @@ object libTypescriptHandlersGesturesForceTouchGestureMod {
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/forceTouchGesture", "ForceTouchGesture")
   @js.native
-  open class ForceTouchGesture ()
-    extends ContinousBaseGesture[ForceTouchGestureHandlerEventPayload, ForceTouchGestureChangeEventPayload]
-       with AllGestures {
+  open class ForceTouchGesture () extends ContinousBaseGesture[ForceTouchGestureHandlerEventPayload, ForceTouchGestureChangeEventPayload] {
     
     @JSName("config")
     var config_ForceTouchGesture: BaseGestureConfig & ForceTouchGestureConfig = js.native

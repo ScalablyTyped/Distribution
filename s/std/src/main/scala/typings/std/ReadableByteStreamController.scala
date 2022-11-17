@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadableByteStreamController
-  extends StObject
-     with ReadableStreamController[Any] {
+trait ReadableByteStreamController extends StObject {
   
   /* standard dom */
   val byobRequest: ReadableStreamBYOBRequest | Null = js.native

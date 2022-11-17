@@ -17,11 +17,6 @@ import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectableDeclaration
 import typings.angularCore.mod.ɵɵInjectorDeclaration
 import typings.angularCore.mod.ɵɵNgModuleDeclaration
-import typings.angularPlatformBrowser.angularPlatformBrowserStrings.BrowserAnimations
-import typings.angularPlatformBrowser.angularPlatformBrowserStrings.NoopAnimations
-import typings.angularPlatformBrowser.angularPlatformBrowserStrings.body
-import typings.angularPlatformBrowser.angularPlatformBrowserStrings.document
-import typings.angularPlatformBrowser.angularPlatformBrowserStrings.window
 import typings.angularPlatformBrowser.anon.TypeofBrowserModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,7 +30,7 @@ object animationsMod {
   
   @JSImport("@angular/platform-browser/animations", "ANIMATION_MODULE_TYPE")
   @js.native
-  val ANIMATION_MODULE_TYPE: InjectionToken[NoopAnimations | BrowserAnimations] = js.native
+  val ANIMATION_MODULE_TYPE: InjectionToken["NoopAnimations" | "BrowserAnimations"] = js.native
   
   @JSImport("@angular/platform-browser/animations", "BrowserAnimationsModule")
   @js.native
@@ -133,8 +128,6 @@ object animationsMod {
     ) = this()
     
     var factory: ɵAnimationRendererFactory = js.native
-    
-    def listen(target: window | document | body, eventName: String, callback: js.Function1[/* event */ Any, Any]): js.Function0[Unit] = js.native
   }
   
   @JSImport("@angular/platform-browser/animations", "\u0275AnimationRendererFactory")

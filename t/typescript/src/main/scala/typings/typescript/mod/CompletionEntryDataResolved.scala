@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompletionEntryDataResolved
   extends StObject
-     with CompletionEntryDataAutoImport
-     with CompletionEntryData {
+     with CompletionEntryDataAutoImport {
   
   @JSName("moduleSpecifier")
   var moduleSpecifier_CompletionEntryDataResolved: java.lang.String

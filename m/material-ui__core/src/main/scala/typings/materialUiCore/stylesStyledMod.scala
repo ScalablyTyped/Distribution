@@ -2,9 +2,6 @@ package typings.materialUiCore
 
 import typings.materialUiCore.anon.ThemeTheme
 import typings.materialUiCore.anon.`12`
-import typings.materialUiCore.materialUiCoreStrings.className
-import typings.materialUiCore.materialUiCoreStrings.classes
-import typings.materialUiCore.materialUiCoreStrings.root
 import typings.materialUiStyles.withStylesWithStylesMod.CreateCSSProperties
 import typings.materialUiStyles.withStylesWithStylesMod.StyledComponentProps
 import typings.materialUiStyles.withStylesWithStylesMod.WithStylesOptions
@@ -31,8 +28,8 @@ object stylesStyledMod {
     ComponentType[
       (Omit[
         LibraryManagedAttributes[Component, ComponentProps[Component]], 
-        classes | className
-      ]) & StyledComponentProps[root] & `12` & (/* import warning: importer.ImportType#apply Failed type conversion: {} extends {  theme :any} ? @material-ui/types.@material-ui/types.Omit<{}, 'theme'> & {  theme :any | undefined} : {} */ js.Any)
+        "classes" | "className"
+      ]) & StyledComponentProps["root"] & `12` & (/* import warning: importer.ImportType#apply Failed type conversion: {} extends {  theme :any} ? @material-ui/types.@material-ui/types.Omit<{}, 'theme'> & {  theme :any | undefined} : {} */ js.Any)
     ]
   ]
   

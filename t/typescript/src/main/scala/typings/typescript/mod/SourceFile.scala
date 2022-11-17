@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SourceFile
   extends StObject
-     with Declaration
-     with BlockLike {
+     with Declaration {
   
   var amdDependencies: js.Array[AmdDependency] = js.native
   

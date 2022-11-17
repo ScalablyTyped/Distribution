@@ -32,6 +32,8 @@ object ReactiveFormsModule {
     * @param opts An object of configuration options
     * * `warnOnNgModelWithFormControl` Configures when to emit a warning when an `ngModel`
     * binding is used with reactive form directives.
+    * * `callSetDisabledState` Configures whether to `always` call `setDisabledState`, which is more
+    * correct, or to only call it `whenDisabled`, which is the legacy behavior.
     */
   inline def withConfig(opts: WarnOnNgModelWithFormControl): ModuleWithProviders[ReactiveFormsModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(opts.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[ReactiveFormsModule]]
   

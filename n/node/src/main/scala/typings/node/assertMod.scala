@@ -3,15 +3,6 @@ package typings.node
 import org.scalablytyped.runtime.Instantiable0
 import typings.node.anon.Actual
 import typings.node.anon.DeepEqual
-import typings.node.nodeStrings.ERR_ASSERTION
-import typings.node.nodeStrings.deepEqual
-import typings.node.nodeStrings.deepStrictEqual
-import typings.node.nodeStrings.equal
-import typings.node.nodeStrings.ifError
-import typings.node.nodeStrings.notDeepEqual
-import typings.node.nodeStrings.notEqual
-import typings.node.nodeStrings.ok
-import typings.node.nodeStrings.strictEqual
 import typings.std.Error
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -46,7 +37,7 @@ object assertMod {
     
     var actual: Any = js.native
     
-    var code: ERR_ASSERTION = js.native
+    var code: "ERR_ASSERTION" = js.native
     
     var expected: Any = js.native
     
@@ -849,7 +840,7 @@ object assertMod {
   @js.native
   val strict: (Omit[
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assert */ Any, 
-    equal | notEqual | deepEqual | notDeepEqual | ok | strictEqual | deepStrictEqual | ifError | typings.node.nodeStrings.strict
+    "equal" | "notEqual" | "deepEqual" | "notDeepEqual" | "ok" | "strictEqual" | "deepStrictEqual" | "ifError" | "strict"
   ]) & DeepEqual = js.native
   
   /**

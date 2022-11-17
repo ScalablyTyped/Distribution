@@ -1,14 +1,5 @@
 package typings.node.anon
 
-import typings.node.nodeStrings.deepEqual
-import typings.node.nodeStrings.deepStrictEqual
-import typings.node.nodeStrings.equal
-import typings.node.nodeStrings.ifError
-import typings.node.nodeStrings.notDeepEqual
-import typings.node.nodeStrings.notEqual
-import typings.node.nodeStrings.ok
-import typings.node.nodeStrings.strict
-import typings.node.nodeStrings.strictEqual
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -97,6 +88,6 @@ trait DeepEqual extends StObject {
   @JSName("strict")
   var strict_Original: (Omit[
     /* import warning: importer.ImportType#apply Failed type conversion: typeof assert */ js.Any, 
-    equal | notEqual | deepEqual | notDeepEqual | ok | strictEqual | deepStrictEqual | ifError | strict
+    "equal" | "notEqual" | "deepEqual" | "notDeepEqual" | "ok" | "strictEqual" | "deepStrictEqual" | "ifError" | "strict"
   ]) & Call = js.native
 }

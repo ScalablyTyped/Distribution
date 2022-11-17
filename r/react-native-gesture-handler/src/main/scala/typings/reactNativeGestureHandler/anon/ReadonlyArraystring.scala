@@ -55,12 +55,7 @@ trait ReadonlyArraystring extends StObject {
     Double
   ]
   
-  val flat: js.ThisFunction0[
-    /* this */ Any, 
-    js.Array[
-      FlatArray[Any, typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`]
-    ]
-  ]
+  val flat: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, 1]]]
   
   val flatMap: js.Function1[
     /* callback */ js.ThisFunction3[
@@ -174,12 +169,7 @@ object ReadonlyArraystring {
       /* is string */ Boolean
     ] => js.UndefOr[String],
     findIndex: /* predicate */ js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], Any] => Double,
-    flat: js.ThisFunction0[
-      /* this */ Any, 
-      js.Array[
-        FlatArray[Any, typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`]
-      ]
-    ],
+    flat: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, 1]]],
     flatMap: /* callback */ js.ThisFunction3[
       /* this */ Unit, 
       /* value */ String, 
@@ -271,14 +261,7 @@ object ReadonlyArraystring {
       value: /* predicate */ js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], Any] => Double
     ): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
     
-    inline def setFlat(
-      value: js.ThisFunction0[
-          /* this */ Any, 
-          js.Array[
-            FlatArray[Any, typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`]
-          ]
-        ]
-    ): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+    inline def setFlat(value: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, 1]]]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
     inline def setFlatMap(
       value: /* callback */ js.ThisFunction3[

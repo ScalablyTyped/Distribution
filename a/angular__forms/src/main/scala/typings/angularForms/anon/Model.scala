@@ -1,22 +1,18 @@
 package typings.angularForms.anon
 
-import typings.angularForms.angularFormsStrings.disabled_
-import typings.angularForms.angularFormsStrings.name
-import typings.angularForms.angularFormsStrings.ngModel
-import typings.angularForms.angularFormsStrings.ngModelOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Model extends StObject {
   
-  var isDisabled: disabled_
+  var isDisabled: "disabled"
   
-  var model: ngModel
+  var model: "ngModel"
   
-  var name: typings.angularForms.angularFormsStrings.name
+  var name: "name"
   
-  var options: ngModelOptions
+  var options: "ngModelOptions"
 }
 object Model {
   
@@ -27,12 +23,12 @@ object Model {
   
   extension [Self <: Model](x: Self) {
     
-    inline def setIsDisabled(value: disabled_): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+    inline def setIsDisabled(value: "disabled"): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
-    inline def setModel(value: ngModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: "ngModel"): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    inline def setName(value: name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: "name"): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setOptions(value: ngModelOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: "ngModelOptions"): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

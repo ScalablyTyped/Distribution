@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.percent
 import typings.angularCommon.mod.PercentPipe
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
@@ -17,5 +15,5 @@ trait TypeofPercentPipe
   
   var ɵfac: ɵɵFactoryDeclaration[PercentPipe, scala.Nothing] = js.native
   
-  var ɵpipe: ɵɵPipeDeclaration[PercentPipe, percent, `true`] = js.native
+  var ɵpipe: ɵɵPipeDeclaration[PercentPipe, "percent", true] = js.native
 }

@@ -1,5 +1,9 @@
 package typings.three
 
+import typings.three.srcThreeMod.Color
+import typings.three.srcThreeMod.Vector2
+import typings.three.srcThreeMod.Vector3
+import typings.three.srcThreeMod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,14 +16,7 @@ object examplesJsmNodesGeometryRangeNodeMod {
     def this(min: RangeModeBound, max: RangeModeBound) = this()
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - scala.Double
-    - typings.three.srcThreeMod.Color
-    - typings.three.srcThreeMod.Vector2
-    - typings.three.srcThreeMod.Vector3
-    - typings.three.srcThreeMod.Vector4
-  */
-  type RangeModeBound = _RangeModeBound | Double
+  type RangeModeBound = Double | Color | Vector2 | Vector3 | Vector4
   
   @js.native
   trait RangeNode
@@ -31,6 +28,4 @@ object examplesJsmNodesGeometryRangeNodeMod {
     
     var min: RangeModeBound = js.native
   }
-  
-  trait _RangeModeBound extends StObject
 }

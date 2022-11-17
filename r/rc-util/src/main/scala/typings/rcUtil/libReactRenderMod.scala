@@ -1,5 +1,7 @@
 package typings.rcUtil
 
+import typings.rcUtil.anon.DocumentFragmentMARKRootu
+import typings.rcUtil.anon.ElementMARKRootundefined
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,9 +21,5 @@ object libReactRenderMod {
   
   inline def unmount(container: ContainerType): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(container.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcUtil.anon.ElementMARKRootundefined
-    - typings.rcUtil.anon.DocumentFragmentMARKRootu
-  */
-  trait ContainerType extends StObject
+  type ContainerType = ElementMARKRootundefined | DocumentFragmentMARKRootu
 }

@@ -11,9 +11,6 @@ import typings.rcPicker.esInterfaceMod.PanelRefProps
 import typings.rcPicker.esPanelsDatePanelDateBodyMod.DateRender
 import typings.rcPicker.esPanelsTimePanelMod.SharedTimeProps
 import typings.rcPicker.esUtilsUiUtilMod.KeyboardConfig
-import typings.rcPicker.rcPickerStrings.key
-import typings.rcPicker.rcPickerStrings.mouse
-import typings.rcPicker.rcPickerStrings.submit
 import typings.react.mod.MutableRefObject
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
@@ -86,7 +83,7 @@ object esPanelsDatetimePanelMod {
       generateConfig: GenerateConfig[DateType],
       locale: Locale,
       onPanelChange: (/* mode */ PanelMode | Null, /* viewValue */ DateType) => Unit,
-      onSelect: (DateType, /* type */ key | mouse | submit) => Unit,
+      onSelect: (DateType, /* type */ "key" | "mouse" | "submit") => Unit,
       onViewDateChange: /* value */ DateType => Unit,
       operationRef: MutableRefObject[PanelRefProps],
       prefixCls: String,
@@ -136,7 +133,7 @@ object esPanelsDatetimePanelMod {
       
       inline def setOnPanelChange(value: (/* mode */ PanelMode | Null, /* viewValue */ DateType) => Unit): Self = StObject.set(x, "onPanelChange", js.Any.fromFunction2(value))
       
-      inline def setOnSelect(value: (DateType, /* type */ key | mouse | submit) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (DateType, /* type */ "key" | "mouse" | "submit") => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       inline def setOnViewDateChange(value: /* value */ DateType => Unit): Self = StObject.set(x, "onViewDateChange", js.Any.fromFunction1(value))
       

@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationLeafRoute[Params]
-  extends StObject
-     with NavigationRoute[Params] {
+trait NavigationLeafRoute[Params] extends StObject {
   
   /**
     * Index that represents the depth of the stack

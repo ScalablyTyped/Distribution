@@ -1,19 +1,15 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSIntersectionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSIntersectionType__
   extends StObject
-     with BaseNode
-     with Node
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   @JSName("type")
-  var type_TSIntersectionType__ : TSIntersectionType
+  var type_TSIntersectionType__ : "TSIntersectionType"
   
   var types: js.Array[TSType]
 }
@@ -27,7 +23,7 @@ object TSIntersectionType__ {
   
   extension [Self <: TSIntersectionType__](x: Self) {
     
-    inline def setType(value: TSIntersectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSIntersectionType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypes(value: js.Array[TSType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     

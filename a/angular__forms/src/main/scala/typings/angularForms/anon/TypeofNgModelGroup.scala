@@ -3,9 +3,6 @@ package typings.angularForms.anon
 import org.scalablytyped.runtime.Instantiable3
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
-import typings.angularForms.angularFormsStrings.`[ngModelGroup]`
-import typings.angularForms.angularFormsStrings.ngModelGroup
 import typings.angularForms.mod.AsyncValidator
 import typings.angularForms.mod.AsyncValidatorFn
 import typings.angularForms.mod.ControlContainer
@@ -28,13 +25,14 @@ trait TypeofNgModelGroup
   
   var ɵdir: ɵɵDirectiveDeclaration[
     NgModelGroup, 
-    `[ngModelGroup]`, 
-    js.Array[ngModelGroup], 
+    "[ngModelGroup]", 
+    js.Array["ngModelGroup"], 
     `3`, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NgModelGroup, js.Tuple3[SkipSelf, Self, Self]] = js.native

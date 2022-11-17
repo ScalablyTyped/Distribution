@@ -1,7 +1,5 @@
 package typings.yandexMaps.mod
 
-import typings.yandexMaps.yandexMapsStrings.evenOdd
-import typings.yandexMaps.yandexMapsStrings.nonZero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +14,7 @@ trait IPixelMultiPolygonGeometry
   
   def getCoordinates(): js.Array[js.Array[js.Array[js.Array[Double]]]]
   
-  def getFillRule(): evenOdd | nonZero
+  def getFillRule(): "evenOdd" | "nonZero"
   
   def getLength(): Double
 }
@@ -29,7 +27,7 @@ object IPixelMultiPolygonGeometry {
     getBounds: () => js.Array[js.Array[Double]] | Null,
     getClosest: js.Array[Double] => js.Object,
     getCoordinates: () => js.Array[js.Array[js.Array[js.Array[Double]]]],
-    getFillRule: () => evenOdd | nonZero,
+    getFillRule: () => "evenOdd" | "nonZero",
     getLength: () => Double,
     getMetaData: () => js.Object,
     getType: () => String,
@@ -49,7 +47,7 @@ object IPixelMultiPolygonGeometry {
     
     inline def setGetCoordinates(value: () => js.Array[js.Array[js.Array[js.Array[Double]]]]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
     
-    inline def setGetFillRule(value: () => evenOdd | nonZero): Self = StObject.set(x, "getFillRule", js.Any.fromFunction0(value))
+    inline def setGetFillRule(value: () => "evenOdd" | "nonZero"): Self = StObject.set(x, "getFillRule", js.Any.fromFunction0(value))
     
     inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
   }

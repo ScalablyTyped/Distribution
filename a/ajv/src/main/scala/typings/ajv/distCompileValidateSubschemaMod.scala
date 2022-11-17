@@ -1,6 +1,5 @@
 package typings.ajv
 
-import typings.ajv.ajvBooleans.`true`
 import typings.ajv.distCompileCodegenCodeMod.Code
 import typings.ajv.distCompileCodegenMod.Name
 import typings.ajv.distCompileMod.SchemaObjCxt
@@ -29,7 +28,7 @@ object distCompileValidateSubschemaMod {
     
     var allErrors: js.UndefOr[Boolean] = js.undefined
     
-    var compositeRule: js.UndefOr[`true`] = js.undefined
+    var compositeRule: js.UndefOr[true] = js.undefined
     
     var createErrors: js.UndefOr[Boolean] = js.undefined
     
@@ -74,7 +73,7 @@ object distCompileValidateSubschemaMod {
       
       inline def setAllErrorsUndefined: Self = StObject.set(x, "allErrors", js.undefined)
       
-      inline def setCompositeRule(value: `true`): Self = StObject.set(x, "compositeRule", value.asInstanceOf[js.Any])
+      inline def setCompositeRule(value: true): Self = StObject.set(x, "compositeRule", value.asInstanceOf[js.Any])
       
       inline def setCompositeRuleUndefined: Self = StObject.set(x, "compositeRule", js.undefined)
       
@@ -146,7 +145,7 @@ object distCompileValidateSubschemaMod {
     
     var allErrors: js.UndefOr[Boolean] = js.undefined
     
-    var compositeRule: js.UndefOr[`true`] = js.undefined
+    var compositeRule: js.UndefOr[true] = js.undefined
     
     var createErrors: js.UndefOr[Boolean] = js.undefined
     
@@ -193,7 +192,7 @@ object distCompileValidateSubschemaMod {
       
       inline def setAllErrorsUndefined: Self = StObject.set(x, "allErrors", js.undefined)
       
-      inline def setCompositeRule(value: `true`): Self = StObject.set(x, "compositeRule", value.asInstanceOf[js.Any])
+      inline def setCompositeRule(value: true): Self = StObject.set(x, "compositeRule", value.asInstanceOf[js.Any])
       
       inline def setCompositeRuleUndefined: Self = StObject.set(x, "compositeRule", js.undefined)
       

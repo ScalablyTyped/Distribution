@@ -1,10 +1,5 @@
 package typings.materialUi.MaterialUI
 
-import typings.materialUi.materialUiStrings.auto
-import typings.materialUi.materialUiStrings.bottom
-import typings.materialUi.materialUiStrings.left
-import typings.materialUi.materialUiStrings.right
-import typings.materialUi.materialUiStrings.top
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
@@ -24,7 +19,7 @@ object GridList {
   
   trait GridListProps extends StObject {
     
-    var cellHeight: js.UndefOr[Double | auto] = js.undefined
+    var cellHeight: js.UndefOr[Double | "auto"] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
@@ -43,7 +38,7 @@ object GridList {
     
     extension [Self <: GridListProps](x: Self) {
       
-      inline def setCellHeight(value: Double | auto): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
+      inline def setCellHeight(value: Double | "auto"): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
       
       inline def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
       
@@ -71,7 +66,7 @@ object GridList {
     
     var actionIcon: js.UndefOr[ReactElement] = js.undefined
     
-    var actionPosition: js.UndefOr[left | right] = js.undefined
+    var actionPosition: js.UndefOr["left" | "right"] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
@@ -93,7 +88,7 @@ object GridList {
     
     var titleBackground: js.UndefOr[String] = js.undefined
     
-    var titlePosition: js.UndefOr[top | bottom] = js.undefined
+    var titlePosition: js.UndefOr["top" | "bottom"] = js.undefined
     
     var titleStyle: js.UndefOr[CSSProperties] = js.undefined
   }
@@ -110,7 +105,7 @@ object GridList {
       
       inline def setActionIconUndefined: Self = StObject.set(x, "actionIcon", js.undefined)
       
-      inline def setActionPosition(value: left | right): Self = StObject.set(x, "actionPosition", value.asInstanceOf[js.Any])
+      inline def setActionPosition(value: "left" | "right"): Self = StObject.set(x, "actionPosition", value.asInstanceOf[js.Any])
       
       inline def setActionPositionUndefined: Self = StObject.set(x, "actionPosition", js.undefined)
       
@@ -152,7 +147,7 @@ object GridList {
       
       inline def setTitleBackgroundUndefined: Self = StObject.set(x, "titleBackground", js.undefined)
       
-      inline def setTitlePosition(value: top | bottom): Self = StObject.set(x, "titlePosition", value.asInstanceOf[js.Any])
+      inline def setTitlePosition(value: "top" | "bottom"): Self = StObject.set(x, "titlePosition", value.asInstanceOf[js.Any])
       
       inline def setTitlePositionUndefined: Self = StObject.set(x, "titlePosition", js.undefined)
       

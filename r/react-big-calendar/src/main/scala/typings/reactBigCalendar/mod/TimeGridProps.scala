@@ -1,7 +1,6 @@
 package typings.reactBigCalendar.mod
 
 import typings.react.mod.SyntheticEvent
-import typings.reactBigCalendar.reactBigCalendarStrings.ignoreEvents
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -70,7 +69,7 @@ trait TimeGridProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
   
   var scrollToTime: js.UndefOr[js.Date] = js.undefined
   
-  var selectable: js.UndefOr[Boolean | ignoreEvents] = js.undefined
+  var selectable: js.UndefOr[Boolean | "ignoreEvents"] = js.undefined
   
   var selected: js.UndefOr[js.Object] = js.undefined
   
@@ -201,7 +200,7 @@ object TimeGridProps {
     
     inline def setScrollToTimeUndefined: Self = StObject.set(x, "scrollToTime", js.undefined)
     
-    inline def setSelectable(value: Boolean | ignoreEvents): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    inline def setSelectable(value: Boolean | "ignoreEvents"): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
     inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     

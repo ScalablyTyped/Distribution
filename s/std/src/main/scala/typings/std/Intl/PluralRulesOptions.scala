@@ -1,7 +1,5 @@
 package typings.std.Intl
 
-import typings.std.stdStrings.`best fit`
-import typings.std.stdStrings.lookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PluralRulesOptions extends StObject {
   
   /* standard es2018.intl */
-  var localeMatcher: js.UndefOr[lookup | (`best fit`)] = js.undefined
+  var localeMatcher: js.UndefOr["lookup" | ("best fit")] = js.undefined
   
   /* standard es2018.intl */
   var maximumFractionDigits: js.UndefOr[Double] = js.undefined
@@ -38,7 +36,7 @@ object PluralRulesOptions {
   
   extension [Self <: PluralRulesOptions](x: Self) {
     
-    inline def setLocaleMatcher(value: lookup | (`best fit`)): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+    inline def setLocaleMatcher(value: "lookup" | ("best fit")): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     
     inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     

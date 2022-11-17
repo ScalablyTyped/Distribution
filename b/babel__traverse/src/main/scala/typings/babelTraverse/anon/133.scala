@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSEnumMember
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `133` extends StObject {
   
-  var `type`: TSEnumMember
+  var `type`: "TSEnumMember"
 }
 object `133` {
   
@@ -19,6 +18,6 @@ object `133` {
   
   extension [Self <: `133`](x: Self) {
     
-    inline def setType(value: TSEnumMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSEnumMember"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

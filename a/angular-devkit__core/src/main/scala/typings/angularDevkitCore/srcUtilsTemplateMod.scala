@@ -1,10 +1,5 @@
 package typings.angularDevkitCore
 
-import typings.angularDevkitCore.angularDevkitCoreStrings.comment
-import typings.angularDevkitCore.angularDevkitCoreStrings.content
-import typings.angularDevkitCore.angularDevkitCoreStrings.escape
-import typings.angularDevkitCore.angularDevkitCoreStrings.evaluate
-import typings.angularDevkitCore.angularDevkitCoreStrings.interpolate
 import typings.angularDevkitCore.anon.Exports
 import typings.sourceMap.mod.Position
 import org.scalablytyped.runtime.StObject
@@ -72,10 +67,9 @@ object srcUtilsTemplateMod {
   
   trait TemplateAstComment
     extends StObject
-       with TemplateAstBase
-       with TemplateAstNode {
+       with TemplateAstBase {
     
-    var kind: comment
+    var kind: "comment"
     
     var text: String
   }
@@ -88,7 +82,7 @@ object srcUtilsTemplateMod {
     
     extension [Self <: TemplateAstComment](x: Self) {
       
-      inline def setKind(value: comment): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "comment"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
@@ -96,12 +90,11 @@ object srcUtilsTemplateMod {
   
   trait TemplateAstContent
     extends StObject
-       with TemplateAstBase
-       with TemplateAstNode {
+       with TemplateAstBase {
     
     var content: String
     
-    var kind: content
+    var kind: "content"
   }
   object TemplateAstContent {
     
@@ -114,18 +107,17 @@ object srcUtilsTemplateMod {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setKind(value: content): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "content"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }
   }
   
   trait TemplateAstEscape
     extends StObject
-       with TemplateAstBase
-       with TemplateAstNode {
+       with TemplateAstBase {
     
     var expression: String
     
-    var kind: escape
+    var kind: "escape"
   }
   object TemplateAstEscape {
     
@@ -138,18 +130,17 @@ object srcUtilsTemplateMod {
       
       inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      inline def setKind(value: escape): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "escape"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }
   }
   
   trait TemplateAstEvaluate
     extends StObject
-       with TemplateAstBase
-       with TemplateAstNode {
+       with TemplateAstBase {
     
     var expression: String
     
-    var kind: evaluate
+    var kind: "evaluate"
   }
   object TemplateAstEvaluate {
     
@@ -162,18 +153,17 @@ object srcUtilsTemplateMod {
       
       inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      inline def setKind(value: evaluate): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "evaluate"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }
   }
   
   trait TemplateAstInterpolate
     extends StObject
-       with TemplateAstBase
-       with TemplateAstNode {
+       with TemplateAstBase {
     
     var expression: String
     
-    var kind: interpolate
+    var kind: "interpolate"
   }
   object TemplateAstInterpolate {
     
@@ -186,45 +176,11 @@ object srcUtilsTemplateMod {
       
       inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      inline def setKind(value: interpolate): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "interpolate"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstContent
-    - typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstEvaluate
-    - typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstComment
-    - typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstEscape
-    - typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstInterpolate
-  */
-  trait TemplateAstNode extends StObject
-  object TemplateAstNode {
-    
-    inline def TemplateAstComment(end: Position, start: Position, text: String): typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstComment = {
-      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = "comment", start = start.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstComment]
-    }
-    
-    inline def TemplateAstContent(content: String, end: Position, start: Position): typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstContent = {
-      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], kind = "content", start = start.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstContent]
-    }
-    
-    inline def TemplateAstEscape(end: Position, expression: String, start: Position): typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstEscape = {
-      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], kind = "escape", start = start.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstEscape]
-    }
-    
-    inline def TemplateAstEvaluate(end: Position, expression: String, start: Position): typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstEvaluate = {
-      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], kind = "evaluate", start = start.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstEvaluate]
-    }
-    
-    inline def TemplateAstInterpolate(end: Position, expression: String, start: Position): typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstInterpolate = {
-      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], kind = "interpolate", start = start.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAstInterpolate]
-    }
-  }
+  type TemplateAstNode = TemplateAstContent | TemplateAstEvaluate | TemplateAstComment | TemplateAstEscape | TemplateAstInterpolate
   
   trait TemplateOptions extends StObject {
     

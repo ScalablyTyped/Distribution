@@ -44,8 +44,6 @@ import typings.electron.Electron.Session_
 import typings.electron.Electron.Size
 import typings.electron.Electron.WebContents_
 import typings.electron.Electron.WebFrameMain_
-import typings.electron.electronStrings.allow
-import typings.electron.electronStrings.deny
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -55,7 +53,7 @@ object anon {
   
   trait Action extends StObject {
     
-    var action: deny
+    var action: "deny"
   }
   object Action {
     
@@ -66,13 +64,13 @@ object anon {
     
     extension [Self <: Action](x: Self) {
       
-      inline def setAction(value: deny): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: "deny"): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     }
   }
   
   trait OverrideBrowserWindowOptions extends StObject {
     
-    var action: allow
+    var action: "allow"
     
     var overrideBrowserWindowOptions: js.UndefOr[BrowserWindowConstructorOptions] = js.undefined
   }
@@ -85,7 +83,7 @@ object anon {
     
     extension [Self <: OverrideBrowserWindowOptions](x: Self) {
       
-      inline def setAction(value: allow): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: "allow"): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
       inline def setOverrideBrowserWindowOptions(value: BrowserWindowConstructorOptions): Self = StObject.set(x, "overrideBrowserWindowOptions", value.asInstanceOf[js.Any])
       

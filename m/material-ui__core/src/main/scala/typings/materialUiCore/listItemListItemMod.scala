@@ -5,8 +5,6 @@ import typings.materialUiCore.anon.AlignItems
 import typings.materialUiCore.anon.Button
 import typings.materialUiCore.anon.`4`
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
-import typings.materialUiCore.materialUiCoreStrings.div
-import typings.materialUiCore.materialUiCoreStrings.li
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -29,46 +27,33 @@ object listItemListItemMod extends Shortcut {
     */
   @JSImport("@material-ui/core/ListItem/ListItem", JSImport.Default)
   @js.native
-  val default: (OverridableComponent[ListItemTypeMap[Button, li]]) & (ExtendButtonBase[ListItemTypeMap[`4`, div]]) = js.native
+  val default: (OverridableComponent[ListItemTypeMap[Button, "li"]]) & (ExtendButtonBase[ListItemTypeMap[`4`, "div"]]) = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.container
-    - typings.materialUiCore.materialUiCoreStrings.focusVisible
-    - typings.materialUiCore.materialUiCoreStrings.default
-    - typings.materialUiCore.materialUiCoreStrings.dense
-    - typings.materialUiCore.materialUiCoreStrings.disabled
-    - typings.materialUiCore.materialUiCoreStrings.divider
-    - typings.materialUiCore.materialUiCoreStrings.gutters
-    - typings.materialUiCore.materialUiCoreStrings.button
-    - typings.materialUiCore.materialUiCoreStrings.secondaryAction
-    - typings.materialUiCore.materialUiCoreStrings.selected
-  */
-  trait ListItemClassKey extends StObject
   object ListItemClassKey {
     
-    inline def default: typings.materialUiCore.materialUiCoreStrings.default = "default".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.default]
+    inline def default: "default" = "default".asInstanceOf["default"]
     
-    inline def button: typings.materialUiCore.materialUiCoreStrings.button = "button".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.button]
+    inline def button: "button" = "button".asInstanceOf["button"]
     
-    inline def container: typings.materialUiCore.materialUiCoreStrings.container = "container".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.container]
+    inline def container: "container" = "container".asInstanceOf["container"]
     
-    inline def dense: typings.materialUiCore.materialUiCoreStrings.dense = "dense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dense]
+    inline def dense: "dense" = "dense".asInstanceOf["dense"]
     
-    inline def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
+    inline def disabled: "disabled" = "disabled".asInstanceOf["disabled"]
     
-    inline def divider: typings.materialUiCore.materialUiCoreStrings.divider = "divider".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.divider]
+    inline def divider: "divider" = "divider".asInstanceOf["divider"]
     
-    inline def focusVisible: typings.materialUiCore.materialUiCoreStrings.focusVisible = "focusVisible".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.focusVisible]
+    inline def focusVisible: "focusVisible" = "focusVisible".asInstanceOf["focusVisible"]
     
-    inline def gutters: typings.materialUiCore.materialUiCoreStrings.gutters = "gutters".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.gutters]
+    inline def gutters: "gutters" = "gutters".asInstanceOf["gutters"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def secondaryAction: typings.materialUiCore.materialUiCoreStrings.secondaryAction = "secondaryAction".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.secondaryAction]
+    inline def secondaryAction: "secondaryAction" = "secondaryAction".asInstanceOf["secondaryAction"]
     
-    inline def selected: typings.materialUiCore.materialUiCoreStrings.selected = "selected".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.selected]
+    inline def selected: "selected" = "selected".asInstanceOf["selected"]
   }
+  type ListItemClassKey = "root" | "container" | "focusVisible" | "default" | "dense" | "disabled" | "divider" | "gutters" | "button" | "secondaryAction" | "selected"
   
   type ListItemProps[D /* <: ElementType[Any] */, P] = OverrideProps[ListItemTypeMap[P, D], D]
   
@@ -97,8 +82,8 @@ object listItemListItemMod extends Shortcut {
     }
   }
   
-  type _To = (OverridableComponent[ListItemTypeMap[Button, li]]) & (ExtendButtonBase[ListItemTypeMap[`4`, div]])
+  type _To = (OverridableComponent[ListItemTypeMap[Button, "li"]]) & (ExtendButtonBase[ListItemTypeMap[`4`, "div"]])
   
   /* This means you don't have to write `default`, but can instead just say `listItemListItemMod.foo` */
-  override def _to: (OverridableComponent[ListItemTypeMap[Button, li]]) & (ExtendButtonBase[ListItemTypeMap[`4`, div]]) = default
+  override def _to: (OverridableComponent[ListItemTypeMap[Button, "li"]]) & (ExtendButtonBase[ListItemTypeMap[`4`, "div"]]) = default
 }

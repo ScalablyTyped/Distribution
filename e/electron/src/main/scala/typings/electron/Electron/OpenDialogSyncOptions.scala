@@ -1,14 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.createDirectory
-import typings.electron.electronStrings.dontAddToRecent
-import typings.electron.electronStrings.multiSelections
-import typings.electron.electronStrings.noResolveAliases
-import typings.electron.electronStrings.openDirectory
-import typings.electron.electronStrings.openFile
-import typings.electron.electronStrings.promptToCreate
-import typings.electron.electronStrings.showHiddenFiles
-import typings.electron.electronStrings.treatPackageAsDirectory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +29,7 @@ trait OpenDialogSyncOptions extends StObject {
     */
   var properties: js.UndefOr[
     js.Array[
-      openFile | openDirectory | multiSelections | showHiddenFiles | createDirectory | promptToCreate | noResolveAliases | treatPackageAsDirectory | dontAddToRecent
+      "openFile" | "openDirectory" | "multiSelections" | "showHiddenFiles" | "createDirectory" | "promptToCreate" | "noResolveAliases" | "treatPackageAsDirectory" | "dontAddToRecent"
     ]
   ] = js.undefined
   
@@ -80,14 +71,14 @@ object OpenDialogSyncOptions {
     
     inline def setProperties(
       value: js.Array[
-          openFile | openDirectory | multiSelections | showHiddenFiles | createDirectory | promptToCreate | noResolveAliases | treatPackageAsDirectory | dontAddToRecent
+          "openFile" | "openDirectory" | "multiSelections" | "showHiddenFiles" | "createDirectory" | "promptToCreate" | "noResolveAliases" | "treatPackageAsDirectory" | "dontAddToRecent"
         ]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     inline def setPropertiesVarargs(
-      value: (openFile | openDirectory | multiSelections | showHiddenFiles | createDirectory | promptToCreate | noResolveAliases | treatPackageAsDirectory | dontAddToRecent)*
+      value: ("openFile" | "openDirectory" | "multiSelections" | "showHiddenFiles" | "createDirectory" | "promptToCreate" | "noResolveAliases" | "treatPackageAsDirectory" | "dontAddToRecent")*
     ): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setSecurityScopedBookmarks(value: Boolean): Self = StObject.set(x, "securityScopedBookmarks", value.asInstanceOf[js.Any])

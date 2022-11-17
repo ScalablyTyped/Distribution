@@ -127,28 +127,16 @@ object libCollapseCollapseMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.start
-    - typings.antd.antdStrings.end
-    - typings.antd.libCollapseCollapseMod.ExpandIconPositionLegacy
-    - scala.Unit
-  */
-  type ExpandIconPosition = js.UndefOr[_ExpandIconPosition]
+  type ExpandIconPosition = js.UndefOr["start" | "end" | ExpandIconPositionLegacy]
   
-  /** @deprecated Please use `start` | `end` instead */
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.left
-    - typings.antd.antdStrings.right
-  */
-  trait ExpandIconPositionLegacy
-    extends StObject
-       with _ExpandIconPosition
   object ExpandIconPositionLegacy {
     
-    inline def left: typings.antd.antdStrings.left = "left".asInstanceOf[typings.antd.antdStrings.left]
+    inline def left: "left" = "left".asInstanceOf["left"]
     
-    inline def right: typings.antd.antdStrings.right = "right".asInstanceOf[typings.antd.antdStrings.right]
+    inline def right: "right" = "right".asInstanceOf["right"]
   }
+  /** @deprecated Please use `start` | `end` instead */
+  type ExpandIconPositionLegacy = "left" | "right"
   
   trait PanelProps extends StObject {
     
@@ -217,8 +205,6 @@ object libCollapseCollapseMod extends Shortcut {
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
-  
-  trait _ExpandIconPosition extends StObject
   
   type _To = CollapseInterface
   

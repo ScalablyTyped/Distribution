@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CaseClause
   extends StObject
      with Node
-     with JSDocContainer
-     with CaseOrDefaultClause
-     with HasJSDoc {
+     with JSDocContainer {
   
   val expression: Expression = js.native
   

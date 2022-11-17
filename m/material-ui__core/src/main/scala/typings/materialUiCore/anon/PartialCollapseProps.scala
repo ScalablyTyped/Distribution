@@ -1,6 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.auto
 import typings.materialUiCore.transitionsTransitionMod.TransitionProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.ElementType
@@ -58,7 +57,7 @@ trait PartialCollapseProps extends StObject {
   
   var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var timeout: js.UndefOr[Any | auto] = js.undefined
+  var timeout: js.UndefOr[Any | "auto"] = js.undefined
   
   var unmountOnExit: js.UndefOr[Any] = js.undefined
 }
@@ -165,7 +164,7 @@ object PartialCollapseProps {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTimeout(value: Any | auto): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Any | "auto"): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     

@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExistingSansProvider
-  extends StObject
-     with InjectableProvider {
+trait ExistingSansProvider extends StObject {
   
   /**
     * Existing `token` to return. (Equivalent to `injector.get(useExisting)`)

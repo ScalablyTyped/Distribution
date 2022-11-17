@@ -1,9 +1,5 @@
 package typings.hammerjs
 
-import typings.hammerjs.hammerjsInts.`1`
-import typings.hammerjs.hammerjsInts.`2`
-import typings.hammerjs.hammerjsInts.`4`
-import typings.hammerjs.hammerjsInts.`8`
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -41,7 +37,7 @@ trait HammerInput extends StObject {
   var distance: Double
   
   /** Event type, matches the INPUT constants. */
-  var eventType: `1` | `2` | `4` | `8`
+  var eventType: 1 | 2 | 4 | 8
   
   def handler(): Unit
   
@@ -113,7 +109,7 @@ object HammerInput {
     destroy: () => Unit,
     direction: Double,
     distance: Double,
-    eventType: `1` | `2` | `4` | `8`,
+    eventType: 1 | 2 | 4 | 8,
     handler: () => Unit,
     init: () => Unit,
     isFinal: Boolean,
@@ -163,7 +159,7 @@ object HammerInput {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    inline def setEventType(value: `1` | `2` | `4` | `8`): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: 1 | 2 | 4 | 8): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     inline def setHandler(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
     

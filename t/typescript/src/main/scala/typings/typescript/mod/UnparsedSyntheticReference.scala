@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UnparsedSyntheticReference
   extends StObject
-     with UnparsedSection
-     with UnparsedNode {
+     with UnparsedSection {
   
   @JSName("kind")
   val kind_UnparsedSyntheticReference: typings.typescript.mod.SyntaxKind.UnparsedSyntheticReference = js.native

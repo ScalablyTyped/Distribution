@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.threeStrings.`-_`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,66 +26,45 @@ object examplesJsmNodesMathOperatorNodeMod {
     var op: OperatorNodeOp = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.three.threeStrings.Equalssign
-    - typings.three.threeStrings.Percentsign
-    - typings.three.threeStrings.Ampersand
-    - typings.three.threeStrings.Verticalline
-    - typings.three.threeStrings.^
-    - typings.three.threeStrings.GreaterthansignGreaterthansign
-    - typings.three.threeStrings.LessthansignLessthansign
-    - typings.three.threeStrings.EqualssignEqualssign
-    - typings.three.threeStrings.AmpersandAmpersand
-    - typings.three.threeStrings.VerticallineVerticalline
-    - typings.three.threeStrings.`^^`
-    - typings.three.threeStrings.Lessthansign
-    - typings.three.threeStrings.Greaterthansign
-    - typings.three.threeStrings.LessthansignEqualssign
-    - typings.three.threeStrings.GreaterthansignEqualssign
-    - typings.three.threeStrings.Plussign
-    - typings.three.threeStrings.`-_`
-    - typings.three.threeStrings.Asterisk
-    - typings.three.threeStrings.Slash
-  */
-  trait OperatorNodeOp extends StObject
   object OperatorNodeOp {
     
-    inline def ^ : typings.three.threeStrings.^ = "^".asInstanceOf[typings.three.threeStrings.^]
+    inline def ^ : "^" = "^".asInstanceOf["^"]
     
-    inline def Ampersand: typings.three.threeStrings.Ampersand = "&".asInstanceOf[typings.three.threeStrings.Ampersand]
+    inline def Ampersand: "&" = "&".asInstanceOf["&"]
     
-    inline def AmpersandAmpersand: typings.three.threeStrings.AmpersandAmpersand = "&&".asInstanceOf[typings.three.threeStrings.AmpersandAmpersand]
+    inline def AmpersandAmpersand: "&&" = "&&".asInstanceOf["&&"]
     
-    inline def Asterisk: typings.three.threeStrings.Asterisk = "*".asInstanceOf[typings.three.threeStrings.Asterisk]
+    inline def Asterisk: "*" = "*".asInstanceOf["*"]
     
-    inline def Equalssign: typings.three.threeStrings.Equalssign = "=".asInstanceOf[typings.three.threeStrings.Equalssign]
+    inline def Equalssign: "=" = "=".asInstanceOf["="]
     
-    inline def EqualssignEqualssign: typings.three.threeStrings.EqualssignEqualssign = "==".asInstanceOf[typings.three.threeStrings.EqualssignEqualssign]
+    inline def EqualssignEqualssign: "==" = "==".asInstanceOf["=="]
     
-    inline def Greaterthansign: typings.three.threeStrings.Greaterthansign = ">".asInstanceOf[typings.three.threeStrings.Greaterthansign]
+    inline def Greaterthansign: ">" = ">".asInstanceOf[">"]
     
-    inline def GreaterthansignEqualssign: typings.three.threeStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.three.threeStrings.GreaterthansignEqualssign]
+    inline def GreaterthansignEqualssign: ">=" = ">=".asInstanceOf[">="]
     
-    inline def GreaterthansignGreaterthansign: typings.three.threeStrings.GreaterthansignGreaterthansign = ">>".asInstanceOf[typings.three.threeStrings.GreaterthansignGreaterthansign]
+    inline def GreaterthansignGreaterthansign: ">>" = ">>".asInstanceOf[">>"]
     
-    inline def Lessthansign: typings.three.threeStrings.Lessthansign = "<".asInstanceOf[typings.three.threeStrings.Lessthansign]
+    inline def Lessthansign: "<" = "<".asInstanceOf["<"]
     
-    inline def LessthansignEqualssign: typings.three.threeStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.three.threeStrings.LessthansignEqualssign]
+    inline def LessthansignEqualssign: "<=" = "<=".asInstanceOf["<="]
     
-    inline def LessthansignLessthansign: typings.three.threeStrings.LessthansignLessthansign = "<<".asInstanceOf[typings.three.threeStrings.LessthansignLessthansign]
+    inline def LessthansignLessthansign: "<<" = "<<".asInstanceOf["<<"]
     
-    inline def Percentsign: typings.three.threeStrings.Percentsign = "%".asInstanceOf[typings.three.threeStrings.Percentsign]
+    inline def Percentsign: "%" = "%".asInstanceOf["%"]
     
-    inline def Plussign: typings.three.threeStrings.Plussign = "+".asInstanceOf[typings.three.threeStrings.Plussign]
+    inline def Plussign: "+" = "+".asInstanceOf["+"]
     
-    inline def Slash: typings.three.threeStrings.Slash = "/".asInstanceOf[typings.three.threeStrings.Slash]
+    inline def Slash: "/" = "/".asInstanceOf["/"]
     
-    inline def Verticalline: typings.three.threeStrings.Verticalline = "|".asInstanceOf[typings.three.threeStrings.Verticalline]
+    inline def Verticalline: "|" = "|".asInstanceOf["|"]
     
-    inline def VerticallineVerticalline: typings.three.threeStrings.VerticallineVerticalline = "||".asInstanceOf[typings.three.threeStrings.VerticallineVerticalline]
+    inline def VerticallineVerticalline: "||" = "||".asInstanceOf["||"]
     
-    inline def `^^`: typings.three.threeStrings.`^^` = "^^".asInstanceOf[typings.three.threeStrings.`^^`]
+    inline def `^^`: "^^" = "^^".asInstanceOf["^^"]
     
-    inline def _dash: `-_` = "-".asInstanceOf[`-_`]
+    inline def _dash: "-" = "-".asInstanceOf["-"]
   }
+  type OperatorNodeOp = "=" | "%" | "&" | "|" | "^" | ">>" | "<<" | "==" | "&&" | "||" | "^^" | "<" | ">" | "<=" | ">=" | "+" | "-" | "*" | "/"
 }

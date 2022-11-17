@@ -1,21 +1,19 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SlotOutletNode
   extends StObject
-     with BaseElementNode
-     with ElementNode {
+     with BaseElementNode {
   
   var codegenNode: js.UndefOr[RenderSlotCall | CacheExpression] = js.undefined
   
   var ssrCodegenNode: js.UndefOr[CallExpression] = js.undefined
   
   @JSName("tagType")
-  var tagType_SlotOutletNode: `2`
+  var tagType_SlotOutletNode: 2
 }
 object SlotOutletNode {
   
@@ -42,6 +40,6 @@ object SlotOutletNode {
     
     inline def setSsrCodegenNodeUndefined: Self = StObject.set(x, "ssrCodegenNode", js.undefined)
     
-    inline def setTagType(value: `2`): Self = StObject.set(x, "tagType", value.asInstanceOf[js.Any])
+    inline def setTagType(value: 2): Self = StObject.set(x, "tagType", value.asInstanceOf[js.Any])
   }
 }

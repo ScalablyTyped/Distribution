@@ -9,4 +9,3 @@ trait EndOfFileToken
   extends StObject
      with Token[typings.typescript.mod.SyntaxKind.EndOfFileToken]
      with JSDocContainer
-     with HasJSDoc

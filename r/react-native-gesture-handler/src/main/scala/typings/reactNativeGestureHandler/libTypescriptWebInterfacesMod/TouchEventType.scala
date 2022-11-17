@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TouchEventType
-  extends StObject
-     with _TouchNativeArgs
+sealed trait TouchEventType extends StObject
 @JSImport("react-native-gesture-handler/lib/typescript/web/interfaces", "TouchEventType")
 @js.native
 object TouchEventType extends StObject {

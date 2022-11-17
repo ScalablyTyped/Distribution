@@ -8,10 +8,6 @@ import typings.reactNavigation.mod.NavigationScreenConfig
 import typings.reactNavigation.mod.NavigationScreenConfigProps
 import typings.reactNavigation.mod.NavigationScreenProp
 import typings.reactNavigation.mod.NavigationSwitchProp
-import typings.reactNavigation.reactNavigationStrings.history
-import typings.reactNavigation.reactNavigationStrings.initialRoute
-import typings.reactNavigation.reactNavigationStrings.none
-import typings.reactNavigation.reactNavigationStrings.order
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined react-navigation.react-navigation.CreateNavigatorConfig<{}, react-navigation.react-navigation.NavigationSwitchRouterConfig, {}, react-navigation.react-navigation.NavigationSwitchProp<react-navigation.react-navigation.NavigationRoute<react-navigation.react-navigation.NavigationParams>, react-navigation.react-navigation.NavigationParams>> */
 trait CreateNavigatorConfigNavi extends StObject {
   
-  var backBehavior: js.UndefOr[none | initialRoute | history | order] = js.undefined
+  var backBehavior: js.UndefOr["none" | "initialRoute" | "history" | "order"] = js.undefined
   
   var defaultNavigationOptions: js.UndefOr[
     NavigationScreenConfig[
@@ -57,7 +53,7 @@ object CreateNavigatorConfigNavi {
   
   extension [Self <: CreateNavigatorConfigNavi](x: Self) {
     
-    inline def setBackBehavior(value: none | initialRoute | history | order): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
+    inline def setBackBehavior(value: "none" | "initialRoute" | "history" | "order"): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
     
     inline def setBackBehaviorUndefined: Self = StObject.set(x, "backBehavior", js.undefined)
     

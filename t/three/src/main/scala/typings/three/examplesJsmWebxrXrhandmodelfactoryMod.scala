@@ -6,9 +6,6 @@ import typings.three.examplesJsmWebxrXrhandprimitivemodelMod.XRHandPrimitiveMode
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcThreeMod.Group
 import typings.three.srcThreeMod.Object3D
-import typings.three.threeStrings.boxes
-import typings.three.threeStrings.mesh
-import typings.three.threeStrings.spheres
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,8 +24,12 @@ object examplesJsmWebxrXrhandmodelfactoryMod {
   open class XRHandModelFactory () extends StObject {
     
     def createHandModel(controller: Group): XRHandModel = js.native
-    def createHandModel(controller: Group, profile: spheres | boxes | mesh): XRHandModel = js.native
-    def createHandModel(controller: Group, profile: spheres | boxes | mesh, options: XRHandPrimitiveModelOptions): XRHandModel = js.native
+    @JSName("createHandModel")
+    @scala.annotation.targetName("createHandModel_spheres_boxes_mesh")
+    def createHandModel(controller: Group, profile: "spheres" | "boxes" | "mesh"): XRHandModel = js.native
+    @JSName("createHandModel")
+    @scala.annotation.targetName("createHandModel_spheres_boxes_mesh")
+    def createHandModel(controller: Group, profile: "spheres" | "boxes" | "mesh", options: XRHandPrimitiveModelOptions): XRHandModel = js.native
     def createHandModel(controller: Group, profile: Unit, options: XRHandPrimitiveModelOptions): XRHandModel = js.native
     
     var path: String = js.native
@@ -36,15 +37,11 @@ object examplesJsmWebxrXrhandmodelfactoryMod {
     def setPath(path: String): XRHandModelFactory = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.three.threeStrings.left
-    - typings.three.threeStrings.right
-  */
-  trait XRHandModelHandedness extends StObject
   object XRHandModelHandedness {
     
-    inline def left: typings.three.threeStrings.left = "left".asInstanceOf[typings.three.threeStrings.left]
+    inline def left: "left" = "left".asInstanceOf["left"]
     
-    inline def right: typings.three.threeStrings.right = "right".asInstanceOf[typings.three.threeStrings.right]
+    inline def right: "right" = "right".asInstanceOf["right"]
   }
+  type XRHandModelHandedness = "left" | "right"
 }

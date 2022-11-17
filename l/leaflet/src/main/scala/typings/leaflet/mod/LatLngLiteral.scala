@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LatLngLiteral
-  extends StObject
-     with _LatLngExpression {
+trait LatLngLiteral extends StObject {
   
   var lat: Double
   

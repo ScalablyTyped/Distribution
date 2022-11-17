@@ -1,7 +1,6 @@
 package typings.node
 
 import typings.node.netMod.SocketConstructorOpts
-import typings.node.nodeStrings.resize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,9 +61,10 @@ object ttyMod {
   open class WriteStream protected () extends StObject {
     def this(fd: Double) = this()
     
-    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_resize(event: resize, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("addListener_resize")
+    def addListener(event: "resize", listener: js.Function0[Unit]): this.type = js.native
+    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
     /**
       * `writeStream.clearLine()` clears the current line of this `WriteStream` in a
@@ -106,10 +106,11 @@ object ttyMod {
     def cursorTo(x: Double, y: Double, callback: js.Function0[Unit]): Boolean = js.native
     def cursorTo(x: Double, y: Unit, callback: js.Function0[Unit]): Boolean = js.native
     
+    @JSName("emit")
+    @scala.annotation.targetName("emit_resize")
+    def emit(event: "resize"): Boolean = js.native
     def emit(event: String, args: Any*): Boolean = js.native
     def emit(event: js.Symbol, args: Any*): Boolean = js.native
-    @JSName("emit")
-    def emit_resize(event: resize): Boolean = js.native
     
     /**
       * Returns:
@@ -189,21 +190,25 @@ object ttyMod {
     def moveCursor(dx: Double, dy: Double): Boolean = js.native
     def moveCursor(dx: Double, dy: Double, callback: js.Function0[Unit]): Boolean = js.native
     
-    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("on")
-    def on_resize(event: resize, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("on_resize")
+    def on(event: "resize", listener: js.Function0[Unit]): this.type = js.native
+    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
-    def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("once")
-    def once_resize(event: resize, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("once_resize")
+    def once(event: "resize", listener: js.Function0[Unit]): this.type = js.native
+    def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
-    def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_resize(event: resize, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_resize")
+    def prependListener(event: "resize", listener: js.Function0[Unit]): this.type = js.native
+    def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_resize(event: resize, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_resize")
+    def prependOnceListener(event: "resize", listener: js.Function0[Unit]): this.type = js.native
+    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
     /**
       * A `number` specifying the number of rows the TTY currently has. This property
@@ -222,23 +227,18 @@ object ttyMod {
     */
   inline def isatty(fd: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isatty")(fd.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  object Direction {
+    
+    inline def `-1`: -1 = -1.asInstanceOf[-1]
+    
+    inline def `0`: 0 = 0.asInstanceOf[0]
+    
+    inline def `1`: 1 = 1.asInstanceOf[1]
+  }
   /**
     * -1 - to the left from cursor
     *  0 - the entire line
     *  1 - to the right from cursor
     */
-  /* Rewritten from type alias, can be one of: 
-    - typings.node.nodeInts.`-1`
-    - typings.node.nodeInts.`0`
-    - typings.node.nodeInts.`1`
-  */
-  trait Direction extends StObject
-  object Direction {
-    
-    inline def `-1`: typings.node.nodeInts.`-1` = -1.asInstanceOf[typings.node.nodeInts.`-1`]
-    
-    inline def `0`: typings.node.nodeInts.`0` = 0.asInstanceOf[typings.node.nodeInts.`0`]
-    
-    inline def `1`: typings.node.nodeInts.`1` = 1.asInstanceOf[typings.node.nodeInts.`1`]
-  }
+  type Direction = -1 | 0 | 1
 }

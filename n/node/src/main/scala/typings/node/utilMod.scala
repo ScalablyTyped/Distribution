@@ -5,15 +5,13 @@ import typings.node.NodeJS.ArrayBufferView
 import typings.node.NodeJS.Dict
 import typings.node.NodeJS.ErrnoException
 import typings.node.anon.Fatal
+import typings.node.anon.Index
 import typings.node.anon.IndexKind
+import typings.node.anon.InlineValue
 import typings.node.anon.Kind
 import typings.node.anon.Positionals
 import typings.node.anon.Stream
 import typings.node.anon.Values
-import typings.node.nodeStrings.boolean
-import typings.node.nodeStrings.get
-import typings.node.nodeStrings.set
-import typings.node.nodeStrings.string
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -515,7 +513,6 @@ object utilMod {
     inline def apply[T1](
       fn: js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* err */ js.UndefOr[Any], Unit], Unit]
     ): js.Function1[/* arg1 */ T1, js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ T1, js.Promise[Unit]]]
-    inline def apply[TCustom /* <: js.Function */](fn: CustomPromisify[TCustom]): TCustom = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[TCustom]
     inline def apply[T1, T2](
       fn: js.Function3[
           /* arg1 */ T1, 
@@ -591,16 +588,11 @@ object utilMod {
   
   type CustomInspectFunction = js.Function2[/* depth */ Double, /* options */ InspectOptionsStylized, String]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.node.utilMod.CustomPromisifySymbol[TCustom]
-    - typings.node.utilMod.CustomPromisifyLegacy[TCustom]
-  */
-  trait CustomPromisify[TCustom /* <: js.Function */] extends StObject
+  type CustomPromisify[TCustom /* <: js.Function */] = CustomPromisifySymbol[TCustom] | CustomPromisifyLegacy[TCustom]
   
   @js.native
   trait CustomPromisifyLegacy[TCustom /* <: js.Function */]
-    extends js.Function
-       with CustomPromisify[TCustom] {
+    extends js.Function {
     
     var __promisify__ : TCustom = js.native
   }
@@ -608,7 +600,6 @@ object utilMod {
   @js.native
   trait CustomPromisifySymbol[TCustom /* <: js.Function */]
     extends js.Function
-       with CustomPromisify[TCustom]
   
   @js.native
   trait DebugLogger
@@ -718,7 +709,7 @@ object utilMod {
       * the getter function.
       * @default `false`
       */
-    var getters: js.UndefOr[get | set | Boolean] = js.undefined
+    var getters: js.UndefOr["get" | "set" | Boolean] = js.undefined
     
     var maxArrayLength: js.UndefOr[Double | Null] = js.undefined
     
@@ -767,7 +758,7 @@ object utilMod {
       
       inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      inline def setGetters(value: get | set | Boolean): Self = StObject.set(x, "getters", value.asInstanceOf[js.Any])
+      inline def setGetters(value: "get" | "set" | Boolean): Self = StObject.set(x, "getters", value.asInstanceOf[js.Any])
       
       inline def setGettersUndefined: Self = StObject.set(x, "getters", js.undefined)
       
@@ -818,25 +809,7 @@ object utilMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.node.anon.Index
-    - typings.node.anon.InlineValue
-  */
-  trait OptionToken
-    extends StObject
-       with Token
-  object OptionToken {
-    
-    inline def Index(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.node.anon.Index = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.node.anon.Index]
-    }
-    
-    inline def InlineValue(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.node.anon.InlineValue = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.node.anon.InlineValue]
-    }
-  }
+  type OptionToken = Index | InlineValue
   
   trait ParseArgsConfig extends StObject {
     
@@ -894,11 +867,11 @@ object utilMod {
     
     var short: js.UndefOr[String] = js.undefined
     
-    var `type`: string | boolean
+    var `type`: "string" | "boolean"
   }
   object ParseArgsOptionConfig {
     
-    inline def apply(`type`: string | boolean): ParseArgsOptionConfig = {
+    inline def apply(`type`: "string" | "boolean"): ParseArgsOptionConfig = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseArgsOptionConfig]
@@ -920,7 +893,7 @@ object utilMod {
       
       inline def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
       
-      inline def setType(value: string | boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "string" | "boolean"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -997,73 +970,33 @@ object utilMod {
     */
   type PreciseTokenForOptions[K /* <: String */, O /* <: ParseArgsOptionConfig */] = OptionToken & (/* import warning: importer.ImportType#apply Failed type conversion: {  name :K} */ js.Any)
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.node.nodeStrings.special
-    - typings.node.nodeStrings.number
-    - typings.node.nodeStrings.bigint
-    - typings.node.nodeStrings.boolean
-    - typings.node.nodeStrings.undefined
-    - typings.node.nodeStrings.`null`
-    - typings.node.nodeStrings.string
-    - typings.node.nodeStrings.symbol
-    - typings.node.nodeStrings.date
-    - typings.node.nodeStrings.regexp
-    - typings.node.nodeStrings.module
-  */
-  trait Style extends StObject
   object Style {
     
-    inline def bigint: typings.node.nodeStrings.bigint = "bigint".asInstanceOf[typings.node.nodeStrings.bigint]
+    inline def bigint: "bigint" = "bigint".asInstanceOf["bigint"]
     
-    inline def boolean: typings.node.nodeStrings.boolean = "boolean".asInstanceOf[typings.node.nodeStrings.boolean]
+    inline def boolean: "boolean" = "boolean".asInstanceOf["boolean"]
     
-    inline def date: typings.node.nodeStrings.date = "date".asInstanceOf[typings.node.nodeStrings.date]
+    inline def date: "date" = "date".asInstanceOf["date"]
     
-    inline def module: typings.node.nodeStrings.module = "module".asInstanceOf[typings.node.nodeStrings.module]
+    inline def module: "module" = "module".asInstanceOf["module"]
     
-    inline def `null`: typings.node.nodeStrings.`null` = "null".asInstanceOf[typings.node.nodeStrings.`null`]
+    inline def `null`: "null" = "null".asInstanceOf["null"]
     
-    inline def number: typings.node.nodeStrings.number = "number".asInstanceOf[typings.node.nodeStrings.number]
+    inline def number: "number" = "number".asInstanceOf["number"]
     
-    inline def regexp: typings.node.nodeStrings.regexp = "regexp".asInstanceOf[typings.node.nodeStrings.regexp]
+    inline def regexp: "regexp" = "regexp".asInstanceOf["regexp"]
     
-    inline def special: typings.node.nodeStrings.special = "special".asInstanceOf[typings.node.nodeStrings.special]
+    inline def special: "special" = "special".asInstanceOf["special"]
     
-    inline def string: typings.node.nodeStrings.string = "string".asInstanceOf[typings.node.nodeStrings.string]
+    inline def string: "string" = "string".asInstanceOf["string"]
     
-    inline def symbol: typings.node.nodeStrings.symbol = "symbol".asInstanceOf[typings.node.nodeStrings.symbol]
+    inline def symbol: "symbol" = "symbol".asInstanceOf["symbol"]
     
-    inline def undefined: typings.node.nodeStrings.undefined = "undefined".asInstanceOf[typings.node.nodeStrings.undefined]
+    inline def undefined: "undefined" = "undefined".asInstanceOf["undefined"]
   }
+  type Style = "special" | "number" | "bigint" | "boolean" | "undefined" | "null" | "string" | "symbol" | "date" | "regexp" | "module"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.node.utilMod.OptionToken
-    - typings.node.anon.Kind
-    - typings.node.anon.IndexKind
-  */
-  trait Token extends StObject
-  object Token {
-    
-    inline def Index(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.node.anon.Index = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.node.anon.Index]
-    }
-    
-    inline def IndexKind(index: Double): typings.node.anon.IndexKind = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "option-terminator")
-      __obj.asInstanceOf[typings.node.anon.IndexKind]
-    }
-    
-    inline def InlineValue(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.node.anon.InlineValue = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.node.anon.InlineValue]
-    }
-    
-    inline def Kind(index: Double, value: String): typings.node.anon.Kind = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "positional", value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.node.anon.Kind]
-    }
-  }
+  type Token = OptionToken | Kind | IndexKind
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

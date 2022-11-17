@@ -1,8 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.dense
-import typings.materialUiCore.materialUiCoreStrings.none
-import typings.materialUiCore.materialUiCoreStrings.normal
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +15,7 @@ trait Disabled extends StObject {
   
   var focused: js.UndefOr[Boolean] = js.undefined
   
-  var margin: js.UndefOr[dense | none | normal] = js.undefined
+  var margin: js.UndefOr["dense" | "none" | "normal"] = js.undefined
   
   var required: js.UndefOr[Boolean] = js.undefined
   
@@ -49,7 +46,7 @@ object Disabled {
     
     inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
-    inline def setMargin(value: dense | none | normal): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: "dense" | "none" | "normal"): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     

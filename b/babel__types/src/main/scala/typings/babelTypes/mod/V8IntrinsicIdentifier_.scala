@@ -1,20 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.V8IntrinsicIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait V8IntrinsicIdentifier_
+trait V8IntrinsicIdentifier_
   extends StObject
-     with BaseNode
-     with Miscellaneous {
+     with BaseNode {
   
   var name: String
   
   @JSName("type")
-  var type_V8IntrinsicIdentifier_ : V8IntrinsicIdentifier
+  var type_V8IntrinsicIdentifier_ : "V8IntrinsicIdentifier"
 }
 object V8IntrinsicIdentifier_ {
   
@@ -28,6 +25,6 @@ object V8IntrinsicIdentifier_ {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setType(value: V8IntrinsicIdentifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "V8IntrinsicIdentifier"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

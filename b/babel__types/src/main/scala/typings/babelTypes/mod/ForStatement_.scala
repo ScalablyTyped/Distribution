@@ -1,20 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.ForStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ForStatement_
+trait ForStatement_
   extends StObject
-     with BaseNode
-     with BlockParent
-     with For
-     with Loop
-     with Scopable
-     with Standardized
-     with Statement {
+     with BaseNode {
   
   var body: Statement
   
@@ -23,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var test: Expression | Null
   
   @JSName("type")
-  var type_ForStatement_ : ForStatement
+  var type_ForStatement_ : "ForStatement"
   
   var update: Expression | Null
 }
@@ -47,7 +39,7 @@ object ForStatement_ {
     
     inline def setTestNull: Self = StObject.set(x, "test", null)
     
-    inline def setType(value: ForStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ForStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUpdate(value: Expression): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     

@@ -1,14 +1,12 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait RootNode
   extends StObject
-     with Node2
-     with ParentNode2 {
+     with Node2 {
   
   var cached: Double
   
@@ -33,7 +31,7 @@ trait RootNode
   var temps: Double
   
   @JSName("type")
-  var type_RootNode: `0`
+  var type_RootNode: 0
 }
 object RootNode {
   
@@ -99,6 +97,6 @@ object RootNode {
     
     inline def setTemps(value: Double): Self = StObject.set(x, "temps", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `0`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 0): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,53 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.about
-import typings.electron.electronStrings.appMenu
-import typings.electron.electronStrings.checkbox
-import typings.electron.electronStrings.clearRecentDocuments
-import typings.electron.electronStrings.close
-import typings.electron.electronStrings.copy
-import typings.electron.electronStrings.cut
-import typings.electron.electronStrings.delete
-import typings.electron.electronStrings.editMenu
-import typings.electron.electronStrings.fileMenu
-import typings.electron.electronStrings.forceReload
-import typings.electron.electronStrings.front
-import typings.electron.electronStrings.help
-import typings.electron.electronStrings.hide
-import typings.electron.electronStrings.hideOthers
-import typings.electron.electronStrings.mergeAllWindows
-import typings.electron.electronStrings.minimize
-import typings.electron.electronStrings.moveTabToNewWindow
-import typings.electron.electronStrings.normal
-import typings.electron.electronStrings.paste
-import typings.electron.electronStrings.pasteAndMatchStyle
-import typings.electron.electronStrings.quit
-import typings.electron.electronStrings.radio
-import typings.electron.electronStrings.recentDocuments
-import typings.electron.electronStrings.redo
-import typings.electron.electronStrings.reload
-import typings.electron.electronStrings.resetZoom
-import typings.electron.electronStrings.selectAll
-import typings.electron.electronStrings.selectNextTab
-import typings.electron.electronStrings.selectPreviousTab
-import typings.electron.electronStrings.separator
-import typings.electron.electronStrings.services
-import typings.electron.electronStrings.shareMenu
-import typings.electron.electronStrings.startSpeaking
-import typings.electron.electronStrings.stopSpeaking
-import typings.electron.electronStrings.submenu
-import typings.electron.electronStrings.toggleDevTools
-import typings.electron.electronStrings.toggleSpellChecker
-import typings.electron.electronStrings.toggleTabBar
-import typings.electron.electronStrings.togglefullscreen
-import typings.electron.electronStrings.undo
-import typings.electron.electronStrings.unhide
-import typings.electron.electronStrings.viewMenu
-import typings.electron.electronStrings.window
-import typings.electron.electronStrings.windowMenu
-import typings.electron.electronStrings.zoom
-import typings.electron.electronStrings.zoomIn
-import typings.electron.electronStrings.zoomOut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -135,7 +87,7 @@ trait MenuItem extends StObject {
     * `moveTabToNewWindow` or `windowMenu`
     */
   var role: js.UndefOr[
-    undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | toggleSpellChecker | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | shareMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
+    "undo" | "redo" | "cut" | "copy" | "paste" | "pasteAndMatchStyle" | "delete" | "selectAll" | "reload" | "forceReload" | "toggleDevTools" | "resetZoom" | "zoomIn" | "zoomOut" | "toggleSpellChecker" | "togglefullscreen" | "window" | "minimize" | "close" | "help" | "about" | "services" | "hide" | "hideOthers" | "unhide" | "quit" | "startSpeaking" | "stopSpeaking" | "zoom" | "front" | "appMenu" | "fileMenu" | "editMenu" | "viewMenu" | "shareMenu" | "recentDocuments" | "toggleTabBar" | "selectNextTab" | "selectPreviousTab" | "mergeAllWindows" | "clearRecentDocuments" | "moveTabToNewWindow" | "windowMenu"
   ] = js.undefined
   
   /**
@@ -168,7 +120,7 @@ trait MenuItem extends StObject {
     * A `string` indicating the type of the item. Can be `normal`, `separator`,
     * `submenu`, `checkbox` or `radio`.
     */
-  var `type`: normal | separator | submenu | checkbox | radio
+  var `type`: "normal" | "separator" | "submenu" | "checkbox" | "radio"
   
   /**
     * An `Accelerator | null` indicating the item's user-assigned accelerator for the
@@ -203,7 +155,7 @@ object MenuItem {
     sharingItem: SharingItem,
     sublabel: String,
     toolTip: String,
-    `type`: normal | separator | submenu | checkbox | radio,
+    `type`: "normal" | "separator" | "submenu" | "checkbox" | "radio",
     visible: Boolean
   ): MenuItem = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], commandId = commandId.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], registerAccelerator = registerAccelerator.asInstanceOf[js.Any], sharingItem = sharingItem.asInstanceOf[js.Any], sublabel = sublabel.asInstanceOf[js.Any], toolTip = toolTip.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], userAccelerator = null)
@@ -238,7 +190,7 @@ object MenuItem {
     inline def setRegisterAccelerator(value: Boolean): Self = StObject.set(x, "registerAccelerator", value.asInstanceOf[js.Any])
     
     inline def setRole(
-      value: undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | toggleSpellChecker | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | shareMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
+      value: "undo" | "redo" | "cut" | "copy" | "paste" | "pasteAndMatchStyle" | "delete" | "selectAll" | "reload" | "forceReload" | "toggleDevTools" | "resetZoom" | "zoomIn" | "zoomOut" | "toggleSpellChecker" | "togglefullscreen" | "window" | "minimize" | "close" | "help" | "about" | "services" | "hide" | "hideOthers" | "unhide" | "quit" | "startSpeaking" | "stopSpeaking" | "zoom" | "front" | "appMenu" | "fileMenu" | "editMenu" | "viewMenu" | "shareMenu" | "recentDocuments" | "toggleTabBar" | "selectNextTab" | "selectPreviousTab" | "mergeAllWindows" | "clearRecentDocuments" | "moveTabToNewWindow" | "windowMenu"
     ): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
@@ -253,7 +205,7 @@ object MenuItem {
     
     inline def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
     
-    inline def setType(value: normal | separator | submenu | checkbox | radio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "normal" | "separator" | "submenu" | "checkbox" | "radio"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUserAccelerator(value: Accelerator): Self = StObject.set(x, "userAccelerator", value.asInstanceOf[js.Any])
     

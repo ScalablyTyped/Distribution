@@ -1,22 +1,19 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.BindExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BindExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with Node {
+     with BaseNode {
   
   var callee: Expression
   
   var `object`: Expression
   
   @JSName("type")
-  var type_BindExpression_ : BindExpression
+  var type_BindExpression_ : "BindExpression"
 }
 object BindExpression_ {
   
@@ -33,6 +30,6 @@ object BindExpression_ {
     
     inline def setObject(value: Expression): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    inline def setType(value: BindExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "BindExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

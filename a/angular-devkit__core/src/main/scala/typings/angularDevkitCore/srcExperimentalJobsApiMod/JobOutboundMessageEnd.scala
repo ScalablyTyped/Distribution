@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JobOutboundMessageEnd
   extends StObject
-     with JobOutboundMessageBase
-     with JobOutboundMessage[Any] {
+     with JobOutboundMessageBase {
   
   @JSName("kind")
   val kind_JobOutboundMessageEnd: End

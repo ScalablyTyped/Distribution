@@ -1,41 +1,18 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.`column-reverse`
-import typings.reactNative.reactNativeStrings.`flex-end`
-import typings.reactNative.reactNativeStrings.`flex-start`
-import typings.reactNative.reactNativeStrings.`row-reverse`
-import typings.reactNative.reactNativeStrings.`space-around`
-import typings.reactNative.reactNativeStrings.`space-between`
-import typings.reactNative.reactNativeStrings.`space-evenly`
-import typings.reactNative.reactNativeStrings.`wrap-reverse`
-import typings.reactNative.reactNativeStrings.absolute
-import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.center
-import typings.reactNative.reactNativeStrings.column
-import typings.reactNative.reactNativeStrings.flex
-import typings.reactNative.reactNativeStrings.hidden
-import typings.reactNative.reactNativeStrings.inherit
-import typings.reactNative.reactNativeStrings.ltr
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.nowrap
-import typings.reactNative.reactNativeStrings.relative
-import typings.reactNative.reactNativeStrings.row
-import typings.reactNative.reactNativeStrings.rtl
-import typings.reactNative.reactNativeStrings.scroll
-import typings.reactNative.reactNativeStrings.stretch
-import typings.reactNative.reactNativeStrings.visible
-import typings.reactNative.reactNativeStrings.wrap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FlexStyle extends StObject {
   
-  var alignContent: js.UndefOr[`flex-start` | `flex-end` | center | stretch | `space-between` | `space-around`] = js.undefined
+  var alignContent: js.UndefOr[
+    "flex-start" | "flex-end" | "center" | "stretch" | "space-between" | "space-around"
+  ] = js.undefined
   
   var alignItems: js.UndefOr[FlexAlignType] = js.undefined
   
-  var alignSelf: js.UndefOr[auto | FlexAlignType] = js.undefined
+  var alignSelf: js.UndefOr["auto" | FlexAlignType] = js.undefined
   
   var aspectRatio: js.UndefOr[Double] = js.undefined
   
@@ -58,9 +35,9 @@ trait FlexStyle extends StObject {
   /**
     * @platform ios
     */
-  var direction: js.UndefOr[inherit | ltr | rtl] = js.undefined
+  var direction: js.UndefOr["inherit" | "ltr" | "rtl"] = js.undefined
   
-  var display: js.UndefOr[none | flex] = js.undefined
+  var display: js.UndefOr["none" | "flex"] = js.undefined
   
   var end: js.UndefOr[Double | String] = js.undefined
   
@@ -68,18 +45,18 @@ trait FlexStyle extends StObject {
   
   var flexBasis: js.UndefOr[Double | String] = js.undefined
   
-  var flexDirection: js.UndefOr[row | column | `row-reverse` | `column-reverse`] = js.undefined
+  var flexDirection: js.UndefOr["row" | "column" | "row-reverse" | "column-reverse"] = js.undefined
   
   var flexGrow: js.UndefOr[Double] = js.undefined
   
   var flexShrink: js.UndefOr[Double] = js.undefined
   
-  var flexWrap: js.UndefOr[wrap | nowrap | `wrap-reverse`] = js.undefined
+  var flexWrap: js.UndefOr["wrap" | "nowrap" | "wrap-reverse"] = js.undefined
   
   var height: js.UndefOr[Double | String] = js.undefined
   
   var justifyContent: js.UndefOr[
-    `flex-start` | `flex-end` | center | `space-between` | `space-around` | `space-evenly`
+    "flex-start" | "flex-end" | "center" | "space-between" | "space-around" | "space-evenly"
   ] = js.undefined
   
   var left: js.UndefOr[Double | String] = js.undefined
@@ -110,7 +87,7 @@ trait FlexStyle extends StObject {
   
   var minWidth: js.UndefOr[Double | String] = js.undefined
   
-  var overflow: js.UndefOr[visible | hidden | scroll] = js.undefined
+  var overflow: js.UndefOr["visible" | "hidden" | "scroll"] = js.undefined
   
   var padding: js.UndefOr[Double | String] = js.undefined
   
@@ -130,7 +107,7 @@ trait FlexStyle extends StObject {
   
   var paddingVertical: js.UndefOr[Double | String] = js.undefined
   
-  var position: js.UndefOr[absolute | relative] = js.undefined
+  var position: js.UndefOr["absolute" | "relative"] = js.undefined
   
   var right: js.UndefOr[Double | String] = js.undefined
   
@@ -151,7 +128,7 @@ object FlexStyle {
   
   extension [Self <: FlexStyle](x: Self) {
     
-    inline def setAlignContent(value: `flex-start` | `flex-end` | center | stretch | `space-between` | `space-around`): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
+    inline def setAlignContent(value: "flex-start" | "flex-end" | "center" | "stretch" | "space-between" | "space-around"): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     
     inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
     
@@ -159,7 +136,7 @@ object FlexStyle {
     
     inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
     
-    inline def setAlignSelf(value: auto | FlexAlignType): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+    inline def setAlignSelf(value: "auto" | FlexAlignType): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
     
     inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
     
@@ -199,11 +176,11 @@ object FlexStyle {
     
     inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    inline def setDirection(value: inherit | ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: "inherit" | "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    inline def setDisplay(value: none | flex): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: "none" | "flex"): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
@@ -217,7 +194,7 @@ object FlexStyle {
     
     inline def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
     
-    inline def setFlexDirection(value: row | column | `row-reverse` | `column-reverse`): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    inline def setFlexDirection(value: "row" | "column" | "row-reverse" | "column-reverse"): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
     inline def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
     
@@ -231,7 +208,7 @@ object FlexStyle {
     
     inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
-    inline def setFlexWrap(value: wrap | nowrap | `wrap-reverse`): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
+    inline def setFlexWrap(value: "wrap" | "nowrap" | "wrap-reverse"): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
     
     inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
     
@@ -239,7 +216,7 @@ object FlexStyle {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setJustifyContent(value: `flex-start` | `flex-end` | center | `space-between` | `space-around` | `space-evenly`): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+    inline def setJustifyContent(value: "flex-start" | "flex-end" | "center" | "space-between" | "space-around" | "space-evenly"): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
     
     inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
     
@@ -299,7 +276,7 @@ object FlexStyle {
     
     inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    inline def setOverflow(value: visible | hidden | scroll): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: "visible" | "hidden" | "scroll"): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
@@ -339,7 +316,7 @@ object FlexStyle {
     
     inline def setPaddingVerticalUndefined: Self = StObject.set(x, "paddingVertical", js.undefined)
     
-    inline def setPosition(value: absolute | relative): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: "absolute" | "relative"): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     

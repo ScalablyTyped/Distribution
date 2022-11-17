@@ -5,12 +5,6 @@ import typings.rcSteps.anon.Index
 import typings.rcSteps.libInterfaceMod.Icons
 import typings.rcSteps.libInterfaceMod.Status
 import typings.rcSteps.libStepMod.StepProps
-import typings.rcSteps.rcStepsStrings.`inline`
-import typings.rcSteps.rcStepsStrings.default
-import typings.rcSteps.rcStepsStrings.horizontal
-import typings.rcSteps.rcStepsStrings.navigation
-import typings.rcSteps.rcStepsStrings.small
-import typings.rcSteps.rcStepsStrings.vertical
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -45,7 +39,7 @@ object libStepsMod {
     
     var current: js.UndefOr[Double] = js.undefined
     
-    var direction: js.UndefOr[horizontal | vertical] = js.undefined
+    var direction: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var iconPrefix: js.UndefOr[String] = js.undefined
     
@@ -57,7 +51,7 @@ object libStepsMod {
     
     var items: js.UndefOr[js.Array[StepProps]] = js.undefined
     
-    var labelPlacement: js.UndefOr[horizontal | vertical] = js.undefined
+    var labelPlacement: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var onChange: js.UndefOr[js.Function1[/* current */ Double, Unit]] = js.undefined
     
@@ -65,7 +59,7 @@ object libStepsMod {
     
     var progressDot: js.UndefOr[ProgressDotRender | Boolean] = js.undefined
     
-    var size: js.UndefOr[default | small] = js.undefined
+    var size: js.UndefOr["default" | "small"] = js.undefined
     
     var status: js.UndefOr[Status] = js.undefined
     
@@ -73,7 +67,7 @@ object libStepsMod {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: js.UndefOr[default | navigation | `inline`] = js.undefined
+    var `type`: js.UndefOr["default" | "navigation" | "inline"] = js.undefined
   }
   object StepsProps {
     
@@ -96,7 +90,7 @@ object libStepsMod {
       
       inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "horizontal" | "vertical"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -122,7 +116,7 @@ object libStepsMod {
       
       inline def setItemsVarargs(value: StepProps*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setLabelPlacement(value: horizontal | vertical): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
+      inline def setLabelPlacement(value: "horizontal" | "vertical"): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
       
       inline def setLabelPlacementUndefined: Self = StObject.set(x, "labelPlacement", js.undefined)
       
@@ -140,7 +134,7 @@ object libStepsMod {
       
       inline def setProgressDotUndefined: Self = StObject.set(x, "progressDot", js.undefined)
       
-      inline def setSize(value: default | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "default" | "small"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -156,7 +150,7 @@ object libStepsMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setType(value: default | navigation | `inline`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "default" | "navigation" | "inline"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }

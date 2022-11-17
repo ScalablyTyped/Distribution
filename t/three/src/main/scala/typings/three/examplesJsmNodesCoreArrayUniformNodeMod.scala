@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object examplesJsmNodesCoreArrayUniformNodeMod {
   trait ArrayUniformNode
     extends typings.three.examplesJsmNodesCoreUniformNodeMod.default {
     
-    var isArrayUniformNode: `true` = js.native
+    var isArrayUniformNode: true = js.native
     
     var nodes: js.Array[typings.three.examplesJsmNodesCoreNodeMod.default] = js.native
   }

@@ -1,9 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.custom
-import typings.electron.electronStrings.default
-import typings.electron.electronStrings.none
-import typings.electron.electronStrings.printableArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +20,7 @@ trait Margins extends StObject {
     * Can be `default`, `none`, `printableArea`, or `custom`. If `custom` is chosen,
     * you will also need to specify `top`, `bottom`, `left`, and `right`.
     */
-  var marginType: js.UndefOr[default | none | printableArea | custom] = js.undefined
+  var marginType: js.UndefOr["default" | "none" | "printableArea" | "custom"] = js.undefined
   
   /**
     * The right margin of the printed web page, in pixels.
@@ -53,7 +49,7 @@ object Margins {
     
     inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    inline def setMarginType(value: default | none | printableArea | custom): Self = StObject.set(x, "marginType", value.asInstanceOf[js.Any])
+    inline def setMarginType(value: "default" | "none" | "printableArea" | "custom"): Self = StObject.set(x, "marginType", value.asInstanceOf[js.Any])
     
     inline def setMarginTypeUndefined: Self = StObject.set(x, "marginType", js.undefined)
     

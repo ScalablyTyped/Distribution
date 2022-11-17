@@ -1,13 +1,5 @@
 package typings.d3Fetch
 
-import typings.d3Fetch.d3FetchStrings.`lazy`
-import typings.d3Fetch.d3FetchStrings.a
-import typings.d3Fetch.d3FetchStrings.async
-import typings.d3Fetch.d3FetchStrings.auto
-import typings.d3Fetch.d3FetchStrings.eager
-import typings.d3Fetch.d3FetchStrings.fullscreenchange
-import typings.d3Fetch.d3FetchStrings.httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml
-import typings.d3Fetch.d3FetchStrings.sync
 import typings.std.Animation
 import typings.std.AnimationEvent
 import typings.std.Attr
@@ -101,7 +93,7 @@ object anon {
     
     var addEventListener: js.UndefOr[
         js.Function2[
-          fullscreenchange, 
+          /* type */ "fullscreenchange", 
           /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any], 
           Unit
         ]
@@ -239,7 +231,7 @@ object anon {
     
     var cloneNode: js.UndefOr[js.Function0[Node]] = js.undefined
     
-    var closest: js.UndefOr[js.Function1[a, HTMLAnchorElement | Null]] = js.undefined
+    var closest: js.UndefOr[js.Function1[/* selector */ "a", HTMLAnchorElement | Null]] = js.undefined
     
     var compareDocumentPosition: js.UndefOr[js.Function1[/* other */ Node, Double]] = js.undefined
     
@@ -257,7 +249,7 @@ object anon {
     
     var decode: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
     
-    var decoding: js.UndefOr[async | sync | auto] = js.undefined
+    var decoding: js.UndefOr["async" | "sync" | "auto"] = js.undefined
     
     var dir: js.UndefOr[String] = js.undefined
     
@@ -291,11 +283,11 @@ object anon {
     
     var getElementsByClassName: js.UndefOr[js.Function1[/* classNames */ String, HTMLCollectionOf[Element]]] = js.undefined
     
-    var getElementsByTagName: js.UndefOr[js.Function1[a, HTMLCollectionOf[HTMLAnchorElement]]] = js.undefined
+    var getElementsByTagName: js.UndefOr[js.Function1[/* qualifiedName */ "a", HTMLCollectionOf[HTMLAnchorElement]]] = js.undefined
     
     var getElementsByTagNameNS: js.UndefOr[
         js.Function2[
-          httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, 
+          /* namespaceURI */ "http://www.w3.org/1999/xhtml", 
           /* localName */ String, 
           HTMLCollectionOf[HTMLElement]
         ]
@@ -355,7 +347,7 @@ object anon {
     
     var lastElementChild: js.UndefOr[Element | Null] = js.undefined
     
-    var loading: js.UndefOr[eager | `lazy`] = js.undefined
+    var loading: js.UndefOr["eager" | "lazy"] = js.undefined
     
     var localName: js.UndefOr[String] = js.undefined
     
@@ -617,9 +609,9 @@ object anon {
     
     var previousSibling: js.UndefOr[ChildNode | Null] = js.undefined
     
-    var querySelector: js.UndefOr[js.Function1[a, HTMLAnchorElement | Null]] = js.undefined
+    var querySelector: js.UndefOr[js.Function1[/* selectors */ "a", HTMLAnchorElement | Null]] = js.undefined
     
-    var querySelectorAll: js.UndefOr[js.Function1[a, NodeListOf[HTMLAnchorElement]]] = js.undefined
+    var querySelectorAll: js.UndefOr[js.Function1[/* selectors */ "a", NodeListOf[HTMLAnchorElement]]] = js.undefined
     
     var referrerPolicy: js.UndefOr[String] = js.undefined
     
@@ -637,7 +629,7 @@ object anon {
     
     var removeEventListener: js.UndefOr[
         js.Function2[
-          fullscreenchange, 
+          /* type */ "fullscreenchange", 
           /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any], 
           Unit
         ]
@@ -743,7 +735,7 @@ object anon {
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
       inline def setAddEventListener(
-        value: (fullscreenchange, /* listener */ js.ThisFunction1[PartialHTMLImageElement, /* ev */ Event, Any]) => Unit
+        value: (/* type */ "fullscreenchange", /* listener */ js.ThisFunction1[PartialHTMLImageElement, /* ev */ Event, Any]) => Unit
       ): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
       inline def setAddEventListenerUndefined: Self = StObject.set(x, "addEventListener", js.undefined)
@@ -1100,7 +1092,7 @@ object anon {
       
       inline def setCloneNodeUndefined: Self = StObject.set(x, "cloneNode", js.undefined)
       
-      inline def setClosest(value: a => HTMLAnchorElement | Null): Self = StObject.set(x, "closest", js.Any.fromFunction1(value))
+      inline def setClosest(value: /* selector */ "a" => HTMLAnchorElement | Null): Self = StObject.set(x, "closest", js.Any.fromFunction1(value))
       
       inline def setClosestUndefined: Self = StObject.set(x, "closest", js.undefined)
       
@@ -1174,7 +1166,7 @@ object anon {
       
       inline def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
       
-      inline def setDecoding(value: async | sync | auto): Self = StObject.set(x, "decoding", value.asInstanceOf[js.Any])
+      inline def setDecoding(value: "async" | "sync" | "auto"): Self = StObject.set(x, "decoding", value.asInstanceOf[js.Any])
       
       inline def setDecodingUndefined: Self = StObject.set(x, "decoding", js.undefined)
       
@@ -1258,10 +1250,10 @@ object anon {
       
       inline def setGetElementsByClassNameUndefined: Self = StObject.set(x, "getElementsByClassName", js.undefined)
       
-      inline def setGetElementsByTagName(value: a => HTMLCollectionOf[HTMLAnchorElement]): Self = StObject.set(x, "getElementsByTagName", js.Any.fromFunction1(value))
+      inline def setGetElementsByTagName(value: /* qualifiedName */ "a" => HTMLCollectionOf[HTMLAnchorElement]): Self = StObject.set(x, "getElementsByTagName", js.Any.fromFunction1(value))
       
       inline def setGetElementsByTagNameNS(
-        value: (httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, /* localName */ String) => HTMLCollectionOf[HTMLElement]
+        value: (/* namespaceURI */ "http://www.w3.org/1999/xhtml", /* localName */ String) => HTMLCollectionOf[HTMLElement]
       ): Self = StObject.set(x, "getElementsByTagNameNS", js.Any.fromFunction2(value))
       
       inline def setGetElementsByTagNameNSUndefined: Self = StObject.set(x, "getElementsByTagNameNS", js.undefined)
@@ -1380,7 +1372,7 @@ object anon {
       
       inline def setLastElementChildUndefined: Self = StObject.set(x, "lastElementChild", js.undefined)
       
-      inline def setLoading(value: eager | `lazy`): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: "eager" | "lazy"): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
@@ -2118,9 +2110,9 @@ object anon {
       
       inline def setPreviousSiblingUndefined: Self = StObject.set(x, "previousSibling", js.undefined)
       
-      inline def setQuerySelector(value: a => HTMLAnchorElement | Null): Self = StObject.set(x, "querySelector", js.Any.fromFunction1(value))
+      inline def setQuerySelector(value: /* selectors */ "a" => HTMLAnchorElement | Null): Self = StObject.set(x, "querySelector", js.Any.fromFunction1(value))
       
-      inline def setQuerySelectorAll(value: a => NodeListOf[HTMLAnchorElement]): Self = StObject.set(x, "querySelectorAll", js.Any.fromFunction1(value))
+      inline def setQuerySelectorAll(value: /* selectors */ "a" => NodeListOf[HTMLAnchorElement]): Self = StObject.set(x, "querySelectorAll", js.Any.fromFunction1(value))
       
       inline def setQuerySelectorAllUndefined: Self = StObject.set(x, "querySelectorAll", js.undefined)
       
@@ -2153,7 +2145,7 @@ object anon {
       inline def setRemoveChildUndefined: Self = StObject.set(x, "removeChild", js.undefined)
       
       inline def setRemoveEventListener(
-        value: (fullscreenchange, /* listener */ js.ThisFunction1[PartialHTMLImageElement, /* ev */ Event, Any]) => Unit
+        value: (/* type */ "fullscreenchange", /* listener */ js.ThisFunction1[PartialHTMLImageElement, /* ev */ Event, Any]) => Unit
       ): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
       
       inline def setRemoveEventListenerUndefined: Self = StObject.set(x, "removeEventListener", js.undefined)

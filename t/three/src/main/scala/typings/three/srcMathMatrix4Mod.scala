@@ -6,7 +6,6 @@ import typings.three.srcMathMatrix3Mod.Matrix
 import typings.three.srcMathMatrix3Mod.Matrix3
 import typings.three.srcMathQuaternionMod.Quaternion
 import typings.three.srcMathVector3Mod.Vector3
-import typings.three.threeInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -273,14 +272,16 @@ object srcMathMatrix4Mod {
     def toArray(): ArrayLike[Double] = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+    @JSName("toArray")
+    @scala.annotation.targetName("toArray_0")
+    def toArray(array: Unit, offset: 0): Matrix4Tuple = js.native
     def toArray(array: Unit, offset: Double): ArrayLike[Double] = js.native
     def toArray(array: ArrayLike[Double]): ArrayLike[Double] = js.native
     def toArray(array: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
     def toArray(array: Matrix4Tuple): Matrix4Tuple = js.native
     @JSName("toArray")
-    def toArray_0(array: Unit, offset: `0`): Matrix4Tuple = js.native
-    @JSName("toArray")
-    def toArray_0(array: Matrix4Tuple, offset: `0`): Matrix4Tuple = js.native
+    @scala.annotation.targetName("toArray_0")
+    def toArray(array: Matrix4Tuple, offset: 0): Matrix4Tuple = js.native
     /**
       * Returns an array with the values of this matrix, or copies them into the provided array.
       * @param array (optional) array to store the matrix to. If this is not provided, a new array will be created.

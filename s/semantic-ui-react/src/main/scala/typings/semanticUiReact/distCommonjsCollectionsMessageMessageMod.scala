@@ -20,8 +20,6 @@ import typings.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandCollection
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
-import typings.semanticUiReact.semanticUiReactStrings.bottom
-import typings.semanticUiReact.semanticUiReactStrings.top
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -66,32 +64,23 @@ object distCommonjsCollectionsMessageMessageMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.semanticUiReact.semanticUiReactStrings.mini
-    - typings.semanticUiReact.semanticUiReactStrings.tiny
-    - typings.semanticUiReact.semanticUiReactStrings.small
-    - typings.semanticUiReact.semanticUiReactStrings.large
-    - typings.semanticUiReact.semanticUiReactStrings.big
-    - typings.semanticUiReact.semanticUiReactStrings.huge
-    - typings.semanticUiReact.semanticUiReactStrings.massive
-  */
-  trait MessageSizeProp extends StObject
   object MessageSizeProp {
     
-    inline def big: typings.semanticUiReact.semanticUiReactStrings.big = "big".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.big]
+    inline def big: "big" = "big".asInstanceOf["big"]
     
-    inline def huge: typings.semanticUiReact.semanticUiReactStrings.huge = "huge".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.huge]
+    inline def huge: "huge" = "huge".asInstanceOf["huge"]
     
-    inline def large: typings.semanticUiReact.semanticUiReactStrings.large = "large".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.large]
+    inline def large: "large" = "large".asInstanceOf["large"]
     
-    inline def massive: typings.semanticUiReact.semanticUiReactStrings.massive = "massive".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.massive]
+    inline def massive: "massive" = "massive".asInstanceOf["massive"]
     
-    inline def mini: typings.semanticUiReact.semanticUiReactStrings.mini = "mini".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mini]
+    inline def mini: "mini" = "mini".asInstanceOf["mini"]
     
-    inline def small: typings.semanticUiReact.semanticUiReactStrings.small = "small".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.small]
+    inline def small: "small" = "small".asInstanceOf["small"]
     
-    inline def tiny: typings.semanticUiReact.semanticUiReactStrings.tiny = "tiny".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tiny]
+    inline def tiny: "tiny" = "tiny".asInstanceOf["tiny"]
   }
+  type MessageSizeProp = "mini" | "tiny" | "small" | "large" | "big" | "huge" | "massive"
   
   trait StrictMessageProps extends StObject {
     
@@ -99,7 +88,7 @@ object distCommonjsCollectionsMessageMessageMod extends Shortcut {
     var as: js.UndefOr[Any] = js.undefined
     
     /** A message can be formatted to attach itself to other content. */
-    var attached: js.UndefOr[Boolean | bottom | top] = js.undefined
+    var attached: js.UndefOr[Boolean | "bottom" | "top"] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -179,7 +168,7 @@ object distCommonjsCollectionsMessageMessageMod extends Shortcut {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAttached(value: Boolean | bottom | top): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: Boolean | "bottom" | "top"): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
       inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       

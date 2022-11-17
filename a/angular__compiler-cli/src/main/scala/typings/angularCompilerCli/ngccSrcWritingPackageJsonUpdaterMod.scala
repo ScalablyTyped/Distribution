@@ -1,5 +1,6 @@
 package typings.angularCompilerCli
 
+import typings.angularCompilerCli.anon.Before
 import typings.angularCompilerCli.ngccSrcUtilsMod.JsonObject
 import typings.angularCompilerCli.ngccSrcUtilsMod.JsonValue
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
@@ -90,12 +91,7 @@ object ngccSrcWritingPackageJsonUpdaterMod {
   */
   type PackageJsonChange = js.Tuple3[js.Array[String], Any, PackageJsonPropertyPositioning]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliStrings.unimportant
-    - typings.angularCompilerCli.angularCompilerCliStrings.alphabetic
-    - typings.angularCompilerCli.anon.Before
-  */
-  trait PackageJsonPropertyPositioning extends StObject
+  type PackageJsonPropertyPositioning = "unimportant" | "alphabetic" | Before
   
   @js.native
   trait PackageJsonUpdater extends StObject {

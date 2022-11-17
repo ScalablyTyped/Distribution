@@ -1,9 +1,5 @@
 package typings.typescript.mod
 
-import typings.typescript.typescriptStrings.camelCase
-import typings.typescript.typescriptStrings.exact
-import typings.typescript.typescriptStrings.prefix
-import typings.typescript.typescriptStrings.substring
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +18,7 @@ trait NavigateToItem extends StObject {
   
   var kindModifiers: java.lang.String
   
-  var matchKind: exact | prefix | substring | camelCase
+  var matchKind: "exact" | "prefix" | "substring" | "camelCase"
   
   var name: java.lang.String
   
@@ -37,7 +33,7 @@ object NavigateToItem {
     isCaseSensitive: Boolean,
     kind: ScriptElementKind,
     kindModifiers: java.lang.String,
-    matchKind: exact | prefix | substring | camelCase,
+    matchKind: "exact" | "prefix" | "substring" | "camelCase",
     name: java.lang.String,
     textSpan: TextSpan
   ): NavigateToItem = {
@@ -59,7 +55,7 @@ object NavigateToItem {
     
     inline def setKindModifiers(value: java.lang.String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
     
-    inline def setMatchKind(value: exact | prefix | substring | camelCase): Self = StObject.set(x, "matchKind", value.asInstanceOf[js.Any])
+    inline def setMatchKind(value: "exact" | "prefix" | "substring" | "camelCase"): Self = StObject.set(x, "matchKind", value.asInstanceOf[js.Any])
     
     inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

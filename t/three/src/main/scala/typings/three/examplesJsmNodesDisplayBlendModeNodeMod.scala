@@ -3,10 +3,6 @@ package typings.three
 import typings.three.anon.Base
 import typings.three.examplesJsmNodesNodesMod.Node
 import typings.three.examplesJsmNodesShadernodeShaderNodeBaseElementsMod.ShaderNode
-import typings.three.threeStrings.burn
-import typings.three.threeStrings.dodge
-import typings.three.threeStrings.overlay
-import typings.three.threeStrings.screen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,23 +23,23 @@ object examplesJsmNodesDisplayBlendModeNodeMod {
     
     @JSImport("three/examples/jsm/nodes/display/BlendModeNode", "default.BURN")
     @js.native
-    def BURN: burn = js.native
-    inline def BURN_=(x: burn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BURN")(x.asInstanceOf[js.Any])
+    def BURN: "burn" = js.native
+    inline def BURN_=(x: "burn"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BURN")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/display/BlendModeNode", "default.DODGE")
     @js.native
-    def DODGE: dodge = js.native
-    inline def DODGE_=(x: dodge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DODGE")(x.asInstanceOf[js.Any])
+    def DODGE: "dodge" = js.native
+    inline def DODGE_=(x: "dodge"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DODGE")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/display/BlendModeNode", "default.OVERLAY")
     @js.native
-    def OVERLAY: overlay = js.native
-    inline def OVERLAY_=(x: overlay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OVERLAY")(x.asInstanceOf[js.Any])
+    def OVERLAY: "overlay" = js.native
+    inline def OVERLAY_=(x: "overlay"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OVERLAY")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/display/BlendModeNode", "default.SCREEN")
     @js.native
-    def SCREEN: screen = js.native
-    inline def SCREEN_=(x: screen): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCREEN")(x.asInstanceOf[js.Any])
+    def SCREEN: "screen" = js.native
+    inline def SCREEN_=(x: "screen"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCREEN")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("three/examples/jsm/nodes/display/BlendModeNode", "BurnNode")

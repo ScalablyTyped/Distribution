@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HttpUserEvent[T]
-  extends StObject
-     with HttpEvent[T] {
+trait HttpUserEvent[T] extends StObject {
   
   var `type`: User
 }

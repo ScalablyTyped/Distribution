@@ -1,29 +1,23 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSImportEqualsDeclaration
-import typings.babelTypes.babelTypesStrings.`type`
-import typings.babelTypes.babelTypesStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSImportEqualsDeclaration__
   extends StObject
-     with BaseNode
-     with Node
-     with Statement
-     with TypeScript {
+     with BaseNode {
   
   var id: Identifier_
   
-  var importKind: js.UndefOr[`type` | value | Null] = js.undefined
+  var importKind: js.UndefOr["type" | "value" | Null] = js.undefined
   
   var isExport: Boolean
   
   var moduleReference: TSEntityName | TSExternalModuleReference__
   
   @JSName("type")
-  var type_TSImportEqualsDeclaration__ : TSImportEqualsDeclaration
+  var type_TSImportEqualsDeclaration__ : "TSImportEqualsDeclaration"
 }
 object TSImportEqualsDeclaration__ {
   
@@ -37,7 +31,7 @@ object TSImportEqualsDeclaration__ {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setImportKind(value: `type` | value): Self = StObject.set(x, "importKind", value.asInstanceOf[js.Any])
+    inline def setImportKind(value: "type" | "value"): Self = StObject.set(x, "importKind", value.asInstanceOf[js.Any])
     
     inline def setImportKindNull: Self = StObject.set(x, "importKind", null)
     
@@ -47,6 +41,6 @@ object TSImportEqualsDeclaration__ {
     
     inline def setModuleReference(value: TSEntityName | TSExternalModuleReference__): Self = StObject.set(x, "moduleReference", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSImportEqualsDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSImportEqualsDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

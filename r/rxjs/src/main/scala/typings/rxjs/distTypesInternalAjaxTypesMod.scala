@@ -255,17 +255,13 @@ object distTypesInternalAjaxTypesMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rxjs.rxjsStrings.upload
-    - typings.rxjs.rxjsStrings.download
-  */
-  trait AjaxDirection extends StObject
   object AjaxDirection {
     
-    inline def download: typings.rxjs.rxjsStrings.download = "download".asInstanceOf[typings.rxjs.rxjsStrings.download]
+    inline def download: "download" = "download".asInstanceOf["download"]
     
-    inline def upload: typings.rxjs.rxjsStrings.upload = "upload".asInstanceOf[typings.rxjs.rxjsStrings.upload]
+    inline def upload: "upload" = "upload".asInstanceOf["upload"]
   }
+  type AjaxDirection = "upload" | "download"
   
   trait AjaxRequest extends StObject {
     
@@ -376,18 +372,13 @@ object distTypesInternalAjaxTypesMod {
   
   type AjaxResponseType = /* template literal string: ${AjaxDirection}_${ProgressEventType} */ String
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rxjs.rxjsStrings.loadstart
-    - typings.rxjs.rxjsStrings.progress
-    - typings.rxjs.rxjsStrings.load
-  */
-  trait ProgressEventType extends StObject
   object ProgressEventType {
     
-    inline def load: typings.rxjs.rxjsStrings.load = "load".asInstanceOf[typings.rxjs.rxjsStrings.load]
+    inline def load: "load" = "load".asInstanceOf["load"]
     
-    inline def loadstart: typings.rxjs.rxjsStrings.loadstart = "loadstart".asInstanceOf[typings.rxjs.rxjsStrings.loadstart]
+    inline def loadstart: "loadstart" = "loadstart".asInstanceOf["loadstart"]
     
-    inline def progress: typings.rxjs.rxjsStrings.progress = "progress".asInstanceOf[typings.rxjs.rxjsStrings.progress]
+    inline def progress: "progress" = "progress".asInstanceOf["progress"]
   }
+  type ProgressEventType = "loadstart" | "progress" | "load"
 }

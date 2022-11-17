@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.AnyTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `65` extends StObject {
   
-  var `type`: AnyTypeAnnotation
+  var `type`: "AnyTypeAnnotation"
 }
 object `65` {
   
@@ -19,6 +18,6 @@ object `65` {
   
   extension [Self <: `65`](x: Self) {
     
-    inline def setType(value: AnyTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "AnyTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,18 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.PipelinePrimaryTopicReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait PipelinePrimaryTopicReference_
+trait PipelinePrimaryTopicReference_
   extends StObject
-     with BaseNode
-     with Expression {
+     with BaseNode {
   
   @JSName("type")
-  var type_PipelinePrimaryTopicReference_ : PipelinePrimaryTopicReference
+  var type_PipelinePrimaryTopicReference_ : "PipelinePrimaryTopicReference"
 }
 object PipelinePrimaryTopicReference_ {
   
@@ -24,6 +21,6 @@ object PipelinePrimaryTopicReference_ {
   
   extension [Self <: PipelinePrimaryTopicReference_](x: Self) {
     
-    inline def setType(value: PipelinePrimaryTopicReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "PipelinePrimaryTopicReference"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

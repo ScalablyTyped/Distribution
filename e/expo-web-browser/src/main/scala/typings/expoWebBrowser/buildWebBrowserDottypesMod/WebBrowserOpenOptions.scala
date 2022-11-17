@@ -1,8 +1,5 @@
 package typings.expoWebBrowser.buildWebBrowserDottypesMod
 
-import typings.expoWebBrowser.expoWebBrowserStrings.cancel
-import typings.expoWebBrowser.expoWebBrowserStrings.close
-import typings.expoWebBrowser.expoWebBrowserStrings.done
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +31,7 @@ trait WebBrowserOpenOptions extends StObject {
     * The style of the dismiss button. Should be one of: `done`, `close`, or `cancel`.
     * @platform ios
     */
-  var dismissButtonStyle: js.UndefOr[done | close | cancel] = js.undefined
+  var dismissButtonStyle: js.UndefOr["done" | "close" | "cancel"] = js.undefined
   
   /**
     * A boolean determining whether the toolbar should be hiding when a user scrolls the website.
@@ -119,7 +116,7 @@ object WebBrowserOpenOptions {
     
     inline def setCreateTaskUndefined: Self = StObject.set(x, "createTask", js.undefined)
     
-    inline def setDismissButtonStyle(value: done | close | cancel): Self = StObject.set(x, "dismissButtonStyle", value.asInstanceOf[js.Any])
+    inline def setDismissButtonStyle(value: "done" | "close" | "cancel"): Self = StObject.set(x, "dismissButtonStyle", value.asInstanceOf[js.Any])
     
     inline def setDismissButtonStyleUndefined: Self = StObject.set(x, "dismissButtonStyle", js.undefined)
     

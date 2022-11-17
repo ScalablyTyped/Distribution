@@ -1,6 +1,5 @@
 package typings.node.cryptoMod
 
-import typings.node.nodeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait GeneratePrimeOptionsBigInt
      with GeneratePrimeOptions {
   
   @JSName("bigint")
-  var bigint_GeneratePrimeOptionsBigInt: `true`
+  var bigint_GeneratePrimeOptionsBigInt: true
 }
 object GeneratePrimeOptionsBigInt {
   
@@ -21,6 +20,6 @@ object GeneratePrimeOptionsBigInt {
   
   extension [Self <: GeneratePrimeOptionsBigInt](x: Self) {
     
-    inline def setBigint(value: `true`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+    inline def setBigint(value: true): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
   }
 }

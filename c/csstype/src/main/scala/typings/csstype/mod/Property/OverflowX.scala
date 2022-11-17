@@ -4,44 +4,29 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.csstypeStrings.`-moz-hidden-unscrollable`
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.clip
-  - typings.csstype.csstypeStrings.hidden
-  - typings.csstype.csstypeStrings.scroll
-  - typings.csstype.csstypeStrings.visible
-  - typings.csstype.csstypeStrings.`-moz-initial`
-  - typings.csstype.csstypeStrings.inherit
-  - typings.csstype.csstypeStrings.initial
-  - typings.csstype.csstypeStrings.revert
-  - typings.csstype.csstypeStrings.`revert-layer`
-  - typings.csstype.csstypeStrings.unset
-*/
-trait OverflowX extends StObject
 object OverflowX {
   
-  inline def `-moz-hidden-unscrollable`: typings.csstype.csstypeStrings.`-moz-hidden-unscrollable` = "-moz-hidden-unscrollable".asInstanceOf[typings.csstype.csstypeStrings.`-moz-hidden-unscrollable`]
+  inline def `-moz-hidden-unscrollable`: "-moz-hidden-unscrollable" = "-moz-hidden-unscrollable".asInstanceOf["-moz-hidden-unscrollable"]
   
-  inline def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def auto: typings.csstype.csstypeStrings.auto = "auto".asInstanceOf[typings.csstype.csstypeStrings.auto]
+  inline def auto: "auto" = "auto".asInstanceOf["auto"]
   
-  inline def clip: typings.csstype.csstypeStrings.clip = "clip".asInstanceOf[typings.csstype.csstypeStrings.clip]
+  inline def clip: "clip" = "clip".asInstanceOf["clip"]
   
-  inline def hidden: typings.csstype.csstypeStrings.hidden = "hidden".asInstanceOf[typings.csstype.csstypeStrings.hidden]
+  inline def hidden: "hidden" = "hidden".asInstanceOf["hidden"]
   
-  inline def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def `revert-layer`: typings.csstype.csstypeStrings.`revert-layer` = "revert-layer".asInstanceOf[typings.csstype.csstypeStrings.`revert-layer`]
+  inline def `revert-layer`: "revert-layer" = "revert-layer".asInstanceOf["revert-layer"]
   
-  inline def scroll: typings.csstype.csstypeStrings.scroll = "scroll".asInstanceOf[typings.csstype.csstypeStrings.scroll]
+  inline def scroll: "scroll" = "scroll".asInstanceOf["scroll"]
   
-  inline def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
   
-  inline def visible: typings.csstype.csstypeStrings.visible = "visible".asInstanceOf[typings.csstype.csstypeStrings.visible]
+  inline def visible: "visible" = "visible".asInstanceOf["visible"]
 }

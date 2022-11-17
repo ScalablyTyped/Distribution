@@ -1,17 +1,14 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashTOGGLE_DRAWER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationToggleDrawerAction
-  extends StObject
-     with NavigationDrawerAction {
+trait NavigationToggleDrawerAction extends StObject {
   
   var key: js.UndefOr[String] = js.undefined
   
-  var `type`: NavigationSlashTOGGLE_DRAWER
+  var `type`: "Navigation/TOGGLE_DRAWER"
 }
 object NavigationToggleDrawerAction {
   
@@ -27,6 +24,6 @@ object NavigationToggleDrawerAction {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setType(value: NavigationSlashTOGGLE_DRAWER): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Navigation/TOGGLE_DRAWER"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

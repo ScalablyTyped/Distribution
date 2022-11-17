@@ -5,7 +5,6 @@ import typings.three.srcConstantsMod.CompressedPixelFormat
 import typings.three.srcConstantsMod.TextureDataType
 import typings.three.srcConstantsMod.Wrapping
 import typings.three.srcTexturesCompressedTextureMod.CompressedTexture
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +39,7 @@ object srcTexturesCompressedArrayTextureMod {
       `type`: TextureDataType
     ) = this()
     
-    var isCompressedArrayTexture: `true` = js.native
+    var isCompressedArrayTexture: true = js.native
     
     var wrapR: Wrapping = js.native
   }

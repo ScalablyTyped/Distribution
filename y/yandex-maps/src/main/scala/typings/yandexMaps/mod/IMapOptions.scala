@@ -1,15 +1,12 @@
 package typings.yandexMaps.mod
 
-import typings.yandexMaps.yandexMapsStrings.always
-import typings.yandexMaps.yandexMapsStrings.ifNull
-import typings.yandexMaps.yandexMapsStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IMapOptions extends StObject {
   
-  var autoFitToViewport: js.UndefOr[none | ifNull | always] = js.undefined
+  var autoFitToViewport: js.UndefOr["none" | "ifNull" | "always"] = js.undefined
   
   var avoidFractionalZoom: js.UndefOr[Boolean] = js.undefined
   
@@ -54,7 +51,7 @@ object IMapOptions {
   
   extension [Self <: IMapOptions](x: Self) {
     
-    inline def setAutoFitToViewport(value: none | ifNull | always): Self = StObject.set(x, "autoFitToViewport", value.asInstanceOf[js.Any])
+    inline def setAutoFitToViewport(value: "none" | "ifNull" | "always"): Self = StObject.set(x, "autoFitToViewport", value.asInstanceOf[js.Any])
     
     inline def setAutoFitToViewportUndefined: Self = StObject.set(x, "autoFitToViewport", js.undefined)
     

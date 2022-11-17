@@ -4,11 +4,6 @@ import typings.angularCompiler.mod.InterpolationConfig
 import typings.angularCompiler.mod.ParseSourceFile
 import typings.angularCompiler.mod.ParsedTemplate
 import typings.angularCompiler.mod.TmplAstNode
-import typings.angularCompilerCli.angularCompilerCliBooleans.`false`
-import typings.angularCompilerCli.angularCompilerCliBooleans.`true`
-import typings.angularCompilerCli.angularCompilerCliInts.`0`
-import typings.angularCompilerCli.angularCompilerCliInts.`1`
-import typings.angularCompilerCli.angularCompilerCliInts.`2`
 import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcApiMod.ResourceLoader
 import typings.angularCompilerCli.srcNgtscDiagnosticsMod.FatalDiagnosticError
 import typings.angularCompilerCli.srcNgtscIncrementalApiMod.DependencyTracker
@@ -140,10 +135,9 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
   
   trait ExternalTemplateDeclaration
     extends StObject
-       with CommonTemplateDeclaration
-       with TemplateDeclaration {
+       with CommonTemplateDeclaration {
     
-    var isInline: `false`
+    var isInline: false
     
     var templateUrlExpression: Expression
   }
@@ -162,7 +156,7 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
     
     extension [Self <: ExternalTemplateDeclaration](x: Self) {
       
-      inline def setIsInline(value: `false`): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
+      inline def setIsInline(value: false): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
       
       inline def setTemplateUrlExpression(value: Expression): Self = StObject.set(x, "templateUrlExpression", value.asInstanceOf[js.Any])
     }
@@ -199,12 +193,11 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
   
   trait InlineTemplateDeclaration
     extends StObject
-       with CommonTemplateDeclaration
-       with TemplateDeclaration {
+       with CommonTemplateDeclaration {
     
     var expression: Expression
     
-    var isInline: `true`
+    var isInline: true
   }
   object InlineTemplateDeclaration {
     
@@ -223,7 +216,7 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
       
       inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      inline def setIsInline(value: `true`): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
+      inline def setIsInline(value: true): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     }
   }
   
@@ -305,32 +298,27 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliInts.`0`
-    - typings.angularCompilerCli.angularCompilerCliInts.`1`
-    - typings.angularCompilerCli.angularCompilerCliInts.`2`
-  */
-  trait ResourceTypeForDiagnostics extends StObject
   object ResourceTypeForDiagnostics {
     
-    inline def StylesheetFromDecorator: `2` = 2.asInstanceOf[`2`]
+    inline def StylesheetFromDecorator: 2 = 2.asInstanceOf[2]
     
-    inline def StylesheetFromTemplate: `1` = 1.asInstanceOf[`1`]
+    inline def StylesheetFromTemplate: 1 = 1.asInstanceOf[1]
     
-    inline def Template: `0` = 0.asInstanceOf[`0`]
+    inline def Template: 0 = 0.asInstanceOf[0]
   }
+  type ResourceTypeForDiagnostics = 0 | 1 | 2
   
   trait StyleUrlMeta extends StObject {
     
     var nodeForError: Node
     
-    var source: `1` | `2`
+    var source: 1 | 2
     
     var url: String
   }
   object StyleUrlMeta {
     
-    inline def apply(nodeForError: Node, source: `1` | `2`, url: String): StyleUrlMeta = {
+    inline def apply(nodeForError: Node, source: 1 | 2, url: String): StyleUrlMeta = {
       val __obj = js.Dynamic.literal(nodeForError = nodeForError.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[StyleUrlMeta]
     }
@@ -339,39 +327,11 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
       
       inline def setNodeForError(value: Node): Self = StObject.set(x, "nodeForError", value.asInstanceOf[js.Any])
       
-      inline def setSource(value: `1` | `2`): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: 1 | 2): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcResourcesMod.InlineTemplateDeclaration
-    - typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcResourcesMod.ExternalTemplateDeclaration
-  */
-  trait TemplateDeclaration extends StObject
-  object TemplateDeclaration {
-    
-    inline def ExternalTemplateDeclaration(
-      interpolationConfig: InterpolationConfig,
-      preserveWhitespaces: Boolean,
-      resolvedTemplateUrl: String,
-      templateUrl: String,
-      templateUrlExpression: Expression
-    ): typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcResourcesMod.ExternalTemplateDeclaration = {
-      val __obj = js.Dynamic.literal(interpolationConfig = interpolationConfig.asInstanceOf[js.Any], isInline = false, preserveWhitespaces = preserveWhitespaces.asInstanceOf[js.Any], resolvedTemplateUrl = resolvedTemplateUrl.asInstanceOf[js.Any], templateUrl = templateUrl.asInstanceOf[js.Any], templateUrlExpression = templateUrlExpression.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcResourcesMod.ExternalTemplateDeclaration]
-    }
-    
-    inline def InlineTemplateDeclaration(
-      expression: Expression,
-      interpolationConfig: InterpolationConfig,
-      preserveWhitespaces: Boolean,
-      resolvedTemplateUrl: String,
-      templateUrl: String
-    ): typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcResourcesMod.InlineTemplateDeclaration = {
-      val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], interpolationConfig = interpolationConfig.asInstanceOf[js.Any], isInline = true, preserveWhitespaces = preserveWhitespaces.asInstanceOf[js.Any], resolvedTemplateUrl = resolvedTemplateUrl.asInstanceOf[js.Any], templateUrl = templateUrl.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcResourcesMod.InlineTemplateDeclaration]
-    }
-  }
+  type TemplateDeclaration = InlineTemplateDeclaration | ExternalTemplateDeclaration
 }

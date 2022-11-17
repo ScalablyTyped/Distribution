@@ -6,63 +6,6 @@ import typings.materialUiCore.anon.PartialModalProps
 import typings.materialUiCore.anon.PartialPaperProps
 import typings.materialUiCore.anon.PartialSlideProps
 import typings.materialUiCore.backdropBackdropMod.BackdropProps
-import typings.materialUiCore.materialUiCoreStrings.`additions removals`
-import typings.materialUiCore.materialUiCoreStrings.`additions text`
-import typings.materialUiCore.materialUiCoreStrings.`inline`
-import typings.materialUiCore.materialUiCoreStrings.`removals additions`
-import typings.materialUiCore.materialUiCoreStrings.`removals text`
-import typings.materialUiCore.materialUiCoreStrings.`text additions`
-import typings.materialUiCore.materialUiCoreStrings.`text removals`
-import typings.materialUiCore.materialUiCoreStrings.additions
-import typings.materialUiCore.materialUiCoreStrings.all
-import typings.materialUiCore.materialUiCoreStrings.ascending
-import typings.materialUiCore.materialUiCoreStrings.assertive
-import typings.materialUiCore.materialUiCoreStrings.both
-import typings.materialUiCore.materialUiCoreStrings.bottom
-import typings.materialUiCore.materialUiCoreStrings.copy
-import typings.materialUiCore.materialUiCoreStrings.date
-import typings.materialUiCore.materialUiCoreStrings.decimal
-import typings.materialUiCore.materialUiCoreStrings.descending
-import typings.materialUiCore.materialUiCoreStrings.dialog
-import typings.materialUiCore.materialUiCoreStrings.email
-import typings.materialUiCore.materialUiCoreStrings.execute
-import typings.materialUiCore.materialUiCoreStrings.grammar
-import typings.materialUiCore.materialUiCoreStrings.grid
-import typings.materialUiCore.materialUiCoreStrings.horizontal
-import typings.materialUiCore.materialUiCoreStrings.inherit
-import typings.materialUiCore.materialUiCoreStrings.left
-import typings.materialUiCore.materialUiCoreStrings.link
-import typings.materialUiCore.materialUiCoreStrings.list
-import typings.materialUiCore.materialUiCoreStrings.listbox
-import typings.materialUiCore.materialUiCoreStrings.location
-import typings.materialUiCore.materialUiCoreStrings.menu
-import typings.materialUiCore.materialUiCoreStrings.mixed
-import typings.materialUiCore.materialUiCoreStrings.move
-import typings.materialUiCore.materialUiCoreStrings.no
-import typings.materialUiCore.materialUiCoreStrings.none
-import typings.materialUiCore.materialUiCoreStrings.numeric
-import typings.materialUiCore.materialUiCoreStrings.off
-import typings.materialUiCore.materialUiCoreStrings.on
-import typings.materialUiCore.materialUiCoreStrings.other
-import typings.materialUiCore.materialUiCoreStrings.page
-import typings.materialUiCore.materialUiCoreStrings.permanent
-import typings.materialUiCore.materialUiCoreStrings.persistent
-import typings.materialUiCore.materialUiCoreStrings.polite
-import typings.materialUiCore.materialUiCoreStrings.popup
-import typings.materialUiCore.materialUiCoreStrings.removals
-import typings.materialUiCore.materialUiCoreStrings.right
-import typings.materialUiCore.materialUiCoreStrings.search
-import typings.materialUiCore.materialUiCoreStrings.spelling
-import typings.materialUiCore.materialUiCoreStrings.step
-import typings.materialUiCore.materialUiCoreStrings.tel
-import typings.materialUiCore.materialUiCoreStrings.temporary
-import typings.materialUiCore.materialUiCoreStrings.text
-import typings.materialUiCore.materialUiCoreStrings.time
-import typings.materialUiCore.materialUiCoreStrings.top
-import typings.materialUiCore.materialUiCoreStrings.tree
-import typings.materialUiCore.materialUiCoreStrings.url
-import typings.materialUiCore.materialUiCoreStrings.vertical
-import typings.materialUiCore.materialUiCoreStrings.yes
 import typings.materialUiCore.modalModalManagerMod.ModalManager
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
@@ -117,47 +60,33 @@ object drawerDrawerMod {
   
   inline def default(props: DrawerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.docked
-    - typings.materialUiCore.materialUiCoreStrings.paper
-    - typings.materialUiCore.materialUiCoreStrings.paperAnchorLeft
-    - typings.materialUiCore.materialUiCoreStrings.paperAnchorRight
-    - typings.materialUiCore.materialUiCoreStrings.paperAnchorTop
-    - typings.materialUiCore.materialUiCoreStrings.paperAnchorBottom
-    - typings.materialUiCore.materialUiCoreStrings.paperAnchorDockedLeft
-    - typings.materialUiCore.materialUiCoreStrings.paperAnchorDockedTop
-    - typings.materialUiCore.materialUiCoreStrings.paperAnchorDockedRight
-    - typings.materialUiCore.materialUiCoreStrings.paperAnchorDockedBottom
-    - typings.materialUiCore.materialUiCoreStrings.modal
-  */
-  trait DrawerClassKey extends StObject
   object DrawerClassKey {
     
-    inline def docked: typings.materialUiCore.materialUiCoreStrings.docked = "docked".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.docked]
+    inline def docked: "docked" = "docked".asInstanceOf["docked"]
     
-    inline def modal: typings.materialUiCore.materialUiCoreStrings.modal = "modal".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.modal]
+    inline def modal: "modal" = "modal".asInstanceOf["modal"]
     
-    inline def paper: typings.materialUiCore.materialUiCoreStrings.paper = "paper".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paper]
+    inline def paper: "paper" = "paper".asInstanceOf["paper"]
     
-    inline def paperAnchorBottom: typings.materialUiCore.materialUiCoreStrings.paperAnchorBottom = "paperAnchorBottom".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paperAnchorBottom]
+    inline def paperAnchorBottom: "paperAnchorBottom" = "paperAnchorBottom".asInstanceOf["paperAnchorBottom"]
     
-    inline def paperAnchorDockedBottom: typings.materialUiCore.materialUiCoreStrings.paperAnchorDockedBottom = "paperAnchorDockedBottom".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paperAnchorDockedBottom]
+    inline def paperAnchorDockedBottom: "paperAnchorDockedBottom" = "paperAnchorDockedBottom".asInstanceOf["paperAnchorDockedBottom"]
     
-    inline def paperAnchorDockedLeft: typings.materialUiCore.materialUiCoreStrings.paperAnchorDockedLeft = "paperAnchorDockedLeft".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paperAnchorDockedLeft]
+    inline def paperAnchorDockedLeft: "paperAnchorDockedLeft" = "paperAnchorDockedLeft".asInstanceOf["paperAnchorDockedLeft"]
     
-    inline def paperAnchorDockedRight: typings.materialUiCore.materialUiCoreStrings.paperAnchorDockedRight = "paperAnchorDockedRight".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paperAnchorDockedRight]
+    inline def paperAnchorDockedRight: "paperAnchorDockedRight" = "paperAnchorDockedRight".asInstanceOf["paperAnchorDockedRight"]
     
-    inline def paperAnchorDockedTop: typings.materialUiCore.materialUiCoreStrings.paperAnchorDockedTop = "paperAnchorDockedTop".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paperAnchorDockedTop]
+    inline def paperAnchorDockedTop: "paperAnchorDockedTop" = "paperAnchorDockedTop".asInstanceOf["paperAnchorDockedTop"]
     
-    inline def paperAnchorLeft: typings.materialUiCore.materialUiCoreStrings.paperAnchorLeft = "paperAnchorLeft".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paperAnchorLeft]
+    inline def paperAnchorLeft: "paperAnchorLeft" = "paperAnchorLeft".asInstanceOf["paperAnchorLeft"]
     
-    inline def paperAnchorRight: typings.materialUiCore.materialUiCoreStrings.paperAnchorRight = "paperAnchorRight".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paperAnchorRight]
+    inline def paperAnchorRight: "paperAnchorRight" = "paperAnchorRight".asInstanceOf["paperAnchorRight"]
     
-    inline def paperAnchorTop: typings.materialUiCore.materialUiCoreStrings.paperAnchorTop = "paperAnchorTop".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paperAnchorTop]
+    inline def paperAnchorTop: "paperAnchorTop" = "paperAnchorTop".asInstanceOf["paperAnchorTop"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
   }
+  type DrawerClassKey = "root" | "docked" | "paper" | "paperAnchorLeft" | "paperAnchorRight" | "paperAnchorTop" | "paperAnchorBottom" | "paperAnchorDockedLeft" | "paperAnchorDockedTop" | "paperAnchorDockedRight" | "paperAnchorDockedBottom" | "modal"
   
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, @material-ui/core.@material-ui/core/Drawer/Drawer.DrawerClassKey, 'open' | 'children'> */
   trait DrawerProps extends StObject {
@@ -188,17 +117,17 @@ object drawerDrawerMod {
     /**
       * Side from which the drawer will appear.
       */
-    var anchor: js.UndefOr[left | top | right | bottom] = js.undefined
+    var anchor: js.UndefOr["left" | "top" | "right" | "bottom"] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -208,7 +137,7 @@ object drawerDrawerMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -216,7 +145,7 @@ object drawerDrawerMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -226,11 +155,11 @@ object drawerDrawerMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -240,7 +169,7 @@ object drawerDrawerMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -248,7 +177,7 @@ object drawerDrawerMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -256,12 +185,12 @@ object drawerDrawerMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -278,7 +207,7 @@ object drawerDrawerMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -312,7 +241,7 @@ object drawerDrawerMod {
     
     var container: js.UndefOr[ReactInstance | (js.Function0[ReactInstance | Null]) | Null] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -357,7 +286,7 @@ object drawerDrawerMod {
     
     var innerRef: js.UndefOr[Ref[Any]] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
     
@@ -611,16 +540,16 @@ object drawerDrawerMod {
       */
     var transitionDuration: js.UndefOr[Any] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
     /**
       * The variant to use.
       */
-    var variant: js.UndefOr[permanent | persistent | temporary] = js.undefined
+    var variant: js.UndefOr["permanent" | "persistent" | "temporary"] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
   }
@@ -641,7 +570,7 @@ object drawerDrawerMod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAnchor(value: left | top | right | bottom): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: "left" | "top" | "right" | "bottom"): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
       inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
@@ -653,7 +582,7 @@ object drawerDrawerMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -661,7 +590,7 @@ object drawerDrawerMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -681,7 +610,7 @@ object drawerDrawerMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -697,7 +626,7 @@ object drawerDrawerMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -717,7 +646,7 @@ object drawerDrawerMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -725,7 +654,7 @@ object drawerDrawerMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -745,7 +674,7 @@ object drawerDrawerMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -761,7 +690,7 @@ object drawerDrawerMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -777,7 +706,7 @@ object drawerDrawerMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -786,7 +715,7 @@ object drawerDrawerMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -819,7 +748,7 @@ object drawerDrawerMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -887,7 +816,7 @@ object drawerDrawerMod {
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -977,7 +906,7 @@ object drawerDrawerMod {
       
       inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -1469,7 +1398,7 @@ object drawerDrawerMod {
       
       inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
@@ -1477,11 +1406,11 @@ object drawerDrawerMod {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      inline def setVariant(value: permanent | persistent | temporary): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "permanent" | "persistent" | "temporary"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       

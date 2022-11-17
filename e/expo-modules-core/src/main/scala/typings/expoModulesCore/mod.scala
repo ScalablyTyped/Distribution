@@ -8,11 +8,6 @@ import typings.expoModulesCore.buildPermissionsHookMod.PermissionHookOptions
 import typings.expoModulesCore.buildPermissionsHookMod.RequestPermissionMethod
 import typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionResponse
 import typings.expoModulesCore.buildPlatformMod.PlatformSelect
-import typings.expoModulesCore.expoModulesCoreStrings.android
-import typings.expoModulesCore.expoModulesCoreStrings.ios
-import typings.expoModulesCore.expoModulesCoreStrings.macos
-import typings.expoModulesCore.expoModulesCoreStrings.web
-import typings.expoModulesCore.expoModulesCoreStrings.windows
 import typings.react.mod.ComponentType
 import typings.reactNative.mod.DeviceEventEmitterStatic
 import org.scalablytyped.runtime.StObject
@@ -75,8 +70,8 @@ object mod {
       */
     @JSImport("expo-modules-core", "Platform.OS")
     @js.native
-    def OS: ios | android | windows | macos | web = js.native
-    inline def OS_=(x: ios | android | windows | macos | web): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OS")(x.asInstanceOf[js.Any])
+    def OS: "ios" | "android" | "windows" | "macos" | "web" = js.native
+    inline def OS_=(x: "ios" | "android" | "windows" | "macos" | "web"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OS")(x.asInstanceOf[js.Any])
     
     /**
       * Denotes if the current environment can attach event listeners

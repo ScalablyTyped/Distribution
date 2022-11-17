@@ -401,7 +401,7 @@ trait Int8Array
   
   /* standard es2015.symbol.wellknown */
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: typings.std.stdStrings.Int8Array = js.native
+  val toStringTag: "Int8Array" = js.native
   
   /**
     * Returns an list of values in the array

@@ -1,7 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngComponentOutlet]`
 import typings.angularCore.mod.Injector
 import typings.angularCore.mod.NgModuleFactory
 import typings.angularCore.mod.OnChanges
@@ -70,24 +68,26 @@ object NgComponentOutlet {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     NgComponentOutlet, 
-    `[ngComponentOutlet]`, 
+    "[ngComponentOutlet]", 
     scala.Nothing, 
     typings.angularCommon.anon.NgComponentOutlet, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       NgComponentOutlet, 
-      `[ngComponentOutlet]`, 
+      "[ngComponentOutlet]", 
       scala.Nothing, 
       typings.angularCommon.anon.NgComponentOutlet, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      true, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

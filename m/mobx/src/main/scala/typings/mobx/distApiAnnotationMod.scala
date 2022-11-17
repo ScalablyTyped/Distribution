@@ -1,9 +1,6 @@
 package typings.mobx
 
 import typings.mobx.distInternalMod.ObservableObjectAdministration
-import typings.mobx.mobxInts.`0`
-import typings.mobx.mobxInts.`1`
-import typings.mobx.mobxInts.`2`
 import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -20,9 +17,7 @@ object distApiAnnotationMod {
   
   inline def isAnnotationMapEntry(thing: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnnotationMapEntry")(thing.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  trait Annotation
-    extends StObject
-       with AnnotationMapEntry {
+  trait Annotation extends StObject {
     
     var annotationType_ : String
     
@@ -71,27 +66,17 @@ object distApiAnnotationMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.mobx.distApiAnnotationMod.Annotation
-    - typings.mobx.mobxBooleans.`true`
-    - typings.mobx.mobxBooleans.`false`
-  */
-  trait AnnotationMapEntry extends StObject
+  type AnnotationMapEntry = Annotation | true | false
   
   type AnnotationsMap[T, AdditionalFields /* <: PropertyKey */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in std.Exclude<keyof T, 'toString'> ]:? mobx.mobx/dist/api/annotation.AnnotationMapEntry} */ js.Any) & (Record[AdditionalFields, AnnotationMapEntry])
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.mobx.mobxInts.`0`
-    - typings.mobx.mobxInts.`1`
-    - typings.mobx.mobxInts.`2`
-  */
-  trait MakeResult extends StObject
   object MakeResult {
     
-    inline def Break: `1` = 1.asInstanceOf[`1`]
+    inline def Break: 1 = 1.asInstanceOf[1]
     
-    inline def Cancel: `0` = 0.asInstanceOf[`0`]
+    inline def Cancel: 0 = 0.asInstanceOf[0]
     
-    inline def Continue: `2` = 2.asInstanceOf[`2`]
+    inline def Continue: 2 = 2.asInstanceOf[2]
   }
+  type MakeResult = 0 | 1 | 2
 }

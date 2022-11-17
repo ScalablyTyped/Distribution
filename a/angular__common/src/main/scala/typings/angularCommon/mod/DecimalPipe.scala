@@ -1,7 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.number
 import typings.angularCore.mod.PipeTransform
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
@@ -64,6 +62,6 @@ object DecimalPipe {
   
   @JSImport("@angular/common", "DecimalPipe.\u0275pipe")
   @js.native
-  def ɵpipe: ɵɵPipeDeclaration[DecimalPipe, number, `true`] = js.native
-  inline def ɵpipe_=(x: ɵɵPipeDeclaration[DecimalPipe, number, `true`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
+  def ɵpipe: ɵɵPipeDeclaration[DecimalPipe, "number", true] = js.native
+  inline def ɵpipe_=(x: ɵɵPipeDeclaration[DecimalPipe, "number", true]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
 }

@@ -12,9 +12,6 @@ import typings.mobx.distTypesInterceptUtilsMod.IInterceptor
 import typings.mobx.distTypesListenUtilsMod.IListenable
 import typings.mobx.distTypesModifiersMod.IEnhancer
 import typings.mobx.distUtilsUtilsMod.Lambda
-import typings.mobx.mobxStrings.add
-import typings.mobx.mobxStrings.delete
-import typings.mobx.mobxStrings.update
 import typings.std.IterableIterator
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
@@ -132,11 +129,11 @@ object distTypesObservablemapMod {
     
     var `object`: ObservableMap[K, V]
     
-    var `type`: update | add | delete
+    var `type`: "update" | "add" | "delete"
   }
   object IMapWillChange {
     
-    inline def apply[K, V](name: K, `object`: ObservableMap[K, V], `type`: update | add | delete): IMapWillChange[K, V] = {
+    inline def apply[K, V](name: K, `object`: ObservableMap[K, V], `type`: "update" | "add" | "delete"): IMapWillChange[K, V] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -153,7 +150,7 @@ object distTypesObservablemapMod {
       
       inline def setObject(value: ObservableMap[K, V]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      inline def setType(value: update | add | delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "update" | "add" | "delete"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

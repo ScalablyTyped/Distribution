@@ -1,8 +1,5 @@
 package typings.materialUi.MaterialUI
 
-import typings.materialUi.materialUiStrings.hide
-import typings.materialUi.materialUiStrings.loading
-import typings.materialUi.materialUiStrings.ready
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +17,7 @@ trait RefreshIndicatorProps extends StObject {
   
   var size: js.UndefOr[Double] = js.undefined
   
-  var status: js.UndefOr[ready | loading | hide] = js.undefined
+  var status: js.UndefOr["ready" | "loading" | "hide"] = js.undefined
   
   var style: js.UndefOr[CSSProperties] = js.undefined
   
@@ -53,7 +50,7 @@ object RefreshIndicatorProps {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setStatus(value: ready | loading | hide): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: "ready" | "loading" | "hide"): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     

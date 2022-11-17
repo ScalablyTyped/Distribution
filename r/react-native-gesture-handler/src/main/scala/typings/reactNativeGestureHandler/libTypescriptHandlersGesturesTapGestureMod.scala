@@ -5,7 +5,6 @@ import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod
 import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod.BaseGestureConfig
 import typings.reactNativeGestureHandler.libTypescriptHandlersTapGestureHandlerMod.TapGestureConfig
 import typings.reactNativeGestureHandler.libTypescriptHandlersTapGestureHandlerMod.TapGestureHandlerEventPayload
-import typings.reactNativeGestureHandler.libTypescriptJestUtilsJestUtilsMod.AllGestures
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,9 +14,7 @@ object libTypescriptHandlersGesturesTapGestureMod {
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/tapGesture", "TapGesture")
   @js.native
-  open class TapGesture ()
-    extends BaseGesture[TapGestureHandlerEventPayload]
-       with AllGestures {
+  open class TapGesture () extends BaseGesture[TapGestureHandlerEventPayload] {
     
     @JSName("config")
     var config_TapGesture: BaseGestureConfig & TapGestureConfig = js.native

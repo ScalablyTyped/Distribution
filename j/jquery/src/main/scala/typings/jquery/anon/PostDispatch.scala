@@ -1,14 +1,11 @@
 package typings.jquery.anon
 
 import typings.jquery.JQuery.Event
-import typings.jquery.JQuery._SpecialEventHook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PostDispatch[TTarget]
-  extends StObject
-     with _SpecialEventHook[TTarget, Any] {
+trait PostDispatch[TTarget] extends StObject {
   
   def postDispatch(event: Event): Unit
 }

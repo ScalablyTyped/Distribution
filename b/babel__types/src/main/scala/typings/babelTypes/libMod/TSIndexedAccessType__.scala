@@ -1,23 +1,19 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSIndexedAccessType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSIndexedAccessType__
   extends StObject
-     with BaseNode
-     with Node
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   var indexType: TSType
   
   var objectType: TSType
   
   @JSName("type")
-  var type_TSIndexedAccessType__ : TSIndexedAccessType
+  var type_TSIndexedAccessType__ : "TSIndexedAccessType"
 }
 object TSIndexedAccessType__ {
   
@@ -33,6 +29,6 @@ object TSIndexedAccessType__ {
     
     inline def setObjectType(value: TSType): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSIndexedAccessType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSIndexedAccessType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

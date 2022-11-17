@@ -4,9 +4,6 @@ import typings.d3Interpolate.mod.ZoomView
 import typings.d3Selection.mod.Selection_
 import typings.d3Selection.mod.TransitionLike
 import typings.d3Selection.mod.ValueFn
-import typings.d3Zoom.d3ZoomStrings.end
-import typings.d3Zoom.d3ZoomStrings.start
-import typings.d3Zoom.d3ZoomStrings.zoom
 import typings.std.Element
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
@@ -185,7 +182,7 @@ object mod {
     /**
       * The event type for the zoom event
       */
-    var `type`: start | zoom | end | String
+    var `type`: "start" | "zoom" | "end" | String
   }
   object D3ZoomEvent {
     
@@ -193,7 +190,7 @@ object mod {
       sourceEvent: Any,
       target: ZoomBehavior[ZoomRefElement, Datum],
       transform: ZoomTransform_,
-      `type`: start | zoom | end | String
+      `type`: "start" | "zoom" | "end" | String
     ): D3ZoomEvent[ZoomRefElement, Datum] = {
       val __obj = js.Dynamic.literal(sourceEvent = sourceEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -208,7 +205,7 @@ object mod {
       
       inline def setTransform(value: ZoomTransform_): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      inline def setType(value: start | zoom | end | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "start" | "zoom" | "end" | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

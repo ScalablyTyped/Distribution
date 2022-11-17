@@ -5,10 +5,6 @@ import typings.angularCompiler.mod.BoundTarget
 import typings.angularCompiler.mod.DirectiveMeta
 import typings.angularCompiler.mod.ParseSourceSpan
 import typings.angularCompiler.mod.SchemaMetadata
-import typings.angularCompilerCli.angularCompilerCliBooleans.`false`
-import typings.angularCompilerCli.angularCompilerCliStrings.direct
-import typings.angularCompilerCli.angularCompilerCliStrings.external
-import typings.angularCompilerCli.angularCompilerCliStrings.indirect
 import typings.angularCompilerCli.anon.ClassDeclarationClassDecl
 import typings.angularCompilerCli.anon.Inputs
 import typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode
@@ -34,13 +30,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcNgtscTypecheckApiApiMod {
   
-  trait DirectTemplateSourceMapping
-    extends StObject
-       with TemplateSourceMapping {
+  trait DirectTemplateSourceMapping extends StObject {
     
     var node: StringLiteral | NoSubstitutionTemplateLiteral
     
-    var `type`: direct
+    var `type`: "direct"
   }
   object DirectTemplateSourceMapping {
     
@@ -54,13 +48,11 @@ object srcNgtscTypecheckApiApiMod {
       
       inline def setNode(value: StringLiteral | NoSubstitutionTemplateLiteral): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      inline def setType(value: direct): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "direct"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  trait ExternalTemplateSourceMapping
-    extends StObject
-       with TemplateSourceMapping {
+  trait ExternalTemplateSourceMapping extends StObject {
     
     var componentClass: ClassDeclaration[DeclarationNode]
     
@@ -70,7 +62,7 @@ object srcNgtscTypecheckApiApiMod {
     
     var templateUrl: String
     
-    var `type`: external
+    var `type`: "external"
   }
   object ExternalTemplateSourceMapping {
     
@@ -95,7 +87,7 @@ object srcNgtscTypecheckApiApiMod {
       
       inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
       
-      inline def setType(value: external): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "external"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,9 +120,7 @@ object srcNgtscTypecheckApiApiMod {
     }
   }
   
-  trait IndirectTemplateSourceMapping
-    extends StObject
-       with TemplateSourceMapping {
+  trait IndirectTemplateSourceMapping extends StObject {
     
     var componentClass: ClassDeclaration[DeclarationNode]
     
@@ -138,7 +128,7 @@ object srcNgtscTypecheckApiApiMod {
     
     var template: String
     
-    var `type`: indirect
+    var `type`: "indirect"
   }
   object IndirectTemplateSourceMapping {
     
@@ -156,7 +146,7 @@ object srcNgtscTypecheckApiApiMod {
       
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      inline def setType(value: indirect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "indirect"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -247,40 +237,10 @@ object srcNgtscTypecheckApiApiMod {
     extends StObject
        with typings.std.String {
     
-    var __brand: typings.angularCompilerCli.angularCompilerCliStrings.TemplateId = js.native
+    var __brand: "TemplateId" = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.DirectTemplateSourceMapping
-    - typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.IndirectTemplateSourceMapping
-    - typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.ExternalTemplateSourceMapping
-  */
-  trait TemplateSourceMapping extends StObject
-  object TemplateSourceMapping {
-    
-    inline def DirectTemplateSourceMapping(node: StringLiteral | NoSubstitutionTemplateLiteral): typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.DirectTemplateSourceMapping = {
-      val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("direct")
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.DirectTemplateSourceMapping]
-    }
-    
-    inline def ExternalTemplateSourceMapping(
-      componentClass: ClassDeclaration[DeclarationNode],
-      node: Expression,
-      template: String,
-      templateUrl: String
-    ): typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.ExternalTemplateSourceMapping = {
-      val __obj = js.Dynamic.literal(componentClass = componentClass.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], templateUrl = templateUrl.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("external")
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.ExternalTemplateSourceMapping]
-    }
-    
-    inline def IndirectTemplateSourceMapping(componentClass: ClassDeclaration[DeclarationNode], node: Expression, template: String): typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.IndirectTemplateSourceMapping = {
-      val __obj = js.Dynamic.literal(componentClass = componentClass.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("indirect")
-      __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.IndirectTemplateSourceMapping]
-    }
-  }
+  type TemplateSourceMapping = DirectTemplateSourceMapping | IndirectTemplateSourceMapping | ExternalTemplateSourceMapping
   
   trait TypeCheckBlockMetadata extends StObject {
     
@@ -408,7 +368,7 @@ object srcNgtscTypecheckApiApiMod {
       *
       * This is currently an unsupported feature.
       */
-    var checkQueries: `false`
+    var checkQueries: false
     
     /**
       * Whether to descend into template bodies and check any bindings there.
@@ -636,7 +596,7 @@ object srcNgtscTypecheckApiApiMod {
       
       inline def setApplyTemplateContextGuards(value: Boolean): Self = StObject.set(x, "applyTemplateContextGuards", value.asInstanceOf[js.Any])
       
-      inline def setCheckQueries(value: `false`): Self = StObject.set(x, "checkQueries", value.asInstanceOf[js.Any])
+      inline def setCheckQueries(value: false): Self = StObject.set(x, "checkQueries", value.asInstanceOf[js.Any])
       
       inline def setCheckTemplateBodies(value: Boolean): Self = StObject.set(x, "checkTemplateBodies", value.asInstanceOf[js.Any])
       

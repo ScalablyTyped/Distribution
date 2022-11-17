@@ -1,7 +1,6 @@
 package typings.styledComponents
 
 import typings.styledComponents.nativeDistTypesMod.StyledTarget
-import typings.styledComponents.styledComponentsStrings.web
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,5 +11,6 @@ object nativeDistUtilsIsTagMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default_web(target: StyledTarget[web]): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+  @scala.annotation.targetName("default_web")
+  inline def default(target: StyledTarget["web"]): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
 }

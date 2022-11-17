@@ -1,9 +1,5 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.materialUiCoreStrings.down
-import typings.materialUiCore.materialUiCoreStrings.left
-import typings.materialUiCore.materialUiCoreStrings.right
-import typings.materialUiCore.materialUiCoreStrings.up
 import typings.materialUiCore.transitionsTransitionMod.TransitionProps
 import typings.react.mod.ReactElement
 import typings.react.mod.Ref
@@ -32,7 +28,7 @@ object slideSlideMod {
     /**
       * Direction the child node will enter from.
       */
-    var direction: js.UndefOr[left | right | up | down] = js.undefined
+    var direction: js.UndefOr["left" | "right" | "up" | "down"] = js.undefined
     
     var ref: js.UndefOr[Ref[Any]] = js.undefined
   }
@@ -49,7 +45,7 @@ object slideSlideMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setDirection(value: left | right | up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "left" | "right" | "up" | "down"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       

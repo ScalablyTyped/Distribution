@@ -1,7 +1,5 @@
 package typings.materialUi.MaterialUI
 
-import typings.materialUi.materialUiStrings.`24hr`
-import typings.materialUi.materialUiStrings.ampm
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
@@ -48,7 +46,7 @@ trait TimePickerProps extends StObject {
   
   var floatingLabelText: js.UndefOr[ReactNode] = js.undefined
   
-  var format: js.UndefOr[ampm | `24hr`] = js.undefined
+  var format: js.UndefOr["ampm" | "24hr"] = js.undefined
   
   var fullWidth: js.UndefOr[Boolean] = js.undefined
   
@@ -171,7 +169,7 @@ object TimePickerProps {
     
     inline def setFloatingLabelTextUndefined: Self = StObject.set(x, "floatingLabelText", js.undefined)
     
-    inline def setFormat(value: ampm | `24hr`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: "ampm" | "24hr"): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     

@@ -1,9 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.lax
-import typings.electron.electronStrings.no_restriction
-import typings.electron.electronStrings.strict
-import typings.electron.electronStrings.unspecified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +38,7 @@ trait CookiesSetDetails extends StObject {
     * The Same Site policy to apply to this cookie.  Can be `unspecified`,
     * `no_restriction`, `lax` or `strict`.  Default is `lax`.
     */
-  var sameSite: js.UndefOr[unspecified | no_restriction | lax | strict] = js.undefined
+  var sameSite: js.UndefOr["unspecified" | "no_restriction" | "lax" | "strict"] = js.undefined
   
   /**
     * Whether the cookie should be marked as Secure. Defaults to false unless Same
@@ -90,7 +86,7 @@ object CookiesSetDetails {
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setSameSite(value: unspecified | no_restriction | lax | strict): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
+    inline def setSameSite(value: "unspecified" | "no_restriction" | "lax" | "strict"): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
     
     inline def setSameSiteUndefined: Self = StObject.set(x, "sameSite", js.undefined)
     

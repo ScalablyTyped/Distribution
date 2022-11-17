@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Filled
-import typings.materialUiCore.materialUiCoreStrings.p
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -24,37 +23,27 @@ object formHelperTextFormHelperTextMod extends Shortcut {
     */
   @JSImport("@material-ui/core/FormHelperText/FormHelperText", JSImport.Default)
   @js.native
-  val default: OverridableComponent[FormHelperTextTypeMap[js.Object, p]] = js.native
+  val default: OverridableComponent[FormHelperTextTypeMap[js.Object, "p"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.error
-    - typings.materialUiCore.materialUiCoreStrings.disabled
-    - typings.materialUiCore.materialUiCoreStrings.marginDense
-    - typings.materialUiCore.materialUiCoreStrings.focused
-    - typings.materialUiCore.materialUiCoreStrings.filled
-    - typings.materialUiCore.materialUiCoreStrings.contained
-    - typings.materialUiCore.materialUiCoreStrings.required
-  */
-  trait FormHelperTextClassKey extends StObject
   object FormHelperTextClassKey {
     
-    inline def contained: typings.materialUiCore.materialUiCoreStrings.contained = "contained".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.contained]
+    inline def contained: "contained" = "contained".asInstanceOf["contained"]
     
-    inline def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
+    inline def disabled: "disabled" = "disabled".asInstanceOf["disabled"]
     
-    inline def error: typings.materialUiCore.materialUiCoreStrings.error = "error".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.error]
+    inline def error: "error" = "error".asInstanceOf["error"]
     
-    inline def filled: typings.materialUiCore.materialUiCoreStrings.filled = "filled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.filled]
+    inline def filled: "filled" = "filled".asInstanceOf["filled"]
     
-    inline def focused: typings.materialUiCore.materialUiCoreStrings.focused = "focused".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.focused]
+    inline def focused: "focused" = "focused".asInstanceOf["focused"]
     
-    inline def marginDense: typings.materialUiCore.materialUiCoreStrings.marginDense = "marginDense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.marginDense]
+    inline def marginDense: "marginDense" = "marginDense".asInstanceOf["marginDense"]
     
-    inline def required: typings.materialUiCore.materialUiCoreStrings.required = "required".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.required]
+    inline def required: "required" = "required".asInstanceOf["required"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
   }
+  type FormHelperTextClassKey = "root" | "error" | "disabled" | "marginDense" | "focused" | "filled" | "contained" | "required"
   
   type FormHelperTextProps[D /* <: ElementType[Any] */, P] = OverrideProps[FormHelperTextTypeMap[P, D], D]
   
@@ -83,8 +72,8 @@ object formHelperTextFormHelperTextMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[FormHelperTextTypeMap[js.Object, p]]
+  type _To = OverridableComponent[FormHelperTextTypeMap[js.Object, "p"]]
   
   /* This means you don't have to write `default`, but can instead just say `formHelperTextFormHelperTextMod.foo` */
-  override def _to: OverridableComponent[FormHelperTextTypeMap[js.Object, p]] = default
+  override def _to: OverridableComponent[FormHelperTextTypeMap[js.Object, "p"]] = default
 }

@@ -1,8 +1,5 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.`var`
-import typings.babelTraverse.babelTraverseStrings.const
-import typings.babelTraverse.babelTraverseStrings.let
 import typings.babelTypes.mod.Expression
 import typings.babelTypes.mod.LVal
 import org.scalablytyped.runtime.StObject
@@ -15,7 +12,7 @@ trait Id extends StObject {
   
   var init: js.UndefOr[Expression] = js.undefined
   
-  var kind: js.UndefOr[`var` | let | const] = js.undefined
+  var kind: js.UndefOr["var" | "let" | "const"] = js.undefined
   
   var unique: js.UndefOr[Boolean] = js.undefined
 }
@@ -34,7 +31,7 @@ object Id {
     
     inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    inline def setKind(value: `var` | let | const): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "var" | "let" | "const"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

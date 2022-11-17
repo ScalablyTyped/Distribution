@@ -1,7 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.desktop
-import typings.electron.electronStrings.mobile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +21,7 @@ trait Parameters extends StObject {
   /**
     * Specify the screen type to emulate (default: `desktop`):
     */
-  var screenPosition: desktop | mobile
+  var screenPosition: "desktop" | "mobile"
   
   /**
     * Set the emulated screen size (screenPosition == mobile).
@@ -46,7 +44,7 @@ object Parameters {
   inline def apply(
     deviceScaleFactor: Double,
     scale: Double,
-    screenPosition: desktop | mobile,
+    screenPosition: "desktop" | "mobile",
     screenSize: Size,
     viewPosition: Point,
     viewSize: Size
@@ -61,7 +59,7 @@ object Parameters {
     
     inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    inline def setScreenPosition(value: desktop | mobile): Self = StObject.set(x, "screenPosition", value.asInstanceOf[js.Any])
+    inline def setScreenPosition(value: "desktop" | "mobile"): Self = StObject.set(x, "screenPosition", value.asInstanceOf[js.Any])
     
     inline def setScreenSize(value: Size): Self = StObject.set(x, "screenSize", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ trait Counter_
   extends StObject
      with FontawesomeObject {
   
-  val `type`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.counter
+  val `type`: "counter"
 }
 object Counter_ {
   
@@ -22,6 +22,6 @@ object Counter_ {
   
   extension [Self <: Counter_](x: Self) {
     
-    inline def setType(value: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.counter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "counter"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

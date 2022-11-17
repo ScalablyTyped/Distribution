@@ -58,8 +58,18 @@ type CounterParams = Params
 
 type FaSymbol = String | Boolean
 
+type FlipProp = "horizontal" | "vertical" | "both"
+
 type IconDefinitionOrPack = IconDefinition | IconPack
 
+type IconOrText = Icon_ | Text_
+
 type IconProp = IconName | (js.Tuple2[IconPrefix, IconName]) | IconLookup
+
+type PullProp = "left" | "right"
+
+type RotateProp = 90 | 180 | 270
+
+type SizeProp = "2xs" | "xs" | "sm" | "lg" | "xl" | "2xl" | "1x" | "2x" | "3x" | "4x" | "5x" | "6x" | "7x" | "8x" | "9x" | "10x"
 
 type Styles = StringDictionary[String]

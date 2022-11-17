@@ -1,21 +1,17 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSInferType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSInferType__
   extends StObject
-     with BaseNode
-     with Node
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   var typeParameter: TSTypeParameter__
   
   @JSName("type")
-  var type_TSInferType__ : TSInferType
+  var type_TSInferType__ : "TSInferType"
 }
 object TSInferType__ {
   
@@ -27,7 +23,7 @@ object TSInferType__ {
   
   extension [Self <: TSInferType__](x: Self) {
     
-    inline def setType(value: TSInferType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSInferType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameter(value: TSTypeParameter__): Self = StObject.set(x, "typeParameter", value.asInstanceOf[js.Any])
   }

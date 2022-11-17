@@ -31,222 +31,26 @@ import typings.jquery.JQuery.TypeEventHandlers
 import typings.jquery.JQuery.TypeOrArray
 import typings.jquery.JQuery.htmlString
 import typings.jquery.JQuery.jqXHR
-import typings.jquery.anon.HandleObj
-import typings.jquery.jqueryBooleans.`false`
-import typings.jquery.jqueryBooleans.`true`
-import typings.jquery.jqueryStrings.`applicationSlashx-www-form-urlencoded`
-import typings.jquery.jqueryStrings.`multipartSlashform-data`
-import typings.jquery.jqueryStrings.`object`
-import typings.jquery.jqueryStrings.`var`
-import typings.jquery.jqueryStrings.a
-import typings.jquery.jqueryStrings.abbr
-import typings.jquery.jqueryStrings.address
-import typings.jquery.jqueryStrings.animate
-import typings.jquery.jqueryStrings.animateMotion
-import typings.jquery.jqueryStrings.animateTransform
-import typings.jquery.jqueryStrings.area
-import typings.jquery.jqueryStrings.article
-import typings.jquery.jqueryStrings.aside
-import typings.jquery.jqueryStrings.audio
-import typings.jquery.jqueryStrings.b
-import typings.jquery.jqueryStrings.base
-import typings.jquery.jqueryStrings.bdi
-import typings.jquery.jqueryStrings.bdo
-import typings.jquery.jqueryStrings.blockquote
-import typings.jquery.jqueryStrings.blur
-import typings.jquery.jqueryStrings.body
-import typings.jquery.jqueryStrings.br
-import typings.jquery.jqueryStrings.button
-import typings.jquery.jqueryStrings.canvas
-import typings.jquery.jqueryStrings.caption
-import typings.jquery.jqueryStrings.change
-import typings.jquery.jqueryStrings.circle
-import typings.jquery.jqueryStrings.cite
-import typings.jquery.jqueryStrings.click
-import typings.jquery.jqueryStrings.clipPath
-import typings.jquery.jqueryStrings.code
-import typings.jquery.jqueryStrings.col
-import typings.jquery.jqueryStrings.colgroup
-import typings.jquery.jqueryStrings.contextmenu
-import typings.jquery.jqueryStrings.data
-import typings.jquery.jqueryStrings.datalist
-import typings.jquery.jqueryStrings.dblclick
-import typings.jquery.jqueryStrings.dd
-import typings.jquery.jqueryStrings.defs
-import typings.jquery.jqueryStrings.del
-import typings.jquery.jqueryStrings.desc
-import typings.jquery.jqueryStrings.details
-import typings.jquery.jqueryStrings.dfn
-import typings.jquery.jqueryStrings.dialog
-import typings.jquery.jqueryStrings.div
-import typings.jquery.jqueryStrings.dl
-import typings.jquery.jqueryStrings.drag
-import typings.jquery.jqueryStrings.dragend
-import typings.jquery.jqueryStrings.dragenter
-import typings.jquery.jqueryStrings.dragexit
-import typings.jquery.jqueryStrings.dragleave
-import typings.jquery.jqueryStrings.dragover
-import typings.jquery.jqueryStrings.dragstart
-import typings.jquery.jqueryStrings.drop
-import typings.jquery.jqueryStrings.dt
-import typings.jquery.jqueryStrings.ellipse
-import typings.jquery.jqueryStrings.em
-import typings.jquery.jqueryStrings.embed
-import typings.jquery.jqueryStrings.feBlend
-import typings.jquery.jqueryStrings.feColorMatrix
-import typings.jquery.jqueryStrings.feComponentTransfer
-import typings.jquery.jqueryStrings.feComposite
-import typings.jquery.jqueryStrings.feConvolveMatrix
-import typings.jquery.jqueryStrings.feDiffuseLighting
-import typings.jquery.jqueryStrings.feDisplacementMap
-import typings.jquery.jqueryStrings.feDistantLight
-import typings.jquery.jqueryStrings.feDropShadow
-import typings.jquery.jqueryStrings.feFlood
-import typings.jquery.jqueryStrings.feFuncA
-import typings.jquery.jqueryStrings.feFuncB
-import typings.jquery.jqueryStrings.feFuncG
-import typings.jquery.jqueryStrings.feFuncR
-import typings.jquery.jqueryStrings.feGaussianBlur
-import typings.jquery.jqueryStrings.feImage
-import typings.jquery.jqueryStrings.feMerge
-import typings.jquery.jqueryStrings.feMergeNode
-import typings.jquery.jqueryStrings.feMorphology
-import typings.jquery.jqueryStrings.feOffset
-import typings.jquery.jqueryStrings.fePointLight
-import typings.jquery.jqueryStrings.feSpecularLighting
-import typings.jquery.jqueryStrings.feSpotLight
-import typings.jquery.jqueryStrings.feTile
-import typings.jquery.jqueryStrings.feTurbulence
-import typings.jquery.jqueryStrings.fieldset
-import typings.jquery.jqueryStrings.figcaption
-import typings.jquery.jqueryStrings.figure
-import typings.jquery.jqueryStrings.filter
-import typings.jquery.jqueryStrings.focus
-import typings.jquery.jqueryStrings.focusin
-import typings.jquery.jqueryStrings.focusout
-import typings.jquery.jqueryStrings.footer
-import typings.jquery.jqueryStrings.foreignObject
-import typings.jquery.jqueryStrings.form
-import typings.jquery.jqueryStrings.g
-import typings.jquery.jqueryStrings.get
-import typings.jquery.jqueryStrings.h1
-import typings.jquery.jqueryStrings.h2
-import typings.jquery.jqueryStrings.h3
-import typings.jquery.jqueryStrings.h4
-import typings.jquery.jqueryStrings.h5
-import typings.jquery.jqueryStrings.h6
-import typings.jquery.jqueryStrings.head
-import typings.jquery.jqueryStrings.header
-import typings.jquery.jqueryStrings.hgroup
-import typings.jquery.jqueryStrings.hr
-import typings.jquery.jqueryStrings.html
-import typings.jquery.jqueryStrings.i
-import typings.jquery.jqueryStrings.iframe
-import typings.jquery.jqueryStrings.image
-import typings.jquery.jqueryStrings.img
-import typings.jquery.jqueryStrings.input
-import typings.jquery.jqueryStrings.ins
-import typings.jquery.jqueryStrings.json
-import typings.jquery.jqueryStrings.jsonp
-import typings.jquery.jqueryStrings.kbd
-import typings.jquery.jqueryStrings.keydown
-import typings.jquery.jqueryStrings.keypress
-import typings.jquery.jqueryStrings.keyup
-import typings.jquery.jqueryStrings.label
-import typings.jquery.jqueryStrings.legend
-import typings.jquery.jqueryStrings.li
-import typings.jquery.jqueryStrings.line
-import typings.jquery.jqueryStrings.linearGradient
-import typings.jquery.jqueryStrings.link
-import typings.jquery.jqueryStrings.main
-import typings.jquery.jqueryStrings.map
-import typings.jquery.jqueryStrings.mark
-import typings.jquery.jqueryStrings.marker
-import typings.jquery.jqueryStrings.mask
-import typings.jquery.jqueryStrings.menu
-import typings.jquery.jqueryStrings.meta
-import typings.jquery.jqueryStrings.metadata
-import typings.jquery.jqueryStrings.meter
-import typings.jquery.jqueryStrings.mousedown
-import typings.jquery.jqueryStrings.mouseenter
-import typings.jquery.jqueryStrings.mouseleave
-import typings.jquery.jqueryStrings.mousemove
-import typings.jquery.jqueryStrings.mouseout
-import typings.jquery.jqueryStrings.mouseover
-import typings.jquery.jqueryStrings.mouseup
-import typings.jquery.jqueryStrings.mpath
-import typings.jquery.jqueryStrings.nav
-import typings.jquery.jqueryStrings.noscript
-import typings.jquery.jqueryStrings.ol
-import typings.jquery.jqueryStrings.optgroup
-import typings.jquery.jqueryStrings.option
-import typings.jquery.jqueryStrings.output
-import typings.jquery.jqueryStrings.p
-import typings.jquery.jqueryStrings.path
-import typings.jquery.jqueryStrings.pattern
-import typings.jquery.jqueryStrings.pending
-import typings.jquery.jqueryStrings.picture
-import typings.jquery.jqueryStrings.polygon
-import typings.jquery.jqueryStrings.polyline
-import typings.jquery.jqueryStrings.pre
-import typings.jquery.jqueryStrings.progress
-import typings.jquery.jqueryStrings.q
-import typings.jquery.jqueryStrings.radialGradient
-import typings.jquery.jqueryStrings.rect
-import typings.jquery.jqueryStrings.rejected
-import typings.jquery.jqueryStrings.resize
-import typings.jquery.jqueryStrings.resolved
-import typings.jquery.jqueryStrings.rp
-import typings.jquery.jqueryStrings.rt
-import typings.jquery.jqueryStrings.ruby
-import typings.jquery.jqueryStrings.s
-import typings.jquery.jqueryStrings.samp
-import typings.jquery.jqueryStrings.script
-import typings.jquery.jqueryStrings.scroll
-import typings.jquery.jqueryStrings.section
-import typings.jquery.jqueryStrings.select
-import typings.jquery.jqueryStrings.set
-import typings.jquery.jqueryStrings.slot
-import typings.jquery.jqueryStrings.small
-import typings.jquery.jqueryStrings.source
-import typings.jquery.jqueryStrings.span
-import typings.jquery.jqueryStrings.stop
-import typings.jquery.jqueryStrings.strong
-import typings.jquery.jqueryStrings.style
-import typings.jquery.jqueryStrings.sub
-import typings.jquery.jqueryStrings.submit
-import typings.jquery.jqueryStrings.summary
-import typings.jquery.jqueryStrings.sup
-import typings.jquery.jqueryStrings.svg
-import typings.jquery.jqueryStrings.switch
-import typings.jquery.jqueryStrings.symbol
-import typings.jquery.jqueryStrings.table
-import typings.jquery.jqueryStrings.tbody
-import typings.jquery.jqueryStrings.td
-import typings.jquery.jqueryStrings.template
-import typings.jquery.jqueryStrings.text
-import typings.jquery.jqueryStrings.textPath
-import typings.jquery.jqueryStrings.textSlashplain
-import typings.jquery.jqueryStrings.textarea
-import typings.jquery.jqueryStrings.tfoot
-import typings.jquery.jqueryStrings.th
-import typings.jquery.jqueryStrings.thead
-import typings.jquery.jqueryStrings.time
-import typings.jquery.jqueryStrings.title
-import typings.jquery.jqueryStrings.touchcancel
-import typings.jquery.jqueryStrings.touchend
-import typings.jquery.jqueryStrings.touchmove
-import typings.jquery.jqueryStrings.touchstart
-import typings.jquery.jqueryStrings.tr
-import typings.jquery.jqueryStrings.track
-import typings.jquery.jqueryStrings.tspan
-import typings.jquery.jqueryStrings.u
-import typings.jquery.jqueryStrings.ul
-import typings.jquery.jqueryStrings.use
-import typings.jquery.jqueryStrings.video
-import typings.jquery.jqueryStrings.view
-import typings.jquery.jqueryStrings.wbr
-import typings.jquery.jqueryStrings.xml
+import typings.jquery.anon.Add
+import typings.jquery.anon.BindType
+import typings.jquery.anon.Complete
+import typings.jquery.anon.Default
+import typings.jquery.anon.DelegateType
+import typings.jquery.anon.Easing
+import typings.jquery.anon.Get
+import typings.jquery.anon.Handle
+import typings.jquery.anon.NoBubble
+import typings.jquery.anon.PickCoordinatesleft
+import typings.jquery.anon.PickCoordinatestop
+import typings.jquery.anon.PostDispatch
+import typings.jquery.anon.PreDispatch
+import typings.jquery.anon.Remove
+import typings.jquery.anon.Set
+import typings.jquery.anon.Setup
+import typings.jquery.anon.Teardown
+import typings.jquery.anon.Trigger
+import typings.jquery.anon.`0`
+import typings.jquery.anon.`1`
 import typings.sizzle.mod.Selectors.AttrHandleFunctions
 import typings.sizzle.mod.Selectors.CreatePseudoFunction
 import typings.sizzle.mod.Selectors.FilterFunctions
@@ -881,13 +685,14 @@ trait JQuery[TElement]
   ```
     */
   @JSName("ajaxComplete")
-  def ajaxComplete_false(
+  @scala.annotation.targetName("ajaxComplete_false")
+  def ajaxComplete(
     handler: js.ThisFunction3[
       /* this */ Document, 
       /* event */ TriggeredEvent[Document, Unit, Document, Document], 
       /* jqXHR */ jqXHR[Any], 
       /* ajaxOptions */ AjaxSettings[Any], 
-      Unit | `false`
+      Unit | false
     ]
   ): this.type = js.native
   
@@ -904,14 +709,15 @@ trait JQuery[TElement]
   ```
     */
   @JSName("ajaxError")
-  def ajaxError_false(
+  @scala.annotation.targetName("ajaxError_false")
+  def ajaxError(
     handler: js.ThisFunction4[
       /* this */ Document, 
       /* event */ TriggeredEvent[Document, Unit, Document, Document], 
       /* jqXHR */ jqXHR[Any], 
       /* ajaxSettings */ AjaxSettings[Any], 
       /* thrownError */ String, 
-      Unit | `false`
+      Unit | false
     ]
   ): this.type = js.native
   
@@ -928,13 +734,14 @@ trait JQuery[TElement]
   ```
     */
   @JSName("ajaxSend")
-  def ajaxSend_false(
+  @scala.annotation.targetName("ajaxSend_false")
+  def ajaxSend(
     handler: js.ThisFunction3[
       /* this */ Document, 
       /* event */ TriggeredEvent[Document, Unit, Document, Document], 
       /* jqXHR */ jqXHR[Any], 
       /* ajaxOptions */ AjaxSettings[Any], 
-      Unit | `false`
+      Unit | false
     ]
   ): this.type = js.native
   
@@ -951,7 +758,8 @@ trait JQuery[TElement]
   ```
     */
   @JSName("ajaxStart")
-  def ajaxStart_false(handler: js.ThisFunction0[/* this */ Document, Unit | `false`]): this.type = js.native
+  @scala.annotation.targetName("ajaxStart_false")
+  def ajaxStart(handler: js.ThisFunction0[/* this */ Document, Unit | false]): this.type = js.native
   
   /**
     * Register a handler to be called when all Ajax requests have completed. This is an Ajax Event.
@@ -966,7 +774,8 @@ trait JQuery[TElement]
   ```
     */
   @JSName("ajaxStop")
-  def ajaxStop_false(handler: js.ThisFunction0[/* this */ Document, Unit | `false`]): this.type = js.native
+  @scala.annotation.targetName("ajaxStop_false")
+  def ajaxStop(handler: js.ThisFunction0[/* this */ Document, Unit | false]): this.type = js.native
   
   /**
     * Attach a function to be executed whenever an Ajax request completes successfully. This is an Ajax Event.
@@ -981,14 +790,15 @@ trait JQuery[TElement]
   ```
     */
   @JSName("ajaxSuccess")
-  def ajaxSuccess_false(
+  @scala.annotation.targetName("ajaxSuccess_false")
+  def ajaxSuccess(
     handler: js.ThisFunction4[
       /* this */ Document, 
       /* event */ TriggeredEvent[Document, Unit, Document, Document], 
       /* jqXHR */ jqXHR[Any], 
       /* ajaxOptions */ AjaxSettings[Any], 
       /* data */ PlainObject[Any], 
-      Unit | `false`
+      Unit | false
     ]
   ): this.type = js.native
   
@@ -1905,6 +1715,9 @@ trait JQuery[TElement]
   ```
     */
   def bind[TType /* <: String */](eventType: TType): this.type = js.native
+  @JSName("bind")
+  @scala.annotation.targetName("bind_false")
+  def bind[TType /* <: String */](eventType: TType, handler_preventBubble: false): this.type = js.native
   def bind[TType /* <: String */](
     eventType: TType,
     handler_preventBubble: TypeEventHandler[TElement, Unit, TElement, TElement, TType]
@@ -1929,8 +1742,6 @@ trait JQuery[TElement]
     eventData: TData,
     handler: TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
-  @JSName("bind")
-  def bind_false[TType /* <: String */](eventType: TType, handler_preventBubble: `false`): this.type = js.native
   
   /**
     * Bind an event handler to the "blur" JavaScript event, or trigger that event on an element.
@@ -1949,7 +1760,11 @@ trait JQuery[TElement]
     */
   def blur(): this.type = js.native
   @JSName("blur")
-  def blur_blur(handler: TypeEventHandler[TElement, Null, TElement, TElement, blur]): this.type = js.native
+  @scala.annotation.targetName("blur_false")
+  def blur(handler: false): this.type = js.native
+  @JSName("blur")
+  @scala.annotation.targetName("blur_blur")
+  def blur(handler: TypeEventHandler[TElement, Null, TElement, TElement, "blur"]): this.type = js.native
   /**
     * Bind an event handler to the "blur" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -1963,9 +1778,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("blur")
-  def blur_blur[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, blur]): this.type = js.native
-  @JSName("blur")
-  def blur_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("blur_blur")
+  def blur[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "blur"]): this.type = js.native
   
   /**
     * Bind an event handler to the "change" JavaScript event, or trigger that event on an element.
@@ -2027,7 +1841,11 @@ trait JQuery[TElement]
     */
   def change(): this.type = js.native
   @JSName("change")
-  def change_change(handler: TypeEventHandler[TElement, Null, TElement, TElement, change]): this.type = js.native
+  @scala.annotation.targetName("change_false")
+  def change(handler: false): this.type = js.native
+  @JSName("change")
+  @scala.annotation.targetName("change_change")
+  def change(handler: TypeEventHandler[TElement, Null, TElement, TElement, "change"]): this.type = js.native
   /**
     * Bind an event handler to the "change" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -2041,12 +1859,244 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("change")
-  def change_change[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, change]): this.type = js.native
-  @JSName("change")
-  def change_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("change_change")
+  def change[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "change"]): this.type = js.native
   
   def children(): JQuery[HTMLElement] = js.native
-  def children(selector: Selector): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_sub")
+  def children(selector: "sub"): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_stop")
+  def children(selector: "stop"): JQuery[SVGStopElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_div")
+  def children(selector: "div"): JQuery[HTMLDivElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_button")
+  def children(selector: "button"): JQuery[HTMLButtonElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_feComposite")
+  def children(selector: "feComposite"): JQuery[SVGFECompositeElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_animate")
+  def children(selector: "animate"): JQuery[SVGAnimateElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_time")
+  def children(selector: "time"): JQuery[HTMLTimeElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_feDisplacementMap")
+  def children(selector: "feDisplacementMap"): JQuery[SVGFEDisplacementMapElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_desc")
+  def children(selector: "desc"): JQuery[SVGDescElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_body")
+  def children(selector: "body"): JQuery[HTMLBodyElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_select")
+  def children(selector: "select"): JQuery[HTMLSelectElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_address")
+  def children(selector: "address"): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_td")
+  def children(selector: "td"): JQuery[HTMLTableCellElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_script")
+  def children(selector: "script"): JQuery[HTMLScriptElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_feComponentTransfer")
+  def children(selector: "feComponentTransfer"): JQuery[SVGFEComponentTransferElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_link")
+  def children(selector: "link"): JQuery[HTMLLinkElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_tbody")
+  def children(selector: "tbody"): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_clipPath")
+  def children(selector: "clipPath"): JQuery[SVGClipPathElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_linearGradient")
+  def children(selector: "linearGradient"): JQuery[SVGLinearGradientElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_header")
+  def children(selector: "header"): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_audio")
+  def children(selector: "audio"): JQuery[HTMLAudioElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_feFuncB")
+  def children(selector: "feFuncB"): JQuery[SVGFEFuncBElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_object")
+  def children(selector: "object"): JQuery[HTMLObjectElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_table")
+  def children(selector: "table"): JQuery[HTMLTableElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_dd")
+  def children(selector: "dd"): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_feFuncA")
+  def children(selector: "feFuncA"): JQuery[SVGFEFuncAElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_q")
+  def children(selector: "q"): JQuery[HTMLQuoteElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_foreignObject")
+  def children(selector: "foreignObject"): JQuery[SVGForeignObjectElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_feImage")
+  def children(selector: "feImage"): JQuery[SVGFEImageElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_th")
+  def children(selector: "th"): JQuery[HTMLTableCellElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_html")
+  def children(selector: "html"): JQuery[HTMLHtmlElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_footer")
+  def children(selector: "footer"): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_ins")
+  def children(selector: "ins"): JQuery[HTMLModElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_picture")
+  def children(selector: "picture"): JQuery[HTMLPictureElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_feFlood")
+  def children(selector: "feFlood"): JQuery[SVGFEFloodElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_dl")
+  def children(selector: "dl"): JQuery[HTMLDListElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_feDropShadow")
+  def children(selector: "feDropShadow"): JQuery[SVGFEDropShadowElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_fieldset")
+  def children(selector: "fieldset"): JQuery[HTMLFieldSetElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_meta")
+  def children(selector: "meta"): JQuery[HTMLMetaElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_form")
+  def children(selector: "form"): JQuery[HTMLFormElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_template")
+  def children(selector: "template"): JQuery[HTMLTemplateElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_output")
+  def children(selector: "output"): JQuery[HTMLOutputElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_tfoot")
+  def children(selector: "tfoot"): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_mark")
+  def children(selector: "mark"): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_br")
+  def children(selector: "br"): JQuery[HTMLBRElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_circle")
+  def children(selector: "circle"): JQuery[SVGCircleElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_tspan")
+  def children(selector: "tspan"): JQuery[SVGTSpanElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_nav")
+  def children(selector: "nav"): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_ol")
+  def children(selector: "ol"): JQuery[HTMLOListElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_samp")
+  def children(selector: "samp"): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_fePointLight")
+  def children(selector: "fePointLight"): JQuery[SVGFEPointLightElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_b")
+  def children(selector: "b"): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_feOffset")
+  def children(selector: "feOffset"): JQuery[SVGFEOffsetElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_blockquote")
+  def children(selector: "blockquote"): JQuery[HTMLQuoteElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_line")
+  def children(selector: "line"): JQuery[SVGLineElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_label")
+  def children(selector: "label"): JQuery[HTMLLabelElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_source")
+  def children(selector: "source"): JQuery[HTMLSourceElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_marker")
+  def children(selector: "marker"): JQuery[SVGMarkerElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_aside")
+  def children(selector: "aside"): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_h1")
+  def children(selector: "h1"): JQuery[HTMLHeadingElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_pattern")
+  def children(selector: "pattern"): JQuery[SVGPatternElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_slot")
+  def children(selector: "slot"): JQuery[HTMLSlotElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_thead")
+  def children(selector: "thead"): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_sup")
+  def children(selector: "sup"): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_canvas")
+  def children(selector: "canvas"): JQuery[HTMLCanvasElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_del")
+  def children(selector: "del"): JQuery[HTMLModElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_dialog")
+  def children(selector: "dialog"): JQuery[HTMLDialogElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_meter")
+  def children(selector: "meter"): JQuery[HTMLMeterElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_embed")
+  def children(selector: "embed"): JQuery[HTMLEmbedElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_h5")
+  def children(selector: "h5"): JQuery[HTMLHeadingElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_colgroup")
+  def children(selector: "colgroup"): JQuery[HTMLTableColElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_figure")
+  def children(selector: "figure"): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_mpath")
+  def children(selector: "mpath"): JQuery[SVGMPathElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_feSpecularLighting")
+  def children(selector: "feSpecularLighting"): JQuery[SVGFESpecularLightingElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_head")
+  def children(selector: "head"): JQuery[HTMLHeadElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_ellipse")
+  def children(selector: "ellipse"): JQuery[SVGEllipseElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_article")
+  def children(selector: "article"): JQuery[HTMLElement] = js.native
+  @JSName("children")
+  @scala.annotation.targetName("children_bdo")
+  def children(selector: "bdo"): JQuery[HTMLElement] = js.native
   /**
     * Get the children of each element in the set of matched elements, optionally filtered by a selector.
     * @param selector A string containing a selector expression to match elements against.
@@ -2214,345 +2264,282 @@ trait JQuery[TElement]
   ```
     */
   @JSName("children")
-  def children_a(selector: a): JQuery[HTMLAnchorElement] = js.native
+  @scala.annotation.targetName("children_a")
+  def children(selector: "a"): JQuery[HTMLAnchorElement] = js.native
   @JSName("children")
-  def children_abbr(selector: abbr): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_feDistantLight")
+  def children(selector: "feDistantLight"): JQuery[SVGFEDistantLightElement] = js.native
   @JSName("children")
-  def children_address(selector: address): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_radialGradient")
+  def children(selector: "radialGradient"): JQuery[SVGRadialGradientElement] = js.native
   @JSName("children")
-  def children_animate(selector: animate): JQuery[SVGAnimateElement] = js.native
+  @scala.annotation.targetName("children_kbd")
+  def children(selector: "kbd"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_animateMotion(selector: animateMotion): JQuery[SVGAnimateMotionElement] = js.native
+  @scala.annotation.targetName("children_feSpotLight")
+  def children(selector: "feSpotLight"): JQuery[SVGFESpotLightElement] = js.native
   @JSName("children")
-  def children_animateTransform(selector: animateTransform): JQuery[SVGAnimateTransformElement] = js.native
+  @scala.annotation.targetName("children_section")
+  def children(selector: "section"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_area(selector: area): JQuery[HTMLAreaElement] = js.native
+  @scala.annotation.targetName("children_animateTransform")
+  def children(selector: "animateTransform"): JQuery[SVGAnimateTransformElement] = js.native
   @JSName("children")
-  def children_article(selector: article): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_feBlend")
+  def children(selector: "feBlend"): JQuery[SVGFEBlendElement] = js.native
   @JSName("children")
-  def children_aside(selector: aside): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_filter")
+  def children(selector: "filter"): JQuery[SVGFilterElement] = js.native
   @JSName("children")
-  def children_audio(selector: audio): JQuery[HTMLAudioElement] = js.native
+  @scala.annotation.targetName("children_feConvolveMatrix")
+  def children(selector: "feConvolveMatrix"): JQuery[SVGFEConvolveMatrixElement] = js.native
   @JSName("children")
-  def children_b(selector: b): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_feTile")
+  def children(selector: "feTile"): JQuery[SVGFETileElement] = js.native
   @JSName("children")
-  def children_base(selector: base): JQuery[HTMLBaseElement] = js.native
+  @scala.annotation.targetName("children_feGaussianBlur")
+  def children(selector: "feGaussianBlur"): JQuery[SVGFEGaussianBlurElement] = js.native
   @JSName("children")
-  def children_bdi(selector: bdi): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_ruby")
+  def children(selector: "ruby"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_bdo(selector: bdo): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_h6")
+  def children(selector: "h6"): JQuery[HTMLHeadingElement] = js.native
   @JSName("children")
-  def children_blockquote(selector: blockquote): JQuery[HTMLQuoteElement] = js.native
+  @scala.annotation.targetName("children_cite")
+  def children(selector: "cite"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_body(selector: body): JQuery[HTMLBodyElement] = js.native
+  @scala.annotation.targetName("children_polygon")
+  def children(selector: "polygon"): JQuery[SVGPolygonElement] = js.native
   @JSName("children")
-  def children_br(selector: br): JQuery[HTMLBRElement] = js.native
+  @scala.annotation.targetName("children_h2")
+  def children(selector: "h2"): JQuery[HTMLHeadingElement] = js.native
   @JSName("children")
-  def children_button(selector: button): JQuery[HTMLButtonElement] = js.native
+  @scala.annotation.targetName("children_base")
+  def children(selector: "base"): JQuery[HTMLBaseElement] = js.native
   @JSName("children")
-  def children_canvas(selector: canvas): JQuery[HTMLCanvasElement] = js.native
+  @scala.annotation.targetName("children_img")
+  def children(selector: "img"): JQuery[HTMLImageElement] = js.native
   @JSName("children")
-  def children_caption(selector: caption): JQuery[HTMLTableCaptionElement] = js.native
+  @scala.annotation.targetName("children_pre")
+  def children(selector: "pre"): JQuery[HTMLPreElement] = js.native
   @JSName("children")
-  def children_circle(selector: circle): JQuery[SVGCircleElement] = js.native
+  @scala.annotation.targetName("children_map")
+  def children(selector: "map"): JQuery[HTMLMapElement] = js.native
   @JSName("children")
-  def children_cite(selector: cite): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_feDiffuseLighting")
+  def children(selector: "feDiffuseLighting"): JQuery[SVGFEDiffuseLightingElement] = js.native
   @JSName("children")
-  def children_clipPath(selector: clipPath): JQuery[SVGClipPathElement] = js.native
+  @scala.annotation.targetName("children_hr")
+  def children(selector: "hr"): JQuery[HTMLHRElement] = js.native
   @JSName("children")
-  def children_code(selector: code): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_polyline")
+  def children(selector: "polyline"): JQuery[SVGPolylineElement] = js.native
   @JSName("children")
-  def children_col(selector: col): JQuery[HTMLTableColElement] = js.native
+  @scala.annotation.targetName("children_feMorphology")
+  def children(selector: "feMorphology"): JQuery[SVGFEMorphologyElement] = js.native
   @JSName("children")
-  def children_colgroup(selector: colgroup): JQuery[HTMLTableColElement] = js.native
+  @scala.annotation.targetName("children_hgroup")
+  def children(selector: "hgroup"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_data(selector: data): JQuery[HTMLDataElement] = js.native
+  @scala.annotation.targetName("children_iframe")
+  def children(selector: "iframe"): JQuery[HTMLIFrameElement] = js.native
   @JSName("children")
-  def children_datalist(selector: datalist): JQuery[HTMLDataListElement] = js.native
+  @scala.annotation.targetName("children_var")
+  def children(selector: "var"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_dd(selector: dd): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_video")
+  def children(selector: "video"): JQuery[HTMLVideoElement] = js.native
   @JSName("children")
-  def children_defs(selector: defs): JQuery[SVGDefsElement] = js.native
+  @scala.annotation.targetName("children_feFuncG")
+  def children(selector: "feFuncG"): JQuery[SVGFEFuncGElement] = js.native
   @JSName("children")
-  def children_del(selector: del): JQuery[HTMLModElement] = js.native
+  @scala.annotation.targetName("children_rp")
+  def children(selector: "rp"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_desc(selector: desc): JQuery[SVGDescElement] = js.native
+  @scala.annotation.targetName("children_details")
+  def children(selector: "details"): JQuery[HTMLDetailsElement] = js.native
   @JSName("children")
-  def children_details(selector: details): JQuery[HTMLDetailsElement] = js.native
+  @scala.annotation.targetName("children_strong")
+  def children(selector: "strong"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_dfn(selector: dfn): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_feMerge")
+  def children(selector: "feMerge"): JQuery[SVGFEMergeElement] = js.native
   @JSName("children")
-  def children_dialog(selector: dialog): JQuery[HTMLDialogElement] = js.native
+  @scala.annotation.targetName("children_metadata")
+  def children(selector: "metadata"): JQuery[SVGMetadataElement] = js.native
   @JSName("children")
-  def children_div(selector: div): JQuery[HTMLDivElement] = js.native
+  @scala.annotation.targetName("children_legend")
+  def children(selector: "legend"): JQuery[HTMLLegendElement] = js.native
   @JSName("children")
-  def children_dl(selector: dl): JQuery[HTMLDListElement] = js.native
+  @scala.annotation.targetName("children_mask")
+  def children(selector: "mask"): JQuery[SVGMaskElement] = js.native
   @JSName("children")
-  def children_dt(selector: dt): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_feFuncR")
+  def children(selector: "feFuncR"): JQuery[SVGFEFuncRElement] = js.native
   @JSName("children")
-  def children_ellipse(selector: ellipse): JQuery[SVGEllipseElement] = js.native
+  @scala.annotation.targetName("children_span")
+  def children(selector: "span"): JQuery[HTMLSpanElement] = js.native
   @JSName("children")
-  def children_em(selector: em): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_u")
+  def children(selector: "u"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_embed(selector: embed): JQuery[HTMLEmbedElement] = js.native
+  @scala.annotation.targetName("children_symbol")
+  def children(selector: "symbol"): JQuery[SVGSymbolElement] = js.native
   @JSName("children")
-  def children_feBlend(selector: feBlend): JQuery[SVGFEBlendElement] = js.native
+  @scala.annotation.targetName("children_track")
+  def children(selector: "track"): JQuery[HTMLTrackElement] = js.native
   @JSName("children")
-  def children_feColorMatrix(selector: feColorMatrix): JQuery[SVGFEColorMatrixElement] = js.native
+  @scala.annotation.targetName("children_menu")
+  def children(selector: "menu"): JQuery[HTMLMenuElement] = js.native
   @JSName("children")
-  def children_feComponentTransfer(selector: feComponentTransfer): JQuery[SVGFEComponentTransferElement] = js.native
+  @scala.annotation.targetName("children_set")
+  def children(selector: "set"): JQuery[SVGSetElement] = js.native
   @JSName("children")
-  def children_feComposite(selector: feComposite): JQuery[SVGFECompositeElement] = js.native
+  @scala.annotation.targetName("children_abbr")
+  def children(selector: "abbr"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_feConvolveMatrix(selector: feConvolveMatrix): JQuery[SVGFEConvolveMatrixElement] = js.native
+  @scala.annotation.targetName("children_summary")
+  def children(selector: "summary"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_feDiffuseLighting(selector: feDiffuseLighting): JQuery[SVGFEDiffuseLightingElement] = js.native
+  @scala.annotation.targetName("children_feMergeNode")
+  def children(selector: "feMergeNode"): JQuery[SVGFEMergeNodeElement] = js.native
   @JSName("children")
-  def children_feDisplacementMap(selector: feDisplacementMap): JQuery[SVGFEDisplacementMapElement] = js.native
+  @scala.annotation.targetName("children_data")
+  def children(selector: "data"): JQuery[HTMLDataElement] = js.native
   @JSName("children")
-  def children_feDistantLight(selector: feDistantLight): JQuery[SVGFEDistantLightElement] = js.native
+  @scala.annotation.targetName("children_h3")
+  def children(selector: "h3"): JQuery[HTMLHeadingElement] = js.native
   @JSName("children")
-  def children_feDropShadow(selector: feDropShadow): JQuery[SVGFEDropShadowElement] = js.native
+  @scala.annotation.targetName("children_rt")
+  def children(selector: "rt"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_feFlood(selector: feFlood): JQuery[SVGFEFloodElement] = js.native
+  @scala.annotation.targetName("children_area")
+  def children(selector: "area"): JQuery[HTMLAreaElement] = js.native
   @JSName("children")
-  def children_feFuncA(selector: feFuncA): JQuery[SVGFEFuncAElement] = js.native
+  @scala.annotation.targetName("children_wbr")
+  def children(selector: "wbr"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_feFuncB(selector: feFuncB): JQuery[SVGFEFuncBElement] = js.native
+  @scala.annotation.targetName("children_ul")
+  def children(selector: "ul"): JQuery[HTMLUListElement] = js.native
   @JSName("children")
-  def children_feFuncG(selector: feFuncG): JQuery[SVGFEFuncGElement] = js.native
+  @scala.annotation.targetName("children_bdi")
+  def children(selector: "bdi"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_feFuncR(selector: feFuncR): JQuery[SVGFEFuncRElement] = js.native
+  @scala.annotation.targetName("children_textarea")
+  def children(selector: "textarea"): JQuery[HTMLTextAreaElement] = js.native
   @JSName("children")
-  def children_feGaussianBlur(selector: feGaussianBlur): JQuery[SVGFEGaussianBlurElement] = js.native
+  @scala.annotation.targetName("children_s")
+  def children(selector: "s"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_feImage(selector: feImage): JQuery[SVGFEImageElement] = js.native
+  @scala.annotation.targetName("children_progress")
+  def children(selector: "progress"): JQuery[HTMLProgressElement] = js.native
   @JSName("children")
-  def children_feMerge(selector: feMerge): JQuery[SVGFEMergeElement] = js.native
+  @scala.annotation.targetName("children_textPath")
+  def children(selector: "textPath"): JQuery[SVGTextPathElement] = js.native
   @JSName("children")
-  def children_feMergeNode(selector: feMergeNode): JQuery[SVGFEMergeNodeElement] = js.native
+  @scala.annotation.targetName("children_em")
+  def children(selector: "em"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_feMorphology(selector: feMorphology): JQuery[SVGFEMorphologyElement] = js.native
+  @scala.annotation.targetName("children_view")
+  def children(selector: "view"): JQuery[SVGViewElement] = js.native
   @JSName("children")
-  def children_feOffset(selector: feOffset): JQuery[SVGFEOffsetElement] = js.native
+  @scala.annotation.targetName("children_datalist")
+  def children(selector: "datalist"): JQuery[HTMLDataListElement] = js.native
   @JSName("children")
-  def children_fePointLight(selector: fePointLight): JQuery[SVGFEPointLightElement] = js.native
+  @scala.annotation.targetName("children_g")
+  def children(selector: "g"): JQuery[SVGGElement] = js.native
   @JSName("children")
-  def children_feSpecularLighting(selector: feSpecularLighting): JQuery[SVGFESpecularLightingElement] = js.native
+  @scala.annotation.targetName("children_feColorMatrix")
+  def children(selector: "feColorMatrix"): JQuery[SVGFEColorMatrixElement] = js.native
   @JSName("children")
-  def children_feSpotLight(selector: feSpotLight): JQuery[SVGFESpotLightElement] = js.native
+  @scala.annotation.targetName("children_optgroup")
+  def children(selector: "optgroup"): JQuery[HTMLOptGroupElement] = js.native
   @JSName("children")
-  def children_feTile(selector: feTile): JQuery[SVGFETileElement] = js.native
+  @scala.annotation.targetName("children_caption")
+  def children(selector: "caption"): JQuery[HTMLTableCaptionElement] = js.native
   @JSName("children")
-  def children_feTurbulence(selector: feTurbulence): JQuery[SVGFETurbulenceElement] = js.native
+  @scala.annotation.targetName("children_style")
+  def children(selector: "style"): JQuery[HTMLStyleElement] = js.native
   @JSName("children")
-  def children_fieldset(selector: fieldset): JQuery[HTMLFieldSetElement] = js.native
+  @scala.annotation.targetName("children_code")
+  def children(selector: "code"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_figcaption(selector: figcaption): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_i")
+  def children(selector: "i"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_figure(selector: figure): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_col")
+  def children(selector: "col"): JQuery[HTMLTableColElement] = js.native
   @JSName("children")
-  def children_filter(selector: filter): JQuery[SVGFilterElement] = js.native
+  @scala.annotation.targetName("children_h4")
+  def children(selector: "h4"): JQuery[HTMLHeadingElement] = js.native
   @JSName("children")
-  def children_footer(selector: footer): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_li")
+  def children(selector: "li"): JQuery[HTMLLIElement] = js.native
   @JSName("children")
-  def children_foreignObject(selector: foreignObject): JQuery[SVGForeignObjectElement] = js.native
+  @scala.annotation.targetName("children_use")
+  def children(selector: "use"): JQuery[SVGUseElement] = js.native
   @JSName("children")
-  def children_form(selector: form): JQuery[HTMLFormElement] = js.native
+  @scala.annotation.targetName("children_dfn")
+  def children(selector: "dfn"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_g(selector: g): JQuery[SVGGElement] = js.native
+  @scala.annotation.targetName("children_rect")
+  def children(selector: "rect"): JQuery[SVGRectElement] = js.native
   @JSName("children")
-  def children_h1(selector: h1): JQuery[HTMLHeadingElement] = js.native
+  @scala.annotation.targetName("children_option")
+  def children(selector: "option"): JQuery[HTMLOptionElement] = js.native
   @JSName("children")
-  def children_h2(selector: h2): JQuery[HTMLHeadingElement] = js.native
+  @scala.annotation.targetName("children_noscript")
+  def children(selector: "noscript"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_h3(selector: h3): JQuery[HTMLHeadingElement] = js.native
+  @scala.annotation.targetName("children_image")
+  def children(selector: "image"): JQuery[SVGImageElement] = js.native
   @JSName("children")
-  def children_h4(selector: h4): JQuery[HTMLHeadingElement] = js.native
+  @scala.annotation.targetName("children_p")
+  def children(selector: "p"): JQuery[HTMLParagraphElement] = js.native
   @JSName("children")
-  def children_h5(selector: h5): JQuery[HTMLHeadingElement] = js.native
+  @scala.annotation.targetName("children_defs")
+  def children(selector: "defs"): JQuery[SVGDefsElement] = js.native
   @JSName("children")
-  def children_h6(selector: h6): JQuery[HTMLHeadingElement] = js.native
+  @scala.annotation.targetName("children_animateMotion")
+  def children(selector: "animateMotion"): JQuery[SVGAnimateMotionElement] = js.native
   @JSName("children")
-  def children_head(selector: head): JQuery[HTMLHeadElement] = js.native
+  @scala.annotation.targetName("children_small")
+  def children(selector: "small"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_header(selector: header): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_input")
+  def children(selector: "input"): JQuery[HTMLInputElement] = js.native
   @JSName("children")
-  def children_hgroup(selector: hgroup): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_svg")
+  def children(selector: "svg"): JQuery[SVGSVGElement] = js.native
   @JSName("children")
-  def children_hr(selector: hr): JQuery[HTMLHRElement] = js.native
+  @scala.annotation.targetName("children_text")
+  def children(selector: "text"): JQuery[SVGTextElement] = js.native
   @JSName("children")
-  def children_html(selector: html): JQuery[HTMLHtmlElement] = js.native
+  @scala.annotation.targetName("children_path")
+  def children(selector: "path"): JQuery[SVGPathElement] = js.native
   @JSName("children")
-  def children_i(selector: i): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_main")
+  def children(selector: "main"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_iframe(selector: iframe): JQuery[HTMLIFrameElement] = js.native
+  @scala.annotation.targetName("children_figcaption")
+  def children(selector: "figcaption"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_image(selector: image): JQuery[SVGImageElement] = js.native
+  @scala.annotation.targetName("children_dt")
+  def children(selector: "dt"): JQuery[HTMLElement] = js.native
   @JSName("children")
-  def children_img(selector: img): JQuery[HTMLImageElement] = js.native
+  @scala.annotation.targetName("children_tr")
+  def children(selector: "tr"): JQuery[HTMLTableRowElement] = js.native
   @JSName("children")
-  def children_input(selector: input): JQuery[HTMLInputElement] = js.native
+  @scala.annotation.targetName("children_switch")
+  def children(selector: "switch"): JQuery[SVGSwitchElement] = js.native
   @JSName("children")
-  def children_ins(selector: ins): JQuery[HTMLModElement] = js.native
+  @scala.annotation.targetName("children_feTurbulence")
+  def children(selector: "feTurbulence"): JQuery[SVGFETurbulenceElement] = js.native
   @JSName("children")
-  def children_kbd(selector: kbd): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_label(selector: label): JQuery[HTMLLabelElement] = js.native
-  @JSName("children")
-  def children_legend(selector: legend): JQuery[HTMLLegendElement] = js.native
-  @JSName("children")
-  def children_li(selector: li): JQuery[HTMLLIElement] = js.native
-  @JSName("children")
-  def children_line(selector: line): JQuery[SVGLineElement] = js.native
-  @JSName("children")
-  def children_linearGradient(selector: linearGradient): JQuery[SVGLinearGradientElement] = js.native
-  @JSName("children")
-  def children_link(selector: link): JQuery[HTMLLinkElement] = js.native
-  @JSName("children")
-  def children_main(selector: main): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_map(selector: map): JQuery[HTMLMapElement] = js.native
-  @JSName("children")
-  def children_mark(selector: mark): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_marker(selector: marker): JQuery[SVGMarkerElement] = js.native
-  @JSName("children")
-  def children_mask(selector: mask): JQuery[SVGMaskElement] = js.native
-  @JSName("children")
-  def children_menu(selector: menu): JQuery[HTMLMenuElement] = js.native
-  @JSName("children")
-  def children_meta(selector: meta): JQuery[HTMLMetaElement] = js.native
-  @JSName("children")
-  def children_metadata(selector: metadata): JQuery[SVGMetadataElement] = js.native
-  @JSName("children")
-  def children_meter(selector: meter): JQuery[HTMLMeterElement] = js.native
-  @JSName("children")
-  def children_mpath(selector: mpath): JQuery[SVGMPathElement] = js.native
-  @JSName("children")
-  def children_nav(selector: nav): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_noscript(selector: noscript): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_object(selector: `object`): JQuery[HTMLObjectElement] = js.native
-  @JSName("children")
-  def children_ol(selector: ol): JQuery[HTMLOListElement] = js.native
-  @JSName("children")
-  def children_optgroup(selector: optgroup): JQuery[HTMLOptGroupElement] = js.native
-  @JSName("children")
-  def children_option(selector: option): JQuery[HTMLOptionElement] = js.native
-  @JSName("children")
-  def children_output(selector: output): JQuery[HTMLOutputElement] = js.native
-  @JSName("children")
-  def children_p(selector: p): JQuery[HTMLParagraphElement] = js.native
-  @JSName("children")
-  def children_path(selector: path): JQuery[SVGPathElement] = js.native
-  @JSName("children")
-  def children_pattern(selector: pattern): JQuery[SVGPatternElement] = js.native
-  @JSName("children")
-  def children_picture(selector: picture): JQuery[HTMLPictureElement] = js.native
-  @JSName("children")
-  def children_polygon(selector: polygon): JQuery[SVGPolygonElement] = js.native
-  @JSName("children")
-  def children_polyline(selector: polyline): JQuery[SVGPolylineElement] = js.native
-  @JSName("children")
-  def children_pre(selector: pre): JQuery[HTMLPreElement] = js.native
-  @JSName("children")
-  def children_progress(selector: progress): JQuery[HTMLProgressElement] = js.native
-  @JSName("children")
-  def children_q(selector: q): JQuery[HTMLQuoteElement] = js.native
-  @JSName("children")
-  def children_radialGradient(selector: radialGradient): JQuery[SVGRadialGradientElement] = js.native
-  @JSName("children")
-  def children_rect(selector: rect): JQuery[SVGRectElement] = js.native
-  @JSName("children")
-  def children_rp(selector: rp): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_rt(selector: rt): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_ruby(selector: ruby): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_s(selector: s): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_samp(selector: samp): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_script(selector: script): JQuery[HTMLScriptElement] = js.native
-  @JSName("children")
-  def children_section(selector: section): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_select(selector: select): JQuery[HTMLSelectElement] = js.native
-  @JSName("children")
-  def children_set(selector: set): JQuery[SVGSetElement] = js.native
-  @JSName("children")
-  def children_slot(selector: slot): JQuery[HTMLSlotElement] = js.native
-  @JSName("children")
-  def children_small(selector: small): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_source(selector: source): JQuery[HTMLSourceElement] = js.native
-  @JSName("children")
-  def children_span(selector: span): JQuery[HTMLSpanElement] = js.native
-  @JSName("children")
-  def children_stop(selector: stop): JQuery[SVGStopElement] = js.native
-  @JSName("children")
-  def children_strong(selector: strong): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_style(selector: style): JQuery[HTMLStyleElement] = js.native
-  @JSName("children")
-  def children_sub(selector: sub): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_summary(selector: summary): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_sup(selector: sup): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_svg(selector: svg): JQuery[SVGSVGElement] = js.native
-  @JSName("children")
-  def children_switch(selector: switch): JQuery[SVGSwitchElement] = js.native
-  @JSName("children")
-  def children_symbol(selector: symbol): JQuery[SVGSymbolElement] = js.native
-  @JSName("children")
-  def children_table(selector: table): JQuery[HTMLTableElement] = js.native
-  @JSName("children")
-  def children_tbody(selector: tbody): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("children")
-  def children_td(selector: td): JQuery[HTMLTableCellElement] = js.native
-  @JSName("children")
-  def children_template(selector: template): JQuery[HTMLTemplateElement] = js.native
-  @JSName("children")
-  def children_text(selector: text): JQuery[SVGTextElement] = js.native
-  @JSName("children")
-  def children_textPath(selector: textPath): JQuery[SVGTextPathElement] = js.native
-  @JSName("children")
-  def children_textarea(selector: textarea): JQuery[HTMLTextAreaElement] = js.native
-  @JSName("children")
-  def children_tfoot(selector: tfoot): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("children")
-  def children_th(selector: th): JQuery[HTMLTableCellElement] = js.native
-  @JSName("children")
-  def children_thead(selector: thead): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("children")
-  def children_time(selector: time): JQuery[HTMLTimeElement] = js.native
-  @JSName("children")
-  def children_title(selector: title): JQuery[HTMLTitleElement] = js.native
-  @JSName("children")
-  def children_tr(selector: tr): JQuery[HTMLTableRowElement] = js.native
-  @JSName("children")
-  def children_track(selector: track): JQuery[HTMLTrackElement] = js.native
-  @JSName("children")
-  def children_tspan(selector: tspan): JQuery[SVGTSpanElement] = js.native
-  @JSName("children")
-  def children_u(selector: u): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_ul(selector: ul): JQuery[HTMLUListElement] = js.native
-  @JSName("children")
-  def children_use(selector: use): JQuery[SVGUseElement] = js.native
-  @JSName("children")
-  def children_var(selector: `var`): JQuery[HTMLElement] = js.native
-  @JSName("children")
-  def children_video(selector: video): JQuery[HTMLVideoElement] = js.native
-  @JSName("children")
-  def children_view(selector: view): JQuery[SVGViewElement] = js.native
-  @JSName("children")
-  def children_wbr(selector: wbr): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("children_title")
+  def children(selector: "title"): JQuery[HTMLTitleElement] = js.native
+  def children(selector: Selector): JQuery[HTMLElement] = js.native
   
   /**
     * Remove from the queue all items that have not yet been run.
@@ -2679,7 +2666,11 @@ trait JQuery[TElement]
     */
   def click(): this.type = js.native
   @JSName("click")
-  def click_click(handler: TypeEventHandler[TElement, Null, TElement, TElement, click]): this.type = js.native
+  @scala.annotation.targetName("click_false")
+  def click(handler: false): this.type = js.native
+  @JSName("click")
+  @scala.annotation.targetName("click_click")
+  def click(handler: TypeEventHandler[TElement, Null, TElement, TElement, "click"]): this.type = js.native
   /**
     * Bind an event handler to the "click" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -2693,9 +2684,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("click")
-  def click_click[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, click]): this.type = js.native
-  @JSName("click")
-  def click_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("click_click")
+  def click[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "click"]): this.type = js.native
   
   def clone(withDataAndEvents: Boolean): this.type = js.native
   def clone(withDataAndEvents: Boolean, deepWithDataAndEvents: Boolean): this.type = js.native
@@ -2902,7 +2892,11 @@ trait JQuery[TElement]
     */
   def contextmenu(): this.type = js.native
   @JSName("contextmenu")
-  def contextmenu_contextmenu(handler: TypeEventHandler[TElement, Null, TElement, TElement, contextmenu]): this.type = js.native
+  @scala.annotation.targetName("contextmenu_false")
+  def contextmenu(handler: false): this.type = js.native
+  @JSName("contextmenu")
+  @scala.annotation.targetName("contextmenu_contextmenu")
+  def contextmenu(handler: TypeEventHandler[TElement, Null, TElement, TElement, "contextmenu"]): this.type = js.native
   /**
     * Bind an event handler to the "contextmenu" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -2916,9 +2910,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("contextmenu")
-  def contextmenu_contextmenu[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, contextmenu]): this.type = js.native
-  @JSName("contextmenu")
-  def contextmenu_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("contextmenu_contextmenu")
+  def contextmenu[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "contextmenu"]): this.type = js.native
   
   /**
     * Set one or more CSS properties for the set of matched elements.
@@ -3448,7 +3441,11 @@ trait JQuery[TElement]
     */
   def dblclick(): this.type = js.native
   @JSName("dblclick")
-  def dblclick_dblclick(handler: TypeEventHandler[TElement, Null, TElement, TElement, dblclick]): this.type = js.native
+  @scala.annotation.targetName("dblclick_false")
+  def dblclick(handler: false): this.type = js.native
+  @JSName("dblclick")
+  @scala.annotation.targetName("dblclick_dblclick")
+  def dblclick(handler: TypeEventHandler[TElement, Null, TElement, TElement, "dblclick"]): this.type = js.native
   /**
     * Bind an event handler to the "dblclick" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -3462,9 +3459,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("dblclick")
-  def dblclick_dblclick[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, dblclick]): this.type = js.native
-  @JSName("dblclick")
-  def dblclick_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("dblclick_dblclick")
+  def dblclick[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "dblclick"]): this.type = js.native
   
   /**
     * Set a timer to delay execution of subsequent items in the queue.
@@ -3530,6 +3526,9 @@ trait JQuery[TElement]
     * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
     */
   def delegate(selector: Selector, events: TypeEventHandlers[TElement, Unit, Any, Any]): this.type = js.native
+  @JSName("delegate")
+  @scala.annotation.targetName("delegate_false")
+  def delegate[TType /* <: String */](selector: Selector, eventType: TType, handler: false): this.type = js.native
   /**
     * Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
     * @param selector A selector to filter the elements that trigger the event.
@@ -3663,8 +3662,6 @@ trait JQuery[TElement]
     eventData: TData,
     handler: TypeEventHandler[TElement, TData, Any, Any, TType]
   ): this.type = js.native
-  @JSName("delegate")
-  def delegate_false[TType /* <: String */](selector: Selector, eventType: TType, handler: `false`): this.type = js.native
   
   /**
     * Execute the next function on the queue for the matched elements.
@@ -3910,8 +3907,9 @@ trait JQuery[TElement]
   ```
     */
   @JSName("each")
-  def each_false(
-    funсtion: js.ThisFunction2[/* this */ TElement, /* index */ Double, /* element */ TElement, Unit | `false`]
+  @scala.annotation.targetName("each_false")
+  def each(
+    funсtion: js.ThisFunction2[/* this */ TElement, /* index */ Double, /* element */ TElement, Unit | false]
   ): this.type = js.native
   
   /**
@@ -4884,10 +4882,717 @@ trait JQuery[TElement]
   def filter(selector_elements_selection_function: Selector): this.type = js.native
   def filter(selector_elements_selection_function: TypeOrArray[Element]): this.type = js.native
   
-  def find[E /* <: HTMLElement */](selector_element: E): JQuery[E] = js.native
-  def find[E /* <: HTMLElement */](selector_element: JQuery[E]): JQuery[E] = js.native
-  def find[E /* <: HTMLElement */](selector_element: Selector): JQuery[E] = js.native
-  def find[E /* <: HTMLElement */](selector_element: Element): JQuery[E] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feImage")
+  def find(selector_element: "feImage"): JQuery[SVGFEImageElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_picture")
+  def find(selector_element: "picture"): JQuery[HTMLPictureElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_view")
+  def find(selector_element: "view"): JQuery[SVGViewElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_summary")
+  def find(selector_element: "summary"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feSpecularLighting")
+  def find(selector_element: "feSpecularLighting"): JQuery[SVGFESpecularLightingElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feDisplacementMap")
+  def find(selector_element: "feDisplacementMap"): JQuery[SVGFEDisplacementMapElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feBlend")
+  def find(selector_element: "feBlend"): JQuery[SVGFEBlendElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_template")
+  def find(selector_element: "template"): JQuery[HTMLTemplateElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_wbr")
+  def find(selector_element: "wbr"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_h3")
+  def find(selector_element: "h3"): JQuery[HTMLHeadingElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_mask")
+  def find(selector_element: "mask"): JQuery[SVGMaskElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_iframe")
+  def find(selector_element: "iframe"): JQuery[HTMLIFrameElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_defs")
+  def find(selector_element: "defs"): JQuery[SVGDefsElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_time")
+  def find(selector_element: "time"): JQuery[HTMLTimeElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_polygon")
+  def find(selector_element: "polygon"): JQuery[SVGPolygonElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_image")
+  def find(selector_element: "image"): JQuery[SVGImageElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_blockquote")
+  def find(selector_element: "blockquote"): JQuery[HTMLQuoteElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_sub")
+  def find(selector_element: "sub"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_img")
+  def find(selector_element: "img"): JQuery[HTMLImageElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_span")
+  def find(selector_element: "span"): JQuery[HTMLSpanElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_bdo")
+  def find(selector_element: "bdo"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_a")
+  def find(selector_element: "a"): JQuery[HTMLAnchorElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_pattern")
+  def find(selector_element: "pattern"): JQuery[SVGPatternElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_menu")
+  def find(selector_element: "menu"): JQuery[HTMLMenuElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_filter")
+  def find(selector_element: "filter"): JQuery[SVGFilterElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feConvolveMatrix")
+  def find(selector_element: "feConvolveMatrix"): JQuery[SVGFEConvolveMatrixElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feComposite")
+  def find(selector_element: "feComposite"): JQuery[SVGFECompositeElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_symbol")
+  def find(selector_element: "symbol"): JQuery[SVGSymbolElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_details")
+  def find(selector_element: "details"): JQuery[HTMLDetailsElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_fieldset")
+  def find(selector_element: "fieldset"): JQuery[HTMLFieldSetElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_em")
+  def find(selector_element: "em"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_datalist")
+  def find(selector_element: "datalist"): JQuery[HTMLDataListElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_set")
+  def find(selector_element: "set"): JQuery[SVGSetElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_radialGradient")
+  def find(selector_element: "radialGradient"): JQuery[SVGRadialGradientElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_dfn")
+  def find(selector_element: "dfn"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_rect")
+  def find(selector_element: "rect"): JQuery[SVGRectElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_rp")
+  def find(selector_element: "rp"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_tr")
+  def find(selector_element: "tr"): JQuery[HTMLTableRowElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_main")
+  def find(selector_element: "main"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_b")
+  def find(selector_element: "b"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_samp")
+  def find(selector_element: "samp"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_animateTransform")
+  def find(selector_element: "animateTransform"): JQuery[SVGAnimateTransformElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_ol")
+  def find(selector_element: "ol"): JQuery[HTMLOListElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_base")
+  def find(selector_element: "base"): JQuery[HTMLBaseElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_path")
+  def find(selector_element: "path"): JQuery[SVGPathElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_animate")
+  def find(selector_element: "animate"): JQuery[SVGAnimateElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_meter")
+  def find(selector_element: "meter"): JQuery[HTMLMeterElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_hr")
+  def find(selector_element: "hr"): JQuery[HTMLHRElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_body")
+  def find(selector_element: "body"): JQuery[HTMLBodyElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feMerge")
+  def find(selector_element: "feMerge"): JQuery[SVGFEMergeElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_select")
+  def find(selector_element: "select"): JQuery[HTMLSelectElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_rt")
+  def find(selector_element: "rt"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_tspan")
+  def find(selector_element: "tspan"): JQuery[SVGTSpanElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feMorphology")
+  def find(selector_element: "feMorphology"): JQuery[SVGFEMorphologyElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feSpotLight")
+  def find(selector_element: "feSpotLight"): JQuery[SVGFESpotLightElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_col")
+  def find(selector_element: "col"): JQuery[HTMLTableColElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_mpath")
+  def find(selector_element: "mpath"): JQuery[SVGMPathElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_switch")
+  def find(selector_element: "switch"): JQuery[SVGSwitchElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_strong")
+  def find(selector_element: "strong"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_desc")
+  def find(selector_element: "desc"): JQuery[SVGDescElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_h2")
+  def find(selector_element: "h2"): JQuery[HTMLHeadingElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_caption")
+  def find(selector_element: "caption"): JQuery[HTMLTableCaptionElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_head")
+  def find(selector_element: "head"): JQuery[HTMLHeadElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_button")
+  def find(selector_element: "button"): JQuery[HTMLButtonElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_line")
+  def find(selector_element: "line"): JQuery[SVGLineElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_mark")
+  def find(selector_element: "mark"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_p")
+  def find(selector_element: "p"): JQuery[HTMLParagraphElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feDistantLight")
+  def find(selector_element: "feDistantLight"): JQuery[SVGFEDistantLightElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_li")
+  def find(selector_element: "li"): JQuery[HTMLLIElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_area")
+  def find(selector_element: "area"): JQuery[HTMLAreaElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_script")
+  def find(selector_element: "script"): JQuery[HTMLScriptElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_kbd")
+  def find(selector_element: "kbd"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_svg")
+  def find(selector_element: "svg"): JQuery[SVGSVGElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_div")
+  def find(selector_element: "div"): JQuery[HTMLDivElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_cite")
+  def find(selector_element: "cite"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feDropShadow")
+  def find(selector_element: "feDropShadow"): JQuery[SVGFEDropShadowElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_h4")
+  def find(selector_element: "h4"): JQuery[HTMLHeadingElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_colgroup")
+  def find(selector_element: "colgroup"): JQuery[HTMLTableColElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_input")
+  def find(selector_element: "input"): JQuery[HTMLInputElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_h1")
+  def find(selector_element: "h1"): JQuery[HTMLHeadingElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_pre")
+  def find(selector_element: "pre"): JQuery[HTMLPreElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_source")
+  def find(selector_element: "source"): JQuery[HTMLSourceElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_footer")
+  def find(selector_element: "footer"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_ins")
+  def find(selector_element: "ins"): JQuery[HTMLModElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feFuncG")
+  def find(selector_element: "feFuncG"): JQuery[SVGFEFuncGElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feFuncA")
+  def find(selector_element: "feFuncA"): JQuery[SVGFEFuncAElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_abbr")
+  def find(selector_element: "abbr"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_audio")
+  def find(selector_element: "audio"): JQuery[HTMLAudioElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_circle")
+  def find(selector_element: "circle"): JQuery[SVGCircleElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_style")
+  def find(selector_element: "style"): JQuery[HTMLStyleElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_marker")
+  def find(selector_element: "marker"): JQuery[SVGMarkerElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_h6")
+  def find(selector_element: "h6"): JQuery[HTMLHeadingElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_address")
+  def find(selector_element: "address"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_nav")
+  def find(selector_element: "nav"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_object")
+  def find(selector_element: "object"): JQuery[HTMLObjectElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_use")
+  def find(selector_element: "use"): JQuery[SVGUseElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_metadata")
+  def find(selector_element: "metadata"): JQuery[SVGMetadataElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_title")
+  def find(selector_element: "title"): JQuery[HTMLTitleElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_figure")
+  def find(selector_element: "figure"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feFuncB")
+  def find(selector_element: "feFuncB"): JQuery[SVGFEFuncBElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_legend")
+  def find(selector_element: "legend"): JQuery[HTMLLegendElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_header")
+  def find(selector_element: "header"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_hgroup")
+  def find(selector_element: "hgroup"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_var")
+  def find(selector_element: "var"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_i")
+  def find(selector_element: "i"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_embed")
+  def find(selector_element: "embed"): JQuery[HTMLEmbedElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_dialog")
+  def find(selector_element: "dialog"): JQuery[HTMLDialogElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feGaussianBlur")
+  def find(selector_element: "feGaussianBlur"): JQuery[SVGFEGaussianBlurElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feOffset")
+  def find(selector_element: "feOffset"): JQuery[SVGFEOffsetElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_article")
+  def find(selector_element: "article"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_sup")
+  def find(selector_element: "sup"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_map")
+  def find(selector_element: "map"): JQuery[HTMLMapElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_foreignObject")
+  def find(selector_element: "foreignObject"): JQuery[SVGForeignObjectElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_ul")
+  def find(selector_element: "ul"): JQuery[HTMLUListElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feTile")
+  def find(selector_element: "feTile"): JQuery[SVGFETileElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_ellipse")
+  def find(selector_element: "ellipse"): JQuery[SVGEllipseElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_code")
+  def find(selector_element: "code"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_section")
+  def find(selector_element: "section"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feDiffuseLighting")
+  def find(selector_element: "feDiffuseLighting"): JQuery[SVGFEDiffuseLightingElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_dt")
+  def find(selector_element: "dt"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feMergeNode")
+  def find(selector_element: "feMergeNode"): JQuery[SVGFEMergeNodeElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_label")
+  def find(selector_element: "label"): JQuery[HTMLLabelElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_animateMotion")
+  def find(selector_element: "animateMotion"): JQuery[SVGAnimateMotionElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_ruby")
+  def find(selector_element: "ruby"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_thead")
+  def find(selector_element: "thead"): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_br")
+  def find(selector_element: "br"): JQuery[HTMLBRElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feTurbulence")
+  def find(selector_element: "feTurbulence"): JQuery[SVGFETurbulenceElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_polyline")
+  def find(selector_element: "polyline"): JQuery[SVGPolylineElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_tfoot")
+  def find(selector_element: "tfoot"): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_noscript")
+  def find(selector_element: "noscript"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_q")
+  def find(selector_element: "q"): JQuery[HTMLQuoteElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feColorMatrix")
+  def find(selector_element: "feColorMatrix"): JQuery[SVGFEColorMatrixElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_optgroup")
+  def find(selector_element: "optgroup"): JQuery[HTMLOptGroupElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feFuncR")
+  def find(selector_element: "feFuncR"): JQuery[SVGFEFuncRElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_aside")
+  def find(selector_element: "aside"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_link")
+  def find(selector_element: "link"): JQuery[HTMLLinkElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_h5")
+  def find(selector_element: "h5"): JQuery[HTMLHeadingElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_tbody")
+  def find(selector_element: "tbody"): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_data")
+  def find(selector_element: "data"): JQuery[HTMLDataElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_g")
+  def find(selector_element: "g"): JQuery[SVGGElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_slot")
+  def find(selector_element: "slot"): JQuery[HTMLSlotElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_figcaption")
+  def find(selector_element: "figcaption"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feComponentTransfer")
+  def find(selector_element: "feComponentTransfer"): JQuery[SVGFEComponentTransferElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_bdi")
+  def find(selector_element: "bdi"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_video")
+  def find(selector_element: "video"): JQuery[HTMLVideoElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_table")
+  def find(selector_element: "table"): JQuery[HTMLTableElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_th")
+  def find(selector_element: "th"): JQuery[HTMLTableCellElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_linearGradient")
+  def find(selector_element: "linearGradient"): JQuery[SVGLinearGradientElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_text")
+  def find(selector_element: "text"): JQuery[SVGTextElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_u")
+  def find(selector_element: "u"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_dd")
+  def find(selector_element: "dd"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_td")
+  def find(selector_element: "td"): JQuery[HTMLTableCellElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_fePointLight")
+  def find(selector_element: "fePointLight"): JQuery[SVGFEPointLightElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feFlood")
+  def find(selector_element: "feFlood"): JQuery[SVGFEFloodElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_textarea")
+  def find(selector_element: "textarea"): JQuery[HTMLTextAreaElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_s")
+  def find(selector_element: "s"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_clipPath")
+  def find(selector_element: "clipPath"): JQuery[SVGClipPathElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_meta")
+  def find(selector_element: "meta"): JQuery[HTMLMetaElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_small")
+  def find(selector_element: "small"): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_canvas")
+  def find(selector_element: "canvas"): JQuery[HTMLCanvasElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_form")
+  def find(selector_element: "form"): JQuery[HTMLFormElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_dl")
+  def find(selector_element: "dl"): JQuery[HTMLDListElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_output")
+  def find(selector_element: "output"): JQuery[HTMLOutputElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_del")
+  def find(selector_element: "del"): JQuery[HTMLModElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_html")
+  def find(selector_element: "html"): JQuery[HTMLHtmlElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_stop")
+  def find(selector_element: "stop"): JQuery[SVGStopElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_textPath")
+  def find(selector_element: "textPath"): JQuery[SVGTextPathElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_progress")
+  def find(selector_element: "progress"): JQuery[HTMLProgressElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_track")
+  def find(selector_element: "track"): JQuery[HTMLTrackElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_option")
+  def find(selector_element: "option"): JQuery[HTMLOptionElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_ol")
+  def find(selector_element: JQuery["ol"]): JQuery[HTMLOListElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_h4")
+  def find(selector_element: JQuery["h4"]): JQuery[HTMLHeadingElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_cite")
+  def find(selector_element: JQuery["cite"]): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_foreignObject")
+  def find(selector_element: JQuery["foreignObject"]): JQuery[SVGForeignObjectElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_image")
+  def find(selector_element: JQuery["image"]): JQuery[SVGImageElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_time")
+  def find(selector_element: JQuery["time"]): JQuery[HTMLTimeElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_link")
+  def find(selector_element: JQuery["link"]): JQuery[HTMLLinkElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_metadata")
+  def find(selector_element: JQuery["metadata"]): JQuery[SVGMetadataElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_nav")
+  def find(selector_element: JQuery["nav"]): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_label")
+  def find(selector_element: JQuery["label"]): JQuery[HTMLLabelElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_tr")
+  def find(selector_element: JQuery["tr"]): JQuery[HTMLTableRowElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_details")
+  def find(selector_element: JQuery["details"]): JQuery[HTMLDetailsElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_marker")
+  def find(selector_element: JQuery["marker"]): JQuery[SVGMarkerElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_slot")
+  def find(selector_element: JQuery["slot"]): JQuery[HTMLSlotElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_title")
+  def find(selector_element: JQuery["title"]): JQuery[HTMLTitleElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_tfoot")
+  def find(selector_element: JQuery["tfoot"]): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_svg")
+  def find(selector_element: JQuery["svg"]): JQuery[SVGSVGElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_col")
+  def find(selector_element: JQuery["col"]): JQuery[HTMLTableColElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_text")
+  def find(selector_element: JQuery["text"]): JQuery[SVGTextElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_ellipse")
+  def find(selector_element: JQuery["ellipse"]): JQuery[SVGEllipseElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_mark")
+  def find(selector_element: JQuery["mark"]): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_symbol")
+  def find(selector_element: JQuery["symbol"]): JQuery[SVGSymbolElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_body")
+  def find(selector_element: JQuery["body"]): JQuery[HTMLBodyElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_desc")
+  def find(selector_element: JQuery["desc"]): JQuery[SVGDescElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feFuncB")
+  def find(selector_element: JQuery["feFuncB"]): JQuery[SVGFEFuncBElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_wbr")
+  def find(selector_element: JQuery["wbr"]): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_g")
+  def find(selector_element: JQuery["g"]): JQuery[SVGGElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_h6")
+  def find(selector_element: JQuery["h6"]): JQuery[HTMLHeadingElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_h2")
+  def find(selector_element: JQuery["h2"]): JQuery[HTMLHeadingElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_line")
+  def find(selector_element: JQuery["line"]): JQuery[SVGLineElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_data")
+  def find(selector_element: JQuery["data"]): JQuery[HTMLDataElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feMorphology")
+  def find(selector_element: JQuery["feMorphology"]): JQuery[SVGFEMorphologyElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feDistantLight")
+  def find(selector_element: JQuery["feDistantLight"]): JQuery[SVGFEDistantLightElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feMerge")
+  def find(selector_element: JQuery["feMerge"]): JQuery[SVGFEMergeElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_mpath")
+  def find(selector_element: JQuery["mpath"]): JQuery[SVGMPathElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_canvas")
+  def find(selector_element: JQuery["canvas"]): JQuery[HTMLCanvasElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_polygon")
+  def find(selector_element: JQuery["polygon"]): JQuery[SVGPolygonElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_track")
+  def find(selector_element: JQuery["track"]): JQuery[HTMLTrackElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_animateMotion")
+  def find(selector_element: JQuery["animateMotion"]): JQuery[SVGAnimateMotionElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_span")
+  def find(selector_element: JQuery["span"]): JQuery[HTMLSpanElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_datalist")
+  def find(selector_element: JQuery["datalist"]): JQuery[HTMLDataListElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_hgroup")
+  def find(selector_element: JQuery["hgroup"]): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_iframe")
+  def find(selector_element: JQuery["iframe"]): JQuery[HTMLIFrameElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_progress")
+  def find(selector_element: JQuery["progress"]): JQuery[HTMLProgressElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feColorMatrix")
+  def find(selector_element: JQuery["feColorMatrix"]): JQuery[SVGFEColorMatrixElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_del")
+  def find(selector_element: JQuery["del"]): JQuery[HTMLModElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_table")
+  def find(selector_element: JQuery["table"]): JQuery[HTMLTableElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_sub")
+  def find(selector_element: JQuery["sub"]): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_q")
+  def find(selector_element: JQuery["q"]): JQuery[HTMLQuoteElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_u")
+  def find(selector_element: JQuery["u"]): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_switch")
+  def find(selector_element: JQuery["switch"]): JQuery[SVGSwitchElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_noscript")
+  def find(selector_element: JQuery["noscript"]): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_stop")
+  def find(selector_element: JQuery["stop"]): JQuery[SVGStopElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_abbr")
+  def find(selector_element: JQuery["abbr"]): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_aside")
+  def find(selector_element: JQuery["aside"]): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_clipPath")
+  def find(selector_element: JQuery["clipPath"]): JQuery[SVGClipPathElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_input")
+  def find(selector_element: JQuery["input"]): JQuery[HTMLInputElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_h5")
+  def find(selector_element: JQuery["h5"]): JQuery[HTMLHeadingElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feFuncG")
+  def find(selector_element: JQuery["feFuncG"]): JQuery[SVGFEFuncGElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_ins")
+  def find(selector_element: JQuery["ins"]): JQuery[HTMLModElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_pre")
+  def find(selector_element: JQuery["pre"]): JQuery[HTMLPreElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_circle")
+  def find(selector_element: JQuery["circle"]): JQuery[SVGCircleElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_tbody")
+  def find(selector_element: JQuery["tbody"]): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feFlood")
+  def find(selector_element: JQuery["feFlood"]): JQuery[SVGFEFloodElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_path")
+  def find(selector_element: JQuery["path"]): JQuery[SVGPathElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_feSpotLight")
+  def find(selector_element: JQuery["feSpotLight"]): JQuery[SVGFESpotLightElement] = js.native
+  @JSName("find")
+  @scala.annotation.targetName("find_object")
+  def find(selector_element: JQuery["object"]): JQuery[HTMLObjectElement] = js.native
   /**
     * Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.
     * @param selector_element _&#x40;param_ `selector_element`
@@ -5000,685 +5705,318 @@ trait JQuery[TElement]
   ```
     */
   @JSName("find")
-  def find_a(selector_element: JQuery[a]): JQuery[HTMLAnchorElement] = js.native
+  @scala.annotation.targetName("find_a")
+  def find(selector_element: JQuery["a"]): JQuery[HTMLAnchorElement] = js.native
   @JSName("find")
-  def find_a(selector_element: a): JQuery[HTMLAnchorElement] = js.native
+  @scala.annotation.targetName("find_blockquote")
+  def find(selector_element: JQuery["blockquote"]): JQuery[HTMLQuoteElement] = js.native
   @JSName("find")
-  def find_abbr(selector_element: JQuery[abbr]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_polyline")
+  def find(selector_element: JQuery["polyline"]): JQuery[SVGPolylineElement] = js.native
   @JSName("find")
-  def find_abbr(selector_element: abbr): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_b")
+  def find(selector_element: JQuery["b"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_address(selector_element: JQuery[address]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_button")
+  def find(selector_element: JQuery["button"]): JQuery[HTMLButtonElement] = js.native
   @JSName("find")
-  def find_address(selector_element: address): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_main")
+  def find(selector_element: JQuery["main"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_animate(selector_element: JQuery[animate]): JQuery[SVGAnimateElement] = js.native
+  @scala.annotation.targetName("find_feDiffuseLighting")
+  def find(selector_element: JQuery["feDiffuseLighting"]): JQuery[SVGFEDiffuseLightingElement] = js.native
   @JSName("find")
-  def find_animate(selector_element: animate): JQuery[SVGAnimateElement] = js.native
+  @scala.annotation.targetName("find_caption")
+  def find(selector_element: JQuery["caption"]): JQuery[HTMLTableCaptionElement] = js.native
   @JSName("find")
-  def find_animateMotion(selector_element: JQuery[animateMotion]): JQuery[SVGAnimateMotionElement] = js.native
+  @scala.annotation.targetName("find_feDropShadow")
+  def find(selector_element: JQuery["feDropShadow"]): JQuery[SVGFEDropShadowElement] = js.native
   @JSName("find")
-  def find_animateMotion(selector_element: animateMotion): JQuery[SVGAnimateMotionElement] = js.native
+  @scala.annotation.targetName("find_mask")
+  def find(selector_element: JQuery["mask"]): JQuery[SVGMaskElement] = js.native
   @JSName("find")
-  def find_animateTransform(selector_element: JQuery[animateTransform]): JQuery[SVGAnimateTransformElement] = js.native
+  @scala.annotation.targetName("find_li")
+  def find(selector_element: JQuery["li"]): JQuery[HTMLLIElement] = js.native
   @JSName("find")
-  def find_animateTransform(selector_element: animateTransform): JQuery[SVGAnimateTransformElement] = js.native
+  @scala.annotation.targetName("find_form")
+  def find(selector_element: JQuery["form"]): JQuery[HTMLFormElement] = js.native
   @JSName("find")
-  def find_area(selector_element: JQuery[area]): JQuery[HTMLAreaElement] = js.native
+  @scala.annotation.targetName("find_var")
+  def find(selector_element: JQuery["var"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_area(selector_element: area): JQuery[HTMLAreaElement] = js.native
+  @scala.annotation.targetName("find_h1")
+  def find(selector_element: JQuery["h1"]): JQuery[HTMLHeadingElement] = js.native
   @JSName("find")
-  def find_article(selector_element: JQuery[article]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_samp")
+  def find(selector_element: JQuery["samp"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_article(selector_element: article): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_select")
+  def find(selector_element: JQuery["select"]): JQuery[HTMLSelectElement] = js.native
   @JSName("find")
-  def find_aside(selector_element: JQuery[aside]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_textPath")
+  def find(selector_element: JQuery["textPath"]): JQuery[SVGTextPathElement] = js.native
   @JSName("find")
-  def find_aside(selector_element: aside): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_feBlend")
+  def find(selector_element: JQuery["feBlend"]): JQuery[SVGFEBlendElement] = js.native
   @JSName("find")
-  def find_audio(selector_element: JQuery[audio]): JQuery[HTMLAudioElement] = js.native
+  @scala.annotation.targetName("find_area")
+  def find(selector_element: JQuery["area"]): JQuery[HTMLAreaElement] = js.native
   @JSName("find")
-  def find_audio(selector_element: audio): JQuery[HTMLAudioElement] = js.native
+  @scala.annotation.targetName("find_pattern")
+  def find(selector_element: JQuery["pattern"]): JQuery[SVGPatternElement] = js.native
   @JSName("find")
-  def find_b(selector_element: JQuery[b]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_legend")
+  def find(selector_element: JQuery["legend"]): JQuery[HTMLLegendElement] = js.native
   @JSName("find")
-  def find_b(selector_element: b): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_td")
+  def find(selector_element: JQuery["td"]): JQuery[HTMLTableCellElement] = js.native
   @JSName("find")
-  def find_base(selector_element: JQuery[base]): JQuery[HTMLBaseElement] = js.native
+  @scala.annotation.targetName("find_menu")
+  def find(selector_element: JQuery["menu"]): JQuery[HTMLMenuElement] = js.native
   @JSName("find")
-  def find_base(selector_element: base): JQuery[HTMLBaseElement] = js.native
+  @scala.annotation.targetName("find_optgroup")
+  def find(selector_element: JQuery["optgroup"]): JQuery[HTMLOptGroupElement] = js.native
   @JSName("find")
-  def find_bdi(selector_element: JQuery[bdi]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_address")
+  def find(selector_element: JQuery["address"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_bdi(selector_element: bdi): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_dl")
+  def find(selector_element: JQuery["dl"]): JQuery[HTMLDListElement] = js.native
   @JSName("find")
-  def find_bdo(selector_element: JQuery[bdo]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_fieldset")
+  def find(selector_element: JQuery["fieldset"]): JQuery[HTMLFieldSetElement] = js.native
   @JSName("find")
-  def find_bdo(selector_element: bdo): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_i")
+  def find(selector_element: JQuery["i"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_blockquote(selector_element: JQuery[blockquote]): JQuery[HTMLQuoteElement] = js.native
+  @scala.annotation.targetName("find_feOffset")
+  def find(selector_element: JQuery["feOffset"]): JQuery[SVGFEOffsetElement] = js.native
   @JSName("find")
-  def find_blockquote(selector_element: blockquote): JQuery[HTMLQuoteElement] = js.native
+  @scala.annotation.targetName("find_feGaussianBlur")
+  def find(selector_element: JQuery["feGaussianBlur"]): JQuery[SVGFEGaussianBlurElement] = js.native
   @JSName("find")
-  def find_body(selector_element: JQuery[body]): JQuery[HTMLBodyElement] = js.native
+  @scala.annotation.targetName("find_p")
+  def find(selector_element: JQuery["p"]): JQuery[HTMLParagraphElement] = js.native
   @JSName("find")
-  def find_body(selector_element: body): JQuery[HTMLBodyElement] = js.native
+  @scala.annotation.targetName("find_output")
+  def find(selector_element: JQuery["output"]): JQuery[HTMLOutputElement] = js.native
   @JSName("find")
-  def find_br(selector_element: JQuery[br]): JQuery[HTMLBRElement] = js.native
+  @scala.annotation.targetName("find_thead")
+  def find(selector_element: JQuery["thead"]): JQuery[HTMLTableSectionElement] = js.native
   @JSName("find")
-  def find_br(selector_element: br): JQuery[HTMLBRElement] = js.native
+  @scala.annotation.targetName("find_figure")
+  def find(selector_element: JQuery["figure"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_button(selector_element: JQuery[button]): JQuery[HTMLButtonElement] = js.native
+  @scala.annotation.targetName("find_colgroup")
+  def find(selector_element: JQuery["colgroup"]): JQuery[HTMLTableColElement] = js.native
   @JSName("find")
-  def find_button(selector_element: button): JQuery[HTMLButtonElement] = js.native
+  @scala.annotation.targetName("find_article")
+  def find(selector_element: JQuery["article"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_canvas(selector_element: JQuery[canvas]): JQuery[HTMLCanvasElement] = js.native
+  @scala.annotation.targetName("find_th")
+  def find(selector_element: JQuery["th"]): JQuery[HTMLTableCellElement] = js.native
   @JSName("find")
-  def find_canvas(selector_element: canvas): JQuery[HTMLCanvasElement] = js.native
+  @scala.annotation.targetName("find_s")
+  def find(selector_element: JQuery["s"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_caption(selector_element: JQuery[caption]): JQuery[HTMLTableCaptionElement] = js.native
+  @scala.annotation.targetName("find_meter")
+  def find(selector_element: JQuery["meter"]): JQuery[HTMLMeterElement] = js.native
   @JSName("find")
-  def find_caption(selector_element: caption): JQuery[HTMLTableCaptionElement] = js.native
+  @scala.annotation.targetName("find_img")
+  def find(selector_element: JQuery["img"]): JQuery[HTMLImageElement] = js.native
   @JSName("find")
-  def find_circle(selector_element: JQuery[circle]): JQuery[SVGCircleElement] = js.native
+  @scala.annotation.targetName("find_defs")
+  def find(selector_element: JQuery["defs"]): JQuery[SVGDefsElement] = js.native
   @JSName("find")
-  def find_circle(selector_element: circle): JQuery[SVGCircleElement] = js.native
+  @scala.annotation.targetName("find_source")
+  def find(selector_element: JQuery["source"]): JQuery[HTMLSourceElement] = js.native
   @JSName("find")
-  def find_cite(selector_element: JQuery[cite]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_radialGradient")
+  def find(selector_element: JQuery["radialGradient"]): JQuery[SVGRadialGradientElement] = js.native
   @JSName("find")
-  def find_cite(selector_element: cite): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_feConvolveMatrix")
+  def find(selector_element: JQuery["feConvolveMatrix"]): JQuery[SVGFEConvolveMatrixElement] = js.native
   @JSName("find")
-  def find_clipPath(selector_element: JQuery[clipPath]): JQuery[SVGClipPathElement] = js.native
+  @scala.annotation.targetName("find_picture")
+  def find(selector_element: JQuery["picture"]): JQuery[HTMLPictureElement] = js.native
   @JSName("find")
-  def find_clipPath(selector_element: clipPath): JQuery[SVGClipPathElement] = js.native
+  @scala.annotation.targetName("find_h3")
+  def find(selector_element: JQuery["h3"]): JQuery[HTMLHeadingElement] = js.native
   @JSName("find")
-  def find_code(selector_element: JQuery[code]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_hr")
+  def find(selector_element: JQuery["hr"]): JQuery[HTMLHRElement] = js.native
   @JSName("find")
-  def find_code(selector_element: code): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_map")
+  def find(selector_element: JQuery["map"]): JQuery[HTMLMapElement] = js.native
   @JSName("find")
-  def find_col(selector_element: JQuery[col]): JQuery[HTMLTableColElement] = js.native
+  @scala.annotation.targetName("find_footer")
+  def find(selector_element: JQuery["footer"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_col(selector_element: col): JQuery[HTMLTableColElement] = js.native
+  @scala.annotation.targetName("find_set")
+  def find(selector_element: JQuery["set"]): JQuery[SVGSetElement] = js.native
   @JSName("find")
-  def find_colgroup(selector_element: JQuery[colgroup]): JQuery[HTMLTableColElement] = js.native
+  @scala.annotation.targetName("find_bdi")
+  def find(selector_element: JQuery["bdi"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_colgroup(selector_element: colgroup): JQuery[HTMLTableColElement] = js.native
+  @scala.annotation.targetName("find_feTurbulence")
+  def find(selector_element: JQuery["feTurbulence"]): JQuery[SVGFETurbulenceElement] = js.native
   @JSName("find")
-  def find_data(selector_element: JQuery[data]): JQuery[HTMLDataElement] = js.native
+  @scala.annotation.targetName("find_linearGradient")
+  def find(selector_element: JQuery["linearGradient"]): JQuery[SVGLinearGradientElement] = js.native
   @JSName("find")
-  def find_data(selector_element: data): JQuery[HTMLDataElement] = js.native
+  @scala.annotation.targetName("find_feFuncR")
+  def find(selector_element: JQuery["feFuncR"]): JQuery[SVGFEFuncRElement] = js.native
   @JSName("find")
-  def find_datalist(selector_element: JQuery[datalist]): JQuery[HTMLDataListElement] = js.native
+  @scala.annotation.targetName("find_animate")
+  def find(selector_element: JQuery["animate"]): JQuery[SVGAnimateElement] = js.native
   @JSName("find")
-  def find_datalist(selector_element: datalist): JQuery[HTMLDataListElement] = js.native
+  @scala.annotation.targetName("find_header")
+  def find(selector_element: JQuery["header"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_dd(selector_element: JQuery[dd]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_feTile")
+  def find(selector_element: JQuery["feTile"]): JQuery[SVGFETileElement] = js.native
   @JSName("find")
-  def find_dd(selector_element: dd): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_feFuncA")
+  def find(selector_element: JQuery["feFuncA"]): JQuery[SVGFEFuncAElement] = js.native
   @JSName("find")
-  def find_defs(selector_element: JQuery[defs]): JQuery[SVGDefsElement] = js.native
+  @scala.annotation.targetName("find_feComponentTransfer")
+  def find(selector_element: JQuery["feComponentTransfer"]): JQuery[SVGFEComponentTransferElement] = js.native
   @JSName("find")
-  def find_defs(selector_element: defs): JQuery[SVGDefsElement] = js.native
+  @scala.annotation.targetName("find_base")
+  def find(selector_element: JQuery["base"]): JQuery[HTMLBaseElement] = js.native
   @JSName("find")
-  def find_del(selector_element: JQuery[del]): JQuery[HTMLModElement] = js.native
+  @scala.annotation.targetName("find_tspan")
+  def find(selector_element: JQuery["tspan"]): JQuery[SVGTSpanElement] = js.native
   @JSName("find")
-  def find_del(selector_element: del): JQuery[HTMLModElement] = js.native
+  @scala.annotation.targetName("find_view")
+  def find(selector_element: JQuery["view"]): JQuery[SVGViewElement] = js.native
   @JSName("find")
-  def find_desc(selector_element: JQuery[desc]): JQuery[SVGDescElement] = js.native
+  @scala.annotation.targetName("find_feSpecularLighting")
+  def find(selector_element: JQuery["feSpecularLighting"]): JQuery[SVGFESpecularLightingElement] = js.native
   @JSName("find")
-  def find_desc(selector_element: desc): JQuery[SVGDescElement] = js.native
+  @scala.annotation.targetName("find_feImage")
+  def find(selector_element: JQuery["feImage"]): JQuery[SVGFEImageElement] = js.native
   @JSName("find")
-  def find_details(selector_element: JQuery[details]): JQuery[HTMLDetailsElement] = js.native
+  @scala.annotation.targetName("find_kbd")
+  def find(selector_element: JQuery["kbd"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_details(selector_element: details): JQuery[HTMLDetailsElement] = js.native
+  @scala.annotation.targetName("find_br")
+  def find(selector_element: JQuery["br"]): JQuery[HTMLBRElement] = js.native
   @JSName("find")
-  def find_dfn(selector_element: JQuery[dfn]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_option")
+  def find(selector_element: JQuery["option"]): JQuery[HTMLOptionElement] = js.native
   @JSName("find")
-  def find_dfn(selector_element: dfn): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_feComposite")
+  def find(selector_element: JQuery["feComposite"]): JQuery[SVGFECompositeElement] = js.native
   @JSName("find")
-  def find_dialog(selector_element: JQuery[dialog]): JQuery[HTMLDialogElement] = js.native
+  @scala.annotation.targetName("find_em")
+  def find(selector_element: JQuery["em"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_dialog(selector_element: dialog): JQuery[HTMLDialogElement] = js.native
+  @scala.annotation.targetName("find_rp")
+  def find(selector_element: JQuery["rp"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_div(selector_element: JQuery[div]): JQuery[HTMLDivElement] = js.native
+  @scala.annotation.targetName("find_head")
+  def find(selector_element: JQuery["head"]): JQuery[HTMLHeadElement] = js.native
   @JSName("find")
-  def find_div(selector_element: div): JQuery[HTMLDivElement] = js.native
+  @scala.annotation.targetName("find_feMergeNode")
+  def find(selector_element: JQuery["feMergeNode"]): JQuery[SVGFEMergeNodeElement] = js.native
   @JSName("find")
-  def find_dl(selector_element: JQuery[dl]): JQuery[HTMLDListElement] = js.native
+  @scala.annotation.targetName("find_summary")
+  def find(selector_element: JQuery["summary"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_dl(selector_element: dl): JQuery[HTMLDListElement] = js.native
+  @scala.annotation.targetName("find_figcaption")
+  def find(selector_element: JQuery["figcaption"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_dt(selector_element: JQuery[dt]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_feDisplacementMap")
+  def find(selector_element: JQuery["feDisplacementMap"]): JQuery[SVGFEDisplacementMapElement] = js.native
   @JSName("find")
-  def find_dt(selector_element: dt): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_strong")
+  def find(selector_element: JQuery["strong"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_ellipse(selector_element: JQuery[ellipse]): JQuery[SVGEllipseElement] = js.native
+  @scala.annotation.targetName("find_small")
+  def find(selector_element: JQuery["small"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_ellipse(selector_element: ellipse): JQuery[SVGEllipseElement] = js.native
+  @scala.annotation.targetName("find_textarea")
+  def find(selector_element: JQuery["textarea"]): JQuery[HTMLTextAreaElement] = js.native
   @JSName("find")
-  def find_em(selector_element: JQuery[em]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_style")
+  def find(selector_element: JQuery["style"]): JQuery[HTMLStyleElement] = js.native
   @JSName("find")
-  def find_em(selector_element: em): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_dialog")
+  def find(selector_element: JQuery["dialog"]): JQuery[HTMLDialogElement] = js.native
   @JSName("find")
-  def find_embed(selector_element: JQuery[embed]): JQuery[HTMLEmbedElement] = js.native
+  @scala.annotation.targetName("find_script")
+  def find(selector_element: JQuery["script"]): JQuery[HTMLScriptElement] = js.native
   @JSName("find")
-  def find_embed(selector_element: embed): JQuery[HTMLEmbedElement] = js.native
+  @scala.annotation.targetName("find_fePointLight")
+  def find(selector_element: JQuery["fePointLight"]): JQuery[SVGFEPointLightElement] = js.native
   @JSName("find")
-  def find_feBlend(selector_element: JQuery[feBlend]): JQuery[SVGFEBlendElement] = js.native
+  @scala.annotation.targetName("find_sup")
+  def find(selector_element: JQuery["sup"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_feBlend(selector_element: feBlend): JQuery[SVGFEBlendElement] = js.native
+  @scala.annotation.targetName("find_use")
+  def find(selector_element: JQuery["use"]): JQuery[SVGUseElement] = js.native
   @JSName("find")
-  def find_feColorMatrix(selector_element: JQuery[feColorMatrix]): JQuery[SVGFEColorMatrixElement] = js.native
+  @scala.annotation.targetName("find_html")
+  def find(selector_element: JQuery["html"]): JQuery[HTMLHtmlElement] = js.native
   @JSName("find")
-  def find_feColorMatrix(selector_element: feColorMatrix): JQuery[SVGFEColorMatrixElement] = js.native
+  @scala.annotation.targetName("find_rect")
+  def find(selector_element: JQuery["rect"]): JQuery[SVGRectElement] = js.native
   @JSName("find")
-  def find_feComponentTransfer(selector_element: JQuery[feComponentTransfer]): JQuery[SVGFEComponentTransferElement] = js.native
+  @scala.annotation.targetName("find_code")
+  def find(selector_element: JQuery["code"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_feComponentTransfer(selector_element: feComponentTransfer): JQuery[SVGFEComponentTransferElement] = js.native
+  @scala.annotation.targetName("find_ul")
+  def find(selector_element: JQuery["ul"]): JQuery[HTMLUListElement] = js.native
   @JSName("find")
-  def find_feComposite(selector_element: JQuery[feComposite]): JQuery[SVGFECompositeElement] = js.native
+  @scala.annotation.targetName("find_audio")
+  def find(selector_element: JQuery["audio"]): JQuery[HTMLAudioElement] = js.native
   @JSName("find")
-  def find_feComposite(selector_element: feComposite): JQuery[SVGFECompositeElement] = js.native
+  @scala.annotation.targetName("find_div")
+  def find(selector_element: JQuery["div"]): JQuery[HTMLDivElement] = js.native
   @JSName("find")
-  def find_feConvolveMatrix(selector_element: JQuery[feConvolveMatrix]): JQuery[SVGFEConvolveMatrixElement] = js.native
+  @scala.annotation.targetName("find_embed")
+  def find(selector_element: JQuery["embed"]): JQuery[HTMLEmbedElement] = js.native
   @JSName("find")
-  def find_feConvolveMatrix(selector_element: feConvolveMatrix): JQuery[SVGFEConvolveMatrixElement] = js.native
+  @scala.annotation.targetName("find_ruby")
+  def find(selector_element: JQuery["ruby"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_feDiffuseLighting(selector_element: JQuery[feDiffuseLighting]): JQuery[SVGFEDiffuseLightingElement] = js.native
+  @scala.annotation.targetName("find_animateTransform")
+  def find(selector_element: JQuery["animateTransform"]): JQuery[SVGAnimateTransformElement] = js.native
   @JSName("find")
-  def find_feDiffuseLighting(selector_element: feDiffuseLighting): JQuery[SVGFEDiffuseLightingElement] = js.native
+  @scala.annotation.targetName("find_template")
+  def find(selector_element: JQuery["template"]): JQuery[HTMLTemplateElement] = js.native
   @JSName("find")
-  def find_feDisplacementMap(selector_element: JQuery[feDisplacementMap]): JQuery[SVGFEDisplacementMapElement] = js.native
+  @scala.annotation.targetName("find_dd")
+  def find(selector_element: JQuery["dd"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_feDisplacementMap(selector_element: feDisplacementMap): JQuery[SVGFEDisplacementMapElement] = js.native
+  @scala.annotation.targetName("find_filter")
+  def find(selector_element: JQuery["filter"]): JQuery[SVGFilterElement] = js.native
   @JSName("find")
-  def find_feDistantLight(selector_element: JQuery[feDistantLight]): JQuery[SVGFEDistantLightElement] = js.native
+  @scala.annotation.targetName("find_dt")
+  def find(selector_element: JQuery["dt"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_feDistantLight(selector_element: feDistantLight): JQuery[SVGFEDistantLightElement] = js.native
+  @scala.annotation.targetName("find_section")
+  def find(selector_element: JQuery["section"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_feDropShadow(selector_element: JQuery[feDropShadow]): JQuery[SVGFEDropShadowElement] = js.native
+  @scala.annotation.targetName("find_dfn")
+  def find(selector_element: JQuery["dfn"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_feDropShadow(selector_element: feDropShadow): JQuery[SVGFEDropShadowElement] = js.native
+  @scala.annotation.targetName("find_bdo")
+  def find(selector_element: JQuery["bdo"]): JQuery[HTMLElement] = js.native
   @JSName("find")
-  def find_feFlood(selector_element: JQuery[feFlood]): JQuery[SVGFEFloodElement] = js.native
+  @scala.annotation.targetName("find_video")
+  def find(selector_element: JQuery["video"]): JQuery[HTMLVideoElement] = js.native
   @JSName("find")
-  def find_feFlood(selector_element: feFlood): JQuery[SVGFEFloodElement] = js.native
+  @scala.annotation.targetName("find_meta")
+  def find(selector_element: JQuery["meta"]): JQuery[HTMLMetaElement] = js.native
   @JSName("find")
-  def find_feFuncA(selector_element: JQuery[feFuncA]): JQuery[SVGFEFuncAElement] = js.native
-  @JSName("find")
-  def find_feFuncA(selector_element: feFuncA): JQuery[SVGFEFuncAElement] = js.native
-  @JSName("find")
-  def find_feFuncB(selector_element: JQuery[feFuncB]): JQuery[SVGFEFuncBElement] = js.native
-  @JSName("find")
-  def find_feFuncB(selector_element: feFuncB): JQuery[SVGFEFuncBElement] = js.native
-  @JSName("find")
-  def find_feFuncG(selector_element: JQuery[feFuncG]): JQuery[SVGFEFuncGElement] = js.native
-  @JSName("find")
-  def find_feFuncG(selector_element: feFuncG): JQuery[SVGFEFuncGElement] = js.native
-  @JSName("find")
-  def find_feFuncR(selector_element: JQuery[feFuncR]): JQuery[SVGFEFuncRElement] = js.native
-  @JSName("find")
-  def find_feFuncR(selector_element: feFuncR): JQuery[SVGFEFuncRElement] = js.native
-  @JSName("find")
-  def find_feGaussianBlur(selector_element: JQuery[feGaussianBlur]): JQuery[SVGFEGaussianBlurElement] = js.native
-  @JSName("find")
-  def find_feGaussianBlur(selector_element: feGaussianBlur): JQuery[SVGFEGaussianBlurElement] = js.native
-  @JSName("find")
-  def find_feImage(selector_element: JQuery[feImage]): JQuery[SVGFEImageElement] = js.native
-  @JSName("find")
-  def find_feImage(selector_element: feImage): JQuery[SVGFEImageElement] = js.native
-  @JSName("find")
-  def find_feMerge(selector_element: JQuery[feMerge]): JQuery[SVGFEMergeElement] = js.native
-  @JSName("find")
-  def find_feMerge(selector_element: feMerge): JQuery[SVGFEMergeElement] = js.native
-  @JSName("find")
-  def find_feMergeNode(selector_element: JQuery[feMergeNode]): JQuery[SVGFEMergeNodeElement] = js.native
-  @JSName("find")
-  def find_feMergeNode(selector_element: feMergeNode): JQuery[SVGFEMergeNodeElement] = js.native
-  @JSName("find")
-  def find_feMorphology(selector_element: JQuery[feMorphology]): JQuery[SVGFEMorphologyElement] = js.native
-  @JSName("find")
-  def find_feMorphology(selector_element: feMorphology): JQuery[SVGFEMorphologyElement] = js.native
-  @JSName("find")
-  def find_feOffset(selector_element: JQuery[feOffset]): JQuery[SVGFEOffsetElement] = js.native
-  @JSName("find")
-  def find_feOffset(selector_element: feOffset): JQuery[SVGFEOffsetElement] = js.native
-  @JSName("find")
-  def find_fePointLight(selector_element: JQuery[fePointLight]): JQuery[SVGFEPointLightElement] = js.native
-  @JSName("find")
-  def find_fePointLight(selector_element: fePointLight): JQuery[SVGFEPointLightElement] = js.native
-  @JSName("find")
-  def find_feSpecularLighting(selector_element: JQuery[feSpecularLighting]): JQuery[SVGFESpecularLightingElement] = js.native
-  @JSName("find")
-  def find_feSpecularLighting(selector_element: feSpecularLighting): JQuery[SVGFESpecularLightingElement] = js.native
-  @JSName("find")
-  def find_feSpotLight(selector_element: JQuery[feSpotLight]): JQuery[SVGFESpotLightElement] = js.native
-  @JSName("find")
-  def find_feSpotLight(selector_element: feSpotLight): JQuery[SVGFESpotLightElement] = js.native
-  @JSName("find")
-  def find_feTile(selector_element: JQuery[feTile]): JQuery[SVGFETileElement] = js.native
-  @JSName("find")
-  def find_feTile(selector_element: feTile): JQuery[SVGFETileElement] = js.native
-  @JSName("find")
-  def find_feTurbulence(selector_element: JQuery[feTurbulence]): JQuery[SVGFETurbulenceElement] = js.native
-  @JSName("find")
-  def find_feTurbulence(selector_element: feTurbulence): JQuery[SVGFETurbulenceElement] = js.native
-  @JSName("find")
-  def find_fieldset(selector_element: JQuery[fieldset]): JQuery[HTMLFieldSetElement] = js.native
-  @JSName("find")
-  def find_fieldset(selector_element: fieldset): JQuery[HTMLFieldSetElement] = js.native
-  @JSName("find")
-  def find_figcaption(selector_element: JQuery[figcaption]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_figcaption(selector_element: figcaption): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_figure(selector_element: JQuery[figure]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_figure(selector_element: figure): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_filter(selector_element: JQuery[filter]): JQuery[SVGFilterElement] = js.native
-  @JSName("find")
-  def find_filter(selector_element: filter): JQuery[SVGFilterElement] = js.native
-  @JSName("find")
-  def find_footer(selector_element: JQuery[footer]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_footer(selector_element: footer): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_foreignObject(selector_element: JQuery[foreignObject]): JQuery[SVGForeignObjectElement] = js.native
-  @JSName("find")
-  def find_foreignObject(selector_element: foreignObject): JQuery[SVGForeignObjectElement] = js.native
-  @JSName("find")
-  def find_form(selector_element: JQuery[form]): JQuery[HTMLFormElement] = js.native
-  @JSName("find")
-  def find_form(selector_element: form): JQuery[HTMLFormElement] = js.native
-  @JSName("find")
-  def find_g(selector_element: JQuery[g]): JQuery[SVGGElement] = js.native
-  @JSName("find")
-  def find_g(selector_element: g): JQuery[SVGGElement] = js.native
-  @JSName("find")
-  def find_h1(selector_element: JQuery[h1]): JQuery[HTMLHeadingElement] = js.native
-  @JSName("find")
-  def find_h1(selector_element: h1): JQuery[HTMLHeadingElement] = js.native
-  @JSName("find")
-  def find_h2(selector_element: JQuery[h2]): JQuery[HTMLHeadingElement] = js.native
-  @JSName("find")
-  def find_h2(selector_element: h2): JQuery[HTMLHeadingElement] = js.native
-  @JSName("find")
-  def find_h3(selector_element: JQuery[h3]): JQuery[HTMLHeadingElement] = js.native
-  @JSName("find")
-  def find_h3(selector_element: h3): JQuery[HTMLHeadingElement] = js.native
-  @JSName("find")
-  def find_h4(selector_element: JQuery[h4]): JQuery[HTMLHeadingElement] = js.native
-  @JSName("find")
-  def find_h4(selector_element: h4): JQuery[HTMLHeadingElement] = js.native
-  @JSName("find")
-  def find_h5(selector_element: JQuery[h5]): JQuery[HTMLHeadingElement] = js.native
-  @JSName("find")
-  def find_h5(selector_element: h5): JQuery[HTMLHeadingElement] = js.native
-  @JSName("find")
-  def find_h6(selector_element: JQuery[h6]): JQuery[HTMLHeadingElement] = js.native
-  @JSName("find")
-  def find_h6(selector_element: h6): JQuery[HTMLHeadingElement] = js.native
-  @JSName("find")
-  def find_head(selector_element: JQuery[head]): JQuery[HTMLHeadElement] = js.native
-  @JSName("find")
-  def find_head(selector_element: head): JQuery[HTMLHeadElement] = js.native
-  @JSName("find")
-  def find_header(selector_element: JQuery[header]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_header(selector_element: header): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_hgroup(selector_element: JQuery[hgroup]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_hgroup(selector_element: hgroup): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_hr(selector_element: JQuery[hr]): JQuery[HTMLHRElement] = js.native
-  @JSName("find")
-  def find_hr(selector_element: hr): JQuery[HTMLHRElement] = js.native
-  @JSName("find")
-  def find_html(selector_element: JQuery[html]): JQuery[HTMLHtmlElement] = js.native
-  @JSName("find")
-  def find_html(selector_element: html): JQuery[HTMLHtmlElement] = js.native
-  @JSName("find")
-  def find_i(selector_element: JQuery[i]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_i(selector_element: i): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_iframe(selector_element: JQuery[iframe]): JQuery[HTMLIFrameElement] = js.native
-  @JSName("find")
-  def find_iframe(selector_element: iframe): JQuery[HTMLIFrameElement] = js.native
-  @JSName("find")
-  def find_image(selector_element: JQuery[image]): JQuery[SVGImageElement] = js.native
-  @JSName("find")
-  def find_image(selector_element: image): JQuery[SVGImageElement] = js.native
-  @JSName("find")
-  def find_img(selector_element: JQuery[img]): JQuery[HTMLImageElement] = js.native
-  @JSName("find")
-  def find_img(selector_element: img): JQuery[HTMLImageElement] = js.native
-  @JSName("find")
-  def find_input(selector_element: JQuery[input]): JQuery[HTMLInputElement] = js.native
-  @JSName("find")
-  def find_input(selector_element: input): JQuery[HTMLInputElement] = js.native
-  @JSName("find")
-  def find_ins(selector_element: JQuery[ins]): JQuery[HTMLModElement] = js.native
-  @JSName("find")
-  def find_ins(selector_element: ins): JQuery[HTMLModElement] = js.native
-  @JSName("find")
-  def find_kbd(selector_element: JQuery[kbd]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_kbd(selector_element: kbd): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_label(selector_element: JQuery[label]): JQuery[HTMLLabelElement] = js.native
-  @JSName("find")
-  def find_label(selector_element: label): JQuery[HTMLLabelElement] = js.native
-  @JSName("find")
-  def find_legend(selector_element: JQuery[legend]): JQuery[HTMLLegendElement] = js.native
-  @JSName("find")
-  def find_legend(selector_element: legend): JQuery[HTMLLegendElement] = js.native
-  @JSName("find")
-  def find_li(selector_element: JQuery[li]): JQuery[HTMLLIElement] = js.native
-  @JSName("find")
-  def find_li(selector_element: li): JQuery[HTMLLIElement] = js.native
-  @JSName("find")
-  def find_line(selector_element: JQuery[line]): JQuery[SVGLineElement] = js.native
-  @JSName("find")
-  def find_line(selector_element: line): JQuery[SVGLineElement] = js.native
-  @JSName("find")
-  def find_linearGradient(selector_element: JQuery[linearGradient]): JQuery[SVGLinearGradientElement] = js.native
-  @JSName("find")
-  def find_linearGradient(selector_element: linearGradient): JQuery[SVGLinearGradientElement] = js.native
-  @JSName("find")
-  def find_link(selector_element: JQuery[link]): JQuery[HTMLLinkElement] = js.native
-  @JSName("find")
-  def find_link(selector_element: link): JQuery[HTMLLinkElement] = js.native
-  @JSName("find")
-  def find_main(selector_element: JQuery[main]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_main(selector_element: main): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_map(selector_element: JQuery[map]): JQuery[HTMLMapElement] = js.native
-  @JSName("find")
-  def find_map(selector_element: map): JQuery[HTMLMapElement] = js.native
-  @JSName("find")
-  def find_mark(selector_element: JQuery[mark]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_mark(selector_element: mark): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_marker(selector_element: JQuery[marker]): JQuery[SVGMarkerElement] = js.native
-  @JSName("find")
-  def find_marker(selector_element: marker): JQuery[SVGMarkerElement] = js.native
-  @JSName("find")
-  def find_mask(selector_element: JQuery[mask]): JQuery[SVGMaskElement] = js.native
-  @JSName("find")
-  def find_mask(selector_element: mask): JQuery[SVGMaskElement] = js.native
-  @JSName("find")
-  def find_menu(selector_element: JQuery[menu]): JQuery[HTMLMenuElement] = js.native
-  @JSName("find")
-  def find_menu(selector_element: menu): JQuery[HTMLMenuElement] = js.native
-  @JSName("find")
-  def find_meta(selector_element: JQuery[meta]): JQuery[HTMLMetaElement] = js.native
-  @JSName("find")
-  def find_meta(selector_element: meta): JQuery[HTMLMetaElement] = js.native
-  @JSName("find")
-  def find_metadata(selector_element: JQuery[metadata]): JQuery[SVGMetadataElement] = js.native
-  @JSName("find")
-  def find_metadata(selector_element: metadata): JQuery[SVGMetadataElement] = js.native
-  @JSName("find")
-  def find_meter(selector_element: JQuery[meter]): JQuery[HTMLMeterElement] = js.native
-  @JSName("find")
-  def find_meter(selector_element: meter): JQuery[HTMLMeterElement] = js.native
-  @JSName("find")
-  def find_mpath(selector_element: JQuery[mpath]): JQuery[SVGMPathElement] = js.native
-  @JSName("find")
-  def find_mpath(selector_element: mpath): JQuery[SVGMPathElement] = js.native
-  @JSName("find")
-  def find_nav(selector_element: JQuery[nav]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_nav(selector_element: nav): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_noscript(selector_element: JQuery[noscript]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_noscript(selector_element: noscript): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_object(selector_element: JQuery[`object`]): JQuery[HTMLObjectElement] = js.native
-  @JSName("find")
-  def find_object(selector_element: `object`): JQuery[HTMLObjectElement] = js.native
-  @JSName("find")
-  def find_ol(selector_element: JQuery[ol]): JQuery[HTMLOListElement] = js.native
-  @JSName("find")
-  def find_ol(selector_element: ol): JQuery[HTMLOListElement] = js.native
-  @JSName("find")
-  def find_optgroup(selector_element: JQuery[optgroup]): JQuery[HTMLOptGroupElement] = js.native
-  @JSName("find")
-  def find_optgroup(selector_element: optgroup): JQuery[HTMLOptGroupElement] = js.native
-  @JSName("find")
-  def find_option(selector_element: JQuery[option]): JQuery[HTMLOptionElement] = js.native
-  @JSName("find")
-  def find_option(selector_element: option): JQuery[HTMLOptionElement] = js.native
-  @JSName("find")
-  def find_output(selector_element: JQuery[output]): JQuery[HTMLOutputElement] = js.native
-  @JSName("find")
-  def find_output(selector_element: output): JQuery[HTMLOutputElement] = js.native
-  @JSName("find")
-  def find_p(selector_element: JQuery[p]): JQuery[HTMLParagraphElement] = js.native
-  @JSName("find")
-  def find_p(selector_element: p): JQuery[HTMLParagraphElement] = js.native
-  @JSName("find")
-  def find_path(selector_element: JQuery[path]): JQuery[SVGPathElement] = js.native
-  @JSName("find")
-  def find_path(selector_element: path): JQuery[SVGPathElement] = js.native
-  @JSName("find")
-  def find_pattern(selector_element: JQuery[pattern]): JQuery[SVGPatternElement] = js.native
-  @JSName("find")
-  def find_pattern(selector_element: pattern): JQuery[SVGPatternElement] = js.native
-  @JSName("find")
-  def find_picture(selector_element: JQuery[picture]): JQuery[HTMLPictureElement] = js.native
-  @JSName("find")
-  def find_picture(selector_element: picture): JQuery[HTMLPictureElement] = js.native
-  @JSName("find")
-  def find_polygon(selector_element: JQuery[polygon]): JQuery[SVGPolygonElement] = js.native
-  @JSName("find")
-  def find_polygon(selector_element: polygon): JQuery[SVGPolygonElement] = js.native
-  @JSName("find")
-  def find_polyline(selector_element: JQuery[polyline]): JQuery[SVGPolylineElement] = js.native
-  @JSName("find")
-  def find_polyline(selector_element: polyline): JQuery[SVGPolylineElement] = js.native
-  @JSName("find")
-  def find_pre(selector_element: JQuery[pre]): JQuery[HTMLPreElement] = js.native
-  @JSName("find")
-  def find_pre(selector_element: pre): JQuery[HTMLPreElement] = js.native
-  @JSName("find")
-  def find_progress(selector_element: JQuery[progress]): JQuery[HTMLProgressElement] = js.native
-  @JSName("find")
-  def find_progress(selector_element: progress): JQuery[HTMLProgressElement] = js.native
-  @JSName("find")
-  def find_q(selector_element: JQuery[q]): JQuery[HTMLQuoteElement] = js.native
-  @JSName("find")
-  def find_q(selector_element: q): JQuery[HTMLQuoteElement] = js.native
-  @JSName("find")
-  def find_radialGradient(selector_element: JQuery[radialGradient]): JQuery[SVGRadialGradientElement] = js.native
-  @JSName("find")
-  def find_radialGradient(selector_element: radialGradient): JQuery[SVGRadialGradientElement] = js.native
-  @JSName("find")
-  def find_rect(selector_element: JQuery[rect]): JQuery[SVGRectElement] = js.native
-  @JSName("find")
-  def find_rect(selector_element: rect): JQuery[SVGRectElement] = js.native
-  @JSName("find")
-  def find_rp(selector_element: JQuery[rp]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_rp(selector_element: rp): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_rt(selector_element: JQuery[rt]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_rt(selector_element: rt): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_ruby(selector_element: JQuery[ruby]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_ruby(selector_element: ruby): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_s(selector_element: JQuery[s]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_s(selector_element: s): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_samp(selector_element: JQuery[samp]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_samp(selector_element: samp): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_script(selector_element: JQuery[script]): JQuery[HTMLScriptElement] = js.native
-  @JSName("find")
-  def find_script(selector_element: script): JQuery[HTMLScriptElement] = js.native
-  @JSName("find")
-  def find_section(selector_element: JQuery[section]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_section(selector_element: section): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_select(selector_element: JQuery[select]): JQuery[HTMLSelectElement] = js.native
-  @JSName("find")
-  def find_select(selector_element: select): JQuery[HTMLSelectElement] = js.native
-  @JSName("find")
-  def find_set(selector_element: JQuery[set]): JQuery[SVGSetElement] = js.native
-  @JSName("find")
-  def find_set(selector_element: set): JQuery[SVGSetElement] = js.native
-  @JSName("find")
-  def find_slot(selector_element: JQuery[slot]): JQuery[HTMLSlotElement] = js.native
-  @JSName("find")
-  def find_slot(selector_element: slot): JQuery[HTMLSlotElement] = js.native
-  @JSName("find")
-  def find_small(selector_element: JQuery[small]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_small(selector_element: small): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_source(selector_element: JQuery[source]): JQuery[HTMLSourceElement] = js.native
-  @JSName("find")
-  def find_source(selector_element: source): JQuery[HTMLSourceElement] = js.native
-  @JSName("find")
-  def find_span(selector_element: JQuery[span]): JQuery[HTMLSpanElement] = js.native
-  @JSName("find")
-  def find_span(selector_element: span): JQuery[HTMLSpanElement] = js.native
-  @JSName("find")
-  def find_stop(selector_element: JQuery[stop]): JQuery[SVGStopElement] = js.native
-  @JSName("find")
-  def find_stop(selector_element: stop): JQuery[SVGStopElement] = js.native
-  @JSName("find")
-  def find_strong(selector_element: JQuery[strong]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_strong(selector_element: strong): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_style(selector_element: JQuery[style]): JQuery[HTMLStyleElement] = js.native
-  @JSName("find")
-  def find_style(selector_element: style): JQuery[HTMLStyleElement] = js.native
-  @JSName("find")
-  def find_sub(selector_element: JQuery[sub]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_sub(selector_element: sub): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_summary(selector_element: JQuery[summary]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_summary(selector_element: summary): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_sup(selector_element: JQuery[sup]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_sup(selector_element: sup): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_svg(selector_element: JQuery[svg]): JQuery[SVGSVGElement] = js.native
-  @JSName("find")
-  def find_svg(selector_element: svg): JQuery[SVGSVGElement] = js.native
-  @JSName("find")
-  def find_switch(selector_element: JQuery[switch]): JQuery[SVGSwitchElement] = js.native
-  @JSName("find")
-  def find_switch(selector_element: switch): JQuery[SVGSwitchElement] = js.native
-  @JSName("find")
-  def find_symbol(selector_element: JQuery[symbol]): JQuery[SVGSymbolElement] = js.native
-  @JSName("find")
-  def find_symbol(selector_element: symbol): JQuery[SVGSymbolElement] = js.native
-  @JSName("find")
-  def find_table(selector_element: JQuery[table]): JQuery[HTMLTableElement] = js.native
-  @JSName("find")
-  def find_table(selector_element: table): JQuery[HTMLTableElement] = js.native
-  @JSName("find")
-  def find_tbody(selector_element: JQuery[tbody]): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("find")
-  def find_tbody(selector_element: tbody): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("find")
-  def find_td(selector_element: JQuery[td]): JQuery[HTMLTableCellElement] = js.native
-  @JSName("find")
-  def find_td(selector_element: td): JQuery[HTMLTableCellElement] = js.native
-  @JSName("find")
-  def find_template(selector_element: JQuery[template]): JQuery[HTMLTemplateElement] = js.native
-  @JSName("find")
-  def find_template(selector_element: template): JQuery[HTMLTemplateElement] = js.native
-  @JSName("find")
-  def find_text(selector_element: JQuery[text]): JQuery[SVGTextElement] = js.native
-  @JSName("find")
-  def find_text(selector_element: text): JQuery[SVGTextElement] = js.native
-  @JSName("find")
-  def find_textPath(selector_element: JQuery[textPath]): JQuery[SVGTextPathElement] = js.native
-  @JSName("find")
-  def find_textPath(selector_element: textPath): JQuery[SVGTextPathElement] = js.native
-  @JSName("find")
-  def find_textarea(selector_element: JQuery[textarea]): JQuery[HTMLTextAreaElement] = js.native
-  @JSName("find")
-  def find_textarea(selector_element: textarea): JQuery[HTMLTextAreaElement] = js.native
-  @JSName("find")
-  def find_tfoot(selector_element: JQuery[tfoot]): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("find")
-  def find_tfoot(selector_element: tfoot): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("find")
-  def find_th(selector_element: JQuery[th]): JQuery[HTMLTableCellElement] = js.native
-  @JSName("find")
-  def find_th(selector_element: th): JQuery[HTMLTableCellElement] = js.native
-  @JSName("find")
-  def find_thead(selector_element: JQuery[thead]): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("find")
-  def find_thead(selector_element: thead): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("find")
-  def find_time(selector_element: JQuery[time]): JQuery[HTMLTimeElement] = js.native
-  @JSName("find")
-  def find_time(selector_element: time): JQuery[HTMLTimeElement] = js.native
-  @JSName("find")
-  def find_title(selector_element: JQuery[title]): JQuery[HTMLTitleElement] = js.native
-  @JSName("find")
-  def find_title(selector_element: title): JQuery[HTMLTitleElement] = js.native
-  @JSName("find")
-  def find_tr(selector_element: JQuery[tr]): JQuery[HTMLTableRowElement] = js.native
-  @JSName("find")
-  def find_tr(selector_element: tr): JQuery[HTMLTableRowElement] = js.native
-  @JSName("find")
-  def find_track(selector_element: JQuery[track]): JQuery[HTMLTrackElement] = js.native
-  @JSName("find")
-  def find_track(selector_element: track): JQuery[HTMLTrackElement] = js.native
-  @JSName("find")
-  def find_tspan(selector_element: JQuery[tspan]): JQuery[SVGTSpanElement] = js.native
-  @JSName("find")
-  def find_tspan(selector_element: tspan): JQuery[SVGTSpanElement] = js.native
-  @JSName("find")
-  def find_u(selector_element: JQuery[u]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_u(selector_element: u): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_ul(selector_element: JQuery[ul]): JQuery[HTMLUListElement] = js.native
-  @JSName("find")
-  def find_ul(selector_element: ul): JQuery[HTMLUListElement] = js.native
-  @JSName("find")
-  def find_use(selector_element: JQuery[use]): JQuery[SVGUseElement] = js.native
-  @JSName("find")
-  def find_use(selector_element: use): JQuery[SVGUseElement] = js.native
-  @JSName("find")
-  def find_var(selector_element: JQuery[`var`]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_var(selector_element: `var`): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_video(selector_element: JQuery[video]): JQuery[HTMLVideoElement] = js.native
-  @JSName("find")
-  def find_video(selector_element: video): JQuery[HTMLVideoElement] = js.native
-  @JSName("find")
-  def find_view(selector_element: JQuery[view]): JQuery[SVGViewElement] = js.native
-  @JSName("find")
-  def find_view(selector_element: view): JQuery[SVGViewElement] = js.native
-  @JSName("find")
-  def find_wbr(selector_element: JQuery[wbr]): JQuery[HTMLElement] = js.native
-  @JSName("find")
-  def find_wbr(selector_element: wbr): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("find_rt")
+  def find(selector_element: JQuery["rt"]): JQuery[HTMLElement] = js.native
+  def find[E /* <: HTMLElement */](selector_element: E): JQuery[E] = js.native
+  def find[E /* <: HTMLElement */](selector_element: JQuery[E]): JQuery[E] = js.native
+  def find[E /* <: HTMLElement */](selector_element: Selector): JQuery[E] = js.native
+  def find[E /* <: HTMLElement */](selector_element: Element): JQuery[E] = js.native
   
   /**
     * Stop the currently-running animation, remove all queued animations, and complete all animations for the matched elements.
@@ -5888,9 +6226,11 @@ trait JQuery[TElement]
     */
   def focus(): this.type = js.native
   @JSName("focus")
-  def focus_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("focus_false")
+  def focus(handler: false): this.type = js.native
   @JSName("focus")
-  def focus_focus(handler: TypeEventHandler[TElement, Null, TElement, TElement, focus]): this.type = js.native
+  @scala.annotation.targetName("focus_focus")
+  def focus(handler: TypeEventHandler[TElement, Null, TElement, TElement, "focus"]): this.type = js.native
   /**
     * Bind an event handler to the "focus" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -5904,7 +6244,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("focus")
-  def focus_focus[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, focus]): this.type = js.native
+  @scala.annotation.targetName("focus_focus")
+  def focus[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "focus"]): this.type = js.native
   
   /**
     * Bind an event handler to the "focusin" event.
@@ -5947,9 +6288,11 @@ trait JQuery[TElement]
     */
   def focusin(): this.type = js.native
   @JSName("focusin")
-  def focusin_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("focusin_false")
+  def focusin(handler: false): this.type = js.native
   @JSName("focusin")
-  def focusin_focusin(handler: TypeEventHandler[TElement, Null, TElement, TElement, focusin]): this.type = js.native
+  @scala.annotation.targetName("focusin_focusin")
+  def focusin(handler: TypeEventHandler[TElement, Null, TElement, TElement, "focusin"]): this.type = js.native
   /**
     * Bind an event handler to the "focusin" event.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -5963,7 +6306,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("focusin")
-  def focusin_focusin[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, focusin]): this.type = js.native
+  @scala.annotation.targetName("focusin_focusin")
+  def focusin[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "focusin"]): this.type = js.native
   
   /**
     * Bind an event handler to the "focusout" JavaScript event.
@@ -6027,9 +6371,11 @@ trait JQuery[TElement]
     */
   def focusout(): this.type = js.native
   @JSName("focusout")
-  def focusout_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("focusout_false")
+  def focusout(handler: false): this.type = js.native
   @JSName("focusout")
-  def focusout_focusout(handler: TypeEventHandler[TElement, Null, TElement, TElement, focusout]): this.type = js.native
+  @scala.annotation.targetName("focusout_focusout")
+  def focusout(handler: TypeEventHandler[TElement, Null, TElement, TElement, "focusout"]): this.type = js.native
   /**
     * Bind an event handler to the "focusout" JavaScript event.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -6043,7 +6389,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("focusout")
-  def focusout_focusout[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, focusout]): this.type = js.native
+  @scala.annotation.targetName("focusout_focusout")
+  def focusout[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "focusout"]): this.type = js.native
   
   /**
     * Retrieve the elements matched by the jQuery object. If the value of index is out of bounds — less than the negative number of elements or equal to or greater than the number of elements — it returns undefined.
@@ -6500,6 +6847,9 @@ trait JQuery[TElement]
     */
   def hide(duration: Duration, easing: String, complete: js.ThisFunction0[/* this */ TElement, Unit]): this.type = js.native
   
+  @JSName("hover")
+  @scala.annotation.targetName("hover_false")
+  def hover(handlerInOut: false): this.type = js.native
   /**
     * Bind a single handler to the matched elements, to be executed when the mouse pointer enters or leaves the elements.
     * @param handlerInOut A function to execute when the mouse pointer enters or leaves the element.
@@ -6565,7 +6915,18 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def hover(handlerInOut: TypeEventHandler[TElement, Null, TElement, TElement, mouseenter | mouseleave]): this.type = js.native
+  @JSName("hover")
+  @scala.annotation.targetName("hover_mouseenter_mouseleave")
+  def hover(handlerInOut: TypeEventHandler[TElement, Null, TElement, TElement, "mouseenter" | "mouseleave"]): this.type = js.native
+  @JSName("hover")
+  @scala.annotation.targetName("hover_false_false")
+  def hover(handlerIn: false, handlerOut: false): this.type = js.native
+  @JSName("hover")
+  @scala.annotation.targetName("hover_false_mouseleave")
+  def hover(handlerIn: false, handlerOut: TypeEventHandler[TElement, Null, TElement, TElement, "mouseleave"]): this.type = js.native
+  @JSName("hover")
+  @scala.annotation.targetName("hover_mouseenter_false")
+  def hover(handlerIn: TypeEventHandler[TElement, Null, TElement, TElement, "mouseenter"], handlerOut: false): this.type = js.native
   /**
     * Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
     * @param handlerIn A function to execute when the mouse pointer enters the element.
@@ -6640,16 +7001,12 @@ trait JQuery[TElement]
   $( "td" ).off( "mouseenter mouseleave" );
   ```
     */
+  @JSName("hover")
+  @scala.annotation.targetName("hover_mouseenter_mouseleave")
   def hover(
-    handlerIn: TypeEventHandler[TElement, Null, TElement, TElement, mouseenter],
-    handlerOut: TypeEventHandler[TElement, Null, TElement, TElement, mouseleave]
+    handlerIn: TypeEventHandler[TElement, Null, TElement, TElement, "mouseenter"],
+    handlerOut: TypeEventHandler[TElement, Null, TElement, TElement, "mouseleave"]
   ): this.type = js.native
-  def hover(handlerIn: TypeEventHandler[TElement, Null, TElement, TElement, mouseenter], handlerOut: `false`): this.type = js.native
-  def hover(handlerIn: `false`, handlerOut: TypeEventHandler[TElement, Null, TElement, TElement, mouseleave]): this.type = js.native
-  @JSName("hover")
-  def hover_false(handlerInOut: `false`): this.type = js.native
-  @JSName("hover")
-  def hover_false(handlerIn: `false`, handlerOut: `false`): this.type = js.native
   
   /**
     * Get the HTML contents of the first element in the set of matched elements.
@@ -7579,9 +7936,11 @@ trait JQuery[TElement]
     */
   def keydown(): this.type = js.native
   @JSName("keydown")
-  def keydown_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("keydown_false")
+  def keydown(handler: false): this.type = js.native
   @JSName("keydown")
-  def keydown_keydown(handler: TypeEventHandler[TElement, Null, TElement, TElement, keydown]): this.type = js.native
+  @scala.annotation.targetName("keydown_keydown")
+  def keydown(handler: TypeEventHandler[TElement, Null, TElement, TElement, "keydown"]): this.type = js.native
   /**
     * Bind an event handler to the "keydown" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -7595,7 +7954,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("keydown")
-  def keydown_keydown[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, keydown]): this.type = js.native
+  @scala.annotation.targetName("keydown_keydown")
+  def keydown[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "keydown"]): this.type = js.native
   
   /**
     * Bind an event handler to the "keypress" JavaScript event, or trigger that event on an element.
@@ -7670,9 +8030,11 @@ trait JQuery[TElement]
     */
   def keypress(): this.type = js.native
   @JSName("keypress")
-  def keypress_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("keypress_false")
+  def keypress(handler: false): this.type = js.native
   @JSName("keypress")
-  def keypress_keypress(handler: TypeEventHandler[TElement, Null, TElement, TElement, keypress]): this.type = js.native
+  @scala.annotation.targetName("keypress_keypress")
+  def keypress(handler: TypeEventHandler[TElement, Null, TElement, TElement, "keypress"]): this.type = js.native
   /**
     * Bind an event handler to the "keypress" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -7686,7 +8048,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("keypress")
-  def keypress_keypress[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, keypress]): this.type = js.native
+  @scala.annotation.targetName("keypress_keypress")
+  def keypress[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "keypress"]): this.type = js.native
   
   /**
     * Bind an event handler to the "keyup" JavaScript event, or trigger that event on an element.
@@ -7762,9 +8125,11 @@ trait JQuery[TElement]
     */
   def keyup(): this.type = js.native
   @JSName("keyup")
-  def keyup_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("keyup_false")
+  def keyup(handler: false): this.type = js.native
   @JSName("keyup")
-  def keyup_keyup(handler: TypeEventHandler[TElement, Null, TElement, TElement, keyup]): this.type = js.native
+  @scala.annotation.targetName("keyup_keyup")
+  def keyup(handler: TypeEventHandler[TElement, Null, TElement, TElement, "keyup"]): this.type = js.native
   /**
     * Bind an event handler to the "keyup" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -7778,7 +8143,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("keyup")
-  def keyup_keyup[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, keyup]): this.type = js.native
+  @scala.annotation.targetName("keyup_keyup")
+  def keyup[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "keyup"]): this.type = js.native
   
   /**
     * Reduce the set of matched elements to the final one in the set.
@@ -8183,9 +8549,11 @@ trait JQuery[TElement]
     */
   def mousedown(): this.type = js.native
   @JSName("mousedown")
-  def mousedown_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("mousedown_false")
+  def mousedown(handler: false): this.type = js.native
   @JSName("mousedown")
-  def mousedown_mousedown(handler: TypeEventHandler[TElement, Null, TElement, TElement, mousedown]): this.type = js.native
+  @scala.annotation.targetName("mousedown_mousedown")
+  def mousedown(handler: TypeEventHandler[TElement, Null, TElement, TElement, "mousedown"]): this.type = js.native
   /**
     * Bind an event handler to the "mousedown" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -8199,7 +8567,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("mousedown")
-  def mousedown_mousedown[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, mousedown]): this.type = js.native
+  @scala.annotation.targetName("mousedown_mousedown")
+  def mousedown[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "mousedown"]): this.type = js.native
   
   /**
     * Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element.
@@ -8283,9 +8652,11 @@ trait JQuery[TElement]
     */
   def mouseenter(): this.type = js.native
   @JSName("mouseenter")
-  def mouseenter_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("mouseenter_false")
+  def mouseenter(handler: false): this.type = js.native
   @JSName("mouseenter")
-  def mouseenter_mouseenter(handler: TypeEventHandler[TElement, Null, TElement, TElement, mouseenter]): this.type = js.native
+  @scala.annotation.targetName("mouseenter_mouseenter")
+  def mouseenter(handler: TypeEventHandler[TElement, Null, TElement, TElement, "mouseenter"]): this.type = js.native
   /**
     * Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -8299,7 +8670,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("mouseenter")
-  def mouseenter_mouseenter[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, mouseenter]): this.type = js.native
+  @scala.annotation.targetName("mouseenter_mouseenter")
+  def mouseenter[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "mouseenter"]): this.type = js.native
   
   /**
     * Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element.
@@ -8381,9 +8753,11 @@ trait JQuery[TElement]
     */
   def mouseleave(): this.type = js.native
   @JSName("mouseleave")
-  def mouseleave_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("mouseleave_false")
+  def mouseleave(handler: false): this.type = js.native
   @JSName("mouseleave")
-  def mouseleave_mouseleave(handler: TypeEventHandler[TElement, Null, TElement, TElement, mouseleave]): this.type = js.native
+  @scala.annotation.targetName("mouseleave_mouseleave")
+  def mouseleave(handler: TypeEventHandler[TElement, Null, TElement, TElement, "mouseleave"]): this.type = js.native
   /**
     * Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -8397,7 +8771,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("mouseleave")
-  def mouseleave_mouseleave[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, mouseleave]): this.type = js.native
+  @scala.annotation.targetName("mouseleave_mouseleave")
+  def mouseleave[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "mouseleave"]): this.type = js.native
   
   /**
     * Bind an event handler to the "mousemove" JavaScript event, or trigger that event on an element.
@@ -8464,9 +8839,11 @@ trait JQuery[TElement]
     */
   def mousemove(): this.type = js.native
   @JSName("mousemove")
-  def mousemove_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("mousemove_false")
+  def mousemove(handler: false): this.type = js.native
   @JSName("mousemove")
-  def mousemove_mousemove(handler: TypeEventHandler[TElement, Null, TElement, TElement, mousemove]): this.type = js.native
+  @scala.annotation.targetName("mousemove_mousemove")
+  def mousemove(handler: TypeEventHandler[TElement, Null, TElement, TElement, "mousemove"]): this.type = js.native
   /**
     * Bind an event handler to the "mousemove" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -8480,7 +8857,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("mousemove")
-  def mousemove_mousemove[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, mousemove]): this.type = js.native
+  @scala.annotation.targetName("mousemove_mousemove")
+  def mousemove[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "mousemove"]): this.type = js.native
   
   /**
     * Bind an event handler to the "mouseout" JavaScript event, or trigger that event on an element.
@@ -8564,9 +8942,11 @@ trait JQuery[TElement]
     */
   def mouseout(): this.type = js.native
   @JSName("mouseout")
-  def mouseout_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("mouseout_false")
+  def mouseout(handler: false): this.type = js.native
   @JSName("mouseout")
-  def mouseout_mouseout(handler: TypeEventHandler[TElement, Null, TElement, TElement, mouseout]): this.type = js.native
+  @scala.annotation.targetName("mouseout_mouseout")
+  def mouseout(handler: TypeEventHandler[TElement, Null, TElement, TElement, "mouseout"]): this.type = js.native
   /**
     * Bind an event handler to the "mouseout" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -8580,7 +8960,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("mouseout")
-  def mouseout_mouseout[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, mouseout]): this.type = js.native
+  @scala.annotation.targetName("mouseout_mouseout")
+  def mouseout[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "mouseout"]): this.type = js.native
   
   /**
     * Bind an event handler to the "mouseover" JavaScript event, or trigger that event on an element.
@@ -8664,9 +9045,11 @@ trait JQuery[TElement]
     */
   def mouseover(): this.type = js.native
   @JSName("mouseover")
-  def mouseover_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("mouseover_false")
+  def mouseover(handler: false): this.type = js.native
   @JSName("mouseover")
-  def mouseover_mouseover(handler: TypeEventHandler[TElement, Null, TElement, TElement, mouseover]): this.type = js.native
+  @scala.annotation.targetName("mouseover_mouseover")
+  def mouseover(handler: TypeEventHandler[TElement, Null, TElement, TElement, "mouseover"]): this.type = js.native
   /**
     * Bind an event handler to the "mouseover" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -8680,7 +9063,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("mouseover")
-  def mouseover_mouseover[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, mouseover]): this.type = js.native
+  @scala.annotation.targetName("mouseover_mouseover")
+  def mouseover[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "mouseover"]): this.type = js.native
   
   /**
     * Bind an event handler to the "mouseup" JavaScript event, or trigger that event on an element.
@@ -8721,9 +9105,11 @@ trait JQuery[TElement]
     */
   def mouseup(): this.type = js.native
   @JSName("mouseup")
-  def mouseup_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("mouseup_false")
+  def mouseup(handler: false): this.type = js.native
   @JSName("mouseup")
-  def mouseup_mouseup(handler: TypeEventHandler[TElement, Null, TElement, TElement, mouseup]): this.type = js.native
+  @scala.annotation.targetName("mouseup_mouseup")
+  def mouseup(handler: TypeEventHandler[TElement, Null, TElement, TElement, "mouseup"]): this.type = js.native
   /**
     * Bind an event handler to the "mouseup" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -8737,7 +9123,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("mouseup")
-  def mouseup_mouseup[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, mouseup]): this.type = js.native
+  @scala.annotation.targetName("mouseup_mouseup")
+  def mouseup[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "mouseup"]): this.type = js.native
   
   /**
     * Get the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector.
@@ -9107,8 +9494,14 @@ trait JQuery[TElement]
   ```
     */
   def off[TType /* <: String */](events: TType): this.type = js.native
+  @JSName("off")
+  @scala.annotation.targetName("off_false")
+  def off[TType /* <: String */](events: TType, selector_handler: false): this.type = js.native
   def off[TType /* <: String */](events: TType, selector_handler: Selector): this.type = js.native
   def off[TType /* <: String */](events: TType, selector_handler: TypeEventHandler[TElement, Any, Any, Any, TType]): this.type = js.native
+  @JSName("off")
+  @scala.annotation.targetName("off_false")
+  def off[TType /* <: String */](events: TType, selector: Selector, handler: false): this.type = js.native
   /**
     * Remove an event handler.
     * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
@@ -9177,10 +9570,6 @@ trait JQuery[TElement]
   ```
     */
   def off[TType /* <: String */](events: TType, selector: Selector, handler: TypeEventHandler[TElement, Any, Any, Any, TType]): this.type = js.native
-  @JSName("off")
-  def off_false[TType /* <: String */](events: TType, selector_handler: `false`): this.type = js.native
-  @JSName("off")
-  def off_false[TType /* <: String */](events: TType, selector: Selector, handler: `false`): this.type = js.native
   
   /**
     * Get the current coordinates of the first element in the set of matched elements, relative to the document.
@@ -9600,6 +9989,9 @@ trait JQuery[TElement]
     * @since 1.7
     */
   def on(events: TypeEventHandlers[TElement, Unit, Any, Any], selector: Selector): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_false")
+  def on[TType /* <: String */](events: TType, handler: false): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9692,6 +10084,9 @@ trait JQuery[TElement]
   ```
     */
   def on[TType /* <: String */](events: TType, handler: TypeEventHandler[TElement, Unit, TElement, TElement, TType]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_false")
+  def on[TType /* <: String */](events: TType, selector: Selector, handler: false): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9839,10 +10234,6 @@ trait JQuery[TElement]
     data: TData,
     handler: TypeEventHandler[TElement, TData, Any, Any, TType]
   ): this.type = js.native
-  @JSName("on")
-  def on_false[TType /* <: String */](events: TType, handler: `false`): this.type = js.native
-  @JSName("on")
-  def on_false[TType /* <: String */](events: TType, selector: Selector, handler: `false`): this.type = js.native
   
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -9862,6 +10253,9 @@ trait JQuery[TElement]
     * @since 1.7
     */
   def one(events: TypeEventHandlers[TElement, Unit, Any, Any], selector: Selector): this.type = js.native
+  @JSName("one")
+  @scala.annotation.targetName("one_false")
+  def one[TType /* <: String */](events: TType, handler: false): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9951,6 +10345,9 @@ trait JQuery[TElement]
   ```
     */
   def one[TType /* <: String */](events: TType, handler: TypeEventHandler[TElement, Unit, TElement, TElement, TType]): this.type = js.native
+  @JSName("one")
+  @scala.annotation.targetName("one_false")
+  def one[TType /* <: String */](events: TType, selector: Selector, handler: false): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -10041,10 +10438,6 @@ trait JQuery[TElement]
     data: TData,
     handler: TypeEventHandler[TElement, TData, Any, Any, TType]
   ): this.type = js.native
-  @JSName("one")
-  def one_false[TType /* <: String */](events: TType, handler: `false`): this.type = js.native
-  @JSName("one")
-  def one_false[TType /* <: String */](events: TType, selector: Selector, handler: `false`): this.type = js.native
   
   /**
     * Get the current computed outer height (including padding, border, and optionally margin) for the first element in the set of matched elements.
@@ -10333,72 +10726,780 @@ trait JQuery[TElement]
   def parent(): this.type = js.native
   def parent(selector: Selector): this.type = js.native
   
-  // tslint:disable-next-line:no-unnecessary-generics
-  def parents[E /* <: HTMLElement */](): JQuery[E] = js.native
-  def parents[E /* <: HTMLElement */](selector: Selector): JQuery[E] = js.native
-  
-  /**
-    * Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM node, or jQuery object.
-    * @param selector_element _&#x40;param_ `selector_element`
-    * <br>
-    * * `selector` — A string containing a selector expression to indicate where to stop matching ancestor elements. <br>
-    * * `element` — A DOM node or jQuery object indicating where to stop matching ancestor elements.
-    * @param filter A string containing a selector expression to match elements against.
-    * @see \`{@link https://api.jquery.com/parentsUntil/ }\`
-    * @since 1.4
-    * @since 1.6
-    * @example ​ ````Find the ancestors of &lt;li class=&quot;item-a&quot;&gt; up to &lt;ul class=&quot;level-1&quot;&gt; and give them a red background color. Also, find ancestors of &lt;li class=&quot;item-2&quot;&gt; that have a class of &quot;yes&quot; up to &lt;ul class=&quot;level-1&quot;&gt; and give them a green border.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>parentsUntil demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <ul class="level-1 yes">
-    <li class="item-i">I</li>
-    <li class="item-ii">II
-    <ul class="level-2 yes">
-    <li class="item-a">A</li>
-    <li class="item-b">B
-    <ul class="level-3">
-    <li class="item-1">1</li>
-    <li class="item-2">2</li>
-    <li class="item-3">3</li>
-    </ul>
-    </li>
-    <li class="item-c">C</li>
-    </ul>
-    </li>
-    <li class="item-iii">III</li>
-  </ul>
-  ​
-  <script>
-  $( "li.item-a" )
-    .parentsUntil( ".level-1" )
-    .css( "background-color", "red" );
-  ​
-  $( "li.item-2" )
-    .parentsUntil( $( "ul.level-1" ), ".yes" )
-    .css( "border", "3px solid green" );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-    */
-  def parentsUntil(): this.type = js.native
-  def parentsUntil(selector_element: Unit, filter: Selector): this.type = js.native
-  def parentsUntil(selector_element: JQuery[HTMLElement]): this.type = js.native
-  def parentsUntil(selector_element: Selector): this.type = js.native
-  def parentsUntil(selector_element: Selector, filter: Selector): this.type = js.native
-  def parentsUntil(selector_element: JQuery[HTMLElement], filter: Selector): this.type = js.native
-  def parentsUntil(selector_element: Element): this.type = js.native
-  def parentsUntil(selector_element: Element, filter: Selector): this.type = js.native
-  
+  @JSName("parents")
+  @scala.annotation.targetName("parents_data")
+  def parents(selector: "data"): JQuery[HTMLDataElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_view")
+  def parents(selector: "view"): JQuery[SVGViewElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feSpotLight")
+  def parents(selector: "feSpotLight"): JQuery[SVGFESpotLightElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_tfoot")
+  def parents(selector: "tfoot"): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_filter")
+  def parents(selector: "filter"): JQuery[SVGFilterElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_address")
+  def parents(selector: "address"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_details")
+  def parents(selector: "details"): JQuery[HTMLDetailsElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_form")
+  def parents(selector: "form"): JQuery[HTMLFormElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feFuncR")
+  def parents(selector: "feFuncR"): JQuery[SVGFEFuncRElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_span")
+  def parents(selector: "span"): JQuery[HTMLSpanElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_footer")
+  def parents(selector: "footer"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_radialGradient")
+  def parents(selector: "radialGradient"): JQuery[SVGRadialGradientElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_dfn")
+  def parents(selector: "dfn"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_embed")
+  def parents(selector: "embed"): JQuery[HTMLEmbedElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_abbr")
+  def parents(selector: "abbr"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_section")
+  def parents(selector: "section"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_dl")
+  def parents(selector: "dl"): JQuery[HTMLDListElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_button")
+  def parents(selector: "button"): JQuery[HTMLButtonElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_sup")
+  def parents(selector: "sup"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feConvolveMatrix")
+  def parents(selector: "feConvolveMatrix"): JQuery[SVGFEConvolveMatrixElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_ol")
+  def parents(selector: "ol"): JQuery[HTMLOListElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_img")
+  def parents(selector: "img"): JQuery[HTMLImageElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_ellipse")
+  def parents(selector: "ellipse"): JQuery[SVGEllipseElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_ins")
+  def parents(selector: "ins"): JQuery[HTMLModElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_iframe")
+  def parents(selector: "iframe"): JQuery[HTMLIFrameElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feComponentTransfer")
+  def parents(selector: "feComponentTransfer"): JQuery[SVGFEComponentTransferElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_h3")
+  def parents(selector: "h3"): JQuery[HTMLHeadingElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_h1")
+  def parents(selector: "h1"): JQuery[HTMLHeadingElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_script")
+  def parents(selector: "script"): JQuery[HTMLScriptElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_label")
+  def parents(selector: "label"): JQuery[HTMLLabelElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_use")
+  def parents(selector: "use"): JQuery[SVGUseElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_picture")
+  def parents(selector: "picture"): JQuery[HTMLPictureElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_br")
+  def parents(selector: "br"): JQuery[HTMLBRElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_pre")
+  def parents(selector: "pre"): JQuery[HTMLPreElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_nav")
+  def parents(selector: "nav"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_circle")
+  def parents(selector: "circle"): JQuery[SVGCircleElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_animateMotion")
+  def parents(selector: "animateMotion"): JQuery[SVGAnimateMotionElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_select")
+  def parents(selector: "select"): JQuery[HTMLSelectElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_text")
+  def parents(selector: "text"): JQuery[SVGTextElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_h5")
+  def parents(selector: "h5"): JQuery[HTMLHeadingElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feImage")
+  def parents(selector: "feImage"): JQuery[SVGFEImageElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_optgroup")
+  def parents(selector: "optgroup"): JQuery[HTMLOptGroupElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_main")
+  def parents(selector: "main"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_object")
+  def parents(selector: "object"): JQuery[HTMLObjectElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_menu")
+  def parents(selector: "menu"): JQuery[HTMLMenuElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_header")
+  def parents(selector: "header"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_samp")
+  def parents(selector: "samp"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feFlood")
+  def parents(selector: "feFlood"): JQuery[SVGFEFloodElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feDiffuseLighting")
+  def parents(selector: "feDiffuseLighting"): JQuery[SVGFEDiffuseLightingElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feColorMatrix")
+  def parents(selector: "feColorMatrix"): JQuery[SVGFEColorMatrixElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_article")
+  def parents(selector: "article"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_fieldset")
+  def parents(selector: "fieldset"): JQuery[HTMLFieldSetElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_track")
+  def parents(selector: "track"): JQuery[HTMLTrackElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feFuncG")
+  def parents(selector: "feFuncG"): JQuery[SVGFEFuncGElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_time")
+  def parents(selector: "time"): JQuery[HTMLTimeElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_animateTransform")
+  def parents(selector: "animateTransform"): JQuery[SVGAnimateTransformElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_path")
+  def parents(selector: "path"): JQuery[SVGPathElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feDistantLight")
+  def parents(selector: "feDistantLight"): JQuery[SVGFEDistantLightElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_strong")
+  def parents(selector: "strong"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_caption")
+  def parents(selector: "caption"): JQuery[HTMLTableCaptionElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_hgroup")
+  def parents(selector: "hgroup"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_input")
+  def parents(selector: "input"): JQuery[HTMLInputElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_video")
+  def parents(selector: "video"): JQuery[HTMLVideoElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_td")
+  def parents(selector: "td"): JQuery[HTMLTableCellElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_q")
+  def parents(selector: "q"): JQuery[HTMLQuoteElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_symbol")
+  def parents(selector: "symbol"): JQuery[SVGSymbolElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_source")
+  def parents(selector: "source"): JQuery[HTMLSourceElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feTile")
+  def parents(selector: "feTile"): JQuery[SVGFETileElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_legend")
+  def parents(selector: "legend"): JQuery[HTMLLegendElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feMerge")
+  def parents(selector: "feMerge"): JQuery[SVGFEMergeElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_p")
+  def parents(selector: "p"): JQuery[HTMLParagraphElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_pattern")
+  def parents(selector: "pattern"): JQuery[SVGPatternElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_progress")
+  def parents(selector: "progress"): JQuery[HTMLProgressElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_s")
+  def parents(selector: "s"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_hr")
+  def parents(selector: "hr"): JQuery[HTMLHRElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_link")
+  def parents(selector: "link"): JQuery[HTMLLinkElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_th")
+  def parents(selector: "th"): JQuery[HTMLTableCellElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_linearGradient")
+  def parents(selector: "linearGradient"): JQuery[SVGLinearGradientElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_style")
+  def parents(selector: "style"): JQuery[HTMLStyleElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_marker")
+  def parents(selector: "marker"): JQuery[SVGMarkerElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_template")
+  def parents(selector: "template"): JQuery[HTMLTemplateElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_set")
+  def parents(selector: "set"): JQuery[SVGSetElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_h2")
+  def parents(selector: "h2"): JQuery[HTMLHeadingElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_li")
+  def parents(selector: "li"): JQuery[HTMLLIElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_h6")
+  def parents(selector: "h6"): JQuery[HTMLHeadingElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_u")
+  def parents(selector: "u"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feFuncB")
+  def parents(selector: "feFuncB"): JQuery[SVGFEFuncBElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_clipPath")
+  def parents(selector: "clipPath"): JQuery[SVGClipPathElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_tspan")
+  def parents(selector: "tspan"): JQuery[SVGTSpanElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_dialog")
+  def parents(selector: "dialog"): JQuery[HTMLDialogElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_rt")
+  def parents(selector: "rt"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_col")
+  def parents(selector: "col"): JQuery[HTMLTableColElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_metadata")
+  def parents(selector: "metadata"): JQuery[SVGMetadataElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_aside")
+  def parents(selector: "aside"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_ul")
+  def parents(selector: "ul"): JQuery[HTMLUListElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_dt")
+  def parents(selector: "dt"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feGaussianBlur")
+  def parents(selector: "feGaussianBlur"): JQuery[SVGFEGaussianBlurElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_stop")
+  def parents(selector: "stop"): JQuery[SVGStopElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feDisplacementMap")
+  def parents(selector: "feDisplacementMap"): JQuery[SVGFEDisplacementMapElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_var")
+  def parents(selector: "var"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_table")
+  def parents(selector: "table"): JQuery[HTMLTableElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_switch")
+  def parents(selector: "switch"): JQuery[SVGSwitchElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_noscript")
+  def parents(selector: "noscript"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_animate")
+  def parents(selector: "animate"): JQuery[SVGAnimateElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_meta")
+  def parents(selector: "meta"): JQuery[HTMLMetaElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_kbd")
+  def parents(selector: "kbd"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feOffset")
+  def parents(selector: "feOffset"): JQuery[SVGFEOffsetElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_bdo")
+  def parents(selector: "bdo"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_div")
+  def parents(selector: "div"): JQuery[HTMLDivElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feDropShadow")
+  def parents(selector: "feDropShadow"): JQuery[SVGFEDropShadowElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_ruby")
+  def parents(selector: "ruby"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_canvas")
+  def parents(selector: "canvas"): JQuery[HTMLCanvasElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_fePointLight")
+  def parents(selector: "fePointLight"): JQuery[SVGFEPointLightElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_defs")
+  def parents(selector: "defs"): JQuery[SVGDefsElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_mask")
+  def parents(selector: "mask"): JQuery[SVGMaskElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_textarea")
+  def parents(selector: "textarea"): JQuery[HTMLTextAreaElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_tr")
+  def parents(selector: "tr"): JQuery[HTMLTableRowElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_b")
+  def parents(selector: "b"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_image")
+  def parents(selector: "image"): JQuery[SVGImageElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_blockquote")
+  def parents(selector: "blockquote"): JQuery[HTMLQuoteElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_head")
+  def parents(selector: "head"): JQuery[HTMLHeadElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_a")
+  def parents(selector: "a"): JQuery[HTMLAnchorElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_g")
+  def parents(selector: "g"): JQuery[SVGGElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_figcaption")
+  def parents(selector: "figcaption"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feFuncA")
+  def parents(selector: "feFuncA"): JQuery[SVGFEFuncAElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_map")
+  def parents(selector: "map"): JQuery[HTMLMapElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_h4")
+  def parents(selector: "h4"): JQuery[HTMLHeadingElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_cite")
+  def parents(selector: "cite"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_area")
+  def parents(selector: "area"): JQuery[HTMLAreaElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feSpecularLighting")
+  def parents(selector: "feSpecularLighting"): JQuery[SVGFESpecularLightingElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_wbr")
+  def parents(selector: "wbr"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_datalist")
+  def parents(selector: "datalist"): JQuery[HTMLDataListElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_code")
+  def parents(selector: "code"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_tbody")
+  def parents(selector: "tbody"): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_textPath")
+  def parents(selector: "textPath"): JQuery[SVGTextPathElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_base")
+  def parents(selector: "base"): JQuery[HTMLBaseElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feMergeNode")
+  def parents(selector: "feMergeNode"): JQuery[SVGFEMergeNodeElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_polygon")
+  def parents(selector: "polygon"): JQuery[SVGPolygonElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_title")
+  def parents(selector: "title"): JQuery[HTMLTitleElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_sub")
+  def parents(selector: "sub"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_rect")
+  def parents(selector: "rect"): JQuery[SVGRectElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_line")
+  def parents(selector: "line"): JQuery[SVGLineElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_colgroup")
+  def parents(selector: "colgroup"): JQuery[HTMLTableColElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feBlend")
+  def parents(selector: "feBlend"): JQuery[SVGFEBlendElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_em")
+  def parents(selector: "em"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feMorphology")
+  def parents(selector: "feMorphology"): JQuery[SVGFEMorphologyElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_foreignObject")
+  def parents(selector: "foreignObject"): JQuery[SVGForeignObjectElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_figure")
+  def parents(selector: "figure"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_summary")
+  def parents(selector: "summary"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_output")
+  def parents(selector: "output"): JQuery[HTMLOutputElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_desc")
+  def parents(selector: "desc"): JQuery[SVGDescElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_meter")
+  def parents(selector: "meter"): JQuery[HTMLMeterElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_bdi")
+  def parents(selector: "bdi"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_dd")
+  def parents(selector: "dd"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_i")
+  def parents(selector: "i"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_mpath")
+  def parents(selector: "mpath"): JQuery[SVGMPathElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_slot")
+  def parents(selector: "slot"): JQuery[HTMLSlotElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_body")
+  def parents(selector: "body"): JQuery[HTMLBodyElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_mark")
+  def parents(selector: "mark"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_del")
+  def parents(selector: "del"): JQuery[HTMLModElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feComposite")
+  def parents(selector: "feComposite"): JQuery[SVGFECompositeElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_rp")
+  def parents(selector: "rp"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_option")
+  def parents(selector: "option"): JQuery[HTMLOptionElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feTurbulence")
+  def parents(selector: "feTurbulence"): JQuery[SVGFETurbulenceElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_polyline")
+  def parents(selector: "polyline"): JQuery[SVGPolylineElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_html")
+  def parents(selector: "html"): JQuery[HTMLHtmlElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_svg")
+  def parents(selector: "svg"): JQuery[SVGSVGElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_thead")
+  def parents(selector: "thead"): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_small")
+  def parents(selector: "small"): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_audio")
+  def parents(selector: "audio"): JQuery[HTMLAudioElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feComponentTransfer")
+  def parents(selector: JQuery["feComponentTransfer"]): JQuery[SVGFEComponentTransferElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_blockquote")
+  def parents(selector: JQuery["blockquote"]): JQuery[HTMLQuoteElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_p")
+  def parents(selector: JQuery["p"]): JQuery[HTMLParagraphElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_filter")
+  def parents(selector: JQuery["filter"]): JQuery[SVGFilterElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_textPath")
+  def parents(selector: JQuery["textPath"]): JQuery[SVGTextPathElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_audio")
+  def parents(selector: JQuery["audio"]): JQuery[HTMLAudioElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_footer")
+  def parents(selector: JQuery["footer"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feFuncA")
+  def parents(selector: JQuery["feFuncA"]): JQuery[SVGFEFuncAElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_svg")
+  def parents(selector: JQuery["svg"]): JQuery[SVGSVGElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_meter")
+  def parents(selector: JQuery["meter"]): JQuery[HTMLMeterElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_select")
+  def parents(selector: JQuery["select"]): JQuery[HTMLSelectElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_mask")
+  def parents(selector: JQuery["mask"]): JQuery[SVGMaskElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_mpath")
+  def parents(selector: JQuery["mpath"]): JQuery[SVGMPathElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_polyline")
+  def parents(selector: JQuery["polyline"]): JQuery[SVGPolylineElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_set")
+  def parents(selector: JQuery["set"]): JQuery[SVGSetElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_base")
+  def parents(selector: JQuery["base"]): JQuery[HTMLBaseElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_title")
+  def parents(selector: JQuery["title"]): JQuery[HTMLTitleElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_html")
+  def parents(selector: JQuery["html"]): JQuery[HTMLHtmlElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_template")
+  def parents(selector: JQuery["template"]): JQuery[HTMLTemplateElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_span")
+  def parents(selector: JQuery["span"]): JQuery[HTMLSpanElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_metadata")
+  def parents(selector: JQuery["metadata"]): JQuery[SVGMetadataElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feTile")
+  def parents(selector: JQuery["feTile"]): JQuery[SVGFETileElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_var")
+  def parents(selector: JQuery["var"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_nav")
+  def parents(selector: JQuery["nav"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_meta")
+  def parents(selector: JQuery["meta"]): JQuery[HTMLMetaElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feDisplacementMap")
+  def parents(selector: JQuery["feDisplacementMap"]): JQuery[SVGFEDisplacementMapElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_details")
+  def parents(selector: JQuery["details"]): JQuery[HTMLDetailsElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_linearGradient")
+  def parents(selector: JQuery["linearGradient"]): JQuery[SVGLinearGradientElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_switch")
+  def parents(selector: JQuery["switch"]): JQuery[SVGSwitchElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feComposite")
+  def parents(selector: JQuery["feComposite"]): JQuery[SVGFECompositeElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_dialog")
+  def parents(selector: JQuery["dialog"]): JQuery[HTMLDialogElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_button")
+  def parents(selector: JQuery["button"]): JQuery[HTMLButtonElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_map")
+  def parents(selector: JQuery["map"]): JQuery[HTMLMapElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_code")
+  def parents(selector: JQuery["code"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_rp")
+  def parents(selector: JQuery["rp"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feGaussianBlur")
+  def parents(selector: JQuery["feGaussianBlur"]): JQuery[SVGFEGaussianBlurElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_clipPath")
+  def parents(selector: JQuery["clipPath"]): JQuery[SVGClipPathElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_ol")
+  def parents(selector: JQuery["ol"]): JQuery[HTMLOListElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_output")
+  def parents(selector: JQuery["output"]): JQuery[HTMLOutputElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_body")
+  def parents(selector: JQuery["body"]): JQuery[HTMLBodyElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_radialGradient")
+  def parents(selector: JQuery["radialGradient"]): JQuery[SVGRadialGradientElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feMorphology")
+  def parents(selector: JQuery["feMorphology"]): JQuery[SVGFEMorphologyElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_animateMotion")
+  def parents(selector: JQuery["animateMotion"]): JQuery[SVGAnimateMotionElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feSpotLight")
+  def parents(selector: JQuery["feSpotLight"]): JQuery[SVGFESpotLightElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_i")
+  def parents(selector: JQuery["i"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_view")
+  def parents(selector: JQuery["view"]): JQuery[SVGViewElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_track")
+  def parents(selector: JQuery["track"]): JQuery[HTMLTrackElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feColorMatrix")
+  def parents(selector: JQuery["feColorMatrix"]): JQuery[SVGFEColorMatrixElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feSpecularLighting")
+  def parents(selector: JQuery["feSpecularLighting"]): JQuery[SVGFESpecularLightingElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_picture")
+  def parents(selector: JQuery["picture"]): JQuery[HTMLPictureElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_video")
+  def parents(selector: JQuery["video"]): JQuery[HTMLVideoElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_animateTransform")
+  def parents(selector: JQuery["animateTransform"]): JQuery[SVGAnimateTransformElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_use")
+  def parents(selector: JQuery["use"]): JQuery[SVGUseElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feImage")
+  def parents(selector: JQuery["feImage"]): JQuery[SVGFEImageElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_header")
+  def parents(selector: JQuery["header"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feFlood")
+  def parents(selector: JQuery["feFlood"]): JQuery[SVGFEFloodElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_em")
+  def parents(selector: JQuery["em"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feFuncG")
+  def parents(selector: JQuery["feFuncG"]): JQuery[SVGFEFuncGElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_object")
+  def parents(selector: JQuery["object"]): JQuery[HTMLObjectElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_iframe")
+  def parents(selector: JQuery["iframe"]): JQuery[HTMLIFrameElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_u")
+  def parents(selector: JQuery["u"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_defs")
+  def parents(selector: JQuery["defs"]): JQuery[SVGDefsElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_br")
+  def parents(selector: JQuery["br"]): JQuery[HTMLBRElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_cite")
+  def parents(selector: JQuery["cite"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_desc")
+  def parents(selector: JQuery["desc"]): JQuery[SVGDescElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_style")
+  def parents(selector: JQuery["style"]): JQuery[HTMLStyleElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_text")
+  def parents(selector: JQuery["text"]): JQuery[SVGTextElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_source")
+  def parents(selector: JQuery["source"]): JQuery[HTMLSourceElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_ul")
+  def parents(selector: JQuery["ul"]): JQuery[HTMLUListElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_ruby")
+  def parents(selector: JQuery["ruby"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_s")
+  def parents(selector: JQuery["s"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feBlend")
+  def parents(selector: JQuery["feBlend"]): JQuery[SVGFEBlendElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_samp")
+  def parents(selector: JQuery["samp"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feFuncB")
+  def parents(selector: JQuery["feFuncB"]): JQuery[SVGFEFuncBElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_tfoot")
+  def parents(selector: JQuery["tfoot"]): JQuery[HTMLTableSectionElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_tr")
+  def parents(selector: JQuery["tr"]): JQuery[HTMLTableRowElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_h1")
+  def parents(selector: JQuery["h1"]): JQuery[HTMLHeadingElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_label")
+  def parents(selector: JQuery["label"]): JQuery[HTMLLabelElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_article")
+  def parents(selector: JQuery["article"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feOffset")
+  def parents(selector: JQuery["feOffset"]): JQuery[SVGFEOffsetElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_b")
+  def parents(selector: JQuery["b"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_sub")
+  def parents(selector: JQuery["sub"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_figure")
+  def parents(selector: JQuery["figure"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_datalist")
+  def parents(selector: JQuery["datalist"]): JQuery[HTMLDataListElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_dl")
+  def parents(selector: JQuery["dl"]): JQuery[HTMLDListElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_div")
+  def parents(selector: JQuery["div"]): JQuery[HTMLDivElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_line")
+  def parents(selector: JQuery["line"]): JQuery[SVGLineElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feDiffuseLighting")
+  def parents(selector: JQuery["feDiffuseLighting"]): JQuery[SVGFEDiffuseLightingElement] = js.native
   /**
     * Get the ancestors of each element in the current set of matched elements, optionally filtered by a selector.
     * @param selector A string containing a selector expression to match elements against.
@@ -10511,685 +11612,316 @@ trait JQuery[TElement]
   ```
     */
   @JSName("parents")
-  def parents_a(selector: JQuery[a]): JQuery[HTMLAnchorElement] = js.native
+  @scala.annotation.targetName("parents_a")
+  def parents(selector: JQuery["a"]): JQuery[HTMLAnchorElement] = js.native
   @JSName("parents")
-  def parents_a(selector: a): JQuery[HTMLAnchorElement] = js.native
+  @scala.annotation.targetName("parents_stop")
+  def parents(selector: JQuery["stop"]): JQuery[SVGStopElement] = js.native
   @JSName("parents")
-  def parents_abbr(selector: JQuery[abbr]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_form")
+  def parents(selector: JQuery["form"]): JQuery[HTMLFormElement] = js.native
   @JSName("parents")
-  def parents_abbr(selector: abbr): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_aside")
+  def parents(selector: JQuery["aside"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_address(selector: JQuery[address]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_time")
+  def parents(selector: JQuery["time"]): JQuery[HTMLTimeElement] = js.native
   @JSName("parents")
-  def parents_address(selector: address): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_abbr")
+  def parents(selector: JQuery["abbr"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_animate(selector: JQuery[animate]): JQuery[SVGAnimateElement] = js.native
+  @scala.annotation.targetName("parents_hr")
+  def parents(selector: JQuery["hr"]): JQuery[HTMLHRElement] = js.native
   @JSName("parents")
-  def parents_animate(selector: animate): JQuery[SVGAnimateElement] = js.native
+  @scala.annotation.targetName("parents_feFuncR")
+  def parents(selector: JQuery["feFuncR"]): JQuery[SVGFEFuncRElement] = js.native
   @JSName("parents")
-  def parents_animateMotion(selector: JQuery[animateMotion]): JQuery[SVGAnimateMotionElement] = js.native
+  @scala.annotation.targetName("parents_q")
+  def parents(selector: JQuery["q"]): JQuery[HTMLQuoteElement] = js.native
   @JSName("parents")
-  def parents_animateMotion(selector: animateMotion): JQuery[SVGAnimateMotionElement] = js.native
+  @scala.annotation.targetName("parents_h4")
+  def parents(selector: JQuery["h4"]): JQuery[HTMLHeadingElement] = js.native
   @JSName("parents")
-  def parents_animateTransform(selector: JQuery[animateTransform]): JQuery[SVGAnimateTransformElement] = js.native
+  @scala.annotation.targetName("parents_feTurbulence")
+  def parents(selector: JQuery["feTurbulence"]): JQuery[SVGFETurbulenceElement] = js.native
   @JSName("parents")
-  def parents_animateTransform(selector: animateTransform): JQuery[SVGAnimateTransformElement] = js.native
+  @scala.annotation.targetName("parents_dfn")
+  def parents(selector: JQuery["dfn"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_area(selector: JQuery[area]): JQuery[HTMLAreaElement] = js.native
+  @scala.annotation.targetName("parents_symbol")
+  def parents(selector: JQuery["symbol"]): JQuery[SVGSymbolElement] = js.native
   @JSName("parents")
-  def parents_area(selector: area): JQuery[HTMLAreaElement] = js.native
+  @scala.annotation.targetName("parents_pre")
+  def parents(selector: JQuery["pre"]): JQuery[HTMLPreElement] = js.native
   @JSName("parents")
-  def parents_article(selector: JQuery[article]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_optgroup")
+  def parents(selector: JQuery["optgroup"]): JQuery[HTMLOptGroupElement] = js.native
   @JSName("parents")
-  def parents_article(selector: article): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_kbd")
+  def parents(selector: JQuery["kbd"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_aside(selector: JQuery[aside]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_colgroup")
+  def parents(selector: JQuery["colgroup"]): JQuery[HTMLTableColElement] = js.native
   @JSName("parents")
-  def parents_aside(selector: aside): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_tbody")
+  def parents(selector: JQuery["tbody"]): JQuery[HTMLTableSectionElement] = js.native
   @JSName("parents")
-  def parents_audio(selector: JQuery[audio]): JQuery[HTMLAudioElement] = js.native
+  @scala.annotation.targetName("parents_rect")
+  def parents(selector: JQuery["rect"]): JQuery[SVGRectElement] = js.native
   @JSName("parents")
-  def parents_audio(selector: audio): JQuery[HTMLAudioElement] = js.native
+  @scala.annotation.targetName("parents_legend")
+  def parents(selector: JQuery["legend"]): JQuery[HTMLLegendElement] = js.native
   @JSName("parents")
-  def parents_b(selector: JQuery[b]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_img")
+  def parents(selector: JQuery["img"]): JQuery[HTMLImageElement] = js.native
   @JSName("parents")
-  def parents_b(selector: b): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_hgroup")
+  def parents(selector: JQuery["hgroup"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_base(selector: JQuery[base]): JQuery[HTMLBaseElement] = js.native
+  @scala.annotation.targetName("parents_bdi")
+  def parents(selector: JQuery["bdi"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_base(selector: base): JQuery[HTMLBaseElement] = js.native
+  @scala.annotation.targetName("parents_head")
+  def parents(selector: JQuery["head"]): JQuery[HTMLHeadElement] = js.native
   @JSName("parents")
-  def parents_bdi(selector: JQuery[bdi]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_progress")
+  def parents(selector: JQuery["progress"]): JQuery[HTMLProgressElement] = js.native
   @JSName("parents")
-  def parents_bdi(selector: bdi): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_menu")
+  def parents(selector: JQuery["menu"]): JQuery[HTMLMenuElement] = js.native
   @JSName("parents")
-  def parents_bdo(selector: JQuery[bdo]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_fePointLight")
+  def parents(selector: JQuery["fePointLight"]): JQuery[SVGFEPointLightElement] = js.native
   @JSName("parents")
-  def parents_bdo(selector: bdo): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_feDistantLight")
+  def parents(selector: JQuery["feDistantLight"]): JQuery[SVGFEDistantLightElement] = js.native
   @JSName("parents")
-  def parents_blockquote(selector: JQuery[blockquote]): JQuery[HTMLQuoteElement] = js.native
+  @scala.annotation.targetName("parents_marker")
+  def parents(selector: JQuery["marker"]): JQuery[SVGMarkerElement] = js.native
   @JSName("parents")
-  def parents_blockquote(selector: blockquote): JQuery[HTMLQuoteElement] = js.native
+  @scala.annotation.targetName("parents_circle")
+  def parents(selector: JQuery["circle"]): JQuery[SVGCircleElement] = js.native
   @JSName("parents")
-  def parents_body(selector: JQuery[body]): JQuery[HTMLBodyElement] = js.native
+  @scala.annotation.targetName("parents_wbr")
+  def parents(selector: JQuery["wbr"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_body(selector: body): JQuery[HTMLBodyElement] = js.native
+  @scala.annotation.targetName("parents_g")
+  def parents(selector: JQuery["g"]): JQuery[SVGGElement] = js.native
   @JSName("parents")
-  def parents_br(selector: JQuery[br]): JQuery[HTMLBRElement] = js.native
+  @scala.annotation.targetName("parents_main")
+  def parents(selector: JQuery["main"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_br(selector: br): JQuery[HTMLBRElement] = js.native
+  @scala.annotation.targetName("parents_feMergeNode")
+  def parents(selector: JQuery["feMergeNode"]): JQuery[SVGFEMergeNodeElement] = js.native
   @JSName("parents")
-  def parents_button(selector: JQuery[button]): JQuery[HTMLButtonElement] = js.native
+  @scala.annotation.targetName("parents_col")
+  def parents(selector: JQuery["col"]): JQuery[HTMLTableColElement] = js.native
   @JSName("parents")
-  def parents_button(selector: button): JQuery[HTMLButtonElement] = js.native
+  @scala.annotation.targetName("parents_td")
+  def parents(selector: JQuery["td"]): JQuery[HTMLTableCellElement] = js.native
   @JSName("parents")
-  def parents_canvas(selector: JQuery[canvas]): JQuery[HTMLCanvasElement] = js.native
+  @scala.annotation.targetName("parents_summary")
+  def parents(selector: JQuery["summary"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_canvas(selector: canvas): JQuery[HTMLCanvasElement] = js.native
+  @scala.annotation.targetName("parents_feDropShadow")
+  def parents(selector: JQuery["feDropShadow"]): JQuery[SVGFEDropShadowElement] = js.native
   @JSName("parents")
-  def parents_caption(selector: JQuery[caption]): JQuery[HTMLTableCaptionElement] = js.native
+  @scala.annotation.targetName("parents_ellipse")
+  def parents(selector: JQuery["ellipse"]): JQuery[SVGEllipseElement] = js.native
   @JSName("parents")
-  def parents_caption(selector: caption): JQuery[HTMLTableCaptionElement] = js.native
+  @scala.annotation.targetName("parents_link")
+  def parents(selector: JQuery["link"]): JQuery[HTMLLinkElement] = js.native
   @JSName("parents")
-  def parents_circle(selector: JQuery[circle]): JQuery[SVGCircleElement] = js.native
+  @scala.annotation.targetName("parents_area")
+  def parents(selector: JQuery["area"]): JQuery[HTMLAreaElement] = js.native
   @JSName("parents")
-  def parents_circle(selector: circle): JQuery[SVGCircleElement] = js.native
+  @scala.annotation.targetName("parents_li")
+  def parents(selector: JQuery["li"]): JQuery[HTMLLIElement] = js.native
   @JSName("parents")
-  def parents_cite(selector: JQuery[cite]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_embed")
+  def parents(selector: JQuery["embed"]): JQuery[HTMLEmbedElement] = js.native
   @JSName("parents")
-  def parents_cite(selector: cite): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_feConvolveMatrix")
+  def parents(selector: JQuery["feConvolveMatrix"]): JQuery[SVGFEConvolveMatrixElement] = js.native
   @JSName("parents")
-  def parents_clipPath(selector: JQuery[clipPath]): JQuery[SVGClipPathElement] = js.native
+  @scala.annotation.targetName("parents_ins")
+  def parents(selector: JQuery["ins"]): JQuery[HTMLModElement] = js.native
   @JSName("parents")
-  def parents_clipPath(selector: clipPath): JQuery[SVGClipPathElement] = js.native
+  @scala.annotation.targetName("parents_path")
+  def parents(selector: JQuery["path"]): JQuery[SVGPathElement] = js.native
   @JSName("parents")
-  def parents_code(selector: JQuery[code]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_pattern")
+  def parents(selector: JQuery["pattern"]): JQuery[SVGPatternElement] = js.native
   @JSName("parents")
-  def parents_code(selector: code): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_mark")
+  def parents(selector: JQuery["mark"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_col(selector: JQuery[col]): JQuery[HTMLTableColElement] = js.native
+  @scala.annotation.targetName("parents_option")
+  def parents(selector: JQuery["option"]): JQuery[HTMLOptionElement] = js.native
   @JSName("parents")
-  def parents_col(selector: col): JQuery[HTMLTableColElement] = js.native
+  @scala.annotation.targetName("parents_section")
+  def parents(selector: JQuery["section"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_colgroup(selector: JQuery[colgroup]): JQuery[HTMLTableColElement] = js.native
+  @scala.annotation.targetName("parents_figcaption")
+  def parents(selector: JQuery["figcaption"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_colgroup(selector: colgroup): JQuery[HTMLTableColElement] = js.native
+  @scala.annotation.targetName("parents_animate")
+  def parents(selector: JQuery["animate"]): JQuery[SVGAnimateElement] = js.native
   @JSName("parents")
-  def parents_data(selector: JQuery[data]): JQuery[HTMLDataElement] = js.native
+  @scala.annotation.targetName("parents_thead")
+  def parents(selector: JQuery["thead"]): JQuery[HTMLTableSectionElement] = js.native
   @JSName("parents")
-  def parents_data(selector: data): JQuery[HTMLDataElement] = js.native
+  @scala.annotation.targetName("parents_foreignObject")
+  def parents(selector: JQuery["foreignObject"]): JQuery[SVGForeignObjectElement] = js.native
   @JSName("parents")
-  def parents_datalist(selector: JQuery[datalist]): JQuery[HTMLDataListElement] = js.native
+  @scala.annotation.targetName("parents_polygon")
+  def parents(selector: JQuery["polygon"]): JQuery[SVGPolygonElement] = js.native
   @JSName("parents")
-  def parents_datalist(selector: datalist): JQuery[HTMLDataListElement] = js.native
+  @scala.annotation.targetName("parents_del")
+  def parents(selector: JQuery["del"]): JQuery[HTMLModElement] = js.native
   @JSName("parents")
-  def parents_dd(selector: JQuery[dd]): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_rt")
+  def parents(selector: JQuery["rt"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_dd(selector: dd): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_small")
+  def parents(selector: JQuery["small"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_defs(selector: JQuery[defs]): JQuery[SVGDefsElement] = js.native
+  @scala.annotation.targetName("parents_sup")
+  def parents(selector: JQuery["sup"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_defs(selector: defs): JQuery[SVGDefsElement] = js.native
+  @scala.annotation.targetName("parents_script")
+  def parents(selector: JQuery["script"]): JQuery[HTMLScriptElement] = js.native
   @JSName("parents")
-  def parents_del(selector: JQuery[del]): JQuery[HTMLModElement] = js.native
+  @scala.annotation.targetName("parents_caption")
+  def parents(selector: JQuery["caption"]): JQuery[HTMLTableCaptionElement] = js.native
   @JSName("parents")
-  def parents_del(selector: del): JQuery[HTMLModElement] = js.native
+  @scala.annotation.targetName("parents_data")
+  def parents(selector: JQuery["data"]): JQuery[HTMLDataElement] = js.native
   @JSName("parents")
-  def parents_desc(selector: JQuery[desc]): JQuery[SVGDescElement] = js.native
+  @scala.annotation.targetName("parents_canvas")
+  def parents(selector: JQuery["canvas"]): JQuery[HTMLCanvasElement] = js.native
   @JSName("parents")
-  def parents_desc(selector: desc): JQuery[SVGDescElement] = js.native
+  @scala.annotation.targetName("parents_strong")
+  def parents(selector: JQuery["strong"]): JQuery[HTMLElement] = js.native
   @JSName("parents")
-  def parents_details(selector: JQuery[details]): JQuery[HTMLDetailsElement] = js.native
-  @JSName("parents")
-  def parents_details(selector: details): JQuery[HTMLDetailsElement] = js.native
-  @JSName("parents")
-  def parents_dfn(selector: JQuery[dfn]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_dfn(selector: dfn): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_dialog(selector: JQuery[dialog]): JQuery[HTMLDialogElement] = js.native
-  @JSName("parents")
-  def parents_dialog(selector: dialog): JQuery[HTMLDialogElement] = js.native
-  @JSName("parents")
-  def parents_div(selector: JQuery[div]): JQuery[HTMLDivElement] = js.native
-  @JSName("parents")
-  def parents_div(selector: div): JQuery[HTMLDivElement] = js.native
-  @JSName("parents")
-  def parents_dl(selector: JQuery[dl]): JQuery[HTMLDListElement] = js.native
-  @JSName("parents")
-  def parents_dl(selector: dl): JQuery[HTMLDListElement] = js.native
-  @JSName("parents")
-  def parents_dt(selector: JQuery[dt]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_dt(selector: dt): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_ellipse(selector: JQuery[ellipse]): JQuery[SVGEllipseElement] = js.native
-  @JSName("parents")
-  def parents_ellipse(selector: ellipse): JQuery[SVGEllipseElement] = js.native
-  @JSName("parents")
-  def parents_em(selector: JQuery[em]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_em(selector: em): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_embed(selector: JQuery[embed]): JQuery[HTMLEmbedElement] = js.native
-  @JSName("parents")
-  def parents_embed(selector: embed): JQuery[HTMLEmbedElement] = js.native
-  @JSName("parents")
-  def parents_feBlend(selector: JQuery[feBlend]): JQuery[SVGFEBlendElement] = js.native
-  @JSName("parents")
-  def parents_feBlend(selector: feBlend): JQuery[SVGFEBlendElement] = js.native
-  @JSName("parents")
-  def parents_feColorMatrix(selector: JQuery[feColorMatrix]): JQuery[SVGFEColorMatrixElement] = js.native
-  @JSName("parents")
-  def parents_feColorMatrix(selector: feColorMatrix): JQuery[SVGFEColorMatrixElement] = js.native
-  @JSName("parents")
-  def parents_feComponentTransfer(selector: JQuery[feComponentTransfer]): JQuery[SVGFEComponentTransferElement] = js.native
-  @JSName("parents")
-  def parents_feComponentTransfer(selector: feComponentTransfer): JQuery[SVGFEComponentTransferElement] = js.native
-  @JSName("parents")
-  def parents_feComposite(selector: JQuery[feComposite]): JQuery[SVGFECompositeElement] = js.native
-  @JSName("parents")
-  def parents_feComposite(selector: feComposite): JQuery[SVGFECompositeElement] = js.native
-  @JSName("parents")
-  def parents_feConvolveMatrix(selector: JQuery[feConvolveMatrix]): JQuery[SVGFEConvolveMatrixElement] = js.native
-  @JSName("parents")
-  def parents_feConvolveMatrix(selector: feConvolveMatrix): JQuery[SVGFEConvolveMatrixElement] = js.native
-  @JSName("parents")
-  def parents_feDiffuseLighting(selector: JQuery[feDiffuseLighting]): JQuery[SVGFEDiffuseLightingElement] = js.native
-  @JSName("parents")
-  def parents_feDiffuseLighting(selector: feDiffuseLighting): JQuery[SVGFEDiffuseLightingElement] = js.native
-  @JSName("parents")
-  def parents_feDisplacementMap(selector: JQuery[feDisplacementMap]): JQuery[SVGFEDisplacementMapElement] = js.native
-  @JSName("parents")
-  def parents_feDisplacementMap(selector: feDisplacementMap): JQuery[SVGFEDisplacementMapElement] = js.native
-  @JSName("parents")
-  def parents_feDistantLight(selector: JQuery[feDistantLight]): JQuery[SVGFEDistantLightElement] = js.native
-  @JSName("parents")
-  def parents_feDistantLight(selector: feDistantLight): JQuery[SVGFEDistantLightElement] = js.native
-  @JSName("parents")
-  def parents_feDropShadow(selector: JQuery[feDropShadow]): JQuery[SVGFEDropShadowElement] = js.native
-  @JSName("parents")
-  def parents_feDropShadow(selector: feDropShadow): JQuery[SVGFEDropShadowElement] = js.native
-  @JSName("parents")
-  def parents_feFlood(selector: JQuery[feFlood]): JQuery[SVGFEFloodElement] = js.native
-  @JSName("parents")
-  def parents_feFlood(selector: feFlood): JQuery[SVGFEFloodElement] = js.native
-  @JSName("parents")
-  def parents_feFuncA(selector: JQuery[feFuncA]): JQuery[SVGFEFuncAElement] = js.native
-  @JSName("parents")
-  def parents_feFuncA(selector: feFuncA): JQuery[SVGFEFuncAElement] = js.native
-  @JSName("parents")
-  def parents_feFuncB(selector: JQuery[feFuncB]): JQuery[SVGFEFuncBElement] = js.native
-  @JSName("parents")
-  def parents_feFuncB(selector: feFuncB): JQuery[SVGFEFuncBElement] = js.native
-  @JSName("parents")
-  def parents_feFuncG(selector: JQuery[feFuncG]): JQuery[SVGFEFuncGElement] = js.native
-  @JSName("parents")
-  def parents_feFuncG(selector: feFuncG): JQuery[SVGFEFuncGElement] = js.native
-  @JSName("parents")
-  def parents_feFuncR(selector: JQuery[feFuncR]): JQuery[SVGFEFuncRElement] = js.native
-  @JSName("parents")
-  def parents_feFuncR(selector: feFuncR): JQuery[SVGFEFuncRElement] = js.native
-  @JSName("parents")
-  def parents_feGaussianBlur(selector: JQuery[feGaussianBlur]): JQuery[SVGFEGaussianBlurElement] = js.native
-  @JSName("parents")
-  def parents_feGaussianBlur(selector: feGaussianBlur): JQuery[SVGFEGaussianBlurElement] = js.native
-  @JSName("parents")
-  def parents_feImage(selector: JQuery[feImage]): JQuery[SVGFEImageElement] = js.native
-  @JSName("parents")
-  def parents_feImage(selector: feImage): JQuery[SVGFEImageElement] = js.native
-  @JSName("parents")
-  def parents_feMerge(selector: JQuery[feMerge]): JQuery[SVGFEMergeElement] = js.native
-  @JSName("parents")
-  def parents_feMerge(selector: feMerge): JQuery[SVGFEMergeElement] = js.native
-  @JSName("parents")
-  def parents_feMergeNode(selector: JQuery[feMergeNode]): JQuery[SVGFEMergeNodeElement] = js.native
-  @JSName("parents")
-  def parents_feMergeNode(selector: feMergeNode): JQuery[SVGFEMergeNodeElement] = js.native
-  @JSName("parents")
-  def parents_feMorphology(selector: JQuery[feMorphology]): JQuery[SVGFEMorphologyElement] = js.native
-  @JSName("parents")
-  def parents_feMorphology(selector: feMorphology): JQuery[SVGFEMorphologyElement] = js.native
-  @JSName("parents")
-  def parents_feOffset(selector: JQuery[feOffset]): JQuery[SVGFEOffsetElement] = js.native
-  @JSName("parents")
-  def parents_feOffset(selector: feOffset): JQuery[SVGFEOffsetElement] = js.native
-  @JSName("parents")
-  def parents_fePointLight(selector: JQuery[fePointLight]): JQuery[SVGFEPointLightElement] = js.native
-  @JSName("parents")
-  def parents_fePointLight(selector: fePointLight): JQuery[SVGFEPointLightElement] = js.native
-  @JSName("parents")
-  def parents_feSpecularLighting(selector: JQuery[feSpecularLighting]): JQuery[SVGFESpecularLightingElement] = js.native
-  @JSName("parents")
-  def parents_feSpecularLighting(selector: feSpecularLighting): JQuery[SVGFESpecularLightingElement] = js.native
-  @JSName("parents")
-  def parents_feSpotLight(selector: JQuery[feSpotLight]): JQuery[SVGFESpotLightElement] = js.native
-  @JSName("parents")
-  def parents_feSpotLight(selector: feSpotLight): JQuery[SVGFESpotLightElement] = js.native
-  @JSName("parents")
-  def parents_feTile(selector: JQuery[feTile]): JQuery[SVGFETileElement] = js.native
-  @JSName("parents")
-  def parents_feTile(selector: feTile): JQuery[SVGFETileElement] = js.native
-  @JSName("parents")
-  def parents_feTurbulence(selector: JQuery[feTurbulence]): JQuery[SVGFETurbulenceElement] = js.native
-  @JSName("parents")
-  def parents_feTurbulence(selector: feTurbulence): JQuery[SVGFETurbulenceElement] = js.native
-  @JSName("parents")
-  def parents_fieldset(selector: JQuery[fieldset]): JQuery[HTMLFieldSetElement] = js.native
-  @JSName("parents")
-  def parents_fieldset(selector: fieldset): JQuery[HTMLFieldSetElement] = js.native
-  @JSName("parents")
-  def parents_figcaption(selector: JQuery[figcaption]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_figcaption(selector: figcaption): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_figure(selector: JQuery[figure]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_figure(selector: figure): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_filter(selector: JQuery[filter]): JQuery[SVGFilterElement] = js.native
-  @JSName("parents")
-  def parents_filter(selector: filter): JQuery[SVGFilterElement] = js.native
-  @JSName("parents")
-  def parents_footer(selector: JQuery[footer]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_footer(selector: footer): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_foreignObject(selector: JQuery[foreignObject]): JQuery[SVGForeignObjectElement] = js.native
-  @JSName("parents")
-  def parents_foreignObject(selector: foreignObject): JQuery[SVGForeignObjectElement] = js.native
-  @JSName("parents")
-  def parents_form(selector: JQuery[form]): JQuery[HTMLFormElement] = js.native
-  @JSName("parents")
-  def parents_form(selector: form): JQuery[HTMLFormElement] = js.native
-  @JSName("parents")
-  def parents_g(selector: JQuery[g]): JQuery[SVGGElement] = js.native
-  @JSName("parents")
-  def parents_g(selector: g): JQuery[SVGGElement] = js.native
-  @JSName("parents")
-  def parents_h1(selector: JQuery[h1]): JQuery[HTMLHeadingElement] = js.native
-  @JSName("parents")
-  def parents_h1(selector: h1): JQuery[HTMLHeadingElement] = js.native
-  @JSName("parents")
-  def parents_h2(selector: JQuery[h2]): JQuery[HTMLHeadingElement] = js.native
-  @JSName("parents")
-  def parents_h2(selector: h2): JQuery[HTMLHeadingElement] = js.native
-  @JSName("parents")
-  def parents_h3(selector: JQuery[h3]): JQuery[HTMLHeadingElement] = js.native
-  @JSName("parents")
-  def parents_h3(selector: h3): JQuery[HTMLHeadingElement] = js.native
-  @JSName("parents")
-  def parents_h4(selector: JQuery[h4]): JQuery[HTMLHeadingElement] = js.native
-  @JSName("parents")
-  def parents_h4(selector: h4): JQuery[HTMLHeadingElement] = js.native
-  @JSName("parents")
-  def parents_h5(selector: JQuery[h5]): JQuery[HTMLHeadingElement] = js.native
-  @JSName("parents")
-  def parents_h5(selector: h5): JQuery[HTMLHeadingElement] = js.native
-  @JSName("parents")
-  def parents_h6(selector: JQuery[h6]): JQuery[HTMLHeadingElement] = js.native
-  @JSName("parents")
-  def parents_h6(selector: h6): JQuery[HTMLHeadingElement] = js.native
-  @JSName("parents")
-  def parents_head(selector: JQuery[head]): JQuery[HTMLHeadElement] = js.native
-  @JSName("parents")
-  def parents_head(selector: head): JQuery[HTMLHeadElement] = js.native
-  @JSName("parents")
-  def parents_header(selector: JQuery[header]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_header(selector: header): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_hgroup(selector: JQuery[hgroup]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_hgroup(selector: hgroup): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_hr(selector: JQuery[hr]): JQuery[HTMLHRElement] = js.native
-  @JSName("parents")
-  def parents_hr(selector: hr): JQuery[HTMLHRElement] = js.native
-  @JSName("parents")
-  def parents_html(selector: JQuery[html]): JQuery[HTMLHtmlElement] = js.native
-  @JSName("parents")
-  def parents_html(selector: html): JQuery[HTMLHtmlElement] = js.native
-  @JSName("parents")
-  def parents_i(selector: JQuery[i]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_i(selector: i): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_iframe(selector: JQuery[iframe]): JQuery[HTMLIFrameElement] = js.native
-  @JSName("parents")
-  def parents_iframe(selector: iframe): JQuery[HTMLIFrameElement] = js.native
-  @JSName("parents")
-  def parents_image(selector: JQuery[image]): JQuery[SVGImageElement] = js.native
-  @JSName("parents")
-  def parents_image(selector: image): JQuery[SVGImageElement] = js.native
-  @JSName("parents")
-  def parents_img(selector: JQuery[img]): JQuery[HTMLImageElement] = js.native
-  @JSName("parents")
-  def parents_img(selector: img): JQuery[HTMLImageElement] = js.native
-  @JSName("parents")
-  def parents_input(selector: JQuery[input]): JQuery[HTMLInputElement] = js.native
-  @JSName("parents")
-  def parents_input(selector: input): JQuery[HTMLInputElement] = js.native
-  @JSName("parents")
-  def parents_ins(selector: JQuery[ins]): JQuery[HTMLModElement] = js.native
-  @JSName("parents")
-  def parents_ins(selector: ins): JQuery[HTMLModElement] = js.native
-  @JSName("parents")
-  def parents_kbd(selector: JQuery[kbd]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_kbd(selector: kbd): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_label(selector: JQuery[label]): JQuery[HTMLLabelElement] = js.native
-  @JSName("parents")
-  def parents_label(selector: label): JQuery[HTMLLabelElement] = js.native
-  @JSName("parents")
-  def parents_legend(selector: JQuery[legend]): JQuery[HTMLLegendElement] = js.native
-  @JSName("parents")
-  def parents_legend(selector: legend): JQuery[HTMLLegendElement] = js.native
-  @JSName("parents")
-  def parents_li(selector: JQuery[li]): JQuery[HTMLLIElement] = js.native
-  @JSName("parents")
-  def parents_li(selector: li): JQuery[HTMLLIElement] = js.native
-  @JSName("parents")
-  def parents_line(selector: JQuery[line]): JQuery[SVGLineElement] = js.native
-  @JSName("parents")
-  def parents_line(selector: line): JQuery[SVGLineElement] = js.native
-  @JSName("parents")
-  def parents_linearGradient(selector: JQuery[linearGradient]): JQuery[SVGLinearGradientElement] = js.native
-  @JSName("parents")
-  def parents_linearGradient(selector: linearGradient): JQuery[SVGLinearGradientElement] = js.native
-  @JSName("parents")
-  def parents_link(selector: JQuery[link]): JQuery[HTMLLinkElement] = js.native
-  @JSName("parents")
-  def parents_link(selector: link): JQuery[HTMLLinkElement] = js.native
-  @JSName("parents")
-  def parents_main(selector: JQuery[main]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_main(selector: main): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_map(selector: JQuery[map]): JQuery[HTMLMapElement] = js.native
-  @JSName("parents")
-  def parents_map(selector: map): JQuery[HTMLMapElement] = js.native
-  @JSName("parents")
-  def parents_mark(selector: JQuery[mark]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_mark(selector: mark): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_marker(selector: JQuery[marker]): JQuery[SVGMarkerElement] = js.native
-  @JSName("parents")
-  def parents_marker(selector: marker): JQuery[SVGMarkerElement] = js.native
-  @JSName("parents")
-  def parents_mask(selector: JQuery[mask]): JQuery[SVGMaskElement] = js.native
-  @JSName("parents")
-  def parents_mask(selector: mask): JQuery[SVGMaskElement] = js.native
-  @JSName("parents")
-  def parents_menu(selector: JQuery[menu]): JQuery[HTMLMenuElement] = js.native
-  @JSName("parents")
-  def parents_menu(selector: menu): JQuery[HTMLMenuElement] = js.native
-  @JSName("parents")
-  def parents_meta(selector: JQuery[meta]): JQuery[HTMLMetaElement] = js.native
-  @JSName("parents")
-  def parents_meta(selector: meta): JQuery[HTMLMetaElement] = js.native
-  @JSName("parents")
-  def parents_metadata(selector: JQuery[metadata]): JQuery[SVGMetadataElement] = js.native
-  @JSName("parents")
-  def parents_metadata(selector: metadata): JQuery[SVGMetadataElement] = js.native
-  @JSName("parents")
-  def parents_meter(selector: JQuery[meter]): JQuery[HTMLMeterElement] = js.native
-  @JSName("parents")
-  def parents_meter(selector: meter): JQuery[HTMLMeterElement] = js.native
-  @JSName("parents")
-  def parents_mpath(selector: JQuery[mpath]): JQuery[SVGMPathElement] = js.native
-  @JSName("parents")
-  def parents_mpath(selector: mpath): JQuery[SVGMPathElement] = js.native
-  @JSName("parents")
-  def parents_nav(selector: JQuery[nav]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_nav(selector: nav): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_noscript(selector: JQuery[noscript]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_noscript(selector: noscript): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_object(selector: JQuery[`object`]): JQuery[HTMLObjectElement] = js.native
-  @JSName("parents")
-  def parents_object(selector: `object`): JQuery[HTMLObjectElement] = js.native
-  @JSName("parents")
-  def parents_ol(selector: JQuery[ol]): JQuery[HTMLOListElement] = js.native
-  @JSName("parents")
-  def parents_ol(selector: ol): JQuery[HTMLOListElement] = js.native
-  @JSName("parents")
-  def parents_optgroup(selector: JQuery[optgroup]): JQuery[HTMLOptGroupElement] = js.native
-  @JSName("parents")
-  def parents_optgroup(selector: optgroup): JQuery[HTMLOptGroupElement] = js.native
-  @JSName("parents")
-  def parents_option(selector: JQuery[option]): JQuery[HTMLOptionElement] = js.native
-  @JSName("parents")
-  def parents_option(selector: option): JQuery[HTMLOptionElement] = js.native
-  @JSName("parents")
-  def parents_output(selector: JQuery[output]): JQuery[HTMLOutputElement] = js.native
-  @JSName("parents")
-  def parents_output(selector: output): JQuery[HTMLOutputElement] = js.native
-  @JSName("parents")
-  def parents_p(selector: JQuery[p]): JQuery[HTMLParagraphElement] = js.native
-  @JSName("parents")
-  def parents_p(selector: p): JQuery[HTMLParagraphElement] = js.native
-  @JSName("parents")
-  def parents_path(selector: JQuery[path]): JQuery[SVGPathElement] = js.native
-  @JSName("parents")
-  def parents_path(selector: path): JQuery[SVGPathElement] = js.native
-  @JSName("parents")
-  def parents_pattern(selector: JQuery[pattern]): JQuery[SVGPatternElement] = js.native
-  @JSName("parents")
-  def parents_pattern(selector: pattern): JQuery[SVGPatternElement] = js.native
-  @JSName("parents")
-  def parents_picture(selector: JQuery[picture]): JQuery[HTMLPictureElement] = js.native
-  @JSName("parents")
-  def parents_picture(selector: picture): JQuery[HTMLPictureElement] = js.native
-  @JSName("parents")
-  def parents_polygon(selector: JQuery[polygon]): JQuery[SVGPolygonElement] = js.native
-  @JSName("parents")
-  def parents_polygon(selector: polygon): JQuery[SVGPolygonElement] = js.native
-  @JSName("parents")
-  def parents_polyline(selector: JQuery[polyline]): JQuery[SVGPolylineElement] = js.native
-  @JSName("parents")
-  def parents_polyline(selector: polyline): JQuery[SVGPolylineElement] = js.native
-  @JSName("parents")
-  def parents_pre(selector: JQuery[pre]): JQuery[HTMLPreElement] = js.native
-  @JSName("parents")
-  def parents_pre(selector: pre): JQuery[HTMLPreElement] = js.native
-  @JSName("parents")
-  def parents_progress(selector: JQuery[progress]): JQuery[HTMLProgressElement] = js.native
-  @JSName("parents")
-  def parents_progress(selector: progress): JQuery[HTMLProgressElement] = js.native
-  @JSName("parents")
-  def parents_q(selector: JQuery[q]): JQuery[HTMLQuoteElement] = js.native
-  @JSName("parents")
-  def parents_q(selector: q): JQuery[HTMLQuoteElement] = js.native
-  @JSName("parents")
-  def parents_radialGradient(selector: JQuery[radialGradient]): JQuery[SVGRadialGradientElement] = js.native
-  @JSName("parents")
-  def parents_radialGradient(selector: radialGradient): JQuery[SVGRadialGradientElement] = js.native
-  @JSName("parents")
-  def parents_rect(selector: JQuery[rect]): JQuery[SVGRectElement] = js.native
-  @JSName("parents")
-  def parents_rect(selector: rect): JQuery[SVGRectElement] = js.native
-  @JSName("parents")
-  def parents_rp(selector: JQuery[rp]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_rp(selector: rp): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_rt(selector: JQuery[rt]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_rt(selector: rt): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_ruby(selector: JQuery[ruby]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_ruby(selector: ruby): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_s(selector: JQuery[s]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_s(selector: s): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_samp(selector: JQuery[samp]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_samp(selector: samp): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_script(selector: JQuery[script]): JQuery[HTMLScriptElement] = js.native
-  @JSName("parents")
-  def parents_script(selector: script): JQuery[HTMLScriptElement] = js.native
-  @JSName("parents")
-  def parents_section(selector: JQuery[section]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_section(selector: section): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_select(selector: JQuery[select]): JQuery[HTMLSelectElement] = js.native
-  @JSName("parents")
-  def parents_select(selector: select): JQuery[HTMLSelectElement] = js.native
-  @JSName("parents")
-  def parents_set(selector: JQuery[set]): JQuery[SVGSetElement] = js.native
-  @JSName("parents")
-  def parents_set(selector: set): JQuery[SVGSetElement] = js.native
-  @JSName("parents")
-  def parents_slot(selector: JQuery[slot]): JQuery[HTMLSlotElement] = js.native
-  @JSName("parents")
-  def parents_slot(selector: slot): JQuery[HTMLSlotElement] = js.native
-  @JSName("parents")
-  def parents_small(selector: JQuery[small]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_small(selector: small): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_source(selector: JQuery[source]): JQuery[HTMLSourceElement] = js.native
-  @JSName("parents")
-  def parents_source(selector: source): JQuery[HTMLSourceElement] = js.native
-  @JSName("parents")
-  def parents_span(selector: JQuery[span]): JQuery[HTMLSpanElement] = js.native
-  @JSName("parents")
-  def parents_span(selector: span): JQuery[HTMLSpanElement] = js.native
-  @JSName("parents")
-  def parents_stop(selector: JQuery[stop]): JQuery[SVGStopElement] = js.native
-  @JSName("parents")
-  def parents_stop(selector: stop): JQuery[SVGStopElement] = js.native
-  @JSName("parents")
-  def parents_strong(selector: JQuery[strong]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_strong(selector: strong): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_style(selector: JQuery[style]): JQuery[HTMLStyleElement] = js.native
-  @JSName("parents")
-  def parents_style(selector: style): JQuery[HTMLStyleElement] = js.native
-  @JSName("parents")
-  def parents_sub(selector: JQuery[sub]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_sub(selector: sub): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_summary(selector: JQuery[summary]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_summary(selector: summary): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_sup(selector: JQuery[sup]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_sup(selector: sup): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_svg(selector: JQuery[svg]): JQuery[SVGSVGElement] = js.native
-  @JSName("parents")
-  def parents_svg(selector: svg): JQuery[SVGSVGElement] = js.native
-  @JSName("parents")
-  def parents_switch(selector: JQuery[switch]): JQuery[SVGSwitchElement] = js.native
-  @JSName("parents")
-  def parents_switch(selector: switch): JQuery[SVGSwitchElement] = js.native
-  @JSName("parents")
-  def parents_symbol(selector: JQuery[symbol]): JQuery[SVGSymbolElement] = js.native
-  @JSName("parents")
-  def parents_symbol(selector: symbol): JQuery[SVGSymbolElement] = js.native
-  @JSName("parents")
-  def parents_table(selector: JQuery[table]): JQuery[HTMLTableElement] = js.native
-  @JSName("parents")
-  def parents_table(selector: table): JQuery[HTMLTableElement] = js.native
-  @JSName("parents")
-  def parents_tbody(selector: JQuery[tbody]): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("parents")
-  def parents_tbody(selector: tbody): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("parents")
-  def parents_td(selector: JQuery[td]): JQuery[HTMLTableCellElement] = js.native
-  @JSName("parents")
-  def parents_td(selector: td): JQuery[HTMLTableCellElement] = js.native
-  @JSName("parents")
-  def parents_template(selector: JQuery[template]): JQuery[HTMLTemplateElement] = js.native
-  @JSName("parents")
-  def parents_template(selector: template): JQuery[HTMLTemplateElement] = js.native
-  @JSName("parents")
-  def parents_text(selector: JQuery[text]): JQuery[SVGTextElement] = js.native
-  @JSName("parents")
-  def parents_text(selector: text): JQuery[SVGTextElement] = js.native
-  @JSName("parents")
-  def parents_textPath(selector: JQuery[textPath]): JQuery[SVGTextPathElement] = js.native
-  @JSName("parents")
-  def parents_textPath(selector: textPath): JQuery[SVGTextPathElement] = js.native
-  @JSName("parents")
-  def parents_textarea(selector: JQuery[textarea]): JQuery[HTMLTextAreaElement] = js.native
-  @JSName("parents")
-  def parents_textarea(selector: textarea): JQuery[HTMLTextAreaElement] = js.native
-  @JSName("parents")
-  def parents_tfoot(selector: JQuery[tfoot]): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("parents")
-  def parents_tfoot(selector: tfoot): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("parents")
-  def parents_th(selector: JQuery[th]): JQuery[HTMLTableCellElement] = js.native
-  @JSName("parents")
-  def parents_th(selector: th): JQuery[HTMLTableCellElement] = js.native
-  @JSName("parents")
-  def parents_thead(selector: JQuery[thead]): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("parents")
-  def parents_thead(selector: thead): JQuery[HTMLTableSectionElement] = js.native
-  @JSName("parents")
-  def parents_time(selector: JQuery[time]): JQuery[HTMLTimeElement] = js.native
-  @JSName("parents")
-  def parents_time(selector: time): JQuery[HTMLTimeElement] = js.native
-  @JSName("parents")
-  def parents_title(selector: JQuery[title]): JQuery[HTMLTitleElement] = js.native
-  @JSName("parents")
-  def parents_title(selector: title): JQuery[HTMLTitleElement] = js.native
-  @JSName("parents")
-  def parents_tr(selector: JQuery[tr]): JQuery[HTMLTableRowElement] = js.native
-  @JSName("parents")
-  def parents_tr(selector: tr): JQuery[HTMLTableRowElement] = js.native
-  @JSName("parents")
-  def parents_track(selector: JQuery[track]): JQuery[HTMLTrackElement] = js.native
-  @JSName("parents")
-  def parents_track(selector: track): JQuery[HTMLTrackElement] = js.native
-  @JSName("parents")
-  def parents_tspan(selector: JQuery[tspan]): JQuery[SVGTSpanElement] = js.native
-  @JSName("parents")
-  def parents_tspan(selector: tspan): JQuery[SVGTSpanElement] = js.native
-  @JSName("parents")
-  def parents_u(selector: JQuery[u]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_u(selector: u): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_ul(selector: JQuery[ul]): JQuery[HTMLUListElement] = js.native
-  @JSName("parents")
-  def parents_ul(selector: ul): JQuery[HTMLUListElement] = js.native
-  @JSName("parents")
-  def parents_use(selector: JQuery[use]): JQuery[SVGUseElement] = js.native
-  @JSName("parents")
-  def parents_use(selector: use): JQuery[SVGUseElement] = js.native
-  @JSName("parents")
-  def parents_var(selector: JQuery[`var`]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_var(selector: `var`): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_video(selector: JQuery[video]): JQuery[HTMLVideoElement] = js.native
-  @JSName("parents")
-  def parents_video(selector: video): JQuery[HTMLVideoElement] = js.native
-  @JSName("parents")
-  def parents_view(selector: JQuery[view]): JQuery[SVGViewElement] = js.native
-  @JSName("parents")
-  def parents_view(selector: view): JQuery[SVGViewElement] = js.native
-  @JSName("parents")
-  def parents_wbr(selector: JQuery[wbr]): JQuery[HTMLElement] = js.native
-  @JSName("parents")
-  def parents_wbr(selector: wbr): JQuery[HTMLElement] = js.native
+  @scala.annotation.targetName("parents_table")
+  def parents(selector: JQuery["table"]): JQuery[HTMLTableElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_address")
+  def parents(selector: JQuery["address"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_noscript")
+  def parents(selector: JQuery["noscript"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_textarea")
+  def parents(selector: JQuery["textarea"]): JQuery[HTMLTextAreaElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_tspan")
+  def parents(selector: JQuery["tspan"]): JQuery[SVGTSpanElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_bdo")
+  def parents(selector: JQuery["bdo"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_feMerge")
+  def parents(selector: JQuery["feMerge"]): JQuery[SVGFEMergeElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_slot")
+  def parents(selector: JQuery["slot"]): JQuery[HTMLSlotElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_th")
+  def parents(selector: JQuery["th"]): JQuery[HTMLTableCellElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_h2")
+  def parents(selector: JQuery["h2"]): JQuery[HTMLHeadingElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_h5")
+  def parents(selector: JQuery["h5"]): JQuery[HTMLHeadingElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_h6")
+  def parents(selector: JQuery["h6"]): JQuery[HTMLHeadingElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_fieldset")
+  def parents(selector: JQuery["fieldset"]): JQuery[HTMLFieldSetElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_dd")
+  def parents(selector: JQuery["dd"]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_h3")
+  def parents(selector: JQuery["h3"]): JQuery[HTMLHeadingElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_input")
+  def parents(selector: JQuery["input"]): JQuery[HTMLInputElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_image")
+  def parents(selector: JQuery["image"]): JQuery[SVGImageElement] = js.native
+  @JSName("parents")
+  @scala.annotation.targetName("parents_dt")
+  def parents(selector: JQuery["dt"]): JQuery[HTMLElement] = js.native
+  // tslint:disable-next-line:no-unnecessary-generics
+  def parents[E /* <: HTMLElement */](): JQuery[E] = js.native
+  def parents[E /* <: HTMLElement */](selector: Selector): JQuery[E] = js.native
+  
+  /**
+    * Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM node, or jQuery object.
+    * @param selector_element _&#x40;param_ `selector_element`
+    * <br>
+    * * `selector` — A string containing a selector expression to indicate where to stop matching ancestor elements. <br>
+    * * `element` — A DOM node or jQuery object indicating where to stop matching ancestor elements.
+    * @param filter A string containing a selector expression to match elements against.
+    * @see \`{@link https://api.jquery.com/parentsUntil/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @example ​ ````Find the ancestors of &lt;li class=&quot;item-a&quot;&gt; up to &lt;ul class=&quot;level-1&quot;&gt; and give them a red background color. Also, find ancestors of &lt;li class=&quot;item-2&quot;&gt; that have a class of &quot;yes&quot; up to &lt;ul class=&quot;level-1&quot;&gt; and give them a green border.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>parentsUntil demo</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <ul class="level-1 yes">
+    <li class="item-i">I</li>
+    <li class="item-ii">II
+    <ul class="level-2 yes">
+    <li class="item-a">A</li>
+    <li class="item-b">B
+    <ul class="level-3">
+    <li class="item-1">1</li>
+    <li class="item-2">2</li>
+    <li class="item-3">3</li>
+    </ul>
+    </li>
+    <li class="item-c">C</li>
+    </ul>
+    </li>
+    <li class="item-iii">III</li>
+  </ul>
+  ​
+  <script>
+  $( "li.item-a" )
+    .parentsUntil( ".level-1" )
+    .css( "background-color", "red" );
+  ​
+  $( "li.item-2" )
+    .parentsUntil( $( "ul.level-1" ), ".yes" )
+    .css( "border", "3px solid green" );
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+    */
+  def parentsUntil(): this.type = js.native
+  def parentsUntil(selector_element: Unit, filter: Selector): this.type = js.native
+  def parentsUntil(selector_element: JQuery[HTMLElement]): this.type = js.native
+  def parentsUntil(selector_element: Selector): this.type = js.native
+  def parentsUntil(selector_element: Selector, filter: Selector): this.type = js.native
+  def parentsUntil(selector_element: JQuery[HTMLElement], filter: Selector): this.type = js.native
+  def parentsUntil(selector_element: Element): this.type = js.native
+  def parentsUntil(selector_element: Element, filter: Selector): this.type = js.native
   
   /**
     * Get the current coordinates of the first element in the set of matched elements, relative to the offset parent.
@@ -12591,9 +13323,11 @@ trait JQuery[TElement]
     */
   def resize(): this.type = js.native
   @JSName("resize")
-  def resize_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("resize_false")
+  def resize(handler: false): this.type = js.native
   @JSName("resize")
-  def resize_resize(handler: TypeEventHandler[TElement, Null, TElement, TElement, resize]): this.type = js.native
+  @scala.annotation.targetName("resize_resize")
+  def resize(handler: TypeEventHandler[TElement, Null, TElement, TElement, "resize"]): this.type = js.native
   /**
     * Bind an event handler to the "resize" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -12607,7 +13341,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("resize")
-  def resize_resize[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, resize]): this.type = js.native
+  @scala.annotation.targetName("resize_resize")
+  def resize[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "resize"]): this.type = js.native
   
   /**
     * Bind an event handler to the "scroll" JavaScript event, or trigger that event on an element.
@@ -12659,6 +13394,27 @@ trait JQuery[TElement]
   ```
     */
   def scroll(): this.type = js.native
+  @JSName("scroll")
+  @scala.annotation.targetName("scroll_false")
+  def scroll(handler: false): this.type = js.native
+  @JSName("scroll")
+  @scala.annotation.targetName("scroll_scroll")
+  def scroll(handler: TypeEventHandler[TElement, Null, TElement, TElement, "scroll"]): this.type = js.native
+  /**
+    * Bind an event handler to the "scroll" JavaScript event, or trigger that event on an element.
+    * @param eventData An object containing data that will be passed to the event handler.
+    * @param handler A function to execute each time the event is triggered.
+    * @see \`{@link https://api.jquery.com/scroll/ }\`
+    * @since 1.4.3
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link on }\` or \`{@link trigger }\`.
+    *
+    * **Cause**: The `.on()` and `.trigger()` methods can set an event handler or generate an event for any event type, and should be used instead of the shortcut methods. This message also applies to the other event shorthands, including: blur, focus, focusin, focusout, resize, scroll, dblclick, mousedown, mouseup, mousemove, mouseover, mouseout, mouseenter, mouseleave, change, select, submit, keydown, keypress, keyup, and contextmenu.
+    *
+    * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
+    */
+  @JSName("scroll")
+  @scala.annotation.targetName("scroll_scroll")
+  def scroll[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "scroll"]): this.type = js.native
   
   /**
     * Get the current horizontal position of the scroll bar for the first element in the set of matched elements.
@@ -12822,25 +13578,6 @@ trait JQuery[TElement]
     */
   def scrollTop(value: Double): this.type = js.native
   
-  @JSName("scroll")
-  def scroll_false(handler: `false`): this.type = js.native
-  @JSName("scroll")
-  def scroll_scroll(handler: TypeEventHandler[TElement, Null, TElement, TElement, scroll]): this.type = js.native
-  /**
-    * Bind an event handler to the "scroll" JavaScript event, or trigger that event on an element.
-    * @param eventData An object containing data that will be passed to the event handler.
-    * @param handler A function to execute each time the event is triggered.
-    * @see \`{@link https://api.jquery.com/scroll/ }\`
-    * @since 1.4.3
-    * @deprecated ​ Deprecated since 3.3. Use \`{@link on }\` or \`{@link trigger }\`.
-    *
-    * **Cause**: The `.on()` and `.trigger()` methods can set an event handler or generate an event for any event type, and should be used instead of the shortcut methods. This message also applies to the other event shorthands, including: blur, focus, focusin, focusout, resize, scroll, dblclick, mousedown, mouseup, mousemove, mouseover, mouseout, mouseenter, mouseleave, change, select, submit, keydown, keypress, keyup, and contextmenu.
-    *
-    * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
-    */
-  @JSName("scroll")
-  def scroll_scroll[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, scroll]): this.type = js.native
-  
   /**
     * Bind an event handler to the "select" JavaScript event, or trigger that event on an element.
     * @param handler A function to execute each time the event is triggered.
@@ -12891,9 +13628,11 @@ trait JQuery[TElement]
     */
   def select(): this.type = js.native
   @JSName("select")
-  def select_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("select_false")
+  def select(handler: false): this.type = js.native
   @JSName("select")
-  def select_select(handler: TypeEventHandler[TElement, Null, TElement, TElement, select]): this.type = js.native
+  @scala.annotation.targetName("select_select")
+  def select(handler: TypeEventHandler[TElement, Null, TElement, TElement, "select"]): this.type = js.native
   /**
     * Bind an event handler to the "select" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -12907,7 +13646,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("select")
-  def select_select[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, select]): this.type = js.native
+  @scala.annotation.targetName("select_select")
+  def select[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "select"]): this.type = js.native
   
   /**
     * Encode a set of form elements as a string for submission.
@@ -13975,9 +14715,11 @@ trait JQuery[TElement]
     */
   def submit(): this.type = js.native
   @JSName("submit")
-  def submit_false(handler: `false`): this.type = js.native
+  @scala.annotation.targetName("submit_false")
+  def submit(handler: false): this.type = js.native
   @JSName("submit")
-  def submit_submit(handler: TypeEventHandler[TElement, Null, TElement, TElement, submit]): this.type = js.native
+  @scala.annotation.targetName("submit_submit")
+  def submit(handler: TypeEventHandler[TElement, Null, TElement, TElement, "submit"]): this.type = js.native
   /**
     * Bind an event handler to the "submit" JavaScript event, or trigger that event on an element.
     * @param eventData An object containing data that will be passed to the event handler.
@@ -13991,7 +14733,8 @@ trait JQuery[TElement]
     * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
     */
   @JSName("submit")
-  def submit_submit[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, submit]): this.type = js.native
+  @scala.annotation.targetName("submit_submit")
+  def submit[TData](eventData: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, "submit"]): this.type = js.native
   
   /**
     * Get the combined text contents of each element in the set of matched elements, including their descendants.
@@ -14625,6 +15368,9 @@ trait JQuery[TElement]
   def unbind(): this.type = js.native
   def unbind(event: String): this.type = js.native
   def unbind(event: TriggeredEvent[TElement, Any, Any, Any]): this.type = js.native
+  @JSName("unbind")
+  @scala.annotation.targetName("unbind_false")
+  def unbind[TType /* <: String */](event: TType, handler: false): this.type = js.native
   /**
     * Remove a previously-attached event handler from the elements.
     * @param event A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
@@ -14693,8 +15439,6 @@ trait JQuery[TElement]
   ```
     */
   def unbind[TType /* <: String */](event: TType, handler: TypeEventHandler[TElement, Any, TElement, TElement, TType]): this.type = js.native
-  @JSName("unbind")
-  def unbind_false[TType /* <: String */](event: TType, handler: `false`): this.type = js.native
   
   /**
     * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
@@ -14750,6 +15494,9 @@ trait JQuery[TElement]
     */
   def undelegate(selector: Selector, eventType_events: String): this.type = js.native
   def undelegate(selector: Selector, eventType_events: TypeEventHandlers[TElement, Any, Any, Any]): this.type = js.native
+  @JSName("undelegate")
+  @scala.annotation.targetName("undelegate_false")
+  def undelegate[TType /* <: String */](selector: Selector, eventType: TType, handler: false): this.type = js.native
   /**
     * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
     * @param selector A selector which will be used to filter the event results.
@@ -14820,8 +15567,6 @@ trait JQuery[TElement]
   ```
     */
   def undelegate[TType /* <: String */](selector: Selector, eventType: TType, handler: TypeEventHandler[TElement, Any, Any, Any, TType]): this.type = js.native
-  @JSName("undelegate")
-  def undelegate_false[TType /* <: String */](selector: Selector, eventType: TType, handler: `false`): this.type = js.native
   
   /**
     * Remove the parents of the set of matched elements from the DOM, leaving the matched elements in their place.
@@ -15675,7 +16420,7 @@ object JQuery {
         * A pre-request callback function that can be used to modify the jqXHR (in jQuery 1.4.x, XMLHTTPRequest) object before it is sent. Use this to set custom headers, etc. The jqXHR and settings objects are passed as arguments. This is an Ajax Event. Returning false in the beforeSend function will cancel the request. As of jQuery 1.5, the beforeSend option will be called regardless of the type of request.
         */
       var beforeSend: js.UndefOr[
-            js.ThisFunction2[/* this */ TContext, /* jqXHR */ jqXHR[Any], /* settings */ this.type, `false` | Unit]
+            js.ThisFunction2[/* this */ TContext, /* jqXHR */ jqXHR[Any], /* settings */ this.type, false | Unit]
           ] = js.undefined
       
       /**
@@ -15691,7 +16436,7 @@ object JQuery {
       /**
         * When sending data to the server, use this content type. Default is "application/x-www-form-urlencoded; charset=UTF-8", which is fine for most cases. If you explicitly pass in a content-type to $.ajax(), then it is always sent to the server (even if no data is sent). As of jQuery 1.6 you can pass false to tell jQuery to not set any content type header. Note: The W3C XMLHttpRequest specification dictates that the charset is always UTF-8; specifying another charset will not force the browser to change the encoding. Note: For cross-domain requests, setting the content type to anything other than application/x-www-form-urlencoded, multipart/form-data, or text/plain will trigger the browser to send a preflight OPTIONS request to the server.
         */
-      var contentType: js.UndefOr[String | `false`] = js.undefined
+      var contentType: js.UndefOr[String | false] = js.undefined
       
       /**
         * An object of string/regular-expression pairs that determine how jQuery will parse the response, given its content type.
@@ -15706,7 +16451,7 @@ object JQuery {
       /**
         * An object containing dataType-to-dataType converters. Each converter's value is a function that returns the transformed value of the response.
         */
-      var converters: js.UndefOr[PlainObject[(js.Function1[/* value */ Any, Any]) | `true`]] = js.undefined
+      var converters: js.UndefOr[PlainObject[(js.Function1[/* value */ Any, Any]) | true]] = js.undefined
       
       /**
         * If you wish to force a crossDomain request (such as JSONP) on the same domain, set the value of crossDomain to true. This allows, for example, server-side redirection to another domain.
@@ -15740,7 +16485,7 @@ object JQuery {
         *
         * multiple, space-separated values: As of jQuery 1.5, jQuery can convert a dataType from what it received in the Content-Type header to what you require. For example, if you want a text response to be treated as XML, use "text xml" for the dataType. You can also make a JSONP request, have it received as text, and interpreted by jQuery as XML: "jsonp text xml". Similarly, a shorthand string such as "jsonp xml" will first attempt to convert from jsonp to xml, and, failing that, convert from jsonp to text, and then from text to xml.
         */
-      var dataType: js.UndefOr[xml | html | script | json | jsonp | text | String] = js.undefined
+      var dataType: js.UndefOr["xml" | "html" | "script" | "json" | "jsonp" | "text" | String] = js.undefined
       
       /**
         * The MIME type of content that is used to submit the form to the server. Possible values are:
@@ -15751,9 +16496,7 @@ object JQuery {
         *
         * "text/plain": A type introduced in HTML5.
         */
-      var enctype: js.UndefOr[
-            `applicationSlashx-www-form-urlencoded` | `multipartSlashform-data` | textSlashplain
-          ] = js.undefined
+      var enctype: js.UndefOr["application/x-www-form-urlencoded" | "multipart/form-data" | "text/plain"] = js.undefined
       
       /**
         * A function to be called if the request fails. The function receives three arguments: The jqXHR (in jQuery 1.4.x, XMLHttpRequest) object, a string describing the type of error that occurred and an optional exception object, if one occurred. Possible values for the second argument (besides null) are "timeout", "error", "abort", and "parsererror". When an HTTP error occurs, errorThrown receives the textual portion of the HTTP status, such as "Not Found" or "Internal Server Error." As of jQuery 1.5, the error setting can accept an array of functions. Each function will be called in turn. Note: This handler is not called for cross-domain script and cross-domain JSONP requests. This is an Ajax Event.
@@ -15783,7 +16526,7 @@ object JQuery {
       /**
         * Override the callback function name in a JSONP request. This value will be used instead of 'callback' in the 'callback=?' part of the query string in the url. So {jsonp:'onJSONPLoad'} would result in 'onJSONPLoad=?' passed to the server. As of jQuery 1.5, setting the jsonp option to false prevents jQuery from adding the "?callback" string to the URL or attempting to use "=?" for transformation. In this case, you should also explicitly set the jsonpCallback setting. For example, { jsonp: false, jsonpCallback: "callbackName" }. If you don't trust the target of your Ajax requests, consider setting the jsonp property to false for security reasons.
         */
-      var jsonp: js.UndefOr[String | `false`] = js.undefined
+      var jsonp: js.UndefOr[String | false] = js.undefined
       
       /**
         * Specify the callback function name for a JSONP request. This value will be used instead of the random name automatically generated by jQuery. It is preferable to let jQuery generate a unique name as it'll make it easier to manage the requests and provide callbacks and error handling. You may want to specify the callback when you want to enable better browser caching of GET requests. As of jQuery 1.5, you can also use a function for this setting, in which case the value of jsonpCallback is set to the return value of that function.
@@ -15878,12 +16621,7 @@ object JQuery {
         inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
         
         inline def setBeforeSend(
-          value: js.ThisFunction2[
-                  /* this */ TContext, 
-                  /* jqXHR */ jqXHR[Any], 
-                  AjaxSettingsBase[TContext], 
-                  `false` | Unit
-                ]
+          value: js.ThisFunction2[/* this */ TContext, /* jqXHR */ jqXHR[Any], AjaxSettingsBase[TContext], false | Unit]
         ): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
         
         inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
@@ -15898,7 +16636,7 @@ object JQuery {
         
         inline def setCompleteVarargs(value: CompleteCallback[TContext]*): Self = StObject.set(x, "complete", js.Array(value*))
         
-        inline def setContentType(value: String | `false`): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+        inline def setContentType(value: String | false): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
         
         inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
         
@@ -15910,7 +16648,7 @@ object JQuery {
         
         inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
         
-        inline def setConverters(value: PlainObject[(js.Function1[/* value */ Any, Any]) | `true`]): Self = StObject.set(x, "converters", value.asInstanceOf[js.Any])
+        inline def setConverters(value: PlainObject[(js.Function1[/* value */ Any, Any]) | true]): Self = StObject.set(x, "converters", value.asInstanceOf[js.Any])
         
         inline def setConvertersUndefined: Self = StObject.set(x, "converters", js.undefined)
         
@@ -15924,13 +16662,13 @@ object JQuery {
         
         inline def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
         
-        inline def setDataType(value: xml | html | script | json | jsonp | text | String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+        inline def setDataType(value: "xml" | "html" | "script" | "json" | "jsonp" | "text" | String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
         
         inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
         
         inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        inline def setEnctype(value: `applicationSlashx-www-form-urlencoded` | `multipartSlashform-data` | textSlashplain): Self = StObject.set(x, "enctype", value.asInstanceOf[js.Any])
+        inline def setEnctype(value: "application/x-www-form-urlencoded" | "multipart/form-data" | "text/plain"): Self = StObject.set(x, "enctype", value.asInstanceOf[js.Any])
         
         inline def setEnctypeUndefined: Self = StObject.set(x, "enctype", js.undefined)
         
@@ -15956,7 +16694,7 @@ object JQuery {
         
         inline def setIsLocalUndefined: Self = StObject.set(x, "isLocal", js.undefined)
         
-        inline def setJsonp(value: String | `false`): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+        inline def setJsonp(value: String | false): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
         
         inline def setJsonpCallback(value: String | (js.ThisFunction0[/* this */ TContext, String])): Self = StObject.set(x, "jsonpCallback", value.asInstanceOf[js.Any])
         
@@ -16030,23 +16768,17 @@ object JQuery {
         Unit
       ]
     
-    /* Rewritten from type alias, can be one of: 
-      - typings.jquery.jqueryStrings.timeout
-      - typings.jquery.jqueryStrings.error
-      - typings.jquery.jqueryStrings.abort
-      - typings.jquery.jqueryStrings.parsererror
-    */
-    trait ErrorTextStatus extends StObject
     object ErrorTextStatus {
       
-      inline def abort: typings.jquery.jqueryStrings.abort = "abort".asInstanceOf[typings.jquery.jqueryStrings.abort]
+      inline def abort: "abort" = "abort".asInstanceOf["abort"]
       
-      inline def error: typings.jquery.jqueryStrings.error = "error".asInstanceOf[typings.jquery.jqueryStrings.error]
+      inline def error: "error" = "error".asInstanceOf["error"]
       
-      inline def parsererror: typings.jquery.jqueryStrings.parsererror = "parsererror".asInstanceOf[typings.jquery.jqueryStrings.parsererror]
+      inline def parsererror: "parsererror" = "parsererror".asInstanceOf["parsererror"]
       
-      inline def timeout: typings.jquery.jqueryStrings.timeout = "timeout".asInstanceOf[typings.jquery.jqueryStrings.timeout]
+      inline def timeout: "timeout" = "timeout".asInstanceOf["timeout"]
     }
+    type ErrorTextStatus = "timeout" | "error" | "abort" | "parsererror"
     
     // region StatusCodeCallbacks
     // #region StatusCodeCallbacks
@@ -18481,47 +19213,33 @@ object JQuery {
         Unit
       ]
     
-    /* Rewritten from type alias, can be one of: 
-      - typings.jquery.jqueryStrings.success
-      - typings.jquery.jqueryStrings.notmodified
-      - typings.jquery.jqueryStrings.nocontent
-    */
-    trait SuccessTextStatus extends StObject
     object SuccessTextStatus {
       
-      inline def nocontent: typings.jquery.jqueryStrings.nocontent = "nocontent".asInstanceOf[typings.jquery.jqueryStrings.nocontent]
+      inline def nocontent: "nocontent" = "nocontent".asInstanceOf["nocontent"]
       
-      inline def notmodified: typings.jquery.jqueryStrings.notmodified = "notmodified".asInstanceOf[typings.jquery.jqueryStrings.notmodified]
+      inline def notmodified: "notmodified" = "notmodified".asInstanceOf["notmodified"]
       
-      inline def success: typings.jquery.jqueryStrings.success = "success".asInstanceOf[typings.jquery.jqueryStrings.success]
+      inline def success: "success" = "success".asInstanceOf["success"]
     }
+    type SuccessTextStatus = "success" | "notmodified" | "nocontent"
     
-    /* Rewritten from type alias, can be one of: 
-      - typings.jquery.jqueryStrings.success
-      - typings.jquery.jqueryStrings.notmodified
-      - typings.jquery.jqueryStrings.nocontent
-      - typings.jquery.jqueryStrings.timeout
-      - typings.jquery.jqueryStrings.error
-      - typings.jquery.jqueryStrings.abort
-      - typings.jquery.jqueryStrings.parsererror
-    */
-    trait TextStatus extends StObject
     object TextStatus {
       
-      inline def abort: typings.jquery.jqueryStrings.abort = "abort".asInstanceOf[typings.jquery.jqueryStrings.abort]
+      inline def abort: "abort" = "abort".asInstanceOf["abort"]
       
-      inline def error: typings.jquery.jqueryStrings.error = "error".asInstanceOf[typings.jquery.jqueryStrings.error]
+      inline def error: "error" = "error".asInstanceOf["error"]
       
-      inline def nocontent: typings.jquery.jqueryStrings.nocontent = "nocontent".asInstanceOf[typings.jquery.jqueryStrings.nocontent]
+      inline def nocontent: "nocontent" = "nocontent".asInstanceOf["nocontent"]
       
-      inline def notmodified: typings.jquery.jqueryStrings.notmodified = "notmodified".asInstanceOf[typings.jquery.jqueryStrings.notmodified]
+      inline def notmodified: "notmodified" = "notmodified".asInstanceOf["notmodified"]
       
-      inline def parsererror: typings.jquery.jqueryStrings.parsererror = "parsererror".asInstanceOf[typings.jquery.jqueryStrings.parsererror]
+      inline def parsererror: "parsererror" = "parsererror".asInstanceOf["parsererror"]
       
-      inline def success: typings.jquery.jqueryStrings.success = "success".asInstanceOf[typings.jquery.jqueryStrings.success]
+      inline def success: "success" = "success".asInstanceOf["success"]
       
-      inline def timeout: typings.jquery.jqueryStrings.timeout = "timeout".asInstanceOf[typings.jquery.jqueryStrings.timeout]
+      inline def timeout: "timeout" = "timeout".asInstanceOf["timeout"]
     }
+    type TextStatus = "success" | "notmodified" | "nocontent" | "timeout" | "error" | "abort" | "parsererror"
     
     // #endregion
     // Writable properties on XMLHttpRequest
@@ -18610,8 +19328,8 @@ object JQuery {
           Animation[TElement], 
           Animation[TElement], 
           Animation[TElement], 
-          js.UndefOr[`true`], 
-          `false`, 
+          js.UndefOr[true], 
+          false, 
           Double, 
           scala.Nothing, 
           scala.Nothing, 
@@ -18762,7 +19480,7 @@ object JQuery {
        with FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_BlurEvent: blur
+    var type_BlurEvent: "blur"
   }
   object BlurEvent {
     
@@ -18816,7 +19534,7 @@ object JQuery {
     
     extension [Self <: BlurEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: blur): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "blur"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -18824,7 +19542,7 @@ object JQuery {
   // region CSS hooks
   // #region CSS hooks
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type CSSHook[TElement] = ((Pick[_CSSHook[TElement], get]) & Partial[_CSSHook[TElement]]) | ((Pick[_CSSHook[TElement], set]) & Partial[_CSSHook[TElement]])
+  type CSSHook[TElement] = ((Pick[_CSSHook[TElement], "get"]) & Partial[_CSSHook[TElement]]) | ((Pick[_CSSHook[TElement], "set"]) & Partial[_CSSHook[TElement]])
   
   type CSSHooks = // Set to HTMLElement to minimize breaks but should probably be Element.
   StringDictionary[CSSHook[HTMLElement]]
@@ -19259,7 +19977,7 @@ object JQuery {
        with EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_ChangeEvent: change
+    var type_ChangeEvent: "change"
   }
   object ChangeEvent {
     
@@ -19314,7 +20032,7 @@ object JQuery {
     
     extension [Self <: ChangeEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: change): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "change"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -19337,7 +20055,7 @@ object JQuery {
     var relatedTarget_ClickEvent: js.UndefOr[Null] = js.undefined
     
     @JSName("type")
-    var type_ClickEvent: click
+    var type_ClickEvent: "click"
   }
   object ClickEvent {
     
@@ -19391,7 +20109,7 @@ object JQuery {
     
     extension [Self <: ClickEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: click): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "click"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -19414,7 +20132,7 @@ object JQuery {
     var relatedTarget_ContextMenuEvent: js.UndefOr[Null] = js.undefined
     
     @JSName("type")
-    var type_ContextMenuEvent: contextmenu
+    var type_ContextMenuEvent: "contextmenu"
   }
   object ContextMenuEvent {
     
@@ -19468,7 +20186,7 @@ object JQuery {
     
     extension [Self <: ContextMenuEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: contextmenu): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "contextmenu"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -19496,12 +20214,7 @@ object JQuery {
   }
   
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  /* Rewritten from type alias, can be one of: 
-    - typings.jquery.anon.PickCoordinatesleft
-    - typings.jquery.anon.PickCoordinatestop
-    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
-  */
-  type CoordinatesPartial = _CoordinatesPartial | StringDictionary[scala.Nothing]
+  type CoordinatesPartial = PickCoordinatesleft | PickCoordinatestop | StringDictionary[scala.Nothing]
   
   @js.native
   trait Deferred[TR, TJ, TN] extends StObject {
@@ -20166,7 +20879,7 @@ object JQuery {
       * @see \`{@link https://api.jquery.com/deferred.state/ }\`
       * @since 1.7
       */
-    def state(): pending | resolved | rejected = js.native
+    def state(): "pending" | "resolved" | "rejected" = js.native
     
     /**
       * Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
@@ -20699,7 +21412,7 @@ object JQuery {
     var relatedTarget_DoubleClickEvent: js.UndefOr[Null] = js.undefined
     
     @JSName("type")
-    var type_DoubleClickEvent: dblclick
+    var type_DoubleClickEvent: "dblclick"
   }
   object DoubleClickEvent {
     
@@ -20753,7 +21466,7 @@ object JQuery {
     
     extension [Self <: DoubleClickEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: dblclick): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "dblclick"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -20762,7 +21475,7 @@ object JQuery {
        with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DragEndEvent: dragend
+    var type_DragEndEvent: "dragend"
   }
   object DragEndEvent {
     
@@ -20791,7 +21504,7 @@ object JQuery {
     
     extension [Self <: DragEndEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: dragend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "dragend"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -20800,7 +21513,7 @@ object JQuery {
        with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DragEnterEvent: dragenter
+    var type_DragEnterEvent: "dragenter"
   }
   object DragEnterEvent {
     
@@ -20829,7 +21542,7 @@ object JQuery {
     
     extension [Self <: DragEnterEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: dragenter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "dragenter"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -20838,7 +21551,7 @@ object JQuery {
        with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DragEvent: drag
+    var type_DragEvent: "drag"
   }
   object DragEvent {
     
@@ -20867,7 +21580,7 @@ object JQuery {
     
     extension [Self <: typings.jquery.JQuery.DragEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (typings.jquery.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: drag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "drag"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -20919,7 +21632,7 @@ object JQuery {
        with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DragExitEvent: dragexit
+    var type_DragExitEvent: "dragexit"
   }
   object DragExitEvent {
     
@@ -20948,7 +21661,7 @@ object JQuery {
     
     extension [Self <: DragExitEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: dragexit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "dragexit"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -20957,7 +21670,7 @@ object JQuery {
        with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DragLeaveEvent: dragleave
+    var type_DragLeaveEvent: "dragleave"
   }
   object DragLeaveEvent {
     
@@ -20986,7 +21699,7 @@ object JQuery {
     
     extension [Self <: DragLeaveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: dragleave): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "dragleave"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -20995,7 +21708,7 @@ object JQuery {
        with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DragOverEvent: dragover
+    var type_DragOverEvent: "dragover"
   }
   object DragOverEvent {
     
@@ -21024,7 +21737,7 @@ object JQuery {
     
     extension [Self <: DragOverEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: dragover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "dragover"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -21033,7 +21746,7 @@ object JQuery {
        with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DragStartEvent: dragstart
+    var type_DragStartEvent: "dragstart"
   }
   object DragStartEvent {
     
@@ -21062,7 +21775,7 @@ object JQuery {
     
     extension [Self <: DragStartEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: dragstart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "dragstart"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -21071,7 +21784,7 @@ object JQuery {
        with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DropEvent: drop
+    var type_DropEvent: "drop"
   }
   object DropEvent {
     
@@ -21100,19 +21813,14 @@ object JQuery {
     
     extension [Self <: DropEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: drop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "drop"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   // #endregion
   // region Effects
   // #region Effects
-  /* Rewritten from type alias, can be one of: 
-    - scala.Double
-    - typings.jquery.jqueryStrings.fast
-    - typings.jquery.jqueryStrings.slow
-  */
-  type Duration = _Duration | Double
+  type Duration = Double | "fast" | "slow"
   
   // #endregion
   // region Easing
@@ -22614,22 +23322,14 @@ object JQuery {
   }
   
   // #endregion
-  /* Rewritten from type alias, can be one of: 
-    - typings.jquery.jqueryBooleans.`false`
-    - scala.Null
-    - scala.Unit
-    - typings.jquery.jqueryInts.`0`
-    - typings.jquery.jqueryStrings._empty
-    - typings.std.HTMLAllCollection
-  */
-  type Falsy = js.UndefOr[_Falsy | Null | HTMLAllCollection]
+  type Falsy = js.UndefOr[false | Null | 0 | "" | HTMLAllCollection]
   
   trait FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     extends StObject
        with FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_FocusEvent: focus
+    var type_FocusEvent: "focus"
   }
   object FocusEvent {
     
@@ -22683,7 +23383,7 @@ object JQuery {
     
     extension [Self <: typings.jquery.JQuery.FocusEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (typings.jquery.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: focus): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "focus"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -23073,7 +23773,7 @@ object JQuery {
        with FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_FocusInEvent: focusin
+    var type_FocusInEvent: "focusin"
   }
   object FocusInEvent {
     
@@ -23127,7 +23827,7 @@ object JQuery {
     
     extension [Self <: FocusInEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: focusin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "focusin"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -23136,7 +23836,7 @@ object JQuery {
        with FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_FocusOutEvent: focusout
+    var type_FocusOutEvent: "focusout"
   }
   object FocusOutEvent {
     
@@ -23190,7 +23890,7 @@ object JQuery {
     
     extension [Self <: FocusOutEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: focusout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "focusout"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -23269,7 +23969,7 @@ object JQuery {
        with KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_KeyDownEvent: keydown
+    var type_KeyDownEvent: "keydown"
   }
   object KeyDownEvent {
     
@@ -23324,7 +24024,7 @@ object JQuery {
     
     extension [Self <: KeyDownEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: keydown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "keydown"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -23333,7 +24033,7 @@ object JQuery {
        with KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_KeyPressEvent: keypress
+    var type_KeyPressEvent: "keypress"
   }
   object KeyPressEvent {
     
@@ -23388,7 +24088,7 @@ object JQuery {
     
     extension [Self <: KeyPressEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: keypress): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "keypress"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -23397,7 +24097,7 @@ object JQuery {
        with KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_KeyUpEvent: keyup
+    var type_KeyUpEvent: "keyup"
   }
   object KeyUpEvent {
     
@@ -23452,7 +24152,7 @@ object JQuery {
     
     extension [Self <: KeyUpEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: keyup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "keyup"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -23851,7 +24551,7 @@ object JQuery {
     var relatedTarget_MouseDownEvent: js.UndefOr[Null] = js.undefined
     
     @JSName("type")
-    var type_MouseDownEvent: mousedown
+    var type_MouseDownEvent: "mousedown"
   }
   object MouseDownEvent {
     
@@ -23905,7 +24605,7 @@ object JQuery {
     
     extension [Self <: MouseDownEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: mousedown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "mousedown"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -23915,7 +24615,7 @@ object JQuery {
     
     // Special handling by jQuery.
     @JSName("type")
-    var type_MouseEnterEvent: mouseover
+    var type_MouseEnterEvent: "mouseover"
   }
   object MouseEnterEvent {
     
@@ -23969,7 +24669,7 @@ object JQuery {
     
     extension [Self <: MouseEnterEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: mouseover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "mouseover"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -24359,7 +25059,7 @@ object JQuery {
     
     // Special handling by jQuery.
     @JSName("type")
-    var type_MouseLeaveEvent: mouseout
+    var type_MouseLeaveEvent: "mouseout"
   }
   object MouseLeaveEvent {
     
@@ -24413,7 +25113,7 @@ object JQuery {
     
     extension [Self <: MouseLeaveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: mouseout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "mouseout"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -24436,7 +25136,7 @@ object JQuery {
     var relatedTarget_MouseMoveEvent: js.UndefOr[Null] = js.undefined
     
     @JSName("type")
-    var type_MouseMoveEvent: mousemove
+    var type_MouseMoveEvent: "mousemove"
   }
   object MouseMoveEvent {
     
@@ -24490,7 +25190,7 @@ object JQuery {
     
     extension [Self <: MouseMoveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: mousemove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "mousemove"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -24499,7 +25199,7 @@ object JQuery {
        with MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_MouseOutEvent: mouseout
+    var type_MouseOutEvent: "mouseout"
   }
   object MouseOutEvent {
     
@@ -24553,7 +25253,7 @@ object JQuery {
     
     extension [Self <: MouseOutEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: mouseout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "mouseout"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -24562,7 +25262,7 @@ object JQuery {
        with MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_MouseOverEvent: mouseover
+    var type_MouseOverEvent: "mouseover"
   }
   object MouseOverEvent {
     
@@ -24616,7 +25316,7 @@ object JQuery {
     
     extension [Self <: MouseOverEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: mouseover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "mouseover"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -24639,7 +25339,7 @@ object JQuery {
     var relatedTarget_MouseUpEvent: js.UndefOr[Null] = js.undefined
     
     @JSName("type")
-    var type_MouseUpEvent: mouseup
+    var type_MouseUpEvent: "mouseup"
   }
   object MouseUpEvent {
     
@@ -24693,7 +25393,7 @@ object JQuery {
     
     extension [Self <: MouseUpEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: mouseup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "mouseup"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -25439,7 +26139,7 @@ object JQuery {
       * @see \`{@link https://api.jquery.com/deferred.state/ }\`
       * @since 1.7
       */
-    def state(): pending | resolved | rejected = js.native
+    def state(): "pending" | "resolved" | "rejected" = js.native
     
     /**
       * Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
@@ -25940,12 +26640,7 @@ object JQuery {
     * @since 1.8
     */
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  /* Rewritten from type alias, can be one of: 
-    - typings.jquery.anon.Get[TElement]
-    - typings.jquery.anon.Set[TElement]
-    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
-  */
-  type PropHook[TElement] = _PropHook[TElement] | StringDictionary[scala.Nothing]
+  type PropHook[TElement] = Get[TElement] | Set[TElement] | StringDictionary[scala.Nothing]
   
   /**
     * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tween-hooks }\`
@@ -25972,7 +26667,7 @@ object JQuery {
        with EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_ResizeEvent: resize
+    var type_ResizeEvent: "resize"
   }
   object ResizeEvent {
     
@@ -26027,7 +26722,7 @@ object JQuery {
     
     extension [Self <: ResizeEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: resize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "resize"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -26036,7 +26731,7 @@ object JQuery {
        with EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_ScrollEvent: scroll
+    var type_ScrollEvent: "scroll"
   }
   object ScrollEvent {
     
@@ -26091,7 +26786,7 @@ object JQuery {
     
     extension [Self <: ScrollEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: scroll): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "scroll"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -26100,7 +26795,7 @@ object JQuery {
        with EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_SelectEvent: select
+    var type_SelectEvent: "select"
   }
   object SelectEvent {
     
@@ -26155,7 +26850,7 @@ object JQuery {
     
     extension [Self <: SelectEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: select): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "select"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -26213,22 +26908,7 @@ object JQuery {
     * @see \`{@link https://learn.jquery.com/events/event-extensions/#special-event-hooks }\`
     */
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  /* Rewritten from type alias, can be one of: 
-    - typings.jquery.anon.NoBubble
-    - typings.jquery.anon.BindType
-    - typings.jquery.anon.DelegateType
-    - typings.jquery.anon.Setup[TTarget, TData]
-    - typings.jquery.anon.Teardown[TTarget]
-    - typings.jquery.anon.Add[TTarget, TData]
-    - typings.jquery.anon.Remove[TTarget, TData]
-    - typings.jquery.anon.Trigger[TTarget, TData]
-    - typings.jquery.anon.Default[TTarget, TData]
-    - typings.jquery.anon.Handle[TTarget, TData]
-    - typings.jquery.anon.PreDispatch[TTarget]
-    - typings.jquery.anon.PostDispatch[TTarget]
-    - org.scalablytyped.runtime.StringDictionary[scala.Any]
-  */
-  type SpecialEventHook[TTarget, TData] = (_SpecialEventHook[TTarget, TData]) | StringDictionary[Any]
+  type SpecialEventHook[TTarget, TData] = NoBubble | BindType | DelegateType | (Setup[TTarget, TData]) | Teardown[TTarget] | (Add[TTarget, TData]) | (Remove[TTarget, TData]) | (Trigger[TTarget, TData]) | (Default[TTarget, TData]) | (Handle[TTarget, TData]) | PreDispatch[TTarget] | PostDispatch[TTarget] | StringDictionary[Any]
   
   type SpecialEventHooks = StringDictionary[SpecialEventHook[EventTarget, Any]]
   
@@ -26236,20 +26916,14 @@ object JQuery {
   // region Speed
   // #region Speed
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  /* Rewritten from type alias, can be one of: 
-    - typings.jquery.anon.Duration
-    - typings.jquery.anon.Easing
-    - typings.jquery.anon.Complete[TElement]
-    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
-  */
-  type SpeedSettings[TElement] = _SpeedSettings[TElement] | StringDictionary[scala.Nothing]
+  type SpeedSettings[TElement] = typings.jquery.anon.Duration | Easing | Complete[TElement] | StringDictionary[scala.Nothing]
   
   trait SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     extends StObject
        with EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_SubmitEvent: submit
+    var type_SubmitEvent: "submit"
   }
   object SubmitEvent {
     
@@ -26304,7 +26978,7 @@ object JQuery {
     
     extension [Self <: SubmitEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: submit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "submit"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -26333,7 +27007,7 @@ object JQuery {
        with TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_TouchCancelEvent: touchcancel
+    var type_TouchCancelEvent: "touchcancel"
   }
   object TouchCancelEvent {
     
@@ -26388,7 +27062,7 @@ object JQuery {
     
     extension [Self <: TouchCancelEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: touchcancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "touchcancel"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -26397,7 +27071,7 @@ object JQuery {
        with TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_TouchEndEvent: touchend
+    var type_TouchEndEvent: "touchend"
   }
   object TouchEndEvent {
     
@@ -26452,7 +27126,7 @@ object JQuery {
     
     extension [Self <: TouchEndEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: touchend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "touchend"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -26839,7 +27513,7 @@ object JQuery {
        with TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_TouchMoveEvent: touchmove
+    var type_TouchMoveEvent: "touchmove"
   }
   object TouchMoveEvent {
     
@@ -26894,7 +27568,7 @@ object JQuery {
     
     extension [Self <: TouchMoveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: touchmove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "touchmove"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -26903,7 +27577,7 @@ object JQuery {
        with TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_TouchStartEvent: touchstart
+    var type_TouchStartEvent: "touchstart"
   }
   object TouchStartEvent {
     
@@ -26958,7 +27632,7 @@ object JQuery {
     
     extension [Self <: TouchStartEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      inline def setType(value: touchstart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "touchstart"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -27450,7 +28124,7 @@ object JQuery {
     Tween[TElement]
   ]
   
-  type TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, TType /* <: /* keyof jquery.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget> */ change | resize | scroll | select | submit | click | contextmenu | dblclick | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | drag | dragend | dragenter | dragexit | dragleave | dragover | dragstart | drop | keydown | keypress | keyup | touchcancel | touchend | touchmove | touchstart | blur | focus | focusin | focusout */] = EventHandlerBase[
+  type TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, TType /* <: /* keyof jquery.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget> */ "change" | "resize" | "scroll" | "select" | "submit" | "click" | "contextmenu" | "dblclick" | "mousedown" | "mouseenter" | "mouseleave" | "mousemove" | "mouseout" | "mouseover" | "mouseup" | "drag" | "dragend" | "dragenter" | "dragexit" | "dragleave" | "dragover" | "dragstart" | "drop" | "keydown" | "keypress" | "keyup" | "touchcancel" | "touchend" | "touchmove" | "touchstart" | "blur" | "focus" | "focusin" | "focusout" */] = EventHandlerBase[
     TCurrentTarget, 
     /* import warning: importer.ImportType#apply Failed type conversion: jquery.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget>[TType] */ js.Any
   ]
@@ -27462,7 +28136,7 @@ object JQuery {
   // derived types of Event are not assignable to Event.
   /* type */ StringDictionary[
           js.UndefOr[
-            (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, String]) | `false` | js.Object
+            (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, String]) | false | js.Object
           ]
         ]
   object TypeEventHandlers {
@@ -27767,12 +28441,7 @@ object JQuery {
   // region Val hooks
   // #region Val hooks
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  /* Rewritten from type alias, can be one of: 
-    - typings.jquery.anon.`0`[TElement]
-    - typings.jquery.anon.`1`[TElement]
-    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
-  */
-  type ValHook[TElement] = _ValHook[TElement] | StringDictionary[scala.Nothing]
+  type ValHook[TElement] = `0`[TElement] | `1`[TElement] | StringDictionary[scala.Nothing]
   
   type ValHooks = // Set to HTMLElement to minimize breaks but should probably be Element.
   StringDictionary[ValHook[HTMLElement]]
@@ -27798,272 +28467,143 @@ object JQuery {
     }
   }
   
-  trait _CoordinatesPartial extends StObject
-  object _CoordinatesPartial {
-    
-    inline def PickCoordinatesleft(left: Double): typings.jquery.anon.PickCoordinatesleft = {
-      val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.jquery.anon.PickCoordinatesleft]
-    }
-    
-    inline def PickCoordinatestop(top: Double): typings.jquery.anon.PickCoordinatestop = {
-      val __obj = js.Dynamic.literal(top = top.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.jquery.anon.PickCoordinatestop]
-    }
-  }
-  
-  trait _Duration extends StObject
-  
-  trait _Falsy extends StObject
-  
-  trait _PropHook[TElement] extends StObject
-  object _PropHook {
-    
-    inline def Get[TElement](get: Tween[TElement] => Any): typings.jquery.anon.Get[TElement] = {
-      val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-      __obj.asInstanceOf[typings.jquery.anon.Get[TElement]]
-    }
-    
-    inline def Set[TElement](set: Tween[TElement] => Unit): typings.jquery.anon.Set[TElement] = {
-      val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set))
-      __obj.asInstanceOf[typings.jquery.anon.Set[TElement]]
-    }
-  }
-  
-  trait _SpecialEventHook[TTarget, TData] extends StObject
-  object _SpecialEventHook {
-    
-    inline def Add[TTarget, TData](add: HandleObject[TTarget, TData] => Unit): typings.jquery.anon.Add[TTarget, TData] = {
-      val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add))
-      __obj.asInstanceOf[typings.jquery.anon.Add[TTarget, TData]]
-    }
-    
-    inline def BindType(bindType: String): typings.jquery.anon.BindType = {
-      val __obj = js.Dynamic.literal(bindType = bindType.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.jquery.anon.BindType]
-    }
-    
-    inline def Default[TTarget, TData](_default: (TriggeredEvent[TTarget, TData, Any, Any], TData) => Unit | `false`): typings.jquery.anon.Default[TTarget, TData] = {
-      val __obj = js.Dynamic.literal(_default = js.Any.fromFunction2(_default))
-      __obj.asInstanceOf[typings.jquery.anon.Default[TTarget, TData]]
-    }
-    
-    inline def DelegateType(delegateType: String): typings.jquery.anon.DelegateType = {
-      val __obj = js.Dynamic.literal(delegateType = delegateType.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.jquery.anon.DelegateType]
-    }
-    
-    inline def Handle[TTarget, TData](
-      handle: ((TriggeredEvent[TTarget, TData, Any, Any]) & (HandleObj[TTarget, TData]), /* repeated */ TData) => Unit
-    ): typings.jquery.anon.Handle[TTarget, TData] = {
-      val __obj = js.Dynamic.literal(handle = js.Any.fromFunction2(handle))
-      __obj.asInstanceOf[typings.jquery.anon.Handle[TTarget, TData]]
-    }
-    
-    inline def NoBubble(noBubble: Boolean): typings.jquery.anon.NoBubble = {
-      val __obj = js.Dynamic.literal(noBubble = noBubble.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.jquery.anon.NoBubble]
-    }
-    
-    inline def PostDispatch[TTarget](postDispatch: typings.jquery.JQuery.Event => Unit): typings.jquery.anon.PostDispatch[TTarget] = {
-      val __obj = js.Dynamic.literal(postDispatch = js.Any.fromFunction1(postDispatch))
-      __obj.asInstanceOf[typings.jquery.anon.PostDispatch[TTarget]]
-    }
-    
-    inline def PreDispatch[TTarget](preDispatch: typings.jquery.JQuery.Event => `false` | Unit): typings.jquery.anon.PreDispatch[TTarget] = {
-      val __obj = js.Dynamic.literal(preDispatch = js.Any.fromFunction1(preDispatch))
-      __obj.asInstanceOf[typings.jquery.anon.PreDispatch[TTarget]]
-    }
-    
-    inline def Remove[TTarget, TData](remove: HandleObject[TTarget, TData] => Unit): typings.jquery.anon.Remove[TTarget, TData] = {
-      val __obj = js.Dynamic.literal(remove = js.Any.fromFunction1(remove))
-      __obj.asInstanceOf[typings.jquery.anon.Remove[TTarget, TData]]
-    }
-    
-    inline def Setup[TTarget, TData](setup: (TData, String, EventHandler[TTarget, TData]) => Unit | `false`): typings.jquery.anon.Setup[TTarget, TData] = {
-      val __obj = js.Dynamic.literal(setup = js.Any.fromFunction3(setup))
-      __obj.asInstanceOf[typings.jquery.anon.Setup[TTarget, TData]]
-    }
-    
-    inline def Teardown[TTarget](teardown: () => Unit | `false`): typings.jquery.anon.Teardown[TTarget] = {
-      val __obj = js.Dynamic.literal(teardown = js.Any.fromFunction0(teardown))
-      __obj.asInstanceOf[typings.jquery.anon.Teardown[TTarget]]
-    }
-    
-    inline def Trigger[TTarget, TData](trigger: (typings.jquery.JQuery.Event, TData) => Unit | `false`): typings.jquery.anon.Trigger[TTarget, TData] = {
-      val __obj = js.Dynamic.literal(trigger = js.Any.fromFunction2(trigger))
-      __obj.asInstanceOf[typings.jquery.anon.Trigger[TTarget, TData]]
-    }
-  }
-  
-  trait _SpeedSettings[TElement] extends StObject
-  object _SpeedSettings {
-    
-    inline def Complete[TElement](complete: () => Unit): typings.jquery.anon.Complete[TElement] = {
-      val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
-      __obj.asInstanceOf[typings.jquery.anon.Complete[TElement]]
-    }
-    
-    inline def Duration(duration: typings.jquery.JQuery.Duration): typings.jquery.anon.Duration = {
-      val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.jquery.anon.Duration]
-    }
-    
-    inline def Easing(easing: String): typings.jquery.anon.Easing = {
-      val __obj = js.Dynamic.literal(easing = easing.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.jquery.anon.Easing]
-    }
-  }
-  
   /* Inlined {[ TType in keyof jquery.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget> ]:? jquery.JQuery.TypeEventHandler<TDelegateTarget, TData, TCurrentTarget, TTarget, TType> | false | object} */
   trait _TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget] extends StObject {
     
     var blur: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.blur]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "blur"]) | false | js.Object
       ] = js.undefined
     
     var change: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.change]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "change"]) | false | js.Object
       ] = js.undefined
     
     var click: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.click]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "click"]) | false | js.Object
       ] = js.undefined
     
     var contextmenu: js.UndefOr[
-        (TypeEventHandler[
-          TDelegateTarget, 
-          TData, 
-          TCurrentTarget, 
-          TTarget, 
-          typings.jquery.jqueryStrings.contextmenu
-        ]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "contextmenu"]) | false | js.Object
       ] = js.undefined
     
     var dblclick: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.dblclick]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "dblclick"]) | false | js.Object
       ] = js.undefined
     
     var drag: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.drag]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "drag"]) | false | js.Object
       ] = js.undefined
     
     var dragend: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.dragend]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "dragend"]) | false | js.Object
       ] = js.undefined
     
     var dragenter: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.dragenter]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "dragenter"]) | false | js.Object
       ] = js.undefined
     
     var dragexit: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.dragexit]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "dragexit"]) | false | js.Object
       ] = js.undefined
     
     var dragleave: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.dragleave]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "dragleave"]) | false | js.Object
       ] = js.undefined
     
     var dragover: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.dragover]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "dragover"]) | false | js.Object
       ] = js.undefined
     
     var dragstart: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.dragstart]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "dragstart"]) | false | js.Object
       ] = js.undefined
     
     var drop: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.drop]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "drop"]) | false | js.Object
       ] = js.undefined
     
     var focus: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.focus]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "focus"]) | false | js.Object
       ] = js.undefined
     
     var focusin: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.focusin]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "focusin"]) | false | js.Object
       ] = js.undefined
     
     var focusout: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.focusout]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "focusout"]) | false | js.Object
       ] = js.undefined
     
     var keydown: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.keydown]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "keydown"]) | false | js.Object
       ] = js.undefined
     
     var keypress: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.keypress]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "keypress"]) | false | js.Object
       ] = js.undefined
     
     var keyup: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.keyup]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "keyup"]) | false | js.Object
       ] = js.undefined
     
     var mousedown: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.mousedown]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "mousedown"]) | false | js.Object
       ] = js.undefined
     
     var mouseenter: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.mouseenter]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "mouseenter"]) | false | js.Object
       ] = js.undefined
     
     var mouseleave: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.mouseleave]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "mouseleave"]) | false | js.Object
       ] = js.undefined
     
     var mousemove: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.mousemove]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "mousemove"]) | false | js.Object
       ] = js.undefined
     
     var mouseout: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.mouseout]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "mouseout"]) | false | js.Object
       ] = js.undefined
     
     var mouseover: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.mouseover]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "mouseover"]) | false | js.Object
       ] = js.undefined
     
     var mouseup: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.mouseup]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "mouseup"]) | false | js.Object
       ] = js.undefined
     
     var resize: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.resize]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "resize"]) | false | js.Object
       ] = js.undefined
     
     var scroll: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.scroll]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "scroll"]) | false | js.Object
       ] = js.undefined
     
     var select: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.select]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "select"]) | false | js.Object
       ] = js.undefined
     
     var submit: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.submit]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "submit"]) | false | js.Object
       ] = js.undefined
     
     var touchcancel: js.UndefOr[
-        (TypeEventHandler[
-          TDelegateTarget, 
-          TData, 
-          TCurrentTarget, 
-          TTarget, 
-          typings.jquery.jqueryStrings.touchcancel
-        ]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "touchcancel"]) | false | js.Object
       ] = js.undefined
     
     var touchend: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.touchend]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "touchend"]) | false | js.Object
       ] = js.undefined
     
     var touchmove: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.touchmove]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "touchmove"]) | false | js.Object
       ] = js.undefined
     
     var touchstart: js.UndefOr[
-        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.touchstart]) | `false` | js.Object
+        (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "touchstart"]) | false | js.Object
       ] = js.undefined
   }
   object _TypeEventHandlers {
@@ -28076,222 +28616,208 @@ object JQuery {
     extension [Self <: _TypeEventHandlers[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (_TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
       inline def setBlur(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, blur]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "blur"]) | false | js.Object
       ): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
       inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
       
       inline def setChange(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, change]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "change"]) | false | js.Object
       ): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
       inline def setClick(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, click]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "click"]) | false | js.Object
       ): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
       inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       
       inline def setContextmenu(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, contextmenu]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "contextmenu"]) | false | js.Object
       ): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
       
       inline def setContextmenuUndefined: Self = StObject.set(x, "contextmenu", js.undefined)
       
       inline def setDblclick(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, dblclick]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "dblclick"]) | false | js.Object
       ): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
       
       inline def setDblclickUndefined: Self = StObject.set(x, "dblclick", js.undefined)
       
       inline def setDrag(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, drag]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "drag"]) | false | js.Object
       ): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
       inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
       
       inline def setDragend(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, dragend]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "dragend"]) | false | js.Object
       ): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
       
       inline def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
       
       inline def setDragenter(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, dragenter]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "dragenter"]) | false | js.Object
       ): Self = StObject.set(x, "dragenter", value.asInstanceOf[js.Any])
       
       inline def setDragenterUndefined: Self = StObject.set(x, "dragenter", js.undefined)
       
       inline def setDragexit(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, dragexit]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "dragexit"]) | false | js.Object
       ): Self = StObject.set(x, "dragexit", value.asInstanceOf[js.Any])
       
       inline def setDragexitUndefined: Self = StObject.set(x, "dragexit", js.undefined)
       
       inline def setDragleave(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, dragleave]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "dragleave"]) | false | js.Object
       ): Self = StObject.set(x, "dragleave", value.asInstanceOf[js.Any])
       
       inline def setDragleaveUndefined: Self = StObject.set(x, "dragleave", js.undefined)
       
       inline def setDragover(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, dragover]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "dragover"]) | false | js.Object
       ): Self = StObject.set(x, "dragover", value.asInstanceOf[js.Any])
       
       inline def setDragoverUndefined: Self = StObject.set(x, "dragover", js.undefined)
       
       inline def setDragstart(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, dragstart]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "dragstart"]) | false | js.Object
       ): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
       
       inline def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
       
       inline def setDrop(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, drop]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "drop"]) | false | js.Object
       ): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
       
       inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
       
       inline def setFocus(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, focus]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "focus"]) | false | js.Object
       ): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
       inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
       inline def setFocusin(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, focusin]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "focusin"]) | false | js.Object
       ): Self = StObject.set(x, "focusin", value.asInstanceOf[js.Any])
       
       inline def setFocusinUndefined: Self = StObject.set(x, "focusin", js.undefined)
       
       inline def setFocusout(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, focusout]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "focusout"]) | false | js.Object
       ): Self = StObject.set(x, "focusout", value.asInstanceOf[js.Any])
       
       inline def setFocusoutUndefined: Self = StObject.set(x, "focusout", js.undefined)
       
       inline def setKeydown(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, keydown]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "keydown"]) | false | js.Object
       ): Self = StObject.set(x, "keydown", value.asInstanceOf[js.Any])
       
       inline def setKeydownUndefined: Self = StObject.set(x, "keydown", js.undefined)
       
       inline def setKeypress(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, keypress]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "keypress"]) | false | js.Object
       ): Self = StObject.set(x, "keypress", value.asInstanceOf[js.Any])
       
       inline def setKeypressUndefined: Self = StObject.set(x, "keypress", js.undefined)
       
       inline def setKeyup(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, keyup]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "keyup"]) | false | js.Object
       ): Self = StObject.set(x, "keyup", value.asInstanceOf[js.Any])
       
       inline def setKeyupUndefined: Self = StObject.set(x, "keyup", js.undefined)
       
       inline def setMousedown(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, mousedown]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "mousedown"]) | false | js.Object
       ): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
       
       inline def setMousedownUndefined: Self = StObject.set(x, "mousedown", js.undefined)
       
       inline def setMouseenter(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, mouseenter]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "mouseenter"]) | false | js.Object
       ): Self = StObject.set(x, "mouseenter", value.asInstanceOf[js.Any])
       
       inline def setMouseenterUndefined: Self = StObject.set(x, "mouseenter", js.undefined)
       
       inline def setMouseleave(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, mouseleave]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "mouseleave"]) | false | js.Object
       ): Self = StObject.set(x, "mouseleave", value.asInstanceOf[js.Any])
       
       inline def setMouseleaveUndefined: Self = StObject.set(x, "mouseleave", js.undefined)
       
       inline def setMousemove(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, mousemove]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "mousemove"]) | false | js.Object
       ): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
       
       inline def setMousemoveUndefined: Self = StObject.set(x, "mousemove", js.undefined)
       
       inline def setMouseout(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, mouseout]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "mouseout"]) | false | js.Object
       ): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
       
       inline def setMouseoutUndefined: Self = StObject.set(x, "mouseout", js.undefined)
       
       inline def setMouseover(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, mouseover]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "mouseover"]) | false | js.Object
       ): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
       
       inline def setMouseoverUndefined: Self = StObject.set(x, "mouseover", js.undefined)
       
       inline def setMouseup(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, mouseup]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "mouseup"]) | false | js.Object
       ): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
       
       inline def setMouseupUndefined: Self = StObject.set(x, "mouseup", js.undefined)
       
       inline def setResize(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, resize]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "resize"]) | false | js.Object
       ): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
       inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
       inline def setScroll(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, scroll]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "scroll"]) | false | js.Object
       ): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
       inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
       
       inline def setSelect(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, select]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "select"]) | false | js.Object
       ): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
       inline def setSubmit(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, submit]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "submit"]) | false | js.Object
       ): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
       
       inline def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
       
       inline def setTouchcancel(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, touchcancel]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "touchcancel"]) | false | js.Object
       ): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
       
       inline def setTouchcancelUndefined: Self = StObject.set(x, "touchcancel", js.undefined)
       
       inline def setTouchend(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, touchend]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "touchend"]) | false | js.Object
       ): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
       
       inline def setTouchendUndefined: Self = StObject.set(x, "touchend", js.undefined)
       
       inline def setTouchmove(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, touchmove]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "touchmove"]) | false | js.Object
       ): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
       
       inline def setTouchmoveUndefined: Self = StObject.set(x, "touchmove", js.undefined)
       
       inline def setTouchstart(
-        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, touchstart]) | `false` | js.Object
+        value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, "touchstart"]) | false | js.Object
       ): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
       
       inline def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
-    }
-  }
-  
-  trait _ValHook[TElement] extends StObject
-  object _ValHook {
-    
-    inline def `0`[TElement](get: TElement => Any): typings.jquery.anon.`0`[TElement] = {
-      val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-      __obj.asInstanceOf[typings.jquery.anon.`0`[TElement]]
-    }
-    
-    inline def `1`[TElement](set: (TElement, Any) => Any): typings.jquery.anon.`1`[TElement] = {
-      val __obj = js.Dynamic.literal(set = js.Any.fromFunction2(set))
-      __obj.asInstanceOf[typings.jquery.anon.`1`[TElement]]
     }
   }
   
@@ -29009,7 +29535,7 @@ object JQuery {
       * @see \`{@link https://api.jquery.com/deferred.state/ }\`
       * @since 1.7
       */
-    def state(): pending | resolved | rejected = js.native
+    def state(): "pending" | "resolved" | "rejected" = js.native
     
     var status: Double = js.native
     

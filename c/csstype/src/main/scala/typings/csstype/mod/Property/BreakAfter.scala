@@ -4,68 +4,45 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.csstypeStrings.all
-  - typings.csstype.csstypeStrings.always
-  - typings.csstype.csstypeStrings.auto
-  - typings.csstype.csstypeStrings.avoid
-  - typings.csstype.csstypeStrings.`avoid-column`
-  - typings.csstype.csstypeStrings.`avoid-page`
-  - typings.csstype.csstypeStrings.`avoid-region`
-  - typings.csstype.csstypeStrings.column
-  - typings.csstype.csstypeStrings.left
-  - typings.csstype.csstypeStrings.page
-  - typings.csstype.csstypeStrings.recto
-  - typings.csstype.csstypeStrings.region
-  - typings.csstype.csstypeStrings.right
-  - typings.csstype.csstypeStrings.verso
-  - typings.csstype.csstypeStrings.`-moz-initial`
-  - typings.csstype.csstypeStrings.inherit
-  - typings.csstype.csstypeStrings.initial
-  - typings.csstype.csstypeStrings.revert
-  - typings.csstype.csstypeStrings.`revert-layer`
-  - typings.csstype.csstypeStrings.unset
-*/
-trait BreakAfter extends StObject
 object BreakAfter {
   
-  inline def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def all: typings.csstype.csstypeStrings.all = "all".asInstanceOf[typings.csstype.csstypeStrings.all]
+  inline def all: "all" = "all".asInstanceOf["all"]
   
-  inline def always: typings.csstype.csstypeStrings.always = "always".asInstanceOf[typings.csstype.csstypeStrings.always]
+  inline def always: "always" = "always".asInstanceOf["always"]
   
-  inline def auto: typings.csstype.csstypeStrings.auto = "auto".asInstanceOf[typings.csstype.csstypeStrings.auto]
+  inline def auto: "auto" = "auto".asInstanceOf["auto"]
   
-  inline def avoid: typings.csstype.csstypeStrings.avoid = "avoid".asInstanceOf[typings.csstype.csstypeStrings.avoid]
+  inline def avoid: "avoid" = "avoid".asInstanceOf["avoid"]
   
-  inline def `avoid-column`: typings.csstype.csstypeStrings.`avoid-column` = "avoid-column".asInstanceOf[typings.csstype.csstypeStrings.`avoid-column`]
+  inline def `avoid-column`: "avoid-column" = "avoid-column".asInstanceOf["avoid-column"]
   
-  inline def `avoid-page`: typings.csstype.csstypeStrings.`avoid-page` = "avoid-page".asInstanceOf[typings.csstype.csstypeStrings.`avoid-page`]
+  inline def `avoid-page`: "avoid-page" = "avoid-page".asInstanceOf["avoid-page"]
   
-  inline def `avoid-region`: typings.csstype.csstypeStrings.`avoid-region` = "avoid-region".asInstanceOf[typings.csstype.csstypeStrings.`avoid-region`]
+  inline def `avoid-region`: "avoid-region" = "avoid-region".asInstanceOf["avoid-region"]
   
-  inline def column: typings.csstype.csstypeStrings.column = "column".asInstanceOf[typings.csstype.csstypeStrings.column]
+  inline def column: "column" = "column".asInstanceOf["column"]
   
-  inline def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def left: typings.csstype.csstypeStrings.left = "left".asInstanceOf[typings.csstype.csstypeStrings.left]
+  inline def left: "left" = "left".asInstanceOf["left"]
   
-  inline def page: typings.csstype.csstypeStrings.page = "page".asInstanceOf[typings.csstype.csstypeStrings.page]
+  inline def page: "page" = "page".asInstanceOf["page"]
   
-  inline def recto: typings.csstype.csstypeStrings.recto = "recto".asInstanceOf[typings.csstype.csstypeStrings.recto]
+  inline def recto: "recto" = "recto".asInstanceOf["recto"]
   
-  inline def region: typings.csstype.csstypeStrings.region = "region".asInstanceOf[typings.csstype.csstypeStrings.region]
+  inline def region: "region" = "region".asInstanceOf["region"]
   
-  inline def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def `revert-layer`: typings.csstype.csstypeStrings.`revert-layer` = "revert-layer".asInstanceOf[typings.csstype.csstypeStrings.`revert-layer`]
+  inline def `revert-layer`: "revert-layer" = "revert-layer".asInstanceOf["revert-layer"]
   
-  inline def right: typings.csstype.csstypeStrings.right = "right".asInstanceOf[typings.csstype.csstypeStrings.right]
+  inline def right: "right" = "right".asInstanceOf["right"]
   
-  inline def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
   
-  inline def verso: typings.csstype.csstypeStrings.verso = "verso".asInstanceOf[typings.csstype.csstypeStrings.verso]
+  inline def verso: "verso" = "verso".asInstanceOf["verso"]
 }

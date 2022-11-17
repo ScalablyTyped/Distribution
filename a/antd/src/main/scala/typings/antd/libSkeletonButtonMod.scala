@@ -1,11 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdStrings.circle
-import typings.antd.antdStrings.large
-import typings.antd.antdStrings.round
-import typings.antd.antdStrings.small
-import typings.antd.antdStrings.square
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
@@ -29,9 +24,9 @@ object libSkeletonButtonMod extends Shortcut {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var shape: js.UndefOr[circle | square | round | typings.antd.antdStrings.default] = js.undefined
+    var shape: js.UndefOr["circle" | "square" | "round" | "default"] = js.undefined
     
-    var size: js.UndefOr[large | small | typings.antd.antdStrings.default] = js.undefined
+    var size: js.UndefOr["large" | "small" | "default"] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
@@ -60,11 +55,11 @@ object libSkeletonButtonMod extends Shortcut {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setShape(value: circle | square | round | typings.antd.antdStrings.default): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: "circle" | "square" | "round" | "default"): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      inline def setSize(value: large | small | typings.antd.antdStrings.default): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "large" | "small" | "default"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

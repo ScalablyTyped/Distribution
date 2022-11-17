@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `99` extends StObject {
   
-  var `type`: typings.babelTraverse.babelTraverseStrings.Identifier
+  var `type`: "Identifier"
 }
 object `99` {
   
@@ -18,6 +18,6 @@ object `99` {
   
   extension [Self <: `99`](x: Self) {
     
-    inline def setType(value: typings.babelTraverse.babelTraverseStrings.Identifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Identifier"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

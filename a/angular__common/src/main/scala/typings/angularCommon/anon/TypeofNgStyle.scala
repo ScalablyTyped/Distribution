@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable3
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngStyle]`
 import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.KeyValueDiffers
 import typings.angularCore.mod.Renderer2
@@ -24,13 +22,14 @@ trait TypeofNgStyle
   
   var ɵdir: ɵɵDirectiveDeclaration[
     typings.angularCommon.mod.NgStyle, 
-    `[ngStyle]`, 
+    "[ngStyle]", 
     scala.Nothing, 
     NgStyle, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[typings.angularCommon.mod.NgStyle, scala.Nothing] = js.native

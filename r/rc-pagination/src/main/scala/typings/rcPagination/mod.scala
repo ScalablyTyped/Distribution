@@ -1,10 +1,5 @@
 package typings.rcPagination
 
-import typings.rcPagination.rcPaginationStrings.`jump-next`
-import typings.rcPagination.rcPaginationStrings.`jump-prev`
-import typings.rcPagination.rcPaginationStrings.next
-import typings.rcPagination.rcPaginationStrings.page
-import typings.rcPagination.rcPaginationStrings.prev
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
@@ -255,7 +250,7 @@ object mod {
     var itemRender: js.UndefOr[
         js.Function3[
           /* page */ Double, 
-          /* type */ page | prev | next | `jump-prev` | `jump-next`, 
+          /* type */ "page" | "prev" | "next" | "jump-prev" | "jump-next", 
           /* element */ ReactNode, 
           ReactNode
         ]
@@ -339,7 +334,7 @@ object mod {
       inline def setHideOnSinglePageUndefined: Self = StObject.set(x, "hideOnSinglePage", js.undefined)
       
       inline def setItemRender(
-        value: (/* page */ Double, /* type */ page | prev | next | `jump-prev` | `jump-next`, /* element */ ReactNode) => ReactNode
+        value: (/* page */ Double, /* type */ "page" | "prev" | "next" | "jump-prev" | "jump-next", /* element */ ReactNode) => ReactNode
       ): Self = StObject.set(x, "itemRender", js.Any.fromFunction3(value))
       
       inline def setItemRenderUndefined: Self = StObject.set(x, "itemRender", js.undefined)

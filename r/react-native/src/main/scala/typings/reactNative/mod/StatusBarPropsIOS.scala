@@ -1,8 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.fade
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.slide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +19,7 @@ trait StatusBarPropsIOS extends StObject {
     *
     * @platform ios
     */
-  var showHideTransition: js.UndefOr[Null | fade | slide | none] = js.undefined
+  var showHideTransition: js.UndefOr[Null | "fade" | "slide" | "none"] = js.undefined
 }
 object StatusBarPropsIOS {
   
@@ -37,7 +34,7 @@ object StatusBarPropsIOS {
     
     inline def setNetworkActivityIndicatorVisibleUndefined: Self = StObject.set(x, "networkActivityIndicatorVisible", js.undefined)
     
-    inline def setShowHideTransition(value: fade | slide | none): Self = StObject.set(x, "showHideTransition", value.asInstanceOf[js.Any])
+    inline def setShowHideTransition(value: "fade" | "slide" | "none"): Self = StObject.set(x, "showHideTransition", value.asInstanceOf[js.Any])
     
     inline def setShowHideTransitionNull: Self = StObject.set(x, "showHideTransition", null)
     

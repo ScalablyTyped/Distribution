@@ -1,14 +1,11 @@
 package typings.angularCompilerCli.anon
 
 import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcDiMod.ConstructorDepError
-import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcDiMod.ConstructorDeps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Errors
-  extends StObject
-     with ConstructorDeps {
+trait Errors extends StObject {
   
   var deps: Null
   

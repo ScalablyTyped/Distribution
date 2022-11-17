@@ -1,40 +1,5 @@
 package typings.jsoncParser
 
-import typings.jsoncParser.jsoncParserInts.`0`
-import typings.jsoncParser.jsoncParserInts.`10`
-import typings.jsoncParser.jsoncParserInts.`11`
-import typings.jsoncParser.jsoncParserInts.`12`
-import typings.jsoncParser.jsoncParserInts.`13`
-import typings.jsoncParser.jsoncParserInts.`14`
-import typings.jsoncParser.jsoncParserInts.`15`
-import typings.jsoncParser.jsoncParserInts.`16`
-import typings.jsoncParser.jsoncParserInts.`17`
-import typings.jsoncParser.jsoncParserInts.`1`
-import typings.jsoncParser.jsoncParserInts.`2`
-import typings.jsoncParser.jsoncParserInts.`3`
-import typings.jsoncParser.jsoncParserInts.`4`
-import typings.jsoncParser.jsoncParserInts.`5`
-import typings.jsoncParser.jsoncParserInts.`6`
-import typings.jsoncParser.jsoncParserInts.`7`
-import typings.jsoncParser.jsoncParserInts.`8`
-import typings.jsoncParser.jsoncParserInts.`9`
-import typings.jsoncParser.jsoncParserStrings.CloseBraceExpected
-import typings.jsoncParser.jsoncParserStrings.CloseBracketExpected
-import typings.jsoncParser.jsoncParserStrings.ColonExpected
-import typings.jsoncParser.jsoncParserStrings.CommaExpected
-import typings.jsoncParser.jsoncParserStrings.EndOfFileExpected
-import typings.jsoncParser.jsoncParserStrings.InvalidCharacter
-import typings.jsoncParser.jsoncParserStrings.InvalidCommentToken
-import typings.jsoncParser.jsoncParserStrings.InvalidEscapeCharacter
-import typings.jsoncParser.jsoncParserStrings.InvalidNumberFormat
-import typings.jsoncParser.jsoncParserStrings.InvalidSymbol
-import typings.jsoncParser.jsoncParserStrings.InvalidUnicode
-import typings.jsoncParser.jsoncParserStrings.PropertyNameExpected
-import typings.jsoncParser.jsoncParserStrings.UnexpectedEndOfComment
-import typings.jsoncParser.jsoncParserStrings.UnexpectedEndOfNumber
-import typings.jsoncParser.jsoncParserStrings.UnexpectedEndOfString
-import typings.jsoncParser.jsoncParserStrings.ValueExpected
-import typings.jsoncParser.jsoncParserStrings.`Lessthansignunknown ParseErrorCodeGreaterthansign`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,7 +41,7 @@ object mod {
   inline def parseTree(text: String, errors: js.Array[ParseError], options: ParseOptions): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTree")(text.asInstanceOf[js.Any], errors.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
   inline def parseTree(text: String, errors: Unit, options: ParseOptions): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTree")(text.asInstanceOf[js.Any], errors.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
   
-  inline def printParseErrorCode(code: ParseErrorCode): InvalidSymbol | InvalidNumberFormat | PropertyNameExpected | ValueExpected | ColonExpected | CommaExpected | CloseBraceExpected | CloseBracketExpected | EndOfFileExpected | InvalidCommentToken | UnexpectedEndOfComment | UnexpectedEndOfString | UnexpectedEndOfNumber | InvalidUnicode | InvalidEscapeCharacter | InvalidCharacter | (`Lessthansignunknown ParseErrorCodeGreaterthansign`) = ^.asInstanceOf[js.Dynamic].applyDynamic("printParseErrorCode")(code.asInstanceOf[js.Any]).asInstanceOf[InvalidSymbol | InvalidNumberFormat | PropertyNameExpected | ValueExpected | ColonExpected | CommaExpected | CloseBraceExpected | CloseBracketExpected | EndOfFileExpected | InvalidCommentToken | UnexpectedEndOfComment | UnexpectedEndOfString | UnexpectedEndOfNumber | InvalidUnicode | InvalidEscapeCharacter | InvalidCharacter | (`Lessthansignunknown ParseErrorCodeGreaterthansign`)]
+  inline def printParseErrorCode(code: ParseErrorCode): "InvalidSymbol" | "InvalidNumberFormat" | "PropertyNameExpected" | "ValueExpected" | "ColonExpected" | "CommaExpected" | "CloseBraceExpected" | "CloseBracketExpected" | "EndOfFileExpected" | "InvalidCommentToken" | "UnexpectedEndOfComment" | "UnexpectedEndOfString" | "UnexpectedEndOfNumber" | "InvalidUnicode" | "InvalidEscapeCharacter" | "InvalidCharacter" | ("<unknown ParseErrorCode>") = ^.asInstanceOf[js.Dynamic].applyDynamic("printParseErrorCode")(code.asInstanceOf[js.Any]).asInstanceOf["InvalidSymbol" | "InvalidNumberFormat" | "PropertyNameExpected" | "ValueExpected" | "ColonExpected" | "CommaExpected" | "CloseBraceExpected" | "CloseBracketExpected" | "EndOfFileExpected" | "InvalidCommentToken" | "UnexpectedEndOfComment" | "UnexpectedEndOfString" | "UnexpectedEndOfNumber" | "InvalidUnicode" | "InvalidEscapeCharacter" | "InvalidCharacter" | ("<unknown ParseErrorCode>")]
   
   inline def stripComments(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripComments")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def stripComments(text: String, replaceCh: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stripComments")(text.asInstanceOf[js.Any], replaceCh.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -609,32 +574,23 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.jsoncParser.jsoncParserStrings.`object`
-    - typings.jsoncParser.jsoncParserStrings.array
-    - typings.jsoncParser.jsoncParserStrings.property
-    - typings.jsoncParser.jsoncParserStrings.string
-    - typings.jsoncParser.jsoncParserStrings.number
-    - typings.jsoncParser.jsoncParserStrings.boolean
-    - typings.jsoncParser.jsoncParserStrings.`null`
-  */
-  trait NodeType extends StObject
   object NodeType {
     
-    inline def array: typings.jsoncParser.jsoncParserStrings.array = "array".asInstanceOf[typings.jsoncParser.jsoncParserStrings.array]
+    inline def array: "array" = "array".asInstanceOf["array"]
     
-    inline def boolean: typings.jsoncParser.jsoncParserStrings.boolean = "boolean".asInstanceOf[typings.jsoncParser.jsoncParserStrings.boolean]
+    inline def boolean: "boolean" = "boolean".asInstanceOf["boolean"]
     
-    inline def `null`: typings.jsoncParser.jsoncParserStrings.`null` = "null".asInstanceOf[typings.jsoncParser.jsoncParserStrings.`null`]
+    inline def `null`: "null" = "null".asInstanceOf["null"]
     
-    inline def number: typings.jsoncParser.jsoncParserStrings.number = "number".asInstanceOf[typings.jsoncParser.jsoncParserStrings.number]
+    inline def number: "number" = "number".asInstanceOf["number"]
     
-    inline def `object`: typings.jsoncParser.jsoncParserStrings.`object` = "object".asInstanceOf[typings.jsoncParser.jsoncParserStrings.`object`]
+    inline def `object`: "object" = "object".asInstanceOf["object"]
     
-    inline def property: typings.jsoncParser.jsoncParserStrings.property = "property".asInstanceOf[typings.jsoncParser.jsoncParserStrings.property]
+    inline def property: "property" = "property".asInstanceOf["property"]
     
-    inline def string: typings.jsoncParser.jsoncParserStrings.string = "string".asInstanceOf[typings.jsoncParser.jsoncParserStrings.string]
+    inline def string: "string" = "string".asInstanceOf["string"]
   }
+  type NodeType = "object" | "array" | "property" | "string" | "number" | "boolean" | "null"
   
   trait ParseError extends StObject {
     
@@ -661,59 +617,41 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.jsoncParser.jsoncParserInts.`1`
-    - typings.jsoncParser.jsoncParserInts.`2`
-    - typings.jsoncParser.jsoncParserInts.`3`
-    - typings.jsoncParser.jsoncParserInts.`4`
-    - typings.jsoncParser.jsoncParserInts.`5`
-    - typings.jsoncParser.jsoncParserInts.`6`
-    - typings.jsoncParser.jsoncParserInts.`7`
-    - typings.jsoncParser.jsoncParserInts.`8`
-    - typings.jsoncParser.jsoncParserInts.`9`
-    - typings.jsoncParser.jsoncParserInts.`10`
-    - typings.jsoncParser.jsoncParserInts.`11`
-    - typings.jsoncParser.jsoncParserInts.`12`
-    - typings.jsoncParser.jsoncParserInts.`13`
-    - typings.jsoncParser.jsoncParserInts.`14`
-    - typings.jsoncParser.jsoncParserInts.`15`
-    - typings.jsoncParser.jsoncParserInts.`16`
-  */
-  trait ParseErrorCode extends StObject
   object ParseErrorCode {
     
-    inline def CloseBraceExpected: `7` = 7.asInstanceOf[`7`]
+    inline def CloseBraceExpected: 7 = 7.asInstanceOf[7]
     
-    inline def CloseBracketExpected: `8` = 8.asInstanceOf[`8`]
+    inline def CloseBracketExpected: 8 = 8.asInstanceOf[8]
     
-    inline def ColonExpected: `5` = 5.asInstanceOf[`5`]
+    inline def ColonExpected: 5 = 5.asInstanceOf[5]
     
-    inline def CommaExpected: `6` = 6.asInstanceOf[`6`]
+    inline def CommaExpected: 6 = 6.asInstanceOf[6]
     
-    inline def EndOfFileExpected: `9` = 9.asInstanceOf[`9`]
+    inline def EndOfFileExpected: 9 = 9.asInstanceOf[9]
     
-    inline def InvalidCharacter: `16` = 16.asInstanceOf[`16`]
+    inline def InvalidCharacter: 16 = 16.asInstanceOf[16]
     
-    inline def InvalidCommentToken: `10` = 10.asInstanceOf[`10`]
+    inline def InvalidCommentToken: 10 = 10.asInstanceOf[10]
     
-    inline def InvalidEscapeCharacter: `15` = 15.asInstanceOf[`15`]
+    inline def InvalidEscapeCharacter: 15 = 15.asInstanceOf[15]
     
-    inline def InvalidNumberFormat: `2` = 2.asInstanceOf[`2`]
+    inline def InvalidNumberFormat: 2 = 2.asInstanceOf[2]
     
-    inline def InvalidSymbol: `1` = 1.asInstanceOf[`1`]
+    inline def InvalidSymbol: 1 = 1.asInstanceOf[1]
     
-    inline def InvalidUnicode: `14` = 14.asInstanceOf[`14`]
+    inline def InvalidUnicode: 14 = 14.asInstanceOf[14]
     
-    inline def PropertyNameExpected: `3` = 3.asInstanceOf[`3`]
+    inline def PropertyNameExpected: 3 = 3.asInstanceOf[3]
     
-    inline def UnexpectedEndOfComment: `11` = 11.asInstanceOf[`11`]
+    inline def UnexpectedEndOfComment: 11 = 11.asInstanceOf[11]
     
-    inline def UnexpectedEndOfNumber: `13` = 13.asInstanceOf[`13`]
+    inline def UnexpectedEndOfNumber: 13 = 13.asInstanceOf[13]
     
-    inline def UnexpectedEndOfString: `12` = 12.asInstanceOf[`12`]
+    inline def UnexpectedEndOfString: 12 = 12.asInstanceOf[12]
     
-    inline def ValueExpected: `4` = 4.asInstanceOf[`4`]
+    inline def ValueExpected: 4 = 4.asInstanceOf[4]
   }
+  type ParseErrorCode = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16
   
   trait ParseOptions extends StObject {
     
@@ -773,89 +711,61 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.jsoncParser.jsoncParserInts.`0`
-    - typings.jsoncParser.jsoncParserInts.`1`
-    - typings.jsoncParser.jsoncParserInts.`2`
-    - typings.jsoncParser.jsoncParserInts.`3`
-    - typings.jsoncParser.jsoncParserInts.`4`
-    - typings.jsoncParser.jsoncParserInts.`5`
-    - typings.jsoncParser.jsoncParserInts.`6`
-  */
-  trait ScanError extends StObject
   object ScanError {
     
-    inline def InvalidCharacter: `6` = 6.asInstanceOf[`6`]
+    inline def InvalidCharacter: 6 = 6.asInstanceOf[6]
     
-    inline def InvalidEscapeCharacter: `5` = 5.asInstanceOf[`5`]
+    inline def InvalidEscapeCharacter: 5 = 5.asInstanceOf[5]
     
-    inline def InvalidUnicode: `4` = 4.asInstanceOf[`4`]
+    inline def InvalidUnicode: 4 = 4.asInstanceOf[4]
     
-    inline def None: `0` = 0.asInstanceOf[`0`]
+    inline def None: 0 = 0.asInstanceOf[0]
     
-    inline def UnexpectedEndOfComment: `1` = 1.asInstanceOf[`1`]
+    inline def UnexpectedEndOfComment: 1 = 1.asInstanceOf[1]
     
-    inline def UnexpectedEndOfNumber: `3` = 3.asInstanceOf[`3`]
+    inline def UnexpectedEndOfNumber: 3 = 3.asInstanceOf[3]
     
-    inline def UnexpectedEndOfString: `2` = 2.asInstanceOf[`2`]
+    inline def UnexpectedEndOfString: 2 = 2.asInstanceOf[2]
   }
+  type ScanError = 0 | 1 | 2 | 3 | 4 | 5 | 6
   
   type Segment = String | Double
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.jsoncParser.jsoncParserInts.`1`
-    - typings.jsoncParser.jsoncParserInts.`2`
-    - typings.jsoncParser.jsoncParserInts.`3`
-    - typings.jsoncParser.jsoncParserInts.`4`
-    - typings.jsoncParser.jsoncParserInts.`5`
-    - typings.jsoncParser.jsoncParserInts.`6`
-    - typings.jsoncParser.jsoncParserInts.`7`
-    - typings.jsoncParser.jsoncParserInts.`8`
-    - typings.jsoncParser.jsoncParserInts.`9`
-    - typings.jsoncParser.jsoncParserInts.`10`
-    - typings.jsoncParser.jsoncParserInts.`11`
-    - typings.jsoncParser.jsoncParserInts.`12`
-    - typings.jsoncParser.jsoncParserInts.`13`
-    - typings.jsoncParser.jsoncParserInts.`14`
-    - typings.jsoncParser.jsoncParserInts.`15`
-    - typings.jsoncParser.jsoncParserInts.`16`
-    - typings.jsoncParser.jsoncParserInts.`17`
-  */
-  trait SyntaxKind extends StObject
   object SyntaxKind {
     
-    inline def BlockCommentTrivia: `13` = 13.asInstanceOf[`13`]
+    inline def BlockCommentTrivia: 13 = 13.asInstanceOf[13]
     
-    inline def CloseBraceToken: `2` = 2.asInstanceOf[`2`]
+    inline def CloseBraceToken: 2 = 2.asInstanceOf[2]
     
-    inline def CloseBracketToken: `4` = 4.asInstanceOf[`4`]
+    inline def CloseBracketToken: 4 = 4.asInstanceOf[4]
     
-    inline def ColonToken: `6` = 6.asInstanceOf[`6`]
+    inline def ColonToken: 6 = 6.asInstanceOf[6]
     
-    inline def CommaToken: `5` = 5.asInstanceOf[`5`]
+    inline def CommaToken: 5 = 5.asInstanceOf[5]
     
-    inline def EOF: `17` = 17.asInstanceOf[`17`]
+    inline def EOF: 17 = 17.asInstanceOf[17]
     
-    inline def FalseKeyword: `9` = 9.asInstanceOf[`9`]
+    inline def FalseKeyword: 9 = 9.asInstanceOf[9]
     
-    inline def LineBreakTrivia: `14` = 14.asInstanceOf[`14`]
+    inline def LineBreakTrivia: 14 = 14.asInstanceOf[14]
     
-    inline def LineCommentTrivia: `12` = 12.asInstanceOf[`12`]
+    inline def LineCommentTrivia: 12 = 12.asInstanceOf[12]
     
-    inline def NullKeyword: `7` = 7.asInstanceOf[`7`]
+    inline def NullKeyword: 7 = 7.asInstanceOf[7]
     
-    inline def NumericLiteral: `11` = 11.asInstanceOf[`11`]
+    inline def NumericLiteral: 11 = 11.asInstanceOf[11]
     
-    inline def OpenBraceToken: `1` = 1.asInstanceOf[`1`]
+    inline def OpenBraceToken: 1 = 1.asInstanceOf[1]
     
-    inline def OpenBracketToken: `3` = 3.asInstanceOf[`3`]
+    inline def OpenBracketToken: 3 = 3.asInstanceOf[3]
     
-    inline def StringLiteral: `10` = 10.asInstanceOf[`10`]
+    inline def StringLiteral: 10 = 10.asInstanceOf[10]
     
-    inline def Trivia: `15` = 15.asInstanceOf[`15`]
+    inline def Trivia: 15 = 15.asInstanceOf[15]
     
-    inline def TrueKeyword: `8` = 8.asInstanceOf[`8`]
+    inline def TrueKeyword: 8 = 8.asInstanceOf[8]
     
-    inline def Unknown: `16` = 16.asInstanceOf[`16`]
+    inline def Unknown: 16 = 16.asInstanceOf[16]
   }
+  type SyntaxKind = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17
 }

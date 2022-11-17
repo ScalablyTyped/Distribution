@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.rcCascader.esCascaderMod.DefaultOptionType
 import typings.rcCascader.esCascaderMod.InternalFieldNames
 import typings.rcCascader.esCascaderMod.SingleValueType
-import typings.rcCascader.rcCascaderStrings.click
-import typings.rcCascader.rcCascaderStrings.hover
 import typings.react.mod.CSSProperties
 import typings.react.mod.Context
 import typings.react.mod.ReactNode
@@ -31,7 +29,7 @@ object esContextMod extends Shortcut {
     
     var expandIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var expandTrigger: js.UndefOr[hover | click] = js.undefined
+    var expandTrigger: js.UndefOr["hover" | "click"] = js.undefined
     
     var fieldNames: InternalFieldNames
     
@@ -84,7 +82,7 @@ object esContextMod extends Shortcut {
       
       inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
       
-      inline def setExpandTrigger(value: hover | click): Self = StObject.set(x, "expandTrigger", value.asInstanceOf[js.Any])
+      inline def setExpandTrigger(value: "hover" | "click"): Self = StObject.set(x, "expandTrigger", value.asInstanceOf[js.Any])
       
       inline def setExpandTriggerUndefined: Self = StObject.set(x, "expandTrigger", js.undefined)
       

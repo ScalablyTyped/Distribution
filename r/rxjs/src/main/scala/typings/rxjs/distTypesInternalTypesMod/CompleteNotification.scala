@@ -1,15 +1,12 @@
 package typings.rxjs.distTypesInternalTypesMod
 
-import typings.rxjs.rxjsStrings.C
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CompleteNotification
-  extends StObject
-     with ObservableNotification[Any] {
+trait CompleteNotification extends StObject {
   
-  var kind: C
+  var kind: "C"
 }
 object CompleteNotification {
   
@@ -20,6 +17,6 @@ object CompleteNotification {
   
   extension [Self <: CompleteNotification](x: Self) {
     
-    inline def setKind(value: C): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "C"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

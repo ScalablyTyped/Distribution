@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.ClassProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `192` extends StObject {
   
-  var `type`: ClassProperty
+  var `type`: "ClassProperty"
 }
 object `192` {
   
@@ -19,6 +18,6 @@ object `192` {
   
   extension [Self <: `192`](x: Self) {
     
-    inline def setType(value: ClassProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ClassProperty"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

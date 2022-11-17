@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.cuechange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,16 +20,19 @@ trait TextTrack
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_cuechange(`type`: cuechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_cuechange")
+  def addEventListener(`type`: "cuechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_cuechange(
-    `type`: cuechange,
+  @scala.annotation.targetName("addEventListener_cuechange")
+  def addEventListener(
+    `type`: "cuechange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_cuechange(
-    `type`: cuechange,
+  @scala.annotation.targetName("addEventListener_cuechange")
+  def addEventListener(
+    `type`: "cuechange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -82,16 +84,19 @@ trait TextTrack
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_cuechange(`type`: cuechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_cuechange")
+  def removeEventListener(`type`: "cuechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_cuechange(
-    `type`: cuechange,
+  @scala.annotation.targetName("removeEventListener_cuechange")
+  def removeEventListener(
+    `type`: "cuechange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_cuechange(
-    `type`: cuechange,
+  @scala.annotation.targetName("removeEventListener_cuechange")
+  def removeEventListener(
+    `type`: "cuechange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

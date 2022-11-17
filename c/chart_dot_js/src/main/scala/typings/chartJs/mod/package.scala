@@ -1,173 +1,87 @@
 package typings.chartJs.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.anon.CanvasHTMLCanvasElement
-import typings.chartJs.anon.Fn
-import typings.chartJs.chartJsBooleans.`false`
+import org.scalablytyped.runtime.Instantiable0
+import typings.chartJs.distChunksHelpersDotcoreMod.AnyObject
+import typings.chartJs.distChunksHelpersDotcoreMod.C_
+import typings.chartJs.distChunksHelpersDotcoreMod.TimeUnit
+import typings.chartJs.distChunksHelpersDotcoreMod.b
 import typings.chartJs.mod.^
-import typings.chartJs.typesBasicMod.AnyObject
-import typings.chartJs.typesElementMod.Element
-import typings.chartJs.typesGeometricMod.Point
-import typings.chartJs.typesUtilsMod.DeepPartial
-import typings.chartJs.typesUtilsMod.DistributiveArray
-import typings.std.ArrayLike
-import typings.std.CanvasRenderingContext2D
-import typings.std.HTMLCanvasElement
-import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BarController = DatasetController[
-ChartType, 
-Element[AnyObject, AnyObject], 
-Element[AnyObject, AnyObject], 
-ParsedDataType[ChartType]]
+inline def animator: Animator_ = ^.asInstanceOf[js.Dynamic].selectDynamic("animator").asInstanceOf[Animator_]
 
-type BubbleController = DatasetController[
-ChartType, 
-Element[AnyObject, AnyObject], 
-Element[AnyObject, AnyObject], 
-ParsedDataType[ChartType]]
+inline def detectPlatform(canvas: Any): Instantiable0[BasicPlatform | DomPlatform] = ^.asInstanceOf[js.Dynamic].applyDynamic("_detectPlatform")(canvas.asInstanceOf[js.Any]).asInstanceOf[Instantiable0[BasicPlatform | DomPlatform]]
 
-type CategoryScale[O /* <: CategoryScaleOptions */] = Scale[O]
+type Animation = Animation1
 
-inline def Decimation: Plugin[ChartType, AnyObject] = ^.asInstanceOf[js.Dynamic].selectDynamic("Decimation").asInstanceOf[Plugin[ChartType, AnyObject]]
+type Chart = C_
 
-inline def Filler: Plugin[ChartType, AnyObject] = ^.asInstanceOf[js.Dynamic].selectDynamic("Filler").asInstanceOf[Plugin[ChartType, AnyObject]]
+type Chart1 = C_
 
-inline def Legend: Plugin[ChartType, AnyObject] = ^.asInstanceOf[js.Dynamic].selectDynamic("Legend").asInstanceOf[Plugin[ChartType, AnyObject]]
+type Chart2 = C_
 
-type LineController = DatasetController[
-ChartType, 
-Element[AnyObject, AnyObject], 
-Element[AnyObject, AnyObject], 
-ParsedDataType[ChartType]]
+type ChartEvent = typings.chartJs.distChunksHelpersDotcoreMod.ChartEvent1
 
-type LinearScale[O /* <: LinearScaleOptions */] = Scale[O]
+type ChartEvent1 = typings.chartJs.distChunksHelpersDotcoreMod.ChartEvent1
 
-type LogarithmicScale[O /* <: LogarithmicScaleOptions */] = Scale[O]
+type DateAdapter = typings.chartJs.distChunksHelpersDotcoreMod.DateAdapter[AnyObject]
 
 type PieController = DoughnutController
 
-type RadarController = DatasetController[
-ChartType, 
-Element[AnyObject, AnyObject], 
-Element[AnyObject, AnyObject], 
-ParsedDataType[ChartType]]
+type PointElement = b
 
-type ScatterController = LineController
+type Unit = TimeUnit
 
-inline def SubTitle: Plugin[ChartType, AnyObject] = ^.asInstanceOf[js.Dynamic].selectDynamic("SubTitle").asInstanceOf[Plugin[ChartType, AnyObject]]
+/* was `typeof BarController` */
+type controllersBarController = BarController
 
-type TimeSeriesScale[O /* <: TimeScaleOptions */] = TimeScale[O]
+/* was `typeof BubbleController` */
+type controllersBubbleController = BubbleController
 
-inline def Title: Plugin[ChartType, AnyObject] = ^.asInstanceOf[js.Dynamic].selectDynamic("Title").asInstanceOf[Plugin[ChartType, AnyObject]]
+/* was `typeof DoughnutController` */
+type controllersDoughnutController = DoughnutController
 
-inline def defaults: Defaults_ = ^.asInstanceOf[js.Dynamic].selectDynamic("defaults").asInstanceOf[Defaults_]
+/* was `typeof LineController` */
+type controllersLineController = LineController
 
-inline def registerables: js.Array[ChartComponentLike] = ^.asInstanceOf[js.Dynamic].selectDynamic("registerables").asInstanceOf[js.Array[ChartComponentLike]]
+/* was `typeof PieController` */
+type controllersPieController = PieController
 
-inline def registry: Registry_ = ^.asInstanceOf[js.Dynamic].selectDynamic("registry").asInstanceOf[Registry_]
+/* was `typeof PolarAreaController` */
+type controllersPolarAreaController = PolarAreaController
 
-type AnimationsSpec[TType /* <: ChartType */] = StringDictionary[`false` | (AnimationSpec[TType] & Fn[TType])]
+/* was `typeof RadarController` */
+type controllersRadarController = RadarController
 
-type ChartComponentLike = ChartComponent | (js.Array[ChartComponent | (Plugin[ChartType, AnyObject])]) | StringDictionary[ChartComponent] | (Plugin[ChartType, AnyObject])
+/* was `typeof ScatterController` */
+type controllersScatterController = ScatterController
 
-type ChartDataset[TType /* <: ChartType */, TData] = (DeepPartial[
-/* import warning: importer.ImportType#apply Failed type conversion: chart.js.anon.keyinChartTypetypekeyChar[TType] */ js.Any]) & (ChartDatasetProperties[TType, TData])
+/* was `typeof ArcElement` */
+type elementsArcElement = ArcElement
 
-type ChartDatasetCustomTypesPerDataset[TType /* <: ChartType */, TData] = (DeepPartial[
-/* import warning: importer.ImportType#apply Failed type conversion: chart.js.anon.keyinChartTypetypekeyChar[TType] */ js.Any]) & (ChartDatasetPropertiesCustomTypesPerDataset[TType, TData])
+/* was `typeof BarElement` */
+type elementsBarElement = BarElement
 
-type ChartItem = String | CanvasRenderingContext2D | HTMLCanvasElement | CanvasHTMLCanvasElement | (ArrayLike[CanvasRenderingContext2D | HTMLCanvasElement])
+/* was `typeof LineElement` */
+type elementsLineElement = LineElement
 
-type ChartMeta[TElement /* <: Element[AnyObject, AnyObject] */, TDatasetElement /* <: Element[AnyObject, AnyObject] */, // TODO - V4, move this to the first parameter.
-// When this was introduced, doing so was a breaking change
-TType /* <: ChartType */] = (DeepPartial[
-/* import warning: importer.ImportType#apply Failed type conversion: chart.js.anon.keyinChartTypeChartTypeRe[TType] */ js.Any]) & (ChartMetaCommon[TElement, TDatasetElement])
+/* was `typeof CategoryScale` */
+type scalesCategoryScale = CategoryScale
 
-type ChartOptions[TType /* <: ChartType */] = DeepPartial[
-CoreChartOptions[TType] & ElementChartOptions[TType] & PluginChartOptions[TType] & DatasetChartOptions[TType] & ScaleChartOptions[TType] & (/* import warning: importer.ImportType#apply Failed type conversion: chart.js.chart.js.ChartTypeRegistry[TType]['chartOptions'] */ js.Any)]
+/* was `typeof LinearScale` */
+type scalesLinearScale = LinearScale
 
-type DefaultDataPoint[TType /* <: ChartType */] = DistributiveArray[
-/* import warning: importer.ImportType#apply Failed type conversion: chart.js.chart.js.ChartTypeRegistry[TType]['defaultDataPoint'] */ js.Any]
+/* was `typeof LogarithmicScale` */
+type scalesLogarithmicScale = LogarithmicScale
 
-type DoughnutDataPoint = Double
+/* was `typeof RadialLinearScale` */
+type scalesRadialLinearScale = RadialLinearScale
 
-/* Rewritten from type alias, can be one of: 
-  - scala.Double
-  - java.lang.String
-  - typings.chartJs.anon.Value
-  - typings.chartJs.chartJsStrings.start
-  - typings.chartJs.chartJsStrings.end
-  - typings.chartJs.chartJsStrings.origin
-  - typings.chartJs.chartJsStrings.stack
-  - typings.chartJs.chartJsStrings.shape
-  - scala.Boolean
-*/
-type FillTarget = _FillTarget | Double | String | Boolean
+/* was `typeof TimeScale` */
+type scalesTimeScale = TimeScale
 
-type InteractionModeFunction = js.Function4[
-/* chart */ Chart[ChartType, DefaultDataPoint[ChartType], Any], 
-/* e */ ChartEvent, 
-/* options */ InteractionOptions, 
-/* useFinalPosition */ js.UndefOr[Boolean], 
-js.Array[InteractionItem]]
-
-type ParsedDataType[TType /* <: ChartType */] = /* import warning: importer.ImportType#apply Failed type conversion: chart.js.chart.js.ChartTypeRegistry[TType]['parsedDataType'] */ js.Any
-
-type PieAnimationOptions = DoughnutAnimationOptions
-
-type PieControllerChartOptions = DoughnutControllerChartOptions
-
-type PieControllerDatasetOptions = DoughnutControllerDatasetOptions
-
-type PieDataPoint = DoughnutDataPoint
-
-type PieMetaExtensions = DoughnutMetaExtensions
-
-/* Rewritten from type alias, can be one of: 
-  - typings.chartJs.chartJsStrings.circle
-  - typings.chartJs.chartJsStrings.cross
-  - typings.chartJs.chartJsStrings.crossRot
-  - typings.chartJs.chartJsStrings.dash
-  - typings.chartJs.chartJsStrings.line
-  - typings.chartJs.chartJsStrings.rect
-  - typings.chartJs.chartJsStrings.rectRounded
-  - typings.chartJs.chartJsStrings.rectRot
-  - typings.chartJs.chartJsStrings.star
-  - typings.chartJs.chartJsStrings.triangle
-  - typings.std.HTMLImageElement
-  - typings.std.HTMLCanvasElement
-*/
-type PointStyle = _PointStyle | HTMLImageElement | HTMLCanvasElement
-
-type PolarAreaAnimationOptions = DoughnutAnimationOptions
-
-type RadarControllerChartOptions = LineControllerChartOptions
-
-type ScaleOptions[TScale /* <: ScaleType */] = DeepPartial[ScaleOptionsByType[TScale]]
-
-type ScaleOptionsByType[TScale /* <: ScaleType */] = /* import warning: importer.ImportType#apply Failed type conversion: chart.js.anon.keyinScaleTypetypekeyScal[TScale] */ js.Any
-
-type ScatterControllerChartOptions = LineControllerChartOptions
-
-type ScatterControllerDatasetOptions = LineControllerDatasetOptions
-
-type Scriptable[T, TContext] = T | (js.Function2[/* ctx */ TContext, /* options */ AnyObject, js.UndefOr[T]])
-
-type ScriptableAndArray[T, TContext] = js.Array[T] | (Scriptable[T, TContext])
-
-type ScriptableAndScriptableOptions[T, TContext] = (Scriptable[T, TContext]) | (ScriptableOptions[T, TContext])
-
-type TooltipPositionerFunction[TType /* <: ChartType */] = js.ThisFunction2[
-/* this */ TooltipModel[TType], 
-/* items */ js.Array[ActiveElement], 
-/* eventPosition */ Point, 
-TooltipPosition | `false`]
-
-type TransitionsSpec[TType /* <: ChartType */] = StringDictionary[TransitionSpec[TType]]
-
-type UpdateMode = /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof UpdateModeEnum * / any */ String
+/* was `typeof TimeSeriesScale` */
+type scalesTimeSeriesScale = TimeSeriesScale

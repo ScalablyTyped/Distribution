@@ -1,6 +1,5 @@
 package typings.googleMaps.google.maps
 
-import typings.googleMaps.google.maps.places._LocationBias
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait CircleLiteral
   extends StObject
-     with CircleOptions
-     with _LocationBias {
+     with CircleOptions {
   
   /**
     * The center of the Circle.

@@ -1,19 +1,16 @@
 package typings.angularForms.anon
 
-import typings.angularForms.angularFormsStrings.disabled_
-import typings.angularForms.angularFormsStrings.formControl
-import typings.angularForms.angularFormsStrings.ngModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Form extends StObject {
   
-  var form: formControl
+  var form: "formControl"
   
-  var isDisabled: disabled_
+  var isDisabled: "disabled"
   
-  var model: ngModel
+  var model: "ngModel"
 }
 object Form {
   
@@ -24,10 +21,10 @@ object Form {
   
   extension [Self <: Form](x: Self) {
     
-    inline def setForm(value: formControl): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: "formControl"): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    inline def setIsDisabled(value: disabled_): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+    inline def setIsDisabled(value: "disabled"): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
-    inline def setModel(value: ngModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: "ngModel"): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
 }

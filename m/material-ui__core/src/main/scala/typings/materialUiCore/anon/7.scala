@@ -1,13 +1,12 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `7` extends StObject {
   
-  var button: `false`
+  var button: false
 }
 object `7` {
   
@@ -18,6 +17,6 @@ object `7` {
   
   extension [Self <: `7`](x: Self) {
     
-    inline def setButton(value: `false`): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: false): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
   }
 }

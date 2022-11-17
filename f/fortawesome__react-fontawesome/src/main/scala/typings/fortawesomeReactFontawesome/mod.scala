@@ -7,79 +7,6 @@ import typings.fortawesomeFontawesomeSvgCore.mod.PullProp
 import typings.fortawesomeFontawesomeSvgCore.mod.RotateProp
 import typings.fortawesomeFontawesomeSvgCore.mod.SizeProp
 import typings.fortawesomeFontawesomeSvgCore.mod.Transform
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings._empty
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.`additions removals`
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.`additions text`
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.`after-edge`
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.`before-edge`
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.`inline`
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.`removals additions`
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.`removals text`
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.`text additions`
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.`text removals`
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.`text-after-edge`
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.`text-before-edge`
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.`use-credentials`
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.additions
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.all
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.alphabetic
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.anonymous
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.ascending
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.assertive
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.auto
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.baseline
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.bevel
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.both
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.butt
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.central
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.copy
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.date
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.descending
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.dialog
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.evenodd
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.execute
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.grammar
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.grid
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.hanging
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.horizontal
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.ideographic
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.inherit
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.initial
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.isolated
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.linearRGB
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.link
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.list
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.listbox
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.location
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.mathematical
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.medial
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.menu
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.middle
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.miter
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.mixed
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.move
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.no
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.none
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.nonzero
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.off
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.other
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.page
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.polite
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.popup
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.removals
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.replace
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.round
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.sRGB
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.spelling
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.square
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.step
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.sum
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.terminal
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.text
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.time
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.tree
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.vertical
-import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.yes
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -142,31 +69,31 @@ object mod {
     
     var accentHeight: js.UndefOr[Double | String] = js.undefined
     
-    var accumulate: js.UndefOr[none | sum] = js.undefined
+    var accumulate: js.UndefOr["none" | "sum"] = js.undefined
     
-    var additive: js.UndefOr[replace | sum] = js.undefined
+    var additive: js.UndefOr["replace" | "sum"] = js.undefined
     
     var alignmentBaseline: js.UndefOr[
-        auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit
+        "auto" | "baseline" | "before-edge" | "text-before-edge" | "middle" | "central" | "after-edge" | "text-after-edge" | "ideographic" | "alphabetic" | "hanging" | "mathematical" | "inherit"
       ] = js.undefined
     
-    var allowReorder: js.UndefOr[no | yes] = js.undefined
+    var allowReorder: js.UndefOr["no" | "yes"] = js.undefined
     
     var alphabetic: js.UndefOr[Double | String] = js.undefined
     
     var amplitude: js.UndefOr[Double | String] = js.undefined
     
-    var arabicForm: js.UndefOr[initial | medial | terminal | isolated] = js.undefined
+    var arabicForm: js.UndefOr["initial" | "medial" | "terminal" | "isolated"] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -176,7 +103,7 @@ object mod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -184,7 +111,7 @@ object mod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -194,11 +121,11 @@ object mod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -208,7 +135,7 @@ object mod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -216,7 +143,7 @@ object mod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -224,12 +151,12 @@ object mod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -246,7 +173,7 @@ object mod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -306,7 +233,7 @@ object mod {
     
     var colorInterpolation: js.UndefOr[Double | String] = js.undefined
     
-    var colorInterpolationFilters: js.UndefOr[auto | sRGB | linearRGB | inherit] = js.undefined
+    var colorInterpolationFilters: js.UndefOr["auto" | "sRGB" | "linearRGB" | "inherit"] = js.undefined
     
     var colorProfile: js.UndefOr[Double | String] = js.undefined
     
@@ -316,7 +243,7 @@ object mod {
     
     var contentStyleType: js.UndefOr[Double | String] = js.undefined
     
-    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
+    var crossOrigin: js.UndefOr["anonymous" | "use-credentials" | ""] = js.undefined
     
     var cursor: js.UndefOr[Double | String] = js.undefined
     
@@ -366,7 +293,7 @@ object mod {
     
     var fillOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var fillRule: js.UndefOr[nonzero | evenodd | inherit] = js.undefined
+    var fillRule: js.UndefOr["nonzero" | "evenodd" | "inherit"] = js.undefined
     
     var filter: js.UndefOr[String] = js.undefined
     
@@ -382,7 +309,7 @@ object mod {
     
     var floodOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var focusable: js.UndefOr[Booleanish | auto] = js.undefined
+    var focusable: js.UndefOr[Booleanish | "auto"] = js.undefined
     
     var fontFamily: js.UndefOr[String] = js.undefined
     
@@ -826,9 +753,9 @@ object mod {
     
     var strokeDashoffset: js.UndefOr[String | Double] = js.undefined
     
-    var strokeLinecap: js.UndefOr[butt | round | square | inherit] = js.undefined
+    var strokeLinecap: js.UndefOr["butt" | "round" | "square" | "inherit"] = js.undefined
     
-    var strokeLinejoin: js.UndefOr[miter | round | bevel | inherit] = js.undefined
+    var strokeLinejoin: js.UndefOr["miter" | "round" | "bevel" | "inherit"] = js.undefined
     
     var strokeMiterlimit: js.UndefOr[Double | String] = js.undefined
     
@@ -983,21 +910,21 @@ object mod {
       
       inline def setAccentHeightUndefined: Self = StObject.set(x, "accentHeight", js.undefined)
       
-      inline def setAccumulate(value: none | sum): Self = StObject.set(x, "accumulate", value.asInstanceOf[js.Any])
+      inline def setAccumulate(value: "none" | "sum"): Self = StObject.set(x, "accumulate", value.asInstanceOf[js.Any])
       
       inline def setAccumulateUndefined: Self = StObject.set(x, "accumulate", js.undefined)
       
-      inline def setAdditive(value: replace | sum): Self = StObject.set(x, "additive", value.asInstanceOf[js.Any])
+      inline def setAdditive(value: "replace" | "sum"): Self = StObject.set(x, "additive", value.asInstanceOf[js.Any])
       
       inline def setAdditiveUndefined: Self = StObject.set(x, "additive", js.undefined)
       
       inline def setAlignmentBaseline(
-        value: auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit
+        value: "auto" | "baseline" | "before-edge" | "text-before-edge" | "middle" | "central" | "after-edge" | "text-after-edge" | "ideographic" | "alphabetic" | "hanging" | "mathematical" | "inherit"
       ): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
       
       inline def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
       
-      inline def setAllowReorder(value: no | yes): Self = StObject.set(x, "allowReorder", value.asInstanceOf[js.Any])
+      inline def setAllowReorder(value: "no" | "yes"): Self = StObject.set(x, "allowReorder", value.asInstanceOf[js.Any])
       
       inline def setAllowReorderUndefined: Self = StObject.set(x, "allowReorder", js.undefined)
       
@@ -1009,7 +936,7 @@ object mod {
       
       inline def setAmplitudeUndefined: Self = StObject.set(x, "amplitude", js.undefined)
       
-      inline def setArabicForm(value: initial | medial | terminal | isolated): Self = StObject.set(x, "arabicForm", value.asInstanceOf[js.Any])
+      inline def setArabicForm(value: "initial" | "medial" | "terminal" | "isolated"): Self = StObject.set(x, "arabicForm", value.asInstanceOf[js.Any])
       
       inline def setArabicFormUndefined: Self = StObject.set(x, "arabicForm", js.undefined)
       
@@ -1021,7 +948,7 @@ object mod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -1029,7 +956,7 @@ object mod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -1049,7 +976,7 @@ object mod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -1065,7 +992,7 @@ object mod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -1085,7 +1012,7 @@ object mod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -1093,7 +1020,7 @@ object mod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -1113,7 +1040,7 @@ object mod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -1129,7 +1056,7 @@ object mod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -1145,7 +1072,7 @@ object mod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -1154,7 +1081,7 @@ object mod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -1187,7 +1114,7 @@ object mod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -1303,7 +1230,7 @@ object mod {
       
       inline def setColorInterpolation(value: Double | String): Self = StObject.set(x, "colorInterpolation", value.asInstanceOf[js.Any])
       
-      inline def setColorInterpolationFilters(value: auto | sRGB | linearRGB | inherit): Self = StObject.set(x, "colorInterpolationFilters", value.asInstanceOf[js.Any])
+      inline def setColorInterpolationFilters(value: "auto" | "sRGB" | "linearRGB" | "inherit"): Self = StObject.set(x, "colorInterpolationFilters", value.asInstanceOf[js.Any])
       
       inline def setColorInterpolationFiltersUndefined: Self = StObject.set(x, "colorInterpolationFilters", js.undefined)
       
@@ -1327,7 +1254,7 @@ object mod {
       
       inline def setContentStyleTypeUndefined: Self = StObject.set(x, "contentStyleType", js.undefined)
       
-      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: "anonymous" | "use-credentials" | ""): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -1425,7 +1352,7 @@ object mod {
       
       inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
       
-      inline def setFillRule(value: nonzero | evenodd | inherit): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
+      inline def setFillRule(value: "nonzero" | "evenodd" | "inherit"): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
       
       inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
       
@@ -1459,7 +1386,7 @@ object mod {
       
       inline def setFloodOpacityUndefined: Self = StObject.set(x, "floodOpacity", js.undefined)
       
-      inline def setFocusable(value: Booleanish | auto): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+      inline def setFocusable(value: Booleanish | "auto"): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
       
       inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
       
@@ -2349,11 +2276,11 @@ object mod {
       
       inline def setStrokeDashoffsetUndefined: Self = StObject.set(x, "strokeDashoffset", js.undefined)
       
-      inline def setStrokeLinecap(value: butt | round | square | inherit): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+      inline def setStrokeLinecap(value: "butt" | "round" | "square" | "inherit"): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
       
       inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
       
-      inline def setStrokeLinejoin(value: miter | round | bevel | inherit): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
+      inline def setStrokeLinejoin(value: "miter" | "round" | "bevel" | "inherit"): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
       
       inline def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
       

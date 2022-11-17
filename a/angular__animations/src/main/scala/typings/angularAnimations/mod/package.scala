@@ -1,7 +1,6 @@
 package typings.angularAnimations.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularAnimations.angularAnimationsStrings.Asterisk
 import typings.angularAnimations.anon.Params
 import typings.angularAnimations.mod.^
 import typings.std.Map
@@ -48,9 +47,11 @@ inline def stagger(timings: Double, animation: AnimationMetadata): AnimationStag
 inline def state(name: String, styles: AnimationStyleMetadata): AnimationStateMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("state")(name.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[AnimationStateMetadata]
 inline def state(name: String, styles: AnimationStyleMetadata, options: Params): AnimationStateMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("state")(name.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationStateMetadata]
 
-inline def style(tokens: js.Array[Asterisk | (StringDictionary[String | Double])]): AnimationStyleMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(tokens.asInstanceOf[js.Any]).asInstanceOf[AnimationStyleMetadata]
+@scala.annotation.targetName("style_")
+inline def style(tokens: "*"): AnimationStyleMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(tokens.asInstanceOf[js.Any]).asInstanceOf[AnimationStyleMetadata]
+@scala.annotation.targetName("style_")
+inline def style(tokens: js.Array["*" | (StringDictionary[String | Double])]): AnimationStyleMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(tokens.asInstanceOf[js.Any]).asInstanceOf[AnimationStyleMetadata]
 inline def style(tokens: StringDictionary[String | Double]): AnimationStyleMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(tokens.asInstanceOf[js.Any]).asInstanceOf[AnimationStyleMetadata]
-inline def style(tokens: Asterisk): AnimationStyleMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(tokens.asInstanceOf[js.Any]).asInstanceOf[AnimationStyleMetadata]
 
 inline def transition(stateChangeExpr: String, steps: js.Array[AnimationMetadata]): AnimationTransitionMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[AnimationTransitionMetadata]
 inline def transition(stateChangeExpr: String, steps: js.Array[AnimationMetadata], options: AnimationOptions): AnimationTransitionMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("transition")(stateChangeExpr.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationTransitionMetadata]
@@ -105,6 +106,8 @@ inline def useAnimation(animation: AnimationReferenceMetadata): AnimationAnimate
 inline def useAnimation(animation: AnimationReferenceMetadata, options: AnimationOptions): AnimationAnimateRefMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("useAnimation")(animation.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnimationAnimateRefMetadata]
 
 inline def ɵPRESTYLE: /* "!" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275PRE_STYLE").asInstanceOf[/* "!" */ String]
+
+type AnimationMetadataType = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
 
 type ɵStyleData = StringDictionary[String | Double]
 

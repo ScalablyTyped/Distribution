@@ -1,6 +1,5 @@
 package typings.react.mod
 
-import typings.react.reactStrings.pending
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ trait PendingThenable[T]
   extends StObject
      with typings.react.nextMod.reactAugmentingMod.ThenableImpl[T] {
   
-  var status: pending
+  var status: "pending"
 }
 object PendingThenable {
   
@@ -22,6 +21,6 @@ object PendingThenable {
   
   extension [Self <: PendingThenable[?], T](x: Self & PendingThenable[T]) {
     
-    inline def setStatus(value: pending): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: "pending"): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

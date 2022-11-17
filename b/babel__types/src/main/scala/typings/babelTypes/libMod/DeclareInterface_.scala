@@ -1,18 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.DeclareInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DeclareInterface_
   extends StObject
-     with BaseNode
-     with Declaration
-     with Flow
-     with FlowDeclaration
-     with Node
-     with Statement {
+     with BaseNode {
   
   var body: ObjectTypeAnnotation_
   
@@ -27,7 +21,7 @@ trait DeclareInterface_
   var typeParameters: js.UndefOr[TypeParameterDeclaration_ | Null] = js.undefined
   
   @JSName("type")
-  var type_DeclareInterface_ : DeclareInterface
+  var type_DeclareInterface_ : "DeclareInterface"
 }
 object DeclareInterface_ {
   
@@ -67,7 +61,7 @@ object DeclareInterface_ {
     
     inline def setMixinsVarargs(value: InterfaceExtends_ *): Self = StObject.set(x, "mixins", js.Array(value*))
     
-    inline def setType(value: DeclareInterface): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "DeclareInterface"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

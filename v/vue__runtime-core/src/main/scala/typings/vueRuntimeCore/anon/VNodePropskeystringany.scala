@@ -11,7 +11,6 @@ import typings.vueRuntimeCore.mod.VNode
 import typings.vueRuntimeCore.mod.VNodeMountHook
 import typings.vueRuntimeCore.mod.VNodeRef
 import typings.vueRuntimeCore.mod.VNodeUpdateHook
-import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,7 +117,7 @@ object VNodePropskeystringany {
           js.Object, 
           js.Object, 
           js.Object, 
-          `false`, 
+          false, 
           ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
           js.Object
         ]) | Null, /* refs */ Record[String, Any]) => Unit

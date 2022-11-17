@@ -1,14 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdStrings.error
-import typings.antd.antdStrings.finish
-import typings.antd.antdStrings.horizontal
-import typings.antd.antdStrings.navigation
-import typings.antd.antdStrings.process
-import typings.antd.antdStrings.small
-import typings.antd.antdStrings.vertical
-import typings.antd.antdStrings.wait
 import typings.rcSteps.anon.Description
 import typings.rcSteps.libStepsMod.ProgressDotRender
 import typings.react.mod.CSSProperties
@@ -41,7 +33,7 @@ object libStepsMod extends Shortcut {
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
-    var status: js.UndefOr[wait | process | finish | error] = js.undefined
+    var status: js.UndefOr["wait" | "process" | "finish" | "error"] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -78,7 +70,7 @@ object libStepsMod extends Shortcut {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setStatus(value: wait | process | finish | error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: "wait" | "process" | "finish" | "error"): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
@@ -104,7 +96,7 @@ object libStepsMod extends Shortcut {
     
     var current: js.UndefOr[Double] = js.undefined
     
-    var direction: js.UndefOr[horizontal | vertical] = js.undefined
+    var direction: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var iconPrefix: js.UndefOr[String] = js.undefined
     
@@ -112,7 +104,7 @@ object libStepsMod extends Shortcut {
     
     var items: js.UndefOr[js.Array[StepProps]] = js.undefined
     
-    var labelPlacement: js.UndefOr[horizontal | vertical] = js.undefined
+    var labelPlacement: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var onChange: js.UndefOr[js.Function1[/* current */ Double, Unit]] = js.undefined
     
@@ -124,13 +116,13 @@ object libStepsMod extends Shortcut {
     
     var responsive: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[typings.antd.antdStrings.default | small] = js.undefined
+    var size: js.UndefOr["default" | "small"] = js.undefined
     
-    var status: js.UndefOr[wait | process | finish | error] = js.undefined
+    var status: js.UndefOr["wait" | "process" | "finish" | "error"] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: js.UndefOr[typings.antd.antdStrings.default | navigation] = js.undefined
+    var `type`: js.UndefOr["default" | "navigation"] = js.undefined
   }
   object StepsProps {
     
@@ -153,7 +145,7 @@ object libStepsMod extends Shortcut {
       
       inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "horizontal" | "vertical"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -171,7 +163,7 @@ object libStepsMod extends Shortcut {
       
       inline def setItemsVarargs(value: StepProps*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setLabelPlacement(value: horizontal | vertical): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
+      inline def setLabelPlacement(value: "horizontal" | "vertical"): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
       
       inline def setLabelPlacementUndefined: Self = StObject.set(x, "labelPlacement", js.undefined)
       
@@ -197,11 +189,11 @@ object libStepsMod extends Shortcut {
       
       inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
       
-      inline def setSize(value: typings.antd.antdStrings.default | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "default" | "small"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setStatus(value: wait | process | finish | error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: "wait" | "process" | "finish" | "error"): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
@@ -209,7 +201,7 @@ object libStepsMod extends Shortcut {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setType(value: typings.antd.antdStrings.default | navigation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "default" | "navigation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }

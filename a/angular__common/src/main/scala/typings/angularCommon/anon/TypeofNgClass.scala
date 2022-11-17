@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable4
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngClass]`
 import typings.angularCommon.mod.NgClass
 import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.IterableDiffers
@@ -25,7 +23,17 @@ trait TypeofNgClass
       NgClass
     ] {
   
-  var ɵdir: ɵɵDirectiveDeclaration[NgClass, `[ngClass]`, scala.Nothing, Klass, js.Object, scala.Nothing, scala.Nothing, `true`] = js.native
+  var ɵdir: ɵɵDirectiveDeclaration[
+    NgClass, 
+    "[ngClass]", 
+    scala.Nothing, 
+    Klass, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    true, 
+    scala.Nothing
+  ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NgClass, scala.Nothing] = js.native
 }

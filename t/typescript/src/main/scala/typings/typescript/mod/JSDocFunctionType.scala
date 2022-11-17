@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JSDocFunctionType
   extends StObject
      with JSDocType
-     with SignatureDeclarationBase
-     with HasJSDoc
-     with SignatureDeclaration {
+     with SignatureDeclarationBase {
   
   @JSName("kind")
   val kind_JSDocFunctionType: typings.typescript.mod.SyntaxKind.JSDocFunctionType = js.native

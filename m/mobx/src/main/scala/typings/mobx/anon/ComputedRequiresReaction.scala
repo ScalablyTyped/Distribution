@@ -1,9 +1,5 @@
 package typings.mobx.anon
 
-import typings.mobx.mobxStrings.always
-import typings.mobx.mobxStrings.ifavailable
-import typings.mobx.mobxStrings.never
-import typings.mobx.mobxStrings.observed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +10,7 @@ trait ComputedRequiresReaction extends StObject {
   
   var disableErrorBoundaries: js.UndefOr[Boolean] = js.undefined
   
-  var enforceActions: js.UndefOr[never | always | observed] = js.undefined
+  var enforceActions: js.UndefOr["never" | "always" | "observed"] = js.undefined
   
   var isolateGlobalState: js.UndefOr[Boolean] = js.undefined
   
@@ -32,7 +28,7 @@ trait ComputedRequiresReaction extends StObject {
   
   var safeDescriptors: js.UndefOr[Boolean] = js.undefined
   
-  var useProxies: js.UndefOr[always | never | ifavailable] = js.undefined
+  var useProxies: js.UndefOr["always" | "never" | "ifavailable"] = js.undefined
 }
 object ComputedRequiresReaction {
   
@@ -51,7 +47,7 @@ object ComputedRequiresReaction {
     
     inline def setDisableErrorBoundariesUndefined: Self = StObject.set(x, "disableErrorBoundaries", js.undefined)
     
-    inline def setEnforceActions(value: never | always | observed): Self = StObject.set(x, "enforceActions", value.asInstanceOf[js.Any])
+    inline def setEnforceActions(value: "never" | "always" | "observed"): Self = StObject.set(x, "enforceActions", value.asInstanceOf[js.Any])
     
     inline def setEnforceActionsUndefined: Self = StObject.set(x, "enforceActions", js.undefined)
     
@@ -75,7 +71,7 @@ object ComputedRequiresReaction {
     
     inline def setSafeDescriptorsUndefined: Self = StObject.set(x, "safeDescriptors", js.undefined)
     
-    inline def setUseProxies(value: always | never | ifavailable): Self = StObject.set(x, "useProxies", value.asInstanceOf[js.Any])
+    inline def setUseProxies(value: "always" | "never" | "ifavailable"): Self = StObject.set(x, "useProxies", value.asInstanceOf[js.Any])
     
     inline def setUseProxiesUndefined: Self = StObject.set(x, "useProxies", js.undefined)
   }

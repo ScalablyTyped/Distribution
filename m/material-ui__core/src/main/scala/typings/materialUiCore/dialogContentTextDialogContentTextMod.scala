@@ -2,8 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Align
-import typings.materialUiCore.materialUiCoreStrings.root
-import typings.materialUiCore.materialUiCoreStrings.span
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -26,9 +24,9 @@ object dialogContentTextDialogContentTextMod extends Shortcut {
     */
   @JSImport("@material-ui/core/DialogContentText/DialogContentText", JSImport.Default)
   @js.native
-  val default: OverridableComponent[DialogContentTextTypeMap[js.Object, span]] = js.native
+  val default: OverridableComponent[DialogContentTextTypeMap[js.Object, "span"]] = js.native
   
-  type DialogContentTextClassKey = root
+  type DialogContentTextClassKey = "root"
   
   type DialogContentTextProps[D /* <: ElementType[Any] */, P] = OverrideProps[DialogContentTextTypeMap[P, D], D]
   
@@ -57,8 +55,8 @@ object dialogContentTextDialogContentTextMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[DialogContentTextTypeMap[js.Object, span]]
+  type _To = OverridableComponent[DialogContentTextTypeMap[js.Object, "span"]]
   
   /* This means you don't have to write `default`, but can instead just say `dialogContentTextDialogContentTextMod.foo` */
-  override def _to: OverridableComponent[DialogContentTextTypeMap[js.Object, span]] = default
+  override def _to: OverridableComponent[DialogContentTextTypeMap[js.Object, "span"]] = default
 }

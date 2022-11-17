@@ -1,22 +1,6 @@
 package typings.vueShared
 
 import typings.std.Record
-import typings.vueShared.vueSharedInts.`-1`
-import typings.vueShared.vueSharedInts.`-2`
-import typings.vueShared.vueSharedInts.`1024`
-import typings.vueShared.vueSharedInts.`128`
-import typings.vueShared.vueSharedInts.`16`
-import typings.vueShared.vueSharedInts.`1`
-import typings.vueShared.vueSharedInts.`2048`
-import typings.vueShared.vueSharedInts.`256`
-import typings.vueShared.vueSharedInts.`2`
-import typings.vueShared.vueSharedInts.`32`
-import typings.vueShared.vueSharedInts.`3`
-import typings.vueShared.vueSharedInts.`4`
-import typings.vueShared.vueSharedInts.`512`
-import typings.vueShared.vueSharedInts.`64`
-import typings.vueShared.vueSharedInts.`6`
-import typings.vueShared.vueSharedInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -193,23 +177,6 @@ object mod {
   
   type NormalizedStyle = Record[String, String | Double]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.vueShared.vueSharedInts.`1`
-    - typings.vueShared.vueSharedInts.`2`
-    - typings.vueShared.vueSharedInts.`4`
-    - typings.vueShared.vueSharedInts.`8`
-    - typings.vueShared.vueSharedInts.`16`
-    - typings.vueShared.vueSharedInts.`32`
-    - typings.vueShared.vueSharedInts.`64`
-    - typings.vueShared.vueSharedInts.`128`
-    - typings.vueShared.vueSharedInts.`256`
-    - typings.vueShared.vueSharedInts.`512`
-    - typings.vueShared.vueSharedInts.`1024`
-    - typings.vueShared.vueSharedInts.`2048`
-    - typings.vueShared.vueSharedInts.`-1`
-    - typings.vueShared.vueSharedInts.`-2`
-  */
-  trait PatchFlags extends StObject
   object PatchFlags {
     
     /**
@@ -219,33 +186,33 @@ object mod {
       * render functions, which should always be fully diffed)
       * OR manually cloneVNodes
       */
-    inline def BAIL: `-2` = -2.asInstanceOf[`-2`]
+    inline def BAIL: -2 = -2.asInstanceOf[-2]
     
     /**
       * Indicates an element with dynamic class binding.
       */
-    inline def CLASS: `2` = 2.asInstanceOf[`2`]
+    inline def CLASS: 2 = 2.asInstanceOf[2]
     
     /**
       * Indicates a fragment that was created only because the user has placed
       * comments at the root level of a template. This is a dev-only flag since
       * comments are stripped in production.
       */
-    inline def DEV_ROOT_FRAGMENT: `2048` = 2048.asInstanceOf[`2048`]
+    inline def DEV_ROOT_FRAGMENT: 2048 = 2048.asInstanceOf[2048]
     
     /**
       * Indicates a component with dynamic slots (e.g. slot that references a v-for
       * iterated value, or dynamic slot names).
       * Components with this flag are always force updated.
       */
-    inline def DYNAMIC_SLOTS: `1024` = 1024.asInstanceOf[`1024`]
+    inline def DYNAMIC_SLOTS: 1024 = 1024.asInstanceOf[1024]
     
     /**
       * Indicates an element with props with dynamic keys. When keys change, a full
       * diff is always needed to remove the old key. This flag is mutually
       * exclusive with CLASS, STYLE and PROPS.
       */
-    inline def FULL_PROPS: `16` = 16.asInstanceOf[`16`]
+    inline def FULL_PROPS: 16 = 16.asInstanceOf[16]
     
     /**
       * SPECIAL FLAGS -------------------------------------------------------------
@@ -258,18 +225,18 @@ object mod {
       * Indicates a hoisted static vnode. This is a hint for hydration to skip
       * the entire sub tree since static content never needs to be updated.
       */
-    inline def HOISTED: `-1` = -1.asInstanceOf[`-1`]
+    inline def HOISTED: -1 = -1.asInstanceOf[-1]
     
     /**
       * Indicates an element with event listeners (which need to be attached
       * during hydration)
       */
-    inline def HYDRATE_EVENTS: `32` = 32.asInstanceOf[`32`]
+    inline def HYDRATE_EVENTS: 32 = 32.asInstanceOf[32]
     
     /**
       * Indicates a fragment with keyed or partially keyed children
       */
-    inline def KEYED_FRAGMENT: `128` = 128.asInstanceOf[`128`]
+    inline def KEYED_FRAGMENT: 128 = 128.asInstanceOf[128]
     
     /**
       * Indicates an element that only needs non-props patching, e.g. ref or
@@ -277,7 +244,7 @@ object mod {
       * and onVnodeXXX hooks, it simply marks the vnode so that a parent block
       * will track it.
       */
-    inline def NEED_PATCH: `512` = 512.asInstanceOf[`512`]
+    inline def NEED_PATCH: 512 = 512.asInstanceOf[512]
     
     /**
       * Indicates an element that has non-class/style dynamic props.
@@ -286,12 +253,12 @@ object mod {
       * array that contains the keys of the props that may change so the runtime
       * can diff them faster (without having to worry about removed props)
       */
-    inline def PROPS: `8` = 8.asInstanceOf[`8`]
+    inline def PROPS: 8 = 8.asInstanceOf[8]
     
     /**
       * Indicates a fragment whose children order doesn't change.
       */
-    inline def STABLE_FRAGMENT: `64` = 64.asInstanceOf[`64`]
+    inline def STABLE_FRAGMENT: 64 = 64.asInstanceOf[64]
     
     /**
       * Indicates an element with dynamic style
@@ -304,64 +271,46 @@ object mod {
       * render() { return e('div', { style }) }
       * ```
       */
-    inline def STYLE: `4` = 4.asInstanceOf[`4`]
+    inline def STYLE: 4 = 4.asInstanceOf[4]
     
     /**
       * Indicates an element with dynamic textContent (children fast path)
       */
-    inline def TEXT: `1` = 1.asInstanceOf[`1`]
+    inline def TEXT: 1 = 1.asInstanceOf[1]
     
     /**
       * Indicates a fragment with unkeyed children.
       */
-    inline def UNKEYED_FRAGMENT: `256` = 256.asInstanceOf[`256`]
+    inline def UNKEYED_FRAGMENT: 256 = 256.asInstanceOf[256]
   }
+  type PatchFlags = 1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | -1 | -2
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.vueShared.vueSharedInts.`1`
-    - typings.vueShared.vueSharedInts.`2`
-    - typings.vueShared.vueSharedInts.`4`
-    - typings.vueShared.vueSharedInts.`8`
-    - typings.vueShared.vueSharedInts.`16`
-    - typings.vueShared.vueSharedInts.`32`
-    - typings.vueShared.vueSharedInts.`64`
-    - typings.vueShared.vueSharedInts.`128`
-    - typings.vueShared.vueSharedInts.`256`
-    - typings.vueShared.vueSharedInts.`512`
-    - typings.vueShared.vueSharedInts.`6`
-  */
-  trait ShapeFlags extends StObject
   object ShapeFlags {
     
-    inline def ARRAY_CHILDREN: `16` = 16.asInstanceOf[`16`]
+    inline def ARRAY_CHILDREN: 16 = 16.asInstanceOf[16]
     
-    inline def COMPONENT: `6` = 6.asInstanceOf[`6`]
+    inline def COMPONENT: 6 = 6.asInstanceOf[6]
     
-    inline def COMPONENT_KEPT_ALIVE: `512` = 512.asInstanceOf[`512`]
+    inline def COMPONENT_KEPT_ALIVE: 512 = 512.asInstanceOf[512]
     
-    inline def COMPONENT_SHOULD_KEEP_ALIVE: `256` = 256.asInstanceOf[`256`]
+    inline def COMPONENT_SHOULD_KEEP_ALIVE: 256 = 256.asInstanceOf[256]
     
-    inline def ELEMENT: `1` = 1.asInstanceOf[`1`]
+    inline def ELEMENT: 1 = 1.asInstanceOf[1]
     
-    inline def FUNCTIONAL_COMPONENT: `2` = 2.asInstanceOf[`2`]
+    inline def FUNCTIONAL_COMPONENT: 2 = 2.asInstanceOf[2]
     
-    inline def SLOTS_CHILDREN: `32` = 32.asInstanceOf[`32`]
+    inline def SLOTS_CHILDREN: 32 = 32.asInstanceOf[32]
     
-    inline def STATEFUL_COMPONENT: `4` = 4.asInstanceOf[`4`]
+    inline def STATEFUL_COMPONENT: 4 = 4.asInstanceOf[4]
     
-    inline def SUSPENSE: `128` = 128.asInstanceOf[`128`]
+    inline def SUSPENSE: 128 = 128.asInstanceOf[128]
     
-    inline def TELEPORT: `64` = 64.asInstanceOf[`64`]
+    inline def TELEPORT: 64 = 64.asInstanceOf[64]
     
-    inline def TEXT_CHILDREN: `8` = 8.asInstanceOf[`8`]
+    inline def TEXT_CHILDREN: 8 = 8.asInstanceOf[8]
   }
+  type ShapeFlags = 1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 | 256 | 512 | 6
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.vueShared.vueSharedInts.`1`
-    - typings.vueShared.vueSharedInts.`2`
-    - typings.vueShared.vueSharedInts.`3`
-  */
-  trait SlotFlags extends StObject
   object SlotFlags {
     
     /**
@@ -369,7 +318,7 @@ object mod {
       * has conditional structure (v-if, v-for). The parent will need to force
       * the child to update because the slot does not fully capture its dependencies.
       */
-    inline def DYNAMIC: `2` = 2.asInstanceOf[`2`]
+    inline def DYNAMIC: 2 = 2.asInstanceOf[2]
     
     /**
       * `<slot/>` being forwarded into a child component. Whether the parent needs
@@ -377,15 +326,16 @@ object mod {
       * received. This has to be refined at runtime, when the child's vnode
       * is being created (in `normalizeChildren`)
       */
-    inline def FORWARDED: `3` = 3.asInstanceOf[`3`]
+    inline def FORWARDED: 3 = 3.asInstanceOf[3]
     
     /**
       * Stable slots that only reference slot props or context state. The slot
       * can fully capture its own dependencies so when passed down the parent won't
       * need to force the child to update.
       */
-    inline def STABLE: `1` = 1.asInstanceOf[`1`]
+    inline def STABLE: 1 = 1.asInstanceOf[1]
   }
+  type SlotFlags = 1 | 2 | 3
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

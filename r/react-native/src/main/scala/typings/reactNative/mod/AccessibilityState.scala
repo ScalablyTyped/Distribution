@@ -1,6 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.mixed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait AccessibilityState extends StObject {
   /**
     * For items like Checkboxes and Toggle switches, reports their state to accessible tools
     */
-  var checked: js.UndefOr[Boolean | mixed] = js.undefined
+  var checked: js.UndefOr[Boolean | "mixed"] = js.undefined
   
   /**
     * When true, informs accessible tools if the element is disabled
@@ -45,7 +44,7 @@ object AccessibilityState {
     
     inline def setBusyUndefined: Self = StObject.set(x, "busy", js.undefined)
     
-    inline def setChecked(value: Boolean | mixed): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean | "mixed"): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     

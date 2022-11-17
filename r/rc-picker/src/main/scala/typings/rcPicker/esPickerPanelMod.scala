@@ -11,10 +11,6 @@ import typings.rcPicker.esInterfaceMod.PickerMode
 import typings.rcPicker.esPanelsDatePanelDateBodyMod.DateRender
 import typings.rcPicker.esPanelsMonthPanelMonthBodyMod.MonthCellRender
 import typings.rcPicker.esPanelsTimePanelMod.SharedTimeProps
-import typings.rcPicker.rcPickerStrings.date
-import typings.rcPicker.rcPickerStrings.ltr
-import typings.rcPicker.rcPickerStrings.rtl
-import typings.rcPicker.rcPickerStrings.time
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
@@ -37,32 +33,34 @@ object esPickerPanelMod {
   
   trait PickerPanelBaseProps[DateType]
     extends StObject
-       with PickerPanelSharedProps[DateType]
-       with PickerPanelProps[DateType] {
+       with PickerPanelSharedProps[DateType] {
     
-    var picker: Exclude[PickerMode, date | time]
+    var picker: Exclude[PickerMode, "date" | "time"]
   }
   object PickerPanelBaseProps {
     
-    inline def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale, picker: Exclude[PickerMode, date | time]): PickerPanelBaseProps[DateType] = {
+    inline def apply[DateType](
+      generateConfig: GenerateConfig[DateType],
+      locale: Locale,
+      picker: Exclude[PickerMode, "date" | "time"]
+    ): PickerPanelBaseProps[DateType] = {
       val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickerPanelBaseProps[DateType]]
     }
     
     extension [Self <: PickerPanelBaseProps[?], DateType](x: Self & PickerPanelBaseProps[DateType]) {
       
-      inline def setPicker(value: Exclude[PickerMode, date | time]): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: Exclude[PickerMode, "date" | "time"]): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     }
   }
   
   trait PickerPanelDateProps[DateType]
     extends StObject
-       with PickerPanelSharedProps[DateType]
-       with PickerPanelProps[DateType] {
+       with PickerPanelSharedProps[DateType] {
     
     var disabledTime: js.UndefOr[DisabledTime[DateType]] = js.undefined
     
-    var picker: js.UndefOr[date] = js.undefined
+    var picker: js.UndefOr["date"] = js.undefined
     
     var showNow: js.UndefOr[Boolean] = js.undefined
     
@@ -83,7 +81,7 @@ object esPickerPanelMod {
       
       inline def setDisabledTimeUndefined: Self = StObject.set(x, "disabledTime", js.undefined)
       
-      inline def setPicker(value: date): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: "date"): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
       inline def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
       
@@ -101,29 +99,7 @@ object esPickerPanelMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcPicker.esPickerPanelMod.PickerPanelBaseProps[DateType]
-    - typings.rcPicker.esPickerPanelMod.PickerPanelDateProps[DateType]
-    - typings.rcPicker.esPickerPanelMod.PickerPanelTimeProps[DateType]
-  */
-  trait PickerPanelProps[DateType] extends StObject
-  object PickerPanelProps {
-    
-    inline def PickerPanelBaseProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale, picker: Exclude[PickerMode, date | time]): typings.rcPicker.esPickerPanelMod.PickerPanelBaseProps[DateType] = {
-      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.rcPicker.esPickerPanelMod.PickerPanelBaseProps[DateType]]
-    }
-    
-    inline def PickerPanelDateProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): typings.rcPicker.esPickerPanelMod.PickerPanelDateProps[DateType] = {
-      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.rcPicker.esPickerPanelMod.PickerPanelDateProps[DateType]]
-    }
-    
-    inline def PickerPanelTimeProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): typings.rcPicker.esPickerPanelMod.PickerPanelTimeProps[DateType] = {
-      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = "time")
-      __obj.asInstanceOf[typings.rcPicker.esPickerPanelMod.PickerPanelTimeProps[DateType]]
-    }
-  }
+  type PickerPanelProps[DateType] = PickerPanelBaseProps[DateType] | PickerPanelDateProps[DateType] | PickerPanelTimeProps[DateType]
   
   trait PickerPanelSharedProps[DateType] extends StObject {
     
@@ -139,7 +115,7 @@ object esPickerPanelMod {
     
     var defaultValue: js.UndefOr[DateType] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
@@ -210,7 +186,7 @@ object esPickerPanelMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -289,8 +265,7 @@ object esPickerPanelMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.rcPicker.esPanelsTimePanelMod.SharedTimeProps because var conflicts: defaultValue. Inlined format, showNow, showHour, showMinute, showSecond, use12Hours, hourStep, minuteStep, secondStep, hideDisabledOptions, disabledHours, disabledMinutes, disabledSeconds, disabledTime */ trait PickerPanelTimeProps[DateType]
     extends StObject
-       with PickerPanelSharedProps[DateType]
-       with PickerPanelProps[DateType] {
+       with PickerPanelSharedProps[DateType] {
     
     /** @deprecated Please use `disabledTime` instead. */
     var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
@@ -311,7 +286,7 @@ object esPickerPanelMod {
     
     var minuteStep: js.UndefOr[Double] = js.undefined
     
-    var picker: time
+    var picker: "time"
     
     var secondStep: js.UndefOr[Double] = js.undefined
     
@@ -366,7 +341,7 @@ object esPickerPanelMod {
       
       inline def setMinuteStepUndefined: Self = StObject.set(x, "minuteStep", js.undefined)
       
-      inline def setPicker(value: time): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: "time"): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
       inline def setSecondStep(value: Double): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
       

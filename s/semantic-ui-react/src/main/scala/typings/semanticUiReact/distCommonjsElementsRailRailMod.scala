@@ -6,14 +6,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticFLOATS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
-import typings.semanticUiReact.semanticUiReactStrings.big
-import typings.semanticUiReact.semanticUiReactStrings.huge
-import typings.semanticUiReact.semanticUiReactStrings.large
-import typings.semanticUiReact.semanticUiReactStrings.massive
-import typings.semanticUiReact.semanticUiReactStrings.mini
-import typings.semanticUiReact.semanticUiReactStrings.small
-import typings.semanticUiReact.semanticUiReactStrings.tiny
-import typings.semanticUiReact.semanticUiReactStrings.very
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +43,7 @@ object distCommonjsElementsRailRailMod extends Shortcut {
     var className: js.UndefOr[String] = js.undefined
     
     /** A rail can appear closer to the main viewport. */
-    var close: js.UndefOr[Boolean | very] = js.undefined
+    var close: js.UndefOr[Boolean | "very"] = js.undefined
     
     /** Shorthand for primary content. */
     var content: js.UndefOr[SemanticShorthandContent] = js.undefined
@@ -66,7 +58,7 @@ object distCommonjsElementsRailRailMod extends Shortcut {
     var position: SemanticFLOATS
     
     /** A rail can have different sizes. */
-    var size: js.UndefOr[mini | tiny | small | large | big | huge | massive] = js.undefined
+    var size: js.UndefOr["mini" | "tiny" | "small" | "large" | "big" | "huge" | "massive"] = js.undefined
   }
   object StrictRailProps {
     
@@ -93,7 +85,7 @@ object distCommonjsElementsRailRailMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClose(value: Boolean | very): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: Boolean | "very"): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
@@ -111,7 +103,7 @@ object distCommonjsElementsRailRailMod extends Shortcut {
       
       inline def setPosition(value: SemanticFLOATS): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      inline def setSize(value: mini | tiny | small | large | big | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "mini" | "tiny" | "small" | "large" | "big" | "huge" | "massive"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }

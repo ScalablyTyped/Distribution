@@ -1,13 +1,10 @@
 package typings.jquery.anon
 
-import typings.jquery.JQuery._ValHook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `1`[TElement]
-  extends StObject
-     with _ValHook[TElement] {
+trait `1`[TElement] extends StObject {
   
   def set(elem: TElement, value: Any): Any
 }

@@ -1,7 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonStrings.auto
-import typings.angularCommon.angularCommonStrings.manual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +31,9 @@ open class ViewportScroller () extends StObject {
     * See also [window.history.scrollRestoration
     * info](https://developers.google.com/web/updates/2015/09/history-api-scroll-restoration).
     */
-  def setHistoryScrollRestoration(scrollRestoration: auto | manual): Unit = js.native
+  @JSName("setHistoryScrollRestoration")
+  @scala.annotation.targetName("setHistoryScrollRestoration_auto_manual")
+  def setHistoryScrollRestoration(scrollRestoration: "auto" | "manual"): Unit = js.native
   
   def setOffset(offset: js.Function0[js.Tuple2[Double, Double]]): Unit = js.native
   /**

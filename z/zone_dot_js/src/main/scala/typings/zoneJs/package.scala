@@ -10,3 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Patch Function to allow user define their own monkey patch module.
   */
 type PatchFn = js.Function3[/* global */ Window, /* Zone */ ZoneType, /* api */ ZonePrivate, Unit]
+
+/**
+  * Task type: `notScheduled`, `scheduling`, `scheduled`, `running`, `canceling`, 'unknown'.
+  */
+type TaskState = "notScheduled" | "scheduling" | "scheduled" | "running" | "canceling" | "unknown"
+
+/**
+  * Task type: `microTask`, `macroTask`, `eventTask`.
+  */
+type TaskType = "microTask" | "macroTask" | "eventTask"

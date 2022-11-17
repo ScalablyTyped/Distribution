@@ -3,8 +3,6 @@ package typings.antd
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.PrefixCls
-import typings.antd.antdBooleans.`false`
-import typings.antd.antdBooleans.`true`
 import typings.antd.libTooltipMod.TooltipPlacement
 import typings.rcSlider.libMarksMod.MarkObj
 import typings.react.mod.CSSProperties
@@ -249,7 +247,7 @@ object libSliderMod extends Shortcut {
     
     var onChange: js.UndefOr[js.Function1[/* value */ js.Tuple2[Double, Double], Unit]] = js.undefined
     
-    var range: `true` | SliderRange
+    var range: true | SliderRange
     
     var trackStyle: js.UndefOr[js.Array[CSSProperties]] = js.undefined
     
@@ -257,7 +255,7 @@ object libSliderMod extends Shortcut {
   }
   object SliderRangeProps {
     
-    inline def apply(range: `true` | SliderRange): SliderRangeProps = {
+    inline def apply(range: true | SliderRange): SliderRangeProps = {
       val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
       __obj.asInstanceOf[SliderRangeProps]
     }
@@ -282,7 +280,7 @@ object libSliderMod extends Shortcut {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setRange(value: `true` | SliderRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: true | SliderRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
       inline def setTrackStyle(value: js.Array[CSSProperties]): Self = StObject.set(x, "trackStyle", value.asInstanceOf[js.Any])
       
@@ -308,7 +306,7 @@ object libSliderMod extends Shortcut {
     
     var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var range: js.UndefOr[`false`] = js.undefined
+    var range: js.UndefOr[false] = js.undefined
     
     var trackStyle: js.UndefOr[CSSProperties] = js.undefined
     
@@ -339,7 +337,7 @@ object libSliderMod extends Shortcut {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setRange(value: `false`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: false): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
       inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       

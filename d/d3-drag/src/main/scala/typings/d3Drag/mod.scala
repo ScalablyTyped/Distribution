@@ -1,9 +1,5 @@
 package typings.d3Drag
 
-import typings.d3Drag.d3DragStrings.drag
-import typings.d3Drag.d3DragStrings.end
-import typings.d3Drag.d3DragStrings.mouse
-import typings.d3Drag.d3DragStrings.start
 import typings.d3Selection.mod.Selection_
 import typings.d3Selection.mod.ValueFn
 import typings.std.Element
@@ -55,7 +51,7 @@ object mod {
     /**
       * The string “mouse”, or a numeric touch identifier.
       */
-    var identifier: mouse | Double = js.native
+    var identifier: "mouse" | Double = js.native
     
     /**
       * Return the first currently-assigned listener matching the specified typenames, if any.
@@ -142,7 +138,7 @@ object mod {
     /**
       * The event type for the DragEvent
       */
-    var `type`: start | drag | end | String = js.native
+    var `type`: "start" | "drag" | "end" | String = js.native
     
     /**
       * The new x-coordinate of the subject, relative to the container

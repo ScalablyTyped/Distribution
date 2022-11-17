@@ -1,12 +1,5 @@
 package typings.d3Brush
 
-import typings.d3Brush.d3BrushStrings.brush
-import typings.d3Brush.d3BrushStrings.center
-import typings.d3Brush.d3BrushStrings.drag
-import typings.d3Brush.d3BrushStrings.end
-import typings.d3Brush.d3BrushStrings.handle
-import typings.d3Brush.d3BrushStrings.space
-import typings.d3Brush.d3BrushStrings.start
 import typings.d3Selection.mod.Selection_
 import typings.d3Selection.mod.TransitionLike
 import typings.d3Selection.mod.ValueFn
@@ -241,7 +234,7 @@ object mod {
     /**
       * The mode of the brush.
       */
-    var mode: drag | space | handle | center
+    var mode: "drag" | "space" | "handle" | "center"
     
     // Leave failsafe string type for cases like 'brush.foo'
     /**
@@ -277,15 +270,15 @@ object mod {
     /**
       * The event type for the BrushEvent
       */
-    var `type`: start | brush | end | String
+    var `type`: "start" | "brush" | "end" | String
   }
   object D3BrushEvent {
     
     inline def apply[Datum](
-      mode: drag | space | handle | center,
+      mode: "drag" | "space" | "handle" | "center",
       sourceEvent: Any,
       target: BrushBehavior[Datum],
-      `type`: start | brush | end | String
+      `type`: "start" | "brush" | "end" | String
     ): D3BrushEvent[Datum] = {
       val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], sourceEvent = sourceEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], selection = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -294,7 +287,7 @@ object mod {
     
     extension [Self <: D3BrushEvent[?], Datum](x: Self & D3BrushEvent[Datum]) {
       
-      inline def setMode(value: drag | space | handle | center): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: "drag" | "space" | "handle" | "center"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setSelection(value: BrushSelection_): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
@@ -304,7 +297,7 @@ object mod {
       
       inline def setTarget(value: BrushBehavior[Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      inline def setType(value: start | brush | end | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "start" | "brush" | "end" | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

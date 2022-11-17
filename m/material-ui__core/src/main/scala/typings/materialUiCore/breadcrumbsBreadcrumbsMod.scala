@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.ExpandText
-import typings.materialUiCore.materialUiCoreStrings.nav
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -24,25 +23,19 @@ object breadcrumbsBreadcrumbsMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Breadcrumbs/Breadcrumbs", JSImport.Default)
   @js.native
-  val default: OverridableComponent[BreadcrumbsTypeMap[js.Object, nav]] = js.native
+  val default: OverridableComponent[BreadcrumbsTypeMap[js.Object, "nav"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.ol
-    - typings.materialUiCore.materialUiCoreStrings.li
-    - typings.materialUiCore.materialUiCoreStrings.separator
-  */
-  trait BreadcrumbsClassKey extends StObject
   object BreadcrumbsClassKey {
     
-    inline def li: typings.materialUiCore.materialUiCoreStrings.li = "li".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.li]
+    inline def li: "li" = "li".asInstanceOf["li"]
     
-    inline def ol: typings.materialUiCore.materialUiCoreStrings.ol = "ol".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.ol]
+    inline def ol: "ol" = "ol".asInstanceOf["ol"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def separator: typings.materialUiCore.materialUiCoreStrings.separator = "separator".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.separator]
+    inline def separator: "separator" = "separator".asInstanceOf["separator"]
   }
+  type BreadcrumbsClassKey = "root" | "ol" | "li" | "separator"
   
   type BreadcrumbsProps[D /* <: ElementType[Any] */, P] = OverrideProps[BreadcrumbsTypeMap[P, D], D]
   
@@ -71,8 +64,8 @@ object breadcrumbsBreadcrumbsMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[BreadcrumbsTypeMap[js.Object, nav]]
+  type _To = OverridableComponent[BreadcrumbsTypeMap[js.Object, "nav"]]
   
   /* This means you don't have to write `default`, but can instead just say `breadcrumbsBreadcrumbsMod.foo` */
-  override def _to: OverridableComponent[BreadcrumbsTypeMap[js.Object, nav]] = default
+  override def _to: OverridableComponent[BreadcrumbsTypeMap[js.Object, "nav"]] = default
 }

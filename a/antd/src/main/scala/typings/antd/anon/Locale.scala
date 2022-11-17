@@ -1,8 +1,5 @@
 package typings.antd.anon
 
-import typings.antd.antdStrings.default
-import typings.antd.antdStrings.large
-import typings.antd.antdStrings.small
 import typings.antd.libDatePickerGeneratePickerMod.PickerLocale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +9,7 @@ trait Locale extends StObject {
   
   var locale: js.UndefOr[PickerLocale] = js.undefined
   
-  var size: js.UndefOr[large | default | small] = js.undefined
+  var size: js.UndefOr["large" | "default" | "small"] = js.undefined
 }
 object Locale {
   
@@ -27,7 +24,7 @@ object Locale {
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    inline def setSize(value: large | default | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "large" | "default" | "small"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }

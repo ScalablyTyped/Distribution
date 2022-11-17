@@ -2,12 +2,6 @@ package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.HorizontalSize
-import typings.antd.antdStrings.baseline
-import typings.antd.antdStrings.center
-import typings.antd.antdStrings.end
-import typings.antd.antdStrings.horizontal
-import typings.antd.antdStrings.start
-import typings.antd.antdStrings.vertical
 import typings.antd.libConfigProviderSizeContextMod.SizeType
 import typings.antd.libSpaceCompactMod.SpaceCompactProps
 import typings.react.mod.Context
@@ -42,9 +36,9 @@ object libSpaceMod extends Shortcut {
     extends StObject
        with HTMLAttributes[HTMLDivElement] {
     
-    var align: js.UndefOr[start | end | center | baseline] = js.undefined
+    var align: js.UndefOr["start" | "end" | "center" | "baseline"] = js.undefined
     
-    var direction: js.UndefOr[horizontal | vertical] = js.undefined
+    var direction: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -63,11 +57,11 @@ object libSpaceMod extends Shortcut {
     
     extension [Self <: SpaceProps](x: Self) {
       
-      inline def setAlign(value: start | end | center | baseline): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: "start" | "end" | "center" | "baseline"): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "horizontal" | "vertical"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       

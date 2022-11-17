@@ -1,23 +1,16 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.ClassProperty
-import typings.babelTypes.babelTypesStrings.`protected`
-import typings.babelTypes.babelTypesStrings.private_
-import typings.babelTypes.babelTypesStrings.public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ClassProperty_
+trait ClassProperty_
   extends StObject
-     with BaseNode
-     with Property
-     with Standardized {
+     with BaseNode {
   
   var `abstract`: Boolean | Null
   
-  var accessibility: public | private_ | `protected` | Null
+  var accessibility: "public" | "private" | "protected" | Null
   
   var computed: Boolean
   
@@ -40,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   
   @JSName("type")
-  var type_ClassProperty_ : ClassProperty
+  var type_ClassProperty_ : "ClassProperty"
   
   var value: Expression | Null
   
@@ -67,7 +60,7 @@ object ClassProperty_ {
     
     inline def setAbstractNull: Self = StObject.set(x, "abstract", null)
     
-    inline def setAccessibility(value: public | private_ | `protected`): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: "public" | "private" | "protected"): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityNull: Self = StObject.set(x, "accessibility", null)
     
@@ -101,7 +94,7 @@ object ClassProperty_ {
     
     inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ClassProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ClassProperty"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

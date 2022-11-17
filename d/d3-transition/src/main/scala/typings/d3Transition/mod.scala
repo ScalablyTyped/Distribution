@@ -5,7 +5,6 @@ import typings.d3Selection.mod.BaseType
 import typings.d3Selection.mod.EnterElement
 import typings.d3Selection.mod.Selection_
 import typings.d3Selection.mod.ValueFn
-import typings.d3Transition.d3TransitionStrings.important
 import typings.std.Document
 import typings.std.Element
 import typings.std.Window
@@ -439,8 +438,17 @@ object mod {
       * @param priority An optional priority flag, either null or the string important (without the exclamation point)
       */
     def style(name: String, value: String): this.type = js.native
+    @JSName("style")
+    @scala.annotation.targetName("style_important")
+    def style(name: String, value: String, priority: "important"): this.type = js.native
     def style(name: String, value: Boolean): this.type = js.native
+    @JSName("style")
+    @scala.annotation.targetName("style_important")
+    def style(name: String, value: Boolean, priority: "important"): this.type = js.native
     def style(name: String, value: Double): this.type = js.native
+    @JSName("style")
+    @scala.annotation.targetName("style_important")
+    def style(name: String, value: Double, priority: "important"): this.type = js.native
     /**
       * For each selected element, the style with the specified name will be cleared at the start of the transition.
       *
@@ -468,6 +476,13 @@ object mod {
       * @param priority An optional priority flag, either null or the string important (without the exclamation point)
       */
     def style(name: String, value: ValueFn[GElement, Datum, String | Double | Boolean | Null]): this.type = js.native
+    @JSName("style")
+    @scala.annotation.targetName("style_important")
+    def style(
+      name: String,
+      value: ValueFn[GElement, Datum, String | Double | Boolean | Null],
+      priority: "important"
+    ): this.type = js.native
     
     /**
       * Return the current interpolator factory for style with the specified name, or undefined if no such tween exists.
@@ -502,23 +517,11 @@ object mod {
       factory: ValueFn[GElement, Datum, js.ThisFunction1[/* this */ GElement, /* t */ Double, String]]
     ): this.type = js.native
     @JSName("styleTween")
-    def styleTween_important(
+    @scala.annotation.targetName("styleTween_important")
+    def styleTween(
       name: String,
       factory: ValueFn[GElement, Datum, js.ThisFunction1[/* this */ GElement, /* t */ Double, String]],
-      priority: important
-    ): this.type = js.native
-    
-    @JSName("style")
-    def style_important(name: String, value: String, priority: important): this.type = js.native
-    @JSName("style")
-    def style_important(name: String, value: Boolean, priority: important): this.type = js.native
-    @JSName("style")
-    def style_important(name: String, value: Double, priority: important): this.type = js.native
-    @JSName("style")
-    def style_important(
-      name: String,
-      value: ValueFn[GElement, Datum, String | Double | Boolean | Null],
-      priority: important
+      priority: "important"
     ): this.type = js.native
     
     /**

@@ -3,8 +3,6 @@ package typings.reactNativeGestureHandler
 import typings.react.mod.ComponentType
 import typings.react.mod.RefAttributes
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.BaseGestureHandlerProps_
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.maxDist
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minDurationMs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +16,7 @@ object libTypescriptHandlersLongPressGestureHandlerMod {
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/LongPressGestureHandler", "longPressGestureHandlerProps")
   @js.native
-  val longPressGestureHandlerProps: js.Tuple2[minDurationMs, maxDist] = js.native
+  val longPressGestureHandlerProps: js.Tuple2["minDurationMs", "maxDist"] = js.native
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/LongPressGestureHandler", "longPressHandlerName")
   @js.native

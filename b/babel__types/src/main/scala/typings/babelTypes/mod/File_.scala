@@ -1,15 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait File_
+trait File_
   extends StObject
-     with BaseNode
-     with Standardized {
+     with BaseNode {
   
   var comments: (js.Array[CommentBlock | CommentLine]) | Null
   
@@ -18,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var tokens: js.Array[Any] | Null
   
   @JSName("type")
-  var type_File_ : File
+  var type_File_ : "File"
 }
 object File_ {
   
@@ -44,6 +41,6 @@ object File_ {
     
     inline def setTokensVarargs(value: Any*): Self = StObject.set(x, "tokens", js.Array(value*))
     
-    inline def setType(value: File): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "File"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,6 @@ import typings.rcFieldForm.esInterfaceMod.NamePath
 import typings.rcFieldForm.esInterfaceMod.Rule
 import typings.rcFieldForm.esInterfaceMod.Store
 import typings.rcFieldForm.esInterfaceMod.StoreValue
-import typings.rcFieldForm.rcFieldFormBooleans.`false`
-import typings.rcFieldForm.rcFieldFormStrings.parallel
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
@@ -71,9 +69,9 @@ object esFieldMod {
     
     var trigger: js.UndefOr[String] = js.undefined
     
-    var validateFirst: js.UndefOr[Boolean | parallel] = js.undefined
+    var validateFirst: js.UndefOr[Boolean | "parallel"] = js.undefined
     
-    var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
+    var validateTrigger: js.UndefOr[String | js.Array[String] | false] = js.undefined
     
     var valuePropName: js.UndefOr[String] = js.undefined
   }
@@ -162,11 +160,11 @@ object esFieldMod {
       
       inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
-      inline def setValidateFirst(value: Boolean | parallel): Self = StObject.set(x, "validateFirst", value.asInstanceOf[js.Any])
+      inline def setValidateFirst(value: Boolean | "parallel"): Self = StObject.set(x, "validateFirst", value.asInstanceOf[js.Any])
       
       inline def setValidateFirstUndefined: Self = StObject.set(x, "validateFirst", js.undefined)
       
-      inline def setValidateTrigger(value: String | js.Array[String] | `false`): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
+      inline def setValidateTrigger(value: String | js.Array[String] | false): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
       
       inline def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
       
@@ -244,9 +242,9 @@ object esFieldMod {
     
     var trigger: js.UndefOr[String] = js.undefined
     
-    var validateFirst: js.UndefOr[Boolean | parallel] = js.undefined
+    var validateFirst: js.UndefOr[Boolean | "parallel"] = js.undefined
     
-    var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
+    var validateTrigger: js.UndefOr[String | js.Array[String] | false] = js.undefined
     
     var valuePropName: js.UndefOr[String] = js.undefined
   }
@@ -339,11 +337,11 @@ object esFieldMod {
       
       inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
-      inline def setValidateFirst(value: Boolean | parallel): Self = StObject.set(x, "validateFirst", value.asInstanceOf[js.Any])
+      inline def setValidateFirst(value: Boolean | "parallel"): Self = StObject.set(x, "validateFirst", value.asInstanceOf[js.Any])
       
       inline def setValidateFirstUndefined: Self = StObject.set(x, "validateFirst", js.undefined)
       
-      inline def setValidateTrigger(value: String | js.Array[String] | `false`): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
+      inline def setValidateTrigger(value: String | js.Array[String] | false): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
       
       inline def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
       

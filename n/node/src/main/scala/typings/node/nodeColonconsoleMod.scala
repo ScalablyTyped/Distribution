@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Shortcut
 import typings.node.NodeJS.WritableStream
 import typings.node.nodeColonconsoleMod.global.console.ConsoleConstructor
-import typings.node.nodeStrings.auto
 import typings.node.utilMod.InspectOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -109,7 +108,7 @@ object nodeColonconsoleMod {
       
       trait ConsoleConstructorOptions extends StObject {
         
-        var colorMode: js.UndefOr[Boolean | auto] = js.undefined
+        var colorMode: js.UndefOr[Boolean | "auto"] = js.undefined
         
         /**
           * Set group indentation
@@ -134,7 +133,7 @@ object nodeColonconsoleMod {
         
         extension [Self <: ConsoleConstructorOptions](x: Self) {
           
-          inline def setColorMode(value: Boolean | auto): Self = StObject.set(x, "colorMode", value.asInstanceOf[js.Any])
+          inline def setColorMode(value: Boolean | "auto"): Self = StObject.set(x, "colorMode", value.asInstanceOf[js.Any])
           
           inline def setColorModeUndefined: Self = StObject.set(x, "colorMode", js.undefined)
           

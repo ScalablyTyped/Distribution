@@ -1,6 +1,5 @@
 package typings.zoneJs
 
-import typings.zoneJs.zoneJsStrings.macroTask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait MacroTask
      with Task {
   
   @JSName("type")
-  var type_MacroTask: macroTask
+  var type_MacroTask: "macroTask"
 }
 object MacroTask {
   
@@ -30,6 +29,6 @@ object MacroTask {
   
   extension [Self <: MacroTask](x: Self) {
     
-    inline def setType(value: macroTask): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "macroTask"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

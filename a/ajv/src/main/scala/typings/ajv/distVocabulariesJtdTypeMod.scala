@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.`type`
 import typings.ajv.distTypesMod.CodeKeywordDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -51,70 +50,49 @@ object distVocabulariesJtdTypeMod extends Shortcut {
     inline def uint8_=(x: js.Tuple3[Double, Double, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uint8")(x.asInstanceOf[js.Any])
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.ajv.ajvStrings.int8
-    - typings.ajv.ajvStrings.uint8
-    - typings.ajv.ajvStrings.int16
-    - typings.ajv.ajvStrings.uint16
-    - typings.ajv.ajvStrings.int32
-    - typings.ajv.ajvStrings.uint32
-  */
-  trait IntType extends StObject
   object IntType {
     
-    inline def int16: typings.ajv.ajvStrings.int16 = "int16".asInstanceOf[typings.ajv.ajvStrings.int16]
+    inline def int16: "int16" = "int16".asInstanceOf["int16"]
     
-    inline def int32: typings.ajv.ajvStrings.int32 = "int32".asInstanceOf[typings.ajv.ajvStrings.int32]
+    inline def int32: "int32" = "int32".asInstanceOf["int32"]
     
-    inline def int8: typings.ajv.ajvStrings.int8 = "int8".asInstanceOf[typings.ajv.ajvStrings.int8]
+    inline def int8: "int8" = "int8".asInstanceOf["int8"]
     
-    inline def uint16: typings.ajv.ajvStrings.uint16 = "uint16".asInstanceOf[typings.ajv.ajvStrings.uint16]
+    inline def uint16: "uint16" = "uint16".asInstanceOf["uint16"]
     
-    inline def uint32: typings.ajv.ajvStrings.uint32 = "uint32".asInstanceOf[typings.ajv.ajvStrings.uint32]
+    inline def uint32: "uint32" = "uint32".asInstanceOf["uint32"]
     
-    inline def uint8: typings.ajv.ajvStrings.uint8 = "uint8".asInstanceOf[typings.ajv.ajvStrings.uint8]
+    inline def uint8: "uint8" = "uint8".asInstanceOf["uint8"]
   }
+  type IntType = "int8" | "uint8" | "int16" | "uint16" | "int32" | "uint32"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.ajv.ajvStrings.boolean
-    - typings.ajv.ajvStrings.string
-    - typings.ajv.ajvStrings.timestamp
-    - typings.ajv.ajvStrings.float32
-    - typings.ajv.ajvStrings.float64
-    - typings.ajv.ajvStrings.int8
-    - typings.ajv.ajvStrings.uint8
-    - typings.ajv.ajvStrings.int16
-    - typings.ajv.ajvStrings.uint16
-    - typings.ajv.ajvStrings.int32
-    - typings.ajv.ajvStrings.uint32
-  */
-  trait JTDType extends StObject
   object JTDType {
     
-    inline def boolean: typings.ajv.ajvStrings.boolean = "boolean".asInstanceOf[typings.ajv.ajvStrings.boolean]
+    inline def boolean: "boolean" = "boolean".asInstanceOf["boolean"]
     
-    inline def float32: typings.ajv.ajvStrings.float32 = "float32".asInstanceOf[typings.ajv.ajvStrings.float32]
+    inline def float32: "float32" = "float32".asInstanceOf["float32"]
     
-    inline def float64: typings.ajv.ajvStrings.float64 = "float64".asInstanceOf[typings.ajv.ajvStrings.float64]
+    inline def float64: "float64" = "float64".asInstanceOf["float64"]
     
-    inline def int16: typings.ajv.ajvStrings.int16 = "int16".asInstanceOf[typings.ajv.ajvStrings.int16]
+    inline def int16: "int16" = "int16".asInstanceOf["int16"]
     
-    inline def int32: typings.ajv.ajvStrings.int32 = "int32".asInstanceOf[typings.ajv.ajvStrings.int32]
+    inline def int32: "int32" = "int32".asInstanceOf["int32"]
     
-    inline def int8: typings.ajv.ajvStrings.int8 = "int8".asInstanceOf[typings.ajv.ajvStrings.int8]
+    inline def int8: "int8" = "int8".asInstanceOf["int8"]
     
-    inline def string: typings.ajv.ajvStrings.string = "string".asInstanceOf[typings.ajv.ajvStrings.string]
+    inline def string: "string" = "string".asInstanceOf["string"]
     
-    inline def timestamp: typings.ajv.ajvStrings.timestamp = "timestamp".asInstanceOf[typings.ajv.ajvStrings.timestamp]
+    inline def timestamp: "timestamp" = "timestamp".asInstanceOf["timestamp"]
     
-    inline def uint16: typings.ajv.ajvStrings.uint16 = "uint16".asInstanceOf[typings.ajv.ajvStrings.uint16]
+    inline def uint16: "uint16" = "uint16".asInstanceOf["uint16"]
     
-    inline def uint32: typings.ajv.ajvStrings.uint32 = "uint32".asInstanceOf[typings.ajv.ajvStrings.uint32]
+    inline def uint32: "uint32" = "uint32".asInstanceOf["uint32"]
     
-    inline def uint8: typings.ajv.ajvStrings.uint8 = "uint8".asInstanceOf[typings.ajv.ajvStrings.uint8]
+    inline def uint8: "uint8" = "uint8".asInstanceOf["uint8"]
   }
+  type JTDType = "boolean" | "string" | "timestamp" | "float32" | "float64" | "int8" | "uint8" | "int16" | "uint16" | "int32" | "uint32"
   
-  type JTDTypeError = typings.ajv.distVocabulariesJtdErrorMod.JTDTypeError[`type`, JTDType, JTDType]
+  type JTDTypeError = typings.ajv.distVocabulariesJtdErrorMod.JTDTypeError["type", JTDType, JTDType]
   
   type _To = CodeKeywordDefinition
   

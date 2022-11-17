@@ -1,6 +1,5 @@
 package typings.three.anon
 
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait IsInterleavedBufferAttribute extends StObject {
   
   var data: String
   
-  var isInterleavedBufferAttribute: `true`
+  var isInterleavedBufferAttribute: true
   
   var itemSize: Double
   
@@ -28,7 +27,7 @@ object IsInterleavedBufferAttribute {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setIsInterleavedBufferAttribute(value: `true`): Self = StObject.set(x, "isInterleavedBufferAttribute", value.asInstanceOf[js.Any])
+    inline def setIsInterleavedBufferAttribute(value: true): Self = StObject.set(x, "isInterleavedBufferAttribute", value.asInstanceOf[js.Any])
     
     inline def setItemSize(value: Double): Self = StObject.set(x, "itemSize", value.asInstanceOf[js.Any])
     

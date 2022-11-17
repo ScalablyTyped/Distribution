@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.RestElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `26` extends StObject {
   
-  var `type`: RestElement
+  var `type`: "RestElement"
 }
 object `26` {
   
@@ -19,6 +18,6 @@ object `26` {
   
   extension [Self <: `26`](x: Self) {
     
-    inline def setType(value: RestElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "RestElement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,9 +1,5 @@
 package typings.angularDevkitCore
 
-import typings.angularDevkitCore.angularDevkitCoreStrings.create
-import typings.angularDevkitCore.angularDevkitCoreStrings.delete
-import typings.angularDevkitCore.angularDevkitCoreStrings.overwrite
-import typings.angularDevkitCore.angularDevkitCoreStrings.rename
 import typings.angularDevkitCore.srcVirtualFsHostInterfaceMod.Host
 import typings.angularDevkitCore.srcVirtualFsHostInterfaceMod.HostCapabilities
 import typings.angularDevkitCore.srcVirtualFsHostInterfaceMod.ReadonlyHost
@@ -76,13 +72,11 @@ object srcVirtualFsHostRecordMod {
     def willRenameTo(path: Path_, to: Path_): Boolean = js.native
   }
   
-  trait CordHostCreate
-    extends StObject
-       with CordHostRecord {
+  trait CordHostCreate extends StObject {
     
     var content: js.typedarray.ArrayBuffer
     
-    var kind: create
+    var kind: "create"
     
     var path: Path_
   }
@@ -97,17 +91,15 @@ object srcVirtualFsHostRecordMod {
       
       inline def setContent(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setKind(value: create): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "create"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
       inline def setPath(value: Path_): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
-  trait CordHostDelete
-    extends StObject
-       with CordHostRecord {
+  trait CordHostDelete extends StObject {
     
-    var kind: delete
+    var kind: "delete"
     
     var path: Path_
   }
@@ -120,19 +112,17 @@ object srcVirtualFsHostRecordMod {
     
     extension [Self <: CordHostDelete](x: Self) {
       
-      inline def setKind(value: delete): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "delete"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
       inline def setPath(value: Path_): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
-  trait CordHostOverwrite
-    extends StObject
-       with CordHostRecord {
+  trait CordHostOverwrite extends StObject {
     
     var content: js.typedarray.ArrayBuffer
     
-    var kind: overwrite
+    var kind: "overwrite"
     
     var path: Path_
   }
@@ -147,49 +137,19 @@ object srcVirtualFsHostRecordMod {
       
       inline def setContent(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setKind(value: overwrite): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "overwrite"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
       inline def setPath(value: Path_): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularDevkitCore.srcVirtualFsHostRecordMod.CordHostCreate
-    - typings.angularDevkitCore.srcVirtualFsHostRecordMod.CordHostOverwrite
-    - typings.angularDevkitCore.srcVirtualFsHostRecordMod.CordHostRename
-    - typings.angularDevkitCore.srcVirtualFsHostRecordMod.CordHostDelete
-  */
-  trait CordHostRecord extends StObject
-  object CordHostRecord {
-    
-    inline def CordHostCreate(content: js.typedarray.ArrayBuffer, path: Path_): typings.angularDevkitCore.srcVirtualFsHostRecordMod.CordHostCreate = {
-      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], kind = "create", path = path.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitCore.srcVirtualFsHostRecordMod.CordHostCreate]
-    }
-    
-    inline def CordHostDelete(path: Path_): typings.angularDevkitCore.srcVirtualFsHostRecordMod.CordHostDelete = {
-      val __obj = js.Dynamic.literal(kind = "delete", path = path.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitCore.srcVirtualFsHostRecordMod.CordHostDelete]
-    }
-    
-    inline def CordHostOverwrite(content: js.typedarray.ArrayBuffer, path: Path_): typings.angularDevkitCore.srcVirtualFsHostRecordMod.CordHostOverwrite = {
-      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], kind = "overwrite", path = path.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitCore.srcVirtualFsHostRecordMod.CordHostOverwrite]
-    }
-    
-    inline def CordHostRename(from: Path_, to: Path_): typings.angularDevkitCore.srcVirtualFsHostRecordMod.CordHostRename = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], kind = "rename", to = to.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitCore.srcVirtualFsHostRecordMod.CordHostRename]
-    }
-  }
+  type CordHostRecord = CordHostCreate | CordHostOverwrite | CordHostRename | CordHostDelete
   
-  trait CordHostRename
-    extends StObject
-       with CordHostRecord {
+  trait CordHostRename extends StObject {
     
     var from: Path_
     
-    var kind: rename
+    var kind: "rename"
     
     var to: Path_
   }
@@ -204,7 +164,7 @@ object srcVirtualFsHostRecordMod {
       
       inline def setFrom(value: Path_): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      inline def setKind(value: rename): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "rename"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
       inline def setTo(value: Path_): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }

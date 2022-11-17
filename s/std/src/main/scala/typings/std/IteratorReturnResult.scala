@@ -1,16 +1,13 @@
 package typings.std
 
-import typings.std.stdBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IteratorReturnResult[TReturn]
-  extends StObject
-     with IteratorResult[Any, TReturn] {
+trait IteratorReturnResult[TReturn] extends StObject {
   
   /* standard es2015.iterable */
-  var done: `true`
+  var done: true
   
   /* standard es2015.iterable */
   var value: TReturn
@@ -24,7 +21,7 @@ object IteratorReturnResult {
   
   extension [Self <: IteratorReturnResult[?], TReturn](x: Self & IteratorReturnResult[TReturn]) {
     
-    inline def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: true): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
     inline def setValue(value: TReturn): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

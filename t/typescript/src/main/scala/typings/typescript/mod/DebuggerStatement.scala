@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DebuggerStatement
   extends StObject
-     with Statement
-     with HasJSDoc {
+     with Statement {
   
   @JSName("kind")
   val kind_DebuggerStatement: typings.typescript.mod.SyntaxKind.DebuggerStatement = js.native

@@ -29,9 +29,7 @@ object distCompileCodegenCodeMod {
   
   @JSImport("ajv/dist/compile/codegen/code", "Name")
   @js.native
-  open class Name protected ()
-    extends CodeOrName
-       with Code {
+  open class Name protected () extends CodeOrName {
     def this(s: String) = this()
     
     @JSName("names")
@@ -40,9 +38,7 @@ object distCompileCodegenCodeMod {
   
   @JSImport("ajv/dist/compile/codegen/code", "_Code")
   @js.native
-  open class _Code protected ()
-    extends CodeOrName
-       with Code {
+  open class _Code protected () extends CodeOrName {
     def this(code: String) = this()
     def this(code: js.Array[CodeItem]) = this()
     
@@ -86,11 +82,7 @@ object distCompileCodegenCodeMod {
   
   inline def stringify(x: Any): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(x.asInstanceOf[js.Any]).asInstanceOf[Code]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.ajv.distCompileCodegenCodeMod._Code
-    - typings.ajv.distCompileCodegenCodeMod.Name
-  */
-  trait Code extends StObject
+  type Code = _Code | Name
   
   type CodeArg = js.UndefOr[SafeExpr | String]
   

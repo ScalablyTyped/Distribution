@@ -1,7 +1,5 @@
 package typings.ajv
 
-import typings.ajv.ajvStrings.`type`
-import typings.ajv.ajvStrings.log
 import typings.ajv.anon.Type
 import typings.ajv.distCompileCodegenCodeMod.Code
 import typings.ajv.distCompileCodegenMod.Name
@@ -42,20 +40,22 @@ object distCompileValidateDataTypeMod {
   }
   
   inline def checkDataType(dataType: JSONType, data: Name): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataType")(dataType.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Code]
+  @scala.annotation.targetName("checkDataType_log")
+  inline def checkDataType(dataType: JSONType, data: Name, strictNums: "log"): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataType")(dataType.asInstanceOf[js.Any], data.asInstanceOf[js.Any], strictNums.asInstanceOf[js.Any])).asInstanceOf[Code]
+  @scala.annotation.targetName("checkDataType_log")
+  inline def checkDataType(dataType: JSONType, data: Name, strictNums: "log", correct: DataType): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataType")(dataType.asInstanceOf[js.Any], data.asInstanceOf[js.Any], strictNums.asInstanceOf[js.Any], correct.asInstanceOf[js.Any])).asInstanceOf[Code]
   inline def checkDataType(dataType: JSONType, data: Name, strictNums: Boolean): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataType")(dataType.asInstanceOf[js.Any], data.asInstanceOf[js.Any], strictNums.asInstanceOf[js.Any])).asInstanceOf[Code]
   inline def checkDataType(dataType: JSONType, data: Name, strictNums: Boolean, correct: DataType): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataType")(dataType.asInstanceOf[js.Any], data.asInstanceOf[js.Any], strictNums.asInstanceOf[js.Any], correct.asInstanceOf[js.Any])).asInstanceOf[Code]
   inline def checkDataType(dataType: JSONType, data: Name, strictNums: Unit, correct: DataType): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataType")(dataType.asInstanceOf[js.Any], data.asInstanceOf[js.Any], strictNums.asInstanceOf[js.Any], correct.asInstanceOf[js.Any])).asInstanceOf[Code]
   
-  inline def checkDataType_log(dataType: JSONType, data: Name, strictNums: log): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataType")(dataType.asInstanceOf[js.Any], data.asInstanceOf[js.Any], strictNums.asInstanceOf[js.Any])).asInstanceOf[Code]
-  inline def checkDataType_log(dataType: JSONType, data: Name, strictNums: log, correct: DataType): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataType")(dataType.asInstanceOf[js.Any], data.asInstanceOf[js.Any], strictNums.asInstanceOf[js.Any], correct.asInstanceOf[js.Any])).asInstanceOf[Code]
-  
   inline def checkDataTypes(dataTypes: js.Array[JSONType], data: Name): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataTypes")(dataTypes.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Code]
+  @scala.annotation.targetName("checkDataTypes_log")
+  inline def checkDataTypes(dataTypes: js.Array[JSONType], data: Name, strictNums: "log"): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataTypes")(dataTypes.asInstanceOf[js.Any], data.asInstanceOf[js.Any], strictNums.asInstanceOf[js.Any])).asInstanceOf[Code]
+  @scala.annotation.targetName("checkDataTypes_log")
+  inline def checkDataTypes(dataTypes: js.Array[JSONType], data: Name, strictNums: "log", correct: DataType): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataTypes")(dataTypes.asInstanceOf[js.Any], data.asInstanceOf[js.Any], strictNums.asInstanceOf[js.Any], correct.asInstanceOf[js.Any])).asInstanceOf[Code]
   inline def checkDataTypes(dataTypes: js.Array[JSONType], data: Name, strictNums: Boolean): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataTypes")(dataTypes.asInstanceOf[js.Any], data.asInstanceOf[js.Any], strictNums.asInstanceOf[js.Any])).asInstanceOf[Code]
   inline def checkDataTypes(dataTypes: js.Array[JSONType], data: Name, strictNums: Boolean, correct: DataType): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataTypes")(dataTypes.asInstanceOf[js.Any], data.asInstanceOf[js.Any], strictNums.asInstanceOf[js.Any], correct.asInstanceOf[js.Any])).asInstanceOf[Code]
   inline def checkDataTypes(dataTypes: js.Array[JSONType], data: Name, strictNums: Unit, correct: DataType): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataTypes")(dataTypes.asInstanceOf[js.Any], data.asInstanceOf[js.Any], strictNums.asInstanceOf[js.Any], correct.asInstanceOf[js.Any])).asInstanceOf[Code]
-  
-  inline def checkDataTypes_log(dataTypes: js.Array[JSONType], data: Name, strictNums: log): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataTypes")(dataTypes.asInstanceOf[js.Any], data.asInstanceOf[js.Any], strictNums.asInstanceOf[js.Any])).asInstanceOf[Code]
-  inline def checkDataTypes_log(dataTypes: js.Array[JSONType], data: Name, strictNums: log, correct: DataType): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataTypes")(dataTypes.asInstanceOf[js.Any], data.asInstanceOf[js.Any], strictNums.asInstanceOf[js.Any], correct.asInstanceOf[js.Any])).asInstanceOf[Code]
   
   inline def coerceAndCheckDataType(it: SchemaObjCxt, types: js.Array[JSONType]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("coerceAndCheckDataType")(it.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -66,5 +66,5 @@ object distCompileValidateDataTypeMod {
   
   inline def reportTypeError(it: SchemaObjCxt): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reportTypeError")(it.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type TypeError = ErrorObject[`type`, Type, Any]
+  type TypeError = ErrorObject["type", Type, Any]
 }

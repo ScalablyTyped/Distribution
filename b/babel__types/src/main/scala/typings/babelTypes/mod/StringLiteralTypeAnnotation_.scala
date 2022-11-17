@@ -1,19 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.StringLiteralTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait StringLiteralTypeAnnotation_
+trait StringLiteralTypeAnnotation_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowType {
+     with BaseNode {
   
   @JSName("type")
-  var type_StringLiteralTypeAnnotation_ : StringLiteralTypeAnnotation
+  var type_StringLiteralTypeAnnotation_ : "StringLiteralTypeAnnotation"
   
   var value: String
 }
@@ -27,7 +23,7 @@ object StringLiteralTypeAnnotation_ {
   
   extension [Self <: StringLiteralTypeAnnotation_](x: Self) {
     
-    inline def setType(value: StringLiteralTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "StringLiteralTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

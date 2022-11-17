@@ -1,9 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.ajv.ajvBooleans.`false`
-import typings.ajv.ajvBooleans.`true`
-import typings.ajv.ajvStrings.log
 import typings.ajv.distCompileCodegenCodeMod.Code
 import typings.ajv.distCompileCodegenMod.CodeGen
 import typings.ajv.distCompileCodegenMod.Name
@@ -49,9 +46,9 @@ object distCompileUtilMod {
   inline def alwaysValidSchema(it: SchemaCxt, schema: AnySchema): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("alwaysValidSchema")(it.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
   
   inline def checkStrictMode(it: SchemaCxt, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStrictMode")(it.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.annotation.targetName("checkStrictMode_log")
+  inline def checkStrictMode(it: SchemaCxt, msg: String, mode: "log"): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStrictMode")(it.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def checkStrictMode(it: SchemaCxt, msg: String, mode: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStrictMode")(it.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def checkStrictMode_log(it: SchemaCxt, msg: String, mode: log): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStrictMode")(it.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def checkUnknownRules(it: SchemaCxt): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkUnknownRules")(it.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def checkUnknownRules(it: SchemaCxt, schema: AnySchema): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkUnknownRules")(it.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -93,11 +90,12 @@ object distCompileUtilMod {
   inline def schemaHasRulesButRef(schema: AnySchema, RULES: ValidationRules): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaHasRulesButRef")(schema.asInstanceOf[js.Any], RULES.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def schemaRefOrVal(param0: SchemaObjCxt, schema: Any, keyword: String): Code | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaRefOrVal")(param0.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], keyword.asInstanceOf[js.Any])).asInstanceOf[Code | Double | Boolean]
+  @scala.annotation.targetName("schemaRefOrVal_false")
+  inline def schemaRefOrVal(param0: SchemaObjCxt, schema: Any, keyword: String, $data: false): Code | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaRefOrVal")(param0.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], keyword.asInstanceOf[js.Any], $data.asInstanceOf[js.Any])).asInstanceOf[Code | Double | Boolean]
   inline def schemaRefOrVal(param0: SchemaObjCxt, schema: Any, keyword: String, $data: String): Code | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaRefOrVal")(param0.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], keyword.asInstanceOf[js.Any], $data.asInstanceOf[js.Any])).asInstanceOf[Code | Double | Boolean]
   
-  inline def schemaRefOrVal_false(param0: SchemaObjCxt, schema: Any, keyword: String, $data: `false`): Code | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaRefOrVal")(param0.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], keyword.asInstanceOf[js.Any], $data.asInstanceOf[js.Any])).asInstanceOf[Code | Double | Boolean]
-  
-  inline def setEvaluated_true(
+  @scala.annotation.targetName("setEvaluated_true")
+  inline def setEvaluated(
     gen: CodeGen,
     props: Name,
     ps: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in string ]:? true} */ js.Any
@@ -114,7 +112,7 @@ object distCompileUtilMod {
   type MergeEvaluatedFunc[T /* <: SomeEvaluated */] = js.Function4[
     /* gen */ CodeGen, 
     /* from */ Name | T, 
-    /* to */ js.UndefOr[Name | (Exclude[T, `true`])], 
+    /* to */ js.UndefOr[Name | (Exclude[T, true])], 
     /* toName */ js.UndefOr[Instantiable1[/* s */ String, Name]], 
     Name | T
   ]
@@ -125,65 +123,73 @@ object distCompileUtilMod {
     def items(gen: CodeGen, from: Name, to: Unit, toName: Instantiable1[/* s */ String, Name]): Name | EvaluatedItems
     def items(gen: CodeGen, from: Name, to: Name): Name | EvaluatedItems
     def items(gen: CodeGen, from: Name, to: Name, toName: Instantiable1[/* s */ String, Name]): Name | EvaluatedItems
+    @JSName("items")
+    @scala.annotation.targetName("items_true")
+    def items(gen: CodeGen, from: Name, to: Exclude[EvaluatedItems, true]): Name | EvaluatedItems
+    @JSName("items")
+    @scala.annotation.targetName("items_true")
+    def items(
+      gen: CodeGen,
+      from: Name,
+      to: Exclude[EvaluatedItems, true],
+      toName: Instantiable1[/* s */ String, Name]
+    ): Name | EvaluatedItems
     def items(gen: CodeGen, from: EvaluatedItems): Name | EvaluatedItems
     def items(gen: CodeGen, from: EvaluatedItems, to: Unit, toName: Instantiable1[/* s */ String, Name]): Name | EvaluatedItems
     def items(gen: CodeGen, from: EvaluatedItems, to: Name): Name | EvaluatedItems
     def items(gen: CodeGen, from: EvaluatedItems, to: Name, toName: Instantiable1[/* s */ String, Name]): Name | EvaluatedItems
     @JSName("items")
-    var items_Original: MergeEvaluatedFunc[EvaluatedItems]
+    @scala.annotation.targetName("items_true")
+    def items(gen: CodeGen, from: EvaluatedItems, to: Exclude[EvaluatedItems, true]): Name | EvaluatedItems
     @JSName("items")
-    def items_true(gen: CodeGen, from: Name, to: Exclude[EvaluatedItems, `true`]): Name | EvaluatedItems
-    @JSName("items")
-    def items_true(
-      gen: CodeGen,
-      from: Name,
-      to: Exclude[EvaluatedItems, `true`],
-      toName: Instantiable1[/* s */ String, Name]
-    ): Name | EvaluatedItems
-    @JSName("items")
-    def items_true(gen: CodeGen, from: EvaluatedItems, to: Exclude[EvaluatedItems, `true`]): Name | EvaluatedItems
-    @JSName("items")
-    def items_true(
+    @scala.annotation.targetName("items_true")
+    def items(
       gen: CodeGen,
       from: EvaluatedItems,
-      to: Exclude[EvaluatedItems, `true`],
+      to: Exclude[EvaluatedItems, true],
       toName: Instantiable1[/* s */ String, Name]
     ): Name | EvaluatedItems
+    @JSName("items")
+    var items_Original: MergeEvaluatedFunc[EvaluatedItems]
     
     def props(gen: CodeGen, from: Name): Name | EvaluatedProperties
     def props(gen: CodeGen, from: Name, to: Unit, toName: Instantiable1[/* s */ String, Name]): Name | EvaluatedProperties
     def props(gen: CodeGen, from: Name, to: Name): Name | EvaluatedProperties
     def props(gen: CodeGen, from: Name, to: Name, toName: Instantiable1[/* s */ String, Name]): Name | EvaluatedProperties
+    @JSName("props")
+    @scala.annotation.targetName("props_true")
+    def props(gen: CodeGen, from: Name, to: Exclude[EvaluatedProperties, true]): Name | EvaluatedProperties
+    @JSName("props")
+    @scala.annotation.targetName("props_true")
+    def props(
+      gen: CodeGen,
+      from: Name,
+      to: Exclude[EvaluatedProperties, true],
+      toName: Instantiable1[/* s */ String, Name]
+    ): Name | EvaluatedProperties
     def props(gen: CodeGen, from: EvaluatedProperties): Name | EvaluatedProperties
     def props(gen: CodeGen, from: EvaluatedProperties, to: Unit, toName: Instantiable1[/* s */ String, Name]): Name | EvaluatedProperties
     def props(gen: CodeGen, from: EvaluatedProperties, to: Name): Name | EvaluatedProperties
     def props(gen: CodeGen, from: EvaluatedProperties, to: Name, toName: Instantiable1[/* s */ String, Name]): Name | EvaluatedProperties
     @JSName("props")
-    var props_Original: MergeEvaluatedFunc[EvaluatedProperties]
+    @scala.annotation.targetName("props_true")
+    def props(gen: CodeGen, from: EvaluatedProperties, to: Exclude[EvaluatedProperties, true]): Name | EvaluatedProperties
     @JSName("props")
-    def props_true(gen: CodeGen, from: Name, to: Exclude[EvaluatedProperties, `true`]): Name | EvaluatedProperties
-    @JSName("props")
-    def props_true(
-      gen: CodeGen,
-      from: Name,
-      to: Exclude[EvaluatedProperties, `true`],
-      toName: Instantiable1[/* s */ String, Name]
-    ): Name | EvaluatedProperties
-    @JSName("props")
-    def props_true(gen: CodeGen, from: EvaluatedProperties, to: Exclude[EvaluatedProperties, `true`]): Name | EvaluatedProperties
-    @JSName("props")
-    def props_true(
+    @scala.annotation.targetName("props_true")
+    def props(
       gen: CodeGen,
       from: EvaluatedProperties,
-      to: Exclude[EvaluatedProperties, `true`],
+      to: Exclude[EvaluatedProperties, true],
       toName: Instantiable1[/* s */ String, Name]
     ): Name | EvaluatedProperties
+    @JSName("props")
+    var props_Original: MergeEvaluatedFunc[EvaluatedProperties]
   }
   object MergeEvaluated_ {
     
     inline def apply(
-      items: (/* gen */ CodeGen, /* from */ Name | EvaluatedItems, /* to */ js.UndefOr[Name | (Exclude[EvaluatedItems, `true`])], /* toName */ js.UndefOr[Instantiable1[/* s */ String, Name]]) => Name | EvaluatedItems,
-      props: (/* gen */ CodeGen, /* from */ Name | EvaluatedProperties, /* to */ js.UndefOr[Name | (Exclude[EvaluatedProperties, `true`])], /* toName */ js.UndefOr[Instantiable1[/* s */ String, Name]]) => Name | EvaluatedProperties
+      items: (/* gen */ CodeGen, /* from */ Name | EvaluatedItems, /* to */ js.UndefOr[Name | (Exclude[EvaluatedItems, true])], /* toName */ js.UndefOr[Instantiable1[/* s */ String, Name]]) => Name | EvaluatedItems,
+      props: (/* gen */ CodeGen, /* from */ Name | EvaluatedProperties, /* to */ js.UndefOr[Name | (Exclude[EvaluatedProperties, true])], /* toName */ js.UndefOr[Instantiable1[/* s */ String, Name]]) => Name | EvaluatedProperties
     ): MergeEvaluated_ = {
       val __obj = js.Dynamic.literal(items = js.Any.fromFunction4(items), props = js.Any.fromFunction4(props))
       __obj.asInstanceOf[MergeEvaluated_]
@@ -192,11 +198,11 @@ object distCompileUtilMod {
     extension [Self <: MergeEvaluated_](x: Self) {
       
       inline def setItems(
-        value: (/* gen */ CodeGen, /* from */ Name | EvaluatedItems, /* to */ js.UndefOr[Name | (Exclude[EvaluatedItems, `true`])], /* toName */ js.UndefOr[Instantiable1[/* s */ String, Name]]) => Name | EvaluatedItems
+        value: (/* gen */ CodeGen, /* from */ Name | EvaluatedItems, /* to */ js.UndefOr[Name | (Exclude[EvaluatedItems, true])], /* toName */ js.UndefOr[Instantiable1[/* s */ String, Name]]) => Name | EvaluatedItems
       ): Self = StObject.set(x, "items", js.Any.fromFunction4(value))
       
       inline def setProps(
-        value: (/* gen */ CodeGen, /* from */ Name | EvaluatedProperties, /* to */ js.UndefOr[Name | (Exclude[EvaluatedProperties, `true`])], /* toName */ js.UndefOr[Instantiable1[/* s */ String, Name]]) => Name | EvaluatedProperties
+        value: (/* gen */ CodeGen, /* from */ Name | EvaluatedProperties, /* to */ js.UndefOr[Name | (Exclude[EvaluatedProperties, true])], /* toName */ js.UndefOr[Instantiable1[/* s */ String, Name]]) => Name | EvaluatedProperties
       ): Self = StObject.set(x, "props", js.Any.fromFunction4(value))
     }
   }

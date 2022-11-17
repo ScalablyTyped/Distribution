@@ -4,26 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.reactNative.reactNativeStrings._empty
-  - typings.reactNative.reactNativeStrings.arraybuffer
-  - typings.reactNative.reactNativeStrings.blob
-  - typings.reactNative.reactNativeStrings.document
-  - typings.reactNative.reactNativeStrings.json
-  - typings.reactNative.reactNativeStrings.text
-*/
-trait XMLHttpRequestResponseType extends StObject
 object XMLHttpRequestResponseType {
   
-  inline def _empty: typings.reactNative.reactNativeStrings._empty = "".asInstanceOf[typings.reactNative.reactNativeStrings._empty]
+  inline def _empty: "" = "".asInstanceOf[""]
   
-  inline def arraybuffer: typings.reactNative.reactNativeStrings.arraybuffer = "arraybuffer".asInstanceOf[typings.reactNative.reactNativeStrings.arraybuffer]
+  inline def arraybuffer: "arraybuffer" = "arraybuffer".asInstanceOf["arraybuffer"]
   
-  inline def blob: typings.reactNative.reactNativeStrings.blob = "blob".asInstanceOf[typings.reactNative.reactNativeStrings.blob]
+  inline def blob: "blob" = "blob".asInstanceOf["blob"]
   
-  inline def document: typings.reactNative.reactNativeStrings.document = "document".asInstanceOf[typings.reactNative.reactNativeStrings.document]
+  inline def document: "document" = "document".asInstanceOf["document"]
   
-  inline def json: typings.reactNative.reactNativeStrings.json = "json".asInstanceOf[typings.reactNative.reactNativeStrings.json]
+  inline def json: "json" = "json".asInstanceOf["json"]
   
-  inline def text: typings.reactNative.reactNativeStrings.text = "text".asInstanceOf[typings.reactNative.reactNativeStrings.text]
+  inline def text: "text" = "text".asInstanceOf["text"]
 }

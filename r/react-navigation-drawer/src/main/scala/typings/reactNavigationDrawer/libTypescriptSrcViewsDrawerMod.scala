@@ -10,14 +10,6 @@ import typings.reactNativeGestureHandler.libTypescriptHandlersPanGestureHandlerM
 import typings.reactNativeGestureHandler.libTypescriptHandlersPanGestureHandlerMod.PanGestureHandlerProps_
 import typings.reactNavigationDrawer.anon.DrawerPostion
 import typings.reactNavigationDrawer.anon.Progress
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`on-drag`
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.back
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.fade
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.front
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.left
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.none
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.right
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.slide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,11 +111,11 @@ object libTypescriptSrcViewsDrawerMod {
   
   trait Props extends StObject {
     
-    var drawerPosition: left | right
+    var drawerPosition: "left" | "right"
     
     var drawerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var drawerType: front | back | slide
+    var drawerType: "front" | "back" | "slide"
     
     var gestureEnabled: Boolean
     
@@ -131,7 +123,7 @@ object libTypescriptSrcViewsDrawerMod {
     
     var hideStatusBar: Boolean
     
-    var keyboardDismissMode: none | `on-drag`
+    var keyboardDismissMode: "none" | "on-drag"
     
     def onClose(): Unit
     
@@ -149,7 +141,7 @@ object libTypescriptSrcViewsDrawerMod {
     
     var sceneContainerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var statusBarAnimation: slide | none | fade
+    var statusBarAnimation: "slide" | "none" | "fade"
     
     var swipeDistanceThreshold: js.UndefOr[Double] = js.undefined
     
@@ -160,17 +152,17 @@ object libTypescriptSrcViewsDrawerMod {
   object Props {
     
     inline def apply(
-      drawerPosition: left | right,
-      drawerType: front | back | slide,
+      drawerPosition: "left" | "right",
+      drawerType: "front" | "back" | "slide",
       gestureEnabled: Boolean,
       hideStatusBar: Boolean,
-      keyboardDismissMode: none | `on-drag`,
+      keyboardDismissMode: "none" | "on-drag",
       onClose: () => Unit,
       onOpen: () => Unit,
       open: Boolean,
       renderDrawerContent: /* props */ Progress => ReactNode,
       renderSceneContent: /* props */ Progress => ReactNode,
-      statusBarAnimation: slide | none | fade,
+      statusBarAnimation: "slide" | "none" | "fade",
       swipeEdgeWidth: Double,
       swipeVelocityThreshold: Double
     ): Props = {
@@ -180,13 +172,13 @@ object libTypescriptSrcViewsDrawerMod {
     
     extension [Self <: Props](x: Self) {
       
-      inline def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
+      inline def setDrawerPosition(value: "left" | "right"): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
       
       inline def setDrawerStyle(value: ViewStyle): Self = StObject.set(x, "drawerStyle", value.asInstanceOf[js.Any])
       
       inline def setDrawerStyleUndefined: Self = StObject.set(x, "drawerStyle", js.undefined)
       
-      inline def setDrawerType(value: front | back | slide): Self = StObject.set(x, "drawerType", value.asInstanceOf[js.Any])
+      inline def setDrawerType(value: "front" | "back" | "slide"): Self = StObject.set(x, "drawerType", value.asInstanceOf[js.Any])
       
       inline def setGestureEnabled(value: Boolean): Self = StObject.set(x, "gestureEnabled", value.asInstanceOf[js.Any])
       
@@ -196,7 +188,7 @@ object libTypescriptSrcViewsDrawerMod {
       
       inline def setHideStatusBar(value: Boolean): Self = StObject.set(x, "hideStatusBar", value.asInstanceOf[js.Any])
       
-      inline def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+      inline def setKeyboardDismissMode(value: "none" | "on-drag"): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
       
       inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
@@ -220,7 +212,7 @@ object libTypescriptSrcViewsDrawerMod {
       
       inline def setSceneContainerStyleUndefined: Self = StObject.set(x, "sceneContainerStyle", js.undefined)
       
-      inline def setStatusBarAnimation(value: slide | none | fade): Self = StObject.set(x, "statusBarAnimation", value.asInstanceOf[js.Any])
+      inline def setStatusBarAnimation(value: "slide" | "none" | "fade"): Self = StObject.set(x, "statusBarAnimation", value.asInstanceOf[js.Any])
       
       inline def setSwipeDistanceThreshold(value: Double): Self = StObject.set(x, "swipeDistanceThreshold", value.asInstanceOf[js.Any])
       

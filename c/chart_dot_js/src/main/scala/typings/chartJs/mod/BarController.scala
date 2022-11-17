@@ -1,50 +1,74 @@
 package typings.chartJs.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.distChunksHelpersDotcoreMod.D_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.BarController, new (chart : chart.js.chart.js.Chart<chart.js.chart.js.ChartType, chart.js.chart.js.DefaultDataPoint<chart.js.chart.js.ChartType>, unknown>, datasetIndex : number): chart.js.chart.js.BarController} */
-object BarController {
+@js.native
+trait BarController extends D_ {
   
-  @JSImport("chart.js", "BarController")
-  @js.native
-  val ^ : js.Any = js.native
+  /**
+    * @private
+    */
+  /* private */ var _calculateBarIndexPixels: Any = js.native
   
-  @JSImport("chart.js", "BarController.afterRegister")
-  @js.native
-  def afterRegister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def afterRegister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterRegister")(x.asInstanceOf[js.Any])
+  /**
+    * Note: pixel values are not clamped to the scale area.
+    * @private
+    */
+  /* private */ var _calculateBarValuePixels: Any = js.native
   
-  @JSImport("chart.js", "BarController.afterUnregister")
-  @js.native
-  def afterUnregister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def afterUnregister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterUnregister")(x.asInstanceOf[js.Any])
+  /**
+    * @private
+    */
+  /* private */ var _getRuler: Any = js.native
   
-  @JSImport("chart.js", "BarController.beforeRegister")
-  @js.native
-  def beforeRegister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def beforeRegister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeRegister")(x.asInstanceOf[js.Any])
+  /**
+    * Returns the effective number of stacks based on groups and bar visibility.
+    * @private
+    */
+  /* private */ var _getStackCount: Any = js.native
   
-  @JSImport("chart.js", "BarController.beforeUnregister")
-  @js.native
-  def beforeUnregister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def beforeUnregister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeUnregister")(x.asInstanceOf[js.Any])
+  /**
+    * Returns the stack index for the given dataset based on groups and bar visibility.
+    * @param {number} [datasetIndex] - The dataset index
+    * @param {string} [name] - The stack name to find
+    * @param {number} [dataIndex]
+    * @returns {number} The stack index
+    * @private
+    */
+  /* private */ var _getStackIndex: Any = js.native
   
-  @JSImport("chart.js", "BarController.defaultRoutes")
-  @js.native
-  def defaultRoutes: js.UndefOr[StringDictionary[String]] = js.native
-  inline def defaultRoutes_=(x: js.UndefOr[StringDictionary[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultRoutes")(x.asInstanceOf[js.Any])
+  /**
+    * Returns the stacks based on groups and bar visibility.
+    * @param {number} [last] - The dataset index
+    * @param {number} [dataIndex] - The data index of the ruler
+    * @returns {string[]} The list of stack IDs
+    * @private
+    */
+  /* private */ var _getStacks: Any = js.native
   
-  @JSImport("chart.js", "BarController.defaults")
-  @js.native
-  def defaults: js.UndefOr[AnyObject] = js.native
-  inline def defaults_=(x: js.UndefOr[AnyObject]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
+  /**
+    * Overriding array data parsing since we support mixed primitive/array
+    * data for float bars
+    * @protected
+    */
+  /* protected */ def parseArrayData(meta: Any, data: Any, start: Any, count: Any): js.Array[Any] = js.native
   
-  @JSImport("chart.js", "BarController.id")
-  @js.native
-  def id: String = js.native
-  inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  /**
+    * Overriding object data parsing since we support mixed primitive/array
+    * value-scale data for float bars
+    * @protected
+    */
+  /* protected */ def parseObjectData(meta: Any, data: Any, start: Any, count: Any): js.Array[Any] = js.native
+  
+  /**
+    * Overriding primitive data parsing since we support mixed primitive/array
+    * data for float bars
+    * @protected
+    */
+  /* protected */ def parsePrimitiveData(meta: Any, data: Any, start: Any, count: Any): js.Array[Any] = js.native
+  
+  def update(mode: Any): scala.Unit = js.native
 }

@@ -73,6 +73,8 @@ type Builtin = js.Function | js.Date | js.Error | js.RegExp
 
 type EndCallback = js.Function1[/* result */ EndResult, Unit]
 
+type ExtrapolateType = "extend" | "identity" | "clamp"
+
 /** 
 NOTE: Rewritten from type alias:
 {{{
@@ -82,6 +84,9 @@ to avoid circular code involving:
 - react-native.react-native.Animated.Mapping
 */
 type Mapping = StringDictionary[Any] | AnimatedValue
+
+// in case it's something we don't yet know about (for .e.g bigint)
+type NonAnimatedProps = "key" | "ref"
 
 type Nullable = js.UndefOr[Null]
 

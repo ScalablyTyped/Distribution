@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object examplesJsmNodesCoreCodeNodeMod {
     
     def getIncludes(builder: typings.three.examplesJsmNodesCoreNodeBuilderMod.default): js.Array[CodeNodeInclude] = js.native
     
-    var isCodeNode: `true` = js.native
+    var isCodeNode: true = js.native
     
     def setIncludes(includes: js.Array[CodeNodeInclude]): this.type = js.native
   }

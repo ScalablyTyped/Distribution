@@ -2,19 +2,6 @@ package typings.node.dnsMod
 
 import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.^
-import typings.node.nodeStrings.A
-import typings.node.nodeStrings.AAAA
-import typings.node.nodeStrings.ANY
-import typings.node.nodeStrings.CNAME
-import typings.node.nodeStrings.MX
-import typings.node.nodeStrings.NAPTR
-import typings.node.nodeStrings.NS
-import typings.node.nodeStrings.PTR
-import typings.node.nodeStrings.SOA
-import typings.node.nodeStrings.SRV
-import typings.node.nodeStrings.TXT
-import typings.node.nodeStrings.ipv4first
-import typings.node.nodeStrings.verbatim
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,67 +105,12 @@ inline def resolve(
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def resolve(
   hostname: String,
-  rrtype: String,
+  rrtype: "A" | "AAAA" | "ANY" | "CNAME" | "MX" | "NAPTR" | "NS" | "PTR" | "SOA" | "SRV" | "TXT" | String,
   callback: js.Function2[
-  /* err */ ErrnoException | Null, 
-  /* addresses */ (js.Array[AnyRecord | js.Array[String] | MxRecord | NaptrRecord | SrvRecord | String]) | SoaRecord, 
+  ErrnoException | Null, 
+  (/* addresses */ js.Array[AnyRecord | js.Array[String] | MxRecord | NaptrRecord | SrvRecord | String]) | (/* addresses */ SoaRecord), 
   Unit
 ]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def resolve(
-  hostname: String,
-  rrtype: AAAA,
-  callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def resolve(
-  hostname: String,
-  rrtype: ANY,
-  callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[AnyRecord], Unit]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def resolve(
-  hostname: String,
-  rrtype: A,
-  callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def resolve(
-  hostname: String,
-  rrtype: CNAME,
-  callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def resolve(
-  hostname: String,
-  rrtype: MX,
-  callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[MxRecord], Unit]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def resolve(
-  hostname: String,
-  rrtype: NAPTR,
-  callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[NaptrRecord], Unit]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def resolve(
-  hostname: String,
-  rrtype: NS,
-  callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def resolve(
-  hostname: String,
-  rrtype: PTR,
-  callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def resolve(
-  hostname: String,
-  rrtype: SOA,
-  callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ SoaRecord, Unit]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def resolve(
-  hostname: String,
-  rrtype: SRV,
-  callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[SrvRecord], Unit]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def resolve(
-  hostname: String,
-  rrtype: TXT,
-  callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[js.Array[String]], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def resolve4(
@@ -274,6 +206,11 @@ inline def reverse(
   callback: js.Function2[/* err */ ErrnoException | Null, /* hostnames */ js.Array[String], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(ip.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def setDefaultResultOrder(order: ipv4first | verbatim): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultResultOrder")(order.asInstanceOf[js.Any]).asInstanceOf[Unit]
+@scala.annotation.targetName("setDefaultResultOrder_ipv4first_verbatim")
+inline def setDefaultResultOrder(order: "ipv4first" | "verbatim"): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultResultOrder")(order.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def setServers(servers: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setServers")(servers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+type AnyRecord = AnyARecord | AnyAaaaRecord | AnyCnameRecord | AnyMxRecord | AnyNaptrRecord | AnyNsRecord | AnyPtrRecord | AnySoaRecord | AnySrvRecord | AnyTxtRecord
+
+type AnyRecordWithTtl = AnyARecord | AnyAaaaRecord

@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.ConditionalExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `170` extends StObject {
   
-  var `type`: ConditionalExpression
+  var `type`: "ConditionalExpression"
 }
 object `170` {
   
@@ -19,6 +18,6 @@ object `170` {
   
   extension [Self <: `170`](x: Self) {
     
-    inline def setType(value: ConditionalExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ConditionalExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -5,8 +5,6 @@ import typings.materialUiCore.anon.AlignItems
 import typings.materialUiCore.anon.`7`
 import typings.materialUiCore.anon.`8`
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
-import typings.materialUiCore.materialUiCoreStrings.li
-import typings.materialUiCore.materialUiCoreStrings.props
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -29,25 +27,19 @@ object menuItemMenuItemMod extends Shortcut {
     */
   @JSImport("@material-ui/core/MenuItem/MenuItem", JSImport.Default)
   @js.native
-  val default: (OverridableComponent[MenuItemTypeMap[`7`, li]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, li]]) = js.native
+  val default: (OverridableComponent[MenuItemTypeMap[`7`, "li"]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, "li"]]) = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.gutters
-    - typings.materialUiCore.materialUiCoreStrings.selected
-    - typings.materialUiCore.materialUiCoreStrings.dense
-  */
-  trait MenuItemClassKey extends StObject
   object MenuItemClassKey {
     
-    inline def dense: typings.materialUiCore.materialUiCoreStrings.dense = "dense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dense]
+    inline def dense: "dense" = "dense".asInstanceOf["dense"]
     
-    inline def gutters: typings.materialUiCore.materialUiCoreStrings.gutters = "gutters".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.gutters]
+    inline def gutters: "gutters" = "gutters".asInstanceOf["gutters"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def selected: typings.materialUiCore.materialUiCoreStrings.selected = "selected".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.selected]
+    inline def selected: "selected" = "selected".asInstanceOf["selected"]
   }
+  type MenuItemClassKey = "root" | "gutters" | "selected" | "dense"
   
   type MenuItemProps[D /* <: ElementType[Any] */, P] = OverrideProps[MenuItemTypeMap[P, D], D]
   
@@ -63,7 +55,7 @@ object menuItemMenuItemMod extends Shortcut {
     
     var defaultComponent: D
     
-    var props: typings.materialUiCore.materialUiCoreStrings.props & AlignItems
+    var props: "props" & AlignItems
   }
   object MenuItemTypeMap {
     
@@ -71,7 +63,7 @@ object menuItemMenuItemMod extends Shortcut {
       ListItemClasses: /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.@material-ui/core/ListItem/ListItem.ListItemProps<'li', {}>['classes'] */ js.Any,
       classKey: MenuItemClassKey,
       defaultComponent: D,
-      props: props & AlignItems
+      props: "props" & AlignItems
     ): MenuItemTypeMap[P, D] = {
       val __obj = js.Dynamic.literal(ListItemClasses = ListItemClasses.asInstanceOf[js.Any], classKey = classKey.asInstanceOf[js.Any], defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuItemTypeMap[P, D]]
@@ -87,12 +79,12 @@ object menuItemMenuItemMod extends Shortcut {
         value: /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.@material-ui/core/ListItem/ListItem.ListItemProps<'li', {}>['classes'] */ js.Any
       ): Self = StObject.set(x, "ListItemClasses", value.asInstanceOf[js.Any])
       
-      inline def setProps(value: props & AlignItems): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: "props" & AlignItems): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
   
-  type _To = (OverridableComponent[MenuItemTypeMap[`7`, li]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, li]])
+  type _To = (OverridableComponent[MenuItemTypeMap[`7`, "li"]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, "li"]])
   
   /* This means you don't have to write `default`, but can instead just say `menuItemMenuItemMod.foo` */
-  override def _to: (OverridableComponent[MenuItemTypeMap[`7`, li]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, li]]) = default
+  override def _to: (OverridableComponent[MenuItemTypeMap[`7`, "li"]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, "li"]]) = default
 }

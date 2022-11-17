@@ -4,7 +4,6 @@ import typings.redux.mod.Func0
 import typings.redux.mod.Func1
 import typings.redux.mod.Func2
 import typings.redux.mod.Func3
-import typings.reduxDevtoolsExtension.reduxDevtoolsExtensionStrings.custom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,12 +81,12 @@ object anon {
     /**
       * export history of actions in a file
       */
-    var `export`: js.UndefOr[Boolean | custom] = js.undefined
+    var `export`: js.UndefOr[Boolean | "custom"] = js.undefined
     
     /**
       * import history of actions from a file
       */
-    var `import`: js.UndefOr[Boolean | custom] = js.undefined
+    var `import`: js.UndefOr[Boolean | "custom"] = js.undefined
     
     /**
       * jump back and forth (time travelling)
@@ -137,11 +136,11 @@ object anon {
       
       inline def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
       
-      inline def setExport(value: Boolean | custom): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
+      inline def setExport(value: Boolean | "custom"): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
       
       inline def setExportUndefined: Self = StObject.set(x, "export", js.undefined)
       
-      inline def setImport(value: Boolean | custom): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
+      inline def setImport(value: Boolean | "custom"): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
       
       inline def setImportUndefined: Self = StObject.set(x, "import", js.undefined)
       

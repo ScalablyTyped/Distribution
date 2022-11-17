@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Clickable
-import typings.materialUiCore.materialUiCoreStrings.div
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -24,103 +23,71 @@ object chipChipMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Chip/Chip", JSImport.Default)
   @js.native
-  val default: OverridableComponent[ChipTypeMap[js.Object, div]] = js.native
+  val default: OverridableComponent[ChipTypeMap[js.Object, "div"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.sizeSmall
-    - typings.materialUiCore.materialUiCoreStrings.colorPrimary
-    - typings.materialUiCore.materialUiCoreStrings.colorSecondary
-    - typings.materialUiCore.materialUiCoreStrings.disabled
-    - typings.materialUiCore.materialUiCoreStrings.clickable
-    - typings.materialUiCore.materialUiCoreStrings.clickableColorPrimary
-    - typings.materialUiCore.materialUiCoreStrings.clickableColorSecondary
-    - typings.materialUiCore.materialUiCoreStrings.deletable
-    - typings.materialUiCore.materialUiCoreStrings.deletableColorPrimary
-    - typings.materialUiCore.materialUiCoreStrings.deletableColorSecondary
-    - typings.materialUiCore.materialUiCoreStrings.outlined
-    - typings.materialUiCore.materialUiCoreStrings.outlinedPrimary
-    - typings.materialUiCore.materialUiCoreStrings.outlinedSecondary
-    - typings.materialUiCore.materialUiCoreStrings.avatar
-    - typings.materialUiCore.materialUiCoreStrings.avatarSmall
-    - typings.materialUiCore.materialUiCoreStrings.avatarColorPrimary
-    - typings.materialUiCore.materialUiCoreStrings.avatarColorSecondary
-    - typings.materialUiCore.materialUiCoreStrings.icon
-    - typings.materialUiCore.materialUiCoreStrings.iconSmall
-    - typings.materialUiCore.materialUiCoreStrings.iconColorPrimary
-    - typings.materialUiCore.materialUiCoreStrings.iconColorSecondary
-    - typings.materialUiCore.materialUiCoreStrings.label
-    - typings.materialUiCore.materialUiCoreStrings.labelSmall
-    - typings.materialUiCore.materialUiCoreStrings.deleteIcon
-    - typings.materialUiCore.materialUiCoreStrings.deleteIconSmall
-    - typings.materialUiCore.materialUiCoreStrings.deleteIconColorPrimary
-    - typings.materialUiCore.materialUiCoreStrings.deleteIconColorSecondary
-    - typings.materialUiCore.materialUiCoreStrings.deleteIconOutlinedColorPrimary
-    - typings.materialUiCore.materialUiCoreStrings.deleteIconOutlinedColorSecondary
-  */
-  trait ChipClassKey extends StObject
   object ChipClassKey {
     
-    inline def avatar: typings.materialUiCore.materialUiCoreStrings.avatar = "avatar".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.avatar]
+    inline def avatar: "avatar" = "avatar".asInstanceOf["avatar"]
     
-    inline def avatarColorPrimary: typings.materialUiCore.materialUiCoreStrings.avatarColorPrimary = "avatarColorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.avatarColorPrimary]
+    inline def avatarColorPrimary: "avatarColorPrimary" = "avatarColorPrimary".asInstanceOf["avatarColorPrimary"]
     
-    inline def avatarColorSecondary: typings.materialUiCore.materialUiCoreStrings.avatarColorSecondary = "avatarColorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.avatarColorSecondary]
+    inline def avatarColorSecondary: "avatarColorSecondary" = "avatarColorSecondary".asInstanceOf["avatarColorSecondary"]
     
-    inline def avatarSmall: typings.materialUiCore.materialUiCoreStrings.avatarSmall = "avatarSmall".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.avatarSmall]
+    inline def avatarSmall: "avatarSmall" = "avatarSmall".asInstanceOf["avatarSmall"]
     
-    inline def clickable: typings.materialUiCore.materialUiCoreStrings.clickable = "clickable".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.clickable]
+    inline def clickable: "clickable" = "clickable".asInstanceOf["clickable"]
     
-    inline def clickableColorPrimary: typings.materialUiCore.materialUiCoreStrings.clickableColorPrimary = "clickableColorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.clickableColorPrimary]
+    inline def clickableColorPrimary: "clickableColorPrimary" = "clickableColorPrimary".asInstanceOf["clickableColorPrimary"]
     
-    inline def clickableColorSecondary: typings.materialUiCore.materialUiCoreStrings.clickableColorSecondary = "clickableColorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.clickableColorSecondary]
+    inline def clickableColorSecondary: "clickableColorSecondary" = "clickableColorSecondary".asInstanceOf["clickableColorSecondary"]
     
-    inline def colorPrimary: typings.materialUiCore.materialUiCoreStrings.colorPrimary = "colorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorPrimary]
+    inline def colorPrimary: "colorPrimary" = "colorPrimary".asInstanceOf["colorPrimary"]
     
-    inline def colorSecondary: typings.materialUiCore.materialUiCoreStrings.colorSecondary = "colorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorSecondary]
+    inline def colorSecondary: "colorSecondary" = "colorSecondary".asInstanceOf["colorSecondary"]
     
-    inline def deletable: typings.materialUiCore.materialUiCoreStrings.deletable = "deletable".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.deletable]
+    inline def deletable: "deletable" = "deletable".asInstanceOf["deletable"]
     
-    inline def deletableColorPrimary: typings.materialUiCore.materialUiCoreStrings.deletableColorPrimary = "deletableColorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.deletableColorPrimary]
+    inline def deletableColorPrimary: "deletableColorPrimary" = "deletableColorPrimary".asInstanceOf["deletableColorPrimary"]
     
-    inline def deletableColorSecondary: typings.materialUiCore.materialUiCoreStrings.deletableColorSecondary = "deletableColorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.deletableColorSecondary]
+    inline def deletableColorSecondary: "deletableColorSecondary" = "deletableColorSecondary".asInstanceOf["deletableColorSecondary"]
     
-    inline def deleteIcon: typings.materialUiCore.materialUiCoreStrings.deleteIcon = "deleteIcon".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.deleteIcon]
+    inline def deleteIcon: "deleteIcon" = "deleteIcon".asInstanceOf["deleteIcon"]
     
-    inline def deleteIconColorPrimary: typings.materialUiCore.materialUiCoreStrings.deleteIconColorPrimary = "deleteIconColorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.deleteIconColorPrimary]
+    inline def deleteIconColorPrimary: "deleteIconColorPrimary" = "deleteIconColorPrimary".asInstanceOf["deleteIconColorPrimary"]
     
-    inline def deleteIconColorSecondary: typings.materialUiCore.materialUiCoreStrings.deleteIconColorSecondary = "deleteIconColorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.deleteIconColorSecondary]
+    inline def deleteIconColorSecondary: "deleteIconColorSecondary" = "deleteIconColorSecondary".asInstanceOf["deleteIconColorSecondary"]
     
-    inline def deleteIconOutlinedColorPrimary: typings.materialUiCore.materialUiCoreStrings.deleteIconOutlinedColorPrimary = "deleteIconOutlinedColorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.deleteIconOutlinedColorPrimary]
+    inline def deleteIconOutlinedColorPrimary: "deleteIconOutlinedColorPrimary" = "deleteIconOutlinedColorPrimary".asInstanceOf["deleteIconOutlinedColorPrimary"]
     
-    inline def deleteIconOutlinedColorSecondary: typings.materialUiCore.materialUiCoreStrings.deleteIconOutlinedColorSecondary = "deleteIconOutlinedColorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.deleteIconOutlinedColorSecondary]
+    inline def deleteIconOutlinedColorSecondary: "deleteIconOutlinedColorSecondary" = "deleteIconOutlinedColorSecondary".asInstanceOf["deleteIconOutlinedColorSecondary"]
     
-    inline def deleteIconSmall: typings.materialUiCore.materialUiCoreStrings.deleteIconSmall = "deleteIconSmall".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.deleteIconSmall]
+    inline def deleteIconSmall: "deleteIconSmall" = "deleteIconSmall".asInstanceOf["deleteIconSmall"]
     
-    inline def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
+    inline def disabled: "disabled" = "disabled".asInstanceOf["disabled"]
     
-    inline def icon: typings.materialUiCore.materialUiCoreStrings.icon = "icon".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.icon]
+    inline def icon: "icon" = "icon".asInstanceOf["icon"]
     
-    inline def iconColorPrimary: typings.materialUiCore.materialUiCoreStrings.iconColorPrimary = "iconColorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.iconColorPrimary]
+    inline def iconColorPrimary: "iconColorPrimary" = "iconColorPrimary".asInstanceOf["iconColorPrimary"]
     
-    inline def iconColorSecondary: typings.materialUiCore.materialUiCoreStrings.iconColorSecondary = "iconColorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.iconColorSecondary]
+    inline def iconColorSecondary: "iconColorSecondary" = "iconColorSecondary".asInstanceOf["iconColorSecondary"]
     
-    inline def iconSmall: typings.materialUiCore.materialUiCoreStrings.iconSmall = "iconSmall".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.iconSmall]
+    inline def iconSmall: "iconSmall" = "iconSmall".asInstanceOf["iconSmall"]
     
-    inline def label: typings.materialUiCore.materialUiCoreStrings.label = "label".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.label]
+    inline def label: "label" = "label".asInstanceOf["label"]
     
-    inline def labelSmall: typings.materialUiCore.materialUiCoreStrings.labelSmall = "labelSmall".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.labelSmall]
+    inline def labelSmall: "labelSmall" = "labelSmall".asInstanceOf["labelSmall"]
     
-    inline def outlined: typings.materialUiCore.materialUiCoreStrings.outlined = "outlined".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.outlined]
+    inline def outlined: "outlined" = "outlined".asInstanceOf["outlined"]
     
-    inline def outlinedPrimary: typings.materialUiCore.materialUiCoreStrings.outlinedPrimary = "outlinedPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.outlinedPrimary]
+    inline def outlinedPrimary: "outlinedPrimary" = "outlinedPrimary".asInstanceOf["outlinedPrimary"]
     
-    inline def outlinedSecondary: typings.materialUiCore.materialUiCoreStrings.outlinedSecondary = "outlinedSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.outlinedSecondary]
+    inline def outlinedSecondary: "outlinedSecondary" = "outlinedSecondary".asInstanceOf["outlinedSecondary"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def sizeSmall: typings.materialUiCore.materialUiCoreStrings.sizeSmall = "sizeSmall".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sizeSmall]
+    inline def sizeSmall: "sizeSmall" = "sizeSmall".asInstanceOf["sizeSmall"]
   }
+  type ChipClassKey = "root" | "sizeSmall" | "colorPrimary" | "colorSecondary" | "disabled" | "clickable" | "clickableColorPrimary" | "clickableColorSecondary" | "deletable" | "deletableColorPrimary" | "deletableColorSecondary" | "outlined" | "outlinedPrimary" | "outlinedSecondary" | "avatar" | "avatarSmall" | "avatarColorPrimary" | "avatarColorSecondary" | "icon" | "iconSmall" | "iconColorPrimary" | "iconColorSecondary" | "label" | "labelSmall" | "deleteIcon" | "deleteIconSmall" | "deleteIconColorPrimary" | "deleteIconColorSecondary" | "deleteIconOutlinedColorPrimary" | "deleteIconOutlinedColorSecondary"
   
   type ChipProps[D /* <: ElementType[Any] */, P] = OverrideProps[ChipTypeMap[P, D], D]
   
@@ -149,8 +116,8 @@ object chipChipMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[ChipTypeMap[js.Object, div]]
+  type _To = OverridableComponent[ChipTypeMap[js.Object, "div"]]
   
   /* This means you don't have to write `default`, but can instead just say `chipChipMod.foo` */
-  override def _to: OverridableComponent[ChipTypeMap[js.Object, div]] = default
+  override def _to: OverridableComponent[ChipTypeMap[js.Object, "div"]] = default
 }

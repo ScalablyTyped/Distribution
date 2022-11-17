@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JsxExpression
   extends StObject
-     with Expression
-     with JsxAttributeValue
-     with JsxChild {
+     with Expression {
   
   val dotDotDotToken: js.UndefOr[Token[typings.typescript.mod.SyntaxKind.DotDotDotToken]] = js.native
   

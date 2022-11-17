@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait InterfaceDeclaration
   extends StObject
-     with DeclarationStatement
-     with DeclarationWithTypeParameterChildren
-     with HasJSDoc
-     with HasModifiers
-     with ObjectTypeDeclaration {
+     with DeclarationStatement {
   
   val heritageClauses: js.UndefOr[NodeArray[HeritageClause]] = js.native
   

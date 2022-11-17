@@ -1,11 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`expired-overwrite`
-import typings.electron.electronStrings.changed
-import typings.electron.electronStrings.evicted
-import typings.electron.electronStrings.expired
-import typings.electron.electronStrings.explicit
-import typings.electron.electronStrings.overwrite
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,12 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Cookies extends EventEmitter {
   
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_changed_explicit_overwrite_expired_evicted_expiredoverwrite")
   def addListener(
-    event: changed,
+    event: "changed",
     listener: js.Function4[
       /* event */ Event, 
       /* cookie */ Cookie, 
-      /* cause */ explicit | overwrite | expired | evicted | `expired-overwrite`, 
+      /* cause */ "explicit" | "overwrite" | "expired" | "evicted" | "expired-overwrite", 
       /* removed */ Boolean, 
       Unit
     ]
@@ -45,23 +41,27 @@ trait Cookies extends EventEmitter {
     * Emitted when a cookie is changed because it was added, edited, removed, or
     * expired.
     */
+  @JSName("on")
+  @scala.annotation.targetName("on_changed_explicit_overwrite_expired_evicted_expiredoverwrite")
   def on(
-    event: changed,
+    event: "changed",
     listener: js.Function4[
       /* event */ Event, 
       /* cookie */ Cookie, 
-      /* cause */ explicit | overwrite | expired | evicted | `expired-overwrite`, 
+      /* cause */ "explicit" | "overwrite" | "expired" | "evicted" | "expired-overwrite", 
       /* removed */ Boolean, 
       Unit
     ]
   ): this.type = js.native
   
+  @JSName("once")
+  @scala.annotation.targetName("once_changed_explicit_overwrite_expired_evicted_expiredoverwrite")
   def once(
-    event: changed,
+    event: "changed",
     listener: js.Function4[
       /* event */ Event, 
       /* cookie */ Cookie, 
-      /* cause */ explicit | overwrite | expired | evicted | `expired-overwrite`, 
+      /* cause */ "explicit" | "overwrite" | "expired" | "evicted" | "expired-overwrite", 
       /* removed */ Boolean, 
       Unit
     ]
@@ -74,12 +74,14 @@ trait Cookies extends EventEmitter {
     */
   def remove(url: String, name: String): js.Promise[Unit] = js.native
   
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_changed_explicit_overwrite_expired_evicted_expiredoverwrite")
   def removeListener(
-    event: changed,
+    event: "changed",
     listener: js.Function4[
       /* event */ Event, 
       /* cookie */ Cookie, 
-      /* cause */ explicit | overwrite | expired | evicted | `expired-overwrite`, 
+      /* cause */ "explicit" | "overwrite" | "expired" | "evicted" | "expired-overwrite", 
       /* removed */ Boolean, 
       Unit
     ]

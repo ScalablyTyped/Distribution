@@ -1,8 +1,5 @@
 package typings.rcTree.anon
 
-import typings.rcTree.rcTreeInts.`-1`
-import typings.rcTree.rcTreeInts.`0`
-import typings.rcTree.rcTreeInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +14,7 @@ trait DragOverNodeKey extends StObject {
   
   var dropLevelOffset: Double
   
-  var dropPosition: `-1` | `0` | `1`
+  var dropPosition: -1 | 0 | 1
   
   var dropTargetKey: typings.rcTree.esInterfaceMod.Key
   
@@ -30,7 +27,7 @@ object DragOverNodeKey {
     dropAllowed: Boolean,
     dropContainerKey: typings.rcTree.esInterfaceMod.Key,
     dropLevelOffset: Double,
-    dropPosition: `-1` | `0` | `1`,
+    dropPosition: -1 | 0 | 1,
     dropTargetKey: typings.rcTree.esInterfaceMod.Key,
     dropTargetPos: String
   ): DragOverNodeKey = {
@@ -48,7 +45,7 @@ object DragOverNodeKey {
     
     inline def setDropLevelOffset(value: Double): Self = StObject.set(x, "dropLevelOffset", value.asInstanceOf[js.Any])
     
-    inline def setDropPosition(value: `-1` | `0` | `1`): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
+    inline def setDropPosition(value: -1 | 0 | 1): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
     
     inline def setDropTargetKey(value: typings.rcTree.esInterfaceMod.Key): Self = StObject.set(x, "dropTargetKey", value.asInstanceOf[js.Any])
     

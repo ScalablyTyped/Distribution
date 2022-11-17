@@ -14,7 +14,6 @@ import typings.semanticUiReact.distCommonjsCollectionsFormFormInputMod.FormInput
 import typings.semanticUiReact.distCommonjsCollectionsFormFormRadioMod.FormRadioProps
 import typings.semanticUiReact.distCommonjsCollectionsFormFormSelectMod.FormSelectProps
 import typings.semanticUiReact.distCommonjsCollectionsFormFormTextAreaMod.FormTextAreaProps
-import typings.semanticUiReact.semanticUiReactStrings.equal
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -88,7 +87,7 @@ object distCommonjsCollectionsFormFormMod extends Shortcut {
     var warning: js.UndefOr[Boolean] = js.undefined
     
     /** Forms can automatically divide fields to be equal width. */
-    var widths: js.UndefOr[equal] = js.undefined
+    var widths: js.UndefOr["equal"] = js.undefined
   }
   object StrictFormProps {
     
@@ -139,7 +138,7 @@ object distCommonjsCollectionsFormFormMod extends Shortcut {
       
       inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
       
-      inline def setWidths(value: equal): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
+      inline def setWidths(value: "equal"): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
       
       inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
     }

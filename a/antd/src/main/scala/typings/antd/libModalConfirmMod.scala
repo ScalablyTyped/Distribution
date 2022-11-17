@@ -3,12 +3,6 @@ package typings.antd
 import typings.antd.anon.Destroy
 import typings.antd.anon.RootPrefixCls
 import typings.antd.anon.Update
-import typings.antd.antdStrings.confirm
-import typings.antd.antdStrings.error
-import typings.antd.antdStrings.info
-import typings.antd.antdStrings.success
-import typings.antd.antdStrings.warn
-import typings.antd.antdStrings.warning
 import typings.antd.libModalModalMod.ModalFuncProps
 import typings.std.NonNullable
 import typings.std.Record
@@ -41,7 +35,7 @@ object libModalConfirmMod {
   type ModalFunc = js.Function1[/* props */ ModalFuncProps, Destroy]
   
   type ModalStaticFunctions = Record[
-    NonNullable[js.UndefOr[info | success | error | warn | warning | confirm]], 
+    NonNullable[js.UndefOr["info" | "success" | "error" | "warn" | "warning" | "confirm"]], 
     ModalFunc
   ]
 }

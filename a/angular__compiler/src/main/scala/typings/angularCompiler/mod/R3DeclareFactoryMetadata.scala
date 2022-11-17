@@ -1,6 +1,5 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.angularCompilerStrings.invalid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait R3DeclareFactoryMetadata
     * If this is `'invalid'`, then one or more of the parameters wasn't resolvable and any attempt to
     * use these deps will result in a runtime error.
     */
-  var deps: js.Array[R3DeclareDependencyMetadata] | invalid | Null
+  var deps: js.Array[R3DeclareDependencyMetadata] | "invalid" | Null
   
   /**
     * Type of the target being created by the factory.
@@ -41,7 +40,7 @@ object R3DeclareFactoryMetadata {
   
   extension [Self <: R3DeclareFactoryMetadata](x: Self) {
     
-    inline def setDeps(value: js.Array[R3DeclareDependencyMetadata] | invalid): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[R3DeclareDependencyMetadata] | "invalid"): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     inline def setDepsNull: Self = StObject.set(x, "deps", null)
     

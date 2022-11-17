@@ -1,13 +1,10 @@
 package typings.rcFieldForm.esInterfaceMod
 
-import typings.rcFieldForm.rcFieldFormStrings.dependenciesUpdate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DependenciesUpdateInfo
-  extends StObject
-     with NotifyInfo {
+trait DependenciesUpdateInfo extends StObject {
   
   /**
     * Contains all the related `InternalNamePath[]`.
@@ -16,7 +13,7 @@ trait DependenciesUpdateInfo
     */
   var relatedFields: js.Array[InternalNamePath]
   
-  var `type`: dependenciesUpdate
+  var `type`: "dependenciesUpdate"
 }
 object DependenciesUpdateInfo {
   
@@ -32,6 +29,6 @@ object DependenciesUpdateInfo {
     
     inline def setRelatedFieldsVarargs(value: InternalNamePath*): Self = StObject.set(x, "relatedFields", js.Array(value*))
     
-    inline def setType(value: dependenciesUpdate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "dependenciesUpdate"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

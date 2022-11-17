@@ -1,7 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.photo
-import typings.reactNative.reactNativeStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,5 +48,7 @@ trait CameraRollStatic extends StObject {
     * Returns a Promise which will resolve with the new URI.
     */
   def saveToCameraRoll(tag: String): js.Promise[String] = js.native
-  def saveToCameraRoll(tag: String, `type`: photo | video): js.Promise[String] = js.native
+  @JSName("saveToCameraRoll")
+  @scala.annotation.targetName("saveToCameraRoll_photo_video")
+  def saveToCameraRoll(tag: String, `type`: "photo" | "video"): js.Promise[String] = js.native
 }

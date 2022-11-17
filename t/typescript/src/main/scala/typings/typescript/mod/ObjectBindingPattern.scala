@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ObjectBindingPattern
   extends StObject
-     with Node
-     with BindingPattern
-     with ObjectBindingOrAssignmentPattern {
+     with Node {
   
   val elements: NodeArray[BindingElement] = js.native
   

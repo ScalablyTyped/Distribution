@@ -1,21 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ForOfStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ForOfStatement_
   extends StObject
-     with BaseNode
-     with BlockParent
-     with For
-     with ForXStatement
-     with Loop
-     with Node
-     with Scopable
-     with Standardized
-     with Statement {
+     with BaseNode {
   
   var await: Boolean
   
@@ -26,7 +17,7 @@ trait ForOfStatement_
   var right: Expression
   
   @JSName("type")
-  var type_ForOfStatement_ : ForOfStatement
+  var type_ForOfStatement_ : "ForOfStatement"
 }
 object ForOfStatement_ {
   
@@ -46,6 +37,6 @@ object ForOfStatement_ {
     
     inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ForOfStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ForOfStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

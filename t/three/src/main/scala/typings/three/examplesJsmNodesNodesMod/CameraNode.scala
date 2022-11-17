@@ -2,7 +2,6 @@ package typings.three.examplesJsmNodesNodesMod
 
 import typings.three.examplesJsmNodesAccessorsCameraNodeMod.CameraNodeScope
 import typings.three.examplesJsmNodesAccessorsCameraNodeMod.default
-import typings.three.threeStrings.projectionMatrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +20,6 @@ object CameraNode {
   
   @JSImport("three/examples/jsm/nodes/Nodes", "CameraNode.PROJECTION_MATRIX")
   @js.native
-  def PROJECTION_MATRIX: projectionMatrix = js.native
-  inline def PROJECTION_MATRIX_=(x: projectionMatrix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROJECTION_MATRIX")(x.asInstanceOf[js.Any])
+  def PROJECTION_MATRIX: "projectionMatrix" = js.native
+  inline def PROJECTION_MATRIX_=(x: "projectionMatrix"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROJECTION_MATRIX")(x.asInstanceOf[js.Any])
 }

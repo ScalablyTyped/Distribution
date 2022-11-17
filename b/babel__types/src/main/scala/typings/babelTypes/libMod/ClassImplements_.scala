@@ -1,22 +1,19 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ClassImplements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ClassImplements_
   extends StObject
-     with BaseNode
-     with Flow
-     with Node {
+     with BaseNode {
   
   var id: Identifier_
   
   var typeParameters: js.UndefOr[TypeParameterInstantiation_ | Null] = js.undefined
   
   @JSName("type")
-  var type_ClassImplements_ : ClassImplements
+  var type_ClassImplements_ : "ClassImplements"
 }
 object ClassImplements_ {
   
@@ -30,7 +27,7 @@ object ClassImplements_ {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ClassImplements): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ClassImplements"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TypeParameterInstantiation_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

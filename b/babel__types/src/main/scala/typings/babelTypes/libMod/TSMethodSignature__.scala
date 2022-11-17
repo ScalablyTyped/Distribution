@@ -1,25 +1,18 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSMethodSignature
-import typings.babelTypes.babelTypesStrings.get
-import typings.babelTypes.babelTypesStrings.method_
-import typings.babelTypes.babelTypesStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSMethodSignature__
   extends StObject
-     with BaseNode
-     with Node
-     with TSTypeElement
-     with TypeScript {
+     with BaseNode {
   
   var computed: js.UndefOr[Boolean] = js.undefined
   
   var key: Expression
   
-  var kind: method_ | get | set
+  var kind: "method" | "get" | "set"
   
   var optional: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -30,11 +23,11 @@ trait TSMethodSignature__
   var typeParameters: js.UndefOr[TSTypeParameterDeclaration__ | Null] = js.undefined
   
   @JSName("type")
-  var type_TSMethodSignature__ : TSMethodSignature
+  var type_TSMethodSignature__ : "TSMethodSignature"
 }
 object TSMethodSignature__ {
   
-  inline def apply(key: Expression, kind: method_ | get | set, parameters: js.Array[Identifier_ | RestElement_]): TSMethodSignature__ = {
+  inline def apply(key: Expression, kind: "method" | "get" | "set", parameters: js.Array[Identifier_ | RestElement_]): TSMethodSignature__ = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSMethodSignature")
     __obj.asInstanceOf[TSMethodSignature__]
@@ -48,7 +41,7 @@ object TSMethodSignature__ {
     
     inline def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setKind(value: method_ | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "method" | "get" | "set"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
@@ -60,7 +53,7 @@ object TSMethodSignature__ {
     
     inline def setParametersVarargs(value: (Identifier_ | RestElement_)*): Self = StObject.set(x, "parameters", js.Array(value*))
     
-    inline def setType(value: TSMethodSignature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSMethodSignature"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TSTypeAnnotation__): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

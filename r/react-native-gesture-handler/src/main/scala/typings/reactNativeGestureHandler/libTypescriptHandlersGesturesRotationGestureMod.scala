@@ -3,7 +3,6 @@ package typings.reactNativeGestureHandler
 import org.scalablytyped.runtime.Instantiable0
 import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod.ContinousBaseGesture
 import typings.reactNativeGestureHandler.libTypescriptHandlersRotationGestureHandlerMod.RotationGestureHandlerEventPayload
-import typings.reactNativeGestureHandler.libTypescriptJestUtilsJestUtilsMod.AllGestures
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,9 +12,7 @@ object libTypescriptHandlersGesturesRotationGestureMod {
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/rotationGesture", "RotationGesture")
   @js.native
-  open class RotationGesture ()
-    extends ContinousBaseGesture[RotationGestureHandlerEventPayload, RotationGestureChangeEventPayload]
-       with AllGestures
+  open class RotationGesture () extends ContinousBaseGesture[RotationGestureHandlerEventPayload, RotationGestureChangeEventPayload]
   
   trait RotationGestureChangeEventPayload extends StObject {
     

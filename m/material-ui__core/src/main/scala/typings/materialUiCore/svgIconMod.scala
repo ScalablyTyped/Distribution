@@ -1,7 +1,6 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.materialUiCoreStrings.svg
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.svgIconSvgIconMod.SvgIconTypeMap
 import org.scalablytyped.runtime.StObject
@@ -23,10 +22,10 @@ object svgIconMod extends Shortcut {
     */
   @JSImport("@material-ui/core/SvgIcon", JSImport.Default)
   @js.native
-  val default: OverridableComponent[SvgIconTypeMap[js.Object, svg]] = js.native
+  val default: OverridableComponent[SvgIconTypeMap[js.Object, "svg"]] = js.native
   
-  type _To = OverridableComponent[SvgIconTypeMap[js.Object, svg]]
+  type _To = OverridableComponent[SvgIconTypeMap[js.Object, "svg"]]
   
   /* This means you don't have to write `default`, but can instead just say `svgIconMod.foo` */
-  override def _to: OverridableComponent[SvgIconTypeMap[js.Object, svg]] = default
+  override def _to: OverridableComponent[SvgIconTypeMap[js.Object, "svg"]] = default
 }

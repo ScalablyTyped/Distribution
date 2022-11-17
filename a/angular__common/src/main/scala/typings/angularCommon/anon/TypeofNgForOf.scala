@@ -1,7 +1,5 @@
 package typings.angularCommon.anon
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngFor][ngForOf]`
 import typings.angularCore.mod.NgIterable
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
@@ -23,13 +21,14 @@ trait TypeofNgForOf extends StObject {
   /* static member */
   var ɵdir: ɵɵDirectiveDeclaration[
     typings.angularCommon.mod.NgForOf[Any, Any], 
-    `[ngFor][ngForOf]`, 
+    "[ngFor][ngForOf]", 
     scala.Nothing, 
     NgForOf, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ]
   
   /* static member */
@@ -41,13 +40,14 @@ object TypeofNgForOf {
     ngTemplateContextGuard: (typings.angularCommon.mod.NgForOf[Any, Any], Any) => /* is @angular/common.@angular/common.NgForOfContext<T, U> */ Boolean,
     ɵdir: ɵɵDirectiveDeclaration[
       typings.angularCommon.mod.NgForOf[Any, Any], 
-      `[ngFor][ngForOf]`, 
+      "[ngFor][ngForOf]", 
       scala.Nothing, 
       NgForOf, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      true, 
+      scala.Nothing
     ],
     ɵfac: ɵɵFactoryDeclaration[typings.angularCommon.mod.NgForOf[Any, Any], scala.Nothing]
   ): TypeofNgForOf = {
@@ -64,13 +64,14 @@ object TypeofNgForOf {
     inline def setƟdir(
       value: ɵɵDirectiveDeclaration[
           typings.angularCommon.mod.NgForOf[Any, Any], 
-          `[ngFor][ngForOf]`, 
+          "[ngFor][ngForOf]", 
           scala.Nothing, 
           NgForOf, 
           js.Object, 
           scala.Nothing, 
           scala.Nothing, 
-          `true`
+          true, 
+          scala.Nothing
         ]
     ): Self = StObject.set(x, "\u0275dir", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,6 @@
 package typings.scheduler
 
 import typings.scheduler.anon.Cancel
-import typings.scheduler.schedulerBooleans.`false`
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -46,7 +45,7 @@ object tracingMod {
     scheduler.scheduler/tracing.Build extends {  type :infer BuildType} ? BuildType extends 'production' | 'profiling' ? false : BuildType extends 'development' ? true : undefined : undefined
     }}}
     */
-  type EnableSchedulerTracing = `false`
+  type EnableSchedulerTracing = false
   
   type IfSchedulerTracing[WhenTrue, WhenFalse] = TypeByBuildFlag[EnableSchedulerTracing, WhenTrue, WhenFalse]
   

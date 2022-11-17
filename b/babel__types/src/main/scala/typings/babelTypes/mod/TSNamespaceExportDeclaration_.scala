@@ -1,21 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSNamespaceExportDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSNamespaceExportDeclaration_
+trait TSNamespaceExportDeclaration_
   extends StObject
-     with BaseNode
-     with Statement
-     with TypeScript {
+     with BaseNode {
   
   var id: Identifier_
   
   @JSName("type")
-  var type_TSNamespaceExportDeclaration_ : TSNamespaceExportDeclaration
+  var type_TSNamespaceExportDeclaration_ : "TSNamespaceExportDeclaration"
 }
 object TSNamespaceExportDeclaration_ {
   
@@ -29,6 +25,6 @@ object TSNamespaceExportDeclaration_ {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSNamespaceExportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSNamespaceExportDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

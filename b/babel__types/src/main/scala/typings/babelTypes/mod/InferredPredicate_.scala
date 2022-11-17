@@ -1,19 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.InferredPredicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait InferredPredicate_
+trait InferredPredicate_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowPredicate {
+     with BaseNode {
   
   @JSName("type")
-  var type_InferredPredicate_ : InferredPredicate
+  var type_InferredPredicate_ : "InferredPredicate"
 }
 object InferredPredicate_ {
   
@@ -25,6 +21,6 @@ object InferredPredicate_ {
   
   extension [Self <: InferredPredicate_](x: Self) {
     
-    inline def setType(value: InferredPredicate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "InferredPredicate"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

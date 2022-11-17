@@ -5,7 +5,6 @@ import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod
 import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod.BaseGestureConfig
 import typings.reactNativeGestureHandler.libTypescriptHandlersNativeViewGestureHandlerMod.NativeViewGestureConfig
 import typings.reactNativeGestureHandler.libTypescriptHandlersNativeViewGestureHandlerMod.NativeViewGestureHandlerPayload
-import typings.reactNativeGestureHandler.libTypescriptJestUtilsJestUtilsMod.AllGestures
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,9 +14,7 @@ object libTypescriptHandlersGesturesNativeGestureMod {
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/nativeGesture", "NativeGesture")
   @js.native
-  open class NativeGesture ()
-    extends BaseGesture[NativeViewGestureHandlerPayload]
-       with AllGestures {
+  open class NativeGesture () extends BaseGesture[NativeViewGestureHandlerPayload] {
     
     @JSName("config")
     var config_NativeGesture: BaseGestureConfig & NativeViewGestureConfig = js.native

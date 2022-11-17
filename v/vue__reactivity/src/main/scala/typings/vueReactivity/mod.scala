@@ -8,18 +8,6 @@ import typings.std.WeakSet
 import typings.vueReactivity.anon.Get
 import typings.vueReactivity.anon.RawSymbol
 import typings.vueReactivity.anon.ShallowReactiveMarker
-import typings.vueReactivity.vueReactivityStrings.__v_isReactive
-import typings.vueReactivity.vueReactivityStrings.__v_isReadonly
-import typings.vueReactivity.vueReactivityStrings.__v_isShallow
-import typings.vueReactivity.vueReactivityStrings.__v_raw
-import typings.vueReactivity.vueReactivityStrings.__v_skip
-import typings.vueReactivity.vueReactivityStrings.add
-import typings.vueReactivity.vueReactivityStrings.clear
-import typings.vueReactivity.vueReactivityStrings.delete
-import typings.vueReactivity.vueReactivityStrings.get
-import typings.vueReactivity.vueReactivityStrings.has
-import typings.vueReactivity.vueReactivityStrings.iterate
-import typings.vueReactivity.vueReactivityStrings.set
 import typings.vueShared.mod.IfAny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -529,26 +517,19 @@ object mod {
     var effect: ReactiveEffect[Any] = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.vueReactivity.vueReactivityStrings.__v_skip
-    - typings.vueReactivity.vueReactivityStrings.__v_isReactive
-    - typings.vueReactivity.vueReactivityStrings.__v_isReadonly
-    - typings.vueReactivity.vueReactivityStrings.__v_isShallow
-    - typings.vueReactivity.vueReactivityStrings.__v_raw
-  */
-  trait ReactiveFlags extends StObject
   object ReactiveFlags {
     
-    inline def IS_REACTIVE: __v_isReactive = "__v_isReactive".asInstanceOf[__v_isReactive]
+    inline def IS_REACTIVE: "__v_isReactive" = "__v_isReactive".asInstanceOf["__v_isReactive"]
     
-    inline def IS_READONLY: __v_isReadonly = "__v_isReadonly".asInstanceOf[__v_isReadonly]
+    inline def IS_READONLY: "__v_isReadonly" = "__v_isReadonly".asInstanceOf["__v_isReadonly"]
     
-    inline def IS_SHALLOW: __v_isShallow = "__v_isShallow".asInstanceOf[__v_isShallow]
+    inline def IS_SHALLOW: "__v_isShallow" = "__v_isShallow".asInstanceOf["__v_isShallow"]
     
-    inline def RAW: __v_raw = "__v_raw".asInstanceOf[__v_raw]
+    inline def RAW: "__v_raw" = "__v_raw".asInstanceOf["__v_raw"]
     
-    inline def SKIP: __v_skip = "__v_skip".asInstanceOf[__v_skip]
+    inline def SKIP: "__v_skip" = "__v_skip".asInstanceOf["__v_skip"]
   }
+  type ReactiveFlags = "__v_skip" | "__v_isReactive" | "__v_isReadonly" | "__v_isShallow" | "__v_raw"
   
   trait RefUnwrapBailTypes extends StObject
   
@@ -591,20 +572,15 @@ object mod {
   @js.native
   trait ToRefs_[T] extends StObject
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.vueReactivity.vueReactivityStrings.get
-    - typings.vueReactivity.vueReactivityStrings.has
-    - typings.vueReactivity.vueReactivityStrings.iterate
-  */
-  trait TrackOpTypes extends StObject
   object TrackOpTypes {
     
-    inline def GET: get = "get".asInstanceOf[get]
+    inline def GET: "get" = "get".asInstanceOf["get"]
     
-    inline def HAS: has = "has".asInstanceOf[has]
+    inline def HAS: "has" = "has".asInstanceOf["has"]
     
-    inline def ITERATE: iterate = "iterate".asInstanceOf[iterate]
+    inline def ITERATE: "iterate" = "iterate".asInstanceOf["iterate"]
   }
+  type TrackOpTypes = "get" | "has" | "iterate"
   
   /**
     * wasTracked and newTracked maintain the status for several levels of effect
@@ -638,23 +614,17 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.vueReactivity.vueReactivityStrings.set
-    - typings.vueReactivity.vueReactivityStrings.add
-    - typings.vueReactivity.vueReactivityStrings.delete
-    - typings.vueReactivity.vueReactivityStrings.clear
-  */
-  trait TriggerOpTypes extends StObject
   object TriggerOpTypes {
     
-    inline def ADD: add = "add".asInstanceOf[add]
+    inline def ADD: "add" = "add".asInstanceOf["add"]
     
-    inline def CLEAR: clear = "clear".asInstanceOf[clear]
+    inline def CLEAR: "clear" = "clear".asInstanceOf["clear"]
     
-    inline def DELETE: delete = "delete".asInstanceOf[delete]
+    inline def DELETE: "delete" = "delete".asInstanceOf["delete"]
     
-    inline def SET: set = "set".asInstanceOf[set]
+    inline def SET: "set" = "set".asInstanceOf["set"]
   }
+  type TriggerOpTypes = "set" | "add" | "delete" | "clear"
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

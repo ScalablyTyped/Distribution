@@ -2,9 +2,6 @@ package typings.styledComponents.anon
 
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.StatusBarStyle
-import typings.styledComponents.styledComponentsStrings.fade
-import typings.styledComponents.styledComponentsStrings.none
-import typings.styledComponents.styledComponentsStrings.slide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +19,7 @@ trait ReadonlyStatusBarProps extends StObject {
   
   val networkActivityIndicatorVisible: js.UndefOr[Boolean] = js.undefined
   
-  val showHideTransition: js.UndefOr[Null | fade | slide | none] = js.undefined
+  val showHideTransition: js.UndefOr[Null | "fade" | "slide" | "none"] = js.undefined
   
   val translucent: js.UndefOr[Boolean] = js.undefined
 }
@@ -57,7 +54,7 @@ object ReadonlyStatusBarProps {
     
     inline def setNetworkActivityIndicatorVisibleUndefined: Self = StObject.set(x, "networkActivityIndicatorVisible", js.undefined)
     
-    inline def setShowHideTransition(value: fade | slide | none): Self = StObject.set(x, "showHideTransition", value.asInstanceOf[js.Any])
+    inline def setShowHideTransition(value: "fade" | "slide" | "none"): Self = StObject.set(x, "showHideTransition", value.asInstanceOf[js.Any])
     
     inline def setShowHideTransitionNull: Self = StObject.set(x, "showHideTransition", null)
     

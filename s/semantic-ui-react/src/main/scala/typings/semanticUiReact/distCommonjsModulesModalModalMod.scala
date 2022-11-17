@@ -20,14 +20,6 @@ import typings.semanticUiReact.distCommonjsModulesModalModalContentMod.ModalCont
 import typings.semanticUiReact.distCommonjsModulesModalModalDescriptionMod.ModalDescriptionProps
 import typings.semanticUiReact.distCommonjsModulesModalModalDimmerMod.ModalDimmerProps
 import typings.semanticUiReact.distCommonjsModulesModalModalHeaderMod.ModalHeaderProps
-import typings.semanticUiReact.semanticUiReactBooleans.`true`
-import typings.semanticUiReact.semanticUiReactStrings.blurring
-import typings.semanticUiReact.semanticUiReactStrings.fullscreen
-import typings.semanticUiReact.semanticUiReactStrings.inverted
-import typings.semanticUiReact.semanticUiReactStrings.large
-import typings.semanticUiReact.semanticUiReactStrings.mini
-import typings.semanticUiReact.semanticUiReactStrings.small
-import typings.semanticUiReact.semanticUiReactStrings.tiny
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -119,7 +111,7 @@ object distCommonjsModulesModalModalMod {
     var content: js.UndefOr[SemanticShorthandItem[ModalContentProps]] = js.undefined
     
     /** A modal can appear in a dimmer. */
-    var dimmer: js.UndefOr[`true` | blurring | inverted | SemanticShorthandItem[ModalDimmerProps]] = js.undefined
+    var dimmer: js.UndefOr[true | "blurring" | "inverted" | SemanticShorthandItem[ModalDimmerProps]] = js.undefined
     
     /** A Modal can be passed header via shorthand. */
     var header: js.UndefOr[SemanticShorthandItem[ModalHeaderProps]] = js.undefined
@@ -175,7 +167,7 @@ object distCommonjsModulesModalModalMod {
     var onUnmount_StrictModalProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ ModalProps, Unit]] = js.undefined
     
     /** A modal can vary in size. */
-    var size: js.UndefOr[mini | tiny | small | large | fullscreen] = js.undefined
+    var size: js.UndefOr["mini" | "tiny" | "small" | "large" | "fullscreen"] = js.undefined
     
     /** Custom styles. */
     var style: js.UndefOr[CSSProperties] = js.undefined
@@ -229,7 +221,7 @@ object distCommonjsModulesModalModalMod {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setDimmer(value: `true` | blurring | inverted | SemanticShorthandItem[ModalDimmerProps]): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
+      inline def setDimmer(value: true | "blurring" | "inverted" | SemanticShorthandItem[ModalDimmerProps]): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
       
       inline def setDimmerFunction3(
         value: (/* component */ ElementType[ModalDimmerProps], ModalDimmerProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
@@ -265,7 +257,7 @@ object distCommonjsModulesModalModalMod {
       
       inline def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
       
-      inline def setSize(value: mini | tiny | small | large | fullscreen): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "mini" | "tiny" | "small" | "large" | "fullscreen"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

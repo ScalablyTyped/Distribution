@@ -1,6 +1,5 @@
 package typings.materialUiSystem
 
-import typings.materialUiSystem.materialUiSystemStrings.theme
 import typings.materialUiSystem.mod.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,9 +9,9 @@ object anon {
   
   trait Css[Props] extends StObject {
     
-    var css: js.UndefOr[Omit[Props, theme]] = js.undefined
+    var css: js.UndefOr[Omit[Props, "theme"]] = js.undefined
     
-    var sx: js.UndefOr[Omit[Props, theme]] = js.undefined
+    var sx: js.UndefOr[Omit[Props, "theme"]] = js.undefined
   }
   object Css {
     
@@ -23,11 +22,11 @@ object anon {
     
     extension [Self <: Css[?], Props](x: Self & Css[Props]) {
       
-      inline def setCss(value: Omit[Props, theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: Omit[Props, "theme"]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      inline def setSx(value: Omit[Props, theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+      inline def setSx(value: Omit[Props, "theme"]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
       
       inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     }
@@ -35,9 +34,9 @@ object anon {
   
   trait Sx[Props] extends StObject {
     
-    var css: js.UndefOr[Omit[Props, theme]] = js.undefined
+    var css: js.UndefOr[Omit[Props, "theme"]] = js.undefined
     
-    var sx: js.UndefOr[Omit[Props, theme]] = js.undefined
+    var sx: js.UndefOr[Omit[Props, "theme"]] = js.undefined
   }
   object Sx {
     
@@ -48,11 +47,11 @@ object anon {
     
     extension [Self <: Sx[?], Props](x: Self & Sx[Props]) {
       
-      inline def setCss(value: Omit[Props, theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: Omit[Props, "theme"]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      inline def setSx(value: Omit[Props, theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+      inline def setSx(value: Omit[Props, "theme"]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
       
       inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     }

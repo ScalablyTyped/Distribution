@@ -8,8 +8,6 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNavigationStack.anon.Style
 import typings.reactNavigationStack.anon.TintColor
 import typings.reactNavigationStack.anon.`0`
-import typings.reactNavigationStack.reactNavigationStackStrings.center
-import typings.reactNavigationStack.reactNavigationStackStrings.left
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -112,7 +110,7 @@ trait StackHeaderOptions extends StObject {
     * How to align the the header title.
     * Defaults to `center` on iOS and `left` on Android.
     */
-  var headerTitleAlign: js.UndefOr[left | center] = js.undefined
+  var headerTitleAlign: js.UndefOr["left" | "center"] = js.undefined
   
   /**
     * Whether header title font should scale to respect Text Size accessibility settings. Defaults to `false`.
@@ -223,7 +221,7 @@ object StackHeaderOptions {
     
     inline def setHeaderTitle(value: String | (js.Function1[/* props */ StackHeaderTitleProps, ReactNode])): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
     
-    inline def setHeaderTitleAlign(value: left | center): Self = StObject.set(x, "headerTitleAlign", value.asInstanceOf[js.Any])
+    inline def setHeaderTitleAlign(value: "left" | "center"): Self = StObject.set(x, "headerTitleAlign", value.asInstanceOf[js.Any])
     
     inline def setHeaderTitleAlignUndefined: Self = StObject.set(x, "headerTitleAlign", js.undefined)
     

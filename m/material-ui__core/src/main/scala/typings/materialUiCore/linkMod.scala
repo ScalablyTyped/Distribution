@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.linkLinkMod.LinkTypeMap
-import typings.materialUiCore.materialUiCoreStrings.a
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,10 +23,10 @@ object linkMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Link", JSImport.Default)
   @js.native
-  val default: OverridableComponent[LinkTypeMap[js.Object, a]] = js.native
+  val default: OverridableComponent[LinkTypeMap[js.Object, "a"]] = js.native
   
-  type _To = OverridableComponent[LinkTypeMap[js.Object, a]]
+  type _To = OverridableComponent[LinkTypeMap[js.Object, "a"]]
   
   /* This means you don't have to write `default`, but can instead just say `linkMod.foo` */
-  override def _to: OverridableComponent[LinkTypeMap[js.Object, a]] = default
+  override def _to: OverridableComponent[LinkTypeMap[js.Object, "a"]] = default
 }

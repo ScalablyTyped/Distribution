@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InputBindingSymbol
-  extends StObject
-     with Symbol {
+trait InputBindingSymbol extends StObject {
   
   /** A single input may be bound to multiple components or directives. */
   var bindings: js.Array[BindingSymbol]

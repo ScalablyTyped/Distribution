@@ -6,8 +6,6 @@ import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.SimpleChanges
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
-import typings.angularForms.angularFormsStrings.`[formControlName]`
 import typings.angularForms.anon.Host
 import typings.angularForms.anon.IsDisabled
 import typings.angularForms.anon.Optional
@@ -98,24 +96,26 @@ object FormControlName {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     FormControlName, 
-    `[formControlName]`, 
+    "[formControlName]", 
     scala.Nothing, 
     IsDisabled, 
     Update, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       FormControlName, 
-      `[formControlName]`, 
+      "[formControlName]", 
       scala.Nothing, 
       IsDisabled, 
       Update, 
       scala.Nothing, 
       scala.Nothing, 
-      `false`
+      false, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

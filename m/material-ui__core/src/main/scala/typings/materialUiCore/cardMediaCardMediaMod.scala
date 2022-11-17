@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Image
-import typings.materialUiCore.materialUiCoreStrings.div
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -24,19 +23,15 @@ object cardMediaCardMediaMod extends Shortcut {
     */
   @JSImport("@material-ui/core/CardMedia/CardMedia", JSImport.Default)
   @js.native
-  val default: OverridableComponent[CardMediaTypeMap[js.Object, div]] = js.native
+  val default: OverridableComponent[CardMediaTypeMap[js.Object, "div"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.media
-  */
-  trait CardMediaClassKey extends StObject
   object CardMediaClassKey {
     
-    inline def media: typings.materialUiCore.materialUiCoreStrings.media = "media".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.media]
+    inline def media: "media" = "media".asInstanceOf["media"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
   }
+  type CardMediaClassKey = "root" | "media"
   
   type CardMediaProps[D /* <: ElementType[Any] */, P] = OverrideProps[CardMediaTypeMap[P, D], D]
   
@@ -65,8 +60,8 @@ object cardMediaCardMediaMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[CardMediaTypeMap[js.Object, div]]
+  type _To = OverridableComponent[CardMediaTypeMap[js.Object, "div"]]
   
   /* This means you don't have to write `default`, but can instead just say `cardMediaCardMediaMod.foo` */
-  override def _to: OverridableComponent[CardMediaTypeMap[js.Object, div]] = default
+  override def _to: OverridableComponent[CardMediaTypeMap[js.Object, "div"]] = default
 }

@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JsxFragment
   extends StObject
-     with PrimaryExpression
-     with JsxAttributeValue
-     with JsxChild {
+     with PrimaryExpression {
   
   val children: NodeArray[JsxChild] = js.native
   

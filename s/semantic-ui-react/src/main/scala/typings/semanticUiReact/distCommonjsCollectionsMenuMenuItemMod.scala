@@ -15,10 +15,6 @@ import typings.semanticUiReact.distCommonjsElementsIconIconMod.IconProps
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
-import typings.semanticUiReact.semanticUiReactStrings.horizontally
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.right
-import typings.semanticUiReact.semanticUiReactStrings.vertically
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -73,7 +69,7 @@ object distCommonjsCollectionsMenuMenuItemMod extends Shortcut {
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** A menu item or menu can remove element padding, vertically or horizontally. */
-    var fitted: js.UndefOr[Boolean | horizontally | vertically] = js.undefined
+    var fitted: js.UndefOr[Boolean | "horizontally" | "vertically"] = js.undefined
     
     /** A menu item may include a header or may itself be a header. */
     var header: js.UndefOr[Boolean] = js.undefined
@@ -106,7 +102,7 @@ object distCommonjsCollectionsMenuMenuItemMod extends Shortcut {
       ] = js.undefined
     
     /** A menu item can take left or right position. */
-    var position: js.UndefOr[left | right] = js.undefined
+    var position: js.UndefOr["left" | "right"] = js.undefined
   }
   object StrictMenuItemProps {
     
@@ -145,7 +141,7 @@ object distCommonjsCollectionsMenuMenuItemMod extends Shortcut {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setFitted(value: Boolean | horizontally | vertically): Self = StObject.set(x, "fitted", value.asInstanceOf[js.Any])
+      inline def setFitted(value: Boolean | "horizontally" | "vertically"): Self = StObject.set(x, "fitted", value.asInstanceOf[js.Any])
       
       inline def setFittedUndefined: Self = StObject.set(x, "fitted", js.undefined)
       
@@ -179,7 +175,7 @@ object distCommonjsCollectionsMenuMenuItemMod extends Shortcut {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: "left" | "right"): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }

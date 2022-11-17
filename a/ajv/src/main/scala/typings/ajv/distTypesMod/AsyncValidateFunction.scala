@@ -1,13 +1,11 @@
 package typings.ajv.distTypesMod
 
-import typings.ajv.ajvBooleans.`true`
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.ajv.distTypesMod.AnyValidateFunction because Already inherited */ @js.native
+@js.native
 trait AsyncValidateFunction[T]
   extends StObject
      with ValidateFunction[T] {
@@ -17,5 +15,5 @@ trait AsyncValidateFunction[T]
   ): js.Promise[T] = js.native
   
   @JSName("$async")
-  var $async: `true` = js.native
+  var $async: true = js.native
 }

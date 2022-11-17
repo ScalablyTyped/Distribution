@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Type[T]
   extends js.Function
      with Instantiable1[/* args (repeated) */ Any, T]
-     with _ProviderToken[T]
 object Type {
   
   inline def apply: FunctionConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Type").asInstanceOf[FunctionConstructor]

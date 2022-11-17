@@ -1,11 +1,5 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashCOMPLETE_TRANSITION
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashPOP
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashPOP_TO_TOP
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashPUSH
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashREPLACE
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashRESET
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,27 +12,27 @@ object StackActions {
   
   @JSImport("react-navigation", "StackActions.COMPLETE_TRANSITION")
   @js.native
-  val COMPLETE_TRANSITION: NavigationSlashCOMPLETE_TRANSITION = js.native
+  val COMPLETE_TRANSITION: "Navigation/COMPLETE_TRANSITION" = js.native
   
   @JSImport("react-navigation", "StackActions.POP")
   @js.native
-  val POP_ : NavigationSlashPOP = js.native
+  val POP_ : "Navigation/POP" = js.native
   
   @JSImport("react-navigation", "StackActions.POP_TO_TOP")
   @js.native
-  val POP_TO_TOP: NavigationSlashPOP_TO_TOP = js.native
+  val POP_TO_TOP: "Navigation/POP_TO_TOP" = js.native
   
   @JSImport("react-navigation", "StackActions.PUSH")
   @js.native
-  val PUSH_ : NavigationSlashPUSH = js.native
+  val PUSH_ : "Navigation/PUSH" = js.native
   
   @JSImport("react-navigation", "StackActions.REPLACE")
   @js.native
-  val REPLACE_ : NavigationSlashREPLACE = js.native
+  val REPLACE_ : "Navigation/REPLACE" = js.native
   
   @JSImport("react-navigation", "StackActions.RESET")
   @js.native
-  val RESET_ : NavigationSlashRESET = js.native
+  val RESET_ : "Navigation/RESET" = js.native
   
   inline def completeTransition(): NavigationCompleteTransitionAction = ^.asInstanceOf[js.Dynamic].applyDynamic("completeTransition")().asInstanceOf[NavigationCompleteTransitionAction]
   inline def completeTransition(payload: NavigationCompleteTransitionActionPayload): NavigationCompleteTransitionAction = ^.asInstanceOf[js.Dynamic].applyDynamic("completeTransition")(payload.asInstanceOf[js.Any]).asInstanceOf[NavigationCompleteTransitionAction]

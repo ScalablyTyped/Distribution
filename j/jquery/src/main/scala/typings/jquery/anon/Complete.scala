@@ -1,13 +1,10 @@
 package typings.jquery.anon
 
-import typings.jquery.JQuery._SpeedSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Complete[TElement]
-  extends StObject
-     with _SpeedSettings[TElement] {
+trait Complete[TElement] extends StObject {
   
   /**
     * A function to call once the animation is complete.

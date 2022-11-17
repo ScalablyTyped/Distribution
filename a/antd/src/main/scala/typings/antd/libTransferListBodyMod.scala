@@ -1,9 +1,6 @@
 package typings.antd
 
 import typings.antd.anon.Current
-import typings.antd.antdStrings.checkedKeys
-import typings.antd.antdStrings.handleClear
-import typings.antd.antdStrings.handleFilter
 import typings.antd.libTransferListMod.RenderedItem
 import typings.antd.libTransferListMod.TransferListProps
 import typings.antd.libTransferMod.KeyWiseTransferItem
@@ -31,7 +28,7 @@ object libTransferListBodyMod {
   
   @JSImport("antd/lib/transfer/ListBody", "OmitProps")
   @js.native
-  val OmitProps: js.Tuple3[handleFilter, handleClear, checkedKeys] = js.native
+  val OmitProps: js.Tuple3["handleFilter", "handleClear", "checkedKeys"] = js.native
   
   @js.native
   trait ListBody[RecordType /* <: KeyWiseTransferItem */] extends Component[TransferListBodyProps[RecordType], TransferListBodyState, Any] {
@@ -48,7 +45,7 @@ object libTransferListBodyMod {
     var state_ListBody: Current = js.native
   }
   
-  type OmitProp = ElementOf[js.Tuple3[handleFilter, handleClear, checkedKeys]]
+  type OmitProp = ElementOf[js.Tuple3["handleFilter", "handleClear", "checkedKeys"]]
   
   type PartialTransferListProps[RecordType] = Omit[TransferListProps[RecordType], OmitProp]
   

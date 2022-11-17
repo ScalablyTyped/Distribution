@@ -1,7 +1,6 @@
 package typings.three
 
 import typings.three.examplesJsmNodesCoreNodeBuilderMod.NodeBuilderContext
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object examplesJsmNodesCoreContextNodeMod {
     
     var context: NodeBuilderContext = js.native
     
-    var isContextNode: `true` = js.native
+    var isContextNode: true = js.native
     
     var node: typings.three.examplesJsmNodesCoreNodeMod.default = js.native
   }

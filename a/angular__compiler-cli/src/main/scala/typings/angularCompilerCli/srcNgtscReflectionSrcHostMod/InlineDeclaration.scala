@@ -1,6 +1,5 @@
 package typings.angularCompilerCli.srcNgtscReflectionSrcHostMod
 
-import typings.angularCompilerCli.angularCompilerCliInts.`1`
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,13 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InlineDeclaration
   extends StObject
-     with BaseDeclaration[Exclude[DeclarationNode, typings.typescript.mod.Declaration]]
-     with Declaration[Any] {
+     with BaseDeclaration[Exclude[DeclarationNode, typings.typescript.mod.Declaration]] {
   
   var implementation: js.UndefOr[DeclarationNode] = js.undefined
   
   @JSName("kind")
-  var kind_InlineDeclaration: `1`
+  var kind_InlineDeclaration: 1
 }
 object InlineDeclaration {
   
@@ -29,6 +27,6 @@ object InlineDeclaration {
     
     inline def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
     
-    inline def setKind(value: `1`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: 1): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

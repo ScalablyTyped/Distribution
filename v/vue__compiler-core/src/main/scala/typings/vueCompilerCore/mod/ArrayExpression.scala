@@ -1,19 +1,17 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`17`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ArrayExpression
   extends StObject
-     with Node2
-     with JSChildNode {
+     with Node2 {
   
   var elements: js.Array[String | Node2]
   
   @JSName("type")
-  var type_ArrayExpression: `17`
+  var type_ArrayExpression: 17
 }
 object ArrayExpression {
   
@@ -29,6 +27,6 @@ object ArrayExpression {
     
     inline def setElementsVarargs(value: (String | Node2)*): Self = StObject.set(x, "elements", js.Array(value*))
     
-    inline def setType(value: `17`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 17): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

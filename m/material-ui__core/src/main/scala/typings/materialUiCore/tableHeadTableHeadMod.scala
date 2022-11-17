@@ -1,8 +1,6 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.materialUiCoreStrings.root
-import typings.materialUiCore.materialUiCoreStrings.thead
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverridableTypeMap
 import typings.materialUiCore.overridableComponentMod.OverrideProps
@@ -25,9 +23,9 @@ object tableHeadTableHeadMod extends Shortcut {
     */
   @JSImport("@material-ui/core/TableHead/TableHead", JSImport.Default)
   @js.native
-  val default: OverridableComponent[TableHeadTypeMap[js.Object, thead]] = js.native
+  val default: OverridableComponent[TableHeadTypeMap[js.Object, "thead"]] = js.native
   
-  type TableHeadClassKey = root
+  type TableHeadClassKey = "root"
   
   type TableHeadProps[D /* <: ElementType[Any] */, P /* <: js.Object */] = OverrideProps[TableHeadTypeMap[P, D], D]
   
@@ -60,8 +58,8 @@ object tableHeadTableHeadMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[TableHeadTypeMap[js.Object, thead]]
+  type _To = OverridableComponent[TableHeadTypeMap[js.Object, "thead"]]
   
   /* This means you don't have to write `default`, but can instead just say `tableHeadTableHeadMod.foo` */
-  override def _to: OverridableComponent[TableHeadTypeMap[js.Object, thead]] = default
+  override def _to: OverridableComponent[TableHeadTypeMap[js.Object, "thead"]] = default
 }

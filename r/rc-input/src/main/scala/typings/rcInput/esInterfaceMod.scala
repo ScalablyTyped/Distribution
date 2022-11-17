@@ -4,81 +4,6 @@ import typings.rcInput.anon.ClearIcon
 import typings.rcInput.anon.Count
 import typings.rcInput.esUtilsCommonUtilsMod.InputFocusOptions
 import typings.rcInput.esUtilsTypesMod.LiteralUnion
-import typings.rcInput.rcInputStrings.`additions removals`
-import typings.rcInput.rcInputStrings.`additions text`
-import typings.rcInput.rcInputStrings.`datetime-local`
-import typings.rcInput.rcInputStrings.`inline`
-import typings.rcInput.rcInputStrings.`removals additions`
-import typings.rcInput.rcInputStrings.`removals text`
-import typings.rcInput.rcInputStrings.`text additions`
-import typings.rcInput.rcInputStrings.`text removals`
-import typings.rcInput.rcInputStrings.additions
-import typings.rcInput.rcInputStrings.all
-import typings.rcInput.rcInputStrings.ascending
-import typings.rcInput.rcInputStrings.assertive
-import typings.rcInput.rcInputStrings.backward
-import typings.rcInput.rcInputStrings.both
-import typings.rcInput.rcInputStrings.button
-import typings.rcInput.rcInputStrings.checkbox
-import typings.rcInput.rcInputStrings.color
-import typings.rcInput.rcInputStrings.copy
-import typings.rcInput.rcInputStrings.date
-import typings.rcInput.rcInputStrings.decimal
-import typings.rcInput.rcInputStrings.descending
-import typings.rcInput.rcInputStrings.dialog
-import typings.rcInput.rcInputStrings.done
-import typings.rcInput.rcInputStrings.email
-import typings.rcInput.rcInputStrings.enter
-import typings.rcInput.rcInputStrings.environment
-import typings.rcInput.rcInputStrings.execute
-import typings.rcInput.rcInputStrings.file
-import typings.rcInput.rcInputStrings.forward
-import typings.rcInput.rcInputStrings.go
-import typings.rcInput.rcInputStrings.grammar
-import typings.rcInput.rcInputStrings.grid
-import typings.rcInput.rcInputStrings.hidden
-import typings.rcInput.rcInputStrings.horizontal
-import typings.rcInput.rcInputStrings.image
-import typings.rcInput.rcInputStrings.inherit
-import typings.rcInput.rcInputStrings.link
-import typings.rcInput.rcInputStrings.list
-import typings.rcInput.rcInputStrings.listbox
-import typings.rcInput.rcInputStrings.location
-import typings.rcInput.rcInputStrings.menu
-import typings.rcInput.rcInputStrings.mixed
-import typings.rcInput.rcInputStrings.month
-import typings.rcInput.rcInputStrings.move
-import typings.rcInput.rcInputStrings.next
-import typings.rcInput.rcInputStrings.no
-import typings.rcInput.rcInputStrings.none
-import typings.rcInput.rcInputStrings.number
-import typings.rcInput.rcInputStrings.numeric
-import typings.rcInput.rcInputStrings.off
-import typings.rcInput.rcInputStrings.on
-import typings.rcInput.rcInputStrings.other
-import typings.rcInput.rcInputStrings.page
-import typings.rcInput.rcInputStrings.password
-import typings.rcInput.rcInputStrings.polite
-import typings.rcInput.rcInputStrings.popup
-import typings.rcInput.rcInputStrings.previous
-import typings.rcInput.rcInputStrings.radio
-import typings.rcInput.rcInputStrings.range
-import typings.rcInput.rcInputStrings.removals
-import typings.rcInput.rcInputStrings.reset
-import typings.rcInput.rcInputStrings.search
-import typings.rcInput.rcInputStrings.send
-import typings.rcInput.rcInputStrings.spelling
-import typings.rcInput.rcInputStrings.step
-import typings.rcInput.rcInputStrings.submit
-import typings.rcInput.rcInputStrings.tel
-import typings.rcInput.rcInputStrings.text
-import typings.rcInput.rcInputStrings.time
-import typings.rcInput.rcInputStrings.tree
-import typings.rcInput.rcInputStrings.url
-import typings.rcInput.rcInputStrings.user
-import typings.rcInput.rcInputStrings.vertical
-import typings.rcInput.rcInputStrings.week
-import typings.rcInput.rcInputStrings.yes
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -298,11 +223,11 @@ object esInterfaceMod {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -312,7 +237,7 @@ object esInterfaceMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -320,7 +245,7 @@ object esInterfaceMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -330,11 +255,11 @@ object esInterfaceMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -344,7 +269,7 @@ object esInterfaceMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -352,7 +277,7 @@ object esInterfaceMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -360,12 +285,12 @@ object esInterfaceMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -382,7 +307,7 @@ object esInterfaceMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -402,7 +327,7 @@ object esInterfaceMod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
+    var capture: js.UndefOr[Boolean | "user" | "environment"] = js.undefined
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
@@ -412,7 +337,7 @@ object esInterfaceMod {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -432,7 +357,7 @@ object esInterfaceMod {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
+    var enterKeyHint: js.UndefOr["enter" | "done" | "go" | "next" | "previous" | "search" | "send"] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
@@ -460,7 +385,7 @@ object esInterfaceMod {
     
     var inputClassName: js.UndefOr[String] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
     
@@ -700,18 +625,18 @@ object esInterfaceMod {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     var `type`: js.UndefOr[
         LiteralUnion[
-          button | checkbox | color | date | `datetime-local` | email | file | hidden | image | month | number | password | radio | range | reset | search | submit | tel | text | time | url | week, 
+          "button" | "checkbox" | "color" | "date" | "datetime-local" | "email" | "file" | "hidden" | "image" | "month" | "number" | "password" | "radio" | "range" | "reset" | "search" | "submit" | "tel" | "text" | "time" | "url" | "week", 
           String
         ]
       ] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
     var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
     
@@ -770,7 +695,7 @@ object esInterfaceMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -778,7 +703,7 @@ object esInterfaceMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -798,7 +723,7 @@ object esInterfaceMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -814,7 +739,7 @@ object esInterfaceMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -834,7 +759,7 @@ object esInterfaceMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -842,7 +767,7 @@ object esInterfaceMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -862,7 +787,7 @@ object esInterfaceMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -878,7 +803,7 @@ object esInterfaceMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -894,7 +819,7 @@ object esInterfaceMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -903,7 +828,7 @@ object esInterfaceMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -936,7 +861,7 @@ object esInterfaceMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -976,7 +901,7 @@ object esInterfaceMod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | "user" | "environment"): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -996,7 +921,7 @@ object esInterfaceMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -1038,7 +963,7 @@ object esInterfaceMod {
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setEnterKeyHint(value: enter | done | go | next | previous | search | send): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
+      inline def setEnterKeyHint(value: "enter" | "done" | "go" | "next" | "previous" | "search" | "send"): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
       
       inline def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
       
@@ -1094,7 +1019,7 @@ object esInterfaceMod {
       
       inline def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -1574,13 +1499,13 @@ object esInterfaceMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
       inline def setType(
         value: LiteralUnion[
-              button | checkbox | color | date | `datetime-local` | email | file | hidden | image | month | number | password | radio | range | reset | search | submit | tel | text | time | url | week, 
+              "button" | "checkbox" | "color" | "date" | "datetime-local" | "email" | "file" | "hidden" | "image" | "month" | "number" | "password" | "radio" | "range" | "reset" | "search" | "submit" | "tel" | "text" | "time" | "url" | "week", 
               String
             ]
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -1591,7 +1516,7 @@ object esInterfaceMod {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
@@ -1628,7 +1553,9 @@ object esInterfaceMod {
     def select(): Unit = js.native
     
     def setSelectionRange(start: Double, end: Double): Unit = js.native
-    def setSelectionRange(start: Double, end: Double, direction: forward | backward | none): Unit = js.native
+    @JSName("setSelectionRange")
+    @scala.annotation.targetName("setSelectionRange_forward_backward_none")
+    def setSelectionRange(start: Double, end: Double, direction: "forward" | "backward" | "none"): Unit = js.native
   }
   
   trait ShowCountProps extends StObject {

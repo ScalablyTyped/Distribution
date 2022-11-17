@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.OptionalCallExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `45` extends StObject {
   
-  var `type`: OptionalCallExpression
+  var `type`: "OptionalCallExpression"
 }
 object `45` {
   
@@ -19,6 +18,6 @@ object `45` {
   
   extension [Self <: `45`](x: Self) {
     
-    inline def setType(value: OptionalCallExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "OptionalCallExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

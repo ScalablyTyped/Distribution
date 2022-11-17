@@ -2,9 +2,6 @@ package typings.rcInput
 
 import typings.rcInput.esInterfaceMod.BaseInputProps
 import typings.rcInput.esInterfaceMod.InputProps
-import typings.rcInput.rcInputStrings.all
-import typings.rcInput.rcInputStrings.end
-import typings.rcInput.rcInputStrings.start
 import typings.react.mod.ChangeEvent
 import typings.react.mod.CompositionEvent
 import typings.std.FocusOptions
@@ -135,7 +132,7 @@ object esUtilsCommonUtilsMod {
     extends StObject
        with FocusOptions {
     
-    var cursor: js.UndefOr[start | end | all] = js.undefined
+    var cursor: js.UndefOr["start" | "end" | "all"] = js.undefined
   }
   object InputFocusOptions {
     
@@ -146,7 +143,7 @@ object esUtilsCommonUtilsMod {
     
     extension [Self <: InputFocusOptions](x: Self) {
       
-      inline def setCursor(value: start | end | all): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: "start" | "end" | "all"): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
       inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     }

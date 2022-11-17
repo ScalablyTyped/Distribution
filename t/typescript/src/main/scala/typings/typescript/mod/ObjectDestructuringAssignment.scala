@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ObjectDestructuringAssignment
   extends StObject
-     with AssignmentExpression[EqualsToken]
-     with DestructuringAssignment {
+     with AssignmentExpression[EqualsToken] {
   
   @JSName("left")
   val left_ObjectDestructuringAssignment: ObjectLiteralExpression = js.native

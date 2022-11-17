@@ -5,8 +5,6 @@ import typings.rxjs.distTypesInternalObservableMod.Observable
 import typings.rxjs.distTypesInternalSubjectMod.AnonymousSubject
 import typings.rxjs.distTypesInternalTypesMod.NextObserver
 import typings.rxjs.distTypesInternalTypesMod.Observer
-import typings.rxjs.rxjsStrings.arraybuffer
-import typings.rxjs.rxjsStrings.blob
 import typings.std.Blob
 import typings.std.CloseEvent
 import typings.std.Event
@@ -72,7 +70,7 @@ object distTypesInternalObservableDomWebSocketSubjectMod {
     var WebSocketCtor: js.UndefOr[Instantiable] = js.undefined
     
     /** Sets the `binaryType` property of the underlying WebSocket. */
-    var binaryType: js.UndefOr[blob | arraybuffer] = js.undefined
+    var binaryType: js.UndefOr["blob" | "arraybuffer"] = js.undefined
     
     /**
       * An Observer that watches when close events occur on the underlying web socket
@@ -120,7 +118,7 @@ object distTypesInternalObservableDomWebSocketSubjectMod {
     
     extension [Self <: WebSocketSubjectConfig[?], T](x: Self & WebSocketSubjectConfig[T]) {
       
-      inline def setBinaryType(value: blob | arraybuffer): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
+      inline def setBinaryType(value: "blob" | "arraybuffer"): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
       
       inline def setBinaryTypeUndefined: Self = StObject.set(x, "binaryType", js.undefined)
       

@@ -1,7 +1,5 @@
 package typings.ajv
 
-import typings.ajv.ajvStrings.$id
-import typings.ajv.ajvStrings.id
 import typings.ajv.distCompileCodegenCodeMod.Code
 import typings.ajv.distCompileCodegenMod.CodeGen
 import typings.ajv.distCompileCodegenMod.Name
@@ -266,7 +264,7 @@ object distCompileMod {
     
     val schema: AnySchema
     
-    val schemaId: js.UndefOr[$id | id] = js.undefined
+    val schemaId: js.UndefOr["$id" | "id"] = js.undefined
     
     val schemaPath: js.UndefOr[String] = js.undefined
   }
@@ -297,7 +295,7 @@ object distCompileMod {
       
       inline def setSchema(value: AnySchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      inline def setSchemaId(value: $id | id): Self = StObject.set(x, "schemaId", value.asInstanceOf[js.Any])
+      inline def setSchemaId(value: "$id" | "id"): Self = StObject.set(x, "schemaId", value.asInstanceOf[js.Any])
       
       inline def setSchemaIdUndefined: Self = StObject.set(x, "schemaId", js.undefined)
       

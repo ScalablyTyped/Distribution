@@ -1,111 +1,5 @@
 package typings.revealJs
 
-import typings.revealJs.revealJsStrings.DOMContentLoaded
-import typings.revealJs.revealJsStrings.abort
-import typings.revealJs.revealJsStrings.animationcancel
-import typings.revealJs.revealJsStrings.animationend
-import typings.revealJs.revealJsStrings.animationiteration
-import typings.revealJs.revealJsStrings.animationstart
-import typings.revealJs.revealJsStrings.auxclick
-import typings.revealJs.revealJsStrings.beforeinput
-import typings.revealJs.revealJsStrings.blur
-import typings.revealJs.revealJsStrings.cancel
-import typings.revealJs.revealJsStrings.canplay
-import typings.revealJs.revealJsStrings.canplaythrough
-import typings.revealJs.revealJsStrings.change
-import typings.revealJs.revealJsStrings.click
-import typings.revealJs.revealJsStrings.close
-import typings.revealJs.revealJsStrings.compositionend
-import typings.revealJs.revealJsStrings.compositionstart
-import typings.revealJs.revealJsStrings.compositionupdate
-import typings.revealJs.revealJsStrings.contextmenu
-import typings.revealJs.revealJsStrings.copy
-import typings.revealJs.revealJsStrings.cuechange
-import typings.revealJs.revealJsStrings.cut
-import typings.revealJs.revealJsStrings.dblclick
-import typings.revealJs.revealJsStrings.drag
-import typings.revealJs.revealJsStrings.dragend
-import typings.revealJs.revealJsStrings.dragenter
-import typings.revealJs.revealJsStrings.dragleave
-import typings.revealJs.revealJsStrings.dragover
-import typings.revealJs.revealJsStrings.dragstart
-import typings.revealJs.revealJsStrings.drop
-import typings.revealJs.revealJsStrings.durationchange
-import typings.revealJs.revealJsStrings.emptied
-import typings.revealJs.revealJsStrings.ended
-import typings.revealJs.revealJsStrings.error
-import typings.revealJs.revealJsStrings.focus
-import typings.revealJs.revealJsStrings.focusin
-import typings.revealJs.revealJsStrings.focusout
-import typings.revealJs.revealJsStrings.formdata
-import typings.revealJs.revealJsStrings.fullscreenchange
-import typings.revealJs.revealJsStrings.fullscreenerror
-import typings.revealJs.revealJsStrings.gotpointercapture
-import typings.revealJs.revealJsStrings.input
-import typings.revealJs.revealJsStrings.invalid
-import typings.revealJs.revealJsStrings.keydown
-import typings.revealJs.revealJsStrings.keypress
-import typings.revealJs.revealJsStrings.keyup
-import typings.revealJs.revealJsStrings.load
-import typings.revealJs.revealJsStrings.loadeddata
-import typings.revealJs.revealJsStrings.loadedmetadata
-import typings.revealJs.revealJsStrings.loadstart
-import typings.revealJs.revealJsStrings.lostpointercapture
-import typings.revealJs.revealJsStrings.mousedown
-import typings.revealJs.revealJsStrings.mouseenter
-import typings.revealJs.revealJsStrings.mouseleave
-import typings.revealJs.revealJsStrings.mousemove
-import typings.revealJs.revealJsStrings.mouseout
-import typings.revealJs.revealJsStrings.mouseover
-import typings.revealJs.revealJsStrings.mouseup
-import typings.revealJs.revealJsStrings.paste
-import typings.revealJs.revealJsStrings.pause
-import typings.revealJs.revealJsStrings.play
-import typings.revealJs.revealJsStrings.playing
-import typings.revealJs.revealJsStrings.pointercancel
-import typings.revealJs.revealJsStrings.pointerdown
-import typings.revealJs.revealJsStrings.pointerenter
-import typings.revealJs.revealJsStrings.pointerleave
-import typings.revealJs.revealJsStrings.pointerlockchange
-import typings.revealJs.revealJsStrings.pointerlockerror
-import typings.revealJs.revealJsStrings.pointermove
-import typings.revealJs.revealJsStrings.pointerout
-import typings.revealJs.revealJsStrings.pointerover
-import typings.revealJs.revealJsStrings.pointerup
-import typings.revealJs.revealJsStrings.progress
-import typings.revealJs.revealJsStrings.ratechange
-import typings.revealJs.revealJsStrings.readystatechange
-import typings.revealJs.revealJsStrings.reset
-import typings.revealJs.revealJsStrings.resize
-import typings.revealJs.revealJsStrings.scroll
-import typings.revealJs.revealJsStrings.securitypolicyviolation
-import typings.revealJs.revealJsStrings.seeked
-import typings.revealJs.revealJsStrings.seeking
-import typings.revealJs.revealJsStrings.select
-import typings.revealJs.revealJsStrings.selectionchange
-import typings.revealJs.revealJsStrings.selectstart
-import typings.revealJs.revealJsStrings.slotchange
-import typings.revealJs.revealJsStrings.stalled
-import typings.revealJs.revealJsStrings.submit
-import typings.revealJs.revealJsStrings.suspend
-import typings.revealJs.revealJsStrings.timeupdate
-import typings.revealJs.revealJsStrings.toggle
-import typings.revealJs.revealJsStrings.touchcancel
-import typings.revealJs.revealJsStrings.touchend
-import typings.revealJs.revealJsStrings.touchmove
-import typings.revealJs.revealJsStrings.touchstart
-import typings.revealJs.revealJsStrings.transitioncancel
-import typings.revealJs.revealJsStrings.transitionend
-import typings.revealJs.revealJsStrings.transitionrun
-import typings.revealJs.revealJsStrings.transitionstart
-import typings.revealJs.revealJsStrings.visibilitychange
-import typings.revealJs.revealJsStrings.volumechange
-import typings.revealJs.revealJsStrings.waiting
-import typings.revealJs.revealJsStrings.webkitanimationend
-import typings.revealJs.revealJsStrings.webkitanimationiteration
-import typings.revealJs.revealJsStrings.webkitanimationstart
-import typings.revealJs.revealJsStrings.webkittransitionend
-import typings.revealJs.revealJsStrings.wheel
 import typings.std.AddEventListenerOptions
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
@@ -314,2463 +208,3777 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cuechange")
+    def apply(`type`: "cuechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focusout")
+    def apply(`type`: "focusout", listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_play")
+    def apply(`type`: "play", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_close")
+    def apply(`type`: "close", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerlockerror")
+    def apply(`type`: "pointerlockerror", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_wheel")
+    def apply(`type`: "wheel", listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ended")
+    def apply(`type`: "ended", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cancel")
+    def apply(`type`: "cancel", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_drag")
+    def apply(`type`: "drag", listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_canplay")
+    def apply(`type`: "canplay", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_playing")
+    def apply(`type`: "playing", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_suspend")
+    def apply(`type`: "suspend", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchend")
+    def apply(`type`: "touchend", listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerover")
+    def apply(
+      `type`: "pointerover",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkittransitionend")
+    def apply(
+      `type`: "webkittransitionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchcancel")
+    def apply(`type`: "touchcancel", listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mousedown")
+    def apply(`type`: "mousedown", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_selectstart")
+    def apply(`type`: "selectstart", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_canplaythrough")
+    def apply(`type`: "canplaythrough", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focus")
+    def apply(`type`: "focus", listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionrun")
+    def apply(
+      `type`: "transitionrun",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keyup")
+    def apply(`type`: "keyup", listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_formdata")
+    def apply(`type`: "formdata", listener: js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fullscreenchange")
+    def apply(`type`: "fullscreenchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_auxclick")
+    def apply(`type`: "auxclick", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fullscreenerror")
+    def apply(`type`: "fullscreenerror", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mousemove")
+    def apply(`type`: "mousemove", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationcancel")
+    def apply(
+      `type`: "animationcancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragleave")
+    def apply(`type`: "dragleave", listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_readystatechange")
+    def apply(`type`: "readystatechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragenter")
+    def apply(`type`: "dragenter", listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointercancel")
+    def apply(
+      `type`: "pointercancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseenter")
+    def apply(`type`: "mouseenter", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_volumechange")
+    def apply(`type`: "volumechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_input")
+    def apply(`type`: "input", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_submit")
+    def apply(`type`: "submit", listener: js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_selectionchange")
+    def apply(`type`: "selectionchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_beforeinput")
+    def apply(`type`: "beforeinput", listener: js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_securitypolicyviolation")
+    def apply(
+      `type`: "securitypolicyviolation",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keydown")
+    def apply(`type`: "keydown", listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_abort")
+    def apply(`type`: "abort", listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_contextmenu")
+    def apply(`type`: "contextmenu", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationstart")
+    def apply(
+      `type`: "animationstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchstart")
+    def apply(`type`: "touchstart", listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerenter")
+    def apply(
+      `type`: "pointerenter",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationstart")
+    def apply(
+      `type`: "webkitanimationstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_DOMContentLoaded")
+    def apply(`type`: "DOMContentLoaded", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_click")
+    def apply(`type`: "click", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerup")
+    def apply(`type`: "pointerup", listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionend")
+    def apply(
+      `type`: "compositionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_copy")
+    def apply(`type`: "copy", listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationiteration")
+    def apply(
+      `type`: "webkitanimationiteration",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_visibilitychange")
+    def apply(`type`: "visibilitychange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pause")
+    def apply(`type`: "pause", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragend")
+    def apply(`type`: "dragend", listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionend")
+    def apply(
+      `type`: "transitionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerlockchange")
+    def apply(`type`: "pointerlockchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_seeking")
+    def apply(`type`: "seeking", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ratechange")
+    def apply(`type`: "ratechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_paste")
+    def apply(`type`: "paste", listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerdown")
+    def apply(
+      `type`: "pointerdown",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_select")
+    def apply(`type`: "select", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_load")
+    def apply(`type`: "load", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_drop")
+    def apply(`type`: "drop", listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationend")
+    def apply(
+      `type`: "webkitanimationend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointermove")
+    def apply(
+      `type`: "pointermove",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_seeked")
+    def apply(`type`: "seeked", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadedmetadata")
+    def apply(`type`: "loadedmetadata", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchmove")
+    def apply(`type`: "touchmove", listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionstart")
+    def apply(
+      `type`: "compositionstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cut")
+    def apply(`type`: "cut", listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionstart")
+    def apply(
+      `type`: "transitionstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerleave")
+    def apply(
+      `type`: "pointerleave",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseup")
+    def apply(`type`: "mouseup", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationiteration")
+    def apply(
+      `type`: "animationiteration",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseleave")
+    def apply(`type`: "mouseleave", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_emptied")
+    def apply(`type`: "emptied", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_slotchange")
+    def apply(`type`: "slotchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadeddata")
+    def apply(`type`: "loadeddata", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_invalid")
+    def apply(`type`: "invalid", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragover")
+    def apply(`type`: "dragover", listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_blur")
+    def apply(`type`: "blur", listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationend")
+    def apply(
+      `type`: "animationend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseover")
+    def apply(`type`: "mouseover", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dblclick")
+    def apply(`type`: "dblclick", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_reset")
+    def apply(`type`: "reset", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseout")
+    def apply(`type`: "mouseout", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_lostpointercapture")
+    def apply(
+      `type`: "lostpointercapture",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerout")
+    def apply(`type`: "pointerout", listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_stalled")
+    def apply(`type`: "stalled", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_gotpointercapture")
+    def apply(
+      `type`: "gotpointercapture",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_change")
+    def apply(`type`: "change", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_error")
+    def apply(`type`: "error", listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_scroll")
+    def apply(`type`: "scroll", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keypress")
+    def apply(`type`: "keypress", listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_toggle")
+    def apply(`type`: "toggle", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_durationchange")
+    def apply(`type`: "durationchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_timeupdate")
+    def apply(`type`: "timeupdate", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitioncancel")
+    def apply(
+      `type`: "transitioncancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_progress")
+    def apply(
+      `type`: "progress",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focusin")
+    def apply(`type`: "focusin", listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragstart")
+    def apply(`type`: "dragstart", listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_waiting")
+    def apply(`type`: "waiting", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionupdate")
+    def apply(
+      `type`: "compositionupdate",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadstart")
+    def apply(`type`: "loadstart", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_resize")
+    def apply(`type`: "resize", listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragstart")
+    def apply(
+      `type`: "dragstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionrun")
+    def apply(
+      `type`: "transitionrun",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cancel")
+    def apply(
+      `type`: "cancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_submit")
+    def apply(
+      `type`: "submit",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keypress")
+    def apply(
+      `type`: "keypress",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationiteration")
+    def apply(
+      `type`: "animationiteration",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_invalid")
+    def apply(
+      `type`: "invalid",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionstart")
+    def apply(
+      `type`: "transitionstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_visibilitychange")
+    def apply(
+      `type`: "visibilitychange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_reset")
+    def apply(
+      `type`: "reset",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationstart")
+    def apply(
+      `type`: "animationstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseup")
+    def apply(
+      `type`: "mouseup",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationcancel")
+    def apply(
+      `type`: "animationcancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_change")
+    def apply(
+      `type`: "change",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_gotpointercapture")
+    def apply(
+      `type`: "gotpointercapture",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fullscreenerror")
+    def apply(
+      `type`: "fullscreenerror",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_readystatechange")
+    def apply(
+      `type`: "readystatechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchend")
+    def apply(
+      `type`: "touchend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cut")
+    def apply(
+      `type`: "cut",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchstart")
+    def apply(
+      `type`: "touchstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_click")
+    def apply(
+      `type`: "click",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_canplay")
+    def apply(
+      `type`: "canplay",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragover")
+    def apply(
+      `type`: "dragover",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_formdata")
+    def apply(
+      `type`: "formdata",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_wheel")
+    def apply(
+      `type`: "wheel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseleave")
+    def apply(
+      `type`: "mouseleave",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keyup")
+    def apply(
+      `type`: "keyup",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_beforeinput")
+    def apply(
+      `type`: "beforeinput",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_suspend")
+    def apply(
+      `type`: "suspend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerup")
+    def apply(
+      `type`: "pointerup",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_error")
+    def apply(
+      `type`: "error",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionstart")
+    def apply(
+      `type`: "compositionstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_volumechange")
+    def apply(
+      `type`: "volumechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_input")
+    def apply(
+      `type`: "input",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragend")
+    def apply(
+      `type`: "dragend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focus")
+    def apply(
+      `type`: "focus",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerlockerror")
+    def apply(
+      `type`: "pointerlockerror",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_close")
+    def apply(
+      `type`: "close",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focusin")
+    def apply(
+      `type`: "focusin",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchcancel")
+    def apply(
+      `type`: "touchcancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_progress")
+    def apply(
+      `type`: "progress",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_lostpointercapture")
+    def apply(
+      `type`: "lostpointercapture",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseout")
+    def apply(
+      `type`: "mouseout",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchmove")
+    def apply(
+      `type`: "touchmove",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadstart")
+    def apply(
+      `type`: "loadstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_seeking")
+    def apply(
+      `type`: "seeking",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_load")
+    def apply(
+      `type`: "load",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadedmetadata")
+    def apply(
+      `type`: "loadedmetadata",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_selectstart")
+    def apply(
+      `type`: "selectstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadeddata")
+    def apply(
+      `type`: "loadeddata",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_seeked")
+    def apply(
+      `type`: "seeked",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_canplaythrough")
+    def apply(
+      `type`: "canplaythrough",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerlockchange")
+    def apply(
+      `type`: "pointerlockchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationiteration")
+    def apply(
+      `type`: "webkitanimationiteration",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_auxclick")
+    def apply(
+      `type`: "auxclick",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkittransitionend")
+    def apply(
+      `type`: "webkittransitionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_copy")
+    def apply(
+      `type`: "copy",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_playing")
+    def apply(
+      `type`: "playing",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_slotchange")
+    def apply(
+      `type`: "slotchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragenter")
+    def apply(
+      `type`: "dragenter",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseover")
+    def apply(
+      `type`: "mouseover",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerleave")
+    def apply(
+      `type`: "pointerleave",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragleave")
+    def apply(
+      `type`: "dragleave",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dblclick")
+    def apply(
+      `type`: "dblclick",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitioncancel")
+    def apply(
+      `type`: "transitioncancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keydown")
+    def apply(
+      `type`: "keydown",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_toggle")
+    def apply(
+      `type`: "toggle",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fullscreenchange")
+    def apply(
+      `type`: "fullscreenchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerenter")
+    def apply(
+      `type`: "pointerenter",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focusout")
+    def apply(
+      `type`: "focusout",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_select")
+    def apply(
+      `type`: "select",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointercancel")
+    def apply(
+      `type`: "pointercancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mousemove")
+    def apply(
+      `type`: "mousemove",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pause")
+    def apply(
+      `type`: "pause",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseenter")
+    def apply(
+      `type`: "mouseenter",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_scroll")
+    def apply(
+      `type`: "scroll",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionend")
+    def apply(
+      `type`: "compositionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerdown")
+    def apply(
+      `type`: "pointerdown",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_DOMContentLoaded")
+    def apply(
+      `type`: "DOMContentLoaded",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mousedown")
+    def apply(
+      `type`: "mousedown",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationend")
+    def apply(
+      `type`: "animationend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerout")
+    def apply(
+      `type`: "pointerout",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ratechange")
+    def apply(
+      `type`: "ratechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_drag")
+    def apply(
+      `type`: "drag",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_abort")
+    def apply(
+      `type`: "abort",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cuechange")
+    def apply(
+      `type`: "cuechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ended")
+    def apply(
+      `type`: "ended",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_waiting")
+    def apply(
+      `type`: "waiting",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_securitypolicyviolation")
+    def apply(
+      `type`: "securitypolicyviolation",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_resize")
+    def apply(
+      `type`: "resize",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_play")
+    def apply(
+      `type`: "play",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_emptied")
+    def apply(
+      `type`: "emptied",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationstart")
+    def apply(
+      `type`: "webkitanimationstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_drop")
+    def apply(
+      `type`: "drop",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_timeupdate")
+    def apply(
+      `type`: "timeupdate",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_contextmenu")
+    def apply(
+      `type`: "contextmenu",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionend")
+    def apply(
+      `type`: "transitionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_durationchange")
+    def apply(
+      `type`: "durationchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_paste")
+    def apply(
+      `type`: "paste",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_blur")
+    def apply(
+      `type`: "blur",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_stalled")
+    def apply(
+      `type`: "stalled",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointermove")
+    def apply(
+      `type`: "pointermove",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_selectionchange")
+    def apply(
+      `type`: "selectionchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerover")
+    def apply(
+      `type`: "pointerover",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionupdate")
+    def apply(
+      `type`: "compositionupdate",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationend")
+    def apply(
+      `type`: "webkitanimationend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_error")
+    def apply(
+      `type`: "error",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationend")
+    def apply(
+      `type`: "webkitanimationend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_suspend")
+    def apply(
+      `type`: "suspend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_auxclick")
+    def apply(
+      `type`: "auxclick",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseenter")
+    def apply(
+      `type`: "mouseenter",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_input")
+    def apply(
+      `type`: "input",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_DOMContentLoaded")
+    def apply(
+      `type`: "DOMContentLoaded",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchend")
+    def apply(
+      `type`: "touchend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cancel")
+    def apply(
+      `type`: "cancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_load")
+    def apply(
+      `type`: "load",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_visibilitychange")
+    def apply(
+      `type`: "visibilitychange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerlockchange")
+    def apply(
+      `type`: "pointerlockchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkittransitionend")
+    def apply(
+      `type`: "webkittransitionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_invalid")
+    def apply(
+      `type`: "invalid",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_timeupdate")
+    def apply(
+      `type`: "timeupdate",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadeddata")
+    def apply(
+      `type`: "loadeddata",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ratechange")
+    def apply(
+      `type`: "ratechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_copy")
+    def apply(
+      `type`: "copy",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_waiting")
+    def apply(
+      `type`: "waiting",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionrun")
+    def apply(
+      `type`: "transitionrun",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_formdata")
+    def apply(
+      `type`: "formdata",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerleave")
+    def apply(
+      `type`: "pointerleave",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_playing")
+    def apply(
+      `type`: "playing",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationcancel")
+    def apply(
+      `type`: "animationcancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_select")
+    def apply(
+      `type`: "select",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_beforeinput")
+    def apply(
+      `type`: "beforeinput",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_click")
+    def apply(
+      `type`: "click",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_paste")
+    def apply(
+      `type`: "paste",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerdown")
+    def apply(
+      `type`: "pointerdown",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_resize")
+    def apply(
+      `type`: "resize",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_seeked")
+    def apply(
+      `type`: "seeked",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationiteration")
+    def apply(
+      `type`: "webkitanimationiteration",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_change")
+    def apply(
+      `type`: "change",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseover")
+    def apply(
+      `type`: "mouseover",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keyup")
+    def apply(
+      `type`: "keyup",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_stalled")
+    def apply(
+      `type`: "stalled",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_drop")
+    def apply(
+      `type`: "drop",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_abort")
+    def apply(
+      `type`: "abort",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionend")
+    def apply(
+      `type`: "compositionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_lostpointercapture")
+    def apply(
+      `type`: "lostpointercapture",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerover")
+    def apply(
+      `type`: "pointerover",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cut")
+    def apply(
+      `type`: "cut",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_wheel")
+    def apply(
+      `type`: "wheel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionupdate")
+    def apply(
+      `type`: "compositionupdate",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_gotpointercapture")
+    def apply(
+      `type`: "gotpointercapture",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerup")
+    def apply(
+      `type`: "pointerup",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_durationchange")
+    def apply(
+      `type`: "durationchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionstart")
+    def apply(
+      `type`: "compositionstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mousedown")
+    def apply(
+      `type`: "mousedown",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerenter")
+    def apply(
+      `type`: "pointerenter",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointermove")
+    def apply(
+      `type`: "pointermove",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ended")
+    def apply(
+      `type`: "ended",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fullscreenerror")
+    def apply(
+      `type`: "fullscreenerror",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseup")
+    def apply(
+      `type`: "mouseup",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_readystatechange")
+    def apply(
+      `type`: "readystatechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseleave")
+    def apply(
+      `type`: "mouseleave",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keypress")
+    def apply(
+      `type`: "keypress",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focusin")
+    def apply(
+      `type`: "focusin",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragstart")
+    def apply(
+      `type`: "dragstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragend")
+    def apply(
+      `type`: "dragend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchmove")
+    def apply(
+      `type`: "touchmove",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationend")
+    def apply(
+      `type`: "animationend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keydown")
+    def apply(
+      `type`: "keydown",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerout")
+    def apply(
+      `type`: "pointerout",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_securitypolicyviolation")
+    def apply(
+      `type`: "securitypolicyviolation",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_canplay")
+    def apply(
+      `type`: "canplay",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_blur")
+    def apply(
+      `type`: "blur",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_drag")
+    def apply(
+      `type`: "drag",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragenter")
+    def apply(
+      `type`: "dragenter",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadedmetadata")
+    def apply(
+      `type`: "loadedmetadata",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_scroll")
+    def apply(
+      `type`: "scroll",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_selectstart")
+    def apply(
+      `type`: "selectstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fullscreenchange")
+    def apply(
+      `type`: "fullscreenchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointercancel")
+    def apply(
+      `type`: "pointercancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerlockerror")
+    def apply(
+      `type`: "pointerlockerror",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitioncancel")
+    def apply(
+      `type`: "transitioncancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_toggle")
+    def apply(
+      `type`: "toggle",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchstart")
+    def apply(
+      `type`: "touchstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focus")
+    def apply(
+      `type`: "focus",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_reset")
+    def apply(
+      `type`: "reset",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dblclick")
+    def apply(
+      `type`: "dblclick",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseout")
+    def apply(
+      `type`: "mouseout",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionstart")
+    def apply(
+      `type`: "transitionstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_contextmenu")
+    def apply(
+      `type`: "contextmenu",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadstart")
+    def apply(
+      `type`: "loadstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focusout")
+    def apply(
+      `type`: "focusout",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_progress")
+    def apply(
+      `type`: "progress",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_play")
+    def apply(
+      `type`: "play",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragleave")
+    def apply(
+      `type`: "dragleave",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_close")
+    def apply(
+      `type`: "close",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_submit")
+    def apply(
+      `type`: "submit",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_seeking")
+    def apply(
+      `type`: "seeking",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_canplaythrough")
+    def apply(
+      `type`: "canplaythrough",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationiteration")
+    def apply(
+      `type`: "animationiteration",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationstart")
+    def apply(
+      `type`: "webkitanimationstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionend")
+    def apply(
+      `type`: "transitionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_volumechange")
+    def apply(
+      `type`: "volumechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cuechange")
+    def apply(
+      `type`: "cuechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragover")
+    def apply(
+      `type`: "dragover",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationstart")
+    def apply(
+      `type`: "animationstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchcancel")
+    def apply(
+      `type`: "touchcancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_selectionchange")
+    def apply(
+      `type`: "selectionchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_slotchange")
+    def apply(
+      `type`: "slotchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mousemove")
+    def apply(
+      `type`: "mousemove",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_emptied")
+    def apply(
+      `type`: "emptied",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pause")
+    def apply(
+      `type`: "pause",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
     def apply(`type`: String): Unit = js.native
     def apply(`type`: String, callback: Null, options: Boolean): Unit = js.native
     def apply(`type`: String, callback: Null, options: AddEventListenerOptions): Unit = js.native
     def apply(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
     def apply(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     def apply(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
-    def apply(`type`: DOMContentLoaded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: DOMContentLoaded,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: DOMContentLoaded,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]): Unit = js.native
-    def apply(
-      `type`: abort,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: abort,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: animationcancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: animationcancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: animationcancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: animationend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: animationend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: animationend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: animationiteration,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: animationiteration,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: animationiteration,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: animationstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: animationstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: animationstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: auxclick, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: auxclick,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: auxclick,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: beforeinput, listener: js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]): Unit = js.native
-    def apply(
-      `type`: beforeinput,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: beforeinput,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: blur, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
-    def apply(
-      `type`: blur,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: blur,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: cancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: cancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: canplay, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: canplay,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: canplay,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: canplaythrough, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: canplaythrough,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: canplaythrough,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: change, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: change,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: change,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: click, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: click,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: click,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: close, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: close,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: close,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: compositionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: compositionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: compositionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: compositionstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: compositionstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: compositionstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: compositionupdate,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: compositionupdate,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: compositionupdate,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: contextmenu, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: contextmenu,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: contextmenu,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: copy, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
-    def apply(
-      `type`: copy,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: copy,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: cuechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: cuechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: cuechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: cut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
-    def apply(
-      `type`: cut,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: cut,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: dblclick, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: dblclick,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: dblclick,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: dragend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
-    def apply(
-      `type`: dragend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: dragend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: dragenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
-    def apply(
-      `type`: dragenter,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: dragenter,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: dragleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
-    def apply(
-      `type`: dragleave,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: dragleave,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: drag, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
-    def apply(
-      `type`: drag,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: drag,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: dragover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
-    def apply(
-      `type`: dragover,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: dragover,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: dragstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
-    def apply(
-      `type`: dragstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: dragstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: drop, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
-    def apply(
-      `type`: drop,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: drop,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: durationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: durationchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: durationchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: emptied, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: emptied,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: emptied,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: ended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: ended,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: ended,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any]): Unit = js.native
-    def apply(
-      `type`: error,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: error,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: focusin, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
-    def apply(
-      `type`: focusin,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: focusin,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: focus, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
-    def apply(
-      `type`: focus,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: focus,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: focusout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
-    def apply(
-      `type`: focusout,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: focusout,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: formdata, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any]): Unit = js.native
-    def apply(
-      `type`: formdata,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: formdata,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: fullscreenchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: fullscreenchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: fullscreenerror,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: fullscreenerror,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: gotpointercapture,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: gotpointercapture,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: gotpointercapture,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: input, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: input,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: input,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: invalid, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: invalid,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: invalid,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: keydown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]): Unit = js.native
-    def apply(
-      `type`: keydown,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: keydown,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: keypress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]): Unit = js.native
-    def apply(
-      `type`: keypress,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: keypress,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: keyup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]): Unit = js.native
-    def apply(
-      `type`: keyup,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: keyup,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: loadeddata, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: loadeddata,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: loadeddata,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: loadedmetadata, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: loadedmetadata,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: loadedmetadata,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: load, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: load,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: load,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: loadstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: loadstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: loadstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: lostpointercapture,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: lostpointercapture,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: lostpointercapture,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: mousedown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: mousedown,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: mousedown,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: mouseenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: mouseenter,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: mouseenter,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: mouseleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: mouseleave,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: mouseleave,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: mousemove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: mousemove,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: mousemove,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: mouseout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: mouseout,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: mouseout,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: mouseover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: mouseover,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: mouseover,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: mouseup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: mouseup,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: mouseup,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: paste, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
-    def apply(
-      `type`: paste,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: paste,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pause, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: pause,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pause,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: playing, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: playing,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: playing,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: play, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: play,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: play,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: pointercancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: pointercancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointercancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerdown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
-    def apply(
-      `type`: pointerdown,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerdown,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
-    def apply(
-      `type`: pointerenter,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerenter,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
-    def apply(
-      `type`: pointerleave,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerleave,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerlockchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: pointerlockchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerlockchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: pointerlockerror,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerlockerror,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointermove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
-    def apply(
-      `type`: pointermove,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointermove,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
-    def apply(
-      `type`: pointerout,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerout,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
-    def apply(
-      `type`: pointerover,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerover,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
-    def apply(
-      `type`: pointerup,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerup,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: progress,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any]
-    ): Unit = js.native
-    def apply(
-      `type`: progress,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: progress,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: ratechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: ratechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: ratechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: reset, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: reset,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: reset,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]): Unit = js.native
-    def apply(
-      `type`: resize,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: resize,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: scroll,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: scroll,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: securitypolicyviolation,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: securitypolicyviolation,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: securitypolicyviolation,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: seeked, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: seeked,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: seeked,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: seeking, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: seeking,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: seeking,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: selectionchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: selectionchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: selectionchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: select, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: select,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: select,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: selectstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: selectstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: selectstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: slotchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: slotchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: slotchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: stalled, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: stalled,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: stalled,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: submit, listener: js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any]): Unit = js.native
-    def apply(
-      `type`: submit,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: submit,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: suspend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: suspend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: suspend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: timeupdate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: timeupdate,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: timeupdate,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: toggle, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: toggle,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: toggle,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
-    def apply(
-      `type`: touchcancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: touchcancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
-    def apply(
-      `type`: touchend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: touchend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
-    def apply(
-      `type`: touchmove,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: touchmove,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
-    def apply(
-      `type`: touchstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: touchstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: transitioncancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: transitioncancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: transitioncancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: transitionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: transitionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: transitionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: transitionrun,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: transitionrun,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: transitionrun,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: transitionstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: transitionstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: transitionstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: visibilitychange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: visibilitychange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: visibilitychange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: volumechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: volumechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: volumechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: waiting, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: waiting,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: waiting,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: webkitanimationend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: webkitanimationend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: webkitanimationend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: webkitanimationiteration,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: webkitanimationiteration,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: webkitanimationiteration,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: webkitanimationstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: webkitanimationstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: webkitanimationstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: webkittransitionend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: webkittransitionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: webkittransitionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: wheel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any]): Unit = js.native
-    def apply(
-      `type`: wheel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: wheel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
   }
   
   @js.native
   trait FnCallTypeListenerOptions extends StObject {
     
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cuechange")
+    def apply(`type`: "cuechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focusout")
+    def apply(`type`: "focusout", listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_play")
+    def apply(`type`: "play", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_close")
+    def apply(`type`: "close", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerlockerror")
+    def apply(`type`: "pointerlockerror", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_wheel")
+    def apply(`type`: "wheel", listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ended")
+    def apply(`type`: "ended", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cancel")
+    def apply(`type`: "cancel", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_drag")
+    def apply(`type`: "drag", listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_canplay")
+    def apply(`type`: "canplay", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_playing")
+    def apply(`type`: "playing", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_suspend")
+    def apply(`type`: "suspend", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchend")
+    def apply(`type`: "touchend", listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerover")
+    def apply(
+      `type`: "pointerover",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkittransitionend")
+    def apply(
+      `type`: "webkittransitionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchcancel")
+    def apply(`type`: "touchcancel", listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mousedown")
+    def apply(`type`: "mousedown", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_selectstart")
+    def apply(`type`: "selectstart", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_canplaythrough")
+    def apply(`type`: "canplaythrough", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focus")
+    def apply(`type`: "focus", listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionrun")
+    def apply(
+      `type`: "transitionrun",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keyup")
+    def apply(`type`: "keyup", listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_formdata")
+    def apply(`type`: "formdata", listener: js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fullscreenchange")
+    def apply(`type`: "fullscreenchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_auxclick")
+    def apply(`type`: "auxclick", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fullscreenerror")
+    def apply(`type`: "fullscreenerror", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mousemove")
+    def apply(`type`: "mousemove", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationcancel")
+    def apply(
+      `type`: "animationcancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragleave")
+    def apply(`type`: "dragleave", listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_readystatechange")
+    def apply(`type`: "readystatechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragenter")
+    def apply(`type`: "dragenter", listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointercancel")
+    def apply(
+      `type`: "pointercancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseenter")
+    def apply(`type`: "mouseenter", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_volumechange")
+    def apply(`type`: "volumechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_input")
+    def apply(`type`: "input", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_submit")
+    def apply(`type`: "submit", listener: js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_selectionchange")
+    def apply(`type`: "selectionchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_beforeinput")
+    def apply(`type`: "beforeinput", listener: js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_securitypolicyviolation")
+    def apply(
+      `type`: "securitypolicyviolation",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keydown")
+    def apply(`type`: "keydown", listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_abort")
+    def apply(`type`: "abort", listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_contextmenu")
+    def apply(`type`: "contextmenu", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationstart")
+    def apply(
+      `type`: "animationstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchstart")
+    def apply(`type`: "touchstart", listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerenter")
+    def apply(
+      `type`: "pointerenter",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationstart")
+    def apply(
+      `type`: "webkitanimationstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_DOMContentLoaded")
+    def apply(`type`: "DOMContentLoaded", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_click")
+    def apply(`type`: "click", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerup")
+    def apply(`type`: "pointerup", listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionend")
+    def apply(
+      `type`: "compositionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_copy")
+    def apply(`type`: "copy", listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationiteration")
+    def apply(
+      `type`: "webkitanimationiteration",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_visibilitychange")
+    def apply(`type`: "visibilitychange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pause")
+    def apply(`type`: "pause", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragend")
+    def apply(`type`: "dragend", listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionend")
+    def apply(
+      `type`: "transitionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerlockchange")
+    def apply(`type`: "pointerlockchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_seeking")
+    def apply(`type`: "seeking", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ratechange")
+    def apply(`type`: "ratechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_paste")
+    def apply(`type`: "paste", listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerdown")
+    def apply(
+      `type`: "pointerdown",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_select")
+    def apply(`type`: "select", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_load")
+    def apply(`type`: "load", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_drop")
+    def apply(`type`: "drop", listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationend")
+    def apply(
+      `type`: "webkitanimationend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointermove")
+    def apply(
+      `type`: "pointermove",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_seeked")
+    def apply(`type`: "seeked", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadedmetadata")
+    def apply(`type`: "loadedmetadata", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchmove")
+    def apply(`type`: "touchmove", listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionstart")
+    def apply(
+      `type`: "compositionstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cut")
+    def apply(`type`: "cut", listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionstart")
+    def apply(
+      `type`: "transitionstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerleave")
+    def apply(
+      `type`: "pointerleave",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseup")
+    def apply(`type`: "mouseup", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationiteration")
+    def apply(
+      `type`: "animationiteration",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseleave")
+    def apply(`type`: "mouseleave", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_emptied")
+    def apply(`type`: "emptied", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_slotchange")
+    def apply(`type`: "slotchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadeddata")
+    def apply(`type`: "loadeddata", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_invalid")
+    def apply(`type`: "invalid", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragover")
+    def apply(`type`: "dragover", listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_blur")
+    def apply(`type`: "blur", listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationend")
+    def apply(
+      `type`: "animationend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseover")
+    def apply(`type`: "mouseover", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dblclick")
+    def apply(`type`: "dblclick", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_reset")
+    def apply(`type`: "reset", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseout")
+    def apply(`type`: "mouseout", listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_lostpointercapture")
+    def apply(
+      `type`: "lostpointercapture",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerout")
+    def apply(`type`: "pointerout", listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_stalled")
+    def apply(`type`: "stalled", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_gotpointercapture")
+    def apply(
+      `type`: "gotpointercapture",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_change")
+    def apply(`type`: "change", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_error")
+    def apply(`type`: "error", listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_scroll")
+    def apply(`type`: "scroll", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keypress")
+    def apply(`type`: "keypress", listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_toggle")
+    def apply(`type`: "toggle", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_durationchange")
+    def apply(`type`: "durationchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_timeupdate")
+    def apply(`type`: "timeupdate", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitioncancel")
+    def apply(
+      `type`: "transitioncancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_progress")
+    def apply(
+      `type`: "progress",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focusin")
+    def apply(`type`: "focusin", listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragstart")
+    def apply(`type`: "dragstart", listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_waiting")
+    def apply(`type`: "waiting", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionupdate")
+    def apply(
+      `type`: "compositionupdate",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any]
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadstart")
+    def apply(`type`: "loadstart", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_resize")
+    def apply(`type`: "resize", listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragstart")
+    def apply(
+      `type`: "dragstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionrun")
+    def apply(
+      `type`: "transitionrun",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cancel")
+    def apply(
+      `type`: "cancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_submit")
+    def apply(
+      `type`: "submit",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keypress")
+    def apply(
+      `type`: "keypress",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationiteration")
+    def apply(
+      `type`: "animationiteration",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_invalid")
+    def apply(
+      `type`: "invalid",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionstart")
+    def apply(
+      `type`: "transitionstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_visibilitychange")
+    def apply(
+      `type`: "visibilitychange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_reset")
+    def apply(
+      `type`: "reset",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationstart")
+    def apply(
+      `type`: "animationstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseup")
+    def apply(
+      `type`: "mouseup",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationcancel")
+    def apply(
+      `type`: "animationcancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_change")
+    def apply(
+      `type`: "change",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_gotpointercapture")
+    def apply(
+      `type`: "gotpointercapture",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fullscreenerror")
+    def apply(
+      `type`: "fullscreenerror",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_readystatechange")
+    def apply(
+      `type`: "readystatechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchend")
+    def apply(
+      `type`: "touchend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cut")
+    def apply(
+      `type`: "cut",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchstart")
+    def apply(
+      `type`: "touchstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_click")
+    def apply(
+      `type`: "click",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_canplay")
+    def apply(
+      `type`: "canplay",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragover")
+    def apply(
+      `type`: "dragover",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_formdata")
+    def apply(
+      `type`: "formdata",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_wheel")
+    def apply(
+      `type`: "wheel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseleave")
+    def apply(
+      `type`: "mouseleave",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keyup")
+    def apply(
+      `type`: "keyup",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_beforeinput")
+    def apply(
+      `type`: "beforeinput",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_suspend")
+    def apply(
+      `type`: "suspend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerup")
+    def apply(
+      `type`: "pointerup",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_error")
+    def apply(
+      `type`: "error",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionstart")
+    def apply(
+      `type`: "compositionstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_volumechange")
+    def apply(
+      `type`: "volumechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_input")
+    def apply(
+      `type`: "input",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragend")
+    def apply(
+      `type`: "dragend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focus")
+    def apply(
+      `type`: "focus",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerlockerror")
+    def apply(
+      `type`: "pointerlockerror",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_close")
+    def apply(
+      `type`: "close",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focusin")
+    def apply(
+      `type`: "focusin",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchcancel")
+    def apply(
+      `type`: "touchcancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_progress")
+    def apply(
+      `type`: "progress",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_lostpointercapture")
+    def apply(
+      `type`: "lostpointercapture",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseout")
+    def apply(
+      `type`: "mouseout",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchmove")
+    def apply(
+      `type`: "touchmove",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadstart")
+    def apply(
+      `type`: "loadstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_seeking")
+    def apply(
+      `type`: "seeking",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_load")
+    def apply(
+      `type`: "load",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadedmetadata")
+    def apply(
+      `type`: "loadedmetadata",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_selectstart")
+    def apply(
+      `type`: "selectstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadeddata")
+    def apply(
+      `type`: "loadeddata",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_seeked")
+    def apply(
+      `type`: "seeked",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_canplaythrough")
+    def apply(
+      `type`: "canplaythrough",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerlockchange")
+    def apply(
+      `type`: "pointerlockchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationiteration")
+    def apply(
+      `type`: "webkitanimationiteration",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_auxclick")
+    def apply(
+      `type`: "auxclick",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkittransitionend")
+    def apply(
+      `type`: "webkittransitionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_copy")
+    def apply(
+      `type`: "copy",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_playing")
+    def apply(
+      `type`: "playing",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_slotchange")
+    def apply(
+      `type`: "slotchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragenter")
+    def apply(
+      `type`: "dragenter",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseover")
+    def apply(
+      `type`: "mouseover",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerleave")
+    def apply(
+      `type`: "pointerleave",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragleave")
+    def apply(
+      `type`: "dragleave",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dblclick")
+    def apply(
+      `type`: "dblclick",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitioncancel")
+    def apply(
+      `type`: "transitioncancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keydown")
+    def apply(
+      `type`: "keydown",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_toggle")
+    def apply(
+      `type`: "toggle",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fullscreenchange")
+    def apply(
+      `type`: "fullscreenchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerenter")
+    def apply(
+      `type`: "pointerenter",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focusout")
+    def apply(
+      `type`: "focusout",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_select")
+    def apply(
+      `type`: "select",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointercancel")
+    def apply(
+      `type`: "pointercancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mousemove")
+    def apply(
+      `type`: "mousemove",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pause")
+    def apply(
+      `type`: "pause",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseenter")
+    def apply(
+      `type`: "mouseenter",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_scroll")
+    def apply(
+      `type`: "scroll",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionend")
+    def apply(
+      `type`: "compositionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerdown")
+    def apply(
+      `type`: "pointerdown",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_DOMContentLoaded")
+    def apply(
+      `type`: "DOMContentLoaded",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mousedown")
+    def apply(
+      `type`: "mousedown",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationend")
+    def apply(
+      `type`: "animationend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerout")
+    def apply(
+      `type`: "pointerout",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ratechange")
+    def apply(
+      `type`: "ratechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_drag")
+    def apply(
+      `type`: "drag",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_abort")
+    def apply(
+      `type`: "abort",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cuechange")
+    def apply(
+      `type`: "cuechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ended")
+    def apply(
+      `type`: "ended",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_waiting")
+    def apply(
+      `type`: "waiting",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_securitypolicyviolation")
+    def apply(
+      `type`: "securitypolicyviolation",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_resize")
+    def apply(
+      `type`: "resize",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_play")
+    def apply(
+      `type`: "play",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_emptied")
+    def apply(
+      `type`: "emptied",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationstart")
+    def apply(
+      `type`: "webkitanimationstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_drop")
+    def apply(
+      `type`: "drop",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_timeupdate")
+    def apply(
+      `type`: "timeupdate",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_contextmenu")
+    def apply(
+      `type`: "contextmenu",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionend")
+    def apply(
+      `type`: "transitionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_durationchange")
+    def apply(
+      `type`: "durationchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_paste")
+    def apply(
+      `type`: "paste",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_blur")
+    def apply(
+      `type`: "blur",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_stalled")
+    def apply(
+      `type`: "stalled",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointermove")
+    def apply(
+      `type`: "pointermove",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_selectionchange")
+    def apply(
+      `type`: "selectionchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerover")
+    def apply(
+      `type`: "pointerover",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionupdate")
+    def apply(
+      `type`: "compositionupdate",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationend")
+    def apply(
+      `type`: "webkitanimationend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationiteration")
+    def apply(
+      `type`: "webkitanimationiteration",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_drop")
+    def apply(
+      `type`: "drop",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_play")
+    def apply(
+      `type`: "play",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerup")
+    def apply(
+      `type`: "pointerup",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_canplaythrough")
+    def apply(
+      `type`: "canplaythrough",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_volumechange")
+    def apply(
+      `type`: "volumechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_abort")
+    def apply(
+      `type`: "abort",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragstart")
+    def apply(
+      `type`: "dragstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseleave")
+    def apply(
+      `type`: "mouseleave",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keyup")
+    def apply(
+      `type`: "keyup",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchstart")
+    def apply(
+      `type`: "touchstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_copy")
+    def apply(
+      `type`: "copy",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_auxclick")
+    def apply(
+      `type`: "auxclick",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_slotchange")
+    def apply(
+      `type`: "slotchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseup")
+    def apply(
+      `type`: "mouseup",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_reset")
+    def apply(
+      `type`: "reset",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_submit")
+    def apply(
+      `type`: "submit",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchcancel")
+    def apply(
+      `type`: "touchcancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerdown")
+    def apply(
+      `type`: "pointerdown",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionupdate")
+    def apply(
+      `type`: "compositionupdate",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionstart")
+    def apply(
+      `type`: "transitionstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseout")
+    def apply(
+      `type`: "mouseout",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationcancel")
+    def apply(
+      `type`: "animationcancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationstart")
+    def apply(
+      `type`: "webkitanimationstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_error")
+    def apply(
+      `type`: "error",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseover")
+    def apply(
+      `type`: "mouseover",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_readystatechange")
+    def apply(
+      `type`: "readystatechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_resize")
+    def apply(
+      `type`: "resize",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_toggle")
+    def apply(
+      `type`: "toggle",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_load")
+    def apply(
+      `type`: "load",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_stalled")
+    def apply(
+      `type`: "stalled",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_timeupdate")
+    def apply(
+      `type`: "timeupdate",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_formdata")
+    def apply(
+      `type`: "formdata",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cuechange")
+    def apply(
+      `type`: "cuechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mousedown")
+    def apply(
+      `type`: "mousedown",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_playing")
+    def apply(
+      `type`: "playing",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dblclick")
+    def apply(
+      `type`: "dblclick",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerlockerror")
+    def apply(
+      `type`: "pointerlockerror",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_securitypolicyviolation")
+    def apply(
+      `type`: "securitypolicyviolation",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadedmetadata")
+    def apply(
+      `type`: "loadedmetadata",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fullscreenerror")
+    def apply(
+      `type`: "fullscreenerror",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_paste")
+    def apply(
+      `type`: "paste",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_progress")
+    def apply(
+      `type`: "progress",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_emptied")
+    def apply(
+      `type`: "emptied",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focus")
+    def apply(
+      `type`: "focus",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkitanimationend")
+    def apply(
+      `type`: "webkitanimationend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_select")
+    def apply(
+      `type`: "select",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_invalid")
+    def apply(
+      `type`: "invalid",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ended")
+    def apply(
+      `type`: "ended",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_drag")
+    def apply(
+      `type`: "drag",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keypress")
+    def apply(
+      `type`: "keypress",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationstart")
+    def apply(
+      `type`: "animationstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_durationchange")
+    def apply(
+      `type`: "durationchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragleave")
+    def apply(
+      `type`: "dragleave",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerleave")
+    def apply(
+      `type`: "pointerleave",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_scroll")
+    def apply(
+      `type`: "scroll",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_visibilitychange")
+    def apply(
+      `type`: "visibilitychange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionstart")
+    def apply(
+      `type`: "compositionstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_wheel")
+    def apply(
+      `type`: "wheel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webkittransitionend")
+    def apply(
+      `type`: "webkittransitionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationend")
+    def apply(
+      `type`: "animationend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_blur")
+    def apply(
+      `type`: "blur",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_canplay")
+    def apply(
+      `type`: "canplay",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mousemove")
+    def apply(
+      `type`: "mousemove",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragover")
+    def apply(
+      `type`: "dragover",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerover")
+    def apply(
+      `type`: "pointerover",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animationiteration")
+    def apply(
+      `type`: "animationiteration",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ratechange")
+    def apply(
+      `type`: "ratechange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_close")
+    def apply(
+      `type`: "close",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_compositionend")
+    def apply(
+      `type`: "compositionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchend")
+    def apply(
+      `type`: "touchend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_selectstart")
+    def apply(
+      `type`: "selectstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragend")
+    def apply(
+      `type`: "dragend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_click")
+    def apply(
+      `type`: "click",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focusout")
+    def apply(
+      `type`: "focusout",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_touchmove")
+    def apply(
+      `type`: "touchmove",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keydown")
+    def apply(
+      `type`: "keydown",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_contextmenu")
+    def apply(
+      `type`: "contextmenu",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dragenter")
+    def apply(
+      `type`: "dragenter",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadstart")
+    def apply(
+      `type`: "loadstart",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_seeked")
+    def apply(
+      `type`: "seeked",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_suspend")
+    def apply(
+      `type`: "suspend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focusin")
+    def apply(
+      `type`: "focusin",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_seeking")
+    def apply(
+      `type`: "seeking",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mouseenter")
+    def apply(
+      `type`: "mouseenter",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionrun")
+    def apply(
+      `type`: "transitionrun",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_selectionchange")
+    def apply(
+      `type`: "selectionchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cut")
+    def apply(
+      `type`: "cut",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_beforeinput")
+    def apply(
+      `type`: "beforeinput",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerenter")
+    def apply(
+      `type`: "pointerenter",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cancel")
+    def apply(
+      `type`: "cancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_input")
+    def apply(
+      `type`: "input",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fullscreenchange")
+    def apply(
+      `type`: "fullscreenchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_lostpointercapture")
+    def apply(
+      `type`: "lostpointercapture",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_loadeddata")
+    def apply(
+      `type`: "loadeddata",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitionend")
+    def apply(
+      `type`: "transitionend",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_transitioncancel")
+    def apply(
+      `type`: "transitioncancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pause")
+    def apply(
+      `type`: "pause",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerout")
+    def apply(
+      `type`: "pointerout",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_DOMContentLoaded")
+    def apply(
+      `type`: "DOMContentLoaded",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_gotpointercapture")
+    def apply(
+      `type`: "gotpointercapture",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_change")
+    def apply(
+      `type`: "change",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointerlockchange")
+    def apply(
+      `type`: "pointerlockchange",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointermove")
+    def apply(
+      `type`: "pointermove",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pointercancel")
+    def apply(
+      `type`: "pointercancel",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_waiting")
+    def apply(
+      `type`: "waiting",
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
     def apply(`type`: String): Unit = js.native
     def apply(`type`: String, callback: Null, options: Boolean): Unit = js.native
     def apply(`type`: String, callback: Null, options: EventListenerOptions): Unit = js.native
     def apply(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
     def apply(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     def apply(`type`: String, listener: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
-    def apply(`type`: DOMContentLoaded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: DOMContentLoaded,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: DOMContentLoaded,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]): Unit = js.native
-    def apply(
-      `type`: abort,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: abort,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: animationcancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: animationcancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: animationcancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: animationend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: animationend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: animationend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: animationiteration,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: animationiteration,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: animationiteration,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: animationstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: animationstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: animationstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: auxclick, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: auxclick,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: auxclick,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: beforeinput, listener: js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]): Unit = js.native
-    def apply(
-      `type`: beforeinput,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: beforeinput,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: blur, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
-    def apply(
-      `type`: blur,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: blur,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: cancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: cancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: canplay, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: canplay,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: canplay,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: canplaythrough, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: canplaythrough,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: canplaythrough,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: change, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: change,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: change,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: click, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: click,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: click,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: close, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: close,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: close,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: compositionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: compositionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: compositionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: compositionstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: compositionstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: compositionstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: compositionupdate,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: compositionupdate,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: compositionupdate,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ CompositionEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: contextmenu, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: contextmenu,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: contextmenu,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: copy, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
-    def apply(
-      `type`: copy,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: copy,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: cuechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: cuechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: cuechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: cut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
-    def apply(
-      `type`: cut,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: cut,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: dblclick, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: dblclick,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: dblclick,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: dragend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
-    def apply(
-      `type`: dragend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: dragend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: dragenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
-    def apply(
-      `type`: dragenter,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: dragenter,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: dragleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
-    def apply(
-      `type`: dragleave,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: dragleave,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: drag, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
-    def apply(
-      `type`: drag,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: drag,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: dragover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
-    def apply(
-      `type`: dragover,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: dragover,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: dragstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
-    def apply(
-      `type`: dragstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: dragstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: drop, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]): Unit = js.native
-    def apply(
-      `type`: drop,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: drop,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: durationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: durationchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: durationchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: emptied, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: emptied,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: emptied,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: ended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: ended,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: ended,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any]): Unit = js.native
-    def apply(
-      `type`: error,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: error,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: focusin, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
-    def apply(
-      `type`: focusin,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: focusin,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: focus, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
-    def apply(
-      `type`: focus,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: focus,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: focusout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]): Unit = js.native
-    def apply(
-      `type`: focusout,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: focusout,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: formdata, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any]): Unit = js.native
-    def apply(
-      `type`: formdata,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: formdata,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: fullscreenchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: fullscreenchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: fullscreenerror,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: fullscreenerror,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: gotpointercapture,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: gotpointercapture,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: gotpointercapture,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: input, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: input,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: input,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: invalid, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: invalid,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: invalid,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: keydown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]): Unit = js.native
-    def apply(
-      `type`: keydown,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: keydown,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: keypress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]): Unit = js.native
-    def apply(
-      `type`: keypress,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: keypress,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: keyup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]): Unit = js.native
-    def apply(
-      `type`: keyup,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: keyup,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: loadeddata, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: loadeddata,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: loadeddata,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: loadedmetadata, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: loadedmetadata,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: loadedmetadata,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: load, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: load,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: load,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: loadstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: loadstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: loadstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: lostpointercapture,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: lostpointercapture,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: lostpointercapture,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: mousedown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: mousedown,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: mousedown,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: mouseenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: mouseenter,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: mouseenter,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: mouseleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: mouseleave,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: mouseleave,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: mousemove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: mousemove,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: mousemove,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: mouseout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: mouseout,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: mouseout,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: mouseover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: mouseover,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: mouseover,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: mouseup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]): Unit = js.native
-    def apply(
-      `type`: mouseup,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: mouseup,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: paste, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
-    def apply(
-      `type`: paste,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: paste,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pause, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: pause,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pause,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: playing, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: playing,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: playing,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: play, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: play,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: play,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: pointercancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: pointercancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointercancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerdown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
-    def apply(
-      `type`: pointerdown,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerdown,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
-    def apply(
-      `type`: pointerenter,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerenter,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
-    def apply(
-      `type`: pointerleave,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerleave,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerlockchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: pointerlockchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerlockchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: pointerlockerror,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerlockerror,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointermove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
-    def apply(
-      `type`: pointermove,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointermove,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
-    def apply(
-      `type`: pointerout,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerout,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
-    def apply(
-      `type`: pointerover,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerover,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
-    def apply(
-      `type`: pointerup,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerup,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: progress,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any]
-    ): Unit = js.native
-    def apply(
-      `type`: progress,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: progress,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: ratechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: ratechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: ratechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: reset, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: reset,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: reset,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]): Unit = js.native
-    def apply(
-      `type`: resize,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: resize,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: scroll,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: scroll,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: securitypolicyviolation,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: securitypolicyviolation,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: securitypolicyviolation,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: seeked, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: seeked,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: seeked,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: seeking, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: seeking,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: seeking,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: selectionchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: selectionchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: selectionchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: select, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: select,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: select,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: selectstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: selectstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: selectstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: slotchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: slotchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: slotchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: stalled, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: stalled,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: stalled,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: submit, listener: js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any]): Unit = js.native
-    def apply(
-      `type`: submit,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: submit,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: suspend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: suspend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: suspend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: timeupdate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: timeupdate,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: timeupdate,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: toggle, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: toggle,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: toggle,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
-    def apply(
-      `type`: touchcancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: touchcancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
-    def apply(
-      `type`: touchend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: touchend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
-    def apply(
-      `type`: touchmove,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: touchmove,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]): Unit = js.native
-    def apply(
-      `type`: touchstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: touchstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: transitioncancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: transitioncancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: transitioncancel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: transitionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: transitionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: transitionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: transitionrun,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: transitionrun,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: transitionrun,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: transitionstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: transitionstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: transitionstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: visibilitychange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: visibilitychange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: visibilitychange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: volumechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: volumechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: volumechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: waiting, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: waiting,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: waiting,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: webkitanimationend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: webkitanimationend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: webkitanimationend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: webkitanimationiteration,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: webkitanimationiteration,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: webkitanimationiteration,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(
-      `type`: webkitanimationstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
-    ): Unit = js.native
-    def apply(
-      `type`: webkitanimationstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: webkitanimationstart,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: webkittransitionend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: webkittransitionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: webkittransitionend,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: wheel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any]): Unit = js.native
-    def apply(
-      `type`: wheel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: wheel,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
   }
   
   trait Indexf extends StObject {

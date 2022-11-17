@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.YieldExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `12` extends StObject {
   
-  var `type`: YieldExpression
+  var `type`: "YieldExpression"
 }
 object `12` {
   
@@ -19,6 +18,6 @@ object `12` {
   
   extension [Self <: `12`](x: Self) {
     
-    inline def setType(value: YieldExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "YieldExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

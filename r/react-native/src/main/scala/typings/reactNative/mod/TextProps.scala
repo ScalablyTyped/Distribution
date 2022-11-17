@@ -1,10 +1,6 @@
 package typings.reactNative.mod
 
 import typings.react.mod.ReactNode
-import typings.reactNative.reactNativeStrings.clip
-import typings.reactNative.reactNativeStrings.head
-import typings.reactNative.reactNativeStrings.middle
-import typings.reactNative.reactNativeStrings.tail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,13 +36,13 @@ trait TextProps
     *
     * > `clip` is working only for iOS
     */
-  var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
+  var ellipsizeMode: js.UndefOr["head" | "middle" | "tail" | "clip"] = js.undefined
   
   /**
     * Line Break mode. Works only with numberOfLines.
     * clip is working only for iOS
     */
-  var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.undefined
+  var lineBreakMode: js.UndefOr["head" | "middle" | "tail" | "clip"] = js.undefined
   
   /**
     * Specifies largest possible scale a font can reach when allowFontScaling is enabled. Possible values:
@@ -125,11 +121,11 @@ object TextProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
+    inline def setEllipsizeMode(value: "head" | "middle" | "tail" | "clip"): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
     
     inline def setEllipsizeModeUndefined: Self = StObject.set(x, "ellipsizeMode", js.undefined)
     
-    inline def setLineBreakMode(value: head | middle | tail | clip): Self = StObject.set(x, "lineBreakMode", value.asInstanceOf[js.Any])
+    inline def setLineBreakMode(value: "head" | "middle" | "tail" | "clip"): Self = StObject.set(x, "lineBreakMode", value.asInstanceOf[js.Any])
     
     inline def setLineBreakModeUndefined: Self = StObject.set(x, "lineBreakMode", js.undefined)
     

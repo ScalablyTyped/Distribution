@@ -4,7 +4,6 @@ import typings.rcPicker.anon.Label
 import typings.rcPicker.esInterfaceMod.Components
 import typings.rcPicker.esInterfaceMod.Locale
 import typings.rcPicker.esInterfaceMod.RangeList
-import typings.rcPicker.rcPickerBooleans.`false`
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,9 +27,9 @@ object esUtilsGetRangesMod {
     
     var okDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var onNow: js.UndefOr[Null | js.Function0[Unit] | `false`] = js.undefined
+    var onNow: js.UndefOr[Null | js.Function0[Unit] | false] = js.undefined
     
-    var onOk: js.UndefOr[Null | js.Function0[Unit] | `false`] = js.undefined
+    var onOk: js.UndefOr[Null | js.Function0[Unit] | false] = js.undefined
     
     var prefixCls: String
     
@@ -59,7 +58,7 @@ object esUtilsGetRangesMod {
       
       inline def setOkDisabledUndefined: Self = StObject.set(x, "okDisabled", js.undefined)
       
-      inline def setOnNow(value: js.Function0[Unit] | `false`): Self = StObject.set(x, "onNow", value.asInstanceOf[js.Any])
+      inline def setOnNow(value: js.Function0[Unit] | false): Self = StObject.set(x, "onNow", value.asInstanceOf[js.Any])
       
       inline def setOnNowFunction0(value: () => Unit): Self = StObject.set(x, "onNow", js.Any.fromFunction0(value))
       
@@ -67,7 +66,7 @@ object esUtilsGetRangesMod {
       
       inline def setOnNowUndefined: Self = StObject.set(x, "onNow", js.undefined)
       
-      inline def setOnOk(value: js.Function0[Unit] | `false`): Self = StObject.set(x, "onOk", value.asInstanceOf[js.Any])
+      inline def setOnOk(value: js.Function0[Unit] | false): Self = StObject.set(x, "onOk", value.asInstanceOf[js.Any])
       
       inline def setOnOkFunction0(value: () => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction0(value))
       

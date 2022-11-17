@@ -17,9 +17,15 @@ js.Promise[Values]]
 
 type NamePath = String | Double | InternalNamePath
 
+type NotifyInfo = ValueUpdateInfo | ValidateFinishInfo | ResetInfo | RemoveInfo | SetFieldInfo | DependenciesUpdateInfo
+
 type Rule = RuleObject | RuleRender
 
+type RuleObject = AggregationRule | ArrayRule
+
 type RuleRender = js.Function1[/* form */ FormInstance[Any], RuleObject]
+
+type RuleType = "string" | "number" | "boolean" | "method" | "regexp" | "integer" | "float" | "object" | "enum" | "date" | "url" | "hex" | "email"
 
 type Store = Record[String, StoreValue]
 

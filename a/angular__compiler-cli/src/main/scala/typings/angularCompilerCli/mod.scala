@@ -1,7 +1,6 @@
 package typings.angularCompilerCli
 
 import typings.angularCompiler.mod.Version
-import typings.angularCompilerCli.angularCompilerCliStrings.angular
 import typings.angularCompilerCli.anon.BasePath
 import typings.angularCompilerCli.anon.CustomTransformers
 import typings.angularCompilerCli.anon.FileName
@@ -195,7 +194,7 @@ object mod {
   
   @JSImport("@angular/compiler-cli", "SOURCE")
   @js.native
-  val SOURCE: angular = js.native
+  val SOURCE: "angular" = js.native
   
   @JSImport("@angular/compiler-cli", "UNKNOWN_ERROR_CODE")
   @js.native
@@ -224,10 +223,10 @@ object mod {
   inline def defaultGatherDiagnostics(program: typings.angularCompilerCli.srcTransformersApiMod.Program): js.Array[Diagnostic] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGatherDiagnostics")(program.asInstanceOf[js.Any]).asInstanceOf[js.Array[Diagnostic]]
   
   inline def dirname(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(file.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def dirname_AbsoluteFsPath(file: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath]): BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath] = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(file.asInstanceOf[js.Any]).asInstanceOf[BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath]]
-  
-  inline def dirname_PathSegment(file: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment]): BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment] = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(file.asInstanceOf[js.Any]).asInstanceOf[BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment]]
+  @scala.annotation.targetName("dirname_PathSegment")
+  inline def dirname(file: BrandedPath["PathSegment"]): BrandedPath["PathSegment"] = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(file.asInstanceOf[js.Any]).asInstanceOf[BrandedPath["PathSegment"]]
+  @scala.annotation.targetName("dirname_AbsoluteFsPath")
+  inline def dirname(file: BrandedPath["AbsoluteFsPath"]): BrandedPath["AbsoluteFsPath"] = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(file.asInstanceOf[js.Any]).asInstanceOf[BrandedPath["AbsoluteFsPath"]]
   
   inline def exitCodeFromResult(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("exitCodeFromResult")().asInstanceOf[Double]
   inline def exitCodeFromResult(diags: js.Array[Diagnostic]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("exitCodeFromResult")(diags.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -248,16 +247,10 @@ object mod {
   inline def isTsDiagnostic(diagnostic: Any): /* is typescript.typescript.Diagnostic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTsDiagnostic")(diagnostic.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.Diagnostic */ Boolean]
   
   inline def join(basePath: String, paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(scala.List(basePath.asInstanceOf[js.Any]).`++`(paths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
-  
-  inline def join_AbsoluteFsPath(
-    basePath: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath],
-    paths: String*
-  ): BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(scala.List(basePath.asInstanceOf[js.Any]).`++`(paths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath]]
-  
-  inline def join_PathSegment(
-    basePath: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment],
-    paths: String*
-  ): BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(scala.List(basePath.asInstanceOf[js.Any]).`++`(paths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment]]
+  @scala.annotation.targetName("join_PathSegment")
+  inline def join(basePath: BrandedPath["PathSegment"], paths: String*): BrandedPath["PathSegment"] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(scala.List(basePath.asInstanceOf[js.Any]).`++`(paths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[BrandedPath["PathSegment"]]
+  @scala.annotation.targetName("join_AbsoluteFsPath")
+  inline def join(basePath: BrandedPath["AbsoluteFsPath"], paths: String*): BrandedPath["AbsoluteFsPath"] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(scala.List(basePath.asInstanceOf[js.Any]).`++`(paths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[BrandedPath["AbsoluteFsPath"]]
   
   inline def performCompilation(param0: CustomTransformers): PerformCompilationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("performCompilation")(param0.asInstanceOf[js.Any]).asInstanceOf[PerformCompilationResult]
   
@@ -271,18 +264,12 @@ object mod {
   ): ParsedConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfiguration")(project.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[ParsedConfiguration]
   
   inline def relative(from: String, to: String): PathSegment | AbsoluteFsPath = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[PathSegment | AbsoluteFsPath]
+  @scala.annotation.targetName("relative_PathSegment_PathSegment")
+  inline def relative(from: BrandedPath["PathSegment"], to: BrandedPath["PathSegment"]): PathSegment | AbsoluteFsPath = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[PathSegment | AbsoluteFsPath]
+  @scala.annotation.targetName("relative_AbsoluteFsPath_AbsoluteFsPath")
+  inline def relative(from: BrandedPath["AbsoluteFsPath"], to: BrandedPath["AbsoluteFsPath"]): PathSegment | AbsoluteFsPath = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[PathSegment | AbsoluteFsPath]
   
   inline def relativeFrom(path: String): PathSegment = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeFrom")(path.asInstanceOf[js.Any]).asInstanceOf[PathSegment]
-  
-  inline def relative_AbsoluteFsPath(
-    from: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath],
-    to: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath]
-  ): PathSegment | AbsoluteFsPath = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[PathSegment | AbsoluteFsPath]
-  
-  inline def relative_PathSegment(
-    from: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment],
-    to: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment]
-  ): PathSegment | AbsoluteFsPath = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[PathSegment | AbsoluteFsPath]
   
   inline def resolve(basePath: String, paths: String*): AbsoluteFsPath = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(scala.List(basePath.asInstanceOf[js.Any]).`++`(paths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[AbsoluteFsPath]
   

@@ -1,13 +1,16 @@
 package typings.angularRouter.mod
 
+import org.scalablytyped.runtime.Instantiable6
+import typings.angularCommon.mod.LocationStrategy
+import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.ModuleWithProviders
+import typings.angularCore.mod.Renderer2
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectorDeclaration
 import typings.angularCore.mod.ɵɵNgModuleDeclaration
 import typings.angularRouter.anon.Optional
 import typings.angularRouter.anon.TypeofRouterLink
 import typings.angularRouter.anon.TypeofRouterLinkActive
-import typings.angularRouter.anon.TypeofRouterLinkWithHref
 import typings.angularRouter.anon.TypeofRouterOutlet
 import typings.angularRouter.anon.TypeofɵEmptyOutletCompone
 import org.scalablytyped.runtime.StObject
@@ -80,17 +83,31 @@ object RouterModule {
   def ɵmod: ɵɵNgModuleDeclaration[
     RouterModule, 
     scala.Nothing, 
-    js.Tuple5[
+    js.Tuple4[
       TypeofRouterOutlet, 
-      TypeofRouterLink, 
-      TypeofRouterLinkWithHref, 
+      TypeofRouterLink & (Instantiable6[
+        /* router */ Router, 
+        /* route */ ActivatedRoute, 
+        /* tabIndexAttribute */ js.UndefOr[String | Null], 
+        /* renderer */ Renderer2, 
+        /* el */ ElementRef[Any], 
+        /* locationStrategy */ js.UndefOr[LocationStrategy], 
+        RouterLink
+      ]), 
       TypeofRouterLinkActive, 
       TypeofɵEmptyOutletCompone
     ], 
-    js.Tuple5[
+    js.Tuple4[
       TypeofRouterOutlet, 
-      TypeofRouterLink, 
-      TypeofRouterLinkWithHref, 
+      TypeofRouterLink & (Instantiable6[
+        /* router */ Router, 
+        /* route */ ActivatedRoute, 
+        /* tabIndexAttribute */ js.UndefOr[String | Null], 
+        /* renderer */ Renderer2, 
+        /* el */ ElementRef[Any], 
+        /* locationStrategy */ js.UndefOr[LocationStrategy], 
+        RouterLink
+      ]), 
       TypeofRouterLinkActive, 
       TypeofɵEmptyOutletCompone
     ]
@@ -99,17 +116,31 @@ object RouterModule {
     x: ɵɵNgModuleDeclaration[
       RouterModule, 
       scala.Nothing, 
-      js.Tuple5[
+      js.Tuple4[
         TypeofRouterOutlet, 
-        TypeofRouterLink, 
-        TypeofRouterLinkWithHref, 
+        TypeofRouterLink & (Instantiable6[
+          /* router */ Router, 
+          /* route */ ActivatedRoute, 
+          /* tabIndexAttribute */ js.UndefOr[String | Null], 
+          /* renderer */ Renderer2, 
+          /* el */ ElementRef[Any], 
+          /* locationStrategy */ js.UndefOr[LocationStrategy], 
+          RouterLink
+        ]), 
         TypeofRouterLinkActive, 
         TypeofɵEmptyOutletCompone
       ], 
-      js.Tuple5[
+      js.Tuple4[
         TypeofRouterOutlet, 
-        TypeofRouterLink, 
-        TypeofRouterLinkWithHref, 
+        TypeofRouterLink & (Instantiable6[
+          /* router */ Router, 
+          /* route */ ActivatedRoute, 
+          /* tabIndexAttribute */ js.UndefOr[String | Null], 
+          /* renderer */ Renderer2, 
+          /* el */ ElementRef[Any], 
+          /* locationStrategy */ js.UndefOr[LocationStrategy], 
+          RouterLink
+        ]), 
         TypeofRouterLinkActive, 
         TypeofɵEmptyOutletCompone
       ]

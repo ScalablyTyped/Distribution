@@ -1,7 +1,5 @@
 package typings.antd
 
-import typings.antd.antdStrings.input
-import typings.antd.antdStrings.text_
 import typings.antd.libConfigProviderContextMod.DirectionType
 import typings.antd.libConfigProviderSizeContextMod.SizeType
 import typings.antd.libFormContextMod.FormItemStatusContextProps
@@ -44,7 +42,7 @@ object libInputClearableLabeledInputMod {
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var inputType: text_ | input
+    var inputType: "text" | "input"
     
     var prefixCls: String
     
@@ -60,7 +58,7 @@ object libInputClearableLabeledInputMod {
       bordered: Boolean,
       element: ReactElement,
       handleReset: typings.react.mod.MouseEvent[HTMLElement, MouseEvent] => Unit,
-      inputType: text_ | input,
+      inputType: "text" | "input",
       prefixCls: String
     ): BasicProps = {
       val __obj = js.Dynamic.literal(bordered = bordered.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], handleReset = js.Any.fromFunction1(handleReset), inputType = inputType.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
@@ -99,7 +97,7 @@ object libInputClearableLabeledInputMod {
       
       inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      inline def setInputType(value: text_ | input): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
+      inline def setInputType(value: "text" | "input"): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
@@ -141,7 +139,7 @@ object libInputClearableLabeledInputMod {
       bordered: Boolean,
       element: ReactElement,
       handleReset: typings.react.mod.MouseEvent[HTMLElement, MouseEvent] => Unit,
-      inputType: text_ | input,
+      inputType: "text" | "input",
       prefixCls: String
     ): ClearableInputProps = {
       val __obj = js.Dynamic.literal(bordered = bordered.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], handleReset = js.Any.fromFunction1(handleReset), inputType = inputType.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])

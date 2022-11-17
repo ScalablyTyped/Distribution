@@ -1,10 +1,6 @@
 package typings.rcMotion
 
 import typings.rcMotion.anon.Status
-import typings.rcMotion.rcMotionStrings.add
-import typings.rcMotion.rcMotionStrings.keep
-import typings.rcMotion.rcMotionStrings.remove
-import typings.rcMotion.rcMotionStrings.removed
 import typings.react.mod.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,19 +14,19 @@ object esUtilDiffMod {
   
   @JSImport("rc-motion/es/util/diff", "STATUS_ADD")
   @js.native
-  val STATUS_ADD: add = js.native
+  val STATUS_ADD: "add" = js.native
   
   @JSImport("rc-motion/es/util/diff", "STATUS_KEEP")
   @js.native
-  val STATUS_KEEP: keep = js.native
+  val STATUS_KEEP: "keep" = js.native
   
   @JSImport("rc-motion/es/util/diff", "STATUS_REMOVE")
   @js.native
-  val STATUS_REMOVE: remove = js.native
+  val STATUS_REMOVE: "remove" = js.native
   
   @JSImport("rc-motion/es/util/diff", "STATUS_REMOVED")
   @js.native
-  val STATUS_REMOVED: removed = js.native
+  val STATUS_REMOVED: "removed" = js.native
   
   inline def diffKeys(): js.Array[KeyObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("diffKeys")().asInstanceOf[js.Array[KeyObject]]
   inline def diffKeys(prevKeys: js.Array[KeyObject]): js.Array[KeyObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("diffKeys")(prevKeys.asInstanceOf[js.Any]).asInstanceOf[js.Array[KeyObject]]
@@ -42,23 +38,17 @@ object esUtilDiffMod {
   
   inline def wrapKeyToObject(key: Key): Status = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapKeyToObject")(key.asInstanceOf[js.Any]).asInstanceOf[Status]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcMotion.rcMotionStrings.add
-    - typings.rcMotion.rcMotionStrings.keep
-    - typings.rcMotion.rcMotionStrings.remove
-    - typings.rcMotion.rcMotionStrings.removed
-  */
-  trait DiffStatus extends StObject
   object DiffStatus {
     
-    inline def add: typings.rcMotion.rcMotionStrings.add = "add".asInstanceOf[typings.rcMotion.rcMotionStrings.add]
+    inline def add: "add" = "add".asInstanceOf["add"]
     
-    inline def keep: typings.rcMotion.rcMotionStrings.keep = "keep".asInstanceOf[typings.rcMotion.rcMotionStrings.keep]
+    inline def keep: "keep" = "keep".asInstanceOf["keep"]
     
-    inline def remove: typings.rcMotion.rcMotionStrings.remove = "remove".asInstanceOf[typings.rcMotion.rcMotionStrings.remove]
+    inline def remove: "remove" = "remove".asInstanceOf["remove"]
     
-    inline def removed: typings.rcMotion.rcMotionStrings.removed = "removed".asInstanceOf[typings.rcMotion.rcMotionStrings.removed]
+    inline def removed: "removed" = "removed".asInstanceOf["removed"]
   }
+  type DiffStatus = "add" | "keep" | "remove" | "removed"
   
   trait KeyObject extends StObject {
     

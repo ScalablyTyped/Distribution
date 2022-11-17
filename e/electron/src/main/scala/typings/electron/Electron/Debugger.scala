@@ -1,7 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.detach
-import typings.electron.electronStrings.message
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Debugger extends EventEmitter {
   
   @JSName("addListener")
-  def addListener_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_detach")
+  def addListener(event: "detach", listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_message(
-    event: message,
+  @scala.annotation.targetName("addListener_message")
+  def addListener(
+    event: "message",
     listener: js.Function4[/* event */ Event, /* method */ String, /* params */ Any, /* sessionId */ String, Unit]
   ): this.type = js.native
   
@@ -40,29 +40,35 @@ trait Debugger extends EventEmitter {
     * `webContents` is closed or devtools is invoked for the attached `webContents`.
     */
   @JSName("on")
-  def on_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_detach")
+  def on(event: "detach", listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
   /**
     * Emitted whenever the debugging target issues an instrumentation event.
     */
   @JSName("on")
-  def on_message(
-    event: message,
+  @scala.annotation.targetName("on_message")
+  def on(
+    event: "message",
     listener: js.Function4[/* event */ Event, /* method */ String, /* params */ Any, /* sessionId */ String, Unit]
   ): this.type = js.native
   
   @JSName("once")
-  def once_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_detach")
+  def once(event: "detach", listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
   @JSName("once")
-  def once_message(
-    event: message,
+  @scala.annotation.targetName("once_message")
+  def once(
+    event: "message",
     listener: js.Function4[/* event */ Event, /* method */ String, /* params */ Any, /* sessionId */ String, Unit]
   ): this.type = js.native
   
   @JSName("removeListener")
-  def removeListener_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("removeListener_detach")
+  def removeListener(event: "detach", listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_message(
-    event: message,
+  @scala.annotation.targetName("removeListener_message")
+  def removeListener(
+    event: "message",
     listener: js.Function4[/* event */ Event, /* method */ String, /* params */ Any, /* sessionId */ String, Unit]
   ): this.type = js.native
   

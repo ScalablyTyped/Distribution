@@ -1,8 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.audio
-import typings.electron.electronStrings.unknown_
-import typings.electron.electronStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +20,7 @@ trait PermissionCheckHandlerHandlerDetails extends StObject {
   /**
     * The type of media access being requested, can be `video`, `audio` or `unknown`
     */
-  var mediaType: js.UndefOr[video | audio | unknown_] = js.undefined
+  var mediaType: js.UndefOr["video" | "audio" | "unknown"] = js.undefined
   
   /**
     * The last URL the requesting frame loaded.  This is not provided for cross-origin
@@ -51,7 +48,7 @@ object PermissionCheckHandlerHandlerDetails {
     
     inline def setIsMainFrame(value: Boolean): Self = StObject.set(x, "isMainFrame", value.asInstanceOf[js.Any])
     
-    inline def setMediaType(value: video | audio | unknown_): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: "video" | "audio" | "unknown"): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
     

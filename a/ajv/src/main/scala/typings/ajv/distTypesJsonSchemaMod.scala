@@ -1,8 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ajv.ajvBooleans.`false`
-import typings.ajv.ajvBooleans.`true`
 import typings.ajv.anon.AllOf
 import typings.ajv.anon.AnyOf
 import typings.ajv.anon.Dictkeyword
@@ -15,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesJsonSchemaMod {
   
-  type JSONSchemaType[T] = StrictNullChecksWrapper[typings.ajv.ajvStrings.JSONSchemaType, UncheckedJSONSchemaType[T, `false`]]
+  type JSONSchemaType[T] = StrictNullChecksWrapper["JSONSchemaType", UncheckedJSONSchemaType[T, false]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -95,11 +93,11 @@ object distTypesJsonSchemaMod {
     }
   }
   
-  type PartialSchema[T] = StrictNullChecksWrapper[typings.ajv.ajvStrings.PartialSchema, UncheckedPartialSchema[T]]
+  type PartialSchema[T] = StrictNullChecksWrapper["PartialSchema", UncheckedPartialSchema[T]]
   
-  type PropertiesSchema[T] = StrictNullChecksWrapper[typings.ajv.ajvStrings.PropertiesSchema, UncheckedPropertiesSchema[T]]
+  type PropertiesSchema[T] = StrictNullChecksWrapper["PropertiesSchema", UncheckedPropertiesSchema[T]]
   
-  type RequiredMembers[T] = StrictNullChecksWrapper[typings.ajv.ajvStrings.RequiredMembers, UncheckedRequiredMembers[T]]
+  type RequiredMembers[T] = StrictNullChecksWrapper["RequiredMembers", UncheckedRequiredMembers[T]]
   
   /** 
   NOTE: Rewritten from type alias:
@@ -110,7 +108,7 @@ object distTypesJsonSchemaMod {
   - ajv.ajv/dist/types/json-schema.Known
   - ajv.ajv/dist/types/json-schema.SomeJSONSchema
   */
-  type SomeJSONSchema = UncheckedJSONSchemaType[Any, `true`]
+  type SomeJSONSchema = UncheckedJSONSchemaType[Any, true]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -162,7 +160,7 @@ object distTypesJsonSchemaMod {
     /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? ajv.ajv/dist/types/json-schema.NumberKeywords : T extends string ? ajv.ajv/dist/types/json-schema.StringKeywords : T extends boolean ? {} : never */ js.Any
   ]) & Dictkeyword) | ((/* import warning: importer.ImportType#apply Failed type conversion: T extends number ? {  type :ajv.ajv/dist/types/json-schema.JSONType<'number' | 'integer', IsPartial>} & ajv.ajv/dist/types/json-schema.NumberKeywords : T extends string ? {  type :ajv.ajv/dist/types/json-schema.JSONType<'string', IsPartial>} & ajv.ajv/dist/types/json-schema.StringKeywords : T extends boolean ? {  type :ajv.ajv/dist/types/json-schema.JSONType<'boolean', IsPartial>} : T extends [any, ...std.Array<any>] ? {  maxItems :T['length']} & {  type :ajv.ajv/dist/types/json-schema.JSONType<'array', IsPartial>,   items :{readonly [ K in keyof T ]: -? ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<T[K], false> & ajv.ajv/dist/types/json-schema.Nullable<T[K]>} & {  length :T['length']},   minItems :T['length']} | {  additionalItems :false} & {  type :ajv.ajv/dist/types/json-schema.JSONType<'array', IsPartial>,   items :{readonly [ K in keyof T ]: -? ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<T[K], false> & ajv.ajv/dist/types/json-schema.Nullable<T[K]>} & {  length :T['length']},   minItems :T['length']} : T extends std.Array<any> ? {  type :ajv.ajv/dist/types/json-schema.JSONType<'array', IsPartial>,   items :ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<T[0], false>,   contains :ajv.ajv/dist/types/json-schema.UncheckedPartialSchema<T[0]> | undefined,   minItems :number | undefined,   maxItems :number | undefined,   minContains :number | undefined,   maxContains :number | undefined,   uniqueItems :true | undefined,   additionalItems :never | undefined} : T extends std.Record<string, any> ? {  type :ajv.ajv/dist/types/json-schema.JSONType<'object', IsPartial>,   additionalProperties :boolean | ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<T[string], false> | undefined,   unevaluatedProperties :boolean | ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<T[string], false> | undefined,   properties :IsPartial extends true ? std.Partial<ajv.ajv/dist/types/json-schema.UncheckedPropertiesSchema<T>> : ajv.ajv/dist/types/json-schema.UncheckedPropertiesSchema<T> | undefined,   patternProperties :std.Record<string, ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<T[string], false>> | undefined,   propertyNames :std.Omit<ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<string, false>, 'type'> & {  type :'string' | undefined} | undefined,   dependencies :{[ K in keyof T ]:? std.Readonly<std.Array<keyof T>> | ajv.ajv/dist/types/json-schema.UncheckedPartialSchema<T>} | undefined,   dependentRequired :{[ K in keyof T ]:? std.Readonly<std.Array<keyof T>>} | undefined,   dependentSchemas :{[ K in keyof T ]:? ajv.ajv/dist/types/json-schema.UncheckedPartialSchema<T>} | undefined,   minProperties :number | undefined,   maxProperties :number | undefined} & IsPartial extends true ? {  required :std.Readonly<std.Array<keyof T>>} : [ajv.ajv/dist/types/json-schema.UncheckedRequiredMembers<T>] extends [never] ? {  required :std.Readonly<std.Array<ajv.ajv/dist/types/json-schema.UncheckedRequiredMembers<T>>> | undefined} : {  required :std.Readonly<std.Array<ajv.ajv/dist/types/json-schema.UncheckedRequiredMembers<T>>>} : T extends null ? {  type :ajv.ajv/dist/types/json-schema.JSONType<'null', IsPartial>,   nullable :true} : never */ js.Any) & AllOf[T] & Dictkeyword)
   
-  type UncheckedPartialSchema[T] = Partial[UncheckedJSONSchemaType[T, `true`]]
+  type UncheckedPartialSchema[T] = Partial[UncheckedJSONSchemaType[T, true]]
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.

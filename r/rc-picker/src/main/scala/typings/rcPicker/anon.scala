@@ -6,7 +6,6 @@ import typings.rcPicker.esInterfaceMod.NullableDateType
 import typings.rcPicker.esInterfaceMod.PanelMode
 import typings.rcPicker.esInterfaceMod.PickerMode
 import typings.rcPicker.esInterfaceMod.RangeValue
-import typings.rcPicker.rcPickerStrings.time
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MutableRefObject
@@ -58,14 +57,14 @@ object anon {
     
     var generateConfig: typings.rcPicker.esGenerateMod.GenerateConfig[DateType]
     
-    var mode: Omit[PanelMode, time]
+    var mode: Omit[PanelMode, "time"]
   }
   object CellDate {
     
     inline def apply[DateType](
       cellDate: DateType,
       generateConfig: typings.rcPicker.esGenerateMod.GenerateConfig[DateType],
-      mode: Omit[PanelMode, time]
+      mode: Omit[PanelMode, "time"]
     ): CellDate[DateType] = {
       val __obj = js.Dynamic.literal(cellDate = cellDate.asInstanceOf[js.Any], generateConfig = generateConfig.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
       __obj.asInstanceOf[CellDate[DateType]]
@@ -81,7 +80,7 @@ object anon {
       
       inline def setGenerateConfig(value: typings.rcPicker.esGenerateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
-      inline def setMode(value: Omit[PanelMode, time]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Omit[PanelMode, "time"]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
   }
   

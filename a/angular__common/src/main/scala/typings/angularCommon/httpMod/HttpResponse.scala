@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Construct a new `HttpResponse`.
   */
-open class HttpResponse[T] ()
-  extends HttpResponseBase
-     with HttpEvent[T] {
+open class HttpResponse[T] () extends HttpResponseBase {
   def this(init: StatusText[T]) = this()
   
   /**

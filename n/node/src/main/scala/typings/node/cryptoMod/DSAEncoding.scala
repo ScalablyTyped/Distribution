@@ -4,14 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.node.nodeStrings.der
-  - typings.node.nodeStrings.`ieee-p1363`
-*/
-trait DSAEncoding extends StObject
 object DSAEncoding {
   
-  inline def der: typings.node.nodeStrings.der = "der".asInstanceOf[typings.node.nodeStrings.der]
+  inline def der: "der" = "der".asInstanceOf["der"]
   
-  inline def `ieee-p1363`: typings.node.nodeStrings.`ieee-p1363` = "ieee-p1363".asInstanceOf[typings.node.nodeStrings.`ieee-p1363`]
+  inline def `ieee-p1363`: "ieee-p1363" = "ieee-p1363".asInstanceOf["ieee-p1363"]
 }

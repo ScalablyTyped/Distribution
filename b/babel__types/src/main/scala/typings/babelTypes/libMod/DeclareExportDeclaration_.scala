@@ -1,18 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.DeclareExportDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DeclareExportDeclaration_
   extends StObject
-     with BaseNode
-     with Declaration
-     with Flow
-     with FlowDeclaration
-     with Node
-     with Statement {
+     with BaseNode {
   
   var default: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -23,7 +17,7 @@ trait DeclareExportDeclaration_
   var specifiers: js.UndefOr[(js.Array[ExportSpecifier_ | ExportNamespaceSpecifier_]) | Null] = js.undefined
   
   @JSName("type")
-  var type_DeclareExportDeclaration_ : DeclareExportDeclaration
+  var type_DeclareExportDeclaration_ : "DeclareExportDeclaration"
 }
 object DeclareExportDeclaration_ {
   
@@ -61,6 +55,6 @@ object DeclareExportDeclaration_ {
     
     inline def setSpecifiersVarargs(value: (ExportSpecifier_ | ExportNamespaceSpecifier_)*): Self = StObject.set(x, "specifiers", js.Array(value*))
     
-    inline def setType(value: DeclareExportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "DeclareExportDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

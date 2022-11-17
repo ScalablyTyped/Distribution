@@ -1,19 +1,15 @@
 package typings.angularCompilerCli.anon
 
-import typings.angularCompilerCli.angularCompilerCliBooleans.`false`
-import typings.angularCompilerCli.ngccSrcPackagesTransformerMod.TransformResult
 import typings.typescript.mod.Diagnostic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Success
-  extends StObject
-     with TransformResult {
+trait Success extends StObject {
   
   var diagnostics: js.Array[Diagnostic]
   
-  var success: `false`
+  var success: false
 }
 object Success {
   
@@ -28,6 +24,6 @@ object Success {
     
     inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value*))
     
-    inline def setSuccess(value: `false`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: false): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

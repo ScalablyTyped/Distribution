@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PropertyIdentifier
   extends StObject
-     with ExpressionIdentifier
-     with TopLevelIdentifier {
+     with ExpressionIdentifier {
   
   @JSName("kind")
   var kind_PropertyIdentifier: Property

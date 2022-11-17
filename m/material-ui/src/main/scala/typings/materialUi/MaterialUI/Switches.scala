@@ -1,7 +1,5 @@
 package typings.materialUi.MaterialUI
 
-import typings.materialUi.materialUiStrings.left
-import typings.materialUi.materialUiStrings.right
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.FormEvent
@@ -38,7 +36,7 @@ object Switches {
     
     var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var labelPosition: js.UndefOr[left | right] = js.undefined
+    var labelPosition: js.UndefOr["left" | "right"] = js.undefined
     
     var labelStyle: js.UndefOr[CSSProperties] = js.undefined
     
@@ -72,7 +70,7 @@ object Switches {
       
       inline def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
       
-      inline def setLabelPosition(value: left | right): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+      inline def setLabelPosition(value: "left" | "right"): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
       
       inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
       
@@ -283,7 +281,7 @@ object Switches {
     
     var defaultSelected: js.UndefOr[Any] = js.undefined
     
-    var labelPosition: js.UndefOr[left | right] = js.undefined
+    var labelPosition: js.UndefOr["left" | "right"] = js.undefined
     
     var name: String
     
@@ -314,7 +312,7 @@ object Switches {
       
       inline def setDefaultSelectedUndefined: Self = StObject.set(x, "defaultSelected", js.undefined)
       
-      inline def setLabelPosition(value: left | right): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+      inline def setLabelPosition(value: "left" | "right"): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
       
       inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
       
@@ -416,7 +414,7 @@ object Switches {
     
     var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var labelPosition: js.UndefOr[left | right] = js.undefined
+    var labelPosition: js.UndefOr["left" | "right"] = js.undefined
     
     var labelStyle: js.UndefOr[CSSProperties] = js.undefined
     
@@ -463,7 +461,7 @@ object Switches {
       
       inline def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
       
-      inline def setLabelPosition(value: left | right): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+      inline def setLabelPosition(value: "left" | "right"): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
       
       inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
       

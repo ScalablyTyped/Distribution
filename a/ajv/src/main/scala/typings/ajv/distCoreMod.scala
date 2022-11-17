@@ -3,17 +3,6 @@ package typings.ajv
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.StringDictionary
-import typings.ajv.ajvBooleans.`false`
-import typings.ajv.ajvBooleans.`true`
-import typings.ajv.ajvStrings.$id
-import typings.ajv.ajvStrings.all
-import typings.ajv.ajvStrings.array
-import typings.ajv.ajvStrings.date
-import typings.ajv.ajvStrings.empty
-import typings.ajv.ajvStrings.failing
-import typings.ajv.ajvStrings.id
-import typings.ajv.ajvStrings.log
-import typings.ajv.ajvStrings.string
 import typings.ajv.anon.PartialErrorObjectstringR
 import typings.ajv.distCompileCodegenCodeMod.Code
 import typings.ajv.distCompileCodegenCodeMod.CodeArg
@@ -149,35 +138,43 @@ object distCoreMod {
     def _addSchema(schema: AnySchema): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Boolean): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Boolean, baseId: String): SchemaEnv = js.native
+    @JSName("_addSchema")
+    @scala.annotation.targetName("_addSchema_log")
+    def _addSchema(schema: AnySchema, meta: Boolean, baseId: String, validateSchema: "log"): SchemaEnv = js.native
+    @JSName("_addSchema")
+    @scala.annotation.targetName("_addSchema_log")
+    def _addSchema(schema: AnySchema, meta: Boolean, baseId: String, validateSchema: "log", addSchema: Boolean): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Boolean, baseId: String, validateSchema: Boolean): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Boolean, baseId: String, validateSchema: Boolean, addSchema: Boolean): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Boolean, baseId: String, validateSchema: Unit, addSchema: Boolean): SchemaEnv = js.native
+    @JSName("_addSchema")
+    @scala.annotation.targetName("_addSchema_log")
+    def _addSchema(schema: AnySchema, meta: Boolean, baseId: Unit, validateSchema: "log"): SchemaEnv = js.native
+    @JSName("_addSchema")
+    @scala.annotation.targetName("_addSchema_log")
+    def _addSchema(schema: AnySchema, meta: Boolean, baseId: Unit, validateSchema: "log", addSchema: Boolean): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Boolean, baseId: Unit, validateSchema: Boolean): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Boolean, baseId: Unit, validateSchema: Boolean, addSchema: Boolean): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Boolean, baseId: Unit, validateSchema: Unit, addSchema: Boolean): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Unit, baseId: String): SchemaEnv = js.native
+    @JSName("_addSchema")
+    @scala.annotation.targetName("_addSchema_log")
+    def _addSchema(schema: AnySchema, meta: Unit, baseId: String, validateSchema: "log"): SchemaEnv = js.native
+    @JSName("_addSchema")
+    @scala.annotation.targetName("_addSchema_log")
+    def _addSchema(schema: AnySchema, meta: Unit, baseId: String, validateSchema: "log", addSchema: Boolean): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Unit, baseId: String, validateSchema: Boolean): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Unit, baseId: String, validateSchema: Boolean, addSchema: Boolean): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Unit, baseId: String, validateSchema: Unit, addSchema: Boolean): SchemaEnv = js.native
+    @JSName("_addSchema")
+    @scala.annotation.targetName("_addSchema_log")
+    def _addSchema(schema: AnySchema, meta: Unit, baseId: Unit, validateSchema: "log"): SchemaEnv = js.native
+    @JSName("_addSchema")
+    @scala.annotation.targetName("_addSchema_log")
+    def _addSchema(schema: AnySchema, meta: Unit, baseId: Unit, validateSchema: "log", addSchema: Boolean): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Unit, baseId: Unit, validateSchema: Boolean): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Unit, baseId: Unit, validateSchema: Boolean, addSchema: Boolean): SchemaEnv = js.native
     def _addSchema(schema: AnySchema, meta: Unit, baseId: Unit, validateSchema: Unit, addSchema: Boolean): SchemaEnv = js.native
-    @JSName("_addSchema")
-    def _addSchema_log(schema: AnySchema, meta: Boolean, baseId: String, validateSchema: log): SchemaEnv = js.native
-    @JSName("_addSchema")
-    def _addSchema_log(schema: AnySchema, meta: Boolean, baseId: String, validateSchema: log, addSchema: Boolean): SchemaEnv = js.native
-    @JSName("_addSchema")
-    def _addSchema_log(schema: AnySchema, meta: Boolean, baseId: Unit, validateSchema: log): SchemaEnv = js.native
-    @JSName("_addSchema")
-    def _addSchema_log(schema: AnySchema, meta: Boolean, baseId: Unit, validateSchema: log, addSchema: Boolean): SchemaEnv = js.native
-    @JSName("_addSchema")
-    def _addSchema_log(schema: AnySchema, meta: Unit, baseId: String, validateSchema: log): SchemaEnv = js.native
-    @JSName("_addSchema")
-    def _addSchema_log(schema: AnySchema, meta: Unit, baseId: String, validateSchema: log, addSchema: Boolean): SchemaEnv = js.native
-    @JSName("_addSchema")
-    def _addSchema_log(schema: AnySchema, meta: Unit, baseId: Unit, validateSchema: log): SchemaEnv = js.native
-    @JSName("_addSchema")
-    def _addSchema_log(schema: AnySchema, meta: Unit, baseId: Unit, validateSchema: log, addSchema: Boolean): SchemaEnv = js.native
     
     def _addVocabularies(): Unit = js.native
     
@@ -206,16 +203,18 @@ object distCoreMod {
     
     def addMetaSchema(schema: AnySchemaObject): Ajv = js.native
     def addMetaSchema(schema: AnySchemaObject, key: String): Ajv = js.native
+    @JSName("addMetaSchema")
+    @scala.annotation.targetName("addMetaSchema_log")
+    def addMetaSchema(schema: AnySchemaObject, key: String, // schema key
+    _validateSchema: "log"): Ajv = js.native
     def addMetaSchema(schema: AnySchemaObject, key: String, // schema key
     _validateSchema: Boolean): Ajv = js.native
+    @JSName("addMetaSchema")
+    @scala.annotation.targetName("addMetaSchema_log")
+    def addMetaSchema(schema: AnySchemaObject, key: Unit, // schema key
+    _validateSchema: "log"): Ajv = js.native
     def addMetaSchema(schema: AnySchemaObject, key: Unit, // schema key
     _validateSchema: Boolean): Ajv = js.native
-    @JSName("addMetaSchema")
-    def addMetaSchema_log(schema: AnySchemaObject, key: String, // schema key
-    _validateSchema: log): Ajv = js.native
-    @JSName("addMetaSchema")
-    def addMetaSchema_log(schema: AnySchemaObject, key: Unit, // schema key
-    _validateSchema: log): Ajv = js.native
     
     def addSchema(schema: js.Array[AnySchema]): Ajv = js.native
     def addSchema(schema: js.Array[AnySchema], // If array is passed, `key` will be ignored
@@ -227,6 +226,17 @@ object distCoreMod {
       // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
     _meta: Boolean
     ): Ajv = js.native
+    @JSName("addSchema")
+    @scala.annotation.targetName("addSchema_log")
+    def addSchema(
+      schema: js.Array[AnySchema],
+      // If array is passed, `key` will be ignored
+    key: String,
+      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
+    _meta: Boolean,
+      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
+    _validateSchema: "log"
+    ): Ajv = js.native
     def addSchema(
       schema: js.Array[AnySchema],
       // If array is passed, `key` will be ignored
@@ -235,6 +245,17 @@ object distCoreMod {
     _meta: Boolean,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: Boolean
+    ): Ajv = js.native
+    @JSName("addSchema")
+    @scala.annotation.targetName("addSchema_log")
+    def addSchema(
+      schema: js.Array[AnySchema],
+      // If array is passed, `key` will be ignored
+    key: String,
+      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
+    _meta: Unit,
+      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
+    _validateSchema: "log"
     ): Ajv = js.native
     def addSchema(
       schema: js.Array[AnySchema],
@@ -252,6 +273,17 @@ object distCoreMod {
       // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
     _meta: Boolean
     ): Ajv = js.native
+    @JSName("addSchema")
+    @scala.annotation.targetName("addSchema_log")
+    def addSchema(
+      schema: js.Array[AnySchema],
+      // If array is passed, `key` will be ignored
+    key: Unit,
+      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
+    _meta: Boolean,
+      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
+    _validateSchema: "log"
+    ): Ajv = js.native
     def addSchema(
       schema: js.Array[AnySchema],
       // If array is passed, `key` will be ignored
@@ -260,6 +292,17 @@ object distCoreMod {
     _meta: Boolean,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: Boolean
+    ): Ajv = js.native
+    @JSName("addSchema")
+    @scala.annotation.targetName("addSchema_log")
+    def addSchema(
+      schema: js.Array[AnySchema],
+      // If array is passed, `key` will be ignored
+    key: Unit,
+      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
+    _meta: Unit,
+      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
+    _validateSchema: "log"
     ): Ajv = js.native
     def addSchema(
       schema: js.Array[AnySchema],
@@ -280,6 +323,17 @@ object distCoreMod {
       // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
     _meta: Boolean
     ): Ajv = js.native
+    @JSName("addSchema")
+    @scala.annotation.targetName("addSchema_log")
+    def addSchema(
+      schema: AnySchema,
+      // If array is passed, `key` will be ignored
+    key: String,
+      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
+    _meta: Boolean,
+      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
+    _validateSchema: "log"
+    ): Ajv = js.native
     def addSchema(
       schema: AnySchema,
       // If array is passed, `key` will be ignored
@@ -288,6 +342,17 @@ object distCoreMod {
     _meta: Boolean,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: Boolean
+    ): Ajv = js.native
+    @JSName("addSchema")
+    @scala.annotation.targetName("addSchema_log")
+    def addSchema(
+      schema: AnySchema,
+      // If array is passed, `key` will be ignored
+    key: String,
+      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
+    _meta: Unit,
+      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
+    _validateSchema: "log"
     ): Ajv = js.native
     def addSchema(
       schema: AnySchema,
@@ -305,6 +370,17 @@ object distCoreMod {
       // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
     _meta: Boolean
     ): Ajv = js.native
+    @JSName("addSchema")
+    @scala.annotation.targetName("addSchema_log")
+    def addSchema(
+      schema: AnySchema,
+      // If array is passed, `key` will be ignored
+    key: Unit,
+      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
+    _meta: Boolean,
+      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
+    _validateSchema: "log"
+    ): Ajv = js.native
     def addSchema(
       schema: AnySchema,
       // If array is passed, `key` will be ignored
@@ -314,6 +390,17 @@ object distCoreMod {
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: Boolean
     ): Ajv = js.native
+    @JSName("addSchema")
+    @scala.annotation.targetName("addSchema_log")
+    def addSchema(
+      schema: AnySchema,
+      // If array is passed, `key` will be ignored
+    key: Unit,
+      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
+    _meta: Unit,
+      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
+    _validateSchema: "log"
+    ): Ajv = js.native
     def addSchema(
       schema: AnySchema,
       // If array is passed, `key` will be ignored
@@ -322,86 +409,6 @@ object distCoreMod {
     _meta: Unit,
       // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
     _validateSchema: Boolean
-    ): Ajv = js.native
-    @JSName("addSchema")
-    def addSchema_log(
-      schema: js.Array[AnySchema],
-      // If array is passed, `key` will be ignored
-    key: String,
-      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
-    _meta: Boolean,
-      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
-    _validateSchema: log
-    ): Ajv = js.native
-    @JSName("addSchema")
-    def addSchema_log(
-      schema: js.Array[AnySchema],
-      // If array is passed, `key` will be ignored
-    key: String,
-      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
-    _meta: Unit,
-      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
-    _validateSchema: log
-    ): Ajv = js.native
-    @JSName("addSchema")
-    def addSchema_log(
-      schema: js.Array[AnySchema],
-      // If array is passed, `key` will be ignored
-    key: Unit,
-      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
-    _meta: Boolean,
-      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
-    _validateSchema: log
-    ): Ajv = js.native
-    @JSName("addSchema")
-    def addSchema_log(
-      schema: js.Array[AnySchema],
-      // If array is passed, `key` will be ignored
-    key: Unit,
-      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
-    _meta: Unit,
-      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
-    _validateSchema: log
-    ): Ajv = js.native
-    @JSName("addSchema")
-    def addSchema_log(
-      schema: AnySchema,
-      // If array is passed, `key` will be ignored
-    key: String,
-      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
-    _meta: Boolean,
-      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
-    _validateSchema: log
-    ): Ajv = js.native
-    @JSName("addSchema")
-    def addSchema_log(
-      schema: AnySchema,
-      // If array is passed, `key` will be ignored
-    key: String,
-      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
-    _meta: Unit,
-      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
-    _validateSchema: log
-    ): Ajv = js.native
-    @JSName("addSchema")
-    def addSchema_log(
-      schema: AnySchema,
-      // If array is passed, `key` will be ignored
-    key: Unit,
-      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
-    _meta: Boolean,
-      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
-    _validateSchema: log
-    ): Ajv = js.native
-    @JSName("addSchema")
-    def addSchema_log(
-      schema: AnySchema,
-      // If array is passed, `key` will be ignored
-    key: Unit,
-      // Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
-    _meta: Unit,
-      // true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
-    _validateSchema: log
     ): Ajv = js.native
     
     def addVocabulary(definitions: Vocabulary): Ajv = js.native
@@ -555,7 +562,7 @@ object distCoreMod {
     
     @JSName("$comment")
     var $comment: js.UndefOr[
-        `true` | (js.Function3[
+        true | (js.Function3[
           /* comment */ String, 
           /* schemaPath */ js.UndefOr[String], 
           /* rootSchema */ js.UndefOr[AnySchemaObject], 
@@ -578,7 +585,7 @@ object distCoreMod {
     
     var code: js.UndefOr[CodeOptions] = js.undefined
     
-    var coerceTypes: js.UndefOr[Boolean | array] = js.undefined
+    var coerceTypes: js.UndefOr[Boolean | "array"] = js.undefined
     
     var defaultMeta: js.UndefOr[String | AnySchemaObject] = js.undefined
     
@@ -600,7 +607,7 @@ object distCoreMod {
     
     var loadSchema: js.UndefOr[js.Function1[/* uri */ String, js.Promise[AnySchemaObject]]] = js.undefined
     
-    var logger: js.UndefOr[Logger | `false`] = js.undefined
+    var logger: js.UndefOr[Logger | false] = js.undefined
     
     var loopEnum: js.UndefOr[Double] = js.undefined
     
@@ -620,27 +627,27 @@ object distCoreMod {
     
     var passContext: js.UndefOr[Boolean] = js.undefined
     
-    var removeAdditional: js.UndefOr[Boolean | all | failing] = js.undefined
+    var removeAdditional: js.UndefOr[Boolean | "all" | "failing"] = js.undefined
     
-    var schemaId: js.UndefOr[id | $id] = js.undefined
+    var schemaId: js.UndefOr["id" | "$id"] = js.undefined
     
     var schemas: js.UndefOr[
         js.Array[AnySchema] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in string ]:? ajv.ajv/dist/types.AnySchema} */ js.Any)
       ] = js.undefined
     
-    var strict: js.UndefOr[Boolean | log] = js.undefined
+    var strict: js.UndefOr[Boolean | "log"] = js.undefined
     
-    var strictNumbers: js.UndefOr[Boolean | log] = js.undefined
+    var strictNumbers: js.UndefOr[Boolean | "log"] = js.undefined
     
-    var strictRequired: js.UndefOr[Boolean | log] = js.undefined
+    var strictRequired: js.UndefOr[Boolean | "log"] = js.undefined
     
-    var strictSchema: js.UndefOr[Boolean | log] = js.undefined
+    var strictSchema: js.UndefOr[Boolean | "log"] = js.undefined
     
-    var strictTuples: js.UndefOr[Boolean | log] = js.undefined
+    var strictTuples: js.UndefOr[Boolean | "log"] = js.undefined
     
-    var strictTypes: js.UndefOr[Boolean | log] = js.undefined
+    var strictTypes: js.UndefOr[Boolean | "log"] = js.undefined
     
-    var timestamp: js.UndefOr[string | date] = js.undefined
+    var timestamp: js.UndefOr["string" | "date"] = js.undefined
     
     var unevaluated: js.UndefOr[Boolean] = js.undefined
     
@@ -648,11 +655,11 @@ object distCoreMod {
     
     var uriResolver: js.UndefOr[UriResolver] = js.undefined
     
-    var useDefaults: js.UndefOr[Boolean | empty] = js.undefined
+    var useDefaults: js.UndefOr[Boolean | "empty"] = js.undefined
     
     var validateFormats: js.UndefOr[Boolean] = js.undefined
     
-    var validateSchema: js.UndefOr[Boolean | log] = js.undefined
+    var validateSchema: js.UndefOr[Boolean | "log"] = js.undefined
     
     var verbose: js.UndefOr[Boolean] = js.undefined
   }
@@ -666,7 +673,7 @@ object distCoreMod {
     extension [Self <: CurrentOptions](x: Self) {
       
       inline def set$comment(
-        value: `true` | (js.Function3[
+        value: true | (js.Function3[
               /* comment */ String, 
               /* schemaPath */ js.UndefOr[String], 
               /* rootSchema */ js.UndefOr[AnySchemaObject], 
@@ -708,7 +715,7 @@ object distCoreMod {
       
       inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      inline def setCoerceTypes(value: Boolean | array): Self = StObject.set(x, "coerceTypes", value.asInstanceOf[js.Any])
+      inline def setCoerceTypes(value: Boolean | "array"): Self = StObject.set(x, "coerceTypes", value.asInstanceOf[js.Any])
       
       inline def setCoerceTypesUndefined: Self = StObject.set(x, "coerceTypes", js.undefined)
       
@@ -752,7 +759,7 @@ object distCoreMod {
       
       inline def setLoadSchemaUndefined: Self = StObject.set(x, "loadSchema", js.undefined)
       
-      inline def setLogger(value: Logger | `false`): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger | false): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
@@ -792,11 +799,11 @@ object distCoreMod {
       
       inline def setPassContextUndefined: Self = StObject.set(x, "passContext", js.undefined)
       
-      inline def setRemoveAdditional(value: Boolean | all | failing): Self = StObject.set(x, "removeAdditional", value.asInstanceOf[js.Any])
+      inline def setRemoveAdditional(value: Boolean | "all" | "failing"): Self = StObject.set(x, "removeAdditional", value.asInstanceOf[js.Any])
       
       inline def setRemoveAdditionalUndefined: Self = StObject.set(x, "removeAdditional", js.undefined)
       
-      inline def setSchemaId(value: id | $id): Self = StObject.set(x, "schemaId", value.asInstanceOf[js.Any])
+      inline def setSchemaId(value: "id" | "$id"): Self = StObject.set(x, "schemaId", value.asInstanceOf[js.Any])
       
       inline def setSchemaIdUndefined: Self = StObject.set(x, "schemaId", js.undefined)
       
@@ -808,31 +815,31 @@ object distCoreMod {
       
       inline def setSchemasVarargs(value: AnySchema*): Self = StObject.set(x, "schemas", js.Array(value*))
       
-      inline def setStrict(value: Boolean | log): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean | "log"): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      inline def setStrictNumbers(value: Boolean | log): Self = StObject.set(x, "strictNumbers", value.asInstanceOf[js.Any])
+      inline def setStrictNumbers(value: Boolean | "log"): Self = StObject.set(x, "strictNumbers", value.asInstanceOf[js.Any])
       
       inline def setStrictNumbersUndefined: Self = StObject.set(x, "strictNumbers", js.undefined)
       
-      inline def setStrictRequired(value: Boolean | log): Self = StObject.set(x, "strictRequired", value.asInstanceOf[js.Any])
+      inline def setStrictRequired(value: Boolean | "log"): Self = StObject.set(x, "strictRequired", value.asInstanceOf[js.Any])
       
       inline def setStrictRequiredUndefined: Self = StObject.set(x, "strictRequired", js.undefined)
       
-      inline def setStrictSchema(value: Boolean | log): Self = StObject.set(x, "strictSchema", value.asInstanceOf[js.Any])
+      inline def setStrictSchema(value: Boolean | "log"): Self = StObject.set(x, "strictSchema", value.asInstanceOf[js.Any])
       
       inline def setStrictSchemaUndefined: Self = StObject.set(x, "strictSchema", js.undefined)
       
-      inline def setStrictTuples(value: Boolean | log): Self = StObject.set(x, "strictTuples", value.asInstanceOf[js.Any])
+      inline def setStrictTuples(value: Boolean | "log"): Self = StObject.set(x, "strictTuples", value.asInstanceOf[js.Any])
       
       inline def setStrictTuplesUndefined: Self = StObject.set(x, "strictTuples", js.undefined)
       
-      inline def setStrictTypes(value: Boolean | log): Self = StObject.set(x, "strictTypes", value.asInstanceOf[js.Any])
+      inline def setStrictTypes(value: Boolean | "log"): Self = StObject.set(x, "strictTypes", value.asInstanceOf[js.Any])
       
       inline def setStrictTypesUndefined: Self = StObject.set(x, "strictTypes", js.undefined)
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      inline def setTimestamp(value: string | date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: "string" | "date"): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
@@ -848,7 +855,7 @@ object distCoreMod {
       
       inline def setUriResolverUndefined: Self = StObject.set(x, "uriResolver", js.undefined)
       
-      inline def setUseDefaults(value: Boolean | empty): Self = StObject.set(x, "useDefaults", value.asInstanceOf[js.Any])
+      inline def setUseDefaults(value: Boolean | "empty"): Self = StObject.set(x, "useDefaults", value.asInstanceOf[js.Any])
       
       inline def setUseDefaultsUndefined: Self = StObject.set(x, "useDefaults", js.undefined)
       
@@ -856,7 +863,7 @@ object distCoreMod {
       
       inline def setValidateFormatsUndefined: Self = StObject.set(x, "validateFormats", js.undefined)
       
-      inline def setValidateSchema(value: Boolean | log): Self = StObject.set(x, "validateSchema", value.asInstanceOf[js.Any])
+      inline def setValidateSchema(value: Boolean | "log"): Self = StObject.set(x, "validateSchema", value.asInstanceOf[js.Any])
       
       inline def setValidateSchemaUndefined: Self = StObject.set(x, "validateSchema", js.undefined)
       
@@ -957,7 +964,7 @@ object distCoreMod {
     
     @JSName("$comment")
     var $comment: js.UndefOr[
-        `true` | (js.Function3[
+        true | (js.Function3[
           /* comment */ String, 
           /* schemaPath */ js.UndefOr[String], 
           /* rootSchema */ js.UndefOr[AnySchemaObject], 
@@ -980,7 +987,7 @@ object distCoreMod {
     
     var code: js.UndefOr[CodeOptions] & InstanceCodeOptions
     
-    var coerceTypes: js.UndefOr[Boolean | array] = js.undefined
+    var coerceTypes: js.UndefOr[Boolean | "array"] = js.undefined
     
     var defaultMeta: js.UndefOr[String | AnySchemaObject] = js.undefined
     
@@ -1008,7 +1015,7 @@ object distCoreMod {
     
     var loadSchema: js.UndefOr[js.Function1[/* uri */ String, js.Promise[AnySchemaObject]]] = js.undefined
     
-    var logger: js.UndefOr[Logger | `false`] = js.undefined
+    var logger: js.UndefOr[Logger | false] = js.undefined
     
     var loopEnum: js.UndefOr[Double] & NonNullable[js.UndefOr[Double]]
     
@@ -1028,27 +1035,27 @@ object distCoreMod {
     
     var passContext: js.UndefOr[Boolean] = js.undefined
     
-    var removeAdditional: js.UndefOr[Boolean | all | failing] = js.undefined
+    var removeAdditional: js.UndefOr[Boolean | "all" | "failing"] = js.undefined
     
-    var schemaId: (js.UndefOr[id | $id]) & (NonNullable[js.UndefOr[id | $id]])
+    var schemaId: (js.UndefOr["id" | "$id"]) & (NonNullable[js.UndefOr["id" | "$id"]])
     
     var schemas: js.UndefOr[
         js.Array[AnySchema] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in string ]:? ajv.ajv/dist/types.AnySchema} */ js.Any)
       ] = js.undefined
     
-    var strict: js.UndefOr[Boolean | log] = js.undefined
+    var strict: js.UndefOr[Boolean | "log"] = js.undefined
     
-    var strictNumbers: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])
+    var strictNumbers: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]])
     
-    var strictRequired: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])
+    var strictRequired: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]])
     
-    var strictSchema: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])
+    var strictSchema: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]])
     
-    var strictTuples: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])
+    var strictTuples: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]])
     
-    var strictTypes: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])
+    var strictTypes: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]])
     
-    var timestamp: js.UndefOr[string | date] = js.undefined
+    var timestamp: js.UndefOr["string" | "date"] = js.undefined
     
     var unevaluated: js.UndefOr[Boolean] = js.undefined
     
@@ -1059,11 +1066,11 @@ object distCoreMod {
     
     var uriResolver: js.UndefOr[UriResolver] & NonNullable[js.UndefOr[UriResolver]]
     
-    var useDefaults: js.UndefOr[Boolean | empty] = js.undefined
+    var useDefaults: js.UndefOr[Boolean | "empty"] = js.undefined
     
     var validateFormats: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]]
     
-    var validateSchema: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])
+    var validateSchema: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]])
     
     var verbose: js.UndefOr[Boolean] = js.undefined
   }
@@ -1078,16 +1085,16 @@ object distCoreMod {
       loopRequired: js.UndefOr[Double] & NonNullable[js.UndefOr[Double]],
       messages: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]],
       meta: (js.UndefOr[SchemaObject | Boolean]) & (NonNullable[js.UndefOr[SchemaObject | Boolean]]),
-      schemaId: (js.UndefOr[id | $id]) & (NonNullable[js.UndefOr[id | $id]]),
-      strictNumbers: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]]),
-      strictRequired: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]]),
-      strictSchema: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]]),
-      strictTuples: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]]),
-      strictTypes: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]]),
+      schemaId: (js.UndefOr["id" | "$id"]) & (NonNullable[js.UndefOr["id" | "$id"]]),
+      strictNumbers: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]]),
+      strictRequired: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]]),
+      strictSchema: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]]),
+      strictTuples: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]]),
+      strictTypes: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]]),
       unicodeRegExp: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]],
       uriResolver: js.UndefOr[UriResolver] & NonNullable[js.UndefOr[UriResolver]],
       validateFormats: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]],
-      validateSchema: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])
+      validateSchema: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]])
     ): InstanceOptions = {
       val __obj = js.Dynamic.literal(addUsedSchema = addUsedSchema.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], inlineRefs = inlineRefs.asInstanceOf[js.Any], int32range = int32range.asInstanceOf[js.Any], loopEnum = loopEnum.asInstanceOf[js.Any], loopRequired = loopRequired.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], schemaId = schemaId.asInstanceOf[js.Any], strictNumbers = strictNumbers.asInstanceOf[js.Any], strictRequired = strictRequired.asInstanceOf[js.Any], strictSchema = strictSchema.asInstanceOf[js.Any], strictTuples = strictTuples.asInstanceOf[js.Any], strictTypes = strictTypes.asInstanceOf[js.Any], unicodeRegExp = unicodeRegExp.asInstanceOf[js.Any], uriResolver = uriResolver.asInstanceOf[js.Any], validateFormats = validateFormats.asInstanceOf[js.Any], validateSchema = validateSchema.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstanceOptions]
@@ -1096,7 +1103,7 @@ object distCoreMod {
     extension [Self <: InstanceOptions](x: Self) {
       
       inline def set$comment(
-        value: `true` | (js.Function3[
+        value: true | (js.Function3[
               /* comment */ String, 
               /* schemaPath */ js.UndefOr[String], 
               /* rootSchema */ js.UndefOr[AnySchemaObject], 
@@ -1134,7 +1141,7 @@ object distCoreMod {
       
       inline def setCode(value: js.UndefOr[CodeOptions] & InstanceCodeOptions): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setCoerceTypes(value: Boolean | array): Self = StObject.set(x, "coerceTypes", value.asInstanceOf[js.Any])
+      inline def setCoerceTypes(value: Boolean | "array"): Self = StObject.set(x, "coerceTypes", value.asInstanceOf[js.Any])
       
       inline def setCoerceTypesUndefined: Self = StObject.set(x, "coerceTypes", js.undefined)
       
@@ -1182,7 +1189,7 @@ object distCoreMod {
       
       inline def setLoadSchemaUndefined: Self = StObject.set(x, "loadSchema", js.undefined)
       
-      inline def setLogger(value: Logger | `false`): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger | false): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
@@ -1214,11 +1221,11 @@ object distCoreMod {
       
       inline def setPassContextUndefined: Self = StObject.set(x, "passContext", js.undefined)
       
-      inline def setRemoveAdditional(value: Boolean | all | failing): Self = StObject.set(x, "removeAdditional", value.asInstanceOf[js.Any])
+      inline def setRemoveAdditional(value: Boolean | "all" | "failing"): Self = StObject.set(x, "removeAdditional", value.asInstanceOf[js.Any])
       
       inline def setRemoveAdditionalUndefined: Self = StObject.set(x, "removeAdditional", js.undefined)
       
-      inline def setSchemaId(value: (js.UndefOr[id | $id]) & (NonNullable[js.UndefOr[id | $id]])): Self = StObject.set(x, "schemaId", value.asInstanceOf[js.Any])
+      inline def setSchemaId(value: (js.UndefOr["id" | "$id"]) & (NonNullable[js.UndefOr["id" | "$id"]])): Self = StObject.set(x, "schemaId", value.asInstanceOf[js.Any])
       
       inline def setSchemas(
         value: js.Array[AnySchema] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in string ]:? ajv.ajv/dist/types.AnySchema} */ js.Any)
@@ -1228,21 +1235,21 @@ object distCoreMod {
       
       inline def setSchemasVarargs(value: AnySchema*): Self = StObject.set(x, "schemas", js.Array(value*))
       
-      inline def setStrict(value: Boolean | log): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean | "log"): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      inline def setStrictNumbers(value: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])): Self = StObject.set(x, "strictNumbers", value.asInstanceOf[js.Any])
+      inline def setStrictNumbers(value: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]])): Self = StObject.set(x, "strictNumbers", value.asInstanceOf[js.Any])
       
-      inline def setStrictRequired(value: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])): Self = StObject.set(x, "strictRequired", value.asInstanceOf[js.Any])
+      inline def setStrictRequired(value: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]])): Self = StObject.set(x, "strictRequired", value.asInstanceOf[js.Any])
       
-      inline def setStrictSchema(value: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])): Self = StObject.set(x, "strictSchema", value.asInstanceOf[js.Any])
+      inline def setStrictSchema(value: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]])): Self = StObject.set(x, "strictSchema", value.asInstanceOf[js.Any])
       
-      inline def setStrictTuples(value: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])): Self = StObject.set(x, "strictTuples", value.asInstanceOf[js.Any])
+      inline def setStrictTuples(value: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]])): Self = StObject.set(x, "strictTuples", value.asInstanceOf[js.Any])
       
-      inline def setStrictTypes(value: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])): Self = StObject.set(x, "strictTypes", value.asInstanceOf[js.Any])
+      inline def setStrictTypes(value: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]])): Self = StObject.set(x, "strictTypes", value.asInstanceOf[js.Any])
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      inline def setTimestamp(value: string | date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: "string" | "date"): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
@@ -1258,13 +1265,13 @@ object distCoreMod {
       
       inline def setUriResolver(value: js.UndefOr[UriResolver] & NonNullable[js.UndefOr[UriResolver]]): Self = StObject.set(x, "uriResolver", value.asInstanceOf[js.Any])
       
-      inline def setUseDefaults(value: Boolean | empty): Self = StObject.set(x, "useDefaults", value.asInstanceOf[js.Any])
+      inline def setUseDefaults(value: Boolean | "empty"): Self = StObject.set(x, "useDefaults", value.asInstanceOf[js.Any])
       
       inline def setUseDefaultsUndefined: Self = StObject.set(x, "useDefaults", js.undefined)
       
       inline def setValidateFormats(value: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "validateFormats", value.asInstanceOf[js.Any])
       
-      inline def setValidateSchema(value: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])): Self = StObject.set(x, "validateSchema", value.asInstanceOf[js.Any])
+      inline def setValidateSchema(value: (js.UndefOr[Boolean | "log"]) & (NonNullable[js.UndefOr[Boolean | "log"]])): Self = StObject.set(x, "validateSchema", value.asInstanceOf[js.Any])
       
       inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
@@ -1337,17 +1344,17 @@ object distCoreMod {
     
     var meta: NonNullable[js.UndefOr[SchemaObject | Boolean]]
     
-    var schemaId: NonNullable[js.UndefOr[id | $id]]
+    var schemaId: NonNullable[js.UndefOr["id" | "$id"]]
     
-    var strictNumbers: NonNullable[js.UndefOr[Boolean | log]]
+    var strictNumbers: NonNullable[js.UndefOr[Boolean | "log"]]
     
-    var strictRequired: NonNullable[js.UndefOr[Boolean | log]]
+    var strictRequired: NonNullable[js.UndefOr[Boolean | "log"]]
     
-    var strictSchema: NonNullable[js.UndefOr[Boolean | log]]
+    var strictSchema: NonNullable[js.UndefOr[Boolean | "log"]]
     
-    var strictTuples: NonNullable[js.UndefOr[Boolean | log]]
+    var strictTuples: NonNullable[js.UndefOr[Boolean | "log"]]
     
-    var strictTypes: NonNullable[js.UndefOr[Boolean | log]]
+    var strictTypes: NonNullable[js.UndefOr[Boolean | "log"]]
     
     var unicodeRegExp: NonNullable[js.UndefOr[Boolean]]
     
@@ -1355,7 +1362,7 @@ object distCoreMod {
     
     var validateFormats: NonNullable[js.UndefOr[Boolean]]
     
-    var validateSchema: NonNullable[js.UndefOr[Boolean | log]]
+    var validateSchema: NonNullable[js.UndefOr[Boolean | "log"]]
   }
   object RequiredInstanceOptions {
     
@@ -1368,16 +1375,16 @@ object distCoreMod {
       loopRequired: NonNullable[js.UndefOr[Double]],
       messages: NonNullable[js.UndefOr[Boolean]],
       meta: NonNullable[js.UndefOr[SchemaObject | Boolean]],
-      schemaId: NonNullable[js.UndefOr[id | $id]],
-      strictNumbers: NonNullable[js.UndefOr[Boolean | log]],
-      strictRequired: NonNullable[js.UndefOr[Boolean | log]],
-      strictSchema: NonNullable[js.UndefOr[Boolean | log]],
-      strictTuples: NonNullable[js.UndefOr[Boolean | log]],
-      strictTypes: NonNullable[js.UndefOr[Boolean | log]],
+      schemaId: NonNullable[js.UndefOr["id" | "$id"]],
+      strictNumbers: NonNullable[js.UndefOr[Boolean | "log"]],
+      strictRequired: NonNullable[js.UndefOr[Boolean | "log"]],
+      strictSchema: NonNullable[js.UndefOr[Boolean | "log"]],
+      strictTuples: NonNullable[js.UndefOr[Boolean | "log"]],
+      strictTypes: NonNullable[js.UndefOr[Boolean | "log"]],
       unicodeRegExp: NonNullable[js.UndefOr[Boolean]],
       uriResolver: NonNullable[js.UndefOr[UriResolver]],
       validateFormats: NonNullable[js.UndefOr[Boolean]],
-      validateSchema: NonNullable[js.UndefOr[Boolean | log]]
+      validateSchema: NonNullable[js.UndefOr[Boolean | "log"]]
     ): RequiredInstanceOptions = {
       val __obj = js.Dynamic.literal(addUsedSchema = addUsedSchema.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], inlineRefs = inlineRefs.asInstanceOf[js.Any], int32range = int32range.asInstanceOf[js.Any], loopEnum = loopEnum.asInstanceOf[js.Any], loopRequired = loopRequired.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], schemaId = schemaId.asInstanceOf[js.Any], strictNumbers = strictNumbers.asInstanceOf[js.Any], strictRequired = strictRequired.asInstanceOf[js.Any], strictSchema = strictSchema.asInstanceOf[js.Any], strictTuples = strictTuples.asInstanceOf[js.Any], strictTypes = strictTypes.asInstanceOf[js.Any], unicodeRegExp = unicodeRegExp.asInstanceOf[js.Any], uriResolver = uriResolver.asInstanceOf[js.Any], validateFormats = validateFormats.asInstanceOf[js.Any], validateSchema = validateSchema.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredInstanceOptions]
@@ -1401,17 +1408,17 @@ object distCoreMod {
       
       inline def setMeta(value: NonNullable[js.UndefOr[SchemaObject | Boolean]]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      inline def setSchemaId(value: NonNullable[js.UndefOr[id | $id]]): Self = StObject.set(x, "schemaId", value.asInstanceOf[js.Any])
+      inline def setSchemaId(value: NonNullable[js.UndefOr["id" | "$id"]]): Self = StObject.set(x, "schemaId", value.asInstanceOf[js.Any])
       
-      inline def setStrictNumbers(value: NonNullable[js.UndefOr[Boolean | log]]): Self = StObject.set(x, "strictNumbers", value.asInstanceOf[js.Any])
+      inline def setStrictNumbers(value: NonNullable[js.UndefOr[Boolean | "log"]]): Self = StObject.set(x, "strictNumbers", value.asInstanceOf[js.Any])
       
-      inline def setStrictRequired(value: NonNullable[js.UndefOr[Boolean | log]]): Self = StObject.set(x, "strictRequired", value.asInstanceOf[js.Any])
+      inline def setStrictRequired(value: NonNullable[js.UndefOr[Boolean | "log"]]): Self = StObject.set(x, "strictRequired", value.asInstanceOf[js.Any])
       
-      inline def setStrictSchema(value: NonNullable[js.UndefOr[Boolean | log]]): Self = StObject.set(x, "strictSchema", value.asInstanceOf[js.Any])
+      inline def setStrictSchema(value: NonNullable[js.UndefOr[Boolean | "log"]]): Self = StObject.set(x, "strictSchema", value.asInstanceOf[js.Any])
       
-      inline def setStrictTuples(value: NonNullable[js.UndefOr[Boolean | log]]): Self = StObject.set(x, "strictTuples", value.asInstanceOf[js.Any])
+      inline def setStrictTuples(value: NonNullable[js.UndefOr[Boolean | "log"]]): Self = StObject.set(x, "strictTuples", value.asInstanceOf[js.Any])
       
-      inline def setStrictTypes(value: NonNullable[js.UndefOr[Boolean | log]]): Self = StObject.set(x, "strictTypes", value.asInstanceOf[js.Any])
+      inline def setStrictTypes(value: NonNullable[js.UndefOr[Boolean | "log"]]): Self = StObject.set(x, "strictTypes", value.asInstanceOf[js.Any])
       
       inline def setUnicodeRegExp(value: NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "unicodeRegExp", value.asInstanceOf[js.Any])
       
@@ -1419,7 +1426,7 @@ object distCoreMod {
       
       inline def setValidateFormats(value: NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "validateFormats", value.asInstanceOf[js.Any])
       
-      inline def setValidateSchema(value: NonNullable[js.UndefOr[Boolean | log]]): Self = StObject.set(x, "validateSchema", value.asInstanceOf[js.Any])
+      inline def setValidateSchema(value: NonNullable[js.UndefOr[Boolean | "log"]]): Self = StObject.set(x, "validateSchema", value.asInstanceOf[js.Any])
     }
   }
 }

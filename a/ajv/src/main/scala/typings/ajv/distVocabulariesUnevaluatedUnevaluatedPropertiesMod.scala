@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.unevaluatedProperties
 import typings.ajv.anon.UnevaluatedProperty
 import typings.ajv.distTypesMod.AnySchema
 import typings.ajv.distTypesMod.CodeKeywordDefinition
@@ -16,7 +15,7 @@ object distVocabulariesUnevaluatedUnevaluatedPropertiesMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type UnevaluatedPropertiesError = ErrorObject[unevaluatedProperties, UnevaluatedProperty, AnySchema]
+  type UnevaluatedPropertiesError = ErrorObject["unevaluatedProperties", UnevaluatedProperty, AnySchema]
   
   type _To = CodeKeywordDefinition
   

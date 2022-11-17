@@ -8,11 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShorthandPropertyAssignment
   extends StObject
      with ObjectLiteralElement
-     with JSDocContainer
-     with HasJSDoc
-     with ObjectBindingOrAssignmentElement
-     with ObjectLiteralElementLike
-     with VariableLikeDeclaration {
+     with JSDocContainer {
   
   val equalsToken: js.UndefOr[EqualsToken] = js.native
   

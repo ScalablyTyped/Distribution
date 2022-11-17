@@ -1,15 +1,12 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`14`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CallExpression
   extends StObject
-     with Node2
-     with JSChildNode
-     with PropsExpression {
+     with Node2 {
   
   var arguments: js.Array[
     String | js.Symbol | JSChildNode | SSRCodegenNode | TemplateChildNode | js.Array[TemplateChildNode]
@@ -18,7 +15,7 @@ trait CallExpression
   var callee: String | js.Symbol
   
   @JSName("type")
-  var type_CallExpression: `14`
+  var type_CallExpression: 14
 }
 object CallExpression {
   
@@ -48,6 +45,6 @@ object CallExpression {
     
     inline def setCallee(value: String | js.Symbol): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `14`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 14): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

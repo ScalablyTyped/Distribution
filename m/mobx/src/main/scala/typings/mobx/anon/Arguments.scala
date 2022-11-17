@@ -1,14 +1,10 @@
 package typings.mobx.anon
 
-import typings.mobx.distCoreSpyMod._PureSpyEvent
-import typings.mobx.mobxStrings.action
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Arguments
-  extends StObject
-     with _PureSpyEvent {
+trait Arguments extends StObject {
   
   var arguments: js.Array[Any]
   
@@ -16,7 +12,7 @@ trait Arguments
   
   var `object`: Any
   
-  var `type`: action
+  var `type`: "action"
 }
 object Arguments {
   
@@ -37,6 +33,6 @@ object Arguments {
     
     inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    inline def setType(value: action): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "action"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

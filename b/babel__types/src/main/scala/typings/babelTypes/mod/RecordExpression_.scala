@@ -1,20 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.RecordExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait RecordExpression_
+trait RecordExpression_
   extends StObject
-     with BaseNode
-     with Expression {
+     with BaseNode {
   
   var properties: js.Array[ObjectProperty_ | SpreadElement_]
   
   @JSName("type")
-  var type_RecordExpression_ : RecordExpression
+  var type_RecordExpression_ : "RecordExpression"
 }
 object RecordExpression_ {
   
@@ -30,6 +27,6 @@ object RecordExpression_ {
     
     inline def setPropertiesVarargs(value: (ObjectProperty_ | SpreadElement_)*): Self = StObject.set(x, "properties", js.Array(value*))
     
-    inline def setType(value: RecordExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "RecordExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

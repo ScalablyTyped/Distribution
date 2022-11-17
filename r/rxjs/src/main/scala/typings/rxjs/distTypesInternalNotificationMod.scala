@@ -6,9 +6,6 @@ import typings.rxjs.distTypesInternalTypesMod.ErrorNotification
 import typings.rxjs.distTypesInternalTypesMod.NextNotification
 import typings.rxjs.distTypesInternalTypesMod.ObservableNotification
 import typings.rxjs.distTypesInternalTypesMod.PartialObserver
-import typings.rxjs.rxjsStrings.C
-import typings.rxjs.rxjsStrings.E
-import typings.rxjs.rxjsStrings.N
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,19 +20,18 @@ object distTypesInternalNotificationMod {
   @js.native
   open class Notification[T] protected () extends StObject {
     /**
-      * Creates a "completion" notification object.
-      * @param kind Always `'C'`
-      * @deprecated Internal implementation detail. Use {@link Notification#createComplete createComplete} instead.
-      */
-    def this(kind: C) = this()
-    /**
       * Creates a "Next" notification object.
       * @param kind Always `'N'`
       * @param value The value to notify with if observed.
       * @deprecated Internal implementation detail. Use {@link Notification#createNext createNext} instead.
       */
-    def this(kind: N) = this()
-    def this(kind: N, value: T) = this()
+    /**
+      * Creates a "completion" notification object.
+      * @param kind Always `'C'`
+      * @deprecated Internal implementation detail. Use {@link Notification#createComplete createComplete} instead.
+      */
+    def this(kind: "N" | "C") = this()
+    def this(kind: "N", value: T) = this()
     /**
       * Creates an "Error" notification object.
       * @param kind Always `'E'`
@@ -43,7 +39,7 @@ object distTypesInternalNotificationMod {
       * @param error The error to notify with if observed.
       * @deprecated Internal implementation detail. Use {@link Notification#createError createError} instead.
       */
-    def this(kind: E, value: Unit, error: Any) = this()
+    def this(kind: "E", value: Unit, error: Any) = this()
     
     /**
       * Executes the next handler if the Notification is of `kind` `"N"`. Otherwise
@@ -124,7 +120,7 @@ object distTypesInternalNotificationMod {
       */
     val hasValue: Boolean = js.native
     
-    val kind: N | E | C = js.native
+    val kind: "N" | "E" | "C" = js.native
     
     /**
       * Executes the appropriate handler on a passed `observer` given the `kind` of notification.

@@ -3,7 +3,6 @@ package typings.angularCompilerCli
 import typings.angularCompiler.mod.R3ClassMetadata
 import typings.angularCompiler.mod.R3DependencyMetadata
 import typings.angularCompiler.mod.R3InjectableMetadata
-import typings.angularCompilerCli.angularCompilerCliStrings.invalid
 import typings.angularCompilerCli.anon.ReadonlyInjectableHandler
 import typings.angularCompilerCli.srcNgtscMetadataMod.InjectableClassRegistry
 import typings.angularCompilerCli.srcNgtscPerfSrcApiMod.PerfRecorder
@@ -84,7 +83,7 @@ object srcNgtscAnnotationsSrcInjectableMod {
     
     var classMetadata: R3ClassMetadata | Null
     
-    var ctorDeps: js.Array[R3DependencyMetadata] | invalid | Null
+    var ctorDeps: js.Array[R3DependencyMetadata] | "invalid" | Null
     
     var meta: R3InjectableMetadata
     
@@ -103,7 +102,7 @@ object srcNgtscAnnotationsSrcInjectableMod {
       
       inline def setClassMetadataNull: Self = StObject.set(x, "classMetadata", null)
       
-      inline def setCtorDeps(value: js.Array[R3DependencyMetadata] | invalid): Self = StObject.set(x, "ctorDeps", value.asInstanceOf[js.Any])
+      inline def setCtorDeps(value: js.Array[R3DependencyMetadata] | "invalid"): Self = StObject.set(x, "ctorDeps", value.asInstanceOf[js.Any])
       
       inline def setCtorDepsNull: Self = StObject.set(x, "ctorDeps", null)
       

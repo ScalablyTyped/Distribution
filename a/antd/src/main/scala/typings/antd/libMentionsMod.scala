@@ -33,17 +33,13 @@ object libMentionsMod extends Shortcut {
     def getMentions(value: String, config: MentionsConfig): js.Array[MentionsEntity] = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.top
-    - typings.antd.antdStrings.bottom
-  */
-  trait MentionPlacement extends StObject
   object MentionPlacement {
     
-    inline def bottom: typings.antd.antdStrings.bottom = "bottom".asInstanceOf[typings.antd.antdStrings.bottom]
+    inline def bottom: "bottom" = "bottom".asInstanceOf["bottom"]
     
-    inline def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
+    inline def top: "top" = "top".asInstanceOf["top"]
   }
+  type MentionPlacement = "top" | "bottom"
   
   trait MentionProps
     extends StObject

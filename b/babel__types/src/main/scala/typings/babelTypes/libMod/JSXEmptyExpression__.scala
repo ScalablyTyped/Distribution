@@ -1,18 +1,15 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.JSXEmptyExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait JSXEmptyExpression__
   extends StObject
-     with BaseNode
-     with JSX
-     with Node {
+     with BaseNode {
   
   @JSName("type")
-  var type_JSXEmptyExpression__ : JSXEmptyExpression
+  var type_JSXEmptyExpression__ : "JSXEmptyExpression"
 }
 object JSXEmptyExpression__ {
   
@@ -24,6 +21,6 @@ object JSXEmptyExpression__ {
   
   extension [Self <: JSXEmptyExpression__](x: Self) {
     
-    inline def setType(value: JSXEmptyExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "JSXEmptyExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

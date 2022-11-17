@@ -4,22 +4,6 @@ import typings.yandexMaps.mod.IClassConstructor
 import typings.yandexMaps.mod.IGeocodeProvider
 import typings.yandexMaps.mod.ILayout
 import typings.yandexMaps.mod.ISearchControlLayout
-import typings.yandexMaps.yandexMapsStrings.auto
-import typings.yandexMaps.yandexMapsStrings.district
-import typings.yandexMaps.yandexMapsStrings.house
-import typings.yandexMaps.yandexMapsStrings.large
-import typings.yandexMaps.yandexMapsStrings.latlong
-import typings.yandexMaps.yandexMapsStrings.left
-import typings.yandexMaps.yandexMapsStrings.locality
-import typings.yandexMaps.yandexMapsStrings.longlat
-import typings.yandexMaps.yandexMapsStrings.medium
-import typings.yandexMaps.yandexMapsStrings.metro
-import typings.yandexMaps.yandexMapsStrings.none
-import typings.yandexMaps.yandexMapsStrings.right
-import typings.yandexMaps.yandexMapsStrings.small
-import typings.yandexMaps.yandexMapsStrings.street
-import typings.yandexMaps.yandexMapsStrings.yandexNumbersignmap
-import typings.yandexMaps.yandexMapsStrings.yandexNumbersignsearch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,13 +16,13 @@ trait FitMaxWidth extends StObject {
   
   var fitMaxWidth: js.UndefOr[Boolean] = js.undefined
   
-  var float: js.UndefOr[none | left | right] = js.undefined
+  var float: js.UndefOr["none" | "left" | "right"] = js.undefined
   
   var floatIndex: js.UndefOr[Double] = js.undefined
   
   var formLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.undefined
   
-  var kind: js.UndefOr[house | street | metro | district | locality] = js.undefined
+  var kind: js.UndefOr["house" | "street" | "metro" | "district" | "locality"] = js.undefined
   
   var layout: js.UndefOr[String | IClassConstructor[ISearchControlLayout]] = js.undefined
   
@@ -62,11 +46,11 @@ trait FitMaxWidth extends StObject {
   
   var position: js.UndefOr[Bottom] = js.undefined
   
-  var provider: js.UndefOr[IGeocodeProvider | yandexNumbersignmap | yandexNumbersignsearch] = js.undefined
+  var provider: js.UndefOr[IGeocodeProvider | "yandex#map" | "yandex#search"] = js.undefined
   
-  var searchCoordOrder: js.UndefOr[latlong | longlat] = js.undefined
+  var searchCoordOrder: js.UndefOr["latlong" | "longlat"] = js.undefined
   
-  var size: js.UndefOr[auto | small | medium | large] = js.undefined
+  var size: js.UndefOr["auto" | "small" | "medium" | "large"] = js.undefined
   
   var strictBounds: js.UndefOr[Boolean] = js.undefined
   
@@ -101,7 +85,7 @@ object FitMaxWidth {
     
     inline def setFitMaxWidthUndefined: Self = StObject.set(x, "fitMaxWidth", js.undefined)
     
-    inline def setFloat(value: none | left | right): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+    inline def setFloat(value: "none" | "left" | "right"): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
     
     inline def setFloatIndex(value: Double): Self = StObject.set(x, "floatIndex", value.asInstanceOf[js.Any])
     
@@ -113,7 +97,7 @@ object FitMaxWidth {
     
     inline def setFormLayoutUndefined: Self = StObject.set(x, "formLayout", js.undefined)
     
-    inline def setKind(value: house | street | metro | district | locality): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "house" | "street" | "metro" | "district" | "locality"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -163,15 +147,15 @@ object FitMaxWidth {
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setProvider(value: IGeocodeProvider | yandexNumbersignmap | yandexNumbersignsearch): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: IGeocodeProvider | "yandex#map" | "yandex#search"): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    inline def setSearchCoordOrder(value: latlong | longlat): Self = StObject.set(x, "searchCoordOrder", value.asInstanceOf[js.Any])
+    inline def setSearchCoordOrder(value: "latlong" | "longlat"): Self = StObject.set(x, "searchCoordOrder", value.asInstanceOf[js.Any])
     
     inline def setSearchCoordOrderUndefined: Self = StObject.set(x, "searchCoordOrder", js.undefined)
     
-    inline def setSize(value: auto | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "auto" | "small" | "medium" | "large"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     

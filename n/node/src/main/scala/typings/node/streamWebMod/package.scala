@@ -19,6 +19,8 @@ type ReadableByteStreamControllerCallback = js.Function1[/* controller */ Readab
 
 type ReadableStreamController[T] = ReadableStreamDefaultController[T]
 
+type ReadableStreamDefaultReadResult[T] = ReadableStreamDefaultReadValueResult[T] | ReadableStreamDefaultReadDoneResult
+
 type ReadableStreamErrorCallback = js.Function1[/* reason */ Any, Unit | PromiseLike[Unit]]
 
 type TransformerFlushCallback[O] = js.Function1[/* controller */ TransformStreamDefaultController[O], Unit | PromiseLike[Unit]]

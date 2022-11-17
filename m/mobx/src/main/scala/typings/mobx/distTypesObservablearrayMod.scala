@@ -6,9 +6,6 @@ import typings.mobx.distTypesInterceptUtilsMod.IInterceptor
 import typings.mobx.distTypesListenUtilsMod.IListenable
 import typings.mobx.distTypesModifiersMod.IEnhancer
 import typings.mobx.distUtilsUtilsMod.Lambda
-import typings.mobx.mobxStrings.array
-import typings.mobx.mobxStrings.splice
-import typings.mobx.mobxStrings.update
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -139,7 +136,7 @@ object distTypesObservablearrayMod {
     
     var `object`: IObservableArray[T]
     
-    var observableKind: array
+    var observableKind: "array"
   }
   object IArrayBaseChange {
     
@@ -157,44 +154,15 @@ object distTypesObservablearrayMod {
       
       inline def setObject(value: IObservableArray[T]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      inline def setObservableKind(value: array): Self = StObject.set(x, "observableKind", value.asInstanceOf[js.Any])
+      inline def setObservableKind(value: "array"): Self = StObject.set(x, "observableKind", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.mobx.distTypesObservablearrayMod.IArrayUpdate[T]
-    - typings.mobx.distTypesObservablearrayMod.IArraySplice[T]
-  */
-  trait IArrayDidChange[T] extends StObject
-  object IArrayDidChange {
-    
-    inline def IArraySplice[T](
-      added: js.Array[T],
-      addedCount: Double,
-      debugObjectName: String,
-      index: Double,
-      `object`: IObservableArray[T],
-      removed: js.Array[T],
-      removedCount: Double
-    ): typings.mobx.distTypesObservablearrayMod.IArraySplice[T] = {
-      val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], addedCount = addedCount.asInstanceOf[js.Any], debugObjectName = debugObjectName.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], observableKind = "array", removed = removed.asInstanceOf[js.Any], removedCount = removedCount.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("splice")
-      __obj.asInstanceOf[typings.mobx.distTypesObservablearrayMod.IArraySplice[T]]
-    }
-    
-    inline def IArrayUpdate[T](debugObjectName: String, index: Double, newValue: T, `object`: IObservableArray[T], oldValue: T): typings.mobx.distTypesObservablearrayMod.IArrayUpdate[T] = {
-      val __obj = js.Dynamic.literal(debugObjectName = debugObjectName.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], observableKind = "array", oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("update")
-      __obj.asInstanceOf[typings.mobx.distTypesObservablearrayMod.IArrayUpdate[T]]
-    }
-  }
+  type IArrayDidChange[T] = IArrayUpdate[T] | IArraySplice[T]
   
   trait IArraySplice[T]
     extends StObject
-       with IArrayBaseChange[T]
-       with IArrayDidChange[T] {
+       with IArrayBaseChange[T] {
     
     var added: js.Array[T]
     
@@ -204,7 +172,7 @@ object distTypesObservablearrayMod {
     
     var removedCount: Double
     
-    var `type`: splice
+    var `type`: "splice"
   }
   object IArraySplice {
     
@@ -237,20 +205,19 @@ object distTypesObservablearrayMod {
       
       inline def setRemovedVarargs(value: T*): Self = StObject.set(x, "removed", js.Array(value*))
       
-      inline def setType(value: splice): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "splice"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait IArrayUpdate[T]
     extends StObject
-       with IArrayBaseChange[T]
-       with IArrayDidChange[T] {
+       with IArrayBaseChange[T] {
     
     var newValue: T
     
     var oldValue: T
     
-    var `type`: update
+    var `type`: "update"
   }
   object IArrayUpdate {
     
@@ -267,7 +234,7 @@ object distTypesObservablearrayMod {
       
       inline def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
-      inline def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "update"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -279,7 +246,7 @@ object distTypesObservablearrayMod {
     
     var `object`: IObservableArray[T]
     
-    var `type`: update
+    var `type`: "update"
   }
   object IArrayWillChange {
     
@@ -298,7 +265,7 @@ object distTypesObservablearrayMod {
       
       inline def setObject(value: IObservableArray[T]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      inline def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "update"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -312,7 +279,7 @@ object distTypesObservablearrayMod {
     
     var removedCount: Double
     
-    var `type`: splice
+    var `type`: "splice"
   }
   object IArrayWillSplice {
     
@@ -335,7 +302,7 @@ object distTypesObservablearrayMod {
       
       inline def setRemovedCount(value: Double): Self = StObject.set(x, "removedCount", value.asInstanceOf[js.Any])
       
-      inline def setType(value: splice): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "splice"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

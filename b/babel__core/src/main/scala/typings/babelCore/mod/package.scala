@@ -2,12 +2,6 @@ package typings.babelCore.mod
 
 import typings.babelCore.anon.FnCall
 import typings.babelCore.anon.ReadonlyPartialConfig
-import typings.babelCore.babelCoreBooleans.`false`
-import typings.babelCore.babelCoreStrings.Dotes
-import typings.babelCore.babelCoreStrings.Dotes6
-import typings.babelCore.babelCoreStrings.Dotjs
-import typings.babelCore.babelCoreStrings.Dotjsx
-import typings.babelCore.babelCoreStrings.Dotmjs
 import typings.babelCore.mod.^
 import typings.babelTemplate.mod.DefaultTemplateBuilder
 import typings.std.ReturnType
@@ -16,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def DEFAULT_EXTENSIONS: js.Tuple5[Dotjs, Dotjsx, Dotes6, Dotes, Dotmjs] = ^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_EXTENSIONS").asInstanceOf[js.Tuple5[Dotjs, Dotjsx, Dotes6, Dotes, Dotmjs]]
+inline def DEFAULT_EXTENSIONS: js.Tuple5[".js", ".jsx", ".es6", ".es", ".mjs"] = ^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_EXTENSIONS").asInstanceOf[js.Tuple5[".js", ".jsx", ".es6", ".es", ".mjs"]]
 
 inline def createConfigItem(value: js.Tuple2[PluginTarget, PluginOptions]): ConfigItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createConfigItem")(value.asInstanceOf[js.Any]).asInstanceOf[ConfigItem]
 inline def createConfigItem(value: js.Tuple2[PluginTarget, PluginOptions], options: CreateConfigItemOptions): ConfigItem = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfigItem")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ConfigItem]
@@ -110,7 +104,7 @@ type ParseResult = ReturnType[FnCall]
 
 type PluginItem = ConfigItem | PluginObj[Any] | PluginTarget | (js.Tuple2[PluginTarget, PluginOptions]) | (js.Tuple3[PluginTarget, PluginOptions, js.UndefOr[String]])
 
-type PluginOptions = js.UndefOr[js.Object | `false`]
+type PluginOptions = js.UndefOr[js.Object | false]
 
 type PluginTarget = String | js.Object | (js.Function1[/* repeated */ Any, Any])
 

@@ -1,18 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.JSXElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.libMod.ReturnedChild because Already inherited */ trait JSXElement__
+trait JSXElement__
   extends StObject
-     with BaseNode
-     with Expression
-     with Immutable
-     with JSX
-     with Node {
+     with BaseNode {
   
   var children: js.Array[
     JSXText__ | JSXExpressionContainer__ | JSXSpreadChild__ | JSXElement__ | JSXFragment__
@@ -25,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var selfClosing: js.UndefOr[Boolean | Null] = js.undefined
   
   @JSName("type")
-  var type_JSXElement__ : JSXElement
+  var type_JSXElement__ : "JSXElement"
 }
 object JSXElement__ {
   
@@ -64,6 +58,6 @@ object JSXElement__ {
     
     inline def setSelfClosingUndefined: Self = StObject.set(x, "selfClosing", js.undefined)
     
-    inline def setType(value: JSXElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "JSXElement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

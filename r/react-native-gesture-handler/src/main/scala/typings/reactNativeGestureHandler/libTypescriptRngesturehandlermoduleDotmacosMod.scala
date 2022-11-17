@@ -5,14 +5,6 @@ import typings.react.mod.RefObject
 import typings.reactNativeGestureHandler.libTypescriptActionTypeMod.ActionType
 import typings.reactNativeGestureHandler.libTypescriptWebHandlersFlingGestureHandlerMod.default
 import typings.reactNativeGestureHandler.libTypescriptWebInterfacesMod.Config
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.FlingGestureHandler
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.LongPressGestureHandler
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.ManualGestureHandler
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.NativeViewGestureHandler
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.PanGestureHandler
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.PinchGestureHandler
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.RotationGestureHandler
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.TapGestureHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +20,7 @@ object libTypescriptRngesturehandlermoduleDotmacosMod {
     inline def attachGestureHandler(handlerTag: Double, newView: Double, _actionType: ActionType, propsRef: RefObject[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachGestureHandler")(handlerTag.asInstanceOf[js.Any], newView.asInstanceOf[js.Any], _actionType.asInstanceOf[js.Any], propsRef.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def createGestureHandler[T](
-      handlerName: /* keyof react-native-gesture-handler.anon.FlingGestureHandler */ NativeViewGestureHandler | PanGestureHandler | TapGestureHandler | LongPressGestureHandler | PinchGestureHandler | RotationGestureHandler | FlingGestureHandler | ManualGestureHandler,
+      handlerName: /* keyof react-native-gesture-handler.anon.FlingGestureHandler */ "NativeViewGestureHandler" | "PanGestureHandler" | "TapGestureHandler" | "LongPressGestureHandler" | "PinchGestureHandler" | "RotationGestureHandler" | "FlingGestureHandler" | "ManualGestureHandler",
       handlerTag: Double,
       config: T
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createGestureHandler")(handlerName.asInstanceOf[js.Any], handlerTag.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]

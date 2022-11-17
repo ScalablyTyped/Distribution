@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.ajv.ajvBooleans.`true`
 import typings.ajv.distCompileCodegenCodeMod.Code
 import typings.ajv.distCompileCodegenMod.CodeGen
 import typings.ajv.distCompileCodegenMod.Name
@@ -129,7 +128,8 @@ object distCompileValidateMod {
     
     def setParams(obj: KeywordCxtParams): Unit = js.native
     @JSName("setParams")
-    def setParams_true(obj: KeywordCxtParams, assign: `true`): Unit = js.native
+    @scala.annotation.targetName("setParams_true")
+    def setParams(obj: KeywordCxtParams, assign: true): Unit = js.native
     
     def subschema(appl: SubschemaArgs, valid: Name): SchemaCxt = js.native
   }

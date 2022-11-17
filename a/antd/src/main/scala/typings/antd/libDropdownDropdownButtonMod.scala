@@ -2,10 +2,6 @@ package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.Delay
-import typings.antd.antdStrings.click
-import typings.antd.antdStrings.contextMenu
-import typings.antd.antdStrings.hover
-import typings.antd.antdStrings.text_
 import typings.antd.libButtonButtonGroupMod.ButtonGroupProps
 import typings.antd.libButtonButtonMod.ButtonHTMLType
 import typings.antd.libDropdownDropdownMod.Align
@@ -97,7 +93,7 @@ object libDropdownDropdownButtonMod extends Shortcut {
     
     var transitionName: js.UndefOr[String] = js.undefined
     
-    var trigger: js.UndefOr[js.Array[click | hover | contextMenu]] = js.undefined
+    var trigger: js.UndefOr[js.Array["click" | "hover" | "contextMenu"]] = js.undefined
     
     var `type`: js.UndefOr[DropdownButtonType] = js.undefined
     
@@ -227,11 +223,11 @@ object libDropdownDropdownButtonMod extends Shortcut {
       
       inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
       
-      inline def setTrigger(value: js.Array[click | hover | contextMenu]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: js.Array["click" | "hover" | "contextMenu"]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
       inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
-      inline def setTriggerVarargs(value: (click | hover | contextMenu)*): Self = StObject.set(x, "trigger", js.Array(value*))
+      inline def setTriggerVarargs(value: ("click" | "hover" | "contextMenu")*): Self = StObject.set(x, "trigger", js.Array(value*))
       
       inline def setType(value: DropdownButtonType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -243,29 +239,21 @@ object libDropdownDropdownButtonMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.default
-    - typings.antd.antdStrings.primary
-    - typings.antd.antdStrings.ghost
-    - typings.antd.antdStrings.dashed
-    - typings.antd.antdStrings.link
-    - typings.antd.antdStrings.text_
-  */
-  trait DropdownButtonType extends StObject
   object DropdownButtonType {
     
-    inline def default: typings.antd.antdStrings.default = "default".asInstanceOf[typings.antd.antdStrings.default]
+    inline def default: "default" = "default".asInstanceOf["default"]
     
-    inline def dashed: typings.antd.antdStrings.dashed = "dashed".asInstanceOf[typings.antd.antdStrings.dashed]
+    inline def dashed: "dashed" = "dashed".asInstanceOf["dashed"]
     
-    inline def ghost: typings.antd.antdStrings.ghost = "ghost".asInstanceOf[typings.antd.antdStrings.ghost]
+    inline def ghost: "ghost" = "ghost".asInstanceOf["ghost"]
     
-    inline def link: typings.antd.antdStrings.link = "link".asInstanceOf[typings.antd.antdStrings.link]
+    inline def link: "link" = "link".asInstanceOf["link"]
     
-    inline def primary: typings.antd.antdStrings.primary = "primary".asInstanceOf[typings.antd.antdStrings.primary]
+    inline def primary: "primary" = "primary".asInstanceOf["primary"]
     
-    inline def text: text_ = "text".asInstanceOf[text_]
+    inline def text: "text" = "text".asInstanceOf["text"]
   }
+  type DropdownButtonType = "default" | "primary" | "ghost" | "dashed" | "link" | "text"
   
   type _To = DropdownButtonInterface
   

@@ -5,8 +5,6 @@ import typings.rcTable.libContextSelectorMod.ReturnCreateContext
 import typings.rcTable.libInterfaceMod.CustomizeComponent
 import typings.rcTable.libInterfaceMod.GetComponent
 import typings.rcTable.libUtilsFixUtilMod.FixedInfo
-import typings.rcTable.rcTableStrings.ltr
-import typings.rcTable.rcTableStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +17,7 @@ object libContextTableContextMod extends Shortcut {
   
   trait TableContextProps extends StObject {
     
-    var direction: ltr | rtl
+    var direction: "ltr" | "rtl"
     
     var fixedInfoList: js.Array[FixedInfo]
     
@@ -34,7 +32,7 @@ object libContextTableContextMod extends Shortcut {
   object TableContextProps {
     
     inline def apply(
-      direction: ltr | rtl,
+      direction: "ltr" | "rtl",
       fixedInfoList: js.Array[FixedInfo],
       getComponent: (/* path */ js.Array[String], /* defaultComponent */ js.UndefOr[CustomizeComponent]) => CustomizeComponent,
       isSticky: Boolean,
@@ -47,7 +45,7 @@ object libContextTableContextMod extends Shortcut {
     
     extension [Self <: TableContextProps](x: Self) {
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setFixedInfoList(value: js.Array[FixedInfo]): Self = StObject.set(x, "fixedInfoList", value.asInstanceOf[js.Any])
       

@@ -6,16 +6,6 @@ import typings.angularCore.mod.Injector
 import typings.angularCore.mod.Type
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectableDeclaration
-import typings.angularRouter.angularRouterStrings.always
-import typings.angularRouter.angularRouterStrings.computed
-import typings.angularRouter.angularRouterStrings.corrected
-import typings.angularRouter.angularRouterStrings.deferred
-import typings.angularRouter.angularRouterStrings.eager
-import typings.angularRouter.angularRouterStrings.emptyOnly
-import typings.angularRouter.angularRouterStrings.ignore
-import typings.angularRouter.angularRouterStrings.legacy
-import typings.angularRouter.angularRouterStrings.reload
-import typings.angularRouter.angularRouterStrings.replace
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -94,7 +84,7 @@ open class Router protected () extends StObject {
     * The default value is `replace`.
     *
     */
-  var canceledNavigationResolution: replace | computed = js.native
+  var canceledNavigationResolution: "replace" | "computed" = js.native
   
   var config: Routes = js.native
   
@@ -335,7 +325,7 @@ open class Router protected () extends StObject {
     * routed components on same url navigation, you need to set `onSameUrlNavigation` to `'reload'`
     * _and_ provide a `RouteReuseStrategy` which returns `false` for `shouldReuseRoute`.
     */
-  var onSameUrlNavigation: reload | ignore = js.native
+  var onSameUrlNavigation: "reload" | "ignore" = js.native
   
   /**
     * How to merge parameters, data, resolved data, and title from parent to child
@@ -346,7 +336,7 @@ open class Router protected () extends StObject {
     * - `'always'` : Inherit parent parameters, data, and resolved data
     * for all child routes.
     */
-  var paramsInheritanceStrategy: emptyOnly | always = js.native
+  var paramsInheritanceStrategy: "emptyOnly" | "always" = js.native
   
   /** Parses a string into a `UrlTree` */
   def parseUrl(url: String): UrlTree = js.native
@@ -365,14 +355,6 @@ open class Router protected () extends StObject {
     * its full form).
     */
   /* private */ var rawUrlTree: Any = js.native
-  
-  /**
-    * Enables a bug fix that corrects relative link resolution in components with empty paths.
-    * @see `RouterModule`
-    *
-    * @deprecated
-    */
-  var relativeLinkResolution: legacy | corrected = js.native
   
   /* private */ var removeEmptyProps: Any = js.native
   
@@ -461,7 +443,7 @@ open class Router protected () extends StObject {
     * You can choose to update early so that, if navigation fails,
     * you can show an error message with the URL that failed.
     */
-  var urlUpdateStrategy: deferred | eager = js.native
+  var urlUpdateStrategy: "deferred" | "eager" = js.native
 }
 /* static members */
 object Router {

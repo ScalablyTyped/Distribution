@@ -1,20 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.JSXSpreadAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait JSXSpreadAttribute_
+trait JSXSpreadAttribute_
   extends StObject
-     with BaseNode
-     with JSX {
+     with BaseNode {
   
   var argument: Expression
   
   @JSName("type")
-  var type_JSXSpreadAttribute_ : JSXSpreadAttribute
+  var type_JSXSpreadAttribute_ : "JSXSpreadAttribute"
 }
 object JSXSpreadAttribute_ {
   
@@ -28,6 +25,6 @@ object JSXSpreadAttribute_ {
     
     inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    inline def setType(value: JSXSpreadAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "JSXSpreadAttribute"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

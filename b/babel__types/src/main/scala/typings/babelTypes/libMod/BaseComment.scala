@@ -14,16 +14,13 @@ trait BaseComment extends StObject {
   
   var start: js.UndefOr[Double] = js.undefined
   
-  var `type`: typings.babelTypes.babelTypesStrings.CommentBlock | typings.babelTypes.babelTypesStrings.CommentLine
+  var `type`: "CommentBlock" | "CommentLine"
   
   var value: String
 }
 object BaseComment {
   
-  inline def apply(
-    `type`: typings.babelTypes.babelTypesStrings.CommentBlock | typings.babelTypes.babelTypesStrings.CommentLine,
-    value: String
-  ): BaseComment = {
+  inline def apply(`type`: "CommentBlock" | "CommentLine", value: String): BaseComment = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseComment]
@@ -47,9 +44,7 @@ object BaseComment {
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    inline def setType(
-      value: typings.babelTypes.babelTypesStrings.CommentBlock | typings.babelTypes.babelTypesStrings.CommentLine
-    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "CommentBlock" | "CommentLine"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

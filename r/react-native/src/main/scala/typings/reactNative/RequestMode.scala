@@ -4,20 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.reactNative.reactNativeStrings.navigate
-  - typings.reactNative.reactNativeStrings.`same-origin`
-  - typings.reactNative.reactNativeStrings.`no-cors`
-  - typings.reactNative.reactNativeStrings.cors
-*/
-trait RequestMode extends StObject
 object RequestMode {
   
-  inline def cors: typings.reactNative.reactNativeStrings.cors = "cors".asInstanceOf[typings.reactNative.reactNativeStrings.cors]
+  inline def cors: "cors" = "cors".asInstanceOf["cors"]
   
-  inline def navigate: typings.reactNative.reactNativeStrings.navigate = "navigate".asInstanceOf[typings.reactNative.reactNativeStrings.navigate]
+  inline def navigate: "navigate" = "navigate".asInstanceOf["navigate"]
   
-  inline def `no-cors`: typings.reactNative.reactNativeStrings.`no-cors` = "no-cors".asInstanceOf[typings.reactNative.reactNativeStrings.`no-cors`]
+  inline def `no-cors`: "no-cors" = "no-cors".asInstanceOf["no-cors"]
   
-  inline def `same-origin`: typings.reactNative.reactNativeStrings.`same-origin` = "same-origin".asInstanceOf[typings.reactNative.reactNativeStrings.`same-origin`]
+  inline def `same-origin`: "same-origin" = "same-origin".asInstanceOf["same-origin"]
 }

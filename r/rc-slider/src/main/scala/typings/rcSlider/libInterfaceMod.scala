@@ -12,23 +12,17 @@ object libInterfaceMod {
   
   type AriaValueFormat = js.Function1[/* value */ Double, String]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcSlider.rcSliderStrings.rtl
-    - typings.rcSlider.rcSliderStrings.ltr
-    - typings.rcSlider.rcSliderStrings.ttb
-    - typings.rcSlider.rcSliderStrings.btt
-  */
-  trait Direction extends StObject
   object Direction {
     
-    inline def btt: typings.rcSlider.rcSliderStrings.btt = "btt".asInstanceOf[typings.rcSlider.rcSliderStrings.btt]
+    inline def btt: "btt" = "btt".asInstanceOf["btt"]
     
-    inline def ltr: typings.rcSlider.rcSliderStrings.ltr = "ltr".asInstanceOf[typings.rcSlider.rcSliderStrings.ltr]
+    inline def ltr: "ltr" = "ltr".asInstanceOf["ltr"]
     
-    inline def rtl: typings.rcSlider.rcSliderStrings.rtl = "rtl".asInstanceOf[typings.rcSlider.rcSliderStrings.rtl]
+    inline def rtl: "rtl" = "rtl".asInstanceOf["rtl"]
     
-    inline def ttb: typings.rcSlider.rcSliderStrings.ttb = "ttb".asInstanceOf[typings.rcSlider.rcSliderStrings.ttb]
+    inline def ttb: "ttb" = "ttb".asInstanceOf["ttb"]
   }
+  type Direction = "rtl" | "ltr" | "ttb" | "btt"
   
   type OnStartMove = js.Function2[
     /* e */ (MouseEvent[Element, NativeMouseEvent]) | TouchEvent[Element], 

@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait SourceUri
   extends StObject
-     with /* key */ StringDictionary[Any]
-     with _BodyInit {
+     with //anything else
+/* key */ StringDictionary[Any] {
   
   var uri: String
 }

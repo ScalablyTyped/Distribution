@@ -24,24 +24,6 @@ import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerComm
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HitSlop
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.UserSelect
 import typings.reactNativeGestureHandler.libTypescriptHandlersNativeViewGestureHandlerMod.NativeViewGestureHandlerPayload
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.Dragging
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.Idle
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.Settling
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`box-none`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`box-only`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`locked-closed`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`locked-open`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`no-hide-descendants`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`on-drag`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.assertive
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.auto
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.left
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.no
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.none
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.polite
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.right
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.unlocked
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.yes
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -99,7 +81,7 @@ trait DrawerLayoutAndroidPropsc extends StObject {
     * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
     * @platform android
     */
-  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+  var accessibilityLiveRegion: js.UndefOr["none" | "polite" | "assertive"] = js.undefined
   
   /**
     * Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on Android the type of element that is focused on.
@@ -171,14 +153,14 @@ trait DrawerLayoutAndroidPropsc extends StObject {
     *   not respond to gestures. The drawer may still be opened and
     *   closed programmatically (openDrawer/closeDrawer).
     */
-  var drawerLockMode: js.UndefOr[unlocked | `locked-closed` | `locked-open`] = js.undefined
+  var drawerLockMode: js.UndefOr["unlocked" | "locked-closed" | "locked-open"] = js.undefined
   
   /**
     * Specifies the side of the screen from which the drawer will slide in.
     * - 'left' (the default)
     * - 'right'
     */
-  var drawerPosition: js.UndefOr[left | right] = js.undefined
+  var drawerPosition: js.UndefOr["left" | "right"] = js.undefined
   
   /**
     * Specifies the width of the drawer, more precisely the width of the
@@ -225,7 +207,7 @@ trait DrawerLayoutAndroidPropsc extends StObject {
     *      'no' - The view is not important for accessibility.
     *      'no-hide-descendants' - The view is not important for accessibility, nor are any of its descendant views.
     */
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+  var importantForAccessibility: js.UndefOr["auto" | "yes" | "no" | "no-hide-descendants"] = js.undefined
   
   /**
     * *(Apple TV only)* When set to true, this view will be focusable
@@ -242,7 +224,7 @@ trait DrawerLayoutAndroidPropsc extends StObject {
     * - 'none' (the default), drags do not dismiss the keyboard.
     * - 'on-drag', the keyboard is dismissed when a drag begins.
     */
-  var keyboardDismissMode: js.UndefOr[none | `on-drag`] = js.undefined
+  var keyboardDismissMode: js.UndefOr["none" | "on-drag"] = js.undefined
   
   /**
     * Used to reference react managed views from native code.
@@ -314,7 +296,7 @@ trait DrawerLayoutAndroidPropsc extends StObject {
     *   navigation view, and the navigation view is now finishing
     *   it's closing or opening animation
     */
-  var onDrawerStateChanged: js.UndefOr[js.Function1[/* event */ Idle | Dragging | Settling, Unit]] = js.undefined
+  var onDrawerStateChanged: js.UndefOr[js.Function1[/* event */ "Idle" | "Dragging" | "Settling", Unit]] = js.undefined
   
   var onEnded: js.UndefOr[js.Function1[/* event */ HandlerStateChangeEvent[Record[String, Any]], Unit]] = js.undefined
   
@@ -484,7 +466,7 @@ trait DrawerLayoutAndroidPropsc extends StObject {
     * But since pointerEvents does not affect layout/appearance, and we are already deviating from the spec by adding additional modes,
     * we opt to not include pointerEvents on style. On some platforms, we would need to implement it as a className anyways. Using style or not is an implementation detail of the platform.
     */
-  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
+  var pointerEvents: js.UndefOr["box-none" | "none" | "box-only" | "auto"] = js.undefined
   
   var ref: js.UndefOr[Ref[ComponentType[Any]]] = js.undefined
   
@@ -629,7 +611,7 @@ object DrawerLayoutAndroidPropsc {
     
     inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
     
-    inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLiveRegion(value: "none" | "polite" | "assertive"): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
     
@@ -673,11 +655,11 @@ object DrawerLayoutAndroidPropsc {
     
     inline def setDrawerBackgroundColorUndefined: Self = StObject.set(x, "drawerBackgroundColor", js.undefined)
     
-    inline def setDrawerLockMode(value: unlocked | `locked-closed` | `locked-open`): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
+    inline def setDrawerLockMode(value: "unlocked" | "locked-closed" | "locked-open"): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
     
     inline def setDrawerLockModeUndefined: Self = StObject.set(x, "drawerLockMode", js.undefined)
     
-    inline def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
+    inline def setDrawerPosition(value: "left" | "right"): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
     
     inline def setDrawerPositionUndefined: Self = StObject.set(x, "drawerPosition", js.undefined)
     
@@ -703,7 +685,7 @@ object DrawerLayoutAndroidPropsc {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+    inline def setImportantForAccessibility(value: "auto" | "yes" | "no" | "no-hide-descendants"): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
@@ -717,7 +699,7 @@ object DrawerLayoutAndroidPropsc {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+    inline def setKeyboardDismissMode(value: "none" | "on-drag"): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
     
     inline def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
     
@@ -765,7 +747,7 @@ object DrawerLayoutAndroidPropsc {
     
     inline def setOnDrawerSlideUndefined: Self = StObject.set(x, "onDrawerSlide", js.undefined)
     
-    inline def setOnDrawerStateChanged(value: /* event */ Idle | Dragging | Settling => Unit): Self = StObject.set(x, "onDrawerStateChanged", js.Any.fromFunction1(value))
+    inline def setOnDrawerStateChanged(value: /* event */ "Idle" | "Dragging" | "Settling" => Unit): Self = StObject.set(x, "onDrawerStateChanged", js.Any.fromFunction1(value))
     
     inline def setOnDrawerStateChangedUndefined: Self = StObject.set(x, "onDrawerStateChanged", js.undefined)
     
@@ -909,7 +891,7 @@ object DrawerLayoutAndroidPropsc {
     
     inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
-    inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    inline def setPointerEvents(value: "box-none" | "none" | "box-only" | "auto"): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     

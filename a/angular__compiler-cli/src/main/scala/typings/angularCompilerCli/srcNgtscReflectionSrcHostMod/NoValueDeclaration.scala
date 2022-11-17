@@ -1,18 +1,15 @@
 package typings.angularCompilerCli.srcNgtscReflectionSrcHostMod
 
-import typings.angularCompilerCli.angularCompilerCliInts.`1`
 import typings.typescript.mod.TypeNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NoValueDeclaration
-  extends StObject
-     with UnavailableValue {
+trait NoValueDeclaration extends StObject {
   
   var decl: typings.typescript.mod.Declaration | Null
   
-  var kind: `1`
+  var kind: 1
   
   var typeNode: TypeNode
 }
@@ -29,7 +26,7 @@ object NoValueDeclaration {
     
     inline def setDeclNull: Self = StObject.set(x, "decl", null)
     
-    inline def setKind(value: `1`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: 1): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setTypeNode(value: TypeNode): Self = StObject.set(x, "typeNode", value.asInstanceOf[js.Any])
   }

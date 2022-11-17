@@ -1,8 +1,6 @@
 package typings.expoConfigTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.expoConfigTypes.expoConfigTypesStrings.contain
-import typings.expoConfigTypes.expoConfigTypesStrings.cover
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +22,7 @@ trait Image
   /**
     * Determines how the `image` will be displayed in the splash loading screen. Must be one of `cover` or `contain`, defaults to `contain`.
     */
-  var resizeMode: js.UndefOr[cover | contain] = js.undefined
+  var resizeMode: js.UndefOr["cover" | "contain"] = js.undefined
   
   /**
     * Local path or remote URL to an image to fill the background of the loading screen. Image size and aspect ratio are up to you. Must be a .png.
@@ -53,7 +51,7 @@ object Image {
     
     inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    inline def setResizeMode(value: cover | contain): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
+    inline def setResizeMode(value: "cover" | "contain"): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
     
     inline def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
     

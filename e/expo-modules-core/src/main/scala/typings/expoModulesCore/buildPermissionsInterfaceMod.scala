@@ -1,6 +1,5 @@
 package typings.expoModulesCore
 
-import typings.expoModulesCore.expoModulesCoreStrings.never
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +43,7 @@ object buildPermissionsInterfaceMod {
     /* "undetermined" */ val UNDETERMINED: typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionStatus.UNDETERMINED & String = js.native
   }
   
-  type PermissionExpiration = never | Double
+  type PermissionExpiration = "never" | Double
   
   trait PermissionResponse extends StObject {
     

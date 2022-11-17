@@ -12,32 +12,23 @@ object formControlUseFormControlMod {
   
   inline def default(): js.UndefOr[FormControlState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.UndefOr[FormControlState]]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.disabled
-    - typings.materialUiCore.materialUiCoreStrings.error
-    - typings.materialUiCore.materialUiCoreStrings.fullWidth
-    - typings.materialUiCore.materialUiCoreStrings.hiddenLabel
-    - typings.materialUiCore.materialUiCoreStrings.margin
-    - typings.materialUiCore.materialUiCoreStrings.required
-    - typings.materialUiCore.materialUiCoreStrings.variant
-  */
-  trait ContextFromPropsKey extends StObject
   object ContextFromPropsKey {
     
-    inline def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
+    inline def disabled: "disabled" = "disabled".asInstanceOf["disabled"]
     
-    inline def error: typings.materialUiCore.materialUiCoreStrings.error = "error".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.error]
+    inline def error: "error" = "error".asInstanceOf["error"]
     
-    inline def fullWidth: typings.materialUiCore.materialUiCoreStrings.fullWidth = "fullWidth".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.fullWidth]
+    inline def fullWidth: "fullWidth" = "fullWidth".asInstanceOf["fullWidth"]
     
-    inline def hiddenLabel: typings.materialUiCore.materialUiCoreStrings.hiddenLabel = "hiddenLabel".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.hiddenLabel]
+    inline def hiddenLabel: "hiddenLabel" = "hiddenLabel".asInstanceOf["hiddenLabel"]
     
-    inline def margin: typings.materialUiCore.materialUiCoreStrings.margin = "margin".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.margin]
+    inline def margin: "margin" = "margin".asInstanceOf["margin"]
     
-    inline def required: typings.materialUiCore.materialUiCoreStrings.required = "required".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.required]
+    inline def required: "required" = "required".asInstanceOf["required"]
     
-    inline def variant: typings.materialUiCore.materialUiCoreStrings.variant = "variant".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.variant]
+    inline def variant: "variant" = "variant".asInstanceOf["variant"]
   }
+  type ContextFromPropsKey = "disabled" | "error" | "fullWidth" | "hiddenLabel" | "margin" | "required" | "variant"
   
   /* Inlined parent std.Pick<@material-ui/core.@material-ui/core/FormControl/FormControl.FormControlProps<@material-ui/core.@material-ui/core/FormControl/FormControl.FormControlTypeMap<{}, 'div'>['defaultComponent'], {}>, @material-ui/core.@material-ui/core/FormControl/useFormControl.ContextFromPropsKey> */
   trait FormControlState extends StObject {

@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NamedImports
   extends StObject
-     with Node
-     with NamedImportBindings
-     with NamedImportsOrExports {
+     with Node {
   
   val elements: NodeArray[ImportSpecifier] = js.native
   

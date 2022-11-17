@@ -16,8 +16,6 @@ import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
 import typings.semanticUiReact.distCommonjsModulesDimmerDimmerMod.DimmerProps
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -105,7 +103,7 @@ object distCommonjsElementsImageImageMod extends Shortcut {
     var size: js.UndefOr[SemanticSIZES] = js.undefined
     
     /** An image can specify that it needs an additional spacing to separate it from nearby content. */
-    var spaced: js.UndefOr[Boolean | left | right] = js.undefined
+    var spaced: js.UndefOr[Boolean | "left" | "right"] = js.undefined
     
     /** Whether or not to add the ui className. */
     var ui: js.UndefOr[Boolean] = js.undefined
@@ -205,7 +203,7 @@ object distCommonjsElementsImageImageMod extends Shortcut {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSpaced(value: Boolean | left | right): Self = StObject.set(x, "spaced", value.asInstanceOf[js.Any])
+      inline def setSpaced(value: Boolean | "left" | "right"): Self = StObject.set(x, "spaced", value.asInstanceOf[js.Any])
       
       inline def setSpacedUndefined: Self = StObject.set(x, "spaced", js.undefined)
       

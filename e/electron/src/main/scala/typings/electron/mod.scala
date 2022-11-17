@@ -45,11 +45,6 @@ import typings.electron.Electron.TouchBarSlider
 import typings.electron.Electron.TouchBarSpacer
 import typings.electron.Electron.WebContents_
 import typings.electron.Electron.WebFrameMain_
-import typings.electron.electronStrings.checkbox
-import typings.electron.electronStrings.normal
-import typings.electron.electronStrings.radio
-import typings.electron.electronStrings.separator
-import typings.electron.electronStrings.submenu
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -237,7 +232,7 @@ object mod {
       * `submenu`, `checkbox` or `radio`.
       */
     /* CompleteClass */
-    var `type`: normal | separator | submenu | checkbox | radio = js.native
+    var `type`: "normal" | "separator" | "submenu" | "checkbox" | "radio" = js.native
     
     /**
       * An `Accelerator | null` indicating the item's user-assigned accelerator for the

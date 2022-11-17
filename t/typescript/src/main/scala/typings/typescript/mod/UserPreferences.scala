@@ -1,21 +1,5 @@
 package typings.typescript.mod
 
-import typings.typescript.typescriptStrings.`non-relative`
-import typings.typescript.typescriptStrings.`project-relative`
-import typings.typescript.typescriptStrings.all
-import typings.typescript.typescriptStrings.auto
-import typings.typescript.typescriptStrings.braces
-import typings.typescript.typescriptStrings.double
-import typings.typescript.typescriptStrings.index
-import typings.typescript.typescriptStrings.js_
-import typings.typescript.typescriptStrings.literals
-import typings.typescript.typescriptStrings.minimal
-import typings.typescript.typescriptStrings.none
-import typings.typescript.typescriptStrings.off
-import typings.typescript.typescriptStrings.on
-import typings.typescript.typescriptStrings.relative
-import typings.typescript.typescriptStrings.shortest
-import typings.typescript.typescriptStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,9 +17,9 @@ trait UserPreferences extends StObject {
   val disableSuggestions: js.UndefOr[Boolean] = js.undefined
   
   /** Determines whether we import `foo/index.ts` as "foo", "foo/index", or "foo/index.js" */
-  val importModuleSpecifierEnding: js.UndefOr[auto | minimal | index | js_] = js.undefined
+  val importModuleSpecifierEnding: js.UndefOr["auto" | "minimal" | "index" | "js"] = js.undefined
   
-  val importModuleSpecifierPreference: js.UndefOr[shortest | `project-relative` | relative | `non-relative`] = js.undefined
+  val importModuleSpecifierPreference: js.UndefOr["shortest" | "project-relative" | "relative" | "non-relative"] = js.undefined
   
   val includeAutomaticOptionalChainCompletions: js.UndefOr[Boolean] = js.undefined
   
@@ -57,7 +41,7 @@ trait UserPreferences extends StObject {
   
   val includeInlayFunctionParameterTypeHints: js.UndefOr[Boolean] = js.undefined
   
-  val includeInlayParameterNameHints: js.UndefOr[none | literals | all] = js.undefined
+  val includeInlayParameterNameHints: js.UndefOr["none" | "literals" | "all"] = js.undefined
   
   val includeInlayParameterNameHintsWhenArgumentMatchesName: js.UndefOr[Boolean] = js.undefined
   
@@ -67,15 +51,15 @@ trait UserPreferences extends StObject {
   
   val includeInlayVariableTypeHintsWhenTypeMatchesName: js.UndefOr[Boolean] = js.undefined
   
-  val includePackageJsonAutoImports: js.UndefOr[auto | on | off] = js.undefined
+  val includePackageJsonAutoImports: js.UndefOr["auto" | "on" | "off"] = js.undefined
   
-  val jsxAttributeCompletionStyle: js.UndefOr[auto | braces | none] = js.undefined
+  val jsxAttributeCompletionStyle: js.UndefOr["auto" | "braces" | "none"] = js.undefined
   
   val providePrefixAndSuffixTextForRename: js.UndefOr[Boolean] = js.undefined
   
   val provideRefactorNotApplicableReason: js.UndefOr[Boolean] = js.undefined
   
-  val quotePreference: js.UndefOr[auto | double | single] = js.undefined
+  val quotePreference: js.UndefOr["auto" | "double" | "single"] = js.undefined
   
   val useLabelDetailsInCompletionEntries: js.UndefOr[Boolean] = js.undefined
 }
@@ -110,11 +94,11 @@ object UserPreferences {
     
     inline def setDisableSuggestionsUndefined: Self = StObject.set(x, "disableSuggestions", js.undefined)
     
-    inline def setImportModuleSpecifierEnding(value: auto | minimal | index | js_): Self = StObject.set(x, "importModuleSpecifierEnding", value.asInstanceOf[js.Any])
+    inline def setImportModuleSpecifierEnding(value: "auto" | "minimal" | "index" | "js"): Self = StObject.set(x, "importModuleSpecifierEnding", value.asInstanceOf[js.Any])
     
     inline def setImportModuleSpecifierEndingUndefined: Self = StObject.set(x, "importModuleSpecifierEnding", js.undefined)
     
-    inline def setImportModuleSpecifierPreference(value: shortest | `project-relative` | relative | `non-relative`): Self = StObject.set(x, "importModuleSpecifierPreference", value.asInstanceOf[js.Any])
+    inline def setImportModuleSpecifierPreference(value: "shortest" | "project-relative" | "relative" | "non-relative"): Self = StObject.set(x, "importModuleSpecifierPreference", value.asInstanceOf[js.Any])
     
     inline def setImportModuleSpecifierPreferenceUndefined: Self = StObject.set(x, "importModuleSpecifierPreference", js.undefined)
     
@@ -158,7 +142,7 @@ object UserPreferences {
     
     inline def setIncludeInlayFunctionParameterTypeHintsUndefined: Self = StObject.set(x, "includeInlayFunctionParameterTypeHints", js.undefined)
     
-    inline def setIncludeInlayParameterNameHints(value: none | literals | all): Self = StObject.set(x, "includeInlayParameterNameHints", value.asInstanceOf[js.Any])
+    inline def setIncludeInlayParameterNameHints(value: "none" | "literals" | "all"): Self = StObject.set(x, "includeInlayParameterNameHints", value.asInstanceOf[js.Any])
     
     inline def setIncludeInlayParameterNameHintsUndefined: Self = StObject.set(x, "includeInlayParameterNameHints", js.undefined)
     
@@ -178,11 +162,11 @@ object UserPreferences {
     
     inline def setIncludeInlayVariableTypeHintsWhenTypeMatchesNameUndefined: Self = StObject.set(x, "includeInlayVariableTypeHintsWhenTypeMatchesName", js.undefined)
     
-    inline def setIncludePackageJsonAutoImports(value: auto | on | off): Self = StObject.set(x, "includePackageJsonAutoImports", value.asInstanceOf[js.Any])
+    inline def setIncludePackageJsonAutoImports(value: "auto" | "on" | "off"): Self = StObject.set(x, "includePackageJsonAutoImports", value.asInstanceOf[js.Any])
     
     inline def setIncludePackageJsonAutoImportsUndefined: Self = StObject.set(x, "includePackageJsonAutoImports", js.undefined)
     
-    inline def setJsxAttributeCompletionStyle(value: auto | braces | none): Self = StObject.set(x, "jsxAttributeCompletionStyle", value.asInstanceOf[js.Any])
+    inline def setJsxAttributeCompletionStyle(value: "auto" | "braces" | "none"): Self = StObject.set(x, "jsxAttributeCompletionStyle", value.asInstanceOf[js.Any])
     
     inline def setJsxAttributeCompletionStyleUndefined: Self = StObject.set(x, "jsxAttributeCompletionStyle", js.undefined)
     
@@ -194,7 +178,7 @@ object UserPreferences {
     
     inline def setProvideRefactorNotApplicableReasonUndefined: Self = StObject.set(x, "provideRefactorNotApplicableReason", js.undefined)
     
-    inline def setQuotePreference(value: auto | double | single): Self = StObject.set(x, "quotePreference", value.asInstanceOf[js.Any])
+    inline def setQuotePreference(value: "auto" | "double" | "single"): Self = StObject.set(x, "quotePreference", value.asInstanceOf[js.Any])
     
     inline def setQuotePreferenceUndefined: Self = StObject.set(x, "quotePreference", js.undefined)
     

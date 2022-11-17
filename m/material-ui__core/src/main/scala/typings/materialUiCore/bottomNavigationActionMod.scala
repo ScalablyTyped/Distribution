@@ -3,7 +3,6 @@ package typings.materialUiCore
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.bottomNavigationActionBottomNavigationActionMod.BottomNavigationActionTypeMap
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
-import typings.materialUiCore.materialUiCoreStrings.button
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,10 +22,10 @@ object bottomNavigationActionMod extends Shortcut {
     */
   @JSImport("@material-ui/core/BottomNavigationAction", JSImport.Default)
   @js.native
-  val default: ExtendButtonBase[BottomNavigationActionTypeMap[js.Object, button]] = js.native
+  val default: ExtendButtonBase[BottomNavigationActionTypeMap[js.Object, "button"]] = js.native
   
-  type _To = ExtendButtonBase[BottomNavigationActionTypeMap[js.Object, button]]
+  type _To = ExtendButtonBase[BottomNavigationActionTypeMap[js.Object, "button"]]
   
   /* This means you don't have to write `default`, but can instead just say `bottomNavigationActionMod.foo` */
-  override def _to: ExtendButtonBase[BottomNavigationActionTypeMap[js.Object, button]] = default
+  override def _to: ExtendButtonBase[BottomNavigationActionTypeMap[js.Object, "button"]] = default
 }

@@ -1,13 +1,10 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashPUSH
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationPushAction
-  extends StObject
-     with NavigationStackAction {
+trait NavigationPushAction extends StObject {
   
   var action: js.UndefOr[NavigationNavigateAction] = js.undefined
   
@@ -17,7 +14,7 @@ trait NavigationPushAction
   
   var routeName: String
   
-  var `type`: NavigationSlashPUSH
+  var `type`: "Navigation/PUSH"
 }
 object NavigationPushAction {
   
@@ -43,6 +40,6 @@ object NavigationPushAction {
     
     inline def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
     
-    inline def setType(value: NavigationSlashPUSH): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Navigation/PUSH"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

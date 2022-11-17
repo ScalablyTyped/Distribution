@@ -1,6 +1,5 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -135,7 +134,7 @@ trait NgModule extends StObject {
     * at run time, in the browser.
     * To ensure the correct behavior, the app must import `@angular/compiler`.
     */
-  var jit: js.UndefOr[`true`] = js.undefined
+  var jit: js.UndefOr[true] = js.undefined
   
   /**
     * The set of injectable objects that are available in the injector
@@ -184,7 +183,7 @@ trait NgModule extends StObject {
     * }
     * ```
     */
-  var providers: js.UndefOr[js.Array[Provider]] = js.undefined
+  var providers: js.UndefOr[js.Array[Provider | EnvironmentProviders]] = js.undefined
   
   /**
     * The set of schemas that declare elements to be allowed in the NgModule.
@@ -240,15 +239,15 @@ object NgModule {
     
     inline def setImportsVarargs(value: (Type[Any] | ModuleWithProviders[js.Object] | js.Array[Any])*): Self = StObject.set(x, "imports", js.Array(value*))
     
-    inline def setJit(value: `true`): Self = StObject.set(x, "jit", value.asInstanceOf[js.Any])
+    inline def setJit(value: true): Self = StObject.set(x, "jit", value.asInstanceOf[js.Any])
     
     inline def setJitUndefined: Self = StObject.set(x, "jit", js.undefined)
     
-    inline def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[Provider | EnvironmentProviders]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    inline def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value*))
+    inline def setProvidersVarargs(value: (Provider | EnvironmentProviders)*): Self = StObject.set(x, "providers", js.Array(value*))
     
     inline def setSchemas(value: js.Array[SchemaMetadata | js.Array[Any]]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     

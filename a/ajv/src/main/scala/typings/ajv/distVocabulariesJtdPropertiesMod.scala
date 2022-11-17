@@ -1,6 +1,5 @@
 package typings.ajv
 
-import typings.ajv.ajvStrings.`object`
 import typings.ajv.anon.AdditionalPropertyError
 import typings.ajv.anon.MissingProperty
 import typings.ajv.distCompileValidateMod.KeywordCxt
@@ -45,19 +44,15 @@ object distVocabulariesJtdPropertiesMod {
   
   inline def validateProperties(cxt: KeywordCxt): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateProperties")(cxt.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type JTDPropertiesError = (JTDTypeError[PropKeyword, `object`, PropSchema]) | (ErrorObject[PropKeyword, AdditionalPropertyError | MissingProperty, PropSchema])
+  type JTDPropertiesError = (JTDTypeError[PropKeyword, "object", PropSchema]) | (ErrorObject[PropKeyword, AdditionalPropertyError | MissingProperty, PropSchema])
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.ajv.ajvStrings.properties
-    - typings.ajv.ajvStrings.optionalProperties
-  */
-  trait PropKeyword extends StObject
   object PropKeyword {
     
-    inline def optionalProperties: typings.ajv.ajvStrings.optionalProperties = "optionalProperties".asInstanceOf[typings.ajv.ajvStrings.optionalProperties]
+    inline def optionalProperties: "optionalProperties" = "optionalProperties".asInstanceOf["optionalProperties"]
     
-    inline def properties: typings.ajv.ajvStrings.properties = "properties".asInstanceOf[typings.ajv.ajvStrings.properties]
+    inline def properties: "properties" = "properties".asInstanceOf["properties"]
   }
+  type PropKeyword = "properties" | "optionalProperties"
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.

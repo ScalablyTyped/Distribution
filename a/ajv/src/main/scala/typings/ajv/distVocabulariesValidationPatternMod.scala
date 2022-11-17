@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.pattern
 import typings.ajv.anon.Data
 import typings.ajv.anon.Pattern
 import typings.ajv.distTypesMod.CodeKeywordDefinition
@@ -16,7 +15,7 @@ object distVocabulariesValidationPatternMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type PatternError = ErrorObject[pattern, Pattern, String | Data]
+  type PatternError = ErrorObject["pattern", Pattern, String | Data]
   
   type _To = CodeKeywordDefinition
   

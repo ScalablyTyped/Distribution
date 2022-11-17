@@ -1,6 +1,5 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ trait DirectiveNode
   var parseResult: js.UndefOr[ForParseResult] = js.undefined
   
   @JSName("type")
-  var type_DirectiveNode: `7`
+  var type_DirectiveNode: 7
 }
 object DirectiveNode {
   
@@ -53,6 +52,6 @@ object DirectiveNode {
     
     inline def setParseResultUndefined: Self = StObject.set(x, "parseResult", js.undefined)
     
-    inline def setType(value: `7`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 7): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -7,12 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ObjectLiteralExpression
   extends StObject
-     with ObjectLiteralExpressionBase[ObjectLiteralElementLike]
-     with AssignmentPattern
-     with DestructuringPattern
-     with JsonObjectExpression
-     with ObjectBindingOrAssignmentPattern
-     with _ArrayBindingOrAssignmentElement {
+     with ObjectLiteralExpressionBase[ObjectLiteralElementLike] {
   
   @JSName("kind")
   val kind_ObjectLiteralExpression: typings.typescript.mod.SyntaxKind.ObjectLiteralExpression = js.native

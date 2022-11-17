@@ -1,23 +1,19 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.WithStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait WithStatement_
+trait WithStatement_
   extends StObject
-     with BaseNode
-     with Standardized
-     with Statement {
+     with BaseNode {
   
   var body: Statement
   
   var `object`: Expression
   
   @JSName("type")
-  var type_WithStatement_ : WithStatement
+  var type_WithStatement_ : "WithStatement"
 }
 object WithStatement_ {
   
@@ -34,6 +30,6 @@ object WithStatement_ {
     
     inline def setObject(value: Expression): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    inline def setType(value: WithStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "WithStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.dark
-import typings.reactNative.reactNativeStrings.light
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +24,7 @@ trait ActionSheetIOSOptions extends StObject {
   
   var title: js.UndefOr[String] = js.undefined
   
-  var userInterfaceStyle: js.UndefOr[light | dark] = js.undefined
+  var userInterfaceStyle: js.UndefOr["light" | "dark"] = js.undefined
 }
 object ActionSheetIOSOptions {
   
@@ -79,7 +77,7 @@ object ActionSheetIOSOptions {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setUserInterfaceStyle(value: light | dark): Self = StObject.set(x, "userInterfaceStyle", value.asInstanceOf[js.Any])
+    inline def setUserInterfaceStyle(value: "light" | "dark"): Self = StObject.set(x, "userInterfaceStyle", value.asInstanceOf[js.Any])
     
     inline def setUserInterfaceStyleUndefined: Self = StObject.set(x, "userInterfaceStyle", js.undefined)
   }

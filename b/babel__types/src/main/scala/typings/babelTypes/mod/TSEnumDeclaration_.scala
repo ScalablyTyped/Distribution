@@ -1,17 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSEnumDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSEnumDeclaration_
+trait TSEnumDeclaration_
   extends StObject
-     with BaseNode
-     with Declaration
-     with Statement
-     with TypeScript {
+     with BaseNode {
   
   var const: Boolean | Null
   
@@ -24,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var members: js.Array[TSEnumMember_]
   
   @JSName("type")
-  var type_TSEnumDeclaration_ : TSEnumDeclaration
+  var type_TSEnumDeclaration_ : "TSEnumDeclaration"
 }
 object TSEnumDeclaration_ {
   
@@ -54,6 +49,6 @@ object TSEnumDeclaration_ {
     
     inline def setMembersVarargs(value: TSEnumMember_ *): Self = StObject.set(x, "members", js.Array(value*))
     
-    inline def setType(value: TSEnumDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSEnumDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

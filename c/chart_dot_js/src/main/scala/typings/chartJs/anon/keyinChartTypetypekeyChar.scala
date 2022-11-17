@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ key in chart.js.chart.js.ChartType ]: {  type :key} & chart.js.chart.js.ChartTypeRegistry[key]['datasetOptions']} */
+/* Inlined {[ key in chart.js.chart.js/dist/chunks/helpers.core.ChartType ]: {  type :key} & chart.js.chart.js/dist/chunks/helpers.core.ChartTypeRegistry[key]['datasetOptions']} */
 trait keyinChartTypetypekeyChar extends StObject {
   
   var bar: typebarBarControllerDatas

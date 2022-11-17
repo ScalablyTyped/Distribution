@@ -1,10 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.bottom
-import typings.electron.electronStrings.detach
-import typings.electron.electronStrings.left
-import typings.electron.electronStrings.right
-import typings.electron.electronStrings.undocked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,11 +17,11 @@ trait OpenDevToolsOptions extends StObject {
     * `undocked`, `detach`. Defaults to last used dock state. In `undocked` mode it's
     * possible to dock back. In `detach` mode it's not.
     */
-  var mode: left | right | bottom | undocked | detach
+  var mode: "left" | "right" | "bottom" | "undocked" | "detach"
 }
 object OpenDevToolsOptions {
   
-  inline def apply(mode: left | right | bottom | undocked | detach): OpenDevToolsOptions = {
+  inline def apply(mode: "left" | "right" | "bottom" | "undocked" | "detach"): OpenDevToolsOptions = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenDevToolsOptions]
   }
@@ -37,6 +32,6 @@ object OpenDevToolsOptions {
     
     inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
-    inline def setMode(value: left | right | bottom | undocked | detach): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: "left" | "right" | "bottom" | "undocked" | "detach"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

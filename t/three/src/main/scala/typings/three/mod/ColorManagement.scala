@@ -15,27 +15,14 @@ object ColorManagement {
   
   inline def convert(
     color: typings.three.srcMathColorMod.Color,
-    sourceColorSpace: LinearSRGBColorSpace,
-    targetColorSpace: LinearSRGBColorSpace
-  ): typings.three.srcMathColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcMathColorMod.Color]
-  inline def convert(
-    color: typings.three.srcMathColorMod.Color,
-    sourceColorSpace: LinearSRGBColorSpace,
-    targetColorSpace: SRGBColorSpace
-  ): typings.three.srcMathColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcMathColorMod.Color]
-  inline def convert(
-    color: typings.three.srcMathColorMod.Color,
-    sourceColorSpace: SRGBColorSpace,
-    targetColorSpace: LinearSRGBColorSpace
-  ): typings.three.srcMathColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcMathColorMod.Color]
-  inline def convert(
-    color: typings.three.srcMathColorMod.Color,
-    sourceColorSpace: SRGBColorSpace,
-    targetColorSpace: SRGBColorSpace
+    sourceColorSpace: LinearSRGBColorSpace | SRGBColorSpace,
+    targetColorSpace: LinearSRGBColorSpace | SRGBColorSpace
   ): typings.three.srcMathColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcMathColorMod.Color]
   
-  inline def fromWorkingColorSpace(color: typings.three.srcMathColorMod.Color, targetColorSpace: LinearSRGBColorSpace): typings.three.srcMathColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWorkingColorSpace")(color.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcMathColorMod.Color]
-  inline def fromWorkingColorSpace(color: typings.three.srcMathColorMod.Color, targetColorSpace: SRGBColorSpace): typings.three.srcMathColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWorkingColorSpace")(color.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcMathColorMod.Color]
+  inline def fromWorkingColorSpace(
+    color: typings.three.srcMathColorMod.Color,
+    targetColorSpace: LinearSRGBColorSpace | SRGBColorSpace
+  ): typings.three.srcMathColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWorkingColorSpace")(color.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcMathColorMod.Color]
   
   /**
     * @default true
@@ -45,8 +32,10 @@ object ColorManagement {
   def legacyMode: Boolean = js.native
   inline def legacyMode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("legacyMode")(x.asInstanceOf[js.Any])
   
-  inline def toWorkingColorSpace(color: typings.three.srcMathColorMod.Color, sourceColorSpace: LinearSRGBColorSpace): typings.three.srcMathColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("toWorkingColorSpace")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcMathColorMod.Color]
-  inline def toWorkingColorSpace(color: typings.three.srcMathColorMod.Color, sourceColorSpace: SRGBColorSpace): typings.three.srcMathColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("toWorkingColorSpace")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcMathColorMod.Color]
+  inline def toWorkingColorSpace(
+    color: typings.three.srcMathColorMod.Color,
+    sourceColorSpace: LinearSRGBColorSpace | SRGBColorSpace
+  ): typings.three.srcMathColorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("toWorkingColorSpace")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcMathColorMod.Color]
   
   /**
     * @default LinearSRGBColorSpace

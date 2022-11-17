@@ -5,8 +5,6 @@ import typings.react.mod.ElementType
 import typings.react.mod.ReactElement
 import typings.reactTestRenderer.anon.Deep
 import typings.reactTestRenderer.anon.UNDEFINEDVOIDONLY
-import typings.reactTestRenderer.reactTestRendererStrings.component
-import typings.reactTestRenderer.reactTestRendererStrings.host
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -134,13 +132,13 @@ object mod {
     
     var instance: Any
     
-    var nodeType: component | host
+    var nodeType: "component" | "host"
     
     var rendered: Null | ReactTestRendererTree | js.Array[ReactTestRendererTree]
   }
   object ReactTestRendererTree {
     
-    inline def apply(instance: Any, nodeType: component | host, props: StringDictionary[Any], `type`: String): ReactTestRendererTree = {
+    inline def apply(instance: Any, nodeType: "component" | "host", props: StringDictionary[Any], `type`: String): ReactTestRendererTree = {
       val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], children = null, rendered = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactTestRendererTree]
@@ -150,7 +148,7 @@ object mod {
       
       inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      inline def setNodeType(value: component | host): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: "component" | "host"): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
       
       inline def setRendered(value: ReactTestRendererTree | js.Array[ReactTestRendererTree]): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
       

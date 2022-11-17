@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.V8IntrinsicIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `141` extends StObject {
   
-  var `type`: V8IntrinsicIdentifier
+  var `type`: "V8IntrinsicIdentifier"
 }
 object `141` {
   
@@ -19,6 +18,6 @@ object `141` {
   
   extension [Self <: `141`](x: Self) {
     
-    inline def setType(value: V8IntrinsicIdentifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "V8IntrinsicIdentifier"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -8,11 +8,11 @@ import typings.angularCompiler.mod.Expression
 import typings.angularCompiler.mod.InterpolationConfig
 import typings.angularCompiler.mod.ParseSourceSpan
 import typings.angularCompiler.mod.R3DependencyMetadata
+import typings.angularCompiler.mod.R3HostDirectiveMetadata
 import typings.angularCompiler.mod.R3HostMetadata
 import typings.angularCompiler.mod.R3QueryMetadata
 import typings.angularCompiler.mod.R3Reference
 import typings.angularCompiler.mod.ViewEncapsulation
-import typings.angularCompilerCli.angularCompilerCliStrings.invalid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +24,7 @@ trait OmitR3ComponentMetadataR3 extends StObject {
   
   var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.undefined
   
-  var deps: js.UndefOr[js.Array[R3DependencyMetadata] | invalid | Null] = js.undefined
+  var deps: js.UndefOr[js.Array[R3DependencyMetadata] | "invalid" | Null] = js.undefined
   
   var encapsulation: ViewEncapsulation
   
@@ -33,6 +33,8 @@ trait OmitR3ComponentMetadataR3 extends StObject {
   var fullInheritance: Boolean
   
   var host: R3HostMetadata
+  
+  var hostDirectives: js.UndefOr[js.Array[R3HostDirectiveMetadata] | Null] = js.undefined
   
   var i18nUseExternalIds: Boolean
   
@@ -115,7 +117,7 @@ object OmitR3ComponentMetadataR3 {
     
     inline def setChangeDetectionUndefined: Self = StObject.set(x, "changeDetection", js.undefined)
     
-    inline def setDeps(value: js.Array[R3DependencyMetadata] | invalid): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[R3DependencyMetadata] | "invalid"): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     inline def setDepsNull: Self = StObject.set(x, "deps", null)
     
@@ -136,6 +138,14 @@ object OmitR3ComponentMetadataR3 {
     inline def setFullInheritance(value: Boolean): Self = StObject.set(x, "fullInheritance", value.asInstanceOf[js.Any])
     
     inline def setHost(value: R3HostMetadata): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostDirectives(value: js.Array[R3HostDirectiveMetadata]): Self = StObject.set(x, "hostDirectives", value.asInstanceOf[js.Any])
+    
+    inline def setHostDirectivesNull: Self = StObject.set(x, "hostDirectives", null)
+    
+    inline def setHostDirectivesUndefined: Self = StObject.set(x, "hostDirectives", js.undefined)
+    
+    inline def setHostDirectivesVarargs(value: R3HostDirectiveMetadata*): Self = StObject.set(x, "hostDirectives", js.Array(value*))
     
     inline def setI18nUseExternalIds(value: Boolean): Self = StObject.set(x, "i18nUseExternalIds", value.asInstanceOf[js.Any])
     

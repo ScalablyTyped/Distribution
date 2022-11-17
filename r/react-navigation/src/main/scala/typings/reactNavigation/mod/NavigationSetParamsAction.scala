@@ -1,16 +1,14 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashSET_PARAMS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NavigationSetParamsAction
   extends StObject
-     with NavigationSetParamsActionPayload
-     with NavigationStackAction {
+     with NavigationSetParamsActionPayload {
   
-  var `type`: NavigationSlashSET_PARAMS
+  var `type`: "Navigation/SET_PARAMS"
 }
 object NavigationSetParamsAction {
   
@@ -22,6 +20,6 @@ object NavigationSetParamsAction {
   
   extension [Self <: NavigationSetParamsAction](x: Self) {
     
-    inline def setType(value: NavigationSlashSET_PARAMS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Navigation/SET_PARAMS"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

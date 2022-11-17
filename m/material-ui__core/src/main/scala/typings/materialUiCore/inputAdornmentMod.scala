@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.inputAdornmentInputAdornmentMod.InputAdornmentTypeMap
-import typings.materialUiCore.materialUiCoreStrings.div
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,10 +21,10 @@ object inputAdornmentMod extends Shortcut {
     */
   @JSImport("@material-ui/core/InputAdornment", JSImport.Default)
   @js.native
-  val default: OverridableComponent[InputAdornmentTypeMap[js.Object, div]] = js.native
+  val default: OverridableComponent[InputAdornmentTypeMap[js.Object, "div"]] = js.native
   
-  type _To = OverridableComponent[InputAdornmentTypeMap[js.Object, div]]
+  type _To = OverridableComponent[InputAdornmentTypeMap[js.Object, "div"]]
   
   /* This means you don't have to write `default`, but can instead just say `inputAdornmentMod.foo` */
-  override def _to: OverridableComponent[InputAdornmentTypeMap[js.Object, div]] = default
+  override def _to: OverridableComponent[InputAdornmentTypeMap[js.Object, "div"]] = default
 }

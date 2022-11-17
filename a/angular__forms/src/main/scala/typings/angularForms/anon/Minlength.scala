@@ -1,13 +1,12 @@
 package typings.angularForms.anon
 
-import typings.angularForms.angularFormsStrings.minlength
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Minlength extends StObject {
   
-  var minlength: typings.angularForms.angularFormsStrings.minlength
+  var minlength: "minlength"
 }
 object Minlength {
   
@@ -18,6 +17,6 @@ object Minlength {
   
   extension [Self <: Minlength](x: Self) {
     
-    inline def setMinlength(value: minlength): Self = StObject.set(x, "minlength", value.asInstanceOf[js.Any])
+    inline def setMinlength(value: "minlength"): Self = StObject.set(x, "minlength", value.asInstanceOf[js.Any])
   }
 }

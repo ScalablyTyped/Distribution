@@ -8,10 +8,6 @@ import typings.rcTabs.esInterfaceMod.Tab
 import typings.rcTabs.esInterfaceMod.TabBarExtraContent
 import typings.rcTabs.esInterfaceMod.TabPosition
 import typings.rcTabs.esInterfaceMod.TabsLocale
-import typings.rcTabs.rcTabsStrings.bottom
-import typings.rcTabs.rcTabsStrings.left
-import typings.rcTabs.rcTabsStrings.right
-import typings.rcTabs.rcTabsStrings.top
 import typings.react.mod.CSSProperties
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
@@ -28,18 +24,18 @@ object anon {
   
   trait Direction extends StObject {
     
-    var direction: left | right | top | bottom
+    var direction: "left" | "right" | "top" | "bottom"
   }
   object Direction {
     
-    inline def apply(direction: left | right | top | bottom): Direction = {
+    inline def apply(direction: "left" | "right" | "top" | "bottom"): Direction = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
       __obj.asInstanceOf[Direction]
     }
     
     extension [Self <: Direction](x: Self) {
       
-      inline def setDirection(value: left | right | top | bottom): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "left" | "right" | "top" | "bottom"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     }
   }
   

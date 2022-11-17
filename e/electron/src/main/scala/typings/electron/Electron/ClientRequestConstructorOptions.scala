@@ -1,10 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.error
-import typings.electron.electronStrings.follow
-import typings.electron.electronStrings.include
-import typings.electron.electronStrings.manual
-import typings.electron.electronStrings.omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +15,7 @@ trait ClientRequestConstructorOptions extends StObject {
     * specified, authentication data from the session will be sent, and cookies will
     * not be sent (unless `useSessionCookies` is set).
     */
-  var credentials: js.UndefOr[include | omit] = js.undefined
+  var credentials: js.UndefOr["include" | "omit"] = js.undefined
   
   /**
     * The server host provided as a concatenation of the hostname and the port number
@@ -72,7 +67,7 @@ trait ClientRequestConstructorOptions extends StObject {
     * redirection will be cancelled unless `request.followRedirect` is invoked
     * synchronously during the `redirect` event.  Defaults to `follow`.
     */
-  var redirect: js.UndefOr[follow | error | manual] = js.undefined
+  var redirect: js.UndefOr["follow" | "error" | "manual"] = js.undefined
   
   /**
     * The `Session` instance with which the request is associated.
@@ -100,7 +95,7 @@ object ClientRequestConstructorOptions {
   
   extension [Self <: ClientRequestConstructorOptions](x: Self) {
     
-    inline def setCredentials(value: include | omit): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: "include" | "omit"): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
@@ -136,7 +131,7 @@ object ClientRequestConstructorOptions {
     
     inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    inline def setRedirect(value: follow | error | manual): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    inline def setRedirect(value: "follow" | "error" | "manual"): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
     inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
     

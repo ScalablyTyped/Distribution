@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,6 +14,6 @@ object examplesJsmNodesDisplayFrontFacingNodeMod {
   trait FrontFacingNode
     extends typings.three.examplesJsmNodesCoreNodeMod.default {
     
-    var isFrontFacingNode: `true` = js.native
+    var isFrontFacingNode: true = js.native
   }
 }

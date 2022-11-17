@@ -1,13 +1,6 @@
 package typings.reactNative.mod
 
 import typings.reactNative.anon.End
-import typings.reactNative.reactNativeStrings.center
-import typings.reactNative.reactNativeStrings.characters
-import typings.reactNative.reactNativeStrings.left
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.right
-import typings.reactNative.reactNativeStrings.sentences
-import typings.reactNative.reactNativeStrings.words
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +26,7 @@ trait TextInputProps
     *
     * https://reactnative.dev/docs/textinput#autocapitalize
     */
-  var autoCapitalize: js.UndefOr[none | sentences | words | characters] = js.undefined
+  var autoCapitalize: js.UndefOr["none" | "sentences" | "words" | "characters"] = js.undefined
   
   /**
     * If false, disables auto-correct.
@@ -246,7 +239,7 @@ trait TextInputProps
   /**
     * Align the input text to the left, center, or right sides of the input field.
     */
-  var textAlign: js.UndefOr[left | center | right] = js.undefined
+  var textAlign: js.UndefOr["left" | "center" | "right"] = js.undefined
   
   /**
     * The value to show for the text input. TextInput is a controlled component,
@@ -270,7 +263,7 @@ object TextInputProps {
     
     inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
     
-    inline def setAutoCapitalize(value: none | sentences | words | characters): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
+    inline def setAutoCapitalize(value: "none" | "sentences" | "words" | "characters"): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
     
     inline def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
     
@@ -410,7 +403,7 @@ object TextInputProps {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTextAlign(value: left | center | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: "left" | "center" | "right"): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     

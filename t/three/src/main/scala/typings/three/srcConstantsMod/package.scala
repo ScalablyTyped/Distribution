@@ -1,9 +1,6 @@
 package typings.three.srcConstantsMod
 
 import typings.three.srcConstantsMod.^
-import typings.three.threeStrings._empty
-import typings.three.threeStrings.`srgb-linear`
-import typings.three.threeStrings.srgb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -345,10 +342,14 @@ inline def ZeroStencilOp: StencilOp = ^.asInstanceOf[js.Dynamic].selectDynamic("
 
 inline def sRGBEncoding: TextureEncoding = ^.asInstanceOf[js.Dynamic].selectDynamic("sRGBEncoding").asInstanceOf[TextureEncoding]
 
+type BuiltinShaderAttributeName = "position" | "normal" | "uv" | "color" | "skinIndex" | "skinWeight" | "instanceMatrix" | "morphTarget0" | "morphTarget1" | "morphTarget2" | "morphTarget3" | "morphTarget4" | "morphTarget5" | "morphTarget6" | "morphTarget7" | "morphNormal0" | "morphNormal1" | "morphNormal2" | "morphNormal3"
+
 type ColorSpace = NoColorSpace | SRGBColorSpace | LinearSRGBColorSpace
 
-type LinearSRGBColorSpace = `srgb-linear`
+type LinearSRGBColorSpace = "srgb-linear"
 
-type NoColorSpace = _empty
+type NoColorSpace = ""
 
-type SRGBColorSpace = srgb
+type PixelFormatGPU = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60, starting with "ALPHA", "RGB", "RGBA" */ String
+
+type SRGBColorSpace = "srgb"

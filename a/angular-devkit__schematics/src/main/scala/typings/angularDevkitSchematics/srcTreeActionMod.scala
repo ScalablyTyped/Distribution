@@ -2,10 +2,6 @@ package typings.angularDevkitSchematics
 
 import typings.angularDevkitCore.mod.BaseException
 import typings.angularDevkitCore.srcVirtualFsPathMod.Path_
-import typings.angularDevkitSchematics.angularDevkitSchematicsStrings.c
-import typings.angularDevkitSchematics.angularDevkitSchematicsStrings.d
-import typings.angularDevkitSchematics.angularDevkitSchematicsStrings.o
-import typings.angularDevkitSchematics.angularDevkitSchematicsStrings.r
 import typings.node.bufferMod.global.Buffer
 import typings.std.Iterable
 import typings.std.IterableIterator
@@ -68,35 +64,7 @@ object srcTreeActionMod {
   
   inline def isContentAction(action: Action): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContentAction")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularDevkitSchematics.srcTreeActionMod.CreateFileAction
-    - typings.angularDevkitSchematics.srcTreeActionMod.OverwriteFileAction
-    - typings.angularDevkitSchematics.srcTreeActionMod.RenameFileAction
-    - typings.angularDevkitSchematics.srcTreeActionMod.DeleteFileAction
-  */
-  trait Action extends StObject
-  object Action {
-    
-    inline def CreateFileAction(content: Buffer, id: Double, parent: Double, path: Path_): typings.angularDevkitSchematics.srcTreeActionMod.CreateFileAction = {
-      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = "c", parent = parent.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitSchematics.srcTreeActionMod.CreateFileAction]
-    }
-    
-    inline def DeleteFileAction(id: Double, parent: Double, path: Path_): typings.angularDevkitSchematics.srcTreeActionMod.DeleteFileAction = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = "d", parent = parent.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitSchematics.srcTreeActionMod.DeleteFileAction]
-    }
-    
-    inline def OverwriteFileAction(content: Buffer, id: Double, parent: Double, path: Path_): typings.angularDevkitSchematics.srcTreeActionMod.OverwriteFileAction = {
-      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = "o", parent = parent.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitSchematics.srcTreeActionMod.OverwriteFileAction]
-    }
-    
-    inline def RenameFileAction(id: Double, parent: Double, path: Path_, to: Path_): typings.angularDevkitSchematics.srcTreeActionMod.RenameFileAction = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = "r", parent = parent.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitSchematics.srcTreeActionMod.RenameFileAction]
-    }
-  }
+  type Action = CreateFileAction | OverwriteFileAction | RenameFileAction | DeleteFileAction
   
   trait ActionBase extends StObject {
     
@@ -125,12 +93,11 @@ object srcTreeActionMod {
   
   trait CreateFileAction
     extends StObject
-       with ActionBase
-       with Action {
+       with ActionBase {
     
     val content: Buffer
     
-    val kind: c
+    val kind: "c"
   }
   object CreateFileAction {
     
@@ -143,16 +110,15 @@ object srcTreeActionMod {
       
       inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setKind(value: c): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "c"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }
   }
   
   trait DeleteFileAction
     extends StObject
-       with ActionBase
-       with Action {
+       with ActionBase {
     
-    val kind: d
+    val kind: "d"
   }
   object DeleteFileAction {
     
@@ -163,18 +129,17 @@ object srcTreeActionMod {
     
     extension [Self <: DeleteFileAction](x: Self) {
       
-      inline def setKind(value: d): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "d"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }
   }
   
   trait OverwriteFileAction
     extends StObject
-       with ActionBase
-       with Action {
+       with ActionBase {
     
     val content: Buffer
     
-    val kind: o
+    val kind: "o"
   }
   object OverwriteFileAction {
     
@@ -187,16 +152,15 @@ object srcTreeActionMod {
       
       inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setKind(value: o): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "o"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }
   }
   
   trait RenameFileAction
     extends StObject
-       with ActionBase
-       with Action {
+       with ActionBase {
     
-    val kind: r
+    val kind: "r"
     
     val to: Path_
   }
@@ -209,7 +173,7 @@ object srcTreeActionMod {
     
     extension [Self <: RenameFileAction](x: Self) {
       
-      inline def setKind(value: r): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "r"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
       inline def setTo(value: Path_): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }

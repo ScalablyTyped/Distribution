@@ -1,10 +1,5 @@
 package typings.webpackEnv
 
-import typings.webpackEnv.webpackEnvStrings.`lazy-once`
-import typings.webpackEnv.webpackEnvStrings.`lazy`
-import typings.webpackEnv.webpackEnvStrings.eager
-import typings.webpackEnv.webpackEnvStrings.sync
-import typings.webpackEnv.webpackEnvStrings.weak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +16,7 @@ object anon {
     
     var include: js.UndefOr[js.RegExp] = js.undefined
     
-    var mode: js.UndefOr[sync | eager | weak | `lazy` | `lazy-once`] = js.undefined
+    var mode: js.UndefOr["sync" | "eager" | "weak" | "lazy" | "lazy-once"] = js.undefined
     
     var prefetch: js.UndefOr[Boolean | Double] = js.undefined
     
@@ -58,7 +53,7 @@ object anon {
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setMode(value: sync | eager | weak | `lazy` | `lazy-once`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: "sync" | "eager" | "weak" | "lazy" | "lazy-once"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       

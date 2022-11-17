@@ -1,15 +1,12 @@
 package typings.angularCompilerCli.srcNgtscReflectionSrcHostMod
 
-import typings.angularCompilerCli.angularCompilerCliInts.`0`
 import typings.typescript.mod.Expression
 import typings.typescript.mod.ImportDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LocalTypeValueReference
-  extends StObject
-     with TypeValueReference {
+trait LocalTypeValueReference extends StObject {
   
   /**
     * If the type originates from a default import, the import statement is captured here to be able
@@ -23,7 +20,7 @@ trait LocalTypeValueReference
     */
   var expression: Expression
   
-  var kind: `0`
+  var kind: 0
 }
 object LocalTypeValueReference {
   
@@ -40,6 +37,6 @@ object LocalTypeValueReference {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    inline def setKind(value: `0`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: 0): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

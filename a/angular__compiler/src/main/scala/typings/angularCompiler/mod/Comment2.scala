@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Comment2
   extends StObject
-     with BaseNode
-     with Node2 {
+     with BaseNode {
   
   var value: String | Null
 }

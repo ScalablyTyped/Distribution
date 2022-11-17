@@ -16,16 +16,6 @@ import typings.reactNavigationDrawer.anon.ActiveItemKey
 import typings.reactNavigationDrawer.anon.Dark
 import typings.reactNavigationDrawer.anon.Focused
 import typings.reactNavigationDrawer.anon.NavigationOptions
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`on-drag`
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.back
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.fade
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.front
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.history
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.initialRoute
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.left
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.none
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.right
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.slide
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -48,7 +38,7 @@ object libTypescriptSrcTypesMod {
     inline def apply(
       descriptors: SceneDescriptorMap,
       drawerOpenProgress: Node,
-      drawerPosition: left | right,
+      drawerPosition: "left" | "right",
       getLabel: Scene => ReactNode,
       items: js.Array[NavigationRoute[NavigationParams]],
       navigation: NavigationScreenProp[NavigationDrawerState, NavigationParams],
@@ -137,20 +127,15 @@ object libTypescriptSrcTypesMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNavigationDrawer.reactNavigationDrawerStrings.unlocked
-    - typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-closed`
-    - typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-open`
-  */
-  trait DrawerLockMode extends StObject
   object DrawerLockMode {
     
-    inline def `locked-closed`: typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-closed` = "locked-closed".asInstanceOf[typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-closed`]
+    inline def `locked-closed`: "locked-closed" = "locked-closed".asInstanceOf["locked-closed"]
     
-    inline def `locked-open`: typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-open` = "locked-open".asInstanceOf[typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-open`]
+    inline def `locked-open`: "locked-open" = "locked-open".asInstanceOf["locked-open"]
     
-    inline def unlocked: typings.reactNavigationDrawer.reactNavigationDrawerStrings.unlocked = "unlocked".asInstanceOf[typings.reactNavigationDrawer.reactNavigationDrawerStrings.unlocked]
+    inline def unlocked: "unlocked" = "unlocked".asInstanceOf["unlocked"]
   }
+  type DrawerLockMode = "unlocked" | "locked-closed" | "locked-open"
   
   trait DrawerNavigatorItemsProps extends StObject {
     
@@ -162,7 +147,7 @@ object libTypescriptSrcTypesMod {
     
     var activeTintColor: js.UndefOr[String | ThemedColor] = js.undefined
     
-    var drawerPosition: left | right
+    var drawerPosition: "left" | "right"
     
     def getLabel(scene: Scene): ReactNode
     
@@ -191,7 +176,7 @@ object libTypescriptSrcTypesMod {
   object DrawerNavigatorItemsProps {
     
     inline def apply(
-      drawerPosition: left | right,
+      drawerPosition: "left" | "right",
       getLabel: Scene => ReactNode,
       items: js.Array[NavigationRoute[NavigationParams]],
       onItemPress: Focused => Unit,
@@ -224,7 +209,7 @@ object libTypescriptSrcTypesMod {
       
       inline def setActiveTintColorUndefined: Self = StObject.set(x, "activeTintColor", js.undefined)
       
-      inline def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
+      inline def setDrawerPosition(value: "left" | "right"): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
       
       inline def setGetLabel(value: Scene => ReactNode): Self = StObject.set(x, "getLabel", js.Any.fromFunction1(value))
       
@@ -288,9 +273,9 @@ object libTypescriptSrcTypesMod {
     
     var drawerLockMode: js.UndefOr[DrawerLockMode] = js.undefined
     
-    var drawerPosition: js.UndefOr[left | right] = js.undefined
+    var drawerPosition: js.UndefOr["left" | "right"] = js.undefined
     
-    var drawerType: js.UndefOr[front | back | slide] = js.undefined
+    var drawerType: js.UndefOr["front" | "back" | "slide"] = js.undefined
     
     var drawerWidth: js.UndefOr[Double | js.Function0[Double]] = js.undefined
     
@@ -298,7 +283,7 @@ object libTypescriptSrcTypesMod {
     
     var hideStatusBar: js.UndefOr[Boolean] = js.undefined
     
-    var keyboardDismissMode: js.UndefOr[none | `on-drag`] = js.undefined
+    var keyboardDismissMode: js.UndefOr["none" | "on-drag"] = js.undefined
     
     var minSwipeDistance: js.UndefOr[Double] = js.undefined
     
@@ -306,7 +291,7 @@ object libTypescriptSrcTypesMod {
     
     var screenContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var statusBarAnimation: js.UndefOr[slide | none | fade] = js.undefined
+    var statusBarAnimation: js.UndefOr["slide" | "none" | "fade"] = js.undefined
     
     var swipeDistanceThreshold: js.UndefOr[Double] = js.undefined
     
@@ -339,11 +324,11 @@ object libTypescriptSrcTypesMod {
       
       inline def setDrawerLockModeUndefined: Self = StObject.set(x, "drawerLockMode", js.undefined)
       
-      inline def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
+      inline def setDrawerPosition(value: "left" | "right"): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
       
       inline def setDrawerPositionUndefined: Self = StObject.set(x, "drawerPosition", js.undefined)
       
-      inline def setDrawerType(value: front | back | slide): Self = StObject.set(x, "drawerType", value.asInstanceOf[js.Any])
+      inline def setDrawerType(value: "front" | "back" | "slide"): Self = StObject.set(x, "drawerType", value.asInstanceOf[js.Any])
       
       inline def setDrawerTypeUndefined: Self = StObject.set(x, "drawerType", js.undefined)
       
@@ -361,7 +346,7 @@ object libTypescriptSrcTypesMod {
       
       inline def setHideStatusBarUndefined: Self = StObject.set(x, "hideStatusBar", js.undefined)
       
-      inline def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+      inline def setKeyboardDismissMode(value: "none" | "on-drag"): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
       
       inline def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
       
@@ -379,7 +364,7 @@ object libTypescriptSrcTypesMod {
       
       inline def setScreenContainerStyleUndefined: Self = StObject.set(x, "screenContainerStyle", js.undefined)
       
-      inline def setStatusBarAnimation(value: slide | none | fade): Self = StObject.set(x, "statusBarAnimation", value.asInstanceOf[js.Any])
+      inline def setStatusBarAnimation(value: "slide" | "none" | "fade"): Self = StObject.set(x, "statusBarAnimation", value.asInstanceOf[js.Any])
       
       inline def setStatusBarAnimationUndefined: Self = StObject.set(x, "statusBarAnimation", js.undefined)
       
@@ -455,7 +440,7 @@ object libTypescriptSrcTypesMod {
   
   trait NavigationDrawerRouterConfig extends StObject {
     
-    var backBehavior: js.UndefOr[none | initialRoute | history] = js.undefined
+    var backBehavior: js.UndefOr["none" | "initialRoute" | "history"] = js.undefined
     
     var contentComponent: js.UndefOr[ComponentType[DrawerContentComponentProps]] = js.undefined
     
@@ -476,7 +461,7 @@ object libTypescriptSrcTypesMod {
     
     extension [Self <: NavigationDrawerRouterConfig](x: Self) {
       
-      inline def setBackBehavior(value: none | initialRoute | history): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
+      inline def setBackBehavior(value: "none" | "initialRoute" | "history"): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
       
       inline def setBackBehaviorUndefined: Self = StObject.set(x, "backBehavior", js.undefined)
       

@@ -1,7 +1,7 @@
 package typings.chartJs.anon
 
-import typings.chartJs.mod.FillerControllerDatasetOptions
-import typings.chartJs.mod.LineControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.FillerControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.LineControllerDatasetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

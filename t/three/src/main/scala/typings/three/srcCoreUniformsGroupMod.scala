@@ -4,7 +4,6 @@ import typings.three.srcConstantsMod.Usage
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcCoreEventDispatcherMod.EventDispatcher
 import typings.three.srcCoreUniformMod.Uniform
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object srcCoreUniformsGroupMod {
     
     var id: Double = js.native
     
-    var isUniformsGroup: `true` = js.native
+    var isUniformsGroup: true = js.native
     
     def remove(uniform: Uniform): this.type = js.native
     

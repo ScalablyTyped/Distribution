@@ -10,11 +10,6 @@ import typings.semanticUiReact.distCommonjsCollectionsGridGridRowMod.GridRowProp
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticWIDTHS
-import typings.semanticUiReact.semanticUiReactStrings.equal
-import typings.semanticUiReact.semanticUiReactStrings.horizontally
-import typings.semanticUiReact.semanticUiReactStrings.internally
-import typings.semanticUiReact.semanticUiReactStrings.vertically
-import typings.semanticUiReact.semanticUiReactStrings.very
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,16 +42,7 @@ object distCommonjsCollectionsGridGridMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - typings.semanticUiReact.semanticUiReactStrings.computer
-    - typings.semanticUiReact.semanticUiReactStrings.`computer vertically`
-    - typings.semanticUiReact.semanticUiReactStrings.mobile
-    - typings.semanticUiReact.semanticUiReactStrings.`mobile vertically`
-    - typings.semanticUiReact.semanticUiReactStrings.tablet
-    - typings.semanticUiReact.semanticUiReactStrings.`tablet vertically`
-  */
-  type GridReversedProp = _GridReversedProp | String
+  type GridReversedProp = String | "computer" | ("computer vertically") | "mobile" | ("mobile vertically") | "tablet" | ("tablet vertically")
   
   trait StrictGridProps extends StObject {
     
@@ -64,7 +50,7 @@ object distCommonjsCollectionsGridGridMod extends Shortcut {
     var as: js.UndefOr[Any] = js.undefined
     
     /** A grid can have rows divided into cells. */
-    var celled: js.UndefOr[Boolean | internally] = js.undefined
+    var celled: js.UndefOr[Boolean | "internally"] = js.undefined
     
     /** A grid can have its columns centered. */
     var centered: js.UndefOr[Boolean] = js.undefined
@@ -76,13 +62,13 @@ object distCommonjsCollectionsGridGridMod extends Shortcut {
     var className: js.UndefOr[String] = js.undefined
     
     /** Represents column count per row in Grid. */
-    var columns: js.UndefOr[SemanticWIDTHS | equal] = js.undefined
+    var columns: js.UndefOr[SemanticWIDTHS | "equal"] = js.undefined
     
     /** A grid can be combined with a container to use available layout and alignment. */
     var container: js.UndefOr[Boolean] = js.undefined
     
     /** A grid can have dividers between its columns. */
-    var divided: js.UndefOr[Boolean | vertically] = js.undefined
+    var divided: js.UndefOr[Boolean | "vertically"] = js.undefined
     
     /** A grid can double its column width on tablet and mobile sizes. */
     var doubling: js.UndefOr[Boolean] = js.undefined
@@ -91,10 +77,10 @@ object distCommonjsCollectionsGridGridMod extends Shortcut {
     var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** A grid can preserve its vertical and horizontal gutters on first and last columns. */
-    var padded: js.UndefOr[Boolean | horizontally | vertically] = js.undefined
+    var padded: js.UndefOr[Boolean | "horizontally" | "vertically"] = js.undefined
     
     /** A grid can increase its gutters to allow for more negative space. */
-    var relaxed: js.UndefOr[Boolean | very] = js.undefined
+    var relaxed: js.UndefOr[Boolean | "very"] = js.undefined
     
     /** A grid can specify that its columns should reverse order at different device sizes. */
     var reversed: js.UndefOr[GridReversedProp] = js.undefined
@@ -124,7 +110,7 @@ object distCommonjsCollectionsGridGridMod extends Shortcut {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setCelled(value: Boolean | internally): Self = StObject.set(x, "celled", value.asInstanceOf[js.Any])
+      inline def setCelled(value: Boolean | "internally"): Self = StObject.set(x, "celled", value.asInstanceOf[js.Any])
       
       inline def setCelledUndefined: Self = StObject.set(x, "celled", js.undefined)
       
@@ -140,7 +126,7 @@ object distCommonjsCollectionsGridGridMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setColumns(value: SemanticWIDTHS | equal): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: SemanticWIDTHS | "equal"): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
@@ -148,7 +134,7 @@ object distCommonjsCollectionsGridGridMod extends Shortcut {
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      inline def setDivided(value: Boolean | vertically): Self = StObject.set(x, "divided", value.asInstanceOf[js.Any])
+      inline def setDivided(value: Boolean | "vertically"): Self = StObject.set(x, "divided", value.asInstanceOf[js.Any])
       
       inline def setDividedUndefined: Self = StObject.set(x, "divided", js.undefined)
       
@@ -160,11 +146,11 @@ object distCommonjsCollectionsGridGridMod extends Shortcut {
       
       inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
       
-      inline def setPadded(value: Boolean | horizontally | vertically): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
+      inline def setPadded(value: Boolean | "horizontally" | "vertically"): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
       
       inline def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
       
-      inline def setRelaxed(value: Boolean | very): Self = StObject.set(x, "relaxed", value.asInstanceOf[js.Any])
+      inline def setRelaxed(value: Boolean | "very"): Self = StObject.set(x, "relaxed", value.asInstanceOf[js.Any])
       
       inline def setRelaxedUndefined: Self = StObject.set(x, "relaxed", js.undefined)
       
@@ -189,8 +175,6 @@ object distCommonjsCollectionsGridGridMod extends Shortcut {
       inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     }
   }
-  
-  trait _GridReversedProp extends StObject
   
   type _To = GridComponent
   

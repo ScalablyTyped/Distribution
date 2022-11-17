@@ -1,7 +1,6 @@
 package typings.dayjs
 
 import org.scalablytyped.runtime.Shortcut
-import typings.dayjs.dayjsStrings.`[]`
 import typings.dayjs.mod.ConfigType
 import typings.dayjs.mod.OpUnitType
 import typings.dayjs.mod.PluginFunc
@@ -27,10 +26,16 @@ object pluginIsBetweenMod extends Shortcut {
     trait Dayjs extends StObject {
       
       def isBetween(a: ConfigType, b: ConfigType): Boolean = js.native
-      def isBetween(a: ConfigType, b: ConfigType, c: Null, d: (/* () */ String) | `[]`): Boolean = js.native
-      def isBetween(a: ConfigType, b: ConfigType, c: Unit, d: (/* () */ String) | `[]`): Boolean = js.native
+      @JSName("isBetween")
+      @scala.annotation.targetName("isBetween____")
+      def isBetween(a: ConfigType, b: ConfigType, c: Null, d: (/* () */ String) | "[]"): Boolean = js.native
+      @JSName("isBetween")
+      @scala.annotation.targetName("isBetween____")
+      def isBetween(a: ConfigType, b: ConfigType, c: Unit, d: (/* () */ String) | "[]"): Boolean = js.native
       def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType): Boolean = js.native
-      def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType, d: (/* () */ String) | `[]`): Boolean = js.native
+      @JSName("isBetween")
+      @scala.annotation.targetName("isBetween____")
+      def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType, d: (/* () */ String) | "[]"): Boolean = js.native
     }
   }
 }

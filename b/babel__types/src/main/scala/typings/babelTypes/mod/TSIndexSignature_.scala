@@ -1,16 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSIndexSignature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSIndexSignature_
+trait TSIndexSignature_
   extends StObject
-     with BaseNode
-     with TSTypeElement
-     with TypeScript {
+     with BaseNode {
   
   var parameters: js.Array[Identifier_]
   
@@ -21,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var typeAnnotation: TSTypeAnnotation_ | Null
   
   @JSName("type")
-  var type_TSIndexSignature_ : TSIndexSignature
+  var type_TSIndexSignature_ : "TSIndexSignature"
 }
 object TSIndexSignature_ {
   
@@ -45,7 +41,7 @@ object TSIndexSignature_ {
     
     inline def setStaticNull: Self = StObject.set(x, "static", null)
     
-    inline def setType(value: TSIndexSignature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSIndexSignature"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TSTypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

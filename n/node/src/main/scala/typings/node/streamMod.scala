@@ -12,17 +12,6 @@ import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.eventsMod.Abortable
 import typings.node.nodeColonbufferMod.Blob
-import typings.node.nodeStrings.close
-import typings.node.nodeStrings.data
-import typings.node.nodeStrings.drain
-import typings.node.nodeStrings.end
-import typings.node.nodeStrings.error
-import typings.node.nodeStrings.finish
-import typings.node.nodeStrings.pause
-import typings.node.nodeStrings.pipe
-import typings.node.nodeStrings.readable
-import typings.node.nodeStrings.resume
-import typings.node.nodeStrings.unpipe
 import typings.std.AsyncGeneratorFunction
 import typings.std.AsyncIterable
 import typings.std.AsyncIterator
@@ -196,6 +185,15 @@ object streamMod {
     
     def _read(size: Double): Unit = js.native
     
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_readable")
+    def addListener(event: "readable", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_resume")
+    def addListener(event: "resume", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_pause")
+    def addListener(event: "pause", listener: js.Function0[Unit]): this.type = js.native
     /**
       * Event emitter
       * The defined events on documents including:
@@ -208,19 +206,17 @@ object streamMod {
       * 7. resume
       */
     @JSName("addListener")
-    def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("addListener_close")
+    def addListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
+    @scala.annotation.targetName("addListener_end")
+    def addListener(event: "end", listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("addListener_error")
+    def addListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("addListener_data")
+    def addListener(event: "data", listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     
     /**
       * Is true after 'close' has been emitted.
@@ -249,19 +245,26 @@ object streamMod {
     var destroyed: Boolean = js.native
     
     @JSName("emit")
-    def emit_close(event: close): Boolean = js.native
+    @scala.annotation.targetName("emit_readable")
+    def emit(event: "readable"): Boolean = js.native
     @JSName("emit")
-    def emit_data(event: data, chunk: Any): Boolean = js.native
+    @scala.annotation.targetName("emit_close")
+    def emit(event: "close"): Boolean = js.native
     @JSName("emit")
-    def emit_end(event: end): Boolean = js.native
+    @scala.annotation.targetName("emit_resume")
+    def emit(event: "resume"): Boolean = js.native
     @JSName("emit")
-    def emit_error(event: error, err: js.Error): Boolean = js.native
+    @scala.annotation.targetName("emit_end")
+    def emit(event: "end"): Boolean = js.native
     @JSName("emit")
-    def emit_pause(event: pause): Boolean = js.native
+    @scala.annotation.targetName("emit_pause")
+    def emit(event: "pause"): Boolean = js.native
     @JSName("emit")
-    def emit_readable(event: readable): Boolean = js.native
+    @scala.annotation.targetName("emit_data")
+    def emit(event: "data", chunk: Any): Boolean = js.native
     @JSName("emit")
-    def emit_resume(event: resume): Boolean = js.native
+    @scala.annotation.targetName("emit_error")
+    def emit(event: "error", err: js.Error): Boolean = js.native
     
     /**
       * Returns error if the stream has been destroyed with an error.
@@ -270,64 +273,92 @@ object streamMod {
     val errored: js.Error | Null = js.native
     
     @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("on_resume")
+    def on(event: "resume", listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
+    @scala.annotation.targetName("on_pause")
+    def on(event: "pause", listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("on_close")
+    def on(event: "close", listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @scala.annotation.targetName("on_readable")
+    def on(event: "readable", listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("on_end")
+    def on(event: "end", listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("on_error")
+    def on(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
-    def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("on_data")
+    def on(event: "data", listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     
     @JSName("once")
-    def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("once_pause")
+    def once(event: "pause", listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
+    @scala.annotation.targetName("once_end")
+    def once(event: "end", listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("once_readable")
+    def once(event: "readable", listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @scala.annotation.targetName("once_resume")
+    def once(event: "resume", listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("once_close")
+    def once(event: "close", listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("once_error")
+    def once(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("once")
-    def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("once_data")
+    def once(event: "data", listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     
     @JSName("prependListener")
-    def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_close")
+    def prependListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_pause")
+    def prependListener(event: "pause", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_readable")
+    def prependListener(event: "readable", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_resume")
+    def prependListener(event: "resume", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_end")
+    def prependListener(event: "end", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_data")
+    def prependListener(event: "data", listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_error")
+    def prependListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("prependOnceListener")
-    def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_resume")
+    def prependOnceListener(event: "resume", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_readable")
+    def prependOnceListener(event: "readable", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_end")
+    def prependOnceListener(event: "end", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_close")
+    def prependOnceListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_pause")
+    def prependOnceListener(event: "pause", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_data")
+    def prependOnceListener(event: "data", listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_error")
+    def prependOnceListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     def push(chunk: Any): Boolean = js.native
     def push(chunk: Any, encoding: BufferEncoding): Boolean = js.native
@@ -386,19 +417,26 @@ object streamMod {
     val readableObjectMode: Boolean = js.native
     
     @JSName("removeListener")
-    def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("removeListener_end")
+    def removeListener(event: "end", listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
+    @scala.annotation.targetName("removeListener_pause")
+    def removeListener(event: "pause", listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("removeListener_readable")
+    def removeListener(event: "readable", listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @scala.annotation.targetName("removeListener_resume")
+    def removeListener(event: "resume", listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("removeListener_close")
+    def removeListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("removeListener_data")
+    def removeListener(event: "data", listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("removeListener_error")
+    def removeListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     /**
       * Passing `chunk` as `null` signals the end of the stream (EOF) and behaves the
@@ -569,6 +607,12 @@ object streamMod {
         ]
       ] = js.native
     
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_drain")
+    def addListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_finish")
+    def addListener(event: "finish", listener: js.Function0[Unit]): this.type = js.native
     /**
       * Event emitter
       * The defined events on documents including:
@@ -580,17 +624,17 @@ object streamMod {
       * 6. unpipe
       */
     @JSName("addListener")
-    def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("addListener_close")
+    def addListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("addListener_unpipe")
+    def addListener(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @scala.annotation.targetName("addListener_error")
+    def addListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @scala.annotation.targetName("addListener_pipe")
+    def addListener(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     
     /**
       * Is true after 'close' has been emitted.
@@ -640,17 +684,23 @@ object streamMod {
     var destroyed: Boolean = js.native
     
     @JSName("emit")
-    def emit_close(event: close): Boolean = js.native
+    @scala.annotation.targetName("emit_close")
+    def emit(event: "close"): Boolean = js.native
     @JSName("emit")
-    def emit_drain(event: drain): Boolean = js.native
+    @scala.annotation.targetName("emit_drain")
+    def emit(event: "drain"): Boolean = js.native
     @JSName("emit")
-    def emit_error(event: error, err: js.Error): Boolean = js.native
+    @scala.annotation.targetName("emit_finish")
+    def emit(event: "finish"): Boolean = js.native
     @JSName("emit")
-    def emit_finish(event: finish): Boolean = js.native
+    @scala.annotation.targetName("emit_error")
+    def emit(event: "error", err: js.Error): Boolean = js.native
     @JSName("emit")
-    def emit_pipe(event: pipe, src: Readable): Boolean = js.native
+    @scala.annotation.targetName("emit_unpipe")
+    def emit(event: "unpipe", src: Readable): Boolean = js.native
     @JSName("emit")
-    def emit_unpipe(event: unpipe, src: Readable): Boolean = js.native
+    @scala.annotation.targetName("emit_pipe")
+    def emit(event: "pipe", src: Readable): Boolean = js.native
     
     def end(chunk: Any): this.type = js.native
     def end(chunk: Any, cb: js.Function0[Unit]): this.type = js.native
@@ -664,69 +714,99 @@ object streamMod {
     val errored: js.Error | Null = js.native
     
     @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("on_close")
+    def on(event: "close", listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("on_finish")
+    def on(event: "finish", listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @scala.annotation.targetName("on_drain")
+    def on(event: "drain", listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("on_unpipe")
+    def on(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     @JSName("on")
-    def on_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @scala.annotation.targetName("on_error")
+    def on(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
-    def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @scala.annotation.targetName("on_pipe")
+    def on(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     
     @JSName("once")
-    def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("once_drain")
+    def once(event: "drain", listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("once_finish")
+    def once(event: "finish", listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @scala.annotation.targetName("once_close")
+    def once(event: "close", listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("once_error")
+    def once(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("once")
-    def once_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @scala.annotation.targetName("once_pipe")
+    def once(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     @JSName("once")
-    def once_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @scala.annotation.targetName("once_unpipe")
+    def once(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     
     @JSName("prependListener")
-    def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_finish")
+    def prependListener(event: "finish", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_close")
+    def prependListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_drain")
+    def prependListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_pipe")
+    def prependListener(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_unpipe")
+    def prependListener(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependListener_error")
+    def prependListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("prependOnceListener")
-    def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_drain")
+    def prependOnceListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_close")
+    def prependOnceListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_finish")
+    def prependOnceListener(event: "finish", listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_pipe")
+    def prependOnceListener(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_error")
+    def prependOnceListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @scala.annotation.targetName("prependOnceListener_unpipe")
+    def prependOnceListener(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     
     @JSName("removeListener")
-    def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("removeListener_drain")
+    def removeListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("removeListener_finish")
+    def removeListener(event: "finish", listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @scala.annotation.targetName("removeListener_close")
+    def removeListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
+    @scala.annotation.targetName("removeListener_unpipe")
+    def removeListener(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @scala.annotation.targetName("removeListener_pipe")
+    def removeListener(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @scala.annotation.targetName("removeListener_error")
+    def removeListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     /**
       * The `writable.setDefaultEncoding()` method sets the default `encoding` for a `Writable` stream.

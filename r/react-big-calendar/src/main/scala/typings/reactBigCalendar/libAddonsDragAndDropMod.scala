@@ -10,9 +10,6 @@ import typings.reactBigCalendar.anon.IsAllDay
 import typings.reactBigCalendar.mod.CalendarProps
 import typings.reactBigCalendar.mod.Components_
 import typings.reactBigCalendar.mod.DateLocalizer
-import typings.reactBigCalendar.reactBigCalendarBooleans.`false`
-import typings.reactBigCalendar.reactBigCalendarBooleans.`true`
-import typings.reactBigCalendar.reactBigCalendarStrings.ignoreEvents
 import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -129,7 +126,7 @@ object libAddonsDragAndDropMod {
     
     var resizableAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])] = js.undefined
     
-    var selectable: js.UndefOr[`true` | `false` | ignoreEvents] = js.undefined
+    var selectable: js.UndefOr[true | false | "ignoreEvents"] = js.undefined
     
     var step: js.UndefOr[Double] = js.undefined
   }
@@ -190,7 +187,7 @@ object libAddonsDragAndDropMod {
       
       inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
       
-      inline def setSelectable(value: `true` | `false` | ignoreEvents): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+      inline def setSelectable(value: true | false | "ignoreEvents"): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
       
       inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
       

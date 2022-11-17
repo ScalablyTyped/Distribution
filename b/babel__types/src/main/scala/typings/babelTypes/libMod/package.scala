@@ -13,72 +13,6 @@ import typings.babelTypes.anon.PreserveComments
 import typings.babelTypes.anon.ShapeOf
 import typings.babelTypes.anon.TypePrimitiveTypes
 import typings.babelTypes.anon.TypeT
-import typings.babelTypes.babelTypesBooleans.`false`
-import typings.babelTypes.babelTypesBooleans.`true`
-import typings.babelTypes.babelTypesStrings.Ampersand
-import typings.babelTypes.babelTypesStrings.AmpersandAmpersand
-import typings.babelTypes.babelTypesStrings.Asterisk
-import typings.babelTypes.babelTypesStrings.AsteriskAsterisk
-import typings.babelTypes.babelTypesStrings.BlockStatement
-import typings.babelTypes.babelTypesStrings.ClassBody
-import typings.babelTypes.babelTypesStrings.CommonJS
-import typings.babelTypes.babelTypesStrings.ES
-import typings.babelTypes.babelTypesStrings.EqualssignEqualssign
-import typings.babelTypes.babelTypesStrings.EqualssignEqualssignEqualssign
-import typings.babelTypes.babelTypesStrings.Exclamationmark
-import typings.babelTypes.babelTypesStrings.ExclamationmarkEqualssign
-import typings.babelTypes.babelTypesStrings.ExclamationmarkEqualssignEqualssign
-import typings.babelTypes.babelTypesStrings.Greaterthansign
-import typings.babelTypes.babelTypesStrings.GreaterthansignEqualssign
-import typings.babelTypes.babelTypesStrings.GreaterthansignGreaterthansign
-import typings.babelTypes.babelTypesStrings.GreaterthansignGreaterthansignGreaterthansign
-import typings.babelTypes.babelTypesStrings.Identifier
-import typings.babelTypes.babelTypesStrings.Lessthansign
-import typings.babelTypes.babelTypesStrings.LessthansignEqualssign
-import typings.babelTypes.babelTypesStrings.LessthansignLessthansign
-import typings.babelTypes.babelTypesStrings.Percentsign
-import typings.babelTypes.babelTypesStrings.Plussign
-import typings.babelTypes.babelTypesStrings.PlussignPlussign
-import typings.babelTypes.babelTypesStrings.QuestionmarkQuestionmark
-import typings.babelTypes.babelTypesStrings.Slash
-import typings.babelTypes.babelTypesStrings.StringLiteral
-import typings.babelTypes.babelTypesStrings.Tilde
-import typings.babelTypes.babelTypesStrings.Verticalline
-import typings.babelTypes.babelTypesStrings.VerticallineGreaterthansign
-import typings.babelTypes.babelTypesStrings.VerticallineVerticalline
-import typings.babelTypes.babelTypesStrings.`--`
-import typings.babelTypes.babelTypesStrings.`-_`
-import typings.babelTypes.babelTypesStrings.`null`
-import typings.babelTypes.babelTypesStrings.`object`
-import typings.babelTypes.babelTypesStrings.`throw`
-import typings.babelTypes.babelTypesStrings.`using`
-import typings.babelTypes.babelTypesStrings.`var`
-import typings.babelTypes.babelTypesStrings.array
-import typings.babelTypes.babelTypesStrings.bigint
-import typings.babelTypes.babelTypesStrings.boolean
-import typings.babelTypes.babelTypesStrings.const
-import typings.babelTypes.babelTypesStrings.constructor
-import typings.babelTypes.babelTypesStrings.delete
-import typings.babelTypes.babelTypesStrings.function_
-import typings.babelTypes.babelTypesStrings.get
-import typings.babelTypes.babelTypesStrings.in
-import typings.babelTypes.babelTypesStrings.innerComments
-import typings.babelTypes.babelTypesStrings.instanceof
-import typings.babelTypes.babelTypesStrings.leadingComments
-import typings.babelTypes.babelTypesStrings.let
-import typings.babelTypes.babelTypesStrings.method_
-import typings.babelTypes.babelTypesStrings.minus
-import typings.babelTypes.babelTypesStrings.module
-import typings.babelTypes.babelTypesStrings.number
-import typings.babelTypes.babelTypesStrings.plus
-import typings.babelTypes.babelTypesStrings.script
-import typings.babelTypes.babelTypesStrings.set
-import typings.babelTypes.babelTypesStrings.string
-import typings.babelTypes.babelTypesStrings.symbol
-import typings.babelTypes.babelTypesStrings.trailingComments
-import typings.babelTypes.babelTypesStrings.typeof
-import typings.babelTypes.babelTypesStrings.undefined
-import typings.babelTypes.babelTypesStrings.void
 import typings.babelTypes.libMod.^
 import typings.std.Extract
 import typings.std.Partial
@@ -90,26 +24,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 inline def ACCESSOR_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("ACCESSOR_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("ACCESSOR_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def ASSIGNMENT_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("ASSIGNMENT_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def BINARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("BINARY_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def BINARY_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("BINARY_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("BINARY_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def BLOCKPARENT_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("BLOCKPARENT_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("BLOCKPARENT_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def BLOCK_SCOPED_SYMBOL: js.Symbol = ^.asInstanceOf[js.Dynamic].selectDynamic("BLOCK_SCOPED_SYMBOL").asInstanceOf[js.Symbol]
 
 inline def BLOCK_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("BLOCK_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("BLOCK_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def BOOLEAN_BINARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("BOOLEAN_BINARY_OPERATORS").asInstanceOf[js.Array[String]]
 
@@ -120,128 +54,128 @@ inline def BOOLEAN_UNARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic
 inline def BUILDER_KEYS: Record[String, js.Array[String]] = ^.asInstanceOf[js.Dynamic].selectDynamic("BUILDER_KEYS").asInstanceOf[Record[String, js.Array[String]]]
 
 inline def CLASS_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("CLASS_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("CLASS_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
-inline def COMMENT_KEYS: js.Tuple3[leadingComments, trailingComments, innerComments] = ^.asInstanceOf[js.Dynamic].selectDynamic("COMMENT_KEYS").asInstanceOf[js.Tuple3[leadingComments, trailingComments, innerComments]]
+inline def COMMENT_KEYS: js.Tuple3["leadingComments", "trailingComments", "innerComments"] = ^.asInstanceOf[js.Dynamic].selectDynamic("COMMENT_KEYS").asInstanceOf[js.Tuple3["leadingComments", "trailingComments", "innerComments"]]
 
 inline def COMPARISON_BINARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("COMPARISON_BINARY_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def COMPLETIONSTATEMENT_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("COMPLETIONSTATEMENT_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("COMPLETIONSTATEMENT_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def CONDITIONAL_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("CONDITIONAL_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("CONDITIONAL_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def DECLARATION_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("DECLARATION_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("DECLARATION_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def DEPRECATED_KEYS: Record[String, NodeTypesWithoutComment] = ^.asInstanceOf[js.Dynamic].selectDynamic("DEPRECATED_KEYS").asInstanceOf[Record[String, NodeTypesWithoutComment]]
 
 inline def ENUMBODY_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("ENUMBODY_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("ENUMBODY_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def ENUMMEMBER_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("ENUMMEMBER_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("ENUMMEMBER_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def EQUALITY_BINARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("EQUALITY_BINARY_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def EXPORTDECLARATION_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("EXPORTDECLARATION_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("EXPORTDECLARATION_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def EXPRESSIONWRAPPER_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("EXPRESSIONWRAPPER_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("EXPRESSIONWRAPPER_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def EXPRESSION_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("EXPRESSION_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("EXPRESSION_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def FLATTENABLE_KEYS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLATTENABLE_KEYS").asInstanceOf[js.Array[String]]
 
 inline def FLIPPED_ALIAS_KEYS: Record[String, js.Array[NodeTypesWithoutComment]] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLIPPED_ALIAS_KEYS").asInstanceOf[Record[String, js.Array[NodeTypesWithoutComment]]]
 
 inline def FLOWBASEANNOTATION_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWBASEANNOTATION_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWBASEANNOTATION_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def FLOWDECLARATION_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWDECLARATION_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWDECLARATION_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def FLOWPREDICATE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWPREDICATE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWPREDICATE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def FLOWTYPE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWTYPE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWTYPE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def FLOW_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOW_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOW_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def FORXSTATEMENT_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FORXSTATEMENT_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("FORXSTATEMENT_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def FOR_INIT_KEYS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("FOR_INIT_KEYS").asInstanceOf[js.Array[String]]
 
 inline def FOR_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FOR_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("FOR_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def FUNCTIONPARENT_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FUNCTIONPARENT_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("FUNCTIONPARENT_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def FUNCTION_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FUNCTION_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("FUNCTION_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def IMMUTABLE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("IMMUTABLE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("IMMUTABLE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def JSX_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("JSX_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("JSX_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def LITERAL_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("LITERAL_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("LITERAL_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def LOGICAL_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("LOGICAL_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def LOOP_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("LOOP_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("LOOP_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def LVAL_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("LVAL_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("LVAL_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def METHOD_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("METHOD_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("METHOD_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def MISCELLANEOUS_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("MISCELLANEOUS_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("MISCELLANEOUS_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def MODULEDECLARATION_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("MODULEDECLARATION_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("MODULEDECLARATION_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def MODULESPECIFIER_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("MODULESPECIFIER_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("MODULESPECIFIER_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def NODE_FIELDS: Record[String, FieldDefinitions] = ^.asInstanceOf[js.Dynamic].selectDynamic("NODE_FIELDS").asInstanceOf[Record[String, FieldDefinitions]]
 
@@ -254,111 +188,111 @@ inline def NUMBER_BINARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic
 inline def NUMBER_UNARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("NUMBER_UNARY_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def OBJECTMEMBER_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("OBJECTMEMBER_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("OBJECTMEMBER_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def PATTERNLIKE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PATTERNLIKE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("PATTERNLIKE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def PATTERN_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PATTERN_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("PATTERN_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def PLACEHOLDERS: js.Tuple8[
-Identifier, 
-StringLiteral, 
-typings.babelTypes.babelTypesStrings.Expression, 
-typings.babelTypes.babelTypesStrings.Statement, 
-typings.babelTypes.babelTypesStrings.Declaration, 
-BlockStatement, 
-ClassBody, 
-typings.babelTypes.babelTypesStrings.Pattern] = ^.asInstanceOf[js.Dynamic].selectDynamic("PLACEHOLDERS").asInstanceOf[js.Tuple8[
-Identifier, 
-StringLiteral, 
-typings.babelTypes.babelTypesStrings.Expression, 
-typings.babelTypes.babelTypesStrings.Statement, 
-typings.babelTypes.babelTypesStrings.Declaration, 
-BlockStatement, 
-ClassBody, 
-typings.babelTypes.babelTypesStrings.Pattern]]
+"Identifier", 
+"StringLiteral", 
+"Expression", 
+"Statement", 
+"Declaration", 
+"BlockStatement", 
+"ClassBody", 
+"Pattern"] = ^.asInstanceOf[js.Dynamic].selectDynamic("PLACEHOLDERS").asInstanceOf[js.Tuple8[
+"Identifier", 
+"StringLiteral", 
+"Expression", 
+"Statement", 
+"Declaration", 
+"BlockStatement", 
+"ClassBody", 
+"Pattern"]]
 
 inline def PLACEHOLDERS_ALIAS: Record[String, js.Array[String]] = ^.asInstanceOf[js.Dynamic].selectDynamic("PLACEHOLDERS_ALIAS").asInstanceOf[Record[String, js.Array[String]]]
 
 inline def PLACEHOLDERS_FLIPPED_ALIAS: Record[String, js.Array[String]] = ^.asInstanceOf[js.Dynamic].selectDynamic("PLACEHOLDERS_FLIPPED_ALIAS").asInstanceOf[Record[String, js.Array[String]]]
 
 inline def PRIVATE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PRIVATE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("PRIVATE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def PROPERTY_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PROPERTY_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("PROPERTY_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def PUREISH_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PUREISH_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("PUREISH_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def SCOPABLE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("SCOPABLE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("SCOPABLE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def STANDARDIZED_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("STANDARDIZED_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("STANDARDIZED_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def STATEMENT_OR_BLOCK_KEYS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("STATEMENT_OR_BLOCK_KEYS").asInstanceOf[js.Array[String]]
 
 inline def STATEMENT_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("STATEMENT_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("STATEMENT_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def STRING_UNARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("STRING_UNARY_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def TERMINATORLESS_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TERMINATORLESS_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("TERMINATORLESS_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def TSBASETYPE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSBASETYPE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSBASETYPE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def TSENTITYNAME_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSENTITYNAME_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSENTITYNAME_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def TSTYPEELEMENT_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSTYPEELEMENT_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSTYPEELEMENT_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def TSTYPE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSTYPE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSTYPE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def TYPES: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("TYPES").asInstanceOf[js.Array[String]]
 
 inline def TYPESCRIPT_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TYPESCRIPT_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("TYPESCRIPT_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def UNARYLIKE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("UNARYLIKE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("UNARYLIKE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 inline def UNARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("UNARY_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def UPDATE_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("UPDATE_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def USERWHITESPACABLE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("USERWHITESPACABLE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("USERWHITESPACABLE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 //# sourceMappingURL=valueToNode.d.ts.map
 inline def VISITOR_KEYS: Record[String, js.Array[String]] = ^.asInstanceOf[js.Dynamic].selectDynamic("VISITOR_KEYS").asInstanceOf[Record[String, js.Array[String]]]
 
 inline def WHILE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("WHILE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String] = ^.asInstanceOf[js.Dynamic].selectDynamic("WHILE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ArrayExpression", "AnyTypeAnnotation", "ArgumentPlaceholder" */ String]]
 
 /**
   * Add comment of certain type to a node.
@@ -2212,13 +2146,15 @@ inline def awaitExpression(argument: Expression): AwaitExpression_ = ^.asInstanc
 
 inline def bigIntLiteral(value: String): BigIntLiteral_ = ^.asInstanceOf[js.Dynamic].applyDynamic("bigIntLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[BigIntLiteral_]
 
+@scala.annotation.targetName("binaryExpression_________________in_instanceof_____")
 inline def binaryExpression(
-  operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | typings.babelTypes.babelTypesStrings.^ | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign | VerticallineGreaterthansign,
+  operator: "+" | "-" | "/" | "%" | "*" | "**" | "&" | "|" | ">>" | ">>>" | "<<" | "^" | "==" | "===" | "!=" | "!==" | "in" | "instanceof" | ">" | "<" | ">=" | "<=" | "|>",
   left: Expression,
   right: Expression
 ): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
+@scala.annotation.targetName("binaryExpression_________________in_instanceof_____")
 inline def binaryExpression(
-  operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | typings.babelTypes.babelTypesStrings.^ | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign | VerticallineGreaterthansign,
+  operator: "+" | "-" | "/" | "%" | "*" | "**" | "&" | "|" | ">>" | ">>>" | "<<" | "^" | "==" | "===" | "!=" | "!==" | "in" | "instanceof" | ">" | "<" | ">=" | "<=" | "|>",
   left: PrivateName_,
   right: Expression
 ): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
@@ -2310,8 +2246,9 @@ inline def classExpression(id: Identifier_, superClass: Expression, body: ClassB
 inline def classImplements(id: Identifier_): ClassImplements_ = ^.asInstanceOf[js.Dynamic].applyDynamic("classImplements")(id.asInstanceOf[js.Any]).asInstanceOf[ClassImplements_]
 inline def classImplements(id: Identifier_, typeParameters: TypeParameterInstantiation_): ClassImplements_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classImplements")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[ClassImplements_]
 
+@scala.annotation.targetName("classMethod_get_set_method_constructor")
 inline def classMethod(
-  kind: js.UndefOr[get | set | method_ | constructor],
+  kind: js.UndefOr["get" | "set" | "method" | "constructor"],
   key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
   params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
   body: BlockStatement_,
@@ -2321,14 +2258,16 @@ inline def classMethod(
   async: js.UndefOr[Boolean]
 ): ClassMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[ClassMethod_]
 
+@scala.annotation.targetName("classPrivateMethod_get_set_method")
 inline def classPrivateMethod(
-  kind: get | set | method_,
+  kind: "get" | "set" | "method",
   key: PrivateName_,
   params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
   body: BlockStatement_
 ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
+@scala.annotation.targetName("classPrivateMethod_get_set_method")
 inline def classPrivateMethod(
-  kind: get | set | method_,
+  kind: "get" | "set" | "method",
   key: PrivateName_,
   params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
   body: BlockStatement_,
@@ -2426,21 +2365,22 @@ inline def createFlowUnionType[T /* <: FlowType */](types: js.Array[T]): T | Uni
   */
 inline def createTSUnionType(typeAnnotations: js.Array[TSTypeAnnotation__ | TSType]): TSType = ^.asInstanceOf[js.Dynamic].applyDynamic("createTSUnionType")(typeAnnotations.asInstanceOf[js.Any]).asInstanceOf[TSType]
 
-inline def createTypeAnnotationBasedOnTypeof_bigint(`type`: bigint): AnyTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[AnyTypeAnnotation_]
-
-inline def createTypeAnnotationBasedOnTypeof_boolean(`type`: boolean): BooleanTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[BooleanTypeAnnotation_]
-
-inline def createTypeAnnotationBasedOnTypeof_function(`type`: function_): GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[GenericTypeAnnotation_]
-
-inline def createTypeAnnotationBasedOnTypeof_number(`type`: number): NumberTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[NumberTypeAnnotation_]
-
-inline def createTypeAnnotationBasedOnTypeof_object(`type`: `object`): GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[GenericTypeAnnotation_]
-
-inline def createTypeAnnotationBasedOnTypeof_string(`type`: string): StringTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[StringTypeAnnotation_]
-
-inline def createTypeAnnotationBasedOnTypeof_symbol(`type`: symbol): GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[GenericTypeAnnotation_]
-
-inline def createTypeAnnotationBasedOnTypeof_undefined(`type`: undefined): VoidTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[VoidTypeAnnotation_]
+@scala.annotation.targetName("createTypeAnnotationBasedOnTypeof_boolean")
+inline def createTypeAnnotationBasedOnTypeof(`type`: "boolean"): BooleanTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[BooleanTypeAnnotation_]
+@scala.annotation.targetName("createTypeAnnotationBasedOnTypeof_undefined")
+inline def createTypeAnnotationBasedOnTypeof(`type`: "undefined"): VoidTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[VoidTypeAnnotation_]
+@scala.annotation.targetName("createTypeAnnotationBasedOnTypeof_function")
+inline def createTypeAnnotationBasedOnTypeof(`type`: "function"): GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[GenericTypeAnnotation_]
+@scala.annotation.targetName("createTypeAnnotationBasedOnTypeof_symbol")
+inline def createTypeAnnotationBasedOnTypeof(`type`: "symbol"): GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[GenericTypeAnnotation_]
+@scala.annotation.targetName("createTypeAnnotationBasedOnTypeof_number")
+inline def createTypeAnnotationBasedOnTypeof(`type`: "number"): NumberTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[NumberTypeAnnotation_]
+@scala.annotation.targetName("createTypeAnnotationBasedOnTypeof_object")
+inline def createTypeAnnotationBasedOnTypeof(`type`: "object"): GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[GenericTypeAnnotation_]
+@scala.annotation.targetName("createTypeAnnotationBasedOnTypeof_string")
+inline def createTypeAnnotationBasedOnTypeof(`type`: "string"): StringTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[StringTypeAnnotation_]
+@scala.annotation.targetName("createTypeAnnotationBasedOnTypeof_bigint")
+inline def createTypeAnnotationBasedOnTypeof(`type`: "bigint"): AnyTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[AnyTypeAnnotation_]
 
 //# sourceMappingURL=createTypeAnnotationBasedOnTypeof.d.ts.map
 /**
@@ -2555,9 +2495,11 @@ inline def declareInterface(
 ): DeclareInterface_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareInterface")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[DeclareInterface_]
 
 inline def declareModule(id: Identifier_, body: BlockStatement_): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareModule")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
-inline def declareModule(id: Identifier_, body: BlockStatement_, kind: CommonJS | ES): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareModule")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
+@scala.annotation.targetName("declareModule_CommonJS_ES")
+inline def declareModule(id: Identifier_, body: BlockStatement_, kind: "CommonJS" | "ES"): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareModule")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
 inline def declareModule(id: StringLiteral_, body: BlockStatement_): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareModule")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
-inline def declareModule(id: StringLiteral_, body: BlockStatement_, kind: CommonJS | ES): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareModule")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
+@scala.annotation.targetName("declareModule_CommonJS_ES")
+inline def declareModule(id: StringLiteral_, body: BlockStatement_, kind: "CommonJS" | "ES"): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareModule")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
 
 inline def declareModuleExports(typeAnnotation: TypeAnnotation_): DeclareModuleExports_ = ^.asInstanceOf[js.Dynamic].applyDynamic("declareModuleExports")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[DeclareModuleExports_]
 
@@ -2896,12 +2838,12 @@ inline def genericTypeAnnotation(id: QualifiedTypeIdentifier_, typeParameters: T
 
 //# sourceMappingURL=getBindingIdentifiers.d.ts.map
 inline def getOuterBindingIdentifiers(node: Node): Record[String, js.Array[Identifier_] | Identifier_] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOuterBindingIdentifiers")(node.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.Array[Identifier_] | Identifier_]]
-inline def getOuterBindingIdentifiers(node: Node, duplicates: Boolean): Record[String, js.Array[Identifier_] | Identifier_] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOuterBindingIdentifiers")(node.asInstanceOf[js.Any], duplicates.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Identifier_] | Identifier_]]
-
-inline def getOuterBindingIdentifiers_false(node: Node, duplicates: `false`): Record[String, Identifier_] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOuterBindingIdentifiers")(node.asInstanceOf[js.Any], duplicates.asInstanceOf[js.Any])).asInstanceOf[Record[String, Identifier_]]
-
 //# sourceMappingURL=getBindingIdentifiers.d.ts.map
-inline def getOuterBindingIdentifiers_true(node: Node, duplicates: `true`): Record[String, js.Array[Identifier_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOuterBindingIdentifiers")(node.asInstanceOf[js.Any], duplicates.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Identifier_]]]
+@scala.annotation.targetName("getOuterBindingIdentifiers_true")
+inline def getOuterBindingIdentifiers(node: Node, duplicates: true): Record[String, js.Array[Identifier_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOuterBindingIdentifiers")(node.asInstanceOf[js.Any], duplicates.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Identifier_]]]
+@scala.annotation.targetName("getOuterBindingIdentifiers_false")
+inline def getOuterBindingIdentifiers(node: Node, duplicates: false): Record[String, Identifier_] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOuterBindingIdentifiers")(node.asInstanceOf[js.Any], duplicates.asInstanceOf[js.Any])).asInstanceOf[Record[String, Identifier_]]
+inline def getOuterBindingIdentifiers(node: Node, duplicates: Boolean): Record[String, js.Array[Identifier_] | Identifier_] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOuterBindingIdentifiers")(node.asInstanceOf[js.Any], duplicates.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Identifier_] | Identifier_]]
 
 inline def identifier(name: String): Identifier_ = ^.asInstanceOf[js.Dynamic].applyDynamic("identifier")(name.asInstanceOf[js.Any]).asInstanceOf[Identifier_]
 
@@ -2999,14 +2941,11 @@ inline def is(`type`: String, node: Null, opts: Partial[Node]): /* is @babel/typ
 inline def is(`type`: String, node: Unit, opts: Partial[Node]): /* is @babel/types.@babel/types/lib.Node */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types/lib.Node */ Boolean]
 inline def is(`type`: String, node: Node): /* is @babel/types.@babel/types/lib.Node */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types/lib.Node */ Boolean]
 inline def is(`type`: String, node: Node, opts: Partial[Node]): /* is @babel/types.@babel/types/lib.Node */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types/lib.Node */ Boolean]
-inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any */](`type`: T): /* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean]
-inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any */](`type`: T, node: Node): /* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[/* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean]
-inline def is[P /* <: Node */](`type`: String, node: Null, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-inline def is[P /* <: Node */](`type`: String, node: Unit, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-inline def is[P /* <: Node */](`type`: String, node: Node, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any */, P /* <: Extract[Node, TypeT[T]] */](`type`: T, n: Null, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any */, P /* <: Extract[Node, TypeT[T]] */](`type`: T, n: Unit, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any */, P /* <: Extract[Node, TypeT[T]] */](`type`: T, n: Node, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with "AnyTypeAnnotation", "ArgumentPlaceholder", "ArrayExpression" */ String */](`type`: T): /* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean]
+inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with "AnyTypeAnnotation", "ArgumentPlaceholder", "ArrayExpression" */ String */](`type`: T, node: Node): /* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[/* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean]
+inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with "AnyTypeAnnotation", "ArgumentPlaceholder", "ArrayExpression" */ String */, P /* <: Extract[Node, TypeT[T]] */](`type`: T, n: Null, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with "AnyTypeAnnotation", "ArgumentPlaceholder", "ArrayExpression" */ String */, P /* <: Extract[Node, TypeT[T]] */](`type`: T, n: Unit, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with "AnyTypeAnnotation", "ArgumentPlaceholder", "ArrayExpression" */ String */, P /* <: Extract[Node, TypeT[T]] */](`type`: T, n: Node, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
 
 inline def isAccessor(): /* is @babel/types.@babel/types/lib.Accessor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAccessor")().asInstanceOf[/* is @babel/types.@babel/types/lib.Accessor */ Boolean]
 inline def isAccessor(node: js.Object): /* is @babel/types.@babel/types/lib.Accessor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAccessor")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types/lib.Accessor */ Boolean]
@@ -4734,7 +4673,7 @@ inline def isTupleTypeAnnotation(node: Unit, opts: js.Object): /* is @babel/type
 inline def isType(nodeType: String, targetType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodeType.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def isType(nodeType: Null, targetType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodeType.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def isType(nodeType: Unit, targetType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodeType.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-inline def isType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any */](nodeType: String, targetType: T): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodeType.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+inline def isType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with "AnyTypeAnnotation", "ArgumentPlaceholder", "ArrayExpression" */ String */](nodeType: String, targetType: T): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodeType.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
 
 inline def isTypeAlias(): /* is @babel/types.@babel/types/lib.TypeAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAlias")().asInstanceOf[/* is @babel/types.@babel/types/lib.TypeAlias */ Boolean]
 inline def isTypeAlias(node: js.Object): /* is @babel/types.@babel/types/lib.TypeAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAlias")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types/lib.TypeAlias */ Boolean]
@@ -4886,6 +4825,10 @@ inline def isYieldExpression(node: js.Object): /* is @babel/types.@babel/types/l
 inline def isYieldExpression(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types/lib.YieldExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isYieldExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types/lib.YieldExpression */ Boolean]
 inline def isYieldExpression(node: Null, opts: js.Object): /* is @babel/types.@babel/types/lib.YieldExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isYieldExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types/lib.YieldExpression */ Boolean]
 inline def isYieldExpression(node: Unit, opts: js.Object): /* is @babel/types.@babel/types/lib.YieldExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isYieldExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types/lib.YieldExpression */ Boolean]
+
+inline def is_P[P /* <: Node */](`type`: String, node: Null, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is_P[P /* <: Node */](`type`: String, node: Unit, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is_P[P /* <: Node */](`type`: String, node: Node, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
 
 inline def jSXAttribute_(name: JSXIdentifier__): JSXAttribute__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any]).asInstanceOf[JSXAttribute__]
 inline def jSXAttribute_(name: JSXIdentifier__, value: JSXElement__): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
@@ -5109,11 +5052,8 @@ inline def jsxText(value: String): JSXText__ = ^.asInstanceOf[js.Dynamic].applyD
 
 inline def labeledStatement(label: Identifier_, body: Statement): LabeledStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("labeledStatement")(label.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[LabeledStatement_]
 
-inline def logicalExpression(
-  operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark,
-  left: Expression,
-  right: Expression
-): LogicalExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[LogicalExpression_]
+@scala.annotation.targetName("logicalExpression___")
+inline def logicalExpression(operator: "||" | "&&" | "??", left: Expression, right: Expression): LogicalExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[LogicalExpression_]
 
 inline def matchesPattern(member: Null, `match`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesPattern")(member.asInstanceOf[js.Any], `match`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def matchesPattern(member: Null, `match`: String, allowPartial: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesPattern")(member.asInstanceOf[js.Any], `match`.asInstanceOf[js.Any], allowPartial.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -5137,28 +5077,40 @@ inline def matchesPattern(member: Node, `match`: js.Array[String], allowPartial:
 
 inline def memberExpression(`object`: Expression, property: Expression): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
 inline def memberExpression(`object`: Expression, property: Expression, computed: Boolean): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-inline def memberExpression(`object`: Expression, property: Expression, computed: Boolean, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-inline def memberExpression(`object`: Expression, property: Expression, computed: Unit, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+@scala.annotation.targetName("memberExpression_true_false")
+inline def memberExpression(`object`: Expression, property: Expression, computed: Boolean, optional: true | false): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+@scala.annotation.targetName("memberExpression_true_false")
+inline def memberExpression(`object`: Expression, property: Expression, computed: Unit, optional: true | false): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
 inline def memberExpression(`object`: Expression, property: Identifier_): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
 inline def memberExpression(`object`: Expression, property: Identifier_, computed: Boolean): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-inline def memberExpression(`object`: Expression, property: Identifier_, computed: Boolean, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-inline def memberExpression(`object`: Expression, property: Identifier_, computed: Unit, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+@scala.annotation.targetName("memberExpression_true_false")
+inline def memberExpression(`object`: Expression, property: Identifier_, computed: Boolean, optional: true | false): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+@scala.annotation.targetName("memberExpression_true_false")
+inline def memberExpression(`object`: Expression, property: Identifier_, computed: Unit, optional: true | false): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
 inline def memberExpression(`object`: Expression, property: PrivateName_): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
 inline def memberExpression(`object`: Expression, property: PrivateName_, computed: Boolean): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-inline def memberExpression(`object`: Expression, property: PrivateName_, computed: Boolean, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-inline def memberExpression(`object`: Expression, property: PrivateName_, computed: Unit, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+@scala.annotation.targetName("memberExpression_true_false")
+inline def memberExpression(`object`: Expression, property: PrivateName_, computed: Boolean, optional: true | false): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+@scala.annotation.targetName("memberExpression_true_false")
+inline def memberExpression(`object`: Expression, property: PrivateName_, computed: Unit, optional: true | false): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
 inline def memberExpression(`object`: Super_, property: Expression): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
 inline def memberExpression(`object`: Super_, property: Expression, computed: Boolean): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-inline def memberExpression(`object`: Super_, property: Expression, computed: Boolean, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-inline def memberExpression(`object`: Super_, property: Expression, computed: Unit, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+@scala.annotation.targetName("memberExpression_true_false")
+inline def memberExpression(`object`: Super_, property: Expression, computed: Boolean, optional: true | false): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+@scala.annotation.targetName("memberExpression_true_false")
+inline def memberExpression(`object`: Super_, property: Expression, computed: Unit, optional: true | false): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
 inline def memberExpression(`object`: Super_, property: Identifier_): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
 inline def memberExpression(`object`: Super_, property: Identifier_, computed: Boolean): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-inline def memberExpression(`object`: Super_, property: Identifier_, computed: Boolean, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-inline def memberExpression(`object`: Super_, property: Identifier_, computed: Unit, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+@scala.annotation.targetName("memberExpression_true_false")
+inline def memberExpression(`object`: Super_, property: Identifier_, computed: Boolean, optional: true | false): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+@scala.annotation.targetName("memberExpression_true_false")
+inline def memberExpression(`object`: Super_, property: Identifier_, computed: Unit, optional: true | false): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
 inline def memberExpression(`object`: Super_, property: PrivateName_): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
 inline def memberExpression(`object`: Super_, property: PrivateName_, computed: Boolean): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-inline def memberExpression(`object`: Super_, property: PrivateName_, computed: Boolean, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-inline def memberExpression(`object`: Super_, property: PrivateName_, computed: Unit, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+@scala.annotation.targetName("memberExpression_true_false")
+inline def memberExpression(`object`: Super_, property: PrivateName_, computed: Boolean, optional: true | false): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+@scala.annotation.targetName("memberExpression_true_false")
+inline def memberExpression(`object`: Super_, property: PrivateName_, computed: Unit, optional: true | false): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
 
 inline def metaProperty(meta: Identifier_, property: Identifier_): MetaProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("metaProperty")(meta.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MetaProperty_]
 
@@ -5198,8 +5150,9 @@ inline def numericLiteral(value: Double): NumericLiteral_ = ^.asInstanceOf[js.Dy
 
 inline def objectExpression(properties: js.Array[ObjectMethod_ | ObjectProperty_ | SpreadElement_]): ObjectExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("objectExpression")(properties.asInstanceOf[js.Any]).asInstanceOf[ObjectExpression_]
 
+@scala.annotation.targetName("objectMethod_method_get_set")
 inline def objectMethod(
-  kind: js.UndefOr[method_ | get | set],
+  kind: js.UndefOr["method" | "get" | "set"],
   key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   body: BlockStatement_,
@@ -5368,8 +5321,9 @@ inline def pipelinePrimaryTopicReference(): PipelinePrimaryTopicReference_ = ^.a
 
 inline def pipelineTopicExpression(expression: Expression): PipelineTopicExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pipelineTopicExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[PipelineTopicExpression_]
 
+@scala.annotation.targetName("placeholder_Identifier_StringLiteral_Expression_Statement_Declaration_BlockStatement_ClassBody_Pattern")
 inline def placeholder(
-  expectedNode: Identifier | StringLiteral | typings.babelTypes.babelTypesStrings.Expression | typings.babelTypes.babelTypesStrings.Statement | typings.babelTypes.babelTypesStrings.Declaration | BlockStatement | ClassBody | typings.babelTypes.babelTypesStrings.Pattern,
+  expectedNode: "Identifier" | "StringLiteral" | "Expression" | "Statement" | "Declaration" | "BlockStatement" | "ClassBody" | "Pattern",
   name: Identifier_
 ): Placeholder_ = (^.asInstanceOf[js.Dynamic].applyDynamic("placeholder")(expectedNode.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Placeholder_]
 
@@ -5383,11 +5337,13 @@ inline def privateName(id: Identifier_): PrivateName_ = ^.asInstanceOf[js.Dynami
 
 inline def program(body: js.Array[Statement]): Program_ = ^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any]).asInstanceOf[Program_]
 inline def program(body: js.Array[Statement], directives: js.Array[Directive_]): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any])).asInstanceOf[Program_]
-inline def program(body: js.Array[Statement], directives: js.Array[Directive_], sourceType: module | script): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any])).asInstanceOf[Program_]
+@scala.annotation.targetName("program_script_module")
+inline def program(body: js.Array[Statement], directives: js.Array[Directive_], sourceType: "script" | "module"): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any])).asInstanceOf[Program_]
+@scala.annotation.targetName("program_script_module")
 inline def program(
   body: js.Array[Statement],
   directives: js.Array[Directive_],
-  sourceType: script | module,
+  sourceType: "script" | "module",
   interpreter: InterpreterDirective_
 ): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any], interpreter.asInstanceOf[js.Any])).asInstanceOf[Program_]
 inline def program(
@@ -5396,11 +5352,13 @@ inline def program(
   sourceType: Unit,
   interpreter: InterpreterDirective_
 ): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any], interpreter.asInstanceOf[js.Any])).asInstanceOf[Program_]
-inline def program(body: js.Array[Statement], directives: Unit, sourceType: module | script): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any])).asInstanceOf[Program_]
+@scala.annotation.targetName("program_script_module")
+inline def program(body: js.Array[Statement], directives: Unit, sourceType: "script" | "module"): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any])).asInstanceOf[Program_]
+@scala.annotation.targetName("program_script_module")
 inline def program(
   body: js.Array[Statement],
   directives: Unit,
-  sourceType: script | module,
+  sourceType: "script" | "module",
   interpreter: InterpreterDirective_
 ): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any], interpreter.asInstanceOf[js.Any])).asInstanceOf[Program_]
 inline def program(body: js.Array[Statement], directives: Unit, sourceType: Unit, interpreter: InterpreterDirective_): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any], interpreter.asInstanceOf[js.Any])).asInstanceOf[Program_]
@@ -5435,7 +5393,8 @@ inline def removePropertiesDeep[T /* <: Node */](tree: T, opts: PreserveComments
 /**
   * Dedupe type annotations.
   */
-inline def removeTypeDuplicates_false(nodes: js.Array[js.UndefOr[FlowType | `false` | Null]]): js.Array[FlowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTypeDuplicates")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[FlowType]]
+@scala.annotation.targetName("removeTypeDuplicates_false")
+inline def removeTypeDuplicates(nodes: js.Array[js.UndefOr[FlowType | false | Null]]): js.Array[FlowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTypeDuplicates")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[FlowType]]
 
 inline def restElement(argument: LVal): RestElement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("restElement")(argument.asInstanceOf[js.Any]).asInstanceOf[RestElement_]
 
@@ -5994,14 +5953,13 @@ inline def toComputedKey(node: OptionalMemberExpression_): PrivateName_ | Expres
 inline def toComputedKey(node: OptionalMemberExpression_, key: Expression): PrivateName_ | Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("toComputedKey")(node.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[PrivateName_ | Expression]
 inline def toComputedKey(node: OptionalMemberExpression_, key: PrivateName_): PrivateName_ | Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("toComputedKey")(node.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[PrivateName_ | Expression]
 
-inline def toExpression(node: Class): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("toExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Expression]
 inline def toExpression(node: Expression): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("toExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Expression]
 inline def toExpression(node: ExpressionStatement_): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("toExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Expression]
 inline def toExpression(node: Function): FunctionExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toExpression")(node.asInstanceOf[js.Any]).asInstanceOf[FunctionExpression_]
 
 inline def toExpression_ClassExpression_(node: Class): ClassExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toExpression")(node.asInstanceOf[js.Any]).asInstanceOf[ClassExpression_]
 
-inline def toExpression_Expression(node: Function): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("toExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Expression]
+inline def toExpression_Expression(node: Class | Function): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("toExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Expression]
 
 //# sourceMappingURL=toExpression.d.ts.map
 inline def toIdentifier(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toIdentifier")(input.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -6017,159 +5975,207 @@ inline def toIdentifier(input: String): String = ^.asInstanceOf[js.Dynamic].appl
   */
 inline def toSequenceExpression(nodes: js.Array[Node], scope: Any): js.UndefOr[SequenceExpression_] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSequenceExpression")(nodes.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SequenceExpression_]]
 
+inline def toStatement(node: Class | Function): FunctionDeclaration_ | false = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[FunctionDeclaration_ | false]
+inline def toStatement(node: Class | Function, ignore: Boolean): FunctionDeclaration_ | false = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_ | false]
 inline def toStatement(node: AssignmentExpression_): ExpressionStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[ExpressionStatement_]
 inline def toStatement(node: AssignmentExpression_, ignore: Boolean): ExpressionStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ExpressionStatement_]
-inline def toStatement(node: BlockStatement_): `false` | BlockStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | BlockStatement_]
-inline def toStatement(node: BlockStatement_, ignore: Boolean): `false` | BlockStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | BlockStatement_]
-inline def toStatement(node: BreakStatement_): `false` | BreakStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | BreakStatement_]
-inline def toStatement(node: BreakStatement_, ignore: Boolean): `false` | BreakStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | BreakStatement_]
-inline def toStatement(node: Class): ClassDeclaration_ | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[ClassDeclaration_ | `false`]
-inline def toStatement(node: ClassDeclaration_): `false` | ClassDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | ClassDeclaration_]
-inline def toStatement(node: ClassDeclaration_, ignore: Boolean): `false` | ClassDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | ClassDeclaration_]
-inline def toStatement(node: Class, ignore: Boolean): ClassDeclaration_ | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration_ | `false`]
-inline def toStatement(node: ContinueStatement_): `false` | ContinueStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | ContinueStatement_]
-inline def toStatement(node: ContinueStatement_, ignore: Boolean): `false` | ContinueStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | ContinueStatement_]
-inline def toStatement(node: DebuggerStatement_): `false` | DebuggerStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | DebuggerStatement_]
-inline def toStatement(node: DebuggerStatement_, ignore: Boolean): `false` | DebuggerStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | DebuggerStatement_]
-inline def toStatement(node: DeclareClass_): `false` | DeclareClass_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | DeclareClass_]
-inline def toStatement(node: DeclareClass_, ignore: Boolean): `false` | DeclareClass_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | DeclareClass_]
-inline def toStatement(node: DeclareExportAllDeclaration_): `false` | DeclareExportAllDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | DeclareExportAllDeclaration_]
-inline def toStatement(node: DeclareExportAllDeclaration_, ignore: Boolean): `false` | DeclareExportAllDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | DeclareExportAllDeclaration_]
-inline def toStatement(node: DeclareExportDeclaration_): `false` | DeclareExportDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | DeclareExportDeclaration_]
-inline def toStatement(node: DeclareExportDeclaration_, ignore: Boolean): `false` | DeclareExportDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | DeclareExportDeclaration_]
-inline def toStatement(node: DeclareFunction_): `false` | DeclareFunction_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | DeclareFunction_]
-inline def toStatement(node: DeclareFunction_, ignore: Boolean): `false` | DeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | DeclareFunction_]
-inline def toStatement(node: DeclareInterface_): `false` | DeclareInterface_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | DeclareInterface_]
-inline def toStatement(node: DeclareInterface_, ignore: Boolean): `false` | DeclareInterface_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | DeclareInterface_]
-inline def toStatement(node: DeclareModuleExports_): `false` | DeclareModuleExports_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | DeclareModuleExports_]
-inline def toStatement(node: DeclareModuleExports_, ignore: Boolean): `false` | DeclareModuleExports_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | DeclareModuleExports_]
-inline def toStatement(node: DeclareModule_): `false` | DeclareModule_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | DeclareModule_]
-inline def toStatement(node: DeclareModule_, ignore: Boolean): `false` | DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | DeclareModule_]
-inline def toStatement(node: DeclareOpaqueType_): `false` | DeclareOpaqueType_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | DeclareOpaqueType_]
-inline def toStatement(node: DeclareOpaqueType_, ignore: Boolean): `false` | DeclareOpaqueType_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | DeclareOpaqueType_]
-inline def toStatement(node: DeclareTypeAlias_): `false` | DeclareTypeAlias_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | DeclareTypeAlias_]
-inline def toStatement(node: DeclareTypeAlias_, ignore: Boolean): `false` | DeclareTypeAlias_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | DeclareTypeAlias_]
-inline def toStatement(node: DeclareVariable_): `false` | DeclareVariable_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | DeclareVariable_]
-inline def toStatement(node: DeclareVariable_, ignore: Boolean): `false` | DeclareVariable_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | DeclareVariable_]
-inline def toStatement(node: DoWhileStatement_): `false` | DoWhileStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | DoWhileStatement_]
-inline def toStatement(node: DoWhileStatement_, ignore: Boolean): `false` | DoWhileStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | DoWhileStatement_]
-inline def toStatement(node: EmptyStatement_): `false` | EmptyStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | EmptyStatement_]
-inline def toStatement(node: EmptyStatement_, ignore: Boolean): `false` | EmptyStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | EmptyStatement_]
-inline def toStatement(node: EnumDeclaration_): `false` | EnumDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | EnumDeclaration_]
-inline def toStatement(node: EnumDeclaration_, ignore: Boolean): `false` | EnumDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | EnumDeclaration_]
-inline def toStatement(node: ExportAllDeclaration_): `false` | ExportAllDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | ExportAllDeclaration_]
-inline def toStatement(node: ExportAllDeclaration_, ignore: Boolean): `false` | ExportAllDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | ExportAllDeclaration_]
-inline def toStatement(node: ExportDefaultDeclaration_): `false` | ExportDefaultDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | ExportDefaultDeclaration_]
-inline def toStatement(node: ExportDefaultDeclaration_, ignore: Boolean): `false` | ExportDefaultDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | ExportDefaultDeclaration_]
-inline def toStatement(node: ExportNamedDeclaration_): `false` | ExportNamedDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | ExportNamedDeclaration_]
-inline def toStatement(node: ExportNamedDeclaration_, ignore: Boolean): `false` | ExportNamedDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | ExportNamedDeclaration_]
-inline def toStatement(node: ExpressionStatement_): `false` | ExpressionStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | ExpressionStatement_]
-inline def toStatement(node: ExpressionStatement_, ignore: Boolean): `false` | ExpressionStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | ExpressionStatement_]
-inline def toStatement(node: ForInStatement_): `false` | ForInStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | ForInStatement_]
-inline def toStatement(node: ForInStatement_, ignore: Boolean): `false` | ForInStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | ForInStatement_]
-inline def toStatement(node: ForOfStatement_): `false` | ForOfStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | ForOfStatement_]
-inline def toStatement(node: ForOfStatement_, ignore: Boolean): `false` | ForOfStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | ForOfStatement_]
-inline def toStatement(node: ForStatement_): `false` | ForStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | ForStatement_]
-inline def toStatement(node: ForStatement_, ignore: Boolean): `false` | ForStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | ForStatement_]
-inline def toStatement(node: Function): FunctionDeclaration_ | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[FunctionDeclaration_ | `false`]
-inline def toStatement(node: FunctionDeclaration_): `false` | FunctionDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | FunctionDeclaration_]
-inline def toStatement(node: FunctionDeclaration_, ignore: Boolean): `false` | FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | FunctionDeclaration_]
-inline def toStatement(node: Function, ignore: Boolean): FunctionDeclaration_ | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_ | `false`]
-inline def toStatement(node: IfStatement_): `false` | IfStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | IfStatement_]
-inline def toStatement(node: IfStatement_, ignore: Boolean): `false` | IfStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | IfStatement_]
-inline def toStatement(node: ImportDeclaration_): `false` | ImportDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | ImportDeclaration_]
-inline def toStatement(node: ImportDeclaration_, ignore: Boolean): `false` | ImportDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | ImportDeclaration_]
-inline def toStatement(node: InterfaceDeclaration_): `false` | InterfaceDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | InterfaceDeclaration_]
-inline def toStatement(node: InterfaceDeclaration_, ignore: Boolean): `false` | InterfaceDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | InterfaceDeclaration_]
-inline def toStatement(node: LabeledStatement_): `false` | LabeledStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | LabeledStatement_]
-inline def toStatement(node: LabeledStatement_, ignore: Boolean): `false` | LabeledStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | LabeledStatement_]
-inline def toStatement(node: Node): Statement | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[Statement | `false`]
-inline def toStatement(node: Node, ignore: Boolean): Statement | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[Statement | `false`]
-inline def toStatement(node: OpaqueType_): `false` | OpaqueType_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | OpaqueType_]
-inline def toStatement(node: OpaqueType_, ignore: Boolean): `false` | OpaqueType_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | OpaqueType_]
-inline def toStatement(node: ReturnStatement_): `false` | ReturnStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | ReturnStatement_]
-inline def toStatement(node: ReturnStatement_, ignore: Boolean): `false` | ReturnStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | ReturnStatement_]
-inline def toStatement(node: SwitchStatement_): `false` | SwitchStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | SwitchStatement_]
-inline def toStatement(node: SwitchStatement_, ignore: Boolean): `false` | SwitchStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | SwitchStatement_]
-inline def toStatement(node: TSDeclareFunction__): `false` | TSDeclareFunction__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSDeclareFunction__]
-inline def toStatement(node: TSDeclareFunction__, ignore: Boolean): `false` | TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSDeclareFunction__]
-inline def toStatement(node: TSEnumDeclaration__): `false` | TSEnumDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSEnumDeclaration__]
-inline def toStatement(node: TSEnumDeclaration__, ignore: Boolean): `false` | TSEnumDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSEnumDeclaration__]
-inline def toStatement(node: TSExportAssignment__): `false` | TSExportAssignment__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSExportAssignment__]
-inline def toStatement(node: TSExportAssignment__, ignore: Boolean): `false` | TSExportAssignment__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSExportAssignment__]
-inline def toStatement(node: TSImportEqualsDeclaration__): `false` | TSImportEqualsDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSImportEqualsDeclaration__]
-inline def toStatement(node: TSImportEqualsDeclaration__, ignore: Boolean): `false` | TSImportEqualsDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSImportEqualsDeclaration__]
-inline def toStatement(node: TSInterfaceDeclaration__): `false` | TSInterfaceDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSInterfaceDeclaration__]
-inline def toStatement(node: TSInterfaceDeclaration__, ignore: Boolean): `false` | TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSInterfaceDeclaration__]
-inline def toStatement(node: TSModuleDeclaration__): `false` | TSModuleDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSModuleDeclaration__]
-inline def toStatement(node: TSModuleDeclaration__, ignore: Boolean): `false` | TSModuleDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSModuleDeclaration__]
-inline def toStatement(node: TSNamespaceExportDeclaration__): `false` | TSNamespaceExportDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSNamespaceExportDeclaration__]
-inline def toStatement(node: TSNamespaceExportDeclaration__, ignore: Boolean): `false` | TSNamespaceExportDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSNamespaceExportDeclaration__]
-inline def toStatement(node: TSTypeAliasDeclaration__): `false` | TSTypeAliasDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSTypeAliasDeclaration__]
-inline def toStatement(node: TSTypeAliasDeclaration__, ignore: Boolean): `false` | TSTypeAliasDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSTypeAliasDeclaration__]
-inline def toStatement(node: ThrowStatement_): `false` | ThrowStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | ThrowStatement_]
-inline def toStatement(node: ThrowStatement_, ignore: Boolean): `false` | ThrowStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | ThrowStatement_]
-inline def toStatement(node: TryStatement_): `false` | TryStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TryStatement_]
-inline def toStatement(node: TryStatement_, ignore: Boolean): `false` | TryStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TryStatement_]
-inline def toStatement(node: TypeAlias_): `false` | TypeAlias_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TypeAlias_]
-inline def toStatement(node: TypeAlias_, ignore: Boolean): `false` | TypeAlias_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TypeAlias_]
-inline def toStatement(node: VariableDeclaration_): `false` | VariableDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | VariableDeclaration_]
-inline def toStatement(node: VariableDeclaration_, ignore: Boolean): `false` | VariableDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | VariableDeclaration_]
-inline def toStatement(node: WhileStatement_): `false` | WhileStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | WhileStatement_]
-inline def toStatement(node: WhileStatement_, ignore: Boolean): `false` | WhileStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | WhileStatement_]
-inline def toStatement(node: WithStatement_): `false` | WithStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | WithStatement_]
-inline def toStatement(node: WithStatement_, ignore: Boolean): `false` | WithStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | WithStatement_]
+inline def toStatement(node: BlockStatement_): false | BlockStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | BlockStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: BlockStatement_, ignore: false): BlockStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[BlockStatement_]
+inline def toStatement(node: BlockStatement_, ignore: Boolean): false | BlockStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | BlockStatement_]
+inline def toStatement(node: BreakStatement_): false | BreakStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | BreakStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: BreakStatement_, ignore: false): BreakStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[BreakStatement_]
+inline def toStatement(node: BreakStatement_, ignore: Boolean): false | BreakStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | BreakStatement_]
+inline def toStatement(node: ClassDeclaration_): false | ClassDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | ClassDeclaration_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: ClassDeclaration_, ignore: false): ClassDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration_]
+inline def toStatement(node: ClassDeclaration_, ignore: Boolean): false | ClassDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | ClassDeclaration_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: Class, ignore: false): ClassDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration_]
+inline def toStatement(node: ContinueStatement_): false | ContinueStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | ContinueStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: ContinueStatement_, ignore: false): ContinueStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ContinueStatement_]
+inline def toStatement(node: ContinueStatement_, ignore: Boolean): false | ContinueStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | ContinueStatement_]
+inline def toStatement(node: DebuggerStatement_): false | DebuggerStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | DebuggerStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: DebuggerStatement_, ignore: false): DebuggerStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DebuggerStatement_]
+inline def toStatement(node: DebuggerStatement_, ignore: Boolean): false | DebuggerStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | DebuggerStatement_]
+inline def toStatement(node: DeclareClass_): false | DeclareClass_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | DeclareClass_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: DeclareClass_, ignore: false): DeclareClass_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareClass_]
+inline def toStatement(node: DeclareClass_, ignore: Boolean): false | DeclareClass_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | DeclareClass_]
+inline def toStatement(node: DeclareExportAllDeclaration_): false | DeclareExportAllDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | DeclareExportAllDeclaration_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: DeclareExportAllDeclaration_, ignore: false): DeclareExportAllDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareExportAllDeclaration_]
+inline def toStatement(node: DeclareExportAllDeclaration_, ignore: Boolean): false | DeclareExportAllDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | DeclareExportAllDeclaration_]
+inline def toStatement(node: DeclareExportDeclaration_): false | DeclareExportDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | DeclareExportDeclaration_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: DeclareExportDeclaration_, ignore: false): DeclareExportDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareExportDeclaration_]
+inline def toStatement(node: DeclareExportDeclaration_, ignore: Boolean): false | DeclareExportDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | DeclareExportDeclaration_]
+inline def toStatement(node: DeclareFunction_): false | DeclareFunction_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | DeclareFunction_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: DeclareFunction_, ignore: false): DeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareFunction_]
+inline def toStatement(node: DeclareFunction_, ignore: Boolean): false | DeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | DeclareFunction_]
+inline def toStatement(node: DeclareInterface_): false | DeclareInterface_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | DeclareInterface_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: DeclareInterface_, ignore: false): DeclareInterface_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareInterface_]
+inline def toStatement(node: DeclareInterface_, ignore: Boolean): false | DeclareInterface_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | DeclareInterface_]
+inline def toStatement(node: DeclareModuleExports_): false | DeclareModuleExports_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | DeclareModuleExports_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: DeclareModuleExports_, ignore: false): DeclareModuleExports_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareModuleExports_]
+inline def toStatement(node: DeclareModuleExports_, ignore: Boolean): false | DeclareModuleExports_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | DeclareModuleExports_]
+inline def toStatement(node: DeclareModule_): false | DeclareModule_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | DeclareModule_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: DeclareModule_, ignore: false): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
+inline def toStatement(node: DeclareModule_, ignore: Boolean): false | DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | DeclareModule_]
+inline def toStatement(node: DeclareOpaqueType_): false | DeclareOpaqueType_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | DeclareOpaqueType_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: DeclareOpaqueType_, ignore: false): DeclareOpaqueType_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareOpaqueType_]
+inline def toStatement(node: DeclareOpaqueType_, ignore: Boolean): false | DeclareOpaqueType_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | DeclareOpaqueType_]
+inline def toStatement(node: DeclareTypeAlias_): false | DeclareTypeAlias_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | DeclareTypeAlias_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: DeclareTypeAlias_, ignore: false): DeclareTypeAlias_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareTypeAlias_]
+inline def toStatement(node: DeclareTypeAlias_, ignore: Boolean): false | DeclareTypeAlias_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | DeclareTypeAlias_]
+inline def toStatement(node: DeclareVariable_): false | DeclareVariable_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | DeclareVariable_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: DeclareVariable_, ignore: false): DeclareVariable_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareVariable_]
+inline def toStatement(node: DeclareVariable_, ignore: Boolean): false | DeclareVariable_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | DeclareVariable_]
+inline def toStatement(node: DoWhileStatement_): false | DoWhileStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | DoWhileStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: DoWhileStatement_, ignore: false): DoWhileStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DoWhileStatement_]
+inline def toStatement(node: DoWhileStatement_, ignore: Boolean): false | DoWhileStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | DoWhileStatement_]
+inline def toStatement(node: EmptyStatement_): false | EmptyStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | EmptyStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: EmptyStatement_, ignore: false): EmptyStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[EmptyStatement_]
+inline def toStatement(node: EmptyStatement_, ignore: Boolean): false | EmptyStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | EmptyStatement_]
+inline def toStatement(node: EnumDeclaration_): false | EnumDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | EnumDeclaration_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: EnumDeclaration_, ignore: false): EnumDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration_]
+inline def toStatement(node: EnumDeclaration_, ignore: Boolean): false | EnumDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | EnumDeclaration_]
+inline def toStatement(node: ExportAllDeclaration_): false | ExportAllDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | ExportAllDeclaration_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: ExportAllDeclaration_, ignore: false): ExportAllDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ExportAllDeclaration_]
+inline def toStatement(node: ExportAllDeclaration_, ignore: Boolean): false | ExportAllDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | ExportAllDeclaration_]
+inline def toStatement(node: ExportDefaultDeclaration_): false | ExportDefaultDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | ExportDefaultDeclaration_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: ExportDefaultDeclaration_, ignore: false): ExportDefaultDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ExportDefaultDeclaration_]
+inline def toStatement(node: ExportDefaultDeclaration_, ignore: Boolean): false | ExportDefaultDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | ExportDefaultDeclaration_]
+inline def toStatement(node: ExportNamedDeclaration_): false | ExportNamedDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | ExportNamedDeclaration_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: ExportNamedDeclaration_, ignore: false): ExportNamedDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ExportNamedDeclaration_]
+inline def toStatement(node: ExportNamedDeclaration_, ignore: Boolean): false | ExportNamedDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | ExportNamedDeclaration_]
+inline def toStatement(node: ExpressionStatement_): false | ExpressionStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | ExpressionStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: ExpressionStatement_, ignore: false): ExpressionStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ExpressionStatement_]
+inline def toStatement(node: ExpressionStatement_, ignore: Boolean): false | ExpressionStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | ExpressionStatement_]
+inline def toStatement(node: ForInStatement_): false | ForInStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | ForInStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: ForInStatement_, ignore: false): ForInStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ForInStatement_]
+inline def toStatement(node: ForInStatement_, ignore: Boolean): false | ForInStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | ForInStatement_]
+inline def toStatement(node: ForOfStatement_): false | ForOfStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | ForOfStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: ForOfStatement_, ignore: false): ForOfStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ForOfStatement_]
+inline def toStatement(node: ForOfStatement_, ignore: Boolean): false | ForOfStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | ForOfStatement_]
+inline def toStatement(node: ForStatement_): false | ForStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | ForStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: ForStatement_, ignore: false): ForStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ForStatement_]
+inline def toStatement(node: ForStatement_, ignore: Boolean): false | ForStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | ForStatement_]
+inline def toStatement(node: FunctionDeclaration_): false | FunctionDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | FunctionDeclaration_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: FunctionDeclaration_, ignore: false): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
+inline def toStatement(node: FunctionDeclaration_, ignore: Boolean): false | FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | FunctionDeclaration_]
+inline def toStatement(node: IfStatement_): false | IfStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | IfStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: IfStatement_, ignore: false): IfStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[IfStatement_]
+inline def toStatement(node: IfStatement_, ignore: Boolean): false | IfStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | IfStatement_]
+inline def toStatement(node: ImportDeclaration_): false | ImportDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | ImportDeclaration_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: ImportDeclaration_, ignore: false): ImportDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration_]
+inline def toStatement(node: ImportDeclaration_, ignore: Boolean): false | ImportDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | ImportDeclaration_]
+inline def toStatement(node: InterfaceDeclaration_): false | InterfaceDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | InterfaceDeclaration_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: InterfaceDeclaration_, ignore: false): InterfaceDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration_]
+inline def toStatement(node: InterfaceDeclaration_, ignore: Boolean): false | InterfaceDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | InterfaceDeclaration_]
+inline def toStatement(node: LabeledStatement_): false | LabeledStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | LabeledStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: LabeledStatement_, ignore: false): LabeledStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[LabeledStatement_]
+inline def toStatement(node: LabeledStatement_, ignore: Boolean): false | LabeledStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | LabeledStatement_]
+inline def toStatement(node: Node): Statement | false = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[Statement | false]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: Node, ignore: false): Statement = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[Statement]
+inline def toStatement(node: Node, ignore: Boolean): Statement | false = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[Statement | false]
+inline def toStatement(node: OpaqueType_): false | OpaqueType_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | OpaqueType_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: OpaqueType_, ignore: false): OpaqueType_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[OpaqueType_]
+inline def toStatement(node: OpaqueType_, ignore: Boolean): false | OpaqueType_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | OpaqueType_]
+inline def toStatement(node: ReturnStatement_): false | ReturnStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | ReturnStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: ReturnStatement_, ignore: false): ReturnStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ReturnStatement_]
+inline def toStatement(node: ReturnStatement_, ignore: Boolean): false | ReturnStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | ReturnStatement_]
+inline def toStatement(node: SwitchStatement_): false | SwitchStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | SwitchStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: SwitchStatement_, ignore: false): SwitchStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[SwitchStatement_]
+inline def toStatement(node: SwitchStatement_, ignore: Boolean): false | SwitchStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | SwitchStatement_]
+inline def toStatement(node: TSDeclareFunction__): false | TSDeclareFunction__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | TSDeclareFunction__]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: TSDeclareFunction__, ignore: false): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def toStatement(node: TSDeclareFunction__, ignore: Boolean): false | TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | TSDeclareFunction__]
+inline def toStatement(node: TSEnumDeclaration__): false | TSEnumDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | TSEnumDeclaration__]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: TSEnumDeclaration__, ignore: false): TSEnumDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSEnumDeclaration__]
+inline def toStatement(node: TSEnumDeclaration__, ignore: Boolean): false | TSEnumDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | TSEnumDeclaration__]
+inline def toStatement(node: TSExportAssignment__): false | TSExportAssignment__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | TSExportAssignment__]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: TSExportAssignment__, ignore: false): TSExportAssignment__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSExportAssignment__]
+inline def toStatement(node: TSExportAssignment__, ignore: Boolean): false | TSExportAssignment__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | TSExportAssignment__]
+inline def toStatement(node: TSImportEqualsDeclaration__): false | TSImportEqualsDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | TSImportEqualsDeclaration__]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: TSImportEqualsDeclaration__, ignore: false): TSImportEqualsDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSImportEqualsDeclaration__]
+inline def toStatement(node: TSImportEqualsDeclaration__, ignore: Boolean): false | TSImportEqualsDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | TSImportEqualsDeclaration__]
+inline def toStatement(node: TSInterfaceDeclaration__): false | TSInterfaceDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | TSInterfaceDeclaration__]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: TSInterfaceDeclaration__, ignore: false): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
+inline def toStatement(node: TSInterfaceDeclaration__, ignore: Boolean): false | TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | TSInterfaceDeclaration__]
+inline def toStatement(node: TSModuleDeclaration__): false | TSModuleDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | TSModuleDeclaration__]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: TSModuleDeclaration__, ignore: false): TSModuleDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration__]
+inline def toStatement(node: TSModuleDeclaration__, ignore: Boolean): false | TSModuleDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | TSModuleDeclaration__]
+inline def toStatement(node: TSNamespaceExportDeclaration__): false | TSNamespaceExportDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | TSNamespaceExportDeclaration__]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: TSNamespaceExportDeclaration__, ignore: false): TSNamespaceExportDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSNamespaceExportDeclaration__]
+inline def toStatement(node: TSNamespaceExportDeclaration__, ignore: Boolean): false | TSNamespaceExportDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | TSNamespaceExportDeclaration__]
+inline def toStatement(node: TSTypeAliasDeclaration__): false | TSTypeAliasDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | TSTypeAliasDeclaration__]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: TSTypeAliasDeclaration__, ignore: false): TSTypeAliasDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration__]
+inline def toStatement(node: TSTypeAliasDeclaration__, ignore: Boolean): false | TSTypeAliasDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | TSTypeAliasDeclaration__]
+inline def toStatement(node: ThrowStatement_): false | ThrowStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | ThrowStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: ThrowStatement_, ignore: false): ThrowStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ThrowStatement_]
+inline def toStatement(node: ThrowStatement_, ignore: Boolean): false | ThrowStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | ThrowStatement_]
+inline def toStatement(node: TryStatement_): false | TryStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | TryStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: TryStatement_, ignore: false): TryStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TryStatement_]
+inline def toStatement(node: TryStatement_, ignore: Boolean): false | TryStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | TryStatement_]
+inline def toStatement(node: TypeAlias_): false | TypeAlias_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | TypeAlias_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: TypeAlias_, ignore: false): TypeAlias_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TypeAlias_]
+inline def toStatement(node: TypeAlias_, ignore: Boolean): false | TypeAlias_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | TypeAlias_]
+inline def toStatement(node: VariableDeclaration_): false | VariableDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | VariableDeclaration_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: VariableDeclaration_, ignore: false): VariableDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration_]
+inline def toStatement(node: VariableDeclaration_, ignore: Boolean): false | VariableDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | VariableDeclaration_]
+inline def toStatement(node: WhileStatement_): false | WhileStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | WhileStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: WhileStatement_, ignore: false): WhileStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[WhileStatement_]
+inline def toStatement(node: WhileStatement_, ignore: Boolean): false | WhileStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | WhileStatement_]
+inline def toStatement(node: WithStatement_): false | WithStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[false | WithStatement_]
+@scala.annotation.targetName("toStatement_false")
+inline def toStatement(node: WithStatement_, ignore: false): WithStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[WithStatement_]
+inline def toStatement(node: WithStatement_, ignore: Boolean): false | WithStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[false | WithStatement_]
 
-inline def toStatement_false(node: BlockStatement_, ignore: `false`): BlockStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[BlockStatement_]
-inline def toStatement_false(node: BreakStatement_, ignore: `false`): BreakStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[BreakStatement_]
-inline def toStatement_false(node: ClassDeclaration_, ignore: `false`): ClassDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration_]
-inline def toStatement_false(node: Class, ignore: `false`): ClassDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration_]
-inline def toStatement_false(node: ContinueStatement_, ignore: `false`): ContinueStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ContinueStatement_]
-inline def toStatement_false(node: DebuggerStatement_, ignore: `false`): DebuggerStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DebuggerStatement_]
-inline def toStatement_false(node: DeclareClass_, ignore: `false`): DeclareClass_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareClass_]
-inline def toStatement_false(node: DeclareExportAllDeclaration_, ignore: `false`): DeclareExportAllDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareExportAllDeclaration_]
-inline def toStatement_false(node: DeclareExportDeclaration_, ignore: `false`): DeclareExportDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareExportDeclaration_]
-inline def toStatement_false(node: DeclareFunction_, ignore: `false`): DeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareFunction_]
-inline def toStatement_false(node: DeclareInterface_, ignore: `false`): DeclareInterface_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareInterface_]
-inline def toStatement_false(node: DeclareModuleExports_, ignore: `false`): DeclareModuleExports_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareModuleExports_]
-inline def toStatement_false(node: DeclareModule_, ignore: `false`): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
-inline def toStatement_false(node: DeclareOpaqueType_, ignore: `false`): DeclareOpaqueType_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareOpaqueType_]
-inline def toStatement_false(node: DeclareTypeAlias_, ignore: `false`): DeclareTypeAlias_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareTypeAlias_]
-inline def toStatement_false(node: DeclareVariable_, ignore: `false`): DeclareVariable_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DeclareVariable_]
-inline def toStatement_false(node: DoWhileStatement_, ignore: `false`): DoWhileStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[DoWhileStatement_]
-inline def toStatement_false(node: EmptyStatement_, ignore: `false`): EmptyStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[EmptyStatement_]
-inline def toStatement_false(node: EnumDeclaration_, ignore: `false`): EnumDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration_]
-inline def toStatement_false(node: ExportAllDeclaration_, ignore: `false`): ExportAllDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ExportAllDeclaration_]
-inline def toStatement_false(node: ExportDefaultDeclaration_, ignore: `false`): ExportDefaultDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ExportDefaultDeclaration_]
-inline def toStatement_false(node: ExportNamedDeclaration_, ignore: `false`): ExportNamedDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ExportNamedDeclaration_]
-inline def toStatement_false(node: ExpressionStatement_, ignore: `false`): ExpressionStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ExpressionStatement_]
-inline def toStatement_false(node: ForInStatement_, ignore: `false`): ForInStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ForInStatement_]
-inline def toStatement_false(node: ForOfStatement_, ignore: `false`): ForOfStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ForOfStatement_]
-inline def toStatement_false(node: ForStatement_, ignore: `false`): ForStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ForStatement_]
-inline def toStatement_false(node: FunctionDeclaration_, ignore: `false`): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
-inline def toStatement_false(node: Function, ignore: `false`): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
-inline def toStatement_false(node: IfStatement_, ignore: `false`): IfStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[IfStatement_]
-inline def toStatement_false(node: ImportDeclaration_, ignore: `false`): ImportDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration_]
-inline def toStatement_false(node: InterfaceDeclaration_, ignore: `false`): InterfaceDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration_]
-inline def toStatement_false(node: LabeledStatement_, ignore: `false`): LabeledStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[LabeledStatement_]
-inline def toStatement_false(node: Node, ignore: `false`): Statement = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[Statement]
-inline def toStatement_false(node: OpaqueType_, ignore: `false`): OpaqueType_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[OpaqueType_]
-inline def toStatement_false(node: ReturnStatement_, ignore: `false`): ReturnStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ReturnStatement_]
-inline def toStatement_false(node: SwitchStatement_, ignore: `false`): SwitchStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[SwitchStatement_]
-inline def toStatement_false(node: TSDeclareFunction__, ignore: `false`): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
-inline def toStatement_false(node: TSEnumDeclaration__, ignore: `false`): TSEnumDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSEnumDeclaration__]
-inline def toStatement_false(node: TSExportAssignment__, ignore: `false`): TSExportAssignment__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSExportAssignment__]
-inline def toStatement_false(node: TSImportEqualsDeclaration__, ignore: `false`): TSImportEqualsDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSImportEqualsDeclaration__]
-inline def toStatement_false(node: TSInterfaceDeclaration__, ignore: `false`): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
-inline def toStatement_false(node: TSModuleDeclaration__, ignore: `false`): TSModuleDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration__]
-inline def toStatement_false(node: TSNamespaceExportDeclaration__, ignore: `false`): TSNamespaceExportDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSNamespaceExportDeclaration__]
-inline def toStatement_false(node: TSTypeAliasDeclaration__, ignore: `false`): TSTypeAliasDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration__]
-inline def toStatement_false(node: ThrowStatement_, ignore: `false`): ThrowStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ThrowStatement_]
-inline def toStatement_false(node: TryStatement_, ignore: `false`): TryStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TryStatement_]
-inline def toStatement_false(node: TypeAlias_, ignore: `false`): TypeAlias_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TypeAlias_]
-inline def toStatement_false(node: VariableDeclaration_, ignore: `false`): VariableDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration_]
-inline def toStatement_false(node: WhileStatement_, ignore: `false`): WhileStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[WhileStatement_]
-inline def toStatement_false(node: WithStatement_, ignore: `false`): WithStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[WithStatement_]
+@scala.annotation.targetName("toStatement_FunctionDeclaration__false")
+inline def toStatement_FunctionDeclaration__FunctionDeclaration_(node: Function, ignore: false): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
 
 inline def topicReference(): TopicReference_ = ^.asInstanceOf[js.Dynamic].applyDynamic("topicReference")().asInstanceOf[TopicReference_]
 
@@ -6726,20 +6732,21 @@ inline def typeParameterInstantiation(params: js.Array[FlowType]): TypeParameter
 
 inline def typeofTypeAnnotation(argument: FlowType): TypeofTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("typeofTypeAnnotation")(argument.asInstanceOf[js.Any]).asInstanceOf[TypeofTypeAnnotation_]
 
+@scala.annotation.targetName("unaryExpression_void_throw_delete_____typeof")
+inline def unaryExpression(operator: "void" | "throw" | "delete" | "!" | "+" | "-" | "~" | "typeof", argument: Expression): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
+@scala.annotation.targetName("unaryExpression_void_throw_delete_____typeof")
 inline def unaryExpression(
-  operator: void | `throw` | delete | Exclamationmark | Plussign | `-_` | Tilde | typeof,
-  argument: Expression
-): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-inline def unaryExpression(
-  operator: void | `throw` | delete | Exclamationmark | Plussign | `-_` | Tilde | typeof,
+  operator: "void" | "throw" | "delete" | "!" | "+" | "-" | "~" | "typeof",
   argument: Expression,
   prefix: Boolean
 ): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
 
 inline def unionTypeAnnotation(types: js.Array[FlowType]): UnionTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("unionTypeAnnotation")(types.asInstanceOf[js.Any]).asInstanceOf[UnionTypeAnnotation_]
 
-inline def updateExpression(operator: PlussignPlussign | `--`, argument: Expression): UpdateExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UpdateExpression_]
-inline def updateExpression(operator: PlussignPlussign | `--`, argument: Expression, prefix: Boolean): UpdateExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UpdateExpression_]
+@scala.annotation.targetName("updateExpression__")
+inline def updateExpression(operator: "++" | "--", argument: Expression): UpdateExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UpdateExpression_]
+@scala.annotation.targetName("updateExpression__")
+inline def updateExpression(operator: "++" | "--", argument: Expression, prefix: Boolean): UpdateExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UpdateExpression_]
 
 inline def v8IntrinsicIdentifier(name: String): V8IntrinsicIdentifier_ = ^.asInstanceOf[js.Dynamic].applyDynamic("v8IntrinsicIdentifier")(name.asInstanceOf[js.Any]).asInstanceOf[V8IntrinsicIdentifier_]
 
@@ -6766,12 +6773,14 @@ inline def valueToNode(value: Null): NullLiteral_ = ^.asInstanceOf[js.Dynamic].a
 //# sourceMappingURL=toStatement.d.ts.map
 inline def valueToNode(value: Unit): Identifier_ = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[Identifier_]
 
-inline def variableDeclaration(kind: `var` | let | const | `using`, declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclaration")(kind.asInstanceOf[js.Any], declarations.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration_]
+@scala.annotation.targetName("variableDeclaration_var_let_const_using")
+inline def variableDeclaration(kind: "var" | "let" | "const" | "using", declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclaration")(kind.asInstanceOf[js.Any], declarations.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration_]
 
 inline def variableDeclarator(id: LVal): VariableDeclarator_ = ^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclarator")(id.asInstanceOf[js.Any]).asInstanceOf[VariableDeclarator_]
 inline def variableDeclarator(id: LVal, init: Expression): VariableDeclarator_ = (^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclarator")(id.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[VariableDeclarator_]
 
-inline def variance(kind: minus | plus): Variance_ = ^.asInstanceOf[js.Dynamic].applyDynamic("variance")(kind.asInstanceOf[js.Any]).asInstanceOf[Variance_]
+@scala.annotation.targetName("variance_minus_plus")
+inline def variance(kind: "minus" | "plus"): Variance_ = ^.asInstanceOf[js.Dynamic].applyDynamic("variance")(kind.asInstanceOf[js.Any]).asInstanceOf[Variance_]
 
 inline def voidTypeAnnotation(): VoidTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("voidTypeAnnotation")().asInstanceOf[VoidTypeAnnotation_]
 
@@ -6787,17 +6796,129 @@ inline def yieldExpression(argument: Expression, delegate: Boolean): YieldExpres
 
 type Accessor = ClassAccessorProperty_
 
+type Binary = BinaryExpression_ | LogicalExpression_
+
+type Block = BlockStatement_ | Program_ | TSModuleBlock__
+
+type BlockParent = BlockStatement_ | CatchClause_ | DoWhileStatement_ | ForInStatement_ | ForStatement_ | FunctionDeclaration_ | FunctionExpression_ | Program_ | ObjectMethod_ | SwitchStatement_ | WhileStatement_ | ArrowFunctionExpression_ | ForOfStatement_ | ClassMethod_ | ClassPrivateMethod_ | StaticBlock_ | TSModuleBlock__
+
+type Class = ClassExpression_ | ClassDeclaration_
+
+type Comment = CommentBlock | CommentLine
+
+type CommentTypeShorthand = "leading" | "inner" | "trailing"
+
+type CompletionStatement = BreakStatement_ | ContinueStatement_ | ReturnStatement_ | ThrowStatement_
+
+type Conditional = ConditionalExpression_ | IfStatement_
+
+type Declaration = FunctionDeclaration_ | VariableDeclaration_ | ClassDeclaration_ | ExportAllDeclaration_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ImportDeclaration_ | DeclareClass_ | DeclareFunction_ | DeclareInterface_ | DeclareModule_ | DeclareModuleExports_ | DeclareTypeAlias_ | DeclareOpaqueType_ | DeclareVariable_ | DeclareExportDeclaration_ | DeclareExportAllDeclaration_ | InterfaceDeclaration_ | OpaqueType_ | TypeAlias_ | EnumDeclaration_ | TSDeclareFunction__ | TSInterfaceDeclaration__ | TSTypeAliasDeclaration__ | TSEnumDeclaration__ | TSModuleDeclaration__
+
+type DeprecatedAliases = NumberLiteral1 | RegexLiteral1 | RestProperty1 | SpreadProperty1
+
+type EnumBody = EnumBooleanBody_ | EnumNumberBody_ | EnumStringBody_ | EnumSymbolBody_
+
+type EnumMember = EnumBooleanMember_ | EnumNumberMember_ | EnumStringMember_ | EnumDefaultedMember_
+
+type ExportDeclaration = ExportAllDeclaration_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_
+
+type Expression = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 51, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.AssignmentExpression_, typings.babelTypes.libMod.BinaryExpression_ */ Any
+
+type ExpressionWrapper = ExpressionStatement_ | ParenthesizedExpression_ | TypeCastExpression_
+
 type FieldDefinitions = StringDictionary[FieldOptions]
+
+type Flow = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.AnyTypeAnnotation_, typings.babelTypes.libMod.ArrayTypeAnnotation_, typings.babelTypes.libMod.BooleanTypeAnnotation_ */ Any
+
+type FlowBaseAnnotation = AnyTypeAnnotation_ | BooleanTypeAnnotation_ | NullLiteralTypeAnnotation_ | MixedTypeAnnotation_ | EmptyTypeAnnotation_ | NumberTypeAnnotation_ | StringTypeAnnotation_ | SymbolTypeAnnotation_ | ThisTypeAnnotation_ | VoidTypeAnnotation_
+
+type FlowDeclaration = DeclareClass_ | DeclareFunction_ | DeclareInterface_ | DeclareModule_ | DeclareModuleExports_ | DeclareTypeAlias_ | DeclareOpaqueType_ | DeclareVariable_ | DeclareExportDeclaration_ | DeclareExportAllDeclaration_ | InterfaceDeclaration_ | OpaqueType_ | TypeAlias_
+
+type FlowPredicate = DeclaredPredicate_ | InferredPredicate_
+
+type FlowType = AnyTypeAnnotation_ | ArrayTypeAnnotation_ | BooleanTypeAnnotation_ | BooleanLiteralTypeAnnotation_ | NullLiteralTypeAnnotation_ | ExistsTypeAnnotation_ | FunctionTypeAnnotation_ | GenericTypeAnnotation_ | InterfaceTypeAnnotation_ | IntersectionTypeAnnotation_ | MixedTypeAnnotation_ | EmptyTypeAnnotation_ | NullableTypeAnnotation_ | NumberLiteralTypeAnnotation_ | NumberTypeAnnotation_ | ObjectTypeAnnotation_ | StringLiteralTypeAnnotation_ | StringTypeAnnotation_ | SymbolTypeAnnotation_ | ThisTypeAnnotation_ | TupleTypeAnnotation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_ | VoidTypeAnnotation_ | IndexedAccessType_ | OptionalIndexedAccessType_
+
+type For = ForInStatement_ | ForStatement_ | ForOfStatement_
+
+type ForXStatement = ForInStatement_ | ForOfStatement_
+
+type Function = FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ArrowFunctionExpression_ | ClassMethod_ | ClassPrivateMethod_
+
+type FunctionParent = FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ArrowFunctionExpression_ | ClassMethod_ | ClassPrivateMethod_ | StaticBlock_ | TSModuleBlock__
+
+type Immutable = StringLiteral_ | NumericLiteral_ | NullLiteral_ | BooleanLiteral_ | BigIntLiteral_ | JSXAttribute__ | JSXClosingElement__ | JSXElement__ | JSXExpressionContainer__ | JSXSpreadChild__ | JSXOpeningElement__ | JSXText__ | JSXFragment__ | JSXOpeningFragment__ | JSXClosingFragment__ | DecimalLiteral_
+
+type JSX = JSXAttribute__ | JSXClosingElement__ | JSXElement__ | JSXEmptyExpression__ | JSXExpressionContainer__ | JSXSpreadChild__ | JSXIdentifier__ | JSXMemberExpression__ | JSXNamespacedName__ | JSXOpeningElement__ | JSXSpreadAttribute__ | JSXText__ | JSXFragment__ | JSXOpeningFragment__ | JSXClosingFragment__
+
+type LVal = Identifier_ | MemberExpression_ | RestElement_ | AssignmentPattern_ | ArrayPattern_ | ObjectPattern_ | TSParameterProperty__ | TSAsExpression__ | TSSatisfiesExpression__ | TSTypeAssertion__ | TSNonNullExpression__
+
+type Literal = StringLiteral_ | NumericLiteral_ | NullLiteral_ | BooleanLiteral_ | RegExpLiteral_ | TemplateLiteral_ | BigIntLiteral_ | DecimalLiteral_
+
+type Loop = DoWhileStatement_ | ForInStatement_ | ForStatement_ | WhileStatement_ | ForOfStatement_
+
+type Method = ObjectMethod_ | ClassMethod_ | ClassPrivateMethod_
+
+type Miscellaneous = Noop_ | Placeholder_ | V8IntrinsicIdentifier_
+
+type ModuleDeclaration = ExportAllDeclaration_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ImportDeclaration_
+
+type ModuleSpecifier = ExportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_ | ImportSpecifier_ | ExportNamespaceSpecifier_ | ExportDefaultSpecifier_
+
+type Node = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253, starting with typings.babelTypes.libMod.AnyTypeAnnotation_, typings.babelTypes.libMod.ArgumentPlaceholder_, typings.babelTypes.libMod.ArrayExpression_ */ Any
+
+/* Inlined @babel/types.@babel/types/lib.NodeTypesWithoutComment | @babel/types.@babel/types/lib.Comment['type'] */
+type NodeTypes = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 304, starting with "ClassExpression", "TSArrayType", "Loop" */ String
+
+/* Inlined @babel/types.@babel/types/lib.Node['type'] | keyof @babel/types.@babel/types/lib.Aliases */
+type NodeTypesWithoutComment = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 302, starting with "ClassExpression", "TSArrayType", "Loop" */ String
+
+type ObjectMember = ObjectMethod_ | ObjectProperty_
+
+type Pattern = AssignmentPattern_ | ArrayPattern_ | ObjectPattern_
+
+type PatternLike = Identifier_ | RestElement_ | AssignmentPattern_ | ArrayPattern_ | ObjectPattern_ | TSAsExpression__ | TSSatisfiesExpression__ | TSTypeAssertion__ | TSNonNullExpression__
 
 type PrimitiveTypes = ReturnType[
 js.Function1[
   /* val */ Any, 
-  string | number | bigint | boolean | symbol | undefined | `object` | function_ | `null` | array
+  "string" | "number" | "bigint" | "boolean" | "symbol" | "undefined" | "object" | "function" | "null" | "array"
 ]]
+
+type Private = ClassPrivateProperty_ | ClassPrivateMethod_ | PrivateName_
+
+type Property = ObjectProperty_ | ClassProperty_ | ClassAccessorProperty_ | ClassPrivateProperty_
+
+type Pureish = FunctionDeclaration_ | FunctionExpression_ | StringLiteral_ | NumericLiteral_ | NullLiteral_ | BooleanLiteral_ | RegExpLiteral_ | ArrowFunctionExpression_ | BigIntLiteral_ | DecimalLiteral_
+
+type ReturnedChild = JSXSpreadChild__ | JSXElement__ | JSXFragment__ | Expression
+
+type Scopable = BlockStatement_ | CatchClause_ | DoWhileStatement_ | ForInStatement_ | ForStatement_ | FunctionDeclaration_ | FunctionExpression_ | Program_ | ObjectMethod_ | SwitchStatement_ | WhileStatement_ | ArrowFunctionExpression_ | ClassExpression_ | ClassDeclaration_ | ForOfStatement_ | ClassMethod_ | ClassPrivateMethod_ | StaticBlock_ | TSModuleBlock__
+
+type Standardized = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.AssignmentExpression_, typings.babelTypes.libMod.BinaryExpression_ */ Any
+
+type Statement = BlockStatement_ | BreakStatement_ | ContinueStatement_ | DebuggerStatement_ | DoWhileStatement_ | EmptyStatement_ | ExpressionStatement_ | ForInStatement_ | ForStatement_ | FunctionDeclaration_ | IfStatement_ | LabeledStatement_ | ReturnStatement_ | SwitchStatement_ | ThrowStatement_ | TryStatement_ | VariableDeclaration_ | WhileStatement_ | WithStatement_ | ClassDeclaration_ | ExportAllDeclaration_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForOfStatement_ | ImportDeclaration_ | DeclareClass_ | DeclareFunction_ | DeclareInterface_ | DeclareModule_ | DeclareModuleExports_ | DeclareTypeAlias_ | DeclareOpaqueType_ | DeclareVariable_ | DeclareExportDeclaration_ | DeclareExportAllDeclaration_ | InterfaceDeclaration_ | OpaqueType_ | TypeAlias_ | EnumDeclaration_ | TSDeclareFunction__ | TSInterfaceDeclaration__ | TSTypeAliasDeclaration__ | TSEnumDeclaration__ | TSModuleDeclaration__ | TSImportEqualsDeclaration__ | TSExportAssignment__ | TSNamespaceExportDeclaration__
+
+type TSBaseType = TSAnyKeyword__ | TSBooleanKeyword__ | TSBigIntKeyword__ | TSIntrinsicKeyword__ | TSNeverKeyword__ | TSNullKeyword__ | TSNumberKeyword__ | TSObjectKeyword__ | TSStringKeyword__ | TSSymbolKeyword__ | TSUndefinedKeyword__ | TSUnknownKeyword__ | TSVoidKeyword__ | TSThisType__ | TSLiteralType__
+
+type TSEntityName = Identifier_ | TSQualifiedName__
+
+type TSType = TSAnyKeyword__ | TSBooleanKeyword__ | TSBigIntKeyword__ | TSIntrinsicKeyword__ | TSNeverKeyword__ | TSNullKeyword__ | TSNumberKeyword__ | TSObjectKeyword__ | TSStringKeyword__ | TSSymbolKeyword__ | TSUndefinedKeyword__ | TSUnknownKeyword__ | TSVoidKeyword__ | TSThisType__ | TSFunctionType__ | TSConstructorType__ | TSTypeReference__ | TSTypePredicate__ | TSTypeQuery__ | TSTypeLiteral__ | TSArrayType__ | TSTupleType__ | TSOptionalType__ | TSRestType__ | TSUnionType__ | TSIntersectionType__ | TSConditionalType__ | TSInferType__ | TSParenthesizedType__ | TSTypeOperator__ | TSIndexedAccessType__ | TSMappedType__ | TSLiteralType__ | TSExpressionWithTypeArguments__ | TSImportType__
+
+type TSTypeElement = TSCallSignatureDeclaration__ | TSConstructSignatureDeclaration__ | TSPropertySignature__ | TSMethodSignature__ | TSIndexSignature__
+
+type Terminatorless = BreakStatement_ | ContinueStatement_ | ReturnStatement_ | ThrowStatement_ | YieldExpression_ | AwaitExpression_
 
 //# sourceMappingURL=getOuterBindingIdentifiers.d.ts.map
 type TraversalAncestors = js.Array[Key]
 
 type TraversalHandler[T] = js.ThisFunction3[/* this */ Unit, /* node */ Node, /* parent */ TraversalAncestors, /* state */ T, Unit]
 
+type TypeScript = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.TSParameterProperty__, typings.babelTypes.libMod.TSDeclareFunction__, typings.babelTypes.libMod.TSDeclareMethod__ */ Any
+
+type UnaryLike = UnaryExpression_ | SpreadElement_
+
+type UserWhitespacable = ObjectMethod_ | ObjectProperty_ | ObjectTypeInternalSlot_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_
+
 type Validator = (TypePrimitiveTypes & (js.Function3[/* node */ Node, /* key */ String, /* val */ Any, Unit])) | (Each & (js.Function3[/* node */ Node, /* key */ String, /* val */ Any, Unit])) | (ChainOf & (js.Function3[/* node */ Node, /* key */ String, /* val */ Any, Unit])) | (OneOf & (js.Function3[/* node */ Node, /* key */ String, /* val */ Any, Unit])) | (OneOfNodeTypes & (js.Function3[/* node */ Node, /* key */ String, /* val */ Any, Unit])) | (OneOfNodeOrValueTypes & (js.Function3[/* node */ Node, /* key */ String, /* val */ Any, Unit])) | (ShapeOf & (js.Function3[/* node */ Node, /* key */ String, /* val */ Any, Unit])) | (js.Object & (js.Function3[/* node */ Node, /* key */ String, /* val */ Any, Unit]))
+
+type While = DoWhileStatement_ | WhileStatement_

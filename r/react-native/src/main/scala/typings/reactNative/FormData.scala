@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FormData
-  extends StObject
-     with _BodyInit {
+trait FormData extends StObject {
   
   def append(name: String, value: Any): Unit
   

@@ -2,9 +2,6 @@ package typings.angularCompilerCli
 
 import typings.angularCompiler.mod.InputOutputPropertySet
 import typings.angularCompiler.mod.SchemaMetadata
-import typings.angularCompilerCli.angularCompilerCliStrings.binding
-import typings.angularCompilerCli.angularCompilerCliStrings.dynamic
-import typings.angularCompilerCli.angularCompilerCliStrings.invocation
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetaKind.Directive
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetaKind.NgModule
@@ -60,7 +57,7 @@ object srcNgtscMetadataSrcApiMod {
       * A value of `'dynamic'` indicates that while the analyzer detected that this directive extends
       * another type, it could not statically determine the base class.
       */
-    var baseClass: Reference[ClassDeclaration[DeclarationNode]] | dynamic | Null
+    var baseClass: Reference[ClassDeclaration[DeclarationNode]] | "dynamic" | Null
     
     /**
       * The primary decorator associated with this directive.
@@ -123,7 +120,7 @@ object srcNgtscMetadataSrcApiMod {
     
     extension [Self <: DirectiveMeta](x: Self) {
       
-      inline def setBaseClass(value: Reference[ClassDeclaration[DeclarationNode]] | dynamic): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
+      inline def setBaseClass(value: Reference[ClassDeclaration[DeclarationNode]] | "dynamic"): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
       
       inline def setBaseClassNull: Self = StObject.set(x, "baseClass", null)
       
@@ -447,11 +444,11 @@ object srcNgtscMetadataSrcApiMod {
       *   type can result in narrowing of the input type.
       * - 'binding' means that the input binding expression itself is used as template guard.
       */
-    var `type`: invocation | binding
+    var `type`: "invocation" | "binding"
   }
   object TemplateGuardMeta {
     
-    inline def apply(inputName: String, `type`: invocation | binding): TemplateGuardMeta = {
+    inline def apply(inputName: String, `type`: "invocation" | "binding"): TemplateGuardMeta = {
       val __obj = js.Dynamic.literal(inputName = inputName.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TemplateGuardMeta]
@@ -461,7 +458,7 @@ object srcNgtscMetadataSrcApiMod {
       
       inline def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
       
-      inline def setType(value: invocation | binding): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "invocation" | "binding"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

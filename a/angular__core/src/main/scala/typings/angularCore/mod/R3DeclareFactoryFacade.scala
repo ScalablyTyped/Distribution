@@ -1,13 +1,12 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreStrings.invalid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait R3DeclareFactoryFacade extends StObject {
   
-  var deps: js.Array[R3DeclareDependencyMetadataFacade] | invalid | Null
+  var deps: js.Array[R3DeclareDependencyMetadataFacade] | "invalid" | Null
   
   var target: ɵɵFactoryTarget
   
@@ -23,7 +22,7 @@ object R3DeclareFactoryFacade {
   
   extension [Self <: R3DeclareFactoryFacade](x: Self) {
     
-    inline def setDeps(value: js.Array[R3DeclareDependencyMetadataFacade] | invalid): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[R3DeclareDependencyMetadataFacade] | "invalid"): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     inline def setDepsNull: Self = StObject.set(x, "deps", null)
     

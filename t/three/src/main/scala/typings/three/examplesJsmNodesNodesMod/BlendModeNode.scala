@@ -20,21 +20,21 @@ object BlendModeNode {
   
   @JSImport("three/examples/jsm/nodes/Nodes", "BlendModeNode.BURN")
   @js.native
-  def BURN: typings.three.threeStrings.burn = js.native
-  inline def BURN_=(x: typings.three.threeStrings.burn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BURN")(x.asInstanceOf[js.Any])
+  def BURN: "burn" = js.native
+  inline def BURN_=(x: "burn"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BURN")(x.asInstanceOf[js.Any])
   
   @JSImport("three/examples/jsm/nodes/Nodes", "BlendModeNode.DODGE")
   @js.native
-  def DODGE: typings.three.threeStrings.dodge = js.native
-  inline def DODGE_=(x: typings.three.threeStrings.dodge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DODGE")(x.asInstanceOf[js.Any])
+  def DODGE: "dodge" = js.native
+  inline def DODGE_=(x: "dodge"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DODGE")(x.asInstanceOf[js.Any])
   
   @JSImport("three/examples/jsm/nodes/Nodes", "BlendModeNode.OVERLAY")
   @js.native
-  def OVERLAY: typings.three.threeStrings.overlay = js.native
-  inline def OVERLAY_=(x: typings.three.threeStrings.overlay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OVERLAY")(x.asInstanceOf[js.Any])
+  def OVERLAY: "overlay" = js.native
+  inline def OVERLAY_=(x: "overlay"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OVERLAY")(x.asInstanceOf[js.Any])
   
   @JSImport("three/examples/jsm/nodes/Nodes", "BlendModeNode.SCREEN")
   @js.native
-  def SCREEN: typings.three.threeStrings.screen = js.native
-  inline def SCREEN_=(x: typings.three.threeStrings.screen): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCREEN")(x.asInstanceOf[js.Any])
+  def SCREEN: "screen" = js.native
+  inline def SCREEN_=(x: "screen"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCREEN")(x.asInstanceOf[js.Any])
 }

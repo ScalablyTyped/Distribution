@@ -1,50 +1,38 @@
 package typings.chartJs.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.typesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.TimeSeriesScale<chart.js.chart.js.TimeScaleOptions>, new <O extends chart.js.chart.js.TimeScaleOptions = chart.js.chart.js.TimeScaleOptions>(cfg : chart.js.chart.js/types/basic.AnyObject): chart.js.chart.js.TimeSeriesScale<O>} */
-object TimeSeriesScale {
+@js.native
+trait TimeSeriesScale extends TimeScale {
   
-  @JSImport("chart.js", "TimeSeriesScale")
-  @js.native
-  val ^ : js.Any = js.native
+  /**
+    * Returns all timestamps
+    * @return {number[]}
+    * @private
+    */
+  /* private */ var _getTimestampsForTable: Any = js.native
   
-  @JSImport("chart.js", "TimeSeriesScale.afterRegister")
-  @js.native
-  def afterRegister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def afterRegister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterRegister")(x.asInstanceOf[js.Any])
+  /** @type {number} */
+  var _minPos: Double = js.native
   
-  @JSImport("chart.js", "TimeSeriesScale.afterUnregister")
-  @js.native
-  def afterUnregister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def afterUnregister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterUnregister")(x.asInstanceOf[js.Any])
+  /** @type {object[]} */
+  var _table: js.Array[js.Object] = js.native
   
-  @JSImport("chart.js", "TimeSeriesScale.beforeRegister")
-  @js.native
-  def beforeRegister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def beforeRegister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeRegister")(x.asInstanceOf[js.Any])
+  /** @type {number} */
+  var _tableRange: Double = js.native
   
-  @JSImport("chart.js", "TimeSeriesScale.beforeUnregister")
-  @js.native
-  def beforeUnregister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def beforeUnregister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeUnregister")(x.asInstanceOf[js.Any])
-  
-  @JSImport("chart.js", "TimeSeriesScale.defaultRoutes")
-  @js.native
-  def defaultRoutes: js.UndefOr[StringDictionary[String]] = js.native
-  inline def defaultRoutes_=(x: js.UndefOr[StringDictionary[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultRoutes")(x.asInstanceOf[js.Any])
-  
-  @JSImport("chart.js", "TimeSeriesScale.defaults")
-  @js.native
-  def defaults: js.UndefOr[AnyObject] = js.native
-  inline def defaults_=(x: js.UndefOr[AnyObject]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
-  
-  @JSImport("chart.js", "TimeSeriesScale.id")
-  @js.native
-  def id: String = js.native
-  inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  /**
+    * Returns an array of {time, pos} objects used to interpolate a specific `time` or position
+    * (`pos`) on the scale, by searching entries before and after the requested value. `pos` is
+    * a decimal between 0 and 1: 0 being the start of the scale (left or top) and 1 the other
+    * extremity (left + width or top + height). Note that it would be more optimized to directly
+    * store pre-computed pixels, but the scale dimensions are not guaranteed at the time we need
+    * to create the lookup table. The table ALWAYS contains at least two items: min and max.
+    * @param {number[]} timestamps
+    * @return {object[]}
+    * @protected
+    */
+  /* protected */ def buildLookupTable(timestamps: js.Array[Double]): js.Array[js.Object] = js.native
 }

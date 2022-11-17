@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeParameterDeclaration
   extends StObject
-     with NamedDeclaration
-     with HasModifiers {
+     with NamedDeclaration {
   
   val default: js.UndefOr[TypeNode] = js.native
   

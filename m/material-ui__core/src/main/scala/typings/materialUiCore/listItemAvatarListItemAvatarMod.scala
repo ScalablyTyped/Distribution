@@ -17,17 +17,13 @@ object listItemAvatarListItemAvatarMod {
   
   inline def default(props: ListItemAvatarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.icon
-  */
-  trait ListItemAvatarClassKey extends StObject
   object ListItemAvatarClassKey {
     
-    inline def icon: typings.materialUiCore.materialUiCoreStrings.icon = "icon".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.icon]
+    inline def icon: "icon" = "icon".asInstanceOf["icon"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
   }
+  type ListItemAvatarClassKey = "root" | "icon"
   
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<{}, @material-ui/core.@material-ui/core/ListItemAvatar/ListItemAvatar.ListItemAvatarClassKey, never> */
   trait ListItemAvatarProps extends StObject {

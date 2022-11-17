@@ -1,8 +1,6 @@
 package typings.vueCompilerCore.mod
 
 import typings.sourceMap.mod.SourceMapGenerator
-import typings.vueCompilerCore.vueCompilerCoreStrings.function
-import typings.vueCompilerCore.vueCompilerCoreStrings.module
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +32,7 @@ trait CodegenContext extends StObject {
   
   var map: js.UndefOr[SourceMapGenerator] = js.native
   
-  var mode: module | function = js.native
+  var mode: "module" | "function" = js.native
   
   def newline(): Unit = js.native
   

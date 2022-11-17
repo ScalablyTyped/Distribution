@@ -1,17 +1,15 @@
 package typings.typescript.mod
 
-import typings.typescript.typescriptBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ScopedEmitHelper
   extends StObject
-     with EmitHelperBase
-     with EmitHelper {
+     with EmitHelperBase {
   
   @JSName("scoped")
-  val scoped_ScopedEmitHelper: `true`
+  val scoped_ScopedEmitHelper: true
 }
 object ScopedEmitHelper {
   
@@ -25,6 +23,6 @@ object ScopedEmitHelper {
   
   extension [Self <: ScopedEmitHelper](x: Self) {
     
-    inline def setScoped(value: `true`): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
+    inline def setScoped(value: true): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
   }
 }

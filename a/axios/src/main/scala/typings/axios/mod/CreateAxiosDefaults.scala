@@ -3,7 +3,6 @@ package typings.axios.mod
 import typings.axios.anon.FormData
 import typings.axios.anon.Headers
 import typings.axios.anon.PartialHeadersDefaults
-import typings.axios.axiosBooleans.`false`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -58,7 +57,7 @@ trait CreateAxiosDefaults[D] extends StObject {
   
   var paramsSerializer: js.UndefOr[ParamsSerializerOptions] = js.undefined
   
-  var proxy: js.UndefOr[AxiosProxyConfig | `false`] = js.undefined
+  var proxy: js.UndefOr[AxiosProxyConfig | false] = js.undefined
   
   var responseEncoding: js.UndefOr[typings.axios.mod.responseEncoding | String] = js.undefined
   
@@ -185,7 +184,7 @@ object CreateAxiosDefaults {
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setProxy(value: AxiosProxyConfig | `false`): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: AxiosProxyConfig | false): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     

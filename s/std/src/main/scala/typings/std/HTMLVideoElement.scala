@@ -1,7 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.enterpictureinpicture
-import typings.std.stdStrings.leavepictureinpicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,52 +8,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLVideoElement
   extends StObject
-     with HTMLMediaElement
-     with CanvasImageSource
-     with TexImageSource {
+     with HTMLMediaElement {
   
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(
-    `type`: java.lang.String,
-    callback: EventListenerOrEventListenerObject,
-    options: AddEventListenerOptions
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_leavepictureinpicture")
+  def addEventListener(
+    `type`: "leavepictureinpicture",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
   ): Unit = js.native
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_enterpictureinpicture(
-    `type`: enterpictureinpicture,
+  @scala.annotation.targetName("addEventListener_enterpictureinpicture")
+  def addEventListener(
+    `type`: "enterpictureinpicture",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_enterpictureinpicture(
-    `type`: enterpictureinpicture,
+  @scala.annotation.targetName("addEventListener_enterpictureinpicture")
+  def addEventListener(
+    `type`: "enterpictureinpicture",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_enterpictureinpicture(
-    `type`: enterpictureinpicture,
+  @scala.annotation.targetName("addEventListener_leavepictureinpicture")
+  def addEventListener(
+    `type`: "leavepictureinpicture",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_enterpictureinpicture")
+  def addEventListener(
+    `type`: "enterpictureinpicture",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_leavepictureinpicture(
-    `type`: leavepictureinpicture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_leavepictureinpicture(
-    `type`: leavepictureinpicture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_leavepictureinpicture(
-    `type`: leavepictureinpicture,
+  @scala.annotation.targetName("addEventListener_leavepictureinpicture")
+  def addEventListener(
+    `type`: "leavepictureinpicture",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -87,48 +79,44 @@ trait HTMLVideoElement
   /* standard dom */
   var poster: java.lang.String = js.native
   
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(
-    `type`: java.lang.String,
-    callback: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_leavepictureinpicture")
+  def removeEventListener(
+    `type`: "leavepictureinpicture",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
   ): Unit = js.native
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_enterpictureinpicture(
-    `type`: enterpictureinpicture,
+  @scala.annotation.targetName("removeEventListener_enterpictureinpicture")
+  def removeEventListener(
+    `type`: "enterpictureinpicture",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_enterpictureinpicture(
-    `type`: enterpictureinpicture,
+  @scala.annotation.targetName("removeEventListener_enterpictureinpicture")
+  def removeEventListener(
+    `type`: "enterpictureinpicture",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_enterpictureinpicture(
-    `type`: enterpictureinpicture,
+  @scala.annotation.targetName("removeEventListener_leavepictureinpicture")
+  def removeEventListener(
+    `type`: "leavepictureinpicture",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_enterpictureinpicture")
+  def removeEventListener(
+    `type`: "enterpictureinpicture",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_leavepictureinpicture(
-    `type`: leavepictureinpicture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_leavepictureinpicture(
-    `type`: leavepictureinpicture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_leavepictureinpicture(
-    `type`: leavepictureinpicture,
+  @scala.annotation.targetName("removeEventListener_leavepictureinpicture")
+  def removeEventListener(
+    `type`: "leavepictureinpicture",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

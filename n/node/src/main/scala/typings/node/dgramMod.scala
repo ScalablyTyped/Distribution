@@ -5,13 +5,6 @@ import typings.node.bufferMod.global.Buffer
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.eventsMod.Abortable
 import typings.node.netMod.AddressInfo
-import typings.node.nodeStrings.IPv4
-import typings.node.nodeStrings.IPv6
-import typings.node.nodeStrings.close
-import typings.node.nodeStrings.connect
-import typings.node.nodeStrings.error
-import typings.node.nodeStrings.listening
-import typings.node.nodeStrings.message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,6 +26,21 @@ object dgramMod {
   @js.native
   open class Socket () extends StObject {
     
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_listening")
+    def addListener(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_close")
+    def addListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_connect")
+    def addListener(event: "connect", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_error")
+    def addListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("addListener")
+    @scala.annotation.targetName("addListener_message")
+    def addListener(event: "message", listener: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): this.type = js.native
     /**
       * events.EventEmitter
       * 1. close
@@ -42,16 +50,6 @@ object dgramMod {
       * 5. message
       */
     def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_message(event: message, listener: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): this.type = js.native
     
     /**
       * Tells the kernel to join a multicast group at the given `multicastAddress` and`multicastInterface` using the `IP_ADD_MEMBERSHIP` socket option. If the`multicastInterface` argument is not
@@ -224,18 +222,23 @@ object dgramMod {
     def dropSourceSpecificMembership(sourceAddress: String, groupAddress: String): Unit = js.native
     def dropSourceSpecificMembership(sourceAddress: String, groupAddress: String, multicastInterface: String): Unit = js.native
     
+    @JSName("emit")
+    @scala.annotation.targetName("emit_listening")
+    def emit(event: "listening"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_close")
+    def emit(event: "close"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_connect")
+    def emit(event: "connect"): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_error")
+    def emit(event: "error", err: js.Error): Boolean = js.native
+    @JSName("emit")
+    @scala.annotation.targetName("emit_message")
+    def emit(event: "message", msg: Buffer, rinfo: RemoteInfo): Boolean = js.native
     def emit(event: String, args: Any*): Boolean = js.native
     def emit(event: js.Symbol, args: Any*): Boolean = js.native
-    @JSName("emit")
-    def emit_close(event: close): Boolean = js.native
-    @JSName("emit")
-    def emit_connect(event: connect): Boolean = js.native
-    @JSName("emit")
-    def emit_error(event: error, err: js.Error): Boolean = js.native
-    @JSName("emit")
-    def emit_listening(event: listening): Boolean = js.native
-    @JSName("emit")
-    def emit_message(event: message, msg: Buffer, rinfo: RemoteInfo): Boolean = js.native
     
     /**
       * This method throws `ERR_SOCKET_BUFFER_SIZE` if called on an unbound socket.
@@ -251,53 +254,73 @@ object dgramMod {
       */
     def getSendBufferSize(): Double = js.native
     
+    @JSName("on")
+    @scala.annotation.targetName("on_close")
+    def on(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_listening")
+    def on(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_connect")
+    def on(event: "connect", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_error")
+    def on(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("on")
+    @scala.annotation.targetName("on_message")
+    def on(event: "message", listener: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): this.type = js.native
     def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_message(event: message, listener: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): this.type = js.native
     
+    @JSName("once")
+    @scala.annotation.targetName("once_connect")
+    def once(event: "connect", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_listening")
+    def once(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_close")
+    def once(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_error")
+    def once(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("once")
+    @scala.annotation.targetName("once_message")
+    def once(event: "message", listener: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): this.type = js.native
     def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("once")
-    def once_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_message(event: message, listener: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): this.type = js.native
     
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_close")
+    def prependListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_listening")
+    def prependListener(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_connect")
+    def prependListener(event: "connect", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_error")
+    def prependListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("prependListener")
+    @scala.annotation.targetName("prependListener_message")
+    def prependListener(event: "message", listener: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): this.type = js.native
     def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_message(event: message, listener: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): this.type = js.native
     
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_connect")
+    def prependOnceListener(event: "connect", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_listening")
+    def prependOnceListener(event: "listening", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_close")
+    def prependOnceListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_error")
+    def prependOnceListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    @scala.annotation.targetName("prependOnceListener_message")
+    def prependOnceListener(event: "message", listener: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): this.type = js.native
     def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_message(event: message, listener: js.Function2[/* msg */ Buffer, /* rinfo */ RemoteInfo, Unit]): this.type = js.native
     
     /**
       * By default, binding a socket will cause it to block the Node.js process from
@@ -857,7 +880,7 @@ object dgramMod {
     
     var address: String
     
-    var family: IPv4 | IPv6
+    var family: "IPv4" | "IPv6"
     
     var port: Double
     
@@ -865,7 +888,7 @@ object dgramMod {
   }
   object RemoteInfo {
     
-    inline def apply(address: String, family: IPv4 | IPv6, port: Double, size: Double): RemoteInfo = {
+    inline def apply(address: String, family: "IPv4" | "IPv6", port: Double, size: Double): RemoteInfo = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoteInfo]
     }
@@ -874,7 +897,7 @@ object dgramMod {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      inline def setFamily(value: IPv4 | IPv6): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: "IPv4" | "IPv6"): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
@@ -944,15 +967,11 @@ object dgramMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.node.nodeStrings.udp4
-    - typings.node.nodeStrings.udp6
-  */
-  trait SocketType extends StObject
   object SocketType {
     
-    inline def udp4: typings.node.nodeStrings.udp4 = "udp4".asInstanceOf[typings.node.nodeStrings.udp4]
+    inline def udp4: "udp4" = "udp4".asInstanceOf["udp4"]
     
-    inline def udp6: typings.node.nodeStrings.udp6 = "udp6".asInstanceOf[typings.node.nodeStrings.udp6]
+    inline def udp6: "udp6" = "udp6".asInstanceOf["udp6"]
   }
+  type SocketType = "udp4" | "udp6"
 }

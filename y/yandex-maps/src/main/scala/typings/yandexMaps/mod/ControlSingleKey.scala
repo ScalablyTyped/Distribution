@@ -4,32 +4,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.yandexMaps.yandexMapsStrings.fullscreenControl
-  - typings.yandexMaps.yandexMapsStrings.geolocationControl
-  - typings.yandexMaps.yandexMapsStrings.routeEditor
-  - typings.yandexMaps.yandexMapsStrings.rulerControl
-  - typings.yandexMaps.yandexMapsStrings.searchControl
-  - typings.yandexMaps.yandexMapsStrings.trafficControl
-  - typings.yandexMaps.yandexMapsStrings.typeSelector
-  - typings.yandexMaps.yandexMapsStrings.zoomControl
-*/
-trait ControlSingleKey extends StObject
 object ControlSingleKey {
   
-  inline def fullscreenControl: typings.yandexMaps.yandexMapsStrings.fullscreenControl = "fullscreenControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.fullscreenControl]
+  inline def fullscreenControl: "fullscreenControl" = "fullscreenControl".asInstanceOf["fullscreenControl"]
   
-  inline def geolocationControl: typings.yandexMaps.yandexMapsStrings.geolocationControl = "geolocationControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.geolocationControl]
+  inline def geolocationControl: "geolocationControl" = "geolocationControl".asInstanceOf["geolocationControl"]
   
-  inline def routeEditor: typings.yandexMaps.yandexMapsStrings.routeEditor = "routeEditor".asInstanceOf[typings.yandexMaps.yandexMapsStrings.routeEditor]
+  inline def routeEditor: "routeEditor" = "routeEditor".asInstanceOf["routeEditor"]
   
-  inline def rulerControl: typings.yandexMaps.yandexMapsStrings.rulerControl = "rulerControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.rulerControl]
+  inline def rulerControl: "rulerControl" = "rulerControl".asInstanceOf["rulerControl"]
   
-  inline def searchControl: typings.yandexMaps.yandexMapsStrings.searchControl = "searchControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.searchControl]
+  inline def searchControl: "searchControl" = "searchControl".asInstanceOf["searchControl"]
   
-  inline def trafficControl: typings.yandexMaps.yandexMapsStrings.trafficControl = "trafficControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.trafficControl]
+  inline def trafficControl: "trafficControl" = "trafficControl".asInstanceOf["trafficControl"]
   
-  inline def typeSelector: typings.yandexMaps.yandexMapsStrings.typeSelector = "typeSelector".asInstanceOf[typings.yandexMaps.yandexMapsStrings.typeSelector]
+  inline def typeSelector: "typeSelector" = "typeSelector".asInstanceOf["typeSelector"]
   
-  inline def zoomControl: typings.yandexMaps.yandexMapsStrings.zoomControl = "zoomControl".asInstanceOf[typings.yandexMaps.yandexMapsStrings.zoomControl]
+  inline def zoomControl: "zoomControl" = "zoomControl".asInstanceOf["zoomControl"]
 }

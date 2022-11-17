@@ -1,9 +1,6 @@
 package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCore.angularCoreStrings.body
-import typings.angularCore.angularCoreStrings.document
-import typings.angularCore.angularCoreStrings.window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,8 +79,10 @@ open class Renderer2 () extends StObject {
   def insertBefore(parent: Any, newChild: Any, refChild: Any): Unit = js.native
   def insertBefore(parent: Any, newChild: Any, refChild: Any, isMove: Boolean): Unit = js.native
   
+  @JSName("listen")
+  @scala.annotation.targetName("listen_window_document_body")
   def listen(
-    target: window | document | body,
+    target: "window" | "document" | "body",
     eventName: String,
     callback: js.Function1[/* event */ Any, Boolean | Unit]
   ): js.Function0[Unit] = js.native

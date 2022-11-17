@@ -1,5 +1,7 @@
 package typings.three
 
+import typings.three.srcThreeMod.PointLight
+import typings.three.srcThreeMod.SpotLight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +14,7 @@ object examplesJsmNodesLightingPunctualLightNodeMod {
     def this(light: PunctualLight) = this()
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.three.srcThreeMod.PointLight
-    - typings.three.srcThreeMod.SpotLight
-  */
-  trait PunctualLight extends StObject
+  type PunctualLight = PointLight | SpotLight
   
   @js.native
   trait PunctualLightNode

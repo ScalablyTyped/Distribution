@@ -9,7 +9,6 @@ import typings.angularCore.mod.ModuleWithProviders
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectorDeclaration
 import typings.angularCore.mod.ɵɵNgModuleDeclaration
-import typings.angularPlatformBrowser.angularPlatformBrowserBooleans.`true`
 import typings.angularPlatformBrowser.mod.BrowserModule
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
@@ -20,7 +19,7 @@ object anon {
   
   trait `0` extends StObject {
     
-    var optional: `true`
+    var optional: true
   }
   object `0` {
     
@@ -31,7 +30,7 @@ object anon {
     
     extension [Self <: `0`](x: Self) {
       
-      inline def setOptional(value: `true`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: true): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,9 +141,9 @@ object anon {
   
   trait Optional extends StObject {
     
-    var optional: `true`
+    var optional: true
     
-    var skipSelf: `true`
+    var skipSelf: true
   }
   object Optional {
     
@@ -155,9 +154,9 @@ object anon {
     
     extension [Self <: Optional](x: Self) {
       
-      inline def setOptional(value: `true`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: true): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      inline def setSkipSelf(value: `true`): Self = StObject.set(x, "skipSelf", value.asInstanceOf[js.Any])
+      inline def setSkipSelf(value: true): Self = StObject.set(x, "skipSelf", value.asInstanceOf[js.Any])
     }
   }
   

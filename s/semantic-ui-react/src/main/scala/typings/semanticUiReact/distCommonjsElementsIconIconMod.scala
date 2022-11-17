@@ -6,10 +6,6 @@ import typings.react.mod.PureComponent
 import typings.semanticUiReact.distCommonjsElementsIconIconGroupMod.IconGroupProps
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticICONS
-import typings.semanticUiReact.semanticUiReactStrings.clockwise
-import typings.semanticUiReact.semanticUiReactStrings.counterclockwise
-import typings.semanticUiReact.semanticUiReactStrings.horizontally
-import typings.semanticUiReact.semanticUiReactStrings.vertically
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,23 +26,17 @@ object distCommonjsElementsIconIconMod {
   
   type Icon = PureComponent[IconProps, js.Object, Any]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.semanticUiReact.semanticUiReactStrings.`bottom right`
-    - typings.semanticUiReact.semanticUiReactStrings.`top right`
-    - typings.semanticUiReact.semanticUiReactStrings.`top left`
-    - typings.semanticUiReact.semanticUiReactStrings.`bottom left`
-  */
-  trait IconCorner extends StObject
   object IconCorner {
     
-    inline def `bottom left`: typings.semanticUiReact.semanticUiReactStrings.`bottom left` = ("bottom left").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`bottom left`]
+    inline def `bottom left`: "bottom left" = ("bottom left").asInstanceOf["bottom left"]
     
-    inline def `bottom right`: typings.semanticUiReact.semanticUiReactStrings.`bottom right` = ("bottom right").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`bottom right`]
+    inline def `bottom right`: "bottom right" = ("bottom right").asInstanceOf["bottom right"]
     
-    inline def `top left`: typings.semanticUiReact.semanticUiReactStrings.`top left` = ("top left").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`top left`]
+    inline def `top left`: "top left" = ("top left").asInstanceOf["top left"]
     
-    inline def `top right`: typings.semanticUiReact.semanticUiReactStrings.`top right` = ("top right").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`top right`]
+    inline def `top right`: "top right" = ("top right").asInstanceOf["top right"]
   }
+  type IconCorner = ("bottom right") | ("top right") | ("top left") | ("bottom left")
   
   trait IconProps
     extends StObject
@@ -60,32 +50,23 @@ object distCommonjsElementsIconIconMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.semanticUiReact.semanticUiReactStrings.mini
-    - typings.semanticUiReact.semanticUiReactStrings.tiny
-    - typings.semanticUiReact.semanticUiReactStrings.small
-    - typings.semanticUiReact.semanticUiReactStrings.large
-    - typings.semanticUiReact.semanticUiReactStrings.big
-    - typings.semanticUiReact.semanticUiReactStrings.huge
-    - typings.semanticUiReact.semanticUiReactStrings.massive
-  */
-  trait IconSizeProp extends StObject
   object IconSizeProp {
     
-    inline def big: typings.semanticUiReact.semanticUiReactStrings.big = "big".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.big]
+    inline def big: "big" = "big".asInstanceOf["big"]
     
-    inline def huge: typings.semanticUiReact.semanticUiReactStrings.huge = "huge".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.huge]
+    inline def huge: "huge" = "huge".asInstanceOf["huge"]
     
-    inline def large: typings.semanticUiReact.semanticUiReactStrings.large = "large".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.large]
+    inline def large: "large" = "large".asInstanceOf["large"]
     
-    inline def massive: typings.semanticUiReact.semanticUiReactStrings.massive = "massive".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.massive]
+    inline def massive: "massive" = "massive".asInstanceOf["massive"]
     
-    inline def mini: typings.semanticUiReact.semanticUiReactStrings.mini = "mini".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mini]
+    inline def mini: "mini" = "mini".asInstanceOf["mini"]
     
-    inline def small: typings.semanticUiReact.semanticUiReactStrings.small = "small".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.small]
+    inline def small: "small" = "small".asInstanceOf["small"]
     
-    inline def tiny: typings.semanticUiReact.semanticUiReactStrings.tiny = "tiny".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tiny]
+    inline def tiny: "tiny" = "tiny".asInstanceOf["tiny"]
   }
+  type IconSizeProp = "mini" | "tiny" | "small" | "large" | "big" | "huge" | "massive"
   
   trait StrictIconProps extends StObject {
     
@@ -120,7 +101,7 @@ object distCommonjsElementsIconIconMod {
     var fitted: js.UndefOr[Boolean] = js.undefined
     
     /** Icon can be flipped. */
-    var flipped: js.UndefOr[horizontally | vertically] = js.undefined
+    var flipped: js.UndefOr["horizontally" | "vertically"] = js.undefined
     
     /** Formatted to have its colors inverted for contrast. */
     var inverted: js.UndefOr[Boolean] = js.undefined
@@ -135,7 +116,7 @@ object distCommonjsElementsIconIconMod {
     var name: js.UndefOr[SemanticICONS] = js.undefined
     
     /** Icon can rotated. */
-    var rotated: js.UndefOr[clockwise | counterclockwise] = js.undefined
+    var rotated: js.UndefOr["clockwise" | "counterclockwise"] = js.undefined
     
     /** Size of the icon. */
     var size: js.UndefOr[IconSizeProp] = js.undefined
@@ -189,7 +170,7 @@ object distCommonjsElementsIconIconMod {
       
       inline def setFittedUndefined: Self = StObject.set(x, "fitted", js.undefined)
       
-      inline def setFlipped(value: horizontally | vertically): Self = StObject.set(x, "flipped", value.asInstanceOf[js.Any])
+      inline def setFlipped(value: "horizontally" | "vertically"): Self = StObject.set(x, "flipped", value.asInstanceOf[js.Any])
       
       inline def setFlippedUndefined: Self = StObject.set(x, "flipped", js.undefined)
       
@@ -209,7 +190,7 @@ object distCommonjsElementsIconIconMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setRotated(value: clockwise | counterclockwise): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
+      inline def setRotated(value: "clockwise" | "counterclockwise"): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
       
       inline def setRotatedUndefined: Self = StObject.set(x, "rotated", js.undefined)
       

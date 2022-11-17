@@ -15,26 +15,6 @@ import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextLayoutEventData
 import typings.reactNative.mod.TextStyle
-import typings.reactNavigationStack.reactNavigationStackStrings.`no-hide-descendants`
-import typings.reactNavigationStack.reactNavigationStackStrings.all
-import typings.reactNavigationStack.reactNavigationStackStrings.assertive
-import typings.reactNavigationStack.reactNavigationStackStrings.auto
-import typings.reactNavigationStack.reactNavigationStackStrings.balanced
-import typings.reactNavigationStack.reactNavigationStackStrings.clip
-import typings.reactNavigationStack.reactNavigationStackStrings.email
-import typings.reactNavigationStack.reactNavigationStackStrings.full
-import typings.reactNavigationStack.reactNavigationStackStrings.head
-import typings.reactNavigationStack.reactNavigationStackStrings.highQuality
-import typings.reactNavigationStack.reactNavigationStackStrings.link
-import typings.reactNavigationStack.reactNavigationStackStrings.middle
-import typings.reactNavigationStack.reactNavigationStackStrings.no
-import typings.reactNavigationStack.reactNavigationStackStrings.none
-import typings.reactNavigationStack.reactNavigationStackStrings.normal
-import typings.reactNavigationStack.reactNavigationStackStrings.phoneNumber
-import typings.reactNavigationStack.reactNavigationStackStrings.polite
-import typings.reactNavigationStack.reactNavigationStackStrings.simple
-import typings.reactNavigationStack.reactNavigationStackStrings.tail
-import typings.reactNavigationStack.reactNavigationStackStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,7 +44,7 @@ object libTypescriptSrcVendorViewsHeaderHeaderTitleMod {
     
     var accessibilityLanguage: js.UndefOr[String] = js.undefined
     
-    var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+    var accessibilityLiveRegion: js.UndefOr["none" | "polite" | "assertive"] = js.undefined
     
     var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
     
@@ -80,19 +60,19 @@ object libTypescriptSrcVendorViewsHeaderHeaderTitleMod {
     
     var allowFontScaling: js.UndefOr[Boolean] = js.undefined
     
-    var android_hyphenationFrequency: js.UndefOr[normal | none | full] = js.undefined
+    var android_hyphenationFrequency: js.UndefOr["normal" | "none" | "full"] = js.undefined
     
     var children: js.UndefOr[ReactNode] & js.UndefOr[String]
     
-    var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all] = js.undefined
+    var dataDetectorType: js.UndefOr[Null | "phoneNumber" | "link" | "email" | "none" | "all"] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
+    var ellipsizeMode: js.UndefOr["head" | "middle" | "tail" | "clip"] = js.undefined
     
-    var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+    var importantForAccessibility: js.UndefOr["auto" | "yes" | "no" | "no-hide-descendants"] = js.undefined
     
-    var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.undefined
+    var lineBreakMode: js.UndefOr["head" | "middle" | "tail" | "clip"] = js.undefined
     
     var maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.undefined
     
@@ -132,7 +112,7 @@ object libTypescriptSrcVendorViewsHeaderHeaderTitleMod {
     
     var testID: js.UndefOr[String] = js.undefined
     
-    var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
+    var textBreakStrategy: js.UndefOr["simple" | "highQuality" | "balanced"] = js.undefined
     
     var tintColor: js.UndefOr[String] = js.undefined
   }
@@ -177,7 +157,7 @@ object libTypescriptSrcVendorViewsHeaderHeaderTitleMod {
       
       inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
       
-      inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+      inline def setAccessibilityLiveRegion(value: "none" | "polite" | "assertive"): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
       
       inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
       
@@ -209,13 +189,13 @@ object libTypescriptSrcVendorViewsHeaderHeaderTitleMod {
       
       inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
       
-      inline def setAndroid_hyphenationFrequency(value: normal | none | full): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
+      inline def setAndroid_hyphenationFrequency(value: "normal" | "none" | "full"): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
       
       inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
       
       inline def setChildren(value: js.UndefOr[ReactNode] & js.UndefOr[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setDataDetectorType(value: phoneNumber | link | email | none | all): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
+      inline def setDataDetectorType(value: "phoneNumber" | "link" | "email" | "none" | "all"): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
       
       inline def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
       
@@ -225,15 +205,15 @@ object libTypescriptSrcVendorViewsHeaderHeaderTitleMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
+      inline def setEllipsizeMode(value: "head" | "middle" | "tail" | "clip"): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
       
       inline def setEllipsizeModeUndefined: Self = StObject.set(x, "ellipsizeMode", js.undefined)
       
-      inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+      inline def setImportantForAccessibility(value: "auto" | "yes" | "no" | "no-hide-descendants"): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
       
       inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
       
-      inline def setLineBreakMode(value: head | middle | tail | clip): Self = StObject.set(x, "lineBreakMode", value.asInstanceOf[js.Any])
+      inline def setLineBreakMode(value: "head" | "middle" | "tail" | "clip"): Self = StObject.set(x, "lineBreakMode", value.asInstanceOf[js.Any])
       
       inline def setLineBreakModeUndefined: Self = StObject.set(x, "lineBreakMode", js.undefined)
       
@@ -317,7 +297,7 @@ object libTypescriptSrcVendorViewsHeaderHeaderTitleMod {
       
       inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
       
-      inline def setTextBreakStrategy(value: simple | highQuality | balanced): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
+      inline def setTextBreakStrategy(value: "simple" | "highQuality" | "balanced"): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
       
       inline def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
       

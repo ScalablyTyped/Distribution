@@ -5,8 +5,16 @@ import typings.react.mod.Component
 import typings.reactNativeGestureHandler.libTypescriptHandlersFlingGestureHandlerMod.FlingGestureHandler
 import typings.reactNativeGestureHandler.libTypescriptHandlersForceTouchGestureHandlerMod.ForceTouchGestureHandler
 import typings.reactNativeGestureHandler.libTypescriptHandlersForceTouchGestureHandlerMod.ForceTouchGestureHandlerEventPayload
+import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesFlingGestureMod.FlingGesture
+import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesForceTouchGestureMod.ForceTouchGesture
 import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod.BaseGesture
 import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod.GestureType
+import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesLongPressGestureMod.LongPressGesture
+import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesNativeGestureMod.NativeGesture
+import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesPanGestureMod.PanGesture
+import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesPinchGestureMod.PinchGesture
+import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesRotationGestureMod.RotationGesture
+import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesTapGestureMod.TapGesture
 import typings.reactNativeGestureHandler.libTypescriptHandlersLongPressGestureHandlerMod.LongPressGestureHandler
 import typings.reactNativeGestureHandler.libTypescriptHandlersLongPressGestureHandlerMod.LongPressGestureHandlerEventPayload
 import typings.reactNativeGestureHandler.libTypescriptHandlersNativeViewGestureHandlerMod.NativeViewGestureHandler
@@ -49,17 +57,7 @@ object libTypescriptJestUtilsJestUtilsMod {
     ForceTouchGestureHandlerEventPayload | LongPressGestureHandlerEventPayload | NativeViewGestureHandlerPayload | PanGestureHandlerEventPayload | PinchGestureHandlerEventPayload | (Record[String, Any | scala.Nothing]) | RotationGestureHandlerEventPayload | TapGestureHandlerEventPayload
   ]]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeGestureHandler.libTypescriptHandlersGesturesTapGestureMod.TapGesture
-    - typings.reactNativeGestureHandler.libTypescriptHandlersGesturesPanGestureMod.PanGesture
-    - typings.reactNativeGestureHandler.libTypescriptHandlersGesturesLongPressGestureMod.LongPressGesture
-    - typings.reactNativeGestureHandler.libTypescriptHandlersGesturesRotationGestureMod.RotationGesture
-    - typings.reactNativeGestureHandler.libTypescriptHandlersGesturesPinchGestureMod.PinchGesture
-    - typings.reactNativeGestureHandler.libTypescriptHandlersGesturesFlingGestureMod.FlingGesture
-    - typings.reactNativeGestureHandler.libTypescriptHandlersGesturesForceTouchGestureMod.ForceTouchGesture
-    - typings.reactNativeGestureHandler.libTypescriptHandlersGesturesNativeGestureMod.NativeGesture
-  */
-  trait AllGestures extends StObject
+  type AllGestures = TapGesture | PanGesture | LongPressGesture | RotationGesture | PinchGesture | FlingGesture | ForceTouchGesture | NativeGesture
   
   type AllHandlers = TapGestureHandler | PanGestureHandler | LongPressGestureHandler | RotationGestureHandler | PinchGestureHandler | FlingGestureHandler | ForceTouchGestureHandler | NativeViewGestureHandler
   

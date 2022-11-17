@@ -3,9 +3,6 @@ package typings.semver
 import typings.semver.mod.Options
 import typings.semver.mod.RangeOptions
 import typings.semver.mod.ReleaseType
-import typings.semver.semverInts.`-1`
-import typings.semver.semverInts.`0`
-import typings.semver.semverInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,8 +35,8 @@ object classesSemverMod {
       * - `1` if `this` is greater
       * - `-1` if `other` is greater.
       */
-    def compare(other: String): `1` | `0` | `-1` = js.native
-    def compare(other: SemVer): `1` | `0` | `-1` = js.native
+    def compare(other: String): 1 | 0 | -1 = js.native
+    def compare(other: SemVer): 1 | 0 | -1 = js.native
     
     /**
       * Compares the build identifier of two versions.
@@ -49,8 +46,8 @@ object classesSemverMod {
       * - `1` if `this` is greater
       * - `-1` if `other` is greater.
       */
-    def compareBuild(other: String): `1` | `0` | `-1` = js.native
-    def compareBuild(other: SemVer): `1` | `0` | `-1` = js.native
+    def compareBuild(other: String): 1 | 0 | -1 = js.native
+    def compareBuild(other: SemVer): 1 | 0 | -1 = js.native
     
     /**
       * Compares the release portion of two versions.
@@ -60,8 +57,8 @@ object classesSemverMod {
       * - `1` if `this` is greater
       * - `-1` if `other` is greater.
       */
-    def compareMain(other: String): `1` | `0` | `-1` = js.native
-    def compareMain(other: SemVer): `1` | `0` | `-1` = js.native
+    def compareMain(other: String): 1 | 0 | -1 = js.native
+    def compareMain(other: SemVer): 1 | 0 | -1 = js.native
     
     /**
       * Compares the prerelease portion of two versions.
@@ -71,8 +68,8 @@ object classesSemverMod {
       * - `1` if `this` is greater
       * - `-1` if `other` is greater.
       */
-    def comparePre(other: String): `1` | `0` | `-1` = js.native
-    def comparePre(other: SemVer): `1` | `0` | `-1` = js.native
+    def comparePre(other: String): 1 | 0 | -1 = js.native
+    def comparePre(other: SemVer): 1 | 0 | -1 = js.native
     
     def format(): String = js.native
     

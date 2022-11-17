@@ -39,17 +39,13 @@ object libTypescriptComponentsDrawerLayoutMod {
     inline def positions_=(x: Left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("positions")(x.asInstanceOf[js.Any])
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.none
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`on-drag`
-  */
-  trait DrawerKeyboardDismissMode extends StObject
   object DrawerKeyboardDismissMode {
     
-    inline def none: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.none = "none".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.none]
+    inline def none: "none" = "none".asInstanceOf["none"]
     
-    inline def `on-drag`: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`on-drag` = "on-drag".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`on-drag`]
+    inline def `on-drag`: "on-drag" = "on-drag".asInstanceOf["on-drag"]
   }
+  type DrawerKeyboardDismissMode = "none" | "on-drag"
   
   @js.native
   trait DrawerLayout extends Component[DrawerLayoutProps, DrawerLayoutState, Any] {
@@ -355,20 +351,15 @@ object libTypescriptComponentsDrawerLayoutMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.unlocked
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`locked-closed`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`locked-open`
-  */
-  trait DrawerLockMode extends StObject
   object DrawerLockMode {
     
-    inline def `locked-closed`: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`locked-closed` = "locked-closed".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`locked-closed`]
+    inline def `locked-closed`: "locked-closed" = "locked-closed".asInstanceOf["locked-closed"]
     
-    inline def `locked-open`: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`locked-open` = "locked-open".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`locked-open`]
+    inline def `locked-open`: "locked-open" = "locked-open".asInstanceOf["locked-open"]
     
-    inline def unlocked: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.unlocked = "unlocked".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.unlocked]
+    inline def unlocked: "unlocked" = "unlocked".asInstanceOf["unlocked"]
   }
+  type DrawerLockMode = "unlocked" | "locked-closed" | "locked-open"
   
   trait DrawerMovementOption extends StObject {
     
@@ -395,45 +386,31 @@ object libTypescriptComponentsDrawerLayoutMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.left
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.right
-  */
-  trait DrawerPosition extends StObject
   object DrawerPosition {
     
-    inline def left: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.left = "left".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.left]
+    inline def left: "left" = "left".asInstanceOf["left"]
     
-    inline def right: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.right = "right".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.right]
+    inline def right: "right" = "right".asInstanceOf["right"]
   }
+  type DrawerPosition = "left" | "right"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.Idle
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.Dragging
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.Settling
-  */
-  trait DrawerState extends StObject
   object DrawerState {
     
-    inline def Dragging: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.Dragging = "Dragging".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.Dragging]
+    inline def Dragging: "Dragging" = "Dragging".asInstanceOf["Dragging"]
     
-    inline def Idle: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.Idle = "Idle".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.Idle]
+    inline def Idle: "Idle" = "Idle".asInstanceOf["Idle"]
     
-    inline def Settling: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.Settling = "Settling".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.Settling]
+    inline def Settling: "Settling" = "Settling".asInstanceOf["Settling"]
   }
+  type DrawerState = "Idle" | "Dragging" | "Settling"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.front
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.back
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.slide
-  */
-  trait DrawerType extends StObject
   object DrawerType {
     
-    inline def back: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.back = "back".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.back]
+    inline def back: "back" = "back".asInstanceOf["back"]
     
-    inline def front: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.front = "front".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.front]
+    inline def front: "front" = "front".asInstanceOf["front"]
     
-    inline def slide: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.slide = "slide".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.slide]
+    inline def slide: "slide" = "slide".asInstanceOf["slide"]
   }
+  type DrawerType = "front" | "back" | "slide"
 }

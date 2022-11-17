@@ -15,16 +15,7 @@ object distCompileRulesMod {
   
   inline def isJSONType(x: Any): /* is ajv.ajv/dist/compile/rules.JSONType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSONType")(x.asInstanceOf[js.Any]).asInstanceOf[/* is ajv.ajv/dist/compile/rules.JSONType */ Boolean]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.ajv.ajvStrings.string
-    - typings.ajv.ajvStrings.number
-    - typings.ajv.ajvStrings.integer
-    - typings.ajv.ajvStrings.boolean
-    - typings.ajv.ajvStrings.`null`
-    - typings.ajv.ajvStrings.`object`
-    - typings.ajv.ajvStrings.array
-  */
-  trait JSONType extends StObject
+  type JSONType = "string" | "number" | "integer" | "boolean" | "null" | "object" | "array"
   
   trait Rule extends StObject {
     

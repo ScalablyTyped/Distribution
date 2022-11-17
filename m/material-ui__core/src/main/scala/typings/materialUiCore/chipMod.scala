@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.chipChipMod.ChipTypeMap
-import typings.materialUiCore.materialUiCoreStrings.div
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,10 +21,10 @@ object chipMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Chip", JSImport.Default)
   @js.native
-  val default: OverridableComponent[ChipTypeMap[js.Object, div]] = js.native
+  val default: OverridableComponent[ChipTypeMap[js.Object, "div"]] = js.native
   
-  type _To = OverridableComponent[ChipTypeMap[js.Object, div]]
+  type _To = OverridableComponent[ChipTypeMap[js.Object, "div"]]
   
   /* This means you don't have to write `default`, but can instead just say `chipMod.foo` */
-  override def _to: OverridableComponent[ChipTypeMap[js.Object, div]] = default
+  override def _to: OverridableComponent[ChipTypeMap[js.Object, "div"]] = default
 }

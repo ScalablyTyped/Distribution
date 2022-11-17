@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Absolute
-import typings.materialUiCore.materialUiCoreStrings.hr
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -25,31 +24,23 @@ object dividerDividerMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Divider/Divider", JSImport.Default)
   @js.native
-  val default: OverridableComponent[DividerTypeMap[js.Object, hr]] = js.native
+  val default: OverridableComponent[DividerTypeMap[js.Object, "hr"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.absolute
-    - typings.materialUiCore.materialUiCoreStrings.inset
-    - typings.materialUiCore.materialUiCoreStrings.light
-    - typings.materialUiCore.materialUiCoreStrings.middle
-    - typings.materialUiCore.materialUiCoreStrings.vertical
-  */
-  trait DividerClassKey extends StObject
   object DividerClassKey {
     
-    inline def absolute: typings.materialUiCore.materialUiCoreStrings.absolute = "absolute".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.absolute]
+    inline def absolute: "absolute" = "absolute".asInstanceOf["absolute"]
     
-    inline def inset: typings.materialUiCore.materialUiCoreStrings.inset = "inset".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.inset]
+    inline def inset: "inset" = "inset".asInstanceOf["inset"]
     
-    inline def light: typings.materialUiCore.materialUiCoreStrings.light = "light".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.light]
+    inline def light: "light" = "light".asInstanceOf["light"]
     
-    inline def middle: typings.materialUiCore.materialUiCoreStrings.middle = "middle".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.middle]
+    inline def middle: "middle" = "middle".asInstanceOf["middle"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def vertical: typings.materialUiCore.materialUiCoreStrings.vertical = "vertical".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.vertical]
+    inline def vertical: "vertical" = "vertical".asInstanceOf["vertical"]
   }
+  type DividerClassKey = "root" | "absolute" | "inset" | "light" | "middle" | "vertical"
   
   type DividerProps[D /* <: ElementType[Any] */, P] = OverrideProps[DividerTypeMap[P, D], D]
   
@@ -78,8 +69,8 @@ object dividerDividerMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[DividerTypeMap[js.Object, hr]]
+  type _To = OverridableComponent[DividerTypeMap[js.Object, "hr"]]
   
   /* This means you don't have to write `default`, but can instead just say `dividerDividerMod.foo` */
-  override def _to: OverridableComponent[DividerTypeMap[js.Object, hr]] = default
+  override def _to: OverridableComponent[DividerTypeMap[js.Object, "hr"]] = default
 }

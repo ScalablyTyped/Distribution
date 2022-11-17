@@ -1,13 +1,6 @@
 package typings.node.http2Mod
 
 import typings.node.nodeColontlsMod.TLSSocket
-import typings.node.nodeStrings.checkContinue
-import typings.node.nodeStrings.request
-import typings.node.nodeStrings.session
-import typings.node.nodeStrings.sessionError
-import typings.node.nodeStrings.stream
-import typings.node.nodeStrings.timeout
-import typings.node.nodeStrings.unknownProtocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,73 +10,134 @@ trait Http2SecureServer
   extends StObject
      with HTTP2ServerCommon {
   
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_timeout")
+  def addListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_sessionError")
+  def addListener(event: "sessionError", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_unknownProtocol")
+  def addListener(event: "unknownProtocol", listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_session")
+  def addListener(event: "session", listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_checkContinue")
+  def addListener(
+    event: "checkContinue",
+    listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_request")
+  def addListener(
+    event: "request",
+    listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_stream")
+  def addListener(
+    event: "stream",
+    listener: js.Function3[
+      /* stream */ ServerHttp2Stream, 
+      /* headers */ IncomingHttpHeaders, 
+      /* flags */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
   def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_checkContinue(
-    event: checkContinue,
-    listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_request(
-    event: request,
-    listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_session(event: session, listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_sessionError(event: sessionError, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_stream(
-    event: stream,
-    listener: js.Function3[
-      /* stream */ ServerHttp2Stream, 
-      /* headers */ IncomingHttpHeaders, 
-      /* flags */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_unknownProtocol(event: unknownProtocol, listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
   
+  @JSName("emit")
+  @scala.annotation.targetName("emit_timeout")
+  def emit(event: "timeout"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_sessionError")
+  def emit(event: "sessionError", err: js.Error): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_checkContinue")
+  def emit(event: "checkContinue", request: Http2ServerRequest, response: Http2ServerResponse): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_request")
+  def emit(event: "request", request: Http2ServerRequest, response: Http2ServerResponse): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_session")
+  def emit(event: "session", session: ServerHttp2Session): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_unknownProtocol")
+  def emit(event: "unknownProtocol", socket: TLSSocket): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_stream")
+  def emit(event: "stream", stream: ServerHttp2Stream, headers: IncomingHttpHeaders, flags: Double): Boolean = js.native
   def emit(event: String, args: Any*): Boolean = js.native
   def emit(event: js.Symbol, args: Any*): Boolean = js.native
-  @JSName("emit")
-  def emit_checkContinue(event: checkContinue, request: Http2ServerRequest, response: Http2ServerResponse): Boolean = js.native
-  @JSName("emit")
-  def emit_request(event: request, request: Http2ServerRequest, response: Http2ServerResponse): Boolean = js.native
-  @JSName("emit")
-  def emit_session(event: session, session: ServerHttp2Session): Boolean = js.native
-  @JSName("emit")
-  def emit_sessionError(event: sessionError, err: js.Error): Boolean = js.native
-  @JSName("emit")
-  def emit_stream(event: stream, stream: ServerHttp2Stream, headers: IncomingHttpHeaders, flags: Double): Boolean = js.native
-  @JSName("emit")
-  def emit_timeout(event: timeout): Boolean = js.native
-  @JSName("emit")
-  def emit_unknownProtocol(event: unknownProtocol, socket: TLSSocket): Boolean = js.native
   
+  @JSName("on")
+  @scala.annotation.targetName("on_timeout")
+  def on(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_unknownProtocol")
+  def on(event: "unknownProtocol", listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_sessionError")
+  def on(event: "sessionError", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_session")
+  def on(event: "session", listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_request")
+  def on(
+    event: "request",
+    listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
+  ): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_checkContinue")
+  def on(
+    event: "checkContinue",
+    listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
+  ): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_stream")
+  def on(
+    event: "stream",
+    listener: js.Function3[
+      /* stream */ ServerHttp2Stream, 
+      /* headers */ IncomingHttpHeaders, 
+      /* flags */ Double, 
+      Unit
+    ]
+  ): this.type = js.native
   def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("on")
-  def on_checkContinue(
-    event: checkContinue,
+  
+  @JSName("once")
+  @scala.annotation.targetName("once_timeout")
+  def once(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_session")
+  def once(event: "session", listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_unknownProtocol")
+  def once(event: "unknownProtocol", listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_sessionError")
+  def once(event: "sessionError", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_checkContinue")
+  def once(
+    event: "checkContinue",
     listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
   ): this.type = js.native
-  @JSName("on")
-  def on_request(
-    event: request,
+  @JSName("once")
+  @scala.annotation.targetName("once_request")
+  def once(
+    event: "request",
     listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
   ): this.type = js.native
-  @JSName("on")
-  def on_session(event: session, listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
-  @JSName("on")
-  def on_sessionError(event: sessionError, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("on")
-  def on_stream(
-    event: stream,
+  @JSName("once")
+  @scala.annotation.targetName("once_stream")
+  def once(
+    event: "stream",
     listener: js.Function3[
       /* stream */ ServerHttp2Stream, 
       /* headers */ IncomingHttpHeaders, 
@@ -91,30 +145,37 @@ trait Http2SecureServer
       Unit
     ]
   ): this.type = js.native
-  @JSName("on")
-  def on_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_unknownProtocol(event: unknownProtocol, listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
-  
   def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("once")
-  def once_checkContinue(
-    event: checkContinue,
+  
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_timeout")
+  def prependListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_session")
+  def prependListener(event: "session", listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_unknownProtocol")
+  def prependListener(event: "unknownProtocol", listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_sessionError")
+  def prependListener(event: "sessionError", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_checkContinue")
+  def prependListener(
+    event: "checkContinue",
     listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
   ): this.type = js.native
-  @JSName("once")
-  def once_request(
-    event: request,
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_request")
+  def prependListener(
+    event: "request",
     listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
   ): this.type = js.native
-  @JSName("once")
-  def once_session(event: session, listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
-  @JSName("once")
-  def once_sessionError(event: sessionError, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("once")
-  def once_stream(
-    event: stream,
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_stream")
+  def prependListener(
+    event: "stream",
     listener: js.Function3[
       /* stream */ ServerHttp2Stream, 
       /* headers */ IncomingHttpHeaders, 
@@ -122,30 +183,37 @@ trait Http2SecureServer
       Unit
     ]
   ): this.type = js.native
-  @JSName("once")
-  def once_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_unknownProtocol(event: unknownProtocol, listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
-  
   def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_checkContinue(
-    event: checkContinue,
+  
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_timeout")
+  def prependOnceListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_session")
+  def prependOnceListener(event: "session", listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_sessionError")
+  def prependOnceListener(event: "sessionError", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_unknownProtocol")
+  def prependOnceListener(event: "unknownProtocol", listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_checkContinue")
+  def prependOnceListener(
+    event: "checkContinue",
     listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
   ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_request(
-    event: request,
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_request")
+  def prependOnceListener(
+    event: "request",
     listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
   ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_session(event: session, listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_sessionError(event: sessionError, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_stream(
-    event: stream,
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_stream")
+  def prependOnceListener(
+    event: "stream",
     listener: js.Function3[
       /* stream */ ServerHttp2Stream, 
       /* headers */ IncomingHttpHeaders, 
@@ -153,39 +221,6 @@ trait Http2SecureServer
       Unit
     ]
   ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_unknownProtocol(event: unknownProtocol, listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
-  
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_checkContinue(
-    event: checkContinue,
-    listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
-  ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_request(
-    event: request,
-    listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, Unit]
-  ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_session(event: session, listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_sessionError(event: sessionError, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_stream(
-    event: stream,
-    listener: js.Function3[
-      /* stream */ ServerHttp2Stream, 
-      /* headers */ IncomingHttpHeaders, 
-      /* flags */ Double, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_unknownProtocol(event: unknownProtocol, listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
 }

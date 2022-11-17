@@ -1,12 +1,11 @@
 package typings.chartJs.anon
 
-import typings.chartJs.mod.BorderRadius
-import typings.chartJs.mod.FontSpec
-import typings.chartJs.mod.Scriptable
-import typings.chartJs.mod.ScriptableAndScriptableOptions
-import typings.chartJs.mod.ScriptableScalePointLabelContext
-import typings.chartJs.typesBasicMod.AnyObject
-import typings.chartJs.typesGeometricMod.ChartArea
+import typings.chartJs.distChunksHelpersDotcoreMod.AnyObject
+import typings.chartJs.distChunksHelpersDotcoreMod.ChartArea
+import typings.chartJs.distChunksHelpersDotcoreMod.FontSpec
+import typings.chartJs.distChunksHelpersDotcoreMod.Scriptable
+import typings.chartJs.distChunksHelpersDotcoreMod.ScriptableAndScriptableOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.ScriptableScalePointLabelContext
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +17,10 @@ trait BackdropPadding extends StObject {
     * Background color of the point label.
     * @default undefined
     */
-  var backdropColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScalePointLabelContext]
+  var backdropColor: Scriptable[
+    typings.chartJs.distChunksHelpersDotcoreMod.Color, 
+    ScriptableScalePointLabelContext
+  ]
   
   /**
     * Padding of label backdrop.
@@ -31,7 +33,10 @@ trait BackdropPadding extends StObject {
     * @default 0
     * @since 3.8.0
     */
-  var borderRadius: Scriptable[Double | BorderRadius, ScriptableScalePointLabelContext]
+  var borderRadius: Scriptable[
+    Double | typings.chartJs.distChunksHelpersDotcoreMod.BorderRadius, 
+    ScriptableScalePointLabelContext
+  ]
   
   /**
     * Callback function to transform data labels to point labels. The default implementation simply returns the current string.
@@ -48,7 +53,10 @@ trait BackdropPadding extends StObject {
     * Color of label
     * @see Defaults.color
     */
-  var color: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScalePointLabelContext]
+  var color: Scriptable[
+    typings.chartJs.distChunksHelpersDotcoreMod.Color, 
+    ScriptableScalePointLabelContext
+  ]
   
   /**
     * if true, point labels are shown.
@@ -69,12 +77,21 @@ trait BackdropPadding extends StObject {
 object BackdropPadding {
   
   inline def apply(
-    backdropColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScalePointLabelContext],
+    backdropColor: Scriptable[
+      typings.chartJs.distChunksHelpersDotcoreMod.Color, 
+      ScriptableScalePointLabelContext
+    ],
     backdropPadding: Scriptable[Double | ChartArea, ScriptableScalePointLabelContext],
-    borderRadius: Scriptable[Double | BorderRadius, ScriptableScalePointLabelContext],
+    borderRadius: Scriptable[
+      Double | typings.chartJs.distChunksHelpersDotcoreMod.BorderRadius, 
+      ScriptableScalePointLabelContext
+    ],
     callback: (String, Double) => String | (js.Array[Double | String]) | Double,
     centerPointLabels: Boolean,
-    color: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScalePointLabelContext],
+    color: Scriptable[
+      typings.chartJs.distChunksHelpersDotcoreMod.Color, 
+      ScriptableScalePointLabelContext
+    ],
     display: Boolean,
     font: ScriptableAndScriptableOptions[Partial[FontSpec], ScriptableScalePointLabelContext],
     padding: Scriptable[Double, ScriptableScalePointLabelContext]
@@ -85,10 +102,15 @@ object BackdropPadding {
   
   extension [Self <: BackdropPadding](x: Self) {
     
-    inline def setBackdropColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScalePointLabelContext]): Self = StObject.set(x, "backdropColor", value.asInstanceOf[js.Any])
+    inline def setBackdropColor(
+      value: Scriptable[
+          typings.chartJs.distChunksHelpersDotcoreMod.Color, 
+          ScriptableScalePointLabelContext
+        ]
+    ): Self = StObject.set(x, "backdropColor", value.asInstanceOf[js.Any])
     
     inline def setBackdropColorFunction2(
-      value: (ScriptableScalePointLabelContext, /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableScalePointLabelContext, /* options */ AnyObject) => js.UndefOr[typings.chartJs.distChunksHelpersDotcoreMod.Color]
     ): Self = StObject.set(x, "backdropColor", js.Any.fromFunction2(value))
     
     inline def setBackdropPadding(value: Scriptable[Double | ChartArea, ScriptableScalePointLabelContext]): Self = StObject.set(x, "backdropPadding", value.asInstanceOf[js.Any])
@@ -97,20 +119,30 @@ object BackdropPadding {
       value: (ScriptableScalePointLabelContext, /* options */ AnyObject) => js.UndefOr[Double | ChartArea]
     ): Self = StObject.set(x, "backdropPadding", js.Any.fromFunction2(value))
     
-    inline def setBorderRadius(value: Scriptable[Double | BorderRadius, ScriptableScalePointLabelContext]): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(
+      value: Scriptable[
+          Double | typings.chartJs.distChunksHelpersDotcoreMod.BorderRadius, 
+          ScriptableScalePointLabelContext
+        ]
+    ): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderRadiusFunction2(
-      value: (ScriptableScalePointLabelContext, /* options */ AnyObject) => js.UndefOr[Double | BorderRadius]
+      value: (ScriptableScalePointLabelContext, /* options */ AnyObject) => js.UndefOr[Double | typings.chartJs.distChunksHelpersDotcoreMod.BorderRadius]
     ): Self = StObject.set(x, "borderRadius", js.Any.fromFunction2(value))
     
     inline def setCallback(value: (String, Double) => String | (js.Array[Double | String]) | Double): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
     inline def setCenterPointLabels(value: Boolean): Self = StObject.set(x, "centerPointLabels", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScalePointLabelContext]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(
+      value: Scriptable[
+          typings.chartJs.distChunksHelpersDotcoreMod.Color, 
+          ScriptableScalePointLabelContext
+        ]
+    ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorFunction2(
-      value: (ScriptableScalePointLabelContext, /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableScalePointLabelContext, /* options */ AnyObject) => js.UndefOr[typings.chartJs.distChunksHelpersDotcoreMod.Color]
     ): Self = StObject.set(x, "color", js.Any.fromFunction2(value))
     
     inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])

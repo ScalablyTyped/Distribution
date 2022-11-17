@@ -5,8 +5,6 @@ import typings.vueCompilerCore.mod.CodegenContext
 import typings.vueCompilerCore.mod.DirectiveNode
 import typings.vueCompilerCore.mod.PropsExpression
 import typings.vueCompilerCore.mod.SlotsExpression
-import typings.vueCompilerCore.vueCompilerCoreStrings.function
-import typings.vueCompilerCore.vueCompilerCoreStrings.module
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +57,7 @@ object anon {
       * used with `new Function(code)()` to generate a render function at runtime.
       * @default 'function'
       */
-    var mode: js.UndefOr[module | function] = js.undefined
+    var mode: js.UndefOr["module" | "function"] = js.undefined
     
     var onContextCreated: js.UndefOr[js.Function1[/* context */ CodegenContext, Unit]] = js.undefined
     
@@ -151,7 +149,7 @@ object anon {
       
       inline def setIsTSUndefined: Self = StObject.set(x, "isTS", js.undefined)
       
-      inline def setMode(value: module | function): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: "module" | "function"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       

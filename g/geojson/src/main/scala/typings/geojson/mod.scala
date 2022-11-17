@@ -30,7 +30,7 @@ object mod {
     var properties: P
     
     @JSName("type")
-    var type_Feature: typings.geojson.geojsonStrings.Feature
+    var type_Feature: "Feature"
   }
   object Feature {
     
@@ -50,7 +50,7 @@ object mod {
       
       inline def setProperties(value: P): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      inline def setType(value: typings.geojson.geojsonStrings.Feature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "Feature"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,7 +61,7 @@ object mod {
     var features: js.Array[Feature[G, P]]
     
     @JSName("type")
-    var type_FeatureCollection: typings.geojson.geojsonStrings.FeatureCollection
+    var type_FeatureCollection: "FeatureCollection"
   }
   object FeatureCollection {
     
@@ -77,39 +77,30 @@ object mod {
       
       inline def setFeaturesVarargs(value: (Feature[G, P])*): Self = StObject.set(x, "features", js.Array(value*))
       
-      inline def setType(value: typings.geojson.geojsonStrings.FeatureCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "FeatureCollection"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   type GeoJSON = Geometry | (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties])
   
-  /* Inlined geojson.geojson.Geometry['type'] */
-  /* Rewritten from type alias, can be one of: 
-    - typings.geojson.geojsonStrings.MultiPolygon
-    - typings.geojson.geojsonStrings.GeometryCollection
-    - typings.geojson.geojsonStrings.MultiLineString
-    - typings.geojson.geojsonStrings.LineString
-    - typings.geojson.geojsonStrings.Point
-    - typings.geojson.geojsonStrings.Polygon
-    - typings.geojson.geojsonStrings.MultiPoint
-  */
-  trait GeoJsonGeometryTypes extends StObject
   object GeoJsonGeometryTypes {
     
-    inline def GeometryCollection: typings.geojson.geojsonStrings.GeometryCollection = "GeometryCollection".asInstanceOf[typings.geojson.geojsonStrings.GeometryCollection]
+    inline def GeometryCollection: "GeometryCollection" = "GeometryCollection".asInstanceOf["GeometryCollection"]
     
-    inline def LineString: typings.geojson.geojsonStrings.LineString = "LineString".asInstanceOf[typings.geojson.geojsonStrings.LineString]
+    inline def LineString: "LineString" = "LineString".asInstanceOf["LineString"]
     
-    inline def MultiLineString: typings.geojson.geojsonStrings.MultiLineString = "MultiLineString".asInstanceOf[typings.geojson.geojsonStrings.MultiLineString]
+    inline def MultiLineString: "MultiLineString" = "MultiLineString".asInstanceOf["MultiLineString"]
     
-    inline def MultiPoint: typings.geojson.geojsonStrings.MultiPoint = "MultiPoint".asInstanceOf[typings.geojson.geojsonStrings.MultiPoint]
+    inline def MultiPoint: "MultiPoint" = "MultiPoint".asInstanceOf["MultiPoint"]
     
-    inline def MultiPolygon: typings.geojson.geojsonStrings.MultiPolygon = "MultiPolygon".asInstanceOf[typings.geojson.geojsonStrings.MultiPolygon]
+    inline def MultiPolygon: "MultiPolygon" = "MultiPolygon".asInstanceOf["MultiPolygon"]
     
-    inline def Point: typings.geojson.geojsonStrings.Point = "Point".asInstanceOf[typings.geojson.geojsonStrings.Point]
+    inline def Point: "Point" = "Point".asInstanceOf["Point"]
     
-    inline def Polygon: typings.geojson.geojsonStrings.Polygon = "Polygon".asInstanceOf[typings.geojson.geojsonStrings.Polygon]
+    inline def Polygon: "Polygon" = "Polygon".asInstanceOf["Polygon"]
   }
+  /* Inlined geojson.geojson.Geometry['type'] */
+  type GeoJsonGeometryTypes = "MultiPolygon" | "GeometryCollection" | "MultiLineString" | "LineString" | "Point" | "Polygon" | "MultiPoint"
   
   trait GeoJsonObject extends StObject {
     
@@ -151,39 +142,28 @@ object mod {
   
   type GeoJsonProperties = StringDictionary[Any] | Null
   
-  /* Inlined geojson.geojson.GeoJSON['type'] */
-  /* Rewritten from type alias, can be one of: 
-    - typings.geojson.geojsonStrings.MultiPolygon
-    - typings.geojson.geojsonStrings.GeometryCollection
-    - typings.geojson.geojsonStrings.MultiLineString
-    - typings.geojson.geojsonStrings.LineString
-    - typings.geojson.geojsonStrings.Point
-    - typings.geojson.geojsonStrings.FeatureCollection
-    - typings.geojson.geojsonStrings.Polygon
-    - typings.geojson.geojsonStrings.MultiPoint
-    - typings.geojson.geojsonStrings.Feature
-  */
-  trait GeoJsonTypes extends StObject
   object GeoJsonTypes {
     
-    inline def Feature: typings.geojson.geojsonStrings.Feature = "Feature".asInstanceOf[typings.geojson.geojsonStrings.Feature]
+    inline def Feature: "Feature" = "Feature".asInstanceOf["Feature"]
     
-    inline def FeatureCollection: typings.geojson.geojsonStrings.FeatureCollection = "FeatureCollection".asInstanceOf[typings.geojson.geojsonStrings.FeatureCollection]
+    inline def FeatureCollection: "FeatureCollection" = "FeatureCollection".asInstanceOf["FeatureCollection"]
     
-    inline def GeometryCollection: typings.geojson.geojsonStrings.GeometryCollection = "GeometryCollection".asInstanceOf[typings.geojson.geojsonStrings.GeometryCollection]
+    inline def GeometryCollection: "GeometryCollection" = "GeometryCollection".asInstanceOf["GeometryCollection"]
     
-    inline def LineString: typings.geojson.geojsonStrings.LineString = "LineString".asInstanceOf[typings.geojson.geojsonStrings.LineString]
+    inline def LineString: "LineString" = "LineString".asInstanceOf["LineString"]
     
-    inline def MultiLineString: typings.geojson.geojsonStrings.MultiLineString = "MultiLineString".asInstanceOf[typings.geojson.geojsonStrings.MultiLineString]
+    inline def MultiLineString: "MultiLineString" = "MultiLineString".asInstanceOf["MultiLineString"]
     
-    inline def MultiPoint: typings.geojson.geojsonStrings.MultiPoint = "MultiPoint".asInstanceOf[typings.geojson.geojsonStrings.MultiPoint]
+    inline def MultiPoint: "MultiPoint" = "MultiPoint".asInstanceOf["MultiPoint"]
     
-    inline def MultiPolygon: typings.geojson.geojsonStrings.MultiPolygon = "MultiPolygon".asInstanceOf[typings.geojson.geojsonStrings.MultiPolygon]
+    inline def MultiPolygon: "MultiPolygon" = "MultiPolygon".asInstanceOf["MultiPolygon"]
     
-    inline def Point: typings.geojson.geojsonStrings.Point = "Point".asInstanceOf[typings.geojson.geojsonStrings.Point]
+    inline def Point: "Point" = "Point".asInstanceOf["Point"]
     
-    inline def Polygon: typings.geojson.geojsonStrings.Polygon = "Polygon".asInstanceOf[typings.geojson.geojsonStrings.Polygon]
+    inline def Polygon: "Polygon" = "Polygon".asInstanceOf["Polygon"]
   }
+  /* Inlined geojson.geojson.GeoJSON['type'] */
+  type GeoJsonTypes = "MultiPolygon" | "GeometryCollection" | "MultiLineString" | "LineString" | "Point" | "FeatureCollection" | "Polygon" | "MultiPoint" | "Feature"
   
   /** 
   NOTE: Rewritten from type alias:
@@ -194,16 +174,7 @@ object mod {
   - geojson.geojson.GeoJSON
   - geojson.geojson.Geometry
   */
-  /* Rewritten from type alias, can be one of: 
-    - typings.geojson.mod.Point
-    - typings.geojson.mod.MultiPoint
-    - typings.geojson.mod.LineString
-    - typings.geojson.mod.MultiLineString
-    - typings.geojson.mod.Polygon
-    - typings.geojson.mod.MultiPolygon
-    - typings.geojson.mod.GeometryCollection[scala.Any]
-  */
-  type Geometry = _Geometry | GeometryCollection[Any]
+  type Geometry = Point | MultiPoint | LineString | MultiLineString | Polygon | MultiPolygon | GeometryCollection[Any]
   
   trait GeometryCollection[G /* <: Geometry */]
     extends StObject
@@ -212,7 +183,7 @@ object mod {
     var geometries: js.Array[G]
     
     @JSName("type")
-    var type_GeometryCollection: typings.geojson.geojsonStrings.GeometryCollection
+    var type_GeometryCollection: "GeometryCollection"
   }
   object GeometryCollection {
     
@@ -228,7 +199,7 @@ object mod {
       
       inline def setGeometriesVarargs(value: G*): Self = StObject.set(x, "geometries", js.Array(value*))
       
-      inline def setType(value: typings.geojson.geojsonStrings.GeometryCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "GeometryCollection"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,13 +216,12 @@ object mod {
   
   trait LineString
     extends StObject
-       with GeoJsonObject
-       with _Geometry {
+       with GeoJsonObject {
     
     var coordinates: js.Array[Position]
     
     @JSName("type")
-    var type_LineString: typings.geojson.geojsonStrings.LineString
+    var type_LineString: "LineString"
   }
   object LineString {
     
@@ -267,19 +237,18 @@ object mod {
       
       inline def setCoordinatesVarargs(value: Position*): Self = StObject.set(x, "coordinates", js.Array(value*))
       
-      inline def setType(value: typings.geojson.geojsonStrings.LineString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "LineString"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait MultiLineString
     extends StObject
-       with GeoJsonObject
-       with _Geometry {
+       with GeoJsonObject {
     
     var coordinates: js.Array[js.Array[Position]]
     
     @JSName("type")
-    var type_MultiLineString: typings.geojson.geojsonStrings.MultiLineString
+    var type_MultiLineString: "MultiLineString"
   }
   object MultiLineString {
     
@@ -295,19 +264,18 @@ object mod {
       
       inline def setCoordinatesVarargs(value: js.Array[Position]*): Self = StObject.set(x, "coordinates", js.Array(value*))
       
-      inline def setType(value: typings.geojson.geojsonStrings.MultiLineString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "MultiLineString"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait MultiPoint
     extends StObject
-       with GeoJsonObject
-       with _Geometry {
+       with GeoJsonObject {
     
     var coordinates: js.Array[Position]
     
     @JSName("type")
-    var type_MultiPoint: typings.geojson.geojsonStrings.MultiPoint
+    var type_MultiPoint: "MultiPoint"
   }
   object MultiPoint {
     
@@ -323,19 +291,18 @@ object mod {
       
       inline def setCoordinatesVarargs(value: Position*): Self = StObject.set(x, "coordinates", js.Array(value*))
       
-      inline def setType(value: typings.geojson.geojsonStrings.MultiPoint): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "MultiPoint"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait MultiPolygon
     extends StObject
-       with GeoJsonObject
-       with _Geometry {
+       with GeoJsonObject {
     
     var coordinates: js.Array[js.Array[js.Array[Position]]]
     
     @JSName("type")
-    var type_MultiPolygon: typings.geojson.geojsonStrings.MultiPolygon
+    var type_MultiPolygon: "MultiPolygon"
   }
   object MultiPolygon {
     
@@ -351,19 +318,18 @@ object mod {
       
       inline def setCoordinatesVarargs(value: js.Array[js.Array[Position]]*): Self = StObject.set(x, "coordinates", js.Array(value*))
       
-      inline def setType(value: typings.geojson.geojsonStrings.MultiPolygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "MultiPolygon"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait Point
     extends StObject
-       with GeoJsonObject
-       with _Geometry {
+       with GeoJsonObject {
     
     var coordinates: Position
     
     @JSName("type")
-    var type_Point: typings.geojson.geojsonStrings.Point
+    var type_Point: "Point"
   }
   object Point {
     
@@ -379,19 +345,18 @@ object mod {
       
       inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value*))
       
-      inline def setType(value: typings.geojson.geojsonStrings.Point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "Point"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait Polygon
     extends StObject
-       with GeoJsonObject
-       with _Geometry {
+       with GeoJsonObject {
     
     var coordinates: js.Array[js.Array[Position]]
     
     @JSName("type")
-    var type_Polygon: typings.geojson.geojsonStrings.Polygon
+    var type_Polygon: "Polygon"
   }
   object Polygon {
     
@@ -407,49 +372,9 @@ object mod {
       
       inline def setCoordinatesVarargs(value: js.Array[Position]*): Self = StObject.set(x, "coordinates", js.Array(value*))
       
-      inline def setType(value: typings.geojson.geojsonStrings.Polygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "Polygon"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   type Position = js.Array[Double]
-  
-  trait _Geometry extends StObject
-  object _Geometry {
-    
-    inline def LineString(coordinates: js.Array[Position]): typings.geojson.mod.LineString = {
-      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("LineString")
-      __obj.asInstanceOf[typings.geojson.mod.LineString]
-    }
-    
-    inline def MultiLineString(coordinates: js.Array[js.Array[Position]]): typings.geojson.mod.MultiLineString = {
-      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("MultiLineString")
-      __obj.asInstanceOf[typings.geojson.mod.MultiLineString]
-    }
-    
-    inline def MultiPoint(coordinates: js.Array[Position]): typings.geojson.mod.MultiPoint = {
-      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("MultiPoint")
-      __obj.asInstanceOf[typings.geojson.mod.MultiPoint]
-    }
-    
-    inline def MultiPolygon(coordinates: js.Array[js.Array[js.Array[Position]]]): typings.geojson.mod.MultiPolygon = {
-      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("MultiPolygon")
-      __obj.asInstanceOf[typings.geojson.mod.MultiPolygon]
-    }
-    
-    inline def Point(coordinates: Position): typings.geojson.mod.Point = {
-      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("Point")
-      __obj.asInstanceOf[typings.geojson.mod.Point]
-    }
-    
-    inline def Polygon(coordinates: js.Array[js.Array[Position]]): typings.geojson.mod.Polygon = {
-      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("Polygon")
-      __obj.asInstanceOf[typings.geojson.mod.Polygon]
-    }
-  }
 }

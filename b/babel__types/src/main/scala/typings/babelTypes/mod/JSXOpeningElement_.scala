@@ -1,16 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.JSXOpeningElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait JSXOpeningElement_
+trait JSXOpeningElement_
   extends StObject
-     with BaseNode
-     with Immutable
-     with JSX {
+     with BaseNode {
   
   var attributes: js.Array[JSXAttribute_ | JSXSpreadAttribute_]
   
@@ -21,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var typeParameters: TypeParameterInstantiation_ | TSTypeParameterInstantiation_ | Null
   
   @JSName("type")
-  var type_JSXOpeningElement_ : JSXOpeningElement
+  var type_JSXOpeningElement_ : "JSXOpeningElement"
 }
 object JSXOpeningElement_ {
   
@@ -45,7 +41,7 @@ object JSXOpeningElement_ {
     
     inline def setSelfClosing(value: Boolean): Self = StObject.set(x, "selfClosing", value.asInstanceOf[js.Any])
     
-    inline def setType(value: JSXOpeningElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "JSXOpeningElement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TypeParameterInstantiation_ | TSTypeParameterInstantiation_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

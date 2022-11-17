@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JobOutboundMessageChannelError
   extends StObject
-     with JobOutboundMessageChannelBase
-     with JobOutboundMessage[Any] {
+     with JobOutboundMessageChannelBase {
   
   /**
     * The error message being sent to the channel.

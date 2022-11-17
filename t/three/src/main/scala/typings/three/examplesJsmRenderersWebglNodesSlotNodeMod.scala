@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.threeStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object examplesJsmRenderersWebglNodesSlotNodeMod {
   trait SlotNode[TNode /* <: typings.three.examplesJsmNodesCoreNodeMod.default */]
     extends typings.three.examplesJsmNodesCoreNodeMod.default {
     
-    var inclusionType: replace = js.native
+    var inclusionType: "replace" = js.native
     
     var node: TNode | Null = js.native
     

@@ -1,16 +1,12 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CompoundExpressionNode
   extends StObject
-     with Node2
-     with ExpressionNode
-     with TemplateChildNode
-     with TemplateTextChildNode {
+     with Node2 {
   
   var children: js.Array[
     SimpleExpressionNode | CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol
@@ -25,7 +21,7 @@ trait CompoundExpressionNode
   var isHandlerKey: js.UndefOr[Boolean] = js.undefined
   
   @JSName("type")
-  var type_CompoundExpressionNode: `8`
+  var type_CompoundExpressionNode: 8
 }
 object CompoundExpressionNode {
   
@@ -62,6 +58,6 @@ object CompoundExpressionNode {
     
     inline def setIsHandlerKeyUndefined: Self = StObject.set(x, "isHandlerKey", js.undefined)
     
-    inline def setType(value: `8`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 8): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.resize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,16 +11,19 @@ trait PictureInPictureWindow
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_resize")
+  def addEventListener(`type`: "resize", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_resize(
-    `type`: resize,
+  @scala.annotation.targetName("addEventListener_resize")
+  def addEventListener(
+    `type`: "resize",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_resize(
-    `type`: resize,
+  @scala.annotation.targetName("addEventListener_resize")
+  def addEventListener(
+    `type`: "resize",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -34,16 +36,19 @@ trait PictureInPictureWindow
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_resize")
+  def removeEventListener(`type`: "resize", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_resize(
-    `type`: resize,
+  @scala.annotation.targetName("removeEventListener_resize")
+  def removeEventListener(
+    `type`: "resize",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_resize(
-    `type`: resize,
+  @scala.annotation.targetName("removeEventListener_resize")
+  def removeEventListener(
+    `type`: "resize",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

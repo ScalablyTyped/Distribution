@@ -1,19 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.BooleanLiteralTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait BooleanLiteralTypeAnnotation_
+trait BooleanLiteralTypeAnnotation_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowType {
+     with BaseNode {
   
   @JSName("type")
-  var type_BooleanLiteralTypeAnnotation_ : BooleanLiteralTypeAnnotation
+  var type_BooleanLiteralTypeAnnotation_ : "BooleanLiteralTypeAnnotation"
   
   var value: Boolean
 }
@@ -27,7 +23,7 @@ object BooleanLiteralTypeAnnotation_ {
   
   extension [Self <: BooleanLiteralTypeAnnotation_](x: Self) {
     
-    inline def setType(value: BooleanLiteralTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "BooleanLiteralTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

@@ -1,7 +1,5 @@
 package typings.materialUi.MaterialUI
 
-import typings.materialUi.materialUiStrings.after
-import typings.materialUi.materialUiStrings.before
 import typings.react.mod.CSSProperties
 import typings.react.mod.DOMAttributes
 import typings.react.mod.FocusEvent
@@ -49,7 +47,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var label: js.UndefOr[ReactNode] = js.undefined
   
-  var labelPosition: js.UndefOr[before | after] = js.undefined
+  var labelPosition: js.UndefOr["before" | "after"] = js.undefined
   
   var labelStyle: js.UndefOr[CSSProperties] = js.undefined
   
@@ -148,7 +146,7 @@ object FlatButtonProps {
     
     inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setLabelPosition(value: before | after): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+    inline def setLabelPosition(value: "before" | "after"): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
     
     inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
     

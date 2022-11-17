@@ -128,12 +128,7 @@ object libConfigProviderContextMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.ltr
-    - typings.antd.antdStrings.rtl
-    - scala.Unit
-  */
-  type DirectionType = js.UndefOr[_DirectionType]
+  type DirectionType = js.UndefOr["ltr" | "rtl"]
   
   trait Theme extends StObject {
     
@@ -183,6 +178,4 @@ object libConfigProviderContextMod {
       inline def setWarningColorUndefined: Self = StObject.set(x, "warningColor", js.undefined)
     }
   }
-  
-  trait _DirectionType extends StObject
 }

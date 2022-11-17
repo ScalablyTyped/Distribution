@@ -1,15 +1,10 @@
 package typings.chartJs.anon
 
-import typings.chartJs.chartJsStrings.category
-import typings.chartJs.chartJsStrings.linear
-import typings.chartJs.chartJsStrings.logarithmic
-import typings.chartJs.chartJsStrings.time
-import typings.chartJs.chartJsStrings.timeseries
-import typings.chartJs.mod.CartesianParsedData
-import typings.chartJs.mod.FillerControllerDatasetOptions
-import typings.chartJs.mod.LineControllerChartOptions
-import typings.chartJs.mod.LineControllerDatasetOptions
-import typings.chartJs.mod.ScatterDataPoint
+import typings.chartJs.distChunksHelpersDotcoreMod.CartesianParsedData
+import typings.chartJs.distChunksHelpersDotcoreMod.FillerControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.LineControllerChartOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.LineControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.ScatterDataPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +19,7 @@ trait DatasetOptions extends StObject {
   
   var parsedDataType: CartesianParsedData
   
-  var scales: linear | logarithmic | category | time | timeseries
+  var scales: "linear" | "logarithmic" | "category" | "time" | "timeseries"
 }
 object DatasetOptions {
   
@@ -32,7 +27,7 @@ object DatasetOptions {
     chartOptions: LineControllerChartOptions,
     datasetOptions: LineControllerDatasetOptions & FillerControllerDatasetOptions,
     parsedDataType: CartesianParsedData,
-    scales: linear | logarithmic | category | time | timeseries
+    scales: "linear" | "logarithmic" | "category" | "time" | "timeseries"
   ): DatasetOptions = {
     val __obj = js.Dynamic.literal(chartOptions = chartOptions.asInstanceOf[js.Any], datasetOptions = datasetOptions.asInstanceOf[js.Any], parsedDataType = parsedDataType.asInstanceOf[js.Any], scales = scales.asInstanceOf[js.Any], defaultDataPoint = null)
     __obj.asInstanceOf[DatasetOptions]
@@ -50,6 +45,6 @@ object DatasetOptions {
     
     inline def setParsedDataType(value: CartesianParsedData): Self = StObject.set(x, "parsedDataType", value.asInstanceOf[js.Any])
     
-    inline def setScales(value: linear | logarithmic | category | time | timeseries): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+    inline def setScales(value: "linear" | "logarithmic" | "category" | "time" | "timeseries"): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
   }
 }

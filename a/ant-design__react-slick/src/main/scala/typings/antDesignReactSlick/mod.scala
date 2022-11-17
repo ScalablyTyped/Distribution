@@ -1,6 +1,5 @@
 package typings.antDesignReactSlick
 
-import typings.antDesignReactSlick.antDesignReactSlickStrings.unslick
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.MouseEvent
@@ -61,27 +60,23 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antDesignReactSlick.antDesignReactSlickStrings.ondemand
-    - typings.antDesignReactSlick.antDesignReactSlickStrings.progressive
-  */
-  trait LazyLoadTypes extends StObject
   object LazyLoadTypes {
     
-    inline def ondemand: typings.antDesignReactSlick.antDesignReactSlickStrings.ondemand = "ondemand".asInstanceOf[typings.antDesignReactSlick.antDesignReactSlickStrings.ondemand]
+    inline def ondemand: "ondemand" = "ondemand".asInstanceOf["ondemand"]
     
-    inline def progressive: typings.antDesignReactSlick.antDesignReactSlickStrings.progressive = "progressive".asInstanceOf[typings.antDesignReactSlick.antDesignReactSlickStrings.progressive]
+    inline def progressive: "progressive" = "progressive".asInstanceOf["progressive"]
   }
+  type LazyLoadTypes = "ondemand" | "progressive"
   
   trait ResponsiveObject extends StObject {
     
     var breakpoint: Double
     
-    var settings: unslick | Settings
+    var settings: "unslick" | Settings
   }
   object ResponsiveObject {
     
-    inline def apply(breakpoint: Double, settings: unslick | Settings): ResponsiveObject = {
+    inline def apply(breakpoint: Double, settings: "unslick" | Settings): ResponsiveObject = {
       val __obj = js.Dynamic.literal(breakpoint = breakpoint.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponsiveObject]
     }
@@ -90,7 +85,7 @@ object mod {
       
       inline def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
-      inline def setSettings(value: unslick | Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: "unslick" | Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -443,14 +438,5 @@ object mod {
     def slickPrev(): Unit = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antDesignReactSlick.antDesignReactSlickStrings.left
-    - typings.antDesignReactSlick.antDesignReactSlickStrings.down
-    - typings.antDesignReactSlick.antDesignReactSlickStrings.right
-    - typings.antDesignReactSlick.antDesignReactSlickStrings.up
-    - java.lang.String
-  */
-  type SwipeDirection = _SwipeDirection | String
-  
-  trait _SwipeDirection extends StObject
+  type SwipeDirection = "left" | "down" | "right" | "up" | String
 }

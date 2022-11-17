@@ -1,8 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.height
-import typings.reactNative.reactNativeStrings.padding
-import typings.reactNative.reactNativeStrings.position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +8,7 @@ trait KeyboardAvoidingViewProps
   extends StObject
      with ViewProps {
   
-  var behavior: js.UndefOr[height | position | padding] = js.undefined
+  var behavior: js.UndefOr["height" | "position" | "padding"] = js.undefined
   
   /**
     * The style of the content container(View) when behavior is 'position'.
@@ -40,7 +37,7 @@ object KeyboardAvoidingViewProps {
   
   extension [Self <: KeyboardAvoidingViewProps](x: Self) {
     
-    inline def setBehavior(value: height | position | padding): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: "height" | "position" | "padding"): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
     inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
     

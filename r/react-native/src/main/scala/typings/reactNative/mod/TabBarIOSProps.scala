@@ -1,8 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.center
-import typings.reactNative.reactNativeStrings.fill
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +22,7 @@ trait TabBarIOSProps
     * this value defaults to `fill`, in a horizontally regular one (e.g. iPad)
     * it defaults to center.
     */
-  var itemPositioning: js.UndefOr[fill | center | auto] = js.undefined
+  var itemPositioning: js.UndefOr["fill" | "center" | "auto"] = js.undefined
   
   /**
     * Color of the currently selected tab icon
@@ -60,7 +57,7 @@ object TabBarIOSProps {
     
     inline def setBarTintColorUndefined: Self = StObject.set(x, "barTintColor", js.undefined)
     
-    inline def setItemPositioning(value: fill | center | auto): Self = StObject.set(x, "itemPositioning", value.asInstanceOf[js.Any])
+    inline def setItemPositioning(value: "fill" | "center" | "auto"): Self = StObject.set(x, "itemPositioning", value.asInstanceOf[js.Any])
     
     inline def setItemPositioningUndefined: Self = StObject.set(x, "itemPositioning", js.undefined)
     

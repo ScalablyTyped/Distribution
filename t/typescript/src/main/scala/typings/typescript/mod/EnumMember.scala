@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EnumMember
   extends StObject
      with NamedDeclaration
-     with JSDocContainer
-     with HasExpressionInitializer
-     with HasJSDoc
-     with VariableLikeDeclaration {
+     with JSDocContainer {
   
   val initializer: js.UndefOr[Expression] = js.native
   

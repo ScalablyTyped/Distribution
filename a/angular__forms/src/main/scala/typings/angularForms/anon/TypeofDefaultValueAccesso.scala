@@ -5,7 +5,6 @@ import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.Renderer2
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
 import typings.angularForms.mod.DefaultValueAccessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,7 +28,8 @@ trait TypeofDefaultValueAccesso
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[DefaultValueAccessor, js.Tuple3[Null, Null, Optional]] = js.native

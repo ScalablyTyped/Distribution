@@ -5,8 +5,6 @@ import typings.rcTabs.anon.Direction
 import typings.rcTabs.anon.Event
 import typings.rcTabs.anon.Height
 import typings.rcTabs.esTabNavListMod.TabNavListProps
-import typings.rcTabs.rcTabsStrings.add
-import typings.rcTabs.rcTabsStrings.remove
 import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentType
 import typings.react.mod.Key
@@ -58,7 +56,9 @@ object esInterfaceMod {
     
     var addIcon: js.UndefOr[ReactNode] = js.undefined
     
-    def onEdit(`type`: add | remove, info: Event): Unit
+    @JSName("onEdit")
+    @scala.annotation.targetName("onEdit_add_remove")
+    def onEdit(`type`: "add" | "remove", info: Event): Unit
     
     var removeIcon: js.UndefOr[ReactNode] = js.undefined
     
@@ -66,7 +66,7 @@ object esInterfaceMod {
   }
   object EditableConfig {
     
-    inline def apply(onEdit: (add | remove, Event) => Unit): EditableConfig = {
+    inline def apply(onEdit: ("add" | "remove", Event) => Unit): EditableConfig = {
       val __obj = js.Dynamic.literal(onEdit = js.Any.fromFunction2(onEdit))
       __obj.asInstanceOf[EditableConfig]
     }
@@ -77,7 +77,7 @@ object esInterfaceMod {
       
       inline def setAddIconUndefined: Self = StObject.set(x, "addIcon", js.undefined)
       
-      inline def setOnEdit(value: (add | remove, Event) => Unit): Self = StObject.set(x, "onEdit", js.Any.fromFunction2(value))
+      inline def setOnEdit(value: ("add" | "remove", Event) => Unit): Self = StObject.set(x, "onEdit", js.Any.fromFunction2(value))
       
       inline def setRemoveIcon(value: ReactNode): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
       
@@ -267,17 +267,13 @@ object esInterfaceMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcTabs.rcTabsStrings.left
-    - typings.rcTabs.rcTabsStrings.right
-  */
-  trait TabBarExtraPosition extends StObject
   object TabBarExtraPosition {
     
-    inline def left: typings.rcTabs.rcTabsStrings.left = "left".asInstanceOf[typings.rcTabs.rcTabsStrings.left]
+    inline def left: "left" = "left".asInstanceOf["left"]
     
-    inline def right: typings.rcTabs.rcTabsStrings.right = "right".asInstanceOf[typings.rcTabs.rcTabsStrings.right]
+    inline def right: "right" = "right".asInstanceOf["right"]
   }
+  type TabBarExtraPosition = "left" | "right"
   
   trait TabOffset extends StObject {
     
@@ -314,23 +310,17 @@ object esInterfaceMod {
   
   type TabOffsetMap = Map[Key, TabOffset]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcTabs.rcTabsStrings.left
-    - typings.rcTabs.rcTabsStrings.right
-    - typings.rcTabs.rcTabsStrings.top
-    - typings.rcTabs.rcTabsStrings.bottom
-  */
-  trait TabPosition extends StObject
   object TabPosition {
     
-    inline def bottom: typings.rcTabs.rcTabsStrings.bottom = "bottom".asInstanceOf[typings.rcTabs.rcTabsStrings.bottom]
+    inline def bottom: "bottom" = "bottom".asInstanceOf["bottom"]
     
-    inline def left: typings.rcTabs.rcTabsStrings.left = "left".asInstanceOf[typings.rcTabs.rcTabsStrings.left]
+    inline def left: "left" = "left".asInstanceOf["left"]
     
-    inline def right: typings.rcTabs.rcTabsStrings.right = "right".asInstanceOf[typings.rcTabs.rcTabsStrings.right]
+    inline def right: "right" = "right".asInstanceOf["right"]
     
-    inline def top: typings.rcTabs.rcTabsStrings.top = "top".asInstanceOf[typings.rcTabs.rcTabsStrings.top]
+    inline def top: "top" = "top".asInstanceOf["top"]
   }
+  type TabPosition = "left" | "right" | "top" | "bottom"
   
   type TabSizeMap = Map[Key, Height]
   

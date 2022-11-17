@@ -17,8 +17,7 @@ object distTypesInternalSubscriptionMod {
   @js.native
   val EMPTY_SUBSCRIPTION: Subscription = js.native
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.rxjs.distTypesInternalTypesMod._TeardownLogic because Already inherited */ @JSImport("rxjs/dist/types/internal/Subscription", "Subscription")
+  @JSImport("rxjs/dist/types/internal/Subscription", "Subscription")
   @js.native
   /**
     * @param initialTeardown A function executed first as part of the finalization

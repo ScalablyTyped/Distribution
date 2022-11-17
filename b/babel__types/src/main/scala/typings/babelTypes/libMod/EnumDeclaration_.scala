@@ -1,24 +1,19 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.EnumDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait EnumDeclaration_
   extends StObject
-     with BaseNode
-     with Declaration
-     with Flow
-     with Node
-     with Statement {
+     with BaseNode {
   
   var body: EnumBooleanBody_ | EnumNumberBody_ | EnumStringBody_ | EnumSymbolBody_
   
   var id: Identifier_
   
   @JSName("type")
-  var type_EnumDeclaration_ : EnumDeclaration
+  var type_EnumDeclaration_ : "EnumDeclaration"
 }
 object EnumDeclaration_ {
   
@@ -34,6 +29,6 @@ object EnumDeclaration_ {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setType(value: EnumDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "EnumDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

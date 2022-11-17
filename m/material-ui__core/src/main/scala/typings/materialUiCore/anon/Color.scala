@@ -1,10 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreBooleans.`false`
-import typings.materialUiCore.materialUiCoreStrings.end
-import typings.materialUiCore.materialUiCoreStrings.medium
-import typings.materialUiCore.materialUiCoreStrings.small
-import typings.materialUiCore.materialUiCoreStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +16,9 @@ trait Color extends StObject {
     * side of the icon with content above or below, without ruining the border
     * size and shape).
     */
-  var edge: js.UndefOr[start | end | `false`] = js.undefined
+  var edge: js.UndefOr["start" | "end" | false] = js.undefined
   
-  var size: js.UndefOr[small | medium] = js.undefined
+  var size: js.UndefOr["small" | "medium"] = js.undefined
 }
 object Color {
   
@@ -42,11 +37,11 @@ object Color {
     
     inline def setDisableFocusRippleUndefined: Self = StObject.set(x, "disableFocusRipple", js.undefined)
     
-    inline def setEdge(value: start | end | `false`): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+    inline def setEdge(value: "start" | "end" | false): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
     inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
     
-    inline def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "small" | "medium"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }

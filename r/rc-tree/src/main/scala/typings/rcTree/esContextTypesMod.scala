@@ -11,9 +11,6 @@ import typings.rcTree.esInterfaceMod.Key
 import typings.rcTree.esInterfaceMod.NodeInstance
 import typings.rcTree.esTreeMod.DraggableConfig
 import typings.rcTree.esTreeNodeMod.TreeNodeProps
-import typings.rcTree.rcTreeInts.`-1`
-import typings.rcTree.rcTreeInts.`0`
-import typings.rcTree.rcTreeInts.`1`
 import typings.react.mod.Context
 import typings.react.mod.DragEvent
 import typings.react.mod.MouseEvent
@@ -108,7 +105,7 @@ object esContextTypesMod {
     
     var dropLevelOffset: js.UndefOr[Double] = js.undefined
     
-    var dropPosition: `-1` | `0` | `1` | Null
+    var dropPosition: -1 | 0 | 1 | Null
     
     var dropTargetKey: Key | Null
     
@@ -234,7 +231,7 @@ object esContextTypesMod {
       
       inline def setDropLevelOffsetUndefined: Self = StObject.set(x, "dropLevelOffset", js.undefined)
       
-      inline def setDropPosition(value: `-1` | `0` | `1`): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
+      inline def setDropPosition(value: -1 | 0 | 1): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
       
       inline def setDropPositionNull: Self = StObject.set(x, "dropPosition", null)
       

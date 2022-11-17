@@ -2,7 +2,6 @@ package typings.three
 
 import typings.std.ArrayLike
 import typings.three.srcMathVector3Mod.Vector3
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +40,7 @@ object srcMathSphericalHarmonics3Mod {
     
     def getIrradianceAt(normal: Vector3, target: Vector3): Vector3 = js.native
     
-    val isSphericalHarmonics3: `true` = js.native
+    val isSphericalHarmonics3: true = js.native
     
     def lerp(sh: SphericalHarmonics3, alpha: Double): SphericalHarmonics3 = js.native
     

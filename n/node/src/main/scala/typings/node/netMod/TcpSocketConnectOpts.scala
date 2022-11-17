@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TcpSocketConnectOpts
   extends StObject
-     with ConnectOpts
-     with SocketConnectOpts {
+     with ConnectOpts {
   
   var family: js.UndefOr[Double] = js.undefined
   

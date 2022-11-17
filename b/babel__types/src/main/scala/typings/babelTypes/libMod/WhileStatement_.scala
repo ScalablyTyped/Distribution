@@ -1,27 +1,19 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.WhileStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait WhileStatement_
   extends StObject
-     with BaseNode
-     with BlockParent
-     with Loop
-     with Node
-     with Scopable
-     with Standardized
-     with Statement
-     with While {
+     with BaseNode {
   
   var body: Statement
   
   var test: Expression
   
   @JSName("type")
-  var type_WhileStatement_ : WhileStatement
+  var type_WhileStatement_ : "WhileStatement"
 }
 object WhileStatement_ {
   
@@ -37,6 +29,6 @@ object WhileStatement_ {
     
     inline def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    inline def setType(value: WhileStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "WhileStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,5 @@
 package typings.babelParser
 
-import typings.babelParser.babelParserStrings.File
-import typings.babelParser.babelParserStrings.`may-2020`
 import typings.babelParser.mod.ParseError
 import typings.babelTypes.mod.Comment
 import typings.babelTypes.mod.CommentBlock
@@ -97,7 +95,7 @@ object anon {
     
     var trailingComments: js.Array[Comment] | Null
     
-    var `type`: File
+    var `type`: "File"
   }
   object ParseResultFile {
     
@@ -161,7 +159,7 @@ object anon {
       
       inline def setTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "trailingComments", js.Array(value*))
       
-      inline def setType(value: File): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "File"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -190,7 +188,7 @@ object anon {
     
     var trailingComments: js.Array[Comment] | Null
     
-    var `type`: File
+    var `type`: "File"
   }
   object ParseResultFileComments {
     
@@ -254,13 +252,13 @@ object anon {
       
       inline def setTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "trailingComments", js.Array(value*))
       
-      inline def setType(value: File): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "File"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait Version extends StObject {
     
-    var version: `may-2020`
+    var version: "may-2020"
   }
   object Version {
     
@@ -271,7 +269,7 @@ object anon {
     
     extension [Self <: Version](x: Self) {
       
-      inline def setVersion(value: `may-2020`): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: "may-2020"): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

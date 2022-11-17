@@ -1,6 +1,5 @@
 package typings.three.srcThreeMod
 
-import typings.three.examplesJsmNodesCoreConstantsMod._NodeValueOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,4 +11,3 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class Matrix3 ()
   extends typings.three.srcMathMatrix3Mod.Matrix3
-     with _NodeValueOption

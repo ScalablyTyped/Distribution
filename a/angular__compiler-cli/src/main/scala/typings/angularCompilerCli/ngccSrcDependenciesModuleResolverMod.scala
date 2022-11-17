@@ -116,9 +116,7 @@ object ngccSrcDependenciesModuleResolverMod {
   
   @JSImport("@angular/compiler-cli/ngcc/src/dependencies/module_resolver", "ResolvedDeepImport")
   @js.native
-  open class ResolvedDeepImport protected ()
-    extends StObject
-       with ResolvedModule {
+  open class ResolvedDeepImport protected () extends StObject {
     def this(importPath: AbsoluteFsPath) = this()
     
     var importPath: AbsoluteFsPath = js.native
@@ -126,9 +124,7 @@ object ngccSrcDependenciesModuleResolverMod {
   
   @JSImport("@angular/compiler-cli/ngcc/src/dependencies/module_resolver", "ResolvedExternalModule")
   @js.native
-  open class ResolvedExternalModule protected ()
-    extends StObject
-       with ResolvedModule {
+  open class ResolvedExternalModule protected () extends StObject {
     def this(entryPointPath: AbsoluteFsPath) = this()
     
     var entryPointPath: AbsoluteFsPath = js.native
@@ -136,18 +132,11 @@ object ngccSrcDependenciesModuleResolverMod {
   
   @JSImport("@angular/compiler-cli/ngcc/src/dependencies/module_resolver", "ResolvedRelativeModule")
   @js.native
-  open class ResolvedRelativeModule protected ()
-    extends StObject
-       with ResolvedModule {
+  open class ResolvedRelativeModule protected () extends StObject {
     def this(modulePath: AbsoluteFsPath) = this()
     
     var modulePath: AbsoluteFsPath = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.ngccSrcDependenciesModuleResolverMod.ResolvedExternalModule
-    - typings.angularCompilerCli.ngccSrcDependenciesModuleResolverMod.ResolvedRelativeModule
-    - typings.angularCompilerCli.ngccSrcDependenciesModuleResolverMod.ResolvedDeepImport
-  */
-  trait ResolvedModule extends StObject
+  type ResolvedModule = ResolvedExternalModule | ResolvedRelativeModule | ResolvedDeepImport
 }

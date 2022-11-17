@@ -1,8 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`display-added`
-import typings.electron.electronStrings.`display-metrics-changed`
-import typings.electron.electronStrings.`display-removed`
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,16 +11,19 @@ trait Screen
      with EventEmitter {
   
   @JSName("addListener")
-  def addListener_displayadded(event: `display-added`, listener: js.Function2[/* event */ Event, /* newDisplay */ Display, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_displaymetricschanged(
-    event: `display-metrics-changed`,
-    listener: js.Function3[/* event */ Event, /* display */ Display, /* changedMetrics */ js.Array[String], Unit]
+  @scala.annotation.targetName("addListener_displayremoved")
+  def addListener(
+    event: "display-removed",
+    listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_displayremoved(
-    event: `display-removed`,
-    listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, Unit]
+  @scala.annotation.targetName("addListener_displayadded")
+  def addListener(event: "display-added", listener: js.Function2[/* event */ Event, /* newDisplay */ Display, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_displaymetricschanged")
+  def addListener(
+    event: "display-metrics-changed",
+    listener: js.Function3[/* event */ Event, /* display */ Display, /* changedMetrics */ js.Array[String], Unit]
   ): this.type = js.native
   
   /**
@@ -76,50 +76,59 @@ trait Screen
     * Emitted when `newDisplay` has been added.
     */
   @JSName("on")
-  def on_displayadded(event: `display-added`, listener: js.Function2[/* event */ Event, /* newDisplay */ Display, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_displayadded")
+  def on(event: "display-added", listener: js.Function2[/* event */ Event, /* newDisplay */ Display, Unit]): this.type = js.native
+  /**
+    * Emitted when `oldDisplay` has been removed.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_displayremoved")
+  def on(
+    event: "display-removed",
+    listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, Unit]
+  ): this.type = js.native
   /**
     * Emitted when one or more metrics change in a `display`. The `changedMetrics` is
     * an array of strings that describe the changes. Possible changes are `bounds`,
     * `workArea`, `scaleFactor` and `rotation`.
     */
   @JSName("on")
-  def on_displaymetricschanged(
-    event: `display-metrics-changed`,
+  @scala.annotation.targetName("on_displaymetricschanged")
+  def on(
+    event: "display-metrics-changed",
     listener: js.Function3[/* event */ Event, /* display */ Display, /* changedMetrics */ js.Array[String], Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when `oldDisplay` has been removed.
-    */
-  @JSName("on")
-  def on_displayremoved(
-    event: `display-removed`,
-    listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, Unit]
   ): this.type = js.native
   
   @JSName("once")
-  def once_displayadded(event: `display-added`, listener: js.Function2[/* event */ Event, /* newDisplay */ Display, Unit]): this.type = js.native
-  @JSName("once")
-  def once_displaymetricschanged(
-    event: `display-metrics-changed`,
-    listener: js.Function3[/* event */ Event, /* display */ Display, /* changedMetrics */ js.Array[String], Unit]
+  @scala.annotation.targetName("once_displayremoved")
+  def once(
+    event: "display-removed",
+    listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_displayremoved(
-    event: `display-removed`,
-    listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, Unit]
+  @scala.annotation.targetName("once_displayadded")
+  def once(event: "display-added", listener: js.Function2[/* event */ Event, /* newDisplay */ Display, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_displaymetricschanged")
+  def once(
+    event: "display-metrics-changed",
+    listener: js.Function3[/* event */ Event, /* display */ Display, /* changedMetrics */ js.Array[String], Unit]
   ): this.type = js.native
   
   @JSName("removeListener")
-  def removeListener_displayadded(event: `display-added`, listener: js.Function2[/* event */ Event, /* newDisplay */ Display, Unit]): this.type = js.native
+  @scala.annotation.targetName("removeListener_displayadded")
+  def removeListener(event: "display-added", listener: js.Function2[/* event */ Event, /* newDisplay */ Display, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_displaymetricschanged(
-    event: `display-metrics-changed`,
-    listener: js.Function3[/* event */ Event, /* display */ Display, /* changedMetrics */ js.Array[String], Unit]
+  @scala.annotation.targetName("removeListener_displayremoved")
+  def removeListener(
+    event: "display-removed",
+    listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_displayremoved(
-    event: `display-removed`,
-    listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, Unit]
+  @scala.annotation.targetName("removeListener_displaymetricschanged")
+  def removeListener(
+    event: "display-metrics-changed",
+    listener: js.Function3[/* event */ Event, /* display */ Display, /* changedMetrics */ js.Array[String], Unit]
   ): this.type = js.native
   
   /**

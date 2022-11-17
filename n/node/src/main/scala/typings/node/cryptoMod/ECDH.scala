@@ -2,13 +2,6 @@ package typings.node.cryptoMod
 
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.Buffer
-import typings.node.nodeStrings.base64
-import typings.node.nodeStrings.base64url
-import typings.node.nodeStrings.compressed
-import typings.node.nodeStrings.hex
-import typings.node.nodeStrings.hybrid
-import typings.node.nodeStrings.latin1
-import typings.node.nodeStrings.uncompressed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -175,45 +168,51 @@ object ECDH {
     */
   /* static member */
   inline def convertKey(key: BinaryLike, curve: String): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+  @scala.annotation.targetName("convertKey_latin1_hex_base64_base64url")
   inline def convertKey(
     key: BinaryLike,
     curve: String,
     inputEncoding: Unit,
-    outputEncoding: latin1 | hex | base64 | base64url
+    outputEncoding: "latin1" | "hex" | "base64" | "base64url"
   ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+  @scala.annotation.targetName("convertKey_latin1_hex_base64_base64url_uncompressed_compressed_hybrid")
   inline def convertKey(
     key: BinaryLike,
     curve: String,
     inputEncoding: Unit,
-    outputEncoding: latin1 | hex | base64 | base64url,
-    format: uncompressed | compressed | hybrid
+    outputEncoding: "latin1" | "hex" | "base64" | "base64url",
+    format: "uncompressed" | "compressed" | "hybrid"
   ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+  @scala.annotation.targetName("convertKey_uncompressed_compressed_hybrid")
   inline def convertKey(
     key: BinaryLike,
     curve: String,
     inputEncoding: Unit,
     outputEncoding: Unit,
-    format: uncompressed | compressed | hybrid
+    format: "uncompressed" | "compressed" | "hybrid"
   ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
   inline def convertKey(key: BinaryLike, curve: String, inputEncoding: BinaryToTextEncoding): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+  @scala.annotation.targetName("convertKey_latin1_hex_base64_base64url")
   inline def convertKey(
     key: BinaryLike,
     curve: String,
     inputEncoding: BinaryToTextEncoding,
-    outputEncoding: latin1 | hex | base64 | base64url
+    outputEncoding: "latin1" | "hex" | "base64" | "base64url"
   ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+  @scala.annotation.targetName("convertKey_latin1_hex_base64_base64url_uncompressed_compressed_hybrid")
   inline def convertKey(
     key: BinaryLike,
     curve: String,
     inputEncoding: BinaryToTextEncoding,
-    outputEncoding: latin1 | hex | base64 | base64url,
-    format: uncompressed | compressed | hybrid
+    outputEncoding: "latin1" | "hex" | "base64" | "base64url",
+    format: "uncompressed" | "compressed" | "hybrid"
   ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+  @scala.annotation.targetName("convertKey_uncompressed_compressed_hybrid")
   inline def convertKey(
     key: BinaryLike,
     curve: String,
     inputEncoding: BinaryToTextEncoding,
     outputEncoding: Unit,
-    format: uncompressed | compressed | hybrid
+    format: "uncompressed" | "compressed" | "hybrid"
   ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
 }

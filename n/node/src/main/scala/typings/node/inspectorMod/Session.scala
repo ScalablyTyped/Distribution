@@ -95,112 +95,6 @@ import typings.node.inspectorMod.Runtime.RunScriptParameterType
 import typings.node.inspectorMod.Runtime.RunScriptReturnType
 import typings.node.inspectorMod.Runtime.SetCustomObjectFormatterEnabledParameterType
 import typings.node.inspectorMod.Schema.GetDomainsReturnType
-import typings.node.nodeStrings.ConsoleDotclearMessages
-import typings.node.nodeStrings.ConsoleDotdisable
-import typings.node.nodeStrings.ConsoleDotenable
-import typings.node.nodeStrings.ConsoleDotmessageAdded
-import typings.node.nodeStrings.DebuggerDotbreakpointResolved
-import typings.node.nodeStrings.DebuggerDotcontinueToLocation
-import typings.node.nodeStrings.DebuggerDotdisable
-import typings.node.nodeStrings.DebuggerDotenable
-import typings.node.nodeStrings.DebuggerDotevaluateOnCallFrame
-import typings.node.nodeStrings.DebuggerDotgetPossibleBreakpoints
-import typings.node.nodeStrings.DebuggerDotgetScriptSource
-import typings.node.nodeStrings.DebuggerDotgetStackTrace
-import typings.node.nodeStrings.DebuggerDotpause
-import typings.node.nodeStrings.DebuggerDotpauseOnAsyncCall
-import typings.node.nodeStrings.DebuggerDotpaused
-import typings.node.nodeStrings.DebuggerDotremoveBreakpoint
-import typings.node.nodeStrings.DebuggerDotrestartFrame
-import typings.node.nodeStrings.DebuggerDotresume
-import typings.node.nodeStrings.DebuggerDotresumed
-import typings.node.nodeStrings.DebuggerDotscheduleStepIntoAsync
-import typings.node.nodeStrings.DebuggerDotscriptFailedToParse
-import typings.node.nodeStrings.DebuggerDotscriptParsed
-import typings.node.nodeStrings.DebuggerDotsearchInContent
-import typings.node.nodeStrings.DebuggerDotsetAsyncCallStackDepth
-import typings.node.nodeStrings.DebuggerDotsetBlackboxPatterns
-import typings.node.nodeStrings.DebuggerDotsetBlackboxedRanges
-import typings.node.nodeStrings.DebuggerDotsetBreakpoint
-import typings.node.nodeStrings.DebuggerDotsetBreakpointByUrl
-import typings.node.nodeStrings.DebuggerDotsetBreakpointsActive
-import typings.node.nodeStrings.DebuggerDotsetPauseOnExceptions
-import typings.node.nodeStrings.DebuggerDotsetReturnValue
-import typings.node.nodeStrings.DebuggerDotsetScriptSource
-import typings.node.nodeStrings.DebuggerDotsetSkipAllPauses
-import typings.node.nodeStrings.DebuggerDotsetVariableValue
-import typings.node.nodeStrings.DebuggerDotstepInto
-import typings.node.nodeStrings.DebuggerDotstepOut
-import typings.node.nodeStrings.DebuggerDotstepOver
-import typings.node.nodeStrings.HeapProfilerDotaddHeapSnapshotChunk
-import typings.node.nodeStrings.HeapProfilerDotaddInspectedHeapObject
-import typings.node.nodeStrings.HeapProfilerDotcollectGarbage
-import typings.node.nodeStrings.HeapProfilerDotdisable
-import typings.node.nodeStrings.HeapProfilerDotenable
-import typings.node.nodeStrings.HeapProfilerDotgetHeapObjectId
-import typings.node.nodeStrings.HeapProfilerDotgetObjectByHeapObjectId
-import typings.node.nodeStrings.HeapProfilerDotgetSamplingProfile
-import typings.node.nodeStrings.HeapProfilerDotheapStatsUpdate
-import typings.node.nodeStrings.HeapProfilerDotlastSeenObjectId
-import typings.node.nodeStrings.HeapProfilerDotreportHeapSnapshotProgress
-import typings.node.nodeStrings.HeapProfilerDotresetProfiles
-import typings.node.nodeStrings.HeapProfilerDotstartSampling
-import typings.node.nodeStrings.HeapProfilerDotstartTrackingHeapObjects
-import typings.node.nodeStrings.HeapProfilerDotstopSampling
-import typings.node.nodeStrings.HeapProfilerDotstopTrackingHeapObjects
-import typings.node.nodeStrings.HeapProfilerDottakeHeapSnapshot
-import typings.node.nodeStrings.NodeRuntimeDotnotifyWhenWaitingForDisconnect
-import typings.node.nodeStrings.NodeRuntimeDotwaitingForDisconnect
-import typings.node.nodeStrings.NodeTracingDotdataCollected
-import typings.node.nodeStrings.NodeTracingDotgetCategories
-import typings.node.nodeStrings.NodeTracingDotstart
-import typings.node.nodeStrings.NodeTracingDotstop
-import typings.node.nodeStrings.NodeTracingDottracingComplete
-import typings.node.nodeStrings.NodeWorkerDotattachedToWorker
-import typings.node.nodeStrings.NodeWorkerDotdetach
-import typings.node.nodeStrings.NodeWorkerDotdetachedFromWorker
-import typings.node.nodeStrings.NodeWorkerDotdisable
-import typings.node.nodeStrings.NodeWorkerDotenable
-import typings.node.nodeStrings.NodeWorkerDotreceivedMessageFromWorker
-import typings.node.nodeStrings.NodeWorkerDotsendMessageToWorker
-import typings.node.nodeStrings.ProfilerDotconsoleProfileFinished
-import typings.node.nodeStrings.ProfilerDotconsoleProfileStarted
-import typings.node.nodeStrings.ProfilerDotdisable
-import typings.node.nodeStrings.ProfilerDotenable
-import typings.node.nodeStrings.ProfilerDotgetBestEffortCoverage
-import typings.node.nodeStrings.ProfilerDotsetSamplingInterval
-import typings.node.nodeStrings.ProfilerDotstart
-import typings.node.nodeStrings.ProfilerDotstartPreciseCoverage
-import typings.node.nodeStrings.ProfilerDotstartTypeProfile
-import typings.node.nodeStrings.ProfilerDotstop
-import typings.node.nodeStrings.ProfilerDotstopPreciseCoverage
-import typings.node.nodeStrings.ProfilerDotstopTypeProfile
-import typings.node.nodeStrings.ProfilerDottakePreciseCoverage
-import typings.node.nodeStrings.ProfilerDottakeTypeProfile
-import typings.node.nodeStrings.RuntimeDotawaitPromise
-import typings.node.nodeStrings.RuntimeDotcallFunctionOn
-import typings.node.nodeStrings.RuntimeDotcompileScript
-import typings.node.nodeStrings.RuntimeDotconsoleAPICalled
-import typings.node.nodeStrings.RuntimeDotdisable
-import typings.node.nodeStrings.RuntimeDotdiscardConsoleEntries
-import typings.node.nodeStrings.RuntimeDotenable
-import typings.node.nodeStrings.RuntimeDotevaluate
-import typings.node.nodeStrings.RuntimeDotexceptionRevoked
-import typings.node.nodeStrings.RuntimeDotexceptionThrown
-import typings.node.nodeStrings.RuntimeDotexecutionContextCreated
-import typings.node.nodeStrings.RuntimeDotexecutionContextDestroyed
-import typings.node.nodeStrings.RuntimeDotexecutionContextsCleared
-import typings.node.nodeStrings.RuntimeDotgetProperties
-import typings.node.nodeStrings.RuntimeDotglobalLexicalScopeNames
-import typings.node.nodeStrings.RuntimeDotinspectRequested
-import typings.node.nodeStrings.RuntimeDotqueryObjects
-import typings.node.nodeStrings.RuntimeDotreleaseObject
-import typings.node.nodeStrings.RuntimeDotreleaseObjectGroup
-import typings.node.nodeStrings.RuntimeDotrunIfWaitingForDebugger
-import typings.node.nodeStrings.RuntimeDotrunScript
-import typings.node.nodeStrings.RuntimeDotsetCustomObjectFormatterEnabled
-import typings.node.nodeStrings.SchemaDotgetDomains
-import typings.node.nodeStrings.inspectorNotification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -217,81 +111,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class Session () extends StObject {
   
-  // Events
-  def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   /**
-    * Issued when new console message is added.
+    * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
+    * delivered via dataCollected events.
     */
   @JSName("addListener")
-  def addListener_ConsolemessageAdded(
-    event: ConsoleDotmessageAdded,
-    listener: js.Function1[/* message */ InspectorNotification[MessageAddedEventDataType], Unit]
-  ): this.type = js.native
+  @scala.annotation.targetName("addListener_NodeTracingtracingComplete")
+  def addListener(event: "NodeTracing.tracingComplete", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_HeapProfilerresetProfiles")
+  def addListener(event: "HeapProfiler.resetProfiles", listener: js.Function0[Unit]): this.type = js.native
   /**
-    * Fired when breakpoint is resolved to an actual script and location.
+    * Issued when all executionContexts were cleared in browser
     */
   @JSName("addListener")
-  def addListener_DebuggerbreakpointResolved(
-    event: DebuggerDotbreakpointResolved,
-    listener: js.Function1[/* message */ InspectorNotification[BreakpointResolvedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.
-    */
-  @JSName("addListener")
-  def addListener_Debuggerpaused(
-    event: DebuggerDotpaused,
-    listener: js.Function1[/* message */ InspectorNotification[PausedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when the virtual machine resumed execution.
-    */
-  @JSName("addListener")
-  def addListener_Debuggerresumed(event: DebuggerDotresumed, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * Fired when virtual machine fails to parse the script.
-    */
-  @JSName("addListener")
-  def addListener_DebuggerscriptFailedToParse(
-    event: DebuggerDotscriptFailedToParse,
-    listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
-    */
-  @JSName("addListener")
-  def addListener_DebuggerscriptParsed(
-    event: DebuggerDotscriptParsed,
-    listener: js.Function1[/* message */ InspectorNotification[ScriptParsedEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_HeapProfileraddHeapSnapshotChunk(
-    event: HeapProfilerDotaddHeapSnapshotChunk,
-    listener: js.Function1[/* message */ InspectorNotification[AddHeapSnapshotChunkEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * If heap objects tracking has been started then backend may send update for one or more fragments
-    */
-  @JSName("addListener")
-  def addListener_HeapProfilerheapStatsUpdate(
-    event: HeapProfilerDotheapStatsUpdate,
-    listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
-    */
-  @JSName("addListener")
-  def addListener_HeapProfilerlastSeenObjectId(
-    event: HeapProfilerDotlastSeenObjectId,
-    listener: js.Function1[/* message */ InspectorNotification[LastSeenObjectIdEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_HeapProfilerreportHeapSnapshotProgress(
-    event: HeapProfilerDotreportHeapSnapshotProgress,
-    listener: js.Function1[/* message */ InspectorNotification[ReportHeapSnapshotProgressEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_HeapProfilerresetProfiles(event: HeapProfilerDotresetProfiles, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_RuntimeexecutionContextsCleared")
+  def addListener(event: "Runtime.executionContextsCleared", listener: js.Function0[Unit]): this.type = js.native
   /**
     * This event is fired instead of `Runtime.executionContextDestroyed` when
     * enabled.
@@ -299,35 +134,183 @@ open class Session () extends StObject {
     * waiting for all frontends to disconnect.
     */
   @JSName("addListener")
-  def addListener_NodeRuntimewaitingForDisconnect(event: NodeRuntimeDotwaitingForDisconnect, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_NodeRuntimewaitingForDisconnect")
+  def addListener(event: "NodeRuntime.waitingForDisconnect", listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * Fired when the virtual machine resumed execution.
+    */
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_Debuggerresumed")
+  def addListener(event: "Debugger.resumed", listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
+    */
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_HeapProfilerlastSeenObjectId")
+  def addListener(
+    event: "HeapProfiler.lastSeenObjectId",
+    listener: js.Function1[/* message */ InspectorNotification[LastSeenObjectIdEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when new console message is added.
+    */
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_ConsolemessageAdded")
+  def addListener(
+    event: "Console.messageAdded",
+    listener: js.Function1[/* message */ InspectorNotification[MessageAddedEventDataType], Unit]
+  ): this.type = js.native
   /**
     * Contains an bucket of collected trace events.
     */
   @JSName("addListener")
-  def addListener_NodeTracingdataCollected(
-    event: NodeTracingDotdataCollected,
+  @scala.annotation.targetName("addListener_NodeTracingdataCollected")
+  def addListener(
+    event: "NodeTracing.dataCollected",
     listener: js.Function1[/* message */ InspectorNotification[DataCollectedEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
-    * delivered via dataCollected events.
+    * Issued when exception was thrown and unhandled.
     */
   @JSName("addListener")
-  def addListener_NodeTracingtracingComplete(event: NodeTracingDottracingComplete, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_RuntimeexceptionThrown")
+  def addListener(
+    event: "Runtime.exceptionThrown",
+    listener: js.Function1[/* message */ InspectorNotification[ExceptionThrownEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when execution context is destroyed.
+    */
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_RuntimeexecutionContextDestroyed")
+  def addListener(
+    event: "Runtime.executionContextDestroyed",
+    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextDestroyedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when virtual machine fails to parse the script.
+    */
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_DebuggerscriptFailedToParse")
+  def addListener(
+    event: "Debugger.scriptFailedToParse",
+    listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when unhandled exception was revoked.
+    */
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_RuntimeexceptionRevoked")
+  def addListener(
+    event: "Runtime.exceptionRevoked",
+    listener: js.Function1[/* message */ InspectorNotification[ExceptionRevokedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when new execution context is created.
+    */
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_RuntimeexecutionContextCreated")
+  def addListener(
+    event: "Runtime.executionContextCreated",
+    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextCreatedEventDataType], Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_ProfilerconsoleProfileFinished")
+  def addListener(
+    event: "Profiler.consoleProfileFinished",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileFinishedEventDataType], Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_HeapProfileraddHeapSnapshotChunk")
+  def addListener(
+    event: "HeapProfiler.addHeapSnapshotChunk",
+    listener: js.Function1[/* message */ InspectorNotification[AddHeapSnapshotChunkEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when breakpoint is resolved to an actual script and location.
+    */
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_DebuggerbreakpointResolved")
+  def addListener(
+    event: "Debugger.breakpointResolved",
+    listener: js.Function1[/* message */ InspectorNotification[BreakpointResolvedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.
+    */
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_Debuggerpaused")
+  def addListener(
+    event: "Debugger.paused",
+    listener: js.Function1[/* message */ InspectorNotification[PausedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
+    */
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_DebuggerscriptParsed")
+  def addListener(
+    event: "Debugger.scriptParsed",
+    listener: js.Function1[/* message */ InspectorNotification[ScriptParsedEventDataType], Unit]
+  ): this.type = js.native
   /**
     * Issued when attached to a worker.
     */
   @JSName("addListener")
-  def addListener_NodeWorkerattachedToWorker(
-    event: NodeWorkerDotattachedToWorker,
+  @scala.annotation.targetName("addListener_NodeWorkerattachedToWorker")
+  def addListener(
+    event: "NodeWorker.attachedToWorker",
     listener: js.Function1[/* message */ InspectorNotification[AttachedToWorkerEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when console API was called.
+    */
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_RuntimeconsoleAPICalled")
+  def addListener(
+    event: "Runtime.consoleAPICalled",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleAPICalledEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
+    */
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_RuntimeinspectRequested")
+  def addListener(
+    event: "Runtime.inspectRequested",
+    listener: js.Function1[/* message */ InspectorNotification[InspectRequestedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Sent when new profile recording is started using console.profile() call.
+    */
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_ProfilerconsoleProfileStarted")
+  def addListener(
+    event: "Profiler.consoleProfileStarted",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_HeapProfilerreportHeapSnapshotProgress")
+  def addListener(
+    event: "HeapProfiler.reportHeapSnapshotProgress",
+    listener: js.Function1[/* message */ InspectorNotification[ReportHeapSnapshotProgressEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * If heap objects tracking has been started then backend may send update for one or more fragments
+    */
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_HeapProfilerheapStatsUpdate")
+  def addListener(
+    event: "HeapProfiler.heapStatsUpdate",
+    listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
   ): this.type = js.native
   /**
     * Issued when detached from the worker.
     */
   @JSName("addListener")
-  def addListener_NodeWorkerdetachedFromWorker(
-    event: NodeWorkerDotdetachedFromWorker,
+  @scala.annotation.targetName("addListener_NodeWorkerdetachedFromWorker")
+  def addListener(
+    event: "NodeWorker.detachedFromWorker",
     listener: js.Function1[/* message */ InspectorNotification[DetachedFromWorkerEventDataType], Unit]
   ): this.type = js.native
   /**
@@ -335,84 +318,22 @@ open class Session () extends StObject {
     * (session ID is provided in attachedToWorker notification).
     */
   @JSName("addListener")
-  def addListener_NodeWorkerreceivedMessageFromWorker(
-    event: NodeWorkerDotreceivedMessageFromWorker,
+  @scala.annotation.targetName("addListener_NodeWorkerreceivedMessageFromWorker")
+  def addListener(
+    event: "NodeWorker.receivedMessageFromWorker",
     listener: js.Function1[/* message */ InspectorNotification[ReceivedMessageFromWorkerEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_ProfilerconsoleProfileFinished(
-    event: ProfilerDotconsoleProfileFinished,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileFinishedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Sent when new profile recording is started using console.profile() call.
-    */
-  @JSName("addListener")
-  def addListener_ProfilerconsoleProfileStarted(
-    event: ProfilerDotconsoleProfileStarted,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when console API was called.
-    */
-  @JSName("addListener")
-  def addListener_RuntimeconsoleAPICalled(
-    event: RuntimeDotconsoleAPICalled,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleAPICalledEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when unhandled exception was revoked.
-    */
-  @JSName("addListener")
-  def addListener_RuntimeexceptionRevoked(
-    event: RuntimeDotexceptionRevoked,
-    listener: js.Function1[/* message */ InspectorNotification[ExceptionRevokedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when exception was thrown and unhandled.
-    */
-  @JSName("addListener")
-  def addListener_RuntimeexceptionThrown(
-    event: RuntimeDotexceptionThrown,
-    listener: js.Function1[/* message */ InspectorNotification[ExceptionThrownEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when new execution context is created.
-    */
-  @JSName("addListener")
-  def addListener_RuntimeexecutionContextCreated(
-    event: RuntimeDotexecutionContextCreated,
-    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextCreatedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when execution context is destroyed.
-    */
-  @JSName("addListener")
-  def addListener_RuntimeexecutionContextDestroyed(
-    event: RuntimeDotexecutionContextDestroyed,
-    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextDestroyedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when all executionContexts were cleared in browser
-    */
-  @JSName("addListener")
-  def addListener_RuntimeexecutionContextsCleared(event: RuntimeDotexecutionContextsCleared, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
-    */
-  @JSName("addListener")
-  def addListener_RuntimeinspectRequested(
-    event: RuntimeDotinspectRequested,
-    listener: js.Function1[/* message */ InspectorNotification[InspectRequestedEventDataType], Unit]
   ): this.type = js.native
   /**
     * Emitted when any notification from the V8 Inspector is received.
     */
   @JSName("addListener")
-  def addListener_inspectorNotification(
-    event: inspectorNotification,
+  @scala.annotation.targetName("addListener_inspectorNotification")
+  def addListener(
+    event: "inspectorNotification",
     listener: js.Function1[/* message */ InspectorNotification[js.Object], Unit]
   ): this.type = js.native
+  // Events
+  def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   
   /**
     * Connects a session to the inspector back-end.
@@ -429,494 +350,2119 @@ open class Session () extends StObject {
     */
   def disconnect(): Unit = js.native
   
-  def emit(event: String, args: Any*): Boolean = js.native
-  def emit(event: js.Symbol, args: Any*): Boolean = js.native
   @JSName("emit")
-  def emit_ConsolemessageAdded(event: ConsoleDotmessageAdded, message: InspectorNotification[MessageAddedEventDataType]): Boolean = js.native
+  @scala.annotation.targetName("emit_NodeRuntimewaitingForDisconnect")
+  def emit(event: "NodeRuntime.waitingForDisconnect"): Boolean = js.native
   @JSName("emit")
-  def emit_DebuggerbreakpointResolved(
-    event: DebuggerDotbreakpointResolved,
-    message: InspectorNotification[BreakpointResolvedEventDataType]
-  ): Boolean = js.native
+  @scala.annotation.targetName("emit_Debuggerresumed")
+  def emit(event: "Debugger.resumed"): Boolean = js.native
   @JSName("emit")
-  def emit_Debuggerpaused(event: DebuggerDotpaused, message: InspectorNotification[PausedEventDataType]): Boolean = js.native
+  @scala.annotation.targetName("emit_RuntimeexecutionContextsCleared")
+  def emit(event: "Runtime.executionContextsCleared"): Boolean = js.native
   @JSName("emit")
-  def emit_Debuggerresumed(event: DebuggerDotresumed): Boolean = js.native
+  @scala.annotation.targetName("emit_HeapProfilerresetProfiles")
+  def emit(event: "HeapProfiler.resetProfiles"): Boolean = js.native
   @JSName("emit")
-  def emit_DebuggerscriptFailedToParse(
-    event: DebuggerDotscriptFailedToParse,
-    message: InspectorNotification[ScriptFailedToParseEventDataType]
-  ): Boolean = js.native
+  @scala.annotation.targetName("emit_NodeTracingtracingComplete")
+  def emit(event: "NodeTracing.tracingComplete"): Boolean = js.native
   @JSName("emit")
-  def emit_DebuggerscriptParsed(event: DebuggerDotscriptParsed, message: InspectorNotification[ScriptParsedEventDataType]): Boolean = js.native
+  @scala.annotation.targetName("emit_Debuggerpaused")
+  def emit(event: "Debugger.paused", message: InspectorNotification[PausedEventDataType]): Boolean = js.native
   @JSName("emit")
-  def emit_HeapProfileraddHeapSnapshotChunk(
-    event: HeapProfilerDotaddHeapSnapshotChunk,
-    message: InspectorNotification[AddHeapSnapshotChunkEventDataType]
-  ): Boolean = js.native
-  @JSName("emit")
-  def emit_HeapProfilerheapStatsUpdate(
-    event: HeapProfilerDotheapStatsUpdate,
+  @scala.annotation.targetName("emit_HeapProfilerheapStatsUpdate")
+  def emit(
+    event: "HeapProfiler.heapStatsUpdate",
     message: InspectorNotification[HeapStatsUpdateEventDataType]
   ): Boolean = js.native
   @JSName("emit")
-  def emit_HeapProfilerlastSeenObjectId(
-    event: HeapProfilerDotlastSeenObjectId,
-    message: InspectorNotification[LastSeenObjectIdEventDataType]
-  ): Boolean = js.native
+  @scala.annotation.targetName("emit_RuntimeexceptionRevoked")
+  def emit(event: "Runtime.exceptionRevoked", message: InspectorNotification[ExceptionRevokedEventDataType]): Boolean = js.native
   @JSName("emit")
-  def emit_HeapProfilerreportHeapSnapshotProgress(
-    event: HeapProfilerDotreportHeapSnapshotProgress,
-    message: InspectorNotification[ReportHeapSnapshotProgressEventDataType]
-  ): Boolean = js.native
+  @scala.annotation.targetName("emit_RuntimeexceptionThrown")
+  def emit(event: "Runtime.exceptionThrown", message: InspectorNotification[ExceptionThrownEventDataType]): Boolean = js.native
   @JSName("emit")
-  def emit_HeapProfilerresetProfiles(event: HeapProfilerDotresetProfiles): Boolean = js.native
+  @scala.annotation.targetName("emit_inspectorNotification")
+  def emit(event: "inspectorNotification", message: InspectorNotification[js.Object]): Boolean = js.native
   @JSName("emit")
-  def emit_NodeRuntimewaitingForDisconnect(event: NodeRuntimeDotwaitingForDisconnect): Boolean = js.native
-  @JSName("emit")
-  def emit_NodeTracingdataCollected(event: NodeTracingDotdataCollected, message: InspectorNotification[DataCollectedEventDataType]): Boolean = js.native
-  @JSName("emit")
-  def emit_NodeTracingtracingComplete(event: NodeTracingDottracingComplete): Boolean = js.native
-  @JSName("emit")
-  def emit_NodeWorkerattachedToWorker(
-    event: NodeWorkerDotattachedToWorker,
-    message: InspectorNotification[AttachedToWorkerEventDataType]
-  ): Boolean = js.native
-  @JSName("emit")
-  def emit_NodeWorkerdetachedFromWorker(
-    event: NodeWorkerDotdetachedFromWorker,
-    message: InspectorNotification[DetachedFromWorkerEventDataType]
-  ): Boolean = js.native
-  @JSName("emit")
-  def emit_NodeWorkerreceivedMessageFromWorker(
-    event: NodeWorkerDotreceivedMessageFromWorker,
-    message: InspectorNotification[ReceivedMessageFromWorkerEventDataType]
-  ): Boolean = js.native
-  @JSName("emit")
-  def emit_ProfilerconsoleProfileFinished(
-    event: ProfilerDotconsoleProfileFinished,
-    message: InspectorNotification[ConsoleProfileFinishedEventDataType]
-  ): Boolean = js.native
-  @JSName("emit")
-  def emit_ProfilerconsoleProfileStarted(
-    event: ProfilerDotconsoleProfileStarted,
-    message: InspectorNotification[ConsoleProfileStartedEventDataType]
-  ): Boolean = js.native
-  @JSName("emit")
-  def emit_RuntimeconsoleAPICalled(event: RuntimeDotconsoleAPICalled, message: InspectorNotification[ConsoleAPICalledEventDataType]): Boolean = js.native
-  @JSName("emit")
-  def emit_RuntimeexceptionRevoked(event: RuntimeDotexceptionRevoked, message: InspectorNotification[ExceptionRevokedEventDataType]): Boolean = js.native
-  @JSName("emit")
-  def emit_RuntimeexceptionThrown(event: RuntimeDotexceptionThrown, message: InspectorNotification[ExceptionThrownEventDataType]): Boolean = js.native
-  @JSName("emit")
-  def emit_RuntimeexecutionContextCreated(
-    event: RuntimeDotexecutionContextCreated,
+  @scala.annotation.targetName("emit_RuntimeexecutionContextCreated")
+  def emit(
+    event: "Runtime.executionContextCreated",
     message: InspectorNotification[ExecutionContextCreatedEventDataType]
   ): Boolean = js.native
   @JSName("emit")
-  def emit_RuntimeexecutionContextDestroyed(
-    event: RuntimeDotexecutionContextDestroyed,
+  @scala.annotation.targetName("emit_ProfilerconsoleProfileFinished")
+  def emit(
+    event: "Profiler.consoleProfileFinished",
+    message: InspectorNotification[ConsoleProfileFinishedEventDataType]
+  ): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_HeapProfilerreportHeapSnapshotProgress")
+  def emit(
+    event: "HeapProfiler.reportHeapSnapshotProgress",
+    message: InspectorNotification[ReportHeapSnapshotProgressEventDataType]
+  ): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_ConsolemessageAdded")
+  def emit(event: "Console.messageAdded", message: InspectorNotification[MessageAddedEventDataType]): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_DebuggerscriptParsed")
+  def emit(event: "Debugger.scriptParsed", message: InspectorNotification[ScriptParsedEventDataType]): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_HeapProfileraddHeapSnapshotChunk")
+  def emit(
+    event: "HeapProfiler.addHeapSnapshotChunk",
+    message: InspectorNotification[AddHeapSnapshotChunkEventDataType]
+  ): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_RuntimeexecutionContextDestroyed")
+  def emit(
+    event: "Runtime.executionContextDestroyed",
     message: InspectorNotification[ExecutionContextDestroyedEventDataType]
   ): Boolean = js.native
   @JSName("emit")
-  def emit_RuntimeexecutionContextsCleared(event: RuntimeDotexecutionContextsCleared): Boolean = js.native
+  @scala.annotation.targetName("emit_RuntimeconsoleAPICalled")
+  def emit(event: "Runtime.consoleAPICalled", message: InspectorNotification[ConsoleAPICalledEventDataType]): Boolean = js.native
   @JSName("emit")
-  def emit_RuntimeinspectRequested(event: RuntimeDotinspectRequested, message: InspectorNotification[InspectRequestedEventDataType]): Boolean = js.native
+  @scala.annotation.targetName("emit_NodeWorkerattachedToWorker")
+  def emit(
+    event: "NodeWorker.attachedToWorker",
+    message: InspectorNotification[AttachedToWorkerEventDataType]
+  ): Boolean = js.native
   @JSName("emit")
-  def emit_inspectorNotification(event: inspectorNotification, message: InspectorNotification[js.Object]): Boolean = js.native
+  @scala.annotation.targetName("emit_NodeWorkerreceivedMessageFromWorker")
+  def emit(
+    event: "NodeWorker.receivedMessageFromWorker",
+    message: InspectorNotification[ReceivedMessageFromWorkerEventDataType]
+  ): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_NodeTracingdataCollected")
+  def emit(event: "NodeTracing.dataCollected", message: InspectorNotification[DataCollectedEventDataType]): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_DebuggerbreakpointResolved")
+  def emit(
+    event: "Debugger.breakpointResolved",
+    message: InspectorNotification[BreakpointResolvedEventDataType]
+  ): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_RuntimeinspectRequested")
+  def emit(event: "Runtime.inspectRequested", message: InspectorNotification[InspectRequestedEventDataType]): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_NodeWorkerdetachedFromWorker")
+  def emit(
+    event: "NodeWorker.detachedFromWorker",
+    message: InspectorNotification[DetachedFromWorkerEventDataType]
+  ): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_DebuggerscriptFailedToParse")
+  def emit(
+    event: "Debugger.scriptFailedToParse",
+    message: InspectorNotification[ScriptFailedToParseEventDataType]
+  ): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_ProfilerconsoleProfileStarted")
+  def emit(
+    event: "Profiler.consoleProfileStarted",
+    message: InspectorNotification[ConsoleProfileStartedEventDataType]
+  ): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_HeapProfilerlastSeenObjectId")
+  def emit(
+    event: "HeapProfiler.lastSeenObjectId",
+    message: InspectorNotification[LastSeenObjectIdEventDataType]
+  ): Boolean = js.native
+  def emit(event: String, args: Any*): Boolean = js.native
+  def emit(event: js.Symbol, args: Any*): Boolean = js.native
   
+  /**
+    * Issued when all executionContexts were cleared in browser
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_RuntimeexecutionContextsCleared")
+  def on(event: "Runtime.executionContextsCleared", listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * Fired when the virtual machine resumed execution.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_Debuggerresumed")
+  def on(event: "Debugger.resumed", listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
+    * delivered via dataCollected events.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_NodeTracingtracingComplete")
+  def on(event: "NodeTracing.tracingComplete", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_HeapProfilerresetProfiles")
+  def on(event: "HeapProfiler.resetProfiles", listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * This event is fired instead of `Runtime.executionContextDestroyed` when
+    * enabled.
+    * It is fired when the Node process finished all code execution and is
+    * waiting for all frontends to disconnect.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_NodeRuntimewaitingForDisconnect")
+  def on(event: "NodeRuntime.waitingForDisconnect", listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * Contains an bucket of collected trace events.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_NodeTracingdataCollected")
+  def on(
+    event: "NodeTracing.dataCollected",
+    listener: js.Function1[/* message */ InspectorNotification[DataCollectedEventDataType], Unit]
+  ): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_HeapProfilerreportHeapSnapshotProgress")
+  def on(
+    event: "HeapProfiler.reportHeapSnapshotProgress",
+    listener: js.Function1[/* message */ InspectorNotification[ReportHeapSnapshotProgressEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when console API was called.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_RuntimeconsoleAPICalled")
+  def on(
+    event: "Runtime.consoleAPICalled",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleAPICalledEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_DebuggerscriptParsed")
+  def on(
+    event: "Debugger.scriptParsed",
+    listener: js.Function1[/* message */ InspectorNotification[ScriptParsedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_Debuggerpaused")
+  def on(
+    event: "Debugger.paused",
+    listener: js.Function1[/* message */ InspectorNotification[PausedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when detached from the worker.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_NodeWorkerdetachedFromWorker")
+  def on(
+    event: "NodeWorker.detachedFromWorker",
+    listener: js.Function1[/* message */ InspectorNotification[DetachedFromWorkerEventDataType], Unit]
+  ): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_ProfilerconsoleProfileFinished")
+  def on(
+    event: "Profiler.consoleProfileFinished",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileFinishedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when new console message is added.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_ConsolemessageAdded")
+  def on(
+    event: "Console.messageAdded",
+    listener: js.Function1[/* message */ InspectorNotification[MessageAddedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when unhandled exception was revoked.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_RuntimeexceptionRevoked")
+  def on(
+    event: "Runtime.exceptionRevoked",
+    listener: js.Function1[/* message */ InspectorNotification[ExceptionRevokedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when breakpoint is resolved to an actual script and location.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_DebuggerbreakpointResolved")
+  def on(
+    event: "Debugger.breakpointResolved",
+    listener: js.Function1[/* message */ InspectorNotification[BreakpointResolvedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when any notification from the V8 Inspector is received.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_inspectorNotification")
+  def on(
+    event: "inspectorNotification",
+    listener: js.Function1[/* message */ InspectorNotification[js.Object], Unit]
+  ): this.type = js.native
+  /**
+    * Sent when new profile recording is started using console.profile() call.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_ProfilerconsoleProfileStarted")
+  def on(
+    event: "Profiler.consoleProfileStarted",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when exception was thrown and unhandled.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_RuntimeexceptionThrown")
+  def on(
+    event: "Runtime.exceptionThrown",
+    listener: js.Function1[/* message */ InspectorNotification[ExceptionThrownEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * If heap objects tracking has been started then backend may send update for one or more fragments
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_HeapProfilerheapStatsUpdate")
+  def on(
+    event: "HeapProfiler.heapStatsUpdate",
+    listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when execution context is destroyed.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_RuntimeexecutionContextDestroyed")
+  def on(
+    event: "Runtime.executionContextDestroyed",
+    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextDestroyedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Notifies about a new protocol message received from the session
+    * (session ID is provided in attachedToWorker notification).
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_NodeWorkerreceivedMessageFromWorker")
+  def on(
+    event: "NodeWorker.receivedMessageFromWorker",
+    listener: js.Function1[/* message */ InspectorNotification[ReceivedMessageFromWorkerEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when virtual machine fails to parse the script.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_DebuggerscriptFailedToParse")
+  def on(
+    event: "Debugger.scriptFailedToParse",
+    listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when attached to a worker.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_NodeWorkerattachedToWorker")
+  def on(
+    event: "NodeWorker.attachedToWorker",
+    listener: js.Function1[/* message */ InspectorNotification[AttachedToWorkerEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_RuntimeinspectRequested")
+  def on(
+    event: "Runtime.inspectRequested",
+    listener: js.Function1[/* message */ InspectorNotification[InspectRequestedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_HeapProfilerlastSeenObjectId")
+  def on(
+    event: "HeapProfiler.lastSeenObjectId",
+    listener: js.Function1[/* message */ InspectorNotification[LastSeenObjectIdEventDataType], Unit]
+  ): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_HeapProfileraddHeapSnapshotChunk")
+  def on(
+    event: "HeapProfiler.addHeapSnapshotChunk",
+    listener: js.Function1[/* message */ InspectorNotification[AddHeapSnapshotChunkEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when new execution context is created.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_RuntimeexecutionContextCreated")
+  def on(
+    event: "Runtime.executionContextCreated",
+    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextCreatedEventDataType], Unit]
+  ): this.type = js.native
   def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  
+  @JSName("once")
+  @scala.annotation.targetName("once_HeapProfilerresetProfiles")
+  def once(event: "HeapProfiler.resetProfiles", listener: js.Function0[Unit]): this.type = js.native
   /**
-    * Issued when new console message is added.
+    * Issued when all executionContexts were cleared in browser
     */
-  @JSName("on")
-  def on_ConsolemessageAdded(
-    event: ConsoleDotmessageAdded,
-    listener: js.Function1[/* message */ InspectorNotification[MessageAddedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when breakpoint is resolved to an actual script and location.
-    */
-  @JSName("on")
-  def on_DebuggerbreakpointResolved(
-    event: DebuggerDotbreakpointResolved,
-    listener: js.Function1[/* message */ InspectorNotification[BreakpointResolvedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.
-    */
-  @JSName("on")
-  def on_Debuggerpaused(
-    event: DebuggerDotpaused,
-    listener: js.Function1[/* message */ InspectorNotification[PausedEventDataType], Unit]
-  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_RuntimeexecutionContextsCleared")
+  def once(event: "Runtime.executionContextsCleared", listener: js.Function0[Unit]): this.type = js.native
   /**
     * Fired when the virtual machine resumed execution.
     */
-  @JSName("on")
-  def on_Debuggerresumed(event: DebuggerDotresumed, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_Debuggerresumed")
+  def once(event: "Debugger.resumed", listener: js.Function0[Unit]): this.type = js.native
   /**
-    * Fired when virtual machine fails to parse the script.
+    * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
+    * delivered via dataCollected events.
     */
-  @JSName("on")
-  def on_DebuggerscriptFailedToParse(
-    event: DebuggerDotscriptFailedToParse,
-    listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
-    */
-  @JSName("on")
-  def on_DebuggerscriptParsed(
-    event: DebuggerDotscriptParsed,
-    listener: js.Function1[/* message */ InspectorNotification[ScriptParsedEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("on")
-  def on_HeapProfileraddHeapSnapshotChunk(
-    event: HeapProfilerDotaddHeapSnapshotChunk,
-    listener: js.Function1[/* message */ InspectorNotification[AddHeapSnapshotChunkEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * If heap objects tracking has been started then backend may send update for one or more fragments
-    */
-  @JSName("on")
-  def on_HeapProfilerheapStatsUpdate(
-    event: HeapProfilerDotheapStatsUpdate,
-    listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
-    */
-  @JSName("on")
-  def on_HeapProfilerlastSeenObjectId(
-    event: HeapProfilerDotlastSeenObjectId,
-    listener: js.Function1[/* message */ InspectorNotification[LastSeenObjectIdEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("on")
-  def on_HeapProfilerreportHeapSnapshotProgress(
-    event: HeapProfilerDotreportHeapSnapshotProgress,
-    listener: js.Function1[/* message */ InspectorNotification[ReportHeapSnapshotProgressEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("on")
-  def on_HeapProfilerresetProfiles(event: HeapProfilerDotresetProfiles, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_NodeTracingtracingComplete")
+  def once(event: "NodeTracing.tracingComplete", listener: js.Function0[Unit]): this.type = js.native
   /**
     * This event is fired instead of `Runtime.executionContextDestroyed` when
     * enabled.
     * It is fired when the Node process finished all code execution and is
     * waiting for all frontends to disconnect.
     */
-  @JSName("on")
-  def on_NodeRuntimewaitingForDisconnect(event: NodeRuntimeDotwaitingForDisconnect, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_NodeRuntimewaitingForDisconnect")
+  def once(event: "NodeRuntime.waitingForDisconnect", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_ProfilerconsoleProfileFinished")
+  def once(
+    event: "Profiler.consoleProfileFinished",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileFinishedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
+    */
+  @JSName("once")
+  @scala.annotation.targetName("once_DebuggerscriptParsed")
+  def once(
+    event: "Debugger.scriptParsed",
+    listener: js.Function1[/* message */ InspectorNotification[ScriptParsedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.
+    */
+  @JSName("once")
+  @scala.annotation.targetName("once_Debuggerpaused")
+  def once(
+    event: "Debugger.paused",
+    listener: js.Function1[/* message */ InspectorNotification[PausedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
+    */
+  @JSName("once")
+  @scala.annotation.targetName("once_RuntimeinspectRequested")
+  def once(
+    event: "Runtime.inspectRequested",
+    listener: js.Function1[/* message */ InspectorNotification[InspectRequestedEventDataType], Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_HeapProfileraddHeapSnapshotChunk")
+  def once(
+    event: "HeapProfiler.addHeapSnapshotChunk",
+    listener: js.Function1[/* message */ InspectorNotification[AddHeapSnapshotChunkEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when execution context is destroyed.
+    */
+  @JSName("once")
+  @scala.annotation.targetName("once_RuntimeexecutionContextDestroyed")
+  def once(
+    event: "Runtime.executionContextDestroyed",
+    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextDestroyedEventDataType], Unit]
+  ): this.type = js.native
   /**
     * Contains an bucket of collected trace events.
     */
-  @JSName("on")
-  def on_NodeTracingdataCollected(
-    event: NodeTracingDotdataCollected,
+  @JSName("once")
+  @scala.annotation.targetName("once_NodeTracingdataCollected")
+  def once(
+    event: "NodeTracing.dataCollected",
     listener: js.Function1[/* message */ InspectorNotification[DataCollectedEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
-    * delivered via dataCollected events.
+    * Issued when new execution context is created.
     */
-  @JSName("on")
-  def on_NodeTracingtracingComplete(event: NodeTracingDottracingComplete, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * Issued when attached to a worker.
-    */
-  @JSName("on")
-  def on_NodeWorkerattachedToWorker(
-    event: NodeWorkerDotattachedToWorker,
-    listener: js.Function1[/* message */ InspectorNotification[AttachedToWorkerEventDataType], Unit]
+  @JSName("once")
+  @scala.annotation.targetName("once_RuntimeexecutionContextCreated")
+  def once(
+    event: "Runtime.executionContextCreated",
+    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextCreatedEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Issued when detached from the worker.
+    * Issued when exception was thrown and unhandled.
     */
-  @JSName("on")
-  def on_NodeWorkerdetachedFromWorker(
-    event: NodeWorkerDotdetachedFromWorker,
-    listener: js.Function1[/* message */ InspectorNotification[DetachedFromWorkerEventDataType], Unit]
+  @JSName("once")
+  @scala.annotation.targetName("once_RuntimeexceptionThrown")
+  def once(
+    event: "Runtime.exceptionThrown",
+    listener: js.Function1[/* message */ InspectorNotification[ExceptionThrownEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Sent when new profile recording is started using console.profile() call.
+    */
+  @JSName("once")
+  @scala.annotation.targetName("once_ProfilerconsoleProfileStarted")
+  def once(
+    event: "Profiler.consoleProfileStarted",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when new console message is added.
+    */
+  @JSName("once")
+  @scala.annotation.targetName("once_ConsolemessageAdded")
+  def once(
+    event: "Console.messageAdded",
+    listener: js.Function1[/* message */ InspectorNotification[MessageAddedEventDataType], Unit]
   ): this.type = js.native
   /**
     * Notifies about a new protocol message received from the session
     * (session ID is provided in attachedToWorker notification).
     */
-  @JSName("on")
-  def on_NodeWorkerreceivedMessageFromWorker(
-    event: NodeWorkerDotreceivedMessageFromWorker,
+  @JSName("once")
+  @scala.annotation.targetName("once_NodeWorkerreceivedMessageFromWorker")
+  def once(
+    event: "NodeWorker.receivedMessageFromWorker",
     listener: js.Function1[/* message */ InspectorNotification[ReceivedMessageFromWorkerEventDataType], Unit]
   ): this.type = js.native
-  @JSName("on")
-  def on_ProfilerconsoleProfileFinished(
-    event: ProfilerDotconsoleProfileFinished,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileFinishedEventDataType], Unit]
+  /**
+    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
+    */
+  @JSName("once")
+  @scala.annotation.targetName("once_HeapProfilerlastSeenObjectId")
+  def once(
+    event: "HeapProfiler.lastSeenObjectId",
+    listener: js.Function1[/* message */ InspectorNotification[LastSeenObjectIdEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Sent when new profile recording is started using console.profile() call.
+    * Issued when detached from the worker.
     */
-  @JSName("on")
-  def on_ProfilerconsoleProfileStarted(
-    event: ProfilerDotconsoleProfileStarted,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when console API was called.
-    */
-  @JSName("on")
-  def on_RuntimeconsoleAPICalled(
-    event: RuntimeDotconsoleAPICalled,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleAPICalledEventDataType], Unit]
+  @JSName("once")
+  @scala.annotation.targetName("once_NodeWorkerdetachedFromWorker")
+  def once(
+    event: "NodeWorker.detachedFromWorker",
+    listener: js.Function1[/* message */ InspectorNotification[DetachedFromWorkerEventDataType], Unit]
   ): this.type = js.native
   /**
     * Issued when unhandled exception was revoked.
     */
-  @JSName("on")
-  def on_RuntimeexceptionRevoked(
-    event: RuntimeDotexceptionRevoked,
+  @JSName("once")
+  @scala.annotation.targetName("once_RuntimeexceptionRevoked")
+  def once(
+    event: "Runtime.exceptionRevoked",
     listener: js.Function1[/* message */ InspectorNotification[ExceptionRevokedEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Issued when exception was thrown and unhandled.
+    * Fired when virtual machine fails to parse the script.
     */
-  @JSName("on")
-  def on_RuntimeexceptionThrown(
-    event: RuntimeDotexceptionThrown,
-    listener: js.Function1[/* message */ InspectorNotification[ExceptionThrownEventDataType], Unit]
+  @JSName("once")
+  @scala.annotation.targetName("once_DebuggerscriptFailedToParse")
+  def once(
+    event: "Debugger.scriptFailedToParse",
+    listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Issued when new execution context is created.
+    * Fired when breakpoint is resolved to an actual script and location.
     */
-  @JSName("on")
-  def on_RuntimeexecutionContextCreated(
-    event: RuntimeDotexecutionContextCreated,
-    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextCreatedEventDataType], Unit]
+  @JSName("once")
+  @scala.annotation.targetName("once_DebuggerbreakpointResolved")
+  def once(
+    event: "Debugger.breakpointResolved",
+    listener: js.Function1[/* message */ InspectorNotification[BreakpointResolvedEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Issued when execution context is destroyed.
+    * If heap objects tracking has been started then backend may send update for one or more fragments
     */
-  @JSName("on")
-  def on_RuntimeexecutionContextDestroyed(
-    event: RuntimeDotexecutionContextDestroyed,
-    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextDestroyedEventDataType], Unit]
+  @JSName("once")
+  @scala.annotation.targetName("once_HeapProfilerheapStatsUpdate")
+  def once(
+    event: "HeapProfiler.heapStatsUpdate",
+    listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Issued when all executionContexts were cleared in browser
+    * Issued when console API was called.
     */
-  @JSName("on")
-  def on_RuntimeexecutionContextsCleared(event: RuntimeDotexecutionContextsCleared, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_RuntimeconsoleAPICalled")
+  def once(
+    event: "Runtime.consoleAPICalled",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleAPICalledEventDataType], Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_HeapProfilerreportHeapSnapshotProgress")
+  def once(
+    event: "HeapProfiler.reportHeapSnapshotProgress",
+    listener: js.Function1[/* message */ InspectorNotification[ReportHeapSnapshotProgressEventDataType], Unit]
+  ): this.type = js.native
   /**
-    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
+    * Issued when attached to a worker.
     */
-  @JSName("on")
-  def on_RuntimeinspectRequested(
-    event: RuntimeDotinspectRequested,
-    listener: js.Function1[/* message */ InspectorNotification[InspectRequestedEventDataType], Unit]
+  @JSName("once")
+  @scala.annotation.targetName("once_NodeWorkerattachedToWorker")
+  def once(
+    event: "NodeWorker.attachedToWorker",
+    listener: js.Function1[/* message */ InspectorNotification[AttachedToWorkerEventDataType], Unit]
   ): this.type = js.native
   /**
     * Emitted when any notification from the V8 Inspector is received.
     */
-  @JSName("on")
-  def on_inspectorNotification(
-    event: inspectorNotification,
+  @JSName("once")
+  @scala.annotation.targetName("once_inspectorNotification")
+  def once(
+    event: "inspectorNotification",
     listener: js.Function1[/* message */ InspectorNotification[js.Object], Unit]
   ): this.type = js.native
-  
   def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  /**
-    * Issued when new console message is added.
-    */
-  @JSName("once")
-  def once_ConsolemessageAdded(
-    event: ConsoleDotmessageAdded,
-    listener: js.Function1[/* message */ InspectorNotification[MessageAddedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when breakpoint is resolved to an actual script and location.
-    */
-  @JSName("once")
-  def once_DebuggerbreakpointResolved(
-    event: DebuggerDotbreakpointResolved,
-    listener: js.Function1[/* message */ InspectorNotification[BreakpointResolvedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.
-    */
-  @JSName("once")
-  def once_Debuggerpaused(
-    event: DebuggerDotpaused,
-    listener: js.Function1[/* message */ InspectorNotification[PausedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when the virtual machine resumed execution.
-    */
-  @JSName("once")
-  def once_Debuggerresumed(event: DebuggerDotresumed, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * Fired when virtual machine fails to parse the script.
-    */
-  @JSName("once")
-  def once_DebuggerscriptFailedToParse(
-    event: DebuggerDotscriptFailedToParse,
-    listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
-    */
-  @JSName("once")
-  def once_DebuggerscriptParsed(
-    event: DebuggerDotscriptParsed,
-    listener: js.Function1[/* message */ InspectorNotification[ScriptParsedEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_HeapProfileraddHeapSnapshotChunk(
-    event: HeapProfilerDotaddHeapSnapshotChunk,
-    listener: js.Function1[/* message */ InspectorNotification[AddHeapSnapshotChunkEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * If heap objects tracking has been started then backend may send update for one or more fragments
-    */
-  @JSName("once")
-  def once_HeapProfilerheapStatsUpdate(
-    event: HeapProfilerDotheapStatsUpdate,
-    listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
-    */
-  @JSName("once")
-  def once_HeapProfilerlastSeenObjectId(
-    event: HeapProfilerDotlastSeenObjectId,
-    listener: js.Function1[/* message */ InspectorNotification[LastSeenObjectIdEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_HeapProfilerreportHeapSnapshotProgress(
-    event: HeapProfilerDotreportHeapSnapshotProgress,
-    listener: js.Function1[/* message */ InspectorNotification[ReportHeapSnapshotProgressEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_HeapProfilerresetProfiles(event: HeapProfilerDotresetProfiles, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * This event is fired instead of `Runtime.executionContextDestroyed` when
-    * enabled.
-    * It is fired when the Node process finished all code execution and is
-    * waiting for all frontends to disconnect.
-    */
-  @JSName("once")
-  def once_NodeRuntimewaitingForDisconnect(event: NodeRuntimeDotwaitingForDisconnect, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * Contains an bucket of collected trace events.
-    */
-  @JSName("once")
-  def once_NodeTracingdataCollected(
-    event: NodeTracingDotdataCollected,
-    listener: js.Function1[/* message */ InspectorNotification[DataCollectedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
-    * delivered via dataCollected events.
-    */
-  @JSName("once")
-  def once_NodeTracingtracingComplete(event: NodeTracingDottracingComplete, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * Issued when attached to a worker.
-    */
-  @JSName("once")
-  def once_NodeWorkerattachedToWorker(
-    event: NodeWorkerDotattachedToWorker,
-    listener: js.Function1[/* message */ InspectorNotification[AttachedToWorkerEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when detached from the worker.
-    */
-  @JSName("once")
-  def once_NodeWorkerdetachedFromWorker(
-    event: NodeWorkerDotdetachedFromWorker,
-    listener: js.Function1[/* message */ InspectorNotification[DetachedFromWorkerEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Notifies about a new protocol message received from the session
-    * (session ID is provided in attachedToWorker notification).
-    */
-  @JSName("once")
-  def once_NodeWorkerreceivedMessageFromWorker(
-    event: NodeWorkerDotreceivedMessageFromWorker,
-    listener: js.Function1[/* message */ InspectorNotification[ReceivedMessageFromWorkerEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_ProfilerconsoleProfileFinished(
-    event: ProfilerDotconsoleProfileFinished,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileFinishedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Sent when new profile recording is started using console.profile() call.
-    */
-  @JSName("once")
-  def once_ProfilerconsoleProfileStarted(
-    event: ProfilerDotconsoleProfileStarted,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when console API was called.
-    */
-  @JSName("once")
-  def once_RuntimeconsoleAPICalled(
-    event: RuntimeDotconsoleAPICalled,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleAPICalledEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when unhandled exception was revoked.
-    */
-  @JSName("once")
-  def once_RuntimeexceptionRevoked(
-    event: RuntimeDotexceptionRevoked,
-    listener: js.Function1[/* message */ InspectorNotification[ExceptionRevokedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when exception was thrown and unhandled.
-    */
-  @JSName("once")
-  def once_RuntimeexceptionThrown(
-    event: RuntimeDotexceptionThrown,
-    listener: js.Function1[/* message */ InspectorNotification[ExceptionThrownEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when new execution context is created.
-    */
-  @JSName("once")
-  def once_RuntimeexecutionContextCreated(
-    event: RuntimeDotexecutionContextCreated,
-    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextCreatedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when execution context is destroyed.
-    */
-  @JSName("once")
-  def once_RuntimeexecutionContextDestroyed(
-    event: RuntimeDotexecutionContextDestroyed,
-    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextDestroyedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when all executionContexts were cleared in browser
-    */
-  @JSName("once")
-  def once_RuntimeexecutionContextsCleared(event: RuntimeDotexecutionContextsCleared, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
-    */
-  @JSName("once")
-  def once_RuntimeinspectRequested(
-    event: RuntimeDotinspectRequested,
-    listener: js.Function1[/* message */ InspectorNotification[InspectRequestedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when any notification from the V8 Inspector is received.
-    */
-  @JSName("once")
-  def once_inspectorNotification(
-    event: inspectorNotification,
-    listener: js.Function1[/* message */ InspectorNotification[js.Object], Unit]
-  ): this.type = js.native
   
+  /**
+    * Calls function with given declaration on the given object. Object group of the result is inherited from the target object.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimecallFunctionOn")
+  def post(method: "Runtime.callFunctionOn"): Unit = js.native
+  /**
+    * @experimental
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimesetCustomObjectFormatterEnabled")
+  def post(method: "Runtime.setCustomObjectFormatterEnabled"): Unit = js.native
+  /**
+    * Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or no exceptions. Initial pause on exceptions state is <code>none</code>.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetPauseOnExceptions")
+  def post(method: "Debugger.setPauseOnExceptions"): Unit = js.native
+  /**
+    * Returns source for the script with given id.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetScriptSource")
+  def post(method: "Debugger.getScriptSource"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Profilerstop")
+  def post(method: "Profiler.stop"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilercollectGarbage")
+  def post(method: "HeapProfiler.collectGarbage"): Unit = js.native
+  /**
+    * Changes CPU profiler sampling interval. Must be called before CPU profiles recording started.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilersetSamplingInterval")
+  def post(method: "Profiler.setSamplingInterval"): Unit = js.native
+  /**
+    * Enables debugger for the given page. Clients should not assume that the debugging has been enabled until the result for this command is received.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_Debuggerenable")
+  def post(method: "Debugger.enable"): Unit = js.native
+  /**
+    * Gets supported tracing categories.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeTracinggetCategories")
+  def post(method: "NodeTracing.getCategories"): Unit = js.native
+  /**
+    * Detached from the worker with given sessionId.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkerdetach")
+  def post(method: "NodeWorker.detach"): Unit = js.native
+  /**
+    * Disables console domain, prevents further console messages from being reported to the client.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_Consoledisable")
+  def post(method: "Console.disable"): Unit = js.native
+  /**
+    * Detaches from all running workers and disables attaching to new workers as they are started.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkerdisable")
+  def post(method: "NodeWorker.disable"): Unit = js.native
+  /**
+    * Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this command is issued, all existing parsed scripts will have breakpoints resolved and returned in <code>locations</code> property. Further matching script parsing will result in subsequent <code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpointByUrl")
+  def post(method: "Debugger.setBreakpointByUrl"): Unit = js.native
+  /**
+    * Makes page not interrupt on any pauses (breakpoint, exception, dom exception etc).
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetSkipAllPauses")
+  def post(method: "Debugger.setSkipAllPauses"): Unit = js.native
+  /**
+    * Edits JavaScript source live.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetScriptSource")
+  def post(method: "Debugger.setScriptSource"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerenable")
+  def post(method: "HeapProfiler.enable"): Unit = js.native
+  /**
+    * Makes backend skip steps in the script in blackboxed ranges. VM will try leave blacklisted scripts by performing 'step in' several times, finally resorting to 'step out' if unsuccessful. Positions array contains positions where blackbox state is changed. First interval isn't blackboxed. Array should be sorted.
+    * @experimental
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBlackboxedRanges")
+  def post(method: "Debugger.setBlackboxedRanges"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstartTrackingHeapObjects")
+  def post(method: "HeapProfiler.startTrackingHeapObjects"): Unit = js.native
+  /**
+    * Sends protocol message over session with given id.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkersendMessageToWorker")
+  def post(method: "NodeWorker.sendMessageToWorker"): Unit = js.native
+  /**
+    * Activates / deactivates all breakpoints on the page.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpointsActive")
+  def post(method: "Debugger.setBreakpointsActive"): Unit = js.native
+  /**
+    * Resumes JavaScript execution.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_Debuggerresume")
+  def post(method: "Debugger.resume"): Unit = js.native
+  /**
+    * @experimental
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerpauseOnAsyncCall")
+  def post(method: "Debugger.pauseOnAsyncCall"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilergetObjectByHeapObjectId")
+  def post(method: "HeapProfiler.getObjectByHeapObjectId"): Unit = js.native
+  /**
+    * Returns properties of a given object. Object group of the result is inherited from the target object.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimegetProperties")
+  def post(method: "Runtime.getProperties"): Unit = js.native
+  /**
+    * Evaluates expression on a given call frame.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerevaluateOnCallFrame")
+  def post(method: "Debugger.evaluateOnCallFrame"): Unit = js.native
+  /**
+    * Enables reporting of execution contexts creation by means of <code>executionContextCreated</code> event. When the reporting gets enabled the event will be sent immediately for each existing execution context.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_Runtimeenable")
+  def post(method: "Runtime.enable"): Unit = js.native
+  /**
+    * Instructs the inspector to attach to running workers. Will also attach to new workers
+    * as they start
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkerenable")
+  def post(method: "NodeWorker.enable"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilergetSamplingProfile")
+  def post(method: "HeapProfiler.getSamplingProfile"): Unit = js.native
+  /**
+    * Collect type profile.
+    * @experimental
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilertakeTypeProfile")
+  def post(method: "Profiler.takeTypeProfile"): Unit = js.native
+  /**
+    * Enable precise code coverage. Coverage data for JavaScript executed before enabling precise code coverage may be incomplete. Enabling prevents running optimized code and resets execution counters.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilerstartPreciseCoverage")
+  def post(method: "Profiler.startPreciseCoverage"): Unit = js.native
+  /**
+    * Steps over the statement.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerstepOver")
+  def post(method: "Debugger.stepOver"): Unit = js.native
+  /**
+    * Discards collected exceptions and console API calls.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimediscardConsoleEntries")
+  def post(method: "Runtime.discardConsoleEntries"): Unit = js.native
+  /**
+    * Steps into the function call.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerstepInto")
+  def post(method: "Debugger.stepInto"): Unit = js.native
+  /**
+    * Stop trace events collection. Remaining collected events will be sent as a sequence of
+    * dataCollected events followed by tracingComplete event.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeTracingstop")
+  def post(method: "NodeTracing.stop"): Unit = js.native
+  /**
+    * Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in scripts with url matching one of the patterns. VM will try to leave blackboxed script by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.
+    * @experimental
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBlackboxPatterns")
+  def post(method: "Debugger.setBlackboxPatterns"): Unit = js.native
+  /**
+    * Enable type profile.
+    * @experimental
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilerstartTypeProfile")
+  def post(method: "Profiler.startTypeProfile"): Unit = js.native
+  /**
+    * Disable precise code coverage. Disabling releases unnecessary execution count records and allows executing optimized code.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilerstopPreciseCoverage")
+  def post(method: "Profiler.stopPreciseCoverage"): Unit = js.native
+  /**
+    * This method is deprecated - use Debugger.stepInto with breakOnAsyncCall and Debugger.pauseOnAsyncTask instead. Steps into next scheduled async task if any is scheduled before next pause. Returns success when async task is actually scheduled, returns error if no task were scheduled or another scheduleStepIntoAsync was called.
+    * @experimental
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerscheduleStepIntoAsync")
+  def post(method: "Debugger.scheduleStepIntoAsync"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilergetHeapObjectId")
+  def post(method: "HeapProfiler.getHeapObjectId"): Unit = js.native
+  /**
+    * Releases remote object with given id.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimereleaseObject")
+  def post(method: "Runtime.releaseObject"): Unit = js.native
+  /**
+    * Removes JavaScript breakpoint.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerremoveBreakpoint")
+  def post(method: "Debugger.removeBreakpoint"): Unit = js.native
+  /**
+    * Enable the `NodeRuntime.waitingForDisconnect`.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeRuntimenotifyWhenWaitingForDisconnect")
+  def post(method: "NodeRuntime.notifyWhenWaitingForDisconnect"): Unit = js.native
+  /**
+    * Enables or disables async call stacks tracking.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetAsyncCallStackDepth")
+  def post(method: "Debugger.setAsyncCallStackDepth"): Unit = js.native
+  /**
+    * Enables console domain, sends the messages collected so far to the client by means of the <code>messageAdded</code> notification.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_Consoleenable")
+  def post(method: "Console.enable"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstopTrackingHeapObjects")
+  def post(method: "HeapProfiler.stopTrackingHeapObjects"): Unit = js.native
+  /**
+    * Returns supported domains.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_SchemagetDomains")
+  def post(method: "Schema.getDomains"): Unit = js.native
+  /**
+    * Sets JavaScript breakpoint at a given location.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpoint")
+  def post(method: "Debugger.setBreakpoint"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerdisable")
+  def post(method: "HeapProfiler.disable"): Unit = js.native
+  /**
+    * Runs script with given id in a given context.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimerunScript")
+  def post(method: "Runtime.runScript"): Unit = js.native
+  /**
+    * Does nothing.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_ConsoleclearMessages")
+  def post(method: "Console.clearMessages"): Unit = js.native
+  /**
+    * Disable type profile. Disabling releases type profile data collected so far.
+    * @experimental
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilerstopTypeProfile")
+  def post(method: "Profiler.stopTypeProfile"): Unit = js.native
+  /**
+    * Changes return value in top frame. Available only at return break position.
+    * @experimental
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetReturnValue")
+  def post(method: "Debugger.setReturnValue"): Unit = js.native
+  /**
+    * Stops on the next JavaScript statement.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_Debuggerpause")
+  def post(method: "Debugger.pause"): Unit = js.native
+  /**
+    * Returns all let, const and class variables from global scope.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimeglobalLexicalScopeNames")
+  def post(method: "Runtime.globalLexicalScopeNames"): Unit = js.native
+  /**
+    * Collect coverage data for the current isolate, and resets execution counters. Precise code coverage needs to have started.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilertakePreciseCoverage")
+  def post(method: "Profiler.takePreciseCoverage"): Unit = js.native
+  /**
+    * Add handler to promise with given promise object id.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimeawaitPromise")
+  def post(method: "Runtime.awaitPromise"): Unit = js.native
+  /**
+    * Evaluates expression on global object.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_Runtimeevaluate")
+  def post(method: "Runtime.evaluate"): Unit = js.native
+  /**
+    * Tells inspected instance to run if it was waiting for debugger to attach.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimerunIfWaitingForDebugger")
+  def post(method: "Runtime.runIfWaitingForDebugger"): Unit = js.native
+  /**
+    * Searches for given string in script content.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersearchInContent")
+  def post(method: "Debugger.searchInContent"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstartSampling")
+  def post(method: "HeapProfiler.startSampling"): Unit = js.native
+  /**
+    * Changes value of variable in a callframe. Object-based scopes are not supported and must be mutated manually.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetVariableValue")
+  def post(method: "Debugger.setVariableValue"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Profilerdisable")
+  def post(method: "Profiler.disable"): Unit = js.native
+  /**
+    * Returns possible locations for breakpoint. scriptId in start and end range locations should be the same.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetPossibleBreakpoints")
+  def post(method: "Debugger.getPossibleBreakpoints"): Unit = js.native
+  /**
+    * Restarts particular call frame from the beginning.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerrestartFrame")
+  def post(method: "Debugger.restartFrame"): Unit = js.native
+  /**
+    * Enables console to refer to the node with given id via $x (see Command Line API for more details $x functions).
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfileraddInspectedHeapObject")
+  def post(method: "HeapProfiler.addInspectedHeapObject"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimequeryObjects")
+  def post(method: "Runtime.queryObjects"): Unit = js.native
+  /**
+    * Compiles expression.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimecompileScript")
+  def post(method: "Runtime.compileScript"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Profilerenable")
+  def post(method: "Profiler.enable"): Unit = js.native
+  /**
+    * Returns stack trace with given <code>stackTraceId</code>.
+    * @experimental
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetStackTrace")
+  def post(method: "Debugger.getStackTrace"): Unit = js.native
+  /**
+    * Steps out of the function call.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerstepOut")
+  def post(method: "Debugger.stepOut"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Profilerstart")
+  def post(method: "Profiler.start"): Unit = js.native
+  /**
+    * Disables reporting of execution contexts creation.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_Runtimedisable")
+  def post(method: "Runtime.disable"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilertakeHeapSnapshot")
+  def post(method: "HeapProfiler.takeHeapSnapshot"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstopSampling")
+  def post(method: "HeapProfiler.stopSampling"): Unit = js.native
+  /**
+    * Releases all remote objects that belong to a given group.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimereleaseObjectGroup")
+  def post(method: "Runtime.releaseObjectGroup"): Unit = js.native
+  /**
+    * Disables debugger for given page.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_Debuggerdisable")
+  def post(method: "Debugger.disable"): Unit = js.native
+  /**
+    * Continues execution until specific location is reached.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggercontinueToLocation")
+  def post(method: "Debugger.continueToLocation"): Unit = js.native
+  /**
+    * Collect coverage data for the current isolate. The coverage data may be incomplete due to garbage collection.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilergetBestEffortCoverage")
+  def post(method: "Profiler.getBestEffortCoverage"): Unit = js.native
+  /**
+    * Start trace events collection.
+    */
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeTracingstart")
+  def post(method: "NodeTracing.start"): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Debuggerpause")
+  def post(method: "Debugger.pause", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpointsActive")
+  def post(method: "Debugger.setBreakpointsActive", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimereleaseObjectGroup")
+  def post(method: "Runtime.releaseObjectGroup", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Profilerdisable")
+  def post(method: "Profiler.disable", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkerdetach")
+  def post(method: "NodeWorker.detach", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Profilerstart")
+  def post(method: "Profiler.start", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimesetCustomObjectFormatterEnabled")
+  def post(
+    method: "Runtime.setCustomObjectFormatterEnabled",
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Profilerenable")
+  def post(method: "Profiler.enable", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstartTrackingHeapObjects")
+  def post(
+    method: "HeapProfiler.startTrackingHeapObjects",
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilertakeHeapSnapshot")
+  def post(method: "HeapProfiler.takeHeapSnapshot", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeTracingstart")
+  def post(method: "NodeTracing.start", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Debuggerdisable")
+  def post(method: "Debugger.disable", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstartSampling")
+  def post(method: "HeapProfiler.startSampling", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetVariableValue")
+  def post(method: "Debugger.setVariableValue", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimereleaseObject")
+  def post(method: "Runtime.releaseObject", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBlackboxedRanges")
+  def post(method: "Debugger.setBlackboxedRanges", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggercontinueToLocation")
+  def post(method: "Debugger.continueToLocation", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkerenable")
+  def post(method: "NodeWorker.enable", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ConsoleclearMessages")
+  def post(method: "Console.clearMessages", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfileraddInspectedHeapObject")
+  def post(
+    method: "HeapProfiler.addInspectedHeapObject",
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerremoveBreakpoint")
+  def post(method: "Debugger.removeBreakpoint", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimerunIfWaitingForDebugger")
+  def post(method: "Runtime.runIfWaitingForDebugger", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerdisable")
+  def post(method: "HeapProfiler.disable", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Debuggerresume")
+  def post(method: "Debugger.resume", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimediscardConsoleEntries")
+  def post(method: "Runtime.discardConsoleEntries", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkersendMessageToWorker")
+  def post(method: "NodeWorker.sendMessageToWorker", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetAsyncCallStackDepth")
+  def post(method: "Debugger.setAsyncCallStackDepth", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBlackboxPatterns")
+  def post(method: "Debugger.setBlackboxPatterns", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilercollectGarbage")
+  def post(method: "HeapProfiler.collectGarbage", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Consoledisable")
+  def post(method: "Console.disable", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerscheduleStepIntoAsync")
+  def post(method: "Debugger.scheduleStepIntoAsync", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilerstartPreciseCoverage")
+  def post(method: "Profiler.startPreciseCoverage", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerstepInto")
+  def post(method: "Debugger.stepInto", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerstepOut")
+  def post(method: "Debugger.stepOut", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerenable")
+  def post(method: "HeapProfiler.enable", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Runtimedisable")
+  def post(method: "Runtime.disable", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilerstartTypeProfile")
+  def post(method: "Profiler.startTypeProfile", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetSkipAllPauses")
+  def post(method: "Debugger.setSkipAllPauses", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Consoleenable")
+  def post(method: "Console.enable", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkerdisable")
+  def post(method: "NodeWorker.disable", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeRuntimenotifyWhenWaitingForDisconnect")
+  def post(
+    method: "NodeRuntime.notifyWhenWaitingForDisconnect",
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilersetSamplingInterval")
+  def post(method: "Profiler.setSamplingInterval", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstopTrackingHeapObjects")
+  def post(
+    method: "HeapProfiler.stopTrackingHeapObjects",
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerstepOver")
+  def post(method: "Debugger.stepOver", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Runtimeenable")
+  def post(method: "Runtime.enable", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerpauseOnAsyncCall")
+  def post(method: "Debugger.pauseOnAsyncCall", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilerstopTypeProfile")
+  def post(method: "Profiler.stopTypeProfile", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetReturnValue")
+  def post(method: "Debugger.setReturnValue", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilerstopPreciseCoverage")
+  def post(method: "Profiler.stopPreciseCoverage", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeTracingstop")
+  def post(method: "NodeTracing.stop", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetPauseOnExceptions")
+  def post(method: "Debugger.setPauseOnExceptions", callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_SchemagetDomains")
+  def post(
+    method: "Schema.getDomains",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetDomainsReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerevaluateOnCallFrame")
+  def post(
+    method: "Debugger.evaluateOnCallFrame",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ EvaluateOnCallFrameReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetScriptSource")
+  def post(
+    method: "Debugger.getScriptSource",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetScriptSourceReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilertakeTypeProfile")
+  def post(
+    method: "Profiler.takeTypeProfile",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ TakeTypeProfileReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilergetBestEffortCoverage")
+  def post(
+    method: "Profiler.getBestEffortCoverage",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetBestEffortCoverageReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Profilerstop")
+  def post(
+    method: "Profiler.stop",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ StopReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimeawaitPromise")
+  def post(
+    method: "Runtime.awaitPromise",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ AwaitPromiseReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetScriptSource")
+  def post(
+    method: "Debugger.setScriptSource",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetScriptSourceReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilergetHeapObjectId")
+  def post(
+    method: "HeapProfiler.getHeapObjectId",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetHeapObjectIdReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimegetProperties")
+  def post(
+    method: "Runtime.getProperties",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetPropertiesReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerrestartFrame")
+  def post(
+    method: "Debugger.restartFrame",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ RestartFrameReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstopSampling")
+  def post(
+    method: "HeapProfiler.stopSampling",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ StopSamplingReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersearchInContent")
+  def post(
+    method: "Debugger.searchInContent",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ SearchInContentReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeTracinggetCategories")
+  def post(
+    method: "NodeTracing.getCategories",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetCategoriesReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimequeryObjects")
+  def post(
+    method: "Runtime.queryObjects",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ QueryObjectsReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpointByUrl")
+  def post(
+    method: "Debugger.setBreakpointByUrl",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetBreakpointByUrlReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetPossibleBreakpoints")
+  def post(
+    method: "Debugger.getPossibleBreakpoints",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetPossibleBreakpointsReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilertakePreciseCoverage")
+  def post(
+    method: "Profiler.takePreciseCoverage",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ TakePreciseCoverageReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetStackTrace")
+  def post(
+    method: "Debugger.getStackTrace",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetStackTraceReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimecompileScript")
+  def post(
+    method: "Runtime.compileScript",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ CompileScriptReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Runtimeevaluate")
+  def post(
+    method: "Runtime.evaluate",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ EvaluateReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Debuggerenable")
+  def post(
+    method: "Debugger.enable",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ EnableReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimerunScript")
+  def post(
+    method: "Runtime.runScript",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ RunScriptReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpoint")
+  def post(
+    method: "Debugger.setBreakpoint",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetBreakpointReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimeglobalLexicalScopeNames")
+  def post(
+    method: "Runtime.globalLexicalScopeNames",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GlobalLexicalScopeNamesReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimecallFunctionOn")
+  def post(
+    method: "Runtime.callFunctionOn",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ CallFunctionOnReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilergetObjectByHeapObjectId")
+  def post(
+    method: "HeapProfiler.getObjectByHeapObjectId",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetObjectByHeapObjectIdReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilergetSamplingProfile")
+  def post(
+    method: "HeapProfiler.getSamplingProfile",
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetSamplingProfileReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetReturnValue")
+  def post(
+    method: "Debugger.setReturnValue",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimereleaseObject")
+  def post(
+    method: "Runtime.releaseObject",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilersetSamplingInterval")
+  def post(
+    method: "Profiler.setSamplingInterval",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpointsActive")
+  def post(
+    method: "Debugger.setBreakpointsActive",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimereleaseObjectGroup")
+  def post(
+    method: "Runtime.releaseObjectGroup",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetSkipAllPauses")
+  def post(
+    method: "Debugger.setSkipAllPauses",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfileraddInspectedHeapObject")
+  def post(
+    method: "HeapProfiler.addInspectedHeapObject",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimesetCustomObjectFormatterEnabled")
+  def post(
+    method: "Runtime.setCustomObjectFormatterEnabled",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerpauseOnAsyncCall")
+  def post(
+    method: "Debugger.pauseOnAsyncCall",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkersendMessageToWorker")
+  def post(
+    method: "NodeWorker.sendMessageToWorker",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBlackboxedRanges")
+  def post(
+    method: "Debugger.setBlackboxedRanges",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerremoveBreakpoint")
+  def post(
+    method: "Debugger.removeBreakpoint",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetAsyncCallStackDepth")
+  def post(
+    method: "Debugger.setAsyncCallStackDepth",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerstepInto")
+  def post(method: "Debugger.stepInto", params: Unit, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkerdetach")
+  def post(method: "NodeWorker.detach", params: Unit, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilertakeHeapSnapshot")
+  def post(
+    method: "HeapProfiler.takeHeapSnapshot",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstartSampling")
+  def post(
+    method: "HeapProfiler.startSampling",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBlackboxPatterns")
+  def post(
+    method: "Debugger.setBlackboxPatterns",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilerstartPreciseCoverage")
+  def post(
+    method: "Profiler.startPreciseCoverage",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeRuntimenotifyWhenWaitingForDisconnect")
+  def post(
+    method: "NodeRuntime.notifyWhenWaitingForDisconnect",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkerenable")
+  def post(method: "NodeWorker.enable", params: Unit, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeTracingstart")
+  def post(method: "NodeTracing.start", params: Unit, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetVariableValue")
+  def post(
+    method: "Debugger.setVariableValue",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstopTrackingHeapObjects")
+  def post(
+    method: "HeapProfiler.stopTrackingHeapObjects",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggercontinueToLocation")
+  def post(
+    method: "Debugger.continueToLocation",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetPauseOnExceptions")
+  def post(
+    method: "Debugger.setPauseOnExceptions",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstartTrackingHeapObjects")
+  def post(
+    method: "HeapProfiler.startTrackingHeapObjects",
+    params: Unit,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimegetProperties")
+  def post(
+    method: "Runtime.getProperties",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetPropertiesReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersearchInContent")
+  def post(
+    method: "Debugger.searchInContent",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ SearchInContentReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerevaluateOnCallFrame")
+  def post(
+    method: "Debugger.evaluateOnCallFrame",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ EvaluateOnCallFrameReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimequeryObjects")
+  def post(
+    method: "Runtime.queryObjects",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ QueryObjectsReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimecallFunctionOn")
+  def post(
+    method: "Runtime.callFunctionOn",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ CallFunctionOnReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetScriptSource")
+  def post(
+    method: "Debugger.setScriptSource",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetScriptSourceReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Runtimeevaluate")
+  def post(
+    method: "Runtime.evaluate",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ EvaluateReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetStackTrace")
+  def post(
+    method: "Debugger.getStackTrace",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetStackTraceReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetScriptSource")
+  def post(
+    method: "Debugger.getScriptSource",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetScriptSourceReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetPossibleBreakpoints")
+  def post(
+    method: "Debugger.getPossibleBreakpoints",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetPossibleBreakpointsReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimecompileScript")
+  def post(
+    method: "Runtime.compileScript",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ CompileScriptReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimeglobalLexicalScopeNames")
+  def post(
+    method: "Runtime.globalLexicalScopeNames",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GlobalLexicalScopeNamesReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpoint")
+  def post(
+    method: "Debugger.setBreakpoint",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetBreakpointReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerrestartFrame")
+  def post(
+    method: "Debugger.restartFrame",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ RestartFrameReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimerunScript")
+  def post(
+    method: "Runtime.runScript",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ RunScriptReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimeawaitPromise")
+  def post(
+    method: "Runtime.awaitPromise",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ AwaitPromiseReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilergetHeapObjectId")
+  def post(
+    method: "HeapProfiler.getHeapObjectId",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetHeapObjectIdReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilergetObjectByHeapObjectId")
+  def post(
+    method: "HeapProfiler.getObjectByHeapObjectId",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetObjectByHeapObjectIdReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpointByUrl")
+  def post(
+    method: "Debugger.setBreakpointByUrl",
+    params: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetBreakpointByUrlReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggercontinueToLocation")
+  def post(method: "Debugger.continueToLocation", params: ContinueToLocationParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggercontinueToLocation")
+  def post(
+    method: "Debugger.continueToLocation",
+    params: ContinueToLocationParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerevaluateOnCallFrame")
+  def post(method: "Debugger.evaluateOnCallFrame", params: EvaluateOnCallFrameParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerevaluateOnCallFrame")
+  def post(
+    method: "Debugger.evaluateOnCallFrame",
+    params: EvaluateOnCallFrameParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ EvaluateOnCallFrameReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetPossibleBreakpoints")
+  def post(method: "Debugger.getPossibleBreakpoints", params: GetPossibleBreakpointsParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetPossibleBreakpoints")
+  def post(
+    method: "Debugger.getPossibleBreakpoints",
+    params: GetPossibleBreakpointsParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetPossibleBreakpointsReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetScriptSource")
+  def post(method: "Debugger.getScriptSource", params: GetScriptSourceParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetScriptSource")
+  def post(
+    method: "Debugger.getScriptSource",
+    params: GetScriptSourceParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetScriptSourceReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetStackTrace")
+  def post(method: "Debugger.getStackTrace", params: GetStackTraceParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggergetStackTrace")
+  def post(
+    method: "Debugger.getStackTrace",
+    params: GetStackTraceParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetStackTraceReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerpauseOnAsyncCall")
+  def post(method: "Debugger.pauseOnAsyncCall", params: PauseOnAsyncCallParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerpauseOnAsyncCall")
+  def post(
+    method: "Debugger.pauseOnAsyncCall",
+    params: PauseOnAsyncCallParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerremoveBreakpoint")
+  def post(method: "Debugger.removeBreakpoint", params: RemoveBreakpointParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerremoveBreakpoint")
+  def post(
+    method: "Debugger.removeBreakpoint",
+    params: RemoveBreakpointParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerrestartFrame")
+  def post(method: "Debugger.restartFrame", params: RestartFrameParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerrestartFrame")
+  def post(
+    method: "Debugger.restartFrame",
+    params: RestartFrameParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ RestartFrameReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersearchInContent")
+  def post(method: "Debugger.searchInContent", params: SearchInContentParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersearchInContent")
+  def post(
+    method: "Debugger.searchInContent",
+    params: SearchInContentParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ SearchInContentReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetAsyncCallStackDepth")
+  def post(method: "Debugger.setAsyncCallStackDepth", params: SetAsyncCallStackDepthParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetAsyncCallStackDepth")
+  def post(
+    method: "Debugger.setAsyncCallStackDepth",
+    params: SetAsyncCallStackDepthParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBlackboxPatterns")
+  def post(method: "Debugger.setBlackboxPatterns", params: SetBlackboxPatternsParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBlackboxPatterns")
+  def post(
+    method: "Debugger.setBlackboxPatterns",
+    params: SetBlackboxPatternsParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBlackboxedRanges")
+  def post(method: "Debugger.setBlackboxedRanges", params: SetBlackboxedRangesParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBlackboxedRanges")
+  def post(
+    method: "Debugger.setBlackboxedRanges",
+    params: SetBlackboxedRangesParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpointByUrl")
+  def post(method: "Debugger.setBreakpointByUrl", params: SetBreakpointByUrlParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpointByUrl")
+  def post(
+    method: "Debugger.setBreakpointByUrl",
+    params: SetBreakpointByUrlParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetBreakpointByUrlReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpoint")
+  def post(method: "Debugger.setBreakpoint", params: SetBreakpointParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpoint")
+  def post(
+    method: "Debugger.setBreakpoint",
+    params: SetBreakpointParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetBreakpointReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpointsActive")
+  def post(method: "Debugger.setBreakpointsActive", params: SetBreakpointsActiveParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetBreakpointsActive")
+  def post(
+    method: "Debugger.setBreakpointsActive",
+    params: SetBreakpointsActiveParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetPauseOnExceptions")
+  def post(method: "Debugger.setPauseOnExceptions", params: SetPauseOnExceptionsParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetPauseOnExceptions")
+  def post(
+    method: "Debugger.setPauseOnExceptions",
+    params: SetPauseOnExceptionsParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetReturnValue")
+  def post(method: "Debugger.setReturnValue", params: SetReturnValueParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetReturnValue")
+  def post(
+    method: "Debugger.setReturnValue",
+    params: SetReturnValueParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetScriptSource")
+  def post(method: "Debugger.setScriptSource", params: SetScriptSourceParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetScriptSource")
+  def post(
+    method: "Debugger.setScriptSource",
+    params: SetScriptSourceParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetScriptSourceReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetSkipAllPauses")
+  def post(method: "Debugger.setSkipAllPauses", params: SetSkipAllPausesParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetSkipAllPauses")
+  def post(
+    method: "Debugger.setSkipAllPauses",
+    params: SetSkipAllPausesParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetVariableValue")
+  def post(method: "Debugger.setVariableValue", params: SetVariableValueParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggersetVariableValue")
+  def post(
+    method: "Debugger.setVariableValue",
+    params: SetVariableValueParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerstepInto")
+  def post(method: "Debugger.stepInto", params: StepIntoParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_DebuggerstepInto")
+  def post(
+    method: "Debugger.stepInto",
+    params: StepIntoParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfileraddInspectedHeapObject")
+  def post(method: "HeapProfiler.addInspectedHeapObject", params: AddInspectedHeapObjectParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfileraddInspectedHeapObject")
+  def post(
+    method: "HeapProfiler.addInspectedHeapObject",
+    params: AddInspectedHeapObjectParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilergetHeapObjectId")
+  def post(method: "HeapProfiler.getHeapObjectId", params: GetHeapObjectIdParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilergetHeapObjectId")
+  def post(
+    method: "HeapProfiler.getHeapObjectId",
+    params: GetHeapObjectIdParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetHeapObjectIdReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilergetObjectByHeapObjectId")
+  def post(method: "HeapProfiler.getObjectByHeapObjectId", params: GetObjectByHeapObjectIdParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilergetObjectByHeapObjectId")
+  def post(
+    method: "HeapProfiler.getObjectByHeapObjectId",
+    params: GetObjectByHeapObjectIdParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetObjectByHeapObjectIdReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstartSampling")
+  def post(method: "HeapProfiler.startSampling", params: StartSamplingParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstartSampling")
+  def post(
+    method: "HeapProfiler.startSampling",
+    params: StartSamplingParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstartTrackingHeapObjects")
+  def post(method: "HeapProfiler.startTrackingHeapObjects", params: StartTrackingHeapObjectsParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstartTrackingHeapObjects")
+  def post(
+    method: "HeapProfiler.startTrackingHeapObjects",
+    params: StartTrackingHeapObjectsParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstopTrackingHeapObjects")
+  def post(method: "HeapProfiler.stopTrackingHeapObjects", params: StopTrackingHeapObjectsParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilerstopTrackingHeapObjects")
+  def post(
+    method: "HeapProfiler.stopTrackingHeapObjects",
+    params: StopTrackingHeapObjectsParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilertakeHeapSnapshot")
+  def post(method: "HeapProfiler.takeHeapSnapshot", params: TakeHeapSnapshotParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_HeapProfilertakeHeapSnapshot")
+  def post(
+    method: "HeapProfiler.takeHeapSnapshot",
+    params: TakeHeapSnapshotParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeRuntimenotifyWhenWaitingForDisconnect")
+  def post(
+    method: "NodeRuntime.notifyWhenWaitingForDisconnect",
+    params: NotifyWhenWaitingForDisconnectParameterType
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeRuntimenotifyWhenWaitingForDisconnect")
+  def post(
+    method: "NodeRuntime.notifyWhenWaitingForDisconnect",
+    params: NotifyWhenWaitingForDisconnectParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeTracingstart")
+  def post(method: "NodeTracing.start", params: StartParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeTracingstart")
+  def post(
+    method: "NodeTracing.start",
+    params: StartParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkerdetach")
+  def post(method: "NodeWorker.detach", params: DetachParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkerdetach")
+  def post(
+    method: "NodeWorker.detach",
+    params: DetachParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkerenable")
+  def post(method: "NodeWorker.enable", params: EnableParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkerenable")
+  def post(
+    method: "NodeWorker.enable",
+    params: EnableParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkersendMessageToWorker")
+  def post(method: "NodeWorker.sendMessageToWorker", params: SendMessageToWorkerParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_NodeWorkersendMessageToWorker")
+  def post(
+    method: "NodeWorker.sendMessageToWorker",
+    params: SendMessageToWorkerParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilersetSamplingInterval")
+  def post(method: "Profiler.setSamplingInterval", params: SetSamplingIntervalParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilersetSamplingInterval")
+  def post(
+    method: "Profiler.setSamplingInterval",
+    params: SetSamplingIntervalParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilerstartPreciseCoverage")
+  def post(method: "Profiler.startPreciseCoverage", params: StartPreciseCoverageParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_ProfilerstartPreciseCoverage")
+  def post(
+    method: "Profiler.startPreciseCoverage",
+    params: StartPreciseCoverageParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimeawaitPromise")
+  def post(method: "Runtime.awaitPromise", params: AwaitPromiseParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimeawaitPromise")
+  def post(
+    method: "Runtime.awaitPromise",
+    params: AwaitPromiseParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ AwaitPromiseReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimecallFunctionOn")
+  def post(method: "Runtime.callFunctionOn", params: CallFunctionOnParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimecallFunctionOn")
+  def post(
+    method: "Runtime.callFunctionOn",
+    params: CallFunctionOnParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ CallFunctionOnReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimecompileScript")
+  def post(method: "Runtime.compileScript", params: CompileScriptParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimecompileScript")
+  def post(
+    method: "Runtime.compileScript",
+    params: CompileScriptParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ CompileScriptReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Runtimeevaluate")
+  def post(method: "Runtime.evaluate", params: EvaluateParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_Runtimeevaluate")
+  def post(
+    method: "Runtime.evaluate",
+    params: EvaluateParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ EvaluateReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimegetProperties")
+  def post(method: "Runtime.getProperties", params: GetPropertiesParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimegetProperties")
+  def post(
+    method: "Runtime.getProperties",
+    params: GetPropertiesParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetPropertiesReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimeglobalLexicalScopeNames")
+  def post(method: "Runtime.globalLexicalScopeNames", params: GlobalLexicalScopeNamesParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimeglobalLexicalScopeNames")
+  def post(
+    method: "Runtime.globalLexicalScopeNames",
+    params: GlobalLexicalScopeNamesParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ GlobalLexicalScopeNamesReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimequeryObjects")
+  def post(method: "Runtime.queryObjects", params: QueryObjectsParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimequeryObjects")
+  def post(
+    method: "Runtime.queryObjects",
+    params: QueryObjectsParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ QueryObjectsReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimereleaseObjectGroup")
+  def post(method: "Runtime.releaseObjectGroup", params: ReleaseObjectGroupParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimereleaseObjectGroup")
+  def post(
+    method: "Runtime.releaseObjectGroup",
+    params: ReleaseObjectGroupParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimereleaseObject")
+  def post(method: "Runtime.releaseObject", params: ReleaseObjectParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimereleaseObject")
+  def post(
+    method: "Runtime.releaseObject",
+    params: ReleaseObjectParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimerunScript")
+  def post(method: "Runtime.runScript", params: RunScriptParameterType): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimerunScript")
+  def post(
+    method: "Runtime.runScript",
+    params: RunScriptParameterType,
+    callback: js.Function2[/* err */ js.Error | Null, /* params */ RunScriptReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimesetCustomObjectFormatterEnabled")
+  def post(
+    method: "Runtime.setCustomObjectFormatterEnabled",
+    params: SetCustomObjectFormatterEnabledParameterType
+  ): Unit = js.native
+  @JSName("post")
+  @scala.annotation.targetName("post_RuntimesetCustomObjectFormatterEnabled")
+  def post(
+    method: "Runtime.setCustomObjectFormatterEnabled",
+    params: SetCustomObjectFormatterEnabledParameterType,
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): Unit = js.native
   /**
     * Posts a message to the inspector back-end. `callback` will be notified when
     * a response is received. `callback` is a function that accepts two optional
@@ -957,1525 +2503,252 @@ open class Session () extends StObject {
     params: Unit,
     callback: js.Function2[/* err */ js.Error | Null, /* params */ js.UndefOr[js.Object], Unit]
   ): Unit = js.native
-  /**
-    * Does nothing.
-    */
-  @JSName("post")
-  def post_ConsoleclearMessages(method: ConsoleDotclearMessages): Unit = js.native
-  @JSName("post")
-  def post_ConsoleclearMessages(method: ConsoleDotclearMessages, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Disables console domain, prevents further console messages from being reported to the client.
-    */
-  @JSName("post")
-  def post_Consoledisable(method: ConsoleDotdisable): Unit = js.native
-  @JSName("post")
-  def post_Consoledisable(method: ConsoleDotdisable, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Enables console domain, sends the messages collected so far to the client by means of the <code>messageAdded</code> notification.
-    */
-  @JSName("post")
-  def post_Consoleenable(method: ConsoleDotenable): Unit = js.native
-  @JSName("post")
-  def post_Consoleenable(method: ConsoleDotenable, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Continues execution until specific location is reached.
-    */
-  @JSName("post")
-  def post_DebuggercontinueToLocation(method: DebuggerDotcontinueToLocation): Unit = js.native
-  @JSName("post")
-  def post_DebuggercontinueToLocation(method: DebuggerDotcontinueToLocation, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_DebuggercontinueToLocation(
-    method: DebuggerDotcontinueToLocation,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggercontinueToLocation(method: DebuggerDotcontinueToLocation, params: ContinueToLocationParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggercontinueToLocation(
-    method: DebuggerDotcontinueToLocation,
-    params: ContinueToLocationParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Disables debugger for given page.
-    */
-  @JSName("post")
-  def post_Debuggerdisable(method: DebuggerDotdisable): Unit = js.native
-  @JSName("post")
-  def post_Debuggerdisable(method: DebuggerDotdisable, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Enables debugger for the given page. Clients should not assume that the debugging has been enabled until the result for this command is received.
-    */
-  @JSName("post")
-  def post_Debuggerenable(method: DebuggerDotenable): Unit = js.native
-  @JSName("post")
-  def post_Debuggerenable(
-    method: DebuggerDotenable,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ EnableReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Evaluates expression on a given call frame.
-    */
-  @JSName("post")
-  def post_DebuggerevaluateOnCallFrame(method: DebuggerDotevaluateOnCallFrame): Unit = js.native
-  @JSName("post")
-  def post_DebuggerevaluateOnCallFrame(
-    method: DebuggerDotevaluateOnCallFrame,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ EvaluateOnCallFrameReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggerevaluateOnCallFrame(
-    method: DebuggerDotevaluateOnCallFrame,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ EvaluateOnCallFrameReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggerevaluateOnCallFrame(method: DebuggerDotevaluateOnCallFrame, params: EvaluateOnCallFrameParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggerevaluateOnCallFrame(
-    method: DebuggerDotevaluateOnCallFrame,
-    params: EvaluateOnCallFrameParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ EvaluateOnCallFrameReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Returns possible locations for breakpoint. scriptId in start and end range locations should be the same.
-    */
-  @JSName("post")
-  def post_DebuggergetPossibleBreakpoints(method: DebuggerDotgetPossibleBreakpoints): Unit = js.native
-  @JSName("post")
-  def post_DebuggergetPossibleBreakpoints(
-    method: DebuggerDotgetPossibleBreakpoints,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetPossibleBreakpointsReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggergetPossibleBreakpoints(
-    method: DebuggerDotgetPossibleBreakpoints,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetPossibleBreakpointsReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggergetPossibleBreakpoints(method: DebuggerDotgetPossibleBreakpoints, params: GetPossibleBreakpointsParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggergetPossibleBreakpoints(
-    method: DebuggerDotgetPossibleBreakpoints,
-    params: GetPossibleBreakpointsParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetPossibleBreakpointsReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Returns source for the script with given id.
-    */
-  @JSName("post")
-  def post_DebuggergetScriptSource(method: DebuggerDotgetScriptSource): Unit = js.native
-  @JSName("post")
-  def post_DebuggergetScriptSource(
-    method: DebuggerDotgetScriptSource,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetScriptSourceReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggergetScriptSource(
-    method: DebuggerDotgetScriptSource,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetScriptSourceReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggergetScriptSource(method: DebuggerDotgetScriptSource, params: GetScriptSourceParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggergetScriptSource(
-    method: DebuggerDotgetScriptSource,
-    params: GetScriptSourceParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetScriptSourceReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Returns stack trace with given <code>stackTraceId</code>.
-    * @experimental
-    */
-  @JSName("post")
-  def post_DebuggergetStackTrace(method: DebuggerDotgetStackTrace): Unit = js.native
-  @JSName("post")
-  def post_DebuggergetStackTrace(
-    method: DebuggerDotgetStackTrace,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetStackTraceReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggergetStackTrace(
-    method: DebuggerDotgetStackTrace,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetStackTraceReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggergetStackTrace(method: DebuggerDotgetStackTrace, params: GetStackTraceParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggergetStackTrace(
-    method: DebuggerDotgetStackTrace,
-    params: GetStackTraceParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetStackTraceReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Stops on the next JavaScript statement.
-    */
-  @JSName("post")
-  def post_Debuggerpause(method: DebuggerDotpause): Unit = js.native
-  @JSName("post")
-  def post_Debuggerpause(method: DebuggerDotpause, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * @experimental
-    */
-  @JSName("post")
-  def post_DebuggerpauseOnAsyncCall(method: DebuggerDotpauseOnAsyncCall): Unit = js.native
-  @JSName("post")
-  def post_DebuggerpauseOnAsyncCall(method: DebuggerDotpauseOnAsyncCall, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_DebuggerpauseOnAsyncCall(
-    method: DebuggerDotpauseOnAsyncCall,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggerpauseOnAsyncCall(method: DebuggerDotpauseOnAsyncCall, params: PauseOnAsyncCallParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggerpauseOnAsyncCall(
-    method: DebuggerDotpauseOnAsyncCall,
-    params: PauseOnAsyncCallParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Removes JavaScript breakpoint.
-    */
-  @JSName("post")
-  def post_DebuggerremoveBreakpoint(method: DebuggerDotremoveBreakpoint): Unit = js.native
-  @JSName("post")
-  def post_DebuggerremoveBreakpoint(method: DebuggerDotremoveBreakpoint, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_DebuggerremoveBreakpoint(
-    method: DebuggerDotremoveBreakpoint,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggerremoveBreakpoint(method: DebuggerDotremoveBreakpoint, params: RemoveBreakpointParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggerremoveBreakpoint(
-    method: DebuggerDotremoveBreakpoint,
-    params: RemoveBreakpointParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Restarts particular call frame from the beginning.
-    */
-  @JSName("post")
-  def post_DebuggerrestartFrame(method: DebuggerDotrestartFrame): Unit = js.native
-  @JSName("post")
-  def post_DebuggerrestartFrame(
-    method: DebuggerDotrestartFrame,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ RestartFrameReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggerrestartFrame(
-    method: DebuggerDotrestartFrame,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ RestartFrameReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggerrestartFrame(method: DebuggerDotrestartFrame, params: RestartFrameParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggerrestartFrame(
-    method: DebuggerDotrestartFrame,
-    params: RestartFrameParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ RestartFrameReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Resumes JavaScript execution.
-    */
-  @JSName("post")
-  def post_Debuggerresume(method: DebuggerDotresume): Unit = js.native
-  @JSName("post")
-  def post_Debuggerresume(method: DebuggerDotresume, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * This method is deprecated - use Debugger.stepInto with breakOnAsyncCall and Debugger.pauseOnAsyncTask instead. Steps into next scheduled async task if any is scheduled before next pause. Returns success when async task is actually scheduled, returns error if no task were scheduled or another scheduleStepIntoAsync was called.
-    * @experimental
-    */
-  @JSName("post")
-  def post_DebuggerscheduleStepIntoAsync(method: DebuggerDotscheduleStepIntoAsync): Unit = js.native
-  @JSName("post")
-  def post_DebuggerscheduleStepIntoAsync(method: DebuggerDotscheduleStepIntoAsync, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Searches for given string in script content.
-    */
-  @JSName("post")
-  def post_DebuggersearchInContent(method: DebuggerDotsearchInContent): Unit = js.native
-  @JSName("post")
-  def post_DebuggersearchInContent(
-    method: DebuggerDotsearchInContent,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ SearchInContentReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersearchInContent(
-    method: DebuggerDotsearchInContent,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ SearchInContentReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersearchInContent(method: DebuggerDotsearchInContent, params: SearchInContentParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggersearchInContent(
-    method: DebuggerDotsearchInContent,
-    params: SearchInContentParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ SearchInContentReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Enables or disables async call stacks tracking.
-    */
-  @JSName("post")
-  def post_DebuggersetAsyncCallStackDepth(method: DebuggerDotsetAsyncCallStackDepth): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetAsyncCallStackDepth(method: DebuggerDotsetAsyncCallStackDepth, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetAsyncCallStackDepth(
-    method: DebuggerDotsetAsyncCallStackDepth,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetAsyncCallStackDepth(method: DebuggerDotsetAsyncCallStackDepth, params: SetAsyncCallStackDepthParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetAsyncCallStackDepth(
-    method: DebuggerDotsetAsyncCallStackDepth,
-    params: SetAsyncCallStackDepthParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in scripts with url matching one of the patterns. VM will try to leave blackboxed script by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.
-    * @experimental
-    */
-  @JSName("post")
-  def post_DebuggersetBlackboxPatterns(method: DebuggerDotsetBlackboxPatterns): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBlackboxPatterns(method: DebuggerDotsetBlackboxPatterns, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBlackboxPatterns(
-    method: DebuggerDotsetBlackboxPatterns,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBlackboxPatterns(method: DebuggerDotsetBlackboxPatterns, params: SetBlackboxPatternsParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBlackboxPatterns(
-    method: DebuggerDotsetBlackboxPatterns,
-    params: SetBlackboxPatternsParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Makes backend skip steps in the script in blackboxed ranges. VM will try leave blacklisted scripts by performing 'step in' several times, finally resorting to 'step out' if unsuccessful. Positions array contains positions where blackbox state is changed. First interval isn't blackboxed. Array should be sorted.
-    * @experimental
-    */
-  @JSName("post")
-  def post_DebuggersetBlackboxedRanges(method: DebuggerDotsetBlackboxedRanges): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBlackboxedRanges(method: DebuggerDotsetBlackboxedRanges, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBlackboxedRanges(
-    method: DebuggerDotsetBlackboxedRanges,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBlackboxedRanges(method: DebuggerDotsetBlackboxedRanges, params: SetBlackboxedRangesParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBlackboxedRanges(
-    method: DebuggerDotsetBlackboxedRanges,
-    params: SetBlackboxedRangesParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Sets JavaScript breakpoint at a given location.
-    */
-  @JSName("post")
-  def post_DebuggersetBreakpoint(method: DebuggerDotsetBreakpoint): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpoint(
-    method: DebuggerDotsetBreakpoint,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetBreakpointReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpoint(
-    method: DebuggerDotsetBreakpoint,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetBreakpointReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpoint(method: DebuggerDotsetBreakpoint, params: SetBreakpointParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpoint(
-    method: DebuggerDotsetBreakpoint,
-    params: SetBreakpointParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetBreakpointReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this command is issued, all existing parsed scripts will have breakpoints resolved and returned in <code>locations</code> property. Further matching script parsing will result in subsequent <code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads.
-    */
-  @JSName("post")
-  def post_DebuggersetBreakpointByUrl(method: DebuggerDotsetBreakpointByUrl): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpointByUrl(
-    method: DebuggerDotsetBreakpointByUrl,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetBreakpointByUrlReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpointByUrl(
-    method: DebuggerDotsetBreakpointByUrl,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetBreakpointByUrlReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpointByUrl(method: DebuggerDotsetBreakpointByUrl, params: SetBreakpointByUrlParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpointByUrl(
-    method: DebuggerDotsetBreakpointByUrl,
-    params: SetBreakpointByUrlParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetBreakpointByUrlReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Activates / deactivates all breakpoints on the page.
-    */
-  @JSName("post")
-  def post_DebuggersetBreakpointsActive(method: DebuggerDotsetBreakpointsActive): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpointsActive(method: DebuggerDotsetBreakpointsActive, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpointsActive(
-    method: DebuggerDotsetBreakpointsActive,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpointsActive(method: DebuggerDotsetBreakpointsActive, params: SetBreakpointsActiveParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetBreakpointsActive(
-    method: DebuggerDotsetBreakpointsActive,
-    params: SetBreakpointsActiveParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or no exceptions. Initial pause on exceptions state is <code>none</code>.
-    */
-  @JSName("post")
-  def post_DebuggersetPauseOnExceptions(method: DebuggerDotsetPauseOnExceptions): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetPauseOnExceptions(method: DebuggerDotsetPauseOnExceptions, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetPauseOnExceptions(
-    method: DebuggerDotsetPauseOnExceptions,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetPauseOnExceptions(method: DebuggerDotsetPauseOnExceptions, params: SetPauseOnExceptionsParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetPauseOnExceptions(
-    method: DebuggerDotsetPauseOnExceptions,
-    params: SetPauseOnExceptionsParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Changes return value in top frame. Available only at return break position.
-    * @experimental
-    */
-  @JSName("post")
-  def post_DebuggersetReturnValue(method: DebuggerDotsetReturnValue): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetReturnValue(method: DebuggerDotsetReturnValue, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetReturnValue(
-    method: DebuggerDotsetReturnValue,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetReturnValue(method: DebuggerDotsetReturnValue, params: SetReturnValueParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetReturnValue(
-    method: DebuggerDotsetReturnValue,
-    params: SetReturnValueParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Edits JavaScript source live.
-    */
-  @JSName("post")
-  def post_DebuggersetScriptSource(method: DebuggerDotsetScriptSource): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetScriptSource(
-    method: DebuggerDotsetScriptSource,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetScriptSourceReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetScriptSource(
-    method: DebuggerDotsetScriptSource,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetScriptSourceReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetScriptSource(method: DebuggerDotsetScriptSource, params: SetScriptSourceParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetScriptSource(
-    method: DebuggerDotsetScriptSource,
-    params: SetScriptSourceParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ SetScriptSourceReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Makes page not interrupt on any pauses (breakpoint, exception, dom exception etc).
-    */
-  @JSName("post")
-  def post_DebuggersetSkipAllPauses(method: DebuggerDotsetSkipAllPauses): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetSkipAllPauses(method: DebuggerDotsetSkipAllPauses, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetSkipAllPauses(
-    method: DebuggerDotsetSkipAllPauses,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetSkipAllPauses(method: DebuggerDotsetSkipAllPauses, params: SetSkipAllPausesParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetSkipAllPauses(
-    method: DebuggerDotsetSkipAllPauses,
-    params: SetSkipAllPausesParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Changes value of variable in a callframe. Object-based scopes are not supported and must be mutated manually.
-    */
-  @JSName("post")
-  def post_DebuggersetVariableValue(method: DebuggerDotsetVariableValue): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetVariableValue(method: DebuggerDotsetVariableValue, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetVariableValue(
-    method: DebuggerDotsetVariableValue,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetVariableValue(method: DebuggerDotsetVariableValue, params: SetVariableValueParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggersetVariableValue(
-    method: DebuggerDotsetVariableValue,
-    params: SetVariableValueParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Steps into the function call.
-    */
-  @JSName("post")
-  def post_DebuggerstepInto(method: DebuggerDotstepInto): Unit = js.native
-  @JSName("post")
-  def post_DebuggerstepInto(method: DebuggerDotstepInto, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_DebuggerstepInto(method: DebuggerDotstepInto, params: Unit, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_DebuggerstepInto(method: DebuggerDotstepInto, params: StepIntoParameterType): Unit = js.native
-  @JSName("post")
-  def post_DebuggerstepInto(
-    method: DebuggerDotstepInto,
-    params: StepIntoParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Steps out of the function call.
-    */
-  @JSName("post")
-  def post_DebuggerstepOut(method: DebuggerDotstepOut): Unit = js.native
-  @JSName("post")
-  def post_DebuggerstepOut(method: DebuggerDotstepOut, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Steps over the statement.
-    */
-  @JSName("post")
-  def post_DebuggerstepOver(method: DebuggerDotstepOver): Unit = js.native
-  @JSName("post")
-  def post_DebuggerstepOver(method: DebuggerDotstepOver, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Enables console to refer to the node with given id via $x (see Command Line API for more details $x functions).
-    */
-  @JSName("post")
-  def post_HeapProfileraddInspectedHeapObject(method: HeapProfilerDotaddInspectedHeapObject): Unit = js.native
-  @JSName("post")
-  def post_HeapProfileraddInspectedHeapObject(
-    method: HeapProfilerDotaddInspectedHeapObject,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfileraddInspectedHeapObject(
-    method: HeapProfilerDotaddInspectedHeapObject,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfileraddInspectedHeapObject(method: HeapProfilerDotaddInspectedHeapObject, params: AddInspectedHeapObjectParameterType): Unit = js.native
-  @JSName("post")
-  def post_HeapProfileraddInspectedHeapObject(
-    method: HeapProfilerDotaddInspectedHeapObject,
-    params: AddInspectedHeapObjectParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilercollectGarbage(method: HeapProfilerDotcollectGarbage): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilercollectGarbage(method: HeapProfilerDotcollectGarbage, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerdisable(method: HeapProfilerDotdisable): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerdisable(method: HeapProfilerDotdisable, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerenable(method: HeapProfilerDotenable): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerenable(method: HeapProfilerDotenable, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilergetHeapObjectId(method: HeapProfilerDotgetHeapObjectId): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilergetHeapObjectId(
-    method: HeapProfilerDotgetHeapObjectId,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetHeapObjectIdReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilergetHeapObjectId(
-    method: HeapProfilerDotgetHeapObjectId,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetHeapObjectIdReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilergetHeapObjectId(method: HeapProfilerDotgetHeapObjectId, params: GetHeapObjectIdParameterType): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilergetHeapObjectId(
-    method: HeapProfilerDotgetHeapObjectId,
-    params: GetHeapObjectIdParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetHeapObjectIdReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilergetObjectByHeapObjectId(method: HeapProfilerDotgetObjectByHeapObjectId): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilergetObjectByHeapObjectId(
-    method: HeapProfilerDotgetObjectByHeapObjectId,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetObjectByHeapObjectIdReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilergetObjectByHeapObjectId(
-    method: HeapProfilerDotgetObjectByHeapObjectId,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetObjectByHeapObjectIdReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilergetObjectByHeapObjectId(method: HeapProfilerDotgetObjectByHeapObjectId, params: GetObjectByHeapObjectIdParameterType): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilergetObjectByHeapObjectId(
-    method: HeapProfilerDotgetObjectByHeapObjectId,
-    params: GetObjectByHeapObjectIdParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetObjectByHeapObjectIdReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilergetSamplingProfile(method: HeapProfilerDotgetSamplingProfile): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilergetSamplingProfile(
-    method: HeapProfilerDotgetSamplingProfile,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetSamplingProfileReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstartSampling(method: HeapProfilerDotstartSampling): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstartSampling(method: HeapProfilerDotstartSampling, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstartSampling(
-    method: HeapProfilerDotstartSampling,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstartSampling(method: HeapProfilerDotstartSampling, params: StartSamplingParameterType): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstartSampling(
-    method: HeapProfilerDotstartSampling,
-    params: StartSamplingParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstartTrackingHeapObjects(method: HeapProfilerDotstartTrackingHeapObjects): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstartTrackingHeapObjects(
-    method: HeapProfilerDotstartTrackingHeapObjects,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstartTrackingHeapObjects(
-    method: HeapProfilerDotstartTrackingHeapObjects,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstartTrackingHeapObjects(method: HeapProfilerDotstartTrackingHeapObjects, params: StartTrackingHeapObjectsParameterType): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstartTrackingHeapObjects(
-    method: HeapProfilerDotstartTrackingHeapObjects,
-    params: StartTrackingHeapObjectsParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstopSampling(method: HeapProfilerDotstopSampling): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstopSampling(
-    method: HeapProfilerDotstopSampling,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ StopSamplingReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstopTrackingHeapObjects(method: HeapProfilerDotstopTrackingHeapObjects): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstopTrackingHeapObjects(
-    method: HeapProfilerDotstopTrackingHeapObjects,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstopTrackingHeapObjects(
-    method: HeapProfilerDotstopTrackingHeapObjects,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstopTrackingHeapObjects(method: HeapProfilerDotstopTrackingHeapObjects, params: StopTrackingHeapObjectsParameterType): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilerstopTrackingHeapObjects(
-    method: HeapProfilerDotstopTrackingHeapObjects,
-    params: StopTrackingHeapObjectsParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilertakeHeapSnapshot(method: HeapProfilerDottakeHeapSnapshot): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilertakeHeapSnapshot(method: HeapProfilerDottakeHeapSnapshot, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilertakeHeapSnapshot(
-    method: HeapProfilerDottakeHeapSnapshot,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilertakeHeapSnapshot(method: HeapProfilerDottakeHeapSnapshot, params: TakeHeapSnapshotParameterType): Unit = js.native
-  @JSName("post")
-  def post_HeapProfilertakeHeapSnapshot(
-    method: HeapProfilerDottakeHeapSnapshot,
-    params: TakeHeapSnapshotParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Enable the `NodeRuntime.waitingForDisconnect`.
-    */
-  @JSName("post")
-  def post_NodeRuntimenotifyWhenWaitingForDisconnect(method: NodeRuntimeDotnotifyWhenWaitingForDisconnect): Unit = js.native
-  @JSName("post")
-  def post_NodeRuntimenotifyWhenWaitingForDisconnect(
-    method: NodeRuntimeDotnotifyWhenWaitingForDisconnect,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_NodeRuntimenotifyWhenWaitingForDisconnect(
-    method: NodeRuntimeDotnotifyWhenWaitingForDisconnect,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_NodeRuntimenotifyWhenWaitingForDisconnect(
-    method: NodeRuntimeDotnotifyWhenWaitingForDisconnect,
-    params: NotifyWhenWaitingForDisconnectParameterType
-  ): Unit = js.native
-  @JSName("post")
-  def post_NodeRuntimenotifyWhenWaitingForDisconnect(
-    method: NodeRuntimeDotnotifyWhenWaitingForDisconnect,
-    params: NotifyWhenWaitingForDisconnectParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Gets supported tracing categories.
-    */
-  @JSName("post")
-  def post_NodeTracinggetCategories(method: NodeTracingDotgetCategories): Unit = js.native
-  @JSName("post")
-  def post_NodeTracinggetCategories(
-    method: NodeTracingDotgetCategories,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetCategoriesReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Start trace events collection.
-    */
-  @JSName("post")
-  def post_NodeTracingstart(method: NodeTracingDotstart): Unit = js.native
-  @JSName("post")
-  def post_NodeTracingstart(method: NodeTracingDotstart, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_NodeTracingstart(method: NodeTracingDotstart, params: Unit, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_NodeTracingstart(method: NodeTracingDotstart, params: StartParameterType): Unit = js.native
-  @JSName("post")
-  def post_NodeTracingstart(
-    method: NodeTracingDotstart,
-    params: StartParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Stop trace events collection. Remaining collected events will be sent as a sequence of
-    * dataCollected events followed by tracingComplete event.
-    */
-  @JSName("post")
-  def post_NodeTracingstop(method: NodeTracingDotstop): Unit = js.native
-  @JSName("post")
-  def post_NodeTracingstop(method: NodeTracingDotstop, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Detached from the worker with given sessionId.
-    */
-  @JSName("post")
-  def post_NodeWorkerdetach(method: NodeWorkerDotdetach): Unit = js.native
-  @JSName("post")
-  def post_NodeWorkerdetach(method: NodeWorkerDotdetach, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_NodeWorkerdetach(method: NodeWorkerDotdetach, params: Unit, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_NodeWorkerdetach(method: NodeWorkerDotdetach, params: DetachParameterType): Unit = js.native
-  @JSName("post")
-  def post_NodeWorkerdetach(
-    method: NodeWorkerDotdetach,
-    params: DetachParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Detaches from all running workers and disables attaching to new workers as they are started.
-    */
-  @JSName("post")
-  def post_NodeWorkerdisable(method: NodeWorkerDotdisable): Unit = js.native
-  @JSName("post")
-  def post_NodeWorkerdisable(method: NodeWorkerDotdisable, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Instructs the inspector to attach to running workers. Will also attach to new workers
-    * as they start
-    */
-  @JSName("post")
-  def post_NodeWorkerenable(method: NodeWorkerDotenable): Unit = js.native
-  @JSName("post")
-  def post_NodeWorkerenable(method: NodeWorkerDotenable, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_NodeWorkerenable(method: NodeWorkerDotenable, params: Unit, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_NodeWorkerenable(method: NodeWorkerDotenable, params: EnableParameterType): Unit = js.native
-  @JSName("post")
-  def post_NodeWorkerenable(
-    method: NodeWorkerDotenable,
-    params: EnableParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Sends protocol message over session with given id.
-    */
-  @JSName("post")
-  def post_NodeWorkersendMessageToWorker(method: NodeWorkerDotsendMessageToWorker): Unit = js.native
-  @JSName("post")
-  def post_NodeWorkersendMessageToWorker(method: NodeWorkerDotsendMessageToWorker, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_NodeWorkersendMessageToWorker(
-    method: NodeWorkerDotsendMessageToWorker,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_NodeWorkersendMessageToWorker(method: NodeWorkerDotsendMessageToWorker, params: SendMessageToWorkerParameterType): Unit = js.native
-  @JSName("post")
-  def post_NodeWorkersendMessageToWorker(
-    method: NodeWorkerDotsendMessageToWorker,
-    params: SendMessageToWorkerParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_Profilerdisable(method: ProfilerDotdisable): Unit = js.native
-  @JSName("post")
-  def post_Profilerdisable(method: ProfilerDotdisable, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_Profilerenable(method: ProfilerDotenable): Unit = js.native
-  @JSName("post")
-  def post_Profilerenable(method: ProfilerDotenable, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Collect coverage data for the current isolate. The coverage data may be incomplete due to garbage collection.
-    */
-  @JSName("post")
-  def post_ProfilergetBestEffortCoverage(method: ProfilerDotgetBestEffortCoverage): Unit = js.native
-  @JSName("post")
-  def post_ProfilergetBestEffortCoverage(
-    method: ProfilerDotgetBestEffortCoverage,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetBestEffortCoverageReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Changes CPU profiler sampling interval. Must be called before CPU profiles recording started.
-    */
-  @JSName("post")
-  def post_ProfilersetSamplingInterval(method: ProfilerDotsetSamplingInterval): Unit = js.native
-  @JSName("post")
-  def post_ProfilersetSamplingInterval(method: ProfilerDotsetSamplingInterval, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_ProfilersetSamplingInterval(
-    method: ProfilerDotsetSamplingInterval,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_ProfilersetSamplingInterval(method: ProfilerDotsetSamplingInterval, params: SetSamplingIntervalParameterType): Unit = js.native
-  @JSName("post")
-  def post_ProfilersetSamplingInterval(
-    method: ProfilerDotsetSamplingInterval,
-    params: SetSamplingIntervalParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_Profilerstart(method: ProfilerDotstart): Unit = js.native
-  @JSName("post")
-  def post_Profilerstart(method: ProfilerDotstart, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Enable precise code coverage. Coverage data for JavaScript executed before enabling precise code coverage may be incomplete. Enabling prevents running optimized code and resets execution counters.
-    */
-  @JSName("post")
-  def post_ProfilerstartPreciseCoverage(method: ProfilerDotstartPreciseCoverage): Unit = js.native
-  @JSName("post")
-  def post_ProfilerstartPreciseCoverage(method: ProfilerDotstartPreciseCoverage, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_ProfilerstartPreciseCoverage(
-    method: ProfilerDotstartPreciseCoverage,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_ProfilerstartPreciseCoverage(method: ProfilerDotstartPreciseCoverage, params: StartPreciseCoverageParameterType): Unit = js.native
-  @JSName("post")
-  def post_ProfilerstartPreciseCoverage(
-    method: ProfilerDotstartPreciseCoverage,
-    params: StartPreciseCoverageParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Enable type profile.
-    * @experimental
-    */
-  @JSName("post")
-  def post_ProfilerstartTypeProfile(method: ProfilerDotstartTypeProfile): Unit = js.native
-  @JSName("post")
-  def post_ProfilerstartTypeProfile(method: ProfilerDotstartTypeProfile, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_Profilerstop(method: ProfilerDotstop): Unit = js.native
-  @JSName("post")
-  def post_Profilerstop(
-    method: ProfilerDotstop,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ StopReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Disable precise code coverage. Disabling releases unnecessary execution count records and allows executing optimized code.
-    */
-  @JSName("post")
-  def post_ProfilerstopPreciseCoverage(method: ProfilerDotstopPreciseCoverage): Unit = js.native
-  @JSName("post")
-  def post_ProfilerstopPreciseCoverage(method: ProfilerDotstopPreciseCoverage, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Disable type profile. Disabling releases type profile data collected so far.
-    * @experimental
-    */
-  @JSName("post")
-  def post_ProfilerstopTypeProfile(method: ProfilerDotstopTypeProfile): Unit = js.native
-  @JSName("post")
-  def post_ProfilerstopTypeProfile(method: ProfilerDotstopTypeProfile, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Collect coverage data for the current isolate, and resets execution counters. Precise code coverage needs to have started.
-    */
-  @JSName("post")
-  def post_ProfilertakePreciseCoverage(method: ProfilerDottakePreciseCoverage): Unit = js.native
-  @JSName("post")
-  def post_ProfilertakePreciseCoverage(
-    method: ProfilerDottakePreciseCoverage,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ TakePreciseCoverageReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Collect type profile.
-    * @experimental
-    */
-  @JSName("post")
-  def post_ProfilertakeTypeProfile(method: ProfilerDottakeTypeProfile): Unit = js.native
-  @JSName("post")
-  def post_ProfilertakeTypeProfile(
-    method: ProfilerDottakeTypeProfile,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ TakeTypeProfileReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Add handler to promise with given promise object id.
-    */
-  @JSName("post")
-  def post_RuntimeawaitPromise(method: RuntimeDotawaitPromise): Unit = js.native
-  @JSName("post")
-  def post_RuntimeawaitPromise(
-    method: RuntimeDotawaitPromise,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ AwaitPromiseReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimeawaitPromise(
-    method: RuntimeDotawaitPromise,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ AwaitPromiseReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimeawaitPromise(method: RuntimeDotawaitPromise, params: AwaitPromiseParameterType): Unit = js.native
-  @JSName("post")
-  def post_RuntimeawaitPromise(
-    method: RuntimeDotawaitPromise,
-    params: AwaitPromiseParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ AwaitPromiseReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Calls function with given declaration on the given object. Object group of the result is inherited from the target object.
-    */
-  @JSName("post")
-  def post_RuntimecallFunctionOn(method: RuntimeDotcallFunctionOn): Unit = js.native
-  @JSName("post")
-  def post_RuntimecallFunctionOn(
-    method: RuntimeDotcallFunctionOn,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ CallFunctionOnReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimecallFunctionOn(
-    method: RuntimeDotcallFunctionOn,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ CallFunctionOnReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimecallFunctionOn(method: RuntimeDotcallFunctionOn, params: CallFunctionOnParameterType): Unit = js.native
-  @JSName("post")
-  def post_RuntimecallFunctionOn(
-    method: RuntimeDotcallFunctionOn,
-    params: CallFunctionOnParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ CallFunctionOnReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Compiles expression.
-    */
-  @JSName("post")
-  def post_RuntimecompileScript(method: RuntimeDotcompileScript): Unit = js.native
-  @JSName("post")
-  def post_RuntimecompileScript(
-    method: RuntimeDotcompileScript,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ CompileScriptReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimecompileScript(
-    method: RuntimeDotcompileScript,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ CompileScriptReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimecompileScript(method: RuntimeDotcompileScript, params: CompileScriptParameterType): Unit = js.native
-  @JSName("post")
-  def post_RuntimecompileScript(
-    method: RuntimeDotcompileScript,
-    params: CompileScriptParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ CompileScriptReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Disables reporting of execution contexts creation.
-    */
-  @JSName("post")
-  def post_Runtimedisable(method: RuntimeDotdisable): Unit = js.native
-  @JSName("post")
-  def post_Runtimedisable(method: RuntimeDotdisable, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Discards collected exceptions and console API calls.
-    */
-  @JSName("post")
-  def post_RuntimediscardConsoleEntries(method: RuntimeDotdiscardConsoleEntries): Unit = js.native
-  @JSName("post")
-  def post_RuntimediscardConsoleEntries(method: RuntimeDotdiscardConsoleEntries, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Enables reporting of execution contexts creation by means of <code>executionContextCreated</code> event. When the reporting gets enabled the event will be sent immediately for each existing execution context.
-    */
-  @JSName("post")
-  def post_Runtimeenable(method: RuntimeDotenable): Unit = js.native
-  @JSName("post")
-  def post_Runtimeenable(method: RuntimeDotenable, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Evaluates expression on global object.
-    */
-  @JSName("post")
-  def post_Runtimeevaluate(method: RuntimeDotevaluate): Unit = js.native
-  @JSName("post")
-  def post_Runtimeevaluate(
-    method: RuntimeDotevaluate,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ EvaluateReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_Runtimeevaluate(
-    method: RuntimeDotevaluate,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ EvaluateReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_Runtimeevaluate(method: RuntimeDotevaluate, params: EvaluateParameterType): Unit = js.native
-  @JSName("post")
-  def post_Runtimeevaluate(
-    method: RuntimeDotevaluate,
-    params: EvaluateParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ EvaluateReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Returns properties of a given object. Object group of the result is inherited from the target object.
-    */
-  @JSName("post")
-  def post_RuntimegetProperties(method: RuntimeDotgetProperties): Unit = js.native
-  @JSName("post")
-  def post_RuntimegetProperties(
-    method: RuntimeDotgetProperties,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetPropertiesReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimegetProperties(
-    method: RuntimeDotgetProperties,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetPropertiesReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimegetProperties(method: RuntimeDotgetProperties, params: GetPropertiesParameterType): Unit = js.native
-  @JSName("post")
-  def post_RuntimegetProperties(
-    method: RuntimeDotgetProperties,
-    params: GetPropertiesParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetPropertiesReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Returns all let, const and class variables from global scope.
-    */
-  @JSName("post")
-  def post_RuntimeglobalLexicalScopeNames(method: RuntimeDotglobalLexicalScopeNames): Unit = js.native
-  @JSName("post")
-  def post_RuntimeglobalLexicalScopeNames(
-    method: RuntimeDotglobalLexicalScopeNames,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GlobalLexicalScopeNamesReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimeglobalLexicalScopeNames(
-    method: RuntimeDotglobalLexicalScopeNames,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GlobalLexicalScopeNamesReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimeglobalLexicalScopeNames(method: RuntimeDotglobalLexicalScopeNames, params: GlobalLexicalScopeNamesParameterType): Unit = js.native
-  @JSName("post")
-  def post_RuntimeglobalLexicalScopeNames(
-    method: RuntimeDotglobalLexicalScopeNames,
-    params: GlobalLexicalScopeNamesParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GlobalLexicalScopeNamesReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimequeryObjects(method: RuntimeDotqueryObjects): Unit = js.native
-  @JSName("post")
-  def post_RuntimequeryObjects(
-    method: RuntimeDotqueryObjects,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ QueryObjectsReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimequeryObjects(
-    method: RuntimeDotqueryObjects,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ QueryObjectsReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimequeryObjects(method: RuntimeDotqueryObjects, params: QueryObjectsParameterType): Unit = js.native
-  @JSName("post")
-  def post_RuntimequeryObjects(
-    method: RuntimeDotqueryObjects,
-    params: QueryObjectsParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ QueryObjectsReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * Releases remote object with given id.
-    */
-  @JSName("post")
-  def post_RuntimereleaseObject(method: RuntimeDotreleaseObject): Unit = js.native
-  @JSName("post")
-  def post_RuntimereleaseObject(method: RuntimeDotreleaseObject, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_RuntimereleaseObject(
-    method: RuntimeDotreleaseObject,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimereleaseObject(method: RuntimeDotreleaseObject, params: ReleaseObjectParameterType): Unit = js.native
-  @JSName("post")
-  def post_RuntimereleaseObject(
-    method: RuntimeDotreleaseObject,
-    params: ReleaseObjectParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Releases all remote objects that belong to a given group.
-    */
-  @JSName("post")
-  def post_RuntimereleaseObjectGroup(method: RuntimeDotreleaseObjectGroup): Unit = js.native
-  @JSName("post")
-  def post_RuntimereleaseObjectGroup(method: RuntimeDotreleaseObjectGroup, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  @JSName("post")
-  def post_RuntimereleaseObjectGroup(
-    method: RuntimeDotreleaseObjectGroup,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimereleaseObjectGroup(method: RuntimeDotreleaseObjectGroup, params: ReleaseObjectGroupParameterType): Unit = js.native
-  @JSName("post")
-  def post_RuntimereleaseObjectGroup(
-    method: RuntimeDotreleaseObjectGroup,
-    params: ReleaseObjectGroupParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Tells inspected instance to run if it was waiting for debugger to attach.
-    */
-  @JSName("post")
-  def post_RuntimerunIfWaitingForDebugger(method: RuntimeDotrunIfWaitingForDebugger): Unit = js.native
-  @JSName("post")
-  def post_RuntimerunIfWaitingForDebugger(method: RuntimeDotrunIfWaitingForDebugger, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
-  /**
-    * Runs script with given id in a given context.
-    */
-  @JSName("post")
-  def post_RuntimerunScript(method: RuntimeDotrunScript): Unit = js.native
-  @JSName("post")
-  def post_RuntimerunScript(
-    method: RuntimeDotrunScript,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ RunScriptReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimerunScript(
-    method: RuntimeDotrunScript,
-    params: Unit,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ RunScriptReturnType, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimerunScript(method: RuntimeDotrunScript, params: RunScriptParameterType): Unit = js.native
-  @JSName("post")
-  def post_RuntimerunScript(
-    method: RuntimeDotrunScript,
-    params: RunScriptParameterType,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ RunScriptReturnType, Unit]
-  ): Unit = js.native
-  /**
-    * @experimental
-    */
-  @JSName("post")
-  def post_RuntimesetCustomObjectFormatterEnabled(method: RuntimeDotsetCustomObjectFormatterEnabled): Unit = js.native
-  @JSName("post")
-  def post_RuntimesetCustomObjectFormatterEnabled(
-    method: RuntimeDotsetCustomObjectFormatterEnabled,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimesetCustomObjectFormatterEnabled(
-    method: RuntimeDotsetCustomObjectFormatterEnabled,
-    params: Unit,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimesetCustomObjectFormatterEnabled(
-    method: RuntimeDotsetCustomObjectFormatterEnabled,
-    params: SetCustomObjectFormatterEnabledParameterType
-  ): Unit = js.native
-  @JSName("post")
-  def post_RuntimesetCustomObjectFormatterEnabled(
-    method: RuntimeDotsetCustomObjectFormatterEnabled,
-    params: SetCustomObjectFormatterEnabledParameterType,
-    callback: js.Function1[/* err */ js.Error | Null, Unit]
-  ): Unit = js.native
-  /**
-    * Returns supported domains.
-    */
-  @JSName("post")
-  def post_SchemagetDomains(method: SchemaDotgetDomains): Unit = js.native
-  @JSName("post")
-  def post_SchemagetDomains(
-    method: SchemaDotgetDomains,
-    callback: js.Function2[/* err */ js.Error | Null, /* params */ GetDomainsReturnType, Unit]
-  ): Unit = js.native
   
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_HeapProfilerresetProfiles")
+  def prependListener(event: "HeapProfiler.resetProfiles", listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * Issued when all executionContexts were cleared in browser
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_RuntimeexecutionContextsCleared")
+  def prependListener(event: "Runtime.executionContextsCleared", listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
+    * delivered via dataCollected events.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_NodeTracingtracingComplete")
+  def prependListener(event: "NodeTracing.tracingComplete", listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * This event is fired instead of `Runtime.executionContextDestroyed` when
+    * enabled.
+    * It is fired when the Node process finished all code execution and is
+    * waiting for all frontends to disconnect.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_NodeRuntimewaitingForDisconnect")
+  def prependListener(event: "NodeRuntime.waitingForDisconnect", listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * Fired when the virtual machine resumed execution.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_Debuggerresumed")
+  def prependListener(event: "Debugger.resumed", listener: js.Function0[Unit]): this.type = js.native
+  /**
+    * Issued when execution context is destroyed.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_RuntimeexecutionContextDestroyed")
+  def prependListener(
+    event: "Runtime.executionContextDestroyed",
+    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextDestroyedEventDataType], Unit]
+  ): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_HeapProfileraddHeapSnapshotChunk")
+  def prependListener(
+    event: "HeapProfiler.addHeapSnapshotChunk",
+    listener: js.Function1[/* message */ InspectorNotification[AddHeapSnapshotChunkEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_DebuggerscriptParsed")
+  def prependListener(
+    event: "Debugger.scriptParsed",
+    listener: js.Function1[/* message */ InspectorNotification[ScriptParsedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_RuntimeinspectRequested")
+  def prependListener(
+    event: "Runtime.inspectRequested",
+    listener: js.Function1[/* message */ InspectorNotification[InspectRequestedEventDataType], Unit]
+  ): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_ProfilerconsoleProfileFinished")
+  def prependListener(
+    event: "Profiler.consoleProfileFinished",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileFinishedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * If heap objects tracking has been started then backend may send update for one or more fragments
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_HeapProfilerheapStatsUpdate")
+  def prependListener(
+    event: "HeapProfiler.heapStatsUpdate",
+    listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when new execution context is created.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_RuntimeexecutionContextCreated")
+  def prependListener(
+    event: "Runtime.executionContextCreated",
+    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextCreatedEventDataType], Unit]
+  ): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_HeapProfilerreportHeapSnapshotProgress")
+  def prependListener(
+    event: "HeapProfiler.reportHeapSnapshotProgress",
+    listener: js.Function1[/* message */ InspectorNotification[ReportHeapSnapshotProgressEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when unhandled exception was revoked.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_RuntimeexceptionRevoked")
+  def prependListener(
+    event: "Runtime.exceptionRevoked",
+    listener: js.Function1[/* message */ InspectorNotification[ExceptionRevokedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when exception was thrown and unhandled.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_RuntimeexceptionThrown")
+  def prependListener(
+    event: "Runtime.exceptionThrown",
+    listener: js.Function1[/* message */ InspectorNotification[ExceptionThrownEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Sent when new profile recording is started using console.profile() call.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_ProfilerconsoleProfileStarted")
+  def prependListener(
+    event: "Profiler.consoleProfileStarted",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when breakpoint is resolved to an actual script and location.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_DebuggerbreakpointResolved")
+  def prependListener(
+    event: "Debugger.breakpointResolved",
+    listener: js.Function1[/* message */ InspectorNotification[BreakpointResolvedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when attached to a worker.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_NodeWorkerattachedToWorker")
+  def prependListener(
+    event: "NodeWorker.attachedToWorker",
+    listener: js.Function1[/* message */ InspectorNotification[AttachedToWorkerEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when virtual machine fails to parse the script.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_DebuggerscriptFailedToParse")
+  def prependListener(
+    event: "Debugger.scriptFailedToParse",
+    listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_Debuggerpaused")
+  def prependListener(
+    event: "Debugger.paused",
+    listener: js.Function1[/* message */ InspectorNotification[PausedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Contains an bucket of collected trace events.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_NodeTracingdataCollected")
+  def prependListener(
+    event: "NodeTracing.dataCollected",
+    listener: js.Function1[/* message */ InspectorNotification[DataCollectedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when console API was called.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_RuntimeconsoleAPICalled")
+  def prependListener(
+    event: "Runtime.consoleAPICalled",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleAPICalledEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when new console message is added.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_ConsolemessageAdded")
+  def prependListener(
+    event: "Console.messageAdded",
+    listener: js.Function1[/* message */ InspectorNotification[MessageAddedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when detached from the worker.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_NodeWorkerdetachedFromWorker")
+  def prependListener(
+    event: "NodeWorker.detachedFromWorker",
+    listener: js.Function1[/* message */ InspectorNotification[DetachedFromWorkerEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when any notification from the V8 Inspector is received.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_inspectorNotification")
+  def prependListener(
+    event: "inspectorNotification",
+    listener: js.Function1[/* message */ InspectorNotification[js.Object], Unit]
+  ): this.type = js.native
+  /**
+    * Notifies about a new protocol message received from the session
+    * (session ID is provided in attachedToWorker notification).
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_NodeWorkerreceivedMessageFromWorker")
+  def prependListener(
+    event: "NodeWorker.receivedMessageFromWorker",
+    listener: js.Function1[/* message */ InspectorNotification[ReceivedMessageFromWorkerEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
+    */
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_HeapProfilerlastSeenObjectId")
+  def prependListener(
+    event: "HeapProfiler.lastSeenObjectId",
+    listener: js.Function1[/* message */ InspectorNotification[LastSeenObjectIdEventDataType], Unit]
+  ): this.type = js.native
   def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  /**
-    * Issued when new console message is added.
-    */
-  @JSName("prependListener")
-  def prependListener_ConsolemessageAdded(
-    event: ConsoleDotmessageAdded,
-    listener: js.Function1[/* message */ InspectorNotification[MessageAddedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when breakpoint is resolved to an actual script and location.
-    */
-  @JSName("prependListener")
-  def prependListener_DebuggerbreakpointResolved(
-    event: DebuggerDotbreakpointResolved,
-    listener: js.Function1[/* message */ InspectorNotification[BreakpointResolvedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.
-    */
-  @JSName("prependListener")
-  def prependListener_Debuggerpaused(
-    event: DebuggerDotpaused,
-    listener: js.Function1[/* message */ InspectorNotification[PausedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when the virtual machine resumed execution.
-    */
-  @JSName("prependListener")
-  def prependListener_Debuggerresumed(event: DebuggerDotresumed, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * Fired when virtual machine fails to parse the script.
-    */
-  @JSName("prependListener")
-  def prependListener_DebuggerscriptFailedToParse(
-    event: DebuggerDotscriptFailedToParse,
-    listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
-    */
-  @JSName("prependListener")
-  def prependListener_DebuggerscriptParsed(
-    event: DebuggerDotscriptParsed,
-    listener: js.Function1[/* message */ InspectorNotification[ScriptParsedEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_HeapProfileraddHeapSnapshotChunk(
-    event: HeapProfilerDotaddHeapSnapshotChunk,
-    listener: js.Function1[/* message */ InspectorNotification[AddHeapSnapshotChunkEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * If heap objects tracking has been started then backend may send update for one or more fragments
-    */
-  @JSName("prependListener")
-  def prependListener_HeapProfilerheapStatsUpdate(
-    event: HeapProfilerDotheapStatsUpdate,
-    listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
-    */
-  @JSName("prependListener")
-  def prependListener_HeapProfilerlastSeenObjectId(
-    event: HeapProfilerDotlastSeenObjectId,
-    listener: js.Function1[/* message */ InspectorNotification[LastSeenObjectIdEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_HeapProfilerreportHeapSnapshotProgress(
-    event: HeapProfilerDotreportHeapSnapshotProgress,
-    listener: js.Function1[/* message */ InspectorNotification[ReportHeapSnapshotProgressEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_HeapProfilerresetProfiles(event: HeapProfilerDotresetProfiles, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * This event is fired instead of `Runtime.executionContextDestroyed` when
-    * enabled.
-    * It is fired when the Node process finished all code execution and is
-    * waiting for all frontends to disconnect.
-    */
-  @JSName("prependListener")
-  def prependListener_NodeRuntimewaitingForDisconnect(event: NodeRuntimeDotwaitingForDisconnect, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * Contains an bucket of collected trace events.
-    */
-  @JSName("prependListener")
-  def prependListener_NodeTracingdataCollected(
-    event: NodeTracingDotdataCollected,
-    listener: js.Function1[/* message */ InspectorNotification[DataCollectedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
-    * delivered via dataCollected events.
-    */
-  @JSName("prependListener")
-  def prependListener_NodeTracingtracingComplete(event: NodeTracingDottracingComplete, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * Issued when attached to a worker.
-    */
-  @JSName("prependListener")
-  def prependListener_NodeWorkerattachedToWorker(
-    event: NodeWorkerDotattachedToWorker,
-    listener: js.Function1[/* message */ InspectorNotification[AttachedToWorkerEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when detached from the worker.
-    */
-  @JSName("prependListener")
-  def prependListener_NodeWorkerdetachedFromWorker(
-    event: NodeWorkerDotdetachedFromWorker,
-    listener: js.Function1[/* message */ InspectorNotification[DetachedFromWorkerEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Notifies about a new protocol message received from the session
-    * (session ID is provided in attachedToWorker notification).
-    */
-  @JSName("prependListener")
-  def prependListener_NodeWorkerreceivedMessageFromWorker(
-    event: NodeWorkerDotreceivedMessageFromWorker,
-    listener: js.Function1[/* message */ InspectorNotification[ReceivedMessageFromWorkerEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_ProfilerconsoleProfileFinished(
-    event: ProfilerDotconsoleProfileFinished,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileFinishedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Sent when new profile recording is started using console.profile() call.
-    */
-  @JSName("prependListener")
-  def prependListener_ProfilerconsoleProfileStarted(
-    event: ProfilerDotconsoleProfileStarted,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when console API was called.
-    */
-  @JSName("prependListener")
-  def prependListener_RuntimeconsoleAPICalled(
-    event: RuntimeDotconsoleAPICalled,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleAPICalledEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when unhandled exception was revoked.
-    */
-  @JSName("prependListener")
-  def prependListener_RuntimeexceptionRevoked(
-    event: RuntimeDotexceptionRevoked,
-    listener: js.Function1[/* message */ InspectorNotification[ExceptionRevokedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when exception was thrown and unhandled.
-    */
-  @JSName("prependListener")
-  def prependListener_RuntimeexceptionThrown(
-    event: RuntimeDotexceptionThrown,
-    listener: js.Function1[/* message */ InspectorNotification[ExceptionThrownEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when new execution context is created.
-    */
-  @JSName("prependListener")
-  def prependListener_RuntimeexecutionContextCreated(
-    event: RuntimeDotexecutionContextCreated,
-    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextCreatedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when execution context is destroyed.
-    */
-  @JSName("prependListener")
-  def prependListener_RuntimeexecutionContextDestroyed(
-    event: RuntimeDotexecutionContextDestroyed,
-    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextDestroyedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when all executionContexts were cleared in browser
-    */
-  @JSName("prependListener")
-  def prependListener_RuntimeexecutionContextsCleared(event: RuntimeDotexecutionContextsCleared, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
-    */
-  @JSName("prependListener")
-  def prependListener_RuntimeinspectRequested(
-    event: RuntimeDotinspectRequested,
-    listener: js.Function1[/* message */ InspectorNotification[InspectRequestedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when any notification from the V8 Inspector is received.
-    */
-  @JSName("prependListener")
-  def prependListener_inspectorNotification(
-    event: inspectorNotification,
-    listener: js.Function1[/* message */ InspectorNotification[js.Object], Unit]
-  ): this.type = js.native
   
-  def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   /**
-    * Issued when new console message is added.
+    * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
+    * delivered via dataCollected events.
     */
   @JSName("prependOnceListener")
-  def prependOnceListener_ConsolemessageAdded(
-    event: ConsoleDotmessageAdded,
-    listener: js.Function1[/* message */ InspectorNotification[MessageAddedEventDataType], Unit]
-  ): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_NodeTracingtracingComplete")
+  def prependOnceListener(event: "NodeTracing.tracingComplete", listener: js.Function0[Unit]): this.type = js.native
   /**
-    * Fired when breakpoint is resolved to an actual script and location.
+    * Issued when all executionContexts were cleared in browser
     */
   @JSName("prependOnceListener")
-  def prependOnceListener_DebuggerbreakpointResolved(
-    event: DebuggerDotbreakpointResolved,
-    listener: js.Function1[/* message */ InspectorNotification[BreakpointResolvedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.
-    */
-  @JSName("prependOnceListener")
-  def prependOnceListener_Debuggerpaused(
-    event: DebuggerDotpaused,
-    listener: js.Function1[/* message */ InspectorNotification[PausedEventDataType], Unit]
-  ): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_RuntimeexecutionContextsCleared")
+  def prependOnceListener(event: "Runtime.executionContextsCleared", listener: js.Function0[Unit]): this.type = js.native
   /**
     * Fired when the virtual machine resumed execution.
     */
   @JSName("prependOnceListener")
-  def prependOnceListener_Debuggerresumed(event: DebuggerDotresumed, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * Fired when virtual machine fails to parse the script.
-    */
+  @scala.annotation.targetName("prependOnceListener_Debuggerresumed")
+  def prependOnceListener(event: "Debugger.resumed", listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_DebuggerscriptFailedToParse(
-    event: DebuggerDotscriptFailedToParse,
-    listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
-    */
-  @JSName("prependOnceListener")
-  def prependOnceListener_DebuggerscriptParsed(
-    event: DebuggerDotscriptParsed,
-    listener: js.Function1[/* message */ InspectorNotification[ScriptParsedEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_HeapProfileraddHeapSnapshotChunk(
-    event: HeapProfilerDotaddHeapSnapshotChunk,
-    listener: js.Function1[/* message */ InspectorNotification[AddHeapSnapshotChunkEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * If heap objects tracking has been started then backend may send update for one or more fragments
-    */
-  @JSName("prependOnceListener")
-  def prependOnceListener_HeapProfilerheapStatsUpdate(
-    event: HeapProfilerDotheapStatsUpdate,
-    listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
-    */
-  @JSName("prependOnceListener")
-  def prependOnceListener_HeapProfilerlastSeenObjectId(
-    event: HeapProfilerDotlastSeenObjectId,
-    listener: js.Function1[/* message */ InspectorNotification[LastSeenObjectIdEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_HeapProfilerreportHeapSnapshotProgress(
-    event: HeapProfilerDotreportHeapSnapshotProgress,
-    listener: js.Function1[/* message */ InspectorNotification[ReportHeapSnapshotProgressEventDataType], Unit]
-  ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_HeapProfilerresetProfiles(event: HeapProfilerDotresetProfiles, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_HeapProfilerresetProfiles")
+  def prependOnceListener(event: "HeapProfiler.resetProfiles", listener: js.Function0[Unit]): this.type = js.native
   /**
     * This event is fired instead of `Runtime.executionContextDestroyed` when
     * enabled.
@@ -2483,118 +2756,197 @@ open class Session () extends StObject {
     * waiting for all frontends to disconnect.
     */
   @JSName("prependOnceListener")
-  def prependOnceListener_NodeRuntimewaitingForDisconnect(event: NodeRuntimeDotwaitingForDisconnect, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("prependOnceListener_NodeRuntimewaitingForDisconnect")
+  def prependOnceListener(event: "NodeRuntime.waitingForDisconnect", listener: js.Function0[Unit]): this.type = js.native
   /**
-    * Contains an bucket of collected trace events.
+    * If heap objects tracking has been started then backend may send update for one or more fragments
     */
   @JSName("prependOnceListener")
-  def prependOnceListener_NodeTracingdataCollected(
-    event: NodeTracingDotdataCollected,
-    listener: js.Function1[/* message */ InspectorNotification[DataCollectedEventDataType], Unit]
+  @scala.annotation.targetName("prependOnceListener_HeapProfilerheapStatsUpdate")
+  def prependOnceListener(
+    event: "HeapProfiler.heapStatsUpdate",
+    listener: js.Function1[/* message */ InspectorNotification[HeapStatsUpdateEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
-    * delivered via dataCollected events.
+    * Issued when exception was thrown and unhandled.
     */
   @JSName("prependOnceListener")
-  def prependOnceListener_NodeTracingtracingComplete(event: NodeTracingDottracingComplete, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * Issued when attached to a worker.
-    */
+  @scala.annotation.targetName("prependOnceListener_RuntimeexceptionThrown")
+  def prependOnceListener(
+    event: "Runtime.exceptionThrown",
+    listener: js.Function1[/* message */ InspectorNotification[ExceptionThrownEventDataType], Unit]
+  ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_NodeWorkerattachedToWorker(
-    event: NodeWorkerDotattachedToWorker,
-    listener: js.Function1[/* message */ InspectorNotification[AttachedToWorkerEventDataType], Unit]
+  @scala.annotation.targetName("prependOnceListener_ProfilerconsoleProfileFinished")
+  def prependOnceListener(
+    event: "Profiler.consoleProfileFinished",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileFinishedEventDataType], Unit]
+  ): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_HeapProfilerreportHeapSnapshotProgress")
+  def prependOnceListener(
+    event: "HeapProfiler.reportHeapSnapshotProgress",
+    listener: js.Function1[/* message */ InspectorNotification[ReportHeapSnapshotProgressEventDataType], Unit]
   ): this.type = js.native
   /**
-    * Issued when detached from the worker.
+    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
     */
   @JSName("prependOnceListener")
-  def prependOnceListener_NodeWorkerdetachedFromWorker(
-    event: NodeWorkerDotdetachedFromWorker,
-    listener: js.Function1[/* message */ InspectorNotification[DetachedFromWorkerEventDataType], Unit]
+  @scala.annotation.targetName("prependOnceListener_RuntimeinspectRequested")
+  def prependOnceListener(
+    event: "Runtime.inspectRequested",
+    listener: js.Function1[/* message */ InspectorNotification[InspectRequestedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * If heap objects tracking has been started then backend regularly sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.
+    */
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_HeapProfilerlastSeenObjectId")
+  def prependOnceListener(
+    event: "HeapProfiler.lastSeenObjectId",
+    listener: js.Function1[/* message */ InspectorNotification[LastSeenObjectIdEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.
+    */
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_Debuggerpaused")
+  def prependOnceListener(
+    event: "Debugger.paused",
+    listener: js.Function1[/* message */ InspectorNotification[PausedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when console API was called.
+    */
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_RuntimeconsoleAPICalled")
+  def prependOnceListener(
+    event: "Runtime.consoleAPICalled",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleAPICalledEventDataType], Unit]
   ): this.type = js.native
   /**
     * Notifies about a new protocol message received from the session
     * (session ID is provided in attachedToWorker notification).
     */
   @JSName("prependOnceListener")
-  def prependOnceListener_NodeWorkerreceivedMessageFromWorker(
-    event: NodeWorkerDotreceivedMessageFromWorker,
+  @scala.annotation.targetName("prependOnceListener_NodeWorkerreceivedMessageFromWorker")
+  def prependOnceListener(
+    event: "NodeWorker.receivedMessageFromWorker",
     listener: js.Function1[/* message */ InspectorNotification[ReceivedMessageFromWorkerEventDataType], Unit]
   ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_ProfilerconsoleProfileFinished(
-    event: ProfilerDotconsoleProfileFinished,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileFinishedEventDataType], Unit]
-  ): this.type = js.native
   /**
-    * Sent when new profile recording is started using console.profile() call.
+    * Contains an bucket of collected trace events.
     */
   @JSName("prependOnceListener")
-  def prependOnceListener_ProfilerconsoleProfileStarted(
-    event: ProfilerDotconsoleProfileStarted,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when console API was called.
-    */
-  @JSName("prependOnceListener")
-  def prependOnceListener_RuntimeconsoleAPICalled(
-    event: RuntimeDotconsoleAPICalled,
-    listener: js.Function1[/* message */ InspectorNotification[ConsoleAPICalledEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when unhandled exception was revoked.
-    */
-  @JSName("prependOnceListener")
-  def prependOnceListener_RuntimeexceptionRevoked(
-    event: RuntimeDotexceptionRevoked,
-    listener: js.Function1[/* message */ InspectorNotification[ExceptionRevokedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when exception was thrown and unhandled.
-    */
-  @JSName("prependOnceListener")
-  def prependOnceListener_RuntimeexceptionThrown(
-    event: RuntimeDotexceptionThrown,
-    listener: js.Function1[/* message */ InspectorNotification[ExceptionThrownEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when new execution context is created.
-    */
-  @JSName("prependOnceListener")
-  def prependOnceListener_RuntimeexecutionContextCreated(
-    event: RuntimeDotexecutionContextCreated,
-    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextCreatedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when execution context is destroyed.
-    */
-  @JSName("prependOnceListener")
-  def prependOnceListener_RuntimeexecutionContextDestroyed(
-    event: RuntimeDotexecutionContextDestroyed,
-    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextDestroyedEventDataType], Unit]
-  ): this.type = js.native
-  /**
-    * Issued when all executionContexts were cleared in browser
-    */
-  @JSName("prependOnceListener")
-  def prependOnceListener_RuntimeexecutionContextsCleared(event: RuntimeDotexecutionContextsCleared, listener: js.Function0[Unit]): this.type = js.native
-  /**
-    * Issued when object should be inspected (for example, as a result of inspect() command line API call).
-    */
-  @JSName("prependOnceListener")
-  def prependOnceListener_RuntimeinspectRequested(
-    event: RuntimeDotinspectRequested,
-    listener: js.Function1[/* message */ InspectorNotification[InspectRequestedEventDataType], Unit]
+  @scala.annotation.targetName("prependOnceListener_NodeTracingdataCollected")
+  def prependOnceListener(
+    event: "NodeTracing.dataCollected",
+    listener: js.Function1[/* message */ InspectorNotification[DataCollectedEventDataType], Unit]
   ): this.type = js.native
   /**
     * Emitted when any notification from the V8 Inspector is received.
     */
   @JSName("prependOnceListener")
-  def prependOnceListener_inspectorNotification(
-    event: inspectorNotification,
+  @scala.annotation.targetName("prependOnceListener_inspectorNotification")
+  def prependOnceListener(
+    event: "inspectorNotification",
     listener: js.Function1[/* message */ InspectorNotification[js.Object], Unit]
   ): this.type = js.native
+  /**
+    * Issued when new console message is added.
+    */
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_ConsolemessageAdded")
+  def prependOnceListener(
+    event: "Console.messageAdded",
+    listener: js.Function1[/* message */ InspectorNotification[MessageAddedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when attached to a worker.
+    */
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_NodeWorkerattachedToWorker")
+  def prependOnceListener(
+    event: "NodeWorker.attachedToWorker",
+    listener: js.Function1[/* message */ InspectorNotification[AttachedToWorkerEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when new execution context is created.
+    */
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_RuntimeexecutionContextCreated")
+  def prependOnceListener(
+    event: "Runtime.executionContextCreated",
+    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextCreatedEventDataType], Unit]
+  ): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_HeapProfileraddHeapSnapshotChunk")
+  def prependOnceListener(
+    event: "HeapProfiler.addHeapSnapshotChunk",
+    listener: js.Function1[/* message */ InspectorNotification[AddHeapSnapshotChunkEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when detached from the worker.
+    */
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_NodeWorkerdetachedFromWorker")
+  def prependOnceListener(
+    event: "NodeWorker.detachedFromWorker",
+    listener: js.Function1[/* message */ InspectorNotification[DetachedFromWorkerEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when execution context is destroyed.
+    */
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_RuntimeexecutionContextDestroyed")
+  def prependOnceListener(
+    event: "Runtime.executionContextDestroyed",
+    listener: js.Function1[/* message */ InspectorNotification[ExecutionContextDestroyedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Issued when unhandled exception was revoked.
+    */
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_RuntimeexceptionRevoked")
+  def prependOnceListener(
+    event: "Runtime.exceptionRevoked",
+    listener: js.Function1[/* message */ InspectorNotification[ExceptionRevokedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Sent when new profile recording is started using console.profile() call.
+    */
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_ProfilerconsoleProfileStarted")
+  def prependOnceListener(
+    event: "Profiler.consoleProfileStarted",
+    listener: js.Function1[/* message */ InspectorNotification[ConsoleProfileStartedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when virtual machine fails to parse the script.
+    */
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_DebuggerscriptFailedToParse")
+  def prependOnceListener(
+    event: "Debugger.scriptFailedToParse",
+    listener: js.Function1[/* message */ InspectorNotification[ScriptFailedToParseEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.
+    */
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_DebuggerscriptParsed")
+  def prependOnceListener(
+    event: "Debugger.scriptParsed",
+    listener: js.Function1[/* message */ InspectorNotification[ScriptParsedEventDataType], Unit]
+  ): this.type = js.native
+  /**
+    * Fired when breakpoint is resolved to an actual script and location.
+    */
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_DebuggerbreakpointResolved")
+  def prependOnceListener(
+    event: "Debugger.breakpointResolved",
+    listener: js.Function1[/* message */ InspectorNotification[BreakpointResolvedEventDataType], Unit]
+  ): this.type = js.native
+  def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
 }

@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.reactNative.librariesTypesCodegenTypesMod.WithDefault
 import typings.reactNative.mod.HostComponent
 import typings.reactNative.mod.ViewProps
-import typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.margin
-import typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.padding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +20,7 @@ object libTypescriptSpecsNativeSafeAreaViewMod extends Shortcut {
     
     var edges: js.UndefOr[js.Array[String]] = js.undefined
     
-    var mode: js.UndefOr[WithDefault[padding | margin, padding]] = js.undefined
+    var mode: js.UndefOr[WithDefault["padding" | "margin", "padding"]] = js.undefined
   }
   object NativeProps {
     
@@ -39,7 +37,7 @@ object libTypescriptSpecsNativeSafeAreaViewMod extends Shortcut {
       
       inline def setEdgesVarargs(value: String*): Self = StObject.set(x, "edges", js.Array(value*))
       
-      inline def setMode(value: WithDefault[padding | margin, padding]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: WithDefault["padding" | "margin", "padding"]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeNull: Self = StObject.set(x, "mode", null)
       

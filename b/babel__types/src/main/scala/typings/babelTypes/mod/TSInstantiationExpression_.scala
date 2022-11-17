@@ -1,23 +1,19 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSInstantiationExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSInstantiationExpression_
+trait TSInstantiationExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with TypeScript {
+     with BaseNode {
   
   var expression: Expression
   
   var typeParameters: TSTypeParameterInstantiation_ | Null
   
   @JSName("type")
-  var type_TSInstantiationExpression_ : TSInstantiationExpression
+  var type_TSInstantiationExpression_ : "TSInstantiationExpression"
 }
 object TSInstantiationExpression_ {
   
@@ -31,7 +27,7 @@ object TSInstantiationExpression_ {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSInstantiationExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSInstantiationExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TSTypeParameterInstantiation_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

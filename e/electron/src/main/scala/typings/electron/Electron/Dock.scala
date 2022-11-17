@@ -1,7 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.critical
-import typings.electron.electronStrings.informational
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +24,9 @@ trait Dock extends StObject {
     * @platform darwin
     */
   def bounce(): Double = js.native
-  def bounce(`type`: critical | informational): Double = js.native
+  @JSName("bounce")
+  @scala.annotation.targetName("bounce_critical_informational")
+  def bounce(`type`: "critical" | "informational"): Double = js.native
   
   /**
     * Cancel the bounce of `id`.

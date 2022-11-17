@@ -1,15 +1,12 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`10`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IfBranchNode
   extends StObject
-     with Node2
-     with ParentNode2
-     with TemplateChildNode {
+     with Node2 {
   
   var children: js.Array[TemplateChildNode]
   
@@ -18,7 +15,7 @@ trait IfBranchNode
   var isTemplateIf: js.UndefOr[Boolean] = js.undefined
   
   @JSName("type")
-  var type_IfBranchNode: `10`
+  var type_IfBranchNode: 10
   
   var userKey: js.UndefOr[AttributeNode | DirectiveNode] = js.undefined
 }
@@ -44,7 +41,7 @@ object IfBranchNode {
     
     inline def setIsTemplateIfUndefined: Self = StObject.set(x, "isTemplateIf", js.undefined)
     
-    inline def setType(value: `10`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 10): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUserKey(value: AttributeNode | DirectiveNode): Self = StObject.set(x, "userKey", value.asInstanceOf[js.Any])
     

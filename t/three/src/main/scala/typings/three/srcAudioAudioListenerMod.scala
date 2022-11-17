@@ -41,6 +41,6 @@ object srcAudioAudioListenerMod {
     var timeDelta: Double = js.native
     
     @JSName("type")
-    var type_AudioListener: typings.three.threeStrings.AudioListener = js.native
+    var type_AudioListener: "AudioListener" = js.native
   }
 }

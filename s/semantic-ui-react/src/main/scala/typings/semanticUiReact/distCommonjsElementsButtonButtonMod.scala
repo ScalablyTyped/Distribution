@@ -19,22 +19,6 @@ import typings.semanticUiReact.distCommonjsGenericMod.SemanticFLOATS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticSIZES
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
-import typings.semanticUiReact.semanticUiReactStrings.`google plus`
-import typings.semanticUiReact.semanticUiReactStrings.bottom
-import typings.semanticUiReact.semanticUiReactStrings.button
-import typings.semanticUiReact.semanticUiReactStrings.facebook
-import typings.semanticUiReact.semanticUiReactStrings.fade
-import typings.semanticUiReact.semanticUiReactStrings.instagram
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.linkedin
-import typings.semanticUiReact.semanticUiReactStrings.reset
-import typings.semanticUiReact.semanticUiReactStrings.right
-import typings.semanticUiReact.semanticUiReactStrings.submit
-import typings.semanticUiReact.semanticUiReactStrings.top
-import typings.semanticUiReact.semanticUiReactStrings.twitter
-import typings.semanticUiReact.semanticUiReactStrings.vertical
-import typings.semanticUiReact.semanticUiReactStrings.vk
-import typings.semanticUiReact.semanticUiReactStrings.youtube
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -80,13 +64,13 @@ object distCommonjsElementsButtonButtonMod {
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** A button can animate to show hidden content. */
-    var animated: js.UndefOr[Boolean | fade | vertical] = js.undefined
+    var animated: js.UndefOr[Boolean | "fade" | "vertical"] = js.undefined
     
     /** An element type to render as (string or function). */
     var as: js.UndefOr[Any] = js.undefined
     
     /** A button can be attached to other content. */
-    var attached: js.UndefOr[Boolean | left | right | top | bottom] = js.undefined
+    var attached: js.UndefOr[Boolean | "left" | "right" | "top" | "bottom"] = js.undefined
     
     /** A basic button is less pronounced. */
     var basic: js.UndefOr[Boolean] = js.undefined
@@ -97,7 +81,7 @@ object distCommonjsElementsButtonButtonMod {
     /** A button can have different colors. */
     @JSName("color")
     var color_StrictButtonProps: js.UndefOr[
-        SemanticCOLORS | facebook | (`google plus`) | vk | twitter | linkedin | instagram | youtube
+        SemanticCOLORS | "facebook" | ("google plus") | "vk" | "twitter" | "linkedin" | "instagram" | "youtube"
       ] = js.undefined
     
     /** A button can reduce its padding to fit into tighter spaces. */
@@ -122,7 +106,7 @@ object distCommonjsElementsButtonButtonMod {
     var label: js.UndefOr[SemanticShorthandItem[LabelProps]] = js.undefined
     
     /** A labeled button can format a Label or Icon to appear on the left or right. */
-    var labelPosition: js.UndefOr[right | left] = js.undefined
+    var labelPosition: js.UndefOr["right" | "left"] = js.undefined
     
     /** A button can show a loading indicator. */
     var loading: js.UndefOr[Boolean] = js.undefined
@@ -166,10 +150,6 @@ object distCommonjsElementsButtonButtonMod {
     
     /** A button can be formatted to toggle on and off. */
     var toggle: js.UndefOr[Boolean] = js.undefined
-    
-    /** The type of the HTML element. */
-    @JSName("type")
-    var type_StrictButtonProps: js.UndefOr[submit | reset | button] = js.undefined
   }
   object StrictButtonProps {
     
@@ -184,7 +164,7 @@ object distCommonjsElementsButtonButtonMod {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAnimated(value: Boolean | fade | vertical): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+      inline def setAnimated(value: Boolean | "fade" | "vertical"): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
       inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
       
@@ -192,7 +172,7 @@ object distCommonjsElementsButtonButtonMod {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAttached(value: Boolean | left | right | top | bottom): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: Boolean | "left" | "right" | "top" | "bottom"): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
       inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       
@@ -204,7 +184,9 @@ object distCommonjsElementsButtonButtonMod {
       
       inline def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
       
-      inline def setColor(value: SemanticCOLORS | facebook | (`google plus`) | vk | twitter | linkedin | instagram | youtube): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(
+        value: SemanticCOLORS | "facebook" | ("google plus") | "vk" | "twitter" | "linkedin" | "instagram" | "youtube"
+      ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
@@ -242,7 +224,7 @@ object distCommonjsElementsButtonButtonMod {
         value: (/* component */ ElementType[LabelProps], LabelProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "label", js.Any.fromFunction3(value))
       
-      inline def setLabelPosition(value: right | left): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+      inline def setLabelPosition(value: "right" | "left"): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
       
       inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
       
@@ -289,10 +271,6 @@ object distCommonjsElementsButtonButtonMod {
       inline def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
       
       inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
-      
-      inline def setType(value: submit | reset | button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

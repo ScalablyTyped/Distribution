@@ -1,21 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.ObjectExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ObjectExpression_
+trait ObjectExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with Standardized {
+     with BaseNode {
   
   var properties: js.Array[ObjectMethod_ | ObjectProperty_ | SpreadElement_]
   
   @JSName("type")
-  var type_ObjectExpression_ : ObjectExpression
+  var type_ObjectExpression_ : "ObjectExpression"
 }
 object ObjectExpression_ {
   
@@ -31,6 +27,6 @@ object ObjectExpression_ {
     
     inline def setPropertiesVarargs(value: (ObjectMethod_ | ObjectProperty_ | SpreadElement_)*): Self = StObject.set(x, "properties", js.Array(value*))
     
-    inline def setType(value: ObjectExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ObjectExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

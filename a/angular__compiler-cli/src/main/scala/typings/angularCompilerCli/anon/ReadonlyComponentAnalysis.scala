@@ -3,7 +3,6 @@ package typings.angularCompilerCli.anon
 import typings.angularCompiler.mod.AnimationTriggerNames
 import typings.angularCompiler.mod.R3ClassMetadata
 import typings.angularCompiler.mod.SchemaMetadata
-import typings.angularCompilerCli.angularCompilerCliStrings.dynamic
 import typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcResourcesMod.ParsedTemplateWithSource
 import typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcResourcesMod.StyleUrlMeta
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
@@ -23,7 +22,7 @@ trait ReadonlyComponentAnalysis extends StObject {
   
   val animationTriggerNames: js.UndefOr[AnimationTriggerNames | Null] = js.undefined
   
-  val baseClass: js.UndefOr[Reference[ClassDeclaration[DeclarationNode]] | dynamic | Null] = js.undefined
+  val baseClass: js.UndefOr[Reference[ClassDeclaration[DeclarationNode]] | "dynamic" | Null] = js.undefined
   
   val classMetadata: js.UndefOr[R3ClassMetadata | Null] = js.undefined
   
@@ -80,7 +79,7 @@ object ReadonlyComponentAnalysis {
     
     inline def setAnimationTriggerNamesUndefined: Self = StObject.set(x, "animationTriggerNames", js.undefined)
     
-    inline def setBaseClass(value: Reference[ClassDeclaration[DeclarationNode]] | dynamic): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
+    inline def setBaseClass(value: Reference[ClassDeclaration[DeclarationNode]] | "dynamic"): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
     
     inline def setBaseClassNull: Self = StObject.set(x, "baseClass", null)
     

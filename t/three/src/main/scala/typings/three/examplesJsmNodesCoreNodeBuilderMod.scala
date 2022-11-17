@@ -25,20 +25,15 @@ object examplesJsmNodesCoreNodeBuilderMod {
     extends StObject
        with NodeBuilder
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.three.threeStrings.construct
-    - typings.three.threeStrings.analyze
-    - typings.three.threeStrings.generate
-  */
-  trait BuildStageOption extends StObject
   object BuildStageOption {
     
-    inline def analyze: typings.three.threeStrings.analyze = "analyze".asInstanceOf[typings.three.threeStrings.analyze]
+    inline def analyze: "analyze" = "analyze".asInstanceOf["analyze"]
     
-    inline def construct: typings.three.threeStrings.construct = "construct".asInstanceOf[typings.three.threeStrings.construct]
+    inline def construct: "construct" = "construct".asInstanceOf["construct"]
     
-    inline def generate: typings.three.threeStrings.generate = "generate".asInstanceOf[typings.three.threeStrings.generate]
+    inline def generate: "generate" = "generate".asInstanceOf["generate"]
   }
+  type BuildStageOption = "construct" | "analyze" | "generate"
   
   trait FlowData extends StObject {
     

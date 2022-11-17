@@ -2,9 +2,6 @@ package typings.rcPicker
 
 import typings.rcPicker.anon.Label
 import typings.rcPicker.esGenerateMod.GenerateConfig
-import typings.rcPicker.rcPickerStrings.key
-import typings.rcPicker.rcPickerStrings.mouse
-import typings.rcPicker.rcPickerStrings.submit
 import typings.react.mod.ComponentType
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
@@ -265,34 +262,25 @@ object esInterfaceMod {
   
   type OnPanelChange[DateType] = js.Function2[/* value */ DateType, /* mode */ PanelMode, Unit]
   
-  type OnSelect[DateType] = js.Function2[/* value */ DateType, /* type */ key | mouse | submit, Unit]
+  type OnSelect[DateType] = js.Function2[/* value */ DateType, /* type */ "key" | "mouse" | "submit", Unit]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcPicker.rcPickerStrings.time
-    - typings.rcPicker.rcPickerStrings.date
-    - typings.rcPicker.rcPickerStrings.week
-    - typings.rcPicker.rcPickerStrings.month
-    - typings.rcPicker.rcPickerStrings.quarter
-    - typings.rcPicker.rcPickerStrings.year
-    - typings.rcPicker.rcPickerStrings.decade
-  */
-  trait PanelMode extends StObject
   object PanelMode {
     
-    inline def date: typings.rcPicker.rcPickerStrings.date = "date".asInstanceOf[typings.rcPicker.rcPickerStrings.date]
+    inline def date: "date" = "date".asInstanceOf["date"]
     
-    inline def decade: typings.rcPicker.rcPickerStrings.decade = "decade".asInstanceOf[typings.rcPicker.rcPickerStrings.decade]
+    inline def decade: "decade" = "decade".asInstanceOf["decade"]
     
-    inline def month: typings.rcPicker.rcPickerStrings.month = "month".asInstanceOf[typings.rcPicker.rcPickerStrings.month]
+    inline def month: "month" = "month".asInstanceOf["month"]
     
-    inline def quarter: typings.rcPicker.rcPickerStrings.quarter = "quarter".asInstanceOf[typings.rcPicker.rcPickerStrings.quarter]
+    inline def quarter: "quarter" = "quarter".asInstanceOf["quarter"]
     
-    inline def time: typings.rcPicker.rcPickerStrings.time = "time".asInstanceOf[typings.rcPicker.rcPickerStrings.time]
+    inline def time: "time" = "time".asInstanceOf["time"]
     
-    inline def week: typings.rcPicker.rcPickerStrings.week = "week".asInstanceOf[typings.rcPicker.rcPickerStrings.week]
+    inline def week: "week" = "week".asInstanceOf["week"]
     
-    inline def year: typings.rcPicker.rcPickerStrings.year = "year".asInstanceOf[typings.rcPicker.rcPickerStrings.year]
+    inline def year: "year" = "year".asInstanceOf["year"]
   }
+  type PanelMode = "time" | "date" | "week" | "month" | "quarter" | "year" | "decade"
   
   trait PanelRefProps extends StObject {
     
@@ -366,30 +354,22 @@ object esInterfaceMod {
     var viewDate: DateType = js.native
   }
   
-  /* Inlined std.Exclude<rc-picker.rc-picker/es/interface.PanelMode, 'datetime' | 'decade'> */
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcPicker.rcPickerStrings.date
-    - typings.rcPicker.rcPickerStrings.time
-    - typings.rcPicker.rcPickerStrings.quarter
-    - typings.rcPicker.rcPickerStrings.week
-    - typings.rcPicker.rcPickerStrings.year
-    - typings.rcPicker.rcPickerStrings.month
-  */
-  trait PickerMode extends StObject
   object PickerMode {
     
-    inline def date: typings.rcPicker.rcPickerStrings.date = "date".asInstanceOf[typings.rcPicker.rcPickerStrings.date]
+    inline def date: "date" = "date".asInstanceOf["date"]
     
-    inline def month: typings.rcPicker.rcPickerStrings.month = "month".asInstanceOf[typings.rcPicker.rcPickerStrings.month]
+    inline def month: "month" = "month".asInstanceOf["month"]
     
-    inline def quarter: typings.rcPicker.rcPickerStrings.quarter = "quarter".asInstanceOf[typings.rcPicker.rcPickerStrings.quarter]
+    inline def quarter: "quarter" = "quarter".asInstanceOf["quarter"]
     
-    inline def time: typings.rcPicker.rcPickerStrings.time = "time".asInstanceOf[typings.rcPicker.rcPickerStrings.time]
+    inline def time: "time" = "time".asInstanceOf["time"]
     
-    inline def week: typings.rcPicker.rcPickerStrings.week = "week".asInstanceOf[typings.rcPicker.rcPickerStrings.week]
+    inline def week: "week" = "week".asInstanceOf["week"]
     
-    inline def year: typings.rcPicker.rcPickerStrings.year = "year".asInstanceOf[typings.rcPicker.rcPickerStrings.year]
+    inline def year: "year" = "year".asInstanceOf["year"]
   }
+  /* Inlined std.Exclude<rc-picker.rc-picker/es/interface.PanelMode, 'datetime' | 'decade'> */
+  type PickerMode = "date" | "time" | "quarter" | "week" | "year" | "month"
   
   type RangeList = js.Array[Label]
   

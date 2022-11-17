@@ -1,15 +1,12 @@
 package typings.node.streamWebMod
 
-import typings.node.nodeBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadableStreamDefaultReadValueResult[T]
-  extends StObject
-     with ReadableStreamDefaultReadResult[T] {
+trait ReadableStreamDefaultReadValueResult[T] extends StObject {
   
-  var done: `false`
+  var done: false
   
   var value: T
 }
@@ -22,7 +19,7 @@ object ReadableStreamDefaultReadValueResult {
   
   extension [Self <: ReadableStreamDefaultReadValueResult[?], T](x: Self & ReadableStreamDefaultReadValueResult[T]) {
     
-    inline def setDone(value: `false`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: false): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
     inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

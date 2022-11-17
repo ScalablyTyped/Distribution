@@ -8,9 +8,6 @@ import typings.react.mod.RefAttributes
 import typings.reactNativeGestureHandler.anon.ForceTouchAvailable
 import typings.reactNativeGestureHandler.anon.TypeofForceTouchFallback
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.BaseGestureHandlerProps_
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.feedbackOnActivation
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.maxForce
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minForce
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +21,7 @@ object libTypescriptHandlersForceTouchGestureHandlerMod {
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/ForceTouchGestureHandler", "forceTouchGestureHandlerProps")
   @js.native
-  val forceTouchGestureHandlerProps: js.Tuple3[minForce, maxForce, feedbackOnActivation] = js.native
+  val forceTouchGestureHandlerProps: js.Tuple3["minForce", "maxForce", "feedbackOnActivation"] = js.native
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/ForceTouchGestureHandler", "forceTouchHandlerName")
   @js.native

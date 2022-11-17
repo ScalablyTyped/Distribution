@@ -6,10 +6,6 @@ import typings.electron.Electron.HeapStatistics
 import typings.electron.Electron.IOCounters
 import typings.electron.Electron.ProcessMemoryInfo
 import typings.electron.Electron.SystemMemoryInfo
-import typings.electron.electronStrings.browser_
-import typings.electron.electronStrings.loaded
-import typings.electron.electronStrings.renderer
-import typings.electron.electronStrings.worker
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +19,8 @@ object NodeJS {
        with EventEmitter {
     
     @JSName("addListener")
-    def addListener_loaded(event: loaded, listener: js.Function): this.type = js.native
+    @scala.annotation.targetName("addListener_loaded")
+    def addListener(event: "loaded", listener: js.Function): this.type = js.native
     
     /**
       * A `string` representing Chrome's version string.
@@ -184,13 +181,16 @@ object NodeJS {
       * beginning to load the web page or the main script.
       */
     @JSName("on")
-    def on_loaded(event: loaded, listener: js.Function): this.type = js.native
+    @scala.annotation.targetName("on_loaded")
+    def on(event: "loaded", listener: js.Function): this.type = js.native
     
     @JSName("once")
-    def once_loaded(event: loaded, listener: js.Function): this.type = js.native
+    @scala.annotation.targetName("once_loaded")
+    def once(event: "loaded", listener: js.Function): this.type = js.native
     
     @JSName("removeListener")
-    def removeListener_loaded(event: loaded, listener: js.Function): this.type = js.native
+    @scala.annotation.targetName("removeListener_loaded")
+    def removeListener(event: "loaded", listener: js.Function): this.type = js.native
     
     /**
       * A `string` representing the path to the resources directory.
@@ -251,7 +251,7 @@ object NodeJS {
       * * `worker` - In a web worker
       *
       */
-    val `type`: browser_ | renderer | worker = js.native
+    val `type`: "browser" | "renderer" | "worker" = js.native
     
     /**
       * A `boolean`. If the app is running as a Windows Store app (appx), this property

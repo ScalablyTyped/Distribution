@@ -24,6 +24,8 @@ trait TypeofR3Identifiers
   
   var FactoryTarget: ExternalReference = js.native
   
+  var HostDirectivesFeature: ExternalReference = js.native
+  
   var InheritDefinitionFeature: ExternalReference = js.native
   
   var InjectableDeclaration: ExternalReference = js.native
@@ -353,6 +355,8 @@ trait TypeofR3Identifiers
   var trustConstantHtml: ExternalReference = js.native
   
   var trustConstantResourceUrl: ExternalReference = js.native
+  
+  var validateIframeAttribute: ExternalReference = js.native
   
   var viewQuery: ExternalReference = js.native
   

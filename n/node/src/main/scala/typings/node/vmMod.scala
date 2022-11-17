@@ -4,7 +4,6 @@ import typings.node.NodeJS.Dict
 import typings.node.anon.JsMemoryEstimate
 import typings.node.anon.Strings
 import typings.node.bufferMod.global.Buffer
-import typings.node.nodeStrings.afterEvaluate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -511,7 +510,7 @@ object vmMod {
     /**
       * If set to `afterEvaluate`, microtasks will be run immediately after the script has run.
       */
-    var microtaskMode: js.UndefOr[afterEvaluate] = js.undefined
+    var microtaskMode: js.UndefOr["afterEvaluate"] = js.undefined
     
     /**
       * Human-readable name of the newly created context.
@@ -541,7 +540,7 @@ object vmMod {
       
       inline def setCodeGenerationUndefined: Self = StObject.set(x, "codeGeneration", js.undefined)
       
-      inline def setMicrotaskMode(value: afterEvaluate): Self = StObject.set(x, "microtaskMode", value.asInstanceOf[js.Any])
+      inline def setMicrotaskMode(value: "afterEvaluate"): Self = StObject.set(x, "microtaskMode", value.asInstanceOf[js.Any])
       
       inline def setMicrotaskModeUndefined: Self = StObject.set(x, "microtaskMode", js.undefined)
       
@@ -555,17 +554,13 @@ object vmMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.node.nodeStrings.summary
-    - typings.node.nodeStrings.detailed
-  */
-  trait MeasureMemoryMode extends StObject
   object MeasureMemoryMode {
     
-    inline def detailed: typings.node.nodeStrings.detailed = "detailed".asInstanceOf[typings.node.nodeStrings.detailed]
+    inline def detailed: "detailed" = "detailed".asInstanceOf["detailed"]
     
-    inline def summary: typings.node.nodeStrings.summary = "summary".asInstanceOf[typings.node.nodeStrings.summary]
+    inline def summary: "summary" = "summary".asInstanceOf["summary"]
   }
+  type MeasureMemoryMode = "summary" | "detailed"
   
   trait MeasureMemoryOptions extends StObject {
     
@@ -633,7 +628,7 @@ object vmMod {
     /**
       * If set to `afterEvaluate`, microtasks will be run immediately after the script has run.
       */
-    var microtaskMode: js.UndefOr[afterEvaluate] = js.undefined
+    var microtaskMode: js.UndefOr["afterEvaluate"] = js.undefined
     
     /**
       * Specifies the number of milliseconds to execute code before terminating execution.
@@ -658,7 +653,7 @@ object vmMod {
       
       inline def setDisplayErrorsUndefined: Self = StObject.set(x, "displayErrors", js.undefined)
       
-      inline def setMicrotaskMode(value: afterEvaluate): Self = StObject.set(x, "microtaskMode", value.asInstanceOf[js.Any])
+      inline def setMicrotaskMode(value: "afterEvaluate"): Self = StObject.set(x, "microtaskMode", value.asInstanceOf[js.Any])
       
       inline def setMicrotaskModeUndefined: Self = StObject.set(x, "microtaskMode", js.undefined)
       

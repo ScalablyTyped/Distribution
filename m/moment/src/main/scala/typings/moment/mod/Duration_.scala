@@ -6,10 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Duration_
-  extends StObject
-     with _DurationInputArg1
-     with _LocaleSpecifier {
+trait Duration_ extends StObject {
   
   def abs(): Duration_ = js.native
   

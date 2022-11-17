@@ -1,7 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngSwitchDefault]`
 import typings.angularCommon.anon.Host
 import typings.angularCore.mod.TemplateRef
 import typings.angularCore.mod.ViewContainerRef
@@ -27,24 +25,26 @@ object NgSwitchDefault {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     NgSwitchDefault, 
-    `[ngSwitchDefault]`, 
+    "[ngSwitchDefault]", 
     scala.Nothing, 
     js.Object, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       NgSwitchDefault, 
-      `[ngSwitchDefault]`, 
+      "[ngSwitchDefault]", 
       scala.Nothing, 
       js.Object, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      true, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

@@ -31,16 +31,7 @@ object distCommonjsCollectionsGridGridColumnMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - typings.semanticUiReact.semanticUiReactStrings.computer
-    - typings.semanticUiReact.semanticUiReactStrings.largeScreen
-    - typings.semanticUiReact.semanticUiReactStrings.mobile
-    - typings.semanticUiReact.semanticUiReactStrings.`tablet mobile`
-    - typings.semanticUiReact.semanticUiReactStrings.tablet
-    - typings.semanticUiReact.semanticUiReactStrings.widescreen
-  */
-  type GridOnlyProp = _GridOnlyProp | String
+  type GridOnlyProp = String | "computer" | "largeScreen" | "mobile" | ("tablet mobile") | "tablet" | "widescreen"
   
   trait StrictGridColumnProps extends StObject {
     
@@ -159,8 +150,6 @@ object distCommonjsCollectionsGridGridColumnMod extends Shortcut {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
-  
-  trait _GridOnlyProp extends StObject
   
   type _To = FC[GridColumnProps]
   

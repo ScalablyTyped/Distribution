@@ -2,7 +2,6 @@ package typings.three
 
 import typings.three.anon.FullHeight
 import typings.three.srcCamerasCameraMod.Camera
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +42,7 @@ object srcCamerasOrthographicCameraMod {
       */
     var far: Double = js.native
     
-    val isOrthographicCamera: `true` = js.native
+    val isOrthographicCamera: true = js.native
     
     /**
       * Camera frustum left plane.
@@ -81,7 +80,7 @@ object srcCamerasOrthographicCameraMod {
     var top: Double = js.native
     
     @JSName("type")
-    var type_OrthographicCamera: typings.three.threeStrings.OrthographicCamera = js.native
+    var type_OrthographicCamera: "OrthographicCamera" = js.native
     
     /**
       * Updates the camera projection matrix. Must be called after change of parameters.

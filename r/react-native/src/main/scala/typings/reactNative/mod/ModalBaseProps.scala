@@ -1,8 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.fade
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.slide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +18,7 @@ trait ModalBaseProps extends StObject {
     * - `fade` fades into view
     * - `none` appears without an animation
     */
-  var animationType: js.UndefOr[none | slide | fade] = js.undefined
+  var animationType: js.UndefOr["none" | "slide" | "fade"] = js.undefined
   
   /**
     * The `onRequestClose` callback is called when the user taps the hardware back button on Android or the menu button on Apple TV.
@@ -59,7 +56,7 @@ object ModalBaseProps {
     
     inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
-    inline def setAnimationType(value: none | slide | fade): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
+    inline def setAnimationType(value: "none" | "slide" | "fade"): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
     
     inline def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
     

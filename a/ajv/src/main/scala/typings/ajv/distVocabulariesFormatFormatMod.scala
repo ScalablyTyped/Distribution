@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.format
 import typings.ajv.anon.Data
 import typings.ajv.anon.Format
 import typings.ajv.distTypesMod.CodeKeywordDefinition
@@ -16,7 +15,7 @@ object distVocabulariesFormatFormatMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type FormatError = ErrorObject[format, Format, String | Data]
+  type FormatError = ErrorObject["format", Format, String | Data]
   
   type _To = CodeKeywordDefinition
   

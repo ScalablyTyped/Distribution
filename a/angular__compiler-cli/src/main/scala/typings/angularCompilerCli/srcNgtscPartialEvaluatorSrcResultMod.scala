@@ -16,9 +16,7 @@ object srcNgtscPartialEvaluatorSrcResultMod {
   
   @JSImport("@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result", "EnumValue")
   @js.native
-  open class EnumValue protected ()
-    extends StObject
-       with _ResolvedValue {
+  open class EnumValue protected () extends StObject {
     def this(enumRef: Reference[Declaration], name: String, resolved: ResolvedValue) = this()
     
     val enumRef: Reference[Declaration] = js.native
@@ -30,18 +28,14 @@ object srcNgtscPartialEvaluatorSrcResultMod {
   
   /* note: abstract class */ @JSImport("@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result", "KnownFn")
   @js.native
-  open class KnownFn ()
-    extends StObject
-       with _ResolvedValue {
+  open class KnownFn () extends StObject {
     
     def evaluate(node: CallExpression, args: ResolvedValueArray): ResolvedValue = js.native
   }
   
   @JSImport("@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result", "ResolvedModule")
   @js.native
-  open class ResolvedModule protected ()
-    extends StObject
-       with _ResolvedValue {
+  open class ResolvedModule protected () extends StObject {
     def this(
       exports: Map[
             String, 
@@ -62,23 +56,8 @@ object srcNgtscPartialEvaluatorSrcResultMod {
     def getExports(): ResolvedValueMap = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - scala.Double
-    - scala.Boolean
-    - java.lang.String
-    - scala.Null
-    - scala.Unit
-    - typings.angularCompilerCli.srcNgtscImportsMod.Reference[typings.typescript.mod.Node]
-    - typings.angularCompilerCli.srcNgtscPartialEvaluatorSrcResultMod.EnumValue
-    - typings.angularCompilerCli.srcNgtscPartialEvaluatorSrcResultMod.ResolvedValueArray
-    - typings.angularCompilerCli.srcNgtscPartialEvaluatorSrcResultMod.ResolvedValueMap
-    - typings.angularCompilerCli.srcNgtscPartialEvaluatorSrcResultMod.ResolvedModule
-    - typings.angularCompilerCli.srcNgtscPartialEvaluatorSrcResultMod.KnownFn
-    - typings.angularCompilerCli.srcNgtscPartialEvaluatorSrcSyntheticMod.SyntheticValue[scala.Any]
-    - typings.angularCompilerCli.srcNgtscPartialEvaluatorSrcDynamicMod.DynamicValue[scala.Any]
-  */
   type ResolvedValue = js.UndefOr[
-    _ResolvedValue | Reference[Node] | SyntheticValue[Any] | DynamicValue[Any] | Double | Boolean | String | Null
+    Double | Boolean | String | Null | Reference[Node] | EnumValue | ResolvedValueArray | ResolvedValueMap | ResolvedModule | KnownFn | SyntheticValue[Any] | DynamicValue[Any]
   ]
   
   /** 
@@ -95,7 +74,6 @@ object srcNgtscPartialEvaluatorSrcResultMod {
   trait ResolvedValueArray
     extends StObject
        with Array[ResolvedValue]
-       with _ResolvedValue
   
   /** 
   NOTE: Rewritten from type alias:
@@ -112,7 +90,4 @@ object srcNgtscPartialEvaluatorSrcResultMod {
   trait ResolvedValueMap
     extends StObject
        with Map[String, ResolvedValue]
-       with _ResolvedValue
-  
-  trait _ResolvedValue extends StObject
 }

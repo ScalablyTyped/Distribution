@@ -1,12 +1,6 @@
 package typings.angularDevkitSchematics
 
 import typings.angularDevkitCore.mod.logging.Logger
-import typings.angularDevkitSchematics.angularDevkitSchematicsStrings.`post-tasks-end`
-import typings.angularDevkitSchematics.angularDevkitSchematicsStrings.`post-tasks-start`
-import typings.angularDevkitSchematics.angularDevkitSchematicsStrings.`workflow-end`
-import typings.angularDevkitSchematics.angularDevkitSchematicsStrings.`workflow-start`
-import typings.angularDevkitSchematics.angularDevkitSchematicsStrings.end
-import typings.angularDevkitSchematics.angularDevkitSchematicsStrings.start
 import typings.angularDevkitSchematics.anon.PartialWorkflowExecutionC
 import typings.angularDevkitSchematics.anon.ReadonlyWorkflowExecution
 import typings.rxjs.mod.Observable_
@@ -18,18 +12,18 @@ object srcWorkflowInterfaceMod {
   
   trait LifeCycleEvent extends StObject {
     
-    var kind: start | end | `workflow-start` | `workflow-end` | `post-tasks-start` | `post-tasks-end`
+    var kind: "start" | "end" | "workflow-start" | "workflow-end" | "post-tasks-start" | "post-tasks-end"
   }
   object LifeCycleEvent {
     
-    inline def apply(kind: start | end | `workflow-start` | `workflow-end` | `post-tasks-start` | `post-tasks-end`): LifeCycleEvent = {
+    inline def apply(kind: "start" | "end" | "workflow-start" | "workflow-end" | "post-tasks-start" | "post-tasks-end"): LifeCycleEvent = {
       val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
       __obj.asInstanceOf[LifeCycleEvent]
     }
     
     extension [Self <: LifeCycleEvent](x: Self) {
       
-      inline def setKind(value: start | end | `workflow-start` | `workflow-end` | `post-tasks-start` | `post-tasks-end`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: "start" | "end" | "workflow-start" | "workflow-end" | "post-tasks-start" | "post-tasks-end"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }
   }
   

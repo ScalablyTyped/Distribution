@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JsonMinusNumericLiteral
   extends StObject
-     with PrefixUnaryExpression
-     with JsonObjectExpression {
+     with PrefixUnaryExpression {
   
   @JSName("operand")
   val operand_JsonMinusNumericLiteral: NumericLiteral = js.native

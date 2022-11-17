@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait TStylingRange extends StObject {
   
-  var __brand__ : typings.angularCore.angularCoreStrings.TStylingRange
+  var __brand__ : "TStylingRange"
 }
 object TStylingRange {
   
@@ -45,6 +45,6 @@ object TStylingRange {
   
   extension [Self <: TStylingRange](x: Self) {
     
-    inline def set__brand__(value: typings.angularCore.angularCoreStrings.TStylingRange): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
+    inline def set__brand__(value: "TStylingRange"): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }
 }

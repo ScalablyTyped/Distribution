@@ -3,6 +3,7 @@ package typings.remixRunRouter
 import typings.remixRunRouter.anon.PartialLocation
 import typings.remixRunRouter.anon.PartialPath
 import typings.remixRunRouter.anon.ReadonlyLocation
+import typings.std.URL
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -78,6 +79,9 @@ object distHistoryMod {
   
   inline def createPath(param0: PartialPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def createURL(location: String): URL = ^.asInstanceOf[js.Dynamic].applyDynamic("createURL")(location.asInstanceOf[js.Any]).asInstanceOf[URL]
+  inline def createURL(location: Location): URL = ^.asInstanceOf[js.Dynamic].applyDynamic("createURL")(location.asInstanceOf[js.Any]).asInstanceOf[URL]
+  
   inline def parsePath(path: String): PartialPath = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any]).asInstanceOf[PartialPath]
   
   type BrowserHistory = UrlHistory
@@ -104,6 +108,15 @@ object distHistoryMod {
       * @param to - The destination URL
       */
     def createHref(to: To): String = js.native
+    
+    /**
+      * Encode a location the same way window.history would do (no-op for memory
+      * history) so we ensure our PUSH/REPLAC e navigations for data routers
+      * behave the same as POP
+      *
+      * @param location The incoming location from router.navigate()
+      */
+    def encodeLocation(location: Location): Location = js.native
     
     /**
       * Navigates `n` entries backward/forward in the history stack relative to the

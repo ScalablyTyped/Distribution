@@ -1,6 +1,5 @@
 package typings.typescript.mod
 
-import typings.typescript.typescriptStrings.characterTyped
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Signals that the signature help request came from a user typing a character.
   * Depending on the character and the syntactic context, the request may or may not be served a result.
   */
-trait SignatureHelpCharacterTypedReason
-  extends StObject
-     with SignatureHelpTriggerReason {
+trait SignatureHelpCharacterTypedReason extends StObject {
   
-  var kind: characterTyped
+  var kind: "characterTyped"
   
   /**
     * Character that was responsible for triggering signature help.
@@ -29,7 +26,7 @@ object SignatureHelpCharacterTypedReason {
   
   extension [Self <: SignatureHelpCharacterTypedReason](x: Self) {
     
-    inline def setKind(value: characterTyped): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "characterTyped"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setTriggerCharacter(value: SignatureHelpTriggerCharacter): Self = StObject.set(x, "triggerCharacter", value.asInstanceOf[js.Any])
   }

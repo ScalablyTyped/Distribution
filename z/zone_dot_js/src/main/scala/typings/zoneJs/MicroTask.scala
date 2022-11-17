@@ -1,6 +1,5 @@
 package typings.zoneJs
 
-import typings.zoneJs.zoneJsStrings.microTask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait MicroTask
      with Task {
   
   @JSName("type")
-  var type_MicroTask: microTask
+  var type_MicroTask: "microTask"
 }
 object MicroTask {
   
@@ -30,6 +29,6 @@ object MicroTask {
   
   extension [Self <: MicroTask](x: Self) {
     
-    inline def setType(value: microTask): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "microTask"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

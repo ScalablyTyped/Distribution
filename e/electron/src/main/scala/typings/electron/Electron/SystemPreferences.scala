@@ -1,36 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`accent-color-changed`
-import typings.electron.electronStrings.`color-changed`
-import typings.electron.electronStrings.`high-contrast-color-scheme-changed`
-import typings.electron.electronStrings.`inverted-color-scheme-changed`
-import typings.electron.electronStrings.`not-determined`
-import typings.electron.electronStrings.array
-import typings.electron.electronStrings.blue
-import typings.electron.electronStrings.boolean
-import typings.electron.electronStrings.brown
-import typings.electron.electronStrings.camera
-import typings.electron.electronStrings.dark
-import typings.electron.electronStrings.denied
-import typings.electron.electronStrings.dictionary
-import typings.electron.electronStrings.double
-import typings.electron.electronStrings.float
-import typings.electron.electronStrings.granted
-import typings.electron.electronStrings.gray
-import typings.electron.electronStrings.green
-import typings.electron.electronStrings.integer
-import typings.electron.electronStrings.light
-import typings.electron.electronStrings.microphone
-import typings.electron.electronStrings.orange
-import typings.electron.electronStrings.pink
-import typings.electron.electronStrings.purple
-import typings.electron.electronStrings.red
-import typings.electron.electronStrings.restricted
-import typings.electron.electronStrings.screen
-import typings.electron.electronStrings.string
-import typings.electron.electronStrings.unknown_
-import typings.electron.electronStrings.url
-import typings.electron.electronStrings.yellow
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -43,21 +12,25 @@ trait SystemPreferences
      with EventEmitter {
   
   @JSName("addListener")
-  def addListener_accentcolorchanged(
-    event: `accent-color-changed`,
-    listener: js.Function2[/* event */ Event, /* newColor */ String, Unit]
+  @scala.annotation.targetName("addListener_colorchanged")
+  def addListener(event: "color-changed", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_invertedcolorschemechanged")
+  def addListener(
+    event: "inverted-color-scheme-changed",
+    listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_colorchanged(event: `color-changed`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_highcontrastcolorschemechanged(
-    event: `high-contrast-color-scheme-changed`,
+  @scala.annotation.targetName("addListener_highcontrastcolorschemechanged")
+  def addListener(
+    event: "high-contrast-color-scheme-changed",
     listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ Boolean, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_invertedcolorschemechanged(
-    event: `inverted-color-scheme-changed`,
-    listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
+  @scala.annotation.targetName("addListener_accentcolorchanged")
+  def addListener(
+    event: "accent-color-changed",
+    listener: js.Function2[/* event */ Event, /* newColor */ String, Unit]
   ): this.type = js.native
   
   /**
@@ -73,7 +46,7 @@ trait SystemPreferences
     *
     * @platform darwin
     */
-  var appLevelAppearance: dark | light | unknown_ = js.native
+  var appLevelAppearance: "dark" | "light" | "unknown" = js.native
   
   /**
     * A promise that resolves with `true` if consent was granted and `false` if it was
@@ -96,7 +69,9 @@ trait SystemPreferences
     *
     * @platform darwin
     */
-  def askForMediaAccess(mediaType: microphone | camera): js.Promise[Boolean] = js.native
+  @JSName("askForMediaAccess")
+  @scala.annotation.targetName("askForMediaAccess_microphone_camera")
+  def askForMediaAccess(mediaType: "microphone" | "camera"): js.Promise[Boolean] = js.native
   
   /**
     * whether or not this device has the ability to use Touch ID.
@@ -116,7 +91,7 @@ trait SystemPreferences
     *
     * @platform darwin
     */
-  val effectiveAppearance: dark | light | unknown_ = js.native
+  val effectiveAppearance: "dark" | "light" | "unknown" = js.native
   
   /**
     * The users current system wide accent color preference in RGBA hexadecimal form.
@@ -150,7 +125,7 @@ trait SystemPreferences
     * @deprecated
     * @platform darwin
     */
-  def getAppLevelAppearance(): dark | light | unknown_ = js.native
+  def getAppLevelAppearance(): "dark" | "light" | "unknown" = js.native
   
   /**
     * The system color setting in RGB hexadecimal form (`#ABCDEF`). See the Windows
@@ -163,8 +138,10 @@ trait SystemPreferences
     *
     * @platform win32,darwin
     */
+  @JSName("getColor")
+  @scala.annotation.targetName("getColor_3ddarkshadow_3dface_3dhighlight_3dlight_3dshadow_activeborder_activecaption_activecaptiongradient_appworkspace_buttontext_captiontext_desktop_disabledtext_highlight_highlighttext_hotlight_inactiveborder_inactivecaption_inactivecaptiongradient_inactivecaptiontext_infobackground_infotext_menu_menuhighlight_menubar_menutext_scrollbar_window_windowframe_windowtext_alternateselectedcontroltext_controlbackground_control_controltext_disabledcontroltext_findhighlight_grid_headertext_keyboardfocusindicator_label_link_placeholdertext_quaternarylabel_scrubbertexturedbackground_secondarylabel_selectedcontentbackground_selectedcontrol_selectedcontroltext_selectedmenuitemtext_selectedtextbackground_selectedtext_separator_shadow_tertiarylabel_textbackground_text_underpagebackground_unemphasizedselectedcontentbackground_unemphasizedselectedtextbackground_unemphasizedselectedtext_windowbackground_windowframetext")
   def getColor(
-    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.electron.electronStrings.`3d-dark-shadow`, typings.electron.electronStrings.`3d-face`, typings.electron.electronStrings.`3d-highlight` */ Any
+    color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with "3d-dark-shadow", "3d-face", "3d-highlight" */ String
   ): String = js.native
   
   /**
@@ -175,7 +152,7 @@ trait SystemPreferences
     *
     * @platform darwin
     */
-  def getEffectiveAppearance(): dark | light | unknown_ = js.native
+  def getEffectiveAppearance(): "dark" | "light" | "unknown" = js.native
   
   /**
     * Can be `not-determined`, `granted`, `denied`, `restricted` or `unknown`.
@@ -191,7 +168,9 @@ trait SystemPreferences
     *
     * @platform win32,darwin
     */
-  def getMediaAccessStatus(mediaType: microphone | camera | screen): `not-determined` | granted | denied | restricted | unknown_ = js.native
+  @JSName("getMediaAccessStatus")
+  @scala.annotation.targetName("getMediaAccessStatus_microphone_camera_screen")
+  def getMediaAccessStatus(mediaType: "microphone" | "camera" | "screen"): "not-determined" | "granted" | "denied" | "restricted" | "unknown" = js.native
   
   /**
     * The standard system color formatted as `#RRGGBBAA`.
@@ -202,8 +181,28 @@ trait SystemPreferences
     *
     * @platform darwin
     */
-  def getSystemColor(color: blue | brown | gray | green | orange | pink | purple | red | yellow): String = js.native
+  @JSName("getSystemColor")
+  @scala.annotation.targetName("getSystemColor_blue_brown_gray_green_orange_pink_purple_red_yellow")
+  def getSystemColor(color: "blue" | "brown" | "gray" | "green" | "orange" | "pink" | "purple" | "red" | "yellow"): String = js.native
   
+  @JSName("getUserDefault")
+  @scala.annotation.targetName("getUserDefault_boolean")
+  def getUserDefault(key: String, `type`: "boolean"): Boolean = js.native
+  @JSName("getUserDefault")
+  @scala.annotation.targetName("getUserDefault_integer")
+  def getUserDefault(key: String, `type`: "integer"): Double = js.native
+  @JSName("getUserDefault")
+  @scala.annotation.targetName("getUserDefault_double")
+  def getUserDefault(key: String, `type`: "double"): Double = js.native
+  @JSName("getUserDefault")
+  @scala.annotation.targetName("getUserDefault_string")
+  def getUserDefault(key: String, `type`: "string"): String = js.native
+  @JSName("getUserDefault")
+  @scala.annotation.targetName("getUserDefault_dictionary")
+  def getUserDefault(key: String, `type`: "dictionary"): Record[String, Any] = js.native
+  @JSName("getUserDefault")
+  @scala.annotation.targetName("getUserDefault_url")
+  def getUserDefault(key: String, `type`: "url"): String = js.native
   /**
     * The value of `key` in `NSUserDefaults`.
     *
@@ -220,21 +219,11 @@ trait SystemPreferences
     * @platform darwin
     */
   @JSName("getUserDefault")
-  def getUserDefault_array(key: String, `type`: array): js.Array[Any] = js.native
+  @scala.annotation.targetName("getUserDefault_array")
+  def getUserDefault(key: String, `type`: "array"): js.Array[Any] = js.native
   @JSName("getUserDefault")
-  def getUserDefault_boolean(key: String, `type`: boolean): Boolean = js.native
-  @JSName("getUserDefault")
-  def getUserDefault_dictionary(key: String, `type`: dictionary): Record[String, Any] = js.native
-  @JSName("getUserDefault")
-  def getUserDefault_double(key: String, `type`: double): Double = js.native
-  @JSName("getUserDefault")
-  def getUserDefault_float(key: String, `type`: float): Double = js.native
-  @JSName("getUserDefault")
-  def getUserDefault_integer(key: String, `type`: integer): Double = js.native
-  @JSName("getUserDefault")
-  def getUserDefault_string(key: String, `type`: string): String = js.native
-  @JSName("getUserDefault")
-  def getUserDefault_url(key: String, `type`: url): String = js.native
+  @scala.annotation.targetName("getUserDefault_float")
+  def getUserDefault(key: String, `type`: "float"): Double = js.native
   
   /**
     * `true` if DWM composition (Aero Glass) is enabled, and `false` otherwise.
@@ -294,14 +283,9 @@ trait SystemPreferences
     */
   def isTrustedAccessibilityClient(prompt: Boolean): Boolean = js.native
   
-  // Docs: https://electronjs.org/docs/api/system-preferences
   @JSName("on")
-  def on_accentcolorchanged(
-    event: `accent-color-changed`,
-    listener: js.Function2[/* event */ Event, /* newColor */ String, Unit]
-  ): this.type = js.native
-  @JSName("on")
-  def on_colorchanged(event: `color-changed`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_colorchanged")
+  def on(event: "color-changed", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   /**
     * **Deprecated:** Should use the new `updated` event on the `nativeTheme` module.
     *
@@ -309,38 +293,51 @@ trait SystemPreferences
     * @platform win32
     */
   @JSName("on")
-  def on_highcontrastcolorschemechanged(
-    event: `high-contrast-color-scheme-changed`,
+  @scala.annotation.targetName("on_invertedcolorschemechanged")
+  def on(
+    event: "inverted-color-scheme-changed",
+    listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
+  ): this.type = js.native
+  /**
+    * **Deprecated:** Should use the new `updated` event on the `nativeTheme` module.
+    *
+    * @deprecated
+    * @platform win32
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_highcontrastcolorschemechanged")
+  def on(
+    event: "high-contrast-color-scheme-changed",
     listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ Boolean, Unit]
   ): this.type = js.native
-  /**
-    * **Deprecated:** Should use the new `updated` event on the `nativeTheme` module.
-    *
-    * @deprecated
-    * @platform win32
-    */
+  // Docs: https://electronjs.org/docs/api/system-preferences
   @JSName("on")
-  def on_invertedcolorschemechanged(
-    event: `inverted-color-scheme-changed`,
-    listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
+  @scala.annotation.targetName("on_accentcolorchanged")
+  def on(
+    event: "accent-color-changed",
+    listener: js.Function2[/* event */ Event, /* newColor */ String, Unit]
   ): this.type = js.native
   
   @JSName("once")
-  def once_accentcolorchanged(
-    event: `accent-color-changed`,
-    listener: js.Function2[/* event */ Event, /* newColor */ String, Unit]
-  ): this.type = js.native
+  @scala.annotation.targetName("once_colorchanged")
+  def once(event: "color-changed", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("once")
-  def once_colorchanged(event: `color-changed`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("once")
-  def once_highcontrastcolorschemechanged(
-    event: `high-contrast-color-scheme-changed`,
+  @scala.annotation.targetName("once_highcontrastcolorschemechanged")
+  def once(
+    event: "high-contrast-color-scheme-changed",
     listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ Boolean, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_invertedcolorschemechanged(
-    event: `inverted-color-scheme-changed`,
+  @scala.annotation.targetName("once_invertedcolorschemechanged")
+  def once(
+    event: "inverted-color-scheme-changed",
     listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_accentcolorchanged")
+  def once(
+    event: "accent-color-changed",
+    listener: js.Function2[/* event */ Event, /* newColor */ String, Unit]
   ): this.type = js.native
   
   /**
@@ -393,21 +390,25 @@ trait SystemPreferences
   def registerDefaults(defaults: Record[String, String | Boolean | Double]): Unit = js.native
   
   @JSName("removeListener")
-  def removeListener_accentcolorchanged(
-    event: `accent-color-changed`,
+  @scala.annotation.targetName("removeListener_colorchanged")
+  def removeListener(event: "color-changed", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_accentcolorchanged")
+  def removeListener(
+    event: "accent-color-changed",
     listener: js.Function2[/* event */ Event, /* newColor */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_colorchanged(event: `color-changed`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_highcontrastcolorschemechanged(
-    event: `high-contrast-color-scheme-changed`,
-    listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ Boolean, Unit]
+  @scala.annotation.targetName("removeListener_invertedcolorschemechanged")
+  def removeListener(
+    event: "inverted-color-scheme-changed",
+    listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_invertedcolorschemechanged(
-    event: `inverted-color-scheme-changed`,
-    listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
+  @scala.annotation.targetName("removeListener_highcontrastcolorschemechanged")
+  def removeListener(
+    event: "high-contrast-color-scheme-changed",
+    listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ Boolean, Unit]
   ): this.type = js.native
   
   /**
@@ -426,8 +427,16 @@ trait SystemPreferences
     * @platform darwin
     */
   def setAppLevelAppearance(): Unit = js.native
-  def setAppLevelAppearance(appearance: dark | light): Unit = js.native
+  @JSName("setAppLevelAppearance")
+  @scala.annotation.targetName("setAppLevelAppearance_dark_light")
+  def setAppLevelAppearance(appearance: "dark" | "light"): Unit = js.native
   
+  @JSName("setUserDefault")
+  @scala.annotation.targetName("setUserDefault_string")
+  def setUserDefault(key: String, `type`: "string", value: String): Unit = js.native
+  @JSName("setUserDefault")
+  @scala.annotation.targetName("setUserDefault_url")
+  def setUserDefault(key: String, `type`: "url", value: String): Unit = js.native
   /**
     * Set the value of `key` in `NSUserDefaults`.
     *
@@ -441,21 +450,23 @@ trait SystemPreferences
     * @platform darwin
     */
   @JSName("setUserDefault")
-  def setUserDefault_array(key: String, `type`: array, value: js.Array[Any]): Unit = js.native
+  @scala.annotation.targetName("setUserDefault_array")
+  def setUserDefault(key: String, `type`: "array", value: js.Array[Any]): Unit = js.native
   @JSName("setUserDefault")
-  def setUserDefault_boolean(key: String, `type`: boolean, value: Boolean): Unit = js.native
+  @scala.annotation.targetName("setUserDefault_boolean")
+  def setUserDefault(key: String, `type`: "boolean", value: Boolean): Unit = js.native
   @JSName("setUserDefault")
-  def setUserDefault_dictionary(key: String, `type`: dictionary, value: Record[String, Any]): Unit = js.native
+  @scala.annotation.targetName("setUserDefault_float")
+  def setUserDefault(key: String, `type`: "float", value: Double): Unit = js.native
   @JSName("setUserDefault")
-  def setUserDefault_double(key: String, `type`: double, value: Double): Unit = js.native
+  @scala.annotation.targetName("setUserDefault_integer")
+  def setUserDefault(key: String, `type`: "integer", value: Double): Unit = js.native
   @JSName("setUserDefault")
-  def setUserDefault_float(key: String, `type`: float, value: Double): Unit = js.native
+  @scala.annotation.targetName("setUserDefault_double")
+  def setUserDefault(key: String, `type`: "double", value: Double): Unit = js.native
   @JSName("setUserDefault")
-  def setUserDefault_integer(key: String, `type`: integer, value: Double): Unit = js.native
-  @JSName("setUserDefault")
-  def setUserDefault_string(key: String, `type`: string, value: String): Unit = js.native
-  @JSName("setUserDefault")
-  def setUserDefault_url(key: String, `type`: url, value: String): Unit = js.native
+  @scala.annotation.targetName("setUserDefault_dictionary")
+  def setUserDefault(key: String, `type`: "dictionary", value: Record[String, Any]): Unit = js.native
   
   /**
     * The ID of this subscription

@@ -44,5 +44,5 @@ trait I18nCreateOpCodes
      with Array[Double | String]
      with I18nDebug {
   
-  var __brand__ : typings.angularCore.angularCoreStrings.I18nCreateOpCodes = js.native
+  var __brand__ : "I18nCreateOpCodes" = js.native
 }

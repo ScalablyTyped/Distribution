@@ -97,23 +97,17 @@ object buildLogsRemoteLoggingMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.expo.expoStrings.debug
-    - typings.expo.expoStrings.info
-    - typings.expo.expoStrings.warn
-    - typings.expo.expoStrings.error
-  */
-  trait LogLevel extends StObject
   object LogLevel {
     
-    inline def debug: typings.expo.expoStrings.debug = "debug".asInstanceOf[typings.expo.expoStrings.debug]
+    inline def debug: "debug" = "debug".asInstanceOf["debug"]
     
-    inline def error: typings.expo.expoStrings.error = "error".asInstanceOf[typings.expo.expoStrings.error]
+    inline def error: "error" = "error".asInstanceOf["error"]
     
-    inline def info: typings.expo.expoStrings.info = "info".asInstanceOf[typings.expo.expoStrings.info]
+    inline def info: "info" = "info".asInstanceOf["info"]
     
-    inline def warn: typings.expo.expoStrings.warn = "warn".asInstanceOf[typings.expo.expoStrings.warn]
+    inline def warn: "warn" = "warn".asInstanceOf["warn"]
   }
+  type LogLevel = "debug" | "info" | "warn" | "error"
   
   type TransportErrorListener = js.Function1[/* event */ Error, Unit]
 }

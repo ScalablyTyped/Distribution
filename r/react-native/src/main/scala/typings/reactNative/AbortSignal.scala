@@ -2,7 +2,6 @@ package typings.reactNative
 
 import typings.reactNative.anon.Capture
 import typings.reactNative.anon.`1`
-import typings.reactNative.reactNativeStrings.abort
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,16 +18,19 @@ trait AbortSignal
   val aborted: Boolean = js.native
   
   @JSName("addEventListener")
-  def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_abort")
+  def addEventListener(`type`: "abort", listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_abort(
-    `type`: abort,
+  @scala.annotation.targetName("addEventListener_abort")
+  def addEventListener(
+    `type`: "abort",
     listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_abort(
-    `type`: abort,
+  @scala.annotation.targetName("addEventListener_abort")
+  def addEventListener(
+    `type`: "abort",
     listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any],
     options: Capture
   ): Unit = js.native
@@ -36,16 +38,19 @@ trait AbortSignal
   def onabort(event: AbortEvent): Unit = js.native
   
   @JSName("removeEventListener")
-  def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_abort")
+  def removeEventListener(`type`: "abort", listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_abort(
-    `type`: abort,
+  @scala.annotation.targetName("removeEventListener_abort")
+  def removeEventListener(
+    `type`: "abort",
     listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_abort(
-    `type`: abort,
+  @scala.annotation.targetName("removeEventListener_abort")
+  def removeEventListener(
+    `type`: "abort",
     listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any],
     options: `1`
   ): Unit = js.native

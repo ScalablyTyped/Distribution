@@ -63,8 +63,6 @@ trait Component
     *
     * More information about standalone components, directives, and pipes can be found in [this
     * guide](guide/standalone-components).
-    *
-    * @developerPreview
     */
   var imports: js.UndefOr[js.Array[Type[Any] | js.Array[Any]]] = js.undefined
   

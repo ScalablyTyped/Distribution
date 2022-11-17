@@ -5,7 +5,6 @@ import typings.three.examplesJsmLinesLineSegmentsGeometryMod.LineSegmentsGeometr
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Mesh
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ object examplesJsmLinesLineSegments2Mod {
     @JSName("geometry")
     var geometry_LineSegments2: LineSegmentsGeometry = js.native
     
-    val isLineSegments2: `true` = js.native
+    val isLineSegments2: true = js.native
     
     @JSName("material")
     var material_LineSegments2: LineMaterial = js.native

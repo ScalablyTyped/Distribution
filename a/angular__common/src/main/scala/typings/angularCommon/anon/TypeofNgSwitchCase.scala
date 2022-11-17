@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable3
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngSwitchCase]`
 import typings.angularCore.mod.TemplateRef
 import typings.angularCore.mod.ViewContainerRef
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
@@ -23,13 +21,14 @@ trait TypeofNgSwitchCase
   
   var ɵdir: ɵɵDirectiveDeclaration[
     typings.angularCommon.mod.NgSwitchCase, 
-    `[ngSwitchCase]`, 
+    "[ngSwitchCase]", 
     scala.Nothing, 
     NgSwitchCase, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[typings.angularCommon.mod.NgSwitchCase, js.Tuple3[Null, Null, Host]] = js.native

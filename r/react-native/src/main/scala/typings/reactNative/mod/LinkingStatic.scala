@@ -2,7 +2,6 @@ package typings.reactNative.mod
 
 import typings.reactNative.anon.Key
 import typings.reactNative.anon.Url
-import typings.reactNative.reactNativeStrings.url_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,8 @@ trait LinkingStatic
     * and providing the handler
     */
   @JSName("addEventListener")
-  def addEventListener_url(`type`: url_, handler: js.Function1[/* event */ Url, Unit]): EmitterSubscription = js.native
+  @scala.annotation.targetName("addEventListener_url")
+  def addEventListener(`type`: "url", handler: js.Function1[/* event */ Url, Unit]): EmitterSubscription = js.native
   
   /**
     * Determine whether or not an installed app can handle a given URL.

@@ -1,7 +1,6 @@
 package typings.node.anon
 
 import typings.node.bufferMod.global.BufferEncoding
-import typings.node.nodeBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait ObjectEncodingOptionswith extends StObject {
   
   var encoding: js.UndefOr[BufferEncoding | Null] = js.undefined
   
-  var withFileTypes: js.UndefOr[`false`] = js.undefined
+  var withFileTypes: js.UndefOr[false] = js.undefined
 }
 object ObjectEncodingOptionswith {
   
@@ -28,7 +27,7 @@ object ObjectEncodingOptionswith {
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    inline def setWithFileTypes(value: `false`): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
+    inline def setWithFileTypes(value: false): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
     
     inline def setWithFileTypesUndefined: Self = StObject.set(x, "withFileTypes", js.undefined)
   }

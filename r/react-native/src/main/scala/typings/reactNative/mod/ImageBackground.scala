@@ -2,9 +2,6 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
-import typings.reactNative.reactNativeStrings.disk
-import typings.reactNative.reactNativeStrings.diskSlashmemory
-import typings.reactNative.reactNativeStrings.memory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +25,7 @@ open class ImageBackground ()
   var queryCache: js.UndefOr[
     js.Function1[
       /* urls */ js.Array[String], 
-      js.Promise[StringDictionary[memory | disk | diskSlashmemory]]
+      js.Promise[StringDictionary["memory" | "disk" | "disk/memory"]]
     ]
   ] = js.native
   

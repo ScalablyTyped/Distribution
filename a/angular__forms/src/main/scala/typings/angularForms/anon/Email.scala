@@ -1,13 +1,12 @@
 package typings.angularForms.anon
 
-import typings.angularForms.angularFormsStrings.email
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Email extends StObject {
   
-  var email: typings.angularForms.angularFormsStrings.email
+  var email: "email"
 }
 object Email {
   
@@ -18,6 +17,6 @@ object Email {
   
   extension [Self <: Email](x: Self) {
     
-    inline def setEmail(value: email): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: "email"): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
   }
 }

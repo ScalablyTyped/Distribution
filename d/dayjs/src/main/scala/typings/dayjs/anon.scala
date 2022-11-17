@@ -3,17 +3,13 @@ package typings.dayjs
 import typings.dayjs.esmMod.ConfigType
 import typings.dayjs.esmMod.Dayjs
 import typings.dayjs.esmMod.OptionType
-import typings.dayjs.mod._ConfigType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait D
-    extends StObject
-       with _ConfigType
-       with typings.dayjs.esmMod._ConfigType {
+  trait D extends StObject {
     
     var D: js.UndefOr[Double | String] = js.undefined
     

@@ -402,48 +402,33 @@ object stylesCreateTypographyMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.h1
-    - typings.materialUiCore.materialUiCoreStrings.h2
-    - typings.materialUiCore.materialUiCoreStrings.h3
-    - typings.materialUiCore.materialUiCoreStrings.h4
-    - typings.materialUiCore.materialUiCoreStrings.h5
-    - typings.materialUiCore.materialUiCoreStrings.h6
-    - typings.materialUiCore.materialUiCoreStrings.subtitle1
-    - typings.materialUiCore.materialUiCoreStrings.subtitle2
-    - typings.materialUiCore.materialUiCoreStrings.body1
-    - typings.materialUiCore.materialUiCoreStrings.body2
-    - typings.materialUiCore.materialUiCoreStrings.caption
-    - typings.materialUiCore.materialUiCoreStrings.button
-    - typings.materialUiCore.materialUiCoreStrings.overline
-  */
-  trait Variant extends StObject
   object Variant {
     
-    inline def body1: typings.materialUiCore.materialUiCoreStrings.body1 = "body1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.body1]
+    inline def body1: "body1" = "body1".asInstanceOf["body1"]
     
-    inline def body2: typings.materialUiCore.materialUiCoreStrings.body2 = "body2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.body2]
+    inline def body2: "body2" = "body2".asInstanceOf["body2"]
     
-    inline def button: typings.materialUiCore.materialUiCoreStrings.button = "button".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.button]
+    inline def button: "button" = "button".asInstanceOf["button"]
     
-    inline def caption: typings.materialUiCore.materialUiCoreStrings.caption = "caption".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.caption]
+    inline def caption: "caption" = "caption".asInstanceOf["caption"]
     
-    inline def h1: typings.materialUiCore.materialUiCoreStrings.h1 = "h1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h1]
+    inline def h1: "h1" = "h1".asInstanceOf["h1"]
     
-    inline def h2: typings.materialUiCore.materialUiCoreStrings.h2 = "h2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h2]
+    inline def h2: "h2" = "h2".asInstanceOf["h2"]
     
-    inline def h3: typings.materialUiCore.materialUiCoreStrings.h3 = "h3".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h3]
+    inline def h3: "h3" = "h3".asInstanceOf["h3"]
     
-    inline def h4: typings.materialUiCore.materialUiCoreStrings.h4 = "h4".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h4]
+    inline def h4: "h4" = "h4".asInstanceOf["h4"]
     
-    inline def h5: typings.materialUiCore.materialUiCoreStrings.h5 = "h5".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h5]
+    inline def h5: "h5" = "h5".asInstanceOf["h5"]
     
-    inline def h6: typings.materialUiCore.materialUiCoreStrings.h6 = "h6".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h6]
+    inline def h6: "h6" = "h6".asInstanceOf["h6"]
     
-    inline def overline: typings.materialUiCore.materialUiCoreStrings.overline = "overline".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.overline]
+    inline def overline: "overline" = "overline".asInstanceOf["overline"]
     
-    inline def subtitle1: typings.materialUiCore.materialUiCoreStrings.subtitle1 = "subtitle1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subtitle1]
+    inline def subtitle1: "subtitle1" = "subtitle1".asInstanceOf["subtitle1"]
     
-    inline def subtitle2: typings.materialUiCore.materialUiCoreStrings.subtitle2 = "subtitle2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subtitle2]
+    inline def subtitle2: "subtitle2" = "subtitle2".asInstanceOf["subtitle2"]
   }
+  type Variant = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "subtitle1" | "subtitle2" | "body1" | "body2" | "caption" | "button" | "overline"
 }

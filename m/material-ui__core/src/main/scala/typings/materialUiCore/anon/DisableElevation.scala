@@ -1,11 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.contained
-import typings.materialUiCore.materialUiCoreStrings.large
-import typings.materialUiCore.materialUiCoreStrings.medium
-import typings.materialUiCore.materialUiCoreStrings.outlined
-import typings.materialUiCore.materialUiCoreStrings.small
-import typings.materialUiCore.materialUiCoreStrings.text
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -58,7 +52,7 @@ trait DisableElevation extends StObject {
     * The size of the button.
     * `small` is equivalent to the dense button styling.
     */
-  var size: js.UndefOr[small | medium | large] = js.undefined
+  var size: js.UndefOr["small" | "medium" | "large"] = js.undefined
   
   /**
     * Element placed before the children.
@@ -68,7 +62,7 @@ trait DisableElevation extends StObject {
   /**
     * The variant to use.
     */
-  var variant: js.UndefOr[text | outlined | contained] = js.undefined
+  var variant: js.UndefOr["text" | "outlined" | "contained"] = js.undefined
 }
 object DisableElevation {
   
@@ -111,7 +105,7 @@ object DisableElevation {
     
     inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    inline def setSize(value: small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "small" | "medium" | "large"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
@@ -119,7 +113,7 @@ object DisableElevation {
     
     inline def setStartIconUndefined: Self = StObject.set(x, "startIcon", js.undefined)
     
-    inline def setVariant(value: text | outlined | contained): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "text" | "outlined" | "contained"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

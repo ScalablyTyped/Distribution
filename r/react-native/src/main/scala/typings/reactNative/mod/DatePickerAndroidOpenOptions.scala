@@ -1,8 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.calendar
-import typings.reactNative.reactNativeStrings.default
-import typings.reactNative.reactNativeStrings.spinner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +12,7 @@ trait DatePickerAndroidOpenOptions extends StObject {
   
   var minDate: js.UndefOr[js.Date | Double] = js.undefined
   
-  var mode: js.UndefOr[calendar | spinner | default] = js.undefined
+  var mode: js.UndefOr["calendar" | "spinner" | "default"] = js.undefined
 }
 object DatePickerAndroidOpenOptions {
   
@@ -38,7 +35,7 @@ object DatePickerAndroidOpenOptions {
     
     inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
-    inline def setMode(value: calendar | spinner | default): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: "calendar" | "spinner" | "default"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }

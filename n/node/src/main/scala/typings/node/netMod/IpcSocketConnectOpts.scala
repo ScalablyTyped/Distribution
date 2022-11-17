@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IpcSocketConnectOpts
   extends StObject
-     with ConnectOpts
-     with SocketConnectOpts {
+     with ConnectOpts {
   
   var path: String
 }

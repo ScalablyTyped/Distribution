@@ -1,6 +1,5 @@
 package typings.react.mod
 
-import typings.react.reactStrings.fulfilled
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ trait FulfilledThenable[T]
   extends StObject
      with typings.react.nextMod.reactAugmentingMod.ThenableImpl[T] {
   
-  var status: fulfilled
+  var status: "fulfilled"
   
   var value: T
 }
@@ -27,7 +26,7 @@ object FulfilledThenable {
   
   extension [Self <: FulfilledThenable[?], T](x: Self & FulfilledThenable[T]) {
     
-    inline def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: "fulfilled"): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

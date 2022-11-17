@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClassExpression
   extends StObject
      with ClassLikeDeclarationBase
-     with PrimaryExpression
-     with ClassLikeDeclaration
-     with HasDecorators
-     with HasModifiers {
+     with PrimaryExpression {
   
   @JSName("kind")
   val kind_ClassExpression: typings.typescript.mod.SyntaxKind.ClassExpression = js.native

@@ -1,8 +1,6 @@
 package typings.reactNavigationStack
 
 import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.GestureDirection
-import typings.reactNavigationStack.reactNavigationStackInts.`-1`
-import typings.reactNavigationStack.reactNavigationStackInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,5 +11,5 @@ object libTypescriptSrcVendorUtilsGetInvertedMultiplierMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(gestureDirection: GestureDirection): `1` | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(gestureDirection.asInstanceOf[js.Any]).asInstanceOf[`1` | `-1`]
+  inline def default(gestureDirection: GestureDirection): 1 | -1 = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(gestureDirection.asInstanceOf[js.Any]).asInstanceOf[1 | -1]
 }

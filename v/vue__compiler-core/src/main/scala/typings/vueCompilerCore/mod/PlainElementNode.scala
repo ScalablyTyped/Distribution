@@ -1,21 +1,19 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PlainElementNode
   extends StObject
-     with BaseElementNode
-     with ElementNode {
+     with BaseElementNode {
   
   var codegenNode: js.UndefOr[VNodeCall | SimpleExpressionNode | CacheExpression | MemoExpression] = js.undefined
   
   var ssrCodegenNode: js.UndefOr[TemplateLiteral] = js.undefined
   
   @JSName("tagType")
-  var tagType_PlainElementNode: `0`
+  var tagType_PlainElementNode: 0
 }
 object PlainElementNode {
   
@@ -42,6 +40,6 @@ object PlainElementNode {
     
     inline def setSsrCodegenNodeUndefined: Self = StObject.set(x, "ssrCodegenNode", js.undefined)
     
-    inline def setTagType(value: `0`): Self = StObject.set(x, "tagType", value.asInstanceOf[js.Any])
+    inline def setTagType(value: 0): Self = StObject.set(x, "tagType", value.asInstanceOf[js.Any])
   }
 }

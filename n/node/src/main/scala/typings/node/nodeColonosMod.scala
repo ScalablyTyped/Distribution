@@ -4,8 +4,6 @@ import typings.node.NodeJS.Dict
 import typings.node.anon.Encoding
 import typings.node.anon.`3`
 import typings.node.bufferMod.global.Buffer
-import typings.node.nodeStrings.BE
-import typings.node.nodeStrings.LE
 import typings.node.osMod.CpuInfo
 import typings.node.osMod.NetworkInterfaceInfo
 import typings.node.osMod.SignalConstants
@@ -694,7 +692,7 @@ object nodeColonosMod {
     * Possible values are `'BE'` for big endian and `'LE'` for little endian.
     * @since v0.9.4
     */
-  inline def endianness(): BE | LE = ^.asInstanceOf[js.Dynamic].applyDynamic("endianness")().asInstanceOf[BE | LE]
+  inline def endianness(): "BE" | "LE" = ^.asInstanceOf[js.Dynamic].applyDynamic("endianness")().asInstanceOf["BE" | "LE"]
   
   /**
     * Returns the amount of free system memory in bytes as an integer.

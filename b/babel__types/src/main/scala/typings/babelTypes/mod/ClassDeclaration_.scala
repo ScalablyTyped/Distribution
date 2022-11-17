@@ -1,19 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.ClassDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ClassDeclaration_
+trait ClassDeclaration_
   extends StObject
-     with BaseNode
-     with Class
-     with Declaration
-     with Scopable
-     with Standardized
-     with Statement {
+     with BaseNode {
   
   var `abstract`: Boolean | Null
   
@@ -36,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ | Null
   
   @JSName("type")
-  var type_ClassDeclaration_ : ClassDeclaration
+  var type_ClassDeclaration_ : "ClassDeclaration"
 }
 object ClassDeclaration_ {
   
@@ -85,7 +78,7 @@ object ClassDeclaration_ {
     
     inline def setSuperTypeParametersNull: Self = StObject.set(x, "superTypeParameters", null)
     
-    inline def setType(value: ClassDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ClassDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

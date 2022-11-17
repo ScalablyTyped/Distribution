@@ -1,17 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.RestElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait RestElement_
+trait RestElement_
   extends StObject
-     with BaseNode
-     with LVal
-     with PatternLike
-     with Standardized {
+     with BaseNode {
   
   var argument: LVal
   
@@ -22,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   
   @JSName("type")
-  var type_RestElement_ : RestElement
+  var type_RestElement_ : "RestElement"
 }
 object RestElement_ {
   
@@ -46,7 +41,7 @@ object RestElement_ {
     
     inline def setOptionalNull: Self = StObject.set(x, "optional", null)
     
-    inline def setType(value: RestElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "RestElement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

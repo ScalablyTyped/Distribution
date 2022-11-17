@@ -1,20 +1,17 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ModuleExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ModuleExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with Node {
+     with BaseNode {
   
   var body: Program_
   
   @JSName("type")
-  var type_ModuleExpression_ : ModuleExpression
+  var type_ModuleExpression_ : "ModuleExpression"
 }
 object ModuleExpression_ {
   
@@ -28,6 +25,6 @@ object ModuleExpression_ {
     
     inline def setBody(value: Program_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ModuleExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ModuleExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

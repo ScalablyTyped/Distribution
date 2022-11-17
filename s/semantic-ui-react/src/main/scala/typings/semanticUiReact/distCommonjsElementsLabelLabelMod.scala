@@ -19,16 +19,6 @@ import typings.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticSIZES
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
-import typings.semanticUiReact.semanticUiReactStrings.`bottom left`
-import typings.semanticUiReact.semanticUiReactStrings.`bottom right`
-import typings.semanticUiReact.semanticUiReactStrings.`top left`
-import typings.semanticUiReact.semanticUiReactStrings.`top right`
-import typings.semanticUiReact.semanticUiReactStrings.above
-import typings.semanticUiReact.semanticUiReactStrings.below
-import typings.semanticUiReact.semanticUiReactStrings.bottom
-import typings.semanticUiReact.semanticUiReactStrings.left
-import typings.semanticUiReact.semanticUiReactStrings.right
-import typings.semanticUiReact.semanticUiReactStrings.top
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -78,7 +68,9 @@ object distCommonjsElementsLabelLabelMod extends Shortcut {
     var as: js.UndefOr[Any] = js.undefined
     
     /** A label can attach to a content segment. */
-    var attached: js.UndefOr[top | bottom | (`top right`) | (`top left`) | (`bottom left`) | (`bottom right`)] = js.undefined
+    var attached: js.UndefOr[
+        "top" | "bottom" | ("top right") | ("top left") | ("bottom left") | ("bottom right")
+      ] = js.undefined
     
     /** A label can reduce its complexity. */
     var basic: js.UndefOr[Boolean] = js.undefined
@@ -99,7 +91,7 @@ object distCommonjsElementsLabelLabelMod extends Shortcut {
     var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A label can position itself in the corner of an element. */
-    var corner: js.UndefOr[Boolean | left | right] = js.undefined
+    var corner: js.UndefOr[Boolean | "left" | "right"] = js.undefined
     
     /** Shorthand for LabelDetail. */
     var detail: js.UndefOr[SemanticShorthandItem[LabelDetailProps]] = js.undefined
@@ -140,7 +132,7 @@ object distCommonjsElementsLabelLabelMod extends Shortcut {
       ] = js.undefined
     
     /** A label can point to content next to it. */
-    var pointing: js.UndefOr[Boolean | above | below | left | right] = js.undefined
+    var pointing: js.UndefOr[Boolean | "above" | "below" | "left" | "right"] = js.undefined
     
     /** A label can prompt for an error in your forms. */
     var prompt: js.UndefOr[Boolean] = js.undefined
@@ -149,7 +141,7 @@ object distCommonjsElementsLabelLabelMod extends Shortcut {
     var removeIcon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.undefined
     
     /** A label can appear as a ribbon attaching itself to an element. */
-    var ribbon: js.UndefOr[Boolean | right] = js.undefined
+    var ribbon: js.UndefOr[Boolean | "right"] = js.undefined
     
     /** A label can have different sizes. */
     var size: js.UndefOr[SemanticSIZES] = js.undefined
@@ -174,7 +166,7 @@ object distCommonjsElementsLabelLabelMod extends Shortcut {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAttached(value: top | bottom | (`top right`) | (`top left`) | (`bottom left`) | (`bottom right`)): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: "top" | "bottom" | ("top right") | ("top left") | ("bottom left") | ("bottom right")): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
       inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       
@@ -202,7 +194,7 @@ object distCommonjsElementsLabelLabelMod extends Shortcut {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setCorner(value: Boolean | left | right): Self = StObject.set(x, "corner", value.asInstanceOf[js.Any])
+      inline def setCorner(value: Boolean | "left" | "right"): Self = StObject.set(x, "corner", value.asInstanceOf[js.Any])
       
       inline def setCornerUndefined: Self = StObject.set(x, "corner", js.undefined)
       
@@ -246,7 +238,7 @@ object distCommonjsElementsLabelLabelMod extends Shortcut {
       
       inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
       
-      inline def setPointing(value: Boolean | above | below | left | right): Self = StObject.set(x, "pointing", value.asInstanceOf[js.Any])
+      inline def setPointing(value: Boolean | "above" | "below" | "left" | "right"): Self = StObject.set(x, "pointing", value.asInstanceOf[js.Any])
       
       inline def setPointingUndefined: Self = StObject.set(x, "pointing", js.undefined)
       
@@ -262,7 +254,7 @@ object distCommonjsElementsLabelLabelMod extends Shortcut {
       
       inline def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
       
-      inline def setRibbon(value: Boolean | right): Self = StObject.set(x, "ribbon", value.asInstanceOf[js.Any])
+      inline def setRibbon(value: Boolean | "right"): Self = StObject.set(x, "ribbon", value.asInstanceOf[js.Any])
       
       inline def setRibbonUndefined: Self = StObject.set(x, "ribbon", js.undefined)
       

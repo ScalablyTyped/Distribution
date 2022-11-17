@@ -1,18 +1,5 @@
 package typings.three.examplesJsmLibsFflateDotmoduleDotminMod
 
-import typings.three.threeInts.`0`
-import typings.three.threeInts.`10`
-import typings.three.threeInts.`11`
-import typings.three.threeInts.`12`
-import typings.three.threeInts.`1`
-import typings.three.threeInts.`2`
-import typings.three.threeInts.`3`
-import typings.three.threeInts.`4`
-import typings.three.threeInts.`5`
-import typings.three.threeInts.`6`
-import typings.three.threeInts.`7`
-import typings.three.threeInts.`8`
-import typings.three.threeInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +21,7 @@ trait DeflateOptions extends StObject {
     * - become 400 kB with level 1 in 10ms
     * - become 320 kB with level 9 in 100ms
     */
-  var level: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.undefined
+  var level: js.UndefOr[0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9] = js.undefined
   
   /**
     * The memory level to use, ranging from 0-12. Increasing this increases speed and compression ratio at the cost of memory.
@@ -45,7 +32,7 @@ trait DeflateOptions extends StObject {
     *
     * The default value is automatically determined based on the size of the input data.
     */
-  var mem: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12`] = js.undefined
+  var mem: js.UndefOr[0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12] = js.undefined
 }
 object DeflateOptions {
   
@@ -56,11 +43,11 @@ object DeflateOptions {
   
   extension [Self <: DeflateOptions](x: Self) {
     
-    inline def setLevel(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    inline def setMem(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12`): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
+    inline def setMem(value: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
     
     inline def setMemUndefined: Self = StObject.set(x, "mem", js.undefined)
   }

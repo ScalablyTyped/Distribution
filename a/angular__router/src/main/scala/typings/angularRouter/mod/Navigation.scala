@@ -1,8 +1,5 @@
 package typings.angularRouter.mod
 
-import typings.angularRouter.angularRouterStrings.hashchange
-import typings.angularRouter.angularRouterStrings.imperative
-import typings.angularRouter.angularRouterStrings.popstate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Navigation extends StObject {
   
   /**
-    * The initial target URL after being parsed with `UrlSerializer.extract()`.
+    * The initial target URL after being parsed with `UrlHandlingStrategy.extract()`.
     */
   var extractedUrl: UrlTree
   
@@ -52,7 +49,7 @@ trait Navigation extends StObject {
     * * 'popstate'--Triggered by a popstate event.
     * * 'hashchange'--Triggered by a hashchange event.
     */
-  var trigger: imperative | popstate | hashchange
+  var trigger: "imperative" | "popstate" | "hashchange"
 }
 object Navigation {
   
@@ -61,7 +58,7 @@ object Navigation {
     extras: NavigationExtras,
     id: Double,
     initialUrl: UrlTree,
-    trigger: imperative | popstate | hashchange
+    trigger: "imperative" | "popstate" | "hashchange"
   ): Navigation = {
     val __obj = js.Dynamic.literal(extractedUrl = extractedUrl.asInstanceOf[js.Any], extras = extras.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], initialUrl = initialUrl.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any], previousNavigation = null)
     __obj.asInstanceOf[Navigation]
@@ -85,6 +82,6 @@ object Navigation {
     
     inline def setPreviousNavigationNull: Self = StObject.set(x, "previousNavigation", null)
     
-    inline def setTrigger(value: imperative | popstate | hashchange): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: "imperative" | "popstate" | "hashchange"): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
   }
 }

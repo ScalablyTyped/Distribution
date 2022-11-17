@@ -1,16 +1,14 @@
 package typings.node.dnsMod
 
-import typings.node.nodeStrings.SOA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AnySoaRecord
   extends StObject
-     with SoaRecord
-     with AnyRecord {
+     with SoaRecord {
   
-  var `type`: SOA
+  var `type`: "SOA"
 }
 object AnySoaRecord {
   
@@ -30,6 +28,6 @@ object AnySoaRecord {
   
   extension [Self <: AnySoaRecord](x: Self) {
     
-    inline def setType(value: SOA): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "SOA"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

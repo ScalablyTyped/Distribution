@@ -1,8 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.char
-import typings.electron.electronStrings.keyDown
-import typings.electron.electronStrings.keyUp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,11 +18,11 @@ trait KeyboardInputEvent
   /**
     * The type of the event, can be `keyDown`, `keyUp` or `char`.
     */
-  var `type`: keyDown | keyUp | char
+  var `type`: "keyDown" | "keyUp" | "char"
 }
 object KeyboardInputEvent {
   
-  inline def apply(keyCode: String, `type`: keyDown | keyUp | char): KeyboardInputEvent = {
+  inline def apply(keyCode: String, `type`: "keyDown" | "keyUp" | "char"): KeyboardInputEvent = {
     val __obj = js.Dynamic.literal(keyCode = keyCode.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardInputEvent]
@@ -35,6 +32,6 @@ object KeyboardInputEvent {
     
     inline def setKeyCode(value: String): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
     
-    inline def setType(value: keyDown | keyUp | char): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "keyDown" | "keyUp" | "char"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

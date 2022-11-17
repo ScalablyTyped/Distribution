@@ -8,15 +8,6 @@ import typings.react.mod.ComponentState
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.semanticUiReact.distCommonjsModulesRatingRatingIconMod.RatingIconProps
-import typings.semanticUiReact.semanticUiReactStrings.auto
-import typings.semanticUiReact.semanticUiReactStrings.heart
-import typings.semanticUiReact.semanticUiReactStrings.huge
-import typings.semanticUiReact.semanticUiReactStrings.large
-import typings.semanticUiReact.semanticUiReactStrings.massive
-import typings.semanticUiReact.semanticUiReactStrings.mini
-import typings.semanticUiReact.semanticUiReactStrings.small
-import typings.semanticUiReact.semanticUiReactStrings.star
-import typings.semanticUiReact.semanticUiReactStrings.tiny
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -84,7 +75,7 @@ object distCommonjsModulesRatingRatingMod {
       * By default a rating will be only clearable if there is 1 icon.
       * Setting to `true`/`false` will allow or disallow a user to clear their rating.
       */
-    var clearable: js.UndefOr[Boolean | auto] = js.undefined
+    var clearable: js.UndefOr[Boolean | "auto"] = js.undefined
     
     /** The initial rating value. */
     var defaultRating: js.UndefOr[Double | String] = js.undefined
@@ -93,7 +84,7 @@ object distCommonjsModulesRatingRatingMod {
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** A rating can use a set of star or heart icons. */
-    var icon: js.UndefOr[star | heart] = js.undefined
+    var icon: js.UndefOr["star" | "heart"] = js.undefined
     
     /** The total number of icons. */
     var maxRating: js.UndefOr[Double | String] = js.undefined
@@ -116,7 +107,7 @@ object distCommonjsModulesRatingRatingMod {
     var rating: js.UndefOr[Double | String] = js.undefined
     
     /** A progress bar can vary in size. */
-    var size: js.UndefOr[mini | tiny | small | large | huge | massive] = js.undefined
+    var size: js.UndefOr["mini" | "tiny" | "small" | "large" | "huge" | "massive"] = js.undefined
   }
   object StrictRatingProps {
     
@@ -135,7 +126,7 @@ object distCommonjsModulesRatingRatingMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClearable(value: Boolean | auto): Self = StObject.set(x, "clearable", value.asInstanceOf[js.Any])
+      inline def setClearable(value: Boolean | "auto"): Self = StObject.set(x, "clearable", value.asInstanceOf[js.Any])
       
       inline def setClearableUndefined: Self = StObject.set(x, "clearable", js.undefined)
       
@@ -147,7 +138,7 @@ object distCommonjsModulesRatingRatingMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setIcon(value: star | heart): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: "star" | "heart"): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
@@ -163,7 +154,7 @@ object distCommonjsModulesRatingRatingMod {
       
       inline def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
       
-      inline def setSize(value: mini | tiny | small | large | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "mini" | "tiny" | "small" | "large" | "huge" | "massive"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }

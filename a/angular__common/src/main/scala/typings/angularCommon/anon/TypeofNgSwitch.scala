@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngSwitch]`
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import org.scalablytyped.runtime.StObject
@@ -16,13 +14,14 @@ trait TypeofNgSwitch
   
   var ɵdir: ɵɵDirectiveDeclaration[
     typings.angularCommon.mod.NgSwitch, 
-    `[ngSwitch]`, 
+    "[ngSwitch]", 
     scala.Nothing, 
     NgSwitch, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[typings.angularCommon.mod.NgSwitch, scala.Nothing] = js.native

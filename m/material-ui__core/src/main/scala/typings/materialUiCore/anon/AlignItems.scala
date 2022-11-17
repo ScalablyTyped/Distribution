@@ -1,7 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.`flex-start`
-import typings.materialUiCore.materialUiCoreStrings.center
 import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
@@ -15,7 +13,7 @@ trait AlignItems extends StObject {
   
   var ContainerProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
   
-  var alignItems: js.UndefOr[`flex-start` | center] = js.undefined
+  var alignItems: js.UndefOr["flex-start" | "center"] = js.undefined
   
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   
@@ -42,7 +40,7 @@ object AlignItems {
   
   extension [Self <: AlignItems](x: Self) {
     
-    inline def setAlignItems(value: `flex-start` | center): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    inline def setAlignItems(value: "flex-start" | "center"): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
     inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
     

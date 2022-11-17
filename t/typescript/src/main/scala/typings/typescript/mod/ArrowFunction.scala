@@ -8,11 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArrowFunction
   extends StObject
      with Expression
-     with FunctionLikeDeclarationBase
-     with FunctionLikeDeclaration
-     with HasJSDoc
-     with HasModifiers
-     with SignatureDeclaration {
+     with FunctionLikeDeclarationBase {
   
   @JSName("body")
   val body_ArrowFunction: ConciseBody = js.native

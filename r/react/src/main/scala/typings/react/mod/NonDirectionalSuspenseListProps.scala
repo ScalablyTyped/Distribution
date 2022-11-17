@@ -1,7 +1,5 @@
 package typings.react.mod
 
-import typings.react.reactStrings.backwards
-import typings.react.reactStrings.forwards
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +15,7 @@ trait NonDirectionalSuspenseListProps
   var revealOrder: js.UndefOr[
     Exclude[
       typings.react.experimentalMod.reactAugmentingMod.SuspenseListRevealOrder, 
-      forwards | backwards
+      "forwards" | "backwards"
     ]
   ] = js.undefined
   
@@ -38,7 +36,7 @@ object NonDirectionalSuspenseListProps {
     inline def setRevealOrder(
       value: Exclude[
           typings.react.experimentalMod.reactAugmentingMod.SuspenseListRevealOrder, 
-          forwards | backwards
+          "forwards" | "backwards"
         ]
     ): Self = StObject.set(x, "revealOrder", value.asInstanceOf[js.Any])
     

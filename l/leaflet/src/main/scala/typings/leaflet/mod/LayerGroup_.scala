@@ -6,7 +6,6 @@ import typings.geojson.mod.Geometry
 import typings.geojson.mod.GeometryCollection
 import typings.geojson.mod.GeometryObject
 import typings.geojson.mod.MultiPoint
-import typings.leaflet.leafletBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,9 +79,10 @@ open class LayerGroup_[P] () extends Layer {
     * Returns a GeoJSON representation of the layer group (as a GeoJSON GeometryCollection, GeoJSONFeatureCollection or Multipoint).
     */
   def toGeoJSON(): (FeatureCollection[GeometryObject, P]) | (Feature[MultiPoint, P]) | GeometryCollection[Geometry] = js.native
-  def toGeoJSON(precision: Double): (FeatureCollection[GeometryObject, P]) | (Feature[MultiPoint, P]) | GeometryCollection[Geometry] = js.native
   @JSName("toGeoJSON")
-  def toGeoJSON_false(precision: `false`): (FeatureCollection[GeometryObject, P]) | (Feature[MultiPoint, P]) | GeometryCollection[Geometry] = js.native
+  @scala.annotation.targetName("toGeoJSON_false")
+  def toGeoJSON(precision: false): (FeatureCollection[GeometryObject, P]) | (Feature[MultiPoint, P]) | GeometryCollection[Geometry] = js.native
+  def toGeoJSON(precision: Double): (FeatureCollection[GeometryObject, P]) | (Feature[MultiPoint, P]) | GeometryCollection[Geometry] = js.native
   
   def toMultiPoint(): Feature[MultiPoint, P] = js.native
   def toMultiPoint(precision: Double): Feature[MultiPoint, P] = js.native

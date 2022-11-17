@@ -3,8 +3,6 @@ package typings.angularForms.anon
 import org.scalablytyped.runtime.Instantiable3
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
-import typings.angularForms.angularFormsStrings.`[formArrayName]`
 import typings.angularForms.mod.AsyncValidator
 import typings.angularForms.mod.AsyncValidatorFn
 import typings.angularForms.mod.ControlContainer
@@ -27,13 +25,14 @@ trait TypeofFormArrayName
   
   var ɵdir: ɵɵDirectiveDeclaration[
     FormArrayName, 
-    `[formArrayName]`, 
+    "[formArrayName]", 
     scala.Nothing, 
     Name, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[FormArrayName, js.Tuple3[Host, Self, Self]] = js.native

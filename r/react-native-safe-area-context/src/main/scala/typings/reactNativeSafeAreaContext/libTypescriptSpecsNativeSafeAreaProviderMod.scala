@@ -7,7 +7,6 @@ import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.ViewProps
 import typings.reactNativeSafeAreaContext.anon.ReadonlytopDoublerightDou
 import typings.reactNativeSafeAreaContext.anon.ReadonlyxDoubleyDoublewid
-import typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.paperInsetsChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +43,7 @@ object libTypescriptSpecsNativeSafeAreaProviderMod extends Shortcut {
     extends StObject
        with ViewProps {
     
-    var onInsetsChange: js.UndefOr[DirectEventHandler[Event, paperInsetsChange]] = js.undefined
+    var onInsetsChange: js.UndefOr[DirectEventHandler[Event, "paperInsetsChange"]] = js.undefined
   }
   object NativeProps {
     

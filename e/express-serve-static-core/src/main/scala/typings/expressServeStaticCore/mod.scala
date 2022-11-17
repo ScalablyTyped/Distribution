@@ -2,7 +2,6 @@ package typings.expressServeStaticCore
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.expressServeStaticCore.expressServeStaticCoreStrings.auto
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
@@ -333,7 +332,7 @@ object mod {
     
     var path: js.UndefOr[String] = js.undefined
     
-    var secure: js.UndefOr[Boolean | auto] = js.undefined
+    var secure: js.UndefOr[Boolean | "auto"] = js.undefined
     
     var signed: js.UndefOr[Boolean] = js.undefined
   }
@@ -366,7 +365,7 @@ object mod {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setSecure(value: Boolean | auto): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean | "auto"): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
       inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       

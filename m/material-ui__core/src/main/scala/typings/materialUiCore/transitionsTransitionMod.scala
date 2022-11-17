@@ -7,29 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object transitionsTransitionMod {
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.onEnter
-    - typings.materialUiCore.materialUiCoreStrings.onEntering
-    - typings.materialUiCore.materialUiCoreStrings.onEntered
-    - typings.materialUiCore.materialUiCoreStrings.onExit
-    - typings.materialUiCore.materialUiCoreStrings.onExiting
-    - typings.materialUiCore.materialUiCoreStrings.onExited
-  */
-  trait TransitionHandlerKeys extends StObject
   object TransitionHandlerKeys {
     
-    inline def onEnter: typings.materialUiCore.materialUiCoreStrings.onEnter = "onEnter".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.onEnter]
+    inline def onEnter: "onEnter" = "onEnter".asInstanceOf["onEnter"]
     
-    inline def onEntered: typings.materialUiCore.materialUiCoreStrings.onEntered = "onEntered".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.onEntered]
+    inline def onEntered: "onEntered" = "onEntered".asInstanceOf["onEntered"]
     
-    inline def onEntering: typings.materialUiCore.materialUiCoreStrings.onEntering = "onEntering".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.onEntering]
+    inline def onEntering: "onEntering" = "onEntering".asInstanceOf["onEntering"]
     
-    inline def onExit: typings.materialUiCore.materialUiCoreStrings.onExit = "onExit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.onExit]
+    inline def onExit: "onExit" = "onExit".asInstanceOf["onExit"]
     
-    inline def onExited: typings.materialUiCore.materialUiCoreStrings.onExited = "onExited".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.onExited]
+    inline def onExited: "onExited" = "onExited".asInstanceOf["onExited"]
     
-    inline def onExiting: typings.materialUiCore.materialUiCoreStrings.onExiting = "onExiting".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.onExiting]
+    inline def onExiting: "onExiting" = "onExiting".asInstanceOf["onExiting"]
   }
+  type TransitionHandlerKeys = "onEnter" | "onEntering" | "onEntered" | "onExit" | "onExiting" | "onExited"
   
   /* Inlined std.Pick<react-transition-group.react-transition-group/Transition.TransitionProps<undefined>, @material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerKeys> */
   trait TransitionHandlerProps extends StObject {
@@ -81,44 +73,31 @@ object transitionsTransitionMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.in
-    - typings.materialUiCore.materialUiCoreStrings.mountOnEnter
-    - typings.materialUiCore.materialUiCoreStrings.unmountOnExit
-    - typings.materialUiCore.materialUiCoreStrings.timeout
-    - typings.materialUiCore.materialUiCoreStrings.addEndListener
-    - typings.materialUiCore.materialUiCoreStrings.onEnter
-    - typings.materialUiCore.materialUiCoreStrings.onEntering
-    - typings.materialUiCore.materialUiCoreStrings.onEntered
-    - typings.materialUiCore.materialUiCoreStrings.onExit
-    - typings.materialUiCore.materialUiCoreStrings.onExiting
-    - typings.materialUiCore.materialUiCoreStrings.onExited
-  */
-  trait TransitionKeys extends StObject
   object TransitionKeys {
     
-    inline def addEndListener: typings.materialUiCore.materialUiCoreStrings.addEndListener = "addEndListener".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.addEndListener]
+    inline def addEndListener: "addEndListener" = "addEndListener".asInstanceOf["addEndListener"]
     
-    inline def in: typings.materialUiCore.materialUiCoreStrings.in = "in".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.in]
+    inline def in: "in" = "in".asInstanceOf["in"]
     
-    inline def mountOnEnter: typings.materialUiCore.materialUiCoreStrings.mountOnEnter = "mountOnEnter".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.mountOnEnter]
+    inline def mountOnEnter: "mountOnEnter" = "mountOnEnter".asInstanceOf["mountOnEnter"]
     
-    inline def onEnter: typings.materialUiCore.materialUiCoreStrings.onEnter = "onEnter".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.onEnter]
+    inline def onEnter: "onEnter" = "onEnter".asInstanceOf["onEnter"]
     
-    inline def onEntered: typings.materialUiCore.materialUiCoreStrings.onEntered = "onEntered".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.onEntered]
+    inline def onEntered: "onEntered" = "onEntered".asInstanceOf["onEntered"]
     
-    inline def onEntering: typings.materialUiCore.materialUiCoreStrings.onEntering = "onEntering".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.onEntering]
+    inline def onEntering: "onEntering" = "onEntering".asInstanceOf["onEntering"]
     
-    inline def onExit: typings.materialUiCore.materialUiCoreStrings.onExit = "onExit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.onExit]
+    inline def onExit: "onExit" = "onExit".asInstanceOf["onExit"]
     
-    inline def onExited: typings.materialUiCore.materialUiCoreStrings.onExited = "onExited".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.onExited]
+    inline def onExited: "onExited" = "onExited".asInstanceOf["onExited"]
     
-    inline def onExiting: typings.materialUiCore.materialUiCoreStrings.onExiting = "onExiting".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.onExiting]
+    inline def onExiting: "onExiting" = "onExiting".asInstanceOf["onExiting"]
     
-    inline def timeout: typings.materialUiCore.materialUiCoreStrings.timeout = "timeout".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.timeout]
+    inline def timeout: "timeout" = "timeout".asInstanceOf["timeout"]
     
-    inline def unmountOnExit: typings.materialUiCore.materialUiCoreStrings.unmountOnExit = "unmountOnExit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.unmountOnExit]
+    inline def unmountOnExit: "unmountOnExit" = "unmountOnExit".asInstanceOf["unmountOnExit"]
   }
+  type TransitionKeys = "in" | "mountOnEnter" | "unmountOnExit" | "timeout" | "addEndListener" | "onEnter" | "onEntering" | "onEntered" | "onExit" | "onExiting" | "onExited"
   
   /* Inlined parent react-transition-group.react-transition-group/Transition.TransitionActions */
   /* Inlined parent std.Partial<std.Pick<react-transition-group.react-transition-group/Transition.TransitionProps<undefined>, @material-ui/core.@material-ui/core/transitions/transition.TransitionKeys>> */

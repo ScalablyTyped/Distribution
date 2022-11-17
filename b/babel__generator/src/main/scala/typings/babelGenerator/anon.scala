@@ -1,12 +1,5 @@
 package typings.babelGenerator
 
-import typings.babelGenerator.babelGeneratorStrings.backtick
-import typings.babelGenerator.babelGeneratorStrings.binary
-import typings.babelGenerator.babelGeneratorStrings.decimal
-import typings.babelGenerator.babelGeneratorStrings.double
-import typings.babelGenerator.babelGeneratorStrings.hexadecimal
-import typings.babelGenerator.babelGeneratorStrings.octal
-import typings.babelGenerator.babelGeneratorStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,13 +75,13 @@ object anon {
       * using decimal integer literals. Other valid options are binary, octal, and hexadecimal, which result in
       * binary integer literals, octal integer literals, and hexadecimal integer literals, respectively.
       */
-    var numbers: js.UndefOr[binary | octal | decimal | hexadecimal] = js.undefined
+    var numbers: js.UndefOr["binary" | "octal" | "decimal" | "hexadecimal"] = js.undefined
     
     /**
       * The default value for the quotes option is 'single'. This means that any occurrences of ' in the input
       * string are escaped as \', so that the output can be used in a string literal wrapped in single quotes.
       */
-    var quotes: js.UndefOr[single | double | backtick] = js.undefined
+    var quotes: js.UndefOr["single" | "double" | "backtick"] = js.undefined
     
     /**
       * The wrap option takes a boolean value (true or false), and defaults to false (disabled). When enabled, the
@@ -142,11 +135,11 @@ object anon {
       
       inline def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
       
-      inline def setNumbers(value: binary | octal | decimal | hexadecimal): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
+      inline def setNumbers(value: "binary" | "octal" | "decimal" | "hexadecimal"): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
       
       inline def setNumbersUndefined: Self = StObject.set(x, "numbers", js.undefined)
       
-      inline def setQuotes(value: single | double | backtick): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
+      inline def setQuotes(value: "single" | "double" | "backtick"): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
       
       inline def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
       

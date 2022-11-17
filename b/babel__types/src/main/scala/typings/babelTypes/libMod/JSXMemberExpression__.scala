@@ -1,22 +1,19 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.JSXMemberExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait JSXMemberExpression__
   extends StObject
-     with BaseNode
-     with JSX
-     with Node {
+     with BaseNode {
   
   var `object`: JSXMemberExpression__ | JSXIdentifier__
   
   var property: JSXIdentifier__
   
   @JSName("type")
-  var type_JSXMemberExpression__ : JSXMemberExpression
+  var type_JSXMemberExpression__ : "JSXMemberExpression"
 }
 object JSXMemberExpression__ {
   
@@ -33,6 +30,6 @@ object JSXMemberExpression__ {
     
     inline def setProperty(value: JSXIdentifier__): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    inline def setType(value: JSXMemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "JSXMemberExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

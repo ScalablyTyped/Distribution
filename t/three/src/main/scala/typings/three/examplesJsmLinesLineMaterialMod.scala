@@ -4,7 +4,6 @@ import typings.three.srcMaterialsMaterialMod.MaterialParameters
 import typings.three.srcThreeMod.Color
 import typings.three.srcThreeMod.ShaderMaterial
 import typings.three.srcThreeMod.Vector2
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object examplesJsmLinesLineMaterialMod {
     
     var gapSize: Double = js.native
     
-    val isLineMaterial: `true` = js.native
+    val isLineMaterial: true = js.native
     
     var resolution: Vector2 = js.native
     

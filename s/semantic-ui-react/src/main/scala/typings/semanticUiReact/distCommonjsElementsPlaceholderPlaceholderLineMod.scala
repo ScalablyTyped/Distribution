@@ -3,12 +3,6 @@ package typings.semanticUiReact
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.FC
-import typings.semanticUiReact.semanticUiReactStrings.`very long`
-import typings.semanticUiReact.semanticUiReactStrings.`very short`
-import typings.semanticUiReact.semanticUiReactStrings.full
-import typings.semanticUiReact.semanticUiReactStrings.long
-import typings.semanticUiReact.semanticUiReactStrings.medium
-import typings.semanticUiReact.semanticUiReactStrings.short
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +36,7 @@ object distCommonjsElementsPlaceholderPlaceholderLineMod extends Shortcut {
     var className: js.UndefOr[String] = js.undefined
     
     /** A line can specify how long its contents should appear. */
-    var length: js.UndefOr[full | (`very long`) | long | medium | short | (`very short`)] = js.undefined
+    var length: js.UndefOr["full" | ("very long") | "long" | "medium" | "short" | ("very short")] = js.undefined
   }
   object StrictPlaceholderLineProps {
     
@@ -61,7 +55,7 @@ object distCommonjsElementsPlaceholderPlaceholderLineMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setLength(value: full | (`very long`) | long | medium | short | (`very short`)): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: "full" | ("very long") | "long" | "medium" | "short" | ("very short")): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
       inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     }

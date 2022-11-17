@@ -1,28 +1,9 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreInts.`-1`
-import typings.angularCore.angularCoreInts.`0`
-import typings.angularCore.angularCoreInts.`1`
-import typings.angularCore.angularCoreInts.`2`
-import typings.angularCore.angularCoreInts.`3`
-import typings.angularCore.angularCoreInts.`4`
-import typings.angularCore.angularCoreInts.`5`
-import typings.angularCore.angularCoreInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.angularCore.angularCoreInts.`-1`
-  - typings.angularCore.angularCoreInts.`0`
-  - typings.angularCore.angularCoreInts.`1`
-  - typings.angularCore.angularCoreInts.`2`
-  - typings.angularCore.angularCoreInts.`3`
-  - typings.angularCore.angularCoreInts.`4`
-  - typings.angularCore.angularCoreInts.`5`
-  - typings.angularCore.angularCoreInts.`6`
-*/
-trait ɵAttributeMarker extends StObject
 object ɵAttributeMarker {
   
   /**
@@ -40,7 +21,7 @@ object ɵAttributeMarker {
     * var _c1 = ['moo', 'car', AttributeMarker.Bindings, 'foo', 'bar'];
     * ```
     */
-  inline def Bindings: `3` = 3.asInstanceOf[`3`]
+  inline def Bindings: 3 = 3.asInstanceOf[3]
   
   /**
     * Signals class declaration.
@@ -58,7 +39,7 @@ object ɵAttributeMarker {
     * var _c1 = [AttributeMarker.Classes, 'foo', 'bar', 'baz'];
     * ```
     */
-  inline def Classes: `1` = 1.asInstanceOf[`1`]
+  inline def Classes: 1 = 1.asInstanceOf[1]
   
   /**
     * Signals that the following attribute will be translated by runtime i18n
@@ -74,7 +55,7 @@ object ɵAttributeMarker {
     * ```
     * var _c1 = ['moo', 'car', AttributeMarker.I18n, 'foo', 'bar'];
     */
-  inline def I18n: `6` = 6.asInstanceOf[`6`]
+  inline def I18n: 6 = 6.asInstanceOf[6]
   
   /**
     * An implicit marker which indicates that the value in the array are of `attributeKey`,
@@ -83,14 +64,14 @@ object ɵAttributeMarker {
     * NOTE: This is implicit as it is the type when no marker is present in array. We indicate that
     * it should not be present at runtime by the negative number.
     */
-  inline def ImplicitAttributes: `-1` = -1.asInstanceOf[`-1`]
+  inline def ImplicitAttributes: -1 = -1.asInstanceOf[-1]
   
   /**
     * Marker indicates that the following 3 values in the attributes array are:
     * namespaceUri, attributeName, attributeValue
     * in that order.
     */
-  inline def NamespaceURI: `0` = 0.asInstanceOf[`0`]
+  inline def NamespaceURI: 0 = 0.asInstanceOf[0]
   
   /**
     * Signals that the following attribute is `ngProjectAs` and its value is a parsed
@@ -108,7 +89,7 @@ object ɵAttributeMarker {
     * ['attr', 'value', AttributeMarker.ProjectAs, ['', 'title', '']]
     * ```
     */
-  inline def ProjectAs: `5` = 5.asInstanceOf[`5`]
+  inline def ProjectAs: 5 = 5.asInstanceOf[5]
   
   /**
     * Signals style declaration.
@@ -127,7 +108,7 @@ object ɵAttributeMarker {
     * var _c1 = [AttributeMarker.Styles, 'width', '100px', 'height'. '200px', 'color', 'red'];
     * ```
     */
-  inline def Styles: `2` = 2.asInstanceOf[`2`]
+  inline def Styles: 2 = 2.asInstanceOf[2]
   
   /**
     * Signals that the following attribute names were hoisted from an inline-template declaration.
@@ -152,5 +133,5 @@ object ɵAttributeMarker {
     * ['dirA', '', AttributeMarker.Bindings, 'dirB']
     * ```
     */
-  inline def Template: `4` = 4.asInstanceOf[`4`]
+  inline def Template: 4 = 4.asInstanceOf[4]
 }

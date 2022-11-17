@@ -2,7 +2,6 @@ package typings.styledComponents
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.styledComponents.nativeDistDistTypesMod.AnyComponent
-import typings.styledComponents.styledComponentsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object nativeDistDistUtilsHoistMod {
   inline def default[T /* <: OmniComponent */, S /* <: OmniComponent */, C /* <: ExcludeList */](targetComponent: T, sourceComponent: S): T & (NonReactStatics[S, C]) = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(targetComponent.asInstanceOf[js.Any], sourceComponent.asInstanceOf[js.Any])).asInstanceOf[T & (NonReactStatics[S, C])]
   inline def default[T /* <: OmniComponent */, S /* <: OmniComponent */, C /* <: ExcludeList */](targetComponent: T, sourceComponent: S, excludelist: C): T & (NonReactStatics[S, C]) = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(targetComponent.asInstanceOf[js.Any], sourceComponent.asInstanceOf[js.Any], excludelist.asInstanceOf[js.Any])).asInstanceOf[T & (NonReactStatics[S, C])]
   
-  type ExcludeList = StringDictionary[`true`]
+  type ExcludeList = StringDictionary[true]
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.

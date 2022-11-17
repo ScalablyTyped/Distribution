@@ -9,7 +9,6 @@ import typings.reactBigCalendar.anon.ClassName
 import typings.reactBigCalendar.anon.End
 import typings.reactBigCalendar.anon.Style
 import typings.reactBigCalendar.anon.X
-import typings.reactBigCalendar.reactBigCalendarStrings.ignoreEvents
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -132,7 +131,7 @@ trait ViewProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends
   
   var scrollToTime: js.UndefOr[js.Date] = js.undefined
   
-  var selectable: js.UndefOr[Boolean | ignoreEvents] = js.undefined
+  var selectable: js.UndefOr[Boolean | "ignoreEvents"] = js.undefined
   
   var selected: js.UndefOr[Any] = js.undefined
   
@@ -391,7 +390,7 @@ object ViewProps {
     
     inline def setScrollToTimeUndefined: Self = StObject.set(x, "scrollToTime", js.undefined)
     
-    inline def setSelectable(value: Boolean | ignoreEvents): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    inline def setSelectable(value: Boolean | "ignoreEvents"): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
     inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     

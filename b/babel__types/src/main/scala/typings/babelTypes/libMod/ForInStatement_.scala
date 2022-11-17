@@ -1,21 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ForInStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ForInStatement_
   extends StObject
-     with BaseNode
-     with BlockParent
-     with For
-     with ForXStatement
-     with Loop
-     with Node
-     with Scopable
-     with Standardized
-     with Statement {
+     with BaseNode {
   
   var body: Statement
   
@@ -24,7 +15,7 @@ trait ForInStatement_
   var right: Expression
   
   @JSName("type")
-  var type_ForInStatement_ : ForInStatement
+  var type_ForInStatement_ : "ForInStatement"
 }
 object ForInStatement_ {
   
@@ -42,6 +33,6 @@ object ForInStatement_ {
     
     inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ForInStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ForInStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

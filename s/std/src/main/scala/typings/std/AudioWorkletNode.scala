@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.processorerror
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,16 +12,19 @@ trait AudioWorkletNode
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_processorerror(`type`: processorerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_processorerror")
+  def addEventListener(`type`: "processorerror", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_processorerror(
-    `type`: processorerror,
+  @scala.annotation.targetName("addEventListener_processorerror")
+  def addEventListener(
+    `type`: "processorerror",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_processorerror(
-    `type`: processorerror,
+  @scala.annotation.targetName("addEventListener_processorerror")
+  def addEventListener(
+    `type`: "processorerror",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -38,16 +40,19 @@ trait AudioWorkletNode
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_processorerror(`type`: processorerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_processorerror")
+  def removeEventListener(`type`: "processorerror", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_processorerror(
-    `type`: processorerror,
+  @scala.annotation.targetName("removeEventListener_processorerror")
+  def removeEventListener(
+    `type`: "processorerror",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_processorerror(
-    `type`: processorerror,
+  @scala.annotation.targetName("removeEventListener_processorerror")
+  def removeEventListener(
+    `type`: "processorerror",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

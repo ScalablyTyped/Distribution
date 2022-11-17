@@ -1,17 +1,15 @@
 package typings.typescript.mod
 
-import typings.typescript.typescriptBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait UnscopedEmitHelper
   extends StObject
-     with EmitHelperBase
-     with EmitHelper {
+     with EmitHelperBase {
   
   @JSName("scoped")
-  val scoped_UnscopedEmitHelper: `false`
+  val scoped_UnscopedEmitHelper: false
   
   @JSName("text")
   val text_UnscopedEmitHelper: java.lang.String
@@ -25,7 +23,7 @@ object UnscopedEmitHelper {
   
   extension [Self <: UnscopedEmitHelper](x: Self) {
     
-    inline def setScoped(value: `false`): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
+    inline def setScoped(value: false): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
     
     inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

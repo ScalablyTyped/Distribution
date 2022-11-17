@@ -13,37 +13,6 @@ import typings.react.mod.Booleanish
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
-import typings.react.reactStrings.`after-edge`
-import typings.react.reactStrings.`before-edge`
-import typings.react.reactStrings.`text-after-edge`
-import typings.react.reactStrings.`text-before-edge`
-import typings.react.reactStrings.alphabetic
-import typings.react.reactStrings.auto
-import typings.react.reactStrings.baseline
-import typings.react.reactStrings.bevel
-import typings.react.reactStrings.butt
-import typings.react.reactStrings.central
-import typings.react.reactStrings.evenodd
-import typings.react.reactStrings.hanging
-import typings.react.reactStrings.ideographic
-import typings.react.reactStrings.inherit
-import typings.react.reactStrings.initial
-import typings.react.reactStrings.isolated
-import typings.react.reactStrings.linearRGB
-import typings.react.reactStrings.mathematical
-import typings.react.reactStrings.medial
-import typings.react.reactStrings.middle
-import typings.react.reactStrings.miter
-import typings.react.reactStrings.no
-import typings.react.reactStrings.none
-import typings.react.reactStrings.nonzero
-import typings.react.reactStrings.replace
-import typings.react.reactStrings.round
-import typings.react.reactStrings.sRGB
-import typings.react.reactStrings.square
-import typings.react.reactStrings.sum
-import typings.react.reactStrings.terminal
-import typings.react.reactStrings.yes
 import typings.std.HTMLElement
 import typings.std.NonNullable
 import typings.std.Pick
@@ -150,6 +119,17 @@ object mod {
     
     def find(props: EnzymePropSelector): ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
     def find(selector: String): ReactWrapper[HTMLAttributes, Any, Component[js.Object, js.Object, Any]] = js.native
+    @JSName("find")
+    @scala.annotation.targetName("find_props")
+    def find[C2 /* <: Component[js.Object, js.Object, Any] */](
+      componentClass: ComponentClass[
+          /* import warning: importer.ImportType#apply Failed type conversion: C2['props'] */ js.Any
+        ]
+    ): ReactWrapper[
+        /* import warning: importer.ImportType#apply Failed type conversion: C2['props'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: C2['state'] */ js.Any, 
+        C2
+      ] = js.native
     def find[P2](component: ComponentType[P2]): ReactWrapper[P2, Any, Component[js.Object, js.Object, Any]] = js.native
     /**
       * Find every node in the render tree that matches the provided selector.
@@ -166,17 +146,6 @@ object mod {
           Boolean
         ]
     ): ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
-    
-    @JSName("find")
-    def find_props[C2 /* <: Component[js.Object, js.Object, Any] */](
-      componentClass: ComponentClass[
-          /* import warning: importer.ImportType#apply Failed type conversion: C2['props'] */ js.Any
-        ]
-    ): ReactWrapper[
-        /* import warning: importer.ImportType#apply Failed type conversion: C2['props'] */ js.Any, 
-        /* import warning: importer.ImportType#apply Failed type conversion: C2['state'] */ js.Any, 
-        C2
-      ] = js.native
     
     /**
       * If a wrappingComponent was passed in options,
@@ -310,6 +279,17 @@ object mod {
     
     def find(props: EnzymePropSelector): ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
     def find(selector: String): ShallowWrapper[HTMLAttributes, Any, Component[js.Object, js.Object, Any]] = js.native
+    @JSName("find")
+    @scala.annotation.targetName("find_props")
+    def find[C2 /* <: Component[js.Object, js.Object, Any] */](
+      componentClass: ComponentClass[
+          /* import warning: importer.ImportType#apply Failed type conversion: C2['props'] */ js.Any
+        ]
+    ): ShallowWrapper[
+        /* import warning: importer.ImportType#apply Failed type conversion: C2['props'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: C2['state'] */ js.Any, 
+        C2
+      ] = js.native
     def find[P2](component: ComponentType[P2]): ShallowWrapper[P2, Any, Component[js.Object, js.Object, Any]] = js.native
     /**
       * Find every node in the render tree that matches the provided selector.
@@ -326,17 +306,6 @@ object mod {
           Boolean
         ]
     ): ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
-    
-    @JSName("find")
-    def find_props[C2 /* <: Component[js.Object, js.Object, Any] */](
-      componentClass: ComponentClass[
-          /* import warning: importer.ImportType#apply Failed type conversion: C2['props'] */ js.Any
-        ]
-    ): ShallowWrapper[
-        /* import warning: importer.ImportType#apply Failed type conversion: C2['props'] */ js.Any, 
-        /* import warning: importer.ImportType#apply Failed type conversion: C2['state'] */ js.Any, 
-        C2
-      ] = js.native
     
     /**
       * If a wrappingComponent was passed in options,
@@ -774,21 +743,21 @@ object mod {
     // SVG Specific attributes
     var accentHeight: js.UndefOr[Double | String] = js.undefined
     
-    var accumulate: js.UndefOr[none | sum] = js.undefined
+    var accumulate: js.UndefOr["none" | "sum"] = js.undefined
     
-    var additive: js.UndefOr[replace | sum] = js.undefined
+    var additive: js.UndefOr["replace" | "sum"] = js.undefined
     
     var alignmentBaseline: js.UndefOr[
-        auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit
+        "auto" | "baseline" | "before-edge" | "text-before-edge" | "middle" | "central" | "after-edge" | "text-after-edge" | "ideographic" | "alphabetic" | "hanging" | "mathematical" | "inherit"
       ] = js.undefined
     
-    var allowReorder: js.UndefOr[no | yes] = js.undefined
+    var allowReorder: js.UndefOr["no" | "yes"] = js.undefined
     
     var alphabetic: js.UndefOr[Double | String] = js.undefined
     
     var amplitude: js.UndefOr[Double | String] = js.undefined
     
-    var arabicForm: js.UndefOr[initial | medial | terminal | isolated] = js.undefined
+    var arabicForm: js.UndefOr["initial" | "medial" | "terminal" | "isolated"] = js.undefined
     
     var ascent: js.UndefOr[Double | String] = js.undefined
     
@@ -828,7 +797,7 @@ object mod {
     
     var colorInterpolation: js.UndefOr[Double | String] = js.undefined
     
-    var colorInterpolationFilters: js.UndefOr[auto | sRGB | linearRGB | inherit] = js.undefined
+    var colorInterpolationFilters: js.UndefOr["auto" | "sRGB" | "linearRGB" | "inherit"] = js.undefined
     
     var colorProfile: js.UndefOr[Double | String] = js.undefined
     
@@ -882,7 +851,7 @@ object mod {
     
     var fillOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var fillRule: js.UndefOr[nonzero | evenodd | inherit] = js.undefined
+    var fillRule: js.UndefOr["nonzero" | "evenodd" | "inherit"] = js.undefined
     
     var filter: js.UndefOr[String] = js.undefined
     
@@ -894,7 +863,7 @@ object mod {
     
     var floodOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var focusable: js.UndefOr[Booleanish | auto] = js.undefined
+    var focusable: js.UndefOr[Booleanish | "auto"] = js.undefined
     
     var fontFamily: js.UndefOr[String] = js.undefined
     
@@ -1130,9 +1099,9 @@ object mod {
     
     var strokeDashoffset: js.UndefOr[String | Double] = js.undefined
     
-    var strokeLinecap: js.UndefOr[butt | round | square | inherit] = js.undefined
+    var strokeLinecap: js.UndefOr["butt" | "round" | "square" | "inherit"] = js.undefined
     
-    var strokeLinejoin: js.UndefOr[miter | round | bevel | inherit] = js.undefined
+    var strokeLinejoin: js.UndefOr["miter" | "round" | "bevel" | "inherit"] = js.undefined
     
     var strokeMiterlimit: js.UndefOr[Double | String] = js.undefined
     
@@ -1269,21 +1238,21 @@ object mod {
       
       inline def setAccentHeightUndefined: Self = StObject.set(x, "accentHeight", js.undefined)
       
-      inline def setAccumulate(value: none | sum): Self = StObject.set(x, "accumulate", value.asInstanceOf[js.Any])
+      inline def setAccumulate(value: "none" | "sum"): Self = StObject.set(x, "accumulate", value.asInstanceOf[js.Any])
       
       inline def setAccumulateUndefined: Self = StObject.set(x, "accumulate", js.undefined)
       
-      inline def setAdditive(value: replace | sum): Self = StObject.set(x, "additive", value.asInstanceOf[js.Any])
+      inline def setAdditive(value: "replace" | "sum"): Self = StObject.set(x, "additive", value.asInstanceOf[js.Any])
       
       inline def setAdditiveUndefined: Self = StObject.set(x, "additive", js.undefined)
       
       inline def setAlignmentBaseline(
-        value: auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit
+        value: "auto" | "baseline" | "before-edge" | "text-before-edge" | "middle" | "central" | "after-edge" | "text-after-edge" | "ideographic" | "alphabetic" | "hanging" | "mathematical" | "inherit"
       ): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
       
       inline def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
       
-      inline def setAllowReorder(value: no | yes): Self = StObject.set(x, "allowReorder", value.asInstanceOf[js.Any])
+      inline def setAllowReorder(value: "no" | "yes"): Self = StObject.set(x, "allowReorder", value.asInstanceOf[js.Any])
       
       inline def setAllowReorderUndefined: Self = StObject.set(x, "allowReorder", js.undefined)
       
@@ -1295,7 +1264,7 @@ object mod {
       
       inline def setAmplitudeUndefined: Self = StObject.set(x, "amplitude", js.undefined)
       
-      inline def setArabicForm(value: initial | medial | terminal | isolated): Self = StObject.set(x, "arabicForm", value.asInstanceOf[js.Any])
+      inline def setArabicForm(value: "initial" | "medial" | "terminal" | "isolated"): Self = StObject.set(x, "arabicForm", value.asInstanceOf[js.Any])
       
       inline def setArabicFormUndefined: Self = StObject.set(x, "arabicForm", js.undefined)
       
@@ -1373,7 +1342,7 @@ object mod {
       
       inline def setColorInterpolation(value: Double | String): Self = StObject.set(x, "colorInterpolation", value.asInstanceOf[js.Any])
       
-      inline def setColorInterpolationFilters(value: auto | sRGB | linearRGB | inherit): Self = StObject.set(x, "colorInterpolationFilters", value.asInstanceOf[js.Any])
+      inline def setColorInterpolationFilters(value: "auto" | "sRGB" | "linearRGB" | "inherit"): Self = StObject.set(x, "colorInterpolationFilters", value.asInstanceOf[js.Any])
       
       inline def setColorInterpolationFiltersUndefined: Self = StObject.set(x, "colorInterpolationFilters", js.undefined)
       
@@ -1481,7 +1450,7 @@ object mod {
       
       inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
       
-      inline def setFillRule(value: nonzero | evenodd | inherit): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
+      inline def setFillRule(value: "nonzero" | "evenodd" | "inherit"): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
       
       inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
       
@@ -1507,7 +1476,7 @@ object mod {
       
       inline def setFloodOpacityUndefined: Self = StObject.set(x, "floodOpacity", js.undefined)
       
-      inline def setFocusable(value: Booleanish | auto): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+      inline def setFocusable(value: Booleanish | "auto"): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
       
       inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
       
@@ -1977,11 +1946,11 @@ object mod {
       
       inline def setStrokeDashoffsetUndefined: Self = StObject.set(x, "strokeDashoffset", js.undefined)
       
-      inline def setStrokeLinecap(value: butt | round | square | inherit): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+      inline def setStrokeLinecap(value: "butt" | "round" | "square" | "inherit"): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
       
       inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
       
-      inline def setStrokeLinejoin(value: miter | round | bevel | inherit): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
+      inline def setStrokeLinejoin(value: "miter" | "round" | "bevel" | "inherit"): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
       
       inline def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
       

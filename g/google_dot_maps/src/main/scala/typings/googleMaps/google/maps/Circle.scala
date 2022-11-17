@@ -1,6 +1,5 @@
 package typings.googleMaps.google.maps
 
-import typings.googleMaps.google.maps.places._LocationBias
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Circle
   extends StObject
-     with MVCObject
-     with _LocationBias {
+     with MVCObject {
   
   /**
     * Gets the <code>LatLngBounds</code> of this Circle.

@@ -1,17 +1,14 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashNAVIGATE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NavigationNavigateAction
   extends StObject
-     with NavigationNavigateActionPayload
-     with NavigationStackAction
-     with NavigationTabAction {
+     with NavigationNavigateActionPayload {
   
-  var `type`: NavigationSlashNAVIGATE
+  var `type`: "Navigation/NAVIGATE"
 }
 object NavigationNavigateAction {
   
@@ -23,6 +20,6 @@ object NavigationNavigateAction {
   
   extension [Self <: NavigationNavigateAction](x: Self) {
     
-    inline def setType(value: NavigationSlashNAVIGATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Navigation/NAVIGATE"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

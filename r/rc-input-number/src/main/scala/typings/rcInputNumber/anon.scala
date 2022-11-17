@@ -1,8 +1,6 @@
 package typings.rcInputNumber
 
 import typings.rcInputNumber.esUtilsMiniDecimalMod.ValueType
-import typings.rcInputNumber.rcInputNumberStrings.down
-import typings.rcInputNumber.rcInputNumberStrings.up
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.std.HTMLInputElement
@@ -129,11 +127,11 @@ object anon {
     
     var offset: ValueType
     
-    var `type`: up | down
+    var `type`: "up" | "down"
   }
   object Offset {
     
-    inline def apply(offset: ValueType, `type`: up | down): Offset = {
+    inline def apply(offset: ValueType, `type`: "up" | "down"): Offset = {
       val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Offset]
@@ -143,7 +141,7 @@ object anon {
       
       inline def setOffset(value: ValueType): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      inline def setType(value: up | down): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "up" | "down"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

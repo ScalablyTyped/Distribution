@@ -1,7 +1,5 @@
 package typings.expoConfigTypes.anon
 
-import typings.expoConfigTypes.expoConfigTypesStrings.collapse
-import typings.expoConfigTypes.expoConfigTypesStrings.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +14,7 @@ trait AndroidCollapsedTitle extends StObject {
   /**
     * Show each push notification individually (`default`) or collapse into one (`collapse`).
     */
-  var androidMode: js.UndefOr[default | collapse] = js.undefined
+  var androidMode: js.UndefOr["default" | "collapse"] = js.undefined
   
   /**
     * (Android only) Tint color for the push notification image when it appears in the notification tray. Defaults to `#ffffff`
@@ -46,7 +44,7 @@ object AndroidCollapsedTitle {
     
     inline def setAndroidCollapsedTitleUndefined: Self = StObject.set(x, "androidCollapsedTitle", js.undefined)
     
-    inline def setAndroidMode(value: default | collapse): Self = StObject.set(x, "androidMode", value.asInstanceOf[js.Any])
+    inline def setAndroidMode(value: "default" | "collapse"): Self = StObject.set(x, "androidMode", value.asInstanceOf[js.Any])
     
     inline def setAndroidModeUndefined: Self = StObject.set(x, "androidMode", js.undefined)
     

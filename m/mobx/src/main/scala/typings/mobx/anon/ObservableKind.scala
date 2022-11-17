@@ -1,6 +1,5 @@
 package typings.mobx.anon
 
-import typings.mobx.mobxStrings.`object`
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +13,7 @@ trait ObservableKind[T] extends StObject {
   
   var `object`: T
   
-  var observableKind: `object`
+  var observableKind: "object"
 }
 object ObservableKind {
   
@@ -32,6 +31,6 @@ object ObservableKind {
     
     inline def setObject(value: T): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    inline def setObservableKind(value: `object`): Self = StObject.set(x, "observableKind", value.asInstanceOf[js.Any])
+    inline def setObservableKind(value: "object"): Self = StObject.set(x, "observableKind", value.asInstanceOf[js.Any])
   }
 }

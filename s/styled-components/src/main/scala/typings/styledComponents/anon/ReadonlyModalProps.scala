@@ -14,26 +14,6 @@ import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.ViewStyle
-import typings.styledComponents.styledComponentsStrings.`box-none`
-import typings.styledComponents.styledComponentsStrings.`box-only`
-import typings.styledComponents.styledComponentsStrings.`landscape-left`
-import typings.styledComponents.styledComponentsStrings.`landscape-right`
-import typings.styledComponents.styledComponentsStrings.`no-hide-descendants`
-import typings.styledComponents.styledComponentsStrings.`portrait-upside-down`
-import typings.styledComponents.styledComponentsStrings.assertive
-import typings.styledComponents.styledComponentsStrings.auto
-import typings.styledComponents.styledComponentsStrings.fade
-import typings.styledComponents.styledComponentsStrings.formSheet
-import typings.styledComponents.styledComponentsStrings.fullScreen
-import typings.styledComponents.styledComponentsStrings.landscape
-import typings.styledComponents.styledComponentsStrings.no
-import typings.styledComponents.styledComponentsStrings.none
-import typings.styledComponents.styledComponentsStrings.overFullScreen
-import typings.styledComponents.styledComponentsStrings.pageSheet
-import typings.styledComponents.styledComponentsStrings.polite
-import typings.styledComponents.styledComponentsStrings.portrait
-import typings.styledComponents.styledComponentsStrings.slide
-import typings.styledComponents.styledComponentsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +35,7 @@ trait ReadonlyModalProps extends StObject {
   
   val accessibilityLanguage: js.UndefOr[String] = js.undefined
   
-  val accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+  val accessibilityLiveRegion: js.UndefOr["none" | "polite" | "assertive"] = js.undefined
   
   val accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
@@ -69,7 +49,7 @@ trait ReadonlyModalProps extends StObject {
   
   val animated: js.UndefOr[Boolean] = js.undefined
   
-  val animationType: js.UndefOr[none | slide | fade] = js.undefined
+  val animationType: js.UndefOr["none" | "slide" | "fade"] = js.undefined
   
   val children: js.UndefOr[ReactNode] = js.undefined
   
@@ -83,7 +63,7 @@ trait ReadonlyModalProps extends StObject {
   
   val hitSlop: js.UndefOr[Insets] = js.undefined
   
-  val importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+  val importantForAccessibility: js.UndefOr["auto" | "yes" | "no" | "no-hide-descendants"] = js.undefined
   
   val isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
@@ -167,9 +147,9 @@ trait ReadonlyModalProps extends StObject {
   
   val onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
+  val pointerEvents: js.UndefOr["box-none" | "none" | "box-only" | "auto"] = js.undefined
   
-  val presentationStyle: js.UndefOr[fullScreen | pageSheet | formSheet | overFullScreen] = js.undefined
+  val presentationStyle: js.UndefOr["fullScreen" | "pageSheet" | "formSheet" | "overFullScreen"] = js.undefined
   
   val removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
   
@@ -183,7 +163,7 @@ trait ReadonlyModalProps extends StObject {
   
   val supportedOrientations: js.UndefOr[
     js.Array[
-      portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
+      "portrait" | "portrait-upside-down" | "landscape" | "landscape-left" | "landscape-right"
     ]
   ] = js.undefined
   
@@ -244,7 +224,7 @@ object ReadonlyModalProps {
     
     inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
     
-    inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLiveRegion(value: "none" | "polite" | "assertive"): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
     
@@ -272,7 +252,7 @@ object ReadonlyModalProps {
     
     inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
-    inline def setAnimationType(value: none | slide | fade): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
+    inline def setAnimationType(value: "none" | "slide" | "fade"): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
     
     inline def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
     
@@ -300,7 +280,7 @@ object ReadonlyModalProps {
     
     inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
     
-    inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+    inline def setImportantForAccessibility(value: "auto" | "yes" | "no" | "no-hide-descendants"): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
@@ -468,11 +448,11 @@ object ReadonlyModalProps {
     
     inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
-    inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    inline def setPointerEvents(value: "box-none" | "none" | "box-only" | "auto"): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     
-    inline def setPresentationStyle(value: fullScreen | pageSheet | formSheet | overFullScreen): Self = StObject.set(x, "presentationStyle", value.asInstanceOf[js.Any])
+    inline def setPresentationStyle(value: "fullScreen" | "pageSheet" | "formSheet" | "overFullScreen"): Self = StObject.set(x, "presentationStyle", value.asInstanceOf[js.Any])
     
     inline def setPresentationStyleUndefined: Self = StObject.set(x, "presentationStyle", js.undefined)
     
@@ -500,13 +480,13 @@ object ReadonlyModalProps {
     
     inline def setSupportedOrientations(
       value: js.Array[
-          portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
+          "portrait" | "portrait-upside-down" | "landscape" | "landscape-left" | "landscape-right"
         ]
     ): Self = StObject.set(x, "supportedOrientations", value.asInstanceOf[js.Any])
     
     inline def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
     
-    inline def setSupportedOrientationsVarargs(value: (portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`)*): Self = StObject.set(x, "supportedOrientations", js.Array(value*))
+    inline def setSupportedOrientationsVarargs(value: ("portrait" | "portrait-upside-down" | "landscape" | "landscape-left" | "landscape-right")*): Self = StObject.set(x, "supportedOrientations", js.Array(value*))
     
     inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     

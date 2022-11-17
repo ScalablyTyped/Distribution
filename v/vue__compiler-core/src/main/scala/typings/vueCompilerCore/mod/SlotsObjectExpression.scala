@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SlotsObjectExpression
   extends StObject
-     with ObjectExpression
-     with SlotsExpression {
+     with ObjectExpression {
   
   @JSName("properties")
   var properties_SlotsObjectExpression: js.Array[SlotsObjectProperty]

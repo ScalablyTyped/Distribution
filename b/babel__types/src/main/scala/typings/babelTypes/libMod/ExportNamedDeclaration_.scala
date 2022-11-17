@@ -1,34 +1,25 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ExportNamedDeclaration
-import typings.babelTypes.babelTypesStrings.`type`
-import typings.babelTypes.babelTypesStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ExportNamedDeclaration_
   extends StObject
-     with BaseNode
-     with Declaration
-     with ExportDeclaration
-     with ModuleDeclaration
-     with Node
-     with Standardized
-     with Statement {
+     with BaseNode {
   
   var assertions: js.UndefOr[js.Array[ImportAttribute_] | Null] = js.undefined
   
   var declaration: js.UndefOr[Declaration | Null] = js.undefined
   
-  var exportKind: js.UndefOr[`type` | value | Null] = js.undefined
+  var exportKind: js.UndefOr["type" | "value" | Null] = js.undefined
   
   var source: js.UndefOr[StringLiteral_ | Null] = js.undefined
   
   var specifiers: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_]
   
   @JSName("type")
-  var type_ExportNamedDeclaration_ : ExportNamedDeclaration
+  var type_ExportNamedDeclaration_ : "ExportNamedDeclaration"
 }
 object ExportNamedDeclaration_ {
   
@@ -54,7 +45,7 @@ object ExportNamedDeclaration_ {
     
     inline def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
     
-    inline def setExportKind(value: `type` | value): Self = StObject.set(x, "exportKind", value.asInstanceOf[js.Any])
+    inline def setExportKind(value: "type" | "value"): Self = StObject.set(x, "exportKind", value.asInstanceOf[js.Any])
     
     inline def setExportKindNull: Self = StObject.set(x, "exportKind", null)
     
@@ -70,6 +61,6 @@ object ExportNamedDeclaration_ {
     
     inline def setSpecifiersVarargs(value: (ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_)*): Self = StObject.set(x, "specifiers", js.Array(value*))
     
-    inline def setType(value: ExportNamedDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ExportNamedDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

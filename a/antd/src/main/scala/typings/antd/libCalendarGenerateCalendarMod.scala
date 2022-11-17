@@ -2,19 +2,6 @@ package typings.antd
 
 import typings.antd.anon.Locale
 import typings.antd.anon.OnChange
-import typings.antd.antdStrings.date
-import typings.antd.antdStrings.default
-import typings.antd.antdStrings.generateConfig
-import typings.antd.antdStrings.large
-import typings.antd.antdStrings.locale
-import typings.antd.antdStrings.ltr
-import typings.antd.antdStrings.nextIcon
-import typings.antd.antdStrings.prevIcon
-import typings.antd.antdStrings.rtl
-import typings.antd.antdStrings.small
-import typings.antd.antdStrings.superNextIcon
-import typings.antd.antdStrings.superPrevIcon
-import typings.antd.antdStrings.time
 import typings.antd.libDatePickerGeneratePickerMod.PickerLocale
 import typings.rcPicker.esGenerateMod.GenerateConfig
 import typings.rcPicker.esInterfaceMod.Components
@@ -47,17 +34,13 @@ object libCalendarGenerateCalendarMod {
   
   inline def default[DateType](generateConfig: GenerateConfig[DateType]): js.Function1[/* props */ CalendarProps[DateType], Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generateConfig.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ CalendarProps[DateType], Element]]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.year
-    - typings.antd.antdStrings.month
-  */
-  trait CalendarMode extends StObject
   object CalendarMode {
     
-    inline def month: typings.antd.antdStrings.month = "month".asInstanceOf[typings.antd.antdStrings.month]
+    inline def month: "month" = "month".asInstanceOf["month"]
     
-    inline def year: typings.antd.antdStrings.year = "year".asInstanceOf[typings.antd.antdStrings.year]
+    inline def year: "year" = "year".asInstanceOf["year"]
   }
+  type CalendarMode = "year" | "month"
   
   trait CalendarProps[DateType] extends StObject {
     
@@ -184,13 +167,11 @@ object libCalendarGenerateCalendarMod {
   
   type InjectDefaultProps[Props] = (Omit[
     Props, 
-    locale | generateConfig | prevIcon | nextIcon | superPrevIcon | superNextIcon
+    "locale" | "generateConfig" | "prevIcon" | "nextIcon" | "superPrevIcon" | "superNextIcon"
   ]) & Locale
   
   /* Inlined antd.antd/lib/calendar/generateCalendar.InjectDefaultProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelBaseProps<DateType>> */
-  trait PickerPanelBaseProps[DateType]
-    extends StObject
-       with PickerProps[DateType] {
+  trait PickerPanelBaseProps[DateType] extends StObject {
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -202,7 +183,7 @@ object libCalendarGenerateCalendarMod {
     
     var defaultValue: js.UndefOr[DateType] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
@@ -226,7 +207,7 @@ object libCalendarGenerateCalendarMod {
     
     var onSelect: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.undefined
     
-    var picker: Exclude[PickerMode, date | time]
+    var picker: Exclude[PickerMode, "date" | "time"]
     
     var pickerValue: js.UndefOr[DateType] = js.undefined
     
@@ -234,7 +215,7 @@ object libCalendarGenerateCalendarMod {
     
     var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.undefined
     
-    var size: js.UndefOr[large | default | small] = js.undefined
+    var size: js.UndefOr["large" | "default" | "small"] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -244,7 +225,7 @@ object libCalendarGenerateCalendarMod {
   }
   object PickerPanelBaseProps {
     
-    inline def apply[DateType](picker: Exclude[PickerMode, date | time]): PickerPanelBaseProps[DateType] = {
+    inline def apply[DateType](picker: Exclude[PickerMode, "date" | "time"]): PickerPanelBaseProps[DateType] = {
       val __obj = js.Dynamic.literal(picker = picker.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickerPanelBaseProps[DateType]]
     }
@@ -271,7 +252,7 @@ object libCalendarGenerateCalendarMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -319,7 +300,7 @@ object libCalendarGenerateCalendarMod {
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      inline def setPicker(value: Exclude[PickerMode, date | time]): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: Exclude[PickerMode, "date" | "time"]): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
       inline def setPickerValue(value: DateType): Self = StObject.set(x, "pickerValue", value.asInstanceOf[js.Any])
       
@@ -333,7 +314,7 @@ object libCalendarGenerateCalendarMod {
       
       inline def setRenderExtraFooterUndefined: Self = StObject.set(x, "renderExtraFooter", js.undefined)
       
-      inline def setSize(value: large | default | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "large" | "default" | "small"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -354,9 +335,7 @@ object libCalendarGenerateCalendarMod {
   }
   
   /* Inlined antd.antd/lib/calendar/generateCalendar.InjectDefaultProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelDateProps<DateType>> */
-  trait PickerPanelDateProps[DateType]
-    extends StObject
-       with PickerProps[DateType] {
+  trait PickerPanelDateProps[DateType] extends StObject {
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -368,7 +347,7 @@ object libCalendarGenerateCalendarMod {
     
     var defaultValue: js.UndefOr[DateType] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
@@ -394,7 +373,7 @@ object libCalendarGenerateCalendarMod {
     
     var onSelect: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.undefined
     
-    var picker: js.UndefOr[date] = js.undefined
+    var picker: js.UndefOr["date"] = js.undefined
     
     var pickerValue: js.UndefOr[DateType] = js.undefined
     
@@ -408,7 +387,7 @@ object libCalendarGenerateCalendarMod {
     
     var showToday: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[large | default | small] = js.undefined
+    var size: js.UndefOr["large" | "default" | "small"] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -445,7 +424,7 @@ object libCalendarGenerateCalendarMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -497,7 +476,7 @@ object libCalendarGenerateCalendarMod {
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      inline def setPicker(value: date): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: "date"): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
       inline def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
       
@@ -525,7 +504,7 @@ object libCalendarGenerateCalendarMod {
       
       inline def setShowTodayUndefined: Self = StObject.set(x, "showToday", js.undefined)
       
-      inline def setSize(value: large | default | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "large" | "default" | "small"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -546,9 +525,7 @@ object libCalendarGenerateCalendarMod {
   }
   
   /* Inlined antd.antd/lib/calendar/generateCalendar.InjectDefaultProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelTimeProps<DateType>> */
-  trait PickerPanelTimeProps[DateType]
-    extends StObject
-       with PickerProps[DateType] {
+  trait PickerPanelTimeProps[DateType] extends StObject {
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -560,7 +537,7 @@ object libCalendarGenerateCalendarMod {
     
     var defaultValue: js.UndefOr[DateType] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
@@ -600,7 +577,7 @@ object libCalendarGenerateCalendarMod {
     
     var onSelect: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.undefined
     
-    var picker: time
+    var picker: "time"
     
     var pickerValue: js.UndefOr[DateType] = js.undefined
     
@@ -618,7 +595,7 @@ object libCalendarGenerateCalendarMod {
     
     var showSecond: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[large | default | small] = js.undefined
+    var size: js.UndefOr["large" | "default" | "small"] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -657,7 +634,7 @@ object libCalendarGenerateCalendarMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -737,7 +714,7 @@ object libCalendarGenerateCalendarMod {
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      inline def setPicker(value: time): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: "time"): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
       inline def setPickerValue(value: DateType): Self = StObject.set(x, "pickerValue", value.asInstanceOf[js.Any])
       
@@ -771,7 +748,7 @@ object libCalendarGenerateCalendarMod {
       
       inline def setShowSecondUndefined: Self = StObject.set(x, "showSecond", js.undefined)
       
-      inline def setSize(value: large | default | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "large" | "default" | "small"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -795,27 +772,5 @@ object libCalendarGenerateCalendarMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.libCalendarGenerateCalendarMod.PickerPanelBaseProps[DateType]
-    - typings.antd.libCalendarGenerateCalendarMod.PickerPanelDateProps[DateType]
-    - typings.antd.libCalendarGenerateCalendarMod.PickerPanelTimeProps[DateType]
-  */
-  trait PickerProps[DateType] extends StObject
-  object PickerProps {
-    
-    inline def PickerPanelBaseProps[DateType](picker: Exclude[PickerMode, date | time]): typings.antd.libCalendarGenerateCalendarMod.PickerPanelBaseProps[DateType] = {
-      val __obj = js.Dynamic.literal(picker = picker.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.antd.libCalendarGenerateCalendarMod.PickerPanelBaseProps[DateType]]
-    }
-    
-    inline def PickerPanelDateProps[DateType](): typings.antd.libCalendarGenerateCalendarMod.PickerPanelDateProps[DateType] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.antd.libCalendarGenerateCalendarMod.PickerPanelDateProps[DateType]]
-    }
-    
-    inline def PickerPanelTimeProps[DateType](): typings.antd.libCalendarGenerateCalendarMod.PickerPanelTimeProps[DateType] = {
-      val __obj = js.Dynamic.literal(picker = "time")
-      __obj.asInstanceOf[typings.antd.libCalendarGenerateCalendarMod.PickerPanelTimeProps[DateType]]
-    }
-  }
+  type PickerProps[DateType] = PickerPanelBaseProps[DateType] | PickerPanelDateProps[DateType] | PickerPanelTimeProps[DateType]
 }

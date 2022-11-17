@@ -1,6 +1,5 @@
 package typings.mobx.anon
 
-import typings.mobx.mobxStrings.add
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait NewValueType extends StObject {
   
   var newValue: Any
   
-  var `type`: add
+  var `type`: "add"
 }
 object NewValueType {
   
@@ -23,6 +22,6 @@ object NewValueType {
     
     inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    inline def setType(value: add): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "add"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

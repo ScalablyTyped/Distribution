@@ -1,7 +1,6 @@
 package typings.webxr
 
 import typings.std.Event
-import typings.webxr.webxrStrings.reset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,5 +21,5 @@ trait XRReferenceSpaceEvent
   val transform: js.UndefOr[XRRigidTransform] = js.native
   
   @JSName("type")
-  val type_XRReferenceSpaceEvent: reset = js.native
+  val type_XRReferenceSpaceEvent: "reset" = js.native
 }

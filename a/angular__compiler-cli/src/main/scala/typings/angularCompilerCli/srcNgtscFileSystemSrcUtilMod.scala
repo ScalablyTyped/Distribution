@@ -1,6 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliStrings.PathSegment
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.BrandedPath
 import typings.typescript.mod.Program
@@ -20,8 +19,8 @@ object srcNgtscFileSystemSrcUtilMod {
   inline def normalizeSeparators(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeSeparators")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def stripExtension(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripExtension")(path.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def stripExtension_AbsoluteFsPath(path: BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath]): BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripExtension")(path.asInstanceOf[js.Any]).asInstanceOf[BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.AbsoluteFsPath]]
-  
-  inline def stripExtension_PathSegment(path: BrandedPath[PathSegment]): BrandedPath[PathSegment] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripExtension")(path.asInstanceOf[js.Any]).asInstanceOf[BrandedPath[PathSegment]]
+  @scala.annotation.targetName("stripExtension_AbsoluteFsPath")
+  inline def stripExtension(path: BrandedPath["AbsoluteFsPath"]): BrandedPath["AbsoluteFsPath"] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripExtension")(path.asInstanceOf[js.Any]).asInstanceOf[BrandedPath["AbsoluteFsPath"]]
+  @scala.annotation.targetName("stripExtension_PathSegment")
+  inline def stripExtension(path: BrandedPath["PathSegment"]): BrandedPath["PathSegment"] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripExtension")(path.asInstanceOf[js.Any]).asInstanceOf[BrandedPath["PathSegment"]]
 }

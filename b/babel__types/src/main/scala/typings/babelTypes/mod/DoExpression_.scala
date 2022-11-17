@@ -1,22 +1,19 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.DoExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait DoExpression_
+trait DoExpression_
   extends StObject
-     with BaseNode
-     with Expression {
+     with BaseNode {
   
   var async: Boolean
   
   var body: BlockStatement_
   
   @JSName("type")
-  var type_DoExpression_ : DoExpression
+  var type_DoExpression_ : "DoExpression"
 }
 object DoExpression_ {
   
@@ -32,6 +29,6 @@ object DoExpression_ {
     
     inline def setBody(value: BlockStatement_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setType(value: DoExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "DoExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

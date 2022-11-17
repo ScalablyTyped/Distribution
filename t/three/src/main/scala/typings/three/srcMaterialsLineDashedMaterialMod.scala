@@ -2,7 +2,6 @@ package typings.three
 
 import typings.three.srcMaterialsLineBasicMaterialMod.LineBasicMaterial
 import typings.three.srcMaterialsLineBasicMaterialMod.LineBasicMaterialParameters
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object srcMaterialsLineDashedMaterialMod {
       */
     var gapSize: Double = js.native
     
-    val isLineDashedMaterial: `true` = js.native
+    val isLineDashedMaterial: true = js.native
     
     /**
       * @default 1

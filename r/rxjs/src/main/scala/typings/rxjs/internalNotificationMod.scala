@@ -5,9 +5,6 @@ import typings.rxjs.distTypesInternalTypesMod.ErrorNotification
 import typings.rxjs.distTypesInternalTypesMod.NextNotification
 import typings.rxjs.distTypesInternalTypesMod.ObservableNotification
 import typings.rxjs.distTypesInternalTypesMod.PartialObserver
-import typings.rxjs.rxjsStrings.C
-import typings.rxjs.rxjsStrings.E
-import typings.rxjs.rxjsStrings.N
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,19 +21,18 @@ object internalNotificationMod {
   open class Notification[T] protected ()
     extends typings.rxjs.distTypesInternalNotificationMod.Notification[T] {
     /**
-      * Creates a "completion" notification object.
-      * @param kind Always `'C'`
-      * @deprecated Internal implementation detail. Use {@link Notification#createComplete createComplete} instead.
-      */
-    def this(kind: C) = this()
-    /**
       * Creates a "Next" notification object.
       * @param kind Always `'N'`
       * @param value The value to notify with if observed.
       * @deprecated Internal implementation detail. Use {@link Notification#createNext createNext} instead.
       */
-    def this(kind: N) = this()
-    def this(kind: N, value: T) = this()
+    /**
+      * Creates a "completion" notification object.
+      * @param kind Always `'C'`
+      * @deprecated Internal implementation detail. Use {@link Notification#createComplete createComplete} instead.
+      */
+    def this(kind: "N" | "C") = this()
+    def this(kind: "N", value: T) = this()
     /**
       * Creates an "Error" notification object.
       * @param kind Always `'E'`
@@ -44,7 +40,7 @@ object internalNotificationMod {
       * @param error The error to notify with if observed.
       * @deprecated Internal implementation detail. Use {@link Notification#createError createError} instead.
       */
-    def this(kind: E, value: Unit, error: Any) = this()
+    def this(kind: "E", value: Unit, error: Any) = this()
   }
   /* static members */
   object Notification {

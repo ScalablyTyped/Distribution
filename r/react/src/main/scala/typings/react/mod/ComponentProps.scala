@@ -16,4 +16,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   }}}
   */
 @js.native
-trait ComponentProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any */] extends StObject
+trait ComponentProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with "a", "abbr", "address" */ Any */] extends StObject

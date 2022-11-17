@@ -1,10 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.custom
-import typings.electron.electronStrings.error
-import typings.electron.electronStrings.info
-import typings.electron.electronStrings.none
-import typings.electron.electronStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +16,7 @@ trait DisplayBalloonOptions extends StObject {
   /**
     * Can be `none`, `info`, `warning`, `error` or `custom`. Default is `custom`.
     */
-  var iconType: js.UndefOr[none | info | warning | error | custom] = js.undefined
+  var iconType: js.UndefOr["none" | "info" | "warning" | "error" | "custom"] = js.undefined
   
   /**
     * The large version of the icon should be used. Default is `true`. Maps to
@@ -55,7 +50,7 @@ object DisplayBalloonOptions {
     
     inline def setIcon(value: NativeImage_ | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    inline def setIconType(value: none | info | warning | error | custom): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
+    inline def setIconType(value: "none" | "info" | "warning" | "error" | "custom"): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
     
     inline def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
     

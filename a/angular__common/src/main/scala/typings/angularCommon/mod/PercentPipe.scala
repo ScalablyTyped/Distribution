@@ -1,7 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.percent
 import typings.angularCore.mod.PipeTransform
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
@@ -64,6 +62,6 @@ object PercentPipe {
   
   @JSImport("@angular/common", "PercentPipe.\u0275pipe")
   @js.native
-  def ɵpipe: ɵɵPipeDeclaration[PercentPipe, percent, `true`] = js.native
-  inline def ɵpipe_=(x: ɵɵPipeDeclaration[PercentPipe, percent, `true`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
+  def ɵpipe: ɵɵPipeDeclaration[PercentPipe, "percent", true] = js.native
+  inline def ɵpipe_=(x: ɵɵPipeDeclaration[PercentPipe, "percent", true]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
 }

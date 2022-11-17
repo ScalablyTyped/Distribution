@@ -1,10 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.createDirectory
-import typings.electron.electronStrings.dontAddToRecent
-import typings.electron.electronStrings.showHiddenFiles
-import typings.electron.electronStrings.showOverwriteConfirmation
-import typings.electron.electronStrings.treatPackageAsDirectory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +35,7 @@ trait SaveDialogSyncOptions extends StObject {
   
   var properties: js.UndefOr[
     js.Array[
-      showHiddenFiles | createDirectory | treatPackageAsDirectory | showOverwriteConfirmation | dontAddToRecent
+      "showHiddenFiles" | "createDirectory" | "treatPackageAsDirectory" | "showOverwriteConfirmation" | "dontAddToRecent"
     ]
   ] = js.undefined
   
@@ -98,14 +93,14 @@ object SaveDialogSyncOptions {
     
     inline def setProperties(
       value: js.Array[
-          showHiddenFiles | createDirectory | treatPackageAsDirectory | showOverwriteConfirmation | dontAddToRecent
+          "showHiddenFiles" | "createDirectory" | "treatPackageAsDirectory" | "showOverwriteConfirmation" | "dontAddToRecent"
         ]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     inline def setPropertiesVarargs(
-      value: (showHiddenFiles | createDirectory | treatPackageAsDirectory | showOverwriteConfirmation | dontAddToRecent)*
+      value: ("showHiddenFiles" | "createDirectory" | "treatPackageAsDirectory" | "showOverwriteConfirmation" | "dontAddToRecent")*
     ): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setSecurityScopedBookmarks(value: Boolean): Self = StObject.set(x, "securityScopedBookmarks", value.asInstanceOf[js.Any])

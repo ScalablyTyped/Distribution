@@ -4,8 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.angularCompiler.mod.R3FactoryMetadata because Already inherited */ trait R3ExpressionFactoryMetadata
+trait R3ExpressionFactoryMetadata
   extends StObject
      with R3ConstructorFactoryMetadata {
   

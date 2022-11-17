@@ -7,10 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ForOfStatement
   extends StObject
-     with IterationStatement
-     with ForInOrOfStatement
-     with HasInitializer
-     with HasJSDoc {
+     with IterationStatement {
   
   val awaitModifier: js.UndefOr[AwaitKeyword] = js.native
   

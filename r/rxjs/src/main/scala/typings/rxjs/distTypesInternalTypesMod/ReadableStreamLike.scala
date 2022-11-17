@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadableStreamLike[T]
-  extends StObject
-     with _ObservableInput[T] {
+trait ReadableStreamLike[T] extends StObject {
   
   def getReader(): ReadableStreamDefaultReaderLike[T]
 }

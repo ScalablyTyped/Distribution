@@ -4,23 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.applicationSlashxhtmlPlussignxml
-  - typings.std.stdStrings.applicationSlashxml
-  - typings.std.stdStrings.imageSlashsvgPlussignxml
-  - typings.std.stdStrings.textSlashhtml
-  - typings.std.stdStrings.textSlashxml
-*/
-trait DOMParserSupportedType extends StObject
 object DOMParserSupportedType {
   
-  inline def applicationSlashxhtmlPlussignxml: typings.std.stdStrings.applicationSlashxhtmlPlussignxml = "application/xhtml+xml".asInstanceOf[typings.std.stdStrings.applicationSlashxhtmlPlussignxml]
+  inline def applicationSlashxhtmlPlussignxml: "application/xhtml+xml" = "application/xhtml+xml".asInstanceOf["application/xhtml+xml"]
   
-  inline def applicationSlashxml: typings.std.stdStrings.applicationSlashxml = "application/xml".asInstanceOf[typings.std.stdStrings.applicationSlashxml]
+  inline def applicationSlashxml: "application/xml" = "application/xml".asInstanceOf["application/xml"]
   
-  inline def imageSlashsvgPlussignxml: typings.std.stdStrings.imageSlashsvgPlussignxml = "image/svg+xml".asInstanceOf[typings.std.stdStrings.imageSlashsvgPlussignxml]
+  inline def imageSlashsvgPlussignxml: "image/svg+xml" = "image/svg+xml".asInstanceOf["image/svg+xml"]
   
-  inline def textSlashhtml: typings.std.stdStrings.textSlashhtml = "text/html".asInstanceOf[typings.std.stdStrings.textSlashhtml]
+  inline def textSlashhtml: "text/html" = "text/html".asInstanceOf["text/html"]
   
-  inline def textSlashxml: typings.std.stdStrings.textSlashxml = "text/xml".asInstanceOf[typings.std.stdStrings.textSlashxml]
+  inline def textSlashxml: "text/xml" = "text/xml".asInstanceOf["text/xml"]
 }

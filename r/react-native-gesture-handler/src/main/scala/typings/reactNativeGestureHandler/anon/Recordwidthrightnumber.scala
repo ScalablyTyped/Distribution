@@ -1,14 +1,11 @@
 package typings.reactNativeGestureHandler.anon
 
-import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod._HitSlop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<'width' | 'right', number> */
-trait Recordwidthrightnumber
-  extends StObject
-     with _HitSlop {
+trait Recordwidthrightnumber extends StObject {
   
   var right: Double
   

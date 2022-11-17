@@ -2,16 +2,13 @@ package typings.reactBigCalendar.mod
 
 import typings.reactBigCalendar.anon.Bottom
 import typings.reactBigCalendar.anon.ClientX
-import typings.reactBigCalendar.reactBigCalendarStrings.click
-import typings.reactBigCalendar.reactBigCalendarStrings.doubleClick
-import typings.reactBigCalendar.reactBigCalendarStrings.select
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SlotInfo extends StObject {
   
-  var action: select | click | doubleClick
+  var action: "select" | "click" | "doubleClick"
   
   var bounds: js.UndefOr[Bottom] = js.undefined
   
@@ -27,14 +24,14 @@ trait SlotInfo extends StObject {
 }
 object SlotInfo {
   
-  inline def apply(action: select | click | doubleClick, end: js.Date, slots: js.Array[js.Date], start: js.Date): SlotInfo = {
+  inline def apply(action: "select" | "click" | "doubleClick", end: js.Date, slots: js.Array[js.Date], start: js.Date): SlotInfo = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlotInfo]
   }
   
   extension [Self <: SlotInfo](x: Self) {
     
-    inline def setAction(value: select | click | doubleClick): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: "select" | "click" | "doubleClick"): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     inline def setBounds(value: Bottom): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

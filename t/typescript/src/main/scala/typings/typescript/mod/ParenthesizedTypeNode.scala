@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ParenthesizedTypeNode
   extends StObject
-     with TypeNode
-     with HasType {
+     with TypeNode {
   
   @JSName("kind")
   val kind_ParenthesizedTypeNode: ParenthesizedType = js.native

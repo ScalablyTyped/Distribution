@@ -2,10 +2,6 @@ package typings.re2
 
 import org.scalablytyped.runtime.Shortcut
 import typings.node.bufferMod.global.Buffer
-import typings.re2.re2Strings.`throw`
-import typings.re2.re2Strings.nothing
-import typings.re2.re2Strings.warn
-import typings.re2.re2Strings.warnOnce
 import typings.std.Array
 import typings.std.RegExp
 import typings.std.RegExpConstructor
@@ -86,7 +82,7 @@ object mod extends Shortcut {
     
     def getUtf8Length(value: String): Double = js.native
     
-    var unicodeWarningLevel: nothing | warnOnce | warn | `throw` = js.native
+    var unicodeWarningLevel: "nothing" | "warnOnce" | "warn" | "throw" = js.native
   }
   
   @js.native

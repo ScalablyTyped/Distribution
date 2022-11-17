@@ -6,8 +6,6 @@ import typings.reactNative.librariesTypesCodegenTypesMod.WithDefault
 import typings.reactNative.librariesUtilitiesCodegenNativeComponentMod.NativeComponentType
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.ViewProps
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerBooleans.`false`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +22,9 @@ object libTypescriptFabricRngesturehandlerbuttonnativecomponentMod extends Short
     
     var borderless: js.UndefOr[Boolean] = js.undefined
     
-    var enabled: js.UndefOr[WithDefault[Boolean, `true`]] = js.undefined
+    var enabled: js.UndefOr[WithDefault[Boolean, true]] = js.undefined
     
-    var exclusive: js.UndefOr[WithDefault[Boolean, `true`]] = js.undefined
+    var exclusive: js.UndefOr[WithDefault[Boolean, true]] = js.undefined
     
     var foreground: js.UndefOr[Boolean] = js.undefined
     
@@ -34,7 +32,7 @@ object libTypescriptFabricRngesturehandlerbuttonnativecomponentMod extends Short
     
     var rippleRadius: js.UndefOr[Int32] = js.undefined
     
-    var touchSoundDisabled: js.UndefOr[WithDefault[Boolean, `false`]] = js.undefined
+    var touchSoundDisabled: js.UndefOr[WithDefault[Boolean, false]] = js.undefined
   }
   object NativeProps {
     
@@ -49,13 +47,13 @@ object libTypescriptFabricRngesturehandlerbuttonnativecomponentMod extends Short
       
       inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
       
-      inline def setEnabled(value: WithDefault[Boolean, `true`]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: WithDefault[Boolean, true]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
       inline def setEnabledNull: Self = StObject.set(x, "enabled", null)
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setExclusive(value: WithDefault[Boolean, `true`]): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+      inline def setExclusive(value: WithDefault[Boolean, true]): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
       inline def setExclusiveNull: Self = StObject.set(x, "exclusive", null)
       
@@ -73,7 +71,7 @@ object libTypescriptFabricRngesturehandlerbuttonnativecomponentMod extends Short
       
       inline def setRippleRadiusUndefined: Self = StObject.set(x, "rippleRadius", js.undefined)
       
-      inline def setTouchSoundDisabled(value: WithDefault[Boolean, `false`]): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
+      inline def setTouchSoundDisabled(value: WithDefault[Boolean, false]): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
       
       inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
       

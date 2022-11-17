@@ -1,7 +1,5 @@
 package typings.expoConfigTypes.anon
 
-import typings.expoConfigTypes.expoConfigTypesStrings.ON_ERROR_RECOVERY
-import typings.expoConfigTypes.expoConfigTypesStrings.ON_LOAD
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +9,7 @@ trait CheckAutomatically extends StObject {
   /**
     * By default, Expo will check for updates every time the app is loaded. Set this to `ON_ERROR_RECOVERY` to disable automatic checking unless recovering from an error. Must be one of `ON_LOAD` or `ON_ERROR_RECOVERY`
     */
-  var checkAutomatically: js.UndefOr[ON_ERROR_RECOVERY | ON_LOAD] = js.undefined
+  var checkAutomatically: js.UndefOr["ON_ERROR_RECOVERY" | "ON_LOAD"] = js.undefined
   
   /**
     * Local path of a PEM-formatted X.509 certificate used for requiring and verifying signed Expo updates
@@ -47,7 +45,7 @@ object CheckAutomatically {
   
   extension [Self <: CheckAutomatically](x: Self) {
     
-    inline def setCheckAutomatically(value: ON_ERROR_RECOVERY | ON_LOAD): Self = StObject.set(x, "checkAutomatically", value.asInstanceOf[js.Any])
+    inline def setCheckAutomatically(value: "ON_ERROR_RECOVERY" | "ON_LOAD"): Self = StObject.set(x, "checkAutomatically", value.asInstanceOf[js.Any])
     
     inline def setCheckAutomaticallyUndefined: Self = StObject.set(x, "checkAutomatically", js.undefined)
     

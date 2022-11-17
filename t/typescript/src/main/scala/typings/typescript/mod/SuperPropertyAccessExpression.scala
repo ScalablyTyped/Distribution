@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SuperPropertyAccessExpression
   extends StObject
-     with PropertyAccessExpression
-     with SuperProperty {
+     with PropertyAccessExpression {
   
   @JSName("expression")
   val expression_SuperPropertyAccessExpression: SuperExpression = js.native

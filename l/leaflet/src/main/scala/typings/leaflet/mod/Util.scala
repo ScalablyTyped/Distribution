@@ -1,6 +1,5 @@
 package typings.leaflet.mod
 
-import typings.leaflet.leafletBooleans.`false`
 import typings.std.PropertyDescriptorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,12 +31,12 @@ object Util {
   inline def extend[D /* <: js.Object */, S1 /* <: js.Object */, S2 /* <: js.Object */](dest: D, src1: S1, src2: S2): D & S1 & S2 = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(dest.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any])).asInstanceOf[D & S1 & S2]
   inline def extend[D /* <: js.Object */, S1 /* <: js.Object */, S2 /* <: js.Object */, S3 /* <: js.Object */](dest: D, src1: S1, src2: S2, src3: S3): D & S1 & S2 & S3 = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(dest.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any], src3.asInstanceOf[js.Any])).asInstanceOf[D & S1 & S2 & S3]
   
-  inline def falseFn(): `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("falseFn")().asInstanceOf[`false`]
+  inline def falseFn(): false = ^.asInstanceOf[js.Dynamic].applyDynamic("falseFn")().asInstanceOf[false]
   
   inline def formatNum(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("formatNum")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.annotation.targetName("formatNum_false")
+  inline def formatNum(num: Double, digits: false): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNum")(num.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def formatNum(num: Double, digits: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNum")(num.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  inline def formatNum_false(num: Double, digits: `false`): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNum")(num.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def getParamString(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getParamString")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def getParamString(obj: Any, existingUrl: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getParamString")(obj.asInstanceOf[js.Any], existingUrl.asInstanceOf[js.Any])).asInstanceOf[String]

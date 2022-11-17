@@ -1,7 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.keystatuseschange
-import typings.std.stdStrings.message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,34 +15,40 @@ trait MediaKeySession
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_keystatuseschange(`type`: keystatuseschange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_keystatuseschange")
+  def addEventListener(`type`: "keystatuseschange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_keystatuseschange(
-    `type`: keystatuseschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_keystatuseschange(
-    `type`: keystatuseschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_message(
-    `type`: message,
+  @scala.annotation.targetName("addEventListener_message")
+  def addEventListener(
+    `type`: "message",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaKeyMessageEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_message(
-    `type`: message,
+  @scala.annotation.targetName("addEventListener_keystatuseschange")
+  def addEventListener(
+    `type`: "keystatuseschange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_message")
+  def addEventListener(
+    `type`: "message",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaKeyMessageEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_message(
-    `type`: message,
+  @scala.annotation.targetName("addEventListener_message")
+  def addEventListener(
+    `type`: "message",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaKeyMessageEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_keystatuseschange")
+  def addEventListener(
+    `type`: "keystatuseschange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -77,33 +81,39 @@ trait MediaKeySession
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_keystatuseschange(`type`: keystatuseschange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_keystatuseschange")
+  def removeEventListener(`type`: "keystatuseschange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_keystatuseschange(
-    `type`: keystatuseschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_keystatuseschange(
-    `type`: keystatuseschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_message(
-    `type`: message,
+  @scala.annotation.targetName("removeEventListener_message")
+  def removeEventListener(
+    `type`: "message",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaKeyMessageEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_message(
-    `type`: message,
+  @scala.annotation.targetName("removeEventListener_message")
+  def removeEventListener(
+    `type`: "message",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaKeyMessageEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_message(
-    `type`: message,
+  @scala.annotation.targetName("removeEventListener_keystatuseschange")
+  def removeEventListener(
+    `type`: "keystatuseschange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_keystatuseschange")
+  def removeEventListener(
+    `type`: "keystatuseschange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_message")
+  def removeEventListener(
+    `type`: "message",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaKeyMessageEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native

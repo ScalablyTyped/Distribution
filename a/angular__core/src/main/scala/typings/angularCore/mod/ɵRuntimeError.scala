@@ -1,6 +1,5 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreBooleans.`false`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,8 +11,8 @@ open class ɵRuntimeError[T /* <: Double */] protected ()
   extends StObject
      with Error {
   def this(code: T) = this()
+  def this(code: T, message: false) = this()
   def this(code: T, message: String) = this()
-  def this(code: T, message: `false`) = this()
   
   var code: T = js.native
   

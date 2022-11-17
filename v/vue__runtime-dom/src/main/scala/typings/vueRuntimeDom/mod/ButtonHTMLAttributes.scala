@@ -1,8 +1,5 @@
 package typings.vueRuntimeDom.mod
 
-import typings.vueRuntimeDom.vueRuntimeDomStrings.button
-import typings.vueRuntimeDom.vueRuntimeDomStrings.reset
-import typings.vueRuntimeDom.vueRuntimeDomStrings.submit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +26,7 @@ trait ButtonHTMLAttributes
   
   var name: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[submit | reset | button] = js.undefined
+  var `type`: js.UndefOr["submit" | "reset" | "button"] = js.undefined
   
   var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
 }
@@ -78,7 +75,7 @@ object ButtonHTMLAttributes {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setType(value: submit | reset | button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "submit" | "reset" | "button"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

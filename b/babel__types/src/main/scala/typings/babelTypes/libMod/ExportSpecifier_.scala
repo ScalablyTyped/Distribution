@@ -1,27 +1,21 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ExportSpecifier
-import typings.babelTypes.babelTypesStrings.`type`
-import typings.babelTypes.babelTypesStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ExportSpecifier_
   extends StObject
-     with BaseNode
-     with ModuleSpecifier
-     with Node
-     with Standardized {
+     with BaseNode {
   
-  var exportKind: js.UndefOr[`type` | value | Null] = js.undefined
+  var exportKind: js.UndefOr["type" | "value" | Null] = js.undefined
   
   var exported: Identifier_ | StringLiteral_
   
   var local: Identifier_
   
   @JSName("type")
-  var type_ExportSpecifier_ : ExportSpecifier
+  var type_ExportSpecifier_ : "ExportSpecifier"
 }
 object ExportSpecifier_ {
   
@@ -33,7 +27,7 @@ object ExportSpecifier_ {
   
   extension [Self <: ExportSpecifier_](x: Self) {
     
-    inline def setExportKind(value: `type` | value): Self = StObject.set(x, "exportKind", value.asInstanceOf[js.Any])
+    inline def setExportKind(value: "type" | "value"): Self = StObject.set(x, "exportKind", value.asInstanceOf[js.Any])
     
     inline def setExportKindNull: Self = StObject.set(x, "exportKind", null)
     
@@ -43,6 +37,6 @@ object ExportSpecifier_ {
     
     inline def setLocal(value: Identifier_): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ExportSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ExportSpecifier"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

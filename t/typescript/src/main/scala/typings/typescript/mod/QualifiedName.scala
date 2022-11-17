@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait QualifiedName
   extends StObject
-     with Node
-     with EntityName {
+     with Node {
   
   @JSName("kind")
   val kind_QualifiedName: typings.typescript.mod.SyntaxKind.QualifiedName = js.native

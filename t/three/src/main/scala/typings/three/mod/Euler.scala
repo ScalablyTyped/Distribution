@@ -1,7 +1,6 @@
 package typings.three.mod
 
 import typings.three.srcMathEulerMod.EulerOrder
-import typings.three.threeStrings.XYZ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,8 +34,8 @@ object Euler {
   
   @JSImport("three", "Euler.DefaultOrder")
   @js.native
-  def DefaultOrder: XYZ = js.native
-  inline def DefaultOrder_=(x: XYZ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOrder")(x.asInstanceOf[js.Any])
+  def DefaultOrder: "XYZ" = js.native
+  inline def DefaultOrder_=(x: "XYZ"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOrder")(x.asInstanceOf[js.Any])
   
   @JSImport("three", "Euler.RotationOrders")
   @js.native

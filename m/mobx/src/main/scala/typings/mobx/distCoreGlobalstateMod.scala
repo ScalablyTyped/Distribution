@@ -4,7 +4,6 @@ import typings.mobx.distCoreComputedvalueMod.ComputedValue
 import typings.mobx.distCoreDerivationMod.IDerivation
 import typings.mobx.distCoreObservableMod.IObservable
 import typings.mobx.distInternalMod.Reaction_
-import typings.mobx.mobxStrings.always
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +46,7 @@ object distCoreGlobalstateMod {
     /**
       * If strict mode is enabled, state changes are by default not allowed
       */
-    var enforceActions: Boolean | always = js.native
+    var enforceActions: Boolean | "always" = js.native
     
     /**
       * Globally attached error handlers that react specifically to errors in reactions

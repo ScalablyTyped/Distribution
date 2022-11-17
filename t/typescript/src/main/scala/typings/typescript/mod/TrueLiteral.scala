@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TrueLiteral
   extends StObject
-     with PrimaryExpression
-     with BooleanLiteral {
+     with PrimaryExpression {
   
   @JSName("kind")
   val kind_TrueLiteral: TrueKeyword = js.native

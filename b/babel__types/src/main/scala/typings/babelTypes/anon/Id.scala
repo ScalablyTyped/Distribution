@@ -1,6 +1,5 @@
 package typings.babelTypes.anon
 
-import typings.babelTypes.babelTypesStrings.`var`
 import typings.babelTypes.mod.Expression
 import typings.babelTypes.mod.LVal
 import org.scalablytyped.runtime.StObject
@@ -13,7 +12,7 @@ trait Id extends StObject {
   
   var init: js.UndefOr[Expression] = js.undefined
   
-  var kind: `var`
+  var kind: "var"
 }
 object Id {
   
@@ -30,6 +29,6 @@ object Id {
     
     inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    inline def setKind(value: `var`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "var"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

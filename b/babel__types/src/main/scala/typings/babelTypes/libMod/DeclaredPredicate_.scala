@@ -1,19 +1,15 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.DeclaredPredicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DeclaredPredicate_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowPredicate
-     with Node {
+     with BaseNode {
   
   @JSName("type")
-  var type_DeclaredPredicate_ : DeclaredPredicate
+  var type_DeclaredPredicate_ : "DeclaredPredicate"
   
   var value: Flow
 }
@@ -27,7 +23,7 @@ object DeclaredPredicate_ {
   
   extension [Self <: DeclaredPredicate_](x: Self) {
     
-    inline def setType(value: DeclaredPredicate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "DeclaredPredicate"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: Flow): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

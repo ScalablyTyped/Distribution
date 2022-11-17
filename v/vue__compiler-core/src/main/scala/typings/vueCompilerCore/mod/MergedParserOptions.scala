@@ -1,7 +1,5 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreStrings.condense
-import typings.vueCompilerCore.vueCompilerCoreStrings.preserve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +51,7 @@ trait MergedParserOptions extends StObject {
   @JSName("onWarn")
   var onWarn_Original: js.Function1[/* warning */ CompilerError, Unit]
   
-  var whitespace: js.UndefOr[preserve | condense] = js.undefined
+  var whitespace: js.UndefOr["preserve" | "condense"] = js.undefined
 }
 object MergedParserOptions {
   
@@ -107,7 +105,7 @@ object MergedParserOptions {
     
     inline def setOnWarn(value: /* warning */ CompilerError => Unit): Self = StObject.set(x, "onWarn", js.Any.fromFunction1(value))
     
-    inline def setWhitespace(value: preserve | condense): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
+    inline def setWhitespace(value: "preserve" | "condense"): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
     
     inline def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
   }

@@ -1,11 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.circular
-import typings.materialUiCore.materialUiCoreStrings.extended
-import typings.materialUiCore.materialUiCoreStrings.large
-import typings.materialUiCore.materialUiCoreStrings.medium
-import typings.materialUiCore.materialUiCoreStrings.round
-import typings.materialUiCore.materialUiCoreStrings.small
 import typings.react.mod.ReactNode
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -49,13 +43,13 @@ trait DisableRipple extends StObject {
     * The size of the button.
     * `small` is equivalent to the dense button styling.
     */
-  var size: js.UndefOr[small | medium | large] = js.undefined
+  var size: js.UndefOr["small" | "medium" | "large"] = js.undefined
   
   /**
     * The variant to use.
     * 'round' is deprecated, use 'circular' instead.
     */
-  var variant: js.UndefOr[circular | extended | round] = js.undefined
+  var variant: js.UndefOr["circular" | "extended" | "round"] = js.undefined
 }
 object DisableRipple {
   
@@ -88,11 +82,11 @@ object DisableRipple {
     
     inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    inline def setSize(value: small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "small" | "medium" | "large"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setVariant(value: circular | extended | round): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "circular" | "extended" | "round"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

@@ -3,23 +3,6 @@ package typings.reactNativeGestureHandler
 import typings.react.mod.ComponentType
 import typings.react.mod.RefAttributes
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.BaseGestureHandlerProps_
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.cancelsTouchesInView
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.disallowInterruption
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.enabled
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.hitSlop
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.id
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onActivated
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onBegan
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onCancelled
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onEnded
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onFailed
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onGestureEvent
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onHandlerStateChange
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.shouldActivateOnStart
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.shouldCancelWhenOutside
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.simultaneousHandlers
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.userSelect
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.waitFor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +16,7 @@ object libTypescriptHandlersNativeViewGestureHandlerMod {
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/NativeViewGestureHandler", "nativeViewGestureHandlerProps")
   @js.native
-  val nativeViewGestureHandlerProps: js.Tuple2[shouldActivateOnStart, disallowInterruption] = js.native
+  val nativeViewGestureHandlerProps: js.Tuple2["shouldActivateOnStart", "disallowInterruption"] = js.native
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/NativeViewGestureHandler", "nativeViewHandlerName")
   @js.native
@@ -42,23 +25,23 @@ object libTypescriptHandlersNativeViewGestureHandlerMod {
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/NativeViewGestureHandler", "nativeViewProps")
   @js.native
   val nativeViewProps: js.Tuple17[
-    id, 
-    enabled, 
-    shouldCancelWhenOutside, 
-    hitSlop, 
-    cancelsTouchesInView, 
-    userSelect, 
-    waitFor, 
-    simultaneousHandlers, 
-    onBegan, 
-    onFailed, 
-    onCancelled, 
-    onActivated, 
-    onEnded, 
-    onGestureEvent, 
-    onHandlerStateChange, 
-    shouldActivateOnStart, 
-    disallowInterruption
+    "id", 
+    "enabled", 
+    "shouldCancelWhenOutside", 
+    "hitSlop", 
+    "cancelsTouchesInView", 
+    "userSelect", 
+    "waitFor", 
+    "simultaneousHandlers", 
+    "onBegan", 
+    "onFailed", 
+    "onCancelled", 
+    "onActivated", 
+    "onEnded", 
+    "onGestureEvent", 
+    "onHandlerStateChange", 
+    "shouldActivateOnStart", 
+    "disallowInterruption"
   ] = js.native
   
   trait NativeViewGestureConfig extends StObject {

@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.Decorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `82` extends StObject {
   
-  var `type`: Decorator
+  var `type`: "Decorator"
 }
 object `82` {
   
@@ -19,6 +18,6 @@ object `82` {
   
   extension [Self <: `82`](x: Self) {
     
-    inline def setType(value: Decorator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Decorator"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

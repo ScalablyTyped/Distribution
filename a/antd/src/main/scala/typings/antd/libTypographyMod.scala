@@ -25,7 +25,7 @@ object libTypographyMod extends Shortcut {
     extends StObject
        with ForwardRefExoticComponent[
           (InternalTypographyProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with "a", "abbr", "address" */ String
           ]) & RefAttributes[HTMLElement]
         ] {
     

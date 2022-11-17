@@ -72,17 +72,13 @@ object libRadioInterfaceMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.outline
-    - typings.antd.antdStrings.solid
-  */
-  trait RadioGroupButtonStyle extends StObject
   object RadioGroupButtonStyle {
     
-    inline def outline: typings.antd.antdStrings.outline = "outline".asInstanceOf[typings.antd.antdStrings.outline]
+    inline def outline: "outline" = "outline".asInstanceOf["outline"]
     
-    inline def solid: typings.antd.antdStrings.solid = "solid".asInstanceOf[typings.antd.antdStrings.solid]
+    inline def solid: "solid" = "solid".asInstanceOf["solid"]
   }
+  type RadioGroupButtonStyle = "outline" | "solid"
   
   trait RadioGroupContextProps extends StObject {
     
@@ -117,17 +113,13 @@ object libRadioInterfaceMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.default
-    - typings.antd.antdStrings.button
-  */
-  trait RadioGroupOptionType extends StObject
   object RadioGroupOptionType {
     
-    inline def default: typings.antd.antdStrings.default = "default".asInstanceOf[typings.antd.antdStrings.default]
+    inline def default: "default" = "default".asInstanceOf["default"]
     
-    inline def button: typings.antd.antdStrings.button = "button".asInstanceOf[typings.antd.antdStrings.button]
+    inline def button: "button" = "button".asInstanceOf["button"]
   }
+  type RadioGroupOptionType = "default" | "button"
   
   trait RadioGroupProps
     extends StObject

@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.FC
 import typings.semanticUiReact.distCommonjsCollectionsTableTableCellMod.StrictTableCellProps
-import typings.semanticUiReact.semanticUiReactStrings.ascending
-import typings.semanticUiReact.semanticUiReactStrings.descending
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +19,7 @@ object distCommonjsCollectionsTableTableHeaderCellMod extends Shortcut {
        with StrictTableCellProps {
     
     /** A header cell can be sorted in ascending or descending order. */
-    var sorted: js.UndefOr[ascending | descending] = js.undefined
+    var sorted: js.UndefOr["ascending" | "descending"] = js.undefined
   }
   object StrictTableHeaderCellProps {
     
@@ -32,7 +30,7 @@ object distCommonjsCollectionsTableTableHeaderCellMod extends Shortcut {
     
     extension [Self <: StrictTableHeaderCellProps](x: Self) {
       
-      inline def setSorted(value: ascending | descending): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
+      inline def setSorted(value: "ascending" | "descending"): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
       
       inline def setSortedUndefined: Self = StObject.set(x, "sorted", js.undefined)
     }

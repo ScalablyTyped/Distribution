@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IfStatement
   extends StObject
-     with Statement
-     with HasJSDoc {
+     with Statement {
   
   val elseStatement: js.UndefOr[Statement] = js.native
   

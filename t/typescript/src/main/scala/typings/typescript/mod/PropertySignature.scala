@@ -8,11 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PropertySignature
   extends StObject
      with TypeElement
-     with JSDocContainer
-     with HasJSDoc
-     with HasModifiers
-     with HasType
-     with VariableLikeDeclaration {
+     with JSDocContainer {
   
   /** @deprecated A property signature cannot have an initializer */
   val initializer: js.UndefOr[Expression] = js.native

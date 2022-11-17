@@ -1,20 +1,16 @@
 package typings.node.anon
 
-import typings.node.nodeStrings.option
-import typings.node.utilMod.OptionToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InlineValue
-  extends StObject
-     with OptionToken {
+trait InlineValue extends StObject {
   
   var index: Double
   
   var inlineValue: Unit
   
-  var kind: option
+  var kind: "option"
   
   var name: String
   
@@ -35,7 +31,7 @@ object InlineValue {
     
     inline def setInlineValue(value: Unit): Self = StObject.set(x, "inlineValue", value.asInstanceOf[js.Any])
     
-    inline def setKind(value: option): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "option"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -1,18 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ObjectPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ObjectPattern_
   extends StObject
-     with BaseNode
-     with LVal
-     with Node
-     with Pattern
-     with PatternLike
-     with Standardized {
+     with BaseNode {
   
   var decorators: js.UndefOr[js.Array[Decorator_] | Null] = js.undefined
   
@@ -21,7 +15,7 @@ trait ObjectPattern_
   var typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
-  var type_ObjectPattern_ : ObjectPattern
+  var type_ObjectPattern_ : "ObjectPattern"
 }
 object ObjectPattern_ {
   
@@ -45,7 +39,7 @@ object ObjectPattern_ {
     
     inline def setPropertiesVarargs(value: (RestElement_ | ObjectProperty_)*): Self = StObject.set(x, "properties", js.Array(value*))
     
-    inline def setType(value: ObjectPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ObjectPattern"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation__ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

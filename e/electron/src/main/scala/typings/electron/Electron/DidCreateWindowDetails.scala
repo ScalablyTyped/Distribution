@@ -1,11 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`background-tab`
-import typings.electron.electronStrings.`foreground-tab`
-import typings.electron.electronStrings.`new-window`
-import typings.electron.electronStrings.`save-to-disk`
-import typings.electron.electronStrings.default
-import typings.electron.electronStrings.other
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +10,7 @@ trait DidCreateWindowDetails extends StObject {
     * Can be `default`, `foreground-tab`, `background-tab`, `new-window`,
     * `save-to-disk` and `other`.
     */
-  var disposition: default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other
+  var disposition: "default" | "foreground-tab" | "background-tab" | "new-window" | "save-to-disk" | "other"
   
   /**
     * Name given to the created window in the `window.open()` call.
@@ -53,7 +47,7 @@ trait DidCreateWindowDetails extends StObject {
 object DidCreateWindowDetails {
   
   inline def apply(
-    disposition: default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other,
+    disposition: "default" | "foreground-tab" | "background-tab" | "new-window" | "save-to-disk" | "other",
     frameName: String,
     options: BrowserWindowConstructorOptions,
     referrer: Referrer,
@@ -65,7 +59,7 @@ object DidCreateWindowDetails {
   
   extension [Self <: DidCreateWindowDetails](x: Self) {
     
-    inline def setDisposition(value: default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
+    inline def setDisposition(value: "default" | "foreground-tab" | "background-tab" | "new-window" | "save-to-disk" | "other"): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
     
     inline def setFrameName(value: String): Self = StObject.set(x, "frameName", value.asInstanceOf[js.Any])
     

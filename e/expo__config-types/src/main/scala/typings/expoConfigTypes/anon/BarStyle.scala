@@ -1,7 +1,5 @@
 package typings.expoConfigTypes.anon
 
-import typings.expoConfigTypes.expoConfigTypesStrings.`dark-content`
-import typings.expoConfigTypes.expoConfigTypesStrings.`light-content`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +14,7 @@ trait BarStyle extends StObject {
   /**
     * Configures the status bar icons to have a light or dark color. Valid values: `light-content`, `dark-content`. Defaults to `dark-content`
     */
-  var barStyle: js.UndefOr[`light-content` | `dark-content`] = js.undefined
+  var barStyle: js.UndefOr["light-content" | "dark-content"] = js.undefined
   
   /**
     * Instructs the system whether the status bar should be visible or not. Defaults to `false`
@@ -41,7 +39,7 @@ object BarStyle {
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setBarStyle(value: `light-content` | `dark-content`): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+    inline def setBarStyle(value: "light-content" | "dark-content"): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
     
     inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
     

@@ -1,15 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreBooleans.`false`
-import typings.materialUiCore.materialUiCoreStrings.auto
-import typings.materialUiCore.materialUiCoreStrings.horizontal
-import typings.materialUiCore.materialUiCoreStrings.inverted
-import typings.materialUiCore.materialUiCoreStrings.normal
-import typings.materialUiCore.materialUiCoreStrings.off
-import typings.materialUiCore.materialUiCoreStrings.on
-import typings.materialUiCore.materialUiCoreStrings.primary
-import typings.materialUiCore.materialUiCoreStrings.secondary
-import typings.materialUiCore.materialUiCoreStrings.vertical
 import typings.materialUiCore.sliderSliderMod.Mark
 import typings.materialUiCore.sliderSliderMod.ValueLabelProps
 import typings.react.mod.ChangeEvent
@@ -33,7 +23,7 @@ trait Arialabel extends StObject {
   
   var `aria-valuetext`: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[primary | secondary] = js.undefined
+  var color: js.UndefOr["primary" | "secondary"] = js.undefined
   
   var defaultValue: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
@@ -59,17 +49,17 @@ trait Arialabel extends StObject {
     js.Function2[/* event */ ChangeEvent[js.Object], /* value */ Double | js.Array[Double], Unit]
   ] = js.undefined
   
-  var orientation: js.UndefOr[horizontal | vertical] = js.undefined
+  var orientation: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   var scale: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.undefined
   
   var step: js.UndefOr[Double | Null] = js.undefined
   
-  var track: js.UndefOr[normal | `false` | inverted] = js.undefined
+  var track: js.UndefOr["normal" | false | "inverted"] = js.undefined
   
   var value: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var valueLabelDisplay: js.UndefOr[on | auto | off] = js.undefined
+  var valueLabelDisplay: js.UndefOr["on" | "auto" | "off"] = js.undefined
   
   var valueLabelFormat: js.UndefOr[String | (js.Function2[/* value */ Double, /* index */ Double, ReactNode])] = js.undefined
 }
@@ -94,7 +84,7 @@ object Arialabel {
     
     inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
     
-    inline def setColor(value: primary | secondary): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: "primary" | "secondary"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
@@ -142,7 +132,7 @@ object Arialabel {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: "horizontal" | "vertical"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
@@ -160,7 +150,7 @@ object Arialabel {
     
     inline def setThumbComponentUndefined: Self = StObject.set(x, "ThumbComponent", js.undefined)
     
-    inline def setTrack(value: normal | `false` | inverted): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: "normal" | false | "inverted"): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     
@@ -170,7 +160,7 @@ object Arialabel {
     
     inline def setValueLabelComponentUndefined: Self = StObject.set(x, "ValueLabelComponent", js.undefined)
     
-    inline def setValueLabelDisplay(value: on | auto | off): Self = StObject.set(x, "valueLabelDisplay", value.asInstanceOf[js.Any])
+    inline def setValueLabelDisplay(value: "on" | "auto" | "off"): Self = StObject.set(x, "valueLabelDisplay", value.asInstanceOf[js.Any])
     
     inline def setValueLabelDisplayUndefined: Self = StObject.set(x, "valueLabelDisplay", js.undefined)
     

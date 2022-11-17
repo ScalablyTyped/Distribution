@@ -1,16 +1,12 @@
 package typings.reactNavigationStack.anon
 
-import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.TransitionSpec
-import typings.reactNavigationStack.reactNavigationStackStrings.timing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Config
-  extends StObject
-     with TransitionSpec {
+trait Config extends StObject {
   
-  var animation: timing
+  var animation: "timing"
   
   var config: OmitTimingAnimationConfig
 }
@@ -23,7 +19,7 @@ object Config {
   
   extension [Self <: Config](x: Self) {
     
-    inline def setAnimation(value: timing): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: "timing"): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setConfig(value: OmitTimingAnimationConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
   }

@@ -7,7 +7,6 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
 import org.scalablytyped.runtime.StringDictionary
-import typings.axios.axiosBooleans.`false`
 import typings.axios.mod.AxiosAdapter
 import typings.axios.mod.AxiosBasicCredentials
 import typings.axios.mod.AxiosError
@@ -199,7 +198,7 @@ object anon {
     
     var paramsSerializer: js.UndefOr[ParamsSerializerOptions] = js.undefined
     
-    var proxy: js.UndefOr[AxiosProxyConfig | `false`] = js.undefined
+    var proxy: js.UndefOr[AxiosProxyConfig | false] = js.undefined
     
     var responseEncoding: js.UndefOr[typings.axios.mod.responseEncoding | String] = js.undefined
     
@@ -324,7 +323,7 @@ object anon {
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setProxy(value: AxiosProxyConfig | `false`): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: AxiosProxyConfig | false): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
       inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       

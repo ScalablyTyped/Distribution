@@ -39,9 +39,6 @@ import typings.reactNative.mod.TouchableOpacityProps
 import typings.reactNative.mod.ViewProps
 import typings.reactNative.mod._ScrollView
 import typings.reactNative.mod._Text
-import typings.reactPrimitives.reactPrimitivesStrings.disk
-import typings.reactPrimitives.reactPrimitivesStrings.diskSlashmemory
-import typings.reactPrimitives.reactPrimitivesStrings.memory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -275,14 +272,14 @@ object mod {
     def queryCache: js.UndefOr[
         js.Function1[
           /* urls */ js.Array[String], 
-          js.Promise[StringDictionary[memory | disk | diskSlashmemory]]
+          js.Promise[StringDictionary["memory" | "disk" | "disk/memory"]]
         ]
       ] = js.native
     inline def queryCache_=(
       x: js.UndefOr[
           js.Function1[
             /* urls */ js.Array[String], 
-            js.Promise[StringDictionary[memory | disk | diskSlashmemory]]
+            js.Promise[StringDictionary["memory" | "disk" | "disk/memory"]]
           ]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryCache")(x.asInstanceOf[js.Any])
@@ -379,12 +376,7 @@ object mod {
     inline def forceTouchAvailable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceTouchAvailable")(x.asInstanceOf[js.Any])
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNative.mod.PlatformOSType
-    - typings.reactPrimitives.reactPrimitivesStrings.sketch
-    - typings.reactPrimitives.reactPrimitivesStrings.vr
-  */
-  type PlatformOSType = _PlatformOSType | typings.reactNative.mod.PlatformOSType
+  type PlatformOSType = typings.reactNative.mod.PlatformOSType | "sketch" | "vr"
   
   trait PlatformStatic extends StObject {
     
@@ -393,7 +385,8 @@ object mod {
     var Version: Double | String
     
     @JSName("select")
-    def select_default[T](
+    @scala.annotation.targetName("select_default")
+    def select[T](
       specifics: /* import warning: importer.ImportType#apply Failed type conversion: {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T} */ js.Any
     ): T
   }
@@ -419,6 +412,4 @@ object mod {
       inline def setVersion(value: Double | String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     }
   }
-  
-  trait _PlatformOSType extends StObject
 }

@@ -3,14 +3,6 @@ package typings.node
 import typings.node.anon.Actual
 import typings.node.anon.DeepEqual
 import typings.node.assertMod.AssertPredicate
-import typings.node.nodeStrings.deepEqual
-import typings.node.nodeStrings.deepStrictEqual
-import typings.node.nodeStrings.equal
-import typings.node.nodeStrings.ifError
-import typings.node.nodeStrings.notDeepEqual
-import typings.node.nodeStrings.notEqual
-import typings.node.nodeStrings.ok
-import typings.node.nodeStrings.strictEqual
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -688,7 +680,7 @@ object nodeColonassertMod {
   @js.native
   val strict: (Omit[
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof assert */ Any, 
-    equal | notEqual | deepEqual | notDeepEqual | ok | strictEqual | deepStrictEqual | ifError | typings.node.nodeStrings.strict
+    "equal" | "notEqual" | "deepEqual" | "notDeepEqual" | "ok" | "strictEqual" | "deepStrictEqual" | "ifError" | "strict"
   ]) & DeepEqual = js.native
   
   /**

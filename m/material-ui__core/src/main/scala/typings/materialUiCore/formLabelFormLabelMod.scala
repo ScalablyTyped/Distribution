@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Focused
-import typings.materialUiCore.materialUiCoreStrings.label
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -28,39 +27,29 @@ object formLabelFormLabelMod extends Shortcut {
     */
   @JSImport("@material-ui/core/FormLabel/FormLabel", JSImport.Default)
   @js.native
-  val default: OverridableComponent[FormLabelTypeMap[js.Object, label]] = js.native
+  val default: OverridableComponent[FormLabelTypeMap[js.Object, "label"]] = js.native
   
   type FormLabelBaseProps = LabelHTMLAttributes[HTMLLabelElement]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.colorSecondary
-    - typings.materialUiCore.materialUiCoreStrings.focused
-    - typings.materialUiCore.materialUiCoreStrings.disabled
-    - typings.materialUiCore.materialUiCoreStrings.error
-    - typings.materialUiCore.materialUiCoreStrings.filled
-    - typings.materialUiCore.materialUiCoreStrings.required
-    - typings.materialUiCore.materialUiCoreStrings.asterisk
-  */
-  trait FormLabelClassKey extends StObject
   object FormLabelClassKey {
     
-    inline def asterisk: typings.materialUiCore.materialUiCoreStrings.asterisk = "asterisk".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.asterisk]
+    inline def asterisk: "asterisk" = "asterisk".asInstanceOf["asterisk"]
     
-    inline def colorSecondary: typings.materialUiCore.materialUiCoreStrings.colorSecondary = "colorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorSecondary]
+    inline def colorSecondary: "colorSecondary" = "colorSecondary".asInstanceOf["colorSecondary"]
     
-    inline def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
+    inline def disabled: "disabled" = "disabled".asInstanceOf["disabled"]
     
-    inline def error: typings.materialUiCore.materialUiCoreStrings.error = "error".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.error]
+    inline def error: "error" = "error".asInstanceOf["error"]
     
-    inline def filled: typings.materialUiCore.materialUiCoreStrings.filled = "filled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.filled]
+    inline def filled: "filled" = "filled".asInstanceOf["filled"]
     
-    inline def focused: typings.materialUiCore.materialUiCoreStrings.focused = "focused".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.focused]
+    inline def focused: "focused" = "focused".asInstanceOf["focused"]
     
-    inline def required: typings.materialUiCore.materialUiCoreStrings.required = "required".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.required]
+    inline def required: "required" = "required".asInstanceOf["required"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
   }
+  type FormLabelClassKey = "root" | "colorSecondary" | "focused" | "disabled" | "error" | "filled" | "required" | "asterisk"
   
   type FormLabelProps[D /* <: ElementType[Any] */, P] = OverrideProps[FormLabelTypeMap[P, D], D]
   
@@ -89,8 +78,8 @@ object formLabelFormLabelMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[FormLabelTypeMap[js.Object, label]]
+  type _To = OverridableComponent[FormLabelTypeMap[js.Object, "label"]]
   
   /* This means you don't have to write `default`, but can instead just say `formLabelFormLabelMod.foo` */
-  override def _to: OverridableComponent[FormLabelTypeMap[js.Object, label]] = default
+  override def _to: OverridableComponent[FormLabelTypeMap[js.Object, "label"]] = default
 }

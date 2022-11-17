@@ -1,8 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.connect
-import typings.std.stdStrings.connecting
-import typings.std.stdStrings.disconnect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,46 +9,55 @@ trait RemotePlayback
   extends StObject
      with EventTarget {
   
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_disconnect")
+  def addEventListener(`type`: "disconnect", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_connecting")
+  def addEventListener(`type`: "connecting", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_connect(`type`: connect, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_connect")
+  def addEventListener(`type`: "connect", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_connect(
-    `type`: connect,
+  @scala.annotation.targetName("addEventListener_disconnect")
+  def addEventListener(
+    `type`: "disconnect",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_connect(
-    `type`: connect,
+  @scala.annotation.targetName("addEventListener_connecting")
+  def addEventListener(
+    `type`: "connecting",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_connect")
+  def addEventListener(
+    `type`: "connect",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_connect")
+  def addEventListener(
+    `type`: "connect",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_connecting(`type`: connecting, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_connecting(
-    `type`: connecting,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_connecting(
-    `type`: connecting,
+  @scala.annotation.targetName("addEventListener_disconnect")
+  def addEventListener(
+    `type`: "disconnect",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_disconnect(`type`: disconnect, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_disconnect(
-    `type`: disconnect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_disconnect(
-    `type`: disconnect,
+  @scala.annotation.targetName("addEventListener_connecting")
+  def addEventListener(
+    `type`: "connecting",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -74,44 +80,53 @@ trait RemotePlayback
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_connect(`type`: connect, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_connect")
+  def removeEventListener(`type`: "connect", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_connect(
-    `type`: connect,
+  @scala.annotation.targetName("removeEventListener_connecting")
+  def removeEventListener(`type`: "connecting", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_disconnect")
+  def removeEventListener(`type`: "disconnect", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_connecting")
+  def removeEventListener(
+    `type`: "connecting",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_connect(
-    `type`: connect,
+  @scala.annotation.targetName("removeEventListener_disconnect")
+  def removeEventListener(
+    `type`: "disconnect",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_connect")
+  def removeEventListener(
+    `type`: "connect",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_disconnect")
+  def removeEventListener(
+    `type`: "disconnect",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_connecting(`type`: connecting, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_connecting(
-    `type`: connecting,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_connecting(
-    `type`: connecting,
+  @scala.annotation.targetName("removeEventListener_connect")
+  def removeEventListener(
+    `type`: "connect",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_disconnect(`type`: disconnect, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_disconnect(
-    `type`: disconnect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_disconnect(
-    `type`: disconnect,
+  @scala.annotation.targetName("removeEventListener_connecting")
+  def removeEventListener(
+    `type`: "connecting",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

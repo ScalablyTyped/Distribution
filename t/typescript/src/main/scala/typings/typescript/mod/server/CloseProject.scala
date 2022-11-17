@@ -1,6 +1,5 @@
 package typings.typescript.mod.server
 
-import typings.typescript.typescriptStrings.closeProject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait CloseProject
   extends StObject
      with TypingInstallerRequestWithProjectName {
   
-  val kind: closeProject
+  val kind: "closeProject"
 }
 object CloseProject {
   
@@ -20,6 +19,6 @@ object CloseProject {
   
   extension [Self <: CloseProject](x: Self) {
     
-    inline def setKind(value: closeProject): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "closeProject"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

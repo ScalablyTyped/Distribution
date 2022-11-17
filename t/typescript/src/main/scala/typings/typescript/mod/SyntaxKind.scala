@@ -17,56 +17,42 @@ object SyntaxKind extends StObject {
   sealed trait AbstractKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
   /* 126 */ val AbstractKeyword: typings.typescript.mod.SyntaxKind.AbstractKeyword & Double = js.native
   
   @js.native
   sealed trait AccessorKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
   /* 127 */ val AccessorKeyword: typings.typescript.mod.SyntaxKind.AccessorKeyword & Double = js.native
   
   @js.native
   sealed trait AmpersandAmpersandEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with LogicalOrCoalescingAssignmentOperator
   /* 76 */ val AmpersandAmpersandEqualsToken: typings.typescript.mod.SyntaxKind.AmpersandAmpersandEqualsToken & Double = js.native
   
   @js.native
   sealed trait AmpersandAmpersandToken
     extends StObject
        with SyntaxKind
-       with LogicalOperator
-       with PunctuationSyntaxKind
   /* 55 */ val AmpersandAmpersandToken: typings.typescript.mod.SyntaxKind.AmpersandAmpersandToken & Double = js.native
   
   @js.native
   sealed trait AmpersandEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with PunctuationSyntaxKind
   /* 73 */ val AmpersandEqualsToken: typings.typescript.mod.SyntaxKind.AmpersandEqualsToken & Double = js.native
   
   @js.native
   sealed trait AmpersandToken
     extends StObject
        with SyntaxKind
-       with BitwiseOperator
-       with PunctuationSyntaxKind
   /* 50 */ val AmpersandToken: typings.typescript.mod.SyntaxKind.AmpersandToken & Double = js.native
   
   @js.native
   sealed trait AnyKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with KeywordTypeSyntaxKind
   /* 131 */ val AnyKeyword: typings.typescript.mod.SyntaxKind.AnyKeyword & Double = js.native
   
   @js.native
@@ -103,7 +89,6 @@ object SyntaxKind extends StObject {
   sealed trait AsKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 128 */ val AsKeyword: typings.typescript.mod.SyntaxKind.AsKeyword & Double = js.native
   
   @js.native
@@ -122,62 +107,48 @@ object SyntaxKind extends StObject {
   sealed trait AssertKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 130 */ val AssertKeyword: typings.typescript.mod.SyntaxKind.AssertKeyword & Double = js.native
   
   @js.native
   sealed trait AssertsKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 129 */ val AssertsKeyword: typings.typescript.mod.SyntaxKind.AssertsKeyword & Double = js.native
   
   @js.native
   sealed trait AsteriskAsteriskEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with PunctuationSyntaxKind
   /* 67 */ val AsteriskAsteriskEqualsToken: typings.typescript.mod.SyntaxKind.AsteriskAsteriskEqualsToken & Double = js.native
   
   @js.native
   sealed trait AsteriskAsteriskToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
   /* 42 */ val AsteriskAsteriskToken: typings.typescript.mod.SyntaxKind.AsteriskAsteriskToken & Double = js.native
   
   @js.native
   sealed trait AsteriskEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with PunctuationSyntaxKind
   /* 66 */ val AsteriskEqualsToken: typings.typescript.mod.SyntaxKind.AsteriskEqualsToken & Double = js.native
   
   @js.native
   sealed trait AsteriskToken
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with MultiplicativeOperator
-       with PunctuationSyntaxKind
   /* 41 */ val AsteriskToken: typings.typescript.mod.SyntaxKind.AsteriskToken & Double = js.native
   
   @js.native
   sealed trait AsyncKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
   /* 132 */ val AsyncKeyword: typings.typescript.mod.SyntaxKind.AsyncKeyword & Double = js.native
   
   @js.native
   sealed trait AtToken
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with PunctuationSyntaxKind
   /* 59 */ val AtToken: typings.typescript.mod.SyntaxKind.AtToken & Double = js.native
   
   @js.native
@@ -190,7 +161,6 @@ object SyntaxKind extends StObject {
   sealed trait AwaitKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 133 */ val AwaitKeyword: typings.typescript.mod.SyntaxKind.AwaitKeyword & Double = js.native
   
   /** Only the JSDoc scanner produces BacktickToken. The normal scanner produces NoSubstitutionTemplateLiteral and related kinds. */
@@ -198,55 +168,42 @@ object SyntaxKind extends StObject {
   sealed trait BacktickToken
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with PunctuationSyntaxKind
   /* 61 */ val BacktickToken: typings.typescript.mod.SyntaxKind.BacktickToken & Double = js.native
   
   @js.native
   sealed trait BarBarEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with LogicalOrCoalescingAssignmentOperator
   /* 75 */ val BarBarEqualsToken: typings.typescript.mod.SyntaxKind.BarBarEqualsToken & Double = js.native
   
   @js.native
   sealed trait BarBarToken
     extends StObject
        with SyntaxKind
-       with LogicalOperator
-       with PunctuationSyntaxKind
   /* 56 */ val BarBarToken: typings.typescript.mod.SyntaxKind.BarBarToken & Double = js.native
   
   @js.native
   sealed trait BarEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with PunctuationSyntaxKind
   /* 74 */ val BarEqualsToken: typings.typescript.mod.SyntaxKind.BarEqualsToken & Double = js.native
   
   @js.native
   sealed trait BarToken
     extends StObject
        with SyntaxKind
-       with BitwiseOperator
-       with PunctuationSyntaxKind
   /* 51 */ val BarToken: typings.typescript.mod.SyntaxKind.BarToken & Double = js.native
   
   @js.native
   sealed trait BigIntKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with KeywordTypeSyntaxKind
   /* 160 */ val BigIntKeyword: typings.typescript.mod.SyntaxKind.BigIntKeyword & Double = js.native
   
   @js.native
   sealed trait BigIntLiteral
     extends StObject
        with SyntaxKind
-       with LiteralSyntaxKind
   /* 9 */ val BigIntLiteral: typings.typescript.mod.SyntaxKind.BigIntLiteral & Double = js.native
   
   @js.native
@@ -271,15 +228,12 @@ object SyntaxKind extends StObject {
   sealed trait BooleanKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with KeywordTypeSyntaxKind
   /* 134 */ val BooleanKeyword: typings.typescript.mod.SyntaxKind.BooleanKeyword & Double = js.native
   
   @js.native
   sealed trait BreakKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 81 */ val BreakKeyword: typings.typescript.mod.SyntaxKind.BreakKeyword & Double = js.native
   
   @js.native
@@ -310,16 +264,12 @@ object SyntaxKind extends StObject {
   sealed trait CaretEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with PunctuationSyntaxKind
   /* 78 */ val CaretEqualsToken: typings.typescript.mod.SyntaxKind.CaretEqualsToken & Double = js.native
   
   @js.native
   sealed trait CaretToken
     extends StObject
        with SyntaxKind
-       with BitwiseOperator
-       with PunctuationSyntaxKind
   /* 52 */ val CaretToken: typings.typescript.mod.SyntaxKind.CaretToken & Double = js.native
   
   @js.native
@@ -338,7 +288,6 @@ object SyntaxKind extends StObject {
   sealed trait CaseKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 82 */ val CaseKeyword: typings.typescript.mod.SyntaxKind.CaseKeyword & Double = js.native
   
   @js.native
@@ -351,7 +300,6 @@ object SyntaxKind extends StObject {
   sealed trait CatchKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 83 */ val CatchKeyword: typings.typescript.mod.SyntaxKind.CatchKeyword & Double = js.native
   
   @js.native
@@ -370,7 +318,6 @@ object SyntaxKind extends StObject {
   sealed trait ClassKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 84 */ val ClassKeyword: typings.typescript.mod.SyntaxKind.ClassKeyword & Double = js.native
   
   @js.native
@@ -383,30 +330,24 @@ object SyntaxKind extends StObject {
   sealed trait CloseBraceToken
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with PunctuationSyntaxKind
   /* 19 */ val CloseBraceToken: typings.typescript.mod.SyntaxKind.CloseBraceToken & Double = js.native
   
   @js.native
   sealed trait CloseBracketToken
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with PunctuationSyntaxKind
   /* 23 */ val CloseBracketToken: typings.typescript.mod.SyntaxKind.CloseBracketToken & Double = js.native
   
   @js.native
   sealed trait CloseParenToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
   /* 21 */ val CloseParenToken: typings.typescript.mod.SyntaxKind.CloseParenToken & Double = js.native
   
   @js.native
   sealed trait ColonToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
   /* 58 */ val ColonToken: typings.typescript.mod.SyntaxKind.ColonToken & Double = js.native
   
   @js.native
@@ -419,9 +360,6 @@ object SyntaxKind extends StObject {
   sealed trait CommaToken
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with PunctuationSyntaxKind
-       with _BinaryOperator
   /* 27 */ val CommaToken: typings.typescript.mod.SyntaxKind.CommaToken & Double = js.native
   
   @js.native
@@ -446,16 +384,12 @@ object SyntaxKind extends StObject {
   sealed trait ConflictMarkerTrivia
     extends StObject
        with SyntaxKind
-       with JsxTokenSyntaxKind
-       with TriviaSyntaxKind
   /* 7 */ val ConflictMarkerTrivia: typings.typescript.mod.SyntaxKind.ConflictMarkerTrivia & Double = js.native
   
   @js.native
   sealed trait ConstKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
   /* 85 */ val ConstKeyword: typings.typescript.mod.SyntaxKind.ConstKeyword & Double = js.native
   
   @js.native
@@ -474,7 +408,6 @@ object SyntaxKind extends StObject {
   sealed trait ConstructorKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 135 */ val ConstructorKeyword: typings.typescript.mod.SyntaxKind.ConstructorKeyword & Double = js.native
   
   @js.native
@@ -487,7 +420,6 @@ object SyntaxKind extends StObject {
   sealed trait ContinueKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 86 */ val ContinueKeyword: typings.typescript.mod.SyntaxKind.ContinueKeyword & Double = js.native
   
   @js.native
@@ -506,7 +438,6 @@ object SyntaxKind extends StObject {
   sealed trait DebuggerKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 87 */ val DebuggerKeyword: typings.typescript.mod.SyntaxKind.DebuggerKeyword & Double = js.native
   
   @js.native
@@ -519,8 +450,6 @@ object SyntaxKind extends StObject {
   sealed trait DeclareKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
   /* 136 */ val DeclareKeyword: typings.typescript.mod.SyntaxKind.DeclareKeyword & Double = js.native
   
   @js.native
@@ -539,8 +468,6 @@ object SyntaxKind extends StObject {
   sealed trait DefaultKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
   /* 88 */ val DefaultKeyword: typings.typescript.mod.SyntaxKind.DefaultKeyword & Double = js.native
   
   @js.native
@@ -553,14 +480,12 @@ object SyntaxKind extends StObject {
   sealed trait DeleteKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 89 */ val DeleteKeyword: typings.typescript.mod.SyntaxKind.DeleteKeyword & Double = js.native
   
   @js.native
   sealed trait DoKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 90 */ val DoKeyword: typings.typescript.mod.SyntaxKind.DoKeyword & Double = js.native
   
   @js.native
@@ -573,15 +498,12 @@ object SyntaxKind extends StObject {
   sealed trait DotDotDotToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
   /* 25 */ val DotDotDotToken: typings.typescript.mod.SyntaxKind.DotDotDotToken & Double = js.native
   
   @js.native
   sealed trait DotToken
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with PunctuationSyntaxKind
   /* 24 */ val DotToken: typings.typescript.mod.SyntaxKind.DotToken & Double = js.native
   
   @js.native
@@ -594,7 +516,6 @@ object SyntaxKind extends StObject {
   sealed trait ElseKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 91 */ val ElseKeyword: typings.typescript.mod.SyntaxKind.ElseKeyword & Double = js.native
   
   @js.native
@@ -613,9 +534,6 @@ object SyntaxKind extends StObject {
   sealed trait EndOfFileToken
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with JsxTokenSyntaxKind
-       with TokenSyntaxKind
   /* 1 */ val EndOfFileToken: typings.typescript.mod.SyntaxKind.EndOfFileToken & Double = js.native
   
   @js.native
@@ -628,7 +546,6 @@ object SyntaxKind extends StObject {
   sealed trait EnumKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 92 */ val EnumKeyword: typings.typescript.mod.SyntaxKind.EnumKeyword & Double = js.native
   
   @js.native
@@ -641,56 +558,42 @@ object SyntaxKind extends StObject {
   sealed trait EqualsEqualsEqualsToken
     extends StObject
        with SyntaxKind
-       with EqualityOperator
-       with PunctuationSyntaxKind
   /* 36 */ val EqualsEqualsEqualsToken: typings.typescript.mod.SyntaxKind.EqualsEqualsEqualsToken & Double = js.native
   
   @js.native
   sealed trait EqualsEqualsToken
     extends StObject
        with SyntaxKind
-       with EqualityOperator
-       with PunctuationSyntaxKind
   /* 34 */ val EqualsEqualsToken: typings.typescript.mod.SyntaxKind.EqualsEqualsToken & Double = js.native
   
   @js.native
   sealed trait EqualsGreaterThanToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
   /* 38 */ val EqualsGreaterThanToken: typings.typescript.mod.SyntaxKind.EqualsGreaterThanToken & Double = js.native
   
   @js.native
   sealed trait EqualsToken
     extends StObject
        with SyntaxKind
-       with AssignmentOperator
-       with JSDocSyntaxKind
-       with PunctuationSyntaxKind
   /* 63 */ val EqualsToken: typings.typescript.mod.SyntaxKind.EqualsToken & Double = js.native
   
   @js.native
   sealed trait ExclamationEqualsEqualsToken
     extends StObject
        with SyntaxKind
-       with EqualityOperator
-       with PunctuationSyntaxKind
   /* 37 */ val ExclamationEqualsEqualsToken: typings.typescript.mod.SyntaxKind.ExclamationEqualsEqualsToken & Double = js.native
   
   @js.native
   sealed trait ExclamationEqualsToken
     extends StObject
        with SyntaxKind
-       with EqualityOperator
-       with PunctuationSyntaxKind
   /* 35 */ val ExclamationEqualsToken: typings.typescript.mod.SyntaxKind.ExclamationEqualsToken & Double = js.native
   
   @js.native
   sealed trait ExclamationToken
     extends StObject
        with SyntaxKind
-       with PrefixUnaryOperator
-       with PunctuationSyntaxKind
   /* 53 */ val ExclamationToken: typings.typescript.mod.SyntaxKind.ExclamationToken & Double = js.native
   
   @js.native
@@ -709,8 +612,6 @@ object SyntaxKind extends StObject {
   sealed trait ExportKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
   /* 93 */ val ExportKeyword: typings.typescript.mod.SyntaxKind.ExportKeyword & Double = js.native
   
   @js.native
@@ -735,7 +636,6 @@ object SyntaxKind extends StObject {
   sealed trait ExtendsKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 94 */ val ExtendsKeyword: typings.typescript.mod.SyntaxKind.ExtendsKeyword & Double = js.native
   
   @js.native
@@ -748,14 +648,12 @@ object SyntaxKind extends StObject {
   sealed trait FalseKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 95 */ val FalseKeyword: typings.typescript.mod.SyntaxKind.FalseKeyword & Double = js.native
   
   @js.native
   sealed trait FinallyKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 96 */ val FinallyKeyword: typings.typescript.mod.SyntaxKind.FinallyKeyword & Double = js.native
   
   @js.native
@@ -864,7 +762,6 @@ object SyntaxKind extends StObject {
   sealed trait ForKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 97 */ val ForKeyword: typings.typescript.mod.SyntaxKind.ForKeyword & Double = js.native
   
   @js.native
@@ -883,7 +780,6 @@ object SyntaxKind extends StObject {
   sealed trait FromKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 158 */ val FromKeyword: typings.typescript.mod.SyntaxKind.FromKeyword & Double = js.native
   
   @js.native
@@ -902,7 +798,6 @@ object SyntaxKind extends StObject {
   sealed trait FunctionKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 98 */ val FunctionKeyword: typings.typescript.mod.SyntaxKind.FunctionKeyword & Double = js.native
   
   @js.native
@@ -921,63 +816,48 @@ object SyntaxKind extends StObject {
   sealed trait GetKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 137 */ val GetKeyword: typings.typescript.mod.SyntaxKind.GetKeyword & Double = js.native
   
   @js.native
   sealed trait GlobalKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 159 */ val GlobalKeyword: typings.typescript.mod.SyntaxKind.GlobalKeyword & Double = js.native
   
   @js.native
   sealed trait GreaterThanEqualsToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
-       with RelationalOperator
   /* 33 */ val GreaterThanEqualsToken: typings.typescript.mod.SyntaxKind.GreaterThanEqualsToken & Double = js.native
   
   @js.native
   sealed trait GreaterThanGreaterThanEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with PunctuationSyntaxKind
   /* 71 */ val GreaterThanGreaterThanEqualsToken: typings.typescript.mod.SyntaxKind.GreaterThanGreaterThanEqualsToken & Double = js.native
   
   @js.native
   sealed trait GreaterThanGreaterThanGreaterThanEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with PunctuationSyntaxKind
   /* 72 */ val GreaterThanGreaterThanGreaterThanEqualsToken: typings.typescript.mod.SyntaxKind.GreaterThanGreaterThanGreaterThanEqualsToken & Double = js.native
   
   @js.native
   sealed trait GreaterThanGreaterThanGreaterThanToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
-       with ShiftOperator
   /* 49 */ val GreaterThanGreaterThanGreaterThanToken: typings.typescript.mod.SyntaxKind.GreaterThanGreaterThanGreaterThanToken & Double = js.native
   
   @js.native
   sealed trait GreaterThanGreaterThanToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
-       with ShiftOperator
   /* 48 */ val GreaterThanGreaterThanToken: typings.typescript.mod.SyntaxKind.GreaterThanGreaterThanToken & Double = js.native
   
   @js.native
   sealed trait GreaterThanToken
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with PunctuationSyntaxKind
-       with RelationalOperator
   /* 31 */ val GreaterThanToken: typings.typescript.mod.SyntaxKind.GreaterThanToken & Double = js.native
   
   /** Only the JSDoc scanner produces HashToken. The normal scanner produces PrivateIdentifier. */
@@ -985,8 +865,6 @@ object SyntaxKind extends StObject {
   sealed trait HashToken
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with PunctuationSyntaxKind
   /* 62 */ val HashToken: typings.typescript.mod.SyntaxKind.HashToken & Double = js.native
   
   @js.native
@@ -999,15 +877,12 @@ object SyntaxKind extends StObject {
   sealed trait Identifier
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with TokenSyntaxKind
   /* 79 */ val Identifier: typings.typescript.mod.SyntaxKind.Identifier & Double = js.native
   
   @js.native
   sealed trait IfKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 99 */ val IfKeyword: typings.typescript.mod.SyntaxKind.IfKeyword & Double = js.native
   
   @js.native
@@ -1020,7 +895,6 @@ object SyntaxKind extends StObject {
   sealed trait ImplementsKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 117 */ val ImplementsKeyword: typings.typescript.mod.SyntaxKind.ImplementsKeyword & Double = js.native
   
   @js.native
@@ -1045,7 +919,6 @@ object SyntaxKind extends StObject {
   sealed trait ImportKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 100 */ val ImportKeyword: typings.typescript.mod.SyntaxKind.ImportKeyword & Double = js.native
   
   @js.native
@@ -1070,9 +943,6 @@ object SyntaxKind extends StObject {
   sealed trait InKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
-       with RelationalOperator
   /* 101 */ val InKeyword: typings.typescript.mod.SyntaxKind.InKeyword & Double = js.native
   
   @js.native
@@ -1091,7 +961,6 @@ object SyntaxKind extends StObject {
   sealed trait InferKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 138 */ val InferKeyword: typings.typescript.mod.SyntaxKind.InferKeyword & Double = js.native
   
   @js.native
@@ -1110,8 +979,6 @@ object SyntaxKind extends StObject {
   sealed trait InstanceOfKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with RelationalOperator
   /* 102 */ val InstanceOfKeyword: typings.typescript.mod.SyntaxKind.InstanceOfKeyword & Double = js.native
   
   @js.native
@@ -1124,7 +991,6 @@ object SyntaxKind extends StObject {
   sealed trait InterfaceKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 118 */ val InterfaceKeyword: typings.typescript.mod.SyntaxKind.InterfaceKeyword & Double = js.native
   
   @js.native
@@ -1137,15 +1003,12 @@ object SyntaxKind extends StObject {
   sealed trait IntrinsicKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with KeywordTypeSyntaxKind
   /* 139 */ val IntrinsicKeyword: typings.typescript.mod.SyntaxKind.IntrinsicKeyword & Double = js.native
   
   @js.native
   sealed trait IsKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 140 */ val IsKeyword: typings.typescript.mod.SyntaxKind.IsKeyword & Double = js.native
   
   @js.native
@@ -1459,23 +1322,18 @@ object SyntaxKind extends StObject {
   sealed trait JsxText
     extends StObject
        with SyntaxKind
-       with JsxTokenSyntaxKind
-       with LiteralSyntaxKind
   /* 11 */ val JsxText: typings.typescript.mod.SyntaxKind.JsxText & Double = js.native
   
   @js.native
   sealed trait JsxTextAllWhiteSpaces
     extends StObject
        with SyntaxKind
-       with JsxTokenSyntaxKind
-       with LiteralSyntaxKind
   /* 12 */ val JsxTextAllWhiteSpaces: typings.typescript.mod.SyntaxKind.JsxTextAllWhiteSpaces & Double = js.native
   
   @js.native
   sealed trait KeyOfKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 141 */ val KeyOfKeyword: typings.typescript.mod.SyntaxKind.KeyOfKeyword & Double = js.native
   
   @js.native
@@ -1578,49 +1436,36 @@ object SyntaxKind extends StObject {
   sealed trait LessThanEqualsToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
-       with RelationalOperator
   /* 32 */ val LessThanEqualsToken: typings.typescript.mod.SyntaxKind.LessThanEqualsToken & Double = js.native
   
   @js.native
   sealed trait LessThanLessThanEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with PunctuationSyntaxKind
   /* 70 */ val LessThanLessThanEqualsToken: typings.typescript.mod.SyntaxKind.LessThanLessThanEqualsToken & Double = js.native
   
   @js.native
   sealed trait LessThanLessThanToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
-       with ShiftOperator
   /* 47 */ val LessThanLessThanToken: typings.typescript.mod.SyntaxKind.LessThanLessThanToken & Double = js.native
   
   @js.native
   sealed trait LessThanSlashToken
     extends StObject
        with SyntaxKind
-       with JsxTokenSyntaxKind
-       with PunctuationSyntaxKind
   /* 30 */ val LessThanSlashToken: typings.typescript.mod.SyntaxKind.LessThanSlashToken & Double = js.native
   
   @js.native
   sealed trait LessThanToken
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with JsxTokenSyntaxKind
-       with PunctuationSyntaxKind
-       with RelationalOperator
   /* 29 */ val LessThanToken: typings.typescript.mod.SyntaxKind.LessThanToken & Double = js.native
   
   @js.native
   sealed trait LetKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 119 */ val LetKeyword: typings.typescript.mod.SyntaxKind.LetKeyword & Double = js.native
   
   @js.native
@@ -1663,26 +1508,18 @@ object SyntaxKind extends StObject {
   sealed trait MinusEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with PunctuationSyntaxKind
   /* 65 */ val MinusEqualsToken: typings.typescript.mod.SyntaxKind.MinusEqualsToken & Double = js.native
   
   @js.native
   sealed trait MinusMinusToken
     extends StObject
        with SyntaxKind
-       with PostfixUnaryOperator
-       with PrefixUnaryOperator
-       with PunctuationSyntaxKind
   /* 46 */ val MinusMinusToken: typings.typescript.mod.SyntaxKind.MinusMinusToken & Double = js.native
   
   @js.native
   sealed trait MinusToken
     extends StObject
        with SyntaxKind
-       with AdditiveOperator
-       with PrefixUnaryOperator
-       with PunctuationSyntaxKind
   /* 40 */ val MinusToken: typings.typescript.mod.SyntaxKind.MinusToken & Double = js.native
   
   @js.native
@@ -1707,15 +1544,12 @@ object SyntaxKind extends StObject {
   sealed trait ModuleKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 142 */ val ModuleKeyword: typings.typescript.mod.SyntaxKind.ModuleKeyword & Double = js.native
   
   @js.native
   sealed trait MultiLineCommentTrivia
     extends StObject
        with SyntaxKind
-       with CommentKind
-       with TriviaSyntaxKind
   /* 3 */ val MultiLineCommentTrivia: typings.typescript.mod.SyntaxKind.MultiLineCommentTrivia & Double = js.native
   
   @js.native
@@ -1758,15 +1592,12 @@ object SyntaxKind extends StObject {
   sealed trait NamespaceKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 143 */ val NamespaceKeyword: typings.typescript.mod.SyntaxKind.NamespaceKeyword & Double = js.native
   
   @js.native
   sealed trait NeverKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with KeywordTypeSyntaxKind
   /* 144 */ val NeverKeyword: typings.typescript.mod.SyntaxKind.NeverKeyword & Double = js.native
   
   @js.native
@@ -1779,22 +1610,18 @@ object SyntaxKind extends StObject {
   sealed trait NewKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 103 */ val NewKeyword: typings.typescript.mod.SyntaxKind.NewKeyword & Double = js.native
   
   @js.native
   sealed trait NewLineTrivia
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with TriviaSyntaxKind
   /* 4 */ val NewLineTrivia: typings.typescript.mod.SyntaxKind.NewLineTrivia & Double = js.native
   
   @js.native
   sealed trait NoSubstitutionTemplateLiteral
     extends StObject
        with SyntaxKind
-       with LiteralSyntaxKind
   /* 14 */ val NoSubstitutionTemplateLiteral: typings.typescript.mod.SyntaxKind.NoSubstitutionTemplateLiteral & Double = js.native
   
   @js.native
@@ -1813,22 +1640,18 @@ object SyntaxKind extends StObject {
   sealed trait NullKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 104 */ val NullKeyword: typings.typescript.mod.SyntaxKind.NullKeyword & Double = js.native
   
   @js.native
   sealed trait NumberKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with KeywordTypeSyntaxKind
   /* 148 */ val NumberKeyword: typings.typescript.mod.SyntaxKind.NumberKeyword & Double = js.native
   
   @js.native
   sealed trait NumericLiteral
     extends StObject
        with SyntaxKind
-       with LiteralSyntaxKind
   /* 8 */ val NumericLiteral: typings.typescript.mod.SyntaxKind.NumericLiteral & Double = js.native
   
   @js.native
@@ -1841,8 +1664,6 @@ object SyntaxKind extends StObject {
   sealed trait ObjectKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with KeywordTypeSyntaxKind
   /* 149 */ val ObjectKeyword: typings.typescript.mod.SyntaxKind.ObjectKeyword & Double = js.native
   
   @js.native
@@ -1855,7 +1676,6 @@ object SyntaxKind extends StObject {
   sealed trait OfKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 162 */ val OfKeyword: typings.typescript.mod.SyntaxKind.OfKeyword & Double = js.native
   
   @js.native
@@ -1868,24 +1688,18 @@ object SyntaxKind extends StObject {
   sealed trait OpenBraceToken
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with JsxTokenSyntaxKind
-       with PunctuationSyntaxKind
   /* 18 */ val OpenBraceToken: typings.typescript.mod.SyntaxKind.OpenBraceToken & Double = js.native
   
   @js.native
   sealed trait OpenBracketToken
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with PunctuationSyntaxKind
   /* 22 */ val OpenBracketToken: typings.typescript.mod.SyntaxKind.OpenBracketToken & Double = js.native
   
   @js.native
   sealed trait OpenParenToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
   /* 20 */ val OpenParenToken: typings.typescript.mod.SyntaxKind.OpenParenToken & Double = js.native
   
   @js.native
@@ -1898,23 +1712,18 @@ object SyntaxKind extends StObject {
   sealed trait OutKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
   /* 145 */ val OutKeyword: typings.typescript.mod.SyntaxKind.OutKeyword & Double = js.native
   
   @js.native
   sealed trait OverrideKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
   /* 161 */ val OverrideKeyword: typings.typescript.mod.SyntaxKind.OverrideKeyword & Double = js.native
   
   @js.native
   sealed trait PackageKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 120 */ val PackageKeyword: typings.typescript.mod.SyntaxKind.PackageKeyword & Double = js.native
   
   @js.native
@@ -1945,42 +1754,30 @@ object SyntaxKind extends StObject {
   sealed trait PercentEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with PunctuationSyntaxKind
   /* 69 */ val PercentEqualsToken: typings.typescript.mod.SyntaxKind.PercentEqualsToken & Double = js.native
   
   @js.native
   sealed trait PercentToken
     extends StObject
        with SyntaxKind
-       with MultiplicativeOperator
-       with PunctuationSyntaxKind
   /* 44 */ val PercentToken: typings.typescript.mod.SyntaxKind.PercentToken & Double = js.native
   
   @js.native
   sealed trait PlusEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with PunctuationSyntaxKind
   /* 64 */ val PlusEqualsToken: typings.typescript.mod.SyntaxKind.PlusEqualsToken & Double = js.native
   
   @js.native
   sealed trait PlusPlusToken
     extends StObject
        with SyntaxKind
-       with PostfixUnaryOperator
-       with PrefixUnaryOperator
-       with PunctuationSyntaxKind
   /* 45 */ val PlusPlusToken: typings.typescript.mod.SyntaxKind.PlusPlusToken & Double = js.native
   
   @js.native
   sealed trait PlusToken
     extends StObject
        with SyntaxKind
-       with AdditiveOperator
-       with PrefixUnaryOperator
-       with PunctuationSyntaxKind
   /* 39 */ val PlusToken: typings.typescript.mod.SyntaxKind.PlusToken & Double = js.native
   
   @js.native
@@ -2005,8 +1802,6 @@ object SyntaxKind extends StObject {
   sealed trait PrivateKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
   /* 121 */ val PrivateKeyword: typings.typescript.mod.SyntaxKind.PrivateKeyword & Double = js.native
   
   @js.native
@@ -2037,16 +1832,12 @@ object SyntaxKind extends StObject {
   sealed trait ProtectedKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
   /* 122 */ val ProtectedKeyword: typings.typescript.mod.SyntaxKind.ProtectedKeyword & Double = js.native
   
   @js.native
   sealed trait PublicKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
   /* 123 */ val PublicKeyword: typings.typescript.mod.SyntaxKind.PublicKeyword & Double = js.native
   
   @js.native
@@ -2059,52 +1850,42 @@ object SyntaxKind extends StObject {
   sealed trait QuestionDotToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
   /* 28 */ val QuestionDotToken: typings.typescript.mod.SyntaxKind.QuestionDotToken & Double = js.native
   
   @js.native
   sealed trait QuestionQuestionEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with LogicalOrCoalescingAssignmentOperator
   /* 77 */ val QuestionQuestionEqualsToken: typings.typescript.mod.SyntaxKind.QuestionQuestionEqualsToken & Double = js.native
   
   @js.native
   sealed trait QuestionQuestionToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
-       with _AssignmentOperatorOrHigher
   /* 60 */ val QuestionQuestionToken: typings.typescript.mod.SyntaxKind.QuestionQuestionToken & Double = js.native
   
   @js.native
   sealed trait QuestionToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
   /* 57 */ val QuestionToken: typings.typescript.mod.SyntaxKind.QuestionToken & Double = js.native
   
   @js.native
   sealed trait ReadonlyKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
   /* 146 */ val ReadonlyKeyword: typings.typescript.mod.SyntaxKind.ReadonlyKeyword & Double = js.native
   
   @js.native
   sealed trait RegularExpressionLiteral
     extends StObject
        with SyntaxKind
-       with LiteralSyntaxKind
   /* 13 */ val RegularExpressionLiteral: typings.typescript.mod.SyntaxKind.RegularExpressionLiteral & Double = js.native
   
   @js.native
   sealed trait RequireKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 147 */ val RequireKeyword: typings.typescript.mod.SyntaxKind.RequireKeyword & Double = js.native
   
   @js.native
@@ -2117,7 +1898,6 @@ object SyntaxKind extends StObject {
   sealed trait ReturnKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 105 */ val ReturnKeyword: typings.typescript.mod.SyntaxKind.ReturnKeyword & Double = js.native
   
   @js.native
@@ -2136,7 +1916,6 @@ object SyntaxKind extends StObject {
   sealed trait SatisfiesKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 150 */ val SatisfiesKeyword: typings.typescript.mod.SyntaxKind.SatisfiesKeyword & Double = js.native
   
   @js.native
@@ -2149,7 +1928,6 @@ object SyntaxKind extends StObject {
   sealed trait SemicolonToken
     extends StObject
        with SyntaxKind
-       with PunctuationSyntaxKind
   /* 26 */ val SemicolonToken: typings.typescript.mod.SyntaxKind.SemicolonToken & Double = js.native
   
   @js.native
@@ -2162,14 +1940,12 @@ object SyntaxKind extends StObject {
   sealed trait SetKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 151 */ val SetKeyword: typings.typescript.mod.SyntaxKind.SetKeyword & Double = js.native
   
   @js.native
   sealed trait ShebangTrivia
     extends StObject
        with SyntaxKind
-       with TriviaSyntaxKind
   /* 6 */ val ShebangTrivia: typings.typescript.mod.SyntaxKind.ShebangTrivia & Double = js.native
   
   @js.native
@@ -2182,24 +1958,18 @@ object SyntaxKind extends StObject {
   sealed trait SingleLineCommentTrivia
     extends StObject
        with SyntaxKind
-       with CommentKind
-       with TriviaSyntaxKind
   /* 2 */ val SingleLineCommentTrivia: typings.typescript.mod.SyntaxKind.SingleLineCommentTrivia & Double = js.native
   
   @js.native
   sealed trait SlashEqualsToken
     extends StObject
        with SyntaxKind
-       with CompoundAssignmentOperator
-       with PunctuationSyntaxKind
   /* 68 */ val SlashEqualsToken: typings.typescript.mod.SyntaxKind.SlashEqualsToken & Double = js.native
   
   @js.native
   sealed trait SlashToken
     extends StObject
        with SyntaxKind
-       with MultiplicativeOperator
-       with PunctuationSyntaxKind
   /* 43 */ val SlashToken: typings.typescript.mod.SyntaxKind.SlashToken & Double = js.native
   
   @js.native
@@ -2224,37 +1994,30 @@ object SyntaxKind extends StObject {
   sealed trait StaticKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with ModifierSyntaxKind
   /* 124 */ val StaticKeyword: typings.typescript.mod.SyntaxKind.StaticKeyword & Double = js.native
   
   @js.native
   sealed trait StringKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with KeywordTypeSyntaxKind
   /* 152 */ val StringKeyword: typings.typescript.mod.SyntaxKind.StringKeyword & Double = js.native
   
   @js.native
   sealed trait StringLiteral
     extends StObject
        with SyntaxKind
-       with LiteralSyntaxKind
   /* 10 */ val StringLiteral: typings.typescript.mod.SyntaxKind.StringLiteral & Double = js.native
   
   @js.native
   sealed trait SuperKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 106 */ val SuperKeyword: typings.typescript.mod.SyntaxKind.SuperKeyword & Double = js.native
   
   @js.native
   sealed trait SwitchKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 107 */ val SwitchKeyword: typings.typescript.mod.SyntaxKind.SwitchKeyword & Double = js.native
   
   @js.native
@@ -2267,8 +2030,6 @@ object SyntaxKind extends StObject {
   sealed trait SymbolKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with KeywordTypeSyntaxKind
   /* 153 */ val SymbolKeyword: typings.typescript.mod.SyntaxKind.SymbolKeyword & Double = js.native
   
   @js.native
@@ -2305,7 +2066,6 @@ object SyntaxKind extends StObject {
   sealed trait TemplateHead
     extends StObject
        with SyntaxKind
-       with PseudoLiteralSyntaxKind
   /* 15 */ val TemplateHead: typings.typescript.mod.SyntaxKind.TemplateHead & Double = js.native
   
   @js.native
@@ -2324,7 +2084,6 @@ object SyntaxKind extends StObject {
   sealed trait TemplateMiddle
     extends StObject
        with SyntaxKind
-       with PseudoLiteralSyntaxKind
   /* 16 */ val TemplateMiddle: typings.typescript.mod.SyntaxKind.TemplateMiddle & Double = js.native
   
   @js.native
@@ -2337,14 +2096,12 @@ object SyntaxKind extends StObject {
   sealed trait TemplateTail
     extends StObject
        with SyntaxKind
-       with PseudoLiteralSyntaxKind
   /* 17 */ val TemplateTail: typings.typescript.mod.SyntaxKind.TemplateTail & Double = js.native
   
   @js.native
   sealed trait ThisKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 108 */ val ThisKeyword: typings.typescript.mod.SyntaxKind.ThisKeyword & Double = js.native
   
   @js.native
@@ -2357,7 +2114,6 @@ object SyntaxKind extends StObject {
   sealed trait ThrowKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 109 */ val ThrowKeyword: typings.typescript.mod.SyntaxKind.ThrowKeyword & Double = js.native
   
   @js.native
@@ -2370,22 +2126,18 @@ object SyntaxKind extends StObject {
   sealed trait TildeToken
     extends StObject
        with SyntaxKind
-       with PrefixUnaryOperator
-       with PunctuationSyntaxKind
   /* 54 */ val TildeToken: typings.typescript.mod.SyntaxKind.TildeToken & Double = js.native
   
   @js.native
   sealed trait TrueKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 110 */ val TrueKeyword: typings.typescript.mod.SyntaxKind.TrueKeyword & Double = js.native
   
   @js.native
   sealed trait TryKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 111 */ val TryKeyword: typings.typescript.mod.SyntaxKind.TryKeyword & Double = js.native
   
   @js.native
@@ -2416,7 +2168,6 @@ object SyntaxKind extends StObject {
   sealed trait TypeKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 154 */ val TypeKeyword: typings.typescript.mod.SyntaxKind.TypeKeyword & Double = js.native
   
   @js.native
@@ -2435,7 +2186,6 @@ object SyntaxKind extends StObject {
   sealed trait TypeOfKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 112 */ val TypeOfKeyword: typings.typescript.mod.SyntaxKind.TypeOfKeyword & Double = js.native
   
   @js.native
@@ -2472,8 +2222,6 @@ object SyntaxKind extends StObject {
   sealed trait UndefinedKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with KeywordTypeSyntaxKind
   /* 155 */ val UndefinedKeyword: typings.typescript.mod.SyntaxKind.UndefinedKeyword & Double = js.native
   
   @js.native
@@ -2486,23 +2234,18 @@ object SyntaxKind extends StObject {
   sealed trait UniqueKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 156 */ val UniqueKeyword: typings.typescript.mod.SyntaxKind.UniqueKeyword & Double = js.native
   
   @js.native
   sealed trait Unknown
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with TokenSyntaxKind
   /* 0 */ val Unknown: typings.typescript.mod.SyntaxKind.Unknown & Double = js.native
   
   @js.native
   sealed trait UnknownKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with KeywordTypeSyntaxKind
   /* 157 */ val UnknownKeyword: typings.typescript.mod.SyntaxKind.UnknownKeyword & Double = js.native
   
   @js.native
@@ -2545,7 +2288,6 @@ object SyntaxKind extends StObject {
   sealed trait VarKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 113 */ val VarKeyword: typings.typescript.mod.SyntaxKind.VarKeyword & Double = js.native
   
   @js.native
@@ -2576,15 +2318,12 @@ object SyntaxKind extends StObject {
   sealed trait VoidKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
-       with KeywordTypeSyntaxKind
   /* 114 */ val VoidKeyword: typings.typescript.mod.SyntaxKind.VoidKeyword & Double = js.native
   
   @js.native
   sealed trait WhileKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 115 */ val WhileKeyword: typings.typescript.mod.SyntaxKind.WhileKeyword & Double = js.native
   
   @js.native
@@ -2597,15 +2336,12 @@ object SyntaxKind extends StObject {
   sealed trait WhitespaceTrivia
     extends StObject
        with SyntaxKind
-       with JSDocSyntaxKind
-       with TriviaSyntaxKind
   /* 5 */ val WhitespaceTrivia: typings.typescript.mod.SyntaxKind.WhitespaceTrivia & Double = js.native
   
   @js.native
   sealed trait WithKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 116 */ val WithKeyword: typings.typescript.mod.SyntaxKind.WithKeyword & Double = js.native
   
   @js.native
@@ -2624,6 +2360,5 @@ object SyntaxKind extends StObject {
   sealed trait YieldKeyword
     extends StObject
        with SyntaxKind
-       with KeywordSyntaxKind
   /* 125 */ val YieldKeyword: typings.typescript.mod.SyntaxKind.YieldKeyword & Double = js.native
 }

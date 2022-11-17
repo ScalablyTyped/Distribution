@@ -12,11 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NoSubstitutionTemplateLiteral
   extends StObject
      with LiteralExpression
-     with Declaration
-     with LiteralToken
-     with StringLiteralLike
-     with TemplateLiteral
-     with TemplateLiteralToken {
+     with Declaration {
   
   @JSName("kind")
   val kind_NoSubstitutionTemplateLiteral: typings.typescript.mod.SyntaxKind.NoSubstitutionTemplateLiteral = js.native

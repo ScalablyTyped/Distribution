@@ -1,21 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.JSXClosingElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait JSXClosingElement_
+trait JSXClosingElement_
   extends StObject
-     with BaseNode
-     with Immutable
-     with JSX {
+     with BaseNode {
   
   var name: JSXIdentifier_ | JSXMemberExpression_ | JSXNamespacedName_
   
   @JSName("type")
-  var type_JSXClosingElement_ : JSXClosingElement
+  var type_JSXClosingElement_ : "JSXClosingElement"
 }
 object JSXClosingElement_ {
   
@@ -29,6 +25,6 @@ object JSXClosingElement_ {
     
     inline def setName(value: JSXIdentifier_ | JSXMemberExpression_ | JSXNamespacedName_): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setType(value: JSXClosingElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "JSXClosingElement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

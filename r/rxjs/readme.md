@@ -10,10 +10,10 @@ Reactive Extensions for modern JavaScript
 | ------------------ | :-------------: |
 | Full name          | rxjs |
 | Keywords           | Rx, RxJS, ReactiveX, ReactiveExtensions, Streams, Observables, Observable, Stream, ES6, ES2015 |
-| # releases         | 43 |
+| # releases         | 37 |
 | # dependents       | 0.0 |
-| # downloads        | 1.5593069366666666E8 |
-| # stars            | 27297.0 |
+| # downloads        | 1.65812993E8 |
+| # stars            | 27751.0 |
 
 ## Links
 - [Homepage](https://rxjs.dev)

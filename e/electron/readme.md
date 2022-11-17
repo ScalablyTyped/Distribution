@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron
 
-Typings are for version 21.2.3
+Typings are for version 21.3.0
 
 ## Library description:
 Build cross platform desktop apps with JavaScript, HTML, and CSS
@@ -10,10 +10,10 @@ Build cross platform desktop apps with JavaScript, HTML, and CSS
 | ------------------ | :-------------: |
 | Full name          | electron |
 | Keywords           | electron |
-| # releases         | 441 |
+| # releases         | 437 |
 | # dependents       | 0.0 |
-| # downloads        | 2443242.0 |
-| # stars            | 103852.0 |
+| # downloads        | 2430281.0 |
+| # stars            | 103731.0 |
 
 ## Links
 - [Homepage](https://github.com/electron/electron#readme)

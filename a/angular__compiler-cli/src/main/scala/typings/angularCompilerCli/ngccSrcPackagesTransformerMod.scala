@@ -1,12 +1,13 @@
 package typings.angularCompilerCli
 
+import typings.angularCompilerCli.anon.Diagnostics
+import typings.angularCompilerCli.anon.Success
 import typings.angularCompilerCli.ngccSrcAnalysisModuleWithProvidersAnalyzerMod.ModuleWithProvidersAnalyses
 import typings.angularCompilerCli.ngccSrcAnalysisPrivateDeclarationsAnalyzerMod.ExportInfo
 import typings.angularCompilerCli.ngccSrcAnalysisTypesMod.CompiledFile
 import typings.angularCompilerCli.ngccSrcHostNgccHostMod.NgccReflectionHost
 import typings.angularCompilerCli.ngccSrcPackagesEntryPointBundleMod.EntryPointBundle
 import typings.angularCompilerCli.ngccSrcRenderingRenderingFormatterMod.RenderingFormatter
-import typings.angularCompilerCli.ngccSrcRenderingUtilsMod.FileToWrite
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.ReadonlyFileSystem
 import typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.Logger
 import typings.angularCompilerCli.srcPerformCompileMod.ParsedConfiguration
@@ -90,21 +91,5 @@ object ngccSrcPackagesTransformerMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.anon.Diagnostics
-    - typings.angularCompilerCli.anon.Success
-  */
-  trait TransformResult extends StObject
-  object TransformResult {
-    
-    inline def Diagnostics(diagnostics: js.Array[Diagnostic], transformedFiles: js.Array[FileToWrite]): typings.angularCompilerCli.anon.Diagnostics = {
-      val __obj = js.Dynamic.literal(diagnostics = diagnostics.asInstanceOf[js.Any], success = true, transformedFiles = transformedFiles.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularCompilerCli.anon.Diagnostics]
-    }
-    
-    inline def Success(diagnostics: js.Array[Diagnostic]): typings.angularCompilerCli.anon.Success = {
-      val __obj = js.Dynamic.literal(diagnostics = diagnostics.asInstanceOf[js.Any], success = false)
-      __obj.asInstanceOf[typings.angularCompilerCli.anon.Success]
-    }
-  }
+  type TransformResult = Diagnostics | Success
 }

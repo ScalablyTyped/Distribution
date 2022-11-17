@@ -6,9 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SuccessResult
-  extends StObject
-     with DataResult {
+trait SuccessResult extends StObject {
   
   var data: Any
   

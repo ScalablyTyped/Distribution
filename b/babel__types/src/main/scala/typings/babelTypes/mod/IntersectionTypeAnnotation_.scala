@@ -1,19 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.IntersectionTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait IntersectionTypeAnnotation_
+trait IntersectionTypeAnnotation_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowType {
+     with BaseNode {
   
   @JSName("type")
-  var type_IntersectionTypeAnnotation_ : IntersectionTypeAnnotation
+  var type_IntersectionTypeAnnotation_ : "IntersectionTypeAnnotation"
   
   var types: js.Array[FlowType]
 }
@@ -27,7 +23,7 @@ object IntersectionTypeAnnotation_ {
   
   extension [Self <: IntersectionTypeAnnotation_](x: Self) {
     
-    inline def setType(value: IntersectionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "IntersectionTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypes(value: js.Array[FlowType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     

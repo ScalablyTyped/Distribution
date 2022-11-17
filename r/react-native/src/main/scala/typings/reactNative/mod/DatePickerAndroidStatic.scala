@@ -10,12 +10,12 @@ trait DatePickerAndroidStatic extends StObject {
   /**
     * A date has been selected.
     */
-  var dateSetAction: typings.reactNative.reactNativeStrings.dateSetAction = js.native
+  var dateSetAction: "dateSetAction" = js.native
   
   /**
     * The dialog has been dismissed.
     */
-  var dismissedAction: typings.reactNative.reactNativeStrings.dismissedAction = js.native
+  var dismissedAction: "dismissedAction" = js.native
   
   /**
     * Opens the standard Android date picker dialog.

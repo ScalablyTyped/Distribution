@@ -1,6 +1,5 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.materialUiCoreBooleans.`true`
 import typings.materialUiTypes.mod.OverridableStringUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,15 +22,15 @@ object stylesCreateBreakpointsMod {
   /* Inlined std.Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', true> */
   trait BreakpointDefaults extends StObject {
     
-    var lg: `true`
+    var lg: true
     
-    var md: `true`
+    var md: true
     
-    var sm: `true`
+    var sm: true
     
-    var xl: `true`
+    var xl: true
     
-    var xs: `true`
+    var xs: true
   }
   object BreakpointDefaults {
     
@@ -42,15 +41,15 @@ object stylesCreateBreakpointsMod {
     
     extension [Self <: BreakpointDefaults](x: Self) {
       
-      inline def setLg(value: `true`): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+      inline def setLg(value: true): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
-      inline def setMd(value: `true`): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      inline def setMd(value: true): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
       
-      inline def setSm(value: `true`): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
+      inline def setSm(value: true): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
       
-      inline def setXl(value: `true`): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
+      inline def setXl(value: true): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
       
-      inline def setXs(value: `true`): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+      inline def setXs(value: true): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
     }
   }
   

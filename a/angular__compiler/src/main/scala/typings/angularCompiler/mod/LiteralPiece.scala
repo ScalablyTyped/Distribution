@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LiteralPiece
-  extends StObject
-     with MessagePiece {
+trait LiteralPiece extends StObject {
   
   var sourceSpan: ParseSourceSpan
   

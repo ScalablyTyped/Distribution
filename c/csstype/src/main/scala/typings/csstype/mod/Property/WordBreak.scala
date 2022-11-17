@@ -4,38 +4,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.csstypeStrings.`break-all`
-  - typings.csstype.csstypeStrings.`break-word`
-  - typings.csstype.csstypeStrings.`keep-all`
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.`-moz-initial`
-  - typings.csstype.csstypeStrings.inherit
-  - typings.csstype.csstypeStrings.initial
-  - typings.csstype.csstypeStrings.revert
-  - typings.csstype.csstypeStrings.`revert-layer`
-  - typings.csstype.csstypeStrings.unset
-*/
-trait WordBreak extends StObject
 object WordBreak {
   
-  inline def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def `break-all`: typings.csstype.csstypeStrings.`break-all` = "break-all".asInstanceOf[typings.csstype.csstypeStrings.`break-all`]
+  inline def `break-all`: "break-all" = "break-all".asInstanceOf["break-all"]
   
-  inline def `break-word`: typings.csstype.csstypeStrings.`break-word` = "break-word".asInstanceOf[typings.csstype.csstypeStrings.`break-word`]
+  inline def `break-word`: "break-word" = "break-word".asInstanceOf["break-word"]
   
-  inline def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def `keep-all`: typings.csstype.csstypeStrings.`keep-all` = "keep-all".asInstanceOf[typings.csstype.csstypeStrings.`keep-all`]
+  inline def `keep-all`: "keep-all" = "keep-all".asInstanceOf["keep-all"]
   
-  inline def normal: typings.csstype.csstypeStrings.normal = "normal".asInstanceOf[typings.csstype.csstypeStrings.normal]
+  inline def normal: "normal" = "normal".asInstanceOf["normal"]
   
-  inline def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def `revert-layer`: typings.csstype.csstypeStrings.`revert-layer` = "revert-layer".asInstanceOf[typings.csstype.csstypeStrings.`revert-layer`]
+  inline def `revert-layer`: "revert-layer" = "revert-layer".asInstanceOf["revert-layer"]
   
-  inline def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
 }

@@ -1,12 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.filled
-import typings.materialUiCore.materialUiCoreStrings.medium
-import typings.materialUiCore.materialUiCoreStrings.outlined
-import typings.materialUiCore.materialUiCoreStrings.primary
-import typings.materialUiCore.materialUiCoreStrings.secondary
-import typings.materialUiCore.materialUiCoreStrings.small
-import typings.materialUiCore.materialUiCoreStrings.standard
 import typings.materialUiCore.mod.PropTypes.Margin
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -23,7 +16,7 @@ trait Error extends StObject {
   /**
     * The color of the component. It supports those theme colors that make sense for this component.
     */
-  var color: js.UndefOr[primary | secondary] = js.undefined
+  var color: js.UndefOr["primary" | "secondary"] = js.undefined
   
   /**
     * If `true`, the label, input and helper text should be displayed in a disabled state.
@@ -65,12 +58,12 @@ trait Error extends StObject {
   /**
     * The size of the text field.
     */
-  var size: js.UndefOr[small | medium] = js.undefined
+  var size: js.UndefOr["small" | "medium"] = js.undefined
   
   /**
     * The variant to use.
     */
-  var variant: js.UndefOr[standard | outlined | filled] = js.undefined
+  var variant: js.UndefOr["standard" | "outlined" | "filled"] = js.undefined
 }
 object Error {
   
@@ -85,7 +78,7 @@ object Error {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setColor(value: primary | secondary): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: "primary" | "secondary"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
@@ -117,11 +110,11 @@ object Error {
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    inline def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "small" | "medium"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setVariant(value: standard | outlined | filled): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "standard" | "outlined" | "filled"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

@@ -4,50 +4,33 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.csstypeStrings.ignore
-  - typings.csstype.csstypeStrings.none
-  - typings.csstype.csstypeStrings.normal
-  - typings.csstype.csstypeStrings.`select-after`
-  - typings.csstype.csstypeStrings.`select-all`
-  - typings.csstype.csstypeStrings.`select-before`
-  - typings.csstype.csstypeStrings.`select-menu`
-  - typings.csstype.csstypeStrings.`select-same`
-  - typings.csstype.csstypeStrings.`-moz-initial`
-  - typings.csstype.csstypeStrings.inherit
-  - typings.csstype.csstypeStrings.initial
-  - typings.csstype.csstypeStrings.revert
-  - typings.csstype.csstypeStrings.`revert-layer`
-  - typings.csstype.csstypeStrings.unset
-*/
-trait MozUserFocus extends StObject
 object MozUserFocus {
   
-  inline def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def ignore: typings.csstype.csstypeStrings.ignore = "ignore".asInstanceOf[typings.csstype.csstypeStrings.ignore]
+  inline def ignore: "ignore" = "ignore".asInstanceOf["ignore"]
   
-  inline def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
+  inline def none: "none" = "none".asInstanceOf["none"]
   
-  inline def normal: typings.csstype.csstypeStrings.normal = "normal".asInstanceOf[typings.csstype.csstypeStrings.normal]
+  inline def normal: "normal" = "normal".asInstanceOf["normal"]
   
-  inline def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def `revert-layer`: typings.csstype.csstypeStrings.`revert-layer` = "revert-layer".asInstanceOf[typings.csstype.csstypeStrings.`revert-layer`]
+  inline def `revert-layer`: "revert-layer" = "revert-layer".asInstanceOf["revert-layer"]
   
-  inline def `select-after`: typings.csstype.csstypeStrings.`select-after` = "select-after".asInstanceOf[typings.csstype.csstypeStrings.`select-after`]
+  inline def `select-after`: "select-after" = "select-after".asInstanceOf["select-after"]
   
-  inline def `select-all`: typings.csstype.csstypeStrings.`select-all` = "select-all".asInstanceOf[typings.csstype.csstypeStrings.`select-all`]
+  inline def `select-all`: "select-all" = "select-all".asInstanceOf["select-all"]
   
-  inline def `select-before`: typings.csstype.csstypeStrings.`select-before` = "select-before".asInstanceOf[typings.csstype.csstypeStrings.`select-before`]
+  inline def `select-before`: "select-before" = "select-before".asInstanceOf["select-before"]
   
-  inline def `select-menu`: typings.csstype.csstypeStrings.`select-menu` = "select-menu".asInstanceOf[typings.csstype.csstypeStrings.`select-menu`]
+  inline def `select-menu`: "select-menu" = "select-menu".asInstanceOf["select-menu"]
   
-  inline def `select-same`: typings.csstype.csstypeStrings.`select-same` = "select-same".asInstanceOf[typings.csstype.csstypeStrings.`select-same`]
+  inline def `select-same`: "select-same" = "select-same".asInstanceOf["select-same"]
   
-  inline def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
 }

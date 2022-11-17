@@ -2,7 +2,6 @@ package typings.angularForms.mod
 
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
 import typings.angularForms.anon.CompareWith
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -120,7 +119,8 @@ object SelectControlValueAccessor {
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
@@ -131,7 +131,8 @@ object SelectControlValueAccessor {
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `false`
+      false, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

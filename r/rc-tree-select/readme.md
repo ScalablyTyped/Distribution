@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-tree-select
 
-Typings are for version 5.5.3
+Typings are for version 5.5.4
 
 ## Library description:
 tree-select ui component for react

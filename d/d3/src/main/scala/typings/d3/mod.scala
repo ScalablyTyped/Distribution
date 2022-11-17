@@ -2,177 +2,6 @@ package typings.d3
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.d3.d3Strings.`implicit`
-import typings.d3.d3Strings.`object`
-import typings.d3.d3Strings.`var`
-import typings.d3.d3Strings.a
-import typings.d3.d3Strings.abbr
-import typings.d3.d3Strings.address
-import typings.d3.d3Strings.animate
-import typings.d3.d3Strings.animateMotion
-import typings.d3.d3Strings.animateTransform
-import typings.d3.d3Strings.area
-import typings.d3.d3Strings.article
-import typings.d3.d3Strings.aside
-import typings.d3.d3Strings.audio
-import typings.d3.d3Strings.b
-import typings.d3.d3Strings.base
-import typings.d3.d3Strings.bdi
-import typings.d3.d3Strings.bdo
-import typings.d3.d3Strings.blockquote
-import typings.d3.d3Strings.body
-import typings.d3.d3Strings.br
-import typings.d3.d3Strings.button
-import typings.d3.d3Strings.canvas
-import typings.d3.d3Strings.caption
-import typings.d3.d3Strings.circle
-import typings.d3.d3Strings.cite
-import typings.d3.d3Strings.clipPath
-import typings.d3.d3Strings.code
-import typings.d3.d3Strings.col
-import typings.d3.d3Strings.colgroup
-import typings.d3.d3Strings.data
-import typings.d3.d3Strings.datalist
-import typings.d3.d3Strings.dd
-import typings.d3.d3Strings.defs
-import typings.d3.d3Strings.del
-import typings.d3.d3Strings.desc
-import typings.d3.d3Strings.details
-import typings.d3.d3Strings.dfn
-import typings.d3.d3Strings.dialog
-import typings.d3.d3Strings.div
-import typings.d3.d3Strings.dl
-import typings.d3.d3Strings.dt
-import typings.d3.d3Strings.ellipse
-import typings.d3.d3Strings.em
-import typings.d3.d3Strings.embed
-import typings.d3.d3Strings.feBlend
-import typings.d3.d3Strings.feColorMatrix
-import typings.d3.d3Strings.feComponentTransfer
-import typings.d3.d3Strings.feComposite
-import typings.d3.d3Strings.feConvolveMatrix
-import typings.d3.d3Strings.feDiffuseLighting
-import typings.d3.d3Strings.feDisplacementMap
-import typings.d3.d3Strings.feDistantLight
-import typings.d3.d3Strings.feDropShadow
-import typings.d3.d3Strings.feFlood
-import typings.d3.d3Strings.feFuncA
-import typings.d3.d3Strings.feFuncB
-import typings.d3.d3Strings.feFuncG
-import typings.d3.d3Strings.feFuncR
-import typings.d3.d3Strings.feGaussianBlur
-import typings.d3.d3Strings.feImage
-import typings.d3.d3Strings.feMerge
-import typings.d3.d3Strings.feMergeNode
-import typings.d3.d3Strings.feMorphology
-import typings.d3.d3Strings.feOffset
-import typings.d3.d3Strings.fePointLight
-import typings.d3.d3Strings.feSpecularLighting
-import typings.d3.d3Strings.feSpotLight
-import typings.d3.d3Strings.feTile
-import typings.d3.d3Strings.feTurbulence
-import typings.d3.d3Strings.fieldset
-import typings.d3.d3Strings.figcaption
-import typings.d3.d3Strings.figure
-import typings.d3.d3Strings.filter
-import typings.d3.d3Strings.footer
-import typings.d3.d3Strings.foreignObject
-import typings.d3.d3Strings.form
-import typings.d3.d3Strings.g
-import typings.d3.d3Strings.h1
-import typings.d3.d3Strings.h2
-import typings.d3.d3Strings.h3
-import typings.d3.d3Strings.h4
-import typings.d3.d3Strings.h5
-import typings.d3.d3Strings.h6
-import typings.d3.d3Strings.head
-import typings.d3.d3Strings.header
-import typings.d3.d3Strings.hgroup
-import typings.d3.d3Strings.hr
-import typings.d3.d3Strings.html
-import typings.d3.d3Strings.i
-import typings.d3.d3Strings.iframe
-import typings.d3.d3Strings.image
-import typings.d3.d3Strings.img
-import typings.d3.d3Strings.input
-import typings.d3.d3Strings.ins
-import typings.d3.d3Strings.kbd
-import typings.d3.d3Strings.label
-import typings.d3.d3Strings.legend
-import typings.d3.d3Strings.li
-import typings.d3.d3Strings.line
-import typings.d3.d3Strings.linearGradient
-import typings.d3.d3Strings.link
-import typings.d3.d3Strings.main
-import typings.d3.d3Strings.map
-import typings.d3.d3Strings.mark
-import typings.d3.d3Strings.marker
-import typings.d3.d3Strings.mask
-import typings.d3.d3Strings.menu
-import typings.d3.d3Strings.meta
-import typings.d3.d3Strings.metadata
-import typings.d3.d3Strings.meter
-import typings.d3.d3Strings.mpath
-import typings.d3.d3Strings.nav
-import typings.d3.d3Strings.noscript
-import typings.d3.d3Strings.ol
-import typings.d3.d3Strings.optgroup
-import typings.d3.d3Strings.option
-import typings.d3.d3Strings.output
-import typings.d3.d3Strings.p
-import typings.d3.d3Strings.path
-import typings.d3.d3Strings.pattern
-import typings.d3.d3Strings.picture
-import typings.d3.d3Strings.polygon
-import typings.d3.d3Strings.polyline
-import typings.d3.d3Strings.pre
-import typings.d3.d3Strings.progress
-import typings.d3.d3Strings.q
-import typings.d3.d3Strings.radialGradient
-import typings.d3.d3Strings.rect
-import typings.d3.d3Strings.rp
-import typings.d3.d3Strings.rt
-import typings.d3.d3Strings.ruby
-import typings.d3.d3Strings.s
-import typings.d3.d3Strings.samp
-import typings.d3.d3Strings.script
-import typings.d3.d3Strings.section
-import typings.d3.d3Strings.select
-import typings.d3.d3Strings.set
-import typings.d3.d3Strings.slot
-import typings.d3.d3Strings.small
-import typings.d3.d3Strings.source
-import typings.d3.d3Strings.span
-import typings.d3.d3Strings.stop
-import typings.d3.d3Strings.strong
-import typings.d3.d3Strings.style
-import typings.d3.d3Strings.sub
-import typings.d3.d3Strings.summary
-import typings.d3.d3Strings.sup
-import typings.d3.d3Strings.svg
-import typings.d3.d3Strings.switch
-import typings.d3.d3Strings.symbol
-import typings.d3.d3Strings.table
-import typings.d3.d3Strings.tbody
-import typings.d3.d3Strings.td
-import typings.d3.d3Strings.template
-import typings.d3.d3Strings.text
-import typings.d3.d3Strings.textPath
-import typings.d3.d3Strings.textarea
-import typings.d3.d3Strings.tfoot
-import typings.d3.d3Strings.th
-import typings.d3.d3Strings.thead
-import typings.d3.d3Strings.time
-import typings.d3.d3Strings.title
-import typings.d3.d3Strings.tr
-import typings.d3.d3Strings.track
-import typings.d3.d3Strings.tspan
-import typings.d3.d3Strings.u
-import typings.d3.d3Strings.ul
-import typings.d3.d3Strings.use
-import typings.d3.d3Strings.video
-import typings.d3.d3Strings.view
-import typings.d3.d3Strings.wbr
 import typings.d3Array.anon.FnCall
 import typings.d3Array.mod.Bisector_
 import typings.d3Array.mod.HistogramGeneratorDate
@@ -794,689 +623,689 @@ object mod {
     accessor: js.Function2[/* a */ TObject, /* b */ TObject, js.UndefOr[Double | Null]]
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
+  @scala.annotation.targetName("create_samp")
+  inline def create(name: "samp"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_canvas")
+  inline def create(name: "canvas"): Selection_[HTMLCanvasElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLCanvasElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_fePointLight")
+  inline def create(name: "fePointLight"): Selection_[SVGFEPointLightElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEPointLightElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_circle")
+  inline def create(name: "circle"): Selection_[SVGCircleElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGCircleElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_h1")
+  inline def create(name: "h1"): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_use")
+  inline def create(name: "use"): Selection_[SVGUseElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGUseElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_ol")
+  inline def create(name: "ol"): Selection_[HTMLOListElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLOListElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_html")
+  inline def create(name: "html"): Selection_[HTMLHtmlElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHtmlElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_details")
+  inline def create(name: "details"): Selection_[HTMLDetailsElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDetailsElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_nav")
+  inline def create(name: "nav"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_stop")
+  inline def create(name: "stop"): Selection_[SVGStopElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGStopElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_area")
+  inline def create(name: "area"): Selection_[HTMLAreaElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLAreaElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feImage")
+  inline def create(name: "feImage"): Selection_[SVGFEImageElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEImageElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feFlood")
+  inline def create(name: "feFlood"): Selection_[SVGFEFloodElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFloodElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feSpotLight")
+  inline def create(name: "feSpotLight"): Selection_[SVGFESpotLightElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFESpotLightElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_ul")
+  inline def create(name: "ul"): Selection_[HTMLUListElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLUListElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_i")
+  inline def create(name: "i"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_s")
+  inline def create(name: "s"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feTile")
+  inline def create(name: "feTile"): Selection_[SVGFETileElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFETileElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_h3")
+  inline def create(name: "h3"): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_tspan")
+  inline def create(name: "tspan"): Selection_[SVGTSpanElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGTSpanElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_foreignObject")
+  inline def create(name: "foreignObject"): Selection_[SVGForeignObjectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGForeignObjectElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_cite")
+  inline def create(name: "cite"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_main")
+  inline def create(name: "main"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_address")
+  inline def create(name: "address"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_set")
+  inline def create(name: "set"): Selection_[SVGSetElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGSetElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_audio")
+  inline def create(name: "audio"): Selection_[HTMLAudioElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLAudioElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feOffset")
+  inline def create(name: "feOffset"): Selection_[SVGFEOffsetElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEOffsetElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_strong")
+  inline def create(name: "strong"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_menu")
+  inline def create(name: "menu"): Selection_[HTMLMenuElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMenuElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_datalist")
+  inline def create(name: "datalist"): Selection_[HTMLDataListElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDataListElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_h4")
+  inline def create(name: "h4"): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feMergeNode")
+  inline def create(name: "feMergeNode"): Selection_[SVGFEMergeNodeElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEMergeNodeElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_progress")
+  inline def create(name: "progress"): Selection_[HTMLProgressElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLProgressElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_head")
+  inline def create(name: "head"): Selection_[HTMLHeadElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_textarea")
+  inline def create(name: "textarea"): Selection_[HTMLTextAreaElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTextAreaElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_col")
+  inline def create(name: "col"): Selection_[HTMLTableColElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableColElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_u")
+  inline def create(name: "u"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_tr")
+  inline def create(name: "tr"): Selection_[HTMLTableRowElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableRowElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_a")
+  inline def create(name: "a"): Selection_[HTMLAnchorElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLAnchorElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_h6")
+  inline def create(name: "h6"): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_b")
+  inline def create(name: "b"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feSpecularLighting")
+  inline def create(name: "feSpecularLighting"): Selection_[SVGFESpecularLightingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFESpecularLightingElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_em")
+  inline def create(name: "em"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_meta")
+  inline def create(name: "meta"): Selection_[HTMLMetaElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMetaElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_link")
+  inline def create(name: "link"): Selection_[HTMLLinkElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLLinkElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_small")
+  inline def create(name: "small"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_mask")
+  inline def create(name: "mask"): Selection_[SVGMaskElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMaskElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_hr")
+  inline def create(name: "hr"): Selection_[HTMLHRElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHRElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_textPath")
+  inline def create(name: "textPath"): Selection_[SVGTextPathElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGTextPathElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_pattern")
+  inline def create(name: "pattern"): Selection_[SVGPatternElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGPatternElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_animateTransform")
+  inline def create(name: "animateTransform"): Selection_[SVGAnimateTransformElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGAnimateTransformElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_caption")
+  inline def create(name: "caption"): Selection_[HTMLTableCaptionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableCaptionElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feMorphology")
+  inline def create(name: "feMorphology"): Selection_[SVGFEMorphologyElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEMorphologyElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_g")
+  inline def create(name: "g"): Selection_[SVGGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGGElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_h2")
+  inline def create(name: "h2"): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_option")
+  inline def create(name: "option"): Selection_[HTMLOptionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLOptionElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_animate")
+  inline def create(name: "animate"): Selection_[SVGAnimateElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGAnimateElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feColorMatrix")
+  inline def create(name: "feColorMatrix"): Selection_[SVGFEColorMatrixElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEColorMatrixElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_view")
+  inline def create(name: "view"): Selection_[SVGViewElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGViewElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_wbr")
+  inline def create(name: "wbr"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_div")
+  inline def create(name: "div"): Selection_[HTMLDivElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDivElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_picture")
+  inline def create(name: "picture"): Selection_[HTMLPictureElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLPictureElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_pre")
+  inline def create(name: "pre"): Selection_[HTMLPreElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLPreElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feComposite")
+  inline def create(name: "feComposite"): Selection_[SVGFECompositeElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFECompositeElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_select")
+  inline def create(name: "select"): Selection_[HTMLSelectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSelectElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_th")
+  inline def create(name: "th"): Selection_[HTMLTableCellElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableCellElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_figure")
+  inline def create(name: "figure"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_form")
+  inline def create(name: "form"): Selection_[HTMLFormElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLFormElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_del")
+  inline def create(name: "del"): Selection_[HTMLModElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLModElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feConvolveMatrix")
+  inline def create(name: "feConvolveMatrix"): Selection_[SVGFEConvolveMatrixElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEConvolveMatrixElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_ellipse")
+  inline def create(name: "ellipse"): Selection_[SVGEllipseElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGEllipseElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_h5")
+  inline def create(name: "h5"): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_bdo")
+  inline def create(name: "bdo"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_meter")
+  inline def create(name: "meter"): Selection_[HTMLMeterElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMeterElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_tfoot")
+  inline def create(name: "tfoot"): Selection_[HTMLTableSectionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableSectionElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feComponentTransfer")
+  inline def create(name: "feComponentTransfer"): Selection_[SVGFEComponentTransferElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEComponentTransferElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_filter")
+  inline def create(name: "filter"): Selection_[SVGFilterElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFilterElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_sup")
+  inline def create(name: "sup"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_br")
+  inline def create(name: "br"): Selection_[HTMLBRElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLBRElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feDistantLight")
+  inline def create(name: "feDistantLight"): Selection_[SVGFEDistantLightElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEDistantLightElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_image")
+  inline def create(name: "image"): Selection_[SVGImageElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGImageElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_header")
+  inline def create(name: "header"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_symbol")
+  inline def create(name: "symbol"): Selection_[SVGSymbolElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGSymbolElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feFuncB")
+  inline def create(name: "feFuncB"): Selection_[SVGFEFuncBElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFuncBElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_img")
+  inline def create(name: "img"): Selection_[HTMLImageElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLImageElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_colgroup")
+  inline def create(name: "colgroup"): Selection_[HTMLTableColElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableColElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_ruby")
+  inline def create(name: "ruby"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_dialog")
+  inline def create(name: "dialog"): Selection_[HTMLDialogElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDialogElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_base")
+  inline def create(name: "base"): Selection_[HTMLBaseElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLBaseElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_p")
+  inline def create(name: "p"): Selection_[HTMLParagraphElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLParagraphElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_input")
+  inline def create(name: "input"): Selection_[HTMLInputElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLInputElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_q")
+  inline def create(name: "q"): Selection_[HTMLQuoteElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLQuoteElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_kbd")
+  inline def create(name: "kbd"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_fieldset")
+  inline def create(name: "fieldset"): Selection_[HTMLFieldSetElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLFieldSetElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_aside")
+  inline def create(name: "aside"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_metadata")
+  inline def create(name: "metadata"): Selection_[SVGMetadataElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMetadataElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_output")
+  inline def create(name: "output"): Selection_[HTMLOutputElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLOutputElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_dt")
+  inline def create(name: "dt"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_dl")
+  inline def create(name: "dl"): Selection_[HTMLDListElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDListElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_slot")
+  inline def create(name: "slot"): Selection_[HTMLSlotElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSlotElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_span")
+  inline def create(name: "span"): Selection_[HTMLSpanElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSpanElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_body")
+  inline def create(name: "body"): Selection_[HTMLBodyElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLBodyElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_bdi")
+  inline def create(name: "bdi"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feFuncR")
+  inline def create(name: "feFuncR"): Selection_[SVGFEFuncRElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFuncRElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feTurbulence")
+  inline def create(name: "feTurbulence"): Selection_[SVGFETurbulenceElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFETurbulenceElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_noscript")
+  inline def create(name: "noscript"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_thead")
+  inline def create(name: "thead"): Selection_[HTMLTableSectionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableSectionElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_radialGradient")
+  inline def create(name: "radialGradient"): Selection_[SVGRadialGradientElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGRadialGradientElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_footer")
+  inline def create(name: "footer"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_article")
+  inline def create(name: "article"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feGaussianBlur")
+  inline def create(name: "feGaussianBlur"): Selection_[SVGFEGaussianBlurElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEGaussianBlurElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_time")
+  inline def create(name: "time"): Selection_[HTMLTimeElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTimeElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_button")
+  inline def create(name: "button"): Selection_[HTMLButtonElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLButtonElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_title")
+  inline def create(name: "title"): Selection_[HTMLTitleElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTitleElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_var")
+  inline def create(name: "var"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_mpath")
+  inline def create(name: "mpath"): Selection_[SVGMPathElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMPathElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_track")
+  inline def create(name: "track"): Selection_[HTMLTrackElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTrackElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_script")
+  inline def create(name: "script"): Selection_[HTMLScriptElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLScriptElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_source")
+  inline def create(name: "source"): Selection_[HTMLSourceElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSourceElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_iframe")
+  inline def create(name: "iframe"): Selection_[HTMLIFrameElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLIFrameElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_data")
+  inline def create(name: "data"): Selection_[HTMLDataElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDataElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feFuncA")
+  inline def create(name: "feFuncA"): Selection_[SVGFEFuncAElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFuncAElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_li")
+  inline def create(name: "li"): Selection_[HTMLLIElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLLIElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_svg")
+  inline def create(name: "svg"): Selection_[SVGSVGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGSVGElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_rp")
+  inline def create(name: "rp"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_section")
+  inline def create(name: "section"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_marker")
+  inline def create(name: "marker"): Selection_[SVGMarkerElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMarkerElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_clipPath")
+  inline def create(name: "clipPath"): Selection_[SVGClipPathElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGClipPathElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feBlend")
+  inline def create(name: "feBlend"): Selection_[SVGFEBlendElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEBlendElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_switch")
+  inline def create(name: "switch"): Selection_[SVGSwitchElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGSwitchElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feFuncG")
+  inline def create(name: "feFuncG"): Selection_[SVGFEFuncGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFuncGElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_defs")
+  inline def create(name: "defs"): Selection_[SVGDefsElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGDefsElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feMerge")
+  inline def create(name: "feMerge"): Selection_[SVGFEMergeElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEMergeElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feDiffuseLighting")
+  inline def create(name: "feDiffuseLighting"): Selection_[SVGFEDiffuseLightingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEDiffuseLightingElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_dd")
+  inline def create(name: "dd"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_sub")
+  inline def create(name: "sub"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_summary")
+  inline def create(name: "summary"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_linearGradient")
+  inline def create(name: "linearGradient"): Selection_[SVGLinearGradientElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGLinearGradientElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feDisplacementMap")
+  inline def create(name: "feDisplacementMap"): Selection_[SVGFEDisplacementMapElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEDisplacementMapElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_line")
+  inline def create(name: "line"): Selection_[SVGLineElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGLineElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_mark")
+  inline def create(name: "mark"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_optgroup")
+  inline def create(name: "optgroup"): Selection_[HTMLOptGroupElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLOptGroupElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_path")
+  inline def create(name: "path"): Selection_[SVGPathElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGPathElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_text")
+  inline def create(name: "text"): Selection_[SVGTextElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGTextElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_animateMotion")
+  inline def create(name: "animateMotion"): Selection_[SVGAnimateMotionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGAnimateMotionElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_video")
+  inline def create(name: "video"): Selection_[HTMLVideoElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLVideoElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_table")
+  inline def create(name: "table"): Selection_[HTMLTableElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_hgroup")
+  inline def create(name: "hgroup"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_map")
+  inline def create(name: "map"): Selection_[HTMLMapElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMapElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_template")
+  inline def create(name: "template"): Selection_[HTMLTemplateElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTemplateElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_polygon")
+  inline def create(name: "polygon"): Selection_[SVGPolygonElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGPolygonElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_ins")
+  inline def create(name: "ins"): Selection_[HTMLModElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLModElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_code")
+  inline def create(name: "code"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_dfn")
+  inline def create(name: "dfn"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_abbr")
+  inline def create(name: "abbr"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_blockquote")
+  inline def create(name: "blockquote"): Selection_[HTMLQuoteElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLQuoteElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_label")
+  inline def create(name: "label"): Selection_[HTMLLabelElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLLabelElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_polyline")
+  inline def create(name: "polyline"): Selection_[SVGPolylineElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGPolylineElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_desc")
+  inline def create(name: "desc"): Selection_[SVGDescElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGDescElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_legend")
+  inline def create(name: "legend"): Selection_[HTMLLegendElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLLegendElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_embed")
+  inline def create(name: "embed"): Selection_[HTMLEmbedElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLEmbedElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_tbody")
+  inline def create(name: "tbody"): Selection_[HTMLTableSectionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableSectionElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_object")
+  inline def create(name: "object"): Selection_[HTMLObjectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLObjectElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_figcaption")
+  inline def create(name: "figcaption"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_feDropShadow")
+  inline def create(name: "feDropShadow"): Selection_[SVGFEDropShadowElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEDropShadowElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_style")
+  inline def create(name: "style"): Selection_[HTMLStyleElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLStyleElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_rt")
+  inline def create(name: "rt"): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_rect")
+  inline def create(name: "rect"): Selection_[SVGRectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGRectElement, Unit, Null, Unit]]
+  @scala.annotation.targetName("create_td")
+  inline def create(name: "td"): Selection_[HTMLTableCellElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableCellElement, Unit, Null, Unit]]
   inline def create[NewGElement /* <: Element */](name: String): Selection_[NewGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[NewGElement, Unit, Null, Unit]]
   
-  inline def create_a(name: a): Selection_[HTMLAnchorElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLAnchorElement, Unit, Null, Unit]]
-  
-  inline def create_abbr(name: abbr): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_address(name: address): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_animate(name: animate): Selection_[SVGAnimateElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGAnimateElement, Unit, Null, Unit]]
-  
-  inline def create_animateMotion(name: animateMotion): Selection_[SVGAnimateMotionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGAnimateMotionElement, Unit, Null, Unit]]
-  
-  inline def create_animateTransform(name: animateTransform): Selection_[SVGAnimateTransformElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGAnimateTransformElement, Unit, Null, Unit]]
-  
-  inline def create_area(name: area): Selection_[HTMLAreaElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLAreaElement, Unit, Null, Unit]]
-  
-  inline def create_article(name: article): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_aside(name: aside): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_audio(name: audio): Selection_[HTMLAudioElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLAudioElement, Unit, Null, Unit]]
-  
-  inline def create_b(name: b): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_base(name: base): Selection_[HTMLBaseElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLBaseElement, Unit, Null, Unit]]
-  
-  inline def create_bdi(name: bdi): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_bdo(name: bdo): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_blockquote(name: blockquote): Selection_[HTMLQuoteElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLQuoteElement, Unit, Null, Unit]]
-  
-  inline def create_body(name: body): Selection_[HTMLBodyElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLBodyElement, Unit, Null, Unit]]
-  
-  inline def create_br(name: br): Selection_[HTMLBRElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLBRElement, Unit, Null, Unit]]
-  
-  inline def create_button(name: button): Selection_[HTMLButtonElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLButtonElement, Unit, Null, Unit]]
-  
-  inline def create_canvas(name: canvas): Selection_[HTMLCanvasElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLCanvasElement, Unit, Null, Unit]]
-  
-  inline def create_caption(name: caption): Selection_[HTMLTableCaptionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableCaptionElement, Unit, Null, Unit]]
-  
-  inline def create_circle(name: circle): Selection_[SVGCircleElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGCircleElement, Unit, Null, Unit]]
-  
-  inline def create_cite(name: cite): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_clipPath(name: clipPath): Selection_[SVGClipPathElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGClipPathElement, Unit, Null, Unit]]
-  
-  inline def create_code(name: code): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_col(name: col): Selection_[HTMLTableColElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableColElement, Unit, Null, Unit]]
-  
-  inline def create_colgroup(name: colgroup): Selection_[HTMLTableColElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableColElement, Unit, Null, Unit]]
-  
-  inline def create_data(name: data): Selection_[HTMLDataElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDataElement, Unit, Null, Unit]]
-  
-  inline def create_datalist(name: datalist): Selection_[HTMLDataListElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDataListElement, Unit, Null, Unit]]
-  
-  inline def create_dd(name: dd): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_defs(name: defs): Selection_[SVGDefsElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGDefsElement, Unit, Null, Unit]]
-  
-  inline def create_del(name: del): Selection_[HTMLModElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLModElement, Unit, Null, Unit]]
-  
-  inline def create_desc(name: desc): Selection_[SVGDescElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGDescElement, Unit, Null, Unit]]
-  
-  inline def create_details(name: details): Selection_[HTMLDetailsElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDetailsElement, Unit, Null, Unit]]
-  
-  inline def create_dfn(name: dfn): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_dialog(name: dialog): Selection_[HTMLDialogElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDialogElement, Unit, Null, Unit]]
-  
-  inline def create_div(name: div): Selection_[HTMLDivElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDivElement, Unit, Null, Unit]]
-  
-  inline def create_dl(name: dl): Selection_[HTMLDListElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDListElement, Unit, Null, Unit]]
-  
-  inline def create_dt(name: dt): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_ellipse(name: ellipse): Selection_[SVGEllipseElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGEllipseElement, Unit, Null, Unit]]
-  
-  inline def create_em(name: em): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_embed(name: embed): Selection_[HTMLEmbedElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLEmbedElement, Unit, Null, Unit]]
-  
-  inline def create_feBlend(name: feBlend): Selection_[SVGFEBlendElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEBlendElement, Unit, Null, Unit]]
-  
-  inline def create_feColorMatrix(name: feColorMatrix): Selection_[SVGFEColorMatrixElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEColorMatrixElement, Unit, Null, Unit]]
-  
-  inline def create_feComponentTransfer(name: feComponentTransfer): Selection_[SVGFEComponentTransferElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEComponentTransferElement, Unit, Null, Unit]]
-  
-  inline def create_feComposite(name: feComposite): Selection_[SVGFECompositeElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFECompositeElement, Unit, Null, Unit]]
-  
-  inline def create_feConvolveMatrix(name: feConvolveMatrix): Selection_[SVGFEConvolveMatrixElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEConvolveMatrixElement, Unit, Null, Unit]]
-  
-  inline def create_feDiffuseLighting(name: feDiffuseLighting): Selection_[SVGFEDiffuseLightingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEDiffuseLightingElement, Unit, Null, Unit]]
-  
-  inline def create_feDisplacementMap(name: feDisplacementMap): Selection_[SVGFEDisplacementMapElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEDisplacementMapElement, Unit, Null, Unit]]
-  
-  inline def create_feDistantLight(name: feDistantLight): Selection_[SVGFEDistantLightElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEDistantLightElement, Unit, Null, Unit]]
-  
-  inline def create_feDropShadow(name: feDropShadow): Selection_[SVGFEDropShadowElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEDropShadowElement, Unit, Null, Unit]]
-  
-  inline def create_feFlood(name: feFlood): Selection_[SVGFEFloodElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFloodElement, Unit, Null, Unit]]
-  
-  inline def create_feFuncA(name: feFuncA): Selection_[SVGFEFuncAElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFuncAElement, Unit, Null, Unit]]
-  
-  inline def create_feFuncB(name: feFuncB): Selection_[SVGFEFuncBElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFuncBElement, Unit, Null, Unit]]
-  
-  inline def create_feFuncG(name: feFuncG): Selection_[SVGFEFuncGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFuncGElement, Unit, Null, Unit]]
-  
-  inline def create_feFuncR(name: feFuncR): Selection_[SVGFEFuncRElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFuncRElement, Unit, Null, Unit]]
-  
-  inline def create_feGaussianBlur(name: feGaussianBlur): Selection_[SVGFEGaussianBlurElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEGaussianBlurElement, Unit, Null, Unit]]
-  
-  inline def create_feImage(name: feImage): Selection_[SVGFEImageElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEImageElement, Unit, Null, Unit]]
-  
-  inline def create_feMerge(name: feMerge): Selection_[SVGFEMergeElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEMergeElement, Unit, Null, Unit]]
-  
-  inline def create_feMergeNode(name: feMergeNode): Selection_[SVGFEMergeNodeElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEMergeNodeElement, Unit, Null, Unit]]
-  
-  inline def create_feMorphology(name: feMorphology): Selection_[SVGFEMorphologyElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEMorphologyElement, Unit, Null, Unit]]
-  
-  inline def create_feOffset(name: feOffset): Selection_[SVGFEOffsetElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEOffsetElement, Unit, Null, Unit]]
-  
-  inline def create_fePointLight(name: fePointLight): Selection_[SVGFEPointLightElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEPointLightElement, Unit, Null, Unit]]
-  
-  inline def create_feSpecularLighting(name: feSpecularLighting): Selection_[SVGFESpecularLightingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFESpecularLightingElement, Unit, Null, Unit]]
-  
-  inline def create_feSpotLight(name: feSpotLight): Selection_[SVGFESpotLightElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFESpotLightElement, Unit, Null, Unit]]
-  
-  inline def create_feTile(name: feTile): Selection_[SVGFETileElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFETileElement, Unit, Null, Unit]]
-  
-  inline def create_feTurbulence(name: feTurbulence): Selection_[SVGFETurbulenceElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFETurbulenceElement, Unit, Null, Unit]]
-  
-  inline def create_fieldset(name: fieldset): Selection_[HTMLFieldSetElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLFieldSetElement, Unit, Null, Unit]]
-  
-  inline def create_figcaption(name: figcaption): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_figure(name: figure): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_filter(name: filter): Selection_[SVGFilterElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFilterElement, Unit, Null, Unit]]
-  
-  inline def create_footer(name: footer): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_foreignObject(name: foreignObject): Selection_[SVGForeignObjectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGForeignObjectElement, Unit, Null, Unit]]
-  
-  inline def create_form(name: form): Selection_[HTMLFormElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLFormElement, Unit, Null, Unit]]
-  
-  inline def create_g(name: g): Selection_[SVGGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGGElement, Unit, Null, Unit]]
-  
-  inline def create_h1(name: h1): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
-  
-  inline def create_h2(name: h2): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
-  
-  inline def create_h3(name: h3): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
-  
-  inline def create_h4(name: h4): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
-  
-  inline def create_h5(name: h5): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
-  
-  inline def create_h6(name: h6): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
-  
-  inline def create_head(name: head): Selection_[HTMLHeadElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadElement, Unit, Null, Unit]]
-  
-  inline def create_header(name: header): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_hgroup(name: hgroup): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_hr(name: hr): Selection_[HTMLHRElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHRElement, Unit, Null, Unit]]
-  
-  inline def create_html(name: html): Selection_[HTMLHtmlElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHtmlElement, Unit, Null, Unit]]
-  
-  inline def create_i(name: i): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_iframe(name: iframe): Selection_[HTMLIFrameElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLIFrameElement, Unit, Null, Unit]]
-  
-  inline def create_image(name: image): Selection_[SVGImageElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGImageElement, Unit, Null, Unit]]
-  
-  inline def create_img(name: img): Selection_[HTMLImageElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLImageElement, Unit, Null, Unit]]
-  
-  inline def create_input(name: input): Selection_[HTMLInputElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLInputElement, Unit, Null, Unit]]
-  
-  inline def create_ins(name: ins): Selection_[HTMLModElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLModElement, Unit, Null, Unit]]
-  
-  inline def create_kbd(name: kbd): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_label(name: label): Selection_[HTMLLabelElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLLabelElement, Unit, Null, Unit]]
-  
-  inline def create_legend(name: legend): Selection_[HTMLLegendElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLLegendElement, Unit, Null, Unit]]
-  
-  inline def create_li(name: li): Selection_[HTMLLIElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLLIElement, Unit, Null, Unit]]
-  
-  inline def create_line(name: line): Selection_[SVGLineElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGLineElement, Unit, Null, Unit]]
-  
-  inline def create_linearGradient(name: linearGradient): Selection_[SVGLinearGradientElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGLinearGradientElement, Unit, Null, Unit]]
-  
-  inline def create_link(name: link): Selection_[HTMLLinkElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLLinkElement, Unit, Null, Unit]]
-  
-  inline def create_main(name: main): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_map(name: map): Selection_[HTMLMapElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMapElement, Unit, Null, Unit]]
-  
-  inline def create_mark(name: mark): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_marker(name: marker): Selection_[SVGMarkerElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMarkerElement, Unit, Null, Unit]]
-  
-  inline def create_mask(name: mask): Selection_[SVGMaskElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMaskElement, Unit, Null, Unit]]
-  
-  inline def create_menu(name: menu): Selection_[HTMLMenuElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMenuElement, Unit, Null, Unit]]
-  
-  inline def create_meta(name: meta): Selection_[HTMLMetaElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMetaElement, Unit, Null, Unit]]
-  
-  inline def create_metadata(name: metadata): Selection_[SVGMetadataElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMetadataElement, Unit, Null, Unit]]
-  
-  inline def create_meter(name: meter): Selection_[HTMLMeterElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMeterElement, Unit, Null, Unit]]
-  
-  inline def create_mpath(name: mpath): Selection_[SVGMPathElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMPathElement, Unit, Null, Unit]]
-  
-  inline def create_nav(name: nav): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_noscript(name: noscript): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_object(name: `object`): Selection_[HTMLObjectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLObjectElement, Unit, Null, Unit]]
-  
-  inline def create_ol(name: ol): Selection_[HTMLOListElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLOListElement, Unit, Null, Unit]]
-  
-  inline def create_optgroup(name: optgroup): Selection_[HTMLOptGroupElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLOptGroupElement, Unit, Null, Unit]]
-  
-  inline def create_option(name: option): Selection_[HTMLOptionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLOptionElement, Unit, Null, Unit]]
-  
-  inline def create_output(name: output): Selection_[HTMLOutputElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLOutputElement, Unit, Null, Unit]]
-  
-  inline def create_p(name: p): Selection_[HTMLParagraphElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLParagraphElement, Unit, Null, Unit]]
-  
-  inline def create_path(name: path): Selection_[SVGPathElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGPathElement, Unit, Null, Unit]]
-  
-  inline def create_pattern(name: pattern): Selection_[SVGPatternElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGPatternElement, Unit, Null, Unit]]
-  
-  inline def create_picture(name: picture): Selection_[HTMLPictureElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLPictureElement, Unit, Null, Unit]]
-  
-  inline def create_polygon(name: polygon): Selection_[SVGPolygonElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGPolygonElement, Unit, Null, Unit]]
-  
-  inline def create_polyline(name: polyline): Selection_[SVGPolylineElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGPolylineElement, Unit, Null, Unit]]
-  
-  inline def create_pre(name: pre): Selection_[HTMLPreElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLPreElement, Unit, Null, Unit]]
-  
-  inline def create_progress(name: progress): Selection_[HTMLProgressElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLProgressElement, Unit, Null, Unit]]
-  
-  inline def create_q(name: q): Selection_[HTMLQuoteElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLQuoteElement, Unit, Null, Unit]]
-  
-  inline def create_radialGradient(name: radialGradient): Selection_[SVGRadialGradientElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGRadialGradientElement, Unit, Null, Unit]]
-  
-  inline def create_rect(name: rect): Selection_[SVGRectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGRectElement, Unit, Null, Unit]]
-  
-  inline def create_rp(name: rp): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_rt(name: rt): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_ruby(name: ruby): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_s(name: s): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_samp(name: samp): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_script(name: script): Selection_[HTMLScriptElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLScriptElement, Unit, Null, Unit]]
-  
-  inline def create_section(name: section): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_select(name: select): Selection_[HTMLSelectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSelectElement, Unit, Null, Unit]]
-  
-  inline def create_set(name: set): Selection_[SVGSetElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGSetElement, Unit, Null, Unit]]
-  
-  inline def create_slot(name: slot): Selection_[HTMLSlotElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSlotElement, Unit, Null, Unit]]
-  
-  inline def create_small(name: small): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_source(name: source): Selection_[HTMLSourceElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSourceElement, Unit, Null, Unit]]
-  
-  inline def create_span(name: span): Selection_[HTMLSpanElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSpanElement, Unit, Null, Unit]]
-  
-  inline def create_stop(name: stop): Selection_[SVGStopElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGStopElement, Unit, Null, Unit]]
-  
-  inline def create_strong(name: strong): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_style(name: style): Selection_[HTMLStyleElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLStyleElement, Unit, Null, Unit]]
-  
-  inline def create_sub(name: sub): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_summary(name: summary): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_sup(name: sup): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_svg(name: svg): Selection_[SVGSVGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGSVGElement, Unit, Null, Unit]]
-  
-  inline def create_switch(name: switch): Selection_[SVGSwitchElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGSwitchElement, Unit, Null, Unit]]
-  
-  inline def create_symbol(name: symbol): Selection_[SVGSymbolElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGSymbolElement, Unit, Null, Unit]]
-  
-  inline def create_table(name: table): Selection_[HTMLTableElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableElement, Unit, Null, Unit]]
-  
-  inline def create_tbody(name: tbody): Selection_[HTMLTableSectionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableSectionElement, Unit, Null, Unit]]
-  
-  inline def create_td(name: td): Selection_[HTMLTableCellElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableCellElement, Unit, Null, Unit]]
-  
-  inline def create_template(name: template): Selection_[HTMLTemplateElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTemplateElement, Unit, Null, Unit]]
-  
-  inline def create_text(name: text): Selection_[SVGTextElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGTextElement, Unit, Null, Unit]]
-  
-  inline def create_textPath(name: textPath): Selection_[SVGTextPathElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGTextPathElement, Unit, Null, Unit]]
-  
-  inline def create_textarea(name: textarea): Selection_[HTMLTextAreaElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTextAreaElement, Unit, Null, Unit]]
-  
-  inline def create_tfoot(name: tfoot): Selection_[HTMLTableSectionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableSectionElement, Unit, Null, Unit]]
-  
-  inline def create_th(name: th): Selection_[HTMLTableCellElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableCellElement, Unit, Null, Unit]]
-  
-  inline def create_thead(name: thead): Selection_[HTMLTableSectionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableSectionElement, Unit, Null, Unit]]
-  
-  inline def create_time(name: time): Selection_[HTMLTimeElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTimeElement, Unit, Null, Unit]]
-  
-  inline def create_title(name: title): Selection_[HTMLTitleElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTitleElement, Unit, Null, Unit]]
-  
-  inline def create_tr(name: tr): Selection_[HTMLTableRowElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableRowElement, Unit, Null, Unit]]
-  
-  inline def create_track(name: track): Selection_[HTMLTrackElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTrackElement, Unit, Null, Unit]]
-  
-  inline def create_tspan(name: tspan): Selection_[SVGTSpanElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGTSpanElement, Unit, Null, Unit]]
-  
-  inline def create_u(name: u): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_ul(name: ul): Selection_[HTMLUListElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLUListElement, Unit, Null, Unit]]
-  
-  inline def create_use(name: use): Selection_[SVGUseElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGUseElement, Unit, Null, Unit]]
-  
-  inline def create_var(name: `var`): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
-  inline def create_video(name: video): Selection_[HTMLVideoElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLVideoElement, Unit, Null, Unit]]
-  
-  inline def create_view(name: view): Selection_[SVGViewElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGViewElement, Unit, Null, Unit]]
-  
-  inline def create_wbr(name: wbr): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
-  
+  @scala.annotation.targetName("creator_feDisplacementMap")
+  inline def creator(name: "feDisplacementMap"): js.ThisFunction0[/* this */ BaseType, SVGFEDisplacementMapElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEDisplacementMapElement]]
+  @scala.annotation.targetName("creator_optgroup")
+  inline def creator(name: "optgroup"): js.ThisFunction0[/* this */ BaseType, HTMLOptGroupElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLOptGroupElement]]
+  @scala.annotation.targetName("creator_thead")
+  inline def creator(name: "thead"): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement]]
+  @scala.annotation.targetName("creator_circle")
+  inline def creator(name: "circle"): js.ThisFunction0[/* this */ BaseType, SVGCircleElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGCircleElement]]
+  @scala.annotation.targetName("creator_input")
+  inline def creator(name: "input"): js.ThisFunction0[/* this */ BaseType, HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLInputElement]]
+  @scala.annotation.targetName("creator_feComponentTransfer")
+  inline def creator(name: "feComponentTransfer"): js.ThisFunction0[/* this */ BaseType, SVGFEComponentTransferElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEComponentTransferElement]]
+  @scala.annotation.targetName("creator_path")
+  inline def creator(name: "path"): js.ThisFunction0[/* this */ BaseType, SVGPathElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGPathElement]]
+  @scala.annotation.targetName("creator_kbd")
+  inline def creator(name: "kbd"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_line")
+  inline def creator(name: "line"): js.ThisFunction0[/* this */ BaseType, SVGLineElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGLineElement]]
+  @scala.annotation.targetName("creator_metadata")
+  inline def creator(name: "metadata"): js.ThisFunction0[/* this */ BaseType, SVGMetadataElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMetadataElement]]
+  @scala.annotation.targetName("creator_ins")
+  inline def creator(name: "ins"): js.ThisFunction0[/* this */ BaseType, HTMLModElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLModElement]]
+  @scala.annotation.targetName("creator_abbr")
+  inline def creator(name: "abbr"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_textPath")
+  inline def creator(name: "textPath"): js.ThisFunction0[/* this */ BaseType, SVGTextPathElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGTextPathElement]]
+  @scala.annotation.targetName("creator_u")
+  inline def creator(name: "u"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_dl")
+  inline def creator(name: "dl"): js.ThisFunction0[/* this */ BaseType, HTMLDListElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDListElement]]
+  @scala.annotation.targetName("creator_bdo")
+  inline def creator(name: "bdo"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_feTile")
+  inline def creator(name: "feTile"): js.ThisFunction0[/* this */ BaseType, SVGFETileElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFETileElement]]
+  @scala.annotation.targetName("creator_feDiffuseLighting")
+  inline def creator(name: "feDiffuseLighting"): js.ThisFunction0[/* this */ BaseType, SVGFEDiffuseLightingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEDiffuseLightingElement]]
+  @scala.annotation.targetName("creator_map")
+  inline def creator(name: "map"): js.ThisFunction0[/* this */ BaseType, HTMLMapElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMapElement]]
+  @scala.annotation.targetName("creator_strong")
+  inline def creator(name: "strong"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_form")
+  inline def creator(name: "form"): js.ThisFunction0[/* this */ BaseType, HTMLFormElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLFormElement]]
+  @scala.annotation.targetName("creator_pre")
+  inline def creator(name: "pre"): js.ThisFunction0[/* this */ BaseType, HTMLPreElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLPreElement]]
+  @scala.annotation.targetName("creator_template")
+  inline def creator(name: "template"): js.ThisFunction0[/* this */ BaseType, HTMLTemplateElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTemplateElement]]
+  @scala.annotation.targetName("creator_embed")
+  inline def creator(name: "embed"): js.ThisFunction0[/* this */ BaseType, HTMLEmbedElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLEmbedElement]]
+  @scala.annotation.targetName("creator_feSpecularLighting")
+  inline def creator(name: "feSpecularLighting"): js.ThisFunction0[/* this */ BaseType, SVGFESpecularLightingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFESpecularLightingElement]]
+  @scala.annotation.targetName("creator_h4")
+  inline def creator(name: "h4"): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
+  @scala.annotation.targetName("creator_iframe")
+  inline def creator(name: "iframe"): js.ThisFunction0[/* this */ BaseType, HTMLIFrameElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLIFrameElement]]
+  @scala.annotation.targetName("creator_select")
+  inline def creator(name: "select"): js.ThisFunction0[/* this */ BaseType, HTMLSelectElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLSelectElement]]
+  @scala.annotation.targetName("creator_label")
+  inline def creator(name: "label"): js.ThisFunction0[/* this */ BaseType, HTMLLabelElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLLabelElement]]
+  @scala.annotation.targetName("creator_source")
+  inline def creator(name: "source"): js.ThisFunction0[/* this */ BaseType, HTMLSourceElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLSourceElement]]
+  @scala.annotation.targetName("creator_sub")
+  inline def creator(name: "sub"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_option")
+  inline def creator(name: "option"): js.ThisFunction0[/* this */ BaseType, HTMLOptionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLOptionElement]]
+  @scala.annotation.targetName("creator_video")
+  inline def creator(name: "video"): js.ThisFunction0[/* this */ BaseType, HTMLVideoElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLVideoElement]]
+  @scala.annotation.targetName("creator_html")
+  inline def creator(name: "html"): js.ThisFunction0[/* this */ BaseType, HTMLHtmlElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHtmlElement]]
+  @scala.annotation.targetName("creator_details")
+  inline def creator(name: "details"): js.ThisFunction0[/* this */ BaseType, HTMLDetailsElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDetailsElement]]
+  @scala.annotation.targetName("creator_feSpotLight")
+  inline def creator(name: "feSpotLight"): js.ThisFunction0[/* this */ BaseType, SVGFESpotLightElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFESpotLightElement]]
+  @scala.annotation.targetName("creator_noscript")
+  inline def creator(name: "noscript"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_picture")
+  inline def creator(name: "picture"): js.ThisFunction0[/* this */ BaseType, HTMLPictureElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLPictureElement]]
+  @scala.annotation.targetName("creator_marker")
+  inline def creator(name: "marker"): js.ThisFunction0[/* this */ BaseType, SVGMarkerElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMarkerElement]]
+  @scala.annotation.targetName("creator_dd")
+  inline def creator(name: "dd"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_summary")
+  inline def creator(name: "summary"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_feColorMatrix")
+  inline def creator(name: "feColorMatrix"): js.ThisFunction0[/* this */ BaseType, SVGFEColorMatrixElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEColorMatrixElement]]
+  @scala.annotation.targetName("creator_use")
+  inline def creator(name: "use"): js.ThisFunction0[/* this */ BaseType, SVGUseElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGUseElement]]
+  @scala.annotation.targetName("creator_set")
+  inline def creator(name: "set"): js.ThisFunction0[/* this */ BaseType, SVGSetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGSetElement]]
+  @scala.annotation.targetName("creator_text")
+  inline def creator(name: "text"): js.ThisFunction0[/* this */ BaseType, SVGTextElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGTextElement]]
+  @scala.annotation.targetName("creator_samp")
+  inline def creator(name: "samp"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_fePointLight")
+  inline def creator(name: "fePointLight"): js.ThisFunction0[/* this */ BaseType, SVGFEPointLightElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEPointLightElement]]
+  @scala.annotation.targetName("creator_td")
+  inline def creator(name: "td"): js.ThisFunction0[/* this */ BaseType, HTMLTableCellElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableCellElement]]
+  @scala.annotation.targetName("creator_footer")
+  inline def creator(name: "footer"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_feGaussianBlur")
+  inline def creator(name: "feGaussianBlur"): js.ThisFunction0[/* this */ BaseType, SVGFEGaussianBlurElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEGaussianBlurElement]]
+  @scala.annotation.targetName("creator_colgroup")
+  inline def creator(name: "colgroup"): js.ThisFunction0[/* this */ BaseType, HTMLTableColElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableColElement]]
+  @scala.annotation.targetName("creator_dt")
+  inline def creator(name: "dt"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_i")
+  inline def creator(name: "i"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_filter")
+  inline def creator(name: "filter"): js.ThisFunction0[/* this */ BaseType, SVGFilterElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFilterElement]]
+  @scala.annotation.targetName("creator_tspan")
+  inline def creator(name: "tspan"): js.ThisFunction0[/* this */ BaseType, SVGTSpanElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGTSpanElement]]
+  @scala.annotation.targetName("creator_animateMotion")
+  inline def creator(name: "animateMotion"): js.ThisFunction0[/* this */ BaseType, SVGAnimateMotionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGAnimateMotionElement]]
+  @scala.annotation.targetName("creator_foreignObject")
+  inline def creator(name: "foreignObject"): js.ThisFunction0[/* this */ BaseType, SVGForeignObjectElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGForeignObjectElement]]
+  @scala.annotation.targetName("creator_div")
+  inline def creator(name: "div"): js.ThisFunction0[/* this */ BaseType, HTMLDivElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDivElement]]
+  @scala.annotation.targetName("creator_h1")
+  inline def creator(name: "h1"): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
+  @scala.annotation.targetName("creator_mask")
+  inline def creator(name: "mask"): js.ThisFunction0[/* this */ BaseType, SVGMaskElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMaskElement]]
+  @scala.annotation.targetName("creator_a")
+  inline def creator(name: "a"): js.ThisFunction0[/* this */ BaseType, HTMLAnchorElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLAnchorElement]]
+  @scala.annotation.targetName("creator_var")
+  inline def creator(name: "var"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_feFuncB")
+  inline def creator(name: "feFuncB"): js.ThisFunction0[/* this */ BaseType, SVGFEFuncBElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFuncBElement]]
+  @scala.annotation.targetName("creator_g")
+  inline def creator(name: "g"): js.ThisFunction0[/* this */ BaseType, SVGGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGGElement]]
+  @scala.annotation.targetName("creator_body")
+  inline def creator(name: "body"): js.ThisFunction0[/* this */ BaseType, HTMLBodyElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLBodyElement]]
+  @scala.annotation.targetName("creator_img")
+  inline def creator(name: "img"): js.ThisFunction0[/* this */ BaseType, HTMLImageElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLImageElement]]
+  @scala.annotation.targetName("creator_hgroup")
+  inline def creator(name: "hgroup"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_rp")
+  inline def creator(name: "rp"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_link")
+  inline def creator(name: "link"): js.ThisFunction0[/* this */ BaseType, HTMLLinkElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLLinkElement]]
+  @scala.annotation.targetName("creator_tfoot")
+  inline def creator(name: "tfoot"): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement]]
+  @scala.annotation.targetName("creator_feMorphology")
+  inline def creator(name: "feMorphology"): js.ThisFunction0[/* this */ BaseType, SVGFEMorphologyElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEMorphologyElement]]
+  @scala.annotation.targetName("creator_code")
+  inline def creator(name: "code"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_feFuncR")
+  inline def creator(name: "feFuncR"): js.ThisFunction0[/* this */ BaseType, SVGFEFuncRElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFuncRElement]]
+  @scala.annotation.targetName("creator_tbody")
+  inline def creator(name: "tbody"): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement]]
+  @scala.annotation.targetName("creator_stop")
+  inline def creator(name: "stop"): js.ThisFunction0[/* this */ BaseType, SVGStopElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGStopElement]]
+  @scala.annotation.targetName("creator_small")
+  inline def creator(name: "small"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_symbol")
+  inline def creator(name: "symbol"): js.ThisFunction0[/* this */ BaseType, SVGSymbolElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGSymbolElement]]
+  @scala.annotation.targetName("creator_h6")
+  inline def creator(name: "h6"): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
+  @scala.annotation.targetName("creator_ruby")
+  inline def creator(name: "ruby"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_tr")
+  inline def creator(name: "tr"): js.ThisFunction0[/* this */ BaseType, HTMLTableRowElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableRowElement]]
+  @scala.annotation.targetName("creator_figcaption")
+  inline def creator(name: "figcaption"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_th")
+  inline def creator(name: "th"): js.ThisFunction0[/* this */ BaseType, HTMLTableCellElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableCellElement]]
+  @scala.annotation.targetName("creator_base")
+  inline def creator(name: "base"): js.ThisFunction0[/* this */ BaseType, HTMLBaseElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLBaseElement]]
+  @scala.annotation.targetName("creator_caption")
+  inline def creator(name: "caption"): js.ThisFunction0[/* this */ BaseType, HTMLTableCaptionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableCaptionElement]]
+  @scala.annotation.targetName("creator_clipPath")
+  inline def creator(name: "clipPath"): js.ThisFunction0[/* this */ BaseType, SVGClipPathElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGClipPathElement]]
+  @scala.annotation.targetName("creator_dialog")
+  inline def creator(name: "dialog"): js.ThisFunction0[/* this */ BaseType, HTMLDialogElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDialogElement]]
+  @scala.annotation.targetName("creator_feDistantLight")
+  inline def creator(name: "feDistantLight"): js.ThisFunction0[/* this */ BaseType, SVGFEDistantLightElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEDistantLightElement]]
+  @scala.annotation.targetName("creator_view")
+  inline def creator(name: "view"): js.ThisFunction0[/* this */ BaseType, SVGViewElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGViewElement]]
+  @scala.annotation.targetName("creator_fieldset")
+  inline def creator(name: "fieldset"): js.ThisFunction0[/* this */ BaseType, HTMLFieldSetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLFieldSetElement]]
+  @scala.annotation.targetName("creator_feMergeNode")
+  inline def creator(name: "feMergeNode"): js.ThisFunction0[/* this */ BaseType, SVGFEMergeNodeElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEMergeNodeElement]]
+  @scala.annotation.targetName("creator_meter")
+  inline def creator(name: "meter"): js.ThisFunction0[/* this */ BaseType, HTMLMeterElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMeterElement]]
+  @scala.annotation.targetName("creator_polygon")
+  inline def creator(name: "polygon"): js.ThisFunction0[/* this */ BaseType, SVGPolygonElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGPolygonElement]]
+  @scala.annotation.targetName("creator_feFlood")
+  inline def creator(name: "feFlood"): js.ThisFunction0[/* this */ BaseType, SVGFEFloodElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFloodElement]]
+  @scala.annotation.targetName("creator_canvas")
+  inline def creator(name: "canvas"): js.ThisFunction0[/* this */ BaseType, HTMLCanvasElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLCanvasElement]]
+  @scala.annotation.targetName("creator_h3")
+  inline def creator(name: "h3"): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
+  @scala.annotation.targetName("creator_datalist")
+  inline def creator(name: "datalist"): js.ThisFunction0[/* this */ BaseType, HTMLDataListElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDataListElement]]
+  @scala.annotation.targetName("creator_animateTransform")
+  inline def creator(name: "animateTransform"): js.ThisFunction0[/* this */ BaseType, SVGAnimateTransformElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGAnimateTransformElement]]
+  @scala.annotation.targetName("creator_ellipse")
+  inline def creator(name: "ellipse"): js.ThisFunction0[/* this */ BaseType, SVGEllipseElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGEllipseElement]]
+  @scala.annotation.targetName("creator_main")
+  inline def creator(name: "main"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_object")
+  inline def creator(name: "object"): js.ThisFunction0[/* this */ BaseType, HTMLObjectElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLObjectElement]]
+  @scala.annotation.targetName("creator_feBlend")
+  inline def creator(name: "feBlend"): js.ThisFunction0[/* this */ BaseType, SVGFEBlendElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEBlendElement]]
+  @scala.annotation.targetName("creator_track")
+  inline def creator(name: "track"): js.ThisFunction0[/* this */ BaseType, HTMLTrackElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTrackElement]]
+  @scala.annotation.targetName("creator_time")
+  inline def creator(name: "time"): js.ThisFunction0[/* this */ BaseType, HTMLTimeElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTimeElement]]
+  @scala.annotation.targetName("creator_b")
+  inline def creator(name: "b"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_svg")
+  inline def creator(name: "svg"): js.ThisFunction0[/* this */ BaseType, SVGSVGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGSVGElement]]
+  @scala.annotation.targetName("creator_p")
+  inline def creator(name: "p"): js.ThisFunction0[/* this */ BaseType, HTMLParagraphElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLParagraphElement]]
+  @scala.annotation.targetName("creator_radialGradient")
+  inline def creator(name: "radialGradient"): js.ThisFunction0[/* this */ BaseType, SVGRadialGradientElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGRadialGradientElement]]
+  @scala.annotation.targetName("creator_title")
+  inline def creator(name: "title"): js.ThisFunction0[/* this */ BaseType, HTMLTitleElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTitleElement]]
+  @scala.annotation.targetName("creator_header")
+  inline def creator(name: "header"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_rect")
+  inline def creator(name: "rect"): js.ThisFunction0[/* this */ BaseType, SVGRectElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGRectElement]]
+  @scala.annotation.targetName("creator_h2")
+  inline def creator(name: "h2"): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
+  @scala.annotation.targetName("creator_col")
+  inline def creator(name: "col"): js.ThisFunction0[/* this */ BaseType, HTMLTableColElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableColElement]]
+  @scala.annotation.targetName("creator_data")
+  inline def creator(name: "data"): js.ThisFunction0[/* this */ BaseType, HTMLDataElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDataElement]]
+  @scala.annotation.targetName("creator_dfn")
+  inline def creator(name: "dfn"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_cite")
+  inline def creator(name: "cite"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_feOffset")
+  inline def creator(name: "feOffset"): js.ThisFunction0[/* this */ BaseType, SVGFEOffsetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEOffsetElement]]
+  @scala.annotation.targetName("creator_head")
+  inline def creator(name: "head"): js.ThisFunction0[/* this */ BaseType, HTMLHeadElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadElement]]
+  @scala.annotation.targetName("creator_feMerge")
+  inline def creator(name: "feMerge"): js.ThisFunction0[/* this */ BaseType, SVGFEMergeElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEMergeElement]]
+  @scala.annotation.targetName("creator_desc")
+  inline def creator(name: "desc"): js.ThisFunction0[/* this */ BaseType, SVGDescElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGDescElement]]
+  @scala.annotation.targetName("creator_polyline")
+  inline def creator(name: "polyline"): js.ThisFunction0[/* this */ BaseType, SVGPolylineElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGPolylineElement]]
+  @scala.annotation.targetName("creator_button")
+  inline def creator(name: "button"): js.ThisFunction0[/* this */ BaseType, HTMLButtonElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLButtonElement]]
+  @scala.annotation.targetName("creator_image")
+  inline def creator(name: "image"): js.ThisFunction0[/* this */ BaseType, SVGImageElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGImageElement]]
+  @scala.annotation.targetName("creator_textarea")
+  inline def creator(name: "textarea"): js.ThisFunction0[/* this */ BaseType, HTMLTextAreaElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTextAreaElement]]
+  @scala.annotation.targetName("creator_h5")
+  inline def creator(name: "h5"): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
+  @scala.annotation.targetName("creator_feFuncG")
+  inline def creator(name: "feFuncG"): js.ThisFunction0[/* this */ BaseType, SVGFEFuncGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFuncGElement]]
+  @scala.annotation.targetName("creator_q")
+  inline def creator(name: "q"): js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement]]
+  @scala.annotation.targetName("creator_table")
+  inline def creator(name: "table"): js.ThisFunction0[/* this */ BaseType, HTMLTableElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableElement]]
+  @scala.annotation.targetName("creator_bdi")
+  inline def creator(name: "bdi"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_switch")
+  inline def creator(name: "switch"): js.ThisFunction0[/* this */ BaseType, SVGSwitchElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGSwitchElement]]
+  @scala.annotation.targetName("creator_style")
+  inline def creator(name: "style"): js.ThisFunction0[/* this */ BaseType, HTMLStyleElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLStyleElement]]
+  @scala.annotation.targetName("creator_output")
+  inline def creator(name: "output"): js.ThisFunction0[/* this */ BaseType, HTMLOutputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLOutputElement]]
+  @scala.annotation.targetName("creator_feComposite")
+  inline def creator(name: "feComposite"): js.ThisFunction0[/* this */ BaseType, SVGFECompositeElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFECompositeElement]]
+  @scala.annotation.targetName("creator_nav")
+  inline def creator(name: "nav"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_feConvolveMatrix")
+  inline def creator(name: "feConvolveMatrix"): js.ThisFunction0[/* this */ BaseType, SVGFEConvolveMatrixElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEConvolveMatrixElement]]
+  @scala.annotation.targetName("creator_rt")
+  inline def creator(name: "rt"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_em")
+  inline def creator(name: "em"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_s")
+  inline def creator(name: "s"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_mpath")
+  inline def creator(name: "mpath"): js.ThisFunction0[/* this */ BaseType, SVGMPathElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMPathElement]]
+  @scala.annotation.targetName("creator_sup")
+  inline def creator(name: "sup"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_meta")
+  inline def creator(name: "meta"): js.ThisFunction0[/* this */ BaseType, HTMLMetaElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMetaElement]]
+  @scala.annotation.targetName("creator_ol")
+  inline def creator(name: "ol"): js.ThisFunction0[/* this */ BaseType, HTMLOListElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLOListElement]]
+  @scala.annotation.targetName("creator_aside")
+  inline def creator(name: "aside"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_progress")
+  inline def creator(name: "progress"): js.ThisFunction0[/* this */ BaseType, HTMLProgressElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLProgressElement]]
+  @scala.annotation.targetName("creator_del")
+  inline def creator(name: "del"): js.ThisFunction0[/* this */ BaseType, HTMLModElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLModElement]]
+  @scala.annotation.targetName("creator_animate")
+  inline def creator(name: "animate"): js.ThisFunction0[/* this */ BaseType, SVGAnimateElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGAnimateElement]]
+  @scala.annotation.targetName("creator_menu")
+  inline def creator(name: "menu"): js.ThisFunction0[/* this */ BaseType, HTMLMenuElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMenuElement]]
+  @scala.annotation.targetName("creator_article")
+  inline def creator(name: "article"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_blockquote")
+  inline def creator(name: "blockquote"): js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement]]
+  @scala.annotation.targetName("creator_feDropShadow")
+  inline def creator(name: "feDropShadow"): js.ThisFunction0[/* this */ BaseType, SVGFEDropShadowElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEDropShadowElement]]
+  @scala.annotation.targetName("creator_figure")
+  inline def creator(name: "figure"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_hr")
+  inline def creator(name: "hr"): js.ThisFunction0[/* this */ BaseType, HTMLHRElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHRElement]]
+  @scala.annotation.targetName("creator_legend")
+  inline def creator(name: "legend"): js.ThisFunction0[/* this */ BaseType, HTMLLegendElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLLegendElement]]
+  @scala.annotation.targetName("creator_feTurbulence")
+  inline def creator(name: "feTurbulence"): js.ThisFunction0[/* this */ BaseType, SVGFETurbulenceElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFETurbulenceElement]]
+  @scala.annotation.targetName("creator_mark")
+  inline def creator(name: "mark"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_address")
+  inline def creator(name: "address"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_feFuncA")
+  inline def creator(name: "feFuncA"): js.ThisFunction0[/* this */ BaseType, SVGFEFuncAElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFuncAElement]]
+  @scala.annotation.targetName("creator_defs")
+  inline def creator(name: "defs"): js.ThisFunction0[/* this */ BaseType, SVGDefsElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGDefsElement]]
+  @scala.annotation.targetName("creator_script")
+  inline def creator(name: "script"): js.ThisFunction0[/* this */ BaseType, HTMLScriptElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLScriptElement]]
+  @scala.annotation.targetName("creator_pattern")
+  inline def creator(name: "pattern"): js.ThisFunction0[/* this */ BaseType, SVGPatternElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGPatternElement]]
+  @scala.annotation.targetName("creator_span")
+  inline def creator(name: "span"): js.ThisFunction0[/* this */ BaseType, HTMLSpanElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLSpanElement]]
+  @scala.annotation.targetName("creator_wbr")
+  inline def creator(name: "wbr"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_li")
+  inline def creator(name: "li"): js.ThisFunction0[/* this */ BaseType, HTMLLIElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLLIElement]]
+  @scala.annotation.targetName("creator_audio")
+  inline def creator(name: "audio"): js.ThisFunction0[/* this */ BaseType, HTMLAudioElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLAudioElement]]
+  @scala.annotation.targetName("creator_feImage")
+  inline def creator(name: "feImage"): js.ThisFunction0[/* this */ BaseType, SVGFEImageElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEImageElement]]
+  @scala.annotation.targetName("creator_ul")
+  inline def creator(name: "ul"): js.ThisFunction0[/* this */ BaseType, HTMLUListElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLUListElement]]
+  @scala.annotation.targetName("creator_section")
+  inline def creator(name: "section"): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  @scala.annotation.targetName("creator_linearGradient")
+  inline def creator(name: "linearGradient"): js.ThisFunction0[/* this */ BaseType, SVGLinearGradientElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGLinearGradientElement]]
+  @scala.annotation.targetName("creator_br")
+  inline def creator(name: "br"): js.ThisFunction0[/* this */ BaseType, HTMLBRElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLBRElement]]
+  @scala.annotation.targetName("creator_area")
+  inline def creator(name: "area"): js.ThisFunction0[/* this */ BaseType, HTMLAreaElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLAreaElement]]
+  @scala.annotation.targetName("creator_slot")
+  inline def creator(name: "slot"): js.ThisFunction0[/* this */ BaseType, HTMLSlotElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLSlotElement]]
   inline def creator[NewGElement /* <: Element */](name: String): js.ThisFunction0[/* this */ BaseType, NewGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, NewGElement]]
-  
-  inline def creator_a(name: a): js.ThisFunction0[/* this */ BaseType, HTMLAnchorElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLAnchorElement]]
-  
-  inline def creator_abbr(name: abbr): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_address(name: address): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_animate(name: animate): js.ThisFunction0[/* this */ BaseType, SVGAnimateElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGAnimateElement]]
-  
-  inline def creator_animateMotion(name: animateMotion): js.ThisFunction0[/* this */ BaseType, SVGAnimateMotionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGAnimateMotionElement]]
-  
-  inline def creator_animateTransform(name: animateTransform): js.ThisFunction0[/* this */ BaseType, SVGAnimateTransformElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGAnimateTransformElement]]
-  
-  inline def creator_area(name: area): js.ThisFunction0[/* this */ BaseType, HTMLAreaElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLAreaElement]]
-  
-  inline def creator_article(name: article): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_aside(name: aside): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_audio(name: audio): js.ThisFunction0[/* this */ BaseType, HTMLAudioElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLAudioElement]]
-  
-  inline def creator_b(name: b): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_base(name: base): js.ThisFunction0[/* this */ BaseType, HTMLBaseElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLBaseElement]]
-  
-  inline def creator_bdi(name: bdi): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_bdo(name: bdo): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_blockquote(name: blockquote): js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement]]
-  
-  inline def creator_body(name: body): js.ThisFunction0[/* this */ BaseType, HTMLBodyElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLBodyElement]]
-  
-  inline def creator_br(name: br): js.ThisFunction0[/* this */ BaseType, HTMLBRElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLBRElement]]
-  
-  inline def creator_button(name: button): js.ThisFunction0[/* this */ BaseType, HTMLButtonElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLButtonElement]]
-  
-  inline def creator_canvas(name: canvas): js.ThisFunction0[/* this */ BaseType, HTMLCanvasElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLCanvasElement]]
-  
-  inline def creator_caption(name: caption): js.ThisFunction0[/* this */ BaseType, HTMLTableCaptionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableCaptionElement]]
-  
-  inline def creator_circle(name: circle): js.ThisFunction0[/* this */ BaseType, SVGCircleElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGCircleElement]]
-  
-  inline def creator_cite(name: cite): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_clipPath(name: clipPath): js.ThisFunction0[/* this */ BaseType, SVGClipPathElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGClipPathElement]]
-  
-  inline def creator_code(name: code): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_col(name: col): js.ThisFunction0[/* this */ BaseType, HTMLTableColElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableColElement]]
-  
-  inline def creator_colgroup(name: colgroup): js.ThisFunction0[/* this */ BaseType, HTMLTableColElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableColElement]]
-  
-  inline def creator_data(name: data): js.ThisFunction0[/* this */ BaseType, HTMLDataElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDataElement]]
-  
-  inline def creator_datalist(name: datalist): js.ThisFunction0[/* this */ BaseType, HTMLDataListElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDataListElement]]
-  
-  inline def creator_dd(name: dd): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_defs(name: defs): js.ThisFunction0[/* this */ BaseType, SVGDefsElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGDefsElement]]
-  
-  inline def creator_del(name: del): js.ThisFunction0[/* this */ BaseType, HTMLModElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLModElement]]
-  
-  inline def creator_desc(name: desc): js.ThisFunction0[/* this */ BaseType, SVGDescElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGDescElement]]
-  
-  inline def creator_details(name: details): js.ThisFunction0[/* this */ BaseType, HTMLDetailsElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDetailsElement]]
-  
-  inline def creator_dfn(name: dfn): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_dialog(name: dialog): js.ThisFunction0[/* this */ BaseType, HTMLDialogElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDialogElement]]
-  
-  inline def creator_div(name: div): js.ThisFunction0[/* this */ BaseType, HTMLDivElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDivElement]]
-  
-  inline def creator_dl(name: dl): js.ThisFunction0[/* this */ BaseType, HTMLDListElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDListElement]]
-  
-  inline def creator_dt(name: dt): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_ellipse(name: ellipse): js.ThisFunction0[/* this */ BaseType, SVGEllipseElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGEllipseElement]]
-  
-  inline def creator_em(name: em): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_embed(name: embed): js.ThisFunction0[/* this */ BaseType, HTMLEmbedElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLEmbedElement]]
-  
-  inline def creator_feBlend(name: feBlend): js.ThisFunction0[/* this */ BaseType, SVGFEBlendElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEBlendElement]]
-  
-  inline def creator_feColorMatrix(name: feColorMatrix): js.ThisFunction0[/* this */ BaseType, SVGFEColorMatrixElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEColorMatrixElement]]
-  
-  inline def creator_feComponentTransfer(name: feComponentTransfer): js.ThisFunction0[/* this */ BaseType, SVGFEComponentTransferElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEComponentTransferElement]]
-  
-  inline def creator_feComposite(name: feComposite): js.ThisFunction0[/* this */ BaseType, SVGFECompositeElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFECompositeElement]]
-  
-  inline def creator_feConvolveMatrix(name: feConvolveMatrix): js.ThisFunction0[/* this */ BaseType, SVGFEConvolveMatrixElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEConvolveMatrixElement]]
-  
-  inline def creator_feDiffuseLighting(name: feDiffuseLighting): js.ThisFunction0[/* this */ BaseType, SVGFEDiffuseLightingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEDiffuseLightingElement]]
-  
-  inline def creator_feDisplacementMap(name: feDisplacementMap): js.ThisFunction0[/* this */ BaseType, SVGFEDisplacementMapElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEDisplacementMapElement]]
-  
-  inline def creator_feDistantLight(name: feDistantLight): js.ThisFunction0[/* this */ BaseType, SVGFEDistantLightElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEDistantLightElement]]
-  
-  inline def creator_feDropShadow(name: feDropShadow): js.ThisFunction0[/* this */ BaseType, SVGFEDropShadowElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEDropShadowElement]]
-  
-  inline def creator_feFlood(name: feFlood): js.ThisFunction0[/* this */ BaseType, SVGFEFloodElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFloodElement]]
-  
-  inline def creator_feFuncA(name: feFuncA): js.ThisFunction0[/* this */ BaseType, SVGFEFuncAElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFuncAElement]]
-  
-  inline def creator_feFuncB(name: feFuncB): js.ThisFunction0[/* this */ BaseType, SVGFEFuncBElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFuncBElement]]
-  
-  inline def creator_feFuncG(name: feFuncG): js.ThisFunction0[/* this */ BaseType, SVGFEFuncGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFuncGElement]]
-  
-  inline def creator_feFuncR(name: feFuncR): js.ThisFunction0[/* this */ BaseType, SVGFEFuncRElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFuncRElement]]
-  
-  inline def creator_feGaussianBlur(name: feGaussianBlur): js.ThisFunction0[/* this */ BaseType, SVGFEGaussianBlurElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEGaussianBlurElement]]
-  
-  inline def creator_feImage(name: feImage): js.ThisFunction0[/* this */ BaseType, SVGFEImageElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEImageElement]]
-  
-  inline def creator_feMerge(name: feMerge): js.ThisFunction0[/* this */ BaseType, SVGFEMergeElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEMergeElement]]
-  
-  inline def creator_feMergeNode(name: feMergeNode): js.ThisFunction0[/* this */ BaseType, SVGFEMergeNodeElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEMergeNodeElement]]
-  
-  inline def creator_feMorphology(name: feMorphology): js.ThisFunction0[/* this */ BaseType, SVGFEMorphologyElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEMorphologyElement]]
-  
-  inline def creator_feOffset(name: feOffset): js.ThisFunction0[/* this */ BaseType, SVGFEOffsetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEOffsetElement]]
-  
-  inline def creator_fePointLight(name: fePointLight): js.ThisFunction0[/* this */ BaseType, SVGFEPointLightElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEPointLightElement]]
-  
-  inline def creator_feSpecularLighting(name: feSpecularLighting): js.ThisFunction0[/* this */ BaseType, SVGFESpecularLightingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFESpecularLightingElement]]
-  
-  inline def creator_feSpotLight(name: feSpotLight): js.ThisFunction0[/* this */ BaseType, SVGFESpotLightElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFESpotLightElement]]
-  
-  inline def creator_feTile(name: feTile): js.ThisFunction0[/* this */ BaseType, SVGFETileElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFETileElement]]
-  
-  inline def creator_feTurbulence(name: feTurbulence): js.ThisFunction0[/* this */ BaseType, SVGFETurbulenceElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFETurbulenceElement]]
-  
-  inline def creator_fieldset(name: fieldset): js.ThisFunction0[/* this */ BaseType, HTMLFieldSetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLFieldSetElement]]
-  
-  inline def creator_figcaption(name: figcaption): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_figure(name: figure): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_filter(name: filter): js.ThisFunction0[/* this */ BaseType, SVGFilterElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFilterElement]]
-  
-  inline def creator_footer(name: footer): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_foreignObject(name: foreignObject): js.ThisFunction0[/* this */ BaseType, SVGForeignObjectElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGForeignObjectElement]]
-  
-  inline def creator_form(name: form): js.ThisFunction0[/* this */ BaseType, HTMLFormElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLFormElement]]
-  
-  inline def creator_g(name: g): js.ThisFunction0[/* this */ BaseType, SVGGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGGElement]]
-  
-  inline def creator_h1(name: h1): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
-  
-  inline def creator_h2(name: h2): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
-  
-  inline def creator_h3(name: h3): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
-  
-  inline def creator_h4(name: h4): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
-  
-  inline def creator_h5(name: h5): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
-  
-  inline def creator_h6(name: h6): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
-  
-  inline def creator_head(name: head): js.ThisFunction0[/* this */ BaseType, HTMLHeadElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadElement]]
-  
-  inline def creator_header(name: header): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_hgroup(name: hgroup): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_hr(name: hr): js.ThisFunction0[/* this */ BaseType, HTMLHRElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHRElement]]
-  
-  inline def creator_html(name: html): js.ThisFunction0[/* this */ BaseType, HTMLHtmlElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHtmlElement]]
-  
-  inline def creator_i(name: i): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_iframe(name: iframe): js.ThisFunction0[/* this */ BaseType, HTMLIFrameElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLIFrameElement]]
-  
-  inline def creator_image(name: image): js.ThisFunction0[/* this */ BaseType, SVGImageElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGImageElement]]
-  
-  inline def creator_img(name: img): js.ThisFunction0[/* this */ BaseType, HTMLImageElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLImageElement]]
-  
-  inline def creator_input(name: input): js.ThisFunction0[/* this */ BaseType, HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLInputElement]]
-  
-  inline def creator_ins(name: ins): js.ThisFunction0[/* this */ BaseType, HTMLModElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLModElement]]
-  
-  inline def creator_kbd(name: kbd): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_label(name: label): js.ThisFunction0[/* this */ BaseType, HTMLLabelElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLLabelElement]]
-  
-  inline def creator_legend(name: legend): js.ThisFunction0[/* this */ BaseType, HTMLLegendElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLLegendElement]]
-  
-  inline def creator_li(name: li): js.ThisFunction0[/* this */ BaseType, HTMLLIElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLLIElement]]
-  
-  inline def creator_line(name: line): js.ThisFunction0[/* this */ BaseType, SVGLineElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGLineElement]]
-  
-  inline def creator_linearGradient(name: linearGradient): js.ThisFunction0[/* this */ BaseType, SVGLinearGradientElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGLinearGradientElement]]
-  
-  inline def creator_link(name: link): js.ThisFunction0[/* this */ BaseType, HTMLLinkElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLLinkElement]]
-  
-  inline def creator_main(name: main): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_map(name: map): js.ThisFunction0[/* this */ BaseType, HTMLMapElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMapElement]]
-  
-  inline def creator_mark(name: mark): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_marker(name: marker): js.ThisFunction0[/* this */ BaseType, SVGMarkerElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMarkerElement]]
-  
-  inline def creator_mask(name: mask): js.ThisFunction0[/* this */ BaseType, SVGMaskElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMaskElement]]
-  
-  inline def creator_menu(name: menu): js.ThisFunction0[/* this */ BaseType, HTMLMenuElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMenuElement]]
-  
-  inline def creator_meta(name: meta): js.ThisFunction0[/* this */ BaseType, HTMLMetaElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMetaElement]]
-  
-  inline def creator_metadata(name: metadata): js.ThisFunction0[/* this */ BaseType, SVGMetadataElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMetadataElement]]
-  
-  inline def creator_meter(name: meter): js.ThisFunction0[/* this */ BaseType, HTMLMeterElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMeterElement]]
-  
-  inline def creator_mpath(name: mpath): js.ThisFunction0[/* this */ BaseType, SVGMPathElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMPathElement]]
-  
-  inline def creator_nav(name: nav): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_noscript(name: noscript): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_object(name: `object`): js.ThisFunction0[/* this */ BaseType, HTMLObjectElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLObjectElement]]
-  
-  inline def creator_ol(name: ol): js.ThisFunction0[/* this */ BaseType, HTMLOListElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLOListElement]]
-  
-  inline def creator_optgroup(name: optgroup): js.ThisFunction0[/* this */ BaseType, HTMLOptGroupElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLOptGroupElement]]
-  
-  inline def creator_option(name: option): js.ThisFunction0[/* this */ BaseType, HTMLOptionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLOptionElement]]
-  
-  inline def creator_output(name: output): js.ThisFunction0[/* this */ BaseType, HTMLOutputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLOutputElement]]
-  
-  inline def creator_p(name: p): js.ThisFunction0[/* this */ BaseType, HTMLParagraphElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLParagraphElement]]
-  
-  inline def creator_path(name: path): js.ThisFunction0[/* this */ BaseType, SVGPathElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGPathElement]]
-  
-  inline def creator_pattern(name: pattern): js.ThisFunction0[/* this */ BaseType, SVGPatternElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGPatternElement]]
-  
-  inline def creator_picture(name: picture): js.ThisFunction0[/* this */ BaseType, HTMLPictureElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLPictureElement]]
-  
-  inline def creator_polygon(name: polygon): js.ThisFunction0[/* this */ BaseType, SVGPolygonElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGPolygonElement]]
-  
-  inline def creator_polyline(name: polyline): js.ThisFunction0[/* this */ BaseType, SVGPolylineElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGPolylineElement]]
-  
-  inline def creator_pre(name: pre): js.ThisFunction0[/* this */ BaseType, HTMLPreElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLPreElement]]
-  
-  inline def creator_progress(name: progress): js.ThisFunction0[/* this */ BaseType, HTMLProgressElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLProgressElement]]
-  
-  inline def creator_q(name: q): js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement]]
-  
-  inline def creator_radialGradient(name: radialGradient): js.ThisFunction0[/* this */ BaseType, SVGRadialGradientElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGRadialGradientElement]]
-  
-  inline def creator_rect(name: rect): js.ThisFunction0[/* this */ BaseType, SVGRectElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGRectElement]]
-  
-  inline def creator_rp(name: rp): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_rt(name: rt): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_ruby(name: ruby): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_s(name: s): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_samp(name: samp): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_script(name: script): js.ThisFunction0[/* this */ BaseType, HTMLScriptElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLScriptElement]]
-  
-  inline def creator_section(name: section): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_select(name: select): js.ThisFunction0[/* this */ BaseType, HTMLSelectElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLSelectElement]]
-  
-  inline def creator_set(name: set): js.ThisFunction0[/* this */ BaseType, SVGSetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGSetElement]]
-  
-  inline def creator_slot(name: slot): js.ThisFunction0[/* this */ BaseType, HTMLSlotElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLSlotElement]]
-  
-  inline def creator_small(name: small): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_source(name: source): js.ThisFunction0[/* this */ BaseType, HTMLSourceElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLSourceElement]]
-  
-  inline def creator_span(name: span): js.ThisFunction0[/* this */ BaseType, HTMLSpanElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLSpanElement]]
-  
-  inline def creator_stop(name: stop): js.ThisFunction0[/* this */ BaseType, SVGStopElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGStopElement]]
-  
-  inline def creator_strong(name: strong): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_style(name: style): js.ThisFunction0[/* this */ BaseType, HTMLStyleElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLStyleElement]]
-  
-  inline def creator_sub(name: sub): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_summary(name: summary): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_sup(name: sup): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_svg(name: svg): js.ThisFunction0[/* this */ BaseType, SVGSVGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGSVGElement]]
-  
-  inline def creator_switch(name: switch): js.ThisFunction0[/* this */ BaseType, SVGSwitchElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGSwitchElement]]
-  
-  inline def creator_symbol(name: symbol): js.ThisFunction0[/* this */ BaseType, SVGSymbolElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGSymbolElement]]
-  
-  inline def creator_table(name: table): js.ThisFunction0[/* this */ BaseType, HTMLTableElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableElement]]
-  
-  inline def creator_tbody(name: tbody): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement]]
-  
-  inline def creator_td(name: td): js.ThisFunction0[/* this */ BaseType, HTMLTableCellElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableCellElement]]
-  
-  inline def creator_template(name: template): js.ThisFunction0[/* this */ BaseType, HTMLTemplateElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTemplateElement]]
-  
-  inline def creator_text(name: text): js.ThisFunction0[/* this */ BaseType, SVGTextElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGTextElement]]
-  
-  inline def creator_textPath(name: textPath): js.ThisFunction0[/* this */ BaseType, SVGTextPathElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGTextPathElement]]
-  
-  inline def creator_textarea(name: textarea): js.ThisFunction0[/* this */ BaseType, HTMLTextAreaElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTextAreaElement]]
-  
-  inline def creator_tfoot(name: tfoot): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement]]
-  
-  inline def creator_th(name: th): js.ThisFunction0[/* this */ BaseType, HTMLTableCellElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableCellElement]]
-  
-  inline def creator_thead(name: thead): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement]]
-  
-  inline def creator_time(name: time): js.ThisFunction0[/* this */ BaseType, HTMLTimeElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTimeElement]]
-  
-  inline def creator_title(name: title): js.ThisFunction0[/* this */ BaseType, HTMLTitleElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTitleElement]]
-  
-  inline def creator_tr(name: tr): js.ThisFunction0[/* this */ BaseType, HTMLTableRowElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableRowElement]]
-  
-  inline def creator_track(name: track): js.ThisFunction0[/* this */ BaseType, HTMLTrackElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTrackElement]]
-  
-  inline def creator_tspan(name: tspan): js.ThisFunction0[/* this */ BaseType, SVGTSpanElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGTSpanElement]]
-  
-  inline def creator_u(name: u): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_ul(name: ul): js.ThisFunction0[/* this */ BaseType, HTMLUListElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLUListElement]]
-  
-  inline def creator_use(name: use): js.ThisFunction0[/* this */ BaseType, SVGUseElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGUseElement]]
-  
-  inline def creator_var(name: `var`): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
-  
-  inline def creator_video(name: video): js.ThisFunction0[/* this */ BaseType, HTMLVideoElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLVideoElement]]
-  
-  inline def creator_view(name: view): js.ThisFunction0[/* this */ BaseType, SVGViewElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGViewElement]]
-  
-  inline def creator_wbr(name: wbr): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
   
   inline def cross[S, T](a: js.Iterable[S], b: js.Iterable[T]): js.Array[js.Tuple2[S, T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[S, T]]]
   inline def cross[S, T, U](a: js.Iterable[S], b: js.Iterable[T], reducer: js.Function2[/* a */ S, /* b */ T, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
@@ -2990,8 +2819,8 @@ object mod {
     
     @JSImport("d3", "scaleImplicit.name")
     @js.native
-    def name: `implicit` = js.native
-    inline def name_=(x: `implicit`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    def name: "implicit" = js.native
+    inline def name_=(x: "implicit"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
   }
   
   inline def scaleLinear[Range, Output, Unknown](): ScaleLinear_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")().asInstanceOf[ScaleLinear_[Range, Output, Unknown]]

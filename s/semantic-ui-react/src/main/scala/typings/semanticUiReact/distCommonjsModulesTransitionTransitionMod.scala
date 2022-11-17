@@ -166,43 +166,36 @@ object distCommonjsModulesTransitionTransitionMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.semanticUiReact.semanticUiReactStrings.ENTERED
-    - typings.semanticUiReact.semanticUiReactStrings.ENTERING
-    - typings.semanticUiReact.semanticUiReactStrings.EXITED
-    - typings.semanticUiReact.semanticUiReactStrings.EXITING
-    - typings.semanticUiReact.semanticUiReactStrings.UNMOUNTED
-  */
-  trait TRANSITION_STATUSES extends StObject
   object TRANSITION_STATUSES {
     
-    inline def ENTERED: typings.semanticUiReact.semanticUiReactStrings.ENTERED = "ENTERED".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ENTERED]
+    inline def ENTERED: "ENTERED" = "ENTERED".asInstanceOf["ENTERED"]
     
-    inline def ENTERING: typings.semanticUiReact.semanticUiReactStrings.ENTERING = "ENTERING".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ENTERING]
+    inline def ENTERING: "ENTERING" = "ENTERING".asInstanceOf["ENTERING"]
     
-    inline def EXITED: typings.semanticUiReact.semanticUiReactStrings.EXITED = "EXITED".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.EXITED]
+    inline def EXITED: "EXITED" = "EXITED".asInstanceOf["EXITED"]
     
-    inline def EXITING: typings.semanticUiReact.semanticUiReactStrings.EXITING = "EXITING".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.EXITING]
+    inline def EXITING: "EXITING" = "EXITING".asInstanceOf["EXITING"]
     
-    inline def UNMOUNTED: typings.semanticUiReact.semanticUiReactStrings.UNMOUNTED = "UNMOUNTED".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.UNMOUNTED]
+    inline def UNMOUNTED: "UNMOUNTED" = "UNMOUNTED".asInstanceOf["UNMOUNTED"]
   }
+  type TRANSITION_STATUSES = "ENTERED" | "ENTERING" | "EXITED" | "EXITING" | "UNMOUNTED"
   
   @js.native
   trait TransitionComponent
     extends StObject
        with ComponentClass[TransitionProps, ComponentState] {
     
-    var ENTERED: typings.semanticUiReact.semanticUiReactStrings.ENTERED = js.native
+    var ENTERED: "ENTERED" = js.native
     
-    var ENTERING: typings.semanticUiReact.semanticUiReactStrings.ENTERING = js.native
+    var ENTERING: "ENTERING" = js.native
     
-    var EXITED: typings.semanticUiReact.semanticUiReactStrings.EXITED = js.native
+    var EXITED: "EXITED" = js.native
     
-    var EXITING: typings.semanticUiReact.semanticUiReactStrings.EXITING = js.native
+    var EXITING: "EXITING" = js.native
     
     var Group: TransitionGroupComponent = js.native
     
-    var UNMOUNTED: typings.semanticUiReact.semanticUiReactStrings.UNMOUNTED = js.native
+    var UNMOUNTED: "UNMOUNTED" = js.native
   }
   
   trait TransitionEventData

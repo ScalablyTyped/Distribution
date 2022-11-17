@@ -2,7 +2,6 @@ package typings.serveStatic
 
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.serveStatic.serveStaticBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,7 +65,7 @@ object mod {
       * The first that exists will be served. Example: ['html', 'htm'].
       * The default value is false.
       */
-    var extensions: js.UndefOr[js.Array[String] | `false`] = js.undefined
+    var extensions: js.UndefOr[js.Array[String] | false] = js.undefined
     
     /**
       * Let client errors fall-through as unhandled requests, otherwise forward a client error.
@@ -131,7 +130,7 @@ object mod {
       
       inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
       
-      inline def setExtensions(value: js.Array[String] | `false`): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String] | false): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       

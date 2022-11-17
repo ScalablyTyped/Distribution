@@ -364,7 +364,7 @@ trait BigInt64Array
   
   /* standard es2020.bigint */
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: typings.std.stdStrings.BigInt64Array = js.native
+  val toStringTag: "BigInt64Array" = js.native
   
   /** Yields each value in the array. */
   /* standard es2020.bigint */

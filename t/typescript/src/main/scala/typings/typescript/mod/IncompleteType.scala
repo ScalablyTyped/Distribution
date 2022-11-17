@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IncompleteType
-  extends StObject
-     with FlowType {
+trait IncompleteType extends StObject {
   
   var flags: TypeFlags
   

@@ -1,15 +1,12 @@
 package typings.typescript.mod
 
-import typings.typescript.typescriptBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RenameInfoFailure
-  extends StObject
-     with RenameInfo {
+trait RenameInfoFailure extends StObject {
   
-  var canRename: `false`
+  var canRename: false
   
   var localizedErrorMessage: java.lang.String
 }
@@ -22,7 +19,7 @@ object RenameInfoFailure {
   
   extension [Self <: RenameInfoFailure](x: Self) {
     
-    inline def setCanRename(value: `false`): Self = StObject.set(x, "canRename", value.asInstanceOf[js.Any])
+    inline def setCanRename(value: false): Self = StObject.set(x, "canRename", value.asInstanceOf[js.Any])
     
     inline def setLocalizedErrorMessage(value: java.lang.String): Self = StObject.set(x, "localizedErrorMessage", value.asInstanceOf[js.Any])
   }

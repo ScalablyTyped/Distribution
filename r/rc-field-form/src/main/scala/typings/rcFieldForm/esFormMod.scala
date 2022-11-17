@@ -6,57 +6,6 @@ import typings.rcFieldForm.esInterfaceMod.FormInstance
 import typings.rcFieldForm.esInterfaceMod.Store
 import typings.rcFieldForm.esInterfaceMod.ValidateErrorEntity
 import typings.rcFieldForm.esInterfaceMod.ValidateMessages
-import typings.rcFieldForm.rcFieldFormBooleans.`false`
-import typings.rcFieldForm.rcFieldFormStrings.`additions removals`
-import typings.rcFieldForm.rcFieldFormStrings.`additions text`
-import typings.rcFieldForm.rcFieldFormStrings.`inline`
-import typings.rcFieldForm.rcFieldFormStrings.`removals additions`
-import typings.rcFieldForm.rcFieldFormStrings.`removals text`
-import typings.rcFieldForm.rcFieldFormStrings.`text additions`
-import typings.rcFieldForm.rcFieldFormStrings.`text removals`
-import typings.rcFieldForm.rcFieldFormStrings.additions
-import typings.rcFieldForm.rcFieldFormStrings.all
-import typings.rcFieldForm.rcFieldFormStrings.ascending
-import typings.rcFieldForm.rcFieldFormStrings.assertive
-import typings.rcFieldForm.rcFieldFormStrings.both
-import typings.rcFieldForm.rcFieldFormStrings.copy
-import typings.rcFieldForm.rcFieldFormStrings.date
-import typings.rcFieldForm.rcFieldFormStrings.decimal
-import typings.rcFieldForm.rcFieldFormStrings.descending
-import typings.rcFieldForm.rcFieldFormStrings.dialog
-import typings.rcFieldForm.rcFieldFormStrings.email
-import typings.rcFieldForm.rcFieldFormStrings.execute
-import typings.rcFieldForm.rcFieldFormStrings.grammar
-import typings.rcFieldForm.rcFieldFormStrings.grid
-import typings.rcFieldForm.rcFieldFormStrings.horizontal
-import typings.rcFieldForm.rcFieldFormStrings.inherit
-import typings.rcFieldForm.rcFieldFormStrings.link
-import typings.rcFieldForm.rcFieldFormStrings.list
-import typings.rcFieldForm.rcFieldFormStrings.listbox
-import typings.rcFieldForm.rcFieldFormStrings.location
-import typings.rcFieldForm.rcFieldFormStrings.menu
-import typings.rcFieldForm.rcFieldFormStrings.mixed
-import typings.rcFieldForm.rcFieldFormStrings.move
-import typings.rcFieldForm.rcFieldFormStrings.no
-import typings.rcFieldForm.rcFieldFormStrings.none
-import typings.rcFieldForm.rcFieldFormStrings.numeric
-import typings.rcFieldForm.rcFieldFormStrings.off
-import typings.rcFieldForm.rcFieldFormStrings.on
-import typings.rcFieldForm.rcFieldFormStrings.other
-import typings.rcFieldForm.rcFieldFormStrings.page
-import typings.rcFieldForm.rcFieldFormStrings.polite
-import typings.rcFieldForm.rcFieldFormStrings.popup
-import typings.rcFieldForm.rcFieldFormStrings.removals
-import typings.rcFieldForm.rcFieldFormStrings.search
-import typings.rcFieldForm.rcFieldFormStrings.spelling
-import typings.rcFieldForm.rcFieldFormStrings.step
-import typings.rcFieldForm.rcFieldFormStrings.tel
-import typings.rcFieldForm.rcFieldFormStrings.text
-import typings.rcFieldForm.rcFieldFormStrings.time
-import typings.rcFieldForm.rcFieldFormStrings.tree
-import typings.rcFieldForm.rcFieldFormStrings.url
-import typings.rcFieldForm.rcFieldFormStrings.vertical
-import typings.rcFieldForm.rcFieldFormStrings.yes
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -124,11 +73,11 @@ object esFormMod extends Shortcut {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -138,7 +87,7 @@ object esFormMod extends Shortcut {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -146,7 +95,7 @@ object esFormMod extends Shortcut {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -156,11 +105,11 @@ object esFormMod extends Shortcut {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -170,7 +119,7 @@ object esFormMod extends Shortcut {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -178,7 +127,7 @@ object esFormMod extends Shortcut {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -186,12 +135,12 @@ object esFormMod extends Shortcut {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -208,7 +157,7 @@ object esFormMod extends Shortcut {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -230,7 +179,7 @@ object esFormMod extends Shortcut {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -254,7 +203,7 @@ object esFormMod extends Shortcut {
     
     var inlist: js.UndefOr[Any] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
     
@@ -470,11 +419,11 @@ object esFormMod extends Shortcut {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
   }
@@ -511,7 +460,7 @@ object esFormMod extends Shortcut {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -519,7 +468,7 @@ object esFormMod extends Shortcut {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -539,7 +488,7 @@ object esFormMod extends Shortcut {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -555,7 +504,7 @@ object esFormMod extends Shortcut {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -575,7 +524,7 @@ object esFormMod extends Shortcut {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -583,7 +532,7 @@ object esFormMod extends Shortcut {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -603,7 +552,7 @@ object esFormMod extends Shortcut {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -619,7 +568,7 @@ object esFormMod extends Shortcut {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -635,7 +584,7 @@ object esFormMod extends Shortcut {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -644,7 +593,7 @@ object esFormMod extends Shortcut {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -677,7 +626,7 @@ object esFormMod extends Shortcut {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -721,7 +670,7 @@ object esFormMod extends Shortcut {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -771,7 +720,7 @@ object esFormMod extends Shortcut {
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -1203,7 +1152,7 @@ object esFormMod extends Shortcut {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
@@ -1211,7 +1160,7 @@ object esFormMod extends Shortcut {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
@@ -1227,7 +1176,7 @@ object esFormMod extends Shortcut {
     
     var children: js.UndefOr[RenderProps | ReactNode] = js.undefined
     
-    var component: js.UndefOr[`false` | String | FC[Any] | (ComponentClass[Any, ComponentState])] = js.undefined
+    var component: js.UndefOr[false | String | FC[Any] | (ComponentClass[Any, ComponentState])] = js.undefined
     
     var fields: js.UndefOr[js.Array[FieldData]] = js.undefined
     
@@ -1249,7 +1198,7 @@ object esFormMod extends Shortcut {
     
     var validateMessages: js.UndefOr[ValidateMessages] = js.undefined
     
-    var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
+    var validateTrigger: js.UndefOr[String | js.Array[String] | false] = js.undefined
   }
   object FormProps {
     
@@ -1268,7 +1217,7 @@ object esFormMod extends Shortcut {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setComponent(value: `false` | String | FC[Any] | (ComponentClass[Any, ComponentState])): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: false | String | FC[Any] | (ComponentClass[Any, ComponentState])): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
@@ -1310,7 +1259,7 @@ object esFormMod extends Shortcut {
       
       inline def setValidateMessagesUndefined: Self = StObject.set(x, "validateMessages", js.undefined)
       
-      inline def setValidateTrigger(value: String | js.Array[String] | `false`): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
+      inline def setValidateTrigger(value: String | js.Array[String] | false): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
       
       inline def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
       

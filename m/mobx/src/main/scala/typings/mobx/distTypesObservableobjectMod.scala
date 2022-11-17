@@ -1,5 +1,7 @@
 package typings.mobx
 
+import typings.mobx.anon.NameNewValue
+import typings.mobx.anon.NameObject
 import typings.mobx.anon.NewValueOldValue
 import typings.mobx.anon.NewValueType
 import typings.mobx.anon.ObservableKind
@@ -14,8 +16,6 @@ import typings.mobx.distTypesInterceptUtilsMod.IInterceptable
 import typings.mobx.distTypesListenUtilsMod.IListenable
 import typings.mobx.distTypesModifiersMod.IEnhancer
 import typings.mobx.distUtilsUtilsMod.Lambda
-import typings.mobx.mobxStrings.add
-import typings.mobx.mobxStrings.update
 import typings.std.ArrayLike
 import typings.std.Map
 import typings.std.PropertyKey
@@ -170,25 +170,5 @@ object distTypesObservableobjectMod {
   
   type IObjectDidChange[T] = (NewValueType & ObservableKind[T]) | (NewValueOldValue & ObservableKind[T]) | (OldValueType & ObservableKind[T])
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.mobx.anon.NameNewValue[T]
-    - typings.mobx.anon.NameObject[T]
-  */
-  trait IObjectWillChange[T] extends StObject
-  object IObjectWillChange {
-    
-    inline def NameNewValue[T](name: PropertyKey, newValue: Any, `object`: T, `type`: update | add): typings.mobx.anon.NameNewValue[T] = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.mobx.anon.NameNewValue[T]]
-    }
-    
-    inline def NameObject[T](name: PropertyKey, `object`: T): typings.mobx.anon.NameObject[T] = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("remove")
-      __obj.asInstanceOf[typings.mobx.anon.NameObject[T]]
-    }
-  }
+  type IObjectWillChange[T] = NameNewValue[T] | NameObject[T]
 }

@@ -1,8 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.always
-import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.never
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +39,7 @@ trait ScrollViewPropsAndroid extends StObject {
     *   - 'always' - Always allow a user to over-scroll this view.
     *   - 'never' - Never allow a user to over-scroll this view.
     */
-  var overScrollMode: js.UndefOr[auto | always | never] = js.undefined
+  var overScrollMode: js.UndefOr["auto" | "always" | "never"] = js.undefined
   
   /**
     * Causes the scrollbars not to turn transparent when they are not in use. The default value is false.
@@ -79,7 +76,7 @@ object ScrollViewPropsAndroid {
     
     inline def setNestedScrollEnabledUndefined: Self = StObject.set(x, "nestedScrollEnabled", js.undefined)
     
-    inline def setOverScrollMode(value: auto | always | never): Self = StObject.set(x, "overScrollMode", value.asInstanceOf[js.Any])
+    inline def setOverScrollMode(value: "auto" | "always" | "never"): Self = StObject.set(x, "overScrollMode", value.asInstanceOf[js.Any])
     
     inline def setOverScrollModeUndefined: Self = StObject.set(x, "overScrollMode", js.undefined)
     

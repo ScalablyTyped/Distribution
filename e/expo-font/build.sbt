@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "expo-font"
-version := "11.0.1-70e72c"
-scalaVersion := "3.2.0"
+version := "11.0.1-d65f63"
+scalaVersion := "3.2.2-RC1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-ab3df7",
-  "org.scalablytyped" %%% "expo-asset" % "8.6.2-ea25ef",
-  "org.scalablytyped" %%% "expo-constants" % "14.0.2-8a845c",
-  "org.scalablytyped" %%% "expo-modules-core" % "1.0.3-ff43e9",
-  "org.scalablytyped" %%% "expo__config-types" % "47.0.0-1c771e",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-53873f",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-9ff1b2",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-041ba4",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-ea4558",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-b003b4",
+  "org.scalablytyped" %%% "expo-asset" % "8.6.2-690e21",
+  "org.scalablytyped" %%% "expo-constants" % "14.0.2-a6f76b",
+  "org.scalablytyped" %%% "expo-modules-core" % "1.0.3-5e81aa",
+  "org.scalablytyped" %%% "expo__config-types" % "47.0.0-648b9c",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-ddcd58",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-0ec907",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-3ee483",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-864a4c",
+  "org.scalablytyped" %%% "std" % "4.9-448261")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

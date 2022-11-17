@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.json
 import typings.angularCommon.mod.JsonPipe
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
@@ -17,5 +15,5 @@ trait TypeofJsonPipe
   
   var ɵfac: ɵɵFactoryDeclaration[JsonPipe, scala.Nothing] = js.native
   
-  var ɵpipe: ɵɵPipeDeclaration[JsonPipe, json, `true`] = js.native
+  var ɵpipe: ɵɵPipeDeclaration[JsonPipe, "json", true] = js.native
 }

@@ -1936,12 +1936,10 @@ trait p5InstanceExtensions extends StObject {
     *   stream has loaded
     *   @return capture video p5.Element
     */
-  def createCapture(`type`: String): Element = js.native
-  def createCapture(`type`: String, callback: js.Function1[/* repeated */ Any, Any]): Element = js.native
+  def createCapture(`type`: String | TYPE): Element = js.native
+  def createCapture(`type`: String | TYPE, callback: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def createCapture(`type`: js.Object): Element = js.native
   def createCapture(`type`: js.Object, callback: js.Function1[/* repeated */ Any, Any]): Element = js.native
-  def createCapture(`type`: TYPE): Element = js.native
-  def createCapture(`type`: TYPE, callback: js.Function1[/* repeated */ Any, Any]): Element = js.native
   
   /**
     *   Creates a checkbox <input></input> element in the
@@ -2380,14 +2378,10 @@ trait p5InstanceExtensions extends StObject {
     *   @param [y] the vertical active spot of the cursor
     *   (must be less than 32)
     */
-  def cursor(`type`: String): Unit = js.native
-  def cursor(`type`: String, x: Double): Unit = js.native
-  def cursor(`type`: String, x: Double, y: Double): Unit = js.native
-  def cursor(`type`: String, x: Unit, y: Double): Unit = js.native
-  def cursor(`type`: CURSOR_TYPE): Unit = js.native
-  def cursor(`type`: CURSOR_TYPE, x: Double): Unit = js.native
-  def cursor(`type`: CURSOR_TYPE, x: Double, y: Double): Unit = js.native
-  def cursor(`type`: CURSOR_TYPE, x: Unit, y: Double): Unit = js.native
+  def cursor(`type`: CURSOR_TYPE | String): Unit = js.native
+  def cursor(`type`: CURSOR_TYPE | String, x: Double): Unit = js.native
+  def cursor(`type`: CURSOR_TYPE | String, x: Double, y: Double): Unit = js.native
+  def cursor(`type`: CURSOR_TYPE | String, x: Unit, y: Double): Unit = js.native
   
   /**
     *   Draws a curved line on the screen between two

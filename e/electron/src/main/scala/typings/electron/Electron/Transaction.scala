@@ -1,10 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.deferred
-import typings.electron.electronStrings.failed
-import typings.electron.electronStrings.purchased
-import typings.electron.electronStrings.purchasing
-import typings.electron.electronStrings.restored
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +38,7 @@ trait Transaction extends StObject {
     * The transaction state, can be `purchasing`, `purchased`, `failed`, `restored` or
     * `deferred`.
     */
-  var transactionState: purchasing | purchased | failed | restored | deferred
+  var transactionState: "purchasing" | "purchased" | "failed" | "restored" | "deferred"
 }
 object Transaction {
   
@@ -54,7 +49,7 @@ object Transaction {
     payment: Payment,
     transactionDate: String,
     transactionIdentifier: String,
-    transactionState: purchasing | purchased | failed | restored | deferred
+    transactionState: "purchasing" | "purchased" | "failed" | "restored" | "deferred"
   ): Transaction = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], originalTransactionIdentifier = originalTransactionIdentifier.asInstanceOf[js.Any], payment = payment.asInstanceOf[js.Any], transactionDate = transactionDate.asInstanceOf[js.Any], transactionIdentifier = transactionIdentifier.asInstanceOf[js.Any], transactionState = transactionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transaction]
@@ -74,6 +69,6 @@ object Transaction {
     
     inline def setTransactionIdentifier(value: String): Self = StObject.set(x, "transactionIdentifier", value.asInstanceOf[js.Any])
     
-    inline def setTransactionState(value: purchasing | purchased | failed | restored | deferred): Self = StObject.set(x, "transactionState", value.asInstanceOf[js.Any])
+    inline def setTransactionState(value: "purchasing" | "purchased" | "failed" | "restored" | "deferred"): Self = StObject.set(x, "transactionState", value.asInstanceOf[js.Any])
   }
 }

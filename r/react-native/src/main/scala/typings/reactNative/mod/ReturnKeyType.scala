@@ -4,23 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.reactNative.reactNativeStrings.done
-  - typings.reactNative.reactNativeStrings.go
-  - typings.reactNative.reactNativeStrings.next
-  - typings.reactNative.reactNativeStrings.search
-  - typings.reactNative.reactNativeStrings.send
-*/
-trait ReturnKeyType extends StObject
 object ReturnKeyType {
   
-  inline def done: typings.reactNative.reactNativeStrings.done = "done".asInstanceOf[typings.reactNative.reactNativeStrings.done]
+  inline def done: "done" = "done".asInstanceOf["done"]
   
-  inline def go: typings.reactNative.reactNativeStrings.go = "go".asInstanceOf[typings.reactNative.reactNativeStrings.go]
+  inline def go: "go" = "go".asInstanceOf["go"]
   
-  inline def next: typings.reactNative.reactNativeStrings.next = "next".asInstanceOf[typings.reactNative.reactNativeStrings.next]
+  inline def next: "next" = "next".asInstanceOf["next"]
   
-  inline def search: typings.reactNative.reactNativeStrings.search = "search".asInstanceOf[typings.reactNative.reactNativeStrings.search]
+  inline def search: "search" = "search".asInstanceOf["search"]
   
-  inline def send: typings.reactNative.reactNativeStrings.send = "send".asInstanceOf[typings.reactNative.reactNativeStrings.send]
+  inline def send: "send" = "send".asInstanceOf["send"]
 }

@@ -1,25 +1,19 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSSatisfiesExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSSatisfiesExpression__
   extends StObject
-     with BaseNode
-     with Expression
-     with LVal
-     with Node
-     with PatternLike
-     with TypeScript {
+     with BaseNode {
   
   var expression: Expression
   
   var typeAnnotation: TSType
   
   @JSName("type")
-  var type_TSSatisfiesExpression__ : TSSatisfiesExpression
+  var type_TSSatisfiesExpression__ : "TSSatisfiesExpression"
 }
 object TSSatisfiesExpression__ {
   
@@ -33,7 +27,7 @@ object TSSatisfiesExpression__ {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSSatisfiesExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSSatisfiesExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }

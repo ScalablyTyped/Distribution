@@ -1,7 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.primary
-import typings.materialUiCore.materialUiCoreStrings.secondary
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +15,7 @@ trait Focused extends StObject {
   /**
     * The color of the component. It supports those theme colors that make sense for this component.
     */
-  var color: js.UndefOr[primary | secondary] = js.undefined
+  var color: js.UndefOr["primary" | "secondary"] = js.undefined
   
   /**
     * If `true`, the label should be displayed in a disabled state.
@@ -57,7 +55,7 @@ object Focused {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setColor(value: primary | secondary): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: "primary" | "secondary"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     

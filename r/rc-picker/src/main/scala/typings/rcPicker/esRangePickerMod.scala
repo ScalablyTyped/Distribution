@@ -11,66 +11,6 @@ import typings.rcPicker.esInterfaceMod.PickerMode
 import typings.rcPicker.esInterfaceMod.RangeValue
 import typings.rcPicker.esPanelsMonthPanelMonthBodyMod.MonthCellRender
 import typings.rcPicker.esPickerMod.PickerRefConfig
-import typings.rcPicker.rcPickerInts.`0`
-import typings.rcPicker.rcPickerInts.`1`
-import typings.rcPicker.rcPickerStrings.`additions removals`
-import typings.rcPicker.rcPickerStrings.`additions text`
-import typings.rcPicker.rcPickerStrings.`inline`
-import typings.rcPicker.rcPickerStrings.`removals additions`
-import typings.rcPicker.rcPickerStrings.`removals text`
-import typings.rcPicker.rcPickerStrings.`text additions`
-import typings.rcPicker.rcPickerStrings.`text removals`
-import typings.rcPicker.rcPickerStrings.additions
-import typings.rcPicker.rcPickerStrings.all
-import typings.rcPicker.rcPickerStrings.ascending
-import typings.rcPicker.rcPickerStrings.assertive
-import typings.rcPicker.rcPickerStrings.both
-import typings.rcPicker.rcPickerStrings.copy
-import typings.rcPicker.rcPickerStrings.date
-import typings.rcPicker.rcPickerStrings.dateRender
-import typings.rcPicker.rcPickerStrings.defaultPickerValue
-import typings.rcPicker.rcPickerStrings.defaultValue
-import typings.rcPicker.rcPickerStrings.descending
-import typings.rcPicker.rcPickerStrings.dialog
-import typings.rcPicker.rcPickerStrings.disabled
-import typings.rcPicker.rcPickerStrings.disabledTime
-import typings.rcPicker.rcPickerStrings.execute
-import typings.rcPicker.rcPickerStrings.grammar
-import typings.rcPicker.rcPickerStrings.grid
-import typings.rcPicker.rcPickerStrings.horizontal
-import typings.rcPicker.rcPickerStrings.link
-import typings.rcPicker.rcPickerStrings.list
-import typings.rcPicker.rcPickerStrings.listbox
-import typings.rcPicker.rcPickerStrings.location
-import typings.rcPicker.rcPickerStrings.ltr
-import typings.rcPicker.rcPickerStrings.menu
-import typings.rcPicker.rcPickerStrings.mixed
-import typings.rcPicker.rcPickerStrings.mode
-import typings.rcPicker.rcPickerStrings.move
-import typings.rcPicker.rcPickerStrings.none
-import typings.rcPicker.rcPickerStrings.off
-import typings.rcPicker.rcPickerStrings.onChange
-import typings.rcPicker.rcPickerStrings.onOk
-import typings.rcPicker.rcPickerStrings.onPanelChange
-import typings.rcPicker.rcPickerStrings.onPickerValueChange
-import typings.rcPicker.rcPickerStrings.onSelect
-import typings.rcPicker.rcPickerStrings.other
-import typings.rcPicker.rcPickerStrings.page
-import typings.rcPicker.rcPickerStrings.pickerValue
-import typings.rcPicker.rcPickerStrings.placeholder
-import typings.rcPicker.rcPickerStrings.polite
-import typings.rcPicker.rcPickerStrings.popup
-import typings.rcPicker.rcPickerStrings.removals
-import typings.rcPicker.rcPickerStrings.rtl
-import typings.rcPicker.rcPickerStrings.showTime
-import typings.rcPicker.rcPickerStrings.showToday
-import typings.rcPicker.rcPickerStrings.spelling
-import typings.rcPicker.rcPickerStrings.step
-import typings.rcPicker.rcPickerStrings.text
-import typings.rcPicker.rcPickerStrings.time
-import typings.rcPicker.rcPickerStrings.tree
-import typings.rcPicker.rcPickerStrings.value
-import typings.rcPicker.rcPickerStrings.vertical
 import typings.rcTrigger.esInterfaceMod.AlignType
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
@@ -104,7 +44,7 @@ object esRangePickerMod {
   
   type OmitPickerProps[Props] = Omit[
     Props, 
-    value | defaultValue | defaultPickerValue | placeholder | disabled | disabledTime | showToday | showTime | mode | onChange | onSelect | onPanelChange | pickerValue | onPickerValueChange | onOk | dateRender
+    "value" | "defaultValue" | "defaultPickerValue" | "placeholder" | "disabled" | "disabledTime" | "showToday" | "showTime" | "mode" | "onChange" | "onSelect" | "onPanelChange" | "pickerValue" | "onPickerValueChange" | "onOk" | "dateRender"
   ]
   
   type RangeDateRender[DateType] = js.Function3[/* currentDate */ DateType, /* today */ DateType, /* info */ RangeInfo, ReactNode]
@@ -138,12 +78,10 @@ object esRangePickerMod {
   }
   
   /* Inlined {} & rc-picker.rc-picker/es/RangePicker.RangePickerSharedProps<DateType> & rc-picker.rc-picker/es/RangePicker.OmitPickerProps<rc-picker.rc-picker/es/Picker.PickerBaseProps<DateType>> */
-  trait RangePickerBaseProps[DateType]
-    extends StObject
-       with RangePickerProps[DateType] {
+  trait RangePickerBaseProps[DateType] extends StObject {
     
     /** @private Internal control of active picker. Do not use since it's private usage */
-    var activePickerIndex: js.UndefOr[`0` | `1`] = js.undefined
+    var activePickerIndex: js.UndefOr[0 | 1] = js.undefined
     
     var allowClear: js.UndefOr[Boolean] = js.undefined
     
@@ -153,11 +91,11 @@ object esRangePickerMod {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -167,7 +105,7 @@ object esRangePickerMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -175,7 +113,7 @@ object esRangePickerMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -185,11 +123,11 @@ object esRangePickerMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -199,7 +137,7 @@ object esRangePickerMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -207,7 +145,7 @@ object esRangePickerMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -215,12 +153,12 @@ object esRangePickerMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -237,7 +175,7 @@ object esRangePickerMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -265,7 +203,7 @@ object esRangePickerMod {
     
     var defaultValue: js.UndefOr[RangeValue[DateType]] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabled: js.UndefOr[Boolean | (js.Tuple2[Boolean, Boolean])] = js.undefined
     
@@ -354,7 +292,7 @@ object esRangePickerMod {
     
     var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.undefined
     
-    var picker: Exclude[PickerMode, date | time]
+    var picker: Exclude[PickerMode, "date" | "time"]
     
     var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.undefined
     
@@ -395,14 +333,18 @@ object esRangePickerMod {
   }
   object RangePickerBaseProps {
     
-    inline def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale, picker: Exclude[PickerMode, date | time]): RangePickerBaseProps[DateType] = {
+    inline def apply[DateType](
+      generateConfig: GenerateConfig[DateType],
+      locale: Locale,
+      picker: Exclude[PickerMode, "date" | "time"]
+    ): RangePickerBaseProps[DateType] = {
       val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
       __obj.asInstanceOf[RangePickerBaseProps[DateType]]
     }
     
     extension [Self <: RangePickerBaseProps[?], DateType](x: Self & RangePickerBaseProps[DateType]) {
       
-      inline def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
+      inline def setActivePickerIndex(value: 0 | 1): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
       
       inline def setActivePickerIndexUndefined: Self = StObject.set(x, "activePickerIndex", js.undefined)
       
@@ -422,7 +364,7 @@ object esRangePickerMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -430,7 +372,7 @@ object esRangePickerMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -450,7 +392,7 @@ object esRangePickerMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -466,7 +408,7 @@ object esRangePickerMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -486,7 +428,7 @@ object esRangePickerMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -494,7 +436,7 @@ object esRangePickerMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -514,7 +456,7 @@ object esRangePickerMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -530,7 +472,7 @@ object esRangePickerMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -546,7 +488,7 @@ object esRangePickerMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -555,7 +497,7 @@ object esRangePickerMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -588,7 +530,7 @@ object esRangePickerMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -646,7 +588,7 @@ object esRangePickerMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -782,7 +724,7 @@ object esRangePickerMod {
       
       inline def setPanelRenderUndefined: Self = StObject.set(x, "panelRender", js.undefined)
       
-      inline def setPicker(value: Exclude[PickerMode, date | time]): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: Exclude[PickerMode, "date" | "time"]): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
       inline def setPickerRef(value: MutableRefObject[PickerRefConfig]): Self = StObject.set(x, "pickerRef", value.asInstanceOf[js.Any])
       
@@ -858,12 +800,10 @@ object esRangePickerMod {
   }
   
   /* Inlined {  showTime :boolean | rc-picker.rc-picker/es/RangePicker.RangeShowTimeObject<DateType> | undefined} & rc-picker.rc-picker/es/RangePicker.RangePickerSharedProps<DateType> & rc-picker.rc-picker/es/RangePicker.OmitPickerProps<rc-picker.rc-picker/es/Picker.PickerDateProps<DateType>> */
-  trait RangePickerDateProps[DateType]
-    extends StObject
-       with RangePickerProps[DateType] {
+  trait RangePickerDateProps[DateType] extends StObject {
     
     /** @private Internal control of active picker. Do not use since it's private usage */
-    var activePickerIndex: js.UndefOr[`0` | `1`] = js.undefined
+    var activePickerIndex: js.UndefOr[0 | 1] = js.undefined
     
     var allowClear: js.UndefOr[Boolean] = js.undefined
     
@@ -873,11 +813,11 @@ object esRangePickerMod {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -887,7 +827,7 @@ object esRangePickerMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -895,7 +835,7 @@ object esRangePickerMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -905,11 +845,11 @@ object esRangePickerMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -919,7 +859,7 @@ object esRangePickerMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -927,7 +867,7 @@ object esRangePickerMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -935,12 +875,12 @@ object esRangePickerMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -957,7 +897,7 @@ object esRangePickerMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -985,7 +925,7 @@ object esRangePickerMod {
     
     var defaultValue: js.UndefOr[RangeValue[DateType]] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabled: js.UndefOr[Boolean | (js.Tuple2[Boolean, Boolean])] = js.undefined
     
@@ -1074,7 +1014,7 @@ object esRangePickerMod {
     
     var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.undefined
     
-    var picker: js.UndefOr[date] = js.undefined
+    var picker: js.UndefOr["date"] = js.undefined
     
     var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.undefined
     
@@ -1126,7 +1066,7 @@ object esRangePickerMod {
     
     extension [Self <: RangePickerDateProps[?], DateType](x: Self & RangePickerDateProps[DateType]) {
       
-      inline def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
+      inline def setActivePickerIndex(value: 0 | 1): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
       
       inline def setActivePickerIndexUndefined: Self = StObject.set(x, "activePickerIndex", js.undefined)
       
@@ -1146,7 +1086,7 @@ object esRangePickerMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -1154,7 +1094,7 @@ object esRangePickerMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -1174,7 +1114,7 @@ object esRangePickerMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -1190,7 +1130,7 @@ object esRangePickerMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -1210,7 +1150,7 @@ object esRangePickerMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -1218,7 +1158,7 @@ object esRangePickerMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -1238,7 +1178,7 @@ object esRangePickerMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -1254,7 +1194,7 @@ object esRangePickerMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -1270,7 +1210,7 @@ object esRangePickerMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -1279,7 +1219,7 @@ object esRangePickerMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -1312,7 +1252,7 @@ object esRangePickerMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -1370,7 +1310,7 @@ object esRangePickerMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -1506,7 +1446,7 @@ object esRangePickerMod {
       
       inline def setPanelRenderUndefined: Self = StObject.set(x, "panelRender", js.undefined)
       
-      inline def setPicker(value: date): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: "date"): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
       inline def setPickerRef(value: MutableRefObject[PickerRefConfig]): Self = StObject.set(x, "pickerRef", value.asInstanceOf[js.Any])
       
@@ -1591,34 +1531,12 @@ object esRangePickerMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcPicker.esRangePickerMod.RangePickerBaseProps[DateType]
-    - typings.rcPicker.esRangePickerMod.RangePickerDateProps[DateType]
-    - typings.rcPicker.esRangePickerMod.RangePickerTimeProps[DateType]
-  */
-  trait RangePickerProps[DateType] extends StObject
-  object RangePickerProps {
-    
-    inline def RangePickerBaseProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale, picker: Exclude[PickerMode, date | time]): typings.rcPicker.esRangePickerMod.RangePickerBaseProps[DateType] = {
-      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.rcPicker.esRangePickerMod.RangePickerBaseProps[DateType]]
-    }
-    
-    inline def RangePickerDateProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): typings.rcPicker.esRangePickerMod.RangePickerDateProps[DateType] = {
-      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.rcPicker.esRangePickerMod.RangePickerDateProps[DateType]]
-    }
-    
-    inline def RangePickerTimeProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): typings.rcPicker.esRangePickerMod.RangePickerTimeProps[DateType] = {
-      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = "time")
-      __obj.asInstanceOf[typings.rcPicker.esRangePickerMod.RangePickerTimeProps[DateType]]
-    }
-  }
+  type RangePickerProps[DateType] = RangePickerBaseProps[DateType] | RangePickerDateProps[DateType] | RangePickerTimeProps[DateType]
   
   trait RangePickerSharedProps[DateType] extends StObject {
     
     /** @private Internal control of active picker. Do not use since it's private usage */
-    var activePickerIndex: js.UndefOr[`0` | `1`] = js.undefined
+    var activePickerIndex: js.UndefOr[0 | 1] = js.undefined
     
     var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.undefined
     
@@ -1630,7 +1548,7 @@ object esRangePickerMod {
     
     var defaultValue: js.UndefOr[RangeValue[DateType]] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabled: js.UndefOr[Boolean | (js.Tuple2[Boolean, Boolean])] = js.undefined
     
@@ -1703,7 +1621,7 @@ object esRangePickerMod {
     
     extension [Self <: RangePickerSharedProps[?], DateType](x: Self & RangePickerSharedProps[DateType]) {
       
-      inline def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
+      inline def setActivePickerIndex(value: 0 | 1): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
       
       inline def setActivePickerIndexUndefined: Self = StObject.set(x, "activePickerIndex", js.undefined)
       
@@ -1729,7 +1647,7 @@ object esRangePickerMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -1825,12 +1743,10 @@ object esRangePickerMod {
   }
   
   /* Inlined {  order :boolean | undefined} & rc-picker.rc-picker/es/RangePicker.RangePickerSharedProps<DateType> & rc-picker.rc-picker/es/RangePicker.OmitPickerProps<rc-picker.rc-picker/es/Picker.PickerTimeProps<DateType>> */
-  trait RangePickerTimeProps[DateType]
-    extends StObject
-       with RangePickerProps[DateType] {
+  trait RangePickerTimeProps[DateType] extends StObject {
     
     /** @private Internal control of active picker. Do not use since it's private usage */
-    var activePickerIndex: js.UndefOr[`0` | `1`] = js.undefined
+    var activePickerIndex: js.UndefOr[0 | 1] = js.undefined
     
     var allowClear: js.UndefOr[Boolean] = js.undefined
     
@@ -1840,11 +1756,11 @@ object esRangePickerMod {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -1854,7 +1770,7 @@ object esRangePickerMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -1862,7 +1778,7 @@ object esRangePickerMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -1872,11 +1788,11 @@ object esRangePickerMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -1886,7 +1802,7 @@ object esRangePickerMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -1894,7 +1810,7 @@ object esRangePickerMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -1902,12 +1818,12 @@ object esRangePickerMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -1924,7 +1840,7 @@ object esRangePickerMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -1954,7 +1870,7 @@ object esRangePickerMod {
     
     var defaultValue: js.UndefOr[RangeValue[DateType]] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr["ltr" | "rtl"] = js.undefined
     
     var disabled: js.UndefOr[Boolean | (js.Tuple2[Boolean, Boolean])] = js.undefined
     
@@ -2057,7 +1973,7 @@ object esRangePickerMod {
     
     var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.undefined
     
-    var picker: time
+    var picker: "time"
     
     var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.undefined
     
@@ -2117,7 +2033,7 @@ object esRangePickerMod {
     
     extension [Self <: RangePickerTimeProps[?], DateType](x: Self & RangePickerTimeProps[DateType]) {
       
-      inline def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
+      inline def setActivePickerIndex(value: 0 | 1): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
       
       inline def setActivePickerIndexUndefined: Self = StObject.set(x, "activePickerIndex", js.undefined)
       
@@ -2137,7 +2053,7 @@ object esRangePickerMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -2145,7 +2061,7 @@ object esRangePickerMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -2165,7 +2081,7 @@ object esRangePickerMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -2181,7 +2097,7 @@ object esRangePickerMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -2201,7 +2117,7 @@ object esRangePickerMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -2209,7 +2125,7 @@ object esRangePickerMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -2229,7 +2145,7 @@ object esRangePickerMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -2245,7 +2161,7 @@ object esRangePickerMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -2261,7 +2177,7 @@ object esRangePickerMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -2270,7 +2186,7 @@ object esRangePickerMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -2303,7 +2219,7 @@ object esRangePickerMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -2365,7 +2281,7 @@ object esRangePickerMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -2529,7 +2445,7 @@ object esRangePickerMod {
       
       inline def setPanelRenderUndefined: Self = StObject.set(x, "panelRender", js.undefined)
       
-      inline def setPicker(value: time): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: "time"): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
       inline def setPickerRef(value: MutableRefObject[PickerRefConfig]): Self = StObject.set(x, "pickerRef", value.asInstanceOf[js.Any])
       
@@ -2734,15 +2650,11 @@ object esRangePickerMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcPicker.rcPickerStrings.start
-    - typings.rcPicker.rcPickerStrings.end
-  */
-  trait RangeType extends StObject
   object RangeType {
     
-    inline def end: typings.rcPicker.rcPickerStrings.end = "end".asInstanceOf[typings.rcPicker.rcPickerStrings.end]
+    inline def end: "end" = "end".asInstanceOf["end"]
     
-    inline def start: typings.rcPicker.rcPickerStrings.start = "start".asInstanceOf[typings.rcPicker.rcPickerStrings.start]
+    inline def start: "start" = "start".asInstanceOf["start"]
   }
+  type RangeType = "start" | "end"
 }

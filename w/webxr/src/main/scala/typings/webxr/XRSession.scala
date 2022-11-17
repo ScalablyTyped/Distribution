@@ -4,16 +4,6 @@ import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventTarget
 import typings.webxr.anon.PlaneDetectionState
-import typings.webxr.webxrStrings.end
-import typings.webxr.webxrStrings.frameratechange
-import typings.webxr.webxrStrings.inputsourceschange
-import typings.webxr.webxrStrings.select
-import typings.webxr.webxrStrings.selectend
-import typings.webxr.webxrStrings.selectstart
-import typings.webxr.webxrStrings.squeeze
-import typings.webxr.webxrStrings.squeezeend
-import typings.webxr.webxrStrings.squeezestart
-import typings.webxr.webxrStrings.visibilitychange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,166 +22,199 @@ trait XRSession
      with EventTarget {
   
   @JSName("addEventListener")
-  def addEventListener_end(`type`: end, listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_end(
-    `type`: end,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_end(
-    `type`: end,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_frameratechange(
-    `type`: frameratechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_frameratechange(
-    `type`: frameratechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_frameratechange(
-    `type`: frameratechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_inputsourceschange(
-    `type`: inputsourceschange,
+  @scala.annotation.targetName("addEventListener_inputsourceschange")
+  def addEventListener(
+    `type`: "inputsourceschange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceChangeEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_inputsourceschange(
-    `type`: inputsourceschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceChangeEvent, Any],
-    options: Boolean
-  ): Unit = js.native
+  @scala.annotation.targetName("addEventListener_end")
+  def addEventListener(`type`: "end", listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_inputsourceschange(
-    `type`: inputsourceschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceChangeEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_select(`type`: select, listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_select(
-    `type`: select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_select(
-    `type`: select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_selectend(
-    `type`: selectend,
+  @scala.annotation.targetName("addEventListener_select")
+  def addEventListener(
+    `type`: "select",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_selectend(
-    `type`: selectend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_selectend(
-    `type`: selectend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_selectstart(
-    `type`: selectstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_selectstart(
-    `type`: selectstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_selectstart(
-    `type`: selectstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_squeeze(
-    `type`: squeeze,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_squeeze(
-    `type`: squeeze,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_squeeze(
-    `type`: squeeze,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_squeezeend(
-    `type`: squeezeend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_squeezeend(
-    `type`: squeezeend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_squeezeend(
-    `type`: squeezeend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_squeezestart(
-    `type`: squeezestart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_squeezestart(
-    `type`: squeezestart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_squeezestart(
-    `type`: squeezestart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_visibilitychange(
-    `type`: visibilitychange,
+  @scala.annotation.targetName("addEventListener_visibilitychange")
+  def addEventListener(
+    `type`: "visibilitychange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_visibilitychange(
-    `type`: visibilitychange,
+  @scala.annotation.targetName("addEventListener_frameratechange")
+  def addEventListener(
+    `type`: "frameratechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_selectend")
+  def addEventListener(
+    `type`: "selectend",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_squeezestart")
+  def addEventListener(
+    `type`: "squeezestart",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_squeeze")
+  def addEventListener(
+    `type`: "squeeze",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_squeezeend")
+  def addEventListener(
+    `type`: "squeezeend",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_selectstart")
+  def addEventListener(
+    `type`: "selectstart",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_visibilitychange")
+  def addEventListener(
+    `type`: "visibilitychange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_visibilitychange(
-    `type`: visibilitychange,
+  @scala.annotation.targetName("addEventListener_squeezeend")
+  def addEventListener(
+    `type`: "squeezeend",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_select")
+  def addEventListener(
+    `type`: "select",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_squeeze")
+  def addEventListener(
+    `type`: "squeeze",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_selectstart")
+  def addEventListener(
+    `type`: "selectstart",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_frameratechange")
+  def addEventListener(
+    `type`: "frameratechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_inputsourceschange")
+  def addEventListener(
+    `type`: "inputsourceschange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceChangeEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_end")
+  def addEventListener(
+    `type`: "end",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_selectend")
+  def addEventListener(
+    `type`: "selectend",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_squeezestart")
+  def addEventListener(
+    `type`: "squeezestart",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_select")
+  def addEventListener(
+    `type`: "select",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_squeezeend")
+  def addEventListener(
+    `type`: "squeezeend",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_selectend")
+  def addEventListener(
+    `type`: "selectend",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_squeezestart")
+  def addEventListener(
+    `type`: "squeezestart",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_frameratechange")
+  def addEventListener(
+    `type`: "frameratechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_end")
+  def addEventListener(
+    `type`: "end",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_inputsourceschange")
+  def addEventListener(
+    `type`: "inputsourceschange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceChangeEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_squeeze")
+  def addEventListener(
+    `type`: "squeeze",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_selectstart")
+  def addEventListener(
+    `type`: "selectstart",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_visibilitychange")
+  def addEventListener(
+    `type`: "visibilitychange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -262,166 +285,199 @@ trait XRSession
   var onvisibilitychange_Original: XRSessionEventHandler = js.native
   
   @JSName("removeEventListener")
-  def removeEventListener_end(`type`: end, listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_end(
-    `type`: end,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
-    options: Boolean
+  @scala.annotation.targetName("removeEventListener_squeeze")
+  def removeEventListener(
+    `type`: "squeeze",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_end(
-    `type`: end,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_frameratechange(
-    `type`: frameratechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_frameratechange(
-    `type`: frameratechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_frameratechange(
-    `type`: frameratechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_inputsourceschange(
-    `type`: inputsourceschange,
+  @scala.annotation.targetName("removeEventListener_inputsourceschange")
+  def removeEventListener(
+    `type`: "inputsourceschange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceChangeEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_inputsourceschange(
-    `type`: inputsourceschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceChangeEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_inputsourceschange(
-    `type`: inputsourceschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceChangeEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_select(`type`: select, listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_select(
-    `type`: select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_select(
-    `type`: select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_selectend(
-    `type`: selectend,
+  @scala.annotation.targetName("removeEventListener_select")
+  def removeEventListener(
+    `type`: "select",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_selectend(
-    `type`: selectend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_selectend(
-    `type`: selectend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_selectstart(
-    `type`: selectstart,
+  @scala.annotation.targetName("removeEventListener_selectend")
+  def removeEventListener(
+    `type`: "selectend",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_selectstart(
-    `type`: selectstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_selectstart(
-    `type`: selectstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_squeeze(
-    `type`: squeeze,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_squeeze(
-    `type`: squeeze,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_squeeze(
-    `type`: squeeze,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_squeezeend(
-    `type`: squeezeend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_squeezeend(
-    `type`: squeezeend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_squeezeend(
-    `type`: squeezeend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_squeezestart(
-    `type`: squeezestart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_squeezestart(
-    `type`: squeezestart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_squeezestart(
-    `type`: squeezestart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_visibilitychange(
-    `type`: visibilitychange,
+  @scala.annotation.targetName("removeEventListener_visibilitychange")
+  def removeEventListener(
+    `type`: "visibilitychange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_visibilitychange(
-    `type`: visibilitychange,
+  @scala.annotation.targetName("removeEventListener_squeezestart")
+  def removeEventListener(
+    `type`: "squeezestart",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_selectstart")
+  def removeEventListener(
+    `type`: "selectstart",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_squeezeend")
+  def removeEventListener(
+    `type`: "squeezeend",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_frameratechange")
+  def removeEventListener(
+    `type`: "frameratechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_end")
+  def removeEventListener(`type`: "end", listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_squeezestart")
+  def removeEventListener(
+    `type`: "squeezestart",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_selectend")
+  def removeEventListener(
+    `type`: "selectend",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_end")
+  def removeEventListener(
+    `type`: "end",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_visibilitychange(
-    `type`: visibilitychange,
+  @scala.annotation.targetName("removeEventListener_squeezeend")
+  def removeEventListener(
+    `type`: "squeezeend",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_squeeze")
+  def removeEventListener(
+    `type`: "squeeze",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_selectstart")
+  def removeEventListener(
+    `type`: "selectstart",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_frameratechange")
+  def removeEventListener(
+    `type`: "frameratechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_select")
+  def removeEventListener(
+    `type`: "select",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_visibilitychange")
+  def removeEventListener(
+    `type`: "visibilitychange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_inputsourceschange")
+  def removeEventListener(
+    `type`: "inputsourceschange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceChangeEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_squeezestart")
+  def removeEventListener(
+    `type`: "squeezestart",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_end")
+  def removeEventListener(
+    `type`: "end",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_selectend")
+  def removeEventListener(
+    `type`: "selectend",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_inputsourceschange")
+  def removeEventListener(
+    `type`: "inputsourceschange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceChangeEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_squeezeend")
+  def removeEventListener(
+    `type`: "squeezeend",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_selectstart")
+  def removeEventListener(
+    `type`: "selectstart",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_select")
+  def removeEventListener(
+    `type`: "select",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_frameratechange")
+  def removeEventListener(
+    `type`: "frameratechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_squeeze")
+  def removeEventListener(
+    `type`: "squeeze",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRInputSourceEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_visibilitychange")
+  def removeEventListener(
+    `type`: "visibilitychange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSessionEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native

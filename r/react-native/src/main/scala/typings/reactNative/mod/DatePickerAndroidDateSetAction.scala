@@ -1,15 +1,12 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.dateSetAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DatePickerAndroidDateSetAction
-  extends StObject
-     with DatePickerAndroidOpenReturn {
+trait DatePickerAndroidDateSetAction extends StObject {
   
-  var action: dateSetAction
+  var action: "dateSetAction"
   
   var day: Double
   
@@ -26,7 +23,7 @@ object DatePickerAndroidDateSetAction {
   
   extension [Self <: DatePickerAndroidDateSetAction](x: Self) {
     
-    inline def setAction(value: dateSetAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: "dateSetAction"): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

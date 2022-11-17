@@ -1,21 +1,17 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.JSXExpressionContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait JSXExpressionContainer__
   extends StObject
-     with BaseNode
-     with Immutable
-     with JSX
-     with Node {
+     with BaseNode {
   
   var expression: Expression | JSXEmptyExpression__
   
   @JSName("type")
-  var type_JSXExpressionContainer__ : JSXExpressionContainer
+  var type_JSXExpressionContainer__ : "JSXExpressionContainer"
 }
 object JSXExpressionContainer__ {
   
@@ -29,6 +25,6 @@ object JSXExpressionContainer__ {
     
     inline def setExpression(value: Expression | JSXEmptyExpression__): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    inline def setType(value: JSXExpressionContainer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "JSXExpressionContainer"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

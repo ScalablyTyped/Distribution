@@ -1,7 +1,5 @@
 package typings.materialUi.MaterialUI
 
-import typings.materialUi.materialUiStrings.left
-import typings.materialUi.materialUiStrings.right
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
@@ -25,7 +23,7 @@ object Toolbar {
     
     var firstChild: js.UndefOr[Boolean] = js.undefined
     
-    var float: js.UndefOr[left | right] = js.undefined
+    var float: js.UndefOr["left" | "right"] = js.undefined
     
     var lastChild: js.UndefOr[Boolean] = js.undefined
     
@@ -52,7 +50,7 @@ object Toolbar {
       
       inline def setFirstChildUndefined: Self = StObject.set(x, "firstChild", js.undefined)
       
-      inline def setFloat(value: left | right): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+      inline def setFloat(value: "left" | "right"): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
       
       inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
       

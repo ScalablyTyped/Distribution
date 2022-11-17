@@ -1,32 +1,6 @@
 package typings.reactNative.mod
 
 import typings.reactNative.anon.Width
-import typings.reactNative.reactNativeStrings.`100`
-import typings.reactNative.reactNativeStrings.`200`
-import typings.reactNative.reactNativeStrings.`300`
-import typings.reactNative.reactNativeStrings.`400`
-import typings.reactNative.reactNativeStrings.`500`
-import typings.reactNative.reactNativeStrings.`600`
-import typings.reactNative.reactNativeStrings.`700`
-import typings.reactNative.reactNativeStrings.`800`
-import typings.reactNative.reactNativeStrings.`900`
-import typings.reactNative.reactNativeStrings.`line-through`
-import typings.reactNative.reactNativeStrings.`underline line-through`
-import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.bold
-import typings.reactNative.reactNativeStrings.bottom
-import typings.reactNative.reactNativeStrings.capitalize
-import typings.reactNative.reactNativeStrings.center
-import typings.reactNative.reactNativeStrings.italic
-import typings.reactNative.reactNativeStrings.justify
-import typings.reactNative.reactNativeStrings.left
-import typings.reactNative.reactNativeStrings.lowercase
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.normal_
-import typings.reactNative.reactNativeStrings.right
-import typings.reactNative.reactNativeStrings.top
-import typings.reactNative.reactNativeStrings.underline
-import typings.reactNative.reactNativeStrings.uppercase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var fontSize: js.UndefOr[Double] = js.undefined
   
-  var fontStyle: js.UndefOr[normal_ | italic] = js.undefined
+  var fontStyle: js.UndefOr["normal" | "italic"] = js.undefined
   
   /**
     * Specifies font weight. The values 'normal' and 'bold' are supported
@@ -54,18 +28,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * values, in that case the closest one is chosen.
     */
   var fontWeight: js.UndefOr[
-    normal_ | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
+    "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900"
   ] = js.undefined
   
   var includeFontPadding: js.UndefOr[Boolean] = js.undefined
   
   var lineHeight: js.UndefOr[Double] = js.undefined
   
-  var textAlign: js.UndefOr[auto | left | right | center | justify] = js.undefined
+  var textAlign: js.UndefOr["auto" | "left" | "right" | "center" | "justify"] = js.undefined
   
-  var textAlignVertical: js.UndefOr[auto | top | bottom | center] = js.undefined
+  var textAlignVertical: js.UndefOr["auto" | "top" | "bottom" | "center"] = js.undefined
   
-  var textDecorationLine: js.UndefOr[none | underline | `line-through` | (`underline line-through`)] = js.undefined
+  var textDecorationLine: js.UndefOr["none" | "underline" | "line-through" | ("underline line-through")] = js.undefined
   
   var textShadowColor: js.UndefOr[ColorValue] = js.undefined
   
@@ -73,7 +47,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var textShadowRadius: js.UndefOr[Double] = js.undefined
   
-  var textTransform: js.UndefOr[none | capitalize | uppercase | lowercase] = js.undefined
+  var textTransform: js.UndefOr["none" | "capitalize" | "uppercase" | "lowercase"] = js.undefined
 }
 object TextStyle {
   
@@ -96,11 +70,11 @@ object TextStyle {
     
     inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    inline def setFontStyle(value: normal_ | italic): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    inline def setFontStyle(value: "normal" | "italic"): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    inline def setFontWeight(value: normal_ | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900"): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
@@ -112,15 +86,15 @@ object TextStyle {
     
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    inline def setTextAlign(value: auto | left | right | center | justify): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: "auto" | "left" | "right" | "center" | "justify"): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
-    inline def setTextAlignVertical(value: auto | top | bottom | center): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
+    inline def setTextAlignVertical(value: "auto" | "top" | "bottom" | "center"): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
     
     inline def setTextAlignVerticalUndefined: Self = StObject.set(x, "textAlignVertical", js.undefined)
     
-    inline def setTextDecorationLine(value: none | underline | `line-through` | (`underline line-through`)): Self = StObject.set(x, "textDecorationLine", value.asInstanceOf[js.Any])
+    inline def setTextDecorationLine(value: "none" | "underline" | "line-through" | ("underline line-through")): Self = StObject.set(x, "textDecorationLine", value.asInstanceOf[js.Any])
     
     inline def setTextDecorationLineUndefined: Self = StObject.set(x, "textDecorationLine", js.undefined)
     
@@ -136,7 +110,7 @@ object TextStyle {
     
     inline def setTextShadowRadiusUndefined: Self = StObject.set(x, "textShadowRadius", js.undefined)
     
-    inline def setTextTransform(value: none | capitalize | uppercase | lowercase): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
+    inline def setTextTransform(value: "none" | "capitalize" | "uppercase" | "lowercase"): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
     
     inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
   }

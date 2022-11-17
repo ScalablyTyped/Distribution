@@ -1,20 +1,15 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSNumberKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSNumberKeyword__
   extends StObject
-     with BaseNode
-     with Node
-     with TSBaseType
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   @JSName("type")
-  var type_TSNumberKeyword__ : TSNumberKeyword
+  var type_TSNumberKeyword__ : "TSNumberKeyword"
 }
 object TSNumberKeyword__ {
   
@@ -26,6 +21,6 @@ object TSNumberKeyword__ {
   
   extension [Self <: TSNumberKeyword__](x: Self) {
     
-    inline def setType(value: TSNumberKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSNumberKeyword"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

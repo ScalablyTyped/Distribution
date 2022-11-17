@@ -1,15 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSTypeParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSTypeParameter__
   extends StObject
-     with BaseNode
-     with Node
-     with TypeScript {
+     with BaseNode {
   
   var default: js.UndefOr[TSType | Null] = js.undefined
   
@@ -22,7 +19,7 @@ trait TSTypeParameter__
   var out: js.UndefOr[Boolean | Null] = js.undefined
   
   @JSName("type")
-  var type_TSTypeParameter__ : TSTypeParameter
+  var type_TSTypeParameter__ : "TSTypeParameter"
 }
 object TSTypeParameter__ {
   
@@ -60,6 +57,6 @@ object TSTypeParameter__ {
     
     inline def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
     
-    inline def setType(value: TSTypeParameter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSTypeParameter"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

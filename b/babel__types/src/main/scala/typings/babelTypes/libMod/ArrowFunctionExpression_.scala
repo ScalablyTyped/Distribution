@@ -1,21 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ArrowFunctionExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ArrowFunctionExpression_
   extends StObject
-     with BaseNode
-     with BlockParent
-     with Expression
-     with Function
-     with FunctionParent
-     with Node
-     with Pureish
-     with Scopable
-     with Standardized {
+     with BaseNode {
   
   var async: Boolean
   
@@ -34,7 +25,7 @@ trait ArrowFunctionExpression_
   var typeParameters: js.UndefOr[TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
-  var type_ArrowFunctionExpression_ : ArrowFunctionExpression
+  var type_ArrowFunctionExpression_ : "ArrowFunctionExpression"
 }
 object ArrowFunctionExpression_ {
   
@@ -77,7 +68,7 @@ object ArrowFunctionExpression_ {
     
     inline def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
     
-    inline def setType(value: ArrowFunctionExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ArrowFunctionExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

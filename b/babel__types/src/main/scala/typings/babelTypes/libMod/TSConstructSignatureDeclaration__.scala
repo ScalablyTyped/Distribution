@@ -1,16 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSConstructSignatureDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSConstructSignatureDeclaration__
   extends StObject
-     with BaseNode
-     with Node
-     with TSTypeElement
-     with TypeScript {
+     with BaseNode {
   
   var parameters: js.Array[Identifier_ | RestElement_]
   
@@ -19,7 +15,7 @@ trait TSConstructSignatureDeclaration__
   var typeParameters: js.UndefOr[TSTypeParameterDeclaration__ | Null] = js.undefined
   
   @JSName("type")
-  var type_TSConstructSignatureDeclaration__ : TSConstructSignatureDeclaration
+  var type_TSConstructSignatureDeclaration__ : "TSConstructSignatureDeclaration"
 }
 object TSConstructSignatureDeclaration__ {
   
@@ -35,7 +31,7 @@ object TSConstructSignatureDeclaration__ {
     
     inline def setParametersVarargs(value: (Identifier_ | RestElement_)*): Self = StObject.set(x, "parameters", js.Array(value*))
     
-    inline def setType(value: TSConstructSignatureDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSConstructSignatureDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TSTypeAnnotation__): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

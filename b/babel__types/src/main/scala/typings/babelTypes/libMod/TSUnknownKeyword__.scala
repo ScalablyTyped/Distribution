@@ -1,20 +1,15 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSUnknownKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSUnknownKeyword__
   extends StObject
-     with BaseNode
-     with Node
-     with TSBaseType
-     with TSType
-     with TypeScript {
+     with BaseNode {
   
   @JSName("type")
-  var type_TSUnknownKeyword__ : TSUnknownKeyword
+  var type_TSUnknownKeyword__ : "TSUnknownKeyword"
 }
 object TSUnknownKeyword__ {
   
@@ -26,6 +21,6 @@ object TSUnknownKeyword__ {
   
   extension [Self <: TSUnknownKeyword__](x: Self) {
     
-    inline def setType(value: TSUnknownKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSUnknownKeyword"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,5 @@
 package typings.reactNative.anon
 
-import typings.reactNative.reactNativeStrings.car
-import typings.reactNative.reactNativeStrings.desk
-import typings.reactNative.reactNativeStrings.normal_
-import typings.reactNative.reactNativeStrings.tv
-import typings.reactNative.reactNativeStrings.unknown
-import typings.reactNative.reactNativeStrings.watch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +27,7 @@ trait PlatformConstantsVersionn extends StObject {
   
   var reactNativeVersion: Major
   
-  var uiMode: car | desk | normal_ | tv | watch | unknown
+  var uiMode: "car" | "desk" | "normal" | "tv" | "watch" | "unknown"
 }
 object PlatformConstantsVersionn {
   
@@ -47,7 +41,7 @@ object PlatformConstantsVersionn {
     Version: Double,
     isTesting: Boolean,
     reactNativeVersion: Major,
-    uiMode: car | desk | normal_ | tv | watch | unknown
+    uiMode: "car" | "desk" | "normal" | "tv" | "watch" | "unknown"
   ): PlatformConstantsVersionn = {
     val __obj = js.Dynamic.literal(Brand = Brand.asInstanceOf[js.Any], Fingerprint = Fingerprint.asInstanceOf[js.Any], Manufacturer = Manufacturer.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any], Release = Release.asInstanceOf[js.Any], Serial = Serial.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], isTesting = isTesting.asInstanceOf[js.Any], reactNativeVersion = reactNativeVersion.asInstanceOf[js.Any], uiMode = uiMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformConstantsVersionn]
@@ -75,7 +69,7 @@ object PlatformConstantsVersionn {
     
     inline def setServerHostUndefined: Self = StObject.set(x, "ServerHost", js.undefined)
     
-    inline def setUiMode(value: car | desk | normal_ | tv | watch | unknown): Self = StObject.set(x, "uiMode", value.asInstanceOf[js.Any])
+    inline def setUiMode(value: "car" | "desk" | "normal" | "tv" | "watch" | "unknown"): Self = StObject.set(x, "uiMode", value.asInstanceOf[js.Any])
     
     inline def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }

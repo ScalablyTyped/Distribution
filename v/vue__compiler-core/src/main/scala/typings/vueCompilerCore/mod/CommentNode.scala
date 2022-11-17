@@ -1,19 +1,17 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CommentNode
   extends StObject
-     with Node2
-     with TemplateChildNode {
+     with Node2 {
   
   var content: String
   
   @JSName("type")
-  var type_CommentNode: `3`
+  var type_CommentNode: 3
 }
 object CommentNode {
   
@@ -27,6 +25,6 @@ object CommentNode {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `3`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 3): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

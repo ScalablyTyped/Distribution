@@ -1,19 +1,17 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TemplateNode
   extends StObject
-     with BaseElementNode
-     with ElementNode {
+     with BaseElementNode {
   
   var codegenNode: Unit
   
   @JSName("tagType")
-  var tagType_TemplateNode: `3`
+  var tagType_TemplateNode: 3
 }
 object TemplateNode {
   
@@ -35,6 +33,6 @@ object TemplateNode {
     
     inline def setCodegenNode(value: Unit): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     
-    inline def setTagType(value: `3`): Self = StObject.set(x, "tagType", value.asInstanceOf[js.Any])
+    inline def setTagType(value: 3): Self = StObject.set(x, "tagType", value.asInstanceOf[js.Any])
   }
 }

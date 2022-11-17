@@ -1,11 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliStrings.`static fields`
-import typings.angularCompilerCli.angularCompilerCliStrings.angular
-import typings.angularCompilerCli.angularCompilerCliStrings.decorators
-import typings.angularCompilerCli.angularCompilerCliStrings.error
-import typings.angularCompilerCli.angularCompilerCliStrings.ignore
-import typings.angularCompilerCli.angularCompilerCliStrings.warning
 import typings.angularCompilerCli.anon.CancellationToken
 import typings.angularCompilerCli.anon.FilePath
 import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.ResourceHostContext
@@ -86,7 +80,7 @@ object srcTransformersApiMod {
   
   @JSImport("@angular/compiler-cli/src/transformers/api", "SOURCE")
   @js.native
-  val SOURCE: angular = js.native
+  val SOURCE: "angular" = js.native
   
   @JSImport("@angular/compiler-cli/src/transformers/api", "UNKNOWN_ERROR_CODE")
   @js.native
@@ -162,7 +156,7 @@ object srcTransformersApiMod {
     extends StObject
        with NgCompilerOptions {
     
-    var annotationsAs: js.UndefOr[decorators | (`static fields`)] = js.undefined
+    var annotationsAs: js.UndefOr["decorators" | ("static fields")] = js.undefined
     
     var basePath: js.UndefOr[String] = js.undefined
     
@@ -203,7 +197,7 @@ object srcTransformersApiMod {
     
     var i18nInFormat: js.UndefOr[String] = js.undefined
     
-    var i18nInMissingTranslations: js.UndefOr[error | warning | ignore] = js.undefined
+    var i18nInMissingTranslations: js.UndefOr["error" | "warning" | "ignore"] = js.undefined
     
     var skipMetadataEmit: js.UndefOr[Boolean] = js.undefined
     
@@ -222,7 +216,7 @@ object srcTransformersApiMod {
     
     extension [Self <: CompilerOptions](x: Self) {
       
-      inline def setAnnotationsAs(value: decorators | (`static fields`)): Self = StObject.set(x, "annotationsAs", value.asInstanceOf[js.Any])
+      inline def setAnnotationsAs(value: "decorators" | ("static fields")): Self = StObject.set(x, "annotationsAs", value.asInstanceOf[js.Any])
       
       inline def setAnnotationsAsUndefined: Self = StObject.set(x, "annotationsAs", js.undefined)
       
@@ -266,7 +260,7 @@ object srcTransformersApiMod {
       
       inline def setI18nInFormatUndefined: Self = StObject.set(x, "i18nInFormat", js.undefined)
       
-      inline def setI18nInMissingTranslations(value: error | warning | ignore): Self = StObject.set(x, "i18nInMissingTranslations", value.asInstanceOf[js.Any])
+      inline def setI18nInMissingTranslations(value: "error" | "warning" | "ignore"): Self = StObject.set(x, "i18nInMissingTranslations", value.asInstanceOf[js.Any])
       
       inline def setI18nInMissingTranslationsUndefined: Self = StObject.set(x, "i18nInMissingTranslations", js.undefined)
       

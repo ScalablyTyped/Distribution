@@ -5,7 +5,6 @@ import typings.three.srcMaterialsMaterialMod.MaterialParameters
 import typings.three.srcMathColorMod.Color
 import typings.three.srcTexturesTextureMod.Texture
 import typings.three.srcUtilsMod.ColorRepresentation
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +34,7 @@ object srcMaterialsSpriteMaterialMod {
       */
     var fog: Boolean = js.native
     
-    val isSpriteMaterial: `true` = js.native
+    val isSpriteMaterial: true = js.native
     
     /**
       * @default null

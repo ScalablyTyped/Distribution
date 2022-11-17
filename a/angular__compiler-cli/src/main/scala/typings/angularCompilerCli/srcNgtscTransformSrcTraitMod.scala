@@ -14,13 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcNgtscTransformSrcTraitMod {
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.srcNgtscTransformSrcTraitMod.PendingTrait[D, A, S, R]
-    - typings.angularCompilerCli.srcNgtscTransformSrcTraitMod.SkippedTrait[D, A, S, R]
-    - typings.angularCompilerCli.srcNgtscTransformSrcTraitMod.AnalyzedTrait[D, A, S, R]
-    - typings.angularCompilerCli.srcNgtscTransformSrcTraitMod.ResolvedTrait[D, A, S, R]
-  */
-  trait Trait[D, A, S /* <: SemanticSymbol | Null */, R] extends StObject
   object Trait {
     
     @JSImport("@angular/compiler-cli/src/ngtsc/transform/src/trait", "Trait")
@@ -29,6 +22,7 @@ object srcNgtscTransformSrcTraitMod {
     
     inline def pending[D, A, S /* <: SemanticSymbol | Null */, R](handler: DecoratorHandler[D, A, S, R], detected: DetectResult[D]): PendingTrait[D, A, S, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("pending")(handler.asInstanceOf[js.Any], detected.asInstanceOf[js.Any])).asInstanceOf[PendingTrait[D, A, S, R]]
   }
+  type Trait[D, A, S /* <: SemanticSymbol | Null */, R] = (PendingTrait[D, A, S, R]) | (SkippedTrait[D, A, S, R]) | (AnalyzedTrait[D, A, S, R]) | (ResolvedTrait[D, A, S, R])
   
   @js.native
   sealed trait TraitState extends StObject
@@ -79,8 +73,7 @@ object srcNgtscTransformSrcTraitMod {
   @js.native
   trait AnalyzedTrait[D, A, S /* <: SemanticSymbol | Null */, R]
     extends StObject
-       with TraitBase[D, A, S, R]
-       with Trait[D, A, S, R] {
+       with TraitBase[D, A, S, R] {
     
     /**
       * Analysis results of the given trait (if able to be produced), or `null` if analysis failed
@@ -111,8 +104,7 @@ object srcNgtscTransformSrcTraitMod {
   @js.native
   trait PendingTrait[D, A, S /* <: SemanticSymbol | Null */, R]
     extends StObject
-       with TraitBase[D, A, S, R]
-       with Trait[D, A, S, R] {
+       with TraitBase[D, A, S, R] {
     
     @JSName("state")
     var state_PendingTrait: Pending = js.native
@@ -135,8 +127,7 @@ object srcNgtscTransformSrcTraitMod {
   
   trait ResolvedTrait[D, A, S /* <: SemanticSymbol | Null */, R]
     extends StObject
-       with TraitBase[D, A, S, R]
-       with Trait[D, A, S, R] {
+       with TraitBase[D, A, S, R] {
     
     /**
       * Resolved traits must have produced valid analysis results.
@@ -205,8 +196,7 @@ object srcNgtscTransformSrcTraitMod {
   
   trait SkippedTrait[D, A, S /* <: SemanticSymbol | Null */, R]
     extends StObject
-       with TraitBase[D, A, S, R]
-       with Trait[D, A, S, R] {
+       with TraitBase[D, A, S, R] {
     
     @JSName("state")
     var state_SkippedTrait: Skipped

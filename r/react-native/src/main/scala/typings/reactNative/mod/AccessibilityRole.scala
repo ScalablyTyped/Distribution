@@ -4,98 +4,65 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.reactNative.reactNativeStrings.none
-  - typings.reactNative.reactNativeStrings.button
-  - typings.reactNative.reactNativeStrings.togglebutton
-  - typings.reactNative.reactNativeStrings.link
-  - typings.reactNative.reactNativeStrings.search
-  - typings.reactNative.reactNativeStrings.image
-  - typings.reactNative.reactNativeStrings.keyboardkey
-  - typings.reactNative.reactNativeStrings.text
-  - typings.reactNative.reactNativeStrings.adjustable
-  - typings.reactNative.reactNativeStrings.imagebutton
-  - typings.reactNative.reactNativeStrings.header
-  - typings.reactNative.reactNativeStrings.summary
-  - typings.reactNative.reactNativeStrings.alert
-  - typings.reactNative.reactNativeStrings.checkbox
-  - typings.reactNative.reactNativeStrings.combobox
-  - typings.reactNative.reactNativeStrings.menu
-  - typings.reactNative.reactNativeStrings.menubar
-  - typings.reactNative.reactNativeStrings.menuitem
-  - typings.reactNative.reactNativeStrings.progressbar
-  - typings.reactNative.reactNativeStrings.radio
-  - typings.reactNative.reactNativeStrings.radiogroup
-  - typings.reactNative.reactNativeStrings.scrollbar
-  - typings.reactNative.reactNativeStrings.spinbutton
-  - typings.reactNative.reactNativeStrings.switch
-  - typings.reactNative.reactNativeStrings.tab
-  - typings.reactNative.reactNativeStrings.tabbar
-  - typings.reactNative.reactNativeStrings.tablist
-  - typings.reactNative.reactNativeStrings.timer
-  - typings.reactNative.reactNativeStrings.list
-  - typings.reactNative.reactNativeStrings.toolbar
-*/
-trait AccessibilityRole extends StObject
 object AccessibilityRole {
   
-  inline def adjustable: typings.reactNative.reactNativeStrings.adjustable = "adjustable".asInstanceOf[typings.reactNative.reactNativeStrings.adjustable]
+  inline def adjustable: "adjustable" = "adjustable".asInstanceOf["adjustable"]
   
-  inline def alert: typings.reactNative.reactNativeStrings.alert = "alert".asInstanceOf[typings.reactNative.reactNativeStrings.alert]
+  inline def alert: "alert" = "alert".asInstanceOf["alert"]
   
-  inline def button: typings.reactNative.reactNativeStrings.button = "button".asInstanceOf[typings.reactNative.reactNativeStrings.button]
+  inline def button: "button" = "button".asInstanceOf["button"]
   
-  inline def checkbox: typings.reactNative.reactNativeStrings.checkbox = "checkbox".asInstanceOf[typings.reactNative.reactNativeStrings.checkbox]
+  inline def checkbox: "checkbox" = "checkbox".asInstanceOf["checkbox"]
   
-  inline def combobox: typings.reactNative.reactNativeStrings.combobox = "combobox".asInstanceOf[typings.reactNative.reactNativeStrings.combobox]
+  inline def combobox: "combobox" = "combobox".asInstanceOf["combobox"]
   
-  inline def header: typings.reactNative.reactNativeStrings.header = "header".asInstanceOf[typings.reactNative.reactNativeStrings.header]
+  inline def header: "header" = "header".asInstanceOf["header"]
   
-  inline def image: typings.reactNative.reactNativeStrings.image = "image".asInstanceOf[typings.reactNative.reactNativeStrings.image]
+  inline def image: "image" = "image".asInstanceOf["image"]
   
-  inline def imagebutton: typings.reactNative.reactNativeStrings.imagebutton = "imagebutton".asInstanceOf[typings.reactNative.reactNativeStrings.imagebutton]
+  inline def imagebutton: "imagebutton" = "imagebutton".asInstanceOf["imagebutton"]
   
-  inline def keyboardkey: typings.reactNative.reactNativeStrings.keyboardkey = "keyboardkey".asInstanceOf[typings.reactNative.reactNativeStrings.keyboardkey]
+  inline def keyboardkey: "keyboardkey" = "keyboardkey".asInstanceOf["keyboardkey"]
   
-  inline def link: typings.reactNative.reactNativeStrings.link = "link".asInstanceOf[typings.reactNative.reactNativeStrings.link]
+  inline def link: "link" = "link".asInstanceOf["link"]
   
-  inline def list: typings.reactNative.reactNativeStrings.list = "list".asInstanceOf[typings.reactNative.reactNativeStrings.list]
+  inline def list: "list" = "list".asInstanceOf["list"]
   
-  inline def menu: typings.reactNative.reactNativeStrings.menu = "menu".asInstanceOf[typings.reactNative.reactNativeStrings.menu]
+  inline def menu: "menu" = "menu".asInstanceOf["menu"]
   
-  inline def menubar: typings.reactNative.reactNativeStrings.menubar = "menubar".asInstanceOf[typings.reactNative.reactNativeStrings.menubar]
+  inline def menubar: "menubar" = "menubar".asInstanceOf["menubar"]
   
-  inline def menuitem: typings.reactNative.reactNativeStrings.menuitem = "menuitem".asInstanceOf[typings.reactNative.reactNativeStrings.menuitem]
+  inline def menuitem: "menuitem" = "menuitem".asInstanceOf["menuitem"]
   
-  inline def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
+  inline def none: "none" = "none".asInstanceOf["none"]
   
-  inline def progressbar: typings.reactNative.reactNativeStrings.progressbar = "progressbar".asInstanceOf[typings.reactNative.reactNativeStrings.progressbar]
+  inline def progressbar: "progressbar" = "progressbar".asInstanceOf["progressbar"]
   
-  inline def radio: typings.reactNative.reactNativeStrings.radio = "radio".asInstanceOf[typings.reactNative.reactNativeStrings.radio]
+  inline def radio: "radio" = "radio".asInstanceOf["radio"]
   
-  inline def radiogroup: typings.reactNative.reactNativeStrings.radiogroup = "radiogroup".asInstanceOf[typings.reactNative.reactNativeStrings.radiogroup]
+  inline def radiogroup: "radiogroup" = "radiogroup".asInstanceOf["radiogroup"]
   
-  inline def scrollbar: typings.reactNative.reactNativeStrings.scrollbar = "scrollbar".asInstanceOf[typings.reactNative.reactNativeStrings.scrollbar]
+  inline def scrollbar: "scrollbar" = "scrollbar".asInstanceOf["scrollbar"]
   
-  inline def search: typings.reactNative.reactNativeStrings.search = "search".asInstanceOf[typings.reactNative.reactNativeStrings.search]
+  inline def search: "search" = "search".asInstanceOf["search"]
   
-  inline def spinbutton: typings.reactNative.reactNativeStrings.spinbutton = "spinbutton".asInstanceOf[typings.reactNative.reactNativeStrings.spinbutton]
+  inline def spinbutton: "spinbutton" = "spinbutton".asInstanceOf["spinbutton"]
   
-  inline def summary: typings.reactNative.reactNativeStrings.summary = "summary".asInstanceOf[typings.reactNative.reactNativeStrings.summary]
+  inline def summary: "summary" = "summary".asInstanceOf["summary"]
   
-  inline def switch: typings.reactNative.reactNativeStrings.switch = "switch".asInstanceOf[typings.reactNative.reactNativeStrings.switch]
+  inline def switch: "switch" = "switch".asInstanceOf["switch"]
   
-  inline def tab: typings.reactNative.reactNativeStrings.tab = "tab".asInstanceOf[typings.reactNative.reactNativeStrings.tab]
+  inline def tab: "tab" = "tab".asInstanceOf["tab"]
   
-  inline def tabbar: typings.reactNative.reactNativeStrings.tabbar = "tabbar".asInstanceOf[typings.reactNative.reactNativeStrings.tabbar]
+  inline def tabbar: "tabbar" = "tabbar".asInstanceOf["tabbar"]
   
-  inline def tablist: typings.reactNative.reactNativeStrings.tablist = "tablist".asInstanceOf[typings.reactNative.reactNativeStrings.tablist]
+  inline def tablist: "tablist" = "tablist".asInstanceOf["tablist"]
   
-  inline def text: typings.reactNative.reactNativeStrings.text = "text".asInstanceOf[typings.reactNative.reactNativeStrings.text]
+  inline def text: "text" = "text".asInstanceOf["text"]
   
-  inline def timer: typings.reactNative.reactNativeStrings.timer = "timer".asInstanceOf[typings.reactNative.reactNativeStrings.timer]
+  inline def timer: "timer" = "timer".asInstanceOf["timer"]
   
-  inline def togglebutton: typings.reactNative.reactNativeStrings.togglebutton = "togglebutton".asInstanceOf[typings.reactNative.reactNativeStrings.togglebutton]
+  inline def togglebutton: "togglebutton" = "togglebutton".asInstanceOf["togglebutton"]
   
-  inline def toolbar: typings.reactNative.reactNativeStrings.toolbar = "toolbar".asInstanceOf[typings.reactNative.reactNativeStrings.toolbar]
+  inline def toolbar: "toolbar" = "toolbar".asInstanceOf["toolbar"]
 }

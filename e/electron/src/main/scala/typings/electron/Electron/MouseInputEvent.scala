@@ -1,15 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.contextMenu
-import typings.electron.electronStrings.left
-import typings.electron.electronStrings.middle
-import typings.electron.electronStrings.mouseDown
-import typings.electron.electronStrings.mouseEnter
-import typings.electron.electronStrings.mouseLeave
-import typings.electron.electronStrings.mouseMove
-import typings.electron.electronStrings.mouseUp
-import typings.electron.electronStrings.mouseWheel
-import typings.electron.electronStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +12,7 @@ trait MouseInputEvent
   /**
     * The button pressed, can be `left`, `middle`, `right`.
     */
-  var button: js.UndefOr[left | middle | right] = js.undefined
+  var button: js.UndefOr["left" | "middle" | "right"] = js.undefined
   
   var clickCount: js.UndefOr[Double] = js.undefined
   
@@ -38,7 +28,7 @@ trait MouseInputEvent
     * The type of the event, can be `mouseDown`, `mouseUp`, `mouseEnter`,
     * `mouseLeave`, `contextMenu`, `mouseWheel` or `mouseMove`.
     */
-  var `type`: mouseDown | mouseUp | mouseEnter | mouseLeave | contextMenu | mouseWheel | mouseMove
+  var `type`: "mouseDown" | "mouseUp" | "mouseEnter" | "mouseLeave" | "contextMenu" | "mouseWheel" | "mouseMove"
   
   var x: Double
   
@@ -47,7 +37,7 @@ trait MouseInputEvent
 object MouseInputEvent {
   
   inline def apply(
-    `type`: mouseDown | mouseUp | mouseEnter | mouseLeave | contextMenu | mouseWheel | mouseMove,
+    `type`: "mouseDown" | "mouseUp" | "mouseEnter" | "mouseLeave" | "contextMenu" | "mouseWheel" | "mouseMove",
     x: Double,
     y: Double
   ): MouseInputEvent = {
@@ -58,7 +48,7 @@ object MouseInputEvent {
   
   extension [Self <: MouseInputEvent](x: Self) {
     
-    inline def setButton(value: left | middle | right): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: "left" | "middle" | "right"): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
@@ -82,7 +72,9 @@ object MouseInputEvent {
     
     inline def setMovementYUndefined: Self = StObject.set(x, "movementY", js.undefined)
     
-    inline def setType(value: mouseDown | mouseUp | mouseEnter | mouseLeave | contextMenu | mouseWheel | mouseMove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(
+      value: "mouseDown" | "mouseUp" | "mouseEnter" | "mouseLeave" | "contextMenu" | "mouseWheel" | "mouseMove"
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

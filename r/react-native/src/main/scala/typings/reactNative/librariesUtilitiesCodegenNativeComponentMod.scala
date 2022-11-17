@@ -1,8 +1,6 @@
 package typings.reactNative
 
 import typings.reactNative.mod.HostComponent
-import typings.reactNative.reactNativeStrings.android
-import typings.reactNative.reactNativeStrings.iOS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +18,7 @@ object librariesUtilitiesCodegenNativeComponentMod {
   
   trait Options extends StObject {
     
-    val excludedPlatforms: js.UndefOr[js.Array[iOS | android]] = js.undefined
+    val excludedPlatforms: js.UndefOr[js.Array["iOS" | "android"]] = js.undefined
     
     val interfaceOnly: js.UndefOr[Boolean] = js.undefined
     
@@ -37,11 +35,11 @@ object librariesUtilitiesCodegenNativeComponentMod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setExcludedPlatforms(value: js.Array[iOS | android]): Self = StObject.set(x, "excludedPlatforms", value.asInstanceOf[js.Any])
+      inline def setExcludedPlatforms(value: js.Array["iOS" | "android"]): Self = StObject.set(x, "excludedPlatforms", value.asInstanceOf[js.Any])
       
       inline def setExcludedPlatformsUndefined: Self = StObject.set(x, "excludedPlatforms", js.undefined)
       
-      inline def setExcludedPlatformsVarargs(value: (iOS | android)*): Self = StObject.set(x, "excludedPlatforms", js.Array(value*))
+      inline def setExcludedPlatformsVarargs(value: ("iOS" | "android")*): Self = StObject.set(x, "excludedPlatforms", js.Array(value*))
       
       inline def setInterfaceOnly(value: Boolean): Self = StObject.set(x, "interfaceOnly", value.asInstanceOf[js.Any])
       

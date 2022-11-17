@@ -1,18 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.OpaqueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OpaqueType_
   extends StObject
-     with BaseNode
-     with Declaration
-     with Flow
-     with FlowDeclaration
-     with Node
-     with Statement {
+     with BaseNode {
   
   var id: Identifier_
   
@@ -23,7 +17,7 @@ trait OpaqueType_
   var typeParameters: js.UndefOr[TypeParameterDeclaration_ | Null] = js.undefined
   
   @JSName("type")
-  var type_OpaqueType_ : OpaqueType
+  var type_OpaqueType_ : "OpaqueType"
 }
 object OpaqueType_ {
   
@@ -45,7 +39,7 @@ object OpaqueType_ {
     
     inline def setSupertypeUndefined: Self = StObject.set(x, "supertype", js.undefined)
     
-    inline def setType(value: OpaqueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "OpaqueType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     

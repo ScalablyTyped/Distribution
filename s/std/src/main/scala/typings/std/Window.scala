@@ -1,10 +1,6 @@
 package typings.std
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.std.stdStrings.DOMContentLoaded
-import typings.std.stdStrings.devicemotion
-import typings.std.stdStrings.deviceorientation
-import typings.std.stdStrings.orientationchange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +19,81 @@ trait Window
      with /* standard dom */
 /* index */ NumberDictionary[Window] {
   
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_devicemotion")
+  def addEventListener(
+    `type`: "devicemotion",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_orientationchange")
+  def addEventListener(`type`: "orientationchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  /* standard dom */
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_DOMContentLoaded")
+  def addEventListener(`type`: "DOMContentLoaded", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_deviceorientation")
+  def addEventListener(
+    `type`: "deviceorientation",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_deviceorientation")
+  def addEventListener(
+    `type`: "deviceorientation",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_orientationchange")
+  def addEventListener(
+    `type`: "orientationchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_DOMContentLoaded")
+  def addEventListener(
+    `type`: "DOMContentLoaded",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_devicemotion")
+  def addEventListener(
+    `type`: "devicemotion",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_orientationchange")
+  def addEventListener(
+    `type`: "orientationchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_devicemotion")
+  def addEventListener(
+    `type`: "devicemotion",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_DOMContentLoaded")
+  def addEventListener(
+    `type`: "DOMContentLoaded",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_deviceorientation")
+  def addEventListener(
+    `type`: "deviceorientation",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -31,69 +102,6 @@ trait Window
   override def addEventListener(
     `type`: java.lang.String,
     callback: EventListenerOrEventListenerObject,
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  /* standard dom */
-  @JSName("addEventListener")
-  def addEventListener_DOMContentLoaded(`type`: DOMContentLoaded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_DOMContentLoaded(
-    `type`: DOMContentLoaded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_DOMContentLoaded(
-    `type`: DOMContentLoaded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_devicemotion(
-    `type`: devicemotion,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_devicemotion(
-    `type`: devicemotion,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_devicemotion(
-    `type`: devicemotion,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_deviceorientation(
-    `type`: deviceorientation,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_deviceorientation(
-    `type`: deviceorientation,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_deviceorientation(
-    `type`: deviceorientation,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_orientationchange(`type`: orientationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_orientationchange(
-    `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_orientationchange(
-    `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -292,6 +300,81 @@ trait Window
   /* standard dom */
   def releaseEvents(): Unit = js.native
   
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_devicemotion")
+  def removeEventListener(
+    `type`: "devicemotion",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_deviceorientation")
+  def removeEventListener(
+    `type`: "deviceorientation",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any]
+  ): Unit = js.native
+  /* standard dom */
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_DOMContentLoaded")
+  def removeEventListener(`type`: "DOMContentLoaded", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_orientationchange")
+  def removeEventListener(`type`: "orientationchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_orientationchange")
+  def removeEventListener(
+    `type`: "orientationchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_DOMContentLoaded")
+  def removeEventListener(
+    `type`: "DOMContentLoaded",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_devicemotion")
+  def removeEventListener(
+    `type`: "devicemotion",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_deviceorientation")
+  def removeEventListener(
+    `type`: "deviceorientation",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_DOMContentLoaded")
+  def removeEventListener(
+    `type`: "DOMContentLoaded",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_orientationchange")
+  def removeEventListener(
+    `type`: "orientationchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_deviceorientation")
+  def removeEventListener(
+    `type`: "deviceorientation",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_devicemotion")
+  def removeEventListener(
+    `type`: "devicemotion",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -300,69 +383,6 @@ trait Window
   override def removeEventListener(
     `type`: java.lang.String,
     callback: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
-  ): Unit = js.native
-  /* standard dom */
-  @JSName("removeEventListener")
-  def removeEventListener_DOMContentLoaded(`type`: DOMContentLoaded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_DOMContentLoaded(
-    `type`: DOMContentLoaded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_DOMContentLoaded(
-    `type`: DOMContentLoaded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_devicemotion(
-    `type`: devicemotion,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_devicemotion(
-    `type`: devicemotion,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_devicemotion(
-    `type`: devicemotion,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_deviceorientation(
-    `type`: deviceorientation,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_deviceorientation(
-    `type`: deviceorientation,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_deviceorientation(
-    `type`: deviceorientation,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_orientationchange(`type`: orientationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_orientationchange(
-    `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_orientationchange(
-    `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   

@@ -6,8 +6,6 @@ import typings.rcTable.libHeaderHeaderMod.HeaderProps
 import typings.rcTable.libInterfaceMod.ColumnType
 import typings.rcTable.libInterfaceMod.ColumnsType
 import typings.rcTable.libInterfaceMod.StickyOffsets
-import typings.rcTable.rcTableStrings.ltr
-import typings.rcTable.rcTableStrings.rtl
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
@@ -36,7 +34,7 @@ object libFixedHolderMod extends Shortcut {
     
     var columCount: Double
     
-    var direction: ltr | rtl
+    var direction: "ltr" | "rtl"
     
     var fixHeader: Boolean
     
@@ -60,7 +58,7 @@ object libFixedHolderMod extends Shortcut {
       colWidths: js.Array[Double],
       columCount: Double,
       columns: ColumnsType[RecordType],
-      direction: ltr | rtl,
+      direction: "ltr" | "rtl",
       fixHeader: Boolean,
       flattenColumns: js.Array[ColumnType[RecordType]],
       maxContentScroll: Boolean,
@@ -85,7 +83,7 @@ object libFixedHolderMod extends Shortcut {
       
       inline def setColumCount(value: Double): Self = StObject.set(x, "columCount", value.asInstanceOf[js.Any])
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "ltr" | "rtl"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setFixHeader(value: Boolean): Self = StObject.set(x, "fixHeader", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,5 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.RegexLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,16 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait RegexLiteral1
   extends StObject
-     with BaseNode
-     with DeprecatedAliases
-     with Node {
+     with BaseNode {
   
   var flags: String
   
   var pattern: String
   
   @JSName("type")
-  var type_RegexLiteral1: RegexLiteral
+  var type_RegexLiteral1: "RegexLiteral"
 }
 object RegexLiteral1 {
   
@@ -35,6 +32,6 @@ object RegexLiteral1 {
     
     inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    inline def setType(value: RegexLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "RegexLiteral"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

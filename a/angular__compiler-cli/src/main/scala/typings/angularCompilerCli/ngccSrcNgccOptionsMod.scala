@@ -1,7 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliBooleans.`false`
-import typings.angularCompilerCli.angularCompilerCliBooleans.`true`
 import typings.angularCompilerCli.ngccSrcPathMappingsMod.PathMappings
 import typings.angularCompilerCli.ngccSrcWritingFileWriterMod.FileWriter
 import typings.angularCompilerCli.ngccSrcWritingPackageJsonUpdaterMod.PackageJsonUpdater
@@ -28,11 +26,9 @@ object ngccSrcNgccOptionsMod {
   inline def getSharedSetup(options: NgccOptions): SharedSetup & RequiredNgccOptions & OptionalNgccOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getSharedSetup")(options.asInstanceOf[js.Any]).asInstanceOf[SharedSetup & RequiredNgccOptions & OptionalNgccOptions]
   
   /* Inlined std.Omit<@angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.SyncNgccOptions, 'async'> & {  async :true} */
-  trait AsyncNgccOptions
-    extends StObject
-       with NgccOptions {
+  trait AsyncNgccOptions extends StObject {
     
-    var async: `true`
+    var async: true
     
     var basePath: String
     
@@ -71,7 +67,7 @@ object ngccSrcNgccOptionsMod {
     
     extension [Self <: AsyncNgccOptions](x: Self) {
       
-      inline def setAsync(value: `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: true): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
@@ -133,41 +129,19 @@ object ngccSrcNgccOptionsMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.ngccSrcNgccOptionsMod.AsyncNgccOptions
-    - typings.angularCompilerCli.ngccSrcNgccOptionsMod.SyncNgccOptions
-  */
-  trait NgccOptions extends StObject
-  object NgccOptions {
-    
-    inline def AsyncNgccOptions(basePath: String): typings.angularCompilerCli.ngccSrcNgccOptionsMod.AsyncNgccOptions = {
-      val __obj = js.Dynamic.literal(async = true, basePath = basePath.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularCompilerCli.ngccSrcNgccOptionsMod.AsyncNgccOptions]
-    }
-    
-    inline def SyncNgccOptions(basePath: String): typings.angularCompilerCli.ngccSrcNgccOptionsMod.SyncNgccOptions = {
-      val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularCompilerCli.ngccSrcNgccOptionsMod.SyncNgccOptions]
-    }
-  }
+  type NgccOptions = AsyncNgccOptions | SyncNgccOptions
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliStrings.targetEntryPointPath
-    - typings.angularCompilerCli.angularCompilerCliStrings.tsConfigPath
-    - typings.angularCompilerCli.angularCompilerCliStrings.pathMappings
-    - typings.angularCompilerCli.angularCompilerCliStrings.findEntryPointsFromTsConfigProgram
-  */
-  trait OptionalNgccOptionKeys extends StObject
   object OptionalNgccOptionKeys {
     
-    inline def findEntryPointsFromTsConfigProgram: typings.angularCompilerCli.angularCompilerCliStrings.findEntryPointsFromTsConfigProgram = "findEntryPointsFromTsConfigProgram".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.findEntryPointsFromTsConfigProgram]
+    inline def findEntryPointsFromTsConfigProgram: "findEntryPointsFromTsConfigProgram" = "findEntryPointsFromTsConfigProgram".asInstanceOf["findEntryPointsFromTsConfigProgram"]
     
-    inline def pathMappings: typings.angularCompilerCli.angularCompilerCliStrings.pathMappings = "pathMappings".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.pathMappings]
+    inline def pathMappings: "pathMappings" = "pathMappings".asInstanceOf["pathMappings"]
     
-    inline def targetEntryPointPath: typings.angularCompilerCli.angularCompilerCliStrings.targetEntryPointPath = "targetEntryPointPath".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.targetEntryPointPath]
+    inline def targetEntryPointPath: "targetEntryPointPath" = "targetEntryPointPath".asInstanceOf["targetEntryPointPath"]
     
-    inline def tsConfigPath: typings.angularCompilerCli.angularCompilerCliStrings.tsConfigPath = "tsConfigPath".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.tsConfigPath]
+    inline def tsConfigPath: "tsConfigPath" = "tsConfigPath".asInstanceOf["tsConfigPath"]
   }
+  type OptionalNgccOptionKeys = "targetEntryPointPath" | "tsConfigPath" | "pathMappings" | "findEntryPointsFromTsConfigProgram"
   
   /* Inlined std.Pick<@angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.NgccOptions, @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.OptionalNgccOptionKeys> */
   trait OptionalNgccOptions extends StObject {
@@ -249,9 +223,7 @@ object ngccSrcNgccOptionsMod {
     }
   }
   
-  trait SyncNgccOptions
-    extends StObject
-       with NgccOptions {
+  trait SyncNgccOptions extends StObject {
     
     /**
       * Whether the compilation should run and return asynchronously. Allowing asynchronous execution
@@ -259,7 +231,7 @@ object ngccSrcNgccOptionsMod {
       *
       * Default: `false` (i.e. run synchronously)
       */
-    var async: js.UndefOr[`false`] = js.undefined
+    var async: js.UndefOr[false] = js.undefined
     
     /** The absolute path to the `node_modules` folder that contains the packages to process. */
     var basePath: String
@@ -386,7 +358,7 @@ object ngccSrcNgccOptionsMod {
     
     extension [Self <: SyncNgccOptions](x: Self) {
       
-      inline def setAsync(value: `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: false): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
       inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       

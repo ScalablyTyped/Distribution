@@ -30,19 +30,6 @@ import typings.jquery.JQuery.ValHooks
 import typings.jquery.JQuery.htmlString
 import typings.jquery.JQuery.jqXHR
 import typings.jquery.JQuery.jqXHR.DoneCallback
-import typings.jquery.jqueryBooleans.`true`
-import typings.jquery.jqueryStrings.`null`
-import typings.jquery.jqueryStrings.`object`
-import typings.jquery.jqueryStrings.array
-import typings.jquery.jqueryStrings.boolean
-import typings.jquery.jqueryStrings.date
-import typings.jquery.jqueryStrings.error
-import typings.jquery.jqueryStrings.function
-import typings.jquery.jqueryStrings.number
-import typings.jquery.jqueryStrings.regexp
-import typings.jquery.jqueryStrings.string
-import typings.jquery.jqueryStrings.symbol
-import typings.jquery.jqueryStrings.undefined
 import typings.std.ArrayLike
 import typings.std.Document
 import typings.std.Element
@@ -864,6 +851,52 @@ trait JQueryStatic extends StObject {
   
   /**
     * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @param object1 An object containing additional properties to merge in.
+    * @param objectN Additional objects containing properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    * @example ​ ````Merge two objects recursively, modifying the first.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery.extend demo</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <div id="log"></div>
+  ​
+  <script>
+  var object1 = {
+    apple: 0,
+    banana: { weight: 52, price: 100 },
+    cherry: 97
+  };
+  var object2 = {
+    banana: { price: 200 },
+    durian: 100
+  };
+  ​
+  // Merge object2 into object1, recursively
+  $.extend( true, object1, object2 );
+  ​
+  // Assuming JSON.stringify - not available in IE<8
+  $( "#log" ).append( JSON.stringify( object1 ) );
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+    */
+  @JSName("extend")
+  @scala.annotation.targetName("extend_true")
+  def extend(deep: true, target: Any, object1: Any, objectN: Any*): Any = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
     * @param target An object that will receive the new properties if additional objects are passed in or that will
     *               extend the jQuery namespace if it is the sole argument.
     * @param object1 An object containing additional properties to merge in.
@@ -937,12 +970,67 @@ trait JQueryStatic extends StObject {
   def extend(target: Any, object1: Any, objectN: Any*): Any = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    */
+  @JSName("extend")
+  @scala.annotation.targetName("extend_true")
+  def extend[T](deep: true, target: T): this.type & T = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
     * @param target An object that will receive the new properties if additional objects are passed in or that will
     *               extend the jQuery namespace if it is the sole argument.
     * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
     * @since 1.0
     */
   def extend[T](target: T): this.type & T = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @param object1 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    * @example ​ ````Merge two objects recursively, modifying the first.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery.extend demo</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <div id="log"></div>
+  ​
+  <script>
+  var object1 = {
+    apple: 0,
+    banana: { weight: 52, price: 100 },
+    cherry: 97
+  };
+  var object2 = {
+    banana: { price: 200 },
+    durian: 100
+  };
+  ​
+  // Merge object2 into object1, recursively
+  $.extend( true, object1, object2 );
+  ​
+  // Assuming JSON.stringify - not available in IE<8
+  $( "#log" ).append( JSON.stringify( object1 ) );
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+    */
+  @JSName("extend")
+  @scala.annotation.targetName("extend_true")
+  def extend[T, U](deep: true, target: T, object1: U): T & U = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param target An object that will receive the new properties if additional objects are passed in or that will
@@ -1017,6 +1105,52 @@ trait JQueryStatic extends StObject {
   def extend[T, U](target: T, object1: U): T & U = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    * @example ​ ````Merge two objects recursively, modifying the first.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery.extend demo</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <div id="log"></div>
+  ​
+  <script>
+  var object1 = {
+    apple: 0,
+    banana: { weight: 52, price: 100 },
+    cherry: 97
+  };
+  var object2 = {
+    banana: { price: 200 },
+    durian: 100
+  };
+  ​
+  // Merge object2 into object1, recursively
+  $.extend( true, object1, object2 );
+  ​
+  // Assuming JSON.stringify - not available in IE<8
+  $( "#log" ).append( JSON.stringify( object1 ) );
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+    */
+  @JSName("extend")
+  @scala.annotation.targetName("extend_true")
+  def extend[T, U, V](deep: true, target: T, object1: U, object2: V): T & U & V = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
     * @param target An object that will receive the new properties if additional objects are passed in or that will
     *               extend the jQuery namespace if it is the sole argument.
     * @param object1 An object containing additional properties to merge in.
@@ -1088,6 +1222,53 @@ trait JQueryStatic extends StObject {
   ```
     */
   def extend[T, U, V](target: T, object1: U, object2: V): T & U & V = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @param object3 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    * @example ​ ````Merge two objects recursively, modifying the first.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery.extend demo</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <div id="log"></div>
+  ​
+  <script>
+  var object1 = {
+    apple: 0,
+    banana: { weight: 52, price: 100 },
+    cherry: 97
+  };
+  var object2 = {
+    banana: { price: 200 },
+    durian: 100
+  };
+  ​
+  // Merge object2 into object1, recursively
+  $.extend( true, object1, object2 );
+  ​
+  // Assuming JSON.stringify - not available in IE<8
+  $( "#log" ).append( JSON.stringify( object1 ) );
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+    */
+  @JSName("extend")
+  @scala.annotation.targetName("extend_true")
+  def extend[T, U, V, W](deep: true, target: T, object1: U, object2: V, object3: W): T & U & V & W = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param target An object that will receive the new properties if additional objects are passed in or that will
@@ -1164,6 +1345,54 @@ trait JQueryStatic extends StObject {
   def extend[T, U, V, W](target: T, object1: U, object2: V, object3: W): T & U & V & W = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @param object3 An object containing additional properties to merge in.
+    * @param object4 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    * @example ​ ````Merge two objects recursively, modifying the first.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery.extend demo</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <div id="log"></div>
+  ​
+  <script>
+  var object1 = {
+    apple: 0,
+    banana: { weight: 52, price: 100 },
+    cherry: 97
+  };
+  var object2 = {
+    banana: { price: 200 },
+    durian: 100
+  };
+  ​
+  // Merge object2 into object1, recursively
+  $.extend( true, object1, object2 );
+  ​
+  // Assuming JSON.stringify - not available in IE<8
+  $( "#log" ).append( JSON.stringify( object1 ) );
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+    */
+  @JSName("extend")
+  @scala.annotation.targetName("extend_true")
+  def extend[T, U, V, W, X](deep: true, target: T, object1: U, object2: V, object3: W, object4: X): T & U & V & W & X = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
     * @param target An object that will receive the new properties if additional objects are passed in or that will
     *               extend the jQuery namespace if it is the sole argument.
     * @param object1 An object containing additional properties to merge in.
@@ -1237,6 +1466,55 @@ trait JQueryStatic extends StObject {
   ```
     */
   def extend[T, U, V, W, X](target: T, object1: U, object2: V, object3: W, object4: X): T & U & V & W & X = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @param object3 An object containing additional properties to merge in.
+    * @param object4 An object containing additional properties to merge in.
+    * @param object5 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    * @example ​ ````Merge two objects recursively, modifying the first.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery.extend demo</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <div id="log"></div>
+  ​
+  <script>
+  var object1 = {
+    apple: 0,
+    banana: { weight: 52, price: 100 },
+    cherry: 97
+  };
+  var object2 = {
+    banana: { price: 200 },
+    durian: 100
+  };
+  ​
+  // Merge object2 into object1, recursively
+  $.extend( true, object1, object2 );
+  ​
+  // Assuming JSON.stringify - not available in IE<8
+  $( "#log" ).append( JSON.stringify( object1 ) );
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+    */
+  @JSName("extend")
+  @scala.annotation.targetName("extend_true")
+  def extend[T, U, V, W, X, Y](deep: true, target: T, object1: U, object2: V, object3: W, object4: X, object5: Y): T & U & V & W & X & Y = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param target An object that will receive the new properties if additional objects are passed in or that will
@@ -1315,6 +1593,56 @@ trait JQueryStatic extends StObject {
   def extend[T, U, V, W, X, Y](target: T, object1: U, object2: V, object3: W, object4: X, object5: Y): T & U & V & W & X & Y = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @param object3 An object containing additional properties to merge in.
+    * @param object4 An object containing additional properties to merge in.
+    * @param object5 An object containing additional properties to merge in.
+    * @param object6 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    * @example ​ ````Merge two objects recursively, modifying the first.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery.extend demo</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <div id="log"></div>
+  ​
+  <script>
+  var object1 = {
+    apple: 0,
+    banana: { weight: 52, price: 100 },
+    cherry: 97
+  };
+  var object2 = {
+    banana: { price: 200 },
+    durian: 100
+  };
+  ​
+  // Merge object2 into object1, recursively
+  $.extend( true, object1, object2 );
+  ​
+  // Assuming JSON.stringify - not available in IE<8
+  $( "#log" ).append( JSON.stringify( object1 ) );
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+    */
+  @JSName("extend")
+  @scala.annotation.targetName("extend_true")
+  def extend[T, U, V, W, X, Y, Z](deep: true, target: T, object1: U, object2: V, object3: W, object4: X, object5: Y, object6: Z): T & U & V & W & X & Y & Z = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
     * @param target An object that will receive the new properties if additional objects are passed in or that will
     *               extend the jQuery namespace if it is the sole argument.
     * @param object1 An object containing additional properties to merge in.
@@ -1390,339 +1718,6 @@ trait JQueryStatic extends StObject {
   ```
     */
   def extend[T, U, V, W, X, Y, Z](target: T, object1: U, object2: V, object3: W, object4: X, object5: Y, object6: Z): T & U & V & W & X & Y & Z = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-    * @param target The object to extend. It will receive the new properties.
-    * @param object1 An object containing additional properties to merge in.
-    * @param objectN Additional objects containing properties to merge in.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.1.4
-    * @example ​ ````Merge two objects recursively, modifying the first.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.extend demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="log"></div>
-  ​
-  <script>
-  var object1 = {
-    apple: 0,
-    banana: { weight: 52, price: 100 },
-    cherry: 97
-  };
-  var object2 = {
-    banana: { price: 200 },
-    durian: 100
-  };
-  ​
-  // Merge object2 into object1, recursively
-  $.extend( true, object1, object2 );
-  ​
-  // Assuming JSON.stringify - not available in IE<8
-  $( "#log" ).append( JSON.stringify( object1 ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-    */
-  @JSName("extend")
-  def extend_true(deep: `true`, target: Any, object1: Any, objectN: Any*): Any = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-    * @param target The object to extend. It will receive the new properties.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.1.4
-    */
-  @JSName("extend")
-  def extend_true[T](deep: `true`, target: T): this.type & T = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-    * @param target The object to extend. It will receive the new properties.
-    * @param object1 An object containing additional properties to merge in.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.1.4
-    * @example ​ ````Merge two objects recursively, modifying the first.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.extend demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="log"></div>
-  ​
-  <script>
-  var object1 = {
-    apple: 0,
-    banana: { weight: 52, price: 100 },
-    cherry: 97
-  };
-  var object2 = {
-    banana: { price: 200 },
-    durian: 100
-  };
-  ​
-  // Merge object2 into object1, recursively
-  $.extend( true, object1, object2 );
-  ​
-  // Assuming JSON.stringify - not available in IE<8
-  $( "#log" ).append( JSON.stringify( object1 ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-    */
-  @JSName("extend")
-  def extend_true[T, U](deep: `true`, target: T, object1: U): T & U = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-    * @param target The object to extend. It will receive the new properties.
-    * @param object1 An object containing additional properties to merge in.
-    * @param object2 An object containing additional properties to merge in.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.1.4
-    * @example ​ ````Merge two objects recursively, modifying the first.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.extend demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="log"></div>
-  ​
-  <script>
-  var object1 = {
-    apple: 0,
-    banana: { weight: 52, price: 100 },
-    cherry: 97
-  };
-  var object2 = {
-    banana: { price: 200 },
-    durian: 100
-  };
-  ​
-  // Merge object2 into object1, recursively
-  $.extend( true, object1, object2 );
-  ​
-  // Assuming JSON.stringify - not available in IE<8
-  $( "#log" ).append( JSON.stringify( object1 ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-    */
-  @JSName("extend")
-  def extend_true[T, U, V](deep: `true`, target: T, object1: U, object2: V): T & U & V = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-    * @param target The object to extend. It will receive the new properties.
-    * @param object1 An object containing additional properties to merge in.
-    * @param object2 An object containing additional properties to merge in.
-    * @param object3 An object containing additional properties to merge in.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.1.4
-    * @example ​ ````Merge two objects recursively, modifying the first.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.extend demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="log"></div>
-  ​
-  <script>
-  var object1 = {
-    apple: 0,
-    banana: { weight: 52, price: 100 },
-    cherry: 97
-  };
-  var object2 = {
-    banana: { price: 200 },
-    durian: 100
-  };
-  ​
-  // Merge object2 into object1, recursively
-  $.extend( true, object1, object2 );
-  ​
-  // Assuming JSON.stringify - not available in IE<8
-  $( "#log" ).append( JSON.stringify( object1 ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-    */
-  @JSName("extend")
-  def extend_true[T, U, V, W](deep: `true`, target: T, object1: U, object2: V, object3: W): T & U & V & W = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-    * @param target The object to extend. It will receive the new properties.
-    * @param object1 An object containing additional properties to merge in.
-    * @param object2 An object containing additional properties to merge in.
-    * @param object3 An object containing additional properties to merge in.
-    * @param object4 An object containing additional properties to merge in.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.1.4
-    * @example ​ ````Merge two objects recursively, modifying the first.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.extend demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="log"></div>
-  ​
-  <script>
-  var object1 = {
-    apple: 0,
-    banana: { weight: 52, price: 100 },
-    cherry: 97
-  };
-  var object2 = {
-    banana: { price: 200 },
-    durian: 100
-  };
-  ​
-  // Merge object2 into object1, recursively
-  $.extend( true, object1, object2 );
-  ​
-  // Assuming JSON.stringify - not available in IE<8
-  $( "#log" ).append( JSON.stringify( object1 ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-    */
-  @JSName("extend")
-  def extend_true[T, U, V, W, X](deep: `true`, target: T, object1: U, object2: V, object3: W, object4: X): T & U & V & W & X = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-    * @param target The object to extend. It will receive the new properties.
-    * @param object1 An object containing additional properties to merge in.
-    * @param object2 An object containing additional properties to merge in.
-    * @param object3 An object containing additional properties to merge in.
-    * @param object4 An object containing additional properties to merge in.
-    * @param object5 An object containing additional properties to merge in.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.1.4
-    * @example ​ ````Merge two objects recursively, modifying the first.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.extend demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="log"></div>
-  ​
-  <script>
-  var object1 = {
-    apple: 0,
-    banana: { weight: 52, price: 100 },
-    cherry: 97
-  };
-  var object2 = {
-    banana: { price: 200 },
-    durian: 100
-  };
-  ​
-  // Merge object2 into object1, recursively
-  $.extend( true, object1, object2 );
-  ​
-  // Assuming JSON.stringify - not available in IE<8
-  $( "#log" ).append( JSON.stringify( object1 ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-    */
-  @JSName("extend")
-  def extend_true[T, U, V, W, X, Y](deep: `true`, target: T, object1: U, object2: V, object3: W, object4: X, object5: Y): T & U & V & W & X & Y = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-    * @param target The object to extend. It will receive the new properties.
-    * @param object1 An object containing additional properties to merge in.
-    * @param object2 An object containing additional properties to merge in.
-    * @param object3 An object containing additional properties to merge in.
-    * @param object4 An object containing additional properties to merge in.
-    * @param object5 An object containing additional properties to merge in.
-    * @param object6 An object containing additional properties to merge in.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.1.4
-    * @example ​ ````Merge two objects recursively, modifying the first.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.extend demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="log"></div>
-  ​
-  <script>
-  var object1 = {
-    apple: 0,
-    banana: { weight: 52, price: 100 },
-    cherry: 97
-  };
-  var object2 = {
-    banana: { price: 200 },
-    durian: 100
-  };
-  ​
-  // Merge object2 into object1, recursively
-  $.extend( true, object1, object2 );
-  ​
-  // Assuming JSON.stringify - not available in IE<8
-  $( "#log" ).append( JSON.stringify( object1 ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-    */
-  @JSName("extend")
-  def extend_true[T, U, V, W, X, Y, Z](deep: `true`, target: T, object1: U, object2: V, object3: W, object4: X, object5: Y, object6: Z): T & U & V & W & X & Y & Z = js.native
   
   // Set to HTMLElement to minimize breaks but should probably be Element.
   val fn: JQuery[HTMLElement] = js.native
@@ -15346,7 +15341,7 @@ trait JQueryStatic extends StObject {
   </html>
   ```
     */
-  def `type`(obj: Any): array | boolean | date | error | function | `null` | number | `object` | regexp | string | symbol | undefined = js.native
+  def `type`(obj: Any): "array" | "boolean" | "date" | "error" | "function" | "null" | "number" | "object" | "regexp" | "string" | "symbol" | "undefined" = js.native
   
   /**
     * Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers.

@@ -1,14 +1,12 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`18`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FunctionExpression
   extends StObject
-     with Node2
-     with JSChildNode {
+     with Node2 {
   
   var body: js.UndefOr[BlockStatement | IfStatement] = js.undefined
   
@@ -31,7 +29,7 @@ trait FunctionExpression
   var returns: js.UndefOr[TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode] = js.undefined
   
   @JSName("type")
-  var type_FunctionExpression: `18`
+  var type_FunctionExpression: 18
 }
 object FunctionExpression {
   
@@ -67,6 +65,6 @@ object FunctionExpression {
     
     inline def setReturnsVarargs(value: TemplateChildNode*): Self = StObject.set(x, "returns", js.Array(value*))
     
-    inline def setType(value: `18`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 18): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

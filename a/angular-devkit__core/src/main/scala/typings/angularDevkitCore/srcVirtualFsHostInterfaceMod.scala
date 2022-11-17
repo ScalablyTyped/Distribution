@@ -1,9 +1,5 @@
 package typings.angularDevkitCore
 
-import typings.angularDevkitCore.angularDevkitCoreInts.`0`
-import typings.angularDevkitCore.angularDevkitCoreInts.`1`
-import typings.angularDevkitCore.angularDevkitCoreInts.`2`
-import typings.angularDevkitCore.angularDevkitCoreInts.`3`
 import typings.angularDevkitCore.anon.Atime
 import typings.angularDevkitCore.srcVirtualFsPathMod.PathFragment
 import typings.angularDevkitCore.srcVirtualFsPathMod.Path_
@@ -77,23 +73,17 @@ object srcVirtualFsHostInterfaceMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularDevkitCore.angularDevkitCoreInts.`0`
-    - typings.angularDevkitCore.angularDevkitCoreInts.`1`
-    - typings.angularDevkitCore.angularDevkitCoreInts.`2`
-    - typings.angularDevkitCore.angularDevkitCoreInts.`3`
-  */
-  trait HostWatchEventType extends StObject
   object HostWatchEventType {
     
-    inline def Changed: `0` = 0.asInstanceOf[`0`]
+    inline def Changed: 0 = 0.asInstanceOf[0]
     
-    inline def Created: `1` = 1.asInstanceOf[`1`]
+    inline def Created: 1 = 1.asInstanceOf[1]
     
-    inline def Deleted: `2` = 2.asInstanceOf[`2`]
+    inline def Deleted: 2 = 2.asInstanceOf[2]
     
-    inline def Renamed: `3` = 3.asInstanceOf[`3`]
+    inline def Renamed: 3 = 3.asInstanceOf[3]
   }
+  type HostWatchEventType = 0 | 1 | 2 | 3
   
   trait HostWatchOptions extends StObject {
     

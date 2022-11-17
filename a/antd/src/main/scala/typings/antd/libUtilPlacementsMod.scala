@@ -1,8 +1,6 @@
 package typings.antd
 
 import typings.antd.anon.AdjustX
-import typings.antd.antdInts.`0`
-import typings.antd.antdInts.`1`
 import typings.rcTrigger.esInterfaceMod.BuildInPlacements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,9 +20,9 @@ object libUtilPlacementsMod {
   
   trait AdjustOverflow extends StObject {
     
-    var adjustX: js.UndefOr[`0` | `1`] = js.undefined
+    var adjustX: js.UndefOr[0 | 1] = js.undefined
     
-    var adjustY: js.UndefOr[`0` | `1`] = js.undefined
+    var adjustY: js.UndefOr[0 | 1] = js.undefined
   }
   object AdjustOverflow {
     
@@ -35,11 +33,11 @@ object libUtilPlacementsMod {
     
     extension [Self <: AdjustOverflow](x: Self) {
       
-      inline def setAdjustX(value: `0` | `1`): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
+      inline def setAdjustX(value: 0 | 1): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
       
       inline def setAdjustXUndefined: Self = StObject.set(x, "adjustX", js.undefined)
       
-      inline def setAdjustY(value: `0` | `1`): Self = StObject.set(x, "adjustY", value.asInstanceOf[js.Any])
+      inline def setAdjustY(value: 0 | 1): Self = StObject.set(x, "adjustY", value.asInstanceOf[js.Any])
       
       inline def setAdjustYUndefined: Self = StObject.set(x, "adjustY", js.undefined)
     }

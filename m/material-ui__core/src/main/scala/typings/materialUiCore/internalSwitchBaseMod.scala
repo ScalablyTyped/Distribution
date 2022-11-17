@@ -20,23 +20,17 @@ object internalSwitchBaseMod extends Shortcut {
   @js.native
   val default: ComponentType[SwitchBaseProps] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.checked
-    - typings.materialUiCore.materialUiCoreStrings.disabled
-    - typings.materialUiCore.materialUiCoreStrings.input
-  */
-  trait SwitchBaseClassKey extends StObject
   object SwitchBaseClassKey {
     
-    inline def checked: typings.materialUiCore.materialUiCoreStrings.checked = "checked".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.checked]
+    inline def checked: "checked" = "checked".asInstanceOf["checked"]
     
-    inline def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
+    inline def disabled: "disabled" = "disabled".asInstanceOf["disabled"]
     
-    inline def input: typings.materialUiCore.materialUiCoreStrings.input = "input".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.input]
+    inline def input: "input" = "input".asInstanceOf["input"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
   }
+  type SwitchBaseClassKey = "root" | "checked" | "disabled" | "input"
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped @material-ui/core.@material-ui/core/IconButton/IconButton.IconButtonProps<@material-ui/core.anon.DefaultComponent['defaultComponent'], {}> extends any ? std.Pick<@material-ui/core.@material-ui/core/IconButton/IconButton.IconButtonProps<@material-ui/core.anon.DefaultComponent['defaultComponent'], {}>, std.Exclude<keyof @material-ui/core.@material-ui/core/IconButton/IconButton.IconButtonProps<@material-ui/core.anon.DefaultComponent['defaultComponent'], {}>, 'classes' | 'children' | 'onChange' | 'type' | 'value'>> : never */ trait SwitchBaseProps

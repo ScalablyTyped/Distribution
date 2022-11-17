@@ -1,9 +1,5 @@
 package typings.angularForms.anon
 
-import typings.angularForms.angularFormsBooleans.`true`
-import typings.angularForms.angularFormsStrings.blur
-import typings.angularForms.angularFormsStrings.change
-import typings.angularForms.angularFormsStrings.submit
 import typings.angularForms.mod.AbstractControl
 import typings.angularForms.mod.AsyncValidatorFn
 import typings.angularForms.mod.ValidationErrors
@@ -25,7 +21,7 @@ trait FormControlOptionsinitial extends StObject {
   /**
     * @deprecated Use `nonNullable` instead.
     */
-  var initialValueIsDefault: js.UndefOr[Boolean] & `true`
+  var initialValueIsDefault: js.UndefOr[Boolean] & true
   
   /**
     * @description
@@ -40,7 +36,7 @@ trait FormControlOptionsinitial extends StObject {
     * @description
     * The event name for control to update upon.
     */
-  var updateOn: js.UndefOr[change | blur | submit] = js.undefined
+  var updateOn: js.UndefOr["change" | "blur" | "submit"] = js.undefined
   
   /**
     * @description
@@ -50,7 +46,7 @@ trait FormControlOptionsinitial extends StObject {
 }
 object FormControlOptionsinitial {
   
-  inline def apply(initialValueIsDefault: js.UndefOr[Boolean] & `true`): FormControlOptionsinitial = {
+  inline def apply(initialValueIsDefault: js.UndefOr[Boolean] & true): FormControlOptionsinitial = {
     val __obj = js.Dynamic.literal(initialValueIsDefault = initialValueIsDefault.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormControlOptionsinitial]
   }
@@ -69,13 +65,13 @@ object FormControlOptionsinitial {
     
     inline def setAsyncValidatorsVarargs(value: AsyncValidatorFn*): Self = StObject.set(x, "asyncValidators", js.Array(value*))
     
-    inline def setInitialValueIsDefault(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "initialValueIsDefault", value.asInstanceOf[js.Any])
+    inline def setInitialValueIsDefault(value: js.UndefOr[Boolean] & true): Self = StObject.set(x, "initialValueIsDefault", value.asInstanceOf[js.Any])
     
     inline def setNonNullable(value: Boolean): Self = StObject.set(x, "nonNullable", value.asInstanceOf[js.Any])
     
     inline def setNonNullableUndefined: Self = StObject.set(x, "nonNullable", js.undefined)
     
-    inline def setUpdateOn(value: change | blur | submit): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
+    inline def setUpdateOn(value: "change" | "blur" | "submit"): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
     
     inline def setUpdateOnUndefined: Self = StObject.set(x, "updateOn", js.undefined)
     

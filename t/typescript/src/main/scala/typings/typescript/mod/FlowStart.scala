@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FlowStart
   extends StObject
-     with FlowNodeBase
-     with FlowNode {
+     with FlowNodeBase {
   
   var node: js.UndefOr[
     FunctionExpression | ArrowFunction | MethodDeclaration | GetAccessorDeclaration | SetAccessorDeclaration

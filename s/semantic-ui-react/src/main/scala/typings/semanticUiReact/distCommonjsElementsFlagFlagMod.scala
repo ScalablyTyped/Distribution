@@ -15,1493 +15,997 @@ object distCommonjsElementsFlagFlagMod {
   
   type Flag = PureComponent[FlagProps, js.Object, Any]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.semanticUiReact.semanticUiReactStrings.ad
-    - typings.semanticUiReact.semanticUiReactStrings.andorra
-    - typings.semanticUiReact.semanticUiReactStrings.ae
-    - typings.semanticUiReact.semanticUiReactStrings.`united arab emirates`
-    - typings.semanticUiReact.semanticUiReactStrings.uae
-    - typings.semanticUiReact.semanticUiReactStrings.af
-    - typings.semanticUiReact.semanticUiReactStrings.afghanistan
-    - typings.semanticUiReact.semanticUiReactStrings.ag
-    - typings.semanticUiReact.semanticUiReactStrings.antigua
-    - typings.semanticUiReact.semanticUiReactStrings.ai
-    - typings.semanticUiReact.semanticUiReactStrings.anguilla
-    - typings.semanticUiReact.semanticUiReactStrings.al
-    - typings.semanticUiReact.semanticUiReactStrings.albania
-    - typings.semanticUiReact.semanticUiReactStrings.am
-    - typings.semanticUiReact.semanticUiReactStrings.armenia
-    - typings.semanticUiReact.semanticUiReactStrings.an
-    - typings.semanticUiReact.semanticUiReactStrings.`netherlands antilles`
-    - typings.semanticUiReact.semanticUiReactStrings.ao
-    - typings.semanticUiReact.semanticUiReactStrings.angola
-    - typings.semanticUiReact.semanticUiReactStrings.ar
-    - typings.semanticUiReact.semanticUiReactStrings.argentina
-    - typings.semanticUiReact.semanticUiReactStrings.as
-    - typings.semanticUiReact.semanticUiReactStrings.`american samoa`
-    - typings.semanticUiReact.semanticUiReactStrings.at
-    - typings.semanticUiReact.semanticUiReactStrings.austria
-    - typings.semanticUiReact.semanticUiReactStrings.au
-    - typings.semanticUiReact.semanticUiReactStrings.australia
-    - typings.semanticUiReact.semanticUiReactStrings.aw
-    - typings.semanticUiReact.semanticUiReactStrings.aruba
-    - typings.semanticUiReact.semanticUiReactStrings.ax
-    - typings.semanticUiReact.semanticUiReactStrings.`aland islands`
-    - typings.semanticUiReact.semanticUiReactStrings.az
-    - typings.semanticUiReact.semanticUiReactStrings.azerbaijan
-    - typings.semanticUiReact.semanticUiReactStrings.ba
-    - typings.semanticUiReact.semanticUiReactStrings.bosnia
-    - typings.semanticUiReact.semanticUiReactStrings.bb
-    - typings.semanticUiReact.semanticUiReactStrings.barbados
-    - typings.semanticUiReact.semanticUiReactStrings.bd
-    - typings.semanticUiReact.semanticUiReactStrings.bangladesh
-    - typings.semanticUiReact.semanticUiReactStrings.be
-    - typings.semanticUiReact.semanticUiReactStrings.belgium
-    - typings.semanticUiReact.semanticUiReactStrings.bf
-    - typings.semanticUiReact.semanticUiReactStrings.`burkina faso`
-    - typings.semanticUiReact.semanticUiReactStrings.bg
-    - typings.semanticUiReact.semanticUiReactStrings.bulgaria
-    - typings.semanticUiReact.semanticUiReactStrings.bh
-    - typings.semanticUiReact.semanticUiReactStrings.bahrain
-    - typings.semanticUiReact.semanticUiReactStrings.bi
-    - typings.semanticUiReact.semanticUiReactStrings.burundi
-    - typings.semanticUiReact.semanticUiReactStrings.bj
-    - typings.semanticUiReact.semanticUiReactStrings.benin
-    - typings.semanticUiReact.semanticUiReactStrings.bm
-    - typings.semanticUiReact.semanticUiReactStrings.bermuda
-    - typings.semanticUiReact.semanticUiReactStrings.bn
-    - typings.semanticUiReact.semanticUiReactStrings.brunei
-    - typings.semanticUiReact.semanticUiReactStrings.bo
-    - typings.semanticUiReact.semanticUiReactStrings.bolivia
-    - typings.semanticUiReact.semanticUiReactStrings.br
-    - typings.semanticUiReact.semanticUiReactStrings.brazil
-    - typings.semanticUiReact.semanticUiReactStrings.bs
-    - typings.semanticUiReact.semanticUiReactStrings.bahamas
-    - typings.semanticUiReact.semanticUiReactStrings.bt
-    - typings.semanticUiReact.semanticUiReactStrings.bhutan
-    - typings.semanticUiReact.semanticUiReactStrings.bv
-    - typings.semanticUiReact.semanticUiReactStrings.`bouvet island`
-    - typings.semanticUiReact.semanticUiReactStrings.bw
-    - typings.semanticUiReact.semanticUiReactStrings.botswana
-    - typings.semanticUiReact.semanticUiReactStrings.by
-    - typings.semanticUiReact.semanticUiReactStrings.belarus
-    - typings.semanticUiReact.semanticUiReactStrings.bz
-    - typings.semanticUiReact.semanticUiReactStrings.belize
-    - typings.semanticUiReact.semanticUiReactStrings.ca
-    - typings.semanticUiReact.semanticUiReactStrings.canada
-    - typings.semanticUiReact.semanticUiReactStrings.cc
-    - typings.semanticUiReact.semanticUiReactStrings.`cocos islands`
-    - typings.semanticUiReact.semanticUiReactStrings.cd
-    - typings.semanticUiReact.semanticUiReactStrings.congo
-    - typings.semanticUiReact.semanticUiReactStrings.cf
-    - typings.semanticUiReact.semanticUiReactStrings.`central african republic`
-    - typings.semanticUiReact.semanticUiReactStrings.cg
-    - typings.semanticUiReact.semanticUiReactStrings.`congo brazzaville`
-    - typings.semanticUiReact.semanticUiReactStrings.ch
-    - typings.semanticUiReact.semanticUiReactStrings.switzerland
-    - typings.semanticUiReact.semanticUiReactStrings.ci
-    - typings.semanticUiReact.semanticUiReactStrings.`cote divoire`
-    - typings.semanticUiReact.semanticUiReactStrings.ck
-    - typings.semanticUiReact.semanticUiReactStrings.`cook islands`
-    - typings.semanticUiReact.semanticUiReactStrings.cl
-    - typings.semanticUiReact.semanticUiReactStrings.chile
-    - typings.semanticUiReact.semanticUiReactStrings.cm
-    - typings.semanticUiReact.semanticUiReactStrings.cameroon
-    - typings.semanticUiReact.semanticUiReactStrings.cn
-    - typings.semanticUiReact.semanticUiReactStrings.china
-    - typings.semanticUiReact.semanticUiReactStrings.co
-    - typings.semanticUiReact.semanticUiReactStrings.colombia
-    - typings.semanticUiReact.semanticUiReactStrings.cr
-    - typings.semanticUiReact.semanticUiReactStrings.`costa rica`
-    - typings.semanticUiReact.semanticUiReactStrings.cs
-    - typings.semanticUiReact.semanticUiReactStrings.cu
-    - typings.semanticUiReact.semanticUiReactStrings.cuba
-    - typings.semanticUiReact.semanticUiReactStrings.cv
-    - typings.semanticUiReact.semanticUiReactStrings.`cape verde`
-    - typings.semanticUiReact.semanticUiReactStrings.cx
-    - typings.semanticUiReact.semanticUiReactStrings.`christmas island`
-    - typings.semanticUiReact.semanticUiReactStrings.cy
-    - typings.semanticUiReact.semanticUiReactStrings.cyprus
-    - typings.semanticUiReact.semanticUiReactStrings.cz
-    - typings.semanticUiReact.semanticUiReactStrings.`czech republic`
-    - typings.semanticUiReact.semanticUiReactStrings.de
-    - typings.semanticUiReact.semanticUiReactStrings.germany
-    - typings.semanticUiReact.semanticUiReactStrings.dj
-    - typings.semanticUiReact.semanticUiReactStrings.djibouti
-    - typings.semanticUiReact.semanticUiReactStrings.dk
-    - typings.semanticUiReact.semanticUiReactStrings.denmark
-    - typings.semanticUiReact.semanticUiReactStrings.dm
-    - typings.semanticUiReact.semanticUiReactStrings.dominica
-    - typings.semanticUiReact.semanticUiReactStrings.`do`
-    - typings.semanticUiReact.semanticUiReactStrings.`dominican republic`
-    - typings.semanticUiReact.semanticUiReactStrings.dz
-    - typings.semanticUiReact.semanticUiReactStrings.algeria
-    - typings.semanticUiReact.semanticUiReactStrings.ec
-    - typings.semanticUiReact.semanticUiReactStrings.ecuador
-    - typings.semanticUiReact.semanticUiReactStrings.england
-    - typings.semanticUiReact.semanticUiReactStrings.`gb eng`
-    - typings.semanticUiReact.semanticUiReactStrings.ee
-    - typings.semanticUiReact.semanticUiReactStrings.estonia
-    - typings.semanticUiReact.semanticUiReactStrings.eg
-    - typings.semanticUiReact.semanticUiReactStrings.egypt
-    - typings.semanticUiReact.semanticUiReactStrings.eh
-    - typings.semanticUiReact.semanticUiReactStrings.`western sahara`
-    - typings.semanticUiReact.semanticUiReactStrings.er
-    - typings.semanticUiReact.semanticUiReactStrings.eritrea
-    - typings.semanticUiReact.semanticUiReactStrings.es
-    - typings.semanticUiReact.semanticUiReactStrings.spain
-    - typings.semanticUiReact.semanticUiReactStrings.et
-    - typings.semanticUiReact.semanticUiReactStrings.ethiopia
-    - typings.semanticUiReact.semanticUiReactStrings.eu
-    - typings.semanticUiReact.semanticUiReactStrings.`european union`
-    - typings.semanticUiReact.semanticUiReactStrings.fi
-    - typings.semanticUiReact.semanticUiReactStrings.finland
-    - typings.semanticUiReact.semanticUiReactStrings.fj
-    - typings.semanticUiReact.semanticUiReactStrings.fiji
-    - typings.semanticUiReact.semanticUiReactStrings.fk
-    - typings.semanticUiReact.semanticUiReactStrings.`falkland islands`
-    - typings.semanticUiReact.semanticUiReactStrings.fm
-    - typings.semanticUiReact.semanticUiReactStrings.micronesia
-    - typings.semanticUiReact.semanticUiReactStrings.fo
-    - typings.semanticUiReact.semanticUiReactStrings.`faroe islands`
-    - typings.semanticUiReact.semanticUiReactStrings.fr
-    - typings.semanticUiReact.semanticUiReactStrings.france
-    - typings.semanticUiReact.semanticUiReactStrings.ga
-    - typings.semanticUiReact.semanticUiReactStrings.gabon
-    - typings.semanticUiReact.semanticUiReactStrings.gb
-    - typings.semanticUiReact.semanticUiReactStrings.uk
-    - typings.semanticUiReact.semanticUiReactStrings.`united kingdom`
-    - typings.semanticUiReact.semanticUiReactStrings.gd
-    - typings.semanticUiReact.semanticUiReactStrings.grenada
-    - typings.semanticUiReact.semanticUiReactStrings.ge
-    - typings.semanticUiReact.semanticUiReactStrings.georgia
-    - typings.semanticUiReact.semanticUiReactStrings.gf
-    - typings.semanticUiReact.semanticUiReactStrings.`french guiana`
-    - typings.semanticUiReact.semanticUiReactStrings.gh
-    - typings.semanticUiReact.semanticUiReactStrings.ghana
-    - typings.semanticUiReact.semanticUiReactStrings.gi
-    - typings.semanticUiReact.semanticUiReactStrings.gibraltar
-    - typings.semanticUiReact.semanticUiReactStrings.gl
-    - typings.semanticUiReact.semanticUiReactStrings.greenland
-    - typings.semanticUiReact.semanticUiReactStrings.gm
-    - typings.semanticUiReact.semanticUiReactStrings.gambia
-    - typings.semanticUiReact.semanticUiReactStrings.gn
-    - typings.semanticUiReact.semanticUiReactStrings.guinea
-    - typings.semanticUiReact.semanticUiReactStrings.gp
-    - typings.semanticUiReact.semanticUiReactStrings.guadeloupe
-    - typings.semanticUiReact.semanticUiReactStrings.gq
-    - typings.semanticUiReact.semanticUiReactStrings.`equatorial guinea`
-    - typings.semanticUiReact.semanticUiReactStrings.gr
-    - typings.semanticUiReact.semanticUiReactStrings.greece
-    - typings.semanticUiReact.semanticUiReactStrings.gs
-    - typings.semanticUiReact.semanticUiReactStrings.`sandwich islands`
-    - typings.semanticUiReact.semanticUiReactStrings.gt
-    - typings.semanticUiReact.semanticUiReactStrings.guatemala
-    - typings.semanticUiReact.semanticUiReactStrings.gu
-    - typings.semanticUiReact.semanticUiReactStrings.guam
-    - typings.semanticUiReact.semanticUiReactStrings.gw
-    - typings.semanticUiReact.semanticUiReactStrings.`guinea-bissau`
-    - typings.semanticUiReact.semanticUiReactStrings.gy
-    - typings.semanticUiReact.semanticUiReactStrings.guyana
-    - typings.semanticUiReact.semanticUiReactStrings.hk
-    - typings.semanticUiReact.semanticUiReactStrings.`hong kong`
-    - typings.semanticUiReact.semanticUiReactStrings.hm
-    - typings.semanticUiReact.semanticUiReactStrings.`heard island`
-    - typings.semanticUiReact.semanticUiReactStrings.hn
-    - typings.semanticUiReact.semanticUiReactStrings.honduras
-    - typings.semanticUiReact.semanticUiReactStrings.hr
-    - typings.semanticUiReact.semanticUiReactStrings.croatia
-    - typings.semanticUiReact.semanticUiReactStrings.ht
-    - typings.semanticUiReact.semanticUiReactStrings.haiti
-    - typings.semanticUiReact.semanticUiReactStrings.hu
-    - typings.semanticUiReact.semanticUiReactStrings.hungary
-    - typings.semanticUiReact.semanticUiReactStrings.id
-    - typings.semanticUiReact.semanticUiReactStrings.indonesia
-    - typings.semanticUiReact.semanticUiReactStrings.ie
-    - typings.semanticUiReact.semanticUiReactStrings.ireland
-    - typings.semanticUiReact.semanticUiReactStrings.il
-    - typings.semanticUiReact.semanticUiReactStrings.israel
-    - typings.semanticUiReact.semanticUiReactStrings.in
-    - typings.semanticUiReact.semanticUiReactStrings.india
-    - typings.semanticUiReact.semanticUiReactStrings.io
-    - typings.semanticUiReact.semanticUiReactStrings.`indian ocean territory`
-    - typings.semanticUiReact.semanticUiReactStrings.iq
-    - typings.semanticUiReact.semanticUiReactStrings.iraq
-    - typings.semanticUiReact.semanticUiReactStrings.ir
-    - typings.semanticUiReact.semanticUiReactStrings.iran
-    - typings.semanticUiReact.semanticUiReactStrings.is
-    - typings.semanticUiReact.semanticUiReactStrings.iceland
-    - typings.semanticUiReact.semanticUiReactStrings.it
-    - typings.semanticUiReact.semanticUiReactStrings.italy
-    - typings.semanticUiReact.semanticUiReactStrings.jm
-    - typings.semanticUiReact.semanticUiReactStrings.jamaica
-    - typings.semanticUiReact.semanticUiReactStrings.jo
-    - typings.semanticUiReact.semanticUiReactStrings.jordan
-    - typings.semanticUiReact.semanticUiReactStrings.jp
-    - typings.semanticUiReact.semanticUiReactStrings.japan
-    - typings.semanticUiReact.semanticUiReactStrings.ke
-    - typings.semanticUiReact.semanticUiReactStrings.kenya
-    - typings.semanticUiReact.semanticUiReactStrings.kg
-    - typings.semanticUiReact.semanticUiReactStrings.kyrgyzstan
-    - typings.semanticUiReact.semanticUiReactStrings.kh
-    - typings.semanticUiReact.semanticUiReactStrings.cambodia
-    - typings.semanticUiReact.semanticUiReactStrings.ki
-    - typings.semanticUiReact.semanticUiReactStrings.kiribati
-    - typings.semanticUiReact.semanticUiReactStrings.km
-    - typings.semanticUiReact.semanticUiReactStrings.comoros
-    - typings.semanticUiReact.semanticUiReactStrings.kn
-    - typings.semanticUiReact.semanticUiReactStrings.`saint kitts and nevis`
-    - typings.semanticUiReact.semanticUiReactStrings.kp
-    - typings.semanticUiReact.semanticUiReactStrings.`north korea`
-    - typings.semanticUiReact.semanticUiReactStrings.kr
-    - typings.semanticUiReact.semanticUiReactStrings.`south korea`
-    - typings.semanticUiReact.semanticUiReactStrings.kw
-    - typings.semanticUiReact.semanticUiReactStrings.kuwait
-    - typings.semanticUiReact.semanticUiReactStrings.ky
-    - typings.semanticUiReact.semanticUiReactStrings.`cayman islands`
-    - typings.semanticUiReact.semanticUiReactStrings.kz
-    - typings.semanticUiReact.semanticUiReactStrings.kazakhstan
-    - typings.semanticUiReact.semanticUiReactStrings.la
-    - typings.semanticUiReact.semanticUiReactStrings.laos
-    - typings.semanticUiReact.semanticUiReactStrings.lb
-    - typings.semanticUiReact.semanticUiReactStrings.lebanon
-    - typings.semanticUiReact.semanticUiReactStrings.lc
-    - typings.semanticUiReact.semanticUiReactStrings.`saint lucia`
-    - typings.semanticUiReact.semanticUiReactStrings.li
-    - typings.semanticUiReact.semanticUiReactStrings.liechtenstein
-    - typings.semanticUiReact.semanticUiReactStrings.lk
-    - typings.semanticUiReact.semanticUiReactStrings.`sri lanka`
-    - typings.semanticUiReact.semanticUiReactStrings.lr
-    - typings.semanticUiReact.semanticUiReactStrings.liberia
-    - typings.semanticUiReact.semanticUiReactStrings.ls
-    - typings.semanticUiReact.semanticUiReactStrings.lesotho
-    - typings.semanticUiReact.semanticUiReactStrings.lt
-    - typings.semanticUiReact.semanticUiReactStrings.lithuania
-    - typings.semanticUiReact.semanticUiReactStrings.lu
-    - typings.semanticUiReact.semanticUiReactStrings.luxembourg
-    - typings.semanticUiReact.semanticUiReactStrings.lv
-    - typings.semanticUiReact.semanticUiReactStrings.latvia
-    - typings.semanticUiReact.semanticUiReactStrings.ly
-    - typings.semanticUiReact.semanticUiReactStrings.libya
-    - typings.semanticUiReact.semanticUiReactStrings.ma
-    - typings.semanticUiReact.semanticUiReactStrings.morocco
-    - typings.semanticUiReact.semanticUiReactStrings.mc
-    - typings.semanticUiReact.semanticUiReactStrings.monaco
-    - typings.semanticUiReact.semanticUiReactStrings.md
-    - typings.semanticUiReact.semanticUiReactStrings.moldova
-    - typings.semanticUiReact.semanticUiReactStrings.me
-    - typings.semanticUiReact.semanticUiReactStrings.montenegro
-    - typings.semanticUiReact.semanticUiReactStrings.mg
-    - typings.semanticUiReact.semanticUiReactStrings.madagascar
-    - typings.semanticUiReact.semanticUiReactStrings.mh
-    - typings.semanticUiReact.semanticUiReactStrings.`marshall islands`
-    - typings.semanticUiReact.semanticUiReactStrings.mk
-    - typings.semanticUiReact.semanticUiReactStrings.macedonia
-    - typings.semanticUiReact.semanticUiReactStrings.ml
-    - typings.semanticUiReact.semanticUiReactStrings.mali
-    - typings.semanticUiReact.semanticUiReactStrings.mm
-    - typings.semanticUiReact.semanticUiReactStrings.myanmar
-    - typings.semanticUiReact.semanticUiReactStrings.burma
-    - typings.semanticUiReact.semanticUiReactStrings.mn
-    - typings.semanticUiReact.semanticUiReactStrings.mongolia
-    - typings.semanticUiReact.semanticUiReactStrings.mo
-    - typings.semanticUiReact.semanticUiReactStrings.macau
-    - typings.semanticUiReact.semanticUiReactStrings.mp
-    - typings.semanticUiReact.semanticUiReactStrings.`northern mariana islands`
-    - typings.semanticUiReact.semanticUiReactStrings.mq
-    - typings.semanticUiReact.semanticUiReactStrings.martinique
-    - typings.semanticUiReact.semanticUiReactStrings.mr
-    - typings.semanticUiReact.semanticUiReactStrings.mauritania
-    - typings.semanticUiReact.semanticUiReactStrings.ms
-    - typings.semanticUiReact.semanticUiReactStrings.montserrat
-    - typings.semanticUiReact.semanticUiReactStrings.mt
-    - typings.semanticUiReact.semanticUiReactStrings.malta
-    - typings.semanticUiReact.semanticUiReactStrings.mu
-    - typings.semanticUiReact.semanticUiReactStrings.mauritius
-    - typings.semanticUiReact.semanticUiReactStrings.mv
-    - typings.semanticUiReact.semanticUiReactStrings.maldives
-    - typings.semanticUiReact.semanticUiReactStrings.mw
-    - typings.semanticUiReact.semanticUiReactStrings.malawi
-    - typings.semanticUiReact.semanticUiReactStrings.mx
-    - typings.semanticUiReact.semanticUiReactStrings.mexico
-    - typings.semanticUiReact.semanticUiReactStrings.my
-    - typings.semanticUiReact.semanticUiReactStrings.malaysia
-    - typings.semanticUiReact.semanticUiReactStrings.mz
-    - typings.semanticUiReact.semanticUiReactStrings.mozambique
-    - typings.semanticUiReact.semanticUiReactStrings.na
-    - typings.semanticUiReact.semanticUiReactStrings.namibia
-    - typings.semanticUiReact.semanticUiReactStrings.nc
-    - typings.semanticUiReact.semanticUiReactStrings.`new caledonia`
-    - typings.semanticUiReact.semanticUiReactStrings.ne
-    - typings.semanticUiReact.semanticUiReactStrings.niger
-    - typings.semanticUiReact.semanticUiReactStrings.nf
-    - typings.semanticUiReact.semanticUiReactStrings.`norfolk island`
-    - typings.semanticUiReact.semanticUiReactStrings.ng
-    - typings.semanticUiReact.semanticUiReactStrings.nigeria
-    - typings.semanticUiReact.semanticUiReactStrings.ni
-    - typings.semanticUiReact.semanticUiReactStrings.nicaragua
-    - typings.semanticUiReact.semanticUiReactStrings.nl
-    - typings.semanticUiReact.semanticUiReactStrings.netherlands
-    - typings.semanticUiReact.semanticUiReactStrings.no
-    - typings.semanticUiReact.semanticUiReactStrings.norway
-    - typings.semanticUiReact.semanticUiReactStrings.np
-    - typings.semanticUiReact.semanticUiReactStrings.nepal
-    - typings.semanticUiReact.semanticUiReactStrings.nr
-    - typings.semanticUiReact.semanticUiReactStrings.nauru
-    - typings.semanticUiReact.semanticUiReactStrings.nu
-    - typings.semanticUiReact.semanticUiReactStrings.niue
-    - typings.semanticUiReact.semanticUiReactStrings.nz
-    - typings.semanticUiReact.semanticUiReactStrings.`new zealand`
-    - typings.semanticUiReact.semanticUiReactStrings.om
-    - typings.semanticUiReact.semanticUiReactStrings.oman
-    - typings.semanticUiReact.semanticUiReactStrings.pa
-    - typings.semanticUiReact.semanticUiReactStrings.panama
-    - typings.semanticUiReact.semanticUiReactStrings.pe
-    - typings.semanticUiReact.semanticUiReactStrings.peru
-    - typings.semanticUiReact.semanticUiReactStrings.pf
-    - typings.semanticUiReact.semanticUiReactStrings.`french polynesia`
-    - typings.semanticUiReact.semanticUiReactStrings.pg
-    - typings.semanticUiReact.semanticUiReactStrings.`new guinea`
-    - typings.semanticUiReact.semanticUiReactStrings.ph
-    - typings.semanticUiReact.semanticUiReactStrings.philippines
-    - typings.semanticUiReact.semanticUiReactStrings.pk
-    - typings.semanticUiReact.semanticUiReactStrings.pakistan
-    - typings.semanticUiReact.semanticUiReactStrings.pl
-    - typings.semanticUiReact.semanticUiReactStrings.poland
-    - typings.semanticUiReact.semanticUiReactStrings.pm
-    - typings.semanticUiReact.semanticUiReactStrings.`saint pierre`
-    - typings.semanticUiReact.semanticUiReactStrings.pn
-    - typings.semanticUiReact.semanticUiReactStrings.`pitcairn islands`
-    - typings.semanticUiReact.semanticUiReactStrings.pr
-    - typings.semanticUiReact.semanticUiReactStrings.`puerto rico`
-    - typings.semanticUiReact.semanticUiReactStrings.ps
-    - typings.semanticUiReact.semanticUiReactStrings.palestine
-    - typings.semanticUiReact.semanticUiReactStrings.pt
-    - typings.semanticUiReact.semanticUiReactStrings.portugal
-    - typings.semanticUiReact.semanticUiReactStrings.pw
-    - typings.semanticUiReact.semanticUiReactStrings.palau
-    - typings.semanticUiReact.semanticUiReactStrings.py
-    - typings.semanticUiReact.semanticUiReactStrings.paraguay
-    - typings.semanticUiReact.semanticUiReactStrings.qa
-    - typings.semanticUiReact.semanticUiReactStrings.qatar
-    - typings.semanticUiReact.semanticUiReactStrings.re
-    - typings.semanticUiReact.semanticUiReactStrings.reunion
-    - typings.semanticUiReact.semanticUiReactStrings.ro
-    - typings.semanticUiReact.semanticUiReactStrings.romania
-    - typings.semanticUiReact.semanticUiReactStrings.rs
-    - typings.semanticUiReact.semanticUiReactStrings.serbia
-    - typings.semanticUiReact.semanticUiReactStrings.ru
-    - typings.semanticUiReact.semanticUiReactStrings.russia
-    - typings.semanticUiReact.semanticUiReactStrings.rw
-    - typings.semanticUiReact.semanticUiReactStrings.rwanda
-    - typings.semanticUiReact.semanticUiReactStrings.sa
-    - typings.semanticUiReact.semanticUiReactStrings.`saudi arabia`
-    - typings.semanticUiReact.semanticUiReactStrings.sb
-    - typings.semanticUiReact.semanticUiReactStrings.`solomon islands`
-    - typings.semanticUiReact.semanticUiReactStrings.sc
-    - typings.semanticUiReact.semanticUiReactStrings.seychelles
-    - typings.semanticUiReact.semanticUiReactStrings.`gb sct`
-    - typings.semanticUiReact.semanticUiReactStrings.scotland
-    - typings.semanticUiReact.semanticUiReactStrings.sd
-    - typings.semanticUiReact.semanticUiReactStrings.sudan
-    - typings.semanticUiReact.semanticUiReactStrings.se
-    - typings.semanticUiReact.semanticUiReactStrings.sweden
-    - typings.semanticUiReact.semanticUiReactStrings.sg
-    - typings.semanticUiReact.semanticUiReactStrings.singapore
-    - typings.semanticUiReact.semanticUiReactStrings.sh
-    - typings.semanticUiReact.semanticUiReactStrings.`saint helena`
-    - typings.semanticUiReact.semanticUiReactStrings.si
-    - typings.semanticUiReact.semanticUiReactStrings.slovenia
-    - typings.semanticUiReact.semanticUiReactStrings.sj
-    - typings.semanticUiReact.semanticUiReactStrings.svalbard
-    - typings.semanticUiReact.semanticUiReactStrings.`jan mayen`
-    - typings.semanticUiReact.semanticUiReactStrings.sk
-    - typings.semanticUiReact.semanticUiReactStrings.slovakia
-    - typings.semanticUiReact.semanticUiReactStrings.sl
-    - typings.semanticUiReact.semanticUiReactStrings.`sierra leone`
-    - typings.semanticUiReact.semanticUiReactStrings.sm
-    - typings.semanticUiReact.semanticUiReactStrings.`san marino`
-    - typings.semanticUiReact.semanticUiReactStrings.sn
-    - typings.semanticUiReact.semanticUiReactStrings.senegal
-    - typings.semanticUiReact.semanticUiReactStrings.so
-    - typings.semanticUiReact.semanticUiReactStrings.somalia
-    - typings.semanticUiReact.semanticUiReactStrings.sr
-    - typings.semanticUiReact.semanticUiReactStrings.suriname
-    - typings.semanticUiReact.semanticUiReactStrings.st
-    - typings.semanticUiReact.semanticUiReactStrings.`sao tome`
-    - typings.semanticUiReact.semanticUiReactStrings.sv
-    - typings.semanticUiReact.semanticUiReactStrings.`el salvador`
-    - typings.semanticUiReact.semanticUiReactStrings.sy
-    - typings.semanticUiReact.semanticUiReactStrings.syria
-    - typings.semanticUiReact.semanticUiReactStrings.sz
-    - typings.semanticUiReact.semanticUiReactStrings.swaziland
-    - typings.semanticUiReact.semanticUiReactStrings.tc
-    - typings.semanticUiReact.semanticUiReactStrings.`caicos islands`
-    - typings.semanticUiReact.semanticUiReactStrings.td
-    - typings.semanticUiReact.semanticUiReactStrings.chad
-    - typings.semanticUiReact.semanticUiReactStrings.tf
-    - typings.semanticUiReact.semanticUiReactStrings.`french territories`
-    - typings.semanticUiReact.semanticUiReactStrings.tg
-    - typings.semanticUiReact.semanticUiReactStrings.togo
-    - typings.semanticUiReact.semanticUiReactStrings.th
-    - typings.semanticUiReact.semanticUiReactStrings.thailand
-    - typings.semanticUiReact.semanticUiReactStrings.tj
-    - typings.semanticUiReact.semanticUiReactStrings.tajikistan
-    - typings.semanticUiReact.semanticUiReactStrings.tk
-    - typings.semanticUiReact.semanticUiReactStrings.tokelau
-    - typings.semanticUiReact.semanticUiReactStrings.tl
-    - typings.semanticUiReact.semanticUiReactStrings.timorleste
-    - typings.semanticUiReact.semanticUiReactStrings.tm
-    - typings.semanticUiReact.semanticUiReactStrings.turkmenistan
-    - typings.semanticUiReact.semanticUiReactStrings.tn
-    - typings.semanticUiReact.semanticUiReactStrings.tunisia
-    - typings.semanticUiReact.semanticUiReactStrings.to
-    - typings.semanticUiReact.semanticUiReactStrings.tonga
-    - typings.semanticUiReact.semanticUiReactStrings.tr
-    - typings.semanticUiReact.semanticUiReactStrings.turkey
-    - typings.semanticUiReact.semanticUiReactStrings.tt
-    - typings.semanticUiReact.semanticUiReactStrings.trinidad
-    - typings.semanticUiReact.semanticUiReactStrings.tv
-    - typings.semanticUiReact.semanticUiReactStrings.tuvalu
-    - typings.semanticUiReact.semanticUiReactStrings.tw
-    - typings.semanticUiReact.semanticUiReactStrings.taiwan
-    - typings.semanticUiReact.semanticUiReactStrings.tz
-    - typings.semanticUiReact.semanticUiReactStrings.tanzania
-    - typings.semanticUiReact.semanticUiReactStrings.ua
-    - typings.semanticUiReact.semanticUiReactStrings.ukraine
-    - typings.semanticUiReact.semanticUiReactStrings.ug
-    - typings.semanticUiReact.semanticUiReactStrings.uganda
-    - typings.semanticUiReact.semanticUiReactStrings.um
-    - typings.semanticUiReact.semanticUiReactStrings.`us minor islands`
-    - typings.semanticUiReact.semanticUiReactStrings.us
-    - typings.semanticUiReact.semanticUiReactStrings.america
-    - typings.semanticUiReact.semanticUiReactStrings.`united states`
-    - typings.semanticUiReact.semanticUiReactStrings.uy
-    - typings.semanticUiReact.semanticUiReactStrings.uruguay
-    - typings.semanticUiReact.semanticUiReactStrings.uz
-    - typings.semanticUiReact.semanticUiReactStrings.uzbekistan
-    - typings.semanticUiReact.semanticUiReactStrings.va
-    - typings.semanticUiReact.semanticUiReactStrings.`vatican city`
-    - typings.semanticUiReact.semanticUiReactStrings.vc
-    - typings.semanticUiReact.semanticUiReactStrings.`saint vincent`
-    - typings.semanticUiReact.semanticUiReactStrings.ve
-    - typings.semanticUiReact.semanticUiReactStrings.venezuela
-    - typings.semanticUiReact.semanticUiReactStrings.vg
-    - typings.semanticUiReact.semanticUiReactStrings.`british virgin islands`
-    - typings.semanticUiReact.semanticUiReactStrings.vi
-    - typings.semanticUiReact.semanticUiReactStrings.`us virgin islands`
-    - typings.semanticUiReact.semanticUiReactStrings.vn
-    - typings.semanticUiReact.semanticUiReactStrings.vietnam
-    - typings.semanticUiReact.semanticUiReactStrings.vu
-    - typings.semanticUiReact.semanticUiReactStrings.vanuatu
-    - typings.semanticUiReact.semanticUiReactStrings.`gb wls`
-    - typings.semanticUiReact.semanticUiReactStrings.wales
-    - typings.semanticUiReact.semanticUiReactStrings.wf
-    - typings.semanticUiReact.semanticUiReactStrings.`wallis and futuna`
-    - typings.semanticUiReact.semanticUiReactStrings.ws
-    - typings.semanticUiReact.semanticUiReactStrings.samoa
-    - typings.semanticUiReact.semanticUiReactStrings.ye
-    - typings.semanticUiReact.semanticUiReactStrings.yemen
-    - typings.semanticUiReact.semanticUiReactStrings.yt
-    - typings.semanticUiReact.semanticUiReactStrings.mayotte
-    - typings.semanticUiReact.semanticUiReactStrings.za
-    - typings.semanticUiReact.semanticUiReactStrings.`south africa`
-    - typings.semanticUiReact.semanticUiReactStrings.zm
-    - typings.semanticUiReact.semanticUiReactStrings.zambia
-    - typings.semanticUiReact.semanticUiReactStrings.zw
-    - typings.semanticUiReact.semanticUiReactStrings.zimbabwe
-  */
-  trait FlagNameValues extends StObject
   object FlagNameValues {
     
-    inline def ad: typings.semanticUiReact.semanticUiReactStrings.ad = "ad".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ad]
+    inline def ad: "ad" = "ad".asInstanceOf["ad"]
     
-    inline def ae: typings.semanticUiReact.semanticUiReactStrings.ae = "ae".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ae]
+    inline def ae: "ae" = "ae".asInstanceOf["ae"]
     
-    inline def af: typings.semanticUiReact.semanticUiReactStrings.af = "af".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.af]
+    inline def af: "af" = "af".asInstanceOf["af"]
     
-    inline def afghanistan: typings.semanticUiReact.semanticUiReactStrings.afghanistan = "afghanistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.afghanistan]
+    inline def afghanistan: "afghanistan" = "afghanistan".asInstanceOf["afghanistan"]
     
-    inline def ag: typings.semanticUiReact.semanticUiReactStrings.ag = "ag".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ag]
+    inline def ag: "ag" = "ag".asInstanceOf["ag"]
     
-    inline def ai: typings.semanticUiReact.semanticUiReactStrings.ai = "ai".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ai]
+    inline def ai: "ai" = "ai".asInstanceOf["ai"]
     
-    inline def al: typings.semanticUiReact.semanticUiReactStrings.al = "al".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.al]
+    inline def al: "al" = "al".asInstanceOf["al"]
     
-    inline def `aland islands`: typings.semanticUiReact.semanticUiReactStrings.`aland islands` = ("aland islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`aland islands`]
+    inline def `aland islands`: "aland islands" = ("aland islands").asInstanceOf["aland islands"]
     
-    inline def albania: typings.semanticUiReact.semanticUiReactStrings.albania = "albania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.albania]
+    inline def albania: "albania" = "albania".asInstanceOf["albania"]
     
-    inline def algeria: typings.semanticUiReact.semanticUiReactStrings.algeria = "algeria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.algeria]
+    inline def algeria: "algeria" = "algeria".asInstanceOf["algeria"]
     
-    inline def am: typings.semanticUiReact.semanticUiReactStrings.am = "am".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.am]
+    inline def am: "am" = "am".asInstanceOf["am"]
     
-    inline def america: typings.semanticUiReact.semanticUiReactStrings.america = "america".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.america]
+    inline def america: "america" = "america".asInstanceOf["america"]
     
-    inline def `american samoa`: typings.semanticUiReact.semanticUiReactStrings.`american samoa` = ("american samoa").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`american samoa`]
+    inline def `american samoa`: "american samoa" = ("american samoa").asInstanceOf["american samoa"]
     
-    inline def an: typings.semanticUiReact.semanticUiReactStrings.an = "an".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.an]
+    inline def an: "an" = "an".asInstanceOf["an"]
     
-    inline def andorra: typings.semanticUiReact.semanticUiReactStrings.andorra = "andorra".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.andorra]
+    inline def andorra: "andorra" = "andorra".asInstanceOf["andorra"]
     
-    inline def angola: typings.semanticUiReact.semanticUiReactStrings.angola = "angola".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.angola]
+    inline def angola: "angola" = "angola".asInstanceOf["angola"]
     
-    inline def anguilla: typings.semanticUiReact.semanticUiReactStrings.anguilla = "anguilla".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.anguilla]
+    inline def anguilla: "anguilla" = "anguilla".asInstanceOf["anguilla"]
     
-    inline def antigua: typings.semanticUiReact.semanticUiReactStrings.antigua = "antigua".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.antigua]
+    inline def antigua: "antigua" = "antigua".asInstanceOf["antigua"]
     
-    inline def ao: typings.semanticUiReact.semanticUiReactStrings.ao = "ao".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ao]
+    inline def ao: "ao" = "ao".asInstanceOf["ao"]
     
-    inline def ar: typings.semanticUiReact.semanticUiReactStrings.ar = "ar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ar]
+    inline def ar: "ar" = "ar".asInstanceOf["ar"]
     
-    inline def argentina: typings.semanticUiReact.semanticUiReactStrings.argentina = "argentina".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.argentina]
+    inline def argentina: "argentina" = "argentina".asInstanceOf["argentina"]
     
-    inline def armenia: typings.semanticUiReact.semanticUiReactStrings.armenia = "armenia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.armenia]
+    inline def armenia: "armenia" = "armenia".asInstanceOf["armenia"]
     
-    inline def aruba: typings.semanticUiReact.semanticUiReactStrings.aruba = "aruba".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.aruba]
+    inline def aruba: "aruba" = "aruba".asInstanceOf["aruba"]
     
-    inline def as: typings.semanticUiReact.semanticUiReactStrings.as = "as".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.as]
+    inline def as: "as" = "as".asInstanceOf["as"]
     
-    inline def at: typings.semanticUiReact.semanticUiReactStrings.at = "at".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.at]
+    inline def at: "at" = "at".asInstanceOf["at"]
     
-    inline def au: typings.semanticUiReact.semanticUiReactStrings.au = "au".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.au]
+    inline def au: "au" = "au".asInstanceOf["au"]
     
-    inline def australia: typings.semanticUiReact.semanticUiReactStrings.australia = "australia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.australia]
+    inline def australia: "australia" = "australia".asInstanceOf["australia"]
     
-    inline def austria: typings.semanticUiReact.semanticUiReactStrings.austria = "austria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.austria]
+    inline def austria: "austria" = "austria".asInstanceOf["austria"]
     
-    inline def aw: typings.semanticUiReact.semanticUiReactStrings.aw = "aw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.aw]
+    inline def aw: "aw" = "aw".asInstanceOf["aw"]
     
-    inline def ax: typings.semanticUiReact.semanticUiReactStrings.ax = "ax".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ax]
+    inline def ax: "ax" = "ax".asInstanceOf["ax"]
     
-    inline def az: typings.semanticUiReact.semanticUiReactStrings.az = "az".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.az]
+    inline def az: "az" = "az".asInstanceOf["az"]
     
-    inline def azerbaijan: typings.semanticUiReact.semanticUiReactStrings.azerbaijan = "azerbaijan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.azerbaijan]
+    inline def azerbaijan: "azerbaijan" = "azerbaijan".asInstanceOf["azerbaijan"]
     
-    inline def ba: typings.semanticUiReact.semanticUiReactStrings.ba = "ba".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ba]
+    inline def ba: "ba" = "ba".asInstanceOf["ba"]
     
-    inline def bahamas: typings.semanticUiReact.semanticUiReactStrings.bahamas = "bahamas".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bahamas]
+    inline def bahamas: "bahamas" = "bahamas".asInstanceOf["bahamas"]
     
-    inline def bahrain: typings.semanticUiReact.semanticUiReactStrings.bahrain = "bahrain".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bahrain]
+    inline def bahrain: "bahrain" = "bahrain".asInstanceOf["bahrain"]
     
-    inline def bangladesh: typings.semanticUiReact.semanticUiReactStrings.bangladesh = "bangladesh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bangladesh]
+    inline def bangladesh: "bangladesh" = "bangladesh".asInstanceOf["bangladesh"]
     
-    inline def barbados: typings.semanticUiReact.semanticUiReactStrings.barbados = "barbados".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.barbados]
+    inline def barbados: "barbados" = "barbados".asInstanceOf["barbados"]
     
-    inline def bb: typings.semanticUiReact.semanticUiReactStrings.bb = "bb".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bb]
+    inline def bb: "bb" = "bb".asInstanceOf["bb"]
     
-    inline def bd: typings.semanticUiReact.semanticUiReactStrings.bd = "bd".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bd]
+    inline def bd: "bd" = "bd".asInstanceOf["bd"]
     
-    inline def be: typings.semanticUiReact.semanticUiReactStrings.be = "be".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.be]
+    inline def be: "be" = "be".asInstanceOf["be"]
     
-    inline def belarus: typings.semanticUiReact.semanticUiReactStrings.belarus = "belarus".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.belarus]
+    inline def belarus: "belarus" = "belarus".asInstanceOf["belarus"]
     
-    inline def belgium: typings.semanticUiReact.semanticUiReactStrings.belgium = "belgium".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.belgium]
+    inline def belgium: "belgium" = "belgium".asInstanceOf["belgium"]
     
-    inline def belize: typings.semanticUiReact.semanticUiReactStrings.belize = "belize".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.belize]
+    inline def belize: "belize" = "belize".asInstanceOf["belize"]
     
-    inline def benin: typings.semanticUiReact.semanticUiReactStrings.benin = "benin".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.benin]
+    inline def benin: "benin" = "benin".asInstanceOf["benin"]
     
-    inline def bermuda: typings.semanticUiReact.semanticUiReactStrings.bermuda = "bermuda".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bermuda]
+    inline def bermuda: "bermuda" = "bermuda".asInstanceOf["bermuda"]
     
-    inline def bf: typings.semanticUiReact.semanticUiReactStrings.bf = "bf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bf]
+    inline def bf: "bf" = "bf".asInstanceOf["bf"]
     
-    inline def bg: typings.semanticUiReact.semanticUiReactStrings.bg = "bg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bg]
+    inline def bg: "bg" = "bg".asInstanceOf["bg"]
     
-    inline def bh: typings.semanticUiReact.semanticUiReactStrings.bh = "bh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bh]
+    inline def bh: "bh" = "bh".asInstanceOf["bh"]
     
-    inline def bhutan: typings.semanticUiReact.semanticUiReactStrings.bhutan = "bhutan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bhutan]
+    inline def bhutan: "bhutan" = "bhutan".asInstanceOf["bhutan"]
     
-    inline def bi: typings.semanticUiReact.semanticUiReactStrings.bi = "bi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bi]
+    inline def bi: "bi" = "bi".asInstanceOf["bi"]
     
-    inline def bj: typings.semanticUiReact.semanticUiReactStrings.bj = "bj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bj]
+    inline def bj: "bj" = "bj".asInstanceOf["bj"]
     
-    inline def bm: typings.semanticUiReact.semanticUiReactStrings.bm = "bm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bm]
+    inline def bm: "bm" = "bm".asInstanceOf["bm"]
     
-    inline def bn: typings.semanticUiReact.semanticUiReactStrings.bn = "bn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bn]
+    inline def bn: "bn" = "bn".asInstanceOf["bn"]
     
-    inline def bo: typings.semanticUiReact.semanticUiReactStrings.bo = "bo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bo]
+    inline def bo: "bo" = "bo".asInstanceOf["bo"]
     
-    inline def bolivia: typings.semanticUiReact.semanticUiReactStrings.bolivia = "bolivia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bolivia]
+    inline def bolivia: "bolivia" = "bolivia".asInstanceOf["bolivia"]
     
-    inline def bosnia: typings.semanticUiReact.semanticUiReactStrings.bosnia = "bosnia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bosnia]
+    inline def bosnia: "bosnia" = "bosnia".asInstanceOf["bosnia"]
     
-    inline def botswana: typings.semanticUiReact.semanticUiReactStrings.botswana = "botswana".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.botswana]
+    inline def botswana: "botswana" = "botswana".asInstanceOf["botswana"]
     
-    inline def `bouvet island`: typings.semanticUiReact.semanticUiReactStrings.`bouvet island` = ("bouvet island").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`bouvet island`]
+    inline def `bouvet island`: "bouvet island" = ("bouvet island").asInstanceOf["bouvet island"]
     
-    inline def br: typings.semanticUiReact.semanticUiReactStrings.br = "br".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.br]
+    inline def br: "br" = "br".asInstanceOf["br"]
     
-    inline def brazil: typings.semanticUiReact.semanticUiReactStrings.brazil = "brazil".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.brazil]
+    inline def brazil: "brazil" = "brazil".asInstanceOf["brazil"]
     
-    inline def `british virgin islands`: typings.semanticUiReact.semanticUiReactStrings.`british virgin islands` = ("british virgin islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`british virgin islands`]
+    inline def `british virgin islands`: "british virgin islands" = ("british virgin islands").asInstanceOf["british virgin islands"]
     
-    inline def brunei: typings.semanticUiReact.semanticUiReactStrings.brunei = "brunei".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.brunei]
+    inline def brunei: "brunei" = "brunei".asInstanceOf["brunei"]
     
-    inline def bs: typings.semanticUiReact.semanticUiReactStrings.bs = "bs".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bs]
+    inline def bs: "bs" = "bs".asInstanceOf["bs"]
     
-    inline def bt: typings.semanticUiReact.semanticUiReactStrings.bt = "bt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bt]
+    inline def bt: "bt" = "bt".asInstanceOf["bt"]
     
-    inline def bulgaria: typings.semanticUiReact.semanticUiReactStrings.bulgaria = "bulgaria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bulgaria]
+    inline def bulgaria: "bulgaria" = "bulgaria".asInstanceOf["bulgaria"]
     
-    inline def `burkina faso`: typings.semanticUiReact.semanticUiReactStrings.`burkina faso` = ("burkina faso").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`burkina faso`]
+    inline def `burkina faso`: "burkina faso" = ("burkina faso").asInstanceOf["burkina faso"]
     
-    inline def burma: typings.semanticUiReact.semanticUiReactStrings.burma = "burma".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.burma]
+    inline def burma: "burma" = "burma".asInstanceOf["burma"]
     
-    inline def burundi: typings.semanticUiReact.semanticUiReactStrings.burundi = "burundi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.burundi]
+    inline def burundi: "burundi" = "burundi".asInstanceOf["burundi"]
     
-    inline def bv: typings.semanticUiReact.semanticUiReactStrings.bv = "bv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bv]
+    inline def bv: "bv" = "bv".asInstanceOf["bv"]
     
-    inline def bw: typings.semanticUiReact.semanticUiReactStrings.bw = "bw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bw]
+    inline def bw: "bw" = "bw".asInstanceOf["bw"]
     
-    inline def by: typings.semanticUiReact.semanticUiReactStrings.by = "by".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.by]
+    inline def by: "by" = "by".asInstanceOf["by"]
     
-    inline def bz: typings.semanticUiReact.semanticUiReactStrings.bz = "bz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bz]
+    inline def bz: "bz" = "bz".asInstanceOf["bz"]
     
-    inline def ca: typings.semanticUiReact.semanticUiReactStrings.ca = "ca".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ca]
+    inline def ca: "ca" = "ca".asInstanceOf["ca"]
     
-    inline def `caicos islands`: typings.semanticUiReact.semanticUiReactStrings.`caicos islands` = ("caicos islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`caicos islands`]
+    inline def `caicos islands`: "caicos islands" = ("caicos islands").asInstanceOf["caicos islands"]
     
-    inline def cambodia: typings.semanticUiReact.semanticUiReactStrings.cambodia = "cambodia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cambodia]
+    inline def cambodia: "cambodia" = "cambodia".asInstanceOf["cambodia"]
     
-    inline def cameroon: typings.semanticUiReact.semanticUiReactStrings.cameroon = "cameroon".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cameroon]
+    inline def cameroon: "cameroon" = "cameroon".asInstanceOf["cameroon"]
     
-    inline def canada: typings.semanticUiReact.semanticUiReactStrings.canada = "canada".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.canada]
+    inline def canada: "canada" = "canada".asInstanceOf["canada"]
     
-    inline def `cape verde`: typings.semanticUiReact.semanticUiReactStrings.`cape verde` = ("cape verde").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cape verde`]
+    inline def `cape verde`: "cape verde" = ("cape verde").asInstanceOf["cape verde"]
     
-    inline def `cayman islands`: typings.semanticUiReact.semanticUiReactStrings.`cayman islands` = ("cayman islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cayman islands`]
+    inline def `cayman islands`: "cayman islands" = ("cayman islands").asInstanceOf["cayman islands"]
     
-    inline def cc: typings.semanticUiReact.semanticUiReactStrings.cc = "cc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cc]
+    inline def cc: "cc" = "cc".asInstanceOf["cc"]
     
-    inline def cd: typings.semanticUiReact.semanticUiReactStrings.cd = "cd".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cd]
+    inline def cd: "cd" = "cd".asInstanceOf["cd"]
     
-    inline def `central african republic`: typings.semanticUiReact.semanticUiReactStrings.`central african republic` = ("central african republic").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`central african republic`]
+    inline def `central african republic`: "central african republic" = ("central african republic").asInstanceOf["central african republic"]
     
-    inline def cf: typings.semanticUiReact.semanticUiReactStrings.cf = "cf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cf]
+    inline def cf: "cf" = "cf".asInstanceOf["cf"]
     
-    inline def cg: typings.semanticUiReact.semanticUiReactStrings.cg = "cg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cg]
+    inline def cg: "cg" = "cg".asInstanceOf["cg"]
     
-    inline def ch: typings.semanticUiReact.semanticUiReactStrings.ch = "ch".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ch]
+    inline def ch: "ch" = "ch".asInstanceOf["ch"]
     
-    inline def chad: typings.semanticUiReact.semanticUiReactStrings.chad = "chad".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.chad]
+    inline def chad: "chad" = "chad".asInstanceOf["chad"]
     
-    inline def chile: typings.semanticUiReact.semanticUiReactStrings.chile = "chile".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.chile]
+    inline def chile: "chile" = "chile".asInstanceOf["chile"]
     
-    inline def china: typings.semanticUiReact.semanticUiReactStrings.china = "china".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.china]
+    inline def china: "china" = "china".asInstanceOf["china"]
     
-    inline def `christmas island`: typings.semanticUiReact.semanticUiReactStrings.`christmas island` = ("christmas island").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`christmas island`]
+    inline def `christmas island`: "christmas island" = ("christmas island").asInstanceOf["christmas island"]
     
-    inline def ci: typings.semanticUiReact.semanticUiReactStrings.ci = "ci".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ci]
+    inline def ci: "ci" = "ci".asInstanceOf["ci"]
     
-    inline def ck: typings.semanticUiReact.semanticUiReactStrings.ck = "ck".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ck]
+    inline def ck: "ck" = "ck".asInstanceOf["ck"]
     
-    inline def cl: typings.semanticUiReact.semanticUiReactStrings.cl = "cl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cl]
+    inline def cl: "cl" = "cl".asInstanceOf["cl"]
     
-    inline def cm: typings.semanticUiReact.semanticUiReactStrings.cm = "cm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cm]
+    inline def cm: "cm" = "cm".asInstanceOf["cm"]
     
-    inline def cn: typings.semanticUiReact.semanticUiReactStrings.cn = "cn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cn]
+    inline def cn: "cn" = "cn".asInstanceOf["cn"]
     
-    inline def co: typings.semanticUiReact.semanticUiReactStrings.co = "co".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.co]
+    inline def co: "co" = "co".asInstanceOf["co"]
     
-    inline def `cocos islands`: typings.semanticUiReact.semanticUiReactStrings.`cocos islands` = ("cocos islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cocos islands`]
+    inline def `cocos islands`: "cocos islands" = ("cocos islands").asInstanceOf["cocos islands"]
     
-    inline def colombia: typings.semanticUiReact.semanticUiReactStrings.colombia = "colombia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.colombia]
+    inline def colombia: "colombia" = "colombia".asInstanceOf["colombia"]
     
-    inline def comoros: typings.semanticUiReact.semanticUiReactStrings.comoros = "comoros".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.comoros]
+    inline def comoros: "comoros" = "comoros".asInstanceOf["comoros"]
     
-    inline def congo: typings.semanticUiReact.semanticUiReactStrings.congo = "congo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.congo]
+    inline def congo: "congo" = "congo".asInstanceOf["congo"]
     
-    inline def `congo brazzaville`: typings.semanticUiReact.semanticUiReactStrings.`congo brazzaville` = ("congo brazzaville").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`congo brazzaville`]
+    inline def `congo brazzaville`: "congo brazzaville" = ("congo brazzaville").asInstanceOf["congo brazzaville"]
     
-    inline def `cook islands`: typings.semanticUiReact.semanticUiReactStrings.`cook islands` = ("cook islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cook islands`]
+    inline def `cook islands`: "cook islands" = ("cook islands").asInstanceOf["cook islands"]
     
-    inline def `costa rica`: typings.semanticUiReact.semanticUiReactStrings.`costa rica` = ("costa rica").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`costa rica`]
+    inline def `costa rica`: "costa rica" = ("costa rica").asInstanceOf["costa rica"]
     
-    inline def `cote divoire`: typings.semanticUiReact.semanticUiReactStrings.`cote divoire` = ("cote divoire").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`cote divoire`]
+    inline def `cote divoire`: "cote divoire" = ("cote divoire").asInstanceOf["cote divoire"]
     
-    inline def cr: typings.semanticUiReact.semanticUiReactStrings.cr = "cr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cr]
+    inline def cr: "cr" = "cr".asInstanceOf["cr"]
     
-    inline def croatia: typings.semanticUiReact.semanticUiReactStrings.croatia = "croatia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.croatia]
+    inline def croatia: "croatia" = "croatia".asInstanceOf["croatia"]
     
-    inline def cs: typings.semanticUiReact.semanticUiReactStrings.cs = "cs".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cs]
+    inline def cs: "cs" = "cs".asInstanceOf["cs"]
     
-    inline def cu: typings.semanticUiReact.semanticUiReactStrings.cu = "cu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cu]
+    inline def cu: "cu" = "cu".asInstanceOf["cu"]
     
-    inline def cuba: typings.semanticUiReact.semanticUiReactStrings.cuba = "cuba".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cuba]
+    inline def cuba: "cuba" = "cuba".asInstanceOf["cuba"]
     
-    inline def cv: typings.semanticUiReact.semanticUiReactStrings.cv = "cv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cv]
+    inline def cv: "cv" = "cv".asInstanceOf["cv"]
     
-    inline def cx: typings.semanticUiReact.semanticUiReactStrings.cx = "cx".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cx]
+    inline def cx: "cx" = "cx".asInstanceOf["cx"]
     
-    inline def cy: typings.semanticUiReact.semanticUiReactStrings.cy = "cy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cy]
+    inline def cy: "cy" = "cy".asInstanceOf["cy"]
     
-    inline def cyprus: typings.semanticUiReact.semanticUiReactStrings.cyprus = "cyprus".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cyprus]
+    inline def cyprus: "cyprus" = "cyprus".asInstanceOf["cyprus"]
     
-    inline def cz: typings.semanticUiReact.semanticUiReactStrings.cz = "cz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.cz]
+    inline def cz: "cz" = "cz".asInstanceOf["cz"]
     
-    inline def `czech republic`: typings.semanticUiReact.semanticUiReactStrings.`czech republic` = ("czech republic").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`czech republic`]
+    inline def `czech republic`: "czech republic" = ("czech republic").asInstanceOf["czech republic"]
     
-    inline def de: typings.semanticUiReact.semanticUiReactStrings.de = "de".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.de]
+    inline def de: "de" = "de".asInstanceOf["de"]
     
-    inline def denmark: typings.semanticUiReact.semanticUiReactStrings.denmark = "denmark".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.denmark]
+    inline def denmark: "denmark" = "denmark".asInstanceOf["denmark"]
     
-    inline def dj: typings.semanticUiReact.semanticUiReactStrings.dj = "dj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dj]
+    inline def dj: "dj" = "dj".asInstanceOf["dj"]
     
-    inline def djibouti: typings.semanticUiReact.semanticUiReactStrings.djibouti = "djibouti".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.djibouti]
+    inline def djibouti: "djibouti" = "djibouti".asInstanceOf["djibouti"]
     
-    inline def dk: typings.semanticUiReact.semanticUiReactStrings.dk = "dk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dk]
+    inline def dk: "dk" = "dk".asInstanceOf["dk"]
     
-    inline def dm: typings.semanticUiReact.semanticUiReactStrings.dm = "dm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dm]
+    inline def dm: "dm" = "dm".asInstanceOf["dm"]
     
-    inline def `do`: typings.semanticUiReact.semanticUiReactStrings.`do` = "do".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`do`]
+    inline def `do`: "do" = "do".asInstanceOf["do"]
     
-    inline def dominica: typings.semanticUiReact.semanticUiReactStrings.dominica = "dominica".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dominica]
+    inline def dominica: "dominica" = "dominica".asInstanceOf["dominica"]
     
-    inline def `dominican republic`: typings.semanticUiReact.semanticUiReactStrings.`dominican republic` = ("dominican republic").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`dominican republic`]
+    inline def `dominican republic`: "dominican republic" = ("dominican republic").asInstanceOf["dominican republic"]
     
-    inline def dz: typings.semanticUiReact.semanticUiReactStrings.dz = "dz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.dz]
+    inline def dz: "dz" = "dz".asInstanceOf["dz"]
     
-    inline def ec: typings.semanticUiReact.semanticUiReactStrings.ec = "ec".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ec]
+    inline def ec: "ec" = "ec".asInstanceOf["ec"]
     
-    inline def ecuador: typings.semanticUiReact.semanticUiReactStrings.ecuador = "ecuador".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ecuador]
+    inline def ecuador: "ecuador" = "ecuador".asInstanceOf["ecuador"]
     
-    inline def ee: typings.semanticUiReact.semanticUiReactStrings.ee = "ee".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ee]
+    inline def ee: "ee" = "ee".asInstanceOf["ee"]
     
-    inline def eg: typings.semanticUiReact.semanticUiReactStrings.eg = "eg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.eg]
+    inline def eg: "eg" = "eg".asInstanceOf["eg"]
     
-    inline def egypt: typings.semanticUiReact.semanticUiReactStrings.egypt = "egypt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.egypt]
+    inline def egypt: "egypt" = "egypt".asInstanceOf["egypt"]
     
-    inline def eh: typings.semanticUiReact.semanticUiReactStrings.eh = "eh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.eh]
+    inline def eh: "eh" = "eh".asInstanceOf["eh"]
     
-    inline def `el salvador`: typings.semanticUiReact.semanticUiReactStrings.`el salvador` = ("el salvador").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`el salvador`]
+    inline def `el salvador`: "el salvador" = ("el salvador").asInstanceOf["el salvador"]
     
-    inline def england: typings.semanticUiReact.semanticUiReactStrings.england = "england".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.england]
+    inline def england: "england" = "england".asInstanceOf["england"]
     
-    inline def `equatorial guinea`: typings.semanticUiReact.semanticUiReactStrings.`equatorial guinea` = ("equatorial guinea").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`equatorial guinea`]
+    inline def `equatorial guinea`: "equatorial guinea" = ("equatorial guinea").asInstanceOf["equatorial guinea"]
     
-    inline def er: typings.semanticUiReact.semanticUiReactStrings.er = "er".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.er]
+    inline def er: "er" = "er".asInstanceOf["er"]
     
-    inline def eritrea: typings.semanticUiReact.semanticUiReactStrings.eritrea = "eritrea".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.eritrea]
+    inline def eritrea: "eritrea" = "eritrea".asInstanceOf["eritrea"]
     
-    inline def es: typings.semanticUiReact.semanticUiReactStrings.es = "es".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.es]
+    inline def es: "es" = "es".asInstanceOf["es"]
     
-    inline def estonia: typings.semanticUiReact.semanticUiReactStrings.estonia = "estonia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.estonia]
+    inline def estonia: "estonia" = "estonia".asInstanceOf["estonia"]
     
-    inline def et: typings.semanticUiReact.semanticUiReactStrings.et = "et".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.et]
+    inline def et: "et" = "et".asInstanceOf["et"]
     
-    inline def ethiopia: typings.semanticUiReact.semanticUiReactStrings.ethiopia = "ethiopia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ethiopia]
+    inline def ethiopia: "ethiopia" = "ethiopia".asInstanceOf["ethiopia"]
     
-    inline def eu: typings.semanticUiReact.semanticUiReactStrings.eu = "eu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.eu]
+    inline def eu: "eu" = "eu".asInstanceOf["eu"]
     
-    inline def `european union`: typings.semanticUiReact.semanticUiReactStrings.`european union` = ("european union").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`european union`]
+    inline def `european union`: "european union" = ("european union").asInstanceOf["european union"]
     
-    inline def `falkland islands`: typings.semanticUiReact.semanticUiReactStrings.`falkland islands` = ("falkland islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`falkland islands`]
+    inline def `falkland islands`: "falkland islands" = ("falkland islands").asInstanceOf["falkland islands"]
     
-    inline def `faroe islands`: typings.semanticUiReact.semanticUiReactStrings.`faroe islands` = ("faroe islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`faroe islands`]
+    inline def `faroe islands`: "faroe islands" = ("faroe islands").asInstanceOf["faroe islands"]
     
-    inline def fi: typings.semanticUiReact.semanticUiReactStrings.fi = "fi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fi]
+    inline def fi: "fi" = "fi".asInstanceOf["fi"]
     
-    inline def fiji: typings.semanticUiReact.semanticUiReactStrings.fiji = "fiji".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fiji]
+    inline def fiji: "fiji" = "fiji".asInstanceOf["fiji"]
     
-    inline def finland: typings.semanticUiReact.semanticUiReactStrings.finland = "finland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.finland]
+    inline def finland: "finland" = "finland".asInstanceOf["finland"]
     
-    inline def fj: typings.semanticUiReact.semanticUiReactStrings.fj = "fj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fj]
+    inline def fj: "fj" = "fj".asInstanceOf["fj"]
     
-    inline def fk: typings.semanticUiReact.semanticUiReactStrings.fk = "fk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fk]
+    inline def fk: "fk" = "fk".asInstanceOf["fk"]
     
-    inline def fm: typings.semanticUiReact.semanticUiReactStrings.fm = "fm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fm]
+    inline def fm: "fm" = "fm".asInstanceOf["fm"]
     
-    inline def fo: typings.semanticUiReact.semanticUiReactStrings.fo = "fo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fo]
+    inline def fo: "fo" = "fo".asInstanceOf["fo"]
     
-    inline def fr: typings.semanticUiReact.semanticUiReactStrings.fr = "fr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.fr]
+    inline def fr: "fr" = "fr".asInstanceOf["fr"]
     
-    inline def france: typings.semanticUiReact.semanticUiReactStrings.france = "france".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.france]
+    inline def france: "france" = "france".asInstanceOf["france"]
     
-    inline def `french guiana`: typings.semanticUiReact.semanticUiReactStrings.`french guiana` = ("french guiana").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`french guiana`]
+    inline def `french guiana`: "french guiana" = ("french guiana").asInstanceOf["french guiana"]
     
-    inline def `french polynesia`: typings.semanticUiReact.semanticUiReactStrings.`french polynesia` = ("french polynesia").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`french polynesia`]
+    inline def `french polynesia`: "french polynesia" = ("french polynesia").asInstanceOf["french polynesia"]
     
-    inline def `french territories`: typings.semanticUiReact.semanticUiReactStrings.`french territories` = ("french territories").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`french territories`]
+    inline def `french territories`: "french territories" = ("french territories").asInstanceOf["french territories"]
     
-    inline def ga: typings.semanticUiReact.semanticUiReactStrings.ga = "ga".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ga]
+    inline def ga: "ga" = "ga".asInstanceOf["ga"]
     
-    inline def gabon: typings.semanticUiReact.semanticUiReactStrings.gabon = "gabon".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gabon]
+    inline def gabon: "gabon" = "gabon".asInstanceOf["gabon"]
     
-    inline def gambia: typings.semanticUiReact.semanticUiReactStrings.gambia = "gambia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gambia]
+    inline def gambia: "gambia" = "gambia".asInstanceOf["gambia"]
     
-    inline def gb: typings.semanticUiReact.semanticUiReactStrings.gb = "gb".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gb]
+    inline def gb: "gb" = "gb".asInstanceOf["gb"]
     
-    inline def `gb eng`: typings.semanticUiReact.semanticUiReactStrings.`gb eng` = ("gb eng").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`gb eng`]
+    inline def `gb eng`: "gb eng" = ("gb eng").asInstanceOf["gb eng"]
     
-    inline def `gb sct`: typings.semanticUiReact.semanticUiReactStrings.`gb sct` = ("gb sct").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`gb sct`]
+    inline def `gb sct`: "gb sct" = ("gb sct").asInstanceOf["gb sct"]
     
-    inline def `gb wls`: typings.semanticUiReact.semanticUiReactStrings.`gb wls` = ("gb wls").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`gb wls`]
+    inline def `gb wls`: "gb wls" = ("gb wls").asInstanceOf["gb wls"]
     
-    inline def gd: typings.semanticUiReact.semanticUiReactStrings.gd = "gd".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gd]
+    inline def gd: "gd" = "gd".asInstanceOf["gd"]
     
-    inline def ge: typings.semanticUiReact.semanticUiReactStrings.ge = "ge".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ge]
+    inline def ge: "ge" = "ge".asInstanceOf["ge"]
     
-    inline def georgia: typings.semanticUiReact.semanticUiReactStrings.georgia = "georgia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.georgia]
+    inline def georgia: "georgia" = "georgia".asInstanceOf["georgia"]
     
-    inline def germany: typings.semanticUiReact.semanticUiReactStrings.germany = "germany".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.germany]
+    inline def germany: "germany" = "germany".asInstanceOf["germany"]
     
-    inline def gf: typings.semanticUiReact.semanticUiReactStrings.gf = "gf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gf]
+    inline def gf: "gf" = "gf".asInstanceOf["gf"]
     
-    inline def gh: typings.semanticUiReact.semanticUiReactStrings.gh = "gh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gh]
+    inline def gh: "gh" = "gh".asInstanceOf["gh"]
     
-    inline def ghana: typings.semanticUiReact.semanticUiReactStrings.ghana = "ghana".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ghana]
+    inline def ghana: "ghana" = "ghana".asInstanceOf["ghana"]
     
-    inline def gi: typings.semanticUiReact.semanticUiReactStrings.gi = "gi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gi]
+    inline def gi: "gi" = "gi".asInstanceOf["gi"]
     
-    inline def gibraltar: typings.semanticUiReact.semanticUiReactStrings.gibraltar = "gibraltar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gibraltar]
+    inline def gibraltar: "gibraltar" = "gibraltar".asInstanceOf["gibraltar"]
     
-    inline def gl: typings.semanticUiReact.semanticUiReactStrings.gl = "gl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gl]
+    inline def gl: "gl" = "gl".asInstanceOf["gl"]
     
-    inline def gm: typings.semanticUiReact.semanticUiReactStrings.gm = "gm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gm]
+    inline def gm: "gm" = "gm".asInstanceOf["gm"]
     
-    inline def gn: typings.semanticUiReact.semanticUiReactStrings.gn = "gn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gn]
+    inline def gn: "gn" = "gn".asInstanceOf["gn"]
     
-    inline def gp: typings.semanticUiReact.semanticUiReactStrings.gp = "gp".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gp]
+    inline def gp: "gp" = "gp".asInstanceOf["gp"]
     
-    inline def gq: typings.semanticUiReact.semanticUiReactStrings.gq = "gq".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gq]
+    inline def gq: "gq" = "gq".asInstanceOf["gq"]
     
-    inline def gr: typings.semanticUiReact.semanticUiReactStrings.gr = "gr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gr]
+    inline def gr: "gr" = "gr".asInstanceOf["gr"]
     
-    inline def greece: typings.semanticUiReact.semanticUiReactStrings.greece = "greece".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.greece]
+    inline def greece: "greece" = "greece".asInstanceOf["greece"]
     
-    inline def greenland: typings.semanticUiReact.semanticUiReactStrings.greenland = "greenland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.greenland]
+    inline def greenland: "greenland" = "greenland".asInstanceOf["greenland"]
     
-    inline def grenada: typings.semanticUiReact.semanticUiReactStrings.grenada = "grenada".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.grenada]
+    inline def grenada: "grenada" = "grenada".asInstanceOf["grenada"]
     
-    inline def gs: typings.semanticUiReact.semanticUiReactStrings.gs = "gs".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gs]
+    inline def gs: "gs" = "gs".asInstanceOf["gs"]
     
-    inline def gt: typings.semanticUiReact.semanticUiReactStrings.gt = "gt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gt]
+    inline def gt: "gt" = "gt".asInstanceOf["gt"]
     
-    inline def gu: typings.semanticUiReact.semanticUiReactStrings.gu = "gu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gu]
+    inline def gu: "gu" = "gu".asInstanceOf["gu"]
     
-    inline def guadeloupe: typings.semanticUiReact.semanticUiReactStrings.guadeloupe = "guadeloupe".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guadeloupe]
+    inline def guadeloupe: "guadeloupe" = "guadeloupe".asInstanceOf["guadeloupe"]
     
-    inline def guam: typings.semanticUiReact.semanticUiReactStrings.guam = "guam".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guam]
+    inline def guam: "guam" = "guam".asInstanceOf["guam"]
     
-    inline def guatemala: typings.semanticUiReact.semanticUiReactStrings.guatemala = "guatemala".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guatemala]
+    inline def guatemala: "guatemala" = "guatemala".asInstanceOf["guatemala"]
     
-    inline def guinea: typings.semanticUiReact.semanticUiReactStrings.guinea = "guinea".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guinea]
+    inline def guinea: "guinea" = "guinea".asInstanceOf["guinea"]
     
-    inline def `guinea-bissau`: typings.semanticUiReact.semanticUiReactStrings.`guinea-bissau` = "guinea-bissau".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`guinea-bissau`]
+    inline def `guinea-bissau`: "guinea-bissau" = "guinea-bissau".asInstanceOf["guinea-bissau"]
     
-    inline def guyana: typings.semanticUiReact.semanticUiReactStrings.guyana = "guyana".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.guyana]
+    inline def guyana: "guyana" = "guyana".asInstanceOf["guyana"]
     
-    inline def gw: typings.semanticUiReact.semanticUiReactStrings.gw = "gw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gw]
+    inline def gw: "gw" = "gw".asInstanceOf["gw"]
     
-    inline def gy: typings.semanticUiReact.semanticUiReactStrings.gy = "gy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gy]
+    inline def gy: "gy" = "gy".asInstanceOf["gy"]
     
-    inline def haiti: typings.semanticUiReact.semanticUiReactStrings.haiti = "haiti".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.haiti]
+    inline def haiti: "haiti" = "haiti".asInstanceOf["haiti"]
     
-    inline def `heard island`: typings.semanticUiReact.semanticUiReactStrings.`heard island` = ("heard island").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`heard island`]
+    inline def `heard island`: "heard island" = ("heard island").asInstanceOf["heard island"]
     
-    inline def hk: typings.semanticUiReact.semanticUiReactStrings.hk = "hk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hk]
+    inline def hk: "hk" = "hk".asInstanceOf["hk"]
     
-    inline def hm: typings.semanticUiReact.semanticUiReactStrings.hm = "hm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hm]
+    inline def hm: "hm" = "hm".asInstanceOf["hm"]
     
-    inline def hn: typings.semanticUiReact.semanticUiReactStrings.hn = "hn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hn]
+    inline def hn: "hn" = "hn".asInstanceOf["hn"]
     
-    inline def honduras: typings.semanticUiReact.semanticUiReactStrings.honduras = "honduras".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.honduras]
+    inline def honduras: "honduras" = "honduras".asInstanceOf["honduras"]
     
-    inline def `hong kong`: typings.semanticUiReact.semanticUiReactStrings.`hong kong` = ("hong kong").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`hong kong`]
+    inline def `hong kong`: "hong kong" = ("hong kong").asInstanceOf["hong kong"]
     
-    inline def hr: typings.semanticUiReact.semanticUiReactStrings.hr = "hr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hr]
+    inline def hr: "hr" = "hr".asInstanceOf["hr"]
     
-    inline def ht: typings.semanticUiReact.semanticUiReactStrings.ht = "ht".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ht]
+    inline def ht: "ht" = "ht".asInstanceOf["ht"]
     
-    inline def hu: typings.semanticUiReact.semanticUiReactStrings.hu = "hu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hu]
+    inline def hu: "hu" = "hu".asInstanceOf["hu"]
     
-    inline def hungary: typings.semanticUiReact.semanticUiReactStrings.hungary = "hungary".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.hungary]
+    inline def hungary: "hungary" = "hungary".asInstanceOf["hungary"]
     
-    inline def iceland: typings.semanticUiReact.semanticUiReactStrings.iceland = "iceland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.iceland]
+    inline def iceland: "iceland" = "iceland".asInstanceOf["iceland"]
     
-    inline def id: typings.semanticUiReact.semanticUiReactStrings.id = "id".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.id]
+    inline def id: "id" = "id".asInstanceOf["id"]
     
-    inline def ie: typings.semanticUiReact.semanticUiReactStrings.ie = "ie".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ie]
+    inline def ie: "ie" = "ie".asInstanceOf["ie"]
     
-    inline def il: typings.semanticUiReact.semanticUiReactStrings.il = "il".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.il]
+    inline def il: "il" = "il".asInstanceOf["il"]
     
-    inline def in: typings.semanticUiReact.semanticUiReactStrings.in = "in".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.in]
+    inline def in: "in" = "in".asInstanceOf["in"]
     
-    inline def india: typings.semanticUiReact.semanticUiReactStrings.india = "india".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.india]
+    inline def india: "india" = "india".asInstanceOf["india"]
     
-    inline def `indian ocean territory`: typings.semanticUiReact.semanticUiReactStrings.`indian ocean territory` = ("indian ocean territory").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`indian ocean territory`]
+    inline def `indian ocean territory`: "indian ocean territory" = ("indian ocean territory").asInstanceOf["indian ocean territory"]
     
-    inline def indonesia: typings.semanticUiReact.semanticUiReactStrings.indonesia = "indonesia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.indonesia]
+    inline def indonesia: "indonesia" = "indonesia".asInstanceOf["indonesia"]
     
-    inline def io: typings.semanticUiReact.semanticUiReactStrings.io = "io".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.io]
+    inline def io: "io" = "io".asInstanceOf["io"]
     
-    inline def iq: typings.semanticUiReact.semanticUiReactStrings.iq = "iq".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.iq]
+    inline def iq: "iq" = "iq".asInstanceOf["iq"]
     
-    inline def ir: typings.semanticUiReact.semanticUiReactStrings.ir = "ir".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ir]
+    inline def ir: "ir" = "ir".asInstanceOf["ir"]
     
-    inline def iran: typings.semanticUiReact.semanticUiReactStrings.iran = "iran".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.iran]
+    inline def iran: "iran" = "iran".asInstanceOf["iran"]
     
-    inline def iraq: typings.semanticUiReact.semanticUiReactStrings.iraq = "iraq".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.iraq]
+    inline def iraq: "iraq" = "iraq".asInstanceOf["iraq"]
     
-    inline def ireland: typings.semanticUiReact.semanticUiReactStrings.ireland = "ireland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ireland]
+    inline def ireland: "ireland" = "ireland".asInstanceOf["ireland"]
     
-    inline def is: typings.semanticUiReact.semanticUiReactStrings.is = "is".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.is]
+    inline def is: "is" = "is".asInstanceOf["is"]
     
-    inline def israel: typings.semanticUiReact.semanticUiReactStrings.israel = "israel".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.israel]
+    inline def israel: "israel" = "israel".asInstanceOf["israel"]
     
-    inline def it: typings.semanticUiReact.semanticUiReactStrings.it = "it".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.it]
+    inline def it: "it" = "it".asInstanceOf["it"]
     
-    inline def italy: typings.semanticUiReact.semanticUiReactStrings.italy = "italy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.italy]
+    inline def italy: "italy" = "italy".asInstanceOf["italy"]
     
-    inline def jamaica: typings.semanticUiReact.semanticUiReactStrings.jamaica = "jamaica".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jamaica]
+    inline def jamaica: "jamaica" = "jamaica".asInstanceOf["jamaica"]
     
-    inline def `jan mayen`: typings.semanticUiReact.semanticUiReactStrings.`jan mayen` = ("jan mayen").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`jan mayen`]
+    inline def `jan mayen`: "jan mayen" = ("jan mayen").asInstanceOf["jan mayen"]
     
-    inline def japan: typings.semanticUiReact.semanticUiReactStrings.japan = "japan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.japan]
+    inline def japan: "japan" = "japan".asInstanceOf["japan"]
     
-    inline def jm: typings.semanticUiReact.semanticUiReactStrings.jm = "jm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jm]
+    inline def jm: "jm" = "jm".asInstanceOf["jm"]
     
-    inline def jo: typings.semanticUiReact.semanticUiReactStrings.jo = "jo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jo]
+    inline def jo: "jo" = "jo".asInstanceOf["jo"]
     
-    inline def jordan: typings.semanticUiReact.semanticUiReactStrings.jordan = "jordan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jordan]
+    inline def jordan: "jordan" = "jordan".asInstanceOf["jordan"]
     
-    inline def jp: typings.semanticUiReact.semanticUiReactStrings.jp = "jp".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jp]
+    inline def jp: "jp" = "jp".asInstanceOf["jp"]
     
-    inline def kazakhstan: typings.semanticUiReact.semanticUiReactStrings.kazakhstan = "kazakhstan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kazakhstan]
+    inline def kazakhstan: "kazakhstan" = "kazakhstan".asInstanceOf["kazakhstan"]
     
-    inline def ke: typings.semanticUiReact.semanticUiReactStrings.ke = "ke".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ke]
+    inline def ke: "ke" = "ke".asInstanceOf["ke"]
     
-    inline def kenya: typings.semanticUiReact.semanticUiReactStrings.kenya = "kenya".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kenya]
+    inline def kenya: "kenya" = "kenya".asInstanceOf["kenya"]
     
-    inline def kg: typings.semanticUiReact.semanticUiReactStrings.kg = "kg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kg]
+    inline def kg: "kg" = "kg".asInstanceOf["kg"]
     
-    inline def kh: typings.semanticUiReact.semanticUiReactStrings.kh = "kh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kh]
+    inline def kh: "kh" = "kh".asInstanceOf["kh"]
     
-    inline def ki: typings.semanticUiReact.semanticUiReactStrings.ki = "ki".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ki]
+    inline def ki: "ki" = "ki".asInstanceOf["ki"]
     
-    inline def kiribati: typings.semanticUiReact.semanticUiReactStrings.kiribati = "kiribati".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kiribati]
+    inline def kiribati: "kiribati" = "kiribati".asInstanceOf["kiribati"]
     
-    inline def km: typings.semanticUiReact.semanticUiReactStrings.km = "km".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.km]
+    inline def km: "km" = "km".asInstanceOf["km"]
     
-    inline def kn: typings.semanticUiReact.semanticUiReactStrings.kn = "kn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kn]
+    inline def kn: "kn" = "kn".asInstanceOf["kn"]
     
-    inline def kp: typings.semanticUiReact.semanticUiReactStrings.kp = "kp".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kp]
+    inline def kp: "kp" = "kp".asInstanceOf["kp"]
     
-    inline def kr: typings.semanticUiReact.semanticUiReactStrings.kr = "kr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kr]
+    inline def kr: "kr" = "kr".asInstanceOf["kr"]
     
-    inline def kuwait: typings.semanticUiReact.semanticUiReactStrings.kuwait = "kuwait".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kuwait]
+    inline def kuwait: "kuwait" = "kuwait".asInstanceOf["kuwait"]
     
-    inline def kw: typings.semanticUiReact.semanticUiReactStrings.kw = "kw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kw]
+    inline def kw: "kw" = "kw".asInstanceOf["kw"]
     
-    inline def ky: typings.semanticUiReact.semanticUiReactStrings.ky = "ky".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ky]
+    inline def ky: "ky" = "ky".asInstanceOf["ky"]
     
-    inline def kyrgyzstan: typings.semanticUiReact.semanticUiReactStrings.kyrgyzstan = "kyrgyzstan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kyrgyzstan]
+    inline def kyrgyzstan: "kyrgyzstan" = "kyrgyzstan".asInstanceOf["kyrgyzstan"]
     
-    inline def kz: typings.semanticUiReact.semanticUiReactStrings.kz = "kz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.kz]
+    inline def kz: "kz" = "kz".asInstanceOf["kz"]
     
-    inline def la: typings.semanticUiReact.semanticUiReactStrings.la = "la".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.la]
+    inline def la: "la" = "la".asInstanceOf["la"]
     
-    inline def laos: typings.semanticUiReact.semanticUiReactStrings.laos = "laos".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.laos]
+    inline def laos: "laos" = "laos".asInstanceOf["laos"]
     
-    inline def latvia: typings.semanticUiReact.semanticUiReactStrings.latvia = "latvia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.latvia]
+    inline def latvia: "latvia" = "latvia".asInstanceOf["latvia"]
     
-    inline def lb: typings.semanticUiReact.semanticUiReactStrings.lb = "lb".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lb]
+    inline def lb: "lb" = "lb".asInstanceOf["lb"]
     
-    inline def lc: typings.semanticUiReact.semanticUiReactStrings.lc = "lc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lc]
+    inline def lc: "lc" = "lc".asInstanceOf["lc"]
     
-    inline def lebanon: typings.semanticUiReact.semanticUiReactStrings.lebanon = "lebanon".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lebanon]
+    inline def lebanon: "lebanon" = "lebanon".asInstanceOf["lebanon"]
     
-    inline def lesotho: typings.semanticUiReact.semanticUiReactStrings.lesotho = "lesotho".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lesotho]
+    inline def lesotho: "lesotho" = "lesotho".asInstanceOf["lesotho"]
     
-    inline def li: typings.semanticUiReact.semanticUiReactStrings.li = "li".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.li]
+    inline def li: "li" = "li".asInstanceOf["li"]
     
-    inline def liberia: typings.semanticUiReact.semanticUiReactStrings.liberia = "liberia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.liberia]
+    inline def liberia: "liberia" = "liberia".asInstanceOf["liberia"]
     
-    inline def libya: typings.semanticUiReact.semanticUiReactStrings.libya = "libya".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.libya]
+    inline def libya: "libya" = "libya".asInstanceOf["libya"]
     
-    inline def liechtenstein: typings.semanticUiReact.semanticUiReactStrings.liechtenstein = "liechtenstein".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.liechtenstein]
+    inline def liechtenstein: "liechtenstein" = "liechtenstein".asInstanceOf["liechtenstein"]
     
-    inline def lithuania: typings.semanticUiReact.semanticUiReactStrings.lithuania = "lithuania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lithuania]
+    inline def lithuania: "lithuania" = "lithuania".asInstanceOf["lithuania"]
     
-    inline def lk: typings.semanticUiReact.semanticUiReactStrings.lk = "lk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lk]
+    inline def lk: "lk" = "lk".asInstanceOf["lk"]
     
-    inline def lr: typings.semanticUiReact.semanticUiReactStrings.lr = "lr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lr]
+    inline def lr: "lr" = "lr".asInstanceOf["lr"]
     
-    inline def ls: typings.semanticUiReact.semanticUiReactStrings.ls = "ls".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ls]
+    inline def ls: "ls" = "ls".asInstanceOf["ls"]
     
-    inline def lt: typings.semanticUiReact.semanticUiReactStrings.lt = "lt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lt]
+    inline def lt: "lt" = "lt".asInstanceOf["lt"]
     
-    inline def lu: typings.semanticUiReact.semanticUiReactStrings.lu = "lu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lu]
+    inline def lu: "lu" = "lu".asInstanceOf["lu"]
     
-    inline def luxembourg: typings.semanticUiReact.semanticUiReactStrings.luxembourg = "luxembourg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.luxembourg]
+    inline def luxembourg: "luxembourg" = "luxembourg".asInstanceOf["luxembourg"]
     
-    inline def lv: typings.semanticUiReact.semanticUiReactStrings.lv = "lv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.lv]
+    inline def lv: "lv" = "lv".asInstanceOf["lv"]
     
-    inline def ly: typings.semanticUiReact.semanticUiReactStrings.ly = "ly".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ly]
+    inline def ly: "ly" = "ly".asInstanceOf["ly"]
     
-    inline def ma: typings.semanticUiReact.semanticUiReactStrings.ma = "ma".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ma]
+    inline def ma: "ma" = "ma".asInstanceOf["ma"]
     
-    inline def macau: typings.semanticUiReact.semanticUiReactStrings.macau = "macau".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.macau]
+    inline def macau: "macau" = "macau".asInstanceOf["macau"]
     
-    inline def macedonia: typings.semanticUiReact.semanticUiReactStrings.macedonia = "macedonia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.macedonia]
+    inline def macedonia: "macedonia" = "macedonia".asInstanceOf["macedonia"]
     
-    inline def madagascar: typings.semanticUiReact.semanticUiReactStrings.madagascar = "madagascar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.madagascar]
+    inline def madagascar: "madagascar" = "madagascar".asInstanceOf["madagascar"]
     
-    inline def malawi: typings.semanticUiReact.semanticUiReactStrings.malawi = "malawi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.malawi]
+    inline def malawi: "malawi" = "malawi".asInstanceOf["malawi"]
     
-    inline def malaysia: typings.semanticUiReact.semanticUiReactStrings.malaysia = "malaysia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.malaysia]
+    inline def malaysia: "malaysia" = "malaysia".asInstanceOf["malaysia"]
     
-    inline def maldives: typings.semanticUiReact.semanticUiReactStrings.maldives = "maldives".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.maldives]
+    inline def maldives: "maldives" = "maldives".asInstanceOf["maldives"]
     
-    inline def mali: typings.semanticUiReact.semanticUiReactStrings.mali = "mali".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mali]
+    inline def mali: "mali" = "mali".asInstanceOf["mali"]
     
-    inline def malta: typings.semanticUiReact.semanticUiReactStrings.malta = "malta".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.malta]
+    inline def malta: "malta" = "malta".asInstanceOf["malta"]
     
-    inline def `marshall islands`: typings.semanticUiReact.semanticUiReactStrings.`marshall islands` = ("marshall islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`marshall islands`]
+    inline def `marshall islands`: "marshall islands" = ("marshall islands").asInstanceOf["marshall islands"]
     
-    inline def martinique: typings.semanticUiReact.semanticUiReactStrings.martinique = "martinique".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.martinique]
+    inline def martinique: "martinique" = "martinique".asInstanceOf["martinique"]
     
-    inline def mauritania: typings.semanticUiReact.semanticUiReactStrings.mauritania = "mauritania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mauritania]
+    inline def mauritania: "mauritania" = "mauritania".asInstanceOf["mauritania"]
     
-    inline def mauritius: typings.semanticUiReact.semanticUiReactStrings.mauritius = "mauritius".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mauritius]
+    inline def mauritius: "mauritius" = "mauritius".asInstanceOf["mauritius"]
     
-    inline def mayotte: typings.semanticUiReact.semanticUiReactStrings.mayotte = "mayotte".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mayotte]
+    inline def mayotte: "mayotte" = "mayotte".asInstanceOf["mayotte"]
     
-    inline def mc: typings.semanticUiReact.semanticUiReactStrings.mc = "mc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mc]
+    inline def mc: "mc" = "mc".asInstanceOf["mc"]
     
-    inline def md: typings.semanticUiReact.semanticUiReactStrings.md = "md".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.md]
+    inline def md: "md" = "md".asInstanceOf["md"]
     
-    inline def me: typings.semanticUiReact.semanticUiReactStrings.me = "me".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.me]
+    inline def me: "me" = "me".asInstanceOf["me"]
     
-    inline def mexico: typings.semanticUiReact.semanticUiReactStrings.mexico = "mexico".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mexico]
+    inline def mexico: "mexico" = "mexico".asInstanceOf["mexico"]
     
-    inline def mg: typings.semanticUiReact.semanticUiReactStrings.mg = "mg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mg]
+    inline def mg: "mg" = "mg".asInstanceOf["mg"]
     
-    inline def mh: typings.semanticUiReact.semanticUiReactStrings.mh = "mh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mh]
+    inline def mh: "mh" = "mh".asInstanceOf["mh"]
     
-    inline def micronesia: typings.semanticUiReact.semanticUiReactStrings.micronesia = "micronesia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.micronesia]
+    inline def micronesia: "micronesia" = "micronesia".asInstanceOf["micronesia"]
     
-    inline def mk: typings.semanticUiReact.semanticUiReactStrings.mk = "mk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mk]
+    inline def mk: "mk" = "mk".asInstanceOf["mk"]
     
-    inline def ml: typings.semanticUiReact.semanticUiReactStrings.ml = "ml".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ml]
+    inline def ml: "ml" = "ml".asInstanceOf["ml"]
     
-    inline def mm: typings.semanticUiReact.semanticUiReactStrings.mm = "mm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mm]
+    inline def mm: "mm" = "mm".asInstanceOf["mm"]
     
-    inline def mn: typings.semanticUiReact.semanticUiReactStrings.mn = "mn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mn]
+    inline def mn: "mn" = "mn".asInstanceOf["mn"]
     
-    inline def mo: typings.semanticUiReact.semanticUiReactStrings.mo = "mo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mo]
+    inline def mo: "mo" = "mo".asInstanceOf["mo"]
     
-    inline def moldova: typings.semanticUiReact.semanticUiReactStrings.moldova = "moldova".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.moldova]
+    inline def moldova: "moldova" = "moldova".asInstanceOf["moldova"]
     
-    inline def monaco: typings.semanticUiReact.semanticUiReactStrings.monaco = "monaco".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.monaco]
+    inline def monaco: "monaco" = "monaco".asInstanceOf["monaco"]
     
-    inline def mongolia: typings.semanticUiReact.semanticUiReactStrings.mongolia = "mongolia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mongolia]
+    inline def mongolia: "mongolia" = "mongolia".asInstanceOf["mongolia"]
     
-    inline def montenegro: typings.semanticUiReact.semanticUiReactStrings.montenegro = "montenegro".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.montenegro]
+    inline def montenegro: "montenegro" = "montenegro".asInstanceOf["montenegro"]
     
-    inline def montserrat: typings.semanticUiReact.semanticUiReactStrings.montserrat = "montserrat".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.montserrat]
+    inline def montserrat: "montserrat" = "montserrat".asInstanceOf["montserrat"]
     
-    inline def morocco: typings.semanticUiReact.semanticUiReactStrings.morocco = "morocco".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.morocco]
+    inline def morocco: "morocco" = "morocco".asInstanceOf["morocco"]
     
-    inline def mozambique: typings.semanticUiReact.semanticUiReactStrings.mozambique = "mozambique".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mozambique]
+    inline def mozambique: "mozambique" = "mozambique".asInstanceOf["mozambique"]
     
-    inline def mp: typings.semanticUiReact.semanticUiReactStrings.mp = "mp".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mp]
+    inline def mp: "mp" = "mp".asInstanceOf["mp"]
     
-    inline def mq: typings.semanticUiReact.semanticUiReactStrings.mq = "mq".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mq]
+    inline def mq: "mq" = "mq".asInstanceOf["mq"]
     
-    inline def mr: typings.semanticUiReact.semanticUiReactStrings.mr = "mr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mr]
+    inline def mr: "mr" = "mr".asInstanceOf["mr"]
     
-    inline def ms: typings.semanticUiReact.semanticUiReactStrings.ms = "ms".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ms]
+    inline def ms: "ms" = "ms".asInstanceOf["ms"]
     
-    inline def mt: typings.semanticUiReact.semanticUiReactStrings.mt = "mt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mt]
+    inline def mt: "mt" = "mt".asInstanceOf["mt"]
     
-    inline def mu: typings.semanticUiReact.semanticUiReactStrings.mu = "mu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mu]
+    inline def mu: "mu" = "mu".asInstanceOf["mu"]
     
-    inline def mv: typings.semanticUiReact.semanticUiReactStrings.mv = "mv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mv]
+    inline def mv: "mv" = "mv".asInstanceOf["mv"]
     
-    inline def mw: typings.semanticUiReact.semanticUiReactStrings.mw = "mw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mw]
+    inline def mw: "mw" = "mw".asInstanceOf["mw"]
     
-    inline def mx: typings.semanticUiReact.semanticUiReactStrings.mx = "mx".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mx]
+    inline def mx: "mx" = "mx".asInstanceOf["mx"]
     
-    inline def my: typings.semanticUiReact.semanticUiReactStrings.my = "my".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.my]
+    inline def my: "my" = "my".asInstanceOf["my"]
     
-    inline def myanmar: typings.semanticUiReact.semanticUiReactStrings.myanmar = "myanmar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.myanmar]
+    inline def myanmar: "myanmar" = "myanmar".asInstanceOf["myanmar"]
     
-    inline def mz: typings.semanticUiReact.semanticUiReactStrings.mz = "mz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.mz]
+    inline def mz: "mz" = "mz".asInstanceOf["mz"]
     
-    inline def na: typings.semanticUiReact.semanticUiReactStrings.na = "na".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.na]
+    inline def na: "na" = "na".asInstanceOf["na"]
     
-    inline def namibia: typings.semanticUiReact.semanticUiReactStrings.namibia = "namibia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.namibia]
+    inline def namibia: "namibia" = "namibia".asInstanceOf["namibia"]
     
-    inline def nauru: typings.semanticUiReact.semanticUiReactStrings.nauru = "nauru".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nauru]
+    inline def nauru: "nauru" = "nauru".asInstanceOf["nauru"]
     
-    inline def nc: typings.semanticUiReact.semanticUiReactStrings.nc = "nc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nc]
+    inline def nc: "nc" = "nc".asInstanceOf["nc"]
     
-    inline def ne: typings.semanticUiReact.semanticUiReactStrings.ne = "ne".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ne]
+    inline def ne: "ne" = "ne".asInstanceOf["ne"]
     
-    inline def nepal: typings.semanticUiReact.semanticUiReactStrings.nepal = "nepal".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nepal]
+    inline def nepal: "nepal" = "nepal".asInstanceOf["nepal"]
     
-    inline def netherlands: typings.semanticUiReact.semanticUiReactStrings.netherlands = "netherlands".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.netherlands]
+    inline def netherlands: "netherlands" = "netherlands".asInstanceOf["netherlands"]
     
-    inline def `netherlands antilles`: typings.semanticUiReact.semanticUiReactStrings.`netherlands antilles` = ("netherlands antilles").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`netherlands antilles`]
+    inline def `netherlands antilles`: "netherlands antilles" = ("netherlands antilles").asInstanceOf["netherlands antilles"]
     
-    inline def `new caledonia`: typings.semanticUiReact.semanticUiReactStrings.`new caledonia` = ("new caledonia").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`new caledonia`]
+    inline def `new caledonia`: "new caledonia" = ("new caledonia").asInstanceOf["new caledonia"]
     
-    inline def `new guinea`: typings.semanticUiReact.semanticUiReactStrings.`new guinea` = ("new guinea").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`new guinea`]
+    inline def `new guinea`: "new guinea" = ("new guinea").asInstanceOf["new guinea"]
     
-    inline def `new zealand`: typings.semanticUiReact.semanticUiReactStrings.`new zealand` = ("new zealand").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`new zealand`]
+    inline def `new zealand`: "new zealand" = ("new zealand").asInstanceOf["new zealand"]
     
-    inline def nf: typings.semanticUiReact.semanticUiReactStrings.nf = "nf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nf]
+    inline def nf: "nf" = "nf".asInstanceOf["nf"]
     
-    inline def ng: typings.semanticUiReact.semanticUiReactStrings.ng = "ng".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ng]
+    inline def ng: "ng" = "ng".asInstanceOf["ng"]
     
-    inline def ni: typings.semanticUiReact.semanticUiReactStrings.ni = "ni".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ni]
+    inline def ni: "ni" = "ni".asInstanceOf["ni"]
     
-    inline def nicaragua: typings.semanticUiReact.semanticUiReactStrings.nicaragua = "nicaragua".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nicaragua]
+    inline def nicaragua: "nicaragua" = "nicaragua".asInstanceOf["nicaragua"]
     
-    inline def niger: typings.semanticUiReact.semanticUiReactStrings.niger = "niger".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.niger]
+    inline def niger: "niger" = "niger".asInstanceOf["niger"]
     
-    inline def nigeria: typings.semanticUiReact.semanticUiReactStrings.nigeria = "nigeria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nigeria]
+    inline def nigeria: "nigeria" = "nigeria".asInstanceOf["nigeria"]
     
-    inline def niue: typings.semanticUiReact.semanticUiReactStrings.niue = "niue".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.niue]
+    inline def niue: "niue" = "niue".asInstanceOf["niue"]
     
-    inline def nl: typings.semanticUiReact.semanticUiReactStrings.nl = "nl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nl]
+    inline def nl: "nl" = "nl".asInstanceOf["nl"]
     
-    inline def no: typings.semanticUiReact.semanticUiReactStrings.no = "no".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.no]
+    inline def no: "no" = "no".asInstanceOf["no"]
     
-    inline def `norfolk island`: typings.semanticUiReact.semanticUiReactStrings.`norfolk island` = ("norfolk island").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`norfolk island`]
+    inline def `norfolk island`: "norfolk island" = ("norfolk island").asInstanceOf["norfolk island"]
     
-    inline def `north korea`: typings.semanticUiReact.semanticUiReactStrings.`north korea` = ("north korea").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`north korea`]
+    inline def `north korea`: "north korea" = ("north korea").asInstanceOf["north korea"]
     
-    inline def `northern mariana islands`: typings.semanticUiReact.semanticUiReactStrings.`northern mariana islands` = ("northern mariana islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`northern mariana islands`]
+    inline def `northern mariana islands`: "northern mariana islands" = ("northern mariana islands").asInstanceOf["northern mariana islands"]
     
-    inline def norway: typings.semanticUiReact.semanticUiReactStrings.norway = "norway".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.norway]
+    inline def norway: "norway" = "norway".asInstanceOf["norway"]
     
-    inline def np: typings.semanticUiReact.semanticUiReactStrings.np = "np".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.np]
+    inline def np: "np" = "np".asInstanceOf["np"]
     
-    inline def nr: typings.semanticUiReact.semanticUiReactStrings.nr = "nr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nr]
+    inline def nr: "nr" = "nr".asInstanceOf["nr"]
     
-    inline def nu: typings.semanticUiReact.semanticUiReactStrings.nu = "nu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nu]
+    inline def nu: "nu" = "nu".asInstanceOf["nu"]
     
-    inline def nz: typings.semanticUiReact.semanticUiReactStrings.nz = "nz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.nz]
+    inline def nz: "nz" = "nz".asInstanceOf["nz"]
     
-    inline def om: typings.semanticUiReact.semanticUiReactStrings.om = "om".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.om]
+    inline def om: "om" = "om".asInstanceOf["om"]
     
-    inline def oman: typings.semanticUiReact.semanticUiReactStrings.oman = "oman".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.oman]
+    inline def oman: "oman" = "oman".asInstanceOf["oman"]
     
-    inline def pa: typings.semanticUiReact.semanticUiReactStrings.pa = "pa".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pa]
+    inline def pa: "pa" = "pa".asInstanceOf["pa"]
     
-    inline def pakistan: typings.semanticUiReact.semanticUiReactStrings.pakistan = "pakistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pakistan]
+    inline def pakistan: "pakistan" = "pakistan".asInstanceOf["pakistan"]
     
-    inline def palau: typings.semanticUiReact.semanticUiReactStrings.palau = "palau".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.palau]
+    inline def palau: "palau" = "palau".asInstanceOf["palau"]
     
-    inline def palestine: typings.semanticUiReact.semanticUiReactStrings.palestine = "palestine".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.palestine]
+    inline def palestine: "palestine" = "palestine".asInstanceOf["palestine"]
     
-    inline def panama: typings.semanticUiReact.semanticUiReactStrings.panama = "panama".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.panama]
+    inline def panama: "panama" = "panama".asInstanceOf["panama"]
     
-    inline def paraguay: typings.semanticUiReact.semanticUiReactStrings.paraguay = "paraguay".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.paraguay]
+    inline def paraguay: "paraguay" = "paraguay".asInstanceOf["paraguay"]
     
-    inline def pe: typings.semanticUiReact.semanticUiReactStrings.pe = "pe".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pe]
+    inline def pe: "pe" = "pe".asInstanceOf["pe"]
     
-    inline def peru: typings.semanticUiReact.semanticUiReactStrings.peru = "peru".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.peru]
+    inline def peru: "peru" = "peru".asInstanceOf["peru"]
     
-    inline def pf: typings.semanticUiReact.semanticUiReactStrings.pf = "pf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pf]
+    inline def pf: "pf" = "pf".asInstanceOf["pf"]
     
-    inline def pg: typings.semanticUiReact.semanticUiReactStrings.pg = "pg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pg]
+    inline def pg: "pg" = "pg".asInstanceOf["pg"]
     
-    inline def ph: typings.semanticUiReact.semanticUiReactStrings.ph = "ph".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ph]
+    inline def ph: "ph" = "ph".asInstanceOf["ph"]
     
-    inline def philippines: typings.semanticUiReact.semanticUiReactStrings.philippines = "philippines".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.philippines]
+    inline def philippines: "philippines" = "philippines".asInstanceOf["philippines"]
     
-    inline def `pitcairn islands`: typings.semanticUiReact.semanticUiReactStrings.`pitcairn islands` = ("pitcairn islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`pitcairn islands`]
+    inline def `pitcairn islands`: "pitcairn islands" = ("pitcairn islands").asInstanceOf["pitcairn islands"]
     
-    inline def pk: typings.semanticUiReact.semanticUiReactStrings.pk = "pk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pk]
+    inline def pk: "pk" = "pk".asInstanceOf["pk"]
     
-    inline def pl: typings.semanticUiReact.semanticUiReactStrings.pl = "pl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pl]
+    inline def pl: "pl" = "pl".asInstanceOf["pl"]
     
-    inline def pm: typings.semanticUiReact.semanticUiReactStrings.pm = "pm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pm]
+    inline def pm: "pm" = "pm".asInstanceOf["pm"]
     
-    inline def pn: typings.semanticUiReact.semanticUiReactStrings.pn = "pn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pn]
+    inline def pn: "pn" = "pn".asInstanceOf["pn"]
     
-    inline def poland: typings.semanticUiReact.semanticUiReactStrings.poland = "poland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.poland]
+    inline def poland: "poland" = "poland".asInstanceOf["poland"]
     
-    inline def portugal: typings.semanticUiReact.semanticUiReactStrings.portugal = "portugal".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.portugal]
+    inline def portugal: "portugal" = "portugal".asInstanceOf["portugal"]
     
-    inline def pr: typings.semanticUiReact.semanticUiReactStrings.pr = "pr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pr]
+    inline def pr: "pr" = "pr".asInstanceOf["pr"]
     
-    inline def ps: typings.semanticUiReact.semanticUiReactStrings.ps = "ps".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ps]
+    inline def ps: "ps" = "ps".asInstanceOf["ps"]
     
-    inline def pt: typings.semanticUiReact.semanticUiReactStrings.pt = "pt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pt]
+    inline def pt: "pt" = "pt".asInstanceOf["pt"]
     
-    inline def `puerto rico`: typings.semanticUiReact.semanticUiReactStrings.`puerto rico` = ("puerto rico").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`puerto rico`]
+    inline def `puerto rico`: "puerto rico" = ("puerto rico").asInstanceOf["puerto rico"]
     
-    inline def pw: typings.semanticUiReact.semanticUiReactStrings.pw = "pw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pw]
+    inline def pw: "pw" = "pw".asInstanceOf["pw"]
     
-    inline def py: typings.semanticUiReact.semanticUiReactStrings.py = "py".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.py]
+    inline def py: "py" = "py".asInstanceOf["py"]
     
-    inline def qa: typings.semanticUiReact.semanticUiReactStrings.qa = "qa".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.qa]
+    inline def qa: "qa" = "qa".asInstanceOf["qa"]
     
-    inline def qatar: typings.semanticUiReact.semanticUiReactStrings.qatar = "qatar".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.qatar]
+    inline def qatar: "qatar" = "qatar".asInstanceOf["qatar"]
     
-    inline def re: typings.semanticUiReact.semanticUiReactStrings.re = "re".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.re]
+    inline def re: "re" = "re".asInstanceOf["re"]
     
-    inline def reunion: typings.semanticUiReact.semanticUiReactStrings.reunion = "reunion".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.reunion]
+    inline def reunion: "reunion" = "reunion".asInstanceOf["reunion"]
     
-    inline def ro: typings.semanticUiReact.semanticUiReactStrings.ro = "ro".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ro]
+    inline def ro: "ro" = "ro".asInstanceOf["ro"]
     
-    inline def romania: typings.semanticUiReact.semanticUiReactStrings.romania = "romania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.romania]
+    inline def romania: "romania" = "romania".asInstanceOf["romania"]
     
-    inline def rs: typings.semanticUiReact.semanticUiReactStrings.rs = "rs".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.rs]
+    inline def rs: "rs" = "rs".asInstanceOf["rs"]
     
-    inline def ru: typings.semanticUiReact.semanticUiReactStrings.ru = "ru".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ru]
+    inline def ru: "ru" = "ru".asInstanceOf["ru"]
     
-    inline def russia: typings.semanticUiReact.semanticUiReactStrings.russia = "russia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.russia]
+    inline def russia: "russia" = "russia".asInstanceOf["russia"]
     
-    inline def rw: typings.semanticUiReact.semanticUiReactStrings.rw = "rw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.rw]
+    inline def rw: "rw" = "rw".asInstanceOf["rw"]
     
-    inline def rwanda: typings.semanticUiReact.semanticUiReactStrings.rwanda = "rwanda".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.rwanda]
+    inline def rwanda: "rwanda" = "rwanda".asInstanceOf["rwanda"]
     
-    inline def sa: typings.semanticUiReact.semanticUiReactStrings.sa = "sa".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sa]
+    inline def sa: "sa" = "sa".asInstanceOf["sa"]
     
-    inline def `saint helena`: typings.semanticUiReact.semanticUiReactStrings.`saint helena` = ("saint helena").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint helena`]
+    inline def `saint helena`: "saint helena" = ("saint helena").asInstanceOf["saint helena"]
     
-    inline def `saint kitts and nevis`: typings.semanticUiReact.semanticUiReactStrings.`saint kitts and nevis` = ("saint kitts and nevis").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint kitts and nevis`]
+    inline def `saint kitts and nevis`: "saint kitts and nevis" = ("saint kitts and nevis").asInstanceOf["saint kitts and nevis"]
     
-    inline def `saint lucia`: typings.semanticUiReact.semanticUiReactStrings.`saint lucia` = ("saint lucia").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint lucia`]
+    inline def `saint lucia`: "saint lucia" = ("saint lucia").asInstanceOf["saint lucia"]
     
-    inline def `saint pierre`: typings.semanticUiReact.semanticUiReactStrings.`saint pierre` = ("saint pierre").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint pierre`]
+    inline def `saint pierre`: "saint pierre" = ("saint pierre").asInstanceOf["saint pierre"]
     
-    inline def `saint vincent`: typings.semanticUiReact.semanticUiReactStrings.`saint vincent` = ("saint vincent").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saint vincent`]
+    inline def `saint vincent`: "saint vincent" = ("saint vincent").asInstanceOf["saint vincent"]
     
-    inline def samoa: typings.semanticUiReact.semanticUiReactStrings.samoa = "samoa".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.samoa]
+    inline def samoa: "samoa" = "samoa".asInstanceOf["samoa"]
     
-    inline def `san marino`: typings.semanticUiReact.semanticUiReactStrings.`san marino` = ("san marino").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`san marino`]
+    inline def `san marino`: "san marino" = ("san marino").asInstanceOf["san marino"]
     
-    inline def `sandwich islands`: typings.semanticUiReact.semanticUiReactStrings.`sandwich islands` = ("sandwich islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`sandwich islands`]
+    inline def `sandwich islands`: "sandwich islands" = ("sandwich islands").asInstanceOf["sandwich islands"]
     
-    inline def `sao tome`: typings.semanticUiReact.semanticUiReactStrings.`sao tome` = ("sao tome").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`sao tome`]
+    inline def `sao tome`: "sao tome" = ("sao tome").asInstanceOf["sao tome"]
     
-    inline def `saudi arabia`: typings.semanticUiReact.semanticUiReactStrings.`saudi arabia` = ("saudi arabia").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`saudi arabia`]
+    inline def `saudi arabia`: "saudi arabia" = ("saudi arabia").asInstanceOf["saudi arabia"]
     
-    inline def sb: typings.semanticUiReact.semanticUiReactStrings.sb = "sb".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sb]
+    inline def sb: "sb" = "sb".asInstanceOf["sb"]
     
-    inline def sc: typings.semanticUiReact.semanticUiReactStrings.sc = "sc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sc]
+    inline def sc: "sc" = "sc".asInstanceOf["sc"]
     
-    inline def scotland: typings.semanticUiReact.semanticUiReactStrings.scotland = "scotland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.scotland]
+    inline def scotland: "scotland" = "scotland".asInstanceOf["scotland"]
     
-    inline def sd: typings.semanticUiReact.semanticUiReactStrings.sd = "sd".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sd]
+    inline def sd: "sd" = "sd".asInstanceOf["sd"]
     
-    inline def se: typings.semanticUiReact.semanticUiReactStrings.se = "se".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.se]
+    inline def se: "se" = "se".asInstanceOf["se"]
     
-    inline def senegal: typings.semanticUiReact.semanticUiReactStrings.senegal = "senegal".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.senegal]
+    inline def senegal: "senegal" = "senegal".asInstanceOf["senegal"]
     
-    inline def serbia: typings.semanticUiReact.semanticUiReactStrings.serbia = "serbia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.serbia]
+    inline def serbia: "serbia" = "serbia".asInstanceOf["serbia"]
     
-    inline def seychelles: typings.semanticUiReact.semanticUiReactStrings.seychelles = "seychelles".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.seychelles]
+    inline def seychelles: "seychelles" = "seychelles".asInstanceOf["seychelles"]
     
-    inline def sg: typings.semanticUiReact.semanticUiReactStrings.sg = "sg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sg]
+    inline def sg: "sg" = "sg".asInstanceOf["sg"]
     
-    inline def sh: typings.semanticUiReact.semanticUiReactStrings.sh = "sh".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sh]
+    inline def sh: "sh" = "sh".asInstanceOf["sh"]
     
-    inline def si: typings.semanticUiReact.semanticUiReactStrings.si = "si".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.si]
+    inline def si: "si" = "si".asInstanceOf["si"]
     
-    inline def `sierra leone`: typings.semanticUiReact.semanticUiReactStrings.`sierra leone` = ("sierra leone").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`sierra leone`]
+    inline def `sierra leone`: "sierra leone" = ("sierra leone").asInstanceOf["sierra leone"]
     
-    inline def singapore: typings.semanticUiReact.semanticUiReactStrings.singapore = "singapore".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.singapore]
+    inline def singapore: "singapore" = "singapore".asInstanceOf["singapore"]
     
-    inline def sj: typings.semanticUiReact.semanticUiReactStrings.sj = "sj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sj]
+    inline def sj: "sj" = "sj".asInstanceOf["sj"]
     
-    inline def sk: typings.semanticUiReact.semanticUiReactStrings.sk = "sk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sk]
+    inline def sk: "sk" = "sk".asInstanceOf["sk"]
     
-    inline def sl: typings.semanticUiReact.semanticUiReactStrings.sl = "sl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sl]
+    inline def sl: "sl" = "sl".asInstanceOf["sl"]
     
-    inline def slovakia: typings.semanticUiReact.semanticUiReactStrings.slovakia = "slovakia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.slovakia]
+    inline def slovakia: "slovakia" = "slovakia".asInstanceOf["slovakia"]
     
-    inline def slovenia: typings.semanticUiReact.semanticUiReactStrings.slovenia = "slovenia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.slovenia]
+    inline def slovenia: "slovenia" = "slovenia".asInstanceOf["slovenia"]
     
-    inline def sm: typings.semanticUiReact.semanticUiReactStrings.sm = "sm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sm]
+    inline def sm: "sm" = "sm".asInstanceOf["sm"]
     
-    inline def sn: typings.semanticUiReact.semanticUiReactStrings.sn = "sn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sn]
+    inline def sn: "sn" = "sn".asInstanceOf["sn"]
     
-    inline def so: typings.semanticUiReact.semanticUiReactStrings.so = "so".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.so]
+    inline def so: "so" = "so".asInstanceOf["so"]
     
-    inline def `solomon islands`: typings.semanticUiReact.semanticUiReactStrings.`solomon islands` = ("solomon islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`solomon islands`]
+    inline def `solomon islands`: "solomon islands" = ("solomon islands").asInstanceOf["solomon islands"]
     
-    inline def somalia: typings.semanticUiReact.semanticUiReactStrings.somalia = "somalia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.somalia]
+    inline def somalia: "somalia" = "somalia".asInstanceOf["somalia"]
     
-    inline def `south africa`: typings.semanticUiReact.semanticUiReactStrings.`south africa` = ("south africa").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`south africa`]
+    inline def `south africa`: "south africa" = ("south africa").asInstanceOf["south africa"]
     
-    inline def `south korea`: typings.semanticUiReact.semanticUiReactStrings.`south korea` = ("south korea").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`south korea`]
+    inline def `south korea`: "south korea" = ("south korea").asInstanceOf["south korea"]
     
-    inline def spain: typings.semanticUiReact.semanticUiReactStrings.spain = "spain".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.spain]
+    inline def spain: "spain" = "spain".asInstanceOf["spain"]
     
-    inline def sr: typings.semanticUiReact.semanticUiReactStrings.sr = "sr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sr]
+    inline def sr: "sr" = "sr".asInstanceOf["sr"]
     
-    inline def `sri lanka`: typings.semanticUiReact.semanticUiReactStrings.`sri lanka` = ("sri lanka").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`sri lanka`]
+    inline def `sri lanka`: "sri lanka" = ("sri lanka").asInstanceOf["sri lanka"]
     
-    inline def st: typings.semanticUiReact.semanticUiReactStrings.st = "st".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.st]
+    inline def st: "st" = "st".asInstanceOf["st"]
     
-    inline def sudan: typings.semanticUiReact.semanticUiReactStrings.sudan = "sudan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sudan]
+    inline def sudan: "sudan" = "sudan".asInstanceOf["sudan"]
     
-    inline def suriname: typings.semanticUiReact.semanticUiReactStrings.suriname = "suriname".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.suriname]
+    inline def suriname: "suriname" = "suriname".asInstanceOf["suriname"]
     
-    inline def sv: typings.semanticUiReact.semanticUiReactStrings.sv = "sv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sv]
+    inline def sv: "sv" = "sv".asInstanceOf["sv"]
     
-    inline def svalbard: typings.semanticUiReact.semanticUiReactStrings.svalbard = "svalbard".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.svalbard]
+    inline def svalbard: "svalbard" = "svalbard".asInstanceOf["svalbard"]
     
-    inline def swaziland: typings.semanticUiReact.semanticUiReactStrings.swaziland = "swaziland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.swaziland]
+    inline def swaziland: "swaziland" = "swaziland".asInstanceOf["swaziland"]
     
-    inline def sweden: typings.semanticUiReact.semanticUiReactStrings.sweden = "sweden".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sweden]
+    inline def sweden: "sweden" = "sweden".asInstanceOf["sweden"]
     
-    inline def switzerland: typings.semanticUiReact.semanticUiReactStrings.switzerland = "switzerland".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.switzerland]
+    inline def switzerland: "switzerland" = "switzerland".asInstanceOf["switzerland"]
     
-    inline def sy: typings.semanticUiReact.semanticUiReactStrings.sy = "sy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sy]
+    inline def sy: "sy" = "sy".asInstanceOf["sy"]
     
-    inline def syria: typings.semanticUiReact.semanticUiReactStrings.syria = "syria".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.syria]
+    inline def syria: "syria" = "syria".asInstanceOf["syria"]
     
-    inline def sz: typings.semanticUiReact.semanticUiReactStrings.sz = "sz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.sz]
+    inline def sz: "sz" = "sz".asInstanceOf["sz"]
     
-    inline def taiwan: typings.semanticUiReact.semanticUiReactStrings.taiwan = "taiwan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.taiwan]
+    inline def taiwan: "taiwan" = "taiwan".asInstanceOf["taiwan"]
     
-    inline def tajikistan: typings.semanticUiReact.semanticUiReactStrings.tajikistan = "tajikistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tajikistan]
+    inline def tajikistan: "tajikistan" = "tajikistan".asInstanceOf["tajikistan"]
     
-    inline def tanzania: typings.semanticUiReact.semanticUiReactStrings.tanzania = "tanzania".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tanzania]
+    inline def tanzania: "tanzania" = "tanzania".asInstanceOf["tanzania"]
     
-    inline def tc: typings.semanticUiReact.semanticUiReactStrings.tc = "tc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tc]
+    inline def tc: "tc" = "tc".asInstanceOf["tc"]
     
-    inline def td: typings.semanticUiReact.semanticUiReactStrings.td = "td".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.td]
+    inline def td: "td" = "td".asInstanceOf["td"]
     
-    inline def tf: typings.semanticUiReact.semanticUiReactStrings.tf = "tf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tf]
+    inline def tf: "tf" = "tf".asInstanceOf["tf"]
     
-    inline def tg: typings.semanticUiReact.semanticUiReactStrings.tg = "tg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tg]
+    inline def tg: "tg" = "tg".asInstanceOf["tg"]
     
-    inline def th: typings.semanticUiReact.semanticUiReactStrings.th = "th".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.th]
+    inline def th: "th" = "th".asInstanceOf["th"]
     
-    inline def thailand: typings.semanticUiReact.semanticUiReactStrings.thailand = "thailand".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.thailand]
+    inline def thailand: "thailand" = "thailand".asInstanceOf["thailand"]
     
-    inline def timorleste: typings.semanticUiReact.semanticUiReactStrings.timorleste = "timorleste".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.timorleste]
+    inline def timorleste: "timorleste" = "timorleste".asInstanceOf["timorleste"]
     
-    inline def tj: typings.semanticUiReact.semanticUiReactStrings.tj = "tj".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tj]
+    inline def tj: "tj" = "tj".asInstanceOf["tj"]
     
-    inline def tk: typings.semanticUiReact.semanticUiReactStrings.tk = "tk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tk]
+    inline def tk: "tk" = "tk".asInstanceOf["tk"]
     
-    inline def tl: typings.semanticUiReact.semanticUiReactStrings.tl = "tl".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tl]
+    inline def tl: "tl" = "tl".asInstanceOf["tl"]
     
-    inline def tm: typings.semanticUiReact.semanticUiReactStrings.tm = "tm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tm]
+    inline def tm: "tm" = "tm".asInstanceOf["tm"]
     
-    inline def tn: typings.semanticUiReact.semanticUiReactStrings.tn = "tn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tn]
+    inline def tn: "tn" = "tn".asInstanceOf["tn"]
     
-    inline def to: typings.semanticUiReact.semanticUiReactStrings.to = "to".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.to]
+    inline def to: "to" = "to".asInstanceOf["to"]
     
-    inline def togo: typings.semanticUiReact.semanticUiReactStrings.togo = "togo".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.togo]
+    inline def togo: "togo" = "togo".asInstanceOf["togo"]
     
-    inline def tokelau: typings.semanticUiReact.semanticUiReactStrings.tokelau = "tokelau".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tokelau]
+    inline def tokelau: "tokelau" = "tokelau".asInstanceOf["tokelau"]
     
-    inline def tonga: typings.semanticUiReact.semanticUiReactStrings.tonga = "tonga".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tonga]
+    inline def tonga: "tonga" = "tonga".asInstanceOf["tonga"]
     
-    inline def tr: typings.semanticUiReact.semanticUiReactStrings.tr = "tr".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tr]
+    inline def tr: "tr" = "tr".asInstanceOf["tr"]
     
-    inline def trinidad: typings.semanticUiReact.semanticUiReactStrings.trinidad = "trinidad".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.trinidad]
+    inline def trinidad: "trinidad" = "trinidad".asInstanceOf["trinidad"]
     
-    inline def tt: typings.semanticUiReact.semanticUiReactStrings.tt = "tt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tt]
+    inline def tt: "tt" = "tt".asInstanceOf["tt"]
     
-    inline def tunisia: typings.semanticUiReact.semanticUiReactStrings.tunisia = "tunisia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tunisia]
+    inline def tunisia: "tunisia" = "tunisia".asInstanceOf["tunisia"]
     
-    inline def turkey: typings.semanticUiReact.semanticUiReactStrings.turkey = "turkey".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.turkey]
+    inline def turkey: "turkey" = "turkey".asInstanceOf["turkey"]
     
-    inline def turkmenistan: typings.semanticUiReact.semanticUiReactStrings.turkmenistan = "turkmenistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.turkmenistan]
+    inline def turkmenistan: "turkmenistan" = "turkmenistan".asInstanceOf["turkmenistan"]
     
-    inline def tuvalu: typings.semanticUiReact.semanticUiReactStrings.tuvalu = "tuvalu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tuvalu]
+    inline def tuvalu: "tuvalu" = "tuvalu".asInstanceOf["tuvalu"]
     
-    inline def tv: typings.semanticUiReact.semanticUiReactStrings.tv = "tv".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tv]
+    inline def tv: "tv" = "tv".asInstanceOf["tv"]
     
-    inline def tw: typings.semanticUiReact.semanticUiReactStrings.tw = "tw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tw]
+    inline def tw: "tw" = "tw".asInstanceOf["tw"]
     
-    inline def tz: typings.semanticUiReact.semanticUiReactStrings.tz = "tz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tz]
+    inline def tz: "tz" = "tz".asInstanceOf["tz"]
     
-    inline def ua: typings.semanticUiReact.semanticUiReactStrings.ua = "ua".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ua]
+    inline def ua: "ua" = "ua".asInstanceOf["ua"]
     
-    inline def uae: typings.semanticUiReact.semanticUiReactStrings.uae = "uae".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uae]
+    inline def uae: "uae" = "uae".asInstanceOf["uae"]
     
-    inline def ug: typings.semanticUiReact.semanticUiReactStrings.ug = "ug".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ug]
+    inline def ug: "ug" = "ug".asInstanceOf["ug"]
     
-    inline def uganda: typings.semanticUiReact.semanticUiReactStrings.uganda = "uganda".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uganda]
+    inline def uganda: "uganda" = "uganda".asInstanceOf["uganda"]
     
-    inline def uk: typings.semanticUiReact.semanticUiReactStrings.uk = "uk".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uk]
+    inline def uk: "uk" = "uk".asInstanceOf["uk"]
     
-    inline def ukraine: typings.semanticUiReact.semanticUiReactStrings.ukraine = "ukraine".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ukraine]
+    inline def ukraine: "ukraine" = "ukraine".asInstanceOf["ukraine"]
     
-    inline def um: typings.semanticUiReact.semanticUiReactStrings.um = "um".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.um]
+    inline def um: "um" = "um".asInstanceOf["um"]
     
-    inline def `united arab emirates`: typings.semanticUiReact.semanticUiReactStrings.`united arab emirates` = ("united arab emirates").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`united arab emirates`]
+    inline def `united arab emirates`: "united arab emirates" = ("united arab emirates").asInstanceOf["united arab emirates"]
     
-    inline def `united kingdom`: typings.semanticUiReact.semanticUiReactStrings.`united kingdom` = ("united kingdom").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`united kingdom`]
+    inline def `united kingdom`: "united kingdom" = ("united kingdom").asInstanceOf["united kingdom"]
     
-    inline def `united states`: typings.semanticUiReact.semanticUiReactStrings.`united states` = ("united states").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`united states`]
+    inline def `united states`: "united states" = ("united states").asInstanceOf["united states"]
     
-    inline def uruguay: typings.semanticUiReact.semanticUiReactStrings.uruguay = "uruguay".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uruguay]
+    inline def uruguay: "uruguay" = "uruguay".asInstanceOf["uruguay"]
     
-    inline def us: typings.semanticUiReact.semanticUiReactStrings.us = "us".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.us]
+    inline def us: "us" = "us".asInstanceOf["us"]
     
-    inline def `us minor islands`: typings.semanticUiReact.semanticUiReactStrings.`us minor islands` = ("us minor islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`us minor islands`]
+    inline def `us minor islands`: "us minor islands" = ("us minor islands").asInstanceOf["us minor islands"]
     
-    inline def `us virgin islands`: typings.semanticUiReact.semanticUiReactStrings.`us virgin islands` = ("us virgin islands").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`us virgin islands`]
+    inline def `us virgin islands`: "us virgin islands" = ("us virgin islands").asInstanceOf["us virgin islands"]
     
-    inline def uy: typings.semanticUiReact.semanticUiReactStrings.uy = "uy".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uy]
+    inline def uy: "uy" = "uy".asInstanceOf["uy"]
     
-    inline def uz: typings.semanticUiReact.semanticUiReactStrings.uz = "uz".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uz]
+    inline def uz: "uz" = "uz".asInstanceOf["uz"]
     
-    inline def uzbekistan: typings.semanticUiReact.semanticUiReactStrings.uzbekistan = "uzbekistan".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.uzbekistan]
+    inline def uzbekistan: "uzbekistan" = "uzbekistan".asInstanceOf["uzbekistan"]
     
-    inline def va: typings.semanticUiReact.semanticUiReactStrings.va = "va".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.va]
+    inline def va: "va" = "va".asInstanceOf["va"]
     
-    inline def vanuatu: typings.semanticUiReact.semanticUiReactStrings.vanuatu = "vanuatu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vanuatu]
+    inline def vanuatu: "vanuatu" = "vanuatu".asInstanceOf["vanuatu"]
     
-    inline def `vatican city`: typings.semanticUiReact.semanticUiReactStrings.`vatican city` = ("vatican city").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`vatican city`]
+    inline def `vatican city`: "vatican city" = ("vatican city").asInstanceOf["vatican city"]
     
-    inline def vc: typings.semanticUiReact.semanticUiReactStrings.vc = "vc".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vc]
+    inline def vc: "vc" = "vc".asInstanceOf["vc"]
     
-    inline def ve: typings.semanticUiReact.semanticUiReactStrings.ve = "ve".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ve]
+    inline def ve: "ve" = "ve".asInstanceOf["ve"]
     
-    inline def venezuela: typings.semanticUiReact.semanticUiReactStrings.venezuela = "venezuela".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.venezuela]
+    inline def venezuela: "venezuela" = "venezuela".asInstanceOf["venezuela"]
     
-    inline def vg: typings.semanticUiReact.semanticUiReactStrings.vg = "vg".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vg]
+    inline def vg: "vg" = "vg".asInstanceOf["vg"]
     
-    inline def vi: typings.semanticUiReact.semanticUiReactStrings.vi = "vi".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vi]
+    inline def vi: "vi" = "vi".asInstanceOf["vi"]
     
-    inline def vietnam: typings.semanticUiReact.semanticUiReactStrings.vietnam = "vietnam".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vietnam]
+    inline def vietnam: "vietnam" = "vietnam".asInstanceOf["vietnam"]
     
-    inline def vn: typings.semanticUiReact.semanticUiReactStrings.vn = "vn".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vn]
+    inline def vn: "vn" = "vn".asInstanceOf["vn"]
     
-    inline def vu: typings.semanticUiReact.semanticUiReactStrings.vu = "vu".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.vu]
+    inline def vu: "vu" = "vu".asInstanceOf["vu"]
     
-    inline def wales: typings.semanticUiReact.semanticUiReactStrings.wales = "wales".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.wales]
+    inline def wales: "wales" = "wales".asInstanceOf["wales"]
     
-    inline def `wallis and futuna`: typings.semanticUiReact.semanticUiReactStrings.`wallis and futuna` = ("wallis and futuna").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`wallis and futuna`]
+    inline def `wallis and futuna`: "wallis and futuna" = ("wallis and futuna").asInstanceOf["wallis and futuna"]
     
-    inline def `western sahara`: typings.semanticUiReact.semanticUiReactStrings.`western sahara` = ("western sahara").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`western sahara`]
+    inline def `western sahara`: "western sahara" = ("western sahara").asInstanceOf["western sahara"]
     
-    inline def wf: typings.semanticUiReact.semanticUiReactStrings.wf = "wf".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.wf]
+    inline def wf: "wf" = "wf".asInstanceOf["wf"]
     
-    inline def ws: typings.semanticUiReact.semanticUiReactStrings.ws = "ws".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ws]
+    inline def ws: "ws" = "ws".asInstanceOf["ws"]
     
-    inline def ye: typings.semanticUiReact.semanticUiReactStrings.ye = "ye".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.ye]
+    inline def ye: "ye" = "ye".asInstanceOf["ye"]
     
-    inline def yemen: typings.semanticUiReact.semanticUiReactStrings.yemen = "yemen".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.yemen]
+    inline def yemen: "yemen" = "yemen".asInstanceOf["yemen"]
     
-    inline def yt: typings.semanticUiReact.semanticUiReactStrings.yt = "yt".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.yt]
+    inline def yt: "yt" = "yt".asInstanceOf["yt"]
     
-    inline def za: typings.semanticUiReact.semanticUiReactStrings.za = "za".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.za]
+    inline def za: "za" = "za".asInstanceOf["za"]
     
-    inline def zambia: typings.semanticUiReact.semanticUiReactStrings.zambia = "zambia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.zambia]
+    inline def zambia: "zambia" = "zambia".asInstanceOf["zambia"]
     
-    inline def zimbabwe: typings.semanticUiReact.semanticUiReactStrings.zimbabwe = "zimbabwe".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.zimbabwe]
+    inline def zimbabwe: "zimbabwe" = "zimbabwe".asInstanceOf["zimbabwe"]
     
-    inline def zm: typings.semanticUiReact.semanticUiReactStrings.zm = "zm".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.zm]
+    inline def zm: "zm" = "zm".asInstanceOf["zm"]
     
-    inline def zw: typings.semanticUiReact.semanticUiReactStrings.zw = "zw".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.zw]
+    inline def zw: "zw" = "zw".asInstanceOf["zw"]
   }
+  type FlagNameValues = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 494, starting with "ad", "andorra", "ae" */ String
   
   trait FlagProps
     extends StObject

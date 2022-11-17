@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait R3DirectiveDependencyMetadata
   extends StObject
-     with R3TemplateDependency
-     with R3TemplateDependencyMetadata {
+     with R3TemplateDependency {
   
   /**
     * Name under which the directive is exported, if any (exportAs in Angular). Null otherwise.

@@ -1,7 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.blocked
-import typings.std.stdStrings.upgradeneeded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,38 +10,44 @@ trait IDBOpenDBRequest
   extends StObject
      with IDBRequest[IDBDatabase] {
   
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_upgradeneeded")
+  def addEventListener(
+    `type`: "upgradeneeded",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any]
+  ): Unit = js.native
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_blocked(
-    `type`: blocked,
+  @scala.annotation.targetName("addEventListener_blocked")
+  def addEventListener(
+    `type`: "blocked",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_blocked(
-    `type`: blocked,
+  @scala.annotation.targetName("addEventListener_upgradeneeded")
+  def addEventListener(
+    `type`: "upgradeneeded",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_blocked(
-    `type`: blocked,
+  @scala.annotation.targetName("addEventListener_blocked")
+  def addEventListener(
+    `type`: "blocked",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_blocked")
+  def addEventListener(
+    `type`: "blocked",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_upgradeneeded(
-    `type`: upgradeneeded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_upgradeneeded(
-    `type`: upgradeneeded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_upgradeneeded(
-    `type`: upgradeneeded,
+  @scala.annotation.targetName("addEventListener_upgradeneeded")
+  def addEventListener(
+    `type`: "upgradeneeded",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -56,36 +60,42 @@ trait IDBOpenDBRequest
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_blocked(
-    `type`: blocked,
+  @scala.annotation.targetName("removeEventListener_blocked")
+  def removeEventListener(
+    `type`: "blocked",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_blocked(
-    `type`: blocked,
+  @scala.annotation.targetName("removeEventListener_upgradeneeded")
+  def removeEventListener(
+    `type`: "upgradeneeded",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_upgradeneeded")
+  def removeEventListener(
+    `type`: "upgradeneeded",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_blocked(
-    `type`: blocked,
+  @scala.annotation.targetName("removeEventListener_blocked")
+  def removeEventListener(
+    `type`: "blocked",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_upgradeneeded")
+  def removeEventListener(
+    `type`: "upgradeneeded",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_upgradeneeded(
-    `type`: upgradeneeded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_upgradeneeded(
-    `type`: upgradeneeded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_upgradeneeded(
-    `type`: upgradeneeded,
+  @scala.annotation.targetName("removeEventListener_blocked")
+  def removeEventListener(
+    `type`: "blocked",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native

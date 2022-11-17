@@ -43,14 +43,7 @@ object libConfigProviderDisabledContextMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdBooleans.`true`
-    - typings.antd.antdBooleans.`false`
-    - scala.Unit
-  */
-  type DisabledType = js.UndefOr[_DisabledType]
-  
-  trait _DisabledType extends StObject
+  type DisabledType = js.UndefOr[true | false]
   
   type _To = Context[DisabledType]
   

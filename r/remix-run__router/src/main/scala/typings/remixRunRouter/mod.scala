@@ -23,7 +23,6 @@ import typings.remixRunRouter.distUtilsMod.ParamParseKey
 import typings.remixRunRouter.distUtilsMod.PathMatch
 import typings.remixRunRouter.distUtilsMod.PathPattern
 import typings.remixRunRouter.distUtilsMod.RedirectFunction
-import typings.remixRunRouter.remixRunRouterStrings.idle
 import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -96,8 +95,8 @@ object mod {
     
     @JSImport("@remix-run/router", "IDLE_FETCHER.state")
     @js.native
-    def state: idle = js.native
-    inline def state_=(x: idle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("state")(x.asInstanceOf[js.Any])
+    def state: "idle" = js.native
+    inline def state_=(x: "idle"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("state")(x.asInstanceOf[js.Any])
   }
   
   object IDLE_NAVIGATION {
@@ -133,14 +132,16 @@ object mod {
     
     @JSImport("@remix-run/router", "IDLE_NAVIGATION.state")
     @js.native
-    def state: idle = js.native
-    inline def state_=(x: idle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("state")(x.asInstanceOf[js.Any])
+    def state: "idle" = js.native
+    inline def state_=(x: "idle"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("state")(x.asInstanceOf[js.Any])
   }
   
   inline def UNSAFEConvertRoutesToDataRoutes(routes: js.Array[AgnosticRouteObject]): js.Array[AgnosticDataRouteObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_convertRoutesToDataRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Array[AgnosticDataRouteObject]]
   inline def UNSAFEConvertRoutesToDataRoutes(routes: js.Array[AgnosticRouteObject], parentPath: js.Array[Double]): js.Array[AgnosticDataRouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_convertRoutesToDataRoutes")(routes.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[js.Array[AgnosticDataRouteObject]]
   inline def UNSAFEConvertRoutesToDataRoutes(routes: js.Array[AgnosticRouteObject], parentPath: js.Array[Double], allIds: Set[String]): js.Array[AgnosticDataRouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_convertRoutesToDataRoutes")(routes.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any], allIds.asInstanceOf[js.Any])).asInstanceOf[js.Array[AgnosticDataRouteObject]]
   inline def UNSAFEConvertRoutesToDataRoutes(routes: js.Array[AgnosticRouteObject], parentPath: Unit, allIds: Set[String]): js.Array[AgnosticDataRouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_convertRoutesToDataRoutes")(routes.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any], allIds.asInstanceOf[js.Any])).asInstanceOf[js.Array[AgnosticDataRouteObject]]
+  
+  inline def UNSAFEGetPathContributingMatches[T /* <: AgnosticRouteMatch[String, AgnosticRouteObject] */](matches: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_getPathContributingMatches")(matches.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   inline def createBrowserHistory(): BrowserHistory = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")().asInstanceOf[BrowserHistory]
   inline def createBrowserHistory(options: BrowserHistoryOptions): BrowserHistory = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")(options.asInstanceOf[js.Any]).asInstanceOf[BrowserHistory]

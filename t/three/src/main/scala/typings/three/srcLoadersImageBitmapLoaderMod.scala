@@ -6,7 +6,6 @@ import typings.std.ImageBitmap
 import typings.std.ProgressEvent
 import typings.three.srcLoadersLoaderMod.Loader
 import typings.three.srcLoadersLoadingManagerMod.LoadingManager
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object srcLoadersImageBitmapLoaderMod {
   open class ImageBitmapLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     
-    val isImageBitmapLoader: `true` = js.native
+    val isImageBitmapLoader: true = js.native
     
     def load(url: String): Any = js.native
     def load(url: String, onLoad: js.Function1[/* response */ ImageBitmap, Unit]): Any = js.native

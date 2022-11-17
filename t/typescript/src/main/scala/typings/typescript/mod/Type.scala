@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Type
-  extends StObject
-     with FlowType {
+trait Type extends StObject {
   
   var aliasSymbol: js.UndefOr[Symbol] = js.undefined
   

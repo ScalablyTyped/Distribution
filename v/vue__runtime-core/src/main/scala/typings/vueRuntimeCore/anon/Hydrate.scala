@@ -8,15 +8,12 @@ import typings.vueRuntimeCore.mod.RendererNode
 import typings.vueRuntimeCore.mod.SuspenseBoundary
 import typings.vueRuntimeCore.mod.TeleportVNode
 import typings.vueRuntimeCore.mod.VNode
-import typings.vueRuntimeCore.mod._VNodeTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hydrate
-  extends StObject
-     with _VNodeTypes {
+trait Hydrate extends StObject {
   
   var __isTeleport: Boolean = js.native
   

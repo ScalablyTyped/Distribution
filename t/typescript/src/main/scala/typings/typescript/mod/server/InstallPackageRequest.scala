@@ -1,7 +1,6 @@
 package typings.typescript.mod.server
 
 import typings.typescript.mod.Path
-import typings.typescript.typescriptStrings.installPackage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait InstallPackageRequest
   
   val fileName: Path
   
-  val kind: installPackage
+  val kind: "installPackage"
   
   val packageName: String
   
@@ -29,7 +28,7 @@ object InstallPackageRequest {
     
     inline def setFileName(value: Path): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    inline def setKind(value: installPackage): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "installPackage"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     

@@ -1,16 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.OptionalIndexedAccessType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OptionalIndexedAccessType_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowType
-     with Node {
+     with BaseNode {
   
   var indexType: FlowType
   
@@ -19,7 +15,7 @@ trait OptionalIndexedAccessType_
   var optional: Boolean
   
   @JSName("type")
-  var type_OptionalIndexedAccessType_ : OptionalIndexedAccessType
+  var type_OptionalIndexedAccessType_ : "OptionalIndexedAccessType"
 }
 object OptionalIndexedAccessType_ {
   
@@ -37,6 +33,6 @@ object OptionalIndexedAccessType_ {
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    inline def setType(value: OptionalIndexedAccessType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "OptionalIndexedAccessType"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

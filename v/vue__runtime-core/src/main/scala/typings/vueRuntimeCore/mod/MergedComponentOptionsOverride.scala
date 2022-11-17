@@ -1,7 +1,6 @@
 package typings.vueRuntimeCore.mod
 
 import typings.vueReactivity.mod.DebuggerEvent
-import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -133,7 +132,7 @@ object MergedComponentOptionsOverride {
           js.Object, 
           js.Object, 
           js.Object, 
-          `false`, 
+          false, 
           ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
           js.Object
         ]) | Null, /* info */ String) => Boolean | Unit

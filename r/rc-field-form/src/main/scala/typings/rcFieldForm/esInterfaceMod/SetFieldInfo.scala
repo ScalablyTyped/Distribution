@@ -1,17 +1,14 @@
 package typings.rcFieldForm.esInterfaceMod
 
-import typings.rcFieldForm.rcFieldFormStrings.setField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SetFieldInfo
-  extends StObject
-     with NotifyInfo {
+trait SetFieldInfo extends StObject {
   
   var data: FieldData
   
-  var `type`: setField
+  var `type`: "setField"
 }
 object SetFieldInfo {
   
@@ -25,6 +22,6 @@ object SetFieldInfo {
     
     inline def setData(value: FieldData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setType(value: setField): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "setField"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

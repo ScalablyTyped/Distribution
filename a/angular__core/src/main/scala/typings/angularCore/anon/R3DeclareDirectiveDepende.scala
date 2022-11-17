@@ -1,23 +1,18 @@
 package typings.angularCore.anon
 
-import typings.angularCore.angularCoreStrings.component
-import typings.angularCore.angularCoreStrings.directive
 import typings.angularCore.mod.OpaqueValue
-import typings.angularCore.mod.R3DeclareTemplateDependencyFacade
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @angular/core.@angular/core.R3DeclareDirectiveDependencyFacade & {  kind :string} */
-trait R3DeclareDirectiveDepende
-  extends StObject
-     with R3DeclareTemplateDependencyFacade {
+trait R3DeclareDirectiveDepende extends StObject {
   
   var exportAs: js.UndefOr[js.Array[String]] = js.undefined
   
   var inputs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var kind: (js.UndefOr[directive | component]) & String
+  var kind: (js.UndefOr["directive" | "component"]) & String
   
   var outputs: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -28,7 +23,7 @@ trait R3DeclareDirectiveDepende
 object R3DeclareDirectiveDepende {
   
   inline def apply(
-    kind: (js.UndefOr[directive | component]) & String,
+    kind: (js.UndefOr["directive" | "component"]) & String,
     selector: String,
     `type`: OpaqueValue | js.Function0[OpaqueValue]
   ): R3DeclareDirectiveDepende = {
@@ -51,7 +46,7 @@ object R3DeclareDirectiveDepende {
     
     inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value*))
     
-    inline def setKind(value: (js.UndefOr[directive | component]) & String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: (js.UndefOr["directive" | "component"]) & String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setOutputs(value: js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     

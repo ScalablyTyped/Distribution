@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,12 +15,12 @@ object examplesJsmNodesCoreNodeCodeMod {
     def this(name: String, `type`: String, code: String) = this()
     
     /* CompleteClass */
-    var isNodeCode: `true` = js.native
+    var isNodeCode: true = js.native
   }
   
   trait NodeCode extends StObject {
     
-    var isNodeCode: `true`
+    var isNodeCode: true
   }
   object NodeCode {
     
@@ -32,7 +31,7 @@ object examplesJsmNodesCoreNodeCodeMod {
     
     extension [Self <: NodeCode](x: Self) {
       
-      inline def setIsNodeCode(value: `true`): Self = StObject.set(x, "isNodeCode", value.asInstanceOf[js.Any])
+      inline def setIsNodeCode(value: true): Self = StObject.set(x, "isNodeCode", value.asInstanceOf[js.Any])
     }
   }
 }

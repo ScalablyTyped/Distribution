@@ -1,6 +1,5 @@
 package typings.ajv.distTypesMod
 
-import typings.ajv.ajvStrings.full
 import typings.ajv.distCompileMod.SchemaObjCxt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,14 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FuncKeywordDefinition
   extends StObject
-     with KeywordDef
-     with KeywordDefinition {
+     with KeywordDef {
   
   var async: js.UndefOr[Boolean] = js.undefined
   
   var compile: js.UndefOr[CompileKeywordFunc] = js.undefined
   
-  var errors: js.UndefOr[Boolean | full] = js.undefined
+  var errors: js.UndefOr[Boolean | "full"] = js.undefined
   
   var modifying: js.UndefOr[Boolean] = js.undefined
   
@@ -44,7 +42,7 @@ object FuncKeywordDefinition {
     
     inline def setCompileUndefined: Self = StObject.set(x, "compile", js.undefined)
     
-    inline def setErrors(value: Boolean | full): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Boolean | "full"): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     

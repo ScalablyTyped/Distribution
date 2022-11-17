@@ -10,13 +10,6 @@ import typings.semanticUiReact.distCommonjsElementsHeaderHeaderSubheaderMod.Head
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticFLOATS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
-import typings.semanticUiReact.semanticUiReactStrings.bottom
-import typings.semanticUiReact.semanticUiReactStrings.huge
-import typings.semanticUiReact.semanticUiReactStrings.large
-import typings.semanticUiReact.semanticUiReactStrings.medium
-import typings.semanticUiReact.semanticUiReactStrings.small
-import typings.semanticUiReact.semanticUiReactStrings.tiny
-import typings.semanticUiReact.semanticUiReactStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +48,7 @@ object distCommonjsElementsHeaderHeaderMod extends Shortcut {
     var as: js.UndefOr[Any] = js.undefined
     
     /** Attach header  to other content, like a segment. */
-    var attached: js.UndefOr[Boolean | top | bottom] = js.undefined
+    var attached: js.UndefOr[Boolean | "top" | "bottom"] = js.undefined
     
     /** Format header to appear inside a content block. */
     var block: js.UndefOr[Boolean] = js.undefined
@@ -91,7 +84,7 @@ object distCommonjsElementsHeaderHeaderMod extends Shortcut {
     var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Content headings are sized with em and are based on the font-size of their container. */
-    var size: js.UndefOr[tiny | small | medium | large | huge] = js.undefined
+    var size: js.UndefOr["tiny" | "small" | "medium" | "large" | "huge"] = js.undefined
     
     /** Headers may be formatted to label smaller or de-emphasized content. */
     var sub: js.UndefOr[Boolean] = js.undefined
@@ -115,7 +108,7 @@ object distCommonjsElementsHeaderHeaderMod extends Shortcut {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAttached(value: Boolean | top | bottom): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: Boolean | "top" | "bottom"): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
       inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       
@@ -163,7 +156,7 @@ object distCommonjsElementsHeaderHeaderMod extends Shortcut {
       
       inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
       
-      inline def setSize(value: tiny | small | medium | large | huge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "tiny" | "small" | "medium" | "large" | "huge"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

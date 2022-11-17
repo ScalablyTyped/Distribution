@@ -9,7 +9,7 @@ trait Layer_
   extends StObject
      with FontawesomeObject {
   
-  val `type`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.layer
+  val `type`: "layer"
 }
 object Layer_ {
   
@@ -22,6 +22,6 @@ object Layer_ {
   
   extension [Self <: Layer_](x: Self) {
     
-    inline def setType(value: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.layer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "layer"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

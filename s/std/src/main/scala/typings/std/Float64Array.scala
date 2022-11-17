@@ -400,7 +400,7 @@ trait Float64Array
   
   /* standard es2015.symbol.wellknown */
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: typings.std.stdStrings.Float64Array = js.native
+  val toStringTag: "Float64Array" = js.native
   
   /**
     * Returns an list of values in the array

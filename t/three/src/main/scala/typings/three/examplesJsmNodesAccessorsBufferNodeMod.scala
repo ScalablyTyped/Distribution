@@ -2,7 +2,6 @@ package typings.three
 
 import typings.std.ArrayLike
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeTypeOption
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,6 +23,6 @@ object examplesJsmNodesAccessorsBufferNodeMod {
     
     var bufferType: String = js.native
     
-    var isBufferNode: `true` = js.native
+    var isBufferNode: true = js.native
   }
 }

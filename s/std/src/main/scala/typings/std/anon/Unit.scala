@@ -2,19 +2,15 @@ package typings.std.anon
 
 import typings.std.Exclude
 import typings.std.Intl.NumberFormatPartTypes
-import typings.std.Intl.RelativeTimeFormatPart
 import typings.std.Intl.RelativeTimeFormatUnitSingular
-import typings.std.stdStrings.literal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Unit
-  extends StObject
-     with RelativeTimeFormatPart {
+trait Unit extends StObject {
   
   /* standard es2020.intl */
-  var `type`: Exclude[NumberFormatPartTypes, literal]
+  var `type`: Exclude[NumberFormatPartTypes, "literal"]
   
   /* standard es2020.intl */
   var unit: RelativeTimeFormatUnitSingular
@@ -25,7 +21,7 @@ trait Unit
 object Unit {
   
   inline def apply(
-    `type`: Exclude[NumberFormatPartTypes, literal],
+    `type`: Exclude[NumberFormatPartTypes, "literal"],
     unit: RelativeTimeFormatUnitSingular,
     value: String
   ): Unit = {
@@ -36,7 +32,7 @@ object Unit {
   
   extension [Self <: Unit](x: Self) {
     
-    inline def setType(value: Exclude[NumberFormatPartTypes, literal]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Exclude[NumberFormatPartTypes, "literal"]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUnit(value: RelativeTimeFormatUnitSingular): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

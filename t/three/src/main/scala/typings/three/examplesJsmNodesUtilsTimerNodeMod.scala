@@ -1,8 +1,5 @@
 package typings.three
 
-import typings.three.threeStrings.delta
-import typings.three.threeStrings.frame
-import typings.three.threeStrings.local
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,23 +26,23 @@ object examplesJsmNodesUtilsTimerNodeMod {
     
     @JSImport("three/examples/jsm/nodes/utils/TimerNode", "default.DELTA")
     @js.native
-    def DELTA: delta = js.native
-    inline def DELTA_=(x: delta): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELTA")(x.asInstanceOf[js.Any])
+    def DELTA: "delta" = js.native
+    inline def DELTA_=(x: "delta"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELTA")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/utils/TimerNode", "default.FRAME")
     @js.native
-    def FRAME: frame = js.native
-    inline def FRAME_=(x: frame): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAME")(x.asInstanceOf[js.Any])
+    def FRAME: "frame" = js.native
+    inline def FRAME_=(x: "frame"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAME")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/utils/TimerNode", "default.GLOBAL")
     @js.native
-    def GLOBAL: typings.three.threeStrings.global = js.native
-    inline def GLOBAL_=(x: typings.three.threeStrings.global): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GLOBAL")(x.asInstanceOf[js.Any])
+    def GLOBAL: "global" = js.native
+    inline def GLOBAL_=(x: "global"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GLOBAL")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/utils/TimerNode", "default.LOCAL")
     @js.native
-    def LOCAL: local = js.native
-    inline def LOCAL_=(x: local): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCAL")(x.asInstanceOf[js.Any])
+    def LOCAL: "local" = js.native
+    inline def LOCAL_=(x: "local"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCAL")(x.asInstanceOf[js.Any])
   }
   
   @js.native

@@ -1,7 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliInts.`0`
-import typings.angularCompilerCli.angularCompilerCliInts.`1`
 import typings.angularCompilerCli.ngccSrcPackagesEntryPointMod.EntryPoint
 import typings.angularCompilerCli.ngccSrcPackagesEntryPointMod.EntryPointJsonProperty
 import typings.angularCompilerCli.ngccSrcUtilsMod.JsonObject
@@ -132,19 +130,15 @@ object ngccSrcExecutionTasksApiMod {
     Unit
   ]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliInts.`0`
-    - typings.angularCompilerCli.angularCompilerCliInts.`1`
-  */
-  trait TaskProcessingOutcome extends StObject
   object TaskProcessingOutcome {
     
     /** Failed to process the target format. */
-    inline def Failed: `1` = 1.asInstanceOf[`1`]
+    inline def Failed: 1 = 1.asInstanceOf[1]
     
     /** Successfully processed the target format property. */
-    inline def Processed: `0` = 0.asInstanceOf[`0`]
+    inline def Processed: 0 = 0.asInstanceOf[0]
   }
+  type TaskProcessingOutcome = 0 | 1
   
   trait TaskQueue extends StObject {
     

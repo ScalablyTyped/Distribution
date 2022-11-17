@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.EnumDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `67` extends StObject {
   
-  var `type`: EnumDeclaration
+  var `type`: "EnumDeclaration"
 }
 object `67` {
   
@@ -19,6 +18,6 @@ object `67` {
   
   extension [Self <: `67`](x: Self) {
     
-    inline def setType(value: EnumDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "EnumDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

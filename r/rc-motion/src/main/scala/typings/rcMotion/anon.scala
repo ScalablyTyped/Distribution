@@ -22,9 +22,7 @@ object anon {
   
   /* Inlined std.AnimationEvent & {  deadline :boolean | undefined} */
   @js.native
-  trait AnimationEventdeadlineboo
-    extends StObject
-       with MotionEvent {
+  trait AnimationEventdeadlineboo extends StObject {
     
     /* standard dom */
     val AT_TARGET: Double = js.native
@@ -527,9 +525,7 @@ object anon {
   
   /* Inlined std.TransitionEvent & {  deadline :boolean | undefined} */
   @js.native
-  trait TransitionEventdeadlinebo
-    extends StObject
-       with MotionEvent {
+  trait TransitionEventdeadlinebo extends StObject {
     
     /* standard dom */
     val AT_TARGET: Double = js.native

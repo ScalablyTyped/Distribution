@@ -3,10 +3,6 @@ package typings.vueRuntimeCore.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
 import typings.vueReactivity.mod.DebuggerEvent
-import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`false`
-import typings.vueRuntimeCore.vueRuntimeCoreStrings.B
-import typings.vueRuntimeCore.vueRuntimeCoreStrings.Defaults
-import typings.vueRuntimeCore.vueRuntimeCoreStrings.P
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,24 +53,15 @@ trait LegacyOptions[Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions 
         js.Object, 
         Props, 
         js.Object, 
-        `false`, 
+        false, 
         js.Object, 
         IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
-        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[js.Object], 
-        (UnwrapMixinsType[
-          IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-          typings.vueRuntimeCore.vueRuntimeCoreStrings.D
-        ]) & EnsureNonVoid[js.Object], 
-        (UnwrapMixinsType[
-          IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-          typings.vueRuntimeCore.vueRuntimeCoreStrings.C
-        ]) & EnsureNonVoid[js.Object], 
-        (UnwrapMixinsType[
-          IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-          typings.vueRuntimeCore.vueRuntimeCoreStrings.M
-        ]) & EnsureNonVoid[MethodOptions], 
-        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], Defaults]) & EnsureNonVoid[js.Object]
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "P"]) & EnsureNonVoid[Props], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "B"]) & EnsureNonVoid[js.Object], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "D"]) & EnsureNonVoid[js.Object], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "C"]) & EnsureNonVoid[js.Object], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "M"]) & EnsureNonVoid[MethodOptions], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "Defaults"]) & EnsureNonVoid[js.Object]
       ], 
       /* vm */ CreateComponentPublicInstance[
         Props, 
@@ -87,24 +74,15 @@ trait LegacyOptions[Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions 
         js.Object, 
         Props, 
         js.Object, 
-        `false`, 
+        false, 
         js.Object, 
         IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
-        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[js.Object], 
-        (UnwrapMixinsType[
-          IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-          typings.vueRuntimeCore.vueRuntimeCoreStrings.D
-        ]) & EnsureNonVoid[js.Object], 
-        (UnwrapMixinsType[
-          IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-          typings.vueRuntimeCore.vueRuntimeCoreStrings.C
-        ]) & EnsureNonVoid[js.Object], 
-        (UnwrapMixinsType[
-          IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-          typings.vueRuntimeCore.vueRuntimeCoreStrings.M
-        ]) & EnsureNonVoid[MethodOptions], 
-        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], Defaults]) & EnsureNonVoid[js.Object]
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "P"]) & EnsureNonVoid[Props], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "B"]) & EnsureNonVoid[js.Object], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "D"]) & EnsureNonVoid[js.Object], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "C"]) & EnsureNonVoid[js.Object], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "M"]) & EnsureNonVoid[MethodOptions], 
+        (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "Defaults"]) & EnsureNonVoid[js.Object]
       ], 
       D
     ]
@@ -205,24 +183,15 @@ object LegacyOptions {
             js.Object, 
             Props, 
             js.Object, 
-            `false`, 
+            false, 
             js.Object, 
             IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
-            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[js.Object], 
-            (UnwrapMixinsType[
-              IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-              typings.vueRuntimeCore.vueRuntimeCoreStrings.D
-            ]) & EnsureNonVoid[js.Object], 
-            (UnwrapMixinsType[
-              IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-              typings.vueRuntimeCore.vueRuntimeCoreStrings.C
-            ]) & EnsureNonVoid[js.Object], 
-            (UnwrapMixinsType[
-              IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-              typings.vueRuntimeCore.vueRuntimeCoreStrings.M
-            ]) & EnsureNonVoid[MethodOptions], 
-            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], Defaults]) & EnsureNonVoid[js.Object]
+            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "P"]) & EnsureNonVoid[Props], 
+            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "B"]) & EnsureNonVoid[js.Object], 
+            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "D"]) & EnsureNonVoid[js.Object], 
+            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "C"]) & EnsureNonVoid[js.Object], 
+            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "M"]) & EnsureNonVoid[MethodOptions], 
+            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "Defaults"]) & EnsureNonVoid[js.Object]
           ], 
           /* vm */ CreateComponentPublicInstance[
             Props, 
@@ -235,24 +204,15 @@ object LegacyOptions {
             js.Object, 
             Props, 
             js.Object, 
-            `false`, 
+            false, 
             js.Object, 
             IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
-            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[js.Object], 
-            (UnwrapMixinsType[
-              IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-              typings.vueRuntimeCore.vueRuntimeCoreStrings.D
-            ]) & EnsureNonVoid[js.Object], 
-            (UnwrapMixinsType[
-              IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-              typings.vueRuntimeCore.vueRuntimeCoreStrings.C
-            ]) & EnsureNonVoid[js.Object], 
-            (UnwrapMixinsType[
-              IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
-              typings.vueRuntimeCore.vueRuntimeCoreStrings.M
-            ]) & EnsureNonVoid[MethodOptions], 
-            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], Defaults]) & EnsureNonVoid[js.Object]
+            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "P"]) & EnsureNonVoid[Props], 
+            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "B"]) & EnsureNonVoid[js.Object], 
+            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "D"]) & EnsureNonVoid[js.Object], 
+            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "C"]) & EnsureNonVoid[js.Object], 
+            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "M"]) & EnsureNonVoid[MethodOptions], 
+            (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], "Defaults"]) & EnsureNonVoid[js.Object]
           ], 
           D
         ]
@@ -282,7 +242,7 @@ object LegacyOptions {
           js.Object, 
           js.Object, 
           js.Object, 
-          `false`, 
+          false, 
           ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
           js.Object
         ]) | Null, /* info */ String) => Boolean | Unit

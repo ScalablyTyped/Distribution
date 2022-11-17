@@ -1,26 +1,19 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.BlockStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait BlockStatement_
+trait BlockStatement_
   extends StObject
-     with BaseNode
-     with Block
-     with BlockParent
-     with Scopable
-     with Standardized
-     with Statement {
+     with BaseNode {
   
   var body: js.Array[Statement]
   
   var directives: js.Array[Directive_]
   
   @JSName("type")
-  var type_BlockStatement_ : BlockStatement
+  var type_BlockStatement_ : "BlockStatement"
 }
 object BlockStatement_ {
   
@@ -40,6 +33,6 @@ object BlockStatement_ {
     
     inline def setDirectivesVarargs(value: Directive_ *): Self = StObject.set(x, "directives", js.Array(value*))
     
-    inline def setType(value: BlockStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "BlockStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,14 +1,11 @@
 package typings.jquery.anon
 
 import typings.jquery.JQuery.TriggeredEvent
-import typings.jquery.JQuery._SpecialEventHook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Handle[TTarget, TData]
-  extends StObject
-     with _SpecialEventHook[TTarget, TData] {
+trait Handle[TTarget, TData] extends StObject {
   
   /**
     * jQuery calls a handle hook when the event has occurred and jQuery would normally call the user's event handler specified by `.on()` or another event binding method. If the hook exists, jQuery calls it _instead_ of that event handler, passing it the event and any data passed from `.trigger()` if it was not a native event. The `this` keyword is the DOM element being handled, and `event.handleObj` property has the detailed event information.

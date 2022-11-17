@@ -1,16 +1,11 @@
 package typings.mobx.anon
 
-import typings.mobx.distTypesObservablevalueMod.IBoxDidChange
 import typings.mobx.distTypesObservablevalueMod.IObservableValue
-import typings.mobx.mobxStrings.create
-import typings.mobx.mobxStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObjectObservableKind[T]
-  extends StObject
-     with IBoxDidChange[T] {
+trait ObjectObservableKind[T] extends StObject {
   
   var debugObjectName: String
   
@@ -18,9 +13,9 @@ trait ObjectObservableKind[T]
   
   var `object`: IObservableValue[T]
   
-  var observableKind: value
+  var observableKind: "value"
   
-  var `type`: create
+  var `type`: "create"
 }
 object ObjectObservableKind {
   
@@ -39,8 +34,8 @@ object ObjectObservableKind {
     
     inline def setObject(value: IObservableValue[T]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    inline def setObservableKind(value: value): Self = StObject.set(x, "observableKind", value.asInstanceOf[js.Any])
+    inline def setObservableKind(value: "value"): Self = StObject.set(x, "observableKind", value.asInstanceOf[js.Any])
     
-    inline def setType(value: create): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "create"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

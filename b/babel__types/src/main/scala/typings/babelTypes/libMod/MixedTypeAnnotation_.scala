@@ -1,20 +1,15 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.MixedTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MixedTypeAnnotation_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowBaseAnnotation
-     with FlowType
-     with Node {
+     with BaseNode {
   
   @JSName("type")
-  var type_MixedTypeAnnotation_ : MixedTypeAnnotation
+  var type_MixedTypeAnnotation_ : "MixedTypeAnnotation"
 }
 object MixedTypeAnnotation_ {
   
@@ -26,6 +21,6 @@ object MixedTypeAnnotation_ {
   
   extension [Self <: MixedTypeAnnotation_](x: Self) {
     
-    inline def setType(value: MixedTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "MixedTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

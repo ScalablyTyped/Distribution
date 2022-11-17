@@ -1,23 +1,19 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.InterfaceTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InterfaceTypeAnnotation_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowType
-     with Node {
+     with BaseNode {
   
   var body: ObjectTypeAnnotation_
   
   var `extends`: js.UndefOr[js.Array[InterfaceExtends_] | Null] = js.undefined
   
   @JSName("type")
-  var type_InterfaceTypeAnnotation_ : InterfaceTypeAnnotation
+  var type_InterfaceTypeAnnotation_ : "InterfaceTypeAnnotation"
 }
 object InterfaceTypeAnnotation_ {
   
@@ -39,6 +35,6 @@ object InterfaceTypeAnnotation_ {
     
     inline def setExtendsVarargs(value: InterfaceExtends_ *): Self = StObject.set(x, "extends", js.Array(value*))
     
-    inline def setType(value: InterfaceTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "InterfaceTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

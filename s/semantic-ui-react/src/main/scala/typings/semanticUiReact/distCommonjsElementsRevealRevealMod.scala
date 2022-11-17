@@ -7,14 +7,6 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
 import typings.semanticUiReact.distCommonjsElementsRevealRevealContentMod.RevealContentProps
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
-import typings.semanticUiReact.semanticUiReactStrings.`move down`
-import typings.semanticUiReact.semanticUiReactStrings.`move right`
-import typings.semanticUiReact.semanticUiReactStrings.`move up`
-import typings.semanticUiReact.semanticUiReactStrings.`rotate left`
-import typings.semanticUiReact.semanticUiReactStrings.`small fade`
-import typings.semanticUiReact.semanticUiReactStrings.fade
-import typings.semanticUiReact.semanticUiReactStrings.move
-import typings.semanticUiReact.semanticUiReactStrings.rotate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,7 +44,7 @@ object distCommonjsElementsRevealRevealMod extends Shortcut {
     
     /** An animation name that will be applied to Reveal. */
     var animated: js.UndefOr[
-        fade | (`small fade`) | move | (`move right`) | (`move up`) | (`move down`) | rotate | (`rotate left`)
+        "fade" | ("small fade") | "move" | ("move right") | ("move up") | ("move down") | "rotate" | ("rotate left")
       ] = js.undefined
     
     /** An element type to render as (string or function). */
@@ -87,7 +79,7 @@ object distCommonjsElementsRevealRevealMod extends Shortcut {
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
       inline def setAnimated(
-        value: fade | (`small fade`) | move | (`move right`) | (`move up`) | (`move down`) | rotate | (`rotate left`)
+        value: "fade" | ("small fade") | "move" | ("move right") | ("move up") | ("move down") | "rotate" | ("rotate left")
       ): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
       inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)

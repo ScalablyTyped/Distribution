@@ -1,20 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSInterfaceBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSInterfaceBody_
+trait TSInterfaceBody_
   extends StObject
-     with BaseNode
-     with TypeScript {
+     with BaseNode {
   
   var body: js.Array[TSTypeElement]
   
   @JSName("type")
-  var type_TSInterfaceBody_ : TSInterfaceBody
+  var type_TSInterfaceBody_ : "TSInterfaceBody"
 }
 object TSInterfaceBody_ {
   
@@ -30,6 +27,6 @@ object TSInterfaceBody_ {
     
     inline def setBodyVarargs(value: TSTypeElement*): Self = StObject.set(x, "body", js.Array(value*))
     
-    inline def setType(value: TSInterfaceBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSInterfaceBody"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

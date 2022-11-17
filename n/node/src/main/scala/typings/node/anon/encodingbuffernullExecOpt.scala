@@ -2,7 +2,6 @@ package typings.node.anon
 
 import typings.node.AbortSignal
 import typings.node.nodeColonurlMod.URL
-import typings.node.nodeStrings.buffer_
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.Signals
 import org.scalablytyped.runtime.StObject
@@ -14,7 +13,7 @@ trait encodingbuffernullExecOpt extends StObject {
   
   var cwd: js.UndefOr[String | URL] = js.undefined
   
-  var encoding: buffer_ | Null
+  var encoding: "buffer" | Null
   
   var env: js.UndefOr[ProcessEnv] = js.undefined
   
@@ -53,7 +52,7 @@ object encodingbuffernullExecOpt {
     
     inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
-    inline def setEncoding(value: buffer_): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: "buffer"): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
     

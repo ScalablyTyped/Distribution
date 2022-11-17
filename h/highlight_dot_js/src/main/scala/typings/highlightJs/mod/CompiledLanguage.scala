@@ -1,6 +1,5 @@
 package typings.highlightJs.mod
 
-import typings.highlightJs.highlightJsBooleans.`true`
 import typings.std.Record
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
@@ -52,7 +51,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var illegalRe: js.RegExp
   
   @JSName("isCompiled")
-  var isCompiled_CompiledLanguage: `true`
+  var isCompiled_CompiledLanguage: true
   
   var keywordPatternRe: js.RegExp
   
@@ -183,7 +182,7 @@ object CompiledLanguage {
     
     inline def setIllegalVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "illegal", js.Array(value*))
     
-    inline def setIsCompiled(value: `true`): Self = StObject.set(x, "isCompiled", value.asInstanceOf[js.Any])
+    inline def setIsCompiled(value: true): Self = StObject.set(x, "isCompiled", value.asInstanceOf[js.Any])
     
     inline def setKeywordPatternRe(value: js.RegExp): Self = StObject.set(x, "keywordPatternRe", value.asInstanceOf[js.Any])
     

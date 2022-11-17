@@ -1,14 +1,11 @@
 package typings.jquery.anon
 
-import typings.jquery.JQuery._CoordinatesPartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<jquery.JQuery.Coordinates, 'left'> */
-trait PickCoordinatesleft
-  extends StObject
-     with _CoordinatesPartial {
+trait PickCoordinatesleft extends StObject {
   
   var left: Double
 }

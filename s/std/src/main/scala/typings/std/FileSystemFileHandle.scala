@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.file
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait FileSystemFileHandle
   
   /* standard dom */
   @JSName("kind")
-  val kind_FileSystemFileHandle: file
+  val kind_FileSystemFileHandle: "file"
 }
 object FileSystemFileHandle {
   
@@ -32,6 +31,6 @@ object FileSystemFileHandle {
     
     inline def setGetFile(value: () => js.Promise[File]): Self = StObject.set(x, "getFile", js.Any.fromFunction0(value))
     
-    inline def setKind(value: file): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "file"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

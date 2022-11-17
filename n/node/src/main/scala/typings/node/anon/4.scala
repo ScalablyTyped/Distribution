@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `4` extends StObject {
   
-  var fd: typings.node.nodeInts.`2`
+  var fd: 2
 }
 object `4` {
   
@@ -17,6 +17,6 @@ object `4` {
   
   extension [Self <: `4`](x: Self) {
     
-    inline def setFd(value: typings.node.nodeInts.`2`): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
+    inline def setFd(value: 2): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
   }
 }

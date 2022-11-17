@@ -4,20 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.reactNative.reactNativeStrings.change
-  - typings.reactNative.reactNativeStrings.memoryWarning
-  - typings.reactNative.reactNativeStrings.blur
-  - typings.reactNative.reactNativeStrings.focus
-*/
-trait AppStateEvent extends StObject
 object AppStateEvent {
   
-  inline def blur: typings.reactNative.reactNativeStrings.blur = "blur".asInstanceOf[typings.reactNative.reactNativeStrings.blur]
+  inline def blur: "blur" = "blur".asInstanceOf["blur"]
   
-  inline def change: typings.reactNative.reactNativeStrings.change = "change".asInstanceOf[typings.reactNative.reactNativeStrings.change]
+  inline def change: "change" = "change".asInstanceOf["change"]
   
-  inline def focus: typings.reactNative.reactNativeStrings.focus = "focus".asInstanceOf[typings.reactNative.reactNativeStrings.focus]
+  inline def focus: "focus" = "focus".asInstanceOf["focus"]
   
-  inline def memoryWarning: typings.reactNative.reactNativeStrings.memoryWarning = "memoryWarning".asInstanceOf[typings.reactNative.reactNativeStrings.memoryWarning]
+  inline def memoryWarning: "memoryWarning" = "memoryWarning".asInstanceOf["memoryWarning"]
 }

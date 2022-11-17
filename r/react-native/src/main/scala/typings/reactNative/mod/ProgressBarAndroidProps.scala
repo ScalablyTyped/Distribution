@@ -1,12 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.Horizontal
-import typings.reactNative.reactNativeStrings.Inverse
-import typings.reactNative.reactNativeStrings.Large
-import typings.reactNative.reactNativeStrings.LargeInverse
-import typings.reactNative.reactNativeStrings.Normal
-import typings.reactNative.reactNativeStrings.Small
-import typings.reactNative.reactNativeStrings.SmallInverse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +39,9 @@ trait ProgressBarAndroidProps
     SmallInverse
     LargeInverse
     */
-  var styleAttr: js.UndefOr[Horizontal | Normal | Small | Large | Inverse | SmallInverse | LargeInverse] = js.undefined
+  var styleAttr: js.UndefOr[
+    "Horizontal" | "Normal" | "Small" | "Large" | "Inverse" | "SmallInverse" | "LargeInverse"
+  ] = js.undefined
 }
 object ProgressBarAndroidProps {
   
@@ -73,7 +68,7 @@ object ProgressBarAndroidProps {
     
     inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    inline def setStyleAttr(value: Horizontal | Normal | Small | Large | Inverse | SmallInverse | LargeInverse): Self = StObject.set(x, "styleAttr", value.asInstanceOf[js.Any])
+    inline def setStyleAttr(value: "Horizontal" | "Normal" | "Small" | "Large" | "Inverse" | "SmallInverse" | "LargeInverse"): Self = StObject.set(x, "styleAttr", value.asInstanceOf[js.Any])
     
     inline def setStyleAttrUndefined: Self = StObject.set(x, "styleAttr", js.undefined)
   }

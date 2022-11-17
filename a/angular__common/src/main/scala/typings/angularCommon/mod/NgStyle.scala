@@ -1,8 +1,6 @@
 package typings.angularCommon.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngStyle]`
 import typings.angularCore.mod.DoCheck
 import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.KeyValueDiffers
@@ -57,24 +55,26 @@ object NgStyle {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     NgStyle, 
-    `[ngStyle]`, 
+    "[ngStyle]", 
     scala.Nothing, 
     typings.angularCommon.anon.NgStyle, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       NgStyle, 
-      `[ngStyle]`, 
+      "[ngStyle]", 
       scala.Nothing, 
       typings.angularCommon.anon.NgStyle, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      true, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

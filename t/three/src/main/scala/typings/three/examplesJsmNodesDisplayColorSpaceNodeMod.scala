@@ -1,8 +1,6 @@
 package typings.three
 
 import typings.three.srcConstantsMod.TextureEncoding
-import typings.three.threeStrings.LinearToLinear
-import typings.three.threeStrings.LinearTosRGB
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,13 +22,13 @@ object examplesJsmNodesDisplayColorSpaceNodeMod {
     
     @JSImport("three/examples/jsm/nodes/display/ColorSpaceNode", "default.LINEAR_TO_LINEAR")
     @js.native
-    def LINEAR_TO_LINEAR: LinearToLinear = js.native
-    inline def LINEAR_TO_LINEAR_=(x: LinearToLinear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINEAR_TO_LINEAR")(x.asInstanceOf[js.Any])
+    def LINEAR_TO_LINEAR: "LinearToLinear" = js.native
+    inline def LINEAR_TO_LINEAR_=(x: "LinearToLinear"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINEAR_TO_LINEAR")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/display/ColorSpaceNode", "default.LINEAR_TO_SRGB")
     @js.native
-    def LINEAR_TO_SRGB: LinearTosRGB = js.native
-    inline def LINEAR_TO_SRGB_=(x: LinearTosRGB): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINEAR_TO_SRGB")(x.asInstanceOf[js.Any])
+    def LINEAR_TO_SRGB: "LinearTosRGB" = js.native
+    inline def LINEAR_TO_SRGB_=(x: "LinearTosRGB"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINEAR_TO_SRGB")(x.asInstanceOf[js.Any])
   }
   
   @js.native

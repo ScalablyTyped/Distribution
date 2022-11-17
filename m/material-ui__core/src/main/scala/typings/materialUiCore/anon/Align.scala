@@ -1,14 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.`inline`
-import typings.materialUiCore.materialUiCoreStrings.block
-import typings.materialUiCore.materialUiCoreStrings.error
-import typings.materialUiCore.materialUiCoreStrings.inherit
-import typings.materialUiCore.materialUiCoreStrings.initial
-import typings.materialUiCore.materialUiCoreStrings.primary
-import typings.materialUiCore.materialUiCoreStrings.secondary
-import typings.materialUiCore.materialUiCoreStrings.textPrimary
-import typings.materialUiCore.materialUiCoreStrings.textSecondary
 import typings.materialUiCore.mod.PropTypes.Alignment
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -24,9 +15,11 @@ trait Align extends StObject {
     */
   var children: js.UndefOr[ReactNode] = js.undefined
   
-  var color: js.UndefOr[initial | inherit | primary | secondary | textPrimary | textSecondary | error] = js.undefined
+  var color: js.UndefOr[
+    "initial" | "inherit" | "primary" | "secondary" | "textPrimary" | "textSecondary" | "error"
+  ] = js.undefined
   
-  var display: js.UndefOr[initial | block | `inline`] = js.undefined
+  var display: js.UndefOr["initial" | "block" | "inline"] = js.undefined
   
   var gutterBottom: js.UndefOr[Boolean] = js.undefined
   
@@ -34,7 +27,7 @@ trait Align extends StObject {
   
   var paragraph: js.UndefOr[Boolean] = js.undefined
   
-  var variant: js.UndefOr[typings.materialUiCore.typographyTypographyMod.Variant | inherit] = js.undefined
+  var variant: js.UndefOr[typings.materialUiCore.typographyTypographyMod.Variant | "inherit"] = js.undefined
   
   var variantMapping: js.UndefOr[PartialRecordVariantstrin] = js.undefined
 }
@@ -55,11 +48,11 @@ object Align {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setColor(value: initial | inherit | primary | secondary | textPrimary | textSecondary | error): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: "initial" | "inherit" | "primary" | "secondary" | "textPrimary" | "textSecondary" | "error"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setDisplay(value: initial | block | `inline`): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: "initial" | "block" | "inline"): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
@@ -75,7 +68,7 @@ object Align {
     
     inline def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
     
-    inline def setVariant(value: typings.materialUiCore.typographyTypographyMod.Variant | inherit): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: typings.materialUiCore.typographyTypographyMod.Variant | "inherit"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantMapping(value: PartialRecordVariantstrin): Self = StObject.set(x, "variantMapping", value.asInstanceOf[js.Any])
     

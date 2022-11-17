@@ -1,9 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.dark
-import typings.electron.electronStrings.light
-import typings.electron.electronStrings.system
-import typings.electron.electronStrings.updated
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +11,8 @@ trait NativeTheme
      with EventEmitter {
   
   @JSName("addListener")
-  def addListener_updated(event: updated, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("addListener_updated")
+  def addListener(event: "updated", listener: js.Function): this.type = js.native
   
   /**
     * A `boolean` indicating whether Chromium is in forced colors mode, controlled by
@@ -34,13 +31,16 @@ trait NativeTheme
     * will have to check them to determine which one has changed.
     */
   @JSName("on")
-  def on_updated(event: updated, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_updated")
+  def on(event: "updated", listener: js.Function): this.type = js.native
   
   @JSName("once")
-  def once_updated(event: updated, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_updated")
+  def once(event: "updated", listener: js.Function): this.type = js.native
   
   @JSName("removeListener")
-  def removeListener_updated(event: updated, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("removeListener_updated")
+  def removeListener(event: "updated", listener: js.Function): this.type = js.native
   
   /**
     * A `boolean` for if the OS / Chromium currently has a dark mode enabled or is
@@ -103,5 +103,5 @@ trait NativeTheme
     * Your application should then always use `shouldUseDarkColors` to determine what
     * CSS to apply.
     */
-  var themeSource: system | light | dark = js.native
+  var themeSource: "system" | "light" | "dark" = js.native
 }

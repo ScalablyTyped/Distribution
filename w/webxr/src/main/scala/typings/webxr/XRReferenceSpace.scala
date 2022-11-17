@@ -3,7 +3,6 @@ package typings.webxr
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventTarget
-import typings.webxr.webxrStrings.reset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,19 +19,22 @@ trait XRReferenceSpace
      with EventTarget {
   
   @JSName("addEventListener")
-  def addEventListener_reset(
-    `type`: reset,
+  @scala.annotation.targetName("addEventListener_reset")
+  def addEventListener(
+    `type`: "reset",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRReferenceSpaceEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_reset(
-    `type`: reset,
+  @scala.annotation.targetName("addEventListener_reset")
+  def addEventListener(
+    `type`: "reset",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRReferenceSpaceEvent, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_reset(
-    `type`: reset,
+  @scala.annotation.targetName("addEventListener_reset")
+  def addEventListener(
+    `type`: "reset",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRReferenceSpaceEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -44,19 +46,22 @@ trait XRReferenceSpace
   var onreset_Original: XRReferenceSpaceEventHandler = js.native
   
   @JSName("removeEventListener")
-  def removeEventListener_reset(
-    `type`: reset,
+  @scala.annotation.targetName("removeEventListener_reset")
+  def removeEventListener(
+    `type`: "reset",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRReferenceSpaceEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_reset(
-    `type`: reset,
+  @scala.annotation.targetName("removeEventListener_reset")
+  def removeEventListener(
+    `type`: "reset",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRReferenceSpaceEvent, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_reset(
-    `type`: reset,
+  @scala.annotation.targetName("removeEventListener_reset")
+  def removeEventListener(
+    `type`: "reset",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRReferenceSpaceEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native

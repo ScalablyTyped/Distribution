@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SpreadElement
   extends StObject
-     with Expression
-     with _ArrayBindingOrAssignmentElement
-     with _BindingOrAssignmentElementRestIndicator {
+     with Expression {
   
   val expression: Expression = js.native
   

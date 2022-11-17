@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSImportEqualsDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `160` extends StObject {
   
-  var `type`: TSImportEqualsDeclaration
+  var `type`: "TSImportEqualsDeclaration"
 }
 object `160` {
   
@@ -19,6 +18,6 @@ object `160` {
   
   extension [Self <: `160`](x: Self) {
     
-    inline def setType(value: TSImportEqualsDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSImportEqualsDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

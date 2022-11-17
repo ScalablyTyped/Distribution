@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.lowercase
 import typings.angularCommon.mod.LowerCasePipe
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
@@ -17,5 +15,5 @@ trait TypeofLowerCasePipe
   
   var ɵfac: ɵɵFactoryDeclaration[LowerCasePipe, scala.Nothing] = js.native
   
-  var ɵpipe: ɵɵPipeDeclaration[LowerCasePipe, lowercase, `true`] = js.native
+  var ɵpipe: ɵɵPipeDeclaration[LowerCasePipe, "lowercase", true] = js.native
 }

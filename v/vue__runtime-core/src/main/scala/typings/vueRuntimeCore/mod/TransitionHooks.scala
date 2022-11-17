@@ -1,9 +1,6 @@
 package typings.vueRuntimeCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vueRuntimeCore.vueRuntimeCoreStrings.`in-out`
-import typings.vueRuntimeCore.vueRuntimeCoreStrings.`out-in`
-import typings.vueRuntimeCore.vueRuntimeCoreStrings.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +28,7 @@ trait TransitionHooks[HostElement] extends StObject {
   
   def leave(el: HostElement, remove: js.Function0[Unit]): Unit
   
-  var mode: js.UndefOr[`in-out` | `out-in` | default] = js.undefined
+  var mode: js.UndefOr["in-out" | "out-in" | "default"] = js.undefined
   
   var persisted: Boolean
 }
@@ -73,7 +70,7 @@ object TransitionHooks {
     
     inline def setLeave(value: (HostElement, js.Function0[Unit]) => Unit): Self = StObject.set(x, "leave", js.Any.fromFunction2(value))
     
-    inline def setMode(value: `in-out` | `out-in` | default): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: "in-out" | "out-in" | "default"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     

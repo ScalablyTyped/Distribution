@@ -4,7 +4,6 @@ import typings.fortawesomeFontawesomeCommonTypes.mod.CssStyleClass
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconFamily
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconPrefix
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconStyle
-import typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.nest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait Config_ extends StObject {
   
   var autoAddCss: Boolean
   
-  var autoReplaceSvg: Boolean | nest
+  var autoReplaceSvg: Boolean | "nest"
   
   var cssPrefix: String
   
@@ -42,7 +41,7 @@ object Config_ {
   inline def apply(
     autoA11y: Boolean,
     autoAddCss: Boolean,
-    autoReplaceSvg: Boolean | nest,
+    autoReplaceSvg: Boolean | "nest",
     cssPrefix: String,
     familyDefault: IconFamily,
     familyPrefix: String,
@@ -64,7 +63,7 @@ object Config_ {
     
     inline def setAutoAddCss(value: Boolean): Self = StObject.set(x, "autoAddCss", value.asInstanceOf[js.Any])
     
-    inline def setAutoReplaceSvg(value: Boolean | nest): Self = StObject.set(x, "autoReplaceSvg", value.asInstanceOf[js.Any])
+    inline def setAutoReplaceSvg(value: Boolean | "nest"): Self = StObject.set(x, "autoReplaceSvg", value.asInstanceOf[js.Any])
     
     inline def setCssPrefix(value: String): Self = StObject.set(x, "cssPrefix", value.asInstanceOf[js.Any])
     

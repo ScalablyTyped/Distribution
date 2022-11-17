@@ -1,5 +1,9 @@
 package typings.mobx
 
+import typings.mobx.anon.DebugObjectNameNewValue
+import typings.mobx.anon.DebugObjectNameObject
+import typings.mobx.anon.NewValueObject
+import typings.mobx.anon.ObjectOldValue
 import typings.mobx.distTypesInterceptUtilsMod.IInterceptable
 import typings.mobx.distTypesInterceptUtilsMod.IInterceptor
 import typings.mobx.distTypesListenUtilsMod.IListenable
@@ -78,47 +82,7 @@ object distTypesObservablesetMod {
   
   type IObservableSetInitialValues[T] = Set[T] | js.Array[T]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.mobx.anon.DebugObjectNameNewValue[T]
-    - typings.mobx.anon.DebugObjectNameObject[T]
-  */
-  trait ISetDidChange[T] extends StObject
-  object ISetDidChange {
-    
-    inline def DebugObjectNameNewValue[T](debugObjectName: String, newValue: T, `object`: ObservableSet[T]): typings.mobx.anon.DebugObjectNameNewValue[T] = {
-      val __obj = js.Dynamic.literal(debugObjectName = debugObjectName.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], observableKind = "set")
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("add")
-      __obj.asInstanceOf[typings.mobx.anon.DebugObjectNameNewValue[T]]
-    }
-    
-    inline def DebugObjectNameObject[T](debugObjectName: String, `object`: ObservableSet[T], oldValue: T): typings.mobx.anon.DebugObjectNameObject[T] = {
-      val __obj = js.Dynamic.literal(debugObjectName = debugObjectName.asInstanceOf[js.Any], observableKind = "set", oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("delete")
-      __obj.asInstanceOf[typings.mobx.anon.DebugObjectNameObject[T]]
-    }
-  }
+  type ISetDidChange[T] = DebugObjectNameNewValue[T] | DebugObjectNameObject[T]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.mobx.anon.ObjectOldValue[T]
-    - typings.mobx.anon.NewValueObject[T]
-  */
-  trait ISetWillChange[T] extends StObject
-  object ISetWillChange {
-    
-    inline def NewValueObject[T](newValue: T, `object`: ObservableSet[T]): typings.mobx.anon.NewValueObject[T] = {
-      val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("add")
-      __obj.asInstanceOf[typings.mobx.anon.NewValueObject[T]]
-    }
-    
-    inline def ObjectOldValue[T](`object`: ObservableSet[T], oldValue: T): typings.mobx.anon.ObjectOldValue[T] = {
-      val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("delete")
-      __obj.asInstanceOf[typings.mobx.anon.ObjectOldValue[T]]
-    }
-  }
+  type ISetWillChange[T] = ObjectOldValue[T] | NewValueObject[T]
 }

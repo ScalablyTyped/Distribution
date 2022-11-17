@@ -3,57 +3,6 @@ package typings.rcMentions
 import typings.rcMentions.anon.PartialMentionsPropsRefAt
 import typings.rcMentions.anon.WeakValidationMapMentions
 import typings.rcMentions.esOptionMod.OptionProps
-import typings.rcMentions.rcMentionsBooleans.`false`
-import typings.rcMentions.rcMentionsStrings.`additions removals`
-import typings.rcMentions.rcMentionsStrings.`additions text`
-import typings.rcMentions.rcMentionsStrings.`inline`
-import typings.rcMentions.rcMentionsStrings.`removals additions`
-import typings.rcMentions.rcMentionsStrings.`removals text`
-import typings.rcMentions.rcMentionsStrings.`text additions`
-import typings.rcMentions.rcMentionsStrings.`text removals`
-import typings.rcMentions.rcMentionsStrings.additions
-import typings.rcMentions.rcMentionsStrings.all
-import typings.rcMentions.rcMentionsStrings.ascending
-import typings.rcMentions.rcMentionsStrings.assertive
-import typings.rcMentions.rcMentionsStrings.both
-import typings.rcMentions.rcMentionsStrings.copy
-import typings.rcMentions.rcMentionsStrings.date
-import typings.rcMentions.rcMentionsStrings.decimal
-import typings.rcMentions.rcMentionsStrings.descending
-import typings.rcMentions.rcMentionsStrings.dialog
-import typings.rcMentions.rcMentionsStrings.email
-import typings.rcMentions.rcMentionsStrings.execute
-import typings.rcMentions.rcMentionsStrings.grammar
-import typings.rcMentions.rcMentionsStrings.grid
-import typings.rcMentions.rcMentionsStrings.horizontal
-import typings.rcMentions.rcMentionsStrings.inherit
-import typings.rcMentions.rcMentionsStrings.link
-import typings.rcMentions.rcMentionsStrings.list
-import typings.rcMentions.rcMentionsStrings.listbox
-import typings.rcMentions.rcMentionsStrings.location
-import typings.rcMentions.rcMentionsStrings.menu
-import typings.rcMentions.rcMentionsStrings.mixed
-import typings.rcMentions.rcMentionsStrings.move
-import typings.rcMentions.rcMentionsStrings.no
-import typings.rcMentions.rcMentionsStrings.none
-import typings.rcMentions.rcMentionsStrings.numeric
-import typings.rcMentions.rcMentionsStrings.off
-import typings.rcMentions.rcMentionsStrings.on
-import typings.rcMentions.rcMentionsStrings.other
-import typings.rcMentions.rcMentionsStrings.page
-import typings.rcMentions.rcMentionsStrings.polite
-import typings.rcMentions.rcMentionsStrings.popup
-import typings.rcMentions.rcMentionsStrings.removals
-import typings.rcMentions.rcMentionsStrings.search
-import typings.rcMentions.rcMentionsStrings.spelling
-import typings.rcMentions.rcMentionsStrings.step
-import typings.rcMentions.rcMentionsStrings.tel
-import typings.rcMentions.rcMentionsStrings.text
-import typings.rcMentions.rcMentionsStrings.time
-import typings.rcMentions.rcMentionsStrings.tree
-import typings.rcMentions.rcMentionsStrings.url
-import typings.rcMentions.rcMentionsStrings.vertical
-import typings.rcMentions.rcMentionsStrings.yes
 import typings.rcTextarea.anon.Height
 import typings.rcTextarea.esResizableTextAreaMod.AutoSizeType
 import typings.react.anon.Html
@@ -153,11 +102,11 @@ object esMentionsMod {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -167,7 +116,7 @@ object esMentionsMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -175,7 +124,7 @@ object esMentionsMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -185,11 +134,11 @@ object esMentionsMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -199,7 +148,7 @@ object esMentionsMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -207,7 +156,7 @@ object esMentionsMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -215,12 +164,12 @@ object esMentionsMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -237,7 +186,7 @@ object esMentionsMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -267,7 +216,7 @@ object esMentionsMod {
     
     var cols: js.UndefOr[Double] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -295,7 +244,7 @@ object esMentionsMod {
     
     var inlist: js.UndefOr[Any] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
     
@@ -513,11 +462,11 @@ object esMentionsMod {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
     var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
     
@@ -550,7 +499,7 @@ object esMentionsMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -558,7 +507,7 @@ object esMentionsMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -578,7 +527,7 @@ object esMentionsMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -594,7 +543,7 @@ object esMentionsMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -614,7 +563,7 @@ object esMentionsMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -622,7 +571,7 @@ object esMentionsMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -642,7 +591,7 @@ object esMentionsMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -658,7 +607,7 @@ object esMentionsMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -674,7 +623,7 @@ object esMentionsMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -683,7 +632,7 @@ object esMentionsMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -716,7 +665,7 @@ object esMentionsMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -776,7 +725,7 @@ object esMentionsMod {
       
       inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -834,7 +783,7 @@ object esMentionsMod {
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -1270,7 +1219,7 @@ object esMentionsMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
@@ -1278,7 +1227,7 @@ object esMentionsMod {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
@@ -1298,17 +1247,13 @@ object esMentionsMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcMentions.rcMentionsStrings.ltr
-    - typings.rcMentions.rcMentionsStrings.rtl
-  */
-  trait Direction extends StObject
   object Direction {
     
-    inline def ltr: typings.rcMentions.rcMentionsStrings.ltr = "ltr".asInstanceOf[typings.rcMentions.rcMentionsStrings.ltr]
+    inline def ltr: "ltr" = "ltr".asInstanceOf["ltr"]
     
-    inline def rtl: typings.rcMentions.rcMentionsStrings.rtl = "rtl".asInstanceOf[typings.rcMentions.rcMentionsStrings.rtl]
+    inline def rtl: "rtl" = "rtl".asInstanceOf["rtl"]
   }
+  type Direction = "ltr" | "rtl"
   
   trait MentionsProps
     extends StObject
@@ -1321,7 +1266,7 @@ object esMentionsMod {
     
     var dropdownClassName: js.UndefOr[String] = js.undefined
     
-    var filterOption: js.UndefOr[`false` | (js.Function2[/* input */ String, /* param1 */ OptionProps, Boolean])] = js.undefined
+    var filterOption: js.UndefOr[false | (js.Function2[/* input */ String, /* param1 */ OptionProps, Boolean])] = js.undefined
     
     var getPopupContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
@@ -1370,7 +1315,7 @@ object esMentionsMod {
       
       inline def setDropdownClassNameUndefined: Self = StObject.set(x, "dropdownClassName", js.undefined)
       
-      inline def setFilterOption(value: `false` | (js.Function2[/* input */ String, /* param1 */ OptionProps, Boolean])): Self = StObject.set(x, "filterOption", value.asInstanceOf[js.Any])
+      inline def setFilterOption(value: false | (js.Function2[/* input */ String, /* param1 */ OptionProps, Boolean])): Self = StObject.set(x, "filterOption", value.asInstanceOf[js.Any])
       
       inline def setFilterOptionFunction2(value: (/* input */ String, /* param1 */ OptionProps) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
       
@@ -1456,15 +1401,11 @@ object esMentionsMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcMentions.rcMentionsStrings.top
-    - typings.rcMentions.rcMentionsStrings.bottom
-  */
-  trait Placement extends StObject
   object Placement {
     
-    inline def bottom: typings.rcMentions.rcMentionsStrings.bottom = "bottom".asInstanceOf[typings.rcMentions.rcMentionsStrings.bottom]
+    inline def bottom: "bottom" = "bottom".asInstanceOf["bottom"]
     
-    inline def top: typings.rcMentions.rcMentionsStrings.top = "top".asInstanceOf[typings.rcMentions.rcMentionsStrings.top]
+    inline def top: "top" = "top".asInstanceOf["top"]
   }
+  type Placement = "top" | "bottom"
 }

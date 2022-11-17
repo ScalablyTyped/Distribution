@@ -1,18 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.ObjectProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ObjectProperty_
+trait ObjectProperty_
   extends StObject
-     with BaseNode
-     with ObjectMember
-     with Property
-     with Standardized
-     with UserWhitespacable {
+     with BaseNode {
   
   var computed: Boolean
   
@@ -23,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var shorthand: Boolean
   
   @JSName("type")
-  var type_ObjectProperty_ : ObjectProperty
+  var type_ObjectProperty_ : "ObjectProperty"
   
   var value: Expression | PatternLike
 }
@@ -56,7 +50,7 @@ object ObjectProperty_ {
     
     inline def setShorthand(value: Boolean): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ObjectProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ObjectProperty"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: Expression | PatternLike): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

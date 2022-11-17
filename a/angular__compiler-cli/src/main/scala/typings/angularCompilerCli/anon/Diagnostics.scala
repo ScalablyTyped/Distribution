@@ -1,20 +1,16 @@
 package typings.angularCompilerCli.anon
 
-import typings.angularCompilerCli.angularCompilerCliBooleans.`true`
-import typings.angularCompilerCli.ngccSrcPackagesTransformerMod.TransformResult
 import typings.angularCompilerCli.ngccSrcRenderingUtilsMod.FileToWrite
 import typings.typescript.mod.Diagnostic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Diagnostics
-  extends StObject
-     with TransformResult {
+trait Diagnostics extends StObject {
   
   var diagnostics: js.Array[Diagnostic]
   
-  var success: `true`
+  var success: true
   
   var transformedFiles: js.Array[FileToWrite]
 }
@@ -31,7 +27,7 @@ object Diagnostics {
     
     inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value*))
     
-    inline def setSuccess(value: `true`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: true): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     inline def setTransformedFiles(value: js.Array[FileToWrite]): Self = StObject.set(x, "transformedFiles", value.asInstanceOf[js.Any])
     

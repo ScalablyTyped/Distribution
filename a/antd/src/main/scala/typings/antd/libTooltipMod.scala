@@ -367,70 +367,39 @@ object libTooltipMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.top
-    - typings.antd.antdStrings.left
-    - typings.antd.antdStrings.right
-    - typings.antd.antdStrings.bottom
-    - typings.antd.antdStrings.topLeft
-    - typings.antd.antdStrings.topRight
-    - typings.antd.antdStrings.bottomLeft
-    - typings.antd.antdStrings.bottomRight
-    - typings.antd.antdStrings.leftTop
-    - typings.antd.antdStrings.leftBottom
-    - typings.antd.antdStrings.rightTop
-    - typings.antd.antdStrings.rightBottom
-  */
-  trait TooltipPlacement extends StObject
   object TooltipPlacement {
     
-    inline def bottom: typings.antd.antdStrings.bottom = "bottom".asInstanceOf[typings.antd.antdStrings.bottom]
+    inline def bottom: "bottom" = "bottom".asInstanceOf["bottom"]
     
-    inline def bottomLeft: typings.antd.antdStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.antd.antdStrings.bottomLeft]
+    inline def bottomLeft: "bottomLeft" = "bottomLeft".asInstanceOf["bottomLeft"]
     
-    inline def bottomRight: typings.antd.antdStrings.bottomRight = "bottomRight".asInstanceOf[typings.antd.antdStrings.bottomRight]
+    inline def bottomRight: "bottomRight" = "bottomRight".asInstanceOf["bottomRight"]
     
-    inline def left: typings.antd.antdStrings.left = "left".asInstanceOf[typings.antd.antdStrings.left]
+    inline def left: "left" = "left".asInstanceOf["left"]
     
-    inline def leftBottom: typings.antd.antdStrings.leftBottom = "leftBottom".asInstanceOf[typings.antd.antdStrings.leftBottom]
+    inline def leftBottom: "leftBottom" = "leftBottom".asInstanceOf["leftBottom"]
     
-    inline def leftTop: typings.antd.antdStrings.leftTop = "leftTop".asInstanceOf[typings.antd.antdStrings.leftTop]
+    inline def leftTop: "leftTop" = "leftTop".asInstanceOf["leftTop"]
     
-    inline def right: typings.antd.antdStrings.right = "right".asInstanceOf[typings.antd.antdStrings.right]
+    inline def right: "right" = "right".asInstanceOf["right"]
     
-    inline def rightBottom: typings.antd.antdStrings.rightBottom = "rightBottom".asInstanceOf[typings.antd.antdStrings.rightBottom]
+    inline def rightBottom: "rightBottom" = "rightBottom".asInstanceOf["rightBottom"]
     
-    inline def rightTop: typings.antd.antdStrings.rightTop = "rightTop".asInstanceOf[typings.antd.antdStrings.rightTop]
+    inline def rightTop: "rightTop" = "rightTop".asInstanceOf["rightTop"]
     
-    inline def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
+    inline def top: "top" = "top".asInstanceOf["top"]
     
-    inline def topLeft: typings.antd.antdStrings.topLeft = "topLeft".asInstanceOf[typings.antd.antdStrings.topLeft]
+    inline def topLeft: "topLeft" = "topLeft".asInstanceOf["topLeft"]
     
-    inline def topRight: typings.antd.antdStrings.topRight = "topRight".asInstanceOf[typings.antd.antdStrings.topRight]
+    inline def topRight: "topRight" = "topRight".asInstanceOf["topRight"]
   }
+  type TooltipPlacement = "top" | "left" | "right" | "bottom" | "topLeft" | "topRight" | "bottomLeft" | "bottomRight" | "leftTop" | "leftBottom" | "rightTop" | "rightBottom"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.libTooltipMod.TooltipPropsWithTitle
-    - typings.antd.libTooltipMod.TooltipPropsWithOverlay
-  */
-  trait TooltipProps extends StObject
-  object TooltipProps {
-    
-    inline def TooltipPropsWithOverlay(): typings.antd.libTooltipMod.TooltipPropsWithOverlay = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.antd.libTooltipMod.TooltipPropsWithOverlay]
-    }
-    
-    inline def TooltipPropsWithTitle(): typings.antd.libTooltipMod.TooltipPropsWithTitle = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.antd.libTooltipMod.TooltipPropsWithTitle]
-    }
-  }
+  type TooltipProps = TooltipPropsWithTitle | TooltipPropsWithOverlay
   
   trait TooltipPropsWithOverlay
     extends StObject
-       with AbstractTooltipProps
-       with TooltipProps {
+       with AbstractTooltipProps {
     
     @JSName("overlay")
     var overlay_TooltipPropsWithOverlay: js.UndefOr[ReactNode | RenderFunction] = js.undefined
@@ -462,8 +431,7 @@ object libTooltipMod extends Shortcut {
   
   trait TooltipPropsWithTitle
     extends StObject
-       with AbstractTooltipProps
-       with TooltipProps {
+       with AbstractTooltipProps {
     
     @JSName("overlay")
     var overlay_TooltipPropsWithTitle: js.UndefOr[ReactNode | RenderFunction] = js.undefined

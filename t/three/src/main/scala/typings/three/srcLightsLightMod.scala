@@ -4,7 +4,6 @@ import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcLightsLightShadowMod.LightShadow
 import typings.three.srcMathColorMod.Color
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ object srcLightsLightMod {
       */
     var intensity: Double = js.native
     
-    val isLight: `true` = js.native
+    val isLight: true = js.native
     
     var shadow: LightShadow = js.native
     

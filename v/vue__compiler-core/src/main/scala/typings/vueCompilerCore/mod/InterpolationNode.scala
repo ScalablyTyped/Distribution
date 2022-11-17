@@ -1,20 +1,17 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InterpolationNode
   extends StObject
-     with Node2
-     with TemplateChildNode
-     with TemplateTextChildNode {
+     with Node2 {
   
   var content: ExpressionNode
   
   @JSName("type")
-  var type_InterpolationNode: `5`
+  var type_InterpolationNode: 5
 }
 object InterpolationNode {
   
@@ -28,6 +25,6 @@ object InterpolationNode {
     
     inline def setContent(value: ExpressionNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `5`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 5): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

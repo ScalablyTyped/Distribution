@@ -1,8 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdStrings.large
-import typings.antd.antdStrings.small
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
@@ -26,7 +24,7 @@ object libSkeletonInputMod extends Shortcut {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[large | small | typings.antd.antdStrings.default] = js.undefined
+    var size: js.UndefOr["large" | "small" | "default"] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
@@ -55,7 +53,7 @@ object libSkeletonInputMod extends Shortcut {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setSize(value: large | small | typings.antd.antdStrings.default): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "large" | "small" | "default"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

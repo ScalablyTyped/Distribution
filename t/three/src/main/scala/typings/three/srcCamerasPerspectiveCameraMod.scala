@@ -2,7 +2,6 @@ package typings.three
 
 import typings.three.anon.FullHeight
 import typings.three.srcCamerasCameraMod.Camera
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,7 +76,7 @@ object srcCamerasPerspectiveCameraMod {
     
     def getFocalLength(): Double = js.native
     
-    val isPerspectiveCamera: `true` = js.native
+    val isPerspectiveCamera: true = js.native
     
     /**
       * Camera frustum near plane.
@@ -135,7 +134,7 @@ object srcCamerasPerspectiveCameraMod {
     def toJSON(meta: Any): Any = js.native
     
     @JSName("type")
-    var type_PerspectiveCamera: typings.three.threeStrings.PerspectiveCamera = js.native
+    var type_PerspectiveCamera: "PerspectiveCamera" = js.native
     
     /**
       * Updates the camera projection matrix. Must be called after change of parameters.

@@ -1,14 +1,9 @@
 package typings.expoFileSystem
 
-import typings.expoFileSystem.buildFileSystemDottypesMod.FileInfo
 import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemAcceptedUploadHttpMethod
-import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemRequestDirectoryPermissionsResult
 import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemSessionType
-import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemUploadOptions
 import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemUploadType.BINARY_CONTENT
 import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemUploadType.MULTIPART
-import typings.expoFileSystem.expoFileSystemBooleans.`false`
-import typings.expoFileSystem.expoFileSystemBooleans.`true`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait DirectoryUri
-    extends StObject
-       with FileSystemRequestDirectoryPermissionsResult {
+  trait DirectoryUri extends StObject {
     
     var directoryUri: String
     
-    var granted: `true`
+    var granted: true
   }
   object DirectoryUri {
     
@@ -35,15 +28,13 @@ object anon {
       
       inline def setDirectoryUri(value: String): Self = StObject.set(x, "directoryUri", value.asInstanceOf[js.Any])
       
-      inline def setGranted(value: `true`): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
+      inline def setGranted(value: true): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Exists
-    extends StObject
-       with FileInfo {
+  trait Exists extends StObject {
     
-    var exists: `true`
+    var exists: true
     
     var isDirectory: Boolean
     
@@ -64,7 +55,7 @@ object anon {
     
     extension [Self <: Exists](x: Self) {
       
-      inline def setExists(value: `true`): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+      inline def setExists(value: true): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
       inline def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
       
@@ -101,11 +92,9 @@ object anon {
     }
   }
   
-  trait Granted
-    extends StObject
-       with FileSystemRequestDirectoryPermissionsResult {
+  trait Granted extends StObject {
     
-    var granted: `false`
+    var granted: false
   }
   object Granted {
     
@@ -116,7 +105,7 @@ object anon {
     
     extension [Self <: Granted](x: Self) {
       
-      inline def setGranted(value: `false`): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
+      inline def setGranted(value: false): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,13 +147,11 @@ object anon {
     }
   }
   
-  trait IsDirectory
-    extends StObject
-       with FileInfo {
+  trait IsDirectory extends StObject {
     
-    var exists: `false`
+    var exists: false
     
-    var isDirectory: `false`
+    var isDirectory: false
     
     var md5: Unit
     
@@ -183,9 +170,9 @@ object anon {
     
     extension [Self <: IsDirectory](x: Self) {
       
-      inline def setExists(value: `false`): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+      inline def setExists(value: false): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
-      inline def setIsDirectory(value: `false`): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
+      inline def setIsDirectory(value: false): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
       
       inline def setMd5(value: Unit): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
       
@@ -223,9 +210,7 @@ object anon {
   }
   
   /* Inlined {  uploadType :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemUploadType.BINARY_CONTENT | undefined} & {  headers :std.Record<string, string> | undefined,   httpMethod :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemAcceptedUploadHttpMethod | undefined,   sessionType :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemSessionType | undefined} */
-  trait uploadTypeBINARYCONTENTun
-    extends StObject
-       with FileSystemUploadOptions {
+  trait uploadTypeBINARYCONTENTun extends StObject {
     
     var headers: js.UndefOr[Record[String, String]] = js.undefined
     
@@ -263,9 +248,7 @@ object anon {
   }
   
   /* Inlined {  uploadType :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemUploadType.MULTIPART,   fieldName :string | undefined,   mimeType :string | undefined,   parameters :std.Record<string, string> | undefined} & {  headers :std.Record<string, string> | undefined,   httpMethod :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemAcceptedUploadHttpMethod | undefined,   sessionType :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemSessionType | undefined} */
-  trait uploadTypeMULTIPARTfieldN
-    extends StObject
-       with FileSystemUploadOptions {
+  trait uploadTypeMULTIPARTfieldN extends StObject {
     
     var fieldName: js.UndefOr[String] = js.undefined
     

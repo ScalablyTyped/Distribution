@@ -3,7 +3,6 @@ package typings.node
 import typings.node.NodeJS.Dict
 import typings.node.NodeJS.ErrnoException
 import typings.node.anon.Fatal
-import typings.node.utilMod.CustomPromisify
 import typings.node.utilMod.DebugLogger
 import typings.node.utilMod.DebugLoggerFunction
 import typings.node.utilMod.InspectOptions
@@ -423,7 +422,6 @@ object nodeColonutilMod {
     inline def apply[T1](
       fn: js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* err */ js.UndefOr[Any], Unit], Unit]
     ): js.Function1[/* arg1 */ T1, js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ T1, js.Promise[Unit]]]
-    inline def apply[TCustom /* <: js.Function */](fn: CustomPromisify[TCustom]): TCustom = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[TCustom]
     inline def apply[T1, T2](
       fn: js.Function3[
           /* arg1 */ T1, 

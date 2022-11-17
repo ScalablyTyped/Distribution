@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.multipleOf
 import typings.ajv.anon.Data
 import typings.ajv.anon.MultipleOf
 import typings.ajv.distTypesMod.CodeKeywordDefinition
@@ -16,7 +15,7 @@ object distVocabulariesValidationMultipleOfMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type MultipleOfError = ErrorObject[multipleOf, MultipleOf, Double | Data]
+  type MultipleOfError = ErrorObject["multipleOf", MultipleOf, Double | Data]
   
   type _To = CodeKeywordDefinition
   

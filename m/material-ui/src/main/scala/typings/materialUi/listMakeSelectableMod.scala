@@ -1,7 +1,6 @@
 package typings.materialUi
 
 import typings.materialUi.MaterialUI.List.SelectableProps
-import typings.materialUi.materialUiStrings.onChange
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.std.Omit
@@ -15,7 +14,7 @@ object listMakeSelectableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[P /* <: js.Object */](component: ComponentClass[P, ComponentState]): ComponentClass[(Omit[P, onChange]) & SelectableProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[(Omit[P, onChange]) & SelectableProps, ComponentState]]
+  inline def default[P /* <: js.Object */](component: ComponentClass[P, ComponentState]): ComponentClass[(Omit[P, "onChange"]) & SelectableProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[(Omit[P, "onChange"]) & SelectableProps, ComponentState]]
   
-  inline def makeSelectable[P /* <: js.Object */](component: ComponentClass[P, ComponentState]): ComponentClass[(Omit[P, onChange]) & SelectableProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSelectable")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[(Omit[P, onChange]) & SelectableProps, ComponentState]]
+  inline def makeSelectable[P /* <: js.Object */](component: ComponentClass[P, ComponentState]): ComponentClass[(Omit[P, "onChange"]) & SelectableProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSelectable")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[(Omit[P, "onChange"]) & SelectableProps, ComponentState]]
 }

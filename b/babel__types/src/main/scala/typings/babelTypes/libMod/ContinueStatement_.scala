@@ -1,23 +1,17 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ContinueStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ContinueStatement_
   extends StObject
-     with BaseNode
-     with CompletionStatement
-     with Node
-     with Standardized
-     with Statement
-     with Terminatorless {
+     with BaseNode {
   
   var label: js.UndefOr[Identifier_ | Null] = js.undefined
   
   @JSName("type")
-  var type_ContinueStatement_ : ContinueStatement
+  var type_ContinueStatement_ : "ContinueStatement"
 }
 object ContinueStatement_ {
   
@@ -35,6 +29,6 @@ object ContinueStatement_ {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setType(value: ContinueStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ContinueStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

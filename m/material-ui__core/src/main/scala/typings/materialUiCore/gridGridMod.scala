@@ -2,8 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.AlignContent
-import typings.materialUiCore.materialUiCoreStrings.div
-import typings.materialUiCore.materialUiCoreStrings.nowrap_
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -25,327 +23,221 @@ object gridGridMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Grid/Grid", JSImport.Default)
   @js.native
-  val default: OverridableComponent[GridTypeMap[js.Object, div]] = js.native
+  val default: OverridableComponent[GridTypeMap[js.Object, "div"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.container
-    - typings.materialUiCore.materialUiCoreStrings.item
-    - typings.materialUiCore.materialUiCoreStrings.zeroMinWidth
-    - typings.materialUiCore.materialUiCoreStrings.`direction-xs-column`
-    - typings.materialUiCore.materialUiCoreStrings.`direction-xs-column-reverse`
-    - typings.materialUiCore.materialUiCoreStrings.`direction-xs-row-reverse`
-    - typings.materialUiCore.materialUiCoreStrings.`wrap-xs-nowrap`
-    - typings.materialUiCore.materialUiCoreStrings.`wrap-xs-wrap-reverse`
-    - typings.materialUiCore.materialUiCoreStrings.`align-items-xs-center`
-    - typings.materialUiCore.materialUiCoreStrings.`align-items-xs-flex-start`
-    - typings.materialUiCore.materialUiCoreStrings.`align-items-xs-flex-end`
-    - typings.materialUiCore.materialUiCoreStrings.`align-items-xs-baseline`
-    - typings.materialUiCore.materialUiCoreStrings.`align-content-xs-center`
-    - typings.materialUiCore.materialUiCoreStrings.`align-content-xs-flex-start`
-    - typings.materialUiCore.materialUiCoreStrings.`align-content-xs-flex-end`
-    - typings.materialUiCore.materialUiCoreStrings.`align-content-xs-space-between`
-    - typings.materialUiCore.materialUiCoreStrings.`align-content-xs-space-around`
-    - typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-center`
-    - typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-flex-end`
-    - typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-space-between`
-    - typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-space-around`
-    - typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-space-evenly`
-    - typings.materialUiCore.materialUiCoreStrings.`spacing-xs-1`
-    - typings.materialUiCore.materialUiCoreStrings.`spacing-xs-2`
-    - typings.materialUiCore.materialUiCoreStrings.`spacing-xs-3`
-    - typings.materialUiCore.materialUiCoreStrings.`spacing-xs-4`
-    - typings.materialUiCore.materialUiCoreStrings.`spacing-xs-5`
-    - typings.materialUiCore.materialUiCoreStrings.`spacing-xs-6`
-    - typings.materialUiCore.materialUiCoreStrings.`spacing-xs-7`
-    - typings.materialUiCore.materialUiCoreStrings.`spacing-xs-8`
-    - typings.materialUiCore.materialUiCoreStrings.`spacing-xs-9`
-    - typings.materialUiCore.materialUiCoreStrings.`spacing-xs-10`
-    - typings.materialUiCore.materialUiCoreStrings.`grid-xs-auto`
-    - typings.materialUiCore.materialUiCoreStrings.`grid-xs-true`
-    - typings.materialUiCore.materialUiCoreStrings.`grid-xs-1`
-    - typings.materialUiCore.materialUiCoreStrings.`grid-xs-2`
-    - typings.materialUiCore.materialUiCoreStrings.`grid-xs-3`
-    - typings.materialUiCore.materialUiCoreStrings.`grid-xs-4`
-    - typings.materialUiCore.materialUiCoreStrings.`grid-xs-5`
-    - typings.materialUiCore.materialUiCoreStrings.`grid-xs-6`
-    - typings.materialUiCore.materialUiCoreStrings.`grid-xs-7`
-    - typings.materialUiCore.materialUiCoreStrings.`grid-xs-8`
-    - typings.materialUiCore.materialUiCoreStrings.`grid-xs-9`
-    - typings.materialUiCore.materialUiCoreStrings.`grid-xs-10`
-    - typings.materialUiCore.materialUiCoreStrings.`grid-xs-11`
-    - typings.materialUiCore.materialUiCoreStrings.`grid-xs-12`
-  */
-  trait GridClassKey extends StObject
   object GridClassKey {
     
-    inline def `align-content-xs-center`: typings.materialUiCore.materialUiCoreStrings.`align-content-xs-center` = "align-content-xs-center".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`align-content-xs-center`]
+    inline def `align-content-xs-center`: "align-content-xs-center" = "align-content-xs-center".asInstanceOf["align-content-xs-center"]
     
-    inline def `align-content-xs-flex-end`: typings.materialUiCore.materialUiCoreStrings.`align-content-xs-flex-end` = "align-content-xs-flex-end".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`align-content-xs-flex-end`]
+    inline def `align-content-xs-flex-end`: "align-content-xs-flex-end" = "align-content-xs-flex-end".asInstanceOf["align-content-xs-flex-end"]
     
-    inline def `align-content-xs-flex-start`: typings.materialUiCore.materialUiCoreStrings.`align-content-xs-flex-start` = "align-content-xs-flex-start".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`align-content-xs-flex-start`]
+    inline def `align-content-xs-flex-start`: "align-content-xs-flex-start" = "align-content-xs-flex-start".asInstanceOf["align-content-xs-flex-start"]
     
-    inline def `align-content-xs-space-around`: typings.materialUiCore.materialUiCoreStrings.`align-content-xs-space-around` = "align-content-xs-space-around".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`align-content-xs-space-around`]
+    inline def `align-content-xs-space-around`: "align-content-xs-space-around" = "align-content-xs-space-around".asInstanceOf["align-content-xs-space-around"]
     
-    inline def `align-content-xs-space-between`: typings.materialUiCore.materialUiCoreStrings.`align-content-xs-space-between` = "align-content-xs-space-between".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`align-content-xs-space-between`]
+    inline def `align-content-xs-space-between`: "align-content-xs-space-between" = "align-content-xs-space-between".asInstanceOf["align-content-xs-space-between"]
     
-    inline def `align-items-xs-baseline`: typings.materialUiCore.materialUiCoreStrings.`align-items-xs-baseline` = "align-items-xs-baseline".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`align-items-xs-baseline`]
+    inline def `align-items-xs-baseline`: "align-items-xs-baseline" = "align-items-xs-baseline".asInstanceOf["align-items-xs-baseline"]
     
-    inline def `align-items-xs-center`: typings.materialUiCore.materialUiCoreStrings.`align-items-xs-center` = "align-items-xs-center".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`align-items-xs-center`]
+    inline def `align-items-xs-center`: "align-items-xs-center" = "align-items-xs-center".asInstanceOf["align-items-xs-center"]
     
-    inline def `align-items-xs-flex-end`: typings.materialUiCore.materialUiCoreStrings.`align-items-xs-flex-end` = "align-items-xs-flex-end".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`align-items-xs-flex-end`]
+    inline def `align-items-xs-flex-end`: "align-items-xs-flex-end" = "align-items-xs-flex-end".asInstanceOf["align-items-xs-flex-end"]
     
-    inline def `align-items-xs-flex-start`: typings.materialUiCore.materialUiCoreStrings.`align-items-xs-flex-start` = "align-items-xs-flex-start".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`align-items-xs-flex-start`]
+    inline def `align-items-xs-flex-start`: "align-items-xs-flex-start" = "align-items-xs-flex-start".asInstanceOf["align-items-xs-flex-start"]
     
-    inline def container: typings.materialUiCore.materialUiCoreStrings.container = "container".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.container]
+    inline def container: "container" = "container".asInstanceOf["container"]
     
-    inline def `direction-xs-column`: typings.materialUiCore.materialUiCoreStrings.`direction-xs-column` = "direction-xs-column".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`direction-xs-column`]
+    inline def `direction-xs-column`: "direction-xs-column" = "direction-xs-column".asInstanceOf["direction-xs-column"]
     
-    inline def `direction-xs-column-reverse`: typings.materialUiCore.materialUiCoreStrings.`direction-xs-column-reverse` = "direction-xs-column-reverse".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`direction-xs-column-reverse`]
+    inline def `direction-xs-column-reverse`: "direction-xs-column-reverse" = "direction-xs-column-reverse".asInstanceOf["direction-xs-column-reverse"]
     
-    inline def `direction-xs-row-reverse`: typings.materialUiCore.materialUiCoreStrings.`direction-xs-row-reverse` = "direction-xs-row-reverse".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`direction-xs-row-reverse`]
+    inline def `direction-xs-row-reverse`: "direction-xs-row-reverse" = "direction-xs-row-reverse".asInstanceOf["direction-xs-row-reverse"]
     
-    inline def `grid-xs-1`: typings.materialUiCore.materialUiCoreStrings.`grid-xs-1` = "grid-xs-1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`grid-xs-1`]
+    inline def `grid-xs-1`: "grid-xs-1" = "grid-xs-1".asInstanceOf["grid-xs-1"]
     
-    inline def `grid-xs-10`: typings.materialUiCore.materialUiCoreStrings.`grid-xs-10` = "grid-xs-10".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`grid-xs-10`]
+    inline def `grid-xs-10`: "grid-xs-10" = "grid-xs-10".asInstanceOf["grid-xs-10"]
     
-    inline def `grid-xs-11`: typings.materialUiCore.materialUiCoreStrings.`grid-xs-11` = "grid-xs-11".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`grid-xs-11`]
+    inline def `grid-xs-11`: "grid-xs-11" = "grid-xs-11".asInstanceOf["grid-xs-11"]
     
-    inline def `grid-xs-12`: typings.materialUiCore.materialUiCoreStrings.`grid-xs-12` = "grid-xs-12".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`grid-xs-12`]
+    inline def `grid-xs-12`: "grid-xs-12" = "grid-xs-12".asInstanceOf["grid-xs-12"]
     
-    inline def `grid-xs-2`: typings.materialUiCore.materialUiCoreStrings.`grid-xs-2` = "grid-xs-2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`grid-xs-2`]
+    inline def `grid-xs-2`: "grid-xs-2" = "grid-xs-2".asInstanceOf["grid-xs-2"]
     
-    inline def `grid-xs-3`: typings.materialUiCore.materialUiCoreStrings.`grid-xs-3` = "grid-xs-3".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`grid-xs-3`]
+    inline def `grid-xs-3`: "grid-xs-3" = "grid-xs-3".asInstanceOf["grid-xs-3"]
     
-    inline def `grid-xs-4`: typings.materialUiCore.materialUiCoreStrings.`grid-xs-4` = "grid-xs-4".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`grid-xs-4`]
+    inline def `grid-xs-4`: "grid-xs-4" = "grid-xs-4".asInstanceOf["grid-xs-4"]
     
-    inline def `grid-xs-5`: typings.materialUiCore.materialUiCoreStrings.`grid-xs-5` = "grid-xs-5".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`grid-xs-5`]
+    inline def `grid-xs-5`: "grid-xs-5" = "grid-xs-5".asInstanceOf["grid-xs-5"]
     
-    inline def `grid-xs-6`: typings.materialUiCore.materialUiCoreStrings.`grid-xs-6` = "grid-xs-6".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`grid-xs-6`]
+    inline def `grid-xs-6`: "grid-xs-6" = "grid-xs-6".asInstanceOf["grid-xs-6"]
     
-    inline def `grid-xs-7`: typings.materialUiCore.materialUiCoreStrings.`grid-xs-7` = "grid-xs-7".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`grid-xs-7`]
+    inline def `grid-xs-7`: "grid-xs-7" = "grid-xs-7".asInstanceOf["grid-xs-7"]
     
-    inline def `grid-xs-8`: typings.materialUiCore.materialUiCoreStrings.`grid-xs-8` = "grid-xs-8".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`grid-xs-8`]
+    inline def `grid-xs-8`: "grid-xs-8" = "grid-xs-8".asInstanceOf["grid-xs-8"]
     
-    inline def `grid-xs-9`: typings.materialUiCore.materialUiCoreStrings.`grid-xs-9` = "grid-xs-9".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`grid-xs-9`]
+    inline def `grid-xs-9`: "grid-xs-9" = "grid-xs-9".asInstanceOf["grid-xs-9"]
     
-    inline def `grid-xs-auto`: typings.materialUiCore.materialUiCoreStrings.`grid-xs-auto` = "grid-xs-auto".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`grid-xs-auto`]
+    inline def `grid-xs-auto`: "grid-xs-auto" = "grid-xs-auto".asInstanceOf["grid-xs-auto"]
     
-    inline def `grid-xs-true`: typings.materialUiCore.materialUiCoreStrings.`grid-xs-true` = "grid-xs-true".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`grid-xs-true`]
+    inline def `grid-xs-true`: "grid-xs-true" = "grid-xs-true".asInstanceOf["grid-xs-true"]
     
-    inline def item: typings.materialUiCore.materialUiCoreStrings.item = "item".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.item]
+    inline def item: "item" = "item".asInstanceOf["item"]
     
-    inline def `justify-content-xs-center`: typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-center` = "justify-content-xs-center".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-center`]
+    inline def `justify-content-xs-center`: "justify-content-xs-center" = "justify-content-xs-center".asInstanceOf["justify-content-xs-center"]
     
-    inline def `justify-content-xs-flex-end`: typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-flex-end` = "justify-content-xs-flex-end".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-flex-end`]
+    inline def `justify-content-xs-flex-end`: "justify-content-xs-flex-end" = "justify-content-xs-flex-end".asInstanceOf["justify-content-xs-flex-end"]
     
-    inline def `justify-content-xs-space-around`: typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-space-around` = "justify-content-xs-space-around".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-space-around`]
+    inline def `justify-content-xs-space-around`: "justify-content-xs-space-around" = "justify-content-xs-space-around".asInstanceOf["justify-content-xs-space-around"]
     
-    inline def `justify-content-xs-space-between`: typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-space-between` = "justify-content-xs-space-between".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-space-between`]
+    inline def `justify-content-xs-space-between`: "justify-content-xs-space-between" = "justify-content-xs-space-between".asInstanceOf["justify-content-xs-space-between"]
     
-    inline def `justify-content-xs-space-evenly`: typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-space-evenly` = "justify-content-xs-space-evenly".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`justify-content-xs-space-evenly`]
+    inline def `justify-content-xs-space-evenly`: "justify-content-xs-space-evenly" = "justify-content-xs-space-evenly".asInstanceOf["justify-content-xs-space-evenly"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def `spacing-xs-1`: typings.materialUiCore.materialUiCoreStrings.`spacing-xs-1` = "spacing-xs-1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`spacing-xs-1`]
+    inline def `spacing-xs-1`: "spacing-xs-1" = "spacing-xs-1".asInstanceOf["spacing-xs-1"]
     
-    inline def `spacing-xs-10`: typings.materialUiCore.materialUiCoreStrings.`spacing-xs-10` = "spacing-xs-10".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`spacing-xs-10`]
+    inline def `spacing-xs-10`: "spacing-xs-10" = "spacing-xs-10".asInstanceOf["spacing-xs-10"]
     
-    inline def `spacing-xs-2`: typings.materialUiCore.materialUiCoreStrings.`spacing-xs-2` = "spacing-xs-2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`spacing-xs-2`]
+    inline def `spacing-xs-2`: "spacing-xs-2" = "spacing-xs-2".asInstanceOf["spacing-xs-2"]
     
-    inline def `spacing-xs-3`: typings.materialUiCore.materialUiCoreStrings.`spacing-xs-3` = "spacing-xs-3".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`spacing-xs-3`]
+    inline def `spacing-xs-3`: "spacing-xs-3" = "spacing-xs-3".asInstanceOf["spacing-xs-3"]
     
-    inline def `spacing-xs-4`: typings.materialUiCore.materialUiCoreStrings.`spacing-xs-4` = "spacing-xs-4".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`spacing-xs-4`]
+    inline def `spacing-xs-4`: "spacing-xs-4" = "spacing-xs-4".asInstanceOf["spacing-xs-4"]
     
-    inline def `spacing-xs-5`: typings.materialUiCore.materialUiCoreStrings.`spacing-xs-5` = "spacing-xs-5".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`spacing-xs-5`]
+    inline def `spacing-xs-5`: "spacing-xs-5" = "spacing-xs-5".asInstanceOf["spacing-xs-5"]
     
-    inline def `spacing-xs-6`: typings.materialUiCore.materialUiCoreStrings.`spacing-xs-6` = "spacing-xs-6".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`spacing-xs-6`]
+    inline def `spacing-xs-6`: "spacing-xs-6" = "spacing-xs-6".asInstanceOf["spacing-xs-6"]
     
-    inline def `spacing-xs-7`: typings.materialUiCore.materialUiCoreStrings.`spacing-xs-7` = "spacing-xs-7".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`spacing-xs-7`]
+    inline def `spacing-xs-7`: "spacing-xs-7" = "spacing-xs-7".asInstanceOf["spacing-xs-7"]
     
-    inline def `spacing-xs-8`: typings.materialUiCore.materialUiCoreStrings.`spacing-xs-8` = "spacing-xs-8".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`spacing-xs-8`]
+    inline def `spacing-xs-8`: "spacing-xs-8" = "spacing-xs-8".asInstanceOf["spacing-xs-8"]
     
-    inline def `spacing-xs-9`: typings.materialUiCore.materialUiCoreStrings.`spacing-xs-9` = "spacing-xs-9".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`spacing-xs-9`]
+    inline def `spacing-xs-9`: "spacing-xs-9" = "spacing-xs-9".asInstanceOf["spacing-xs-9"]
     
-    inline def `wrap-xs-nowrap`: typings.materialUiCore.materialUiCoreStrings.`wrap-xs-nowrap` = "wrap-xs-nowrap".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`wrap-xs-nowrap`]
+    inline def `wrap-xs-nowrap`: "wrap-xs-nowrap" = "wrap-xs-nowrap".asInstanceOf["wrap-xs-nowrap"]
     
-    inline def `wrap-xs-wrap-reverse`: typings.materialUiCore.materialUiCoreStrings.`wrap-xs-wrap-reverse` = "wrap-xs-wrap-reverse".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`wrap-xs-wrap-reverse`]
+    inline def `wrap-xs-wrap-reverse`: "wrap-xs-wrap-reverse" = "wrap-xs-wrap-reverse".asInstanceOf["wrap-xs-wrap-reverse"]
     
-    inline def zeroMinWidth: typings.materialUiCore.materialUiCoreStrings.zeroMinWidth = "zeroMinWidth".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.zeroMinWidth]
+    inline def zeroMinWidth: "zeroMinWidth" = "zeroMinWidth".asInstanceOf["zeroMinWidth"]
   }
+  type GridClassKey = "root" | "container" | "item" | "zeroMinWidth" | "direction-xs-column" | "direction-xs-column-reverse" | "direction-xs-row-reverse" | "wrap-xs-nowrap" | "wrap-xs-wrap-reverse" | "align-items-xs-center" | "align-items-xs-flex-start" | "align-items-xs-flex-end" | "align-items-xs-baseline" | "align-content-xs-center" | "align-content-xs-flex-start" | "align-content-xs-flex-end" | "align-content-xs-space-between" | "align-content-xs-space-around" | "justify-content-xs-center" | "justify-content-xs-flex-end" | "justify-content-xs-space-between" | "justify-content-xs-space-around" | "justify-content-xs-space-evenly" | "spacing-xs-1" | "spacing-xs-2" | "spacing-xs-3" | "spacing-xs-4" | "spacing-xs-5" | "spacing-xs-6" | "spacing-xs-7" | "spacing-xs-8" | "spacing-xs-9" | "spacing-xs-10" | "grid-xs-auto" | "grid-xs-true" | "grid-xs-1" | "grid-xs-2" | "grid-xs-3" | "grid-xs-4" | "grid-xs-5" | "grid-xs-6" | "grid-xs-7" | "grid-xs-8" | "grid-xs-9" | "grid-xs-10" | "grid-xs-11" | "grid-xs-12"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.stretch
-    - typings.materialUiCore.materialUiCoreStrings.center
-    - typings.materialUiCore.materialUiCoreStrings.`flex-start`
-    - typings.materialUiCore.materialUiCoreStrings.`flex-end`
-    - typings.materialUiCore.materialUiCoreStrings.`space-between`
-    - typings.materialUiCore.materialUiCoreStrings.`space-around`
-  */
-  trait GridContentAlignment extends StObject
   object GridContentAlignment {
     
-    inline def center: typings.materialUiCore.materialUiCoreStrings.center = "center".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.center]
+    inline def center: "center" = "center".asInstanceOf["center"]
     
-    inline def `flex-end`: typings.materialUiCore.materialUiCoreStrings.`flex-end` = "flex-end".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`flex-end`]
+    inline def `flex-end`: "flex-end" = "flex-end".asInstanceOf["flex-end"]
     
-    inline def `flex-start`: typings.materialUiCore.materialUiCoreStrings.`flex-start` = "flex-start".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`flex-start`]
+    inline def `flex-start`: "flex-start" = "flex-start".asInstanceOf["flex-start"]
     
-    inline def `space-around`: typings.materialUiCore.materialUiCoreStrings.`space-around` = "space-around".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`space-around`]
+    inline def `space-around`: "space-around" = "space-around".asInstanceOf["space-around"]
     
-    inline def `space-between`: typings.materialUiCore.materialUiCoreStrings.`space-between` = "space-between".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`space-between`]
+    inline def `space-between`: "space-between" = "space-between".asInstanceOf["space-between"]
     
-    inline def stretch: typings.materialUiCore.materialUiCoreStrings.stretch = "stretch".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.stretch]
+    inline def stretch: "stretch" = "stretch".asInstanceOf["stretch"]
   }
+  type GridContentAlignment = "stretch" | "center" | "flex-start" | "flex-end" | "space-between" | "space-around"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.row
-    - typings.materialUiCore.materialUiCoreStrings.`row-reverse`
-    - typings.materialUiCore.materialUiCoreStrings.column
-    - typings.materialUiCore.materialUiCoreStrings.`column-reverse`
-  */
-  trait GridDirection extends StObject
   object GridDirection {
     
-    inline def column: typings.materialUiCore.materialUiCoreStrings.column = "column".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.column]
+    inline def column: "column" = "column".asInstanceOf["column"]
     
-    inline def `column-reverse`: typings.materialUiCore.materialUiCoreStrings.`column-reverse` = "column-reverse".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`column-reverse`]
+    inline def `column-reverse`: "column-reverse" = "column-reverse".asInstanceOf["column-reverse"]
     
-    inline def row: typings.materialUiCore.materialUiCoreStrings.row = "row".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.row]
+    inline def row: "row" = "row".asInstanceOf["row"]
     
-    inline def `row-reverse`: typings.materialUiCore.materialUiCoreStrings.`row-reverse` = "row-reverse".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`row-reverse`]
+    inline def `row-reverse`: "row-reverse" = "row-reverse".asInstanceOf["row-reverse"]
   }
+  type GridDirection = "row" | "row-reverse" | "column" | "column-reverse"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.`flex-start`
-    - typings.materialUiCore.materialUiCoreStrings.center
-    - typings.materialUiCore.materialUiCoreStrings.`flex-end`
-    - typings.materialUiCore.materialUiCoreStrings.stretch
-    - typings.materialUiCore.materialUiCoreStrings.baseline
-  */
-  trait GridItemsAlignment extends StObject
   object GridItemsAlignment {
     
-    inline def baseline: typings.materialUiCore.materialUiCoreStrings.baseline = "baseline".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.baseline]
+    inline def baseline: "baseline" = "baseline".asInstanceOf["baseline"]
     
-    inline def center: typings.materialUiCore.materialUiCoreStrings.center = "center".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.center]
+    inline def center: "center" = "center".asInstanceOf["center"]
     
-    inline def `flex-end`: typings.materialUiCore.materialUiCoreStrings.`flex-end` = "flex-end".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`flex-end`]
+    inline def `flex-end`: "flex-end" = "flex-end".asInstanceOf["flex-end"]
     
-    inline def `flex-start`: typings.materialUiCore.materialUiCoreStrings.`flex-start` = "flex-start".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`flex-start`]
+    inline def `flex-start`: "flex-start" = "flex-start".asInstanceOf["flex-start"]
     
-    inline def stretch: typings.materialUiCore.materialUiCoreStrings.stretch = "stretch".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.stretch]
+    inline def stretch: "stretch" = "stretch".asInstanceOf["stretch"]
   }
+  type GridItemsAlignment = "flex-start" | "center" | "flex-end" | "stretch" | "baseline"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.`flex-start`
-    - typings.materialUiCore.materialUiCoreStrings.center
-    - typings.materialUiCore.materialUiCoreStrings.`flex-end`
-    - typings.materialUiCore.materialUiCoreStrings.`space-between`
-    - typings.materialUiCore.materialUiCoreStrings.`space-around`
-    - typings.materialUiCore.materialUiCoreStrings.`space-evenly`
-  */
-  trait GridJustification extends StObject
   object GridJustification {
     
-    inline def center: typings.materialUiCore.materialUiCoreStrings.center = "center".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.center]
+    inline def center: "center" = "center".asInstanceOf["center"]
     
-    inline def `flex-end`: typings.materialUiCore.materialUiCoreStrings.`flex-end` = "flex-end".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`flex-end`]
+    inline def `flex-end`: "flex-end" = "flex-end".asInstanceOf["flex-end"]
     
-    inline def `flex-start`: typings.materialUiCore.materialUiCoreStrings.`flex-start` = "flex-start".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`flex-start`]
+    inline def `flex-start`: "flex-start" = "flex-start".asInstanceOf["flex-start"]
     
-    inline def `space-around`: typings.materialUiCore.materialUiCoreStrings.`space-around` = "space-around".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`space-around`]
+    inline def `space-around`: "space-around" = "space-around".asInstanceOf["space-around"]
     
-    inline def `space-between`: typings.materialUiCore.materialUiCoreStrings.`space-between` = "space-between".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`space-between`]
+    inline def `space-between`: "space-between" = "space-between".asInstanceOf["space-between"]
     
-    inline def `space-evenly`: typings.materialUiCore.materialUiCoreStrings.`space-evenly` = "space-evenly".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`space-evenly`]
+    inline def `space-evenly`: "space-evenly" = "space-evenly".asInstanceOf["space-evenly"]
   }
+  type GridJustification = "flex-start" | "center" | "flex-end" | "space-between" | "space-around" | "space-evenly"
   
   type GridProps[D /* <: ElementType[Any] */, P] = OverrideProps[GridTypeMap[P, D], D]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreInts.`1`
-    - typings.materialUiCore.materialUiCoreInts.`2`
-    - typings.materialUiCore.materialUiCoreInts.`3`
-    - typings.materialUiCore.materialUiCoreInts.`4`
-    - typings.materialUiCore.materialUiCoreInts.`5`
-    - typings.materialUiCore.materialUiCoreInts.`6`
-    - typings.materialUiCore.materialUiCoreInts.`7`
-    - typings.materialUiCore.materialUiCoreInts.`8`
-    - typings.materialUiCore.materialUiCoreInts.`9`
-    - typings.materialUiCore.materialUiCoreInts.`10`
-    - typings.materialUiCore.materialUiCoreInts.`11`
-    - typings.materialUiCore.materialUiCoreInts.`12`
-    - typings.materialUiCore.materialUiCoreStrings.auto
-  */
-  trait GridSize extends StObject
   object GridSize {
     
-    inline def `1`: typings.materialUiCore.materialUiCoreInts.`1` = 1.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`1`]
+    inline def `1`: 1 = 1.asInstanceOf[1]
     
-    inline def `10`: typings.materialUiCore.materialUiCoreInts.`10` = 10.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`10`]
+    inline def `10`: 10 = 10.asInstanceOf[10]
     
-    inline def `11`: typings.materialUiCore.materialUiCoreInts.`11` = 11.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`11`]
+    inline def `11`: 11 = 11.asInstanceOf[11]
     
-    inline def `12`: typings.materialUiCore.materialUiCoreInts.`12` = 12.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`12`]
+    inline def `12`: 12 = 12.asInstanceOf[12]
     
-    inline def `2`: typings.materialUiCore.materialUiCoreInts.`2` = 2.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`2`]
+    inline def `2`: 2 = 2.asInstanceOf[2]
     
-    inline def `3`: typings.materialUiCore.materialUiCoreInts.`3` = 3.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`3`]
+    inline def `3`: 3 = 3.asInstanceOf[3]
     
-    inline def `4`: typings.materialUiCore.materialUiCoreInts.`4` = 4.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`4`]
+    inline def `4`: 4 = 4.asInstanceOf[4]
     
-    inline def `5`: typings.materialUiCore.materialUiCoreInts.`5` = 5.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`5`]
+    inline def `5`: 5 = 5.asInstanceOf[5]
     
-    inline def `6`: typings.materialUiCore.materialUiCoreInts.`6` = 6.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`6`]
+    inline def `6`: 6 = 6.asInstanceOf[6]
     
-    inline def `7`: typings.materialUiCore.materialUiCoreInts.`7` = 7.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`7`]
+    inline def `7`: 7 = 7.asInstanceOf[7]
     
-    inline def `8`: typings.materialUiCore.materialUiCoreInts.`8` = 8.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`8`]
+    inline def `8`: 8 = 8.asInstanceOf[8]
     
-    inline def `9`: typings.materialUiCore.materialUiCoreInts.`9` = 9.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`9`]
+    inline def `9`: 9 = 9.asInstanceOf[9]
     
-    inline def auto: typings.materialUiCore.materialUiCoreStrings.auto = "auto".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.auto]
+    inline def auto: "auto" = "auto".asInstanceOf["auto"]
   }
+  type GridSize = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | "auto"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreInts.`0`
-    - typings.materialUiCore.materialUiCoreInts.`1`
-    - typings.materialUiCore.materialUiCoreInts.`2`
-    - typings.materialUiCore.materialUiCoreInts.`3`
-    - typings.materialUiCore.materialUiCoreInts.`4`
-    - typings.materialUiCore.materialUiCoreInts.`5`
-    - typings.materialUiCore.materialUiCoreInts.`6`
-    - typings.materialUiCore.materialUiCoreInts.`7`
-    - typings.materialUiCore.materialUiCoreInts.`8`
-    - typings.materialUiCore.materialUiCoreInts.`9`
-    - typings.materialUiCore.materialUiCoreInts.`10`
-  */
-  trait GridSpacing extends StObject
   object GridSpacing {
     
-    inline def `0`: typings.materialUiCore.materialUiCoreInts.`0` = 0.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`0`]
+    inline def `0`: 0 = 0.asInstanceOf[0]
     
-    inline def `1`: typings.materialUiCore.materialUiCoreInts.`1` = 1.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`1`]
+    inline def `1`: 1 = 1.asInstanceOf[1]
     
-    inline def `10`: typings.materialUiCore.materialUiCoreInts.`10` = 10.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`10`]
+    inline def `10`: 10 = 10.asInstanceOf[10]
     
-    inline def `2`: typings.materialUiCore.materialUiCoreInts.`2` = 2.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`2`]
+    inline def `2`: 2 = 2.asInstanceOf[2]
     
-    inline def `3`: typings.materialUiCore.materialUiCoreInts.`3` = 3.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`3`]
+    inline def `3`: 3 = 3.asInstanceOf[3]
     
-    inline def `4`: typings.materialUiCore.materialUiCoreInts.`4` = 4.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`4`]
+    inline def `4`: 4 = 4.asInstanceOf[4]
     
-    inline def `5`: typings.materialUiCore.materialUiCoreInts.`5` = 5.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`5`]
+    inline def `5`: 5 = 5.asInstanceOf[5]
     
-    inline def `6`: typings.materialUiCore.materialUiCoreInts.`6` = 6.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`6`]
+    inline def `6`: 6 = 6.asInstanceOf[6]
     
-    inline def `7`: typings.materialUiCore.materialUiCoreInts.`7` = 7.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`7`]
+    inline def `7`: 7 = 7.asInstanceOf[7]
     
-    inline def `8`: typings.materialUiCore.materialUiCoreInts.`8` = 8.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`8`]
+    inline def `8`: 8 = 8.asInstanceOf[8]
     
-    inline def `9`: typings.materialUiCore.materialUiCoreInts.`9` = 9.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`9`]
+    inline def `9`: 9 = 9.asInstanceOf[9]
   }
+  type GridSpacing = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
   
   trait GridTypeMap[P, D /* <: ElementType[Any] */] extends StObject {
     
@@ -372,23 +264,18 @@ object gridGridMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.nowrap_
-    - typings.materialUiCore.materialUiCoreStrings.wrap
-    - typings.materialUiCore.materialUiCoreStrings.`wrap-reverse`
-  */
-  trait GridWrap extends StObject
   object GridWrap {
     
-    inline def nowrap: nowrap_ = "nowrap".asInstanceOf[nowrap_]
+    inline def nowrap: "nowrap" = "nowrap".asInstanceOf["nowrap"]
     
-    inline def wrap: typings.materialUiCore.materialUiCoreStrings.wrap = "wrap".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.wrap]
+    inline def wrap: "wrap" = "wrap".asInstanceOf["wrap"]
     
-    inline def `wrap-reverse`: typings.materialUiCore.materialUiCoreStrings.`wrap-reverse` = "wrap-reverse".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`wrap-reverse`]
+    inline def `wrap-reverse`: "wrap-reverse" = "wrap-reverse".asInstanceOf["wrap-reverse"]
   }
+  type GridWrap = "nowrap" | "wrap" | "wrap-reverse"
   
-  type _To = OverridableComponent[GridTypeMap[js.Object, div]]
+  type _To = OverridableComponent[GridTypeMap[js.Object, "div"]]
   
   /* This means you don't have to write `default`, but can instead just say `gridGridMod.foo` */
-  override def _to: OverridableComponent[GridTypeMap[js.Object, div]] = default
+  override def _to: OverridableComponent[GridTypeMap[js.Object, "div"]] = default
 }

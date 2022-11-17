@@ -1,10 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.background
-import typings.electron.electronStrings.fixed
-import typings.electron.electronStrings.free
-import typings.electron.electronStrings.none
-import typings.electron.electronStrings.outline
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,7 +28,7 @@ trait TouchBarScrubber extends EventEmitter {
     * * `fixed` - Maps to `NSScrubberModeFixed`.
     * * `free` - Maps to `NSScrubberModeFree`.
     */
-  var mode: fixed | free = js.native
+  var mode: "fixed" | "free" = js.native
   
   /**
     * A `string` representing the style that selected items in the scrubber should
@@ -45,7 +40,7 @@ trait TouchBarScrubber extends EventEmitter {
     * * `outline` - Maps to `[NSScrubberSelectionStyle outlineOverlayStyle]`.
     * * `none` - Removes all styles.
     */
-  var overlayStyle: background | outline | none = js.native
+  var overlayStyle: "background" | "outline" | "none" = js.native
   
   /**
     * A `string` representing the style that selected items in the scrubber should
@@ -56,7 +51,7 @@ trait TouchBarScrubber extends EventEmitter {
     * * `outline` - Maps to `[NSScrubberSelectionStyle outlineOverlayStyle]`.
     * * `none` - Removes all styles.
     */
-  var selectedStyle: background | outline | none = js.native
+  var selectedStyle: "background" | "outline" | "none" = js.native
   
   /**
     * A `boolean` representing whether to show the left / right selection arrows in

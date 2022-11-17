@@ -1,21 +1,17 @@
 package typings.mobx.anon
 
-import typings.mobx.distTypesObservablesetMod.ISetWillChange
 import typings.mobx.distTypesObservablesetMod.ObservableSet
-import typings.mobx.mobxStrings.delete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObjectOldValue[T]
-  extends StObject
-     with ISetWillChange[T] {
+trait ObjectOldValue[T] extends StObject {
   
   var `object`: ObservableSet[T]
   
   var oldValue: T
   
-  var `type`: delete
+  var `type`: "delete"
 }
 object ObjectOldValue {
   
@@ -32,6 +28,6 @@ object ObjectOldValue {
     
     inline def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    inline def setType(value: delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "delete"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

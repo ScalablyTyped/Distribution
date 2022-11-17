@@ -5,8 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.leaflet.mod.DomEvent._PropagableEvent because Already inherited */ trait LeafletKeyboardEvent
+trait LeafletKeyboardEvent
   extends StObject
      with LeafletEvent {
   

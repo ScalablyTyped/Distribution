@@ -1,13 +1,12 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreStrings.`Brand for OpaqueViewState that nothing will match`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OpaqueViewState extends StObject {
   
-  var __brand__ : `Brand for OpaqueViewState that nothing will match`
+  var __brand__ : "Brand for OpaqueViewState that nothing will match"
 }
 object OpaqueViewState {
   
@@ -18,6 +17,6 @@ object OpaqueViewState {
   
   extension [Self <: OpaqueViewState](x: Self) {
     
-    inline def set__brand__(value: `Brand for OpaqueViewState that nothing will match`): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
+    inline def set__brand__(value: "Brand for OpaqueViewState that nothing will match"): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }
 }

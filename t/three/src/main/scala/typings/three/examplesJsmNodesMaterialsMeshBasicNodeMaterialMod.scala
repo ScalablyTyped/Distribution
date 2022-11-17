@@ -1,7 +1,6 @@
 package typings.three
 
 import typings.three.srcMaterialsShaderMaterialMod.ShaderMaterialParameters
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object examplesJsmNodesMaterialsMeshBasicNodeMaterialMod {
     
     def copy(source: MeshBasicNodeMaterial): this.type = js.native
     
-    var isMeshBasicNodeMaterial: `true` = js.native
+    var isMeshBasicNodeMaterial: true = js.native
     
     var lightNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
     

@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Cols
-import typings.materialUiCore.materialUiCoreStrings.li
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -23,25 +22,19 @@ object gridListTileGridListTileMod extends Shortcut {
     */
   @JSImport("@material-ui/core/GridListTile/GridListTile", JSImport.Default)
   @js.native
-  val default: OverridableComponent[GridListTileTypeMap[js.Object, li]] = js.native
+  val default: OverridableComponent[GridListTileTypeMap[js.Object, "li"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.tile
-    - typings.materialUiCore.materialUiCoreStrings.imgFullHeight
-    - typings.materialUiCore.materialUiCoreStrings.imgFullWidth
-  */
-  trait GridListTileClassKey extends StObject
   object GridListTileClassKey {
     
-    inline def imgFullHeight: typings.materialUiCore.materialUiCoreStrings.imgFullHeight = "imgFullHeight".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.imgFullHeight]
+    inline def imgFullHeight: "imgFullHeight" = "imgFullHeight".asInstanceOf["imgFullHeight"]
     
-    inline def imgFullWidth: typings.materialUiCore.materialUiCoreStrings.imgFullWidth = "imgFullWidth".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.imgFullWidth]
+    inline def imgFullWidth: "imgFullWidth" = "imgFullWidth".asInstanceOf["imgFullWidth"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def tile: typings.materialUiCore.materialUiCoreStrings.tile = "tile".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.tile]
+    inline def tile: "tile" = "tile".asInstanceOf["tile"]
   }
+  type GridListTileClassKey = "root" | "tile" | "imgFullHeight" | "imgFullWidth"
   
   type GridListTileProps[D /* <: ElementType[Any] */, P] = OverrideProps[GridListTileTypeMap[P, D], D]
   
@@ -70,8 +63,8 @@ object gridListTileGridListTileMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[GridListTileTypeMap[js.Object, li]]
+  type _To = OverridableComponent[GridListTileTypeMap[js.Object, "li"]]
   
   /* This means you don't have to write `default`, but can instead just say `gridListTileGridListTileMod.foo` */
-  override def _to: OverridableComponent[GridListTileTypeMap[js.Object, li]] = default
+  override def _to: OverridableComponent[GridListTileTypeMap[js.Object, "li"]] = default
 }

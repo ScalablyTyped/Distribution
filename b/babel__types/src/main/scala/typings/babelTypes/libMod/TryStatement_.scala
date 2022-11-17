@@ -1,16 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TryStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TryStatement_
   extends StObject
-     with BaseNode
-     with Node
-     with Standardized
-     with Statement {
+     with BaseNode {
   
   var block: BlockStatement_
   
@@ -19,7 +15,7 @@ trait TryStatement_
   var handler: js.UndefOr[CatchClause_ | Null] = js.undefined
   
   @JSName("type")
-  var type_TryStatement_ : TryStatement
+  var type_TryStatement_ : "TryStatement"
 }
 object TryStatement_ {
   
@@ -45,6 +41,6 @@ object TryStatement_ {
     
     inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
-    inline def setType(value: TryStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TryStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

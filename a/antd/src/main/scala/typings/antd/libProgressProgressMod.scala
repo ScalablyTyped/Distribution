@@ -2,17 +2,8 @@ package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.antd.antdStrings.active
-import typings.antd.antdStrings.bottom
-import typings.antd.antdStrings.butt
-import typings.antd.antdStrings.exception
-import typings.antd.antdStrings.left
-import typings.antd.antdStrings.normal
-import typings.antd.antdStrings.right
-import typings.antd.antdStrings.round
-import typings.antd.antdStrings.square
-import typings.antd.antdStrings.success
-import typings.antd.antdStrings.top
+import typings.antd.anon.FromToGradientsdirections
+import typings.antd.anon.StringGradientsdirections
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
@@ -47,23 +38,7 @@ object libProgressProgressMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.anon.StringGradientsdirections
-    - typings.antd.anon.FromToGradientsdirections
-  */
-  trait ProgressGradient extends StObject
-  object ProgressGradient {
-    
-    inline def FromToGradientsdirections(from: String, to: String): typings.antd.anon.FromToGradientsdirections = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.antd.anon.FromToGradientsdirections]
-    }
-    
-    inline def StringGradientsdirections(): typings.antd.anon.StringGradientsdirections = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.antd.anon.StringGradientsdirections]
-    }
-  }
+  type ProgressGradient = StringGradientsdirections | FromToGradientsdirections
   
   trait ProgressProps extends StObject {
     
@@ -77,7 +52,7 @@ object libProgressProgressMod extends Shortcut {
     
     var gapDegree: js.UndefOr[Double] = js.undefined
     
-    var gapPosition: js.UndefOr[top | bottom | left | right] = js.undefined
+    var gapPosition: js.UndefOr["top" | "bottom" | "left" | "right"] = js.undefined
     
     var percent: js.UndefOr[Double] = js.undefined
     
@@ -87,13 +62,13 @@ object libProgressProgressMod extends Shortcut {
     
     var size: js.UndefOr[ProgressSize] = js.undefined
     
-    var status: js.UndefOr[normal | exception | active | success] = js.undefined
+    var status: js.UndefOr["normal" | "exception" | "active" | "success"] = js.undefined
     
     var steps: js.UndefOr[Double] = js.undefined
     
     var strokeColor: js.UndefOr[String | js.Array[String] | ProgressGradient] = js.undefined
     
-    var strokeLinecap: js.UndefOr[butt | square | round] = js.undefined
+    var strokeLinecap: js.UndefOr["butt" | "square" | "round"] = js.undefined
     
     var strokeWidth: js.UndefOr[Double] = js.undefined
     
@@ -135,7 +110,7 @@ object libProgressProgressMod extends Shortcut {
       
       inline def setGapDegreeUndefined: Self = StObject.set(x, "gapDegree", js.undefined)
       
-      inline def setGapPosition(value: top | bottom | left | right): Self = StObject.set(x, "gapPosition", value.asInstanceOf[js.Any])
+      inline def setGapPosition(value: "top" | "bottom" | "left" | "right"): Self = StObject.set(x, "gapPosition", value.asInstanceOf[js.Any])
       
       inline def setGapPositionUndefined: Self = StObject.set(x, "gapPosition", js.undefined)
       
@@ -155,7 +130,7 @@ object libProgressProgressMod extends Shortcut {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setStatus(value: normal | exception | active | success): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: "normal" | "exception" | "active" | "success"): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
@@ -169,7 +144,7 @@ object libProgressProgressMod extends Shortcut {
       
       inline def setStrokeColorVarargs(value: String*): Self = StObject.set(x, "strokeColor", js.Array(value*))
       
-      inline def setStrokeLinecap(value: butt | square | round): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+      inline def setStrokeLinecap(value: "butt" | "square" | "round"): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
       
       inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
       
@@ -203,24 +178,15 @@ object libProgressProgressMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.default
-    - typings.antd.antdStrings.small
-  */
-  trait ProgressSize extends StObject
   object ProgressSize {
     
-    inline def default: typings.antd.antdStrings.default = "default".asInstanceOf[typings.antd.antdStrings.default]
+    inline def default: "default" = "default".asInstanceOf["default"]
     
-    inline def small: typings.antd.antdStrings.small = "small".asInstanceOf[typings.antd.antdStrings.small]
+    inline def small: "small" = "small".asInstanceOf["small"]
   }
+  type ProgressSize = "default" | "small"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.line
-    - typings.antd.antdStrings.circle
-    - typings.antd.antdStrings.dashboard
-  */
-  trait ProgressType extends StObject
+  type ProgressType = "line" | "circle" | "dashboard"
   
   type StringGradients = StringDictionary[String]
   

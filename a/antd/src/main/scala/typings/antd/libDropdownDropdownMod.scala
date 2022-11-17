@@ -2,9 +2,6 @@ package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.AdjustY
-import typings.antd.antdStrings.click
-import typings.antd.antdStrings.contextMenu
-import typings.antd.antdStrings.hover
 import typings.antd.libDropdownDropdownButtonMod.DropdownButtonInterface
 import typings.antd.libMenuMod.MenuProps
 import typings.react.mod.CSSProperties
@@ -154,7 +151,7 @@ object libDropdownDropdownMod extends Shortcut {
     
     var transitionName: js.UndefOr[String] = js.undefined
     
-    var trigger: js.UndefOr[js.Array[click | hover | contextMenu]] = js.undefined
+    var trigger: js.UndefOr[js.Array["click" | "hover" | "contextMenu"]] = js.undefined
     
     /** @deprecated Please use `open` instead */
     var visible: js.UndefOr[Boolean] = js.undefined
@@ -262,11 +259,11 @@ object libDropdownDropdownMod extends Shortcut {
       
       inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
       
-      inline def setTrigger(value: js.Array[click | hover | contextMenu]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: js.Array["click" | "hover" | "contextMenu"]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
       inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
-      inline def setTriggerVarargs(value: (click | hover | contextMenu)*): Self = StObject.set(x, "trigger", js.Array(value*))
+      inline def setTriggerVarargs(value: ("click" | "hover" | "contextMenu")*): Self = StObject.set(x, "trigger", js.Array(value*))
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -276,17 +273,7 @@ object libDropdownDropdownMod extends Shortcut {
   
   type OverlayFunc = js.Function0[ReactElement]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.topLeft
-    - typings.antd.antdStrings.topCenter
-    - typings.antd.antdStrings.topRight
-    - typings.antd.antdStrings.bottomLeft
-    - typings.antd.antdStrings.bottomCenter
-    - typings.antd.antdStrings.bottomRight
-    - typings.antd.antdStrings.top
-    - typings.antd.antdStrings.bottom
-  */
-  trait Placement extends StObject
+  type Placement = "topLeft" | "topCenter" | "topRight" | "bottomLeft" | "bottomCenter" | "bottomRight" | "top" | "bottom"
   
   type _To = DropdownInterface
   

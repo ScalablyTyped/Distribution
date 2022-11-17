@@ -1,20 +1,17 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`25`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SequenceExpression
   extends StObject
-     with Node2
-     with JSChildNode
-     with SSRCodegenNode {
+     with Node2 {
   
   var expressions: js.Array[JSChildNode]
   
   @JSName("type")
-  var type_SequenceExpression: `25`
+  var type_SequenceExpression: 25
 }
 object SequenceExpression {
   
@@ -30,6 +27,6 @@ object SequenceExpression {
     
     inline def setExpressionsVarargs(value: JSChildNode*): Self = StObject.set(x, "expressions", js.Array(value*))
     
-    inline def setType(value: `25`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 25): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

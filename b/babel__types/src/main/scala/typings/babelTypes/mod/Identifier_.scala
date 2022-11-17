@@ -1,19 +1,12 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.Identifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait Identifier_
+trait Identifier_
   extends StObject
-     with BaseNode
-     with Expression
-     with LVal
-     with PatternLike
-     with Standardized
-     with TSEntityName {
+     with BaseNode {
   
   var decorators: js.Array[Decorator_] | Null
   
@@ -24,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   
   @JSName("type")
-  var type_Identifier_ : Identifier
+  var type_Identifier_ : "Identifier"
 }
 object Identifier_ {
   
@@ -48,7 +41,7 @@ object Identifier_ {
     
     inline def setOptionalNull: Self = StObject.set(x, "optional", null)
     
-    inline def setType(value: Identifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Identifier"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

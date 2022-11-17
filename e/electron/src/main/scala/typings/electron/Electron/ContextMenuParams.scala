@@ -1,22 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.adjustSelection
-import typings.electron.electronStrings.adjustSelectionReset
-import typings.electron.electronStrings.audio
-import typings.electron.electronStrings.canvas
-import typings.electron.electronStrings.file
-import typings.electron.electronStrings.image
-import typings.electron.electronStrings.keyboard
-import typings.electron.electronStrings.longPress
-import typings.electron.electronStrings.longTap
-import typings.electron.electronStrings.mouse
-import typings.electron.electronStrings.none
-import typings.electron.electronStrings.plugin
-import typings.electron.electronStrings.stylus
-import typings.electron.electronStrings.touch
-import typings.electron.electronStrings.touchHandle
-import typings.electron.electronStrings.touchMenu
-import typings.electron.electronStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,14 +74,14 @@ trait ContextMenuParams extends StObject {
     * Type of the node the context menu was invoked on. Can be `none`, `image`,
     * `audio`, `video`, `canvas`, `file` or `plugin`.
     */
-  var mediaType: none | image | audio | video | canvas | file | plugin
+  var mediaType: "none" | "image" | "audio" | "video" | "canvas" | "file" | "plugin"
   
   /**
     * Input source that invoked the context menu. Can be `none`, `mouse`, `keyboard`,
     * `touch`, `touchMenu`, `longPress`, `longTap`, `touchHandle`, `stylus`,
     * `adjustSelection`, or `adjustSelectionReset`.
     */
-  var menuSourceType: none | mouse | keyboard | touch | touchMenu | longPress | longTap | touchHandle | stylus | adjustSelection | adjustSelectionReset
+  var menuSourceType: "none" | "mouse" | "keyboard" | "touch" | "touchMenu" | "longPress" | "longTap" | "touchHandle" | "stylus" | "adjustSelection" | "adjustSelectionReset"
   
   /**
     * The misspelled word under the cursor, if any.
@@ -177,8 +160,8 @@ object ContextMenuParams {
     linkText: String,
     linkURL: String,
     mediaFlags: MediaFlags,
-    mediaType: none | image | audio | video | canvas | file | plugin,
-    menuSourceType: none | mouse | keyboard | touch | touchMenu | longPress | longTap | touchHandle | stylus | adjustSelection | adjustSelectionReset,
+    mediaType: "none" | "image" | "audio" | "video" | "canvas" | "file" | "plugin",
+    menuSourceType: "none" | "mouse" | "keyboard" | "touch" | "touchMenu" | "longPress" | "longTap" | "touchHandle" | "stylus" | "adjustSelection" | "adjustSelectionReset",
     misspelledWord: String,
     pageURL: String,
     referrerPolicy: Referrer,
@@ -224,10 +207,10 @@ object ContextMenuParams {
     
     inline def setMediaFlags(value: MediaFlags): Self = StObject.set(x, "mediaFlags", value.asInstanceOf[js.Any])
     
-    inline def setMediaType(value: none | image | audio | video | canvas | file | plugin): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: "none" | "image" | "audio" | "video" | "canvas" | "file" | "plugin"): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     inline def setMenuSourceType(
-      value: none | mouse | keyboard | touch | touchMenu | longPress | longTap | touchHandle | stylus | adjustSelection | adjustSelectionReset
+      value: "none" | "mouse" | "keyboard" | "touch" | "touchMenu" | "longPress" | "longTap" | "touchHandle" | "stylus" | "adjustSelection" | "adjustSelectionReset"
     ): Self = StObject.set(x, "menuSourceType", value.asInstanceOf[js.Any])
     
     inline def setMisspelledWord(value: String): Self = StObject.set(x, "misspelledWord", value.asInstanceOf[js.Any])

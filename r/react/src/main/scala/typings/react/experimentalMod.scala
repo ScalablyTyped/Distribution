@@ -2,8 +2,6 @@ package typings.react
 
 import typings.react.mod.ExoticComponent
 import typings.react.mod.ReactElement
-import typings.react.reactStrings.backwards
-import typings.react.reactStrings.forwards
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,14 +24,12 @@ object experimentalMod {
     
     trait DirectionalSuspenseListProps
       extends StObject
-         with SuspenseListCommonProps
-         with typings.react.mod.SuspenseListProps
-         with SuspenseListProps {
+         with SuspenseListCommonProps {
       
       /**
         * Defines the order in which the `SuspenseList` children should be revealed.
         */
-      var revealOrder: forwards | backwards
+      var revealOrder: "forwards" | "backwards"
       
       /**
         * Dictates how unloaded items in a SuspenseList is shown.
@@ -46,14 +42,14 @@ object experimentalMod {
     }
     object DirectionalSuspenseListProps {
       
-      inline def apply(children: ReactElement | js.Iterable[ReactElement], revealOrder: forwards | backwards): DirectionalSuspenseListProps = {
+      inline def apply(children: ReactElement | js.Iterable[ReactElement], revealOrder: "forwards" | "backwards"): DirectionalSuspenseListProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])
         __obj.asInstanceOf[DirectionalSuspenseListProps]
       }
       
       extension [Self <: DirectionalSuspenseListProps](x: Self) {
         
-        inline def setRevealOrder(value: forwards | backwards): Self = StObject.set(x, "revealOrder", value.asInstanceOf[js.Any])
+        inline def setRevealOrder(value: "forwards" | "backwards"): Self = StObject.set(x, "revealOrder", value.asInstanceOf[js.Any])
         
         inline def setTail(value: SuspenseListTailMode): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
         
@@ -63,14 +59,12 @@ object experimentalMod {
     
     trait NonDirectionalSuspenseListProps
       extends StObject
-         with SuspenseListCommonProps
-         with typings.react.mod.SuspenseListProps
-         with SuspenseListProps {
+         with SuspenseListCommonProps {
       
       /**
         * Defines the order in which the `SuspenseList` children should be revealed.
         */
-      var revealOrder: js.UndefOr[Exclude[SuspenseListRevealOrder, forwards | backwards]] = js.undefined
+      var revealOrder: js.UndefOr[Exclude[SuspenseListRevealOrder, "forwards" | "backwards"]] = js.undefined
       
       /**
         * The tail property is invalid when not using the `forwards` or `backwards` reveal orders.
@@ -86,7 +80,7 @@ object experimentalMod {
       
       extension [Self <: NonDirectionalSuspenseListProps](x: Self) {
         
-        inline def setRevealOrder(value: Exclude[SuspenseListRevealOrder, forwards | backwards]): Self = StObject.set(x, "revealOrder", value.asInstanceOf[js.Any])
+        inline def setRevealOrder(value: Exclude[SuspenseListRevealOrder, "forwards" | "backwards"]): Self = StObject.set(x, "revealOrder", value.asInstanceOf[js.Any])
         
         inline def setRevealOrderUndefined: Self = StObject.set(x, "revealOrder", js.undefined)
       }
@@ -116,50 +110,25 @@ object experimentalMod {
       }
     }
     
-    /* Rewritten from type alias, can be one of: 
-      - typings.react.experimentalMod.reactAugmentingMod.DirectionalSuspenseListProps
-      - typings.react.experimentalMod.reactAugmentingMod.NonDirectionalSuspenseListProps
-    */
-    trait SuspenseListProps extends StObject
-    object SuspenseListProps {
-      
-      inline def DirectionalSuspenseListProps(children: ReactElement | js.Iterable[ReactElement], revealOrder: forwards | backwards): typings.react.experimentalMod.reactAugmentingMod.DirectionalSuspenseListProps = {
-        val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])
-        __obj.asInstanceOf[typings.react.experimentalMod.reactAugmentingMod.DirectionalSuspenseListProps]
-      }
-      
-      inline def NonDirectionalSuspenseListProps(children: ReactElement | js.Iterable[ReactElement]): typings.react.experimentalMod.reactAugmentingMod.NonDirectionalSuspenseListProps = {
-        val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-        __obj.asInstanceOf[typings.react.experimentalMod.reactAugmentingMod.NonDirectionalSuspenseListProps]
-      }
-    }
+    type SuspenseListProps = DirectionalSuspenseListProps | NonDirectionalSuspenseListProps
     
-    /* Rewritten from type alias, can be one of: 
-      - typings.react.reactStrings.forwards
-      - typings.react.reactStrings.backwards
-      - typings.react.reactStrings.together
-    */
-    trait SuspenseListRevealOrder extends StObject
     object SuspenseListRevealOrder {
       
-      inline def backwards: typings.react.reactStrings.backwards = "backwards".asInstanceOf[typings.react.reactStrings.backwards]
+      inline def backwards: "backwards" = "backwards".asInstanceOf["backwards"]
       
-      inline def forwards: typings.react.reactStrings.forwards = "forwards".asInstanceOf[typings.react.reactStrings.forwards]
+      inline def forwards: "forwards" = "forwards".asInstanceOf["forwards"]
       
-      inline def together: typings.react.reactStrings.together = "together".asInstanceOf[typings.react.reactStrings.together]
+      inline def together: "together" = "together".asInstanceOf["together"]
     }
+    type SuspenseListRevealOrder = "forwards" | "backwards" | "together"
     
-    /* Rewritten from type alias, can be one of: 
-      - typings.react.reactStrings.collapsed
-      - typings.react.reactStrings.hidden
-    */
-    trait SuspenseListTailMode extends StObject
     object SuspenseListTailMode {
       
-      inline def collapsed: typings.react.reactStrings.collapsed = "collapsed".asInstanceOf[typings.react.reactStrings.collapsed]
+      inline def collapsed: "collapsed" = "collapsed".asInstanceOf["collapsed"]
       
-      inline def hidden: typings.react.reactStrings.hidden = "hidden".asInstanceOf[typings.react.reactStrings.hidden]
+      inline def hidden: "hidden" = "hidden".asInstanceOf["hidden"]
     }
+    type SuspenseListTailMode = "collapsed" | "hidden"
     
     trait SuspenseProps extends StObject {
       

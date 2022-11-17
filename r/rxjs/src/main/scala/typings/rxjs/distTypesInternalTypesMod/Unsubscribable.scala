@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Unsubscribable
-  extends StObject
-     with _TeardownLogic {
+trait Unsubscribable extends StObject {
   
   def unsubscribe(): Unit
 }

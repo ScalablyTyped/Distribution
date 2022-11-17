@@ -1,6 +1,5 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.NumberLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,12 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait NumberLiteral1
   extends StObject
-     with BaseNode
-     with DeprecatedAliases
-     with Node {
+     with BaseNode {
   
   @JSName("type")
-  var type_NumberLiteral1: NumberLiteral
+  var type_NumberLiteral1: "NumberLiteral"
   
   var value: Double
 }
@@ -29,7 +26,7 @@ object NumberLiteral1 {
   
   extension [Self <: NumberLiteral1](x: Self) {
     
-    inline def setType(value: NumberLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "NumberLiteral"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

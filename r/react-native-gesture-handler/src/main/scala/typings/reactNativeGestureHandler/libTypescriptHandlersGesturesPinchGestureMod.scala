@@ -3,7 +3,6 @@ package typings.reactNativeGestureHandler
 import org.scalablytyped.runtime.Instantiable0
 import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod.ContinousBaseGesture
 import typings.reactNativeGestureHandler.libTypescriptHandlersPinchGestureHandlerMod.PinchGestureHandlerEventPayload
-import typings.reactNativeGestureHandler.libTypescriptJestUtilsJestUtilsMod.AllGestures
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,9 +12,7 @@ object libTypescriptHandlersGesturesPinchGestureMod {
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/pinchGesture", "PinchGesture")
   @js.native
-  open class PinchGesture ()
-    extends ContinousBaseGesture[PinchGestureHandlerEventPayload, PinchGestureChangeEventPayload]
-       with AllGestures
+  open class PinchGesture () extends ContinousBaseGesture[PinchGestureHandlerEventPayload, PinchGestureChangeEventPayload]
   
   trait PinchGestureChangeEventPayload extends StObject {
     

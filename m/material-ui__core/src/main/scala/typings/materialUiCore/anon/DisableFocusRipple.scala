@@ -1,13 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.contained
-import typings.materialUiCore.materialUiCoreStrings.horizontal
-import typings.materialUiCore.materialUiCoreStrings.large
-import typings.materialUiCore.materialUiCoreStrings.medium
-import typings.materialUiCore.materialUiCoreStrings.outlined
-import typings.materialUiCore.materialUiCoreStrings.small
-import typings.materialUiCore.materialUiCoreStrings.text
-import typings.materialUiCore.materialUiCoreStrings.vertical
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -53,18 +45,18 @@ trait DisableFocusRipple extends StObject {
   /**
     * The group orientation (layout flow direction).
     */
-  var orientation: js.UndefOr[vertical | horizontal] = js.undefined
+  var orientation: js.UndefOr["vertical" | "horizontal"] = js.undefined
   
   /**
     * The size of the button.
     * `small` is equivalent to the dense button styling.
     */
-  var size: js.UndefOr[small | medium | large] = js.undefined
+  var size: js.UndefOr["small" | "medium" | "large"] = js.undefined
   
   /**
     * The variant to use.
     */
-  var variant: js.UndefOr[text | outlined | contained] = js.undefined
+  var variant: js.UndefOr["text" | "outlined" | "contained"] = js.undefined
 }
 object DisableFocusRipple {
   
@@ -103,15 +95,15 @@ object DisableFocusRipple {
     
     inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
-    inline def setOrientation(value: vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: "vertical" | "horizontal"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    inline def setSize(value: small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "small" | "medium" | "large"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setVariant(value: text | outlined | contained): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "text" | "outlined" | "contained"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

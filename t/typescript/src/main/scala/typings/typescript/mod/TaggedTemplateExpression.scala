@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TaggedTemplateExpression
   extends StObject
-     with MemberExpression
-     with CallLikeExpression
-     with HasTypeArguments {
+     with MemberExpression {
   
   @JSName("kind")
   val kind_TaggedTemplateExpression: typings.typescript.mod.SyntaxKind.TaggedTemplateExpression = js.native

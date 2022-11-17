@@ -85,47 +85,33 @@ object typingsTypesMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.auto
-    - typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.smooth
-  */
-  trait ScrollBehavior extends StObject
   object ScrollBehavior {
     
-    inline def auto: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.auto = "auto".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.auto]
+    inline def auto: "auto" = "auto".asInstanceOf["auto"]
     
-    inline def smooth: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.smooth = "smooth".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.smooth]
+    inline def smooth: "smooth" = "smooth".asInstanceOf["smooth"]
   }
+  type ScrollBehavior = "auto" | "smooth"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.start
-    - typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.center
-    - typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.end
-    - typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.nearest
-  */
-  trait ScrollLogicalPosition extends StObject
   object ScrollLogicalPosition {
     
-    inline def center: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.center = "center".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.center]
+    inline def center: "center" = "center".asInstanceOf["center"]
     
-    inline def end: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.end = "end".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.end]
+    inline def end: "end" = "end".asInstanceOf["end"]
     
-    inline def nearest: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.nearest = "nearest".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.nearest]
+    inline def nearest: "nearest" = "nearest".asInstanceOf["nearest"]
     
-    inline def start: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.start = "start".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.start]
+    inline def start: "start" = "start".asInstanceOf["start"]
   }
+  type ScrollLogicalPosition = "start" | "center" | "end" | "nearest"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.always
-    - typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.`if-needed`
-  */
-  trait ScrollMode extends StObject
   object ScrollMode {
     
-    inline def always: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.always = "always".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.always]
+    inline def always: "always" = "always".asInstanceOf["always"]
     
-    inline def `if-needed`: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.`if-needed` = "if-needed".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.`if-needed`]
+    inline def `if-needed`: "if-needed" = "if-needed".asInstanceOf["if-needed"]
   }
+  type ScrollMode = "always" | "if-needed"
   
   type SkipOverflowHiddenElements = Boolean
 }

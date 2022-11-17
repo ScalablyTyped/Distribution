@@ -1,20 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ForStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ForStatement_
   extends StObject
-     with BaseNode
-     with BlockParent
-     with For
-     with Loop
-     with Node
-     with Scopable
-     with Standardized
-     with Statement {
+     with BaseNode {
   
   var body: Statement
   
@@ -23,7 +15,7 @@ trait ForStatement_
   var test: js.UndefOr[Expression | Null] = js.undefined
   
   @JSName("type")
-  var type_ForStatement_ : ForStatement
+  var type_ForStatement_ : "ForStatement"
   
   var update: js.UndefOr[Expression | Null] = js.undefined
 }
@@ -51,7 +43,7 @@ object ForStatement_ {
     
     inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
-    inline def setType(value: ForStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ForStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUpdate(value: Expression): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     

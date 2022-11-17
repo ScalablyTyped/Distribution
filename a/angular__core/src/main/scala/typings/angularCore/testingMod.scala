@@ -2,6 +2,7 @@ package typings.angularCore
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.angularCore.anon.Deps
+import typings.angularCore.anon.InjectOptionsoptionalfals
 import typings.angularCore.anon.Instantiable
 import typings.angularCore.anon.ProcessNewMacroTasksSynchronously
 import typings.angularCore.anon.Providers
@@ -14,6 +15,7 @@ import typings.angularCore.mod.DebugElement
 import typings.angularCore.mod.Directive
 import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.InjectFlags
+import typings.angularCore.mod.InjectOptions
 import typings.angularCore.mod.InjectionToken
 import typings.angularCore.mod.NgModule
 import typings.angularCore.mod.NgZone
@@ -195,13 +197,20 @@ object testingMod {
     def initTestEnvironment(ngModule: Type[Any], platform: PlatformRef): Unit = js.native
     def initTestEnvironment(ngModule: Type[Any], platform: PlatformRef, options: TestEnvironmentOptions): Unit = js.native
     
+    /** @deprecated use object-based flags (`InjectOptions`) instead. */
     def inject[T](token: ProviderToken[T]): T | Null = js.native
     def inject[T](token: ProviderToken[T], notFoundValue: T): T = js.native
     def inject[T](token: ProviderToken[T], notFoundValue: T, flags: InjectFlags): T = js.native
+    def inject[T](token: ProviderToken[T], notFoundValue: T, options: InjectOptions): T = js.native
     def inject[T](token: ProviderToken[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
+    def inject[T](token: ProviderToken[T], notFoundValue: Null, options: InjectOptions): T | Null = js.native
     def inject[T](token: ProviderToken[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
+    def inject[T](token: ProviderToken[T], notFoundValue: Unit, options: InjectOptionsoptionalfals): T = js.native
+    def inject[T](token: ProviderToken[T], notFoundValue: Unit, options: InjectOptions): T | Null = js.native
     @JSName("inject")
     def inject_T_T[T](token: ProviderToken[T]): T = js.native
+    @JSName("inject")
+    def inject_T_T[T](token: ProviderToken[T], notFoundValue: Unit, options: InjectOptions): T = js.native
     
     def ngModule: Type[Any] | js.Array[Type[Any]] = js.native
     

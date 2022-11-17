@@ -1,11 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdStrings._empty
-import typings.antd.antdStrings.`use-credentials`
-import typings.antd.antdStrings.anonymous
-import typings.antd.antdStrings.circle
-import typings.antd.antdStrings.square
 import typings.antd.libAvatarSizeContextMod.AvatarSize
 import typings.react.mod.CSSProperties
 import typings.react.mod.ForwardRefExoticComponent
@@ -33,7 +28,7 @@ object libAvatarAvatarMod extends Shortcut {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[_empty | anonymous | `use-credentials`] = js.undefined
+    var crossOrigin: js.UndefOr["" | "anonymous" | "use-credentials"] = js.undefined
     
     var draggable: js.UndefOr[Boolean] = js.undefined
     
@@ -51,7 +46,7 @@ object libAvatarAvatarMod extends Shortcut {
     var prefixCls: js.UndefOr[String] = js.undefined
     
     /** Shape of avatar, options: `circle`, `square` */
-    var shape: js.UndefOr[circle | square] = js.undefined
+    var shape: js.UndefOr["circle" | "square"] = js.undefined
     
     var size: js.UndefOr[AvatarSize] = js.undefined
     
@@ -84,7 +79,7 @@ object libAvatarAvatarMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setCrossOrigin(value: _empty | anonymous | `use-credentials`): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: "" | "anonymous" | "use-credentials"): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -112,7 +107,7 @@ object libAvatarAvatarMod extends Shortcut {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setShape(value: circle | square): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: "circle" | "square"): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       

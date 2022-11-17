@@ -9,8 +9,6 @@ import typings.popperJs.anon.BaseModifiernamestring
 import typings.popperJs.anon.BaseModifieroffsetnumbers
 import typings.popperJs.anon.BaseModifieronLoadFunctio
 import typings.popperJs.anon.BaseModifierpriorityArray
-import typings.popperJs.popperJsBooleans.`false`
-import typings.popperJs.popperJsStrings._empty
 import typings.std.CSSStyleDeclaration
 import typings.std.ClientRect
 import typings.std.Element
@@ -135,13 +133,13 @@ object mod {
     
     trait Attributes extends StObject {
       
-      var `x-out-of-boundaries`: _empty | `false`
+      var `x-out-of-boundaries`: "" | false
       
       var `x-placement`: typings.popperJs.mod.Popper.Placement
     }
     object Attributes {
       
-      inline def apply(`x-out-of-boundaries`: _empty | `false`, `x-placement`: typings.popperJs.mod.Popper.Placement): Attributes = {
+      inline def apply(`x-out-of-boundaries`: "" | false, `x-placement`: typings.popperJs.mod.Popper.Placement): Attributes = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("x-out-of-boundaries")(`x-out-of-boundaries`.asInstanceOf[js.Any])
         __obj.updateDynamic("x-placement")(`x-placement`.asInstanceOf[js.Any])
@@ -150,7 +148,7 @@ object mod {
       
       extension [Self <: Attributes](x: Self) {
         
-        inline def `setX-out-of-boundaries`(value: _empty | `false`): Self = StObject.set(x, "x-out-of-boundaries", value.asInstanceOf[js.Any])
+        inline def `setX-out-of-boundaries`(value: "" | false): Self = StObject.set(x, "x-out-of-boundaries", value.asInstanceOf[js.Any])
         
         inline def `setX-placement`(value: typings.popperJs.mod.Popper.Placement): Self = StObject.set(x, "x-placement", value.asInstanceOf[js.Any])
       }
@@ -189,35 +187,25 @@ object mod {
       }
     }
     
-    /* Rewritten from type alias, can be one of: 
-      - typings.popperJs.popperJsStrings.flip
-      - typings.popperJs.popperJsStrings.clockwise
-      - typings.popperJs.popperJsStrings.counterclockwise
-    */
-    trait Behavior extends StObject
     object Behavior {
       
-      inline def clockwise: typings.popperJs.popperJsStrings.clockwise = "clockwise".asInstanceOf[typings.popperJs.popperJsStrings.clockwise]
+      inline def clockwise: "clockwise" = "clockwise".asInstanceOf["clockwise"]
       
-      inline def counterclockwise: typings.popperJs.popperJsStrings.counterclockwise = "counterclockwise".asInstanceOf[typings.popperJs.popperJsStrings.counterclockwise]
+      inline def counterclockwise: "counterclockwise" = "counterclockwise".asInstanceOf["counterclockwise"]
       
-      inline def flip: typings.popperJs.popperJsStrings.flip = "flip".asInstanceOf[typings.popperJs.popperJsStrings.flip]
+      inline def flip: "flip" = "flip".asInstanceOf["flip"]
     }
+    type Behavior = "flip" | "clockwise" | "counterclockwise"
     
-    /* Rewritten from type alias, can be one of: 
-      - typings.popperJs.popperJsStrings.scrollParent
-      - typings.popperJs.popperJsStrings.viewport
-      - typings.popperJs.popperJsStrings.window
-    */
-    trait Boundary extends StObject
     object Boundary {
       
-      inline def scrollParent: typings.popperJs.popperJsStrings.scrollParent = "scrollParent".asInstanceOf[typings.popperJs.popperJsStrings.scrollParent]
+      inline def scrollParent: "scrollParent" = "scrollParent".asInstanceOf["scrollParent"]
       
-      inline def viewport: typings.popperJs.popperJsStrings.viewport = "viewport".asInstanceOf[typings.popperJs.popperJsStrings.viewport]
+      inline def viewport: "viewport" = "viewport".asInstanceOf["viewport"]
       
-      inline def window: typings.popperJs.popperJsStrings.window = "window".asInstanceOf[typings.popperJs.popperJsStrings.window]
+      inline def window: "window" = "window".asInstanceOf["window"]
     }
+    type Boundary = "scrollParent" | "viewport" | "window"
     
     trait Data extends StObject {
       
@@ -454,56 +442,39 @@ object mod {
       }
     }
     
-    /* Rewritten from type alias, can be one of: 
-      - typings.popperJs.popperJsStrings.`auto-start`
-      - typings.popperJs.popperJsStrings.auto
-      - typings.popperJs.popperJsStrings.`auto-end`
-      - typings.popperJs.popperJsStrings.`top-start`
-      - typings.popperJs.popperJsStrings.top
-      - typings.popperJs.popperJsStrings.`top-end`
-      - typings.popperJs.popperJsStrings.`right-start`
-      - typings.popperJs.popperJsStrings.right
-      - typings.popperJs.popperJsStrings.`right-end`
-      - typings.popperJs.popperJsStrings.`bottom-end`
-      - typings.popperJs.popperJsStrings.bottom
-      - typings.popperJs.popperJsStrings.`bottom-start`
-      - typings.popperJs.popperJsStrings.`left-end`
-      - typings.popperJs.popperJsStrings.left
-      - typings.popperJs.popperJsStrings.`left-start`
-    */
-    trait Placement extends StObject
     object Placement {
       
-      inline def auto: typings.popperJs.popperJsStrings.auto = "auto".asInstanceOf[typings.popperJs.popperJsStrings.auto]
+      inline def auto: "auto" = "auto".asInstanceOf["auto"]
       
-      inline def `auto-end`: typings.popperJs.popperJsStrings.`auto-end` = "auto-end".asInstanceOf[typings.popperJs.popperJsStrings.`auto-end`]
+      inline def `auto-end`: "auto-end" = "auto-end".asInstanceOf["auto-end"]
       
-      inline def `auto-start`: typings.popperJs.popperJsStrings.`auto-start` = "auto-start".asInstanceOf[typings.popperJs.popperJsStrings.`auto-start`]
+      inline def `auto-start`: "auto-start" = "auto-start".asInstanceOf["auto-start"]
       
-      inline def bottom: typings.popperJs.popperJsStrings.bottom = "bottom".asInstanceOf[typings.popperJs.popperJsStrings.bottom]
+      inline def bottom: "bottom" = "bottom".asInstanceOf["bottom"]
       
-      inline def `bottom-end`: typings.popperJs.popperJsStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.popperJs.popperJsStrings.`bottom-end`]
+      inline def `bottom-end`: "bottom-end" = "bottom-end".asInstanceOf["bottom-end"]
       
-      inline def `bottom-start`: typings.popperJs.popperJsStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.popperJs.popperJsStrings.`bottom-start`]
+      inline def `bottom-start`: "bottom-start" = "bottom-start".asInstanceOf["bottom-start"]
       
-      inline def left: typings.popperJs.popperJsStrings.left = "left".asInstanceOf[typings.popperJs.popperJsStrings.left]
+      inline def left: "left" = "left".asInstanceOf["left"]
       
-      inline def `left-end`: typings.popperJs.popperJsStrings.`left-end` = "left-end".asInstanceOf[typings.popperJs.popperJsStrings.`left-end`]
+      inline def `left-end`: "left-end" = "left-end".asInstanceOf["left-end"]
       
-      inline def `left-start`: typings.popperJs.popperJsStrings.`left-start` = "left-start".asInstanceOf[typings.popperJs.popperJsStrings.`left-start`]
+      inline def `left-start`: "left-start" = "left-start".asInstanceOf["left-start"]
       
-      inline def right: typings.popperJs.popperJsStrings.right = "right".asInstanceOf[typings.popperJs.popperJsStrings.right]
+      inline def right: "right" = "right".asInstanceOf["right"]
       
-      inline def `right-end`: typings.popperJs.popperJsStrings.`right-end` = "right-end".asInstanceOf[typings.popperJs.popperJsStrings.`right-end`]
+      inline def `right-end`: "right-end" = "right-end".asInstanceOf["right-end"]
       
-      inline def `right-start`: typings.popperJs.popperJsStrings.`right-start` = "right-start".asInstanceOf[typings.popperJs.popperJsStrings.`right-start`]
+      inline def `right-start`: "right-start" = "right-start".asInstanceOf["right-start"]
       
-      inline def top: typings.popperJs.popperJsStrings.top = "top".asInstanceOf[typings.popperJs.popperJsStrings.top]
+      inline def top: "top" = "top".asInstanceOf["top"]
       
-      inline def `top-end`: typings.popperJs.popperJsStrings.`top-end` = "top-end".asInstanceOf[typings.popperJs.popperJsStrings.`top-end`]
+      inline def `top-end`: "top-end" = "top-end".asInstanceOf["top-end"]
       
-      inline def `top-start`: typings.popperJs.popperJsStrings.`top-start` = "top-start".asInstanceOf[typings.popperJs.popperJsStrings.`top-start`]
+      inline def `top-start`: "top-start" = "top-start".asInstanceOf["top-start"]
     }
+    type Placement = "auto-start" | "auto" | "auto-end" | "top-start" | "top" | "top-end" | "right-start" | "right" | "right-end" | "bottom-end" | "bottom" | "bottom-start" | "left-end" | "left" | "left-start"
     
     trait PopperOptions extends StObject {
       
@@ -560,23 +531,17 @@ object mod {
       }
     }
     
-    /* Rewritten from type alias, can be one of: 
-      - typings.popperJs.popperJsStrings.top
-      - typings.popperJs.popperJsStrings.right
-      - typings.popperJs.popperJsStrings.bottom
-      - typings.popperJs.popperJsStrings.left
-    */
-    trait Position extends StObject
     object Position {
       
-      inline def bottom: typings.popperJs.popperJsStrings.bottom = "bottom".asInstanceOf[typings.popperJs.popperJsStrings.bottom]
+      inline def bottom: "bottom" = "bottom".asInstanceOf["bottom"]
       
-      inline def left: typings.popperJs.popperJsStrings.left = "left".asInstanceOf[typings.popperJs.popperJsStrings.left]
+      inline def left: "left" = "left".asInstanceOf["left"]
       
-      inline def right: typings.popperJs.popperJsStrings.right = "right".asInstanceOf[typings.popperJs.popperJsStrings.right]
+      inline def right: "right" = "right".asInstanceOf["right"]
       
-      inline def top: typings.popperJs.popperJsStrings.top = "top".asInstanceOf[typings.popperJs.popperJsStrings.top]
+      inline def top: "top" = "top".asInstanceOf["top"]
     }
+    type Position = "top" | "right" | "bottom" | "left"
     
     trait ReferenceObject extends StObject {
       

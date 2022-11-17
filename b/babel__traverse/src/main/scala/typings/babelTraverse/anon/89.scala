@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.BinaryExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `89` extends StObject {
   
-  var `type`: BinaryExpression
+  var `type`: "BinaryExpression"
 }
 object `89` {
   
@@ -19,6 +18,6 @@ object `89` {
   
   extension [Self <: `89`](x: Self) {
     
-    inline def setType(value: BinaryExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "BinaryExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

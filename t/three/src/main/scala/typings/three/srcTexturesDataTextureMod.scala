@@ -9,7 +9,6 @@ import typings.three.srcConstantsMod.TextureEncoding
 import typings.three.srcConstantsMod.TextureFilter
 import typings.three.srcConstantsMod.Wrapping
 import typings.three.srcTexturesTextureMod.Texture
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,6 +49,6 @@ object srcTexturesDataTextureMod {
     
     def image_=(value: ImageData): Unit = js.native
     
-    val isDataTexture: `true` = js.native
+    val isDataTexture: true = js.native
   }
 }

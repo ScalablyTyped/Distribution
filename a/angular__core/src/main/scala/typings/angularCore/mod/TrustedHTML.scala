@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait TrustedHTML extends StObject {
   
-  var __brand__ : typings.angularCore.angularCoreStrings.TrustedHTML
+  var __brand__ : "TrustedHTML"
 }
 object TrustedHTML {
   
@@ -35,6 +35,6 @@ object TrustedHTML {
   
   extension [Self <: TrustedHTML](x: Self) {
     
-    inline def set__brand__(value: typings.angularCore.angularCoreStrings.TrustedHTML): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
+    inline def set__brand__(value: "TrustedHTML"): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }
 }

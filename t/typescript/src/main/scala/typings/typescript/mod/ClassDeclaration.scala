@@ -13,9 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClassDeclaration
   extends StObject
      with ClassLikeDeclarationBase
-     with ClassLikeDeclaration
-     with HasDecorators
-     with HasModifiers
      with Statement {
   
   @JSName("kind")

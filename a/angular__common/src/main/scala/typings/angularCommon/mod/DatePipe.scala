@@ -1,7 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.date
 import typings.angularCommon.anon.Optional
 import typings.angularCore.mod.PipeTransform
 import typings.angularCore.mod.ɵɵFactoryDeclaration
@@ -17,6 +15,11 @@ open class DatePipe protected ()
      with PipeTransform {
   def this(locale: String) = this()
   def this(locale: String, defaultTimezone: String) = this()
+  def this(locale: String, defaultTimezone: String, defaultOptions: DatePipeConfig) = this()
+  def this(locale: String, defaultTimezone: Null, defaultOptions: DatePipeConfig) = this()
+  def this(locale: String, defaultTimezone: Unit, defaultOptions: DatePipeConfig) = this()
+  
+  /* private */ var defaultOptions: Any = js.native
   
   /* private */ var defaultTimezone: Any = js.native
   
@@ -35,13 +38,19 @@ open class DatePipe protected ()
     * @param value The date expression: a `Date` object,  a number
     * (milliseconds since UTC epoch), or an ISO string (https://www.w3.org/TR/NOTE-datetime).
     * @param format The date/time components to include, using predefined options or a
-    * custom format string.
+    * custom format string.  When not provided, the `DatePipe` looks for the value using the
+    * `DATE_PIPE_DEFAULT_OPTIONS` injection token (and reads the `dateFormat` property).
+    * If the token is not configured, the `mediumDate` is used as a value.
     * @param timezone A timezone offset (such as `'+0430'`), or a standard UTC/GMT, or continental US
-    * timezone abbreviation. When not supplied, either the value of the `DATE_PIPE_DEFAULT_TIMEZONE`
-    * injection token is used or the end-user's local system timezone.
+    * timezone abbreviation. When not provided, the `DatePipe` looks for the value using the
+    * `DATE_PIPE_DEFAULT_OPTIONS` injection token (and reads the `timezone` property). If the token
+    * is not configured, the end-user's local system timezone is used as a value.
     * @param locale A locale code for the locale format rules to use.
     * When not supplied, uses the value of `LOCALE_ID`, which is `en-US` by default.
     * See [Setting your app locale](guide/i18n-common-locale-id).
+    *
+    * @see `DATE_PIPE_DEFAULT_OPTIONS`
+    *
     * @returns A date string in the desired format.
     */
   def transform(value: js.Date): String | Null = js.native
@@ -116,11 +125,11 @@ object DatePipe {
   
   @JSImport("@angular/common", "DatePipe.\u0275fac")
   @js.native
-  def ɵfac: ɵɵFactoryDeclaration[DatePipe, js.Tuple2[Null, Optional]] = js.native
-  inline def ɵfac_=(x: ɵɵFactoryDeclaration[DatePipe, js.Tuple2[Null, Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  def ɵfac: ɵɵFactoryDeclaration[DatePipe, js.Tuple3[Null, Optional, Optional]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[DatePipe, js.Tuple3[Null, Optional, Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/common", "DatePipe.\u0275pipe")
   @js.native
-  def ɵpipe: ɵɵPipeDeclaration[DatePipe, date, `true`] = js.native
-  inline def ɵpipe_=(x: ɵɵPipeDeclaration[DatePipe, date, `true`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
+  def ɵpipe: ɵɵPipeDeclaration[DatePipe, "date", true] = js.native
+  inline def ɵpipe_=(x: ɵɵPipeDeclaration[DatePipe, "date", true]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
 }

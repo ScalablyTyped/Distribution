@@ -1,19 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.UnionTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait UnionTypeAnnotation_
+trait UnionTypeAnnotation_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowType {
+     with BaseNode {
   
   @JSName("type")
-  var type_UnionTypeAnnotation_ : UnionTypeAnnotation
+  var type_UnionTypeAnnotation_ : "UnionTypeAnnotation"
   
   var types: js.Array[FlowType]
 }
@@ -27,7 +23,7 @@ object UnionTypeAnnotation_ {
   
   extension [Self <: UnionTypeAnnotation_](x: Self) {
     
-    inline def setType(value: UnionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "UnionTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypes(value: js.Array[FlowType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     

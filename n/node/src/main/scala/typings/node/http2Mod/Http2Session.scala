@@ -4,12 +4,6 @@ import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.Buffer
 import typings.node.nodeColonnetMod.Socket
 import typings.node.nodeColontlsMod.TLSSocket
-import typings.node.nodeStrings.close
-import typings.node.nodeStrings.error
-import typings.node.nodeStrings.frameError
-import typings.node.nodeStrings.goaway
-import typings.node.nodeStrings.ping
-import typings.node.nodeStrings.timeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,36 +11,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Http2Session extends StObject {
   
-  def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_ping")
+  def addListener(event: "ping", listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_timeout")
+  def addListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_frameError(
-    event: frameError,
+  @scala.annotation.targetName("addListener_close")
+  def addListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_localSettings")
+  def addListener(event: "localSettings", listener: js.Function1[/* settings */ Settings, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_error")
+  def addListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_remoteSettings")
+  def addListener(event: "remoteSettings", listener: js.Function1[/* settings */ Settings, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_frameError")
+  def addListener(
+    event: "frameError",
     listener: js.Function3[/* frameType */ Double, /* errorCode */ Double, /* streamID */ Double, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_goaway(
-    event: goaway,
+  @scala.annotation.targetName("addListener_goaway")
+  def addListener(
+    event: "goaway",
     listener: js.Function3[/* errorCode */ Double, /* lastStreamID */ Double, /* opaqueData */ Buffer, Unit]
   ): this.type = js.native
-  @JSName("addListener")
-  def addListener_localSettings(
-    event: typings.node.nodeStrings.localSettings,
-    listener: js.Function1[/* settings */ Settings, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_ping(event: ping, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_remoteSettings(
-    event: typings.node.nodeStrings.remoteSettings,
-    listener: js.Function1[/* settings */ Settings, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
+  def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   
   /**
     * Value will be `undefined` if the `Http2Session` is not yet connected to a
@@ -103,24 +99,32 @@ trait Http2Session extends StObject {
     */
   val destroyed: Boolean = js.native
   
+  @JSName("emit")
+  @scala.annotation.targetName("emit_timeout")
+  def emit(event: "timeout"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_close")
+  def emit(event: "close"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_ping")
+  def emit(event: "ping"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_error")
+  def emit(event: "error", err: js.Error): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_goaway")
+  def emit(event: "goaway", errorCode: Double, lastStreamID: Double, opaqueData: Buffer): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_frameError")
+  def emit(event: "frameError", frameType: Double, errorCode: Double, streamID: Double): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_remoteSettings")
+  def emit(event: "remoteSettings", settings: Settings): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_localSettings")
+  def emit(event: "localSettings", settings: Settings): Boolean = js.native
   def emit(event: String, args: Any*): Boolean = js.native
   def emit(event: js.Symbol, args: Any*): Boolean = js.native
-  @JSName("emit")
-  def emit_close(event: close): Boolean = js.native
-  @JSName("emit")
-  def emit_error(event: error, err: js.Error): Boolean = js.native
-  @JSName("emit")
-  def emit_frameError(event: frameError, frameType: Double, errorCode: Double, streamID: Double): Boolean = js.native
-  @JSName("emit")
-  def emit_goaway(event: goaway, errorCode: Double, lastStreamID: Double, opaqueData: Buffer): Boolean = js.native
-  @JSName("emit")
-  def emit_localSettings(event: typings.node.nodeStrings.localSettings, settings: Settings): Boolean = js.native
-  @JSName("emit")
-  def emit_ping(event: ping): Boolean = js.native
-  @JSName("emit")
-  def emit_remoteSettings(event: typings.node.nodeStrings.remoteSettings, settings: Settings): Boolean = js.native
-  @JSName("emit")
-  def emit_timeout(event: timeout): Boolean = js.native
   
   /**
     * Value is `undefined` if the `Http2Session` session socket has not yet been
@@ -153,67 +157,71 @@ trait Http2Session extends StObject {
     */
   val localSettings: Settings = js.native
   
+  @JSName("on")
+  @scala.annotation.targetName("on_ping")
+  def on(event: "ping", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_timeout")
+  def on(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_close")
+  def on(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_error")
+  def on(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_localSettings")
+  def on(event: "localSettings", listener: js.Function1[/* settings */ Settings, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_remoteSettings")
+  def on(event: "remoteSettings", listener: js.Function1[/* settings */ Settings, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_goaway")
+  def on(
+    event: "goaway",
+    listener: js.Function3[/* errorCode */ Double, /* lastStreamID */ Double, /* opaqueData */ Buffer, Unit]
+  ): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_frameError")
+  def on(
+    event: "frameError",
+    listener: js.Function3[/* frameType */ Double, /* errorCode */ Double, /* streamID */ Double, Unit]
+  ): this.type = js.native
   def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("on")
-  def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("on")
-  def on_frameError(
-    event: frameError,
+  
+  @JSName("once")
+  @scala.annotation.targetName("once_timeout")
+  def once(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_ping")
+  def once(event: "ping", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_close")
+  def once(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_remoteSettings")
+  def once(event: "remoteSettings", listener: js.Function1[/* settings */ Settings, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_error")
+  def once(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_localSettings")
+  def once(event: "localSettings", listener: js.Function1[/* settings */ Settings, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_frameError")
+  def once(
+    event: "frameError",
     listener: js.Function3[/* frameType */ Double, /* errorCode */ Double, /* streamID */ Double, Unit]
   ): this.type = js.native
-  @JSName("on")
-  def on_goaway(
-    event: goaway,
+  @JSName("once")
+  @scala.annotation.targetName("once_goaway")
+  def once(
+    event: "goaway",
     listener: js.Function3[/* errorCode */ Double, /* lastStreamID */ Double, /* opaqueData */ Buffer, Unit]
   ): this.type = js.native
-  @JSName("on")
-  def on_localSettings(
-    event: typings.node.nodeStrings.localSettings,
-    listener: js.Function1[/* settings */ Settings, Unit]
-  ): this.type = js.native
-  @JSName("on")
-  def on_ping(event: ping, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_remoteSettings(
-    event: typings.node.nodeStrings.remoteSettings,
-    listener: js.Function1[/* settings */ Settings, Unit]
-  ): this.type = js.native
-  @JSName("on")
-  def on_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-  
   def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("once")
-  def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("once")
-  def once_frameError(
-    event: frameError,
-    listener: js.Function3[/* frameType */ Double, /* errorCode */ Double, /* streamID */ Double, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_goaway(
-    event: goaway,
-    listener: js.Function3[/* errorCode */ Double, /* lastStreamID */ Double, /* opaqueData */ Buffer, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_localSettings(
-    event: typings.node.nodeStrings.localSettings,
-    listener: js.Function1[/* settings */ Settings, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_ping(event: ping, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_remoteSettings(
-    event: typings.node.nodeStrings.remoteSettings,
-    listener: js.Function1[/* settings */ Settings, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
   
   /**
     * If the `Http2Session` is connected to a `TLSSocket`, the `originSet` property
@@ -268,67 +276,71 @@ trait Http2Session extends StObject {
     callback: js.Function3[/* err */ js.Error | Null, /* duration */ Double, /* payload */ Buffer, Unit]
   ): Boolean = js.native
   
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_timeout")
+  def prependListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_close")
+  def prependListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_ping")
+  def prependListener(event: "ping", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_remoteSettings")
+  def prependListener(event: "remoteSettings", listener: js.Function1[/* settings */ Settings, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_localSettings")
+  def prependListener(event: "localSettings", listener: js.Function1[/* settings */ Settings, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_error")
+  def prependListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_goaway")
+  def prependListener(
+    event: "goaway",
+    listener: js.Function3[/* errorCode */ Double, /* lastStreamID */ Double, /* opaqueData */ Buffer, Unit]
+  ): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_frameError")
+  def prependListener(
+    event: "frameError",
+    listener: js.Function3[/* frameType */ Double, /* errorCode */ Double, /* streamID */ Double, Unit]
+  ): this.type = js.native
   def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_frameError(
-    event: frameError,
+  
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_close")
+  def prependOnceListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_ping")
+  def prependOnceListener(event: "ping", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_timeout")
+  def prependOnceListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_localSettings")
+  def prependOnceListener(event: "localSettings", listener: js.Function1[/* settings */ Settings, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_remoteSettings")
+  def prependOnceListener(event: "remoteSettings", listener: js.Function1[/* settings */ Settings, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_error")
+  def prependOnceListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_frameError")
+  def prependOnceListener(
+    event: "frameError",
     listener: js.Function3[/* frameType */ Double, /* errorCode */ Double, /* streamID */ Double, Unit]
   ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_goaway(
-    event: goaway,
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_goaway")
+  def prependOnceListener(
+    event: "goaway",
     listener: js.Function3[/* errorCode */ Double, /* lastStreamID */ Double, /* opaqueData */ Buffer, Unit]
   ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_localSettings(
-    event: typings.node.nodeStrings.localSettings,
-    listener: js.Function1[/* settings */ Settings, Unit]
-  ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_ping(event: ping, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_remoteSettings(
-    event: typings.node.nodeStrings.remoteSettings,
-    listener: js.Function1[/* settings */ Settings, Unit]
-  ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-  
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_frameError(
-    event: frameError,
-    listener: js.Function3[/* frameType */ Double, /* errorCode */ Double, /* streamID */ Double, Unit]
-  ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_goaway(
-    event: goaway,
-    listener: js.Function3[/* errorCode */ Double, /* lastStreamID */ Double, /* opaqueData */ Buffer, Unit]
-  ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_localSettings(
-    event: typings.node.nodeStrings.localSettings,
-    listener: js.Function1[/* settings */ Settings, Unit]
-  ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_ping(event: ping, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_remoteSettings(
-    event: typings.node.nodeStrings.remoteSettings,
-    listener: js.Function1[/* settings */ Settings, Unit]
-  ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
   
   /**
     * Calls `ref()` on this `Http2Session`instance's underlying `net.Socket`.

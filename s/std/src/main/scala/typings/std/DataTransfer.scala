@@ -1,14 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.all
-import typings.std.stdStrings.copy
-import typings.std.stdStrings.copyLink
-import typings.std.stdStrings.copyMove
-import typings.std.stdStrings.link
-import typings.std.stdStrings.linkMove
-import typings.std.stdStrings.move
-import typings.std.stdStrings.none
-import typings.std.stdStrings.uninitialized
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +21,7 @@ trait DataTransfer extends StObject {
     * The possible values are "none", "copy", "link", and "move".
     */
   /* standard dom */
-  var dropEffect: none | copy | link | move = js.native
+  var dropEffect: "none" | "copy" | "link" | "move" = js.native
   
   /**
     * Returns the kinds of operations that are to be allowed.
@@ -40,7 +31,7 @@ trait DataTransfer extends StObject {
     * The possible values are "none", "copy", "copyLink", "copyMove", "link", "linkMove", "move", "all", and "uninitialized",
     */
   /* standard dom */
-  var effectAllowed: none | copy | copyLink | copyMove | link | linkMove | move | all | uninitialized = js.native
+  var effectAllowed: "none" | "copy" | "copyLink" | "copyMove" | "link" | "linkMove" | "move" | "all" | "uninitialized" = js.native
   
   /** Returns a FileList of the files being dragged, if any. */
   /* standard dom */

@@ -1,9 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.dense
-import typings.materialUiCore.materialUiCoreStrings.filled
-import typings.materialUiCore.materialUiCoreStrings.outlined
-import typings.materialUiCore.materialUiCoreStrings.standard
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -42,7 +38,7 @@ trait Filled extends StObject {
     * If `dense`, will adjust vertical spacing. This is normally obtained via context from
     * FormControl.
     */
-  var margin: js.UndefOr[dense] = js.undefined
+  var margin: js.UndefOr["dense"] = js.undefined
   
   /**
     * If `true`, the helper text should use required classes key.
@@ -52,7 +48,7 @@ trait Filled extends StObject {
   /**
     * The variant to use.
     */
-  var variant: js.UndefOr[standard | outlined | filled] = js.undefined
+  var variant: js.UndefOr["standard" | "outlined" | "filled"] = js.undefined
 }
 object Filled {
   
@@ -83,7 +79,7 @@ object Filled {
     
     inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
-    inline def setMargin(value: dense): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: "dense"): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
@@ -91,7 +87,7 @@ object Filled {
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    inline def setVariant(value: standard | outlined | filled): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "standard" | "outlined" | "filled"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

@@ -14,16 +14,5 @@ object esPopupUseVisibleStatusMod {
   
   type Func = js.Function0[Unit]
   
-  /* Rewritten from type alias, can be one of: 
-    - scala.Null
-    - typings.rcTrigger.rcTriggerStrings.measure
-    - typings.rcTrigger.rcTriggerStrings.alignPre
-    - typings.rcTrigger.rcTriggerStrings.align
-    - typings.rcTrigger.rcTriggerStrings.aligned
-    - typings.rcTrigger.rcTriggerStrings.motion
-    - typings.rcTrigger.rcTriggerStrings.stable
-  */
-  type PopupStatus = _PopupStatus | Null
-  
-  trait _PopupStatus extends StObject
+  type PopupStatus = Null | "measure" | "alignPre" | "align" | "aligned" | "motion" | "stable"
 }

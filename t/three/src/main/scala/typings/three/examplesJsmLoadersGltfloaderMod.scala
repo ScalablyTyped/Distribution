@@ -375,21 +375,15 @@ object examplesJsmLoadersGltfloaderMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.three.threeStrings.materials
-    - typings.three.threeStrings.nodes
-    - typings.three.threeStrings.textures
-    - typings.three.threeStrings.meshes
-  */
-  trait GLTFReferenceType extends StObject
   object GLTFReferenceType {
     
-    inline def materials: typings.three.threeStrings.materials = "materials".asInstanceOf[typings.three.threeStrings.materials]
+    inline def materials: "materials" = "materials".asInstanceOf["materials"]
     
-    inline def meshes: typings.three.threeStrings.meshes = "meshes".asInstanceOf[typings.three.threeStrings.meshes]
+    inline def meshes: "meshes" = "meshes".asInstanceOf["meshes"]
     
-    inline def nodes: typings.three.threeStrings.nodes = "nodes".asInstanceOf[typings.three.threeStrings.nodes]
+    inline def nodes: "nodes" = "nodes".asInstanceOf["nodes"]
     
-    inline def textures: typings.three.threeStrings.textures = "textures".asInstanceOf[typings.three.threeStrings.textures]
+    inline def textures: "textures" = "textures".asInstanceOf["textures"]
   }
+  type GLTFReferenceType = "materials" | "nodes" | "textures" | "meshes"
 }

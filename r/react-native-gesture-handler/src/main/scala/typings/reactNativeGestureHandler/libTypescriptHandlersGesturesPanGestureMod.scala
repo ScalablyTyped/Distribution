@@ -5,7 +5,6 @@ import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod
 import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod.ContinousBaseGesture
 import typings.reactNativeGestureHandler.libTypescriptHandlersPanGestureHandlerMod.PanGestureConfig
 import typings.reactNativeGestureHandler.libTypescriptHandlersPanGestureHandlerMod.PanGestureHandlerEventPayload
-import typings.reactNativeGestureHandler.libTypescriptJestUtilsJestUtilsMod.AllGestures
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,9 +14,7 @@ object libTypescriptHandlersGesturesPanGestureMod {
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/panGesture", "PanGesture")
   @js.native
-  open class PanGesture ()
-    extends ContinousBaseGesture[PanGestureHandlerEventPayload, PanGestureChangeEventPayload]
-       with AllGestures {
+  open class PanGesture () extends ContinousBaseGesture[PanGestureHandlerEventPayload, PanGestureChangeEventPayload] {
     
     def activateAfterLongPress(duration: Double): this.type = js.native
     

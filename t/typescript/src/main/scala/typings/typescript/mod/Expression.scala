@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Expression
   extends StObject
-     with Node
-     with ForInitializer {
+     with Node {
   
   var _expressionBrand: Any = js.native
 }

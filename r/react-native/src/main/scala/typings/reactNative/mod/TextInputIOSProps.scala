@@ -1,40 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.URL
-import typings.reactNative.reactNativeStrings.`unless-editing`
-import typings.reactNative.reactNativeStrings.`while-editing`
-import typings.reactNative.reactNativeStrings.addressCity
-import typings.reactNative.reactNativeStrings.addressCityAndState
-import typings.reactNative.reactNativeStrings.addressState
-import typings.reactNative.reactNativeStrings.always
-import typings.reactNative.reactNativeStrings.countryName
-import typings.reactNative.reactNativeStrings.creditCardNumber
-import typings.reactNative.reactNativeStrings.dark
-import typings.reactNative.reactNativeStrings.default
-import typings.reactNative.reactNativeStrings.emailAddress
-import typings.reactNative.reactNativeStrings.familyName
-import typings.reactNative.reactNativeStrings.fullStreetAddress
-import typings.reactNative.reactNativeStrings.givenName
-import typings.reactNative.reactNativeStrings.jobTitle
-import typings.reactNative.reactNativeStrings.light
-import typings.reactNative.reactNativeStrings.location
-import typings.reactNative.reactNativeStrings.middleName
-import typings.reactNative.reactNativeStrings.name
-import typings.reactNative.reactNativeStrings.namePrefix
-import typings.reactNative.reactNativeStrings.nameSuffix
-import typings.reactNative.reactNativeStrings.never
-import typings.reactNative.reactNativeStrings.newPassword
-import typings.reactNative.reactNativeStrings.nickname
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.oneTimeCode
-import typings.reactNative.reactNativeStrings.organizationName
-import typings.reactNative.reactNativeStrings.password
-import typings.reactNative.reactNativeStrings.postalCode
-import typings.reactNative.reactNativeStrings.streetAddressLine1
-import typings.reactNative.reactNativeStrings.streetAddressLine2
-import typings.reactNative.reactNativeStrings.sublocality
-import typings.reactNative.reactNativeStrings.telephoneNumber
-import typings.reactNative.reactNativeStrings.username
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +10,7 @@ trait TextInputIOSProps extends StObject {
     * enum('never', 'while-editing', 'unless-editing', 'always')
     * When the clear button should appear on the right side of the text view
     */
-  var clearButtonMode: js.UndefOr[never | `while-editing` | `unless-editing` | always] = js.undefined
+  var clearButtonMode: js.UndefOr["never" | "while-editing" | "unless-editing" | "always"] = js.undefined
   
   /**
     * If true, clears the text field automatically when editing begins
@@ -79,7 +44,7 @@ trait TextInputIOSProps extends StObject {
   /**
     * Determines the color of the keyboard.
     */
-  var keyboardAppearance: js.UndefOr[default | light | dark] = js.undefined
+  var keyboardAppearance: js.UndefOr["default" | "light" | "dark"] = js.undefined
   
   /**
     * Provide rules for your password.
@@ -157,7 +122,7 @@ trait TextInputIOSProps extends StObject {
     *
     */
   var textContentType: js.UndefOr[
-    none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode
+    "none" | "URL" | "addressCity" | "addressCityAndState" | "addressState" | "countryName" | "creditCardNumber" | "emailAddress" | "familyName" | "fullStreetAddress" | "givenName" | "jobTitle" | "location" | "middleName" | "name" | "namePrefix" | "nameSuffix" | "nickname" | "organizationName" | "postalCode" | "streetAddressLine1" | "streetAddressLine2" | "sublocality" | "telephoneNumber" | "username" | "password" | "newPassword" | "oneTimeCode"
   ] = js.undefined
 }
 object TextInputIOSProps {
@@ -169,7 +134,7 @@ object TextInputIOSProps {
   
   extension [Self <: TextInputIOSProps](x: Self) {
     
-    inline def setClearButtonMode(value: never | `while-editing` | `unless-editing` | always): Self = StObject.set(x, "clearButtonMode", value.asInstanceOf[js.Any])
+    inline def setClearButtonMode(value: "never" | "while-editing" | "unless-editing" | "always"): Self = StObject.set(x, "clearButtonMode", value.asInstanceOf[js.Any])
     
     inline def setClearButtonModeUndefined: Self = StObject.set(x, "clearButtonMode", js.undefined)
     
@@ -187,7 +152,7 @@ object TextInputIOSProps {
     
     inline def setEnablesReturnKeyAutomaticallyUndefined: Self = StObject.set(x, "enablesReturnKeyAutomatically", js.undefined)
     
-    inline def setKeyboardAppearance(value: default | light | dark): Self = StObject.set(x, "keyboardAppearance", value.asInstanceOf[js.Any])
+    inline def setKeyboardAppearance(value: "default" | "light" | "dark"): Self = StObject.set(x, "keyboardAppearance", value.asInstanceOf[js.Any])
     
     inline def setKeyboardAppearanceUndefined: Self = StObject.set(x, "keyboardAppearance", js.undefined)
     
@@ -216,7 +181,7 @@ object TextInputIOSProps {
     inline def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
     
     inline def setTextContentType(
-      value: none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode
+      value: "none" | "URL" | "addressCity" | "addressCityAndState" | "addressState" | "countryName" | "creditCardNumber" | "emailAddress" | "familyName" | "fullStreetAddress" | "givenName" | "jobTitle" | "location" | "middleName" | "name" | "namePrefix" | "nameSuffix" | "nickname" | "organizationName" | "postalCode" | "streetAddressLine1" | "streetAddressLine2" | "sublocality" | "telephoneNumber" | "username" | "password" | "newPassword" | "oneTimeCode"
     ): Self = StObject.set(x, "textContentType", value.asInstanceOf[js.Any])
     
     inline def setTextContentTypeUndefined: Self = StObject.set(x, "textContentType", js.undefined)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TrustedScript extends StObject {
   
-  var __brand__ : typings.angularCore.angularCoreStrings.TrustedScript
+  var __brand__ : "TrustedScript"
 }
 object TrustedScript {
   
@@ -17,6 +17,6 @@ object TrustedScript {
   
   extension [Self <: TrustedScript](x: Self) {
     
-    inline def set__brand__(value: typings.angularCore.angularCoreStrings.TrustedScript): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
+    inline def set__brand__(value: "TrustedScript"): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }
 }

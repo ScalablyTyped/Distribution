@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypePredicateNode
   extends StObject
-     with TypeNode
-     with HasType {
+     with TypeNode {
   
   val assertsModifier: js.UndefOr[AssertsKeyword] = js.native
   

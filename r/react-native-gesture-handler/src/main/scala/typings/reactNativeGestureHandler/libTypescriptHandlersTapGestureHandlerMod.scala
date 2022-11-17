@@ -3,13 +3,6 @@ package typings.reactNativeGestureHandler
 import typings.react.mod.ComponentType
 import typings.react.mod.RefAttributes
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.BaseGestureHandlerProps_
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.maxDelayMs
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.maxDeltaX
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.maxDeltaY
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.maxDist
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.maxDurationMs
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minPointers
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.numberOfTaps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +16,15 @@ object libTypescriptHandlersTapGestureHandlerMod {
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/TapGestureHandler", "tapGestureHandlerProps")
   @js.native
-  val tapGestureHandlerProps: js.Tuple7[maxDurationMs, maxDelayMs, numberOfTaps, maxDeltaX, maxDeltaY, maxDist, minPointers] = js.native
+  val tapGestureHandlerProps: js.Tuple7[
+    "maxDurationMs", 
+    "maxDelayMs", 
+    "numberOfTaps", 
+    "maxDeltaX", 
+    "maxDeltaY", 
+    "maxDist", 
+    "minPointers"
+  ] = js.native
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/TapGestureHandler", "tapHandlerName")
   @js.native

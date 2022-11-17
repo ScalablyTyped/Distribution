@@ -18,8 +18,6 @@ import typings.antd.anon.SourceSelectedKeys
 import typings.antd.anon.WeakValidationMapConfigPr
 import typings.antd.anon.`3`
 import typings.antd.anon.`4`
-import typings.antd.antdStrings.`4Dot24Dot2`
-import typings.antd.antdStrings.picker
 import typings.antd.libAffixMod.AffixProps
 import typings.antd.libAlertErrorBoundaryMod.default
 import typings.antd.libAlertMod.AlertInterface
@@ -268,14 +266,14 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("antd", "DatePicker.MonthPicker")
     @js.native
-    open class MonthPicker protected () extends Component[Omit[PickerProps[Moment] & PopupClassName, picker], Any, Any] {
-      def this(props: Omit[PickerProps[Moment] & PopupClassName, picker]) = this()
-      def this(props: Omit[PickerProps[Moment] & PopupClassName, picker], context: Any) = this()
+    open class MonthPicker protected () extends Component[Omit[PickerProps[Moment] & PopupClassName, "picker"], Any, Any] {
+      def this(props: Omit[PickerProps[Moment] & PopupClassName, "picker"]) = this()
+      def this(props: Omit[PickerProps[Moment] & PopupClassName, "picker"], context: Any) = this()
     }
     @JSImport("antd", "DatePicker.MonthPicker")
     @js.native
-    def MonthPicker: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, picker], Any] = js.native
-    inline def MonthPicker_=(x: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, picker], Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonthPicker")(x.asInstanceOf[js.Any])
+    def MonthPicker: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, "picker"], Any] = js.native
+    inline def MonthPicker_=(x: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, "picker"], Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonthPicker")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("antd", "DatePicker.QuarterPicker")
@@ -316,26 +314,26 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("antd", "DatePicker.WeekPicker")
     @js.native
-    open class WeekPicker protected () extends Component[Omit[PickerProps[Moment] & PopupClassName, picker], Any, Any] {
-      def this(props: Omit[PickerProps[Moment] & PopupClassName, picker]) = this()
-      def this(props: Omit[PickerProps[Moment] & PopupClassName, picker], context: Any) = this()
+    open class WeekPicker protected () extends Component[Omit[PickerProps[Moment] & PopupClassName, "picker"], Any, Any] {
+      def this(props: Omit[PickerProps[Moment] & PopupClassName, "picker"]) = this()
+      def this(props: Omit[PickerProps[Moment] & PopupClassName, "picker"], context: Any) = this()
     }
     @JSImport("antd", "DatePicker.WeekPicker")
     @js.native
-    def WeekPicker: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, picker], Any] = js.native
-    inline def WeekPicker_=(x: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, picker], Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WeekPicker")(x.asInstanceOf[js.Any])
+    def WeekPicker: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, "picker"], Any] = js.native
+    inline def WeekPicker_=(x: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, "picker"], Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WeekPicker")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("antd", "DatePicker.YearPicker")
     @js.native
-    open class YearPicker protected () extends Component[Omit[PickerProps[Moment] & PopupClassName, picker], Any, Any] {
-      def this(props: Omit[PickerProps[Moment] & PopupClassName, picker]) = this()
-      def this(props: Omit[PickerProps[Moment] & PopupClassName, picker], context: Any) = this()
+    open class YearPicker protected () extends Component[Omit[PickerProps[Moment] & PopupClassName, "picker"], Any, Any] {
+      def this(props: Omit[PickerProps[Moment] & PopupClassName, "picker"]) = this()
+      def this(props: Omit[PickerProps[Moment] & PopupClassName, "picker"], context: Any) = this()
     }
     @JSImport("antd", "DatePicker.YearPicker")
     @js.native
-    def YearPicker: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, picker], Any] = js.native
-    inline def YearPicker_=(x: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, picker], Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YearPicker")(x.asInstanceOf[js.Any])
+    def YearPicker: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, "picker"], Any] = js.native
+    inline def YearPicker_=(x: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, "picker"], Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YearPicker")(x.asInstanceOf[js.Any])
     
     @JSImport("antd", "DatePicker.childContextTypes")
     @js.native
@@ -711,5 +709,5 @@ object mod {
   
   @JSImport("antd", "version")
   @js.native
-  val version: `4Dot24Dot2` = js.native
+  val version: "4.24.2" = js.native
 }

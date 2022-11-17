@@ -6,8 +6,6 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
-import typings.semanticUiReact.semanticUiReactStrings.bottom
-import typings.semanticUiReact.semanticUiReactStrings.top
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -92,7 +90,7 @@ object distCommonjsModulesDimmerDimmerInnerMod {
     var simple: js.UndefOr[Boolean] = js.undefined
     
     /** A dimmer can have its content top or bottom aligned. */
-    var verticalAlign: js.UndefOr[bottom | top] = js.undefined
+    var verticalAlign: js.UndefOr["bottom" | "top"] = js.undefined
   }
   object StrictDimmerInnerProps {
     
@@ -151,7 +149,7 @@ object distCommonjsModulesDimmerDimmerInnerMod {
       
       inline def setSimpleUndefined: Self = StObject.set(x, "simple", js.undefined)
       
-      inline def setVerticalAlign(value: bottom | top): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: "bottom" | "top"): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
       inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     }

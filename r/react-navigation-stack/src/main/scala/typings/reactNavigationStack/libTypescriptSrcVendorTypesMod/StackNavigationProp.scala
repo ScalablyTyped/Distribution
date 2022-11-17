@@ -1,8 +1,6 @@
 package typings.reactNavigationStack.libTypescriptSrcVendorTypesMod
 
 import typings.reactNavigation.mod.NavigationAction
-import typings.reactNavigation.mod.NavigationEventCallback
-import typings.reactNavigation.mod.NavigationEventSubscription
 import typings.reactNavigation.mod.NavigationNavigateAction
 import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationScreenProp
@@ -15,8 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StackNavigationProp[State, Params]
   extends StObject
      with NavigationScreenProp[State, Params] {
-  
-  def addListener(event: NavigationStackEventName, callback: NavigationEventCallback): NavigationEventSubscription = js.native
   
   def pop(): Boolean = js.native
   def pop(n: Double): Boolean = js.native

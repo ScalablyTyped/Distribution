@@ -3,8 +3,6 @@ package typings.webxr
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventTarget
-import typings.webxr.webxrStrings.devicechange
-import typings.webxr.webxrStrings.sessiongranted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +20,42 @@ trait XRSystem
      with EventTarget {
   
   @JSName("addEventListener")
-  def addEventListener_devicechange(
-    `type`: devicechange,
+  @scala.annotation.targetName("addEventListener_devicechange")
+  def addEventListener(
+    `type`: "devicechange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_devicechange(
-    `type`: devicechange,
+  @scala.annotation.targetName("addEventListener_sessiongranted")
+  def addEventListener(
+    `type`: "sessiongranted",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemSessionGrantedEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_devicechange")
+  def addEventListener(
+    `type`: "devicechange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_devicechange(
-    `type`: devicechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_sessiongranted(
-    `type`: sessiongranted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemSessionGrantedEvent, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_sessiongranted(
-    `type`: sessiongranted,
+  @scala.annotation.targetName("addEventListener_sessiongranted")
+  def addEventListener(
+    `type`: "sessiongranted",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemSessionGrantedEvent, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_sessiongranted(
-    `type`: sessiongranted,
+  @scala.annotation.targetName("addEventListener_devicechange")
+  def addEventListener(
+    `type`: "devicechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_sessiongranted")
+  def addEventListener(
+    `type`: "sessiongranted",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemSessionGrantedEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -67,36 +71,42 @@ trait XRSystem
   var onsessiongranted: XRSystemSessionGrantedEventHandler | Null = js.native
   
   @JSName("removeEventListener")
-  def removeEventListener_devicechange(
-    `type`: devicechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_devicechange(
-    `type`: devicechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_devicechange(
-    `type`: devicechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_sessiongranted(
-    `type`: sessiongranted,
+  @scala.annotation.targetName("removeEventListener_sessiongranted")
+  def removeEventListener(
+    `type`: "sessiongranted",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemSessionGrantedEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_sessiongranted(
-    `type`: sessiongranted,
+  @scala.annotation.targetName("removeEventListener_devicechange")
+  def removeEventListener(
+    `type`: "devicechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_sessiongranted")
+  def removeEventListener(
+    `type`: "sessiongranted",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemSessionGrantedEvent, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_sessiongranted(
-    `type`: sessiongranted,
+  @scala.annotation.targetName("removeEventListener_devicechange")
+  def removeEventListener(
+    `type`: "devicechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_devicechange")
+  def removeEventListener(
+    `type`: "devicechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_sessiongranted")
+  def removeEventListener(
+    `type`: "sessiongranted",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemSessionGrantedEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native

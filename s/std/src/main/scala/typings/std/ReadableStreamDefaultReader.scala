@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ReadableStreamDefaultReader[R]
   extends StObject
-     with ReadableStreamGenericReader
-     with ReadableStreamReader[R] {
+     with ReadableStreamGenericReader {
   
   /* standard dom */
   def read(): js.Promise[ReadableStreamReadResult[R]] = js.native

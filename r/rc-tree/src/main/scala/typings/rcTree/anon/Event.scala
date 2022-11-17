@@ -2,7 +2,6 @@ package typings.rcTree.anon
 
 import typings.rcTree.esInterfaceMod.BasicDataNode
 import typings.rcTree.esInterfaceMod.EventDataNode
-import typings.rcTree.rcTreeStrings.select
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Event[TreeDataType /* <: BasicDataNode */] extends StObject {
   
-  var event: select
+  var event: "select"
   
   var nativeEvent: MouseEvent
   
@@ -34,7 +33,7 @@ object Event {
   
   extension [Self <: Event[?], TreeDataType /* <: BasicDataNode */](x: Self & Event[TreeDataType]) {
     
-    inline def setEvent(value: select): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: "select"): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setNativeEvent(value: MouseEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     

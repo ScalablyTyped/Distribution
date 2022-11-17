@@ -3,13 +3,6 @@ package typings.expoPermissions
 import org.scalablytyped.runtime.StringDictionary
 import typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionExpiration
 import typings.expoModulesCore.buildPermissionsInterfaceMod.PermissionStatus
-import typings.expoPermissions.expoPermissionsStrings.all
-import typings.expoPermissions.expoPermissionsStrings.always
-import typings.expoPermissions.expoPermissionsStrings.coarse
-import typings.expoPermissions.expoPermissionsStrings.fine
-import typings.expoPermissions.expoPermissionsStrings.limited
-import typings.expoPermissions.expoPermissionsStrings.none
-import typings.expoPermissions.expoPermissionsStrings.whenInUse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,18 +25,18 @@ object buildPermissionsDottypesMod {
   
   trait PermissionDetailsLocationAndroid extends StObject {
     
-    var accuracy: fine | coarse | none
+    var accuracy: "fine" | "coarse" | "none"
   }
   object PermissionDetailsLocationAndroid {
     
-    inline def apply(accuracy: fine | coarse | none): PermissionDetailsLocationAndroid = {
+    inline def apply(accuracy: "fine" | "coarse" | "none"): PermissionDetailsLocationAndroid = {
       val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any])
       __obj.asInstanceOf[PermissionDetailsLocationAndroid]
     }
     
     extension [Self <: PermissionDetailsLocationAndroid](x: Self) {
       
-      inline def setAccuracy(value: fine | coarse | none): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+      inline def setAccuracy(value: "fine" | "coarse" | "none"): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,11 +47,11 @@ object buildPermissionsDottypesMod {
     /**
       * iOS only - Permission.MEDIA_LIBRARY/MEDIA_LIBRARY_WRITE_ONLY
       */
-    var accessPrivileges: js.UndefOr[all | limited | none] = js.undefined
+    var accessPrivileges: js.UndefOr["all" | "limited" | "none"] = js.undefined
     
     var android: js.UndefOr[PermissionDetailsLocationAndroid] = js.undefined
     
-    var scope: js.UndefOr[whenInUse | always | none] = js.undefined
+    var scope: js.UndefOr["whenInUse" | "always" | "none"] = js.undefined
   }
   object PermissionInfo {
     
@@ -69,7 +62,7 @@ object buildPermissionsDottypesMod {
     
     extension [Self <: PermissionInfo](x: Self) {
       
-      inline def setAccessPrivileges(value: all | limited | none): Self = StObject.set(x, "accessPrivileges", value.asInstanceOf[js.Any])
+      inline def setAccessPrivileges(value: "all" | "limited" | "none"): Self = StObject.set(x, "accessPrivileges", value.asInstanceOf[js.Any])
       
       inline def setAccessPrivilegesUndefined: Self = StObject.set(x, "accessPrivileges", js.undefined)
       
@@ -77,7 +70,7 @@ object buildPermissionsDottypesMod {
       
       inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
       
-      inline def setScope(value: whenInUse | always | none): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: "whenInUse" | "always" | "none"): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
@@ -110,54 +103,37 @@ object buildPermissionsDottypesMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.expoPermissions.expoPermissionsStrings.camera
-    - typings.expoPermissions.expoPermissionsStrings.cameraRoll
-    - typings.expoPermissions.expoPermissionsStrings.mediaLibrary
-    - typings.expoPermissions.expoPermissionsStrings.mediaLibraryWriteOnly
-    - typings.expoPermissions.expoPermissionsStrings.audioRecording
-    - typings.expoPermissions.expoPermissionsStrings.location
-    - typings.expoPermissions.expoPermissionsStrings.locationForeground
-    - typings.expoPermissions.expoPermissionsStrings.locationBackground
-    - typings.expoPermissions.expoPermissionsStrings.userFacingNotifications
-    - typings.expoPermissions.expoPermissionsStrings.notifications
-    - typings.expoPermissions.expoPermissionsStrings.contacts
-    - typings.expoPermissions.expoPermissionsStrings.calendar
-    - typings.expoPermissions.expoPermissionsStrings.reminders
-    - typings.expoPermissions.expoPermissionsStrings.motion
-    - typings.expoPermissions.expoPermissionsStrings.systemBrightness
-  */
-  trait PermissionType extends StObject
   object PermissionType {
     
-    inline def audioRecording: typings.expoPermissions.expoPermissionsStrings.audioRecording = "audioRecording".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.audioRecording]
+    inline def audioRecording: "audioRecording" = "audioRecording".asInstanceOf["audioRecording"]
     
-    inline def calendar: typings.expoPermissions.expoPermissionsStrings.calendar = "calendar".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.calendar]
+    inline def calendar: "calendar" = "calendar".asInstanceOf["calendar"]
     
-    inline def camera: typings.expoPermissions.expoPermissionsStrings.camera = "camera".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.camera]
+    inline def camera: "camera" = "camera".asInstanceOf["camera"]
     
-    inline def cameraRoll: typings.expoPermissions.expoPermissionsStrings.cameraRoll = "cameraRoll".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.cameraRoll]
+    inline def cameraRoll: "cameraRoll" = "cameraRoll".asInstanceOf["cameraRoll"]
     
-    inline def contacts: typings.expoPermissions.expoPermissionsStrings.contacts = "contacts".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.contacts]
+    inline def contacts: "contacts" = "contacts".asInstanceOf["contacts"]
     
-    inline def location: typings.expoPermissions.expoPermissionsStrings.location = "location".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.location]
+    inline def location: "location" = "location".asInstanceOf["location"]
     
-    inline def locationBackground: typings.expoPermissions.expoPermissionsStrings.locationBackground = "locationBackground".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.locationBackground]
+    inline def locationBackground: "locationBackground" = "locationBackground".asInstanceOf["locationBackground"]
     
-    inline def locationForeground: typings.expoPermissions.expoPermissionsStrings.locationForeground = "locationForeground".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.locationForeground]
+    inline def locationForeground: "locationForeground" = "locationForeground".asInstanceOf["locationForeground"]
     
-    inline def mediaLibrary: typings.expoPermissions.expoPermissionsStrings.mediaLibrary = "mediaLibrary".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.mediaLibrary]
+    inline def mediaLibrary: "mediaLibrary" = "mediaLibrary".asInstanceOf["mediaLibrary"]
     
-    inline def mediaLibraryWriteOnly: typings.expoPermissions.expoPermissionsStrings.mediaLibraryWriteOnly = "mediaLibraryWriteOnly".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.mediaLibraryWriteOnly]
+    inline def mediaLibraryWriteOnly: "mediaLibraryWriteOnly" = "mediaLibraryWriteOnly".asInstanceOf["mediaLibraryWriteOnly"]
     
-    inline def motion: typings.expoPermissions.expoPermissionsStrings.motion = "motion".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.motion]
+    inline def motion: "motion" = "motion".asInstanceOf["motion"]
     
-    inline def notifications: typings.expoPermissions.expoPermissionsStrings.notifications = "notifications".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.notifications]
+    inline def notifications: "notifications" = "notifications".asInstanceOf["notifications"]
     
-    inline def reminders: typings.expoPermissions.expoPermissionsStrings.reminders = "reminders".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.reminders]
+    inline def reminders: "reminders" = "reminders".asInstanceOf["reminders"]
     
-    inline def systemBrightness: typings.expoPermissions.expoPermissionsStrings.systemBrightness = "systemBrightness".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.systemBrightness]
+    inline def systemBrightness: "systemBrightness" = "systemBrightness".asInstanceOf["systemBrightness"]
     
-    inline def userFacingNotifications: typings.expoPermissions.expoPermissionsStrings.userFacingNotifications = "userFacingNotifications".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.userFacingNotifications]
+    inline def userFacingNotifications: "userFacingNotifications" = "userFacingNotifications".asInstanceOf["userFacingNotifications"]
   }
+  type PermissionType = "camera" | "cameraRoll" | "mediaLibrary" | "mediaLibraryWriteOnly" | "audioRecording" | "location" | "locationForeground" | "locationBackground" | "userFacingNotifications" | "notifications" | "contacts" | "calendar" | "reminders" | "motion" | "systemBrightness"
 }

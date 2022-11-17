@@ -1,7 +1,6 @@
 package typings.node.cryptoMod.webcrypto
 
 import typings.node.anon._empty
-import typings.node.nodeInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait CryptoKeyConstructor extends StObject {
   def apply(_underscore: _empty): scala.Nothing = js.native
   
   // Allows instanceof to work but not be callable by the user.
-  val length: `0` = js.native
+  val length: 0 = js.native
   
-  val name: typings.node.nodeStrings.CryptoKey = js.native
+  val name: "CryptoKey" = js.native
 }

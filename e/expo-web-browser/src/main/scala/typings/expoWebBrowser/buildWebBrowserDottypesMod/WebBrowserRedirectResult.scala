@@ -1,18 +1,15 @@
 package typings.expoWebBrowser.buildWebBrowserDottypesMod
 
-import typings.expoWebBrowser.expoWebBrowserStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebBrowserRedirectResult
-  extends StObject
-     with WebBrowserAuthSessionResult {
+trait WebBrowserRedirectResult extends StObject {
   
   /**
     * Type of the result.
     */
-  var `type`: success
+  var `type`: "success"
   
   var url: String
 }
@@ -26,7 +23,7 @@ object WebBrowserRedirectResult {
   
   extension [Self <: WebBrowserRedirectResult](x: Self) {
     
-    inline def setType(value: success): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "success"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

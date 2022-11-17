@@ -1,7 +1,5 @@
 package typings.googleMaps.google.maps
 
-import typings.googleMaps.google.maps.places.LocationRestriction
-import typings.googleMaps.google.maps.places._LocationBias
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * <code>west</code>, <code>north</code> and <code>east</code> must be set,
   * otherwise an exception is thrown.
   */
-trait LatLngBoundsLiteral
-  extends StObject
-     with LocationRestriction
-     with _LocationBias {
+trait LatLngBoundsLiteral extends StObject {
   
   /**
     * East longitude in degrees. Values outside the range [-180, 180] will be

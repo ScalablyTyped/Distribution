@@ -2,7 +2,6 @@ package typings.node.childProcessMod
 
 import typings.node.eventsMod.Abortable
 import typings.node.nodeColonstreamMod.Stream
-import typings.node.nodeStrings.ipc
 import typings.node.processMod.global.NodeJS.Signals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -63,7 +62,7 @@ object CommonSpawnOptions {
     
     inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
     
-    inline def setStdioVarargs(value: (js.UndefOr[IOType | ipc | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value*))
+    inline def setStdioVarargs(value: (js.UndefOr[IOType | "ipc" | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value*))
     
     inline def setWindowsVerbatimArguments(value: Boolean): Self = StObject.set(x, "windowsVerbatimArguments", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.std.anon
 
-import typings.std.stdStrings.byob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Mode extends StObject {
   
   /* standard dom */
-  var mode: byob
+  var mode: "byob"
 }
 object Mode {
   
@@ -19,6 +18,6 @@ object Mode {
   
   extension [Self <: Mode](x: Self) {
     
-    inline def setMode(value: byob): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: "byob"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

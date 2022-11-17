@@ -3,7 +3,6 @@ package typings.materialUi
 import typings.materialUi.MaterialUI.List.ListItemProps
 import typings.materialUi.MaterialUI.List.ListProps
 import typings.materialUi.MaterialUI.List.SelectableProps
-import typings.materialUi.materialUiStrings.onChange
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
@@ -33,5 +32,5 @@ object listMod {
   open class ListItem ()
     extends Component[ListItemProps, js.Object, Any]
   
-  inline def makeSelectable[P /* <: js.Object */](component: ComponentClass[P, ComponentState]): ComponentClass[(Omit[P, onChange]) & SelectableProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSelectable")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[(Omit[P, onChange]) & SelectableProps, ComponentState]]
+  inline def makeSelectable[P /* <: js.Object */](component: ComponentClass[P, ComponentState]): ComponentClass[(Omit[P, "onChange"]) & SelectableProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSelectable")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[(Omit[P, "onChange"]) & SelectableProps, ComponentState]]
 }

@@ -1,6 +1,5 @@
 package typings.materialUi.MaterialUI
 
-import typings.materialUi.materialUiStrings.all
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.MouseEvent
@@ -356,7 +355,7 @@ object Table {
     
     var onRowHoverExit: js.UndefOr[js.Function1[/* row */ Double, Unit]] = js.undefined
     
-    var onRowSelection: js.UndefOr[js.Function1[/* selectedRows */ js.Array[Double] | all, Unit]] = js.undefined
+    var onRowSelection: js.UndefOr[js.Function1[/* selectedRows */ js.Array[Double] | "all", Unit]] = js.undefined
     
     var selectable: js.UndefOr[Boolean] = js.undefined
     
@@ -433,7 +432,7 @@ object Table {
       
       inline def setOnRowHoverUndefined: Self = StObject.set(x, "onRowHover", js.undefined)
       
-      inline def setOnRowSelection(value: /* selectedRows */ js.Array[Double] | all => Unit): Self = StObject.set(x, "onRowSelection", js.Any.fromFunction1(value))
+      inline def setOnRowSelection(value: /* selectedRows */ js.Array[Double] | "all" => Unit): Self = StObject.set(x, "onRowSelection", js.Any.fromFunction1(value))
       
       inline def setOnRowSelectionUndefined: Self = StObject.set(x, "onRowSelection", js.undefined)
       

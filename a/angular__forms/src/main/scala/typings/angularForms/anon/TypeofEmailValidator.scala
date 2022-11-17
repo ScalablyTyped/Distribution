@@ -3,7 +3,6 @@ package typings.angularForms.anon
 import org.scalablytyped.runtime.Instantiable0
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
 import typings.angularForms.mod.EmailValidator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +21,8 @@ trait TypeofEmailValidator
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[EmailValidator, scala.Nothing] = js.native

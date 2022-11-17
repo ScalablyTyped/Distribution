@@ -1,6 +1,6 @@
 package typings.angularCore.anon
 
-import typings.angularCore.mod.ImportedNgModuleProviders
+import typings.angularCore.mod.EnvironmentProviders
 import typings.angularCore.mod.Provider
 import typings.angularCore.mod.Type
 import org.scalablytyped.runtime.StObject
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AppProviders extends StObject {
   
-  var appProviders: js.UndefOr[js.Array[Provider | ImportedNgModuleProviders]] = js.undefined
+  var appProviders: js.UndefOr[js.Array[Provider | EnvironmentProviders]] = js.undefined
   
   var platformProviders: js.UndefOr[js.Array[Provider]] = js.undefined
   
@@ -24,11 +24,11 @@ object AppProviders {
   
   extension [Self <: AppProviders](x: Self) {
     
-    inline def setAppProviders(value: js.Array[Provider | ImportedNgModuleProviders]): Self = StObject.set(x, "appProviders", value.asInstanceOf[js.Any])
+    inline def setAppProviders(value: js.Array[Provider | EnvironmentProviders]): Self = StObject.set(x, "appProviders", value.asInstanceOf[js.Any])
     
     inline def setAppProvidersUndefined: Self = StObject.set(x, "appProviders", js.undefined)
     
-    inline def setAppProvidersVarargs(value: (Provider | ImportedNgModuleProviders)*): Self = StObject.set(x, "appProviders", js.Array(value*))
+    inline def setAppProvidersVarargs(value: (Provider | EnvironmentProviders)*): Self = StObject.set(x, "appProviders", js.Array(value*))
     
     inline def setPlatformProviders(value: js.Array[Provider]): Self = StObject.set(x, "platformProviders", value.asInstanceOf[js.Any])
     

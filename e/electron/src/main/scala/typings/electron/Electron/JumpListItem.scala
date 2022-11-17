@@ -1,8 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.file
-import typings.electron.electronStrings.separator
-import typings.electron.electronStrings.task
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,7 +54,7 @@ trait JumpListItem extends StObject {
   /**
     * One of the following:
     */
-  var `type`: js.UndefOr[task | separator | file] = js.undefined
+  var `type`: js.UndefOr["task" | "separator" | "file"] = js.undefined
   
   /**
     * The working directory. Default is empty.
@@ -101,7 +98,7 @@ object JumpListItem {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setType(value: task | separator | file): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "task" | "separator" | "file"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

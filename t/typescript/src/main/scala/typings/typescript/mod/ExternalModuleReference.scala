@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ExternalModuleReference
   extends StObject
-     with Node
-     with ModuleReference {
+     with Node {
   
   val expression: Expression = js.native
   

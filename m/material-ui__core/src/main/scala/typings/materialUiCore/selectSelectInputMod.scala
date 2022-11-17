@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Name
 import typings.materialUiCore.anon.Node
 import typings.materialUiCore.anon.PartialMenuProps
-import typings.materialUiCore.materialUiCoreStrings.filled
-import typings.materialUiCore.materialUiCoreStrings.outlined
-import typings.materialUiCore.materialUiCoreStrings.standard
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ComponentType
 import typings.react.mod.ElementType
@@ -69,7 +66,7 @@ object selectSelectInputMod extends Shortcut {
     
     var value: js.UndefOr[Any] = js.undefined
     
-    var variant: js.UndefOr[standard | outlined | filled] = js.undefined
+    var variant: js.UndefOr["standard" | "outlined" | "filled"] = js.undefined
   }
   object SelectInputProps {
     
@@ -154,7 +151,7 @@ object selectSelectInputMod extends Shortcut {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setVariant(value: standard | outlined | filled): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "standard" | "outlined" | "filled"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     }

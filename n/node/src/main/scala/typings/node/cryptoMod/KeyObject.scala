@@ -2,8 +2,6 @@ package typings.node.cryptoMod
 
 import typings.node.bufferMod.global.Buffer
 import typings.node.cryptoMod.webcrypto.CryptoKey
-import typings.node.nodeStrings.der
-import typings.node.nodeStrings.pem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,9 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("crypto", "KeyObject")
 @js.native
-/* private */ open class KeyObject ()
-  extends StObject
-     with _KeyLike {
+/* private */ open class KeyObject () extends StObject {
   
   /**
     * This property exists only on asymmetric keys. Depending on the type of the key,
@@ -70,10 +66,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   def `export`(): JsonWebKey = js.native
   def `export`(options: JwkKeyExportOptions): JsonWebKey = js.native
-  @JSName("export")
-  def export_Buffer(): Buffer = js.native
-  @JSName("export")
-  def export_der(options: KeyExportOptions[der]): Buffer = js.native
   /**
     * For symmetric keys, the following encoding options can be used:
     *
@@ -98,7 +90,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @since v11.6.0
     */
   @JSName("export")
-  def export_pem(options: KeyExportOptions[pem]): String | Buffer = js.native
+  @scala.annotation.targetName("export_pem")
+  def `export`(options: KeyExportOptions["pem"]): String | Buffer = js.native
+  @JSName("export")
+  @scala.annotation.targetName("export_der")
+  def `export`(options: KeyExportOptions["der"]): Buffer = js.native
+  @JSName("export")
+  def export_Buffer(): Buffer = js.native
   
   /**
     * For secret keys, this property represents the size of the key in bytes. This

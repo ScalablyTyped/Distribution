@@ -1,17 +1,15 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.angularCompilerInts.`16`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AttributeValueTextToken
   extends StObject
-     with TokenBase
-     with InterpolatedAttributeToken {
+     with TokenBase {
   
   @JSName("type")
-  var type_AttributeValueTextToken: `16`
+  var type_AttributeValueTextToken: 16
 }
 object AttributeValueTextToken {
   
@@ -23,6 +21,6 @@ object AttributeValueTextToken {
   
   extension [Self <: AttributeValueTextToken](x: Self) {
     
-    inline def setType(value: `16`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 16): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

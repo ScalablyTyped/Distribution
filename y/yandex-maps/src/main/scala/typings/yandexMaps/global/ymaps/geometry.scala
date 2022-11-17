@@ -1,8 +1,6 @@
 package typings.yandexMaps.global.ymaps
 
 import typings.yandexMaps.anon.CoordRendering
-import typings.yandexMaps.yandexMapsStrings.evenOdd
-import typings.yandexMaps.yandexMapsStrings.nonZero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,11 +40,15 @@ object geometry {
   open class Polygon ()
     extends typings.yandexMaps.mod.geometry.Polygon {
     def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
-    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero) = this()
-    def this(coordinates: Unit, fillRule: evenOdd | nonZero) = this()
-    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero, options: js.Object) = this()
+    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: "evenOdd" | "nonZero") = this()
+    def this(coordinates: Unit, fillRule: "evenOdd" | "nonZero") = this()
+    def this(
+      coordinates: js.Array[js.Array[js.Array[Double]]],
+      fillRule: "evenOdd" | "nonZero",
+      options: js.Object
+    ) = this()
     def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: Unit, options: js.Object) = this()
-    def this(coordinates: Unit, fillRule: evenOdd | nonZero, options: js.Object) = this()
+    def this(coordinates: Unit, fillRule: "evenOdd" | "nonZero", options: js.Object) = this()
     def this(coordinates: Unit, fillRule: Unit, options: js.Object) = this()
   }
   object Polygon {
@@ -91,8 +93,8 @@ object geometry {
     open class Polygon ()
       extends typings.yandexMaps.mod.geometry.base.Polygon {
       def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero) = this()
-      def this(coordinates: Unit, fillRule: evenOdd | nonZero) = this()
+      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: "evenOdd" | "nonZero") = this()
+      def this(coordinates: Unit, fillRule: "evenOdd" | "nonZero") = this()
     }
     object Polygon {
       
@@ -140,10 +142,10 @@ object geometry {
     @js.native
     open class MultiPolygon protected ()
       extends typings.yandexMaps.mod.geometry.pixel.MultiPolygon {
-      def this(coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]], fillRule: evenOdd | nonZero) = this()
+      def this(coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]], fillRule: "evenOdd" | "nonZero") = this()
       def this(
         coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]],
-        fillRule: evenOdd | nonZero,
+        fillRule: "evenOdd" | "nonZero",
         metaData: js.Object
       ) = this()
     }
@@ -161,10 +163,10 @@ object geometry {
     @js.native
     open class Polygon protected ()
       extends typings.yandexMaps.mod.geometry.pixel.Polygon {
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero) = this()
+      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: "evenOdd" | "nonZero") = this()
       def this(
         coordinates: js.Array[js.Array[js.Array[Double]]],
-        fillRule: evenOdd | nonZero,
+        fillRule: "evenOdd" | "nonZero",
         metaData: js.Object
       ) = this()
     }

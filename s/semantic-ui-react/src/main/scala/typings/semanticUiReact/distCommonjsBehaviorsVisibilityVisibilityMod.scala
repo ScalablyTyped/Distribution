@@ -6,10 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactNode
-import typings.semanticUiReact.semanticUiReactStrings.down
-import typings.semanticUiReact.semanticUiReactStrings.events
-import typings.semanticUiReact.semanticUiReactStrings.repaint
-import typings.semanticUiReact.semanticUiReactStrings.up
 import typings.std.Document
 import typings.std.HTMLElement
 import typings.std.Window
@@ -171,7 +167,7 @@ object distCommonjsBehaviorsVisibilityVisibilityMod extends Shortcut {
       * - `events` - (default) update and fire callbacks only on scroll/resize events
       * - `repaint` - update and fire callbacks on browser repaint (animation frames)
       */
-    var updateOn: js.UndefOr[events | repaint] = js.undefined
+    var updateOn: js.UndefOr["events" | "repaint"] = js.undefined
   }
   object StrictVisibilityProps {
     
@@ -268,7 +264,7 @@ object distCommonjsBehaviorsVisibilityVisibilityMod extends Shortcut {
       
       inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
       
-      inline def setUpdateOn(value: events | repaint): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
+      inline def setUpdateOn(value: "events" | "repaint"): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
       
       inline def setUpdateOnUndefined: Self = StObject.set(x, "updateOn", js.undefined)
     }
@@ -280,7 +276,7 @@ object distCommonjsBehaviorsVisibilityVisibilityMod extends Shortcut {
     
     var bottomVisible: Boolean
     
-    var direction: down | up
+    var direction: "down" | "up"
     
     var fits: Boolean
     
@@ -307,7 +303,7 @@ object distCommonjsBehaviorsVisibilityVisibilityMod extends Shortcut {
     inline def apply(
       bottomPassed: Boolean,
       bottomVisible: Boolean,
-      direction: down | up,
+      direction: "down" | "up",
       fits: Boolean,
       height: Double,
       offScreen: Boolean,
@@ -329,7 +325,7 @@ object distCommonjsBehaviorsVisibilityVisibilityMod extends Shortcut {
       
       inline def setBottomVisible(value: Boolean): Self = StObject.set(x, "bottomVisible", value.asInstanceOf[js.Any])
       
-      inline def setDirection(value: down | up): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "down" | "up"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setFits(value: Boolean): Self = StObject.set(x, "fits", value.asInstanceOf[js.Any])
       

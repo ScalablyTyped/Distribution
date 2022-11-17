@@ -72,20 +72,15 @@ object libTreeDirectoryTreeMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdBooleans.`false`
-    - typings.antd.antdStrings.click
-    - typings.antd.antdStrings.doubleClick
-  */
-  trait ExpandAction extends StObject
   object ExpandAction {
     
-    inline def click: typings.antd.antdStrings.click = "click".asInstanceOf[typings.antd.antdStrings.click]
+    inline def click: "click" = "click".asInstanceOf["click"]
     
-    inline def doubleClick: typings.antd.antdStrings.doubleClick = "doubleClick".asInstanceOf[typings.antd.antdStrings.doubleClick]
+    inline def doubleClick: "doubleClick" = "doubleClick".asInstanceOf["doubleClick"]
     
-    inline def `false`: typings.antd.antdBooleans.`false` = false.asInstanceOf[typings.antd.antdBooleans.`false`]
+    inline def `false`: false = false.asInstanceOf[false]
   }
+  type ExpandAction = false | "click" | "doubleClick"
   
   type _To = DirectoryTreeCompoundedComponent
   

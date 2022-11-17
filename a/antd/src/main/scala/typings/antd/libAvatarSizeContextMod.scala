@@ -1,6 +1,7 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
+import typings.antd.libUtilResponsiveObserveMod.ScreenSizeMap
 import typings.react.mod.Context
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
@@ -18,14 +19,7 @@ object libAvatarSizeContextMod extends Shortcut {
   @js.native
   val SizeContextProvider: FC[SizeContextProps] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.large
-    - typings.antd.antdStrings.small
-    - typings.antd.antdStrings.default
-    - scala.Double
-    - typings.antd.libUtilResponsiveObserveMod.ScreenSizeMap
-  */
-  type AvatarSize = _AvatarSize | Double
+  type AvatarSize = "large" | "small" | "default" | Double | ScreenSizeMap
   
   trait SizeContextProps extends StObject {
     
@@ -51,8 +45,6 @@ object libAvatarSizeContextMod extends Shortcut {
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
-  
-  trait _AvatarSize extends StObject
   
   type _To = Context[AvatarSize]
   

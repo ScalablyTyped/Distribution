@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.ClassKeyStepButtonClasskey
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
-import typings.materialUiCore.materialUiCoreStrings.button
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
 import typings.react.mod.ReactNode
@@ -27,22 +26,17 @@ object stepButtonStepButtonMod extends Shortcut {
     */
   @JSImport("@material-ui/core/StepButton/StepButton", JSImport.Default)
   @js.native
-  val default: ExtendButtonBase[StepButtonTypeMap[js.Object, button]] = js.native
+  val default: ExtendButtonBase[StepButtonTypeMap[js.Object, "button"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.vertical
-    - typings.materialUiCore.materialUiCoreStrings.touchRipple
-  */
-  trait StepButtonClasskey extends StObject
   object StepButtonClasskey {
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def touchRipple: typings.materialUiCore.materialUiCoreStrings.touchRipple = "touchRipple".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.touchRipple]
+    inline def touchRipple: "touchRipple" = "touchRipple".asInstanceOf["touchRipple"]
     
-    inline def vertical: typings.materialUiCore.materialUiCoreStrings.vertical = "vertical".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.vertical]
+    inline def vertical: "vertical" = "vertical".asInstanceOf["vertical"]
   }
+  type StepButtonClasskey = "root" | "vertical" | "touchRipple"
   
   type StepButtonIcon = ReactNode
   
@@ -50,8 +44,8 @@ object stepButtonStepButtonMod extends Shortcut {
   
   type StepButtonTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[ClassKeyStepButtonClasskey[P, D]]
   
-  type _To = ExtendButtonBase[StepButtonTypeMap[js.Object, button]]
+  type _To = ExtendButtonBase[StepButtonTypeMap[js.Object, "button"]]
   
   /* This means you don't have to write `default`, but can instead just say `stepButtonStepButtonMod.foo` */
-  override def _to: ExtendButtonBase[StepButtonTypeMap[js.Object, button]] = default
+  override def _to: ExtendButtonBase[StepButtonTypeMap[js.Object, "button"]] = default
 }

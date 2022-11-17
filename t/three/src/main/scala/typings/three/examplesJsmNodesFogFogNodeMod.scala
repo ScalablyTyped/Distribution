@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object examplesJsmNodesFogFogNodeMod {
     
     var factorNode: typings.three.examplesJsmNodesCoreNodeMod.default = js.native
     
-    var isFogNode: `true` = js.native
+    var isFogNode: true = js.native
     
     def mix(outputNode: typings.three.examplesJsmNodesCoreNodeMod.default): typings.three.examplesJsmNodesCoreNodeMod.default = js.native
   }

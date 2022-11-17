@@ -50,17 +50,13 @@ object libMenuMenuContextMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.light
-    - typings.antd.antdStrings.dark
-  */
-  trait MenuTheme extends StObject
   object MenuTheme {
     
-    inline def dark: typings.antd.antdStrings.dark = "dark".asInstanceOf[typings.antd.antdStrings.dark]
+    inline def dark: "dark" = "dark".asInstanceOf["dark"]
     
-    inline def light: typings.antd.antdStrings.light = "light".asInstanceOf[typings.antd.antdStrings.light]
+    inline def light: "light" = "light".asInstanceOf["light"]
   }
+  type MenuTheme = "light" | "dark"
   
   type _To = Context[MenuContextProps]
   

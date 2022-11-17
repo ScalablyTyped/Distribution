@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.ClassKeyIconButtonClassKey
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
-import typings.materialUiCore.materialUiCoreStrings.button
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
@@ -27,47 +26,36 @@ object iconButtonIconButtonMod extends Shortcut {
     */
   @JSImport("@material-ui/core/IconButton/IconButton", JSImport.Default)
   @js.native
-  val default: ExtendButtonBase[IconButtonTypeMap[js.Object, button]] = js.native
+  val default: ExtendButtonBase[IconButtonTypeMap[js.Object, "button"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.edgeStart
-    - typings.materialUiCore.materialUiCoreStrings.edgeEnd
-    - typings.materialUiCore.materialUiCoreStrings.colorInherit
-    - typings.materialUiCore.materialUiCoreStrings.colorPrimary
-    - typings.materialUiCore.materialUiCoreStrings.colorSecondary
-    - typings.materialUiCore.materialUiCoreStrings.disabled
-    - typings.materialUiCore.materialUiCoreStrings.sizeSmall
-    - typings.materialUiCore.materialUiCoreStrings.label
-  */
-  trait IconButtonClassKey extends StObject
   object IconButtonClassKey {
     
-    inline def colorInherit: typings.materialUiCore.materialUiCoreStrings.colorInherit = "colorInherit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorInherit]
+    inline def colorInherit: "colorInherit" = "colorInherit".asInstanceOf["colorInherit"]
     
-    inline def colorPrimary: typings.materialUiCore.materialUiCoreStrings.colorPrimary = "colorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorPrimary]
+    inline def colorPrimary: "colorPrimary" = "colorPrimary".asInstanceOf["colorPrimary"]
     
-    inline def colorSecondary: typings.materialUiCore.materialUiCoreStrings.colorSecondary = "colorSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorSecondary]
+    inline def colorSecondary: "colorSecondary" = "colorSecondary".asInstanceOf["colorSecondary"]
     
-    inline def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
+    inline def disabled: "disabled" = "disabled".asInstanceOf["disabled"]
     
-    inline def edgeEnd: typings.materialUiCore.materialUiCoreStrings.edgeEnd = "edgeEnd".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.edgeEnd]
+    inline def edgeEnd: "edgeEnd" = "edgeEnd".asInstanceOf["edgeEnd"]
     
-    inline def edgeStart: typings.materialUiCore.materialUiCoreStrings.edgeStart = "edgeStart".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.edgeStart]
+    inline def edgeStart: "edgeStart" = "edgeStart".asInstanceOf["edgeStart"]
     
-    inline def label: typings.materialUiCore.materialUiCoreStrings.label = "label".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.label]
+    inline def label: "label" = "label".asInstanceOf["label"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def sizeSmall: typings.materialUiCore.materialUiCoreStrings.sizeSmall = "sizeSmall".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sizeSmall]
+    inline def sizeSmall: "sizeSmall" = "sizeSmall".asInstanceOf["sizeSmall"]
   }
+  type IconButtonClassKey = "root" | "edgeStart" | "edgeEnd" | "colorInherit" | "colorPrimary" | "colorSecondary" | "disabled" | "sizeSmall" | "label"
   
   type IconButtonProps[D /* <: ElementType[Any] */, P] = OverrideProps[IconButtonTypeMap[P, D], D]
   
   type IconButtonTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[ClassKeyIconButtonClassKey[P, D]]
   
-  type _To = ExtendButtonBase[IconButtonTypeMap[js.Object, button]]
+  type _To = ExtendButtonBase[IconButtonTypeMap[js.Object, "button"]]
   
   /* This means you don't have to write `default`, but can instead just say `iconButtonIconButtonMod.foo` */
-  override def _to: ExtendButtonBase[IconButtonTypeMap[js.Object, button]] = default
+  override def _to: ExtendButtonBase[IconButtonTypeMap[js.Object, "button"]] = default
 }

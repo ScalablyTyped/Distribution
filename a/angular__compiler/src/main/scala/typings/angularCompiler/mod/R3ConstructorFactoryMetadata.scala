@@ -1,6 +1,5 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.angularCompilerStrings.invalid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Metadata required by the factory generator to generate a `factory` function for a type.
   */
-trait R3ConstructorFactoryMetadata
-  extends StObject
-     with R3FactoryMetadata {
+trait R3ConstructorFactoryMetadata extends StObject {
   
   /**
     * Regardless of whether `fnOrClass` is a constructor function or a user-defined factory, it
@@ -20,7 +17,7 @@ trait R3ConstructorFactoryMetadata
     * then one or more of the parameters wasn't resolvable and any attempt to use these deps will
     * result in a runtime error.
     */
-  var deps: js.Array[R3DependencyMetadata] | invalid | Null
+  var deps: js.Array[R3DependencyMetadata] | "invalid" | Null
   
   /**
     * An expression representing the constructor type, intended for use within a class definition
@@ -65,7 +62,7 @@ object R3ConstructorFactoryMetadata {
   
   extension [Self <: R3ConstructorFactoryMetadata](x: Self) {
     
-    inline def setDeps(value: js.Array[R3DependencyMetadata] | invalid): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[R3DependencyMetadata] | "invalid"): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     inline def setDepsNull: Self = StObject.set(x, "deps", null)
     

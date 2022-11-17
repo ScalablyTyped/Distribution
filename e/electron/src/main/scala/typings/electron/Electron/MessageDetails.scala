@@ -1,18 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`console-api`
-import typings.electron.electronStrings.deprecation
-import typings.electron.electronStrings.intervention
-import typings.electron.electronStrings.javascript
-import typings.electron.electronStrings.network
-import typings.electron.electronStrings.other
-import typings.electron.electronStrings.recommendation
-import typings.electron.electronStrings.rendering
-import typings.electron.electronStrings.security
-import typings.electron.electronStrings.storage
-import typings.electron.electronStrings.violation
-import typings.electron.electronStrings.worker
-import typings.electron.electronStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +27,7 @@ trait MessageDetails extends StObject {
     * `console-api`, `storage`, `rendering`, `security`, `deprecation`, `worker`,
     * `violation`, `intervention`, `recommendation` or `other`.
     */
-  var source: javascript | xml | network | `console-api` | storage | rendering | security | deprecation | worker | violation | intervention | recommendation | other
+  var source: "javascript" | "xml" | "network" | "console-api" | "storage" | "rendering" | "security" | "deprecation" | "worker" | "violation" | "intervention" | "recommendation" | "other"
   
   /**
     * The URL the message came from
@@ -58,7 +45,7 @@ object MessageDetails {
     level: Double,
     lineNumber: Double,
     message: String,
-    source: javascript | xml | network | `console-api` | storage | rendering | security | deprecation | worker | violation | intervention | recommendation | other,
+    source: "javascript" | "xml" | "network" | "console-api" | "storage" | "rendering" | "security" | "deprecation" | "worker" | "violation" | "intervention" | "recommendation" | "other",
     sourceUrl: String,
     versionId: Double
   ): MessageDetails = {
@@ -75,7 +62,7 @@ object MessageDetails {
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setSource(
-      value: javascript | xml | network | `console-api` | storage | rendering | security | deprecation | worker | violation | intervention | recommendation | other
+      value: "javascript" | "xml" | "network" | "console-api" | "storage" | "rendering" | "security" | "deprecation" | "worker" | "violation" | "intervention" | "recommendation" | "other"
     ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])

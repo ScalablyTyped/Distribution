@@ -4,11 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageBitmap
-  extends StObject
-     with CanvasImageSource
-     with TexImageSource
-     with _Transferable {
+trait ImageBitmap extends StObject {
   
   /** Releases imageBitmap's underlying bitmap data. */
   /* standard dom */

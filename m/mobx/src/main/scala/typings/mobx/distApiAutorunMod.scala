@@ -16,7 +16,8 @@ object distApiAutorunMod {
   inline def autorun(view: js.Function1[/* r */ IReactionPublic, Any]): IReactionDisposer = ^.asInstanceOf[js.Dynamic].applyDynamic("autorun")(view.asInstanceOf[js.Any]).asInstanceOf[IReactionDisposer]
   inline def autorun(view: js.Function1[/* r */ IReactionPublic, Any], opts: IAutorunOptions): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("autorun")(view.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]
   
-  inline def reaction_true[T, FireImmediately /* <: Boolean */](
+  @scala.annotation.targetName("reaction_true")
+  inline def reaction[T, FireImmediately /* <: Boolean */](
     expression: js.Function1[/* r */ IReactionPublic, T],
     effect: js.Function3[
       /* arg */ T, 
@@ -25,7 +26,8 @@ object distApiAutorunMod {
       Unit
     ]
   ): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("reaction")(expression.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]
-  inline def reaction_true[T, FireImmediately /* <: Boolean */](
+  @scala.annotation.targetName("reaction_true")
+  inline def reaction[T, FireImmediately /* <: Boolean */](
     expression: js.Function1[/* r */ IReactionPublic, T],
     effect: js.Function3[
       /* arg */ T, 

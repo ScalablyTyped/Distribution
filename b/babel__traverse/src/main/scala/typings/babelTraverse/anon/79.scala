@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.BindExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `79` extends StObject {
   
-  var `type`: BindExpression
+  var `type`: "BindExpression"
 }
 object `79` {
   
@@ -19,6 +18,6 @@ object `79` {
   
   extension [Self <: `79`](x: Self) {
     
-    inline def setType(value: BindExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "BindExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

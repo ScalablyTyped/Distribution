@@ -1,6 +1,5 @@
 package typings.highlightJs.mod
 
-import typings.highlightJs.highlightJsStrings.self
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +20,7 @@ trait ModeDetails extends StObject {
   // deprecated in favor of `scope`
   var className: js.UndefOr[String] = js.undefined
   
-  var contains: js.UndefOr[js.Array[self | Mode]] = js.undefined
+  var contains: js.UndefOr[js.Array["self" | Mode]] = js.undefined
   
   var end: js.UndefOr[js.RegExp | String | (js.Array[js.RegExp | String])] = js.undefined
   
@@ -101,11 +100,11 @@ object ModeDetails {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setContains(value: js.Array[self | Mode]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+    inline def setContains(value: js.Array["self" | Mode]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
     inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
-    inline def setContainsVarargs(value: (self | Mode)*): Self = StObject.set(x, "contains", js.Array(value*))
+    inline def setContainsVarargs(value: ("self" | Mode)*): Self = StObject.set(x, "contains", js.Array(value*))
     
     inline def setEnd(value: js.RegExp | String | (js.Array[js.RegExp | String])): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

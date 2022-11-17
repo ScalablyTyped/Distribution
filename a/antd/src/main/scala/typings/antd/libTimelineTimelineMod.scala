@@ -1,9 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdStrings.alternate
-import typings.antd.antdStrings.left
-import typings.antd.antdStrings.right
 import typings.antd.libTimelineTimelineItemMod.TimelineItemProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
@@ -25,7 +22,7 @@ object libTimelineTimelineMod extends Shortcut {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[left | alternate | right] = js.undefined
+    var mode: js.UndefOr["left" | "alternate" | "right"] = js.undefined
     
     /** 指定最后一个幽灵节点是否存在或内容 */
     var pending: js.UndefOr[ReactNode] = js.undefined
@@ -55,7 +52,7 @@ object libTimelineTimelineMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setMode(value: left | alternate | right): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: "left" | "alternate" | "right"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       

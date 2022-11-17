@@ -2,8 +2,6 @@ package typings.yandexMaps.anon
 
 import typings.yandexMaps.mod.IClassConstructor
 import typings.yandexMaps.mod.ISelectableControlLayout
-import typings.yandexMaps.yandexMapsStrings.selectable
-import typings.yandexMaps.yandexMapsStrings.separator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +16,7 @@ trait Layout extends StObject {
   
   var separatorLayout: js.UndefOr[String | IClassConstructor[ISelectableControlLayout]] = js.undefined
   
-  var `type`: js.UndefOr[selectable | separator] = js.undefined
+  var `type`: js.UndefOr["selectable" | "separator"] = js.undefined
   
   var visible: js.UndefOr[Boolean] = js.undefined
 }
@@ -47,7 +45,7 @@ object Layout {
     
     inline def setSeparatorLayoutUndefined: Self = StObject.set(x, "separatorLayout", js.undefined)
     
-    inline def setType(value: selectable | separator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "selectable" | "separator"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

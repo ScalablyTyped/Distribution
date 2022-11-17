@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeReferenceNode
   extends StObject
-     with NodeWithTypeArguments
-     with TypeReferenceType {
+     with NodeWithTypeArguments {
   
   @JSName("kind")
   val kind_TypeReferenceNode: typings.typescript.mod.SyntaxKind.TypeReference = js.native

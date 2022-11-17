@@ -5,7 +5,6 @@ import typings.rcFieldForm.esInterfaceMod.Meta
 import typings.rcFieldForm.esInterfaceMod.NamePath
 import typings.rcFieldForm.esInterfaceMod.StoreValue
 import typings.rcFieldForm.esInterfaceMod.ValidatorRule
-import typings.rcFieldForm.rcFieldFormBooleans.`false`
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
@@ -75,7 +74,7 @@ object esListMod extends Shortcut {
     
     var rules: js.UndefOr[js.Array[ValidatorRule]] = js.undefined
     
-    var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
+    var validateTrigger: js.UndefOr[String | js.Array[String] | false] = js.undefined
   }
   object ListProps {
     
@@ -108,7 +107,7 @@ object esListMod extends Shortcut {
       
       inline def setRulesVarargs(value: ValidatorRule*): Self = StObject.set(x, "rules", js.Array(value*))
       
-      inline def setValidateTrigger(value: String | js.Array[String] | `false`): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
+      inline def setValidateTrigger(value: String | js.Array[String] | false): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
       
       inline def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
       

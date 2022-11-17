@@ -34,7 +34,6 @@ import typings.std.Pick
 import typings.std.anon.LocaleMatcher
 import typings.std.anon.TypeValue
 import typings.std.anon.`1`
-import typings.std.stdStrings.localeMatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -209,6 +208,8 @@ object Intl {
     val ^ : js.Any = js.native
     
     inline def supportedLocalesOf(locales: js.Array[BCP47LanguageTag]): js.Array[BCP47LanguageTag] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[BCP47LanguageTag]]
+    @scala.annotation.targetName("supportedLocalesOf_localeMatcher")
+    inline def supportedLocalesOf(locales: js.Array[BCP47LanguageTag], options: Pick[ListFormatOptions, "localeMatcher"]): js.Array[BCP47LanguageTag] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[BCP47LanguageTag]]
     /**
       * Returns an array containing those of the provided locales that are
       * supported in list formatting without having to fall back to the runtime's default locale.
@@ -227,9 +228,8 @@ object Intl {
       */
     /* standard es2021.intl */
     inline def supportedLocalesOf(locales: BCP47LanguageTag): js.Array[BCP47LanguageTag] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[BCP47LanguageTag]]
-    
-    inline def supportedLocalesOf_localeMatcher(locales: js.Array[BCP47LanguageTag], options: Pick[ListFormatOptions, localeMatcher]): js.Array[BCP47LanguageTag] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[BCP47LanguageTag]]
-    inline def supportedLocalesOf_localeMatcher(locales: BCP47LanguageTag, options: Pick[ListFormatOptions, localeMatcher]): js.Array[BCP47LanguageTag] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[BCP47LanguageTag]]
+    @scala.annotation.targetName("supportedLocalesOf_localeMatcher")
+    inline def supportedLocalesOf(locales: BCP47LanguageTag, options: Pick[ListFormatOptions, "localeMatcher"]): js.Array[BCP47LanguageTag] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[BCP47LanguageTag]]
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -530,6 +530,8 @@ object Intl {
     val ^ : js.Any = js.native
     
     inline def supportedLocalesOf(locales: js.Array[BCP47LanguageTag]): js.Array[BCP47LanguageTag] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[BCP47LanguageTag]]
+    @scala.annotation.targetName("supportedLocalesOf_localeMatcher")
+    inline def supportedLocalesOf(locales: js.Array[BCP47LanguageTag], options: Pick[SegmenterOptions, "localeMatcher"]): js.Array[BCP47LanguageTag] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[BCP47LanguageTag]]
     /**
       * Returns an array containing those of the provided locales that are supported without having to fall back to the runtime's default locale.
       *
@@ -544,9 +546,8 @@ object Intl {
       */
     /* standard es2022.intl */
     inline def supportedLocalesOf(locales: BCP47LanguageTag): js.Array[BCP47LanguageTag] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[BCP47LanguageTag]]
-    
-    inline def supportedLocalesOf_localeMatcher(locales: js.Array[BCP47LanguageTag], options: Pick[SegmenterOptions, localeMatcher]): js.Array[BCP47LanguageTag] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[BCP47LanguageTag]]
-    inline def supportedLocalesOf_localeMatcher(locales: BCP47LanguageTag, options: Pick[SegmenterOptions, localeMatcher]): js.Array[BCP47LanguageTag] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[BCP47LanguageTag]]
+    @scala.annotation.targetName("supportedLocalesOf_localeMatcher")
+    inline def supportedLocalesOf(locales: BCP47LanguageTag, options: Pick[SegmenterOptions, "localeMatcher"]): js.Array[BCP47LanguageTag] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[BCP47LanguageTag]]
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */

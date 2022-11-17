@@ -13,10 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FunctionDeclaration
   extends StObject
      with FunctionLikeDeclarationBase
-     with FunctionLikeDeclaration
-     with HasJSDoc
-     with HasModifiers
-     with SignatureDeclaration
      with Statement {
   
   @JSName("body")

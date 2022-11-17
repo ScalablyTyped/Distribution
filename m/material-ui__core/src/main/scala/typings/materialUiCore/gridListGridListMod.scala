@@ -2,8 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.CellHeight
-import typings.materialUiCore.materialUiCoreStrings.root
-import typings.materialUiCore.materialUiCoreStrings.ul
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -24,9 +22,9 @@ object gridListGridListMod extends Shortcut {
     */
   @JSImport("@material-ui/core/GridList/GridList", JSImport.Default)
   @js.native
-  val default: OverridableComponent[GridListTypeMap[js.Object, ul]] = js.native
+  val default: OverridableComponent[GridListTypeMap[js.Object, "ul"]] = js.native
   
-  type GridListClassKey = root
+  type GridListClassKey = "root"
   
   type GridListProps[D /* <: ElementType[Any] */, P] = OverrideProps[GridListTypeMap[P, D], D]
   
@@ -55,8 +53,8 @@ object gridListGridListMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[GridListTypeMap[js.Object, ul]]
+  type _To = OverridableComponent[GridListTypeMap[js.Object, "ul"]]
   
   /* This means you don't have to write `default`, but can instead just say `gridListGridListMod.foo` */
-  override def _to: OverridableComponent[GridListTypeMap[js.Object, ul]] = default
+  override def _to: OverridableComponent[GridListTypeMap[js.Object, "ul"]] = default
 }

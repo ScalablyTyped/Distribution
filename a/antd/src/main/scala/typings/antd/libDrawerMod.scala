@@ -136,9 +136,5 @@ object libDrawerMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.default
-    - typings.antd.antdStrings.large
-  */
-  trait sizeType extends StObject
+  type sizeType = "default" | "large"
 }

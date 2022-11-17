@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.antd.anon.Checked
 import typings.antd.anon.ShowLeafIcon
-import typings.antd.antdBooleans.`false`
-import typings.antd.antdStrings.check
-import typings.antd.antdStrings.select_
 import typings.rcTree.anon.Direction
 import typings.rcTree.anon.DragNode
 import typings.rcTree.anon.Event
@@ -89,7 +86,7 @@ object libTreeTreeMod extends Shortcut {
     
     var checkedNodes: js.UndefOr[js.Array[AntTreeNode]] = js.undefined
     
-    var event: check
+    var event: "check"
   }
   object AntTreeNodeCheckedEvent {
     
@@ -110,7 +107,7 @@ object libTreeTreeMod extends Shortcut {
       
       inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      inline def setEvent(value: check): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: "check"): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
   }
   
@@ -335,7 +332,7 @@ object libTreeTreeMod extends Shortcut {
     extends StObject
        with AntTreeNodeBaseEvent {
     
-    var event: select_
+    var event: "select"
     
     var selected: js.UndefOr[Boolean] = js.undefined
     
@@ -350,7 +347,7 @@ object libTreeTreeMod extends Shortcut {
     
     extension [Self <: AntTreeNodeSelectedEvent](x: Self) {
       
-      inline def setEvent(value: select_): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: "select"): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
@@ -467,7 +464,7 @@ object libTreeTreeMod extends Shortcut {
   
   trait DraggableConfig extends StObject {
     
-    var icon: js.UndefOr[ReactNode | `false`] = js.undefined
+    var icon: js.UndefOr[ReactNode | false] = js.undefined
     
     var nodeDraggable: js.UndefOr[DraggableFn] = js.undefined
   }
@@ -480,7 +477,7 @@ object libTreeTreeMod extends Shortcut {
     
     extension [Self <: DraggableConfig](x: Self) {
       
-      inline def setIcon(value: ReactNode | `false`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode | false): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       

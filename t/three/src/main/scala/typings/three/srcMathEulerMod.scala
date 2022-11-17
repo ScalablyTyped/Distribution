@@ -4,8 +4,6 @@ import typings.std.Generator
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathQuaternionMod.Quaternion
 import typings.three.srcMathVector3Mod.Vector3
-import typings.three.threeBooleans.`true`
-import typings.three.threeStrings.XYZ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +39,7 @@ object srcMathEulerMod {
     
     def fromArray(xyzo: Array[js.UndefOr[Double | EulerOrder | Any]]): Euler = js.native
     
-    val isEuler: `true` = js.native
+    val isEuler: true = js.native
     
     @JSName(js.Symbol.iterator)
     var iterator: js.Function0[Generator[String | Double, Unit, Any]] = js.native
@@ -98,8 +96,8 @@ object srcMathEulerMod {
     
     @JSImport("three/src/math/Euler", "Euler.DefaultOrder")
     @js.native
-    def DefaultOrder: XYZ = js.native
-    inline def DefaultOrder_=(x: XYZ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOrder")(x.asInstanceOf[js.Any])
+    def DefaultOrder: "XYZ" = js.native
+    inline def DefaultOrder_=(x: "XYZ"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOrder")(x.asInstanceOf[js.Any])
     
     @JSImport("three/src/math/Euler", "Euler.RotationOrders")
     @js.native
@@ -107,27 +105,19 @@ object srcMathEulerMod {
     inline def RotationOrders_=(x: js.Array[EulerOrder]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RotationOrders")(x.asInstanceOf[js.Any])
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.three.threeStrings.XYZ
-    - typings.three.threeStrings.YXZ
-    - typings.three.threeStrings.ZXY
-    - typings.three.threeStrings.ZYX
-    - typings.three.threeStrings.YZX
-    - typings.three.threeStrings.XZY
-  */
-  trait EulerOrder extends StObject
   object EulerOrder {
     
-    inline def XYZ: typings.three.threeStrings.XYZ = "XYZ".asInstanceOf[typings.three.threeStrings.XYZ]
+    inline def XYZ: "XYZ" = "XYZ".asInstanceOf["XYZ"]
     
-    inline def XZY: typings.three.threeStrings.XZY = "XZY".asInstanceOf[typings.three.threeStrings.XZY]
+    inline def XZY: "XZY" = "XZY".asInstanceOf["XZY"]
     
-    inline def YXZ: typings.three.threeStrings.YXZ = "YXZ".asInstanceOf[typings.three.threeStrings.YXZ]
+    inline def YXZ: "YXZ" = "YXZ".asInstanceOf["YXZ"]
     
-    inline def YZX: typings.three.threeStrings.YZX = "YZX".asInstanceOf[typings.three.threeStrings.YZX]
+    inline def YZX: "YZX" = "YZX".asInstanceOf["YZX"]
     
-    inline def ZXY: typings.three.threeStrings.ZXY = "ZXY".asInstanceOf[typings.three.threeStrings.ZXY]
+    inline def ZXY: "ZXY" = "ZXY".asInstanceOf["ZXY"]
     
-    inline def ZYX: typings.three.threeStrings.ZYX = "ZYX".asInstanceOf[typings.three.threeStrings.ZYX]
+    inline def ZYX: "ZYX" = "ZYX".asInstanceOf["ZYX"]
   }
+  type EulerOrder = "XYZ" | "YXZ" | "ZXY" | "ZYX" | "YZX" | "XZY"
 }

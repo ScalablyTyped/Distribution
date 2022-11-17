@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Arialabelledby
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseTypeMap
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
-import typings.materialUiCore.materialUiCoreStrings.button
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -26,7 +25,7 @@ object tabsTabsMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Tabs/Tabs", JSImport.Default)
   @js.native
-  val default: OverridableComponent[TabsTypeMap[js.Object, ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]]]] = js.native
+  val default: OverridableComponent[TabsTypeMap[js.Object, ExtendButtonBase[ButtonBaseTypeMap[js.Object, "button"]]]] = js.native
   
   trait TabsActions extends StObject {
     
@@ -49,38 +48,27 @@ object tabsTabsMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.flexContainer
-    - typings.materialUiCore.materialUiCoreStrings.scroller
-    - typings.materialUiCore.materialUiCoreStrings.fixed
-    - typings.materialUiCore.materialUiCoreStrings.scrollable
-    - typings.materialUiCore.materialUiCoreStrings.centered
-    - typings.materialUiCore.materialUiCoreStrings.scrollButtons
-    - typings.materialUiCore.materialUiCoreStrings.scrollButtonsDesktop
-    - typings.materialUiCore.materialUiCoreStrings.indicator
-  */
-  trait TabsClassKey extends StObject
   object TabsClassKey {
     
-    inline def centered: typings.materialUiCore.materialUiCoreStrings.centered = "centered".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.centered]
+    inline def centered: "centered" = "centered".asInstanceOf["centered"]
     
-    inline def fixed: typings.materialUiCore.materialUiCoreStrings.fixed = "fixed".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.fixed]
+    inline def fixed: "fixed" = "fixed".asInstanceOf["fixed"]
     
-    inline def flexContainer: typings.materialUiCore.materialUiCoreStrings.flexContainer = "flexContainer".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.flexContainer]
+    inline def flexContainer: "flexContainer" = "flexContainer".asInstanceOf["flexContainer"]
     
-    inline def indicator: typings.materialUiCore.materialUiCoreStrings.indicator = "indicator".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.indicator]
+    inline def indicator: "indicator" = "indicator".asInstanceOf["indicator"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def scrollButtons: typings.materialUiCore.materialUiCoreStrings.scrollButtons = "scrollButtons".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.scrollButtons]
+    inline def scrollButtons: "scrollButtons" = "scrollButtons".asInstanceOf["scrollButtons"]
     
-    inline def scrollButtonsDesktop: typings.materialUiCore.materialUiCoreStrings.scrollButtonsDesktop = "scrollButtonsDesktop".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.scrollButtonsDesktop]
+    inline def scrollButtonsDesktop: "scrollButtonsDesktop" = "scrollButtonsDesktop".asInstanceOf["scrollButtonsDesktop"]
     
-    inline def scrollable: typings.materialUiCore.materialUiCoreStrings.scrollable = "scrollable".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.scrollable]
+    inline def scrollable: "scrollable" = "scrollable".asInstanceOf["scrollable"]
     
-    inline def scroller: typings.materialUiCore.materialUiCoreStrings.scroller = "scroller".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.scroller]
+    inline def scroller: "scroller" = "scroller".asInstanceOf["scroller"]
   }
+  type TabsClassKey = "root" | "flexContainer" | "scroller" | "fixed" | "scrollable" | "centered" | "scrollButtons" | "scrollButtonsDesktop" | "indicator"
   
   type TabsProps[D /* <: ElementType[Any] */, P] = OverrideProps[TabsTypeMap[P, D], D]
   
@@ -109,8 +97,8 @@ object tabsTabsMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[TabsTypeMap[js.Object, ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]]]]
+  type _To = OverridableComponent[TabsTypeMap[js.Object, ExtendButtonBase[ButtonBaseTypeMap[js.Object, "button"]]]]
   
   /* This means you don't have to write `default`, but can instead just say `tabsTabsMod.foo` */
-  override def _to: OverridableComponent[TabsTypeMap[js.Object, ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]]]] = default
+  override def _to: OverridableComponent[TabsTypeMap[js.Object, ExtendButtonBase[ButtonBaseTypeMap[js.Object, "button"]]]] = default
 }

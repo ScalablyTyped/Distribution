@@ -1,6 +1,5 @@
 package typings.node.dnsMod
 
-import typings.node.nodeBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait LookupOneOptions
      with LookupOptions {
   
   @JSName("all")
-  var all_LookupOneOptions: js.UndefOr[`false`] = js.undefined
+  var all_LookupOneOptions: js.UndefOr[false] = js.undefined
 }
 object LookupOneOptions {
   
@@ -21,7 +20,7 @@ object LookupOneOptions {
   
   extension [Self <: LookupOneOptions](x: Self) {
     
-    inline def setAll(value: `false`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: false): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
   }

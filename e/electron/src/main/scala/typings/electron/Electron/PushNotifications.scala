@@ -1,6 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`received-apns-notification`
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -13,8 +12,9 @@ trait PushNotifications
      with EventEmitter {
   
   @JSName("addListener")
-  def addListener_receivedapnsnotification(
-    event: `received-apns-notification`,
+  @scala.annotation.targetName("addListener_receivedapnsnotification")
+  def addListener(
+    event: "received-apns-notification",
     listener: js.Function1[/* userInfo */ Record[String, Any], Unit]
   ): this.type = js.native
   
@@ -50,14 +50,16 @@ trait PushNotifications
     * @platform darwin
     */
   @JSName("on")
-  def on_receivedapnsnotification(
-    event: `received-apns-notification`,
+  @scala.annotation.targetName("on_receivedapnsnotification")
+  def on(
+    event: "received-apns-notification",
     listener: js.Function1[/* userInfo */ Record[String, Any], Unit]
   ): this.type = js.native
   
   @JSName("once")
-  def once_receivedapnsnotification(
-    event: `received-apns-notification`,
+  @scala.annotation.targetName("once_receivedapnsnotification")
+  def once(
+    event: "received-apns-notification",
     listener: js.Function1[/* userInfo */ Record[String, Any], Unit]
   ): this.type = js.native
   
@@ -110,8 +112,9 @@ trait PushNotifications
   def registerForAPNSNotifications(): js.Promise[String] = js.native
   
   @JSName("removeListener")
-  def removeListener_receivedapnsnotification(
-    event: `received-apns-notification`,
+  @scala.annotation.targetName("removeListener_receivedapnsnotification")
+  def removeListener(
+    event: "received-apns-notification",
     listener: js.Function1[/* userInfo */ Record[String, Any], Unit]
   ): this.type = js.native
   

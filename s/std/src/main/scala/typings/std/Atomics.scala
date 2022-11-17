@@ -2,9 +2,6 @@ package typings.std
 
 import typings.std.anon.Async
 import typings.std.anon.Value
-import typings.std.stdStrings.`not-equal`
-import typings.std.stdStrings.`timed-out`
-import typings.std.stdStrings.ok
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -237,7 +234,7 @@ trait Atomics extends StObject {
   
   /* standard es2017.sharedmemory */
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: typings.std.stdStrings.Atomics = js.native
+  val toStringTag: "Atomics" = js.native
   
   /**
     * If the value at the given position in the array is equal to the provided value, the current
@@ -246,8 +243,8 @@ trait Atomics extends StObject {
     * `"not-equal"`.
     */
   /* standard es2017.sharedmemory */
-  def wait(typedArray: js.typedarray.Int32Array, index: Double, value: Double): ok | `not-equal` | `timed-out` = js.native
-  def wait(typedArray: js.typedarray.Int32Array, index: Double, value: Double, timeout: Double): ok | `not-equal` | `timed-out` = js.native
+  def wait(typedArray: js.typedarray.Int32Array, index: Double, value: Double): "ok" | "not-equal" | "timed-out" = js.native
+  def wait(typedArray: js.typedarray.Int32Array, index: Double, value: Double, timeout: Double): "ok" | "not-equal" | "timed-out" = js.native
   /**
     * If the value at the given position in the array is equal to the provided value, the current
     * agent is put to sleep causing execution to suspend until the timeout expires (returning
@@ -255,8 +252,8 @@ trait Atomics extends StObject {
     * `"not-equal"`.
     */
   /* standard es2020.sharedmemory */
-  def wait(typedArray: BigInt64Array, index: Double, value: js.BigInt): ok | `not-equal` | `timed-out` = js.native
-  def wait(typedArray: BigInt64Array, index: Double, value: js.BigInt, timeout: Double): ok | `not-equal` | `timed-out` = js.native
+  def wait(typedArray: BigInt64Array, index: Double, value: js.BigInt): "ok" | "not-equal" | "timed-out" = js.native
+  def wait(typedArray: BigInt64Array, index: Double, value: js.BigInt, timeout: Double): "ok" | "not-equal" | "timed-out" = js.native
   
   def waitAsync(typedArray: js.typedarray.Int32Array, index: Double, value: js.BigInt): Async | Value = js.native
   def waitAsync(typedArray: js.typedarray.Int32Array, index: Double, value: js.BigInt, timeout: Double): Async | Value = js.native

@@ -1,8 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliStrings.error
-import typings.angularCompilerCli.angularCompilerCliStrings.ignore
-import typings.angularCompilerCli.angularCompilerCliStrings.warn
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.ReadonlyFileSystem
 import typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.Logger
 import org.scalablytyped.runtime.StObject
@@ -28,7 +25,7 @@ object linkerBabelSrcLinkerPluginOptionsMod {
     
     var sourceMapping: js.UndefOr[Boolean] = js.undefined
     
-    var unknownDeclarationVersionHandling: js.UndefOr[ignore | warn | error] = js.undefined
+    var unknownDeclarationVersionHandling: js.UndefOr["ignore" | "warn" | "error"] = js.undefined
   }
   object LinkerPluginOptions {
     
@@ -51,7 +48,7 @@ object linkerBabelSrcLinkerPluginOptionsMod {
       
       inline def setSourceMappingUndefined: Self = StObject.set(x, "sourceMapping", js.undefined)
       
-      inline def setUnknownDeclarationVersionHandling(value: ignore | warn | error): Self = StObject.set(x, "unknownDeclarationVersionHandling", value.asInstanceOf[js.Any])
+      inline def setUnknownDeclarationVersionHandling(value: "ignore" | "warn" | "error"): Self = StObject.set(x, "unknownDeclarationVersionHandling", value.asInstanceOf[js.Any])
       
       inline def setUnknownDeclarationVersionHandlingUndefined: Self = StObject.set(x, "unknownDeclarationVersionHandling", js.undefined)
     }

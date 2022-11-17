@@ -1,7 +1,5 @@
 package typings.materialUi.MaterialUI
 
-import typings.materialUi.materialUiStrings.determinate
-import typings.materialUi.materialUiStrings.indeterminate
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +13,7 @@ trait LinearProgressProps extends StObject {
   
   var min: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[determinate | indeterminate] = js.undefined
+  var mode: js.UndefOr["determinate" | "indeterminate"] = js.undefined
   
   var style: js.UndefOr[CSSProperties] = js.undefined
   
@@ -42,7 +40,7 @@ object LinearProgressProps {
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setMode(value: determinate | indeterminate): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: "determinate" | "indeterminate"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     

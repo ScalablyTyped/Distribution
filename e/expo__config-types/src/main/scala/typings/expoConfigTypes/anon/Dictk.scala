@@ -1,9 +1,6 @@
 package typings.expoConfigTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.expoConfigTypes.expoConfigTypesStrings.contain
-import typings.expoConfigTypes.expoConfigTypesStrings.cover
-import typings.expoConfigTypes.expoConfigTypesStrings.native
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +36,7 @@ trait Dictk
   /**
     * Determines how the `image` will be displayed in the splash loading screen. Must be one of `cover`, `contain` or `native`, defaults to `contain`.
     */
-  var resizeMode: js.UndefOr[cover | contain | native] = js.undefined
+  var resizeMode: js.UndefOr["cover" | "contain" | "native"] = js.undefined
   
   /**
     * Local path or remote URL to an image to fill the background of the loading screen in "native" mode. Image size and aspect ratio are up to you. [Learn more]( https://developer.android.com/training/multiscreen/screendensities)
@@ -87,7 +84,7 @@ object Dictk {
     
     inline def setMdpiUndefined: Self = StObject.set(x, "mdpi", js.undefined)
     
-    inline def setResizeMode(value: cover | contain | native): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
+    inline def setResizeMode(value: "cover" | "contain" | "native"): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
     
     inline def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
     

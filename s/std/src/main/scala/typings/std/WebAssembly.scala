@@ -8,19 +8,11 @@ object WebAssembly {
   
   type CompileError = js.Error
   
-  /* Rewritten from type alias, can be one of: 
-    - js.Function
-    - typings.std.WebAssembly.Global
-    - typings.std.WebAssembly.Memory
-    - typings.std.WebAssembly.Table
-  */
-  type ExportValue = _ExportValue | js.Function
+  type ExportValue = js.Function | Global | Memory | Table
   
   type Exports = Record[java.lang.String, ExportValue]
   
-  trait Global
-    extends StObject
-       with _ExportValue {
+  trait Global extends StObject {
     
     /* standard dom */
     var value: Any
@@ -63,23 +55,17 @@ object WebAssembly {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.std.stdStrings.function
-    - typings.std.stdStrings.global
-    - typings.std.stdStrings.memory
-    - typings.std.stdStrings.table
-  */
-  trait ImportExportKind extends StObject
   object ImportExportKind {
     
-    inline def function: typings.std.stdStrings.function = "function".asInstanceOf[typings.std.stdStrings.function]
+    inline def function: "function" = "function".asInstanceOf["function"]
     
-    inline def global: typings.std.stdStrings.global = "global".asInstanceOf[typings.std.stdStrings.global]
+    inline def global: "global" = "global".asInstanceOf["global"]
     
-    inline def memory: typings.std.stdStrings.memory = "memory".asInstanceOf[typings.std.stdStrings.memory]
+    inline def memory: "memory" = "memory".asInstanceOf["memory"]
     
-    inline def table: typings.std.stdStrings.table = "table".asInstanceOf[typings.std.stdStrings.table]
+    inline def table: "table" = "table".asInstanceOf["table"]
   }
+  type ImportExportKind = "function" | "global" | "memory" | "table"
   
   type ImportValue = ExportValue | Double
   
@@ -105,9 +91,7 @@ object WebAssembly {
   
   type LinkError = js.Error
   
-  trait Memory
-    extends StObject
-       with _ExportValue {
+  trait Memory extends StObject {
     
     /* standard dom */
     val buffer: js.typedarray.ArrayBuffer
@@ -220,9 +204,7 @@ object WebAssembly {
   type RuntimeError = js.Error
   
   @js.native
-  trait Table
-    extends StObject
-       with _ExportValue {
+  trait Table extends StObject {
     
     /* standard dom */
     def get(index: Double): Any = js.native
@@ -269,44 +251,31 @@ object WebAssembly {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.std.stdStrings.anyfunc
-    - typings.std.stdStrings.externref
-  */
-  trait TableKind extends StObject
   object TableKind {
     
-    inline def anyfunc: typings.std.stdStrings.anyfunc = "anyfunc".asInstanceOf[typings.std.stdStrings.anyfunc]
+    inline def anyfunc: "anyfunc" = "anyfunc".asInstanceOf["anyfunc"]
     
-    inline def externref: typings.std.stdStrings.externref = "externref".asInstanceOf[typings.std.stdStrings.externref]
+    inline def externref: "externref" = "externref".asInstanceOf["externref"]
   }
+  type TableKind = "anyfunc" | "externref"
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.std.stdStrings.anyfunc
-    - typings.std.stdStrings.externref
-    - typings.std.stdStrings.f32
-    - typings.std.stdStrings.f64
-    - typings.std.stdStrings.i32
-    - typings.std.stdStrings.i64
-    - typings.std.stdStrings.v128
-  */
-  trait ValueType extends StObject
   object ValueType {
     
-    inline def anyfunc: typings.std.stdStrings.anyfunc = "anyfunc".asInstanceOf[typings.std.stdStrings.anyfunc]
+    inline def anyfunc: "anyfunc" = "anyfunc".asInstanceOf["anyfunc"]
     
-    inline def externref: typings.std.stdStrings.externref = "externref".asInstanceOf[typings.std.stdStrings.externref]
+    inline def externref: "externref" = "externref".asInstanceOf["externref"]
     
-    inline def f32: typings.std.stdStrings.f32 = "f32".asInstanceOf[typings.std.stdStrings.f32]
+    inline def f32: "f32" = "f32".asInstanceOf["f32"]
     
-    inline def f64: typings.std.stdStrings.f64 = "f64".asInstanceOf[typings.std.stdStrings.f64]
+    inline def f64: "f64" = "f64".asInstanceOf["f64"]
     
-    inline def i32: typings.std.stdStrings.i32 = "i32".asInstanceOf[typings.std.stdStrings.i32]
+    inline def i32: "i32" = "i32".asInstanceOf["i32"]
     
-    inline def i64: typings.std.stdStrings.i64 = "i64".asInstanceOf[typings.std.stdStrings.i64]
+    inline def i64: "i64" = "i64".asInstanceOf["i64"]
     
-    inline def v128: typings.std.stdStrings.v128 = "v128".asInstanceOf[typings.std.stdStrings.v128]
+    inline def v128: "v128" = "v128".asInstanceOf["v128"]
   }
+  type ValueType = "anyfunc" | "externref" | "f32" | "f64" | "i32" | "i64" | "v128"
   
   trait WebAssemblyInstantiatedSource extends StObject {
     
@@ -330,6 +299,4 @@ object WebAssembly {
       inline def setModule(value: Module): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     }
   }
-  
-  trait _ExportValue extends StObject
 }

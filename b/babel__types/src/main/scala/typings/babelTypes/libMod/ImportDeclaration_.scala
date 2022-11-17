@@ -1,25 +1,16 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ImportDeclaration
-import typings.babelTypes.babelTypesStrings.`type`
-import typings.babelTypes.babelTypesStrings.typeof
-import typings.babelTypes.babelTypesStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ImportDeclaration_
   extends StObject
-     with BaseNode
-     with Declaration
-     with ModuleDeclaration
-     with Node
-     with Standardized
-     with Statement {
+     with BaseNode {
   
   var assertions: js.UndefOr[js.Array[ImportAttribute_] | Null] = js.undefined
   
-  var importKind: js.UndefOr[`type` | typeof | value | Null] = js.undefined
+  var importKind: js.UndefOr["type" | "typeof" | "value" | Null] = js.undefined
   
   var module: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -28,7 +19,7 @@ trait ImportDeclaration_
   var specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_]
   
   @JSName("type")
-  var type_ImportDeclaration_ : ImportDeclaration
+  var type_ImportDeclaration_ : "ImportDeclaration"
 }
 object ImportDeclaration_ {
   
@@ -51,7 +42,7 @@ object ImportDeclaration_ {
     
     inline def setAssertionsVarargs(value: ImportAttribute_ *): Self = StObject.set(x, "assertions", js.Array(value*))
     
-    inline def setImportKind(value: `type` | typeof | value): Self = StObject.set(x, "importKind", value.asInstanceOf[js.Any])
+    inline def setImportKind(value: "type" | "typeof" | "value"): Self = StObject.set(x, "importKind", value.asInstanceOf[js.Any])
     
     inline def setImportKindNull: Self = StObject.set(x, "importKind", null)
     
@@ -69,6 +60,6 @@ object ImportDeclaration_ {
     
     inline def setSpecifiersVarargs(value: (ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_)*): Self = StObject.set(x, "specifiers", js.Array(value*))
     
-    inline def setType(value: ImportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ImportDeclaration"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

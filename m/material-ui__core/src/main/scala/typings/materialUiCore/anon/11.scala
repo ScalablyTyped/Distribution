@@ -1,13 +1,12 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.span
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `11` extends StObject {
   
-  var component: js.UndefOr[span] = js.undefined
+  var component: js.UndefOr["span"] = js.undefined
 }
 object `11` {
   
@@ -18,7 +17,7 @@ object `11` {
   
   extension [Self <: `11`](x: Self) {
     
-    inline def setComponent(value: span): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: "span"): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
   }

@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSSymbolKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `127` extends StObject {
   
-  var `type`: TSSymbolKeyword
+  var `type`: "TSSymbolKeyword"
 }
 object `127` {
   
@@ -19,6 +18,6 @@ object `127` {
   
   extension [Self <: `127`](x: Self) {
     
-    inline def setType(value: TSSymbolKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSSymbolKeyword"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

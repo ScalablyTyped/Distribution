@@ -1,6 +1,5 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashURI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait NavigationUriAction
   extends StObject
      with NavigationUriActionPayload {
   
-  var `type`: NavigationSlashURI
+  var `type`: "Navigation/URI"
 }
 object NavigationUriAction {
   
@@ -21,6 +20,6 @@ object NavigationUriAction {
   
   extension [Self <: NavigationUriAction](x: Self) {
     
-    inline def setType(value: NavigationSlashURI): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Navigation/URI"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

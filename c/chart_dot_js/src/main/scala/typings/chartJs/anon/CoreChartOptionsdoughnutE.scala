@@ -1,39 +1,31 @@
 package typings.chartJs.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.chartJsBooleans.`false`
-import typings.chartJs.chartJsStrings.category
-import typings.chartJs.chartJsStrings.doughnut
-import typings.chartJs.chartJsStrings.linear
-import typings.chartJs.chartJsStrings.logarithmic
-import typings.chartJs.chartJsStrings.time
-import typings.chartJs.chartJsStrings.timeseries
-import typings.chartJs.chartJsStrings.x
-import typings.chartJs.chartJsStrings.y
-import typings.chartJs.mod.ActiveElement
-import typings.chartJs.mod.AnimationsSpec
-import typings.chartJs.mod.ChartEvent
-import typings.chartJs.mod.ChartType
-import typings.chartJs.mod.CoreInteractionOptions
-import typings.chartJs.mod.DoughnutAnimationOptions
-import typings.chartJs.mod.ElementOptionsByType
-import typings.chartJs.mod.PluginOptionsByType
-import typings.chartJs.mod.ScaleOptionsByType
-import typings.chartJs.mod.Scriptable
-import typings.chartJs.mod.ScriptableContext
-import typings.chartJs.mod.TransitionsSpec
-import typings.chartJs.typesBasicMod.AnyObject
-import typings.chartJs.typesGeometricMod.ChartArea
+import typings.chartJs.distChunksHelpersDotcoreMod.ActiveElement
+import typings.chartJs.distChunksHelpersDotcoreMod.AnimationsSpec
+import typings.chartJs.distChunksHelpersDotcoreMod.AnyObject
+import typings.chartJs.distChunksHelpersDotcoreMod.Chart4
+import typings.chartJs.distChunksHelpersDotcoreMod.ChartArea
+import typings.chartJs.distChunksHelpersDotcoreMod.ChartEvent1
+import typings.chartJs.distChunksHelpersDotcoreMod.ChartType
+import typings.chartJs.distChunksHelpersDotcoreMod.CoreInteractionOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.DoughnutAnimationOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.ElementOptionsByType
+import typings.chartJs.distChunksHelpersDotcoreMod.PluginOptionsByType
+import typings.chartJs.distChunksHelpersDotcoreMod.ScaleOptionsByType
+import typings.chartJs.distChunksHelpersDotcoreMod.Scriptable
+import typings.chartJs.distChunksHelpersDotcoreMod.ScriptableContext
+import typings.chartJs.distChunksHelpersDotcoreMod.TransitionsSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined chart.js.chart.js.CoreChartOptions<'doughnut'> & chart.js.chart.js.ElementChartOptions<'doughnut'> & chart.js.chart.js.PluginChartOptions<'doughnut'> & chart.js.chart.js.DatasetChartOptions<chart.js.chart.js.ChartType> & chart.js.chart.js.ScaleChartOptions<'doughnut'> & chart.js.chart.js.DoughnutControllerChartOptions */
+/* Inlined chart.js.chart.js/dist/chunks/helpers.core.CoreChartOptions<'doughnut'> & chart.js.chart.js/dist/chunks/helpers.core.ElementChartOptions<'doughnut'> & chart.js.chart.js/dist/chunks/helpers.core.PluginChartOptions<'doughnut'> & chart.js.chart.js/dist/chunks/helpers.core.DatasetChartOptions<chart.js.chart.js/dist/chunks/helpers.core.ChartType> & chart.js.chart.js/dist/chunks/helpers.core.ScaleChartOptions<'doughnut'> & chart.js.chart.js/dist/chunks/helpers.core.DoughnutControllerChartOptions */
 trait CoreChartOptionsdoughnutE extends StObject {
   
-  var animation: (`false` | AnimationSpecdoughnutonPr) & (`false` | DoughnutAnimationOptions)
+  var animation: (false | AnimationSpecdoughnutonPr) & (false | DoughnutAnimationOptions)
   
-  var animations: AnimationsSpec[doughnut]
+  var animations: AnimationsSpec["doughnut"]
   
   /**
     * Canvas aspect ratio (i.e. width / height, a value of 1 representing a square canvas). Note that this option is ignored if the height is explicitly defined either as attribute or via the style.
@@ -45,7 +37,7 @@ trait CoreChartOptionsdoughnutE extends StObject {
     * base background color
     * @see Defaults.backgroundColor
     */
-  var backgroundColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]
+  var backgroundColor: Scriptable[typings.chartJs.distChunksHelpersDotcoreMod.Color, ScriptableContext["doughnut"]]
   
   var bar: Datasets
   
@@ -53,7 +45,7 @@ trait CoreChartOptionsdoughnutE extends StObject {
     * base border color
     * @see Defaults.borderColor
     */
-  var borderColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]
+  var borderColor: Scriptable[typings.chartJs.distChunksHelpersDotcoreMod.Color, ScriptableContext["doughnut"]]
   
   var bubble: DatasetsBubbleControllerDatasetOptions
   
@@ -64,22 +56,22 @@ trait CoreChartOptionsdoughnutE extends StObject {
   var circumference: Double
   
   /**
-    * How to clip relative to chartArea. Positive value allows overflow, negative value clips that many pixels inside chartArea. 0 = clip at chartArea. Clipping can also be configured per side: clip: {left: 5, top: false, right: -2, bottom: 0}
+    * How to clip relative to chartArea. Positive value allows overflow, negative value clips that many pixels inside chartArea. 0 = clip at chartArea. Clipping can also be configured per side: `clip: {left: 5, top: false, right: -2, bottom: 0}`
     */
-  var clip: Double | ChartArea | `false`
+  var clip: Double | ChartArea | false
   
   /**
     * base color
     * @see Defaults.color
     */
-  var color: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]
+  var color: Scriptable[typings.chartJs.distChunksHelpersDotcoreMod.Color, ScriptableContext["doughnut"]]
   
   /**
     * The portion of the chart that is cut out of the middle. ('50%' - for doughnut, 0 - for pie)
     * String ending with '%' means percentage, number means pixels.
     * @default 50
     */
-  var cutout: Scriptable[Double | String, ScriptableContext[doughnut]]
+  var cutout: Scriptable[Double | String, ScriptableContext["doughnut"]]
   
   var datasets: keyinChartTypeChartTypeReBar
   
@@ -91,14 +83,14 @@ trait CoreChartOptionsdoughnutE extends StObject {
   
   var doughnut: DatasetsDoughnutControllerDatasetOptions
   
-  var elements: ElementOptionsByType[doughnut]
+  var elements: ElementOptionsByType["doughnut"]
   
   /**
     * The events option defines the browser events that the chart should listen to for tooltips and hovering.
     * @default ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove']
     */
   var events: js.Array[
-    /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any
+    /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with "fullscreenchange", "fullscreenerror", "copy" */ String
   ]
   
   /**
@@ -113,7 +105,7 @@ trait CoreChartOptionsdoughnutE extends StObject {
     * The base axis of the chart. 'x' for vertical charts and 'y' for horizontal charts.
     * @default 'x'
     */
-  var indexAxis: x | y
+  var indexAxis: "x" | "y"
   
   var interaction: CoreInteractionOptions
   
@@ -147,36 +139,48 @@ trait CoreChartOptionsdoughnutE extends StObject {
     * Called if the event is of type 'mouseup' or 'click'. Passed the event, an array of active elements, and the chart.
     */
   def onClick(
-    event: ChartEvent,
+    event: ChartEvent1,
     elements: js.Array[ActiveElement],
-    chart: typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]
+    chart: Chart4[
+      ChartType, 
+      typings.chartJs.distChunksHelpersDotcoreMod.DefaultDataPoint[ChartType], 
+      Any
+    ]
   ): Unit
   
   /**
     * Called when any of the events fire. Passed the event, an array of active elements (bars, points, etc), and the chart.
     */
   def onHover(
-    event: ChartEvent,
+    event: ChartEvent1,
     elements: js.Array[ActiveElement],
-    chart: typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]
+    chart: Chart4[
+      ChartType, 
+      typings.chartJs.distChunksHelpersDotcoreMod.DefaultDataPoint[ChartType], 
+      Any
+    ]
   ): Unit
   
   /**
     * Called when a resize occurs. Gets passed two arguments: the chart instance and the new size.
     */
   def onResize(
-    chart: typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any],
+    chart: Chart4[
+      ChartType, 
+      typings.chartJs.distChunksHelpersDotcoreMod.DefaultDataPoint[ChartType], 
+      Any
+    ],
     size: Height
   ): Unit
   
   /**
     * How to parse the dataset. The parsing can be disabled by specifying parsing: false at chart options or dataset. If parsing is disabled, data must be sorted and in the formats the associated chart type and scales use internally.
     */
-  var parsing: StringDictionary[String] | `false`
+  var parsing: StringDictionary[String] | false
   
   var pie: DatasetsPieControllerDatasetOptions
   
-  var plugins: PluginOptionsByType[doughnut]
+  var plugins: PluginOptionsByType["doughnut"]
   
   var polarArea: DatasetsPolarAreaControllerDatasetOptions
   
@@ -186,7 +190,7 @@ trait CoreChartOptionsdoughnutE extends StObject {
     * The outer radius of the chart. String ending with '%' means percentage of maximum radius, number means pixels.
     * @default '100%'
     */
-  var radius: Scriptable[Double | String, ScriptableContext[doughnut]]
+  var radius: Scriptable[Double | String, ScriptableContext["doughnut"]]
   
   /**
     * Delay the resize update by give amount of milliseconds. This can ease the resize process by debouncing update of the elements.
@@ -206,7 +210,9 @@ trait CoreChartOptionsdoughnutE extends StObject {
     */
   var rotation: Double
   
-  var scales: StringDictionary[ScaleOptionsByType[linear | logarithmic | category | time | timeseries]]
+  var scales: StringDictionary[
+    ScaleOptionsByType["linear" | "logarithmic" | "category" | "time" | "timeseries"]
+  ]
   
   var scatter: DatasetsScatterControllerDatasetOptions
   
@@ -216,32 +222,32 @@ trait CoreChartOptionsdoughnutE extends StObject {
     */
   var spacing: Double
   
-  var transitions: TransitionsSpec[doughnut]
+  var transitions: TransitionsSpec["doughnut"]
 }
 object CoreChartOptionsdoughnutE {
   
   inline def apply(
-    animation: (`false` | AnimationSpecdoughnutonPr) & (`false` | DoughnutAnimationOptions),
-    animations: AnimationsSpec[doughnut],
+    animation: (false | AnimationSpecdoughnutonPr) & (false | DoughnutAnimationOptions),
+    animations: AnimationsSpec["doughnut"],
     aspectRatio: Double,
-    backgroundColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
+    backgroundColor: Scriptable[typings.chartJs.distChunksHelpersDotcoreMod.Color, ScriptableContext["doughnut"]],
     bar: Datasets,
-    borderColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
+    borderColor: Scriptable[typings.chartJs.distChunksHelpersDotcoreMod.Color, ScriptableContext["doughnut"]],
     bubble: DatasetsBubbleControllerDatasetOptions,
     circumference: Double,
-    clip: Double | ChartArea | `false`,
-    color: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
-    cutout: Scriptable[Double | String, ScriptableContext[doughnut]],
+    clip: Double | ChartArea | false,
+    color: Scriptable[typings.chartJs.distChunksHelpersDotcoreMod.Color, ScriptableContext["doughnut"]],
+    cutout: Scriptable[Double | String, ScriptableContext["doughnut"]],
     datasets: keyinChartTypeChartTypeReBar,
     devicePixelRatio: Double,
     doughnut: DatasetsDoughnutControllerDatasetOptions,
-    elements: ElementOptionsByType[doughnut],
+    elements: ElementOptionsByType["doughnut"],
     events: js.Array[
-      /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any
+      /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with "fullscreenchange", "fullscreenerror", "copy" */ String
     ],
     font: PartialFontSpec,
     hover: CoreInteractionOptions,
-    indexAxis: x | y,
+    indexAxis: "x" | "y",
     interaction: CoreInteractionOptions,
     layout: PartialautoPaddingbooleanAutoPadding,
     line: `1`,
@@ -249,22 +255,36 @@ object CoreChartOptionsdoughnutE {
     maintainAspectRatio: Boolean,
     normalized: Boolean,
     offset: Double,
-    onClick: (ChartEvent, js.Array[ActiveElement], typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]) => Unit,
-    onHover: (ChartEvent, js.Array[ActiveElement], typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]) => Unit,
-    onResize: (typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any], Height) => Unit,
-    parsing: StringDictionary[String] | `false`,
+    onClick: (ChartEvent1, js.Array[ActiveElement], Chart4[
+      ChartType, 
+      typings.chartJs.distChunksHelpersDotcoreMod.DefaultDataPoint[ChartType], 
+      Any
+    ]) => Unit,
+    onHover: (ChartEvent1, js.Array[ActiveElement], Chart4[
+      ChartType, 
+      typings.chartJs.distChunksHelpersDotcoreMod.DefaultDataPoint[ChartType], 
+      Any
+    ]) => Unit,
+    onResize: (Chart4[
+      ChartType, 
+      typings.chartJs.distChunksHelpersDotcoreMod.DefaultDataPoint[ChartType], 
+      Any
+    ], Height) => Unit,
+    parsing: StringDictionary[String] | false,
     pie: DatasetsPieControllerDatasetOptions,
-    plugins: PluginOptionsByType[doughnut],
+    plugins: PluginOptionsByType["doughnut"],
     polarArea: DatasetsPolarAreaControllerDatasetOptions,
     radar: `0`,
-    radius: Scriptable[Double | String, ScriptableContext[doughnut]],
+    radius: Scriptable[Double | String, ScriptableContext["doughnut"]],
     resizeDelay: Double,
     responsive: Boolean,
     rotation: Double,
-    scales: StringDictionary[ScaleOptionsByType[linear | logarithmic | category | time | timeseries]],
+    scales: StringDictionary[
+      ScaleOptionsByType["linear" | "logarithmic" | "category" | "time" | "timeseries"]
+    ],
     scatter: DatasetsScatterControllerDatasetOptions,
     spacing: Double,
-    transitions: TransitionsSpec[doughnut]
+    transitions: TransitionsSpec["doughnut"]
   ): CoreChartOptionsdoughnutE = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], animations = animations.asInstanceOf[js.Any], aspectRatio = aspectRatio.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], bar = bar.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], bubble = bubble.asInstanceOf[js.Any], circumference = circumference.asInstanceOf[js.Any], clip = clip.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], cutout = cutout.asInstanceOf[js.Any], datasets = datasets.asInstanceOf[js.Any], devicePixelRatio = devicePixelRatio.asInstanceOf[js.Any], doughnut = doughnut.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], indexAxis = indexAxis.asInstanceOf[js.Any], interaction = interaction.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], maintainAspectRatio = maintainAspectRatio.asInstanceOf[js.Any], normalized = normalized.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], onClick = js.Any.fromFunction3(onClick), onHover = js.Any.fromFunction3(onHover), onResize = js.Any.fromFunction2(onResize), parsing = parsing.asInstanceOf[js.Any], pie = pie.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], polarArea = polarArea.asInstanceOf[js.Any], radar = radar.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], resizeDelay = resizeDelay.asInstanceOf[js.Any], responsive = responsive.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scales = scales.asInstanceOf[js.Any], scatter = scatter.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any], transitions = transitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreChartOptionsdoughnutE]
@@ -272,41 +292,47 @@ object CoreChartOptionsdoughnutE {
   
   extension [Self <: CoreChartOptionsdoughnutE](x: Self) {
     
-    inline def setAnimation(value: (`false` | AnimationSpecdoughnutonPr) & (`false` | DoughnutAnimationOptions)): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: (false | AnimationSpecdoughnutonPr) & (false | DoughnutAnimationOptions)): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    inline def setAnimations(value: AnimationsSpec[doughnut]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    inline def setAnimations(value: AnimationsSpec["doughnut"]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(
+      value: Scriptable[typings.chartJs.distChunksHelpersDotcoreMod.Color, ScriptableContext["doughnut"]]
+    ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorFunction2(
-      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext["doughnut"], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distChunksHelpersDotcoreMod.Color]
     ): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction2(value))
     
     inline def setBar(value: Datasets): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
-    inline def setBorderColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(
+      value: Scriptable[typings.chartJs.distChunksHelpersDotcoreMod.Color, ScriptableContext["doughnut"]]
+    ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorFunction2(
-      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext["doughnut"], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distChunksHelpersDotcoreMod.Color]
     ): Self = StObject.set(x, "borderColor", js.Any.fromFunction2(value))
     
     inline def setBubble(value: DatasetsBubbleControllerDatasetOptions): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
     
     inline def setCircumference(value: Double): Self = StObject.set(x, "circumference", value.asInstanceOf[js.Any])
     
-    inline def setClip(value: Double | ChartArea | `false`): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    inline def setClip(value: Double | ChartArea | false): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(
+      value: Scriptable[typings.chartJs.distChunksHelpersDotcoreMod.Color, ScriptableContext["doughnut"]]
+    ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorFunction2(
-      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext["doughnut"], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distChunksHelpersDotcoreMod.Color]
     ): Self = StObject.set(x, "color", js.Any.fromFunction2(value))
     
-    inline def setCutout(value: Scriptable[Double | String, ScriptableContext[doughnut]]): Self = StObject.set(x, "cutout", value.asInstanceOf[js.Any])
+    inline def setCutout(value: Scriptable[Double | String, ScriptableContext["doughnut"]]): Self = StObject.set(x, "cutout", value.asInstanceOf[js.Any])
     
-    inline def setCutoutFunction2(value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[Double | String]): Self = StObject.set(x, "cutout", js.Any.fromFunction2(value))
+    inline def setCutoutFunction2(value: (ScriptableContext["doughnut"], /* options */ AnyObject) => js.UndefOr[Double | String]): Self = StObject.set(x, "cutout", js.Any.fromFunction2(value))
     
     inline def setDatasets(value: keyinChartTypeChartTypeReBar): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
     
@@ -314,23 +340,23 @@ object CoreChartOptionsdoughnutE {
     
     inline def setDoughnut(value: DatasetsDoughnutControllerDatasetOptions): Self = StObject.set(x, "doughnut", value.asInstanceOf[js.Any])
     
-    inline def setElements(value: ElementOptionsByType[doughnut]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: ElementOptionsByType["doughnut"]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     inline def setEvents(
       value: js.Array[
-          /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any
+          /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with "fullscreenchange", "fullscreenerror", "copy" */ String
         ]
     ): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsVarargs(
-      value: (/* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any)*
+      value: (/* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with "fullscreenchange", "fullscreenerror", "copy" */ String)*
     ): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setFont(value: PartialFontSpec): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setHover(value: CoreInteractionOptions): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    inline def setIndexAxis(value: typings.chartJs.chartJsStrings.x | y): Self = StObject.set(x, "indexAxis", value.asInstanceOf[js.Any])
+    inline def setIndexAxis(value: "x" | "y"): Self = StObject.set(x, "indexAxis", value.asInstanceOf[js.Any])
     
     inline def setInteraction(value: CoreInteractionOptions): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
@@ -347,30 +373,42 @@ object CoreChartOptionsdoughnutE {
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOnClick(
-      value: (ChartEvent, js.Array[ActiveElement], typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]) => Unit
+      value: (ChartEvent1, js.Array[ActiveElement], Chart4[
+          ChartType, 
+          typings.chartJs.distChunksHelpersDotcoreMod.DefaultDataPoint[ChartType], 
+          Any
+        ]) => Unit
     ): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
     
     inline def setOnHover(
-      value: (ChartEvent, js.Array[ActiveElement], typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]) => Unit
+      value: (ChartEvent1, js.Array[ActiveElement], Chart4[
+          ChartType, 
+          typings.chartJs.distChunksHelpersDotcoreMod.DefaultDataPoint[ChartType], 
+          Any
+        ]) => Unit
     ): Self = StObject.set(x, "onHover", js.Any.fromFunction3(value))
     
     inline def setOnResize(
-      value: (typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any], Height) => Unit
+      value: (Chart4[
+          ChartType, 
+          typings.chartJs.distChunksHelpersDotcoreMod.DefaultDataPoint[ChartType], 
+          Any
+        ], Height) => Unit
     ): Self = StObject.set(x, "onResize", js.Any.fromFunction2(value))
     
-    inline def setParsing(value: StringDictionary[String] | `false`): Self = StObject.set(x, "parsing", value.asInstanceOf[js.Any])
+    inline def setParsing(value: StringDictionary[String] | false): Self = StObject.set(x, "parsing", value.asInstanceOf[js.Any])
     
     inline def setPie(value: DatasetsPieControllerDatasetOptions): Self = StObject.set(x, "pie", value.asInstanceOf[js.Any])
     
-    inline def setPlugins(value: PluginOptionsByType[doughnut]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: PluginOptionsByType["doughnut"]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     inline def setPolarArea(value: DatasetsPolarAreaControllerDatasetOptions): Self = StObject.set(x, "polarArea", value.asInstanceOf[js.Any])
     
     inline def setRadar(value: `0`): Self = StObject.set(x, "radar", value.asInstanceOf[js.Any])
     
-    inline def setRadius(value: Scriptable[Double | String, ScriptableContext[doughnut]]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Scriptable[Double | String, ScriptableContext["doughnut"]]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    inline def setRadiusFunction2(value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[Double | String]): Self = StObject.set(x, "radius", js.Any.fromFunction2(value))
+    inline def setRadiusFunction2(value: (ScriptableContext["doughnut"], /* options */ AnyObject) => js.UndefOr[Double | String]): Self = StObject.set(x, "radius", js.Any.fromFunction2(value))
     
     inline def setResizeDelay(value: Double): Self = StObject.set(x, "resizeDelay", value.asInstanceOf[js.Any])
     
@@ -378,12 +416,16 @@ object CoreChartOptionsdoughnutE {
     
     inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    inline def setScales(value: StringDictionary[ScaleOptionsByType[linear | logarithmic | category | time | timeseries]]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+    inline def setScales(
+      value: StringDictionary[
+          ScaleOptionsByType["linear" | "logarithmic" | "category" | "time" | "timeseries"]
+        ]
+    ): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
     
     inline def setScatter(value: DatasetsScatterControllerDatasetOptions): Self = StObject.set(x, "scatter", value.asInstanceOf[js.Any])
     
     inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    inline def setTransitions(value: TransitionsSpec[doughnut]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
+    inline def setTransitions(value: TransitionsSpec["doughnut"]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
   }
 }

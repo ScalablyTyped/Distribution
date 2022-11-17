@@ -55,13 +55,6 @@ import typings.reactNativeGestureHandler.libTypescriptHandlersPanGestureHandlerM
 import typings.reactNativeGestureHandler.libTypescriptHandlersPinchGestureHandlerMod.PinchGestureHandlerProps
 import typings.reactNativeGestureHandler.libTypescriptHandlersRotationGestureHandlerMod.RotationGestureHandlerProps
 import typings.reactNativeGestureHandler.libTypescriptHandlersTapGestureHandlerMod.TapGestureHandlerProps_
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`3`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`5`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -114,19 +107,19 @@ object mod {
     
     @JSImport("react-native-gesture-handler", "Directions.DOWN")
     @js.native
-    val DOWN: `8` = js.native
+    val DOWN: 8 = js.native
     
     @JSImport("react-native-gesture-handler", "Directions.LEFT")
     @js.native
-    val LEFT: `2` = js.native
+    val LEFT: 2 = js.native
     
     @JSImport("react-native-gesture-handler", "Directions.RIGHT")
     @js.native
-    val RIGHT: `1` = js.native
+    val RIGHT: 1 = js.native
     
     @JSImport("react-native-gesture-handler", "Directions.UP")
     @js.native
-    val UP: `4` = js.native
+    val UP: 4 = js.native
   }
   
   @JSImport("react-native-gesture-handler", "DrawerLayout")
@@ -285,27 +278,27 @@ object mod {
     
     @JSImport("react-native-gesture-handler", "State.ACTIVE")
     @js.native
-    val ACTIVE: `4` = js.native
+    val ACTIVE: 4 = js.native
     
     @JSImport("react-native-gesture-handler", "State.BEGAN")
     @js.native
-    val BEGAN: `2` = js.native
+    val BEGAN: 2 = js.native
     
     @JSImport("react-native-gesture-handler", "State.CANCELLED")
     @js.native
-    val CANCELLED: `3` = js.native
+    val CANCELLED: 3 = js.native
     
     @JSImport("react-native-gesture-handler", "State.END")
     @js.native
-    val END: `5` = js.native
+    val END: 5 = js.native
     
     @JSImport("react-native-gesture-handler", "State.FAILED")
     @js.native
-    val FAILED: `1` = js.native
+    val FAILED: 1 = js.native
     
     @JSImport("react-native-gesture-handler", "State.UNDETERMINED")
     @js.native
-    val UNDETERMINED: `0` = js.native
+    val UNDETERMINED: 0 = js.native
   }
   
   @JSImport("react-native-gesture-handler", "Swipeable")

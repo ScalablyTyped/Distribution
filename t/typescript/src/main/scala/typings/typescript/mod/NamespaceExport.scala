@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NamespaceExport
   extends StObject
-     with NamedDeclaration
-     with NamedExportBindings {
+     with NamedDeclaration {
   
   @JSName("kind")
   val kind_NamespaceExport: typings.typescript.mod.SyntaxKind.NamespaceExport = js.native

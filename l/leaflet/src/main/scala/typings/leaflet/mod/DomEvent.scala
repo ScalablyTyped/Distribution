@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.leaflet.anon.TypeofDomEvent
 import typings.std.Event
 import typings.std.HTMLElement
-import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -58,52 +57,5 @@ object DomEvent {
   
   type EventHandlerFn = js.Function1[/* event */ Event, Unit]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.leaflet.mod.LeafletMouseEvent
-    - typings.leaflet.mod.LeafletKeyboardEvent
-    - typings.leaflet.mod.LeafletEvent
-    - typings.std.Event
-  */
-  type PropagableEvent = _PropagableEvent | Event
-  
-  trait _PropagableEvent extends StObject
-  object _PropagableEvent {
-    
-    inline def LeafletEvent(layer: Any, popup: Any, propagatedFrom: Any, sourceTarget: Any, target: Any, `type`: String): typings.leaflet.mod.LeafletEvent = {
-      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.leaflet.mod.LeafletEvent]
-    }
-    
-    inline def LeafletKeyboardEvent(
-      layer: Any,
-      originalEvent: KeyboardEvent,
-      popup: Any,
-      propagatedFrom: Any,
-      sourceTarget: Any,
-      target: Any,
-      `type`: String
-    ): typings.leaflet.mod.LeafletKeyboardEvent = {
-      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.leaflet.mod.LeafletKeyboardEvent]
-    }
-    
-    inline def LeafletMouseEvent(
-      containerPoint: Point_,
-      latlng: LatLng_,
-      layer: Any,
-      layerPoint: Point_,
-      originalEvent: MouseEvent,
-      popup: Any,
-      propagatedFrom: Any,
-      sourceTarget: Any,
-      target: Any,
-      `type`: String
-    ): typings.leaflet.mod.LeafletMouseEvent = {
-      val __obj = js.Dynamic.literal(containerPoint = containerPoint.asInstanceOf[js.Any], latlng = latlng.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], layerPoint = layerPoint.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.leaflet.mod.LeafletMouseEvent]
-    }
-  }
+  type PropagableEvent = LeafletMouseEvent | LeafletKeyboardEvent | LeafletEvent | Event
 }

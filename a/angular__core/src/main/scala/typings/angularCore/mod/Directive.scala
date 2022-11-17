@@ -1,7 +1,6 @@
 package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCore.angularCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,6 +56,18 @@ trait Directive extends StObject {
   var host: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
+    * Standalone directives that should be applied to the host whenever the directive is matched.
+    * By default, none of the inputs or outputs of the host directives will be available on the host,
+    * unless they are specified in the `inputs` or `outputs` properties.
+    *
+    * You can additionally alias inputs and outputs by putting a colon and the alias after the
+    * original input or output name. For example, if a directive applied via `hostDirectives`
+    * defines an input named `menuDisabled`, you can alias this to `disabled` by adding
+    * `'menuDisabled: disabled'` as an entry to `inputs`.
+    */
+  var hostDirectives: js.UndefOr[js.Array[Type[Any] | typings.angularCore.anon.Directive]] = js.undefined
+  
+  /**
     * Enumerates the set of data-bound input properties for a directive
     *
     * Angular automatically updates input properties during change detection.
@@ -96,7 +107,7 @@ trait Directive extends StObject {
     * at run time, in the browser.
     * To ensure the correct behavior, the app must import `@angular/compiler`.
     */
-  var jit: js.UndefOr[`true`] = js.undefined
+  var jit: js.UndefOr[true] = js.undefined
   
   /**
     * Enumerates the set of event-bound output properties.
@@ -221,8 +232,6 @@ trait Directive extends StObject {
     *
     * More information about standalone components, directives, and pipes can be found in [this
     * guide](guide/standalone-components).
-    *
-    * @developerPreview
     */
   var standalone: js.UndefOr[Boolean] = js.undefined
 }
@@ -240,6 +249,12 @@ object Directive {
     
     inline def setHost(value: StringDictionary[String]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
+    inline def setHostDirectives(value: js.Array[Type[Any] | typings.angularCore.anon.Directive]): Self = StObject.set(x, "hostDirectives", value.asInstanceOf[js.Any])
+    
+    inline def setHostDirectivesUndefined: Self = StObject.set(x, "hostDirectives", js.undefined)
+    
+    inline def setHostDirectivesVarargs(value: (Type[Any] | typings.angularCore.anon.Directive)*): Self = StObject.set(x, "hostDirectives", js.Array(value*))
+    
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     inline def setInputs(value: js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
@@ -248,7 +263,7 @@ object Directive {
     
     inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value*))
     
-    inline def setJit(value: `true`): Self = StObject.set(x, "jit", value.asInstanceOf[js.Any])
+    inline def setJit(value: true): Self = StObject.set(x, "jit", value.asInstanceOf[js.Any])
     
     inline def setJitUndefined: Self = StObject.set(x, "jit", js.undefined)
     

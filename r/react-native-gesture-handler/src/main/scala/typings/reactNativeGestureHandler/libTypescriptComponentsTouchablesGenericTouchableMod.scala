@@ -10,9 +10,6 @@ import typings.reactNativeGestureHandler.libTypescriptComponentsTouchablesToucha
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.GestureEvent
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HandlerStateChangeEvent
 import typings.reactNativeGestureHandler.libTypescriptHandlersNativeViewGestureHandlerMod.NativeViewGestureHandlerPayload
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,15 +37,15 @@ object libTypescriptComponentsTouchablesGenericTouchableMod {
     
     @JSImport("react-native-gesture-handler/lib/typescript/components/touchables/GenericTouchable", "TOUCHABLE_STATE.BEGAN")
     @js.native
-    val BEGAN: `1` = js.native
+    val BEGAN: 1 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/components/touchables/GenericTouchable", "TOUCHABLE_STATE.MOVED_OUTSIDE")
     @js.native
-    val MOVED_OUTSIDE: `2` = js.native
+    val MOVED_OUTSIDE: 2 = js.native
     
     @JSImport("react-native-gesture-handler/lib/typescript/components/touchables/GenericTouchable", "TOUCHABLE_STATE.UNDETERMINED")
     @js.native
-    val UNDETERMINED: `0` = js.native
+    val UNDETERMINED: 0 = js.native
   }
   
   @js.native
@@ -188,19 +185,14 @@ object libTypescriptComponentsTouchablesGenericTouchableMod {
   
   type Timeout = js.UndefOr[ReturnType[FnCall] | Null]
   
-  /* Inlined { readonly UNDETERMINED :0,  readonly BEGAN :1,  readonly MOVED_OUTSIDE :2}[keyof { readonly UNDETERMINED :0,  readonly BEGAN :1,  readonly MOVED_OUTSIDE :2}] */
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`
-  */
-  trait TouchableState extends StObject
   object TouchableState {
     
-    inline def `0`: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0` = 0.asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0`]
+    inline def `0`: 0 = 0.asInstanceOf[0]
     
-    inline def `1`: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1` = 1.asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`]
+    inline def `1`: 1 = 1.asInstanceOf[1]
     
-    inline def `2`: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2` = 2.asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`]
+    inline def `2`: 2 = 2.asInstanceOf[2]
   }
+  /* Inlined { readonly UNDETERMINED :0,  readonly BEGAN :1,  readonly MOVED_OUTSIDE :2}[keyof { readonly UNDETERMINED :0,  readonly BEGAN :1,  readonly MOVED_OUTSIDE :2}] */
+  type TouchableState = 0 | 1 | 2
 }

@@ -1,216 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.DOMContentLoaded
-import typings.std.stdStrings.Events
-import typings.std.stdStrings.MouseEvents
-import typings.std.stdStrings.MutationEvents
-import typings.std.stdStrings.UIEvents
-import typings.std.stdStrings.`object`
-import typings.std.stdStrings.`var`
-import typings.std.stdStrings.a
-import typings.std.stdStrings.abbr
-import typings.std.stdStrings.acronym
-import typings.std.stdStrings.address
-import typings.std.stdStrings.animate
-import typings.std.stdStrings.animateMotion
-import typings.std.stdStrings.animateTransform
-import typings.std.stdStrings.applet
-import typings.std.stdStrings.area
-import typings.std.stdStrings.article
-import typings.std.stdStrings.aside
-import typings.std.stdStrings.audio
-import typings.std.stdStrings.b
-import typings.std.stdStrings.base
-import typings.std.stdStrings.basefont
-import typings.std.stdStrings.bdi
-import typings.std.stdStrings.bdo
-import typings.std.stdStrings.bgsound
-import typings.std.stdStrings.big
-import typings.std.stdStrings.blink
-import typings.std.stdStrings.blockquote
-import typings.std.stdStrings.body
-import typings.std.stdStrings.br
-import typings.std.stdStrings.button
-import typings.std.stdStrings.canvas
-import typings.std.stdStrings.caption
-import typings.std.stdStrings.center
-import typings.std.stdStrings.circle
-import typings.std.stdStrings.cite
-import typings.std.stdStrings.clipPath
-import typings.std.stdStrings.code
-import typings.std.stdStrings.col
-import typings.std.stdStrings.colgroup
-import typings.std.stdStrings.data
-import typings.std.stdStrings.datalist
-import typings.std.stdStrings.dd
-import typings.std.stdStrings.defs
-import typings.std.stdStrings.del
-import typings.std.stdStrings.desc
-import typings.std.stdStrings.details
-import typings.std.stdStrings.dfn
-import typings.std.stdStrings.dialog
-import typings.std.stdStrings.dir
-import typings.std.stdStrings.div
-import typings.std.stdStrings.dl
-import typings.std.stdStrings.dt
-import typings.std.stdStrings.ellipse
-import typings.std.stdStrings.em
-import typings.std.stdStrings.embed
-import typings.std.stdStrings.feBlend
-import typings.std.stdStrings.feColorMatrix
-import typings.std.stdStrings.feComponentTransfer
-import typings.std.stdStrings.feComposite
-import typings.std.stdStrings.feConvolveMatrix
-import typings.std.stdStrings.feDiffuseLighting
-import typings.std.stdStrings.feDisplacementMap
-import typings.std.stdStrings.feDistantLight
-import typings.std.stdStrings.feDropShadow
-import typings.std.stdStrings.feFlood
-import typings.std.stdStrings.feFuncA
-import typings.std.stdStrings.feFuncB
-import typings.std.stdStrings.feFuncG
-import typings.std.stdStrings.feFuncR
-import typings.std.stdStrings.feGaussianBlur
-import typings.std.stdStrings.feImage
-import typings.std.stdStrings.feMerge
-import typings.std.stdStrings.feMergeNode
-import typings.std.stdStrings.feMorphology
-import typings.std.stdStrings.feOffset
-import typings.std.stdStrings.fePointLight
-import typings.std.stdStrings.feSpecularLighting
-import typings.std.stdStrings.feSpotLight
-import typings.std.stdStrings.feTile
-import typings.std.stdStrings.feTurbulence
-import typings.std.stdStrings.fieldset
-import typings.std.stdStrings.figcaption
-import typings.std.stdStrings.figure
-import typings.std.stdStrings.filter
-import typings.std.stdStrings.font
-import typings.std.stdStrings.footer
-import typings.std.stdStrings.foreignObject
-import typings.std.stdStrings.form
-import typings.std.stdStrings.frame
-import typings.std.stdStrings.frameset
-import typings.std.stdStrings.fullscreenchange
-import typings.std.stdStrings.fullscreenerror
-import typings.std.stdStrings.g
-import typings.std.stdStrings.h1
-import typings.std.stdStrings.h2
-import typings.std.stdStrings.h3
-import typings.std.stdStrings.h4
-import typings.std.stdStrings.h5
-import typings.std.stdStrings.h6
-import typings.std.stdStrings.header
-import typings.std.stdStrings.hgroup
-import typings.std.stdStrings.hr
-import typings.std.stdStrings.html
-import typings.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml
-import typings.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg
-import typings.std.stdStrings.i
-import typings.std.stdStrings.iframe
-import typings.std.stdStrings.image
-import typings.std.stdStrings.img
-import typings.std.stdStrings.input
-import typings.std.stdStrings.ins
-import typings.std.stdStrings.isindex
-import typings.std.stdStrings.kbd
-import typings.std.stdStrings.keygen
-import typings.std.stdStrings.label
-import typings.std.stdStrings.legend
-import typings.std.stdStrings.li
-import typings.std.stdStrings.line
-import typings.std.stdStrings.linearGradient
-import typings.std.stdStrings.link
-import typings.std.stdStrings.listing
-import typings.std.stdStrings.main
-import typings.std.stdStrings.map
-import typings.std.stdStrings.mark
-import typings.std.stdStrings.marker
-import typings.std.stdStrings.marquee
-import typings.std.stdStrings.mask
-import typings.std.stdStrings.menu
-import typings.std.stdStrings.menuitem
-import typings.std.stdStrings.meta
-import typings.std.stdStrings.metadata
-import typings.std.stdStrings.meter
-import typings.std.stdStrings.mpath
-import typings.std.stdStrings.multicol
-import typings.std.stdStrings.nav
-import typings.std.stdStrings.nextid
-import typings.std.stdStrings.nobr
-import typings.std.stdStrings.noembed
-import typings.std.stdStrings.noframes
-import typings.std.stdStrings.noscript
-import typings.std.stdStrings.ol
-import typings.std.stdStrings.optgroup
-import typings.std.stdStrings.option
-import typings.std.stdStrings.output
-import typings.std.stdStrings.p
-import typings.std.stdStrings.param
-import typings.std.stdStrings.path
-import typings.std.stdStrings.pattern
-import typings.std.stdStrings.picture
-import typings.std.stdStrings.plaintext
-import typings.std.stdStrings.pointerlockchange
-import typings.std.stdStrings.pointerlockerror
-import typings.std.stdStrings.polygon
-import typings.std.stdStrings.polyline
-import typings.std.stdStrings.pre
-import typings.std.stdStrings.progress
-import typings.std.stdStrings.q
-import typings.std.stdStrings.radialGradient
-import typings.std.stdStrings.rb
-import typings.std.stdStrings.readystatechange
-import typings.std.stdStrings.rect
-import typings.std.stdStrings.rp
-import typings.std.stdStrings.rt
-import typings.std.stdStrings.rtc
-import typings.std.stdStrings.ruby
-import typings.std.stdStrings.s
-import typings.std.stdStrings.samp
-import typings.std.stdStrings.script
-import typings.std.stdStrings.section
-import typings.std.stdStrings.select
-import typings.std.stdStrings.set
-import typings.std.stdStrings.slot
-import typings.std.stdStrings.small
-import typings.std.stdStrings.source
-import typings.std.stdStrings.spacer
-import typings.std.stdStrings.span
-import typings.std.stdStrings.stop
-import typings.std.stdStrings.strike
-import typings.std.stdStrings.strong
-import typings.std.stdStrings.style
-import typings.std.stdStrings.sub
-import typings.std.stdStrings.summary
-import typings.std.stdStrings.sup
-import typings.std.stdStrings.svg
-import typings.std.stdStrings.switch
-import typings.std.stdStrings.symbol
-import typings.std.stdStrings.table
-import typings.std.stdStrings.tbody
-import typings.std.stdStrings.td
-import typings.std.stdStrings.template
-import typings.std.stdStrings.text
-import typings.std.stdStrings.textPath
-import typings.std.stdStrings.textarea
-import typings.std.stdStrings.tfoot
-import typings.std.stdStrings.th
-import typings.std.stdStrings.thead
-import typings.std.stdStrings.time
-import typings.std.stdStrings.title
-import typings.std.stdStrings.tr
-import typings.std.stdStrings.track
-import typings.std.stdStrings.tspan
-import typings.std.stdStrings.tt
-import typings.std.stdStrings.u
-import typings.std.stdStrings.ul
-import typings.std.stdStrings.use
-import typings.std.stdStrings.video
-import typings.std.stdStrings.view
-import typings.std.stdStrings.visibilitychange
-import typings.std.stdStrings.wbr
-import typings.std.stdStrings.xmp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -231,6 +20,126 @@ trait Document
   /* standard dom */
   val URL: java.lang.String = js.native
   
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_readystatechange")
+  def addEventListener(`type`: "readystatechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_pointerlockchange")
+  def addEventListener(`type`: "pointerlockchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_fullscreenchange")
+  def addEventListener(`type`: "fullscreenchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_visibilitychange")
+  def addEventListener(`type`: "visibilitychange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_pointerlockerror")
+  def addEventListener(`type`: "pointerlockerror", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  /* standard dom */
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_DOMContentLoaded")
+  def addEventListener(`type`: "DOMContentLoaded", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_fullscreenerror")
+  def addEventListener(`type`: "fullscreenerror", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_fullscreenchange")
+  def addEventListener(
+    `type`: "fullscreenchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_fullscreenerror")
+  def addEventListener(
+    `type`: "fullscreenerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_visibilitychange")
+  def addEventListener(
+    `type`: "visibilitychange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_pointerlockchange")
+  def addEventListener(
+    `type`: "pointerlockchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_DOMContentLoaded")
+  def addEventListener(
+    `type`: "DOMContentLoaded",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_readystatechange")
+  def addEventListener(
+    `type`: "readystatechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_pointerlockerror")
+  def addEventListener(
+    `type`: "pointerlockerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_pointerlockerror")
+  def addEventListener(
+    `type`: "pointerlockerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_fullscreenerror")
+  def addEventListener(
+    `type`: "fullscreenerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_pointerlockchange")
+  def addEventListener(
+    `type`: "pointerlockchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_readystatechange")
+  def addEventListener(
+    `type`: "readystatechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_visibilitychange")
+  def addEventListener(
+    `type`: "visibilitychange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_fullscreenchange")
+  def addEventListener(
+    `type`: "fullscreenchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_DOMContentLoaded")
+  def addEventListener(
+    `type`: "DOMContentLoaded",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -239,105 +148,6 @@ trait Document
   override def addEventListener(
     `type`: java.lang.String,
     callback: EventListenerOrEventListenerObject,
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  /* standard dom */
-  @JSName("addEventListener")
-  def addEventListener_DOMContentLoaded(`type`: DOMContentLoaded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_DOMContentLoaded(
-    `type`: DOMContentLoaded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_DOMContentLoaded(
-    `type`: DOMContentLoaded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_fullscreenchange(
-    `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_fullscreenchange(
-    `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_fullscreenerror(
-    `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_fullscreenerror(
-    `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pointerlockchange(`type`: pointerlockchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pointerlockchange(
-    `type`: pointerlockchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pointerlockchange(
-    `type`: pointerlockchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pointerlockerror(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pointerlockerror(
-    `type`: pointerlockerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_pointerlockerror(
-    `type`: pointerlockerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_visibilitychange(`type`: visibilitychange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_visibilitychange(
-    `type`: visibilitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_visibilitychange(
-    `type`: visibilitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -459,87 +269,1051 @@ trait Document
   /* standard dom */
   def createDocumentFragment(): DocumentFragment = js.native
   
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_hgroup")
+  def createElement(tagName: "hgroup"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_bgsound")
+  def createElement(tagName: "bgsound"): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_head")
+  def createElement(tagName: "head"): HTMLHeadElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_dfn")
+  def createElement(tagName: "dfn"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_code")
+  def createElement(tagName: "code"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_nextid")
+  def createElement(tagName: "nextid"): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_rp")
+  def createElement(tagName: "rp"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_title")
+  def createElement(tagName: "title"): HTMLTitleElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_font")
+  def createElement(tagName: "font"): HTMLFontElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_div")
+  def createElement(tagName: "div"): HTMLDivElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_rtc")
+  def createElement(tagName: "rtc"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_figure")
+  def createElement(tagName: "figure"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_bdo")
+  def createElement(tagName: "bdo"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_template")
+  def createElement(tagName: "template"): HTMLTemplateElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_nobr")
+  def createElement(tagName: "nobr"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_table")
+  def createElement(tagName: "table"): HTMLTableElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_ol")
+  def createElement(tagName: "ol"): HTMLOListElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_data")
+  def createElement(tagName: "data"): HTMLDataElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_p")
+  def createElement(tagName: "p"): HTMLParagraphElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_script")
+  def createElement(tagName: "script"): HTMLScriptElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_var")
+  def createElement(tagName: "var"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_tfoot")
+  def createElement(tagName: "tfoot"): HTMLTableSectionElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_col")
+  def createElement(tagName: "col"): HTMLTableColElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_b")
+  def createElement(tagName: "b"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_sup")
+  def createElement(tagName: "sup"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_ruby")
+  def createElement(tagName: "ruby"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_button")
+  def createElement(tagName: "button"): HTMLButtonElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_i")
+  def createElement(tagName: "i"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_header")
+  def createElement(tagName: "header"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_colgroup")
+  def createElement(tagName: "colgroup"): HTMLTableColElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_video")
+  def createElement(tagName: "video"): HTMLVideoElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_kbd")
+  def createElement(tagName: "kbd"): HTMLElement = js.native
+  /**
+    * Creates an instance of the element for the specified tag.
+    * @param tagName The name of an element.
+    */
+  /* standard dom */
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_a")
+  def createElement(tagName: "a"): HTMLAnchorElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_textarea")
+  def createElement(tagName: "textarea"): HTMLTextAreaElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_li")
+  def createElement(tagName: "li"): HTMLLIElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_address")
+  def createElement(tagName: "address"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_u")
+  def createElement(tagName: "u"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_cite")
+  def createElement(tagName: "cite"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_dir")
+  def createElement(tagName: "dir"): HTMLDirectoryElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_ins")
+  def createElement(tagName: "ins"): HTMLModElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_span")
+  def createElement(tagName: "span"): HTMLSpanElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_frame")
+  def createElement(tagName: "frame"): HTMLFrameElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_abbr")
+  def createElement(tagName: "abbr"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_html")
+  def createElement(tagName: "html"): HTMLHtmlElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_mark")
+  def createElement(tagName: "mark"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_tbody")
+  def createElement(tagName: "tbody"): HTMLTableSectionElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_audio")
+  def createElement(tagName: "audio"): HTMLAudioElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_object")
+  def createElement(tagName: "object"): HTMLObjectElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_fieldset")
+  def createElement(tagName: "fieldset"): HTMLFieldSetElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_meta")
+  def createElement(tagName: "meta"): HTMLMetaElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_meter")
+  def createElement(tagName: "meter"): HTMLMeterElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_s")
+  def createElement(tagName: "s"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_caption")
+  def createElement(tagName: "caption"): HTMLTableCaptionElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_base")
+  def createElement(tagName: "base"): HTMLBaseElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_details")
+  def createElement(tagName: "details"): HTMLDetailsElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_ul")
+  def createElement(tagName: "ul"): HTMLUListElement = js.native
+  /** @deprecated */
+  /* standard dom */
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_acronym")
+  def createElement(tagName: "acronym"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_tt")
+  def createElement(tagName: "tt"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_img")
+  def createElement(tagName: "img"): HTMLImageElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_aside")
+  def createElement(tagName: "aside"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_area")
+  def createElement(tagName: "area"): HTMLAreaElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_embed")
+  def createElement(tagName: "embed"): HTMLEmbedElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_option")
+  def createElement(tagName: "option"): HTMLOptionElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_basefont")
+  def createElement(tagName: "basefont"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_del")
+  def createElement(tagName: "del"): HTMLModElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_style")
+  def createElement(tagName: "style"): HTMLStyleElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_form")
+  def createElement(tagName: "form"): HTMLFormElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_thead")
+  def createElement(tagName: "thead"): HTMLTableSectionElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_listing")
+  def createElement(tagName: "listing"): HTMLPreElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_optgroup")
+  def createElement(tagName: "optgroup"): HTMLOptGroupElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_map")
+  def createElement(tagName: "map"): HTMLMapElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_small")
+  def createElement(tagName: "small"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_h3")
+  def createElement(tagName: "h3"): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_nav")
+  def createElement(tagName: "nav"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_rt")
+  def createElement(tagName: "rt"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_center")
+  def createElement(tagName: "center"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_strong")
+  def createElement(tagName: "strong"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_input")
+  def createElement(tagName: "input"): HTMLInputElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_footer")
+  def createElement(tagName: "footer"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_dd")
+  def createElement(tagName: "dd"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_track")
+  def createElement(tagName: "track"): HTMLTrackElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_keygen")
+  def createElement(tagName: "keygen"): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_applet")
+  def createElement(tagName: "applet"): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_q")
+  def createElement(tagName: "q"): HTMLQuoteElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_plaintext")
+  def createElement(tagName: "plaintext"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_main")
+  def createElement(tagName: "main"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_output")
+  def createElement(tagName: "output"): HTMLOutputElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_frameset")
+  def createElement(tagName: "frameset"): HTMLFrameSetElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_datalist")
+  def createElement(tagName: "datalist"): HTMLDataListElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_section")
+  def createElement(tagName: "section"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_samp")
+  def createElement(tagName: "samp"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_label")
+  def createElement(tagName: "label"): HTMLLabelElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_select")
+  def createElement(tagName: "select"): HTMLSelectElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_hr")
+  def createElement(tagName: "hr"): HTMLHRElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_dt")
+  def createElement(tagName: "dt"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_body")
+  def createElement(tagName: "body"): HTMLBodyElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_big")
+  def createElement(tagName: "big"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_br")
+  def createElement(tagName: "br"): HTMLBRElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_menuitem")
+  def createElement(tagName: "menuitem"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_blockquote")
+  def createElement(tagName: "blockquote"): HTMLQuoteElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_em")
+  def createElement(tagName: "em"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_figcaption")
+  def createElement(tagName: "figcaption"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_wbr")
+  def createElement(tagName: "wbr"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_link")
+  def createElement(tagName: "link"): HTMLLinkElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_canvas")
+  def createElement(tagName: "canvas"): HTMLCanvasElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_time")
+  def createElement(tagName: "time"): HTMLTimeElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_strike")
+  def createElement(tagName: "strike"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_tr")
+  def createElement(tagName: "tr"): HTMLTableRowElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_h4")
+  def createElement(tagName: "h4"): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_h1")
+  def createElement(tagName: "h1"): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_noframes")
+  def createElement(tagName: "noframes"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_slot")
+  def createElement(tagName: "slot"): HTMLSlotElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_h5")
+  def createElement(tagName: "h5"): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_dl")
+  def createElement(tagName: "dl"): HTMLDListElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_summary")
+  def createElement(tagName: "summary"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_menu")
+  def createElement(tagName: "menu"): HTMLMenuElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_dialog")
+  def createElement(tagName: "dialog"): HTMLDialogElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_sub")
+  def createElement(tagName: "sub"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_blink")
+  def createElement(tagName: "blink"): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_td")
+  def createElement(tagName: "td"): HTMLTableCellElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_param")
+  def createElement(tagName: "param"): HTMLParamElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_h2")
+  def createElement(tagName: "h2"): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_marquee")
+  def createElement(tagName: "marquee"): HTMLMarqueeElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_multicol")
+  def createElement(tagName: "multicol"): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_bdi")
+  def createElement(tagName: "bdi"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_article")
+  def createElement(tagName: "article"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_progress")
+  def createElement(tagName: "progress"): HTMLProgressElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_isindex")
+  def createElement(tagName: "isindex"): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_h6")
+  def createElement(tagName: "h6"): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_picture")
+  def createElement(tagName: "picture"): HTMLPictureElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_xmp")
+  def createElement(tagName: "xmp"): HTMLPreElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_pre")
+  def createElement(tagName: "pre"): HTMLPreElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_noscript")
+  def createElement(tagName: "noscript"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_legend")
+  def createElement(tagName: "legend"): HTMLLegendElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_noembed")
+  def createElement(tagName: "noembed"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_rb")
+  def createElement(tagName: "rb"): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_th")
+  def createElement(tagName: "th"): HTMLTableCellElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_iframe")
+  def createElement(tagName: "iframe"): HTMLIFrameElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_source")
+  def createElement(tagName: "source"): HTMLSourceElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_spacer")
+  def createElement(tagName: "spacer"): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_big")
+  def createElement(tagName: "big", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_p")
+  def createElement(tagName: "p", options: ElementCreationOptions): HTMLParagraphElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_footer")
+  def createElement(tagName: "footer", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_section")
+  def createElement(tagName: "section", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_body")
+  def createElement(tagName: "body", options: ElementCreationOptions): HTMLBodyElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_input")
+  def createElement(tagName: "input", options: ElementCreationOptions): HTMLInputElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_ul")
+  def createElement(tagName: "ul", options: ElementCreationOptions): HTMLUListElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_noframes")
+  def createElement(tagName: "noframes", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_mark")
+  def createElement(tagName: "mark", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_figure")
+  def createElement(tagName: "figure", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_menuitem")
+  def createElement(tagName: "menuitem", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_li")
+  def createElement(tagName: "li", options: ElementCreationOptions): HTMLLIElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_s")
+  def createElement(tagName: "s", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_embed")
+  def createElement(tagName: "embed", options: ElementCreationOptions): HTMLEmbedElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_audio")
+  def createElement(tagName: "audio", options: ElementCreationOptions): HTMLAudioElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_menu")
+  def createElement(tagName: "menu", options: ElementCreationOptions): HTMLMenuElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_title")
+  def createElement(tagName: "title", options: ElementCreationOptions): HTMLTitleElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_keygen")
+  def createElement(tagName: "keygen", options: ElementCreationOptions): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_figcaption")
+  def createElement(tagName: "figcaption", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_sub")
+  def createElement(tagName: "sub", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_picture")
+  def createElement(tagName: "picture", options: ElementCreationOptions): HTMLPictureElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_br")
+  def createElement(tagName: "br", options: ElementCreationOptions): HTMLBRElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_noscript")
+  def createElement(tagName: "noscript", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_kbd")
+  def createElement(tagName: "kbd", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_plaintext")
+  def createElement(tagName: "plaintext", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_tbody")
+  def createElement(tagName: "tbody", options: ElementCreationOptions): HTMLTableSectionElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_dl")
+  def createElement(tagName: "dl", options: ElementCreationOptions): HTMLDListElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_spacer")
+  def createElement(tagName: "spacer", options: ElementCreationOptions): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_noembed")
+  def createElement(tagName: "noembed", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_textarea")
+  def createElement(tagName: "textarea", options: ElementCreationOptions): HTMLTextAreaElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_optgroup")
+  def createElement(tagName: "optgroup", options: ElementCreationOptions): HTMLOptGroupElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_blockquote")
+  def createElement(tagName: "blockquote", options: ElementCreationOptions): HTMLQuoteElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_span")
+  def createElement(tagName: "span", options: ElementCreationOptions): HTMLSpanElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_pre")
+  def createElement(tagName: "pre", options: ElementCreationOptions): HTMLPreElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_em")
+  def createElement(tagName: "em", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_nobr")
+  def createElement(tagName: "nobr", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_rb")
+  def createElement(tagName: "rb", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_meta")
+  def createElement(tagName: "meta", options: ElementCreationOptions): HTMLMetaElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_center")
+  def createElement(tagName: "center", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_bdo")
+  def createElement(tagName: "bdo", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_h5")
+  def createElement(tagName: "h5", options: ElementCreationOptions): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_rt")
+  def createElement(tagName: "rt", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_fieldset")
+  def createElement(tagName: "fieldset", options: ElementCreationOptions): HTMLFieldSetElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_i")
+  def createElement(tagName: "i", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_template")
+  def createElement(tagName: "template", options: ElementCreationOptions): HTMLTemplateElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_multicol")
+  def createElement(tagName: "multicol", options: ElementCreationOptions): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_ins")
+  def createElement(tagName: "ins", options: ElementCreationOptions): HTMLModElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_samp")
+  def createElement(tagName: "samp", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_dir")
+  def createElement(tagName: "dir", options: ElementCreationOptions): HTMLDirectoryElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_font")
+  def createElement(tagName: "font", options: ElementCreationOptions): HTMLFontElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_article")
+  def createElement(tagName: "article", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_dfn")
+  def createElement(tagName: "dfn", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_select")
+  def createElement(tagName: "select", options: ElementCreationOptions): HTMLSelectElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_slot")
+  def createElement(tagName: "slot", options: ElementCreationOptions): HTMLSlotElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_th")
+  def createElement(tagName: "th", options: ElementCreationOptions): HTMLTableCellElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_bgsound")
+  def createElement(tagName: "bgsound", options: ElementCreationOptions): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_param")
+  def createElement(tagName: "param", options: ElementCreationOptions): HTMLParamElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_tt")
+  def createElement(tagName: "tt", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_main")
+  def createElement(tagName: "main", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_label")
+  def createElement(tagName: "label", options: ElementCreationOptions): HTMLLabelElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_h1")
+  def createElement(tagName: "h1", options: ElementCreationOptions): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_colgroup")
+  def createElement(tagName: "colgroup", options: ElementCreationOptions): HTMLTableColElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_col")
+  def createElement(tagName: "col", options: ElementCreationOptions): HTMLTableColElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_cite")
+  def createElement(tagName: "cite", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_area")
+  def createElement(tagName: "area", options: ElementCreationOptions): HTMLAreaElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_button")
+  def createElement(tagName: "button", options: ElementCreationOptions): HTMLButtonElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_listing")
+  def createElement(tagName: "listing", options: ElementCreationOptions): HTMLPreElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_rp")
+  def createElement(tagName: "rp", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_base")
+  def createElement(tagName: "base", options: ElementCreationOptions): HTMLBaseElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_source")
+  def createElement(tagName: "source", options: ElementCreationOptions): HTMLSourceElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_frameset")
+  def createElement(tagName: "frameset", options: ElementCreationOptions): HTMLFrameSetElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_head")
+  def createElement(tagName: "head", options: ElementCreationOptions): HTMLHeadElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_map")
+  def createElement(tagName: "map", options: ElementCreationOptions): HTMLMapElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_meter")
+  def createElement(tagName: "meter", options: ElementCreationOptions): HTMLMeterElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_basefont")
+  def createElement(tagName: "basefont", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_q")
+  def createElement(tagName: "q", options: ElementCreationOptions): HTMLQuoteElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_time")
+  def createElement(tagName: "time", options: ElementCreationOptions): HTMLTimeElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_data")
+  def createElement(tagName: "data", options: ElementCreationOptions): HTMLDataElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_strike")
+  def createElement(tagName: "strike", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_h4")
+  def createElement(tagName: "h4", options: ElementCreationOptions): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_summary")
+  def createElement(tagName: "summary", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_applet")
+  def createElement(tagName: "applet", options: ElementCreationOptions): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_video")
+  def createElement(tagName: "video", options: ElementCreationOptions): HTMLVideoElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_dt")
+  def createElement(tagName: "dt", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_tfoot")
+  def createElement(tagName: "tfoot", options: ElementCreationOptions): HTMLTableSectionElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_hgroup")
+  def createElement(tagName: "hgroup", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_nextid")
+  def createElement(tagName: "nextid", options: ElementCreationOptions): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_track")
+  def createElement(tagName: "track", options: ElementCreationOptions): HTMLTrackElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_header")
+  def createElement(tagName: "header", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_datalist")
+  def createElement(tagName: "datalist", options: ElementCreationOptions): HTMLDataListElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_abbr")
+  def createElement(tagName: "abbr", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_isindex")
+  def createElement(tagName: "isindex", options: ElementCreationOptions): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_blink")
+  def createElement(tagName: "blink", options: ElementCreationOptions): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_address")
+  def createElement(tagName: "address", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_marquee")
+  def createElement(tagName: "marquee", options: ElementCreationOptions): HTMLMarqueeElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_ruby")
+  def createElement(tagName: "ruby", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_code")
+  def createElement(tagName: "code", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_aside")
+  def createElement(tagName: "aside", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_frame")
+  def createElement(tagName: "frame", options: ElementCreationOptions): HTMLFrameElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_output")
+  def createElement(tagName: "output", options: ElementCreationOptions): HTMLOutputElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_acronym")
+  def createElement(tagName: "acronym", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_nav")
+  def createElement(tagName: "nav", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_sup")
+  def createElement(tagName: "sup", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_iframe")
+  def createElement(tagName: "iframe", options: ElementCreationOptions): HTMLIFrameElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_ol")
+  def createElement(tagName: "ol", options: ElementCreationOptions): HTMLOListElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_h6")
+  def createElement(tagName: "h6", options: ElementCreationOptions): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_xmp")
+  def createElement(tagName: "xmp", options: ElementCreationOptions): HTMLPreElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_div")
+  def createElement(tagName: "div", options: ElementCreationOptions): HTMLDivElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_wbr")
+  def createElement(tagName: "wbr", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_thead")
+  def createElement(tagName: "thead", options: ElementCreationOptions): HTMLTableSectionElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_h3")
+  def createElement(tagName: "h3", options: ElementCreationOptions): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_bdi")
+  def createElement(tagName: "bdi", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_h2")
+  def createElement(tagName: "h2", options: ElementCreationOptions): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_tr")
+  def createElement(tagName: "tr", options: ElementCreationOptions): HTMLTableRowElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_u")
+  def createElement(tagName: "u", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_script")
+  def createElement(tagName: "script", options: ElementCreationOptions): HTMLScriptElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_var")
+  def createElement(tagName: "var", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_option")
+  def createElement(tagName: "option", options: ElementCreationOptions): HTMLOptionElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_dialog")
+  def createElement(tagName: "dialog", options: ElementCreationOptions): HTMLDialogElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_details")
+  def createElement(tagName: "details", options: ElementCreationOptions): HTMLDetailsElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_html")
+  def createElement(tagName: "html", options: ElementCreationOptions): HTMLHtmlElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_canvas")
+  def createElement(tagName: "canvas", options: ElementCreationOptions): HTMLCanvasElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_a")
+  def createElement(tagName: "a", options: ElementCreationOptions): HTMLAnchorElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_small")
+  def createElement(tagName: "small", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_dd")
+  def createElement(tagName: "dd", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_rtc")
+  def createElement(tagName: "rtc", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_hr")
+  def createElement(tagName: "hr", options: ElementCreationOptions): HTMLHRElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_form")
+  def createElement(tagName: "form", options: ElementCreationOptions): HTMLFormElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_img")
+  def createElement(tagName: "img", options: ElementCreationOptions): HTMLImageElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_style")
+  def createElement(tagName: "style", options: ElementCreationOptions): HTMLStyleElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_td")
+  def createElement(tagName: "td", options: ElementCreationOptions): HTMLTableCellElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_progress")
+  def createElement(tagName: "progress", options: ElementCreationOptions): HTMLProgressElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_object")
+  def createElement(tagName: "object", options: ElementCreationOptions): HTMLObjectElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_table")
+  def createElement(tagName: "table", options: ElementCreationOptions): HTMLTableElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_strong")
+  def createElement(tagName: "strong", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_b")
+  def createElement(tagName: "b", options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_caption")
+  def createElement(tagName: "caption", options: ElementCreationOptions): HTMLTableCaptionElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_legend")
+  def createElement(tagName: "legend", options: ElementCreationOptions): HTMLLegendElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_del")
+  def createElement(tagName: "del", options: ElementCreationOptions): HTMLModElement = js.native
+  @JSName("createElement")
+  @scala.annotation.targetName("createElement_link")
+  def createElement(tagName: "link", options: ElementCreationOptions): HTMLLinkElement = js.native
   /* standard dom */
   def createElement(tagName: java.lang.String): HTMLElement = js.native
   def createElement(tagName: java.lang.String, options: ElementCreationOptions): HTMLElement = js.native
   
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_animate")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "animate"): SVGAnimateElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feGaussianBlur")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feGaussianBlur"): SVGFEGaussianBlurElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_line")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "line"): SVGLineElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feConvolveMatrix")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feConvolveMatrix"): SVGFEConvolveMatrixElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_svg")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "svg"): SVGSVGElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feFuncG")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feFuncG"): SVGFEFuncGElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_stop")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "stop"): SVGStopElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_rect")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "rect"): SVGRectElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feMergeNode")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feMergeNode"): SVGFEMergeNodeElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feDropShadow")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feDropShadow"): SVGFEDropShadowElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_polygon")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "polygon"): SVGPolygonElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_foreignObject")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "foreignObject"): SVGForeignObjectElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feBlend")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feBlend"): SVGFEBlendElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_desc")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "desc"): SVGDescElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_mpath")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "mpath"): SVGMPathElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feFuncA")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feFuncA"): SVGFEFuncAElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_pattern")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "pattern"): SVGPatternElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_textPath")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "textPath"): SVGTextPathElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feColorMatrix")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feColorMatrix"): SVGFEColorMatrixElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_animateMotion")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "animateMotion"): SVGAnimateMotionElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_clipPath")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "clipPath"): SVGClipPathElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_title")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "title"): SVGTitleElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feDisplacementMap")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feDisplacementMap"): SVGFEDisplacementMapElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_use")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "use"): SVGUseElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feTile")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feTile"): SVGFETileElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_view")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "view"): SVGViewElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_filter")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "filter"): SVGFilterElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_circle")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "circle"): SVGCircleElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feMerge")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feMerge"): SVGFEMergeElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_set")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "set"): SVGSetElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feMorphology")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feMorphology"): SVGFEMorphologyElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feTurbulence")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feTurbulence"): SVGFETurbulenceElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_radialGradient")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "radialGradient"): SVGRadialGradientElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_image")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "image"): SVGImageElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_defs")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "defs"): SVGDefsElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_linearGradient")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "linearGradient"): SVGLinearGradientElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feComponentTransfer")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feComponentTransfer"): SVGFEComponentTransferElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_polyline")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "polyline"): SVGPolylineElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feSpotLight")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feSpotLight"): SVGFESpotLightElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_animateTransform")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "animateTransform"): SVGAnimateTransformElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_fePointLight")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "fePointLight"): SVGFEPointLightElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feFlood")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feFlood"): SVGFEFloodElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feImage")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feImage"): SVGFEImageElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feOffset")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feOffset"): SVGFEOffsetElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_mask")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "mask"): SVGMaskElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_script")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "script"): SVGScriptElement = js.native
   /* standard dom */
-  def createElementNS(namespaceURI: java.lang.String, qualifiedName: java.lang.String): Element = js.native
-  def createElementNS(namespaceURI: java.lang.String, qualifiedName: java.lang.String, options: ElementCreationOptions): Element = js.native
-  def createElementNS(namespaceURI: Null, qualifiedName: java.lang.String): Element = js.native
-  def createElementNS(namespaceURI: Null, qualifiedName: java.lang.String, options: ElementCreationOptions): Element = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_a")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "a"): SVGAElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feFuncB")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feFuncB"): SVGFEFuncBElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feSpecularLighting")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feSpecularLighting"): SVGFESpecularLightingElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_tspan")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "tspan"): SVGTSpanElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_path")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "path"): SVGPathElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_marker")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "marker"): SVGMarkerElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_style")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "style"): SVGStyleElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_symbol")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "symbol"): SVGSymbolElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_ellipse")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "ellipse"): SVGEllipseElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_switch")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "switch"): SVGSwitchElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feDistantLight")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feDistantLight"): SVGFEDistantLightElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feFuncR")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feFuncR"): SVGFEFuncRElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feDiffuseLighting")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feDiffuseLighting"): SVGFEDiffuseLightingElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_metadata")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "metadata"): SVGMetadataElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_text")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "text"): SVGTextElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_feComposite")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "feComposite"): SVGFECompositeElement = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg_g")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: "g"): SVGGElement = js.native
   /* standard dom */
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: a): SVGAElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: animate): SVGAnimateElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: animateMotion): SVGAnimateMotionElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: animateTransform): SVGAnimateTransformElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: circle): SVGCircleElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: clipPath): SVGClipPathElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: defs): SVGDefsElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: desc): SVGDescElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: ellipse): SVGEllipseElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feBlend): SVGFEBlendElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feColorMatrix): SVGFEColorMatrixElement = js.native
-  def createElementNS(
-    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg,
-    qualifiedName: feComponentTransfer
-  ): SVGFEComponentTransferElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feComposite): SVGFECompositeElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feConvolveMatrix): SVGFEConvolveMatrixElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feDiffuseLighting): SVGFEDiffuseLightingElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feDisplacementMap): SVGFEDisplacementMapElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feDistantLight): SVGFEDistantLightElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feDropShadow): SVGFEDropShadowElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feFlood): SVGFEFloodElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feFuncA): SVGFEFuncAElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feFuncB): SVGFEFuncBElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feFuncG): SVGFEFuncGElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feFuncR): SVGFEFuncRElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feGaussianBlur): SVGFEGaussianBlurElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feImage): SVGFEImageElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feMerge): SVGFEMergeElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feMergeNode): SVGFEMergeNodeElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feMorphology): SVGFEMorphologyElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feOffset): SVGFEOffsetElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: fePointLight): SVGFEPointLightElement = js.native
-  def createElementNS(
-    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg,
-    qualifiedName: feSpecularLighting
-  ): SVGFESpecularLightingElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feSpotLight): SVGFESpotLightElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feTile): SVGFETileElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feTurbulence): SVGFETurbulenceElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: filter): SVGFilterElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: foreignObject): SVGForeignObjectElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: g): SVGGElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: image): SVGImageElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: line): SVGLineElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: linearGradient): SVGLinearGradientElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: marker): SVGMarkerElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: mask): SVGMaskElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: metadata): SVGMetadataElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: mpath): SVGMPathElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: path): SVGPathElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: pattern): SVGPatternElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: polygon): SVGPolygonElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: polyline): SVGPolylineElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: radialGradient): SVGRadialGradientElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: rect): SVGRectElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: script): SVGScriptElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: set): SVGSetElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: stop): SVGStopElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: style): SVGStyleElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: svg): SVGSVGElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: switch): SVGSwitchElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: symbol): SVGSymbolElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: text): SVGTextElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: textPath): SVGTextPathElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: title): SVGTitleElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: tspan): SVGTSpanElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: use): SVGUseElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: view): SVGViewElement = js.native
-  def createElementNS(namespace: java.lang.String, qualifiedName: java.lang.String, options: java.lang.String): Element = js.native
-  def createElementNS(namespace: Null, qualifiedName: java.lang.String, options: java.lang.String): Element = js.native
+  @JSName("createElementNS")
+  @scala.annotation.targetName("createElementNS_httpwwww3org2000svg")
+  def createElementNS(namespaceURI: "http://www.w3.org/2000/svg", qualifiedName: java.lang.String): SVGElement = js.native
   /**
     * Returns an element with namespace namespace. Its namespace prefix will be everything before ":" (U+003E) in qualifiedName or null. Its local name will be everything after ":" (U+003E) in qualifiedName or qualifiedName.
     *
@@ -557,761 +1331,254 @@ trait Document
     */
   /* standard dom */
   @JSName("createElementNS")
-  def createElementNS_httpwwww3org1999xhtml(
-    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml,
-    qualifiedName: java.lang.String
-  ): HTMLElement = js.native
+  @scala.annotation.targetName("createElementNS_httpwwww3org1999xhtml")
+  def createElementNS(namespaceURI: "http://www.w3.org/1999/xhtml", qualifiedName: java.lang.String): HTMLElement = js.native
   /* standard dom */
-  @JSName("createElementNS")
-  def createElementNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: java.lang.String): SVGElement = js.native
+  def createElementNS(namespaceURI: java.lang.String, qualifiedName: java.lang.String): Element = js.native
+  def createElementNS(namespaceURI: java.lang.String, qualifiedName: java.lang.String, options: ElementCreationOptions): Element = js.native
+  def createElementNS(namespaceURI: Null, qualifiedName: java.lang.String): Element = js.native
+  def createElementNS(namespaceURI: Null, qualifiedName: java.lang.String, options: ElementCreationOptions): Element = js.native
+  def createElementNS(namespace: java.lang.String, qualifiedName: java.lang.String, options: java.lang.String): Element = js.native
+  def createElementNS(namespace: Null, qualifiedName: java.lang.String, options: java.lang.String): Element = js.native
   
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   /* standard dom */
-  @JSName("createElement")
-  def createElement_a(tagName: a): HTMLAnchorElement = js.native
-  @JSName("createElement")
-  def createElement_a(tagName: a, options: ElementCreationOptions): HTMLAnchorElement = js.native
-  @JSName("createElement")
-  def createElement_abbr(tagName: abbr): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_abbr(tagName: abbr, options: ElementCreationOptions): HTMLElement = js.native
-  /** @deprecated */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_WebGLContextEvent")
+  def createEvent(eventInterface: "WebGLContextEvent"): WebGLContextEvent = js.native
   /* standard dom */
-  @JSName("createElement")
-  def createElement_acronym(tagName: acronym): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_acronym(tagName: acronym, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_address(tagName: address): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_address(tagName: address, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_applet(tagName: applet): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_applet(tagName: applet, options: ElementCreationOptions): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_area(tagName: area): HTMLAreaElement = js.native
-  @JSName("createElement")
-  def createElement_area(tagName: area, options: ElementCreationOptions): HTMLAreaElement = js.native
-  @JSName("createElement")
-  def createElement_article(tagName: article): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_article(tagName: article, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_aside(tagName: aside): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_aside(tagName: aside, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_audio(tagName: audio): HTMLAudioElement = js.native
-  @JSName("createElement")
-  def createElement_audio(tagName: audio, options: ElementCreationOptions): HTMLAudioElement = js.native
-  @JSName("createElement")
-  def createElement_b(tagName: b): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_b(tagName: b, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_base(tagName: base): HTMLBaseElement = js.native
-  @JSName("createElement")
-  def createElement_base(tagName: base, options: ElementCreationOptions): HTMLBaseElement = js.native
-  @JSName("createElement")
-  def createElement_basefont(tagName: basefont): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_basefont(tagName: basefont, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_bdi(tagName: bdi): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_bdi(tagName: bdi, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_bdo(tagName: bdo): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_bdo(tagName: bdo, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_bgsound(tagName: bgsound): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_bgsound(tagName: bgsound, options: ElementCreationOptions): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_big(tagName: big): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_big(tagName: big, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_blink(tagName: blink): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_blink(tagName: blink, options: ElementCreationOptions): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_blockquote(tagName: blockquote): HTMLQuoteElement = js.native
-  @JSName("createElement")
-  def createElement_blockquote(tagName: blockquote, options: ElementCreationOptions): HTMLQuoteElement = js.native
-  @JSName("createElement")
-  def createElement_body(tagName: body): HTMLBodyElement = js.native
-  @JSName("createElement")
-  def createElement_body(tagName: body, options: ElementCreationOptions): HTMLBodyElement = js.native
-  @JSName("createElement")
-  def createElement_br(tagName: br): HTMLBRElement = js.native
-  @JSName("createElement")
-  def createElement_br(tagName: br, options: ElementCreationOptions): HTMLBRElement = js.native
-  @JSName("createElement")
-  def createElement_button(tagName: button): HTMLButtonElement = js.native
-  @JSName("createElement")
-  def createElement_button(tagName: button, options: ElementCreationOptions): HTMLButtonElement = js.native
-  @JSName("createElement")
-  def createElement_canvas(tagName: canvas): HTMLCanvasElement = js.native
-  @JSName("createElement")
-  def createElement_canvas(tagName: canvas, options: ElementCreationOptions): HTMLCanvasElement = js.native
-  @JSName("createElement")
-  def createElement_caption(tagName: caption): HTMLTableCaptionElement = js.native
-  @JSName("createElement")
-  def createElement_caption(tagName: caption, options: ElementCreationOptions): HTMLTableCaptionElement = js.native
-  @JSName("createElement")
-  def createElement_center(tagName: center): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_center(tagName: center, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_cite(tagName: cite): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_cite(tagName: cite, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_code(tagName: code): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_code(tagName: code, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_col(tagName: col): HTMLTableColElement = js.native
-  @JSName("createElement")
-  def createElement_col(tagName: col, options: ElementCreationOptions): HTMLTableColElement = js.native
-  @JSName("createElement")
-  def createElement_colgroup(tagName: colgroup): HTMLTableColElement = js.native
-  @JSName("createElement")
-  def createElement_colgroup(tagName: colgroup, options: ElementCreationOptions): HTMLTableColElement = js.native
-  @JSName("createElement")
-  def createElement_data(tagName: data): HTMLDataElement = js.native
-  @JSName("createElement")
-  def createElement_data(tagName: data, options: ElementCreationOptions): HTMLDataElement = js.native
-  @JSName("createElement")
-  def createElement_datalist(tagName: datalist): HTMLDataListElement = js.native
-  @JSName("createElement")
-  def createElement_datalist(tagName: datalist, options: ElementCreationOptions): HTMLDataListElement = js.native
-  @JSName("createElement")
-  def createElement_dd(tagName: dd): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_dd(tagName: dd, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_del(tagName: del): HTMLModElement = js.native
-  @JSName("createElement")
-  def createElement_del(tagName: del, options: ElementCreationOptions): HTMLModElement = js.native
-  @JSName("createElement")
-  def createElement_details(tagName: details): HTMLDetailsElement = js.native
-  @JSName("createElement")
-  def createElement_details(tagName: details, options: ElementCreationOptions): HTMLDetailsElement = js.native
-  @JSName("createElement")
-  def createElement_dfn(tagName: dfn): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_dfn(tagName: dfn, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_dialog(tagName: dialog): HTMLDialogElement = js.native
-  @JSName("createElement")
-  def createElement_dialog(tagName: dialog, options: ElementCreationOptions): HTMLDialogElement = js.native
-  @JSName("createElement")
-  def createElement_dir(tagName: dir): HTMLDirectoryElement = js.native
-  @JSName("createElement")
-  def createElement_dir(tagName: dir, options: ElementCreationOptions): HTMLDirectoryElement = js.native
-  @JSName("createElement")
-  def createElement_div(tagName: div): HTMLDivElement = js.native
-  @JSName("createElement")
-  def createElement_div(tagName: div, options: ElementCreationOptions): HTMLDivElement = js.native
-  @JSName("createElement")
-  def createElement_dl(tagName: dl): HTMLDListElement = js.native
-  @JSName("createElement")
-  def createElement_dl(tagName: dl, options: ElementCreationOptions): HTMLDListElement = js.native
-  @JSName("createElement")
-  def createElement_dt(tagName: dt): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_dt(tagName: dt, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_em(tagName: em): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_em(tagName: em, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_embed(tagName: embed): HTMLEmbedElement = js.native
-  @JSName("createElement")
-  def createElement_embed(tagName: embed, options: ElementCreationOptions): HTMLEmbedElement = js.native
-  @JSName("createElement")
-  def createElement_fieldset(tagName: fieldset): HTMLFieldSetElement = js.native
-  @JSName("createElement")
-  def createElement_fieldset(tagName: fieldset, options: ElementCreationOptions): HTMLFieldSetElement = js.native
-  @JSName("createElement")
-  def createElement_figcaption(tagName: figcaption): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_figcaption(tagName: figcaption, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_figure(tagName: figure): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_figure(tagName: figure, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_font(tagName: font): HTMLFontElement = js.native
-  @JSName("createElement")
-  def createElement_font(tagName: font, options: ElementCreationOptions): HTMLFontElement = js.native
-  @JSName("createElement")
-  def createElement_footer(tagName: footer): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_footer(tagName: footer, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_form(tagName: form): HTMLFormElement = js.native
-  @JSName("createElement")
-  def createElement_form(tagName: form, options: ElementCreationOptions): HTMLFormElement = js.native
-  @JSName("createElement")
-  def createElement_frame(tagName: frame): HTMLFrameElement = js.native
-  @JSName("createElement")
-  def createElement_frame(tagName: frame, options: ElementCreationOptions): HTMLFrameElement = js.native
-  @JSName("createElement")
-  def createElement_frameset(tagName: frameset): HTMLFrameSetElement = js.native
-  @JSName("createElement")
-  def createElement_frameset(tagName: frameset, options: ElementCreationOptions): HTMLFrameSetElement = js.native
-  @JSName("createElement")
-  def createElement_h1(tagName: h1): HTMLHeadingElement = js.native
-  @JSName("createElement")
-  def createElement_h1(tagName: h1, options: ElementCreationOptions): HTMLHeadingElement = js.native
-  @JSName("createElement")
-  def createElement_h2(tagName: h2): HTMLHeadingElement = js.native
-  @JSName("createElement")
-  def createElement_h2(tagName: h2, options: ElementCreationOptions): HTMLHeadingElement = js.native
-  @JSName("createElement")
-  def createElement_h3(tagName: h3): HTMLHeadingElement = js.native
-  @JSName("createElement")
-  def createElement_h3(tagName: h3, options: ElementCreationOptions): HTMLHeadingElement = js.native
-  @JSName("createElement")
-  def createElement_h4(tagName: h4): HTMLHeadingElement = js.native
-  @JSName("createElement")
-  def createElement_h4(tagName: h4, options: ElementCreationOptions): HTMLHeadingElement = js.native
-  @JSName("createElement")
-  def createElement_h5(tagName: h5): HTMLHeadingElement = js.native
-  @JSName("createElement")
-  def createElement_h5(tagName: h5, options: ElementCreationOptions): HTMLHeadingElement = js.native
-  @JSName("createElement")
-  def createElement_h6(tagName: h6): HTMLHeadingElement = js.native
-  @JSName("createElement")
-  def createElement_h6(tagName: h6, options: ElementCreationOptions): HTMLHeadingElement = js.native
-  @JSName("createElement")
-  def createElement_head(tagName: typings.std.stdStrings.head): HTMLHeadElement = js.native
-  @JSName("createElement")
-  def createElement_head(tagName: typings.std.stdStrings.head, options: ElementCreationOptions): HTMLHeadElement = js.native
-  @JSName("createElement")
-  def createElement_header(tagName: header): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_header(tagName: header, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_hgroup(tagName: hgroup): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_hgroup(tagName: hgroup, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_hr(tagName: hr): HTMLHRElement = js.native
-  @JSName("createElement")
-  def createElement_hr(tagName: hr, options: ElementCreationOptions): HTMLHRElement = js.native
-  @JSName("createElement")
-  def createElement_html(tagName: html): HTMLHtmlElement = js.native
-  @JSName("createElement")
-  def createElement_html(tagName: html, options: ElementCreationOptions): HTMLHtmlElement = js.native
-  @JSName("createElement")
-  def createElement_i(tagName: i): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_i(tagName: i, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_iframe(tagName: iframe): HTMLIFrameElement = js.native
-  @JSName("createElement")
-  def createElement_iframe(tagName: iframe, options: ElementCreationOptions): HTMLIFrameElement = js.native
-  @JSName("createElement")
-  def createElement_img(tagName: img): HTMLImageElement = js.native
-  @JSName("createElement")
-  def createElement_img(tagName: img, options: ElementCreationOptions): HTMLImageElement = js.native
-  @JSName("createElement")
-  def createElement_input(tagName: input): HTMLInputElement = js.native
-  @JSName("createElement")
-  def createElement_input(tagName: input, options: ElementCreationOptions): HTMLInputElement = js.native
-  @JSName("createElement")
-  def createElement_ins(tagName: ins): HTMLModElement = js.native
-  @JSName("createElement")
-  def createElement_ins(tagName: ins, options: ElementCreationOptions): HTMLModElement = js.native
-  @JSName("createElement")
-  def createElement_isindex(tagName: isindex): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_isindex(tagName: isindex, options: ElementCreationOptions): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_kbd(tagName: kbd): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_kbd(tagName: kbd, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_keygen(tagName: keygen): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_keygen(tagName: keygen, options: ElementCreationOptions): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_label(tagName: label): HTMLLabelElement = js.native
-  @JSName("createElement")
-  def createElement_label(tagName: label, options: ElementCreationOptions): HTMLLabelElement = js.native
-  @JSName("createElement")
-  def createElement_legend(tagName: legend): HTMLLegendElement = js.native
-  @JSName("createElement")
-  def createElement_legend(tagName: legend, options: ElementCreationOptions): HTMLLegendElement = js.native
-  @JSName("createElement")
-  def createElement_li(tagName: li): HTMLLIElement = js.native
-  @JSName("createElement")
-  def createElement_li(tagName: li, options: ElementCreationOptions): HTMLLIElement = js.native
-  @JSName("createElement")
-  def createElement_link(tagName: link): HTMLLinkElement = js.native
-  @JSName("createElement")
-  def createElement_link(tagName: link, options: ElementCreationOptions): HTMLLinkElement = js.native
-  @JSName("createElement")
-  def createElement_listing(tagName: listing): HTMLPreElement = js.native
-  @JSName("createElement")
-  def createElement_listing(tagName: listing, options: ElementCreationOptions): HTMLPreElement = js.native
-  @JSName("createElement")
-  def createElement_main(tagName: main): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_main(tagName: main, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_map(tagName: map): HTMLMapElement = js.native
-  @JSName("createElement")
-  def createElement_map(tagName: map, options: ElementCreationOptions): HTMLMapElement = js.native
-  @JSName("createElement")
-  def createElement_mark(tagName: mark): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_mark(tagName: mark, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_marquee(tagName: marquee): HTMLMarqueeElement = js.native
-  @JSName("createElement")
-  def createElement_marquee(tagName: marquee, options: ElementCreationOptions): HTMLMarqueeElement = js.native
-  @JSName("createElement")
-  def createElement_menu(tagName: menu): HTMLMenuElement = js.native
-  @JSName("createElement")
-  def createElement_menu(tagName: menu, options: ElementCreationOptions): HTMLMenuElement = js.native
-  @JSName("createElement")
-  def createElement_menuitem(tagName: menuitem): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_menuitem(tagName: menuitem, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_meta(tagName: meta): HTMLMetaElement = js.native
-  @JSName("createElement")
-  def createElement_meta(tagName: meta, options: ElementCreationOptions): HTMLMetaElement = js.native
-  @JSName("createElement")
-  def createElement_meter(tagName: meter): HTMLMeterElement = js.native
-  @JSName("createElement")
-  def createElement_meter(tagName: meter, options: ElementCreationOptions): HTMLMeterElement = js.native
-  @JSName("createElement")
-  def createElement_multicol(tagName: multicol): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_multicol(tagName: multicol, options: ElementCreationOptions): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_nav(tagName: nav): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_nav(tagName: nav, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_nextid(tagName: nextid): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_nextid(tagName: nextid, options: ElementCreationOptions): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_nobr(tagName: nobr): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_nobr(tagName: nobr, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_noembed(tagName: noembed): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_noembed(tagName: noembed, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_noframes(tagName: noframes): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_noframes(tagName: noframes, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_noscript(tagName: noscript): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_noscript(tagName: noscript, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_object(tagName: `object`): HTMLObjectElement = js.native
-  @JSName("createElement")
-  def createElement_object(tagName: `object`, options: ElementCreationOptions): HTMLObjectElement = js.native
-  @JSName("createElement")
-  def createElement_ol(tagName: ol): HTMLOListElement = js.native
-  @JSName("createElement")
-  def createElement_ol(tagName: ol, options: ElementCreationOptions): HTMLOListElement = js.native
-  @JSName("createElement")
-  def createElement_optgroup(tagName: optgroup): HTMLOptGroupElement = js.native
-  @JSName("createElement")
-  def createElement_optgroup(tagName: optgroup, options: ElementCreationOptions): HTMLOptGroupElement = js.native
-  @JSName("createElement")
-  def createElement_option(tagName: option): HTMLOptionElement = js.native
-  @JSName("createElement")
-  def createElement_option(tagName: option, options: ElementCreationOptions): HTMLOptionElement = js.native
-  @JSName("createElement")
-  def createElement_output(tagName: output): HTMLOutputElement = js.native
-  @JSName("createElement")
-  def createElement_output(tagName: output, options: ElementCreationOptions): HTMLOutputElement = js.native
-  @JSName("createElement")
-  def createElement_p(tagName: p): HTMLParagraphElement = js.native
-  @JSName("createElement")
-  def createElement_p(tagName: p, options: ElementCreationOptions): HTMLParagraphElement = js.native
-  @JSName("createElement")
-  def createElement_param(tagName: param): HTMLParamElement = js.native
-  @JSName("createElement")
-  def createElement_param(tagName: param, options: ElementCreationOptions): HTMLParamElement = js.native
-  @JSName("createElement")
-  def createElement_picture(tagName: picture): HTMLPictureElement = js.native
-  @JSName("createElement")
-  def createElement_picture(tagName: picture, options: ElementCreationOptions): HTMLPictureElement = js.native
-  @JSName("createElement")
-  def createElement_plaintext(tagName: plaintext): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_plaintext(tagName: plaintext, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_pre(tagName: pre): HTMLPreElement = js.native
-  @JSName("createElement")
-  def createElement_pre(tagName: pre, options: ElementCreationOptions): HTMLPreElement = js.native
-  @JSName("createElement")
-  def createElement_progress(tagName: progress): HTMLProgressElement = js.native
-  @JSName("createElement")
-  def createElement_progress(tagName: progress, options: ElementCreationOptions): HTMLProgressElement = js.native
-  @JSName("createElement")
-  def createElement_q(tagName: q): HTMLQuoteElement = js.native
-  @JSName("createElement")
-  def createElement_q(tagName: q, options: ElementCreationOptions): HTMLQuoteElement = js.native
-  @JSName("createElement")
-  def createElement_rb(tagName: rb): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_rb(tagName: rb, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_rp(tagName: rp): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_rp(tagName: rp, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_rt(tagName: rt): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_rt(tagName: rt, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_rtc(tagName: rtc): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_rtc(tagName: rtc, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_ruby(tagName: ruby): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_ruby(tagName: ruby, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_s(tagName: s): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_s(tagName: s, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_samp(tagName: samp): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_samp(tagName: samp, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_script(tagName: script): HTMLScriptElement = js.native
-  @JSName("createElement")
-  def createElement_script(tagName: script, options: ElementCreationOptions): HTMLScriptElement = js.native
-  @JSName("createElement")
-  def createElement_section(tagName: section): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_section(tagName: section, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_select(tagName: select): HTMLSelectElement = js.native
-  @JSName("createElement")
-  def createElement_select(tagName: select, options: ElementCreationOptions): HTMLSelectElement = js.native
-  @JSName("createElement")
-  def createElement_slot(tagName: slot): HTMLSlotElement = js.native
-  @JSName("createElement")
-  def createElement_slot(tagName: slot, options: ElementCreationOptions): HTMLSlotElement = js.native
-  @JSName("createElement")
-  def createElement_small(tagName: small): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_small(tagName: small, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_source(tagName: source): HTMLSourceElement = js.native
-  @JSName("createElement")
-  def createElement_source(tagName: source, options: ElementCreationOptions): HTMLSourceElement = js.native
-  @JSName("createElement")
-  def createElement_spacer(tagName: spacer): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_spacer(tagName: spacer, options: ElementCreationOptions): HTMLUnknownElement = js.native
-  @JSName("createElement")
-  def createElement_span(tagName: span): HTMLSpanElement = js.native
-  @JSName("createElement")
-  def createElement_span(tagName: span, options: ElementCreationOptions): HTMLSpanElement = js.native
-  @JSName("createElement")
-  def createElement_strike(tagName: strike): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_strike(tagName: strike, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_strong(tagName: strong): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_strong(tagName: strong, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_style(tagName: style): HTMLStyleElement = js.native
-  @JSName("createElement")
-  def createElement_style(tagName: style, options: ElementCreationOptions): HTMLStyleElement = js.native
-  @JSName("createElement")
-  def createElement_sub(tagName: sub): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_sub(tagName: sub, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_summary(tagName: summary): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_summary(tagName: summary, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_sup(tagName: sup): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_sup(tagName: sup, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_table(tagName: table): HTMLTableElement = js.native
-  @JSName("createElement")
-  def createElement_table(tagName: table, options: ElementCreationOptions): HTMLTableElement = js.native
-  @JSName("createElement")
-  def createElement_tbody(tagName: tbody): HTMLTableSectionElement = js.native
-  @JSName("createElement")
-  def createElement_tbody(tagName: tbody, options: ElementCreationOptions): HTMLTableSectionElement = js.native
-  @JSName("createElement")
-  def createElement_td(tagName: td): HTMLTableCellElement = js.native
-  @JSName("createElement")
-  def createElement_td(tagName: td, options: ElementCreationOptions): HTMLTableCellElement = js.native
-  @JSName("createElement")
-  def createElement_template(tagName: template): HTMLTemplateElement = js.native
-  @JSName("createElement")
-  def createElement_template(tagName: template, options: ElementCreationOptions): HTMLTemplateElement = js.native
-  @JSName("createElement")
-  def createElement_textarea(tagName: textarea): HTMLTextAreaElement = js.native
-  @JSName("createElement")
-  def createElement_textarea(tagName: textarea, options: ElementCreationOptions): HTMLTextAreaElement = js.native
-  @JSName("createElement")
-  def createElement_tfoot(tagName: tfoot): HTMLTableSectionElement = js.native
-  @JSName("createElement")
-  def createElement_tfoot(tagName: tfoot, options: ElementCreationOptions): HTMLTableSectionElement = js.native
-  @JSName("createElement")
-  def createElement_th(tagName: th): HTMLTableCellElement = js.native
-  @JSName("createElement")
-  def createElement_th(tagName: th, options: ElementCreationOptions): HTMLTableCellElement = js.native
-  @JSName("createElement")
-  def createElement_thead(tagName: thead): HTMLTableSectionElement = js.native
-  @JSName("createElement")
-  def createElement_thead(tagName: thead, options: ElementCreationOptions): HTMLTableSectionElement = js.native
-  @JSName("createElement")
-  def createElement_time(tagName: time): HTMLTimeElement = js.native
-  @JSName("createElement")
-  def createElement_time(tagName: time, options: ElementCreationOptions): HTMLTimeElement = js.native
-  @JSName("createElement")
-  def createElement_title(tagName: title): HTMLTitleElement = js.native
-  @JSName("createElement")
-  def createElement_title(tagName: title, options: ElementCreationOptions): HTMLTitleElement = js.native
-  @JSName("createElement")
-  def createElement_tr(tagName: tr): HTMLTableRowElement = js.native
-  @JSName("createElement")
-  def createElement_tr(tagName: tr, options: ElementCreationOptions): HTMLTableRowElement = js.native
-  @JSName("createElement")
-  def createElement_track(tagName: track): HTMLTrackElement = js.native
-  @JSName("createElement")
-  def createElement_track(tagName: track, options: ElementCreationOptions): HTMLTrackElement = js.native
-  @JSName("createElement")
-  def createElement_tt(tagName: tt): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_tt(tagName: tt, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_u(tagName: u): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_u(tagName: u, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_ul(tagName: ul): HTMLUListElement = js.native
-  @JSName("createElement")
-  def createElement_ul(tagName: ul, options: ElementCreationOptions): HTMLUListElement = js.native
-  @JSName("createElement")
-  def createElement_var(tagName: `var`): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_var(tagName: `var`, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_video(tagName: video): HTMLVideoElement = js.native
-  @JSName("createElement")
-  def createElement_video(tagName: video, options: ElementCreationOptions): HTMLVideoElement = js.native
-  @JSName("createElement")
-  def createElement_wbr(tagName: wbr): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_wbr(tagName: wbr, options: ElementCreationOptions): HTMLElement = js.native
-  @JSName("createElement")
-  def createElement_xmp(tagName: xmp): HTMLPreElement = js.native
-  @JSName("createElement")
-  def createElement_xmp(tagName: xmp, options: ElementCreationOptions): HTMLPreElement = js.native
-  
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_DeviceMotionEvent")
+  def createEvent(eventInterface: "DeviceMotionEvent"): DeviceMotionEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_RTCPeerConnectionIceEvent")
+  def createEvent(eventInterface: "RTCPeerConnectionIceEvent"): RTCPeerConnectionIceEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_FontFaceSetLoadEvent")
+  def createEvent(eventInterface: "FontFaceSetLoadEvent"): FontFaceSetLoadEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_DeviceOrientationEvent")
+  def createEvent(eventInterface: "DeviceOrientationEvent"): DeviceOrientationEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_OfflineAudioCompletionEvent")
+  def createEvent(eventInterface: "OfflineAudioCompletionEvent"): OfflineAudioCompletionEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_PaymentMethodChangeEvent")
+  def createEvent(eventInterface: "PaymentMethodChangeEvent"): PaymentMethodChangeEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_MediaKeyMessageEvent")
+  def createEvent(eventInterface: "MediaKeyMessageEvent"): MediaKeyMessageEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_MutationEvents")
+  def createEvent(eventInterface: "MutationEvents"): MutationEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_PictureInPictureEvent")
+  def createEvent(eventInterface: "PictureInPictureEvent"): PictureInPictureEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_HashChangeEvent")
+  def createEvent(eventInterface: "HashChangeEvent"): HashChangeEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_Event")
+  def createEvent(eventInterface: "Event"): Event = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_UIEvent")
+  def createEvent(eventInterface: "UIEvent"): UIEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_RTCErrorEvent")
+  def createEvent(eventInterface: "RTCErrorEvent"): RTCErrorEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_RTCPeerConnectionIceErrorEvent")
+  def createEvent(eventInterface: "RTCPeerConnectionIceErrorEvent"): RTCPeerConnectionIceErrorEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_PageTransitionEvent")
+  def createEvent(eventInterface: "PageTransitionEvent"): PageTransitionEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_IDBVersionChangeEvent")
+  def createEvent(eventInterface: "IDBVersionChangeEvent"): IDBVersionChangeEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_SubmitEvent")
+  def createEvent(eventInterface: "SubmitEvent"): SubmitEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_GamepadEvent")
+  def createEvent(eventInterface: "GamepadEvent"): GamepadEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_Events")
+  def createEvent(eventInterface: "Events"): Event = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_SecurityPolicyViolationEvent")
+  def createEvent(eventInterface: "SecurityPolicyViolationEvent"): SecurityPolicyViolationEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_StorageEvent")
+  def createEvent(eventInterface: "StorageEvent"): StorageEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_BlobEvent")
+  def createEvent(eventInterface: "BlobEvent"): BlobEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_DragEvent")
+  def createEvent(eventInterface: "DragEvent"): DragEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_PopStateEvent")
+  def createEvent(eventInterface: "PopStateEvent"): PopStateEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_BeforeUnloadEvent")
+  def createEvent(eventInterface: "BeforeUnloadEvent"): BeforeUnloadEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_UIEvents")
+  def createEvent(eventInterface: "UIEvents"): UIEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_MouseEvent")
+  def createEvent(eventInterface: "MouseEvent"): MouseEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_MouseEvents")
+  def createEvent(eventInterface: "MouseEvents"): MouseEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_AnimationPlaybackEvent")
+  def createEvent(eventInterface: "AnimationPlaybackEvent"): AnimationPlaybackEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_ProgressEvent")
+  def createEvent(eventInterface: "ProgressEvent"): ProgressEvent[EventTarget] = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_KeyboardEvent")
+  def createEvent(eventInterface: "KeyboardEvent"): KeyboardEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_CloseEvent")
+  def createEvent(eventInterface: "CloseEvent"): CloseEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_PointerEvent")
+  def createEvent(eventInterface: "PointerEvent"): PointerEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_MediaQueryListEvent")
+  def createEvent(eventInterface: "MediaQueryListEvent"): MediaQueryListEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_CustomEvent")
+  def createEvent(eventInterface: "CustomEvent"): CustomEvent[Any] = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_ErrorEvent")
+  def createEvent(eventInterface: "ErrorEvent"): ErrorEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_ClipboardEvent")
+  def createEvent(eventInterface: "ClipboardEvent"): ClipboardEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_WheelEvent")
+  def createEvent(eventInterface: "WheelEvent"): WheelEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_MediaStreamTrackEvent")
+  def createEvent(eventInterface: "MediaStreamTrackEvent"): MediaStreamTrackEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_TrackEvent")
+  def createEvent(eventInterface: "TrackEvent"): TrackEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_FormDataEvent")
+  def createEvent(eventInterface: "FormDataEvent"): FormDataEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_PaymentRequestUpdateEvent")
+  def createEvent(eventInterface: "PaymentRequestUpdateEvent"): PaymentRequestUpdateEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_CompositionEvent")
+  def createEvent(eventInterface: "CompositionEvent"): CompositionEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_MessageEvent")
+  def createEvent(eventInterface: "MessageEvent"): MessageEvent[Any] = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_MediaEncryptedEvent")
+  def createEvent(eventInterface: "MediaEncryptedEvent"): MediaEncryptedEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_InputEvent")
+  def createEvent(eventInterface: "InputEvent"): InputEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_FocusEvent")
+  def createEvent(eventInterface: "FocusEvent"): FocusEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_AudioProcessingEvent")
+  def createEvent(eventInterface: "AudioProcessingEvent"): AudioProcessingEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_SpeechSynthesisEvent")
+  def createEvent(eventInterface: "SpeechSynthesisEvent"): SpeechSynthesisEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_PromiseRejectionEvent")
+  def createEvent(eventInterface: "PromiseRejectionEvent"): PromiseRejectionEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_RTCTrackEvent")
+  def createEvent(eventInterface: "RTCTrackEvent"): RTCTrackEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_RTCDataChannelEvent")
+  def createEvent(eventInterface: "RTCDataChannelEvent"): RTCDataChannelEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_SpeechSynthesisErrorEvent")
+  def createEvent(eventInterface: "SpeechSynthesisErrorEvent"): SpeechSynthesisErrorEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_MutationEvent")
+  def createEvent(eventInterface: "MutationEvent"): MutationEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_RTCDTMFToneChangeEvent")
+  def createEvent(eventInterface: "RTCDTMFToneChangeEvent"): RTCDTMFToneChangeEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_TransitionEvent")
+  def createEvent(eventInterface: "TransitionEvent"): TransitionEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_TouchEvent")
+  def createEvent(eventInterface: "TouchEvent"): TouchEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  @scala.annotation.targetName("createEvent_AnimationEvent")
+  def createEvent(eventInterface: "AnimationEvent"): AnimationEvent = js.native
   /* standard dom */
   def createEvent(eventInterface: java.lang.String): Event = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_AnimationEvent(eventInterface: typings.std.stdStrings.AnimationEvent): AnimationEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_AnimationPlaybackEvent(eventInterface: typings.std.stdStrings.AnimationPlaybackEvent): AnimationPlaybackEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_AudioProcessingEvent(eventInterface: typings.std.stdStrings.AudioProcessingEvent): AudioProcessingEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_BeforeUnloadEvent(eventInterface: typings.std.stdStrings.BeforeUnloadEvent): BeforeUnloadEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_BlobEvent(eventInterface: typings.std.stdStrings.BlobEvent): BlobEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_ClipboardEvent(eventInterface: typings.std.stdStrings.ClipboardEvent): ClipboardEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_CloseEvent(eventInterface: typings.std.stdStrings.CloseEvent): CloseEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_CompositionEvent(eventInterface: typings.std.stdStrings.CompositionEvent): CompositionEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_CustomEvent(eventInterface: typings.std.stdStrings.CustomEvent): CustomEvent[Any] = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_DeviceMotionEvent(eventInterface: typings.std.stdStrings.DeviceMotionEvent): DeviceMotionEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_DeviceOrientationEvent(eventInterface: typings.std.stdStrings.DeviceOrientationEvent): DeviceOrientationEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_DragEvent(eventInterface: typings.std.stdStrings.DragEvent): DragEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_ErrorEvent(eventInterface: typings.std.stdStrings.ErrorEvent): ErrorEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_Event(eventInterface: typings.std.stdStrings.Event): Event = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_Events(eventInterface: Events): Event = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_FocusEvent(eventInterface: typings.std.stdStrings.FocusEvent): FocusEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_FontFaceSetLoadEvent(eventInterface: typings.std.stdStrings.FontFaceSetLoadEvent): FontFaceSetLoadEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_FormDataEvent(eventInterface: typings.std.stdStrings.FormDataEvent): FormDataEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_GamepadEvent(eventInterface: typings.std.stdStrings.GamepadEvent): GamepadEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_HashChangeEvent(eventInterface: typings.std.stdStrings.HashChangeEvent): HashChangeEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_IDBVersionChangeEvent(eventInterface: typings.std.stdStrings.IDBVersionChangeEvent): IDBVersionChangeEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_InputEvent(eventInterface: typings.std.stdStrings.InputEvent): InputEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_KeyboardEvent(eventInterface: typings.std.stdStrings.KeyboardEvent): KeyboardEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_MediaEncryptedEvent(eventInterface: typings.std.stdStrings.MediaEncryptedEvent): MediaEncryptedEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_MediaKeyMessageEvent(eventInterface: typings.std.stdStrings.MediaKeyMessageEvent): MediaKeyMessageEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_MediaQueryListEvent(eventInterface: typings.std.stdStrings.MediaQueryListEvent): MediaQueryListEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_MediaStreamTrackEvent(eventInterface: typings.std.stdStrings.MediaStreamTrackEvent): MediaStreamTrackEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_MessageEvent(eventInterface: typings.std.stdStrings.MessageEvent): MessageEvent[Any] = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_MouseEvent(eventInterface: typings.std.stdStrings.MouseEvent): MouseEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_MouseEvents(eventInterface: MouseEvents): MouseEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_MutationEvent(eventInterface: typings.std.stdStrings.MutationEvent): MutationEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_MutationEvents(eventInterface: MutationEvents): MutationEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_OfflineAudioCompletionEvent(eventInterface: typings.std.stdStrings.OfflineAudioCompletionEvent): OfflineAudioCompletionEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_PageTransitionEvent(eventInterface: typings.std.stdStrings.PageTransitionEvent): PageTransitionEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_PaymentMethodChangeEvent(eventInterface: typings.std.stdStrings.PaymentMethodChangeEvent): PaymentMethodChangeEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_PaymentRequestUpdateEvent(eventInterface: typings.std.stdStrings.PaymentRequestUpdateEvent): PaymentRequestUpdateEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_PictureInPictureEvent(eventInterface: typings.std.stdStrings.PictureInPictureEvent): PictureInPictureEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_PointerEvent(eventInterface: typings.std.stdStrings.PointerEvent): PointerEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_PopStateEvent(eventInterface: typings.std.stdStrings.PopStateEvent): PopStateEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_ProgressEvent(eventInterface: typings.std.stdStrings.ProgressEvent): ProgressEvent[EventTarget] = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_PromiseRejectionEvent(eventInterface: typings.std.stdStrings.PromiseRejectionEvent): PromiseRejectionEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_RTCDTMFToneChangeEvent(eventInterface: typings.std.stdStrings.RTCDTMFToneChangeEvent): RTCDTMFToneChangeEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_RTCDataChannelEvent(eventInterface: typings.std.stdStrings.RTCDataChannelEvent): RTCDataChannelEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_RTCErrorEvent(eventInterface: typings.std.stdStrings.RTCErrorEvent): RTCErrorEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_RTCPeerConnectionIceErrorEvent(eventInterface: typings.std.stdStrings.RTCPeerConnectionIceErrorEvent): RTCPeerConnectionIceErrorEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_RTCPeerConnectionIceEvent(eventInterface: typings.std.stdStrings.RTCPeerConnectionIceEvent): RTCPeerConnectionIceEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_RTCTrackEvent(eventInterface: typings.std.stdStrings.RTCTrackEvent): RTCTrackEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_SecurityPolicyViolationEvent(eventInterface: typings.std.stdStrings.SecurityPolicyViolationEvent): SecurityPolicyViolationEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_SpeechSynthesisErrorEvent(eventInterface: typings.std.stdStrings.SpeechSynthesisErrorEvent): SpeechSynthesisErrorEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_SpeechSynthesisEvent(eventInterface: typings.std.stdStrings.SpeechSynthesisEvent): SpeechSynthesisEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_StorageEvent(eventInterface: typings.std.stdStrings.StorageEvent): StorageEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_SubmitEvent(eventInterface: typings.std.stdStrings.SubmitEvent): SubmitEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_TouchEvent(eventInterface: typings.std.stdStrings.TouchEvent): TouchEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_TrackEvent(eventInterface: typings.std.stdStrings.TrackEvent): TrackEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_TransitionEvent(eventInterface: typings.std.stdStrings.TransitionEvent): TransitionEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_UIEvent(eventInterface: typings.std.stdStrings.UIEvent): UIEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_UIEvents(eventInterface: UIEvents): UIEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_WebGLContextEvent(eventInterface: typings.std.stdStrings.WebGLContextEvent): WebGLContextEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
-  def createEvent_WheelEvent(eventInterface: typings.std.stdStrings.WheelEvent): WheelEvent = js.native
   
   /**
     * Creates a NodeIterator object that you can use to traverse filtered lists of nodes or elements in a document.
@@ -1448,12 +1715,524 @@ trait Document
   /* standard dom */
   def getElementsByName(elementName: java.lang.String): NodeListOf[HTMLElement] = js.native
   
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_head")
+  def getElementsByTagName(qualifiedName: "head"): HTMLCollectionOf[HTMLHeadElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_h4")
+  def getElementsByTagName(qualifiedName: "h4"): HTMLCollectionOf[HTMLHeadingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_col")
+  def getElementsByTagName(qualifiedName: "col"): HTMLCollectionOf[HTMLTableColElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_set")
+  def getElementsByTagName(qualifiedName: "set"): HTMLCollectionOf[SVGSetElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feFuncR")
+  def getElementsByTagName(qualifiedName: "feFuncR"): HTMLCollectionOf[SVGFEFuncRElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_ins")
+  def getElementsByTagName(qualifiedName: "ins"): HTMLCollectionOf[HTMLModElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_p")
+  def getElementsByTagName(qualifiedName: "p"): HTMLCollectionOf[HTMLParagraphElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_i")
+  def getElementsByTagName(qualifiedName: "i"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_output")
+  def getElementsByTagName(qualifiedName: "output"): HTMLCollectionOf[HTMLOutputElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_td")
+  def getElementsByTagName(qualifiedName: "td"): HTMLCollectionOf[HTMLTableCellElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_clipPath")
+  def getElementsByTagName(qualifiedName: "clipPath"): HTMLCollectionOf[SVGClipPathElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_span")
+  def getElementsByTagName(qualifiedName: "span"): HTMLCollectionOf[HTMLSpanElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_slot")
+  def getElementsByTagName(qualifiedName: "slot"): HTMLCollectionOf[HTMLSlotElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_caption")
+  def getElementsByTagName(qualifiedName: "caption"): HTMLCollectionOf[HTMLTableCaptionElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feDistantLight")
+  def getElementsByTagName(qualifiedName: "feDistantLight"): HTMLCollectionOf[SVGFEDistantLightElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_switch")
+  def getElementsByTagName(qualifiedName: "switch"): HTMLCollectionOf[SVGSwitchElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_hgroup")
+  def getElementsByTagName(qualifiedName: "hgroup"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_th")
+  def getElementsByTagName(qualifiedName: "th"): HTMLCollectionOf[HTMLTableCellElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_data")
+  def getElementsByTagName(qualifiedName: "data"): HTMLCollectionOf[HTMLDataElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_dd")
+  def getElementsByTagName(qualifiedName: "dd"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_table")
+  def getElementsByTagName(qualifiedName: "table"): HTMLCollectionOf[HTMLTableElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_figcaption")
+  def getElementsByTagName(qualifiedName: "figcaption"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_canvas")
+  def getElementsByTagName(qualifiedName: "canvas"): HTMLCollectionOf[HTMLCanvasElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_audio")
+  def getElementsByTagName(qualifiedName: "audio"): HTMLCollectionOf[HTMLAudioElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feFlood")
+  def getElementsByTagName(qualifiedName: "feFlood"): HTMLCollectionOf[SVGFEFloodElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_h2")
+  def getElementsByTagName(qualifiedName: "h2"): HTMLCollectionOf[HTMLHeadingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_li")
+  def getElementsByTagName(qualifiedName: "li"): HTMLCollectionOf[HTMLLIElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_wbr")
+  def getElementsByTagName(qualifiedName: "wbr"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_object")
+  def getElementsByTagName(qualifiedName: "object"): HTMLCollectionOf[HTMLObjectElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feComposite")
+  def getElementsByTagName(qualifiedName: "feComposite"): HTMLCollectionOf[SVGFECompositeElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_marker")
+  def getElementsByTagName(qualifiedName: "marker"): HTMLCollectionOf[SVGMarkerElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_animateMotion")
+  def getElementsByTagName(qualifiedName: "animateMotion"): HTMLCollectionOf[SVGAnimateMotionElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_dl")
+  def getElementsByTagName(qualifiedName: "dl"): HTMLCollectionOf[HTMLDListElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_track")
+  def getElementsByTagName(qualifiedName: "track"): HTMLCollectionOf[HTMLTrackElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_polyline")
+  def getElementsByTagName(qualifiedName: "polyline"): HTMLCollectionOf[SVGPolylineElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feMorphology")
+  def getElementsByTagName(qualifiedName: "feMorphology"): HTMLCollectionOf[SVGFEMorphologyElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_b")
+  def getElementsByTagName(qualifiedName: "b"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feSpotLight")
+  def getElementsByTagName(qualifiedName: "feSpotLight"): HTMLCollectionOf[SVGFESpotLightElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_progress")
+  def getElementsByTagName(qualifiedName: "progress"): HTMLCollectionOf[HTMLProgressElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_code")
+  def getElementsByTagName(qualifiedName: "code"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_h5")
+  def getElementsByTagName(qualifiedName: "h5"): HTMLCollectionOf[HTMLHeadingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feDropShadow")
+  def getElementsByTagName(qualifiedName: "feDropShadow"): HTMLCollectionOf[SVGFEDropShadowElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_u")
+  def getElementsByTagName(qualifiedName: "u"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feTurbulence")
+  def getElementsByTagName(qualifiedName: "feTurbulence"): HTMLCollectionOf[SVGFETurbulenceElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_meter")
+  def getElementsByTagName(qualifiedName: "meter"): HTMLCollectionOf[HTMLMeterElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_video")
+  def getElementsByTagName(qualifiedName: "video"): HTMLCollectionOf[HTMLVideoElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feDiffuseLighting")
+  def getElementsByTagName(qualifiedName: "feDiffuseLighting"): HTMLCollectionOf[SVGFEDiffuseLightingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_bdo")
+  def getElementsByTagName(qualifiedName: "bdo"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_address")
+  def getElementsByTagName(qualifiedName: "address"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feColorMatrix")
+  def getElementsByTagName(qualifiedName: "feColorMatrix"): HTMLCollectionOf[SVGFEColorMatrixElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_picture")
+  def getElementsByTagName(qualifiedName: "picture"): HTMLCollectionOf[HTMLPictureElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_tfoot")
+  def getElementsByTagName(qualifiedName: "tfoot"): HTMLCollectionOf[HTMLTableSectionElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_summary")
+  def getElementsByTagName(qualifiedName: "summary"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_section")
+  def getElementsByTagName(qualifiedName: "section"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_use")
+  def getElementsByTagName(qualifiedName: "use"): HTMLCollectionOf[SVGUseElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_desc")
+  def getElementsByTagName(qualifiedName: "desc"): HTMLCollectionOf[SVGDescElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_fePointLight")
+  def getElementsByTagName(qualifiedName: "fePointLight"): HTMLCollectionOf[SVGFEPointLightElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_mpath")
+  def getElementsByTagName(qualifiedName: "mpath"): HTMLCollectionOf[SVGMPathElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_em")
+  def getElementsByTagName(qualifiedName: "em"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feMergeNode")
+  def getElementsByTagName(qualifiedName: "feMergeNode"): HTMLCollectionOf[SVGFEMergeNodeElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_map")
+  def getElementsByTagName(qualifiedName: "map"): HTMLCollectionOf[HTMLMapElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_filter")
+  def getElementsByTagName(qualifiedName: "filter"): HTMLCollectionOf[SVGFilterElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_tr")
+  def getElementsByTagName(qualifiedName: "tr"): HTMLCollectionOf[HTMLTableRowElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_optgroup")
+  def getElementsByTagName(qualifiedName: "optgroup"): HTMLCollectionOf[HTMLOptGroupElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_title")
+  def getElementsByTagName(qualifiedName: "title"): HTMLCollectionOf[HTMLTitleElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feTile")
+  def getElementsByTagName(qualifiedName: "feTile"): HTMLCollectionOf[SVGFETileElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feImage")
+  def getElementsByTagName(qualifiedName: "feImage"): HTMLCollectionOf[SVGFEImageElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_text")
+  def getElementsByTagName(qualifiedName: "text"): HTMLCollectionOf[SVGTextElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feDisplacementMap")
+  def getElementsByTagName(qualifiedName: "feDisplacementMap"): HTMLCollectionOf[SVGFEDisplacementMapElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_h1")
+  def getElementsByTagName(qualifiedName: "h1"): HTMLCollectionOf[HTMLHeadingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_button")
+  def getElementsByTagName(qualifiedName: "button"): HTMLCollectionOf[HTMLButtonElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_area")
+  def getElementsByTagName(qualifiedName: "area"): HTMLCollectionOf[HTMLAreaElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_time")
+  def getElementsByTagName(qualifiedName: "time"): HTMLCollectionOf[HTMLTimeElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_dfn")
+  def getElementsByTagName(qualifiedName: "dfn"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_meta")
+  def getElementsByTagName(qualifiedName: "meta"): HTMLCollectionOf[HTMLMetaElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_h6")
+  def getElementsByTagName(qualifiedName: "h6"): HTMLCollectionOf[HTMLHeadingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_circle")
+  def getElementsByTagName(qualifiedName: "circle"): HTMLCollectionOf[SVGCircleElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_link")
+  def getElementsByTagName(qualifiedName: "link"): HTMLCollectionOf[HTMLLinkElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_textarea")
+  def getElementsByTagName(qualifiedName: "textarea"): HTMLCollectionOf[HTMLTextAreaElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feFuncB")
+  def getElementsByTagName(qualifiedName: "feFuncB"): HTMLCollectionOf[SVGFEFuncBElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_abbr")
+  def getElementsByTagName(qualifiedName: "abbr"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_datalist")
+  def getElementsByTagName(qualifiedName: "datalist"): HTMLCollectionOf[HTMLDataListElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feComponentTransfer")
+  def getElementsByTagName(qualifiedName: "feComponentTransfer"): HTMLCollectionOf[SVGFEComponentTransferElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_sup")
+  def getElementsByTagName(qualifiedName: "sup"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feFuncA")
+  def getElementsByTagName(qualifiedName: "feFuncA"): HTMLCollectionOf[SVGFEFuncAElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_ellipse")
+  def getElementsByTagName(qualifiedName: "ellipse"): HTMLCollectionOf[SVGEllipseElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_menu")
+  def getElementsByTagName(qualifiedName: "menu"): HTMLCollectionOf[HTMLMenuElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_figure")
+  def getElementsByTagName(qualifiedName: "figure"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_stop")
+  def getElementsByTagName(qualifiedName: "stop"): HTMLCollectionOf[SVGStopElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_input")
+  def getElementsByTagName(qualifiedName: "input"): HTMLCollectionOf[HTMLInputElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_mask")
+  def getElementsByTagName(qualifiedName: "mask"): HTMLCollectionOf[SVGMaskElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_source")
+  def getElementsByTagName(qualifiedName: "source"): HTMLCollectionOf[HTMLSourceElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_embed")
+  def getElementsByTagName(qualifiedName: "embed"): HTMLCollectionOf[HTMLEmbedElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_ruby")
+  def getElementsByTagName(qualifiedName: "ruby"): HTMLCollectionOf[HTMLElement] = js.native
+  /**
+    * Retrieves a collection of objects based on the specified element name.
+    * @param name Specifies the name of an element.
+    */
+  /* standard dom */
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_a")
+  def getElementsByTagName(qualifiedName: "a"): HTMLCollectionOf[HTMLAnchorElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_tspan")
+  def getElementsByTagName(qualifiedName: "tspan"): HTMLCollectionOf[SVGTSpanElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_option")
+  def getElementsByTagName(qualifiedName: "option"): HTMLCollectionOf[HTMLOptionElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_blockquote")
+  def getElementsByTagName(qualifiedName: "blockquote"): HTMLCollectionOf[HTMLQuoteElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_view")
+  def getElementsByTagName(qualifiedName: "view"): HTMLCollectionOf[SVGViewElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_cite")
+  def getElementsByTagName(qualifiedName: "cite"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feFuncG")
+  def getElementsByTagName(qualifiedName: "feFuncG"): HTMLCollectionOf[SVGFEFuncGElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_del")
+  def getElementsByTagName(qualifiedName: "del"): HTMLCollectionOf[HTMLModElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_rect")
+  def getElementsByTagName(qualifiedName: "rect"): HTMLCollectionOf[SVGRectElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_animate")
+  def getElementsByTagName(qualifiedName: "animate"): HTMLCollectionOf[SVGAnimateElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_style")
+  def getElementsByTagName(qualifiedName: "style"): HTMLCollectionOf[HTMLStyleElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_q")
+  def getElementsByTagName(qualifiedName: "q"): HTMLCollectionOf[HTMLQuoteElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_div")
+  def getElementsByTagName(qualifiedName: "div"): HTMLCollectionOf[HTMLDivElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_fieldset")
+  def getElementsByTagName(qualifiedName: "fieldset"): HTMLCollectionOf[HTMLFieldSetElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_header")
+  def getElementsByTagName(qualifiedName: "header"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_line")
+  def getElementsByTagName(qualifiedName: "line"): HTMLCollectionOf[SVGLineElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_h3")
+  def getElementsByTagName(qualifiedName: "h3"): HTMLCollectionOf[HTMLHeadingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_main")
+  def getElementsByTagName(qualifiedName: "main"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_g")
+  def getElementsByTagName(qualifiedName: "g"): HTMLCollectionOf[SVGGElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_path")
+  def getElementsByTagName(qualifiedName: "path"): HTMLCollectionOf[SVGPathElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_small")
+  def getElementsByTagName(qualifiedName: "small"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_animateTransform")
+  def getElementsByTagName(qualifiedName: "animateTransform"): HTMLCollectionOf[SVGAnimateTransformElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_metadata")
+  def getElementsByTagName(qualifiedName: "metadata"): HTMLCollectionOf[SVGMetadataElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_samp")
+  def getElementsByTagName(qualifiedName: "samp"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_aside")
+  def getElementsByTagName(qualifiedName: "aside"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_iframe")
+  def getElementsByTagName(qualifiedName: "iframe"): HTMLCollectionOf[HTMLIFrameElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_body")
+  def getElementsByTagName(qualifiedName: "body"): HTMLCollectionOf[HTMLBodyElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_kbd")
+  def getElementsByTagName(qualifiedName: "kbd"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_details")
+  def getElementsByTagName(qualifiedName: "details"): HTMLCollectionOf[HTMLDetailsElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_script")
+  def getElementsByTagName(qualifiedName: "script"): HTMLCollectionOf[HTMLScriptElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_var")
+  def getElementsByTagName(qualifiedName: "var"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_svg")
+  def getElementsByTagName(qualifiedName: "svg"): HTMLCollectionOf[SVGSVGElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_rp")
+  def getElementsByTagName(qualifiedName: "rp"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_defs")
+  def getElementsByTagName(qualifiedName: "defs"): HTMLCollectionOf[SVGDefsElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feConvolveMatrix")
+  def getElementsByTagName(qualifiedName: "feConvolveMatrix"): HTMLCollectionOf[SVGFEConvolveMatrixElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_sub")
+  def getElementsByTagName(qualifiedName: "sub"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_label")
+  def getElementsByTagName(qualifiedName: "label"): HTMLCollectionOf[HTMLLabelElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_template")
+  def getElementsByTagName(qualifiedName: "template"): HTMLCollectionOf[HTMLTemplateElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_ol")
+  def getElementsByTagName(qualifiedName: "ol"): HTMLCollectionOf[HTMLOListElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feGaussianBlur")
+  def getElementsByTagName(qualifiedName: "feGaussianBlur"): HTMLCollectionOf[SVGFEGaussianBlurElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feSpecularLighting")
+  def getElementsByTagName(qualifiedName: "feSpecularLighting"): HTMLCollectionOf[SVGFESpecularLightingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_rt")
+  def getElementsByTagName(qualifiedName: "rt"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_footer")
+  def getElementsByTagName(qualifiedName: "footer"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_linearGradient")
+  def getElementsByTagName(qualifiedName: "linearGradient"): HTMLCollectionOf[SVGLinearGradientElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_nav")
+  def getElementsByTagName(qualifiedName: "nav"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_pre")
+  def getElementsByTagName(qualifiedName: "pre"): HTMLCollectionOf[HTMLPreElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_image")
+  def getElementsByTagName(qualifiedName: "image"): HTMLCollectionOf[SVGImageElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_textPath")
+  def getElementsByTagName(qualifiedName: "textPath"): HTMLCollectionOf[SVGTextPathElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_thead")
+  def getElementsByTagName(qualifiedName: "thead"): HTMLCollectionOf[HTMLTableSectionElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feMerge")
+  def getElementsByTagName(qualifiedName: "feMerge"): HTMLCollectionOf[SVGFEMergeElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feOffset")
+  def getElementsByTagName(qualifiedName: "feOffset"): HTMLCollectionOf[SVGFEOffsetElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_dt")
+  def getElementsByTagName(qualifiedName: "dt"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_ul")
+  def getElementsByTagName(qualifiedName: "ul"): HTMLCollectionOf[HTMLUListElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_form")
+  def getElementsByTagName(qualifiedName: "form"): HTMLCollectionOf[HTMLFormElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_radialGradient")
+  def getElementsByTagName(qualifiedName: "radialGradient"): HTMLCollectionOf[SVGRadialGradientElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_select")
+  def getElementsByTagName(qualifiedName: "select"): HTMLCollectionOf[HTMLSelectElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_bdi")
+  def getElementsByTagName(qualifiedName: "bdi"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_s")
+  def getElementsByTagName(qualifiedName: "s"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_foreignObject")
+  def getElementsByTagName(qualifiedName: "foreignObject"): HTMLCollectionOf[SVGForeignObjectElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_symbol")
+  def getElementsByTagName(qualifiedName: "symbol"): HTMLCollectionOf[SVGSymbolElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_mark")
+  def getElementsByTagName(qualifiedName: "mark"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_colgroup")
+  def getElementsByTagName(qualifiedName: "colgroup"): HTMLCollectionOf[HTMLTableColElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_html")
+  def getElementsByTagName(qualifiedName: "html"): HTMLCollectionOf[HTMLHtmlElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_strong")
+  def getElementsByTagName(qualifiedName: "strong"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feBlend")
+  def getElementsByTagName(qualifiedName: "feBlend"): HTMLCollectionOf[SVGFEBlendElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_pattern")
+  def getElementsByTagName(qualifiedName: "pattern"): HTMLCollectionOf[SVGPatternElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_tbody")
+  def getElementsByTagName(qualifiedName: "tbody"): HTMLCollectionOf[HTMLTableSectionElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_br")
+  def getElementsByTagName(qualifiedName: "br"): HTMLCollectionOf[HTMLBRElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_article")
+  def getElementsByTagName(qualifiedName: "article"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_base")
+  def getElementsByTagName(qualifiedName: "base"): HTMLCollectionOf[HTMLBaseElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_noscript")
+  def getElementsByTagName(qualifiedName: "noscript"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_polygon")
+  def getElementsByTagName(qualifiedName: "polygon"): HTMLCollectionOf[SVGPolygonElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_hr")
+  def getElementsByTagName(qualifiedName: "hr"): HTMLCollectionOf[HTMLHRElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_img")
+  def getElementsByTagName(qualifiedName: "img"): HTMLCollectionOf[HTMLImageElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_legend")
+  def getElementsByTagName(qualifiedName: "legend"): HTMLCollectionOf[HTMLLegendElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_dialog")
+  def getElementsByTagName(qualifiedName: "dialog"): HTMLCollectionOf[HTMLDialogElement] = js.native
   /* standard dom */
   def getElementsByTagName(qualifiedName: java.lang.String): HTMLCollectionOf[Element] = js.native
   
-  /* standard dom */
-  def getElementsByTagNameNS(namespace: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
-  def getElementsByTagNameNS(namespace: Null, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
   /**
     * If namespace and localName are "*" returns a HTMLCollection of all descendant elements.
     *
@@ -1465,356 +2244,15 @@ trait Document
     */
   /* standard dom */
   @JSName("getElementsByTagNameNS")
-  def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
+  @scala.annotation.targetName("getElementsByTagNameNS_httpwwww3org1999xhtml")
+  def getElementsByTagNameNS(namespaceURI: "http://www.w3.org/1999/xhtml", localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
   /* standard dom */
   @JSName("getElementsByTagNameNS")
-  def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
-  
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
+  @scala.annotation.targetName("getElementsByTagNameNS_httpwwww3org2000svg")
+  def getElementsByTagNameNS(namespaceURI: "http://www.w3.org/2000/svg", localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
   /* standard dom */
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_a(qualifiedName: a): HTMLCollectionOf[HTMLAnchorElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_abbr(qualifiedName: abbr): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_address(qualifiedName: address): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_animate(qualifiedName: animate): HTMLCollectionOf[SVGAnimateElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_animateMotion(qualifiedName: animateMotion): HTMLCollectionOf[SVGAnimateMotionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_animateTransform(qualifiedName: animateTransform): HTMLCollectionOf[SVGAnimateTransformElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_area(qualifiedName: area): HTMLCollectionOf[HTMLAreaElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_article(qualifiedName: article): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_aside(qualifiedName: aside): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_audio(qualifiedName: audio): HTMLCollectionOf[HTMLAudioElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_b(qualifiedName: b): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_base(qualifiedName: base): HTMLCollectionOf[HTMLBaseElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_bdi(qualifiedName: bdi): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_bdo(qualifiedName: bdo): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_blockquote(qualifiedName: blockquote): HTMLCollectionOf[HTMLQuoteElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_body(qualifiedName: body): HTMLCollectionOf[HTMLBodyElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_br(qualifiedName: br): HTMLCollectionOf[HTMLBRElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_button(qualifiedName: button): HTMLCollectionOf[HTMLButtonElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_canvas(qualifiedName: canvas): HTMLCollectionOf[HTMLCanvasElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_caption(qualifiedName: caption): HTMLCollectionOf[HTMLTableCaptionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_circle(qualifiedName: circle): HTMLCollectionOf[SVGCircleElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_cite(qualifiedName: cite): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_clipPath(qualifiedName: clipPath): HTMLCollectionOf[SVGClipPathElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_code(qualifiedName: code): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_col(qualifiedName: col): HTMLCollectionOf[HTMLTableColElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_colgroup(qualifiedName: colgroup): HTMLCollectionOf[HTMLTableColElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_data(qualifiedName: data): HTMLCollectionOf[HTMLDataElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_datalist(qualifiedName: datalist): HTMLCollectionOf[HTMLDataListElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dd(qualifiedName: dd): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_defs(qualifiedName: defs): HTMLCollectionOf[SVGDefsElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_del(qualifiedName: del): HTMLCollectionOf[HTMLModElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_desc(qualifiedName: desc): HTMLCollectionOf[SVGDescElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_details(qualifiedName: details): HTMLCollectionOf[HTMLDetailsElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dfn(qualifiedName: dfn): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dialog(qualifiedName: dialog): HTMLCollectionOf[HTMLDialogElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_div(qualifiedName: div): HTMLCollectionOf[HTMLDivElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dl(qualifiedName: dl): HTMLCollectionOf[HTMLDListElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dt(qualifiedName: dt): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ellipse(qualifiedName: ellipse): HTMLCollectionOf[SVGEllipseElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_em(qualifiedName: em): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_embed(qualifiedName: embed): HTMLCollectionOf[HTMLEmbedElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feBlend(qualifiedName: feBlend): HTMLCollectionOf[SVGFEBlendElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feColorMatrix(qualifiedName: feColorMatrix): HTMLCollectionOf[SVGFEColorMatrixElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feComponentTransfer(qualifiedName: feComponentTransfer): HTMLCollectionOf[SVGFEComponentTransferElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feComposite(qualifiedName: feComposite): HTMLCollectionOf[SVGFECompositeElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feConvolveMatrix(qualifiedName: feConvolveMatrix): HTMLCollectionOf[SVGFEConvolveMatrixElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feDiffuseLighting(qualifiedName: feDiffuseLighting): HTMLCollectionOf[SVGFEDiffuseLightingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feDisplacementMap(qualifiedName: feDisplacementMap): HTMLCollectionOf[SVGFEDisplacementMapElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feDistantLight(qualifiedName: feDistantLight): HTMLCollectionOf[SVGFEDistantLightElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feDropShadow(qualifiedName: feDropShadow): HTMLCollectionOf[SVGFEDropShadowElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feFlood(qualifiedName: feFlood): HTMLCollectionOf[SVGFEFloodElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feFuncA(qualifiedName: feFuncA): HTMLCollectionOf[SVGFEFuncAElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feFuncB(qualifiedName: feFuncB): HTMLCollectionOf[SVGFEFuncBElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feFuncG(qualifiedName: feFuncG): HTMLCollectionOf[SVGFEFuncGElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feFuncR(qualifiedName: feFuncR): HTMLCollectionOf[SVGFEFuncRElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feGaussianBlur(qualifiedName: feGaussianBlur): HTMLCollectionOf[SVGFEGaussianBlurElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feImage(qualifiedName: feImage): HTMLCollectionOf[SVGFEImageElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feMerge(qualifiedName: feMerge): HTMLCollectionOf[SVGFEMergeElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feMergeNode(qualifiedName: feMergeNode): HTMLCollectionOf[SVGFEMergeNodeElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feMorphology(qualifiedName: feMorphology): HTMLCollectionOf[SVGFEMorphologyElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feOffset(qualifiedName: feOffset): HTMLCollectionOf[SVGFEOffsetElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fePointLight(qualifiedName: fePointLight): HTMLCollectionOf[SVGFEPointLightElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feSpecularLighting(qualifiedName: feSpecularLighting): HTMLCollectionOf[SVGFESpecularLightingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feSpotLight(qualifiedName: feSpotLight): HTMLCollectionOf[SVGFESpotLightElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feTile(qualifiedName: feTile): HTMLCollectionOf[SVGFETileElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feTurbulence(qualifiedName: feTurbulence): HTMLCollectionOf[SVGFETurbulenceElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fieldset(qualifiedName: fieldset): HTMLCollectionOf[HTMLFieldSetElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_figcaption(qualifiedName: figcaption): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_figure(qualifiedName: figure): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_filter(qualifiedName: filter): HTMLCollectionOf[SVGFilterElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_footer(qualifiedName: footer): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_foreignObject(qualifiedName: foreignObject): HTMLCollectionOf[SVGForeignObjectElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_form(qualifiedName: form): HTMLCollectionOf[HTMLFormElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_g(qualifiedName: g): HTMLCollectionOf[SVGGElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h1(qualifiedName: h1): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h2(qualifiedName: h2): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h3(qualifiedName: h3): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h4(qualifiedName: h4): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h5(qualifiedName: h5): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h6(qualifiedName: h6): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_head(qualifiedName: typings.std.stdStrings.head): HTMLCollectionOf[HTMLHeadElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_header(qualifiedName: header): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_hgroup(qualifiedName: hgroup): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_hr(qualifiedName: hr): HTMLCollectionOf[HTMLHRElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_html(qualifiedName: html): HTMLCollectionOf[HTMLHtmlElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_i(qualifiedName: i): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_iframe(qualifiedName: iframe): HTMLCollectionOf[HTMLIFrameElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_image(qualifiedName: image): HTMLCollectionOf[SVGImageElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_img(qualifiedName: img): HTMLCollectionOf[HTMLImageElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_input(qualifiedName: input): HTMLCollectionOf[HTMLInputElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ins(qualifiedName: ins): HTMLCollectionOf[HTMLModElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_kbd(qualifiedName: kbd): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_label(qualifiedName: label): HTMLCollectionOf[HTMLLabelElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_legend(qualifiedName: legend): HTMLCollectionOf[HTMLLegendElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_li(qualifiedName: li): HTMLCollectionOf[HTMLLIElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_line(qualifiedName: line): HTMLCollectionOf[SVGLineElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_linearGradient(qualifiedName: linearGradient): HTMLCollectionOf[SVGLinearGradientElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_link(qualifiedName: link): HTMLCollectionOf[HTMLLinkElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_main(qualifiedName: main): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_map(qualifiedName: map): HTMLCollectionOf[HTMLMapElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_mark(qualifiedName: mark): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_marker(qualifiedName: marker): HTMLCollectionOf[SVGMarkerElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_mask(qualifiedName: mask): HTMLCollectionOf[SVGMaskElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_menu(qualifiedName: menu): HTMLCollectionOf[HTMLMenuElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_meta(qualifiedName: meta): HTMLCollectionOf[HTMLMetaElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_metadata(qualifiedName: metadata): HTMLCollectionOf[SVGMetadataElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_meter(qualifiedName: meter): HTMLCollectionOf[HTMLMeterElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_mpath(qualifiedName: mpath): HTMLCollectionOf[SVGMPathElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_nav(qualifiedName: nav): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_noscript(qualifiedName: noscript): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_object(qualifiedName: `object`): HTMLCollectionOf[HTMLObjectElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ol(qualifiedName: ol): HTMLCollectionOf[HTMLOListElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_optgroup(qualifiedName: optgroup): HTMLCollectionOf[HTMLOptGroupElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_option(qualifiedName: option): HTMLCollectionOf[HTMLOptionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_output(qualifiedName: output): HTMLCollectionOf[HTMLOutputElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_p(qualifiedName: p): HTMLCollectionOf[HTMLParagraphElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_path(qualifiedName: path): HTMLCollectionOf[SVGPathElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_pattern(qualifiedName: pattern): HTMLCollectionOf[SVGPatternElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_picture(qualifiedName: picture): HTMLCollectionOf[HTMLPictureElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_polygon(qualifiedName: polygon): HTMLCollectionOf[SVGPolygonElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_polyline(qualifiedName: polyline): HTMLCollectionOf[SVGPolylineElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_pre(qualifiedName: pre): HTMLCollectionOf[HTMLPreElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_progress(qualifiedName: progress): HTMLCollectionOf[HTMLProgressElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_q(qualifiedName: q): HTMLCollectionOf[HTMLQuoteElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_radialGradient(qualifiedName: radialGradient): HTMLCollectionOf[SVGRadialGradientElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_rect(qualifiedName: rect): HTMLCollectionOf[SVGRectElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_rp(qualifiedName: rp): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_rt(qualifiedName: rt): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ruby(qualifiedName: ruby): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_s(qualifiedName: s): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_samp(qualifiedName: samp): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_script(qualifiedName: script): HTMLCollectionOf[HTMLScriptElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_section(qualifiedName: section): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_select(qualifiedName: select): HTMLCollectionOf[HTMLSelectElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_set(qualifiedName: set): HTMLCollectionOf[SVGSetElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_slot(qualifiedName: slot): HTMLCollectionOf[HTMLSlotElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_small(qualifiedName: small): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_source(qualifiedName: source): HTMLCollectionOf[HTMLSourceElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_span(qualifiedName: span): HTMLCollectionOf[HTMLSpanElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_stop(qualifiedName: stop): HTMLCollectionOf[SVGStopElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_strong(qualifiedName: strong): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_style(qualifiedName: style): HTMLCollectionOf[HTMLStyleElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_sub(qualifiedName: sub): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_summary(qualifiedName: summary): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_sup(qualifiedName: sup): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_svg(qualifiedName: svg): HTMLCollectionOf[SVGSVGElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_switch(qualifiedName: switch): HTMLCollectionOf[SVGSwitchElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_symbol(qualifiedName: symbol): HTMLCollectionOf[SVGSymbolElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_table(qualifiedName: table): HTMLCollectionOf[HTMLTableElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_tbody(qualifiedName: tbody): HTMLCollectionOf[HTMLTableSectionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_td(qualifiedName: td): HTMLCollectionOf[HTMLTableCellElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_template(qualifiedName: template): HTMLCollectionOf[HTMLTemplateElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_text(qualifiedName: text): HTMLCollectionOf[SVGTextElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_textPath(qualifiedName: textPath): HTMLCollectionOf[SVGTextPathElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_textarea(qualifiedName: textarea): HTMLCollectionOf[HTMLTextAreaElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_tfoot(qualifiedName: tfoot): HTMLCollectionOf[HTMLTableSectionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_th(qualifiedName: th): HTMLCollectionOf[HTMLTableCellElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_thead(qualifiedName: thead): HTMLCollectionOf[HTMLTableSectionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_time(qualifiedName: time): HTMLCollectionOf[HTMLTimeElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_title(qualifiedName: title): HTMLCollectionOf[HTMLTitleElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_tr(qualifiedName: tr): HTMLCollectionOf[HTMLTableRowElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_track(qualifiedName: track): HTMLCollectionOf[HTMLTrackElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_tspan(qualifiedName: tspan): HTMLCollectionOf[SVGTSpanElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_u(qualifiedName: u): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ul(qualifiedName: ul): HTMLCollectionOf[HTMLUListElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_use(qualifiedName: use): HTMLCollectionOf[SVGUseElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_var(qualifiedName: `var`): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_video(qualifiedName: video): HTMLCollectionOf[HTMLVideoElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_view(qualifiedName: view): HTMLCollectionOf[SVGViewElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_wbr(qualifiedName: wbr): HTMLCollectionOf[HTMLElement] = js.native
+  def getElementsByTagNameNS(namespace: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
+  def getElementsByTagNameNS(namespace: Null, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
   
   /** Returns an object representing the current selection of the document that is loaded into the object displaying a webpage. */
   /* standard dom */
@@ -1980,6 +2418,126 @@ trait Document
   /* standard dom */
   def releaseEvents(): Unit = js.native
   
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_fullscreenerror")
+  def removeEventListener(`type`: "fullscreenerror", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_visibilitychange")
+  def removeEventListener(`type`: "visibilitychange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_pointerlockerror")
+  def removeEventListener(`type`: "pointerlockerror", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  /* standard dom */
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_DOMContentLoaded")
+  def removeEventListener(`type`: "DOMContentLoaded", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_pointerlockchange")
+  def removeEventListener(`type`: "pointerlockchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_readystatechange")
+  def removeEventListener(`type`: "readystatechange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_fullscreenchange")
+  def removeEventListener(`type`: "fullscreenchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_readystatechange")
+  def removeEventListener(
+    `type`: "readystatechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_DOMContentLoaded")
+  def removeEventListener(
+    `type`: "DOMContentLoaded",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_pointerlockerror")
+  def removeEventListener(
+    `type`: "pointerlockerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_fullscreenchange")
+  def removeEventListener(
+    `type`: "fullscreenchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_visibilitychange")
+  def removeEventListener(
+    `type`: "visibilitychange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_pointerlockchange")
+  def removeEventListener(
+    `type`: "pointerlockchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_fullscreenerror")
+  def removeEventListener(
+    `type`: "fullscreenerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_readystatechange")
+  def removeEventListener(
+    `type`: "readystatechange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_pointerlockerror")
+  def removeEventListener(
+    `type`: "pointerlockerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_DOMContentLoaded")
+  def removeEventListener(
+    `type`: "DOMContentLoaded",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_fullscreenerror")
+  def removeEventListener(
+    `type`: "fullscreenerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_pointerlockchange")
+  def removeEventListener(
+    `type`: "pointerlockchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_fullscreenchange")
+  def removeEventListener(
+    `type`: "fullscreenchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_visibilitychange")
+  def removeEventListener(
+    `type`: "visibilitychange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -1988,105 +2546,6 @@ trait Document
   override def removeEventListener(
     `type`: java.lang.String,
     callback: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
-  ): Unit = js.native
-  /* standard dom */
-  @JSName("removeEventListener")
-  def removeEventListener_DOMContentLoaded(`type`: DOMContentLoaded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_DOMContentLoaded(
-    `type`: DOMContentLoaded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_DOMContentLoaded(
-    `type`: DOMContentLoaded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_fullscreenchange(
-    `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_fullscreenchange(
-    `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_fullscreenerror(
-    `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_fullscreenerror(
-    `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pointerlockchange(`type`: pointerlockchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pointerlockchange(
-    `type`: pointerlockchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pointerlockchange(
-    `type`: pointerlockchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pointerlockerror(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pointerlockerror(
-    `type`: pointerlockerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_pointerlockerror(
-    `type`: pointerlockerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_visibilitychange(`type`: visibilitychange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_visibilitychange(
-    `type`: visibilitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_visibilitychange(
-    `type`: visibilitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   

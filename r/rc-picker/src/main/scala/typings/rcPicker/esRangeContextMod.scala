@@ -3,9 +3,6 @@ package typings.rcPicker
 import org.scalablytyped.runtime.Shortcut
 import typings.rcPicker.esInterfaceMod.NullableDateType
 import typings.rcPicker.esInterfaceMod.RangeValue
-import typings.rcPicker.rcPickerBooleans.`false`
-import typings.rcPicker.rcPickerStrings.left
-import typings.rcPicker.rcPickerStrings.right
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +20,7 @@ object esRangeContextMod extends Shortcut {
     
     var inRange: js.UndefOr[Boolean] = js.undefined
     
-    var panelPosition: js.UndefOr[left | right | `false`] = js.undefined
+    var panelPosition: js.UndefOr["left" | "right" | false] = js.undefined
     
     /**
       * Set displayed range value style.
@@ -50,7 +47,7 @@ object esRangeContextMod extends Shortcut {
       
       inline def setInRangeUndefined: Self = StObject.set(x, "inRange", js.undefined)
       
-      inline def setPanelPosition(value: left | right | `false`): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
+      inline def setPanelPosition(value: "left" | "right" | false): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
       
       inline def setPanelPositionUndefined: Self = StObject.set(x, "panelPosition", js.undefined)
       

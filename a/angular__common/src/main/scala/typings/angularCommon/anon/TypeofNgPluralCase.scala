@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable4
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`[ngPluralCase]`
 import typings.angularCommon.mod.NgPluralCase
 import typings.angularCore.mod.TemplateRef
 import typings.angularCore.mod.ViewContainerRef
@@ -25,13 +23,14 @@ trait TypeofNgPluralCase
   
   var ɵdir: ɵɵDirectiveDeclaration[
     NgPluralCase, 
-    `[ngPluralCase]`, 
+    "[ngPluralCase]", 
     scala.Nothing, 
     js.Object, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NgPluralCase, js.Tuple4[Attribute, Null, Null, `6`]] = js.native

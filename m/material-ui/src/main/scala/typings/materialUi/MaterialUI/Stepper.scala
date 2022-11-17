@@ -1,7 +1,5 @@
 package typings.materialUi.MaterialUI
 
-import typings.materialUi.materialUiStrings.horizontal
-import typings.materialUi.materialUiStrings.vertical
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.LegacyRef
@@ -328,7 +326,7 @@ object Stepper {
     
     var linear: js.UndefOr[Boolean] = js.undefined
     
-    var orientation: js.UndefOr[horizontal | vertical] = js.undefined
+    var orientation: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
@@ -353,7 +351,7 @@ object Stepper {
       
       inline def setLinearUndefined: Self = StObject.set(x, "linear", js.undefined)
       
-      inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: "horizontal" | "vertical"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       

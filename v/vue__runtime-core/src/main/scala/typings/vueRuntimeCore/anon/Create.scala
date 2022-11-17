@@ -7,15 +7,12 @@ import typings.vueRuntimeCore.mod.RendererInternals
 import typings.vueRuntimeCore.mod.RendererNode
 import typings.vueRuntimeCore.mod.SuspenseBoundary
 import typings.vueRuntimeCore.mod.VNode
-import typings.vueRuntimeCore.mod._VNodeTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Create
-  extends StObject
-     with _VNodeTypes {
+trait Create extends StObject {
   
   var __isSuspense: Boolean = js.native
   

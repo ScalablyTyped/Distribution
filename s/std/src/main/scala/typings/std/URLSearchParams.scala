@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait URLSearchParams
-  extends StObject
-     with _XMLHttpRequestBodyInit {
+trait URLSearchParams extends StObject {
   
   /** Appends a specified key/value pair as a new search parameter. */
   /* standard dom */

@@ -5,7 +5,6 @@ import typings.typescript.mod.Path
 import typings.typescript.mod.SortedReadonlyArray
 import typings.typescript.mod.TypeAcquisition
 import typings.typescript.mod.WatchOptions
-import typings.typescript.typescriptStrings.discover
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait DiscoverTypings
   
   val fileNames: js.Array[String]
   
-  val kind: discover
+  val kind: "discover"
   
   val projectRootPath: Path
   
@@ -56,7 +55,7 @@ object DiscoverTypings {
     
     inline def setFileNamesVarargs(value: String*): Self = StObject.set(x, "fileNames", js.Array(value*))
     
-    inline def setKind(value: discover): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "discover"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setProjectRootPath(value: Path): Self = StObject.set(x, "projectRootPath", value.asInstanceOf[js.Any])
     

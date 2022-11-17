@@ -1,50 +1,30 @@
 package typings.chartJs.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.distChunksHelpersDotcoreMod.D_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.BubbleController, new (chart : chart.js.chart.js.Chart<chart.js.chart.js.ChartType, chart.js.chart.js.DefaultDataPoint<chart.js.chart.js.ChartType>, unknown>, datasetIndex : number): chart.js.chart.js.BubbleController} */
-object BubbleController {
+@js.native
+trait BubbleController extends D_ {
   
-  @JSImport("chart.js", "BubbleController")
-  @js.native
-  val ^ : js.Any = js.native
+  /**
+    * Parse array of arrays
+    * @protected
+    */
+  /* protected */ def parseArrayData(meta: Any, data: Any, start: Any, count: Any): Any = js.native
   
-  @JSImport("chart.js", "BubbleController.afterRegister")
-  @js.native
-  def afterRegister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def afterRegister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterRegister")(x.asInstanceOf[js.Any])
+  /**
+    * Parse array of objects
+    * @protected
+    */
+  /* protected */ def parseObjectData(meta: Any, data: Any, start: Any, count: Any): Any = js.native
   
-  @JSImport("chart.js", "BubbleController.afterUnregister")
-  @js.native
-  def afterUnregister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def afterUnregister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterUnregister")(x.asInstanceOf[js.Any])
+  /**
+    * Parse array of primitive values
+    * @protected
+    */
+  /* protected */ def parsePrimitiveData(meta: Any, data: Any, start: Any, count: Any): Any = js.native
   
-  @JSImport("chart.js", "BubbleController.beforeRegister")
-  @js.native
-  def beforeRegister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def beforeRegister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeRegister")(x.asInstanceOf[js.Any])
-  
-  @JSImport("chart.js", "BubbleController.beforeUnregister")
-  @js.native
-  def beforeUnregister: js.UndefOr[js.Function0[Unit]] = js.native
-  inline def beforeUnregister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeUnregister")(x.asInstanceOf[js.Any])
-  
-  @JSImport("chart.js", "BubbleController.defaultRoutes")
-  @js.native
-  def defaultRoutes: js.UndefOr[StringDictionary[String]] = js.native
-  inline def defaultRoutes_=(x: js.UndefOr[StringDictionary[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultRoutes")(x.asInstanceOf[js.Any])
-  
-  @JSImport("chart.js", "BubbleController.defaults")
-  @js.native
-  def defaults: js.UndefOr[AnyObject] = js.native
-  inline def defaults_=(x: js.UndefOr[AnyObject]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
-  
-  @JSImport("chart.js", "BubbleController.id")
-  @js.native
-  def id: String = js.native
-  inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  def update(mode: Any): scala.Unit = js.native
 }

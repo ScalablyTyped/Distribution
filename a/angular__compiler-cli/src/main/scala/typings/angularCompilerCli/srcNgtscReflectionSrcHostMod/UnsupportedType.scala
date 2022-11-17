@@ -1,16 +1,13 @@
 package typings.angularCompilerCli.srcNgtscReflectionSrcHostMod
 
-import typings.angularCompilerCli.angularCompilerCliInts.`5`
 import typings.typescript.mod.TypeNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UnsupportedType
-  extends StObject
-     with UnavailableValue {
+trait UnsupportedType extends StObject {
   
-  var kind: `5`
+  var kind: 5
   
   var typeNode: TypeNode
 }
@@ -23,7 +20,7 @@ object UnsupportedType {
   
   extension [Self <: UnsupportedType](x: Self) {
     
-    inline def setKind(value: `5`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: 5): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setTypeNode(value: TypeNode): Self = StObject.set(x, "typeNode", value.asInstanceOf[js.Any])
   }

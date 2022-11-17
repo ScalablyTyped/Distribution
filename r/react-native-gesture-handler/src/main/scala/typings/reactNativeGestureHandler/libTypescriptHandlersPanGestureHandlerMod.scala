@@ -4,27 +4,6 @@ import typings.react.mod.ComponentType
 import typings.react.mod.RefAttributes
 import typings.reactNativeGestureHandler.anon.PanGestureHandlerPropsPar
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.BaseGestureHandlerProps_
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activateAfterLongPress
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetX
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetXEnd
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetXStart
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetY
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetYEnd
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetYStart
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.avgTouches
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.enableTrackpadTwoFingerGesture
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.failOffsetX
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.failOffsetXEnd
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.failOffsetXStart
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.failOffsetY
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.failOffsetYEnd
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.failOffsetYStart
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.maxPointers
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minDist
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minPointers
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocity
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocityX
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocityY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,32 +24,32 @@ object libTypescriptHandlersPanGestureHandlerMod {
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/PanGestureHandler", "panGestureHandlerCustomNativeProps")
   @js.native
   val panGestureHandlerCustomNativeProps: js.Tuple8[
-    activeOffsetYStart, 
-    activeOffsetYEnd, 
-    activeOffsetXStart, 
-    activeOffsetXEnd, 
-    failOffsetYStart, 
-    failOffsetYEnd, 
-    failOffsetXStart, 
-    failOffsetXEnd
+    "activeOffsetYStart", 
+    "activeOffsetYEnd", 
+    "activeOffsetXStart", 
+    "activeOffsetXEnd", 
+    "failOffsetYStart", 
+    "failOffsetYEnd", 
+    "failOffsetXStart", 
+    "failOffsetXEnd"
   ] = js.native
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/PanGestureHandler", "panGestureHandlerProps")
   @js.native
   val panGestureHandlerProps: js.Tuple13[
-    activeOffsetY, 
-    activeOffsetX, 
-    failOffsetY, 
-    failOffsetX, 
-    minDist, 
-    minVelocity, 
-    minVelocityX, 
-    minVelocityY, 
-    minPointers, 
-    maxPointers, 
-    avgTouches, 
-    enableTrackpadTwoFingerGesture, 
-    activateAfterLongPress
+    "activeOffsetY", 
+    "activeOffsetX", 
+    "failOffsetY", 
+    "failOffsetX", 
+    "minDist", 
+    "minVelocity", 
+    "minVelocityX", 
+    "minVelocityY", 
+    "minPointers", 
+    "maxPointers", 
+    "avgTouches", 
+    "enableTrackpadTwoFingerGesture", 
+    "activateAfterLongPress"
   ] = js.native
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/PanGestureHandler", "panHandlerName")

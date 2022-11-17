@@ -29,9 +29,7 @@ object stylesCreatePaletteMod {
   val light: TypeObject = js.native
   
   /* Inlined std.Partial<@material-ui/core.@material-ui/core.Color> */
-  trait ColorPartial
-    extends StObject
-       with PaletteColorOptions {
+  trait ColorPartial extends StObject {
     
     var `100`: js.UndefOr[String] = js.undefined
     
@@ -243,23 +241,7 @@ object stylesCreatePaletteMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.stylesCreatePaletteMod.SimplePaletteColorOptions
-    - typings.materialUiCore.stylesCreatePaletteMod.ColorPartial
-  */
-  trait PaletteColorOptions extends StObject
-  object PaletteColorOptions {
-    
-    inline def ColorPartial(): typings.materialUiCore.stylesCreatePaletteMod.ColorPartial = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.materialUiCore.stylesCreatePaletteMod.ColorPartial]
-    }
-    
-    inline def SimplePaletteColorOptions(main: String): typings.materialUiCore.stylesCreatePaletteMod.SimplePaletteColorOptions = {
-      val __obj = js.Dynamic.literal(main = main.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.materialUiCore.stylesCreatePaletteMod.SimplePaletteColorOptions]
-    }
-  }
+  type PaletteColorOptions = SimplePaletteColorOptions | ColorPartial
   
   trait PaletteOptions extends StObject {
     
@@ -410,9 +392,7 @@ object stylesCreatePaletteMod {
     }
   }
   
-  trait SimplePaletteColorOptions
-    extends StObject
-       with PaletteColorOptions {
+  trait SimplePaletteColorOptions extends StObject {
     
     var contrastText: js.UndefOr[String] = js.undefined
     

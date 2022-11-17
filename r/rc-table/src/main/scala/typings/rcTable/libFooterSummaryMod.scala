@@ -2,8 +2,6 @@ package typings.rcTable
 
 import typings.rcTable.libFooterCellMod.SummaryCellProps
 import typings.rcTable.libFooterRowMod.FooterRowProps
-import typings.rcTable.rcTableStrings.bottom
-import typings.rcTable.rcTableStrings.top
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
@@ -35,7 +33,7 @@ object libFooterSummaryMod {
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
-    var fixed: js.UndefOr[Boolean | top | bottom] = js.undefined
+    var fixed: js.UndefOr[Boolean | "top" | "bottom"] = js.undefined
   }
   object SummaryProps {
     
@@ -50,7 +48,7 @@ object libFooterSummaryMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setFixed(value: Boolean | top | bottom): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: Boolean | "top" | "bottom"): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
       inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     }

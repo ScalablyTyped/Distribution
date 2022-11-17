@@ -2,7 +2,6 @@ package typings.three
 
 import typings.three.srcLightsLightProbeMod.LightProbe
 import typings.three.srcUtilsMod.ColorRepresentation
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +19,6 @@ object srcLightsHemisphereLightProbeMod {
     def this(skyColor: ColorRepresentation, groundColor: Unit, intensity: Double) = this()
     def this(skyColor: ColorRepresentation, groundColor: ColorRepresentation, intensity: Double) = this()
     
-    val isHemisphereLightProbe: `true` = js.native
+    val isHemisphereLightProbe: true = js.native
   }
 }

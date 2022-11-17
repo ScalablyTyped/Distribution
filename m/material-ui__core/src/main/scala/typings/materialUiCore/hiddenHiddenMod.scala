@@ -1,8 +1,6 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.materialUiCoreStrings.css
-import typings.materialUiCore.materialUiCoreStrings.js_
 import typings.materialUiCore.stylesCreateBreakpointsMod.Breakpoint
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
@@ -31,7 +29,7 @@ object hiddenHiddenMod extends Shortcut {
       * Specify which implementation to use.  'js' is the default, 'css' works better for
       * server-side rendering.
       */
-    var implementation: js.UndefOr[js_ | css] = js.undefined
+    var implementation: js.UndefOr["js" | "css"] = js.undefined
     
     /**
       * You can use this prop when choosing the `js` implementation with server-side rendering.
@@ -110,7 +108,7 @@ object hiddenHiddenMod extends Shortcut {
     
     extension [Self <: HiddenProps](x: Self) {
       
-      inline def setImplementation(value: js_ | css): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+      inline def setImplementation(value: "js" | "css"): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
       inline def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
       

@@ -1,7 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliInts.`0`
-import typings.angularCompilerCli.angularCompilerCliInts.`1`
 import typings.angularCompilerCli.srcNgtscCyclesSrcImportsMod.ImportGraph
 import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
@@ -63,17 +61,13 @@ object srcNgtscCyclesSrcAnalyzerMod {
     def wouldCreateCycle(from: SourceFile, to: SourceFile): Cycle | Null = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliInts.`0`
-    - typings.angularCompilerCli.angularCompilerCliInts.`1`
-  */
-  trait CycleHandlingStrategy extends StObject
   object CycleHandlingStrategy {
     
     /** Fail the compilation with an error. */
-    inline def Error: `1` = 1.asInstanceOf[`1`]
+    inline def Error: 1 = 1.asInstanceOf[1]
     
     /** Add "remote scoping" code to avoid creating a cycle. */
-    inline def UseRemoteScoping: `0` = 0.asInstanceOf[`0`]
+    inline def UseRemoteScoping: 0 = 0.asInstanceOf[0]
   }
+  type CycleHandlingStrategy = 0 | 1
 }

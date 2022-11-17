@@ -2,11 +2,6 @@ package typings.three
 
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcThreeMod.Object3D
-import typings.three.threeStrings.normalMatrix
-import typings.three.threeStrings.position
-import typings.three.threeStrings.viewMatrix
-import typings.three.threeStrings.viewPosition
-import typings.three.threeStrings.worldMatrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,28 +24,28 @@ object examplesJsmNodesAccessorsObject3DNodeMod {
     
     @JSImport("three/examples/jsm/nodes/accessors/Object3DNode", "default.NORMAL_MATRIX")
     @js.native
-    def NORMAL_MATRIX: normalMatrix = js.native
-    inline def NORMAL_MATRIX_=(x: normalMatrix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NORMAL_MATRIX")(x.asInstanceOf[js.Any])
+    def NORMAL_MATRIX: "normalMatrix" = js.native
+    inline def NORMAL_MATRIX_=(x: "normalMatrix"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NORMAL_MATRIX")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/accessors/Object3DNode", "default.POSITION")
     @js.native
-    def POSITION: position = js.native
-    inline def POSITION_=(x: position): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSITION")(x.asInstanceOf[js.Any])
+    def POSITION: "position" = js.native
+    inline def POSITION_=(x: "position"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSITION")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/accessors/Object3DNode", "default.VIEW_MATRIX")
     @js.native
-    def VIEW_MATRIX: viewMatrix = js.native
-    inline def VIEW_MATRIX_=(x: viewMatrix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIEW_MATRIX")(x.asInstanceOf[js.Any])
+    def VIEW_MATRIX: "viewMatrix" = js.native
+    inline def VIEW_MATRIX_=(x: "viewMatrix"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIEW_MATRIX")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/accessors/Object3DNode", "default.VIEW_POSITION")
     @js.native
-    def VIEW_POSITION: viewPosition = js.native
-    inline def VIEW_POSITION_=(x: viewPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIEW_POSITION")(x.asInstanceOf[js.Any])
+    def VIEW_POSITION: "viewPosition" = js.native
+    inline def VIEW_POSITION_=(x: "viewPosition"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIEW_POSITION")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/accessors/Object3DNode", "default.WORLD_MATRIX")
     @js.native
-    def WORLD_MATRIX: worldMatrix = js.native
-    inline def WORLD_MATRIX_=(x: worldMatrix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WORLD_MATRIX")(x.asInstanceOf[js.Any])
+    def WORLD_MATRIX: "worldMatrix" = js.native
+    inline def WORLD_MATRIX_=(x: "worldMatrix"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WORLD_MATRIX")(x.asInstanceOf[js.Any])
   }
   
   @js.native

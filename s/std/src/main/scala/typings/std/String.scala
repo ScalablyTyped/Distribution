@@ -7,10 +7,6 @@ import typings.std.anon.Replace
 import typings.std.anon.Search
 import typings.std.anon.Split
 import typings.std.anon.`0`
-import typings.std.stdStrings.NFC
-import typings.std.stdStrings.NFD
-import typings.std.stdStrings.NFKC
-import typings.std.stdStrings.NFKD
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -226,7 +222,9 @@ trait String
     * is "NFC"
     */
   /* standard es2015.core */
-  def normalize(form: NFC | NFD | NFKC | NFKD): java.lang.String = js.native
+  @JSName("normalize")
+  @scala.annotation.targetName("normalize_NFC_NFD_NFKC_NFKD")
+  def normalize(form: "NFC" | "NFD" | "NFKC" | "NFKD"): java.lang.String = js.native
   def normalize(form: java.lang.String): java.lang.String = js.native
   
   /**

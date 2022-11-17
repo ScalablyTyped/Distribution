@@ -2,11 +2,6 @@ package typings.materialUiCore
 
 import typings.materialUiCore.anon.Ref
 import typings.materialUiCore.formLabelFormLabelMod.FormLabelProps
-import typings.materialUiCore.materialUiCoreStrings.dense
-import typings.materialUiCore.materialUiCoreStrings.filled
-import typings.materialUiCore.materialUiCoreStrings.label
-import typings.materialUiCore.materialUiCoreStrings.outlined
-import typings.materialUiCore.materialUiCoreStrings.standard
 import typings.materialUiStyles.withStylesWithStylesMod.StyledComponentProps
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
@@ -22,53 +17,39 @@ object inputLabelInputLabelMod {
   
   inline def default(props: InputLabelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.focused
-    - typings.materialUiCore.materialUiCoreStrings.disabled
-    - typings.materialUiCore.materialUiCoreStrings.error
-    - typings.materialUiCore.materialUiCoreStrings.required
-    - typings.materialUiCore.materialUiCoreStrings.asterisk
-    - typings.materialUiCore.materialUiCoreStrings.formControl
-    - typings.materialUiCore.materialUiCoreStrings.marginDense
-    - typings.materialUiCore.materialUiCoreStrings.shrink
-    - typings.materialUiCore.materialUiCoreStrings.animated
-    - typings.materialUiCore.materialUiCoreStrings.filled
-    - typings.materialUiCore.materialUiCoreStrings.outlined
-  */
-  trait InputLabelClassKey extends StObject
   object InputLabelClassKey {
     
-    inline def animated: typings.materialUiCore.materialUiCoreStrings.animated = "animated".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.animated]
+    inline def animated: "animated" = "animated".asInstanceOf["animated"]
     
-    inline def asterisk: typings.materialUiCore.materialUiCoreStrings.asterisk = "asterisk".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.asterisk]
+    inline def asterisk: "asterisk" = "asterisk".asInstanceOf["asterisk"]
     
-    inline def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
+    inline def disabled: "disabled" = "disabled".asInstanceOf["disabled"]
     
-    inline def error: typings.materialUiCore.materialUiCoreStrings.error = "error".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.error]
+    inline def error: "error" = "error".asInstanceOf["error"]
     
-    inline def filled: typings.materialUiCore.materialUiCoreStrings.filled = "filled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.filled]
+    inline def filled: "filled" = "filled".asInstanceOf["filled"]
     
-    inline def focused: typings.materialUiCore.materialUiCoreStrings.focused = "focused".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.focused]
+    inline def focused: "focused" = "focused".asInstanceOf["focused"]
     
-    inline def formControl: typings.materialUiCore.materialUiCoreStrings.formControl = "formControl".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.formControl]
+    inline def formControl: "formControl" = "formControl".asInstanceOf["formControl"]
     
-    inline def marginDense: typings.materialUiCore.materialUiCoreStrings.marginDense = "marginDense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.marginDense]
+    inline def marginDense: "marginDense" = "marginDense".asInstanceOf["marginDense"]
     
-    inline def outlined: typings.materialUiCore.materialUiCoreStrings.outlined = "outlined".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.outlined]
+    inline def outlined: "outlined" = "outlined".asInstanceOf["outlined"]
     
-    inline def required: typings.materialUiCore.materialUiCoreStrings.required = "required".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.required]
+    inline def required: "required" = "required".asInstanceOf["required"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def shrink: typings.materialUiCore.materialUiCoreStrings.shrink = "shrink".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.shrink]
+    inline def shrink: "shrink" = "shrink".asInstanceOf["shrink"]
   }
+  type InputLabelClassKey = "root" | "focused" | "disabled" | "error" | "required" | "asterisk" | "formControl" | "marginDense" | "shrink" | "animated" | "filled" | "outlined"
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped @material-ui/core.@material-ui/core/FormLabel/FormLabel.FormLabelProps<'label', {}> extends any ? std.Pick<@material-ui/core.@material-ui/core/FormLabel/FormLabel.FormLabelProps<'label', {}>, std.Exclude<keyof @material-ui/core.@material-ui/core/FormLabel/FormLabel.FormLabelProps<'label', {}>, 'classes' | never>> : never */ trait InputLabelProps
     extends StObject
        with StyledComponentProps[InputLabelClassKey]
-       with Ref[FormLabelProps[label, js.Object]] {
+       with Ref[FormLabelProps["label", js.Object]] {
     
     /**
       * The contents of the `InputLabel`.
@@ -103,7 +84,7 @@ object inputLabelInputLabelMod {
       * If `dense`, will adjust vertical spacing. This is normally obtained via context from
       * FormControl.
       */
-    var margin: js.UndefOr[dense] = js.undefined
+    var margin: js.UndefOr["dense"] = js.undefined
     
     /**
       * if `true`, the label will indicate that the input is required.
@@ -118,7 +99,7 @@ object inputLabelInputLabelMod {
     /**
       * The variant to use.
       */
-    var variant: js.UndefOr[standard | outlined | filled] = js.undefined
+    var variant: js.UndefOr["standard" | "outlined" | "filled"] = js.undefined
   }
   object InputLabelProps {
     
@@ -155,7 +136,7 @@ object inputLabelInputLabelMod {
       
       inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
       
-      inline def setMargin(value: dense): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: "dense"): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -167,7 +148,7 @@ object inputLabelInputLabelMod {
       
       inline def setShrinkUndefined: Self = StObject.set(x, "shrink", js.undefined)
       
-      inline def setVariant(value: standard | outlined | filled): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "standard" | "outlined" | "filled"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     }

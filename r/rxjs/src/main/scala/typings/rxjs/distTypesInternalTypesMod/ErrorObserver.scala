@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ErrorObserver[T]
-  extends StObject
-     with PartialObserver[T] {
+trait ErrorObserver[T] extends StObject {
   
   var closed: js.UndefOr[Boolean] = js.undefined
   

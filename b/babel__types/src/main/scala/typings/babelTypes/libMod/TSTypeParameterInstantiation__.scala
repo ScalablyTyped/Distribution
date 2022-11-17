@@ -1,20 +1,17 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TSTypeParameterInstantiation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSTypeParameterInstantiation__
   extends StObject
-     with BaseNode
-     with Node
-     with TypeScript {
+     with BaseNode {
   
   var params: js.Array[TSType]
   
   @JSName("type")
-  var type_TSTypeParameterInstantiation__ : TSTypeParameterInstantiation
+  var type_TSTypeParameterInstantiation__ : "TSTypeParameterInstantiation"
 }
 object TSTypeParameterInstantiation__ {
   
@@ -30,6 +27,6 @@ object TSTypeParameterInstantiation__ {
     
     inline def setParamsVarargs(value: TSType*): Self = StObject.set(x, "params", js.Array(value*))
     
-    inline def setType(value: TSTypeParameterInstantiation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSTypeParameterInstantiation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

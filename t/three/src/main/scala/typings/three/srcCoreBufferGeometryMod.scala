@@ -14,7 +14,6 @@ import typings.three.srcMathQuaternionMod.Quaternion
 import typings.three.srcMathSphereMod.Sphere
 import typings.three.srcMathVector2Mod.Vector2
 import typings.three.srcMathVector3Mod.Vector3
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,8 +103,7 @@ object srcCoreBufferGeometryMod {
     
     def copy(source: BufferGeometry): this.type = js.native
     
-    def deleteAttribute(name: String): BufferGeometry = js.native
-    def deleteAttribute(name: BuiltinShaderAttributeName): BufferGeometry = js.native
+    def deleteAttribute(name: BuiltinShaderAttributeName | String): BufferGeometry = js.native
     
     /**
       * Disposes the object from memory.
@@ -123,8 +121,7 @@ object srcCoreBufferGeometryMod {
       */
     var drawcalls: Any = js.native
     
-    def getAttribute(name: String): BufferAttribute | InterleavedBufferAttribute = js.native
-    def getAttribute(name: BuiltinShaderAttributeName): BufferAttribute | InterleavedBufferAttribute = js.native
+    def getAttribute(name: BuiltinShaderAttributeName | String): BufferAttribute | InterleavedBufferAttribute = js.native
     
     def getIndex(): BufferAttribute | Null = js.native
     
@@ -133,8 +130,7 @@ object srcCoreBufferGeometryMod {
       */
     var groups: js.Array[MaterialIndex] = js.native
     
-    def hasAttribute(name: String): Boolean = js.native
-    def hasAttribute(name: BuiltinShaderAttributeName): Boolean = js.native
+    def hasAttribute(name: BuiltinShaderAttributeName | String): Boolean = js.native
     
     /**
       * Unique number of this buffergeometry instance
@@ -146,7 +142,7 @@ object srcCoreBufferGeometryMod {
       */
     var index: BufferAttribute | Null = js.native
     
-    val isBufferGeometry: `true` = js.native
+    val isBufferGeometry: true = js.native
     
     def lookAt(v: Vector3): Unit = js.native
     
@@ -185,10 +181,8 @@ object srcCoreBufferGeometryMod {
     
     def scale(x: Double, y: Double, z: Double): BufferGeometry = js.native
     
-    def setAttribute(name: String, attribute: BufferAttribute): BufferGeometry = js.native
-    def setAttribute(name: String, attribute: InterleavedBufferAttribute): BufferGeometry = js.native
-    def setAttribute(name: BuiltinShaderAttributeName, attribute: BufferAttribute): BufferGeometry = js.native
-    def setAttribute(name: BuiltinShaderAttributeName, attribute: InterleavedBufferAttribute): BufferGeometry = js.native
+    def setAttribute(name: BuiltinShaderAttributeName | String, attribute: BufferAttribute): BufferGeometry = js.native
+    def setAttribute(name: BuiltinShaderAttributeName | String, attribute: InterleavedBufferAttribute): BufferGeometry = js.native
     
     def setDrawRange(start: Double, count: Double): Unit = js.native
     

@@ -1,21 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.TSExportAssignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSExportAssignment_
+trait TSExportAssignment_
   extends StObject
-     with BaseNode
-     with Statement
-     with TypeScript {
+     with BaseNode {
   
   var expression: Expression
   
   @JSName("type")
-  var type_TSExportAssignment_ : TSExportAssignment
+  var type_TSExportAssignment_ : "TSExportAssignment"
 }
 object TSExportAssignment_ {
   
@@ -29,6 +25,6 @@ object TSExportAssignment_ {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TSExportAssignment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSExportAssignment"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

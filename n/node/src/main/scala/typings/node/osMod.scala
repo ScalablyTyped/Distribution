@@ -5,10 +5,6 @@ import typings.node.anon.Encoding
 import typings.node.anon.Idle
 import typings.node.anon.`3`
 import typings.node.bufferMod.global.Buffer
-import typings.node.nodeStrings.BE
-import typings.node.nodeStrings.IPv4
-import typings.node.nodeStrings.IPv6
-import typings.node.nodeStrings.LE
 import typings.node.processMod.global.NodeJS.Platform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -693,7 +689,7 @@ object osMod {
     * Possible values are `'BE'` for big endian and `'LE'` for little endian.
     * @since v0.9.4
     */
-  inline def endianness(): BE | LE = ^.asInstanceOf[js.Dynamic].applyDynamic("endianness")().asInstanceOf[BE | LE]
+  inline def endianness(): "BE" | "LE" = ^.asInstanceOf[js.Dynamic].applyDynamic("endianness")().asInstanceOf["BE" | "LE"]
   
   /**
     * Returns the amount of free system memory in bytes as an integer.
@@ -959,30 +955,13 @@ object osMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.node.osMod.NetworkInterfaceInfoIPv4
-    - typings.node.osMod.NetworkInterfaceInfoIPv6
-  */
-  trait NetworkInterfaceInfo extends StObject
-  object NetworkInterfaceInfo {
-    
-    inline def NetworkInterfaceInfoIPv4(address: String, internal: Boolean, mac: String, netmask: String, scopeid: Unit): typings.node.osMod.NetworkInterfaceInfoIPv4 = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = "IPv4", internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], scopeid = scopeid.asInstanceOf[js.Any], cidr = null)
-      __obj.asInstanceOf[typings.node.osMod.NetworkInterfaceInfoIPv4]
-    }
-    
-    inline def NetworkInterfaceInfoIPv6(address: String, internal: Boolean, mac: String, netmask: String, scopeid: Double): typings.node.osMod.NetworkInterfaceInfoIPv6 = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = "IPv6", internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], scopeid = scopeid.asInstanceOf[js.Any], cidr = null)
-      __obj.asInstanceOf[typings.node.osMod.NetworkInterfaceInfoIPv6]
-    }
-  }
+  type NetworkInterfaceInfo = NetworkInterfaceInfoIPv4 | NetworkInterfaceInfoIPv6
   
   trait NetworkInterfaceInfoIPv4
     extends StObject
-       with NetworkInterfaceBase
-       with NetworkInterfaceInfo {
+       with NetworkInterfaceBase {
     
-    var family: IPv4
+    var family: "IPv4"
     
     var scopeid: Unit
   }
@@ -995,7 +974,7 @@ object osMod {
     
     extension [Self <: NetworkInterfaceInfoIPv4](x: Self) {
       
-      inline def setFamily(value: IPv4): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: "IPv4"): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
       inline def setScopeid(value: Unit): Self = StObject.set(x, "scopeid", value.asInstanceOf[js.Any])
     }
@@ -1003,10 +982,9 @@ object osMod {
   
   trait NetworkInterfaceInfoIPv6
     extends StObject
-       with NetworkInterfaceBase
-       with NetworkInterfaceInfo {
+       with NetworkInterfaceBase {
     
-    var family: IPv6
+    var family: "IPv6"
     
     var scopeid: Double
   }
@@ -1019,7 +997,7 @@ object osMod {
     
     extension [Self <: NetworkInterfaceInfoIPv6](x: Self) {
       
-      inline def setFamily(value: IPv6): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: "IPv6"): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
       inline def setScopeid(value: Double): Self = StObject.set(x, "scopeid", value.asInstanceOf[js.Any])
     }

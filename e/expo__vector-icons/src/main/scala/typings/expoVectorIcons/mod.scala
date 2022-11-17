@@ -6,17 +6,6 @@ import typings.expoVectorIcons.buildCreateIconSetMod.Icon
 import typings.expoVectorIcons.buildCreateIconSetMod.IconButtonProps
 import typings.expoVectorIcons.buildCreateIconSetMod.IconProps
 import typings.expoVectorIcons.buildCreateMultiStyleIconSetMod.FontStyles
-import typings.expoVectorIcons.expoVectorIconsStrings.`material-community`
-import typings.expoVectorIcons.expoVectorIconsStrings.`simple-line-icons`
-import typings.expoVectorIcons.expoVectorIconsStrings.anticon
-import typings.expoVectorIcons.expoVectorIconsStrings.entypo
-import typings.expoVectorIcons.expoVectorIconsStrings.evilicons
-import typings.expoVectorIcons.expoVectorIconsStrings.feather
-import typings.expoVectorIcons.expoVectorIconsStrings.foundation
-import typings.expoVectorIcons.expoVectorIconsStrings.ionicons
-import typings.expoVectorIcons.expoVectorIconsStrings.material
-import typings.expoVectorIcons.expoVectorIconsStrings.octicons
-import typings.expoVectorIcons.expoVectorIconsStrings.zocial
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
@@ -35,13 +24,13 @@ object mod {
   open class AntDesign protected ()
     extends Component[
           IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ], 
           js.Object, 
           Any
         ] {
     def this(props: IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ]) = this()
   }
   object AntDesign extends Shortcut {
@@ -49,8 +38,8 @@ object mod {
     @JSImport("@expo/vector-icons", "AntDesign")
     @js.native
     val ^ : Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any, 
-        anticon
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String, 
+        "anticon"
       ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -59,31 +48,31 @@ object mod {
     open class Button protected ()
       extends Component[
               IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ], 
               ComponentState, 
               Any
             ] {
       def this(props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ]) = this()
       def this(
         props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ],
         context: Any
       ) = this()
     }
     
     type _To = Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any, 
-        anticon
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String, 
+        "anticon"
       ]
     
     /* This means you don't have to write `^`, but can instead just say `AntDesign.foo` */
     override def _to: Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any, 
-        anticon
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String, 
+        "anticon"
       ] = ^
   }
   
@@ -93,13 +82,13 @@ object mod {
   open class Entypo protected ()
     extends Component[
           IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ], 
           js.Object, 
           Any
         ] {
     def this(props: IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411, starting with "link", "email", "image" */ String
           ]) = this()
   }
   object Entypo extends Shortcut {
@@ -107,8 +96,8 @@ object mod {
     @JSImport("@expo/vector-icons", "Entypo")
     @js.native
     val ^ : Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        entypo
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411, starting with "link", "email", "image" */ String, 
+        "entypo"
       ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -117,31 +106,31 @@ object mod {
     open class Button protected ()
       extends Component[
               IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ], 
               ComponentState, 
               Any
             ] {
       def this(props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411, starting with "link", "email", "image" */ String
               ]) = this()
       def this(
         props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411, starting with "link", "email", "image" */ String
               ],
         context: Any
       ) = this()
     }
     
     type _To = Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        entypo
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411, starting with "link", "email", "image" */ String, 
+        "entypo"
       ]
     
     /* This means you don't have to write `^`, but can instead just say `Entypo.foo` */
     override def _to: Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        entypo
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411, starting with "link", "email", "image" */ String, 
+        "entypo"
       ] = ^
   }
   
@@ -151,13 +140,13 @@ object mod {
   open class EvilIcons protected ()
     extends Component[
           IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ], 
           js.Object, 
           Any
         ] {
     def this(props: IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70, starting with "link", "search", "image" */ String
           ]) = this()
   }
   object EvilIcons extends Shortcut {
@@ -165,8 +154,8 @@ object mod {
     @JSImport("@expo/vector-icons", "EvilIcons")
     @js.native
     val ^ : Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        evilicons
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70, starting with "link", "search", "image" */ String, 
+        "evilicons"
       ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -175,31 +164,31 @@ object mod {
     open class Button protected ()
       extends Component[
               IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ], 
               ComponentState, 
               Any
             ] {
       def this(props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70, starting with "link", "search", "image" */ String
               ]) = this()
       def this(
         props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70, starting with "link", "search", "image" */ String
               ],
         context: Any
       ) = this()
     }
     
     type _To = Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        evilicons
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70, starting with "link", "search", "image" */ String, 
+        "evilicons"
       ]
     
     /* This means you don't have to write `^`, but can instead just say `EvilIcons.foo` */
     override def _to: Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        evilicons
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70, starting with "link", "search", "image" */ String, 
+        "evilicons"
       ] = ^
   }
   
@@ -209,13 +198,13 @@ object mod {
   open class Feather protected ()
     extends Component[
           IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ], 
           js.Object, 
           Any
         ] {
     def this(props: IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 286, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 286, starting with "link", "search", "image" */ String
           ]) = this()
   }
   object Feather extends Shortcut {
@@ -223,8 +212,8 @@ object mod {
     @JSImport("@expo/vector-icons", "Feather")
     @js.native
     val ^ : Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 286, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        feather
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 286, starting with "link", "search", "image" */ String, 
+        "feather"
       ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -233,31 +222,31 @@ object mod {
     open class Button protected ()
       extends Component[
               IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ], 
               ComponentState, 
               Any
             ] {
       def this(props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 286, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 286, starting with "link", "search", "image" */ String
               ]) = this()
       def this(
         props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 286, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 286, starting with "link", "search", "image" */ String
               ],
         context: Any
       ) = this()
     }
     
     type _To = Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 286, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        feather
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 286, starting with "link", "search", "image" */ String, 
+        "feather"
       ]
     
     /* This means you don't have to write `^`, but can instead just say `Feather.foo` */
     override def _to: Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 286, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        feather
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 286, starting with "link", "search", "image" */ String, 
+        "feather"
       ] = ^
   }
   
@@ -267,13 +256,13 @@ object mod {
   open class FontAwesome protected ()
     extends Component[
           IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ], 
           js.Object, 
           Any
         ] {
     def this(props: IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 786, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 786, starting with "link", "search", "image" */ String
           ]) = this()
   }
   object FontAwesome extends Shortcut {
@@ -281,8 +270,8 @@ object mod {
     @JSImport("@expo/vector-icons", "FontAwesome")
     @js.native
     val ^ : Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 786, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        typings.expoVectorIcons.expoVectorIconsStrings.FontAwesome
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 786, starting with "link", "search", "image" */ String, 
+        "FontAwesome"
       ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -291,31 +280,31 @@ object mod {
     open class Button protected ()
       extends Component[
               IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ], 
               ComponentState, 
               Any
             ] {
       def this(props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 786, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 786, starting with "link", "search", "image" */ String
               ]) = this()
       def this(
         props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 786, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 786, starting with "link", "search", "image" */ String
               ],
         context: Any
       ) = this()
     }
     
     type _To = Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 786, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        typings.expoVectorIcons.expoVectorIconsStrings.FontAwesome
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 786, starting with "link", "search", "image" */ String, 
+        "FontAwesome"
       ]
     
     /* This means you don't have to write `^`, but can instead just say `FontAwesome.foo` */
     override def _to: Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 786, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        typings.expoVectorIcons.expoVectorIconsStrings.FontAwesome
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 786, starting with "link", "search", "image" */ String, 
+        "FontAwesome"
       ] = ^
   }
   
@@ -329,13 +318,13 @@ object mod {
   open class Fontisto protected ()
     extends Component[
           IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ], 
           js.Object, 
           Any
         ] {
     def this(props: IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 617, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.search */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 617, starting with "link", "email", "search" */ String
           ]) = this()
   }
   object Fontisto extends Shortcut {
@@ -343,8 +332,8 @@ object mod {
     @JSImport("@expo/vector-icons", "Fontisto")
     @js.native
     val ^ : Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 617, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.search */ Any, 
-        typings.expoVectorIcons.expoVectorIconsStrings.Fontisto
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 617, starting with "link", "email", "search" */ String, 
+        "Fontisto"
       ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -353,31 +342,31 @@ object mod {
     open class Button protected ()
       extends Component[
               IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ], 
               ComponentState, 
               Any
             ] {
       def this(props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 617, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.search */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 617, starting with "link", "email", "search" */ String
               ]) = this()
       def this(
         props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 617, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.search */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 617, starting with "link", "email", "search" */ String
               ],
         context: Any
       ) = this()
     }
     
     type _To = Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 617, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.search */ Any, 
-        typings.expoVectorIcons.expoVectorIconsStrings.Fontisto
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 617, starting with "link", "email", "search" */ String, 
+        "Fontisto"
       ]
     
     /* This means you don't have to write `^`, but can instead just say `Fontisto.foo` */
     override def _to: Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 617, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.search */ Any, 
-        typings.expoVectorIcons.expoVectorIconsStrings.Fontisto
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 617, starting with "link", "email", "search" */ String, 
+        "Fontisto"
       ] = ^
   }
   
@@ -387,13 +376,13 @@ object mod {
   open class Foundation protected ()
     extends Component[
           IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ], 
           js.Object, 
           Any
         ] {
     def this(props: IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 283, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.alert, typings.expoVectorIcons.expoVectorIconsStrings.checkbox */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 283, starting with "link", "alert", "checkbox" */ String
           ]) = this()
   }
   object Foundation extends Shortcut {
@@ -401,8 +390,8 @@ object mod {
     @JSImport("@expo/vector-icons", "Foundation")
     @js.native
     val ^ : Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 283, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.alert, typings.expoVectorIcons.expoVectorIconsStrings.checkbox */ Any, 
-        foundation
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 283, starting with "link", "alert", "checkbox" */ String, 
+        "foundation"
       ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -411,31 +400,31 @@ object mod {
     open class Button protected ()
       extends Component[
               IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ], 
               ComponentState, 
               Any
             ] {
       def this(props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 283, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.alert, typings.expoVectorIcons.expoVectorIconsStrings.checkbox */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 283, starting with "link", "alert", "checkbox" */ String
               ]) = this()
       def this(
         props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 283, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.alert, typings.expoVectorIcons.expoVectorIconsStrings.checkbox */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 283, starting with "link", "alert", "checkbox" */ String
               ],
         context: Any
       ) = this()
     }
     
     type _To = Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 283, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.alert, typings.expoVectorIcons.expoVectorIconsStrings.checkbox */ Any, 
-        foundation
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 283, starting with "link", "alert", "checkbox" */ String, 
+        "foundation"
       ]
     
     /* This means you don't have to write `^`, but can instead just say `Foundation.foo` */
     override def _to: Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 283, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.alert, typings.expoVectorIcons.expoVectorIconsStrings.checkbox */ Any, 
-        foundation
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 283, starting with "link", "alert", "checkbox" */ String, 
+        "foundation"
       ] = ^
   }
   
@@ -445,13 +434,13 @@ object mod {
   open class Ionicons protected ()
     extends Component[
           IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ], 
           js.Object, 
           Any
         ] {
     def this(props: IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 3681, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 3681, starting with "link", "search", "image" */ String
           ]) = this()
   }
   object Ionicons extends Shortcut {
@@ -459,8 +448,8 @@ object mod {
     @JSImport("@expo/vector-icons", "Ionicons")
     @js.native
     val ^ : Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 3681, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        ionicons
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 3681, starting with "link", "search", "image" */ String, 
+        "ionicons"
       ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -469,31 +458,31 @@ object mod {
     open class Button protected ()
       extends Component[
               IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ], 
               ComponentState, 
               Any
             ] {
       def this(props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 3681, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 3681, starting with "link", "search", "image" */ String
               ]) = this()
       def this(
         props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 3681, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 3681, starting with "link", "search", "image" */ String
               ],
         context: Any
       ) = this()
     }
     
     type _To = Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 3681, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        ionicons
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 3681, starting with "link", "search", "image" */ String, 
+        "ionicons"
       ]
     
     /* This means you don't have to write `^`, but can instead just say `Ionicons.foo` */
     override def _to: Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 3681, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search, typings.expoVectorIcons.expoVectorIconsStrings.image */ Any, 
-        ionicons
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 3681, starting with "link", "search", "image" */ String, 
+        "ionicons"
       ] = ^
   }
   
@@ -503,13 +492,13 @@ object mod {
   open class MaterialCommunityIcons protected ()
     extends Component[
           IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ], 
           js.Object, 
           Any
         ] {
     def this(props: IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with typings.expoVectorIcons.expoVectorIconsStrings.symbol, typings.expoVectorIcons.expoVectorIconsStrings.function, typings.expoVectorIcons.expoVectorIconsStrings.head */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with "symbol", "function", "head" */ String
           ]) = this()
   }
   object MaterialCommunityIcons extends Shortcut {
@@ -517,8 +506,8 @@ object mod {
     @JSImport("@expo/vector-icons", "MaterialCommunityIcons")
     @js.native
     val ^ : Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with typings.expoVectorIcons.expoVectorIconsStrings.symbol, typings.expoVectorIcons.expoVectorIconsStrings.function, typings.expoVectorIcons.expoVectorIconsStrings.head */ Any, 
-        `material-community`
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with "symbol", "function", "head" */ String, 
+        "material-community"
       ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -527,31 +516,31 @@ object mod {
     open class Button protected ()
       extends Component[
               IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ], 
               ComponentState, 
               Any
             ] {
       def this(props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with typings.expoVectorIcons.expoVectorIconsStrings.symbol, typings.expoVectorIcons.expoVectorIconsStrings.function, typings.expoVectorIcons.expoVectorIconsStrings.head */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with "symbol", "function", "head" */ String
               ]) = this()
       def this(
         props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with typings.expoVectorIcons.expoVectorIconsStrings.symbol, typings.expoVectorIcons.expoVectorIconsStrings.function, typings.expoVectorIcons.expoVectorIconsStrings.head */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with "symbol", "function", "head" */ String
               ],
         context: Any
       ) = this()
     }
     
     type _To = Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with typings.expoVectorIcons.expoVectorIconsStrings.symbol, typings.expoVectorIcons.expoVectorIconsStrings.function, typings.expoVectorIcons.expoVectorIconsStrings.head */ Any, 
-        `material-community`
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with "symbol", "function", "head" */ String, 
+        "material-community"
       ]
     
     /* This means you don't have to write `^`, but can instead just say `MaterialCommunityIcons.foo` */
     override def _to: Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with typings.expoVectorIcons.expoVectorIconsStrings.symbol, typings.expoVectorIcons.expoVectorIconsStrings.function, typings.expoVectorIcons.expoVectorIconsStrings.head */ Any, 
-        `material-community`
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 6596, starting with "symbol", "function", "head" */ String, 
+        "material-community"
       ] = ^
   }
   
@@ -561,13 +550,13 @@ object mod {
   open class MaterialIcons protected ()
     extends Component[
           IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ], 
           js.Object, 
           Any
         ] {
     def this(props: IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1562, starting with typings.expoVectorIcons.expoVectorIconsStrings.style, typings.expoVectorIcons.expoVectorIconsStrings.accessible, typings.expoVectorIcons.expoVectorIconsStrings.link */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1562, starting with "style", "accessible", "link" */ String
           ]) = this()
   }
   object MaterialIcons extends Shortcut {
@@ -575,8 +564,8 @@ object mod {
     @JSImport("@expo/vector-icons", "MaterialIcons")
     @js.native
     val ^ : Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1562, starting with typings.expoVectorIcons.expoVectorIconsStrings.style, typings.expoVectorIcons.expoVectorIconsStrings.accessible, typings.expoVectorIcons.expoVectorIconsStrings.link */ Any, 
-        material
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1562, starting with "style", "accessible", "link" */ String, 
+        "material"
       ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -585,31 +574,31 @@ object mod {
     open class Button protected ()
       extends Component[
               IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ], 
               ComponentState, 
               Any
             ] {
       def this(props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1562, starting with typings.expoVectorIcons.expoVectorIconsStrings.style, typings.expoVectorIcons.expoVectorIconsStrings.accessible, typings.expoVectorIcons.expoVectorIconsStrings.link */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1562, starting with "style", "accessible", "link" */ String
               ]) = this()
       def this(
         props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1562, starting with typings.expoVectorIcons.expoVectorIconsStrings.style, typings.expoVectorIcons.expoVectorIconsStrings.accessible, typings.expoVectorIcons.expoVectorIconsStrings.link */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1562, starting with "style", "accessible", "link" */ String
               ],
         context: Any
       ) = this()
     }
     
     type _To = Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1562, starting with typings.expoVectorIcons.expoVectorIconsStrings.style, typings.expoVectorIcons.expoVectorIconsStrings.accessible, typings.expoVectorIcons.expoVectorIconsStrings.link */ Any, 
-        material
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1562, starting with "style", "accessible", "link" */ String, 
+        "material"
       ]
     
     /* This means you don't have to write `^`, but can instead just say `MaterialIcons.foo` */
     override def _to: Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1562, starting with typings.expoVectorIcons.expoVectorIconsStrings.style, typings.expoVectorIcons.expoVectorIconsStrings.accessible, typings.expoVectorIcons.expoVectorIconsStrings.link */ Any, 
-        material
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1562, starting with "style", "accessible", "link" */ String, 
+        "material"
       ] = ^
   }
   
@@ -619,13 +608,13 @@ object mod {
   open class Octicons protected ()
     extends Component[
           IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ], 
           js.Object, 
           Any
         ] {
     def this(props: IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 250, starting with typings.expoVectorIcons.expoVectorIconsStrings.number, typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 250, starting with "number", "link", "search" */ String
           ]) = this()
   }
   object Octicons extends Shortcut {
@@ -633,8 +622,8 @@ object mod {
     @JSImport("@expo/vector-icons", "Octicons")
     @js.native
     val ^ : Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 250, starting with typings.expoVectorIcons.expoVectorIconsStrings.number, typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search */ Any, 
-        octicons
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 250, starting with "number", "link", "search" */ String, 
+        "octicons"
       ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -643,31 +632,31 @@ object mod {
     open class Button protected ()
       extends Component[
               IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ], 
               ComponentState, 
               Any
             ] {
       def this(props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 250, starting with typings.expoVectorIcons.expoVectorIconsStrings.number, typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 250, starting with "number", "link", "search" */ String
               ]) = this()
       def this(
         props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 250, starting with typings.expoVectorIcons.expoVectorIconsStrings.number, typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 250, starting with "number", "link", "search" */ String
               ],
         context: Any
       ) = this()
     }
     
     type _To = Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 250, starting with typings.expoVectorIcons.expoVectorIconsStrings.number, typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search */ Any, 
-        octicons
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 250, starting with "number", "link", "search" */ String, 
+        "octicons"
       ]
     
     /* This means you don't have to write `^`, but can instead just say `Octicons.foo` */
     override def _to: Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 250, starting with typings.expoVectorIcons.expoVectorIconsStrings.number, typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.search */ Any, 
-        octicons
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 250, starting with "number", "link", "search" */ String, 
+        "octicons"
       ] = ^
   }
   
@@ -677,13 +666,13 @@ object mod {
   open class SimpleLineIcons protected ()
     extends Component[
           IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ], 
           js.Object, 
           Any
         ] {
     def this(props: IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 189, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.menu, typings.expoVectorIcons.expoVectorIconsStrings.map */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 189, starting with "link", "menu", "map" */ String
           ]) = this()
   }
   object SimpleLineIcons extends Shortcut {
@@ -691,8 +680,8 @@ object mod {
     @JSImport("@expo/vector-icons", "SimpleLineIcons")
     @js.native
     val ^ : Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 189, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.menu, typings.expoVectorIcons.expoVectorIconsStrings.map */ Any, 
-        `simple-line-icons`
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 189, starting with "link", "menu", "map" */ String, 
+        "simple-line-icons"
       ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -701,31 +690,31 @@ object mod {
     open class Button protected ()
       extends Component[
               IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ], 
               ComponentState, 
               Any
             ] {
       def this(props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 189, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.menu, typings.expoVectorIcons.expoVectorIconsStrings.map */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 189, starting with "link", "menu", "map" */ String
               ]) = this()
       def this(
         props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 189, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.menu, typings.expoVectorIcons.expoVectorIconsStrings.map */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 189, starting with "link", "menu", "map" */ String
               ],
         context: Any
       ) = this()
     }
     
     type _To = Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 189, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.menu, typings.expoVectorIcons.expoVectorIconsStrings.map */ Any, 
-        `simple-line-icons`
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 189, starting with "link", "menu", "map" */ String, 
+        "simple-line-icons"
       ]
     
     /* This means you don't have to write `^`, but can instead just say `SimpleLineIcons.foo` */
     override def _to: Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 189, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.menu, typings.expoVectorIcons.expoVectorIconsStrings.map */ Any, 
-        `simple-line-icons`
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 189, starting with "link", "menu", "map" */ String, 
+        "simple-line-icons"
       ] = ^
   }
   
@@ -735,13 +724,13 @@ object mod {
   open class Zocial protected ()
     extends Component[
           IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
           ], 
           js.Object, 
           Any
         ] {
     def this(props: IconProps[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.windows, typings.expoVectorIcons.expoVectorIconsStrings.ie */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with "email", "windows", "ie" */ String
           ]) = this()
   }
   object Zocial extends Shortcut {
@@ -749,8 +738,8 @@ object mod {
     @JSImport("@expo/vector-icons", "Zocial")
     @js.native
     val ^ : Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.windows, typings.expoVectorIcons.expoVectorIconsStrings.ie */ Any, 
-        zocial
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with "email", "windows", "ie" */ String, 
+        "zocial"
       ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -759,31 +748,31 @@ object mod {
     open class Button protected ()
       extends Component[
               IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with typings.expoVectorIcons.expoVectorIconsStrings.link, typings.expoVectorIcons.expoVectorIconsStrings.form, typings.expoVectorIcons.expoVectorIconsStrings.picture */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298, starting with "link", "form", "picture" */ String
               ], 
               ComponentState, 
               Any
             ] {
       def this(props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.windows, typings.expoVectorIcons.expoVectorIconsStrings.ie */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with "email", "windows", "ie" */ String
               ]) = this()
       def this(
         props: IconButtonProps[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.windows, typings.expoVectorIcons.expoVectorIconsStrings.ie */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with "email", "windows", "ie" */ String
               ],
         context: Any
       ) = this()
     }
     
     type _To = Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.windows, typings.expoVectorIcons.expoVectorIconsStrings.ie */ Any, 
-        zocial
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with "email", "windows", "ie" */ String, 
+        "zocial"
       ]
     
     /* This means you don't have to write `^`, but can instead just say `Zocial.foo` */
     override def _to: Icon[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.expoVectorIcons.expoVectorIconsStrings.email, typings.expoVectorIcons.expoVectorIconsStrings.windows, typings.expoVectorIcons.expoVectorIconsStrings.ie */ Any, 
-        zocial
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with "email", "windows", "ie" */ String, 
+        "zocial"
       ] = ^
   }
   

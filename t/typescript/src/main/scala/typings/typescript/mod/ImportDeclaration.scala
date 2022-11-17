@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ImportDeclaration
   extends StObject
-     with Statement
-     with HasJSDoc
-     with HasModifiers {
+     with Statement {
   
   val assertClause: js.UndefOr[AssertClause] = js.native
   

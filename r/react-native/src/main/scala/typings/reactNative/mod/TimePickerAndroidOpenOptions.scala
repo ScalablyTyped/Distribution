@@ -1,8 +1,5 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeStrings.clock
-import typings.reactNative.reactNativeStrings.default
-import typings.reactNative.reactNativeStrings.spinner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +12,7 @@ trait TimePickerAndroidOpenOptions extends StObject {
   
   var minute: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[clock | spinner | default] = js.undefined
+  var mode: js.UndefOr["clock" | "spinner" | "default"] = js.undefined
 }
 object TimePickerAndroidOpenOptions {
   
@@ -38,7 +35,7 @@ object TimePickerAndroidOpenOptions {
     
     inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
     
-    inline def setMode(value: clock | spinner | default): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: "clock" | "spinner" | "default"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }

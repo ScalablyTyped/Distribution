@@ -6,9 +6,6 @@ import typings.antDesignReactSlick.mod.ResponsiveObject
 import typings.antDesignReactSlick.mod.Slider
 import typings.antDesignReactSlick.mod.SwipeDirection
 import typings.antd.anon.ClassName
-import typings.antd.antdStrings.blur
-import typings.antd.antdStrings.leave
-import typings.antd.antdStrings.update
 import typings.react.mod.CSSProperties
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactNode
@@ -24,17 +21,13 @@ object libCarouselMod extends Shortcut {
   @js.native
   val default: ForwardRefExoticComponent[CarouselProps & RefAttributes[CarouselRef]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.scrollx
-    - typings.antd.antdStrings.fade
-  */
-  trait CarouselEffect extends StObject
   object CarouselEffect {
     
-    inline def fade: typings.antd.antdStrings.fade = "fade".asInstanceOf[typings.antd.antdStrings.fade]
+    inline def fade: "fade" = "fade".asInstanceOf["fade"]
     
-    inline def scrollx: typings.antd.antdStrings.scrollx = "scrollx".asInstanceOf[typings.antd.antdStrings.scrollx]
+    inline def scrollx: "scrollx" = "scrollx".asInstanceOf["scrollx"]
   }
+  type CarouselEffect = "scrollx" | "fade"
   
   /* Inlined parent std.Omit<@ant-design/react-slick.@ant-design/react-slick.Settings, 'dots' | 'dotsClass'> */
   trait CarouselProps extends StObject {
@@ -404,7 +397,9 @@ object libCarouselMod extends Shortcut {
   trait CarouselRef extends StObject {
     
     def autoPlay(): Unit = js.native
-    def autoPlay(palyType: update | leave | blur): Unit = js.native
+    @JSName("autoPlay")
+    @scala.annotation.targetName("autoPlay_update_leave_blur")
+    def autoPlay(palyType: "update" | "leave" | "blur"): Unit = js.native
     
     def goTo(slide: Double): Unit = js.native
     def goTo(slide: Double, dontAnimate: Boolean): Unit = js.native
@@ -416,23 +411,17 @@ object libCarouselMod extends Shortcut {
     def prev(): Unit = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.top
-    - typings.antd.antdStrings.bottom
-    - typings.antd.antdStrings.left
-    - typings.antd.antdStrings.right
-  */
-  trait DotPosition extends StObject
   object DotPosition {
     
-    inline def bottom: typings.antd.antdStrings.bottom = "bottom".asInstanceOf[typings.antd.antdStrings.bottom]
+    inline def bottom: "bottom" = "bottom".asInstanceOf["bottom"]
     
-    inline def left: typings.antd.antdStrings.left = "left".asInstanceOf[typings.antd.antdStrings.left]
+    inline def left: "left" = "left".asInstanceOf["left"]
     
-    inline def right: typings.antd.antdStrings.right = "right".asInstanceOf[typings.antd.antdStrings.right]
+    inline def right: "right" = "right".asInstanceOf["right"]
     
-    inline def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
+    inline def top: "top" = "top".asInstanceOf["top"]
   }
+  type DotPosition = "top" | "bottom" | "left" | "right"
   
   type _To = ForwardRefExoticComponent[CarouselProps & RefAttributes[CarouselRef]]
   

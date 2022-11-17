@@ -4,53 +4,35 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.csstype.csstypeStrings.`@charset`
-  - typings.csstype.csstypeStrings.`@counter-style`
-  - typings.csstype.csstypeStrings.`@document`
-  - typings.csstype.csstypeStrings.`@font-face`
-  - typings.csstype.csstypeStrings.`@font-feature-values`
-  - typings.csstype.csstypeStrings.`@import`
-  - typings.csstype.csstypeStrings.`@keyframes`
-  - typings.csstype.csstypeStrings.`@layer`
-  - typings.csstype.csstypeStrings.`@media`
-  - typings.csstype.csstypeStrings.`@namespace`
-  - typings.csstype.csstypeStrings.`@page`
-  - typings.csstype.csstypeStrings.`@property`
-  - typings.csstype.csstypeStrings.`@scroll-timeline`
-  - typings.csstype.csstypeStrings.`@supports`
-  - typings.csstype.csstypeStrings.`@viewport`
-*/
-trait AtRules extends StObject
 object AtRules {
   
-  inline def `@charset`: typings.csstype.csstypeStrings.`@charset` = "@charset".asInstanceOf[typings.csstype.csstypeStrings.`@charset`]
+  inline def `@charset`: "@charset" = "@charset".asInstanceOf["@charset"]
   
-  inline def `@counter-style`: typings.csstype.csstypeStrings.`@counter-style` = "@counter-style".asInstanceOf[typings.csstype.csstypeStrings.`@counter-style`]
+  inline def `@counter-style`: "@counter-style" = "@counter-style".asInstanceOf["@counter-style"]
   
-  inline def `@document`: typings.csstype.csstypeStrings.`@document` = "@document".asInstanceOf[typings.csstype.csstypeStrings.`@document`]
+  inline def `@document`: "@document" = "@document".asInstanceOf["@document"]
   
-  inline def `@font-face`: typings.csstype.csstypeStrings.`@font-face` = "@font-face".asInstanceOf[typings.csstype.csstypeStrings.`@font-face`]
+  inline def `@font-face`: "@font-face" = "@font-face".asInstanceOf["@font-face"]
   
-  inline def `@font-feature-values`: typings.csstype.csstypeStrings.`@font-feature-values` = "@font-feature-values".asInstanceOf[typings.csstype.csstypeStrings.`@font-feature-values`]
+  inline def `@font-feature-values`: "@font-feature-values" = "@font-feature-values".asInstanceOf["@font-feature-values"]
   
-  inline def `@import`: typings.csstype.csstypeStrings.`@import` = "@import".asInstanceOf[typings.csstype.csstypeStrings.`@import`]
+  inline def `@import`: "@import" = "@import".asInstanceOf["@import"]
   
-  inline def `@keyframes`: typings.csstype.csstypeStrings.`@keyframes` = "@keyframes".asInstanceOf[typings.csstype.csstypeStrings.`@keyframes`]
+  inline def `@keyframes`: "@keyframes" = "@keyframes".asInstanceOf["@keyframes"]
   
-  inline def `@layer`: typings.csstype.csstypeStrings.`@layer` = "@layer".asInstanceOf[typings.csstype.csstypeStrings.`@layer`]
+  inline def `@layer`: "@layer" = "@layer".asInstanceOf["@layer"]
   
-  inline def `@media`: typings.csstype.csstypeStrings.`@media` = "@media".asInstanceOf[typings.csstype.csstypeStrings.`@media`]
+  inline def `@media`: "@media" = "@media".asInstanceOf["@media"]
   
-  inline def `@namespace`: typings.csstype.csstypeStrings.`@namespace` = "@namespace".asInstanceOf[typings.csstype.csstypeStrings.`@namespace`]
+  inline def `@namespace`: "@namespace" = "@namespace".asInstanceOf["@namespace"]
   
-  inline def `@page`: typings.csstype.csstypeStrings.`@page` = "@page".asInstanceOf[typings.csstype.csstypeStrings.`@page`]
+  inline def `@page`: "@page" = "@page".asInstanceOf["@page"]
   
-  inline def `@property`: typings.csstype.csstypeStrings.`@property` = "@property".asInstanceOf[typings.csstype.csstypeStrings.`@property`]
+  inline def `@property`: "@property" = "@property".asInstanceOf["@property"]
   
-  inline def `@scroll-timeline`: typings.csstype.csstypeStrings.`@scroll-timeline` = "@scroll-timeline".asInstanceOf[typings.csstype.csstypeStrings.`@scroll-timeline`]
+  inline def `@scroll-timeline`: "@scroll-timeline" = "@scroll-timeline".asInstanceOf["@scroll-timeline"]
   
-  inline def `@supports`: typings.csstype.csstypeStrings.`@supports` = "@supports".asInstanceOf[typings.csstype.csstypeStrings.`@supports`]
+  inline def `@supports`: "@supports" = "@supports".asInstanceOf["@supports"]
   
-  inline def `@viewport`: typings.csstype.csstypeStrings.`@viewport` = "@viewport".asInstanceOf[typings.csstype.csstypeStrings.`@viewport`]
+  inline def `@viewport`: "@viewport" = "@viewport".asInstanceOf["@viewport"]
 }

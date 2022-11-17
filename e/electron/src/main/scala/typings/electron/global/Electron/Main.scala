@@ -22,11 +22,6 @@ import typings.electron.Electron.Main.Screen
 import typings.electron.Electron.Main.SystemPreferences
 import typings.electron.Electron.Rectangle
 import typings.electron.Electron.SharingItem
-import typings.electron.electronStrings.checkbox
-import typings.electron.electronStrings.normal
-import typings.electron.electronStrings.radio
-import typings.electron.electronStrings.separator
-import typings.electron.electronStrings.submenu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -213,7 +208,7 @@ object Main {
       * `submenu`, `checkbox` or `radio`.
       */
     /* CompleteClass */
-    var `type`: normal | separator | submenu | checkbox | radio = js.native
+    var `type`: "normal" | "separator" | "submenu" | "checkbox" | "radio" = js.native
     
     /**
       * An `Accelerator | null` indicating the item's user-assigned accelerator for the

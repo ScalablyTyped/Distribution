@@ -1,7 +1,6 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.materialUiCoreStrings.tbody
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.tableBodyTableBodyMod.TableBodyTypeMap
 import org.scalablytyped.runtime.StObject
@@ -22,10 +21,10 @@ object tableBodyMod extends Shortcut {
     */
   @JSImport("@material-ui/core/TableBody", JSImport.Default)
   @js.native
-  val default: OverridableComponent[TableBodyTypeMap[js.Object, tbody]] = js.native
+  val default: OverridableComponent[TableBodyTypeMap[js.Object, "tbody"]] = js.native
   
-  type _To = OverridableComponent[TableBodyTypeMap[js.Object, tbody]]
+  type _To = OverridableComponent[TableBodyTypeMap[js.Object, "tbody"]]
   
   /* This means you don't have to write `default`, but can instead just say `tableBodyMod.foo` */
-  override def _to: OverridableComponent[TableBodyTypeMap[js.Object, tbody]] = default
+  override def _to: OverridableComponent[TableBodyTypeMap[js.Object, "tbody"]] = default
 }

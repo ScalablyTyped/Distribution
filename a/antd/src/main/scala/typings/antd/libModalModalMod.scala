@@ -1,15 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdBooleans.`false`
-import typings.antd.antdStrings.cancel
-import typings.antd.antdStrings.confirm
-import typings.antd.antdStrings.error
-import typings.antd.antdStrings.info
-import typings.antd.antdStrings.ok
-import typings.antd.antdStrings.success
-import typings.antd.antdStrings.warn
-import typings.antd.antdStrings.warning
 import typings.antd.libButtonButtonMod.ButtonProps
 import typings.antd.libButtonButtonMod.LegacyButtonType
 import typings.antd.libConfigProviderContextMod.DirectionType
@@ -33,7 +24,7 @@ object libModalModalMod extends Shortcut {
     
     var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var autoFocusButton: js.UndefOr[Null | ok | cancel] = js.undefined
+    var autoFocusButton: js.UndefOr[Null | "ok" | "cancel"] = js.undefined
     
     var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
     
@@ -55,7 +46,7 @@ object libModalModalMod extends Shortcut {
     
     var focusTriggerAfterClose: js.UndefOr[Boolean] = js.undefined
     
-    var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false`] = js.undefined
+    var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | false] = js.undefined
     
     var icon: js.UndefOr[ReactNode] = js.undefined
     
@@ -93,7 +84,7 @@ object libModalModalMod extends Shortcut {
     
     var transitionName: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[info | success | error | warn | warning | confirm] = js.undefined
+    var `type`: js.UndefOr["info" | "success" | "error" | "warn" | "warning" | "confirm"] = js.undefined
     
     /**
       * @deprecated `visible` is deprecated which will be removed in next major version. Please use
@@ -120,7 +111,7 @@ object libModalModalMod extends Shortcut {
       
       inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
-      inline def setAutoFocusButton(value: ok | cancel): Self = StObject.set(x, "autoFocusButton", value.asInstanceOf[js.Any])
+      inline def setAutoFocusButton(value: "ok" | "cancel"): Self = StObject.set(x, "autoFocusButton", value.asInstanceOf[js.Any])
       
       inline def setAutoFocusButtonNull: Self = StObject.set(x, "autoFocusButton", null)
       
@@ -166,7 +157,7 @@ object libModalModalMod extends Shortcut {
       
       inline def setFocusTriggerAfterCloseUndefined: Self = StObject.set(x, "focusTriggerAfterClose", js.undefined)
       
-      inline def setGetContainer(value: String | HTMLElement | getContainerFunc | `false`): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
+      inline def setGetContainer(value: String | HTMLElement | getContainerFunc | false): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
       
       inline def setGetContainerFunction0(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       
@@ -244,7 +235,7 @@ object libModalModalMod extends Shortcut {
       
       inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
       
-      inline def setType(value: info | success | error | warn | warning | confirm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "info" | "success" | "error" | "warn" | "warning" | "confirm"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -327,7 +318,7 @@ object libModalModalMod extends Shortcut {
     /** 强制渲染 Modal */
     var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false`] = js.undefined
+    var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | false] = js.undefined
     
     var keyboard: js.UndefOr[Boolean] = js.undefined
     
@@ -448,7 +439,7 @@ object libModalModalMod extends Shortcut {
       
       inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
-      inline def setGetContainer(value: String | HTMLElement | getContainerFunc | `false`): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
+      inline def setGetContainer(value: String | HTMLElement | getContainerFunc | false): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
       
       inline def setGetContainerFunction0(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       

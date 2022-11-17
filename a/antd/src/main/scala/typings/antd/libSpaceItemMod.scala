@@ -1,9 +1,5 @@
 package typings.antd
 
-import typings.antd.antdStrings.horizontal
-import typings.antd.antdStrings.marginLeft
-import typings.antd.antdStrings.marginRight
-import typings.antd.antdStrings.vertical
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -24,11 +20,11 @@ object libSpaceItemMod {
     
     var className: String
     
-    var direction: js.UndefOr[horizontal | vertical] = js.undefined
+    var direction: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var index: Double
     
-    var marginDirection: marginLeft | marginRight
+    var marginDirection: "marginLeft" | "marginRight"
     
     var split: js.UndefOr[String | ReactNode] = js.undefined
     
@@ -36,7 +32,7 @@ object libSpaceItemMod {
   }
   object ItemProps {
     
-    inline def apply(className: String, index: Double, marginDirection: marginLeft | marginRight): ItemProps = {
+    inline def apply(className: String, index: Double, marginDirection: "marginLeft" | "marginRight"): ItemProps = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], marginDirection = marginDirection.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItemProps]
     }
@@ -49,13 +45,13 @@ object libSpaceItemMod {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "horizontal" | "vertical"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      inline def setMarginDirection(value: marginLeft | marginRight): Self = StObject.set(x, "marginDirection", value.asInstanceOf[js.Any])
+      inline def setMarginDirection(value: "marginLeft" | "marginRight"): Self = StObject.set(x, "marginDirection", value.asInstanceOf[js.Any])
       
       inline def setSplit(value: String | ReactNode): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
       

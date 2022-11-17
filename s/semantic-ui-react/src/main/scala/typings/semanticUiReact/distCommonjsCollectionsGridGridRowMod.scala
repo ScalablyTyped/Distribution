@@ -10,7 +10,6 @@ import typings.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
 import typings.semanticUiReact.distCommonjsGenericMod.SemanticWIDTHS
-import typings.semanticUiReact.semanticUiReactStrings.equal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +50,7 @@ object distCommonjsCollectionsGridGridRowMod extends Shortcut {
     var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** Represents column count per line in Row. */
-    var columns: js.UndefOr[SemanticWIDTHS | equal] = js.undefined
+    var columns: js.UndefOr[SemanticWIDTHS | "equal"] = js.undefined
     
     /** A row can have dividers between its columns. */
     var divided: js.UndefOr[Boolean] = js.undefined
@@ -100,7 +99,7 @@ object distCommonjsCollectionsGridGridRowMod extends Shortcut {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColumns(value: SemanticWIDTHS | equal): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: SemanticWIDTHS | "equal"): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       

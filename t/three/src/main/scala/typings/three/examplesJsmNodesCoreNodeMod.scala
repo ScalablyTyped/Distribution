@@ -4,7 +4,6 @@ import typings.three.anon.Images
 import typings.three.examplesJsmNodesCoreConstantsMod.AnyJson
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeTypeOption
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeUpdateTypeOption
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +50,7 @@ object examplesJsmNodesCoreNodeMod {
     
     var id: Double = js.native
     
-    var isNode: `true` = js.native
+    var isNode: true = js.native
     
     var nodeType: NodeTypeOption | Null = js.native
     

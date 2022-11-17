@@ -2,17 +2,6 @@ package typings.qs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.qs.anon.IParseOptionsdecodernever
-import typings.qs.qsBooleans.`false`
-import typings.qs.qsStrings.RFC1738
-import typings.qs.qsStrings.RFC3986
-import typings.qs.qsStrings.`iso-8859-1`
-import typings.qs.qsStrings.`utf-8`
-import typings.qs.qsStrings.brackets
-import typings.qs.qsStrings.comma
-import typings.qs.qsStrings.indices
-import typings.qs.qsStrings.key
-import typings.qs.qsStrings.repeat
-import typings.qs.qsStrings.value
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -43,7 +32,7 @@ object mod {
     
     var arrayLimit: js.UndefOr[Double] = js.undefined
     
-    var charset: js.UndefOr[`utf-8` | `iso-8859-1`] = js.undefined
+    var charset: js.UndefOr["utf-8" | "iso-8859-1"] = js.undefined
     
     var charsetSentinel: js.UndefOr[Boolean] = js.undefined
     
@@ -54,14 +43,14 @@ object mod {
           /* str */ String, 
           /* defaultDecoder */ defaultDecoder, 
           /* charset */ String, 
-          /* type */ key | value, 
+          /* type */ "key" | "value", 
           Any
         ]
       ] = js.undefined
     
     var delimiter: js.UndefOr[String | js.RegExp] = js.undefined
     
-    var depth: js.UndefOr[Double | `false`] = js.undefined
+    var depth: js.UndefOr[Double | false] = js.undefined
     
     var ignoreQueryPrefix: js.UndefOr[Boolean] = js.undefined
     
@@ -96,7 +85,7 @@ object mod {
       
       inline def setArrayLimitUndefined: Self = StObject.set(x, "arrayLimit", js.undefined)
       
-      inline def setCharset(value: `utf-8` | `iso-8859-1`): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: "utf-8" | "iso-8859-1"): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
       inline def setCharsetSentinel(value: Boolean): Self = StObject.set(x, "charsetSentinel", value.asInstanceOf[js.Any])
       
@@ -109,7 +98,7 @@ object mod {
       inline def setCommaUndefined: Self = StObject.set(x, "comma", js.undefined)
       
       inline def setDecoder(
-        value: (/* str */ String, /* defaultDecoder */ defaultDecoder, /* charset */ String, /* type */ key | value) => Any
+        value: (/* str */ String, /* defaultDecoder */ defaultDecoder, /* charset */ String, /* type */ "key" | "value") => Any
       ): Self = StObject.set(x, "decoder", js.Any.fromFunction4(value))
       
       inline def setDecoderUndefined: Self = StObject.set(x, "decoder", js.undefined)
@@ -118,7 +107,7 @@ object mod {
       
       inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      inline def setDepth(value: Double | `false`): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double | false): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
       inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
@@ -154,9 +143,9 @@ object mod {
     
     var allowDots: js.UndefOr[Boolean] = js.undefined
     
-    var arrayFormat: js.UndefOr[indices | brackets | repeat | comma] = js.undefined
+    var arrayFormat: js.UndefOr["indices" | "brackets" | "repeat" | "comma"] = js.undefined
     
-    var charset: js.UndefOr[`utf-8` | `iso-8859-1`] = js.undefined
+    var charset: js.UndefOr["utf-8" | "iso-8859-1"] = js.undefined
     
     var charsetSentinel: js.UndefOr[Boolean] = js.undefined
     
@@ -171,7 +160,7 @@ object mod {
           /* str */ Any, 
           /* defaultEncoder */ defaultEncoder, 
           /* charset */ String, 
-          /* type */ key | value, 
+          /* type */ "key" | "value", 
           String
         ]
       ] = js.undefined
@@ -180,7 +169,7 @@ object mod {
         (js.Array[String | Double]) | (js.Function2[/* prefix */ String, /* value */ Any, Any])
       ] = js.undefined
     
-    var format: js.UndefOr[RFC1738 | RFC3986] = js.undefined
+    var format: js.UndefOr["RFC1738" | "RFC3986"] = js.undefined
     
     var indices: js.UndefOr[Boolean] = js.undefined
     
@@ -209,11 +198,11 @@ object mod {
       
       inline def setAllowDotsUndefined: Self = StObject.set(x, "allowDots", js.undefined)
       
-      inline def setArrayFormat(value: indices | brackets | repeat | comma): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
+      inline def setArrayFormat(value: "indices" | "brackets" | "repeat" | "comma"): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       
       inline def setArrayFormatUndefined: Self = StObject.set(x, "arrayFormat", js.undefined)
       
-      inline def setCharset(value: `utf-8` | `iso-8859-1`): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: "utf-8" | "iso-8859-1"): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
       inline def setCharsetSentinel(value: Boolean): Self = StObject.set(x, "charsetSentinel", value.asInstanceOf[js.Any])
       
@@ -234,7 +223,7 @@ object mod {
       inline def setEncodeValuesOnlyUndefined: Self = StObject.set(x, "encodeValuesOnly", js.undefined)
       
       inline def setEncoder(
-        value: (/* str */ Any, /* defaultEncoder */ defaultEncoder, /* charset */ String, /* type */ key | value) => String
+        value: (/* str */ Any, /* defaultEncoder */ defaultEncoder, /* charset */ String, /* type */ "key" | "value") => String
       ): Self = StObject.set(x, "encoder", js.Any.fromFunction4(value))
       
       inline def setEncoderUndefined: Self = StObject.set(x, "encoder", js.undefined)
@@ -247,7 +236,7 @@ object mod {
       
       inline def setFilterVarargs(value: (String | Double)*): Self = StObject.set(x, "filter", js.Array(value*))
       
-      inline def setFormat(value: RFC1738 | RFC3986): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: "RFC1738" | "RFC3986"): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       

@@ -9,16 +9,13 @@ import typings.typescript.mod.NodeFlags
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SourceFileLike
 import typings.typescript.mod.SyntaxKind.ImportSpecifier
-import typings.typescript.mod.TypeOnlyAliasDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined { readonly parent :typescript.typescript.NamedImports & { readonly parent :typescript.typescript.ImportClause & { readonly isTypeOnly :true}}} & typescript.typescript.ImportSpecifier */
 @js.native
-trait readonlyparentNamedImport
-  extends StObject
-     with TypeOnlyAliasDeclaration {
+trait readonlyparentNamedImport extends StObject {
   
   var _declarationBrand: Any = js.native
   

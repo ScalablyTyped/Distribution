@@ -2,22 +2,6 @@ package typings.jqueryui
 
 import typings.jquery.JQueryEventObject
 import typings.jqueryui.JQueryUI.MenuOptions
-import typings.jqueryui.jqueryuiStrings.blur
-import typings.jqueryui.jqueryuiStrings.collapse
-import typings.jqueryui.jqueryuiStrings.collapseAll
-import typings.jqueryui.jqueryuiStrings.destroy
-import typings.jqueryui.jqueryuiStrings.disable
-import typings.jqueryui.jqueryuiStrings.enable
-import typings.jqueryui.jqueryuiStrings.focus
-import typings.jqueryui.jqueryuiStrings.isFirstItem
-import typings.jqueryui.jqueryuiStrings.isLastItem
-import typings.jqueryui.jqueryuiStrings.next
-import typings.jqueryui.jqueryuiStrings.nextPage
-import typings.jqueryui.jqueryuiStrings.previous
-import typings.jqueryui.jqueryuiStrings.previousPage
-import typings.jqueryui.jqueryuiStrings.refresh
-import typings.jqueryui.jqueryuiStrings.select
-import typings.jqueryui.jqueryuiStrings.widget
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -48,33 +32,83 @@ object anon {
   trait Call extends StObject {
     
     def apply(): JQuery = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_collapse")
+    def apply(methodName: "collapse"): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_blur")
+    def apply(methodName: "blur"): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_widget")
+    def apply(methodName: "widget"): JQuery = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_nextPage")
+    def apply(methodName: "nextPage"): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_previous")
+    def apply(methodName: "previous"): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_select")
+    def apply(methodName: "select"): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_collapseAll")
+    def apply(methodName: "collapseAll"): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_refresh")
+    def apply(methodName: "refresh"): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_enable")
+    def apply(methodName: "enable"): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_disable")
+    def apply(methodName: "disable"): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_next")
+    def apply(methodName: "next"): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_previousPage")
+    def apply(methodName: "previousPage"): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_isLastItem")
+    def apply(methodName: "isLastItem"): Boolean = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_isFirstItem")
+    def apply(methodName: "isFirstItem"): Boolean = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_destroy")
+    def apply(methodName: "destroy"): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_collapseAll")
+    def apply(methodName: "collapseAll", event: Unit, all: Boolean): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_previousPage")
+    def apply(methodName: "previousPage", event: JQueryEventObject): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_collapse")
+    def apply(methodName: "collapse", event: JQueryEventObject): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_next")
+    def apply(methodName: "next", event: JQueryEventObject): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_collapseAll")
+    def apply(methodName: "collapseAll", event: JQueryEventObject): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_previous")
+    def apply(methodName: "previous", event: JQueryEventObject): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_nextPage")
+    def apply(methodName: "nextPage", event: JQueryEventObject): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_select")
+    def apply(methodName: "select", event: JQueryEventObject): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_collapseAll")
+    def apply(methodName: "collapseAll", event: JQueryEventObject, all: Boolean): Unit = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_focus")
+    def apply(methodName: "focus", event: JQueryEventObject, item: JQuery): Unit = js.native
     def apply(methodName: String): JQuery = js.native
     def apply(methodName: String, event: JQueryEventObject, item: JQuery): Unit = js.native
-    def apply(methodName: blur): Unit = js.native
-    def apply(methodName: collapse): Unit = js.native
-    def apply(methodName: collapseAll): Unit = js.native
-    def apply(methodName: collapseAll, event: Unit, all: Boolean): Unit = js.native
-    def apply(methodName: collapseAll, event: JQueryEventObject): Unit = js.native
-    def apply(methodName: collapseAll, event: JQueryEventObject, all: Boolean): Unit = js.native
-    def apply(methodName: collapse, event: JQueryEventObject): Unit = js.native
-    def apply(methodName: destroy): Unit = js.native
-    def apply(methodName: disable): Unit = js.native
-    def apply(methodName: enable): Unit = js.native
-    def apply(methodName: focus, event: JQueryEventObject, item: JQuery): Unit = js.native
-    def apply(methodName: isFirstItem): Boolean = js.native
-    def apply(methodName: isLastItem): Boolean = js.native
-    def apply(methodName: next): Unit = js.native
-    def apply(methodName: nextPage): Unit = js.native
-    def apply(methodName: nextPage, event: JQueryEventObject): Unit = js.native
-    def apply(methodName: next, event: JQueryEventObject): Unit = js.native
-    def apply(methodName: previous): Unit = js.native
-    def apply(methodName: previousPage): Unit = js.native
-    def apply(methodName: previousPage, event: JQueryEventObject): Unit = js.native
-    def apply(methodName: previous, event: JQueryEventObject): Unit = js.native
-    def apply(methodName: refresh): Unit = js.native
-    def apply(methodName: select): Unit = js.native
-    def apply(methodName: select, event: JQueryEventObject): Unit = js.native
-    def apply(methodName: widget): JQuery = js.native
     def apply(optionLiteral: String, optionName: String): Any = js.native
     def apply(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
     def apply(optionLiteral: String, options: MenuOptions): Any = js.native

@@ -1,8 +1,5 @@
 package typings.vueRuntimeCore.mod
 
-import typings.vueRuntimeCore.vueRuntimeCoreStrings.`in-out`
-import typings.vueRuntimeCore.vueRuntimeCoreStrings.`out-in`
-import typings.vueRuntimeCore.vueRuntimeCoreStrings.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +8,7 @@ trait BaseTransitionProps[HostElement] extends StObject {
   
   var appear: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[`in-out` | `out-in` | default] = js.undefined
+  var mode: js.UndefOr["in-out" | "out-in" | "default"] = js.undefined
   
   var onAfterAppear: js.UndefOr[Hook[js.Function1[/* el */ HostElement, Unit]]] = js.undefined
   
@@ -52,7 +49,7 @@ object BaseTransitionProps {
     
     inline def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
     
-    inline def setMode(value: `in-out` | `out-in` | default): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: "in-out" | "out-in" | "default"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     

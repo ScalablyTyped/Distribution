@@ -1,9 +1,5 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.materialUiCoreStrings.className
-import typings.materialUiCore.materialUiCoreStrings.classes
-import typings.materialUiCore.materialUiCoreStrings.innerRef
-import typings.materialUiCore.materialUiCoreStrings.style
 import typings.materialUiStyles.withStylesWithStylesMod.StyledComponentProps
 import typings.materialUiTypes.mod.Omit
 import typings.react.mod.CSSProperties
@@ -52,7 +48,7 @@ object overridableComponentMod {
     ComponentPropsWithRef[
       /* import warning: importer.ImportType#apply Failed type conversion: M['defaultComponent'] */ js.Any
     ], 
-    /* keyof @material-ui/core.@material-ui/core/OverridableComponent.BaseProps<M> */ className | style | classes | innerRef
+    /* keyof @material-ui/core.@material-ui/core/OverridableComponent.BaseProps<M> */ "className" | "style" | "classes" | "innerRef"
   ])
   
   @js.native
@@ -84,7 +80,7 @@ object overridableComponentMod {
   
   type OverrideProps[M /* <: OverridableTypeMap */, C /* <: ElementType[Any] */] = BaseProps[M] & (Omit[
     ComponentPropsWithRef[C], 
-    /* keyof @material-ui/core.@material-ui/core/OverridableComponent.CommonProps<M> */ className | style | classes | innerRef
+    /* keyof @material-ui/core.@material-ui/core/OverridableComponent.CommonProps<M> */ "className" | "style" | "classes" | "innerRef"
   ])
   
   type SimplifiedPropsOf[C /* <: ElementType[Any] */] = Simplify[ComponentProps[C]]

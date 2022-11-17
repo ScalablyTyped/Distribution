@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCommon.angularCommonStrings.arraybuffer
-import typings.angularCommon.angularCommonStrings.body
 import typings.angularCommon.httpMod.HttpContext
 import typings.angularCommon.httpMod.HttpHeaders
 import typings.angularCommon.httpMod.HttpParams
@@ -16,7 +14,7 @@ trait ContextHeadersObserveParamsReportProgress extends StObject {
   
   var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.undefined
   
-  var observe: js.UndefOr[body] = js.undefined
+  var observe: js.UndefOr["body"] = js.undefined
   
   var params: js.UndefOr[
     HttpParams | (StringDictionary[String | Double | Boolean | (js.Array[String | Double | Boolean])])
@@ -24,7 +22,7 @@ trait ContextHeadersObserveParamsReportProgress extends StObject {
   
   var reportProgress: js.UndefOr[Boolean] = js.undefined
   
-  var responseType: arraybuffer
+  var responseType: "arraybuffer"
   
   var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
@@ -45,7 +43,7 @@ object ContextHeadersObserveParamsReportProgress {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setObserve(value: body): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
+    inline def setObserve(value: "body"): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
     
     inline def setObserveUndefined: Self = StObject.set(x, "observe", js.undefined)
     
@@ -59,7 +57,7 @@ object ContextHeadersObserveParamsReportProgress {
     
     inline def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
     
-    inline def setResponseType(value: arraybuffer): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: "arraybuffer"): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     

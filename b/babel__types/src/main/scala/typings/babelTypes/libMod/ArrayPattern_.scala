@@ -1,18 +1,12 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ArrayPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ArrayPattern_
   extends StObject
-     with BaseNode
-     with LVal
-     with Node
-     with Pattern
-     with PatternLike
-     with Standardized {
+     with BaseNode {
   
   var decorators: js.UndefOr[js.Array[Decorator_] | Null] = js.undefined
   
@@ -23,7 +17,7 @@ trait ArrayPattern_
   var typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
-  var type_ArrayPattern_ : ArrayPattern
+  var type_ArrayPattern_ : "ArrayPattern"
 }
 object ArrayPattern_ {
   
@@ -53,7 +47,7 @@ object ArrayPattern_ {
     
     inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    inline def setType(value: ArrayPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ArrayPattern"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation__ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     

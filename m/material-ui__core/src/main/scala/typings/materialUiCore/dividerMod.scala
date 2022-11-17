@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.dividerDividerMod.DividerTypeMap
-import typings.materialUiCore.materialUiCoreStrings.hr
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,10 +22,10 @@ object dividerMod extends Shortcut {
     */
   @JSImport("@material-ui/core/Divider", JSImport.Default)
   @js.native
-  val default: OverridableComponent[DividerTypeMap[js.Object, hr]] = js.native
+  val default: OverridableComponent[DividerTypeMap[js.Object, "hr"]] = js.native
   
-  type _To = OverridableComponent[DividerTypeMap[js.Object, hr]]
+  type _To = OverridableComponent[DividerTypeMap[js.Object, "hr"]]
   
   /* This means you don't have to write `default`, but can instead just say `dividerMod.foo` */
-  override def _to: OverridableComponent[DividerTypeMap[js.Object, hr]] = default
+  override def _to: OverridableComponent[DividerTypeMap[js.Object, "hr"]] = default
 }

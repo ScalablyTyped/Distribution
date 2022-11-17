@@ -1,19 +1,15 @@
 package typings.angularDevkitCore.anon
 
-import typings.angularDevkitCore.angularDevkitCoreStrings.rename
-import typings.angularDevkitCore.srcVirtualFsHostTestMod.test.TestLogRecord
 import typings.angularDevkitCore.srcVirtualFsPathMod.Path_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait From
-  extends StObject
-     with TestLogRecord {
+trait From extends StObject {
   
   var from: Path_
   
-  var kind: rename
+  var kind: "rename"
   
   var to: Path_
 }
@@ -28,7 +24,7 @@ object From {
     
     inline def setFrom(value: Path_): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    inline def setKind(value: rename): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "rename"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setTo(value: Path_): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }

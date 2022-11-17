@@ -1,19 +1,17 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`26`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ReturnStatement
   extends StObject
-     with Node2
-     with SSRCodegenNode {
+     with Node2 {
   
   var returns: TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode
   
   @JSName("type")
-  var type_ReturnStatement: `26`
+  var type_ReturnStatement: 26
 }
 object ReturnStatement {
   
@@ -29,6 +27,6 @@ object ReturnStatement {
     
     inline def setReturnsVarargs(value: TemplateChildNode*): Self = StObject.set(x, "returns", js.Array(value*))
     
-    inline def setType(value: `26`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 26): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

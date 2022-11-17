@@ -1,8 +1,6 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.materialUiCoreStrings.root
-import typings.materialUiCore.materialUiCoreStrings.tfoot
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverridableTypeMap
 import typings.materialUiCore.overridableComponentMod.OverrideProps
@@ -25,9 +23,9 @@ object tableFooterTableFooterMod extends Shortcut {
     */
   @JSImport("@material-ui/core/TableFooter/TableFooter", JSImport.Default)
   @js.native
-  val default: OverridableComponent[TableFooterTypeMap[js.Object, tfoot]] = js.native
+  val default: OverridableComponent[TableFooterTypeMap[js.Object, "tfoot"]] = js.native
   
-  type TableFooterClassKey = root
+  type TableFooterClassKey = "root"
   
   type TableFooterProps[D /* <: ElementType[Any] */, P /* <: js.Object */] = OverrideProps[TableFooterTypeMap[P, D], D]
   
@@ -60,8 +58,8 @@ object tableFooterTableFooterMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[TableFooterTypeMap[js.Object, tfoot]]
+  type _To = OverridableComponent[TableFooterTypeMap[js.Object, "tfoot"]]
   
   /* This means you don't have to write `default`, but can instead just say `tableFooterTableFooterMod.foo` */
-  override def _to: OverridableComponent[TableFooterTypeMap[js.Object, tfoot]] = default
+  override def _to: OverridableComponent[TableFooterTypeMap[js.Object, "tfoot"]] = default
 }

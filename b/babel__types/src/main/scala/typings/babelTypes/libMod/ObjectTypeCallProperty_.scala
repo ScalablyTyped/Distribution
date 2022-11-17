@@ -1,21 +1,17 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ObjectTypeCallProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ObjectTypeCallProperty_
   extends StObject
-     with BaseNode
-     with Flow
-     with Node
-     with UserWhitespacable {
+     with BaseNode {
   
   var static: Boolean
   
   @JSName("type")
-  var type_ObjectTypeCallProperty_ : ObjectTypeCallProperty
+  var type_ObjectTypeCallProperty_ : "ObjectTypeCallProperty"
   
   var value: FlowType
 }
@@ -31,7 +27,7 @@ object ObjectTypeCallProperty_ {
     
     inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ObjectTypeCallProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ObjectTypeCallProperty"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: FlowType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

@@ -1,20 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.EmptyTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait EmptyTypeAnnotation_
+trait EmptyTypeAnnotation_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowBaseAnnotation
-     with FlowType {
+     with BaseNode {
   
   @JSName("type")
-  var type_EmptyTypeAnnotation_ : EmptyTypeAnnotation
+  var type_EmptyTypeAnnotation_ : "EmptyTypeAnnotation"
 }
 object EmptyTypeAnnotation_ {
   
@@ -26,6 +21,6 @@ object EmptyTypeAnnotation_ {
   
   extension [Self <: EmptyTypeAnnotation_](x: Self) {
     
-    inline def setType(value: EmptyTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "EmptyTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,6 @@
 package typings.vueRuntimeCore.mod
 
 import typings.std.Omit
-import typings.vueRuntimeCore.vueRuntimeCoreStrings.expose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,9 @@ trait FunctionalComponent[P, E /* <: EmitsOptions */]
   extends StObject
      with ComponentInternalOptions {
   
-  def apply(props: P, ctx: Omit[SetupContext[E], expose]): Any = js.native
+  @JSName("<apply>")
+  @scala.annotation.targetName("apply_expose")
+  def apply(props: P, ctx: Omit[SetupContext[E], "expose"]): Any = js.native
   
   var compatConfig: js.UndefOr[CompatConfig] = js.native
   

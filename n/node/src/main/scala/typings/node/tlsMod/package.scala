@@ -264,3 +264,5 @@ inline def getCiphers(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDyna
   * of the ca option to tls.createSecureContext().
   */
 inline def rootCertificates: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("rootCertificates").asInstanceOf[js.Array[String]]
+
+type SecureVersion = "TLSv1.3" | "TLSv1.2" | "TLSv1.1" | "TLSv1"

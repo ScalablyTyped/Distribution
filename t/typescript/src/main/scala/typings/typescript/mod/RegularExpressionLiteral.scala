@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RegularExpressionLiteral
   extends StObject
-     with LiteralExpression
-     with LiteralToken {
+     with LiteralExpression {
   
   @JSName("kind")
   val kind_RegularExpressionLiteral: typings.typescript.mod.SyntaxKind.RegularExpressionLiteral = js.native

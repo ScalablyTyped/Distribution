@@ -1,24 +1,19 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.YieldExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait YieldExpression_
+trait YieldExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with Standardized
-     with Terminatorless {
+     with BaseNode {
   
   var argument: Expression | Null
   
   var delegate: Boolean
   
   @JSName("type")
-  var type_YieldExpression_ : YieldExpression
+  var type_YieldExpression_ : "YieldExpression"
 }
 object YieldExpression_ {
   
@@ -36,6 +31,6 @@ object YieldExpression_ {
     
     inline def setDelegate(value: Boolean): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
     
-    inline def setType(value: YieldExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "YieldExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

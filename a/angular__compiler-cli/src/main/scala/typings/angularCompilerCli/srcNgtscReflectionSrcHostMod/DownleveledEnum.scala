@@ -1,6 +1,5 @@
 package typings.angularCompilerCli.srcNgtscReflectionSrcHostMod
 
-import typings.angularCompilerCli.angularCompilerCliInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait DownleveledEnum extends StObject {
   
   var enumMembers: js.Array[EnumMember]
   
-  var kind: `0`
+  var kind: 0
 }
 object DownleveledEnum {
   
@@ -24,6 +23,6 @@ object DownleveledEnum {
     
     inline def setEnumMembersVarargs(value: EnumMember*): Self = StObject.set(x, "enumMembers", js.Array(value*))
     
-    inline def setKind(value: `0`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: 0): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

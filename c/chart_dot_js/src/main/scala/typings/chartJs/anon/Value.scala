@@ -1,13 +1,10 @@
 package typings.chartJs.anon
 
-import typings.chartJs.mod._FillTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Value
-  extends StObject
-     with _FillTarget {
+trait Value extends StObject {
   
   var value: Double
 }

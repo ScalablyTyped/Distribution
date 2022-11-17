@@ -1,5 +1,6 @@
 package typings.mobx
 
+import typings.mobx.anon.ObjectObservableKind
 import typings.mobx.distInternalMod.Atom
 import typings.mobx.distTypesInterceptUtilsMod.IInterceptable
 import typings.mobx.distTypesInterceptUtilsMod.IInterceptor
@@ -7,8 +8,6 @@ import typings.mobx.distTypesListenUtilsMod.IListenable
 import typings.mobx.distTypesModifiersMod.IEnhancer
 import typings.mobx.distUtilsComparerMod.IEqualsComparer
 import typings.mobx.distUtilsUtilsMod.Lambda
-import typings.mobx.mobxStrings.update
-import typings.mobx.mobxStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,27 +64,7 @@ object distTypesObservablevalueMod {
   
   inline def isObservableValue(x: Any): /* is mobx.mobx/dist/types/observablevalue.IObservableValue<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservableValue")(x.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/dist/types/observablevalue.IObservableValue<any> */ Boolean]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.mobx.anon.ObjectObservableKind[T]
-    - typings.mobx.distTypesObservablevalueMod.IValueDidChange[T]
-  */
-  trait IBoxDidChange[T] extends StObject
-  object IBoxDidChange {
-    
-    inline def IValueDidChange[T](debugObjectName: String, newValue: Any, `object`: IObservableValue[T], oldValue: Any): typings.mobx.distTypesObservablevalueMod.IValueDidChange[T] = {
-      val __obj = js.Dynamic.literal(debugObjectName = debugObjectName.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], observableKind = "value", oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("update")
-      __obj.asInstanceOf[typings.mobx.distTypesObservablevalueMod.IValueDidChange[T]]
-    }
-    
-    inline def ObjectObservableKind[T](debugObjectName: String, newValue: Any, `object`: IObservableValue[T]): typings.mobx.anon.ObjectObservableKind[T] = {
-      val __obj = js.Dynamic.literal(debugObjectName = debugObjectName.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], observableKind = "value")
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("create")
-      __obj.asInstanceOf[typings.mobx.anon.ObjectObservableKind[T]]
-    }
-  }
+  type IBoxDidChange[T] = ObjectObservableKind[T] | IValueDidChange[T]
   
   @js.native
   trait IObservableValue[T] extends StObject {
@@ -100,9 +79,7 @@ object distTypesObservablevalueMod {
     def set(value: T): Unit = js.native
   }
   
-  trait IValueDidChange[T]
-    extends StObject
-       with IBoxDidChange[T] {
+  trait IValueDidChange[T] extends StObject {
     
     var debugObjectName: String
     
@@ -110,11 +87,11 @@ object distTypesObservablevalueMod {
     
     var `object`: IObservableValue[T]
     
-    var observableKind: value
+    var observableKind: "value"
     
     var oldValue: Any
     
-    var `type`: update
+    var `type`: "update"
   }
   object IValueDidChange {
     
@@ -133,11 +110,11 @@ object distTypesObservablevalueMod {
       
       inline def setObject(value: IObservableValue[T]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      inline def setObservableKind(value: value): Self = StObject.set(x, "observableKind", value.asInstanceOf[js.Any])
+      inline def setObservableKind(value: "value"): Self = StObject.set(x, "observableKind", value.asInstanceOf[js.Any])
       
       inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
-      inline def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "update"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,7 +124,7 @@ object distTypesObservablevalueMod {
     
     var `object`: IObservableValue[T]
     
-    var `type`: update
+    var `type`: "update"
   }
   object IValueWillChange {
     
@@ -164,7 +141,7 @@ object distTypesObservablevalueMod {
       
       inline def setObject(value: IObservableValue[T]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      inline def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "update"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

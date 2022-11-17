@@ -3,19 +3,6 @@ package typings.node.http2Mod
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.nodeColonstreamMod.Readable
-import typings.node.nodeStrings.close
-import typings.node.nodeStrings.data
-import typings.node.nodeStrings.drain
-import typings.node.nodeStrings.end
-import typings.node.nodeStrings.error
-import typings.node.nodeStrings.finish
-import typings.node.nodeStrings.frameError
-import typings.node.nodeStrings.pipe
-import typings.node.nodeStrings.streamClosed
-import typings.node.nodeStrings.timeout
-import typings.node.nodeStrings.trailers
-import typings.node.nodeStrings.unpipe
-import typings.node.nodeStrings.wantTrailers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,39 +17,53 @@ trait Http2Stream extends StObject {
     */
   val aborted: Boolean = js.native
   
-  def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_aborted(event: typings.node.nodeStrings.aborted, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_drain")
+  def addListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_timeout")
+  def addListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_data(event: data, listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_finish")
+  def addListener(event: "finish", listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_wantTrailers")
+  def addListener(event: "wantTrailers", listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_aborted")
+  def addListener(event: "aborted", listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_close")
+  def addListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_end")
+  def addListener(event: "end", listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_frameError(event: frameError, listener: js.Function2[/* frameType */ Double, /* errorCode */ Double, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_streamClosed")
+  def addListener(event: "streamClosed", listener: js.Function1[/* code */ Double, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_unpipe")
+  def addListener(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_streamClosed(event: streamClosed, listener: js.Function1[/* code */ Double, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_error")
+  def addListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_data")
+  def addListener(event: "data", listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_trailers(
-    event: trailers,
+  @scala.annotation.targetName("addListener_pipe")
+  def addListener(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_frameError")
+  def addListener(event: "frameError", listener: js.Function2[/* frameType */ Double, /* errorCode */ Double, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_trailers")
+  def addListener(
+    event: "trailers",
     listener: js.Function2[/* trailers */ IncomingHttpHeaders, /* flags */ Double, Unit]
   ): this.type = js.native
-  @JSName("addListener")
-  def addListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_wantTrailers(event: wantTrailers, listener: js.Function0[Unit]): this.type = js.native
+  def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   
   /**
     * This property shows the number of characters currently buffered to be written.
@@ -96,38 +97,53 @@ trait Http2Stream extends StObject {
     */
   val destroyed: Boolean = js.native
   
+  @JSName("emit")
+  @scala.annotation.targetName("emit_wantTrailers")
+  def emit(event: "wantTrailers"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_aborted")
+  def emit(event: "aborted"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_timeout")
+  def emit(event: "timeout"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_close")
+  def emit(event: "close"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_drain")
+  def emit(event: "drain"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_finish")
+  def emit(event: "finish"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_end")
+  def emit(event: "end"): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_data")
+  def emit(event: "data", chunk: String): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_data")
+  def emit(event: "data", chunk: Buffer): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_streamClosed")
+  def emit(event: "streamClosed", code: Double): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_error")
+  def emit(event: "error", err: js.Error): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_frameError")
+  def emit(event: "frameError", frameType: Double, errorCode: Double): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_pipe")
+  def emit(event: "pipe", src: Readable): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_unpipe")
+  def emit(event: "unpipe", src: Readable): Boolean = js.native
+  @JSName("emit")
+  @scala.annotation.targetName("emit_trailers")
+  def emit(event: "trailers", trailers: IncomingHttpHeaders, flags: Double): Boolean = js.native
   def emit(event: String, args: Any*): Boolean = js.native
   def emit(event: js.Symbol, args: Any*): Boolean = js.native
-  @JSName("emit")
-  def emit_aborted(event: typings.node.nodeStrings.aborted): Boolean = js.native
-  @JSName("emit")
-  def emit_close(event: close): Boolean = js.native
-  @JSName("emit")
-  def emit_data(event: data, chunk: String): Boolean = js.native
-  @JSName("emit")
-  def emit_data(event: data, chunk: Buffer): Boolean = js.native
-  @JSName("emit")
-  def emit_drain(event: drain): Boolean = js.native
-  @JSName("emit")
-  def emit_end(event: end): Boolean = js.native
-  @JSName("emit")
-  def emit_error(event: error, err: js.Error): Boolean = js.native
-  @JSName("emit")
-  def emit_finish(event: finish): Boolean = js.native
-  @JSName("emit")
-  def emit_frameError(event: frameError, frameType: Double, errorCode: Double): Boolean = js.native
-  @JSName("emit")
-  def emit_pipe(event: pipe, src: Readable): Boolean = js.native
-  @JSName("emit")
-  def emit_streamClosed(event: streamClosed, code: Double): Boolean = js.native
-  @JSName("emit")
-  def emit_timeout(event: timeout): Boolean = js.native
-  @JSName("emit")
-  def emit_trailers(event: trailers, trailers: IncomingHttpHeaders, flags: Double): Boolean = js.native
-  @JSName("emit")
-  def emit_unpipe(event: unpipe, src: Readable): Boolean = js.native
-  @JSName("emit")
-  def emit_wantTrailers(event: wantTrailers): Boolean = js.native
   
   /**
     * Set to `true` if the `END_STREAM` flag was set in the request or response
@@ -143,73 +159,101 @@ trait Http2Stream extends StObject {
     */
   val id: js.UndefOr[Double] = js.native
   
+  @JSName("on")
+  @scala.annotation.targetName("on_aborted")
+  def on(event: "aborted", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_timeout")
+  def on(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_close")
+  def on(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_finish")
+  def on(event: "finish", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_end")
+  def on(event: "end", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_wantTrailers")
+  def on(event: "wantTrailers", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_drain")
+  def on(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_unpipe")
+  def on(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_streamClosed")
+  def on(event: "streamClosed", listener: js.Function1[/* code */ Double, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_error")
+  def on(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_data")
+  def on(event: "data", listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_pipe")
+  def on(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_frameError")
+  def on(event: "frameError", listener: js.Function2[/* frameType */ Double, /* errorCode */ Double, Unit]): this.type = js.native
+  @JSName("on")
+  @scala.annotation.targetName("on_trailers")
+  def on(
+    event: "trailers",
+    listener: js.Function2[/* trailers */ IncomingHttpHeaders, /* flags */ Double, Unit]
+  ): this.type = js.native
   def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("on")
-  def on_aborted(event: typings.node.nodeStrings.aborted, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_data(event: data, listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
-  @JSName("on")
-  def on_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("on")
-  def on_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_frameError(event: frameError, listener: js.Function2[/* frameType */ Double, /* errorCode */ Double, Unit]): this.type = js.native
-  @JSName("on")
-  def on_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  @JSName("on")
-  def on_streamClosed(event: streamClosed, listener: js.Function1[/* code */ Double, Unit]): this.type = js.native
-  @JSName("on")
-  def on_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_trailers(
-    event: trailers,
+  
+  @JSName("once")
+  @scala.annotation.targetName("once_end")
+  def once(event: "end", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_aborted")
+  def once(event: "aborted", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_drain")
+  def once(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_wantTrailers")
+  def once(event: "wantTrailers", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_timeout")
+  def once(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_finish")
+  def once(event: "finish", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_close")
+  def once(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_streamClosed")
+  def once(event: "streamClosed", listener: js.Function1[/* code */ Double, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_error")
+  def once(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_pipe")
+  def once(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_unpipe")
+  def once(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_data")
+  def once(event: "data", listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_trailers")
+  def once(
+    event: "trailers",
     listener: js.Function2[/* trailers */ IncomingHttpHeaders, /* flags */ Double, Unit]
   ): this.type = js.native
-  @JSName("on")
-  def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  @JSName("on")
-  def on_wantTrailers(event: wantTrailers, listener: js.Function0[Unit]): this.type = js.native
-  
+  @JSName("once")
+  @scala.annotation.targetName("once_frameError")
+  def once(event: "frameError", listener: js.Function2[/* frameType */ Double, /* errorCode */ Double, Unit]): this.type = js.native
   def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("once")
-  def once_aborted(event: typings.node.nodeStrings.aborted, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_data(event: data, listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
-  @JSName("once")
-  def once_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("once")
-  def once_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_frameError(event: frameError, listener: js.Function2[/* frameType */ Double, /* errorCode */ Double, Unit]): this.type = js.native
-  @JSName("once")
-  def once_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  @JSName("once")
-  def once_streamClosed(event: streamClosed, listener: js.Function1[/* code */ Double, Unit]): this.type = js.native
-  @JSName("once")
-  def once_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_trailers(
-    event: trailers,
-    listener: js.Function2[/* trailers */ IncomingHttpHeaders, /* flags */ Double, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  @JSName("once")
-  def once_wantTrailers(event: wantTrailers, listener: js.Function0[Unit]): this.type = js.native
   
   /**
     * Set to `true` if the `Http2Stream` instance has not yet been assigned a
@@ -218,73 +262,101 @@ trait Http2Stream extends StObject {
     */
   val pending: Boolean = js.native
   
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_timeout")
+  def prependListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_finish")
+  def prependListener(event: "finish", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_wantTrailers")
+  def prependListener(event: "wantTrailers", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_close")
+  def prependListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_drain")
+  def prependListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_aborted")
+  def prependListener(event: "aborted", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_end")
+  def prependListener(event: "end", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_streamClosed")
+  def prependListener(event: "streamClosed", listener: js.Function1[/* code */ Double, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_pipe")
+  def prependListener(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_data")
+  def prependListener(event: "data", listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_unpipe")
+  def prependListener(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_error")
+  def prependListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_frameError")
+  def prependListener(event: "frameError", listener: js.Function2[/* frameType */ Double, /* errorCode */ Double, Unit]): this.type = js.native
+  @JSName("prependListener")
+  @scala.annotation.targetName("prependListener_trailers")
+  def prependListener(
+    event: "trailers",
+    listener: js.Function2[/* trailers */ IncomingHttpHeaders, /* flags */ Double, Unit]
+  ): this.type = js.native
   def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_aborted(event: typings.node.nodeStrings.aborted, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_data(event: data, listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_frameError(event: frameError, listener: js.Function2[/* frameType */ Double, /* errorCode */ Double, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_streamClosed(event: streamClosed, listener: js.Function1[/* code */ Double, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_trailers(
-    event: trailers,
+  
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_drain")
+  def prependOnceListener(event: "drain", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_aborted")
+  def prependOnceListener(event: "aborted", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_end")
+  def prependOnceListener(event: "end", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_close")
+  def prependOnceListener(event: "close", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_timeout")
+  def prependOnceListener(event: "timeout", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_finish")
+  def prependOnceListener(event: "finish", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_wantTrailers")
+  def prependOnceListener(event: "wantTrailers", listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_streamClosed")
+  def prependOnceListener(event: "streamClosed", listener: js.Function1[/* code */ Double, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_data")
+  def prependOnceListener(event: "data", listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_pipe")
+  def prependOnceListener(event: "pipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_error")
+  def prependOnceListener(event: "error", listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_unpipe")
+  def prependOnceListener(event: "unpipe", listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_frameError")
+  def prependOnceListener(event: "frameError", listener: js.Function2[/* frameType */ Double, /* errorCode */ Double, Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  @scala.annotation.targetName("prependOnceListener_trailers")
+  def prependOnceListener(
+    event: "trailers",
     listener: js.Function2[/* trailers */ IncomingHttpHeaders, /* flags */ Double, Unit]
   ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_wantTrailers(event: wantTrailers, listener: js.Function0[Unit]): this.type = js.native
-  
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_aborted(event: typings.node.nodeStrings.aborted, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_data(event: data, listener: js.Function1[/* chunk */ Buffer | String, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_frameError(event: frameError, listener: js.Function2[/* frameType */ Double, /* errorCode */ Double, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_streamClosed(event: streamClosed, listener: js.Function1[/* code */ Double, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_trailers(
-    event: trailers,
-    listener: js.Function2[/* trailers */ IncomingHttpHeaders, /* flags */ Double, Unit]
-  ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_wantTrailers(event: wantTrailers, listener: js.Function0[Unit]): this.type = js.native
   
   /**
     * Updates the priority for this `Http2Stream` instance.

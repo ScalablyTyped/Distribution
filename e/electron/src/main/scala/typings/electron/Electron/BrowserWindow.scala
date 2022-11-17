@@ -1,69 +1,6 @@
 package typings.electron.Electron
 
 import typings.electron.anon.PartialRectangle
-import typings.electron.electronStrings.`always-on-top-changed`
-import typings.electron.electronStrings.`app-command`
-import typings.electron.electronStrings.`appearance-based`
-import typings.electron.electronStrings.`enter-full-screen`
-import typings.electron.electronStrings.`enter-html-full-screen`
-import typings.electron.electronStrings.`fullscreen-ui`
-import typings.electron.electronStrings.`leave-full-screen`
-import typings.electron.electronStrings.`leave-html-full-screen`
-import typings.electron.electronStrings.`main-menu`
-import typings.electron.electronStrings.`medium-light`
-import typings.electron.electronStrings.`modal-panel`
-import typings.electron.electronStrings.`new-window-for-tab`
-import typings.electron.electronStrings.`page-title-updated`
-import typings.electron.electronStrings.`pop-up-menu`
-import typings.electron.electronStrings.`ready-to-show`
-import typings.electron.electronStrings.`rotate-gesture`
-import typings.electron.electronStrings.`screen-saver`
-import typings.electron.electronStrings.`scroll-touch-begin`
-import typings.electron.electronStrings.`scroll-touch-edge`
-import typings.electron.electronStrings.`scroll-touch-end`
-import typings.electron.electronStrings.`session-end`
-import typings.electron.electronStrings.`sheet-begin`
-import typings.electron.electronStrings.`sheet-end`
-import typings.electron.electronStrings.`system-context-menu`
-import typings.electron.electronStrings.`torn-off-menu`
-import typings.electron.electronStrings.`ultra-dark`
-import typings.electron.electronStrings.`under-page`
-import typings.electron.electronStrings.`under-window`
-import typings.electron.electronStrings.`will-move`
-import typings.electron.electronStrings.`will-resize`
-import typings.electron.electronStrings.blur
-import typings.electron.electronStrings.close
-import typings.electron.electronStrings.closed
-import typings.electron.electronStrings.content
-import typings.electron.electronStrings.dark
-import typings.electron.electronStrings.floating
-import typings.electron.electronStrings.focus
-import typings.electron.electronStrings.header
-import typings.electron.electronStrings.hide
-import typings.electron.electronStrings.hud
-import typings.electron.electronStrings.light
-import typings.electron.electronStrings.maximize
-import typings.electron.electronStrings.menu
-import typings.electron.electronStrings.minimize
-import typings.electron.electronStrings.move
-import typings.electron.electronStrings.moved
-import typings.electron.electronStrings.normal
-import typings.electron.electronStrings.popover
-import typings.electron.electronStrings.resize
-import typings.electron.electronStrings.resized
-import typings.electron.electronStrings.responsive
-import typings.electron.electronStrings.restore
-import typings.electron.electronStrings.selection
-import typings.electron.electronStrings.sheet
-import typings.electron.electronStrings.show
-import typings.electron.electronStrings.sidebar
-import typings.electron.electronStrings.status
-import typings.electron.electronStrings.swipe
-import typings.electron.electronStrings.titlebar
-import typings.electron.electronStrings.tooltip
-import typings.electron.electronStrings.unmaximize
-import typings.electron.electronStrings.unresponsive
-import typings.electron.electronStrings.window
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
@@ -88,85 +25,121 @@ trait BrowserWindow extends EventEmitter {
   def addBrowserView(browserView: BrowserView): Unit = js.native
   
   @JSName("addListener")
-  def addListener_alwaysontopchanged(
-    event: `always-on-top-changed`,
+  @scala.annotation.targetName("addListener_unresponsive")
+  def addListener(event: "unresponsive", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_focus")
+  def addListener(event: "focus", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_scrolltouchedge")
+  def addListener(event: "scroll-touch-edge", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_sheetend")
+  def addListener(event: "sheet-end", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_move")
+  def addListener(event: "move", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_show")
+  def addListener(event: "show", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_responsive")
+  def addListener(event: "responsive", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_enterhtmlfullscreen")
+  def addListener(event: "enter-html-full-screen", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_unmaximize")
+  def addListener(event: "unmaximize", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_readytoshow")
+  def addListener(event: "ready-to-show", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_resize")
+  def addListener(event: "resize", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_maximize")
+  def addListener(event: "maximize", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_blur")
+  def addListener(event: "blur", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_enterfullscreen")
+  def addListener(event: "enter-full-screen", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_moved")
+  def addListener(event: "moved", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_resized")
+  def addListener(event: "resized", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_closed")
+  def addListener(event: "closed", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_hide")
+  def addListener(event: "hide", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_scrolltouchend")
+  def addListener(event: "scroll-touch-end", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_sessionend")
+  def addListener(event: "session-end", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_leavehtmlfullscreen")
+  def addListener(event: "leave-html-full-screen", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_restore")
+  def addListener(event: "restore", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_scrolltouchbegin")
+  def addListener(event: "scroll-touch-begin", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_minimize")
+  def addListener(event: "minimize", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_newwindowfortab")
+  def addListener(event: "new-window-for-tab", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_sheetbegin")
+  def addListener(event: "sheet-begin", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_leavefullscreen")
+  def addListener(event: "leave-full-screen", listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_close")
+  def addListener(event: "close", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_appcommand")
+  def addListener(event: "app-command", listener: js.Function2[/* event */ Event, /* command */ String, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_swipe")
+  def addListener(event: "swipe", listener: js.Function2[/* event */ Event, /* direction */ String, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_systemcontextmenu")
+  def addListener(event: "system-context-menu", listener: js.Function2[/* event */ Event, /* point */ Point, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_willmove")
+  def addListener(event: "will-move", listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
+  @JSName("addListener")
+  @scala.annotation.targetName("addListener_alwaysontopchanged")
+  def addListener(
+    event: "always-on-top-changed",
     listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ Boolean, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_appcommand(event: `app-command`, listener: js.Function2[/* event */ Event, /* command */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_rotategesture")
+  def addListener(event: "rotate-gesture", listener: js.Function2[/* event */ Event, /* rotation */ Double, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_blur(event: blur, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_closed(event: closed, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_enterfullscreen(event: `enter-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_focus(event: focus, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_hide(event: hide, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_leavefullscreen(event: `leave-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_maximize(event: maximize, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_minimize(event: minimize, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_move(event: move, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_moved(event: moved, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_newwindowfortab(event: `new-window-for-tab`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_pagetitleupdated(
-    event: `page-title-updated`,
-    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
+  @scala.annotation.targetName("addListener_willresize")
+  def addListener(
+    event: "will-resize",
+    listener: js.Function3[/* event */ Event, /* newBounds */ Rectangle, /* details */ WillResizeDetails, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_readytoshow(event: `ready-to-show`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_resize(event: resize, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_resized(event: resized, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_responsive(event: responsive, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_restore(event: restore, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_rotategesture(event: `rotate-gesture`, listener: js.Function2[/* event */ Event, /* rotation */ Double, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_scrolltouchbegin(event: `scroll-touch-begin`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_scrolltouchedge(event: `scroll-touch-edge`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_scrolltouchend(event: `scroll-touch-end`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_sessionend(event: `session-end`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_sheetbegin(event: `sheet-begin`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_sheetend(event: `sheet-end`, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_show(event: show, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_swipe(event: swipe, listener: js.Function2[/* event */ Event, /* direction */ String, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_systemcontextmenu(event: `system-context-menu`, listener: js.Function2[/* event */ Event, /* point */ Point, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_unmaximize(event: unmaximize, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_unresponsive(event: unresponsive, listener: js.Function): this.type = js.native
-  @JSName("addListener")
-  def addListener_willmove(event: `will-move`, listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_willresize(
-    event: `will-resize`,
-    listener: js.Function3[/* event */ Event, /* newBounds */ Rectangle, /* details */ WillResizeDetails, Unit]
+  @scala.annotation.targetName("addListener_pagetitleupdated")
+  def addListener(
+    event: "page-title-updated",
+    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
   ): this.type = js.native
   
   /**
@@ -723,38 +696,199 @@ trait BrowserWindow extends EventEmitter {
     */
   def moveTop(): Unit = js.native
   
-  // Docs: https://electronjs.org/docs/api/browser-window
   /**
-    * Emitted when the window is set or unset to show always on top of other windows.
+    * Emitted when window is maximized.
     */
   @JSName("on")
-  def on_alwaysontopchanged(
-    event: `always-on-top-changed`,
-    listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ Boolean, Unit]
-  ): this.type = js.native
+  @scala.annotation.targetName("on_maximize")
+  def on(event: "maximize", listener: js.Function): this.type = js.native
   /**
-    * Emitted when an App Command is invoked. These are typically related to keyboard
-    * media keys or browser commands, as well as the "Back" button built into some
-    * mice on Windows.
+    * Emitted when the window opens a sheet.
     *
-    * Commands are lowercased, underscores are replaced with hyphens, and the
-    * `APPCOMMAND_` prefix is stripped off. e.g. `APPCOMMAND_BROWSER_BACKWARD` is
-    * emitted as `browser-backward`.
-    *
-    * The following app commands are explicitly supported on Linux:
-    *
-    * * `browser-backward`
-    * * `browser-forward`
-    *
-    * @platform win32,linux
+    * @platform darwin
     */
   @JSName("on")
-  def on_appcommand(event: `app-command`, listener: js.Function2[/* event */ Event, /* command */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_sheetbegin")
+  def on(event: "sheet-begin", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the window exits from a maximized state.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_unmaximize")
+  def on(event: "unmaximize", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the window is restored from a minimized state.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_restore")
+  def on(event: "restore", listener: js.Function): this.type = js.native
+  /**
+    * Emitted once when the window is moved to a new position.
+    *
+    * __Note__: On macOS this event is an alias of `move`.
+    *
+    * @platform darwin,win32
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_moved")
+  def on(event: "moved", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when window session is going to end due to force shutdown or machine
+    * restart or session log off.
+    *
+    * @platform win32
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_sessionend")
+  def on(event: "session-end", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the window enters a full-screen state.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_enterfullscreen")
+  def on(event: "enter-full-screen", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the window is shown.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_show")
+  def on(event: "show", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the native new tab button is clicked.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_newwindowfortab")
+  def on(event: "new-window-for-tab", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when scroll wheel event phase has begun.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_scrolltouchbegin")
+  def on(event: "scroll-touch-begin", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the unresponsive web page becomes responsive again.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_responsive")
+  def on(event: "responsive", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the window enters a full-screen state triggered by HTML API.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_enterhtmlfullscreen")
+  def on(event: "enter-html-full-screen", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when scroll wheel event phase has ended.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_scrolltouchend")
+  def on(event: "scroll-touch-end", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the web page becomes unresponsive.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_unresponsive")
+  def on(event: "unresponsive", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the window leaves a full-screen state.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_leavefullscreen")
+  def on(event: "leave-full-screen", listener: js.Function): this.type = js.native
+  /**
+    * Emitted after the window has been resized.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_resize")
+  def on(event: "resize", listener: js.Function): this.type = js.native
+  /**
+    * Emitted once when the window has finished being resized.
+    *
+    * This is usually emitted when the window has been resized manually. On macOS,
+    * resizing the window with `setBounds`/`setSize` and setting the `animate`
+    * parameter to `true` will also emit this event once resizing has finished.
+    *
+    * @platform darwin,win32
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_resized")
+  def on(event: "resized", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the window is closed. After you have received this event you should
+    * remove the reference to the window and avoid using it any more.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_closed")
+  def on(event: "closed", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when scroll wheel event phase filed upon reaching the edge of element.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_scrolltouchedge")
+  def on(event: "scroll-touch-edge", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the window leaves a full-screen state triggered by HTML API.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_leavehtmlfullscreen")
+  def on(event: "leave-html-full-screen", listener: js.Function): this.type = js.native
   /**
     * Emitted when the window loses focus.
     */
   @JSName("on")
-  def on_blur(event: blur, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_blur")
+  def on(event: "blur", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the window has closed a sheet.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_sheetend")
+  def on(event: "sheet-end", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the web page has been rendered (while not being shown) and window
+    * can be displayed without a visual flash.
+    *
+    * Please note that using this event implies that the renderer will be considered
+    * "visible" and paint even though `show` is false.  This event will never fire if
+    * you use `paintWhenInitiallyHidden: false`
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_readytoshow")
+  def on(event: "ready-to-show", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the window is minimized.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_minimize")
+  def on(event: "minimize", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the window is being moved to a new position.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_move")
+  def on(event: "move", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the window is hidden.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_hide")
+  def on(event: "hide", listener: js.Function): this.type = js.native
+  /**
+    * Emitted when the window gains focus.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_focus")
+  def on(event: "focus", listener: js.Function): this.type = js.native
   /**
     * Emitted when the window is going to be closed. It's emitted before the
     * `beforeunload` and `unload` event of the DOM. Calling `event.preventDefault()`
@@ -772,120 +906,33 @@ trait BrowserWindow extends EventEmitter {
     * Electron._
     */
   @JSName("on")
-  def on_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_close")
+  def on(event: "close", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   /**
-    * Emitted when the window is closed. After you have received this event you should
-    * remove the reference to the window and avoid using it any more.
-    */
-  @JSName("on")
-  def on_closed(event: closed, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the window enters a full-screen state.
-    */
-  @JSName("on")
-  def on_enterfullscreen(event: `enter-full-screen`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the window enters a full-screen state triggered by HTML API.
-    */
-  @JSName("on")
-  def on_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the window gains focus.
-    */
-  @JSName("on")
-  def on_focus(event: focus, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the window is hidden.
-    */
-  @JSName("on")
-  def on_hide(event: hide, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the window leaves a full-screen state.
-    */
-  @JSName("on")
-  def on_leavefullscreen(event: `leave-full-screen`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the window leaves a full-screen state triggered by HTML API.
-    */
-  @JSName("on")
-  def on_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when window is maximized.
-    */
-  @JSName("on")
-  def on_maximize(event: maximize, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the window is minimized.
-    */
-  @JSName("on")
-  def on_minimize(event: minimize, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the window is being moved to a new position.
-    */
-  @JSName("on")
-  def on_move(event: move, listener: js.Function): this.type = js.native
-  /**
-    * Emitted once when the window is moved to a new position.
+    * Emitted when the system context menu is triggered on the window, this is
+    * normally only triggered when the user right clicks on the non-client area of
+    * your window.  This is the window titlebar or any area you have declared as
+    * `-webkit-app-region: drag` in a frameless window.
     *
-    * __Note__: On macOS this event is an alias of `move`.
+    * Calling `event.preventDefault()` will prevent the menu from being displayed.
+    *
+    * @platform win32
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_systemcontextmenu")
+  def on(event: "system-context-menu", listener: js.Function2[/* event */ Event, /* point */ Point, Unit]): this.type = js.native
+  /**
+    * Emitted before the window is moved. On Windows, calling `event.preventDefault()`
+    * will prevent the window from being moved.
+    *
+    * Note that this is only emitted when the window is being moved manually. Moving
+    * the window with `setPosition`/`setBounds`/`center` will not emit this event.
     *
     * @platform darwin,win32
     */
   @JSName("on")
-  def on_moved(event: moved, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the native new tab button is clicked.
-    *
-    * @platform darwin
-    */
-  @JSName("on")
-  def on_newwindowfortab(event: `new-window-for-tab`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the document changed its title, calling `event.preventDefault()`
-    * will prevent the native window's title from changing. `explicitSet` is false
-    * when title is synthesized from file URL.
-    */
-  @JSName("on")
-  def on_pagetitleupdated(
-    event: `page-title-updated`,
-    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when the web page has been rendered (while not being shown) and window
-    * can be displayed without a visual flash.
-    *
-    * Please note that using this event implies that the renderer will be considered
-    * "visible" and paint even though `show` is false.  This event will never fire if
-    * you use `paintWhenInitiallyHidden: false`
-    */
-  @JSName("on")
-  def on_readytoshow(event: `ready-to-show`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted after the window has been resized.
-    */
-  @JSName("on")
-  def on_resize(event: resize, listener: js.Function): this.type = js.native
-  /**
-    * Emitted once when the window has finished being resized.
-    *
-    * This is usually emitted when the window has been resized manually. On macOS,
-    * resizing the window with `setBounds`/`setSize` and setting the `animate`
-    * parameter to `true` will also emit this event once resizing has finished.
-    *
-    * @platform darwin,win32
-    */
-  @JSName("on")
-  def on_resized(event: resized, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the unresponsive web page becomes responsive again.
-    */
-  @JSName("on")
-  def on_responsive(event: responsive, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the window is restored from a minimized state.
-    */
-  @JSName("on")
-  def on_restore(event: restore, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_willmove")
+  def on(event: "will-move", listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
   /**
     * Emitted on trackpad rotation gesture. Continually emitted until rotation gesture
     * is ended. The `rotation` value on each emission is the angle in degrees rotated
@@ -896,55 +943,8 @@ trait BrowserWindow extends EventEmitter {
     * @platform darwin
     */
   @JSName("on")
-  def on_rotategesture(event: `rotate-gesture`, listener: js.Function2[/* event */ Event, /* rotation */ Double, Unit]): this.type = js.native
-  /**
-    * Emitted when scroll wheel event phase has begun.
-    *
-    * @platform darwin
-    */
-  @JSName("on")
-  def on_scrolltouchbegin(event: `scroll-touch-begin`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when scroll wheel event phase filed upon reaching the edge of element.
-    *
-    * @platform darwin
-    */
-  @JSName("on")
-  def on_scrolltouchedge(event: `scroll-touch-edge`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when scroll wheel event phase has ended.
-    *
-    * @platform darwin
-    */
-  @JSName("on")
-  def on_scrolltouchend(event: `scroll-touch-end`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when window session is going to end due to force shutdown or machine
-    * restart or session log off.
-    *
-    * @platform win32
-    */
-  @JSName("on")
-  def on_sessionend(event: `session-end`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the window opens a sheet.
-    *
-    * @platform darwin
-    */
-  @JSName("on")
-  def on_sheetbegin(event: `sheet-begin`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the window has closed a sheet.
-    *
-    * @platform darwin
-    */
-  @JSName("on")
-  def on_sheetend(event: `sheet-end`, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the window is shown.
-    */
-  @JSName("on")
-  def on_show(event: show, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_rotategesture")
+  def on(event: "rotate-gesture", listener: js.Function2[/* event */ Event, /* rotation */ Double, Unit]): this.type = js.native
   /**
     * Emitted on 3-finger swipe. Possible directions are `up`, `right`, `down`,
     * `left`.
@@ -959,40 +959,37 @@ trait BrowserWindow extends EventEmitter {
     * @platform darwin
     */
   @JSName("on")
-  def on_swipe(event: swipe, listener: js.Function2[/* event */ Event, /* direction */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_swipe")
+  def on(event: "swipe", listener: js.Function2[/* event */ Event, /* direction */ String, Unit]): this.type = js.native
   /**
-    * Emitted when the system context menu is triggered on the window, this is
-    * normally only triggered when the user right clicks on the non-client area of
-    * your window.  This is the window titlebar or any area you have declared as
-    * `-webkit-app-region: drag` in a frameless window.
+    * Emitted when an App Command is invoked. These are typically related to keyboard
+    * media keys or browser commands, as well as the "Back" button built into some
+    * mice on Windows.
     *
-    * Calling `event.preventDefault()` will prevent the menu from being displayed.
+    * Commands are lowercased, underscores are replaced with hyphens, and the
+    * `APPCOMMAND_` prefix is stripped off. e.g. `APPCOMMAND_BROWSER_BACKWARD` is
+    * emitted as `browser-backward`.
     *
-    * @platform win32
+    * The following app commands are explicitly supported on Linux:
+    *
+    * * `browser-backward`
+    * * `browser-forward`
+    *
+    * @platform win32,linux
     */
   @JSName("on")
-  def on_systemcontextmenu(event: `system-context-menu`, listener: js.Function2[/* event */ Event, /* point */ Point, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_appcommand")
+  def on(event: "app-command", listener: js.Function2[/* event */ Event, /* command */ String, Unit]): this.type = js.native
+  // Docs: https://electronjs.org/docs/api/browser-window
   /**
-    * Emitted when the window exits from a maximized state.
+    * Emitted when the window is set or unset to show always on top of other windows.
     */
   @JSName("on")
-  def on_unmaximize(event: unmaximize, listener: js.Function): this.type = js.native
-  /**
-    * Emitted when the web page becomes unresponsive.
-    */
-  @JSName("on")
-  def on_unresponsive(event: unresponsive, listener: js.Function): this.type = js.native
-  /**
-    * Emitted before the window is moved. On Windows, calling `event.preventDefault()`
-    * will prevent the window from being moved.
-    *
-    * Note that this is only emitted when the window is being moved manually. Moving
-    * the window with `setPosition`/`setBounds`/`center` will not emit this event.
-    *
-    * @platform darwin,win32
-    */
-  @JSName("on")
-  def on_willmove(event: `will-move`, listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_alwaysontopchanged")
+  def on(
+    event: "always-on-top-changed",
+    listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ Boolean, Unit]
+  ): this.type = js.native
   /**
     * Emitted before the window is resized. Calling `event.preventDefault()` will
     * prevent the window from being resized.
@@ -1012,90 +1009,138 @@ trait BrowserWindow extends EventEmitter {
     * @platform darwin,win32
     */
   @JSName("on")
-  def on_willresize(
-    event: `will-resize`,
+  @scala.annotation.targetName("on_willresize")
+  def on(
+    event: "will-resize",
     listener: js.Function3[/* event */ Event, /* newBounds */ Rectangle, /* details */ WillResizeDetails, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when the document changed its title, calling `event.preventDefault()`
+    * will prevent the native window's title from changing. `explicitSet` is false
+    * when title is synthesized from file URL.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_pagetitleupdated")
+  def on(
+    event: "page-title-updated",
+    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
   ): this.type = js.native
   
   @JSName("once")
-  def once_alwaysontopchanged(
-    event: `always-on-top-changed`,
+  @scala.annotation.targetName("once_focus")
+  def once(event: "focus", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_moved")
+  def once(event: "moved", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_sessionend")
+  def once(event: "session-end", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_sheetend")
+  def once(event: "sheet-end", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_newwindowfortab")
+  def once(event: "new-window-for-tab", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_sheetbegin")
+  def once(event: "sheet-begin", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_enterfullscreen")
+  def once(event: "enter-full-screen", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_blur")
+  def once(event: "blur", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_scrolltouchend")
+  def once(event: "scroll-touch-end", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_leavefullscreen")
+  def once(event: "leave-full-screen", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_show")
+  def once(event: "show", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_resize")
+  def once(event: "resize", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_scrolltouchedge")
+  def once(event: "scroll-touch-edge", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_maximize")
+  def once(event: "maximize", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_scrolltouchbegin")
+  def once(event: "scroll-touch-begin", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_hide")
+  def once(event: "hide", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_move")
+  def once(event: "move", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_leavehtmlfullscreen")
+  def once(event: "leave-html-full-screen", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_unresponsive")
+  def once(event: "unresponsive", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_unmaximize")
+  def once(event: "unmaximize", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_resized")
+  def once(event: "resized", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_closed")
+  def once(event: "closed", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_minimize")
+  def once(event: "minimize", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_responsive")
+  def once(event: "responsive", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_restore")
+  def once(event: "restore", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_readytoshow")
+  def once(event: "ready-to-show", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_enterhtmlfullscreen")
+  def once(event: "enter-html-full-screen", listener: js.Function): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_close")
+  def once(event: "close", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("once")
+  @scala.annotation.targetName("once_alwaysontopchanged")
+  def once(
+    event: "always-on-top-changed",
     listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ Boolean, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_appcommand(event: `app-command`, listener: js.Function2[/* event */ Event, /* command */ String, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_swipe")
+  def once(event: "swipe", listener: js.Function2[/* event */ Event, /* direction */ String, Unit]): this.type = js.native
   @JSName("once")
-  def once_blur(event: blur, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_rotategesture")
+  def once(event: "rotate-gesture", listener: js.Function2[/* event */ Event, /* rotation */ Double, Unit]): this.type = js.native
   @JSName("once")
-  def once_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_willmove")
+  def once(event: "will-move", listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
   @JSName("once")
-  def once_closed(event: closed, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_appcommand")
+  def once(event: "app-command", listener: js.Function2[/* event */ Event, /* command */ String, Unit]): this.type = js.native
   @JSName("once")
-  def once_enterfullscreen(event: `enter-full-screen`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_systemcontextmenu")
+  def once(event: "system-context-menu", listener: js.Function2[/* event */ Event, /* point */ Point, Unit]): this.type = js.native
   @JSName("once")
-  def once_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_focus(event: focus, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_hide(event: hide, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_leavefullscreen(event: `leave-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_maximize(event: maximize, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_minimize(event: minimize, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_move(event: move, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_moved(event: moved, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_newwindowfortab(event: `new-window-for-tab`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_pagetitleupdated(
-    event: `page-title-updated`,
+  @scala.annotation.targetName("once_pagetitleupdated")
+  def once(
+    event: "page-title-updated",
     listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_readytoshow(event: `ready-to-show`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_resize(event: resize, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_resized(event: resized, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_responsive(event: responsive, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_restore(event: restore, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_rotategesture(event: `rotate-gesture`, listener: js.Function2[/* event */ Event, /* rotation */ Double, Unit]): this.type = js.native
-  @JSName("once")
-  def once_scrolltouchbegin(event: `scroll-touch-begin`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_scrolltouchedge(event: `scroll-touch-edge`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_scrolltouchend(event: `scroll-touch-end`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_sessionend(event: `session-end`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_sheetbegin(event: `sheet-begin`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_sheetend(event: `sheet-end`, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_show(event: show, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_swipe(event: swipe, listener: js.Function2[/* event */ Event, /* direction */ String, Unit]): this.type = js.native
-  @JSName("once")
-  def once_systemcontextmenu(event: `system-context-menu`, listener: js.Function2[/* event */ Event, /* point */ Point, Unit]): this.type = js.native
-  @JSName("once")
-  def once_unmaximize(event: unmaximize, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_unresponsive(event: unresponsive, listener: js.Function): this.type = js.native
-  @JSName("once")
-  def once_willmove(event: `will-move`, listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
-  @JSName("once")
-  def once_willresize(
-    event: `will-resize`,
+  @scala.annotation.targetName("once_willresize")
+  def once(
+    event: "will-resize",
     listener: js.Function3[/* event */ Event, /* newBounds */ Rectangle, /* details */ WillResizeDetails, Unit]
   ): this.type = js.native
   
@@ -1115,84 +1160,120 @@ trait BrowserWindow extends EventEmitter {
   def removeBrowserView(browserView: BrowserView): Unit = js.native
   
   @JSName("removeListener")
-  def removeListener_alwaysontopchanged(
-    event: `always-on-top-changed`,
+  @scala.annotation.targetName("removeListener_enterfullscreen")
+  def removeListener(event: "enter-full-screen", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_sessionend")
+  def removeListener(event: "session-end", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_focus")
+  def removeListener(event: "focus", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_leavefullscreen")
+  def removeListener(event: "leave-full-screen", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_sheetend")
+  def removeListener(event: "sheet-end", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_newwindowfortab")
+  def removeListener(event: "new-window-for-tab", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_hide")
+  def removeListener(event: "hide", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_restore")
+  def removeListener(event: "restore", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_resize")
+  def removeListener(event: "resize", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_unmaximize")
+  def removeListener(event: "unmaximize", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_resized")
+  def removeListener(event: "resized", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_scrolltouchend")
+  def removeListener(event: "scroll-touch-end", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_unresponsive")
+  def removeListener(event: "unresponsive", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_scrolltouchedge")
+  def removeListener(event: "scroll-touch-edge", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_show")
+  def removeListener(event: "show", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_readytoshow")
+  def removeListener(event: "ready-to-show", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_move")
+  def removeListener(event: "move", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_leavehtmlfullscreen")
+  def removeListener(event: "leave-html-full-screen", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_enterhtmlfullscreen")
+  def removeListener(event: "enter-html-full-screen", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_responsive")
+  def removeListener(event: "responsive", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_moved")
+  def removeListener(event: "moved", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_scrolltouchbegin")
+  def removeListener(event: "scroll-touch-begin", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_closed")
+  def removeListener(event: "closed", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_sheetbegin")
+  def removeListener(event: "sheet-begin", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_blur")
+  def removeListener(event: "blur", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_maximize")
+  def removeListener(event: "maximize", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_minimize")
+  def removeListener(event: "minimize", listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_close")
+  def removeListener(event: "close", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_appcommand")
+  def removeListener(event: "app-command", listener: js.Function2[/* event */ Event, /* command */ String, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_rotategesture")
+  def removeListener(event: "rotate-gesture", listener: js.Function2[/* event */ Event, /* rotation */ Double, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_swipe")
+  def removeListener(event: "swipe", listener: js.Function2[/* event */ Event, /* direction */ String, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_systemcontextmenu")
+  def removeListener(event: "system-context-menu", listener: js.Function2[/* event */ Event, /* point */ Point, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_willmove")
+  def removeListener(event: "will-move", listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
+  @JSName("removeListener")
+  @scala.annotation.targetName("removeListener_alwaysontopchanged")
+  def removeListener(
+    event: "always-on-top-changed",
     listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ Boolean, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_appcommand(event: `app-command`, listener: js.Function2[/* event */ Event, /* command */ String, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_blur(event: blur, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_closed(event: closed, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_enterfullscreen(event: `enter-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_focus(event: focus, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_hide(event: hide, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_leavefullscreen(event: `leave-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_maximize(event: maximize, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_minimize(event: minimize, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_move(event: move, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_moved(event: moved, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_newwindowfortab(event: `new-window-for-tab`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_pagetitleupdated(
-    event: `page-title-updated`,
+  @scala.annotation.targetName("removeListener_pagetitleupdated")
+  def removeListener(
+    event: "page-title-updated",
     listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_readytoshow(event: `ready-to-show`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_resize(event: resize, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_resized(event: resized, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_responsive(event: responsive, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_restore(event: restore, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_rotategesture(event: `rotate-gesture`, listener: js.Function2[/* event */ Event, /* rotation */ Double, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_scrolltouchbegin(event: `scroll-touch-begin`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_scrolltouchedge(event: `scroll-touch-edge`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_scrolltouchend(event: `scroll-touch-end`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_sessionend(event: `session-end`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_sheetbegin(event: `sheet-begin`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_sheetend(event: `sheet-end`, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_show(event: show, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_swipe(event: swipe, listener: js.Function2[/* event */ Event, /* direction */ String, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_systemcontextmenu(event: `system-context-menu`, listener: js.Function2[/* event */ Event, /* point */ Point, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_unmaximize(event: unmaximize, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_unresponsive(event: unresponsive, listener: js.Function): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_willmove(event: `will-move`, listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_willresize(
-    event: `will-resize`,
+  @scala.annotation.targetName("removeListener_willresize")
+  def removeListener(
+    event: "will-resize",
     listener: js.Function3[/* event */ Event, /* newBounds */ Rectangle, /* details */ WillResizeDetails, Unit]
   ): this.type = js.native
   
@@ -1244,13 +1325,17 @@ trait BrowserWindow extends EventEmitter {
     * can not be focused on.
     */
   def setAlwaysOnTop(flag: Boolean): Unit = js.native
+  @JSName("setAlwaysOnTop")
+  @scala.annotation.targetName("setAlwaysOnTop_normal_floating_tornoffmenu_modalpanel_mainmenu_status_popupmenu_screensaver")
   def setAlwaysOnTop(
     flag: Boolean,
-    level: normal | floating | `torn-off-menu` | `modal-panel` | `main-menu` | status | `pop-up-menu` | `screen-saver`
+    level: "normal" | "floating" | "torn-off-menu" | "modal-panel" | "main-menu" | "status" | "pop-up-menu" | "screen-saver"
   ): Unit = js.native
+  @JSName("setAlwaysOnTop")
+  @scala.annotation.targetName("setAlwaysOnTop_normal_floating_tornoffmenu_modalpanel_mainmenu_status_popupmenu_screensaver")
   def setAlwaysOnTop(
     flag: Boolean,
-    level: normal | floating | `torn-off-menu` | `modal-panel` | `main-menu` | status | `pop-up-menu` | `screen-saver`,
+    level: "normal" | "floating" | "torn-off-menu" | "modal-panel" | "main-menu" | "status" | "pop-up-menu" | "screen-saver",
     relativeLevel: Double
   ): Unit = js.native
   def setAlwaysOnTop(flag: Boolean, level: Unit, relativeLevel: Double): Unit = js.native
@@ -1697,8 +1782,10 @@ trait BrowserWindow extends EventEmitter {
     * @platform darwin
     */
   def setVibrancy(): Unit = js.native
+  @JSName("setVibrancy")
+  @scala.annotation.targetName("setVibrancy_appearancebased_light_dark_titlebar_selection_menu_popover_sidebar_mediumlight_ultradark_header_sheet_window_hud_fullscreenui_tooltip_content_underwindow_underpage")
   def setVibrancy(
-    `type`: `appearance-based` | light | dark | titlebar | selection | menu | popover | sidebar | `medium-light` | `ultra-dark` | header | sheet | window | hud | `fullscreen-ui` | tooltip | content | `under-window` | `under-page`
+    `type`: "appearance-based" | "light" | "dark" | "titlebar" | "selection" | "menu" | "popover" | "sidebar" | "medium-light" | "ultra-dark" | "header" | "sheet" | "window" | "hud" | "fullscreen-ui" | "tooltip" | "content" | "under-window" | "under-page"
   ): Unit = js.native
   
   /**

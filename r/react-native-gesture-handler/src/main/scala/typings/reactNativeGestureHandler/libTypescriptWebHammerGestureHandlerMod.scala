@@ -11,10 +11,6 @@ import typings.reactNativeGestureHandler.anon.Pointers
 import typings.reactNativeGestureHandler.anon.RequiredConfig
 import typings.reactNativeGestureHandler.anon.X
 import typings.reactNativeGestureHandler.libTypescriptStateMod.State
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`1`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`2`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`4`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`8`
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -202,7 +198,7 @@ object libTypescriptWebHammerGestureHandlerMod {
     
     def getHammerConfig(): Pointers = js.native
     
-    def getState(`type`: /* keyof react-native-gesture-handler.anon.1 */ `1` | `2` | `4` | `8`): State = js.native
+    def getState(`type`: /* keyof react-native-gesture-handler.anon.1 */ "1" | "2" | "4" | "8"): State = js.native
     
     /* protected */ var hammer: HammerManager | Null = js.native
     
@@ -259,7 +255,8 @@ object libTypescriptWebHammerGestureHandlerMod {
     def sendEvent(nativeEvent: HammerInputExt): Unit = js.native
     
     @JSName("setView")
-    def setView_0(
+    @scala.annotation.targetName("setView_0")
+    def setView(
       ref: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-native-gesture-handler.anon.FnCallComponentOrHandle>['0'] */ js.Any,
       propsRef: Any
     ): Unit = js.native
@@ -304,7 +301,7 @@ object libTypescriptWebHammerGestureHandlerMod {
     
     var distance: Double
     
-    var eventType: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`8`
+    var eventType: 1 | 2 | 4 | 8
     
     var isFinal: Boolean
     
@@ -355,7 +352,7 @@ object libTypescriptWebHammerGestureHandlerMod {
       deltaY: Double,
       direction: Double,
       distance: Double,
-      eventType: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`8`,
+      eventType: 1 | 2 | 4 | 8,
       isFinal: Boolean,
       isFirst: Boolean,
       maxPointers: Double,
@@ -401,9 +398,7 @@ object libTypescriptWebHammerGestureHandlerMod {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      inline def setEventType(
-        value: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`8`
-      ): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+      inline def setEventType(value: 1 | 2 | 4 | 8): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
       
       inline def setIsFinal(value: Boolean): Self = StObject.set(x, "isFinal", value.asInstanceOf[js.Any])
       

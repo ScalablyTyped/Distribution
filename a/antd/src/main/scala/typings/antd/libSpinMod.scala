@@ -117,12 +117,7 @@ object libSpinMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.small
-    - typings.antd.antdStrings.default
-    - typings.antd.antdStrings.large
-  */
-  trait SpinSize extends StObject
+  type SpinSize = "small" | "default" | "large"
   
   type _To = SpinFCType
   

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReferenceIdentifier
   extends StObject
-     with TemplateIdentifier
-     with TopLevelIdentifier {
+     with TemplateIdentifier {
   
   @JSName("kind")
   var kind_ReferenceIdentifier: Reference

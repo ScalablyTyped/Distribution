@@ -68,5 +68,5 @@ object srcNgtscFileSystemSrcLogicalMod {
       */
     inline def relativePathBetween(from: LogicalProjectPath, to: LogicalProjectPath): PathSegment = (^.asInstanceOf[js.Dynamic].applyDynamic("relativePathBetween")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[PathSegment]
   }
-  type LogicalProjectPath = BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.LogicalProjectPath]
+  type LogicalProjectPath = BrandedPath["LogicalProjectPath"]
 }

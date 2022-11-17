@@ -7,7 +7,6 @@ import typings.three.srcConstantsMod.TextureDataType
 import typings.three.srcConstantsMod.TextureFilter
 import typings.three.srcConstantsMod.Wrapping
 import typings.three.srcTexturesTextureMod.Texture
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,6 +39,6 @@ object srcTexturesVideoTextureMod {
       anisotropy: js.UndefOr[Double]
     ) = this()
     
-    val isVideoTexture: `true` = js.native
+    val isVideoTexture: true = js.native
   }
 }

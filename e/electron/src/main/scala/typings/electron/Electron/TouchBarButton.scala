@@ -1,8 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.left
-import typings.electron.electronStrings.overlay
-import typings.electron.electronStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +32,7 @@ trait TouchBarButton extends StObject {
   /**
     * A `string` - Can be `left`, `right` or `overlay`.  Defaults to `overlay`.
     */
-  var iconPosition: left | right | overlay
+  var iconPosition: "left" | "right" | "overlay"
   
   /**
     * A `string` representing the button's current text. Changing this value
@@ -50,7 +47,7 @@ object TouchBarButton {
     backgroundColor: String,
     enabled: Boolean,
     icon: NativeImage_,
-    iconPosition: left | right | overlay,
+    iconPosition: "left" | "right" | "overlay",
     label: String
   ): TouchBarButton = {
     val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iconPosition = iconPosition.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
@@ -67,7 +64,7 @@ object TouchBarButton {
     
     inline def setIcon(value: NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    inline def setIconPosition(value: left | right | overlay): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
+    inline def setIconPosition(value: "left" | "right" | "overlay"): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }

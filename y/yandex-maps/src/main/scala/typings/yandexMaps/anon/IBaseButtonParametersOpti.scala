@@ -2,13 +2,6 @@ package typings.yandexMaps.anon
 
 import typings.yandexMaps.mod.IClassConstructor
 import typings.yandexMaps.mod.ISelectableControlLayout
-import typings.yandexMaps.yandexMapsStrings.auto
-import typings.yandexMaps.yandexMapsStrings.large
-import typings.yandexMaps.yandexMapsStrings.left
-import typings.yandexMaps.yandexMapsStrings.medium
-import typings.yandexMaps.yandexMapsStrings.none
-import typings.yandexMaps.yandexMapsStrings.right
-import typings.yandexMaps.yandexMapsStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +11,7 @@ trait IBaseButtonParametersOpti extends StObject {
   
   var adjustMapMargin: js.UndefOr[Boolean] = js.undefined
   
-  var float: js.UndefOr[none | left | right] = js.undefined
+  var float: js.UndefOr["none" | "left" | "right"] = js.undefined
   
   var floatIndex: js.UndefOr[Double] = js.undefined
   
@@ -30,7 +23,7 @@ trait IBaseButtonParametersOpti extends StObject {
   
   var selectOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[auto | small | medium | large] = js.undefined
+  var size: js.UndefOr["auto" | "small" | "medium" | "large"] = js.undefined
   
   var visible: js.UndefOr[Boolean] = js.undefined
 }
@@ -47,7 +40,7 @@ object IBaseButtonParametersOpti {
     
     inline def setAdjustMapMarginUndefined: Self = StObject.set(x, "adjustMapMargin", js.undefined)
     
-    inline def setFloat(value: none | left | right): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+    inline def setFloat(value: "none" | "left" | "right"): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
     
     inline def setFloatIndex(value: Double): Self = StObject.set(x, "floatIndex", value.asInstanceOf[js.Any])
     
@@ -73,7 +66,7 @@ object IBaseButtonParametersOpti {
     
     inline def setSelectOnClickUndefined: Self = StObject.set(x, "selectOnClick", js.undefined)
     
-    inline def setSize(value: auto | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "auto" | "small" | "medium" | "large"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     

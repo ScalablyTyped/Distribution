@@ -26,5 +26,5 @@ trait SharedArrayBuffer extends StObject {
   
   /* standard es2017.sharedmemory */
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: typings.std.stdStrings.SharedArrayBuffer = js.native
+  val toStringTag: "SharedArrayBuffer" = js.native
 }

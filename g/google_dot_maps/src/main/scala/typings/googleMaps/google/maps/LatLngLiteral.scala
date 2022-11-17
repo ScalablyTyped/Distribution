@@ -1,6 +1,5 @@
 package typings.googleMaps.google.maps
 
-import typings.googleMaps.google.maps.places._LocationBias
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * class="note">LatLng object literals are not supported in the Geometry
   * library.</p>
   */
-trait LatLngLiteral
-  extends StObject
-     with _LocationBias {
+trait LatLngLiteral extends StObject {
   
   /**
     * Latitude in degrees. Values will be clamped to the range [-90, 90]. This

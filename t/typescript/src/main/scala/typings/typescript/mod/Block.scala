@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Block
   extends StObject
-     with Statement
-     with BlockLike
-     with HasJSDoc {
+     with Statement {
   
   @JSName("kind")
   val kind_Block: typings.typescript.mod.SyntaxKind.Block = js.native

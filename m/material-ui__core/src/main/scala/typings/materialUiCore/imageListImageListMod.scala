@@ -2,8 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Gap
-import typings.materialUiCore.materialUiCoreStrings.root
-import typings.materialUiCore.materialUiCoreStrings.ul
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -25,9 +23,9 @@ object imageListImageListMod extends Shortcut {
     */
   @JSImport("@material-ui/core/ImageList/ImageList", JSImport.Default)
   @js.native
-  val default: OverridableComponent[ImageListTypeMap[js.Object, ul]] = js.native
+  val default: OverridableComponent[ImageListTypeMap[js.Object, "ul"]] = js.native
   
-  type ImageListClassKey = root
+  type ImageListClassKey = "root"
   
   type ImageListProps[D /* <: ElementType[Any] */, P] = OverrideProps[ImageListTypeMap[P, D], D]
   
@@ -56,8 +54,8 @@ object imageListImageListMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[ImageListTypeMap[js.Object, ul]]
+  type _To = OverridableComponent[ImageListTypeMap[js.Object, "ul"]]
   
   /* This means you don't have to write `default`, but can instead just say `imageListImageListMod.foo` */
-  override def _to: OverridableComponent[ImageListTypeMap[js.Object, ul]] = default
+  override def _to: OverridableComponent[ImageListTypeMap[js.Object, "ul"]] = default
 }

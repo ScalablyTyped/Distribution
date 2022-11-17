@@ -1,10 +1,5 @@
 package typings.antd
 
-import typings.antd.antdStrings.error
-import typings.antd.antdStrings.info
-import typings.antd.antdStrings.loading
-import typings.antd.antdStrings.success
-import typings.antd.antdStrings.warning
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key
 import typings.react.mod.MouseEvent
@@ -34,7 +29,7 @@ object libMessageMod {
   
   @JSImport("antd/lib/message", "typeList")
   @js.native
-  val typeList: js.Array[success | warning | error | loading | info] = js.native
+  val typeList: js.Array["success" | "warning" | "error" | "loading" | "info"] = js.native
   
   trait ArgsProps extends StObject {
     
@@ -239,14 +234,7 @@ object libMessageMod {
     def apply(): Unit = js.native
   }
   
-  /* keyof antd.anon.Info */ /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.info
-    - typings.antd.antdStrings.success
-    - typings.antd.antdStrings.error
-    - typings.antd.antdStrings.warning
-    - typings.antd.antdStrings.loading
-  */
-  trait NoticeType extends StObject
+  type NoticeType = /* keyof antd.anon.Info */ "info" | "success" | "error" | "warning" | "loading"
   
   type ThenableArgument = js.Function1[/* val */ Any, Unit]
 }

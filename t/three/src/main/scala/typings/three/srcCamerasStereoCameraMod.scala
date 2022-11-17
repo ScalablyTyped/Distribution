@@ -27,7 +27,7 @@ object srcCamerasStereoCameraMod {
     var eyeSep: Double = js.native
     
     @JSName("type")
-    var type_StereoCamera: typings.three.threeStrings.StereoCamera = js.native
+    var type_StereoCamera: "StereoCamera" = js.native
     
     def update(camera: PerspectiveCamera): Unit = js.native
   }

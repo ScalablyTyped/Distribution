@@ -17,5 +17,5 @@ trait I18nRemoveOpCodes
   extends StObject
      with Array[Double] {
   
-  var __brand__ : typings.angularCore.angularCoreStrings.I18nRemoveOpCodes = js.native
+  var __brand__ : "I18nRemoveOpCodes" = js.native
 }

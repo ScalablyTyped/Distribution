@@ -1,27 +1,5 @@
 package typings.std
 
-import typings.std.stdInts.`0`
-import typings.std.stdInts.`10`
-import typings.std.stdInts.`11`
-import typings.std.stdInts.`12`
-import typings.std.stdInts.`13`
-import typings.std.stdInts.`14`
-import typings.std.stdInts.`15`
-import typings.std.stdInts.`16`
-import typings.std.stdInts.`17`
-import typings.std.stdInts.`18`
-import typings.std.stdInts.`19`
-import typings.std.stdInts.`1`
-import typings.std.stdInts.`20`
-import typings.std.stdInts.`21`
-import typings.std.stdInts.`2`
-import typings.std.stdInts.`3`
-import typings.std.stdInts.`4`
-import typings.std.stdInts.`5`
-import typings.std.stdInts.`6`
-import typings.std.stdInts.`7`
-import typings.std.stdInts.`8`
-import typings.std.stdInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,7 +41,7 @@ trait BigIntToLocaleStringOptions extends StObject {
     */
   /* standard es2020.bigint */
   var maximumFractionDigits: js.UndefOr[
-    `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20`
+    0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20
   ] = js.undefined
   
   /**
@@ -71,7 +49,7 @@ trait BigIntToLocaleStringOptions extends StObject {
     */
   /* standard es2020.bigint */
   var maximumSignificantDigits: js.UndefOr[
-    `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20` | `21`
+    1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21
   ] = js.undefined
   
   /**
@@ -79,7 +57,7 @@ trait BigIntToLocaleStringOptions extends StObject {
     */
   /* standard es2020.bigint */
   var minimumFractionDigits: js.UndefOr[
-    `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20`
+    0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20
   ] = js.undefined
   
   /**
@@ -87,7 +65,7 @@ trait BigIntToLocaleStringOptions extends StObject {
     */
   /* standard es2020.bigint */
   var minimumIntegerDigits: js.UndefOr[
-    `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20` | `21`
+    1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21
   ] = js.undefined
   
   /**
@@ -95,7 +73,7 @@ trait BigIntToLocaleStringOptions extends StObject {
     */
   /* standard es2020.bigint */
   var minimumSignificantDigits: js.UndefOr[
-    `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20` | `21`
+    1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21
   ] = js.undefined
   
   /**
@@ -165,31 +143,31 @@ object BigIntToLocaleStringOptions {
     inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     
     inline def setMaximumFractionDigits(
-      value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20`
+      value: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20
     ): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
     
     inline def setMaximumFractionDigitsUndefined: Self = StObject.set(x, "maximumFractionDigits", js.undefined)
     
     inline def setMaximumSignificantDigits(
-      value: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20` | `21`
+      value: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21
     ): Self = StObject.set(x, "maximumSignificantDigits", value.asInstanceOf[js.Any])
     
     inline def setMaximumSignificantDigitsUndefined: Self = StObject.set(x, "maximumSignificantDigits", js.undefined)
     
     inline def setMinimumFractionDigits(
-      value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20`
+      value: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20
     ): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
     
     inline def setMinimumFractionDigitsUndefined: Self = StObject.set(x, "minimumFractionDigits", js.undefined)
     
     inline def setMinimumIntegerDigits(
-      value: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20` | `21`
+      value: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21
     ): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
     
     inline def setMinimumIntegerDigitsUndefined: Self = StObject.set(x, "minimumIntegerDigits", js.undefined)
     
     inline def setMinimumSignificantDigits(
-      value: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20` | `21`
+      value: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21
     ): Self = StObject.set(x, "minimumSignificantDigits", value.asInstanceOf[js.Any])
     
     inline def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)

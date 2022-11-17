@@ -1,7 +1,5 @@
 package typings.materialUiStyles
 
-import typings.materialUiStyles.materialUiStylesStrings.innerRef
-import typings.materialUiStyles.materialUiStylesStrings.theme
 import typings.materialUiStyles.withThemeWithThemeMod.ThemedComponentProps
 import typings.materialUiStyles.withThemeWithThemeMod.WithTheme
 import typings.materialUiStyles.withThemeWithThemeMod.WithThemeCreatorOption
@@ -33,7 +31,7 @@ object withThemeMod {
           ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState]
         ]
       ], 
-      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ "theme" | "innerRef"
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
     (Omit[
@@ -43,7 +41,7 @@ object withThemeMod {
           ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState]
         ]
       ], 
-      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ "theme" | "innerRef"
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ]]
   inline def default[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]): ComponentType[
@@ -52,7 +50,7 @@ object withThemeMod {
         FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]], 
         ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]]
       ], 
-      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ "theme" | "innerRef"
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
     (Omit[
@@ -60,7 +58,7 @@ object withThemeMod {
         FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]], 
         ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]]
       ], 
-      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ "theme" | "innerRef"
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ]]
   

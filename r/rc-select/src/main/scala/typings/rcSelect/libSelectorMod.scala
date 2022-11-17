@@ -5,7 +5,6 @@ import typings.rcSelect.libBaseSelectMod.CustomTagProps
 import typings.rcSelect.libBaseSelectMod.DisplayValueType
 import typings.rcSelect.libBaseSelectMod.Mode
 import typings.rcSelect.libBaseSelectMod.RenderNode
-import typings.rcSelect.rcSelectStrings.responsive
 import typings.rcVirtualList.esListMod.ScrollConfig
 import typings.rcVirtualList.esListMod.ScrollTo
 import typings.react.mod.ChangeEvent
@@ -222,7 +221,7 @@ object libSelectorMod extends Shortcut {
     
     var maxLength: js.UndefOr[Double] = js.native
     
-    var maxTagCount: js.UndefOr[Double | responsive] = js.native
+    var maxTagCount: js.UndefOr[Double | "responsive"] = js.native
     
     var maxTagPlaceholder: js.UndefOr[
         ReactNode | (js.Function1[/* omittedValues */ js.Array[DisplayValueType], ReactNode])

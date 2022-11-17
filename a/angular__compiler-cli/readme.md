@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__compiler-cli
 
-Typings are for version 14.2.7
+Typings are for version 14.2.10
 
 ## Library description:
 Angular - the compiler CLI for Node.js
@@ -12,8 +12,8 @@ Angular - the compiler CLI for Node.js
 | Keywords           | angular, compiler |
 | # releases         | 220 |
 | # dependents       | 0.0 |
-| # downloads        | 9129863.0 |
-| # stars            | ? |
+| # downloads        | 9158066.666666666 |
+| # stars            | 83980.0 |
 
 ## Links
 - [Homepage](https://github.com/angular/angular/tree/main/packages/compiler-cli)

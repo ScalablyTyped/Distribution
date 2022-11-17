@@ -6,15 +6,6 @@ import typings.rcSelect.libOptGroupMod.OptionGroupFC
 import typings.rcSelect.libOptionMod.OptionFC
 import typings.rcSelect.libSelectMod.FieldNames
 import typings.rcSelect.libSelectMod.RawValueType
-import typings.rcSelect.rcSelectStrings.add
-import typings.rcSelect.rcSelectStrings.blur
-import typings.rcSelect.rcSelectStrings.clear
-import typings.rcSelect.rcSelectStrings.effect
-import typings.rcSelect.rcSelectStrings.keyboard
-import typings.rcSelect.rcSelectStrings.mouse
-import typings.rcSelect.rcSelectStrings.remove
-import typings.rcSelect.rcSelectStrings.submit
-import typings.rcSelect.rcSelectStrings.typing
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.std.Map
@@ -26,7 +17,7 @@ object anon {
   
   trait `0` extends StObject {
     
-    var source: js.UndefOr[keyboard | mouse] = js.undefined
+    var source: js.UndefOr["keyboard" | "mouse"] = js.undefined
   }
   object `0` {
     
@@ -37,7 +28,7 @@ object anon {
     
     extension [Self <: `0`](x: Self) {
       
-      inline def setSource(value: keyboard | mouse): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: "keyboard" | "mouse"): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
@@ -227,30 +218,30 @@ object anon {
   
   trait Source extends StObject {
     
-    var source: typing | effect | submit | blur
+    var source: "typing" | "effect" | "submit" | "blur"
   }
   object Source {
     
-    inline def apply(source: typing | effect | submit | blur): Source = {
+    inline def apply(source: "typing" | "effect" | "submit" | "blur"): Source = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[Source]
     }
     
     extension [Self <: Source](x: Self) {
       
-      inline def setSource(value: typing | effect | submit | blur): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: "typing" | "effect" | "submit" | "blur"): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
   trait Type extends StObject {
     
-    var `type`: add | remove | clear
+    var `type`: "add" | "remove" | "clear"
     
     var values: js.Array[DisplayValueType]
   }
   object Type {
     
-    inline def apply(`type`: add | remove | clear, values: js.Array[DisplayValueType]): Type = {
+    inline def apply(`type`: "add" | "remove" | "clear", values: js.Array[DisplayValueType]): Type = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
@@ -258,7 +249,7 @@ object anon {
     
     extension [Self <: Type](x: Self) {
       
-      inline def setType(value: add | remove | clear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "add" | "remove" | "clear"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setValues(value: js.Array[DisplayValueType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       

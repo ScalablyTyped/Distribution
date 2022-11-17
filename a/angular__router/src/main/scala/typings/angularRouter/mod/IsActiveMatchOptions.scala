@@ -1,8 +1,5 @@
 package typings.angularRouter.mod
 
-import typings.angularRouter.angularRouterStrings.exact
-import typings.angularRouter.angularRouterStrings.ignored
-import typings.angularRouter.angularRouterStrings.subset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +11,7 @@ trait IsActiveMatchOptions extends StObject {
     * - `'ignored'`: the fragments will not be compared when determining if a
     * `UrlTree` is active.
     */
-  var fragment: exact | ignored
+  var fragment: "exact" | "ignored"
   
   /**
     * Defines the strategy for comparing the matrix parameters of two `UrlTree`s.
@@ -29,7 +26,7 @@ trait IsActiveMatchOptions extends StObject {
     * extra matrix parameters, but those that exist in the `UrlTree` in question must match.
     * - `'ignored'`: When comparing `UrlTree`s, matrix params will be ignored.
     */
-  var matrixParams: exact | subset | ignored
+  var matrixParams: "exact" | "subset" | "ignored"
   
   /**
     * Defines the strategy for comparing the `UrlSegment`s of the `UrlTree`s.
@@ -39,7 +36,7 @@ trait IsActiveMatchOptions extends StObject {
     * is a subtree of the active route. That is, the active route may contain extra
     * segments, but must at least have all the segments of the `UrlTree` in question.
     */
-  var paths: exact | subset
+  var paths: "exact" | "subset"
   
   /**
     * Defines the strategy for comparing the query parameters of two `UrlTree`s.
@@ -49,15 +46,15 @@ trait IsActiveMatchOptions extends StObject {
     * but must match the key and value of any that exist in the `UrlTree` in question.
     * - `'ignored'`: When comparing `UrlTree`s, query params will be ignored.
     */
-  var queryParams: exact | subset | ignored
+  var queryParams: "exact" | "subset" | "ignored"
 }
 object IsActiveMatchOptions {
   
   inline def apply(
-    fragment: exact | ignored,
-    matrixParams: exact | subset | ignored,
-    paths: exact | subset,
-    queryParams: exact | subset | ignored
+    fragment: "exact" | "ignored",
+    matrixParams: "exact" | "subset" | "ignored",
+    paths: "exact" | "subset",
+    queryParams: "exact" | "subset" | "ignored"
   ): IsActiveMatchOptions = {
     val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any], matrixParams = matrixParams.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], queryParams = queryParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsActiveMatchOptions]
@@ -65,12 +62,12 @@ object IsActiveMatchOptions {
   
   extension [Self <: IsActiveMatchOptions](x: Self) {
     
-    inline def setFragment(value: exact | ignored): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+    inline def setFragment(value: "exact" | "ignored"): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
-    inline def setMatrixParams(value: exact | subset | ignored): Self = StObject.set(x, "matrixParams", value.asInstanceOf[js.Any])
+    inline def setMatrixParams(value: "exact" | "subset" | "ignored"): Self = StObject.set(x, "matrixParams", value.asInstanceOf[js.Any])
     
-    inline def setPaths(value: exact | subset): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: "exact" | "subset"): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    inline def setQueryParams(value: exact | subset | ignored): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+    inline def setQueryParams(value: "exact" | "subset" | "ignored"): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
   }
 }

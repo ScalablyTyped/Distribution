@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/router", "RouteConfigLoadEnd")
 @js.native
-open class RouteConfigLoadEnd protected ()
-  extends StObject
-     with Event2 {
+open class RouteConfigLoadEnd protected () extends StObject {
   def this(/** @docsNotRequired */
   route: Route) = this()
   

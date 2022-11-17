@@ -190,23 +190,17 @@ object esDrawerPopupMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rcDrawer.rcDrawerStrings.left
-    - typings.rcDrawer.rcDrawerStrings.right
-    - typings.rcDrawer.rcDrawerStrings.top
-    - typings.rcDrawer.rcDrawerStrings.bottom
-  */
-  trait Placement extends StObject
   object Placement {
     
-    inline def bottom: typings.rcDrawer.rcDrawerStrings.bottom = "bottom".asInstanceOf[typings.rcDrawer.rcDrawerStrings.bottom]
+    inline def bottom: "bottom" = "bottom".asInstanceOf["bottom"]
     
-    inline def left: typings.rcDrawer.rcDrawerStrings.left = "left".asInstanceOf[typings.rcDrawer.rcDrawerStrings.left]
+    inline def left: "left" = "left".asInstanceOf["left"]
     
-    inline def right: typings.rcDrawer.rcDrawerStrings.right = "right".asInstanceOf[typings.rcDrawer.rcDrawerStrings.right]
+    inline def right: "right" = "right".asInstanceOf["right"]
     
-    inline def top: typings.rcDrawer.rcDrawerStrings.top = "top".asInstanceOf[typings.rcDrawer.rcDrawerStrings.top]
+    inline def top: "top" = "top".asInstanceOf["top"]
   }
+  type Placement = "left" | "right" | "top" | "bottom"
   
   trait PushConfig extends StObject {
     

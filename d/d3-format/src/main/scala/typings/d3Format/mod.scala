@@ -1,29 +1,6 @@
 package typings.d3Format
 
 import typings.d3Format.anon.ValueOf
-import typings.d3Format.d3FormatStrings.$
-import typings.d3Format.d3FormatStrings.Equalssign
-import typings.d3Format.d3FormatStrings.Greaterthansign
-import typings.d3Format.d3FormatStrings.Lessthansign
-import typings.d3Format.d3FormatStrings.Numbersign
-import typings.d3Format.d3FormatStrings.Percentsign
-import typings.d3Format.d3FormatStrings.Plussign
-import typings.d3Format.d3FormatStrings.Space
-import typings.d3Format.d3FormatStrings.X
-import typings.d3Format.d3FormatStrings._empty
-import typings.d3Format.d3FormatStrings.`-_`
-import typings.d3Format.d3FormatStrings.b
-import typings.d3Format.d3FormatStrings.c
-import typings.d3Format.d3FormatStrings.d
-import typings.d3Format.d3FormatStrings.e
-import typings.d3Format.d3FormatStrings.f
-import typings.d3Format.d3FormatStrings.g
-import typings.d3Format.d3FormatStrings.n
-import typings.d3Format.d3FormatStrings.o
-import typings.d3Format.d3FormatStrings.p
-import typings.d3Format.d3FormatStrings.r
-import typings.d3Format.d3FormatStrings.s
-import typings.d3Format.d3FormatStrings.x_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +28,7 @@ object mod {
       * '^' - Forces the field to be centered within the available space.
       * '=' - Like '>', but with any sign and symbol to the left of any padding.
       */
-    var align: Greaterthansign | Lessthansign | typings.d3Format.d3FormatStrings.^ | Equalssign = js.native
+    var align: ">" | "<" | "^" | "=" = js.native
     
     /**
       * The comma (,) option enables the use of a group separator, such as a comma for thousands.
@@ -82,7 +59,7 @@ object mod {
       * ' ' (space) - a space for positive and a minus sign for negative.
       *
       */
-    var sign: `-_` | Plussign | (/* ( */ String) | Space = js.native
+    var sign: "-" | "+" | (/* ( */ String) | (" ") = js.native
     
     /**
       * The symbol can be:
@@ -91,7 +68,7 @@ object mod {
       * '#' - for binary, octal, or hexadecimal notation, prefix by 0b, 0o, or 0x, respectively.
       * '' (none) - no symbol. (Default behavior.)
       */
-    var symbol: $ | Numbersign | _empty = js.native
+    var symbol: "$" | "#" | "" = js.native
     
     /**
       * The '~' option trims insignificant trailing zeros across all format types.
@@ -120,7 +97,7 @@ object mod {
       * the type 'n' is shorthand for ',g'. For the 'g', 'n' and '' (none) types,
       * decimal notation is used if the resulting string would have precision or fewer digits; otherwise, exponent notation is used.
       */
-    var `type`: e | f | g | r | s | Percentsign | p | b | o | d | x_ | X | c | _empty | n = js.native
+    var `type`: "e" | "f" | "g" | "r" | "s" | "%" | "p" | "b" | "o" | "d" | "x" | "X" | "c" | "" | "n" = js.native
     
     /**
       * The width defines the minimum field width;

@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.paymentmethodchange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,16 +18,22 @@ trait PaymentRequest
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_paymentmethodchange(`type`: paymentmethodchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_paymentmethodchange")
+  def addEventListener(
+    `type`: "paymentmethodchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_paymentmethodchange(
-    `type`: paymentmethodchange,
+  @scala.annotation.targetName("addEventListener_paymentmethodchange")
+  def addEventListener(
+    `type`: "paymentmethodchange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_paymentmethodchange(
-    `type`: paymentmethodchange,
+  @scala.annotation.targetName("addEventListener_paymentmethodchange")
+  def addEventListener(
+    `type`: "paymentmethodchange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -44,16 +49,22 @@ trait PaymentRequest
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_paymentmethodchange(`type`: paymentmethodchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_paymentmethodchange")
+  def removeEventListener(
+    `type`: "paymentmethodchange",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+  ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_paymentmethodchange(
-    `type`: paymentmethodchange,
+  @scala.annotation.targetName("removeEventListener_paymentmethodchange")
+  def removeEventListener(
+    `type`: "paymentmethodchange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_paymentmethodchange(
-    `type`: paymentmethodchange,
+  @scala.annotation.targetName("removeEventListener_paymentmethodchange")
+  def removeEventListener(
+    `type`: "paymentmethodchange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

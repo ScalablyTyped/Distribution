@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.DisableSticky
-import typings.materialUiCore.materialUiCoreStrings.li
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -24,31 +23,23 @@ object listSubheaderListSubheaderMod extends Shortcut {
     */
   @JSImport("@material-ui/core/ListSubheader/ListSubheader", JSImport.Default)
   @js.native
-  val default: OverridableComponent[ListSubheaderTypeMap[js.Object, li]] = js.native
+  val default: OverridableComponent[ListSubheaderTypeMap[js.Object, "li"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.colorPrimary
-    - typings.materialUiCore.materialUiCoreStrings.colorInherit
-    - typings.materialUiCore.materialUiCoreStrings.inset
-    - typings.materialUiCore.materialUiCoreStrings.sticky
-    - typings.materialUiCore.materialUiCoreStrings.gutters
-  */
-  trait ListSubheaderClassKey extends StObject
   object ListSubheaderClassKey {
     
-    inline def colorInherit: typings.materialUiCore.materialUiCoreStrings.colorInherit = "colorInherit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorInherit]
+    inline def colorInherit: "colorInherit" = "colorInherit".asInstanceOf["colorInherit"]
     
-    inline def colorPrimary: typings.materialUiCore.materialUiCoreStrings.colorPrimary = "colorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorPrimary]
+    inline def colorPrimary: "colorPrimary" = "colorPrimary".asInstanceOf["colorPrimary"]
     
-    inline def gutters: typings.materialUiCore.materialUiCoreStrings.gutters = "gutters".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.gutters]
+    inline def gutters: "gutters" = "gutters".asInstanceOf["gutters"]
     
-    inline def inset: typings.materialUiCore.materialUiCoreStrings.inset = "inset".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.inset]
+    inline def inset: "inset" = "inset".asInstanceOf["inset"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def sticky: typings.materialUiCore.materialUiCoreStrings.sticky = "sticky".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sticky]
+    inline def sticky: "sticky" = "sticky".asInstanceOf["sticky"]
   }
+  type ListSubheaderClassKey = "root" | "colorPrimary" | "colorInherit" | "inset" | "sticky" | "gutters"
   
   type ListSubheaderProps[D /* <: ElementType[Any] */, P] = OverrideProps[ListSubheaderTypeMap[P, D], D]
   
@@ -77,8 +68,8 @@ object listSubheaderListSubheaderMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[ListSubheaderTypeMap[js.Object, li]]
+  type _To = OverridableComponent[ListSubheaderTypeMap[js.Object, "li"]]
   
   /* This means you don't have to write `default`, but can instead just say `listSubheaderListSubheaderMod.foo` */
-  override def _to: OverridableComponent[ListSubheaderTypeMap[js.Object, li]] = default
+  override def _to: OverridableComponent[ListSubheaderTypeMap[js.Object, "li"]] = default
 }

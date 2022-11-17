@@ -1,20 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.ThisTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ThisTypeAnnotation_
+trait ThisTypeAnnotation_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowBaseAnnotation
-     with FlowType {
+     with BaseNode {
   
   @JSName("type")
-  var type_ThisTypeAnnotation_ : ThisTypeAnnotation
+  var type_ThisTypeAnnotation_ : "ThisTypeAnnotation"
 }
 object ThisTypeAnnotation_ {
   
@@ -26,6 +21,6 @@ object ThisTypeAnnotation_ {
   
   extension [Self <: ThisTypeAnnotation_](x: Self) {
     
-    inline def setType(value: ThisTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ThisTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

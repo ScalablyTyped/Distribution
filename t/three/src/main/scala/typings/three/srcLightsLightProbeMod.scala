@@ -2,7 +2,6 @@ package typings.three
 
 import typings.three.srcLightsLightMod.Light
 import typings.three.srcMathSphericalHarmonics3Mod.SphericalHarmonics3
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object srcLightsLightProbeMod {
     
     def fromJSON(json: js.Object): LightProbe = js.native
     
-    val isLightProbe: `true` = js.native
+    val isLightProbe: true = js.native
     
     /**
       * @default new THREE.SphericalHarmonics3()

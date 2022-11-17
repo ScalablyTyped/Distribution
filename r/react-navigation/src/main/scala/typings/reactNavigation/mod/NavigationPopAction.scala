@@ -1,16 +1,14 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.reactNavigationStrings.NavigationSlashPOP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NavigationPopAction
   extends StObject
-     with NavigationPopActionPayload
-     with NavigationStackAction {
+     with NavigationPopActionPayload {
   
-  var `type`: NavigationSlashPOP
+  var `type`: "Navigation/POP"
 }
 object NavigationPopAction {
   
@@ -22,6 +20,6 @@ object NavigationPopAction {
   
   extension [Self <: NavigationPopAction](x: Self) {
     
-    inline def setType(value: NavigationSlashPOP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "Navigation/POP"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

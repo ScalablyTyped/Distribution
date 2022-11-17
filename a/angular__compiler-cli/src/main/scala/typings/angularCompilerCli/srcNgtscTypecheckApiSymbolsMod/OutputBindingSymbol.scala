@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OutputBindingSymbol
-  extends StObject
-     with Symbol {
+trait OutputBindingSymbol extends StObject {
   
   /** A single output may be bound to multiple components or directives. */
   var bindings: js.Array[BindingSymbol]

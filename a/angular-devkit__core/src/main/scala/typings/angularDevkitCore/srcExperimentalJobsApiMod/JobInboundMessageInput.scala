@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JobInboundMessageInput[InputT /* <: JsonValue */]
   extends StObject
-     with JobInboundMessageBase
-     with JobInboundMessage[InputT] {
+     with JobInboundMessageBase {
   
   @JSName("kind")
   val kind_JobInboundMessageInput: Input

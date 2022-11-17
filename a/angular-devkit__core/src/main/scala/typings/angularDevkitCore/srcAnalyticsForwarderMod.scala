@@ -89,41 +89,7 @@ object srcAnalyticsForwarderMod {
     def apply(report: JsonObject & AnalyticsReport): Unit = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularDevkitCore.srcAnalyticsForwarderMod.AnalyticsReportEvent
-    - typings.angularDevkitCore.srcAnalyticsForwarderMod.AnalyticsReportScreenview
-    - typings.angularDevkitCore.srcAnalyticsForwarderMod.AnalyticsReportPageview
-    - typings.angularDevkitCore.srcAnalyticsForwarderMod.AnalyticsReportTiming
-  */
-  trait AnalyticsReport extends StObject
-  object AnalyticsReport {
-    
-    inline def AnalyticsReportEvent(action: String, category: String, kind: Event, options: JsonObject & EventOptions): typings.angularDevkitCore.srcAnalyticsForwarderMod.AnalyticsReportEvent = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitCore.srcAnalyticsForwarderMod.AnalyticsReportEvent]
-    }
-    
-    inline def AnalyticsReportPageview(kind: Pageview, options: JsonObject & PageviewOptions, path: String): typings.angularDevkitCore.srcAnalyticsForwarderMod.AnalyticsReportPageview = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitCore.srcAnalyticsForwarderMod.AnalyticsReportPageview]
-    }
-    
-    inline def AnalyticsReportScreenview(appName: String, kind: Screenview, options: JsonObject & ScreenviewOptions, screenName: String): typings.angularDevkitCore.srcAnalyticsForwarderMod.AnalyticsReportScreenview = {
-      val __obj = js.Dynamic.literal(appName = appName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], screenName = screenName.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitCore.srcAnalyticsForwarderMod.AnalyticsReportScreenview]
-    }
-    
-    inline def AnalyticsReportTiming(
-      category: String,
-      kind: Timing,
-      options: JsonObject & TimingOptions,
-      time: String | Double,
-      variable: String
-    ): typings.angularDevkitCore.srcAnalyticsForwarderMod.AnalyticsReportTiming = {
-      val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.angularDevkitCore.srcAnalyticsForwarderMod.AnalyticsReportTiming]
-    }
-  }
+  type AnalyticsReport = AnalyticsReportEvent | AnalyticsReportScreenview | AnalyticsReportPageview | AnalyticsReportTiming
   
   trait AnalyticsReportBase
     extends StObject
@@ -146,8 +112,7 @@ object srcAnalyticsForwarderMod {
   
   trait AnalyticsReportEvent
     extends StObject
-       with AnalyticsReportBase
-       with AnalyticsReport {
+       with AnalyticsReportBase {
     
     var action: String
     
@@ -179,8 +144,7 @@ object srcAnalyticsForwarderMod {
   
   trait AnalyticsReportPageview
     extends StObject
-       with AnalyticsReportBase
-       with AnalyticsReport {
+       with AnalyticsReportBase {
     
     @JSName("kind")
     var kind_AnalyticsReportPageview: Pageview
@@ -208,8 +172,7 @@ object srcAnalyticsForwarderMod {
   
   trait AnalyticsReportScreenview
     extends StObject
-       with AnalyticsReportBase
-       with AnalyticsReport {
+       with AnalyticsReportBase {
     
     var appName: String
     
@@ -241,8 +204,7 @@ object srcAnalyticsForwarderMod {
   
   trait AnalyticsReportTiming
     extends StObject
-       with AnalyticsReportBase
-       with AnalyticsReport {
+       with AnalyticsReportBase {
     
     var category: String
     

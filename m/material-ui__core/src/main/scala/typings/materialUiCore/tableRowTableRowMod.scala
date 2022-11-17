@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.Hover
-import typings.materialUiCore.materialUiCoreStrings.tr
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -25,28 +24,21 @@ object tableRowTableRowMod extends Shortcut {
     */
   @JSImport("@material-ui/core/TableRow/TableRow", JSImport.Default)
   @js.native
-  val default: OverridableComponent[TableRowTypeMap[js.Object, tr]] = js.native
+  val default: OverridableComponent[TableRowTypeMap[js.Object, "tr"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.selected
-    - typings.materialUiCore.materialUiCoreStrings.hover
-    - typings.materialUiCore.materialUiCoreStrings.head
-    - typings.materialUiCore.materialUiCoreStrings.footer
-  */
-  trait TableRowClassKey extends StObject
   object TableRowClassKey {
     
-    inline def footer: typings.materialUiCore.materialUiCoreStrings.footer = "footer".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.footer]
+    inline def footer: "footer" = "footer".asInstanceOf["footer"]
     
-    inline def head: typings.materialUiCore.materialUiCoreStrings.head = "head".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.head]
+    inline def head: "head" = "head".asInstanceOf["head"]
     
-    inline def hover: typings.materialUiCore.materialUiCoreStrings.hover = "hover".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.hover]
+    inline def hover: "hover" = "hover".asInstanceOf["hover"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
     
-    inline def selected: typings.materialUiCore.materialUiCoreStrings.selected = "selected".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.selected]
+    inline def selected: "selected" = "selected".asInstanceOf["selected"]
   }
+  type TableRowClassKey = "root" | "selected" | "hover" | "head" | "footer"
   
   type TableRowProps[D /* <: ElementType[Any] */, P] = OverrideProps[TableRowTypeMap[P, D], D]
   
@@ -75,8 +67,8 @@ object tableRowTableRowMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[TableRowTypeMap[js.Object, tr]]
+  type _To = OverridableComponent[TableRowTypeMap[js.Object, "tr"]]
   
   /* This means you don't have to write `default`, but can instead just say `tableRowTableRowMod.foo` */
-  override def _to: OverridableComponent[TableRowTypeMap[js.Object, tr]] = default
+  override def _to: OverridableComponent[TableRowTypeMap[js.Object, "tr"]] = default
 }

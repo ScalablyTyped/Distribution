@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<chart.js.chart.js/types/geometric.TRBLCorners> */
+/* Inlined std.Partial<chart.js.chart.js/dist/chunks/helpers.core.TRBLCorners> */
 trait PartialTRBLCorners extends StObject {
   
   var bottomLeft: js.UndefOr[Double] = js.undefined

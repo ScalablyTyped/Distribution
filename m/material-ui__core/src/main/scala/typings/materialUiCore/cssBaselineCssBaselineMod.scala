@@ -1,6 +1,5 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.materialUiCoreStrings.`@global`
 import typings.materialUiStyles.withStylesWithStylesMod.StyledComponentProps
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
@@ -16,7 +15,7 @@ object cssBaselineCssBaselineMod {
   
   inline def default(props: CssBaselineProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  type CssBaselineClassKey = `@global`
+  type CssBaselineClassKey = "@global"
   
   trait CssBaselineProps
     extends StObject

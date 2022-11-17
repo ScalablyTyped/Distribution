@@ -2,7 +2,6 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.DisablePointerEvents
-import typings.materialUiCore.materialUiCoreStrings.div
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.react.mod.ElementType
@@ -24,34 +23,25 @@ object inputAdornmentInputAdornmentMod extends Shortcut {
     */
   @JSImport("@material-ui/core/InputAdornment/InputAdornment", JSImport.Default)
   @js.native
-  val default: OverridableComponent[InputAdornmentTypeMap[js.Object, div]] = js.native
+  val default: OverridableComponent[InputAdornmentTypeMap[js.Object, "div"]] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.filled
-    - typings.materialUiCore.materialUiCoreStrings.positionStart
-    - typings.materialUiCore.materialUiCoreStrings.positionEnd
-    - typings.materialUiCore.materialUiCoreStrings.disablePointerEvents
-    - typings.materialUiCore.materialUiCoreStrings.hiddenLabel
-    - typings.materialUiCore.materialUiCoreStrings.marginDense
-  */
-  trait InputAdornmentClassKey extends StObject
   object InputAdornmentClassKey {
     
-    inline def disablePointerEvents: typings.materialUiCore.materialUiCoreStrings.disablePointerEvents = "disablePointerEvents".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disablePointerEvents]
+    inline def disablePointerEvents: "disablePointerEvents" = "disablePointerEvents".asInstanceOf["disablePointerEvents"]
     
-    inline def filled: typings.materialUiCore.materialUiCoreStrings.filled = "filled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.filled]
+    inline def filled: "filled" = "filled".asInstanceOf["filled"]
     
-    inline def hiddenLabel: typings.materialUiCore.materialUiCoreStrings.hiddenLabel = "hiddenLabel".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.hiddenLabel]
+    inline def hiddenLabel: "hiddenLabel" = "hiddenLabel".asInstanceOf["hiddenLabel"]
     
-    inline def marginDense: typings.materialUiCore.materialUiCoreStrings.marginDense = "marginDense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.marginDense]
+    inline def marginDense: "marginDense" = "marginDense".asInstanceOf["marginDense"]
     
-    inline def positionEnd: typings.materialUiCore.materialUiCoreStrings.positionEnd = "positionEnd".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.positionEnd]
+    inline def positionEnd: "positionEnd" = "positionEnd".asInstanceOf["positionEnd"]
     
-    inline def positionStart: typings.materialUiCore.materialUiCoreStrings.positionStart = "positionStart".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.positionStart]
+    inline def positionStart: "positionStart" = "positionStart".asInstanceOf["positionStart"]
     
-    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    inline def root: "root" = "root".asInstanceOf["root"]
   }
+  type InputAdornmentClassKey = "root" | "filled" | "positionStart" | "positionEnd" | "disablePointerEvents" | "hiddenLabel" | "marginDense"
   
   type InputAdornmentProps[D /* <: ElementType[Any] */, P] = OverrideProps[InputAdornmentTypeMap[P, D], D]
   
@@ -80,8 +70,8 @@ object inputAdornmentInputAdornmentMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[InputAdornmentTypeMap[js.Object, div]]
+  type _To = OverridableComponent[InputAdornmentTypeMap[js.Object, "div"]]
   
   /* This means you don't have to write `default`, but can instead just say `inputAdornmentInputAdornmentMod.foo` */
-  override def _to: OverridableComponent[InputAdornmentTypeMap[js.Object, div]] = default
+  override def _to: OverridableComponent[InputAdornmentTypeMap[js.Object, "div"]] = default
 }

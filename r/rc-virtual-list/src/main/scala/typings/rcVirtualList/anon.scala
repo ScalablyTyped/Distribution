@@ -3,7 +3,6 @@ package typings.rcVirtualList
 import typings.node.timersMod.global.NodeJS.Timeout
 import typings.rcVirtualList.esListMod.ListRef
 import typings.rcVirtualList.esListMod.ScrollAlign
-import typings.rcVirtualList.esListMod.ScrollConfig
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -12,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Align
-    extends StObject
-       with ScrollConfig {
+  trait Align extends StObject {
     
     var align: js.UndefOr[ScrollAlign] = js.undefined
     
@@ -93,9 +90,7 @@ object anon {
     }
   }
   
-  trait Key
-    extends StObject
-       with ScrollConfig {
+  trait Key extends StObject {
     
     var align: js.UndefOr[ScrollAlign] = js.undefined
     

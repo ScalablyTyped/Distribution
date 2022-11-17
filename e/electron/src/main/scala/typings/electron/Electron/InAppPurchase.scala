@@ -1,6 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`transactions-updated`
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,8 @@ trait InAppPurchase
      with EventEmitter {
   
   @JSName("addListener")
-  def addListener_transactionsupdated(event: `transactions-updated`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("addListener_transactionsupdated")
+  def addListener(event: "transactions-updated", listener: js.Function): this.type = js.native
   
   /**
     * whether a user can make a payment.
@@ -43,10 +43,12 @@ trait InAppPurchase
   
   // Docs: https://electronjs.org/docs/api/in-app-purchase
   @JSName("on")
-  def on_transactionsupdated(event: `transactions-updated`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("on_transactionsupdated")
+  def on(event: "transactions-updated", listener: js.Function): this.type = js.native
   
   @JSName("once")
-  def once_transactionsupdated(event: `transactions-updated`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("once_transactionsupdated")
+  def once(event: "transactions-updated", listener: js.Function): this.type = js.native
   
   /**
     * Returns `true` if the product is valid and added to the payment queue.
@@ -58,7 +60,8 @@ trait InAppPurchase
   def purchaseProduct(productID: String, quantity: Double): js.Promise[Boolean] = js.native
   
   @JSName("removeListener")
-  def removeListener_transactionsupdated(event: `transactions-updated`, listener: js.Function): this.type = js.native
+  @scala.annotation.targetName("removeListener_transactionsupdated")
+  def removeListener(event: "transactions-updated", listener: js.Function): this.type = js.native
   
   /**
     * Restores finished transactions. This method can be called either to install

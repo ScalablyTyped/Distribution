@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "ExpressionBinding")
 @js.native
-open class ExpressionBinding protected ()
-  extends StObject
-     with TemplateBinding {
+open class ExpressionBinding protected () extends StObject {
   /**
     * @param sourceSpan entire span of the binding.
     * @param key binding name, like ngForOf, ngForTrackBy, ngIf, along with its

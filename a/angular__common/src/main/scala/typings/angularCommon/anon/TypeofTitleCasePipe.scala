@@ -1,8 +1,6 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.titlecase
 import typings.angularCommon.mod.TitleCasePipe
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
@@ -17,5 +15,5 @@ trait TypeofTitleCasePipe
   
   var ɵfac: ɵɵFactoryDeclaration[TitleCasePipe, scala.Nothing] = js.native
   
-  var ɵpipe: ɵɵPipeDeclaration[TitleCasePipe, titlecase, `true`] = js.native
+  var ɵpipe: ɵɵPipeDeclaration[TitleCasePipe, "titlecase", true] = js.native
 }

@@ -1,13 +1,10 @@
 package typings.jquery.anon
 
-import typings.jquery.JQuery._SpeedSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Easing
-  extends StObject
-     with _SpeedSettings[Any] {
+trait Easing extends StObject {
   
   /**
     * A string indicating which easing function to use for the transition.

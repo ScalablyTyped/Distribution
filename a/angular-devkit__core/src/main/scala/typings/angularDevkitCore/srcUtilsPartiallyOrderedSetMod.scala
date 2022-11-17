@@ -39,6 +39,6 @@ object srcUtilsPartiallyOrderedSetMod {
     def size_MPartiallyOrderedSet: Double = js.native
     
     @JSName(js.Symbol.toStringTag)
-    var toStringTag_PartiallyOrderedSet: js.Function0[typings.angularDevkitCore.angularDevkitCoreStrings.Set] = js.native
+    var toStringTag_PartiallyOrderedSet: js.Function0["Set"] = js.native
   }
 }

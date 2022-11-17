@@ -5,7 +5,6 @@ import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod
 import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod.BaseGestureConfig
 import typings.reactNativeGestureHandler.libTypescriptHandlersLongPressGestureHandlerMod.LongPressGestureConfig
 import typings.reactNativeGestureHandler.libTypescriptHandlersLongPressGestureHandlerMod.LongPressGestureHandlerEventPayload
-import typings.reactNativeGestureHandler.libTypescriptJestUtilsJestUtilsMod.AllGestures
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,9 +14,7 @@ object libTypescriptHandlersGesturesLongPressGestureMod {
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestures/longPressGesture", "LongPressGesture")
   @js.native
-  open class LongPressGesture ()
-    extends BaseGesture[LongPressGestureHandlerEventPayload]
-       with AllGestures {
+  open class LongPressGesture () extends BaseGesture[LongPressGestureHandlerEventPayload] {
     
     @JSName("config")
     var config_LongPressGesture: BaseGestureConfig & LongPressGestureConfig = js.native

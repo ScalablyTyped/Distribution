@@ -1,9 +1,8 @@
 package typings.chartJs.anon
 
-import typings.chartJs.chartJsStrings.radialLinear
-import typings.chartJs.mod.PolarAreaControllerChartOptions
-import typings.chartJs.mod.PolarAreaControllerDatasetOptions
-import typings.chartJs.mod.RadialParsedData
+import typings.chartJs.distChunksHelpersDotcoreMod.PolarAreaControllerChartOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.PolarAreaControllerDatasetOptions
+import typings.chartJs.distChunksHelpersDotcoreMod.RadialParsedData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait ChartOptionsDatasetOptions extends StObject {
   
   var parsedDataType: RadialParsedData
   
-  var scales: radialLinear
+  var scales: "radialLinear"
 }
 object ChartOptionsDatasetOptions {
   
@@ -42,6 +41,6 @@ object ChartOptionsDatasetOptions {
     
     inline def setParsedDataType(value: RadialParsedData): Self = StObject.set(x, "parsedDataType", value.asInstanceOf[js.Any])
     
-    inline def setScales(value: radialLinear): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+    inline def setScales(value: "radialLinear"): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
   }
 }

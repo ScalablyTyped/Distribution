@@ -1,8 +1,7 @@
 package typings.chartJs.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.chartJsBooleans.`false`
-import typings.chartJs.typesAdaptersMod.TimeUnit
+import typings.chartJs.distChunksHelpersDotcoreMod.TimeUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,13 +34,7 @@ trait DisplayFormats extends StObject {
   /**
     * If defined, dates will be rounded to the start of this unit. See Time Units below for the allowed units.
     */
-  var round: `false` | TimeUnit
-  
-  /**
-    * The number of units between grid lines.
-    * @default 1
-    */
-  var stepSize: Double
+  var round: false | TimeUnit
   
   /**
     * The format string to use for the tooltip.
@@ -52,7 +45,7 @@ trait DisplayFormats extends StObject {
     * If defined, will force the unit to be a certain type. See Time Units section below for details.
     * @default false
     */
-  var unit: `false` | TimeUnit
+  var unit: false | TimeUnit
 }
 object DisplayFormats {
   
@@ -61,12 +54,11 @@ object DisplayFormats {
     isoWeekday: Boolean | Double,
     minUnit: TimeUnit,
     parser: String | (js.Function1[/* v */ Any, Double]),
-    round: `false` | TimeUnit,
-    stepSize: Double,
+    round: false | TimeUnit,
     tooltipFormat: String,
-    unit: `false` | TimeUnit
+    unit: false | TimeUnit
   ): DisplayFormats = {
-    val __obj = js.Dynamic.literal(displayFormats = displayFormats.asInstanceOf[js.Any], isoWeekday = isoWeekday.asInstanceOf[js.Any], minUnit = minUnit.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], round = round.asInstanceOf[js.Any], stepSize = stepSize.asInstanceOf[js.Any], tooltipFormat = tooltipFormat.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(displayFormats = displayFormats.asInstanceOf[js.Any], isoWeekday = isoWeekday.asInstanceOf[js.Any], minUnit = minUnit.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], round = round.asInstanceOf[js.Any], tooltipFormat = tooltipFormat.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayFormats]
   }
   
@@ -82,12 +74,10 @@ object DisplayFormats {
     
     inline def setParserFunction1(value: /* v */ Any => Double): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
     
-    inline def setRound(value: `false` | TimeUnit): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
-    
-    inline def setStepSize(value: Double): Self = StObject.set(x, "stepSize", value.asInstanceOf[js.Any])
+    inline def setRound(value: false | TimeUnit): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
     inline def setTooltipFormat(value: String): Self = StObject.set(x, "tooltipFormat", value.asInstanceOf[js.Any])
     
-    inline def setUnit(value: `false` | TimeUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: false | TimeUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }
 }

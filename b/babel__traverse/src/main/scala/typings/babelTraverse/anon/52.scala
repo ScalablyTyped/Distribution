@@ -1,13 +1,12 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSTypeOperator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `52` extends StObject {
   
-  var `type`: TSTypeOperator
+  var `type`: "TSTypeOperator"
 }
 object `52` {
   
@@ -19,6 +18,6 @@ object `52` {
   
   extension [Self <: `52`](x: Self) {
     
-    inline def setType(value: TSTypeOperator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TSTypeOperator"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

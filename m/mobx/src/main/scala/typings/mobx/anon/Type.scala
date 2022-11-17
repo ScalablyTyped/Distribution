@@ -1,18 +1,14 @@
 package typings.mobx.anon
 
-import typings.mobx.distCoreSpyMod._PureSpyEvent
-import typings.mobx.mobxStrings.reaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Type
-  extends StObject
-     with _PureSpyEvent {
+trait Type extends StObject {
   
   var name: String
   
-  var `type`: reaction
+  var `type`: "reaction"
 }
 object Type {
   
@@ -26,6 +22,6 @@ object Type {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setType(value: reaction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "reaction"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

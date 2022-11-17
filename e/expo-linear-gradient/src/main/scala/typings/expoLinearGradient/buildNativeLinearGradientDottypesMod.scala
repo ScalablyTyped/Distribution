@@ -1,14 +1,5 @@
 package typings.expoLinearGradient
 
-import typings.expoLinearGradient.expoLinearGradientStrings.`box-none`
-import typings.expoLinearGradient.expoLinearGradientStrings.`box-only`
-import typings.expoLinearGradient.expoLinearGradientStrings.`no-hide-descendants`
-import typings.expoLinearGradient.expoLinearGradientStrings.assertive
-import typings.expoLinearGradient.expoLinearGradientStrings.auto
-import typings.expoLinearGradient.expoLinearGradientStrings.no
-import typings.expoLinearGradient.expoLinearGradientStrings.none
-import typings.expoLinearGradient.expoLinearGradientStrings.polite
-import typings.expoLinearGradient.expoLinearGradientStrings.yes
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
@@ -82,7 +73,7 @@ object buildNativeLinearGradientDottypesMod {
       * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
       * @platform android
       */
-    var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+    var accessibilityLiveRegion: js.UndefOr["none" | "polite" | "assertive"] = js.undefined
     
     /**
       * Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on Android the type of element that is focused on.
@@ -160,7 +151,7 @@ object buildNativeLinearGradientDottypesMod {
       *      'no' - The view is not important for accessibility.
       *      'no-hide-descendants' - The view is not important for accessibility, nor are any of its descendant views.
       */
-    var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+    var importantForAccessibility: js.UndefOr["auto" | "yes" | "no" | "no-hide-descendants"] = js.undefined
     
     /**
       * *(Apple TV only)* When set to true, this view will be focusable
@@ -368,7 +359,7 @@ object buildNativeLinearGradientDottypesMod {
       * But since pointerEvents does not affect layout/appearance, and we are already deviating from the spec by adding additional modes,
       * we opt to not include pointerEvents on style. On some platforms, we would need to implement it as a className anyways. Using style or not is an implementation detail of the platform.
       */
-    var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
+    var pointerEvents: js.UndefOr["box-none" | "none" | "box-only" | "auto"] = js.undefined
     
     /**
       *
@@ -484,7 +475,7 @@ object buildNativeLinearGradientDottypesMod {
       
       inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
       
-      inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
+      inline def setAccessibilityLiveRegion(value: "none" | "polite" | "assertive"): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
       
       inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
       
@@ -538,7 +529,7 @@ object buildNativeLinearGradientDottypesMod {
       
       inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
       
-      inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
+      inline def setImportantForAccessibility(value: "auto" | "yes" | "no" | "no-hide-descendants"): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
       
       inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
       
@@ -698,7 +689,7 @@ object buildNativeLinearGradientDottypesMod {
       
       inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
       
-      inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+      inline def setPointerEvents(value: "box-none" | "none" | "box-only" | "auto"): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
       
       inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
       

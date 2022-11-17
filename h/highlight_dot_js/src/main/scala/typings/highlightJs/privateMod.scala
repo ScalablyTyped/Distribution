@@ -59,18 +59,13 @@ object privateMod {
   
   type KeywordDict = Record[String, KeywordData]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.highlightJs.highlightJsStrings.begin
-    - typings.highlightJs.highlightJsStrings.end
-    - typings.highlightJs.highlightJsStrings.illegal
-  */
-  trait MatchType extends StObject
   object MatchType {
     
-    inline def begin: typings.highlightJs.highlightJsStrings.begin = "begin".asInstanceOf[typings.highlightJs.highlightJsStrings.begin]
+    inline def begin: "begin" = "begin".asInstanceOf["begin"]
     
-    inline def end: typings.highlightJs.highlightJsStrings.end = "end".asInstanceOf[typings.highlightJs.highlightJsStrings.end]
+    inline def end: "end" = "end".asInstanceOf["end"]
     
-    inline def illegal: typings.highlightJs.highlightJsStrings.illegal = "illegal".asInstanceOf[typings.highlightJs.highlightJsStrings.illegal]
+    inline def illegal: "illegal" = "illegal".asInstanceOf["illegal"]
   }
+  type MatchType = "begin" | "end" | "illegal"
 }

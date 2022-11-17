@@ -1,20 +1,17 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.TupleExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TupleExpression_
   extends StObject
-     with BaseNode
-     with Expression
-     with Node {
+     with BaseNode {
   
   var elements: js.Array[Expression | SpreadElement_]
   
   @JSName("type")
-  var type_TupleExpression_ : TupleExpression
+  var type_TupleExpression_ : "TupleExpression"
 }
 object TupleExpression_ {
   
@@ -30,6 +27,6 @@ object TupleExpression_ {
     
     inline def setElementsVarargs(value: (Expression | SpreadElement_)*): Self = StObject.set(x, "elements", js.Array(value*))
     
-    inline def setType(value: TupleExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "TupleExpression"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HitSlop
-  extends StObject
-     with _ConfigArgs {
+trait HitSlop extends StObject {
   
   var bottom: js.UndefOr[Double] = js.undefined
   

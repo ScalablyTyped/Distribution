@@ -1,13 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliStrings.Exclamationmark
-import typings.angularCompilerCli.angularCompilerCliStrings.Plussign
-import typings.angularCompilerCli.angularCompilerCliStrings.Tilde
-import typings.angularCompilerCli.angularCompilerCliStrings.`-_`
-import typings.angularCompilerCli.angularCompilerCliStrings.`throw`
-import typings.angularCompilerCli.angularCompilerCliStrings.delete
-import typings.angularCompilerCli.angularCompilerCliStrings.typeof
-import typings.angularCompilerCli.angularCompilerCliStrings.void
 import typings.angularCompilerCli.anon.FnCall
 import typings.angularCompilerCli.anon.FnCallArgument
 import typings.angularCompilerCli.anon.FnCallBodyDirectives
@@ -181,12 +173,13 @@ object linkerBabelSrcAstBabelAstFactoryMod {
     @JSName("createThrowStatement")
     var createThrowStatement_Original: js.Function1[/* argument */ Expression, ThrowStatement_] = js.native
     
+    @JSName("createUnaryExpression")
+    @scala.annotation.targetName("createUnaryExpression_void_throw_delete_____typeof")
+    def createUnaryExpression(operator: "void" | "throw" | "delete" | "!" | "+" | "-" | "~" | "typeof", argument: Expression): UnaryExpression_ = js.native
+    @JSName("createUnaryExpression")
+    @scala.annotation.targetName("createUnaryExpression_void_throw_delete_____typeof")
     def createUnaryExpression(
-      operator: void | `throw` | delete | Exclamationmark | Plussign | `-_` | Tilde | typeof,
-      argument: Expression
-    ): UnaryExpression_ = js.native
-    def createUnaryExpression(
-      operator: void | `throw` | delete | Exclamationmark | Plussign | `-_` | Tilde | typeof,
+      operator: "void" | "throw" | "delete" | "!" | "+" | "-" | "~" | "typeof",
       argument: Expression,
       prefix: Boolean
     ): UnaryExpression_ = js.native

@@ -4,47 +4,31 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.reactNative.reactNativeStrings.done
-  - typings.reactNative.reactNativeStrings.go
-  - typings.reactNative.reactNativeStrings.next
-  - typings.reactNative.reactNativeStrings.search
-  - typings.reactNative.reactNativeStrings.send
-  - typings.reactNative.reactNativeStrings.none
-  - typings.reactNative.reactNativeStrings.previous
-  - typings.reactNative.reactNativeStrings.default
-  - typings.reactNative.reactNativeStrings.google
-  - typings.reactNative.reactNativeStrings.join
-  - typings.reactNative.reactNativeStrings.route
-  - typings.reactNative.reactNativeStrings.yahoo
-  - typings.reactNative.reactNativeStrings.`emergency-call`
-*/
-trait ReturnKeyTypeOptions extends StObject
 object ReturnKeyTypeOptions {
   
-  inline def default: typings.reactNative.reactNativeStrings.default = "default".asInstanceOf[typings.reactNative.reactNativeStrings.default]
+  inline def default: "default" = "default".asInstanceOf["default"]
   
-  inline def done: typings.reactNative.reactNativeStrings.done = "done".asInstanceOf[typings.reactNative.reactNativeStrings.done]
+  inline def done: "done" = "done".asInstanceOf["done"]
   
-  inline def `emergency-call`: typings.reactNative.reactNativeStrings.`emergency-call` = "emergency-call".asInstanceOf[typings.reactNative.reactNativeStrings.`emergency-call`]
+  inline def `emergency-call`: "emergency-call" = "emergency-call".asInstanceOf["emergency-call"]
   
-  inline def go: typings.reactNative.reactNativeStrings.go = "go".asInstanceOf[typings.reactNative.reactNativeStrings.go]
+  inline def go: "go" = "go".asInstanceOf["go"]
   
-  inline def google: typings.reactNative.reactNativeStrings.google = "google".asInstanceOf[typings.reactNative.reactNativeStrings.google]
+  inline def google: "google" = "google".asInstanceOf["google"]
   
-  inline def join: typings.reactNative.reactNativeStrings.join = "join".asInstanceOf[typings.reactNative.reactNativeStrings.join]
+  inline def join: "join" = "join".asInstanceOf["join"]
   
-  inline def next: typings.reactNative.reactNativeStrings.next = "next".asInstanceOf[typings.reactNative.reactNativeStrings.next]
+  inline def next: "next" = "next".asInstanceOf["next"]
   
-  inline def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
+  inline def none: "none" = "none".asInstanceOf["none"]
   
-  inline def previous: typings.reactNative.reactNativeStrings.previous = "previous".asInstanceOf[typings.reactNative.reactNativeStrings.previous]
+  inline def previous: "previous" = "previous".asInstanceOf["previous"]
   
-  inline def route: typings.reactNative.reactNativeStrings.route = "route".asInstanceOf[typings.reactNative.reactNativeStrings.route]
+  inline def route: "route" = "route".asInstanceOf["route"]
   
-  inline def search: typings.reactNative.reactNativeStrings.search = "search".asInstanceOf[typings.reactNative.reactNativeStrings.search]
+  inline def search: "search" = "search".asInstanceOf["search"]
   
-  inline def send: typings.reactNative.reactNativeStrings.send = "send".asInstanceOf[typings.reactNative.reactNativeStrings.send]
+  inline def send: "send" = "send".asInstanceOf["send"]
   
-  inline def yahoo: typings.reactNative.reactNativeStrings.yahoo = "yahoo".asInstanceOf[typings.reactNative.reactNativeStrings.yahoo]
+  inline def yahoo: "yahoo" = "yahoo".asInstanceOf["yahoo"]
 }

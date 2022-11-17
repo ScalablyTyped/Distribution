@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JSDocText
   extends StObject
-     with Node
-     with JSDocComment {
+     with Node {
   
   @JSName("kind")
   val kind_JSDocText: typings.typescript.mod.SyntaxKind.JSDocText = js.native

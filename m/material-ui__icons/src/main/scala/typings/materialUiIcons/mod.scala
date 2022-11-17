@@ -2,7 +2,6 @@ package typings.materialUiIcons
 
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.svgIconSvgIconMod.SvgIconTypeMap
-import typings.materialUiIcons.materialUiIconsStrings.svg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22229,5 +22228,5 @@ object mod {
   @js.native
   val ZoomOutTwoTone: SvgIconComponent = js.native
   
-  type SvgIconComponent = OverridableComponent[SvgIconTypeMap[js.Object, svg]]
+  type SvgIconComponent = OverridableComponent[SvgIconTypeMap[js.Object, "svg"]]
 }

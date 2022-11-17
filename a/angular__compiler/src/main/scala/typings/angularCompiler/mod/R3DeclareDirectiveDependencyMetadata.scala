@@ -1,14 +1,10 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.angularCompilerStrings.component
-import typings.angularCompiler.angularCompilerStrings.directive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait R3DeclareDirectiveDependencyMetadata
-  extends StObject
-     with R3DeclareTemplateDependencyMetadata {
+trait R3DeclareDirectiveDependencyMetadata extends StObject {
   
   /**
     * Names by which this directive exports itself for references.
@@ -20,7 +16,7 @@ trait R3DeclareDirectiveDependencyMetadata
     */
   var inputs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var kind: directive | component
+  var kind: "directive" | "component"
   
   /**
     * Event names of the directive's outputs.
@@ -40,7 +36,7 @@ trait R3DeclareDirectiveDependencyMetadata
 }
 object R3DeclareDirectiveDependencyMetadata {
   
-  inline def apply(kind: directive | component, selector: String, `type`: Expression | js.Function0[Expression]): R3DeclareDirectiveDependencyMetadata = {
+  inline def apply(kind: "directive" | "component", selector: String, `type`: Expression | js.Function0[Expression]): R3DeclareDirectiveDependencyMetadata = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3DeclareDirectiveDependencyMetadata]
@@ -60,7 +56,7 @@ object R3DeclareDirectiveDependencyMetadata {
     
     inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value*))
     
-    inline def setKind(value: directive | component): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: "directive" | "component"): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setOutputs(value: js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     

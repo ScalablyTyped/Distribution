@@ -5,6 +5,8 @@ import typings.remixRunRouter.anon.FormAction
 import typings.remixRunRouter.anon.FormData
 import typings.remixRunRouter.anon.FormEncType
 import typings.remixRunRouter.anon.FormMethod
+import typings.remixRunRouter.anon.OmitLinkNavigateOptionsre
+import typings.remixRunRouter.anon.OmitSubmissionNavigateOpt
 import typings.remixRunRouter.distHistoryMod.Action
 import typings.remixRunRouter.distHistoryMod.History
 import typings.remixRunRouter.distHistoryMod.Location
@@ -15,8 +17,6 @@ import typings.remixRunRouter.distUtilsMod.AgnosticRouteObject
 import typings.remixRunRouter.distUtilsMod.DeferredData
 import typings.remixRunRouter.distUtilsMod.Params
 import typings.remixRunRouter.distUtilsMod.RouteData
-import typings.remixRunRouter.remixRunRouterBooleans.`false`
-import typings.remixRunRouter.remixRunRouterStrings.idle
 import typings.std.AbortController
 import typings.std.Headers
 import typings.std.Map
@@ -67,8 +67,8 @@ object distRouterMod {
     
     @JSImport("@remix-run/router/dist/router", "IDLE_FETCHER.state")
     @js.native
-    def state: idle = js.native
-    inline def state_=(x: idle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("state")(x.asInstanceOf[js.Any])
+    def state: "idle" = js.native
+    inline def state_=(x: "idle"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("state")(x.asInstanceOf[js.Any])
   }
   
   object IDLE_NAVIGATION {
@@ -104,8 +104,8 @@ object distRouterMod {
     
     @JSImport("@remix-run/router/dist/router", "IDLE_NAVIGATION.state")
     @js.native
-    def state: idle = js.native
-    inline def state_=(x: idle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("state")(x.asInstanceOf[js.Any])
+    def state: "idle" = js.native
+    inline def state_=(x: "idle"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("state")(x.asInstanceOf[js.Any])
   }
   
   inline def createRouter(init: RouterInit): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createRouter")(init.asInstanceOf[js.Any]).asInstanceOf[Router]
@@ -115,15 +115,7 @@ object distRouterMod {
   inline def unstableCreateStaticHandler(routes: js.Array[AgnosticRouteObject]): StaticHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createStaticHandler")(routes.asInstanceOf[js.Any]).asInstanceOf[StaticHandler]
   
   /* Inlined @remix-run/router.@remix-run/router/dist/router.FetcherStates<TData>[keyof @remix-run/router.@remix-run/router/dist/router.FetcherStates<TData>] */
-  /* Rewritten from type alias, can be one of: 
-    - typings.remixRunRouter.remixRunRouterStrings.formAction
-    - typings.remixRunRouter.remixRunRouterStrings.data
-    - typings.remixRunRouter.remixRunRouterStrings.formMethod
-    - typings.remixRunRouter.remixRunRouterStrings.formEncType
-    - typings.remixRunRouter.remixRunRouterStrings.formData
-    - typings.remixRunRouter.remixRunRouterStrings.state
-  */
-  trait Fetcher[TData] extends StObject
+  type Fetcher[TData] = "formAction" | "data" | "formMethod" | "formEncType" | "formData" | "state"
   
   /**
     * Potential states for fetchers
@@ -196,9 +188,7 @@ object distRouterMod {
   /**
     * Options for a navigate() call for a Link navigation
     */
-  trait LinkNavigateOptions
-    extends StObject
-       with RouterNavigateOptions {
+  trait LinkNavigateOptions extends StObject {
     
     var preventScrollReset: js.UndefOr[Boolean] = js.undefined
     
@@ -229,30 +219,22 @@ object distRouterMod {
     }
   }
   
-  /* Inlined @remix-run/router.@remix-run/router/dist/router.NavigationStates[keyof @remix-run/router.@remix-run/router/dist/router.NavigationStates] */
-  /* Rewritten from type alias, can be one of: 
-    - typings.remixRunRouter.remixRunRouterStrings.formAction
-    - typings.remixRunRouter.remixRunRouterStrings.location
-    - typings.remixRunRouter.remixRunRouterStrings.formMethod
-    - typings.remixRunRouter.remixRunRouterStrings.formEncType
-    - typings.remixRunRouter.remixRunRouterStrings.formData
-    - typings.remixRunRouter.remixRunRouterStrings.state
-  */
-  trait Navigation extends StObject
   object Navigation {
     
-    inline def formAction: typings.remixRunRouter.remixRunRouterStrings.formAction = "formAction".asInstanceOf[typings.remixRunRouter.remixRunRouterStrings.formAction]
+    inline def formAction: "formAction" = "formAction".asInstanceOf["formAction"]
     
-    inline def formData: typings.remixRunRouter.remixRunRouterStrings.formData = "formData".asInstanceOf[typings.remixRunRouter.remixRunRouterStrings.formData]
+    inline def formData: "formData" = "formData".asInstanceOf["formData"]
     
-    inline def formEncType: typings.remixRunRouter.remixRunRouterStrings.formEncType = "formEncType".asInstanceOf[typings.remixRunRouter.remixRunRouterStrings.formEncType]
+    inline def formEncType: "formEncType" = "formEncType".asInstanceOf["formEncType"]
     
-    inline def formMethod: typings.remixRunRouter.remixRunRouterStrings.formMethod = "formMethod".asInstanceOf[typings.remixRunRouter.remixRunRouterStrings.formMethod]
+    inline def formMethod: "formMethod" = "formMethod".asInstanceOf["formMethod"]
     
-    inline def location: typings.remixRunRouter.remixRunRouterStrings.location = "location".asInstanceOf[typings.remixRunRouter.remixRunRouterStrings.location]
+    inline def location: "location" = "location".asInstanceOf["location"]
     
-    inline def state: typings.remixRunRouter.remixRunRouterStrings.state = "state".asInstanceOf[typings.remixRunRouter.remixRunRouterStrings.state]
+    inline def state: "state" = "state".asInstanceOf["state"]
   }
+  /* Inlined @remix-run/router.@remix-run/router/dist/router.NavigationStates[keyof @remix-run/router.@remix-run/router/dist/router.NavigationStates] */
+  type Navigation = "formAction" | "location" | "formMethod" | "formEncType" | "formData" | "state"
   
   trait NavigationStates extends StObject {
     
@@ -279,17 +261,13 @@ object distRouterMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.remixRunRouter.remixRunRouterStrings.idle
-    - typings.remixRunRouter.remixRunRouterStrings.loading
-  */
-  trait RevalidationState extends StObject
   object RevalidationState {
     
-    inline def idle: typings.remixRunRouter.remixRunRouterStrings.idle = "idle".asInstanceOf[typings.remixRunRouter.remixRunRouterStrings.idle]
+    inline def idle: "idle" = "idle".asInstanceOf["idle"]
     
-    inline def loading: typings.remixRunRouter.remixRunRouterStrings.loading = "loading".asInstanceOf[typings.remixRunRouter.remixRunRouterStrings.loading]
+    inline def loading: "loading" = "loading".asInstanceOf["loading"]
   }
+  type RevalidationState = "idle" | "loading"
   
   @js.native
   trait Router extends StObject {
@@ -449,23 +427,7 @@ object distRouterMod {
     def subscribe(fn: RouterSubscriber): js.Function0[Unit] = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.remixRunRouter.anon.OmitLinkNavigateOptionsre
-    - typings.remixRunRouter.anon.OmitSubmissionNavigateOpt
-  */
-  trait RouterFetchOptions extends StObject
-  object RouterFetchOptions {
-    
-    inline def OmitLinkNavigateOptionsre(): typings.remixRunRouter.anon.OmitLinkNavigateOptionsre = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.remixRunRouter.anon.OmitLinkNavigateOptionsre]
-    }
-    
-    inline def OmitSubmissionNavigateOpt(formData: typings.std.FormData): typings.remixRunRouter.anon.OmitSubmissionNavigateOpt = {
-      val __obj = js.Dynamic.literal(formData = formData.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.remixRunRouter.anon.OmitSubmissionNavigateOpt]
-    }
-  }
+  type RouterFetchOptions = OmitLinkNavigateOptionsre | OmitSubmissionNavigateOpt
   
   trait RouterInit extends StObject {
     
@@ -502,23 +464,7 @@ object distRouterMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.remixRunRouter.distRouterMod.LinkNavigateOptions
-    - typings.remixRunRouter.distRouterMod.SubmissionNavigateOptions
-  */
-  trait RouterNavigateOptions extends StObject
-  object RouterNavigateOptions {
-    
-    inline def LinkNavigateOptions(): typings.remixRunRouter.distRouterMod.LinkNavigateOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.remixRunRouter.distRouterMod.LinkNavigateOptions]
-    }
-    
-    inline def SubmissionNavigateOptions(formData: typings.std.FormData): typings.remixRunRouter.distRouterMod.SubmissionNavigateOptions = {
-      val __obj = js.Dynamic.literal(formData = formData.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.remixRunRouter.distRouterMod.SubmissionNavigateOptions]
-    }
-  }
+  type RouterNavigateOptions = LinkNavigateOptions | SubmissionNavigateOptions
   
   trait RouterState extends StObject {
     
@@ -579,7 +525,7 @@ object distRouterMod {
       *  - false -> do not restore scroll at all (used during submissions)
       *  - null -> don't have a saved position, scroll to hash or top of page
       */
-    var restoreScrollPosition: Double | `false` | Null
+    var restoreScrollPosition: Double | false | Null
     
     /**
       * Tracks any in-progress revalidations
@@ -631,7 +577,7 @@ object distRouterMod {
       
       inline def setPreventScrollReset(value: Boolean): Self = StObject.set(x, "preventScrollReset", value.asInstanceOf[js.Any])
       
-      inline def setRestoreScrollPosition(value: Double | `false`): Self = StObject.set(x, "restoreScrollPosition", value.asInstanceOf[js.Any])
+      inline def setRestoreScrollPosition(value: Double | false): Self = StObject.set(x, "restoreScrollPosition", value.asInstanceOf[js.Any])
       
       inline def setRestoreScrollPositionNull: Self = StObject.set(x, "restoreScrollPosition", null)
       
@@ -721,9 +667,7 @@ object distRouterMod {
   /**
     * Options for a navigate() call for a Form navigation
     */
-  trait SubmissionNavigateOptions
-    extends StObject
-       with RouterNavigateOptions {
+  trait SubmissionNavigateOptions extends StObject {
     
     var formData: typings.std.FormData
     

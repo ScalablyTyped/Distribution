@@ -1,19 +1,15 @@
 package typings.babelTypes.libMod
 
-import typings.babelTypes.babelTypesStrings.ExistsTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ExistsTypeAnnotation_
   extends StObject
-     with BaseNode
-     with Flow
-     with FlowType
-     with Node {
+     with BaseNode {
   
   @JSName("type")
-  var type_ExistsTypeAnnotation_ : ExistsTypeAnnotation
+  var type_ExistsTypeAnnotation_ : "ExistsTypeAnnotation"
 }
 object ExistsTypeAnnotation_ {
   
@@ -25,6 +21,6 @@ object ExistsTypeAnnotation_ {
   
   extension [Self <: ExistsTypeAnnotation_](x: Self) {
     
-    inline def setType(value: ExistsTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ExistsTypeAnnotation"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

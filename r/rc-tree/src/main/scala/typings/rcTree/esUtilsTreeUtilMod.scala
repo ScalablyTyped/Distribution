@@ -14,7 +14,6 @@ import typings.rcTree.esInterfaceMod.FlattenNode
 import typings.rcTree.esInterfaceMod.GetKey
 import typings.rcTree.esInterfaceMod.Key
 import typings.rcTree.esTreeNodeMod.TreeNodeProps
-import typings.rcTree.rcTreeBooleans.`true`
 import typings.react.mod.ReactNode
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -49,9 +48,9 @@ object esUtilsTreeUtilMod {
   inline def fillFieldNames(): RequiredFieldNames = ^.asInstanceOf[js.Dynamic].applyDynamic("fillFieldNames")().asInstanceOf[RequiredFieldNames]
   inline def fillFieldNames(fieldNames: FieldNames): RequiredFieldNames = ^.asInstanceOf[js.Dynamic].applyDynamic("fillFieldNames")(fieldNames.asInstanceOf[js.Any]).asInstanceOf[RequiredFieldNames]
   
+  @scala.annotation.targetName("flattenTreeData_true")
+  inline def flattenTreeData[TreeDataType /* <: BasicDataNode */](treeNodeList: js.Array[TreeDataType], expandedKeys: true, fieldNames: FieldNames): js.Array[FlattenNode[TreeDataType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any], fieldNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode[TreeDataType]]]
   inline def flattenTreeData[TreeDataType /* <: BasicDataNode */](treeNodeList: js.Array[TreeDataType], expandedKeys: js.Array[Key], fieldNames: FieldNames): js.Array[FlattenNode[TreeDataType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any], fieldNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode[TreeDataType]]]
-  
-  inline def flattenTreeData_true[TreeDataType /* <: BasicDataNode */](treeNodeList: js.Array[TreeDataType], expandedKeys: `true`, fieldNames: FieldNames): js.Array[FlattenNode[TreeDataType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any], fieldNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode[TreeDataType]]]
   
   inline def getKey(key: Key, pos: String): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(key.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Key]
   

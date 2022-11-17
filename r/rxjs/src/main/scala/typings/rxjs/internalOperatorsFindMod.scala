@@ -4,8 +4,6 @@ import typings.rxjs.distTypesInternalObservableMod.Observable
 import typings.rxjs.distTypesInternalSubscriberMod.Subscriber
 import typings.rxjs.distTypesInternalTypesMod.OperatorFunction
 import typings.rxjs.distTypesInternalTypesMod.TruthyTypesOf
-import typings.rxjs.rxjsStrings.index
-import typings.rxjs.rxjsStrings.value
 import typings.std.BooleanConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,10 +16,11 @@ object internalOperatorsFindMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @scala.annotation.targetName("createFind_value_index")
   inline def createFind[T](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
     thisArg: Any,
-    emit: value | index
+    emit: "value" | "index"
   ): js.Function2[/* source */ Observable[T], /* subscriber */ Subscriber[Any], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFind")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], emit.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* source */ Observable[T], /* subscriber */ Subscriber[Any], Unit]]
   
   inline def find[T](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, js.UndefOr[T]]]

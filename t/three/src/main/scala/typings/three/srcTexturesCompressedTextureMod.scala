@@ -9,7 +9,6 @@ import typings.three.srcConstantsMod.TextureEncoding
 import typings.three.srcConstantsMod.TextureFilter
 import typings.three.srcConstantsMod.Wrapping
 import typings.three.srcTexturesTextureMod.Texture
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +49,7 @@ object srcTexturesCompressedTextureMod {
     
     def image_=(value: Width): Unit = js.native
     
-    val isCompressedTexture: `true` = js.native
+    val isCompressedTexture: true = js.native
     
     @JSName("mipmaps")
     var mipmaps_CompressedTexture: js.Array[ImageData] = js.native

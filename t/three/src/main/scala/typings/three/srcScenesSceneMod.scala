@@ -6,7 +6,6 @@ import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcMathColorMod.Color
 import typings.three.srcScenesFogMod.FogBase
 import typings.three.srcTexturesTextureMod.Texture
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +34,7 @@ object srcScenesSceneMod {
       */
     var fog: FogBase | Null = js.native
     
-    val isScene: `true` = js.native
+    val isScene: true = js.native
     
     /**
       * If not null, it will force everything in the scene to be rendered with that material. Default is null.
@@ -46,6 +45,6 @@ object srcScenesSceneMod {
     def toJSON(meta: Any): Any = js.native
     
     @JSName("type")
-    var type_Scene: typings.three.threeStrings.Scene = js.native
+    var type_Scene: "Scene" = js.native
   }
 }

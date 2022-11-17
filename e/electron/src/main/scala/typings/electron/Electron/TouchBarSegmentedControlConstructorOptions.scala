@@ -1,16 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`round-rect`
-import typings.electron.electronStrings.`small-square`
-import typings.electron.electronStrings.`textured-rounded`
-import typings.electron.electronStrings.`textured-square`
-import typings.electron.electronStrings.automatic
-import typings.electron.electronStrings.buttons
-import typings.electron.electronStrings.capsule
-import typings.electron.electronStrings.multiple
-import typings.electron.electronStrings.rounded
-import typings.electron.electronStrings.separated
-import typings.electron.electronStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,13 +14,13 @@ trait TouchBarSegmentedControlConstructorOptions extends StObject {
   /**
     * The selection mode of the control:
     */
-  var mode: js.UndefOr[single | multiple | buttons] = js.undefined
+  var mode: js.UndefOr["single" | "multiple" | "buttons"] = js.undefined
   
   /**
     * Style of the segments:
     */
   var segmentStyle: js.UndefOr[
-    automatic | rounded | `textured-rounded` | `round-rect` | `textured-square` | capsule | `small-square` | separated
+    "automatic" | "rounded" | "textured-rounded" | "round-rect" | "textured-square" | "capsule" | "small-square" | "separated"
   ] = js.undefined
   
   /**
@@ -58,12 +47,12 @@ object TouchBarSegmentedControlConstructorOptions {
     
     inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    inline def setMode(value: single | multiple | buttons): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: "single" | "multiple" | "buttons"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     inline def setSegmentStyle(
-      value: automatic | rounded | `textured-rounded` | `round-rect` | `textured-square` | capsule | `small-square` | separated
+      value: "automatic" | "rounded" | "textured-rounded" | "round-rect" | "textured-square" | "capsule" | "small-square" | "separated"
     ): Self = StObject.set(x, "segmentStyle", value.asInstanceOf[js.Any])
     
     inline def setSegmentStyleUndefined: Self = StObject.set(x, "segmentStyle", js.undefined)

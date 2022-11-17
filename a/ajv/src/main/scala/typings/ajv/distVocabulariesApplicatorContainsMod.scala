@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.contains
 import typings.ajv.anon.MaxContains
 import typings.ajv.distTypesMod.AnySchema
 import typings.ajv.distTypesMod.CodeKeywordDefinition
@@ -16,7 +15,7 @@ object distVocabulariesApplicatorContainsMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type ContainsError = ErrorObject[contains, MaxContains, AnySchema]
+  type ContainsError = ErrorObject["contains", MaxContains, AnySchema]
   
   type _To = CodeKeywordDefinition
   

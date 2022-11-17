@@ -3,8 +3,6 @@ package typings.rcSlider
 import org.scalablytyped.runtime.Shortcut
 import typings.rcSlider.libHandlesHandleMod.RenderProps
 import typings.rcSlider.libInterfaceMod.OnStartMove
-import typings.rcSlider.rcSliderStrings.max
-import typings.rcSlider.rcSliderStrings.min
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.ForwardRefExoticComponent
@@ -33,7 +31,9 @@ object libHandlesMod extends Shortcut {
     
     var onFocus: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement, Element], Unit]] = js.native
     
-    def onOffsetChange(value: min | max, valueIndex: Double): Unit = js.native
+    @JSName("onOffsetChange")
+    @scala.annotation.targetName("onOffsetChange_min_max")
+    def onOffsetChange(value: "min" | "max", valueIndex: Double): Unit = js.native
     def onOffsetChange(value: Double, valueIndex: Double): Unit = js.native
     
     var onStartMove: OnStartMove = js.native

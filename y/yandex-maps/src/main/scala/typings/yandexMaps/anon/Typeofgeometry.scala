@@ -6,8 +6,6 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.yandexMaps.mod.geometry.LineString
 import typings.yandexMaps.mod.geometry.Point
 import typings.yandexMaps.mod.geometry.Polygon
-import typings.yandexMaps.yandexMapsStrings.evenOdd
-import typings.yandexMaps.yandexMapsStrings.nonZero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +25,7 @@ trait Typeofgeometry extends StObject {
   
   var Polygon: (Instantiable3[
     /* coordinates */ js.UndefOr[js.Array[js.Array[js.Array[Double]]]], 
-    /* fillRule */ js.UndefOr[evenOdd | nonZero], 
+    /* fillRule */ js.UndefOr["evenOdd" | "nonZero"], 
     /* options */ js.UndefOr[js.Object], 
     typings.yandexMaps.mod.geometry.Polygon
   ]) & TypeofPolygonFromEncodedCoordinates
@@ -47,7 +45,7 @@ object Typeofgeometry {
     Point: Instantiable1[/* coordinates */ js.UndefOr[js.Array[Double] | Null], Point],
     Polygon: (Instantiable3[
       /* coordinates */ js.UndefOr[js.Array[js.Array[js.Array[Double]]]], 
-      /* fillRule */ js.UndefOr[evenOdd | nonZero], 
+      /* fillRule */ js.UndefOr["evenOdd" | "nonZero"], 
       /* options */ js.UndefOr[js.Object], 
       Polygon
     ]) & TypeofPolygonFromEncodedCoordinates,
@@ -77,7 +75,7 @@ object Typeofgeometry {
     inline def setPolygon(
       value: (Instantiable3[
           /* coordinates */ js.UndefOr[js.Array[js.Array[js.Array[Double]]]], 
-          /* fillRule */ js.UndefOr[evenOdd | nonZero], 
+          /* fillRule */ js.UndefOr["evenOdd" | "nonZero"], 
           /* options */ js.UndefOr[js.Object], 
           Polygon
         ]) & TypeofPolygonFromEncodedCoordinates

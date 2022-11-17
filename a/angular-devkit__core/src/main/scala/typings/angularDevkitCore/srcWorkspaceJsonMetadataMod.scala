@@ -1,10 +1,5 @@
 package typings.angularDevkitCore
 
-import typings.angularDevkitCore.angularDevkitCoreStrings.json
-import typings.angularDevkitCore.angularDevkitCoreStrings.project
-import typings.angularDevkitCore.angularDevkitCoreStrings.projectcollection
-import typings.angularDevkitCore.angularDevkitCoreStrings.target
-import typings.angularDevkitCore.angularDevkitCoreStrings.targetcollection
 import typings.angularDevkitCore.srcJsonUtilsMod.JsonValue
 import typings.angularDevkitCore.srcWorkspaceDefinitionsMod.ProjectDefinition
 import typings.angularDevkitCore.srcWorkspaceDefinitionsMod.TargetDefinition
@@ -28,37 +23,47 @@ object srcWorkspaceJsonMetadataMod {
       jsonPath: js.Array[String],
       value: js.Iterable[js.Tuple2[String, ProjectDefinition | TargetDefinition]]
     ): Unit = js.native
-    def addChange(jsonPath: js.Array[String], value: JsonValue): Unit = js.native
-    def addChange(jsonPath: js.Array[String], value: ProjectDefinition): Unit = js.native
-    def addChange(jsonPath: js.Array[String], value: TargetDefinition): Unit = js.native
     @JSName("addChange")
-    def addChange_json(jsonPath: js.Array[String], value: Unit, `type`: json): Unit = js.native
-    @JSName("addChange")
-    def addChange_json(jsonPath: js.Array[String], value: JsonValue, `type`: json): Unit = js.native
-    @JSName("addChange")
-    def addChange_project(jsonPath: js.Array[String], value: Unit, `type`: project): Unit = js.native
-    @JSName("addChange")
-    def addChange_project(jsonPath: js.Array[String], value: ProjectDefinition, `type`: project): Unit = js.native
-    @JSName("addChange")
-    def addChange_projectcollection(
-      jsonPath: js.Array[String],
-      value: js.Iterable[js.Tuple2[String, ProjectDefinition]],
-      `type`: projectcollection
-    ): Unit = js.native
-    @JSName("addChange")
-    def addChange_projectcollection(jsonPath: js.Array[String], value: Unit, `type`: projectcollection): Unit = js.native
-    @JSName("addChange")
-    def addChange_target(jsonPath: js.Array[String], value: Unit, `type`: target): Unit = js.native
-    @JSName("addChange")
-    def addChange_target(jsonPath: js.Array[String], value: TargetDefinition, `type`: target): Unit = js.native
-    @JSName("addChange")
-    def addChange_targetcollection(
+    @scala.annotation.targetName("addChange_targetcollection")
+    def addChange(
       jsonPath: js.Array[String],
       value: js.Iterable[js.Tuple2[String, TargetDefinition]],
-      `type`: targetcollection
+      `type`: "targetcollection"
     ): Unit = js.native
     @JSName("addChange")
-    def addChange_targetcollection(jsonPath: js.Array[String], value: Unit, `type`: targetcollection): Unit = js.native
+    @scala.annotation.targetName("addChange_projectcollection")
+    def addChange(
+      jsonPath: js.Array[String],
+      value: js.Iterable[js.Tuple2[String, ProjectDefinition]],
+      `type`: "projectcollection"
+    ): Unit = js.native
+    @JSName("addChange")
+    @scala.annotation.targetName("addChange_json")
+    def addChange(jsonPath: js.Array[String], value: Unit, `type`: "json"): Unit = js.native
+    @JSName("addChange")
+    @scala.annotation.targetName("addChange_target")
+    def addChange(jsonPath: js.Array[String], value: Unit, `type`: "target"): Unit = js.native
+    @JSName("addChange")
+    @scala.annotation.targetName("addChange_project")
+    def addChange(jsonPath: js.Array[String], value: Unit, `type`: "project"): Unit = js.native
+    @JSName("addChange")
+    @scala.annotation.targetName("addChange_projectcollection")
+    def addChange(jsonPath: js.Array[String], value: Unit, `type`: "projectcollection"): Unit = js.native
+    @JSName("addChange")
+    @scala.annotation.targetName("addChange_targetcollection")
+    def addChange(jsonPath: js.Array[String], value: Unit, `type`: "targetcollection"): Unit = js.native
+    def addChange(jsonPath: js.Array[String], value: JsonValue): Unit = js.native
+    @JSName("addChange")
+    @scala.annotation.targetName("addChange_json")
+    def addChange(jsonPath: js.Array[String], value: JsonValue, `type`: "json"): Unit = js.native
+    def addChange(jsonPath: js.Array[String], value: ProjectDefinition): Unit = js.native
+    @JSName("addChange")
+    @scala.annotation.targetName("addChange_project")
+    def addChange(jsonPath: js.Array[String], value: ProjectDefinition, `type`: "project"): Unit = js.native
+    def addChange(jsonPath: js.Array[String], value: TargetDefinition): Unit = js.native
+    @JSName("addChange")
+    @scala.annotation.targetName("addChange_target")
+    def addChange(jsonPath: js.Array[String], value: TargetDefinition, `type`: "target"): Unit = js.native
     
     /* private */ val ast: Any = js.native
     
@@ -127,7 +132,7 @@ object srcWorkspaceJsonMetadataMod {
     
     var jsonPath: js.Array[String]
     
-    var `type`: js.UndefOr[json | project | target | projectcollection | targetcollection] = js.undefined
+    var `type`: js.UndefOr["json" | "project" | "target" | "projectcollection" | "targetcollection"] = js.undefined
     
     var value: js.UndefOr[Any] = js.undefined
   }
@@ -144,7 +149,7 @@ object srcWorkspaceJsonMetadataMod {
       
       inline def setJsonPathVarargs(value: String*): Self = StObject.set(x, "jsonPath", js.Array(value*))
       
-      inline def setType(value: json | project | target | projectcollection | targetcollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "json" | "project" | "target" | "projectcollection" | "targetcollection"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       

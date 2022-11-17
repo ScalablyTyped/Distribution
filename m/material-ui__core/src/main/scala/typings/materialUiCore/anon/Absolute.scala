@@ -1,10 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreStrings.fullWidth
-import typings.materialUiCore.materialUiCoreStrings.horizontal
-import typings.materialUiCore.materialUiCoreStrings.inset
-import typings.materialUiCore.materialUiCoreStrings.middle
-import typings.materialUiCore.materialUiCoreStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,12 +25,12 @@ trait Absolute extends StObject {
   /**
     * The divider orientation.
     */
-  var orientation: js.UndefOr[horizontal | vertical] = js.undefined
+  var orientation: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   /**
     * The variant to use.
     */
-  var variant: js.UndefOr[fullWidth | inset | middle] = js.undefined
+  var variant: js.UndefOr["fullWidth" | "inset" | "middle"] = js.undefined
 }
 object Absolute {
   
@@ -58,11 +53,11 @@ object Absolute {
     
     inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
     
-    inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: "horizontal" | "vertical"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    inline def setVariant(value: fullWidth | inset | middle): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "fullWidth" | "inset" | "middle"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

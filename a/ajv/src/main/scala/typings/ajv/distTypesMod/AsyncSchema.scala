@@ -1,17 +1,15 @@
 package typings.ajv.distTypesMod
 
-import typings.ajv.ajvBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AsyncSchema
   extends StObject
-     with _SchemaObject
-     with AnySchemaObject {
+     with _SchemaObject {
   
   @JSName("$async")
-  var $async: `true`
+  var $async: true
 }
 object AsyncSchema {
   
@@ -22,6 +20,6 @@ object AsyncSchema {
   
   extension [Self <: AsyncSchema](x: Self) {
     
-    inline def set$async(value: `true`): Self = StObject.set(x, "$async", value.asInstanceOf[js.Any])
+    inline def set$async(value: true): Self = StObject.set(x, "$async", value.asInstanceOf[js.Any])
   }
 }

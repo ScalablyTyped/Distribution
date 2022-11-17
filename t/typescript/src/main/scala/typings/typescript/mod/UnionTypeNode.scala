@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UnionTypeNode
   extends StObject
-     with TypeNode
-     with UnionOrIntersectionTypeNode {
+     with TypeNode {
   
   @JSName("kind")
   val kind_UnionTypeNode: typings.typescript.mod.SyntaxKind.UnionType = js.native

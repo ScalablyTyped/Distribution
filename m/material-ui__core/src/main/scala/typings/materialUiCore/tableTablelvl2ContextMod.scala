@@ -1,9 +1,6 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.materialUiCoreStrings.body
-import typings.materialUiCore.materialUiCoreStrings.footer
-import typings.materialUiCore.materialUiCoreStrings.head
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,18 +14,18 @@ object tableTablelvl2ContextMod extends Shortcut {
   
   trait Tablelvl2ContextProps extends StObject {
     
-    var variant: head | body | footer
+    var variant: "head" | "body" | "footer"
   }
   object Tablelvl2ContextProps {
     
-    inline def apply(variant: head | body | footer): Tablelvl2ContextProps = {
+    inline def apply(variant: "head" | "body" | "footer"): Tablelvl2ContextProps = {
       val __obj = js.Dynamic.literal(variant = variant.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tablelvl2ContextProps]
     }
     
     extension [Self <: Tablelvl2ContextProps](x: Self) {
       
-      inline def setVariant(value: head | body | footer): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "head" | "body" | "footer"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     }
   }
   

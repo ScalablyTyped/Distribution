@@ -1,15 +1,8 @@
 package typings.angularDevkitCore
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularDevkitCore.angularDevkitCoreStrings.delete
-import typings.angularDevkitCore.angularDevkitCoreStrings.exists
-import typings.angularDevkitCore.angularDevkitCoreStrings.isDirectory
-import typings.angularDevkitCore.angularDevkitCoreStrings.isFile
-import typings.angularDevkitCore.angularDevkitCoreStrings.list
-import typings.angularDevkitCore.angularDevkitCoreStrings.read
-import typings.angularDevkitCore.angularDevkitCoreStrings.stat
-import typings.angularDevkitCore.angularDevkitCoreStrings.watch
-import typings.angularDevkitCore.angularDevkitCoreStrings.write
+import typings.angularDevkitCore.anon.From
+import typings.angularDevkitCore.anon.Kind
 import typings.angularDevkitCore.srcVirtualFsHostMemoryMod.SimpleMemoryHost
 import typings.angularDevkitCore.srcVirtualFsHostSyncMod.SyncDelegateHost
 import typings.angularDevkitCore.srcVirtualFsPathMod.PathFragment
@@ -58,22 +51,6 @@ object srcVirtualFsHostTestMod {
       def sync: SyncDelegateHost[js.Object] = js.native
     }
     
-    /* Rewritten from type alias, can be one of: 
-      - typings.angularDevkitCore.anon.Kind
-      - typings.angularDevkitCore.anon.From
-    */
-    trait TestLogRecord extends StObject
-    object TestLogRecord {
-      
-      inline def From(from: Path_, to: Path_): typings.angularDevkitCore.anon.From = {
-        val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], kind = "rename", to = to.asInstanceOf[js.Any])
-        __obj.asInstanceOf[typings.angularDevkitCore.anon.From]
-      }
-      
-      inline def Kind(kind: write | read | delete | list | exists | isDirectory | isFile | stat | watch, path: Path_): typings.angularDevkitCore.anon.Kind = {
-        val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-        __obj.asInstanceOf[typings.angularDevkitCore.anon.Kind]
-      }
-    }
+    type TestLogRecord = Kind | From
   }
 }

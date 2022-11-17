@@ -1,7 +1,5 @@
 package typings.antd
 
-import typings.antd.antdBooleans.`false`
-import typings.antd.antdStrings.parallel
 import typings.antd.libFormContextMod.ReportMetaChange
 import typings.antd.libFormFormItemLabelMod.LabelTooltipType
 import typings.antd.libFormFormItemMod.ValidateStatus
@@ -120,11 +118,11 @@ object libFormFormItemItemHolderMod {
     
     var trigger: js.UndefOr[String] = js.undefined
     
-    var validateFirst: js.UndefOr[Boolean | parallel] = js.undefined
+    var validateFirst: js.UndefOr[Boolean | "parallel"] = js.undefined
     
     var validateStatus: js.UndefOr[ValidateStatus] = js.undefined
     
-    var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
+    var validateTrigger: js.UndefOr[String | js.Array[String] | false] = js.undefined
     
     var valuePropName: js.UndefOr[String] = js.undefined
     
@@ -311,7 +309,7 @@ object libFormFormItemItemHolderMod {
       
       inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
-      inline def setValidateFirst(value: Boolean | parallel): Self = StObject.set(x, "validateFirst", value.asInstanceOf[js.Any])
+      inline def setValidateFirst(value: Boolean | "parallel"): Self = StObject.set(x, "validateFirst", value.asInstanceOf[js.Any])
       
       inline def setValidateFirstUndefined: Self = StObject.set(x, "validateFirst", js.undefined)
       
@@ -319,7 +317,7 @@ object libFormFormItemItemHolderMod {
       
       inline def setValidateStatusUndefined: Self = StObject.set(x, "validateStatus", js.undefined)
       
-      inline def setValidateTrigger(value: String | js.Array[String] | `false`): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
+      inline def setValidateTrigger(value: String | js.Array[String] | false): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
       
       inline def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
       

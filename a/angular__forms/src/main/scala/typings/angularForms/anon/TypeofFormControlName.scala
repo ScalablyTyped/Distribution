@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
-import typings.angularForms.angularFormsStrings.`[formControlName]`
 import typings.angularForms.mod.AsyncValidator
 import typings.angularForms.mod.AsyncValidatorFn
 import typings.angularForms.mod.ControlContainer
@@ -37,13 +35,14 @@ trait TypeofFormControlName
   
   var ɵdir: ɵɵDirectiveDeclaration[
     typings.angularForms.mod.FormControlName, 
-    `[formControlName]`, 
+    "[formControlName]", 
     scala.Nothing, 
     IsDisabled, 
     Update, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[

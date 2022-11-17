@@ -1,7 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`menu-will-close`
-import typings.electron.electronStrings.`menu-will-show`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Menu extends StObject {
   
   @JSName("addListener")
-  def addListener_menuwillclose(event: `menu-will-close`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_menuwillshow")
+  def addListener(event: "menu-will-show", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_menuwillshow(event: `menu-will-show`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("addListener_menuwillclose")
+  def addListener(event: "menu-will-close", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   
   /**
     * Appends the `menuItem` to the menu.
@@ -43,22 +43,26 @@ trait Menu extends StObject {
     */
   var items: js.Array[MenuItem] = js.native
   
+  /**
+    * Emitted when `menu.popup()` is called.
+    */
+  @JSName("on")
+  @scala.annotation.targetName("on_menuwillshow")
+  def on(event: "menu-will-show", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   // Docs: https://electronjs.org/docs/api/menu
   /**
     * Emitted when a popup is closed either manually or with `menu.closePopup()`.
     */
   @JSName("on")
-  def on_menuwillclose(event: `menu-will-close`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  /**
-    * Emitted when `menu.popup()` is called.
-    */
-  @JSName("on")
-  def on_menuwillshow(event: `menu-will-show`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("on_menuwillclose")
+  def on(event: "menu-will-close", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   
   @JSName("once")
-  def once_menuwillclose(event: `menu-will-close`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_menuwillclose")
+  def once(event: "menu-will-close", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("once")
-  def once_menuwillshow(event: `menu-will-show`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("once_menuwillshow")
+  def once(event: "menu-will-show", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   
   /**
     * Pops up this menu as a context menu in the `BrowserWindow`.
@@ -67,7 +71,9 @@ trait Menu extends StObject {
   def popup(options: PopupOptions): Unit = js.native
   
   @JSName("removeListener")
-  def removeListener_menuwillclose(event: `menu-will-close`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("removeListener_menuwillclose")
+  def removeListener(event: "menu-will-close", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_menuwillshow(event: `menu-will-show`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  @scala.annotation.targetName("removeListener_menuwillshow")
+  def removeListener(event: "menu-will-show", listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
 }

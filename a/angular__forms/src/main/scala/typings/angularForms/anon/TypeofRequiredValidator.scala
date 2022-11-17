@@ -3,7 +3,6 @@ package typings.angularForms.anon
 import org.scalablytyped.runtime.Instantiable0
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularForms.angularFormsBooleans.`false`
 import typings.angularForms.mod.RequiredValidator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +21,8 @@ trait TypeofRequiredValidator
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    false, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[RequiredValidator, scala.Nothing] = js.native

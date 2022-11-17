@@ -1,23 +1,19 @@
 package typings.yandexMaps.mod
 
 import typings.yandexMaps.anon.TypeofyandexMaps
-import typings.yandexMaps.yandexMapsStrings.debug
-import typings.yandexMaps.yandexMapsStrings.latlong
-import typings.yandexMaps.yandexMapsStrings.longlat
-import typings.yandexMaps.yandexMapsStrings.release
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait meta extends StObject {
   
-  var coordinatesOrder: latlong | longlat
+  var coordinatesOrder: "latlong" | "longlat"
   
   var countryCode: String
   
   var languageCode: String
   
-  var mode: release | debug
+  var mode: "release" | "debug"
   
   var ns: TypeofyandexMaps
   
@@ -26,10 +22,10 @@ trait meta extends StObject {
 object meta {
   
   inline def apply(
-    coordinatesOrder: latlong | longlat,
+    coordinatesOrder: "latlong" | "longlat",
     countryCode: String,
     languageCode: String,
-    mode: release | debug,
+    mode: "release" | "debug",
     ns: TypeofyandexMaps,
     version: String
   ): meta = {
@@ -39,13 +35,13 @@ object meta {
   
   extension [Self <: meta](x: Self) {
     
-    inline def setCoordinatesOrder(value: latlong | longlat): Self = StObject.set(x, "coordinatesOrder", value.asInstanceOf[js.Any])
+    inline def setCoordinatesOrder(value: "latlong" | "longlat"): Self = StObject.set(x, "coordinatesOrder", value.asInstanceOf[js.Any])
     
     inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    inline def setMode(value: release | debug): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: "release" | "debug"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setNs(value: TypeofyandexMaps): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     

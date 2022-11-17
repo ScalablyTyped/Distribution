@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JsxOpeningElement
   extends StObject
-     with Expression
-     with HasTypeArguments
-     with JsxOpeningLikeElement {
+     with Expression {
   
   val attributes: JsxAttributes = js.native
   

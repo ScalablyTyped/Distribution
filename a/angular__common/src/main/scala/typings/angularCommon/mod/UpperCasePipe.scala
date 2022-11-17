@@ -1,7 +1,5 @@
 package typings.angularCommon.mod
 
-import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.uppercase
 import typings.angularCore.mod.PipeTransform
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵPipeDeclaration
@@ -41,6 +39,6 @@ object UpperCasePipe {
   
   @JSImport("@angular/common", "UpperCasePipe.\u0275pipe")
   @js.native
-  def ɵpipe: ɵɵPipeDeclaration[UpperCasePipe, uppercase, `true`] = js.native
-  inline def ɵpipe_=(x: ɵɵPipeDeclaration[UpperCasePipe, uppercase, `true`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
+  def ɵpipe: ɵɵPipeDeclaration[UpperCasePipe, "uppercase", true] = js.native
+  inline def ɵpipe_=(x: ɵɵPipeDeclaration[UpperCasePipe, "uppercase", true]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
 }

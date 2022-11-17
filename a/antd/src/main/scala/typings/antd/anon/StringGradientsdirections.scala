@@ -1,7 +1,6 @@
 package typings.antd.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.antd.libProgressProgressMod.ProgressGradient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined antd.antd/lib/progress/progress.StringGradients & {  direction :string | undefined} */
 trait StringGradientsdirections
   extends StObject
-     with /* percentage */ StringDictionary[String]
-     with ProgressGradient {
+     with /* percentage */ StringDictionary[String] {
   
   var direction: js.UndefOr[String] = js.undefined
 }

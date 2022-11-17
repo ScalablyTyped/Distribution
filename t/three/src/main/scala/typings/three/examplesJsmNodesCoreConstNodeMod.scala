@@ -2,7 +2,6 @@ package typings.three
 
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeTypeOption
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeValueOption
-import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +21,6 @@ object examplesJsmNodesCoreConstNodeMod {
     
     def generateConst(builder: typings.three.examplesJsmNodesCoreNodeBuilderMod.default): String = js.native
     
-    var isConstNode: `true` = js.native
+    var isConstNode: true = js.native
   }
 }

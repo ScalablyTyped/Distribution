@@ -1,13 +1,12 @@
 package typings.angularForms.anon
 
-import typings.angularForms.angularFormsStrings.maxlength
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Maxlength extends StObject {
   
-  var maxlength: typings.angularForms.angularFormsStrings.maxlength
+  var maxlength: "maxlength"
 }
 object Maxlength {
   
@@ -18,6 +17,6 @@ object Maxlength {
   
   extension [Self <: Maxlength](x: Self) {
     
-    inline def setMaxlength(value: maxlength): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
+    inline def setMaxlength(value: "maxlength"): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
   }
 }

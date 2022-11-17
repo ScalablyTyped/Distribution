@@ -1,14 +1,11 @@
 package typings.reactNativeGestureHandler.anon
 
-import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod._HitSlop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<'left' | 'right' | 'top' | 'bottom' | 'vertical' | 'horizontal', number>> */
-trait PartialRecordleftrighttop
-  extends StObject
-     with _HitSlop {
+trait PartialRecordleftrighttop extends StObject {
   
   var bottom: js.UndefOr[Double] = js.undefined
   

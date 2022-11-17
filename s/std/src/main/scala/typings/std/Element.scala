@@ -1,179 +1,5 @@
 package typings.std
 
-import typings.std.stdStrings.`object`
-import typings.std.stdStrings.`var`
-import typings.std.stdStrings.a
-import typings.std.stdStrings.abbr
-import typings.std.stdStrings.address
-import typings.std.stdStrings.animate
-import typings.std.stdStrings.animateMotion
-import typings.std.stdStrings.animateTransform
-import typings.std.stdStrings.area
-import typings.std.stdStrings.article
-import typings.std.stdStrings.aside
-import typings.std.stdStrings.audio
-import typings.std.stdStrings.b
-import typings.std.stdStrings.base
-import typings.std.stdStrings.bdi
-import typings.std.stdStrings.bdo
-import typings.std.stdStrings.blockquote
-import typings.std.stdStrings.body
-import typings.std.stdStrings.br
-import typings.std.stdStrings.button
-import typings.std.stdStrings.canvas
-import typings.std.stdStrings.caption
-import typings.std.stdStrings.circle
-import typings.std.stdStrings.cite
-import typings.std.stdStrings.clipPath
-import typings.std.stdStrings.code
-import typings.std.stdStrings.col
-import typings.std.stdStrings.colgroup
-import typings.std.stdStrings.data
-import typings.std.stdStrings.datalist
-import typings.std.stdStrings.dd
-import typings.std.stdStrings.defs
-import typings.std.stdStrings.del
-import typings.std.stdStrings.desc
-import typings.std.stdStrings.details
-import typings.std.stdStrings.dfn
-import typings.std.stdStrings.dialog
-import typings.std.stdStrings.div
-import typings.std.stdStrings.dl
-import typings.std.stdStrings.dt
-import typings.std.stdStrings.ellipse
-import typings.std.stdStrings.em
-import typings.std.stdStrings.embed
-import typings.std.stdStrings.feBlend
-import typings.std.stdStrings.feColorMatrix
-import typings.std.stdStrings.feComponentTransfer
-import typings.std.stdStrings.feComposite
-import typings.std.stdStrings.feConvolveMatrix
-import typings.std.stdStrings.feDiffuseLighting
-import typings.std.stdStrings.feDisplacementMap
-import typings.std.stdStrings.feDistantLight
-import typings.std.stdStrings.feDropShadow
-import typings.std.stdStrings.feFlood
-import typings.std.stdStrings.feFuncA
-import typings.std.stdStrings.feFuncB
-import typings.std.stdStrings.feFuncG
-import typings.std.stdStrings.feFuncR
-import typings.std.stdStrings.feGaussianBlur
-import typings.std.stdStrings.feImage
-import typings.std.stdStrings.feMerge
-import typings.std.stdStrings.feMergeNode
-import typings.std.stdStrings.feMorphology
-import typings.std.stdStrings.feOffset
-import typings.std.stdStrings.fePointLight
-import typings.std.stdStrings.feSpecularLighting
-import typings.std.stdStrings.feSpotLight
-import typings.std.stdStrings.feTile
-import typings.std.stdStrings.feTurbulence
-import typings.std.stdStrings.fieldset
-import typings.std.stdStrings.figcaption
-import typings.std.stdStrings.figure
-import typings.std.stdStrings.filter
-import typings.std.stdStrings.footer
-import typings.std.stdStrings.foreignObject
-import typings.std.stdStrings.form
-import typings.std.stdStrings.fullscreenchange
-import typings.std.stdStrings.fullscreenerror
-import typings.std.stdStrings.g
-import typings.std.stdStrings.h1
-import typings.std.stdStrings.h2
-import typings.std.stdStrings.h3
-import typings.std.stdStrings.h4
-import typings.std.stdStrings.h5
-import typings.std.stdStrings.h6
-import typings.std.stdStrings.head
-import typings.std.stdStrings.header
-import typings.std.stdStrings.hgroup
-import typings.std.stdStrings.hr
-import typings.std.stdStrings.html
-import typings.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml
-import typings.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg
-import typings.std.stdStrings.i
-import typings.std.stdStrings.iframe
-import typings.std.stdStrings.image
-import typings.std.stdStrings.img
-import typings.std.stdStrings.input
-import typings.std.stdStrings.ins
-import typings.std.stdStrings.kbd
-import typings.std.stdStrings.label
-import typings.std.stdStrings.legend
-import typings.std.stdStrings.li
-import typings.std.stdStrings.line
-import typings.std.stdStrings.linearGradient
-import typings.std.stdStrings.link
-import typings.std.stdStrings.main
-import typings.std.stdStrings.map
-import typings.std.stdStrings.mark
-import typings.std.stdStrings.marker
-import typings.std.stdStrings.mask
-import typings.std.stdStrings.menu
-import typings.std.stdStrings.meta
-import typings.std.stdStrings.metadata
-import typings.std.stdStrings.meter
-import typings.std.stdStrings.mpath
-import typings.std.stdStrings.nav
-import typings.std.stdStrings.noscript
-import typings.std.stdStrings.ol
-import typings.std.stdStrings.optgroup
-import typings.std.stdStrings.option
-import typings.std.stdStrings.output
-import typings.std.stdStrings.p
-import typings.std.stdStrings.path
-import typings.std.stdStrings.pattern
-import typings.std.stdStrings.picture
-import typings.std.stdStrings.polygon
-import typings.std.stdStrings.polyline
-import typings.std.stdStrings.pre
-import typings.std.stdStrings.progress
-import typings.std.stdStrings.q
-import typings.std.stdStrings.radialGradient
-import typings.std.stdStrings.rect
-import typings.std.stdStrings.rp
-import typings.std.stdStrings.rt
-import typings.std.stdStrings.ruby
-import typings.std.stdStrings.s
-import typings.std.stdStrings.samp
-import typings.std.stdStrings.script
-import typings.std.stdStrings.section
-import typings.std.stdStrings.select
-import typings.std.stdStrings.set
-import typings.std.stdStrings.slot
-import typings.std.stdStrings.small
-import typings.std.stdStrings.source
-import typings.std.stdStrings.span
-import typings.std.stdStrings.stop
-import typings.std.stdStrings.strong
-import typings.std.stdStrings.style
-import typings.std.stdStrings.sub
-import typings.std.stdStrings.summary
-import typings.std.stdStrings.sup
-import typings.std.stdStrings.svg
-import typings.std.stdStrings.switch
-import typings.std.stdStrings.symbol
-import typings.std.stdStrings.table
-import typings.std.stdStrings.tbody
-import typings.std.stdStrings.td
-import typings.std.stdStrings.template
-import typings.std.stdStrings.text
-import typings.std.stdStrings.textPath
-import typings.std.stdStrings.textarea
-import typings.std.stdStrings.tfoot
-import typings.std.stdStrings.th
-import typings.std.stdStrings.thead
-import typings.std.stdStrings.time
-import typings.std.stdStrings.title
-import typings.std.stdStrings.tr
-import typings.std.stdStrings.track
-import typings.std.stdStrings.tspan
-import typings.std.stdStrings.u
-import typings.std.stdStrings.ul
-import typings.std.stdStrings.use
-import typings.std.stdStrings.video
-import typings.std.stdStrings.view
-import typings.std.stdStrings.wbr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -182,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.std.EventTarget because Already inherited
 - typings.std.Node because Already inherited
-- typings.std.ParentNode because var conflicts: nodeValue, textContent. Inlined childElementCount, children, firstElementChild, lastElementChild, append, prepend, querySelector_a, querySelector_abbr, querySelector_address, querySelector_area, querySelector_article, querySelector_aside, querySelector_audio, querySelector_b, querySelector_base, querySelector_bdi, querySelector_bdo, querySelector_blockquote, querySelector_body, querySelector_br, querySelector_button, querySelector_canvas, querySelector_caption, querySelector_cite, querySelector_code, querySelector_col, querySelector_colgroup, querySelector_data, querySelector_datalist, querySelector_dd, querySelector_del, querySelector_details, querySelector_dfn, querySelector_dialog, querySelector_div, querySelector_dl, querySelector_dt, querySelector_em, querySelector_embed, querySelector_fieldset, querySelector_figcaption, querySelector_figure, querySelector_footer, querySelector_form, querySelector_h1, querySelector_h2, querySelector_h3, querySelector_h4, querySelector_h5, querySelector_h6, querySelector_head, querySelector_header, querySelector_hgroup, querySelector_hr, querySelector_html, querySelector_i, querySelector_iframe, querySelector_img, querySelector_input, querySelector_ins, querySelector_kbd, querySelector_label, querySelector_legend, querySelector_li, querySelector_link, querySelector_main, querySelector_map, querySelector_mark, querySelector_menu, querySelector_meta, querySelector_meter, querySelector_nav, querySelector_noscript, querySelector_object, querySelector_ol, querySelector_optgroup, querySelector_option, querySelector_output, querySelector_p, querySelector_picture, querySelector_pre, querySelector_progress, querySelector_q, querySelector_rp, querySelector_rt, querySelector_ruby, querySelector_s, querySelector_samp, querySelector_script, querySelector_section, querySelector_select, querySelector_slot, querySelector_small, querySelector_source, querySelector_span, querySelector_strong, querySelector_style, querySelector_sub, querySelector_summary, querySelector_sup, querySelector_table, querySelector_tbody, querySelector_td, querySelector_template, querySelector_textarea, querySelector_tfoot, querySelector_th, querySelector_thead, querySelector_time, querySelector_title, querySelector_tr, querySelector_track, querySelector_u, querySelector_ul, querySelector_var, querySelector_video, querySelector_wbr, querySelector_a, querySelector_animate, querySelector_animateMotion, querySelector_animateTransform, querySelector_circle, querySelector_clipPath, querySelector_defs, querySelector_desc, querySelector_ellipse, querySelector_feBlend, querySelector_feColorMatrix, querySelector_feComponentTransfer, querySelector_feComposite, querySelector_feConvolveMatrix, querySelector_feDiffuseLighting, querySelector_feDisplacementMap, querySelector_feDistantLight, querySelector_feDropShadow, querySelector_feFlood, querySelector_feFuncA, querySelector_feFuncB, querySelector_feFuncG, querySelector_feFuncR, querySelector_feGaussianBlur, querySelector_feImage, querySelector_feMerge, querySelector_feMergeNode, querySelector_feMorphology, querySelector_feOffset, querySelector_fePointLight, querySelector_feSpecularLighting, querySelector_feSpotLight, querySelector_feTile, querySelector_feTurbulence, querySelector_filter, querySelector_foreignObject, querySelector_g, querySelector_image, querySelector_line, querySelector_linearGradient, querySelector_marker, querySelector_mask, querySelector_metadata, querySelector_mpath, querySelector_path, querySelector_pattern, querySelector_polygon, querySelector_polyline, querySelector_radialGradient, querySelector_rect, querySelector_script, querySelector_set, querySelector_stop, querySelector_style, querySelector_svg, querySelector_switch, querySelector_symbol, querySelector_text, querySelector_textPath, querySelector_title, querySelector_tspan, querySelector_use, querySelector_view, querySelector, querySelectorAll_a, querySelectorAll_abbr, querySelectorAll_address, querySelectorAll_area, querySelectorAll_article, querySelectorAll_aside, querySelectorAll_audio, querySelectorAll_b, querySelectorAll_base, querySelectorAll_bdi, querySelectorAll_bdo, querySelectorAll_blockquote, querySelectorAll_body, querySelectorAll_br, querySelectorAll_button, querySelectorAll_canvas, querySelectorAll_caption, querySelectorAll_cite, querySelectorAll_code, querySelectorAll_col, querySelectorAll_colgroup, querySelectorAll_data, querySelectorAll_datalist, querySelectorAll_dd, querySelectorAll_del, querySelectorAll_details, querySelectorAll_dfn, querySelectorAll_dialog, querySelectorAll_div, querySelectorAll_dl, querySelectorAll_dt, querySelectorAll_em, querySelectorAll_embed, querySelectorAll_fieldset, querySelectorAll_figcaption, querySelectorAll_figure, querySelectorAll_footer, querySelectorAll_form, querySelectorAll_h1, querySelectorAll_h2, querySelectorAll_h3, querySelectorAll_h4, querySelectorAll_h5, querySelectorAll_h6, querySelectorAll_head, querySelectorAll_header, querySelectorAll_hgroup, querySelectorAll_hr, querySelectorAll_html, querySelectorAll_i, querySelectorAll_iframe, querySelectorAll_img, querySelectorAll_input, querySelectorAll_ins, querySelectorAll_kbd, querySelectorAll_label, querySelectorAll_legend, querySelectorAll_li, querySelectorAll_link, querySelectorAll_main, querySelectorAll_map, querySelectorAll_mark, querySelectorAll_menu, querySelectorAll_meta, querySelectorAll_meter, querySelectorAll_nav, querySelectorAll_noscript, querySelectorAll_object, querySelectorAll_ol, querySelectorAll_optgroup, querySelectorAll_option, querySelectorAll_output, querySelectorAll_p, querySelectorAll_picture, querySelectorAll_pre, querySelectorAll_progress, querySelectorAll_q, querySelectorAll_rp, querySelectorAll_rt, querySelectorAll_ruby, querySelectorAll_s, querySelectorAll_samp, querySelectorAll_script, querySelectorAll_section, querySelectorAll_select, querySelectorAll_slot, querySelectorAll_small, querySelectorAll_source, querySelectorAll_span, querySelectorAll_strong, querySelectorAll_style, querySelectorAll_sub, querySelectorAll_summary, querySelectorAll_sup, querySelectorAll_table, querySelectorAll_tbody, querySelectorAll_td, querySelectorAll_template, querySelectorAll_textarea, querySelectorAll_tfoot, querySelectorAll_th, querySelectorAll_thead, querySelectorAll_time, querySelectorAll_title, querySelectorAll_tr, querySelectorAll_track, querySelectorAll_u, querySelectorAll_ul, querySelectorAll_var, querySelectorAll_video, querySelectorAll_wbr, querySelectorAll_a, querySelectorAll_animate, querySelectorAll_animateMotion, querySelectorAll_animateTransform, querySelectorAll_circle, querySelectorAll_clipPath, querySelectorAll_defs, querySelectorAll_desc, querySelectorAll_ellipse, querySelectorAll_feBlend, querySelectorAll_feColorMatrix, querySelectorAll_feComponentTransfer, querySelectorAll_feComposite, querySelectorAll_feConvolveMatrix, querySelectorAll_feDiffuseLighting, querySelectorAll_feDisplacementMap, querySelectorAll_feDistantLight, querySelectorAll_feDropShadow, querySelectorAll_feFlood, querySelectorAll_feFuncA, querySelectorAll_feFuncB, querySelectorAll_feFuncG, querySelectorAll_feFuncR, querySelectorAll_feGaussianBlur, querySelectorAll_feImage, querySelectorAll_feMerge, querySelectorAll_feMergeNode, querySelectorAll_feMorphology, querySelectorAll_feOffset, querySelectorAll_fePointLight, querySelectorAll_feSpecularLighting, querySelectorAll_feSpotLight, querySelectorAll_feTile, querySelectorAll_feTurbulence, querySelectorAll_filter, querySelectorAll_foreignObject, querySelectorAll_g, querySelectorAll_image, querySelectorAll_line, querySelectorAll_linearGradient, querySelectorAll_marker, querySelectorAll_mask, querySelectorAll_metadata, querySelectorAll_mpath, querySelectorAll_path, querySelectorAll_pattern, querySelectorAll_polygon, querySelectorAll_polyline, querySelectorAll_radialGradient, querySelectorAll_rect, querySelectorAll_script, querySelectorAll_set, querySelectorAll_stop, querySelectorAll_style, querySelectorAll_svg, querySelectorAll_switch, querySelectorAll_symbol, querySelectorAll_text, querySelectorAll_textPath, querySelectorAll_title, querySelectorAll_tspan, querySelectorAll_use, querySelectorAll_view, querySelectorAll, replaceChildren */ @js.native
+- typings.std.ParentNode because var conflicts: nodeValue, textContent. Inlined childElementCount, children, firstElementChild, lastElementChild, append, prepend, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelector, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, querySelectorAll, replaceChildren */ @js.native
 trait Element
   extends StObject
      with ARIAMixin
@@ -194,30 +20,36 @@ trait Element
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("addEventListener_fullscreenchange")
+  def addEventListener(`type`: "fullscreenchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_fullscreenchange(
-    `type`: fullscreenchange,
+  @scala.annotation.targetName("addEventListener_fullscreenerror")
+  def addEventListener(`type`: "fullscreenerror", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_fullscreenchange")
+  def addEventListener(
+    `type`: "fullscreenchange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_fullscreenchange(
-    `type`: fullscreenchange,
+  @scala.annotation.targetName("addEventListener_fullscreenerror")
+  def addEventListener(
+    `type`: "fullscreenerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_fullscreenerror")
+  def addEventListener(
+    `type`: "fullscreenerror",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_fullscreenerror(
-    `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_fullscreenerror(
-    `type`: fullscreenerror,
+  @scala.annotation.targetName("addEventListener_fullscreenchange")
+  def addEventListener(
+    `type`: "fullscreenchange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -264,350 +96,520 @@ trait Element
   /* standard dom */
   val clientWidth: Double = js.native
   
-  /* standard dom */
-  def closest[E /* <: Element */](selectors: java.lang.String): E | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_animateTransform")
+  def closest(selector: "animateTransform"): SVGAnimateTransformElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_b")
+  def closest(selector: "b"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feDistantLight")
+  def closest(selector: "feDistantLight"): SVGFEDistantLightElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_samp")
+  def closest(selector: "samp"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_input")
+  def closest(selector: "input"): HTMLInputElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_rp")
+  def closest(selector: "rp"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_embed")
+  def closest(selector: "embed"): HTMLEmbedElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_p")
+  def closest(selector: "p"): HTMLParagraphElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_mark")
+  def closest(selector: "mark"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_textarea")
+  def closest(selector: "textarea"): HTMLTextAreaElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_button")
+  def closest(selector: "button"): HTMLButtonElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_source")
+  def closest(selector: "source"): HTMLSourceElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_wbr")
+  def closest(selector: "wbr"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_del")
+  def closest(selector: "del"): HTMLModElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_table")
+  def closest(selector: "table"): HTMLTableElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_h4")
+  def closest(selector: "h4"): HTMLHeadingElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feFlood")
+  def closest(selector: "feFlood"): SVGFEFloodElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_noscript")
+  def closest(selector: "noscript"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_link")
+  def closest(selector: "link"): HTMLLinkElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_sub")
+  def closest(selector: "sub"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_section")
+  def closest(selector: "section"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_menu")
+  def closest(selector: "menu"): HTMLMenuElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_circle")
+  def closest(selector: "circle"): SVGCircleElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_ins")
+  def closest(selector: "ins"): HTMLModElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_fieldset")
+  def closest(selector: "fieldset"): HTMLFieldSetElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_blockquote")
+  def closest(selector: "blockquote"): HTMLQuoteElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_var")
+  def closest(selector: "var"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_defs")
+  def closest(selector: "defs"): SVGDefsElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_figure")
+  def closest(selector: "figure"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_h6")
+  def closest(selector: "h6"): HTMLHeadingElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_stop")
+  def closest(selector: "stop"): SVGStopElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_canvas")
+  def closest(selector: "canvas"): HTMLCanvasElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_picture")
+  def closest(selector: "picture"): HTMLPictureElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feBlend")
+  def closest(selector: "feBlend"): SVGFEBlendElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_datalist")
+  def closest(selector: "datalist"): HTMLDataListElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_fePointLight")
+  def closest(selector: "fePointLight"): SVGFEPointLightElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_html")
+  def closest(selector: "html"): HTMLHtmlElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_sup")
+  def closest(selector: "sup"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_dd")
+  def closest(selector: "dd"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_g")
+  def closest(selector: "g"): SVGGElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_ol")
+  def closest(selector: "ol"): HTMLOListElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_base")
+  def closest(selector: "base"): HTMLBaseElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_img")
+  def closest(selector: "img"): HTMLImageElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_animate")
+  def closest(selector: "animate"): SVGAnimateElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_polygon")
+  def closest(selector: "polygon"): SVGPolygonElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_polyline")
+  def closest(selector: "polyline"): SVGPolylineElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_ellipse")
+  def closest(selector: "ellipse"): SVGEllipseElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feTile")
+  def closest(selector: "feTile"): SVGFETileElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_style")
+  def closest(selector: "style"): HTMLStyleElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_aside")
+  def closest(selector: "aside"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_linearGradient")
+  def closest(selector: "linearGradient"): SVGLinearGradientElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_output")
+  def closest(selector: "output"): HTMLOutputElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feMorphology")
+  def closest(selector: "feMorphology"): SVGFEMorphologyElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_template")
+  def closest(selector: "template"): HTMLTemplateElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_summary")
+  def closest(selector: "summary"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_code")
+  def closest(selector: "code"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_pre")
+  def closest(selector: "pre"): HTMLPreElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feDisplacementMap")
+  def closest(selector: "feDisplacementMap"): SVGFEDisplacementMapElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_tbody")
+  def closest(selector: "tbody"): HTMLTableSectionElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feConvolveMatrix")
+  def closest(selector: "feConvolveMatrix"): SVGFEConvolveMatrixElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feFuncA")
+  def closest(selector: "feFuncA"): SVGFEFuncAElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_option")
+  def closest(selector: "option"): HTMLOptionElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_textPath")
+  def closest(selector: "textPath"): SVGTextPathElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_switch")
+  def closest(selector: "switch"): SVGSwitchElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feDropShadow")
+  def closest(selector: "feDropShadow"): SVGFEDropShadowElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_dfn")
+  def closest(selector: "dfn"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_optgroup")
+  def closest(selector: "optgroup"): HTMLOptGroupElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_th")
+  def closest(selector: "th"): HTMLTableCellElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_line")
+  def closest(selector: "line"): SVGLineElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_mpath")
+  def closest(selector: "mpath"): SVGMPathElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_u")
+  def closest(selector: "u"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_slot")
+  def closest(selector: "slot"): HTMLSlotElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_q")
+  def closest(selector: "q"): HTMLQuoteElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_col")
+  def closest(selector: "col"): HTMLTableColElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_object")
+  def closest(selector: "object"): HTMLObjectElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_bdo")
+  def closest(selector: "bdo"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_abbr")
+  def closest(selector: "abbr"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_path")
+  def closest(selector: "path"): SVGPathElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_h2")
+  def closest(selector: "h2"): HTMLHeadingElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_rect")
+  def closest(selector: "rect"): SVGRectElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_ul")
+  def closest(selector: "ul"): HTMLUListElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_head")
+  def closest(selector: "head"): HTMLHeadElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_area")
+  def closest(selector: "area"): HTMLAreaElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_select")
+  def closest(selector: "select"): HTMLSelectElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_rt")
+  def closest(selector: "rt"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_figcaption")
+  def closest(selector: "figcaption"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feGaussianBlur")
+  def closest(selector: "feGaussianBlur"): SVGFEGaussianBlurElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feDiffuseLighting")
+  def closest(selector: "feDiffuseLighting"): SVGFEDiffuseLightingElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_dialog")
+  def closest(selector: "dialog"): HTMLDialogElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feFuncB")
+  def closest(selector: "feFuncB"): SVGFEFuncBElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feComponentTransfer")
+  def closest(selector: "feComponentTransfer"): SVGFEComponentTransferElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_data")
+  def closest(selector: "data"): HTMLDataElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feComposite")
+  def closest(selector: "feComposite"): SVGFECompositeElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_dl")
+  def closest(selector: "dl"): HTMLDListElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_meta")
+  def closest(selector: "meta"): HTMLMetaElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_animateMotion")
+  def closest(selector: "animateMotion"): SVGAnimateMotionElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_cite")
+  def closest(selector: "cite"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feSpotLight")
+  def closest(selector: "feSpotLight"): SVGFESpotLightElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_view")
+  def closest(selector: "view"): SVGViewElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_article")
+  def closest(selector: "article"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_tspan")
+  def closest(selector: "tspan"): SVGTSpanElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feMerge")
+  def closest(selector: "feMerge"): SVGFEMergeElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_i")
+  def closest(selector: "i"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_radialGradient")
+  def closest(selector: "radialGradient"): SVGRadialGradientElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_track")
+  def closest(selector: "track"): HTMLTrackElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_dt")
+  def closest(selector: "dt"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_script")
+  def closest(selector: "script"): HTMLScriptElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_iframe")
+  def closest(selector: "iframe"): HTMLIFrameElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_ruby")
+  def closest(selector: "ruby"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_nav")
+  def closest(selector: "nav"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_td")
+  def closest(selector: "td"): HTMLTableCellElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_h5")
+  def closest(selector: "h5"): HTMLHeadingElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_filter")
+  def closest(selector: "filter"): SVGFilterElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_time")
+  def closest(selector: "time"): HTMLTimeElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_map")
+  def closest(selector: "map"): HTMLMapElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feFuncR")
+  def closest(selector: "feFuncR"): SVGFEFuncRElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_svg")
+  def closest(selector: "svg"): SVGSVGElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_video")
+  def closest(selector: "video"): HTMLVideoElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_small")
+  def closest(selector: "small"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_label")
+  def closest(selector: "label"): HTMLLabelElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_colgroup")
+  def closest(selector: "colgroup"): HTMLTableColElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feOffset")
+  def closest(selector: "feOffset"): SVGFEOffsetElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_meter")
+  def closest(selector: "meter"): HTMLMeterElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_kbd")
+  def closest(selector: "kbd"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feMergeNode")
+  def closest(selector: "feMergeNode"): SVGFEMergeNodeElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_desc")
+  def closest(selector: "desc"): SVGDescElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_text")
+  def closest(selector: "text"): SVGTextElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_marker")
+  def closest(selector: "marker"): SVGMarkerElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_clipPath")
+  def closest(selector: "clipPath"): SVGClipPathElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_form")
+  def closest(selector: "form"): HTMLFormElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_li")
+  def closest(selector: "li"): HTMLLIElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_progress")
+  def closest(selector: "progress"): HTMLProgressElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feColorMatrix")
+  def closest(selector: "feColorMatrix"): SVGFEColorMatrixElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_h1")
+  def closest(selector: "h1"): HTMLHeadingElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_metadata")
+  def closest(selector: "metadata"): SVGMetadataElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_h3")
+  def closest(selector: "h3"): HTMLHeadingElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_bdi")
+  def closest(selector: "bdi"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_foreignObject")
+  def closest(selector: "foreignObject"): SVGForeignObjectElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_title")
+  def closest(selector: "title"): HTMLTitleElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_details")
+  def closest(selector: "details"): HTMLDetailsElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_caption")
+  def closest(selector: "caption"): HTMLTableCaptionElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feFuncG")
+  def closest(selector: "feFuncG"): SVGFEFuncGElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feSpecularLighting")
+  def closest(selector: "feSpecularLighting"): SVGFESpecularLightingElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_span")
+  def closest(selector: "span"): HTMLSpanElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_use")
+  def closest(selector: "use"): SVGUseElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feTurbulence")
+  def closest(selector: "feTurbulence"): SVGFETurbulenceElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_feImage")
+  def closest(selector: "feImage"): SVGFEImageElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_thead")
+  def closest(selector: "thead"): HTMLTableSectionElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_div")
+  def closest(selector: "div"): HTMLDivElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_header")
+  def closest(selector: "header"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_s")
+  def closest(selector: "s"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_body")
+  def closest(selector: "body"): HTMLBodyElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_audio")
+  def closest(selector: "audio"): HTMLAudioElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_legend")
+  def closest(selector: "legend"): HTMLLegendElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_tr")
+  def closest(selector: "tr"): HTMLTableRowElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_set")
+  def closest(selector: "set"): SVGSetElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_address")
+  def closest(selector: "address"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_strong")
+  def closest(selector: "strong"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_mask")
+  def closest(selector: "mask"): SVGMaskElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_tfoot")
+  def closest(selector: "tfoot"): HTMLTableSectionElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_symbol")
+  def closest(selector: "symbol"): SVGSymbolElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_image")
+  def closest(selector: "image"): SVGImageElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_br")
+  def closest(selector: "br"): HTMLBRElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_pattern")
+  def closest(selector: "pattern"): SVGPatternElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_hr")
+  def closest(selector: "hr"): HTMLHRElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_em")
+  def closest(selector: "em"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_footer")
+  def closest(selector: "footer"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_hgroup")
+  def closest(selector: "hgroup"): HTMLElement | Null = js.native
+  @JSName("closest")
+  @scala.annotation.targetName("closest_main")
+  def closest(selector: "main"): HTMLElement | Null = js.native
   /** Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise. */
   /* standard dom */
   @JSName("closest")
-  def closest_a(selector: a): HTMLAnchorElement | Null = js.native
-  @JSName("closest")
-  def closest_abbr(selector: abbr): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_address(selector: address): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_animate(selector: animate): SVGAnimateElement | Null = js.native
-  @JSName("closest")
-  def closest_animateMotion(selector: animateMotion): SVGAnimateMotionElement | Null = js.native
-  @JSName("closest")
-  def closest_animateTransform(selector: animateTransform): SVGAnimateTransformElement | Null = js.native
-  @JSName("closest")
-  def closest_area(selector: area): HTMLAreaElement | Null = js.native
-  @JSName("closest")
-  def closest_article(selector: article): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_aside(selector: aside): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_audio(selector: audio): HTMLAudioElement | Null = js.native
-  @JSName("closest")
-  def closest_b(selector: b): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_base(selector: base): HTMLBaseElement | Null = js.native
-  @JSName("closest")
-  def closest_bdi(selector: bdi): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_bdo(selector: bdo): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_blockquote(selector: blockquote): HTMLQuoteElement | Null = js.native
-  @JSName("closest")
-  def closest_body(selector: body): HTMLBodyElement | Null = js.native
-  @JSName("closest")
-  def closest_br(selector: br): HTMLBRElement | Null = js.native
-  @JSName("closest")
-  def closest_button(selector: button): HTMLButtonElement | Null = js.native
-  @JSName("closest")
-  def closest_canvas(selector: canvas): HTMLCanvasElement | Null = js.native
-  @JSName("closest")
-  def closest_caption(selector: caption): HTMLTableCaptionElement | Null = js.native
-  @JSName("closest")
-  def closest_circle(selector: circle): SVGCircleElement | Null = js.native
-  @JSName("closest")
-  def closest_cite(selector: cite): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_clipPath(selector: clipPath): SVGClipPathElement | Null = js.native
-  @JSName("closest")
-  def closest_code(selector: code): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_col(selector: col): HTMLTableColElement | Null = js.native
-  @JSName("closest")
-  def closest_colgroup(selector: colgroup): HTMLTableColElement | Null = js.native
-  @JSName("closest")
-  def closest_data(selector: data): HTMLDataElement | Null = js.native
-  @JSName("closest")
-  def closest_datalist(selector: datalist): HTMLDataListElement | Null = js.native
-  @JSName("closest")
-  def closest_dd(selector: dd): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_defs(selector: defs): SVGDefsElement | Null = js.native
-  @JSName("closest")
-  def closest_del(selector: del): HTMLModElement | Null = js.native
-  @JSName("closest")
-  def closest_desc(selector: desc): SVGDescElement | Null = js.native
-  @JSName("closest")
-  def closest_details(selector: details): HTMLDetailsElement | Null = js.native
-  @JSName("closest")
-  def closest_dfn(selector: dfn): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_dialog(selector: dialog): HTMLDialogElement | Null = js.native
-  @JSName("closest")
-  def closest_div(selector: div): HTMLDivElement | Null = js.native
-  @JSName("closest")
-  def closest_dl(selector: dl): HTMLDListElement | Null = js.native
-  @JSName("closest")
-  def closest_dt(selector: dt): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_ellipse(selector: ellipse): SVGEllipseElement | Null = js.native
-  @JSName("closest")
-  def closest_em(selector: em): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_embed(selector: embed): HTMLEmbedElement | Null = js.native
-  @JSName("closest")
-  def closest_feBlend(selector: feBlend): SVGFEBlendElement | Null = js.native
-  @JSName("closest")
-  def closest_feColorMatrix(selector: feColorMatrix): SVGFEColorMatrixElement | Null = js.native
-  @JSName("closest")
-  def closest_feComponentTransfer(selector: feComponentTransfer): SVGFEComponentTransferElement | Null = js.native
-  @JSName("closest")
-  def closest_feComposite(selector: feComposite): SVGFECompositeElement | Null = js.native
-  @JSName("closest")
-  def closest_feConvolveMatrix(selector: feConvolveMatrix): SVGFEConvolveMatrixElement | Null = js.native
-  @JSName("closest")
-  def closest_feDiffuseLighting(selector: feDiffuseLighting): SVGFEDiffuseLightingElement | Null = js.native
-  @JSName("closest")
-  def closest_feDisplacementMap(selector: feDisplacementMap): SVGFEDisplacementMapElement | Null = js.native
-  @JSName("closest")
-  def closest_feDistantLight(selector: feDistantLight): SVGFEDistantLightElement | Null = js.native
-  @JSName("closest")
-  def closest_feDropShadow(selector: feDropShadow): SVGFEDropShadowElement | Null = js.native
-  @JSName("closest")
-  def closest_feFlood(selector: feFlood): SVGFEFloodElement | Null = js.native
-  @JSName("closest")
-  def closest_feFuncA(selector: feFuncA): SVGFEFuncAElement | Null = js.native
-  @JSName("closest")
-  def closest_feFuncB(selector: feFuncB): SVGFEFuncBElement | Null = js.native
-  @JSName("closest")
-  def closest_feFuncG(selector: feFuncG): SVGFEFuncGElement | Null = js.native
-  @JSName("closest")
-  def closest_feFuncR(selector: feFuncR): SVGFEFuncRElement | Null = js.native
-  @JSName("closest")
-  def closest_feGaussianBlur(selector: feGaussianBlur): SVGFEGaussianBlurElement | Null = js.native
-  @JSName("closest")
-  def closest_feImage(selector: feImage): SVGFEImageElement | Null = js.native
-  @JSName("closest")
-  def closest_feMerge(selector: feMerge): SVGFEMergeElement | Null = js.native
-  @JSName("closest")
-  def closest_feMergeNode(selector: feMergeNode): SVGFEMergeNodeElement | Null = js.native
-  @JSName("closest")
-  def closest_feMorphology(selector: feMorphology): SVGFEMorphologyElement | Null = js.native
-  @JSName("closest")
-  def closest_feOffset(selector: feOffset): SVGFEOffsetElement | Null = js.native
-  @JSName("closest")
-  def closest_fePointLight(selector: fePointLight): SVGFEPointLightElement | Null = js.native
-  @JSName("closest")
-  def closest_feSpecularLighting(selector: feSpecularLighting): SVGFESpecularLightingElement | Null = js.native
-  @JSName("closest")
-  def closest_feSpotLight(selector: feSpotLight): SVGFESpotLightElement | Null = js.native
-  @JSName("closest")
-  def closest_feTile(selector: feTile): SVGFETileElement | Null = js.native
-  @JSName("closest")
-  def closest_feTurbulence(selector: feTurbulence): SVGFETurbulenceElement | Null = js.native
-  @JSName("closest")
-  def closest_fieldset(selector: fieldset): HTMLFieldSetElement | Null = js.native
-  @JSName("closest")
-  def closest_figcaption(selector: figcaption): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_figure(selector: figure): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_filter(selector: filter): SVGFilterElement | Null = js.native
-  @JSName("closest")
-  def closest_footer(selector: footer): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_foreignObject(selector: foreignObject): SVGForeignObjectElement | Null = js.native
-  @JSName("closest")
-  def closest_form(selector: form): HTMLFormElement | Null = js.native
-  @JSName("closest")
-  def closest_g(selector: g): SVGGElement | Null = js.native
-  @JSName("closest")
-  def closest_h1(selector: h1): HTMLHeadingElement | Null = js.native
-  @JSName("closest")
-  def closest_h2(selector: h2): HTMLHeadingElement | Null = js.native
-  @JSName("closest")
-  def closest_h3(selector: h3): HTMLHeadingElement | Null = js.native
-  @JSName("closest")
-  def closest_h4(selector: h4): HTMLHeadingElement | Null = js.native
-  @JSName("closest")
-  def closest_h5(selector: h5): HTMLHeadingElement | Null = js.native
-  @JSName("closest")
-  def closest_h6(selector: h6): HTMLHeadingElement | Null = js.native
-  @JSName("closest")
-  def closest_head(selector: head): HTMLHeadElement | Null = js.native
-  @JSName("closest")
-  def closest_header(selector: header): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_hgroup(selector: hgroup): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_hr(selector: hr): HTMLHRElement | Null = js.native
-  @JSName("closest")
-  def closest_html(selector: html): HTMLHtmlElement | Null = js.native
-  @JSName("closest")
-  def closest_i(selector: i): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_iframe(selector: iframe): HTMLIFrameElement | Null = js.native
-  @JSName("closest")
-  def closest_image(selector: image): SVGImageElement | Null = js.native
-  @JSName("closest")
-  def closest_img(selector: img): HTMLImageElement | Null = js.native
-  @JSName("closest")
-  def closest_input(selector: input): HTMLInputElement | Null = js.native
-  @JSName("closest")
-  def closest_ins(selector: ins): HTMLModElement | Null = js.native
-  @JSName("closest")
-  def closest_kbd(selector: kbd): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_label(selector: label): HTMLLabelElement | Null = js.native
-  @JSName("closest")
-  def closest_legend(selector: legend): HTMLLegendElement | Null = js.native
-  @JSName("closest")
-  def closest_li(selector: li): HTMLLIElement | Null = js.native
-  @JSName("closest")
-  def closest_line(selector: line): SVGLineElement | Null = js.native
-  @JSName("closest")
-  def closest_linearGradient(selector: linearGradient): SVGLinearGradientElement | Null = js.native
-  @JSName("closest")
-  def closest_link(selector: link): HTMLLinkElement | Null = js.native
-  @JSName("closest")
-  def closest_main(selector: main): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_map(selector: map): HTMLMapElement | Null = js.native
-  @JSName("closest")
-  def closest_mark(selector: mark): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_marker(selector: marker): SVGMarkerElement | Null = js.native
-  @JSName("closest")
-  def closest_mask(selector: mask): SVGMaskElement | Null = js.native
-  @JSName("closest")
-  def closest_menu(selector: menu): HTMLMenuElement | Null = js.native
-  @JSName("closest")
-  def closest_meta(selector: meta): HTMLMetaElement | Null = js.native
-  @JSName("closest")
-  def closest_metadata(selector: metadata): SVGMetadataElement | Null = js.native
-  @JSName("closest")
-  def closest_meter(selector: meter): HTMLMeterElement | Null = js.native
-  @JSName("closest")
-  def closest_mpath(selector: mpath): SVGMPathElement | Null = js.native
-  @JSName("closest")
-  def closest_nav(selector: nav): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_noscript(selector: noscript): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_object(selector: `object`): HTMLObjectElement | Null = js.native
-  @JSName("closest")
-  def closest_ol(selector: ol): HTMLOListElement | Null = js.native
-  @JSName("closest")
-  def closest_optgroup(selector: optgroup): HTMLOptGroupElement | Null = js.native
-  @JSName("closest")
-  def closest_option(selector: option): HTMLOptionElement | Null = js.native
-  @JSName("closest")
-  def closest_output(selector: output): HTMLOutputElement | Null = js.native
-  @JSName("closest")
-  def closest_p(selector: p): HTMLParagraphElement | Null = js.native
-  @JSName("closest")
-  def closest_path(selector: path): SVGPathElement | Null = js.native
-  @JSName("closest")
-  def closest_pattern(selector: pattern): SVGPatternElement | Null = js.native
-  @JSName("closest")
-  def closest_picture(selector: picture): HTMLPictureElement | Null = js.native
-  @JSName("closest")
-  def closest_polygon(selector: polygon): SVGPolygonElement | Null = js.native
-  @JSName("closest")
-  def closest_polyline(selector: polyline): SVGPolylineElement | Null = js.native
-  @JSName("closest")
-  def closest_pre(selector: pre): HTMLPreElement | Null = js.native
-  @JSName("closest")
-  def closest_progress(selector: progress): HTMLProgressElement | Null = js.native
-  @JSName("closest")
-  def closest_q(selector: q): HTMLQuoteElement | Null = js.native
-  @JSName("closest")
-  def closest_radialGradient(selector: radialGradient): SVGRadialGradientElement | Null = js.native
-  @JSName("closest")
-  def closest_rect(selector: rect): SVGRectElement | Null = js.native
-  @JSName("closest")
-  def closest_rp(selector: rp): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_rt(selector: rt): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_ruby(selector: ruby): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_s(selector: s): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_samp(selector: samp): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_script(selector: script): HTMLScriptElement | Null = js.native
-  @JSName("closest")
-  def closest_section(selector: section): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_select(selector: select): HTMLSelectElement | Null = js.native
-  @JSName("closest")
-  def closest_set(selector: set): SVGSetElement | Null = js.native
-  @JSName("closest")
-  def closest_slot(selector: slot): HTMLSlotElement | Null = js.native
-  @JSName("closest")
-  def closest_small(selector: small): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_source(selector: source): HTMLSourceElement | Null = js.native
-  @JSName("closest")
-  def closest_span(selector: span): HTMLSpanElement | Null = js.native
-  @JSName("closest")
-  def closest_stop(selector: stop): SVGStopElement | Null = js.native
-  @JSName("closest")
-  def closest_strong(selector: strong): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_style(selector: style): HTMLStyleElement | Null = js.native
-  @JSName("closest")
-  def closest_sub(selector: sub): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_summary(selector: summary): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_sup(selector: sup): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_svg(selector: svg): SVGSVGElement | Null = js.native
-  @JSName("closest")
-  def closest_switch(selector: switch): SVGSwitchElement | Null = js.native
-  @JSName("closest")
-  def closest_symbol(selector: symbol): SVGSymbolElement | Null = js.native
-  @JSName("closest")
-  def closest_table(selector: table): HTMLTableElement | Null = js.native
-  @JSName("closest")
-  def closest_tbody(selector: tbody): HTMLTableSectionElement | Null = js.native
-  @JSName("closest")
-  def closest_td(selector: td): HTMLTableCellElement | Null = js.native
-  @JSName("closest")
-  def closest_template(selector: template): HTMLTemplateElement | Null = js.native
-  @JSName("closest")
-  def closest_text(selector: text): SVGTextElement | Null = js.native
-  @JSName("closest")
-  def closest_textPath(selector: textPath): SVGTextPathElement | Null = js.native
-  @JSName("closest")
-  def closest_textarea(selector: textarea): HTMLTextAreaElement | Null = js.native
-  @JSName("closest")
-  def closest_tfoot(selector: tfoot): HTMLTableSectionElement | Null = js.native
-  @JSName("closest")
-  def closest_th(selector: th): HTMLTableCellElement | Null = js.native
-  @JSName("closest")
-  def closest_thead(selector: thead): HTMLTableSectionElement | Null = js.native
-  @JSName("closest")
-  def closest_time(selector: time): HTMLTimeElement | Null = js.native
-  @JSName("closest")
-  def closest_title(selector: title): HTMLTitleElement | Null = js.native
-  @JSName("closest")
-  def closest_tr(selector: tr): HTMLTableRowElement | Null = js.native
-  @JSName("closest")
-  def closest_track(selector: track): HTMLTrackElement | Null = js.native
-  @JSName("closest")
-  def closest_tspan(selector: tspan): SVGTSpanElement | Null = js.native
-  @JSName("closest")
-  def closest_u(selector: u): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_ul(selector: ul): HTMLUListElement | Null = js.native
-  @JSName("closest")
-  def closest_use(selector: use): SVGUseElement | Null = js.native
-  @JSName("closest")
-  def closest_var(selector: `var`): HTMLElement | Null = js.native
-  @JSName("closest")
-  def closest_video(selector: video): HTMLVideoElement | Null = js.native
-  @JSName("closest")
-  def closest_view(selector: view): SVGViewElement | Null = js.native
-  @JSName("closest")
-  def closest_wbr(selector: wbr): HTMLElement | Null = js.native
+  @scala.annotation.targetName("closest_a")
+  def closest(selector: "a"): HTMLAnchorElement | Null = js.native
+  /* standard dom */
+  def closest[E /* <: Element */](selectors: java.lang.String): E | Null = js.native
   
   /** Returns the first child that is an element, and null otherwise. */
   /* standard dom */
@@ -643,360 +645,531 @@ trait Element
   /* standard dom */
   def getElementsByClassName(classNames: java.lang.String): HTMLCollectionOf[Element] = js.native
   
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_head")
+  def getElementsByTagName(qualifiedName: "head"): HTMLCollectionOf[HTMLHeadElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_h4")
+  def getElementsByTagName(qualifiedName: "h4"): HTMLCollectionOf[HTMLHeadingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_col")
+  def getElementsByTagName(qualifiedName: "col"): HTMLCollectionOf[HTMLTableColElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_set")
+  def getElementsByTagName(qualifiedName: "set"): HTMLCollectionOf[SVGSetElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feFuncR")
+  def getElementsByTagName(qualifiedName: "feFuncR"): HTMLCollectionOf[SVGFEFuncRElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_ins")
+  def getElementsByTagName(qualifiedName: "ins"): HTMLCollectionOf[HTMLModElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_p")
+  def getElementsByTagName(qualifiedName: "p"): HTMLCollectionOf[HTMLParagraphElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_i")
+  def getElementsByTagName(qualifiedName: "i"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_output")
+  def getElementsByTagName(qualifiedName: "output"): HTMLCollectionOf[HTMLOutputElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_td")
+  def getElementsByTagName(qualifiedName: "td"): HTMLCollectionOf[HTMLTableCellElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_clipPath")
+  def getElementsByTagName(qualifiedName: "clipPath"): HTMLCollectionOf[SVGClipPathElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_span")
+  def getElementsByTagName(qualifiedName: "span"): HTMLCollectionOf[HTMLSpanElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_slot")
+  def getElementsByTagName(qualifiedName: "slot"): HTMLCollectionOf[HTMLSlotElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_caption")
+  def getElementsByTagName(qualifiedName: "caption"): HTMLCollectionOf[HTMLTableCaptionElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feDistantLight")
+  def getElementsByTagName(qualifiedName: "feDistantLight"): HTMLCollectionOf[SVGFEDistantLightElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_switch")
+  def getElementsByTagName(qualifiedName: "switch"): HTMLCollectionOf[SVGSwitchElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_hgroup")
+  def getElementsByTagName(qualifiedName: "hgroup"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_th")
+  def getElementsByTagName(qualifiedName: "th"): HTMLCollectionOf[HTMLTableCellElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_data")
+  def getElementsByTagName(qualifiedName: "data"): HTMLCollectionOf[HTMLDataElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_dd")
+  def getElementsByTagName(qualifiedName: "dd"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_table")
+  def getElementsByTagName(qualifiedName: "table"): HTMLCollectionOf[HTMLTableElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_figcaption")
+  def getElementsByTagName(qualifiedName: "figcaption"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_canvas")
+  def getElementsByTagName(qualifiedName: "canvas"): HTMLCollectionOf[HTMLCanvasElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_audio")
+  def getElementsByTagName(qualifiedName: "audio"): HTMLCollectionOf[HTMLAudioElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feFlood")
+  def getElementsByTagName(qualifiedName: "feFlood"): HTMLCollectionOf[SVGFEFloodElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_h2")
+  def getElementsByTagName(qualifiedName: "h2"): HTMLCollectionOf[HTMLHeadingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_li")
+  def getElementsByTagName(qualifiedName: "li"): HTMLCollectionOf[HTMLLIElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_wbr")
+  def getElementsByTagName(qualifiedName: "wbr"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_object")
+  def getElementsByTagName(qualifiedName: "object"): HTMLCollectionOf[HTMLObjectElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feComposite")
+  def getElementsByTagName(qualifiedName: "feComposite"): HTMLCollectionOf[SVGFECompositeElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_marker")
+  def getElementsByTagName(qualifiedName: "marker"): HTMLCollectionOf[SVGMarkerElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_animateMotion")
+  def getElementsByTagName(qualifiedName: "animateMotion"): HTMLCollectionOf[SVGAnimateMotionElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_dl")
+  def getElementsByTagName(qualifiedName: "dl"): HTMLCollectionOf[HTMLDListElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_track")
+  def getElementsByTagName(qualifiedName: "track"): HTMLCollectionOf[HTMLTrackElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_polyline")
+  def getElementsByTagName(qualifiedName: "polyline"): HTMLCollectionOf[SVGPolylineElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feMorphology")
+  def getElementsByTagName(qualifiedName: "feMorphology"): HTMLCollectionOf[SVGFEMorphologyElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_b")
+  def getElementsByTagName(qualifiedName: "b"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feSpotLight")
+  def getElementsByTagName(qualifiedName: "feSpotLight"): HTMLCollectionOf[SVGFESpotLightElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_progress")
+  def getElementsByTagName(qualifiedName: "progress"): HTMLCollectionOf[HTMLProgressElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_code")
+  def getElementsByTagName(qualifiedName: "code"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_h5")
+  def getElementsByTagName(qualifiedName: "h5"): HTMLCollectionOf[HTMLHeadingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feDropShadow")
+  def getElementsByTagName(qualifiedName: "feDropShadow"): HTMLCollectionOf[SVGFEDropShadowElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_u")
+  def getElementsByTagName(qualifiedName: "u"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feTurbulence")
+  def getElementsByTagName(qualifiedName: "feTurbulence"): HTMLCollectionOf[SVGFETurbulenceElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_meter")
+  def getElementsByTagName(qualifiedName: "meter"): HTMLCollectionOf[HTMLMeterElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_video")
+  def getElementsByTagName(qualifiedName: "video"): HTMLCollectionOf[HTMLVideoElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feDiffuseLighting")
+  def getElementsByTagName(qualifiedName: "feDiffuseLighting"): HTMLCollectionOf[SVGFEDiffuseLightingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_bdo")
+  def getElementsByTagName(qualifiedName: "bdo"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_address")
+  def getElementsByTagName(qualifiedName: "address"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feColorMatrix")
+  def getElementsByTagName(qualifiedName: "feColorMatrix"): HTMLCollectionOf[SVGFEColorMatrixElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_picture")
+  def getElementsByTagName(qualifiedName: "picture"): HTMLCollectionOf[HTMLPictureElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_tfoot")
+  def getElementsByTagName(qualifiedName: "tfoot"): HTMLCollectionOf[HTMLTableSectionElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_summary")
+  def getElementsByTagName(qualifiedName: "summary"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_section")
+  def getElementsByTagName(qualifiedName: "section"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_use")
+  def getElementsByTagName(qualifiedName: "use"): HTMLCollectionOf[SVGUseElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_desc")
+  def getElementsByTagName(qualifiedName: "desc"): HTMLCollectionOf[SVGDescElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_fePointLight")
+  def getElementsByTagName(qualifiedName: "fePointLight"): HTMLCollectionOf[SVGFEPointLightElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_mpath")
+  def getElementsByTagName(qualifiedName: "mpath"): HTMLCollectionOf[SVGMPathElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_em")
+  def getElementsByTagName(qualifiedName: "em"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feMergeNode")
+  def getElementsByTagName(qualifiedName: "feMergeNode"): HTMLCollectionOf[SVGFEMergeNodeElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_map")
+  def getElementsByTagName(qualifiedName: "map"): HTMLCollectionOf[HTMLMapElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_filter")
+  def getElementsByTagName(qualifiedName: "filter"): HTMLCollectionOf[SVGFilterElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_tr")
+  def getElementsByTagName(qualifiedName: "tr"): HTMLCollectionOf[HTMLTableRowElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_optgroup")
+  def getElementsByTagName(qualifiedName: "optgroup"): HTMLCollectionOf[HTMLOptGroupElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_title")
+  def getElementsByTagName(qualifiedName: "title"): HTMLCollectionOf[HTMLTitleElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feTile")
+  def getElementsByTagName(qualifiedName: "feTile"): HTMLCollectionOf[SVGFETileElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feImage")
+  def getElementsByTagName(qualifiedName: "feImage"): HTMLCollectionOf[SVGFEImageElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_text")
+  def getElementsByTagName(qualifiedName: "text"): HTMLCollectionOf[SVGTextElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feDisplacementMap")
+  def getElementsByTagName(qualifiedName: "feDisplacementMap"): HTMLCollectionOf[SVGFEDisplacementMapElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_h1")
+  def getElementsByTagName(qualifiedName: "h1"): HTMLCollectionOf[HTMLHeadingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_button")
+  def getElementsByTagName(qualifiedName: "button"): HTMLCollectionOf[HTMLButtonElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_area")
+  def getElementsByTagName(qualifiedName: "area"): HTMLCollectionOf[HTMLAreaElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_time")
+  def getElementsByTagName(qualifiedName: "time"): HTMLCollectionOf[HTMLTimeElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_dfn")
+  def getElementsByTagName(qualifiedName: "dfn"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_meta")
+  def getElementsByTagName(qualifiedName: "meta"): HTMLCollectionOf[HTMLMetaElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_h6")
+  def getElementsByTagName(qualifiedName: "h6"): HTMLCollectionOf[HTMLHeadingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_circle")
+  def getElementsByTagName(qualifiedName: "circle"): HTMLCollectionOf[SVGCircleElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_link")
+  def getElementsByTagName(qualifiedName: "link"): HTMLCollectionOf[HTMLLinkElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_textarea")
+  def getElementsByTagName(qualifiedName: "textarea"): HTMLCollectionOf[HTMLTextAreaElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feFuncB")
+  def getElementsByTagName(qualifiedName: "feFuncB"): HTMLCollectionOf[SVGFEFuncBElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_abbr")
+  def getElementsByTagName(qualifiedName: "abbr"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_datalist")
+  def getElementsByTagName(qualifiedName: "datalist"): HTMLCollectionOf[HTMLDataListElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feComponentTransfer")
+  def getElementsByTagName(qualifiedName: "feComponentTransfer"): HTMLCollectionOf[SVGFEComponentTransferElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_sup")
+  def getElementsByTagName(qualifiedName: "sup"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feFuncA")
+  def getElementsByTagName(qualifiedName: "feFuncA"): HTMLCollectionOf[SVGFEFuncAElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_ellipse")
+  def getElementsByTagName(qualifiedName: "ellipse"): HTMLCollectionOf[SVGEllipseElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_menu")
+  def getElementsByTagName(qualifiedName: "menu"): HTMLCollectionOf[HTMLMenuElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_figure")
+  def getElementsByTagName(qualifiedName: "figure"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_stop")
+  def getElementsByTagName(qualifiedName: "stop"): HTMLCollectionOf[SVGStopElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_input")
+  def getElementsByTagName(qualifiedName: "input"): HTMLCollectionOf[HTMLInputElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_mask")
+  def getElementsByTagName(qualifiedName: "mask"): HTMLCollectionOf[SVGMaskElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_source")
+  def getElementsByTagName(qualifiedName: "source"): HTMLCollectionOf[HTMLSourceElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_embed")
+  def getElementsByTagName(qualifiedName: "embed"): HTMLCollectionOf[HTMLEmbedElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_ruby")
+  def getElementsByTagName(qualifiedName: "ruby"): HTMLCollectionOf[HTMLElement] = js.native
+  /* standard dom */
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_a")
+  def getElementsByTagName(qualifiedName: "a"): HTMLCollectionOf[HTMLAnchorElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_tspan")
+  def getElementsByTagName(qualifiedName: "tspan"): HTMLCollectionOf[SVGTSpanElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_option")
+  def getElementsByTagName(qualifiedName: "option"): HTMLCollectionOf[HTMLOptionElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_blockquote")
+  def getElementsByTagName(qualifiedName: "blockquote"): HTMLCollectionOf[HTMLQuoteElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_view")
+  def getElementsByTagName(qualifiedName: "view"): HTMLCollectionOf[SVGViewElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_cite")
+  def getElementsByTagName(qualifiedName: "cite"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feFuncG")
+  def getElementsByTagName(qualifiedName: "feFuncG"): HTMLCollectionOf[SVGFEFuncGElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_del")
+  def getElementsByTagName(qualifiedName: "del"): HTMLCollectionOf[HTMLModElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_rect")
+  def getElementsByTagName(qualifiedName: "rect"): HTMLCollectionOf[SVGRectElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_animate")
+  def getElementsByTagName(qualifiedName: "animate"): HTMLCollectionOf[SVGAnimateElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_style")
+  def getElementsByTagName(qualifiedName: "style"): HTMLCollectionOf[HTMLStyleElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_q")
+  def getElementsByTagName(qualifiedName: "q"): HTMLCollectionOf[HTMLQuoteElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_div")
+  def getElementsByTagName(qualifiedName: "div"): HTMLCollectionOf[HTMLDivElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_fieldset")
+  def getElementsByTagName(qualifiedName: "fieldset"): HTMLCollectionOf[HTMLFieldSetElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_header")
+  def getElementsByTagName(qualifiedName: "header"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_line")
+  def getElementsByTagName(qualifiedName: "line"): HTMLCollectionOf[SVGLineElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_h3")
+  def getElementsByTagName(qualifiedName: "h3"): HTMLCollectionOf[HTMLHeadingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_main")
+  def getElementsByTagName(qualifiedName: "main"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_g")
+  def getElementsByTagName(qualifiedName: "g"): HTMLCollectionOf[SVGGElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_path")
+  def getElementsByTagName(qualifiedName: "path"): HTMLCollectionOf[SVGPathElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_small")
+  def getElementsByTagName(qualifiedName: "small"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_animateTransform")
+  def getElementsByTagName(qualifiedName: "animateTransform"): HTMLCollectionOf[SVGAnimateTransformElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_metadata")
+  def getElementsByTagName(qualifiedName: "metadata"): HTMLCollectionOf[SVGMetadataElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_samp")
+  def getElementsByTagName(qualifiedName: "samp"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_aside")
+  def getElementsByTagName(qualifiedName: "aside"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_iframe")
+  def getElementsByTagName(qualifiedName: "iframe"): HTMLCollectionOf[HTMLIFrameElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_body")
+  def getElementsByTagName(qualifiedName: "body"): HTMLCollectionOf[HTMLBodyElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_kbd")
+  def getElementsByTagName(qualifiedName: "kbd"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_details")
+  def getElementsByTagName(qualifiedName: "details"): HTMLCollectionOf[HTMLDetailsElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_script")
+  def getElementsByTagName(qualifiedName: "script"): HTMLCollectionOf[HTMLScriptElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_var")
+  def getElementsByTagName(qualifiedName: "var"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_svg")
+  def getElementsByTagName(qualifiedName: "svg"): HTMLCollectionOf[SVGSVGElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_rp")
+  def getElementsByTagName(qualifiedName: "rp"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_defs")
+  def getElementsByTagName(qualifiedName: "defs"): HTMLCollectionOf[SVGDefsElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feConvolveMatrix")
+  def getElementsByTagName(qualifiedName: "feConvolveMatrix"): HTMLCollectionOf[SVGFEConvolveMatrixElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_sub")
+  def getElementsByTagName(qualifiedName: "sub"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_label")
+  def getElementsByTagName(qualifiedName: "label"): HTMLCollectionOf[HTMLLabelElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_template")
+  def getElementsByTagName(qualifiedName: "template"): HTMLCollectionOf[HTMLTemplateElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_ol")
+  def getElementsByTagName(qualifiedName: "ol"): HTMLCollectionOf[HTMLOListElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feGaussianBlur")
+  def getElementsByTagName(qualifiedName: "feGaussianBlur"): HTMLCollectionOf[SVGFEGaussianBlurElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feSpecularLighting")
+  def getElementsByTagName(qualifiedName: "feSpecularLighting"): HTMLCollectionOf[SVGFESpecularLightingElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_rt")
+  def getElementsByTagName(qualifiedName: "rt"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_footer")
+  def getElementsByTagName(qualifiedName: "footer"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_linearGradient")
+  def getElementsByTagName(qualifiedName: "linearGradient"): HTMLCollectionOf[SVGLinearGradientElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_nav")
+  def getElementsByTagName(qualifiedName: "nav"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_pre")
+  def getElementsByTagName(qualifiedName: "pre"): HTMLCollectionOf[HTMLPreElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_image")
+  def getElementsByTagName(qualifiedName: "image"): HTMLCollectionOf[SVGImageElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_textPath")
+  def getElementsByTagName(qualifiedName: "textPath"): HTMLCollectionOf[SVGTextPathElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_thead")
+  def getElementsByTagName(qualifiedName: "thead"): HTMLCollectionOf[HTMLTableSectionElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feMerge")
+  def getElementsByTagName(qualifiedName: "feMerge"): HTMLCollectionOf[SVGFEMergeElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feOffset")
+  def getElementsByTagName(qualifiedName: "feOffset"): HTMLCollectionOf[SVGFEOffsetElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_dt")
+  def getElementsByTagName(qualifiedName: "dt"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_ul")
+  def getElementsByTagName(qualifiedName: "ul"): HTMLCollectionOf[HTMLUListElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_form")
+  def getElementsByTagName(qualifiedName: "form"): HTMLCollectionOf[HTMLFormElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_radialGradient")
+  def getElementsByTagName(qualifiedName: "radialGradient"): HTMLCollectionOf[SVGRadialGradientElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_select")
+  def getElementsByTagName(qualifiedName: "select"): HTMLCollectionOf[HTMLSelectElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_bdi")
+  def getElementsByTagName(qualifiedName: "bdi"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_s")
+  def getElementsByTagName(qualifiedName: "s"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_foreignObject")
+  def getElementsByTagName(qualifiedName: "foreignObject"): HTMLCollectionOf[SVGForeignObjectElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_symbol")
+  def getElementsByTagName(qualifiedName: "symbol"): HTMLCollectionOf[SVGSymbolElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_mark")
+  def getElementsByTagName(qualifiedName: "mark"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_colgroup")
+  def getElementsByTagName(qualifiedName: "colgroup"): HTMLCollectionOf[HTMLTableColElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_html")
+  def getElementsByTagName(qualifiedName: "html"): HTMLCollectionOf[HTMLHtmlElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_strong")
+  def getElementsByTagName(qualifiedName: "strong"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_feBlend")
+  def getElementsByTagName(qualifiedName: "feBlend"): HTMLCollectionOf[SVGFEBlendElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_pattern")
+  def getElementsByTagName(qualifiedName: "pattern"): HTMLCollectionOf[SVGPatternElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_tbody")
+  def getElementsByTagName(qualifiedName: "tbody"): HTMLCollectionOf[HTMLTableSectionElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_br")
+  def getElementsByTagName(qualifiedName: "br"): HTMLCollectionOf[HTMLBRElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_article")
+  def getElementsByTagName(qualifiedName: "article"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_base")
+  def getElementsByTagName(qualifiedName: "base"): HTMLCollectionOf[HTMLBaseElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_noscript")
+  def getElementsByTagName(qualifiedName: "noscript"): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_polygon")
+  def getElementsByTagName(qualifiedName: "polygon"): HTMLCollectionOf[SVGPolygonElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_hr")
+  def getElementsByTagName(qualifiedName: "hr"): HTMLCollectionOf[HTMLHRElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_img")
+  def getElementsByTagName(qualifiedName: "img"): HTMLCollectionOf[HTMLImageElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_legend")
+  def getElementsByTagName(qualifiedName: "legend"): HTMLCollectionOf[HTMLLegendElement] = js.native
+  @JSName("getElementsByTagName")
+  @scala.annotation.targetName("getElementsByTagName_dialog")
+  def getElementsByTagName(qualifiedName: "dialog"): HTMLCollectionOf[HTMLDialogElement] = js.native
   /* standard dom */
   def getElementsByTagName(qualifiedName: java.lang.String): HTMLCollectionOf[Element] = js.native
   
   /* standard dom */
+  @JSName("getElementsByTagNameNS")
+  @scala.annotation.targetName("getElementsByTagNameNS_httpwwww3org1999xhtml")
+  def getElementsByTagNameNS(namespaceURI: "http://www.w3.org/1999/xhtml", localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
+  /* standard dom */
+  @JSName("getElementsByTagNameNS")
+  @scala.annotation.targetName("getElementsByTagNameNS_httpwwww3org2000svg")
+  def getElementsByTagNameNS(namespaceURI: "http://www.w3.org/2000/svg", localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
+  /* standard dom */
   def getElementsByTagNameNS(namespace: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
   def getElementsByTagNameNS(namespace: Null, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
-  /* standard dom */
-  @JSName("getElementsByTagNameNS")
-  def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
-  /* standard dom */
-  @JSName("getElementsByTagNameNS")
-  def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
-  
-  /* standard dom */
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_a(qualifiedName: a): HTMLCollectionOf[HTMLAnchorElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_abbr(qualifiedName: abbr): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_address(qualifiedName: address): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_animate(qualifiedName: animate): HTMLCollectionOf[SVGAnimateElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_animateMotion(qualifiedName: animateMotion): HTMLCollectionOf[SVGAnimateMotionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_animateTransform(qualifiedName: animateTransform): HTMLCollectionOf[SVGAnimateTransformElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_area(qualifiedName: area): HTMLCollectionOf[HTMLAreaElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_article(qualifiedName: article): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_aside(qualifiedName: aside): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_audio(qualifiedName: audio): HTMLCollectionOf[HTMLAudioElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_b(qualifiedName: b): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_base(qualifiedName: base): HTMLCollectionOf[HTMLBaseElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_bdi(qualifiedName: bdi): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_bdo(qualifiedName: bdo): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_blockquote(qualifiedName: blockquote): HTMLCollectionOf[HTMLQuoteElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_body(qualifiedName: body): HTMLCollectionOf[HTMLBodyElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_br(qualifiedName: br): HTMLCollectionOf[HTMLBRElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_button(qualifiedName: button): HTMLCollectionOf[HTMLButtonElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_canvas(qualifiedName: canvas): HTMLCollectionOf[HTMLCanvasElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_caption(qualifiedName: caption): HTMLCollectionOf[HTMLTableCaptionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_circle(qualifiedName: circle): HTMLCollectionOf[SVGCircleElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_cite(qualifiedName: cite): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_clipPath(qualifiedName: clipPath): HTMLCollectionOf[SVGClipPathElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_code(qualifiedName: code): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_col(qualifiedName: col): HTMLCollectionOf[HTMLTableColElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_colgroup(qualifiedName: colgroup): HTMLCollectionOf[HTMLTableColElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_data(qualifiedName: data): HTMLCollectionOf[HTMLDataElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_datalist(qualifiedName: datalist): HTMLCollectionOf[HTMLDataListElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dd(qualifiedName: dd): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_defs(qualifiedName: defs): HTMLCollectionOf[SVGDefsElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_del(qualifiedName: del): HTMLCollectionOf[HTMLModElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_desc(qualifiedName: desc): HTMLCollectionOf[SVGDescElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_details(qualifiedName: details): HTMLCollectionOf[HTMLDetailsElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dfn(qualifiedName: dfn): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dialog(qualifiedName: dialog): HTMLCollectionOf[HTMLDialogElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_div(qualifiedName: div): HTMLCollectionOf[HTMLDivElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dl(qualifiedName: dl): HTMLCollectionOf[HTMLDListElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dt(qualifiedName: dt): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ellipse(qualifiedName: ellipse): HTMLCollectionOf[SVGEllipseElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_em(qualifiedName: em): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_embed(qualifiedName: embed): HTMLCollectionOf[HTMLEmbedElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feBlend(qualifiedName: feBlend): HTMLCollectionOf[SVGFEBlendElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feColorMatrix(qualifiedName: feColorMatrix): HTMLCollectionOf[SVGFEColorMatrixElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feComponentTransfer(qualifiedName: feComponentTransfer): HTMLCollectionOf[SVGFEComponentTransferElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feComposite(qualifiedName: feComposite): HTMLCollectionOf[SVGFECompositeElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feConvolveMatrix(qualifiedName: feConvolveMatrix): HTMLCollectionOf[SVGFEConvolveMatrixElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feDiffuseLighting(qualifiedName: feDiffuseLighting): HTMLCollectionOf[SVGFEDiffuseLightingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feDisplacementMap(qualifiedName: feDisplacementMap): HTMLCollectionOf[SVGFEDisplacementMapElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feDistantLight(qualifiedName: feDistantLight): HTMLCollectionOf[SVGFEDistantLightElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feDropShadow(qualifiedName: feDropShadow): HTMLCollectionOf[SVGFEDropShadowElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feFlood(qualifiedName: feFlood): HTMLCollectionOf[SVGFEFloodElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feFuncA(qualifiedName: feFuncA): HTMLCollectionOf[SVGFEFuncAElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feFuncB(qualifiedName: feFuncB): HTMLCollectionOf[SVGFEFuncBElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feFuncG(qualifiedName: feFuncG): HTMLCollectionOf[SVGFEFuncGElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feFuncR(qualifiedName: feFuncR): HTMLCollectionOf[SVGFEFuncRElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feGaussianBlur(qualifiedName: feGaussianBlur): HTMLCollectionOf[SVGFEGaussianBlurElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feImage(qualifiedName: feImage): HTMLCollectionOf[SVGFEImageElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feMerge(qualifiedName: feMerge): HTMLCollectionOf[SVGFEMergeElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feMergeNode(qualifiedName: feMergeNode): HTMLCollectionOf[SVGFEMergeNodeElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feMorphology(qualifiedName: feMorphology): HTMLCollectionOf[SVGFEMorphologyElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feOffset(qualifiedName: feOffset): HTMLCollectionOf[SVGFEOffsetElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fePointLight(qualifiedName: fePointLight): HTMLCollectionOf[SVGFEPointLightElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feSpecularLighting(qualifiedName: feSpecularLighting): HTMLCollectionOf[SVGFESpecularLightingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feSpotLight(qualifiedName: feSpotLight): HTMLCollectionOf[SVGFESpotLightElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feTile(qualifiedName: feTile): HTMLCollectionOf[SVGFETileElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feTurbulence(qualifiedName: feTurbulence): HTMLCollectionOf[SVGFETurbulenceElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fieldset(qualifiedName: fieldset): HTMLCollectionOf[HTMLFieldSetElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_figcaption(qualifiedName: figcaption): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_figure(qualifiedName: figure): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_filter(qualifiedName: filter): HTMLCollectionOf[SVGFilterElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_footer(qualifiedName: footer): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_foreignObject(qualifiedName: foreignObject): HTMLCollectionOf[SVGForeignObjectElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_form(qualifiedName: form): HTMLCollectionOf[HTMLFormElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_g(qualifiedName: g): HTMLCollectionOf[SVGGElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h1(qualifiedName: h1): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h2(qualifiedName: h2): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h3(qualifiedName: h3): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h4(qualifiedName: h4): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h5(qualifiedName: h5): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h6(qualifiedName: h6): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_head(qualifiedName: head): HTMLCollectionOf[HTMLHeadElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_header(qualifiedName: header): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_hgroup(qualifiedName: hgroup): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_hr(qualifiedName: hr): HTMLCollectionOf[HTMLHRElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_html(qualifiedName: html): HTMLCollectionOf[HTMLHtmlElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_i(qualifiedName: i): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_iframe(qualifiedName: iframe): HTMLCollectionOf[HTMLIFrameElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_image(qualifiedName: image): HTMLCollectionOf[SVGImageElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_img(qualifiedName: img): HTMLCollectionOf[HTMLImageElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_input(qualifiedName: input): HTMLCollectionOf[HTMLInputElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ins(qualifiedName: ins): HTMLCollectionOf[HTMLModElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_kbd(qualifiedName: kbd): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_label(qualifiedName: label): HTMLCollectionOf[HTMLLabelElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_legend(qualifiedName: legend): HTMLCollectionOf[HTMLLegendElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_li(qualifiedName: li): HTMLCollectionOf[HTMLLIElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_line(qualifiedName: line): HTMLCollectionOf[SVGLineElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_linearGradient(qualifiedName: linearGradient): HTMLCollectionOf[SVGLinearGradientElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_link(qualifiedName: link): HTMLCollectionOf[HTMLLinkElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_main(qualifiedName: main): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_map(qualifiedName: map): HTMLCollectionOf[HTMLMapElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_mark(qualifiedName: mark): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_marker(qualifiedName: marker): HTMLCollectionOf[SVGMarkerElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_mask(qualifiedName: mask): HTMLCollectionOf[SVGMaskElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_menu(qualifiedName: menu): HTMLCollectionOf[HTMLMenuElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_meta(qualifiedName: meta): HTMLCollectionOf[HTMLMetaElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_metadata(qualifiedName: metadata): HTMLCollectionOf[SVGMetadataElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_meter(qualifiedName: meter): HTMLCollectionOf[HTMLMeterElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_mpath(qualifiedName: mpath): HTMLCollectionOf[SVGMPathElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_nav(qualifiedName: nav): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_noscript(qualifiedName: noscript): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_object(qualifiedName: `object`): HTMLCollectionOf[HTMLObjectElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ol(qualifiedName: ol): HTMLCollectionOf[HTMLOListElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_optgroup(qualifiedName: optgroup): HTMLCollectionOf[HTMLOptGroupElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_option(qualifiedName: option): HTMLCollectionOf[HTMLOptionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_output(qualifiedName: output): HTMLCollectionOf[HTMLOutputElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_p(qualifiedName: p): HTMLCollectionOf[HTMLParagraphElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_path(qualifiedName: path): HTMLCollectionOf[SVGPathElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_pattern(qualifiedName: pattern): HTMLCollectionOf[SVGPatternElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_picture(qualifiedName: picture): HTMLCollectionOf[HTMLPictureElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_polygon(qualifiedName: polygon): HTMLCollectionOf[SVGPolygonElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_polyline(qualifiedName: polyline): HTMLCollectionOf[SVGPolylineElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_pre(qualifiedName: pre): HTMLCollectionOf[HTMLPreElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_progress(qualifiedName: progress): HTMLCollectionOf[HTMLProgressElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_q(qualifiedName: q): HTMLCollectionOf[HTMLQuoteElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_radialGradient(qualifiedName: radialGradient): HTMLCollectionOf[SVGRadialGradientElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_rect(qualifiedName: rect): HTMLCollectionOf[SVGRectElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_rp(qualifiedName: rp): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_rt(qualifiedName: rt): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ruby(qualifiedName: ruby): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_s(qualifiedName: s): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_samp(qualifiedName: samp): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_script(qualifiedName: script): HTMLCollectionOf[HTMLScriptElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_section(qualifiedName: section): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_select(qualifiedName: select): HTMLCollectionOf[HTMLSelectElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_set(qualifiedName: set): HTMLCollectionOf[SVGSetElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_slot(qualifiedName: slot): HTMLCollectionOf[HTMLSlotElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_small(qualifiedName: small): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_source(qualifiedName: source): HTMLCollectionOf[HTMLSourceElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_span(qualifiedName: span): HTMLCollectionOf[HTMLSpanElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_stop(qualifiedName: stop): HTMLCollectionOf[SVGStopElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_strong(qualifiedName: strong): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_style(qualifiedName: style): HTMLCollectionOf[HTMLStyleElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_sub(qualifiedName: sub): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_summary(qualifiedName: summary): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_sup(qualifiedName: sup): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_svg(qualifiedName: svg): HTMLCollectionOf[SVGSVGElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_switch(qualifiedName: switch): HTMLCollectionOf[SVGSwitchElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_symbol(qualifiedName: symbol): HTMLCollectionOf[SVGSymbolElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_table(qualifiedName: table): HTMLCollectionOf[HTMLTableElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_tbody(qualifiedName: tbody): HTMLCollectionOf[HTMLTableSectionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_td(qualifiedName: td): HTMLCollectionOf[HTMLTableCellElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_template(qualifiedName: template): HTMLCollectionOf[HTMLTemplateElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_text(qualifiedName: text): HTMLCollectionOf[SVGTextElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_textPath(qualifiedName: textPath): HTMLCollectionOf[SVGTextPathElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_textarea(qualifiedName: textarea): HTMLCollectionOf[HTMLTextAreaElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_tfoot(qualifiedName: tfoot): HTMLCollectionOf[HTMLTableSectionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_th(qualifiedName: th): HTMLCollectionOf[HTMLTableCellElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_thead(qualifiedName: thead): HTMLCollectionOf[HTMLTableSectionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_time(qualifiedName: time): HTMLCollectionOf[HTMLTimeElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_title(qualifiedName: title): HTMLCollectionOf[HTMLTitleElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_tr(qualifiedName: tr): HTMLCollectionOf[HTMLTableRowElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_track(qualifiedName: track): HTMLCollectionOf[HTMLTrackElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_tspan(qualifiedName: tspan): HTMLCollectionOf[SVGTSpanElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_u(qualifiedName: u): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ul(qualifiedName: ul): HTMLCollectionOf[HTMLUListElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_use(qualifiedName: use): HTMLCollectionOf[SVGUseElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_var(qualifiedName: `var`): HTMLCollectionOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_video(qualifiedName: video): HTMLCollectionOf[HTMLVideoElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_view(qualifiedName: view): HTMLCollectionOf[SVGViewElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_wbr(qualifiedName: wbr): HTMLCollectionOf[HTMLElement] = js.native
   
   /** Returns true if element has an attribute whose qualified name is qualifiedName, and false otherwise. */
   /* standard dom */
@@ -1071,696 +1244,1035 @@ trait Element
   /* standard dom */
   def prepend(nodes: (Node | java.lang.String)*): Unit = js.native
   
-  /* standard dom */
-  def querySelector[E /* <: Element */](selectors: java.lang.String): E | Null = js.native
-  
-  /* standard dom */
-  def querySelectorAll[E /* <: Element */](selectors: java.lang.String): NodeListOf[E] = js.native
-  /** Returns all element descendants of node that match selectors. */
-  /* standard dom */
-  @JSName("querySelectorAll")
-  def querySelectorAll_a(selectors: a): NodeListOf[HTMLAnchorElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_abbr(selectors: abbr): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_address(selectors: address): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_animate(selectors: animate): NodeListOf[SVGAnimateElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_animateMotion(selectors: animateMotion): NodeListOf[SVGAnimateMotionElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_animateTransform(selectors: animateTransform): NodeListOf[SVGAnimateTransformElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_area(selectors: area): NodeListOf[HTMLAreaElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_article(selectors: article): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_aside(selectors: aside): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_audio(selectors: audio): NodeListOf[HTMLAudioElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_b(selectors: b): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_base(selectors: base): NodeListOf[HTMLBaseElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_bdi(selectors: bdi): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_bdo(selectors: bdo): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_blockquote(selectors: blockquote): NodeListOf[HTMLQuoteElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_body(selectors: body): NodeListOf[HTMLBodyElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_br(selectors: br): NodeListOf[HTMLBRElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_button(selectors: button): NodeListOf[HTMLButtonElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_canvas(selectors: canvas): NodeListOf[HTMLCanvasElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_caption(selectors: caption): NodeListOf[HTMLTableCaptionElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_circle(selectors: circle): NodeListOf[SVGCircleElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_cite(selectors: cite): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_clipPath(selectors: clipPath): NodeListOf[SVGClipPathElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_code(selectors: code): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_col(selectors: col): NodeListOf[HTMLTableColElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_colgroup(selectors: colgroup): NodeListOf[HTMLTableColElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_data(selectors: data): NodeListOf[HTMLDataElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_datalist(selectors: datalist): NodeListOf[HTMLDataListElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_dd(selectors: dd): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_defs(selectors: defs): NodeListOf[SVGDefsElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_del(selectors: del): NodeListOf[HTMLModElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_desc(selectors: desc): NodeListOf[SVGDescElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_details(selectors: details): NodeListOf[HTMLDetailsElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_dfn(selectors: dfn): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_dialog(selectors: dialog): NodeListOf[HTMLDialogElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_div(selectors: div): NodeListOf[HTMLDivElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_dl(selectors: dl): NodeListOf[HTMLDListElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_dt(selectors: dt): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_ellipse(selectors: ellipse): NodeListOf[SVGEllipseElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_em(selectors: em): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_embed(selectors: embed): NodeListOf[HTMLEmbedElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feBlend(selectors: feBlend): NodeListOf[SVGFEBlendElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feColorMatrix(selectors: feColorMatrix): NodeListOf[SVGFEColorMatrixElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feComponentTransfer(selectors: feComponentTransfer): NodeListOf[SVGFEComponentTransferElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feComposite(selectors: feComposite): NodeListOf[SVGFECompositeElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feConvolveMatrix(selectors: feConvolveMatrix): NodeListOf[SVGFEConvolveMatrixElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feDiffuseLighting(selectors: feDiffuseLighting): NodeListOf[SVGFEDiffuseLightingElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feDisplacementMap(selectors: feDisplacementMap): NodeListOf[SVGFEDisplacementMapElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feDistantLight(selectors: feDistantLight): NodeListOf[SVGFEDistantLightElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feDropShadow(selectors: feDropShadow): NodeListOf[SVGFEDropShadowElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feFlood(selectors: feFlood): NodeListOf[SVGFEFloodElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feFuncA(selectors: feFuncA): NodeListOf[SVGFEFuncAElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feFuncB(selectors: feFuncB): NodeListOf[SVGFEFuncBElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feFuncG(selectors: feFuncG): NodeListOf[SVGFEFuncGElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feFuncR(selectors: feFuncR): NodeListOf[SVGFEFuncRElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feGaussianBlur(selectors: feGaussianBlur): NodeListOf[SVGFEGaussianBlurElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feImage(selectors: feImage): NodeListOf[SVGFEImageElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feMerge(selectors: feMerge): NodeListOf[SVGFEMergeElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feMergeNode(selectors: feMergeNode): NodeListOf[SVGFEMergeNodeElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feMorphology(selectors: feMorphology): NodeListOf[SVGFEMorphologyElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feOffset(selectors: feOffset): NodeListOf[SVGFEOffsetElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_fePointLight(selectors: fePointLight): NodeListOf[SVGFEPointLightElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feSpecularLighting(selectors: feSpecularLighting): NodeListOf[SVGFESpecularLightingElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feSpotLight(selectors: feSpotLight): NodeListOf[SVGFESpotLightElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feTile(selectors: feTile): NodeListOf[SVGFETileElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_feTurbulence(selectors: feTurbulence): NodeListOf[SVGFETurbulenceElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_fieldset(selectors: fieldset): NodeListOf[HTMLFieldSetElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_figcaption(selectors: figcaption): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_figure(selectors: figure): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_filter(selectors: filter): NodeListOf[SVGFilterElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_footer(selectors: footer): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_foreignObject(selectors: foreignObject): NodeListOf[SVGForeignObjectElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_form(selectors: form): NodeListOf[HTMLFormElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_g(selectors: g): NodeListOf[SVGGElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_h1(selectors: h1): NodeListOf[HTMLHeadingElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_h2(selectors: h2): NodeListOf[HTMLHeadingElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_h3(selectors: h3): NodeListOf[HTMLHeadingElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_h4(selectors: h4): NodeListOf[HTMLHeadingElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_h5(selectors: h5): NodeListOf[HTMLHeadingElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_h6(selectors: h6): NodeListOf[HTMLHeadingElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_head(selectors: head): NodeListOf[HTMLHeadElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_header(selectors: header): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_hgroup(selectors: hgroup): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_hr(selectors: hr): NodeListOf[HTMLHRElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_html(selectors: html): NodeListOf[HTMLHtmlElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_i(selectors: i): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_iframe(selectors: iframe): NodeListOf[HTMLIFrameElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_image(selectors: image): NodeListOf[SVGImageElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_img(selectors: img): NodeListOf[HTMLImageElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_input(selectors: input): NodeListOf[HTMLInputElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_ins(selectors: ins): NodeListOf[HTMLModElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_kbd(selectors: kbd): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_label(selectors: label): NodeListOf[HTMLLabelElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_legend(selectors: legend): NodeListOf[HTMLLegendElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_li(selectors: li): NodeListOf[HTMLLIElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_line(selectors: line): NodeListOf[SVGLineElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_linearGradient(selectors: linearGradient): NodeListOf[SVGLinearGradientElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_link(selectors: link): NodeListOf[HTMLLinkElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_main(selectors: main): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_map(selectors: map): NodeListOf[HTMLMapElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_mark(selectors: mark): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_marker(selectors: marker): NodeListOf[SVGMarkerElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_mask(selectors: mask): NodeListOf[SVGMaskElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_menu(selectors: menu): NodeListOf[HTMLMenuElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_meta(selectors: meta): NodeListOf[HTMLMetaElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_metadata(selectors: metadata): NodeListOf[SVGMetadataElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_meter(selectors: meter): NodeListOf[HTMLMeterElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_mpath(selectors: mpath): NodeListOf[SVGMPathElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_nav(selectors: nav): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_noscript(selectors: noscript): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_object(selectors: `object`): NodeListOf[HTMLObjectElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_ol(selectors: ol): NodeListOf[HTMLOListElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_optgroup(selectors: optgroup): NodeListOf[HTMLOptGroupElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_option(selectors: option): NodeListOf[HTMLOptionElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_output(selectors: output): NodeListOf[HTMLOutputElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_p(selectors: p): NodeListOf[HTMLParagraphElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_path(selectors: path): NodeListOf[SVGPathElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_pattern(selectors: pattern): NodeListOf[SVGPatternElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_picture(selectors: picture): NodeListOf[HTMLPictureElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_polygon(selectors: polygon): NodeListOf[SVGPolygonElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_polyline(selectors: polyline): NodeListOf[SVGPolylineElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_pre(selectors: pre): NodeListOf[HTMLPreElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_progress(selectors: progress): NodeListOf[HTMLProgressElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_q(selectors: q): NodeListOf[HTMLQuoteElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_radialGradient(selectors: radialGradient): NodeListOf[SVGRadialGradientElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_rect(selectors: rect): NodeListOf[SVGRectElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_rp(selectors: rp): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_rt(selectors: rt): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_ruby(selectors: ruby): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_s(selectors: s): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_samp(selectors: samp): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_script(selectors: script): NodeListOf[HTMLScriptElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_section(selectors: section): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_select(selectors: select): NodeListOf[HTMLSelectElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_set(selectors: set): NodeListOf[SVGSetElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_slot(selectors: slot): NodeListOf[HTMLSlotElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_small(selectors: small): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_source(selectors: source): NodeListOf[HTMLSourceElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_span(selectors: span): NodeListOf[HTMLSpanElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_stop(selectors: stop): NodeListOf[SVGStopElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_strong(selectors: strong): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_style(selectors: style): NodeListOf[HTMLStyleElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_sub(selectors: sub): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_summary(selectors: summary): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_sup(selectors: sup): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_svg(selectors: svg): NodeListOf[SVGSVGElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_switch(selectors: switch): NodeListOf[SVGSwitchElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_symbol(selectors: symbol): NodeListOf[SVGSymbolElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_table(selectors: table): NodeListOf[HTMLTableElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_tbody(selectors: tbody): NodeListOf[HTMLTableSectionElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_td(selectors: td): NodeListOf[HTMLTableCellElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_template(selectors: template): NodeListOf[HTMLTemplateElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_text(selectors: text): NodeListOf[SVGTextElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_textPath(selectors: textPath): NodeListOf[SVGTextPathElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_textarea(selectors: textarea): NodeListOf[HTMLTextAreaElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_tfoot(selectors: tfoot): NodeListOf[HTMLTableSectionElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_th(selectors: th): NodeListOf[HTMLTableCellElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_thead(selectors: thead): NodeListOf[HTMLTableSectionElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_time(selectors: time): NodeListOf[HTMLTimeElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_title(selectors: title): NodeListOf[HTMLTitleElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_tr(selectors: tr): NodeListOf[HTMLTableRowElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_track(selectors: track): NodeListOf[HTMLTrackElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_tspan(selectors: tspan): NodeListOf[SVGTSpanElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_u(selectors: u): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_ul(selectors: ul): NodeListOf[HTMLUListElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_use(selectors: use): NodeListOf[SVGUseElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_var(selectors: `var`): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_video(selectors: video): NodeListOf[HTMLVideoElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_view(selectors: view): NodeListOf[SVGViewElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_wbr(selectors: wbr): NodeListOf[HTMLElement] = js.native
-  
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_feImage")
+  def querySelector(selectors: "feImage"): SVGFEImageElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_rect")
+  def querySelector(selectors: "rect"): SVGRectElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_del")
+  def querySelector(selectors: "del"): HTMLModElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_h5")
+  def querySelector(selectors: "h5"): HTMLHeadingElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_feColorMatrix")
+  def querySelector(selectors: "feColorMatrix"): SVGFEColorMatrixElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_track")
+  def querySelector(selectors: "track"): HTMLTrackElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_ol")
+  def querySelector(selectors: "ol"): HTMLOListElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_em")
+  def querySelector(selectors: "em"): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_g")
+  def querySelector(selectors: "g"): SVGGElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_h4")
+  def querySelector(selectors: "h4"): HTMLHeadingElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_feSpotLight")
+  def querySelector(selectors: "feSpotLight"): SVGFESpotLightElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_td")
+  def querySelector(selectors: "td"): HTMLTableCellElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_br")
+  def querySelector(selectors: "br"): HTMLBRElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_thead")
+  def querySelector(selectors: "thead"): HTMLTableSectionElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_figure")
+  def querySelector(selectors: "figure"): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_div")
+  def querySelector(selectors: "div"): HTMLDivElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_sub")
+  def querySelector(selectors: "sub"): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_abbr")
+  def querySelector(selectors: "abbr"): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_blockquote")
+  def querySelector(selectors: "blockquote"): HTMLQuoteElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_feDistantLight")
+  def querySelector(selectors: "feDistantLight"): SVGFEDistantLightElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_footer")
+  def querySelector(selectors: "footer"): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_feFuncR")
+  def querySelector(selectors: "feFuncR"): SVGFEFuncRElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_body")
+  def querySelector(selectors: "body"): HTMLBodyElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_mpath")
+  def querySelector(selectors: "mpath"): SVGMPathElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_input")
+  def querySelector(selectors: "input"): HTMLInputElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_feComposite")
+  def querySelector(selectors: "feComposite"): SVGFECompositeElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_textarea")
+  def querySelector(selectors: "textarea"): HTMLTextAreaElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_form")
+  def querySelector(selectors: "form"): HTMLFormElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_s")
+  def querySelector(selectors: "s"): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_select")
+  def querySelector(selectors: "select"): HTMLSelectElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_script")
+  def querySelector(selectors: "script"): HTMLScriptElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_feFuncA")
+  def querySelector(selectors: "feFuncA"): SVGFEFuncAElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_col")
+  def querySelector(selectors: "col"): HTMLTableColElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_link")
+  def querySelector(selectors: "link"): HTMLLinkElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_feTile")
+  def querySelector(selectors: "feTile"): SVGFETileElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_picture")
+  def querySelector(selectors: "picture"): HTMLPictureElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_foreignObject")
+  def querySelector(selectors: "foreignObject"): SVGForeignObjectElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_animate")
+  def querySelector(selectors: "animate"): SVGAnimateElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_bdo")
+  def querySelector(selectors: "bdo"): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_animateTransform")
+  def querySelector(selectors: "animateTransform"): SVGAnimateTransformElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_filter")
+  def querySelector(selectors: "filter"): SVGFilterElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_svg")
+  def querySelector(selectors: "svg"): SVGSVGElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_caption")
+  def querySelector(selectors: "caption"): HTMLTableCaptionElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_ruby")
+  def querySelector(selectors: "ruby"): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_feBlend")
+  def querySelector(selectors: "feBlend"): SVGFEBlendElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_tr")
+  def querySelector(selectors: "tr"): HTMLTableRowElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_h6")
+  def querySelector(selectors: "h6"): HTMLHeadingElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_use")
+  def querySelector(selectors: "use"): SVGUseElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_tfoot")
+  def querySelector(selectors: "tfoot"): HTMLTableSectionElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_output")
+  def querySelector(selectors: "output"): HTMLOutputElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_dialog")
+  def querySelector(selectors: "dialog"): HTMLDialogElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_audio")
+  def querySelector(selectors: "audio"): HTMLAudioElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_colgroup")
+  def querySelector(selectors: "colgroup"): HTMLTableColElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_option")
+  def querySelector(selectors: "option"): HTMLOptionElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_path")
+  def querySelector(selectors: "path"): SVGPathElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_feMorphology")
+  def querySelector(selectors: "feMorphology"): SVGFEMorphologyElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_feOffset")
+  def querySelector(selectors: "feOffset"): SVGFEOffsetElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_img")
+  def querySelector(selectors: "img"): HTMLImageElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_strong")
+  def querySelector(selectors: "strong"): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_video")
+  def querySelector(selectors: "video"): HTMLVideoElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_menu")
+  def querySelector(selectors: "menu"): HTMLMenuElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_rt")
+  def querySelector(selectors: "rt"): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_feMerge")
+  def querySelector(selectors: "feMerge"): SVGFEMergeElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_main")
+  def querySelector(selectors: "main"): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_sup")
+  def querySelector(selectors: "sup"): HTMLElement | Null = js.native
   /** Returns the first element that is a descendant of node that matches selectors. */
   /* standard dom */
   @JSName("querySelector")
-  def querySelector_a(selectors: a): HTMLAnchorElement | Null = js.native
+  @scala.annotation.targetName("querySelector_a")
+  def querySelector(selectors: "a"): HTMLAnchorElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_abbr(selectors: abbr): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_fieldset")
+  def querySelector(selectors: "fieldset"): HTMLFieldSetElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_address(selectors: address): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_image")
+  def querySelector(selectors: "image"): SVGImageElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_animate(selectors: animate): SVGAnimateElement | Null = js.native
+  @scala.annotation.targetName("querySelector_switch")
+  def querySelector(selectors: "switch"): SVGSwitchElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_animateMotion(selectors: animateMotion): SVGAnimateMotionElement | Null = js.native
+  @scala.annotation.targetName("querySelector_wbr")
+  def querySelector(selectors: "wbr"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_animateTransform(selectors: animateTransform): SVGAnimateTransformElement | Null = js.native
+  @scala.annotation.targetName("querySelector_p")
+  def querySelector(selectors: "p"): HTMLParagraphElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_area(selectors: area): HTMLAreaElement | Null = js.native
+  @scala.annotation.targetName("querySelector_style")
+  def querySelector(selectors: "style"): HTMLStyleElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_article(selectors: article): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_h2")
+  def querySelector(selectors: "h2"): HTMLHeadingElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_aside(selectors: aside): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_feDropShadow")
+  def querySelector(selectors: "feDropShadow"): SVGFEDropShadowElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_audio(selectors: audio): HTMLAudioElement | Null = js.native
+  @scala.annotation.targetName("querySelector_pattern")
+  def querySelector(selectors: "pattern"): SVGPatternElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_b(selectors: b): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_marker")
+  def querySelector(selectors: "marker"): SVGMarkerElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_base(selectors: base): HTMLBaseElement | Null = js.native
+  @scala.annotation.targetName("querySelector_mark")
+  def querySelector(selectors: "mark"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_bdi(selectors: bdi): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_linearGradient")
+  def querySelector(selectors: "linearGradient"): SVGLinearGradientElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_bdo(selectors: bdo): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_feFlood")
+  def querySelector(selectors: "feFlood"): SVGFEFloodElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_blockquote(selectors: blockquote): HTMLQuoteElement | Null = js.native
+  @scala.annotation.targetName("querySelector_th")
+  def querySelector(selectors: "th"): HTMLTableCellElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_body(selectors: body): HTMLBodyElement | Null = js.native
+  @scala.annotation.targetName("querySelector_set")
+  def querySelector(selectors: "set"): SVGSetElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_br(selectors: br): HTMLBRElement | Null = js.native
+  @scala.annotation.targetName("querySelector_animateMotion")
+  def querySelector(selectors: "animateMotion"): SVGAnimateMotionElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_button(selectors: button): HTMLButtonElement | Null = js.native
+  @scala.annotation.targetName("querySelector_feGaussianBlur")
+  def querySelector(selectors: "feGaussianBlur"): SVGFEGaussianBlurElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_canvas(selectors: canvas): HTMLCanvasElement | Null = js.native
+  @scala.annotation.targetName("querySelector_desc")
+  def querySelector(selectors: "desc"): SVGDescElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_caption(selectors: caption): HTMLTableCaptionElement | Null = js.native
+  @scala.annotation.targetName("querySelector_pre")
+  def querySelector(selectors: "pre"): HTMLPreElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_circle(selectors: circle): SVGCircleElement | Null = js.native
+  @scala.annotation.targetName("querySelector_meta")
+  def querySelector(selectors: "meta"): HTMLMetaElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_cite(selectors: cite): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_li")
+  def querySelector(selectors: "li"): HTMLLIElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_clipPath(selectors: clipPath): SVGClipPathElement | Null = js.native
+  @scala.annotation.targetName("querySelector_span")
+  def querySelector(selectors: "span"): HTMLSpanElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_code(selectors: code): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_polyline")
+  def querySelector(selectors: "polyline"): SVGPolylineElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_col(selectors: col): HTMLTableColElement | Null = js.native
+  @scala.annotation.targetName("querySelector_head")
+  def querySelector(selectors: "head"): HTMLHeadElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_colgroup(selectors: colgroup): HTMLTableColElement | Null = js.native
+  @scala.annotation.targetName("querySelector_address")
+  def querySelector(selectors: "address"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_data(selectors: data): HTMLDataElement | Null = js.native
+  @scala.annotation.targetName("querySelector_dd")
+  def querySelector(selectors: "dd"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_datalist(selectors: datalist): HTMLDataListElement | Null = js.native
+  @scala.annotation.targetName("querySelector_time")
+  def querySelector(selectors: "time"): HTMLTimeElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_dd(selectors: dd): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_noscript")
+  def querySelector(selectors: "noscript"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_defs(selectors: defs): SVGDefsElement | Null = js.native
+  @scala.annotation.targetName("querySelector_rp")
+  def querySelector(selectors: "rp"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_del(selectors: del): HTMLModElement | Null = js.native
+  @scala.annotation.targetName("querySelector_area")
+  def querySelector(selectors: "area"): HTMLAreaElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_desc(selectors: desc): SVGDescElement | Null = js.native
+  @scala.annotation.targetName("querySelector_ul")
+  def querySelector(selectors: "ul"): HTMLUListElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_details(selectors: details): HTMLDetailsElement | Null = js.native
+  @scala.annotation.targetName("querySelector_mask")
+  def querySelector(selectors: "mask"): SVGMaskElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_dfn(selectors: dfn): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_h1")
+  def querySelector(selectors: "h1"): HTMLHeadingElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_dialog(selectors: dialog): HTMLDialogElement | Null = js.native
+  @scala.annotation.targetName("querySelector_details")
+  def querySelector(selectors: "details"): HTMLDetailsElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_div(selectors: div): HTMLDivElement | Null = js.native
+  @scala.annotation.targetName("querySelector_hr")
+  def querySelector(selectors: "hr"): HTMLHRElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_dl(selectors: dl): HTMLDListElement | Null = js.native
+  @scala.annotation.targetName("querySelector_polygon")
+  def querySelector(selectors: "polygon"): SVGPolygonElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_dt(selectors: dt): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_slot")
+  def querySelector(selectors: "slot"): HTMLSlotElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_ellipse(selectors: ellipse): SVGEllipseElement | Null = js.native
+  @scala.annotation.targetName("querySelector_ins")
+  def querySelector(selectors: "ins"): HTMLModElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_em(selectors: em): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_cite")
+  def querySelector(selectors: "cite"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_embed(selectors: embed): HTMLEmbedElement | Null = js.native
+  @scala.annotation.targetName("querySelector_tbody")
+  def querySelector(selectors: "tbody"): HTMLTableSectionElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feBlend(selectors: feBlend): SVGFEBlendElement | Null = js.native
+  @scala.annotation.targetName("querySelector_nav")
+  def querySelector(selectors: "nav"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feColorMatrix(selectors: feColorMatrix): SVGFEColorMatrixElement | Null = js.native
+  @scala.annotation.targetName("querySelector_html")
+  def querySelector(selectors: "html"): HTMLHtmlElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feComponentTransfer(selectors: feComponentTransfer): SVGFEComponentTransferElement | Null = js.native
+  @scala.annotation.targetName("querySelector_textPath")
+  def querySelector(selectors: "textPath"): SVGTextPathElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feComposite(selectors: feComposite): SVGFECompositeElement | Null = js.native
+  @scala.annotation.targetName("querySelector_table")
+  def querySelector(selectors: "table"): HTMLTableElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feConvolveMatrix(selectors: feConvolveMatrix): SVGFEConvolveMatrixElement | Null = js.native
+  @scala.annotation.targetName("querySelector_circle")
+  def querySelector(selectors: "circle"): SVGCircleElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feDiffuseLighting(selectors: feDiffuseLighting): SVGFEDiffuseLightingElement | Null = js.native
+  @scala.annotation.targetName("querySelector_iframe")
+  def querySelector(selectors: "iframe"): HTMLIFrameElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feDisplacementMap(selectors: feDisplacementMap): SVGFEDisplacementMapElement | Null = js.native
+  @scala.annotation.targetName("querySelector_article")
+  def querySelector(selectors: "article"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feDistantLight(selectors: feDistantLight): SVGFEDistantLightElement | Null = js.native
+  @scala.annotation.targetName("querySelector_stop")
+  def querySelector(selectors: "stop"): SVGStopElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feDropShadow(selectors: feDropShadow): SVGFEDropShadowElement | Null = js.native
+  @scala.annotation.targetName("querySelector_b")
+  def querySelector(selectors: "b"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feFlood(selectors: feFlood): SVGFEFloodElement | Null = js.native
+  @scala.annotation.targetName("querySelector_label")
+  def querySelector(selectors: "label"): HTMLLabelElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feFuncA(selectors: feFuncA): SVGFEFuncAElement | Null = js.native
+  @scala.annotation.targetName("querySelector_section")
+  def querySelector(selectors: "section"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feFuncB(selectors: feFuncB): SVGFEFuncBElement | Null = js.native
+  @scala.annotation.targetName("querySelector_template")
+  def querySelector(selectors: "template"): HTMLTemplateElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feFuncG(selectors: feFuncG): SVGFEFuncGElement | Null = js.native
+  @scala.annotation.targetName("querySelector_dl")
+  def querySelector(selectors: "dl"): HTMLDListElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feFuncR(selectors: feFuncR): SVGFEFuncRElement | Null = js.native
+  @scala.annotation.targetName("querySelector_var")
+  def querySelector(selectors: "var"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feGaussianBlur(selectors: feGaussianBlur): SVGFEGaussianBlurElement | Null = js.native
+  @scala.annotation.targetName("querySelector_h3")
+  def querySelector(selectors: "h3"): HTMLHeadingElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feImage(selectors: feImage): SVGFEImageElement | Null = js.native
+  @scala.annotation.targetName("querySelector_feConvolveMatrix")
+  def querySelector(selectors: "feConvolveMatrix"): SVGFEConvolveMatrixElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feMerge(selectors: feMerge): SVGFEMergeElement | Null = js.native
+  @scala.annotation.targetName("querySelector_view")
+  def querySelector(selectors: "view"): SVGViewElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feMergeNode(selectors: feMergeNode): SVGFEMergeNodeElement | Null = js.native
+  @scala.annotation.targetName("querySelector_ellipse")
+  def querySelector(selectors: "ellipse"): SVGEllipseElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feMorphology(selectors: feMorphology): SVGFEMorphologyElement | Null = js.native
+  @scala.annotation.targetName("querySelector_data")
+  def querySelector(selectors: "data"): HTMLDataElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feOffset(selectors: feOffset): SVGFEOffsetElement | Null = js.native
+  @scala.annotation.targetName("querySelector_kbd")
+  def querySelector(selectors: "kbd"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fePointLight(selectors: fePointLight): SVGFEPointLightElement | Null = js.native
+  @scala.annotation.targetName("querySelector_feMergeNode")
+  def querySelector(selectors: "feMergeNode"): SVGFEMergeNodeElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feSpecularLighting(selectors: feSpecularLighting): SVGFESpecularLightingElement | Null = js.native
+  @scala.annotation.targetName("querySelector_fePointLight")
+  def querySelector(selectors: "fePointLight"): SVGFEPointLightElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feSpotLight(selectors: feSpotLight): SVGFESpotLightElement | Null = js.native
+  @scala.annotation.targetName("querySelector_embed")
+  def querySelector(selectors: "embed"): HTMLEmbedElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feTile(selectors: feTile): SVGFETileElement | Null = js.native
+  @scala.annotation.targetName("querySelector_dfn")
+  def querySelector(selectors: "dfn"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feTurbulence(selectors: feTurbulence): SVGFETurbulenceElement | Null = js.native
+  @scala.annotation.targetName("querySelector_clipPath")
+  def querySelector(selectors: "clipPath"): SVGClipPathElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fieldset(selectors: fieldset): HTMLFieldSetElement | Null = js.native
+  @scala.annotation.targetName("querySelector_symbol")
+  def querySelector(selectors: "symbol"): SVGSymbolElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_figcaption(selectors: figcaption): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_bdi")
+  def querySelector(selectors: "bdi"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_figure(selectors: figure): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_progress")
+  def querySelector(selectors: "progress"): HTMLProgressElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_filter(selectors: filter): SVGFilterElement | Null = js.native
+  @scala.annotation.targetName("querySelector_feComponentTransfer")
+  def querySelector(selectors: "feComponentTransfer"): SVGFEComponentTransferElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_footer(selectors: footer): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_i")
+  def querySelector(selectors: "i"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_foreignObject(selectors: foreignObject): SVGForeignObjectElement | Null = js.native
+  @scala.annotation.targetName("querySelector_tspan")
+  def querySelector(selectors: "tspan"): SVGTSpanElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_form(selectors: form): HTMLFormElement | Null = js.native
+  @scala.annotation.targetName("querySelector_title")
+  def querySelector(selectors: "title"): HTMLTitleElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_g(selectors: g): SVGGElement | Null = js.native
+  @scala.annotation.targetName("querySelector_source")
+  def querySelector(selectors: "source"): HTMLSourceElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_h1(selectors: h1): HTMLHeadingElement | Null = js.native
+  @scala.annotation.targetName("querySelector_defs")
+  def querySelector(selectors: "defs"): SVGDefsElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_h2(selectors: h2): HTMLHeadingElement | Null = js.native
+  @scala.annotation.targetName("querySelector_feSpecularLighting")
+  def querySelector(selectors: "feSpecularLighting"): SVGFESpecularLightingElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_h3(selectors: h3): HTMLHeadingElement | Null = js.native
+  @scala.annotation.targetName("querySelector_legend")
+  def querySelector(selectors: "legend"): HTMLLegendElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_h4(selectors: h4): HTMLHeadingElement | Null = js.native
+  @scala.annotation.targetName("querySelector_feFuncG")
+  def querySelector(selectors: "feFuncG"): SVGFEFuncGElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_h5(selectors: h5): HTMLHeadingElement | Null = js.native
+  @scala.annotation.targetName("querySelector_feDisplacementMap")
+  def querySelector(selectors: "feDisplacementMap"): SVGFEDisplacementMapElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_h6(selectors: h6): HTMLHeadingElement | Null = js.native
+  @scala.annotation.targetName("querySelector_datalist")
+  def querySelector(selectors: "datalist"): HTMLDataListElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_head(selectors: head): HTMLHeadElement | Null = js.native
+  @scala.annotation.targetName("querySelector_u")
+  def querySelector(selectors: "u"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_header(selectors: header): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_text")
+  def querySelector(selectors: "text"): SVGTextElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_hgroup(selectors: hgroup): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_feTurbulence")
+  def querySelector(selectors: "feTurbulence"): SVGFETurbulenceElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_hr(selectors: hr): HTMLHRElement | Null = js.native
+  @scala.annotation.targetName("querySelector_radialGradient")
+  def querySelector(selectors: "radialGradient"): SVGRadialGradientElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_html(selectors: html): HTMLHtmlElement | Null = js.native
+  @scala.annotation.targetName("querySelector_aside")
+  def querySelector(selectors: "aside"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_i(selectors: i): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_optgroup")
+  def querySelector(selectors: "optgroup"): HTMLOptGroupElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_iframe(selectors: iframe): HTMLIFrameElement | Null = js.native
+  @scala.annotation.targetName("querySelector_meter")
+  def querySelector(selectors: "meter"): HTMLMeterElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_image(selectors: image): SVGImageElement | Null = js.native
+  @scala.annotation.targetName("querySelector_summary")
+  def querySelector(selectors: "summary"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_img(selectors: img): HTMLImageElement | Null = js.native
+  @scala.annotation.targetName("querySelector_map")
+  def querySelector(selectors: "map"): HTMLMapElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_input(selectors: input): HTMLInputElement | Null = js.native
+  @scala.annotation.targetName("querySelector_feDiffuseLighting")
+  def querySelector(selectors: "feDiffuseLighting"): SVGFEDiffuseLightingElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_ins(selectors: ins): HTMLModElement | Null = js.native
+  @scala.annotation.targetName("querySelector_dt")
+  def querySelector(selectors: "dt"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_kbd(selectors: kbd): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_object")
+  def querySelector(selectors: "object"): HTMLObjectElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_label(selectors: label): HTMLLabelElement | Null = js.native
+  @scala.annotation.targetName("querySelector_figcaption")
+  def querySelector(selectors: "figcaption"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_legend(selectors: legend): HTMLLegendElement | Null = js.native
+  @scala.annotation.targetName("querySelector_samp")
+  def querySelector(selectors: "samp"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_li(selectors: li): HTMLLIElement | Null = js.native
+  @scala.annotation.targetName("querySelector_small")
+  def querySelector(selectors: "small"): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_line(selectors: line): SVGLineElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_linearGradient(selectors: linearGradient): SVGLinearGradientElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_link(selectors: link): HTMLLinkElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_main(selectors: main): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_map(selectors: map): HTMLMapElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_mark(selectors: mark): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_marker(selectors: marker): SVGMarkerElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_mask(selectors: mask): SVGMaskElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_menu(selectors: menu): HTMLMenuElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_meta(selectors: meta): HTMLMetaElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_metadata(selectors: metadata): SVGMetadataElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_meter(selectors: meter): HTMLMeterElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_mpath(selectors: mpath): SVGMPathElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_nav(selectors: nav): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_noscript(selectors: noscript): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_object(selectors: `object`): HTMLObjectElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_ol(selectors: ol): HTMLOListElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_optgroup(selectors: optgroup): HTMLOptGroupElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_option(selectors: option): HTMLOptionElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_output(selectors: output): HTMLOutputElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_p(selectors: p): HTMLParagraphElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_path(selectors: path): SVGPathElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_pattern(selectors: pattern): SVGPatternElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_picture(selectors: picture): HTMLPictureElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_polygon(selectors: polygon): SVGPolygonElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_polyline(selectors: polyline): SVGPolylineElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_pre(selectors: pre): HTMLPreElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_progress(selectors: progress): HTMLProgressElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_q(selectors: q): HTMLQuoteElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_radialGradient(selectors: radialGradient): SVGRadialGradientElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_rect(selectors: rect): SVGRectElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_rp(selectors: rp): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_rt(selectors: rt): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_ruby(selectors: ruby): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_s(selectors: s): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_samp(selectors: samp): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_script(selectors: script): HTMLScriptElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_section(selectors: section): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_select(selectors: select): HTMLSelectElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_set(selectors: set): SVGSetElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_slot(selectors: slot): HTMLSlotElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_small(selectors: small): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_source(selectors: source): HTMLSourceElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_span(selectors: span): HTMLSpanElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_stop(selectors: stop): SVGStopElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_strong(selectors: strong): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_style(selectors: style): HTMLStyleElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_sub(selectors: sub): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_summary(selectors: summary): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_sup(selectors: sup): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_svg(selectors: svg): SVGSVGElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_switch(selectors: switch): SVGSwitchElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_symbol(selectors: symbol): SVGSymbolElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_table(selectors: table): HTMLTableElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_tbody(selectors: tbody): HTMLTableSectionElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_td(selectors: td): HTMLTableCellElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_template(selectors: template): HTMLTemplateElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_text(selectors: text): SVGTextElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_textPath(selectors: textPath): SVGTextPathElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_textarea(selectors: textarea): HTMLTextAreaElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_tfoot(selectors: tfoot): HTMLTableSectionElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_th(selectors: th): HTMLTableCellElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_thead(selectors: thead): HTMLTableSectionElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_time(selectors: time): HTMLTimeElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_title(selectors: title): HTMLTitleElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_tr(selectors: tr): HTMLTableRowElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_track(selectors: track): HTMLTrackElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_tspan(selectors: tspan): SVGTSpanElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_u(selectors: u): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_ul(selectors: ul): HTMLUListElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_use(selectors: use): SVGUseElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_var(selectors: `var`): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_video(selectors: video): HTMLVideoElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_view(selectors: view): SVGViewElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_wbr(selectors: wbr): HTMLElement | Null = js.native
+  @scala.annotation.targetName("querySelector_button")
+  def querySelector(selectors: "button"): HTMLButtonElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_metadata")
+  def querySelector(selectors: "metadata"): SVGMetadataElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_line")
+  def querySelector(selectors: "line"): SVGLineElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_feFuncB")
+  def querySelector(selectors: "feFuncB"): SVGFEFuncBElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_canvas")
+  def querySelector(selectors: "canvas"): HTMLCanvasElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_code")
+  def querySelector(selectors: "code"): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_base")
+  def querySelector(selectors: "base"): HTMLBaseElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_q")
+  def querySelector(selectors: "q"): HTMLQuoteElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_hgroup")
+  def querySelector(selectors: "hgroup"): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  @scala.annotation.targetName("querySelector_header")
+  def querySelector(selectors: "header"): HTMLElement | Null = js.native
+  /* standard dom */
+  def querySelector[E /* <: Element */](selectors: java.lang.String): E | Null = js.native
+  
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_embed")
+  def querySelectorAll(selectors: "embed"): NodeListOf[HTMLEmbedElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_colgroup")
+  def querySelectorAll(selectors: "colgroup"): NodeListOf[HTMLTableColElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_desc")
+  def querySelectorAll(selectors: "desc"): NodeListOf[SVGDescElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_area")
+  def querySelectorAll(selectors: "area"): NodeListOf[HTMLAreaElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_form")
+  def querySelectorAll(selectors: "form"): NodeListOf[HTMLFormElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_figcaption")
+  def querySelectorAll(selectors: "figcaption"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_ins")
+  def querySelectorAll(selectors: "ins"): NodeListOf[HTMLModElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_wbr")
+  def querySelectorAll(selectors: "wbr"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_time")
+  def querySelectorAll(selectors: "time"): NodeListOf[HTMLTimeElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_h1")
+  def querySelectorAll(selectors: "h1"): NodeListOf[HTMLHeadingElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_mpath")
+  def querySelectorAll(selectors: "mpath"): NodeListOf[SVGMPathElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_img")
+  def querySelectorAll(selectors: "img"): NodeListOf[HTMLImageElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_path")
+  def querySelectorAll(selectors: "path"): NodeListOf[SVGPathElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_header")
+  def querySelectorAll(selectors: "header"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_legend")
+  def querySelectorAll(selectors: "legend"): NodeListOf[HTMLLegendElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_defs")
+  def querySelectorAll(selectors: "defs"): NodeListOf[SVGDefsElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_rect")
+  def querySelectorAll(selectors: "rect"): NodeListOf[SVGRectElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_polygon")
+  def querySelectorAll(selectors: "polygon"): NodeListOf[SVGPolygonElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_link")
+  def querySelectorAll(selectors: "link"): NodeListOf[HTMLLinkElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_ellipse")
+  def querySelectorAll(selectors: "ellipse"): NodeListOf[SVGEllipseElement] = js.native
+  /** Returns all element descendants of node that match selectors. */
+  /* standard dom */
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_a")
+  def querySelectorAll(selectors: "a"): NodeListOf[HTMLAnchorElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_map")
+  def querySelectorAll(selectors: "map"): NodeListOf[HTMLMapElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feMerge")
+  def querySelectorAll(selectors: "feMerge"): NodeListOf[SVGFEMergeElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_filter")
+  def querySelectorAll(selectors: "filter"): NodeListOf[SVGFilterElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_template")
+  def querySelectorAll(selectors: "template"): NodeListOf[HTMLTemplateElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_u")
+  def querySelectorAll(selectors: "u"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_div")
+  def querySelectorAll(selectors: "div"): NodeListOf[HTMLDivElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_video")
+  def querySelectorAll(selectors: "video"): NodeListOf[HTMLVideoElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_polyline")
+  def querySelectorAll(selectors: "polyline"): NodeListOf[SVGPolylineElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_em")
+  def querySelectorAll(selectors: "em"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feImage")
+  def querySelectorAll(selectors: "feImage"): NodeListOf[SVGFEImageElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_text")
+  def querySelectorAll(selectors: "text"): NodeListOf[SVGTextElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feFuncG")
+  def querySelectorAll(selectors: "feFuncG"): NodeListOf[SVGFEFuncGElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_br")
+  def querySelectorAll(selectors: "br"): NodeListOf[HTMLBRElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_html")
+  def querySelectorAll(selectors: "html"): NodeListOf[HTMLHtmlElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feFlood")
+  def querySelectorAll(selectors: "feFlood"): NodeListOf[SVGFEFloodElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_th")
+  def querySelectorAll(selectors: "th"): NodeListOf[HTMLTableCellElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_h2")
+  def querySelectorAll(selectors: "h2"): NodeListOf[HTMLHeadingElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_pattern")
+  def querySelectorAll(selectors: "pattern"): NodeListOf[SVGPatternElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_tspan")
+  def querySelectorAll(selectors: "tspan"): NodeListOf[SVGTSpanElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feTurbulence")
+  def querySelectorAll(selectors: "feTurbulence"): NodeListOf[SVGFETurbulenceElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_g")
+  def querySelectorAll(selectors: "g"): NodeListOf[SVGGElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feDiffuseLighting")
+  def querySelectorAll(selectors: "feDiffuseLighting"): NodeListOf[SVGFEDiffuseLightingElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_radialGradient")
+  def querySelectorAll(selectors: "radialGradient"): NodeListOf[SVGRadialGradientElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_progress")
+  def querySelectorAll(selectors: "progress"): NodeListOf[HTMLProgressElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_circle")
+  def querySelectorAll(selectors: "circle"): NodeListOf[SVGCircleElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_details")
+  def querySelectorAll(selectors: "details"): NodeListOf[HTMLDetailsElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_animate")
+  def querySelectorAll(selectors: "animate"): NodeListOf[SVGAnimateElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_noscript")
+  def querySelectorAll(selectors: "noscript"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_address")
+  def querySelectorAll(selectors: "address"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_view")
+  def querySelectorAll(selectors: "view"): NodeListOf[SVGViewElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_blockquote")
+  def querySelectorAll(selectors: "blockquote"): NodeListOf[HTMLQuoteElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_animateMotion")
+  def querySelectorAll(selectors: "animateMotion"): NodeListOf[SVGAnimateMotionElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_col")
+  def querySelectorAll(selectors: "col"): NodeListOf[HTMLTableColElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_stop")
+  def querySelectorAll(selectors: "stop"): NodeListOf[SVGStopElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_bdi")
+  def querySelectorAll(selectors: "bdi"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_clipPath")
+  def querySelectorAll(selectors: "clipPath"): NodeListOf[SVGClipPathElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_sub")
+  def querySelectorAll(selectors: "sub"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_animateTransform")
+  def querySelectorAll(selectors: "animateTransform"): NodeListOf[SVGAnimateTransformElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_marker")
+  def querySelectorAll(selectors: "marker"): NodeListOf[SVGMarkerElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_menu")
+  def querySelectorAll(selectors: "menu"): NodeListOf[HTMLMenuElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_footer")
+  def querySelectorAll(selectors: "footer"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_s")
+  def querySelectorAll(selectors: "s"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_cite")
+  def querySelectorAll(selectors: "cite"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_b")
+  def querySelectorAll(selectors: "b"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_figure")
+  def querySelectorAll(selectors: "figure"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_textarea")
+  def querySelectorAll(selectors: "textarea"): NodeListOf[HTMLTextAreaElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feTile")
+  def querySelectorAll(selectors: "feTile"): NodeListOf[SVGFETileElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_meter")
+  def querySelectorAll(selectors: "meter"): NodeListOf[HTMLMeterElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_dialog")
+  def querySelectorAll(selectors: "dialog"): NodeListOf[HTMLDialogElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feMorphology")
+  def querySelectorAll(selectors: "feMorphology"): NodeListOf[SVGFEMorphologyElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_script")
+  def querySelectorAll(selectors: "script"): NodeListOf[HTMLScriptElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feComponentTransfer")
+  def querySelectorAll(selectors: "feComponentTransfer"): NodeListOf[SVGFEComponentTransferElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_track")
+  def querySelectorAll(selectors: "track"): NodeListOf[HTMLTrackElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_label")
+  def querySelectorAll(selectors: "label"): NodeListOf[HTMLLabelElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feDistantLight")
+  def querySelectorAll(selectors: "feDistantLight"): NodeListOf[SVGFEDistantLightElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_samp")
+  def querySelectorAll(selectors: "samp"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_linearGradient")
+  def querySelectorAll(selectors: "linearGradient"): NodeListOf[SVGLinearGradientElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_object")
+  def querySelectorAll(selectors: "object"): NodeListOf[HTMLObjectElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_h5")
+  def querySelectorAll(selectors: "h5"): NodeListOf[HTMLHeadingElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feFuncA")
+  def querySelectorAll(selectors: "feFuncA"): NodeListOf[SVGFEFuncAElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_h4")
+  def querySelectorAll(selectors: "h4"): NodeListOf[HTMLHeadingElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feGaussianBlur")
+  def querySelectorAll(selectors: "feGaussianBlur"): NodeListOf[SVGFEGaussianBlurElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feSpecularLighting")
+  def querySelectorAll(selectors: "feSpecularLighting"): NodeListOf[SVGFESpecularLightingElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_i")
+  def querySelectorAll(selectors: "i"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_rp")
+  def querySelectorAll(selectors: "rp"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_symbol")
+  def querySelectorAll(selectors: "symbol"): NodeListOf[SVGSymbolElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_rt")
+  def querySelectorAll(selectors: "rt"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_select")
+  def querySelectorAll(selectors: "select"): NodeListOf[HTMLSelectElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_svg")
+  def querySelectorAll(selectors: "svg"): NodeListOf[SVGSVGElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_small")
+  def querySelectorAll(selectors: "small"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_td")
+  def querySelectorAll(selectors: "td"): NodeListOf[HTMLTableCellElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_article")
+  def querySelectorAll(selectors: "article"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_style")
+  def querySelectorAll(selectors: "style"): NodeListOf[HTMLStyleElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_ruby")
+  def querySelectorAll(selectors: "ruby"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_source")
+  def querySelectorAll(selectors: "source"): NodeListOf[HTMLSourceElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_iframe")
+  def querySelectorAll(selectors: "iframe"): NodeListOf[HTMLIFrameElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_ol")
+  def querySelectorAll(selectors: "ol"): NodeListOf[HTMLOListElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_data")
+  def querySelectorAll(selectors: "data"): NodeListOf[HTMLDataElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feMergeNode")
+  def querySelectorAll(selectors: "feMergeNode"): NodeListOf[SVGFEMergeNodeElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_h6")
+  def querySelectorAll(selectors: "h6"): NodeListOf[HTMLHeadingElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_mask")
+  def querySelectorAll(selectors: "mask"): NodeListOf[SVGMaskElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feDropShadow")
+  def querySelectorAll(selectors: "feDropShadow"): NodeListOf[SVGFEDropShadowElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_q")
+  def querySelectorAll(selectors: "q"): NodeListOf[HTMLQuoteElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_dfn")
+  def querySelectorAll(selectors: "dfn"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_output")
+  def querySelectorAll(selectors: "output"): NodeListOf[HTMLOutputElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_button")
+  def querySelectorAll(selectors: "button"): NodeListOf[HTMLButtonElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_optgroup")
+  def querySelectorAll(selectors: "optgroup"): NodeListOf[HTMLOptGroupElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_thead")
+  def querySelectorAll(selectors: "thead"): NodeListOf[HTMLTableSectionElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_main")
+  def querySelectorAll(selectors: "main"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_picture")
+  def querySelectorAll(selectors: "picture"): NodeListOf[HTMLPictureElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_meta")
+  def querySelectorAll(selectors: "meta"): NodeListOf[HTMLMetaElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_dd")
+  def querySelectorAll(selectors: "dd"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_hr")
+  def querySelectorAll(selectors: "hr"): NodeListOf[HTMLHRElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feBlend")
+  def querySelectorAll(selectors: "feBlend"): NodeListOf[SVGFEBlendElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_metadata")
+  def querySelectorAll(selectors: "metadata"): NodeListOf[SVGMetadataElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_dl")
+  def querySelectorAll(selectors: "dl"): NodeListOf[HTMLDListElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_tbody")
+  def querySelectorAll(selectors: "tbody"): NodeListOf[HTMLTableSectionElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_kbd")
+  def querySelectorAll(selectors: "kbd"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feColorMatrix")
+  def querySelectorAll(selectors: "feColorMatrix"): NodeListOf[SVGFEColorMatrixElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_body")
+  def querySelectorAll(selectors: "body"): NodeListOf[HTMLBodyElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_section")
+  def querySelectorAll(selectors: "section"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_foreignObject")
+  def querySelectorAll(selectors: "foreignObject"): NodeListOf[SVGForeignObjectElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_input")
+  def querySelectorAll(selectors: "input"): NodeListOf[HTMLInputElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_hgroup")
+  def querySelectorAll(selectors: "hgroup"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_audio")
+  def querySelectorAll(selectors: "audio"): NodeListOf[HTMLAudioElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_slot")
+  def querySelectorAll(selectors: "slot"): NodeListOf[HTMLSlotElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_ul")
+  def querySelectorAll(selectors: "ul"): NodeListOf[HTMLUListElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_li")
+  def querySelectorAll(selectors: "li"): NodeListOf[HTMLLIElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_fePointLight")
+  def querySelectorAll(selectors: "fePointLight"): NodeListOf[SVGFEPointLightElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_p")
+  def querySelectorAll(selectors: "p"): NodeListOf[HTMLParagraphElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_span")
+  def querySelectorAll(selectors: "span"): NodeListOf[HTMLSpanElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_del")
+  def querySelectorAll(selectors: "del"): NodeListOf[HTMLModElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_head")
+  def querySelectorAll(selectors: "head"): NodeListOf[HTMLHeadElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_caption")
+  def querySelectorAll(selectors: "caption"): NodeListOf[HTMLTableCaptionElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_canvas")
+  def querySelectorAll(selectors: "canvas"): NodeListOf[HTMLCanvasElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_nav")
+  def querySelectorAll(selectors: "nav"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_dt")
+  def querySelectorAll(selectors: "dt"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_strong")
+  def querySelectorAll(selectors: "strong"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_sup")
+  def querySelectorAll(selectors: "sup"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_switch")
+  def querySelectorAll(selectors: "switch"): NodeListOf[SVGSwitchElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feDisplacementMap")
+  def querySelectorAll(selectors: "feDisplacementMap"): NodeListOf[SVGFEDisplacementMapElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feFuncB")
+  def querySelectorAll(selectors: "feFuncB"): NodeListOf[SVGFEFuncBElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_var")
+  def querySelectorAll(selectors: "var"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_pre")
+  def querySelectorAll(selectors: "pre"): NodeListOf[HTMLPreElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_summary")
+  def querySelectorAll(selectors: "summary"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_base")
+  def querySelectorAll(selectors: "base"): NodeListOf[HTMLBaseElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feComposite")
+  def querySelectorAll(selectors: "feComposite"): NodeListOf[SVGFECompositeElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feFuncR")
+  def querySelectorAll(selectors: "feFuncR"): NodeListOf[SVGFEFuncRElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_line")
+  def querySelectorAll(selectors: "line"): NodeListOf[SVGLineElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_table")
+  def querySelectorAll(selectors: "table"): NodeListOf[HTMLTableElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feOffset")
+  def querySelectorAll(selectors: "feOffset"): NodeListOf[SVGFEOffsetElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_set")
+  def querySelectorAll(selectors: "set"): NodeListOf[SVGSetElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_image")
+  def querySelectorAll(selectors: "image"): NodeListOf[SVGImageElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_bdo")
+  def querySelectorAll(selectors: "bdo"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feSpotLight")
+  def querySelectorAll(selectors: "feSpotLight"): NodeListOf[SVGFESpotLightElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_datalist")
+  def querySelectorAll(selectors: "datalist"): NodeListOf[HTMLDataListElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_aside")
+  def querySelectorAll(selectors: "aside"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_textPath")
+  def querySelectorAll(selectors: "textPath"): NodeListOf[SVGTextPathElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_abbr")
+  def querySelectorAll(selectors: "abbr"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_h3")
+  def querySelectorAll(selectors: "h3"): NodeListOf[HTMLHeadingElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_title")
+  def querySelectorAll(selectors: "title"): NodeListOf[HTMLTitleElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_feConvolveMatrix")
+  def querySelectorAll(selectors: "feConvolveMatrix"): NodeListOf[SVGFEConvolveMatrixElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_tfoot")
+  def querySelectorAll(selectors: "tfoot"): NodeListOf[HTMLTableSectionElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_use")
+  def querySelectorAll(selectors: "use"): NodeListOf[SVGUseElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_fieldset")
+  def querySelectorAll(selectors: "fieldset"): NodeListOf[HTMLFieldSetElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_mark")
+  def querySelectorAll(selectors: "mark"): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_tr")
+  def querySelectorAll(selectors: "tr"): NodeListOf[HTMLTableRowElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_option")
+  def querySelectorAll(selectors: "option"): NodeListOf[HTMLOptionElement] = js.native
+  @JSName("querySelectorAll")
+  @scala.annotation.targetName("querySelectorAll_code")
+  def querySelectorAll(selectors: "code"): NodeListOf[HTMLElement] = js.native
+  /* standard dom */
+  def querySelectorAll[E /* <: Element */](selectors: java.lang.String): NodeListOf[E] = js.native
   
   /* standard dom */
   def releasePointerCapture(pointerId: Double): Unit = js.native
@@ -1777,32 +2289,38 @@ trait Element
   /* standard dom */
   def removeAttributeNode(attr: Attr): Attr = js.native
   
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_fullscreenerror")
+  def removeEventListener(`type`: "fullscreenerror", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @scala.annotation.targetName("removeEventListener_fullscreenchange")
+  def removeEventListener(`type`: "fullscreenchange", listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_fullscreenchange(
-    `type`: fullscreenchange,
+  @scala.annotation.targetName("removeEventListener_fullscreenchange")
+  def removeEventListener(
+    `type`: "fullscreenchange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_fullscreenchange(
-    `type`: fullscreenchange,
+  @scala.annotation.targetName("removeEventListener_fullscreenerror")
+  def removeEventListener(
+    `type`: "fullscreenerror",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_fullscreenerror")
+  def removeEventListener(
+    `type`: "fullscreenerror",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_fullscreenerror(
-    `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_fullscreenerror(
-    `type`: fullscreenerror,
+  @scala.annotation.targetName("removeEventListener_fullscreenchange")
+  def removeEventListener(
+    `type`: "fullscreenchange",
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native

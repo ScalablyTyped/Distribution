@@ -1,19 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.JSXOpeningFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait JSXOpeningFragment_
+trait JSXOpeningFragment_
   extends StObject
-     with BaseNode
-     with Immutable
-     with JSX {
+     with BaseNode {
   
   @JSName("type")
-  var type_JSXOpeningFragment_ : JSXOpeningFragment
+  var type_JSXOpeningFragment_ : "JSXOpeningFragment"
 }
 object JSXOpeningFragment_ {
   
@@ -25,6 +21,6 @@ object JSXOpeningFragment_ {
   
   extension [Self <: JSXOpeningFragment_](x: Self) {
     
-    inline def setType(value: JSXOpeningFragment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "JSXOpeningFragment"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

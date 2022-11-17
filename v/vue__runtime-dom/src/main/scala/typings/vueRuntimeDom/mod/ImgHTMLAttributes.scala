@@ -1,11 +1,5 @@
 package typings.vueRuntimeDom.mod
 
-import typings.vueRuntimeDom.vueRuntimeDomStrings._empty
-import typings.vueRuntimeDom.vueRuntimeDomStrings.`use-credentials`
-import typings.vueRuntimeDom.vueRuntimeDomStrings.anonymous
-import typings.vueRuntimeDom.vueRuntimeDomStrings.async
-import typings.vueRuntimeDom.vueRuntimeDomStrings.auto
-import typings.vueRuntimeDom.vueRuntimeDomStrings.sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +10,9 @@ trait ImgHTMLAttributes
   
   var alt: js.UndefOr[String] = js.undefined
   
-  var crossorigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
+  var crossorigin: js.UndefOr["anonymous" | "use-credentials" | ""] = js.undefined
   
-  var decoding: js.UndefOr[async | auto | sync] = js.undefined
+  var decoding: js.UndefOr["async" | "auto" | "sync"] = js.undefined
   
   var height: js.UndefOr[Numberish] = js.undefined
   
@@ -45,11 +39,11 @@ object ImgHTMLAttributes {
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    inline def setCrossorigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossorigin", value.asInstanceOf[js.Any])
+    inline def setCrossorigin(value: "anonymous" | "use-credentials" | ""): Self = StObject.set(x, "crossorigin", value.asInstanceOf[js.Any])
     
     inline def setCrossoriginUndefined: Self = StObject.set(x, "crossorigin", js.undefined)
     
-    inline def setDecoding(value: async | auto | sync): Self = StObject.set(x, "decoding", value.asInstanceOf[js.Any])
+    inline def setDecoding(value: "async" | "auto" | "sync"): Self = StObject.set(x, "decoding", value.asInstanceOf[js.Any])
     
     inline def setDecodingUndefined: Self = StObject.set(x, "decoding", js.undefined)
     

@@ -1,6 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.file
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,7 @@ trait UploadFile extends StObject {
   /**
     * `file`.
     */
-  var `type`: file
+  var `type`: "file"
 }
 object UploadFile {
   
@@ -51,6 +50,6 @@ object UploadFile {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    inline def setType(value: file): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "file"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

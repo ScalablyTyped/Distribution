@@ -58,25 +58,15 @@ object libResultMod extends Shortcut {
     inline def warning_=(x: ForwardRefExoticComponent[PickAntdIconPropschildren]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdInts.`403`
-    - typings.antd.antdInts.`404`
-    - typings.antd.antdInts.`500`
-    - typings.antd.antdStrings.`403`
-    - typings.antd.antdStrings.`404`
-    - typings.antd.antdStrings.`500`
-  */
-  trait ExceptionStatusType
-    extends StObject
-       with ResultStatusType
   object ExceptionStatusType {
     
-    inline def `403`: typings.antd.antdInts.`403` = 403.asInstanceOf[typings.antd.antdInts.`403`]
+    inline def `403`: 403 = 403.asInstanceOf[403]
     
-    inline def `404`: typings.antd.antdInts.`404` = 404.asInstanceOf[typings.antd.antdInts.`404`]
+    inline def `404`: 404 = 404.asInstanceOf[404]
     
-    inline def `500`: typings.antd.antdInts.`500` = 500.asInstanceOf[typings.antd.antdInts.`500`]
+    inline def `500`: 500 = 500.asInstanceOf[500]
   }
+  type ExceptionStatusType = 403 | 404 | 500 | "403" | "404" | "500"
   
   trait ResultProps extends StObject {
     
@@ -145,14 +135,7 @@ object libResultMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.libResultMod.ExceptionStatusType
-    - typings.antd.antdStrings.success
-    - typings.antd.antdStrings.error
-    - typings.antd.antdStrings.info
-    - typings.antd.antdStrings.warning
-  */
-  trait ResultStatusType extends StObject
+  type ResultStatusType = ExceptionStatusType | "success" | "error" | "info" | "warning"
   
   @js.native
   trait ResultType

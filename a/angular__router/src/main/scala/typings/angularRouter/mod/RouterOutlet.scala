@@ -1,36 +1,24 @@
 package typings.angularRouter.mod
 
-import typings.angularCore.mod.ChangeDetectorRef
-import typings.angularCore.mod.EnvironmentInjector
 import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.OnInit
-import typings.angularCore.mod.ViewContainerRef
+import typings.angularCore.mod.SimpleChanges
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
-import typings.angularRouter.angularRouterBooleans.`true`
-import typings.angularRouter.angularRouterStrings.`router-outlet`
-import typings.angularRouter.angularRouterStrings.outlet
 import typings.angularRouter.anon.ActivateEvents
-import typings.angularRouter.anon.`0`
+import typings.angularRouter.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "RouterOutlet")
 @js.native
-open class RouterOutlet protected ()
+open class RouterOutlet ()
   extends StObject
      with OnDestroy
      with OnInit
      with RouterOutletContract {
-  def this(
-    parentContexts: ChildrenOutletContexts,
-    location: ViewContainerRef,
-    name: String,
-    changeDetector: ChangeDetectorRef,
-    environmentInjector: EnvironmentInjector
-  ) = this()
   
   /* private */ var _activatedRoute: Any = js.native
   
@@ -73,12 +61,24 @@ open class RouterOutlet protected ()
   
   /* private */ var environmentInjector: Any = js.native
   
+  /* private */ var initializeOutletWithName: Any = js.native
+  
   @JSName("isActivated")
   def isActivated_MRouterOutlet: Boolean = js.native
   
+  /* private */ var isTrackedInParentContexts: Any = js.native
+  
   /* private */ var location: Any = js.native
   
-  /* private */ var name: Any = js.native
+  /**
+    * The name of the outlet
+    *
+    * @see [named outlets](guide/router-tutorial-toh#displaying-multiple-routes-in-named-outlets)
+    */
+  var name: String = js.native
+  
+  /** @nodoc */
+  def ngOnChanges(changes: SimpleChanges): Unit = js.native
   
   /**
     * A callback method that performs custom clean-up, invoked immediately
@@ -110,29 +110,31 @@ object RouterOutlet {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     RouterOutlet, 
-    `router-outlet`, 
-    js.Array[outlet], 
-    js.Object, 
+    "router-outlet", 
+    js.Array["outlet"], 
+    Name, 
     ActivateEvents, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    true, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       RouterOutlet, 
-      `router-outlet`, 
-      js.Array[outlet], 
-      js.Object, 
+      "router-outlet", 
+      js.Array["outlet"], 
+      Name, 
       ActivateEvents, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      true, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/router", "RouterOutlet.\u0275fac")
   @js.native
-  def ɵfac: ɵɵFactoryDeclaration[RouterOutlet, js.Tuple5[Null, Null, `0`, Null, Null]] = js.native
-  inline def ɵfac_=(x: ɵɵFactoryDeclaration[RouterOutlet, js.Tuple5[Null, Null, `0`, Null, Null]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  def ɵfac: ɵɵFactoryDeclaration[RouterOutlet, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[RouterOutlet, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }

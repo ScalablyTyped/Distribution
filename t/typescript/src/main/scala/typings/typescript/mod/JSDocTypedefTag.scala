@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JSDocTypedefTag
   extends StObject
      with JSDocTag
-     with NamedDeclaration
-     with DeclarationWithTypeParameters {
+     with NamedDeclaration {
   
   val fullName: js.UndefOr[JSDocNamespaceDeclaration | Identifier] = js.native
   

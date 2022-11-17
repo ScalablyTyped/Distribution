@@ -1,22 +1,15 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.NullLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait NullLiteral_
+trait NullLiteral_
   extends StObject
-     with BaseNode
-     with Expression
-     with Immutable
-     with Literal
-     with Pureish
-     with Standardized {
+     with BaseNode {
   
   @JSName("type")
-  var type_NullLiteral_ : NullLiteral
+  var type_NullLiteral_ : "NullLiteral"
 }
 object NullLiteral_ {
   
@@ -28,6 +21,6 @@ object NullLiteral_ {
   
   extension [Self <: NullLiteral_](x: Self) {
     
-    inline def setType(value: NullLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "NullLiteral"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

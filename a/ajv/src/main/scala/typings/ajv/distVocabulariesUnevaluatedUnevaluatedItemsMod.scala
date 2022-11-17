@@ -1,7 +1,6 @@
 package typings.ajv
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ajv.ajvStrings.unevaluatedItems
 import typings.ajv.anon.Limit
 import typings.ajv.distTypesMod.AnySchema
 import typings.ajv.distTypesMod.CodeKeywordDefinition
@@ -16,7 +15,7 @@ object distVocabulariesUnevaluatedUnevaluatedItemsMod extends Shortcut {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  type UnevaluatedItemsError = ErrorObject[unevaluatedItems, Limit, AnySchema]
+  type UnevaluatedItemsError = ErrorObject["unevaluatedItems", Limit, AnySchema]
   
   type _To = CodeKeywordDefinition
   

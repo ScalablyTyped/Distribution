@@ -1,23 +1,17 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.ThrowStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ThrowStatement_
+trait ThrowStatement_
   extends StObject
-     with BaseNode
-     with CompletionStatement
-     with Standardized
-     with Statement
-     with Terminatorless {
+     with BaseNode {
   
   var argument: Expression
   
   @JSName("type")
-  var type_ThrowStatement_ : ThrowStatement
+  var type_ThrowStatement_ : "ThrowStatement"
 }
 object ThrowStatement_ {
   
@@ -31,6 +25,6 @@ object ThrowStatement_ {
     
     inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    inline def setType(value: ThrowStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "ThrowStatement"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

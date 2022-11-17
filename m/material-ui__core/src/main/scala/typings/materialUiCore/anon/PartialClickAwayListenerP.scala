@@ -1,11 +1,5 @@
 package typings.materialUiCore.anon
 
-import typings.materialUiCore.materialUiCoreBooleans.`false`
-import typings.materialUiCore.materialUiCoreStrings.onClick
-import typings.materialUiCore.materialUiCoreStrings.onMouseDown
-import typings.materialUiCore.materialUiCoreStrings.onMouseUp
-import typings.materialUiCore.materialUiCoreStrings.onTouchEnd
-import typings.materialUiCore.materialUiCoreStrings.onTouchStart
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
@@ -21,11 +15,11 @@ trait PartialClickAwayListenerP extends StObject {
   
   var disableReactTree: js.UndefOr[Boolean] = js.undefined
   
-  var mouseEvent: js.UndefOr[onClick | onMouseDown | onMouseUp | `false`] = js.undefined
+  var mouseEvent: js.UndefOr["onClick" | "onMouseDown" | "onMouseUp" | false] = js.undefined
   
   var onClickAway: js.UndefOr[js.Function1[/* event */ MouseEvent[Document, NativeMouseEvent], Unit]] = js.undefined
   
-  var touchEvent: js.UndefOr[onTouchStart | onTouchEnd | `false`] = js.undefined
+  var touchEvent: js.UndefOr["onTouchStart" | "onTouchEnd" | false] = js.undefined
 }
 object PartialClickAwayListenerP {
   
@@ -44,7 +38,7 @@ object PartialClickAwayListenerP {
     
     inline def setDisableReactTreeUndefined: Self = StObject.set(x, "disableReactTree", js.undefined)
     
-    inline def setMouseEvent(value: onClick | onMouseDown | onMouseUp | `false`): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
+    inline def setMouseEvent(value: "onClick" | "onMouseDown" | "onMouseUp" | false): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
     
     inline def setMouseEventUndefined: Self = StObject.set(x, "mouseEvent", js.undefined)
     
@@ -52,7 +46,7 @@ object PartialClickAwayListenerP {
     
     inline def setOnClickAwayUndefined: Self = StObject.set(x, "onClickAway", js.undefined)
     
-    inline def setTouchEvent(value: onTouchStart | onTouchEnd | `false`): Self = StObject.set(x, "touchEvent", value.asInstanceOf[js.Any])
+    inline def setTouchEvent(value: "onTouchStart" | "onTouchEnd" | false): Self = StObject.set(x, "touchEvent", value.asInstanceOf[js.Any])
     
     inline def setTouchEventUndefined: Self = StObject.set(x, "touchEvent", js.undefined)
   }

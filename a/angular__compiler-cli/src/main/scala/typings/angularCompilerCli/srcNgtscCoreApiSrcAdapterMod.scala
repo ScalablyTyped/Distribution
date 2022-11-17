@@ -17,32 +17,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcNgtscCoreApiSrcAdapterMod {
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliStrings.getCanonicalFileName
-    - typings.angularCompilerCli.angularCompilerCliStrings.resolveModuleNames
-    - typings.angularCompilerCli.angularCompilerCliStrings.getCurrentDirectory
-    - typings.angularCompilerCli.angularCompilerCliStrings.getModifiedResourceFiles
-    - typings.angularCompilerCli.angularCompilerCliStrings.readResource
-    - typings.angularCompilerCli.angularCompilerCliStrings.resourceNameToFileName
-    - typings.angularCompilerCli.angularCompilerCliStrings.transformResource
-  */
-  trait ExtendedCompilerHostMethods extends StObject
   object ExtendedCompilerHostMethods {
     
-    inline def getCanonicalFileName: typings.angularCompilerCli.angularCompilerCliStrings.getCanonicalFileName = "getCanonicalFileName".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.getCanonicalFileName]
+    inline def getCanonicalFileName: "getCanonicalFileName" = "getCanonicalFileName".asInstanceOf["getCanonicalFileName"]
     
-    inline def getCurrentDirectory: typings.angularCompilerCli.angularCompilerCliStrings.getCurrentDirectory = "getCurrentDirectory".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.getCurrentDirectory]
+    inline def getCurrentDirectory: "getCurrentDirectory" = "getCurrentDirectory".asInstanceOf["getCurrentDirectory"]
     
-    inline def getModifiedResourceFiles: typings.angularCompilerCli.angularCompilerCliStrings.getModifiedResourceFiles = "getModifiedResourceFiles".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.getModifiedResourceFiles]
+    inline def getModifiedResourceFiles: "getModifiedResourceFiles" = "getModifiedResourceFiles".asInstanceOf["getModifiedResourceFiles"]
     
-    inline def readResource: typings.angularCompilerCli.angularCompilerCliStrings.readResource = "readResource".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.readResource]
+    inline def readResource: "readResource" = "readResource".asInstanceOf["readResource"]
     
-    inline def resolveModuleNames: typings.angularCompilerCli.angularCompilerCliStrings.resolveModuleNames = "resolveModuleNames".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.resolveModuleNames]
+    inline def resolveModuleNames: "resolveModuleNames" = "resolveModuleNames".asInstanceOf["resolveModuleNames"]
     
-    inline def resourceNameToFileName: typings.angularCompilerCli.angularCompilerCliStrings.resourceNameToFileName = "resourceNameToFileName".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.resourceNameToFileName]
+    inline def resourceNameToFileName: "resourceNameToFileName" = "resourceNameToFileName".asInstanceOf["resourceNameToFileName"]
     
-    inline def transformResource: typings.angularCompilerCli.angularCompilerCliStrings.transformResource = "transformResource".asInstanceOf[typings.angularCompilerCli.angularCompilerCliStrings.transformResource]
+    inline def transformResource: "transformResource" = "transformResource".asInstanceOf["transformResource"]
   }
+  type ExtendedCompilerHostMethods = "getCanonicalFileName" | "resolveModuleNames" | "getCurrentDirectory" | "getModifiedResourceFiles" | "readResource" | "resourceNameToFileName" | "transformResource"
   
   /* Inlined parent std.Omit<typescript.typescript.ModuleResolutionHost, 'getCurrentDirectory'> */
   /* Inlined parent std.Pick<@angular/compiler-cli.@angular/compiler-cli/src/ngtsc/core/api/src/interfaces.ExtendedTsCompilerHost, 'getCurrentDirectory' | @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/core/api/src/adapter.ExtendedCompilerHostMethods> */

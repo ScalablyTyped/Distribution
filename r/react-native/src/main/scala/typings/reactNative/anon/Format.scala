@@ -1,14 +1,12 @@
 package typings.reactNative.anon
 
-import typings.reactNative.reactNativeStrings.jpeg
-import typings.reactNative.reactNativeStrings.png
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Format extends StObject {
   
-  var format: js.UndefOr[png | jpeg] = js.undefined
+  var format: js.UndefOr["png" | "jpeg"] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -25,7 +23,7 @@ object Format {
   
   extension [Self <: Format](x: Self) {
     
-    inline def setFormat(value: png | jpeg): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: "png" | "jpeg"): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     

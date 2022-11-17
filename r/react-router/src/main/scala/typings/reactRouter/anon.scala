@@ -2,6 +2,7 @@ package typings.reactRouter
 
 import typings.reactRouter.distLibContextMod.DataRouteObject
 import typings.reactRouter.distLibContextMod.RelativeRoutingType
+import typings.remixRunRouter.distHistoryMod.InitialEntry
 import typings.remixRunRouter.distRouterMod.HydrationState
 import typings.remixRunRouter.distRouterMod.RevalidationState
 import typings.remixRunRouter.distUtilsMod.Params
@@ -17,7 +18,7 @@ object anon {
     
     var hydrationData: js.UndefOr[HydrationState] = js.undefined
     
-    var initialEntries: js.UndefOr[js.Array[String]] = js.undefined
+    var initialEntries: js.UndefOr[js.Array[InitialEntry]] = js.undefined
     
     var initialIndex: js.UndefOr[Double] = js.undefined
   }
@@ -38,11 +39,11 @@ object anon {
       
       inline def setHydrationDataUndefined: Self = StObject.set(x, "hydrationData", js.undefined)
       
-      inline def setInitialEntries(value: js.Array[String]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
+      inline def setInitialEntries(value: js.Array[InitialEntry]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
       
       inline def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
       
-      inline def setInitialEntriesVarargs(value: String*): Self = StObject.set(x, "initialEntries", js.Array(value*))
+      inline def setInitialEntriesVarargs(value: InitialEntry*): Self = StObject.set(x, "initialEntries", js.Array(value*))
       
       inline def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
       

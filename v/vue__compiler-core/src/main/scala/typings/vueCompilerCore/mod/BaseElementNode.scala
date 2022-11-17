@@ -1,6 +1,5 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ trait BaseElementNode
   var tagType: ElementTypes
   
   @JSName("type")
-  var type_BaseElementNode: `1`
+  var type_BaseElementNode: 1
 }
 object BaseElementNode {
   
@@ -58,6 +57,6 @@ object BaseElementNode {
     
     inline def setTagType(value: ElementTypes): Self = StObject.set(x, "tagType", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `1`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: 1): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

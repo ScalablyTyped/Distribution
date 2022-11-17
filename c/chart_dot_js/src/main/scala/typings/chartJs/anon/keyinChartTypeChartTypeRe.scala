@@ -1,12 +1,12 @@
 package typings.chartJs.anon
 
-import typings.chartJs.mod.DoughnutMetaExtensions
-import typings.chartJs.mod.PieMetaExtensions
+import typings.chartJs.distChunksHelpersDotcoreMod.DoughnutMetaExtensions
+import typings.chartJs.distChunksHelpersDotcoreMod.PieMetaExtensions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ key in chart.js.chart.js.ChartType ]: chart.js.chart.js.ChartTypeRegistry[key]['metaExtensions']} */
+/* Inlined {[ key in chart.js.chart.js/dist/chunks/helpers.core.ChartType ]: chart.js.chart.js/dist/chunks/helpers.core.ChartTypeRegistry[key]['metaExtensions']} */
 trait keyinChartTypeChartTypeRe extends StObject {
   
   var doughnut: DoughnutMetaExtensions
