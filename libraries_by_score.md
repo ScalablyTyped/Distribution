@@ -191,7 +191,6 @@
 | 0.8632317643497559 | [react-error-boundary](./r/react-error-boundary) | Simple reusable React error boundary component
 | 0.8631020492971274 | [luxon](./l/luxon) | Immutable date wrapper
 | 0.8630891073613675 | [cssesc](./c/cssesc) | A JavaScript library for escaping CSS strings and 
-| 0.8628669599103143 | [memfs](./m/memfs) | In-memory file-system with Node's fs API.
 | 0.8628417528444216 | [lodash_dot_camelcase](./l/lodash_dot_camelcase) | The lodash method _.camelCase exported as a module
 | 0.8625558227204242 | [statuses](./s/statuses) | HTTP status utility
 | 0.8625536796567048 | [encodeurl](./e/encodeurl) | Encode a URL to a percent-encoded form, excluding 
@@ -1458,7 +1457,6 @@
 | 0.7737689335215924 | [fluentui__utilities](./f/fluentui__utilities) | Fluent UI React utilities for building components.
 | 0.7737566798864901 | [storybook__addon-centered](./s/storybook__addon-centered) | Storybook decorator to center components
 | 0.773629368605874 | [connect-redis](./c/connect-redis) | Redis session store for Connect
-| 0.7735822172575277 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without 
 | 0.7735554592089304 | [fluentui__style-utilities](./f/fluentui__style-utilities) | Styling helpers for Fluent UI React.
 | 0.7735388828773144 | [fb-watchman](./f/fb-watchman) | Bindings for the Watchman file watching service
 | 0.7735335204676299 | [ylru](./y/ylru) | Extends LRU base on hashlru
@@ -1735,7 +1733,6 @@
 | 0.7615392389620689 | [dd-trace](./d/dd-trace) | Datadog APM tracing client for JavaScript
 | 0.761533167494874 | [has-yarn](./h/has-yarn) | Check if a project is using Yarn
 | 0.7614486579564628 | [postcss-normalize-url](./p/postcss-normalize-url) | Normalize URLs with PostCSS
-| 0.7613741082674146 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v
 | 0.7613663120125878 | [multihashes](./m/multihashes) | multihash implementation
 | 0.7613501711314812 | [simple-statistics](./s/simple-statistics) | Simple Statistics
 | 0.761306402694026 | [ethersproject__networks](./e/ethersproject__networks) | Network definitions for ethers.
@@ -3170,6 +3167,7 @@
 | 0.7082704355167599 | [rc-segmented](./r/rc-segmented) | React segmented controls used in ant.design
 | 0.7082676941001456 | [empower](./e/empower) | Power Assert feature enhancer for assert function/
 | 0.7081949710506517 | [node-abort-controller](./n/node-abort-controller) | AbortController for Node based on EventEmitter
+| 0.7081644043608262 | [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P
 | 0.7081411005412502 | [ranges-apply](./r/ranges-apply) | Take an array of string index ranges, delete/repla
 | 0.7080424574077693 | [cassandra-driver](./c/cassandra-driver) | DataStax Node.js Driver for Apache Cassandra
 | 0.7080408055692131 | [qr-image](./q/qr-image) | QR Code generator (png, svg, pdf, eps)
@@ -8348,7 +8346,6 @@
 | 0.5237274991389178 | [graphviz](./g/graphviz) | Node.js interface to the GraphViz graphing tool
 | 0.5236475379747046 | [chai-oequal](./c/chai-oequal) | Chai oequal() that uses object's equality method.
 | 0.5236019823158379 | [es6-collections](./e/es6-collections) | ES6 Harmony like collections such Map, WeakMap, an
-| 0.5235822164755187 | [monk](./m/monk) | The wise MongoDB API
 | 0.5235432446665014 | [fs-ext](./f/fs-ext) | Extensions to core 'fs' module.
 | 0.523453060225231 | [ref](./r/ref) | Turn Buffer instances into "pointers"
 | 0.5234285693363818 | [find-down](./f/find-down) | Find a file by walking down parent directories.
@@ -10298,6 +10295,7 @@
 | 0.3739087522238116 | [parameterize](./p/parameterize) | This repository adds node.js and npm support for p
 | 0.3738057460546391 | [react-native-form](./r/react-native-form) | A simple react-native component to wrap your form 
 | 0.3737619916214192 | [bootpag](./b/bootpag) | bootpag - dynamic pagination jQuery plugin. Works 
+| 0.3736559415506839 | [ngx-infinite-scroll](./n/ngx-infinite-scroll) | -
 | 0.37363208075520415 | [gatsby-sharp](./g/gatsby-sharp) | -
 | 0.37356372618117983 | [documentdb](./d/documentdb) | Azure Cosmos DB Service Node.js SDK for SQL API
 | 0.3734709524247766 | [rpi-ws281x-native](./r/rpi-ws281x-native) | (raspberry-pi *only*) native bindings to control a
@@ -11401,6 +11399,7 @@
 | 0.17948216205889722 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_compute) | TypeScript typings for Compute Engine API v1
 | 0.1794622728626326 | [metrostations](./m/metrostations) | JSONs of metro stations and lines.
 | 0.17938446594731672 | [fragmented-store](./f/fragmented-store) | Small library to manage the (P)React state
+| 0.17938237856804978 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
 | 0.17935334294200223 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_remotebuildexecution) | TypeScript typings for Remote Build Execution API 
 | 0.1792596690757141 | [timelinejs3](./t/timelinejs3) | TimelineJS v3: A Storytelling Timeline built in Ja
 | 0.17899586210258164 | [leaflet-deepzoom](./l/leaflet-deepzoom) | Displaying DeepZoom tiles with Leaflet

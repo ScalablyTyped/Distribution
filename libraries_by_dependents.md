@@ -3707,6 +3707,7 @@
 | 0.0 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler.
 | 0.0 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com
 | 0.0 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir
+| 0.0 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
 | 0.0 | [honeybadger](./h/honeybadger) | A node.js notifier for honeybadger.io
 | 0.0 | [hooker](./h/hooker) | Monkey-patch (hook) functions for debugging and st
 | 0.0 | [hookrouter](./h/hookrouter) | A hook based router for React
@@ -6076,7 +6077,6 @@
 | 0.0 | [mem-fs-editor](./m/mem-fs-editor) | File edition helpers working on top of mem-fs
 | 0.0 | [memcached](./m/memcached) | A fully featured Memcached API client, supporting 
 | 0.0 | [memdown](./m/memdown) | An drop-in replacement for LevelDOWN that works in
-| 0.0 | [memfs](./m/memfs) | In-memory file-system with Node's fs API.
 | 0.0 | [memize](./m/memize) | Unabashedly-barebones memoization library with an 
 | 0.0 | [memjs](./m/memjs) | A memcache client for node using the binary protoc
 | 0.0 | [memmonit](./m/memmonit) | Library to help monitor operating system memory
@@ -6333,11 +6333,8 @@
 | 0.0 | [mongo-sanitize](./m/mongo-sanitize) | Helper to sanitize mongodb queries against query s
 | 0.0 | [mongodb](./m/mongodb) | The official MongoDB driver for Node.js
 | 0.0 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR
-| 0.0 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v
-| 0.0 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without 
 | 0.0 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs.
 | 0.0 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily
-| 0.0 | [monk](./m/monk) | The wise MongoDB API
 | 0.0 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 0.0 | [month-days](./m/month-days) | Get the number of days in a month
 | 0.0 | [moo](./m/moo) | Optimised tokenizer/lexer generator
@@ -6544,6 +6541,7 @@
 | 0.0 | [ng-grid](./n/ng-grid) | __Contributors:__
 | 0.0 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne
 | 0.0 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi
+| 0.0 | [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P
 | 0.0 | [ng-showdown](./n/ng-showdown) | Official Showdown integration with AngularJS
 | 0.0 | [ng-stomp](./n/ng-stomp) | STOMP for AngularJS
 | 0.0 | [ng-table](./n/ng-table) | Table + AngularJS ================= 
@@ -6567,6 +6565,7 @@
 | 0.0 | [ngsijs](./n/ngsijs) | JavaScript library for the FIWARE Context Broker s
 | 0.0 | [ngstorage](./n/ngstorage) | ngStorage =========
 | 0.0 | [ngtools__webpack](./n/ngtools__webpack) | Webpack plugin that AoT compiles your Angular comp
+| 0.0 | [ngx-infinite-scroll](./n/ngx-infinite-scroll) | -
 | 0.0 | [nhs-number-validator](./n/nhs-number-validator) | Validate NHS numbers in various guises
 | 0.0 | [nib](./n/nib) | Stylus mixins and utilities
 | 0.0 | [nice-napi](./n/nice-napi) | nice(2) bindings for Node.js
