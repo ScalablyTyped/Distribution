@@ -2851,6 +2851,7 @@
 | 0.7176712388781245 | [stream-to-array](./s/stream-to-array) | Concatenate a readable stream's data into a single
 | 0.7176433510462157 | [detect-passive-events](./d/detect-passive-events) | Detect if the browser supports passive events
 | 0.7176198342961569 | [grpc__proto-loader](./g/grpc__proto-loader) | gRPC utility library for loading .proto files
+| 0.7176004435070695 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.7175881284103192 | [react-ace](./r/react-ace) | A react component for Ace Editor
 | 0.7175787601224826 | [vfile-sort](./v/vfile-sort) | vfile utility to sort messages by line/column
 | 0.7175523728015658 | [react-swipe](./r/react-swipe) | Brad Birdsall's Swipe.js as a React component

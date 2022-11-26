@@ -1972,6 +1972,7 @@ object ScalablyTypedPlugin extends AutoPlugin {
         val `cypress-dotenv` = "org.scalablytyped" % "cypress-dotenv_sjs1_3" % "2.0-dt-20211202Z-09fb79"
         val `cypress-image-snapshot` = "org.scalablytyped" % "cypress-image-snapshot_sjs1_3" % "3.1-dt-20211202Z-15d352"
         val `cypress-recurse` = "org.scalablytyped" % "cypress-recurse_sjs1_3" % "1.23.0-9607f5"
+        val `cypress__code-coverage` = "org.scalablytyped" % "cypress__code-coverage_sjs1_3" % "3.10-dt-20221005Z-b15102"
         val cytoscape = "org.scalablytyped" % "cytoscape_sjs1_3" % "3.19-dt-20220929Z-f73c61"
         val `cytoscape-avsdf` = "org.scalablytyped" % "cytoscape-avsdf_sjs1_3" % "1.0-dt-20221020Z-ab9e73"
         val `cytoscape-canvas` = "org.scalablytyped" % "cytoscape-canvas_sjs1_3" % "3.0-dt-20220720Z-2f542f"

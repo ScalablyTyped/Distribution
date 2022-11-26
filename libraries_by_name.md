@@ -1952,6 +1952,7 @@
 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot | cypress, plugin, dotenv, cypress-plugin, env |
 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot. | - |
 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate | cypress, cypress-plugin |
+| [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t | cypress, istanbul, cypress-plugin, code, coverage |
 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis | graph, graph-theory, network, node, edge, vertex, link, analysis, visualisation, visualization, draw, render, biojs, cytoscape |
 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm | cytoscape, cytoscape-extension |
 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u | cytoscape, cytoscape.js, cytoscapejs, cytoscape-canvas, canvas, extension |
