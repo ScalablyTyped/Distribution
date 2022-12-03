@@ -264,6 +264,7 @@
 | 0.8528927432178816 | [filesize](./f/filesize) | JavaScript library to generate a human readable St
 | 0.8528269661319084 | [storybook__core-client](./s/storybook__core-client) | Storybook framework-agnostic API
 | 0.852814126516628 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-node) | AWS credential provider that sources credentials f
+| 0.8527595067556228 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns
 | 0.8527388358803386 | [accepts](./a/accepts) | Higher-level content negotiation
 | 0.8527324580863276 | [aws-sdk__util-hex-encodin](./a/aws-sdk__util-hex-encoding) | Converts binary buffers to and from lowercase hexa
 | 0.8527153835100215 | [dir-glob](./d/dir-glob) | Convert directories to glob compatible strings
@@ -1061,6 +1062,7 @@
 | 0.7953347878386411 | [stack-generator](./s/stack-generator) | Generate artificial backtrace by walking arguments
 | 0.7952394428611238 | [ts-loader](./t/ts-loader) | TypeScript loader for webpack
 | 0.7950396467035569 | [es6-weak-map](./e/es6-weak-map) | ECMAScript6 WeakMap polyfill
+| 0.7949218612985449 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0.7949194505276331 | [csstools__postcss-is-pseu](./c/csstools__postcss-is-pseudo-class) | A pseudo-class for matching elements in a selector
 | 0.7947344538866984 | [file-uri-to-path](./f/file-uri-to-path) | Convert a file: URI to a file path
 | 0.7947137852135296 | [set-value](./s/set-value) | Set nested properties on an object using dot notat
@@ -2849,6 +2851,7 @@
 | 0.7176712388781245 | [stream-to-array](./s/stream-to-array) | Concatenate a readable stream's data into a single
 | 0.7176433510462157 | [detect-passive-events](./d/detect-passive-events) | Detect if the browser supports passive events
 | 0.7176198342961569 | [grpc__proto-loader](./g/grpc__proto-loader) | gRPC utility library for loading .proto files
+| 0.7176004435070695 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.7175881284103192 | [react-ace](./r/react-ace) | A react component for Ace Editor
 | 0.7175787601224826 | [vfile-sort](./v/vfile-sort) | vfile utility to sort messages by line/column
 | 0.7175523728015658 | [react-swipe](./r/react-swipe) | Brad Birdsall's Swipe.js as a React component
@@ -6630,6 +6633,7 @@
 | 0.6153603940379252 | [randexp](./r/randexp) | Create random strings that match a given regular e
 | 0.6153560379623948 | [gsheets](./g/gsheets) | Get public Google Spreadsheets as plain JavaScript
 | 0.6153290679396893 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu
+| 0.6152816327284444 | [yazl](./y/yazl) | yet another zip library for node
 | 0.6152394529489089 | [utf8](./u/utf8) | A well-tested UTF-8 encoder/decoder written in Jav
 | 0.6152362174951483 | [barnard59-core](./b/barnard59-core) | Core component of Barnard59 Linked Data pipelines
 | 0.6151520405779876 | [csscolorparser-ts](./c/csscolorparser-ts) | Parser for CSS color strings written in TypeScript
@@ -7582,6 +7586,7 @@
 | 0.5661223702179665 | [aes-js](./a/aes-js) | A pure JavaScript implementation of the AES block 
 | 0.5661218605470969 | [toml](./t/toml) | TOML parser for Node.js (parses TOML spec v0.4.0)
 | 0.5660394793225917 | [angular-hotkeys](./a/angular-hotkeys) | Automatic keyboard shortcuts for your Angular Apps
+| 0.5659194096566684 | [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor
 | 0.5659078784332887 | [angular-toastr](./a/angular-toastr) | -
 | 0.565847461708324 | [xmpp__time](./x/xmpp__time) | XMPP Date and Time Profiles for JavaScript
 | 0.5658260634338363 | [jest-each](./j/jest-each) | Parameterised tests for Jest
@@ -7809,6 +7814,7 @@
 | 0.5530246355400638 | [child-process-promise](./c/child-process-promise) | Simple wrapper around the "child_process" module t
 | 0.553015985910945 | [passport-github](./p/passport-github) | GitHub authentication strategy for Passport.
 | 0.5529825486247667 | [react-cookies](./r/react-cookies) | Load and save cookies with React
+| 0.5527125636857335 | [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v
 | 0.5526854794311956 | [kss](./k/kss) | The Node.js port of KSS: A methodology for documen
 | 0.5526548696840184 | [ahoy_dot_js](./a/ahoy_dot_js) | Simple, powerful JavaScript analytics
 | 0.5524641277029971 | [splunk-logging](./s/splunk-logging) | Splunk HTTP Event Collector logging interface
@@ -8413,6 +8419,7 @@
 | 0.521022813406997 | [node-static](./n/node-static) | simple, compliant file streaming module for node
 | 0.5209657449388245 | [ip1sms__is-disposable-pho](./i/ip1sms__is-disposable-phone-number) | Determine if a phone number is a disposable phone 
 | 0.5209347255211918 | [angulartics](./a/angulartics) | Vendor-agnostic web analytics for AngularJS applic
+| 0.5209193518675125 | [y-leveldb](./y/y-leveldb) | LevelDb database adapter for Yjs
 | 0.5207384856180444 | [dts-generator](./d/dts-generator) | .d.ts generator. Generates a single d.ts bundle co
 | 0.5207371309362647 | [wu](./w/wu) | Combinators for ECMAScript 6 iterators.
 | 0.520702987559894 | [stremio-addon-sdk](./s/stremio-addon-sdk) | An SDK for making and publishing Stremio add-ons
@@ -8474,6 +8481,7 @@
 | 0.5176184142248688 | [semantic-ui-form](./s/semantic-ui-form) | Single component release of form
 | 0.5175170240227132 | [printf](./p/printf) | Full implementation of the printf family in pure J
 | 0.5174691309733079 | [dynatable](./d/dynatable) | A wrapper for DynamoDB tables, with a promise wrap
+| 0.5174283850224107 | [connect-mongodb-session](./c/connect-mongodb-session) | MongoDB session store for connect/express built by
 | 0.5173173509721416 | [imagemapster](./i/imagemapster) | jQuery plugin that activates areas in HTML imagema
 | 0.5171978499569843 | [neo4j](./n/neo4j) | Neo4j driver (REST API client) for Node.js
 | 0.5170690695688029 | [slack-winston](./s/slack-winston) | A Slack transport for winston
@@ -8992,6 +9000,7 @@
 | 0.486882827791256 | [rivets](./r/rivets) | Declarative data binding + templating solution.
 | 0.48677315789076503 | [crimsonq](./c/crimsonq) | -
 | 0.4865318156952494 | [csp-hash-generator](./c/csp-hash-generator) | Generate Content Security Policy hash for inline s
+| 0.48653159166137905 | [acl](./a/acl) | An Access Control List module, based on Redis with
 | 0.4865259638682886 | [fetch-jsonp](./f/fetch-jsonp) | Fetch JSONP like a boss using Fetch API
 | 0.486472065090963 | [node-summary](./n/node-summary) | Summarizes text using a naive summarization algori
 | 0.48645049337415097 | [bs-logger](./b/bs-logger) | Bare simple logger for NodeJS
@@ -10694,6 +10703,7 @@
 | 0.30929121654320413 | [authenticator](./a/authenticator) | Two- / Multi- Factor Authenication (2FA / MFA) for
 | 0.30906337571211107 | [raty](./r/raty) | a node framework base koa@2 that can use full es20
 | 0.30905437106021616 | [roman-numerals](./r/roman-numerals) | Roman numerals conversion module
+| 0.3087531368861572 | [angular-meteor](./a/angular-meteor) | Combining the simplicity and power of AngularJS an
 | 0.3087246910904855 | [next__env](./n/next__env) | Next.js dotenv file loading
 | 0.30867420787972843 | [lerna__run-topologically](./l/lerna__run-topologically) | An internal Lerna tool
 | 0.30859413299325145 | [storefront-ui__vue](./s/storefront-ui__vue) | -
@@ -11117,6 +11127,7 @@
 | 0.2085685462978576 | [wordpress__viewport](./w/wordpress__viewport) | Viewport module for WordPress.
 | 0.20833440213969906 | [uifabric__foundation](./u/uifabric__foundation) | Foundation library for building Fabric components.
 | 0.20805367881968465 | [react-loader](./r/react-loader) | React component that displays a spinner via spin.j
+| 0.20756618934515741 | [aws-lambda-fastify](./a/aws-lambda-fastify) | aws-lambda-fastify@2.2.0 has been deprecated. Plea
 | 0.2070133941868863 | [atlaskit__analytics-next](./a/atlaskit__analytics-next) | React components, HOCs and hooks to assist with tr
 | 0.20688543644904045 | [uifabric__react-hooks](./u/uifabric__react-hooks) | Fluent UI React hooks.
 | 0.2067935646063157 | [pollyjs__adapter-xhr](./p/pollyjs__adapter-xhr) | XHR adapter for @pollyjs
