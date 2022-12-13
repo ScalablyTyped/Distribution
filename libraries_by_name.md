@@ -614,6 +614,7 @@
 | [aws-iot-device-sdk](./a/aws-iot-device-sdk) | AWS IoT Node.js SDK for Embedded Devices | api, amazon, aws, iot, mqtt |
 | [aws-kcl](./a/aws-kcl) | Kinesis Client Libray (KCL) in Node.js. | api, amazon, aws, big data, kinesis, kinesis client library, kcl, node.js |
 | [aws-lambda](./a/aws-lambda) | Deploy AWS Lambda functions from command line usin | lambda, aws lambda, deploy, deploy lambda |
+| [aws-lambda-fastify](./a/aws-lambda-fastify) | aws-lambda-fastify@2.2.0 has been deprecated. Plea | aws, lambda, serverless, amazon, cloud, node, nodejs, javascript, proxy, api, api-gateway, fastify, web |
 | [aws-lambda-http-server](./a/aws-lambda-http-server) | run http server as aws lambda function | aws-lambda, serverless, proxy, http, proxy, api-gateway, express, koa, fastify, server-base |
 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object | aws, lambda, context, ctx, function, mocking, mock, promise |
 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter  | AWS, SSM, secret, parameter store, parameter, store |
@@ -1648,6 +1649,7 @@
 | [connect-memcached](./c/connect-memcached) | Memcached session store for Connect | memcached, connection, session, store, cache |
 | [connect-modrewrite](./c/connect-modrewrite) | connect-modrewrite adds modrewrite functionality t | modrewrite |
 | [connect-mongo](./c/connect-mongo) | MongoDB session store for Express and Connect | connect, mongo, mongodb, session, express |
+| [connect-mongodb-session](./c/connect-mongodb-session) | MongoDB session store for connect/express built by | connect, mongo, mongodb, session, express |
 | [connect-pg-simple](./c/connect-pg-simple) | A simple, minimal PostgreSQL session store for Con | - |
 | [connect-redis](./c/connect-redis) | Redis session store for Connect | connect, redis, session, express |
 | [connect-sequence](./c/connect-sequence) | A node.js module to run connect-like middlewares i | node, node.js, connect, middleware, express |
@@ -1950,6 +1952,7 @@
 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot | cypress, plugin, dotenv, cypress-plugin, env |
 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot. | - |
 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate | cypress, cypress-plugin |
+| [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t | cypress, istanbul, cypress-plugin, code, coverage |
 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis | graph, graph-theory, network, node, edge, vertex, link, analysis, visualisation, visualization, draw, render, biojs, cytoscape |
 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm | cytoscape, cytoscape-extension |
 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u | cytoscape, cytoscape.js, cytoscapejs, cytoscape-canvas, canvas, extension |
@@ -10423,6 +10426,7 @@
 | [safe-regex-test](./s/safe-regex-test) | - | - |
 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly | stable, stringify, JSON, JSON.stringify, safe, serialize, deterministic, circular, object, predicable, repeatable, fast, bigint |
 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support | setTimeout, setInterval, timer, timeout, interval, timers, timeouts, intervals |
+| [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns | - |
 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server | sails, sdk, sails.io.js, socket.io, browser, javascript |
 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API | - |
 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli | sales, tax, salestax, money, billing, invoice, vat, gst, vatmoss |
@@ -10730,6 +10734,7 @@
 | [simmerjs](./s/simmerjs) | A pure Javascript reverse CSS selector engine whic | Simmer, css, css selector, sizzle |
 | [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for | selection, selecting, js-utility, user-selection, ui, user-interface, ui-library |
 | [simperium](./s/simperium) | A simperium client for node.js | - |
+| [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v | - |
 | [simple-assign](./s/simple-assign) | Simple implementation of Object.assign | - |
 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI | chatwork, api |
 | [simple-datatables](./s/simple-datatables) | A lightweight, dependency-free JavaScript HTML tab | DataTable, DataTables, table, html table, filter, sort |
@@ -11321,6 +11326,7 @@
 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify | swagger, api, apis, restify |
 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects | swagger, api, apis, sails |
 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema | swagger, schema, api |
+| [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor | api, observability, telemetry, node, express, koa, hapi, fastify, rest, statistics, monitoring, alerting, swagger, openapi, schema, prometheus, metrics, elasticsearch, kibana, grafana |
 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg | api, connect, middleware, swagger |
 | [swagger-ui](./s/swagger-ui) | - | - |
 | [swagger-ui-dist](./s/swagger-ui-dist) | - | - |
@@ -11471,6 +11477,7 @@
 | [terraformer__spatial](./t/terraformer__spatial) | Spatial predicates for GeoJSON. | arcgis, convert, geo, geojson, geometry |
 | [terraformer__wkt](./t/terraformer__wkt) | Tools to convert WKT geometries to GeoJSON geometr | wkt, convert, geo, geojson, geometry |
 | [terser](./t/terser) | JavaScript parser, mangler/compressor and beautifi | uglify, terser, uglify-es, uglify-js, minify, minifier, javascript, ecmascript, es5, es6, es7, es8, es2015, es2016, es2017, async, await |
+| [terser-webpack-plugin](./t/terser-webpack-plugin) | Terser plugin for webpack | uglify, uglify-js, uglify-es, terser, webpack, webpack-plugin, minification, compress, compressor, min, minification, minifier, minify, optimize, optimizer |
 | [teslajs](./t/teslajs) | Full-featured Tesla REST API NodeJS package | Tesla, Model S, Model X, Model 3, REST |
 | [tesseract_dot_js](./t/tesseract_dot_js) | Pure Javascript Multilingual OCR | - |
 | [test-console](./t/test-console) | A simple and pragmatic library for testing Node.js | console, stdout, stderr, test, spy, test double |
@@ -11480,6 +11487,7 @@
 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin. | testcafe, reporter, plugin |
 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets | - |
 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y | chrome, version |
+| [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut | testing, cypress, ui, dom, integration, functional, end-to-end, e2e |
 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc | testing, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements | testing, dom, jasmine, matchers, jsdom |
 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th | testing, react, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |

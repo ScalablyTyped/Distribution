@@ -509,6 +509,7 @@
 | 0.0 | [aws-iot-device-sdk](./a/aws-iot-device-sdk) | AWS IoT Node.js SDK for Embedded Devices
 | 0.0 | [aws-kcl](./a/aws-kcl) | Kinesis Client Libray (KCL) in Node.js.
 | 0.0 | [aws-lambda](./a/aws-lambda) | Deploy AWS Lambda functions from command line usin
+| 0.0 | [aws-lambda-fastify](./a/aws-lambda-fastify) | aws-lambda-fastify@2.2.0 has been deprecated. Plea
 | 0.0 | [aws-lambda-http-server](./a/aws-lambda-http-server) | run http server as aws lambda function
 | 0.0 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object
 | 0.0 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter 
@@ -1478,6 +1479,7 @@
 | 0.0 | [connect-memcached](./c/connect-memcached) | Memcached session store for Connect
 | 0.0 | [connect-modrewrite](./c/connect-modrewrite) | connect-modrewrite adds modrewrite functionality t
 | 0.0 | [connect-mongo](./c/connect-mongo) | MongoDB session store for Express and Connect
+| 0.0 | [connect-mongodb-session](./c/connect-mongodb-session) | MongoDB session store for connect/express built by
 | 0.0 | [connect-pg-simple](./c/connect-pg-simple) | A simple, minimal PostgreSQL session store for Con
 | 0.0 | [connect-redis](./c/connect-redis) | Redis session store for Connect
 | 0.0 | [connect-sequence](./c/connect-sequence) | A node.js module to run connect-like middlewares i
@@ -1769,6 +1771,7 @@
 | 0.0 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot
 | 0.0 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot.
 | 0.0 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate
+| 0.0 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.0 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis
 | 0.0 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm
 | 0.0 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u
@@ -9287,6 +9290,7 @@
 | 0.0 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg
 | 0.0 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly
 | 0.0 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support
+| 0.0 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns
 | 0.0 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server
 | 0.0 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API
 | 0.0 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli
@@ -9583,6 +9587,7 @@
 | 0.0 | [simmerjs](./s/simmerjs) | A pure Javascript reverse CSS selector engine whic
 | 0.0 | [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for
 | 0.0 | [simperium](./s/simperium) | A simperium client for node.js
+| 0.0 | [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v
 | 0.0 | [simple-assign](./s/simple-assign) | Simple implementation of Object.assign
 | 0.0 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI
 | 0.0 | [simple-datatables](./s/simple-datatables) | A lightweight, dependency-free JavaScript HTML tab
@@ -10156,6 +10161,7 @@
 | 0.0 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify
 | 0.0 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects
 | 0.0 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema
+| 0.0 | [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor
 | 0.0 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg
 | 0.0 | [swagger-ui](./s/swagger-ui) | -
 | 0.0 | [swagger-ui-dist](./s/swagger-ui-dist) | -
@@ -10300,6 +10306,7 @@
 | 0.0 | [terraformer__spatial](./t/terraformer__spatial) | Spatial predicates for GeoJSON.
 | 0.0 | [terraformer__wkt](./t/terraformer__wkt) | Tools to convert WKT geometries to GeoJSON geometr
 | 0.0 | [terser](./t/terser) | JavaScript parser, mangler/compressor and beautifi
+| 0.0 | [terser-webpack-plugin](./t/terser-webpack-plugin) | Terser plugin for webpack
 | 0.0 | [teslajs](./t/teslajs) | Full-featured Tesla REST API NodeJS package
 | 0.0 | [tesseract_dot_js](./t/tesseract_dot_js) | Pure Javascript Multilingual OCR
 | 0.0 | [test-console](./t/test-console) | A simple and pragmatic library for testing Node.js
@@ -10309,6 +10316,7 @@
 | 0.0 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin.
 | 0.0 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets
 | 0.0 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y
+| 0.0 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0.0 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc
 | 0.0 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements
 | 0.0 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th
